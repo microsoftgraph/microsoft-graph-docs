@@ -120,6 +120,7 @@ Content-length: 1944
         "lastModifiedDateTime": "datetime-value",
         "name": "name-value",
         "contentType": "contentType-value",
+        "contentBytes": "contentBytes-value",
         "size": 99,
         "isInline": true,
         "id": "id-value"
