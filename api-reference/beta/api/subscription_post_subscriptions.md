@@ -31,6 +31,7 @@ Here is an example of the request to send a notification when the user receives 
 }-->
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
+Authorization: Bearer <token>
 Content-type: application/json
 Content-length: 208
 
