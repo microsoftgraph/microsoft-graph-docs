@@ -1,10 +1,46 @@
 # person resource type
 
+An aggregation of information about a person from across mail, contacts and social networks. People can be local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype).
+
+### Methods
+
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[Get person](../api/person_get.md) | [person](person.md) |Read properties and relationships of a person object.|
+|[Update](../api/person_update.md) | [person](person.md)	|Update a person object. |
+|[Delete](../api/person_delete.md) | None |Delete a person object. |
+
+### Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|birthday|string|The person's birthday.|
+|companyName|string|The name of the person's company.|
+|department|string|The person's department.|
+|displayName|string|The person's display name.|
+|emailAddresses|[rankedEmailAddress](rankedemailaddress.md) collection|The person's email addresses.|
+|givenName|string|The person's given name.|
+|id|string|The person's unique identifier. Read-only.|
+|isFavorite|boolean||
+|mailboxType|string||
+|officeLocation|string|The location of the person's office.|
+|personNotes|string||
+|personType|string||
+|phones|[phone](phone.md) collection|The person's phone numbers.|
+|postalAddresses|[location](location.md) collection|The person's addresses.|
+|profession|string|The person's profession.|
+|sources|[personDataSource](persondatasource.md) collection||
+|surname|string|The person's surname.|
+|title|string|The person's title.|
+|webSites|[webSite](website.md) collection|The person's websites.|
+|yomiCompany|string|The phonetic Japanese name of the person's company.|
+
+### Relationships
+None
 
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -16,42 +52,29 @@ Here is a JSON representation of the resource
 
 ```json
 {
+  "birthday": "string",
   "companyName": "string",
+  "department": "string",
   "displayName": "string",
-  "emailAddresses": [{"@odata.type": "microsoft.graph.email"}],
+  "emailAddresses": [{"@odata.type": "microsoft.graph.rankedEmailAddress"}],
   "givenName": "string",
   "id": "string (identifier)",
+  "isFavorite": true,
+  "mailboxType": "string",
   "officeLocation": "string",
+  "personNotes": "string",
+  "personType": "string",
+  "phones": [{"@odata.type": "microsoft.graph.phone"}],
+  "postalAddresses": [{"@odata.type": "microsoft.graph.location"}],
+  "profession": "string",
   "sources": [{"@odata.type": "microsoft.graph.personDataSource"}],
   "surname": "string",
-  "title": "string"
+  "title": "string",
+  "webSites": [{"@odata.type": "microsoft.graph.webSite"}],
+  "yomiCompany": "string"
 }
 
 ```
-### Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|companyName|String||
-|displayName|String||
-|emailAddresses|[Email](email.md) collection||
-|givenName|String||
-|id|String| Read-only.|
-|officeLocation|String||
-|sources|[PersonDataSource](persondatasource.md) collection||
-|surname|String||
-|title|String||
-
-### Relationships
-None
-
-
-### Methods
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get person](../api/person_get.md) | [person](person.md) |Read properties and relationships of person object.|
-|[Update](../api/person_update.md) | [person](person.md)	|Update person object. |
-|[Delete](../api/person_delete.md) | None |Delete person object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
