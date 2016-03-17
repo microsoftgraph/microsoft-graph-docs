@@ -1,28 +1,22 @@
 # Get person
 
-Retrieve the properties and relationships of a person object.
+Retrieve the properties and relationships of person object.
 ### Prerequisites
-The following **scopes** are required to execute this API: *People.Read*; *People.ReadWrite*
- 
+The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/people/<id>
-GET /users/<id>/people/<id>
+GET /users/<id | userPrincipalName>/people/<id>
 GET /drive/root/createdByUser/people/<id>
+GET /drive/root/lastModifiedByUser/people/<id>
 ```
 ### Optional query parameters
-|Name|Value|Description|
-|:---------------|:--------|:-------|
-|$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [person](../resources/person.md) object for supported names. |
-|$select|string|Comma-separated list of properties to include in the response.|
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer <token>. Required. |
 
 ### Request body
 Do not supply a request body for this method.
@@ -36,11 +30,9 @@ Here is an example of the request.
   "name": "get_person"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/<id>
+GET https://graph.microsoft.com/beta/me/people/<id>
 ```
 ##### Response
-Results are ordered by their relevance, which is determined by the criteria specified in the request and ranked based on multiple communication, collaboration, and business relationships.
-
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -48,17 +40,24 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.person"
 } -->
 ```http
-HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 196
+Content-length: 261
 
 {
+  "sources": [
+    {
+      "type": "type-value"
+    }
+  ],
   "displayName": "displayName-value",
   "givenName": "givenName-value",
   "surname": "surname-value",
-  "birthday": "birthday-value",
-  "personNotes": "personNotes-value",
-  "isFavorite": true
+  "title": "title-value",
+  "emailAddresses": [
+    {
+      "address": "address-value"
+    }
+  ]
 }
 ```
 
