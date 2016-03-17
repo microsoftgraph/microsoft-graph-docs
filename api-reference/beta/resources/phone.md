@@ -1,4 +1,4 @@
-# personDataSource resource type
+# phone resource type
 
 
 
@@ -6,7 +6,8 @@
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|string||
+|number|string||
+|type|String| Possible values are: `unknown`, `home`, `business`, `mobile`, `other`, `assistant`, `callback`, `car`, `homeFax`, `businessFax`, `otherFax`, `pager`, `primary`, `radio`, `telex`, `ttyTdd`, `organizationMain`.|
 
 ### JSON representation
 
@@ -17,12 +18,13 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.persondatasource"
+  "@odata.type": "microsoft.graph.phone"
 }-->
 
 ```json
 {
-  "type": "string"
+  "number": "string",
+  "type": "String"
 }
 
 ```
@@ -31,7 +33,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "personDataSource resource",
+  "description": "phone resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

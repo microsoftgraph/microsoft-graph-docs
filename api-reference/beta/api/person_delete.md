@@ -1,20 +1,22 @@
 # Delete person
 
-Delete person.
+Delete a person.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *People.ReadWrite*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/<id | userPrincipalName>/people/<id>
+DELETE /me/people/<id>
+DELETE /users/<id>/people/<id>
 DELETE /drive/root/createdByUser/people/<id>
-DELETE /drive/root/lastModifiedByUser/people/<id>
 
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer <code>|
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
 Do not supply a request body for this method.
@@ -31,10 +33,10 @@ Here is an example of the request.
   "name": "delete_person"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/people/<id>
+DELETE https://graph.microsoft.com/v1.0/me/people/<id>
 ```
 ##### Response
-Here is an example of the response. 
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true

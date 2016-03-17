@@ -1,4 +1,4 @@
-# personDataSource resource type
+# rankedEmailAddress resource type
 
 
 
@@ -6,7 +6,8 @@
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|string||
+|address|string||
+|rank|double||
 
 ### JSON representation
 
@@ -17,12 +18,13 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.persondatasource"
+  "@odata.type": "microsoft.graph.rankedemailaddress"
 }-->
 
 ```json
 {
-  "type": "string"
+  "address": "string",
+  "rank": 1024
 }
 
 ```
@@ -31,7 +33,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "personDataSource resource",
+  "description": "rankedEmailAddress resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
