@@ -6,6 +6,11 @@ Using the Microsoft Graph API, an app can subscribe to notifications of a resour
 
 Apps can to renew their subscriptions before they expire. They can also unsubscribe at any time to stop getting notifications.
 
+If you want to see code samples, they're hosted on GitHub.
+
+* [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
+* [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET -Webhooks)
+
 Let's take a look at the subscription process.
 
 # Creating a subscription
@@ -160,6 +165,8 @@ We are really excited about the webhooks in Microsoft Graph. Try them out and se
 
 # Additional resources
 
-[Subscription resource type](subscription.md)
-[Get subscription](../api/subscription_get.md)
-[Create subscription](../api/subscription_post_subscriptions.md)
+* [Subscription resource type](subscription.md)
+* [Get subscription](../api/subscription_get.md)
+* [Create subscription](../api/subscription_post_subscriptions.md)
+* [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
+* [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET -Webhooks)
