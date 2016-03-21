@@ -66,9 +66,9 @@ Content-Type: application/json
 }
 ```
 
-The changeType, notificationURL and resource properties are required. See [subscription resource type](../resources/subscription) for property definitions and values.
+The changeType, notificationURL and resource properties are required. See [subscription resource type](subscription.md) for property definitions and values.
 
-If successful, Microsoft Graph returns a `200 OK` code and a [subscription](../resources/subscription.md) object in the body.
+If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subscription.md) object in the body.
 
 # Renewing a subscription
 
@@ -84,7 +84,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, Microsoft Graph returns a `200 OK` code and a [subscription](../resources/subscription.md) object in the body. The subscription object includes the new subscriptionExpirationDateTime value. 
+If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subscription.md) object in the body. The subscription object includes the new subscriptionExpirationDateTime value. 
 
 # Deleting a subscription
 
@@ -110,17 +110,14 @@ The notification object has the following properties:
 * changeType - The event type that caused the notification. For example, *Created* on mail receive, or *Updated* on marking a message read.
 * resource - The URI of the resource relative to `https://graph.microsoft.com`. 
 * resourceData
-  * @odata.type - The OData entity type in Microsoft Graph that describes the object being represented.
+  * @odata.type - The OData entity type in Microsoft Graph that describes the represented object.
   * @odata.id - The OData identifier of the object.
   * @odata.etag - The HTTP entity tag that represents a version of the object.
   * Id - The identifier of the object.
 
-SequenceNumber: To help identify if a notification was missed by the client. Handling sequence number on the client will be discussed as part of advanced topics in a later post.
-Additionally, a notification related to a resource change (such as receiving, reading or deleting a message) has an additional ResourceData property that contains the ID of the item that was changed. A client can use this ID to handle this item according to its business logic (e.g. fetch this item, sync its folder, etc.).
-
 ## Notification example
 
-When the user receives a new message in the Inbox, Microsoft Graph sends a notification similar to the following:
+When the user receives an email, Microsoft Graph sends a notification like the following:
 
 ```
 {
@@ -143,20 +140,26 @@ When the user receives a new message in the Inbox, Microsoft Graph sends a notif
 }
 ```
 
-Note that the value object contains a list. If there are many notifications waiting to be sent, Microsoft Graph groups them and sends them in a single request.
+Note that the value object contains a list. If there are many queued notifications, Microsoft Graph sends them in a single request.
 
 ## Processing the notification
 
 Once your application starts receiving notifications it must process them. The following are the minimum tasks that your app must perform to process a notification:
 
-1. Validate that the `clientState` property. Verify that the clientState property in the notification matches the one submitted with the subscription request.
-  > Note: If the notification clientState doesn't match the one submitted with the subscription request the notification might be from an impersonator. You should not consider this a valid notification.
+1. Validate the `clientState` property. The clientState property in the notification must match the one submitted with the subscription request.
+  > Note: If this is not true, you should not consider this a valid notification. You should also investigate where the notification comes from and take appropriate action.
 2. Update your application based on your business logic.
 3. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will retry resending the notification a number of times.
   > You should send a `202 - Accepted` status code even if the clientState property doesn't match the one submitted with the subscription request.
 
-Repeat for additional notifications in the request.
+Repeat for extra notifications in the request.
 
 # Next steps
 
-We are really excited about the webhooks in Microsoft Graph. Try them out and send us feedback on [UserVoice](https://officespdev.uservoice.com/). We are actively listening to your suggestions and ideas there.
+We are really excited about the webhooks in Microsoft Graph. Try them out and send us feedback on [UserVoice](https://officespdev.uservoice.com/). We are listening to your suggestions and ideas there.
+
+# Additional resources
+
+[Subscription resource type](subscription.md)
+[Get subscription](../api/subscription_get.md)
+[Create subscription](../api/subscription_post_subscriptions.md)
