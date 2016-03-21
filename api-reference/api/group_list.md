@@ -7,7 +7,7 @@ To list only Office 365 Groups (aka unified groups), apply a filter on **groupTy
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
-You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** 
+You can use the OData query option `$orderby` to sort groups in an organization by the **displayName**
 values, as shown in the following example:
 ```
 GET https://graph.microsoft.com/beta/groups?$orderby=displayName

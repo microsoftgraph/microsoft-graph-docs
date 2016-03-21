@@ -51,20 +51,9 @@ The following shows an example of such a request as implemented in a running app
 
 ```GET https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&redirect_uri=http%3a%2f%2flocalhost:1339/auth/azureoauth/callback&client_id=8b8539cd-7b75-427f-bef1-4a6264fd4940``` 
 
-This request returns a `200 OK` response and presents the Azure AD account login page. After the user signs in with valid credentials and consents to the permissions granted for the app, the login page sends a `POST` of the following format:
+This request returns a `200 OK` response and presents the Azure AD account login page. 
 
-```no-highlight
-POST https://login.microsoftonline.com/{tenantId}/login HTTP/1.1
-Accept: text/html, application/xhtml+xml, */*
-Referer: https://login.microsoftonline.com/{teantId}/login
-Content-Type: application/x-www-form-urlencoded
-
-login={user-account}&passwd={password}&ctx={ctx value returned from the previous GET response}
-&flowToken={code provisioned from the prior GET response for the app to get an acces token}
-
-``` 
-
-If the above request succeeds, Azure responds with a `302 Found` message to forward the call to the app's 
+After the user signs in with valid credentials and consents to the permissions granted for the app, the login page sends a `POST` request to Azure. If that request succeeds, Azure responds with a `302 Found` message to forward the call to the app's 
 redirect URI for the app to receive the required access token. The forwarded URI, specified in the response's `Location` header, corresponds to the app's REPLY URL, with two query parameters, `code=...` and `session_state=...` appended to it. 
 The following example shows an excerpt of such a response: 
 
@@ -85,8 +74,7 @@ In this example, the app's REPLY URL is `http://localhost:1339/auth/azureoauth/c
 you must extract the `code` parameter value and use it to acquire the initial OAuth 2.0 access and refresh tokens (see next section).
 
 > The `302 Found` response above is different from the `302 Found` response you would get if you started the login process against 
-the `https://login.windows.net/<tenantId>/oauth2/authorize?...` URL. In the latter case, the `302 Found` response forwards your request to
-`login.microsoftonline.com`.
+the `https://login.windows.net/<tenantId>/oauth2/authorize?...` URL. In the latter case, the `302 Found` response forwards your request to `login.microsoftonline.com`.
  
 <!---<a name="msg_get_app_authenticated"> </a> -->
 

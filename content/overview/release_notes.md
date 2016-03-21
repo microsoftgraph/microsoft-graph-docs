@@ -113,7 +113,7 @@ Batching is not supported by Microsoft Graph. You can, however, use the Outlook 
 [batch Outlook REST calls](https://msdn.microsoft.com/en-us/office/office365/api/batch-outlook-rest-requests). 
 
 #### Availability in China
-The Microsoft Graph service is being rolled out to China, but is not available yet.
+The Microsoft Graph service is operated by 21Vianet (and now available in China). Please review [Microsoft Graph sovereign cloud deployments](http://graph.microsoft.io/docs/overview/deployments) for more details including restrictions.
 
 #### Service actions and functions
 `isMemberOf` and `getObjectsById` are not available in Microsoft Graph

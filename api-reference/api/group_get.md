@@ -11,8 +11,8 @@ The following properties are not returned by default:
 * IsFavorite
 * UnseenCount
 
-You can use the query parameter **$select** to get the value of one or more of these 
-properties for a specific group, except **IsFavorite**. 
+You can use the query parameter **$select** to get the value of one or more of these
+properties for a specific group, except **IsFavorite**.
 
 
 ### Prerequisites
@@ -44,7 +44,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/me/groups/<id>
 ```
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {

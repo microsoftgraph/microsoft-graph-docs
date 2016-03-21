@@ -79,7 +79,11 @@ Content-length: 419
       }
     }
   ],
+<<<<<<< HEAD:api-reference/api/conversationthread_update.md
   "isLocked": true
+=======
+  "isLocked": true 
+>>>>>>> master:api-reference/v1.0/api/conversationthread_update.md
 }
 ```
 

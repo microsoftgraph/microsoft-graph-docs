@@ -33,7 +33,7 @@ You need these values to configure the authentication code in your app.
 ## Gradle dependencies in the Connect sample
 The sample takes dependencies on the libraries shown in the following build.gradle snippet
 
-```
+```gradle
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.1.1'
@@ -58,7 +58,7 @@ The connect sample uses the Azure app registration values and a user's ID to aut
 The [AuthenticationManager.java](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/AuthenticationManager.java) class provides an `isConnected()` helper method to find any cached user ID and determine the authentication behavior to use.
 
 
-```android
+```java
     private boolean isConnected(){
         SharedPreferences settings = this
                 .mContextActivity
@@ -73,7 +73,7 @@ With either behavior, The ADAL authentication flow needs the client ID and redir
 
 The [`Constants.java`](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/Constants.java) interface exposes two static strings for client ID and redirect URL.
 
-```android
+```java
 interface Constants {
     String AUTHORITY_URL = "https://login.microsoftonline.com/common";
     // Update these two constants with the values for your application:
@@ -86,7 +86,7 @@ interface Constants {
 ### Construct the AuthenticationManager class
 The [AuthenticationManager.java](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/AuthenticationManager.java) constructor takes no arguments, but sets a class string field from the Constants.java file with the URL of the Graph endpoint. This resource string is used for both authentication behaviors.
 
-```android
+```java
     private AuthenticationManager() {
         mResourceId = Constants.UNIFIED_ENDPOINT_RESOURCE_ID;
     }
@@ -103,7 +103,7 @@ If authentication succeeds, the ADAL library invokes the `onSuccess()` callback.
 * Stores the user's ID in stored preferences.
 
 
-```android
+```java
     /**
      * Calls acquireToken to prompt the user for credentials.
      *
@@ -160,7 +160,7 @@ The ADAL library `acquireTokenSilent()` method is asynchronous. In addition to t
 User ID from storage.
 
 If authentication succeeds, the `onSuccess()` method is invoked. `onSuccess` stores the access token in `mAccessToken`. When making a REST call to send a mail message, the sample puts this access token in an authorization header.
-```android
+```java
     /**
      * Calls acquireTokenSilent with the user id stored in shared preferences.
      * In case of an error, it falls back to {@link AuthenticationManager#authenticatePrompt(AuthenticationCallback)}.
@@ -210,7 +210,7 @@ After the user signs-in to Azure, the Connect sample shows the user an activity 
 ### REST adapter helper class
 The [RESTHelper.java](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/RESTHelper.java) class provides a method for injecting an authorization header into every REST call the sample makes. It uses the access token provided by the authentication manager.
 
-```android
+```java
        //This method catches outgoing REST calls and injects the Authorization and host headers before
         //sending to REST endpoint
         RequestInterceptor requestInterceptor = new RequestInterceptor() {
@@ -227,7 +227,7 @@ The [RESTHelper.java](https://github.com/OfficeDev/O365-Android-Unified-API-Conn
 The [UnifiedAPIController.java](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/UnifiedAPIController.java) class generates the REST request in the `sendMail()` method.
 
 
-```android
+```java
     /**
      * Sends an email message using the Unified API on Office 365. The mail is sent
      * from the address of the signed in user.
@@ -258,7 +258,7 @@ The [UnifiedAPIController.java](https://github.com/OfficeDev/O365-Android-Unifie
 ### The UnifiedAPIService interface
 The [UnifiedAPIService.java](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/UnifiedAPIService.java) interface provides method signatures for the REST calls made by the sample using Retrofit annotations.
 
-```android
+```java
     @POST("/me/sendMail")
     void sendMail(
             @Header("Content-type") String contentTypeHeader,

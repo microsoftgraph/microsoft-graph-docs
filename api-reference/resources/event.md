@@ -6,9 +6,14 @@ An event in a calendar.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
+<<<<<<< HEAD:api-reference/resources/event.md
 |[List events](../api/user_list_events.md)|[Event](event.md) collection |Retrieve a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single instance meetings and series masters.|
 |[Create Event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the instances collection.|
 |[List extensions](../api/event_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
+=======
+|[List events](../api/user_list_events.md)|[event](event.md) collection |Retrieve a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single instance meetings and series masters.|
+|[Create Event](../api/user_post_events.md) |[event](event.md)| Create a new Event by posting to the instances collection.|
+>>>>>>> master:api-reference/v1.0/resources/event.md
 |[Get event](../api/event_get.md) | [event](event.md) |Read properties and relationships of event object.|
 |[Update](../api/event_update.md) | [event](event.md) |Update event object. |
 |[Delete](../api/event_delete.md) | None |Delete event object. |
@@ -17,22 +22,22 @@ An event in a calendar.
 |[decline](../api/event_decline.md)|None|Decline invitation to the specified event.|
 |[dismissReminder](../api/event_dismissreminder.md)|None|Dismiss the reminder for the specified event.|
 |[snoozeReminder](../api/event_snoozereminder.md)|None|Snooze the reminder for the specified event.|
-|[List instances](../api/event_list_instances.md) |[Event](event.md) collection| Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the occurrences and exceptions of the event in the specified time range.|
-|[List attachments](../api/event_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
-|[Create Attachment](../api/event_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
+|[List instances](../api/event_list_instances.md) |[event](event.md) collection| Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the occurrences and exceptions of the event in the specified time range.|
+|[List attachments](../api/event_list_attachments.md) |[attachment](attachment.md) collection| Get a Attachment object collection.|
+|[Create Attachment](../api/event_post_attachments.md) |[attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
 
 
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|attendees|[Attendee](attendee.md) collection|The collection of attendees for the event.|
-|body|[ItemBody](itembody.md)|The body of the message associated with the event.|
+|attendees|[attendee](attendee.md) collection|The collection of attendees for the event.|
+|body|[itemBody](itembody.md)|The body of the message associated with the event.|
 |bodyPreview|String|The preview of the message associated with the event.|
 |categories|String collection|The categories associated with the event.|
 |changeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|end|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends.|
+|end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends.|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
 |iCalUId|String|A unique identifier that is shared by all instances of an event across different calendars.|
 |id|String| Read-only.|
@@ -42,19 +47,19 @@ An event in a calendar.
 |isOrganizer|Boolean|Set to true if the message sender is also the organizer.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|location|[Location](location.md)|The location of the event.|
-|organizer|[Recipient](recipient.md)|The organizer of the event.|
+|location|[location](location.md)|The location of the event.|
+|organizer|[recipient](recipient.md)|The organizer of the event.|
 |originalEndTimeZone|String|The end time zone that was set when the event was created.|
 |originalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |originalStartTimeZone|String|The start time zone that was set when the event was created. |
-|recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence patern for the event.|
+|recurrence|[patternedRecurrence](patternedrecurrence.md)|The recurrence patern for the event.|
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
-|responseStatus|[ResponseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
+|responseStatus|[responseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
 |sensitivity|String| Possible values are: `Normal`, `Personal`, `Private`, `Confidential`.|
 |seriesMasterId|String|The categories assigned to the item.|
 |showAs|String|The status to show: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1. Possible values are: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
-|start|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event starts.|
+|start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event starts.|
 |subject|String|The text of the event's subject line.|
 |type|String|The event type: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3. Possible values are: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`.|
 |webLink|String|The URL to open the event in Outlook Web App.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame.|
@@ -62,10 +67,16 @@ An event in a calendar.
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+<<<<<<< HEAD:api-reference/resources/event.md
 |attachments|[Attachment](attachment.md) collection|The collection of [fileAttachment](fileAttachment.md) and [itemAttachment](itemAttachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
 |calendar|[Calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
 |extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |instances|[Event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
+=======
+|attachments|[attachment](attachment.md) collection|The collection of [fileAttachment](fileAttachment.md) and [itemAttachment](itemAttachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
+|calendar|[calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
+|instances|[event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
+>>>>>>> master:api-reference/v1.0/resources/event.md
 
 ### JSON representation
 

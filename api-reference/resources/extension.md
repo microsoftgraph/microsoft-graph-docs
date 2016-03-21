@@ -1,6 +1,6 @@
 # extension resource type
 
-
+An abstract type to support the OData v4 open type [openTypeExtension](openTypeExtension.md).
 
 ### JSON representation
 
@@ -31,10 +31,8 @@ None
 
 ### Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get extension](../api/extension_get.md) | [extension](extension.md) |Read properties and relationships of extension object.|
-|[Delete](../api/extension_delete.md) | None |Delete extension object. |
+See the methods of the derived type [openTypeExtension](openTypeExtension.md) for actually supported methods.
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

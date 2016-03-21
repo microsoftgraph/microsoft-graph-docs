@@ -7,6 +7,7 @@ You can create data extensions in a message, event, or contact in the signed-in 
 mailbox, or in an event in a group calendar of an organization. In the individual-user context, the user's 
 account can be in Office 365 or a Microsoft account (Hotmail.com, Live.com, MSN.com, Outlook.com and Passport.com).
 
+This resource is derived from the [extension](extension.md) abstract type and has the additional **extensionName** property.
 The **extensionName** property is the only pre-defined, writable property for all extensions. One way to help make 
 sure extension names are unique is to use a reverse domain name system (DNS) method that is dependent on 
 _your own domain_, for example, `Com.Contoso.Contact`. Do not use the Microsoft domain in an extension name.

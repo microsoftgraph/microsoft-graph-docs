@@ -1,6 +1,7 @@
 # Create an item in a collection
 
 Use this API to create a new item in a collection.
+
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -16,9 +17,10 @@ POST /drives/<id>/root/children
 ```
 
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+
+| Name          | Type   | Description               |
+|:--------------|:-------|:--------------------------|
+| Authorization | string | Bearer <token>. Required. |
 
 
 ### Request body
@@ -36,9 +38,19 @@ Here is an example of the request.
   "name": "create_item_from_item"
 }-->
 ```http
+<<<<<<< HEAD:api-reference/api/item_post_children.md
 POST https://graph.microsoft.com/beta/drive/root
+=======
+POST https://graph.microsoft.com/v1.0/drive/root
+Content-Type: application/json
+
+{
+  "name": "test-folder",
+  "folder": { }
+}
+>>>>>>> master:api-reference/v1.0/api/item_post_children.md
 ```
-In the request body, supply a JSON representation of [item](../resources/driveitem.md) object.
+
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -48,16 +60,11 @@ Here is an example of the response.
 } -->
 ```http
 HTTP/1.1 201 Created
-Content-type: application/json
-Content-length: 3179
+Content-Type: application/json
 
 {
   "createdBy": {
     "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "device": {
       "displayName": "displayName-value",
       "id": "id-value"
     },
@@ -68,15 +75,10 @@ Content-length: 3179
   },
   "createdDateTime": "datetime-value",
   "cTag": "cTag-value",
-  "description": "description-value",
   "eTag": "eTag-value",
   "id": "id-value",
   "lastModifiedBy": {
     "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "device": {
       "displayName": "displayName-value",
       "id": "id-value"
     },
@@ -92,42 +94,9 @@ Content-length: 3179
     "id": "id-value",
     "path": "path-value"
   },
-  "size": 99,
-  "webDavUrl": "webDavUrl-value",
-  "webUrl": "webUrl-value",
-  "audio": {
-    "album": "album-value",
-    "albumArtist": "albumArtist-value",
-    "artist": "artist-value",
-    "bitrate": 99,
-    "composers": "composers-value",
-    "copyright": "copyright-value",
-    "disc": 99,
-    "discCount": 99,
-    "duration": 99,
-    "genre": "genre-value",
-    "hasDrm": true,
-    "isVariableBitrate": true,
-    "title": "title-value",
-    "track": 99,
-    "trackCount": 99,
-    "year": 99
-  },
-  "deleted": {
-    "state": "state-value"
-  },
-  "file": {
-    "hashes": {
-      "crc32Hash": "crc32Hash-value",
-      "sha1Hash": "sha1Hash-value"
-    },
-    "mimeType": "mimeType-value"
-  },
-  "fileSystemInfo": {
-    "createdDateTime": "datetime-value",
-    "lastModifiedDateTime": "datetime-value"
-  },
+  "size": 0,
   "folder": {
+<<<<<<< HEAD:api-reference/api/item_post_children.md
     "childCount": 99
   },
   "image": {
@@ -172,6 +141,9 @@ Content-length: 3179
     "duration": 99,
     "height": 99,
     "width": 99
+=======
+    "childCount": 0
+>>>>>>> master:api-reference/v1.0/api/item_post_children.md
   }
 }
 ```
