@@ -62,7 +62,7 @@ Content-Type: application/json
   "notificationURL": "https://webhook.azurewebsites.net/notificationClient",
   "resource": "/me/mailfolders('inbox')/messages",
   "clientState": "SecretClientState",
-  "subscriptionExpirationDateTime": "2016-03-20T11:00:00.0000000Z"
+  "expirationDateTime": "2016-03-20T11:00:00.0000000Z"
 }
 ```
 
@@ -72,7 +72,7 @@ If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subs
 
 # Renewing a subscription
 
-The client can renew a subscription to a specific expiration date of up to three days from the time of request. The subscriptionExpirationDateTime property is optional. The default value is three days from the time of the request.
+The client can renew a subscription to a specific expiration date of up to three days from the time of request. The expirationDateTime property is optional. The default value is three days from the time of the request.
 
 ## Subscription renewal example
 
@@ -80,11 +80,11 @@ The client can renew a subscription to a specific expiration date of up to three
 PATCH https://graph.microsoft.com/beta/subscriptions/<id>;
 Content-Type: application/json
 {
-  "subscriptionExpirationDateTime": "2016-03-22T11:00:00.0000000Z"
+  "expirationDateTime": "2016-03-22T11:00:00.0000000Z"
 }
 ```
 
-If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subscription.md) object in the body. The subscription object includes the new subscriptionExpirationDateTime value. 
+If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subscription.md) object in the body. The subscription object includes the new expirationDateTime value. 
 
 # Deleting a subscription
 
@@ -104,8 +104,8 @@ The client starts receiving notifications after creating the subscription. Micro
 
 The notification object has the following properties:
 
-* subscriptionId - The ID for the subscription to which this notification belongs.
-* subscriptionExpirationDateTime - The expiration time for the subscription.
+* id - The ID for the subscription to which this notification belongs.
+* expirationDateTime - The expiration time for the subscription.
 * clientState - The clientState property specified in the subscription request.
 * changeType - The event type that caused the notification. For example, *Created* on mail receive, or *Updated* on marking a message read.
 * resource - The URI of the resource relative to `https://graph.microsoft.com`. 
@@ -123,8 +123,8 @@ When the user receives an email, Microsoft Graph sends a notification like the f
 {
   "value":[
   {
-    "subscriptionId":"<subscription_guid>",
-    "subscriptionExpirationDateTime":"\"2016-03-19T22:11:09.952Z\"",
+    "id":"<subscription_guid>",
+    "expirationDateTime":"\"2016-03-19T22:11:09.952Z\"",
     "clientState":"SecretClientState",
     "changeType":"Created",
     "resource":"Users/<user_guid>@<tenant_guid>/Messages/<long_id_string>",
