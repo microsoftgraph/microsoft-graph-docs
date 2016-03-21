@@ -9,6 +9,7 @@ The following **scopes** are required to execute this API:
 GET /subscriptions/<id>
 ```
 ### Optional query parameters
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
 | Name      |Description|
@@ -28,7 +29,7 @@ Here is an example of the request.
   "name": "get_subscription"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/subscriptions/<id>
+GET https://graph.microsoft.com/beta/subscriptions/<id>
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

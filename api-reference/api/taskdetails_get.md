@@ -11,11 +11,7 @@ GET /users/<id>/tasks/<id>/details
 GET /users/<id>/plans/<id>/tasks/<id>/details
 ```
 ### Optional query parameters
-|Name|Value|Description|
-|:---------------|:--------|:-------|
-|$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [taskDetails](../resources/taskdetails.md) object for supported names. |
-|$select|string|Comma-separated list of properties to include in the response.|
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
 | Name      |Description|
@@ -35,7 +31,7 @@ Here is an example of the request.
   "name": "get_taskdetails"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/tasks/<id>/details
+GET https://graph.microsoft.com/beta/tasks/<id>/details
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

@@ -9,10 +9,7 @@ The following **scopes** are required to execute this API:
 GET /directoryObjects
 ```
 ### Optional query parameters
-|Name|Value|Description|
-|:---------------|:--------|:-------|
-|$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
-|$top|int|The number of items to return in a result set.|
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
 | Name      |Description|
@@ -32,7 +29,7 @@ Here is an example of the request.
   "name": "get_directoryobjects"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directoryObjects
+GET https://graph.microsoft.com/beta/directoryObjects
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
