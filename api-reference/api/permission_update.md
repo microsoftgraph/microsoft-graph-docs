@@ -1,88 +1,65 @@
 # Update permission
 
 Update the properties of an existing permission object. Only the roles property can be modified.
+
 ### Prerequisites
+
 One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
 
 ### HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /drive/root/permissions/<id>
-PATCH /drive/items/<id>/permissions/<id>
-PATCH /drives/<id>/root/permissions/<id>
+PATCH /me/drive/root/permissions/<id>
+PATCH /me/drive/items/<id>/permissions/<id>
+PATCH /groups/<group-id>/drive/items/<item-id>/permissions/<id>
 ```
 
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| if-match  | string  | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.|
-| Authorization  | string  | Bearer <token>. Required. |
 
+| Name          | Type   | Description                                                                                                                                                                                       |
+|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Authorization | string | Bearer <token>. Required.                                                                                                                                                                         |
+| if-match      | string | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
 
 ### Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be
+updated. Existing properties that are not included in the request body will
+maintain their previous values or be recalculated based on changes to other
+property values. For best performance you shouldn't include existing values that
+haven't changed.
 
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|roles|String|An array of permission types.|
+| Property     | Type   | Description                   |
+|:-------------|:-------|:------------------------------|
+| **roles**    | String | An array of permission types. |
+
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated
+[permission](../resources/permission.md) object in the response body.
+
 ### Example
+
 ##### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_permission"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/drive/root/permissions/<id>
+PATCH /me/drive/items/<item-id>/permissions/<id>
 Content-type: application/json
-Content-length: 762
 
 {
-  "grantedTo": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "device": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "user": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    }
-  },
-  "id": "id-value",
-  "invitation": {
-    "email": "email-value",
-    "redeemedBy": "redeemedBy-value",
-    "signInRequired": true
-  },
-  "inheritedFrom": {
-    "driveId": "driveId-value",
-    "id": "id-value",
-    "path": "path-value"
-  },
-  "link": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "type": "type-value",
-    "webUrl": "webUrl-value"
-  },
-  "roles": [
-    "roles-value"
-  ]
+  "roles": [ "read" ]
 }
 ```
 ##### Response
+
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -92,45 +69,16 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 762
 
 {
   "grantedTo": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "device": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
     "user": {
-      "displayName": "displayName-value",
-      "id": "id-value"
+      "displayName": "Ryan Gregg",
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
     }
   },
-  "id": "id-value",
-  "invitation": {
-    "email": "email-value",
-    "redeemedBy": "redeemedBy-value",
-    "signInRequired": true
-  },
-  "inheritedFrom": {
-    "driveId": "driveId-value",
-    "id": "id-value",
-    "path": "path-value"
-  },
-  "link": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "type": "type-value",
-    "webUrl": "webUrl-value"
-  },
-  "roles": [
-    "roles-value"
-  ]
+  "id": "1",
+  "roles": [ "read" ]
 }
 ```
 
@@ -141,5 +89,5 @@ Content-length: 762
   "description": "Update permission",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "OneDrive/Item/Update permission"
 }-->

@@ -1,38 +1,51 @@
-# List drives
+# List available drives
 
-Retrieve a list of drive objects.
+Retrieve a list of available drive objects for a user or Office 365 group.
+
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 
   * Files.Read
- 
+  * Files.ReadWrite
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /drives
+GET /me/drives
+GET /groups/<id>/drives
 ```
 ### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query
+Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help
+customize the response.
 
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+
+| Name          | Type   | Description               |
+|:--------------|:-------|:--------------------------|
+| Authorization | string | Bearer <token>. Required. |
+
 
 ### Request body
 Do not supply a request body for this method.
+
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [drive](../resources/drive.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of
+[drive](../resources/drive.md) objects in the response body.
+
 ### Example
+
 ##### Request
-Here is an example of the request.
+Here is an example of the request for the user's drives.
+
 <!-- {
   "blockType": "request",
   "name": "get_drives"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drives
+GET https://graph.microsoft.com/v1.0/me/drives
 ```
+
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -49,33 +62,29 @@ Content-length: 579
 {
   "value": [
     {
-      "id": "id-value",
-      "driveType": "driveType-value",
+      "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
+      "driveType": "business",    
       "owner": {
-        "application": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        },
-        "device": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        },
-        "user": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        }
+          "user": {
+              "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+              "displayName": "Ryan Gregg"
+          }
       },
       "quota": {
-        "deleted": 99,
-        "remaining": 99,
-        "state": "state-value",
-        "total": 99,
-        "used": 99
+          "deleted": 256938,
+          "remaining": 1099447353539,
+          "state": "normal",
+          "total": 1099511627776
       }
     }
   ]
 }
 ```
+
+## Remarks
+
+Most users will only have a single OneDrive. Office 365 groups may have more than
+one drive available.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -84,5 +93,5 @@ Content-length: 579
   "description": "List drives",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "OneDrive/Drive/List Drives"
 }-->
