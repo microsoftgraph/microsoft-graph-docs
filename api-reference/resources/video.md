@@ -3,12 +3,14 @@
 The **video** resource indicates an item is a video media file and provides details about the video.
 
 ## Properties
-| Property  | Type   | Description                               |
-|:----------|:-------|:------------------------------------------|
-| bitrate   | Int32  | Bit rate of the video in bits per second. |
-| duration  | Int64  | Duration of the file in milliseconds.     |
-| height    | Int32  | Height of the video, in pixels.           |
-| width     | Int32  | Width of the video, in pixels.            |
+
+| Property | Type  | Description                               |
+|:---------|:------|:------------------------------------------|
+| bitrate  | Int32 | Bit rate of the video in bits per second. |
+| duration | Int64 | Duration of the file in milliseconds.     |
+| height   | Int32 | Height of the video, in pixels.           |
+| width    | Int32 | Width of the video, in pixels.            |
+
 
 
 ### JSON representation

@@ -1,15 +1,14 @@
 # identity resource type
 
-The **identity** resource represents an identity of an _actor_. For example, and actor can be a user, device, or application.
- 
- 
+The **identity** resource represents an identity of an _actor_. For example, and
+actor can be a user, device, or application.
+
 ### Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|displayName|String|The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, OneDrive may show the new value in a future response, but the items associated with the user won't show up as having changed in `view.delta`|
-|id|String|Unique identifier for the identity.|
 
-
+| Property    | Type   | Description                                                                                                                                                                                                                                                                                                           |
+|:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| displayName | String | The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [find changes](../api/item_delta.md) |
+| id          | String | Unique identifier for the identity.                                                                                                                                                                                                                                                                                   |
 
 ### JSON representation
 
@@ -28,7 +27,6 @@ Here is a JSON representation of the resource.
   "displayName": "string",
   "id": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

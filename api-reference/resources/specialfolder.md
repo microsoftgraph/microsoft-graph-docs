@@ -1,21 +1,25 @@
 # specialFolder resource type
 
-The **specialFolder** resource indiciates that an item is also available through the special folder collection.
+The **SpecialFolder** facet provides information about how a folder can be
+accessed via the [special folders collection](../api/drive_special.md).
 
-Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.
+Special folders provide simple aliases to access well-known folders in OneDrive
+without the need to look up the folder by path (which would require
+localization), or reference the folder with an ID. If a special folder is
+renamed or moved to another location within the drive, this syntax will continue
+to find that folder.
 
-Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.
+Special folders are automatically created the first time an application attempts
+to write to one, if it doesn't already exist. If a user deletes one, it is
+recreated when written to again.
 
-**Note: **If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.
-
-The special folders that are available to all clients are: Documents, Photos, Camera Roll, App Root, and Music.
-
+**Note:** If your app has only requested **Files.Read** scope and requests a
+special folder that doesn't exist, the response will be a `403 Forbidden` error.
 
 ### Properties
 | Property  | Type   | Description                                                            |
 |:----------|:-------|:-----------------------------------------------------------------------|
 | name      | string | The unique identifier for this item in the `/drive/special` collection |
-
 
 ### JSON representation
 

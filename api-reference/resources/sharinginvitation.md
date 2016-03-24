@@ -4,18 +4,12 @@ Represents information about a sharing invitation for a set of permissions. This
 
 
 ### Properties
-| Property Name  | Type    | Description                                                                                   |
-|:---------------|:--------|:----------------------------------------------------------------------------------------------|
-| email          | String  | The email address the invitation was sent to                                                  |
-| redeemedBy     | String  | Indicates the redemption status of the invitation. See possible values below.                 |
-| signInRequired | Boolean | If `true` the recipient of the invitation needs to sign in in order to access the shared item |
 
-### RedeemedBy Values
-| Value | Description                                                                                               |
-|:------|:----------------------------------------------------------------------------------------------------------|
-| none  | The sharing invitation has not been redeemed or accepted.                                                 |
-| same  | The sharing invitation was redeemed by an account matching the email address of the recipient.            |
-| other | The sharing invitation was redeemed by an account that does not match the email address of the recipient. |
+| Property Name  | Type                          | Description                                                                                                                   |
+|:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
+| email          | String                        | The email address provided for the recipient of the sharing invitation. Read-only.                                          |
+| invitedBy      | [identitySet](identityset.md) | Provides information about who sent the invitation that created this permission, if that information is available. Read-only. |
+| signInRequired | Boolean                       | If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.                     |
 
 ### JSON representation
 

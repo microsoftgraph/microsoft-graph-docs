@@ -4,10 +4,11 @@ The **file** resource groups file-related data items into a single structure.
 
 
 ### Properties
-| Property | Type                          | Description                                                                                                                                 |
-|:--------------|:------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------|
-| hashes    | [HashesType](hashes.md) | Hashes of the file's binary content, if available.                                                                                          |
-| mimeType  | string                        | The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. |
+
+| Property | Type                    | Description                                                                                                                                      |
+|:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
+| hashes   | [HashesType](hashes.md) | Hashes of the file's binary content, if available. Read-only.                                                                                    |
+| mimeType | string                  | The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only. |
 
 
 ### JSON representation
@@ -16,9 +17,7 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [ ],
   "@odata.type": "microsoft.graph.file"
 }-->
 
@@ -27,7 +26,6 @@ Here is a JSON representation of the resource.
   "hashes": {"@odata.type": "microsoft.graph.hashes"},
   "mimeType": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

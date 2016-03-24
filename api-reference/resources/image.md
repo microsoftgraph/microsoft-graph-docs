@@ -4,17 +4,11 @@ The **image** resource is available on items that represent a bitmap or image.
 
 
 ### Properties
-| Property      | Type    | Description                     |
-|:--------------|:--------|:--------------------------------|
-| **height**    | Int32   | Height of the image, in pixels. |
-| **width**     | Int32   | Width of the image, in pixels.  |
 
-
-## Notes
-
-In OneDrive for Business, this resource is returned on items that are expected to be images based on file extension. This resource returns no properties in OneDrive for Business.
-
-
+| Property   | Type  | Description                                |
+|:-----------|:------|:-------------------------------------------|
+| **height** | Int32 | Height of the image, in pixels. Read-only. |
+| **width**  | Int32 | Width of the image, in pixels. Read-only.  |
 
 ### JSON representation
 
@@ -35,6 +29,13 @@ Here is a JSON representation of the resource.
 }
 
 ```
+
+## Remarks
+
+In OneDrive for Business, this resource is returned on items that are expected
+to be images based on file extension. This resource returns no properties in
+OneDrive for Business.
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

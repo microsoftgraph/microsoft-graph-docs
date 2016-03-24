@@ -1,16 +1,16 @@
 # identitySet resource type
 
-The **identitySet** type is a keyed collection of [identity](identity.md) objects. It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
-
-
+The **identitySet** type is a keyed collection of [identity](identity.md)
+objects. It is used to represent a set of identities associated with various
+events for an item, such as _created by_ or _last modified by_.
 
 ### Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|application|[identity](identity.md)|An identity resource that represents the application.|
-|device|[identity](identity.md)|An identity resource that represents the device.|
-|user|[identity](identity.md)|An identity resource that represents a user.|
 
+| Property    | Type                    | Description                                           |
+|:------------|:------------------------|:------------------------------------------------------|
+| application | [identity](identity.md) | An identity resource that represents the application. |
+| device      | [identity](identity.md) | An identity resource that represents the device.      |
+| user        | [identity](identity.md) | An identity resource that represents a user.          |
 
 ### JSON representation
 
@@ -18,9 +18,7 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [ "user", "device", "application" ],
   "@odata.type": "microsoft.graph.identitySet"
 }-->
 

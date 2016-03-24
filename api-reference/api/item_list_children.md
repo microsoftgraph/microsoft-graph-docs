@@ -1,38 +1,43 @@
-# List children
+# List children of a driveItem
 
-Items with the folder resource may contain one or more child items. This API
-lists the contents of a drive or item's `children` collection using either the root folder, item ID or path. To list children for drives that represent a user's OneDrive for Business, insert `/me` before `/drive` in your request. For example, `GET /me/drive/root/children` returns the list of items in a user's OneDrive for Business.
+Items with the folder property may contain child items. This API
+lists the contents of a **driveItem's** `children` collection using either the
+root driveItem, driveItem ID or path.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.Read
+  * Files.ReadWrite
 
 ### HTTP request
 ```http
-GET /drive/root/children
-GET /drive/items/{item-id}/children
-GET /drive/root:/{item-path}:/children
+GET /me/drive/root/children
+GET /me/drive/items/{item-id}/children
+GET /me/drive/root:/{item-path}:/children
 ```
 
 ### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query
+Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help
+customize the response.
 
 ### Request headers
 
-| Name     | Type | Description        |
-|:----------------|:------|:--------------------------------------------|
-| if-none-match | String  | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
-| Authorization  | string  | Bearer {token}. Required. |
-
+| Name          | Type   | Description                                                                                                                                              |
+|:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Authorization | string | Bearer {token}. Required.                                                                                                                                |
+| if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
 ### Request body
 Do not supply a request body for this method.
 
 ### Example
 Here is an example of how to call this API.
+
 ##### Request
-Here is an example of the request.
+Here is an example request to return the driveItems at the root of the signed-in
+users OneDrive.
 
 <!-- {
   "blockType": "request",
@@ -66,9 +71,11 @@ Content-type: application/json
 }
 ```
 
-**Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items. You can control the page size through
-[optional query string parameters](https://dev.onedrive.com/odata/optional-query-parameters.htm).
-For more info, see [List children for a OneDrive item](https://dev.onedrive.com/items/list.htm).
+**Note:** If a collection exceeds the default page size (200 items), the
+**@odata.nextLink** property is returned in the response to indicate more
+items are available and provide the request URL for the next page of items.
+
+You can control the page size through [optional query string parameters](https://dev.onedrive.com/odata/optional-query-parameters.htm).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -77,5 +84,5 @@ For more info, see [List children for a OneDrive item](https://dev.onedrive.com/
   "description": "List the children of an item.",
   "keywords": "list,children,collection",
   "section": "documentation",
-  "tocPath": "Items/List Children"
+  "tocPath": "OneDrive/DriveItem/List children"
 } -->

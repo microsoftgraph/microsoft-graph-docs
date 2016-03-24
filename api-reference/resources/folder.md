@@ -1,14 +1,16 @@
 # folder resource type
 
-The **folder** resource groups folder-related data on an item into a single structure.
+The **folder** resource groups folder-related data on an item into a single
+structure.
 
 
 
 ### Properties
 
-| Property  | Type  | Description                                                     |
+| Property       | Type  | Description                                                     |
 |:---------------|:------|:----------------------------------------------------------------|
-| **childCount** | Int64 | Number of children contained immediately within this container. | 
+| **childCount** | Int64 | Number of children contained immediately within this container. |
+
 
 ### JSON representation
 

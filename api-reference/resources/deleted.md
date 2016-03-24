@@ -1,12 +1,17 @@
 # deleted resource type
 
-The **deleted** resource indicates that the item has been deleted. In this version of the API, the presence (non-null) of the resource value indicates that the file was deleted. A null (or missing) value indicates that the file is not deleted.
+The **deleted** resource indicates that the item has been deleted. In this
+version of the API, the presence (non-null) of the resource value indicates that
+the file was deleted. A null (or missing) value indicates that the file is not
+deleted.
+
+See [view changes for an item](../api/item_delta.md) for more information.
 
 ### Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|state|String|Represents the state of the deleted item.|
 
+| Property | Type   | Description                               |
+|:---------|:-------|:------------------------------------------|
+| state    | String | Represents the state of the deleted item. |
 
 ### JSON representation
 

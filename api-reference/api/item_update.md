@@ -1,6 +1,9 @@
-# Update an item
+# Update a driveItem metadata
 
-Update the metadata for an item by ID or path. You can also use update to move an item to another parent by updating the item's **parentReference** property.
+Update the metadata for a driveItem by ID or path.
+
+You can also use update to move an item to another parent by updating the
+item's **parentReference** property.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,44 +13,49 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /drive/items/{item-id}
-PATCH /drive/root:/{item-path}
+PATCH /me/drive/items/{item-id}
+PATCH /me/drive/root:/{item-path}
+PATCH /groups/<id>/drive/items/<item-id>
 ```
 
 ### Request headers
 
-| Name       | Type | Description                                                                                                                                                         |
-|:-----------|:------|:-------------------------|
-| if-match | String  | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
-| Authorization  | string  | Bearer <token>. Required. |
+| Name          | Type   | Description                                                                                                                                                         |
+|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Authorization | string | Bearer <token>. Required.                                                                                                                                           |
+| if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
 
 ### Request body
-In the request body, supply the values for relevant fields that should be
+In the request body, supply the values for properties that should be
 updated. Existing properties that are not included in the request body
 will maintain their previous values or be recalculated based on changes to other
-property values. For best performance you shouldn't include existing values
+property values. For best performance your app should not include properties
 that haven't changed.
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [item](../resources/driveitem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated
+[item](../resources/driveitem.md) object in the response body.
+
 ### Example
-This example renames and moves a folder to a new parent path.
+This example renames the file and adds a description to the driveItem.
+
 <!-- {
   "blockType": "request",
   "name": "update_item"
 }-->
 ```http
-PATCH /drive/items/{item-id}
+PATCH /me/drive/items/<item-id>
 Content-type: application/json
 
 {
-	"name": "new-item-name",
-	"parentReference" : {"path": "/drive/root:/Documents"}
+	"name": "new-file-name.docx",
+  "description": "Adding a description to this file",
 }
 ```
 
 ### Response
-Here is an example of the response.
+Here is an example of the response. This response is truncated for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -58,9 +66,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-	"id": "0123456789abc",
-	"name": "BFolder",
-	"folder": { "childCount": 3 }
+	"id": "01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK",
+	"name": "new-file-name.docx",
+  "description": "Adding a description to this file",
+	"file": { }
 }
 ```
 
@@ -71,5 +80,5 @@ Content-type: application/json
   "description": "Update item",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "OneDrive/Item/Update item"
 }-->
