@@ -1,4 +1,4 @@
-# DriveItem resource type
+# driveItem resource type
 
 The **driveItem** resource represents an item contained in a drive, like a file or folder. The properties of an item provide information about the type of item represented.
 For example, if an item behaves as a [folder](folder.md), it will have the **folder** property set to an instance of the folder resource that contains details about the folder.

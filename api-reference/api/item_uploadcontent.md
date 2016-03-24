@@ -1,8 +1,8 @@
-# Upload an item
+# Upload or replace the contents of a driveItem
 
-The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. This method only supports files up to 4MB in size.
-
-**Note:** Support for chunked uploads or upload using a URL are not yet available.
+The simple upload API allows you to provide the contents of a new file or update
+the contents of an existing file in a single API call. This method only supports
+files up to 4MB in size.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -12,31 +12,29 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /drive/items/{parent-id}:/{filename}:/content
-PUT /drive/root:/{parent-path}/{filename}:/content
-PUT /drive/items/{parent-id}/children/{filename}/content
+PUT /me/drive/items/{parent-id}:/{filename}:/content
+PUT /me/drive/root:/{parent-path}/{filename}:/content
+PUT /me/drive/items/{parent-id}/children/{filename}/content
+PUT /groups/<id>/drive/items/<parent-id>/children/<filename>/content
 ```
 
 ### Request body
-The contents of the request body should be the binary stream of the file to be uploaded.
-
-### Query parameters
-You can use these optional query string parameters to change the behavior of the PUT request:
-
-| Parameter Name             | Value  | Description    |
-|:---------------------------|:-------|:--------------------------|
-| **@name.conflictBehavior** | string | Specify the behavior to use if the file already exists. You can use the values *fail*, *replace*, or *rename*. The default for PUT is *replace*. |
+The contents of the request body should be the binary stream of the file to be
+uploaded.
 
 ### Response
-If successful, this method returns an [item](../resources/driveitem.md) object in the response body for the newly created file.
+If successful, this method returns a [driveItem](../resources/driveitem.md) object
+in the response body for the newly created file.
+
 ### Example
-This example renames and moves a folder to a new parent path.
+This example uploads a file by path to the signed-in user's OneDrive.
+
 <!-- {
   "blockType": "request",
   "name": "upload_item"
 }-->
 ```http
-PUT /drive/root:{item-path}:/content
+PUT /me/drive/root:/{item-path}:/content
 Content-type: text/plain
 
 The contents of the file goes here.

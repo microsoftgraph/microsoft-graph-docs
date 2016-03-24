@@ -1,6 +1,9 @@
-# Create an item in a collection
+# Create a new folder driveItem
 
-Use this API to create a new item in a collection.
+Use this API to create a new folder in a drive. Your app can create folders
+in the root of a drive, under an existing driveItem with a folder property, or
+in the [**approot** folder in OneDrive](https://dev.onedrive.com/misc/appfolder.htm)
+
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -9,38 +12,52 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /drive/root/children
-POST /drive/items/<id>/children
-POST /drives/<id>/root/children
-
+POST /me/drive/root/children
+POST /me/drive/items/<id>/children
+POST /me/drives/<id>/root/children
 ```
 
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+
+| Name          | Type   | Description               |
+|:--------------|:-------|:--------------------------|
+| Authorization | string | Bearer <token>. Required. |
 
 
 ### Request body
-In the request body, supply a JSON representation of [item](../resources/driveitem.md) object.
+In the request body, supply a JSON representation of a
+[driveItem](../resources/driveitem.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [item](../resources/driveitem.md) object in the response body.
+If successful, this method returns `201, Created` response code and
+[item](../resources/driveitem.md) object in the response body.
 
 ### Example
+
 ##### Request
-Here is an example of the request.
+
+Here is an example of a request to create a new folder in the root of a user's
+OneDrive.
+
 <!-- {
   "blockType": "request",
   "name": "create_item_from_item"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root
+POST https://graph.microsoft.com/v1.0/me/drive/root/children
+Content-Type: application/json
+
+{
+  "folder": { },
+  "name": "Graph Project Files"
+}
 ```
 In the request body, supply a JSON representation of [item](../resources/driveitem.md) object.
+
 ##### Response
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -49,130 +66,36 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 3179
 
 {
   "createdBy": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "device": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "user": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    }
-  },
-  "createdDateTime": "datetime-value",
-  "cTag": "cTag-value",
-  "description": "description-value",
-  "eTag": "eTag-value",
-  "id": "id-value",
-  "lastModifiedBy": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "device": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "user": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    }
-  },
-  "lastModifiedDateTime": "datetime-value",
-  "name": "name-value",
-  "parentReference": {
-    "driveId": "driveId-value",
-    "id": "id-value",
-    "path": "path-value"
-  },
-  "size": 99,
-  "webDavUrl": "webDavUrl-value",
-  "webUrl": "webUrl-value",
-  "audio": {
-    "album": "album-value",
-    "albumArtist": "albumArtist-value",
-    "artist": "artist-value",
-    "bitrate": 99,
-    "composers": "composers-value",
-    "copyright": "copyright-value",
-    "disc": 99,
-    "discCount": 99,
-    "duration": 99,
-    "genre": "genre-value",
-    "hasDrm": true,
-    "isVariableBitrate": true,
-    "title": "title-value",
-    "track": 99,
-    "trackCount": 99,
-    "year": 99
-  },
-  "deleted": {
-    "state": "state-value"
-  },
-  "file": {
-    "hashes": {
-      "crc32Hash": "crc32Hash-value",
-      "sha1Hash": "sha1Hash-value"
-    },
-    "mimeType": "mimeType-value"
-  },
-  "fileSystemInfo": {
-    "createdDateTime": "datetime-value",
-    "lastModifiedDateTime": "datetime-value"
-  },
-  "folder": {
-    "childCount": 99
-  },
-  "image": {
-    "height": 99,
-    "width": 99
-  },
-  "location": {
-    "altitude": 99,
-    "latitude": 99,
-    "longitude": 99
-  },
-  "photo": {
-    "height": 99,
-    "width": 99,
-    "id": "id-value"
-  },
-  "searchResult": {
-    "onClickTelemetryUrl": "onClickTelemetryUrl-value"
-  },
-  "shared": {
-    "owner": {
-      "application": {
-        "displayName": "displayName-value",
-        "id": "id-value"
-      },
-      "device": {
-        "displayName": "displayName-value",
-        "id": "id-value"
-      },
       "user": {
-        "displayName": "displayName-value",
-        "id": "id-value"
+          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+          "displayName": "Ryan Gregg"
       }
-    },
-    "scope": "scope-value"
   },
-  "specialFolder": {
-    "name": "name-value"
+  "createdDateTime": "2016-03-21T20:01:37Z",
+  "cTag": "\"c:{86EB4C8E-D20D-46B9-AD41-23B8868DDA8A},0\"",
+  "eTag": "\"{86EB4C8E-D20D-46B9-AD41-23B8868DDA8A},1\"",
+  "folder": {
+      "childCount": 0
   },
-  "video": {
-    "bitrate": 99,
-    "duration": 99,
-    "height": 99,
-    "width": 99
-  }
+  "id": "01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK",
+  "lastModifiedBy": {
+      "user": {
+          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+          "displayName": "Ryan Gregg"
+      }
+  },
+  "lastModifiedDateTime": "2016-03-21T20:01:37Z",
+  "name": "Graph Project Files",
+  "parentReference": {
+      "driveId": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
+      "id": "01NKDM7HN6Y2GOVW7725BZO354PWSELRRZ",
+      "path": "/drive/root:"
+  },
+  "size": 0,
+  "webUrl": "https://contoso-my.sharepoint.com/personal/rgregg_contoso_com/Documents/Graph%20Project%20Files"
 }
 ```
 
@@ -183,5 +106,5 @@ Content-length: 3179
   "description": "Create children",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "OneDrive/Item/Create folder"
 }-->

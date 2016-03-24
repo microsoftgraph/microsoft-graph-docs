@@ -1,41 +1,51 @@
 # Get permission
 
 Retrieve the properties and relationships of permission object.
+
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.Read
 
 ### HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /drive/root/permissions/<id>
-GET /drive/items/<id>/permissions/<id>
-GET /drives/<id>/root/permissions/<id>
+GET /me/drive/items/<item-id>/permissions/<id>
+GET /me/drive/root:/<item-path>:/permissions/<id>
+GET /groups/<group-id>/drive/items/<item-id>/permissions/<id>
 ```
 ### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query
+Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help
+customize the response.
 
 
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+
+| Name          | Type   | Description               |
+|:--------------|:-------|:--------------------------|
+| Authorization | string | Bearer <token>. Required. |
 
 
 ### Request body
 Do not supply a request body for this method.
+
 ### Response
 If successful, this method returns a `200 OK` response code and [permission](../resources/permission.md) object in the response body.
+
 ### Example
+
 ##### Request
-Here is an example of the request.
+
+Here is an example of the request to access a permission on the root folder.
+
 <!-- {
   "blockType": "request",
   "name": "get_permission"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/permissions/<id>
+GET /me/drive/root/permissions/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -51,41 +61,13 @@ Content-length: 762
 
 {
   "grantedTo": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "device": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
     "user": {
-      "displayName": "displayName-value",
-      "id": "id-value"
+      "displayName": "Ryan Gregg",
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
     }
   },
-  "id": "id-value",
-  "invitation": {
-    "email": "email-value",
-    "redeemedBy": "redeemedBy-value",
-    "signInRequired": true
-  },
-  "inheritedFrom": {
-    "driveId": "driveId-value",
-    "id": "id-value",
-    "path": "path-value"
-  },
-  "link": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "type": "type-value",
-    "webUrl": "webUrl-value"
-  },
-  "roles": [
-    "roles-value"
-  ]
+  "id": "1",
+  "roles": [ "write" ]
 }
 ```
 
@@ -96,5 +78,5 @@ Content-length: 762
   "description": "Get permission",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "OneDrive/Item/Get permission"
 }-->
