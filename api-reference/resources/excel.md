@@ -1,7 +1,5 @@
 # Excel REST API
 
-**Note:** _The Excel REST APIs are not yet released. We look forward to adding more reference material and making the APIs available as part of the Microsoft Graph /beta API set. Some of the highlights of upcoming APIs are listed below._
-
 ## Objects 
 
 * Worksheet: The Worksheet object is a member of the Worksheets collection. The Worksheets collection contains all the Worksheet objects in a workbook.
@@ -15,4 +13,3 @@
 	* Chart Collection: A collection of charts in a workbook or a worksheet	
 * NamedItem: Represents a defined name for a range of cells or a value. Names can be primitive named objects (as seen in the type below), range object, etc.
   * NamedItem Collection: a collection of named items of a workbook.
-* Create Session: Create Excel workbook sessions. It is a good practice to create workbook session and pass it along with the request as part of the request header as it allows the server to link the API request to an existing in-memory copy of the file on the server. 
