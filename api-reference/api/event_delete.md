@@ -3,7 +3,7 @@
 Delete event.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
-*Calendars.ReadWrite* 
+***Calendars.ReadWrite***
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
