@@ -2,9 +2,9 @@
 
 Retrieve the properties and relationships of taskdetails object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
  
-Group.ReadWrite.All AND Tasks.ReadWrite
+Group.Read.All, Group.ReadWrite.All
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

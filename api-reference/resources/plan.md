@@ -1,6 +1,6 @@
 # plan resource type
 
-The Plan resource represents a plan in Office 365. A plan can be owned by a [group](group.md) and contains a collection of [tasks](task.md). It also can have a collection of [buckets](bucket.md). Each plan object has a [details](plandetails.md) object which can contain more information about the plan.
+The Plan resource represents a plan in Office 365. A plan can be owned by a [group](group.md) and contains a collection of [tasks](task.md). It also can have a collection of [buckets](bucket.md). Each plan object has a [details](plandetails.md) object which can contain more information about the plan. See [overview](tasks_overview.md) for more information regarding relationships between group, plan and task.
 
 ### JSON representation
 
@@ -33,7 +33,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |createdBy|String|Read-only. User id by which the plan is created.|
 |id|String| Read-only. Id of the plan. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service. |
-|owner|String| Group `id` by which the plan is owned. Once set, this can only be updated by the owner.|
+|owner|String|[Group](group.md) `id` by which the plan is owned. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.|
 |title|String| Required. Title of the plan. This is usually set the name of the group owning the plan.|
 
 ### Relationships
