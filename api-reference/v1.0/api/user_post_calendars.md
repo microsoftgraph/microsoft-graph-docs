@@ -1,6 +1,6 @@
 # Create Calendar
 
-Use this API to create a new Calendar.
+Use this API to create a new calendar.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.ReadWrite*
@@ -16,11 +16,11 @@ POST /users/<id | userPrincipalName>/calendars
 | Content-Type  | application/json  |
 
 ### Request body
-In the request body, supply a JSON representation of [Calendar](../resources/calendar.md) object.
+In the request body, supply a JSON representation of the [Calendar](../resources/calendar.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [Calendar](../resources/calendar.md) object in the response body.
+If successful, this method returns `201, Created` response code and the [Calendar](../resources/calendar.md) object in the response body.
 
 ### Example
 ##### Request
@@ -41,7 +41,7 @@ Content-length: 78
   "changeKey": "changeKey-value"
 }
 ```
-In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
+In the request body, supply a JSON representation of the [calendar](../resources/calendar.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {

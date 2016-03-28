@@ -1,6 +1,6 @@
 # Get calendar
 
-Retrieve the properties and relationships of the calendar object.
+Retrieve the properties and relationships of the Calendar object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.Read*
@@ -35,7 +35,7 @@ This method supports the [OData query parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [calendar](../resources/calendar.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [Calendar](../resources/calendar.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
