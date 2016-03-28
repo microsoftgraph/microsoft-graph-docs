@@ -1,7 +1,5 @@
-# Tasks API
-
-Welcome to the Office 365 Tasks API documentation. 
-Here you can find everything you need to create apps leveraging the Office 365 Tasks API. The new Tasks API enables you to create tasks and assign them to users in a group in Office 365.
+# Groups, Plans and Tasks
+The new Office 365 Tasks API enables you to create tasks and assign them to users in a group in Office 365.
 
 ## Basics
 Before you get started with trying out the Tasks API, it is worth understanding how the main objects in Tasks API relate to each other as well as Office 365 groups.
@@ -14,7 +12,9 @@ To get the plans owned by a group, make the HTTP request below.
 ```http
 GET /groups/<id>/plans
 ```
-When creating a new plan, you can make a group its owner by simply setting the `owner` property on a plan object to the id of a group object if the group does not already own a plan. 
+When creating a new plan, you need to make a group its owner by simply setting the `owner` property on a plan object to the id of a group object if the group does not already own a plan. 
+
+**Note that you need to ensure that the user who is creating the plan is a member of the group. When you create a new group using the API, you are not automatically added to the group as a member. This has to be done using a separate API call.** 
 
 ### Plans
 Plans are the containers of tasks. 
@@ -44,6 +44,3 @@ GET /tasks/<id>/details
 The links on the left show the objects available in the Tasks API. 
 Each object page link contains a description of the properties, relationships, and methods available on the object.
 Explore the links on the left to learn more.
-
-## Additional resources
-- [Office 365 Node.js Tasks API code sample](https://github.com/OfficeDev/O365-Nodejs-Express-Tasks-API-Connect)

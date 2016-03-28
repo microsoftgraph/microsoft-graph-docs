@@ -1,4 +1,4 @@
-# bucket resource type
+exce# bucket resource type
 
 The Bucket resource represents a bucket (or "custom column") for tasks in a plan in Office 365. It is contained in a [plan](plan.md) and can have a collection of [tasks](task.md).
 
