@@ -12,7 +12,7 @@ One of the following **scopes** is required to execute this API:
 ```http
 GET /drive
 GET /drives/<id>
-GET /users/<id | userPrincipalName>/drive
+GET /users/<id|userPrincipalName>/drive
 GET /groups/<id>/drive
 ```
 ### Optional query parameters
