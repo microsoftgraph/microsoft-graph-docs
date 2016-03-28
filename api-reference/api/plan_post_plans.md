@@ -1,10 +1,14 @@
 # Create plan
 
-Use this API to create a new plan.
-### Prerequisites
-The following **scopes** are required to execute this API: 
+Use this API to create a new plan. 
 
-Group.ReadWrite.All AND Tasks.ReadWrite
+Note that you need to have created a group and be a member of it before you can make the group an owner of the plan. Read the [overview](../resources/tasks_overview.md) to understand the relationship between group, plan and task.
+
+
+### Prerequisites
+One of the following **scopes** is required to execute this API:
+ 
+Group.ReadWrite.All
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
