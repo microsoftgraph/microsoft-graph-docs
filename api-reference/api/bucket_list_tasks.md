@@ -2,9 +2,9 @@
 
 Retrieve a list of task objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
-
-Group.ReadWrite.All AND Tasks.ReadWrite
+One of the following **scopes** is required to execute this API:
+ 
+Group.Read.All, Group.ReadWrite.All
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

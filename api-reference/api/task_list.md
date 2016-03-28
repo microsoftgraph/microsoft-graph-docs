@@ -5,9 +5,9 @@ Retrieve a list of task* objects.
 *Note that filter is required for this method.
 
 ### Prerequisites
-The following **scopes** are required to execute this API:
-
-Group.ReadWrite.All AND Tasks.ReadWrite
+One of the following **scopes** is required to execute this API:
+ 
+Group.Read.All, Group.ReadWrite.All
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,10 +36,10 @@ Here is an example of the request.
   "name": "get_tasks"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/tasks?$filter=createdBy%20eq%20'me'
+GET https://graph.microsoft.com/beta/tasks?$filter=createdBy eq 'me'
 ```
 ##### Response
-Here is an example of the response.
+Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true,
