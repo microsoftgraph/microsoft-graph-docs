@@ -77,7 +77,7 @@ Content-length: 252
 ### Subscription validation
 In order to to avoid mistaken subscriptions directing notifications to arbitrary URLs, the subscription notification endpoint must be capable of responding to a validation request. During processing of the `POST` to the `/subscriptions` endpoint, the Microsoft Graph will send a `POST` request back to your `notificationUrl` in the following form:
 ```http
-POST https://webhook.azurewebsites.net/api/send/myNotifyClient?validationtoken=<token>
+POST https://webhook.azurewebsites.net/api/send/myNotifyClient?validationToken=<token>
 ```
 The notification endpoint must send a 200 response with the value of `<token>` as its body and a content type of `text/plain`, as shown below, within 10 seconds otherwise the creation request will be discarded.
 ```http
