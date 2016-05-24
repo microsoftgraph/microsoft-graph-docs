@@ -23,11 +23,11 @@ IF NOT DEFINED APIDOCS_PATH (
   SET APIDOCS_PATH=%SITE%\wwwroot\MD\apidocs
 )
 
-%APIDOCS_PATH%\apidocs.exe publish --path %DEPLOYMENT_SOURCE%\api-reference --output %DEPLOYMENT_TARGET_DIR%\api-reference --template %DEPLOYMENT_TEMPLATE% --format mustache
+%APIDOCS_PATH%\apidocs.exe publish --path %DEPLOYMENT_SOURCE%\api-reference --output %DEPLOYMENT_TARGET_DIR%\api-reference --template %DEPLOYMENT_TEMPLATE% --format mustache --insert-gitInfo true --gitUrl https://github.com/OfficeDev/microsoft-graph-docs/tree/master/api-reference
 
-%APIDOCS_PATH%\apidocs.exe publish --path %DEPLOYMENT_SOURCE%\content\authorization --output %DEPLOYMENT_TARGET_DIR%\authorization --template %DEPLOYMENT_TEMPLATE% --format mustache
+%APIDOCS_PATH%\apidocs.exe publish --path %DEPLOYMENT_SOURCE%\content\authorization --output %DEPLOYMENT_TARGET_DIR%\authorization --template %DEPLOYMENT_TEMPLATE% --format mustache --insert-gitInfo true --gitUrl https://github.com/OfficeDev/microsoft-graph-docs/tree/master/content/authorization
 
-%APIDOCS_PATH%\apidocs.exe publish --path %DEPLOYMENT_SOURCE%\content\overview --output %DEPLOYMENT_TARGET_DIR%\overview --template %DEPLOYMENT_TEMPLATE% --format mustache
+%APIDOCS_PATH%\apidocs.exe publish --path %DEPLOYMENT_SOURCE%\content\overview --output %DEPLOYMENT_TARGET_DIR%\overview --template %DEPLOYMENT_TEMPLATE% --format mustache --insert-gitInfo true --gitUrl https://github.com/OfficeDev/microsoft-graph-docs/tree/master/content/overview
 
-%APIDOCS_PATH%\apidocs.exe publish --path %DEPLOYMENT_SOURCE%\content\walkthroughs --output %DEPLOYMENT_TARGET_DIR%\platform --template %DEPLOYMENT_TEMPLATE% --format mustache
+%APIDOCS_PATH%\apidocs.exe publish --path %DEPLOYMENT_SOURCE%\content\walkthroughs --output %DEPLOYMENT_TARGET_DIR%\platform --template %DEPLOYMENT_TEMPLATE% --format mustache --insert-gitInfo true --gitUrl https://github.com/OfficeDev/microsoft-graph-docs/tree/master/content/walkthroughs
 
