@@ -35,37 +35,34 @@ Content-type: application/json
 Content-length: 717
 
 {
-  "application": {
-    "addIns": [
-      {
-        "id": "id-value",
-        "type": "type-value",
-        "properties": [
-          {
-            "key": "key-value",
-            "value": "value-value"
-          }
-        ]
-      }
-    ],
-    "appId": "appId-value",
-    "appRoles": [
-      {
-        "allowedMemberTypes": [
-          "allowedMemberTypes-value"
-        ],
-        "description": "description-value",
-        "displayName": "displayName-value",
-        "id": "id-value",
-        "isEnabled": true,
-        "origin": "origin-value",
-        "value": "value-value"
-      }
-    ],
-    "availableToOtherOrganizations": true,
-    "displayName": "displayName-value",
-    "errorUrl": "errorUrl-value"
-  }
+  "addIns": [
+    {
+      "id": "id-value",
+      "type": "type-value",
+      "properties": [
+        {
+          "key": "key-value",
+          "value": "value-value"
+        }
+      ]
+    }
+  ],
+  "appRoles": [
+    {
+      "allowedMemberTypes": [
+        "allowedMemberTypes-value"
+      ],
+      "description": "description-value",
+      "displayName": "displayName-value",
+      "id": "id-value",
+      "isEnabled": true,
+      "origin": "origin-value",
+      "value": "value-value"
+    }
+  ],
+  "availableToOtherOrganizations": true,
+  "displayName": "displayName-value",
+  "errorUrl": "errorUrl-value"
 }
 ```
 In the request body, supply a JSON representation of [application](../resources/application.md) object.
