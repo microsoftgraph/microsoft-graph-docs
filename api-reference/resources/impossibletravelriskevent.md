@@ -21,7 +21,7 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 |location|string| The location attached to the IP address of the second sign-in|
 |previousIPAddress|string| The IP address of the first sign-in|
 |previousLocation|string| The location attached to the IP address of the first sign-in|
-|previousSigninDateTime|[dateTimeOffset](datetimeoffset.md)| The date and time of the first sign-in|
+|previousSigninDateTime|dateTimeOffset| The date and time of the first sign-in|
 |riskEventDateTime|dateTimeOffset| The date and time of the second sign-in|
 |riskEventStatus|string| Possible values are: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Possible values are: `low`, `medium`, `high`.|
