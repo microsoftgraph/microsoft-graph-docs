@@ -6,8 +6,8 @@
 |:---------------|:--------|:----------|
 |[List identityRiskEvent](../api/identityriskevent_get.md) |[identityRiskEvent](identityriskevent.md)| Get identityRiskEvent collection. |
 |[Get identityRiskEvent](../api/identityriskevent_get.md) |[identityRiskEvent](identityriskevent.md)| Get identityRiskEvent object. |
-|[List anonymousRiskEvent](../api/anonymousipriskevent_get.md) |[anonymousIpRiskEvent](anonymousipriskevent.md)| Get anonymousIpRiskEvent collection. |
-|[Get anonymousRiskEvent](../api/anonymousipriskevent_get.md) |[anonymousIpRiskEvent](anonymousipriskevent.md)| Get anonymousIpRiskEvent object. |
+|[List anonymousIpRiskEvent](../api/anonymousipriskevent_get.md) |[anonymousIpRiskEvent](anonymousipriskevent.md)| Get anonymousIpRiskEvent collection. |
+|[Get anonymousIpRiskEvent](../api/anonymousipriskevent_get.md) |[anonymousIpRiskEvent](anonymousipriskevent.md)| Get anonymousIpRiskEvent object. |
 |[List impossibleTravelRiskEvent](../api/impossibletravelriskevent_get.md) |[impossibleTravelRiskEvent](impossibletravelriskevent.md)| Get impossibleTravelRiskEvent collection. |
 |[Get impossibleTravelRiskEvent](../api/impossibletravelriskevent_get.md) |[impossibleTravelRiskEvent](impossibletravelriskevent.md)| Get impossibleTravelRiskEvent object. |
 |[List leakedCredentialsRiskEvent](../api/leakedcredentialsriskevent_get.md) |[leakedCredentialsRiskEvent](leakedcredentialsriskevent.md)| Get leakedCredentialsRiskEvent collection. |
