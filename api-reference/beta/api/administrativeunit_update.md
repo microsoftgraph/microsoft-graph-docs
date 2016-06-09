@@ -1,14 +1,12 @@
-# Update group
+# Update administrativeunit
 
-Update the properties of a group object.
+Update the properties of administrativeunit object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /groups/<id>
-PATCH /me/joinedGroups/<id>
-PATCH /users/<id>/joinedGroups/<id>
+PATCH /administrativeUnits/<id>
 ```
 ### Optional request headers
 | Name       | Description|
@@ -21,51 +19,28 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|accessType|string| Possible values are: `none`, `private`, `secret`, `public`.|
-|allowExternalSenders|boolean||
-|autoSubscribeNewMembers|boolean||
-|classification|string||
-|createdDateTime|dateTimeOffset||
 |description|string||
 |displayName|string||
-|groupTypes|string||
-|isFavorite|boolean||
-|isSubscribedByMail|boolean||
-|mail|string||
-|mailEnabled|boolean||
-|mailNickname|string||
-|onPremisesLastSyncDateTime|dateTimeOffset||
-|onPremisesSecurityIdentifier|string||
-|onPremisesSyncEnabled|boolean||
-|proxyAddresses|string||
-|renewedDateTime|dateTimeOffset||
-|securityEnabled|boolean||
-|unseenCount|int32||
 |visibility|string||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [group](../resources/group.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [administrativeUnit](../resources/administrativeunit.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_group"
+  "name": "update_administrativeunit"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/groups/<id>
+PATCH https://graph.microsoft.com/beta/administrativeUnits/<id>
 Content-type: application/json
-Content-length: 231
+Content-length: 114
 
 {
-  "classification": "classification-value",
-  "createdDateTime": "datetime-value",
-  "description": "description-value",
   "displayName": "displayName-value",
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "mail": "mail-value"
+  "description": "description-value",
+  "visibility": "visibility-value"
 }
 ```
 ##### Response
@@ -73,22 +48,18 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.administrativeunit"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 231
+Content-length: 134
 
 {
-  "classification": "classification-value",
-  "createdDateTime": "datetime-value",
-  "description": "description-value",
   "displayName": "displayName-value",
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "mail": "mail-value"
+  "description": "description-value",
+  "visibility": "visibility-value",
+  "id": "id-value"
 }
 ```
 
@@ -96,7 +67,7 @@ Content-length: 231
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update group",
+  "description": "Update administrativeunit",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
