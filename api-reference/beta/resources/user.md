@@ -33,6 +33,8 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |[List ownedDevices](../api/user_list_owneddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects that are owned by the user from the ownedObjects navigation property.|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are retistered for the user from the registeredDevices navigation property.|
+|[Create scopedRoleMembership](../api/user_post_scopedadministratorof.md) |[scopedRoleMembership](scopedrolemembership.md)| Create a new scopedRoleMembership by posting to the scopedAdministratorOf collection.|
+|[List scopedAdministratorOf](../api/user_list_scopedadministratorof.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get a scopedRoleMembership object collection.|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects created by the user from the createdObjects navigation property.|
 |[assignLicense](../api/user_assignlicense.md)|[user](user.md)|Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.|
 |[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
@@ -114,6 +116,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
 |photos|[Photo](photo.md) collection| Read-only. Nullable.|
 |plans|[plan](plan.md) collection| Read-only. Nullable. Plans shared with the user. |
+|scopedAdministratorOf|[scopedRoleMembership](scopedrolemembership.md) collection| Read-only. Nullable.|
 |tasks|[task](task.md) collection| Read-only. Nullable. Tasks assigned to the user. |
 |trendingAround|[driveItem](driveitem.md) collection| Read-only. Nullable.|
 |workingWith|[User](user.md) collection| Read-only. Nullable.|
