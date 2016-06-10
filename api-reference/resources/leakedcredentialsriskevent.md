@@ -8,6 +8,7 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get leakedCredentialsRiskEvent](../api/leakedcredentialsriskevent_get.md) | [leakedCredentialsRiskEvent](leakedcredentialsriskevent.md) |Read properties and relationships of leakedCredentialsRiskEvent object.|
+|[List leakedCredentialsRiskEvent](../api/leakedcredentialsriskevent_list.md) | [leakedCredentialsRiskEvent](leakedcredentialsriskevent.md) |Read properties and relationships of a collection of leakedCredentialsRiskEvent objects.|
 
 ### Properties
 | Property	   | Type	|Description|

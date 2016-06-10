@@ -15,6 +15,7 @@ Complete information about risk events can be found in the [Azure AD Identity Pr
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get identityRiskEvent](../api/identityriskevent_get.md) | [identityRiskEvent](identityriskevent.md) |Read properties and relationships of identityRiskEvent object.|
+|[List identityRiskEvent](../api/identityriskevent_list.md) | [identityRiskEvent](identityriskevent.md) |Read properties and relationships of a collection of identityRiskEvent objects.|
 
 ### Properties
 | Property	   | Type	|Description|
