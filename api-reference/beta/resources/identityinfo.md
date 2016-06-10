@@ -1,7 +1,8 @@
 # identityInfo resource type
 
+Represents the user that is a member of a scoped-role.
 
-
+### Methods
 
 ### Properties
 | Property	   | Type	|Description|
@@ -9,6 +10,9 @@
 |displayName|string||
 |id|string||
 |userPrincipalName|string||
+
+### Relationships
+None
 
 ### JSON representation
 
