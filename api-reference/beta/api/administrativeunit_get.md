@@ -1,6 +1,6 @@
 # Get administrativeUnit
 
-Retrieve the properties and relationships of administrativeunit object.
+Retrieve the properties and relationships of an [administrativeUnit](../resources/administrativeunit.md) object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

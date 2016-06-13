@@ -1,6 +1,6 @@
 # List scopedAdministrators
 
-Retrieve a list of scopedrolemembership objects.
+Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) objects.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

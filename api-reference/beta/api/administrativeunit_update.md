@@ -1,6 +1,6 @@
 # Update administrativeunit
 
-Update the properties of administrativeunit object.
+Update the properties of an [administrativeUnit](../resources/administrativeunit.md) object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

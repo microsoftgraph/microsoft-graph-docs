@@ -1,6 +1,6 @@
 # Create scopedRoleMembership
 
-Use this API to create a new scopedRoleMembership.
+Use this API to create a new [scopedRoleMembership](../resources/scopedrolemembership.md).
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

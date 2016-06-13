@@ -1,6 +1,6 @@
 # List administrativeUnits
 
-Retrieve a list of administrativeunit objects.
+Retrieve a list of administrativeUnit objects.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

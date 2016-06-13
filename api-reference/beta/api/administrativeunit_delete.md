@@ -1,12 +1,13 @@
 # Delete administrativeUnit
+Delete an [administrativeUnit](../resources/administrativeunit.md).
 
-Delete administrativeUnit.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /administrativeUnits/<id>
+DELETE /administrativeUnits/<id>/members/<id>
 
 ```
 ### Request headers

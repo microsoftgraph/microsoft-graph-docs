@@ -1,6 +1,6 @@
 # Create administrativeUnit
 
-Use this API to create a new administrativeUnit.
+Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
