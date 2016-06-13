@@ -198,11 +198,8 @@ driveItem properties:
 
 * **createdBy**
 * **cTag**
-* **eTag**
 * **fileSystemInfo**
 * **lastModifiedBy**
-* **parentReference**
-* **size**
 
 
 <!-- {
