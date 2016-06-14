@@ -1,13 +1,14 @@
-# unfamiliarLocationRiskEvent resource type
+# suspiciousIpRiskEvent resource type
 
-A risk event detected by [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) where an account sign-in is attempted from a new location for that user. Complete information about risk events can be found in the [Azure AD Identity Protection documentation](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
+A risk event detected by [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) where an account sign-in is attempted from a suspicious IP address. Complete information about risk events can be found in the [Azure AD Identity Protection documentation](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get unfamiliarLocationRiskEvent](../api/unfamiliarlocationriskevent_get.md) | [unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) |Read properties and relationships of unfamiliarLocationRiskEvent object.|
+|[List suspiciousIpRiskEvent](../api/suspiciousipriskevent_list.md) | [suspiciousIpRiskEvent](suspiciousipriskevent.md) |Read properties and relationships of a collection of suspiciousIpRiskEvent objects.|
+|[Get suspiciousIpRiskEvent](../api/suspiciousipriskevent_get.md) | [suspiciousIpRiskEvent](suspiciousipriskevent.md) |Read properties and relationships of suspiciousIpRiskEvent object.|
 
 ### Properties
 | Property	   | Type	|Description|
@@ -39,7 +40,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.unfamiliarLocationRiskEvent"
+  "@odata.type": "microsoft.graph.suspiciousIpRiskEvent"
 }-->
 
 ```json
@@ -64,7 +65,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "unfamiliarLocationRiskEvent resource",
+  "description": "suspiciousIpRiskEvent resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

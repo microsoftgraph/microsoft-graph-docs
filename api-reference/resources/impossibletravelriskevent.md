@@ -7,6 +7,7 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[List impossibleTravelRiskEvent](../api/impossibletravelriskevent_list.md) | [impossibleTravelRiskEvent](impossibletravelriskevent.md) |Read properties and relationships of a collection of impossibleTravelRiskEvent objects.|
 |[Get impossibleTravelRiskEvent](../api/impossibletravelriskevent_get.md) | [impossibleTravelRiskEvent](impossibletravelriskevent.md) |Read properties and relationships of impossibleTravelRiskEvent object.|
 
 ### Properties
