@@ -17,10 +17,10 @@ Inherits from [directoryObject](directoryobject.md).
 |[List members](../api/group_list_members.md) |[directoryObject](directoryobject.md) collection| Get the users and groups that are direct members of this group from the **members** navigation property.|
 |[Add member](../api/group_post_members.md) |[directoryObject](directoryobject.md)| Add a user or group to this group by posting to the **members** navigation property (supported for security groups and mail-enabled security groups only).|
 |[Remove member](../api/group_delete_members.md) | None |Remove a member from an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups. |
-|[List memberOf](../api/group_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups that this group is a direct member of, from the **memberOf** navigation property.|
+|[List memberOf](../api/group_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administative units that this group is a direct member of, from the **memberOf** navigation property.|
 |[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|Check for membership in a list of groups. The function is transitive.|
 |[getMemberGroups](../api/group_getmembergroups.md)|String collection|Return all the groups that the group is a member of. The function is transitive.|
-|[getMemberObjects](../api/group_getmemberobjects.md)|String collection|Return all of the groups that the group is a member of. The function is transitive. |
+|[getMemberObjects](../api/group_getmemberobjects.md)|String collection|Return all of the groups and administrative units that the group is a member of. The function is transitive. |
 |[List events](../api/group_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
 |[Create event](../api/group_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
 |[List calendarView](../api/group_list_calendarview.md) |[Event](event.md) collection| Get a collection of events in a specified time window.|
@@ -79,7 +79,7 @@ Inherits from [directoryObject](directoryobject.md).
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
 |drive|[drive](drive.md)|The group's drive. Read-only.|
 |events|[event](event.md) collection|The group's events.|
-|memberOf|[directoryObject](directoryobject.md) collection|Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
+|memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
 |members|[directoryObject](directoryobject.md) collection| Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
 |notes|[Notes](notes.md)| Read-only.|
 |owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|

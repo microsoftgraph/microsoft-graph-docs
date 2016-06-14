@@ -29,18 +29,17 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |[Create ContactFolder](../api/user_post_contactfolders.md) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the contactFolders collection.|
 |[List directReports](../api/user_list_directreports.md) |[directoryObject](directoryobject.md) collection| Get the users and contacts that report to the user from the directReports navigation property.|
 |[List manager](../api/user_list_manager.md) |[directoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property.|
-|[List memberOf](../api/user_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and directory roles that the user is a direct member of from the memberOf navigation property.|
+|[List memberOf](../api/user_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups, directory roles and administrative units that the user is a direct member of from the memberOf navigation property.|
 |[List ownedDevices](../api/user_list_owneddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects that are owned by the user from the ownedObjects navigation property.|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are retistered for the user from the registeredDevices navigation property.|
-|[Create scopedRoleMembership](../api/user_post_scopedadministratorof.md) |[scopedRoleMembership](scopedrolemembership.md)| Create a new scopedRoleMembership by posting to the scopedAdministratorOf collection.|
-|[List scopedAdministratorOf](../api/user_list_scopedadministratorof.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get a scopedRoleMembership object collection.|
+|[List scopedAdministratorOf](../api/user_list_scopedadministratorof.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get the scoped-role adminstrative units memberships for this user.|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects created by the user from the createdObjects navigation property.|
 |[assignLicense](../api/user_assignlicense.md)|[user](user.md)|Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.|
 |[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
 |[findmeetingtimes](../api/user_findmeetingtimes.md)|[meetingTimeCandidate](meetingtimecandidate.md)|Find time and locations to meet based on attendee availability, location or time constraints.|
 |[getMemberGroups](../api/user_getmembergroups.md)|String collection|Return all the groups that the user is a member of. The check is transitive.|
-|[getMemberObjects](../api/user_getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user is a member of. The check is transitive. |
+|[getMemberObjects](../api/user_getmemberobjects.md)|String collection| Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive. |
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
 
 
@@ -107,7 +106,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |joinedGroups|[Group](group.md) collection| Read-only. Nullable.|
 |mailFolders|[MailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
-|memberOf|[directoryObject](directoryobject.md) collection|The groups and directory roles that the user is a member of. Read-only. Nullable.|
+|memberOf|[directoryObject](directoryobject.md) collection|The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable.|
 |messages|[Message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
 |notes|[Notes](notes.md)| Read-only.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
@@ -116,7 +115,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
 |photos|[Photo](photo.md) collection| Read-only. Nullable.|
 |plans|[plan](plan.md) collection| Read-only. Nullable. Plans shared with the user. |
-|scopedAdministratorOf|[scopedRoleMembership](scopedrolemembership.md) collection| Read-only. Nullable.|
+|scopedAdministratorOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role adminstrative unit memberships for this user. Read-only. Nullable.|
 |tasks|[task](task.md) collection| Read-only. Nullable. Tasks assigned to the user. |
 |trendingAround|[driveItem](driveitem.md) collection| Read-only. Nullable.|
 |workingWith|[User](user.md) collection| Read-only. Nullable.|

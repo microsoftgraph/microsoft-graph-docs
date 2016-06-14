@@ -1,23 +1,23 @@
 # List scopedAdministratorOf
 
-Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) objects.
+Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) for the user.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/scopedAdministratorOf
 GET /users/<id>/scopedAdministratorOf
-GET /drive/root/createdByUser/scopedAdministratorOf
+
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 Do not supply a request body for this method.

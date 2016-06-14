@@ -1,6 +1,6 @@
 # List memberOf
 
-Get groups and directory roles that the user is a direct member of. 
+Get groups, directory roles and administrative units that the user is a direct member of. 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*

@@ -1,6 +1,10 @@
 # administrativeUnit resource type
 
-An administrative unit provides a conceptual container for User and Group directory objects. Administrative units enable you to delegate finer granularity permissions to administrative roles  (ie: departmental, regional, etc.). With administrative units, a central administrator can delegate administrative permissions over subsets of users and applying policies to a subset of users to a regional administrator. This topic provides descriptions of the declared properties and navigation properties exposed by the administrativeUnit entity, as well as the operations and functions that can be called on the administrativeUnits resource.
+An administrative unit provides a conceptual container for User and Group directory objects. Using administrative units, a company administrator can now delegate administrative responsibilities to manage the users and groups contained within or scoped to an administrative unit to a regional or departmental administrator. 
+
+Let's look at an example. Imagine that Contoso Corp is made up of two divisions - a West Coast Division and an East Coast Division. Directory roles at Contoso are scoped to the entire tenant. Lee, a Contoso company administrator, wants to delegate administrative responsibilities, but scope them to the West Coast Division or the East Coast division.  Lee can create a *West Coast admistrative unit* and place all West Coast users into this administrative unit.  Similarly, Lee can create an *East Coast adminstrative unit*.  Now Lee, can start delegating administrative responsibilities to others, but **scoped** to the new administrative units he's created. Lee places Jennifer in a *helpdesk administrator* role **scoped** to the *West Coast administrative unit*.  This allows Jennifer to reset any user's password, but only if those users are in the *West Coast administrative unit*.  Similarly, Lee places Dave in a *user account administrator* role **scoped** to the *East Coast administrative unit*.  This allows Dave to update users, assign licenses and reset any user's password, but only if those users are in the *East Coast administrative unit*. 
+
+This topic provides descriptions of the declared properties and navigation properties exposed by the administrativeUnit entity, as well as the operations and functions that can be called on the administrativeUnits resource.
 
 
 ### Methods
@@ -19,7 +23,7 @@ An administrative unit provides a conceptual container for User and Group direct
 |[Add scoped-role administrator](../api/administrativeunit_post_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md)| Add a scoped-role administrator.|
 |[List scoped-role administrators](../api/administrativeunit_list_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get the list of scoped-role adminstrators.|
 |[Get a scoped-role administrator](../api/administrativeunit_get_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md)| Get a specific scoped-role administrator.|
-|[Remove a scoped-role administrator](../api/administrativeunit_delete_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md)| Remove a scoped-role adminstrator.|
+|[Remove a scoped-role administrator](../api/administrativeunit_delete_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md)| Remove a scoped-role administrator.|
 
 ### Properties
 | Property	   | Type	|Description|
@@ -27,7 +31,7 @@ An administrative unit provides a conceptual container for User and Group direct
 |description|string|An optional description for the administrative unit.|
 |displayName|string|Display name for the administrative unit.|
 |id|string|Unique identifier for the administrative unit. Read-only.|
-|visibility|string|Controls whether the adminstrative unit and its members are hidden or public. Can be set to...|
+|visibility|string|Controls whether the adminstrative unit and its members are hidden or public. Can be set to HiddenMembership or Public. If not set, default behavior is Public. When set to HiddenMembership, only members of the administrative unit can list other members of the adminstrative unit.|
 
 ### Relationships
 | Relationship | Type	|Description|

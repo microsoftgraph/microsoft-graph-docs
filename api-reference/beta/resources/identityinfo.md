@@ -7,9 +7,9 @@ Represents the user that is a member of a scoped-role.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displayName|string||
-|id|string||
-|userPrincipalName|string||
+|displayName|string|Display name of the user.|
+|id|string|Unique identifier of the user.|
+|userPrincipalName|string|User principal name of the user.|
 
 ### Relationships
 None

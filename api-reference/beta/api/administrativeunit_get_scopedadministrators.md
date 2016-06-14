@@ -1,13 +1,13 @@
-# Get administrativeUnit
+# Get a scopedAdministrator
 
-Retrieve the properties and relationships of an [administrativeUnit](../resources/administrativeunit.md) object.
+Retrieve a specific [scopedRoleMembership](../resources/scopedrolemembership.md) object.
 ### Prerequisites
 The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /administrativeUnits/<id>
+GET /administrativeUnits/<id>/scopedAdministrators/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -20,34 +20,39 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.
+If successful, this method returns a `200 OK` response code and collection of [scopedRoleMembership](../resources/scopedrolemembership.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_administrativeunit"
+  "name": "get_scopedadministrators"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/administrativeUnits/<id>
+GET https://graph.microsoft.com/beta/administrativeUnits/<id>/scopedAdministrators/<id>
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeunit"
+  "@odata.type": "microsoft.graph.scopedrolemembership",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 134
+Content-length: 307
 
 {
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "visibility": "visibility-value",
-  "id": "id-value"
+  "id": "id-value",
+  "roleId": "roleId-value",
+  "administrativeUnitId": "administrativeUnitId-value",
+  "roleMemberInfo": {
+        "id": "id-value",
+        "displayName": "displayName-value",
+        "userPrincipalName": "userPrincipalName-value"
+        }
 }
 ```
 
@@ -55,7 +60,7 @@ Content-length: 134
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get administrativeUnit",
+  "description": "List scopedAdministrators",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

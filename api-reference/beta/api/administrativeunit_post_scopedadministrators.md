@@ -1,19 +1,19 @@
 # Create scopedRoleMembership
 
-Use this API to create a new [scopedRoleMembership](../resources/scopedrolemembership.md).
+Use this API to create a new [scopedRoleMembership](../resources/scopedrolemembership.md). NOTE: Only the *User account administrator* and *Helpdesk administrator* roles are supported for scoped-role memberships.
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits/<id>/scopedAdministrators
-
 ```
 ### Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer <token>. Required.|
 
 ### Request body
 In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.
@@ -37,11 +37,8 @@ Content-length: 272
 {
   "scopedRoleMembership": {
     "roleId": "roleId-value",
-    "administrativeUnitId": "administrativeUnitId-value",
     "roleMemberInfo": {
       "id": "id-value",
-      "displayName": "displayName-value",
-      "userPrincipalName": "userPrincipalName-value"
     }
   }
 }
@@ -61,8 +58,9 @@ Content-length: 294
 
 {
   "scopedRoleMembership": {
-    "roleId": "roleId-value",
     "administrativeUnitId": "administrativeUnitId-value",
+    "id": "id-value",
+    "roleId": "roleId-value",
     "roleMemberInfo": {
       "id": "id-value",
       "displayName": "displayName-value",

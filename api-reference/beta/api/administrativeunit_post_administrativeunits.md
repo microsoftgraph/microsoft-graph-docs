@@ -2,7 +2,8 @@
 
 Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -10,11 +11,9 @@ POST /administrativeUnits
 
 ```
 ### Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
-
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer <token>. Required.|
 ### Request body
 In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.
 

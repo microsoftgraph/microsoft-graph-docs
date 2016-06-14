@@ -1,8 +1,8 @@
-# List scopedAdministrators
+# List scopedAdministrators for a directory role
 
-Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) objects.
+Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) objects for a directory role.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -14,8 +14,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Authorization  | Bearer <token>. Required.|
 
 ### Request body
 Do not supply a request body for this method.
