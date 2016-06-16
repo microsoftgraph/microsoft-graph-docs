@@ -26,7 +26,7 @@ Here is a JSON representation of the resource
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |isRequired|Boolean|The client requests the service to include in the response a meeting location for the meeting.|
-|locations|[Location](location.md) collection|One or more locations that the client requests for the meeting.|
+|locations|[location](location.md) collection|One or more locations that the client requests for the meeting.|
 |suggestLocation|Boolean|The client requests the service to suggest one or more meeting locations.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

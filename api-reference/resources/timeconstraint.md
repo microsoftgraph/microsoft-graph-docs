@@ -24,7 +24,7 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|activityDomain|String|The nature of the activity, optional. Possible values are: `Unknown`, `Work`, `Personal`.|
+|activityDomain|String|The nature of the activity, optional. Possible values are: `unknown`, `work`, `personal`. Currently [findMeetingTimes](../api/user_findmeetingtimes.md) always assumes the value is `work` and returns any meeting suggestions only during the work hours of the organizer or attendee.|
 |timeslots|[TimeSlot](timeslot.md) collection|An array of time periods.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
