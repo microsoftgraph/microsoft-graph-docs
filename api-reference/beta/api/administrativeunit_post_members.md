@@ -2,13 +2,15 @@
 
 Use this API to add a member (user or group) to an administrative unit.
 
+`NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
+
 ### Prerequisites
 The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /administrativeUnits/<id>/members
+POST /administrativeUnits/<id>/members/$ref
 ```
 ### Request headers
 | Name      |Description|
@@ -16,7 +18,7 @@ POST /administrativeUnits/<id>/members
 | Authorization  | Bearer <token>. Required.|
 
 ### Request body
-In the request body, supply a JSON representation of a [user](../resources/user.md) or [group](../resources/group.md) object to be added.
+In the request body, supply a JSON representation of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryObject.md) to be added.
 
 ### Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
@@ -26,7 +28,7 @@ If successful, this method returns `204, No Content` response code. It does not 
 Here is an example of the request.
 
 ```http
-POST https://graph.microsoft.com/beta/administrativeUnits/<id>/members
+POST https://graph.microsoft.com/beta/administrativeUnits/<id>/members/$ref
 Content-type: application/json
 Content-length: 109
 
