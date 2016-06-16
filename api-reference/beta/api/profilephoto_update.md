@@ -9,6 +9,7 @@ One of the following **scopes** is required to execute this API for:
 - Profile photo of signed-in **user** - *User.ReadWrite*
 - Profile photo of a **group** - *Group.ReadWrite.All*
 - Photo of a **contact** - *Contacts.ReadWrite*
+
 ### HTTP request to update the photo
 <!-- { "blockType": "ignored" } -->
 ```http

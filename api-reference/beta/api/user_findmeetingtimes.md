@@ -1,5 +1,18 @@
 # user: findMeetingTimes
-Find time and locations to meet based on attendee availability, location or time constraints.
+Find meeting time suggestions based on organizer and attendee availability, and time or location constraints specified as parameters.
+
+If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsHint** property. 
+Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.
+
+**Note**
+
+Currently, **findMeetingTimes** assumes the following:
+
+- Any [attendee](../resources/attendee.md) who is a person (as opposed to a resource) is a required attendee. So, specify `required` for a person 
+and `resource` for a resource in the corresponding **type** property, as part of the **attendees** collection parameter.
+- Any meeting suggestion occurs during only the work hours of the organizer or an attendee. You can ignore specifying the **activityDomain** property of a 
+[timeConstraint](../resources/timeConstraint.md). 
+
 
 ### Prerequisites
 The following **scopes** are required to execute this API: *Calendars.Read*
@@ -16,138 +29,173 @@ POST /users/<id|userPrincipalName>/findMeetingTimes
 
 
 ### Request body
-In the request body, provide a JSON object with the following parameters.
+All the supported parameters are listed below. Depending on your scenario, specify a JSON object for each of the necessary parameters in the request body. 
+Based on the specified parameters,**findMeetingTimes** checks the free/busy status in the primary calendars of the organizer and attendees. The action 
+calculates the best possible meeting times, and returns any meeting suggestions.
+
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|attendees|attendeeBase|A collection that includes the response status (None = 0, Organizer=1, TentativelyAccepted=2, Accepted=3, Declined=4, NotResponded=5), type (Required=0, Optional=1, Resource=2) and email address of each of the attendees. |
-|locationConstraint|locationConstraint|Conditions stated by a client for the location of a meeting.|
-|timeConstraint|timeConstraint|Conditions stated by a client for the time periods for an acitivity of a certain nature.|
-|meetingDuration|duration|The length of time for the meeting, denoted in [ISO8601](http://www.iso.org/iso/iso8601) format. For example, 1 hour is denoted as 'PT1H', where 'P' is the duration designator, 'T' is the time designator, 'H' is the hour designator.  |
-|maxCandidates|int32|The maximum number of meeting time suggestions to be returned.|
-|isOrganizerOptional|boolean|`True` if the organizer's attendance is not necessary, `false` otherwise.|
-|returnSuggestionHints|boolean|`True` to return the reasons for suggesting the meeting time, `false` otherwise.|
+|attendees|[attendeeBase](../resources/attendeebase.md) collection|A collection of attendees or resources for the meeting. An empty collection causes **findMeetingTimes** to look for free time slots for only the organizer.|
+|locationConstraint|[locationConstraint](../resources/locationconstraint.md)|The organizer's requirements about the meeting location, such as whether a suggestion for a meeting location is required, or there are specific locations only where the meeting can take place.|
+|timeConstraint|[timeConstraint](../resources/timeconstraint.md)|The start and end time range in which the meeting should occur.|
+|meetingDuration|Edm.Duration|The length of the meeting, denoted in [ISO8601](http://www.iso.org/iso/iso8601) format. For example, 1 hour is denoted as 'PT1H', where 'P' is the duration designator, 'T' is the time designator, 'H' is the hour designator. If no meeting duration is specified, **findMeetingTimes** uses the default of 30 minutes. |
+|maxCandidates|Edm.Int32|The maximum number of meeting time suggestions to be returned.|
+|isOrganizerOptional|Edm.Boolean|`True` if the organizer's attendance is not necessary, `false` otherwise.|
+|returnSuggestionHints|Edm.Boolean|`True` to return a reason for each meeting suggestion in the **suggestionHint** property. The default is `false` to not return that property.|
 
 ### Response
-If successful, this method returns `200, OK` response code and a collection of [meetingTimeCandidate](../resources/meetingtimecandidate.md) objects in the response body.
+If successful, this method returns `200, OK` response code and a [meetingTimeCandidatesResult](../resources/meetingtimecandidatesresult.md) in the response body. 
+
+A **meetingTimeCandidatesResult** includes a collection of meeting suggestions and an **emptySuggestionsHint** property. Each suggestion is defined 
+as a [meetingTimeCandidate](../resources/meetingtimecandidate.md), with attendees having on the average a confidence level of 50% chance or higher to attend. 
+
+By default, each meeting time suggestion is returned in UTC. 
 
 ### Example
-Here is an example of how to call this API.
+
+The following example shows how to find time to meet at a pre-determined location, and request a reason for each suggestion, by specifying the following parameters in the request body:
+- **attendees**
+- **locationConstraint**
+- **timeConstraint**
+- **meetingDuration**
+- **returnSuggestionHints**
+
+By setting the **returnSuggestionHints** parameter, you also get an explanation in the **suggestionHint** property for each suggestion, if **findMeetingTimes** returns any suggestion.
+
 ##### Request
-Here is an example of the request.
+Here is the example request.
 <!-- {
   "blockType": "request",
   "name": "user_findmeetingtimes"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/findMeetingTimes
-Content-type: application/json
-Content-length: 743
+POST https://graph.microsoft.com/beta/me/findMeetingTimes
 
-{
-  "attendees": [
-    {
-      "type": "type-value"
-    }
-  ],
-  "locationConstraint": {
-    "isRequired": true,
-    "suggestLocation": true,
-    "locations": [
-      {
-        "resolveAvailability": true
-      }
-    ]
-  },
-  "timeConstraint": {
-    "activityDomain": "activityDomain-value",
-    "timeslots": [
-      {
-        "start": {
-          "date": "datetime-value",
-          "time": "datetime-value",
-          "timeZone": "timeZone-value"
-        },
-        "end": {
-          "date": "datetime-value",
-          "time": "datetime-value",
-          "timeZone": "timeZone-value"
-        }
-      }
-    ]
-  },
-  "meetingDuration": "datetime-value",
-  "maxCandidates": 99,
-  "isOrganizerOptional": true,
-  "returnSuggestionHints": true
+
+{ 
+  "attendees": [ 
+    { 
+      "type": "required",  
+      "emailAddress": { 
+        "address": "alexd@contoso.onmicrosoft.com" 
+      } 
+    } 
+  ],  
+  "locationConstraint": { 
+    "isRequired": "false",  
+    "suggestLocation": "false",  
+    "locations": [ 
+      { 
+        "displayName": "Conf room Hood" 
+      } 
+    ] 
+  },  
+  "timeConstraint": { 
+    "timeslots": [ 
+      { 
+        "start": { 
+          "date": "2016-06-20",  
+          "time": "7:00:00",  
+          "timeZone": "Pacific Standard Time" 
+        },  
+        "end": { 
+          "date": "2016-06-20",  
+          "time": "17:00:00",  
+          "timeZone": "Pacific Standard Time" 
+        } 
+      } 
+    ] 
+  },  
+  "meetingDuration": "PT2H",
+  "returnSuggestionHints": "true"
 }
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.meetingTimeCandidate",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.meetingTimeCandidatesResult",
+  "isCollection": false
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1140
+
 
 {
-  "value": [
-    {
-      "meetingTimeSlot": {
-        "start": {
-          "date": "datetime-value",
-          "time": "datetime-value",
-          "timeZone": "timeZone-value"
-        },
-        "end": {
-          "date": "datetime-value",
-          "time": "datetime-value",
-          "timeZone": "timeZone-value"
-        }
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.meetingTimeCandidatesResult",
+   "meetingTimeSlots":[
+      {
+         "meetingTimeSlot":{
+            "start":{
+               "date":"2016-06-20",
+               "time":"11:00:00.0000000",
+               "timeZone":"UTC"
+            },
+            "end":{
+               "date":"2016-06-20",
+               "time":"13:00:00.0000000",
+               "timeZone":"UTC"
+            }
+         },
+         "confidence":100,
+         "organizerAvailability":"free",
+         "attendeeAvailability":[
+            {
+               "attendee":{
+                  "type":"required",
+                  "emailAddress":{
+                     "address":"alexd@contoso.onmicrosoft.com"
+                  }
+               },
+               "availability":"free"
+            }
+         ],
+         "locations":[
+            {
+               "displayName":"Conf room Hood"
+            }
+         ],
+         "suggestionHint":"Suggested because it is one of the nearest times when all attendees are available."
       },
-      "confidence": 99,
-      "score": 99,
-      "suggestionHint": "suggestionHint-value",
-      "organizerAvailability": "organizerAvailability-value",
-      "attendeeAvailability": [
-        {
-          "attendee": {
-            "type": "type-value"
-          },
-          "availability": "availability-value"
-        }
-      ],
-      "locations": [
-        {
-          "displayName": "displayName-value",
-          "locationEmailAddress": "locationEmailAddress-value",
-          "address": {
-            "type": "type-value",
-            "postOfficeBox": "postOfficeBox-value",
-            "street": "street-value",
-            "city": "city-value",
-            "state": "state-value",
-            "countryOrRegion": "countryOrRegion-value",
-            "postalCode": "postalCode-value"
-          },
-          "coordinates": {
-            "altitude": 99,
-            "latitude": 99,
-            "longitude": 99,
-            "accuracy": 99,
-            "altitudeAccuracy": 99
-          },
-          "locationUri": "locationUri-value"
-        }
-      ]
-    }
-  ]
+      {
+         "meetingTimeSlot":{
+            "start":{
+               "date":"2016-06-20",
+               "time":"15:00:00.0000000",
+               "timeZone":"UTC"
+            },
+            "end":{
+               "date":"2016-06-20",
+               "time":"17:00:00.0000000",
+               "timeZone":"UTC"
+            }
+         },
+         "confidence":100,
+         "organizerAvailability":"free",
+         "attendeeAvailability":[
+            {
+               "attendee":{
+                  "type":"required",
+                  "emailAddress":{
+                     "address":"alexd@contoso.onmicrosoft.com"
+                  }
+               },
+               "availability":"free"
+            }
+         ],
+         "locations":[
+            {
+               "displayName":"Conf room Hood"
+            }
+         ],
+         "suggestionHint":"Suggested because it is one of the nearest times when all attendees are available."
+      }
+   ],
+   "emptySuggestionsHint":""
 }
 ```
 
