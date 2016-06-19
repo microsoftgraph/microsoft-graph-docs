@@ -1,5 +1,5 @@
 # user: getMemberObjects
-Return all of the groups and directory roles that the user is a member of. The check is transitive.
+Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
