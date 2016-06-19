@@ -11,7 +11,8 @@ By default, directory roles are scoped to be tenant-wide.  However, directory ro
 |[Get directoryRole](../api/directoryrole_get.md) | [directoryRole](directoryrole.md) |Read properties and relationships of directoryRole object.|
 |[Add member](../api/directoryrole_post_members.md) |[directoryObject](directoryobject.md)| Add a user to the directory role by posting to the members navigation property.|
 |[List members](../api/directoryrole_list_members.md) |[directoryObject](directoryobject.md) collection| Get the users that are members of the directory role from the members navigation property.|
-|[Remove member](../api/directoryrole_delete_members.md) |[directoryObject](directoryobject.md)| Remove a user from the directory role by posting to the members navigation property.|
+<!--|[Remove member](../api/directoryrole_delete_members.md) |[directoryObject](directoryobject.md)| Remove a user from the directory role by posting to the members navigation property.|-->
+|Remove member |[directoryObject](directoryobject.md)| Remove a user from the directory role by posting to the members navigation property.|
 |[List scopedAdministrators](../api/directoryrole_list_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List the members of this directory role that are scoped to [administrative units](administrativeunit.md), through the scopedRoleMembership object collection.|
 
 

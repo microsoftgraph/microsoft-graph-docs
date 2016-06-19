@@ -6,9 +6,7 @@ A scoped role membership describes a user's membership of a directory role, that
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get scopedRoleMembership](../api/scopedrolemembership_get.md) | [scopedRoleMembership](scopedrolemembership.md) |Read properties and relationships of scopedRoleMembership object.|
-|[Update](../api/scopedrolemembership_update.md) | [scopedRoleMembership](scopedrolemembership.md)	|Update scopedRoleMembership object. |
-|[Delete](../api/scopedrolemembership_delete.md) | None |Delete scopedRoleMembership object. |
+Direct queries to this resource are not supported.  Please see the [adminstrative units](administrativeunit.md) topic to see information on how to query for scoped-role memberships, as well as adding and removing scoped-role memberships. 
 
 ### Properties
 | Property	   | Type	|Description|
