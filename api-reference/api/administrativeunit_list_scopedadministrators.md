@@ -54,8 +54,7 @@ Content-length: 307
         "id": "id-value",
         "displayName": "displayName-value",
         "userPrincipalName": "userPrincipalName-value"
-      },
-      "id": "id-value"
+      }
     }
   ]
 }

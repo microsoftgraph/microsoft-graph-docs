@@ -45,14 +45,18 @@ Content-type: application/json
 Content-length: 307
 
 {
-  "id": "id-value",
-  "roleId": "roleId-value",
-  "administrativeUnitId": "administrativeUnitId-value",
-  "roleMemberInfo": {
+  "value":[
+  {
+    "id": "id-value",
+    "roleId": "roleId-value",
+    "administrativeUnitId": "administrativeUnitId-value",
+    "roleMemberInfo": {
         "id": "id-value",
         "displayName": "displayName-value",
         "userPrincipalName": "userPrincipalName-value"
-        }
+    }
+  }
+  ]
 }
 ```
 
