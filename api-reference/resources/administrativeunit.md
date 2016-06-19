@@ -11,7 +11,7 @@ This topic provides descriptions of the declared properties and navigation prope
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create admistrativeUnit](../api/administrativeunit_post_adminstrativeunit.md) |[administrativeUnit](adminstrativeUnit.md)| Create a new administrative unit.|
+|[Create administrativeUnit](../api/administrativeunit_post_adminstrativeunits.md) |[administrativeUnit](adminstrativeunit.md)| Create a new administrative unit.|
 |[List administrativeUnits](../api/administrativeunit_list.md) | [administrativeUnit](administrativeunit.md) collection |List properties of all administrativeUnits.|
 |[Get administrativeUnit](../api/administrativeunit_get.md) | [administrativeUnit](administrativeunit.md) |Read properties and relationships of a specific administrativeUnit object.|
 |[Update adminstrativeUnit](../api/administrativeunit_update.md) | [administrativeUnit](administrativeunit.md)	|Update administrativeUnit object. |
