@@ -1,6 +1,6 @@
 # Update calendargroup
 
-Update the properties of calendargroup object.
+Update the properties of a calendarGroup object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: _Calendars.ReadWrite_
 ### HTTP request
