@@ -30,6 +30,7 @@ An aggregation of information about a person from across mail, contacts and soci
 |sources|[personDataSource](persondatasource.md) collection|The sources the user data comes from, for example Directory or Outlook Contacts.|
 |surname|string|The person's surname.|
 |title|string|The person's title.|
+|userPrincipalName|string|An Internet-style login name for a user based on the Internet standard RFC 822.|
 |webSites|[webSite](website.md) collection|The person's websites.|
 |yomiCompany|string|The phonetic Japanese name of the person's company.|
 
