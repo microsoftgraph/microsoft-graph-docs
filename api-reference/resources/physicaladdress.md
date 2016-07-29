@@ -11,6 +11,7 @@ Represents the street address of a resource such as a contact or event.
 |postalCode|String|The postal code.|
 |state|String|The state.|
 |street|String|The street.|
+|type|String|The type of physical address, for example business.|
 
 ### JSON representation
 
@@ -30,7 +31,8 @@ Here is a JSON representation of the resource
   "countryOrRegion": "string",
   "postalCode": "string",
   "state": "string",
-  "street": "string"
+  "street": "string",
+  "type": "string"
 }
 
 ```
