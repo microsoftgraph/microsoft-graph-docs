@@ -85,6 +85,12 @@ Content-length: 1977
       "address": "garth@a830edad9050849NDA1.onmicrosoft.com"
     }
   ],
+  "websites": [
+    {
+      "type": "Work",
+      "address": "https://www.contoso.com"
+    }
+  ],
   "imAddresses": [
     "sip:garthf@a830edad9050849nda1.onmicrosoft.com"
   ],
@@ -93,23 +99,24 @@ Content-length: 1977
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": null,
-  "businessHomePage": "http://www.contoso.com",
   "assistantName": null,
   "manager": null,
-  "homePhones": [],
-  "mobilePhone": null,
-  "businessPhones": [
-    "+1 918 555 0101"
+  "phones": [
+    {
+      "type": "home",
+      "number": "+1 918 555 0101"
+    }
   ],
-  "homeAddress": {},
-  "businessAddress": {
+  "postalAddresses": [
+    {
+      "type": "business",
       "street": "10 Contoso Way",
       "city": "Redmond",
       "state": "WA",
       "countryOrRegion": "USA",
       "postalCode": "98075"  
-  },
-  "otherAddress": {},
+    }
+  ],
   "spouseName": null,
   "personalNotes": null,
   "children": []
