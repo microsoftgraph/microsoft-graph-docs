@@ -1,4 +1,4 @@
-# webSite resource type
+# website resource type
 
 Represents a website.
 
