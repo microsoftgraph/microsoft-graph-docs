@@ -35,9 +35,6 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |assistantName|String|The name of the contact's assistant.|
 |birthday|DateTimeOffset|The contact's birthday.|
-|businessAddress|[PhysicalAddress](../resources/physicaladdress.md)|The contact's business address.|
-|businessHomePage|String|The business home page of the contact.|
-|businessPhones|String|The contact's business phone numbers.|
 |categories|String|The categories associated with the contact.|
 |children|String||
 |companyName|String|The name of the contact's company.|
@@ -47,8 +44,6 @@ In the request body, supply the values for relevant fields that should be update
 |fileAs|String|The name the contact is filed under.|
 |generation|String|The contact's generation.|
 |givenName|String|The contact's given name.|
-|homeAddress|[PhysicalAddress](../resources/physicaladdress.md)|The contact's home address.|
-|homePhones|String collection|The contact's home phone numbers.|
 |imAddresses|String|The contact's instant messaging (IM) addresses.|
 |initials|String|The contact's initials.|
 |jobTitle|String|The contact’s job title.|
@@ -57,13 +52,15 @@ In the request body, supply the values for relevant fields that should be update
 |mobilePhone|String|The contact's mobile phone number.|
 |nickName|String|The contact's nickname.|
 |officeLocation|String|The location of the contact's office.|
-|otherAddress|[PhysicalAddress](../resources/physicaladdress.md)|Other addresses for the contact.|
 |parentFolderId|String|The ID of the contact's parent folder.|
 |personalNotes|String|The user's notes about the contact.|
+|phones|[Phone](phone.md) collection|The contact's phone numbers.|
+|postalAddresses|[PhysicalAddress](physicaladdress.md) collection|The contact's physical addresses.|
 |profession|String|The contact's profession.|
 |spouseName|String|The name of the contact's spouse.|
 |surname|String|The contact's surname.|
 |title|String|The contact's title.|
+|websites|[Website](website.md)|The contact's websites.|
 |yomiCompanyName|String|The phonetic Japanese company name of the contact. This property is optional.|
 |yomiGivenName|String|The phonetic Japanese given name (first name) of the contact. This property is optional.|
 |yomiSurname|String|The phonetic Japanese surname (last name)  of the contact. This property is optional.|
@@ -83,12 +80,7 @@ Content-type: application/json
 Content-length: 1977
 
 {
-  "homeAddress": {
-    "street": "123 Some street",
-    "city": "Seattle",
-    "state": "WA",
-    "postalCode": "98121"
-  },
+  "displayName": "Garth Fort",
   "birthday": "1974-07-22"
 }
 ```
@@ -130,6 +122,12 @@ Content-length: 1977
       "address": "garth@a830edad9050849NDA1.onmicrosoft.com"
     }
   ],
+  "websites": [
+    {
+      "type": "business",
+      "address": "http://www.contoso.com"
+    }
+  ],
   "imAddresses": [
     "sip:garthf@a830edad9050849nda1.onmicrosoft.com"
   ],
@@ -138,28 +136,24 @@ Content-length: 1977
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": null,
-  "businessHomePage": "http://www.contoso.com",
   "assistantName": null,
   "manager": null,
-  "homePhones": [],
-  "mobilePhone": null,
-  "businessPhones": [
-    "+1 918 555 0101"
+  "phones": [
+    {
+      "type": "home",
+      "number": "+1 918 555 0101"
+    }
   ],
-  "homeAddress": {
-    "street": "123 Some street",
-    "city": "Seattle",
-    "state": "WA",
-    "postalCode": "98121"
-  },
-  "businessAddress": {
+  "postalAddresses": [
+    {
+      "type": "business",
       "street": "10 Contoso Way",
       "city": "Redmond",
       "state": "WA",
       "countryOrRegion": "USA",
       "postalCode": "98075"  
-  },
-  "otherAddress": {},
+    }
+  ],
   "spouseName": null,
   "personalNotes": null,
   "children": []
