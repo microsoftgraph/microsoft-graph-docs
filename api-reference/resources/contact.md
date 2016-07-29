@@ -18,9 +18,6 @@ A contact is an item in Outlook where you can organize and save information abou
 |:---------------|:--------|:----------|
 |assistantName|String|The name of the contact's assistant.|
 |birthday|DateTimeOffset|The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|businessAddress|[PhysicalAddress](physicaladdress.md)|The contact's business address.|
-|businessHomePage|String|The business home page of the contact.|
-|businessPhones|String collection|The contact's business phone numbers.|
 |categories|String collection|The categories associated with the contact.|
 |changeKey|String|Identifies the version of the contact. Every time the contact is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |children|String collection|The names of the contact's children.|
@@ -32,8 +29,6 @@ A contact is an item in Outlook where you can organize and save information abou
 |fileAs|String|The name the contact is filed under.|
 |generation|String|The contact's generation.|
 |givenName|String|The contact's given name.|
-|homeAddress|[PhysicalAddress](physicaladdress.md)|The contact's home address.|
-|homePhones|String collection|The contact's home phone numbers.|
 |id|String|The contact's unique identifier. Read-only.|
 |imAddresses|String collection|The contact's instant messaging (IM) addresses.|
 |initials|String|The contact's initials.|
@@ -41,16 +36,17 @@ A contact is an item in Outlook where you can organize and save information abou
 |lastModifiedDateTime|DateTimeOffset|The time the contact was modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |manager|String|The name of the contact's manager.
 |middleName|String|The contact's middle name.|
-|mobilePhone|String|The contact's mobile phone number.|
 |nickName|String|The contact's nickname.|
 |officeLocation|String|The location of the contact's office.|
-|otherAddress|[PhysicalAddress](physicaladdress.md)|Other addresses for the contact.|
 |parentFolderId|String|The ID of the contact's parent folder.|
 |personalNotes|String|The user's notes about the contact.|
+|phones|[Phone](phone.md) collection|The contact's phone numbers.|
+|postalAddresses|[PhysicalAddress](physicaladdress.md) collection|The contact's physical addresses.|
 |profession|String|The contact's profession.|
 |spouseName|String|The name of the contact's spouse.|
 |surname|String|The contact's surname.|
 |title|String|The contact's title.|
+|websites|[Website](website.md)|The contact's websites.|
 |yomiCompanyName|String|The phonetic Japanese company name of the contact.|
 |yomiGivenName|String|The phonetic Japanese given name (first name) of the contact.|
 |yomiSurname|String|The phonetic Japanese surname (last name)  of the contact.|
@@ -80,9 +76,6 @@ Here is a JSON representation of the resource
 {
   "assistantName": "string",
   "birthday": "String (timestamp)",
-  "businessAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "businessHomePage": "string",
-  "businessPhones": ["string"],
   "categories": ["string"],
   "changeKey": "string",
   "children": ["string"],
@@ -94,8 +87,6 @@ Here is a JSON representation of the resource
   "fileAs": "string",
   "generation": "string",
   "givenName": "string",
-  "homeAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "homePhones": ["string"],
   "id": "string (identifier)",
   "imAddresses": ["string"],
   "initials": "string",
@@ -103,12 +94,12 @@ Here is a JSON representation of the resource
   "lastModifiedDateTime": "String (timestamp)",
   "manager": "string",
   "middleName": "string",
-  "mobilePhone": "string",
   "nickName": "string",
   "officeLocation": "string",
-  "otherAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
   "parentFolderId": "string",
   "personalNotes": "string",
+  "phones": {"@odata.type": "microsoft.graph.phone"},
+  "postalAddresses": {"@odata.type": "microsoft.graph.physicalAddress"},
   "profession": "string",
   "spouseName": "string",
   "surname": "string",
@@ -116,7 +107,7 @@ Here is a JSON representation of the resource
   "yomiCompanyName": "string",
   "yomiGivenName": "string",
   "yomiSurname": "string",
-
+  "websites": [{"@odata.type": "microsoft.graph.website"}],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" }
 }
 
