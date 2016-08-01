@@ -23,10 +23,11 @@ A calendar which is a container for events.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|name|String|The calendar name.|
 |changeKey|String|Identifies the version of the calendar object. Every time the calendar is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.|
 |color|String|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |id|String|The group's unique identifier. Read-only.|
+|isDefaultCalendar|Boolean|True if this calendar is the user's default calendar, false otherwise.|
+|name|String|The calendar name.|
 
 ### Relationships
 | Relationship | Type	|Description|
@@ -55,6 +56,7 @@ Here is a JSON representation of the resource
   "changeKey": "string",
   "color": "String",
   "id": "string (identifier)",
+  "isDefaultCalendar": "boolean",
   "name": "string"
 }
 

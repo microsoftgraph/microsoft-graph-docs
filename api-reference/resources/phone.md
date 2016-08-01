@@ -7,7 +7,7 @@ Represents a phone number.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |number|string|The phone number.|
-|type|String|The type of phone number. Possible values are: `unknown`, `home`, `business`, `mobile`, `other`, `assistant`, `callback`, `car`, `homeFax`, `businessFax`, `otherFax`, `pager`, `primary`, `radio`, `telex`, `ttyTdd`, `organizationMain`.|
+|type|String|The type of phone number. Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ### JSON representation
 

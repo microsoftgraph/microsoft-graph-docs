@@ -21,7 +21,7 @@ Derived from [attachment](attachment.md).
 |isInline|Boolean|Set to true if the attachment appears inline in the body of the embedding object. Optional.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Optional.|
 |name|String|The text that is displayed below the icon representing the embedded attachment. This does not need to be the actual file name. Required.|
-|permission|ReferenceAttachmentPermissions|Specifies the permissions granted for the attachment by the type of provider in **providerType**. Possible values are: `other`, `view`, `edit`. Optional.|
+|permission|ReferenceAttachmentPermissions|Specifies the permissions granted for the attachment by the type of provider in **providerType**. Possible values are: `other`, `view`, `edit`, `anonymousView`, `anonymousEdit`, `organizationView`, `organizationEdit`. Optional.|
 |previewUrl|String|Applies to only a reference attachment of an image - URL to get a preview image. Use **thumbnailUrl** and **previewUrl** only when **sourceUrl** identifies an image file. Optional.|
 |providerType|ReferenceAttachmentProviders|The type of provider that supports an attachment of this contentType. Possible values are: `other`, `oneDriveBusiness`, `oneDriveConsumer`, `dropbox`. Optional.|
 |size|Int32|The size of the attachment in bytes. Optional.|

@@ -1,13 +1,14 @@
-# webSite resource type
+# website resource type
 
-Represents a website.
+Represents a web site.
 
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|String| Possible values are: `unknown`, `personalHomePage`, `businessHomePage`.|
-|url|string|The URL of the website.|
+|type|String| Possible values are: `other`, `home`, `work`, `blog`, `profile`.|
+|address|string|The URL of the website.|
+|displayName|string|The display name of the web site.|
 
 ### JSON representation
 
@@ -24,7 +25,8 @@ Here is a JSON representation of the resource.
 ```json
 {
   "type": "String",
-  "url": "string"
+  "address": "string",
+  "displayName": "string"
 }
 
 ```

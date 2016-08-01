@@ -40,6 +40,7 @@ Here is a JSON representation of the resource
   "importance": "String",
   "inferenceClassification": "String",
   "internetMessageId": "String",
+  "isAllDay": "Boolean",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
   "isOutOfDate": "Boolean",
@@ -86,6 +87,7 @@ Here is a JSON representation of the resource
 |importance|String| The importance of the message: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| Possible values are: `Focused`, `Other`.|
 |internetMessageId |String |The message ID in the format specified by [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
+|isAllDay |Boolean|Indicates whether the event lasts the entire day. Adjusting this property requires adjusting the **startDateTime** and **endDateTime** properties of the event as well.|
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.|
 |isOutOfDate|Boolean|Indicates whether this meeting request has been made out-of-date by a more recent request.|

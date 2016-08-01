@@ -1,10 +1,9 @@
-# Update automatic reply settings
+# Update user mailbox settings
 
-Update the settings for notifying people automatically upon receipt of their email.
+Update one or more settings for the user's mailbox. This includes settings for automatic replies (notify people automatically upon 
+receipt of their email), locale, or time zone.
 
-Because automatic replies are part of the user's mailbox settings (**automaticRepliesSetting** is a property of 
-[mailboxSettings](../resources/mailboxsettings.md)), 
-you can enable, configure, or disable automatic replies by updating the corresponding mailbox settings.
+You can enable, configure, or disable one or more of these settings as part of [mailboxSettings](../resources/mailboxsettings.md).
 
 **Note** You cannot create or delete any mailbox settings.
 
@@ -25,7 +24,16 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Authorization  | string  | Bearer <token>. Required. |
 
 ### Request body
-Do not supply a request body for this method.
+In the request body, supply the values for the relevant properties that should be updated. Existing properties that are not included in the 
+request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you 
+shouldn't include existing values that haven't changed. The following are the writable/updatable properties:
+
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.|
+|language|[localeInfo](../resources/localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
+|timeZone|string|The default time zone for the user's mailbox.|
+
 ### Response
 If successful, this method returns a `200 OK` response code and [mailboxSettings](../resources/mailboxSettings.md) object in the response body.
 ### Example
@@ -70,8 +78,8 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/api/beta/$metadata#Me/mailboxSettings",
     "automaticRepliesSetting": {
-        "status": "Scheduled",
-        "externalAudience": "None",
+        "status": "scheduled",
+        "externalAudience": "none",
         "scheduledStartDateTime": {
             "dateTime": "2016-03-20T02:00:00.0000000",
             "timeZone": "UTC"
@@ -82,6 +90,11 @@ Content-type: application/json
         },
     "internalReplyMessage": "<html>\n<body>\n<p>I'm at our company's worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n",
     "externalReplyMessage": "<html>\n<body>\n<p>I'm at the Contoso worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n"
+    },
+    "timeZone":"UTC",
+    "language":{
+      "locale":"en-US",
+      "displayName":"English (United States)"
     }
 }
 ```
