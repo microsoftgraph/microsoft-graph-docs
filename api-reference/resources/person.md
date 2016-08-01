@@ -30,7 +30,7 @@ An aggregation of information about a person from across mail, contacts and soci
 |sources|[personDataSource](persondatasource.md) collection|The sources the user data comes from, for example Directory or Outlook Contacts.|
 |surname|string|The person's surname.|
 |title|string|The person's title.|
-|webSites|[webSite](website.md) collection|The person's websites.|
+|webSites|[website](website.md) collection|The person's websites.|
 |yomiCompany|string|The phonetic Japanese name of the person's company.|
 
 ### Relationships
@@ -69,7 +69,7 @@ Here is a JSON representation of the resource.
   "sources": [{"@odata.type": "microsoft.graph.personDataSource"}],
   "surname": "string",
   "title": "string",
-  "webSites": [{"@odata.type": "microsoft.graph.webSite"}],
+  "websites": [{"@odata.type": "microsoft.graph.website"}],
   "yomiCompany": "string"
 }
 
