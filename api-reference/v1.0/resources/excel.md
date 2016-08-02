@@ -70,7 +70,7 @@ Pass a JSON object by setting the `persistchanges` value to `true` or `false`.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/CreateSession
+POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/createSession
 content-type: Application/Json 
 authorization: Bearer {access-token}
 
@@ -85,7 +85,7 @@ When the value of `persistChanges` is set to `false`, a non-persistant session i
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201, Created
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#microsoft.graph.sessionInfo",
@@ -125,7 +125,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets",
@@ -163,7 +163,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201, Created
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
@@ -211,7 +211,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
@@ -241,7 +241,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts",
@@ -273,7 +273,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#Edm.String",
@@ -299,7 +299,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201, Created
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#chart",
@@ -331,7 +331,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts/$entity",
@@ -382,7 +382,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 ```
 
 #### Update table
@@ -402,7 +402,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables/$entity",
@@ -430,7 +430,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('4')/rows",
@@ -520,7 +520,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK 
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('4')/columns",
@@ -634,7 +634,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201, Created
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('4')/rows/$entity",
@@ -667,7 +667,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http 
 HTTP code: 201, Created
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('2')/columns/$entity",
@@ -733,7 +733,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK 
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 ```
 
 #### Table sort
@@ -820,7 +820,7 @@ Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
-content-type: application/json;odata.metadat 
+content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#range",
@@ -923,7 +923,7 @@ workbook-session-id: {session-id}
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
-content-type: application/json;odata.metadat
+content-type: application/json;odata.metadata
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#range",
