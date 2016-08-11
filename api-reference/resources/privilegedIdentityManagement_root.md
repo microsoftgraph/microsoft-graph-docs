@@ -1,6 +1,6 @@
-# Service root
+# Azure AD Privileged Identity Management
 
-Here is the list of methods that are provided by Privileged Identity Management service.
+Here is the list of methods that are provided by [Privileged Identity Management](https://azure.microsoft.com/en-us/documentation/articles/active-directory-privileged-identity-management-configure/) service.
 
 The service is built on top of OData. To filter the results from the query, use the standard OData ``$filter`` expressions in the URIs.
 
