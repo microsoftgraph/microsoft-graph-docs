@@ -1,8 +1,8 @@
 # profilePhoto resource type
-A profile photo of a user, group or an Outlook contact accessed from Exchange Online or Azure Active Directory (AAD). It's binary data not encoded in base-64.
+A profile photo of a user, group or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64.
 
 The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', '120x120', 
-'240x240', '360x360','432x432', '504x504', and '648x648'. On AAD, photos can be any dimension.
+'240x240', '360x360','432x432', '504x504', and '648x648'. 
 
 ### Methods
 
