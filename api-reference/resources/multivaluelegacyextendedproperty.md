@@ -15,7 +15,7 @@ Office 365 Data Extensions or extended properties, and how to specify extended p
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|propertyId|string|The property ID used to identify the property. Read-only.|
+|id|string|The property identifier. Read-only.|
 |value|string collection|A collection of property values.|
 
 ### Relationships
@@ -36,7 +36,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "propertyId": "string (identifier)",
+  "id": "string (identifier)",
   "value": ["string"]
 }
 

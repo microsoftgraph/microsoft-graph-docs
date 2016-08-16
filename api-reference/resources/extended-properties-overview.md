@@ -30,39 +30,39 @@ Depending on whether you intend to store a single or multiple values (of the sam
 create an extended property as a [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md), 
 or [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md).
 
-Each of these types identifies the property by its **propertyId** and stores data in **value**. 
+Each of these types identifies the property by its **id** and stores data in **value**. 
 
-You can use **propertyId** to get a specific resource instance together with that extended property, or filter on 
+You can use **id** to get a specific resource instance together with that extended property, or filter on 
 a single-value extended property to get all the instances that have that property. 
 
 **Note** You cannot use the REST API to get all the extended properties of a specific instance in one call.
   
 
-### propertyId Formats
+### id Formats
 
-When creating a single-value or multi-value extended property, you can specify the **propertyId** in one of two formats, 
+When creating a single-value or multi-value extended property, you can specify **id** in one of two formats, 
 based on either a string name or numeric identifier, and on the actual type of value or values of the property. Since 
 extended properties are in most cases inter-operating with defined MAPI properties not exposed in the 
 Microsoft Graph API metadata, for simplicity, the format you choose should reflect whether the corresponding MAPI 
 property uses a character string or numeric value in its [MAPI property identifier](https://msdn.microsoft.com/en-us/library/office/cc815528.aspx).
 
-**Note** After you have chosen one format for the **propertyId**, you should access that extended property by only that format.
+**Note** After you have chosen one format for **id**, you should access that extended property by only that format.
 
 
-**Valid propertyId formats for single-value extended properties**
-
-|**Format**|**Example**|**Description**|
-|:---------|:----------|:--------------|
-| "*{type} {guid} **Name** {name}*" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) it belongs to, and a name.         |
-| "*{type} {guid} **Id** {id}*"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifies a property by the namespace (the GUID) it belongs to, and an identifier.  |
-
-
-**Valid propertyId formats for multi-value extended properties**
+**Valid id formats for single-value extended properties**
 
 |**Format**|**Example**|**Description**|
 |:---------|:----------|:--------------|
-| "*{type} {guid} **Name** {name}*" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by namespace (the GUID) and name.         |
-| "*{type} {guid} **Id** {id}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifies a property by namespace (the GUID) and identifier.   |
+| "*{_type_} {_guid_} **Name** {_name_}*" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) it belongs to, and a name.         |
+| "*{_type_} {_guid_} **Id** {_id_}*"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifies a property by the namespace (the GUID) it belongs to, and an identifier.  |
+
+
+**Valid id formats for multi-value extended properties**
+
+|**Format**|**Example**|**Description**|
+|:---------|:----------|:--------------|
+| "*{_type_} {_guid_} **Name** {_name_}*" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by namespace (the GUID) and name.         |
+| "*{_type_} {_guid_} **Id** {_id_}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifies a property by namespace (the GUID) and identifier.   |
 
 
 ### REST API operations
