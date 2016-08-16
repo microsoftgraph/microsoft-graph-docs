@@ -36,67 +36,67 @@ getting:
 ### HTTP request
 
 Get a resource instance expanded with the extended property which matches a filter on the 
-**propertyId** property. Make sure you apply 
+**id** property. Make sure you apply 
 [URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.
 
 Get a **message** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
-GET /users/<id|userPrincipalName>/messages/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
-GET /me/mailFolders/<id>/messages/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
+GET /me/messages/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/<id|userPrincipalName>/messages/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/mailFolders/<id>/messages/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **mailFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
-GET /users/<id|userPrincipalName>/mailFolders/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
+GET /me/mailFolders/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/<id|userPrincipalName>/mailFolders/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 Get an **event** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/events/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
-GET /users/<id|userPrincipalName>/events/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
+GET /me/events/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/<id|userPrincipalName>/events/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **calendar** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendars/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
-GET /users/<id|userPrincipalName>/calendars/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
+GET /me/calendars/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/<id|userPrincipalName>/calendars/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **contact** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contacts/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
-GET /users/<id|userPrincipalName>/contacts/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
-GET /me/contactFolders/<id>/contacts/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
-GET /users/<id|userPrincipalName>/contactFolders/<id>/contacts/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
+GET /me/contacts/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/<id|userPrincipalName>/contacts/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contactFolders/<id>/contacts/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/<id|userPrincipalName>/contactFolders/<id>/contacts/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **contactFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contactfolders/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
-GET /users/<id|userPrincipalName>/contactFolders/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
+GET /me/contactfolders/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/<id|userPrincipalName>/contactFolders/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a group **event** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/events/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
+GET /groups/<id>/events/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 Get a group **post** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/threads/<id>/posts/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
-GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>?$expand=singleValueExtendedProperties($filter=propertyId eq '{propertyId_value}')
+GET /groups/<id>/threads/<id>/posts/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 ### Parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |_URL parameters_|
-|propertyId_value|String|The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
+|id_value|String|The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 
 
 ### Request headers
@@ -116,12 +116,12 @@ The response body includes an object representing the requested resource instanc
 ### Example
 ##### Request
 This example gets and expands the specified event by including a multi-value extended property. The filter returns the 
-extended property that has its **propertyId** matching the string `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation`
+extended property that has its **id** matching the string `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation`
 (with URL encoding removed here for ease of reading).
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/events('AAMkAGE1M2_bs88AACbuFiiAAA=')?$expand=multiValueExtendedProperties($filter=propertyId%20eq%20'StringArray%20{66f5a359-4659-4830-9070-00050ec6ac6e}%20Name%20Recreation')
+GET https://graph.microsoft.com/beta/me/events('AAMkAGE1M2_bs88AACbuFiiAAA=')?$expand=multiValueExtendedProperties($filter=id%20eq%20'StringArray%20{66f5a359-4659-4830-9070-00050ec6ac6e}%20Name%20Recreation')
 ```
 ##### Response
 
@@ -155,7 +155,7 @@ Content-type: application/json
     "multiValueExtendedProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/events('AAMkAGE1M2_bs88AACbuFiiAAA%3D')/multiValueExtendedProperties",
     "multiValueExtendedProperties": [
         {
-            "propertyId": "StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
+            "id": "StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
             "value": [
                 "Food",
                 "Hiking",

@@ -108,10 +108,10 @@ PATCH /groups/<id>/events/<id>
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |_URL parameters_|
-|id|string|A unique identifier for an object in the corresponding collection. Required.|
+|id|string|A unique identifier for an object, represented by its **id** property, in the corresponding collection. Required.|
 |_Body parameters_|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection| An array of one or more multi-valued extended properties. |
-|propertyId|String|For each property in the **multiValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
+|id|String|For each property in the **multiValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 |value|string|For each property in the **multiValueExtendedProperties** collection, specify the property value. Required.|
 
 
@@ -155,7 +155,8 @@ the extended property. You cannot create an extended property in an existing gro
 The first example creates a multi-value extended property in a new event all in the same POST operation. Apart from the properties you'd normally 
 include for a new event, the request body includes the **multiValueExtendedProperties** collection which contains one extended property. 
 The request body includes the following for that multi-value extended property:
-- **propertyId** which specifies the property as an array of strings with the specified GUID and the name `Recreation`. 
+
+- **id** which specifies the property as an array of strings with the specified GUID and the name `Recreation`. 
 - **value** which specifies `Recreation` as an array of 3 string values, `["Food", "Hiking", "Swimming"]`.
  
 
@@ -196,7 +197,7 @@ Content-Type: application/json
   ],
   "multiValueExtendedProperties": [
      {
-           "propertyId":"StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
+           "id":"StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
            "value": ["Food", "Hiking", "Swimming"]
      }
   ]
@@ -219,7 +220,7 @@ To see the newly created extended property, [get the event expanded with the ext
 The second example creates one multi-value extended property for the specified message. That extended property is the only
 element in the **multiValueExtendedProperties** collection. The request body includes the following for the 
 extended property:
-- **propertyId** specifies the property as an array of strings with the specified GUID and the name `Palette`.
+- **id** specifies the property as an array of strings with the specified GUID and the name `Palette`.
 - **value** specifies `Palette` as an array of 3 string values, `["Green", "Aqua", "Blue"]`.
 
 <!-- { "blockType": "ignored" } -->
@@ -231,7 +232,7 @@ Content-Type: application/json
 {
   "multiValueExtendedProperties": [
       {
-         "propertyId":"StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette",
+         "id":"StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette",
          "value":["Green", "Aqua", "Blue"]
       }
     ]

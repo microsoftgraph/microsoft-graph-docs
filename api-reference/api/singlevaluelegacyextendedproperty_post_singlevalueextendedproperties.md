@@ -108,10 +108,10 @@ PATCH /groups/<id>/events/<id>
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |_URL parameters_|
-|id|string|A unique identifier for an object in the corresponding collection. Required.|
+|id|string|A unique identifier for an object, represented by its **id** property, in the corresponding collection. Required.|
 |_Body parameters_|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) collection| An array of one or more single-valued extended properties. |
-|propertyId|String|For each property in the **singleValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
+|id|String|For each property in the **singleValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 |value|string|For each property in the **singleValueExtendedProperties** collection, specify the property value. Required.|
 
 
@@ -155,7 +155,8 @@ a response code but not the new post nor the extended property.
 The first example creates a new event and a single-value extended property in the same POST operation. Apart from the properties you'd normally 
 include for a new event, the request body includes the **singleValueExtendedProperties** collection that contains one single-value 
 extended property, and the following for the property:
-- **propertyId** specifies the property type as `String`, the GUID, and the property named `Fun`.
+
+- **id** specifies the property type as `String`, the GUID, and the property named `Fun`.
 - **value** specifies `Food` as the value of the `Fun` property. 
 
 <!-- { "blockType": "ignored" } -->
@@ -188,7 +189,7 @@ Content-Type: application/json
   ],
   "singleValueExtendedProperties": [
      {
-           "propertyId":"String {66f5a359-4659-4830-9070-00040ec6ac6e} Name Fun",
+           "id":"String {66f5a359-4659-4830-9070-00040ec6ac6e} Name Fun",
            "value":"Food"
      }
   ]
@@ -211,7 +212,7 @@ To see the newly created extended property, [get the event expanded with the ext
 The second example creates one single-value extended property for the specified existing message. That extended property is the only
 element in the **singleValueExtendedProperties** array. The request body includes the following for the 
 extended property:
-- **propertyId** specifies the property type as `String`, the GUID, and the property named `Color`.
+- **id** specifies the property type as `String`, the GUID, and the property named `Color`.
 - **value** specifies `Green` as the value of the `Color` property.
 
 <!-- { "blockType": "ignored" } -->
@@ -223,7 +224,7 @@ Content-Type: application/json
 {
   "singleValueExtendedProperties": [
       {
-         "propertyId":"String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",
+         "id":"String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",
          "value":"Green"
       }
     ]
