@@ -81,6 +81,7 @@ Here is a JSON representation of the resource
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) collection|User impersonation grants associated with this service principal. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by this service principal. Read-only. Nullable.|
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of this service principal. The owners are a set of non-admin users who are allowed to modify this object. Read-only. Nullable.|
+|policy|[policy](policy.md) collection|The policies assigned to this service principal.|
 
 ### Methods
 
@@ -93,6 +94,7 @@ Here is a JSON representation of the resource
 |[List createdObjects](../api/serviceprincipal_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| Get a createdObject object collection.|
 |[Create memberOf](../api/serviceprincipal_post_memberof.md) |[directoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
 |[List memberOf](../api/serviceprincipal_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get a memberOf object collection.|
+|[List assigned policies](../api/policy_list_assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
 |[Create oAuth2PermissionGrant](../api/serviceprincipal_post_oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md)| Create a new oAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
 |[List oauth2PermissionGrants](../api/serviceprincipal_list_oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) collection| Get a oAuth2PermissionGrant object collection.|
 |[Create ownedObject](../api/serviceprincipal_post_ownedobjects.md) |[directoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|

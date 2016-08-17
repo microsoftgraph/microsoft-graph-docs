@@ -78,6 +78,7 @@ Here is a JSON representation of the resource
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
 |extensionProperties|[extensionProperty](extensionproperty.md) collection|The extension properties associated with the application. Read-only. Nullable.|
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer.  Read-only. Nullable.|
+|policy|[policy](policy.md) collection|The policies assigned to this application.|
 
 ### Methods
 
@@ -86,11 +87,12 @@ Here is a JSON representation of the resource
 |[Get application](../api/application_get.md) | [application](application.md) |Read properties and relationships of application object.|
 |[Create extensionProperty](../api/application_post_extensionproperties.md) |[extensionProperty](extensionproperty.md)| Create a new extensionProperty by posting to the extensionProperties collection.|
 |[List extensionProperties](../api/application_list_extensionproperties.md) |[extensionProperty](extensionproperty.md) collection| Get a extensionProperty object collection.|
+|[List assigned policies](../api/policy_list_assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
 |[Create owner](../api/application_post_owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[List owners](../api/application_list_owners.md) |[directoryObject](directoryobject.md) collection| Get a owner object collection.|
 |[Update](../api/application_update.md) | [application](application.md) |Update application object. |
 |[Delete](../api/application_delete.md) | None |Delete application object. |
-|[restore](../api/application_restore.md)|[application](application.md)||
+|[restore](../api/application_restore.md)|[application](application.md)|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
