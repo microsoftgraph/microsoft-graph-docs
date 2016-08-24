@@ -46,7 +46,7 @@ Or to a top-level resource:
 Or on a drive root item:
 `https://graph.microsoft.com/beta/me/drive/root`
 
-Creating a subscription requires read scope to the resource. For example, to get notifications messages, your app needs the `mail.read` permission.
+Creating a subscription in most cases requires read scope to the resource. For example, to get notifications messages, your app needs the `mail.read` permission. Please note that currently the `Files.ReadWrite` permission is required for Drive root items.
 
 Subscriptions expire. The current longest expiration time is three days minus 9-0 minutes from the time of creation. Apps need to renew their subscriptions before the expiration time. Otherwise they'll need to create a new subscription.
 
