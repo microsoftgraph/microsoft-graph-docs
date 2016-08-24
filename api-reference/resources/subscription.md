@@ -3,6 +3,7 @@ A subscription allows a client app to receive notifications about data on the Mi
 
 1. Mail, events, and contacts from Outlook
 1. Conversations from Office Groups.
+1. Drive root items from OneDrive 
 
 
 ### JSON representation
@@ -47,6 +48,7 @@ Here is a JSON representation of the resource.
 | Calendar            | 4230 minutes.           |
 | Contacts            | 4230 minutes.           |
 | Group conversations | 4230 minutes.           |
+| Drive root items    | 86400 minutes.          |
 
 
 ### Relationships
