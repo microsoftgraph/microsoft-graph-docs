@@ -71,6 +71,7 @@ Here is a JSON representation of the resource
 |replyUrls|String collection|Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to. Not nullable.|
 |requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) collection|Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience. Not nullable.|
 |samlMetadataUrl|String|The URL to the SAML metadata for the application.|
+|onPremisesPublishing|[onPremisesPublishing](onpremisespublishing.md)| The on-premises publishing settings used with Azure AD Application Proxy|
 
 ### Relationships
 | Relationship | Type |Description|
@@ -78,6 +79,7 @@ Here is a JSON representation of the resource
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
 |extensionProperties|[extensionProperty](extensionproperty.md) collection|The extension properties associated with the application. Read-only. Nullable.|
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer.  Read-only. Nullable.|
+|connectorGroup|[connectorGroup](connectorgroup.md)| The connectorGroup the applicaiton is using with Azure AD Application Proxy. Nullable.|
 
 ### Methods
 

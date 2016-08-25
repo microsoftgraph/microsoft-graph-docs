@@ -21,6 +21,9 @@
 |[List subscribedSku](../api/subscribedsku_list.md) | [subscribedSku](subscribedsku.md) collection |Get subscribedSku object collection. |
 |[Create user](../api/user_post_users.md) |[user](user.md)| Create a new user by posting to the users collection.|
 |[List user](../api/user_list.md) | [user](user.md) collection |Get user object collection. |
+|[Create connectorGroup](../api/connectorgroup_post_connectorgroups.md) |[connectorGroup](connectorgroup.md)|Create a new connectorGroup by posting to the connectorGroups collection.|
+|[List connectorGroup](../api/connectorgroup_list.md) | [connectorGroup](connectorgroup.md) collection |Get connectorGroup object collection. |
+|[List connector](../api/connector_list.md) | [connector](connector.md) collection |Get connector object collection. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
