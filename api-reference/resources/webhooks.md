@@ -8,6 +8,7 @@ Using the Microsoft Graph REST API, an app can subscribe to changes on the follo
 * Events
 * Contacts
 * Group conversations
+* Drive root items
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates cache and views, etc.
 
@@ -34,7 +35,7 @@ Client must store the subscription ID to correlate a notification with the corre
 
 ## Characteristics of subscriptions
 
-You can create subscriptions for resources such as messages, events, and contacts.
+You can create subscriptions for resources such as messages, events, contacts, and drive root items.
 
 You can create a subscription to a specific folder:
 `https://graph.microsoft.com/beta/me/mailfolders('inbox')/messages`
@@ -42,7 +43,10 @@ You can create a subscription to a specific folder:
 Or to a top-level resource:
 `https://graph.microsoft.com/beta/me/messages`
 
-Creating a subscription requires read scope to the resource. For example, to get notifications messages, your app needs the `mail.read` permission.
+Or on a drive root item:
+`https://graph.microsoft.com/beta/me/drive/root`
+
+Creating a subscription in most cases requires read scope to the resource. For example, to get notifications messages, your app needs the `mail.read` permission. Please note that currently the `Files.ReadWrite` permission is required for Drive root items.
 
 Subscriptions expire. The current longest expiration time is three days minus 9-0 minutes from the time of creation. Apps need to renew their subscriptions before the expiration time. Otherwise they'll need to create a new subscription.
 

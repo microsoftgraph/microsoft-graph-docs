@@ -3,6 +3,7 @@ A subscription allows a client app to receive notifications about data on the Mi
 
 1. Mail, events, and contacts from Outlook
 1. Conversations from Office Groups.
+1. Drive root items from OneDrive 
 
 
 ### JSON representation
@@ -32,7 +33,7 @@ Here is a JSON representation of the resource.
 
 | Property           | Type           | Description                                                                                                                                                                                                                                                                                                                                                      |
 |:-------------------|:---------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| changeType         | string         | Indicates the type of change in the subscribed resource that will raise a notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list.                                                                                                                                                 |
+| changeType         | string         | Indicates the type of change in the subscribed resource that will raise a notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list. Drive root Item notifications require the use of `updated` only.                                                                                                                                                 |
 | notificationUrl    | string         | The URL of the endpoint that will receive the notifications. This URL has to make use of the HTTPS protocol.                                                                                                                                                                                                                                                     |
 | resource           | string         | Specifies the resource that will be monitored for changes. Do not include the base URL (`https://graph.microsoft.com/<version>/`).                                                                                                                                                                                                                               |
 | expirationDateTime | DateTimeOffset | Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum values.                                                                                                                              |
@@ -47,6 +48,7 @@ Here is a JSON representation of the resource.
 | Calendar            | 4230 minutes.           |
 | Contacts            | 4230 minutes.           |
 | Group conversations | 4230 minutes.           |
+| Drive root items    | 86400 minutes.          |
 
 
 ### Relationships
