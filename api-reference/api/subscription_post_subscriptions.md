@@ -2,7 +2,7 @@
 
 Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.
 ### Prerequisites
-One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read* or *Group.Read.All*
+One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All* or *Files.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 
@@ -51,6 +51,7 @@ The following are valid values for the resource property of the subscription:
 |Contacts|me/contacts|
 |Calendars|me/events|
 |Conversations|groups('*{id}*')/conversations|
+|Drives|me/drive/root|
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -95,21 +96,28 @@ Depending on the subscribed resource, an additional resourceData field may provi
 
 ```http
 {
-   "value":[
-      {
-         "subscriptionId":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
-         "subscriptionExpirationDateTime":"2015-11-20T18:23:45.9356913Z",
-         "clientState":"subscription-identifier",
-         "changeType":"Created",
-         "resource":"Users/ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4/messages/AAMkADMxZmEzMDM1LTFjODQtNGVkMC04YzY3LTBjZTRlNDFjNGE4MwBGAAAAAAAr-q_ZG7oXSaqxum7oZW5RBwCoeN6SYXGLRrvRm_CYrrfQAAAAAAEMAACoeN6SYXGLRrvRm_CYrrfQAACvtMe6AAA=",
-         "resourceData":{
-            "@odata.type":"#Microsoft.Graph.Message",
-            "@odata.id":"Users/ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4/messages/AAMkADMxZmEzMDM1LTFjODQtNGVkMC04YzY3LTBjZTRlNDFjNGE4MwBGAAAAAAAr-q_ZG7oXSaqxum7oZW5RBwCoeN6SYXGLRrvRm_CYrrfQAAAAAAEMAACoeN6SYXGLRrvRm_CYrrfQAACvtMe6AAA=",
-            "@odata.etag":"W/\"CQAAABYAAACoeN6SYXGLRrvRm+CYrrfQAACvvGdb\"",
-            "Id":"AAMkADMxZmEzMDM1LTFjODQtNGVkMC04YzY3LTBjZTRlNDFjNGE4MwBGAAAAAAAr-q_ZG7oXSaqxum7oZW5RBwCoeN6SYXGLRrvRm_CYrrfQAAAAAAEMAACoeN6SYXGLRrvRm_CYrrfQAACvtMe6AAA="
-         }
-      }
-   ]
+  "subscriptionId":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
+  "subscriptionExpirationDateTime":"2015-11-20T18:23:45.9356913Z",
+  "clientState":"subscription-identifier",
+  "changeType":"Created",
+  "resource":"Users/ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4/messages/AAMkADMxZmEzMDM1LTFjODQtNGVkMC04YzY3LTBjZTRlNDFjNGE4MwBGAAAAAAAr-q_ZG7oXSaqxum7oZW5RBwCoeN6SYXGLRrvRm_CYrrfQAAAAAAEMAACoeN6SYXGLRrvRm_CYrrfQAACvtMe6AAA=",
+  "resourceData":{
+    "@odata.type":"#Microsoft.Graph.Message",
+    "@odata.id":"Users/ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4/messages/AAMkADMxZmEzMDM1LTFjODQtNGVkMC04YzY3LTBjZTRlNDFjNGE4MwBGAAAAAAAr-q_ZG7oXSaqxum7oZW5RBwCoeN6SYXGLRrvRm_CYrrfQAAAAAAEMAACoeN6SYXGLRrvRm_CYrrfQAACvtMe6AAA=",
+    "@odata.etag":"W/\"CQAAABYAAACoeN6SYXGLRrvRm+CYrrfQAACvvGdb\"",
+    "Id":"AAMkADMxZmEzMDM1LTFjODQtNGVkMC04YzY3LTBjZTRlNDFjNGE4MwBGAAAAAAAr-q_ZG7oXSaqxum7oZW5RBwCoeN6SYXGLRrvRm_CYrrfQAAAAAAEMAACoeN6SYXGLRrvRm_CYrrfQAACvtMe6AAA="
+  }
+}
+```
+When receiving notifications from Drive subscriptions the resourceData will be null and the [delta](item_delta.md) API should be called to determine the changes that have occured. Here is an example of a Drive notification:
+```http
+{
+  "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",
+  "clientState": "My client state",
+  "changeType": "updated",
+  "resource": "me/drive/root",
+  "subscriptionExpirationDateTime": "2016-08-26T23:08:37.00+00:00",
+  "resourceData": null
 }
 ```
 
