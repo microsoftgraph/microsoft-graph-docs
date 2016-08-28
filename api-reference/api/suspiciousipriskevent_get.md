@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of a suspiciousipriskevent object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *IdentityRiskEvent.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -41,17 +41,17 @@ Content-type: application/json
 Content-length: 237
 
 {
-  "closedDateTime": null, 
-  "createdDateTime": "2016-02-03T06:08:35.123512Z", 
-  "id": "02e8bfd1-5231-1006-01cc-434f84e0859e-97b7301f-bc05-8e2c-fdfa-2004eb66ff70-287e7b9b-1d60-aa96-6ddb-65c81ee31475", 
-  "ipAddress": "95.31.18.119", 
-  "location": "Moskva, Russia, RU", 
-  "riskEventDateTime": "2016-02-03T05:33:49.9516789Z", 
-  "riskEventStatus": "active", 
-  "riskLevel": "low", 
-  "riskType": "SuspiciousIpRiskEvent", 
-  "userDisplayName": "Jon Doe", 
-  "userId": "97b7301f-bc05-8e2c-fdfa-2004eb66ff70", 
+  "closedDateTime": null,
+  "createdDateTime": "2016-02-03T06:08:35.123512Z",
+  "id": "02e8bfd1-5231-1006-01cc-434f84e0859e-97b7301f-bc05-8e2c-fdfa-2004eb66ff70-287e7b9b-1d60-aa96-6ddb-65c81ee31475",
+  "ipAddress": "95.31.18.119",
+  "location": "Moskva, Russia, RU",
+  "riskEventDateTime": "2016-02-03T05:33:49.9516789Z",
+  "riskEventStatus": "active",
+  "riskLevel": "low",
+  "riskType": "SuspiciousIpRiskEvent",
+  "userDisplayName": "Jon Doe",
+  "userId": "97b7301f-bc05-8e2c-fdfa-2004eb66ff70",
   "userPrincipalName": "jon@contoso.com"
 }
 ```

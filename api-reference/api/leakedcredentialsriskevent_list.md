@@ -2,7 +2,7 @@
 
 Retrieve a list of leakedcredentialsriskevent objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *IdentityRiskEvent.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -42,18 +42,18 @@ Content-type: application/json
 Content-length: 304
 
 {
-  "value": 
+  "value":
   [
 	{
-	  "closedDateTime": null, 
-	  "createdDateTime": "2016-01-29T00:01:49.126468Z", 
-	  "id": "8c793a18-c86a-b5f9-7d9a-b3d024f33eee-278dc452-4163-dbc6-84eb-a050c37fc931-1a01abd3-b87a-cece-3f4d-c788b055c182", 
-	  "riskEventDateTime": "2016-01-29T00:00:56.2255665Z", 
-	  "riskEventStatus": "active", 
-	  "riskLevel": "high", 
-	  "riskType": "LeakedCredentialsRiskEvent", 
-	  "userDisplayName": "Jon Doe", 
-	  "userId": "278dc452-4163-dbc6-84eb-a050c37fc931", 
+	  "closedDateTime": null,
+	  "createdDateTime": "2016-01-29T00:01:49.126468Z",
+	  "id": "8c793a18-c86a-b5f9-7d9a-b3d024f33eee-278dc452-4163-dbc6-84eb-a050c37fc931-1a01abd3-b87a-cece-3f4d-c788b055c182",
+	  "riskEventDateTime": "2016-01-29T00:00:56.2255665Z",
+	  "riskEventStatus": "active",
+	  "riskLevel": "high",
+	  "riskType": "LeakedCredentialsRiskEvent",
+	  "userDisplayName": "Jon Doe",
+	  "userId": "278dc452-4163-dbc6-84eb-a050c37fc931",
 	  "userPrincipalName": "jon@contoso.com"
 	}
   ]

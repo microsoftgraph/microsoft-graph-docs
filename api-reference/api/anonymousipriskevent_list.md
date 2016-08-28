@@ -2,7 +2,7 @@
 
 Retrieve a list of anonymousipriskevent objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *IdentityRiskEvent.Read.All* 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -45,17 +45,17 @@ Content-length: 290
 {
   "value": [
     {
-      "closedDateTime": "2016-01-29T20:03:57.7872426Z", 
-      "createdDateTime": "2016-01-29T00:01:49.126468Z", 
-      "id": "2016-01-29T00:00:56.22556656a56d0b2-3c51-7c5e-bc1a-1ccdb3bd9c71", 
-      "ipAddress": null, 
-      "location": null, 
-      "riskEventDateTime": "2016-01-29T00:00:56.2255665Z", 
-      "riskEventStatus": "remediated", 
-      "riskLevel": "medium", 
-      "riskType": "AnonymousIpRiskEvent", 
-      "userDisplayName": "Jon Doe", 
-      "userId": "6a56d0b2-3c51-7c5e-bc1a-1ccdb3bd9c71", 
+      "closedDateTime": "2016-01-29T20:03:57.7872426Z",
+      "createdDateTime": "2016-01-29T00:01:49.126468Z",
+      "id": "2016-01-29T00:00:56.22556656a56d0b2-3c51-7c5e-bc1a-1ccdb3bd9c71",
+      "ipAddress": null,
+      "location": null,
+      "riskEventDateTime": "2016-01-29T00:00:56.2255665Z",
+      "riskEventStatus": "remediated",
+      "riskLevel": "medium",
+      "riskType": "AnonymousIpRiskEvent",
+      "userDisplayName": "Jon Doe",
+      "userId": "6a56d0b2-3c51-7c5e-bc1a-1ccdb3bd9c71",
       "userPrincipalName": "jon@contoso.com"
     }
   ]
