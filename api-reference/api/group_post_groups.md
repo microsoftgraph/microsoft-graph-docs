@@ -7,13 +7,13 @@ Use this API to create a new group as specified in the request body. You can cre
 
 At a minimum, you must specify the properties required for the type of group you're creating. This includes:
 
-| Type of group | **groupTypes** property | **securityEnabled** property |
-|:--------------|:------------------------|:-----------------------------|
-| Office 365 | "Unified" | false |
-| Dynamic | "DynamicMembership" | false |
-| Security | Do not set. | true |
+| Type of group | **groupTypes** property | **securityEnabled** property | **mailEnabled** property | 
+|:--------------|:------------------------|:-----------------------------|:-------------------------| 
+| Office 365 | "Unified" | false | true |
+| Dynamic | "DynamicMembership" | true | false |
+| Security | Do not set. | true | false |
 
-Specify other writable properties as necessary, such as **mailEnabled** for mail-enabled groups. For more information, see the properties of the [group](../resources/group.md) resource.
+For more information, see the properties of the [group](../resources/group.md) resource.
 ### Prerequisites
 The following **scope** is required to execute this API: _Group.ReadWrite.All_ 
 ### HTTP request
@@ -57,7 +57,7 @@ Content-length: 244
   "description": "description-value",
   "displayName": "displayName-value",
   "groupTypes": [
-    "groupTypes-value"
+    "Unified"
   ],
   "mailEnabled": true,
   "mailNickname": "mailNickname-value",
@@ -73,7 +73,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.group"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 244
 
@@ -81,7 +81,7 @@ Content-length: 244
   "description": "description-value",
   "displayName": "displayName-value",
   "groupTypes": [
-    "groupTypes-value"
+    "Unified"
   ],
   "mail": "mail-value",
   "mailEnabled": true,
