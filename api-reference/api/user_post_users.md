@@ -43,29 +43,16 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/users
 Content-type: application/json
-Content-length: 551
 
 {
   "accountEnabled": true,
-  "assignedLicenses": [
-    {
-      "disabledPlans": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+  "displayName": "displayName-value",
+  "mailNickname": "mailNickname-value",
+  "userPrincipalName": "upn-value@tenant-value@onmicrosoft.com",
+  "passwordProfile" : {
+    "forceChangePasswordNextSignIn": true,
+    "password": "password-value"
+  }
 }
 ```
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
@@ -79,29 +66,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 551
 
 {
-  "accountEnabled": true,
-  "assignedLicenses": [
-    {
-      "disabledPlans": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+    "id": "id-value",
+    "businessPhones": [],
+    "displayName": "displayName-value",
+    "givenName": null,
+    "jobTitle": null,
+    "mail": null,
+    "mobilePhone": null,
+    "officeLocation": null,
+    "preferredLanguage": null,
+    "surname": null,
+    "userPrincipalName": "upn-value@tenant-value@onmicrosoft.com"
 }
 ```
 
