@@ -161,8 +161,58 @@ Note that we have an access token in this line `String accessToken = tokenRespon
 ## Call the Microsoft Graph
 If you're using the Microsoft Graph SDK, read on. If you're using REST, jump to the [Using the REST API](#using-the-rest-api) section.
 
-### Using the SDK
+### Using the Microsoft Graph SDK
+The [Microsoft Graph SDK for Android ](https://github.com/microsoftgraph/msgraph-sdk-android) provides classes that builds requests and process results from the Microsoft Graph API. Follow these steps to use the Microsoft Graph SDK.
 
+1. Add internet permissions to your app. Open the **AndroidManifest** file and add the following child to the manifest element.
+    ```xml
+    <uses-permission android:name="android.permission.INTERNET" />
+    ```
+
+2. Add dependencies to the Microsoft Graph SDK and GSON.
+   ```gradle
+    compile 'com.microsoft.graph:msgraph-sdk-android:1.0.0'
+    compile 'com.google.code.gson:gson:2.4'
+   ```
+   
+3. Replace the line `String accessToken = tokenResponse.accessToken;` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
+    ```java
+    final String accessToken = tokenResponse.accessToken;
+    final IClientConfig clientConfig = DefaultClientConfig.createWithAuthenticationProvider(new IAuthenticationProvider() {
+        @Override
+        public void authenticateRequest(IHttpRequest request) {
+            request.addHeader("Authorization", "Bearer " + accessToken);
+        }
+    });
+
+    final IGraphServiceClient graphServiceClient = new GraphServiceClient
+        .Builder()
+        .fromConfig(clientConfig)
+        .buildClient();
+
+    final Message message = new Message();
+    EmailAddress emailAddress = new EmailAddress();
+    emailAddress.address = "<YOUR_EMAIL_ADDRESS>";
+    Recipient recipient = new Recipient();
+    recipient.emailAddress = emailAddress;
+    message.toRecipients = Collections.singletonList(recipient);
+    ItemBody itemBody = new ItemBody();
+    itemBody.content = "";
+    itemBody.contentType = BodyType.text;
+    message.body = itemBody;
+    message.subject = "Sent using the Microsoft Graph SDK";
+
+    AsyncTask.execute(new Runnable() {
+        @Override
+        public void run() {
+            graphServiceClient
+                .getMe()
+                .getSendMail(message, false)
+                .buildRequest()
+                .post();
+        }
+    });
+    ```
 
 ### Using the REST API
 
