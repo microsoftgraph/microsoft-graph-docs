@@ -49,9 +49,114 @@ Start a new project in Android Studio. You can leave the default values for most
 This provides us with an Android project with an activity and a button that we can use to authenticate the user.
 
 ## Authenticate the user and get an access token
+We'll use an OAuth library to simplify the authentication process. [OpenID](http://openid.net) provides [AppAuth for Android](https://github.com/openid/AppAuth-Android), a library that we can use in this project.
 
+### Add the dependency to app/build.gradle
 
-Now you're ready to add code to call the Microsoft Graph. 
+Open the `build.gradle` file in the app module and include the following dependency:
+
+```gradle
+compile 'net.openid:appauth:0.3.0'
+```
+
+### Start the authentication flow
+
+1. Open the **MainActivity** file and declare an **AuthorizationService** object in the **onCreate** method.
+    ```java
+    final AuthorizationService authorizationService =
+        new AuthorizationService(this);
+    ```
+    
+2. Locate the event handler for the click event of the *FloatingActionButton*. Replace the **onClick** method with the following code. Insert the **application ID** of your app in the placeholder marked with **\<YOUR_APPLICATION_ID\>**.
+    ```java
+    @Override
+    public void onClick(View view) {
+        Uri authorizationEndpoint =
+            Uri.parse("https://login.microsoftonline.com/common/oauth2/v2.0/authorize");
+        Uri tokenEndpoint =
+            Uri.parse("https://login.microsoftonline.com/common/oauth2/v2.0/token");
+        AuthorizationServiceConfiguration config =
+            new AuthorizationServiceConfiguration(
+                    authorizationEndpoint,
+                    tokenEndpoint,null);
+
+        List<String> scopes = new ArrayList<>(
+            Arrays.asList("openid profile mail.send".split(" ")));
+
+        AuthorizationRequest authorizationRequest = new AuthorizationRequest.Builder(
+            config,
+            "<YOUR_APPLICATION_ID>",
+            ResponseTypeValues.CODE,
+            Uri.parse("https://login.microsoftonline.com/common/oauth2/nativeclient"))
+            .setScopes(scopes)
+            .build();
+
+        Intent intent = new Intent(view.getContext(), MainActivity.class);
+
+        PendingIntent redirectIntent =
+            PendingIntent.getActivity(
+                    view.getContext(),
+                    authorizationRequest.hashCode(),
+                    intent, 0);
+
+        authorizationService.performAuthorizationRequest(
+            authorizationRequest,
+            redirectIntent);
+    }
+    ```
+    
+At this point, you should have an Android app with a button. If you press the button, the app presents an authentication page using the device's browser. The next step is to handle the code that the authorization server sends to the redirect URI and exchange it for an access token.
+
+### Exchange the authorization code for an access token
+
+We need to make our app ready to handle the authorization server response, which contains a code that we can exchange for an access token.
+
+1. We need to tell the Android system that the app can handle requests to *https://login.microsoftonline.com/common/oauth2/nativeclient*. To do this open the **AndroidManifest** file and add the following activity element.
+    ```xml
+    <activity android:name="net.openid.appauth.RedirectUriReceiverActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+            <data android:host="login.microsoftonline.com"/>
+            <data android:path="/common/oauth2/nativeclient"/>
+        </intent-filter>
+    </activity>
+    ```
+
+2. The activity will be invoked when the authorization server sends a response. We can request an access token with the response from the authorization server. Go back to your **MainActivity** and append the following code to the **onCreate** method.
+    ```java
+    Bundle extras = getIntent().getExtras();
+    if (extras != null) {
+        AuthorizationResponse authorizationResponse = AuthorizationResponse.fromIntent(getIntent());
+        AuthorizationException authorizationException = AuthorizationException.fromIntent(getIntent());
+        final AuthState authState = new AuthState(authorizationResponse, authorizationException);
+
+        if (authorizationResponse != null) {
+            HashMap<String, String> additionalParams = new HashMap<>();
+            TokenRequest tokenRequest = authorizationResponse.createTokenExchangeRequest(additionalParams);
+
+            authorizationService.performTokenRequest(
+                tokenRequest,
+                new AuthorizationService.TokenResponseCallback() {
+                    @Override
+                    public void onTokenRequestCompleted(
+                            @Nullable TokenResponse tokenResponse,
+                            @Nullable AuthorizationException ex) {
+                        authState.update(tokenResponse, ex);
+                        if (tokenResponse != null) {
+                            String accessToken = tokenResponse.accessToken;
+                        }
+                    }
+                });
+        } else {
+            Log.i("MainActivity", "Authorization failed: " + authorizationException);
+        }
+    }
+    ```
+
+Note that we have an access token in this line `String accessToken = tokenResponse.accessToken;`. Now you're ready to add code to call the Microsoft Graph. 
 
 ## Call the Microsoft Graph
 If you're using the Microsoft Graph SDK, read on. If you're using REST, jump to the [Using the REST API](#using-the-rest-api) section.
