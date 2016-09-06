@@ -38,8 +38,15 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 6. Choose **Save**.
 
 
-### Configure the project
+## Configure the project
 
+Start a new project in Android Studio. You can leave the default values for most of the wizard, just make sure to choose the following options:
+
+* Target Android Devices - **Phone and Tablet**
+    * Minimum SDK - **API 16: Android 4.1 (Jelly Bean)**
+* Add an Activity to Mobile - **Basic Activity**
+ 
+This provides us with an Android project with an activity and a button that we can use to authenticate the user.
 
 ## Authenticate the user and get an access token
 
