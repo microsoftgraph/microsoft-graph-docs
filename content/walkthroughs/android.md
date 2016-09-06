@@ -178,7 +178,8 @@ The [Microsoft Graph SDK for Android ](https://github.com/microsoftgraph/msgraph
 3. Replace the line `String accessToken = tokenResponse.accessToken;` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
     ```java
     final String accessToken = tokenResponse.accessToken;
-    final IClientConfig clientConfig = DefaultClientConfig.createWithAuthenticationProvider(new IAuthenticationProvider() {
+    final IClientConfig clientConfig = 
+            DefaultClientConfig.createWithAuthenticationProvider(new IAuthenticationProvider() {
         @Override
         public void authenticateRequest(IHttpRequest request) {
             request.addHeader("Authorization", "Bearer " + accessToken);
