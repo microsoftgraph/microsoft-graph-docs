@@ -6,7 +6,6 @@ This article shows how to perform specific tasks that you need to follow to use 
 
 ![Sign in page for Microsoft accounts on Android](images/AndroidConnect.png)
 
-
 **Don't feel like building an app?** Get up and running fast downloading the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) that this walkthrough is based on.
 
 
