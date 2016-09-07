@@ -2,9 +2,9 @@
 
 This article describes the tasks required to get an access token from the v2 authentication endpoint and call the Microsoft Graph. It walks you through building the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article also describes how to access the Microsoft Graph by using either the [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-sdk-android) or raw REST calls.
 
-This is the app you'll create. 
+This article shows how to perform specific tasks that you need to follow to use the Microsoft Graph in your app for Android. For example, you need to show the Microsoft sign in page to your users. Here's a screenshot of the sign in page for Microsoft accounts.
 
-![Connect Sample for Android screenshot](images/AndroidConnect.png)
+![Sign in page for Microsoft accounts on Android]](images/AndroidConnect.png)
 
 
 **Don't feel like building an app?** Get up and running fast downloading the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) that this walkthrough is based on.
