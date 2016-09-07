@@ -1,6 +1,7 @@
 # policy resource type
 
-Represents an Azure AD policy. Policies are custom rules that can be enforced on applications, service principals, groups, or the entire organization they are assigned to. There is currently only one type of policy available:
+Represents an Azure AD policy. Policies are custom rules that can be enforced on applications, service principals, groups, or the entire organization they are assigned to. Currently only one type of policy is available:
+
 - Token Lifetime Policy: specifies the lifetime duration of tokens issued for applications and service principals
 
 This policy is described in further detail below.
