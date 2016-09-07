@@ -236,15 +236,15 @@ The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple 
     String url ="https://graph.microsoft.com/v1.0/me/sendMail";
     final String body = "{" +
         "  Message: {" +
-        "    subject: \"Sent using the Microsoft Graph REST API\"," +
+        "    subject: 'Sent using the Microsoft Graph REST API'," +
         "    body: {" +
-        "      contentType: \"text\"," +
-        "      content: \"This is the email body\"" +
+        "      contentType: 'text'," +
+        "      content: 'This is the email body'" +
         "    }," +
         "    toRecipients: [" +
         "      {" +
         "        emailAddress: {" +
-        "          address: \"\<YOUR_EMAIL_ADDRESS\>\"" +
+        "          address: 'ricardol@microsoft.com'" +
         "        }" +
         "      }" +
         "    ]}" +
