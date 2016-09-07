@@ -159,10 +159,10 @@ We need to make our app ready to handle the authorization server response, which
 Note that we have an access token in this line `String accessToken = tokenResponse.accessToken;`. Now you're ready to add code to call the Microsoft Graph. 
 
 ## Call the Microsoft Graph
-If you're using the Microsoft Graph SDK, read on. If you're using REST, jump to the [Using the REST API](#using-the-rest-api) section.
+If you're using the Microsoft Graph SDK, read on. If you're using REST, jump to the [Using the Microsoft Graph REST API](#using-the-microsoft-graph-rest-api) section.
 
 ### Using the Microsoft Graph SDK
-The [Microsoft Graph SDK for Android ](https://github.com/microsoftgraph/msgraph-sdk-android) provides classes that builds requests and process results from the Microsoft Graph API. Follow these steps to use the Microsoft Graph SDK.
+The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-sdk-android) provides classes that builds requests and process results from the Microsoft Graph API. Follow these steps to use the Microsoft Graph SDK.
 
 1. Add internet permissions to your app. Open the **AndroidManifest** file and add the following child to the manifest element.
     ```xml
@@ -215,8 +215,79 @@ The [Microsoft Graph SDK for Android ](https://github.com/microsoftgraph/msgraph
     });
     ```
 
-### Using the REST API
+### Using the Microsoft Graph REST API
+The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint. Follow these steps to use the REST API.
 
+1. Add internet permissions to your app. Open the **AndroidManifest** file and add the following child to the manifest element.
+    ```xml
+    <uses-permission android:name="android.permission.INTERNET" />
+    ```
+
+2. Add a dependency to the Volley HTTP library.
+   ```gradle
+    compile 'com.android.volley:volley:1.0.0'
+   ```
+   
+3. Replace the line `String accessToken = tokenResponse.accessToken;` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
+    ```java
+    final String accessToken = tokenResponse.accessToken;
+
+    final RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
+    String url ="https://graph.microsoft.com/v1.0/me/sendMail";
+    final String body = "{" +
+            "  \"Message\": {" +
+            "    \"subject\": \"Sent using the Microsoft Graph REST API\"," +
+            "    \"body\": {" +
+            "      \"contentType\": \"text\"," +
+            "      \"content\": \"\"" +
+            "    }," +
+            "    \"toRecipients\": [" +
+            "      {" +
+            "        \"emailAddress\": {" +
+            "          \"address\": \"<YOUR_EMAIL_ADDRESS>\"" +
+            "        }" +
+            "      }" +
+            "    ]}" +
+            "}";
+
+    final StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.d("Response", response);
+            }
+        },
+        new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("ERROR","error => " + error.getMessage());
+            }
+        }
+    ) {
+        @Override
+        public Map<String, String> getHeaders() throws AuthFailureError {
+            Map<String,String> params = new HashMap<>();
+            params.put("Authorization", "Bearer " + accessToken);
+            params.put("Content-Length", String.valueOf(body.getBytes().length));
+            return params;
+        }
+        @Override
+        public String getBodyContentType() {
+            return "application/json";
+        }
+        @Override
+        public byte[] getBody() throws AuthFailureError {
+            return body.getBytes();
+        }
+    };
+
+    AsyncTask.execute(new Runnable() {
+        @Override
+        public void run() {
+            queue.add(stringRequest);
+        }
+    });
+    ```
 
 ## Run the app
 
