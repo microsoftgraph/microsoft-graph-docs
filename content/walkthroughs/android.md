@@ -198,7 +198,7 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
     recipient.emailAddress = emailAddress;
     message.toRecipients = Collections.singletonList(recipient);
     ItemBody itemBody = new ItemBody();
-    itemBody.content = "";
+    itemBody.content = "This is the email body";
     itemBody.contentType = BodyType.text;
     message.body = itemBody;
     message.subject = "Sent using the Microsoft Graph SDK";
@@ -235,20 +235,20 @@ The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple 
     final RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
     String url ="https://graph.microsoft.com/v1.0/me/sendMail";
     final String body = "{" +
-            "  \"Message\": {" +
-            "    \"subject\": \"Sent using the Microsoft Graph REST API\"," +
-            "    \"body\": {" +
-            "      \"contentType\": \"text\"," +
-            "      \"content\": \"\"" +
-            "    }," +
-            "    \"toRecipients\": [" +
-            "      {" +
-            "        \"emailAddress\": {" +
-            "          \"address\": \"<YOUR_EMAIL_ADDRESS>\"" +
-            "        }" +
-            "      }" +
-            "    ]}" +
-            "}";
+        "  Message: {" +
+        "    subject: \"Sent using the Microsoft Graph REST API\"," +
+        "    body: {" +
+        "      contentType: \"text\"," +
+        "      content: \"This is the email body\"" +
+        "    }," +
+        "    toRecipients: [" +
+        "      {" +
+        "        emailAddress: {" +
+        "          address: \"\<YOUR_EMAIL_ADDRESS\>\"" +
+        "        }" +
+        "      }" +
+        "    ]}" +
+        "}";
 
     final StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
         new Response.Listener<String>() {
