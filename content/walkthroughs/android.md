@@ -244,7 +244,7 @@ The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple 
         "    toRecipients: [" +
         "      {" +
         "        emailAddress: {" +
-        "          address: 'ricardol@microsoft.com'" +
+        "          address: '<YOUR_EMAIL_ADDRESS>'" +
         "        }" +
         "      }" +
         "    ]}" +
