@@ -290,7 +290,16 @@ The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple 
     ```
 
 ## Run the app
+You're ready to try your Android app.
 
+1. Start your Android emulator or connect your physical device to your computer.
+2. In Android Studio, press Shift + F10 to run your app.
+3. Choose your Android emulator or device from the deployment dialog.
+4. Tap the Floating Action Button on the main activity.
+5. Sign in with your personal or work or school account and grant the requested permissions.
+6. In the app selection dialog, tap your app to continue.
+
+Check the inbox of the email address that you configured in [Call the Microsoft Graph](#call-the-microsoft-graph) section. You should have an email from the account that you used to sign in to the app.
 
 ## Next steps
 - Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
@@ -298,3 +307,7 @@ The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple 
 
 
 ## See also
+* [Overview of Microsoft Graph](http://graph.microsoft.io/docs)
+* [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-sdk-android) 
+* [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+* [Azure AD v2.0 tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
