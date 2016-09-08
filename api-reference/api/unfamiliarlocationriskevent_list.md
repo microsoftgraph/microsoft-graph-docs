@@ -2,7 +2,7 @@
 
 Retrieve a list of unfamiliarlocationriskevent objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *IdentityRiskEvent.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -44,17 +44,17 @@ Content-length: 290
 {
   "value": [
     {
-      "closedDateTime": "2016-01-29T20:03:57.7872426Z", 
-      "createdDateTime": "2016-01-29T00:01:49.126468Z", 
-      "id": "700b6476-8138-4c14-4962-c43614958301-8dce9c6b-21f1-2e3b-2c3b-5164f751e7ad-4e5591fd-2ac1-4e9d-96a9-aca8339e2604", 
-      "ipAddress": "176.10.104.240", 
-      "location": "Bern, CH", 
-      "riskEventDateTime": "2016-01-29T00:00:56.2255665Z", 
-      "riskEventStatus": "remediated", 
-      "riskLevel": "medium", 
-      "riskType": "UnfamiliarLocationRiskEvent", 
-      "userDisplayName": "Jon Doe", 
-      "userId": "8dce9c6b-21f1-2e3b-2c3b-5164f751e7ad", 
+      "closedDateTime": "2016-01-29T20:03:57.7872426Z",
+      "createdDateTime": "2016-01-29T00:01:49.126468Z",
+      "id": "700b6476-8138-4c14-4962-c43614958301-8dce9c6b-21f1-2e3b-2c3b-5164f751e7ad-4e5591fd-2ac1-4e9d-96a9-aca8339e2604",
+      "ipAddress": "176.10.104.240",
+      "location": "Bern, CH",
+      "riskEventDateTime": "2016-01-29T00:00:56.2255665Z",
+      "riskEventStatus": "remediated",
+      "riskLevel": "medium",
+      "riskType": "UnfamiliarLocationRiskEvent",
+      "userDisplayName": "Jon Doe",
+      "userId": "8dce9c6b-21f1-2e3b-2c3b-5164f751e7ad",
       "userPrincipalName": "jon@contoso.com"
     }
   ]

@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of an impossibletravelriskevent object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *IdentityRiskEvent.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -41,25 +41,25 @@ Content-type: application/json
 Content-length: 260
 
 {
-  "@odata.type": "#microsoft.graph.impossibleTravelRiskEvent", 
-  "closedDateTime": "2016-01-29T20:03:57.7872426Z", 
-  "createdDateTime": "2016-01-29T00:01:49.126468Z", 
-  "id": "22e65c1f-909a-42b5-c0d2-075f30e27887-0bfdc7a8-6a16-c33e-7de9-a60a28ae533b-15475553-dbc1-8879-5079-23b1edd25bab", 
-  "ipAddress": "176.10.104.240", 
+  "@odata.type": "#microsoft.graph.impossibleTravelRiskEvent",
+  "closedDateTime": "2016-01-29T20:03:57.7872426Z",
+  "createdDateTime": "2016-01-29T00:01:49.126468Z",
+  "id": "22e65c1f-909a-42b5-c0d2-075f30e27887-0bfdc7a8-6a16-c33e-7de9-a60a28ae533b-15475553-dbc1-8879-5079-23b1edd25bab",
+  "ipAddress": "176.10.104.240",
   "isAtypicalLocation": true,
-  "location": "Bern, CH", 
+  "location": "Bern, CH",
   "previousIPAddress": "95.31.18.119",
   "previousLocation": "Moskva, Russia, RU",
   "previousSigninDateTime": "2016-01-29T00:00:55.3859274Z",
-  "riskEventDateTime": "2016-01-29T00:00:56.2255665Z", 
-  "riskEventStatus": "remediated", 
-  "riskLevel": "medium", 
+  "riskEventDateTime": "2016-01-29T00:00:56.2255665Z",
+  "riskEventStatus": "remediated",
+  "riskLevel": "medium",
   "riskType": "ImpossibleTravelRiskEvent",
   "userAgent": "Firefox",
-  "userDisplayName": "Jon Doe", 
-  "userId": "0bfdc7a8-6a16-c33e-7de9-a60a28ae533b", 
+  "userDisplayName": "Jon Doe",
+  "userId": "0bfdc7a8-6a16-c33e-7de9-a60a28ae533b",
   "userPrincipalName": "jon@contoso.com"
-} 
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
