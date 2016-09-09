@@ -14,7 +14,7 @@ This article shows how to perform specific tasks that you need to follow to use 
 To follow along with this walkthrough, you'll need: 
 
 - A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](http://dev.office.com/devprogram)
-- PHP v5.6.4 or greater
+- PHP version 5.5.9 or greater
 - [Composer](https://getcomposer.org/)
 
 
@@ -55,12 +55,10 @@ We'll use an OAuth library to simplify the authentication process. [The PHP Leag
 
 ### Add the dependency to composer
 
-Open the `composer.json` file and include the following dependency:
+Open the `composer.json` file and include the following dependency in the **require** section:
 
 ```json
-"require": {
     "league/oauth2-client": "^1.4"
-}
 ```
 
 ### Start the authentication flow
@@ -294,20 +292,21 @@ The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple 
     ```
 
 ## Run the app
-You're ready to try your Android app.
+You're ready to try your PHP app.
 
-1. Start your Android emulator or connect your physical device to your computer.
-2. In Android Studio, press Shift + F10 to run your app.
-3. Choose your Android emulator or device from the deployment dialog.
-4. Tap the Floating Action Button on the main activity.
-5. Sign in with your personal or work or school account and grant the requested permissions.
-6. In the app selection dialog, tap your app to continue.
+1. In your shell type the following command:
+    ```bash
+    php -S 0.0.0.0:8000 -t public
+    ```
+    
+2. Navigate to http://localhost:8000 in your web browser.
+3. Choose **Sign in to Microsoft**.
+4. Sign in with your personal or work or school account and grant the requested permissions.
 
 Check the inbox of the email address that you configured in [Call the Microsoft Graph](#call-the-microsoft-graph) section. You should have an email from the account that you used to sign in to the app.
 
 ## Next steps
 - Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
-- Find examples of common operations in the [Snippets Sample for Android](https://github.com/microsoftgraph/android-java-snippets-sample), or explore our other [Android samples](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=android) on GitHub.
 
 
 ## See also
