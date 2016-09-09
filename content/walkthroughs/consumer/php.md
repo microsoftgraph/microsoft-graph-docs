@@ -1,151 +1,316 @@
-# Call Microsoft Graph in a PHP app 
+# Get started with the Microsoft Graph in a PHP app
 
-In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph API. We use code from the [Office 365 PHP Connect sample using Microsoft Graph](https://github.com/microsoftgraph/php-connect-rest-sample) to explain the main concepts that you have to implement in your app.
+This article describes the tasks required to get an access token from the v2 authentication endpoint and call the Microsoft Graph. It walks you through building the [Connect Sample for PHP](https://github.com/microsoftgraph/php-connect-rest-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article also describes how to access the Microsoft Graph by using REST calls.
 
-![Office 365 PHP Connect sample screenshot](./images/web-screenshot.png)
+This article shows how to perform specific tasks that you need to follow to use the Microsoft Graph in your PHP app. For example, you need to show the Microsoft sign in page to your users. Here's a screenshot of the sign in page for Microsoft accounts.
 
-## Overview
+![Sign in page for Microsoft accounts](images/MicrosoftSignIn.png)
 
-To call the Microsoft Graph API, your PHP app must complete the following tasks.
+**Don't feel like building an app?** Get up and running fast downloading the [Connect Sample for PHP](https://github.com/microsoftgraph/php-connect-rest-sample) that this walkthrough is based on.
 
-1. Register the application in Azure Active Directory
-2. Redirect the browser to the sign-in page
-3. Receive an authorization code in your reply URL page
-4. Request an access token from the token endpoint
-5. Use the access token in a request to the Microsoft Graph API
 
-<!--<a name="register"/>-->
-## Register the application in Azure Active Directory
+## Prerequisites
 
-Before you can start working with Office 365, you need to register your application and set permissions to use Microsoft Graph services.
-With just a few clicks, you can register your application to access a user's work or school account using the [Application Registration Tool](https://dev.office.com/app-registration). To manage it you will need to go to the [Microsoft Azure Management portal](https://manage.windowsazure.com)
+To follow along with this walkthrough, you'll need: 
 
-Alternatively, see the section [Register your web server app with the Azure Management Portal](https://msdn.microsoft.com/en-us/office/office365/HowTo/add-common-consent-manually#bk_RegisterServerApp) for instructions on how to manually register the app, keep in mind the following details:
+- A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](http://dev.office.com/devprogram)
+- PHP v5.6.4 or greater
+- [Composer](https://getcomposer.org/)
 
-* Specify a page in your PHP app as the **Sign-on URL** in step 6. In the case of the Connect sample, this page is [`Callback.php`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/app/callback.php).
-* [Configure the **Delegated permissions**](https://github.com/microsoftgraph/php-connect-rest-sample/wiki/Grant-permissions-to-the-Connect-application-in-Azure) that your app requires. The Connect sample requires **Send mail as signed-in user** permission.
 
-Take note of the following values in the **Configure** page of your Azure application.
+## Register the application
+Register an app on the Microsoft App Registration Portal. This generates the app ID and password that you'll use to configure the app.
 
-* Client ID
-* A valid key
-* A reply URL
+1. Sign into the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
 
-You need these values as parameters in the OAuth flow in your app.
+2. Choose **Add an app**.
 
-<!--<a name="redirect"/>-->
-## Redirect the browser to the sign-in page
+3. Enter a name for the app, and choose **Create application**. 
+	
+   The registration page displays, listing the properties of your app.
 
-Your app needs to redirect the browser to the sign-in page to get an authorization code and continue the OAuth flow.
+4. Choose **Generate New Password**.
 
-In the Connect sample, the code that redirects the browser is in the [`AuthenticationManager.connect`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/src/AuthenticationManager.php#L41) function.
+5. Copy the application ID and password.
 
-```php
-// Redirect the browser to the authorization endpoint. Auth endpoint is
-// https://login.microsoftonline.com/common/oauth2/authorize
-$redirect = Constants::AUTHORITY_URL . Constants::AUTHORIZE_ENDPOINT . 
-            '?response_type=code' . 
-            '&client_id=' . urlencode(Constants::CLIENT_ID) . 
-            '&redirect_uri=' . urlencode(Constants::REDIRECT_URI);
-header("Location: {$redirect}");
-exit();
+6. Choose **Add Platform** and **Web**.
+
+7. In the **Redirect URI** field, type `http://localhost:8000/oauth.php`.
+
+8. Choose **Save**.
+
+
+## Configure the project
+
+Start a new project using composer. To create a new PHP project using the Laravel framework, type the following command:
+
+```bash
+composer create-project --prefer-dist laravel/laravel getstarted
 ```
+ 
+This creates a **getstarted** folder that we can use for this project.
 
-> **Note:** <br />
-> You must send the **Location** header before writing any output to the page.
+## Authenticate the user and get an access token
+We'll use an OAuth library to simplify the authentication process. [The PHP League](http://thephpleague.com/) provides an [OAuth client library](https://github.com/thephpleague/oauth2-client) that we can use in this project.
 
-<!--<a name="authcode"/>-->
-## Receive an authorization code in your reply URL page
+### Add the dependency to composer
 
-After the user signs-in, the flow returns the browser to the reply URL in your app. Azure appends an authorization code to the query string. The Connect sample uses the [`Callback.php`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/app/callback.php) page for this purpose.
+Open the `composer.json` file and include the following dependency:
 
-The authorization code is provided in the `code` query string variable. The Connect sample saves the code to a session variable to use it later.
-
-```php
-if (isset($_GET['code'])) {
-    $_SESSION['code'] =  $_GET['code'];
+```json
+"require": {
+    "league/oauth2-client": "^1.4"
 }
 ```
 
-<!--<a name="accesstoken"/>-->
-## Request an access token from the token endpoint
+### Start the authentication flow
 
-Once you have the authorization code, you can use it along the client ID, key, and reply URL values that you got from Azure AD to request an access token. 
+1. Open the **MainActivity** file and declare an **AuthorizationService** object in the **onCreate** method.
+    ```java
+    final AuthorizationService authorizationService =
+        new AuthorizationService(this);
+    ```
+    
+2. Locate the event handler for the click event of the *FloatingActionButton*. Replace the **onClick** method with the following code. Insert the **application ID** of your app in the placeholder marked with **\<YOUR_APPLICATION_ID\>**.
+    ```java
+    @Override
+    public void onClick(View view) {
+        Uri authorizationEndpoint =
+            Uri.parse("https://login.microsoftonline.com/common/oauth2/v2.0/authorize");
+        Uri tokenEndpoint =
+            Uri.parse("https://login.microsoftonline.com/common/oauth2/v2.0/token");
+        AuthorizationServiceConfiguration config =
+            new AuthorizationServiceConfiguration(
+                    authorizationEndpoint,
+                    tokenEndpoint,null);
 
-> **Note:** <br />
-> The request must also specify a resource that we are trying to consume. In the case of Microsoft Graph API, the resource value is `https://graph.microsoft.com`.
+        List<String> scopes = new ArrayList<>(
+            Arrays.asList("openid profile mail.send".split(" ")));
 
-The Connect sample requests a token using the code in the [`AuthenticationManager.acquireToken`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/src/AuthenticationManager.php#L62) function. Here is the most relevant code.
+        AuthorizationRequest authorizationRequest = new AuthorizationRequest.Builder(
+            config,
+            "<YOUR_APPLICATION_ID>",
+            ResponseTypeValues.CODE,
+            Uri.parse("https://login.microsoftonline.com/common/oauth2/nativeclient"))
+            .setScopes(scopes)
+            .build();
 
-```php
-$tokenEndpoint = Constants::AUTHORITY_URL . Constants::TOKEN_ENDPOINT;
+        Intent intent = new Intent(view.getContext(), MainActivity.class);
 
-// Send a POST request to the token endpoint to retrieve tokens.
-// Token endpoint is:
-// https://login.microsoftonline.com/common/oauth2/token
-$response = RequestManager::sendPostRequest(
-    $tokenEndpoint, 
-    array(),
-    array(
-        'client_id' => Constants::CLIENT_ID,
-        'client_secret' => Constants::CLIENT_SECRET,
-        'code' => $_SESSION['code'],
-        'grant_type' => 'authorization_code',
-        'redirect_uri' => Constants::REDIRECT_URI,
-        'resource' => Constants::RESOURCE_ID
-    )
+        PendingIntent redirectIntent =
+            PendingIntent.getActivity(
+                    view.getContext(),
+                    authorizationRequest.hashCode(),
+                    intent, 0);
 
-// Store the raw response in JSON format.
-$jsonResponse = json_decode($response, true);
+        authorizationService.performAuthorizationRequest(
+            authorizationRequest,
+            redirectIntent);
+    }
+    ```
+    
+At this point, you should have an Android app with a button. If you press the button, the app presents an authentication page using the device's browser. The next step is to handle the code that the authorization server sends to the redirect URI and exchange it for an access token.
 
-// The access token response has the following parameters:
-// access_token - The requested access token.
-// expires_in - How long the access token is valid.
-// expires_on - The time when the access token expires.
-// id_token - An unsigned JSON Web Token (JWT).
-// refresh_token - An OAuth 2.0 refresh token.
-// resource - The App ID URI of the web API (secured resource).
-// scope - Impersonation permissions granted to the client application.
-// token_type - Indicates the token type value.
-foreach ($jsonResponse as $key=>$value) {
-    $_SESSION[$key] = $value;
-}
-```
+### Exchange the authorization code for an access token
 
-> **Note:** <br />
-> The response provides more information than just the access token, for example, your app can get a refresh token to request new access tokens without having the user to explicitly sign-in.
+We need to make our app ready to handle the authorization server response, which contains a code that we can exchange for an access token.
 
-Your PHP app can now use the session variable `access_token` to issue authenticated requests to the Microsoft Graph API.
+1. We need to tell the Android system that the app can handle requests to *https://login.microsoftonline.com/common/oauth2/nativeclient*. To do this open the **AndroidManifest** file and add the following activity element.
+    ```xml
+    <activity android:name="net.openid.appauth.RedirectUriReceiverActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+            <data android:host="login.microsoftonline.com"/>
+            <data android:path="/common/oauth2/nativeclient"/>
+        </intent-filter>
+    </activity>
+    ```
 
-<!--<a name="request"/>-->
-## Use the access token in a request to the Microsoft Graph API
+2. The activity will be invoked when the authorization server sends a response. We can request an access token with the response from the authorization server. Go back to your **MainActivity** and append the following code to the **onCreate** method.
+    ```java
+    Bundle extras = getIntent().getExtras();
+    if (extras != null) {
+        AuthorizationResponse authorizationResponse = AuthorizationResponse.fromIntent(getIntent());
+        AuthorizationException authorizationException = AuthorizationException.fromIntent(getIntent());
+        final AuthState authState = new AuthState(authorizationResponse, authorizationException);
 
-With an access token, your app can make authenticated requests to the Microsoft Graph API. Your app must provide the access token in the **Authorization** header of each request.
+        if (authorizationResponse != null) {
+            HashMap<String, String> additionalParams = new HashMap<>();
+            TokenRequest tokenRequest = authorizationResponse.createTokenExchangeRequest(additionalParams);
 
-The Connect sample sends an email using the **sendMail** endpoint in the Microsoft Graph API. The code is in the [`MailManager.sendWelcomeMail`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/src/MailManager.php#L40) function. This is the code that shows how to send the access code in the Authorization header.
+            authorizationService.performTokenRequest(
+                tokenRequest,
+                new AuthorizationService.TokenResponseCallback() {
+                    @Override
+                    public void onTokenRequestCompleted(
+                            @Nullable TokenResponse tokenResponse,
+                            @Nullable AuthorizationException ex) {
+                        authState.update(tokenResponse, ex);
+                        if (tokenResponse != null) {
+                            String accessToken = tokenResponse.accessToken;
+                        }
+                    }
+                });
+        } else {
+            Log.i("MainActivity", "Authorization failed: " + authorizationException);
+        }
+    }
+    ```
 
-```php
-// Send the email request to the sendmail endpoint, 
-// which is in the following URI:
-// https://graph.microsoft.com/v1.0/me/microsoft.graph.sendMail
-// Note that the access token is attached in the Authorization header
-RequestManager::sendPostRequest(
-    Constants::RESOURCE_ID . Constants::SENDMAIL_ENDPOINT,
-    array(
-        'Authorization: Bearer ' . $_SESSION['access_token'],
-        'Content-Type: application/json;' . 
-                      'odata.metadata=minimal;' .
-                      'odata.streaming=true'
-    ),
-    $email
-);
-```
+Note that we have an access token in this line `String accessToken = tokenResponse.accessToken;`. Now you're ready to add code to call the Microsoft Graph. 
 
-> **Note:** <br />
-> The request must also send a **Content-Type** header with a value accepted by the Microsoft Graph API, for example, `application/json;odata.metadata=minimal;odata.streaming=true`.
+## Call the Microsoft Graph
+If you're using the Microsoft Graph SDK, read on. If you're using REST, jump to the [Using the Microsoft Graph REST API](#using-the-microsoft-graph-rest-api) section.
 
-The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the API reference to explore what else you can accomplish with the Microsoft Graph API.
+### Using the Microsoft Graph SDK
+The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-sdk-android) provides classes that builds requests and process results from the Microsoft Graph API. Follow these steps to use the Microsoft Graph SDK.
 
-<!--## Additional resources
+1. Add internet permissions to your app. Open the **AndroidManifest** file and add the following child to the manifest element.
+    ```xml
+    <uses-permission android:name="android.permission.INTERNET" />
+    ```
 
--  [Office 365 PHP Connect sample using Microsoft Graph API](https://github.com/OfficeDev/O365-PHP-Unified-API-Connect)-->
+2. Add dependencies to the Microsoft Graph SDK and GSON.
+   ```gradle
+    compile 'com.microsoft.graph:msgraph-sdk-android:1.0.0'
+    compile 'com.google.code.gson:gson:2.4'
+   ```
+   
+3. Replace the line `String accessToken = tokenResponse.accessToken;` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
+    ```java
+    final String accessToken = tokenResponse.accessToken;
+    final IClientConfig clientConfig = 
+            DefaultClientConfig.createWithAuthenticationProvider(new IAuthenticationProvider() {
+        @Override
+        public void authenticateRequest(IHttpRequest request) {
+            request.addHeader("Authorization", "Bearer " + accessToken);
+        }
+    });
+
+    final IGraphServiceClient graphServiceClient = new GraphServiceClient
+        .Builder()
+        .fromConfig(clientConfig)
+        .buildClient();
+
+    final Message message = new Message();
+    EmailAddress emailAddress = new EmailAddress();
+    emailAddress.address = "<YOUR_EMAIL_ADDRESS>";
+    Recipient recipient = new Recipient();
+    recipient.emailAddress = emailAddress;
+    message.toRecipients = Collections.singletonList(recipient);
+    ItemBody itemBody = new ItemBody();
+    itemBody.content = "This is the email body";
+    itemBody.contentType = BodyType.text;
+    message.body = itemBody;
+    message.subject = "Sent using the Microsoft Graph SDK";
+
+    AsyncTask.execute(new Runnable() {
+        @Override
+        public void run() {
+            graphServiceClient
+                .getMe()
+                .getSendMail(message, false)
+                .buildRequest()
+                .post();
+        }
+    });
+    ```
+
+### Using the Microsoft Graph REST API
+The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint. Follow these steps to use the REST API.
+
+1. Add internet permissions to your app. Open the **AndroidManifest** file and add the following child to the manifest element.
+    ```xml
+    <uses-permission android:name="android.permission.INTERNET" />
+    ```
+
+2. Add a dependency to the Volley HTTP library.
+   ```gradle
+    compile 'com.android.volley:volley:1.0.0'
+   ```
+   
+3. Replace the line `String accessToken = tokenResponse.accessToken;` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
+    ```java
+    final String accessToken = tokenResponse.accessToken;
+
+    final RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
+    String url ="https://graph.microsoft.com/v1.0/me/sendMail";
+    final String body = "{" +
+        "  Message: {" +
+        "    subject: 'Sent using the Microsoft Graph REST API'," +
+        "    body: {" +
+        "      contentType: 'text'," +
+        "      content: 'This is the email body'" +
+        "    }," +
+        "    toRecipients: [" +
+        "      {" +
+        "        emailAddress: {" +
+        "          address: '<YOUR_EMAIL_ADDRESS>'" +
+        "        }" +
+        "      }" +
+        "    ]}" +
+        "}";
+
+    final StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.d("Response", response);
+            }
+        },
+        new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("ERROR","error => " + error.getMessage());
+            }
+        }
+    ) {
+        @Override
+        public Map<String, String> getHeaders() throws AuthFailureError {
+            Map<String,String> params = new HashMap<>();
+            params.put("Authorization", "Bearer " + accessToken);
+            params.put("Content-Length", String.valueOf(body.getBytes().length));
+            return params;
+        }
+        @Override
+        public String getBodyContentType() {
+            return "application/json";
+        }
+        @Override
+        public byte[] getBody() throws AuthFailureError {
+            return body.getBytes();
+        }
+    };
+
+    AsyncTask.execute(new Runnable() {
+        @Override
+        public void run() {
+            queue.add(stringRequest);
+        }
+    });
+    ```
+
+## Run the app
+You're ready to try your Android app.
+
+1. Start your Android emulator or connect your physical device to your computer.
+2. In Android Studio, press Shift + F10 to run your app.
+3. Choose your Android emulator or device from the deployment dialog.
+4. Tap the Floating Action Button on the main activity.
+5. Sign in with your personal or work or school account and grant the requested permissions.
+6. In the app selection dialog, tap your app to continue.
+
+Check the inbox of the email address that you configured in [Call the Microsoft Graph](#call-the-microsoft-graph) section. You should have an email from the account that you used to sign in to the app.
+
+## Next steps
+- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Find examples of common operations in the [Snippets Sample for Android](https://github.com/microsoftgraph/android-java-snippets-sample), or explore our other [Android samples](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=android) on GitHub.
+
+
+## See also
+* [Overview of Microsoft Graph](http://graph.microsoft.io/docs)
+* [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+* [Azure AD v2.0 tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
