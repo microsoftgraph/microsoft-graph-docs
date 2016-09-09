@@ -66,6 +66,7 @@ Here is a JSON representation of the resource
 |oauth2Permissions|[oAuth2Permission](oauth2permission.md) collection|The collection of OAuth 2.0 permission scopes that the web API (resource) application exposes to client applications. These permission scopes may be granted to client applications during consent. Not nullable.|
 |oauth2RequirePostResponse|Boolean||
 |id|String|The unique identifier for the application. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
+|onPremisesPublishing|[onPremisesPublishing](onpremisespublishing.md)| The on-premises publishing settings used with Azure AD Application Proxy.| 
 |passwordCredentials|[passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
 |publicClient|Boolean|Specifies whether this application is a public client (such as an installed application running on a mobile device).  Default is **false**.|
 |replyUrls|String collection|Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to. Not nullable.|
@@ -75,6 +76,7 @@ Here is a JSON representation of the resource
 ### Relationships
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
+|connectorGroup|[connectorGroup](connectorgroup.md)| The connectorGroup the applicaiton is using with Azure AD Application Proxy. Nullable.| 
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
 |extensionProperties|[extensionProperty](extensionproperty.md) collection|The extension properties associated with the application. Read-only. Nullable.|
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer.  Read-only. Nullable.|
