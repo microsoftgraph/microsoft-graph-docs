@@ -58,12 +58,12 @@ We'll use an OAuth library to simplify the authentication process. [The PHP Leag
 Open the `composer.json` file and include the following dependency in the **require** section:
 
 ```json
-    "league/oauth2-client": "^1.4"
+"league/oauth2-client": "^1.4"
 ```
 
 ### Start the authentication flow
 
-1. Open the **MainActivity** file and declare an **AuthorizationService** object in the **onCreate** method.
+1. Open the **resources** > **views** > **welcome.blade.php** file and add a button using the following HTML :
     ```java
     final AuthorizationService authorizationService =
         new AuthorizationService(this);
@@ -296,7 +296,7 @@ You're ready to try your PHP app.
 
 1. In your shell type the following command:
     ```bash
-    php -S 0.0.0.0:8000 -t public
+    php artisan serve
     ```
     
 2. Navigate to http://localhost:8000 in your web browser.
