@@ -63,51 +63,34 @@ Open the `composer.json` file and include the following dependency in the **requ
 
 ### Start the authentication flow
 
-1. Open the **resources** > **views** > **welcome.blade.php** file and add a button using the following HTML :
-    ```java
-    final AuthorizationService authorizationService =
-        new AuthorizationService(this);
+1. Open the **resources** > **views** > **welcome.blade.php** file. Replce the **title** div element with the following code.
+    ```html
+    <div class="title" onClick="window.location='/oauth'">Sign in to Microsoft</div>
     ```
     
-2. Locate the event handler for the click event of the *FloatingActionButton*. Replace the **onClick** method with the following code. Insert the **application ID** of your app in the placeholder marked with **\<YOUR_APPLICATION_ID\>**.
-    ```java
-    @Override
-    public void onClick(View view) {
-        Uri authorizationEndpoint =
-            Uri.parse("https://login.microsoftonline.com/common/oauth2/v2.0/authorize");
-        Uri tokenEndpoint =
-            Uri.parse("https://login.microsoftonline.com/common/oauth2/v2.0/token");
-        AuthorizationServiceConfiguration config =
-            new AuthorizationServiceConfiguration(
-                    authorizationEndpoint,
-                    tokenEndpoint,null);
+2. Open the **app** > **Http** > **routes.php** file and add the following code. Insert the **application ID** and **password** of your app in the placeholder marked with **\<YOUR_APPLICATION_ID\>** and **\<YOUR_PASSWORD\>** respectively.
+    ```php
+    Route::get('/oauth', function () {
+        $provider = new \League\OAuth2\Client\Provider\GenericProvider([
+            'clientId'                => '<YOUR_APPLICATION_ID>',
+            'clientSecret'            => '<YOUR_PASSWORD>,
+            'redirectUri'             => 'http://localhost:8000/oauth',
+            'urlAuthorize'            => 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize',
+            'urlAccessToken'          => 'https://login.microsoftonline.com/common/oauth2/v2.0/token',
+            'urlResourceOwnerDetails' => '',
+            'scopes'                  => 'openid mail.send'
+        ]);
 
-        List<String> scopes = new ArrayList<>(
-            Arrays.asList("openid profile mail.send".split(" ")));
-
-        AuthorizationRequest authorizationRequest = new AuthorizationRequest.Builder(
-            config,
-            "<YOUR_APPLICATION_ID>",
-            ResponseTypeValues.CODE,
-            Uri.parse("https://login.microsoftonline.com/common/oauth2/nativeclient"))
-            .setScopes(scopes)
-            .build();
-
-        Intent intent = new Intent(view.getContext(), MainActivity.class);
-
-        PendingIntent redirectIntent =
-            PendingIntent.getActivity(
-                    view.getContext(),
-                    authorizationRequest.hashCode(),
-                    intent, 0);
-
-        authorizationService.performAuthorizationRequest(
-            authorizationRequest,
-            redirectIntent);
-    }
+        if (!isset($_GET['code'])) {
+            // The OAuth library automaticaly generates a state value that we can
+            // validate later. We just save it for now.
+            session(['state' => $provider->getState()]);
+            return redirect($provider->getAuthorizationUrl());
+        }
+    });
     ```
     
-At this point, you should have an Android app with a button. If you press the button, the app presents an authentication page using the device's browser. The next step is to handle the code that the authorization server sends to the redirect URI and exchange it for an access token.
+At this point, you should have a PHP app that displays *Sign in to Microsoft*. If you click the text, the app presents the Microsoft sign-in page. The next step is to handle the code that the authorization server sends to the redirect URI and exchange it for an access token.
 
 ### Exchange the authorization code for an access token
 
