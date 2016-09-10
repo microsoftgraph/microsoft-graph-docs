@@ -1,330 +1,712 @@
-# Call Microsoft Graph in an ASP.NET MVC app
+# Get started with the Microsoft Graph in an ASP.NET 4.6 MVC app
 
-In this article we look at the minimum tasks required to connect your application to Office 365 and call the Microsoft Graph API. This topic won't create an app from scratch. We use code from [Office 365 ASP.NET MVC Connect sample using Microsoft Graph](https://github.com/microsoftgraph/aspnet-connect-rest-sample) to explain the main concepts that you have to implement in your app.
+This article describes the tasks required to get an access token from the v2 authentication endpoint and call the Microsoft Graph. It walks you through building the [Microsoft Graph Connect Sample for ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article also describes how to access the Microsoft Graph by using either the [Microsoft Graph .NET Client Library](https://github.com/microsoftgraph/msgraph-sdk-dotnet) or raw REST calls.
 
-The following is a screenshot of the send mail page.
+This is the app you'll create. 
 
-![Office 365 ASP.NET MVC sample screenshot](./images/O365AspNetMVCSendMailPageScreenshot.png)
+![The web app displaying the "Get email address" and "Send email" buttons](aspnet-connect-sample.png "The web app displaying the 'Get email address' and 'Send email' buttons")
 
-## Overview
+The Azure AD [v2.0 endpoint](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview) lets users sign in with a Microsoft account (MSA) or a work or school account. The app uses the [ASP.Net OpenID Connect OWIN middleware](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) and the [Microsoft Authentication Library (MSAL) for .NET](https://www.nuget.org/packages/Microsoft.Identity.Client) for sign in and token management.
 
-To call the Microsoft Graph API, you have to complete the following tasks.
+>MSAL is currently in prerelease, and as such should not be used in production code. It is used here for illustrative purposes only. 
 
-1. Register the application in Azure Active Directory
-2. Authenticate a user and get an access token by calling methods on the Azure AD Authentication Library for .NET. (ADAL)
-3. Use ADAL to get an access token
-4. Use the access token in a request to the Microsoft Graph API
-5. Disconnect session
+Don't feel like building an app? Get up and running fast using the [Quick Start](xxx), or download the [Microsoft Graph Connect Sample for ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample) that this walkthrough is based on.
 
-<!--<a name="register"></a>-->
-## Register the application in Azure Active Directory
 
-Before you can start working with Office 365, you need to register your application and set permissions to use Microsoft Graph services.
-With just a few clicks, you can register your application to access a user's work or school account using the [Application Registration Tool](https://dev.office.com/app-registration). To manage it you will need to go to the [Microsoft Azure Management portal](https://manage.windowsazure.com)
+## Prerequisites
 
-See [Register your brower-based web app with the Azure Management Portal](https://msdn.microsoft.com/office/office365/HowTo/add-common-consent-manually#bk_RegisterWebApp) for alternative instructions, and keep in mind the following details.
+To follow along with this walkthrough, you'll need: 
 
-* Make sure to specify http://localhost:55065/ as the **Sign-on URL**.
-* After you register the application, [configure the **Delegated permissions**](https://github.com/microsoftgraph/aspnet-connect-rest-sample/wiki/Grant-permissions-to-the-Connect-application-in-Azure) that your Angular app requires. The Connect sample requires the **Send mail as signed-in user** permission.
+- A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)
+- Visual Studio 2015 
+- The [Microsoft Graph Connect Starter Project for ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-starter). The project was created using the ASP.NET Web Application > MVC template with No Authentication. It contains additional shell classes that you'll add code to, as well as some complete classes and views.
 
-Take note of the following values in the **Configure** page of your Azure application because you need these values to configure in your app.
 
-* Client ID (unique to your application)
-* Key (also known as client secret)
-* A reply URL (also known as redirect URL). For this sample it's http://localhost:55065/.
+## Register the application
 
-  > Note:  The reply URL value is auto-populated with the sign-on URL value that you specify when you register the application.
+In this step, you'll register an app on the Microsoft App Registration Portal. This generates the app ID and password that you'll use to configure the app in Visual Studio.
 
-<!--<a name="#auth"></a>-->
-## Authentication in the Connect sample
+1. Sign into the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
 
-The Azure AD Authentication Library (ADAL) for .NET enables client application developers to authenticate users, and then obtain access tokens to make API calls.  You can include this library in your ASP.NET MVC project via **Manage NuGet packages** in Visual Studio.
+2. Choose **Add an app**.
 
-The following is a screenshot of the home page.
+3. Enter a name for the app, and choose **Create application**. 
+	
+   The registration page displays, listing the properties of your app.
 
-![Office 365 ASP.NET MVC sample screenshot](./images/O365AspNetMVCHomePageScreenshot.png)
+4. Copy the application ID. This is the unique identifier for your app. 
 
-The authentication flow can be broken down to two basic steps:
+5. Under **Application Secrets**, choose **Generate New Password**. Copy the password from the **New password generated** dialog.
 
-1. Request an authorization code
-2. Use authorization code to request an access token.
+   You'll use the application ID and password to configure the app. 
 
->  **Note**: You will also get a refresh token along with the access token. You can use the refresh token to acquire a new access token when the current access token expires.
+6. Under **Platforms**, choose **Add platform** > **Web**.
 
-The connect sample uses the Azure app registration values and a user's ID to authenticate. The ADAL authentication flow needs the client ID, key and reply URL (also known as redirect URL) you get in the Azure registration process.
+7. Make sure the **Allow Implicit Flow** check box is selected, and enter *https://localhost:44300/* as the Redirect URI. 
 
-To request for an authorization code, first redirect the app to the Azure AD authorization request URL as shown below (see HomeController.cs file).
+   The **Allow Implicit Flow** option enables the OpenID Connect hybrid flow. During authentication, this enables the app to receive both sign-in info (the **id_token**) and artifacts (in this case, an authorization code) that the app uses to obtain an access token.
 
+8. Choose **Save**.
 
-```c#
-        public ActionResult Login()
-        {
-            if (string.IsNullOrEmpty(Settings.ClientId) || string.IsNullOrEmpty(Settings.ClientSecret))
-            {
-                ViewBag.Message = "Please set your client ID and client secret in the Web.config file";
-                return View();
-            }
+### Configure the project
 
+1. Open the solution file for the starter project in Visual Studio.
 
-            var authContext = new AuthenticationContext(Settings.AzureADAuthority);
+2. Open the project's Web.config file.
 
-            // Generate the parameterized URL for Azure login.
-            Uri authUri = authContext.GetAuthorizationRequestURL(
-                Settings.O365UnifiedAPIResource,
-                Settings.ClientId,
-                loginRedirectUri,
-                UserIdentifier.AnyUser,
-                null);
+3. Locate the app configuration keys in the **appSettings** element. Replace the application ID and secret placeholders with the values you just copied.
 
-            // Redirect the browser to the login page, then come back to the Authorize method below.
-            return Redirect(authUri.ToString());
-        }
+ ```xml
+<!--app configuration-->
+<add key="ida:AppId" value="ENTER_YOUR_APP_ID" />
+<add key="ida:AppSecret" value="ENTER_YOUR_APP_SECRET" />
+<add key="ida:RedirectUri" value="https://localhost:44300/" />
+<add key="ida:GraphScopes" value="User.Read Mail.Send" />
+  ```
 
-```
-When this **Login** method is called, the app will redirect the user to a sign in page. This will take the app to the login page. Once the user credentials are successfully authenticated, Azure redirects the app to  the redirect URL mentioned in the code as denoted by *loginRedirectUri*. This redirect URL is a URL to another action in the ASP.NET MVC app as shown.
+The redirect URI is the SSL URL of the project that you registered. The requested [permission scopes](https://graph.microsoft.io/en-us/docs/authorization/permission_scopes) allow the app to get user profile information and send an email.
 
-```c#
 
- Uri loginRedirectUri => new Uri(Url.Action(nameof(Authorize), "Home", null, Request.Url.Scheme));
+## Authenticate the user and get an access token
 
-```
-The URL will also contain the authorization code mentioned in step 1 and 2 above.  This will get the authorization code from the request parameters. Using the authorizationn code, the app will make a call to Azure AD to get the access token. Once we get the access token, we store it in the session so that we can use it for multiple requests.
+In this step, you'll add sign-in and token management code. But first, let's take a closer look at the auth flow.
 
-The Authorize action mentioned in the redirect URL action looks like this.
+This app uses the authorization code grant flow with a delegated user identity. For a web application, the flow requires the application ID, password, and redirect URI from the registered app. 
 
-```c#
-        public async Task<ActionResult> Authorize()
-        {
-            var authContext = new AuthenticationContext(Settings.AzureADAuthority);
+The auth flow can be broken down into these basic steps:
 
+1. Redirect the user for authentication and consent
+2. Get an authorization code
+3. Redeem the authorization code for an access token
+4. Use the refresh token to get a new access token when the access token expires
 
-            // Get the token.
-            var authResult = await authContext.AcquireTokenByAuthorizationCodeAsync(
-                Request.Params["code"],                                         // the auth 'code' parameter from the Azure redirect.
-                loginRedirectUri,                                               // same redirectUri as used before in Login method.
-                new ClientCredential(Settings.ClientId, Settings.ClientSecret), // use the client ID and secret to establish app identity.
-                Settings.O365UnifiedAPIResource);
+The app uses the [ASP.Net OpenID Connect OWIN middleware](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) and the [Microsoft Authentication Library (MSAL) for .NET](https://www.nuget.org/packages/Microsoft.Identity.Client) for sign in and token management. These handle most auth tasks for you.
+    
+Now back to building the app.
 
-            // Save the token in the session.
-            Session[SessionKeys.Login.AccessToken] = authResult.AccessToken;
+1. Run **Build** > **Build Solution** to restore the project dependencies. The starter project already declares the following middleware and MSAL NuGet dependencies:
 
-            // Get info about the current logged in user.
-            Session[SessionKeys.Login.UserInfo] = await UnifiedApiHelper.GetUserInfoAsync(authResult.AccessToken);
+    - Microsoft.Owin.Security.OpenIdConnect
+    - Microsoft.Owin.Security.Cookies
+    - Microsoft.Owin.Host.SystemWeb
+    - Microsoft.Identity.Client -Pre
 
-            return RedirectToAction(nameof(Index), "Message");
+1. In the **App_Start** folder, open Startup.Auth.cs. 
 
-        }
-
-```
->  **Note**:  For more information about authorization flow, see [Authorization Code Grant Flow] (https://msdn.microsoft.com/en-US/library/azure/dn645542.aspx)
-
-<!--<a name="request"></a>-->
-## Use the access token in a request to the Microsoft Graph API
-
-After the user signs-in, the Connect sample shows the user an activity for sending a mail message.  With an access token, your app can make authenticated requests to the Microsoft Graph API.
-
-For example the UnifiedApiHelper.cs file contains the code that:
-
-1)  Get information about the current login user.  The ``GetUserInfoAsync`` method takes a single argument (access token value) to make a call to **https://graph.microsoft.com/v1.0/me** to get information about the current login user.
-
- ```c#
-
-        public static async Task<UserInfo> GetUserInfoAsync(string accessToken)
-        {
-            UserInfo myInfo = new UserInfo();
-
-            using (var client = new HttpClient())
-            {
-                using (var request = new HttpRequestMessage(HttpMethod.Get, Settings.GetMeUrl))
-                {
-                    request.Headers.Accept.Add(Json);
-                    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-
-                    using (var response = await client.SendAsync(request))
-                    {
-                        if (response.StatusCode == HttpStatusCode.OK)
-                        {
-                            var json = JObject.Parse(await response.Content.ReadAsStringAsync());
-                            myInfo.Name = json?["displayName"]?.ToString();
-                            myInfo.Address = json?["mail"]?.ToString().Trim().Replace(" ", string.Empty);
-
-                        }
-                    }
-                }
-            }
-
-            return myInfo;
-        }
-
-```
-
-
-
-2)  Construct and send the message that the logged in user wants to send via email. The ``SendMessageAsync`` method constructs and sends a POST request to the **https://graph.microsoft.com/v1.0/me/microsoft.graph.sendmail** resource URL, using the access token value as one of the arguments.
-
-
-```c#
-
-        public static async Task<SendMessageResponse> SendMessageAsync(string accessToken, SendMessageRequest sendMessageRequest)
-        {
-            var sendMessageResponse = new SendMessageResponse { Status = SendMessageStatusEnum.NotSent };
-
-            using (var client = new HttpClient())
-            {
-                using (var request = new HttpRequestMessage(HttpMethod.Post, Settings.SendMessageUrl))
-                {
-                    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-                    request.Content = new StringContent(JsonConvert.SerializeObject(sendMessageRequest), Encoding.UTF8, "application/json");
-                    using (HttpResponseMessage response = await client.SendAsync(request))
-                    {
-                        if (response.IsSuccessStatusCode)
-                        {
-                            sendMessageResponse.Status = SendMessageStatusEnum.Sent;
-                            sendMessageResponse.StatusMessage = null;
-                        }
-                        else
-                        {
-                            sendMessageResponse.Status = SendMessageStatusEnum.Fail;
-                            sendMessageResponse.StatusMessage = response.ReasonPhrase;
-                        }
-                    }
-                }
-            }
-
-            return sendMessageResponse;
-        }
-
-```
-
-
-The  ``MessageController.cs `` file contains code that manages email messages. For example, the **Send Mail** button.The  ``SendMessageSubmit `` method sends the message when the users clicks the **Send Mail** button.
-
-
-```c#
-
-        public async Task<ActionResult> SendMessageSubmit(UserInfo userInfo)
-        {
-            // After Index method renders the View, user clicks Send Mail, which comes in here.
-            EnsureUser(ref userInfo);
-
-            // Send email using O365 unified API.
-            var sendMessageResult = await UnifiedApiHelper.SendMessageAsync(
-                (string)Session[SessionKeys.Login.AccessToken],
-                GenerateEmail(userInfo));
-
-            // Reuse the Index view for messages (sent, not sent, fail) .
-            // Redirect to tell the browser to call the app back via the Index method.
-            return RedirectToAction(nameof(Index), new RouteValueDictionary(new Dictionary<string,object>{
-                { "Status", sendMessageResult.Status },
-                { "StatusMessage", sendMessageResult.StatusMessage },
-                { "Address", userInfo.Address },
-            }));
-        }
-
-```
-
-
-The ``CreateEmailObject`` method creates the email object in the required request format/data contract that the POST body requires:
+1. Replace the **ConfigureAuth** method with the following code. This sets up the coordinates for communicating with Azure AD and sets up the Cookie Authentication used by the OpenID Connect middleware.
 
 
   ```c#
+    public void ConfigureAuth(IAppBuilder app)
+    {
+        app.SetDefaultSignInAsAuthenticationType(CookieAuthenticationDefaults.AuthenticationType);
 
-        private SendMessageRequest CreateEmailObject(UserInfo to, string subject, string body)
-        {
-            return new SendMessageRequest
+        app.UseCookieAuthentication(new CookieAuthenticationOptions());
+
+        app.UseOpenIdConnectAuthentication(
+            new OpenIdConnectAuthenticationOptions
             {
-                Message = new Message
+
+                // The `Authority` represents the Microsoft v2.0 authentication and authorization service.
+                // The `Scope` describes the permissions that your app will need. See https://azure.microsoft.com/documentation/articles/active-directory-v2-scopes/                    
+                ClientId = appId,
+                Authority = "https://login.microsoftonline.com/common/v2.0",
+                PostLogoutRedirectUri = redirectUri,
+                RedirectUri = redirectUri,
+                Scope = "openid email profile offline_access " + graphScopes,
+                TokenValidationParameters = new TokenValidationParameters
                 {
-                    Subject = subject,
-                    Body = new MessageBody
-                    {
-                        ContentType = "Html",
-                        Content = body
-                    },
-                    ToRecipients = new List<Recipient>
-                    {
-                        new Recipient
-                        {
-                            EmailAddress = new UserInfo
-                            {
-                                 Name =  to.Name,
-                                 Address = to.Address
-                            }
-                        }
-                    }
+                    ValidateIssuer = false,
+                    // In a real application you would use IssuerValidator for additional checks, 
+                    // like making sure the user's organization has signed up for your app.
+                    //     IssuerValidator = (issuer, token, tvp) =>
+                    //     {
+                    //         if (MyCustomTenantValidation(issuer)) 
+                    //             return issuer;
+                    //         else
+                    //             throw new SecurityTokenInvalidIssuerException("Invalid issuer");
+                    //     },
                 },
-                SaveToSentItems = true
-            };
+                Notifications = new OpenIdConnectAuthenticationNotifications
+                {
+                    AuthorizationCodeReceived = async (context) =>
+                    {
+                        var code = context.Code;
+                        string signedInUserID = context.AuthenticationTicket.Identity.FindFirst(ClaimTypes.NameIdentifier).Value;
+                        ConfidentialClientApplication cca = new ConfidentialClientApplication(
+                            appId, 
+                            redirectUri,
+                            new ClientCredential(appSecret),
+                            new SessionTokenCache(signedInUserID, context.OwinContext.Environment["System.Web.HttpContextBase"] as HttpContextBase));
+                        string[] scopes = graphScopes.Split(new char[] { ' ' });
 
-```
-
-Another task is to construct a valid JSON message string and send it to the ``https://graph.microsoft.com/v1.0/me/microsoft.graph.sendmail`` endpoint using an HTTP POST request. Since the email body is to be sent as an HTML document, the request sets the ``ContentType`` value of the email message to HTML, and encodes the content as JSON for the HTTP POST request. The UnifiedApiMessageModels.cs file contains the data or schema contracts between this app and the Office 365 unified API server.
-
-
-
-```c#
-
-
-    public class SendMessageResponse
-    {
-        public SendMessageStatusEnum Status { get; set; }
-        public string StatusMessage { get; set; }
+                        AuthenticationResult result = await cca.AcquireTokenByAuthorizationCodeAsync(scopes, code);
+                    },
+                    AuthenticationFailed = (context) =>
+                    {
+                        context.HandleResponse();
+                        context.Response.Redirect("/Error?message=" + context.Exception.Message);
+                        return Task.FromResult(0);
+                    }
+                }
+            });
     }
+  ```
+  
+  The OWIN Startup class (defined in Startup.cs) invokes the **ConfigureAuth** method when the app starts, which in turn calls **app.UseOpenIdConnectAuthentication** to initialize the middleware for sign in and the initial token request. The app requests the following permission scopes:
 
-    public class SendMessageRequest
+  - **openid**, **email**, **profile** for sign in
+  - **offline\_access** (required to obtain refresh tokens), **User.Read**, **Mail.Send** for token acquisition
+  
+  The MSAL **ConfidentialClientApplication** object represents the app and handles token management tasks. It's initialized with **SessionTokenCache** (the sample token cache implementation defined in TokenStorage/SessionTokenCache.cs) where it stores token information. The cache saves tokens in the current HTTP session based on user ID, but a production application will likely use more persistent storage.
+
+Now you'll implement a sample auth provider, which is designed to be easily replaced with your own custom auth provider. The interface and provider class have already been added to the project.
+
+1. In the **Helpers** folder, open SampleAuthProvider.cs.
+
+1. Replace the **GetUserAccessTokenAsync** method with the following implementation that uses MSAL to get an access token.
+
+  ```c#
+    // Get an access token. First tries to get the token from the token cache.
+    public async Task<string> GetUserAccessTokenAsync()
     {
-        public Message Message { get; set; }
+        string signedInUserID = ClaimsPrincipal.Current.FindFirst(ClaimTypes.NameIdentifier).Value;
+        tokenCache = new SessionTokenCache(
+            signedInUserID, 
+            HttpContext.Current.GetOwinContext().Environment["System.Web.HttpContextBase"] as HttpContextBase);
+        //var cachedItems = tokenCache.ReadItems(appId); // see what's in the cache
 
-        public bool SaveToSentItems { get; set; }
-    }
+        ConfidentialClientApplication cca = new ConfidentialClientApplication(
+            appId, 
+            redirectUri,
+            new ClientCredential(appSecret), 
+            tokenCache);
 
-    public class Message
-    {
-        public string Subject { get; set; }
-        public MessageBody Body { get; set; }
-        public List<Recipient> ToRecipients { get; set; }
-    }
-    public class Recipient
-    {
-        public UserInfo EmailAddress { get; set; }
-    }
-
-    public class MessageBody
-    {
-        public string ContentType { get; set; }
-        public string Content { get; set; }
-    }
-
-    public class UserInfo
-    {
-        public string Name { get; set; }
-        public string Address { get; set; }
-    }
-
-}
-
-```
-<!--<a name="logout"></a>-->
-## Disconnect the session
-
-When the user clicks **Disconnect** in the send mail page, the user will be logout of the session. The code does this by
-* Clearing the local session
-* Redirect the browser to the logout endpoint (so Azure can clear its own cookies)
-
-The **Logout** method (see HomeController.cs file) shows how this is done.
-
-
-```c#
-        public ActionResult Logout()
+        try
         {
-            Session.Clear();
-            return Redirect(Settings.LogoutAuthority + logoutRedirectUri.ToString());
+            AuthenticationResult result = await cca.AcquireTokenSilentAsync(scopes.Split(new char[] { ' ' }));
+            return result.Token;
         }
 
-```
+        // Unable to retrieve the access token silently.
+        catch (MsalSilentTokenAcquisitionException)
+        {
+            HttpContext.Current.Request.GetOwinContext().Authentication.Challenge(
+                new AuthenticationProperties() { RedirectUri = "/" },
+                OpenIdConnectAuthenticationDefaults.AuthenticationType);
 
-##Next steps
-The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the API reference to explore what else you can accomplish with the Microsoft Graph API.
-Explore our other ASP.NET samples on [GitHub](http://aka.ms/aspnetgraphsamples).
+            throw new Exception(Resource.Error_AuthChallengeNeeded);
+        }
+    }
+  ```
+
+  MSAL checks the cache for a matching access token that isn't expired or about to expire. If it can't find a valid one, it uses the refresh token (if a valid one exists) to get a new access token. If it's unable to obtain a new access token silently, MSAL throws an **MsalSilentTokenAcquisitionException** to indicate that a user prompt is needed. 
+
+Next you'll add code to handle signing and signing out from the UI.
+
+1. In the **Controllers** folder, open AccountController.cs.  
+
+1. Replace the class with the following code. The **Sign in** method signals the middleware to send an authorization request to Azure AD.
+
+  ```c#
+    public class AccountController : Controller
+    {
+        public void SignIn()
+        {
+            if (!Request.IsAuthenticated)
+            {
+                // Signal OWIN to send an authorization request to Azure.
+                HttpContext.GetOwinContext().Authentication.Challenge(
+                new AuthenticationProperties { RedirectUri = "/" },
+                OpenIdConnectAuthenticationDefaults.AuthenticationType);
+            }
+        }
+
+        // Here we just clear the token cache, sign out the GraphServiceClient, and end the session with the web app.  
+        public void SignOut()
+        {
+            if (Request.IsAuthenticated)
+            {
+                // Get the user's token cache and clear it.
+                string userObjectId = ClaimsPrincipal.Current.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+                SessionTokenCache tokenCache = new SessionTokenCache(userObjectId, HttpContext);
+                tokenCache.Clear(userObjectId);
+            }
+            
+            //SDKHelper.SignOutClient();
+
+            // Send an OpenID Connect sign-out request. 
+            HttpContext.GetOwinContext().Authentication.SignOut(
+            CookieAuthenticationDefaults.AuthenticationType);
+            Response.Redirect("/");
+        }
+    }
+  ```
+
+Now you're ready to add code to call the Microsoft Graph. 
+
+## Call the Microsoft Graph
+
+If you're using the Microsoft Graph library, read on. If you're using REST, jump to the [Using the REST API](#using-the-rest-api) section.
+
+### Using the library
+In this step, you'll install the Microsoft Graph library and focus on the **SDKHelper**, **GraphService**, and **HomeController** classes. 
+
+ - **SDKHelper** intializes an instance of the **GraphServiceClient** from the library before each call to the Microsoft Graph. This is when the access token is added to the request. 
+ - **GraphService** builds and sends requests to the Microsoft Graph using the library and processes the responses.
+ - **HomeController** contains actions that initiate the calls to the library in response to UI events.
+
+1. Open **Tools** > **Nuget Package Manager** > **Package Manager Console**, and run the following command.
+
+  ```
+Install-Package Microsoft.Graph
+  ```
+
+1. Right-click the **Helpers** folder and choose **Add** > **Class**. 
+
+1. Name the new class *SDKHelper* and choose **Add**.
+
+1. Replace the contents with the following code.
+
+  ```c#
+    using System.Net.Http.Headers;
+    using Microsoft.Graph;
+
+    namespace Microsoft_Graph_ASPNET_Connect.Helpers
+    {
+        public class SDKHelper
+        {   
+            private static GraphServiceClient graphClient = null;
+
+            // Get an authenticated Microsoft Graph Service client.
+            public static GraphServiceClient GetAuthenticatedClient()
+            {
+                GraphServiceClient graphClient = new GraphServiceClient(
+                    new DelegateAuthenticationProvider(
+                        async (requestMessage) =>
+                        {
+                            string accessToken = await SampleAuthProvider.Instance.GetUserAccessTokenAsync();
+
+                            // Append the access token to the request.
+                            requestMessage.Headers.Authorization = new AuthenticationHeaderValue("bearer", accessToken);
+                        }));
+                return graphClient;
+            }
+
+            public static void SignOutClient()
+            {
+                graphClient = null;
+            }
+        }
+    }
+  ```
+
+  Note the call to **SampleAuthProvider** to get the token when the client is initialized.
+
+1. In the **Models** folder, open GraphService.cs. The service uses the library to interact with the Microsoft Graph.
+
+1. Add the following **using** statement.
+
+  ```c#
+using Microsoft.Graph;
+  ```
+
+1. Replace *// GetMyEmailAddress* with the following method. This gets the current user's email address. 
+
+  ```c#
+    // Get the current user's email address from their profile.
+    public async Task<string> GetMyEmailAddress(GraphServiceClient graphClient)
+    {
+
+        // Get the current user. 
+        // The app only needs the user's email address, so select the mail and userPrincipalName properties.
+        // If the mail property isn't defined, userPrincipalName should map to the email for all account types. 
+        User me = await graphClient.Me.Request().Select("mail,userPrincipalName").GetAsync();
+        return me.Mail ?? me.UserPrincipalName;
+    }
+  ```
+
+  Note the **Select** segment, which requests only the **mail** and **userPrinicipalName** to be returned. You can use **Select** and **Filter** to reduce the size of the response data payload.
+
+1. Replace *// SendEmail* with the following methods to build and send the email.
+
+  ```c#
+    // Send an email message from the current user.
+    public async Task SendEmail(GraphServiceClient graphClient, Message message)
+    {
+        await graphClient.Me.SendMail(message, true).Request().PostAsync();
+    }
+
+    // Create the email message.
+    public Message BuildEmailMessage(string recipients, string subject)
+    {
+
+        // Prepare the recipient list.
+        string[] splitter = { ";" };
+        string[] splitRecipientsString = recipients.Split(splitter, StringSplitOptions.RemoveEmptyEntries);
+        List<Recipient> recipientList = new List<Recipient>();
+        foreach (string recipient in splitRecipientsString)
+        {
+            recipientList.Add(new Recipient
+            {
+                EmailAddress = new EmailAddress
+                {
+                    Address = recipient.Trim()
+                }
+            });
+        }
+
+        // Build the email message.
+        Message email = new Message
+        {
+            Body = new ItemBody
+            {
+                Content = Resource.Graph_SendMail_Body_Content,
+                ContentType = BodyType.Html,
+            },
+            Subject = subject,
+            ToRecipients = recipientList
+        };
+        return email;
+    }
+  ```
+
+1. In the **Controllers** folder, open HomeController.cs.
+
+1. Add the following **using** statement.
+
+  ```c#
+using Microsoft.Graph;
+  ```
+  
+1. Replace *// GetMyEmailAddress* and *// SendEmail* with the following actions.
+
+  ```c#
+    // Get the current user's email address from their profile.
+    public async Task<ActionResult> GetMyEmailAddress()
+    {
+        try
+        {
+
+            // Initialize the GraphServiceClient.
+            GraphServiceClient graphClient = SDKHelper.GetAuthenticatedClient();
+
+            // Get the current user's email address. 
+            ViewBag.Email = await graphService.GetMyEmailAddress(graphClient);
+            return View("Graph");
+        }
+        catch (ServiceException se)
+        {
+            if (se.Error.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
+            return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + se.Error.Message });
+        }
+    }
+
+    // Send mail on behalf of the current user.
+    public async Task<ActionResult> SendEmail()
+    {
+        if (string.IsNullOrEmpty(Request.Form["email-address"]))
+        {
+            ViewBag.Message = Resource.Graph_SendMail_Message_GetEmailFirst;
+            return View("Graph");
+        }
+
+        // Build the email message.
+        Message message = graphService.BuildEmailMessage(Request.Form["recipients"], Request.Form["subject"]);
+        try
+        {
+
+            // Initialize the GraphServiceClient.
+            GraphServiceClient graphClient = SDKHelper.GetAuthenticatedClient();
+
+            // Send the email.
+            await graphService.SendEmail(graphClient, message);
+
+            // Reset the current user's email address and the status to display when the page reloads.
+            ViewBag.Email = Request.Form["email-address"];
+            ViewBag.Message = Resource.Graph_SendMail_Success_Result;
+            return View("Graph");
+        }
+        catch (ServiceException se)
+        {
+            if (se.Error.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
+            return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + se.Error.Message });
+        }
+    }
+  ```
+
+Next you'll change the exception that the auth provider throws when a user prompt is needed.
+
+1. In the **Helpers** folder, open SampleAuthProvider.cs.
+
+1. Add the following **using** statement.
+
+  ```c#
+using Microsoft.Graph;
+  ```
+  
+1. In the **GetUserAccessTokenAsync** method's **catch** block, change the thrown exception as follows:
+
+  ```c#
+    throw new ServiceException(
+        new Error
+        {
+            Code = GraphErrorCode.AuthenticationFailure.ToString(),
+            Message = Resource.Error_AuthChallengeNeeded,
+        });
+  ```
+
+Lastly, you'll add a call to sign out the client. 
+
+1. In the **Controllers** folder, open AccountController.cs. 
+
+1. Uncomment the following line:
+
+  ```c#
+SDKHelper.SignOutClient();
+  ```
+
+Now you're ready to [run the app](#run-the-app).
+
+### Using the REST API
+In this step, you'll work with the **GraphService**, **GraphResources**, and **HomeController** classes. 
+
+ - **GraphService** builds and sends HTTP requests to the Microsoft Graph and processes the responses. 
+ - **GraphResources** represents the Microsoft Graph data that the app uses. 
+ - **HomeController** contains actions that initiate the calls to the Microsoft Graph in response to UI events.
+
+1. In the **Models** folder, open GraphService.cs.
+
+1. Add the following **using** statements.
+
+  ```c#
+using Newtonsoft.Json.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+  ```
+
+1. Replace *// GetMyEmailAddress* with the following method. This gets the current user's email address. 
+
+  ```c#
+    // Get the current user's email address from their profile.
+    public async Task<string> GetMyEmailAddress(string accessToken)
+    {
+
+        // Get the current user. 
+        // The app only needs the user's email address, so select the mail and userPrincipalName properties.
+        // If the mail property isn't defined, userPrincipalName should map to the email for all account types. 
+        string endpoint = "https://graph.microsoft.com/v1.0/me";
+        string queryParameter = "?$select(\"mail,userPrincipalName\")";
+        string emailAddress = "";
+
+        using (var client = new HttpClient())
+        {
+            using (var request = new HttpRequestMessage(HttpMethod.Get, endpoint + queryParameter))
+            {
+                request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json");
+                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+
+                using (var response = await client.SendAsync(request))
+                {
+                    if (response.StatusCode == HttpStatusCode.OK)
+                    {
+                        var json = JObject.Parse(await response.Content.ReadAsStringAsync());
+                        emailAddress = json?["mail"].ToString() ?? json?["userPrincipalName"].ToString();
+                        return emailAddress.Trim().Replace(" ", string.Empty);
+                    }
+                    else
+                    {
+                        return response.ReasonPhrase;
+                    }
+                }
+            }
+        }
+    }
+  ```
+
+1. Replace *// SendEmail* with the following methods to build and send the email.
+
+  ```c#
+    // Send an email message from the current user.
+    public async Task SendEmail(string accessToken, Message message)
+    {
+        using (var client = new HttpClient())
+        {
+            using (var request = new HttpRequestMessage(HttpMethod.Post, ""))
+            {
+                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+                request.Content = new StringContent(JsonConvert.SerializeObject(message), Encoding.UTF8, "application/json");
+                using (HttpResponseMessage response = await client.SendAsync(request))
+                {
+                    
+                    if (response.IsSuccessStatusCode)
+                    {
+                        return Resource.Graph_SendMail_Success_Result;
+                    }
+                    else
+                    {
+                        return response.ReasonPhrase;
+                    }
+                }
+            }
+        }
+    }
+
+    // Create the email message.
+    public Message BuildEmailMessage(string accessToken, string recipients, string subject)
+    {
+
+        // Prepare the recipient list.
+        string[] splitter = { ";" };
+        string[] splitRecipientsString = recipients.Split(splitter, StringSplitOptions.RemoveEmptyEntries);
+        List<Recipient> recipientList = new List<Recipient>();
+        foreach (string recipient in splitRecipientsString)
+        {
+            recipientList.Add(new Recipient
+            {
+                EmailAddress = new EmailAddress
+                {
+                    Address = recipient.Trim()
+                }
+            });
+        }
+
+        // Build the email message.
+        Message email = new Message
+        {
+            Body = new ItemBody
+            {
+                Content = Resource.Graph_SendMail_Body_Content,
+                ContentType = BodyType.Html,
+            },
+            Subject = subject,
+            ToRecipients = recipientList
+        };
+        return email;
+    }
+  ```
+
+1. Right-click the **Models** folder and choose **Add** > **Class**.
+
+1. Name the class *GraphResources* and choose **OK**.
+
+1. Replace the contents with the following code.
+
+  ```c#  
+    using System.Collections.Generic;
+
+    namespace Microsoft_Graph_ASPNET_Connect.Models
+    {
+        public class UserInfo
+        {
+            public string EmailAddress { get; set; }
+        }
+        
+        public class Message
+        {
+            public string Subject { get; set; }
+            public MessageBody Body { get; set; }
+            public List<Recipient> ToRecipients { get; set; }
+        }
+        public class Recipient
+        {
+            public UserInfo EmailAddress { get; set; }
+        }
+
+        public class MessageBody
+        {
+            public string ContentType { get; set; }
+            public string Content { get; set; }
+        }
+    }
+  ```
+
+1. In the **Controllers** folder, open HomeController.cs.
+
+1. Add the following **using** statements.
+
+  ```c#
+using Microsoft_Graph_ASPNET_Connect.Helpers;
+using Microsoft_Graph_ASPNET_Connect.Models
+  ```
+  
+1. Replace *// GetMyEmailAddress* with the following method.
+
+  ```c#
+    // Get the current user's email address from their profile.
+    public async Task<ActionResult> GetMyEmailAddress()
+    {
+        try
+        {
+
+            // Get an access token.
+            string accessToken = await SampleAuthProvider.Instance.GetUserAccessTokenAsync();
+
+            // Get the current user's email address. 
+            ViewBag.Email = await graphService.GetMyEmailAddress(accessToken);
+            return View("Graph");
+        }
+        catch (Exception e)
+        {
+            if (e.Error.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
+            return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + e.Error.Message });
+        }
+    }
+  ```
+
+1. Replace *// SendEmail* with the following method.
+
+  ```c#
+    // Send mail on behalf of the current user.
+    public async Task<ActionResult> SendEmail()
+    {
+        if (string.IsNullOrEmpty(Request.Form["email-address"]))
+        {
+            ViewBag.Message = Resource.Graph_SendMail_Message_GetEmailFirst;
+            return View("Graph");
+        }
+
+        // Build the email message.
+        Message message = graphService.BuildEmailMessage(Request.Form["recipients"], Request.Form["subject"]);
+        try
+        {
+
+            // Get an access token.
+            string accessToken = await SampleAuthProvider.Instance.GetUserAccessTokenAsync();
+
+            // Send the email.
+            ViewBag.Message = await graphService.SendEmail(accessToken, message);
+
+            // Reset the current user's email address and the status to display when the page reloads.
+            ViewBag.Email = Request.Form["email-address"];
+            return View("Graph");
+        }
+        catch (Exception e)
+        {
+            if (e.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
+            return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + e.Message });
+        }
+    }
+  ```
+
+## Run the app
+1. Press F5 to build and run the app. 
+
+2. Sign in with your personal or work or school account and grant the requested permissions.
+
+3. Choose the **Get email address** button. When the operation completes, the email address of the signed-in user is displayed on the page.
+
+4. Optionally edit the recipient list and email subject, and then choose the **Send email** button. When the mail is sent, a Success message is displayed below the button.
 
 
+## Next steps
+- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Find examples of common operations in the [Microsoft Graph Snippets Sample for ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-snippets-sample), or explore our other [ASP.NET samples](http://aka.ms/aspnetgraphsamples) on GitHub.
+
+## See also
+- [Web application to web API authentication scenario](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)
+- [Integrate Microsoft identity and the Microsoft Graph into a web application using OpenID Connect](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)
+- [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
