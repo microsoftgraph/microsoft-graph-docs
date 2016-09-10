@@ -80,7 +80,7 @@ compile 'net.openid:appauth:0.3.0'
                     tokenEndpoint,null);
 
         List<String> scopes = new ArrayList<>(
-            Arrays.asList("openid profile mail.send".split(" ")));
+            Arrays.asList("openid mail.send".split(" ")));
 
         AuthorizationRequest authorizationRequest = new AuthorizationRequest.Builder(
             config,
