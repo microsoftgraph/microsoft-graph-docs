@@ -380,9 +380,10 @@ using Microsoft.Graph;
 using Microsoft.Graph;
   ```
   
-1. Replace *// GetMyEmailAddress* and *// SendEmail* with the following actions.
+1. Replace *// Controller actions* with the following actions.
 
   ```c#
+    [Authorize]
     // Get the current user's email address from their profile.
     public async Task<ActionResult> GetMyEmailAddress()
     {
@@ -403,6 +404,7 @@ using Microsoft.Graph;
         }
     }
 
+    [Authorize]
     // Send mail on behalf of the current user.
     public async Task<ActionResult> SendEmail()
     {
@@ -473,7 +475,7 @@ Now you're ready to [run the app](#run-the-app).
 In this step, you'll work with the **GraphService**, **GraphResources**, and **HomeController** classes. 
 
  - **GraphService** builds and sends HTTP requests to the Microsoft Graph and processes the responses. 
- - **GraphResources** represents the Microsoft Graph data that the app uses. 
+ - **GraphResources** represents data that the app sends to and receives from the Microsoft Graph. 
  - **HomeController** contains actions that initiate the calls to the Microsoft Graph in response to UI events.
 
 1. In the **Models** folder, open GraphService.cs.
@@ -481,10 +483,12 @@ In this step, you'll work with the **GraphService**, **GraphResources**, and **H
 1. Add the following **using** statements.
 
   ```c#
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
   ```
 
 1. Replace *// GetMyEmailAddress* with the following method. This gets the current user's email address. 
@@ -498,28 +502,23 @@ using System.Net.Http.Headers;
         // The app only needs the user's email address, so select the mail and userPrincipalName properties.
         // If the mail property isn't defined, userPrincipalName should map to the email for all account types. 
         string endpoint = "https://graph.microsoft.com/v1.0/me";
-        string queryParameter = "?$select(\"mail,userPrincipalName\")";
-        string emailAddress = "";
+        string queryParameter = "?$select=mail,userPrincipalName";
+        UserInfo me = new UserInfo();
 
         using (var client = new HttpClient())
         {
             using (var request = new HttpRequestMessage(HttpMethod.Get, endpoint + queryParameter))
             {
-                request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json");
+                request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-
-                using (var response = await client.SendAsync(request))
+                using (HttpResponseMessage response = await client.SendAsync(request))
                 {
                     if (response.StatusCode == HttpStatusCode.OK)
                     {
                         var json = JObject.Parse(await response.Content.ReadAsStringAsync());
-                        emailAddress = json?["mail"].ToString() ?? json?["userPrincipalName"].ToString();
-                        return emailAddress.Trim().Replace(" ", string.Empty);
+                        me.Address = !string.IsNullOrEmpty(json.GetValue("mail").ToString())?json.GetValue("mail").ToString():json.GetValue("userPrincipalName").ToString();
                     }
-                    else
-                    {
-                        return response.ReasonPhrase;
-                    }
+                    return me.Address?.Trim();
                 }
             }
         }
@@ -530,32 +529,29 @@ using System.Net.Http.Headers;
 
   ```c#
     // Send an email message from the current user.
-    public async Task SendEmail(string accessToken, Message message)
+    public async Task<string> SendEmail(string accessToken, MessageRequest email)
     {
+        string endpoint = "https://graph.microsoft.com/v1.0/me/sendMail";
         using (var client = new HttpClient())
         {
-            using (var request = new HttpRequestMessage(HttpMethod.Post, ""))
+            using (var request = new HttpRequestMessage(HttpMethod.Post, endpoint))
             {
                 request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-                request.Content = new StringContent(JsonConvert.SerializeObject(message), Encoding.UTF8, "application/json");
+                request.Content = new StringContent(JsonConvert.SerializeObject(email), Encoding.UTF8, "application/json");
                 using (HttpResponseMessage response = await client.SendAsync(request))
                 {
-                    
                     if (response.IsSuccessStatusCode)
                     {
                         return Resource.Graph_SendMail_Success_Result;
                     }
-                    else
-                    {
-                        return response.ReasonPhrase;
-                    }
+                    return response.ReasonPhrase;
                 }
             }
         }
     }
 
     // Create the email message.
-    public Message BuildEmailMessage(string accessToken, string recipients, string subject)
+    public MessageRequest BuildEmailMessage(string recipients, string subject)
     {
 
         // Prepare the recipient list.
@@ -566,7 +562,7 @@ using System.Net.Http.Headers;
         {
             recipientList.Add(new Recipient
             {
-                EmailAddress = new EmailAddress
+                EmailAddress = new UserInfo
                 {
                     Address = recipient.Trim()
                 }
@@ -574,17 +570,22 @@ using System.Net.Http.Headers;
         }
 
         // Build the email message.
-        Message email = new Message
+        Message message = new Message
         {
             Body = new ItemBody
             {
                 Content = Resource.Graph_SendMail_Body_Content,
-                ContentType = BodyType.Html,
+                ContentType = "HTML"
             },
             Subject = subject,
             ToRecipients = recipientList
         };
-        return email;
+
+        return new MessageRequest
+        {
+            Message = message,
+            SaveToSentItems = true
+        };
     }
   ```
 
@@ -595,19 +596,20 @@ using System.Net.Http.Headers;
 1. Replace the contents with the following code.
 
   ```c#  
+    using System;
     using System.Collections.Generic;
 
     namespace Microsoft_Graph_ASPNET_Connect.Models
     {
         public class UserInfo
         {
-            public string EmailAddress { get; set; }
+            public string Address { get; set; }
         }
-        
+
         public class Message
         {
             public string Subject { get; set; }
-            public MessageBody Body { get; set; }
+            public ItemBody Body { get; set; }
             public List<Recipient> ToRecipients { get; set; }
         }
         public class Recipient
@@ -615,26 +617,26 @@ using System.Net.Http.Headers;
             public UserInfo EmailAddress { get; set; }
         }
 
-        public class MessageBody
+        public class ItemBody
         {
             public string ContentType { get; set; }
             public string Content { get; set; }
+        }
+
+        public class MessageRequest
+        {
+            public Message Message { get; set; }
+            public bool SaveToSentItems { get; set; }
         }
     }
   ```
 
 1. In the **Controllers** folder, open HomeController.cs.
-
-1. Add the following **using** statements.
-
-  ```c#
-using Microsoft_Graph_ASPNET_Connect.Helpers;
-using Microsoft_Graph_ASPNET_Connect.Models
-  ```
   
-1. Replace *// GetMyEmailAddress* with the following method.
+1. Replace *// Controller actions* with the following actions.
 
   ```c#
+    [Authorize]
     // Get the current user's email address from their profile.
     public async Task<ActionResult> GetMyEmailAddress()
     {
@@ -650,15 +652,12 @@ using Microsoft_Graph_ASPNET_Connect.Models
         }
         catch (Exception e)
         {
-            if (e.Error.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
-            return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + e.Error.Message });
+            if (e.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
+            return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + e.Message });
         }
     }
-  ```
 
-1. Replace *// SendEmail* with the following method.
-
-  ```c#
+    [Authorize]
     // Send mail on behalf of the current user.
     public async Task<ActionResult> SendEmail()
     {
@@ -669,7 +668,7 @@ using Microsoft_Graph_ASPNET_Connect.Models
         }
 
         // Build the email message.
-        Message message = graphService.BuildEmailMessage(Request.Form["recipients"], Request.Form["subject"]);
+        MessageRequest email = graphService.BuildEmailMessage(Request.Form["recipients"], Request.Form["subject"]);
         try
         {
 
@@ -677,7 +676,7 @@ using Microsoft_Graph_ASPNET_Connect.Models
             string accessToken = await SampleAuthProvider.Instance.GetUserAccessTokenAsync();
 
             // Send the email.
-            ViewBag.Message = await graphService.SendEmail(accessToken, message);
+            ViewBag.Message = await graphService.SendEmail(accessToken, email);
 
             // Reset the current user's email address and the status to display when the page reloads.
             ViewBag.Email = Request.Form["email-address"];
