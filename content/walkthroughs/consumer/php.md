@@ -104,23 +104,24 @@ At this point, you should have a PHP app that displays *Sign in to Microsoft*. I
 
 We need to make to handle the authorization server response, which contains a code that we can exchange for an access token.
 
-1. We need to update the */oauth* route so it can get an access token with the authorization code. To do this open the **app** > **Http** > **routes.php** file and add the following *else* conditional clause to the existing *if* statement.
-    ```php
-    if (!$request->has('code')) {
-        ...
-        // add the following lines
-    } else {
-        try {
-            $accessToken = $provider->getAccessToken('authorization_code', [
-                'code'     => $request->input('code')
-            ]);
-            exit($accessToken->getToken());
-        } catch (League\OAuth2\Client\Provider\Exception\IdentityProviderException $e) {
-            echo 'Something went wrong, couldn\'t get tokens: ' . $e->getMessage();
-        }
-    }
-    ```
+Update the */oauth* route so it can get an access token with the authorization code. To do this open the **app** > **Http** > **routes.php** file and add the following *else* conditional clause to the existing *if* statement.
 
+```php
+if (!$request->has('code')) {
+    ...
+    // add the following lines
+} else {
+    try {
+        $accessToken = $provider->getAccessToken('authorization_code', [
+            'code'     => $request->input('code')
+        ]);
+        exit($accessToken->getToken());
+    } catch (League\OAuth2\Client\Provider\Exception\IdentityProviderException $e) {
+        echo 'Something went wrong, couldn\'t get tokens: ' . $e->getMessage();
+    }
+}
+```
+    
 Note that we have an access token in this line `exit($accessToken->getToken());`. Now you're ready to add code to call the Microsoft Graph. 
 
 ## Call the Microsoft Graph using REST
