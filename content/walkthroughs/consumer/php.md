@@ -127,20 +127,20 @@ We can call the Microsoft Graph using REST. The [Microsoft Graph REST API](http:
 $client = new \GuzzleHttp\Client();
 
 $email = "{
-Message: {
-Subject: 'Sent using the Microsoft Graph REST API',
-Body: {
-    ContentType: 'text',
-    Content: 'This is the email body'
-},
-ToRecipients: [
-    {
-        EmailAddress: {
-        Address: '<YOUR_EMAIL_ADDRESS>'
+    Message: {
+    Subject: 'Sent using the Microsoft Graph REST API',
+    Body: {
+        ContentType: 'text',
+        Content: 'This is the email body'
+    },
+    ToRecipients: [
+        {
+            EmailAddress: {
+            Address: '<YOUR_EMAIL_ADDRESS>'
+            }
         }
-    }
-]
-}}";
+    ]
+    }}";
 
 $response = $client->request('POST', 'https://graph.microsoft.com/v1.0/me/sendmail', [
     'headers' => [
