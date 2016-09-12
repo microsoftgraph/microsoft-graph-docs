@@ -282,7 +282,7 @@ You're ready to try your PHP app.
     php artisan serve
     ```
     
-2. Navigate to http://localhost:8000 in your web browser.
+2. Navigate to `http://localhost:8000` in your web browser.
 3. Choose **Sign in to Microsoft**.
 4. Sign in with your personal or work or school account and grant the requested permissions.
 
