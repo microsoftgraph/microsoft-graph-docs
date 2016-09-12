@@ -69,7 +69,7 @@ composer update
 
 ### Start the authentication flow
 
-1. Open the **resources** > **views** > **welcome.blade.php** file. Replce the **title** div element with the following code.
+1. Open the **resources** > **views** > **welcome.blade.php** file. Replace the **title** div element with the following code.
     ```html
     <div class="title" onClick="window.location='/oauth'">Sign in to Microsoft</div>
     ```
@@ -111,92 +111,50 @@ if (!$request->has('code')) {
     ...
     // add the following lines
 } else {
-    try {
-        $accessToken = $provider->getAccessToken('authorization_code', [
-            'code'     => $request->input('code')
-        ]);
-        exit($accessToken->getToken());
-    } catch (League\OAuth2\Client\Provider\Exception\IdentityProviderException $e) {
-        echo 'Something went wrong, couldn\'t get tokens: ' . $e->getMessage();
-    }
+    $accessToken = $provider->getAccessToken('authorization_code', [
+        'code'     => $request->input('code')
+    ]);
+    exit($accessToken->getToken());
 }
 ```
     
 Note that we have an access token in this line `exit($accessToken->getToken());`. Now you're ready to add code to call the Microsoft Graph. 
 
 ## Call the Microsoft Graph using REST
-We can call the Microsoft Graph using REST. The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint. Follow these steps to use the REST API.
+We can call the Microsoft Graph using REST. The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint. To use the REST API, replace the line `exit($accessToken->getToken());` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
 
-1. Add internet permissions to your app. Open the **AndroidManifest** file and add the following child to the manifest element.
-    ```xml
-    <uses-permission android:name="android.permission.INTERNET" />
-    ```
+```php
+$client = new \GuzzleHttp\Client();
 
-2. Add a dependency to the Volley HTTP library.
-   ```gradle
-    compile 'com.android.volley:volley:1.0.0'
-   ```
-   
-3. Replace the line `String accessToken = tokenResponse.accessToken;` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
-    ```java
-    final String accessToken = tokenResponse.accessToken;
+$email = "{
+Message: {
+Subject: 'Sent using the Microsoft Graph REST API',
+Body: {
+    ContentType: 'text',
+    Content: 'This is the email body'
+},
+ToRecipients: [
+    {
+        EmailAddress: {
+        Address: '<YOUR_EMAIL_ADDRESS>'
+        }
+    }
+]
+}}";
 
-    final RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-    String url ="https://graph.microsoft.com/v1.0/me/sendMail";
-    final String body = "{" +
-        "  Message: {" +
-        "    subject: 'Sent using the Microsoft Graph REST API'," +
-        "    body: {" +
-        "      contentType: 'text'," +
-        "      content: 'This is the email body'" +
-        "    }," +
-        "    toRecipients: [" +
-        "      {" +
-        "        emailAddress: {" +
-        "          address: '<YOUR_EMAIL_ADDRESS>'" +
-        "        }" +
-        "      }" +
-        "    ]}" +
-        "}";
-
-    final StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
-        new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                Log.d("Response", response);
-            }
-        },
-        new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.d("ERROR","error => " + error.getMessage());
-            }
-        }
-    ) {
-        @Override
-        public Map<String, String> getHeaders() throws AuthFailureError {
-            Map<String,String> params = new HashMap<>();
-            params.put("Authorization", "Bearer " + accessToken);
-            params.put("Content-Length", String.valueOf(body.getBytes().length));
-            return params;
-        }
-        @Override
-        public String getBodyContentType() {
-            return "application/json";
-        }
-        @Override
-        public byte[] getBody() throws AuthFailureError {
-            return body.getBytes();
-        }
-    };
-
-    AsyncTask.execute(new Runnable() {
-        @Override
-        public void run() {
-            queue.add(stringRequest);
-        }
-    });
-    ```
+$response = $client->request('POST', 'https://graph.microsoft.com/v1.0/me/sendmail', [
+    'headers' => [
+        'Authorization' => 'Bearer ' . $accessToken->getToken(),
+        'Content-Type' => 'application/json;odata.metadata=minimal;odata.streaming=true'
+    ],
+    'body' => $email
+]);
+if($response.getStatusCode() === 201) {
+    exit('Email sent, check your inbox');
+} else {
+    exit('There was an error sending the email. Status code: ' . $response.getStatusCode());
+}
+```
 
 ## Run the app
 You're ready to try your PHP app.
@@ -210,7 +168,7 @@ You're ready to try your PHP app.
 3. Choose **Sign in to Microsoft**.
 4. Sign in with your personal or work or school account and grant the requested permissions.
 
-Check the inbox of the email address that you configured in [Call the Microsoft Graph](#call-the-microsoft-graph) section. You should have an email from the account that you used to sign in to the app.
+Check the inbox of the email address that you configured in [Call the Microsoft Graph using REST](#call-the-microsoft-graph-using-rest) section. You should have an email from the account that you used to sign in to the app.
 
 ## Next steps
 - Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
