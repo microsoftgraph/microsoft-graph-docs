@@ -35,7 +35,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 6. Choose **Add Platform** and **Web**.
 
-7. In the **Redirect URI** field, type `http://localhost:8000/oauth.php`.
+7. In the **Redirect URI** field, type `http://localhost:8000/oauth`.
 
 8. Choose **Save**.
 
