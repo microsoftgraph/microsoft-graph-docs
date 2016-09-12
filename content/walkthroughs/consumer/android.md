@@ -18,7 +18,7 @@ To follow along with this walkthrough, you'll need:
 
 
 ## Register the application
-Register an app on the Microsoft App Registration Portal. This generates the app ID and password that you'll use to configure the app in Visual Studio.
+Register an app on the Microsoft App Registration Portal. This generates the app ID and password that you'll use to configure the app.
 
 1. Sign into the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
 
@@ -80,7 +80,7 @@ compile 'net.openid:appauth:0.3.0'
                     tokenEndpoint,null);
 
         List<String> scopes = new ArrayList<>(
-            Arrays.asList("openid profile mail.send".split(" ")));
+            Arrays.asList("openid mail.send".split(" ")));
 
         AuthorizationRequest authorizationRequest = new AuthorizationRequest.Builder(
             config,
