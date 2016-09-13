@@ -43,16 +43,18 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 
 ### Configure the project
+1. Open the **starter-project** folder in the sample files.
+
 1. In a command prompt, run the following command in the root directory of the starter project. This installs the project dependencies.
 
   ```
     npm install
   ```
 
-1. Open authHelper.js.
+1. In the starter project files, open authHelper.js.
 
 
-1. In the **credentials** field, replace the **client_id** and **client_secret** placeholder values with the values you just copied.
+1. In the **credentials** field, replace the **ENTER_YOUR_CLIENT_ID** and **ENTER_YOUR_SECRET** placeholder values with the values you just copied.
 
   
 ## Authenticate the user and get an access token
@@ -234,7 +236,9 @@ The app calls Microsoft Graph to get user information and to send an email on th
     }
   ```
   
-1. In emailer.js, replace the **wrapEmail** function with the following code. This builds the payload that represents the email message to send.
+1. Open emailer.js.
+
+1. Replace the **wrapEmail** function with the following code. This builds the payload that represents the email message to send.
 
   ```
     function wrapEmail(content, recipient) {
@@ -271,11 +275,13 @@ The app calls Microsoft Graph to get user information and to send an email on th
 
 1. Sign in and grant the requested permissions. 
 
-1. Choose the **Send mail** button. 
+1. Optionally edit the recipient's email address, and then choose the **Send mail** button. When the mail is sent, a Success message is displayed below the button. 
 
 ## Next steps
 - Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
-- Eexplore our other [Node.js samples](https://github.com/search?utf8=%E2%9C%93&q=node+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults) on GitHub.
+- Explore our other [Node.js samples](https://github.com/search?utf8=%E2%9C%93&q=node+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults) on GitHub.
 
 
 ## See also
+- [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
