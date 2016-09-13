@@ -1,151 +1,180 @@
-# Call Microsoft Graph in a PHP app 
+# Get started with the Microsoft Graph in a PHP app
 
-In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph API. We use code from the [Office 365 PHP Connect sample using Microsoft Graph](https://github.com/microsoftgraph/php-connect-rest-sample) to explain the main concepts that you have to implement in your app.
+This article describes the tasks required to get an access token from the v2 authentication endpoint and call the Microsoft Graph. It walks you through building the [Connect Sample for PHP](https://github.com/microsoftgraph/php-connect-rest-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article also describes how to access the Microsoft Graph by using REST calls.
 
-![Office 365 PHP Connect sample screenshot](./images/web-screenshot.png)
+This article shows how to perform specific tasks that you need to follow to use the Microsoft Graph in your PHP app. For example, you need to show the Microsoft sign in page to your users. Here's a screenshot of the sign in page for Microsoft accounts invoked by an app.
 
-## Overview
+![Sign in page for Microsoft accounts](images/MicrosoftSignIn.png)
 
-To call the Microsoft Graph API, your PHP app must complete the following tasks.
+**Don't feel like building an app?** Get up and running fast downloading the [Connect Sample for PHP](https://github.com/microsoftgraph/php-connect-rest-sample) that this walkthrough is based on.
 
-1. Register the application in Azure Active Directory
-2. Redirect the browser to the sign-in page
-3. Receive an authorization code in your reply URL page
-4. Request an access token from the token endpoint
-5. Use the access token in a request to the Microsoft Graph API
 
-<!--<a name="register"/>-->
-## Register the application in Azure Active Directory
+## Prerequisites
 
-Before you can start working with Office 365, you need to register your application and set permissions to use Microsoft Graph services.
-With just a few clicks, you can register your application to access a user's work or school account using the [Application Registration Tool](https://dev.office.com/app-registration). To manage it you will need to go to the [Microsoft Azure Management portal](https://manage.windowsazure.com)
+To follow along with this walkthrough, you'll need: 
 
-Alternatively, see the section [Register your web server app with the Azure Management Portal](https://msdn.microsoft.com/en-us/office/office365/HowTo/add-common-consent-manually#bk_RegisterServerApp) for instructions on how to manually register the app, keep in mind the following details:
+- A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](http://dev.office.com/devprogram)
+- PHP version 5.5.9 or greater
+- [Composer](https://getcomposer.org/)
 
-* Specify a page in your PHP app as the **Sign-on URL** in step 6. In the case of the Connect sample, this page is [`Callback.php`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/app/callback.php).
-* [Configure the **Delegated permissions**](https://github.com/microsoftgraph/php-connect-rest-sample/wiki/Grant-permissions-to-the-Connect-application-in-Azure) that your app requires. The Connect sample requires **Send mail as signed-in user** permission.
 
-Take note of the following values in the **Configure** page of your Azure application.
+## Register the application
+Register an app on the Microsoft App Registration Portal. This generates the app ID and password that you'll use to configure the app.
 
-* Client ID
-* A valid key
-* A reply URL
+1. Sign into the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
 
-You need these values as parameters in the OAuth flow in your app.
+2. Choose **Add an app**.
 
-<!--<a name="redirect"/>-->
-## Redirect the browser to the sign-in page
+3. Enter a name for the app, and choose **Create application**. 
+	
+   The registration page displays, listing the properties of your app.
 
-Your app needs to redirect the browser to the sign-in page to get an authorization code and continue the OAuth flow.
+4. Choose **Generate New Password**.
 
-In the Connect sample, the code that redirects the browser is in the [`AuthenticationManager.connect`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/src/AuthenticationManager.php#L41) function.
+5. Copy the application ID and password.
 
-```php
-// Redirect the browser to the authorization endpoint. Auth endpoint is
-// https://login.microsoftonline.com/common/oauth2/authorize
-$redirect = Constants::AUTHORITY_URL . Constants::AUTHORIZE_ENDPOINT . 
-            '?response_type=code' . 
-            '&client_id=' . urlencode(Constants::CLIENT_ID) . 
-            '&redirect_uri=' . urlencode(Constants::REDIRECT_URI);
-header("Location: {$redirect}");
-exit();
+6. Choose **Add Platform** and **Web**.
+
+7. In the **Redirect URI** field, type `http://localhost:8000/oauth`.
+
+8. Choose **Save**.
+
+
+## Configure the project
+
+Start a new project using composer. To create a new PHP project using the Laravel framework, type the following command:
+
+```bash
+composer create-project --prefer-dist laravel/laravel getstarted
+```
+ 
+This creates a **getstarted** folder that we can use for this project.
+
+## Authenticate the user and get an access token
+We'll use an OAuth library to simplify the authentication process. [The PHP League](http://thephpleague.com/) provides an [OAuth client library](https://github.com/thephpleague/oauth2-client) that we can use in this project.
+
+### Add the dependency to composer
+
+Open the `composer.json` file and include the following dependency in the **require** section:
+
+```json
+"league/oauth2-client": "^1.4"
 ```
 
-> **Note:** <br />
-> You must send the **Location** header before writing any output to the page.
+Update the dependencies by running the following command:
 
-<!--<a name="authcode"/>-->
-## Receive an authorization code in your reply URL page
+```bash
+composer update
+```
 
-After the user signs-in, the flow returns the browser to the reply URL in your app. Azure appends an authorization code to the query string. The Connect sample uses the [`Callback.php`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/app/callback.php) page for this purpose.
+### Start the authentication flow
 
-The authorization code is provided in the `code` query string variable. The Connect sample saves the code to a session variable to use it later.
+1. Open the **resources** > **views** > **welcome.blade.php** file. Replace the **title** div element with the following code.
+    ```html
+    <div class="title" onClick="window.location='/oauth'">Sign in to Microsoft</div>
+    ```
+    
+2. Type-hint the `Illuminate\Http\Request` class on the **app** > **Http** > **routes.php** file. Add the following line before any route declaration.
+    ```php
+    use Illuminate\Http\Request;
+    ```
+    
+3. Add an */oauth* route to the **app** > **Http** > **routes.php** file. To add the route, copy the following code after the default route declaration. Insert the **application ID** and **password** of your app in the placeholder marked with **\<YOUR_APPLICATION_ID\>** and **\<YOUR_PASSWORD\>** respectively.
+    ```php
+    Route::get('/oauth', function () {
+        $provider = new \League\OAuth2\Client\Provider\GenericProvider([
+            'clientId'                => '<YOUR_APPLICATION_ID>',
+            'clientSecret'            => '<YOUR_PASSWORD>',
+            'redirectUri'             => 'http://localhost:8000/oauth',
+            'urlAuthorize'            => 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize',
+            'urlAccessToken'          => 'https://login.microsoftonline.com/common/oauth2/v2.0/token',
+            'urlResourceOwnerDetails' => '',
+            'scopes'                  => 'openid mail.send'
+        ]);
+
+        if (!$request->has('code')) {
+            return redirect($provider->getAuthorizationUrl());
+        }
+    });
+    ```
+    
+At this point, you should have a PHP app that displays *Sign in to Microsoft*. If you click the text, the app presents the Microsoft sign-in page. The next step is to handle the code that the authorization server sends to the redirect URI and exchange it for an access token.
+
+### Exchange the authorization code for an access token
+
+We need to make to handle the authorization server response, which contains a code that we can exchange for an access token.
+
+Update the */oauth* route so it can get an access token with the authorization code. To do this open the **app** > **Http** > **routes.php** file and add the following *else* conditional clause to the existing *if* statement.
 
 ```php
-if (isset($_GET['code'])) {
-    $_SESSION['code'] =  $_GET['code'];
+if (!$request->has('code')) {
+    ...
+    // add the following lines
+} else {
+    $accessToken = $provider->getAccessToken('authorization_code', [
+        'code'     => $request->input('code')
+    ]);
+    exit($accessToken->getToken());
+}
+```
+    
+Note that we have an access token in this line `exit($accessToken->getToken());`. Now you're ready to add code to call the Microsoft Graph. 
+
+## Call the Microsoft Graph using REST
+We can call the Microsoft Graph using REST. The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint. To use the REST API, replace the line `exit($accessToken->getToken());` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
+
+```php
+$client = new \GuzzleHttp\Client();
+
+$email = "{
+    Message: {
+    Subject: 'Sent using the Microsoft Graph REST API',
+    Body: {
+        ContentType: 'text',
+        Content: 'This is the email body'
+    },
+    ToRecipients: [
+        {
+            EmailAddress: {
+            Address: '<YOUR_EMAIL_ADDRESS>'
+            }
+        }
+    ]
+    }}";
+
+$response = $client->request('POST', 'https://graph.microsoft.com/v1.0/me/sendmail', [
+    'headers' => [
+        'Authorization' => 'Bearer ' . $accessToken->getToken(),
+        'Content-Type' => 'application/json;odata.metadata=minimal;odata.streaming=true'
+    ],
+    'body' => $email
+]);
+if($response.getStatusCode() === 201) {
+    exit('Email sent, check your inbox');
+} else {
+    exit('There was an error sending the email. Status code: ' . $response.getStatusCode());
 }
 ```
 
-<!--<a name="accesstoken"/>-->
-## Request an access token from the token endpoint
+## Run the app
+You're ready to try your PHP app.
 
-Once you have the authorization code, you can use it along the client ID, key, and reply URL values that you got from Azure AD to request an access token. 
+1. In your shell type the following command:
+    ```bash
+    php artisan serve
+    ```
+    
+2. Navigate to `http://localhost:8000` in your web browser.
+3. Choose **Sign in to Microsoft**.
+4. Sign in with your personal or work or school account and grant the requested permissions.
 
-> **Note:** <br />
-> The request must also specify a resource that we are trying to consume. In the case of Microsoft Graph API, the resource value is `https://graph.microsoft.com`.
+Check the inbox of the email address that you configured in [Call the Microsoft Graph using REST](#call-the-microsoft-graph-using-rest) section. You should have an email from the account that you used to sign in to the app.
 
-The Connect sample requests a token using the code in the [`AuthenticationManager.acquireToken`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/src/AuthenticationManager.php#L62) function. Here is the most relevant code.
+## Next steps
+- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
 
-```php
-$tokenEndpoint = Constants::AUTHORITY_URL . Constants::TOKEN_ENDPOINT;
 
-// Send a POST request to the token endpoint to retrieve tokens.
-// Token endpoint is:
-// https://login.microsoftonline.com/common/oauth2/token
-$response = RequestManager::sendPostRequest(
-    $tokenEndpoint, 
-    array(),
-    array(
-        'client_id' => Constants::CLIENT_ID,
-        'client_secret' => Constants::CLIENT_SECRET,
-        'code' => $_SESSION['code'],
-        'grant_type' => 'authorization_code',
-        'redirect_uri' => Constants::REDIRECT_URI,
-        'resource' => Constants::RESOURCE_ID
-    )
-
-// Store the raw response in JSON format.
-$jsonResponse = json_decode($response, true);
-
-// The access token response has the following parameters:
-// access_token - The requested access token.
-// expires_in - How long the access token is valid.
-// expires_on - The time when the access token expires.
-// id_token - An unsigned JSON Web Token (JWT).
-// refresh_token - An OAuth 2.0 refresh token.
-// resource - The App ID URI of the web API (secured resource).
-// scope - Impersonation permissions granted to the client application.
-// token_type - Indicates the token type value.
-foreach ($jsonResponse as $key=>$value) {
-    $_SESSION[$key] = $value;
-}
-```
-
-> **Note:** <br />
-> The response provides more information than just the access token, for example, your app can get a refresh token to request new access tokens without having the user to explicitly sign-in.
-
-Your PHP app can now use the session variable `access_token` to issue authenticated requests to the Microsoft Graph API.
-
-<!--<a name="request"/>-->
-## Use the access token in a request to the Microsoft Graph API
-
-With an access token, your app can make authenticated requests to the Microsoft Graph API. Your app must provide the access token in the **Authorization** header of each request.
-
-The Connect sample sends an email using the **sendMail** endpoint in the Microsoft Graph API. The code is in the [`MailManager.sendWelcomeMail`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/src/MailManager.php#L40) function. This is the code that shows how to send the access code in the Authorization header.
-
-```php
-// Send the email request to the sendmail endpoint, 
-// which is in the following URI:
-// https://graph.microsoft.com/v1.0/me/microsoft.graph.sendMail
-// Note that the access token is attached in the Authorization header
-RequestManager::sendPostRequest(
-    Constants::RESOURCE_ID . Constants::SENDMAIL_ENDPOINT,
-    array(
-        'Authorization: Bearer ' . $_SESSION['access_token'],
-        'Content-Type: application/json;' . 
-                      'odata.metadata=minimal;' .
-                      'odata.streaming=true'
-    ),
-    $email
-);
-```
-
-> **Note:** <br />
-> The request must also send a **Content-Type** header with a value accepted by the Microsoft Graph API, for example, `application/json;odata.metadata=minimal;odata.streaming=true`.
-
-The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the API reference to explore what else you can accomplish with the Microsoft Graph API.
-
-<!--## Additional resources
-
--  [Office 365 PHP Connect sample using Microsoft Graph API](https://github.com/OfficeDev/O365-PHP-Unified-API-Connect)-->
+## See also
+* [Overview of Microsoft Graph](http://graph.microsoft.io/docs)
+* [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+* [Azure AD v2.0 tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
