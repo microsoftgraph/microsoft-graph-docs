@@ -1,17 +1,17 @@
-# Get started with the Microsoft Graph in an Android app
+# Get started with Microsoft Graph in an Android app
 
-This article describes the tasks required to get an access token from the v2 authentication endpoint and call the Microsoft Graph. It walks you through building the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article also describes how to access the Microsoft Graph by using either the [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-sdk-android) or raw REST calls.
+This article describes the tasks required to get an access token from the v2.0 authentication endpoint and call Microsoft Graph. It walks you through building the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) and explains the main concepts that you implement to use Microsoft Graph in your app for Android. The article also describes how to access Microsoft Graph by using either the [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-sdk-android) or raw REST calls.
 
-This article shows how to perform specific tasks that you need to follow to use the Microsoft Graph in your app for Android. For example, you need to show the Microsoft sign in page to your users. Here's a screenshot of the sign in page for Microsoft accounts.
+To use Microsoft Graph in your app for Android, you need to show the Microsoft sign in page to your users, as shown in the following screenshot.
 
 ![Sign in page for Microsoft accounts on Android](images/AndroidConnect.png)
 
-**Don't feel like building an app?** Get up and running fast downloading the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) that this walkthrough is based on.
+**Don't feel like building an app?** Get up and running fast by downloading the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) that this article is based on.
 
 
 ## Prerequisites
 
-To follow along with this walkthrough, you'll need: 
+To get started, you'll need: 
 
 - A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](http://dev.office.com/devprogram)
 - Android Studio 2.0 or later version
@@ -32,7 +32,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 5. Choose **Add Platform** and **Mobile application**.
 
-    > Note: The Application Registration Portal provides a Redirect URI with a value of *urn:ietf:wg:oauth:2.0:oob*. However, we'll use the default Redirect URI value of *https://login.microsoftonline.com/common/oauth2/nativeclient*.
+    > **Note:** The Application Registration Portal provides a Redirect URI with a value of *urn:ietf:wg:oauth:2.0:oob*. However, you'll use the default Redirect URI value of *https://login.microsoftonline.com/common/oauth2/nativeclient*.
 
 6. Choose **Save**.
 
@@ -45,12 +45,12 @@ Start a new project in Android Studio. You can leave the default values for most
     * Minimum SDK - **API 16: Android 4.1 (Jelly Bean)**
 * Add an Activity to Mobile - **Basic Activity**
  
-This provides us with an Android project with an activity and a button that we can use to authenticate the user.
+This provides you with an Android project with an activity and a button that you can use to authenticate the user.
 
 > Note: You can also use the [Starter project](https://github.com/microsoftgraph/android-java-connect-sample/tree/master/starter-project) that takes care of the project configuration so you can focus on the coding sections of this walkthrough.
 
 ## Authenticate the user and get an access token
-We'll use an OAuth library to simplify the authentication process. [OpenID](http://openid.net) provides [AppAuth for Android](https://github.com/openid/AppAuth-Android), a library that we can use in this project.
+You'll use an OAuth library to simplify the authentication process. [OpenID](http://openid.net) provides [AppAuth for Android](https://github.com/openid/AppAuth-Android), a library that you can use in this project.
 
 ### Add the dependency to app/build.gradle
 
@@ -110,7 +110,7 @@ At this point, you should have an Android app with a button. If you press the bu
 
 ### Exchange the authorization code for an access token
 
-We need to make our app ready to handle the authorization server response, which contains a code that we can exchange for an access token.
+You need to make your app ready to handle the authorization server response, which contains a code that you can exchange for an access token.
 
 1. We need to tell the Android system that **MainActivity** can handle requests to *https://login.microsoftonline.com/common/oauth2/nativeclient*. To do this open the **AndroidManifest** file and add the following children to the MainActivity's **intent-filter** element.
     ```xml
@@ -122,7 +122,7 @@ We need to make our app ready to handle the authorization server response, which
     <data android:path="/common/oauth2/nativeclient"/>
     ```
 
-2. The activity will be invoked when the authorization server sends a response. We can request an access token with the response from the authorization server. Go back to your **MainActivity** and append the following code to the **onCreate** method.
+2. The activity will be invoked when the authorization server sends a response. You can request an access token with the response from the authorization server. Go back to your **MainActivity** and append the following code to the **onCreate** method.
     ```java
     Bundle extras = getIntent().getExtras();
     if (extras != null) {
@@ -153,15 +153,15 @@ We need to make our app ready to handle the authorization server response, which
     }
     ```
 
-Note that we have an access token in this line `String accessToken = tokenResponse.accessToken;`. Now you're ready to add code to call the Microsoft Graph. 
+Note that you have an access token in this line `String accessToken = tokenResponse.accessToken;`. Now you're ready to add code to call Microsoft Graph. 
 
-## Call the Microsoft Graph
-If you're using the Microsoft Graph SDK, read on. If you're using REST, jump to the [Using the Microsoft Graph REST API](#using-the-microsoft-graph-rest-api) section.
+## Call Microsoft Graph
+You can [use the Microsoft Graph SDK](#call-microsoft-graph-using-the-microsoft-graph-sdk) or the [Microsoft Graph REST API](#call-microsoft-graph-using-the-microsoft-graph-rest-api) to call Microsoft Graph.
 
-### Using the Microsoft Graph SDK
-The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-sdk-android) provides classes that builds requests and process results from the Microsoft Graph API. Follow these steps to use the Microsoft Graph SDK.
+### Call Microsoft Graph using the Microsoft Graph SDK
+The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-sdk-android) provides classes that build requests and process results from Microsoft Graph. Follow these steps to use the Microsoft Graph SDK.
 
-1. Add internet permissions to your app. Open the **AndroidManifest** file and add the following child to the manifest element.
+1. Add Internet permissions to your app. Open the **AndroidManifest** file and add the following child to the manifest element.
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
     ```
@@ -212,10 +212,10 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
     });
     ```
 
-### Using the Microsoft Graph REST API
+### Call Microsoft Graph using the Microsoft Graph REST API
 The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint. Follow these steps to use the REST API.
 
-1. Add internet permissions to your app. Open the **AndroidManifest** file and add the following child to the manifest element.
+1. Add Internet permissions to your app. Open the **AndroidManifest** file and add the following child to the manifest element.
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
     ```
@@ -291,12 +291,12 @@ You're ready to try your Android app.
 
 1. Start your Android emulator or connect your physical device to your computer.
 2. In Android Studio, press Shift + F10 to run your app.
-3. Choose your Android emulator or device from the deployment dialog.
+3. Choose your Android emulator or device from the deployment dialog box.
 4. Tap the Floating Action Button on the main activity.
 5. Sign in with your personal or work or school account and grant the requested permissions.
 6. In the app selection dialog, tap your app to continue.
 
-Check the inbox of the email address that you configured in [Call the Microsoft Graph](#call-the-microsoft-graph) section. You should have an email from the account that you used to sign in to the app.
+Check the inbox of the email address that you configured in [Call Microsoft Graph](#call-the-microsoft-graph). You should have an email from the account that you used to sign in to the app.
 
 ## Next steps
 - Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).

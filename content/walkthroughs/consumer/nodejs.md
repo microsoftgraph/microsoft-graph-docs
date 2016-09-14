@@ -1,165 +1,287 @@
-# Call Microsoft Graph with a Node.js app
+# Get started with Microsoft Graph in a Node.js app
 
-In this article we look at the minimum tasks required to connect your application to Office 365 and call the Microsoft Graph API. We use code from the [Office 365 Node.js Connect sample using Microsoft Graph](https://github.com/microsoftgraph/nodejs-connect-rest-sample) to explain the main concepts that you have to implement in your app.
+This article describes the tasks required to get an access token from the v2 authentication endpoint and call Microsoft Graph. It walks you through building the [Microsoft Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) and explains the main concepts that you implement to use Microsoft Graph. The article describes how to access the Microsoft Graph API by using raw REST calls.
 
-![Office 365 Node.js Connect sample screenshot](./images/web-screenshot.png)
+This is the app you'll create. 
 
-## Overview
+![The web app after login showing the "Send mail" button](./images/web-screenshot.png)
 
-To call the Microsoft Graph API, your web app must complete the following tasks.
 
-1. Register the application in Azure Active Directory 
-2. Install the Azure Active Directory Client Library for Node
-3. Redirect the browser to the sign-in page
-4. Receive an authorization code in your reply URL page
-5. Use `adal-node` to request an access token
-6. Make a request to the Microsoft Graph API
+**Don't feel like building an app?** Get up and running fast using the [Quick Start](http://dev.office.com/getting-started).
 
-<!--<a name="register"/>-->
-## Register your application in Azure Active Directory
 
-Before you can start working with Office 365, you need to register your application and set permissions to use Microsoft Graph services.
-With just a few clicks, you can register your application to access a user's work or school account using the [Application Registration Tool](https://dev.office.com/app-registration). To manage it you will need to go to the [Microsoft Azure Management portal](https://manage.windowsazure.com)
+## Prerequisites
 
-Alternatively, see the section [Register your web server app with the Azure Management Portal](https://msdn.microsoft.com/en-us/office/office365/HowTo/add-common-consent-manually#bk_RegisterServerApp) for instructions on how to manually register the app, keep in mind the following details:
+To follow along with this walkthrough, you'll need: 
 
-* Specify a page in your Node.js app as the **Sign-on URL** in step 6. In the case of the Connect sample, the URL is http://localhost:8080/login, which maps to the [/login](https://github.com/microsoftgraph/nodejs-connect-rest-sample/blob/master/routes/index.js#L33) route.
-* [Configure the **Delegated permissions**](https://github.com/microsoftgraph/nodejs-connect-rest-sample/wiki/Grant-permissions-to-the-Connect-application-in-Azure) that your app requires. The Connect sample requires **Send mail as signed-in user** permission.
+- A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](http://dev.office.com/devprogram) to register the app
+- [Node.js with npm](https://nodejs.org/en/download/) 
+- The [Microsoft Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample). You'll use the **starter-project** folder in the sample files for this walkthrough.
 
-Take note of the following values in the **Configure** page of your Azure application.
+## Register the application
+Register an app on the Microsoft App Registration Portal. This generates the app ID and password that you'll use to configure the app in Visual Studio.
 
-* Client ID
-* A valid key
-* A reply URL
+1. Sign into the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
 
-You need these values as parameters in the OAuth flow in your app.
+2. Choose **Add an app**.
 
-<!--<a name="adal">-->
-## Install the Azure Active Directory Client Library for Node
+3. Enter a name for the app, and choose **Create application**. 
+	
+   The registration page displays, listing the properties of your app.
 
-The ADAL for Node.js library makes it easy for Node.js applications to authenticate to AAD in order to access AAD protected web resources.
-To add adal-node to your existing `package.json` enter the following into your preferred terminal.
+4. Copy the application ID. This is the unique identifier for your app. 
 
-`npm install adal-node --save`
+5. Under **Application Secrets**, choose **Generate New Password**. Copy the password from the **New password generated** dialog.
 
-For more information about the adal-node client library, see its package info on [npm](https://www.npmjs.com/package/adal-node).
-For issues, source code, and the latest in upcoming features and fixes, see adal-node's project on [Github](https://github.com/AzureAD/azure-activedirectory-library-for-nodejs).
+   You'll use the application ID and application password (secret) to configure the app. 
 
-<!--<a name="redirect"/>-->
-## Redirect the browser to the sign-in page
+6. Under **Platforms**, choose **Add platform** > **Web**.
 
-Your app needs to redirect the browser to the sign-in page to get an authorization code and continue the OAuth 2.0 flow.
+7. Enter *http://localhost:3000/login* as the Redirect URI. 
 
-In the Connect sample, the authentication URL from [`authHelper.js#getAuthUrl`](https://github.com/microsoftgraph/nodejs-connect-rest-sample/blob/master/authHelper.js#L17) is redirected by the [`login.hbs#login`](https://github.com/microsoftgraph/nodejs-connect-rest-sample/blob/master/views/login.hbs#L2) function through a client-side `onclick` event.
+8. Choose **Save**.
 
-**authHelper.js#getAuthUrl**
-```javascript
-/**
- * Generate a fully formed uri to use for authentication based on the supplied resource argument
- * @return {string} a fully formed uri with which authentcation can be completed
- */
-function getAuthUrl() {
-    return credentials.authority + "/oauth2/authorize" +
-        "?client_id=" + credentials.client_id +
-        "&response_type=code" +
-        "&redirect_uri=" + credentials.redirect_uri;
-};
-```
 
-**login.hbs#login**
-```javascript
-function login() {
-	window.location = '{{auth_url}}'.replace(/&amp;/g, '&'); // transform HTML special char from .hbs template rendering
-}
-```
+### Configure the project
+1. Open the **starter-project** folder in the sample files.
 
-<!--<a name="authcode"/>-->
-## Receive an authorization code in your reply URL page
+1. In a command prompt, run the following command in the root directory of the starter project. This installs the project dependencies.
 
-After the user signs in, the flow returns the browser to the reply URL in your app. The authorization code is provided in the `code` query string variable.
+  ```
+    npm install
+  ```
 
-```javascript
-router.get('/<application reply url>', function (req, res, next) {
-  var authCode = req.query.code;
-  // your router's implementation
-});
-```
+1. In the starter project files, open authHelper.js.
 
-See the [relevant code](https://github.com/microsoftgraph/nodejs-connect-rest-sample/blob/master/routes/index.js#L34) in the Connect sample
 
-<!--<a name="accesstoken"/>-->
-## Use `adal-node` to request an access token
+1. In the **credentials** field, replace the **ENTER_YOUR_CLIENT_ID** and **ENTER_YOUR_SECRET** placeholder values with the values you just copied.
 
-Now that we've authenticated with Azure Active Directory, our next step is to acquire an access token via adal-node. After we've done that, we'll be ready to make REST requests to the Microsoft Graph API.
+  
+## Authenticate the user and get an access token
+In this step, you'll add sign-in and token management code. But first, let's take a closer look at the auth flow.
 
-To request an access token, adal-node provides two callback functions.
+This app uses the authorization code grant flow with a delegated user identity. For a web application, the flow requires the application ID, secret, and redirect URI from the registered app. 
 
-|                          Function                         |                                      Params                                      | Description                                                                                             |
-|:---------------------------------------------------------:|:--------------------------------------------------------------------------------:|---------------------------------------------------------------------------------------------------------|
-| `AuthenticationContext.acquireTokenWithAuthorizationCode` | `authCode`, `redirect_uri`, `resource`, `client_id`, `client_secret`, `callback` | provides an access token for a specified resource based on the authorization code returned during login |
-| `AuthenticationContext.acquireTokenWithRefreshToken`      | `token`, `client_id`, `client_secret`, `resource`, `callback`                    | provides an access token for a specified resourced based on a refresh token                             |
+The auth flow can be broken down into these basic steps:
 
-In the Connect sample, requests are routed through [`authHelper.js`](https://github.com/microsoftgraph/nodejs-connect-rest-sample/blob/master/authHelper.js) so that the `client_id` and `client_secret` can be added.
+1. Redirect the user for authentication and consent
+2. Get an authorization code
+3. Redeem the authorization code for an access token
+4. Use the refresh token to get a new access token when the access token expires
 
-```javascript
-// The application registration (must match Azure AD config)
-var credentials = {
-    authority: "https://login.microsoftonline.com/common",
-    client_id: "<your client id here>",
-    client_secret: "<your client secret>",
-    redirect_uri: "http://localhost:8080/login"
-};
+The app uses the [oauth](https://www.npmjs.com/package/oauth) middleware to authenticate and obtain tokens. It uses the [cookie-parser](https://www.npmjs.com/package/cookie-parser) middleware to cache token information in cookies. The code used to store and access token information is found in the index.js controller.
+    
+   >**Important** The simple authentication and token handling in this project is for sample purposes only. In a production app, you should construct a more robust way of handling authentication, including validation and secure token handling.
 
-/**
- * Gets a token for a given resource.
- * @param {string} code An authorization code returned from a client.
- * @param {string} res A URI that identifies the resource for which the token is valid.
- * @param {AcquireTokenCallback} callback The callback function.
- */
-function getTokenFromCode(res, code, callback) {
-    var authContext = new AuthenticationContext(credentials.authority);
-    authContext.acquireTokenWithAuthorizationCode(code, credentials.redirect_uri, res, credentials.client_id, credentials.client_secret, function (err, response) {
-        if (err) {
+Now back to building the app.
+
+1. In authHelper.js, replace the *getTokenFromCode* function with the following code. This gets an access token using an authorization code.
+
+  ```
+    function getTokenFromCode(code, callback) {
+      var OAuth2 = OAuth.OAuth2;
+      var oauth2 = new OAuth2(
+        credentials.client_id,
+        credentials.client_secret,
+        credentials.authority,
+        credentials.authorize_endpoint,
+        credentials.token_endpoint
+      );
+
+      oauth2.getOAuthAccessToken(
+        code,
+        {
+          grant_type: 'authorization_code',
+          redirect_uri: credentials.redirect_uri,
+          response_mode: 'form_post',
+          nonce: uuid.v4(),
+          state: 'abcd'
+        },
+        function (e, accessToken, refreshToken) {
+          callback(e, accessToken, refreshToken);
+        }
+      );
+    }
+  ```
+
+1. Replace the **getTokenFromRefreshToken** function with the following code. This gets an access token using a refresh token.
+
+  ```
+    function getTokenFromRefreshToken(refreshToken, callback) {
+      var OAuth2 = OAuth.OAuth2;
+      var oauth2 = new OAuth2(
+        credentials.client_id,
+        credentials.client_secret,
+        credentials.authority,
+        credentials.authorize_endpoint,
+        credentials.token_endpoint
+      );
+
+      oauth2.getOAuthAccessToken(
+        refreshToken,
+        {
+          grant_type: 'refresh_token',
+          redirect_uri: credentials.redirect_uri,
+          response_mode: 'form_post',
+          nonce: uuid.v4(),
+          state: 'abcd'
+        },
+        function (e, accessToken) {
+          callback(e, accessToken);
+        }
+      );
+    }
+  ```
+
+Now you're ready to add code to call Microsoft Graph. 
+
+## Call Microsoft Graph
+The app calls Microsoft Graph to get user information and to send an email on the user's behalf. These calls are initiated from the index.js controller in response to UI events.
+
+1. Open requestUtil.js.
+
+1. Replace the **getUserData** function with the following code. This configures and sends the GET request to the */me* endpoint and processes the response.
+
+  ```
+    function getUserData(accessToken, callback) {
+      var options = {
+        host: 'graph.microsoft.com',
+        path: '/v1.0/me',
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+          Authorization: 'Bearer ' + accessToken
+        }
+      };
+
+      https.get(options, function (response) {
+        var body = '';
+        response.on('data', function (d) {
+          body += d;
+        });
+        response.on('end', function () {
+          var error;
+          if (response.statusCode === 200) {
+            callback(null, JSON.parse(body));
+          } else {
+            error = new Error();
+            error.code = response.statusCode;
+            error.message = response.statusMessage;
+            // The error body sometimes includes an empty space
+            // before the first character, remove it or it causes an error.
+            body = body.trim();
+            error.innerError = JSON.parse(body).error;
+            callback(error, null);
+          }
+        });
+      }).on('error', function (e) {
+        callback(e, null);
+      });
+    }
+  ```
+
+1. Replace the **postSendMail** function with the following code. This configures and sends the POST request to the */me/sendMail* endpoint and processes the response.
+
+  ```
+    function postSendMail(accessToken, mailBody, callback) {
+      var outHeaders = {
+        'Content-Type': 'application/json',
+        Authorization: 'Bearer ' + accessToken,
+        'Content-Length': mailBody.length
+      };
+      var options = {
+        host: 'graph.microsoft.com',
+        path: '/v1.0/me/sendMail',
+        method: 'POST',
+        headers: outHeaders
+      };
+
+      // Set up the request
+      var post = https.request(options, function (response) {
+        var body = '';
+        response.on('data', function (d) {
+          body += d;
+        });
+        response.on('end', function () {
+          var error;
+          if (response.statusCode === 202) {
             callback(null);
-        }
-        else {
-            callback(response);
-        }
-    });
-};
-```
+          } else {
+            error = new Error();
+            error.code = response.statusCode;
+            error.message = response.statusMessage;
+            // The error body sometimes includes an empty space
+            // before the first character, remove it or it causes an error.
+            body = body.trim();
+            error.innerError = JSON.parse(body).error;
+            // Note: If you receive a 500 - Internal Server Error
+            // while using a Microsoft account (outlook.com, hotmail.com or live.com),
+            // it's possible that your account has not been migrated to support this flow.
+            // Check the inner error object for code 'ErrorInternalServerTransientError'.
+            // You can try using a newly created Microsoft account or contact support.
+            callback(error);
+          }
+        });
+      });
+      
+      // write the outbound data to it
+      post.write(mailBody);
+      // we're done!
+      post.end();
 
-<!--<a name="request"/>-->
-## Make a request to the Microsoft Graph API
+      post.on('error', function (e) {
+        callback(e);
+      });
+    }
+  ```
+  
+1. Open emailer.js.
 
-To identify our requests to the Graph API, our requests must be signed with an `Authorization` header containing the access token for any web service resource we request. A properly formed authorization header will include the access token from adal-node and will take the following form.
+1. Replace the **wrapEmail** function with the following code. This builds the payload that represents the email message to send.
 
-`Authorization: Bearer <access token>`
+  ```
+    function wrapEmail(content, recipient) {
+      var emailAsPayload = {
+        Message: {
+          Subject: 'Welcome to Office 365 development with Node.js and the Office 365 Connect sample',
+          Body: {
+            ContentType: 'HTML',
+            Content: content
+          },
+          ToRecipients: [
+            {
+              EmailAddress: {
+                Address: recipient
+              }
+            }
+          ]
+        },
+        SaveToSentItems: true
+      };
+      return emailAsPayload;
+    }
+  ```
 
-Using `adal-node`, combined with our authentication logic from the previous section, we can now use our access token to sign requests.
+## Run the app
 
-```javascript
-/* GET home page. */
-router.get('/<application reply url>', function (req, res, next) {
-    var authCode = req.query.code;
-    authHelper.getTokenFromCode('https://graph.microsoft.com/', req.query.code, function (token) {
-        if (token !== null) {
-            // Use this token to sign requests
-            var headers = {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + token
-                };
-            // request implementation...
-        } else {
-            // error handling
-        }
-    });
-});
-```
+1. In a command prompt, run the following command in the root directory of the starter project.
 
-The Microsoft Graph is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [API reference](http://graph.microsoft.io/docs/api-reference/v1.0) to explore what else you can accomplish with the Microsoft Graph API.
+  ```
+    npm start
+  ```
 
-<!--## Additional resources
+1. In a browser, navigate to *http://localhost:3000* and choose the **Connect to Office 365** button.
 
-- [Office 365 Node.js Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-Nodejs-Unified-API-Connect)-->
+1. Sign in and grant the requested permissions. 
 
+1. Optionally edit the recipient's email address, and then choose the **Send mail** button. When the mail is sent, a Success message is displayed below the button. 
+
+## Next steps
+- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Explore our other [Node.js samples](https://github.com/search?utf8=%E2%9C%93&q=node+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults) on GitHub.
+
+
+## See also
+- [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
