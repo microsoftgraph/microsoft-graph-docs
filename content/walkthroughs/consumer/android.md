@@ -110,18 +110,14 @@ At this point, you should have an Android app with a button. If you press the bu
 
 We need to make our app ready to handle the authorization server response, which contains a code that we can exchange for an access token.
 
-1. We need to tell the Android system that the app can handle requests to *https://login.microsoftonline.com/common/oauth2/nativeclient*. To do this open the **AndroidManifest** file and add the following activity element.
+1. We need to tell the Android system that **MainActivity** can handle requests to *https://login.microsoftonline.com/common/oauth2/nativeclient*. To do this open the **AndroidManifest** file and add the following children to the MainActivity's **intent-filter** element.
     ```xml
-    <activity android:name="net.openid.appauth.RedirectUriReceiverActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.VIEW"/>
-            <category android:name="android.intent.category.DEFAULT"/>
-            <category android:name="android.intent.category.BROWSABLE"/>
-            <data android:scheme="https"/>
-            <data android:host="login.microsoftonline.com"/>
-            <data android:path="/common/oauth2/nativeclient"/>
-        </intent-filter>
-    </activity>
+    <action android:name="android.intent.action.VIEW"/>
+    <category android:name="android.intent.category.DEFAULT"/>
+    <category android:name="android.intent.category.BROWSABLE"/>
+    <data android:scheme="https"/>
+    <data android:host="login.microsoftonline.com"/>
+    <data android:path="/common/oauth2/nativeclient"/>
     ```
 
 2. The activity will be invoked when the authorization server sends a response. We can request an access token with the response from the authorization server. Go back to your **MainActivity** and append the following code to the **onCreate** method.
@@ -171,7 +167,7 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
 2. Add dependencies to the Microsoft Graph SDK and GSON.
    ```gradle
     compile 'com.microsoft.graph:msgraph-sdk-android:1.0.0'
-    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.google.code.gson:gson:2.7'
    ```
    
 3. Replace the line `String accessToken = tokenResponse.accessToken;` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
