@@ -50,6 +50,8 @@ composer create-project --prefer-dist laravel/laravel getstarted
  
 This creates a **getstarted** folder that we can use for this project.
 
+> Note: You can also use the [Starter project](https://github.com/microsoftgraph/php-connect-rest-sample/tree/master/starter-project) that takes care of the project configuration so you can focus on the coding sections of this walkthrough.
+
 ## Authenticate the user and get an access token
 We'll use an OAuth library to simplify the authentication process. [The PHP League](http://thephpleague.com/) provides an [OAuth client library](https://github.com/thephpleague/oauth2-client) that we can use in this project.
 
