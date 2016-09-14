@@ -47,6 +47,8 @@ Start a new project in Android Studio. You can leave the default values for most
  
 This provides us with an Android project with an activity and a button that we can use to authenticate the user.
 
+> Note: You can also use the [Starter project](https://github.com/microsoftgraph/android-java-connect-sample/tree/master/starter-project) that takes care of the project configuration so you can focus on the coding sections of this walkthrough.
+
 ## Authenticate the user and get an access token
 We'll use an OAuth library to simplify the authentication process. [OpenID](http://openid.net) provides [AppAuth for Android](https://github.com/openid/AppAuth-Android), a library that we can use in this project.
 
