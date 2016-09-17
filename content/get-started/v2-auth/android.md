@@ -47,6 +47,8 @@ Start a new project in Android Studio. You can leave the default values for most
  
 This provides you with an Android project with an activity and a button that you can use to authenticate the user.
 
+> Note: You can also use the [Starter project](https://github.com/microsoftgraph/android-java-connect-sample/tree/master/starter-project) that takes care of the project configuration so you can focus on the coding sections of this walkthrough.
+
 ## Authenticate the user and get an access token
 You'll use an OAuth library to simplify the authentication process. [OpenID](http://openid.net) provides [AppAuth for Android](https://github.com/openid/AppAuth-Android), a library that you can use in this project.
 
@@ -110,18 +112,14 @@ At this point, you should have an Android app with a button. If you press the bu
 
 You need to make your app ready to handle the authorization server response, which contains a code that you can exchange for an access token.
 
-1. You need to tell the Android system that the app can handle requests to *https://login.microsoftonline.com/common/oauth2/nativeclient*. To do this, open the **AndroidManifest** file and add the following activity element.
+1. We need to tell the Android system that **MainActivity** can handle requests to *https://login.microsoftonline.com/common/oauth2/nativeclient*. To do this open the **AndroidManifest** file and add the following children to the MainActivity's **intent-filter** element.
     ```xml
-    <activity android:name="net.openid.appauth.RedirectUriReceiverActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.VIEW"/>
-            <category android:name="android.intent.category.DEFAULT"/>
-            <category android:name="android.intent.category.BROWSABLE"/>
-            <data android:scheme="https"/>
-            <data android:host="login.microsoftonline.com"/>
-            <data android:path="/common/oauth2/nativeclient"/>
-        </intent-filter>
-    </activity>
+    <action android:name="android.intent.action.VIEW"/>
+    <category android:name="android.intent.category.DEFAULT"/>
+    <category android:name="android.intent.category.BROWSABLE"/>
+    <data android:scheme="https"/>
+    <data android:host="login.microsoftonline.com"/>
+    <data android:path="/common/oauth2/nativeclient"/>
     ```
 
 2. The activity will be invoked when the authorization server sends a response. You can request an access token with the response from the authorization server. Go back to your **MainActivity** and append the following code to the **onCreate** method.
@@ -171,7 +169,7 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
 2. Add dependencies to the Microsoft Graph SDK and GSON.
    ```gradle
     compile 'com.microsoft.graph:msgraph-sdk-android:1.0.0'
-    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.google.code.gson:gson:2.7'
    ```
    
 3. Replace the line `String accessToken = tokenResponse.accessToken;` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
@@ -301,7 +299,7 @@ You're ready to try your Android app.
 Check the inbox of the email address that you configured in [Call Microsoft Graph](#call-the-microsoft-graph). You should have an email from the account that you used to sign in to the app.
 
 ## Next steps
-- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Try out the [Microsoft Graph explorer](https://graph.microsoft.io/graph-explorer).
 - Find examples of common operations in the [Snippets Sample for Android](https://github.com/microsoftgraph/android-java-snippets-sample), or explore our other [Android samples](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=android) on GitHub.
 
 

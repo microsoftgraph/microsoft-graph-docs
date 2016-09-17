@@ -42,16 +42,18 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 ## Configure the project
 
-Start a new project using composer. To create a new PHP project using the Laravel framework, type the following command:
+Start a new project using composer. To create a new PHP project using the Laravel framework, use the following command:
 
 ```bash
 composer create-project --prefer-dist laravel/laravel getstarted
 ```
  
-This creates a **getstarted** folder that we can use for this project.
+This creates a **getstarted** folder that you can use for this project.
+
+> Note: You can also use the [Starter project](https://github.com/microsoftgraph/php-connect-rest-sample/tree/master/starter-project) that takes care of the project configuration so you can focus on the coding sections of this walkthrough.
 
 ## Authenticate the user and get an access token
-We'll use an OAuth library to simplify the authentication process. [The PHP League](http://thephpleague.com/) provides an [OAuth client library](https://github.com/thephpleague/oauth2-client) that we can use in this project.
+Use an OAuth library to simplify the authentication process. [The PHP League](http://thephpleague.com/) provides an [OAuth client library](https://github.com/thephpleague/oauth2-client) that you can use in this project.
 
 ### Add the dependency to composer
 
@@ -102,9 +104,9 @@ At this point, you should have a PHP app that displays *Sign in to Microsoft*. I
 
 ### Exchange the authorization code for an access token
 
-We need to make to handle the authorization server response, which contains a code that we can exchange for an access token.
+You need to handle the authorization server response, which contains a code that you can exchange for an access token.
 
-Update the */oauth* route so it can get an access token with the authorization code. To do this open the **app** > **Http** > **routes.php** file and add the following *else* conditional clause to the existing *if* statement.
+Update the */oauth* route so it can get an access token with the authorization code. To do this, open the **app** > **Http** > **routes.php** file and add the following *else* conditional clause to the existing *if* statement.
 
 ```php
 if (!$request->has('code')) {
@@ -118,10 +120,10 @@ if (!$request->has('code')) {
 }
 ```
     
-Note that we have an access token in this line `exit($accessToken->getToken());`. Now you're ready to add code to call the Microsoft Graph. 
+Note that you have an access token in this line: `exit($accessToken->getToken());`. Now you're ready to add code to call Microsoft Graph. 
 
-## Call the Microsoft Graph using REST
-We can call the Microsoft Graph using REST. The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint. To use the REST API, replace the line `exit($accessToken->getToken());` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
+## Call Microsoft Graph using REST
+You can call Microsoft Graph using REST. Replace the line `exit($accessToken->getToken());` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
 
 ```php
 $client = new \GuzzleHttp\Client();
@@ -159,19 +161,19 @@ if($response.getStatusCode() === 201) {
 ## Run the app
 You're ready to try your PHP app.
 
-1. In your shell type the following command:
+1. In your shell, type the following command:
     ```bash
     php artisan serve
     ```
     
-2. Navigate to `http://localhost:8000` in your web browser.
+2. Go to `http://localhost:8000` in your web browser.
 3. Choose **Sign in to Microsoft**.
 4. Sign in with your personal or work or school account and grant the requested permissions.
 
-Check the inbox of the email address that you configured in [Call the Microsoft Graph using REST](#call-the-microsoft-graph-using-rest) section. You should have an email from the account that you used to sign in to the app.
+Check the inbox of the email address that you configured in [Call the Microsoft Graph using REST](#call-microsoft-graph-using-rest) section. You should have an email from the account that you used to sign in to the app.
 
 ## Next steps
-- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Try out the [Microsoft Graph explorer](https://graph.microsoft.io/graph-explorer).
 
 
 ## See also
