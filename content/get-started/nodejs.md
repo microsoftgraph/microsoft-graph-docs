@@ -1,18 +1,18 @@
 # Get started with Microsoft Graph in a Node.js app
 
-This article describes the tasks required to get an access token from the v2 authentication endpoint and call Microsoft Graph. It walks you through building the [Microsoft Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) and explains the main concepts that you implement to use Microsoft Graph. The article describes how to access the Microsoft Graph API by using raw REST calls.
+This article describes the tasks required to get an access token from the v2.0 authentication endpoint and call Microsoft Graph. It walks you through building the [Microsoft Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) and explains the main concepts that you implement to use Microsoft Graph. The article describes how to access the Microsoft Graph API by using raw REST calls.
 
-This is the app you'll create. 
+The following image shows is the app you'll create. 
 
 ![The web app after login showing the "Send mail" button](./images/web-screenshot.png)
 
 
-**Don't feel like building an app?** Get up and running fast using the [Quick Start](http://dev.office.com/getting-started).
+**Don't feel like building an app?** Use the [Microsoft Graph Quick Start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.
 
 
 ## Prerequisites
 
-To follow along with this walkthrough, you'll need: 
+To get started, you'll need: 
 
 - A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](http://dev.office.com/devprogram) to register the app
 - [Node.js with npm](https://nodejs.org/en/download/) 
@@ -42,7 +42,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 8. Choose **Save**.
 
 
-### Configure the project
+## Configure the project
 1. Open the **starter-project** folder in the sample files.
 
 1. In a command prompt, run the following command in the root directory of the starter project. This installs the project dependencies.
@@ -71,7 +71,7 @@ The auth flow can be broken down into these basic steps:
 
 The app uses the [oauth](https://www.npmjs.com/package/oauth) middleware to authenticate and obtain tokens. It uses the [cookie-parser](https://www.npmjs.com/package/cookie-parser) middleware to cache token information in cookies. The code used to store and access token information is found in the index.js controller.
     
-   >**Important** The simple authentication and token handling in this project is for sample purposes only. In a production app, you should construct a more robust way of handling authentication, including validation and secure token handling.
+   >**Important:** The simple authentication and token handling in this project is for sample purposes only. In a production app, you should construct a more robust way of handling authentication, including validation and secure token handling.
 
 Now back to building the app.
 

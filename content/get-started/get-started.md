@@ -1,12 +1,12 @@
-﻿# Getting started building Microsoft Graph apps
+# Getting started building Microsoft Graph apps
 
-The articles in this section provide detailed guidance on how to build apps that connected to Microsoft Graph across a variety of languages and development platforms. Each article starts with a sample starter project for the appropriate platform, and walks you through adding functionality that authenticates the user and connects to Microsoft Graph to send an email from their account. The completed project is identical to the [Connect sample in the Microsoft Graph repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) for that platform.
+The articles in this section provide detailed guidance on how to build apps that connect to Microsoft Graph across a variety of languages and development platforms. Each article starts with a sample starter project for the appropriate platform, and walks you through adding functionality that authenticates the user and connects to Microsoft Graph to send an email from their account. The completed project is identical to the [Connect sample in the Microsoft Graph repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) for that platform.
 
-The articles are organized by authentication provider: Azure AD or the v2.0 authentication endpoint. Choose the topic that covers the authentication provider and development platform of your choice, and get started connecting to Microsoft Graph.
+Choose the article that covers the authentication provider and development platform of your choice, and get started connecting to Microsoft Graph.
 
-Or to get quickly up and running a working solution, try out the [Quick Start](http://dev.office.com/getting-started/office365apis) experience.
+You can follow the steps in the article that covers the development platform that you choose, or, to quickly get a working solution up and running, try out the [Quick Start](http://dev.office.com/getting-started/office365apis) experience.
 
-To explore the finished Connect projects, visit the [Microsoft Graph repo](https://github.com/microsoftgraph) on GitHub. We've listed the Connect samples by authentication provider and platform below, along with noting whether they connect to Microsoft Graph using REST or a Microsoft Graph client library:
+To explore the finished Connect projects, visit the [Microsoft Graph repo](https://github.com/microsoftgraph) on GitHub. The following table lists the Connect samples by authentication provider and platform, and notes whether they connect to Microsoft Graph using REST or a Microsoft Graph client library.
 
 <table>
   <tr>
@@ -106,7 +106,7 @@ To explore the finished Connect projects, visit the [Microsoft Graph repo](https
   </tr>
 </table>
 
-## Additional resources
+## See also
 - Try out a sample REST call in our [API Explorer](https://graph.microsoft.io/graph-explorer).
 
 

@@ -1,22 +1,21 @@
-﻿# Get started with the Microsoft Graph in a Ruby on Rails app
+# Get started with Microsoft Graph in a Ruby on Rails app
 
 This article describes the tasks required to get an access token from the v2.0 authentication endpoint and call Microsoft Graph. It walks you through building the [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article also describes how to access Microsoft Graph by using direct REST calls.
 
-> **Important:** While the v2.0 authentication endpoint supports users authenticating with work or school accounts as well as personal accounts, it does not support [conditional access device policies](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/). Because of this, if your app requires enterprise authentication (that is, using work or school accounts), it is strongly recommended you use Azure AD authentication.
+> **Important:** While the v2.0 authentication endpoint supports users authenticating with work or school accounts as well as personal accounts, it does not support [conditional access device policies](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/). Because of this, if your app requires enterprise authentication (that is, using work or school accounts), we recommedn that you use Azure AD authentication.
 
 > For detailed instructions on how to build this same sample using Azure AD as the authentication provider, see [Call Microsoft Graph in a Ruby app](../enterprise/ruby.md).
 
-This is the app you'll create. 
+The followig image shows the app you'll create. 
 
 ![Microsoft Ruby on Rails Connect sample screenshot](./images/Microsoft-Graph-Ruby-Connect-UI.png)
 
-
-**Don't feel like building an app?** Get up and running fast using the [Quick Start](http://dev.office.com/getting-started/office365apis), or download the [Ruby REST Connect sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) that this walkthrough is based on.
+**Don't feel like building an app?** Use the [Microsoft Graph Quick Start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast, or download the [Ruby REST Connect sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) that this article is based on.
 
 
 ## Prerequisites
 
-To follow along with this walkthrough, you'll need: 
+To get started, you'll need: 
 
 - Ruby 2.1 to run the sample on a development server.
 - Rails framework (the sample has been tested on Rails 4.2).
@@ -54,9 +53,9 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 8. Choose **Save**.
 
-### Configure the project
+## Configure the project
 
-1. Download or clone the [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) as noted above. Open the _starter_ folder in the editor of your choice.
+1. Download or clone the [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample). Open the _starter_ folder in the editor of your choice.
 1. If you don't already have bundler and rack, you can install them with the following command.
 
 	```
@@ -178,9 +177,9 @@ This method retrieves the authentication hash, and then stores the access token,
 
 > **Note:** The simple authentication  and token handling in this project is presented for illustrative purposes only. In a production app, you would likely construct a more robust way of handling authentication, including secure token handling and token refresh.
 
-## Call the Microsoft Graph
+## Call Microsoft Graph
 
-Now you're ready to add code to call the Microsoft Graph. 
+Now you're ready to add code to call Microsoft Graph. 
 
 The view rendered by the `callback` method (`app/views/pages/callback.html.erb`) includes a simple form with a single button. The form posts to  `send_mail`, and includes a single parameter, the email address of the intended recipient.
 	

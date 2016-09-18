@@ -1,24 +1,23 @@
 # Call Microsoft Graph in an iOS App
 
-This article describes the tasks required to get an access token from the [v2 authentication endpoint](https://graph.microsoft.io/en-us/docs/authorization/converged_auth) and call the Microsoft Graph. It walks you through the code inside the [Office 365 Connect Sample for iOS (SDK)](https://github.com/microsoftgraph/ios-objectivec-connect-sample) to explain the main concepts that you have to implement in an app that uses Microsoft Graph. It describes how to access the Microsoft Graph by using the [Microsoft Graph SDK for iOS](https://github.com/microsoftgraph/msgraph-sdk-ios).
+This article describes the tasks required to get an access token from the [v2.0 authentication endpoint](https://graph.microsoft.io/en-us/docs/authorization/converged_auth) and call Microsoft Graph. It walks you through the code inside the [Office 365 Connect Sample for iOS (SDK)](https://github.com/microsoftgraph/ios-objectivec-connect-sample) to explain the main concepts that you have to implement in an app that uses Microsoft Graph. It describes how to access Microsoft Graph by using the [Microsoft Graph SDK for iOS](https://github.com/microsoftgraph/msgraph-sdk-ios).
 
-You can download the version of the app that you'll create in this walkthrough from this GitHub repo:
+You can download the version of the app that you'll create from this GitHub repo:
 
 * [Office 365 Connect Sample for iOS Using the Microsoft Graph SDK](https://github.com/microsoftgraph/ios-objectivec-connect-sample)
 
-You can also download preconfigured copies of these samples from the [Microsoft Graph Quick Starts page](http://dev.office.com/getting-started/office365apis).
-
-This is the app you'll create.
+The following image shows the app you'll create.
 
 ![Connect sample walkthrough, shows connecting and sending a mail in the app](https://github.com/OfficeDev/microsoft-graph-docs/blob/ignite-walkthroughs/content/walkthroughs/consumer/images/iOSConnectWalkthrough.png)
 
 
 The workflow will be to connect/authenticate to Microsoft Graph, sign in with your work or personal account, and finally send a mail to a recipient.
 
+**Don't feel like building an app?** Use the [Microsoft Graph Quick Start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.
 
 ## Prerequisites
 
-To follow along with this walkthrough, you'll need: 
+To get started, you'll need: 
 
 * [Xcode](https://developer.apple.com/xcode/downloads/) from Apple
 * Installation of [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) as a dependency manager
@@ -173,7 +172,7 @@ After configuring the project to be able to authenticate, the next tasks are sen
     
 		}
 
-So **getSampleMessage** creates a draft html sample mail to use for demo purposes. The next method, **sendMail**, then takes that message and executes the request to send it. Again the default recipient is the signed-in user.
+So **getSampleMessage** creates a draft HTML sample mail to use for demo purposes. The next method, **sendMail**, then takes that message and executes the request to send it. Again the default recipient is the signed-in user.
 
 
 ## Run the app

@@ -7,7 +7,7 @@ You can download both versions of the app that you'll create in this walkthrough
 * [Microsoft Graph Connect Sample for UWP (REST)](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample)
 * [Microsoft Graph Connect Sample for UWP (Library)](https://github.com/microsoftgraph/uwp-csharp-connect-sample)
 
-You can also download preconfigured copies of these samples from the [Microsoft Graph Quick Starts page](http://dev.office.com/getting-started/office365apis).
+**Don't feel like building an app?** Use the [Microsoft Graph Quick Start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.
 
 ## Sample user interface
 
@@ -25,7 +25,7 @@ All of the sample's UI strings are stored in the Resources.resw file inside the 
 
 ## Prerequisites
 
-To follow along with this walkthrough, you'll need: 
+To get started, you'll need: 
 
 - A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)
 - Visual Studio 2015 
@@ -67,7 +67,7 @@ To follow along with this walkthrough, you'll need:
 
 The [Microsoft Authentication Library](https://www.nuget.org/packages/Microsoft.Identity.Client) contains classes and methods that make it easy to authenticate users through the v2.0 authentication endpoint.
 
-1. In the Solution Explorer right-click the project name and select **Manage NuGet Packages...**
+1. In the Solution Explorer, right-click the project name and select **Manage NuGet Packages...**
 2. Click Browse and search for Microsoft.Identity.Client.
 3. Select the latest version of the Microsoft Authentication Library and click **Install**.
 
@@ -75,7 +75,7 @@ The [Microsoft Authentication Library](https://www.nuget.org/packages/Microsoft.
 
 > **Note** If you're going to use raw REST calls to access Microsoft Graph, you can skip this section.
 
-1. In the Solution Explorer right-click the project name and select **Manage NuGet Packages...**
+1. In the Solution Explorer, right-click the project name and select **Manage NuGet Packages...**
 2. Click Browse and search for Microsoft.Graph.
 3. Select the latest version of the Microsoft Graph Client Library and click **Install**.
 

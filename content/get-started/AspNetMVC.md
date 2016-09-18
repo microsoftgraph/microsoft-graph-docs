@@ -1,8 +1,8 @@
-# Get started with the Microsoft Graph in an ASP.NET 4.6 MVC app
+# Get started with Microsoft Graph in an ASP.NET 4.6 MVC app
 
-This article describes the tasks required to get an access token from the v2 authentication endpoint and call the Microsoft Graph. It walks you through building the [Microsoft Graph Connect Sample for ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article also describes how to access the Microsoft Graph by using either the [Microsoft Graph .NET Client Library](https://github.com/microsoftgraph/msgraph-sdk-dotnet) or raw REST calls.
+This article describes the tasks required to get an access token from the v2.0 authentication endpoint and call Microsoft Graph. It walks you through building the [Microsoft Graph Connect Sample for ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample) and explains the main concepts that you implement to use Microsoft Graph. The article also describes how to access Microsoft Graph by using either the [Microsoft Graph .NET Client Library](https://github.com/microsoftgraph/msgraph-sdk-dotnet) or raw REST calls.
 
-This is the app you'll create. 
+The following image shows the app you'll create. 
 
 ![The web app with "Get email address" and "Send email" buttons](images/aspnet-connect-sample.png "The web app with 'Get email address' and 'Send email' buttons")
 
@@ -15,11 +15,11 @@ The Azure AD [v2.0 endpoint](https://azure.microsoft.com/en-us/documentation/art
 
 ## Prerequisites
 
-To follow along with this walkthrough, you'll need: 
+To get started, you'll need: 
 
 - A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)
 - Visual Studio 2015 
-- The [Microsoft Graph Connect Sample for ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample). You'll use the **starter-project** folder in the sample files for this walkthrough.
+- The [Microsoft Graph Connect Sample for ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample). You'll use the **starter-project** folder in the sample files.
 
 
 ## Register the application
@@ -233,11 +233,11 @@ Next you'll add code to handle signing and signing out from the UI.
     }
   ```
 
-Now you're ready to add code to call the Microsoft Graph. 
+Now you're ready to add code to call Microsoft Graph. 
 
-## Call the Microsoft Graph
+## Call Microsoft Graph
 
-If you're using the Microsoft Graph library, read on. If you're using REST, jump to the [Using the REST API](#using-the-rest-api) section.
+If you're using the Microsoft Graph library, read on. If you're using REST, see the [Using the REST API](#using-the-rest-api) section.
 
 ### Using the library
 In this step, you'll focus on the **SDKHelper**, **GraphService**, and **HomeController** classes. 
@@ -444,7 +444,7 @@ using Microsoft.Graph;
         });
   ```
 
-Lastly, you'll add a call to sign out the client. 
+Finally, you'll add a call to sign out the client. 
 
 1. In the **Controllers** folder, open AccountController.cs. 
 
