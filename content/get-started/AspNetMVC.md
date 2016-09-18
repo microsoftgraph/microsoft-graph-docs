@@ -10,7 +10,7 @@ The Azure AD [v2.0 endpoint](https://azure.microsoft.com/en-us/documentation/art
 
 >MSAL is currently in prerelease, and as such should not be used in production code. It is used here for illustrative purposes only. 
 
-**Don't feel like building an app?** Get up and running fast using the [Quick Start](https://graph.microsoft.io/en-us/getting-started).
+**Don't feel like building an app?** Use the [Microsoft Graph Quick Start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.
 
 
 ## Prerequisites
