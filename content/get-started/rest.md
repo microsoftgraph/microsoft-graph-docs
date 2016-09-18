@@ -1,18 +1,10 @@
-# Platform specific walkthroughs
+# Get started with the Microsoft Graph API and REST
 
-Try out a sample REST call in our [API Explorer](https://graph.microsoft.io/graph-explorer).
-
-Once you're done exploring the API, come back here and select your favorite platform on the left. We'll guide you through the steps to write a simple application to retrieve emails using the Microsoft Graph.
-
-If your preferred platform isn't listed yet, continue reading this page. We'll go through the same set of steps using raw HTTP requests.
-
-## Getting started with the Microsoft Graph API and REST
-
-The purpose of this guide is to walk through the process of calling the Microsoft Graph to retrieve email messages in Office 365 and Outlook.com. Unlike the platform-specific walkthroughs, this guide focuses on the OAuth and REST requests and responses. It will cover the sequence of requests and responses that an app uses to authenticate and retrieve messages.
+This article describes how to call Microsoft Graph to retrieve email messages in Office 365 and Outlook.com. This article focuses on the OAuth and REST requests and responses. It covers the sequence of requests and responses that an app uses to authenticate and retrieve messages.
 
 ## Using OAuth 2.0 to authenticate
 
-In order to call the Microsoft Graph, your app needs an access token from Azure Active Directory (Azure AD). In the following example the app implements the Authorization Code Grant flow to get the access tokens from Azure AD, following standard [OAuth 2.0 protocols](http://tools.ietf.org/html/rfc6749).
+In order to call Microsoft Graph, your app needs an access token from Azure Active Directory (Azure AD). In the following example the app implements the Authorization Code Grant flow to get the access tokens from Azure AD, following standard [OAuth 2.0 protocols](http://tools.ietf.org/html/rfc6749).
 
 ### Registering an app
 
@@ -111,19 +103,19 @@ Content-Type: application/json; charset=utf-8
 
 The access token is found in the `access_token` field of the JSON payload. The app uses this value to set the Authorization header when making REST calls to the API.
 
-## Calling the Microsoft Graph
+## Calling Microsoft Graph
 
-Once the app has an access token, it's ready to call the Microsoft Graph. Since this sample app is retrieving messages, it will use an HTTP GET request to the `https://graph.microsoft.com/v1.0/me/messages` endpoint.
+After the app has an access token, it's ready to call Microsoft Graph. Because this sample app is retrieving messages, it will use an HTTP GET request to the `https://graph.microsoft.com/v1.0/me/messages` endpoint.
 
 ### Refining the request
 
-Apps can control the behavior of GET requests by using OData query parameters.  It is recommended that apps use these parameters to limit the number of results that are returned and to limit the fields that are returned for each item. 
+Apps can control the behavior of GET requests by using OData query parameters. We recommend that apps use these parameters to limit the number of results that are returned and to limit the fields that are returned for each item. 
 
-Our sample app will display messages in a table that shows the subject, sender, and the date and time the message was received. The table displays a maximum of 25 rows and is sorted so that the most recently received message is at the top. The app uses the following query parameters to get these results.
+This sample app will display messages in a table that shows the subject, sender, and the date and time the message was received. The table displays a maximum of 25 rows and is sorted so that the most recently received message is at the top. The app uses the following query parameters to get these results.
 
-- The `$select` parameter is used to specify only the `subject`, `sender`, and `dateTimeReceived` fields.
-- The `$top` parameter is used to specify a maximum of 25 items.
-- The `$orderby` parameter is used to sort the results by the `dateTimeReceived` field.
+- `$select` - Specifies only the `subject`, `sender`, and `dateTimeReceived` fields.
+- `$top` - Specifies a maximum of 25 items.
+- `$orderby` - Sorts the results by the `dateTimeReceived` field.
 
 This results in the following request.
 
@@ -133,6 +125,6 @@ Accept: application/json
 Authorization: Bearer eyJ0eXAi...b66LoPVA
 ```
 
-Now that you've seen how to make calls to the Microsoft Graph, you can use the API reference to construct any other kinds of calls your app needs to make. However, bear in mind that your app needs to have the appropriate permissions configured on the app registration for the calls it makes.
+Now that you've seen how to make calls to Microsoft Graph, you can use the API reference to construct any other kinds of calls your app needs to make. However, bear in mind that your app needs to have the appropriate permissions configured on the app registration for the calls it makes.
 
 
