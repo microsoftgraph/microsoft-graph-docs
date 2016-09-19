@@ -14,18 +14,20 @@
     <Item text="Associate Office 365 account" url="/en-us/authorization/associate_account" SEOKeyword="Associate Office 365 account, Microsoft Graph API, Overview" SEODescription="Use the management portal in Microsoft Azure to manage users, roles, and apps for Office 365." />
     <Item text="v2 auth endpoint" url="/en-us/authorization/converged_auth" SEOKeyword="v2 authentication endpoint, Microsoft Graph API, Overview" SEODescription="The v2 authentication endpoint enables you to create apps that accept both work and school (Azure AD) as well as personal (Microsoft account) identities." />
   </Item>
-  <Item text="Walkthroughs" url="/en-us/platform/rest">
-    <Item text="ASP.NET MVC" url="/en-us/platform/aspnetmvc" SEOKeyword=".NET, ASP.NET MVC, Microsoft Graph API, Walkthroughs" SEODescription="Use Microsoft Graph to access Microsoft cloud data in an ASP.NET MVC app" />
-    <Item text="UWP" url="/en-us/platform/uwp" SEOKeyword="UWP, Microsoft Graph API, Walkthroughs" SEODescription="Use Microsoft Graph to access Microsoft cloud data in a Windows Universal Platfrom app" />
-    <Item text="iOS" url="/en-us/platform/ios" SEOKeyword="iOS, Microsoft Graph API, Walkthroughs" SEODescription="Use Microsoft Graph to access Microsoft cloud data in an iOS app" />
-    <Item text="Android" url="/en-us/platform/android" SEOKeyword="Android, Microsoft Graph API, Walkthroughs" SEODescription="Use Microsoft Graph to access Microsoft cloud data in an Android app" />
-    <Item text="Angular" url="/en-us/platform/angular" SEOKeyword="Angular, Microsoft Graph API, Walkthroughs" SEODescription="Use Microsoft Graph to access Microsoft cloud data in an Angular app" />
-    <Item text="Node.js" url="/en-us/platform/nodejs" SEOKeyword="Node.js, Microsoft Graph API, Walkthroughs" SEODescription="Use Microsoft Graph to access Microsoft cloud data in a Node.js app" />
-    <Item text="PHP" url="/en-us/platform/php" SEOKeyword="PHP, Microsoft Graph API, Walkthroughs" SEODescription="Use Microsoft Graph to access Microsoft cloud data in a PHP app" />
-    <Item text="Python" url="/en-us/platform/python" SEOKeyword="Python, Microsoft Graph API, Walkthroughs" SEODescription="Use Microsoft Graph to access Microsoft cloud data in a Python app" />
-    <Item text="Ruby" url="/en-us/platform/ruby" SEOKeyword="Ruby, Microsoft Graph API, Walkthroughs" SEODescription="Use Microsoft Graph to access Microsoft cloud data in a Ruby app" />
+  <Item text="Get started" url="/en-us/getting-started-docs">
+    <Item text="ASP.NET MVC" url="/en-us/platform/aspnetmvc" SEOKeyword=".NET, ASP.NET MVC, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an ASP.NET MVC app" />
+    <Item text="UWP" url="/en-us/platform/uwp" SEOKeyword="UWP, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Windows Universal Platfrom app" />
+    <Item text="iOS" url="/en-us/platform/ios" SEOKeyword="iOS, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an iOS app" />
+    <Item text="Android" url="/en-us/platform/android" SEOKeyword="Android, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Android app" />
+    <Item text="Angular" url="/en-us/platform/angular" SEOKeyword="Angular, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Angular app" />
+    <Item text="Node.js" url="/en-us/platform/nodejs" SEOKeyword="Node.js, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Node.js app" />
+    <Item text="PHP" url="/en-us/platform/php" SEOKeyword="PHP, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a PHP app" />
+    <Item text="Python" url="/en-us/platform/python" SEOKeyword="Python, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Python app" />
+    <Item text="Ruby" url="/en-us/platform/ruby" SEOKeyword="Ruby, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Ruby app" />
+    <Item text="REST" url="/en-us/platform/rest" SEOKeyword="REST, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a REST" />
+    
   </Item>
-  <Item text="/v1.0 reference" url="/en-us/api-reference/v1.0/">
+  <!--<Item text="/v1.0 reference" url="/en-us/api-reference/v1.0/">-->
     <Item text="Users" url="/en-us/api-reference/v1.0/resources/user" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
       <Item text="user" url="/en-us/api-reference/v1.0/resources/user" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
         <Item text="List users" url="/en-us/api-reference/v1.0/api/user_list" SEOKeyword="List users, Microsoft Graph API, user API" SEODescription="Retrieve a list of user objects." />
@@ -459,7 +461,7 @@
         <Item text="Delete subscription" url="/en-us/api-reference/v1.0/api/subscription_delete" />
       </Item>
     </Item>
-  </Item>
+  <!--</Item>-->
 
   <Item text="/beta reference" url="/en-us/api-reference/beta/">
     <Item text="Users" url="/en-us/api-reference/beta/resources/user" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
@@ -1092,10 +1094,10 @@
         <Item text="Remove a scoped-role administrator" url="/en-us/api-reference/beta/api/administrativeunit_delete_scopedadministrators" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="API to delete a scoped-role administrator from an administrativeUnit object." />
       </Item>
       <Item text="Invitation manager" url="/en-us/api-reference/beta/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
-		<Item text="Create invitation" url="/en-us/api-reference/beta/api/invitation_post" SEODescription="Creates a new invitation to add an external user to the organization's directory." />
-	  </Item>
-	  
-	  <Item text="application" url="/en-us/api-reference/beta/resources/application" SEOKeyword="application API, Microsoft Graph API, application API" SEODescription="">
+        <Item text="Create invitation" url="/en-us/api-reference/beta/api/invitation_post" SEODescription="Creates a new invitation to add an external user to the organization's directory." />
+      </Item>
+
+      <Item text="application" url="/en-us/api-reference/beta/resources/application" SEOKeyword="application API, Microsoft Graph API, application API" SEODescription="">
         <Item text="List applications" url="/en-us/api-reference/beta/api/application_list" SEOKeyword="List applications, Microsoft Graph API, application API" SEODescription="Retrieve a list of application objects." />
         <Item text="Create Application" url="/en-us/api-reference/beta/api/application_post_applications" SEOKeyword="Create Application, Microsoft Graph API, application API" SEODescription="Use this API to create a new Application." />
         <Item text="Get application" url="/en-us/api-reference/beta/api/application_get" SEOKeyword="Get application, Microsoft Graph API, application API" SEODescription="Retrieve the properties and relationships of application object." />
@@ -1120,18 +1122,18 @@
         <Item text="Get oauth2 permission grant" url="/en-us/api-reference/beta/api/oauth2permissiongrant_get" SEOKeyword="Get oAuth2PermissionGrant, Microsoft Graph API, oauth2permissiongrant API" SEODescription="Retrieve the properties and relationships of oauth2permissiongrant object." />
         <Item text="Update oauth2 permission grant" url="/en-us/api-reference/beta/api/oauth2permissiongrant_update" SEOKeyword="Update oauth2permissiongrant, Microsoft Graph API, oauth2permissiongrant API" SEODescription="Update the properties of oauth2permissiongrant object." />
         <Item text="Delete oauth2 permission grant" url="/en-us/api-reference/beta/api/oauth2permissiongrant_delete" SEOKeyword="Delete oAuth2PermissionGrant, Microsoft Graph API, oauth2permissiongrant API" SEODescription="Delete oAuth2PermissionGrant." />
-		<Item text="Policies" url="/en-us/api-reference/beta/resources/policy" SEODescription="List all policies within the organization." >
-			<Item text="List policies" url="/en-us/api-reference/beta/api/policy_list" SEODescription="List all policies within the organization. " />
-			<Item text="Create policy" url="/en-us/api-reference/beta/api/policy_post" SEODescription="Create a new policy in the organization." />
-			<Item text="Get policy" url="/en-us/api-reference/beta/api/policy_get" SEODescription="Get a policy by id." />
-			<Item text="Upate policy" url="/en-us/api-reference/beta/api/policy_update" SEODescription="Update the properties of a policy." />
-			<Item text="Delete policy" url="/en-us/api-reference/beta/api/policy_delete" SEODescription="Delete an existing policy." />
-			<Item text="Assign policy" url="/en-us/api-reference/beta/api/policy_assign" SEODescription="Assign policies to an organization entities like applications and service principals." />
-			<Item text="List assigned policies" url="/en-us/api-reference/beta/api/policy_list_assigned" SEODescription="List an entity’s assigned policies." />
-			<Item text="List applied to applications" url="/en-us/api-reference/beta/api/policy_list_appliesTo" SEODescription="List the applications and service principals with the given policy applied." />
-		</Item>
-	  
-	  </Item>
+        <Item text="Policies" url="/en-us/api-reference/beta/resources/policy" SEODescription="List all policies within the organization." >
+          <Item text="List policies" url="/en-us/api-reference/beta/api/policy_list" SEODescription="List all policies within the organization. " />
+          <Item text="Create policy" url="/en-us/api-reference/beta/api/policy_post" SEODescription="Create a new policy in the organization." />
+          <Item text="Get policy" url="/en-us/api-reference/beta/api/policy_get" SEODescription="Get a policy by id." />
+          <Item text="Upate policy" url="/en-us/api-reference/beta/api/policy_update" SEODescription="Update the properties of a policy." />
+          <Item text="Delete policy" url="/en-us/api-reference/beta/api/policy_delete" SEODescription="Delete an existing policy." />
+          <Item text="Assign policy" url="/en-us/api-reference/beta/api/policy_assign" SEODescription="Assign policies to an organization entities like applications and service principals." />
+          <Item text="List assigned policies" url="/en-us/api-reference/beta/api/policy_list_assigned" SEODescription="List an entity’s assigned policies." />
+          <Item text="List applied to applications" url="/en-us/api-reference/beta/api/policy_list_appliesTo" SEODescription="List the applications and service principals with the given policy applied." />
+        </Item>
+
+      </Item>
       <Item text="device" url="/en-us/api-reference/beta/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
         <Item text="List devices" url="/en-us/api-reference/beta/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />
         <Item text="Create Device" url="/en-us/api-reference/beta/api/device_post_devices" SEOKeyword="Create Device, Microsoft Graph API, Device API" SEODescription="Use this API to create a new Device." />
