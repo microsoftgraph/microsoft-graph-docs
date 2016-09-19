@@ -7,7 +7,9 @@ The Microsoft Graph supports two authentication providers:
 - To authenticate users with enterprise (that is, work or school) accounts, use Azure Active Directory (Azure AD).
 - To authenticate users with personal Microsoft accounts, such as _live.com_ or _outlook.com_ accounts, use the Azure AD v2.0 endpoint.
 
-> **Important:** While the Azure AD v2.0 endpoint supports users authenticating with work or school accounts as well as personal accounts, it does not currently support [conditional access device policies](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/). Because of this, if your app requires enterprise authentication (that is, using work or school accounts), it is strongly recommended you use Azure AD authentication.
+> **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors. 
+
+> To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure Management Portal](https://aka.ms/aadapplist).
 
 ![Microsoft Graph application stack, with authentication shown as a layer between your app and the various Microsoft Graph resources.](./images/MSGraph_DevStack_v2Auth.png)
 

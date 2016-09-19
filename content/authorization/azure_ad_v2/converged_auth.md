@@ -1,8 +1,8 @@
 ﻿# Authenticate Microsoft Graph apps with the v2 authentication endpoint
 
-> **Important:** While the Azure AD v2.0 endpoint supports users authenticating with work or school accounts as well as personal accounts, it does not support [conditional access device policies](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/). Because of this, if your app requires enterprise authentication (that is, using work or school accounts), it is strongly recommended you use Azure AD authentication.
-> 
-> For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](../Auth_overview.md#deciding-between-azure-ad-and-the-v2-authentication-endpoint).
+> **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors. 
+
+> To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure Management Portal](https://aka.ms/aadapplist). For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](../auth_overview.md#deciding-between-azure-ad-and-the-v2-authentication-endpoint).
 
 ## Signing in Microsoft account and Azure AD users with a single authentication model
 
