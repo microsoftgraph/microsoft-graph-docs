@@ -2,7 +2,7 @@
 
 This article describes the tasks required to get an access token from the v2.0 authentication endpoint and call Microsoft Graph. It walks you through building the [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article also describes how to access Microsoft Graph by using direct REST calls.
 
-> **Important:** While the v2.0 authentication endpoint supports users authenticating with work or school accounts as well as personal accounts, it does not support [conditional access device policies](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/). Because of this, if your app requires enterprise authentication (that is, using work or school accounts), we recommedn that you use Azure AD authentication.
+> **Important:** While the v2.0 authentication endpoint supports users authenticating with work or school accounts as well as personal accounts, it does not support [conditional access device policies](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/). Because of this, if your app requires enterprise authentication (that is, using work or school accounts), we recommend that you use Azure AD authentication.
 
 > For detailed instructions on how to build this same sample using Azure AD as the authentication provider, see [Call Microsoft Graph in a Ruby app](../enterprise/ruby.md).
 
