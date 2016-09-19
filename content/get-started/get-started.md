@@ -11,8 +11,8 @@ To explore the finished Connect projects, visit the [Microsoft Graph repo](https
 <table>
   <tr>
     <th>Platform</th>
-    <th>Azure AD</th> 
-    <th>v2.0 endpoint</th>
+    <th>Azure AD authentication</th> 
+    <th>v2.0 authentication endpoint</th>
   </tr>
   <tr>
     <td>Android</td>
