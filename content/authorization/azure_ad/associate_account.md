@@ -1,11 +1,12 @@
-<!---<a name="bk_CreateAzureSubscription"> </a>-->
+﻿<!---<a name="bk_CreateAzureSubscription"> </a>-->
 
 # Associate your Office 365 account with Azure AD to create and manage apps
 
-To authenticate your applications, you need to register them in Microsoft Azure Active Directory (Azure AD). This is where Office 365 user account and application information is stored. To manage Azure AD through the Azure Management Portal, you need a Microsoft Azure subscription. Using the management portal in Microsoft Azure enables you to manage users, roles, and apps. 
+To authenticate your applications using Microsoft Azure Active Directory (Azure AD), you need to register them in Azure AD. This is where Office 365 user account and application information is stored. To manage Azure AD through the Azure Management Portal, you need a Microsoft Azure subscription. Using the management portal in Microsoft Azure enables you to manage users, roles, and apps. 
 
 This article guides you through associating your Office 365 account with Azure AD to create and manage apps.
 
+ >Note: This topic pertains to using Azure AD as the authentication provider for your app. If you are using the Azure AD v2.0 endpoint, you do not need to perform this step. For more information, see [App authentication with Microsoft Graph](../Auth_overview.md).
 
 ## Prerequisites
 
@@ -82,3 +83,6 @@ If you don't have an existing Office 365 for business account, you can:
 	    
 	You should now see all items in your Azure subscription. It lists a directory with the name of your Office 365 tenant.
 	
+## See also
+- [Basics of Registering an Application in Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
+- [Add, update, or remove an application in Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/)

@@ -1,6 +1,8 @@
-# Call Microsoft Graph in a service or daemon app
+﻿# Call Microsoft Graph in a service or daemon app
 
 In this article we look at the minimum tasks required to connect your single-tenant service or daemon app to Office 365 and call the Microsoft Graph API.
+
+> Note: This topic covers using Azure Active Directory as the authentication provider for your app. It does not cover using the Azure AD v2.0 endpoint as a provider; currently, the Azure AD v2.0 endpoint does not support app-only authentication. For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](../auth_overview.md#deciding-between-azure-ad-and-the-v2-authentication-endpoint).
 
 ## Overview
 
