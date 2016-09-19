@@ -7,7 +7,7 @@ You can download both versions of the app that you'll create in this walkthrough
 * [Microsoft Graph Connect Sample for UWP (REST)](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample)
 * [Microsoft Graph Connect Sample for UWP (Library)](https://github.com/microsoftgraph/uwp-csharp-connect-sample)
 
-**Don't feel like building an app?** Use the [Microsoft Graph Quick Start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.
+**Don't feel like building an app?** Use the [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.
 
 ## Sample user interface
 

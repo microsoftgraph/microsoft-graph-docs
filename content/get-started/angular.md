@@ -7,7 +7,7 @@ The following image shows the app you'll create.
 ![The web app after login showing the "Send mail" button](./images/web-screenshot.png)
 
 
-**Don't feel like building an app?** Use the [Microsoft Graph Quick Start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.
+**Don't feel like building an app?** Use the [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.
 
 
 ## Prerequisites
