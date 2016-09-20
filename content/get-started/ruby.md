@@ -1,12 +1,14 @@
-# Get started with Microsoft Graph in a Ruby on Rails app
+﻿# Get started with Microsoft Graph in a Ruby on Rails app
 
-This article describes the tasks required to get an access token from the v2.0 authentication endpoint and call Microsoft Graph. It walks you through building the [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article also describes how to access Microsoft Graph by using direct REST calls.
+This article describes the tasks required to get an access token from the Azure AD v2.0 authentication and call Microsoft Graph. It walks you through building the [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article also describes how to access Microsoft Graph by using direct REST calls.
 
-> **Important:** While the v2.0 authentication endpoint supports users authenticating with work or school accounts as well as personal accounts, it does not support [conditional access device policies](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/). Because of this, if your app requires enterprise authentication (that is, using work or school accounts), we recommend that you use Azure AD authentication.
+> **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors. 
 
-> For detailed instructions on how to build this same sample using Azure AD as the authentication provider, see [Call Microsoft Graph in a Ruby app](../enterprise/ruby.md).
+> To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure Management Portal](https://aka.ms/aadapplist).
 
-The followig image shows the app you'll create. 
+To download a version of the Connect sample that uses the Azure AD endpoint, see [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth).
+
+The following image shows the app you'll create. 
 
 ![Microsoft Ruby on Rails Connect sample screenshot](./images/Microsoft-Graph-Ruby-Connect-UI.png)
 
@@ -41,7 +43,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 5. Under **Application Secrets**, choose **Generate New Password**. Copy the app secret from the **New password generated** dialog.
 
-	You'll use the application ID and secret to configure the app.
+	You'll use the application ID and app secret to configure the app.
 
 6. Under **Platforms**, choose **Add platform** > **Web**.
 
@@ -87,7 +89,7 @@ We'll be using a stack of three pieces of [Rack](http://rack.github.io/) middlew
 
 - [OmniAuth](https://rubygems.org/gems/omniauth), a generalized Rack framework for multiple-provider authentication.
 - [Omniauth-oauth2](https://rubygems.org/gems/omniauth-oauth2), an abstract OAuth2 strategy for OmniAuth. 
-- omniauth-microsoft_v2_auth, an OmniAuth strategy that customizes Omniauth-oauth2 to specifically provide authentication against the v2.0 authentication endpoint. This project is included in the code sample.
+- omniauth-microsoft_v2_auth, an OmniAuth strategy that customizes Omniauth-oauth2 to specifically provide authentication against the Azure AD v2.0 endpoint. This project is included in the code sample.
 
 ### Specify gem dependencies for authentication
 
@@ -99,7 +101,7 @@ In Gemfile, uncomment the following gems to add them as dependencies.
 	gem 'omniauth-microsoft_v2_auth', path: './omniauth-microsoft_v2_auth'
 	```
 
-Note that ```omniauth-microsoft_v2_auth``` is included in the app project, and will be installed from the path specified. 
+Note that `omniauth-microsoft_v2_auth` is included in the app project, and will be installed from the path specified. 
 
 ### Configure the authentication middleware
 
@@ -113,7 +115,7 @@ In `config/initializers/omniauth-microsoft_v2_auth.rb`, uncomment the following 
 	  :scope => ENV['SCOPE']
 	end
 	```
-This configures the OmniAuth middleware, including specifying the app ID and app secret to use, as well as the scopes to request for the user. These are the values you specified earlier in ```config/environment.rb```.
+This configures the OmniAuth middleware, including specifying the app ID and app secret to use, as well as the scopes to request for the user. These are the values you specified earlier in `config/environment.rb`.
 
 ### Specify routes for authentication
 
@@ -123,7 +125,7 @@ In `config/routes.rb`, uncomment the following route directive.
 
 	get '/login', to: 'pages#login'
 
-This directs login requests to the pages controller's ```login``` method, which in turn redirects the request to the omniauth-microsoft_v2_auth middleware.
+This directs login requests to the pages controller's `login` method, which in turn redirects the request to the omniauth-microsoft_v2_auth middleware.
 
 	def login
     	redirect_to '/auth/microsoft_v2_auth'
@@ -286,10 +288,8 @@ Finally, the code uses the HTTP response code returned to notify the user whethe
 	```
 3. Go to `http://localhost:3000` in your web browser.
 
-## Next steps
-- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
-- Find examples of common operations in the [snippets-sample](), or explore our other [Microsoft Graph samples](https://github.com/microsoftgraph) on GitHub.
-
-
 ## See also
-- [Call Microsoft Graph in a Ruby app](../enterprise/ruby.md) (Azure AD walkthrough)
+- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Explore our other [Microsoft Graph samples](https://github.com/microsoftgraph) on GitHub.
+
+
