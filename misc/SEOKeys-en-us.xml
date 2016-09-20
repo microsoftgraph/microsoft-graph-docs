@@ -1122,7 +1122,8 @@
         <Item text="Get oauth2 permission grant" url="/en-us/api-reference/beta/api/oauth2permissiongrant_get" SEOKeyword="Get oAuth2PermissionGrant, Microsoft Graph API, oauth2permissiongrant API" SEODescription="Retrieve the properties and relationships of oauth2permissiongrant object." />
         <Item text="Update oauth2 permission grant" url="/en-us/api-reference/beta/api/oauth2permissiongrant_update" SEOKeyword="Update oauth2permissiongrant, Microsoft Graph API, oauth2permissiongrant API" SEODescription="Update the properties of oauth2permissiongrant object." />
         <Item text="Delete oauth2 permission grant" url="/en-us/api-reference/beta/api/oauth2permissiongrant_delete" SEOKeyword="Delete oAuth2PermissionGrant, Microsoft Graph API, oauth2permissiongrant API" SEODescription="Delete oAuth2PermissionGrant." />
-        <Item text="Policies" url="/en-us/api-reference/beta/resources/policy" SEODescription="List all policies within the organization." >
+       </Item>
+	   <Item text="Policies" url="/en-us/api-reference/beta/resources/policy" SEODescription="List all policies within the organization." >
           <Item text="List policies" url="/en-us/api-reference/beta/api/policy_list" SEODescription="List all policies within the organization. " />
           <Item text="Create policy" url="/en-us/api-reference/beta/api/policy_post" SEODescription="Create a new policy in the organization." />
           <Item text="Get policy" url="/en-us/api-reference/beta/api/policy_get" SEODescription="Get a policy by id." />
@@ -1132,8 +1133,6 @@
           <Item text="List assigned policies" url="/en-us/api-reference/beta/api/policy_list_assigned" SEODescription="List an entity’s assigned policies." />
           <Item text="List applied to applications" url="/en-us/api-reference/beta/api/policy_list_appliesTo" SEODescription="List the applications and service principals with the given policy applied." />
         </Item>
-
-      </Item>
       <Item text="device" url="/en-us/api-reference/beta/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
         <Item text="List devices" url="/en-us/api-reference/beta/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />
         <Item text="Create Device" url="/en-us/api-reference/beta/api/device_post_devices" SEOKeyword="Create Device, Microsoft Graph API, Device API" SEODescription="Use this API to create a new Device." />
