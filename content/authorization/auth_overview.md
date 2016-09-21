@@ -1,21 +1,26 @@
-﻿# App authentication with Microsoft Graph
+# App authentication with Microsoft Graph
 
-In order to access a user's Microsoft data, your application must enable users to authenticate their identity and give their consent for the app to perform actions on their behalf.
+To access a user's Microsoft data, your application must enable users to authenticate their identity and give their consent for the app to perform actions on their behalf.
 
 The Microsoft Graph supports two authentication providers:
 
-- To authenticate users with enterprise (that is, work or school) accounts, use Azure Active Directory (Azure AD).
-- To authenticate users with personal Microsoft accounts, such as _live.com_ or _outlook.com_ accounts, use the Azure AD v2.0 endpoint.
+- To authenticate users with personal Microsoft accounts, such as _live.com_ or _outlook.com_ accounts, use the [Azure Active Directory (Azure AD) v2.0 endpoint](converged_auth).
+- To authenticate users with enterprise (that is, work or school) accounts, use [Azure AD](app_authorization).
 
-> **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors. 
 
-> To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure Management Portal](https://aka.ms/aadapplist).
+> **Building apps for enterprise customers?** Your app might not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>.  
+
+> To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and use the [Azure Management Portal](https://aka.ms/aadapplist) to manage your apps.
 
 ![Microsoft Graph application stack, with authentication shown as a layer between your app and the various Microsoft Graph resources.](./images/MSGraph_DevStack_v2Auth.png)
 
 ## Deciding between the Azure AD and Azure AD v2.0 endpoints
 
-The table below summarizes the major features that the Azure AD and Azure AD v2.0 endpoints support, as well as links to additional information. The relative importance of these various feature--and therefore, which authentication provider you choose to implement in your app--will primarily depend on the account type (enterprise or consumer) it needs to support; the type of app you want to build; and the authentication flow required. 
+The following table summarizes the major features that the Azure AD and Azure AD v2.0 endpoints support, and provides links to additional information. The relative importance of these  features--and therefore, which authentication provider you choose to implement in your app--will primarily depend on:
+
+- The account type (enterprise or consumer) your apps needs to support
+- Te type of app you want to build
+- The authentication flow required 
 
 <table style="width:100%">
   <tr>
@@ -77,11 +82,11 @@ The table below summarizes the major features that the Azure AD and Azure AD v2.
 
 In addition, there are differences in permission scopes required by the two authentication providers, as well as differences in the claims returned in various tokens. For more information, see [Well-known scopes](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare/#well-known-scopes) and [Token Claims](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare/#token-claims) in [What's different about the v2.0 endpoint?](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare/).
 
-Also, the Azure AD v2.0 endpoint is under active development, with additional features and supported scenarios being added. For a current list of limitations and restrictions for the Azure AD v2.0 endpoint, see [Should I use the v2.0 endpoint?](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/).
+Also, the Azure AD v2.0 endpoint is under active development, with additional features and supported scenarios to be added. For a current list of limitations and restrictions for the Azure AD v2.0 endpoint, see [Should I use the v2.0 endpoint?](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/).
 
 ## Registering your app for authentication 
 
-Once you've decided which authentication provider meets your app's requirements, you need to register your app at that authentication provider's portal. Registering your app establishes your app's identity with the authentication provider, and enables your app to specify its identity when submitting authentication requests from the user.
+When you decide which authentication provider meets your app's requirements, you need to register your app at that authentication provider's portal. Registering your app establishes your app's identity with the authentication provider, and enables your app to specify its identity when submitting authentication requests from the user.
 
 - To [register your app with Azure AD](../auth_azure_ad/app_authentication_azure_ad.md), use the [Microsoft Azure Management portal](https://manage.windowsazure.com/).
 
@@ -92,13 +97,13 @@ Once you've decided which authentication provider meets your app's requirements,
 
 ## Resources for implementing authentication in your Microsoft Graph app 
 
-Once you've registered your app with the appropriate authentication portal, and have the app registration information (app ID, app secret--if applicable--and redirect URI) that you need to establish your app's identity, you're ready to implement authentication in your app. 
+After you register your app with the appropriate authentication portal, and have the app registration information (app ID, app secret--if applicable--and redirect URI) that you need to establish your app's identity, you're ready to implement authentication in your app. 
 
-Again, this will vary depending on the type of app you're building, your development platform, the authentication flow you choose, as well as any specific authentication requirements for your app. 
+Again, this will vary depending on the type of app you're building, your development platform, the authentication flow you choose, and any specific authentication requirements for your app. 
 
 ### Connect samples by authentication provider and platform
 
-The table below lists the Connect samples by authentication provider and platform, along with noting whether they connect to Microsoft Graph using REST or a Microsoft Graph client library:
+The following table lists the Connect samples by authentication provider and platform, and notes whether they connect to Microsoft Graph using REST or a Microsoft Graph client library.
 
 <table>
   <tr>
@@ -200,17 +205,13 @@ The table below lists the Connect samples by authentication provider and platfor
 
 To explore a wide range of projects that connect to Microsoft Graph over a broad assortment of technologies, visit the [Microsoft Graph repo](https://github.com/microsoftgraph) on GitHub. 
 
-### Getting Started  
+### Get Started  
 
-In addition, the [Getting Started](http://graph.microsoft.io/en-us/docs/platform/rest#getting-started-with-the-microsoft-graph-api-and-rest) section contains detailed articles on how to create the above samples using the Azure AD v2.0 endpoint, including discussion of the authentication libraries used on each platform. 
+The [Get Started](http://graph.microsoft.io/en-us/docs/platform/rest#getting-started-with-the-microsoft-graph-api-and-rest) section contains detailed articles that show you how to create the apps listed in the table using the Azure AD v2.0 endpoint, and covers the authentication libraries used on each platform. 
 
 ## See also
 
-Azure AD endpoint:
-
 - <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-authentication-in-azure-ad" target="_newtab">Authentication Scenarios for Azure AD</a>
-
-Azure AD v2.0 endpoint:
 
 - <a href="https://azure.microsoft.com/en-us/documentation/articles/?product=active-directory&term=v2.0+endpoint" target="_newtab">Azure AD v2.0 endpoint documentation on Azure.com</a>
 - <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-app-registration/#build-a-quick-start-app" target="_newtab">Azure AD v2.0 code quick starts on Azure.com</a>
