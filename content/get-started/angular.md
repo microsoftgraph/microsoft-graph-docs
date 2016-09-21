@@ -14,7 +14,7 @@ The following image shows the app you'll create.
 
 To get started, you'll need: 
 
-- A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](http://dev.office.com/devprogram) to register the app
+- A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](http://dev.office.com/devprogram)
 - [Node.js with npm](https://nodejs.org/en/download/)
 - [Bower](https://bower.io)
 - The [Microsoft Connect Sample for AngularJS](https://github.com/microsoftgraph/angular-connect-rest-sample). You'll use the **starter-project** folder in the sample files for this walkthrough.
@@ -48,7 +48,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
         bower install hello
 	  ```
 
-3. In the starter project files, in the ** folder, open config.js.
+3. In the starter project files, in the **public/scripts** folder, open config.js.
 4. In the **clientId** field, replace the **ENTER_YOUR_CLIENT_ID** placeholder value with the application ID you just copied.
 
   
@@ -68,7 +68,7 @@ The app uses the [HelloJS](https://adodson.com/hello.js) client-side library to 
 
 Now back to building the app.
 
-1. Open **aad.js** and add the following code. This configures communication with the Azure AD auth provider, and adds a listener that stores the auth response that contains the access token.  The script references to the library are already added to the index.html view.
+1. Open **aad.js** and add the following code. This configures communication with the Azure AD auth provider, and adds a listener that stores the auth response that contains the access token. (The script references to the library are already added to the index.html view.)
 
   ```
   hello.init({
@@ -96,9 +96,7 @@ Now back to building the app.
   });
   ```
 
-1. In the **public/scripts** folder, open graphHelper.js.
-
-1. Replace *// Initialize the auth request.* with the following code.
+1. In graphHelper.js, replace *// Initialize the auth request* with the following code to set the parameter for the auth request.
 
   ```
   // Initialize the auth request.
@@ -110,7 +108,7 @@ Now back to building the app.
   });
   ```
 
-1. Replace *// Sign in and sign out the user.* with the following code. The **login** function gets an access token using HelloJS.
+1. Replace *// Sign in and sign out the user* with the following code. The **login** function gets an access token using HelloJS.
 
   ```
   // Sign in and sign out the user.
@@ -132,7 +130,7 @@ Now you're ready to add code to call Microsoft Graph.
 ## Call Microsoft Graph
 The app calls Microsoft Graph to get user information and to send an email on the user's behalf. These calls are initiated from the MainController in response to UI events.
 
-1. In graphHelper.js, replace *// Get the profile of the current user.* with the following code. This configures and sends the GET request to the */me* endpoint and processes the response.
+1. In graphHelper.js, replace *// Get the profile of the current use.* with the following code. This configures and sends the GET request to the */me* endpoint, and processes the response.
 
   ```
   // Get the profile of the current user.
@@ -141,7 +139,7 @@ The app calls Microsoft Graph to get user information and to send an email on th
   },
   ```
   
-1. Replace *// Send an email on behalf of the current user.* with the following code. This configures and sends the POST request to the */me/sendMail* endpoint and processes the response.
+1. Replace *// Send an email on behalf of the current user* with the following code. This configures and sends the POST request to the */me/sendMail* endpoint, and processes the response.
 
   ```
   // Send an email on behalf of the current user.
@@ -152,7 +150,7 @@ The app calls Microsoft Graph to get user information and to send an email on th
 
 1. In the **public/controllers** folder, open mainController.js.
 
-1. Replace *// Set the default headers and user properties.* with the following code. This adds the access token to the HTTP request, calls **GraphHelper.me** to get the current user's profile, and processes the response.
+1. Replace *// Set the default headers and user properties* with the following code. This adds the access token to the HTTP request, calls **GraphHelper.me** to get the current user's profile, and processes the response.
 
   ```
   // Set the default headers and user properties.
@@ -193,7 +191,7 @@ The app calls Microsoft Graph to get user information and to send an email on th
   ```
   
 
-1. Replace *// Send an email on behalf of the current user.* with the following code. This builds the email message, calls **GraphHelper.sendMail**, and processes the response.
+1. Replace *// Send an email on behalf of the current user* with the following code. This builds the email message, calls **GraphHelper.sendMail**, and processes the response.
 
   ```
   // Send an email on behalf of the current user.
