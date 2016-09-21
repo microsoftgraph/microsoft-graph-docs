@@ -55,7 +55,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 ## Authenticate the user and get an access token
 In this step, you'll add sign-in and token retrieval code. But first, let's take a closer look at the auth flow.
 
-This single page application uses a very basic implementation of the implicit grant flow that requires the application ID and redirect URI from the registered app. 
+This single page application uses a very basic implementation of the implicit grant flow, which requires the application ID and redirect URI from the registered app. 
 
 The auth flow can be broken down into these basic steps:
 
@@ -68,7 +68,7 @@ The app uses the [HelloJS](https://adodson.com/hello.js) client-side library to 
 
 Now back to building the app.
 
-1. Open **aad.js** and add the following code. This configures communication with the Azure AD auth provider, and adds a listener that stores the auth response that contains the access token. (The script references to the library are already added to the index.html view.)
+1. Open aad.js and add the following code. This configures communication with the Azure AD auth provider, and adds a listener that stores the auth response that contains the access token. (The script references to HelloJS are already added to the index.html view.)
 
   ```
   hello.init({
@@ -96,7 +96,7 @@ Now back to building the app.
   });
   ```
 
-1. In graphHelper.js, replace *// Initialize the auth request* with the following code to set the parameter for the auth request.
+1. In graphHelper.js, replace *// Initialize the auth request* with the following code. This sets parameters for the auth request.
 
   ```
   // Initialize the auth request.
@@ -108,7 +108,7 @@ Now back to building the app.
   });
   ```
 
-1. Replace *// Sign in and sign out the user* with the following code. The **login** function gets an access token using HelloJS.
+1. Replace *// Sign in and sign out the user* with the following code. The **login** function uses HelloJS to get token information. The listener in aad.js stores this information--including the access token--in local storage.
 
   ```
   // Sign in and sign out the user.
@@ -130,7 +130,7 @@ Now you're ready to add code to call Microsoft Graph.
 ## Call Microsoft Graph
 The app calls Microsoft Graph to get user information and to send an email on the user's behalf. These calls are initiated from the MainController in response to UI events.
 
-1. In graphHelper.js, replace *// Get the profile of the current use.* with the following code. This configures and sends the GET request to the */me* endpoint, and processes the response.
+1. In graphHelper.js, replace *// Get the profile of the current user* with the following code. This configures and sends the GET request to the */me* endpoint, and processes the response.
 
   ```
   // Get the profile of the current user.
@@ -244,6 +244,8 @@ The app calls Microsoft Graph to get user information and to send an email on th
     return "<html><head> <meta http-equiv=\'Content-Type\' content=\'text/html; charset=us-ascii\'> <title></title> </head><body style=\'font-family:calibri\'> <p>Congratulations " + vm.displayName + ",</p> <p>This is a message from the Microsoft Graph Connect sample. You are well on your way to incorporating Microsoft Graph endpoints in your apps. </p> <h3>What&#8217;s next?</h3><ul><li>Check out <a href='https://graph.microsoft.io' target='_blank'>graph.microsoft.io</a> to start building Microsoft Graph apps today with all the latest tools, templates, and guidance to get started quickly.</li><li>Use the <a href='https://graph.microsoft.io/graph-explorer' target='_blank'>Graph explorer</a> to explore the rest of the APIs and start your testing.</li><li>Browse other <a href='https://github.com/microsoftgraph/' target='_blank'>samples on GitHub</a> to see more of the APIs in action.</li></ul> <h3>Give us feedback</h3> <ul><li>If you have any trouble running this sample, please <a href='https://github.com/microsoftgraph/angular-connect-rest-sample/issues' target='_blank'>log an issue</a>.</li><li>For general questions about the Microsoft Graph API, post to <a href='https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest' target='blank'>Stack Overflow</a>. Make sure that your questions or comments are tagged with [microsoftgraph].</li></ul><p>Thanks and happy coding!<br>Your Microsoft Graph samples development team</p> <div style=\'text-align:center; font-family:calibri\'> <table style=\'width:100%; font-family:calibri\'> <tbody> <tr> <td><a href=\'https://github.com/microsoftgraph/angular-connect-rest-sample\'>See on GitHub</a> </td> <td><a href=\'https://officespdev.uservoice.com/\'>Suggest on UserVoice</a> </td> <td><a href=\'https://twitter.com/share?text=I%20just%20started%20developing%20%23Angular%20apps%20using%20the%20%23MicrosoftGraph%20Connect%20sample!%20&url=https://github.com/microsoftgraph/angular-connect-rest-sample\'>Share on Twitter</a> </td> </tr> </tbody> </table> </div>  </body> </html>";
   };
   ```
+
+1. Save all your changes.
 
 ## Run the app
 
