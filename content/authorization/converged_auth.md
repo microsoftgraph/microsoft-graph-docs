@@ -1,4 +1,4 @@
-﻿# Authenticate Microsoft Graph apps with the v2 authentication endpoint
+﻿# Authenticate Microsoft Graph apps with the Azure AD v2.0 endpoint
 
 > **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors. 
 

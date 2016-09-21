@@ -96,9 +96,6 @@ Once you've registered your app with the appropriate authentication portal, and 
 
 Again, this will vary depending on the type of app you're building, your development platform, the authentication flow you choose, as well as any specific authentication requirements for your app. 
 
-
-
-
 ### Connect samples by authentication provider and platform
 
 The table below lists the Connect samples by authentication provider and platform, along with noting whether they connect to Microsoft Graph using REST or a Microsoft Graph client library:
