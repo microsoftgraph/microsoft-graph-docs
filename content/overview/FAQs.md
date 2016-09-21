@@ -93,8 +93,7 @@ Some of the benefits of using Microsoft Graph API  are as follows:
 
 ## Does Microsoft Graph API support v2.0 app authentication endpoint?
 
-Yes. For more information see [Authenticate Microsoft Graph endpoints using the v2 authentication endpoint](http://graph.microsoft.io/docs/authorization/converged_auth).
-
+Yes. For more information see [Azure AD v2.0 Endpoint](http://graph.microsoft.io/docs/authorization/converged_auth).
 
 
   > Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with [MicrosoftGraph] and [office365].
