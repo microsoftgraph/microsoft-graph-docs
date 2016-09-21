@@ -11,7 +11,7 @@ To access and manipulate a Microsoft Graph resource, you call and specify the re
 All Microsoft Graph API requests use the following basic URL pattern:
 
 ```
-	https://graph.microsoft.com/{version}/{resource}?[odata_query_parameters]
+	https://graph.microsoft.com/{version}/{resource}?[query_parameters]
 ```
 
 For this URL:
@@ -23,12 +23,15 @@ For this URL:
   - The alias `me`, which resolves to the signed-in user
    - The resources belonging to a user, such as `me/events`, `me/drive` or `me/messages`
   - The alias `myOrganization`, which resolves to the tenant of the organization signed-in user
-- `[odata_query_parameters]` represents additional OData query parameters such as `$filter` and `$select`.
+- `[query_parameters]` represents additional query parameters such as `filter` and `select`.
 
-Optionally, you can also specify the tenant as part of your request. When using `me`, do not specify the tenant. For a list of common requests, see [Overview of Microsoft Graph](overview.md).
+Optionally, you can also specify the tenant as part of your request.
+When using `me`, do not specify the tenant.
+For a list of common requests, see [Overview of Microsoft Graph](overview.md).
 
-##Microsoft Graph API metadata
-The service document ($metadata) is published at the service root. For example, you can view the service document for the v1.0 and beta versions via the following URLs.
+## Microsoft Graph API metadata
+The metadata document ($metadata) is published at the service root.
+For example, you can view the service document for the v1.0 and beta versions via the following URLs.
 
 Microsoft Graph API `v1.0` metadata.
 ```
@@ -39,18 +42,20 @@ Microsoft Graph API `beta` metadata.
 	https://graph.microsoft.com/beta/$metadata
 ```
 
-The metadata allows you to see entities, entity types and sets, complex types, and enums of the Microsoft Graph API. Using the metadata and readily available third-party tools, you can create serialized objects and generate client libraries for simplified use of the REST API.  
+The metadata allows you to see and understand the data model of the Microsoft Graph, including the entity types and sets, complex types, and enums that make up the request and response packets sent too and from the Graph.
+A key use of the metadata is to understand the realtionships between entities on the Microsoft graph and so establish URLs that naviage between entities.
+It is this navigation-based interconnectedness that gives the Graph API its unique character.
 
-A resource URL is determined by the Microsoft Graph entity data model. The prescription is outlined in the entity metadata schema ($metadata). 
-
-The path URL resource names, query parameters, and action parameters and values are case insensitive. However, values you assign, entity IDs, and 
-other base64 encoded values are case sensitive.
+Path URL resource names, query parameters, and action parameters and values are case insensitive. 
+However, values you assign, entity IDs, and other base64 encoded values are case sensitive.
 
 The following sections show a few basic programming pattern calls to the Microsoft Graph API.
 
-##Navigate from a set to a member
+## Navigate from a set to a member
 
-To view the information about a user, you get the `User` entity from the `users` collection to the specific user identified by its identifier, using an HTTPS GET request. For a `User` entity, either the `id` or `userPrincipalName` property can be used as the identifier. The following example request uses the `userPrincipalName` value as the user's id. 
+To view the information about a user, you get the `User` entity from the `users` collection to the specific user identified by its identifier, using an HTTPS GET request.
+For a `User` entity, either the `id` or `userPrincipalName` property can be used as the identifier.
+The following example request uses the `userPrincipalName` value as the user's id. 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
@@ -72,18 +77,19 @@ content-length: 982
     "department": "Help Center",
     "displayName": "John Doe",
     "givenName": "John",
-    "userPrincipalName": "Johndoe@contoso.onmicrosoft.com",
+    "userPrincipalName": "john.doe@contoso.onmicrosoft.com",
 
     ... 
 }
 ```
 
 
-##Project from an entity to properties
-To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the $select query option to the previous request. For example:
+## Project from an entity to properties
+To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the _select_ query parameter to the previous request.
+For example:
 
 ```no-highlight 
-GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
+GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?select=displayName,aboutMe,skills HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
@@ -108,8 +114,9 @@ content-length: 169
 
 Here, instead of the entire property sets on the `user` entity, only the `aboutMe`, `displayName`, and `skills` properties are returned.
 
-##Traverse to another resource via relationship
-A manager holds a `directReports` relationship with the other users reporting to him or her. To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal. 
+## Traverse to another resource via relationship
+A manager holds a `directReports` relationship with the other users reporting to him or her.
+To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal. 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1
@@ -134,7 +141,9 @@ content-length: 152
 }
 ```
 
-Similarly, you can follow a relationship to navigate to related resources. For example, the `user => messages` relationship enables traversal from an Azure AD node to an Exchange Online node. The following example show how to do this in a REST API call:
+Similarly, you can follow a relationship to navigate to related resources.
+For example, the `user => messages` relationship enables traversal from an Azure AD User to a set of Outlook mail messages.
+The following example shows how to do this in a REST API call:
 
 
 ```no-highlight 
@@ -180,11 +189,12 @@ content-length: 147
 }
 ```
 
-##Project from entities to properties
-In addition to projection from a single entity to its properties, you can also apply the similar `$select` query option to an entity collection to project them to a collection of some of their properties. For example, to query the name of the signed-in user's drive items, you can submit the following HTTPS GET request:
+## Project from entities to properties
+In addition to projection from a single entity to its properties, you can also apply the similar `select` query option to an entity collection to project them to a collection of some of their properties.
+For example, to query the name of the signed-in user's drive items, you can submit the following HTTPS GET request:
 
 ```no-highlight 
-GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/drive/root/children?select=name HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
@@ -210,12 +220,13 @@ The successful response returns a 200 OK status code and a payload containing th
 }
 ```
 
-##Query a subset of users with the filtering query option
-To find the employees of a specific job title within an organization, you can navigate from the users collection and then specify a $filter query option. An example is shown as follows:
+## Query a subset of users with the filtering query option
+To find the employees of a specific job title within an organization, you can navigate from the users collection and then specify a _filter_ query option.
+An example is shown as follows:
 
     
 ```no-highlight 
-GET https://graph.microsoft.com/v1.0/users/?$filter=jobTitle+eq+%27Helper%27 HTTP/1.1
+GET https://graph.microsoft.com/v1.0/users/?filter=jobTitle+eq+%27Helper%27 HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
@@ -256,11 +267,11 @@ content-length: 986
 }
 ```
 
-##Call OData actions or functions
-Microsoft Graph also supports OData actions and functions to manipulate the resources. 
+## Call actions or functions
+Microsoft Graph also supports _actions_ and _functions_ to manipulate resources in ways that are not a simple fit with standard HTTP methods. 
 For example, the following HTTPS POST request lets the signed-in user (`me`) send an email message:
 ```no-highlight 
-POST https://graph.microsoft.com/v1.0/me/microsoft.graph.sendMail HTTP/1.1
+POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
 authorization: bearer <access_token>
 content-type: application/json
 content-length: 96
@@ -291,8 +302,4 @@ content-length: 96
 }
 ```
 
-The request payload contains the input to the `microsoft.graph.sendMail` action, which is also defined in the $metadata.
-
-With a single unified endpoint, Microsoft Graph simplifies the application programming interface for services in the Microsoft cloud. As a result, the boundaries of the otherwise siloed services disappear. As an app developer, you are no longer required to keep track of the data sources and to implement custom interfaces between various data sources. 
-
-
+The request payload contains the input to the `sendMail` action, which is also defined in the $metadata.
