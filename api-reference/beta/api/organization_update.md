@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "update_organization"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization/<id>
+PATCH https://graph.microsoft.com/beta/organization/<id>
 Content-type: application/json
 
 {

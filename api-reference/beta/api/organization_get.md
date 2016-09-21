@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "get_organization"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/organization
+GET https://graph.microsoft.com/beta/organization
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -45,7 +45,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#organization",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization",
     "value": [
         {
             "id": "a5ef1f16-b6a9-4c81-bf2a-5dbad9b63221",
