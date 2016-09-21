@@ -12,7 +12,7 @@ Microsoft Graph provides several optional query parameters that you can use to s
 |skipToken|string|Paging token that is used to get the next set of results.|
 |count|none|A collection and the number of items in the collection.|
 
-In addition, each of the above query parameters can also be specified usiong a _$_ prefix, for example `$expand`.  This provides compatibility with the [OData V4 query language](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356) for the Microsoft Graph.
+In addition, each of the above query parameters can also be specified usiong a _$_ prefix, for example `$expand`.  This provides compatibility with the [OData V4 query language](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356) for Microsoft Graph.
 
 **Encoding query parameters**
 
@@ -22,14 +22,14 @@ any URL-encoding to the query string. The following example works fine _in the G
 GET https://graph.microsoft.com/v1.0/me/messages?filter=from/emailAddress/address eq 'jon@contoso.com'
 ``` 
 - In general, when specifying query parameters _in your app_, make sure you appropriately encode characters that are [reserved for special meanings in an URI](https://tools.ietf.org/html/rfc3986#section-2.2).
-For example, encode the space and quote characters in the last example, as shown below:
+For example, encode the space and quote characters in the last example, as shown:
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?filter=from/emailAddress/address%20eq%20%27jon@contoso.com%27
 ```
 
 ### select
 To specify a different set of properties to return than the default set provided by the Graph, use the **select** query option.
-**select** allows for choosing a subset or superset of the default set returned.
+The **select** option allows for choosing a subset or superset of the default set returned.
 For example, when retrieving your messages, you might want to select that only the **from** and **subject** properties of messages are returned.
 
 ```http
@@ -95,7 +95,7 @@ Some other resources may have a limit as well, so always check for possible erro
 
 ### orderby
 
-To specify the sort order of the items returned from the API, use the **orderby** query option. 
+To specify the sort order of the items returned from the Microsof Graph API, use the **orderby** query option. 
 
 For example, to return the users in the organization ordered by their display name, the syntax is as follows:
 
@@ -172,6 +172,6 @@ Use **count** as a query parameter to include a count of the total number of ite
 ```http
 GET  https://graph.microsoft.com/v1.0/me/contacts?count=true
 ```
-which would return both the **contacts** collection, and the number of items in the **contacts** collection in the `@odata.count` property.
+This would return both the **contacts** collection, and the number of items in the **contacts** collection in the `@odata.count` property.
 
-Note: This is not supported for [directoryObject](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/directoryobject) collections.
+>**Note:** This is not supported for [directoryObject](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/directoryobject) collections.
