@@ -1,14 +1,13 @@
-﻿# Authenticate Microsoft Graph apps with the Azure AD v2.0 endpoint
+# Authenticate Microsoft Graph apps with the Azure AD v2.0 endpoint
 
-> **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors. 
+> **Building apps for enterprise customers?** Your app might not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>.  
 
 > To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure Management Portal](https://aka.ms/aadapplist). For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](../auth_overview.md#deciding-between-azure-ad-and-the-v2-authentication-endpoint).
 
-## Signing in Microsoft account and Azure AD users with a single authentication model
 
 By using the Azure AD v2.0 endpoint, you can create apps that accept both work and school (Azure Active Directory) as well as personal (Microsoft account) identities.
 
-In the past, if you wanted to develop an app to support both Microsoft accounts and Azure Active Directory, you had to integrate with two completely separate systems. Using the Azure AD v2.0 endpoint, you can now support both types of accounts with a single integration. One simple process to immediately reach an audience that spans millions of users with both personal and work/school accounts.  
+In the past, if you wanted to develop an app to support both Microsoft accounts and Azure Active Directory, you had to integrate with two completely separate systems. Using the Azure AD v2.0 endpoint, you can now support both types of accounts with a single integration - one simple process to reach an audience that spans millions of users with both personal and work/school accounts.  
 
 <!--
 ![Microsoft Graph application stack, with authentication shown as a layer between your app and the various Microsoft Graph resources.](../images/msgraph_auth_resource_access.png) 
@@ -26,11 +25,11 @@ After you integrate your apps with the Azure AD v2.0 endpoint, they can instantl
 
  >**Note:** Some Microsoft Graph endpoints such as groups and tasks are not applicable to personal accounts.  
 
-## Microsoft Graph API authentication scopes
+## Microsoft Graph authentication scopes
 
-The Azure AD v2.0 endpoint supports all permission scopes listed in the [Microsoft Graph permission scopes](permission_scopes.md) topic. 
+The Azure AD v2.0 endpoint supports all permission scopes listed in [Microsoft Graph permission scopes](permission_scopes.md). 
 
-> **Note:** However, the Azure AD v2.0 endpoint does not currently support app-only scopes. For more information, see <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/#restrictions-on-apps" target="_newtab">Restrictions on apps</a>.
+> **Note:** The Azure AD v2.0 endpoint does not currently support app-only scopes. For more information, see <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/#restrictions-on-apps" target="_newtab">Restrictions on apps</a>.
 
 For more information about using scopes with the Azure AD v2.0 endpoint, and how it differs from using resources in Azure AD, see <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare/#scopes-not-resources" target="_newtab">Scopes, not resources</a>.
 
@@ -38,7 +37,7 @@ For more information about using scopes with the Azure AD v2.0 endpoint, and how
 
 The [Connect samples in the Microsoft Graph repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) provide simple examples of how to authenticate users and connect to Microsoft Graph across a wide range of platforms.
 
-In addition, the [Getting Started](http://graph.microsoft.io/en-us/docs/platform/rest#getting-started-with-the-microsoft-graph-api-and-rest) section contains detailed articles on how to create the above samples, including discussion of the authentication libraries used on each platform.
+In addition, the [Get Started](http://graph.microsoft.io/en-us/docs/platform/rest#getting-started-with-the-microsoft-graph-api-and-rest) section contains articles that describe how to create these sample apps, including the authentication libraries used on each platform.
 
 ## See also
 
