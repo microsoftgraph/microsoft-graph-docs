@@ -1,8 +1,8 @@
-﻿## Register your Microsoft Graph application with the v2 authentication endpoint
+## Register your Microsoft Graph application with the Azure AD v2.0 endpoint
 
-To use the v2 authentication endpoint, you need to register your app on the Microsoft App Registration Portal (https://apps.dev.microsoft.com). Registering your app establishes your app's identity with the authentication provider, and enables your app to prove its identity when submitting authentication requests from the user. Registration generates the app ID and password that you'll use to configure the app for authentication.
+To use the Azure AD v2.0 endpoint, you need to register your app on the [Microsoft App Registration Portal](https://apps.dev.microsoft.com) (https://apps.dev.microsoft.com). Registering your app establishes your app's identity with the authentication provider, and enables your app to prove its identity when submitting authentication requests from the user. Registration generates the app ID and app secret that you'll use to configure the app for authentication.
 
-> Note: This topic covers app registration with the v2 authentication endpoint. To [register your app with Azure AD](../auth_azure_ad/app_authentication_azure_ad.md), use the [Microsoft Azure Management portal](https://aka.ms/aadapplist).
+> **Note: **This article covers app registration with the Azure AD v2.0 endpoint. To [register your app with Azure AD](../auth_azure_ad/app_authentication_azure_ad.md), use the [Microsoft Azure Management portal](https://aka.ms/aadapplist).
 > 
 > Also, be aware that if you've registered apps in the Microsoft Azure Management portal already, those apps will not be listed in the App Registration Portal. Manage those apps in the Azure Management portal. 
 
@@ -33,8 +33,8 @@ To use the v2 authentication endpoint, you need to register your app on the Micr
 
 		The Allow Implicit Flow option enables the OpenID Connect hybrid flow. During authentication, this enables the app to receive both sign-in info (the id_token) and artifacts (in this case, an authorization code) that the app uses to obtain an access token.
 
-		The redirect URI is the location in your app that the v2 endpoint calls once it has processed the authentication request.
-	- Under **Application Secrets**, choose **Generate New Password**. Copy the app secret from the **New password generated** dialog.
+		The redirect URI is the location in your app that the Azure AD v2.0 endpoint calls when it has processed the authentication request.
+	- Under **Application Secrets**, choose **Generate New Password**. Copy the app secret from the **New password generated** dialog box.
 		You'll use the app secret to configure the app.
 	
 6. Choose **Save**.
