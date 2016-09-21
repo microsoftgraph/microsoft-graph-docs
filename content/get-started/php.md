@@ -177,6 +177,5 @@ Check the inbox of the email address that you configured in [Call the Microsoft 
 
 
 ## See also
-* [Overview of Microsoft Graph](http://graph.microsoft.io/docs)
 * [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
 * [Azure AD v2.0 tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

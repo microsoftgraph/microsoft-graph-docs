@@ -192,5 +192,6 @@ Note: You'll notice that the following permission scopes have been configured fo
 - Find examples of common operations for both REST and SDK operations in the [Microsoft Graph iOS Objective C Snippets Sample](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).
 
 ## See also
+- [Microsoft Graph SDK for iOS](https://github.com/microsoftgraph/msgraph-sdk-ios)
 - [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
 - [Azure AD v2.0 tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
