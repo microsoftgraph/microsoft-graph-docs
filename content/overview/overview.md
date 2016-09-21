@@ -41,7 +41,7 @@ You can use Microsoft Graph to:
 
 ##Explore Microsoft Graph
 
-- [Get started](../../get-started/get-started.md) using Microsoft Graph and the platform of your choice.
+- [Get started](../get-started/get-started.md) using Microsoft Graph and the platform of your choice.
 - Discover the resources and operations that you can use in your production environment by browsing the API reference.
 - Preview the new [beta APIs](../../api-reference/beta/beta-overview.md).
 - Visit the [Microsoft Graph Explorer](https://graph.microsoft.io/en-us/graph-explorer).
