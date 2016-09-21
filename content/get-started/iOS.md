@@ -8,7 +8,7 @@ You can download the version of the app that you'll create from this GitHub repo
 
 The following image shows the app you'll create.
 
-![Connect sample walkthrough, shows connecting and sending a mail in the app](https://github.com/OfficeDev/microsoft-graph-docs/blob/ignite-walkthroughs/content/walkthroughs/consumer/images/iOSConnectWalkthrough.png)
+![Connect sample walkthrough, shows connecting and sending a mail in the app](https://github.com/OfficeDev/microsoft-graph-docs/blob/Staging/content/get-started/images/iOSConnectWalkthrough.png)
 
 
 The workflow will be to connect/authenticate to Microsoft Graph, sign in with your work or personal account, and finally send a mail to a recipient.
