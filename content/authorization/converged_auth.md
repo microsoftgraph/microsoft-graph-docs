@@ -1,4 +1,4 @@
-# Authenticate Microsoft Graph apps with the Azure AD v2.0 endpoint
+﻿# Authenticate Microsoft Graph apps with the Azure AD v2.0 endpoint
 
 > **Building apps for enterprise customers?** Your app might not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>.  
 
@@ -28,8 +28,6 @@ After you integrate your apps with the Azure AD v2.0 endpoint, they can instantl
 ## Microsoft Graph authentication scopes
 
 The Azure AD v2.0 endpoint supports all permission scopes listed in [Microsoft Graph permission scopes](permission_scopes.md). 
-
-> **Note:** The Azure AD v2.0 endpoint does not currently support app-only scopes. For more information, see <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/#restrictions-on-apps" target="_newtab">Restrictions on apps</a>.
 
 For more information about using scopes with the Azure AD v2.0 endpoint, and how it differs from using resources in Azure AD, see <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare/#scopes-not-resources" target="_newtab">Scopes, not resources</a>.
 
