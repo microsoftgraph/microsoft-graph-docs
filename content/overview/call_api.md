@@ -42,12 +42,12 @@ Microsoft Graph API `beta` metadata.
 	https://graph.microsoft.com/beta/$metadata
 ```
 
-The metadata allows you to see and understand the data model of the Microsoft Graph, including the entity types and sets, complex types, and enums that make up the request and response packets sent too and from the Graph.
-A key use of the metadata is to understand the realtionships between entities on the Microsoft graph and so establish URLs that naviage between entities.
-It is this navigation-based interconnectedness that gives the Graph API its unique character.
+The metadata allows you to see and understand the data model of the Microsoft Graph, including the entity types and sets, complex types, and enums that make up the request and response packets sent to and from Microsoft Graph.
+You can use the metadata to understand the realtionships between entities in Microsoft Graph and establish URLs that navigate between entities.
+This navigation-based interconnectedness gives Microsoft Graph its unique character.
 
 Path URL resource names, query parameters, and action parameters and values are case insensitive. 
-However, values you assign, entity IDs, and other base64 encoded values are case sensitive.
+However, values you assign, entity IDs, and other base64-encoded values are case sensitive.
 
 The following sections show a few basic programming pattern calls to the Microsoft Graph API.
 
