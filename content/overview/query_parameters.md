@@ -12,7 +12,7 @@ Microsoft Graph provides several optional query parameters that you can use to s
 |skipToken|string|Paging token that is used to get the next set of results.|
 |count|none|A collection and the number of items in the collection.|
 
-In addition, each of the above query parameters can also be specified usiong a _$_ prefix, for example `$expand`.  This provides compatibility with the [OData V4 query language](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356) for Microsoft Graph.
+In addition, each of the above query parameters can also be specified using a _$_ prefix, for example `$expand`.  This provides compatibility with the [OData V4 query language](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356) for Microsoft Graph.
 
 **Encoding query parameters**
 
