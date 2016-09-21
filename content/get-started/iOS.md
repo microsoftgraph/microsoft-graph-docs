@@ -50,6 +50,20 @@ To get started, you'll need:
    You will receive confirmation that the pods have been imported into the project. For more information, see [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
 
 
+## Enable keychain sharing
+ 
+For Xcode8, you need to add the keychain group or your app will fail to access keychain. 
+To add the keychain group:
+ 
+1. Select the project on the project manager panel in Xcode. (⌘ + 1).
+ 
+2. Select **O365-iOS-Microsoft-Graph-SDK**.
+ 
+3. On the Capabilities tab, enable **Keychain Sharing**.
+ 
+4. Add **com.microsoft.O365-iOS-Microsoft-Graph-SDK** to the Keychain Groups.
+ 
+
 ## Authenticating with Microsoft Graph
 
 To revisit the UI workflow, the app is going to have the user authenticate, and then they'll have the ability to send a mail to a specified user. To make requests against the Microsoft Graph service, an authentication provider must be supplied which is capable of authenticating HTTPS requests with an appropriate OAuth 2.0 bearer token. In the sample project there's an authentication class already stubbed out called **AuthenticationProvider.m.** We will add a function to request, and acquire, an access token for calling the Microsoft Graph API. 
