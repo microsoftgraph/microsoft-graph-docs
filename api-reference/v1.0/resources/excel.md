@@ -78,7 +78,7 @@ workbook-session-id: {session-id}
 
 ## Common Excel scenarios
 
-This section describes some of the common operations you can use on Excel objects and provides some examples.
+This section provides examples of the common operations you can use on Excel objects.
 
 ### Worksheet operations
 
