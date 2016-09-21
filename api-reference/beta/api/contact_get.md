@@ -11,17 +11,6 @@ A [contact](../resources/contact.md) from user's default [contactFolder](../reso
 GET /me/contacts/<id>
 GET /users/<id | userPrincipalName>/contacts/<id>
 ```
-A [contact](../resources/contact.md) from a user's top level [contactFolder](../resources/contactfolder.md).
-```http
-GET /me/contactfolders/<Id>/contacts/<id>
-GET /users/<id | userPrincipalName>/contactfolders/<id>/contacts/<id>
-```
-A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The 
-example below shows one level of nesting, but a contact can be located in a child of a child and so on.
-```http
-GET /me/contactFolder/<id>/childFolders/<id>/.../contacts/<id>
-GET /users/<id | userPrincipalName>/contactFolders/<id>/childFolders/<id>/contacts/<id>
-```
 ## Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
