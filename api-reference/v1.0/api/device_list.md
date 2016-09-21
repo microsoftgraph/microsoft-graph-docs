@@ -1,8 +1,9 @@
 # List devices
 
-Retrieve a list of device objects.
+Retrieve a list of devices registered in the directory.  
+
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Device.ReadWrite.All* or *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+One of the following scopes is required to execute this API: Directory.AccessAsUser.All, Device.ReadWrite.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,15 +42,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 399
-
 {
   "value": [
     {
       "accountEnabled": true,
       "alternativeSecurityIds": [
         {
-          "type": 99,
+          "type": 2,
           "identityProvider": "identityProvider-value",
           "key": "key-value"
         }
@@ -57,7 +56,9 @@ Content-length: 399
       "approximateLastSignInDateTime": "datetime-value",
       "deviceId": "deviceId-value",
       "deviceMetadata": "deviceMetadata-value",
-      "deviceVersion": 99
+      "displayName" : "displayName-value",
+      "id" : "id-value", 
+      "operatingSystem" : "operatingSystem-value"
     }
   ]
 }
