@@ -16,7 +16,7 @@
 	<Item text="Azure AD" url="/en-us/authorization" />
 		<Item text="Authenticate using Azure AD" url="/en-us/authorization/app_authorization" SEODescription="" />
 		<Item text="Call Microsoft Graph in a service or daemon app" url="/en-us/authorization/app_only" SEODescription="" />
-		<Item text="Associate your Office 365 account with Azure AD" url="/en-us/authorization/associate_apps" SEOKeyword="Associate Office 365 account, Microsoft Graph API, Overview" SEODescription="Use the management portal in Microsoft Azure to manage users, roles, and apps for Office 365." />
+		<Item text="Associate your Office 365 account with Azure AD" url="/en-us/authorization/associate_account" SEOKeyword="Associate Office 365 account, Microsoft Graph API, Overview" SEODescription="Use the management portal in Microsoft Azure to manage users, roles, and apps for Office 365." />
     
   </Item>
   <Item text="Get started" url="/en-us/getting-started-docs">
