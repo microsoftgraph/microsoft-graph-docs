@@ -11,28 +11,19 @@ One of the following **scopes** is required to execute this API:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/items/<item-id>/permissions/<id>
-GET /me/drive/root:/<item-path>:/permissions/<id>
-GET /groups/<group-id>/drive/items/<item-id>/permissions/<id>
+GET /me/drive/items/{item-id}/permissions/{perm-id}
+GET /me/drive/root:/{path}:/permissions/{perm-id}
+GET /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
+GET /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 ## Optional query parameters
-This method supports the [OData Query
-Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help
-customize the response.
-
-
-## Request headers
-
-| Name          | Type   | Description               |
-|:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer <token>. Required. |
-
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [permission](../resources/permission.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [Permission](../resources/permission.md) resource in the response body.
 
 ## Example
 
@@ -45,7 +36,7 @@ Here is an example of the request to access a permission on the root folder.
   "name": "get_permission"
 }-->
 ```http
-GET /me/drive/root/permissions/<id>
+GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-id}
 ```
 ##### Response
 Here is an example of the response.
@@ -70,6 +61,15 @@ Content-length: 762
   "roles": [ "write" ]
 }
 ```
+
+## Remarks
+
+The [Permission](../resources/permission.md) resource uses _facets_ to provide information about the kind of permission represented by the resource.
+
+Permissions with a [**link**](../resources/sharinglink.md) facet represent sharing links created on the item. 
+Sharing links contain a unique token that provides access to the item for anyone with the link.
+
+Permissions with a [**invitation**](../resources/sharinginvitation.md) facet represent permissions added by inviting specific users or groups to have access to the file.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

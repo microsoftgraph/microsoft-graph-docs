@@ -1,13 +1,13 @@
-# List recently used files
+# List recent files
 
-List a set of items that have been recently used by the signed in user. This list
-includes items that are in the user's drive as well as items they have access to
-from other drives.
+List a set of items that have been recently used by the signed in user.
+This collection includes items that are in the user's drive as well as items they have access to from other drives.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.Read
+  * Sites.Read.All
 
 ## HTTP request
 
@@ -16,12 +16,6 @@ One of the following **scopes** is required to execute this API:
 GET /me/drive/recent
 ```
 
-## Request headers
-
-| Name          | Type   | Description                                                                                                                                                                                       |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Authorization | string | Bearer <token>. Required.                                                                                                                                                                         |
-
 ## Request body
 Do not supply a request body for this method.
 
@@ -29,13 +23,13 @@ Do not supply a request body for this method.
 
 <!-- { "blockType": "request", "name": "drive-recent", "scopes": "files.read" } -->
 ```http
-GET /me/drive/recent
+GET https://graph.microsoft.com/beta/me/drive/recent
 ```
 
 ## Response
 
-This returns a collection of [driveItem resources](../resources/driveitem.md)
-that contains items which have been shared with the signed-in user.
+This returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.
+Items outside of the user's drive will include the [RemoteItem](../resources/remoteitem.md) facet, which provides information to access the shared item.
 
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true } -->
@@ -75,14 +69,12 @@ Content-Type: application/json
 
 ## Remarks
 
-Some driveItems returned from the **recent** action will include the **remoteItem**
-facet which indicates they are items from another drive. To access the original
-driveItem object, you will need to make a request using the information provided
-in **remoteItem** in the following format:
+Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. 
+To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:
 
 <!-- {"blockType": "ignored"} -->
 ```http
-GET /drives/<remoteItem.driveId>/items/<id>
+GET https://graph.microsoft.com/beta/drives/{remoteItem.driveId}/items/{remoteItem.id}
 ```
 
 <!-- {

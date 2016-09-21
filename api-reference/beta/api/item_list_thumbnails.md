@@ -1,12 +1,10 @@
-# List thumbnails for driveItem
+# List thumbnails for a DriveItem
 
-Retrieve a set of thumbnailSet resources for a [driveItem object](../resources/driveitem.md).
+Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.
 
-An item in a drive can be represented by zero or more
-[thumbnailSet](../resources/thumbnailset.md) objects. Each **thumbnailSet** can
-have one or more [**thumbnail**](../resources/thumbnail.md) objects, which are images that represent the
-item. For example, a **thumbnailSet** may include **thumbnail** objects, such as
-common ones including `small`, `medium`, or `large`.
+A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources.
+Each **thumbnailSet** can have one or more [**thumbnail**](../resources/thumbnail.md) objects, which are images that represent the item.
+For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large`.
 
 There are many ways to work with thumbnails on OneDrive.
 Here are the most common ones:
@@ -33,24 +31,17 @@ One of the following **scopes** is required to execute this API:
 ```http
 GET /me/drive/root:/{item-path}:/thumbnails
 GET /me/drive/items/{item-id}/thumbnails
-GET /groups/<id>/drive/items/<item-id>/thumbnails
+GET /groups/{group-id}/drive/items/{item-id}/thumbnails
 ```
-## Request headers
-
-| Name          | Type   | Description               |
-|:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer <token>. Required. |
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters)
-to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and collection of
-[thumbnailSet](../resources/thumbnailset.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [ThumbnailSet](../resources/thumbnailset.md) objects in the response body.
 
 ## Example
 
@@ -63,7 +54,7 @@ Here is an example of the request.
   "name": "get_thumbnails"
 }-->
 ```http
-GET /me/drive/items/<item-id>/thumbnails
+GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/thumbnails
 ```
 
 
@@ -94,14 +85,13 @@ Content-type: application/json
 
 ## Retrieve a single thumbnail
 
-Retrieve the metadata for a single thumbnail and size by addressing
-it directly in a request.
+Retrieve the metadata for a single thumbnail and size by addressing it directly in a request.
 
 ## HTTP request
 
 <!-- { "blockType": "request", "name": "get-one-thumbnail" } -->
 ```http
-GET /me/drive/items/<item-id>/thumbnails/<thumb-id>/<size>
+GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 ```
 
 ## Path parameters
@@ -127,14 +117,13 @@ Content-Type: application/json
 
 ## Retrieve thumbnail content
 
-You can directly retrieve the content of the thumbnail by requesting the
-**content** property of the thumbnail.
+You can directly retrieve the content of the thumbnail by requesting the **content** property of the thumbnail.
 
 ## HTTP request
 
 <!-- { "blockType": "request", "name":"get-thumbnail-content" } -->
 ```http
-GET /me/drive/items/<item-id>/thumbnails/<thumb-id>/<size>/content
+GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 ```
 
 ## Response
@@ -147,21 +136,20 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-Thumbnail URLs are cache-safe. The URL will change, if the item
-changes in a way that requires a new thumbnail to be generated.
+Thumbnail content URLs are pre-authenticated and do not require an authorization header to be downloaded.
+These URLs are short lived and only valid for a few hours and should not be cached by apps.
+
 
 ## Size values
 
-This table defines the possible thumbnail sizes. While you can
-request any arbitrary thumbnail size, the defined values are likely to exist and
-return a value quickly:
+This table defines the possible thumbnail sizes.
+While you can request any arbitrary thumbnail size, the defined values are likely to exist and return a value quickly:
 
 | Name           | Resolution  | Aspect Ratio | Description                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
 | `small`        | 96 longest  | Original     | Small, highly compressed thumbnail cropped to a square aspect ratio. |
 | `medium`       | 176 longest | Original     | Cropped to the standard item size for the OneDrive web view.         |
 | `large`        | 800 longest | Original     | Thumbnail with the longest edge resized to 800 pixels.               |
-
 
 ## Remarks
 

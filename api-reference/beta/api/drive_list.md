@@ -1,37 +1,30 @@
 # List available drives
 
-Retrieve a list of available drive objects for a user or Office 365 group.
-
+Retrieve the list of [Drive](../resources/drive.md) resources available for a target [User](../resources/user.md) or [Group](../resources/group.md).
+Your app can also request the set of document libraries on the SharePoint root site.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.Read
   * Files.ReadWrite
+  * Sites.Read.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /drives
 GET /me/drives
-GET /groups/<id>/drives
+GET /groups/{id}/drives
 ```
+
 ## Optional query parameters
-This method supports the [OData Query
-Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help
-customize the response.
-
-## Request headers
-
-| Name          | Type   | Description               |
-|:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer <token>. Required. |
-
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and collection of
-[drive](../resources/drive.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.
 
 ## Example
 
@@ -83,8 +76,8 @@ Content-length: 579
 
 ## Remarks
 
-Most users will only have a single OneDrive. Office 365 groups may have more than
-one drive available.
+Most users will only have a single Drive resource.
+Groups and some users may have multiple drive available.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

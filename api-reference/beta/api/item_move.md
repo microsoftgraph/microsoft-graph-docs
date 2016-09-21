@@ -1,10 +1,10 @@
-# Move an item
+# Move a DriveItem
 
-Update the parent folder for an item by ID or path. To move an item, you update
-its parentReference property.
+To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
+This is a special case of the [Update](item_update.md) method.
+Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 
-You can also move an item into another folder by updating the **parentInfo.id**
-or **parentInfo.path** property to the ID of the target parent.
+Items cannot be moved between [Drives](../resources/drive.md) using this request.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -16,41 +16,37 @@ One of the following **scopes** is required to execute this API:
 ```http
 PATCH /me/drive/items/{item-id}
 PATCH /me/drive/root:/{item-path}
-PATCH /groups/<id>/drive/<item-id>
+PATCH /drives/{drive-id}/items/{item-id}
+PATCH /groups/{group-id}/drive/{item-id}
 ```
 
 ## Request headers
 
 | Name          | Type   | Description                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Authorization | string | Bearer <token>. Required.                                                                                                                                           |
 | if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
 
 
 ## Request body
 In the request body, supply the new value for the **parentReference** property.
-Existing properties that are not included in the request body will maintain
-their previous values or be recalculated based on changes to other property
-values. For best performance you shouldn't include existing values that haven't
-changed.
+Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
+For best performance you shouldn't include existing values that haven't changed.
 
-**Note:** When moving items to the root of a OneDrive you cannot use the
-`"id:" "root"` syntax. You either need to use the real ID of the root folder, or
-use `{"path": "/drive/root"}` for the parent reference.
+**Note:** When moving items to the root of a OneDrive you cannot use the `"id:" "root"` syntax.
+You either need to use the real ID of the root folder, or use `{"path": "/drive/root"}` for the parent reference.
 
 ## Response
-If successful, this method returns a `200 OK` response code and updated
-[item](../resources/driveitem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
-This example moves a folder to a new parent path.
+This example moves an item specified by {item-id} into the **Documents** folder in the user's OneDrive.
 
 <!-- {
   "blockType": "request",
   "name": "update_item"
 }-->
 ```http
-PATCH /drive/items/{item-id}
+PATCH https://graph.microsoft.com/beta/me/drive/items/{item-id}
 Content-type: application/json
 
 {
@@ -72,8 +68,12 @@ Content-type: application/json
 
 {
 	"id": "0123456789abc",
-	"name": "BFolder",
-	"folder": { "childCount": 3 }
+	"name": "new-item-name",
+	"folder": { "childCount": 3 },
+  "parentReference": {
+    "id": "507DE6D5-0201-496A-AA87-5E2563247982",
+    "path": "/drive/root:/Documents"
+  }
 }
 ```
 

@@ -1,25 +1,17 @@
-# specialFolder resource type
+# SpecialFolder resource type
 
-The **SpecialFolder** facet provides information about how a folder can be
-accessed via the [special folders collection](../api/drive_special.md).
+The **SpecialFolder** resource groups special folder-related data items into a single structure.
 
-Special folders provide simple aliases to access well-known folders in OneDrive
-without the need to look up the folder by path (which would require
-localization), or reference the folder with an ID. If a special folder is
-renamed or moved to another location within the drive, this syntax will continue
-to find that folder.
+If a **DriveItem** has a non-null **specialFolder** facet, the item represents a specail (named) folder.
+Special folders can be accessed directly via the [special folders collection](../api/drive_special.md).
 
-Special folders are automatically created the first time an application attempts
-to write to one, if it doesn't already exist. If a user deletes one, it is
-recreated when written to again.
+Special folders provide simple aliases to access well-known folders without the need to look up the folder by path (which would require localization), or reference the folder with an ID.
+If a special folder is renamed or moved to another location within the drive, this syntax will continue to return that folder.
 
-**Note:** If your app has only requested **Files.Read** scope and requests a
-special folder that doesn't exist, the response will be a `403 Forbidden` error.
+Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
+If a user deletes one, it is recreated when written to again.
 
-## Properties
-| Property  | Type   | Description                                                            |
-|:----------|:-------|:-----------------------------------------------------------------------|
-| name      | string | The unique identifier for this item in the `/drive/special` collection |
+**Note:** If your app has only requested **Files.Read** scope and requests a special folder that doesn't exist, the response will be a `403 Forbidden` error.
 
 ## JSON representation
 
@@ -34,8 +26,13 @@ special folder that doesn't exist, the response will be a `403 Forbidden` error.
 {
   "name": "string"
 }
-
 ```
+
+## Properties
+
+| Property  | Type   | Description                                                            |
+|:----------|:-------|:-----------------------------------------------------------------------|
+| name      | string | The unique identifier for this item in the `/drive/special` collection |
 
 ## Special folders
 
@@ -48,6 +45,10 @@ Here are the special folders available in OneDrive Personal and OneDrive for Bus
 | Documents   | `documents`  | The Documents folder.                                                    |
 | Music       | `music`      | The Music folder. Not available in OneDrive for Business.                |
 | Photos      | `photos`     | The Photos folder.                                                       |
+
+## Remarks 
+
+For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

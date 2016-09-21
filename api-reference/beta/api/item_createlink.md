@@ -1,13 +1,11 @@
-# Create a sharing link for a driveItem
+# Create a sharing link for a DriveItem
 
-You can use **createLink** action to share an item via a link.
+You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.
 
-The **createLink** action will create a new sharing link if the specified
-link type doesn't already exist for the calling application. If a sharing link
-of the specified type already exists for the app, the existing sharing link
-will be returned.
+The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.
+If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 
-Items inherit permissions from their ancestors.
+DriveItem resources inherit permissions from their ancestors.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -19,23 +17,17 @@ One of the following **scopes** is required to execute this API:
 ```http
 POST /me/drive/items/{item-id}/createLink
 POST /me/drive/root:/{item-path}:/createLink
-POST /groups/<id>/drive/items/<item-id>/createLink
+POST /groups/{group-id}/drive/items/{item-id}/createLink
+POST /drives/{drive-id}/items/{item-id}/createLink
 ```
 
-## Request headers
-
-| Name          | Type   | Description               |
-|:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer <token>. Required. |
-
-
 ## Request body
-The body of the request defines the type of sharing link your application is
-looking for. The request should be a JSON object with this property.
+The body of the request defines the type of sharing link your application is looking for.
+The request should be a JSON object with this property.
 
-| Name   | Type   | Description                                                          |
-|:-------|:-------|:---------------------------------------------------------------------|
-| **type** | string | The type of sharing link to create. Either `view`, `edit`, or `embed`. |
+| Name      | Type   | Description                                                                  |
+|:----------|:-------|:-----------------------------------------------------------------------------|
+| **type**  | string | The type of sharing link to create. Either `view`, `edit`, or `embed`.       |
 | **scope** | string | The scope of link to create. Either `anonymous` or `organization`. Optional. |
 
 ## Link types
@@ -59,15 +51,11 @@ link available will be created.
 
 ## Response
 
-If successful, this method returns a single [Permission](../resources/permission.md)
-resource in the response body that represents the requested sharing link permission.
+If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing link permission.
 
-The service will first look at the current permissions and check
-if one already exists that has the same **type** for the
-calling application.
+The service will first look at the current permissions and check if one already exists that has the same **type** for the calling application.
 
-The response will be `201 Created` if a new sharing link is created for the
-item or  `200 OK` if an existing link is returned.
+The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.
 
 ## Example
 Here is an example of how to call this API.
@@ -80,7 +68,7 @@ Here is an example of the request.
   "name": "item_createlink"
 }-->
 ```http
-POST /drive/root:/{item-path}:/createLink
+POST https://graph.microsoft.com/beta/me/drive/root:/{item-path}:/createLink
 Content-type: application/json
 
 {
@@ -102,7 +90,7 @@ Content-Type: application/json
   "link": {
     "type": "view",
     "scope": "anonymous",
-    "webUrl": "https://onedrive.live.com/redir?resid=5D33DD65C6932946!70859&authkey=!AL7N1QAfSWcjNU8&ithint=folder%2cgif",
+    "webUrl": "https://1drv.ms/A6913278E564460AA616C71B28AD6EB6",
     "application": {
       "id": "1234",
       "displayName": "Sample Application"
@@ -113,16 +101,15 @@ Content-Type: application/json
 
 ## Creating company sharable links
 
-OneDrive for Business and SharePoint support company sharable links. These are
-similar to anonymous links, except they only work for members of the owning
-tenant. To create a company sharable link, use the **scope** parameter with a
-value of `organization`.
+OneDrive for Business and SharePoint support company sharable links.
+These are similar to anonymous links, except they only work for members of the owning tenant.
+To create a company sharable link, use the **scope** parameter with a value of `organization`.
 
 ## HTTP request
 
 <!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
-```http
-POST /drive/items/{item-id}/action.createLink
+```
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/createLink
 Content-Type: application/json
 
 {
@@ -133,8 +120,7 @@ Content-Type: application/json
 
 ## HTTP response
 
-The response will be `201 Created` if a new sharing link is created for the
-item or `200 OK` if an existing link is returned.
+The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 ```http
@@ -158,18 +144,17 @@ Content-Type: application/json
 
 ## Embeddable links
 
-When using the `embed` link type, the webUrl returned can be embedded in an
-`<iframe>` HTML element. When an embed link is created the `webHtml`
-property contains the HTML code for an `<iframe>` to host the content.
+When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element. 
+When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
 
-**Note:** Embed links are only supported for OneDrive Personal.
+**Note:** Embed links are only supported in [Drives](../resources/drive.md) where the **driveType** is `personal`.
 
-## Programming Notes
+## Remarks
 
-Sharing links created using this action do not expire. They are visible in the
-sharing permissions for the item and can be removed by an owner of the item.
-Sharing links always point to the current version of a item, unless the item is
-checked out (SharePoint only).
+Sharing links created using this action do not expire.
+They are visible in the sharing permissions for the item and can be removed by an owner of the item.
+
+Sharing links always point to the current version of a item unless the item is checked out (SharePoint only).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
