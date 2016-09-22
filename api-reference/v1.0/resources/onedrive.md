@@ -1,11 +1,8 @@
 # Working with files in Microsoft Graph
 
-The Microsoft Graph API allows your app to connect with files across OneDrive, OneDrive for Business, and SharePoint document libraries.
-The API provides the richness necessary to build a variety of experiences with files stored in Office 365, from simply storying user documents to complex file sharing scenarios.
+You can use Microsoft Graph to create an app that connects with files across OneDrive, OneDrive for Business, and SharePoint document libraries. With Microsoft Graph, you can build a variety of experiences with files stored in Office 365, from simply storing user documents to complex file sharing scenarios.
 
-## Files overview
-
-The Graph API exposes two major resource types for working with files:
+Microsoft Graph exposes two resource types for working with files:
 
 * [Drive](drive.md) - Represents a logical container of files, like a document library or a user's OneDrive.
 * [DriveItem](driveitem.md) - Represents an item within a drive, like a document, photo, video, or folder.
@@ -41,7 +38,7 @@ Most of the interaction with files occurs through interaction with **DriveItem**
 
 **Drive** and **DriveItem** resources expose data in three different ways:
 
-* _Properties_ (like **id** and **name**) expose simple values (strings, numbers, booleans).
+* _Properties_ (like **id** and **name**) expose simple values (strings, numbers, Booleans).
 * _Facets_ (like **file** and **photo**) expose complex values. The presence of **file** or **folder** facets indicates behaviors and properties of a **DriveItem**.
 * _References_ (like **children** and **thumbnails**) point to collections of other resources.
 
@@ -63,7 +60,7 @@ Most API requests for file interactions will use one of these base resources to 
 
 In addition to addressing a **DriveItem** within a **Drive** by unique ID, your app can also address a **DriveItem** by relative path from a known resource.
 To address using a path, the colon (`:`) character is used to escape the relative path.
-This table provides an example of different ways to use the colon character to address an item by path:
+This table provides an example of different ways to use the colon character to address an item by path.
 
 | Path | Resource |
 |---|---|
@@ -74,7 +71,7 @@ This table provides an example of different ways to use the colon character to a
 
 ## Drive resource
 
-The [Drive resource](drive.md) is the top level object within a user's OneDrive or a SharePoint document library.
+The [Drive resource](drive.md) is the top-level object within a user's OneDrive or a SharePoint document library.
 Nearly all files operations will start by addressing a specific drive resource.
 
 A drive resource can be addressed either by the drive's unique ID or by the default drive for a [User](user.md), [Group](group.md), or organization. 
@@ -82,9 +79,9 @@ A drive resource can be addressed either by the drive's unique ID or by the defa
 ## DriveItem resource
 
 [DriveItems](driveitem.md) are the objects inside a drive's file system.
-They can be accessed by using their **id** by using `/items/{item-id}` syntax, or by their file system path using the `/root:/path/to/item/` syntax.
+They can be accessed by their **id** by using `/items/{item-id}` syntax, or by their file system path using the `/root:/path/to/item/` syntax.
 
-DriveItems have _facets_ that provide data about the item's idenitty and capabilities.
+DriveItems have _facets_ that provide data about the item's identity and capabilities.
 
 DriveItems with a **folder** facet act as containers of items, and have a **children** reference, which points to a collection of items under the folder.
 
@@ -93,13 +90,13 @@ DriveItems with a **folder** facet act as containers of items, and have a **chil
 OneDrive personal users can add one or more shared items from another drive to their own OneDrive.
 These shared items appear as a **DriveItem** in the **children** collection with a [remoteItem](remoteitem.md) facet.
 
-For more information on workign with shared folders and remote items, see [Remote items and shared folders](remoteitem.md).   
+For more information about working with shared folders and remote items, see [Remote items and shared folders](remoteitem.md).   
 
 ## Sharing and permissions
 
 One of the most common actions for OneDrive and SharePoint document libraries is sharing content with other people.
-Graph API allows your app to create [sharing links](../api/item_createLink.md), [add permissions and send invitations](../api/item_invite.md) to items in a drive.
+Microsoft Graph allows your app to create [sharing links](../api/item_createLink.md), [add permissions and send invitations](../api/item_invite.md) to items in a drive.
 
-Graph API also provides a way for your app to [access shared content](../api/shares_get.md) directly from a sharing link.
+Microsoft Graph also provides a way for your app to [access shared content](../api/shares_get.md) directly from a sharing link.
 
  
