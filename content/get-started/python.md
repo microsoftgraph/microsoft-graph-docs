@@ -29,8 +29,6 @@ First, you need to register your application and set permissions to use Microsof
 11. In the **Settings** menu, choose the **Keys** section. Enter a description and select a duration for the key. Click **Save**.
 12. **Important**: Copy the key value. You won't be able to access this value again once you leave this pane. You will use this value as your app secret.
 
-For more information, see [Register your web server app with the Azure Management Portal](https://msdn.microsoft.com/en-us/office/office365/HowTo/add-common-consent-manually#bk_RegisterServerApp).
-
 ## Redirect the browser to the sign in page
 
 Your app needs to redirect the browser to the sign in page to begin the OAuth flow and get an authorization code. 

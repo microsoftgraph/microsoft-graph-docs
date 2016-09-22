@@ -11,13 +11,13 @@ There are currently two options to register your app with Azure AD.
   - Register an app to use the Azure AD v2.0 endpoint that works for both personal (Microsoft) identities and work and school (Azure AD) accounts.
   - Register an app to use the Azure AD endpoint that supports work and school accounts only.
 
-This article assumes a v2.0 registration, so you'll register your app on the [Application Registration Portal](https://apps.dev.microsoft.com/). Follow the instructions in [Register your Microsoft Graph application with the Azure AD v2.0 endpoint](../authorization/auth_register_app_v2.md) to register your app.
+This article assumes a v2.0 registration, so you'll register your app on the [Application Registration Portal](https://apps.dev.microsoft.com/). Follow the instructions in [Register your Microsoft Graph application with the Azure AD v2.0 endpoint](../authorization/auth_register_app_v2.md) to register your app. For information about using the Azure AD endpoint, see [Authenticate using Azure AD](../authorization/app_authorization.md).
 
 > Some limitations apply when using the v2.0 endpoint. To decide if it's right for you, see [Should I use the v2.0 endpoint?](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
 
 ## Authenticate the user and get an access token
 
-The app described in this article implements the [Authorization Code Grant flow]((https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-code/)) to get access tokens from the Azure AD v2.0 endpoint, following standard [OAuth 2.0 protocols](http://tools.ietf.org/html/rfc6749). For a complete guide to the flows supported in the Azure AD v2.0 endpoint see [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/).
+The app described in this article implements the [Authorization Code Grant flow](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-code/) to get access tokens from the Azure AD v2.0 endpoint, following standard [OAuth 2.0 protocols](http://tools.ietf.org/html/rfc6749). For a complete guide to the flows supported in the Azure AD v2.0 endpoint see [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/).
 
 With the Authorization Code Grant flow, first you get an authorization code and then you exchange the code for an access token.
 
