@@ -94,12 +94,10 @@
       </Item>
     </Item>
     <Item text="Data Extensions" url="/en-us/api-reference/v1.0/resources/opentypeextension" SEOKeyword="extension API, Microsoft Graph API, extension API" SEODescription="">
-      <Item text="opentypeextension" url="/en-us/api-reference/v1.0/resources/opentypeextension" SEOKeyword="extension API, Microsoft Graph API, extension API" SEODescription="">
-        <Item text="Create openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
-        <Item text="Get openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
-        <Item text="Update opentypeextension" url="/en-us/api-reference/v1.0/api/opentypeextension_update" SEOKeyword="Update opentypeextension, Microsoft Graph API, opentypeextension API" SEODescription="Update the properties of opentypeextension object." />
-        <Item text="Delete openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_delete" SEOKeyword="Delete openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Delete openTypeExtension." />
-      </Item>
+        <Item text="Create data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Get data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Update data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_update" SEOKeyword="Update data extension, Microsoft Graph API, opentypeextension API" SEODescription="Update the properties of opentypeextension object." />
+        <Item text="Delete data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_delete" SEOKeyword="Delete data extension, Microsoft Graph API, opentypeextension API" SEODescription="Delete data extension." />
     </Item>
     <Item text="OneDrive" url="/en-us/api-reference/v1.0/resources/onedrive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="OneDrive APIs">
       <Item text="Drives" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="Drive API">
@@ -198,8 +196,8 @@
         <Item text="Send mail" url="/en-us/api-reference/v1.0/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, user API" SEODescription="Send mail"/>
         <Item text="List attachments" url="/en-us/api-reference/v1.0/api/message_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Mail API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Create attachment" url="/en-us/api-reference/v1.0/api/message_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, message API" SEODescription="Use this API to create a new Attachment." />
-        <Item text="Create openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
-        <Item text="Get openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Create data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Get data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
       </Item>
       <Item text="Focused Inbox" url="/en-us/api-reference/v1.0/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph, Focused inbox" SEODescription="">
         <Item text="Create Override" url="/en-us/api-reference/v1.0/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph, Focused inbox" SEODescription="Create an override for a sender identified by an SMTP address." />
@@ -252,8 +250,8 @@
         <Item text="List event instances" url="/en-us/api-reference/v1.0/api/event_list_instances" SEOKeyword="List event instances, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
         <Item text="List attachments" url="/en-us/api-reference/v1.0/api/event_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Create attachment" url="/en-us/api-reference/v1.0/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
-        <Item text="Create openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
-        <Item text="Get openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Create data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Get data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
       </Item>
       <Item text="event message" url="/en-us/api-reference/v1.0/resources/eventmessage" SEOKeyword="eventmessage API, Microsoft Graph API, eventmessage API" SEODescription="A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message.">
         <Item text="Get event message" url="/en-us/api-reference/v1.0/api/eventmessage_get" SEOKeyword="Get event message, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve the properties and relationships of eventmessage object." />
@@ -270,8 +268,8 @@
         <Item text="Forward event message" url="/en-us/api-reference/v1.0/api/message_forward" SEOKeyword="Forward event message, Microsoft Graph API, Outlook Calendar API" SEODescription="Forward event message" />
         <Item text="Create Attachment" url="/en-us/api-reference/v1.0/api/eventmessage_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
         <Item text="List attachments" url="/en-us/api-reference/v1.0/api/eventmessage_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
-        <Item text="Create openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
-        <Item text="Get openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Create data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Get data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
       </Item>
       <Item text="calendar" url="/en-us/api-reference/v1.0/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
         <Item text="List calendars" url="/en-us/api-reference/v1.0/api/user_list_calendars" SEOKeyword="List calendars, Microsoft Graph API, Users API" SEODescription="Retrieve a list of calendar objects." />
@@ -321,8 +319,8 @@
         <Item text="Get contact" url="/en-us/api-reference/v1.0/api/contact_get" SEOKeyword="Get contact, Microsoft Graph API, contact API" SEODescription="Retrieve the properties and relationships of contact object." />
         <Item text="Update contact" url="/en-us/api-reference/v1.0/api/contact_update" SEOKeyword="Update contact, Microsoft Graph API, contact API" SEODescription="Update the properties of contact object." />
         <Item text="Delete contact" url="/en-us/api-reference/v1.0/api/contact_delete" SEOKeyword="Delete contact, Microsoft Graph API, contact API" SEODescription="Delete contact." />
-        <Item text="Create openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
-        <Item text="Get openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Create data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Get data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
       </Item>
       <Item text="contact folder" url="/en-us/api-reference/v1.0/resources/contactfolder" SEOKeyword="contactfolder API, Microsoft Graph API, contactfolder API" SEODescription="A folder that contains contacts.">
         <Item text="List contact folders" url="/en-us/api-reference/v1.0/api/user_list_contactfolders" SEOKeyword="List contactFolders, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contactfolder objects." />
@@ -392,8 +390,8 @@
         <Item text="Forward post" url="/en-us/api-reference/v1.0/api/post_forward" SEOKeyword="post: forward, Microsoft Graph API, post API" SEODescription="" />
         <Item text="List attachments" url="/en-us/api-reference/v1.0/api/post_list_attachments" SEOKeyword="List post attachments, Microsoft Graph API, Outlook conversation API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Create attachment" url="/en-us/api-reference/v1.0/api/post_post_attachments" SEOKeyword="Create post attachment, Microsoft Graph API, Outlook conversation API" SEODescription="Use this API to create a new Attachment." />
-        <Item text="Create openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
-        <Item text="Get openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Create data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Get data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
       </Item>
       <Item text="attachment" url="/en-us/api-reference/v1.0/resources/attachment" SEOKeyword="attachment API, Microsoft Graph API, attachment API" SEODescription="Attachment">
         <Item text="Get attachment" url="/en-us/api-reference/v1.0/api/attachment_get" SEOKeyword="Get attachment, Microsoft Graph API, attachment API" SEODescription="Retrieve the properties and relationships of attachment object." />
@@ -417,8 +415,8 @@
         <Item text="List calendar view" url="/en-us/api-reference/v1.0/api/group_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
         <Item text="List attachments" url="/en-us/api-reference/v1.0/api/event_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Create attachment" url="/en-us/api-reference/v1.0/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
-        <Item text="Create openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
-        <Item text="Get openTypeExtension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Create data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Get data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
       </Item>
       <Item text="drive" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="Drive">
         <Item text="Get drive" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="Get drive, Microsoft Graph API, drive API" SEODescription="Retrieve the properties and relationships of drive object." />
@@ -495,8 +493,8 @@
         <Item text="List mail folders" url="/en-us/api-reference/beta/api/user_list_mailfolders" SEOKeyword="List mailFolders, Microsoft Graph API, Users API" SEODescription="Retrieve a list of mailfolder objects." />
         <Item text="Create mail folder" url="/en-us/api-reference/beta/api/user_post_mailfolders" SEOKeyword="Create MailFolder, Microsoft Graph API, Users API" SEODescription="Use this API to create a new MailFolder." />
         <Item text="Send mail" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, user API" SEODescription="" />
-        <Item text="Get auto reply settings" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" SEOKeyword="user: Get auto reply settings, Microsoft Graph API, user API" SEODescription="" />
-        <Item text="Update auto reply settings" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" SEOKeyword="user: Update auto reply settings, Microsoft Graph API, user API" SEODescription="" />
+        <Item text="Get mailbox settings" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" SEOKeyword="user: Get mailbox settings, Microsoft Graph API, user API" SEODescription="" />
+        <Item text="Update mailbox settings" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" SEOKeyword="user: Update mailbox settings, Microsoft Graph API, user API" SEODescription="" />
       </Item>
       <Item text="calendar" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
         <Item text="List events" url="/en-us/api-reference/beta/api/user_list_events" SEOKeyword="List events, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
@@ -654,12 +652,10 @@
       </Item>
     </Item>
     <Item text="Data Extensions" url="/en-us/api-reference/beta/resources/opentypeextension" SEOKeyword="extension API, Microsoft Graph API, extension API" SEODescription="">
-      <Item text="opentypeextension" url="/en-us/api-reference/beta/resources/opentypeextension" SEOKeyword="extension API, Microsoft Graph API, extension API" SEODescription="">
-        <Item text="Create openTypeExtension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
-        <Item text="Get openTypeExtension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
-        <Item text="Update opentypeextension" url="/en-us/api-reference/beta/api/opentypeextension_update" SEOKeyword="Update opentypeextension, Microsoft Graph API, opentypeextension API" SEODescription="Update the properties of opentypeextension object." />
-        <Item text="Delete openTypeExtension" url="/en-us/api-reference/beta/api/opentypeextension_delete" SEOKeyword="Delete openTypeExtension, Microsoft Graph API, opentypeextension API" SEODescription="Delete openTypeExtension." />
-      </Item>
+        <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Update data extension" url="/en-us/api-reference/beta/api/opentypeextension_update" SEOKeyword="Update data extension, Microsoft Graph API, opentypeextension API" SEODescription="Update the properties of opentypeextension object." />
+        <Item text="Delete data extension" url="/en-us/api-reference/beta/api/opentypeextension_delete" SEOKeyword="Delete data extension, Microsoft Graph API, opentypeextension API" SEODescription="Delete data extension." />
     </Item>
     <Item text="Webhooks" url="/en-us/api-reference/beta/resources/webhooks" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
       <Item text="Subscription" url="/en-us/api-reference/beta/resources/subscription" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
@@ -783,8 +779,8 @@
         <Item text="Create Forward message" url="/en-us/api-reference/beta/api/message_createforward" SEOKeyword="Create Forward message, Microsoft Graph API, Outlook Mail API" SEODescription="" />
         <Item text="Forward messages" url="/en-us/api-reference/beta/api/message_forward" SEOKeyword="Forward messages, Microsoft Graph API, Outlook Mail API" SEODescription="" />
         <Item text="Send mail" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, user API" SEODescription="" />
-        <Item text="Get auto reply settings" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" SEOKeyword="user: Get auto reply settings, Microsoft Graph API, user API" SEODescription="" />
-        <Item text="Update auto reply settings" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" SEOKeyword="user: Update auto reply settings, Microsoft Graph API, user API" SEODescription="" />
+        <Item text="Get mailbox settings" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" SEOKeyword="user: Get mailbox settings, Microsoft Graph API, user API" SEODescription="" />
+        <Item text="Update mailbox settings" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" SEOKeyword="user: Update mailbox settings, Microsoft Graph API, user API" SEODescription="" />
         <Item text="List attachments" url="/en-us/api-reference/beta/api/message_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Mail API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Create attachment" url="/en-us/api-reference/beta/api/message_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, message API" SEODescription="Use this API to create a new Attachment." />
         <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
