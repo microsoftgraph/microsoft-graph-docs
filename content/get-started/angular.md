@@ -125,22 +125,27 @@ The app calls Microsoft Graph to get user information and to send an email on th
 
 1. In graphHelper.js, replace *// Get the profile of the current user* with the following code. This configures and sends the GET request to the */me* endpoint, and processes the response.
 
+```
     // Get the profile of the current user.
     me: function me() {
       return $http.get('https://graph.microsoft.com/v1.0/me');
     },
+```
   
 1. Replace *// Send an email on behalf of the current user* with the following code. This configures and sends the POST request to the */me/sendMail* endpoint, and processes the response.
 
+  ```
     // Send an email on behalf of the current user.
     sendMail: function sendMail(email) {
       return $http.post('https://graph.microsoft.com/v1.0/me/sendMail', { 'message' : email, 'saveToSentItems': true });        
     }
+  ```
 
 1. In the **public/controllers** folder, open mainController.js.
 
 1. Replace *// Set the default headers and user properties* with the following code. This adds the access token to the HTTP request, calls **GraphHelper.me** to get the current user's profile, and processes the response.
 
+    ```
     // Set the default headers and user properties.
     function processAuth() {
       let auth = angular.fromJson(localStorage.auth); 
@@ -175,7 +180,8 @@ The app calls Microsoft Graph to get user information and to send an email on th
           vm.emailAddress = user.mail || user.userPrincipalName;
         }
       }
-    }  
+    } 
+    ```
 
 1. Replace *// Send an email on behalf of the current user* with the following code. This builds the email message, calls **GraphHelper.sendMail**, and processes the response.
 
