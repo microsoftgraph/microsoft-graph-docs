@@ -89,7 +89,7 @@ The following tables list the Microsoft Graph permission scopes and explains the
 | _User.ReadWrite.All_ |   Read and write all users' full profiles | Allows the app to read and write the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.|
 
 
-##Preview
+##Permission scopes in preview
 ###Permissions not requiring administrator's consent (preview)
 
 |   **Scope**    |  **Permission on Azure Management Portal**   |  **Description** |
