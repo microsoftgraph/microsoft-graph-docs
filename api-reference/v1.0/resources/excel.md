@@ -12,9 +12,9 @@ returns a collection of worksheet objects that are part of the workbook.
 
 ## Authorization and scopes
 
-You can use the [Azure AD v.20 endpoint](../../content/authorization/converged_auth) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
+You can use the [Azure AD v.20 endpoint](../../../content/authorization/converged_auth.md) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
   
-One of the following [permission scopes](../../content/authorization/permission_scoped.md) is required to use the Excel resource:
+One of the following [permission scopes](../../../content/authorization/permission_scopes.md) is required to use the Excel resource:
 
 * Files.Read 
 * Files.ReadWrite
