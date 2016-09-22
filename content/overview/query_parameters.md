@@ -63,7 +63,7 @@ in the response will only have those property values included.
 }
 ```--> 
 
-### expand
+## expand
 
 In Microsoft Graph API requests, navigations to an object or collection of the referenced item are not automatically expanded.
 This is by design because it reduces network traffic and the time it takes to generate a response from the service.
@@ -93,7 +93,7 @@ Some other resources may have a limit as well, so always check for possible erro
 <!---The following shows a sample result that is returned in the response body.-->
 
 
-### orderby
+## orderby
 
 To specify the sort order of the items returned from the Microsof Graph API, use the **orderby** query option. 
 
@@ -114,7 +114,7 @@ To sort the results in ascending or descending order, append either `asc` or `de
 
  >  **Note**: If you query on the [user] resource, **orderby** can't be combined with filter expressions.
 
-### filter
+## filter
 To filter the response data based on a set of criteria, use the **filter** query option.
 For example, to return users in the organization filter by display name that starts with "Garth", the syntax is as follows:
 
@@ -129,7 +129,7 @@ The following example returns messages that have the **address** field of the **
 GET https://graph.microsoft.com/v1.0/me/messages?filter=from/emailAddress/address eq 'jon@contoso.com'
 ``` 
 
-### top
+## top
 To specify the maximum number of items to return in a result set, use the **top** query option.
 The **top** query option identifies a subset in the collection. This subset is formed by selecting only the first N items of the set, where N is a positive integer specified by this query option. 
 For example, to return the first five messages in the user's mailbox, the syntax is as follows:
@@ -138,7 +138,7 @@ For example, to return the first five messages in the user's mailbox, the syntax
 GET https://graph.microsoft.com/v1.0/me/messages?top=5
 ```
 
-### skip
+## skip
 To set the number of items to skip before retrieving items in a collection, use the **skip** query option. 
 For example, to return events sorted by date created, and starting with the 21st event, the syntax is as follows.
 
@@ -146,7 +146,7 @@ For example, to return events sorted by date created, and starting with the 21st
 GET  https://graph.microsoft.com/v1.0/me/events?orderby=createdDateTime&skip=20
 ```
 
-### skipToken
+## skipToken
 The skipTo page and specify the next set of results to return, use  the **skipToken** query option.
 The **skipToken** query option is an option provided in Urls returned from the Graph when the Graph has returned a partial subset of results, usually due to server-side paging.
 It identifies the point in a collection where the server finished sending results, and is passed back to the Graph to indicate where it shoudl resume sending results from.
@@ -167,7 +167,7 @@ To return the next page of users in your organization, the syntax is as follows.
 GET  https://graph.microsoft.com/v1.0/users?orderby=displayName&skiptoken=X%2783630372100000000000000000000%27
 ```
 
-### count
+## count
 Use **count** as a query parameter to include a count of the total number of items in a collection alongside the page of data values returned from the Graph, as in the following example:
 ```http
 GET  https://graph.microsoft.com/v1.0/me/contacts?count=true
