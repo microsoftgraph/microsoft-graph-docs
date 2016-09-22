@@ -63,6 +63,9 @@ and is expected to be widely available by the end of January 2016.
 * Upload and download of files (files in Office groups, drives, or mail file attachments) is limited to 4 MB.
 
 ## Functionality available only in existing Office 365 REST APIs
+
+Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog).
+
 #### Synchronization
 Outlook, OneDrive and Azure AD synchronization capabilities (in Azure AD this is also known as differential query) are not available in `/v1.0` or `/beta`.  If your application requires synchronization capabilities, please continue to use the existing Office 365 and Azure AD REST APIs, or explore the new webhooks preview feature offered through Microsoft Graph for events, messages and contacts.
 
