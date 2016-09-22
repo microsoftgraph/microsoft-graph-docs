@@ -45,10 +45,8 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 1. Open the **starter-project** folder in the sample files.
 2. In a command prompt, run the following commands in the root directory of the starter project. This installs the project dependencies.
 
-	  ```
-	    npm install
-        bower install hello
-	  ```
+    npm install
+    bower install hello
 
 3. In the starter project files, in the **public/scripts** folder, open config.js.
 4. In the **clientId** field, replace the **ENTER_YOUR_CLIENT_ID** placeholder value with the application ID you just copied.
@@ -72,60 +70,53 @@ Now back to building the app.
 
 1. Open aad.js and add the following code. This configures communication with the Azure AD auth provider, and adds a listener that stores the auth response that contains the access token. (The script references to HelloJS are already added to the index.html view.)
 
-  ```
-  hello.init({
-
+    hello.init({
+      
       aad: {
-          name: 'Azure Active Directory',	
-          oauth: {
-              version: 2,
-              auth: 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize',
-              grant: 'https://login.microsoftonline.com/common/oauth2/v2.0/token'
-          },
-          scope_delim: ' ',
+        name: 'Azure Active Directory',	
+        oauth: {
+          version: 2,
+          auth: 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize',
+          grant: 'https://login.microsoftonline.com/common/oauth2/v2.0/token'
+        },
+        scope_delim: ' ',
 
-
-          // Don't even try submitting via form.
-          // This means no POST operations in <=IE9
-          form: false
+        // Don't even try submitting via form.
+        // This means no POST operations in <=IE9
+        form: false
       }
-  });
+    });
 
-  hello.on('auth.login', function (auth) {
+    hello.on('auth.login', function (auth) {
 
-    // save the auth info into localStorage
-    localStorage.auth = angular.toJson(auth.authResponse);
-  });
-  ```
+      // save the auth info into localStorage
+      localStorage.auth = angular.toJson(auth.authResponse);
+    });
 
-1. In graphHelper.js, replace *// Initialize the auth request* with the following code. This sets parameters for the auth request.
+2. In graphHelper.js, replace *// Initialize the auth request* with the following code. This sets parameters for the auth request.
 
-  ```
-  // Initialize the auth request.
-  hello.init( {
-    aad: clientId // from public/scripts/config.js
+    // Initialize the auth request.
+    hello.init( {
+      aad: clientId // from public/scripts/config.js
     }, {
-    redirect_uri: redirectUrl,
-    scope: graphScopes
-  });
-  ```
+      redirect_uri: redirectUrl,
+      scope: graphScopes
+    });
 
 1. Replace *// Sign in and sign out the user* with the following code. The **login** function uses HelloJS to get token information. The listener in aad.js stores this information--including the access token--in local storage.
 
-  ```
-  // Sign in and sign out the user.
-  login: function login() {
-    hello('aad').login({
-      display: 'page',
-      state: 'abcd'
-    });
-  },
-  logout: function logout() {
-    hello('aad').logout();
-    delete localStorage.auth;
-    delete localStorage.user;
-  },
-  ```
+    // Sign in and sign out the user.
+    login: function login() {
+      hello('aad').login({
+        display: 'page',
+        state: 'abcd'
+      });
+    },
+    logout: function logout() {
+      hello('aad').logout();
+      delete localStorage.auth;
+      delete localStorage.user;
+    },
 
 Now you're ready to add code to call Microsoft Graph. 
 
@@ -134,29 +125,24 @@ The app calls Microsoft Graph to get user information and to send an email on th
 
 1. In graphHelper.js, replace *// Get the profile of the current user* with the following code. This configures and sends the GET request to the */me* endpoint, and processes the response.
 
-  ```
-  // Get the profile of the current user.
-  me: function me() {
-    return $http.get('https://graph.microsoft.com/v1.0/me');
-  },
-  ```
+    // Get the profile of the current user.
+    me: function me() {
+      return $http.get('https://graph.microsoft.com/v1.0/me');
+    },
   
 1. Replace *// Send an email on behalf of the current user* with the following code. This configures and sends the POST request to the */me/sendMail* endpoint, and processes the response.
 
-  ```
-  // Send an email on behalf of the current user.
-  sendMail: function sendMail(email) {
-    return $http.post('https://graph.microsoft.com/v1.0/me/sendMail', { 'message' : email, 'saveToSentItems': true });        
-  }
-  ```
+    // Send an email on behalf of the current user.
+    sendMail: function sendMail(email) {
+      return $http.post('https://graph.microsoft.com/v1.0/me/sendMail', { 'message' : email, 'saveToSentItems': true });        
+    }
 
 1. In the **public/controllers** folder, open mainController.js.
 
 1. Replace *// Set the default headers and user properties* with the following code. This adds the access token to the HTTP request, calls **GraphHelper.me** to get the current user's profile, and processes the response.
 
-  ```
-  // Set the default headers and user properties.
-  function processAuth() {
+    // Set the default headers and user properties.
+    function processAuth() {
       let auth = angular.fromJson(localStorage.auth); 
 
       // Check token expiry. If the token is valid for another 5 minutes, we'll use it.       
@@ -166,10 +152,10 @@ The app calls Microsoft Graph to get user information and to send an email on th
 
         // Add the required Authorization header with bearer token.
         $http.defaults.headers.common.Authorization = 'Bearer ' + auth.access_token;
-
+        
         // This header has been added to identify our sample in the Microsoft Graph service. If extracting this code for your project please remove.
         $http.defaults.headers.common.SampleID = 'angular-connect-rest-starter';
-
+        
         if (localStorage.getItem('user') === null) {
 
           // Get the profile of the current user.
@@ -188,25 +174,22 @@ The app calls Microsoft Graph to get user information and to send an email on th
           vm.displayName = user.displayName;
           vm.emailAddress = user.mail || user.userPrincipalName;
         }
-     }
-  } 
-  ```
-  
+      }
+    }  
 
 1. Replace *// Send an email on behalf of the current user* with the following code. This builds the email message, calls **GraphHelper.sendMail**, and processes the response.
 
-  ```
-  // Send an email on behalf of the current user.
-  function sendMail() {
+    // Send an email on behalf of the current user.
+    function sendMail() {
 
-    // Check token expiry. If the token is valid for another 5 minutes, we'll use it.
-    let auth = angular.fromJson(localStorage.auth);       
-    let expiration = new Date();
-    expiration.setTime((auth.expires - 300) * 1000); 
-    if (expiration > new Date()) {
+      // Check token expiry. If the token is valid for another 5 minutes, we'll use it.
+      let auth = angular.fromJson(localStorage.auth);       
+      let expiration = new Date();
+      expiration.setTime((auth.expires - 300) * 1000); 
+      if (expiration > new Date()) {
 
-      // Build the HTTP request payload (the Message object).
-      var email = {
+        // Build the HTTP request payload (the Message object).
+        var email = {
           Subject: 'Welcome to Microsoft Graph development with AngularJS and the Microsoft Graph Connect sample',
           Body: {
             ContentType: 'HTML',
@@ -221,31 +204,30 @@ The app calls Microsoft Graph to get user information and to send an email on th
           ]
       };
 
-      // Save email address so it doesn't get lost with two way data binding.
-      vm.emailAddressSent = vm.emailAddress;
+        // Save email address so it doesn't get lost with two way data binding.
+        vm.emailAddressSent = vm.emailAddress;
 
-      GraphHelper.sendMail(email)
-        .then(function (response) {
-          $log.debug('HTTP request to the Microsoft Graph API returned successfully.', response);
-          response.status === 202 ? vm.requestSuccess = true : vm.requestSuccess = false;
-          vm.requestFinished = true;
-        }, function (error) {
-          $log.error('HTTP request to the Microsoft Graph API failed.');
-          vm.requestSuccess = false;
-          vm.requestFinished = true;
+        GraphHelper.sendMail(email)
+          .then(function (response) {
+            $log.debug('HTTP request to the Microsoft Graph API returned successfully.', response);
+            response.status === 202 ? vm.requestSuccess = true : vm.requestSuccess = false;
+            vm.requestFinished = true;
+          }, function (error) {
+            $log.error('HTTP request to the Microsoft Graph API failed.');
+            vm.requestSuccess = false;
+            vm.requestFinished = true;
         });
-     } else {
+      } else {
 
-       // If the token is expired, this sample just redirects the user to sign in.
-       GraphHelper.login();
-     }
-  };
+        // If the token is expired, this sample just redirects the user to sign in.
+        GraphHelper.login();
+      }
+      };
 
-  // Get the HTMl for the email to send.
-  function getEmailContent() {
-    return "<html><head> <meta http-equiv=\'Content-Type\' content=\'text/html; charset=us-ascii\'> <title></title> </head><body style=\'font-family:calibri\'> <p>Congratulations " + vm.displayName + ",</p> <p>This is a message from the Microsoft Graph Connect sample. You are well on your way to incorporating Microsoft Graph endpoints in your apps. </p> <h3>What&#8217;s next?</h3><ul><li>Check out <a href='https://graph.microsoft.io' target='_blank'>graph.microsoft.io</a> to start building Microsoft Graph apps today with all the latest tools, templates, and guidance to get started quickly.</li><li>Use the <a href='https://graph.microsoft.io/graph-explorer' target='_blank'>Graph explorer</a> to explore the rest of the APIs and start your testing.</li><li>Browse other <a href='https://github.com/microsoftgraph/' target='_blank'>samples on GitHub</a> to see more of the APIs in action.</li></ul> <h3>Give us feedback</h3> <ul><li>If you have any trouble running this sample, please <a href='https://github.com/microsoftgraph/angular-connect-rest-sample/issues' target='_blank'>log an issue</a>.</li><li>For general questions about the Microsoft Graph API, post to <a href='https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest' target='blank'>Stack Overflow</a>. Make sure that your questions or comments are tagged with [microsoftgraph].</li></ul><p>Thanks and happy coding!<br>Your Microsoft Graph samples development team</p> <div style=\'text-align:center; font-family:calibri\'> <table style=\'width:100%; font-family:calibri\'> <tbody> <tr> <td><a href=\'https://github.com/microsoftgraph/angular-connect-rest-sample\'>See on GitHub</a> </td> <td><a href=\'https://officespdev.uservoice.com/\'>Suggest on UserVoice</a> </td> <td><a href=\'https://twitter.com/share?text=I%20just%20started%20developing%20%23Angular%20apps%20using%20the%20%23MicrosoftGraph%20Connect%20sample!%20&url=https://github.com/microsoftgraph/angular-connect-rest-sample\'>Share on Twitter</a> </td> </tr> </tbody> </table> </div>  </body> </html>";
-  };
-  ```
+    // Get the HTMl for the email to send.
+    function getEmailContent() {
+      return "<html><head> <meta http-equiv=\'Content-Type\' content=\'text/html; charset=us-ascii\'> <title></title> </head><body style=\'font-family:calibri\'> <p>Congratulations " + vm.displayName + ",</p> <p>This is a message from the Microsoft Graph Connect sample. You are well on your way to incorporating Microsoft Graph endpoints in your apps. </p> <h3>What&#8217;s next?</h3><ul><li>Check out <a href='https://graph.microsoft.io' target='_blank'>graph.microsoft.io</a> to start building Microsoft Graph apps today with all the latest tools, templates, and guidance to get started quickly.</li><li>Use the <a href='https://graph.microsoft.io/graph-explorer' target='_blank'>Graph explorer</a> to explore the rest of the APIs and start your testing.</li><li>Browse other <a href='https://github.com/microsoftgraph/' target='_blank'>samples on GitHub</a> to see more of the APIs in action.</li></ul> <h3>Give us feedback</h3> <ul><li>If you have any trouble running this sample, please <a href='https://github.com/microsoftgraph/angular-connect-rest-sample/issues' target='_blank'>log an issue</a>.</li><li>For general questions about the Microsoft Graph API, post to <a href='https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest' target='blank'>Stack Overflow</a>. Make sure that your questions or comments are tagged with [microsoftgraph].</li></ul><p>Thanks and happy coding!<br>Your Microsoft Graph samples development team</p> <div style=\'text-align:center; font-family:calibri\'> <table style=\'width:100%; font-family:calibri\'> <tbody> <tr> <td><a href=\'https://github.com/microsoftgraph/angular-connect-rest-sample\'>See on GitHub</a> </td> <td><a href=\'https://officespdev.uservoice.com/\'>Suggest on UserVoice</a> </td> <td><a href=\'https://twitter.com/share?text=I%20just%20started%20developing%20%23Angular%20apps%20using%20the%20%23MicrosoftGraph%20Connect%20sample!%20&url=https://github.com/microsoftgraph/angular-connect-rest-sample\'>Share on Twitter</a> </td> </tr> </tbody> </table> </div>  </body> </html>";
+    };
 
 1. Save all your changes.
 
