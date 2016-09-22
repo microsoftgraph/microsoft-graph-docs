@@ -1,6 +1,7 @@
 # Send a sharing invitation
 
-Sends a sharing invitation to an existing item. A sharing invitation creates a unique sharing link and sends an email to the recipient of the invitation that includes the sharing link.
+Sends a sharing invitation for a **DriveItem**.
+A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,60 +11,48 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /drive/root/invite
-POST /drive/items/<id>/invite
-POST /drives/<id>/root/invite
-
+POST /drive/items/{item-id}/invite
+POST /drives/{drive-id}/items/{item-id}/invite
 ```
-
-## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
-
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|recipients|recipients|A list of recipient email addresses for the sharing invitation.|
-|message|String|A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters.|
-|requireSignIn|Boolean|Specifies where the recipient of the invitation is required to sign-in to view the shared item.|
-|sendInvitation|Boolean|Specifies if an email or post is generated (false) or if the permission is just created (true).|
-|roles|String|Specify the roles that are be granted to the recipients of the sharing invitation.|
+| Parameter        | Type                                            | Description                                                                                                |
+|:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
+| recipients       | Collection([DriveRecipient](driverecipient.md)) | A collection of recipients who will receive access and the sharing invitation.                                            |
+| message          | String                                          | A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters. |
+| requireSignIn    | Boolean                                         | Specifies where the recipient of the invitation is required to sign-in to view the shared item.            |
+| sendInvitation   | Boolean                                         | Specifies if an email or post is generated (false) or if the permission is just created (true).            |
+| roles            | Collection(String)                              | Specify the roles that are be granted to the recipients of the sharing invitation.                         |
 
 ## Response
 If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.
 
 ## Example
 Here is an example of how to call this API.
+
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "item_invite"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/invite
+POST https://graph.microsoft.com/v1.0/drive/items/{item-id}/invite
 Content-type: application/json
-Content-length: 313
 
 {
   "recipients": [
     {
-      "email": "email-value",
-      "alias": "alias-value",
-      "objectId": "objectId-value",
-      "permissionIdentityType": "permissionIdentityType-value"
+      "email": "ryan@contoso.org"
     }
   ],
-  "message": "message-value",
+  "message": "Here's the file that we're collaborating on.",
   "requireSignIn": true,
   "sendInvitation": true,
-  "roles": [
-    "roles-value"
-  ]
+  "roles": [ "edit" ]
 }
 ```
 
@@ -78,51 +67,31 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 939
 
 {
   "value": [
     {
       "grantedTo": {
-        "application": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        },
-        "device": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        },
         "user": {
-          "displayName": "displayName-value",
-          "id": "id-value"
+          "displayName": "Ryan Gregg",
+          "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
         }
       },
-      "id": "id-value",
+      "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
-        "email": "email-value",
-        "redeemedBy": "redeemedBy-value",
+        "email": "ryan@contoso.com",
         "signInRequired": true
       },
-      "inheritedFrom": {
-        "driveId": "driveId-value",
-        "id": "id-value",
-        "path": "path-value"
-      },
-      "link": {
-        "application": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        },
-        "type": "type-value",
-        "webUrl": "webUrl-value"
-      },
-      "roles": [
-        "roles-value"
-      ]
+      "roles": [ "edit" ]
     }
   ]
 }
 ```
+
+## Remarks
+
+* [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem. 
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

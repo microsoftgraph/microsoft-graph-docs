@@ -1,4 +1,4 @@
-# location resource type
+# Location resource type
 
 Represents location information of an event.
 
@@ -7,10 +7,8 @@ Represents location information of an event.
 | Property  | Type   | Description                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicalAddress.md) |The street address of the location. |
-| coordinates | [outlookGeoCoordinates](outlookGeoCoordinates.md) |The geographic coordinates, elevation, and their degree of accuracy for a physical location. |
 | displayName  | String | The name associated with the location.                       |
-| locationEmailAddress | String | Optional email address of the location.              |
-| locationUri | String | Optional URI representing the location.|
+
 
 
 ## JSON representation
@@ -25,13 +23,14 @@ Represents location information of an event.
 ```json
 {
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},  
-  "displayName": "string",
-  "locationEmailAddress": "string",
-  "locationUri": "string"
+  "displayName": "string"
 }
 
 ```
+
+## Remarks
+
+For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

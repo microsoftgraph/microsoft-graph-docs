@@ -1,48 +1,54 @@
-# Get drive
+# Get Drive
 
-Retrieve the properties and relationships of the drive object. A drive represents
-a user's OneDrive or OneDrive for Business or a SharePoint document library
-associated with an Office 365 group.
+Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource. 
+A Drive is the top-level container for a file system.
+Graph API allows you to access the Drive resource for a user's OneDrive or OneDrive for Business, or SharePoint document libraries.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.Read
   * Files.ReadWrite
+  * Sites.Read.All
 
-## HTTP request
+
+## Get a user's OneDrive
+
+To access a user's OneDrive or OneDrive for Business, your app should request the **drive** relationship on the [User](../resources/user.md) resource.
+
+### HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive
-GET /drives/<id>
-GET /users/<id | userPrincipalName>/drive
-GET /groups/<id>/drive
+GET /users/{idOrUserPrincipalName}/drive
 ```
 
+## Get the document library assocaited with a group
+
+To access a [Group's](../resources/group.md) default document library, your app requests the **drive** relationship on the Group.
+
+### HTTP request
+<!-- { "blockType": "ignored" } -->
+```http
+GET /groups/{idOrUserPrincipalName}/drive
+```
+
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters)
-to help customize the response.
-
-## Request headers
-
-| Name          | Type   | Description                 |
-|:--------------|:-------|:----------------------------|
-| Authorization | string | Bearer \<token\>. Required. |
-
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and
-[drive](../resources/drive.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [Drive](../resources/drive.md) resource in the response body.
 
 ## Example
 
 ##### Request
 
-Here is an example of the request to get the sign-in user's OneDrive or OneDrive
-for Business.
+Here is an example of the request to get the sign-in user's OneDrive or OneDrive for Business.
 
 <!-- {
   "blockType": "request",
@@ -51,8 +57,11 @@ for Business.
 ```http
 GET https://graph.microsoft.com/beta/me/drive
 ```
+
 ##### Response
+
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

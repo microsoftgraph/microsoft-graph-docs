@@ -1,8 +1,6 @@
-# Create a new folder driveItem
+# Create a new folder
 
-Use this API to create a new folder in a drive. Your app can create folders
-in the root of a drive, under an existing driveItem with a folder property, or
-in the [**approot** folder in OneDrive](https://dev.onedrive.com/misc/appfolder.htm)
+Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -13,32 +11,22 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/children
-POST /me/drive/items/<id>/children
-POST /me/drives/<id>/root/children
+POST /me/drive/items/{parent-item-id}/children
+POST /drives/{drive-id}/items/{parent-item-id}/children
+POST /groups/{group-id}/drive/items/{parent-item-id}/children
 ```
 
-## Request headers
-
-| Name          | Type   | Description               |
-|:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer <token>. Required. |
-
-
 ## Request body
-In the request body, supply a JSON representation of a
-[driveItem](../resources/driveitem.md) object.
+In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.
 
 
 ## Response
-If successful, this method returns `201, Created` response code and
-[item](../resources/driveitem.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.
 
 ## Example
 
 ##### Request
-
-Here is an example of a request to create a new folder in the root of a user's
-OneDrive.
+Here is an example of the request to create a new folder in the user's OneDrive root.
 
 <!-- {
   "blockType": "request",
@@ -49,53 +37,51 @@ POST https://graph.microsoft.com/beta/me/drive/root/children
 Content-Type: application/json
 
 {
-  "folder": { },
-  "name": "Graph Project Files"
+  "name": "New Folder",
+  "folder": { }
 }
 ```
-In the request body, supply a JSON representation of [item](../resources/driveitem.md) object.
 
 ##### Response
-Here is an example of the response.
 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.driveItem"
 } -->
+
 ```http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-Type: application/json
 
 {
   "createdBy": {
-      "user": {
-          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-          "displayName": "Ryan Gregg"
-      }
+    "user": {
+      "displayName": "Ryan Gregg",
+      "id": "309EC495-3E92-431D-9124-F0299633171D"
+    }
   },
-  "createdDateTime": "2016-03-21T20:01:37Z",
-  "cTag": "\"c:{86EB4C8E-D20D-46B9-AD41-23B8868DDA8A},0\"",
-  "eTag": "\"{86EB4C8E-D20D-46B9-AD41-23B8868DDA8A},1\"",
-  "folder": {
-      "childCount": 0
-  },
-  "id": "01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK",
+  "createdDateTime": "20160920T14:34:00Z",
+  "eTag": "343F1FBD-E9B3-4DDE-BCA7-D61AEAFF44E5,1",
+  "id": "ACEA49D1-1444-45A9-A1CB-68B1B28AE491",
   "lastModifiedBy": {
-      "user": {
-          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-          "displayName": "Ryan Gregg"
-      }
+    "user": {
+      "displayName": "Ryan Gregg",
+      "id": "309EC495-3E92-431D-9124-F0299633171D"
+    }
   },
-  "lastModifiedDateTime": "2016-03-21T20:01:37Z",
-  "name": "Graph Project Files",
+  "lastModifiedDateTime": "20160920T14:34:00Z",
+  "name": "New Folder",
   "parentReference": {
-      "driveId": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-      "id": "01NKDM7HN6Y2GOVW7725BZO354PWSELRRZ",
-      "path": "/drive/root:"
+    "driveId": "5FE38E3C-051C-4D55-9B83-8A437658275B",
+    "id": "E67A8F34-B0AA-46E1-8FF7-0750A29553DF",
+    "path": "/drive/root:/"
   },
   "size": 0,
-  "webUrl": "https://contoso-my.sharepoint.com/personal/rgregg_contoso_com/Documents/Graph%20Project%20Files"
+  "folder": {
+    "childCount": 0
+  }
 }
 ```
 
@@ -106,5 +92,5 @@ Content-type: application/json
   "description": "Create children",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Create folder"
+  "tocPath": ""
 }-->

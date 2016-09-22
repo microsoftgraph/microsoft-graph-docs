@@ -1,6 +1,6 @@
 # Update permission
 
-Update the properties of an existing permission object. Only the roles property can be modified.
+Update the properties of a permission by patching the resource.
 
 ## Prerequisites
 
@@ -12,25 +12,23 @@ One of the following **scopes** is required to execute this API:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/drive/root/permissions/<id>
-PATCH /me/drive/items/<id>/permissions/<id>
-PATCH /groups/<group-id>/drive/items/<item-id>/permissions/<id>
+PATCH /me/drive/items/{item-id}/permissions/{perm-id}
+PATCH /me/drive/root:/{path}:/permissions/{perm-id}
+PATCH /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
+PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
 ## Request headers
 
 | Name          | Type   | Description                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Authorization | string | Bearer <token>. Required.                                                                                                                                                                         |
 | if-match      | string | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
 
 ## Request body
-In the request body, supply the values for relevant fields that should be
-updated. Existing properties that are not included in the request body will
-maintain their previous values or be recalculated based on changes to other
-property values. For best performance you shouldn't include existing values that
-haven't changed.
+In the request body, supply the values for relevant fields that should be updated.
+Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
+For best performance you shouldn't include existing values that haven't changed.
 
 | Property     | Type   | Description                   |
 |:-------------|:-------|:------------------------------|
@@ -38,8 +36,7 @@ haven't changed.
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and updated
-[permission](../resources/permission.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.
 
 ## Example
 
@@ -51,7 +48,7 @@ Here is an example of the request.
   "name": "update_permission"
 }-->
 ```http
-PATCH /me/drive/items/<item-id>/permissions/<id>
+PATCH https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-id}
 Content-type: application/json
 
 {

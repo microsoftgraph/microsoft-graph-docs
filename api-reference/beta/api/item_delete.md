@@ -1,8 +1,7 @@
-# Delete an item
+# Delete a DriveItem
 
-Delete an item by using its ID or path. Note that deleting items using this
-method will move the items to the Recycle Bin, instead of permanently deleting
-them.
+Delete a [DriveItem](../resources/driveitem.md) by using its ID or path.
+Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -15,14 +14,14 @@ One of the following **scopes** is required to execute this API:
 ```
 DELETE /me/drive/items/{item-id}
 DELETE /me/drive/root:/{item-path}
-DELETE /groups/<id>/drive/items/<item-id>
+DELETE /drives/{drive-id}/items/{item-id}
+DELETE /groups/{group-id}/drive/items/{item-id}
 ```
 
 ## Request headers
 
 | Name          | Type   | Description                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Authorization | string | Bearer <token>. Required.                                                                                                                                                                         |
 | if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
 ## Request body
@@ -37,13 +36,12 @@ Here is an example of how to call this API.
   "name": "delete-item"
 }-->
 ```
-DELETE /me/drive/items/{item-id}
+DELETE https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
 
 ## Response
 
-If successful, this call returns a `204 No Content` response to indicate that
-resource was deleted and there was nothing to return.
+If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
 
 <!-- { "blockType": "response" } -->
 ```http
