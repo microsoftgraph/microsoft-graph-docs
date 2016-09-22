@@ -1,4 +1,4 @@
-# Get started with the Microsoft Graph in a PHP app
+# Get started with Microsoft Graph in a PHP app
 
 This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call  Microsoft Graph. It walks you through building the [Connect Sample for PHP](https://github.com/microsoftgraph/php-connect-rest-sample) and explains the main concepts that you implement to use Microsoft Graph. The article also describes how to access Microsoft Graph by using REST calls.
 
