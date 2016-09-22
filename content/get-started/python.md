@@ -1,27 +1,16 @@
 # Get started with Microsoft Graph in a Python app 
 
-This article describes the tasks required to get an access token from Azure AD and call Microsoft Graph. It walks you through building the [Microsoft Graph Connect Sample for Python](https://github.com/microsoftgraph/python3-connect-rest-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article describes how to access Microsoft Graph by using direct REST calls.
+This article describes the tasks required to get an access token from Azure AD and call Microsoft Graph. It walks you through the [Microsoft Graph Connect Sample for Python](https://github.com/microsoftgraph/python3-connect-rest-sample) and explains the main concepts that you implement to use the Microsoft Graph API. The article describes how to access Microsoft Graph by using direct REST calls.
 
 ![Office 365 Python Connect sample screenshot](./images/web-screenshot.png)
 
->
-**Note** This walkthrough and the sample that it's based on use the Azure AD endpoint. Check back soon for an updated version that uses the Azure AD v2.0 endpoint.
+> **Note** This walkthrough and the sample that it's based on use the Azure AD endpoint. Check back soon for updated versions that use the Azure AD v2.0 endpoint.
 
 ##  Prerequisites
 
   * An Office 365 for business account. You can sign up for [an Office 365 Developer subscription](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account) that includes the resources that you need to start building Office 365 apps.
   * A Microsoft Azure tenant to register your application. Azure Active Directory (AD) provides identity services that applications use for authentication and authorization. A trial subscription can be acquired here: [Microsoft Azure](http://aka.ms/jjm0q7).
-  * The [Office 365 Python Connect sample](https://github.com/microsoftgraph/python3-connect-rest-sample)
-
-## Overview
-
-To call the Microsoft Graph API, your Python app must complete the following tasks.
-
-1. Register the application in Azure Active Directory
-2. Redirect the browser to the sign in page
-3. Receive an authorization code in your reply URL page
-4. Request an access token from the token issuing endpoint
-5. Use the access token in a request to the Microsoft Graph API 
+  * The [Microsoft Graph Connect Sample for Python](https://github.com/microsoftgraph/python3-connect-rest-sample)
 
 ## Register the application in Azure Active Directory
 
@@ -41,9 +30,8 @@ First, you need to register your application and set permissions to use Microsof
 11.	Choose **Save** in the bottom menu.
 12.	Copy the **Client ID** and the **key** values that are specified on the **Configure** page.
 
-For more information, see the section [Register your web server app with the Azure Management Portal](https://msdn.microsoft.com/en-us/office/office365/HowTo/add-common-consent-manually#bk_RegisterServerApp).
+For more information, see [Register your web server app with the Azure Management Portal](https://msdn.microsoft.com/en-us/office/office365/HowTo/add-common-consent-manually#bk_RegisterServerApp).
 
-<!--<a name="redirect"></a>-->
 ## Redirect the browser to the sign in page
 
 Your app needs to redirect the browser to the sign in page to begin the OAuth flow and get an authorization code. 
