@@ -12,7 +12,7 @@ The reference content in this section documents the Microsoft Graph beta endpoin
 Microsoft Graph API requests to the beta endpoint use the following pattern:
 
 ```
-	https://graph.microsoft.com/beta/{resource}?[odata_query_parameters]
+	https://graph.microsoft.com/beta/{resource}?[query_parameters]
 ```
 
 For details, see [Calling the Microsoft Graph API](./content/call_api.md).
