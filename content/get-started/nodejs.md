@@ -49,14 +49,12 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 1. In a command prompt, run the following command in the root directory of the starter project. This installs the project dependencies.
 
-  ```
-    npm install
-  ```
+		npm install
 
 1. In the starter project files, open authHelper.js.
 
 
-1. In the **credentials** field, replace the **ENTER_YOUR_CLIENT_ID** and **ENTER_YOUR_SECRET** placeholder values with the values you just copied.
+1. In the **credentials** field, replace the **ENTER\_YOUR\_CLIENT\_ID** and **ENTER\_YOUR\_SECRET** placeholder values with the values you just copied.
 
   
 ## Authenticate the user and get an access token
@@ -79,60 +77,57 @@ Now back to building the app.
 
 1. In authHelper.js, replace the *getTokenFromCode* function with the following code. This gets an access token using an authorization code.
 
-    function getTokenFromCode(code, callback) {
-      var OAuth2 = OAuth.OAuth2;
-      var oauth2 = new OAuth2(
-      credentials.client_id,
-      credentials.client_secret,
-      credentials.authority,
-      credentials.authorize_endpoint,
-      credentials.token_endpoint
-    );
+		function getTokenFromCode(code, callback) {
+			var OAuth2 = OAuth.OAuth2;
+			var oauth2 = new OAuth2(
+				credentials.client_id,
+				credentials.client_secret,
+				credentials.authority,
+				credentials.authorize_endpoint,
+				credentials.token_endpoint
+			);
 
-    oauth2.getOAuthAccessToken(
-      code,
-      {
-        grant_type: 'authorization_code',
-        redirect_uri: credentials.redirect_uri,
-        response_mode: 'form_post',
-        nonce: uuid.v4(),
-        state: 'abcd'
-      },
-      function (e, accessToken, refreshToken) {
-        callback(e, accessToken, refreshToken);
-      }
-    );
-    }
-  ```
+			oauth2.getOAuthAccessToken(
+				code,
+				{
+					grant_type: 'authorization_code',
+					redirect_uri: credentials.redirect_uri,
+					response_mode: 'form_post',
+					nonce: uuid.v4(),
+					state: 'abcd'
+				},
+				function (e, accessToken, refreshToken) {
+					callback(e, accessToken, refreshToken);
+				}
+			);
+		}
 
 1. Replace the **getTokenFromRefreshToken** function with the following code. This gets an access token using a refresh token.
 
-  ```
-    function getTokenFromRefreshToken(refreshToken, callback) {
-      var OAuth2 = OAuth.OAuth2;
-      var oauth2 = new OAuth2(
-        credentials.client_id,
-        credentials.client_secret,
-        credentials.authority,
-        credentials.authorize_endpoint,
-        credentials.token_endpoint
-      );
+		function getTokenFromRefreshToken(refreshToken, callback) {
+			var OAuth2 = OAuth.OAuth2;
+			var oauth2 = new OAuth2(
+				credentials.client_id,
+				credentials.client_secret,
+				credentials.authority,
+				credentials.authorize_endpoint,
+				credentials.token_endpoint
+			);
 
-      oauth2.getOAuthAccessToken(
-        refreshToken,
-        {
-          grant_type: 'refresh_token',
-          redirect_uri: credentials.redirect_uri,
-          response_mode: 'form_post',
-          nonce: uuid.v4(),
-          state: 'abcd'
-        },
-        function (e, accessToken) {
-          callback(e, accessToken);
-        }
-      );
-    }
-  ```
+			oauth2.getOAuthAccessToken(
+				refreshToken,
+				{
+					grant_type: 'refresh_token',
+					redirect_uri: credentials.redirect_uri,
+					response_mode: 'form_post',
+					nonce: uuid.v4(),
+					state: 'abcd'
+				},
+				function (e, accessToken) {
+					callback(e, accessToken);
+				}
+			);
+		}
 
 Now you're ready to add code to call Microsoft Graph. 
 
@@ -143,134 +138,127 @@ The app calls Microsoft Graph to get user information and to send an email on th
 
 1. Replace the **getUserData** function with the following code. This configures and sends the GET request to the */me* endpoint and processes the response.
 
-  ```
-    function getUserData(accessToken, callback) {
-      var options = {
-        host: 'graph.microsoft.com',
-        path: '/v1.0/me',
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-          Authorization: 'Bearer ' + accessToken
-        }
-      };
+		function getUserData(accessToken, callback) {
+			var options = {
+				host: 'graph.microsoft.com',
+				path: '/v1.0/me',
+				method: 'GET',
+				headers: {
+					'Content-Type': 'application/json',
+					Accept: 'application/json',
+					Authorization: 'Bearer ' + accessToken
+				}
+			};
 
-      https.get(options, function (response) {
-        var body = '';
-        response.on('data', function (d) {
-          body += d;
-        });
-        response.on('end', function () {
-          var error;
-          if (response.statusCode === 200) {
-            callback(null, JSON.parse(body));
-          } else {
-            error = new Error();
-            error.code = response.statusCode;
-            error.message = response.statusMessage;
-            // The error body sometimes includes an empty space
-            // before the first character, remove it or it causes an error.
-            body = body.trim();
-            error.innerError = JSON.parse(body).error;
-            callback(error, null);
-          }
-        });
-      }).on('error', function (e) {
-        callback(e, null);
-      });
-    }
-  ```
+			https.get(options, function (response) {
+				var body = '';
+				response.on('data', function (d) {
+					body += d;
+				});
+				response.on('end', function () {
+					var error;
+					if (response.statusCode === 200) {
+						callback(null, JSON.parse(body));
+					} else {
+						error = new Error();
+						error.code = response.statusCode;
+						error.message = response.statusMessage;
+						// The error body sometimes includes an empty space
+						// before the first character, remove it or it causes an error.
+						body = body.trim();
+						error.innerError = JSON.parse(body).error;
+						callback(error, null);
+					}
+				});
+			}).on('error', function (e) {
+				callback(e, null);
+			});
+		}
 
 1. Replace the **postSendMail** function with the following code. This configures and sends the POST request to the */me/sendMail* endpoint and processes the response.
 
-  ```
-    function postSendMail(accessToken, mailBody, callback) {
-      var outHeaders = {
-        'Content-Type': 'application/json',
-        Authorization: 'Bearer ' + accessToken,
-        'Content-Length': mailBody.length
-      };
-      var options = {
-        host: 'graph.microsoft.com',
-        path: '/v1.0/me/sendMail',
-        method: 'POST',
-        headers: outHeaders
-      };
+		function postSendMail(accessToken, mailBody, callback) {
+			var outHeaders = {
+				'Content-Type': 'application/json',
+				Authorization: 'Bearer ' + accessToken,
+				'Content-Length': mailBody.length
+			};
+			var options = {
+				host: 'graph.microsoft.com',
+				path: '/v1.0/me/sendMail',
+				method: 'POST',
+				headers: outHeaders
+			};
 
-      // Set up the request
-      var post = https.request(options, function (response) {
-        var body = '';
-        response.on('data', function (d) {
-          body += d;
-        });
-        response.on('end', function () {
-          var error;
-          if (response.statusCode === 202) {
-            callback(null);
-          } else {
-            error = new Error();
-            error.code = response.statusCode;
-            error.message = response.statusMessage;
-            // The error body sometimes includes an empty space
-            // before the first character, remove it or it causes an error.
-            body = body.trim();
-            error.innerError = JSON.parse(body).error;
-            // Note: If you receive a 500 - Internal Server Error
-            // while using a Microsoft account (outlook.com, hotmail.com or live.com),
-            // it's possible that your account has not been migrated to support this flow.
-            // Check the inner error object for code 'ErrorInternalServerTransientError'.
-            // You can try using a newly created Microsoft account or contact support.
-            callback(error);
-          }
-        });
-      });
-      
-      // write the outbound data to it
-      post.write(mailBody);
-      // we're done!
-      post.end();
+			// Set up the request
+			var post = https.request(options, function (response) {
+				var body = '';
+				response.on('data', function (d) {
+					body += d;
+				});
+				response.on('end', function () {
+					var error;
+					if (response.statusCode === 202) {
+						callback(null);
+					} else {
+						error = new Error();
+						error.code = response.statusCode;
+						error.message = response.statusMessage;
+						// The error body sometimes includes an empty space
+						// before the first character, remove it or it causes an error.
+						body = body.trim();
+						error.innerError = JSON.parse(body).error;
+						// Note: If you receive a 500 - Internal Server Error
+						// while using a Microsoft account (outlook.com, hotmail.com or live.com),
+						// it's possible that your account has not been migrated to support this flow.
+						// Check the inner error object for code 'ErrorInternalServerTransientError'.
+						// You can try using a newly created Microsoft account or contact support.
+						callback(error);
+					}
+				});
+			});
+			
+			// write the outbound data to it
+			post.write(mailBody);
+			// we're done!
+			post.end();
 
-      post.on('error', function (e) {
-        callback(e);
-      });
-    }
-  ```
+			post.on('error', function (e) {
+				callback(e);
+			});
+		}
   
 1. Open emailer.js.
 
 1. Replace the **wrapEmail** function with the following code. This builds the payload that represents the email message to send.
 
-  ```
-    function wrapEmail(content, recipient) {
-      var emailAsPayload = {
-        Message: {
-          Subject: 'Welcome to Office 365 development with Node.js and the Office 365 Connect sample',
-          Body: {
-            ContentType: 'HTML',
-            Content: content
-          },
-          ToRecipients: [
-            {
-              EmailAddress: {
-                Address: recipient
-              }
-            }
-          ]
-        },
-        SaveToSentItems: true
-      };
-      return emailAsPayload;
-    }
-  ```
+		function wrapEmail(content, recipient) {
+			var emailAsPayload = {
+				Message: {
+					Subject: 'Welcome to Office 365 development with Node.js and the Office 365 Connect sample',
+					Body: {
+						ContentType: 'HTML',
+						Content: content
+					},
+					ToRecipients: [
+						{
+							EmailAddress: {
+								Address: recipient
+							}
+						}
+					]
+				},
+				SaveToSentItems: true
+			};
+			return emailAsPayload;
+		}
 
 ## Run the app
 
 1. In a command prompt, run the following command in the root directory of the starter project.
 
-  ```
-    npm start
-  ```
+
+		npm start
 
 1. In a browser, navigate to *http://localhost:3000* and choose the **Connect to Office 365** button.
 
