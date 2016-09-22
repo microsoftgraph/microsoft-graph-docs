@@ -1,37 +1,42 @@
-﻿# Microsoft Graph permission scopes
+# Microsoft Graph permission scopes
 
-The Microsoft Graph exposes OAuth 2.0 permission scopes that are used to control access that an app has to resources. As a developer, you specify the permission scopes that are appropriate to the access your app requires. (If you're using Azure AD authentication, you typically you do this through the Azure Management portal. If you're using the Azure AD v2.0 endpoint, you request permissions dynamically during runtime.)
+Microsoft Graph exposes OAuth 2.0 permission scopes that are used to control the access that an app has to resources. As a developer, you specify the permission scopes that are appropriate to the access your app requires. (If you're using Azure AD authentication, you typically do this through the Azure Management portal. If you're using the Azure AD v2.0 endpoint, you request permissions dynamically during runtime.)
 
-After sign-in, users or administrators are given an opportunity to consent to allow your app access to their resources with the permission scopes you configured. For this reason, you should choose permission scopes that provide the least level of privilege needed by your app. For more details on how to configure permissions for your app and on the consent process, see <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/" target="_newtab">Integrating Applications with Azure Active Directory</a>.
+After sign-in, users or administrators are given an opportunity to consent to allow your app access to their resources with the permission scopes you configured. For this reason, you should choose permission scopes that provide the least level of privilege your app needs. For more details about how to configure permissions for your app and on the consent process, see <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/" target="_newtab">Integrating Applications with Azure Active Directory</a>.
 
 >**Note:** Some Microsoft Graph permissions, such as those pertaining to groups and tasks, are not applicable to personal accounts.  
 
-##Permission scope concepts
-
-There are several concepts you should be familiar with to effectively use permission scopes.
-
-###App-only vs. delegated scopes
+##App-only vs. delegated scopes
 Permission scopes can be either app-only or delegated. App-only scopes (also known as app roles) grant the app the full set of privileges offered by the scope. App-only scopes are typically used by apps that run as a service without a signed-in user being present. 
 
-Delegated permission scopes are for apps that act on behalf of a user. These scopes delegate the privileges of the signed-in user, allowing the app to act as the signed in user. The actual privileges granted to the app will be the least privileged combination (the intersection) of the privileges granted by the scope and those possessed by the signed-in user. For example, if the permission scope grants delegated privileges to write all directory objects, but the signed-in user has privileges only to update their own user profile, the app will only be able to write the signed-in user's profile but no other objects.
 
-### Full and basic profiles for users and groups
+Delegated permission scopes are for apps that act on behalf of a user. These scopes delegate the privileges of the signed-in user, allowing the app to act as the user. The actual privileges granted to the app will be the least privileged combination (the intersection) of the privileges granted by the scope and those possessed by the signed-in user. For example, if the permission scope grants delegated privileges to write all directory objects, but the signed-in user has privileges only to update their own user profile, the app will only be able to write the signed-in user's profile but no other objects.
 
-The full profile (or profile) of a User or a Group includes all of the entity's declared properties. Because the profile may contain sensitive directory information or personally identifiable information (PII), several scopes constrain app access to a limited set of properties known as a basic profile. For users, the basic profile includes only the following properties: display name, first and last name, photo, and email address. For groups, the basic profile contains only the display name. 
+## Full and basic profiles for users and groups
+
+The full profile (or profile) of a User or a Group includes all the entity's declared properties. Because the profile might contain sensitive directory information or personally identifiable information (PII), several scopes constrain app access to a limited set of properties known as a basic profile. For users, the basic profile includes only the following properties: 
+
+- Display name
+- First and last name
+- Photo
+- Email address
+
+For groups, the basic profile contains only the display name. 
 
 <!---	<a name="msg_perm_details"> </a>  -->
 
 ## Permission scope details
 
-You must configure your app to have the necessary permissions to access the Microsoft Graph API resources. The permissions are scoped to individual resources for the rights to read, to write or to do both. 
+You must configure your app to have the necessary permissions to access Microsoft Graph  resources. The permissions are scoped to individual resources for the rights to read, write, or  both. 
 
-The following tables list the Microsoft Graph API permission scopes and explains the access granted by each. 
-- The **Scope** column lists the scope name. Scope names take the form resource.operation.constraint; for example, Group.ReadWrite.All. If the constraint is "All", the scope grants the app the ability to perform the operation (ReadWrite) on all of the specified resources (Group) in the directory; otherwise, the scope only permits the operation on the profile of the signed-in user. Scopes may grant limited privileges for the specified operation, see the **Description** column for details.
+The following tables list the Microsoft Graph permission scopes and explains the access granted by each. 
+
+- The **Scope** column lists the scope name. Scope names take the form resource.operation.constraint; for example, Group.ReadWrite.All. If the constraint is "All", the scope grants the app the ability to perform the operation (ReadWrite) on all of the specified resources (Group) in the directory; otherwise, the scope only permits the operation on the profile of the signed-in user. Scopes may grant limited privileges for the specified operation. See the **Description** column for details.
 - The **Permission** column shows how the scope is displayed on the Azure portal. 
 - The **Description** column describes the full set of privileges granted by the scope. For delegated scopes, the actual access granted to the app will be the least privileged combination (intersection) of the access granted by the scope and the privileges of the signed-in user. 
-- The scopes are grouped according to whether the permissions require administrator's consent.
+- The scopes are grouped according to whether the permissions require an administrator's consent.
 
-  > **Note**: See [Release notes](http://graph.microsoft.io/docs/overview/release_notes) for `v1.0` and `beta` permission scope limitations.
+  > **Note**: See [Known issues](../overview/release_notes) for `v1.0` and `beta` permission scope limitations.
   
 ###Permissions requiring administrator's consent
 
