@@ -13,7 +13,7 @@ To use Microsoft Graph in your PHP app, you need to show the Microsoft sign in p
 
 To get started, you'll need: 
 
-- A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](http://dev.office.com/devprogram)
+- A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
 - PHP version 5.5.9 or greater
 - [Composer](https://getcomposer.org/)
 
