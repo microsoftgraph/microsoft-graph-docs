@@ -19,7 +19,7 @@ To download a version of the Connect sample that uses the Azure AD endpoint and 
 
 To get started, you'll need: 
 
-- A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](http://dev.office.com/devprogram)
+- A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](http://products.office.com/en-us/business/compare-office-365-for-business-plans). You can [join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://aka.ms/devprogramsignup).
 - Visual Studio 2015 
 - The [Microsoft Graph Connect Sample for ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample). You'll use the **starter-project** folder in the sample files.
 

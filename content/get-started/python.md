@@ -16,19 +16,18 @@ This article describes the tasks required to get an access token from Azure AD a
 
 First, you need to register your application and set permissions to use Microsoft Graph. This lets users sign into the application with work or school accounts.
 
-1.	Sign in to the [Azure Management Portal](http://aka.ms/i5b8dz) using your Microsoft Azure credentials.
-2.	Choose **Active Directory** on the left menu, then choose the directory for your Office 365 developer site.
-3.	On the top menu, choose **Applications**.
-4.	Choose **Add** from the bottom menu.
-5.	On the **What do you want to do page**, choose **Add an application my organization is developing**.
-6.	On the **Tell us about your application page**, choose the **Web application and/or web API** type, and enter a name for the app.
-7.	Choose the arrow icon on the lower-right corner of the page.
-8.	On the **App properties** page, enter *http://127.0.0.1:8000/connect/get_token/* for the **Sign-on URL** and a unique URI for the **App ID URI**.
-9.	After the application is successfully added, you'll be taken to the **Quick Start** page for the application. From there, select **Configure** in the top menu.
-10. Under **keys**, choose a duration.
-10.	Under **permissions to other applications**, choose **Add application**. In the dialog box, choose the **Microsoft Graph** application. After you return to the application configuration page, choose the **Send mail as a user** delegated permission.
-11.	Choose **Save** in the bottom menu.
-12.	Copy the **Client ID** and the **key** values that are specified on the **Configure** page.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+2. On the top bar, click on your account and under the **Directory** list, choose the Active Directory tenant where you wish to register your application.
+3. Click on **More Services** in the left hand nav, and choose **Azure Active Directory**.
+4. Click on **App registrations** and choose **Add**.
+5. Enter a friendly name for the application, for example 'MSGraphConnectPython' and select 'Web app/API' as the **Application Type**. For the Sign-on URL, enter ‘http://127.0.0.1:8000/connect/get_token/’. Click on **Create** to create the application.
+6. While still in the Azure portal, choose your application, click on **Settings** and choose **Properties**.
+7. Find the Application ID value and copy it to the clipboard.
+8. Configure Permissions for your application:
+9. In the **Settings** menu, choose the **Required permissions** section, click on **Add**, then **Select an API**, and select **Microsoft Graph**.
+10. Then, click on Select Permissions and select **Sign in and read user profile** and **Send mail as a user**. Click **Select** and then **Done**.
+11. In the **Settings** menu, choose the **Keys** section. Enter a description and select a duration for the key. Click **Save**.
+12. **Important**: Copy the key value. You won't be able to access this value again once you leave this pane. You will use this value as your app secret.
 
 For more information, see [Register your web server app with the Azure Management Portal](https://msdn.microsoft.com/en-us/office/office365/HowTo/add-common-consent-manually#bk_RegisterServerApp).
 
