@@ -1,30 +1,24 @@
-# Get started with the Microsoft Graph API and REST
+# Get started with Microsoft Graph and REST
 
-This article describes how to call Microsoft Graph to retrieve email messages in Office 365 and Outlook.com. This article focuses on the OAuth and REST requests and responses. It covers the sequence of requests and responses that an app uses to authenticate and retrieve messages.
+This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph using REST calls. It describes the sequence of requests and responses that an app uses to authenticate and retrieve email messages.
 
-## Using OAuth 2.0 to authenticate
+First, you need register your app with Azure Active Directory (Azure AD). 
 
-In order to call Microsoft Graph, your app needs an access token from Azure Active Directory (Azure AD). In the following example the app implements the Authorization Code Grant flow to get the access tokens from Azure AD, following standard [OAuth 2.0 protocols](http://tools.ietf.org/html/rfc6749).
+## Register an application
 
-### Registering an app
+There are currently two options to register your app with Azure AD. 
 
-There are currently two options to register your app:
+  - Register an app to use the Azure AD v2.0 endpoint that works for both personal (Microsoft) identities and work and school (Azure AD) accounts.
 
-  1. Register an app using the model that supports Office 365 commercial users, work or school accounts only.
- 
-  This model only works with Office 365 commercial offerings. Once you've registered your app, you can manage it through the [Azure Management Portal](https://manage.windowsazure.com).
+  - Register an app to use the Azure AD endpoint that supports work and school accounts only.
 
-  2. Register using the Azure AD v2.0 endpoint that works for both consumer and commercial Office 365 services.
- 
-  A single authentication service for both work or school and personal accounts is now available. This model provides a single authentication service for both work and school (Azure AD) as well as personal (Microsoft) identities. Now, you only need to implement one authentication flow in your app to enable users to use either work or school accounts, like Office 365 or OneDrive for Business, or personal accounts, like Outlook.com or OneDrive.
+> Some limitations apply. To choose which option is right for you, see [Should I use the v2.0 endpoint?](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
+
+This article assumes a v2.0 registration, so you'll register your app on the [Application Registration Portal](https://apps.dev.microsoft.com/). Follow the instructions in [Register your Microsoft Graph application with the Azure AD v2.0 endpoint](../authorization/auth_register_app_v2.md) to register your app.
    
-Use the [Application Registration Portal](https://apps.dev.microsoft.com/) to register your app and support both work and school and personal accounts.
+## Authenticate the user and get an access token
 
-Please note that the Azure AD v2.0 endpoint is gradually growing to cover all the scenarios from the previous auth endpoint. To choose whether is right for you read [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
-
-After registration, you will get an app ID and app secret. These values are used in the Authorization Code Grant flow.
-
-The rest of this document assumes a registration on v2.0 model. For a complete guide to the flows supported in the Azure AD v2.0 endpoint see [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/), for a complete guide to the Authorization Code Grant flow see [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-code/)
+The app described in this article implements the Authorization Code Grant flow to get the access tokens from Azure AD, following standard [OAuth 2.0 protocols](http://tools.ietf.org/html/rfc6749). For a complete guide to the flows supported in the Azure AD v2.0 endpoint see [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/). For a complete guide to the Authorization Code Grant flow see [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-code/).
 
 ### Getting an authorization code
 
@@ -103,11 +97,11 @@ Content-Type: application/json; charset=utf-8
 
 The access token is found in the `access_token` field of the JSON payload. The app uses this value to set the Authorization header when making REST calls to the API.
 
-## Calling Microsoft Graph
+## Call Microsoft Graph
 
 After the app has an access token, it's ready to call Microsoft Graph. Because this sample app is retrieving messages, it will use an HTTP GET request to the `https://graph.microsoft.com/v1.0/me/messages` endpoint.
 
-### Refining the request
+### Refine the request
 
 Apps can control the behavior of GET requests by using OData query parameters. We recommend that apps use these parameters to limit the number of results that are returned and to limit the fields that are returned for each item. 
 
