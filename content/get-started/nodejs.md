@@ -79,30 +79,29 @@ Now back to building the app.
 
 1. In authHelper.js, replace the *getTokenFromCode* function with the following code. This gets an access token using an authorization code.
 
-  ```
     function getTokenFromCode(code, callback) {
       var OAuth2 = OAuth.OAuth2;
       var oauth2 = new OAuth2(
-        credentials.client_id,
-        credentials.client_secret,
-        credentials.authority,
-        credentials.authorize_endpoint,
-        credentials.token_endpoint
-      );
+      credentials.client_id,
+      credentials.client_secret,
+      credentials.authority,
+      credentials.authorize_endpoint,
+      credentials.token_endpoint
+    );
 
-      oauth2.getOAuthAccessToken(
-        code,
-        {
-          grant_type: 'authorization_code',
-          redirect_uri: credentials.redirect_uri,
-          response_mode: 'form_post',
-          nonce: uuid.v4(),
-          state: 'abcd'
-        },
-        function (e, accessToken, refreshToken) {
-          callback(e, accessToken, refreshToken);
-        }
-      );
+    oauth2.getOAuthAccessToken(
+      code,
+      {
+        grant_type: 'authorization_code',
+        redirect_uri: credentials.redirect_uri,
+        response_mode: 'form_post',
+        nonce: uuid.v4(),
+        state: 'abcd'
+      },
+      function (e, accessToken, refreshToken) {
+        callback(e, accessToken, refreshToken);
+      }
+    );
     }
   ```
 
