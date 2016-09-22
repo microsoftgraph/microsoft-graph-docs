@@ -12,9 +12,9 @@ returns a collection of worksheet objects that are part of the workbook.
 
 ## Authorization and scopes
 
-You can use the [Azure AD v.20 endpoint](../../content/authorization/converged_auth) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
+You can use the [Azure AD v.20 endpoint](../../../content/authorization/converged_auth.md) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
   
-One of the following [permission scopes](../../content/authorization/permission_scoped.md) is required to use the Excel resource:
+One of the following [permission scopes](../../../content/authorization/permission_scopes.md) is required to use the Excel resource:
 
 * Files.Read 
 * Files.ReadWrite
@@ -74,7 +74,6 @@ GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksh
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
-[top](#excel-rest-api)
 
 ## Common Excel scenarios
 
@@ -195,7 +194,6 @@ content-type: application/json;odata.metadata
   "visibility": "Visible"
 }
 ```
-[top](#excel-rest-api)
 
 ### Chart operations
 
@@ -775,8 +773,6 @@ Response
 HTTP code: 204, No Content
 ```
 
-[top](#excel-rest-api)
-
 ### Range operations
 
 #### Get Range 
@@ -1009,7 +1005,6 @@ Response
 HTTP code: 204, No Content
 ```
 
-[top](#excel-rest-api)
 
 ### Named items
 Request
@@ -1104,7 +1099,7 @@ For example, a Range can consist of one or more cells. In cases where the indivi
   "color" : null
 }
 ```
-[top](#excel-rest-api)
+
 
 ### Blank input and output
 
@@ -1132,7 +1127,7 @@ For read operations, expect to receive blank values if the contents of the cells
   "formula" : [["", "", "=Rand()"]]
 }
 ```
-[top](#excel-rest-api)
+
 
 ### Unbounded Range
 
@@ -1248,4 +1243,4 @@ Content-Type: application/json
   }
 }
 ```
-[top](#excel-rest-api)
+
