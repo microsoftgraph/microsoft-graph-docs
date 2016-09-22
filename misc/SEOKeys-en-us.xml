@@ -20,7 +20,7 @@
 		
 	</Item>
   </Item>
-  <Item text="Get started" url="/en-us/getting-started-docs">
+  <Item text="Get started" url="/en-us/platform/get-started">
     <Item text="ASP.NET MVC" url="/en-us/platform/aspnetmvc" SEOKeyword=".NET, ASP.NET MVC, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an ASP.NET MVC app" />
     <Item text="UWP" url="/en-us/platform/uwp" SEOKeyword="UWP, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Windows Universal Platfrom app" />
     <Item text="iOS" url="/en-us/platform/ios" SEOKeyword="iOS, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an iOS app" />
@@ -31,7 +31,7 @@
     <Item text="Python" url="/en-us/platform/python" SEOKeyword="Python, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Python app" />
     <Item text="Ruby" url="/en-us/platform/ruby" SEOKeyword="Ruby, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Ruby app" />
     <Item text="REST" url="/en-us/platform/rest" SEOKeyword="REST, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a REST" />
-    <Item text="Xamarin" url="/en-us/get-started/xamarin" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Xamarin app." />
+    <Item text="Xamarin" url="/en-us/platform/xamarin" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Xamarin app." />
   </Item>
   <!--<Item text="/v1.0 reference" url="/en-us/api-reference/v1.0/">-->
     <Item text="Users" url="/en-us/api-reference/v1.0/resources/user" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
