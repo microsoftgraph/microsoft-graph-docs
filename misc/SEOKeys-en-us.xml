@@ -5,8 +5,7 @@
     <Item text="Paging" url="/en-us/overview/paging" SEOKeyword="Paging, Microsoft Graph API, Overview" SEODescription="Implementing paging in the Microsoft Graph." />
     <Item text="Errors" url="/en-us/overview/errors" SEOKeyword="Errors, Microsoft Graph API, Overview" SEODescription="Errors in the Microsoft Graph API service are returned using standard HTTP status codes, as well as a JSON error response object." />
     <Item text="Sovereign deployments" url="/en-us/overview/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
-    <Item text="Release notes" url="/en-us/overview/release_notes" SEOKeyword="Release Notes, Microsoft Graph API, Overview" SEODescription="New features for developers that are available in the November 2015 release of the Microsoft Graph API, as well as any known issues." />
-    <Item text="FAQs" url="/en-us/overview/faqs" SEOKeyword="FAQs, Microsoft Graph API, Overview" SEODescription="Answers to some frequently-asked questions about the Microsoft Graph." />
+    <Item text="Known issues" url="/en-us/overview/release_notes" SEOKeyword="Release Notes, Microsoft Graph API, Overview" SEODescription="New features for developers that are available in the November 2015 release of the Microsoft Graph API, as well as any known issues." />
   </Item>
   <Item text="Authorization" url="/en-us/authorization/auth_overview" SEODescription="Provides an overview of Microsoft Graph app authentication, including Azure AD and the Azure AD v2.0 endpoint." >
     <Item text="Permission scopes" url="/en-us/authorization/permission_scopes" SEOKeyword="Permission Scopes, Microsoft Graph API, Overview" SEODescription="The Microsoft Graph API exposes OAuth 2.0 permission scopes that are used to control access that an app has to data. As a developer, you configure your app with the permission scopes appropriate to the access that it requires, typically by using the Azure portal." />

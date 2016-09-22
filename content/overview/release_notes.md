@@ -1,43 +1,8 @@
-# Microsoft Graph release notes and known issues
+# Known issues with Microsoft Graph
 
-This article provides information about the new features for developers that are available in the November 2015 release of the Microsoft Graph API, and any known issues that you might want to be aware of. 
+This article describes known issues with the Microsoft Graph.
 
-
-## GA features in Microsoft Graph API
-
-The following Microsoft Graph API features are generally available:
-
-* Users
-* Groups
-* Files
-* Mail
-* Calendar
-* Personal Contacts 
-* Create, read, update, and delete (CRUD) operations
-* Cross-origin resource sharing (CORS) support.
-
-	
-## Preview features in Microsoft Graph API
-
-The following Microsoft Graph API preview features are available:
-
-* Notes 
-* Tasks
-* Excel
-* People
-* Organizational Contacts
-* Applications
-* Service Principals
-* Directory schema extensions
-* Webhooks
-* Insights and relationships: Trending Around and Working With
-* Groups instant access to content after creation
-* Converged authentication model for personal accounts as well as work and school accounts. Although this is a preview feature, it is available on both the `/v1.0` and `/beta` versions.
-
-
-## Microsoft Graph known issues
-
-The following are known issues with the Microsoft Graph.
+For information about the latest updates, see the [Microsoft Graph Changelog](/changelog).
 
 ### Users
 #### No instant access after creation
