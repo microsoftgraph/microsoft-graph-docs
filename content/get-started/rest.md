@@ -14,17 +14,17 @@ There are currently two options to register your app:
  
   This model only works with Office 365 commercial offerings. Once you've registered your app, you can manage it through the [Azure Management Portal](https://manage.windowsazure.com).
 
-  2. Register using the latest functionality that works for both consumer and commercial Office 365 services (we call it Auth endpoint v2.0).
+  2. Register using the Azure AD v2.0 endpoint that works for both consumer and commercial Office 365 services.
  
   A single authentication service for both work or school and personal accounts is now available. This model provides a single authentication service for both work and school (Azure AD) as well as personal (Microsoft) identities. Now, you only need to implement one authentication flow in your app to enable users to use either work or school accounts, like Office 365 or OneDrive for Business, or personal accounts, like Outlook.com or OneDrive.
    
 Use the [Application Registration Portal](https://apps.dev.microsoft.com/) to register your app and support both work and school and personal accounts.
 
-Please note that the v2.0 endpoint is gradually growing to cover all the scenarios from the previous auth endpoint. To choose whether is right for you read [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
+Please note that the Azure AD v2.0 endpoint is gradually growing to cover all the scenarios from the previous auth endpoint. To choose whether is right for you read [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
 
-After registration, you will get a client ID and secret. These values are used in the Authorization Code Grant flow.
+After registration, you will get an app ID and app secret. These values are used in the Authorization Code Grant flow.
 
-The rest of this document assumes a registration on the v2.0 model. For a complete guide to the flows supported in the v2.0 endpoint see [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/), for a complete guide to the Authorization Code Grant flow see [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-code/)
+The rest of this document assumes a registration on v2.0 model. For a complete guide to the flows supported in the Azure AD v2.0 endpoint see [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/), for a complete guide to the Authorization Code Grant flow see [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-code/)
 
 ### Getting an authorization code
 
