@@ -9,7 +9,6 @@ This article describes the tasks required to get an access token from Azure AD a
 ##  Prerequisites
 
   * An Office 365 for business account. You can sign up for [an Office 365 Developer subscription](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account) that includes the resources that you need to start building Office 365 apps.
-  * A Microsoft Azure tenant to register your application. Azure Active Directory (AD) provides identity services that applications use for authentication and authorization. A trial subscription can be acquired here: [Microsoft Azure](http://aka.ms/jjm0q7).
   * The [Microsoft Graph Connect Sample for Python](https://github.com/microsoftgraph/python3-connect-rest-sample)
 
 ## Register the application in Azure Active Directory

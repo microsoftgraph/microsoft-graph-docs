@@ -16,7 +16,7 @@ To download a version of the Connect sample that uses the Azure AD endpoint, see
 
 To get started, you'll need: 
 
-- A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](http://dev.office.com/devprogram)
+- A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
 - [Node.js with npm](https://nodejs.org/en/download/)
 - [Bower](https://bower.io)
 - The [Microsoft Connect Sample for AngularJS](https://github.com/microsoftgraph/angular-connect-rest-sample). You'll use the **starter-project** folder in the sample files for this walkthrough.
