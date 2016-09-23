@@ -30,7 +30,7 @@
     <Item text="Xamarin" url="/en-us/platform/xamarin" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Xamarin app." />
   </Item>
   <!--<Item text="/v1.0 reference" url="/en-us/api-reference/v1.0/">-->
-    <Item text="Users" url="/en-us/api-reference/v1.0/resources/user" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
+    <Item text="Users" url="/en-us/api-reference/v1.0/resources/users" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
       <Item text="user" url="/en-us/api-reference/v1.0/resources/user" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
         <Item text="List users" url="/en-us/api-reference/v1.0/api/user_list" SEOKeyword="List users, Microsoft Graph API, user API" SEODescription="Retrieve a list of user objects." />
         <Item text="Create user" url="/en-us/api-reference/v1.0/api/user_post_users" SEOKeyword="Create User, Microsoft Graph API, user API" SEODescription="Use this API to create a new User." />
@@ -470,7 +470,7 @@
   <!--</Item>-->
 
   <Item text="/beta reference" url="/en-us/api-reference/beta/beta-overview">
-    <Item text="Users" url="/en-us/api-reference/beta/resources/user" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
+    <Item text="Users" url="/en-us/api-reference/beta/resources/users" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
       <Item text="user" url="/en-us/api-reference/beta/resources/user" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
         <Item text="List users" url="/en-us/api-reference/beta/api/user_list" SEOKeyword="List users, Microsoft Graph API, user API" SEODescription="Retrieve a list of user objects." />
         <Item text="Create user" url="/en-us/api-reference/beta/api/user_post_users" SEOKeyword="Create User, Microsoft Graph API, user API" SEODescription="Use this API to create a new User." />
