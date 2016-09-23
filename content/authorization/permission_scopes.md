@@ -40,7 +40,7 @@ The following tables list the Microsoft Graph permission scopes and explains the
   
 ###Permissions requiring administrator's consent
 
-|   **Scope**                  |  **Permission on Azure Management Portal**                          |  **Description** |
+|   **Scope**                  |  **Permission**                          |  **Description** |
 |:-----------------------------|:-----------------------------------------|:-----------------|
 | _User.Read.All_                |     Read all user's full profiles           | Same as User.ReadBasic.All, except that it allows the app to read the full profile of all users in the organization and when reading navigation properties like manager and direct reports. The full profile includes all of the declared properties of the **User** entity. To read the groups that a user is a member of, the app will also require either Group.Read.All or Group.ReadWrite.All. |
 | _User.ReadWrite.All_           |     Read and write all user's full profiles | Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. |
@@ -53,8 +53,8 @@ The following tables list the Microsoft Graph permission scopes and explains the
 
 ###Permissions not requiring administrator's consent
 
-|   **Scope**    |  **Permission on Azure Management Portal**   |  **Description** |
-|:------------------|:---------------------|:------------------------------|
+|   **Scope**    |  **Permission**   |  **Description** |
+|:-----------------------------|:-----------------------------------------|:-----------------|
 | _User.Read_       |    Sign-in and read user profile | Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. The full profile includes all of the declared properties of the User entity. The app cannot read navigation properties, such as manager or direct reports. Also allows the app to read the following basic company information of the signed-in user (through the **TenantDetail** object): tenant ID, tenant display name, and verified domains.|
 | _User.ReadWrite_ |    Read and write access to user profile | Allows the app to read your profile. It also allows the app to update your profile information on your behalf. |
 | _User.ReadBasic.All_ |    Read all user's basic profiles | Allows the app to read the basic profile of all users in the organization on behalf of the signed-in user. The following properties comprise a user’s basic profile: display name, first and last name, photo, and email address. To read the groups that a user is a member of, the app will also require Group.Read.All or Group.ReadWrite.All.| 
@@ -75,7 +75,7 @@ The following tables list the Microsoft Graph permission scopes and explains the
 
 ###App-only permissions requiring administrator's consent
 
-|   **Scope**    |  **Permission on Azure Management Portal**   |  **Description** |
+|   **Scope**    |  **Permission**   |  **Description** |
 |:---------------|:------------------|:-----------------|
 | _Mail.Read_       |    Read mail in all mailboxes | Allows the app to read mail in all mailboxes without a signed-in user.|
 | _Mail.ReadWrite_ |    Read and write mail in all mailboxes | Allows the app to create, read, update, and delete mail in all mailboxes without a signed-in user. Does not include permission to send mail. |
@@ -92,7 +92,7 @@ The following tables list the Microsoft Graph permission scopes and explains the
 ##Permission scopes in preview
 ###Permissions not requiring administrator's consent (preview)
 
-|   **Scope**    |  **Permission on Azure Management Portal**   |  **Description** |
+|   **Scope**    |  **Permission**   |  **Description** |
 |:---------------|:------------------|:-----------------|
 | _Tasks.ReadWrite_ |    Create, read, update and delete user tasks and plans (preview) | Allows the app to create, read, update and delete tasks and plans (and tasks in them), that are assigned to or shared with the signed-in user.|
 | _People.Read_ |    Read users' relevant people lists (preview) | Allows the app to read a ranked list of relevant people of the signed-in user. The list includes local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype).|
@@ -109,7 +109,7 @@ The following are some app scenarios using the `User` and `Group` resources and 
 
 ###Access scenarios using the User resource and the required scopes
 
-| **App tasks involving User**	 |  **Required scopes** | **Permissions on Azure Management Portal** |
+| **App tasks involving User**	 |  **Required scopes** | **Permissions** |
 |:-------------------------------|:---------------------|:---------------|
 | App wants to read other users' basic information (only display name and picture), for example to show in a people picking experience	 | _User.ReadBasic.All_  |  Read all user's basic profiles |
 | App wants to read complete user profile for signed in user (see direct reports, and manager, etc)	 | _User.Read_ | Enable sign-in and read user profile|
@@ -123,7 +123,7 @@ The following are some app scenarios using the `User` and `Group` resources and 
 
 ###Access scenarios using the Group resource and the required scopes
     
-| **App tasks involving Group**	 |  **Required scopes** |  **Permissions on Azure Management Portal** |
+| **App tasks involving Group**	 |  **Required scopes** |  **Permissions** |
 |:-------------------------------|:---------------------|:---------------|
 | App wants to read basic group info (only display name and picture), for example to show in a group picking experience	 | _Group.Read.All_  | Read all groups|
 | App wants to read all content in all unified groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  |  _Group.Read.All_ | Read items in all site collections, Read all groups|
