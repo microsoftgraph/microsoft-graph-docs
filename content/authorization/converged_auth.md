@@ -36,7 +36,7 @@ In addition, the [Get Started](http://graph.microsoft.io/en-us/docs/platform/get
 ## See also
 
 - [Register an app with the Azure AD v2.0 endpoint](auth_register_app_v2.md)
-- [App authentication with Microsoft Graph](Auth_overview.md)
+- [App authentication with Microsoft Graph](auth_overview.md)
 - <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare" target="_newtab">What's new about the Azure AD v2.0 model</a>
 - <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/" target="_newtab">Should I use the Azure AD v2.0 endpoint?</a>
 - <a href="https://azure.microsoft.com/en-us/documentation/articles/?product=active-directory&term=azure+ad+v2.0" target="_newtab">Azure AD v2.0 endpoint documentation on Azure.com</a>
