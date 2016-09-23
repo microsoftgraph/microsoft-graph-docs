@@ -95,38 +95,38 @@ The ``GetTokenHelperAsync`` method runs when the user authenticates and subseque
 
 If you're using the Microsoft Graph Client Library, you'll need these declarations:
 
-    ```c#
-    using System;
-    using System.Diagnostics;
-    using System.Net.Http.Headers;
-    using System.Threading.Tasks;
-    using Microsoft.Graph;
-    using Microsoft.Identity.Client;
-    ```
+```c#
+using System;
+using System.Diagnostics;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
+using Microsoft.Graph;
+using Microsoft.Identity.Client;
+```
 
 ***REST version***
 
 If you're using raw REST calls to access Microsoft Graph, you'll need these `using` declarations in the AuthenticationHelper class:
 
-    ```c#
-    using System;
-    using System.Threading.Tasks;
-    using Windows.Storage;
-    using Microsoft.Identity.Client;
-    ```
+```c#
+using System;
+using System.Threading.Tasks;
+using Windows.Storage;
+using Microsoft.Identity.Client;
+```
 
 **Class fields**
 
 Both versions of the AuthenticationHelper class will need these fields:
 
-    ```c#
-    // The Client ID is used by the application to uniquely identify itself to the Azure AD v2.0 endpoint.
-    static string clientId = App.Current.Resources["ida:ClientID"].ToString();
-    public static string[] Scopes = { "User.Read", "Mail.Send" };
-    public static PublicClientApplication IdentityClientApp = new PublicClientApplication(clientId);
-    public static string TokenForUser = null;
-    public static DateTimeOffset Expiration;
-    ```
+```c#
+// The Client ID is used by the application to uniquely identify itself to the Azure AD v2.0 endpoint.
+static string clientId = App.Current.Resources["ida:ClientID"].ToString();
+public static string[] Scopes = { "User.Read", "Mail.Send" };
+public static PublicClientApplication IdentityClientApp = new PublicClientApplication(clientId);
+public static string TokenForUser = null;
+public static DateTimeOffset Expiration;
+```
 
 Note that both versions use the MSAL `PublicClientApplication` class to authenticate the user. The `Scopes` field stores the Microsoft Graph permission scopes that the app will need to request when the user authenticates. 
 
@@ -134,17 +134,17 @@ Note that both versions use the MSAL `PublicClientApplication` class to authenti
 
 If you're using the client library, store the `GraphServicesClient` as a field so that you only have to construct it once:
 
-    ```c#
-    private static GraphServiceClient graphClient = null;
-    ```
+```c#
+private static GraphServiceClient graphClient = null;
+```
 
 ***REST version***
 
 If you're using REST calls, you'll need to store some values in the app's roaming settings, since you'll need to store information about the user. (The client library supplies this information in the other version.)
 
-    ```c#
-    public static ApplicationDataContainer _settings = ApplicationData.Current.RoamingSettings;
-    ```
+```c#
+public static ApplicationDataContainer _settings = ApplicationData.Current.RoamingSettings;
+```
 
 **GetTokenForUserAsync**
 
@@ -152,7 +152,7 @@ If you're using REST calls, you'll need to store some values in the app's roamin
 
 The `GetTokenForUserAsync` method uses the PublicClientApplicationClass and the ClientId setting to get an access token for the user. If the user hasn't already authenticated, it launches the authentication UI. This is the version of the method to use if you're using the client library.
 
-    ```c#
+```c#
         public static async Task<string> GetTokenForUserAsync()
         {
             AuthenticationResult authResult;
@@ -175,13 +175,13 @@ The `GetTokenForUserAsync` method uses the PublicClientApplicationClass and the 
 
             return TokenForUser;
         }
-    ```
+```
 
 ***REST version***
 
 The REST version of the `GetTokenForUserAsync` method does a little more work, since it also needs to store some information about the signed-in user.
 
-    ```c#
+```c#
         public static async Task<string> GetTokenForUserAsync()
         {
             AuthenticationResult authResult;
@@ -213,7 +213,7 @@ The REST version of the `GetTokenForUserAsync` method does a little more work, s
 
             return TokenForUser;
         }
-    ```
+```
 
 **Signout**
 
@@ -223,7 +223,7 @@ The `Signout` method in both versions signs out all users logged in through the 
 
 This is the client library version of the `Signout` method.
 
-    ```c#
+```c#
         public static void SignOut()
         {
             foreach (var user in IdentityClientApp.Users)
@@ -234,13 +234,13 @@ This is the client library version of the `Signout` method.
             TokenForUser = null;
 
         }
-    ``` 
+``` 
 
 ***REST version***
 
 This is the REST version of the `Signout` method.
 
-    ```c#
+```c#
         public static void SignOut()
         {
             foreach (var user in IdentityClientApp.Users)
@@ -256,13 +256,13 @@ This is the REST version of the `Signout` method.
             _settings.Values["userName"] = null;
 
         }
-    ```
+```
 
 **GetAuthenticatedClient (client library only)**
 
 Finally, if you're using the client library, you'll need a method that creates a `GraphServicesClient`. This method  creates a client that uses the `GetTokenForUserAsync` method for every call through the client to Microsoft Graph.
 
-    ```c#
+```c#
         public static GraphServiceClient GetAuthenticatedClient()
         {
             if (graphClient == null)
@@ -289,7 +289,7 @@ Finally, if you're using the client library, you'll need a method that creates a
 
             return graphClient;
         }
-    ```
+```
 
 ## Send an email with Microsoft Graph
 
@@ -301,14 +301,14 @@ The ``ComposeAndSendMailAsync`` method takes three string values -- ``subject``,
 
 The REST version of this file requires the following `using` declarations:
 
-    ```c#
-    using System;
-    using System.Threading.Tasks;
-    ```
+```c#
+using System;
+using System.Threading.Tasks;
+```
 
 Since the user can potentially pass more than one address, the first task is to split the ``recipients`` string into a set of EmailAddress objects that can then be passed in the POST body of the request:
 
-    ```c#
+```c#
             // Prepare the recipient list
             string[] splitter = { ";" };
             var splitRecipientsString = recipients.Split(splitter, StringSplitOptions.RemoveEmptyEntries);
@@ -325,11 +325,11 @@ Since the user can potentially pass more than one address, the first task is to 
                 }
                 n++;
             }
-    ```
+```
 
 The second task is to construct a valid JSON Message object and send it to the **me/microsoft.graph.SendMail** endpoint through an HTTP POST request. Since the ``bodyContent`` string is an HTML document, the request sets the **ContentType** value to HTML. Also note the call to ``AuthenticationHelper.GetTokenHelperAsync`` to ensure that we have a fresh access token to pass in the request.
 
-    ```c#
+```c#
                 HttpClient client = new HttpClient();
                 var token = await AuthenticationHelper.GetTokenHelperAsync();
                 client.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
@@ -353,11 +353,11 @@ The second task is to construct a valid JSON Message object and send it to the *
 
                     throw new Exception("We could not send the message: " + response.StatusCode.ToString());
                 }
-    ```
+```
 
 The complete class will look like this:
 
-    ```c#
+```c#
     class MailHelper
     {
         /// <summary>
@@ -425,23 +425,23 @@ The complete class will look like this:
             }
         }
     }
-    ``
+```
 
 **Client library version**
 
 The client library version of this file requires the following `using` declarations:
 
-    ```c#
-    using System;
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
-    ```
+```c#
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+```
 
 The code for sending a message with the client library looks very similar to the code that uses REST calls. Instead of creating JSON objects and passing them directly to the **SendMail** endpoint in an HTTP POST request, you create equivalent objects that are defined in the client library and pass the resulting `Message` object to the `SendMail` method of the `GraphServiceClient`. The client does the work of fetching the access token and passing the request to the **SendMail** endpoint.
 
 The complete class will look like this:
 
-    ```c#
+```c#
     public class MailHelper
     {
         /// <summary>
@@ -499,7 +499,7 @@ The complete class will look like this:
             }
         }
     }
-    ``` 
+``` 
 
 ##Create the user interface in MainPage.xaml
 
@@ -515,7 +515,7 @@ The client library version of the app creates a `GraphServiceClient` when the us
 
 Add this code inside your namespace to complete the client library version of the MainPage class in MainPage.xaml.cs:
 
-    ```c#
+```c#
     public sealed partial class MainPage : Page
     {
         private string _mailAddress;
@@ -628,7 +628,7 @@ Add this code inside your namespace to complete the client library version of th
             this._mailAddress = null;
         }
     }
-    ```
+```
 
 ***REST version***
 
@@ -636,7 +636,7 @@ The REST version of this class looks very similar to the client library version,
 
 Add this code inside your namespace to complete the REST version of the MainPage class in MainPage.xaml.cs:
 
-    ```c#
+```c#
     public sealed partial class MainPage : Page
     {
         private string _mailAddress;
@@ -749,7 +749,7 @@ Add this code inside your namespace to complete the REST version of the MainPage
             this._mailAddress = null;
         }
     }
-    ```
+```
  
 You've now performed the three steps required for interacting with Microsoft Graph: app registration, user authentication, and making a request. 
 
