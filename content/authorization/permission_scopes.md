@@ -1,4 +1,4 @@
-# Microsoft Graph permission scopes
+﻿# Microsoft Graph permission scopes
 
 Microsoft Graph exposes OAuth 2.0 permission scopes that are used to control the access that an app has to resources. As a developer, you specify the permission scopes that are appropriate to the access your app requires. (If you're using Azure AD authentication, you typically do this through the Azure Management portal. If you're using the Azure AD v2.0 endpoint, you request permissions dynamically during runtime.)
 
@@ -54,7 +54,7 @@ The following tables list the Microsoft Graph permission scopes and explains the
 ###Permissions not requiring administrator's consent
 
 |   **Scope**    |  **Permission on Azure Management Portal**   |  **Description** |
-|:---------------|:------------------|:------------------------------|
+|:------------------|:---------------------|:------------------------------|
 | _User.Read_       |    Sign-in and read user profile | Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. The full profile includes all of the declared properties of the User entity. The app cannot read navigation properties, such as manager or direct reports. Also allows the app to read the following basic company information of the signed-in user (through the **TenantDetail** object): tenant ID, tenant display name, and verified domains.|
 | _User.ReadWrite_ |    Read and write access to user profile | Allows the app to read your profile. It also allows the app to update your profile information on your behalf. |
 | _User.ReadBasic.All_ |    Read all user's basic profiles | Allows the app to read the basic profile of all users in the organization on behalf of the signed-in user. The following properties comprise a user’s basic profile: display name, first and last name, photo, and email address. To read the groups that a user is a member of, the app will also require Group.Read.All or Group.ReadWrite.All.| 
