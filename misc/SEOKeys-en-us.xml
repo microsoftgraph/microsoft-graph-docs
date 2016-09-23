@@ -745,12 +745,12 @@
         <Item text="Get site" url="/en-us/api-reference/beta/api/site_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
         <Item text="Get by URL" url="/en-us/api-reference/beta/api/baseItem_getByUrl" SEOKeyword="sharepoint, getbyurl, site" SEODescription="" />
         <Item text="Get lists" url="/en-us/api-reference/beta/api/lists_list" SEOKeyword="sharepoint, list lists, get lists" SEODescription="" />
+		<Item text="List subsites" url="/en-us/api-reference/beta/api/subsites_list" SEOKeyword="sharepoint, list subsites" SEODescription="" />
       </Item>
       <Item text="Lists" url="/en-us/api-reference/beta/resources/list" SEOKeyword="sharepoint, list, lists, microsoft graph api, sharepoint list api">
         <Item text="Get list" url="/en-us/api-reference/beta/api/list_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
         <Item text="Get by URL" url="/en-us/api-reference/beta/api/baseItem_getByUrl" SEOKeyword="sharepoint, getbyurl, site" SEODescription="" />
         <Item text="Get items" url="/en-us/api-reference/beta/api/listItems_list" SEOKeyword="sharepoint, list items, get items, get listitems" SEODescription="" />
-        <Item text="List subsites" url="/en-us/api-reference/beta/api/subsites_list" SEOKeyword="sharepoint, list subsites" SEODescription="" />
       </Item>
       <Item text="ListItems" url="/en-us/api-reference/beta/resources/listItem" SEOKeyword="sharepoint, listitems, microsoft graph api, sharepoint list api" SEODescription="">
         <Item text="Get item" url="/en-us/api-reference/beta/api/listItem_get" SEOKeyword="sharepoint, get item, microsoft graph api, sharepoint list api" SEODescription="" />
