@@ -45,4 +45,4 @@ To use the Azure AD v2.0 endpoint, you need to register your app on the [Microso
 
 ## See also
 
-[App authentication with Microsoft Graph](../auth_overview.md)
+[App authentication with Microsoft Graph](auth_overview.md)
