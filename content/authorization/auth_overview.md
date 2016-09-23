@@ -1,4 +1,4 @@
-# App authentication with Microsoft Graph
+﻿# App authentication with Microsoft Graph
 
 To access a user's Microsoft data, your application must enable users to authenticate their identity and give their consent for the app to perform actions on their behalf.
 
@@ -19,7 +19,7 @@ The Microsoft Graph supports two authentication providers:
 The following table summarizes the major features that the Azure AD and Azure AD v2.0 endpoints support, and provides links to additional information. The relative importance of these  features--and therefore, which authentication provider you choose to implement in your app--will primarily depend on:
 
 - The account type (enterprise or consumer) your apps needs to support
-- Te type of app you want to build
+- The type of app you want to build
 - The authentication flow required 
 
 <table style="width:100%">
@@ -88,16 +88,16 @@ Also, the Azure AD v2.0 endpoint is under active development, with additional fe
 
 When you decide which authentication provider meets your app's requirements, you need to register your app at that authentication provider's portal. Registering your app establishes your app's identity with the authentication provider, and enables your app to specify its identity when submitting authentication requests from the user.
 
-- To [register your app with Azure AD](../auth_azure_ad/app_authentication_azure_ad.md), use the [Microsoft Azure Management portal](https://manage.windowsazure.com/).
+- To register your app with Azure AD, use the [Azure portal](https://portal.azure.com/).
 
-	For Azure AD, you'll also need to [associate your Office 365 account with Azure AD subscription](../auth_azure_ad/associate_account.md) in order to manage your apps.
+	<!--For Azure AD, you'll also need to [associate your Office 365 account with Azure AD subscription](../auth_azure_ad/associate_account.md) in order to manage your apps.-->
 
-- To [register your app with the Azure AD v2.0 endpoint](../v2/auth_register_app_v2.md), use the [Microsoft Application Registration portal](https://apps.dev.microsoft.com).
+- To [register your app with the Azure AD v2.0 endpoint](auth_register_app_v2.md), use the [Microsoft Application Registration portal](https://apps.dev.microsoft.com).
 
 
 ## Resources for implementing authentication in your Microsoft Graph app 
 
-After you register your app with the appropriate authentication portal, and have the app registration information (app ID, app secret--if applicable--and redirect URI) that you need to establish your app's identity, you're ready to implement authentication in your app. 
+After you register your app with the appropriate authentication portal, and have the app registration information (app ID, app secret, if applicable, and redirect URI) that you need to establish your app's identity, you're ready to implement authentication in your app. 
 
 Again, this will vary depending on the type of app you're building, your development platform, the authentication flow you choose, and any specific authentication requirements for your app. 
 
@@ -207,7 +207,7 @@ To explore a wide range of projects that connect to Microsoft Graph over a broad
 
 ### Get Started  
 
-The [Get Started](http://graph.microsoft.io/en-us/docs/platform/rest#getting-started-with-the-microsoft-graph-api-and-rest) section contains detailed articles that show you how to create the apps listed in the table using the Azure AD v2.0 endpoint, and covers the authentication libraries used on each platform. 
+The [Get Started](http://graph.microsoft.io/en-us/docs/platform/get-started) section contains detailed articles that show you how to create the apps listed in the table using the Azure AD v2.0 endpoint, and covers the authentication libraries used on each platform. 
 
 ## See also
 
