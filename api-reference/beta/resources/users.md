@@ -1,14 +1,14 @@
 # Working with users in Microsoft Graph
 
-You can use Microsoft Graph to build compelling app experiences based on users, their relationships with other users and groups, mail, calendar, and files.
+You can use Microsoft Graph to build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files.
 
-You can address users through Microsoft Graph in two ways:
+You can access users through Microsoft Graph in two ways:
 
-- `/users/<id>` addresses a user by their id
-- `/me` is an alias for the signed-in user, synonymous with `/users/<signed-in user's id>`
+- By their ID, `/users/<id>` 
+- By using the `/me` alias for the signed-in user, which is the same as `/users/<signed-in user's id>`
 
 ## Authorization
-One of the following [permissions](permission_scopes.md) is required to access user operations. The first three permissions can be granted to an app by a user, whereas the remaining set can only be granted to an app by the administrator.
+One of the following [permissions](https://graph.microsoft.io/en-us/docs/authorization/permission_scopes) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.
 
 - User.ReadBasic.All
 - User.Read
@@ -19,7 +19,7 @@ One of the following [permissions](permission_scopes.md) is required to access u
 - Directory.ReadWrite.All
 - Directory.AccessAsUser.All
 
-## Common Properties
+## Common properties
 
 | Property | Description |
 |----------|-------------|
@@ -28,10 +28,11 @@ One of the following [permissions](permission_scopes.md) is required to access u
 |surname| The last name of the user. |
 |mail| The user's email address. |
 |photo| The user's profile photo. |
-For details on more properties, see the [user](user.md) object.
 
-## Common Operations
-Some of these operations require additional permissions.
+For details and a list of all the properties, see the [user](user.md) object.
+
+## Common operations
+>**Note:** Some of these operations require additional permissions.
 
 | Path    | Description |
 |---------|-------------|
