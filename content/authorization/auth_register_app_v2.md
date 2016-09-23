@@ -1,4 +1,4 @@
-## Register your Microsoft Graph application with the Azure AD v2.0 endpoint
+﻿## Register your Microsoft Graph application with the Azure AD v2.0 endpoint
 
 To use the Azure AD v2.0 endpoint, you need to register your app on the [Microsoft App Registration Portal](https://apps.dev.microsoft.com) (https://apps.dev.microsoft.com). Registering your app establishes your app's identity with the authentication provider, and enables your app to prove its identity when submitting authentication requests from the user. Registration generates the app ID and app secret that you'll use to configure the app for authentication.
 
@@ -29,12 +29,16 @@ To use the Azure AD v2.0 endpoint, you need to register your app on the [Microso
 
 	For web apps:
 	- Select **Web**.
-	- Make sure the **Allow Implicit Flow** check box is selected, and specify a Redirect URI.
-
+	- If you’re using the Implicit grant type, or if you’re using the OpenID Connect hybrid flow, make sure the Allow Implicit Flow check box is selected. 
+		
 		The Allow Implicit Flow option enables the OpenID Connect hybrid flow. During authentication, this enables the app to receive both sign-in info (the id_token) and artifacts (in this case, an authorization code) that the app uses to obtain an access token.
 
+
+	- Specify a Redirect URI.
+		
 		The redirect URI is the location in your app that the Azure AD v2.0 endpoint calls when it has processed the authentication request.
 	- Under **Application Secrets**, choose **Generate New Password**. Copy the app secret from the **New password generated** dialog box.
+		
 		You'll use the app secret to configure the app.
 	
 6. Choose **Save**.
