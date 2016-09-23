@@ -34,19 +34,19 @@ In this step, you'll register an app on the Microsoft App Registration Portal. T
 
 3. Enter a name for the app, and choose **Create application**. 
 	
-   The registration page displays, listing the properties of your app.
+	The registration page displays, listing the properties of your app.
 
 4. Copy the application ID. This is the unique identifier for your app. 
 
 5. Under **Application Secrets**, choose **Generate New Password**. Copy the password from the **New password generated** dialog.
 
-   You'll use the application ID and password to configure the app. 
+	You'll use the application ID and password to configure the app. 
 
 6. Under **Platforms**, choose **Add platform** > **Web**.
 
 7. Make sure the **Allow Implicit Flow** check box is selected, and enter *http://localhost:55065/* as the Redirect URI. 
 
-   The **Allow Implicit Flow** option enables the OpenID Connect hybrid flow. During authentication, this enables the app to receive both sign-in info (the **id_token**) and artifacts (in this case, an authorization code) that the app uses to obtain an access token.
+	The **Allow Implicit Flow** option enables the OpenID Connect hybrid flow. During authentication, this enables the app to receive both sign-in info (the **id_token**) and artifacts (in this case, an authorization code) that the app uses to obtain an access token.
 
 8. Choose **Save**.
 
@@ -439,6 +439,7 @@ In this step, you'll work with the **GraphService**, **GraphResources**, and **H
  - **GraphService** builds and sends HTTP requests to the Microsoft Graph and processes the responses. 
  - **GraphResources** represents data that the app sends to and receives from the Microsoft Graph. 
  - **HomeController** contains actions that initiate the calls to the Microsoft Graph in response to UI events.
+&nbsp;
 
 1. In the **Models** folder, open GraphService.cs.
 

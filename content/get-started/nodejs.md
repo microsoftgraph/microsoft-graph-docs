@@ -29,13 +29,13 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 3. Enter a name for the app, and choose **Create application**. 
 	
-   The registration page displays, listing the properties of your app.
+	The registration page displays, listing the properties of your app.
 
 4. Copy the application ID. This is the unique identifier for your app. 
 
 5. Under **Application Secrets**, choose **Generate New Password**. Copy the password from the **New password generated** dialog.
 
-   You'll use the application ID and application password (secret) to configure the app. 
+	You'll use the application ID and application password (secret) to configure the app. 
 
 6. Under **Platforms**, choose **Add platform** > **Web**.
 
@@ -71,7 +71,7 @@ The auth flow can be broken down into these basic steps:
 
 The app uses the [oauth](https://www.npmjs.com/package/oauth) middleware to authenticate and obtain tokens. It uses the [cookie-parser](https://www.npmjs.com/package/cookie-parser) middleware to cache token information in cookies. The code used to store and access token information is found in the index.js controller.
     
-   >**Important:** The simple authentication and token handling in this project is for sample purposes only. In a production app, you should construct a more robust way of handling authentication, including validation and secure token handling.
+   >**Important** The simple authentication and token handling in this project is for sample purposes only. In a production app, you should construct a more robust way of handling authentication, including validation and secure token handling.
 
 Now back to building the app.
 

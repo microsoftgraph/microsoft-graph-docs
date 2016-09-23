@@ -30,7 +30,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 3. Enter a name for the app, and choose **Create application**. 
 	
-   The registration page displays, listing the properties of your app.
+	The registration page displays, listing the properties of your app.
 
 4. Copy the application ID. This is the unique identifier for your app. 
 
