@@ -439,7 +439,8 @@ In this step, you'll work with the **GraphService**, **GraphResources**, and **H
  - **GraphService** builds and sends HTTP requests to the Microsoft Graph and processes the responses. 
  - **GraphResources** represents data that the app sends to and receives from the Microsoft Graph. 
  - **HomeController** contains actions that initiate the calls to the Microsoft Graph in response to UI events.
-&nbsp;
+
+Start by defining your data access layer.
 
 1. In the **Models** folder, open GraphService.cs.
 

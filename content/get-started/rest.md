@@ -133,7 +133,7 @@ Authorization: Bearer eyJ0eXAi...b66LoPVA
 Now that you've seen how to make calls to Microsoft Graph, you can use the API reference to construct any other kinds of calls your app needs to make. However, bear in mind that your app needs to have the appropriate permissions configured on the app registration for the calls it makes.
 
 ## Next steps
-- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Try out more of the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
 
 ## See also
 - [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)

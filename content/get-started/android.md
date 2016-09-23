@@ -171,6 +171,7 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
     ```
 
 2. Add dependencies to the Microsoft Graph SDK and GSON.
+
    ```gradle
     compile 'com.microsoft.graph:msgraph-sdk-android:1.0.0'
     compile 'com.google.code.gson:gson:2.7'
@@ -225,6 +226,7 @@ The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple 
     ```
 
 2. Add a dependency to the Volley HTTP library.
+
    ```gradle
     compile 'com.android.volley:volley:1.0.0'
    ```
