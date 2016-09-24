@@ -1,16 +1,37 @@
 # List messages
 
 Get all the messages in the signed-in user's mailbox (excluding the Deleted Items and Clutter folders). 
+
+In particular, you can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user.
+
+Note that by default, the `GET /me/messages` operation does not return the **mentions** property. Use the `$expand` query parameter 
+to [find details of each mention in a message](../api/message_get.md#request-2).
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.Read; Mail.ReadWrite*
 ## HTTP request
+
+To get all the messages in the user's mailbox:
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<id | userPrincipalName>/messages
 ```
+
+To get all the messages in the user's mailbox that include a **mention** of the signed-in user.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/<id | userPrincipalName>/messages?$filter=mentionsPreview/isMentioned eq true
+```
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+
+You can use the `$filter` query parameter on the **mentionsPreview** property to get those messages that mention
+the signed-in user.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -20,10 +41,10 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [message](../resources/message.md) objects in the response body.
 ## Example
-##### Request
-Here is an example of the request.
+##### Request 1
+The first example gets all the  messages in the signed-in user's mailbox.
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -31,7 +52,7 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/me/messages
 ```
-##### Response
+##### Response 1
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -56,6 +77,71 @@ Content-length: 317
         "content": "content-value"
       },
       "bodyPreview": "bodyPreview-value"
+    }
+  ]
+}
+```
+
+
+##### Request 2
+The next example filters all messages in the signed-in user's mailbox for those that mention the user. It uses `$select` 
+to return a subset of the properties of each message in the response. 
+
+The example also incorporates URL encoding for the space characters in the query parameter string.
+<!-- {
+  "blockType": "request",
+  "name": "get_messages_with_mentions"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMentioned%20eq%20true&$select=Subject,Sender,ReceivedDateTime,MentionsPreview
+```
+##### Response 2
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 987
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages(subject,sender,receivedDateTime,mentionsPreview)",
+  "value":[
+    {
+      "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages('AQMkADJmMTUAAAgVZAAAA')",
+      "@odata.etag":"W/\"CQAAABYAAAAPFhK2FclcRbABBJhCde8iAAAAAATI\"",
+      "id":"AQMkADJmMTUAAAgVZAAAA",
+      "receivedDateTime":"2016-07-21T07:40:21Z",
+      "subject":"Re: Start planning soon",
+      "sender":{
+        "emailAddress":{
+          "name":"Randi Welch",
+          "address":"randiw@contoso.onmicrosoft.com"
+        }
+      },
+      "mentionsPreview":{
+        "isMentioned":true
+      }
+    },
+    {
+      "@odata.id":"https://graph.microsoft.com/beta/Users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/Messages('AQMkADJmMTUAAAjwVAAAA')",
+      "@odata.etag":"W/\"CQAAABYAAAAPFhK2FclcRbABBJhCde8iAAAAAEGj\"",
+      "id":"AQMkADJmMTUAAAjwVAAAA",
+      "receivedDateTime":"2016-07-21T07:40:20Z",
+      "subject":"Re: Start planning soon",
+      "sender":{
+        "emailAddress":{
+          "name":"Randi Welch",
+          "address":"randiw@contoso.onmicrosoft.com"
+        }
+      },
+      "mentionsPreview":{
+        "isMentioned":true
+      }
     }
   ]
 }
