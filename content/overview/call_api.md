@@ -23,7 +23,7 @@ For this URL:
   - The alias `me`, which resolves to the signed-in user
    - The resources belonging to a user, such as `me/events`, `me/drive` or `me/messages`
   - The alias `myOrganization`, which resolves to the tenant of the organization signed-in user
-- `[query_parameters]` represents additional query parameters such as `filter` and `select`.
+- `[query_parameters]` represents additional query parameters such as `$filter` and `$select`.
 
 Optionally, you can also specify the tenant as part of your request.
 When using `me`, do not specify the tenant.
@@ -89,7 +89,7 @@ To retrieve only the user's biographical data, such as the user's provided _Abou
 For example:
 
 ```no-highlight 
-GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?select=displayName,aboutMe,skills HTTP/1.1
+GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
@@ -194,7 +194,7 @@ In addition to projection from a single entity to its properties, you can also a
 For example, to query the name of the signed-in user's drive items, you can submit the following HTTPS GET request:
 
 ```no-highlight 
-GET https://graph.microsoft.com/v1.0/me/drive/root/children?select=name HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
@@ -226,7 +226,7 @@ An example is shown as follows:
 
     
 ```no-highlight 
-GET https://graph.microsoft.com/v1.0/users/?filter=jobTitle+eq+%27Helper%27 HTTP/1.1
+GET https://graph.microsoft.com/v1.0/users/?$filter=jobTitle+eq+%27Helper%27 HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 

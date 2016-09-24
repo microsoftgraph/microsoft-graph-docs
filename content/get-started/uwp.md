@@ -1,10 +1,10 @@
-# Call Microsoft Graph in a universal Windows 10 app
+# Get started with Microsoft Graph in a universal Windows 10 app
 
 > **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors. 
 
 > To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure Management Portal](https://aka.ms/aadapplist). For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](../authorization/auth_overview.md#deciding-between-azure-ad-and-the-v2-authentication-endpoint).
 
-This article describes the tasks required to get an access token from the [v2.0 authentication endpoint](https://graph.microsoft.io/en-us/docs/authorization/converged_auth) and call Microsoft Graph. It walks you through the code inside the [Microsoft Graph Connect Sample for UWP (REST)](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample) and [Microsoft Graph Connect Sample for UWP (Library)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) samples to explain the main concepts that you have to implement in an app that uses Microsoft Graph. The article also describes how to access Microsoft Graph by using both raw REST calls and the [Microsoft Graph Client Library](http://www.nuget.org/packages/Microsoft.Graph/).
+This article describes the tasks required to get an access token from the [Azure AD v2.0 endpoint](https://graph.microsoft.io/en-us/docs/authorization/converged_auth) and call Microsoft Graph. It walks you through the code inside the [Microsoft Graph Connect Sample for UWP (REST)](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample) and [Microsoft Graph Connect Sample for UWP (Library)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) samples to explain the main concepts that you have to implement in an app that uses Microsoft Graph. The article also describes how to access Microsoft Graph by using both raw REST calls and the [Microsoft Graph Client Library](http://www.nuget.org/packages/Microsoft.Graph/).
 
 You can download both versions of the app that you'll create in this walkthrough from these GitHub repos:
 
@@ -31,7 +31,7 @@ All of the sample's UI strings are stored in the Resources.resw file inside the 
 
 To get started, you'll need: 
 
-- A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)
+- A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
 - Visual Studio 2015 
 - Either the [Microsoft Graph Starter Project for UWP (Library)](https://github.com/microsoftgraph/uwp-csharp-connect-sample/tree/master/starter) or the [Microsoft Graph Starter Project for UWP (REST)](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/master/starter). Both templates contain empty classes that you'll add code to. They also contains resource strings. To get either or both of these projects, clone or download the [Microsoft Graph Connect Sample for UWP (Library)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) and/or the [Microsoft Graph Connect Sample for UWP (REST)](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample) and then open the solution inside the **starter** folder.
 
@@ -69,7 +69,7 @@ To get started, you'll need:
 
 ## Install the Microsoft Authentication Library (MSAL)
 
-The [Microsoft Authentication Library](https://www.nuget.org/packages/Microsoft.Identity.Client) contains classes and methods that make it easy to authenticate users through the v2.0 authentication endpoint.
+The [Microsoft Authentication Library](https://www.nuget.org/packages/Microsoft.Identity.Client) contains classes and methods that make it easy to authenticate users through the Azure AD v2.0 endpoint.
 
 1. In the Solution Explorer, right-click the project name and select **Manage NuGet Packages...**
 2. Click Browse and search for Microsoft.Identity.Client.
@@ -120,7 +120,7 @@ using Microsoft.Identity.Client;
 Both versions of the AuthenticationHelper class will need these fields:
 
 ```c#
-// The Client ID is used by the application to uniquely identify itself to the v2.0 authentication endpoint.
+// The Client ID is used by the application to uniquely identify itself to the Azure AD v2.0 endpoint.
 static string clientId = App.Current.Resources["ida:ClientID"].ToString();
 public static string[] Scopes = { "User.Read", "Mail.Send" };
 public static PublicClientApplication IdentityClientApp = new PublicClientApplication(clientId);

@@ -1,22 +1,20 @@
-# Getting started with SharePoint sites using Microsoft Graph API
+# Working with SharePoint sites in Microsoft Graph
 
-**Note:** this functionality is an early developer preview and is only available through the Microsoft Graph API **beta** endpoint.
+>**Note:** this functionality is an early developer preview and is only available through the Microsoft Graph API **beta** endpoint.
 The API design is likely to change as we incorporate feedback from developers.
 
-## Core scenarios supported in this beta
+The SharePoint API in Microsoft Graph supports the following core scenarios:
 
 * Access to SharePoint **sites**, **lists**, and **drives** (via document libraries)
 * Read-only support for **site** and **list** resources (no ability create new sites or lists)
 * Read-write support for **listItems** and **driveItems**
 * Address resources by SharePoint ID, URL, or relative path
 
-## Overview
-
 The SharePoint API exposes three major resource types:
 
-* [Site][] _(top-level object)_
-* [List][]
-* [ListItem][]
+* [Site](site.md) _(top-level object)_
+* [List](list.md)
+* [ListItem](listitem.md)
 
 The following is an example of a listItem resource.
 
@@ -66,36 +64,35 @@ For efficiency, we recommend that you specify _select_ and _expand_ to only retu
 
 ## SharePoint API root resources
 
-The main entrypoint for SharePoint data is the **sharepoint** reference under the root.
-All examples below are relative to `https://graph.microsoft.com/beta`:
+The main entry point for SharePoint data is the **sharePoint** reference under the root. The following examples are relative to `https://graph.microsoft.com/beta`.
 
 | Path                                              | Resource
 |:--------------------------------------------------|:-------------------------
-| /sharepoint/site                                  | Organization's default [site][]
-| /sharepoint/sites                                 | Enumerates sites in the organization. **Note: Beta currently only returns the default site**
-| /sharepoint/sites/{site-id}                       | Access a specific [site][] by its ID.
-| /sharepoint/sites/{site-id}/sites                 | Enumerate the sub-sites under the [site][].
-| /sharepoint/sites/{site-id}/lists                 | Enumerate the [lists][list] under the [site][].
-| /sharepoint/sites/{site-id}/lists/{list-id}/items | Enumerate the [listItems][listItem] under the [list][].
-| /sharepoint/sites/{site-id}/drives                | Enumerate the [drives][drive] (document libraries) under the [site][].
+| /sharePoint/site                                  | Organization's default [site](site.md).
+| /sharePoint/sites                                 | Enumerates sites in the organization. **Note: Beta currently only returns the default site**
+| /sharePoint/sites/{site-id}                       | Access a specific [site](site.md) by its ID.
+| /sharePoint/sites/{site-id}/sites                 | Enumerate the sub-sites under the [site](site.md).
+| /sharePoint/sites/{site-id}/lists                 | Enumerate the [lists](list.md) under the [site](site.md).
+| /sharePoint/sites/{site-id}/lists/{list-id}/items | Enumerate the [listItems](listitem.md) under the [list](list.md).
+| /sharePoint/sites/{site-id}/drives                | Enumerate the [drives](drive.md) (document libraries) under the [site](site.md).
 
 Items can also be addressed by path by putting a colon after the **sharepoint** segment, followed by the path to the item.
-You may optionally transition back to addressing the resource model by putting another colon at the end.
+You can optionally transition back to addressing the resource model by putting another colon at the end.
 
 | Path                                               | Resource
 |:---------------------------------------------------|:------------------------
-| /sharepoint:/teams/hr                              | The site associated with https://contoso.sharepoint.com/teams/hr
-| /sharepoint:/teams/hr/Lists/Employees              | The list associated with https://contoso.sharepoint.com/teams/hr/Lists/Employees
-| /sharepoint:/teams/hr:/lists/{list-id}             | Addressing the same list by ID.
-| /sharepoint:/teams/hr/Documents/NewHireGuide.docx  | The file associated with https://contoso.sharepoint.com/teams/hr/Documents/NewHireGuide.docx
+| /sharePoint:/teams/hr                              | The site associated with https://contoso.sharepoint.com/teams/hr
+| /sharePoint:/teams/hr/Lists/Employees              | The list associated with https://contoso.sharepoint.com/teams/hr/Lists/Employees
+| /sharePoint:/teams/hr:/lists/{list-id}             | Addressing the same list by ID.
+| /sharePoint:/teams/hr/Documents/NewHireGuide.docx  | The file associated with https://contoso.sharepoint.com/teams/hr/Documents/NewHireGuide.docx
 
 
-### Note for existing SharePoint developers
+## Note for existing SharePoint developers
 
 The Microsoft Graph SharePoint API has a few key differences with the existing CSOM APIs.
-The [site][] resource maps to `SPWeb`.
-The root [site][] (`SPWeb`) in a site collection has a [siteCollection][] facet, which contains information about the `SPSite`.
-Since IDs for sites are only unique within their site collection, addressing a site by ID requires providing both the site collection identifier and the site identifier.
+The [site](site.md) resource maps to `SPWeb`.
+The root [site](site.md) (`SPWeb`) in a site collection has a [siteCollection](sitecollection.md) facet, which contains information about the `SPSite`.
+Because IDs for sites are only unique within their site collection, addressing a site by ID requires providing both the site collection identifier and the site identifier.
 
 ```http
 GET https://graph.microsoft.com/beta/sharepoint/sites/{spsite-id},{spweb-id}/

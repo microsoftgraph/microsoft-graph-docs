@@ -1,4 +1,4 @@
-
+﻿
 # Microsoft Graph app authentication using Azure AD
 
 This article presents a detailed look at an example authentication and authorization flow for a Microsoft Graph app. This example uses Azure Active Directory (Azure AD) and the authentication provider, and the <a href="https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx" target="_newtab">Authorization Code Grant Flow</a> as the auth flow. This example will show you how to use Azure AD in a Microsoft Graph app to authenticate a user, get an access token, and renew an access token using a refresh token.
@@ -8,11 +8,11 @@ For code grant flows, the authentication process can be broken down to two basic
 1. Request an authorization code
 2. Use authorization code to request an access token and refresh token. 
 
->  **Note**: You can use the refresh token to acquire a new access token when the current access token expires.
+You can use the refresh token to acquire a new access token when the current access token expires.
  
 ##Authenticate a user and get app authorized
 
-To get your app authorized, you must get the user authenticated first. You do this by redirecting the user to the Azure Active Directory (Azure AD) authorization endpoint, along with your app information, to sign in to their Office 365 account. Once the user is signed in, and consents to 
+To get your app authorized, you must get the user authenticated first. You do this by redirecting the user to the Azure Active Directory (Azure AD) authorization endpoint, along with your app information, to sign in to their work or school account. Once the user is signed in, and consents to 
 the permissions requested by your app (if the user has not done so already), your app will receive an authorization code required to acquire an OAuth access token.
 
 > **Note**:  You can do this by calling methods on the [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/azure/jj573266.aspx). For more information about authorization flow, see [Authorization Code Grant Flow](https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx).
@@ -193,7 +193,7 @@ are extended. The new expiration time for the access token is the number of seco
 value, from the time when the token-refreshing request was submitted successfully. 
  
 When the refresh token expires, you cannot renew any expired access token using the just-described POST request. 
-Instead, you must restart the [app authorization and authentication](#msg_get_app_authorized) process.
+Instead, you must restart the app authorization and authentication process.
 
 
 

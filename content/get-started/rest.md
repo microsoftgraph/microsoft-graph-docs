@@ -1,77 +1,82 @@
-# Get started with the Microsoft Graph API and REST
+# Get started with Microsoft Graph and REST
 
-This article describes how to call Microsoft Graph to retrieve email messages in Office 365 and Outlook.com. This article focuses on the OAuth and REST requests and responses. It covers the sequence of requests and responses that an app uses to authenticate and retrieve messages.
+This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph using REST calls. It describes the sequence of requests and responses that an app uses to authenticate and retrieve email messages.
 
-## Using OAuth 2.0 to authenticate
+First, you need register your app with Azure Active Directory (Azure AD). 
 
-In order to call Microsoft Graph, your app needs an access token from Azure Active Directory (Azure AD). In the following example the app implements the Authorization Code Grant flow to get the access tokens from Azure AD, following standard [OAuth 2.0 protocols](http://tools.ietf.org/html/rfc6749).
+## Register the application
 
-### Registering an app
+There are currently two options to register your app with Azure AD.
 
-There are currently two options to register your app:
+  - Register an app to use the Azure AD v2.0 endpoint that works for both personal (Microsoft) identities and work and school (Azure AD) accounts.
+  - Register an app to use the Azure AD endpoint that supports work and school accounts only.
 
-  1. Register an app using the model that supports Office 365 commercial users, work or school accounts only.
- 
-  This model only works with Office 365 commercial offerings. Once you've registered your app, you can manage it through the [Azure Management Portal](https://manage.windowsazure.com).
+This article assumes a v2.0 registration, so you'll register your app on the [Application Registration Portal](https://apps.dev.microsoft.com/). Follow the instructions in [Register your Microsoft Graph application with the Azure AD v2.0 endpoint](../authorization/auth_register_app_v2.md) to register your app. For information about using the Azure AD endpoint, see [Authenticate using Azure AD](../authorization/app_authorization.md).
 
-  2. Register using the latest functionality that works for both consumer and commercial Office 365 services (we call it Auth endpoint v2.0).
- 
-  A single authentication service for both work or school and personal accounts is now available. This model provides a single authentication service for both work and school (Azure AD) as well as personal (Microsoft) identities. Now, you only need to implement one authentication flow in your app to enable users to use either work or school accounts, like Office 365 or OneDrive for Business, or personal accounts, like Outlook.com or OneDrive.
-   
-Use the [Application Registration Portal](https://apps.dev.microsoft.com/) to register your app and support both work and school and personal accounts.
+> Some limitations apply when using the v2.0 endpoint. To decide if it's right for you, see [Should I use the v2.0 endpoint?](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
 
-Please note that the v2.0 endpoint is gradually growing to cover all the scenarios from the previous auth endpoint. To choose whether is right for you read [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
+## Authenticate the user and get an access token
 
-After registration, you will get a client ID and secret. These values are used in the Authorization Code Grant flow.
+The app described in this article implements the [Authorization Code Grant flow](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-code/) to get access tokens from the Azure AD v2.0 endpoint, following standard [OAuth 2.0 protocols](http://tools.ietf.org/html/rfc6749). For a complete guide to the flows supported in the Azure AD v2.0 endpoint see [Types of the v2.0 endpoint](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/).
 
-The rest of this document assumes a registration on the v2.0 model. For a complete guide to the flows supported in the v2.0 endpoint see [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/), for a complete guide to the Authorization Code Grant flow see [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-code/)
+With the Authorization Code Grant flow, first you get an authorization code and then you exchange the code for an access token.
 
 ### Getting an authorization code
 
-The first step in the Authorization Code Grant flow is to get an authorization code. That code is returned to the app by the authorization server when the user logs in and consents to the level of access the app requested.
+The first step in the Authorization Code Grant flow is to get an authorization code. The code is returned to the app by the authorization server when the user signs in and consents to the permissions requested by the app.
 
-First, the app constructs a logon URL for the user. This URL must be opened in a browser so that the user can log in and provide consent.
+You request an authorization code by sending a GET request to the Azure AD v2.0 endpoint. This URL must be opened in a browser so that the user can sign in and provide consent.
 
-The base URL for logon looks like `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`.
+#### Construct the request
 
-The app appends query parameters to this base URL to let the auth server know what app is requesting the logon and what permissions it is requesting.
+1- Start with the base URL:
 
-- `client_id` - The client ID generated by registering the app. This lets Azure AD know which app is requesting the logon.
-- `redirect_uri` - The location that Azure will redirect to once the user has granted consent to the app. This value must correspond to the value of **Redirect URI** used when registering the app.
-- `response_type` - The type of response the app is expecting. This value is `code` for the Authorization Code Grant flow.
-- `scope` - A space-separated list of scopes that the app is requesting. More information in [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/)
-- `state` - A value included in the request that will also be returned in the token response.
-
-For example, the request URL for our application that requires read access to mail would look like the following.
-
-```http
-GET https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=<CLIENT ID>&redirect_uri=http%3A%2F%2Flocalhost/myapp%2F&response_type=code&state=1234&scope=https%3A%2F%2Fgraph.microsoft.com%2Fmail.read
+```
+https://login.microsoftonline.com/<tenant>/oauth2/v2.0/authorize
 ```
 
-Next, redirect the user to the logon URL. The user will be presented with a sign in screen that displays the name of the app. After they sign in, the user will be presented with a list of the permissions the app requires and asked to allow or deny. Assuming they allow the required access, the browser will be redirected to the redirect URI specified in the initial request with the authorization code in the query string.
+The *tenant* segment in the path controls who can sign into the application. Allowed values are *common*, *organizations*, *consumers*, and tenant identifiers. For more information, see [Protocol endpoints](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/#endpoints).
 
-```http
+2- Append query parameters to the base URL. These are used to identify the app, the requested permissions, and other auth request information. The following table describes some common parameters.
+
+| Parameter | Descriptions |
+|:------|:------|
+| client_id | The app ID generated by registering the app. This lets Azure AD know which app is requesting the logon. |
+| redirect_uri | The location that Azure will redirect to after the user has granted consent to the app. This value must correspond to the value of **Redirect URI** used when registering the app. |
+| response_type | The type of response the app is expecting. This value is `code` for the Authorization Code Grant flow. |
+| scope | A space-separated list of [Microsoft Graph permission scopes](../authorization/permission_scopes.md) that the app is requesting. You can also specify [OpenId Connect scopes](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes) for [single sign-on](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/).  |
+| state | A value included in the request that will also be returned in the token response, used for validation. |
+
+For example, the request URL for an application that requires read access to mail might look like the following.
+
+```
+GET https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=<app ID>&redirect_uri=http%3A%2F%2Flocalhost/myapp%2F&response_type=code&state=1234&scope=mail.read
+```
+
+3- Redirect the user to the logon URL. The user is presented with a sign in screen that displays the name of the app. After signing in, the user is presented with the list of the permissions the app requires and prompted to allow or deny. If the user consents, the browser redirects to the redirect URI with the authorization code and state in the query string, as shown in the following example.
+
+```
 http://localhost/myapp/?code=AwABAAAA...cZZ6IgAA&state=1234
 ```
-
-If you are also using OpenId Connect for Single Sign On, additional parameters are required, see [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/) for more information. 
 
 The next step is to exchange the authorization code returned for an access token.
 
 ### Getting an access token
 
-To get an access token, the app posts form-encoded parameters to the token request URL (`https://login.microsoftonline.com/common/oauth2/v2.0/token`) with the following parameters.
+To get an access token, the app posts form-encoded parameters to the token request URL (for example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`) with the following parameters.
 
-- `client_id`: The client ID generated by registering the app.
-- `client_secret`: The client secret generated by registering the app.
-- `code`: The authorization code obtained in the prior step.
-- `redirect_uri`: This value must be the same as the value used in the authorization code request.
-- `grant_type`: The type of grant the app is using. This value is `code` for the Authorization Code Grant flow.
-- `scope` - A space-separated list of scopes that the app is requesting. More information in [this article](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/)
+| Parameter | Descriptions |
+|:------|:------|
+| client_id | The app ID generated by registering the app. |
+| client_secret | The app secret generated when registering the app. |
+| code | The authorization code obtained in the prior step. |
+| redirect_uri | This value must be the same as the value used in the authorization code request. |
+| grant_type | The type of grant the app is using. This value is `code` for the Authorization Code Grant flow. |
+| scope | A space-separated list of [Microsoft Graph permission scopes](../authorization/permission_scopes.md) that the app is requesting. |
 
-The request URL for our application, using the code from the previous step, would look like the following.
+The request URL for our application, using the code from the previous step, looks like the following.
 
-```http
+```
 POST https://login.microsoftonline.com/common/oauth2/v2.0/token
 Content-Type: application/x-www-form-urlencoded
 
@@ -80,15 +85,15 @@ Content-Type: application/x-www-form-urlencoded
   &code=AwABAAAA...cZZ6IgAA
   &redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
   &resource=https%3A%2F%2Fgraph.microsoft.com%2F
-  &scope=https%3A%2F%2Fgraph.microsoft.com%2Fmail.read
-  &client\_id=<CLIENT ID>
-  &client\_secret=<CLIENT SECRET>
+  &scope=mail.read
+  &client\_id=<app ID>
+  &client\_secret=<app SECRET>
 }
 ```
 
 The server responds with a JSON payload which includes the access token.
 
-```http
+```
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 
@@ -103,11 +108,11 @@ Content-Type: application/json; charset=utf-8
 
 The access token is found in the `access_token` field of the JSON payload. The app uses this value to set the Authorization header when making REST calls to the API.
 
-## Calling Microsoft Graph
+## Call Microsoft Graph
 
 After the app has an access token, it's ready to call Microsoft Graph. Because this sample app is retrieving messages, it will use an HTTP GET request to the `https://graph.microsoft.com/v1.0/me/messages` endpoint.
 
-### Refining the request
+### Refine the request
 
 Apps can control the behavior of GET requests by using OData query parameters. We recommend that apps use these parameters to limit the number of results that are returned and to limit the fields that are returned for each item. 
 
@@ -119,7 +124,7 @@ This sample app will display messages in a table that shows the subject, sender,
 
 This results in the following request.
 
-```http
+```
 GET https://graph.microsoft.com/v1.0/me/messages?$select=subject,from,receivedDateTime&$top=25&$orderby=receivedDateTime%20DESC
 Accept: application/json
 Authorization: Bearer eyJ0eXAi...b66LoPVA
@@ -127,4 +132,9 @@ Authorization: Bearer eyJ0eXAi...b66LoPVA
 
 Now that you've seen how to make calls to Microsoft Graph, you can use the API reference to construct any other kinds of calls your app needs to make. However, bear in mind that your app needs to have the appropriate permissions configured on the app registration for the calls it makes.
 
+## Next steps
+- Try out more of the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
 
+## See also
+- [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

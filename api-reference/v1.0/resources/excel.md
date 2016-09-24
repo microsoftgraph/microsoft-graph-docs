@@ -1,6 +1,6 @@
-# Excel resource type
+# Working with Excel in Microsoft Graph
 
-You can use the Excel resource to allow web and mobile applications to read and modify workbooks stored in OneDrive, SharePoint, or other supported storage platforms. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the [Drive API](drive.md) by identifying the location of the file in the URL. For example:
+You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive, SharePoint, or other supported storage platforms. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the [Drive API](drive.md) by identifying the location of the file in the URL. For example:
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
@@ -12,9 +12,9 @@ returns a collection of worksheet objects that are part of the workbook.
 
 ## Authorization and scopes
 
-You can use the [Azure AD v.20 endpoint](../../content/authorization/converged_auth) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
+You can use the [Azure AD v.20 endpoint](../../../content/authorization/converged_auth.md) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
   
-One of the following [permission scopes](../../content/authorization/permission_scoped.md) is required to use the Excel resource:
+One of the following [permission scopes](../../../content/authorization/permission_scopes.md) is required to use the Excel resource:
 
 * Files.Read 
 * Files.ReadWrite
@@ -74,7 +74,6 @@ GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksh
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
-[top](#excel-rest-api)
 
 ## Common Excel scenarios
 
@@ -195,7 +194,6 @@ content-type: application/json;odata.metadata
   "visibility": "Visible"
 }
 ```
-[top](#excel-rest-api)
 
 ### Chart operations
 
@@ -289,7 +287,7 @@ content-type: application/json;odata.metadata
 
 #### Update a chart
 
-`<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "ignored" } -->
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')
 content-type: Application/Json 
@@ -775,8 +773,6 @@ Response
 HTTP code: 204, No Content
 ```
 
-[top](#excel-rest-api)
-
 ### Range operations
 
 #### Get Range 
@@ -1009,7 +1005,6 @@ Response
 HTTP code: 204, No Content
 ```
 
-[top](#excel-rest-api)
 
 ### Named items
 Request
@@ -1104,7 +1099,7 @@ For example, a Range can consist of one or more cells. In cases where the indivi
   "color" : null
 }
 ```
-[top](#excel-rest-api)
+
 
 ### Blank input and output
 
@@ -1132,7 +1127,7 @@ For read operations, expect to receive blank values if the contents of the cells
   "formula" : [["", "", "=Rand()"]]
 }
 ```
-[top](#excel-rest-api)
+
 
 ### Unbounded Range
 
@@ -1248,4 +1243,4 @@ Content-Type: application/json
   }
 }
 ```
-[top](#excel-rest-api)
+

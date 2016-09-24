@@ -4,7 +4,7 @@
 
 > To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure Management Portal](https://aka.ms/aadapplist). For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](../auth_overview.md#deciding-between-azure-ad-and-the-v2-authentication-endpoint).
 
-This article describes the tasks required to get an access token from the v2.0 authentication endpoint and call Microsoft Graph. It walks you through building the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) and explains the main concepts that you implement to use Microsoft Graph in your app for Android. The article also describes how to access Microsoft Graph by using either the [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-sdk-android) or raw REST calls.
+This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph. It walks you through building the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) and explains the main concepts that you implement to use Microsoft Graph in your app for Android. The article also describes how to access Microsoft Graph by using either the [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-sdk-android) or raw REST calls.
 
 To use Microsoft Graph in your app for Android, you need to show the Microsoft sign in page to your users, as shown in the following screenshot.
 
@@ -17,7 +17,7 @@ To use Microsoft Graph in your app for Android, you need to show the Microsoft s
 
 To get started, you'll need: 
 
-- A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](http://dev.office.com/devprogram)
+- A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
 - Android Studio 2.0 or later version
 
 
@@ -30,7 +30,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 3. Enter a name for the app, and choose **Create application**. 
 	
-   The registration page displays, listing the properties of your app.
+	The registration page displays, listing the properties of your app.
 
 4. Copy the application ID. This is the unique identifier for your app. 
 
@@ -171,10 +171,10 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
     ```
 
 2. Add dependencies to the Microsoft Graph SDK and GSON.
-   ```gradle
+    ```gradle
     compile 'com.microsoft.graph:msgraph-sdk-android:1.0.0'
     compile 'com.google.code.gson:gson:2.7'
-   ```
+    ```
    
 3. Replace the line `String accessToken = tokenResponse.accessToken;` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
     ```java
@@ -225,9 +225,10 @@ The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple 
     ```
 
 2. Add a dependency to the Volley HTTP library.
-   ```gradle
+
+    ```gradle
     compile 'com.android.volley:volley:1.0.0'
-   ```
+    ```
    
 3. Replace the line `String accessToken = tokenResponse.accessToken;` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
     ```java
