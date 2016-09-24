@@ -115,6 +115,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
 |photos|[Photo](photo.md) collection| Read-only. Nullable.|
 |plans|[plan](plan.md) collection| Read-only. Nullable. Plans shared with the user. |
+|sharepoint|[sharepoint](sharepoint.md)| Access to the user's SharePoint site. Read-only. |
 |scopedAdministratorOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role adminstrative unit memberships for this user. Read-only. Nullable.|
 |tasks|[task](task.md) collection| Read-only. Nullable. Tasks assigned to the user. |
 |trendingAround|[driveItem](driveitem.md) collection| Read-only. Nullable.|
@@ -149,7 +150,8 @@ Here is a JSON representation of the resource
     "ownedDevices",
     "ownedObjects",
     "photo",
-    "registeredDevices"
+    "registeredDevices",
+    "sharepoint"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.user"
@@ -218,7 +220,8 @@ Here is a JSON representation of the resource
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "sharepoint": { "@odata.type": "microsoft.graph.sharepoint" }
 }
 
 ```
