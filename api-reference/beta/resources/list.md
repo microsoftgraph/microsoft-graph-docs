@@ -6,15 +6,20 @@ This resource contains the top level properties of the list, including template 
 ## Tasks on a list
 
 The following tasks are available for list resources.
+**Note:** This beta only allows navigating lists, not creating or updating them.
+You can, however, create or update [list items][listItem].
+
 All examples below are relative to a site, eg: `https://graph.microsoft.com/beta/sharepoint/sites/{site-id}`.
 
 | Common task              | HTTP method
 |:-------------------------|:------------------------------
+| [Get list][]             | GET /lists/{list-id}
 | [Enumerate list items][] | GET /lists/{list-id}/items
 | [Update list item][]     | PATCH /lists/{list-id}/items/{item-id}
 | [Delete list item][]     | DELETE /lists/{list-id}/items/{item-id}
 | [Create list item][]     | POST /lists/{list-id}
 
+[Get list]: ../api/list_get.md
 [Enumerate list items]: ../api/listItems_list.md
 [Update list item]: ../api/listItem_update.md
 [Delete list item]: ../api/listItem_delete.md

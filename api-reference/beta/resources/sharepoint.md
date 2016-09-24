@@ -64,27 +64,27 @@ For efficiency, we recommend that you specify _select_ and _expand_ to only retu
 
 ## SharePoint API root resources
 
-The main entry point for SharePoint data is the **sharepoint** reference under the root. The following examples are relative to `https://graph.microsoft.com/beta`.
+The main entry point for SharePoint data is the **sharePoint** reference under the root. The following examples are relative to `https://graph.microsoft.com/beta`.
 
 | Path                                              | Resource
 |:--------------------------------------------------|:-------------------------
-| /sharepoint/site                                  | Organization's default [site](site.md).
-| /sharepoint/sites                                 | Enumerates sites in the organization. **Note: Beta currently only returns the default site**
-| /sharepoint/sites/{site-id}                       | Access a specific [site](site.md) by its ID.
-| /sharepoint/sites/{site-id}/sites                 | Enumerate the sub-sites under the [site](site.md).
-| /sharepoint/sites/{site-id}/lists                 | Enumerate the [lists](list.md) under the [site](site.md).
-| /sharepoint/sites/{site-id}/lists/{list-id}/items | Enumerate the [listItems](listitem.md) under the [list](list.md).
-| /sharepoint/sites/{site-id}/drives                | Enumerate the [drives](drive.md) (document libraries) under the [site](site.md).
+| /sharePoint/site                                  | Organization's default [site](site.md).
+| /sharePoint/sites                                 | Enumerates sites in the organization. **Note: Beta currently only returns the default site**
+| /sharePoint/sites/{site-id}                       | Access a specific [site](site.md) by its ID.
+| /sharePoint/sites/{site-id}/sites                 | Enumerate the sub-sites under the [site](site.md).
+| /sharePoint/sites/{site-id}/lists                 | Enumerate the [lists](list.md) under the [site](site.md).
+| /sharePoint/sites/{site-id}/lists/{list-id}/items | Enumerate the [listItems](listitem.md) under the [list](list.md).
+| /sharePoint/sites/{site-id}/drives                | Enumerate the [drives](drive.md) (document libraries) under the [site](site.md).
 
 Items can also be addressed by path by putting a colon after the **sharepoint** segment, followed by the path to the item.
 You can optionally transition back to addressing the resource model by putting another colon at the end.
 
 | Path                                               | Resource
 |:---------------------------------------------------|:------------------------
-| /sharepoint:/teams/hr                              | The site associated with https://contoso.sharepoint.com/teams/hr
-| /sharepoint:/teams/hr/Lists/Employees              | The list associated with https://contoso.sharepoint.com/teams/hr/Lists/Employees
-| /sharepoint:/teams/hr:/lists/{list-id}             | Addressing the same list by ID.
-| /sharepoint:/teams/hr/Documents/NewHireGuide.docx  | The file associated with https://contoso.sharepoint.com/teams/hr/Documents/NewHireGuide.docx
+| /sharePoint:/teams/hr                              | The site associated with https://contoso.sharepoint.com/teams/hr
+| /sharePoint:/teams/hr/Lists/Employees              | The list associated with https://contoso.sharepoint.com/teams/hr/Lists/Employees
+| /sharePoint:/teams/hr:/lists/{list-id}             | Addressing the same list by ID.
+| /sharePoint:/teams/hr/Documents/NewHireGuide.docx  | The file associated with https://contoso.sharepoint.com/teams/hr/Documents/NewHireGuide.docx
 
 
 ## Note for existing SharePoint developers
