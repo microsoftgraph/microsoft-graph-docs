@@ -5,14 +5,13 @@ Exchange 2016 Cumulative Update 3 (CU3) includes support for REST API integratio
 this means a seamless authentication and application experience regardless of customer mailbox location in the hybrid deployment, online or on-premises. 
 Apps can now access v1.0 of the Microsoft Graph [Mail](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/message), [Calendar](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/calendar) and [Contacts](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contact) API. 
 
-Beneath the covers, when Microsoft Graph identifies a REST API call is attempting to access an on-premises mailbox in a hybrid deployment, it redirects the REST 
+Beneath the covers, when Microsoft Graph identifies a REST API call is attempting to access an on-premises mailbox in a hybrid deployment, it proxies the REST 
 request to an on-premises REST endpoint to continue processing the request. This discovery makes REST API support possible, and is only available if 
 you use the https://graph.microsoft.com/v1.0 REST API endpoint.
 
 At this point, the capability to use v1.0 REST API to access mailboxes in a hybrid deployment is only in preview. Among other v1.0 API, 
 the [Groups](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/group) API is not yet supported for mailboxes in such deployments. 
-Versions other than v1.0 are not supported either. You will get the following error if you attempt to use the REST API on an unsupported mailbox, 
-or, if you attempt to use APIs other than the supported sets (v1.0 of Mail, Calendar or Contacts) on a hybrid deployment:
+Versions other than v1.0 are not supported either. You will get the following error message if you attempt to use APIs other than the supported sets (v1.0 of Mail, Calendar or Contacts) on a supported hybrid deployment:
 
 "REST APIs for this mailbox are currently in preview. You can find more information about the preview REST APIs at https://dev.outlook.com."
 
@@ -22,7 +21,7 @@ If your organization is interested in enabling such app development and is curre
 
 - Mailbox requirements
 
-  - All on-premises mailboxes that will utilize the REST APIs must be located on databases residing on Exchange 2016 servers. 
+  - All on-premises mailboxes that will utilize the REST APIs must be located on databases residing on Exchange 2016 CU3 servers. 
 
 - Infrastructure requirements
 
