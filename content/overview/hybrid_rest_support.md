@@ -1,17 +1,16 @@
 # Use REST APIs to access mailboxes in Exchange hybrid deployments (preview)
 
-Prior to September 2016, Microsoft Graph provided access to customer mailboxes in Exchange Online as part of Office 365 only.
-Exchange 2016 Cumulative Update 3 (CU3) includes support for REST API integration with Office 365. For Microsoft Graph app developers, 
+Previously, Microsoft Graph provided access to customer mailboxes in Exchange Online as part of Office 365 only.
+Exchange 2016 Cumulative Update 3 (CU3), released in September 2016, includes support for REST API integration with Office 365. For Microsoft Graph app developers, 
 this means a seamless authentication and application experience, regardless of whether customer mailboxes in a hybrid deployment are  online or on-premises. 
 
-Apps can now access [Mail](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/message), [Calendar](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/calendar), and [Contacts](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contact) APIs in the Microsoft Graph v1.0 endpoint. 
+Microsoft Graph apps can now access [Mail](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/message), [Calendar](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/calendar), and [Contacts](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contact) APIs in the Microsoft Graph v1.0 endpoint. When Microsoft Graph identifies that a REST API call is attempting to access an on-premises mailbox in a hybrid deployment, it proxies the REST 
+request to an on-premises REST endpoint. This discovery makes REST API support possible.
 
 >**Note:** Some APIs that are available in the Microsoft Graph v1.0 endpoint, such as [Groups](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/group), are not supported for mailboxes in hybrid deployments. If you use an API or an endpoint that is not supported, you will get the following error message:
 
 >"REST APIs for this mailbox are currently in preview. You can find more information about the preview REST APIs at https://dev.outlook.com."
 
-Beneath the covers, when Microsoft Graph identifies that a REST API call is attempting to access an on-premises mailbox in a hybrid deployment, it proxies the REST 
-request to an on-premises REST endpoint. This discovery makes REST API support possible.
 
 Microsoft Graph provides openness (open standards support like JSON, OAUTH and ODATA, connecting from most popluar platforms)
 and flexibility (granular, tightly scoped permissions to access user data). 
