@@ -4,7 +4,7 @@ Use this API to create a new User.
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
-*Directory.ReadWrite*
+*Directory.ReadWrite.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -35,7 +35,7 @@ If successful, this method returns `201, Created` response code and [user](../re
 
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "create_user_from_users"
@@ -57,7 +57,7 @@ Content-type: application/json
 ```
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,7 +79,7 @@ Content-type: application/json
     "officeLocation": null,
     "preferredLanguage": null,
     "surname": null,
-    "userPrincipalName": "upn-value@tenant-value@onmicrosoft.com"
+    "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
 }
 ```
 

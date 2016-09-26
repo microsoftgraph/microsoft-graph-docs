@@ -1,9 +1,9 @@
 # Delete user
 
-Delete user.
+Delete a user.
 ## Prerequisites
 One of the following **scopes** is required to execute this API: 
-*Directory.ReadWrite.All*
+*Directory.AccessAsUser.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -24,16 +24,16 @@ If successful, this method returns `204, No Content` response code. It does not 
 
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_user"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me
+DELETE https://graph.microsoft.com/v1.0/ba9a3254-9f18-4209-aeb3-9e42a35b5be4
 ```
 ##### Response
-Here is an example of the response. 
+
 <!-- {
   "blockType": "response",
   "truncated": true
