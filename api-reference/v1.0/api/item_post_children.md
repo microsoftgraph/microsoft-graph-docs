@@ -1,6 +1,6 @@
-# Create an item in a collection
+# Create a new folder
 
-Use this API to create a new item in a collection.
+Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,85 +10,73 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /drive/root/children
-POST /drive/items/<id>/children
-POST /drives/<id>/root/children
-
+POST /me/drive/root/children
+POST /me/drive/items/{parent-item-id}/children
+POST /drives/{drive-id}/items/{parent-item-id}/children
+POST /groups/{group-id}/drive/items/{parent-item-id}/children
 ```
 
-## Request headers
-
-| Name          | Type   | Description               |
-|:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer <token>. Required. |
-
-
 ## Request body
-In the request body, supply a JSON representation of [item](../resources/driveitem.md) object.
+In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.
 
 
 ## Response
-If successful, this method returns `201, Created` response code and [item](../resources/driveitem.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.
 
 ## Example
+
 ##### Request
-Here is an example of the request.
+Here is an example of the request to create a new folder in the user's OneDrive root.
+
 <!-- {
   "blockType": "request",
   "name": "create_item_from_item"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root
+POST https://graph.microsoft.com/v1.0/me/drive/root/children
 Content-Type: application/json
 
 {
-  "name": "test-folder",
+  "name": "New Folder",
   "folder": { }
 }
 ```
 
 ##### Response
+
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.driveItem"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
   "createdBy": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
     "user": {
-      "displayName": "displayName-value",
-      "id": "id-value"
+      "displayName": "Ryan Gregg",
+      "id": "309EC495-3E92-431D-9124-F0299633171D"
     }
   },
-  "createdDateTime": "datetime-value",
-  "cTag": "cTag-value",
-  "eTag": "eTag-value",
-  "id": "id-value",
+  "createdDateTime": "20160920T14:34:00Z",
+  "eTag": "343F1FBD-E9B3-4DDE-BCA7-D61AEAFF44E5,1",
+  "id": "ACEA49D1-1444-45A9-A1CB-68B1B28AE491",
   "lastModifiedBy": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
     "user": {
-      "displayName": "displayName-value",
-      "id": "id-value"
+      "displayName": "Ryan Gregg",
+      "id": "309EC495-3E92-431D-9124-F0299633171D"
     }
   },
-  "lastModifiedDateTime": "datetime-value",
-  "name": "name-value",
+  "lastModifiedDateTime": "20160920T14:34:00Z",
+  "name": "New Folder",
   "parentReference": {
-    "driveId": "driveId-value",
-    "id": "id-value",
-    "path": "path-value"
+    "driveId": "5FE38E3C-051C-4D55-9B83-8A437658275B",
+    "id": "E67A8F34-B0AA-46E1-8FF7-0750A29553DF",
+    "path": "/drive/root:/"
   },
   "size": 0,
   "folder": {

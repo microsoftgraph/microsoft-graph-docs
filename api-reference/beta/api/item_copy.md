@@ -1,7 +1,6 @@
-# Copy a driveItem to a new location
+# Copy a DriveItem
 
-Creates a copy of a [driveItem](../resources/driveitem.md) (including any
-children), under a new parent or with a new name.
+Creates a copy of a [driveItem](../resources/driveitem.md) (including any children) under a new parent or with a new name.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -12,16 +11,10 @@ One of the following **scopes** is required to execute this API:
 
 <!-- { "blockType": "ignored" } -->
 ```
-POST /me/drive/items/<id>/copy
-POST /me/drive/root:/<path>:/copy
-POST /groups/<id>/drive/items/<id>/copy
+POST /me/drive/items/{item-id}/copy
+POST /me/drive/root:/{path}:/copy
+POST /groups/{group-id}/drive/items/{item-id}/copy
 ```
-
-## Request headers
-
-| Name          | Type   | Description                                                                                                                                                                                       |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Authorization | string | Bearer <token>. Required.                                                                                                                                                                         |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -32,22 +25,21 @@ In the request body, provide a JSON object with the following parameters.
 | parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy will be created in.                                         |
 | name            | string                                         | Optional. The new name for the copy. If this isn't provided, the same name will be used as the original.    |
 
-**Note:** The _parentReference_ should include either an `id` or `path` but not
-both. If both are included, they need to reference the same item or an error
-will occur.
+**Note:** The _parentReference_ should include either an `id` or `path` but not both. 
+If both are included, they need to reference the same item or an error will occur.
 
 ## Example
 
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite" } -->
 ```http
-POST /me/drive/items/{item-id}/copy
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
 Content-Type: application/json
 
 {
   "parentReference": {
     "path": "/drive/root:/Documents"
   },
-  "name": "foobar.txt"
+  "name": "contoso plan.docx"
 }
 ```
 
@@ -62,10 +54,10 @@ HTTP/1.1 202 Accepted
 
 ## Remarks
 
-Copy is completed asynchronously. The response from the API will only indicate
-that the copy operation was accepted or rejected, say due to the destination
-filename already being in use. However, there is not a way to know when the
-copy action has completed.
+In many cases the copy action is performed asynchronously.
+The response from the API will only indicate that the copy operation was accepted or rejected, say due to the destination filename already being in use.
+
+**Note:** The API does not provide a method to know if the copy was s
 
 <!-- {
   "type": "#page.annotation",

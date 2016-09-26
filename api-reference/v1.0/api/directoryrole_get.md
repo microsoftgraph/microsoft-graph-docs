@@ -1,6 +1,7 @@
 # Get directoryRole
 
-Retrieve the properties of a directoryrole object.
+Retrieve the properties of a directoryRole object.
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ## HTTP request
@@ -21,7 +22,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [directoryRole](../resources/directoryrole.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_directoryrole"
@@ -30,7 +31,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/directoryRoles/<id>
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -39,7 +40,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 142
 
 {
   "description": "description-value",

@@ -1,6 +1,6 @@
 # List items shared with the signed-in user
 
-List the set of items that are shared with the current user.
+Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -14,12 +14,6 @@ One of the following **scopes** is required to execute this API:
 GET /me/drive/sharedWithMe
 ```
 
-## Request headers
-
-| Name          | Type   | Description                                                                                                                                                                                       |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Authorization | string | Bearer <token>. Required.                                                                                                                                                                         |
-
 ## Request body
 Do not supply a request body for this method.
 
@@ -27,13 +21,13 @@ Do not supply a request body for this method.
 
 <!-- { "blockType": "request", "name": "drive-sharedwithme", "scopes": "files.read" } -->
 ```http
-GET /me/drive/sharedWithMe
+GET https://graph.microsoft.com/beta/me/drive/sharedWithMe
 ```
 
 ## Response
 
-This returns a collection of [driveItem resources](../resources/driveitem.md)
-that contains items which have been shared with the signed-in user.
+This returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive.
+In this example, since the drive is the user's default drive, this returns items shared with the signed in user.
 
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true } -->
@@ -75,14 +69,12 @@ Content-Type: application/json
 
 ## Remarks
 
-DriveItems returned from the **sharedWithMe** action will always include the **remoteItem**
-facet which indicates they are items from another drive. To access the original
-driveItem object, you will need to make a request using the information provided
-in **remoteItem** in the following format:
+DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](../resources/remoteitem.md) facet which indicates they are items from a different drive. 
+To access the shared DriveItem resource, you will need to make a request using the information provided in **remoteItem** in the following format:
 
 <!-- {"blockType": "ignored"} -->
 ```http
-GET /drives/<remoteItem.driveId>/items/<id>
+GET https://graph.microsoft.com/beta/drives/{remoteItem.parentReference.driveId}/items/{remoteItem.id}
 ```
 
 <!-- {

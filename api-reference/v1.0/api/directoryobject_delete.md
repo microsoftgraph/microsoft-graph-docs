@@ -1,8 +1,9 @@
 # Delete directoryObject
 
-Delete directoryObject.
+Deletes a directoryObject.
+
 ## Prerequisites
-One of the following **scopes** is required to execute this API: _Directory.AccessAsUser.All_
+The following **scopes** is required to execute this API: _Directory.AccessAsUser.All_
 
 **NOTE:** Users, groups, and contacts are types of directory object. As a result,if you need to delete users, the following **scope** can and should be used: _User.ReadWrite.All_
 ## HTTP request
@@ -25,7 +26,7 @@ If successful, this method returns `204, No Content` response code. It does not 
 
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_directoryobject"
@@ -34,7 +35,7 @@ Here is an example of the request.
 DELETE https://graph.microsoft.com/v1.0/directoryObject/<id>
 ```
 ##### Response
-Here is an example of the response. 
+
 <!-- {
   "blockType": "response",
   "truncated": true

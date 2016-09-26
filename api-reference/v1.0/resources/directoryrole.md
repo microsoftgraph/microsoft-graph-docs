@@ -8,10 +8,10 @@ Represents an Azure AD directory role. Azure AD directory roles are also known a
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get directoryRole](../api/directoryrole_get.md) | [directoryRole](directoryrole.md) |Read properties and relationships of directoryRole object.|
+|[Get directoryRole](../api/directoryrole_get.md) | [directoryRole](directoryrole.md) | Read properties and relationships of directoryRole object. |
 |[Create member](../api/directoryrole_post_members.md) |[directoryObject](directoryobject.md)| Add a user to the directory role by posting to the members navigation property.|
 |[List members](../api/directoryrole_list_members.md) |[directoryObject](directoryobject.md) collection| Get the users that are members of the directory role from the members navigation property.|
-
+|[Activate directoryRole](../api/directoryrole_post_directoryroles.md) |[directoryRole](directoryrole.md) | Activate a directory role.|
 
 ## Properties
 | Property	   | Type	|Description|

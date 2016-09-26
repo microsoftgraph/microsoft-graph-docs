@@ -1,18 +1,15 @@
-﻿# Authenticate Microsoft Graph endpoints using the v2 authentication endpoint
+﻿# Authenticate Microsoft Graph apps with the Azure AD v2.0 endpoint
+
+> **Building apps for enterprise customers?** Your app might not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>.  
+
+> To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure Management Portal](https://aka.ms/aadapplist). For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](auth_overview.md#deciding-between-azure-ad-and-the-v2-authentication-endpoint).
 
 
-<!--
-### Preview documentation
-There are features and functionality of the converged authentication model that are not yet supported in the public preview period. You should be aware of them if you are building applications during the public preview. For more information, see [Limitations and restrictions of the converged authentication model preview](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/).
--->
+By using the Azure AD v2.0 endpoint, you can create apps that accept both work and school (Azure Active Directory) as well as personal (Microsoft account) identities.
 
-## Signing in Microsoft account and Azure AD users with a single authentication model
+In the past, if you wanted to develop an app to support both Microsoft accounts and Azure Active Directory, you had to integrate with two completely separate systems. Using the Azure AD v2.0 endpoint, you can now support both types of accounts with a single integration - one simple process to reach an audience that spans millions of users with both personal and work/school accounts.  
 
-By using the v2 authentication endpoint, you can create apps that accept both work and school (Azure AD) as well as personal (Microsoft account) identities.
-
-In the past, if you wanted to develop an app to support both Microsoft accounts and Azure Active Directory, you had to integrate with two completely separate systems. Using the v2 authentication endpoint, you can now support both types of accounts with a single integration. One simple process to immediately reach an audience that spans millions of users with both personal and work/school accounts.   
-
-After you integrate your apps with the v2 authentication endpoint, they can instantly access the Microsoft Graph endpoints available for both personal and work/school accounts, such as: 
+After you integrate your apps with the Azure AD v2.0 endpoint, they can instantly access the Microsoft Graph endpoints available for both personal and work or school accounts, such as: 
 
 | Data              | Endpoint                                       |
 |:------------------|:-----------------------------------------------|
@@ -22,48 +19,26 @@ After you integrate your apps with the v2 authentication endpoint, they can inst
 | Outlook calendars | `https://graph.microsoft.com/v1.0/me/events`   |
 | OneDrive          | `https://graph.microsoft.com/v1.0/me/drive`    |
 
- >**Note:** Some Microsoft Graph endpoints such as groups and tasks are not applicable to personal accounts.  
+ >**Note:** Some Microsoft Graph endpoints, such as groups and tasks, are not applicable to personal accounts.  
 
-## Microsoft Graph API authentication scopes
+## Microsoft Graph authentication scopes
 
-The v2 authentication endpoint supports all permission scopes listed for use with Azure AD authentication in the [Microsoft Graph permission scopes](permission_scopes.md) topic. However, the v2 authentication endpoint does not currently support app-only scopes.
+The Azure AD v2.0 endpoint supports all permission scopes listed in [Microsoft Graph permission scopes](permission_scopes.md). 
 
->**Note:** Currently, you are required to pass the resource URL 'https://graph.microsoft.com' as the prefix for the scope string. For example, to use the `Files.Read` scope, specify the scope as `https://graph.microsoft.com/Files.Read`.
+For more information about using scopes with the Azure AD v2.0 endpoint, and how it differs from using resources in Azure AD, see <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare/#scopes-not-resources" target="_newtab">Scopes, not resources</a>.
 
-For more information about using scopes with the v2 authentication endpoint, and how it differs from using resources in Azure AD, see [Scopes, not resources](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare/#scopes-not-resources).
+## See it in action
 
-<!--
-The table below lists the authentication scopes to use with the converged authentication model preview. For more information about using scopes with the converged authentication model, and how it differs from using resources in Azure AD, see [Scopes, not resources](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare/#scopes-not-resources).
+The [Connect samples in the Microsoft Graph repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) provide simple examples of how to authenticate users and connect to Microsoft Graph across a wide range of platforms.
 
+In addition, the [Get Started](http://graph.microsoft.io/en-us/docs/platform/get-started) section contains articles that describe how to create these sample apps, including the authentication libraries used on each platform.
 
-| **Scope**             | **Permission**                        | **Description**                                                                                                                                         |
-|:----------------------|:--------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `User.Read`           | Enable sign-in and read user profile  | Allows users to sign-in to the app, and allows the app to read the profile. It also allow the app to read basic company information of signed-in users. |
-| `User.ReadWrite`      | Read and write access to user profile | Allows the app to read the profile of signed-in users, and to update profile information on behalf of signed-in users.                                  |
-| `Mail.Read`           | Read user mail                        | Allows this app to read messages in user mailboxes.                                                                                                     |
-| `Mail.ReadWrite`      | Read and write access to user mail    | Allows the app to read, update, create, and delete messages in user mailboxes.                                                                          |
-| `Mail.Send`           | Send mail as a user                   | Allows the app to send messages as users in the organization.                                                                                           |
-| `Contacts.Read`       | Read user contacts                    | Allows the app to read user contacts.                                                                                                                   |
-| `Contacts.ReadWrite`  | Have full access to user contacts     | Allows the app to read, update, create and delete user contacts.                                                                                        |
-| `Calendars.Read`      | Read user calendars                   | Allows the app to read events in user calendars.                                                                                                        |
-| `Calendars.ReadWrite` | Have full access to user calendars    | Allows the app to read, update, create, and delete events in user calendars.                                                                            |
-| `Files.Read`          | Read users' files                     | Allows the application to read the current user's files.                                                                                                |
-| `Files.ReadWrite`     | Edit or delete users' files           | Allows the app to edit or delete the current user's files.                                                                                              |
-| `openid`              | Sign users in                         | Allows users to sign in to the app and allows the app to see basic user profile information.                                                            |
-| `offline_access`      | Read and write user's information     | Allows the app to see and update user's data, even when the user is not actively using the app.                                                         |
+## See also
 
-**Note**: currently it is required to pass the resource url of 'https://graph.microsoft.com' as prefix for the scope string. For example, to use the `Files.Read` scope you would specify the scope as `https://graph.microsoft.com/Files.Read`.
--->
+- [Register an app with the Azure AD v2.0 endpoint](auth_register_app_v2.md)
+- [App authentication with Microsoft Graph](auth_overview.md)
+- <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare" target="_newtab">What's new about the Azure AD v2.0 model</a>
+- <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/" target="_newtab">Should I use the Azure AD v2.0 endpoint?</a>
+- <a href="https://azure.microsoft.com/en-us/documentation/articles/?product=active-directory&term=azure+ad+v2.0" target="_newtab">Azure AD v2.0 endpoint documentation on Azure.com</a>
+- <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-app-registration/#build-a-quick-start-app" target="_newtab">Azure AD v2.0 code quick starts on Azure.com</a>
 
-
-## Next steps
-
-[Register an app to use the v2 authentication endpoint](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-app-registration/)
-
-## Learn more
-
-[What's new about the v2 authentication model](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare)
-
-[Limitations and restrictions in the v2 authentication model](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
-
-[Microsoft Azure v2 authentication endpoint documentation](https://azure.microsoft.com/en-us/documentation/articles/?service=active-directory&term=app+model+v2.0)

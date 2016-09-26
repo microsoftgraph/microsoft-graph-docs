@@ -55,7 +55,7 @@ property uses a character string or numeric value in its [MAPI property identifi
 |:---------|:----------|:--------------|
 | "*{_type_} {_guid_} **Name** {_name_}*" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) it belongs to, and a name.         |
 | "*{_type_} {_guid_} **Id** {_id_}*"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifies a property by the namespace (the GUID) it belongs to, and an identifier.  |
-| "*{_type_} {_id_}*"     | ```"String 0x0070"```        | Identifies a property by the property tag identifier.  |
+
 
 **Valid id formats for multi-value extended properties**
 
@@ -63,6 +63,7 @@ property uses a character string or numeric value in its [MAPI property identifi
 |:---------|:----------|:--------------|
 | "*{_type_} {_guid_} **Name** {_name_}*" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by namespace (the GUID) and name.         |
 | "*{_type_} {_guid_} **Id** {_id_}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifies a property by namespace (the GUID) and identifier.   |
+
 
 ## REST API operations
  

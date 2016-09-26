@@ -1,7 +1,24 @@
-# shared resource type
+# Shared resource type
 
-Indicates that an item has been shared with others. Includes information about
-how the item is shared.
+The **Shared** resource indicates a DriveItem has been shared with others.
+The resource includes information about how the item is shared.
+
+If a [**Driveitem**](driveitem.md) has a non-null **shared** facet, the item has been shared.
+
+## JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.shared"
+}-->
+```json
+{
+  "owner": {"@odata.type": "microsoft.graph.identitySet"},
+  "scope": "public | organization | users"
+}
+```
 
 ## Properties
 
@@ -18,20 +35,9 @@ how the item is shared.
 | organization | The item is shared by using a link that works for anyone in the owner's organization. |
 | users        | The item is shared with specific users only.                                          |
 
-## JSON representation
+## Remarks 
 
-Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "@odata.type": "microsoft.graph.shared"
-}-->
-```json
-{
-  "owner": {"@odata.type": "microsoft.graph.identitySet"},
-  "scope": "public | organization | users"
-}
-```
+For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -7,7 +7,6 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get user](../api/user_get.md) | [user](user.md) |Read properties and relationships of user object.|
-|[Create user](../api/user_post_users.md) | [user](user.md) | Create user object.|
 |[Update user](../api/user_update.md) | [user](user.md) |Update user object. |
 |[Delete user](../api/user_delete.md) | None |Delete user object. |
 |[List messages](../api/user_list_messages.md) |[Message](message.md) collection| Get all the messages in the signed-in user's mailbox.|

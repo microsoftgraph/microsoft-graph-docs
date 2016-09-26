@@ -57,7 +57,7 @@ The response to this request will provide the details of the newly created [uplo
   "name": "driveItem_createUploadSession"
 }-->
 ```http
-POST /me/drive/root:/{item-path}:/createUploadSession
+POST https://graph.microsoft.com/beta/me/drive/root:/{item-path}:/createUploadSession
 ```
 
 ### Response

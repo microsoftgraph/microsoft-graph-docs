@@ -1,33 +1,18 @@
+﻿
+# Microsoft Graph app authentication using Azure AD
 
-# Microsoft Graph app authorization
+This article presents a detailed look at an example authentication and authorization flow for a Microsoft Graph app. This example uses Azure Active Directory (Azure AD) and the authentication provider, and the <a href="https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx" target="_newtab">Authorization Code Grant Flow</a> as the auth flow. This example will show you how to use Azure AD in a Microsoft Graph app to authenticate a user, get an access token, and renew an access token using a refresh token.
 
-
-This article discusses how to authenticate a user, get an access token and renew an access token using a refresh token.
-The authentication flow can be broken down to two basic steps:
+For code grant flows, the authentication process can be broken down to two basic steps:
 
 1. Request an authorization code
 2. Use authorization code to request an access token and refresh token. 
 
->  **Note**: You can use the refresh token to acquire a new access token when the current access token expires.
-
-<!--To call the Microsoft Graph API, you have to complete the following tasks.
-
-1. Register the application in Azure Active Directory
-2. Authenticate a user and get an access token by calling methods on the Azure AD Authentication Library (ADAL)
-3. Use ADAL to get an access token
-4. Use the access token in a request to the Microsoft Graph API
-5. Disconnect the session
-
-In this article:
-
-- [Authenticate a user and get app authorized](#msg_get_app_authorized)
-- [Acquire access token](#msg_get_app_authenticated)
-- [Renew access token using refresh token](#msg_renew_access_token)
-
- <a name="msg_get_app_authorized"> </a> -->
+You can use the refresh token to acquire a new access token when the current access token expires.
  
-###Authenticate a user and get app authorized
-To get your app authorized, you must get the user authenticated first. You do this by redirecting the user to the Azure Active Directory (Azure AD) authorization endpoint, along with your app information, to sign in to their Office 365 account. Once the user is signed in, and consents to 
+##Authenticate a user and get app authorized
+
+To get your app authorized, you must get the user authenticated first. You do this by redirecting the user to the Azure Active Directory (Azure AD) authorization endpoint, along with your app information, to sign in to their work or school account. Once the user is signed in, and consents to 
 the permissions requested by your app (if the user has not done so already), your app will receive an authorization code required to acquire an OAuth access token.
 
 > **Note**:  You can do this by calling methods on the [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/azure/jj573266.aspx). For more information about authorization flow, see [Authorization Code Grant Flow](https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx).
@@ -78,8 +63,8 @@ the `https://login.windows.net/<tenantId>/oauth2/authorize?...` URL. In the latt
  
 <!---<a name="msg_get_app_authenticated"> </a> -->
 
-###Acquire an access token
-To access Microsoft Graph API resources, your app must include a valid OAuth 2.0 access token in every HTTP request. You can obtain the access token using the following POST request:
+##Acquire an access token
+To access Microsoft Graph resources, your app must include a valid OAuth 2.0 access token in every HTTP request. You can obtain the access token using the following POST request:
 
 ```no-highlight 
 POST https://login.microsoftonline.com/common/oauth2/token HTTP/1.1
@@ -142,7 +127,7 @@ Access-Control-Allow-Origin: *
 
  
 The response body is a JSON-formatted string containing the access token (`access_token`). 
-You need to supply this token to any ensuing HTTP requests to access Microsoft Graph API resources. 
+You need to supply this token to any ensuing HTTP requests to access Microsoft Graph  resources. 
 
 The `scope` property value should match the permissions granted for the app during the app's registration.
 
@@ -150,11 +135,11 @@ The access token remains valid within the specified time interval (`3599` in the
 from the time of issuance, as specified in the `expires_in` property. The result also contains a refresh token (`refresh_token`) that must be used to renew an expiring or expired access token. 
 
 In any production code, your app needs to watch for the expiration of these tokens and renew the expiring access token before the refresh token expires. 
-
+-->
 
 <!---<a name="msg_renew_access_token using refresh token"> </a> -->
 
-###Renew expiring access token using refresh token
+##Renew expiring access token using refresh token
 To refresh an expired access token, use a POST request similar to the following example (provided that the refresh token has not expired):
 
 ```no-highlight  
@@ -208,10 +193,7 @@ are extended. The new expiration time for the access token is the number of seco
 value, from the time when the token-refreshing request was submitted successfully. 
  
 When the refresh token expires, you cannot renew any expired access token using the just-described POST request. 
-Instead, you must restart the [app authorization and authentication](#msg_get_app_authorized) process.
+Instead, you must restart the app authorization and authentication process.
 
 
-<!--##Additional Resources##
-
-- [Hands on lab: Deep dive into the Office 365 unified API](http://dev.office.com/hands-on-labs/4585)  -->
 

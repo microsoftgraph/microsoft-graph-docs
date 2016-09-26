@@ -1,15 +1,6 @@
-# sharingInvitation resource type
+# SharingInvitation resource type
 
-Represents information about a sharing invitation for a set of permissions. This object is read-only.
-
-
-## Properties
-
-| Property Name  | Type                          | Description                                                                                                                   |
-|:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
-| email          | String                        | The email address provided for the recipient of the sharing invitation. Read-only.                                          |
-| invitedBy      | [identitySet](identityset.md) | Provides information about who sent the invitation that created this permission, if that information is available. Read-only. |
-| signInRequired | Boolean                       | If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.                     |
+The **SharingInvitation** resource groups invitation-related data items into a single strucutre.
 
 ## JSON representation
 
@@ -26,11 +17,24 @@ Here is a JSON representation of the resource
 ```json
 {
   "email": "string",
-  "redeemedBy": "string",
+  "invitedBy": {"@odata.type": "microsoft.graph.identitySet" },
   "signInRequired": true
 }
 
 ```
+
+## Properties
+
+| Property Name  | Type                          | Description                                                                                                                   |
+|:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
+| email          | String                        | The email address provided for the recipient of the sharing invitation. Read-only.                                          |
+| invitedBy      | [identitySet](identityset.md) | Provides information about who sent the invitation that created this permission, if that information is available. Read-only. |
+| signInRequired | Boolean                       | If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.                     |
+
+## Remarks 
+
+For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

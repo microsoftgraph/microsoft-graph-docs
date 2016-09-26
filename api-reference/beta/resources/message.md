@@ -114,6 +114,8 @@ When a message is being composed, in most cases, the From and Sender properties 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[List messages](../api/user_list_messages.md) |[message](message.md) collection | Get all the messages in the signed-in user's mailbox (excluding the Deleted Items and Clutter folders). |
+|[Create message](../api/user_post_messages.md) | [message](message.md) | [Create](../api/user_post_messages.md#request-1) a draft of a new message. |
 |[Get message](../api/message_get.md) | [message](message.md) |Read properties and relationships of message object.|
 |[Create Attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
 |[List attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|

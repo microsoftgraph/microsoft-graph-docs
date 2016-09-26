@@ -1,50 +1,13 @@
-# Microsoft Graph release notes and known issues
+# Known issues with Microsoft Graph
 
-This article provides information about the features for developers that are available in the September 2016 release of the Microsoft Graph API, and any known issues that you might want to be aware of. 
+This article describes known issues with the Microsoft Graph. For information about the latest updates, see the [Microsoft Graph Changelog](/changelog).
 
-
-## GA features in Microsoft Graph API
-
-The following Microsoft Graph API features are generally available:
-
-* Users
-* Groups
-* Files
-* Mail
-* Calendar
-* Personal Contacts 
-* Excel 
-* Webhooks
-* Create, read, update, and delete (CRUD) operations
-* Cross-origin resource sharing (CORS) support.
-
-	
-## Preview features in Microsoft Graph API
-
-The following Microsoft Graph API preview features are available:
-
-* Notes 
-* Tasks
-* People
-* Organizational Contacts
-* Applications
-* Service Principals
-* Directory schema extensions
-* Insights and relationships: Trending Around and Working With
-* Groups instant access to content after creation
-* Converged authentication model for personal accounts as well as work and school accounts. Although this is a preview feature, it is available on both the `/v1.0` and `/beta` versions.
-
-
-## Microsoft Graph known issues
-
-The following are known issues with the Microsoft Graph.
-
-### Users
+## Users
 #### No instant access after creation
 Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response. 
 
 #### Photo restrictions
-Reading and updating a user's profile photo is only possible if the user has a mailbox.  Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) will no longer be accessible through the Microsoft Graph user photo property.  Failure to read or update a photo, in this case, would result in the following error:
+Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) will no longer be accessible through the Microsoft Graph user photo property. Failure to read or update a photo, in this case, would result in the following error:
 
 ```javascript
 	{
@@ -55,7 +18,7 @@ Reading and updating a user's profile photo is only possible if the user has a m
 	}
 ```
 
- > **NOTE**:  Shortly storage and retrieval of user profile photos will be enabled, even if the user does not have a mailbox, and this error should disappear.
+ > **NOTE**:  Shortly after GA, storage and retrieval of user profile photos will be enabled, even if the user does not have a mailbox, and this error should disappear.
 
 #### Default contacts folder
 
@@ -79,7 +42,7 @@ each [calendar](http://graph.microsoft.io/docs/api-reference/v1.0/resources/cale
 or access the ICS URL in the calendar resource.
 * You can also [list the events](http://graph.microsoft.io/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
 
-### Groups
+## Groups
 #### Policy
 Using Microsoft Graph to create and name a unified group bypasses any unified group policies that are configured through Outlook Web App. 
 
@@ -91,48 +54,53 @@ The Microsoft Graph exposes two permission scopes (*Group.Read.All* and *Group.R
 getting attachments of group posts currently return the error message "The OData request is not supported." A fix has been rolled out for both the `/v1.0` and `/beta` versions,
 and is expected to be widely available by the end of January 2016.
 
-### Contacts
-* Only personal contacts are currently in `/v1.0`. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
+## Contacts
+* Only personal contacts are currently supported. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
+* Personal contact's mobile phone isn’t being returned for a contact. It will be added shortly. In the meantime, it can be accessed through Outlook APIs.
 
 ### Drives, files and content streaming
 * First time access to a user's personal drive through the Microsoft Graph before the user accesses their personal site through a browser leads to a 401 response.
+* Upload and download of files (files in Office groups, drives, or mail file attachments) is limited to 4 MB.
 
-### Functionality available only in existing Office 365 REST APIs
+## Functionality available only in Office 365 REST APIs
+
+Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog).
+
 #### Synchronization
 Outlook, OneDrive and Azure AD synchronization capabilities (in Azure AD this is also known as differential query) are not available in `/v1.0` or `/beta`.  If your application requires synchronization capabilities, please continue to use the existing Office 365 and Azure AD REST APIs, or explore the new webhooks preview feature offered through Microsoft Graph for events, messages and contacts.
 
-> **NOTE**:  It is a goal to close the gap between the existing APIs and Microsoft Graph as quickly as possible, including synchronization.
+> **NOTE**: Our goal is to close the gap between the existing APIs and Microsoft Graph as quickly as possible, including synchronization.
 
 #### Batching
 Batching is not supported by Microsoft Graph. You can, however, use the Outlook beta endpoint and 
 [batch Outlook REST calls](https://msdn.microsoft.com/en-us/office/office365/api/batch-outlook-rest-requests). 
 
+#### Availability in China
+The Microsoft Graph service is operated by 21Vianet (and now available in China). Please review [Microsoft Graph sovereign cloud deployments](http://graph.microsoft.io/docs/overview/deployments) for more details including restrictions.
+
 #### Service actions and functions
 `isMemberOf` and `getObjectsById` are not available in Microsoft Graph
 
-### Availability in China
-The Microsoft Graph service is operated by 21Vianet (and now available in China). Please review [Microsoft Graph sovereign cloud deployments](http://graph.microsoft.io/docs/overview/deployments) for more details including restrictions.
-
-### Microsoft Graph permissions
-Please review the [permission scopes topic](http://graph.microsoft.io/docs/authorization/permission_scopes) for the latest details on Microsoft Graph supported application and delegated permissions.  In addition, there are the following limitations for `v1.0`:
+## Microsoft Graph permissions
+For the latest information about Microsoft Graph supported application and delegated permissions, see [Permission scopes](http://graph.microsoft.io/docs/authorization/permission_scopes). In addition, the following limitations apply to `v1.0`:
 
 |Permission |	Permission type | Limitation |	Alternative |
 |-----------|-----------------|------------|--------------|
-|_User.ReadWrite_| Delegated | Cannot update mobile phone number| Also select `Directory.AccessAsUser.All`| 
-|_User.ReadWrite.All_|	Delegated |	Cannot perform any CRUD operations on `User` other than updating user HD photo and extended profile properties| Also select `Directory.ReadWrite.All` or `Directory.AccessAsUser.All` if user deletion is required.|
-|_User.Read.All_|	Application|Cannot perform any read operations on other users| Also select `Directory.Read.All`|
-| _User.ReadWrite.All_|	Application| Cannot perform any CRUD operations on `User` other than updating user HD photo and extended profile properties | Also select`Directory.ReadWrite.All`. **NOTE**: User deletion will not be possible.|
-|_Group.Read.All_| Application | Cannot enumerate groups or group memberships.  Can still read group content for Office groups	| Also select `Directory.Read.All` |
-|_Group.ReadWrite.All_| Application | Cannot enumerate groups or group memberships, create groups, update group memberships or delete groups.  Can still read and update group content for Office groups.	| Also select `Directory.ReadWrite.All`. **NOTE**:  Group deletion will not be possible.|
+|_User.ReadWrite_| Delegated	| Cannot update mobile phone number|	Also select `Directory.AccessAsUser.All`| 
+|_User.ReadWrite.All_|	Delegated|	Cannot perform any CRUD operations on `User` other than updating user HD photo and extended profile properties|	Also select `Directory.ReadWrite.All` or `Directory.AccessAsUser.All` if user deletion is required.|
+|_User.Read.All_|	Application	|Cannot perform any read operations on other users|	Also select `Directory.Read.All`|
+| _User.ReadWrite.All_ |	Application |	Cannot perform any CRUD operations on `User` other than updating user HD photo and extended profile properties |	Also select`Directory.ReadWrite.All`. **NOTE**: User deletion will not be possible.|
+|_Group.Read.All_	| Application |	Cannot enumerate groups or group memberships.  Can still read group content for Office groups	| Also select `Directory.Read.All` |
+|_Group.ReadWrite.All_	| Application	| Cannot enumerate groups or group memberships, create groups, update group memberships or delete groups.  Can still read and update group content for Office groups.	| Also select `Directory.ReadWrite.All`. **NOTE**:  Group deletion will not be possible.|
 
 Additionally there are the following `/beta` limitations:
 
 |Permission |	Permission type | Limitation |	Alternative |
 |-----------|-----------------|------------|--------------|
 | _Group.ReadWrite.All_	| Delegated	| Cannot read or update planner tasks in Office groups	| Also select `Tasks.ReadWrite`|
-|_Tasks.ReadWrite_ | Delegated | Cannot read or update signed-in user's tasks| Also select `Group.ReadWrite.All`|
+|_Tasks.ReadWrite_	| Delegated	| Cannot read or update signed-in user's tasks| Also select `Group.ReadWrite.All`|
 
-### OData related limitations
+## OData-related limitations
 * **$expand** limitations: 
  * No support for `nextLink`
  * No support for more than 1 level of expand

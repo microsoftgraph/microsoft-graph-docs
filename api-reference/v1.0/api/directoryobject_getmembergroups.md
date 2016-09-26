@@ -1,45 +1,49 @@
-# directoryObject: getMemberGroups
+# Get member groups
 
-Return all the groups that the specified user, directory object, or contact is a member. This function is
-transitive.
+Return all the groups that the specified user, group, or directory object is a member of. This function is transitive.
 
 ## Prerequisites
-The following **scopes** are required to execute this API:
+One of the following **scopes** are required to execute this API: 
+- _User.Read.All_ AND _Group.Read.All_
+- _Directory.Read.All_
+
+> Note: Permission scopes are listed in least privilege required order.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/manager/getMemberGroups
+POST /me/getMemberGroups
+POST /users/<id | userPrincipalName>/getMemberGroups
+POST /groups/<id>/getMemberGroups
 POST /directoryObjects/<id>/getMemberGroups
-POST /contacts/<id>/manager/getMemberGroups
-
 ```
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
+| Content-Type  | application/json  |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean||
+|securityEnabledOnly|Boolean| **true** to specify that only security groups that the entity is a member of should be returned; **false** to specify that all groups and directory roles that the entity is a member of should be returned. **Note**: The function can only be called on a user if the parameter is **true**. |
 
 ## Response
 If successful, this method returns `200, OK` response code and String collection object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "directoryobject_getmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/manager/getMemberGroups
+POST https://graph.microsoft.com/v1.0/me/getMemberGroups
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": true
@@ -47,7 +51,7 @@ Content-length: 33
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -57,12 +61,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
-  "value": [
-    "string-value"
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(Edm.String)",
+    "value": [
+        "fee2c45b-915a-4a64-b130-f4eb9e75525e",
+        "4fe90ae7-065a-478b-9400-e0a0e1cbd540",
+        "e0c3beaf-eeb4-43d8-abc5-94f037a65697"
+    ]
 }
 ```
 
