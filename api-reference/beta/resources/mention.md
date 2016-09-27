@@ -72,7 +72,7 @@ None
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Post](../api/user_sendmail.md) and send | None | Create and send mentions as part of a new message.| 
+|[Post](../api/user_sendmail.md#request-2) and send | None | Create and send mentions as part of a new message.| 
 |[Post](../api/user_post_messages.md#request-2) to a new draft | [message](../resources/message.md) that contains one or more **mention** objects. | Create a draft of a new message and include one or more **mention** objects.| 
 |[Get](../api/user_list_messages.md#request-2) messages mentioning me | [message](../resources/message.md) collection | Get all the messages in the signed-in user's mailbox that contain a **mention** of this user.|
 |[Get](../api/message_get.md#request-2) a message and its mentions | [message](../resources/message.md) collection | Get a message and expand the details of each **mention** in the message.|
