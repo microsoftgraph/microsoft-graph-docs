@@ -8,6 +8,7 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/mailFolders
+POST /users/me/mailfolders
 ```
 ## Request headers
 | Header       | Value |
@@ -35,7 +36,7 @@ If successful, this method returns `201, Created` response code and [MailFolder]
   "name": "create_mailfolder_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders
+POST https://graph.microsoft.com/v1.0/users/me/mailFolders
 
 {
   "parentFolderId": "Inbox",
