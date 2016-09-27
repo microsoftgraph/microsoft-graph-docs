@@ -25,11 +25,11 @@ In the request body, provide a JSON object with the following parameters. **disp
 |displayName|String|The display name of the new folder.|
 
 ## Response
-If successful, this method returns `201, Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
+If successful, this method returns `201, Created` response code. It does not return anything in the response body..
 
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "create_mailfolder_from_user"
@@ -37,32 +37,29 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/mailFolders
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value"
+  "parentFolderId": "Inbox"
 }
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailFolder"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 179
-
 {
   "displayName": "displayName-value",
   "parentFolderId": "parentFolderId-value",
-  "childFolderCount": 99,
-  "unreadItemCount": 99,
-  "totalItemCount": 99,
+  "childFolderCount": 0,
+  "unreadItemCount": 0,
+  "totalItemCount": 0,
   "id": "id-value"
 }
 ```

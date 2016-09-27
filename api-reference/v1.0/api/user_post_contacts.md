@@ -27,7 +27,7 @@ If successful, this method returns `201, Created` response code and [Contact](..
 
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "create_contact_from_user"
@@ -53,7 +53,7 @@ Content-type: application/json
 In the request body, supply a JSON representation of [contact](../resources/contact.md) object.
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -67,7 +67,16 @@ Content-type: application/json
   "id": "id-value",
   "createdDateTime": "2015-11-09T02:14:32Z",
   "lastModifiedDateTime": "2015-11-09T02:14:32Z",
-   "displayName": "Pavel Bansky"
+  "displayName": "Pavel Bansky",
+  "emailAddresses": [
+    {
+      "address": "pavelb@fabrikam.onmicrosoft.com",
+      "name": "Pavel Bansky"
+    }
+  ],
+    "businessPhones": [
+    "+1 732 555 0102"
+  ]
 }
 ```
 

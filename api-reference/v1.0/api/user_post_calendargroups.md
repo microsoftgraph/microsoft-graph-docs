@@ -23,7 +23,7 @@ If successful, this method returns `201, Created` response code and [CalendarGro
 
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "create_calendargroup_from_user"
@@ -31,26 +31,22 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/calendarGroups
 Content-type: application/json
-Content-length: 90
 
 {
-  "name": "name-value",
-  "classId": "classId-value",
-  "changeKey": "changeKey-value"
+  "name": "name-value"
 }
 ```
 In the request body, supply a JSON representation of [calendarGroup](../resources/calendargroup.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.calendarGroup"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 110
 
 {
   "name": "name-value",

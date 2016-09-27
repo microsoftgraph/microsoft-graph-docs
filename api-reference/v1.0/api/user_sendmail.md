@@ -1,6 +1,6 @@
-# user: sendMail
+# Send mail
 
-Send the message specified in the request body on the fly. You can optionally save the message in the Sent Items folder.
+Send the message specified in the request body. You can optionally save the message in the Sent Items folder.
 
 You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
 
@@ -30,9 +30,9 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
+
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
@@ -40,7 +40,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: application/json
-Content-length: 1944
 
 {
   "Message": {
@@ -130,7 +129,7 @@ Content-length: 1944
 ```
 
 ##### Response
-Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

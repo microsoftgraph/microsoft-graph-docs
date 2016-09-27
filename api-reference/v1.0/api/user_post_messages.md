@@ -23,8 +23,8 @@ In the request body, supply a JSON representation of [Message](../resources/mess
 If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
 
 ## Example
-##### Request 1
-Here is an example of the request.
+##### Request
+In the request body, supply a JSON representation of [message](../resources/message.md) object.
 <!-- {
   "blockType": "request",
   "name": "create_message_from_user"
@@ -42,10 +42,10 @@ Content-type: application/json
   "bodyPreview": "bodyPreview-value"
 }
 ```
-In the request body, supply a JSON representation of [message](../resources/message.md) object.
+
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

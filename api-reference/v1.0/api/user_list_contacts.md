@@ -16,6 +16,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json|
 
 ## Request body
 Do not supply a request body for this method.
@@ -23,7 +24,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [Contact](../resources/contact.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_contacts"
@@ -32,7 +33,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/me/contacts
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -42,17 +43,27 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 263
 
 {
   "value": [
     {
+      "id": "id-value",
+      "createdDateTime": "2015-11-09T02:14:32Z",
+      "lastModifiedDateTime": "2015-11-09T02:14:32Z",
       "parentFolderId": "parentFolderId-value",
       "birthday": "datetime-value",
       "fileAs": "fileAs-value",
-      "displayName": "displayName-value",
-      "givenName": "givenName-value",
-      "initials": "initials-value"
+      "displayName": "Pavel Bansky",
+      "emailAddresses": [
+        {
+          "address": "pavelb@fabrikam.onmicrosoft.com",
+          "name": "Pavel Bansky"
+        }
+      ],
+      "businessPhones": [
+        "+1 732 555 0102"
+      ],
+      "givenName": "Pavel"
     }
   ]
 }

@@ -23,6 +23,7 @@ In the request URL, provide the following function parameters with values.
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json  |
 | Prefer | <Time-zone>. Optional, UTC assumed if absent.| 
 
 ## Request body
@@ -32,19 +33,18 @@ Do not supply a request body for this method.
 If successful, this method returns `200, OK` response code and [reminder](../resources/reminder.md) collection object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+
 ##### Request
-Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "user_reminderview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+GET https://graph.microsoft.com/v1.0/users/me/reminderView?startDateTime=2016-01-01T19:00:00.0000000&endDateTime=2016-10-01T19:00:00.0000000 
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -54,7 +54,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 673
 
 {
   "value": [

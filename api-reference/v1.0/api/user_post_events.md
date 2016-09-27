@@ -7,7 +7,6 @@ You can specify the time zone for each of the start and end times of the event a
 
 When the event is created, the server send invitations to all attendees.
 
-
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
@@ -31,7 +30,7 @@ If successful, this method returns `201, Created` response code and [Event](../r
 
 ## Example
 ##### Request
-Here is an example of the request.
+In the request body, supply a JSON representation of [event](../resources/event.md) object.
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -39,7 +38,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/events
 Content-type: application/json
-Content-length: 285
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
@@ -49,13 +47,13 @@ Content-length: 285
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",
-  "reminderMinutesBeforeStart": 99,
+  "reminderMinutesBeforeStart": 15,
   "isReminderOn": true
 }
 ```
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
+
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -64,19 +62,53 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 285
 
 {
-  "originalStartTimeZone": "originalStartTimeZone-value",
-  "originalEndTimeZone": "originalEndTimeZone-value",
-  "responseStatus": {
-    "response": "",
-    "time": "datetime-value"
+  "id":"id-value",
+  "originalStartTimeZone":"UTC",
+  "originalEndTimeZone":"UTC",
+  "responseStatus":{
+    "response":"organizer",
+    "time":"0001-01-01T00:00:00Z"
   },
-  "iCalUId": "iCalUId-value",
-  "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+  "iCalUId":"iCalUId-value",
+  "reminderMinutesBeforeStart":15,
+  "isReminderOn":true,
+  "hasAttachments":false,
+  "subject":null,
+  "body":{
+    "contentType":"text",
+    "content":"content-value"
+  },
+  "bodyPreview":"bodyPreview-value",
+  "importance":"normal",
+  "sensitivity":"normal",
+  "start":{
+    "dateTime":"2016-09-26T17:00:00.0009761",
+    "timeZone":"UTC"
+  },
+  "end":{
+    "dateTime":"2016-09-26T17:30:00.0009761",
+    "timeZone":"UTC"
+  },
+  "location":{
+    "displayName":"",
+    "address":{}
+   },
+  "isAllDay":false,
+  "isCancelled":false,
+  "isOrganizer":true,
+  "recurrence":null,
+  "responseRequested":true,
+  "showAs":"busy",
+  "type":"singleInstance",
+  "attendees":[],
+  "organizer":{"emailAddress":{
+    "name":"emailAddress-value",
+    "address":"address-value"}
+  }
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

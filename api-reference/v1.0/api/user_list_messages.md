@@ -15,7 +15,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
-| Accept  | application/json|
+| Content-type | application/json|
 
 ## Request body
 Do not supply a request body for this method.
@@ -23,7 +23,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_messages"
