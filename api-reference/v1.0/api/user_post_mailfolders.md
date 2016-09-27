@@ -25,7 +25,7 @@ In the request body, provide a JSON object with the following parameters. **disp
 |displayName|String|The display name of the new folder.|
 
 ## Response
-If successful, this method returns `201, Created` response code. It does not return anything in the response body.
+If successful, this method returns `201, Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
 
 ## Example
 ##### Request
@@ -35,11 +35,11 @@ If successful, this method returns `201, Created` response code. It does not ret
   "name": "create_mailfolder_from_user"
 }-->
 ```http
-https://graph.microsoft.com/v1.0/me/mailFolders
+POST https://graph.microsoft.com/v1.0/me/mailFolders
 Content-type: application/json
 
 {
-  "parentFolderId": "parentFolderId-value",
+  "parentFolderId": "Inbox",
   "displayName": "displayName-value"
 }
 ```
