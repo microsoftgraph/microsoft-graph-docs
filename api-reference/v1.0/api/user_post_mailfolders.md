@@ -25,7 +25,7 @@ In the request body, provide a JSON object with the following parameters. **disp
 |displayName|String|The display name of the new folder.|
 
 ## Response
-If successful, this method returns `201, Created` response code. It does not return anything in the response body..
+If successful, this method returns `201, Created` response code. It does not return anything in the response body.
 
 ## Example
 ##### Request
