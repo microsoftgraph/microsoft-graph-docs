@@ -33,13 +33,13 @@ If successful, this method returns `201, Created` response code. It does not ret
 <!-- {
   "blockType": "request",
   "name": "create_mailfolder_from_user"
-} -->
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/mailFolders
 Content-type: application/json
 
 {
-  "parentFolderId": "Inbox",
+  "parentFolderId": "parentFolderId-value",
   "displayName": "displayName-value"
 }
 ```
