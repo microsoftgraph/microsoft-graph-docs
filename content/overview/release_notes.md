@@ -1,6 +1,6 @@
 # Known issues with Microsoft Graph
 
-This article describes known issues with the Microsoft Graph. For information about the latest updates, see the [Microsoft Graph Changelog](/changelog).
+This article describes known issues with the Microsoft Graph. For information about the latest updates, see the [Microsoft Graph Changelog](http://graph.microsoft.io/en-us/changelog).
 
 ## Users
 #### No instant access after creation
