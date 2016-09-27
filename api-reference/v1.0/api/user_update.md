@@ -1,6 +1,6 @@
 # Update user
 
-Update the properties of a user object.
+Update the properties of user object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 *User.ReadWrite; User.ReadWrite.All; Directory.ReadWrite.All*
@@ -8,7 +8,6 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/me
 PATCH /users/<id | userPrincipalName>
 ```
 ## Request headers
@@ -56,17 +55,18 @@ In the request body, supply the values for relevant fields that should be update
 |userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
 
 ## Response
-If successful, this method returns a `204 No Content` response code.
-
+If successful, this method returns a `200 OK` response code and updated [user](../resources/user.md) object in the response body.
 ## Example
 ##### Request
-
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_user"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me
+Content-type: application/json
+Content-length: 491
 
 {
   "accountEnabled": true,
@@ -92,15 +92,38 @@ PATCH https://graph.microsoft.com/v1.0/me
 }
 ```
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.user"
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 491
+
+{
+  "accountEnabled": true,
+  "assignedLicenses": [
+    {
+      "disabledPlans": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ],
+      "skuId": "skuId-value"
+    }
+  ],
+  "assignedPlans": [
+    {
+      "assignedDateTime": "datetime-value",
+      "capabilityStatus": "capabilityStatus-value",
+      "service": "service-value",
+      "servicePlanId": "servicePlanId-value"
+    }
+  ],
+  "businessPhones": [
+    "businessPhones-value"
+  ],
+  "city": "city-value",
+  "companyName": "companyName-value"
 }
 ```
 

@@ -8,7 +8,6 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/mailFolders
-POST /users/me/mailfolders
 ```
 ## Request headers
 | Header       | Value |
@@ -30,36 +29,40 @@ If successful, this method returns `201, Created` response code and [MailFolder]
 
 ## Example
 ##### Request
-
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_mailfolder_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/me/mailFolders
+POST https://graph.microsoft.com/v1.0/me/mailFolders
+Content-type: application/json
+Content-length: 159
 
 {
-  "parentFolderId": "Inbox",
-  "displayName": "displayName-value"
+  "displayName": "displayName-value",
+  "parentFolderId": "parentFolderId-value"
 }
 ```
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailFolder"
 } -->
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 179
+
 {
   "displayName": "displayName-value",
   "parentFolderId": "parentFolderId-value",
-  "childFolderCount": 0,
-  "unreadItemCount": 0,
-  "totalItemCount": 0,
+  "childFolderCount": 99,
+  "unreadItemCount": 99,
+  "totalItemCount": 99,
   "id": "id-value"
 }
 ```
