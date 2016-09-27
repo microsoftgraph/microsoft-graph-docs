@@ -9,8 +9,11 @@ One of the following **scopes** is required to execute this API: *Directory.Read
 ```http
 GET /devices/<id>
 ```
+> Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -40,21 +43,22 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 322
 
 {
-  "accountEnabled": true,
-  "alternativeSecurityIds": [
+  "accountEnabled":false,
+  "alternativeSecurityIds":
+  [
     {
-      "type": 99,
-      "identityProvider": "identityProvider-value",
-      "key": "key-value"
+      "type": 2,
+      "key":"Y3YxN2E1MWFlYw==",
+      "identityProvider": null
     }
   ],
-  "approximateLastSignInDateTime": "datetime-value",
-  "deviceId": "deviceId-value",
-  "deviceMetadata": "deviceMetadata-value",
-  "deviceVersion": 99
+  "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
+  "displayName":"Test device",
+  "id": "id-value",
+  "operatingSystem":"linux",
+  "operatingSystemVersion":"1"
 }
 ```
 

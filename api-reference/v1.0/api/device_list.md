@@ -1,8 +1,9 @@
 # List devices
 
-Retrieve a list of device objects.
+Retrieve a list of device objects registered in the organization.
+
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Device.ReadWrite.All* or *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+One of the following **scopes** is required to execute this API:  or *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All* or *Device.ReadWrite.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,23 +42,24 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 399
 
 {
   "value": [
     {
-      "accountEnabled": true,
-      "alternativeSecurityIds": [
+      "accountEnabled":false,
+      "alternativeSecurityIds":
+      [
         {
-          "type": 99,
-          "identityProvider": "identityProvider-value",
-          "key": "key-value"
+          "type":2,
+          "key":"Y3YxN2E1MWFlYw==",
+          "identityProvider": null
         }
       ],
-      "approximateLastSignInDateTime": "datetime-value",
-      "deviceId": "deviceId-value",
-      "deviceMetadata": "deviceMetadata-value",
-      "deviceVersion": 99
+      "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
+      "displayName":"Test device",
+      "id": "id-value",
+      "operatingSystem":"linux",
+      "operatingSystemVersion":"1"
     }
   ]
 }

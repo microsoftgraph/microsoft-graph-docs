@@ -1,15 +1,17 @@
 # Delete device
 
-Delete device.
+Delete a registered device.
+
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Directory.AccessAsUser.All*
+One of the following **scopes** is required to execute this API: *Directory.AccessAsUser.All*, *Device.ReadWrite.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /devices/<id>
-
 ```
+> Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
@@ -17,7 +19,6 @@ DELETE /devices/<id>
 
 ## Request body
 Do not supply a request body for this method.
-
 
 ## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
@@ -33,7 +34,7 @@ Here is an example of the request.
 DELETE https://graph.microsoft.com/v1.0/devices/<id>
 ```
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

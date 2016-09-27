@@ -1,8 +1,9 @@
 # Create device
 
-Create a new device.
+Create and register a new device in the organization.
+
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+One of the following **scopes** is required to execute this API: *Directory.AccessAsUser.All*, *Device.ReadWrite.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -14,6 +15,7 @@ POST /devices
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
+| Content-type | string | application/json |
 
 ## Request body
 In the request body, supply a JSON representation of [device](../resources/device.md) object.
@@ -32,21 +34,20 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/devices
 Content-type: application/json
-Content-length: 364
 
 {
-  "accountEnabled": true,
-  "alternativeSecurityIds": [
+  "accountEnabled":false,
+  "alternativeSecurityIds":
+  [
     {
-      "type": 99,
-      "identityProvider": "identityProvider-value",
-      "key": "key-value"
+      "type":2,
+      "key":"Y3YxN2E1MWFlYw=="
     }
   ],
-  "approximateLastSignInDateTime": "datetime-value",
-  "deviceId": "deviceId-value",
-  "deviceMetadata": "deviceMetadata-value",
-  "deviceVersion": 99
+  "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
+  "displayName":"Test device",
+  "operatingSystem":"linux",
+  "operatingSystemVersion":"1"
 }
 ```
 In the request body, supply a JSON representation of [device](../resources/device.md) object.
@@ -58,23 +59,23 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.device"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 364
 
 {
-  "accountEnabled": true,
-  "alternativeSecurityIds": [
+  "accountEnabled":false,
+  "alternativeSecurityIds":
+  [
     {
-      "type": 99,
-      "identityProvider": "identityProvider-value",
-      "key": "key-value"
+      "type":2,
+      "key":"Y3YxN2E1MWFlYw=="
     }
   ],
-  "approximateLastSignInDateTime": "datetime-value",
-  "deviceId": "deviceId-value",
-  "deviceMetadata": "deviceMetadata-value",
-  "deviceVersion": 99
+  "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
+  "displayName":"Test device",
+  "id": "id-value",
+  "operatingSystem":"linux",
+  "operatingSystemVersion":"1"
 }
 ```
 
