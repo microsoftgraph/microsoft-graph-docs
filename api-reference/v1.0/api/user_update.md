@@ -66,7 +66,6 @@ If successful, this method returns a `204 No Content` response code.
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me
-Content-type: application/json
 
 {
   "accountEnabled": true,

@@ -36,7 +36,6 @@ If successful, this method returns `201, Created` response code and [MailFolder]
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/mailFolders
-Content-type: application/json
 
 {
   "parentFolderId": "Inbox",
