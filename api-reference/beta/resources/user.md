@@ -38,6 +38,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |[assignLicense](../api/user_assignlicense.md)|[user](user.md)|Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.|
 |[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
 |[findmeetingtimes](../api/user_findmeetingtimes.md)|[meetingTimeCandidate](meetingtimecandidate.md)|Find time and locations to meet based on attendee availability, location or time constraints.|
+|[getMailTips](../api/user_getmailtips.md)|[mailTips](mailtips.md) collection|Return the MailTips of one or more recipients as available to the signed-in user. |
 |[getMemberGroups](../api/user_getmembergroups.md)|String collection|Return all the groups that the user is a member of. The check is transitive.|
 |[getMemberObjects](../api/user_getmemberobjects.md)|String collection| Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive. |
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|

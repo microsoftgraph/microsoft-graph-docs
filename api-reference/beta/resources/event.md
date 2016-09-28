@@ -114,6 +114,7 @@ Here is a JSON representation of the resource
 |[accept](../api/event_accept.md)|None|Accept the specified event.|
 |[tentativelyAccept](../api/event_tentativelyaccept.md)|None|Tentatively accept the specified event.|
 |[decline](../api/event_decline.md)|None|Decline invitation to the specified event.|
+|[forward](../api/event_forward.md)|None|Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.| 
 |[dismissReminder](../api/event_dismissreminder.md)|None|Dismiss the reminder for the specified event.|
 |[snoozeReminder](../api/event_snoozereminder.md)|None|Snooze the reminder for the specified event.|
 |[List instances](../api/event_list_instances.md) |[Event](event.md) collection| Get a Event object collection.|
