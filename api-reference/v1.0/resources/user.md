@@ -14,6 +14,8 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |[List mailFolders](../api/user_list_mailfolders.md) |[MailFolder](mailfolder.md) collection| Get the mail folder collection under the root folder of the signed-in user. |
 |[Create mailFolder](../api/user_post_mailfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the mailFolders collection.|
 |[sendMail](../api/user_sendmail.md)|None|Send the message specified in the request body.|
+|[Get mailbox settings](../api/mailboxsettings_get.md) |[mailboxSettings](../resources/mailboxSettings.md) | Get the user's [mailboxSettings](../resources/mailboxsettings.md). This includes settings for automatic replies, locale, and time zone. |
+|[Update mailbox settings](../api/mailboxsettings_update.md) |[mailboxSettings](../resources/mailboxSettings.md) | Update one or more settings for the user's mailbox. This includes settings for automatic replies, locale, and time zone.|
 |[List events](../api/user_list_events.md) |[Event](event.md) collection| Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters.|
 |[Create event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
 |[List calendars](../api/user_list_calendars.md) |[Calendar](calendar.md) collection| Get a Calendar object collection.|
@@ -58,6 +60,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title. Supports $filter.|
 |mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.|
+|mailboxSettings|[mailboxSettings](mailboxsettings.md)|Settings for the primary mailbox of the signed-in user. They include settings for sending automatic replies to incoming messages, locale and time zone.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created. Supports $filter.|
 |mobilePhone|String|The primary cellular telephone number for the user.|
 |mySite|String|The URL for the user's personal site.|
