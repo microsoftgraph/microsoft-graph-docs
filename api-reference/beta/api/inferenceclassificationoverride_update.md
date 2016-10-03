@@ -1,6 +1,6 @@
-# Update inferenceclassificationoverride
+# Update inferenceClassificationOverride
 
-Change the **classifyAs** field of an override as specified. 
+Change the **classifyAs** field of a [Focused Inbox](../resources/manage_focused_inbox.md) override as specified. 
 
 You cannot use PATCH to change any other fields in an [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) instance. 
 

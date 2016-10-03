@@ -1,6 +1,7 @@
 # inferenceClassificationOverride resource type
 
-Represents a user's override for how incoming messages from a specific sender should always be classified as.
+Represents a user's override for how incoming messages from a specific sender should always be classified as
+in a [Focused Inbox](manage_focused_inbox.md).
 
 
 ## Methods

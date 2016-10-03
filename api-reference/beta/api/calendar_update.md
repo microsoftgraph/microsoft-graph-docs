@@ -52,12 +52,9 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/calendar
 Content-type: application/json
-Content-length: 48
 
 {
-  "name": "name-value",
-  "color": {
-  }
+  "name": "Social events"
 }
 ```
 ##### Response
@@ -70,15 +67,24 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 98
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "isDefaultCalendar": false,
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/calendars/$entity",
+    "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/calendars('AAMkADJmMVAAA=')",
+    "id":"AAMkADJmMVAAA=",
+    "name":"Social events",
+    "color":"auto",
+    "isDefaultCalendar":false,
+    "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
+    "canShare":true,
+    "canViewPrivateItems":true,
+    "isShared":false,
+    "isSharedWithMe":false,
+    "canEdit":true,
+    "owner":{
+        "name":"Fanny Downs",
+        "address":"fannyd@adatum.onmicrosoft.com"
+    }
 }
 ```
 

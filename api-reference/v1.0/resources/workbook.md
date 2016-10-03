@@ -57,6 +57,41 @@ content-type: application/json;odata.metadata
 }
 ```
 
+Example: 
+
+In the below example, `median` function is called by passing the input range(s) in an array. 
+
+Request: 
+
+```http 
+POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/median
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+
+{
+"values" :  [
+        { "address": "Sheet2!A1:A5" },
+        { "address": "Sheet2!B1:B5" },
+      ] 
+}
+```
+
+Response:
+
+```http
+HTTP code: 200, OK
+content-type: application/json;odata.metadata 
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookFunctionResult",
+  "@odata.type": "#microsoft.graph.workbookFunctionResult",
+  "@odata.id": "/users('2abcad6a-2fca-4b6e-9577-e358a757d77d')/drive/root/workbook/functions/median()",
+  "error": null,
+  "value": 30
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

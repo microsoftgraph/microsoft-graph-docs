@@ -32,14 +32,11 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/calendars
 Content-type: application/json
-Content-length: 78
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "changeKey": "changeKey-value"
+  "name": "Volunteer"
 }
+
 ```
 In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
 ##### Response
@@ -52,14 +49,24 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 98
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/calendars/$entity",
+    "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/calendars('AAMkADJmMVAAA=')",
+    "id":"AAMkADJmMVAAA=",
+    "name":"Volunteer",
+    "color":"auto",
+    "isDefaultCalendar":false,
+    "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
+    "canShare":true,
+    "canViewPrivateItems":true,
+    "isShared":false,
+    "isSharedWithMe":false,
+    "canEdit":true,
+    "owner":{
+        "name":"Fanny Downs",
+        "address":"fannyd@adatum.onmicrosoft.com"
+    }
 }
 ```
 

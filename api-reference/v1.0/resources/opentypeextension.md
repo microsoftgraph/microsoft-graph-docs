@@ -1,6 +1,8 @@
 # openTypeExtension resource type
 
-An **openTypeExtension** is an OData v4 open type which allows you to specify at runtime custom data in instances of resources 
+Office 365 data extensions are represented by the **openTypeExtension** resource. 
+
+**openTypeExtension** is an OData v4 open type which allows you to specify at runtime custom data in instances of resources 
 defined in the Entity Data Model. This saves you time in defining new entity types just for this purpose.
 
 You can create data extensions of the **openTypeExtension** type in a [message](message.md), [event](event.md), or [contact](contact.md) in the signed-in user's

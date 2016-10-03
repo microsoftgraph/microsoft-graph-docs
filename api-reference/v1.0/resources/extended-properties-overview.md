@@ -22,7 +22,7 @@ Or, in the following Office 365 group resources:
 In most common scenarios, you should be able to use Office 365 Data Extensions (represented by [openTypeExtension](../resources/opentypeextension.md))
 to store and access custom data for resource instances in a user's mailbox. Use extended properties only if you
 need to access custom data for Outlook MAPI properties that are not already exposed in the 
-[Microsoft Graph API metadata](http://graph.microsoft.io/en-us/docs/overview/call_api).
+[Microsoft Graph API metadata](http://graph.microsoft.io/en-us/docs/overview/call_api). 
 
 ## Types of extended properties
 
@@ -38,9 +38,9 @@ a single-value extended property to get all the instances that have that propert
 **Note** You cannot use the REST API to get all the extended properties of a specific instance in one call.
   
 
-## id Formats
+### id Formats
 
-When creating a single-value or multi-value extended property, you can specify **id** in one of two formats, 
+When creating a single-value or multi-value extended property, you can specify the **id** in one of two formats, 
 based on either a string name or numeric identifier, and on the actual type of value or values of the property. Since 
 extended properties are in most cases inter-operating with defined MAPI properties not exposed in the 
 Microsoft Graph API metadata, for simplicity, the format you choose should reflect whether the corresponding MAPI 
@@ -55,19 +55,19 @@ in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Prop
 
 |**Format**|**Example**|**Description**|
 |:---------|:----------|:--------------|
-| "*{_type_} {_guid_} **Name** {_name_}*" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) it belongs to, and a name.         |
-| "*{_type_} {_guid_} **Id** {_id_}*"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifies a property by the namespace (the GUID) it belongs to, and an identifier.  |
+| "*{type} {guid} **Name** {name}*" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) it belongs to, and a name.         |
+| "*{type} {guid} **Id** {id}*"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifies a property by the namespace (the GUID) it belongs to, and an identifier.  |
 
 
 **Valid id formats for multi-value extended properties**
 
 |**Format**|**Example**|**Description**|
 |:---------|:----------|:--------------|
-| "*{_type_} {_guid_} **Name** {_name_}*" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by namespace (the GUID) and name.         |
-| "*{_type_} {_guid_} **Id** {_id_}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifies a property by namespace (the GUID) and identifier.   |
+| "*{type} {guid} **Name** {name}*" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by namespace (the GUID) and name.         |
+| "*{type} {guid} **Id** {id}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifies a property by namespace (the GUID) and identifier.   |
 
 
-## REST API operations
+### REST API operations
  
 Single-value extended property operations:
 - [Create an extended property in a new or existing resource instance](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md)

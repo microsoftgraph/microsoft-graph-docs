@@ -493,6 +493,7 @@
         <Item text="Send mail" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, user API" SEODescription="" />
         <Item text="Get mailbox settings" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" SEOKeyword="user: Get mailbox settings, Microsoft Graph API, user API" SEODescription="" />
         <Item text="Update mailbox settings" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" SEOKeyword="user: Update mailbox settings, Microsoft Graph API, user API" SEODescription="" />
+		<Item text="Get MailTips" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
       </Item>
       <Item text="calendar" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
         <Item text="List events" url="/en-us/api-reference/beta/api/user_list_events" SEOKeyword="List events, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
@@ -560,8 +561,8 @@
         <Item text="List people" url="/en-us/api-reference/beta/api/user_list_people" SEOKeyword="List people, Microsoft Graph API, user API" SEODescription="Retrieve a list of person objects." />
         <Item text="Get person" url="/en-us/api-reference/beta/api/person_get" SEOKeyword="Get person, Microsoft Graph API, person API" SEODescription="Retrieve the properties and relationships of person object." />
       </Item>
-      <Item text="Mention" url="/en-us/api-reference/beta/resources/mention" SEODescription="Represents a notification to a person based on the person's email address." />
-	</Item>
+	 <Item text="Mention" url="/en-us/api-reference/beta/resources/mention" SEODescription="Represents a notification to a person based on the person's email address." />    
+    </Item>
     <Item text="Tasks" url="/en-us/api-reference/beta/resources/task" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
       <Item text="task" url="/en-us/api-reference/beta/resources/task" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
         <Item text="List tasks" url="/en-us/api-reference/beta/api/user_list_tasks" SEOKeyword="List tasks, Microsoft Graph API, user API" SEODescription="Retrieve a list of task objects." />
@@ -780,6 +781,7 @@
         <Item text="Send mail" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, user API" SEODescription="" />
         <Item text="Get mailbox settings" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" SEOKeyword="user: Get mailbox settings, Microsoft Graph API, user API" SEODescription="" />
         <Item text="Update mailbox settings" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" SEOKeyword="user: Update mailbox settings, Microsoft Graph API, user API" SEODescription="" />
+		<Item text="Get MailTips" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
         <Item text="List attachments" url="/en-us/api-reference/beta/api/message_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Mail API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Create attachment" url="/en-us/api-reference/beta/api/message_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, message API" SEODescription="Use this API to create a new Attachment." />
         <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
@@ -835,6 +837,7 @@
         <Item text="Create event" url="/en-us/api-reference/beta/api/user_post_events" SEOKeyword="Create Event, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Event." />
         <Item text="Get event" url="/en-us/api-reference/beta/api/event_get" SEOKeyword="Get event, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve the properties and relationships of event object." />
         <Item text="Update event" url="/en-us/api-reference/beta/api/event_update" SEOKeyword="Update event, Microsoft Graph API, Outlook Calendar API" SEODescription="Update the properties of event object." />
+		<Item text="Forward event" url="/en-us/api-reference/beta/api/event_forward" SEODescription="" />
         <Item text="Delete event" url="/en-us/api-reference/beta/api/event_delete" SEOKeyword="Delete event, Microsoft Graph API, Outlook Calendar API" SEODescription="Delete event." />
         <Item text="Cancel event" url="/en-us/api-reference/beta/api/event_cancel" SEOKeyword="Cancel event, Microsoft Graph API, Outlook Calendar API" SEODescription="Cancel event." />
         <Item text="Accept events" url="/en-us/api-reference/beta/api/event_accept" SEOKeyword="Accept events, Microsoft Graph API, Outlook Calendar API" SEODescription="" />

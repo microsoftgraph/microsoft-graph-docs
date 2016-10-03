@@ -41,6 +41,7 @@ In the request body, supply the values for relevant fields that should be update
 |importance|String|The importance of the event: Low = 0, Normal = 1, High = 2. Possible values are: `Low`, `Normal`, `High`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
+|onlineMeetingUrl|String|A URL for an online meeting.|
 |location|Location|The location of the event.|
 |recurrence|PatternedRecurrence|The recurrence patern for the event.|
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|

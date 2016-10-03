@@ -60,7 +60,9 @@ A contact is an item in Outlook where you can organize and save information abou
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) collection|The collection of open type data extensions defined for the contact. Read-only. Nullable.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the contact. Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| Optional contact picture. You can get or set a photo for a contact.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the contact. Read-only. Nullable.|
 
 
 ## JSON representation

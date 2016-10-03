@@ -42,6 +42,7 @@ In the request body, supply the values for relevant fields that should be update
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 |location|[Location](../resources/location.md)|The location of the event.|
+|onlineMeetingUrl|String|A URL for an online meeting.|
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|The recurrence patern for the event.|
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|

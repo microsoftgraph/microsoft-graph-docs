@@ -17,7 +17,7 @@ Office 365 data extensions or extended properties, and how to specify extended p
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|string|The property identifier. Read-only.|
+|id|string|The property ID used to identify the property. Read-only.|
 |value|string|A property value.|
 
 ## Relationships

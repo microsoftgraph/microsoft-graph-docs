@@ -55,7 +55,7 @@ time zone, and language settings.
   "name": "get_mailboxsettings_1"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/mailboxSettings
+GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
 ##### Response 1
 The response includes all the mailbox settings. 
@@ -71,7 +71,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/mailboxSettings",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings",
     "automaticRepliesSetting": {
         "status": "Scheduled",
         "externalAudience": "All",
@@ -101,7 +101,7 @@ The second example gets specifically the automatic replies settings of the signe
   "name": "get_mailboxsettings_2"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
+GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 ```
 ##### Response 2
 The response includes only the automatic replies settings. 
@@ -117,7 +117,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/api/beta/$metadata#Me/mailboxSettings/automaticRepliesSetting",
+    "@odata.context": "https://graph.microsoft.com/api/v1.0/$metadata#Me/mailboxSettings/automaticRepliesSetting",
     "status": "alwaysEnabled",
     "externalAudience": "None",
     "scheduledStartDateTime": {

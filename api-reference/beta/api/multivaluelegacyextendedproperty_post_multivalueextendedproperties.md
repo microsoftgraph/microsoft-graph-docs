@@ -108,7 +108,7 @@ PATCH /groups/<id>/events/<id>
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |_URL parameters_|
-|id|string|A unique identifier for an object, represented by its **id** property, in the corresponding collection. Required.|
+|id|string|A unique identifier for an object in the corresponding collection. Required.|
 |_Body parameters_|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection| An array of one or more multi-valued extended properties. |
 |id|String|For each property in the **multiValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
@@ -220,6 +220,7 @@ To see the newly created extended property, [get the event expanded with the ext
 The second example creates one multi-value extended property for the specified message. That extended property is the only
 element in the **multiValueExtendedProperties** collection. The request body includes the following for the 
 extended property:
+
 - **id** specifies the property as an array of strings with the specified GUID and the name `Palette`.
 - **value** specifies `Palette` as an array of 3 string values, `["Green", "Aqua", "Blue"]`.
 

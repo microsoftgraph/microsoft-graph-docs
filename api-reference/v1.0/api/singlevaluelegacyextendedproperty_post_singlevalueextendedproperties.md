@@ -108,7 +108,7 @@ PATCH /groups/<id>/events/<id>
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |_URL parameters_|
-|id|string|A unique identifier for an object, represented by its **id** property, in the corresponding collection. Required.|
+|id|string|A unique identifier for an object in the corresponding collection. Required.|
 |_Body parameters_|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) collection| An array of one or more single-valued extended properties. |
 |id|String|For each property in the **singleValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
@@ -155,13 +155,12 @@ a response code but not the new post nor the extended property.
 The first example creates a new event and a single-value extended property in the same POST operation. Apart from the properties you'd normally 
 include for a new event, the request body includes the **singleValueExtendedProperties** collection that contains one single-value 
 extended property, and the following for the property:
-
 - **id** specifies the property type as `String`, the GUID, and the property named `Fun`.
 - **value** specifies `Food` as the value of the `Fun` property. 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/me/events
+POST https://graph.microsoft.com/v1.0/me/events
 Content-Type: application/json
 
 {
@@ -217,7 +216,7 @@ extended property:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA=')
+PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA=')
 
 Content-Type: application/json
 

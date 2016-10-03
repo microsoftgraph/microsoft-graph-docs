@@ -58,19 +58,30 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 147
 
 {
-  "value": [
-    {
-      "name": "name-value",
-      "color": {
-      },
-      "changeKey": "changeKey-value",
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#me/calendars",
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
+            "id": "AAMkAGI2TGuLAAA=",
+            "name": "Calendar",
+            "color": "auto",
+            "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
+            "isDefaultCalendar": true,
+            "canShare":true,
+            "canViewPrivateItems":true,
+            "isShared":false,
+            "isSharedWithMe":false,
+            "canEdit":true,
+            "owner":{
+                "name":"Fanny Downs",
+                "address":"fannyd@adatum.onmicrosoft.com"
+            }
+        }
+    ]
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

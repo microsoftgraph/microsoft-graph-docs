@@ -47,3 +47,4 @@ The following Microsoft Graph features are also available in preview (on the `/b
 * Applications
 * Service Principals
 * Directory schema extensions
+* Webhooks

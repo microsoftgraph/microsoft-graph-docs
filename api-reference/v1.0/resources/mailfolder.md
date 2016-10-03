@@ -43,6 +43,8 @@ MailFolders in Outlook can contain more than one type of items, for example, the
 |:---------------|:--------|:----------|
 |childFolders|[MailFolder](mailfolder.md) collection|The collection of child folders in the mailFolder.|
 |messages|[Message](message.md) collection|The collection of messages in the mailFolder.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.|
 
 
 ## JSON representation

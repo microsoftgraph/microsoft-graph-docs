@@ -1,6 +1,6 @@
 # Create inferenceClassificationOverride
 
-Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified 
+Create a [Focused Inbox](../resources/manage_focused_inbox.md) override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified 
 as specified in the override.
 
 **Note**
