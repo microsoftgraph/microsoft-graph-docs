@@ -66,29 +66,10 @@ If successful, this method returns a `204 No Content` response code.
   "name": "update_user"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me
+PATCH https://graph.microsoft.com/v1.0/c334ef98-2a97-4e70-a96f-5a9bf5843b08
 
 {
-  "accountEnabled": true,
-  "assignedLicenses": [
-    {
-      "disabledPlans": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+  "displayName": "First NewLastName",
 }
 ```
 ##### Response
@@ -100,7 +81,6 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 } -->
 ```http
 HTTP/1.1 204 No Content
-Content-type: application/json
 }
 ```
 
