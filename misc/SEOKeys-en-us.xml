@@ -51,7 +51,9 @@
         <Item text="List mail folders" url="/en-us/api-reference/v1.0/api/user_list_mailfolders" SEOKeyword="List mailFolders, Microsoft Graph API, Users API" SEODescription="Retrieve a list of mailfolder objects." />
         <Item text="Create mail folder" url="/en-us/api-reference/v1.0/api/user_post_mailfolders" SEOKeyword="Create MailFolder, Microsoft Graph API, Users API" SEODescription="Use this API to create a new MailFolder." />
         <Item text="Send mail" url="/en-us/api-reference/v1.0/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, user API" SEODescription="" />
-      </Item>
+		<Item text="Get mailbox settings" url="/en-us/api-reference/v1.0/api/mailboxsettings_get" SEODescription="" />
+		<Item text="Update mailbox settings" url="/en-us/api-reference/v1.0/api/mailboxsettings_update" SEODescription="" />
+	  </Item>
       <Item text="calendar" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="Calendar API">
         <Item text="List events" url="/en-us/api-reference/v1.0/api/user_list_events" SEOKeyword="List events, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
         <Item text="Create event" url="/en-us/api-reference/v1.0/api/user_post_events" SEOKeyword="Create Event, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Event." />
@@ -175,7 +177,7 @@
         <Item text="List range" url="/en-us/api-reference/v1.0/api/nameditem_range" SEOKeyword="" SEODescription="" />
       </Item>
     </Item>
-    <Item text="Outlook Mail" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="Outlook Mail APIs">
+    <Item text="Outlook mail" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="Outlook Mail APIs">
       <Item text="message" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="Mail APIs">
         <Item text="List messages" url="/en-us/api-reference/v1.0/api/user_list_messages" SEOKeyword="List messages, Microsoft Graph API, Users API" SEODescription="Retrieve a list of message objects." />
         <Item text="Create message" url="/en-us/api-reference/v1.0/api/user_post_messages" SEOKeyword="Create Message, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Message." />
@@ -232,8 +234,18 @@
         <Item text="Get reference attachment" url="/en-us/api-reference/v1.0/api/referenceattachment_get" SEOKeyword="Get referenceAttachment, Microsoft Graph API, referenceattachment API" SEODescription="Retrieve the properties and relationships of referenceattachment object." />
         <Item text="Delete reference attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" SEOKeyword="Delete attachment, Microsoft Graph API, attachment API" SEODescription="Delete attachment." />
       </Item>
+	  <Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
+		<Item text="Single-value extended property" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
+			<Item text="Get single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>
+		<Item text="Multi-value extended property" url="/en-us/api-reference/v1.0/resources/multivaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
+			<Item text="Get multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>
+	  </Item> 
     </Item>
-    <Item text="Outlook Calendar" url="/en-us/api-reference/v1.0/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
+    <Item text="Outlook calendar" url="/en-us/api-reference/v1.0/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
       <Item text="event" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="Calendar API">
         <Item text="List events" url="/en-us/api-reference/v1.0/api/user_list_events" SEOKeyword="List events, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
         <Item text="Create event" url="/en-us/api-reference/v1.0/api/user_post_events" SEOKeyword="Create Event, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Event." />
@@ -309,6 +321,16 @@
         <Item text="Get reference attachment" url="/en-us/api-reference/v1.0/api/referenceattachment_get" SEOKeyword="Get referenceAttachment, Microsoft Graph API, referenceattachment API" SEODescription="Retrieve the properties and relationships of referenceattachment object." />
         <Item text="Delete reference attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" SEOKeyword="Delete attachment, Microsoft Graph API, attachment API" SEODescription="Delete attachment." />
       </Item>
+	  <Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
+		<Item text="Single-value extended property" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
+			<Item text="Get single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>	
+		<Item text="Multi-value extended property" url="/en-us/api-reference/v1.0/resources/multivaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
+			<Item text="Get multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>
+	  </Item>
     </Item>
     <Item text="Personal contact" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="Personal contacts API">
       <Item text="contact" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="Contact">
@@ -331,6 +353,16 @@
         <Item text="List contacts in folder" url="/en-us/api-reference/v1.0/api/contactfolder_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, contactfolder API" SEODescription="Retrieve a list of contact objects." />
         <Item text="Create contact in folder" url="/en-us/api-reference/v1.0/api/contactfolder_post_contacts" SEOKeyword="Create Contact, Microsoft Graph API, contactfolder API" SEODescription="Use this API to create a new Contact." />
       </Item>
+	  <Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
+		<Item text="Single-value extended property" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
+			<Item text="Get single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>
+	  <Item text="Multi-value extended property" url="/en-us/api-reference/v1.0/resources/multivaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
+			<Item text="Get multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>
+	  </Item>
     </Item>
     <Item text="Groups" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="user groups, Microsoft Graph API, user API" SEODescription="Groups API">
       <Item text="group" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="user groups, Microsoft Graph API, user API" SEODescription="Groups API">
@@ -391,6 +423,15 @@
         <Item text="Create data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
         <Item text="Get data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
       </Item>
+	   <Item text="calendar" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="Calendar">
+        <Item text="List events" url="/en-us/api-reference/v1.0/api/group_list_events" SEOKeyword="List events, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
+        <Item text="Create event" url="/en-us/api-reference/v1.0/api/group_post_events" SEOKeyword="Create event, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new Event." />
+        <Item text="List calendar view" url="/en-us/api-reference/v1.0/api/group_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
+        <Item text="List attachments" url="/en-us/api-reference/v1.0/api/event_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
+        <Item text="Create attachment" url="/en-us/api-reference/v1.0/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
+        <Item text="Create data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Get data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+      </Item>
       <Item text="attachment" url="/en-us/api-reference/v1.0/resources/attachment" SEOKeyword="attachment API, Microsoft Graph API, attachment API" SEODescription="Attachment">
         <Item text="Get attachment" url="/en-us/api-reference/v1.0/api/attachment_get" SEOKeyword="Get attachment, Microsoft Graph API, attachment API" SEODescription="Retrieve the properties and relationships of attachment object." />
         <Item text="Delete attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" SEOKeyword="Delete attachment, Microsoft Graph API, attachment API" SEODescription="Delete attachment." />
@@ -407,15 +448,16 @@
         <Item text="Get reference attachment" url="/en-us/api-reference/v1.0/api/referenceattachment_get" SEOKeyword="Get referenceAttachment, Microsoft Graph API, referenceattachment API" SEODescription="Retrieve the properties and relationships of referenceattachment object." />
         <Item text="Delete reference attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" SEOKeyword="Delete attachment, Microsoft Graph API, attachment API" SEODescription="Delete attachment." />
       </Item>
-      <Item text="calendar" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="Calendar">
-        <Item text="List events" url="/en-us/api-reference/v1.0/api/group_list_events" SEOKeyword="List events, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
-        <Item text="Create event" url="/en-us/api-reference/v1.0/api/group_post_events" SEOKeyword="Create event, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new Event." />
-        <Item text="List calendar view" url="/en-us/api-reference/v1.0/api/group_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
-        <Item text="List attachments" url="/en-us/api-reference/v1.0/api/event_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
-        <Item text="Create attachment" url="/en-us/api-reference/v1.0/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
-        <Item text="Create data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
-        <Item text="Get data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
-      </Item>
+	  <Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
+		<Item text="Single-value extended property" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
+			<Item text="Get single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>
+	  <Item text="Multi-value extended property" url="/en-us/api-reference/v1.0/resources/multivaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
+			<Item text="Get multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>	  
+	  </Item>
       <Item text="drive" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="Drive">
         <Item text="Get drive" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="Get drive, Microsoft Graph API, drive API" SEODescription="Retrieve the properties and relationships of drive object." />
         <Item text="List children" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="List items, Microsoft Graph API, drive API" SEODescription="Retrieve a list of item objects." />
@@ -491,8 +533,9 @@
         <Item text="List mail folders" url="/en-us/api-reference/beta/api/user_list_mailfolders" SEOKeyword="List mailFolders, Microsoft Graph API, Users API" SEODescription="Retrieve a list of mailfolder objects." />
         <Item text="Create mail folder" url="/en-us/api-reference/beta/api/user_post_mailfolders" SEOKeyword="Create MailFolder, Microsoft Graph API, Users API" SEODescription="Use this API to create a new MailFolder." />
         <Item text="Send mail" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, user API" SEODescription="" />
-        <Item text="Get mailbox settings" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" SEOKeyword="user: Get mailbox settings, Microsoft Graph API, user API" SEODescription="" />
-        <Item text="Update mailbox settings" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" SEOKeyword="user: Update mailbox settings, Microsoft Graph API, user API" SEODescription="" />
+        <Item text="Get mailbox settings" url="/en-us/api-reference/beta/api/mailboxsettings_get" SEOKeyword="user: Get mailbox settings, Microsoft Graph API, user API" SEODescription="" />
+        <Item text="Update mailbox settings" url="/en-us/api-reference/beta/api/mailboxsettings_update" SEOKeyword="user: Update mailbox settings, Microsoft Graph API, user API" SEODescription="" />
+		<Item text="Get MailTips" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
       </Item>
       <Item text="calendar" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
         <Item text="List events" url="/en-us/api-reference/beta/api/user_list_events" SEOKeyword="List events, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
@@ -560,8 +603,8 @@
         <Item text="List people" url="/en-us/api-reference/beta/api/user_list_people" SEOKeyword="List people, Microsoft Graph API, user API" SEODescription="Retrieve a list of person objects." />
         <Item text="Get person" url="/en-us/api-reference/beta/api/person_get" SEOKeyword="Get person, Microsoft Graph API, person API" SEODescription="Retrieve the properties and relationships of person object." />
       </Item>
-      <Item text="Mention" url="/en-us/api-reference/beta/resources/mention" SEODescription="Represents a notification to a person based on the person's email address." />
-	</Item>
+	 <Item text="Mention" url="/en-us/api-reference/beta/resources/mention" SEODescription="Represents a notification to a person based on the person's email address." />    
+    </Item>
     <Item text="Tasks" url="/en-us/api-reference/beta/resources/task" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
       <Item text="task" url="/en-us/api-reference/beta/resources/task" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
         <Item text="List tasks" url="/en-us/api-reference/beta/api/user_list_tasks" SEOKeyword="List tasks, Microsoft Graph API, user API" SEODescription="Retrieve a list of task objects." />
@@ -761,7 +804,7 @@
         <Item text="Delete item" url="/en-us/api-reference/beta/api/listItem_delete" SEOKeyword="sharepoint, delete item, delete, microsoft graph api, sharepoint list api" SEODescription="" />
       </Item>
     </Item>
-    <Item text="Outlook Mail" url="/en-us/api-reference/beta/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
+    <Item text="Outlook mail" url="/en-us/api-reference/beta/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
       <Item text="message" url="/en-us/api-reference/beta/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
         <Item text="List messages" url="/en-us/api-reference/beta/api/user_list_messages" SEOKeyword="List messages, Microsoft Graph API, Users API" SEODescription="Retrieve a list of message objects." />
         <Item text="Create message" url="/en-us/api-reference/beta/api/user_post_messages" SEOKeyword="Create Message, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Message." />
@@ -778,16 +821,11 @@
         <Item text="Create Forward message" url="/en-us/api-reference/beta/api/message_createforward" SEOKeyword="Create Forward message, Microsoft Graph API, Outlook Mail API" SEODescription="" />
         <Item text="Forward messages" url="/en-us/api-reference/beta/api/message_forward" SEOKeyword="Forward messages, Microsoft Graph API, Outlook Mail API" SEODescription="" />
         <Item text="Send mail" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, user API" SEODescription="" />
-        <Item text="Get mailbox settings" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" SEOKeyword="user: Get mailbox settings, Microsoft Graph API, user API" SEODescription="" />
-        <Item text="Update mailbox settings" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" SEOKeyword="user: Update mailbox settings, Microsoft Graph API, user API" SEODescription="" />
+		<Item text="Get MailTips" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
         <Item text="List attachments" url="/en-us/api-reference/beta/api/message_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Mail API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Create attachment" url="/en-us/api-reference/beta/api/message_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, message API" SEODescription="Use this API to create a new Attachment." />
         <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
         <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, message API" SEODescription="Use this API to Get data extension." />
-        <Item text="Create single-value extended property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="Create single-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to create single-value extended property." />
-        <Item text="Get message with single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="Get message with single-value property, Microsoft Graph API, message API" SEODescription="Use this API to get message with single-value property." />
-        <Item text="Create multi-value extended property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="Create multi-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to Create multi-value extended property." />
-        <Item text="Get message with multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="Get message with multi-value property, Microsoft Graph API, message API" SEODescription="Use this API to Get message with multi-value property." />
       </Item>
       <Item text="Focused Inbox" url="/en-us/api-reference/beta/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph, Focused inbox" SEODescription="">
         <Item text="Create Override" url="/en-us/api-reference/beta/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph, Focused inbox" SEODescription="Create an override for a sender identified by an SMTP address." />
@@ -807,10 +845,6 @@
         <Item text="Create message in folder" url="/en-us/api-reference/beta/api/mailfolder_post_messages" SEOKeyword="Create message in folder, Microsoft Graph API, Outlook Mail API" SEODescription="Use this API to create a new Message." />
         <Item text="List child folders" url="/en-us/api-reference/beta/api/mailfolder_list_childfolders" SEOKeyword="List childFolders, Microsoft Graph API, Outlook Mail API" SEODescription="Retrieve a list of mailfolder objects." />
         <Item text="Create mail child folder" url="/en-us/api-reference/beta/api/mailfolder_post_childfolders" SEOKeyword="Create mailFolder, Microsoft Graph API, Outlook Mail API" SEODescription="Use this API to create a new MailFolder." />
-        <Item text="Create single-value extended property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="Create single-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to create single-value extended property." />
-        <Item text="Get folder with single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="Get message with single-value property, Microsoft Graph API, message API" SEODescription="Use this API to get message with single-value property." />
-        <Item text="Create multi-value extended property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="Create multi-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to Create multi-value extended property." />
-        <Item text="Get folder with multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="Get message with multi-value property, Microsoft Graph API, message API" SEODescription="Use this API to Get message with multi-value property." />
       </Item>
       <Item text="attachment" url="/en-us/api-reference/beta/resources/attachment" SEOKeyword="attachment API, Microsoft Graph API, attachment API" SEODescription="">
         <Item text="Get attachment" url="/en-us/api-reference/beta/api/attachment_get" SEOKeyword="Get attachment, Microsoft Graph API, attachment API" SEODescription="Retrieve the properties and relationships of attachment object." />
@@ -828,13 +862,24 @@
         <Item text="Get reference attachment" url="/en-us/api-reference/beta/api/referenceattachment_get" SEOKeyword="Get referenceAttachment, Microsoft Graph API, referenceattachment API" SEODescription="Retrieve the properties and relationships of referenceattachment object." />
         <Item text="Delete reference attachment" url="/en-us/api-reference/beta/api/attachment_delete" SEOKeyword="Delete attachment, Microsoft Graph API, attachment API" SEODescription="Delete attachment." />
       </Item>
+	   <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
+		<Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
+			<Item text="Get single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>
+	  <Item text="Multi-value extended property" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
+			<Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>	  
+	  </Item>  
     </Item>
-    <Item text="Outlook Calendar" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
+    <Item text="Outlook calendar" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
       <Item text="event" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
         <Item text="List events" url="/en-us/api-reference/beta/api/user_list_events" SEOKeyword="List events, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
         <Item text="Create event" url="/en-us/api-reference/beta/api/user_post_events" SEOKeyword="Create Event, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Event." />
         <Item text="Get event" url="/en-us/api-reference/beta/api/event_get" SEOKeyword="Get event, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve the properties and relationships of event object." />
         <Item text="Update event" url="/en-us/api-reference/beta/api/event_update" SEOKeyword="Update event, Microsoft Graph API, Outlook Calendar API" SEODescription="Update the properties of event object." />
+		<Item text="Forward event" url="/en-us/api-reference/beta/api/event_forward" SEODescription="" />
         <Item text="Delete event" url="/en-us/api-reference/beta/api/event_delete" SEOKeyword="Delete event, Microsoft Graph API, Outlook Calendar API" SEODescription="Delete event." />
         <Item text="Cancel event" url="/en-us/api-reference/beta/api/event_cancel" SEOKeyword="Cancel event, Microsoft Graph API, Outlook Calendar API" SEODescription="Cancel event." />
         <Item text="Accept events" url="/en-us/api-reference/beta/api/event_accept" SEOKeyword="Accept events, Microsoft Graph API, Outlook Calendar API" SEODescription="" />
@@ -847,10 +892,6 @@
         <Item text="Create Attachment" url="/en-us/api-reference/beta/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
         <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
         <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, message API" SEODescription="Use this API to Get data extension." />
-        <Item text="Create single-value extended property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="Create single-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to create single-value extended property." />
-        <Item text="Get event with single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="Get message with single-value property, Microsoft Graph API, message API" SEODescription="Use this API to get message with single-value property." />
-        <Item text="Create multi-value extended property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="Create multi-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to Create multi-value extended property." />
-        <Item text="Get event with multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="Get message with multi-value property, Microsoft Graph API, message API" SEODescription="Use this API to Get message with multi-value property." />
       </Item>
       <Item text="event message" url="/en-us/api-reference/beta/resources/eventmessage" SEOKeyword="eventmessage API, Microsoft Graph API, eventmessage API" SEODescription="A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message.">
         <Item text="Get event message" url="/en-us/api-reference/beta/api/eventmessage_get" SEOKeyword="Get event message, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve the properties and relationships of eventmessage object." />
@@ -869,10 +910,6 @@
         <Item text="List attachments" url="/en-us/api-reference/beta/api/eventmessage_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
         <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, message API" SEODescription="Use this API to Get data extension." />
-        <Item text="Create single-value extended property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="Create single-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to create single-value extended property." />
-        <Item text="Get message with single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="Get message with single-value property, Microsoft Graph API, message API" SEODescription="Use this API to get message with single-value property." />
-        <Item text="Create multi-value extended property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="Create multi-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to Create multi-value extended property." />
-        <Item text="Get message with multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="Get message with multi-value property, Microsoft Graph API, message API" SEODescription="Use this API to Get message with multi-value property." />
       </Item>
       <Item text="calendar" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
         <Item text="List calendars" url="/en-us/api-reference/beta/api/user_list_calendars" SEOKeyword="List calendars, Microsoft Graph API, Users API" SEODescription="Retrieve a list of calendar objects." />
@@ -885,10 +922,6 @@
         <Item text="Find meeting times" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="Meeting times, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
         <Item text="Create Event" url="/en-us/api-reference/beta/api/calendar_post_events" SEOKeyword="Create Event, Microsoft Graph API, calendar API" SEODescription="Use this API to create a new Event." />
         <Item text="Reminder view" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="" />
-        <Item text="Create single-value extended property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="Create single-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to create single-value extended property." />
-        <Item text="Get calendar with single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="Get message with single-value property, Microsoft Graph API, message API" SEODescription="Use this API to get message with single-value property." />
-        <Item text="Create multi-value extended property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="Create multi-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to Create multi-value extended property." />
-        <Item text="Get calendar with multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="Get message with multi-value property, Microsoft Graph API, message API" SEODescription="Use this API to Get message with multi-value property." />
       </Item>
       <Item text="calendar view" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects.">
         <Item text="List calendar view" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
@@ -919,6 +952,16 @@
         <Item text="Get reference attachment" url="/en-us/api-reference/beta/api/referenceattachment_get" SEOKeyword="Get referenceAttachment, Microsoft Graph API, referenceattachment API" SEODescription="Retrieve the properties and relationships of referenceattachment object." />
         <Item text="Delete reference attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" SEOKeyword="Delete attachment, Microsoft Graph API, attachment API" SEODescription="Delete attachment." />
       </Item>
+	   <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
+		<Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
+			<Item text="Get single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>
+	  <Item text="Multi-value extended property" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
+			<Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>	  
+	  </Item>  
     </Item>
     <Item text="Personal contact" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
       <Item text="contact" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
@@ -929,10 +972,6 @@
         <Item text="Delete contact" url="/en-us/api-reference/beta/api/contact_delete" SEOKeyword="Delete contact, Microsoft Graph API, contact API" SEODescription="Delete contact." />
         <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
         <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, message API" SEODescription="Use this API to Get data extension." />
-        <Item text="Create single-value extended property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="Create single-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to create single-value extended property." />
-        <Item text="Get contact with single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="Get message with single-value property, Microsoft Graph API, message API" SEODescription="Use this API to get message with single-value property." />
-        <Item text="Create multi-value extended property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="Create multi-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to Create multi-value extended property." />
-        <Item text="Get contact with multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="Get message with multi-value property, Microsoft Graph API, message API" SEODescription="Use this API to Get message with multi-value property." />
       </Item>
       <Item text="contact folder" url="/en-us/api-reference/beta/resources/contactfolder" SEOKeyword="contactfolder API, Microsoft Graph API, contactfolder API" SEODescription="A folder that contains contacts.">
         <Item text="List contact folders" url="/en-us/api-reference/beta/api/user_list_contactfolders" SEOKeyword="List contactFolders, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contactfolder objects." />
@@ -944,11 +983,17 @@
         <Item text="Create child folder" url="/en-us/api-reference/beta/api/contactfolder_post_childfolders" SEOKeyword="Create ContactFolder, Microsoft Graph API, contactfolder API" SEODescription="Use this API to create a new ContactFolder." />
         <Item text="List contacts in folder" url="/en-us/api-reference/beta/api/contactfolder_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, contactfolder API" SEODescription="Retrieve a list of contact objects." />
         <Item text="Create contact in folder" url="/en-us/api-reference/beta/api/contactfolder_post_contacts" SEOKeyword="Create Contact, Microsoft Graph API, contactfolder API" SEODescription="Use this API to create a new Contact." />
-        <Item text="Create single-value extended property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="Create single-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to create single-value extended property." />
-        <Item text="Get folder with single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="Get message with single-value property, Microsoft Graph API, message API" SEODescription="Use this API to get message with single-value property." />
-        <Item text="Create multi-value extended property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="Create multi-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to Create multi-value extended property." />
-        <Item text="Get folder with multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="Get message with multi-value property, Microsoft Graph API, message API" SEODescription="Use this API to Get message with multi-value property." />
       </Item>
+	   <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
+		<Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
+			<Item text="Get single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>
+	  <Item text="Multi-value extended property" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
+			<Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>	  
+	  </Item> 
     </Item>
     <Item text="Groups" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
       <Item text="group" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
@@ -1007,10 +1052,15 @@
         <Item text="Create attachment" url="/en-us/api-reference/beta/api/post_post_attachments" SEOKeyword="Create post attachment, Microsoft Graph API, Outlook conversation API" SEODescription="Use this API to create a new Attachment." />
         <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
         <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, message API" SEODescription="Use this API to Get data extension." />
-        <Item text="Create single-value extended property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="Create single-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to create single-value extended property." />
-        <Item text="Get post with single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="Get message with single-value property, Microsoft Graph API, message API" SEODescription="Use this API to get message with single-value property." />
-        <Item text="Create multi-value extended property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="Create multi-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to Create multi-value extended property." />
-        <Item text="Get post with multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="Get message with multi-value property, Microsoft Graph API, message API" SEODescription="Use this API to Get message with multi-value property." />
+      </Item>
+	  <Item text="calendar" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
+        <Item text="List events" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="List events, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
+        <Item text="Create event" url="/en-us/api-reference/beta/api/group_post_events" SEOKeyword="Create event, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new Event." />
+        <Item text="List calendar view" url="/en-us/api-reference/beta/api/group_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
+        <Item text="List attachments" url="/en-us/api-reference/beta/api/event_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
+        <Item text="Create attachment" url="/en-us/api-reference/beta/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
+        <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
+        <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, message API" SEODescription="Use this API to Get data extension." />
       </Item>
       <Item text="attachment" url="/en-us/api-reference/beta/resources/attachment" SEOKeyword="attachment API, Microsoft Graph API, attachment API" SEODescription="">
         <Item text="Get attachment" url="/en-us/api-reference/beta/api/attachment_get" SEOKeyword="Get attachment, Microsoft Graph API, attachment API" SEODescription="Retrieve the properties and relationships of attachment object." />
@@ -1028,19 +1078,16 @@
         <Item text="Get reference attachment" url="/en-us/api-reference/beta/api/referenceattachment_get" SEOKeyword="Get referenceAttachment, Microsoft Graph API, referenceattachment API" SEODescription="Retrieve the properties and relationships of referenceattachment object." />
         <Item text="Delete reference attachment" url="/en-us/api-reference/beta/api/attachment_delete" SEOKeyword="Delete attachment, Microsoft Graph API, attachment API" SEODescription="Delete attachment." />
       </Item>
-      <Item text="calendar" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
-        <Item text="List events" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="List events, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
-        <Item text="Create event" url="/en-us/api-reference/beta/api/group_post_events" SEOKeyword="Create event, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new Event." />
-        <Item text="List calendar view" url="/en-us/api-reference/beta/api/group_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
-        <Item text="List attachments" url="/en-us/api-reference/beta/api/event_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
-        <Item text="Create attachment" url="/en-us/api-reference/beta/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
-        <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
-        <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, message API" SEODescription="Use this API to Get data extension." />
-        <Item text="Create single-value extended property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="Create single-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to create single-value extended property." />
-        <Item text="Get event with single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="Get message with single-value property, Microsoft Graph API, message API" SEODescription="Use this API to get message with single-value property." />
-        <Item text="Create multi-value extended property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="Create multi-value extended property, Microsoft Graph API, message API" SEODescription="Use this API to Create multi-value extended property." />
-        <Item text="Get event with multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="Get message with multi-value property, Microsoft Graph API, message API" SEODescription="Use this API to Get message with multi-value property." />
-      </Item>
+	  <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
+		<Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
+			<Item text="Get single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>
+	  <Item text="Multi-value extended property" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="" >
+			<Item text="Create multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
+			<Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
+		</Item>	  
+	  </Item>
       <Item text="drive" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="">
         <Item text="Get drive" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="Get drive, Microsoft Graph API, drive API" SEODescription="Retrieve the properties and relationships of drive object." />
         <Item text="List children" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="List items, Microsoft Graph API, drive API" SEODescription="Retrieve a list of item objects." />
