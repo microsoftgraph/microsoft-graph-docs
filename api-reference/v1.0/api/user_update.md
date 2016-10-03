@@ -67,6 +67,7 @@ If successful, this method returns a `204 No Content` response code.
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/c334ef98-2a97-4e70-a96f-5a9bf5843b08
+Content-type: application/json
 
 {
   "displayName": "First NewLastName",
