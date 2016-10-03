@@ -21,6 +21,7 @@ One of the following [permissions](https://graph.microsoft.io/en-us/docs/authori
 
 ## Common properties
 The following represent the default set of properties that are returned when getting a user or listing users.  These are a subset of all available properties. To get more user properties, use the `$select` query parameter. 
+
 | Property | Description |
 |----------|-------------|
 |id | The unique identifier for the user.|
