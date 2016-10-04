@@ -68,9 +68,9 @@ If successful, this method returns a `204 No Content` response code.
 ```http
 PATCH https://graph.microsoft.com/v1.0/c334ef98-2a97-4e70-a96f-5a9bf5843b08
 Content-type: application/json
-
+Content-length: 45
 {
-  "displayName": "First NewLastName",
+  "displayName": "First NewLastName"
 }
 ```
 ##### Response
@@ -82,7 +82,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 } -->
 ```http
 HTTP/1.1 204 No Content
-}
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
