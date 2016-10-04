@@ -44,7 +44,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('me')/messages",
   "value":[
     {
       "@odata.etag":"etag-value",
