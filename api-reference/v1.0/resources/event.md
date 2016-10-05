@@ -7,7 +7,7 @@ An event in a calendar.
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List events](../api/user_list_events.md)|[event](event.md) collection |Retrieve a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single instance meetings and series masters.|
-|[Create Event](../api/user_post_events.md) |[event](event.md)| Create a new Event by posting to the instances collection.|
+|[Create event](../api/user_post_events.md) |[event](event.md)| Create a new event by posting to the instances collection.|
 |[Get event](../api/event_get.md) | [event](event.md) |Read properties and relationships of event object.|
 |[Update](../api/event_update.md) | [event](event.md) |Update event object. |
 |[Delete](../api/event_delete.md) | None |Delete event object. |
@@ -17,12 +17,30 @@ An event in a calendar.
 |[dismissReminder](../api/event_dismissreminder.md)|None|Dismiss the reminder for the specified event.|
 |[snoozeReminder](../api/event_snoozereminder.md)|None|Snooze the reminder for the specified event.|
 |[List instances](../api/event_list_instances.md) |[event](event.md) collection| Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the occurrences and exceptions of the event in the specified time range.|
+
+
+**Attachment methods**
+
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
 |[List attachments](../api/event_list_attachments.md) |[attachment](attachment.md) collection| Get a Attachment object collection.|
-|[Create Attachment](../api/event_post_attachments.md) |[attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
+|[Create attachment](../api/event_post_attachments.md) |[attachment](attachment.md)| Create a new attachment by posting to the attachments collection.|
+
+**Data extension methods**
+
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
 |[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
 |[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
 
+**Extended property methods**
 
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[event](event.md)  |Create one or more single-value extended properties in a new or existing event.   |
+|[Get event with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [event](event.md) | Get events that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [event](event.md) | Create one or more multi-value extended properties in a new or existing event.  |
+|[Get event with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [event](event.md) | Get an event that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -44,6 +62,7 @@ An event in a calendar.
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|The location of the event.|
+|onlineMeetingUrl|String|A URL for an online meeting.|
 |organizer|[recipient](recipient.md)|The organizer of the event.|
 |originalEndTimeZone|String|The end time zone that was set when the event was created.|
 |originalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -67,6 +86,8 @@ An event in a calendar.
 |calendar|[calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
 |extensions|[Extension](extension.md) collection|The collection of open type data extensions defined for the contact. Read-only. Nullable.|
 |instances|[event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the event. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the event. Read-only. Nullable.|
 
 
 ## JSON representation
@@ -78,7 +99,10 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "attachments",
     "calendar",
-    "instances"
+    "extensions",
+    "instances",
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.event"
@@ -103,6 +127,7 @@ Here is a JSON representation of the resource
   "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
+  "onlineMeetingUrl": "string",
   "organizer": {"@odata.type": "microsoft.graph.recipient"},
   "originalEndTimeZone": "string",
   "originalStart": "String (timestamp)",
