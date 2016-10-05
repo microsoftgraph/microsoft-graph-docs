@@ -21,21 +21,21 @@ A message in a mailFolder.
 |[replyAll](../api/message_replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
 |[send](../api/message_send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
 
-### Attachment methods
+#### Attachment methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Create attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Create a new attachment by posting to the attachments collection.|
 |[List attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Gets all attachments on a message.|
 
-### Data extension methods
+#### Data extension methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
 |[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
 
-### Extended property methods
+#### Extended property methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -44,7 +44,7 @@ A message in a mailFolder.
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [message](message.md) | Create one or more multi-value extended properties in a new or existing message.  |
 |[Get message with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [message](message.md) | Get a message that contains a multi-value extended property by using `$expand`. |
 
-### Mailbox setting methods
+#### Mailbox setting methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
