@@ -44,7 +44,7 @@ Microsoft Graph exposes two endpoints: /v1.0 and /beta. The /v1.0 endpoint inclu
 
 ## Explore Microsoft Graph
 
-- [Get started](../get-started/get-started) using Microsoft Graph and the platform of your choice.
+- [Get started](http://graph.microsoft.io/en-us/docs/get-started/get-started) using Microsoft Graph and the platform of your choice.
 - Discover the resources and operations that you can use in your production apps by browsing the TOC.
 - Preview the new [/beta APIs](http://graph.microsoft.io/en-us/docs/api-reference/beta/beta-overview).
 - Visit the [Microsoft Graph Explorer](https://graph.microsoft.io/en-us/graph-explorer).
