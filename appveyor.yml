@@ -9,11 +9,9 @@ test_script:
 
     $apidocs = $pkgfolder.name + "\tools\apidocs.exe"
 
-
     $path = $env:APPVEYOR_BUILD_FOLDER + "\api-reference"
 
     $reference_paths = [System.IO.Directory]::GetDirectories($path)
-
 
     ForEach($reference in $reference_paths)
 
@@ -22,6 +20,8 @@ test_script:
     $parms = "check-all", "--appveyor-url", $env:APPVEYOR_API_URL, "--path", $reference, "--relax-string-validation", "--ignore-warnings"
 
     & $apidocs $parms
+
+    if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
 
     }
 notifications:
