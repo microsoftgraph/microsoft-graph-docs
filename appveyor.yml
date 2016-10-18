@@ -1,0 +1,33 @@
+version: 1.0.{build}
+nuget:
+  account_feed: true
+build_script:
+- ps: nuget install MarkdownScanner.BinaryTools
+test_script:
+- ps: >-
+    $pkgfolder = Get-ChildItem -Directory | Where-Object {$_.name -match "MarkdownScanner.BinaryTools."}
+
+    $apidocs = $pkgfolder.name + "\tools\apidocs.exe"
+
+
+    $path = $env:APPVEYOR_BUILD_FOLDER + "\api-reference"
+
+    $reference_paths = [System.IO.Directory]::GetDirectories($path)
+
+
+    ForEach($reference in $reference_paths)
+
+    {
+
+    $parms = "check-all", "--appveyor-url", $env:APPVEYOR_API_URL, "--path", $reference, "--relax-string-validation", "--ignore-warnings"
+
+    & $apidocs $parms
+
+    }
+notifications:
+- provider: Slack
+  incoming_webhook: https://hooks.slack.com/services/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
+  channel: '#build-status'
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: false
