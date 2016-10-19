@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.invitations"
+  "@odata.type": "microsoft.graph.invitation"
 } -->
 ```http
 HTTP/1.1 201 OK
