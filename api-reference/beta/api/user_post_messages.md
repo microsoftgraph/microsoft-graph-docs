@@ -2,7 +2,11 @@
 
 Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
 
-You can include an [attachment](../resources/attachment.md) while creating the draft in the same **Post** call.
+While creating the draft in the same **POST** call, you can:
+
+- Include an [attachment](../resources/attachment.md) 
+- Use a [mention](../resources/mention.md) to call out another user in the new message
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.ReadWrite*
@@ -18,15 +22,20 @@ POST /users/<id | userPrincipalName>/messages
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply a JSON representation of [Message](../resources/message.md) object.
+In the request body, supply a JSON representation of the [message](../resources/message.md) object.
+
+If you want to use **mention** to call out another user in the new message:
+
+- Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.
+- For each mention in the **mentions** property, you must specify the **mentioned** and **createdBy** properties.
 
 
 ## Response
-If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
+If successful, this method returns a `201, Created` response code and a [message](../resources/message.md) object in the response body.
 
 ## Example
 ##### Request 1
-Here is an example of the request.
+Here is an example of the request to create a draft of a new message.
 <!-- {
   "blockType": "request",
   "name": "create_message_from_user"
@@ -86,6 +95,106 @@ Content-length: 248
       }
   ]
 }
+```
+
+##### Request 2
+The next example includes a mention of another user Dana Swope in the draft.
+
+In the request body, supply a JSON representation of [message](../resources/message.md) object.
+<!-- {
+  "blockType": "request",
+  "name": "create_message_with_mentions_from_user"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/messages
+Content-type: application/json
+Content-length: 248
+
+{
+    "subject": "Party planning",
+    "toRecipients":[
+      {
+          "emailAddress":{
+              "name":"Fanny Downs",
+              "address":"fannyd@contoso.onmicrosoft.com"
+          }
+      }
+    ],
+    "mentions":[
+      {    
+        "mentioned":{
+          "name":"Dana Swope",
+          "address":"danas@contoso.onmicrosoft.com"
+         },
+        "createdBy": {
+            "name":"Randi Welch",
+            "address":"randiw@contoso.onmicrosoft.com"
+        }
+      }
+    ]
+}
+```
+
+
+##### Response 2
+Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 748
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/Messages/$entity",
+  "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages('AQMkADJmMTUAAAW1fsAAAAA==')",
+  "@odata.etag":"W/\"CQAAABYAAAAPFhK2FclcRbABBJhCde8iAAAAbYj7\"",
+  "id":"AQMkADJmMTUAAAW1fsAAAAA==",
+  "body":{
+    "contentType":"Text",
+    "content":""
+  },
+  "bodyPreview":"",
+  "sender":null,
+  "from":null,
+  "subject": "Party planning",
+  "toRecipients":[
+    {
+      "emailAddress":{
+        "name":"Fanny Downs",
+        "address":"fannyd@contoso.onmicrosoft.com"
+      }
+    }
+  ],
+  "mentionsPreview":{
+    "isMentioned":false
+  },
+  "mentions@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages('AQMkADJmMTUAAAW1fsAAAAA%3D%3D')/mentions",
+  "mentions":[
+    {
+      "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages('AQMkADJmMTUAAAW1fsAAAAA==')/mentions('4577bba4-b063-4cea-9073-6f7ca815fcec')",
+      "id":"4577bba4-b063-4cea-9073-6f7ca815fcec",
+      "mentioned":{
+        "name":"Dana Swope",
+        "address":"danas@contoso.onmicrosoft.com"
+      },
+      "mentionText":null,
+      "clientReference":null,
+      "createdBy":{
+        "name":"Randi Welch",
+        "address":"randiw@contoso.onmicrosoft.com"
+      },
+      "createdDateTime":"2016-07-22T02:22:44Z",
+      "serverCreatedDateTime":"2016-07-22T02:22:44.201Z",
+      "deepLink":null,
+      "application":null
+    }
+  ]
+}
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -38,6 +38,14 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    
+  ],
+  "@odata.type": "microsoft.graph.invitation"
+}-->
+
 ```json
 {
   "invitedUserDisplayName": "string",
