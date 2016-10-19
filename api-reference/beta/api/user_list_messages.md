@@ -1,6 +1,6 @@
 # List messages
 
-Get all the messages in the signed-in user's mailbox (excluding the Deleted Items and Clutter folders). 
+Get all the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). 
 
 In particular, you can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user.
 
