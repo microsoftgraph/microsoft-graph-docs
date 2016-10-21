@@ -56,7 +56,7 @@ The following methods are available for drive resources.
 | [Get root folder for a drive](../api/item_get.md)         | `GET /drives/{drive-id}/root`        |
 | [List items in a drive](../api/item_list_children.md)     | `GET /me/drive/root/children`        |
 | [List changes in a drive](../api/item_delta.md)           | `GET /me/drive/root/delta`           |
-| [Search items in a drive](../api/item_search.md)          | `GET /me/drive/search(q='text')      |
+| [Search items in a drive](../api/item_search.md)          | `GET /me/drive/search(q='text')`     |
 
 
 
