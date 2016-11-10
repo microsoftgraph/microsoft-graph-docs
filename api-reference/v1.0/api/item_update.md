@@ -33,7 +33,7 @@ For best performance your app should not include properties that haven't changed
 If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
-This example renames the file and adds a description to the driveItem.
+This example renames the driveItem.
 
 <!-- {
   "blockType": "request",
@@ -44,8 +44,7 @@ PATCH /me/drive/items/<item-id>
 Content-type: application/json
 
 {
-	"name": "new-file-name.docx",
-  "description": "Adding a description to this file",
+	"name": "new-file-name.docx"
 }
 ```
 
@@ -64,7 +63,6 @@ Content-type: application/json
 {
 	"id": "01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK",
 	"name": "new-file-name.docx",
-  "description": "Adding a description to this file",
 	"file": { }
 }
 ```
