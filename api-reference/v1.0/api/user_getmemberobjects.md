@@ -26,9 +26,8 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200, OK` response code and String collection in the response body that contains the IDs of the groups and directory roles that the user is a member of.
 
 ## Example
-Here is an example of how to call this API.
+
 ##### Request
-Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "user_getmemberobjects"
@@ -36,7 +35,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/getMemberObjects
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": true
@@ -44,7 +42,7 @@ Content-length: 33
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -54,11 +52,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [
-    "string-value"
+    "fee2c45b-915a-4a64-b130-f4eb9e75525e",
+    "c9ee2d50-9e8a-4352-b97c-4c2c99557c22"
   ]
 }
 ```

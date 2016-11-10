@@ -41,17 +41,17 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/checkMemberGroups
 Content-type: application/json
-Content-length: 44
 
 {
   "groupIds": [
-    "groupIds-value"
+    "fee2c45b-915a-4a64-b130-f4eb9e75525e",
+    "e0c3beaf-eeb4-43d8-abc5-94f037a65697"
   ]
 }
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -65,7 +65,7 @@ Content-length: 39
 
 {
   "value": [
-    "string-value"
+    "fee2c45b-915a-4a64-b130-f4eb9e75525e"
   ]
 }
 ```

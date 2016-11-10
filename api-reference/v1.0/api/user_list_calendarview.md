@@ -24,6 +24,7 @@ This method also supports the [OData Query Parameters](http://graph.microsoft.io
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
+| Content-Type  | application/json|
 | Prefer | string | <Time zone>. Optional, UTC assumed if absent.|
 
 ## Request body
@@ -32,16 +33,16 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_calendarview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarView
+GET https://graph.microsoft.com/v1.0/users/me/calendarView?startDateTime=2016-01-01T19:00:00.0000000&endDateTime=2016-10-01T19:00:00.0000000 
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -51,21 +52,54 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 354
 
 {
   "value": [
-    {
-      "originalStartTimeZone": "originalStartTimeZone-value",
-      "originalEndTimeZone": "originalEndTimeZone-value",
-      "responseStatus": {
-        "response": "",
-        "time": "datetime-value"
-      },
-      "iCalUId": "iCalUId-value",
-      "reminderMinutesBeforeStart": 99,
-      "isReminderOn": true
-    }
+      {
+        "id":"id-value",
+        "originalStartTimeZone":"UTC",
+        "originalEndTimeZone":"UTC",
+        "responseStatus":{
+          "response":"organizer",
+          "time":"0001-01-01T00:00:00Z"
+        },
+        "iCalUId":"iCalUId-value",
+        "reminderMinutesBeforeStart":15,
+        "isReminderOn":true,
+        "hasAttachments":false,
+        "subject":null,
+        "body":{
+          "contentType":"text",
+          "content":"content-value"
+        },
+        "bodyPreview":"bodyPreview-value",
+        "importance":"normal",
+        "sensitivity":"normal",
+        "start":{
+          "dateTime":"2016-09-26T17:00:00.0009761",
+          "timeZone":"UTC"
+        },
+        "end":{
+          "dateTime":"2016-09-26T17:30:00.0009761",
+          "timeZone":"UTC"
+        },
+        "location":{
+          "displayName":"",
+          "address":{}
+        },
+        "isAllDay":false,
+        "isCancelled":false,
+        "isOrganizer":true,
+        "recurrence":null,
+        "responseRequested":true,
+        "showAs":"busy",
+        "type":"singleInstance",
+        "attendees":[],
+        "organizer":{"emailAddress":{
+          "name":"emailAddress-value",
+          "address":"address-value"}
+        }
+      }
   ]
 }
 ```

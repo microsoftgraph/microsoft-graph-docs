@@ -23,8 +23,8 @@ In the request body, supply a JSON representation of [Message](../resources/mess
 If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
 
 ## Example
-##### Request 1
-Here is an example of the request.
+##### Request
+In the request body, supply a JSON representation of [message](../resources/message.md) object.
 <!-- {
   "blockType": "request",
   "name": "create_message_from_user"
@@ -32,43 +32,60 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages
 Content-type: application/json
-Content-length: 248
 
 {
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
-  "hasAttachments": true,
+  "hasAttachments": false,
   "subject": "subject-value",
   "body": {
-    "contentType": "",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"
 }
 ```
-In the request body, supply a JSON representation of [message](../resources/message.md) object.
-##### Response 1
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+
+##### Response
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 248
 
 {
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
-  "hasAttachments": true,
-  "subject": "subject-value",
-  "body": {
-    "contentType": "",
-    "content": "content-value"
-  },
-  "bodyPreview": "bodyPreview-value"
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('me')/messages/$entity","@odata.etag":"W/\"CQAAABYAAAAQkDd73rdLQKSqoizFkjaFAAAUrzjV\"",
+  "id":"id-value",
+  "createdDateTime":"2016-09-23T18:17:43Z",
+  "lastModifiedDateTime":"2016-09-23T18:17:43Z",
+  "changeKey":"changeKey-value",
+  "categories":[],
+  "receivedDateTime":"2016-09-23T18:17:43Z",
+  "sentDateTime":"2016-09-23T18:17:43Z",
+  "hasAttachments":false,
+  "internetMessageId":"internetMessageId-value",
+  "subject":"subject-value",
+  "body":{
+    "contentType":"text",
+    "content":"content-value"
+    },
+  "bodyPreview":"content-value",
+  "importance":"normal",
+  "parentFolderId":"parentFolderId-value",
+  "toRecipients":[],
+  "ccRecipients":[],
+  "bccRecipients":[],
+  "replyTo":[],
+  "conversationId":"conversationId-value",
+  "isDeliveryReceiptRequested":false,
+  "isReadReceiptRequested":false,
+  "isRead":true,
+  "isDraft":true,
+  "webLink":"https://outlook.office365.com/owa/?",
+  "inferenceClassification":"focused"
 }
 ```
 

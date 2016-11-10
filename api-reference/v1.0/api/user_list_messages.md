@@ -15,7 +15,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
-| Accept  | application/json|
+| Content-type | application/json|
 
 ## Request body
 Do not supply a request body for this method.
@@ -23,7 +23,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -32,7 +32,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/me/messages
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -42,20 +42,39 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 317
 
 {
-  "value": [
+  "value":[
     {
-      "receivedDateTime": "datetime-value",
-      "sentDateTime": "datetime-value",
-      "hasAttachments": true,
-      "subject": "subject-value",
-      "body": {
-        "contentType": "",
-        "content": "content-value"
+      "@odata.etag":"etag-value",
+      "id":"id-value",
+      "createdDateTime":"2016-09-23T18:17:43Z",
+      "lastModifiedDateTime":"2016-09-23T18:17:43Z",
+      "changeKey":"changeKey-value",
+      "categories":[],
+      "receivedDateTime":"2016-09-23T18:17:43Z",
+      "sentDateTime":"2016-09-23T18:17:43Z",
+      "hasAttachments":false,
+      "internetMessageId":"internetMessageId-value",
+      "subject":"subject-value",
+      "body":{
+        "contentType":"text",
+        "content":"content-value"
       },
-      "bodyPreview": "bodyPreview-value"
+      "bodyPreview":"content-value",
+      "importance":"normal",
+      "parentFolderId":"parentFolder-Id",
+      "toRecipients":[],
+      "ccRecipients":[],
+      "bccRecipients":[],
+      "replyTo":[],
+      "conversationId":"conversationId-value",
+      "isDeliveryReceiptRequested":false,
+      "isReadReceiptRequested":false,
+      "isRead":true,
+      "isDraft":true,
+      "webLink":"https://outlook.office365.com/owa/?ItemID=ItemID-value",
+      "inferenceClassification":"focused"
     }
   ]
 }
