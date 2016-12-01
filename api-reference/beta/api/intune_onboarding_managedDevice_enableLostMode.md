@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /detectedapps/<id>/managedDevices/<id>/enableLostMode
 POST /managedDevices/<id>/enableLostMode
 POST /users/<id>/managedDevices/<id>/enableLostMode
+POST /detectedapps/<id>/managedDevices/<id>/enableLostMode
 ```
 
 ### Request headers
@@ -40,7 +40,7 @@ If successful, this action returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/detectedapps/<id>/managedDevices/<id>/enableLostMode
+POST https://graph.microsoft.com/beta/managedDevices/<id>/enableLostMode
 
 Content-type: application/json
 Content-length: 103

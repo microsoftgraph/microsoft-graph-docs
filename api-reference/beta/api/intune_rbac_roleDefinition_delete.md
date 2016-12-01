@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 DELETE /deviceManagement/roleDefinitions/<id>
-DELETE /deviceManagement/roleDefinitions/<id>/roleAssignments/<id>/roleDefinition
+DELETE /deviceManagement/roleDefinitions/<id>/roleAssignments/<id>/roleDefinition/
 ```
 
 ### Request headers

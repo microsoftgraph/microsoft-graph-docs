@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /iosMobileAppConfigurations/<id>/groupAssignments/<id>
 GET /appConfigurationGroupAssignments/<id>
+GET /iosMobileAppConfigurations/<id>/groupAssignments/<id>
 ```
 
 ### Optional query parameters
@@ -32,7 +32,7 @@ If successful, this method returns a `200 OK` response code and [mdmAppConfigGro
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/iosMobileAppConfigurations/<id>/groupAssignments/<id>
+GET https://graph.microsoft.com/beta/appConfigurationGroupAssignments/<id>
 ```
 
 ##### Response

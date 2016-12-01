@@ -10,8 +10,13 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>
 GET /deviceConfigurationGroupAssignment/<id>
+GET /deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>
+GET /deviceManagement/deviceConfigurations/<id>/rootCertificate//groupAssignments/<id>
+GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosScepCertificateProfile/rootCertificate//groupAssignments/<id>
+GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSScepCertificateProfile/rootCertificate//groupAssignments/<id>
+GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windows10VpnConfiguration/identityCertificate//groupAssignments/<id>
+GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//groupAssignments/<id>
 ```
 
 ### Optional query parameters
@@ -32,7 +37,7 @@ If successful, this method returns a `200 OK` response code and [deviceConfigura
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>
+GET https://graph.microsoft.com/beta/deviceConfigurationGroupAssignment/<id>
 ```
 
 ##### Response

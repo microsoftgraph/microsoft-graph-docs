@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/
 GET /deviceCompliancePolicyGroupAssignment/
+GET /deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/
 ```
 
 ### Request headers
@@ -30,7 +30,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/
+GET https://graph.microsoft.com/beta/deviceCompliancePolicyGroupAssignment/
 ```
 
 ##### Response

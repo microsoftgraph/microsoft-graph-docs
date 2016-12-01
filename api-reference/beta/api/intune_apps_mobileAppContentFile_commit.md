@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST ** Entity URI for microsoft.management.services.api.mobileAppContentFile not found/commit
+POST /deviceAppManagement/mobileApps/<id>/contentVersions/<id>/files/<id>/commit
 ```
 
 ### Request headers
@@ -36,7 +36,7 @@ If successful, this action returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta** Entity URI for microsoft.management.services.api.mobileAppContentFile not found/commit
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/<id>/contentVersions/<id>/files/<id>/commit
 
 Content-type: application/json
 Content-length: 399

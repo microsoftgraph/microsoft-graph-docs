@@ -11,8 +11,8 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /deviceManagement/deviceConfigurations/<id>
-GET /deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>/deviceConfiguration
-GET /deviceConfigurationAssignments/<id>/deviceConfiguration
+GET /deviceConfigurationAssignments/<id>/deviceConfiguration/
+GET /deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>/deviceConfiguration/
 ```
 
 ### Optional query parameters

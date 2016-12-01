@@ -11,8 +11,8 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 DELETE /deviceManagement/deviceCompliancePolicies/<id>
-DELETE /deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/<id>/deviceCompliancePolicy
-DELETE /deviceCompliancePolicyAssignments/<id>/deviceCompliancePolicy
+DELETE /deviceCompliancePolicyAssignments/<id>/deviceCompliancePolicy/
+DELETE /deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/<id>/deviceCompliancePolicy/
 ```
 
 ### Request headers

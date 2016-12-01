@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/<id>
 PATCH /deviceCompliancePolicyGroupAssignment/<id>
+PATCH /deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/<id>
 ```
 
 ### Request headers
@@ -38,7 +38,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/<id>
+PATCH https://graph.microsoft.com/beta/deviceCompliancePolicyGroupAssignment/<id>
 Content-type: application/json
 Content-length: 48
 

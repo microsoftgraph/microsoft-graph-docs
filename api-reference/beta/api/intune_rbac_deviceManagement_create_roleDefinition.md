@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 POST /deviceManagement/roleDefinitions/<id>
-POST /deviceManagement/roleDefinitions/<id>/roleAssignments/<id>/roleDefinition
+POST /deviceManagement/roleDefinitions/<id>/roleAssignments/<id>/roleDefinition/
 ```
 
 ### Request headers

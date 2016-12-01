@@ -11,8 +11,8 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 POST /termsAndConditions/<id>
-POST /termsAndConditions/<id>/groupAssignments/<id>/termsAndConditions
-POST /termsAndConditions/<id>/acceptanceStatuses/<id>/termsAndConditions
+POST /termsAndConditions/<id>/groupAssignments/<id>/termsAndConditions/
+POST /termsAndConditions/<id>/acceptanceStatuses/<id>/termsAndConditions/
 ```
 
 ### Request headers

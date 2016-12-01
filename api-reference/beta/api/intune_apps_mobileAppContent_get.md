@@ -10,7 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET ** Entity URI for microsoft.management.services.api.mobileAppContent not found
+GET /deviceAppManagement/mobileApps/<id>/contentVersions/<id>
+GET /deviceAppManagement/mobileApps/<id>/microsoft.graph.mobileLobApp/contentVersions/<id>
 ```
 
 ### Optional query parameters
@@ -31,7 +32,7 @@ If successful, this method returns a `200 OK` response code and [mobileAppConten
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta** Entity URI for microsoft.management.services.api.mobileAppContent not found
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/<id>/contentVersions/<id>
 ```
 
 ##### Response

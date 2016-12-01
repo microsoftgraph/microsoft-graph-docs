@@ -11,8 +11,8 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /deviceManagement/deviceCompliancePolicies/<id>
-PATCH /deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/<id>/deviceCompliancePolicy
-PATCH /deviceCompliancePolicyAssignments/<id>/deviceCompliancePolicy
+PATCH /deviceCompliancePolicyAssignments/<id>/deviceCompliancePolicy/
+PATCH /deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/<id>/deviceCompliancePolicy/
 ```
 
 ### Request headers

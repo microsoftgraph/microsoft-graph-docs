@@ -10,7 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST ** Entity URI for microsoft.management.services.api.mobileAppContent not found
+POST /deviceAppManagement/mobileApps/<id>/contentVersions/<id>
+POST /deviceAppManagement/mobileApps/<id>/microsoft.graph.mobileLobApp/contentVersions/<id>
 ```
 
 ### Request headers
@@ -36,7 +37,7 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta** Entity URI for microsoft.management.services.api.mobileAppContent not found
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/<id>/contentVersions/<id>
 Content-type: application/json
 Content-length: 58
 

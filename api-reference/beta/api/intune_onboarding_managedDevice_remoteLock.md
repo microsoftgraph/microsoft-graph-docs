@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /detectedapps/<id>/managedDevices/<id>/remoteLock
 POST /managedDevices/<id>/remoteLock
 POST /users/<id>/managedDevices/<id>/remoteLock
+POST /detectedapps/<id>/managedDevices/<id>/remoteLock
 ```
 
 ### Request headers
@@ -31,7 +31,7 @@ If successful, this action returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/detectedapps/<id>/managedDevices/<id>/remoteLock
+POST https://graph.microsoft.com/beta/managedDevices/<id>/remoteLock
 ```
 
 ##### Response

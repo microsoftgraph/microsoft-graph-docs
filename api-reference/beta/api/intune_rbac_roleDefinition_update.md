@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /deviceManagement/roleDefinitions/<id>
-PATCH /deviceManagement/roleDefinitions/<id>/roleAssignments/<id>/roleDefinition
+PATCH /deviceManagement/roleDefinitions/<id>/roleAssignments/<id>/roleDefinition/
 ```
 
 ### Request headers

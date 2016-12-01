@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /iosMobileAppConfigurations/<id>/groupAssignments/<id>
 POST /appConfigurationGroupAssignments/<id>
+POST /iosMobileAppConfigurations/<id>/groupAssignments/<id>
 ```
 
 ### Request headers
@@ -39,7 +39,7 @@ If successful, this method returns a `201 Created` response code and a [mdmAppCo
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/iosMobileAppConfigurations/<id>/groupAssignments/<id>
+POST https://graph.microsoft.com/beta/appConfigurationGroupAssignments/<id>
 Content-type: application/json
 Content-length: 164
 

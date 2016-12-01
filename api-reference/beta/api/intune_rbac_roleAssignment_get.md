@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/roleDefinitions/<id>/roleAssignments/<id>
 GET /deviceManagement/roleAssignments/<id>
+GET /deviceManagement/roleDefinitions/<id>/roleAssignments/<id>
 ```
 
 ### Optional query parameters
@@ -32,7 +32,7 @@ If successful, this method returns a `200 OK` response code and [roleAssignment]
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/<id>/roleAssignments/<id>
+GET https://graph.microsoft.com/beta/deviceManagement/roleAssignments/<id>
 ```
 
 ##### Response

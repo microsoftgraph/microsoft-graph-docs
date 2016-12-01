@@ -10,7 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET ** Collection URI for microsoft.management.services.api.directoryObject not found
+GET /managedAppPolicies/<id>/targetedSecurityGroups/
+GET /managedAppPolicies/<id>/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/
+GET /managedAppPolicies/<id>/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/
 ```
 
 ### Request headers
@@ -29,7 +31,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.management.services.api.directoryObject not found
+GET https://graph.microsoft.com/beta/managedAppPolicies/<id>/targetedSecurityGroups/
 ```
 
 ##### Response

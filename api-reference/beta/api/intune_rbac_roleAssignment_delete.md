@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /deviceManagement/roleDefinitions/<id>/roleAssignments/<id>
 DELETE /deviceManagement/roleAssignments/<id>
+DELETE /deviceManagement/roleDefinitions/<id>/roleAssignments/<id>
 ```
 
 ### Request headers
@@ -30,7 +30,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/<id>/roleAssignments/<id>
+DELETE https://graph.microsoft.com/beta/deviceManagement/roleAssignments/<id>
 ```
 
 ##### Response

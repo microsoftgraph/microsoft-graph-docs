@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedAppPolicies/<id>/deploymentSummary
+GET /managedAppPolicies/<id>/deploymentSummary/
 ```
 
 ### Optional query parameters
@@ -31,7 +31,7 @@ If successful, this method returns a `200 OK` response code and [managedAppPolic
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppPolicies/<id>/deploymentSummary
+GET https://graph.microsoft.com/beta/managedAppPolicies/<id>/deploymentSummary/
 ```
 
 ##### Response

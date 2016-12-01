@@ -11,8 +11,8 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /termsAndConditions/<id>
-GET /termsAndConditions/<id>/groupAssignments/<id>/termsAndConditions
-GET /termsAndConditions/<id>/acceptanceStatuses/<id>/termsAndConditions
+GET /termsAndConditions/<id>/groupAssignments/<id>/termsAndConditions/
+GET /termsAndConditions/<id>/acceptanceStatuses/<id>/termsAndConditions/
 ```
 
 ### Optional query parameters

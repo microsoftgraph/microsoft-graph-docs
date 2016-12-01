@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/notificationMessageTemplates/<id>/localizedNotificationMessages/<id>
 POST /localizedNotificationMessages/<id>
+POST /deviceManagement/notificationMessageTemplates/<id>/localizedNotificationMessages/<id>
 ```
 
 ### Request headers
@@ -42,7 +42,7 @@ If successful, this method returns a `201 Created` response code and a [localize
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/<id>/localizedNotificationMessages/<id>
+POST https://graph.microsoft.com/beta/localizedNotificationMessages/<id>
 Content-type: application/json
 Content-length: 264
 

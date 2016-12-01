@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceAppManagement/mobileApps/<id>/categories/
 GET /deviceAppManagement/mobileAppCategories/
+GET /deviceAppManagement/mobileApps/<id>/categories/
 ```
 
 ### Request headers
@@ -30,7 +30,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/<id>/categories/
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories/
 ```
 
 ##### Response

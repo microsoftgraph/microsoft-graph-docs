@@ -11,9 +11,9 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 POST /deviceAppManagement/mobileApps/<id>/assign
-POST /deviceAppManagement/mobileApps/<id>/groupAssignments/<id>/app/assign
-POST /deviceAppManagement/mobileApps/<id>/deviceStatuses/<id>/app/assign
-POST /deviceAppManagement/mobileApps/<id>/userStatuses/<id>/app/assign
+POST /deviceAppManagement/mobileApps/<id>/userStatuses/<id>/app//assign
+POST /deviceAppManagement/mobileApps/<id>/deviceStatuses/<id>/app//assign
+POST /deviceAppManagement/mobileApps/<id>/groupAssignments/<id>/app//assign
 ```
 
 ### Request headers

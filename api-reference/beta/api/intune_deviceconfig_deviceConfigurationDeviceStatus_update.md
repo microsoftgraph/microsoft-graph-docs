@@ -11,6 +11,11 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /deviceManagement/deviceConfigurations/<id>/deviceStatuses/<id>
+PATCH /deviceManagement/deviceConfigurations/<id>/rootCertificate//deviceStatuses/<id>
+PATCH /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosScepCertificateProfile/rootCertificate//deviceStatuses/<id>
+PATCH /deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSScepCertificateProfile/rootCertificate//deviceStatuses/<id>
+PATCH /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windows10VpnConfiguration/identityCertificate//deviceStatuses/<id>
+PATCH /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//deviceStatuses/<id>
 ```
 
 ### Request headers

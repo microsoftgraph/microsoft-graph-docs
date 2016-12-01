@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /deviceManagement/notificationMessageTemplates/<id>/localizedNotificationMessages/<id>
 DELETE /localizedNotificationMessages/<id>
+DELETE /deviceManagement/notificationMessageTemplates/<id>/localizedNotificationMessages/<id>
 ```
 
 ### Request headers
@@ -30,7 +30,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/<id>/localizedNotificationMessages/<id>
+DELETE https://graph.microsoft.com/beta/localizedNotificationMessages/<id>
 ```
 
 ##### Response

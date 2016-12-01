@@ -11,6 +11,11 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /deviceManagement/deviceConfigurations/<id>/userStatuses/<id>
+GET /deviceManagement/deviceConfigurations/<id>/rootCertificate//userStatuses/<id>
+GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosScepCertificateProfile/rootCertificate//userStatuses/<id>
+GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSScepCertificateProfile/rootCertificate//userStatuses/<id>
+GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windows10VpnConfiguration/identityCertificate//userStatuses/<id>
+GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//userStatuses/<id>
 ```
 
 ### Optional query parameters

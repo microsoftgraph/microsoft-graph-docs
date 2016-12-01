@@ -6,9 +6,6 @@ Devices that are managed or pre-enrolled through Intune
 |---|---|---|
 |[List managedDevices](../api/intune_onboarding_managedDevice_list.md)|[managedDevice](../resources/intune_onboarding_managedDevice.md) collection|List properties and relationships of the [managedDevice](../resources/intune_onboarding_managedDevice.md) objects.|
 |[Get managedDevice](../api/intune_onboarding_managedDevice_get.md)|[managedDevice](../resources/intune_onboarding_managedDevice.md)|Read properties and relationships of the [managedDevice](../resources/intune_onboarding_managedDevice.md) object.|
-|[Create managedDevice](../api/intune_onboarding_managedDevice_create.md)|[managedDevice](../resources/intune_onboarding_managedDevice.md)|Create a new [managedDevice](../resources/intune_onboarding_managedDevice.md) object.|
-|[Delete managedDevice](../api/intune_onboarding_managedDevice_delete.md)|None|Deletes a [managedDevice](../resources/intune_onboarding_managedDevice.md).|
-|[Update managedDevice](../api/intune_onboarding_managedDevice_update.md)|[managedDevice](../resources/intune_onboarding_managedDevice.md)|Update the properties of a [managedDevice](../resources/intune_onboarding_managedDevice.md) object.|
 |[retire action](../api/intune_onboarding_managedDevice_retire.md)|None|Not yet documented|
 |[wipe action](../api/intune_onboarding_managedDevice_wipe.md)|None|Not yet documented|
 |[resetPasscode action](../api/intune_onboarding_managedDevice_resetPasscode.md)|None|Not yet documented|

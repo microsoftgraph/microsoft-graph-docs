@@ -6,9 +6,6 @@ A managed or unmanaged app that is installed on a managed device. Unmanaged apps
 |---|---|---|
 |[List detectedApps](../api/intune_onboarding_detectedApp_list.md)|[detectedApp](../resources/intune_onboarding_detectedApp.md) collection|List properties and relationships of the [detectedApp](../resources/intune_onboarding_detectedApp.md) objects.|
 |[Get detectedApp](../api/intune_onboarding_detectedApp_get.md)|[detectedApp](../resources/intune_onboarding_detectedApp.md)|Read properties and relationships of the [detectedApp](../resources/intune_onboarding_detectedApp.md) object.|
-|[Create detectedApp](../api/intune_onboarding_detectedApp_create.md)|[detectedApp](../resources/intune_onboarding_detectedApp.md)|Create a new [detectedApp](../resources/intune_onboarding_detectedApp.md) object.|
-|[Delete detectedApp](../api/intune_onboarding_detectedApp_delete.md)|None|Deletes a [detectedApp](../resources/intune_onboarding_detectedApp.md).|
-|[Update detectedApp](../api/intune_onboarding_detectedApp_update.md)|[detectedApp](../resources/intune_onboarding_detectedApp.md)|Update the properties of a [detectedApp](../resources/intune_onboarding_detectedApp.md) object.|
 |[List managedDevices](../api/intune_onboarding_detectedApp_list_managedDevice.md)|[managedDevice](../resources/intune_onboarding_managedDevice.md) collection|Get the managedDevices from the managedDevices navigation property.|
 
 ### Properties

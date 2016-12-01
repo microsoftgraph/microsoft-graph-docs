@@ -10,8 +10,13 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>
 DELETE /deviceConfigurationGroupAssignment/<id>
+DELETE /deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>
+DELETE /deviceManagement/deviceConfigurations/<id>/rootCertificate//groupAssignments/<id>
+DELETE /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosScepCertificateProfile/rootCertificate//groupAssignments/<id>
+DELETE /deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSScepCertificateProfile/rootCertificate//groupAssignments/<id>
+DELETE /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windows10VpnConfiguration/identityCertificate//groupAssignments/<id>
+DELETE /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//groupAssignments/<id>
 ```
 
 ### Request headers
@@ -30,7 +35,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>
+DELETE https://graph.microsoft.com/beta/deviceConfigurationGroupAssignment/<id>
 ```
 
 ##### Response

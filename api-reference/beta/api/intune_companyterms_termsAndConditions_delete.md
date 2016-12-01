@@ -11,8 +11,8 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 DELETE /termsAndConditions/<id>
-DELETE /termsAndConditions/<id>/groupAssignments/<id>/termsAndConditions
-DELETE /termsAndConditions/<id>/acceptanceStatuses/<id>/termsAndConditions
+DELETE /termsAndConditions/<id>/groupAssignments/<id>/termsAndConditions/
+DELETE /termsAndConditions/<id>/acceptanceStatuses/<id>/termsAndConditions/
 ```
 
 ### Request headers

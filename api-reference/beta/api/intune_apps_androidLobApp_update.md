@@ -11,9 +11,9 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /deviceAppManagement/mobileApps/<id>
-PATCH /deviceAppManagement/mobileApps/<id>/groupAssignments/<id>/app
-PATCH /deviceAppManagement/mobileApps/<id>/deviceStatuses/<id>/app
-PATCH /deviceAppManagement/mobileApps/<id>/userStatuses/<id>/app
+PATCH /deviceAppManagement/mobileApps/<id>/userStatuses/<id>/app/
+PATCH /deviceAppManagement/mobileApps/<id>/deviceStatuses/<id>/app/
+PATCH /deviceAppManagement/mobileApps/<id>/groupAssignments/<id>/app/
 ```
 
 ### Request headers

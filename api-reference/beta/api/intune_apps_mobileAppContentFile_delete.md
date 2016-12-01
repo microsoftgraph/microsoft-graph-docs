@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE ** Entity URI for microsoft.management.services.api.mobileAppContentFile not found
+DELETE /deviceAppManagement/mobileApps/<id>/contentVersions/<id>/files/<id>
 ```
 
 ### Request headers
@@ -29,7 +29,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta** Entity URI for microsoft.management.services.api.mobileAppContentFile not found
+DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/<id>/contentVersions/<id>/files/<id>
 ```
 
 ##### Response

@@ -10,8 +10,13 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>
 POST /deviceConfigurationGroupAssignment/<id>
+POST /deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>
+POST /deviceManagement/deviceConfigurations/<id>/rootCertificate//groupAssignments/<id>
+POST /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosScepCertificateProfile/rootCertificate//groupAssignments/<id>
+POST /deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSScepCertificateProfile/rootCertificate//groupAssignments/<id>
+POST /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windows10VpnConfiguration/identityCertificate//groupAssignments/<id>
+POST /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//groupAssignments/<id>
 ```
 
 ### Request headers
@@ -38,7 +43,7 @@ If successful, this method returns a `201 Created` response code and a [deviceCo
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>
+POST https://graph.microsoft.com/beta/deviceConfigurationGroupAssignment/<id>
 Content-type: application/json
 Content-length: 121
 

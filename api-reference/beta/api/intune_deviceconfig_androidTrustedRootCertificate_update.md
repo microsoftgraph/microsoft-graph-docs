@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/deviceConfigurations/<id>
-PATCH /deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>/deviceConfiguration
-PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
+PATCH /deviceManagement/deviceConfigurations/<id>/rootCertificate/
+PATCH /deviceManagement/deviceConfigurations/<id>/microsoft.graph.androidCertificateProfileBase/rootCertificate/
+PATCH /deviceManagement/deviceConfigurations/<id>/microsoft.graph.androidEnterpriseWiFiConfiguration/rootCertificateForServerValidation/
 ```
 
 ### Request headers
@@ -45,7 +45,7 @@ If successful, this method returns a `200 OK` response code and an updated [andr
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>/rootCertificate/
 Content-type: application/json
 Content-length: 271
 

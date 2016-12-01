@@ -11,6 +11,11 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 POST /deviceManagement/deviceConfigurations/<id>/userStatuses/<id>
+POST /deviceManagement/deviceConfigurations/<id>/rootCertificate//userStatuses/<id>
+POST /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosScepCertificateProfile/rootCertificate//userStatuses/<id>
+POST /deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSScepCertificateProfile/rootCertificate//userStatuses/<id>
+POST /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windows10VpnConfiguration/identityCertificate//userStatuses/<id>
+POST /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//userStatuses/<id>
 ```
 
 ### Request headers

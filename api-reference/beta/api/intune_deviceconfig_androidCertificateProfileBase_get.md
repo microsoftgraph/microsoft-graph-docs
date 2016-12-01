@@ -10,9 +10,10 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/deviceConfigurations/<id>
-GET /deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>/deviceConfiguration
-GET /deviceConfigurationAssignments/<id>/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.androidVpnConfiguration/identityCertificate/
+GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.androidEasEmailProfileConfiguration/identityCertificate/
+GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.androidEasEmailProfileConfiguration/smimeSigningCertificate/
+GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.androidEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication/
 ```
 
 ### Optional query parameters
@@ -33,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [androidCertific
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>/microsoft.graph.androidVpnConfiguration/identityCertificate/
 ```
 
 ##### Response
