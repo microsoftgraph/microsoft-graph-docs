@@ -1,5 +1,5 @@
 ﻿# List deviceCompliancePolicyGroupAssignments
-List properties and relationships of the [deviceCompliancePolicyGroupAssignment](../resource/deviceCompliancePolicyGroupAssignment.md) objects.
+List properties and relationships of the [deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -24,7 +24,7 @@ GET /deviceCompliancePolicyGroupAssignment/
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a collection of [deviceCompliancePolicyGroupAssignment](../resource/deviceCompliancePolicyGroupAssignment.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md) objects in the response body.
 
 ### Example
 ##### Request

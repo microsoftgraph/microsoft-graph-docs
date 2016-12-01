@@ -1,5 +1,5 @@
 ﻿# Update windowsUpdateForBusinessConfiguration
-Update the properties of a [windowsUpdateForBusinessConfiguration](../resource/windowsUpdateForBusinessConfiguration.md) object.
+Update the properties of a [windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [windowsUpdateForBusinessConfiguration](../resource/windowsUpdateForBusinessConfiguration.md) object.
-The following table shows the properties that are required when you create a [windowsUpdateForBusinessConfiguration](../resource/windowsUpdateForBusinessConfiguration.md).
+In the request body, supply a JSON representation of a [windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md) object.
+The following table shows the properties that are required when you create a [windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -38,7 +38,7 @@ The following table shows the properties that are required when you create a [wi
 |automaticUpdateMode|String|Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
 |microsoftUpdateServiceAllowed|Boolean|Allow Microsoft Update Service|
 |driversExcluded|Boolean|Exclude Windows update Drivers|
-|installationSchedule|[windowsUpdateInstallScheduleType](windowsUpdateInstallScheduleType.md)|Installation schedule|
+|installationSchedule|[windowsUpdateInstallScheduleType](../resources/windowsUpdateInstallScheduleType.md)|Installation schedule|
 |qualityUpdatesDeferralPeriodInDays|Int32|Defer Quality Updates by these many days|
 |featureUpdatesDeferralPeriodInDays|Int32|Defer Feature Updates by these many days|
 |qualityUpdatesPaused|Boolean|Pause Quality Updates|
@@ -50,7 +50,7 @@ The following table shows the properties that are required when you create a [wi
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [windowsUpdateForBusinessConfiguration](../resource/windowsUpdateForBusinessConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

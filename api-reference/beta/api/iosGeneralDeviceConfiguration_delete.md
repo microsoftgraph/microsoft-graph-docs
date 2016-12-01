@@ -1,5 +1,5 @@
 ﻿# Delete iosGeneralDeviceConfiguration
-Deletes a [iosGeneralDeviceConfiguration](../resource/iosGeneralDeviceConfiguration.md).
+Deletes a [iosGeneralDeviceConfiguration](../resources/iosGeneralDeviceConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

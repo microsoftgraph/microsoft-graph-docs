@@ -1,5 +1,5 @@
 ﻿# Update iosVpnConfiguration
-Update the properties of a [iosVpnConfiguration](../resource/iosVpnConfiguration.md) object.
+Update the properties of a [iosVpnConfiguration](../resources/iosVpnConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [iosVpnConfiguration](../resource/iosVpnConfiguration.md) object.
-The following table shows the properties that are required when you create a [iosVpnConfiguration](../resource/iosVpnConfiguration.md).
+In the request body, supply a JSON representation of a [iosVpnConfiguration](../resources/iosVpnConfiguration.md) object.
+The following table shows the properties that are required when you create a [iosVpnConfiguration](../resources/iosVpnConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -38,20 +38,20 @@ The following table shows the properties that are required when you create a [io
 |loginGroupOrDomain|String|Login group or domain when connection type is set to Dell SonicWALL Mobile Connection. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
 |role|String|Role when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
 |realm|String|Realm when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|server|[vpnServer](vpnServer.md)|VPN Server on the network. Make sure end users can access this network location. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
+|server|[vpnServer](../resources/vpnServer.md)|VPN Server on the network. Make sure end users can access this network location. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
 |identifier|String|Identifier provided by VPN vendor when connection type is set to Custom VPN. For example: Cisco AnyConnect uses an identifier of the form com.cisco.anyconnect.applevpn.plugin Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|customData|[keyValue](keyValue.md) collection|Custom data when connection type is set to Custom VPN. Use this field to enable functionality not supported by Intune, but available in your VPN solution. Contact your VPN vendor to learn how to add these key/value pairs. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
+|customData|[keyValue](../resources/keyValue.md) collection|Custom data when connection type is set to Custom VPN. Use this field to enable functionality not supported by Intune, but available in your VPN solution. Contact your VPN vendor to learn how to add these key/value pairs. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
 |enableSplitTunneling|Boolean|Send all network traffic through VPN. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
 |authenticationMethod|String|Authentication method for this VPN connection. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md). Possible values are: `certificate`, `usernameAndPassword`.|
 |enablePerApp|Boolean|Setting this to true creates Per-App VPN payload which can later be associated with Apps that can trigger this VPN conneciton on the end user's iOS device. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
 |safariDomains|String collection|Safari domains when this VPN per App setting is enabled. In addition to the apps associated with this VPN, Safari domains specified here will also be able to trigger this VPN connection. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|onDemandRules|[vpnOnDemandRule](vpnOnDemandRule.md) collection|On-Demand Rules Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|proxyServer|[vpnProxyServer](vpnProxyServer.md)|Proxy Server. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
+|onDemandRules|[vpnOnDemandRule](../resources/vpnOnDemandRule.md) collection|On-Demand Rules Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
+|proxyServer|[vpnProxyServer](../resources/vpnProxyServer.md)|Proxy Server. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
 
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [iosVpnConfiguration](../resource/iosVpnConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [iosVpnConfiguration](../resources/iosVpnConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

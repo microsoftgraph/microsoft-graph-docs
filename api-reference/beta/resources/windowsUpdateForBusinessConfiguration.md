@@ -7,14 +7,14 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List windowsUpdateForBusinessConfigurations](../api/windowsUpdateForBusinessConfiguration_list.md)|[windowsUpdateForBusinessConfiguration](windowsUpdateForBusinessConfiguration.md) collection|List properties and relationships of the [windowsUpdateForBusinessConfiguration](../resource/windowsUpdateForBusinessConfiguration.md) objects.|
-|[Get windowsUpdateForBusinessConfiguration](../api/windowsUpdateForBusinessConfiguration_get.md)|[windowsUpdateForBusinessConfiguration](windowsUpdateForBusinessConfiguration.md)|Read properties and relationships of the [windowsUpdateForBusinessConfiguration](../resource/windowsUpdateForBusinessConfiguration.md) object.|
-|[Create windowsUpdateForBusinessConfiguration](../api/windowsUpdateForBusinessConfiguration_create.md)|[windowsUpdateForBusinessConfiguration](windowsUpdateForBusinessConfiguration.md)|Create a new [windowsUpdateForBusinessConfiguration](../resource/windowsUpdateForBusinessConfiguration.md) object.|
-|[Delete windowsUpdateForBusinessConfiguration](../api/windowsUpdateForBusinessConfiguration_delete.md)|None|Deletes a [windowsUpdateForBusinessConfiguration](../resource/windowsUpdateForBusinessConfiguration.md).|
-|[Update windowsUpdateForBusinessConfiguration](../api/windowsUpdateForBusinessConfiguration_update.md)|[windowsUpdateForBusinessConfiguration](windowsUpdateForBusinessConfiguration.md)|Update the properties of a [windowsUpdateForBusinessConfiguration](../resource/windowsUpdateForBusinessConfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/windowsUpdateForBusinessConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/windowsUpdateForBusinessConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/windowsUpdateForBusinessConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[List windowsUpdateForBusinessConfigurations](../api/windowsUpdateForBusinessConfiguration_list.md)|[windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md) collection|List properties and relationships of the [windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md) objects.|
+|[Get windowsUpdateForBusinessConfiguration](../api/windowsUpdateForBusinessConfiguration_get.md)|[windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md)|Read properties and relationships of the [windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md) object.|
+|[Create windowsUpdateForBusinessConfiguration](../api/windowsUpdateForBusinessConfiguration_create.md)|[windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md)|Create a new [windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md) object.|
+|[Delete windowsUpdateForBusinessConfiguration](../api/windowsUpdateForBusinessConfiguration_delete.md)|None|Deletes a [windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md).|
+|[Update windowsUpdateForBusinessConfiguration](../api/windowsUpdateForBusinessConfiguration_update.md)|[windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md)|Update the properties of a [windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/windowsUpdateForBusinessConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/windowsUpdateForBusinessConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/windowsUpdateForBusinessConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -30,7 +30,7 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 |automaticUpdateMode|String|Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
 |microsoftUpdateServiceAllowed|Boolean|Allow Microsoft Update Service|
 |driversExcluded|Boolean|Exclude Windows update Drivers|
-|installationSchedule|[windowsUpdateInstallScheduleType](windowsUpdateInstallScheduleType.md)|Installation schedule|
+|installationSchedule|[windowsUpdateInstallScheduleType](../resources/windowsUpdateInstallScheduleType.md)|Installation schedule|
 |qualityUpdatesDeferralPeriodInDays|Int32|Defer Quality Updates by these many days|
 |featureUpdatesDeferralPeriodInDays|Int32|Defer Feature Updates by these many days|
 |qualityUpdatesPaused|Boolean|Pause Quality Updates|
@@ -42,9 +42,9 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

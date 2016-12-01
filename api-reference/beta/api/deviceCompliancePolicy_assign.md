@@ -27,12 +27,12 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |---|---|---|
-|deviceCompliancePolicyGroupAssignments|[deviceCompliancePolicyGroupAssignment](deviceCompliancePolicyGroupAssignment.md) collection|** TODO: Add parameter description **|
+|deviceCompliancePolicyGroupAssignments|[deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md) collection|** TODO: Add parameter description **|
 
 
 
 ### Response
-If successful, this action returns a `200 OK` response code and a [deviceCompliancePolicyAssignment](deviceCompliancePolicyAssignment.md) collection in the response body.
+If successful, this action returns a `200 OK` response code and a [deviceCompliancePolicyAssignment](../resources/deviceCompliancePolicyAssignment.md) collection in the response body.
 
 ### Example
 ##### Request

@@ -1,5 +1,5 @@
 ﻿# Create deviceCompliancePolicy
-Create a new [deviceCompliancePolicy](deviceCompliancePolicy.md) by posting to the deviceCompliancePolicies collection.
+Create a new [deviceCompliancePolicy](../resources/deviceCompliancePolicy.md) by posting to the deviceCompliancePolicies collection.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -37,7 +37,7 @@ The following table shows the properties that are required when you create a dev
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [deviceCompliancePolicy](../resource/deviceCompliancePolicy.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [deviceCompliancePolicy](../resources/deviceCompliancePolicy.md) object in the response body.
 
 ### Example
 ##### Request

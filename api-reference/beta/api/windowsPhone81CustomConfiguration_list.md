@@ -1,5 +1,5 @@
 ﻿# List windowsPhone81CustomConfigurations
-List properties and relationships of the [windowsPhone81CustomConfiguration](../resource/windowsPhone81CustomConfiguration.md) objects.
+List properties and relationships of the [windowsPhone81CustomConfiguration](../resources/windowsPhone81CustomConfiguration.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -23,7 +23,7 @@ GET /deviceManagement/deviceConfigurations/
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a collection of [windowsPhone81CustomConfiguration](../resource/windowsPhone81CustomConfiguration.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [windowsPhone81CustomConfiguration](../resources/windowsPhone81CustomConfiguration.md) objects in the response body.
 
 ### Example
 ##### Request

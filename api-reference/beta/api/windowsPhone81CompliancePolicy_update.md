@@ -1,5 +1,5 @@
 ﻿# Update windowsPhone81CompliancePolicy
-Update the properties of a [windowsPhone81CompliancePolicy](../resource/windowsPhone81CompliancePolicy.md) object.
+Update the properties of a [windowsPhone81CompliancePolicy](../resources/windowsPhone81CompliancePolicy.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceCompliancePolicyAssignments/<id>/deviceCompliancePolicy
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [windowsPhone81CompliancePolicy](../resource/windowsPhone81CompliancePolicy.md) object.
-The following table shows the properties that are required when you create a [windowsPhone81CompliancePolicy](../resource/windowsPhone81CompliancePolicy.md).
+In the request body, supply a JSON representation of a [windowsPhone81CompliancePolicy](../resources/windowsPhone81CompliancePolicy.md) object.
+The following table shows the properties that are required when you create a [windowsPhone81CompliancePolicy](../resources/windowsPhone81CompliancePolicy.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create a [wi
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [windowsPhone81CompliancePolicy](../resource/windowsPhone81CompliancePolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [windowsPhone81CompliancePolicy](../resources/windowsPhone81CompliancePolicy.md) object in the response body.
 
 ### Example
 ##### Request

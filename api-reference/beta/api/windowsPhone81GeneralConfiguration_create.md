@@ -1,5 +1,5 @@
 ﻿# Create windowsPhone81GeneralConfiguration
-Create a new [windowsPhone81GeneralConfiguration](../resource/windowsPhone81GeneralConfiguration.md) object.
+Create a new [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -39,7 +39,7 @@ The following table shows the properties that are required when you create a win
 |bluetoothBlocked|Boolean|Indicates whether or not to block bluetooth.|
 |cameraBlocked|Boolean|Indicates whether or not to block camera.|
 |cellularBlockWifiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering. Has no impact if Wi-Fi is blocked.|
-|compliantAppsList|[appListItem](appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
+|compliantAppsList|[appListItem](../resources/appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
 |compliantAppListType|String|List that is in the AppComplianceList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Boolean|Indicates whether or not to block diagnostic data submission.|
 |emailBlockAddingAccounts|Boolean|Indicates whether or not to block custom email accounts.|
@@ -67,7 +67,7 @@ The following table shows the properties that are required when you create a win
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [windowsPhone81GeneralConfiguration](../resource/windowsPhone81GeneralConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

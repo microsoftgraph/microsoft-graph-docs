@@ -1,5 +1,5 @@
 ﻿# Delete deviceConfigurationUserStatus
-Deletes a [deviceConfigurationUserStatus](../resource/deviceConfigurationUserStatus.md).
+Deletes a [deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

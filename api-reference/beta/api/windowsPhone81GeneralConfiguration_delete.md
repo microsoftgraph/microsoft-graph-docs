@@ -1,5 +1,5 @@
 ﻿# Delete windowsPhone81GeneralConfiguration
-Deletes a [windowsPhone81GeneralConfiguration](../resource/windowsPhone81GeneralConfiguration.md).
+Deletes a [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

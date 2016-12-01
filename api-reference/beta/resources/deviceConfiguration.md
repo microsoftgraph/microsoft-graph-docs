@@ -4,12 +4,12 @@ Device Configuration.
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List deviceConfigurations](../api/deviceConfiguration_list.md)|[deviceConfiguration](deviceConfiguration.md) collection|List properties and relationships of the [deviceConfiguration](../resource/deviceConfiguration.md) objects.|
-|[Get deviceConfiguration](../api/deviceConfiguration_get.md)|[deviceConfiguration](deviceConfiguration.md)|Read properties and relationships of the [deviceConfiguration](../resource/deviceConfiguration.md) object.|
-|[assign action](../api/deviceConfiguration_assign.md)|[deviceConfigurationAssignment](deviceConfigurationAssignment.md) collection|Not yet documented|
-|[List deviceConfigurationGroupAssignments](../api/deviceConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/deviceConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/deviceConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[List deviceConfigurations](../api/deviceConfiguration_list.md)|[deviceConfiguration](../resources/deviceConfiguration.md) collection|List properties and relationships of the [deviceConfiguration](../resources/deviceConfiguration.md) objects.|
+|[Get deviceConfiguration](../api/deviceConfiguration_get.md)|[deviceConfiguration](../resources/deviceConfiguration.md)|Read properties and relationships of the [deviceConfiguration](../resources/deviceConfiguration.md) object.|
+|[assign action](../api/deviceConfiguration_assign.md)|[deviceConfigurationAssignment](../resources/deviceConfigurationAssignment.md) collection|Not yet documented|
+|[List deviceConfigurationGroupAssignments](../api/deviceConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/deviceConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/deviceConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -24,9 +24,9 @@ Device Configuration.
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile.|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device.|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user.|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile.|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device.|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user.|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

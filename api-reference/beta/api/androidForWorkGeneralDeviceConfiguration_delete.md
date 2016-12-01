@@ -1,5 +1,5 @@
 ﻿# Delete androidForWorkGeneralDeviceConfiguration
-Deletes a [androidForWorkGeneralDeviceConfiguration](../resource/androidForWorkGeneralDeviceConfiguration.md).
+Deletes a [androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

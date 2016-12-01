@@ -1,5 +1,5 @@
 ﻿# Update deviceConfigurationGroupAssignment
-Update the properties of a [deviceConfigurationGroupAssignment](../resource/deviceConfigurationGroupAssignment.md) object.
+Update the properties of a [deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -21,8 +21,8 @@ PATCH /deviceConfigurationGroupAssignment/<id>
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [deviceConfigurationGroupAssignment](../resource/deviceConfigurationGroupAssignment.md) object.
-The following table shows the properties that are required when you create a [deviceConfigurationGroupAssignment](../resource/deviceConfigurationGroupAssignment.md).
+In the request body, supply a JSON representation of a [deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) object.
+The following table shows the properties that are required when you create a [deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -32,7 +32,7 @@ The following table shows the properties that are required when you create a [de
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationGroupAssignment](../resource/deviceConfigurationGroupAssignment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) object in the response body.
 
 ### Example
 ##### Request

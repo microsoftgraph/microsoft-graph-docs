@@ -1,5 +1,5 @@
 ﻿# List deviceComplianceDeviceStatuss
-List properties and relationships of the [deviceComplianceDeviceStatus](../resource/deviceComplianceDeviceStatus.md) objects.
+List properties and relationships of the [deviceComplianceDeviceStatus](../resources/deviceComplianceDeviceStatus.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -23,7 +23,7 @@ GET /deviceManagement/deviceCompliancePolicies/<id>/deviceStatuses/
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a collection of [deviceComplianceDeviceStatus](../resource/deviceComplianceDeviceStatus.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [deviceComplianceDeviceStatus](../resources/deviceComplianceDeviceStatus.md) objects in the response body.
 
 ### Example
 ##### Request

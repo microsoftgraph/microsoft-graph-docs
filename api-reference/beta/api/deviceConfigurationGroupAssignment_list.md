@@ -1,5 +1,5 @@
 ﻿# List deviceConfigurationGroupAssignments
-List properties and relationships of the [deviceConfigurationGroupAssignment](../resource/deviceConfigurationGroupAssignment.md) objects.
+List properties and relationships of the [deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -24,7 +24,7 @@ GET /deviceConfigurationGroupAssignment/
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a collection of [deviceConfigurationGroupAssignment](../resource/deviceConfigurationGroupAssignment.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) objects in the response body.
 
 ### Example
 ##### Request

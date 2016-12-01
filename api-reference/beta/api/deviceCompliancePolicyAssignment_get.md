@@ -1,5 +1,5 @@
 ﻿# Get deviceCompliancePolicyAssignment
-Read properties and relationships of the [deviceCompliancePolicyAssignment](../resource/deviceCompliancePolicyAssignment.md) object.
+Read properties and relationships of the [deviceCompliancePolicyAssignment](../resources/deviceCompliancePolicyAssignment.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -25,7 +25,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and [deviceCompliancePolicyAssignment](../resource/deviceCompliancePolicyAssignment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [deviceCompliancePolicyAssignment](../resources/deviceCompliancePolicyAssignment.md) object in the response body.
 
 ### Example
 ##### Request

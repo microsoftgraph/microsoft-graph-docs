@@ -1,5 +1,5 @@
 ﻿# Delete iosTrustedRootCertificate
-Deletes a [iosTrustedRootCertificate](../resource/iosTrustedRootCertificate.md).
+Deletes a [iosTrustedRootCertificate](../resources/iosTrustedRootCertificate.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

@@ -1,5 +1,5 @@
 ﻿# Create windows81VpnConfiguration
-Create a new [windows81VpnConfiguration](../resource/windows81VpnConfiguration.md) object.
+Create a new [windows81VpnConfiguration](../resources/windows81VpnConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -34,18 +34,18 @@ The following table shows the properties that are required when you create a win
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |connectionName|String|Connection name displayed to the user. Inherited from [windowsVpnConfiguration](windowsVpnConfiguration.md).|
-|servers|[vpnServer](vpnServer.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. Inherited from [windowsVpnConfiguration](windowsVpnConfiguration.md).|
+|servers|[vpnServer](../resources/vpnServer.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. Inherited from [windowsVpnConfiguration](windowsVpnConfiguration.md).|
 |customXml|Binary|Custom XML commands that configures the VPN connection. (UTF8 encoded byte array) Inherited from [windowsVpnConfiguration](windowsVpnConfiguration.md).|
 |applyOnlyToWindows81|Boolean|Value indicating whether this policy only applies to Windows 8.1.|
 |connectionType|String|Connection type. Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`.|
 |loginGroupOrDomain|String|Login group or domain when connection type is set to Dell SonicWALL Mobile Connection.|
 |enableSplitTunneling|Boolean|Enable split tunneling for the VPN.|
-|proxyServer|[windows81VpnProxyServer](windows81VpnProxyServer.md)|Proxy Server.|
+|proxyServer|[windows81VpnProxyServer](../resources/windows81VpnProxyServer.md)|Proxy Server.|
 
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [windows81VpnConfiguration](../resource/windows81VpnConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [windows81VpnConfiguration](../resources/windows81VpnConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

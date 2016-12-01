@@ -1,5 +1,5 @@
 ﻿# List appleVpnConfigurations
-List properties and relationships of the [appleVpnConfiguration](../resource/appleVpnConfiguration.md) objects.
+List properties and relationships of the [appleVpnConfiguration](../resources/appleVpnConfiguration.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -23,7 +23,7 @@ GET /deviceManagement/deviceConfigurations/
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a collection of [appleVpnConfiguration](../resource/appleVpnConfiguration.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [appleVpnConfiguration](../resources/appleVpnConfiguration.md) objects in the response body.
 
 ### Example
 ##### Request

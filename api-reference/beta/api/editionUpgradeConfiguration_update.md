@@ -1,5 +1,5 @@
 ﻿# Update editionUpgradeConfiguration
-Update the properties of a [editionUpgradeConfiguration](../resource/editionUpgradeConfiguration.md) object.
+Update the properties of a [editionUpgradeConfiguration](../resources/editionUpgradeConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [editionUpgradeConfiguration](../resource/editionUpgradeConfiguration.md) object.
-The following table shows the properties that are required when you create a [editionUpgradeConfiguration](../resource/editionUpgradeConfiguration.md).
+In the request body, supply a JSON representation of a [editionUpgradeConfiguration](../resources/editionUpgradeConfiguration.md) object.
+The following table shows the properties that are required when you create a [editionUpgradeConfiguration](../resources/editionUpgradeConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -41,7 +41,7 @@ The following table shows the properties that are required when you create a [ed
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [editionUpgradeConfiguration](../resource/editionUpgradeConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [editionUpgradeConfiguration](../resources/editionUpgradeConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

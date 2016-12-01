@@ -1,5 +1,5 @@
 ﻿# Delete cloudPkiSubscription
-Deletes a [cloudPkiSubscription](../resource/cloudPkiSubscription.md).
+Deletes a [cloudPkiSubscription](../resources/cloudPkiSubscription.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

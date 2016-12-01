@@ -1,5 +1,5 @@
 ﻿# Update iosCompliancePolicy
-Update the properties of a [iosCompliancePolicy](../resource/iosCompliancePolicy.md) object.
+Update the properties of a [iosCompliancePolicy](../resources/iosCompliancePolicy.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceCompliancePolicyAssignments/<id>/deviceCompliancePolicy
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [iosCompliancePolicy](../resource/iosCompliancePolicy.md) object.
-The following table shows the properties that are required when you create a [iosCompliancePolicy](../resource/iosCompliancePolicy.md).
+In the request body, supply a JSON representation of a [iosCompliancePolicy](../resources/iosCompliancePolicy.md) object.
+The following table shows the properties that are required when you create a [iosCompliancePolicy](../resources/iosCompliancePolicy.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -50,7 +50,7 @@ The following table shows the properties that are required when you create a [io
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [iosCompliancePolicy](../resource/iosCompliancePolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [iosCompliancePolicy](../resources/iosCompliancePolicy.md) object in the response body.
 
 ### Example
 ##### Request

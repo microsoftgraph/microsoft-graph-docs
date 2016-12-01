@@ -1,5 +1,5 @@
 ﻿# Create iosEasEmailProfileConfiguration
-Create a new [iosEasEmailProfileConfiguration](../resource/iosEasEmailProfileConfiguration.md) object.
+Create a new [iosEasEmailProfileConfiguration](../resources/iosEasEmailProfileConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create a ios
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [iosEasEmailProfileConfiguration](../resource/iosEasEmailProfileConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [iosEasEmailProfileConfiguration](../resources/iosEasEmailProfileConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

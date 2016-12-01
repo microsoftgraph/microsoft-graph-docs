@@ -1,5 +1,5 @@
 ﻿# Update iosScepCertificateProfile
-Update the properties of a [iosScepCertificateProfile](../resource/iosScepCertificateProfile.md) object.
+Update the properties of a [iosScepCertificateProfile](../resources/iosScepCertificateProfile.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [iosScepCertificateProfile](../resource/iosScepCertificateProfile.md) object.
-The following table shows the properties that are required when you create a [iosScepCertificateProfile](../resource/iosScepCertificateProfile.md).
+In the request body, supply a JSON representation of a [iosScepCertificateProfile](../resources/iosScepCertificateProfile.md) object.
+The following table shows the properties that are required when you create a [iosScepCertificateProfile](../resources/iosScepCertificateProfile.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -42,12 +42,12 @@ The following table shows the properties that are required when you create a [io
 |subjectNameFormatString|String|Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US|
 |keyUsage|String|SCEP Key Usage. Possible values are: `keyEncipherment`, `digitalSignature`.|
 |keySize|String|SCEP Key Size. Possible values are: `size1024`, `size2048`.|
-|extendedKeyUsages|[extendedKeyUsage](extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings.|
+|extendedKeyUsages|[extendedKeyUsage](../resources/extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings.|
 
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [iosScepCertificateProfile](../resource/iosScepCertificateProfile.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [iosScepCertificateProfile](../resources/iosScepCertificateProfile.md) object in the response body.
 
 ### Example
 ##### Request

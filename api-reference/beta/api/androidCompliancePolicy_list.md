@@ -1,5 +1,5 @@
 ﻿# List androidCompliancePolicies
-List properties and relationships of the [androidCompliancePolicy](../resource/androidCompliancePolicy.md) objects.
+List properties and relationships of the [androidCompliancePolicy](../resources/androidCompliancePolicy.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -23,7 +23,7 @@ GET /deviceManagement/deviceCompliancePolicies/
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a collection of [androidCompliancePolicy](../resource/androidCompliancePolicy.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [androidCompliancePolicy](../resources/androidCompliancePolicy.md) objects in the response body.
 
 ### Example
 ##### Request

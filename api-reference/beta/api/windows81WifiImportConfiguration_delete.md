@@ -1,5 +1,5 @@
 ﻿# Delete windows81WifiImportConfiguration
-Deletes a [windows81WifiImportConfiguration](../resource/windows81WifiImportConfiguration.md).
+Deletes a [windows81WifiImportConfiguration](../resources/windows81WifiImportConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

@@ -7,14 +7,14 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List macOSTrustedRootCertificates](../api/macOSTrustedRootCertificate_list.md)|[macOSTrustedRootCertificate](macOSTrustedRootCertificate.md) collection|List properties and relationships of the [macOSTrustedRootCertificate](../resource/macOSTrustedRootCertificate.md) objects.|
-|[Get macOSTrustedRootCertificate](../api/macOSTrustedRootCertificate_get.md)|[macOSTrustedRootCertificate](macOSTrustedRootCertificate.md)|Read properties and relationships of the [macOSTrustedRootCertificate](../resource/macOSTrustedRootCertificate.md) object.|
-|[Create macOSTrustedRootCertificate](../api/macOSTrustedRootCertificate_create.md)|[macOSTrustedRootCertificate](macOSTrustedRootCertificate.md)|Create a new [macOSTrustedRootCertificate](../resource/macOSTrustedRootCertificate.md) object.|
-|[Delete macOSTrustedRootCertificate](../api/macOSTrustedRootCertificate_delete.md)|None|Deletes a [macOSTrustedRootCertificate](../resource/macOSTrustedRootCertificate.md).|
-|[Update macOSTrustedRootCertificate](../api/macOSTrustedRootCertificate_update.md)|[macOSTrustedRootCertificate](macOSTrustedRootCertificate.md)|Update the properties of a [macOSTrustedRootCertificate](../resource/macOSTrustedRootCertificate.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/macOSTrustedRootCertificate_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/macOSTrustedRootCertificate_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/macOSTrustedRootCertificate_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[List macOSTrustedRootCertificates](../api/macOSTrustedRootCertificate_list.md)|[macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md) collection|List properties and relationships of the [macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md) objects.|
+|[Get macOSTrustedRootCertificate](../api/macOSTrustedRootCertificate_get.md)|[macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md)|Read properties and relationships of the [macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md) object.|
+|[Create macOSTrustedRootCertificate](../api/macOSTrustedRootCertificate_create.md)|[macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md)|Create a new [macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md) object.|
+|[Delete macOSTrustedRootCertificate](../api/macOSTrustedRootCertificate_delete.md)|None|Deletes a [macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md).|
+|[Update macOSTrustedRootCertificate](../api/macOSTrustedRootCertificate_update.md)|[macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md)|Update the properties of a [macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/macOSTrustedRootCertificate_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/macOSTrustedRootCertificate_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/macOSTrustedRootCertificate_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -31,9 +31,9 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

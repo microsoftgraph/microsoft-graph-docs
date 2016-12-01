@@ -1,5 +1,5 @@
 ﻿# Create androidEnterpriseWiFiConfiguration
-Create a new [androidEnterpriseWiFiConfiguration](../resource/androidEnterpriseWiFiConfiguration.md) object.
+Create a new [androidEnterpriseWiFiConfiguration](../resources/androidEnterpriseWiFiConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -47,7 +47,7 @@ The following table shows the properties that are required when you create a and
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [androidEnterpriseWiFiConfiguration](../resource/androidEnterpriseWiFiConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [androidEnterpriseWiFiConfiguration](../resources/androidEnterpriseWiFiConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

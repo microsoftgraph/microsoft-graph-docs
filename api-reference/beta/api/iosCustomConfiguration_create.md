@@ -1,5 +1,5 @@
 ﻿# Create iosCustomConfiguration
-Create a new [iosCustomConfiguration](../resource/iosCustomConfiguration.md) object.
+Create a new [iosCustomConfiguration](../resources/iosCustomConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -40,7 +40,7 @@ The following table shows the properties that are required when you create a ios
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [iosCustomConfiguration](../resource/iosCustomConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [iosCustomConfiguration](../resources/iosCustomConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

@@ -1,5 +1,5 @@
 ﻿# Delete windowsPhoneEASEmailProfileConfiguration
-Deletes a [windowsPhoneEASEmailProfileConfiguration](../resource/windowsPhoneEASEmailProfileConfiguration.md).
+Deletes a [windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

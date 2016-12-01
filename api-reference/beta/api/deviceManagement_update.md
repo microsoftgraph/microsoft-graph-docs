@@ -1,5 +1,5 @@
 ﻿# Update deviceManagement
-Update the properties of a [deviceManagement](../resource/deviceManagement.md) object.
+Update the properties of a [deviceManagement](../resources/deviceManagement.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -20,18 +20,18 @@ PATCH /deviceManagement
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [deviceManagement](../resource/deviceManagement.md) object.
-The following table shows the properties that are required when you create a [deviceManagement](../resource/deviceManagement.md).
+In the request body, supply a JSON representation of a [deviceManagement](../resources/deviceManagement.md) object.
+The following table shows the properties that are required when you create a [deviceManagement](../resources/deviceManagement.md).
 
 |Property|Type|Description|
 |---|---|---|
 |id|String|Not yet documented|
-|settings|[deviceManagementSettings](deviceManagementSettings.md)|Not yet documented|
+|settings|[deviceManagementSettings](../resources/deviceManagementSettings.md)|Not yet documented|
 
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resource/deviceManagement.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/deviceManagement.md) object in the response body.
 
 ### Example
 ##### Request

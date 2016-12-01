@@ -1,5 +1,5 @@
 ﻿# Create androidEasEmailProfileConfiguration
-Create a new [androidEasEmailProfileConfiguration](../resource/androidEasEmailProfileConfiguration.md) object.
+Create a new [androidEasEmailProfileConfiguration](../resources/androidEasEmailProfileConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -50,7 +50,7 @@ The following table shows the properties that are required when you create a and
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [androidEasEmailProfileConfiguration](../resource/androidEasEmailProfileConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [androidEasEmailProfileConfiguration](../resources/androidEasEmailProfileConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

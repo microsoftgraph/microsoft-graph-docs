@@ -1,5 +1,5 @@
 ﻿# Delete windows81TrustedRootCertificate
-Deletes a [windows81TrustedRootCertificate](../resource/windows81TrustedRootCertificate.md).
+Deletes a [windows81TrustedRootCertificate](../resources/windows81TrustedRootCertificate.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

@@ -1,5 +1,5 @@
 ﻿# Update windowsPhone81CustomConfiguration
-Update the properties of a [windowsPhone81CustomConfiguration](../resource/windowsPhone81CustomConfiguration.md) object.
+Update the properties of a [windowsPhone81CustomConfiguration](../resources/windowsPhone81CustomConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [windowsPhone81CustomConfiguration](../resource/windowsPhone81CustomConfiguration.md) object.
-The following table shows the properties that are required when you create a [windowsPhone81CustomConfiguration](../resource/windowsPhone81CustomConfiguration.md).
+In the request body, supply a JSON representation of a [windowsPhone81CustomConfiguration](../resources/windowsPhone81CustomConfiguration.md) object.
+The following table shows the properties that are required when you create a [windowsPhone81CustomConfiguration](../resources/windowsPhone81CustomConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -33,12 +33,12 @@ The following table shows the properties that are required when you create a [wi
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
-|omaSettings|[omaSetting](omaSetting.md) collection|OMA settings.|
+|omaSettings|[omaSetting](../resources/omaSetting.md) collection|OMA settings.|
 
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [windowsPhone81CustomConfiguration](../resource/windowsPhone81CustomConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [windowsPhone81CustomConfiguration](../resources/windowsPhone81CustomConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

@@ -7,15 +7,15 @@ Inherits from [deviceCompliancePolicy](deviceCompliancePolicy.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List windows10MobileCompliancePolicies](../api/windows10MobileCompliancePolicy_list.md)|[windows10MobileCompliancePolicy](windows10MobileCompliancePolicy.md) collection|List properties and relationships of the [windows10MobileCompliancePolicy](../resource/windows10MobileCompliancePolicy.md) objects.|
-|[Get windows10MobileCompliancePolicy](../api/windows10MobileCompliancePolicy_get.md)|[windows10MobileCompliancePolicy](windows10MobileCompliancePolicy.md)|Read properties and relationships of the [windows10MobileCompliancePolicy](../resource/windows10MobileCompliancePolicy.md) object.|
-|[Create windows10MobileCompliancePolicy](../api/windows10MobileCompliancePolicy_create.md)|[windows10MobileCompliancePolicy](windows10MobileCompliancePolicy.md)|Create a new [windows10MobileCompliancePolicy](../resource/windows10MobileCompliancePolicy.md) object.|
-|[Delete windows10MobileCompliancePolicy](../api/windows10MobileCompliancePolicy_delete.md)|None|Deletes a [windows10MobileCompliancePolicy](../resource/windows10MobileCompliancePolicy.md).|
-|[Update windows10MobileCompliancePolicy](../api/windows10MobileCompliancePolicy_update.md)|[windows10MobileCompliancePolicy](windows10MobileCompliancePolicy.md)|Update the properties of a [windows10MobileCompliancePolicy](../resource/windows10MobileCompliancePolicy.md) object.|
-|[List deviceCompliancePolicyGroupAssignments](../api/windows10MobileCompliancePolicy_list_deviceCompliancePolicyGroupAssignment.md)|[deviceCompliancePolicyGroupAssignment](deviceCompliancePolicyGroupAssignment.md) collection|Get the deviceCompliancePolicyGroupAssignments from the groupAssignments navigation property.|
-|[List deviceComplianceScheduledActionForRules](../api/windows10MobileCompliancePolicy_list_deviceComplianceScheduledActionForRule.md)|[deviceComplianceScheduledActionForRule](deviceComplianceScheduledActionForRule.md) collection|Get the deviceComplianceScheduledActionForRules from the scheduledActionsForRule navigation property.|
-|[List deviceComplianceDeviceStatuss](../api/windows10MobileCompliancePolicy_list_deviceComplianceDeviceStatus.md)|[deviceComplianceDeviceStatus](deviceComplianceDeviceStatus.md) collection|Get the deviceComplianceDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceComplianceUserStatuss](../api/windows10MobileCompliancePolicy_list_deviceComplianceUserStatus.md)|[deviceComplianceUserStatus](deviceComplianceUserStatus.md) collection|Get the deviceComplianceUserStatuss from the userStatuses navigation property.|
+|[List windows10MobileCompliancePolicies](../api/windows10MobileCompliancePolicy_list.md)|[windows10MobileCompliancePolicy](../resources/windows10MobileCompliancePolicy.md) collection|List properties and relationships of the [windows10MobileCompliancePolicy](../resources/windows10MobileCompliancePolicy.md) objects.|
+|[Get windows10MobileCompliancePolicy](../api/windows10MobileCompliancePolicy_get.md)|[windows10MobileCompliancePolicy](../resources/windows10MobileCompliancePolicy.md)|Read properties and relationships of the [windows10MobileCompliancePolicy](../resources/windows10MobileCompliancePolicy.md) object.|
+|[Create windows10MobileCompliancePolicy](../api/windows10MobileCompliancePolicy_create.md)|[windows10MobileCompliancePolicy](../resources/windows10MobileCompliancePolicy.md)|Create a new [windows10MobileCompliancePolicy](../resources/windows10MobileCompliancePolicy.md) object.|
+|[Delete windows10MobileCompliancePolicy](../api/windows10MobileCompliancePolicy_delete.md)|None|Deletes a [windows10MobileCompliancePolicy](../resources/windows10MobileCompliancePolicy.md).|
+|[Update windows10MobileCompliancePolicy](../api/windows10MobileCompliancePolicy_update.md)|[windows10MobileCompliancePolicy](../resources/windows10MobileCompliancePolicy.md)|Update the properties of a [windows10MobileCompliancePolicy](../resources/windows10MobileCompliancePolicy.md) object.|
+|[List deviceCompliancePolicyGroupAssignments](../api/windows10MobileCompliancePolicy_list_deviceCompliancePolicyGroupAssignment.md)|[deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md) collection|Get the deviceCompliancePolicyGroupAssignments from the groupAssignments navigation property.|
+|[List deviceComplianceScheduledActionForRules](../api/windows10MobileCompliancePolicy_list_deviceComplianceScheduledActionForRule.md)|[deviceComplianceScheduledActionForRule](../resources/deviceComplianceScheduledActionForRule.md) collection|Get the deviceComplianceScheduledActionForRules from the scheduledActionsForRule navigation property.|
+|[List deviceComplianceDeviceStatuss](../api/windows10MobileCompliancePolicy_list_deviceComplianceDeviceStatus.md)|[deviceComplianceDeviceStatus](../resources/deviceComplianceDeviceStatus.md) collection|Get the deviceComplianceDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceComplianceUserStatuss](../api/windows10MobileCompliancePolicy_list_deviceComplianceUserStatus.md)|[deviceComplianceUserStatus](../resources/deviceComplianceUserStatus.md) collection|Get the deviceComplianceUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -46,10 +46,10 @@ Inherits from [deviceCompliancePolicy](deviceCompliancePolicy.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceCompliancePolicyGroupAssignment](deviceCompliancePolicyGroupAssignment.md) collection|The list of group assignments for this compliance policy. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
-|scheduledActionsForRule|[deviceComplianceScheduledActionForRule](deviceComplianceScheduledActionForRule.md) collection|The list of scheduled action for this rule Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
-|deviceStatuses|[deviceComplianceDeviceStatus](deviceComplianceDeviceStatus.md) collection|List of DeviceComplianceDeviceStatus. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
-|userStatuses|[deviceComplianceUserStatus](deviceComplianceUserStatus.md) collection|List of DeviceComplianceUserStatus. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
+|groupAssignments|[deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md) collection|The list of group assignments for this compliance policy. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
+|scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/deviceComplianceScheduledActionForRule.md) collection|The list of scheduled action for this rule Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
+|deviceStatuses|[deviceComplianceDeviceStatus](../resources/deviceComplianceDeviceStatus.md) collection|List of DeviceComplianceDeviceStatus. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
+|userStatuses|[deviceComplianceUserStatus](../resources/deviceComplianceUserStatus.md) collection|List of DeviceComplianceUserStatus. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

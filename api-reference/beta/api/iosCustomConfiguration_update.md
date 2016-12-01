@@ -1,5 +1,5 @@
 ﻿# Update iosCustomConfiguration
-Update the properties of a [iosCustomConfiguration](../resource/iosCustomConfiguration.md) object.
+Update the properties of a [iosCustomConfiguration](../resources/iosCustomConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [iosCustomConfiguration](../resource/iosCustomConfiguration.md) object.
-The following table shows the properties that are required when you create a [iosCustomConfiguration](../resource/iosCustomConfiguration.md).
+In the request body, supply a JSON representation of a [iosCustomConfiguration](../resources/iosCustomConfiguration.md) object.
+The following table shows the properties that are required when you create a [iosCustomConfiguration](../resources/iosCustomConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -40,7 +40,7 @@ The following table shows the properties that are required when you create a [io
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [iosCustomConfiguration](../resource/iosCustomConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [iosCustomConfiguration](../resources/iosCustomConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

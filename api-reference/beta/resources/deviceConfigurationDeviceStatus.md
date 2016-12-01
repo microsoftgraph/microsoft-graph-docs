@@ -4,11 +4,11 @@ Not yet documented
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List deviceConfigurationDeviceStatuss](../api/deviceConfigurationDeviceStatus_list.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|List properties and relationships of the [deviceConfigurationDeviceStatus](../resource/deviceConfigurationDeviceStatus.md) objects.|
-|[Get deviceConfigurationDeviceStatus](../api/deviceConfigurationDeviceStatus_get.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md)|Read properties and relationships of the [deviceConfigurationDeviceStatus](../resource/deviceConfigurationDeviceStatus.md) object.|
-|[Create deviceConfigurationDeviceStatus](../api/deviceConfigurationDeviceStatus_create.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md)|Create a new [deviceConfigurationDeviceStatus](../resource/deviceConfigurationDeviceStatus.md) object.|
-|[Delete deviceConfigurationDeviceStatus](../api/deviceConfigurationDeviceStatus_delete.md)|None|Deletes a [deviceConfigurationDeviceStatus](../resource/deviceConfigurationDeviceStatus.md).|
-|[Update deviceConfigurationDeviceStatus](../api/deviceConfigurationDeviceStatus_update.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md)|Update the properties of a [deviceConfigurationDeviceStatus](../resource/deviceConfigurationDeviceStatus.md) object.|
+|[List deviceConfigurationDeviceStatuss](../api/deviceConfigurationDeviceStatus_list.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|List properties and relationships of the [deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) objects.|
+|[Get deviceConfigurationDeviceStatus](../api/deviceConfigurationDeviceStatus_get.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md)|Read properties and relationships of the [deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) object.|
+|[Create deviceConfigurationDeviceStatus](../api/deviceConfigurationDeviceStatus_create.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md)|Create a new [deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) object.|
+|[Delete deviceConfigurationDeviceStatus](../api/deviceConfigurationDeviceStatus_delete.md)|None|Deletes a [deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md).|
+|[Update deviceConfigurationDeviceStatus](../api/deviceConfigurationDeviceStatus_update.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md)|Update the properties of a [deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) object.|
 
 ### Properties
 |Property|Type|Description|

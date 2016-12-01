@@ -1,5 +1,5 @@
 ﻿# Update androidEnterpriseWiFiConfiguration
-Update the properties of a [androidEnterpriseWiFiConfiguration](../resource/androidEnterpriseWiFiConfiguration.md) object.
+Update the properties of a [androidEnterpriseWiFiConfiguration](../resources/androidEnterpriseWiFiConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [androidEnterpriseWiFiConfiguration](../resource/androidEnterpriseWiFiConfiguration.md) object.
-The following table shows the properties that are required when you create a [androidEnterpriseWiFiConfiguration](../resource/androidEnterpriseWiFiConfiguration.md).
+In the request body, supply a JSON representation of a [androidEnterpriseWiFiConfiguration](../resources/androidEnterpriseWiFiConfiguration.md) object.
+The following table shows the properties that are required when you create a [androidEnterpriseWiFiConfiguration](../resources/androidEnterpriseWiFiConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -47,7 +47,7 @@ The following table shows the properties that are required when you create a [an
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [androidEnterpriseWiFiConfiguration](../resource/androidEnterpriseWiFiConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [androidEnterpriseWiFiConfiguration](../resources/androidEnterpriseWiFiConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

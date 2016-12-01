@@ -1,5 +1,5 @@
 ﻿# Create iosTrustedRootCertificate
-Create a new [iosTrustedRootCertificate](../resource/iosTrustedRootCertificate.md) object.
+Create a new [iosTrustedRootCertificate](../resources/iosTrustedRootCertificate.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -39,7 +39,7 @@ The following table shows the properties that are required when you create a ios
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [iosTrustedRootCertificate](../resource/iosTrustedRootCertificate.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [iosTrustedRootCertificate](../resources/iosTrustedRootCertificate.md) object in the response body.
 
 ### Example
 ##### Request

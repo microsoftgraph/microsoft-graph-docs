@@ -1,5 +1,5 @@
 ﻿# Update cloudPkiSubscription
-Update the properties of a [cloudPkiSubscription](../resource/cloudPkiSubscription.md) object.
+Update the properties of a [cloudPkiSubscription](../resources/cloudPkiSubscription.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -20,8 +20,8 @@ PATCH /cloudPkiSubscriptions/<id>
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [cloudPkiSubscription](../resource/cloudPkiSubscription.md) object.
-The following table shows the properties that are required when you create a [cloudPkiSubscription](../resource/cloudPkiSubscription.md).
+In the request body, supply a JSON representation of a [cloudPkiSubscription](../resources/cloudPkiSubscription.md) object.
+The following table shows the properties that are required when you create a [cloudPkiSubscription](../resources/cloudPkiSubscription.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -34,14 +34,14 @@ The following table shows the properties that are required when you create a [cl
 |syncStatus|String|Last known SyncStatus of CloudPkiSubscription Possible values are: `unKnown`, `succeeded`, `failed`.|
 |lastSyncError|String|Error if occurred during last sync from third party CAs|
 |lastSyncDateTime|DateTimeOffset|DateTime certificate is last updated|
-|credentials|[cloudPkiAdministratorCredentials](cloudPkiAdministratorCredentials.md)|PKCS Certification Authority Name|
+|credentials|[cloudPkiAdministratorCredentials](../resources/cloudPkiAdministratorCredentials.md)|PKCS Certification Authority Name|
 |trustedRootCertificate|Binary|PKCS Certificate Template Name|
 |version|Int32|Version of the CloudPkiSubscription.|
 
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [cloudPkiSubscription](../resource/cloudPkiSubscription.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [cloudPkiSubscription](../resources/cloudPkiSubscription.md) object in the response body.
 
 ### Example
 ##### Request

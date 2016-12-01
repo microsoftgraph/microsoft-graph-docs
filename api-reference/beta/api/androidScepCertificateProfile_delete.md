@@ -1,5 +1,5 @@
 ﻿# Delete androidScepCertificateProfile
-Deletes a [androidScepCertificateProfile](../resource/androidScepCertificateProfile.md).
+Deletes a [androidScepCertificateProfile](../resources/androidScepCertificateProfile.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

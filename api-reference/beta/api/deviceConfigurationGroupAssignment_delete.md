@@ -1,5 +1,5 @@
 ﻿# Delete deviceConfigurationGroupAssignment
-Deletes a [deviceConfigurationGroupAssignment](../resource/deviceConfigurationGroupAssignment.md).
+Deletes a [deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

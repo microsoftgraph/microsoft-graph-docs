@@ -1,5 +1,5 @@
 ﻿# Delete macOSScepCertificateProfile
-Deletes a [macOSScepCertificateProfile](../resource/macOSScepCertificateProfile.md).
+Deletes a [macOSScepCertificateProfile](../resources/macOSScepCertificateProfile.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

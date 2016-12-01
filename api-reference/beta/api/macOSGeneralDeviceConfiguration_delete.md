@@ -1,5 +1,5 @@
 ﻿# Delete macOSGeneralDeviceConfiguration
-Deletes a [macOSGeneralDeviceConfiguration](../resource/macOSGeneralDeviceConfiguration.md).
+Deletes a [macOSGeneralDeviceConfiguration](../resources/macOSGeneralDeviceConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

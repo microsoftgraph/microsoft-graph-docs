@@ -1,5 +1,5 @@
 ﻿# Create macOSScepCertificateProfile
-Create a new [macOSScepCertificateProfile](../resource/macOSScepCertificateProfile.md) object.
+Create a new [macOSScepCertificateProfile](../resources/macOSScepCertificateProfile.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -43,12 +43,12 @@ The following table shows the properties that are required when you create a mac
 |keyUsage|String|SCEP Key Usage. Possible values are: `keyEncipherment`, `digitalSignature`.|
 |keySize|String|SCEP Key Size. Possible values are: `size1024`, `size2048`.|
 |hashAlgorithm|String|SCEP Hash Algorithm. Possible values are: `sha1`, `sha2`.|
-|extendedKeyUsages|[extendedKeyUsage](extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings.|
+|extendedKeyUsages|[extendedKeyUsage](../resources/extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings.|
 
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [macOSScepCertificateProfile](../resource/macOSScepCertificateProfile.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [macOSScepCertificateProfile](../resources/macOSScepCertificateProfile.md) object in the response body.
 
 ### Example
 ##### Request

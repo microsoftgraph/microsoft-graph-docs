@@ -1,5 +1,5 @@
 ﻿# Create androidGeneralDeviceConfiguration
-Create a new [androidGeneralDeviceConfiguration](../resource/androidGeneralDeviceConfiguration.md) object.
+Create a new [androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -42,7 +42,7 @@ The following table shows the properties that are required when you create a and
 |cellularBlockMessaging|Boolean|Indicates whether or not to block SMS/MMS messaging.|
 |cellularBlockVoiceRoaming|Boolean|Indicates whether or not to block voice roaming.|
 |cellularBlockWiFiTethering|Boolean|Indicates whether or not to block syncing Wi-Fi tethering.|
-|compliantAppsList|[appListItem](appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
+|compliantAppsList|[appListItem](../resources/appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
 |compliantAppListType|String|Type of list that is in the CompliantAppsList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Boolean|Indicates whether or not to block diagnostic data submission.|
 |locationServicesBlocked|Boolean|Indicates whether or not to block location services.|
@@ -81,7 +81,7 @@ The following table shows the properties that are required when you create a and
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [androidGeneralDeviceConfiguration](../resource/androidGeneralDeviceConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

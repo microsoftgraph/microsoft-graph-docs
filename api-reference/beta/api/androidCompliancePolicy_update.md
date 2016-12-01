@@ -1,5 +1,5 @@
 ﻿# Update androidCompliancePolicy
-Update the properties of a [androidCompliancePolicy](../resource/androidCompliancePolicy.md) object.
+Update the properties of a [androidCompliancePolicy](../resources/androidCompliancePolicy.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceCompliancePolicyAssignments/<id>/deviceCompliancePolicy
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [androidCompliancePolicy](../resource/androidCompliancePolicy.md) object.
-The following table shows the properties that are required when you create a [androidCompliancePolicy](../resource/androidCompliancePolicy.md).
+In the request body, supply a JSON representation of a [androidCompliancePolicy](../resources/androidCompliancePolicy.md) object.
+The following table shows the properties that are required when you create a [androidCompliancePolicy](../resources/androidCompliancePolicy.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create a [an
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [androidCompliancePolicy](../resource/androidCompliancePolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [androidCompliancePolicy](../resources/androidCompliancePolicy.md) object in the response body.
 
 ### Example
 ##### Request

@@ -1,5 +1,5 @@
 ﻿# Update deviceComplianceScheduledActionForRule
-Update the properties of a [deviceComplianceScheduledActionForRule](../resource/deviceComplianceScheduledActionForRule.md) object.
+Update the properties of a [deviceComplianceScheduledActionForRule](../resources/deviceComplianceScheduledActionForRule.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -20,8 +20,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/<id>/scheduledActionsForRule/<i
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [deviceComplianceScheduledActionForRule](../resource/deviceComplianceScheduledActionForRule.md) object.
-The following table shows the properties that are required when you create a [deviceComplianceScheduledActionForRule](../resource/deviceComplianceScheduledActionForRule.md).
+In the request body, supply a JSON representation of a [deviceComplianceScheduledActionForRule](../resources/deviceComplianceScheduledActionForRule.md) object.
+The following table shows the properties that are required when you create a [deviceComplianceScheduledActionForRule](../resources/deviceComplianceScheduledActionForRule.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -30,7 +30,7 @@ The following table shows the properties that are required when you create a [de
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [deviceComplianceScheduledActionForRule](../resource/deviceComplianceScheduledActionForRule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceComplianceScheduledActionForRule](../resources/deviceComplianceScheduledActionForRule.md) object in the response body.
 
 ### Example
 ##### Request

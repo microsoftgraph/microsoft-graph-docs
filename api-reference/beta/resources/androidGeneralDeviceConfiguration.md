@@ -7,14 +7,14 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List androidGeneralDeviceConfigurations](../api/androidGeneralDeviceConfiguration_list.md)|[androidGeneralDeviceConfiguration](androidGeneralDeviceConfiguration.md) collection|List properties and relationships of the [androidGeneralDeviceConfiguration](../resource/androidGeneralDeviceConfiguration.md) objects.|
-|[Get androidGeneralDeviceConfiguration](../api/androidGeneralDeviceConfiguration_get.md)|[androidGeneralDeviceConfiguration](androidGeneralDeviceConfiguration.md)|Read properties and relationships of the [androidGeneralDeviceConfiguration](../resource/androidGeneralDeviceConfiguration.md) object.|
-|[Create androidGeneralDeviceConfiguration](../api/androidGeneralDeviceConfiguration_create.md)|[androidGeneralDeviceConfiguration](androidGeneralDeviceConfiguration.md)|Create a new [androidGeneralDeviceConfiguration](../resource/androidGeneralDeviceConfiguration.md) object.|
-|[Delete androidGeneralDeviceConfiguration](../api/androidGeneralDeviceConfiguration_delete.md)|None|Deletes a [androidGeneralDeviceConfiguration](../resource/androidGeneralDeviceConfiguration.md).|
-|[Update androidGeneralDeviceConfiguration](../api/androidGeneralDeviceConfiguration_update.md)|[androidGeneralDeviceConfiguration](androidGeneralDeviceConfiguration.md)|Update the properties of a [androidGeneralDeviceConfiguration](../resource/androidGeneralDeviceConfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/androidGeneralDeviceConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/androidGeneralDeviceConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/androidGeneralDeviceConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[List androidGeneralDeviceConfigurations](../api/androidGeneralDeviceConfiguration_list.md)|[androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md) collection|List properties and relationships of the [androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md) objects.|
+|[Get androidGeneralDeviceConfiguration](../api/androidGeneralDeviceConfiguration_get.md)|[androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md)|Read properties and relationships of the [androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md) object.|
+|[Create androidGeneralDeviceConfiguration](../api/androidGeneralDeviceConfiguration_create.md)|[androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md)|Create a new [androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md) object.|
+|[Delete androidGeneralDeviceConfiguration](../api/androidGeneralDeviceConfiguration_delete.md)|None|Deletes a [androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md).|
+|[Update androidGeneralDeviceConfiguration](../api/androidGeneralDeviceConfiguration_update.md)|[androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md)|Update the properties of a [androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/androidGeneralDeviceConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/androidGeneralDeviceConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/androidGeneralDeviceConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -34,7 +34,7 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 |cellularBlockMessaging|Boolean|Indicates whether or not to block SMS/MMS messaging.|
 |cellularBlockVoiceRoaming|Boolean|Indicates whether or not to block voice roaming.|
 |cellularBlockWiFiTethering|Boolean|Indicates whether or not to block syncing Wi-Fi tethering.|
-|compliantAppsList|[appListItem](appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
+|compliantAppsList|[appListItem](../resources/appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
 |compliantAppListType|String|Type of list that is in the CompliantAppsList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Boolean|Indicates whether or not to block diagnostic data submission.|
 |locationServicesBlocked|Boolean|Indicates whether or not to block location services.|
@@ -73,9 +73,9 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

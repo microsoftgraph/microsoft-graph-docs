@@ -1,5 +1,5 @@
 ﻿# Delete windows10CustomConfiguration
-Deletes a [windows10CustomConfiguration](../resource/windows10CustomConfiguration.md).
+Deletes a [windows10CustomConfiguration](../resources/windows10CustomConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

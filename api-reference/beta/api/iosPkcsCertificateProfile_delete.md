@@ -1,5 +1,5 @@
 ﻿# Delete iosPkcsCertificateProfile
-Deletes a [iosPkcsCertificateProfile](../resource/iosPkcsCertificateProfile.md).
+Deletes a [iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

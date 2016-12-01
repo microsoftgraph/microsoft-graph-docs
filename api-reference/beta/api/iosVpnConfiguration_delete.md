@@ -1,5 +1,5 @@
 ﻿# Delete iosVpnConfiguration
-Deletes a [iosVpnConfiguration](../resource/iosVpnConfiguration.md).
+Deletes a [iosVpnConfiguration](../resources/iosVpnConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

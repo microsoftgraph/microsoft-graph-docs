@@ -1,5 +1,5 @@
 ﻿# Delete windowsPhone81TrustedRootCertificate
-Deletes a [windowsPhone81TrustedRootCertificate](../resource/windowsPhone81TrustedRootCertificate.md).
+Deletes a [windowsPhone81TrustedRootCertificate](../resources/windowsPhone81TrustedRootCertificate.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

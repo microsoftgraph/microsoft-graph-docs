@@ -1,5 +1,5 @@
 ﻿# Update iosEnterpriseWiFiConfiguration
-Update the properties of a [iosEnterpriseWiFiConfiguration](../resource/iosEnterpriseWiFiConfiguration.md) object.
+Update the properties of a [iosEnterpriseWiFiConfiguration](../resources/iosEnterpriseWiFiConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [iosEnterpriseWiFiConfiguration](../resource/iosEnterpriseWiFiConfiguration.md) object.
-The following table shows the properties that are required when you create a [iosEnterpriseWiFiConfiguration](../resource/iosEnterpriseWiFiConfiguration.md).
+In the request body, supply a JSON representation of a [iosEnterpriseWiFiConfiguration](../resources/iosEnterpriseWiFiConfiguration.md) object.
+The following table shows the properties that are required when you create a [iosEnterpriseWiFiConfiguration](../resources/iosEnterpriseWiFiConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create a [io
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [iosEnterpriseWiFiConfiguration](../resource/iosEnterpriseWiFiConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [iosEnterpriseWiFiConfiguration](../resources/iosEnterpriseWiFiConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

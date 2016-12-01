@@ -1,5 +1,5 @@
 ﻿# Delete windows10CompliancePolicy
-Deletes a [windows10CompliancePolicy](../resource/windows10CompliancePolicy.md).
+Deletes a [windows10CompliancePolicy](../resources/windows10CompliancePolicy.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

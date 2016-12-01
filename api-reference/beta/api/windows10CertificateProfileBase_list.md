@@ -1,5 +1,5 @@
 ﻿# List windows10CertificateProfileBases
-List properties and relationships of the [windows10CertificateProfileBase](../resource/windows10CertificateProfileBase.md) objects.
+List properties and relationships of the [windows10CertificateProfileBase](../resources/windows10CertificateProfileBase.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -23,7 +23,7 @@ GET /deviceManagement/deviceConfigurations/
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a collection of [windows10CertificateProfileBase](../resource/windows10CertificateProfileBase.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [windows10CertificateProfileBase](../resources/windows10CertificateProfileBase.md) objects in the response body.
 
 ### Example
 ##### Request

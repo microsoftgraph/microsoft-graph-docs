@@ -1,5 +1,5 @@
 ﻿# Delete windowsPhone81CustomConfiguration
-Deletes a [windowsPhone81CustomConfiguration](../resource/windowsPhone81CustomConfiguration.md).
+Deletes a [windowsPhone81CustomConfiguration](../resources/windowsPhone81CustomConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

@@ -1,5 +1,5 @@
 ﻿# Create androidScepCertificateProfile
-Create a new [androidScepCertificateProfile](../resource/androidScepCertificateProfile.md) object.
+Create a new [androidScepCertificateProfile](../resources/androidScepCertificateProfile.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -38,7 +38,7 @@ The following table shows the properties that are required when you create a and
 |subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md). Possible values are: `emailAddress`, `userPrincipalName`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md).|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md). Possible values are: `days`, `months`, `years`.|
-|extendedKeyUsages|[extendedKeyUsage](extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md).|
+|extendedKeyUsages|[extendedKeyUsage](../resources/extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md).|
 |scepServerUrls|String collection|SCEP Server Url(s)|
 |keyUsage|String|SCEP Key Usage Possible values are: `keyEncipherment`, `digitalSignature`.|
 |keySize|String|SCEP Key Size Possible values are: `size1024`, `size2048`.|
@@ -47,7 +47,7 @@ The following table shows the properties that are required when you create a and
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [androidScepCertificateProfile](../resource/androidScepCertificateProfile.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [androidScepCertificateProfile](../resources/androidScepCertificateProfile.md) object in the response body.
 
 ### Example
 ##### Request

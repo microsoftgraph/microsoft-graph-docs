@@ -1,5 +1,5 @@
 ﻿# Create iosGeneralDeviceConfiguration
-Create a new [iosGeneralDeviceConfiguration](../resource/iosGeneralDeviceConfiguration.md) object.
+Create a new [iosGeneralDeviceConfiguration](../resources/iosGeneralDeviceConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -41,7 +41,7 @@ The following table shows the properties that are required when you create a ios
 |appleWatchBlockPairing|Boolean|Indicates whether or not to allow Apple Watch pairing when the device is in supervised mode (iOS 9.0 and later).|
 |appleWatchForceWristDetection|Boolean|Indicates whether or not to force a paired Apple Watch to use Wrist Detection (iOS 8.2 and later).|
 |appleNewsBlocked|Boolean|Indicates whether or not to block the user from using News when the device is in supervised mode (iOS 9.0 and later).|
-|appsVisibilityList|[appListItem](appListItem.md) collection|List of apps in the visibility list (either visible/launchable apps list or hidden/unlaunchable apps list, controlled by AppsVisibilityListType) (iOS 9.3 and later).|
+|appsVisibilityList|[appListItem](../resources/appListItem.md) collection|List of apps in the visibility list (either visible/launchable apps list or hidden/unlaunchable apps list, controlled by AppsVisibilityListType) (iOS 9.3 and later).|
 |appsVisibilityListType|String|Type of list that is in the AppsVisibilityList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |appStoreBlockAutomaticDownloads|Boolean|Indicates whether or not to block the automatic downloading of apps purchased on other devices when the device is in supervised mode (iOS 9.0 and later).|
 |appStoreBlocked|Boolean|Indicates whether or not to block the user from using the App Store.|
@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create a ios
 |cellularBlockVoiceRoaming|Boolean|Indicates whether or not to block voice roaming.|
 |certificatesBlockUntrustedTlsCertificates|Boolean|Indicates whether or not to block untrusted TLS certificates.|
 |classroomAppBlockRemoteScreenObservation|Boolean|Indicates whether or not to allow remote screen observation by Classroom app when the device is in supervised mode (iOS 9.3 and later).|
-|compliantAppsList|[appListItem](appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
+|compliantAppsList|[appListItem](../resources/appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
 |compliantAppListType|String|List that is in the AppComplianceList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |configurationProfileBlockChanges|Boolean|Indicates whether or not to block the user from installing configuration profiles and certificates interactively when the device is in supervised mode.|
 |definitionLookupBlocked|Boolean|Indicates whether or not to block definition lookup when the device is in supervised mode (iOS 8.1.3 and later ).|
@@ -115,15 +115,15 @@ The following table shows the properties that are required when you create a ios
 |lockScreenBlockNotificationView|Boolean|Indicates whether or not to block the user from using the notification view on the lock screen.|
 |lockScreenBlockPassbook|Boolean|Indicates whether or not to block the user from using passbook when the device is locked.|
 |lockScreenBlockTodayView|Boolean|Indicates whether or not to block the user from using the Today View on the lock screen.|
-|mediaContentRatingAustralia|[mediaContentRatingAustralia](mediaContentRatingAustralia.md)|Media content rating settings for Australia|
-|mediaContentRatingCanada|[mediaContentRatingCanada](mediaContentRatingCanada.md)|Media content rating settings for Canada|
-|mediaContentRatingFrance|[mediaContentRatingFrance](mediaContentRatingFrance.md)|Media content rating settings for France|
-|mediaContentRatingGermany|[mediaContentRatingGermany](mediaContentRatingGermany.md)|Media content rating settings for Germany|
-|mediaContentRatingIreland|[mediaContentRatingIreland](mediaContentRatingIreland.md)|Media content rating settings for Ireland|
-|mediaContentRatingJapan|[mediaContentRatingJapan](mediaContentRatingJapan.md)|Media content rating settings for Japan|
-|mediaContentRatingNewZealand|[mediaContentRatingNewZealand](mediaContentRatingNewZealand.md)|Media content rating settings for New Zealand|
-|mediaContentRatingUnitedKingdom|[mediaContentRatingUnitedKingdom](mediaContentRatingUnitedKingdom.md)|Media content rating settings for United Kingdom|
-|mediaContentRatingUnitedStates|[mediaContentRatingUnitedStates](mediaContentRatingUnitedStates.md)|Media content rating settings for United States|
+|mediaContentRatingAustralia|[mediaContentRatingAustralia](../resources/mediaContentRatingAustralia.md)|Media content rating settings for Australia|
+|mediaContentRatingCanada|[mediaContentRatingCanada](../resources/mediaContentRatingCanada.md)|Media content rating settings for Canada|
+|mediaContentRatingFrance|[mediaContentRatingFrance](../resources/mediaContentRatingFrance.md)|Media content rating settings for France|
+|mediaContentRatingGermany|[mediaContentRatingGermany](../resources/mediaContentRatingGermany.md)|Media content rating settings for Germany|
+|mediaContentRatingIreland|[mediaContentRatingIreland](../resources/mediaContentRatingIreland.md)|Media content rating settings for Ireland|
+|mediaContentRatingJapan|[mediaContentRatingJapan](../resources/mediaContentRatingJapan.md)|Media content rating settings for Japan|
+|mediaContentRatingNewZealand|[mediaContentRatingNewZealand](../resources/mediaContentRatingNewZealand.md)|Media content rating settings for New Zealand|
+|mediaContentRatingUnitedKingdom|[mediaContentRatingUnitedKingdom](../resources/mediaContentRatingUnitedKingdom.md)|Media content rating settings for United Kingdom|
+|mediaContentRatingUnitedStates|[mediaContentRatingUnitedStates](../resources/mediaContentRatingUnitedStates.md)|Media content rating settings for United States|
 |mediaContentRatingApps|String|Media content rating settings for Apps Possible values are: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12`, `agesAbove17`.|
 |messagesBlocked|Boolean|Indicates whether or not to block the user from using the Messages app on the supervised device.|
 |notificationsBlockSettingsModification|Boolean|Indicates whether or not to allow notifications settings modification (iOS 9.3 and later).|
@@ -160,7 +160,7 @@ The following table shows the properties that are required when you create a ios
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [iosGeneralDeviceConfiguration](../resource/iosGeneralDeviceConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [iosGeneralDeviceConfiguration](../resources/iosGeneralDeviceConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

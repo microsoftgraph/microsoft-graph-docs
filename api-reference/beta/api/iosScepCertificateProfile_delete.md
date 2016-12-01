@@ -1,5 +1,5 @@
 ﻿# Delete iosScepCertificateProfile
-Deletes a [iosScepCertificateProfile](../resource/iosScepCertificateProfile.md).
+Deletes a [iosScepCertificateProfile](../resources/iosScepCertificateProfile.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

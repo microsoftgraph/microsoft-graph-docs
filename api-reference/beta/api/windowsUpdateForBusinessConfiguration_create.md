@@ -1,5 +1,5 @@
 ﻿# Create windowsUpdateForBusinessConfiguration
-Create a new [windowsUpdateForBusinessConfiguration](../resource/windowsUpdateForBusinessConfiguration.md) object.
+Create a new [windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -38,7 +38,7 @@ The following table shows the properties that are required when you create a win
 |automaticUpdateMode|String|Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
 |microsoftUpdateServiceAllowed|Boolean|Allow Microsoft Update Service|
 |driversExcluded|Boolean|Exclude Windows update Drivers|
-|installationSchedule|[windowsUpdateInstallScheduleType](windowsUpdateInstallScheduleType.md)|Installation schedule|
+|installationSchedule|[windowsUpdateInstallScheduleType](../resources/windowsUpdateInstallScheduleType.md)|Installation schedule|
 |qualityUpdatesDeferralPeriodInDays|Int32|Defer Quality Updates by these many days|
 |featureUpdatesDeferralPeriodInDays|Int32|Defer Feature Updates by these many days|
 |qualityUpdatesPaused|Boolean|Pause Quality Updates|
@@ -50,7 +50,7 @@ The following table shows the properties that are required when you create a win
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [windowsUpdateForBusinessConfiguration](../resource/windowsUpdateForBusinessConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

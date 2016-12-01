@@ -7,12 +7,12 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List androidCertificateProfileBases](../api/androidCertificateProfileBase_list.md)|[androidCertificateProfileBase](androidCertificateProfileBase.md) collection|List properties and relationships of the [androidCertificateProfileBase](../resource/androidCertificateProfileBase.md) objects.|
-|[Get androidCertificateProfileBase](../api/androidCertificateProfileBase_get.md)|[androidCertificateProfileBase](androidCertificateProfileBase.md)|Read properties and relationships of the [androidCertificateProfileBase](../resource/androidCertificateProfileBase.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/androidCertificateProfileBase_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/androidCertificateProfileBase_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/androidCertificateProfileBase_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
-|[Get androidTrustedRootCertificate](../api/androidCertificateProfileBase_get_androidTrustedRootCertificate.md)|[androidTrustedRootCertificate](androidTrustedRootCertificate.md)|Get the [androidTrustedRootCertificate](androidTrustedRootCertificate.md) from the rootCertificate navigation property.|
+|[List androidCertificateProfileBases](../api/androidCertificateProfileBase_list.md)|[androidCertificateProfileBase](../resources/androidCertificateProfileBase.md) collection|List properties and relationships of the [androidCertificateProfileBase](../resources/androidCertificateProfileBase.md) objects.|
+|[Get androidCertificateProfileBase](../api/androidCertificateProfileBase_get.md)|[androidCertificateProfileBase](../resources/androidCertificateProfileBase.md)|Read properties and relationships of the [androidCertificateProfileBase](../resources/androidCertificateProfileBase.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/androidCertificateProfileBase_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/androidCertificateProfileBase_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/androidCertificateProfileBase_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[Get androidTrustedRootCertificate](../api/androidCertificateProfileBase_get_androidTrustedRootCertificate.md)|[androidTrustedRootCertificate](../resources/androidTrustedRootCertificate.md)|Get the [androidTrustedRootCertificate](../resources/androidTrustedRootCertificate.md) from the rootCertificate navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -28,15 +28,15 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 |subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Possible values are: `emailAddress`, `userPrincipalName`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period.|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period. Possible values are: `days`, `months`, `years`.|
-|extendedKeyUsages|[extendedKeyUsage](extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings.|
+|extendedKeyUsages|[extendedKeyUsage](../resources/extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings.|
 
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|rootCertificate|[androidTrustedRootCertificate](androidTrustedRootCertificate.md)|Trusted Root Certificate.|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|rootCertificate|[androidTrustedRootCertificate](../resources/androidTrustedRootCertificate.md)|Trusted Root Certificate.|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

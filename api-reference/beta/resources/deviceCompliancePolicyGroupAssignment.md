@@ -7,12 +7,12 @@ Inherits from [deviceCompliancePolicyAssignment](deviceCompliancePolicyAssignmen
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List deviceCompliancePolicyGroupAssignments](../api/deviceCompliancePolicyGroupAssignment_list.md)|[deviceCompliancePolicyGroupAssignment](deviceCompliancePolicyGroupAssignment.md) collection|List properties and relationships of the [deviceCompliancePolicyGroupAssignment](../resource/deviceCompliancePolicyGroupAssignment.md) objects.|
-|[Get deviceCompliancePolicyGroupAssignment](../api/deviceCompliancePolicyGroupAssignment_get.md)|[deviceCompliancePolicyGroupAssignment](deviceCompliancePolicyGroupAssignment.md)|Read properties and relationships of the [deviceCompliancePolicyGroupAssignment](../resource/deviceCompliancePolicyGroupAssignment.md) object.|
-|[Create deviceCompliancePolicyGroupAssignment](../api/deviceCompliancePolicyGroupAssignment_create.md)|[deviceCompliancePolicyGroupAssignment](deviceCompliancePolicyGroupAssignment.md)|Create a new [deviceCompliancePolicyGroupAssignment](../resource/deviceCompliancePolicyGroupAssignment.md) object.|
-|[Delete deviceCompliancePolicyGroupAssignment](../api/deviceCompliancePolicyGroupAssignment_delete.md)|None|Deletes a [deviceCompliancePolicyGroupAssignment](../resource/deviceCompliancePolicyGroupAssignment.md).|
-|[Update deviceCompliancePolicyGroupAssignment](../api/deviceCompliancePolicyGroupAssignment_update.md)|[deviceCompliancePolicyGroupAssignment](deviceCompliancePolicyGroupAssignment.md)|Update the properties of a [deviceCompliancePolicyGroupAssignment](../resource/deviceCompliancePolicyGroupAssignment.md) object.|
-|[Get deviceCompliancePolicy](../api/deviceCompliancePolicyGroupAssignment_get_deviceCompliancePolicy.md)|[deviceCompliancePolicy](deviceCompliancePolicy.md)|Get the [deviceCompliancePolicy](deviceCompliancePolicy.md) from the deviceCompliancePolicy navigation property.|
+|[List deviceCompliancePolicyGroupAssignments](../api/deviceCompliancePolicyGroupAssignment_list.md)|[deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md) collection|List properties and relationships of the [deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md) objects.|
+|[Get deviceCompliancePolicyGroupAssignment](../api/deviceCompliancePolicyGroupAssignment_get.md)|[deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md)|Read properties and relationships of the [deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md) object.|
+|[Create deviceCompliancePolicyGroupAssignment](../api/deviceCompliancePolicyGroupAssignment_create.md)|[deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md)|Create a new [deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md) object.|
+|[Delete deviceCompliancePolicyGroupAssignment](../api/deviceCompliancePolicyGroupAssignment_delete.md)|None|Deletes a [deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md).|
+|[Update deviceCompliancePolicyGroupAssignment](../api/deviceCompliancePolicyGroupAssignment_update.md)|[deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md)|Update the properties of a [deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md) object.|
+|[Get deviceCompliancePolicy](../api/deviceCompliancePolicyGroupAssignment_get_deviceCompliancePolicy.md)|[deviceCompliancePolicy](../resources/deviceCompliancePolicy.md)|Get the [deviceCompliancePolicy](../resources/deviceCompliancePolicy.md) from the deviceCompliancePolicy navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -23,7 +23,7 @@ Inherits from [deviceCompliancePolicyAssignment](deviceCompliancePolicyAssignmen
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|deviceCompliancePolicy|[deviceCompliancePolicy](deviceCompliancePolicy.md)|The navigation link to the  device compliance polic targeted. Inherited from [deviceCompliancePolicyAssignment](deviceCompliancePolicyAssignment.md)|
+|deviceCompliancePolicy|[deviceCompliancePolicy](../resources/deviceCompliancePolicy.md)|The navigation link to the  device compliance polic targeted. Inherited from [deviceCompliancePolicyAssignment](deviceCompliancePolicyAssignment.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

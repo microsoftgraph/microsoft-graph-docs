@@ -1,5 +1,5 @@
 ﻿# Create cloudPkiSubscription
-Create a new [cloudPkiSubscription](../resource/cloudPkiSubscription.md) object.
+Create a new [cloudPkiSubscription](../resources/cloudPkiSubscription.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -34,14 +34,14 @@ The following table shows the properties that are required when you create a clo
 |syncStatus|String|Last known SyncStatus of CloudPkiSubscription Possible values are: `unKnown`, `succeeded`, `failed`.|
 |lastSyncError|String|Error if occurred during last sync from third party CAs|
 |lastSyncDateTime|DateTimeOffset|DateTime certificate is last updated|
-|credentials|[cloudPkiAdministratorCredentials](cloudPkiAdministratorCredentials.md)|PKCS Certification Authority Name|
+|credentials|[cloudPkiAdministratorCredentials](../resources/cloudPkiAdministratorCredentials.md)|PKCS Certification Authority Name|
 |trustedRootCertificate|Binary|PKCS Certificate Template Name|
 |version|Int32|Version of the CloudPkiSubscription.|
 
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [cloudPkiSubscription](../resource/cloudPkiSubscription.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [cloudPkiSubscription](../resources/cloudPkiSubscription.md) object in the response body.
 
 ### Example
 ##### Request

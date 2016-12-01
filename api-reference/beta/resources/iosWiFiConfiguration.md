@@ -7,14 +7,14 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List iosWiFiConfigurations](../api/iosWiFiConfiguration_list.md)|[iosWiFiConfiguration](iosWiFiConfiguration.md) collection|List properties and relationships of the [iosWiFiConfiguration](../resource/iosWiFiConfiguration.md) objects.|
-|[Get iosWiFiConfiguration](../api/iosWiFiConfiguration_get.md)|[iosWiFiConfiguration](iosWiFiConfiguration.md)|Read properties and relationships of the [iosWiFiConfiguration](../resource/iosWiFiConfiguration.md) object.|
-|[Create iosWiFiConfiguration](../api/iosWiFiConfiguration_create.md)|[iosWiFiConfiguration](iosWiFiConfiguration.md)|Create a new [iosWiFiConfiguration](../resource/iosWiFiConfiguration.md) object.|
-|[Delete iosWiFiConfiguration](../api/iosWiFiConfiguration_delete.md)|None|Deletes a [iosWiFiConfiguration](../resource/iosWiFiConfiguration.md).|
-|[Update iosWiFiConfiguration](../api/iosWiFiConfiguration_update.md)|[iosWiFiConfiguration](iosWiFiConfiguration.md)|Update the properties of a [iosWiFiConfiguration](../resource/iosWiFiConfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/iosWiFiConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/iosWiFiConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/iosWiFiConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[List iosWiFiConfigurations](../api/iosWiFiConfiguration_list.md)|[iosWiFiConfiguration](../resources/iosWiFiConfiguration.md) collection|List properties and relationships of the [iosWiFiConfiguration](../resources/iosWiFiConfiguration.md) objects.|
+|[Get iosWiFiConfiguration](../api/iosWiFiConfiguration_get.md)|[iosWiFiConfiguration](../resources/iosWiFiConfiguration.md)|Read properties and relationships of the [iosWiFiConfiguration](../resources/iosWiFiConfiguration.md) object.|
+|[Create iosWiFiConfiguration](../api/iosWiFiConfiguration_create.md)|[iosWiFiConfiguration](../resources/iosWiFiConfiguration.md)|Create a new [iosWiFiConfiguration](../resources/iosWiFiConfiguration.md) object.|
+|[Delete iosWiFiConfiguration](../api/iosWiFiConfiguration_delete.md)|None|Deletes a [iosWiFiConfiguration](../resources/iosWiFiConfiguration.md).|
+|[Update iosWiFiConfiguration](../api/iosWiFiConfiguration_update.md)|[iosWiFiConfiguration](../resources/iosWiFiConfiguration.md)|Update the properties of a [iosWiFiConfiguration](../resources/iosWiFiConfiguration.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/iosWiFiConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/iosWiFiConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/iosWiFiConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -38,9 +38,9 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

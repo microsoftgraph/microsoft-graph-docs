@@ -1,5 +1,5 @@
 ﻿# List windowsPhone81CompliancePolicies
-List properties and relationships of the [windowsPhone81CompliancePolicy](../resource/windowsPhone81CompliancePolicy.md) objects.
+List properties and relationships of the [windowsPhone81CompliancePolicy](../resources/windowsPhone81CompliancePolicy.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -23,7 +23,7 @@ GET /deviceManagement/deviceCompliancePolicies/
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a collection of [windowsPhone81CompliancePolicy](../resource/windowsPhone81CompliancePolicy.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [windowsPhone81CompliancePolicy](../resources/windowsPhone81CompliancePolicy.md) objects in the response body.
 
 ### Example
 ##### Request

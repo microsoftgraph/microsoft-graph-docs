@@ -1,5 +1,5 @@
 ﻿# Update iosEasEmailProfileConfiguration
-Update the properties of a [iosEasEmailProfileConfiguration](../resource/iosEasEmailProfileConfiguration.md) object.
+Update the properties of a [iosEasEmailProfileConfiguration](../resources/iosEasEmailProfileConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [iosEasEmailProfileConfiguration](../resource/iosEasEmailProfileConfiguration.md) object.
-The following table shows the properties that are required when you create a [iosEasEmailProfileConfiguration](../resource/iosEasEmailProfileConfiguration.md).
+In the request body, supply a JSON representation of a [iosEasEmailProfileConfiguration](../resources/iosEasEmailProfileConfiguration.md) object.
+The following table shows the properties that are required when you create a [iosEasEmailProfileConfiguration](../resources/iosEasEmailProfileConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create a [io
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [iosEasEmailProfileConfiguration](../resource/iosEasEmailProfileConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [iosEasEmailProfileConfiguration](../resources/iosEasEmailProfileConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

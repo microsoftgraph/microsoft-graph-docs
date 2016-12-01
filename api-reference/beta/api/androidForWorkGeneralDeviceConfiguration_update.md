@@ -1,5 +1,5 @@
 ﻿# Update androidForWorkGeneralDeviceConfiguration
-Update the properties of a [androidForWorkGeneralDeviceConfiguration](../resource/androidForWorkGeneralDeviceConfiguration.md) object.
+Update the properties of a [androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [androidForWorkGeneralDeviceConfiguration](../resource/androidForWorkGeneralDeviceConfiguration.md) object.
-The following table shows the properties that are required when you create a [androidForWorkGeneralDeviceConfiguration](../resource/androidForWorkGeneralDeviceConfiguration.md).
+In the request body, supply a JSON representation of a [androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md) object.
+The following table shows the properties that are required when you create a [androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create a [an
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [androidForWorkGeneralDeviceConfiguration](../resource/androidForWorkGeneralDeviceConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

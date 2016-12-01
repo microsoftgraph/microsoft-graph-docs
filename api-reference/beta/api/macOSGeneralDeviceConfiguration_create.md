@@ -1,5 +1,5 @@
 ﻿# Create macOSGeneralDeviceConfiguration
-Create a new [macOSGeneralDeviceConfiguration](../resource/macOSGeneralDeviceConfiguration.md) object.
+Create a new [macOSGeneralDeviceConfiguration](../resources/macOSGeneralDeviceConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -33,7 +33,7 @@ The following table shows the properties that are required when you create a mac
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
-|compliantAppsList|[appListItem](appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
+|compliantAppsList|[appListItem](../resources/appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
 |compliantAppListType|String|List that is in the CompliantAppsList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |emailInDomainSuffixes|String collection|Any email address that does not have a suffix that matches any item listed here will be considered out-of-domain.|
 |passwordBlockSimple|Boolean|Block simple passwords.|
@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create a mac
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [macOSGeneralDeviceConfiguration](../resource/macOSGeneralDeviceConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [macOSGeneralDeviceConfiguration](../resources/macOSGeneralDeviceConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

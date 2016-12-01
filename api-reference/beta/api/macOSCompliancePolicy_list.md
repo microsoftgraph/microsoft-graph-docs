@@ -1,5 +1,5 @@
 ﻿# List macOSCompliancePolicies
-List properties and relationships of the [macOSCompliancePolicy](../resource/macOSCompliancePolicy.md) objects.
+List properties and relationships of the [macOSCompliancePolicy](../resources/macOSCompliancePolicy.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -23,7 +23,7 @@ GET /deviceManagement/deviceCompliancePolicies/
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a collection of [macOSCompliancePolicy](../resource/macOSCompliancePolicy.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [macOSCompliancePolicy](../resources/macOSCompliancePolicy.md) objects in the response body.
 
 ### Example
 ##### Request

@@ -7,15 +7,15 @@ Inherits from [deviceCompliancePolicy](deviceCompliancePolicy.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List windows81CompliancePolicies](../api/windows81CompliancePolicy_list.md)|[windows81CompliancePolicy](windows81CompliancePolicy.md) collection|List properties and relationships of the [windows81CompliancePolicy](../resource/windows81CompliancePolicy.md) objects.|
-|[Get windows81CompliancePolicy](../api/windows81CompliancePolicy_get.md)|[windows81CompliancePolicy](windows81CompliancePolicy.md)|Read properties and relationships of the [windows81CompliancePolicy](../resource/windows81CompliancePolicy.md) object.|
-|[Create windows81CompliancePolicy](../api/windows81CompliancePolicy_create.md)|[windows81CompliancePolicy](windows81CompliancePolicy.md)|Create a new [windows81CompliancePolicy](../resource/windows81CompliancePolicy.md) object.|
-|[Delete windows81CompliancePolicy](../api/windows81CompliancePolicy_delete.md)|None|Deletes a [windows81CompliancePolicy](../resource/windows81CompliancePolicy.md).|
-|[Update windows81CompliancePolicy](../api/windows81CompliancePolicy_update.md)|[windows81CompliancePolicy](windows81CompliancePolicy.md)|Update the properties of a [windows81CompliancePolicy](../resource/windows81CompliancePolicy.md) object.|
-|[List deviceCompliancePolicyGroupAssignments](../api/windows81CompliancePolicy_list_deviceCompliancePolicyGroupAssignment.md)|[deviceCompliancePolicyGroupAssignment](deviceCompliancePolicyGroupAssignment.md) collection|Get the deviceCompliancePolicyGroupAssignments from the groupAssignments navigation property.|
-|[List deviceComplianceScheduledActionForRules](../api/windows81CompliancePolicy_list_deviceComplianceScheduledActionForRule.md)|[deviceComplianceScheduledActionForRule](deviceComplianceScheduledActionForRule.md) collection|Get the deviceComplianceScheduledActionForRules from the scheduledActionsForRule navigation property.|
-|[List deviceComplianceDeviceStatuss](../api/windows81CompliancePolicy_list_deviceComplianceDeviceStatus.md)|[deviceComplianceDeviceStatus](deviceComplianceDeviceStatus.md) collection|Get the deviceComplianceDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceComplianceUserStatuss](../api/windows81CompliancePolicy_list_deviceComplianceUserStatus.md)|[deviceComplianceUserStatus](deviceComplianceUserStatus.md) collection|Get the deviceComplianceUserStatuss from the userStatuses navigation property.|
+|[List windows81CompliancePolicies](../api/windows81CompliancePolicy_list.md)|[windows81CompliancePolicy](../resources/windows81CompliancePolicy.md) collection|List properties and relationships of the [windows81CompliancePolicy](../resources/windows81CompliancePolicy.md) objects.|
+|[Get windows81CompliancePolicy](../api/windows81CompliancePolicy_get.md)|[windows81CompliancePolicy](../resources/windows81CompliancePolicy.md)|Read properties and relationships of the [windows81CompliancePolicy](../resources/windows81CompliancePolicy.md) object.|
+|[Create windows81CompliancePolicy](../api/windows81CompliancePolicy_create.md)|[windows81CompliancePolicy](../resources/windows81CompliancePolicy.md)|Create a new [windows81CompliancePolicy](../resources/windows81CompliancePolicy.md) object.|
+|[Delete windows81CompliancePolicy](../api/windows81CompliancePolicy_delete.md)|None|Deletes a [windows81CompliancePolicy](../resources/windows81CompliancePolicy.md).|
+|[Update windows81CompliancePolicy](../api/windows81CompliancePolicy_update.md)|[windows81CompliancePolicy](../resources/windows81CompliancePolicy.md)|Update the properties of a [windows81CompliancePolicy](../resources/windows81CompliancePolicy.md) object.|
+|[List deviceCompliancePolicyGroupAssignments](../api/windows81CompliancePolicy_list_deviceCompliancePolicyGroupAssignment.md)|[deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md) collection|Get the deviceCompliancePolicyGroupAssignments from the groupAssignments navigation property.|
+|[List deviceComplianceScheduledActionForRules](../api/windows81CompliancePolicy_list_deviceComplianceScheduledActionForRule.md)|[deviceComplianceScheduledActionForRule](../resources/deviceComplianceScheduledActionForRule.md) collection|Get the deviceComplianceScheduledActionForRules from the scheduledActionsForRule navigation property.|
+|[List deviceComplianceDeviceStatuss](../api/windows81CompliancePolicy_list_deviceComplianceDeviceStatus.md)|[deviceComplianceDeviceStatus](../resources/deviceComplianceDeviceStatus.md) collection|Get the deviceComplianceDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceComplianceUserStatuss](../api/windows81CompliancePolicy_list_deviceComplianceUserStatus.md)|[deviceComplianceUserStatus](../resources/deviceComplianceUserStatus.md) collection|Get the deviceComplianceUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -39,10 +39,10 @@ Inherits from [deviceCompliancePolicy](deviceCompliancePolicy.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceCompliancePolicyGroupAssignment](deviceCompliancePolicyGroupAssignment.md) collection|The list of group assignments for this compliance policy. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
-|scheduledActionsForRule|[deviceComplianceScheduledActionForRule](deviceComplianceScheduledActionForRule.md) collection|The list of scheduled action for this rule Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
-|deviceStatuses|[deviceComplianceDeviceStatus](deviceComplianceDeviceStatus.md) collection|List of DeviceComplianceDeviceStatus. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
-|userStatuses|[deviceComplianceUserStatus](deviceComplianceUserStatus.md) collection|List of DeviceComplianceUserStatus. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
+|groupAssignments|[deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md) collection|The list of group assignments for this compliance policy. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
+|scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/deviceComplianceScheduledActionForRule.md) collection|The list of scheduled action for this rule Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
+|deviceStatuses|[deviceComplianceDeviceStatus](../resources/deviceComplianceDeviceStatus.md) collection|List of DeviceComplianceDeviceStatus. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
+|userStatuses|[deviceComplianceUserStatus](../resources/deviceComplianceUserStatus.md) collection|List of DeviceComplianceUserStatus. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

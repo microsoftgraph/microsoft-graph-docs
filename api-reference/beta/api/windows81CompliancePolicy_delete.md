@@ -1,5 +1,5 @@
 ﻿# Delete windows81CompliancePolicy
-Deletes a [windows81CompliancePolicy](../resource/windows81CompliancePolicy.md).
+Deletes a [windows81CompliancePolicy](../resources/windows81CompliancePolicy.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

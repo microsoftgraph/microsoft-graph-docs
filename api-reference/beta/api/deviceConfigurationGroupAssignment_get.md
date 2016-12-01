@@ -1,5 +1,5 @@
 ﻿# Get deviceConfigurationGroupAssignment
-Read properties and relationships of the [deviceConfigurationGroupAssignment](../resource/deviceConfigurationGroupAssignment.md) object.
+Read properties and relationships of the [deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -26,7 +26,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and [deviceConfigurationGroupAssignment](../resource/deviceConfigurationGroupAssignment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) object in the response body.
 
 ### Example
 ##### Request

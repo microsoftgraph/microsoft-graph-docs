@@ -1,5 +1,5 @@
 ﻿# Update macOSCompliancePolicy
-Update the properties of a [macOSCompliancePolicy](../resource/macOSCompliancePolicy.md) object.
+Update the properties of a [macOSCompliancePolicy](../resources/macOSCompliancePolicy.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceCompliancePolicyAssignments/<id>/deviceCompliancePolicy
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [macOSCompliancePolicy](../resource/macOSCompliancePolicy.md) object.
-The following table shows the properties that are required when you create a [macOSCompliancePolicy](../resource/macOSCompliancePolicy.md).
+In the request body, supply a JSON representation of a [macOSCompliancePolicy](../resources/macOSCompliancePolicy.md) object.
+The following table shows the properties that are required when you create a [macOSCompliancePolicy](../resources/macOSCompliancePolicy.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -44,7 +44,7 @@ The following table shows the properties that are required when you create a [ma
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [macOSCompliancePolicy](../resource/macOSCompliancePolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [macOSCompliancePolicy](../resources/macOSCompliancePolicy.md) object in the response body.
 
 ### Example
 ##### Request

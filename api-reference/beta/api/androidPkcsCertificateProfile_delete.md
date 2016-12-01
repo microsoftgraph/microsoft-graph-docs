@@ -1,5 +1,5 @@
 ﻿# Delete androidPkcsCertificateProfile
-Deletes a [androidPkcsCertificateProfile](../resource/androidPkcsCertificateProfile.md).
+Deletes a [androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

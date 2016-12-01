@@ -1,5 +1,5 @@
 ﻿# Create editionUpgradeConfiguration
-Create a new [editionUpgradeConfiguration](../resource/editionUpgradeConfiguration.md) object.
+Create a new [editionUpgradeConfiguration](../resources/editionUpgradeConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -41,7 +41,7 @@ The following table shows the properties that are required when you create a edi
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [editionUpgradeConfiguration](../resource/editionUpgradeConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [editionUpgradeConfiguration](../resources/editionUpgradeConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

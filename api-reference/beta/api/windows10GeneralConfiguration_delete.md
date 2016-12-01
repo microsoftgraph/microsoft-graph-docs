@@ -1,5 +1,5 @@
 ﻿# Delete windows10GeneralConfiguration
-Deletes a [windows10GeneralConfiguration](../resource/windows10GeneralConfiguration.md).
+Deletes a [windows10GeneralConfiguration](../resources/windows10GeneralConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

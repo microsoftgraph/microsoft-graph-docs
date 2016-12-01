@@ -1,5 +1,5 @@
 ﻿# Update androidCustomConfiguration
-Update the properties of a [androidCustomConfiguration](../resource/androidCustomConfiguration.md) object.
+Update the properties of a [androidCustomConfiguration](../resources/androidCustomConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [androidCustomConfiguration](../resource/androidCustomConfiguration.md) object.
-The following table shows the properties that are required when you create a [androidCustomConfiguration](../resource/androidCustomConfiguration.md).
+In the request body, supply a JSON representation of a [androidCustomConfiguration](../resources/androidCustomConfiguration.md) object.
+The following table shows the properties that are required when you create a [androidCustomConfiguration](../resources/androidCustomConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -33,12 +33,12 @@ The following table shows the properties that are required when you create a [an
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
-|omaSettings|[omaSetting](omaSetting.md) collection|OMA settings.|
+|omaSettings|[omaSetting](../resources/omaSetting.md) collection|OMA settings.|
 
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [androidCustomConfiguration](../resource/androidCustomConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [androidCustomConfiguration](../resources/androidCustomConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

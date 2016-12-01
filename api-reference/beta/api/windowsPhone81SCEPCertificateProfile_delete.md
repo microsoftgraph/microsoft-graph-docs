@@ -1,5 +1,5 @@
 ﻿# Delete windowsPhone81SCEPCertificateProfile
-Deletes a [windowsPhone81SCEPCertificateProfile](../resource/windowsPhone81SCEPCertificateProfile.md).
+Deletes a [windowsPhone81SCEPCertificateProfile](../resources/windowsPhone81SCEPCertificateProfile.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

@@ -1,5 +1,5 @@
 ﻿# Create windows10GeneralConfiguration
-Create a new [windows10GeneralConfiguration](../resource/windows10GeneralConfiguration.md) object.
+Create a new [windows10GeneralConfiguration](../resources/windows10GeneralConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -116,7 +116,7 @@ The following table shows the properties that are required when you create a win
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [windows10GeneralConfiguration](../resource/windows10GeneralConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [windows10GeneralConfiguration](../resources/windows10GeneralConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

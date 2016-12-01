@@ -1,5 +1,5 @@
 ﻿# Delete deviceComplianceScheduledActionForRule
-Deletes a [deviceComplianceScheduledActionForRule](../resource/deviceComplianceScheduledActionForRule.md).
+Deletes a [deviceComplianceScheduledActionForRule](../resources/deviceComplianceScheduledActionForRule.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

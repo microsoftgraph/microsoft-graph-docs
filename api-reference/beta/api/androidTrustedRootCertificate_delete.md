@@ -1,5 +1,5 @@
 ﻿# Delete androidTrustedRootCertificate
-Deletes a [androidTrustedRootCertificate](../resource/androidTrustedRootCertificate.md).
+Deletes a [androidTrustedRootCertificate](../resources/androidTrustedRootCertificate.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

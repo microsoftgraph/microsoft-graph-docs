@@ -1,5 +1,5 @@
 ﻿# Delete deviceComplianceUserStatus
-Deletes a [deviceComplianceUserStatus](../resource/deviceComplianceUserStatus.md).
+Deletes a [deviceComplianceUserStatus](../resources/deviceComplianceUserStatus.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

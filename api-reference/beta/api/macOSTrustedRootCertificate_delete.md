@@ -1,5 +1,5 @@
 ﻿# Delete macOSTrustedRootCertificate
-Deletes a [macOSTrustedRootCertificate](../resource/macOSTrustedRootCertificate.md).
+Deletes a [macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

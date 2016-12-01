@@ -1,5 +1,5 @@
 ﻿# Update androidVpnConfiguration
-Update the properties of a [androidVpnConfiguration](../resource/androidVpnConfiguration.md) object.
+Update the properties of a [androidVpnConfiguration](../resources/androidVpnConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [androidVpnConfiguration](../resource/androidVpnConfiguration.md) object.
-The following table shows the properties that are required when you create a [androidVpnConfiguration](../resource/androidVpnConfiguration.md).
+In the request body, supply a JSON representation of a [androidVpnConfiguration](../resources/androidVpnConfiguration.md) object.
+The following table shows the properties that are required when you create a [androidVpnConfiguration](../resources/androidVpnConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -37,15 +37,15 @@ The following table shows the properties that are required when you create a [an
 |connectionType|String|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`.|
 |role|String|Role when connection type is set to Pulse Secure.|
 |realm|String|Realm when connection type is set to Pulse Secure.|
-|servers|[vpnServer](vpnServer.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations.|
+|servers|[vpnServer](../resources/vpnServer.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations.|
 |fingerprint|String|Fingerprint is a string that will be used to verify the VPN server can be trusted, which is only applicable when connection type is Check Point Capsule VPN.|
-|customData|[keyValue](keyValue.md) collection|Custom data when connection type is set to Citrix.|
+|customData|[keyValue](../resources/keyValue.md) collection|Custom data when connection type is set to Citrix.|
 |authenticationMethod|String|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
 
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [androidVpnConfiguration](../resource/androidVpnConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [androidVpnConfiguration](../resources/androidVpnConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

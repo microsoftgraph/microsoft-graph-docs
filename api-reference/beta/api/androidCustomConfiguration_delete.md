@@ -1,5 +1,5 @@
 ﻿# Delete androidCustomConfiguration
-Deletes a [androidCustomConfiguration](../resource/androidCustomConfiguration.md).
+Deletes a [androidCustomConfiguration](../resources/androidCustomConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

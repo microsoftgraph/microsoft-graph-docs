@@ -23,7 +23,7 @@ GET /deviceManagement/deviceConfigurations/<id>/deviceStatuses/
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a collection of [deviceConfigurationDeviceStatus](../resource/deviceConfigurationDeviceStatus.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) objects in the response body.
 
 ### Example
 ##### Request

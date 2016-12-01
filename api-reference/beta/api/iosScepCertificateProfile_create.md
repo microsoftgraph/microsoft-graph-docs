@@ -1,5 +1,5 @@
 ﻿# Create iosScepCertificateProfile
-Create a new [iosScepCertificateProfile](../resource/iosScepCertificateProfile.md) object.
+Create a new [iosScepCertificateProfile](../resources/iosScepCertificateProfile.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -42,12 +42,12 @@ The following table shows the properties that are required when you create a ios
 |subjectNameFormatString|String|Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US|
 |keyUsage|String|SCEP Key Usage. Possible values are: `keyEncipherment`, `digitalSignature`.|
 |keySize|String|SCEP Key Size. Possible values are: `size1024`, `size2048`.|
-|extendedKeyUsages|[extendedKeyUsage](extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings.|
+|extendedKeyUsages|[extendedKeyUsage](../resources/extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings.|
 
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [iosScepCertificateProfile](../resource/iosScepCertificateProfile.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [iosScepCertificateProfile](../resources/iosScepCertificateProfile.md) object in the response body.
 
 ### Example
 ##### Request

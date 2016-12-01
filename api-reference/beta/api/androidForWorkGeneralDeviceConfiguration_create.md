@@ -1,5 +1,5 @@
 ﻿# Create androidForWorkGeneralDeviceConfiguration
-Create a new [androidForWorkGeneralDeviceConfiguration](../resource/androidForWorkGeneralDeviceConfiguration.md) object.
+Create a new [androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create a and
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [androidForWorkGeneralDeviceConfiguration](../resource/androidForWorkGeneralDeviceConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

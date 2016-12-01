@@ -4,12 +4,12 @@ Scheduled Action Configuration
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List deviceComplianceActionItems](../api/deviceComplianceActionItem_list.md)|[deviceComplianceActionItem](deviceComplianceActionItem.md) collection|List properties and relationships of the [deviceComplianceActionItem](../resource/deviceComplianceActionItem.md) objects.|
-|[Get deviceComplianceActionItem](../api/deviceComplianceActionItem_get.md)|[deviceComplianceActionItem](deviceComplianceActionItem.md)|Read properties and relationships of the [deviceComplianceActionItem](../resource/deviceComplianceActionItem.md) object.|
-|[Create deviceComplianceActionItem](../api/deviceComplianceActionItem_create.md)|[deviceComplianceActionItem](deviceComplianceActionItem.md)|Create a new [deviceComplianceActionItem](../resource/deviceComplianceActionItem.md) object.|
-|[Delete deviceComplianceActionItem](../api/deviceComplianceActionItem_delete.md)|None|Deletes a [deviceComplianceActionItem](../resource/deviceComplianceActionItem.md).|
-|[Update deviceComplianceActionItem](../api/deviceComplianceActionItem_update.md)|[deviceComplianceActionItem](deviceComplianceActionItem.md)|Update the properties of a [deviceComplianceActionItem](../resource/deviceComplianceActionItem.md) object.|
-|[Get notificationMessageTemplate](../api/deviceComplianceActionItem_get_notificationMessageTemplate.md)|[notificationMessageTemplate](notificationMessageTemplate.md)|Get the [notificationMessageTemplate](notificationMessageTemplate.md) from the notificationMessageTemplate navigation property.|
+|[List deviceComplianceActionItems](../api/deviceComplianceActionItem_list.md)|[deviceComplianceActionItem](../resources/deviceComplianceActionItem.md) collection|List properties and relationships of the [deviceComplianceActionItem](../resources/deviceComplianceActionItem.md) objects.|
+|[Get deviceComplianceActionItem](../api/deviceComplianceActionItem_get.md)|[deviceComplianceActionItem](../resources/deviceComplianceActionItem.md)|Read properties and relationships of the [deviceComplianceActionItem](../resources/deviceComplianceActionItem.md) object.|
+|[Create deviceComplianceActionItem](../api/deviceComplianceActionItem_create.md)|[deviceComplianceActionItem](../resources/deviceComplianceActionItem.md)|Create a new [deviceComplianceActionItem](../resources/deviceComplianceActionItem.md) object.|
+|[Delete deviceComplianceActionItem](../api/deviceComplianceActionItem_delete.md)|None|Deletes a [deviceComplianceActionItem](../resources/deviceComplianceActionItem.md).|
+|[Update deviceComplianceActionItem](../api/deviceComplianceActionItem_update.md)|[deviceComplianceActionItem](../resources/deviceComplianceActionItem.md)|Update the properties of a [deviceComplianceActionItem](../resources/deviceComplianceActionItem.md) object.|
+|[Get notificationMessageTemplate](../api/deviceComplianceActionItem_get_notificationMessageTemplate.md)|[notificationMessageTemplate](../resources/notificationMessageTemplate.md)|Get the [notificationMessageTemplate](../resources/notificationMessageTemplate.md) from the notificationMessageTemplate navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -21,7 +21,7 @@ Scheduled Action Configuration
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|notificationMessageTemplate|[notificationMessageTemplate](notificationMessageTemplate.md)|Notification message template.|
+|notificationMessageTemplate|[notificationMessageTemplate](../resources/notificationMessageTemplate.md)|Notification message template.|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

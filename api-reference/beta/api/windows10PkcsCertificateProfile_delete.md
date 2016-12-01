@@ -1,5 +1,5 @@
 ﻿# Delete windows10PkcsCertificateProfile
-Deletes a [windows10PkcsCertificateProfile](../resource/windows10PkcsCertificateProfile.md).
+Deletes a [windows10PkcsCertificateProfile](../resources/windows10PkcsCertificateProfile.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

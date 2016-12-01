@@ -1,5 +1,5 @@
 ﻿# Delete windows10VpnConfiguration
-Deletes a [windows10VpnConfiguration](../resource/windows10VpnConfiguration.md).
+Deletes a [windows10VpnConfiguration](../resources/windows10VpnConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

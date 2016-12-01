@@ -1,5 +1,5 @@
 ﻿# Create windows10TeamGeneralConfiguration
-Create a new [windows10TeamGeneralConfiguration](../resource/windows10TeamGeneralConfiguration.md) object.
+Create a new [windows10TeamGeneralConfiguration](../resources/windows10TeamGeneralConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create a win
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [windows10TeamGeneralConfiguration](../resource/windows10TeamGeneralConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [windows10TeamGeneralConfiguration](../resources/windows10TeamGeneralConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

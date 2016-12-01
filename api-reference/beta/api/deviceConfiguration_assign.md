@@ -27,12 +27,12 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |---|---|---|
-|deviceConfigurationGroupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|** TODO: Add parameter description **|
+|deviceConfigurationGroupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|** TODO: Add parameter description **|
 
 
 
 ### Response
-If successful, this action returns a `200 OK` response code and a [deviceConfigurationAssignment](deviceConfigurationAssignment.md) collection in the response body.
+If successful, this action returns a `200 OK` response code and a [deviceConfigurationAssignment](../resources/deviceConfigurationAssignment.md) collection in the response body.
 
 ### Example
 ##### Request

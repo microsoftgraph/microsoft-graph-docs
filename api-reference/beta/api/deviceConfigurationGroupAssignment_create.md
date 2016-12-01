@@ -1,5 +1,5 @@
 ﻿# Create deviceConfigurationGroupAssignment
-Create a new [deviceConfigurationGroupAssignment](../resource/deviceConfigurationGroupAssignment.md) object.
+Create a new [deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -32,7 +32,7 @@ The following table shows the properties that are required when you create a dev
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [deviceConfigurationGroupAssignment](../resource/deviceConfigurationGroupAssignment.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) object in the response body.
 
 ### Example
 ##### Request

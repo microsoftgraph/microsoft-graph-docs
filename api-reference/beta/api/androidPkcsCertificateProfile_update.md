@@ -1,5 +1,5 @@
 ﻿# Update androidPkcsCertificateProfile
-Update the properties of a [androidPkcsCertificateProfile](../resource/androidPkcsCertificateProfile.md) object.
+Update the properties of a [androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [androidPkcsCertificateProfile](../resource/androidPkcsCertificateProfile.md) object.
-The following table shows the properties that are required when you create a [androidPkcsCertificateProfile](../resource/androidPkcsCertificateProfile.md).
+In the request body, supply a JSON representation of a [androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md) object.
+The following table shows the properties that are required when you create a [androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -38,7 +38,7 @@ The following table shows the properties that are required when you create a [an
 |subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md). Possible values are: `emailAddress`, `userPrincipalName`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md).|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md). Possible values are: `days`, `months`, `years`.|
-|extendedKeyUsages|[extendedKeyUsage](extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md).|
+|extendedKeyUsages|[extendedKeyUsage](../resources/extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md).|
 |certificationAuthority|String|PKCS Certification Authority|
 |certificationAuthorityName|String|PKCS Certification Authority Name|
 |certificateTemplateName|String|PKCS Certificate Template Name|
@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create a [an
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [androidPkcsCertificateProfile](../resource/androidPkcsCertificateProfile.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md) object in the response body.
 
 ### Example
 ##### Request

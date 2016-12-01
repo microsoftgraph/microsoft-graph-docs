@@ -1,5 +1,5 @@
 ﻿# Delete windows10EasEmailProfileConfiguration
-Deletes a [windows10EasEmailProfileConfiguration](../resource/windows10EasEmailProfileConfiguration.md).
+Deletes a [windows10EasEmailProfileConfiguration](../resources/windows10EasEmailProfileConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

@@ -7,14 +7,14 @@ Inherits from [iosCertificateProfileBase](iosCertificateProfileBase.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List iosPkcsCertificateProfiles](../api/iosPkcsCertificateProfile_list.md)|[iosPkcsCertificateProfile](iosPkcsCertificateProfile.md) collection|List properties and relationships of the [iosPkcsCertificateProfile](../resource/iosPkcsCertificateProfile.md) objects.|
-|[Get iosPkcsCertificateProfile](../api/iosPkcsCertificateProfile_get.md)|[iosPkcsCertificateProfile](iosPkcsCertificateProfile.md)|Read properties and relationships of the [iosPkcsCertificateProfile](../resource/iosPkcsCertificateProfile.md) object.|
-|[Create iosPkcsCertificateProfile](../api/iosPkcsCertificateProfile_create.md)|[iosPkcsCertificateProfile](iosPkcsCertificateProfile.md)|Create a new [iosPkcsCertificateProfile](../resource/iosPkcsCertificateProfile.md) object.|
-|[Delete iosPkcsCertificateProfile](../api/iosPkcsCertificateProfile_delete.md)|None|Deletes a [iosPkcsCertificateProfile](../resource/iosPkcsCertificateProfile.md).|
-|[Update iosPkcsCertificateProfile](../api/iosPkcsCertificateProfile_update.md)|[iosPkcsCertificateProfile](iosPkcsCertificateProfile.md)|Update the properties of a [iosPkcsCertificateProfile](../resource/iosPkcsCertificateProfile.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/iosPkcsCertificateProfile_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/iosPkcsCertificateProfile_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/iosPkcsCertificateProfile_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[List iosPkcsCertificateProfiles](../api/iosPkcsCertificateProfile_list.md)|[iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md) collection|List properties and relationships of the [iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md) objects.|
+|[Get iosPkcsCertificateProfile](../api/iosPkcsCertificateProfile_get.md)|[iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md)|Read properties and relationships of the [iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md) object.|
+|[Create iosPkcsCertificateProfile](../api/iosPkcsCertificateProfile_create.md)|[iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md)|Create a new [iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md) object.|
+|[Delete iosPkcsCertificateProfile](../api/iosPkcsCertificateProfile_delete.md)|None|Deletes a [iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md).|
+|[Update iosPkcsCertificateProfile](../api/iosPkcsCertificateProfile_update.md)|[iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md)|Update the properties of a [iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/iosPkcsCertificateProfile_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/iosPkcsCertificateProfile_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/iosPkcsCertificateProfile_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -37,9 +37,9 @@ Inherits from [iosCertificateProfileBase](iosCertificateProfileBase.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

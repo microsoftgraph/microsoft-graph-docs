@@ -1,5 +1,5 @@
 ﻿# Delete iosCustomConfiguration
-Deletes a [iosCustomConfiguration](../resource/iosCustomConfiguration.md).
+Deletes a [iosCustomConfiguration](../resources/iosCustomConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

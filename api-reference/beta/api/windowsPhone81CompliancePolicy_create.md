@@ -1,5 +1,5 @@
 ﻿# Create windowsPhone81CompliancePolicy
-Create a new [windowsPhone81CompliancePolicy](../resource/windowsPhone81CompliancePolicy.md) object.
+Create a new [windowsPhone81CompliancePolicy](../resources/windowsPhone81CompliancePolicy.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create a win
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [windowsPhone81CompliancePolicy](../resource/windowsPhone81CompliancePolicy.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [windowsPhone81CompliancePolicy](../resources/windowsPhone81CompliancePolicy.md) object in the response body.
 
 ### Example
 ##### Request

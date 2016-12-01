@@ -1,5 +1,5 @@
 ﻿# List iosWiFiConfigurations
-List properties and relationships of the [iosWiFiConfiguration](../resource/iosWiFiConfiguration.md) objects.
+List properties and relationships of the [iosWiFiConfiguration](../resources/iosWiFiConfiguration.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -23,7 +23,7 @@ GET /deviceManagement/deviceConfigurations/
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a collection of [iosWiFiConfiguration](../resource/iosWiFiConfiguration.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [iosWiFiConfiguration](../resources/iosWiFiConfiguration.md) objects in the response body.
 
 ### Example
 ##### Request

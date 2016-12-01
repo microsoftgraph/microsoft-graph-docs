@@ -1,5 +1,5 @@
 ﻿# Delete macOSCustomConfiguration
-Deletes a [macOSCustomConfiguration](../resource/macOSCustomConfiguration.md).
+Deletes a [macOSCustomConfiguration](../resources/macOSCustomConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

@@ -1,5 +1,5 @@
 ﻿# List cloudPkiSubscriptions
-List properties and relationships of the [cloudPkiSubscription](../resource/cloudPkiSubscription.md) objects.
+List properties and relationships of the [cloudPkiSubscription](../resources/cloudPkiSubscription.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -23,7 +23,7 @@ GET /cloudPkiSubscriptions/
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a collection of [cloudPkiSubscription](../resource/cloudPkiSubscription.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [cloudPkiSubscription](../resources/cloudPkiSubscription.md) objects in the response body.
 
 ### Example
 ##### Request

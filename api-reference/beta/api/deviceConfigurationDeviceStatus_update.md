@@ -1,5 +1,5 @@
 ﻿# Update deviceConfigurationDeviceStatus
-Update the properties of a [deviceConfigurationDeviceStatus](../resource/deviceConfigurationDeviceStatus.md) object.
+Update the properties of a [deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -20,8 +20,8 @@ PATCH /deviceManagement/deviceConfigurations/<id>/deviceStatuses/<id>
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [deviceConfigurationDeviceStatus](../resource/deviceConfigurationDeviceStatus.md) object.
-The following table shows the properties that are required when you create a [deviceConfigurationDeviceStatus](../resource/deviceConfigurationDeviceStatus.md).
+In the request body, supply a JSON representation of a [deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) object.
+The following table shows the properties that are required when you create a [deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -32,7 +32,7 @@ The following table shows the properties that are required when you create a [de
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationDeviceStatus](../resource/deviceConfigurationDeviceStatus.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) object in the response body.
 
 ### Example
 ##### Request

@@ -1,5 +1,5 @@
 ﻿# Update windowsPhone81GeneralConfiguration
-Update the properties of a [windowsPhone81GeneralConfiguration](../resource/windowsPhone81GeneralConfiguration.md) object.
+Update the properties of a [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [windowsPhone81GeneralConfiguration](../resource/windowsPhone81GeneralConfiguration.md) object.
-The following table shows the properties that are required when you create a [windowsPhone81GeneralConfiguration](../resource/windowsPhone81GeneralConfiguration.md).
+In the request body, supply a JSON representation of a [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md) object.
+The following table shows the properties that are required when you create a [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -39,7 +39,7 @@ The following table shows the properties that are required when you create a [wi
 |bluetoothBlocked|Boolean|Indicates whether or not to block bluetooth.|
 |cameraBlocked|Boolean|Indicates whether or not to block camera.|
 |cellularBlockWifiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering. Has no impact if Wi-Fi is blocked.|
-|compliantAppsList|[appListItem](appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
+|compliantAppsList|[appListItem](../resources/appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
 |compliantAppListType|String|List that is in the AppComplianceList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Boolean|Indicates whether or not to block diagnostic data submission.|
 |emailBlockAddingAccounts|Boolean|Indicates whether or not to block custom email accounts.|
@@ -67,7 +67,7 @@ The following table shows the properties that are required when you create a [wi
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [windowsPhone81GeneralConfiguration](../resource/windowsPhone81GeneralConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

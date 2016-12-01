@@ -7,14 +7,14 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List windowsPhone81GeneralConfigurations](../api/windowsPhone81GeneralConfiguration_list.md)|[windowsPhone81GeneralConfiguration](windowsPhone81GeneralConfiguration.md) collection|List properties and relationships of the [windowsPhone81GeneralConfiguration](../resource/windowsPhone81GeneralConfiguration.md) objects.|
-|[Get windowsPhone81GeneralConfiguration](../api/windowsPhone81GeneralConfiguration_get.md)|[windowsPhone81GeneralConfiguration](windowsPhone81GeneralConfiguration.md)|Read properties and relationships of the [windowsPhone81GeneralConfiguration](../resource/windowsPhone81GeneralConfiguration.md) object.|
-|[Create windowsPhone81GeneralConfiguration](../api/windowsPhone81GeneralConfiguration_create.md)|[windowsPhone81GeneralConfiguration](windowsPhone81GeneralConfiguration.md)|Create a new [windowsPhone81GeneralConfiguration](../resource/windowsPhone81GeneralConfiguration.md) object.|
-|[Delete windowsPhone81GeneralConfiguration](../api/windowsPhone81GeneralConfiguration_delete.md)|None|Deletes a [windowsPhone81GeneralConfiguration](../resource/windowsPhone81GeneralConfiguration.md).|
-|[Update windowsPhone81GeneralConfiguration](../api/windowsPhone81GeneralConfiguration_update.md)|[windowsPhone81GeneralConfiguration](windowsPhone81GeneralConfiguration.md)|Update the properties of a [windowsPhone81GeneralConfiguration](../resource/windowsPhone81GeneralConfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/windowsPhone81GeneralConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/windowsPhone81GeneralConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/windowsPhone81GeneralConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[List windowsPhone81GeneralConfigurations](../api/windowsPhone81GeneralConfiguration_list.md)|[windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md) collection|List properties and relationships of the [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md) objects.|
+|[Get windowsPhone81GeneralConfiguration](../api/windowsPhone81GeneralConfiguration_get.md)|[windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md)|Read properties and relationships of the [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md) object.|
+|[Create windowsPhone81GeneralConfiguration](../api/windowsPhone81GeneralConfiguration_create.md)|[windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md)|Create a new [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md) object.|
+|[Delete windowsPhone81GeneralConfiguration](../api/windowsPhone81GeneralConfiguration_delete.md)|None|Deletes a [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md).|
+|[Update windowsPhone81GeneralConfiguration](../api/windowsPhone81GeneralConfiguration_update.md)|[windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md)|Update the properties of a [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/windowsPhone81GeneralConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/windowsPhone81GeneralConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/windowsPhone81GeneralConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -31,7 +31,7 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 |bluetoothBlocked|Boolean|Indicates whether or not to block bluetooth.|
 |cameraBlocked|Boolean|Indicates whether or not to block camera.|
 |cellularBlockWifiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering. Has no impact if Wi-Fi is blocked.|
-|compliantAppsList|[appListItem](appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
+|compliantAppsList|[appListItem](../resources/appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
 |compliantAppListType|String|List that is in the AppComplianceList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Boolean|Indicates whether or not to block diagnostic data submission.|
 |emailBlockAddingAccounts|Boolean|Indicates whether or not to block custom email accounts.|
@@ -59,9 +59,9 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

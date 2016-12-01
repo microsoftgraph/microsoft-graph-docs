@@ -1,5 +1,5 @@
 ﻿# Create androidWiFiConfiguration
-Create a new [androidWiFiConfiguration](../resource/androidWiFiConfiguration.md) object.
+Create a new [androidWiFiConfiguration](../resources/androidWiFiConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -42,7 +42,7 @@ The following table shows the properties that are required when you create a and
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [androidWiFiConfiguration](../resource/androidWiFiConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [androidWiFiConfiguration](../resources/androidWiFiConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

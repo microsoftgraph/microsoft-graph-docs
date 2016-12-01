@@ -1,5 +1,5 @@
 ﻿# Delete androidWiFiConfiguration
-Deletes a [androidWiFiConfiguration](../resource/androidWiFiConfiguration.md).
+Deletes a [androidWiFiConfiguration](../resources/androidWiFiConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

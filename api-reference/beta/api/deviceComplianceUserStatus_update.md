@@ -1,5 +1,5 @@
 ﻿# Update deviceComplianceUserStatus
-Update the properties of a [deviceComplianceUserStatus](../resource/deviceComplianceUserStatus.md) object.
+Update the properties of a [deviceComplianceUserStatus](../resources/deviceComplianceUserStatus.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -20,8 +20,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/<id>/userStatuses/<id>
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [deviceComplianceUserStatus](../resource/deviceComplianceUserStatus.md) object.
-The following table shows the properties that are required when you create a [deviceComplianceUserStatus](../resource/deviceComplianceUserStatus.md).
+In the request body, supply a JSON representation of a [deviceComplianceUserStatus](../resources/deviceComplianceUserStatus.md) object.
+The following table shows the properties that are required when you create a [deviceComplianceUserStatus](../resources/deviceComplianceUserStatus.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -32,7 +32,7 @@ The following table shows the properties that are required when you create a [de
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [deviceComplianceUserStatus](../resource/deviceComplianceUserStatus.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceComplianceUserStatus](../resources/deviceComplianceUserStatus.md) object in the response body.
 
 ### Example
 ##### Request

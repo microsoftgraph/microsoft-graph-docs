@@ -7,14 +7,14 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List androidWiFiConfigurations](../api/androidWiFiConfiguration_list.md)|[androidWiFiConfiguration](androidWiFiConfiguration.md) collection|List properties and relationships of the [androidWiFiConfiguration](../resource/androidWiFiConfiguration.md) objects.|
-|[Get androidWiFiConfiguration](../api/androidWiFiConfiguration_get.md)|[androidWiFiConfiguration](androidWiFiConfiguration.md)|Read properties and relationships of the [androidWiFiConfiguration](../resource/androidWiFiConfiguration.md) object.|
-|[Create androidWiFiConfiguration](../api/androidWiFiConfiguration_create.md)|[androidWiFiConfiguration](androidWiFiConfiguration.md)|Create a new [androidWiFiConfiguration](../resource/androidWiFiConfiguration.md) object.|
-|[Delete androidWiFiConfiguration](../api/androidWiFiConfiguration_delete.md)|None|Deletes a [androidWiFiConfiguration](../resource/androidWiFiConfiguration.md).|
-|[Update androidWiFiConfiguration](../api/androidWiFiConfiguration_update.md)|[androidWiFiConfiguration](androidWiFiConfiguration.md)|Update the properties of a [androidWiFiConfiguration](../resource/androidWiFiConfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/androidWiFiConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/androidWiFiConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/androidWiFiConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[List androidWiFiConfigurations](../api/androidWiFiConfiguration_list.md)|[androidWiFiConfiguration](../resources/androidWiFiConfiguration.md) collection|List properties and relationships of the [androidWiFiConfiguration](../resources/androidWiFiConfiguration.md) objects.|
+|[Get androidWiFiConfiguration](../api/androidWiFiConfiguration_get.md)|[androidWiFiConfiguration](../resources/androidWiFiConfiguration.md)|Read properties and relationships of the [androidWiFiConfiguration](../resources/androidWiFiConfiguration.md) object.|
+|[Create androidWiFiConfiguration](../api/androidWiFiConfiguration_create.md)|[androidWiFiConfiguration](../resources/androidWiFiConfiguration.md)|Create a new [androidWiFiConfiguration](../resources/androidWiFiConfiguration.md) object.|
+|[Delete androidWiFiConfiguration](../api/androidWiFiConfiguration_delete.md)|None|Deletes a [androidWiFiConfiguration](../resources/androidWiFiConfiguration.md).|
+|[Update androidWiFiConfiguration](../api/androidWiFiConfiguration_update.md)|[androidWiFiConfiguration](../resources/androidWiFiConfiguration.md)|Update the properties of a [androidWiFiConfiguration](../resources/androidWiFiConfiguration.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/androidWiFiConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/androidWiFiConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/androidWiFiConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -34,9 +34,9 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

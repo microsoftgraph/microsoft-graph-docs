@@ -1,5 +1,5 @@
 ﻿# Create deviceComplianceActionItem
-Create a new [deviceComplianceActionItem](../resource/deviceComplianceActionItem.md) object.
+Create a new [deviceComplianceActionItem](../resources/deviceComplianceActionItem.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -32,7 +32,7 @@ The following table shows the properties that are required when you create a dev
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [deviceComplianceActionItem](../resource/deviceComplianceActionItem.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [deviceComplianceActionItem](../resources/deviceComplianceActionItem.md) object in the response body.
 
 ### Example
 ##### Request

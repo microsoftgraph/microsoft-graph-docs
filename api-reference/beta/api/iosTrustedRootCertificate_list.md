@@ -1,5 +1,5 @@
 ﻿# List iosTrustedRootCertificates
-List properties and relationships of the [iosTrustedRootCertificate](../resource/iosTrustedRootCertificate.md) objects.
+List properties and relationships of the [iosTrustedRootCertificate](../resources/iosTrustedRootCertificate.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -23,7 +23,7 @@ GET /deviceManagement/deviceConfigurations/
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a collection of [iosTrustedRootCertificate](../resource/iosTrustedRootCertificate.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [iosTrustedRootCertificate](../resources/iosTrustedRootCertificate.md) objects in the response body.
 
 ### Example
 ##### Request

@@ -1,5 +1,5 @@
 ﻿# Update deviceComplianceActionItem
-Update the properties of a [deviceComplianceActionItem](../resource/deviceComplianceActionItem.md) object.
+Update the properties of a [deviceComplianceActionItem](../resources/deviceComplianceActionItem.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -20,8 +20,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/<id>/scheduledActionsForRule/<i
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [deviceComplianceActionItem](../resource/deviceComplianceActionItem.md) object.
-The following table shows the properties that are required when you create a [deviceComplianceActionItem](../resource/deviceComplianceActionItem.md).
+In the request body, supply a JSON representation of a [deviceComplianceActionItem](../resources/deviceComplianceActionItem.md) object.
+The following table shows the properties that are required when you create a [deviceComplianceActionItem](../resources/deviceComplianceActionItem.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -32,7 +32,7 @@ The following table shows the properties that are required when you create a [de
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [deviceComplianceActionItem](../resource/deviceComplianceActionItem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceComplianceActionItem](../resources/deviceComplianceActionItem.md) object in the response body.
 
 ### Example
 ##### Request

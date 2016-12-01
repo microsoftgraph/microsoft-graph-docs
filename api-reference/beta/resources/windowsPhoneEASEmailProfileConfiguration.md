@@ -7,14 +7,14 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List windowsPhoneEASEmailProfileConfigurations](../api/windowsPhoneEASEmailProfileConfiguration_list.md)|[windowsPhoneEASEmailProfileConfiguration](windowsPhoneEASEmailProfileConfiguration.md) collection|List properties and relationships of the [windowsPhoneEASEmailProfileConfiguration](../resource/windowsPhoneEASEmailProfileConfiguration.md) objects.|
-|[Get windowsPhoneEASEmailProfileConfiguration](../api/windowsPhoneEASEmailProfileConfiguration_get.md)|[windowsPhoneEASEmailProfileConfiguration](windowsPhoneEASEmailProfileConfiguration.md)|Read properties and relationships of the [windowsPhoneEASEmailProfileConfiguration](../resource/windowsPhoneEASEmailProfileConfiguration.md) object.|
-|[Create windowsPhoneEASEmailProfileConfiguration](../api/windowsPhoneEASEmailProfileConfiguration_create.md)|[windowsPhoneEASEmailProfileConfiguration](windowsPhoneEASEmailProfileConfiguration.md)|Create a new [windowsPhoneEASEmailProfileConfiguration](../resource/windowsPhoneEASEmailProfileConfiguration.md) object.|
-|[Delete windowsPhoneEASEmailProfileConfiguration](../api/windowsPhoneEASEmailProfileConfiguration_delete.md)|None|Deletes a [windowsPhoneEASEmailProfileConfiguration](../resource/windowsPhoneEASEmailProfileConfiguration.md).|
-|[Update windowsPhoneEASEmailProfileConfiguration](../api/windowsPhoneEASEmailProfileConfiguration_update.md)|[windowsPhoneEASEmailProfileConfiguration](windowsPhoneEASEmailProfileConfiguration.md)|Update the properties of a [windowsPhoneEASEmailProfileConfiguration](../resource/windowsPhoneEASEmailProfileConfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/windowsPhoneEASEmailProfileConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/windowsPhoneEASEmailProfileConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/windowsPhoneEASEmailProfileConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[List windowsPhoneEASEmailProfileConfigurations](../api/windowsPhoneEASEmailProfileConfiguration_list.md)|[windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md) collection|List properties and relationships of the [windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md) objects.|
+|[Get windowsPhoneEASEmailProfileConfiguration](../api/windowsPhoneEASEmailProfileConfiguration_get.md)|[windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md)|Read properties and relationships of the [windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md) object.|
+|[Create windowsPhoneEASEmailProfileConfiguration](../api/windowsPhoneEASEmailProfileConfiguration_create.md)|[windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md)|Create a new [windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md) object.|
+|[Delete windowsPhoneEASEmailProfileConfiguration](../api/windowsPhoneEASEmailProfileConfiguration_delete.md)|None|Deletes a [windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md).|
+|[Update windowsPhoneEASEmailProfileConfiguration](../api/windowsPhoneEASEmailProfileConfiguration_update.md)|[windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md)|Update the properties of a [windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/windowsPhoneEASEmailProfileConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/windowsPhoneEASEmailProfileConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/windowsPhoneEASEmailProfileConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -40,9 +40,9 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

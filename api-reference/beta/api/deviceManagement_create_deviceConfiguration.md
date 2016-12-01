@@ -1,5 +1,5 @@
 ﻿# Create deviceConfiguration
-Create a new [deviceConfiguration](deviceConfiguration.md) by posting to the deviceConfigurations collection.
+Create a new [deviceConfiguration](../resources/deviceConfiguration.md) by posting to the deviceConfigurations collection.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -37,7 +37,7 @@ The following table shows the properties that are required when you create a dev
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [deviceConfiguration](../resource/deviceConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [deviceConfiguration](../resources/deviceConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

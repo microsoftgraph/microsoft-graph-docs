@@ -1,5 +1,5 @@
 ﻿# Delete windowsPhone81CompliancePolicy
-Deletes a [windowsPhone81CompliancePolicy](../resource/windowsPhone81CompliancePolicy.md).
+Deletes a [windowsPhone81CompliancePolicy](../resources/windowsPhone81CompliancePolicy.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

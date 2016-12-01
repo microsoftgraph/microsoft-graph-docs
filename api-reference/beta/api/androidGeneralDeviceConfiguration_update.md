@@ -1,5 +1,5 @@
 ﻿# Update androidGeneralDeviceConfiguration
-Update the properties of a [androidGeneralDeviceConfiguration](../resource/androidGeneralDeviceConfiguration.md) object.
+Update the properties of a [androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [androidGeneralDeviceConfiguration](../resource/androidGeneralDeviceConfiguration.md) object.
-The following table shows the properties that are required when you create a [androidGeneralDeviceConfiguration](../resource/androidGeneralDeviceConfiguration.md).
+In the request body, supply a JSON representation of a [androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md) object.
+The following table shows the properties that are required when you create a [androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -42,7 +42,7 @@ The following table shows the properties that are required when you create a [an
 |cellularBlockMessaging|Boolean|Indicates whether or not to block SMS/MMS messaging.|
 |cellularBlockVoiceRoaming|Boolean|Indicates whether or not to block voice roaming.|
 |cellularBlockWiFiTethering|Boolean|Indicates whether or not to block syncing Wi-Fi tethering.|
-|compliantAppsList|[appListItem](appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
+|compliantAppsList|[appListItem](../resources/appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
 |compliantAppListType|String|Type of list that is in the CompliantAppsList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Boolean|Indicates whether or not to block diagnostic data submission.|
 |locationServicesBlocked|Boolean|Indicates whether or not to block location services.|
@@ -81,7 +81,7 @@ The following table shows the properties that are required when you create a [an
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [androidGeneralDeviceConfiguration](../resource/androidGeneralDeviceConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [androidGeneralDeviceConfiguration](../resources/androidGeneralDeviceConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

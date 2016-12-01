@@ -1,5 +1,5 @@
 ﻿# Create androidTrustedRootCertificate
-Create a new [androidTrustedRootCertificate](../resource/androidTrustedRootCertificate.md) object.
+Create a new [androidTrustedRootCertificate](../resources/androidTrustedRootCertificate.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -39,7 +39,7 @@ The following table shows the properties that are required when you create a and
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [androidTrustedRootCertificate](../resource/androidTrustedRootCertificate.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [androidTrustedRootCertificate](../resources/androidTrustedRootCertificate.md) object in the response body.
 
 ### Example
 ##### Request

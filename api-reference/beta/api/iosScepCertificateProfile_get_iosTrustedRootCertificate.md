@@ -1,5 +1,5 @@
 ﻿# Get iosTrustedRootCertificate
-Get the [iosTrustedRootCertificate](iosTrustedRootCertificate.md) from the rootCertificate navigation property.
+Get the [iosTrustedRootCertificate](../resources/iosTrustedRootCertificate.md) from the rootCertificate navigation property.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -27,7 +27,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and [iosTrustedRootCertificate](../resource/iosTrustedRootCertificate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [iosTrustedRootCertificate](../resources/iosTrustedRootCertificate.md) object in the response body.
 
 ### Example
 ##### Request

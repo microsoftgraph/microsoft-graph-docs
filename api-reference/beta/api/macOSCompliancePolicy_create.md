@@ -1,5 +1,5 @@
 ﻿# Create macOSCompliancePolicy
-Create a new [macOSCompliancePolicy](../resource/macOSCompliancePolicy.md) object.
+Create a new [macOSCompliancePolicy](../resources/macOSCompliancePolicy.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -44,7 +44,7 @@ The following table shows the properties that are required when you create a mac
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [macOSCompliancePolicy](../resource/macOSCompliancePolicy.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [macOSCompliancePolicy](../resources/macOSCompliancePolicy.md) object in the response body.
 
 ### Example
 ##### Request

@@ -1,5 +1,5 @@
 ﻿# Delete windows81GeneralConfiguration
-Deletes a [windows81GeneralConfiguration](../resource/windows81GeneralConfiguration.md).
+Deletes a [windows81GeneralConfiguration](../resources/windows81GeneralConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

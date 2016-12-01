@@ -1,5 +1,5 @@
 ﻿# Create androidPkcsCertificateProfile
-Create a new [androidPkcsCertificateProfile](../resource/androidPkcsCertificateProfile.md) object.
+Create a new [androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -38,7 +38,7 @@ The following table shows the properties that are required when you create a and
 |subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md). Possible values are: `emailAddress`, `userPrincipalName`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md).|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md). Possible values are: `days`, `months`, `years`.|
-|extendedKeyUsages|[extendedKeyUsage](extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md).|
+|extendedKeyUsages|[extendedKeyUsage](../resources/extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md).|
 |certificationAuthority|String|PKCS Certification Authority|
 |certificationAuthorityName|String|PKCS Certification Authority Name|
 |certificateTemplateName|String|PKCS Certificate Template Name|
@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create a and
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [androidPkcsCertificateProfile](../resource/androidPkcsCertificateProfile.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md) object in the response body.
 
 ### Example
 ##### Request

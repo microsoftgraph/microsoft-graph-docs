@@ -1,5 +1,5 @@
 ﻿# Delete windows10TeamGeneralConfiguration
-Deletes a [windows10TeamGeneralConfiguration](../resource/windows10TeamGeneralConfiguration.md).
+Deletes a [windows10TeamGeneralConfiguration](../resources/windows10TeamGeneralConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

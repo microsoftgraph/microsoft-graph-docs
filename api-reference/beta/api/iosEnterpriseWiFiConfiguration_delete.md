@@ -1,5 +1,5 @@
 ﻿# Delete iosEnterpriseWiFiConfiguration
-Deletes a [iosEnterpriseWiFiConfiguration](../resource/iosEnterpriseWiFiConfiguration.md).
+Deletes a [iosEnterpriseWiFiConfiguration](../resources/iosEnterpriseWiFiConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

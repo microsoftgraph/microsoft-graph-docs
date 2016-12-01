@@ -1,5 +1,5 @@
 ﻿# Update macOSEnterpriseWiFiConfiguration
-Update the properties of a [macOSEnterpriseWiFiConfiguration](../resource/macOSEnterpriseWiFiConfiguration.md) object.
+Update the properties of a [macOSEnterpriseWiFiConfiguration](../resources/macOSEnterpriseWiFiConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [macOSEnterpriseWiFiConfiguration](../resource/macOSEnterpriseWiFiConfiguration.md) object.
-The following table shows the properties that are required when you create a [macOSEnterpriseWiFiConfiguration](../resource/macOSEnterpriseWiFiConfiguration.md).
+In the request body, supply a JSON representation of a [macOSEnterpriseWiFiConfiguration](../resources/macOSEnterpriseWiFiConfiguration.md) object.
+The following table shows the properties that are required when you create a [macOSEnterpriseWiFiConfiguration](../resources/macOSEnterpriseWiFiConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create a [ma
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [macOSEnterpriseWiFiConfiguration](../resource/macOSEnterpriseWiFiConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [macOSEnterpriseWiFiConfiguration](../resources/macOSEnterpriseWiFiConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

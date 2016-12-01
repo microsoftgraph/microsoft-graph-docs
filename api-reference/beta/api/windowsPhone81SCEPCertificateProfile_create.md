@@ -1,5 +1,5 @@
 ﻿# Create windowsPhone81SCEPCertificateProfile
-Create a new [windowsPhone81SCEPCertificateProfile](../resource/windowsPhone81SCEPCertificateProfile.md) object.
+Create a new [windowsPhone81SCEPCertificateProfile](../resources/windowsPhone81SCEPCertificateProfile.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -39,7 +39,7 @@ The following table shows the properties that are required when you create a win
 |subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Inherited from [windowsPhone81CertificateProfileBase](windowsPhone81CertificateProfileBase.md). Possible values are: `emailAddress`, `userPrincipalName`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validtiy Period. Inherited from [windowsPhone81CertificateProfileBase](windowsPhone81CertificateProfileBase.md).|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period. Inherited from [windowsPhone81CertificateProfileBase](windowsPhone81CertificateProfileBase.md). Possible values are: `days`, `months`, `years`.|
-|extendedKeyUsages|[extendedKeyUsage](extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings. Inherited from [windowsPhone81CertificateProfileBase](windowsPhone81CertificateProfileBase.md).|
+|extendedKeyUsages|[extendedKeyUsage](../resources/extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings. Inherited from [windowsPhone81CertificateProfileBase](windowsPhone81CertificateProfileBase.md).|
 |scepServerUrls|String collection|SCEP Server Url(s).|
 |keyUsage|String|SCEP Key Usage. Possible values are: `keyEncipherment`, `digitalSignature`.|
 |keySize|String|SCEP Key Size. Possible values are: `size1024`, `size2048`.|
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create a win
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [windowsPhone81SCEPCertificateProfile](../resource/windowsPhone81SCEPCertificateProfile.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [windowsPhone81SCEPCertificateProfile](../resources/windowsPhone81SCEPCertificateProfile.md) object in the response body.
 
 ### Example
 ##### Request

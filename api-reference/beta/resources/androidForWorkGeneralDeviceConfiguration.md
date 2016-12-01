@@ -7,14 +7,14 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List androidForWorkGeneralDeviceConfigurations](../api/androidForWorkGeneralDeviceConfiguration_list.md)|[androidForWorkGeneralDeviceConfiguration](androidForWorkGeneralDeviceConfiguration.md) collection|List properties and relationships of the [androidForWorkGeneralDeviceConfiguration](../resource/androidForWorkGeneralDeviceConfiguration.md) objects.|
-|[Get androidForWorkGeneralDeviceConfiguration](../api/androidForWorkGeneralDeviceConfiguration_get.md)|[androidForWorkGeneralDeviceConfiguration](androidForWorkGeneralDeviceConfiguration.md)|Read properties and relationships of the [androidForWorkGeneralDeviceConfiguration](../resource/androidForWorkGeneralDeviceConfiguration.md) object.|
-|[Create androidForWorkGeneralDeviceConfiguration](../api/androidForWorkGeneralDeviceConfiguration_create.md)|[androidForWorkGeneralDeviceConfiguration](androidForWorkGeneralDeviceConfiguration.md)|Create a new [androidForWorkGeneralDeviceConfiguration](../resource/androidForWorkGeneralDeviceConfiguration.md) object.|
-|[Delete androidForWorkGeneralDeviceConfiguration](../api/androidForWorkGeneralDeviceConfiguration_delete.md)|None|Deletes a [androidForWorkGeneralDeviceConfiguration](../resource/androidForWorkGeneralDeviceConfiguration.md).|
-|[Update androidForWorkGeneralDeviceConfiguration](../api/androidForWorkGeneralDeviceConfiguration_update.md)|[androidForWorkGeneralDeviceConfiguration](androidForWorkGeneralDeviceConfiguration.md)|Update the properties of a [androidForWorkGeneralDeviceConfiguration](../resource/androidForWorkGeneralDeviceConfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/androidForWorkGeneralDeviceConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/androidForWorkGeneralDeviceConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/androidForWorkGeneralDeviceConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[List androidForWorkGeneralDeviceConfigurations](../api/androidForWorkGeneralDeviceConfiguration_list.md)|[androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md) collection|List properties and relationships of the [androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md) objects.|
+|[Get androidForWorkGeneralDeviceConfiguration](../api/androidForWorkGeneralDeviceConfiguration_get.md)|[androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md)|Read properties and relationships of the [androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md) object.|
+|[Create androidForWorkGeneralDeviceConfiguration](../api/androidForWorkGeneralDeviceConfiguration_create.md)|[androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md)|Create a new [androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md) object.|
+|[Delete androidForWorkGeneralDeviceConfiguration](../api/androidForWorkGeneralDeviceConfiguration_delete.md)|None|Deletes a [androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md).|
+|[Update androidForWorkGeneralDeviceConfiguration](../api/androidForWorkGeneralDeviceConfiguration_update.md)|[androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md)|Update the properties of a [androidForWorkGeneralDeviceConfiguration](../resources/androidForWorkGeneralDeviceConfiguration.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/androidForWorkGeneralDeviceConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/androidForWorkGeneralDeviceConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/androidForWorkGeneralDeviceConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -40,9 +40,9 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

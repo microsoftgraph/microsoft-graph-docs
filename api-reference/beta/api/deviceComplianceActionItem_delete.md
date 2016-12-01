@@ -1,5 +1,5 @@
 ﻿# Delete deviceComplianceActionItem
-Deletes a [deviceComplianceActionItem](../resource/deviceComplianceActionItem.md).
+Deletes a [deviceComplianceActionItem](../resources/deviceComplianceActionItem.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

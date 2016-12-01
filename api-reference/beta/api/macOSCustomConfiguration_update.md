@@ -1,5 +1,5 @@
 ﻿# Update macOSCustomConfiguration
-Update the properties of a [macOSCustomConfiguration](../resource/macOSCustomConfiguration.md) object.
+Update the properties of a [macOSCustomConfiguration](../resources/macOSCustomConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [macOSCustomConfiguration](../resource/macOSCustomConfiguration.md) object.
-The following table shows the properties that are required when you create a [macOSCustomConfiguration](../resource/macOSCustomConfiguration.md).
+In the request body, supply a JSON representation of a [macOSCustomConfiguration](../resources/macOSCustomConfiguration.md) object.
+The following table shows the properties that are required when you create a [macOSCustomConfiguration](../resources/macOSCustomConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -40,7 +40,7 @@ The following table shows the properties that are required when you create a [ma
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [macOSCustomConfiguration](../resource/macOSCustomConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [macOSCustomConfiguration](../resources/macOSCustomConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

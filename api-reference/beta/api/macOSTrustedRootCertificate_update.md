@@ -1,5 +1,5 @@
 ﻿# Update macOSTrustedRootCertificate
-Update the properties of a [macOSTrustedRootCertificate](../resource/macOSTrustedRootCertificate.md) object.
+Update the properties of a [macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [macOSTrustedRootCertificate](../resource/macOSTrustedRootCertificate.md) object.
-The following table shows the properties that are required when you create a [macOSTrustedRootCertificate](../resource/macOSTrustedRootCertificate.md).
+In the request body, supply a JSON representation of a [macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md) object.
+The following table shows the properties that are required when you create a [macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -39,7 +39,7 @@ The following table shows the properties that are required when you create a [ma
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [macOSTrustedRootCertificate](../resource/macOSTrustedRootCertificate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md) object in the response body.
 
 ### Example
 ##### Request

@@ -1,5 +1,5 @@
 ﻿# Delete androidEasEmailProfileConfiguration
-Deletes a [androidEasEmailProfileConfiguration](../resource/androidEasEmailProfileConfiguration.md).
+Deletes a [androidEasEmailProfileConfiguration](../resources/androidEasEmailProfileConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

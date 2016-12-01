@@ -7,14 +7,14 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List windows81TrustedRootCertificates](../api/windows81TrustedRootCertificate_list.md)|[windows81TrustedRootCertificate](windows81TrustedRootCertificate.md) collection|List properties and relationships of the [windows81TrustedRootCertificate](../resource/windows81TrustedRootCertificate.md) objects.|
-|[Get windows81TrustedRootCertificate](../api/windows81TrustedRootCertificate_get.md)|[windows81TrustedRootCertificate](windows81TrustedRootCertificate.md)|Read properties and relationships of the [windows81TrustedRootCertificate](../resource/windows81TrustedRootCertificate.md) object.|
-|[Create windows81TrustedRootCertificate](../api/windows81TrustedRootCertificate_create.md)|[windows81TrustedRootCertificate](windows81TrustedRootCertificate.md)|Create a new [windows81TrustedRootCertificate](../resource/windows81TrustedRootCertificate.md) object.|
-|[Delete windows81TrustedRootCertificate](../api/windows81TrustedRootCertificate_delete.md)|None|Deletes a [windows81TrustedRootCertificate](../resource/windows81TrustedRootCertificate.md).|
-|[Update windows81TrustedRootCertificate](../api/windows81TrustedRootCertificate_update.md)|[windows81TrustedRootCertificate](windows81TrustedRootCertificate.md)|Update the properties of a [windows81TrustedRootCertificate](../resource/windows81TrustedRootCertificate.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/windows81TrustedRootCertificate_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/windows81TrustedRootCertificate_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/windows81TrustedRootCertificate_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[List windows81TrustedRootCertificates](../api/windows81TrustedRootCertificate_list.md)|[windows81TrustedRootCertificate](../resources/windows81TrustedRootCertificate.md) collection|List properties and relationships of the [windows81TrustedRootCertificate](../resources/windows81TrustedRootCertificate.md) objects.|
+|[Get windows81TrustedRootCertificate](../api/windows81TrustedRootCertificate_get.md)|[windows81TrustedRootCertificate](../resources/windows81TrustedRootCertificate.md)|Read properties and relationships of the [windows81TrustedRootCertificate](../resources/windows81TrustedRootCertificate.md) object.|
+|[Create windows81TrustedRootCertificate](../api/windows81TrustedRootCertificate_create.md)|[windows81TrustedRootCertificate](../resources/windows81TrustedRootCertificate.md)|Create a new [windows81TrustedRootCertificate](../resources/windows81TrustedRootCertificate.md) object.|
+|[Delete windows81TrustedRootCertificate](../api/windows81TrustedRootCertificate_delete.md)|None|Deletes a [windows81TrustedRootCertificate](../resources/windows81TrustedRootCertificate.md).|
+|[Update windows81TrustedRootCertificate](../api/windows81TrustedRootCertificate_update.md)|[windows81TrustedRootCertificate](../resources/windows81TrustedRootCertificate.md)|Update the properties of a [windows81TrustedRootCertificate](../resources/windows81TrustedRootCertificate.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/windows81TrustedRootCertificate_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/windows81TrustedRootCertificate_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/windows81TrustedRootCertificate_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -32,9 +32,9 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

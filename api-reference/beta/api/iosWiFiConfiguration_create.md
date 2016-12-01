@@ -1,5 +1,5 @@
 ﻿# Create iosWiFiConfiguration
-Create a new [iosWiFiConfiguration](../resource/iosWiFiConfiguration.md) object.
+Create a new [iosWiFiConfiguration](../resources/iosWiFiConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create a ios
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [iosWiFiConfiguration](../resource/iosWiFiConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [iosWiFiConfiguration](../resources/iosWiFiConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

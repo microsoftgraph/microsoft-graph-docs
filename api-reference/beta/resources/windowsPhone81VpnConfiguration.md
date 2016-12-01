@@ -7,15 +7,15 @@ Inherits from [windows81VpnConfiguration](windows81VpnConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List windowsPhone81VpnConfigurations](../api/windowsPhone81VpnConfiguration_list.md)|[windowsPhone81VpnConfiguration](windowsPhone81VpnConfiguration.md) collection|List properties and relationships of the [windowsPhone81VpnConfiguration](../resource/windowsPhone81VpnConfiguration.md) objects.|
-|[Get windowsPhone81VpnConfiguration](../api/windowsPhone81VpnConfiguration_get.md)|[windowsPhone81VpnConfiguration](windowsPhone81VpnConfiguration.md)|Read properties and relationships of the [windowsPhone81VpnConfiguration](../resource/windowsPhone81VpnConfiguration.md) object.|
-|[Create windowsPhone81VpnConfiguration](../api/windowsPhone81VpnConfiguration_create.md)|[windowsPhone81VpnConfiguration](windowsPhone81VpnConfiguration.md)|Create a new [windowsPhone81VpnConfiguration](../resource/windowsPhone81VpnConfiguration.md) object.|
-|[Delete windowsPhone81VpnConfiguration](../api/windowsPhone81VpnConfiguration_delete.md)|None|Deletes a [windowsPhone81VpnConfiguration](../resource/windowsPhone81VpnConfiguration.md).|
-|[Update windowsPhone81VpnConfiguration](../api/windowsPhone81VpnConfiguration_update.md)|[windowsPhone81VpnConfiguration](windowsPhone81VpnConfiguration.md)|Update the properties of a [windowsPhone81VpnConfiguration](../resource/windowsPhone81VpnConfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/windowsPhone81VpnConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/windowsPhone81VpnConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/windowsPhone81VpnConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
-|[Get windowsPhone81CertificateProfileBase](../api/windowsPhone81VpnConfiguration_get_windowsPhone81CertificateProfileBase.md)|[windowsPhone81CertificateProfileBase](windowsPhone81CertificateProfileBase.md)|Get the [windowsPhone81CertificateProfileBase](windowsPhone81CertificateProfileBase.md) from the identityCertificate navigation property.|
+|[List windowsPhone81VpnConfigurations](../api/windowsPhone81VpnConfiguration_list.md)|[windowsPhone81VpnConfiguration](../resources/windowsPhone81VpnConfiguration.md) collection|List properties and relationships of the [windowsPhone81VpnConfiguration](../resources/windowsPhone81VpnConfiguration.md) objects.|
+|[Get windowsPhone81VpnConfiguration](../api/windowsPhone81VpnConfiguration_get.md)|[windowsPhone81VpnConfiguration](../resources/windowsPhone81VpnConfiguration.md)|Read properties and relationships of the [windowsPhone81VpnConfiguration](../resources/windowsPhone81VpnConfiguration.md) object.|
+|[Create windowsPhone81VpnConfiguration](../api/windowsPhone81VpnConfiguration_create.md)|[windowsPhone81VpnConfiguration](../resources/windowsPhone81VpnConfiguration.md)|Create a new [windowsPhone81VpnConfiguration](../resources/windowsPhone81VpnConfiguration.md) object.|
+|[Delete windowsPhone81VpnConfiguration](../api/windowsPhone81VpnConfiguration_delete.md)|None|Deletes a [windowsPhone81VpnConfiguration](../resources/windowsPhone81VpnConfiguration.md).|
+|[Update windowsPhone81VpnConfiguration](../api/windowsPhone81VpnConfiguration_update.md)|[windowsPhone81VpnConfiguration](../resources/windowsPhone81VpnConfiguration.md)|Update the properties of a [windowsPhone81VpnConfiguration](../resources/windowsPhone81VpnConfiguration.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/windowsPhone81VpnConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/windowsPhone81VpnConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/windowsPhone81VpnConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[Get windowsPhone81CertificateProfileBase](../api/windowsPhone81VpnConfiguration_get_windowsPhone81CertificateProfileBase.md)|[windowsPhone81CertificateProfileBase](../resources/windowsPhone81CertificateProfileBase.md)|Get the [windowsPhone81CertificateProfileBase](../resources/windowsPhone81CertificateProfileBase.md) from the identityCertificate navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -27,13 +27,13 @@ Inherits from [windows81VpnConfiguration](windows81VpnConfiguration.md)
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |connectionName|String|Connection name displayed to the user. Inherited from [windowsVpnConfiguration](windowsVpnConfiguration.md).|
-|servers|[vpnServer](vpnServer.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. Inherited from [windowsVpnConfiguration](windowsVpnConfiguration.md).|
+|servers|[vpnServer](../resources/vpnServer.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. Inherited from [windowsVpnConfiguration](windowsVpnConfiguration.md).|
 |customXml|Binary|Custom XML commands that configures the VPN connection. (UTF8 encoded byte array) Inherited from [windowsVpnConfiguration](windowsVpnConfiguration.md).|
 |applyOnlyToWindows81|Boolean|Value indicating whether this policy only applies to Windows 8.1. Inherited from [windows81VpnConfiguration](windows81VpnConfiguration.md).|
 |connectionType|String|Connection type. Inherited from [windows81VpnConfiguration](windows81VpnConfiguration.md). Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`.|
 |loginGroupOrDomain|String|Login group or domain when connection type is set to Dell SonicWALL Mobile Connection. Inherited from [windows81VpnConfiguration](windows81VpnConfiguration.md).|
 |enableSplitTunneling|Boolean|Enable split tunneling for the VPN. Inherited from [windows81VpnConfiguration](windows81VpnConfiguration.md).|
-|proxyServer|[windows81VpnProxyServer](windows81VpnProxyServer.md)|Proxy Server. Inherited from [windows81VpnConfiguration](windows81VpnConfiguration.md).|
+|proxyServer|[windows81VpnProxyServer](../resources/windows81VpnProxyServer.md)|Proxy Server. Inherited from [windows81VpnConfiguration](windows81VpnConfiguration.md).|
 |bypassVpnOnCompanyWifi|Boolean|Bypass VPN on company Wi-Fi.|
 |bypassVpnOnHomeWifi|Boolean|Bypass VPN on home Wi-Fi.|
 |authenticationMethod|String|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
@@ -43,10 +43,10 @@ Inherits from [windows81VpnConfiguration](windows81VpnConfiguration.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|identityCertificate|[windowsPhone81CertificateProfileBase](windowsPhone81CertificateProfileBase.md)|Identity certificate for client authentication when authentication method is certificate.|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|identityCertificate|[windowsPhone81CertificateProfileBase](../resources/windowsPhone81CertificateProfileBase.md)|Identity certificate for client authentication when authentication method is certificate.|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

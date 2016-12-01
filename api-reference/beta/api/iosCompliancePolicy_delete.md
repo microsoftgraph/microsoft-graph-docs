@@ -1,5 +1,5 @@
 ﻿# Delete iosCompliancePolicy
-Deletes a [iosCompliancePolicy](../resource/iosCompliancePolicy.md).
+Deletes a [iosCompliancePolicy](../resources/iosCompliancePolicy.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

@@ -1,5 +1,5 @@
 ﻿# Delete windowsPhone81VpnConfiguration
-Deletes a [windowsPhone81VpnConfiguration](../resource/windowsPhone81VpnConfiguration.md).
+Deletes a [windowsPhone81VpnConfiguration](../resources/windowsPhone81VpnConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

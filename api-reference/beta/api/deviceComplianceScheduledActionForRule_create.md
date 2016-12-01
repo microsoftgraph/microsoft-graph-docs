@@ -1,5 +1,5 @@
 ﻿# Create deviceComplianceScheduledActionForRule
-Create a new [deviceComplianceScheduledActionForRule](../resource/deviceComplianceScheduledActionForRule.md) object.
+Create a new [deviceComplianceScheduledActionForRule](../resources/deviceComplianceScheduledActionForRule.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -30,7 +30,7 @@ The following table shows the properties that are required when you create a dev
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [deviceComplianceScheduledActionForRule](../resource/deviceComplianceScheduledActionForRule.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [deviceComplianceScheduledActionForRule](../resources/deviceComplianceScheduledActionForRule.md) object in the response body.
 
 ### Example
 ##### Request

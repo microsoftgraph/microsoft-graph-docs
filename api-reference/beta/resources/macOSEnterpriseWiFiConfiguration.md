@@ -7,16 +7,16 @@ Inherits from [macOSWiFiConfiguration](macOSWiFiConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List macOSEnterpriseWiFiConfigurations](../api/macOSEnterpriseWiFiConfiguration_list.md)|[macOSEnterpriseWiFiConfiguration](macOSEnterpriseWiFiConfiguration.md) collection|List properties and relationships of the [macOSEnterpriseWiFiConfiguration](../resource/macOSEnterpriseWiFiConfiguration.md) objects.|
-|[Get macOSEnterpriseWiFiConfiguration](../api/macOSEnterpriseWiFiConfiguration_get.md)|[macOSEnterpriseWiFiConfiguration](macOSEnterpriseWiFiConfiguration.md)|Read properties and relationships of the [macOSEnterpriseWiFiConfiguration](../resource/macOSEnterpriseWiFiConfiguration.md) object.|
-|[Create macOSEnterpriseWiFiConfiguration](../api/macOSEnterpriseWiFiConfiguration_create.md)|[macOSEnterpriseWiFiConfiguration](macOSEnterpriseWiFiConfiguration.md)|Create a new [macOSEnterpriseWiFiConfiguration](../resource/macOSEnterpriseWiFiConfiguration.md) object.|
-|[Delete macOSEnterpriseWiFiConfiguration](../api/macOSEnterpriseWiFiConfiguration_delete.md)|None|Deletes a [macOSEnterpriseWiFiConfiguration](../resource/macOSEnterpriseWiFiConfiguration.md).|
-|[Update macOSEnterpriseWiFiConfiguration](../api/macOSEnterpriseWiFiConfiguration_update.md)|[macOSEnterpriseWiFiConfiguration](macOSEnterpriseWiFiConfiguration.md)|Update the properties of a [macOSEnterpriseWiFiConfiguration](../resource/macOSEnterpriseWiFiConfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/macOSEnterpriseWiFiConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/macOSEnterpriseWiFiConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/macOSEnterpriseWiFiConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
-|[Get macOSTrustedRootCertificate](../api/macOSEnterpriseWiFiConfiguration_get_macOSTrustedRootCertificate.md)|[macOSTrustedRootCertificate](macOSTrustedRootCertificate.md)|Get the [macOSTrustedRootCertificate](macOSTrustedRootCertificate.md) from the rootCertificateForServerValidation navigation property.|
-|[Get macOSCertificateProfileBase](../api/macOSEnterpriseWiFiConfiguration_get_macOSCertificateProfileBase.md)|[macOSCertificateProfileBase](macOSCertificateProfileBase.md)|Get the [macOSCertificateProfileBase](macOSCertificateProfileBase.md) from the identityCertificateForClientAuthentication navigation property.|
+|[List macOSEnterpriseWiFiConfigurations](../api/macOSEnterpriseWiFiConfiguration_list.md)|[macOSEnterpriseWiFiConfiguration](../resources/macOSEnterpriseWiFiConfiguration.md) collection|List properties and relationships of the [macOSEnterpriseWiFiConfiguration](../resources/macOSEnterpriseWiFiConfiguration.md) objects.|
+|[Get macOSEnterpriseWiFiConfiguration](../api/macOSEnterpriseWiFiConfiguration_get.md)|[macOSEnterpriseWiFiConfiguration](../resources/macOSEnterpriseWiFiConfiguration.md)|Read properties and relationships of the [macOSEnterpriseWiFiConfiguration](../resources/macOSEnterpriseWiFiConfiguration.md) object.|
+|[Create macOSEnterpriseWiFiConfiguration](../api/macOSEnterpriseWiFiConfiguration_create.md)|[macOSEnterpriseWiFiConfiguration](../resources/macOSEnterpriseWiFiConfiguration.md)|Create a new [macOSEnterpriseWiFiConfiguration](../resources/macOSEnterpriseWiFiConfiguration.md) object.|
+|[Delete macOSEnterpriseWiFiConfiguration](../api/macOSEnterpriseWiFiConfiguration_delete.md)|None|Deletes a [macOSEnterpriseWiFiConfiguration](../resources/macOSEnterpriseWiFiConfiguration.md).|
+|[Update macOSEnterpriseWiFiConfiguration](../api/macOSEnterpriseWiFiConfiguration_update.md)|[macOSEnterpriseWiFiConfiguration](../resources/macOSEnterpriseWiFiConfiguration.md)|Update the properties of a [macOSEnterpriseWiFiConfiguration](../resources/macOSEnterpriseWiFiConfiguration.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/macOSEnterpriseWiFiConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/macOSEnterpriseWiFiConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/macOSEnterpriseWiFiConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[Get macOSTrustedRootCertificate](../api/macOSEnterpriseWiFiConfiguration_get_macOSTrustedRootCertificate.md)|[macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md)|Get the [macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md) from the rootCertificateForServerValidation navigation property.|
+|[Get macOSCertificateProfileBase](../api/macOSEnterpriseWiFiConfiguration_get_macOSCertificateProfileBase.md)|[macOSCertificateProfileBase](../resources/macOSCertificateProfileBase.md)|Get the [macOSCertificateProfileBase](../resources/macOSCertificateProfileBase.md) from the identityCertificateForClientAuthentication navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -46,11 +46,11 @@ Inherits from [macOSWiFiConfiguration](macOSWiFiConfiguration.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|rootCertificateForServerValidation|[macOSTrustedRootCertificate](macOSTrustedRootCertificate.md)|Trusted Root Certificate for Server Validation when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP.|
-|identityCertificateForClientAuthentication|[macOSCertificateProfileBase](macOSCertificateProfileBase.md)|Identity Certificate for client authentication when EAP Type is configured to EAP-TLS, EAP-TTLS (with Certificate Authentication), or PEAP (with Certificate Authentication).|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|rootCertificateForServerValidation|[macOSTrustedRootCertificate](../resources/macOSTrustedRootCertificate.md)|Trusted Root Certificate for Server Validation when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP.|
+|identityCertificateForClientAuthentication|[macOSCertificateProfileBase](../resources/macOSCertificateProfileBase.md)|Identity Certificate for client authentication when EAP Type is configured to EAP-TLS, EAP-TTLS (with Certificate Authentication), or PEAP (with Certificate Authentication).|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

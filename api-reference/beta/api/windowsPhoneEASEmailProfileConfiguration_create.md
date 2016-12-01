@@ -1,5 +1,5 @@
 ﻿# Create windowsPhoneEASEmailProfileConfiguration
-Create a new [windowsPhoneEASEmailProfileConfiguration](../resource/windowsPhoneEASEmailProfileConfiguration.md) object.
+Create a new [windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create a win
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [windowsPhoneEASEmailProfileConfiguration](../resource/windowsPhoneEASEmailProfileConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

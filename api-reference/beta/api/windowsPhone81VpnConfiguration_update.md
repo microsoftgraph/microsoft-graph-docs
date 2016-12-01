@@ -1,5 +1,5 @@
 ﻿# Update windowsPhone81VpnConfiguration
-Update the properties of a [windowsPhone81VpnConfiguration](../resource/windowsPhone81VpnConfiguration.md) object.
+Update the properties of a [windowsPhone81VpnConfiguration](../resources/windowsPhone81VpnConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [windowsPhone81VpnConfiguration](../resource/windowsPhone81VpnConfiguration.md) object.
-The following table shows the properties that are required when you create a [windowsPhone81VpnConfiguration](../resource/windowsPhone81VpnConfiguration.md).
+In the request body, supply a JSON representation of a [windowsPhone81VpnConfiguration](../resources/windowsPhone81VpnConfiguration.md) object.
+The following table shows the properties that are required when you create a [windowsPhone81VpnConfiguration](../resources/windowsPhone81VpnConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -34,13 +34,13 @@ The following table shows the properties that are required when you create a [wi
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |connectionName|String|Connection name displayed to the user. Inherited from [windowsVpnConfiguration](windowsVpnConfiguration.md).|
-|servers|[vpnServer](vpnServer.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. Inherited from [windowsVpnConfiguration](windowsVpnConfiguration.md).|
+|servers|[vpnServer](../resources/vpnServer.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. Inherited from [windowsVpnConfiguration](windowsVpnConfiguration.md).|
 |customXml|Binary|Custom XML commands that configures the VPN connection. (UTF8 encoded byte array) Inherited from [windowsVpnConfiguration](windowsVpnConfiguration.md).|
 |applyOnlyToWindows81|Boolean|Value indicating whether this policy only applies to Windows 8.1. Inherited from [windows81VpnConfiguration](windows81VpnConfiguration.md).|
 |connectionType|String|Connection type. Inherited from [windows81VpnConfiguration](windows81VpnConfiguration.md). Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`.|
 |loginGroupOrDomain|String|Login group or domain when connection type is set to Dell SonicWALL Mobile Connection. Inherited from [windows81VpnConfiguration](windows81VpnConfiguration.md).|
 |enableSplitTunneling|Boolean|Enable split tunneling for the VPN. Inherited from [windows81VpnConfiguration](windows81VpnConfiguration.md).|
-|proxyServer|[windows81VpnProxyServer](windows81VpnProxyServer.md)|Proxy Server. Inherited from [windows81VpnConfiguration](windows81VpnConfiguration.md).|
+|proxyServer|[windows81VpnProxyServer](../resources/windows81VpnProxyServer.md)|Proxy Server. Inherited from [windows81VpnConfiguration](windows81VpnConfiguration.md).|
 |bypassVpnOnCompanyWifi|Boolean|Bypass VPN on company Wi-Fi.|
 |bypassVpnOnHomeWifi|Boolean|Bypass VPN on home Wi-Fi.|
 |authenticationMethod|String|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
@@ -50,7 +50,7 @@ The following table shows the properties that are required when you create a [wi
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [windowsPhone81VpnConfiguration](../resource/windowsPhone81VpnConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [windowsPhone81VpnConfiguration](../resources/windowsPhone81VpnConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

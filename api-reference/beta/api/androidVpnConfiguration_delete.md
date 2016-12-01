@@ -1,5 +1,5 @@
 ﻿# Delete androidVpnConfiguration
-Deletes a [androidVpnConfiguration](../resource/androidVpnConfiguration.md).
+Deletes a [androidVpnConfiguration](../resources/androidVpnConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

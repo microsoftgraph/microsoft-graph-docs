@@ -1,5 +1,5 @@
 ﻿# Delete iosEasEmailProfileConfiguration
-Deletes a [iosEasEmailProfileConfiguration](../resource/iosEasEmailProfileConfiguration.md).
+Deletes a [iosEasEmailProfileConfiguration](../resources/iosEasEmailProfileConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

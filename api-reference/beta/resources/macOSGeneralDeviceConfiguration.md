@@ -7,14 +7,14 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List macOSGeneralDeviceConfigurations](../api/macOSGeneralDeviceConfiguration_list.md)|[macOSGeneralDeviceConfiguration](macOSGeneralDeviceConfiguration.md) collection|List properties and relationships of the [macOSGeneralDeviceConfiguration](../resource/macOSGeneralDeviceConfiguration.md) objects.|
-|[Get macOSGeneralDeviceConfiguration](../api/macOSGeneralDeviceConfiguration_get.md)|[macOSGeneralDeviceConfiguration](macOSGeneralDeviceConfiguration.md)|Read properties and relationships of the [macOSGeneralDeviceConfiguration](../resource/macOSGeneralDeviceConfiguration.md) object.|
-|[Create macOSGeneralDeviceConfiguration](../api/macOSGeneralDeviceConfiguration_create.md)|[macOSGeneralDeviceConfiguration](macOSGeneralDeviceConfiguration.md)|Create a new [macOSGeneralDeviceConfiguration](../resource/macOSGeneralDeviceConfiguration.md) object.|
-|[Delete macOSGeneralDeviceConfiguration](../api/macOSGeneralDeviceConfiguration_delete.md)|None|Deletes a [macOSGeneralDeviceConfiguration](../resource/macOSGeneralDeviceConfiguration.md).|
-|[Update macOSGeneralDeviceConfiguration](../api/macOSGeneralDeviceConfiguration_update.md)|[macOSGeneralDeviceConfiguration](macOSGeneralDeviceConfiguration.md)|Update the properties of a [macOSGeneralDeviceConfiguration](../resource/macOSGeneralDeviceConfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/macOSGeneralDeviceConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/macOSGeneralDeviceConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/macOSGeneralDeviceConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[List macOSGeneralDeviceConfigurations](../api/macOSGeneralDeviceConfiguration_list.md)|[macOSGeneralDeviceConfiguration](../resources/macOSGeneralDeviceConfiguration.md) collection|List properties and relationships of the [macOSGeneralDeviceConfiguration](../resources/macOSGeneralDeviceConfiguration.md) objects.|
+|[Get macOSGeneralDeviceConfiguration](../api/macOSGeneralDeviceConfiguration_get.md)|[macOSGeneralDeviceConfiguration](../resources/macOSGeneralDeviceConfiguration.md)|Read properties and relationships of the [macOSGeneralDeviceConfiguration](../resources/macOSGeneralDeviceConfiguration.md) object.|
+|[Create macOSGeneralDeviceConfiguration](../api/macOSGeneralDeviceConfiguration_create.md)|[macOSGeneralDeviceConfiguration](../resources/macOSGeneralDeviceConfiguration.md)|Create a new [macOSGeneralDeviceConfiguration](../resources/macOSGeneralDeviceConfiguration.md) object.|
+|[Delete macOSGeneralDeviceConfiguration](../api/macOSGeneralDeviceConfiguration_delete.md)|None|Deletes a [macOSGeneralDeviceConfiguration](../resources/macOSGeneralDeviceConfiguration.md).|
+|[Update macOSGeneralDeviceConfiguration](../api/macOSGeneralDeviceConfiguration_update.md)|[macOSGeneralDeviceConfiguration](../resources/macOSGeneralDeviceConfiguration.md)|Update the properties of a [macOSGeneralDeviceConfiguration](../resources/macOSGeneralDeviceConfiguration.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/macOSGeneralDeviceConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/macOSGeneralDeviceConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/macOSGeneralDeviceConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -25,7 +25,7 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
-|compliantAppsList|[appListItem](appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
+|compliantAppsList|[appListItem](../resources/appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
 |compliantAppListType|String|List that is in the CompliantAppsList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |emailInDomainSuffixes|String collection|Any email address that does not have a suffix that matches any item listed here will be considered out-of-domain.|
 |passwordBlockSimple|Boolean|Block simple passwords.|
@@ -41,9 +41,9 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

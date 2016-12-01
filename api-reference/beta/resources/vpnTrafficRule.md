@@ -6,10 +6,10 @@ VPN Traffic Rule definition.
 |---|---|---|
 |name|String|Name.|
 |protocols|Int32|Protocols (0-255).|
-|localPortRanges|[numberRange](numberRange.md) collection|Local port range can be set only when protocol is either TCP or UDP (6 or 17)|
-|remotePortRanges|[numberRange](numberRange.md) collection|Remote port range can be set only when protocol is either TCP or UDP (6 or 17)|
-|localAddressRanges|[iPv4Range](iPv4Range.md) collection|Local address range.|
-|remoteAddressRanges|[iPv4Range](iPv4Range.md) collection|Remote address range.|
+|localPortRanges|[numberRange](../resources/numberRange.md) collection|Local port range can be set only when protocol is either TCP or UDP (6 or 17)|
+|remotePortRanges|[numberRange](../resources/numberRange.md) collection|Remote port range can be set only when protocol is either TCP or UDP (6 or 17)|
+|localAddressRanges|[iPv4Range](../resources/iPv4Range.md) collection|Local address range.|
+|remoteAddressRanges|[iPv4Range](../resources/iPv4Range.md) collection|Remote address range.|
 |appId|String|App identifier, if this traffic rule is triggered by an app.|
 |appType|String|App type, if this traffic rule is triggered by an app. Possible values are: `none`, `desktop`, `universal`.|
 |routingPolicyType|String|When app triggered, indicates whether to enable split tunneling along this route. Possible values are: `none`, `splitTunnel`, `forceTunnel`.|

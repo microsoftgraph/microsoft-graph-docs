@@ -7,11 +7,11 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List appleVpnConfigurations](../api/appleVpnConfiguration_list.md)|[appleVpnConfiguration](appleVpnConfiguration.md) collection|List properties and relationships of the [appleVpnConfiguration](../resource/appleVpnConfiguration.md) objects.|
-|[Get appleVpnConfiguration](../api/appleVpnConfiguration_get.md)|[appleVpnConfiguration](appleVpnConfiguration.md)|Read properties and relationships of the [appleVpnConfiguration](../resource/appleVpnConfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/appleVpnConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/appleVpnConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/appleVpnConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[List appleVpnConfigurations](../api/appleVpnConfiguration_list.md)|[appleVpnConfiguration](../resources/appleVpnConfiguration.md) collection|List properties and relationships of the [appleVpnConfiguration](../resources/appleVpnConfiguration.md) objects.|
+|[Get appleVpnConfiguration](../api/appleVpnConfiguration_get.md)|[appleVpnConfiguration](../resources/appleVpnConfiguration.md)|Read properties and relationships of the [appleVpnConfiguration](../resources/appleVpnConfiguration.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/appleVpnConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/appleVpnConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/appleVpnConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -27,22 +27,22 @@ Inherits from [deviceConfiguration](deviceConfiguration.md)
 |loginGroupOrDomain|String|Login group or domain when connection type is set to Dell SonicWALL Mobile Connection.|
 |role|String|Role when connection type is set to Pulse Secure.|
 |realm|String|Realm when connection type is set to Pulse Secure.|
-|server|[vpnServer](vpnServer.md)|VPN Server on the network. Make sure end users can access this network location.|
+|server|[vpnServer](../resources/vpnServer.md)|VPN Server on the network. Make sure end users can access this network location.|
 |identifier|String|Identifier provided by VPN vendor when connection type is set to Custom VPN. For example: Cisco AnyConnect uses an identifier of the form com.cisco.anyconnect.applevpn.plugin|
-|customData|[keyValue](keyValue.md) collection|Custom data when connection type is set to Custom VPN. Use this field to enable functionality not supported by Intune, but available in your VPN solution. Contact your VPN vendor to learn how to add these key/value pairs.|
+|customData|[keyValue](../resources/keyValue.md) collection|Custom data when connection type is set to Custom VPN. Use this field to enable functionality not supported by Intune, but available in your VPN solution. Contact your VPN vendor to learn how to add these key/value pairs.|
 |enableSplitTunneling|Boolean|Send all network traffic through VPN.|
 |authenticationMethod|String|Authentication method for this VPN connection. Possible values are: `certificate`, `usernameAndPassword`.|
 |enablePerApp|Boolean|Setting this to true creates Per-App VPN payload which can later be associated with Apps that can trigger this VPN conneciton on the end user's iOS device.|
 |safariDomains|String collection|Safari domains when this VPN per App setting is enabled. In addition to the apps associated with this VPN, Safari domains specified here will also be able to trigger this VPN connection.|
-|onDemandRules|[vpnOnDemandRule](vpnOnDemandRule.md) collection|On-Demand Rules|
-|proxyServer|[vpnProxyServer](vpnProxyServer.md)|Proxy Server.|
+|onDemandRules|[vpnOnDemandRule](../resources/vpnOnDemandRule.md) collection|On-Demand Rules|
+|proxyServer|[vpnProxyServer](../resources/vpnProxyServer.md)|Proxy Server.|
 
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

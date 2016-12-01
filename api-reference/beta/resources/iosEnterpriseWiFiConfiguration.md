@@ -7,16 +7,16 @@ Inherits from [iosWiFiConfiguration](iosWiFiConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List iosEnterpriseWiFiConfigurations](../api/iosEnterpriseWiFiConfiguration_list.md)|[iosEnterpriseWiFiConfiguration](iosEnterpriseWiFiConfiguration.md) collection|List properties and relationships of the [iosEnterpriseWiFiConfiguration](../resource/iosEnterpriseWiFiConfiguration.md) objects.|
-|[Get iosEnterpriseWiFiConfiguration](../api/iosEnterpriseWiFiConfiguration_get.md)|[iosEnterpriseWiFiConfiguration](iosEnterpriseWiFiConfiguration.md)|Read properties and relationships of the [iosEnterpriseWiFiConfiguration](../resource/iosEnterpriseWiFiConfiguration.md) object.|
-|[Create iosEnterpriseWiFiConfiguration](../api/iosEnterpriseWiFiConfiguration_create.md)|[iosEnterpriseWiFiConfiguration](iosEnterpriseWiFiConfiguration.md)|Create a new [iosEnterpriseWiFiConfiguration](../resource/iosEnterpriseWiFiConfiguration.md) object.|
-|[Delete iosEnterpriseWiFiConfiguration](../api/iosEnterpriseWiFiConfiguration_delete.md)|None|Deletes a [iosEnterpriseWiFiConfiguration](../resource/iosEnterpriseWiFiConfiguration.md).|
-|[Update iosEnterpriseWiFiConfiguration](../api/iosEnterpriseWiFiConfiguration_update.md)|[iosEnterpriseWiFiConfiguration](iosEnterpriseWiFiConfiguration.md)|Update the properties of a [iosEnterpriseWiFiConfiguration](../resource/iosEnterpriseWiFiConfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/iosEnterpriseWiFiConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/iosEnterpriseWiFiConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/iosEnterpriseWiFiConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
-|[List iosTrustedRootCertificates](../api/iosEnterpriseWiFiConfiguration_list_iosTrustedRootCertificate.md)|[iosTrustedRootCertificate](iosTrustedRootCertificate.md) collection|Get the iosTrustedRootCertificates from the rootCertificatesForServerValidation navigation property.|
-|[Get iosCertificateProfileBase](../api/iosEnterpriseWiFiConfiguration_get_iosCertificateProfileBase.md)|[iosCertificateProfileBase](iosCertificateProfileBase.md)|Get the [iosCertificateProfileBase](iosCertificateProfileBase.md) from the identityCertificateForClientAuthentication navigation property.|
+|[List iosEnterpriseWiFiConfigurations](../api/iosEnterpriseWiFiConfiguration_list.md)|[iosEnterpriseWiFiConfiguration](../resources/iosEnterpriseWiFiConfiguration.md) collection|List properties and relationships of the [iosEnterpriseWiFiConfiguration](../resources/iosEnterpriseWiFiConfiguration.md) objects.|
+|[Get iosEnterpriseWiFiConfiguration](../api/iosEnterpriseWiFiConfiguration_get.md)|[iosEnterpriseWiFiConfiguration](../resources/iosEnterpriseWiFiConfiguration.md)|Read properties and relationships of the [iosEnterpriseWiFiConfiguration](../resources/iosEnterpriseWiFiConfiguration.md) object.|
+|[Create iosEnterpriseWiFiConfiguration](../api/iosEnterpriseWiFiConfiguration_create.md)|[iosEnterpriseWiFiConfiguration](../resources/iosEnterpriseWiFiConfiguration.md)|Create a new [iosEnterpriseWiFiConfiguration](../resources/iosEnterpriseWiFiConfiguration.md) object.|
+|[Delete iosEnterpriseWiFiConfiguration](../api/iosEnterpriseWiFiConfiguration_delete.md)|None|Deletes a [iosEnterpriseWiFiConfiguration](../resources/iosEnterpriseWiFiConfiguration.md).|
+|[Update iosEnterpriseWiFiConfiguration](../api/iosEnterpriseWiFiConfiguration_update.md)|[iosEnterpriseWiFiConfiguration](../resources/iosEnterpriseWiFiConfiguration.md)|Update the properties of a [iosEnterpriseWiFiConfiguration](../resources/iosEnterpriseWiFiConfiguration.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/iosEnterpriseWiFiConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/iosEnterpriseWiFiConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/iosEnterpriseWiFiConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[List iosTrustedRootCertificates](../api/iosEnterpriseWiFiConfiguration_list_iosTrustedRootCertificate.md)|[iosTrustedRootCertificate](../resources/iosTrustedRootCertificate.md) collection|Get the iosTrustedRootCertificates from the rootCertificatesForServerValidation navigation property.|
+|[Get iosCertificateProfileBase](../api/iosEnterpriseWiFiConfiguration_get_iosCertificateProfileBase.md)|[iosCertificateProfileBase](../resources/iosCertificateProfileBase.md)|Get the [iosCertificateProfileBase](../resources/iosCertificateProfileBase.md) from the identityCertificateForClientAuthentication navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -46,11 +46,11 @@ Inherits from [iosWiFiConfiguration](iosWiFiConfiguration.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|rootCertificatesForServerValidation|[iosTrustedRootCertificate](iosTrustedRootCertificate.md) collection|Trusted Root Certificates for Server Validation when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP. If you provide this value you do not need to provide trustedServerCertificateNames, and vice versa.|
-|identityCertificateForClientAuthentication|[iosCertificateProfileBase](iosCertificateProfileBase.md)|Identity Certificate for client authentication when EAP Type is configured to EAP-TLS, EAP-TTLS (with Certificate Authentication), or PEAP (with Certificate Authentication).|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|rootCertificatesForServerValidation|[iosTrustedRootCertificate](../resources/iosTrustedRootCertificate.md) collection|Trusted Root Certificates for Server Validation when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP. If you provide this value you do not need to provide trustedServerCertificateNames, and vice versa.|
+|identityCertificateForClientAuthentication|[iosCertificateProfileBase](../resources/iosCertificateProfileBase.md)|Identity Certificate for client authentication when EAP Type is configured to EAP-TLS, EAP-TTLS (with Certificate Authentication), or PEAP (with Certificate Authentication).|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

@@ -7,15 +7,15 @@ Inherits from [appleVpnConfiguration](appleVpnConfiguration.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List macOSVpnConfigurations](../api/macOSVpnConfiguration_list.md)|[macOSVpnConfiguration](macOSVpnConfiguration.md) collection|List properties and relationships of the [macOSVpnConfiguration](../resource/macOSVpnConfiguration.md) objects.|
-|[Get macOSVpnConfiguration](../api/macOSVpnConfiguration_get.md)|[macOSVpnConfiguration](macOSVpnConfiguration.md)|Read properties and relationships of the [macOSVpnConfiguration](../resource/macOSVpnConfiguration.md) object.|
-|[Create macOSVpnConfiguration](../api/macOSVpnConfiguration_create.md)|[macOSVpnConfiguration](macOSVpnConfiguration.md)|Create a new [macOSVpnConfiguration](../resource/macOSVpnConfiguration.md) object.|
-|[Delete macOSVpnConfiguration](../api/macOSVpnConfiguration_delete.md)|None|Deletes a [macOSVpnConfiguration](../resource/macOSVpnConfiguration.md).|
-|[Update macOSVpnConfiguration](../api/macOSVpnConfiguration_update.md)|[macOSVpnConfiguration](macOSVpnConfiguration.md)|Update the properties of a [macOSVpnConfiguration](../resource/macOSVpnConfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/macOSVpnConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/macOSVpnConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/macOSVpnConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
-|[Get macOSCertificateProfileBase](../api/macOSVpnConfiguration_get_macOSCertificateProfileBase.md)|[macOSCertificateProfileBase](macOSCertificateProfileBase.md)|Get the [macOSCertificateProfileBase](macOSCertificateProfileBase.md) from the identityCertificate navigation property.|
+|[List macOSVpnConfigurations](../api/macOSVpnConfiguration_list.md)|[macOSVpnConfiguration](../resources/macOSVpnConfiguration.md) collection|List properties and relationships of the [macOSVpnConfiguration](../resources/macOSVpnConfiguration.md) objects.|
+|[Get macOSVpnConfiguration](../api/macOSVpnConfiguration_get.md)|[macOSVpnConfiguration](../resources/macOSVpnConfiguration.md)|Read properties and relationships of the [macOSVpnConfiguration](../resources/macOSVpnConfiguration.md) object.|
+|[Create macOSVpnConfiguration](../api/macOSVpnConfiguration_create.md)|[macOSVpnConfiguration](../resources/macOSVpnConfiguration.md)|Create a new [macOSVpnConfiguration](../resources/macOSVpnConfiguration.md) object.|
+|[Delete macOSVpnConfiguration](../api/macOSVpnConfiguration_delete.md)|None|Deletes a [macOSVpnConfiguration](../resources/macOSVpnConfiguration.md).|
+|[Update macOSVpnConfiguration](../api/macOSVpnConfiguration_update.md)|[macOSVpnConfiguration](../resources/macOSVpnConfiguration.md)|Update the properties of a [macOSVpnConfiguration](../resources/macOSVpnConfiguration.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/macOSVpnConfiguration_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/macOSVpnConfiguration_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/macOSVpnConfiguration_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[Get macOSCertificateProfileBase](../api/macOSVpnConfiguration_get_macOSCertificateProfileBase.md)|[macOSCertificateProfileBase](../resources/macOSCertificateProfileBase.md)|Get the [macOSCertificateProfileBase](../resources/macOSCertificateProfileBase.md) from the identityCertificate navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -31,23 +31,23 @@ Inherits from [appleVpnConfiguration](appleVpnConfiguration.md)
 |loginGroupOrDomain|String|Login group or domain when connection type is set to Dell SonicWALL Mobile Connection. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
 |role|String|Role when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
 |realm|String|Realm when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|server|[vpnServer](vpnServer.md)|VPN Server on the network. Make sure end users can access this network location. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
+|server|[vpnServer](../resources/vpnServer.md)|VPN Server on the network. Make sure end users can access this network location. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
 |identifier|String|Identifier provided by VPN vendor when connection type is set to Custom VPN. For example: Cisco AnyConnect uses an identifier of the form com.cisco.anyconnect.applevpn.plugin Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|customData|[keyValue](keyValue.md) collection|Custom data when connection type is set to Custom VPN. Use this field to enable functionality not supported by Intune, but available in your VPN solution. Contact your VPN vendor to learn how to add these key/value pairs. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
+|customData|[keyValue](../resources/keyValue.md) collection|Custom data when connection type is set to Custom VPN. Use this field to enable functionality not supported by Intune, but available in your VPN solution. Contact your VPN vendor to learn how to add these key/value pairs. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
 |enableSplitTunneling|Boolean|Send all network traffic through VPN. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
 |authenticationMethod|String|Authentication method for this VPN connection. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md). Possible values are: `certificate`, `usernameAndPassword`.|
 |enablePerApp|Boolean|Setting this to true creates Per-App VPN payload which can later be associated with Apps that can trigger this VPN conneciton on the end user's iOS device. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
 |safariDomains|String collection|Safari domains when this VPN per App setting is enabled. In addition to the apps associated with this VPN, Safari domains specified here will also be able to trigger this VPN connection. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|onDemandRules|[vpnOnDemandRule](vpnOnDemandRule.md) collection|On-Demand Rules Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|proxyServer|[vpnProxyServer](vpnProxyServer.md)|Proxy Server. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
+|onDemandRules|[vpnOnDemandRule](../resources/vpnOnDemandRule.md) collection|On-Demand Rules Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
+|proxyServer|[vpnProxyServer](../resources/vpnProxyServer.md)|Proxy Server. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
 
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|identityCertificate|[macOSCertificateProfileBase](macOSCertificateProfileBase.md)|Identity certificate for client authentication when authentication method is certificate.|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|identityCertificate|[macOSCertificateProfileBase](../resources/macOSCertificateProfileBase.md)|Identity certificate for client authentication when authentication method is certificate.|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

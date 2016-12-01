@@ -1,5 +1,5 @@
 ﻿# Delete windowsUpdateForBusinessConfiguration
-Deletes a [windowsUpdateForBusinessConfiguration](../resource/windowsUpdateForBusinessConfiguration.md).
+Deletes a [windowsUpdateForBusinessConfiguration](../resources/windowsUpdateForBusinessConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

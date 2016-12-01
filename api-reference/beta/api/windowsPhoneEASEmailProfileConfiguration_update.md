@@ -1,5 +1,5 @@
 ﻿# Update windowsPhoneEASEmailProfileConfiguration
-Update the properties of a [windowsPhoneEASEmailProfileConfiguration](../resource/windowsPhoneEASEmailProfileConfiguration.md) object.
+Update the properties of a [windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [windowsPhoneEASEmailProfileConfiguration](../resource/windowsPhoneEASEmailProfileConfiguration.md) object.
-The following table shows the properties that are required when you create a [windowsPhoneEASEmailProfileConfiguration](../resource/windowsPhoneEASEmailProfileConfiguration.md).
+In the request body, supply a JSON representation of a [windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md) object.
+The following table shows the properties that are required when you create a [windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create a [wi
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [windowsPhoneEASEmailProfileConfiguration](../resource/windowsPhoneEASEmailProfileConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [windowsPhoneEASEmailProfileConfiguration](../resources/windowsPhoneEASEmailProfileConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

@@ -4,11 +4,11 @@ CloudPki subscription certificate profile
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List cloudPkiSubscriptions](../api/cloudPkiSubscription_list.md)|[cloudPkiSubscription](cloudPkiSubscription.md) collection|List properties and relationships of the [cloudPkiSubscription](../resource/cloudPkiSubscription.md) objects.|
-|[Get cloudPkiSubscription](../api/cloudPkiSubscription_get.md)|[cloudPkiSubscription](cloudPkiSubscription.md)|Read properties and relationships of the [cloudPkiSubscription](../resource/cloudPkiSubscription.md) object.|
-|[Create cloudPkiSubscription](../api/cloudPkiSubscription_create.md)|[cloudPkiSubscription](cloudPkiSubscription.md)|Create a new [cloudPkiSubscription](../resource/cloudPkiSubscription.md) object.|
-|[Delete cloudPkiSubscription](../api/cloudPkiSubscription_delete.md)|None|Deletes a [cloudPkiSubscription](../resource/cloudPkiSubscription.md).|
-|[Update cloudPkiSubscription](../api/cloudPkiSubscription_update.md)|[cloudPkiSubscription](cloudPkiSubscription.md)|Update the properties of a [cloudPkiSubscription](../resource/cloudPkiSubscription.md) object.|
+|[List cloudPkiSubscriptions](../api/cloudPkiSubscription_list.md)|[cloudPkiSubscription](../resources/cloudPkiSubscription.md) collection|List properties and relationships of the [cloudPkiSubscription](../resources/cloudPkiSubscription.md) objects.|
+|[Get cloudPkiSubscription](../api/cloudPkiSubscription_get.md)|[cloudPkiSubscription](../resources/cloudPkiSubscription.md)|Read properties and relationships of the [cloudPkiSubscription](../resources/cloudPkiSubscription.md) object.|
+|[Create cloudPkiSubscription](../api/cloudPkiSubscription_create.md)|[cloudPkiSubscription](../resources/cloudPkiSubscription.md)|Create a new [cloudPkiSubscription](../resources/cloudPkiSubscription.md) object.|
+|[Delete cloudPkiSubscription](../api/cloudPkiSubscription_delete.md)|None|Deletes a [cloudPkiSubscription](../resources/cloudPkiSubscription.md).|
+|[Update cloudPkiSubscription](../api/cloudPkiSubscription_update.md)|[cloudPkiSubscription](../resources/cloudPkiSubscription.md)|Update the properties of a [cloudPkiSubscription](../resources/cloudPkiSubscription.md) object.|
 
 ### Properties
 |Property|Type|Description|
@@ -22,7 +22,7 @@ CloudPki subscription certificate profile
 |syncStatus|String|Last known SyncStatus of CloudPkiSubscription Possible values are: `unKnown`, `succeeded`, `failed`.|
 |lastSyncError|String|Error if occurred during last sync from third party CAs|
 |lastSyncDateTime|DateTimeOffset|DateTime certificate is last updated|
-|credentials|[cloudPkiAdministratorCredentials](cloudPkiAdministratorCredentials.md)|PKCS Certification Authority Name|
+|credentials|[cloudPkiAdministratorCredentials](../resources/cloudPkiAdministratorCredentials.md)|PKCS Certification Authority Name|
 |trustedRootCertificate|Binary|PKCS Certificate Template Name|
 |version|Int32|Version of the CloudPkiSubscription.|
 

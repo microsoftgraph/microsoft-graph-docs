@@ -1,5 +1,5 @@
 ﻿# Update windows10GeneralConfiguration
-Update the properties of a [windows10GeneralConfiguration](../resource/windows10GeneralConfiguration.md) object.
+Update the properties of a [windows10GeneralConfiguration](../resources/windows10GeneralConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [windows10GeneralConfiguration](../resource/windows10GeneralConfiguration.md) object.
-The following table shows the properties that are required when you create a [windows10GeneralConfiguration](../resource/windows10GeneralConfiguration.md).
+In the request body, supply a JSON representation of a [windows10GeneralConfiguration](../resources/windows10GeneralConfiguration.md) object.
+The following table shows the properties that are required when you create a [windows10GeneralConfiguration](../resources/windows10GeneralConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -116,7 +116,7 @@ The following table shows the properties that are required when you create a [wi
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [windows10GeneralConfiguration](../resource/windows10GeneralConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [windows10GeneralConfiguration](../resources/windows10GeneralConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

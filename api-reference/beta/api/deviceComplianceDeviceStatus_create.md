@@ -1,5 +1,5 @@
 ﻿# Create deviceComplianceDeviceStatus
-Create a new [deviceComplianceDeviceStatus](../resource/deviceComplianceDeviceStatus.md) object.
+Create a new [deviceComplianceDeviceStatus](../resources/deviceComplianceDeviceStatus.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -32,7 +32,7 @@ The following table shows the properties that are required when you create a dev
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [deviceComplianceDeviceStatus](../resource/deviceComplianceDeviceStatus.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [deviceComplianceDeviceStatus](../resources/deviceComplianceDeviceStatus.md) object in the response body.
 
 ### Example
 ##### Request

@@ -7,15 +7,15 @@ Inherits from [androidCertificateProfileBase](androidCertificateProfileBase.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List androidPkcsCertificateProfiles](../api/androidPkcsCertificateProfile_list.md)|[androidPkcsCertificateProfile](androidPkcsCertificateProfile.md) collection|List properties and relationships of the [androidPkcsCertificateProfile](../resource/androidPkcsCertificateProfile.md) objects.|
-|[Get androidPkcsCertificateProfile](../api/androidPkcsCertificateProfile_get.md)|[androidPkcsCertificateProfile](androidPkcsCertificateProfile.md)|Read properties and relationships of the [androidPkcsCertificateProfile](../resource/androidPkcsCertificateProfile.md) object.|
-|[Create androidPkcsCertificateProfile](../api/androidPkcsCertificateProfile_create.md)|[androidPkcsCertificateProfile](androidPkcsCertificateProfile.md)|Create a new [androidPkcsCertificateProfile](../resource/androidPkcsCertificateProfile.md) object.|
-|[Delete androidPkcsCertificateProfile](../api/androidPkcsCertificateProfile_delete.md)|None|Deletes a [androidPkcsCertificateProfile](../resource/androidPkcsCertificateProfile.md).|
-|[Update androidPkcsCertificateProfile](../api/androidPkcsCertificateProfile_update.md)|[androidPkcsCertificateProfile](androidPkcsCertificateProfile.md)|Update the properties of a [androidPkcsCertificateProfile](../resource/androidPkcsCertificateProfile.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/androidPkcsCertificateProfile_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/androidPkcsCertificateProfile_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/androidPkcsCertificateProfile_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
-|[Get androidTrustedRootCertificate](../api/androidPkcsCertificateProfile_get_androidTrustedRootCertificate.md)|[androidTrustedRootCertificate](androidTrustedRootCertificate.md)|Get the [androidTrustedRootCertificate](androidTrustedRootCertificate.md) from the rootCertificate navigation property.|
+|[List androidPkcsCertificateProfiles](../api/androidPkcsCertificateProfile_list.md)|[androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md) collection|List properties and relationships of the [androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md) objects.|
+|[Get androidPkcsCertificateProfile](../api/androidPkcsCertificateProfile_get.md)|[androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md)|Read properties and relationships of the [androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md) object.|
+|[Create androidPkcsCertificateProfile](../api/androidPkcsCertificateProfile_create.md)|[androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md)|Create a new [androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md) object.|
+|[Delete androidPkcsCertificateProfile](../api/androidPkcsCertificateProfile_delete.md)|None|Deletes a [androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md).|
+|[Update androidPkcsCertificateProfile](../api/androidPkcsCertificateProfile_update.md)|[androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md)|Update the properties of a [androidPkcsCertificateProfile](../resources/androidPkcsCertificateProfile.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/androidPkcsCertificateProfile_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/androidPkcsCertificateProfile_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/androidPkcsCertificateProfile_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[Get androidTrustedRootCertificate](../api/androidPkcsCertificateProfile_get_androidTrustedRootCertificate.md)|[androidTrustedRootCertificate](../resources/androidTrustedRootCertificate.md)|Get the [androidTrustedRootCertificate](../resources/androidTrustedRootCertificate.md) from the rootCertificate navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -31,7 +31,7 @@ Inherits from [androidCertificateProfileBase](androidCertificateProfileBase.md)
 |subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md). Possible values are: `emailAddress`, `userPrincipalName`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md).|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md). Possible values are: `days`, `months`, `years`.|
-|extendedKeyUsages|[extendedKeyUsage](extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md).|
+|extendedKeyUsages|[extendedKeyUsage](../resources/extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md).|
 |certificationAuthority|String|PKCS Certification Authority|
 |certificationAuthorityName|String|PKCS Certification Authority Name|
 |certificateTemplateName|String|PKCS Certificate Template Name|
@@ -39,10 +39,10 @@ Inherits from [androidCertificateProfileBase](androidCertificateProfileBase.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|rootCertificate|[androidTrustedRootCertificate](androidTrustedRootCertificate.md)|Trusted Root Certificate. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|rootCertificate|[androidTrustedRootCertificate](../resources/androidTrustedRootCertificate.md)|Trusted Root Certificate. Inherited from [androidCertificateProfileBase](androidCertificateProfileBase.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

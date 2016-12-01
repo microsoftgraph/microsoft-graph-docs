@@ -1,5 +1,5 @@
 ﻿# Delete macOSEnterpriseWiFiConfiguration
-Deletes a [macOSEnterpriseWiFiConfiguration](../resource/macOSEnterpriseWiFiConfiguration.md).
+Deletes a [macOSEnterpriseWiFiConfiguration](../resources/macOSEnterpriseWiFiConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

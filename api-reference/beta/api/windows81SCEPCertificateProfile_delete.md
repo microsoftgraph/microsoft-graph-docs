@@ -1,5 +1,5 @@
 ﻿# Delete windows81SCEPCertificateProfile
-Deletes a [windows81SCEPCertificateProfile](../resource/windows81SCEPCertificateProfile.md).
+Deletes a [windows81SCEPCertificateProfile](../resources/windows81SCEPCertificateProfile.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

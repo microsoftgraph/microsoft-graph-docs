@@ -1,5 +1,5 @@
 ﻿# Get macOSWiFiConfiguration
-Read properties and relationships of the [macOSWiFiConfiguration](../resource/macOSWiFiConfiguration.md) object.
+Read properties and relationships of the [macOSWiFiConfiguration](../resources/macOSWiFiConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -27,7 +27,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and [macOSWiFiConfiguration](../resource/macOSWiFiConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [macOSWiFiConfiguration](../resources/macOSWiFiConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

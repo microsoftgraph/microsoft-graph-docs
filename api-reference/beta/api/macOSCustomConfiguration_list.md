@@ -1,5 +1,5 @@
 ﻿# List macOSCustomConfigurations
-List properties and relationships of the [macOSCustomConfiguration](../resource/macOSCustomConfiguration.md) objects.
+List properties and relationships of the [macOSCustomConfiguration](../resources/macOSCustomConfiguration.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -23,7 +23,7 @@ GET /deviceManagement/deviceConfigurations/
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a collection of [macOSCustomConfiguration](../resource/macOSCustomConfiguration.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [macOSCustomConfiguration](../resources/macOSCustomConfiguration.md) objects in the response body.
 
 ### Example
 ##### Request

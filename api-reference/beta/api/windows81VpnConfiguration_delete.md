@@ -1,5 +1,5 @@
 ﻿# Delete windows81VpnConfiguration
-Deletes a [windows81VpnConfiguration](../resource/windows81VpnConfiguration.md).
+Deletes a [windows81VpnConfiguration](../resources/windows81VpnConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

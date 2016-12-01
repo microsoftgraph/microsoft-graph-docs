@@ -7,15 +7,15 @@ Inherits from [deviceCompliancePolicy](deviceCompliancePolicy.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List androidCompliancePolicies](../api/androidCompliancePolicy_list.md)|[androidCompliancePolicy](androidCompliancePolicy.md) collection|List properties and relationships of the [androidCompliancePolicy](../resource/androidCompliancePolicy.md) objects.|
-|[Get androidCompliancePolicy](../api/androidCompliancePolicy_get.md)|[androidCompliancePolicy](androidCompliancePolicy.md)|Read properties and relationships of the [androidCompliancePolicy](../resource/androidCompliancePolicy.md) object.|
-|[Create androidCompliancePolicy](../api/androidCompliancePolicy_create.md)|[androidCompliancePolicy](androidCompliancePolicy.md)|Create a new [androidCompliancePolicy](../resource/androidCompliancePolicy.md) object.|
-|[Delete androidCompliancePolicy](../api/androidCompliancePolicy_delete.md)|None|Deletes a [androidCompliancePolicy](../resource/androidCompliancePolicy.md).|
-|[Update androidCompliancePolicy](../api/androidCompliancePolicy_update.md)|[androidCompliancePolicy](androidCompliancePolicy.md)|Update the properties of a [androidCompliancePolicy](../resource/androidCompliancePolicy.md) object.|
-|[List deviceCompliancePolicyGroupAssignments](../api/androidCompliancePolicy_list_deviceCompliancePolicyGroupAssignment.md)|[deviceCompliancePolicyGroupAssignment](deviceCompliancePolicyGroupAssignment.md) collection|Get the deviceCompliancePolicyGroupAssignments from the groupAssignments navigation property.|
-|[List deviceComplianceScheduledActionForRules](../api/androidCompliancePolicy_list_deviceComplianceScheduledActionForRule.md)|[deviceComplianceScheduledActionForRule](deviceComplianceScheduledActionForRule.md) collection|Get the deviceComplianceScheduledActionForRules from the scheduledActionsForRule navigation property.|
-|[List deviceComplianceDeviceStatuss](../api/androidCompliancePolicy_list_deviceComplianceDeviceStatus.md)|[deviceComplianceDeviceStatus](deviceComplianceDeviceStatus.md) collection|Get the deviceComplianceDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceComplianceUserStatuss](../api/androidCompliancePolicy_list_deviceComplianceUserStatus.md)|[deviceComplianceUserStatus](deviceComplianceUserStatus.md) collection|Get the deviceComplianceUserStatuss from the userStatuses navigation property.|
+|[List androidCompliancePolicies](../api/androidCompliancePolicy_list.md)|[androidCompliancePolicy](../resources/androidCompliancePolicy.md) collection|List properties and relationships of the [androidCompliancePolicy](../resources/androidCompliancePolicy.md) objects.|
+|[Get androidCompliancePolicy](../api/androidCompliancePolicy_get.md)|[androidCompliancePolicy](../resources/androidCompliancePolicy.md)|Read properties and relationships of the [androidCompliancePolicy](../resources/androidCompliancePolicy.md) object.|
+|[Create androidCompliancePolicy](../api/androidCompliancePolicy_create.md)|[androidCompliancePolicy](../resources/androidCompliancePolicy.md)|Create a new [androidCompliancePolicy](../resources/androidCompliancePolicy.md) object.|
+|[Delete androidCompliancePolicy](../api/androidCompliancePolicy_delete.md)|None|Deletes a [androidCompliancePolicy](../resources/androidCompliancePolicy.md).|
+|[Update androidCompliancePolicy](../api/androidCompliancePolicy_update.md)|[androidCompliancePolicy](../resources/androidCompliancePolicy.md)|Update the properties of a [androidCompliancePolicy](../resources/androidCompliancePolicy.md) object.|
+|[List deviceCompliancePolicyGroupAssignments](../api/androidCompliancePolicy_list_deviceCompliancePolicyGroupAssignment.md)|[deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md) collection|Get the deviceCompliancePolicyGroupAssignments from the groupAssignments navigation property.|
+|[List deviceComplianceScheduledActionForRules](../api/androidCompliancePolicy_list_deviceComplianceScheduledActionForRule.md)|[deviceComplianceScheduledActionForRule](../resources/deviceComplianceScheduledActionForRule.md) collection|Get the deviceComplianceScheduledActionForRules from the scheduledActionsForRule navigation property.|
+|[List deviceComplianceDeviceStatuss](../api/androidCompliancePolicy_list_deviceComplianceDeviceStatus.md)|[deviceComplianceDeviceStatus](../resources/deviceComplianceDeviceStatus.md) collection|Get the deviceComplianceDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceComplianceUserStatuss](../api/androidCompliancePolicy_list_deviceComplianceUserStatus.md)|[deviceComplianceUserStatus](../resources/deviceComplianceUserStatus.md) collection|Get the deviceComplianceUserStatuss from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -47,10 +47,10 @@ Inherits from [deviceCompliancePolicy](deviceCompliancePolicy.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceCompliancePolicyGroupAssignment](deviceCompliancePolicyGroupAssignment.md) collection|The list of group assignments for this compliance policy. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
-|scheduledActionsForRule|[deviceComplianceScheduledActionForRule](deviceComplianceScheduledActionForRule.md) collection|The list of scheduled action for this rule Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
-|deviceStatuses|[deviceComplianceDeviceStatus](deviceComplianceDeviceStatus.md) collection|List of DeviceComplianceDeviceStatus. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
-|userStatuses|[deviceComplianceUserStatus](deviceComplianceUserStatus.md) collection|List of DeviceComplianceUserStatus. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
+|groupAssignments|[deviceCompliancePolicyGroupAssignment](../resources/deviceCompliancePolicyGroupAssignment.md) collection|The list of group assignments for this compliance policy. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
+|scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/deviceComplianceScheduledActionForRule.md) collection|The list of scheduled action for this rule Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
+|deviceStatuses|[deviceComplianceDeviceStatus](../resources/deviceComplianceDeviceStatus.md) collection|List of DeviceComplianceDeviceStatus. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
+|userStatuses|[deviceComplianceUserStatus](../resources/deviceComplianceUserStatus.md) collection|List of DeviceComplianceUserStatus. Inherited from [deviceCompliancePolicy](deviceCompliancePolicy.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

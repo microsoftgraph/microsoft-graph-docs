@@ -1,5 +1,5 @@
 ﻿# Delete editionUpgradeConfiguration
-Deletes a [editionUpgradeConfiguration](../resource/editionUpgradeConfiguration.md).
+Deletes a [editionUpgradeConfiguration](../resources/editionUpgradeConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

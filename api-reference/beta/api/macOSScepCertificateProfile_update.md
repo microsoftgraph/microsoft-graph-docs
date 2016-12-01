@@ -1,5 +1,5 @@
 ﻿# Update macOSScepCertificateProfile
-Update the properties of a [macOSScepCertificateProfile](../resource/macOSScepCertificateProfile.md) object.
+Update the properties of a [macOSScepCertificateProfile](../resources/macOSScepCertificateProfile.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [macOSScepCertificateProfile](../resource/macOSScepCertificateProfile.md) object.
-The following table shows the properties that are required when you create a [macOSScepCertificateProfile](../resource/macOSScepCertificateProfile.md).
+In the request body, supply a JSON representation of a [macOSScepCertificateProfile](../resources/macOSScepCertificateProfile.md) object.
+The following table shows the properties that are required when you create a [macOSScepCertificateProfile](../resources/macOSScepCertificateProfile.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -43,12 +43,12 @@ The following table shows the properties that are required when you create a [ma
 |keyUsage|String|SCEP Key Usage. Possible values are: `keyEncipherment`, `digitalSignature`.|
 |keySize|String|SCEP Key Size. Possible values are: `size1024`, `size2048`.|
 |hashAlgorithm|String|SCEP Hash Algorithm. Possible values are: `sha1`, `sha2`.|
-|extendedKeyUsages|[extendedKeyUsage](extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings.|
+|extendedKeyUsages|[extendedKeyUsage](../resources/extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings.|
 
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [macOSScepCertificateProfile](../resource/macOSScepCertificateProfile.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [macOSScepCertificateProfile](../resources/macOSScepCertificateProfile.md) object in the response body.
 
 ### Example
 ##### Request

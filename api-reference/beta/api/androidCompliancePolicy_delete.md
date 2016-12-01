@@ -1,5 +1,5 @@
 ﻿# Delete androidCompliancePolicy
-Deletes a [androidCompliancePolicy](../resource/androidCompliancePolicy.md).
+Deletes a [androidCompliancePolicy](../resources/androidCompliancePolicy.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

@@ -7,15 +7,15 @@ Inherits from [windowsPhone81CertificateProfileBase](windowsPhone81CertificatePr
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List windowsPhone81SCEPCertificateProfiles](../api/windowsPhone81SCEPCertificateProfile_list.md)|[windowsPhone81SCEPCertificateProfile](windowsPhone81SCEPCertificateProfile.md) collection|List properties and relationships of the [windowsPhone81SCEPCertificateProfile](../resource/windowsPhone81SCEPCertificateProfile.md) objects.|
-|[Get windowsPhone81SCEPCertificateProfile](../api/windowsPhone81SCEPCertificateProfile_get.md)|[windowsPhone81SCEPCertificateProfile](windowsPhone81SCEPCertificateProfile.md)|Read properties and relationships of the [windowsPhone81SCEPCertificateProfile](../resource/windowsPhone81SCEPCertificateProfile.md) object.|
-|[Create windowsPhone81SCEPCertificateProfile](../api/windowsPhone81SCEPCertificateProfile_create.md)|[windowsPhone81SCEPCertificateProfile](windowsPhone81SCEPCertificateProfile.md)|Create a new [windowsPhone81SCEPCertificateProfile](../resource/windowsPhone81SCEPCertificateProfile.md) object.|
-|[Delete windowsPhone81SCEPCertificateProfile](../api/windowsPhone81SCEPCertificateProfile_delete.md)|None|Deletes a [windowsPhone81SCEPCertificateProfile](../resource/windowsPhone81SCEPCertificateProfile.md).|
-|[Update windowsPhone81SCEPCertificateProfile](../api/windowsPhone81SCEPCertificateProfile_update.md)|[windowsPhone81SCEPCertificateProfile](windowsPhone81SCEPCertificateProfile.md)|Update the properties of a [windowsPhone81SCEPCertificateProfile](../resource/windowsPhone81SCEPCertificateProfile.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/windowsPhone81SCEPCertificateProfile_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/windowsPhone81SCEPCertificateProfile_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/windowsPhone81SCEPCertificateProfile_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
-|[Get windowsPhone81TrustedRootCertificate](../api/windowsPhone81SCEPCertificateProfile_get_windowsPhone81TrustedRootCertificate.md)|[windowsPhone81TrustedRootCertificate](windowsPhone81TrustedRootCertificate.md)|Get the [windowsPhone81TrustedRootCertificate](windowsPhone81TrustedRootCertificate.md) from the rootCertificate navigation property.|
+|[List windowsPhone81SCEPCertificateProfiles](../api/windowsPhone81SCEPCertificateProfile_list.md)|[windowsPhone81SCEPCertificateProfile](../resources/windowsPhone81SCEPCertificateProfile.md) collection|List properties and relationships of the [windowsPhone81SCEPCertificateProfile](../resources/windowsPhone81SCEPCertificateProfile.md) objects.|
+|[Get windowsPhone81SCEPCertificateProfile](../api/windowsPhone81SCEPCertificateProfile_get.md)|[windowsPhone81SCEPCertificateProfile](../resources/windowsPhone81SCEPCertificateProfile.md)|Read properties and relationships of the [windowsPhone81SCEPCertificateProfile](../resources/windowsPhone81SCEPCertificateProfile.md) object.|
+|[Create windowsPhone81SCEPCertificateProfile](../api/windowsPhone81SCEPCertificateProfile_create.md)|[windowsPhone81SCEPCertificateProfile](../resources/windowsPhone81SCEPCertificateProfile.md)|Create a new [windowsPhone81SCEPCertificateProfile](../resources/windowsPhone81SCEPCertificateProfile.md) object.|
+|[Delete windowsPhone81SCEPCertificateProfile](../api/windowsPhone81SCEPCertificateProfile_delete.md)|None|Deletes a [windowsPhone81SCEPCertificateProfile](../resources/windowsPhone81SCEPCertificateProfile.md).|
+|[Update windowsPhone81SCEPCertificateProfile](../api/windowsPhone81SCEPCertificateProfile_update.md)|[windowsPhone81SCEPCertificateProfile](../resources/windowsPhone81SCEPCertificateProfile.md)|Update the properties of a [windowsPhone81SCEPCertificateProfile](../resources/windowsPhone81SCEPCertificateProfile.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/windowsPhone81SCEPCertificateProfile_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/windowsPhone81SCEPCertificateProfile_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/windowsPhone81SCEPCertificateProfile_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[Get windowsPhone81TrustedRootCertificate](../api/windowsPhone81SCEPCertificateProfile_get_windowsPhone81TrustedRootCertificate.md)|[windowsPhone81TrustedRootCertificate](../resources/windowsPhone81TrustedRootCertificate.md)|Get the [windowsPhone81TrustedRootCertificate](../resources/windowsPhone81TrustedRootCertificate.md) from the rootCertificate navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -32,7 +32,7 @@ Inherits from [windowsPhone81CertificateProfileBase](windowsPhone81CertificatePr
 |subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Inherited from [windowsPhone81CertificateProfileBase](windowsPhone81CertificateProfileBase.md). Possible values are: `emailAddress`, `userPrincipalName`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validtiy Period. Inherited from [windowsPhone81CertificateProfileBase](windowsPhone81CertificateProfileBase.md).|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period. Inherited from [windowsPhone81CertificateProfileBase](windowsPhone81CertificateProfileBase.md). Possible values are: `days`, `months`, `years`.|
-|extendedKeyUsages|[extendedKeyUsage](extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings. Inherited from [windowsPhone81CertificateProfileBase](windowsPhone81CertificateProfileBase.md).|
+|extendedKeyUsages|[extendedKeyUsage](../resources/extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings. Inherited from [windowsPhone81CertificateProfileBase](windowsPhone81CertificateProfileBase.md).|
 |scepServerUrls|String collection|SCEP Server Url(s).|
 |keyUsage|String|SCEP Key Usage. Possible values are: `keyEncipherment`, `digitalSignature`.|
 |keySize|String|SCEP Key Size. Possible values are: `size1024`, `size2048`.|
@@ -41,10 +41,10 @@ Inherits from [windowsPhone81CertificateProfileBase](windowsPhone81CertificatePr
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|rootCertificate|[windowsPhone81TrustedRootCertificate](windowsPhone81TrustedRootCertificate.md)|Trusted Root Certificate.|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|rootCertificate|[windowsPhone81TrustedRootCertificate](../resources/windowsPhone81TrustedRootCertificate.md)|Trusted Root Certificate.|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

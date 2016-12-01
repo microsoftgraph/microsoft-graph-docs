@@ -7,15 +7,15 @@ Inherits from [iosCertificateProfileBase](iosCertificateProfileBase.md)
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List iosScepCertificateProfiles](../api/iosScepCertificateProfile_list.md)|[iosScepCertificateProfile](iosScepCertificateProfile.md) collection|List properties and relationships of the [iosScepCertificateProfile](../resource/iosScepCertificateProfile.md) objects.|
-|[Get iosScepCertificateProfile](../api/iosScepCertificateProfile_get.md)|[iosScepCertificateProfile](iosScepCertificateProfile.md)|Read properties and relationships of the [iosScepCertificateProfile](../resource/iosScepCertificateProfile.md) object.|
-|[Create iosScepCertificateProfile](../api/iosScepCertificateProfile_create.md)|[iosScepCertificateProfile](iosScepCertificateProfile.md)|Create a new [iosScepCertificateProfile](../resource/iosScepCertificateProfile.md) object.|
-|[Delete iosScepCertificateProfile](../api/iosScepCertificateProfile_delete.md)|None|Deletes a [iosScepCertificateProfile](../resource/iosScepCertificateProfile.md).|
-|[Update iosScepCertificateProfile](../api/iosScepCertificateProfile_update.md)|[iosScepCertificateProfile](iosScepCertificateProfile.md)|Update the properties of a [iosScepCertificateProfile](../resource/iosScepCertificateProfile.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/iosScepCertificateProfile_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuss](../api/iosScepCertificateProfile_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuss](../api/iosScepCertificateProfile_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
-|[Get iosTrustedRootCertificate](../api/iosScepCertificateProfile_get_iosTrustedRootCertificate.md)|[iosTrustedRootCertificate](iosTrustedRootCertificate.md)|Get the [iosTrustedRootCertificate](iosTrustedRootCertificate.md) from the rootCertificate navigation property.|
+|[List iosScepCertificateProfiles](../api/iosScepCertificateProfile_list.md)|[iosScepCertificateProfile](../resources/iosScepCertificateProfile.md) collection|List properties and relationships of the [iosScepCertificateProfile](../resources/iosScepCertificateProfile.md) objects.|
+|[Get iosScepCertificateProfile](../api/iosScepCertificateProfile_get.md)|[iosScepCertificateProfile](../resources/iosScepCertificateProfile.md)|Read properties and relationships of the [iosScepCertificateProfile](../resources/iosScepCertificateProfile.md) object.|
+|[Create iosScepCertificateProfile](../api/iosScepCertificateProfile_create.md)|[iosScepCertificateProfile](../resources/iosScepCertificateProfile.md)|Create a new [iosScepCertificateProfile](../resources/iosScepCertificateProfile.md) object.|
+|[Delete iosScepCertificateProfile](../api/iosScepCertificateProfile_delete.md)|None|Deletes a [iosScepCertificateProfile](../resources/iosScepCertificateProfile.md).|
+|[Update iosScepCertificateProfile](../api/iosScepCertificateProfile_update.md)|[iosScepCertificateProfile](../resources/iosScepCertificateProfile.md)|Update the properties of a [iosScepCertificateProfile](../resources/iosScepCertificateProfile.md) object.|
+|[List deviceConfigurationGroupAssignments](../api/iosScepCertificateProfile_list_deviceConfigurationGroupAssignment.md)|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
+|[List deviceConfigurationDeviceStatuss](../api/iosScepCertificateProfile_list_deviceConfigurationDeviceStatus.md)|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.|
+|[List deviceConfigurationUserStatuss](../api/iosScepCertificateProfile_list_deviceConfigurationUserStatus.md)|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Get the deviceConfigurationUserStatuss from the userStatuses navigation property.|
+|[Get iosTrustedRootCertificate](../api/iosScepCertificateProfile_get_iosTrustedRootCertificate.md)|[iosTrustedRootCertificate](../resources/iosTrustedRootCertificate.md)|Get the [iosTrustedRootCertificate](../resources/iosTrustedRootCertificate.md) from the rootCertificate navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -35,15 +35,15 @@ Inherits from [iosCertificateProfileBase](iosCertificateProfileBase.md)
 |subjectNameFormatString|String|Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US|
 |keyUsage|String|SCEP Key Usage. Possible values are: `keyEncipherment`, `digitalSignature`.|
 |keySize|String|SCEP Key Size. Possible values are: `size1024`, `size2048`.|
-|extendedKeyUsages|[extendedKeyUsage](extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings.|
+|extendedKeyUsages|[extendedKeyUsage](../resources/extendedKeyUsage.md) collection|Extended Key Usage (EKU) settings.|
 
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[deviceConfigurationGroupAssignment](deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
-|rootCertificate|[iosTrustedRootCertificate](iosTrustedRootCertificate.md)|Trusted Root Certificate.|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/deviceConfigurationGroupAssignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/deviceConfigurationDeviceStatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/deviceConfigurationUserStatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](deviceConfiguration.md)|
+|rootCertificate|[iosTrustedRootCertificate](../resources/iosTrustedRootCertificate.md)|Trusted Root Certificate.|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

@@ -1,5 +1,5 @@
 ﻿# Create windowsPhone81TrustedRootCertificate
-Create a new [windowsPhone81TrustedRootCertificate](../resource/windowsPhone81TrustedRootCertificate.md) object.
+Create a new [windowsPhone81TrustedRootCertificate](../resources/windowsPhone81TrustedRootCertificate.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -39,7 +39,7 @@ The following table shows the properties that are required when you create a win
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [windowsPhone81TrustedRootCertificate](../resource/windowsPhone81TrustedRootCertificate.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [windowsPhone81TrustedRootCertificate](../resources/windowsPhone81TrustedRootCertificate.md) object in the response body.
 
 ### Example
 ##### Request

@@ -1,5 +1,5 @@
 ﻿# Delete androidForWorkCustomConfiguration
-Deletes a [androidForWorkCustomConfiguration](../resource/androidForWorkCustomConfiguration.md).
+Deletes a [androidForWorkCustomConfiguration](../resources/androidForWorkCustomConfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

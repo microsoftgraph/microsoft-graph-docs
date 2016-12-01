@@ -1,5 +1,5 @@
 ﻿# Update androidForWorkCustomConfiguration
-Update the properties of a [androidForWorkCustomConfiguration](../resource/androidForWorkCustomConfiguration.md) object.
+Update the properties of a [androidForWorkCustomConfiguration](../resources/androidForWorkCustomConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [androidForWorkCustomConfiguration](../resource/androidForWorkCustomConfiguration.md) object.
-The following table shows the properties that are required when you create a [androidForWorkCustomConfiguration](../resource/androidForWorkCustomConfiguration.md).
+In the request body, supply a JSON representation of a [androidForWorkCustomConfiguration](../resources/androidForWorkCustomConfiguration.md) object.
+The following table shows the properties that are required when you create a [androidForWorkCustomConfiguration](../resources/androidForWorkCustomConfiguration.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -33,12 +33,12 @@ The following table shows the properties that are required when you create a [an
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
-|omaSettings|[omaSetting](omaSetting.md) collection|OMA settings.|
+|omaSettings|[omaSetting](../resources/omaSetting.md) collection|OMA settings.|
 
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [androidForWorkCustomConfiguration](../resource/androidForWorkCustomConfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [androidForWorkCustomConfiguration](../resources/androidForWorkCustomConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

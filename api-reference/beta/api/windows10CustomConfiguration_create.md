@@ -1,5 +1,5 @@
 ﻿# Create windows10CustomConfiguration
-Create a new [windows10CustomConfiguration](../resource/windows10CustomConfiguration.md) object.
+Create a new [windows10CustomConfiguration](../resources/windows10CustomConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -33,12 +33,12 @@ The following table shows the properties that are required when you create a win
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
-|omaSettings|[omaSetting](omaSetting.md) collection|OMA settings.|
+|omaSettings|[omaSetting](../resources/omaSetting.md) collection|OMA settings.|
 
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [windows10CustomConfiguration](../resource/windows10CustomConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [windows10CustomConfiguration](../resources/windows10CustomConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

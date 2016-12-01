@@ -1,5 +1,5 @@
 ﻿# Create iosPkcsCertificateProfile
-Create a new [iosPkcsCertificateProfile](../resource/iosPkcsCertificateProfile.md) object.
+Create a new [iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -45,7 +45,7 @@ The following table shows the properties that are required when you create a ios
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [iosPkcsCertificateProfile](../resource/iosPkcsCertificateProfile.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md) object in the response body.
 
 ### Example
 ##### Request

@@ -1,5 +1,5 @@
 ﻿# Create macOSWiFiConfiguration
-Create a new [macOSWiFiConfiguration](../resource/macOSWiFiConfiguration.md) object.
+Create a new [macOSWiFiConfiguration](../resources/macOSWiFiConfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create a mac
 
 
 ### Response
-If successful, this method returns a `201 Created` response code and a [macOSWiFiConfiguration](../resource/macOSWiFiConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [macOSWiFiConfiguration](../resources/macOSWiFiConfiguration.md) object in the response body.
 
 ### Example
 ##### Request

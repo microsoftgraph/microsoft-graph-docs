@@ -1,5 +1,5 @@
 ﻿# Delete windows10MobileCompliancePolicy
-Deletes a [windows10MobileCompliancePolicy](../resource/windows10MobileCompliancePolicy.md).
+Deletes a [windows10MobileCompliancePolicy](../resources/windows10MobileCompliancePolicy.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

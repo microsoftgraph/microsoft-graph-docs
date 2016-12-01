@@ -1,5 +1,5 @@
 ﻿# Update iosPkcsCertificateProfile
-Update the properties of a [iosPkcsCertificateProfile](../resource/iosPkcsCertificateProfile.md) object.
+Update the properties of a [iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,8 +22,8 @@ PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
 |Accept|application/json|
 
 ### Request body
-In the request body, supply a JSON representation of a [iosPkcsCertificateProfile](../resource/iosPkcsCertificateProfile.md) object.
-The following table shows the properties that are required when you create a [iosPkcsCertificateProfile](../resource/iosPkcsCertificateProfile.md).
+In the request body, supply a JSON representation of a [iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md) object.
+The following table shows the properties that are required when you create a [iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -45,7 +45,7 @@ The following table shows the properties that are required when you create a [io
 
 
 ### Response
-If successful, this method returns a `200 OK` response code and an updated [iosPkcsCertificateProfile](../resource/iosPkcsCertificateProfile.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [iosPkcsCertificateProfile](../resources/iosPkcsCertificateProfile.md) object in the response body.
 
 ### Example
 ##### Request
