@@ -2,7 +2,7 @@
 
 By providing the configurations in this profile you can instruct the iOS device to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user.
 
-Inherits from [appleVpnConfiguration](appleVpnConfiguration.md)
+Inherits from [appleVpnConfiguration](../resources/appleVpnConfiguration.md)
 
 ### Methods
 |Method|Return Type|Description|
@@ -20,26 +20,26 @@ Inherits from [appleVpnConfiguration](appleVpnConfiguration.md)
 ### Properties
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity. Inherited from [deviceConfiguration](deviceConfiguration.md).|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](deviceConfiguration.md).|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](deviceConfiguration.md).|
-|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
-|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
-|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
-|connectionName|String|Connection name displayed to the user. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|connectionType|String|Connection type. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md). Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `customVpn`, `ciscoIPSec`, `citrix`.|
-|loginGroupOrDomain|String|Login group or domain when connection type is set to Dell SonicWALL Mobile Connection. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|role|String|Role when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|realm|String|Realm when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|server|[vpnServer](../resources/vpnServer.md)|VPN Server on the network. Make sure end users can access this network location. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|identifier|String|Identifier provided by VPN vendor when connection type is set to Custom VPN. For example: Cisco AnyConnect uses an identifier of the form com.cisco.anyconnect.applevpn.plugin Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|customData|[keyValue](../resources/keyValue.md) collection|Custom data when connection type is set to Custom VPN. Use this field to enable functionality not supported by Intune, but available in your VPN solution. Contact your VPN vendor to learn how to add these key/value pairs. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|enableSplitTunneling|Boolean|Send all network traffic through VPN. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|authenticationMethod|String|Authentication method for this VPN connection. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md). Possible values are: `certificate`, `usernameAndPassword`.|
-|enablePerApp|Boolean|Setting this to true creates Per-App VPN payload which can later be associated with Apps that can trigger this VPN conneciton on the end user's iOS device. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|safariDomains|String collection|Safari domains when this VPN per App setting is enabled. In addition to the apps associated with this VPN, Safari domains specified here will also be able to trigger this VPN connection. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|onDemandRules|[vpnOnDemandRule](../resources/vpnOnDemandRule.md) collection|On-Demand Rules Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
-|proxyServer|[vpnProxyServer](../resources/vpnProxyServer.md)|Proxy Server. Inherited from [appleVpnConfiguration](appleVpnConfiguration.md).|
+|id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/deviceConfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/deviceConfiguration.md)|
+|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/deviceConfiguration.md)|
+|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/deviceConfiguration.md)|
+|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/deviceConfiguration.md)|
+|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/deviceConfiguration.md)|
+|connectionName|String|Connection name displayed to the user. Inherited from [appleVpnConfiguration](../resources/appleVpnConfiguration.md)|
+|connectionType|String|Connection type. Inherited from [appleVpnConfiguration](../resources/appleVpnConfiguration.md) Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `customVpn`, `ciscoIPSec`, `citrix`.|
+|loginGroupOrDomain|String|Login group or domain when connection type is set to Dell SonicWALL Mobile Connection. Inherited from [appleVpnConfiguration](../resources/appleVpnConfiguration.md)|
+|role|String|Role when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](../resources/appleVpnConfiguration.md)|
+|realm|String|Realm when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](../resources/appleVpnConfiguration.md)|
+|server|[vpnServer](../resources/vpnServer.md)|VPN Server on the network. Make sure end users can access this network location. Inherited from [appleVpnConfiguration](../resources/appleVpnConfiguration.md)|
+|identifier|String|Identifier provided by VPN vendor when connection type is set to Custom VPN. For example: Cisco AnyConnect uses an identifier of the form com.cisco.anyconnect.applevpn.plugin Inherited from [appleVpnConfiguration](../resources/appleVpnConfiguration.md)|
+|customData|[keyValue](../resources/keyValue.md) collection|Custom data when connection type is set to Custom VPN. Use this field to enable functionality not supported by Intune, but available in your VPN solution. Contact your VPN vendor to learn how to add these key/value pairs. Inherited from [appleVpnConfiguration](../resources/appleVpnConfiguration.md)|
+|enableSplitTunneling|Boolean|Send all network traffic through VPN. Inherited from [appleVpnConfiguration](../resources/appleVpnConfiguration.md)|
+|authenticationMethod|String|Authentication method for this VPN connection. Inherited from [appleVpnConfiguration](../resources/appleVpnConfiguration.md) Possible values are: `certificate`, `usernameAndPassword`.|
+|enablePerApp|Boolean|Setting this to true creates Per-App VPN payload which can later be associated with Apps that can trigger this VPN conneciton on the end user's iOS device. Inherited from [appleVpnConfiguration](../resources/appleVpnConfiguration.md)|
+|safariDomains|String collection|Safari domains when this VPN per App setting is enabled. In addition to the apps associated with this VPN, Safari domains specified here will also be able to trigger this VPN connection. Inherited from [appleVpnConfiguration](../resources/appleVpnConfiguration.md)|
+|onDemandRules|[vpnOnDemandRule](../resources/vpnOnDemandRule.md) collection|On-Demand Rules Inherited from [appleVpnConfiguration](../resources/appleVpnConfiguration.md)|
+|proxyServer|[vpnProxyServer](../resources/vpnProxyServer.md)|Proxy Server. Inherited from [appleVpnConfiguration](../resources/appleVpnConfiguration.md)|
 
 ### Relationships
 |Relationship|Type|Description|

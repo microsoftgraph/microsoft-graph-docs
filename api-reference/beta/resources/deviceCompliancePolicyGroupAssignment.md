@@ -2,7 +2,7 @@
 
 Device compliance policy group assignment.
 
-Inherits from [deviceCompliancePolicyAssignment](deviceCompliancePolicyAssignment.md)
+Inherits from [deviceCompliancePolicyAssignment](../resources/deviceCompliancePolicyAssignment.md)
 
 ### Methods
 |Method|Return Type|Description|
@@ -17,7 +17,7 @@ Inherits from [deviceCompliancePolicyAssignment](deviceCompliancePolicyAssignmen
 ### Properties
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity. Inherited from [deviceCompliancePolicyAssignment](deviceCompliancePolicyAssignment.md).|
+|id|String|Key of the entity. Inherited from [deviceCompliancePolicyAssignment](../resources/deviceCompliancePolicyAssignment.md)|
 |targetGroupId|String|The Id of the AAD group we are targeting the device compliance policy to.|
 
 ### Relationships

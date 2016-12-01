@@ -2,7 +2,7 @@
 
 Device configuration group assignment.
 
-Inherits from [deviceConfigurationAssignment](deviceConfigurationAssignment.md)
+Inherits from [deviceConfigurationAssignment](../resources/deviceConfigurationAssignment.md)
 
 ### Methods
 |Method|Return Type|Description|
@@ -17,7 +17,7 @@ Inherits from [deviceConfigurationAssignment](deviceConfigurationAssignment.md)
 ### Properties
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity. Inherited from [deviceConfigurationAssignment](deviceConfigurationAssignment.md).|
+|id|String|Key of the entity. Inherited from [deviceConfigurationAssignment](../resources/deviceConfigurationAssignment.md)|
 |targetGroupId|String|The Id of the AAD group we are targeting the device configuration to.|
 
 ### Relationships

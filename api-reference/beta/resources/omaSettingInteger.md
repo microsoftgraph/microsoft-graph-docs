@@ -2,14 +2,14 @@
 
 OMA Settings Integer definition.
 
-Inherits from [omaSetting](omaSetting.md)
+Inherits from [omaSetting](../resources/omaSetting.md)
 
 ### Properties
 |Property|Type|Description|
 |---|---|---|
-|displayName|String|Display Name. Inherited from [omaSetting](omaSetting.md).|
-|description|String|Description. Inherited from [omaSetting](omaSetting.md).|
-|omaUri|String|OMA. Inherited from [omaSetting](omaSetting.md).|
+|displayName|String|Display Name. Inherited from [omaSetting](../resources/omaSetting.md)|
+|description|String|Description. Inherited from [omaSetting](../resources/omaSetting.md)|
+|omaUri|String|OMA. Inherited from [omaSetting](../resources/omaSetting.md)|
 |value|Int32|Value.|
 
 ### Relationships

@@ -2,14 +2,14 @@
 
 VPN Proxy Server.
 
-Inherits from [vpnProxyServer](vpnProxyServer.md)
+Inherits from [vpnProxyServer](../resources/vpnProxyServer.md)
 
 ### Properties
 |Property|Type|Description|
 |---|---|---|
-|automaticConfigurationScriptUrl|String|Proxy's automatic configuration script url. Inherited from [vpnProxyServer](vpnProxyServer.md).|
-|address|String|Address. Inherited from [vpnProxyServer](vpnProxyServer.md).|
-|port|Int32|Port. Inherited from [vpnProxyServer](vpnProxyServer.md).|
+|automaticConfigurationScriptUrl|String|Proxy's automatic configuration script url. Inherited from [vpnProxyServer](../resources/vpnProxyServer.md)|
+|address|String|Address. Inherited from [vpnProxyServer](../resources/vpnProxyServer.md)|
+|port|Int32|Port. Inherited from [vpnProxyServer](../resources/vpnProxyServer.md)|
 |automaticallyDetectProxySettings|Boolean|Automatically detect proxy settings.|
 |bypassProxyServerForLocalAddress|Boolean|Bypass proxy server for local address.|
 

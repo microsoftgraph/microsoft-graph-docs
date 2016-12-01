@@ -2,7 +2,7 @@
 
 Not yet documented
 
-Inherits from [windowsUpdateInstallScheduleType](windowsUpdateInstallScheduleType.md)
+Inherits from [windowsUpdateInstallScheduleType](../resources/windowsUpdateInstallScheduleType.md)
 
 ### Properties
 |Property|Type|Description|
