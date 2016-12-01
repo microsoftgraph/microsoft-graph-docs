@@ -37,9 +37,9 @@ Inherits from [managedAppRegistration](../resources/intune_mam_managedAppRegistr
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|appliedPolicies|[managedAppPolicy](../resources/intune_mam_managedAppPolicy.md) collection|Zero or more policys already applied on the registered app when it last synchronized with managment service. Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md)|
-|intendedPolicies|[managedAppPolicy](../resources/intune_mam_managedAppPolicy.md) collection|Zero or more policies admin intended for the app as of now. Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md)|
-|operations|[managedAppOperation](../resources/intune_mam_managedAppOperation.md) collection|Zero or more long running operations triggered on the app registration. Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md)|
+|appliedPolicies|[managedAppPolicy](../resources/intune_mam_managedAppPolicy.md) collection|Zero or more policys already applied on the registered app when it last synchronized with managment service. Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
+|intendedPolicies|[managedAppPolicy](../resources/intune_mam_managedAppPolicy.md) collection|Zero or more policies admin intended for the app as of now. Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
+|operations|[managedAppOperation](../resources/intune_mam_managedAppOperation.md) collection|Zero or more long running operations triggered on the app registration. Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

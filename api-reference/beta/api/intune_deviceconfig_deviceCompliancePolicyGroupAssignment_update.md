@@ -26,7 +26,7 @@ The following table shows the properties that are required when you create a [de
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity. Inherited from [deviceCompliancePolicyAssignment](intune_deviceconfig_deviceCompliancePolicyAssignment.md).|
+|id|String|Key of the entity. Inherited from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_deviceCompliancePolicyAssignment.md)|
 |targetGroupId|String|The Id of the AAD group we are targeting the device compliance policy to.|
 
 

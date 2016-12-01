@@ -23,7 +23,7 @@ Inherits from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfi
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|deviceCompliancePolicy|[deviceCompliancePolicy](../resources/intune_deviceconfig_deviceCompliancePolicy.md)|The navigation link to the  device compliance polic targeted. Inherited from [deviceCompliancePolicyAssignment](intune_deviceconfig_deviceCompliancePolicyAssignment.md)|
+|deviceCompliancePolicy|[deviceCompliancePolicy](../resources/intune_deviceconfig_deviceCompliancePolicy.md)|The navigation link to the  device compliance polic targeted. Inherited from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_deviceCompliancePolicyAssignment.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

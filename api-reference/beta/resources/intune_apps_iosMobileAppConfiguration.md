@@ -32,9 +32,9 @@ Inherits from [managedDeviceMobileAppConfiguration](../resources/intune_apps_man
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmAppConfigGroupAssignment.md) collection|the associated group assignments. Inherited from [managedDeviceMobileAppConfiguration](intune_apps_managedDeviceMobileAppConfiguration.md)|
-|deviceStatuses|[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_managedDeviceMobileAppConfigurationDeviceStatus.md) collection|List of ManagedDeviceMobileAppConfigurationDeviceStatus. Inherited from [managedDeviceMobileAppConfiguration](intune_apps_managedDeviceMobileAppConfiguration.md)|
-|userStatuses|[managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_managedDeviceMobileAppConfigurationUserStatus.md) collection|List of ManagedDeviceMobileAppConfigurationUserStatus. Inherited from [managedDeviceMobileAppConfiguration](intune_apps_managedDeviceMobileAppConfiguration.md)|
+|groupAssignments|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmAppConfigGroupAssignment.md) collection|the associated group assignments. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_managedDeviceMobileAppConfiguration.md)|
+|deviceStatuses|[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_managedDeviceMobileAppConfigurationDeviceStatus.md) collection|List of ManagedDeviceMobileAppConfigurationDeviceStatus. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_managedDeviceMobileAppConfiguration.md)|
+|userStatuses|[managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_managedDeviceMobileAppConfigurationUserStatus.md) collection|List of ManagedDeviceMobileAppConfigurationUserStatus. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_managedDeviceMobileAppConfiguration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

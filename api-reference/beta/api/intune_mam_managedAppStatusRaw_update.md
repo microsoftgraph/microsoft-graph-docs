@@ -25,9 +25,9 @@ The following table shows the properties that are required when you create a [ma
 
 |Property|Type|Description|
 |---|---|---|
-|displayName|String|Friendly name of the status report. Inherited from [managedAppStatus](intune_mam_managedAppStatus.md).|
-|id|String|Key of the entity. Inherited from [managedAppStatus](intune_mam_managedAppStatus.md).|
-|version|String|Version of the entity. Inherited from [managedAppStatus](intune_mam_managedAppStatus.md).|
+|displayName|String|Friendly name of the status report. Inherited from [managedAppStatus](../resources/intune_mam_managedAppStatus.md)|
+|id|String|Key of the entity. Inherited from [managedAppStatus](../resources/intune_mam_managedAppStatus.md)|
+|version|String|Version of the entity. Inherited from [managedAppStatus](../resources/intune_mam_managedAppStatus.md)|
 |content|[managedAppSummary](../resources/intune_mam_managedAppSummary.md)|Status report content.|
 
 

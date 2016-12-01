@@ -26,7 +26,7 @@ The following table shows the properties that are required when you create a dev
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity. Inherited from [deviceConfigurationAssignment](intune_deviceconfig_deviceConfigurationAssignment.md).|
+|id|String|Key of the entity. Inherited from [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceConfigurationAssignment.md)|
 |targetGroupId|String|The Id of the AAD group we are targeting the device configuration to.|
 
 

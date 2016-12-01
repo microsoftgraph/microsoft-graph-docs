@@ -27,12 +27,12 @@ The following table shows the properties that are required when you create a win
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity. Inherited from [deviceCompliancePolicy](intune_deviceconfig_deviceCompliancePolicy.md).|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceCompliancePolicy](intune_deviceconfig_deviceCompliancePolicy.md).|
-|description|String|Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](intune_deviceconfig_deviceCompliancePolicy.md).|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceCompliancePolicy](intune_deviceconfig_deviceCompliancePolicy.md).|
-|displayName|String|Admin provided name of the device configuration. Inherited from [deviceCompliancePolicy](intune_deviceconfig_deviceCompliancePolicy.md).|
-|version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](intune_deviceconfig_deviceCompliancePolicy.md).|
+|id|String|Key of the entity. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceCompliancePolicy.md)|
+|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceCompliancePolicy.md)|
+|description|String|Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceCompliancePolicy.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceCompliancePolicy.md)|
+|displayName|String|Admin provided name of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceCompliancePolicy.md)|
+|version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceCompliancePolicy.md)|
 |passwordBlockSimple|Boolean|Whether or not to block syncing the calendar.|
 |passwordExpirationDays|Int32|Number of days before the password expires.|
 |passwordMinimumLength|Int32|Minimum length of passwords.|

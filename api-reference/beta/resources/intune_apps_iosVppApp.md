@@ -46,10 +46,10 @@ Inherits from [mobileApp](../resources/intune_apps_mobileApp.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|categories|[mobileAppCategory](../resources/intune_apps_mobileAppCategory.md) collection|The list of categories for this app. Inherited from [mobileApp](intune_apps_mobileApp.md)|
-|groupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileAppGroupAssignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](intune_apps_mobileApp.md)|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileAppInstallStatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](intune_apps_mobileApp.md)|
-|userStatuses|[userAppInstallStatus](../resources/intune_apps_userAppInstallStatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](intune_apps_mobileApp.md)|
+|categories|[mobileAppCategory](../resources/intune_apps_mobileAppCategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|groupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileAppGroupAssignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileAppInstallStatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|userStatuses|[userAppInstallStatus](../resources/intune_apps_userAppInstallStatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
 |vppToken|[appleVolumePurchaseProgramToken](../resources/intune_apps_appleVolumePurchaseProgramToken.md)|The VPP token assigned to the app.|
 
 ### JSON Representation

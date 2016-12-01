@@ -26,19 +26,19 @@ The following table shows the properties that are required when you create a [an
 
 |Property|Type|Description|
 |---|---|---|
-|createdDateTime|DateTimeOffset|Date and time of creation Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md).|
-|lastSyncDateTime|DateTimeOffset|Date and time of last the app synced with management service. Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md).|
-|applicationVersion|String|App version Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md).|
-|managementSdkVersion|String|App management SDK version Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md).|
-|platformVersion|String|Operating System version Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md).|
-|deviceType|String|Host device type Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md).|
-|deviceTag|String|App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in all conditions. Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md).|
-|deviceName|String|Host device name Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md).|
-|flaggedReasons|String collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md).|
-|userId|String|The user Id to who this app registration belongs. Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md).|
-|appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileAppIdentifier.md)|The app package Identifier Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md).|
-|id|String|Key of the entity. Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md).|
-|version|String|Version of the entity. Inherited from [managedAppRegistration](intune_mam_managedAppRegistration.md).|
+|createdDateTime|DateTimeOffset|Date and time of creation Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
+|lastSyncDateTime|DateTimeOffset|Date and time of last the app synced with management service. Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
+|applicationVersion|String|App version Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
+|managementSdkVersion|String|App management SDK version Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
+|platformVersion|String|Operating System version Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
+|deviceType|String|Host device type Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
+|deviceTag|String|App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in all conditions. Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
+|deviceName|String|Host device name Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
+|flaggedReasons|String collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
+|userId|String|The user Id to who this app registration belongs. Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
+|appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileAppIdentifier.md)|The app package Identifier Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
+|id|String|Key of the entity. Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
+|version|String|Version of the entity. Inherited from [managedAppRegistration](../resources/intune_mam_managedAppRegistration.md)|
 
 
 

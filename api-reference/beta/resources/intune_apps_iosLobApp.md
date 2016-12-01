@@ -49,11 +49,11 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobileLobApp.md)
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|categories|[mobileAppCategory](../resources/intune_apps_mobileAppCategory.md) collection|The list of categories for this app. Inherited from [mobileApp](intune_apps_mobileApp.md)|
-|groupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileAppGroupAssignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](intune_apps_mobileApp.md)|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileAppInstallStatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](intune_apps_mobileApp.md)|
-|userStatuses|[userAppInstallStatus](../resources/intune_apps_userAppInstallStatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](intune_apps_mobileApp.md)|
-|contentVersions|[mobileAppContent](../resources/intune_apps_mobileAppContent.md) collection|The list of content versions for this app. Inherited from [mobileLobApp](intune_apps_mobileLobApp.md)|
+|categories|[mobileAppCategory](../resources/intune_apps_mobileAppCategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|groupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileAppGroupAssignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileAppInstallStatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|userStatuses|[userAppInstallStatus](../resources/intune_apps_userAppInstallStatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|contentVersions|[mobileAppContent](../resources/intune_apps_mobileAppContent.md) collection|The list of content versions for this app. Inherited from [mobileLobApp](../resources/intune_apps_mobileLobApp.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

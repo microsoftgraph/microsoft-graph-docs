@@ -27,12 +27,12 @@ The following table shows the properties that are required when you create a [io
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity. Inherited from [deviceCompliancePolicy](intune_deviceconfig_deviceCompliancePolicy.md).|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceCompliancePolicy](intune_deviceconfig_deviceCompliancePolicy.md).|
-|description|String|Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](intune_deviceconfig_deviceCompliancePolicy.md).|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceCompliancePolicy](intune_deviceconfig_deviceCompliancePolicy.md).|
-|displayName|String|Admin provided name of the device configuration. Inherited from [deviceCompliancePolicy](intune_deviceconfig_deviceCompliancePolicy.md).|
-|version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](intune_deviceconfig_deviceCompliancePolicy.md).|
+|id|String|Key of the entity. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceCompliancePolicy.md)|
+|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceCompliancePolicy.md)|
+|description|String|Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceCompliancePolicy.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceCompliancePolicy.md)|
+|displayName|String|Admin provided name of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceCompliancePolicy.md)|
+|version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceCompliancePolicy.md)|
 |passcodeBlockSimple|Boolean|Indicates whether or not to block simple passcodes.|
 |passcodeExpirationDays|Int32|Number of days before the passcode expires.|
 |passcodeMinimumLength|Int32|Minimum length of passcode.|

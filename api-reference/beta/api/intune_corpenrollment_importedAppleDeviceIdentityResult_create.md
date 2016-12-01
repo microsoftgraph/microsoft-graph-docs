@@ -25,17 +25,17 @@ The following table shows the properties that are required when you create a imp
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity. Inherited from [importedAppleDeviceIdentity](intune_corpenrollment_importedAppleDeviceIdentity.md).|
-|serialNumber|String|Device serial number Inherited from [importedAppleDeviceIdentity](intune_corpenrollment_importedAppleDeviceIdentity.md).|
-|requestedEnrollmentProfileId|String|Enrollment profile Id admin intends to apply to the device during next enrollment Inherited from [importedAppleDeviceIdentity](intune_corpenrollment_importedAppleDeviceIdentity.md).|
-|requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|The time enrollment profile was assigned to the device Inherited from [importedAppleDeviceIdentity](intune_corpenrollment_importedAppleDeviceIdentity.md).|
-|isSupervised|Boolean|Indicates if the Apple device is supervised. More information is at: https://support.apple.com/en-us/HT202837 Inherited from [importedAppleDeviceIdentity](intune_corpenrollment_importedAppleDeviceIdentity.md).|
-|discoverySource|String|Apple device discovery source. Inherited from [importedAppleDeviceIdentity](intune_corpenrollment_importedAppleDeviceIdentity.md). Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
-|createdDateTime|DateTimeOffset|Created Date Time of the device Inherited from [importedAppleDeviceIdentity](intune_corpenrollment_importedAppleDeviceIdentity.md).|
-|lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device Inherited from [importedAppleDeviceIdentity](intune_corpenrollment_importedAppleDeviceIdentity.md).|
-|description|String|The description of the device Inherited from [importedAppleDeviceIdentity](intune_corpenrollment_importedAppleDeviceIdentity.md).|
-|enrollmentState|String|The state of the device in Intune Inherited from [importedAppleDeviceIdentity](intune_corpenrollment_importedAppleDeviceIdentity.md). Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
-|platform|String|The platform of the Device. Inherited from [importedAppleDeviceIdentity](intune_corpenrollment_importedAppleDeviceIdentity.md). Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|id|String|Key of the entity. Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedAppleDeviceIdentity.md)|
+|serialNumber|String|Device serial number Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedAppleDeviceIdentity.md)|
+|requestedEnrollmentProfileId|String|Enrollment profile Id admin intends to apply to the device during next enrollment Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedAppleDeviceIdentity.md)|
+|requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|The time enrollment profile was assigned to the device Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedAppleDeviceIdentity.md)|
+|isSupervised|Boolean|Indicates if the Apple device is supervised. More information is at: https://support.apple.com/en-us/HT202837 Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedAppleDeviceIdentity.md)|
+|discoverySource|String|Apple device discovery source. Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedAppleDeviceIdentity.md) Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
+|createdDateTime|DateTimeOffset|Created Date Time of the device Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedAppleDeviceIdentity.md)|
+|lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedAppleDeviceIdentity.md)|
+|description|String|The description of the device Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedAppleDeviceIdentity.md)|
+|enrollmentState|String|The state of the device in Intune Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedAppleDeviceIdentity.md) Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
+|platform|String|The platform of the Device. Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedAppleDeviceIdentity.md) Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |status|Boolean|Status of imported device identity|
 
 

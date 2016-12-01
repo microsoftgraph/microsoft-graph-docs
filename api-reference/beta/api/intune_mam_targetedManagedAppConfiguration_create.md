@@ -27,13 +27,13 @@ The following table shows the properties that are required when you create a tar
 
 |Property|Type|Description|
 |---|---|---|
-|displayName|String|Policy display name. Inherited from [managedAppPolicy](intune_mam_managedAppPolicy.md).|
-|description|String|The policy's description. Inherited from [managedAppPolicy](intune_mam_managedAppPolicy.md).|
-|lastModifiedTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](intune_mam_managedAppPolicy.md).|
-|deployedAppCount|Int32|Count of apps to which the current policy is deployed. Inherited from [managedAppPolicy](intune_mam_managedAppPolicy.md).|
-|id|String|Key of the entity. Inherited from [managedAppPolicy](intune_mam_managedAppPolicy.md).|
-|version|String|Version of the entity. Inherited from [managedAppPolicy](intune_mam_managedAppPolicy.md).|
-|customSettings|[keyValuePair](../resources/intune_mam_keyValuePair.md) collection|A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service Inherited from [managedAppConfiguration](intune_mam_managedAppConfiguration.md).|
+|displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune_mam_managedAppPolicy.md)|
+|description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedAppPolicy.md)|
+|lastModifiedTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedAppPolicy.md)|
+|deployedAppCount|Int32|Count of apps to which the current policy is deployed. Inherited from [managedAppPolicy](../resources/intune_mam_managedAppPolicy.md)|
+|id|String|Key of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedAppPolicy.md)|
+|version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedAppPolicy.md)|
+|customSettings|[keyValuePair](../resources/intune_mam_keyValuePair.md) collection|A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service Inherited from [managedAppConfiguration](../resources/intune_mam_managedAppConfiguration.md)|
 |numberOfTargetedSecurityGroups|Int32|Number of groups to which the configuration is deployed.|
 
 

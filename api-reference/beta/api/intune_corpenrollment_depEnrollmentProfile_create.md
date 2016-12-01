@@ -25,11 +25,11 @@ The following table shows the properties that are required when you create a dep
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|The GUID for the object Inherited from [enrollmentProfile](intune_corpenrollment_enrollmentProfile.md).|
-|displayName|String|Name of the profile Inherited from [enrollmentProfile](intune_corpenrollment_enrollmentProfile.md).|
-|description|String|Description of the profile Inherited from [enrollmentProfile](intune_corpenrollment_enrollmentProfile.md).|
-|requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication Inherited from [enrollmentProfile](intune_corpenrollment_enrollmentProfile.md).|
-|configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment Inherited from [enrollmentProfile](intune_corpenrollment_enrollmentProfile.md).|
+|id|String|The GUID for the object Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentProfile.md)|
+|displayName|String|Name of the profile Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentProfile.md)|
+|description|String|Description of the profile Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentProfile.md)|
+|requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentProfile.md)|
+|configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentProfile.md)|
 |supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.|
 |supportDepartment|String|Support department information|
 |passCodeDisabled|Boolean|Indicates if Passcode setup pane is disabled|

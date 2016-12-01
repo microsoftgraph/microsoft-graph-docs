@@ -23,7 +23,7 @@ Inherits from [deviceConfigurationAssignment](../resources/intune_deviceconfig_d
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|deviceConfiguration|[deviceConfiguration](../resources/intune_deviceconfig_deviceConfiguration.md)|The navigation link to the Device Configuration being targeted. Inherited from [deviceConfigurationAssignment](intune_deviceconfig_deviceConfigurationAssignment.md)|
+|deviceConfiguration|[deviceConfiguration](../resources/intune_deviceconfig_deviceConfiguration.md)|The navigation link to the Device Configuration being targeted. Inherited from [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceConfigurationAssignment.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

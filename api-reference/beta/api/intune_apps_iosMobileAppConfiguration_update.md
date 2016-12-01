@@ -25,15 +25,15 @@ The following table shows the properties that are required when you create a [io
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity. Inherited from [managedDeviceMobileAppConfiguration](intune_apps_managedDeviceMobileAppConfiguration.md).|
-|settingXml|String|mdm app configuration. Inherited from [managedDeviceMobileAppConfiguration](intune_apps_managedDeviceMobileAppConfiguration.md).|
-|settings|[appConfigurationSettingItem](../resources/intune_apps_appConfigurationSettingItem.md) collection|app configuration setting items. Inherited from [managedDeviceMobileAppConfiguration](intune_apps_managedDeviceMobileAppConfiguration.md).|
-|targetedMobileApps|String collection|the associated app. Inherited from [managedDeviceMobileAppConfiguration](intune_apps_managedDeviceMobileAppConfiguration.md).|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [managedDeviceMobileAppConfiguration](intune_apps_managedDeviceMobileAppConfiguration.md).|
-|description|String|Admin provided description of the Device Configuration. Inherited from [managedDeviceMobileAppConfiguration](intune_apps_managedDeviceMobileAppConfiguration.md).|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [managedDeviceMobileAppConfiguration](intune_apps_managedDeviceMobileAppConfiguration.md).|
-|displayName|String|Admin provided name of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](intune_apps_managedDeviceMobileAppConfiguration.md).|
-|version|Int32|Version of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](intune_apps_managedDeviceMobileAppConfiguration.md).|
+|id|String|Key of the entity. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_managedDeviceMobileAppConfiguration.md)|
+|settingXml|String|mdm app configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_managedDeviceMobileAppConfiguration.md)|
+|settings|[appConfigurationSettingItem](../resources/intune_apps_appConfigurationSettingItem.md) collection|app configuration setting items. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_managedDeviceMobileAppConfiguration.md)|
+|targetedMobileApps|String collection|the associated app. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_managedDeviceMobileAppConfiguration.md)|
+|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_managedDeviceMobileAppConfiguration.md)|
+|description|String|Admin provided description of the Device Configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_managedDeviceMobileAppConfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_managedDeviceMobileAppConfiguration.md)|
+|displayName|String|Admin provided name of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_managedDeviceMobileAppConfiguration.md)|
+|version|Int32|Version of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_managedDeviceMobileAppConfiguration.md)|
 
 
 

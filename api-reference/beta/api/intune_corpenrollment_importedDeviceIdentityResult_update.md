@@ -25,15 +25,15 @@ The following table shows the properties that are required when you create a [im
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Id of the imported device identity Inherited from [importedDeviceIdentity](intune_corpenrollment_importedDeviceIdentity.md).|
-|importedDeviceIdentifier|String|Imported Device Identifier Inherited from [importedDeviceIdentity](intune_corpenrollment_importedDeviceIdentity.md).|
-|importedDeviceIdentityType|String|Type of Imported Device Identity Inherited from [importedDeviceIdentity](intune_corpenrollment_importedDeviceIdentity.md). Possible values are: `unknown`, `imei`, `serialNumber`.|
-|lastModifiedDateTime|DateTimeOffset|Last Modified DateTime of the description Inherited from [importedDeviceIdentity](intune_corpenrollment_importedDeviceIdentity.md).|
-|createdDateTime|DateTimeOffset|Created Date Time of the device Inherited from [importedDeviceIdentity](intune_corpenrollment_importedDeviceIdentity.md).|
-|lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device Inherited from [importedDeviceIdentity](intune_corpenrollment_importedDeviceIdentity.md).|
-|description|String|The description of the device Inherited from [importedDeviceIdentity](intune_corpenrollment_importedDeviceIdentity.md).|
-|enrollmentState|String|The state of the device in Intune Inherited from [importedDeviceIdentity](intune_corpenrollment_importedDeviceIdentity.md). Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
-|platform|String|The platform of the Device. Inherited from [importedDeviceIdentity](intune_corpenrollment_importedDeviceIdentity.md). Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|id|String|Id of the imported device identity Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importedDeviceIdentity.md)|
+|importedDeviceIdentifier|String|Imported Device Identifier Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importedDeviceIdentity.md)|
+|importedDeviceIdentityType|String|Type of Imported Device Identity Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importedDeviceIdentity.md) Possible values are: `unknown`, `imei`, `serialNumber`.|
+|lastModifiedDateTime|DateTimeOffset|Last Modified DateTime of the description Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importedDeviceIdentity.md)|
+|createdDateTime|DateTimeOffset|Created Date Time of the device Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importedDeviceIdentity.md)|
+|lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importedDeviceIdentity.md)|
+|description|String|The description of the device Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importedDeviceIdentity.md)|
+|enrollmentState|String|The state of the device in Intune Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importedDeviceIdentity.md) Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
+|platform|String|The platform of the Device. Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importedDeviceIdentity.md) Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |status|Boolean|Status of imported device identity|
 
 

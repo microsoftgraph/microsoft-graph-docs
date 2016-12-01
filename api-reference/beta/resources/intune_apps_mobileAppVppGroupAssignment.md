@@ -25,7 +25,7 @@ Inherits from [mobileAppGroupAssignment](../resources/intune_apps_mobileAppGroup
 ### Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|app|[mobileApp](../resources/intune_apps_mobileApp.md)|The navigation link to the mobile app being targeted. Inherited from [mobileAppGroupAssignment](intune_apps_mobileAppGroupAssignment.md)|
+|app|[mobileApp](../resources/intune_apps_mobileApp.md)|The navigation link to the mobile app being targeted. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileAppGroupAssignment.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.

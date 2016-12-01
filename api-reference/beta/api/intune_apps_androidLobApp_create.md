@@ -28,25 +28,25 @@ The following table shows the properties that are required when you create a and
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|description|String|The description of the app. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|publisher|String|The publisher of the app. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|largeIcon|[mimeContent](../resources/intune_apps_mimeContent.md)|The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|createdDateTime|DateTimeOffset|The date and time the app was created. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|isFeatured|Boolean|The value indicating whether the app is marked as featured by the admin. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|privacyInformationUrl|String|The privacy statement Url. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|informationUrl|String|The more information Url. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|owner|String|The owner of the app. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|developer|String|The developer of the app. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|notes|String|Notes for the app. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|uploadState|Int32|The upload state. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileAppInstallSummary.md)|Mobile App Install Summary. Inherited from [mobileApp](intune_apps_mobileApp.md).|
-|committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](intune_apps_mobileLobApp.md).|
-|fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](intune_apps_mobileLobApp.md).|
-|size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](intune_apps_mobileLobApp.md).|
-|identityVersion|String|The identity version. Inherited from [mobileLobApp](intune_apps_mobileLobApp.md).|
+|id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|description|String|The description of the app. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|publisher|String|The publisher of the app. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|largeIcon|[mimeContent](../resources/intune_apps_mimeContent.md)|The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|createdDateTime|DateTimeOffset|The date and time the app was created. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|isFeatured|Boolean|The value indicating whether the app is marked as featured by the admin. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|privacyInformationUrl|String|The privacy statement Url. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|informationUrl|String|The more information Url. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileAppInstallSummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileApp.md)|
+|committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune_apps_mobileLobApp.md)|
+|fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune_apps_mobileLobApp.md)|
+|size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobileLobApp.md)|
+|identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobileLobApp.md)|
 |identityName|String|The Identity Name.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidMinimumOperatingSystem.md)|The value for the minimum applicable operating system.|
 |manifest|Binary|The manifest information.|
