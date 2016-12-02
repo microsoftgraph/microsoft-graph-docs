@@ -7,7 +7,7 @@ types of groups provisioned in Azure AD. Note that Office 365 Groups cannot cont
 in an Office 365 Group is always direct. 
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **scopes** is required to execute this API: *User.Read.All* AND *Group.Read.All* or *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -16,7 +16,7 @@ POST /groups/<id>/checkMemberGroups
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer &lt;token&gt;. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

@@ -2,7 +2,7 @@
 Return all of the groups and directory roles that the group is a member of. The check is transitive. Note: Groups cannot be members of directory roles, so no directory roles will be returned.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **scopes** is required to execute this API: *User.Read.All* AND *Group.Read.All* or *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -11,7 +11,7 @@ POST /groups/<id>/getMemberObjects
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer &lt;token&gt;. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
