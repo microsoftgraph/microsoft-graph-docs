@@ -1,0 +1,39 @@
+﻿# mdmAppConfigGroupAssignment resource type
+
+Contains the properties used to assign an MDM app configuration to a group.
+### Methods
+|Method|Return Type|Description|
+|---|---|---|
+|[List mdmAppConfigGroupAssignments](../api/intune_apps_mdmAppConfigGroupAssignment_list.md)|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmAppConfigGroupAssignment.md) collection|List properties and relationships of the [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmAppConfigGroupAssignment.md) objects.|
+|[Get mdmAppConfigGroupAssignment](../api/intune_apps_mdmAppConfigGroupAssignment_get.md)|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmAppConfigGroupAssignment.md)|Read properties and relationships of the [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmAppConfigGroupAssignment.md) object.|
+|[Create mdmAppConfigGroupAssignment](../api/intune_apps_mdmAppConfigGroupAssignment_create.md)|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmAppConfigGroupAssignment.md)|Create a new [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmAppConfigGroupAssignment.md) object.|
+|[Delete mdmAppConfigGroupAssignment](../api/intune_apps_mdmAppConfigGroupAssignment_delete.md)|None|Deletes a [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmAppConfigGroupAssignment.md).|
+|[Update mdmAppConfigGroupAssignment](../api/intune_apps_mdmAppConfigGroupAssignment_update.md)|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmAppConfigGroupAssignment.md)|Update the properties of a [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmAppConfigGroupAssignment.md) object.|
+
+### Properties
+|Property|Type|Description|
+|---|---|---|
+|appConfiguration|String|The navigation link to the mdm app Configuration being targeted.|
+|targetGroupId|String|The Id of the AAD group we are targeting the mdm app configuration to.|
+|id|String|Key of the entity.|
+
+### Relationships
+None
+### JSON Representation
+Here is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.intune_apps_graph.mdmAppConfigGroupAssignment"
+}
+-->
+```json
+{
+  "@odata.type": "#microsoft.intune_apps_graph.mdmAppConfigGroupAssignment",
+  "appConfiguration": "String",
+  "targetGroupId": "String",
+  "id": "String (identifier)"
+}
+```
+
+
