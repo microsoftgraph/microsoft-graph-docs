@@ -57,7 +57,7 @@ In the request body, supply the values for relevant fields that should be update
 |phones |[phone](../resources/phone.md) collection |Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone. |
 |postalAddresses |[physicalAddress](../resources/physicalAddress.md) collection |Addresses associated with the contact, for example, home address and business address. |
 |profession|String|The contact's profession.|
-|spouseName|String|The name of the contact's spouse.|
+|spouseName|String|The name of the contact's spouse/partner.|
 |surname|String|The contact's surname.|
 |title|String|The contact's title.|
 |websites |[website](../resources/website.md) collection|Web sites associated with the contact. |

@@ -15,7 +15,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -48,7 +48,7 @@ Content-length: 158
 {
   "value": [
     {
-      "id": 99,
+      "id": "99",
       "name": "name-value",
       "showHeaders": true,
       "showTotals": true,

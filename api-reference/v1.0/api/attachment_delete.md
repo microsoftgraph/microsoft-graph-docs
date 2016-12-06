@@ -68,7 +68,7 @@ If successful, this method returns `204, No Content` response code. It does not 
 
 ## Example
 ##### Request
-Here is an example of the request.
+Here is an example of the request to delete an attachment on an event.
 <!-- {
   "blockType": "request",
   "name": "delete_attachment"

@@ -77,43 +77,6 @@ Content-type: application/json
 }
 ```
 
-## Example HEAD requests for special folders
-
-If you request a special folder that doesn't exist by using a GET request,
-the special folder will be automatically created for you. You can test to see
-if the special folder exists by using a HEAD request. If the folder doesn't
-exist, the HEAD request will return a `404` response.
-
-##### Request (folder does not exist)
-
-<!-- { "blockType": "request", "name": "head-does-not-create-special-folder" } -->
-```
-HEAD /drive/special/{special-folder-name}
-```
-
-##### Response
-<!-- {"blockType": "response"} -->
-```
-HTTP/1.1 404 Not Found
-```
-
-##### Request (folder does exist)
-
-On the other hand, sending the same request when the folder already exists will
-return a `200 OK` response.
-
-<!-- { "blockType": "request", "name": "head-existing-special-folder", "scopes": "files.read" } -->
-```
-HEAD /drive/special/{special-folder-name}
-```
-
-##### Response
-
-<!-- {"blockType": "response", "isEmpty": true } -->
-```
-HTTP/1.1 200 OK
-```
-
 ## Remarks
 
 To request the children of a special folder, you can request the `children`

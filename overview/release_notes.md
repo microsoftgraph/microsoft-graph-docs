@@ -7,7 +7,9 @@ This article describes known issues with the Microsoft Graph. For information ab
 Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response. 
 
 #### Photo restrictions
-Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) will no longer be accessible through the Microsoft Graph user photo property. Failure to read or update a photo, in this case, would result in the following error:
+Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property 
+(using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) will no longer be accessible through the Microsoft Graph user photo property. 
+Failure to read or update a photo, in this case, would result in the following error:
 
 ```javascript
 	{
@@ -18,7 +20,7 @@ Reading and updating a user's profile photo is only possible if the user has a m
 	}
 ```
 
- > **NOTE**:  Shortly after GA, storage and retrieval of user profile photos will be enabled, even if the user does not have a mailbox, and this error should disappear.
+ > **Note**:  Shortly after GA, storage and retrieval of user profile photos will be enabled, even if the user does not have a mailbox, and this error should disappear.
 
 #### Default contacts folder
 
@@ -36,6 +38,7 @@ In the above query:
 
 #### Adding and accessing ICS-based calendars in user's mailbox
 Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
+
 * You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API. 
 * [Listing the user's calendars](http://graph.microsoft.io/docs/api-reference/v1.0/api/user_list_calendars) allows you to get the **name**, **color** and **id** properties of 
 each [calendar](http://graph.microsoft.io/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store
@@ -44,10 +47,29 @@ or access the ICS URL in the calendar resource.
 
 ## Groups
 #### Policy
-Using Microsoft Graph to create and name a unified group bypasses any unified group policies that are configured through Outlook Web App. 
+Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App. 
 
 #### Group permission scopes
-The Microsoft Graph exposes two permission scopes (*Group.Read.All* and *Group.ReadWrite.All*) for access to groups APIs.  These permission scopes must be consented to by an administrator (which is a change from preview).  In the future we plan to add new scopes for groups that can be consented by users.
+Microsoft Graph exposes two permission scopes (*Group.Read.All* and *Group.ReadWrite.All*) for access to groups APIs.  
+These permission scopes must be consented to by an administrator (which is a change from preview).  In the future we plan to add new scopes for groups that can be consented by users.
+
+Also, only the API for core group administration and management supports access using delegated or app-only permissions. 
+All other features of the group API support only delegated permissions. 
+
+Examples of group features that support delegated and app-only permissions: 
+
+* Creating and deleting groups
+* Getting and updating group properties pertaining to group administration or management
+* Group [directory settings](../resources/directorysetting.md), type and synchronization
+* Group owners and membership
+
+
+Examples of group features that support only delegated permissions:
+
+* Group conversations, events, photo
+* External senders, accepted or rejected senders, group subscription
+* User favorites and unseen count
+
 
 #### Adding and getting attachments of group posts
 [Adding](http://graph.microsoft.io/docs/api-reference/v1.0/api/post_post_attachments) attachments to group posts, [listing](http://graph.microsoft.io/docs/api-reference/v1.0/api/post_list_attachments) and 
@@ -60,7 +82,6 @@ and is expected to be widely available by the end of January 2016.
 
 ### Drives, files and content streaming
 * First time access to a user's personal drive through the Microsoft Graph before the user accesses their personal site through a browser leads to a 401 response.
-* Upload and download of files (files in Office groups, drives, or mail file attachments) is limited to 4 MB.
 
 ## Functionality available only in Office 365 REST APIs
 
@@ -69,7 +90,7 @@ Some functionality is not yet available in Microsoft Graph. If you don't see the
 #### Synchronization
 Outlook, OneDrive and Azure AD synchronization capabilities (in Azure AD this is also known as differential query) are not available in `/v1.0` or `/beta`.  If your application requires synchronization capabilities, please continue to use the existing Office 365 and Azure AD REST APIs, or explore the new webhooks preview feature offered through Microsoft Graph for events, messages and contacts.
 
-> **NOTE**: Our goal is to close the gap between the existing APIs and Microsoft Graph as quickly as possible, including synchronization.
+> **Note**: Our goal is to close the gap between the existing APIs and Microsoft Graph as quickly as possible, including synchronization.
 
 #### Batching
 Batching is not supported by Microsoft Graph. You can, however, use the Outlook beta endpoint and 
@@ -114,6 +135,4 @@ Additionally there are the following `/beta` limitations:
 
   >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with [MicrosoftGraph] and [office365].
 
-  
-             .
 

@@ -1,26 +1,36 @@
 # attachment resource type
 
-A file, item (contact, event or message), or link to a file, which is attached to an [event](../resources/event.md),
-[message](../resources/message.md), or [post](../resources/post.md). The  
-corresponding [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md), and
-[referenceAttachment](../resources/referenceattachment.md) resources are all derived from the **attachment**
-resource.
+You can add related content to an [event](../resources/event.md),
+[message](../resources/message.md), or [post](../resources/post.md) in the form of an attachment.
+
+**attachment** is the base resource for the following derived types of attachments:
+
+* A file ([fileAttachment](../resources/fileattachment.md) resource)
+* An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)
+* A link to a file ([referenceAttachment](../resources/referenceAttachment.md) resource)
 
 ## Methods
 
+The following methods apply to any of the derived types of attachments (**fileAttachment**,
+**itemAttachment**, or **referenceAttachment**).
+
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get attachment](../api/attachment_get.md) | [attachment](attachment.md) |Read properties and relationships of attachment object.|
+|[Get attachment](../api/attachment_get.md) | [attachment](attachment.md) |Read the properties and relationships of an attachment, attached to an event, message, or post.|
 |[Add attachment to an event](../api/event_post_attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an event.|
 |[Add attachment to a message](../api/message_post_attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message.|
 |[Add attachment to a post](../api/post_post_attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a post.|
 |[List attachments of an event](../api/event_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an event. |
 |[List attachments of a message](../api/message_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a message. |
 |[List attachments of a post](../api/post_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a post. |
-|[Delete](../api/attachment_delete.md) | None |Delete attachment object. |
+|[Delete](../api/attachment_delete.md) | None |Delete an attachment on an event, message, or post. |
 
 
 ## Properties
+
+The following are the base properties of any attachment resource. Refer to the specific type of attachment ([fileAttachment](../resources/fileattachment.md),
+[itemAttachment](../resources/itemattachment.md), or [referenceAttachment](../resources/referenceAttachment.md)) for additional properties.
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |contentType|String|The MIME type.|

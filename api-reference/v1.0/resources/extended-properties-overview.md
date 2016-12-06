@@ -70,10 +70,12 @@ in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Prop
 ### REST API operations
  
 Single-value extended property operations:
+
 - [Create an extended property in a new or existing resource instance](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md)
 - [Get one or a collection of resource instances with an extended property using `$expand` or `$filter`](../api/singlevaluelegacyextendedproperty_get.md)
 
 Multi-value extended property operations:
+
 - [Create an extended property in a new or existing resource instance](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
 - [Get a resource instance with an extended property using `$expand`](../api/multivaluelegacyextendedproperty_get.md)
 

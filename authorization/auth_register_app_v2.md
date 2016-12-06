@@ -1,4 +1,4 @@
-﻿## Register your Microsoft Graph application with the Azure AD v2.0 endpoint
+﻿# Register your Microsoft Graph application with the Azure AD v2.0 endpoint
 
 To use the Azure AD v2.0 endpoint, you need to register your app on the [Microsoft App Registration Portal](https://apps.dev.microsoft.com) (https://apps.dev.microsoft.com). Registering your app establishes your app's identity with the authentication provider, and enables your app to prove its identity when submitting authentication requests from the user. Registration generates the app ID and app secret that you'll use to configure the app for authentication.
 

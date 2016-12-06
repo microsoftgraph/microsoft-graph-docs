@@ -2,7 +2,7 @@
 
 This article describes the minimum tasks required to connect your single-tenant service or daemon app to Office 365 and call the Microsoft Graph API.
 
-> Note: This topic covers using Azure Active Directory as the authentication provider for your app. For implementing a service or daemon app using the Azure AD v2.0 endpoint, see <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-client-creds/" target="_newtab">v2.0 Protocols - OAuth 2.0 Client Credentials Flow</a>.
+> **Note:** This topic covers using Azure Active Directory as the authentication provider for your app. For implementing a service or daemon app using the Azure AD v2.0 endpoint, see <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-client-creds/" target="_newtab">v2.0 Protocols - OAuth 2.0 Client Credentials Flow</a>.
 
 ## Register the application in Azure Active Directory
 

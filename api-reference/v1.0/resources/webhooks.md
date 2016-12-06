@@ -64,7 +64,7 @@ Microsoft Graph validates the notification URL in a subscription request before 
 2. The client must provide a response with the following characteristics within 10 seconds:
 
   * An 200 (OK) status code.
-  * The content type must be plain/text. 
+  * The content type must be text/plain. 
   * The body must include the validation token provided by Microsoft Graph.
 
 The client should discard the validation token after providing it in the response.

@@ -14,6 +14,7 @@ One of the following **scopes** is required to execute this API:
 POST /me/drive/items/{item-id}/copy
 POST /me/drive/root:/{path}:/copy
 POST /groups/{group-id}/drive/items/{item-id}/copy
+POST /drives/{drive-id}/items/{item-id}/copy
 ```
 
 ## Request body
@@ -57,7 +58,7 @@ HTTP/1.1 202 Accepted
 In many cases the copy action is performed asynchronously.
 The response from the API will only indicate that the copy operation was accepted or rejected, say due to the destination filename already being in use.
 
-**Note:** The API does not provide a method to know if the copy was s
+**Note:** The API does not provide a method to know if the copy was successful.
 
 <!-- {
   "type": "#page.annotation",

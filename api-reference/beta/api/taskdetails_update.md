@@ -52,8 +52,7 @@ If-Match: W/"JzEtMDAwMDAwMDAwMDAwMDAwOC8yMDE1LTEwLTIyVDE4OjExOjU2LjExMzU1NDYrMDA
   "references": {
   },
   "checklist": {
-  },
-  "id": "id-value"
+  }
 }
 ```
 ##### Response

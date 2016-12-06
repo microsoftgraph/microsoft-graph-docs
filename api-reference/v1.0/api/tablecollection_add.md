@@ -59,7 +59,7 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "showHeaders": true,
   "showTotals": true,

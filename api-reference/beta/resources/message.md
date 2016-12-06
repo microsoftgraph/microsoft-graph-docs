@@ -136,8 +136,8 @@ When a message is being composed, in most cases, the From and Sender properties 
 |[send](../api/message_send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
 |[unsubscribe](../api/message_unsubscribe.md)|None|Send a message using the data and address specified in the first mailto command in the List-Unsubscribe header.|
 |**Attachments**| | |
-|[Create attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Create a new attachment by posting to the attachments collection.|
-|[List attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Get an attachment object collection.|
+|[List attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Get all attachments on a message.|
+|[Add attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Add a new attachment to a message by posting to the attachments collection.|
 |**Data extensions**| | |
 |[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
 |[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|

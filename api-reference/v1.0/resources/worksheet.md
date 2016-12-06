@@ -19,6 +19,7 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |[Delete](../api/worksheet_delete.md)|None|Deletes the worksheet from the workbook.|
 |[List](../api/worksheet_list.md) | [Worksheet](worksheet.md) collection |Get worksheet object collection. |
 |[Add](../api/worksheetcollection_add.md)|[Worksheet](worksheet.md)|Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. |
+|[List pivotTables](../api/workbookworksheet_list_pivottables.md) |[workbookPivotTable](workbookpivottable.md) collection| Get a workbookPivotTable object collection.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -32,6 +33,7 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |charts|[Chart](chart.md) collection|Returns collection of charts that are part of the worksheet. Read-only.|
+|pivotTables|[workbookPivotTable](workbookpivottable.md) collection| Collection of PivotTables that are part of the worksheet. |
 |protection|[WorksheetProtection](worksheetprotection.md)|Returns sheet protection object for a worksheet. Read-only.|
 |tables|[Table](table.md) collection|Collection of tables that are part of the worksheet. Read-only.|
 

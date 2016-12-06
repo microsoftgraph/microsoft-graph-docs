@@ -1,18 +1,50 @@
 # Get group
 
-Get some of the properties and relationships of a group object.
+Get the properties and relationships of a group object.
 
-The following properties are not returned by default:
-* AccessType
-* EmailAddress
-* AllowExternalSenders
-* AutoSubscribeNewMembers
-* IsSubscribedByMail
-* IsFavorite
-* UnseenCount
+##### Default properties
 
-You can use the query parameter **$select** to get the value of one or more of these 
-properties for a specific group, except **IsFavorite**. 
+The following represent the default set of properties that are returned when getting or listing groups. 
+These are a subset of all available properties. 
+
+* classification
+* createdDateTime
+* description
+* displayName
+* groupTypes
+* id
+* mail
+* mailEnabled
+* mailNickname
+* membershipRule
+* membershipRuleProcessingState
+* onPremisesLastSyncDateTime
+* onPremisesSecurityIdentifier
+* onPremisesSyncEnabled
+* preferredLanguage
+* proxyAddresses
+* renewedDateTime
+* securityEnabled
+* theme
+* visibility
+
+The following group properties are not returned by default:
+
+* accessType
+* allowExternalSenders
+* autoSubscribeNewMembers
+* isSubscribedByMail
+* isFavorite
+* unseenCount
+
+To get these properties (except **isFavorite**), use the **$select** query parameter. The following are examples: 
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+
+GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
+```
 
 
 ## Prerequisites
@@ -46,7 +78,7 @@ GET https://graph.microsoft.com/beta/groups/<id>
 ##### Response
 Here is an example of the response. 
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. The default properties will be returned from an actual call, as described above.
 <!-- {
   "blockType": "response",
   "truncated": true,

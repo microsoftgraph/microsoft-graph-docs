@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/Cell
+GET /workbook/worksheets(<id|name>)/Cell(row=<row>,column=<column>)
 
 ```
 ## Request headers
@@ -14,14 +14,6 @@ POST /workbook/worksheets(<id|name>)/Cell
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
-
-## Request body
-In the request body, provide a JSON object with the following parameters.
-
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|row|number|The row number of the cell to be retrieved. Zero-indexed.|
-|column|number|the column number of the cell to be retrieved. Zero-indexed.|
 
 ## Response
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
@@ -35,16 +27,7 @@ Here is an example of the request.
   "name": "worksheet_cell"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/worksheets(<id|name>)/Cell
-Content-type: application/json
-Content-length: 37
-
-{
-  "row": {
-  },
-  "column": {
-  }
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/worksheets(<id|name>)/Cell(row=<row>,column=<column>)
 ```
 
 ##### Response
@@ -62,9 +45,9 @@ Content-length: 169
 {
   "address": "address-value",
   "addressLocal": "addressLocal-value",
-  "cellCount": 99,
-  "columnCount": 99,
-  "columnIndex": 99,
+  "cellCount": 1,
+  "columnCount": 1,
+  "columnIndex": 3,
   "valueTypes": "valueTypes-value"
 }
 ```

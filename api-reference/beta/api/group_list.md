@@ -1,6 +1,7 @@
 # List groups
 
 List all the groups available in an organization, including but not limited to Office 365 Groups.
+The [default properties](../api/group_get.md#default-properties) of each group are returned.
 
 To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:
 ```
@@ -44,7 +45,7 @@ GET https://graph.microsoft.com/beta/groups
 ##### Response
 Here is an example of the response.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

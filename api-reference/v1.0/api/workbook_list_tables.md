@@ -47,7 +47,7 @@ Content-length: 158
 {
   "value": [
     {
-      "id": 99,
+      "id": "99",
       "name": "name-value",
       "showHeaders": true,
       "showTotals": true,

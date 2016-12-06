@@ -1,12 +1,23 @@
 # Get attachment
 
-Retrieve the properties and relationships of attachment object.
+Read the properties and relationships of an attachment, attached to an [event](../resources/event.md), 
+[message](../resources/message.md), or [post](../resources/post.md). 
+
+An attachment can be one of the following types:
+
+* A file ([fileAttachment](../resources/fileattachment.md) resource)
+* An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)
+* A link to a file ([referenceAttachment](../resources/referenceAttachment.md) resource)
+
+All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
+resource. 
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-* If accessing attachments in Messages: *Mail.Read*
-* If accessing attachments in Events: *Calendars.Read*
-* If accessing attachments in Group Events or Posts: *Group.Read.All*
+* If accessing attachments in messages: *Mail.Read*
+* If accessing attachments in events: *Calendars.Read*
+* If accessing attachments in group events or posts: *Group.Read.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -65,10 +76,11 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and [attachment](../resources/attachment.md) object in the response body.
+
 ## Example (file attachment)
 
 ##### Request
-Here is an example of the request.
+Here is an example of the request to get a file attachment on an event.
 <!-- {
   "blockType": "request",
   "name": "get_file_attachment"
@@ -90,6 +102,7 @@ Content-type: application/json
 Content-length: 199
 
 {
+  "@odata.type": "#microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
   "contentBytes": "contentBytes-value",
@@ -105,7 +118,7 @@ Content-length: 199
 ## Example (item attachment)
 
 ##### Request
-Here is an example of the request.
+Here is an example of the request to get an item attachment on an event.
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment"
@@ -125,6 +138,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.itemAttachment",
   "lastModifiedDateTime": "datetime-value",
   "name": "name-value",
   "contentType": "contentType-value",
@@ -133,6 +147,41 @@ Content-type: application/json
   "id": "id-value"
 }
 ```
+
+
+## Example (reference attachment)
+##### Request
+Here is an example of the request to get a reference attachment on an event.
+<!-- {
+  "blockType": "request",
+  "name": "get_reference_attachment"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/events/<id>/attachments/<id>
+```
+##### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.referenceAttachment"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 215
+
+{
+  "@odata.type": "#microsoft.graph.referenceAttachment",
+  "contentType": "contentType-value",
+  "lastModifiedDateTime": "datetime-value",
+  "id": "id-value",
+  "isInline": false,
+  "name": "name-value",
+  "size": 99,
+}
+```
+
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

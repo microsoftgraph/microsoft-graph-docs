@@ -6,7 +6,7 @@ Choose the article that covers the authentication provider and development platf
 
 You can follow the steps in the article that covers the development platform that you choose, or, to quickly get a working solution up and running, try out the [quick start](http://dev.office.com/getting-started/office365apis) experience.
 
-To explore the finished Connect samples, visit the [Microsoft Graph repo](https://github.com/microsoftgraph) on GitHub. The following table lists the samples by authentication provider and platform, and notes whether they connect to Microsoft Graph using REST or a Microsoft Graph client library.
+To explore the finished Connect samples, see [Microsoft Graph](https://github.com/microsoftgraph) in GitHub. The following table lists the samples by authentication provider and platform, and notes whether they connect to Microsoft Graph using REST or a Microsoft Graph client library.
 
 <table>
   <tr>
@@ -66,7 +66,8 @@ To explore the finished Connect samples, visit the [Microsoft Graph repo](https:
     <td>
 		<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST sample</a>
 	</td>     
-	<td>
+	<td>	
+		<a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK sample</a> or 
 		<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST sample</a>
 	</td> 
   </tr>

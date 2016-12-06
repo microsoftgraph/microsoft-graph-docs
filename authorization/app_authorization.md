@@ -58,7 +58,7 @@ P3P: CP="DSP CUR OTPi IND OTRi ONL FIN"
 In this example, the app's REPLY URL is `http://localhost:1339/auth/azureoauth/callback`. In processing this response, 
 you must extract the `code` parameter value and use it to acquire the initial OAuth 2.0 access and refresh tokens (see next section).
 
-> The `302 Found` response above is different from the `302 Found` response you would get if you started the login process against 
+> **Note:** The `302 Found` response above is different from the `302 Found` response you would get if you started the login process against 
 the `https://login.windows.net/<tenantId>/oauth2/authorize?...` URL. In the latter case, the `302 Found` response forwards your request to `login.microsoftonline.com`.
  
 <!---<a name="msg_get_app_authenticated"> </a> -->

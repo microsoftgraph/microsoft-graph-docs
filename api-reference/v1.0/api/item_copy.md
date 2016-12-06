@@ -57,7 +57,7 @@ HTTP/1.1 202 Accepted
 In many cases the copy action is performed asynchronously.
 The response from the API will only indicate that the copy operation was accepted or rejected, say due to the destination filename already being in use.
 
-**Note:** The API does not provide a method to know if the copy was s
+**Note:** The API does not provide a method to know if the copy was successful.
 
 <!-- {
   "type": "#page.annotation",

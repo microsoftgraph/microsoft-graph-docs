@@ -3,7 +3,7 @@
   {
     "httpRequest": {
       "maxUrlLength": 2083,
-      "httpMethods": ["GET", "PUT", "DELETE", "POST", "HEAD", "PATCH", "OPTIONS"],
+      "httpMethods": ["GET", "PUT", "DELETE", "POST", "PATCH", "OPTIONS"],
       "standardHeaders": [
         "Authorization",
         "Date",

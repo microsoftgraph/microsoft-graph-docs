@@ -1,6 +1,6 @@
 # task resource type
 
-The Task resource represents a task in Office 365. A task is contained in a [plan](plan.md) and can be assigned to a [bucket](bucket.md) in a plan. Each task object has a [details](taskdetails.md) object which can contain more information about the task. See [overview](tasks_overview.md) for more information regarding relationships between group, plan and task.
+The **task** resource represents a Planner task in Office 365. A Planner task is contained in a [plan](plan.md) and can be assigned to a [bucket](bucket.md) in a plan. Each task object has a [details](taskdetails.md) object which can contain more information about the task. See [overview](tasks_overview.md) for more information regarding relationships between group, plan and task.
 
 ## JSON representation
 

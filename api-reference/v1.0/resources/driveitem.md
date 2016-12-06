@@ -6,9 +6,9 @@ All top-level file system objects in OneDrive are returned as item resources.
 **DriveItems** can be accessed by their **id** using the `/items/{item-id}` syntax, or by their file system path using the `/drive/root:/path/to/file` syntax.
 
 Items have facets modeled as properties that provide data about the item's identities and capabilities. 
-Folders have a [**folder** facet](folder.md) and files have a [**file facet**](file.md). 
+Folders have a [**folder facet**](folder.md) and files have a [**file facet**](file.md). 
 Images have an [**image facet**](image.md) in addition to their file facet.
-Images taken with a camera (photos) ahave a [**photo facet**](photo.md) that identifies the item as a photo and provdes the properties of when the photo was taken and with what device.
+Images taken with a camera (photos) have a [**photo facet**](photo.md) that identifies the item as a photo and provides the properties of when the photo was taken and with what device.
 
 Items with the **folder** facet act as containers of items and therefore have a `children` reference pointing to a collection of items under the folder.
 

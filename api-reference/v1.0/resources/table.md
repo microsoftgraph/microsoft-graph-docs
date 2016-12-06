@@ -34,6 +34,11 @@ Represents an Excel table.
 |showHeaders|boolean|Indicates whether the header row is visible or not. This value can be set to show or remove the header row.|
 |showTotals|boolean|Indicates whether the total row is visible or not. This value can be set to show or remove the total row.|
 |style|string|Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.|
+|highlightFirstColumn|Boolean|Indicates whether the first column contains special formatting.	|
+|highlightLastColumn|Boolean|Indicates whether the last column contains special formatting.	|
+|showBandedColumns|Boolean|Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.	|
+|showBandedRows|Boolean|Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.	|
+|showFilterButton|Boolean|Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.	|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -57,11 +62,16 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": 1024,
-  "name": "string",
+  "highlightFirstColumn": true,
+  "highlightLastColumn": true,
+  "id": "String (identifier)",
+  "name": "String",
+  "showBandedColumns": true,
+  "showBandedRows": true,
+  "showFilterButton": true,
   "showHeaders": true,
   "showTotals": true,
-  "style": "string"
+  "style": "String"
 }
 
 ```

@@ -1,0 +1,62 @@
+﻿# Get roleAssignment
+Read properties and relationships of the [roleAssignment](../resources/intune_rbac_roleassignment.md) object.
+### Prerequisites
+One of the following **scopes** is required to execute this API:
+
+*DeviceManagementRBAC.ReadWrite.All; DeviceManagementRBAC.Read.All*
+### HTTP Request
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
+GET /deviceManagement/roleAssignments/<id>
+GET /deviceManagement/roleDefinitions/<id>/roleAssignments/<id>
+```
+
+### Optional query parameters
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+### Request headers
+|Header|Value|
+|---|---|
+|Authorization|Bearer &lt;token&gt; Required.|
+|Accept|application/json|
+
+### Request body
+Do not supply a request body for this method.
+
+### Response
+If successful, this method returns a `200 OK` response code and [roleAssignment](../resources/intune_rbac_roleassignment.md) object in the response body.
+
+### Example
+##### Request
+Here is an example of the request.
+```http
+GET https://graph.microsoft.com/beta/deviceManagement/roleAssignments/<id>
+```
+
+##### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 320
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.roleAssignment",
+    "id": "b3234d24-4d24-b323-244d-23b3244d23b3",
+    "displayName": "Display Name value",
+    "description": "Description value",
+    "members": [
+      "Members value"
+    ],
+    "scopeMembers": [
+      "Scope Members value"
+    ]
+  }
+}
+```
+
+
+

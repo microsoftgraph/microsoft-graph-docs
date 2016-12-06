@@ -11,8 +11,10 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/drive/items/{item-id}/invite
 POST /drive/items/{item-id}/invite
 POST /drives/{drive-id}/items/{item-id}/invite
+POST /groups/{group-id}/drive/items/{item-id}/invite
 ```
 
 ## Request body
