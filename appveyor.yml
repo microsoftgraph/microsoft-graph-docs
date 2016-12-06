@@ -17,11 +17,29 @@ test_script:
 
     {
 
-    $parms = "check-all", "--appveyor-url", $env:APPVEYOR_API_URL, "--path", $reference, "--relax-string-validation", "--ignore-warnings"
+    if ([string]::IsNullOrEmpty($env:APPVEYOR_PULL_REQUEST_NUMBER)) 
+    
+    {
+    
+      # Run the checks on all files
+    
+      $parms = "check-all", "--appveyor-url", $env:APPVEYOR_API_URL, "--path", $reference, "--relax-string-validation", "--ignore-warnings"
+    
+    }
+    
+    else 
+    
+    {
+    
+      # Run the checks only on files changed since the master branch
+    
+      $parms = "check-all", "--appveyor-url", $env:APPVEYOR_API_URL, "--path", $reference, "--relax-string-validation", "--ignore-warnings", "--changes-since-branch-only", $env:APPVEYOR_REPO_BRANCH
+    
+    }
 
     & $apidocs $parms
 
-    if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
+    if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
 
     }
 notifications:

@@ -31,7 +31,6 @@ GET /groups/{group-id}/drive/root/delta
 ## Optional query parameters
 This method supports `$select`, `$expand`, and `$top` [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to customize the response.
 
-
 ## Request body
 Do not supply a request body for this method.
 
