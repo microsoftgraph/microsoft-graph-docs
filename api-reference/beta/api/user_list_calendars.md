@@ -71,6 +71,7 @@ Content-type: application/json
             "isDefaultCalendar": true,
             "canShare":true,
             "canViewPrivateItems":true,
+            "hexColor": "",
             "isShared":false,
             "isSharedWithMe":false,
             "canEdit":true,
