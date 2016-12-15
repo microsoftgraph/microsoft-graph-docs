@@ -2,6 +2,11 @@
 
 A message in a mailbox folder.
 
+## Delta query support
+
+This resource supports [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
+by providing a [delta](../api/message_delta.md) function.
+
 ## JSON representation
 
 Here is a JSON representation of the resource
@@ -129,6 +134,7 @@ When a message is being composed, in most cases, the From and Sender properties 
 |[createForward](../api/message_createforward.md)|[Message](message.md)|Create a draft forward message to include a comment or update any message properties all in one **createForward** call. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
 |[createReply](../api/message_createreply.md)|[Message](message.md)|Create a draft of a reply message to include a comment or update any message properties all in one **createReply** call. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
 |[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)|Create a draft of a reply-all message to include a comment or update any message properties, all in one **createReplyAll** call. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
+|[delta](../api/message_delta.md)|[message](message.md) collection| Get a set of messages that have been added, deleted, or updated in a specified folder.|
 |[forward](../api/message_forward.md)|None|Forward a message, add a comment or modify any updateable properties all in one **forward** call. The message is then saved in the Sent Items folder.|
 |[move](../api/message_move.md)|[Message](message.md)|Move the message to a folder. This creates a new copy of the message in the destination folder.|
 |[reply](../api/message_reply.md)|None|Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. The message is then saved in the Sent Items folder.|
