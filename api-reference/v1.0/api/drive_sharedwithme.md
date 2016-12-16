@@ -69,7 +69,7 @@ Content-Type: application/json
 
 ## Remarks
 
-DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](../resources/remoteitem.md) facet which indicates they are items from a different drive. 
+DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](../resources/remoteitem.md) facet which indicates they are items from a different drive. The **File.Read.All** permission is required, otherwise **parentReference** is not present on the **remoteItem**.
 To access the shared DriveItem resource, you will need to make a request using the information provided in **remoteItem** in the following format:
 
 <!-- {"blockType": "ignored"} -->
