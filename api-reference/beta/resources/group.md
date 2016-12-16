@@ -3,6 +3,10 @@
 Represents an Azure Active Directory group, which can be an Office 365 group, dynamic group, or security group.
 Inherits from [directoryObject](directoryobject.md).
 
+## Delta query support
+
+This resource supports [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
+by providing a [delta](../api/group_delta.md) function.
 
 ## Methods
 
@@ -45,6 +49,7 @@ Inherits from [directoryObject](directoryobject.md).
 |[List settings](../api/directorysetting_list.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
 |[Update setting](../api/directorysetting_update.md) | [directorySetting](directorysetting.md)	|Update a setting object. |
 |[Delete setting](../api/directorysetting_delete.md) | None |Delete a setting object. |
+|[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
 
 
 ## Properties
