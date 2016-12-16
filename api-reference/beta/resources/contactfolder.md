@@ -2,6 +2,12 @@
 
 A folder that contains contacts.
 
+## Delta query support
+
+This resource supports [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
+by providing a [delta](../api/contactfolder_delta.md) function.
+
+
 ## Methods
 
 | Method       | Return Type  |Description|
@@ -9,10 +15,12 @@ A folder that contains contacts.
 |[Get contactFolder](../api/contactfolder_get.md) | [contactFolder](contactfolder.md) |Get a contact folder by using the contact folder ID.|
 |[Update](../api/contactfolder_update.md) | [contactFolder](contactfolder.md) |Update contactFolder object. |
 |[Delete](../api/contactfolder_delete.md) | None |Delete contactFolder object. |
-|[List childFolders](../api/contactfolder_list_childfolders.md) |[ContactFolder](contactfolder.md) collection| Get a collection of child folders under the specified contact folder.|
-|[Create child contactFolder](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| Create a new contactFolder as a child of a specified folder.|
-|[List contacts in folder](../api/contactfolder_list_contacts.md) |[Contact](contact.md) collection| Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.|
-|[Create contact in folder](../api/contactfolder_post_contacts.md) |[Contact](contact.md)| Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.|
+|[List childFolders](../api/contactfolder_list_childfolders.md) |[contactFolder](contactfolder.md) collection| Get a collection of child folders under the specified contact folder.|
+|[Create child contactFolder](../api/contactfolder_post_childfolders.md) |[contactFolder](contactfolder.md)| Create a new contactFolder as a child of a specified folder.|
+|[delta](../api/contact_delta.md)|[contact](contact.md) collection| Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.|
+|[List contacts in folder](../api/contactfolder_list_contacts.md) |[contact](contact.md) collection| Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.|
+|[Create contact in folder](../api/contactfolder_post_contacts.md) |[contact](contact.md)| Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.|
+|**Extended properties**| | |
 |[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contactFolder](contactFolder.md)  |Create one or more single-value extended properties in a new or existing contactFolder.   |
 |[Get contactFolder with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | Get contactFolders that contain a single-value extended property by using `$expand` or `$filter`. |
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contactFolder](contactFolder.md) | Create one or more multi-value extended properties in a new or existing contactFolder.  |

@@ -74,6 +74,7 @@ Content-type: application/json
     "id":"AAMkADJmMVAAA=",
     "name":"Social events",
     "color":"auto",
+    "hexColor": "",
     "isDefaultCalendar":false,
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
     "canShare":true,

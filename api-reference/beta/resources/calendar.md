@@ -28,6 +28,7 @@ A calendar which is a container for events.
 |canViewPrivateItems |Boolean |True if the user can read calendar items that have been marked private, false otherwise. |
 |changeKey|String|Identifies the version of the calendar object. Every time the calendar is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.|
 |color|String|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|hexColor|String|A color representing the calendar. The color is represented by a 6-digit, 3-byte hexadecimal number. Each byte represents one of the red, green, and blue components of the color, in the range 00 to FF in hexadecimal notation. |
 |id|String|The group's unique identifier. Read-only.|
 |isDefaultCalendar|Boolean|True if this calendar is the user's default calendar, false otherwise.|
 |isShared |Boolean |True if the user has shared the calendar with other users, false otherwise. Since only the user who created the calendar can share it, **isShared** and **isSharedWithMe** cannot be true for the same user. |
@@ -62,11 +63,18 @@ Here is a JSON representation of the resource
 
 ```json
 {
+  "canEdit": "boolean",
+  "canShare": "boolean",
+  "canViewPrivateItems": "boolean",
   "changeKey": "string",
   "color": "String",
+  "hexColor": "String",
   "id": "string (identifier)",
   "isDefaultCalendar": "boolean",
-  "name": "string"
+  "isShared": "boolean",
+  "isSharedWithMe": "boolean",
+  "name": "string",
+  "owner": {"@odata.type": "microsoft.graph.emailAddress"},
 }
 
 ```

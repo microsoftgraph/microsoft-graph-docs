@@ -60,6 +60,7 @@ Content-type: application/json
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
     "canShare":true,
     "canViewPrivateItems":true,
+    "hexColor": "",
     "isShared":false,
     "isSharedWithMe":false,
     "canEdit":true,

@@ -36,7 +36,7 @@ The following sections provide the reference documentation for the Intune Graph 
 - [Device configuration](intune_device_configuration_conceptual.md)
 - [App protection](intune_app_protection_conceptual.md)
 - [Enroll devices for management](intune_onboarding_conceptual.md)
-- [Role-based access control](intune-rbac-conceptual.md)
+- [Role-based access control](intune_rbac_conceptual.md)
 - [Telecom expense management](intune_tem_conceptual.md)
 
 ## To use the Table of Contents on the Microsoft Graph site
