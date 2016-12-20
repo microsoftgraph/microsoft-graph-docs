@@ -2,7 +2,7 @@
 
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to a post.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 * Group.Read.All
 * Group.Readwrite.All

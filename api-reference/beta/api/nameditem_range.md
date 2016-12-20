@@ -2,7 +2,7 @@
 
 Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

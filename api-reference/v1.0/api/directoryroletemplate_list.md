@@ -3,7 +3,7 @@
 Retrieve a list of directoryRoleTemplate objects.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Directory.Read.All* OR *Directory.ReadWrite.All* OR *Directory.AccessAsUser.All*
+One of the following **permissions** is required to execute this API: *Directory.Read.All* OR *Directory.ReadWrite.All* OR *Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

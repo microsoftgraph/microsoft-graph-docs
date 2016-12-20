@@ -2,7 +2,7 @@
 
 The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

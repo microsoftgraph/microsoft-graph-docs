@@ -8,7 +8,7 @@ Note that by default, the `GET /me/messages` operation does not return the **men
 to [find details of each mention in a message](../api/message_get.md#request-2).
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Mail.Read; Mail.ReadWrite*
 ## HTTP request
 

@@ -2,7 +2,7 @@
 Make the role assignment as permanent.
 
 ## Prerequisites
-The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
+One of the following **permissions** is required to execute this API: _Directory.AccessAsUser.All_
 
 
 The requestor needs to have _Privileged Role Administrator_ role. 

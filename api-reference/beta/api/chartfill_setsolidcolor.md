@@ -2,7 +2,7 @@
 
 Sets the fill formatting of a chart element to a uniform color.
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

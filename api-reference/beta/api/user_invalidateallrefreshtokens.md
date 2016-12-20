@@ -4,7 +4,7 @@ Invalidates all of the user's refresh tokens issued to applications (as well as 
 For developers, if the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error. If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 + For an application to allow the signed in user to invalidate applications they've consented to: *User.ReadWrite* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 + For an application to allow an administrator to invalidate applications a user has consented to: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*

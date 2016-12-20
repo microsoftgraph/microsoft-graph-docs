@@ -1,7 +1,7 @@
 ﻿# Get organization
 Read properties and relationships of the [organization](../resources/intune_onboarding_organization.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
 ### HTTP Request

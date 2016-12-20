@@ -3,7 +3,7 @@
 Use this API to create a new User.
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Directory.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

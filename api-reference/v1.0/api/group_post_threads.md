@@ -8,7 +8,7 @@ Use [reply thread](conversationthread_reply.md) or [reply post](post_reply.md) t
 Note: You can also [start a new thread in an existing conversation](conversation_post_threads.md). 
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
+One of the following **permissions** is required to execute this API: *Group.ReadWrite.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

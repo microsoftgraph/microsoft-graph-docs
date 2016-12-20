@@ -3,7 +3,7 @@
 Add a registered user for the device.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
 ## HTTP request

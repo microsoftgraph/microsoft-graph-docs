@@ -4,7 +4,7 @@ Search the hierarchy of items for items matching a query.
 You can search within a folder hierarhcy, a whole drive, or files shared with the current user.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.Read
   * Files.ReadWrite

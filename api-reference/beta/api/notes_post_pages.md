@@ -6,7 +6,7 @@ To create a page in a different section in the default notebook, you can use the
 
 The `POST /notes/pages` operation is used only to create pages in the current user's default notebook. If you're targeting other notebooks, you can [create pages in a specified section](../api/section_post_pages.md).           
 ## Prerequisites
-One of the following **scopes** is required to execute this API:  
+One of the following **permissions** is required to execute this API:  
 Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

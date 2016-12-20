@@ -10,7 +10,7 @@ If the status is `completed`, the `resourceLocation` property contains the resou
 If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:  
+One of the following **permissions** is required to execute this API:  
 Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

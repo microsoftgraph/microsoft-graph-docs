@@ -1,7 +1,7 @@
 ﻿# Create appleVolumePurchaseProgramToken
 Create a new [appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.ReadWrite.All*
 ### HTTP Request

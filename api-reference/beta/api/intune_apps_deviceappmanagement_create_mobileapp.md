@@ -1,7 +1,7 @@
 ﻿# Create mobileApp
 Create a new [mobileApp](../resources/intune_apps_mobileapp.md) by posting to the mobileApps collection.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ### HTTP Request

@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of a calendar group object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Calendars.Read*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

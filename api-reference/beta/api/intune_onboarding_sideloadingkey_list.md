@@ -1,7 +1,7 @@
 ﻿# List sideLoadingKeys
 List properties and relationships of the [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) objects.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
 ### HTTP Request

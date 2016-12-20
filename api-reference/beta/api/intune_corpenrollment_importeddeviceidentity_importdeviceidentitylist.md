@@ -1,7 +1,7 @@
 ﻿# importDeviceIdentityList action
 Import list of the [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) objects.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.ReadWrite.All*
 ### HTTP Request

@@ -8,7 +8,7 @@ that folder](../../../concepts/delta_query_messages.md). This allows you to main
 having to fetch the entire set of messages from the server every time.  
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: _Mail.Read_; _Mail.ReadWrite_
+One of the following **permissions** is required to execute this API: _Mail.Read_; _Mail.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

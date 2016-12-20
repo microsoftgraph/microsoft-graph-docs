@@ -1,7 +1,7 @@
 ﻿# assign action
 Assigns properties and relationships of the [mobileApp](../resources/intune_apps_mobileapp.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ### HTTP Request

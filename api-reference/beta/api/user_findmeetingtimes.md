@@ -15,7 +15,7 @@ and `resource` for a resource in the corresponding **type** property, as part of
 
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Calendars.Read.Shared* or *Calendars.ReadWrite.Shared*
+One of the following **permissions** is required to execute this API: *Calendars.Read.Shared* or *Calendars.ReadWrite.Shared*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

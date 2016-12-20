@@ -5,7 +5,7 @@ Send the message specified in the request body. You can optionally save the mess
 You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Mail.Send*
+One of the following **permissions** is required to execute this API: *Mail.Send*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

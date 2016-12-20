@@ -2,7 +2,7 @@
 
 Retrieve the list of conversations in this group.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
+One of the following **permissions** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

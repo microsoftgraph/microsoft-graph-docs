@@ -8,7 +8,7 @@ add an attachment to a message that is being [created and sent on the fly](../ap
 Since there is currently a limit of 4MB on the total size of each REST request, this limits the 
 size of the attachment you can add to under 4MB.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Mail.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

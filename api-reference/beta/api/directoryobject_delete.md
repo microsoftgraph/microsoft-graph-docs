@@ -2,7 +2,7 @@
 
 Delete directoryObject.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: _Directory.AccessAsUser.All_
+One of the following **permissions** is required to execute this API: _Directory.AccessAsUser.All_
 
 **NOTE:** Users, groups, and contacts are types of directory object. As a result,if you need to delete users, the following **scope** can and should be used: _User.ReadWrite.All_
 ## HTTP request

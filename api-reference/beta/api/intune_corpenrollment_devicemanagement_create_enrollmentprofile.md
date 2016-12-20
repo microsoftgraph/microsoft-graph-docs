@@ -1,7 +1,7 @@
 ﻿# Create enrollmentProfile
 Create a new [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) by posting to the enrollmentProfiles collection.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.ReadWrite.All*
 ### HTTP Request

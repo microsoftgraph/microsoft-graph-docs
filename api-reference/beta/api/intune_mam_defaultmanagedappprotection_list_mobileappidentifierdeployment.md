@@ -1,7 +1,7 @@
 ﻿# List mobileAppIdentifierDeployments
 Get the mobileAppIdentifierDeployments from the mobileAppIdentifierDeployments navigation property.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ### HTTP Request

@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of directoryobject object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: _Directory.Read.All_ OR _Directory.AccessAsUser.All_
+One of the following **permissions** is required to execute this API: _Directory.Read.All_ OR _Directory.AccessAsUser.All_
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

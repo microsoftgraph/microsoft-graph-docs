@@ -10,7 +10,7 @@ DriveItem resources inherit permissions from their ancestors.
 For OneDrive for Business and SharePoint document libraries, sharing links are only available on files. folders cannot be shared with a sharing link.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.ReadWrite
 

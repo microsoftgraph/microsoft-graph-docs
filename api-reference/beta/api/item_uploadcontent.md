@@ -6,7 +6,7 @@ This method only supports files up to 4MB in size.
 To upload large files see [Upload large files with an upload session](item_createUploadSession.md).
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.ReadWrite
 

@@ -1,7 +1,7 @@
 ﻿# Create termsAndConditionsAcceptanceStatus
 Create a new [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.ReadWrite.All*
 ### HTTP Request

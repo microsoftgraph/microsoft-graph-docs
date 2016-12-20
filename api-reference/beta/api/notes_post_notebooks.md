@@ -2,7 +2,7 @@
 
 Create a new OneNote [notebook](../resources/notebook.md).
 ## Prerequisites
-One of the following **scopes** is required to execute this API:   
+One of the following **permissions** is required to execute this API:   
 Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

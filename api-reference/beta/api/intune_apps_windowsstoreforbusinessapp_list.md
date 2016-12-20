@@ -1,7 +1,7 @@
 ﻿# List windowsStoreForBusinessApps
 List properties and relationships of the [windowsStoreForBusinessApp](../resources/intune_apps_windowsstoreforbusinessapp.md) objects.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ### HTTP Request

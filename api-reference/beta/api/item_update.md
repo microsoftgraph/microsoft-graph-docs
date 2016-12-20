@@ -5,7 +5,7 @@ Update the metadata for a [DriveItem](../resources/driveitem.md) by ID or path.
 You can also use update to [move an item](item_move.md) to another parent by updating the item's **parentReference** property.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.ReadWrite
 

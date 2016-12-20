@@ -5,7 +5,7 @@ Retrieve a list of task* objects.
 *Note that filter is required for this method.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
  
 Group.Read.All, Group.ReadWrite.All
 

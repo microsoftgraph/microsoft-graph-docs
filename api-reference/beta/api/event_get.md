@@ -17,7 +17,7 @@ You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties
 find out the time zone used when the event was created.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Calendars.Read*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

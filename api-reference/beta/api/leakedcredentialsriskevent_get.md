@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of a leakedcredentialsriskevent object.
 ## Prerequisites
-The following **scopes** are required to execute this API:
+One of the following **permissions** is required to execute this API:
 *IdentityRiskEvent.Read.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

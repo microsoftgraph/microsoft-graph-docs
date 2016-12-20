@@ -3,7 +3,7 @@
 Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level 
 folder collection and navigate to another folder.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Mail.Read; Mail.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

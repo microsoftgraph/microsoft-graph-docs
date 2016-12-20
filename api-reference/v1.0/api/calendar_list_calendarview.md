@@ -4,7 +4,7 @@ Get the occurrences, exceptions, and single instances of events in a calendar vi
 from the user's primary calendar `(../me/calendarview)` or from a specified calendar.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Calendars.Read*
 
 ## HTTP request

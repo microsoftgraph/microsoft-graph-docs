@@ -19,7 +19,7 @@ Here are the most common ones:
 
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.Read
   * Files.ReadWrite

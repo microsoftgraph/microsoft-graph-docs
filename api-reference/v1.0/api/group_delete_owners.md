@@ -3,7 +3,7 @@
 Use this API to remove an owner from an Office 365 group, a security group or a mail-enabled security group through the owners navigation property.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+One of the following **permissions** is required to execute this API: *Group.ReadWrite.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

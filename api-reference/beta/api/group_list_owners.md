@@ -2,7 +2,7 @@
 
 Retrieve a list of the group's owners. The owners are a set of non-admin users who are allowed to modify the group object. 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

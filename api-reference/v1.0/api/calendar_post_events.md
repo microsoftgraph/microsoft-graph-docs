@@ -2,7 +2,7 @@
 
 Use this API to create a new Event in the default or the specified calendar.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Calendars.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

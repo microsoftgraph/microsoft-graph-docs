@@ -1,7 +1,7 @@
 ﻿# Update organization
 Update the properties of a [organization](../resources/intune_onboarding_organization.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.ReadWrite.All*
 ### HTTP Request

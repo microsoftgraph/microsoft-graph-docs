@@ -1,7 +1,7 @@
 ﻿# List sideLoadingKeys
 Get the sideLoadingKeys from the sideLoadingKeys navigation property.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
 ### HTTP Request

@@ -3,7 +3,7 @@
 Calculated insight for the list of users that a user has been working with.
 
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 *Users.Read.All*
 
 ## HTTP request

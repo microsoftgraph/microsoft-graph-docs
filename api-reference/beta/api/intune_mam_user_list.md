@@ -1,7 +1,7 @@
 ﻿# List users
 List properties and relationships of the [user](../resources/intune_mam_user.md) objects.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ### HTTP Request

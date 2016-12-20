@@ -1,7 +1,7 @@
 ﻿# Create windows10VpnConfiguration
 Create a new [windows10VpnConfiguration](../resources/intune_deviceconfig_windows10vpnconfiguration.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ### HTTP Request

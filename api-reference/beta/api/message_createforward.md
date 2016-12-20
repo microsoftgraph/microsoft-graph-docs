@@ -9,7 +9,7 @@ all in one **createForward** call. You can then [send](../api/message_send.md) t
 neither will return an HTTP 400 Bad Request error.
 
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 *Mail.ReadWrite*
 
 ## HTTP request

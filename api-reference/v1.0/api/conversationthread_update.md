@@ -2,7 +2,7 @@
 
 Lock or unlock a thread, to allow or avoid further posting to the thread.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Group.ReadWrite.All*
 
 ## HTTP request

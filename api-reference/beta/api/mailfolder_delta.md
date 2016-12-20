@@ -8,7 +8,7 @@ you can query for incremental changes in the mail folders. This allows you to ma
 a local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: _Mail.Read_; _Mail.ReadWrite_
+One of the following **permissions** is required to execute this API: _Mail.Read_; _Mail.ReadWrite_
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

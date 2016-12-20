@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of a person object.
 ## Prerequisites
-The following **scopes** are required to execute this API: *People.Read*; *User.ReadBasic.All*
+One of the following **permissions** is required to execute this API: *People.Read*; *User.ReadBasic.All*
  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -15,7 +15,7 @@ Items with this property set should be removed from your local state.
 **Note:** you should only delete a folder locally if it is empty after syncing all the changes.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.Read
   * Files.Readwrite

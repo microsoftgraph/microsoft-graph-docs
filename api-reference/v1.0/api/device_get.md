@@ -2,7 +2,7 @@
 
 Get the properties and relationships of a device object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All* or *Device.ReadWrite.All*
+One of the following **permissions** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All* or *Device.ReadWrite.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

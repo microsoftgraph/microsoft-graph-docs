@@ -2,7 +2,7 @@
 
 Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
