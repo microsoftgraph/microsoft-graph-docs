@@ -3,7 +3,7 @@
 Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.Read.All
   * Files.ReadWrite.All

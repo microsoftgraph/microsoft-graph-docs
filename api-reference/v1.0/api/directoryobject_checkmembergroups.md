@@ -4,7 +4,7 @@ Check for membership in a specified list of groups, and returns from that list t
 of which the specified user, group, or directory object is a member. This function is transitive.
 
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 - _User.Read.All_ AND _Group.Read.All_
 - _Directory.Read.All_
 

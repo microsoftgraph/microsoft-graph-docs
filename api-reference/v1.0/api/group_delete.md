@@ -2,7 +2,7 @@
 
 Delete group.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: _Group.ReadWrite.All_
+One of the following **permissions** is required to execute this API: _Group.ReadWrite.All_
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

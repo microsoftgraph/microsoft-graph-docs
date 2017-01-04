@@ -3,7 +3,7 @@
 Use this API to remove a member (user or group) from an administrative unit.
 
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
+One of the following **permissions** is required to execute this API: *Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

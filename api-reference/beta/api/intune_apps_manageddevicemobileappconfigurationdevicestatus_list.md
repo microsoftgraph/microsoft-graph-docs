@@ -1,7 +1,7 @@
 ﻿# List managedDeviceMobileAppConfigurationDeviceStatuses
 List properties and relationships of the [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) objects.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ### HTTP Request

@@ -1,7 +1,7 @@
 ﻿# updateMobileAppIdentifierDeployments action
 Update mobileAppIdentifierDeployments of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) objects.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ### HTTP Request

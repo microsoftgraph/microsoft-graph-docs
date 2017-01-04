@@ -6,7 +6,7 @@ To get expanded event instances, you can [get the calendar view](calendar_list_c
 [get the instances of an event](event_list_instances.md).
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Calendars.Read*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -1,7 +1,7 @@
 ﻿# Get webApp
 Read properties and relationships of the [webApp](../resources/intune_apps_webapp.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ### HTTP Request

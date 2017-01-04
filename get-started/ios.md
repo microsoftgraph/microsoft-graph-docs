@@ -1,6 +1,6 @@
 # Get started with Microsoft Graph in an iOS App
 
-> **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors. 
+> **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors.
 
 > To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure Management Portal](https://aka.ms/aadapplist). For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](../authorization/auth_overview.md#deciding-between-azure-ad-and-the-v2-authentication-endpoint).
 
@@ -21,7 +21,7 @@ The workflow will be to connect/authenticate to Microsoft Graph, sign in with yo
 
 ## Prerequisites
 
-To get started, you'll need: 
+To get started, you'll need:
 
 * [Xcode](https://developer.apple.com/xcode/downloads/) from Apple
 * Installation of [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) as a dependency manager
@@ -29,18 +29,18 @@ To get started, you'll need:
 * The [Microsoft Graph Starter Project for iOS](https://github.com/microsoftgraph/ios-objectivec-connect-sample). This template contains classes that you'll add code to. To get this project, clone or download the sample project from this location, and you'll work with the workspace inside the **starter-project** folder (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**).
 
 ## Register the app
- 
+
 1. Sign into the [App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
 2. Select **Add an app**.
 3. Enter a name for the app, and select **Create application**.
-	
+
 	The registration page displays, listing the properties of your app.
- 
+
 4. Under **Platforms**, select **Add platform**.
 5. Select **Mobile platform**.
 6. Copy the Client Id to the clipboard. You'll need to enter this value into the sample app.
 
-	The app id is a unique identifier for your app. 
+	The app id is a unique identifier for your app.
 
 7. Select **Save**.
 
@@ -55,30 +55,30 @@ To get started, you'll need:
 
 
 ## Enable keychain sharing
- 
-For Xcode8, you need to add the keychain group or your app will fail to access keychain. 
+
+For Xcode8, you need to add the keychain group or your app will fail to access keychain.
 To add the keychain group:
- 
+
 1. Select the project on the project manager panel in Xcode. (⌘ + 1).
- 
+
 2. Select **O365-iOS-Microsoft-Graph-SDK**.
- 
+
 3. On the Capabilities tab, enable **Keychain Sharing**.
- 
+
 4. Add **com.microsoft.O365-iOS-Microsoft-Graph-SDK** to the Keychain Groups.
- 
+
 
 ## Authenticating with Microsoft Graph
 
-To revisit the UI workflow, the app is going to have the user authenticate, and then they'll have the ability to send a mail to a specified user. To make requests against the Microsoft Graph service, an authentication provider must be supplied which is capable of authenticating HTTPS requests with an appropriate OAuth 2.0 bearer token. In the sample project there's an authentication class already stubbed out called **AuthenticationProvider.m.** We will add a function to request, and acquire, an access token for calling the Microsoft Graph API. 
+To revisit the UI workflow, the app is going to have the user authenticate, and then they'll have the ability to send a mail to a specified user. To make requests against the Microsoft Graph service, an authentication provider must be supplied which is capable of authenticating HTTPS requests with an appropriate OAuth 2.0 bearer token. In the sample project there's an authentication class already stubbed out called **AuthenticationProvider.m.** We will add a function to request, and acquire, an access token for calling the Microsoft Graph API.
 
 1. Open the Xcode project workspace (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**) in the **starter-project** folder, and navigate to the **Authentication** folder and open the file **AuthenticationProvider.m.** Add the following code to that class.
 
 		-(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)	(NSError *))completion{
     		[NXOAuth2AuthenticationProvider setClientId:kClientId
                                               scopes:scopes];
-    
-    
+
+
     		/**
      		Obtains access token by performing login with UI, where viewController specifies the parent view controller.
      		@param viewController The view controller to present the UI on.
@@ -101,7 +101,7 @@ To revisit the UI workflow, the app is going to have the user authenticate, and 
             		}
        	 		}];
     		}
-    
+
 		}
 
 2. Next add the method to the header file. Open the file **AuthenticationProvider.h** and add the following code to this class.
@@ -141,27 +141,27 @@ After configuring the project to be able to authenticate, the next tasks are sen
     		MSGraphMessage *message = [[MSGraphMessage alloc]init];
     		MSGraphRecipient *toRecipient = [[MSGraphRecipient alloc]init];
     		MSGraphEmailAddress *email = [[MSGraphEmailAddress alloc]init];
-    
+
     		email.address = self.emailAddress;
     		toRecipient.emailAddress = email;
-    
+
     		NSMutableArray *toRecipients = [[NSMutableArray alloc]init];
     		[toRecipients addObject:toRecipient];
-    
+
     		message.subject = NSLocalizedString(@"MAIL_SUBJECT", comment: "");
-    
+
     		MSGraphItemBody *emailBody = [[MSGraphItemBody alloc]init];
     		NSString *htmlContentPath = [[NSBundle mainBundle] pathForResource:@"EmailBody" ofType:@"html"];
     		NSString *htmlContentString = [NSString stringWithContentsOfFile:htmlContentPath encoding:NSUTF8StringEncoding error:nil];
-    
+
     		emailBody.content = htmlContentString;
     		emailBody.contentType = [MSGraphBodyType html];
     		message.body = emailBody;
-    
+
     		message.toRecipients = toRecipients;
-    
+
     		return message;
-    
+
 		}
 
 
@@ -177,7 +177,7 @@ After configuring the project to be able to authenticate, the next tasks are sen
         		if(!error){
             		NSLog(@"response %@", response);
             		NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
-            
+
             		dispatch_async(dispatch_get_main_queue(), ^{
                 		self.statusTextView.text = NSLocalizedString(@"SEND_SUCCESS", comment: "");
             	});
@@ -187,7 +187,7 @@ After configuring the project to be able to authenticate, the next tasks are sen
            	 	self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
         		}
     		}];
-    
+
 		}
 
 So **getSampleMessage** creates a draft HTML sample mail to use for demo purposes. The next method, **sendMail**, then takes that message and executes the request to send it. Again the default recipient is the signed-in user.
@@ -199,7 +199,7 @@ So **getSampleMessage** creates a draft HTML sample mail to use for demo purpose
 		// You will set your application's clientId
 		NSString * const kClientId    = @"ENTER_CLIENT_ID_HERE";
 		NSString * const kScopes = @"https://graph.microsoft.com/Mail.Send, https://graph.microsoft.com/User.Read, offline_access";
-Note: You'll notice that the following permission scopes have been configured for this project: **"https://graph.microsoft.com/Mail.Send", "https://graph.microsoft.com/User.Read", "offline_access"**. The service calls used in this project, sending a mail to your mail account and retrieving some profile information (Display Name, Email Address) require these permissions for the app to run properly.
+Note: You'll notice that the following permissions have been configured for this project: **"https://graph.microsoft.com/Mail.Send", "https://graph.microsoft.com/User.Read", "offline_access"**. The service calls used in this project, sending a mail to your mail account and retrieving some profile information (Display Name, Email Address) require these permissions for the app to run properly.
 
 2. Run the sample, tap **Connect,** sign in with your personal or work or school account, and grant the requested permissions.
 

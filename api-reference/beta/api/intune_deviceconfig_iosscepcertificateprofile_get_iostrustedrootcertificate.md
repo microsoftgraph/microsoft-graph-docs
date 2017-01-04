@@ -1,7 +1,7 @@
 ﻿# Get iosTrustedRootCertificate
 Get the [iosTrustedRootCertificate](../resources/intune_deviceconfig_iostrustedrootcertificate.md) from the rootCertificate navigation property.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ### HTTP Request

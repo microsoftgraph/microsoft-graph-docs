@@ -1,7 +1,7 @@
 ﻿# Update defaultManagedAppProtection
 Update the properties of a [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ### HTTP Request

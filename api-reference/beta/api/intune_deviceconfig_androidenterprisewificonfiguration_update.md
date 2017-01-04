@@ -1,7 +1,7 @@
 ﻿# Update androidEnterpriseWiFiConfiguration
 Update the properties of a [androidEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_androidenterprisewificonfiguration.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ### HTTP Request

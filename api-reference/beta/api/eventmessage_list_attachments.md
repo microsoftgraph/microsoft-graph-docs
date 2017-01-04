@@ -2,7 +2,7 @@
 
 Retrieve a list of attachment objects.
 ## Prerequisites
-The following **scopes** are required to execute this API: _Mail.Read_ 
+One of the following **permissions** is required to execute this API: _Mail.Read_ 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

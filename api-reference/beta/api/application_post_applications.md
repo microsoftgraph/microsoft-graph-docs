@@ -2,7 +2,7 @@
 
 Use this API to create a new Application.
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
+One of the following **permissions** is required to execute this API: *Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

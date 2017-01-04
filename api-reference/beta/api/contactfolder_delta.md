@@ -8,7 +8,7 @@ you can query for incremental changes in the contact folders. This allows you to
 a local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: _Contacts.Read_; _Contacts.ReadWrite_
+One of the following **permissions** is required to execute this API: _Contacts.Read_; _Contacts.ReadWrite_
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

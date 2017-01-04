@@ -1,7 +1,7 @@
 ﻿# Update importedAppleDeviceIdentity
 Update the properties of a [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.ReadWrite.All*
 ### HTTP Request

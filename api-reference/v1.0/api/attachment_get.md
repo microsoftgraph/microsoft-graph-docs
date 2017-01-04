@@ -13,7 +13,7 @@ All these types of attachment resources are derived from the [attachment](../res
 resource. 
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 * If accessing attachments in messages: *Mail.Read*
 * If accessing attachments in events: *Calendars.Read*

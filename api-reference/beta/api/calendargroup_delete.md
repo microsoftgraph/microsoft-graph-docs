@@ -6,7 +6,7 @@ Delete a calendar group other than the default calendar group.
 delete any calendar group in Outlook.com.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Calendars.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

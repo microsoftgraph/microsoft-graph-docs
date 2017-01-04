@@ -4,7 +4,7 @@ Get the [Focused Inbox](../resources/manage_focused_inbox.md) overrides that a u
 
 Each override corresponds to an SMTP address of a sender. Initially, a user does not have any overrides.
 ## Prerequisites
-The following **scopes** are required to execute this API: *Mail.Read*
+One of the following **permissions** is required to execute this API: *Mail.Read*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

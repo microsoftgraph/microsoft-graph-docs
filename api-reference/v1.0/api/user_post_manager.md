@@ -4,7 +4,7 @@ Use this API to assign a user's manager.
 > Note: You cannot assign direct reports - instead use this API.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *User.ReadWrite* or *User.ReadWrite.All*
+One of the following **permissions** is required to execute this API: *User.ReadWrite* or *User.ReadWrite.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

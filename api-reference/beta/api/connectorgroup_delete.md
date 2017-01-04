@@ -2,7 +2,7 @@
 
 Delete a connectorGroup.
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.ReadWrite.All Or Directory.AccessAsUser.All*
+One of the following **permissions** is required to execute this API: *Directory.ReadWrite.All Or Directory.AccessAsUser.All*
 
 > **Note:** The connector group must not have any connectors associated with it.
 

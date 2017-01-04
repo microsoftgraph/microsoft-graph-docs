@@ -2,7 +2,7 @@
 
 Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 *Contacts.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

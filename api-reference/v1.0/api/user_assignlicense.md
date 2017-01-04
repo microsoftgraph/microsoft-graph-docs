@@ -2,7 +2,7 @@
 Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *User.ReadWrite.All; Directory.ReadWrite.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

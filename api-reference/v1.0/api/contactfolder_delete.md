@@ -2,7 +2,7 @@
 
 Delete contactFolder other than the default contactFolder.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 *Contacts.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

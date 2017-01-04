@@ -9,7 +9,7 @@ To upload a file using an upload session, there are two steps:
 2. [Upload bytes to the upload session](#upload-bytes-to-the-upload-session)
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.ReadWrite
 

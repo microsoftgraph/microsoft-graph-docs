@@ -1,7 +1,7 @@
 ﻿# Delete managedDevice
 Deletes a [managedDevice](../resources/intune_onboarding_manageddevice.md).
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementManagedDevices.ReadWrite.All*
 ### HTTP Request

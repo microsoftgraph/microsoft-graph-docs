@@ -2,7 +2,7 @@
 
 Update the properties of calendargroup object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: _Calendars.ReadWrite_
+One of the following **permissions** is required to execute this API: _Calendars.ReadWrite_
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 Any [calendarGroup](../resources/calendargroup.md) of a user.

@@ -6,7 +6,7 @@ Note that you need to have created a group and be a member of it before you can 
 
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
  
 Group.ReadWrite.All
 

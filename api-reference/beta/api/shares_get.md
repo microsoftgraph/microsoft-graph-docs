@@ -6,7 +6,7 @@ To use a sharing URL with this API, your app needs to [transform the URL into a 
 
 ## Prerequisites
 
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.ReadWrite
 

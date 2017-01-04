@@ -5,7 +5,7 @@ Delete a message in the specified user's mailbox, or delete a relationship of th
 For example, you can delete a specific [mention](../resources/mention.md) of the current user's in the message.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 *Mail.ReadWrite* 
 ## HTTP request
 

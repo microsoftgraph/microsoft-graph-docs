@@ -5,7 +5,7 @@ A Drive is the top-level container for a file system.
 Graph API allows you to access the Drive resource for a user's OneDrive or OneDrive for Business, or SharePoint document libraries.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.Read
   * Files.ReadWrite

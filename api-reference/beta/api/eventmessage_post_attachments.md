@@ -2,7 +2,7 @@
 
 Use this API to create a new Attachment.
 ## Prerequisites
-The following **scopes** are required to execute this API:  _Mail.ReadWrite_
+One of the following **permissions** is required to execute this API:  _Mail.ReadWrite_
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

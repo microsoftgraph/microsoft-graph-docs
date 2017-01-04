@@ -4,7 +4,7 @@ Reply to a thread in a group conversation and add a new post to it. You can spec
 in the request, or, you can specify just the thread without the parent conversation.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Group.ReadWrite.All*
 
 ## HTTP request

@@ -2,7 +2,7 @@
 
 Get a list of directory objects that were created by the user.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 *User.Read; User.ReadWrite; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
 ## HTTP request

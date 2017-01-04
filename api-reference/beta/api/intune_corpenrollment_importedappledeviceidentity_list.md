@@ -1,7 +1,7 @@
 ﻿# List importedAppleDeviceIdentities
 List properties and relationships of the [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) objects.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
 ### HTTP Request

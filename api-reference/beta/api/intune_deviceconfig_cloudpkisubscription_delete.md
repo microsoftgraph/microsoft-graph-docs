@@ -1,7 +1,7 @@
 ﻿# Delete cloudPkiSubscription
 Deletes a [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md).
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ### HTTP Request

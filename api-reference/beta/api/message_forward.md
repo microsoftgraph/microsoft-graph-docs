@@ -13,7 +13,7 @@ and then [send](../api/message_send.md) the draft message.
 neither will return an HTTP 400 Bad Request error.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Mail.Send*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -1,7 +1,7 @@
 ﻿# Create macOSEnterpriseWiFiConfiguration
 Create a new [macOSEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_macosenterprisewificonfiguration.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ### HTTP Request

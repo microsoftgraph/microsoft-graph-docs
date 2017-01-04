@@ -2,7 +2,7 @@
 
 Get the mail folder collection under the root folder of the signed-in user. 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Mail.Read; Mail.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

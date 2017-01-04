@@ -12,36 +12,36 @@ This is the app you'll create.
 
 ## Prerequisites
 
-To get started, you'll need: 
+To get started, you'll need:
 
 - A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
-- Visual Studio 2015 
+- Visual Studio 2015
 - [Xamarin for Visual Studio](https://www.xamarin.com/visual-studio)
 - Windows 10 ([development mode enabled](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx))
-- The [Microsoft Graph Connect Starter Project for Xamarin Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample/tree/master/starter). This template contains several classes that you'll add code to. It also contains complete views and resource strings. To get this project, clone or download the [Microsoft Graph Connect Sample for Xamarin Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) and open the **XamarinConnect** solution inside the **starter** folder. 
+- The [Microsoft Graph Connect Starter Project for Xamarin Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample/tree/master/starter). This template contains several classes that you'll add code to. It also contains complete views and resource strings. To get this project, clone or download the [Microsoft Graph Connect Sample for Xamarin Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) and open the **XamarinConnect** solution inside the **starter** folder.
 
 If you want to run the iOS project in this sample, you'll need the following:
 
 - The latest iOS SDK
 - The latest version of Xcode
-- Mac OS X Yosemite(10.10) & above 
+- Mac OS X Yosemite(10.10) & above
 - [Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started/installation/mac/)
 - A [Xamarin Mac agent connected to Visual Studio](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/)
 
 
 ## Register the app
- 
+
 1. Sign into the [App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
 2. Select **Add an app**.
 3. Enter a name for the app, and select **Create application**.
-	
+
 	The registration page displays, listing the properties of your app.
- 
+
 4. Under **Platforms**, select **Add platform**.
 5. Select **Mobile platform**.
 6. Copy the application id. You'll need to enter this values into the sample app.
 
-	The application id is a unique identifier for your app. The redirect URI is a unique URI provided by Windows 10 for each application to ensure that messages sent to that URI are only sent to that application. 
+	The application id is a unique identifier for your app. The redirect URI is a unique URI provided by Windows 10 for each application to ensure that messages sent to that URI are only sent to that application.
 
 7. Select **Save**.
 
@@ -54,7 +54,7 @@ If you want to run the iOS project in this sample, you'll need the following:
 public static string ClientID = "ENTER_YOUR_CLIENT_ID";
 public static string[] Scopes = { "User.Read", "Mail.Send" };
 ```
-The `Scopes` value stores the Microsoft Graph permission scopes that the app will need to request when the user authenticates. Note that the `App` class constructor uses the ClientID value to instantiate an instance of the MSAL `PublicClientApplication` class. You'll use this class later to authenticate the user.
+The `Scopes` value stores the Microsoft Graph permissions that the app will need to request when the user authenticates. Note that the `App` class constructor uses the ClientID value to instantiate an instance of the MSAL `PublicClientApplication` class. You'll use this class later to authenticate the user.
 
 ```c#
 IdentityClientApp = new PublicClientApplication(ClientID);
@@ -141,7 +141,7 @@ The `Signout` method signs out all users logged in through the `PublicClientAppl
             TokenForUser = null;
 
         }
-``` 
+```
 
 **GetAuthenticatedClient**
 
@@ -178,9 +178,9 @@ Finally, you'll need a method that creates a `GraphServicesClient`. This method 
 
 ## Send an email with Microsoft Graph
 
-Open the MailHelper.cs file in your starter project. This file contains the code that constructs and sends an email. It consists of a single method -- ``ComposeAndSendMailAsync`` -- that constructs and sends a POST request to the **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail** endpoint. 
+Open the MailHelper.cs file in your starter project. This file contains the code that constructs and sends an email. It consists of a single method -- ``ComposeAndSendMailAsync`` -- that constructs and sends a POST request to the **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail** endpoint.
 
-The ``ComposeAndSendMailAsync`` method takes three string values -- ``subject``, ``bodyContent``, and ``recipients`` -- that are passed to it by the MainPage.xaml.cs file. The ``subject`` and ``bodyContent`` strings are stored, along with all other UI strings, in the AppResources.resx file. The ``recipients`` string comes from the address box in the app's interface. 
+The ``ComposeAndSendMailAsync`` method takes three string values -- ``subject``, ``bodyContent``, and ``recipients`` -- that are passed to it by the MainPage.xaml.cs file. The ``subject`` and ``bodyContent`` strings are stored, along with all other UI strings, in the AppResources.resx file. The ``recipients`` string comes from the address box in the app's interface.
 
 **Using declarations**
 
@@ -303,17 +303,17 @@ The complete class will look like this:
             }
         }
     }
-``` 
+```
 
-You've now performed the three steps required for interacting with Microsoft Graph: app registration, user authentication, and making a request. 
+You've now performed the three steps required for interacting with Microsoft Graph: app registration, user authentication, and making a request.
 
 ## Run the app
-1. Select the project that you want to run. If you select the Universal Windows Platform option, you can run the sample on the local machine. If you want to run the iOS project, you'll need to connect to a [Mac that has the Xamarin tools](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/) installed on it. (You can also open this solution in Xamarin Studio on a Mac and run the sample directly from there.) You can use the [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx) if you want to run the Android project. 
+1. Select the project that you want to run. If you select the Universal Windows Platform option, you can run the sample on the local machine. If you want to run the iOS project, you'll need to connect to a [Mac that has the Xamarin tools](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/) installed on it. (You can also open this solution in Xamarin Studio on a Mac and run the sample directly from there.) You can use the [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx) if you want to run the Android project.
 
     ![](images/SelectProject.png "Select project in Visual Studio")
 
 2. Press F5 to build and debug. Run the solution and sign in with either your personal or work or school account.
-    > **Note** You might have to open the Build Configuration Manager to make sure that the Build and Deploy steps are selected for the UWP project. 
+    > **Note** You might have to open the Build Configuration Manager to make sure that the Build and Deploy steps are selected for the UWP project.
 
 3. Sign in with your personal or work or school account and grant the requested permissions.
 

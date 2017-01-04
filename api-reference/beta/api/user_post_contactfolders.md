@@ -4,7 +4,7 @@ Create a new contactFolder under the user's default contacts folder.
 
 You can also [create a new contactfolder as a child of any specified contact folder](contactfolder_post_childfolders.md).
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Contacts.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

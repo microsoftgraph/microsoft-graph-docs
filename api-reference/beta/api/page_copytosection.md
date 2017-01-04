@@ -4,7 +4,7 @@ Copies a page to a specific section.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:   
+One of the following **permissions** is required to execute this API:   
 Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

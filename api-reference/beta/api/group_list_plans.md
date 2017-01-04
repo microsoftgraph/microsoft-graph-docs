@@ -2,7 +2,7 @@
 
 Retrieve a list of [plan](../resources/plan.md) objects owned by the group. Today, a group can own no more than one plan.
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 
 Groups.ReadWrite.All AND Tasks.ReadWrite
 

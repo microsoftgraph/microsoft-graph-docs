@@ -1,7 +1,7 @@
 ﻿# Update windows81SCEPCertificateProfile
 Update the properties of a [windows81SCEPCertificateProfile](../resources/intune_deviceconfig_windows81scepcertificateprofile.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ### HTTP Request

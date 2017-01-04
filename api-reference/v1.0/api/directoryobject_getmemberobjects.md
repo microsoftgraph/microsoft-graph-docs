@@ -4,7 +4,7 @@
  > Note: Only users can be members of directory roles.
 
 ## Prerequisites
-One of the following **scopes** are required to execute this API:
+One of One of the following **permissions** is required to execute this API:
 - _User.Read.All_ AND _Group.Read.All_
 - _Directory.Read.All_
 

@@ -4,7 +4,7 @@ List a set of items that have been recently used by the signed in user.
 This collection includes items that are in the user's drive as well as items they have access to from other drives.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.Read
   * Sites.Read.All

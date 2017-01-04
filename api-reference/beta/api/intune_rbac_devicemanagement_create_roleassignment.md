@@ -1,7 +1,7 @@
 ﻿# Create roleAssignment
 Create a new [roleAssignment](../resources/intune_rbac_roleassignment.md) by posting to the roleAssignments collection.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementRBAC.ReadWrite.All*
 ### HTTP Request

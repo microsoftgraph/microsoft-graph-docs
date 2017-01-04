@@ -6,7 +6,7 @@ Users in the accepted senders list can post to conversations of the group (ident
 Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, 
 otherwise you will get an error.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
  *Group.Read.All* or *Group.ReadWrite.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

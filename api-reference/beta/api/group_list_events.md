@@ -2,7 +2,7 @@
 
 Retrieve a list of [event](../resources/event.md) objects.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: _Group.Read.All_ or _Group.ReadWrite.All_
+One of the following **permissions** is required to execute this API: _Group.Read.All_ or _Group.ReadWrite.All_
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

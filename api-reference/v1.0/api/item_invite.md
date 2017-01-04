@@ -4,7 +4,7 @@ Sends a sharing invitation for a **DriveItem**.
 A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.ReadWrite
 

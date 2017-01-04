@@ -2,7 +2,7 @@
 
 Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Contacts.Read; Contacts.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

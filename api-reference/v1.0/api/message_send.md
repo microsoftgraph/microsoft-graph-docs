@@ -4,7 +4,7 @@ Send a message in the draft folder. The draft message can be a new message draft
 a forward draft. The message is then saved in the Sent Items folder.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Mail.Send*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

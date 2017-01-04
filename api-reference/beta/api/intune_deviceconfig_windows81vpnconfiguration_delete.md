@@ -1,7 +1,7 @@
 ﻿# Delete windows81VpnConfiguration
 Deletes a [windows81VpnConfiguration](../resources/intune_deviceconfig_windows81vpnconfiguration.md).
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ### HTTP Request

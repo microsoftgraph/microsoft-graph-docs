@@ -4,7 +4,7 @@ Create a draft of the Forward message. You can then [update](../api/message_upda
 [send](../api/message_send.md) the draft.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Mail.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

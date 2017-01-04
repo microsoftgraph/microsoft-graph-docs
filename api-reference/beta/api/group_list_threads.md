@@ -5,7 +5,7 @@ Get all the threads of a group.
 Note: You can also [get all the threads of a conversation](conversation_list_threads.md).
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:  *Group.Read.All* or *Group.ReadWrite.All*
+One of the following **permissions** is required to execute this API:  *Group.Read.All* or *Group.ReadWrite.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -2,7 +2,7 @@
 
 Retrieve the properties of a specific directory setting object.
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+One of the following **permissions** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 Get a specific tenant-wide or group setting

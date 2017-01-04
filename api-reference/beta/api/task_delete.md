@@ -2,7 +2,7 @@
 
 Delete task.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
  
 Group.ReadWrite.All
 

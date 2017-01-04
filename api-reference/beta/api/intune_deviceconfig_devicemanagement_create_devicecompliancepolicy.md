@@ -1,7 +1,7 @@
 ﻿# Create deviceCompliancePolicy
 Create a new [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) by posting to the deviceCompliancePolicies collection.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ### HTTP Request

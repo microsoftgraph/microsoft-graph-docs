@@ -16,7 +16,7 @@ recreated when written to again.
 doesn't exist, you'll receive a `403 Forbidden` error.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.Read
   * Files.ReadWrite

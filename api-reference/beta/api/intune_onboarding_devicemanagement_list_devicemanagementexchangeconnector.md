@@ -1,7 +1,7 @@
 ﻿# List deviceManagementExchangeConnectors
 Get the deviceManagementExchangeConnectors from the exchangeConnectors navigation property.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ### HTTP Request

@@ -1,7 +1,7 @@
 ﻿# Delete androidCustomConfiguration
 Deletes a [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md).
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ### HTTP Request

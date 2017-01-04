@@ -11,7 +11,7 @@ all in one **createReply** call. You can then [update](../api/message_update.md)
 send the reply to the recipients in **replyTo**, and not the recipients in **from**. 
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Mail.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -1,4 +1,4 @@
-﻿# Authenticate Microsoft Graph apps with the Azure AD v2.0 endpoint
+# Authenticate Microsoft Graph apps with the Azure AD v2.0 endpoint
 
 > **Building apps for enterprise customers?** Your app might not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>.  
 
@@ -9,7 +9,7 @@ By using the Azure AD v2.0 endpoint, you can create apps that accept both work a
 
 In the past, if you wanted to develop an app to support both Microsoft accounts and Azure Active Directory, you had to integrate with two completely separate systems. Using the Azure AD v2.0 endpoint, you can now support both types of accounts with a single integration - one simple process to reach an audience that spans millions of users with both personal and work/school accounts.  
 
-After you integrate your apps with the Azure AD v2.0 endpoint, they can instantly access the Microsoft Graph endpoints available for both personal and work or school accounts, such as: 
+After you integrate your apps with the Azure AD v2.0 endpoint, they can instantly access the Microsoft Graph endpoints available for both personal and work or school accounts, such as:
 
 | Data              | Endpoint                                       |
 |:------------------|:-----------------------------------------------|
@@ -21,11 +21,11 @@ After you integrate your apps with the Azure AD v2.0 endpoint, they can instantl
 
  >**Note:** Some Microsoft Graph endpoints, such as groups and tasks, are not applicable to personal accounts.  
 
-## Microsoft Graph authentication scopes
+## Microsoft Graph authentication permissions
 
-The Azure AD v2.0 endpoint supports all permission scopes listed in [Microsoft Graph permission scopes](permission_scopes.md). 
+The Azure AD v2.0 endpoint supports all permissions listed in [Microsoft Graph permissions](permission_scopes.md).
 
-For more information about using scopes with the Azure AD v2.0 endpoint, and how it differs from using resources in Azure AD, see <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare/#scopes-not-resources" target="_newtab">Scopes, not resources</a>.
+For more information about using permissions with the Azure AD v2.0 endpoint, and how it differs from using resources in Azure AD, see <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare/#scopes-not-resources" target="_newtab">Scopes, not resources</a>.
 
 ## See it in action
 
@@ -39,6 +39,5 @@ In addition, the [Get Started](http://graph.microsoft.io/en-us/docs/platform/get
 - [App authentication with Microsoft Graph](auth_overview.md)
 - <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare" target="_newtab">What's new about the Azure AD v2.0 model</a>
 - <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/" target="_newtab">Should I use the Azure AD v2.0 endpoint?</a>
-- <a href="https://azure.microsoft.com/en-us/documentation/articles/?product=active-directory&term=azure+ad+v2.0" target="_newtab">Azure AD v2.0 endpoint documentation on Azure.com</a>
-- <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-app-registration/#build-a-quick-start-app" target="_newtab">Azure AD v2.0 code quick starts on Azure.com</a>
-
+- <a href="https://azure.microsoft.com/en-us/documentation/articles/?product=active-directory&term=azure+ad+v2.0" target="_newtab">Azure AD v2.0 endpoint documentation</a>
+- <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-app-registration/#build-a-quick-start-app" target="_newtab">Azure AD v2.0 code quick starts</a>

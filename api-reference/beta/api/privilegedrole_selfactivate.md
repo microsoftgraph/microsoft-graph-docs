@@ -2,7 +2,7 @@
 Activate the role that is assigned to the requestor.
 
 ## Prerequisites
-The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
+One of the following **permissions** is required to execute this API: _Directory.AccessAsUser.All_
 
 The requestor can only call ```selfActivate``` for the role that is assigned to him.
  

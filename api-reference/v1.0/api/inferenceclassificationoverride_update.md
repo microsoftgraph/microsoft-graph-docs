@@ -10,7 +10,7 @@ If an override exists for a sender and the sender changes his/her SMTP address, 
 the new SMTP address is the only way to "update" the override for this sender.
 
 ## Prerequisites
-The following **scopes** are required to execute this API: *Mail.ReadWrite*
+One of the following **permissions** is required to execute this API: *Mail.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
