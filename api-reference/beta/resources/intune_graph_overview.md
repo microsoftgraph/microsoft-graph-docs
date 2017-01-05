@@ -20,11 +20,17 @@ Intune provides data into the Microsoft Graph in the same way as other cloud ser
 
 Here is an example of how you can determine whether an application is installed on a user's device: 
 
-1. Get from Azure Active Directory a list of devices registered to a user: https://graph.microsoft.com/{version}/{user}/ownedDevices 
+1. Get from Azure Active Directory a list of devices registered to a user: 
 
-2. Then view the list of applications for your tenant: https://graph.microsoft.com/{version}/deviceAppManagement/mobileApps  
+  https://graph.microsoft.com/{version}/{user}/ownedDevices 
 
-3. Take the ID from the application and determine the installation state for the application (and therefore user) https://graph.microsoft.com/{version}/deviceAppManagement/mobileAppInstallState.
+2. Then view the list of applications for your tenant: 
+
+  https://graph.microsoft.com/{version}/deviceAppManagement/mobileApps  
+
+3. Take the ID from the application and determine the installation state for the application (and therefore user):
+
+  https://graph.microsoft.com/{version}/deviceAppManagement/mobileApps/{id}/deviceStatuses/.
 
 ## Sections of the Intune Graph API documentation
 
