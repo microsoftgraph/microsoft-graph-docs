@@ -2,7 +2,7 @@
 
 Remove a user or group from the acceptedSenders list. 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
+One of the following **permissions** is required to execute this API: *Group.ReadWrite.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

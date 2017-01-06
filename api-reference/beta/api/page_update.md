@@ -2,7 +2,7 @@
 
 Update the content of a OneNote page.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:   
+One of the following **permissions** is required to execute this API:   
 Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

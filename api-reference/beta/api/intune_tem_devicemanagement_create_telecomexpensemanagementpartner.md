@@ -1,7 +1,7 @@
 ﻿# Create telecomExpenseManagementPartner
 Create a new [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) by posting to the telecomExpenseManagementPartners collection.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.ReadWrite.All*
 ### HTTP Request

@@ -1,7 +1,7 @@
 ﻿# Create deviceManagementExchangeConnector
 Create a new [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) by posting to the exchangeConnectors collection.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementManagedDevices.ReadWrite.All*
 ### HTTP Request

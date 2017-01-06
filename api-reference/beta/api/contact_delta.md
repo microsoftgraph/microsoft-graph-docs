@@ -8,7 +8,7 @@ that folder. This allows you to maintain and synchronize a local store of a user
 having to fetch the entire set of contacts from the server every time.  
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: _Contacts.Read_; _Contacts.ReadWrite_
+One of the following **permissions** is required to execute this API: _Contacts.Read_; _Contacts.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -9,7 +9,7 @@ When the event is created, the server send invitations to all attendees.
 
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Calendars.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

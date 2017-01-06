@@ -3,7 +3,7 @@
 Move a message to a folder. This creates a new copy of the message in the destination folder.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Mail.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -4,7 +4,7 @@ Forward a post to a recipient. You can specify both the parent conversation and 
 or, you can specify just the parent thread without the parent conversation. 
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *Group.ReadWrite*, *Group.Readwrite.All*
 

@@ -2,7 +2,7 @@
 Return all of the groups and directory roles that the group is a member of. The check is transitive. Note: Groups cannot be members of directory roles, so no directory roles will be returned.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

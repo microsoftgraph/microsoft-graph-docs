@@ -8,7 +8,7 @@ In the same **sendMail** action call, you can:
 - Use a [mention](../resources/mention.md) to call out another user in the new message
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Mail.Send*
+One of the following **permissions** is required to execute this API: *Mail.Send*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

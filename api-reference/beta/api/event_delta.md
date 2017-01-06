@@ -11,7 +11,7 @@ a local store of a user's events in the primary calendar, without having to fetc
 from the server every time.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: _Calendars.Read_; _Calendars.ReadWrite_ 
+One of the following **permissions** is required to execute this API: _Calendars.Read_; _Calendars.ReadWrite_ 
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

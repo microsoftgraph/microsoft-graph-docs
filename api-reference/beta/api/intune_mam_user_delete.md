@@ -1,7 +1,7 @@
 ﻿# Delete user
 Deletes a [user](../resources/intune_mam_user.md).
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ### HTTP Request

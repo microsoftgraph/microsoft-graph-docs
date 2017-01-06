@@ -14,7 +14,7 @@ you should send the reply to the recipients in **replyTo** and not the recipient
 
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Mail.Send*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

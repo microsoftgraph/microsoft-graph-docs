@@ -4,7 +4,7 @@ Get the instances (occurrences) of an event for a specified time range. If the e
 occurrences and exceptions of the event in the specified time range.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Calendars.Read*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

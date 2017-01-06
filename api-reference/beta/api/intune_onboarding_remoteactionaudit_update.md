@@ -1,7 +1,7 @@
 ﻿# Update remoteActionAudit
 Update the properties of a [remoteActionAudit](../resources/intune_onboarding_remoteactionaudit.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementManagedDevices.ReadWrite.All*
 ### HTTP Request

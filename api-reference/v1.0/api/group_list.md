@@ -16,7 +16,7 @@ GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
+One of the following **permissions** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

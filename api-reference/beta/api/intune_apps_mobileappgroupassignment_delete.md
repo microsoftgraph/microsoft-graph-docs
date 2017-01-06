@@ -1,7 +1,7 @@
 ﻿# Delete mobileAppGroupAssignment
 Deletes a [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md).
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ### HTTP Request

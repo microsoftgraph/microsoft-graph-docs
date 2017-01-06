@@ -3,7 +3,7 @@
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to an event.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 *Calendars.Read* 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

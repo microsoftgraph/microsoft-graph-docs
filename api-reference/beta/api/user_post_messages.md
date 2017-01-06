@@ -8,7 +8,7 @@ While creating the draft in the same **POST** call, you can:
 - Use a [mention](../resources/mention.md) to call out another user in the new message
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Mail.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

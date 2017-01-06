@@ -3,7 +3,7 @@
 Gets a certain number of columns to the left of the given range.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: _Files.Read,
+One of the following **permissions** is required to execute this API: _Files.Read,
 Files.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

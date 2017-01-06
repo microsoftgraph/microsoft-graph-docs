@@ -2,7 +2,7 @@
 
 Get user's manager. Returns the user or contact assigned as the user's manager.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
 ## HTTP request

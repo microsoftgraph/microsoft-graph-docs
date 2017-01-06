@@ -3,7 +3,7 @@
 Create and register a new device in the organization.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Directory.AccessAsUser.All*, *Device.ReadWrite.All*
+One of the following **permissions** is required to execute this API: *Directory.AccessAsUser.All*, *Device.ReadWrite.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

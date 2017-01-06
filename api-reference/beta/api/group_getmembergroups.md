@@ -8,7 +8,7 @@ request can return is 2046. Note that Office 365 Groups cannot contain groups. S
 always direct.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

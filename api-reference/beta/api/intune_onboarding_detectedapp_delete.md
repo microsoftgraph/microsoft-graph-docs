@@ -1,7 +1,7 @@
 ﻿# Delete detectedApp
 Deletes a [detectedApp](../resources/intune_onboarding_detectedapp.md).
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementManagedDevices.ReadWrite.All*
 ### HTTP Request

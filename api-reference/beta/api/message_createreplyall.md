@@ -13,7 +13,7 @@ all in one **createReplyAll** call. You can then [update](../api/message_update.
 
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Mail.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

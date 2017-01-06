@@ -3,7 +3,7 @@
 Retrieve a list of device objects registered in the organization.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: Device.ReadWrite.All, Directory.AccessAsUser.All
+One of the following **permissions** is required to execute this API: Device.ReadWrite.All, Directory.AccessAsUser.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -1,7 +1,7 @@
 ﻿# Delete windows10VpnConfiguration
 Deletes a [windows10VpnConfiguration](../resources/intune_deviceconfig_windows10vpnconfiguration.md).
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ### HTTP Request

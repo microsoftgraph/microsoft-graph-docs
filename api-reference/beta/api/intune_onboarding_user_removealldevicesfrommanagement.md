@@ -1,7 +1,7 @@
 ﻿# removeAllDevicesFromManagement action
 Unenroll all devices associated with the user from Intune.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementManagedDevices.PriviligedOperation.All*
 ### HTTP Request

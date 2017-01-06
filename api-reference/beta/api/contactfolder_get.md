@@ -2,7 +2,7 @@
 
 Get a contact folder by using the contact folder ID.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Contacts.ReadWrite; Contacts.Read*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -3,7 +3,7 @@
 Retrieve the properties and relationships of [privilegedRole](../resources/privilegedrole.md) object. 
 
 ## Prerequisites
-The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
+One of the following **permissions** is required to execute this API: _Directory.AccessAsUser.All_
 
 The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_.
  

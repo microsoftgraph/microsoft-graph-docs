@@ -5,7 +5,7 @@ Create a new [policy](../resources/policy.md) object by specifying display name,
 >Note: The policy details will be validated before being stored. If it does not pass validation, a 400 Bad Request will be returned.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Directory.AccessAsUser.All*
 ### HTTP request
 

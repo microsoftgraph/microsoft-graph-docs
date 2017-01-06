@@ -2,7 +2,7 @@
 
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to a message.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Mail.Read* 
+One of the following **permissions** is required to execute this API: *Mail.Read* 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 Attachments for a [message](../resources/message.md) in a user's mailbox.

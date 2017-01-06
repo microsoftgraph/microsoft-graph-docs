@@ -8,7 +8,7 @@ If a sharing link of the specified type already exists for the app, the existing
 DriveItem resources inherit permissions from their ancestors.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.ReadWrite
 

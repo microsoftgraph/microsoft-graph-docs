@@ -1,7 +1,7 @@
 ﻿# Get androidForWorkGeneralDeviceConfiguration
 Read properties and relationships of the [androidForWorkGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ### HTTP Request

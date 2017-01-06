@@ -2,7 +2,7 @@
 
 Retrieve a list of [page](../resources/page.md) objects from the specified section.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:  
+One of the following **permissions** is required to execute this API:  
 Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
