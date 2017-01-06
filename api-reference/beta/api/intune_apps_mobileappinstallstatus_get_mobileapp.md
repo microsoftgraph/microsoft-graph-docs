@@ -1,7 +1,7 @@
 ﻿# Get mobileApp
 Get the [mobileApp](../resources/intune_apps_mobileapp.md) from the app navigation property.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ### HTTP Request

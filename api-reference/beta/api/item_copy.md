@@ -3,7 +3,7 @@
 Creates a copy of a [driveItem](../resources/driveitem.md) (including any children) under a new parent or with a new name.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.ReadWrite
 

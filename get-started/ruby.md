@@ -1,10 +1,10 @@
-﻿# Get started with Microsoft Graph in a Ruby on Rails app
+# Get started with Microsoft Graph in a Ruby on Rails app
 
 This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph. It walks you through building the [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article also describes how to access Microsoft Graph by using direct REST calls.
 
 To download a version of the Connect sample that uses the Azure AD endpoint, see [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth).
 
-The following image shows the app you'll create. 
+The following image shows the app you'll create.
 
 ![Microsoft Ruby on Rails Connect sample screenshot](./images/Microsoft-Graph-Ruby-Connect-UI.png)
 
@@ -13,7 +13,7 @@ The following image shows the app you'll create.
 
 ## Prerequisites
 
-To get started, you'll need: 
+To get started, you'll need:
 
 - Ruby 2.1 to run the sample on a development server.
 - Rails framework (the sample has been tested on Rails 4.2).
@@ -71,7 +71,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 ## Authenticate the user and get an access token
 
-This app uses the authorization code grant flow with a delegated user identity. For a web application, the flow requires the application ID, secret, and redirect URI from the registered app. 
+This app uses the authorization code grant flow with a delegated user identity. For a web application, the flow requires the application ID, secret, and redirect URI from the registered app.
 
 The auth flow can be broken down into these basic steps:
 
@@ -84,7 +84,7 @@ The auth flow can be broken down into these basic steps:
 We'll be using a stack of three pieces of [Rack](http://rack.github.io/) middleware to enable the app to authenticate against the Microsoft Graph:
 
 - [OmniAuth](https://rubygems.org/gems/omniauth), a generalized Rack framework for multiple-provider authentication.
-- [Omniauth-oauth2](https://rubygems.org/gems/omniauth-oauth2), an abstract OAuth2 strategy for OmniAuth. 
+- [Omniauth-oauth2](https://rubygems.org/gems/omniauth-oauth2), an abstract OAuth2 strategy for OmniAuth.
 - omniauth-microsoft_v2_auth, an OmniAuth strategy that customizes Omniauth-oauth2 to specifically provide authentication against the Azure AD v2.0 endpoint. This project is included in the code sample.
 
 ### Specify gem dependencies for authentication
@@ -97,7 +97,7 @@ In Gemfile, uncomment the following gems to add them as dependencies.
 	gem 'omniauth-microsoft_v2_auth', path: './omniauth-microsoft_v2_auth'
 	```
 
-Note that `omniauth-microsoft_v2_auth` is included in the app project, and will be installed from the path specified. 
+Note that `omniauth-microsoft_v2_auth` is included in the app project, and will be installed from the path specified.
 
 ### Configure the authentication middleware
 
@@ -111,7 +111,7 @@ In `config/initializers/omniauth-microsoft_v2_auth.rb`, uncomment the following 
 	  :scope => ENV['SCOPE']
 	end
 	```
-This configures the OmniAuth middleware, including specifying the app ID and app secret to use, as well as the scopes to request for the user. These are the values you specified earlier in `config/environment.rb`.
+This configures the OmniAuth middleware, including specifying the app ID and app secret to use, as well as the permissions to request for the user. These are the values you specified earlier in `config/environment.rb`.
 
 ### Specify routes for authentication
 
@@ -145,7 +145,7 @@ Take a look at `app/views/pages/index.html.erb`, the view for the site root. The
 
 As shown earlier, the login method redirects to the OmniAuth middleware, which has been configured with the app ID and app secret, as well as the scopes to request for the user. Once the user is successfully authenticated, OmniAuth returns a hash with the access token and other user information to the app.
 
-Now let's add code to handle the OmniAuth callback, and retrieve information from that hash. 
+Now let's add code to handle the OmniAuth callback, and retrieve information from that hash.
 
 In `app/controllers/pages_controller.rb`, replace the empty `callback` method with the following code.
 
@@ -154,7 +154,7 @@ In `app/controllers/pages_controller.rb`, replace the empty `callback` method wi
     	# Access the authentication hash for omniauth
     	# and extract the auth token, user name, and email
     	data = request.env['omniauth.auth']
-	
+
     	@email = data[:extra][:raw_info][:userPrincipalName]
     	@name = data[:extra][:raw_info][:displayName]
 
@@ -162,7 +162,7 @@ In `app/controllers/pages_controller.rb`, replace the empty `callback` method wi
     	session[:access_token] = data['credentials']['token']
 		session[:name] = @name
 		session[:email] = @email
-		
+
 		# Debug logging
 		logger.info "Name: #{@name}"
 		logger.info "Email: #{@email}"
@@ -177,11 +177,11 @@ This method retrieves the authentication hash, and then stores the access token,
 
 ## Call Microsoft Graph
 
-Now you're ready to add code to call Microsoft Graph. 
+Now you're ready to add code to call Microsoft Graph.
 
 The view rendered by the `callback` method (`app/views/pages/callback.html.erb`) includes a simple form with a single button. The form posts to  `send_mail`, and includes a single parameter, the email address of the intended recipient.
-	
-	``` 
+
+	```
 	<form action="../../send_mail" method="post">
       <div class="ms-Grid-col ms-u-mdPush1 ms-u-md9 ms-u-lgPush1 ms-u-lg6">
 		...
@@ -190,7 +190,7 @@ The view rendered by the `callback` method (`app/views/pages/callback.html.erb`)
             </div>
             <button class="ms-Button">
             <span class="ms-Button-label"><i class="ms-Icon ms-Icon--mail" aria-hidden="true"></i><%= t('send_mail_button') %></span>
-            </button> 
+            </button>
 		...
 	```
 
@@ -199,29 +199,29 @@ In `app/controllers/pages_controller.rb`, replace the empty `send_mail` method w
 	```
 	def send_mail
 		logger.debug "[send_mail] - Access token: #{session[:access_token]}"
-		
+
 		# Used in the template
 		@name = session[:name]
 		@email = params[:specified_email]
 		@recipient = params[:specified_email]
 		@mail_sent = false
-		
+
 		send_mail_endpoint = URI("#{GRAPH_RESOURCE}#{SENDMAIL_ENDPOINT}")
 		content_type = CONTENT_TYPE
 		http = Net::HTTP.new(send_mail_endpoint.host, send_mail_endpoint.port)
 		http.use_ssl = true
-		
+
 		# If you want to use a sniffer tool, like Fiddler, to see the request
 		# you might need to add this line to tell the engine not to verify the
 		# certificate or you might see a "certificate verify failed" error
 		# http.verify_mode = OpenSSL::SSL::VERIFY_NONE
-		
+
 		email_body = File.read('app/assets/MailTemplate.html')
 		email_body.sub! '{given_name}', @name
 		email_subject = t('email_subject')
-		
+
 		logger.debug email_body
-	
+
 		email_message = "{
 			Message: {
 			Subject: '#{email_subject}',
@@ -239,17 +239,17 @@ In `app/controllers/pages_controller.rb`, replace the empty `send_mail` method w
 			},
 			SaveToSentItems: true
 			}"
-			
+
 		response = http.post(
 			SENDMAIL_ENDPOINT,
 			email_message,
 			'Authorization' => "Bearer #{session[:access_token]}",
 			'Content-Type' => content_type
 		)
-		
+
 		logger.debug "Code: #{response.code}"
 		logger.debug "Message: #{response.message}"
-		
+
 		# The send mail endpoint returns a 202 - Accepted code on success
 		if response.code == '202'
 			@mail_sent = true
@@ -257,7 +257,7 @@ In `app/controllers/pages_controller.rb`, replace the empty `send_mail` method w
 			@mail_sent = false
 			flash[:httpError] = "#{response.code} - #{response.message}"
 		end
-		
+
 		render 'callback'
 	end
 	```
@@ -287,5 +287,3 @@ Finally, the code uses the HTTP response code returned to notify the user whethe
 ## See also
 - Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
 - Explore our other [Microsoft Graph samples](https://github.com/microsoftgraph) on GitHub.
-
-

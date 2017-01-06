@@ -1,7 +1,7 @@
 ﻿# Get windows81WifiImportConfiguration
 Read properties and relationships of the [windows81WifiImportConfiguration](../resources/intune_deviceconfig_windows81wifiimportconfiguration.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ### HTTP Request

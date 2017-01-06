@@ -4,7 +4,7 @@ Reset the unseenCount of all the posts that the current user has not seen since 
 only Office 365 groups.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* 
+One of the following **permissions** is required to execute this API: *Group.ReadWrite.All* 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

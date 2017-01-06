@@ -2,7 +2,7 @@
 
 Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

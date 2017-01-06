@@ -4,7 +4,7 @@ Retrieve the properties and relationships of message object.
 
 For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Mail.Read*  
 ## HTTP request
 

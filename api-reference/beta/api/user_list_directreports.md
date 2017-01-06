@@ -2,7 +2,7 @@
 
 Get user's direct reports. Returns the users and contacts for whom this user is assigned as manager.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 *User.Read; User.ReadWrite; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
 ## HTTP request

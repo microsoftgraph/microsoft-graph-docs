@@ -10,7 +10,7 @@ as specified in the override.
 - The POST operation supports creating only one override at a time.
 
 ## Prerequisites
-The following **scopes** are required to execute this API: *Mail.ReadWrite*
+One of the following **permissions** is required to execute this API: *Mail.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

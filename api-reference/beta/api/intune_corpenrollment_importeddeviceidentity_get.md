@@ -1,7 +1,7 @@
 ﻿# Get importedDeviceIdentity
 Read properties and relationships of the [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
 ### HTTP Request

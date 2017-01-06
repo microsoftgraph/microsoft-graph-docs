@@ -3,7 +3,7 @@
 Get all the contacts in the signed-in user's mailbox (.../me/contacts), or from the specified contact folder.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Contacts.Read; Contacts.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

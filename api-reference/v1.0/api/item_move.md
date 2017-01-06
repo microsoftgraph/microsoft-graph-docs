@@ -7,7 +7,7 @@ Your app can combine moving an item to a new container and updating other proper
 Items cannot be moved between [Drives](../resources/drive.md) using this request.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.ReadWrite
 

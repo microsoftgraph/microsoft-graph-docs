@@ -1,7 +1,7 @@
 ﻿# Create remoteActionAudit
 Create a new [remoteActionAudit](../resources/intune_onboarding_remoteactionaudit.md) by posting to the remoteActionAudits collection.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementManagedDevices.ReadWrite.All*
 ### HTTP Request

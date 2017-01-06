@@ -2,7 +2,7 @@
 
 Use this API to create a new [event](../resources/event.md).
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
+One of the following **permissions** is required to execute this API: *Group.ReadWrite.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

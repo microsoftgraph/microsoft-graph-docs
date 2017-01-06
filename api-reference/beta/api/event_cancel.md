@@ -12,7 +12,7 @@ This action differs from [Delete](event_delete.md) in that **Cancel** is availab
 the organizer send a custom message to the attendees about the cancellation.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Calendars.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

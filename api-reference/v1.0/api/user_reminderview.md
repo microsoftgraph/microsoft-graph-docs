@@ -2,7 +2,7 @@
 Return a list of calendar reminders within the specified start and end times. 
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 *Calendars.Read; Calendars.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

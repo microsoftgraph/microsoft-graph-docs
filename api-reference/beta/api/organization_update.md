@@ -2,7 +2,7 @@
 
 Update the properties of the currently authenticated organization.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

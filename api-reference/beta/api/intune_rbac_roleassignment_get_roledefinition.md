@@ -1,7 +1,7 @@
 ﻿# Get roleDefinition
 Get the [roleDefinition](../resources/intune_rbac_roledefinition.md) from the roleDefinition navigation property.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementRBAC.ReadWrite.All; DeviceManagementRBAC.Read.All*
 ### HTTP Request

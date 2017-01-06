@@ -1,7 +1,7 @@
 ﻿# Delete windows81TrustedRootCertificate
 Deletes a [windows81TrustedRootCertificate](../resources/intune_deviceconfig_windows81trustedrootcertificate.md).
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ### HTTP Request

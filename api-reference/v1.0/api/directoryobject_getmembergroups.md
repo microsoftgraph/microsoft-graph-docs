@@ -3,7 +3,7 @@
 Return all the groups that the specified user, group, or directory object is a member of. This function is transitive.
 
 ## Prerequisites
-One of the following **scopes** are required to execute this API: 
+One of One of the following **permissions** is required to execute this API: 
 - _User.Read.All_ AND _Group.Read.All_
 - _Directory.Read.All_
 

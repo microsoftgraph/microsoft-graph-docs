@@ -2,7 +2,7 @@
 
 Retrieve a list of users that are registered users of the device.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 - *Device.ReadWrite.All* and *User.ReadBasic.All*
 - *Directory.Read.All*
 - *Directory.ReadWrite.All* 

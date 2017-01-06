@@ -5,7 +5,7 @@ Retrieve the properties and relationships of a [thumbnailSet](../resources/thumb
 For more info, see [List thumbnails](item_list_thumbnails.md).
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.Read
 

@@ -1,7 +1,7 @@
 ﻿# syncWithAppleDeviceEnrollmentProgram action
 Request Apple DEP to send assigned serial numbers to the tenant.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.ReadWrite.All*
 ### HTTP Request

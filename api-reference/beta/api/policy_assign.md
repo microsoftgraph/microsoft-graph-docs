@@ -5,7 +5,7 @@ Assigns a [policy](../resources/policy.md) to an application or service principa
 >Note: Currently, policy assignment only applies to Token lifetime Policy. This type of policy is described in [policy](../resources/policy.md).
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Directory.AccessAsUser.All*
 
 ### HTTP request

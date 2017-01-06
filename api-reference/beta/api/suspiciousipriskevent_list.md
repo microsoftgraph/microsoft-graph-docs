@@ -2,7 +2,7 @@
 
 Retrieve a list of suspiciousipriskevent objects.
 ## Prerequisites
-The following **scopes** are required to execute this API:
+One of the following **permissions** is required to execute this API:
 *IdentityRiskEvent.Read.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

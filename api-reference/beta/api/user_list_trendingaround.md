@@ -3,7 +3,7 @@
 Calculated insight that returns the list of items trending around a user.
 
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **permissions** is required to execute this API: 
 *Sites.Read.All*
 
 ## HTTP request

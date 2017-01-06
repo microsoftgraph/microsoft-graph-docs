@@ -2,7 +2,7 @@
 
 Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects that are associated with the role. Each [privilegedRoleAssignment](../resources/privilegedroleassignment.md) represents a role assignment to a user.
 ## Prerequisites
-The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
+One of the following **permissions** is required to execute this API: _Directory.AccessAsUser.All_
 
 The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_.
  

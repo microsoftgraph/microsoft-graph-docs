@@ -2,7 +2,7 @@
 
 Retrieve a list of calendars belonging to a calendar group.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: _Calendars.Read_
+One of the following **permissions** is required to execute this API: _Calendars.Read_
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 A user's default [calendarGroup](../resources/calendargroup.md).

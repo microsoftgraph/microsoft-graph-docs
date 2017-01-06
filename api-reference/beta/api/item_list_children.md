@@ -6,7 +6,7 @@ DriveItems with a non-null **folder** or **package** facet can have one or more 
 
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
   * Files.Read
   * Files.ReadWrite

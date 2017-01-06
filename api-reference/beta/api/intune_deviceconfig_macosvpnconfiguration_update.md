@@ -1,7 +1,7 @@
 ﻿# Update macOSVpnConfiguration
 Update the properties of a [macOSVpnConfiguration](../resources/intune_deviceconfig_macosvpnconfiguration.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ### HTTP Request

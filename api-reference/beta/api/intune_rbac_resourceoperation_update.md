@@ -1,7 +1,7 @@
 ﻿# Update resourceOperation
 Update the properties of a [resourceOperation](../resources/intune_rbac_resourceoperation.md) object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 
 *DeviceManagementRBAC.ReadWrite.All*
 ### HTTP Request

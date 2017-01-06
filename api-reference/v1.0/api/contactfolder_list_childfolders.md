@@ -2,7 +2,7 @@
 
 Get a collection of child folders under the specified contact folder.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Contacts.Read; Contacts.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

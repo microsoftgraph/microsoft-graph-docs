@@ -2,7 +2,7 @@
 
 Use this API to create a new  [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
 ## Prerequisites
-The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
+One of the following **permissions** is required to execute this API: _Directory.AccessAsUser.All_
 
 The requestor needs to have _Privileged Role Administrator_ role. 
 ## HTTP request

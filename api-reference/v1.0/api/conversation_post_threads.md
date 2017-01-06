@@ -8,7 +8,7 @@ to that thread. Or, if you get the post ID, you can also [reply](post_reply.md) 
 Note: You can also [start a new conversation by first creating a thread](group_post_threads.md).
 
 ## Prerequisites
-The following **scopes** are required to execute this API:
+One of the following **permissions** is required to execute this API:
 *Group.ReadWrite.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

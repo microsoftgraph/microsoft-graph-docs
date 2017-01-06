@@ -1,6 +1,6 @@
 # Get started with Microsoft Graph in a universal Windows 10 app
 
-> **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors. 
+> **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors.
 
 > To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure Management Portal](https://aka.ms/aadapplist). For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](../authorization/auth_overview.md#deciding-between-azure-ad-and-the-v2-authentication-endpoint).
 
@@ -29,26 +29,26 @@ All of the sample's UI strings are stored in the Resources.resw file inside the 
 
 ## Prerequisites
 
-To get started, you'll need: 
+To get started, you'll need:
 
 - A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
-- Visual Studio 2015 
+- Visual Studio 2015
 - Either the [Microsoft Graph Starter Project for UWP (Library)](https://github.com/microsoftgraph/uwp-csharp-connect-sample/tree/master/starter) or the [Microsoft Graph Starter Project for UWP (REST)](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/master/starter). Both templates contain empty classes that you'll add code to. They also contains resource strings. To get either or both of these projects, clone or download the [Microsoft Graph Connect Sample for UWP (Library)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) and/or the [Microsoft Graph Connect Sample for UWP (REST)](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample) and then open the solution inside the **starter** folder.
 
 
 ## Register the app
- 
+
 1. Sign into the [App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
 2. Select **Add an app**.
 3. Enter a name for the app, and select **Create application**.
-	
+
 	The registration page displays, listing the properties of your app.
- 
+
 4. Under **Platforms**, select **Add platform**.
 5. Select **Mobile platform**.
 6. Copy both the Client Id (App Id) and Redirect URI values to the clipboard. You'll need to enter these values into the sample app.
 
-	The app id is a unique identifier for your app. The redirect URI is a unique URI provided by Windows 10 for each application to ensure that messages sent to that URI are only sent to that application. 
+	The app id is a unique identifier for your app. The redirect URI is a unique URI provided by Windows 10 for each application to ensure that messages sent to that URI are only sent to that application.
 
 7. Select **Save**.
 
@@ -128,7 +128,7 @@ public static string TokenForUser = null;
 public static DateTimeOffset Expiration;
 ```
 
-Note that both versions use the MSAL `PublicClientApplication` class to authenticate the user. The `Scopes` field stores the Microsoft Graph permission scopes that the app will need to request when the user authenticates. 
+Note that both versions use the MSAL `PublicClientApplication` class to authenticate the user. The `Scopes` field stores the Microsoft Graph permissions that the app will need to request when the user authenticates.
 
 ***Client library version***
 
@@ -234,7 +234,7 @@ This is the client library version of the `Signout` method.
             TokenForUser = null;
 
         }
-``` 
+```
 
 ***REST version***
 
@@ -293,9 +293,9 @@ Finally, if you're using the client library, you'll need a method that creates a
 
 ## Send an email with Microsoft Graph
 
-Open the MailHelper.cs file in your starter project. This file contains the code that constructs and sends an email. It consists of a single method -- ``ComposeAndSendMailAsync`` -- that constructs and sends a POST request to the **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail** endpoint. 
+Open the MailHelper.cs file in your starter project. This file contains the code that constructs and sends an email. It consists of a single method -- ``ComposeAndSendMailAsync`` -- that constructs and sends a POST request to the **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail** endpoint.
 
-The ``ComposeAndSendMailAsync`` method takes three string values -- ``subject``, ``bodyContent``, and ``recipients`` -- that are passed to it by the MainPage.xaml.cs file. The ``subject`` and ``bodyContent`` strings are stored, along with all other UI strings, in the Resources.resw file. The ``recipients`` string comes from the address box in the app's interface. 
+The ``ComposeAndSendMailAsync`` method takes three string values -- ``subject``, ``bodyContent``, and ``recipients`` -- that are passed to it by the MainPage.xaml.cs file. The ``subject`` and ``bodyContent`` strings are stored, along with all other UI strings, in the Resources.resw file. The ``recipients`` string comes from the address box in the app's interface.
 
 **REST version**
 
@@ -336,12 +336,12 @@ The second task is to construct a valid JSON Message object and send it to the *
 
                 // Build contents of post body and convert to StringContent object.
                 // Using line breaks for readability.
-                string postBody = "{'Message':{" 
-                    +  "'Body':{ " 
-                    + "'Content': '" + bodyContent + "'," 
-                    + "'ContentType':'HTML'}," 
-                    + "'Subject':'" + subject + "'," 
-                    + "'ToRecipients':[" + recipientsJSON +  "]}," 
+                string postBody = "{'Message':{"
+                    +  "'Body':{ "
+                    + "'Content': '" + bodyContent + "',"
+                    + "'ContentType':'HTML'},"
+                    + "'Subject':'" + subject + "',"
+                    + "'ToRecipients':[" + recipientsJSON +  "]},"
                     + "'SaveToSentItems':true}";
 
                 var emailBody = new StringContent(postBody, System.Text.Encoding.UTF8, "application/json");
@@ -398,12 +398,12 @@ The complete class will look like this:
 
                 // Build contents of post body and convert to StringContent object.
                 // Using line breaks for readability.
-                string postBody = "{'Message':{" 
-                    +  "'Body':{ " 
-                    + "'Content': '" + bodyContent + "'," 
-                    + "'ContentType':'HTML'}," 
-                    + "'Subject':'" + subject + "'," 
-                    + "'ToRecipients':[" + recipientsJSON +  "]}," 
+                string postBody = "{'Message':{"
+                    +  "'Body':{ "
+                    + "'Content': '" + bodyContent + "',"
+                    + "'ContentType':'HTML'},"
+                    + "'Subject':'" + subject + "',"
+                    + "'ToRecipients':[" + recipientsJSON +  "]},"
                     + "'SaveToSentItems':true}";
 
                 var emailBody = new StringContent(postBody, System.Text.Encoding.UTF8, "application/json");
@@ -499,11 +499,11 @@ The complete class will look like this:
             }
         }
     }
-``` 
+```
 
 ##Create the user interface in MainPage.xaml
 
-Now that you've written the code that does all the work of authenticating the user and sending a message through Microsoft Graph, all that you have to do is create the simple interface described above. 
+Now that you've written the code that does all the work of authenticating the user and sending a message through Microsoft Graph, all that you have to do is create the simple interface described above.
 
 The MainPage.xaml file in your starter project already includes all of the XAML you'll need. All you need to do is add the code that drives the interface to the MainPage.xaml.cs file. Locate this file in your project and open it.
 
@@ -511,7 +511,7 @@ This file already contains all of the `using` declarations required for both the
 
 ***Client library version***
 
-The client library version of the app creates a `GraphServiceClient` when the user authenticates. 
+The client library version of the app creates a `GraphServiceClient` when the user authenticates.
 
 Add this code inside your namespace to complete the client library version of the MainPage class in MainPage.xaml.cs:
 
@@ -529,7 +529,7 @@ Add this code inside your namespace to complete the client library version of th
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            // Developer code - if you haven't registered the app yet, we warn you. 
+            // Developer code - if you haven't registered the app yet, we warn you.
             if (!App.Current.Resources.ContainsKey("ida:ClientID"))
             {
                 InfoText.Text = ResourceLoader.GetForCurrentView().GetString("NoClientIdMessage");
@@ -570,7 +570,7 @@ Add this code inside your namespace to complete the client library version of th
         {
             ProgressBar.Visibility = Visibility.Visible;
             if (await SignInCurrentUserAsync())
-            { 
+            {
                 InfoText.Text = "Hi " + _displayName + "," + Environment.NewLine + ResourceLoader.GetForCurrentView().GetString("SendMailPrompt");
                 MailButton.IsEnabled = true;
                 EmailAddressBox.IsEnabled = true;
@@ -604,7 +604,7 @@ Add this code inside your namespace to complete the client library version of th
             {
                 ProgressBar.Visibility = Visibility.Collapsed;
             }
-            
+
         }
 
         // <summary>
@@ -632,7 +632,7 @@ Add this code inside your namespace to complete the client library version of th
 
 ***REST version***
 
-The REST version of this class looks very similar to the client library version, except that it calls the `GetTokenForUserAsync` method directly when the user authenticates. It also retrieves user values from the app's roaming settings. 
+The REST version of this class looks very similar to the client library version, except that it calls the `GetTokenForUserAsync` method directly when the user authenticates. It also retrieves user values from the app's roaming settings.
 
 Add this code inside your namespace to complete the REST version of the MainPage class in MainPage.xaml.cs:
 
@@ -651,7 +651,7 @@ Add this code inside your namespace to complete the REST version of the MainPage
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            // Developer code - if you haven't registered the app yet, we warn you. 
+            // Developer code - if you haven't registered the app yet, we warn you.
             if (!App.Current.Resources.ContainsKey("ida:ClientID"))
             {
                 InfoText.Text = ResourceLoader.GetForCurrentView().GetString("NoClientIdMessage");
@@ -691,7 +691,7 @@ Add this code inside your namespace to complete the REST version of the MainPage
         {
             ProgressBar.Visibility = Visibility.Visible;
             if (await SignInCurrentUserAsync())
-            { 
+            {
                 InfoText.Text = "Hi " + _displayName + "," + Environment.NewLine + ResourceLoader.GetForCurrentView().GetString("SendMailPrompt");
                 MailButton.IsEnabled = true;
                 EmailAddressBox.IsEnabled = true;
@@ -725,7 +725,7 @@ Add this code inside your namespace to complete the REST version of the MainPage
             {
                 ProgressBar.Visibility = Visibility.Collapsed;
             }
-            
+
         }
 
         // <summary>
@@ -750,11 +750,11 @@ Add this code inside your namespace to complete the REST version of the MainPage
         }
     }
 ```
- 
-You've now performed the three steps required for interacting with Microsoft Graph: app registration, user authentication, and making a request. 
+
+You've now performed the three steps required for interacting with Microsoft Graph: app registration, user authentication, and making a request.
 
 ## Run the app
-1. Press F5 to build and run the app. 
+1. Press F5 to build and run the app.
 
 2. Sign in with your personal or work or school account and grant the requested permissions.
 
@@ -768,4 +768,3 @@ You've now performed the three steps required for interacting with Microsoft Gra
 - [Microsoft Graph .NET Client Library](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
 - [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
 - [Azure AD v2.0 tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
-
