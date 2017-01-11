@@ -47,7 +47,7 @@ A message in a mailFolder.
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
 |id|String|Unique identifier for the message (note that this value may change if a message is moved or altered)|
-|importance|String| The importance of the message: `Low`, `Normal`, `High`.|
+|importance|String| The importance of the message: `Low`, `Normal`, `High`. If not provided, Low importance is set as default.|
 |inferenceClassification | String | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused` or `other`. |
 |internetMessageId |String |The message ID in the format specified by [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
@@ -57,7 +57,7 @@ A message in a mailFolder.
 |lastModifiedDateTime|DateTimeOffset|The date and time the message was last changed.|
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
-|replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
+|replyTo|[recipient](recipient.md) collection|The email addresses to use when replying. This is a required property.|
 |sender|[recipient](recipient.md)|The account that is actually used to generate the message.|
 |sentDateTime|DateTimeOffset|The date and time the message was sent.|
 |subject|String|The subject of the message.|
