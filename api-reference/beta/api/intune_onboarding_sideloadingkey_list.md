@@ -1,4 +1,4 @@
-﻿# List sideLoadingKeys
+﻿# List sideLoadingKeys> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 List properties and relationships of the [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

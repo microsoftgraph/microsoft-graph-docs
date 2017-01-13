@@ -1,4 +1,4 @@
-﻿# wipeByDeviceTag action
+﻿# wipeByDeviceTag action> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 Wipe by device tag of the [user](../resources/intune_mam_user.md) objects.
 
 ### Prerequisites

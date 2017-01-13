@@ -1,4 +1,4 @@
-﻿# renewUpload action
+﻿# renewUpload action> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 Renew and upload the contents of the [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

@@ -48,7 +48,7 @@ Or on a drive root item:
 
 Creating a subscription in most cases requires read scope to the resource. For example, to get notifications messages, your app needs the `mail.read` permission. Please note that currently the `Files.ReadWrite` permission is required for OneDrive Drive root items and drives associated with SharePoint sites require `Files.ReadWrite.All`.
 
-Subscriptions expire. The current longest expiration time is three days minus 9-0 minutes from the time of creation. Apps need to renew their subscriptions before the expiration time. Otherwise they'll need to create a new subscription.
+Subscriptions expire. The current longest expiration time is three days minus 90 minutes (4230 in total) from the time of creation. Apps need to renew their subscriptions before the expiration time. Otherwise they'll need to create a new subscription.
 
 ## Notification URL validation
 

@@ -32,6 +32,9 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts
 ```
+
+>Include [query parameters](https://graph.microsoft.io/en-us/docs/overview/query_parameters) such as **filter** and **select** to refine your request. Example: `https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/address eq '@domain.com')`
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {

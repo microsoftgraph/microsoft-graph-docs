@@ -1,4 +1,4 @@
-﻿# Delete windowsPhone81VpnConfiguration
+﻿# Delete windowsPhone81VpnConfiguration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 Deletes a [windowsPhone81VpnConfiguration](../resources/intune_deviceconfig_windowsphone81vpnconfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

@@ -1,4 +1,4 @@
-﻿# importAppleDeviceIdentityList action
+﻿# importAppleDeviceIdentityList action> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 Imports a list of [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

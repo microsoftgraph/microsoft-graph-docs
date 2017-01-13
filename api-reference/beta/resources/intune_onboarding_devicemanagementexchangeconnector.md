@@ -1,4 +1,4 @@
-﻿# deviceManagementExchangeConnector resource type
+﻿# deviceManagementExchangeConnector resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
 Entity which represents a connection to an Exchange environment.
 ### Methods

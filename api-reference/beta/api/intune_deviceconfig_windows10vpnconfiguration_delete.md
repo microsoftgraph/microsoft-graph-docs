@@ -1,4 +1,4 @@
-﻿# Delete windows10VpnConfiguration
+﻿# Delete windows10VpnConfiguration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 Deletes a [windows10VpnConfiguration](../resources/intune_deviceconfig_windows10vpnconfiguration.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

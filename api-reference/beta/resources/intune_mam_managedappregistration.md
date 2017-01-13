@@ -1,4 +1,4 @@
-﻿# managedAppRegistration resource type
+﻿# managedAppRegistration resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
 The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
 The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization.

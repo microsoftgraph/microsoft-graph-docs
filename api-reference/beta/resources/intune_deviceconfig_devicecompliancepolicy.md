@@ -1,4 +1,4 @@
-﻿# deviceCompliancePolicy resource type
+﻿# deviceCompliancePolicy resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
 This is the base class for Compliance policy. Compliance policies are platform specific and individual per-platform compliance policies inherit from here. 
 ### Methods

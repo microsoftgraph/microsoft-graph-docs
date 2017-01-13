@@ -1,4 +1,4 @@
-﻿# remoteActionAudit resource type
+﻿# remoteActionAudit resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
 Report of remote actions initiated on the devices belonging to a certain tenant.
 ### Methods

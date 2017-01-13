@@ -1,4 +1,4 @@
-﻿# Delete defaultManagedAppProtection
+﻿# Delete defaultManagedAppProtection> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 Deletes a [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

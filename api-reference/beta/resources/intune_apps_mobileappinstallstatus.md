@@ -1,4 +1,4 @@
-﻿# mobileAppInstallStatus resource type
+﻿# mobileAppInstallStatus resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
 Contains properties for the installation status of a mobile app for a device.
 ### Methods

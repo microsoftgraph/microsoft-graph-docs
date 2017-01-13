@@ -1,4 +1,4 @@
-﻿# iosManagedAppRegistration resource type
+﻿# iosManagedAppRegistration resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
 Represents the synchronization details of an ios app, with management capabilities, for a specific user.
 The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization.

@@ -1,4 +1,4 @@
-﻿# windows81VpnProxyServer resource type
+﻿# windows81VpnProxyServer resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
 VPN Proxy Server.
 

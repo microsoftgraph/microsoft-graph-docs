@@ -1,4 +1,4 @@
-﻿# List windowsPhone81VpnConfigurations
+﻿# List windowsPhone81VpnConfigurations> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 List properties and relationships of the [windowsPhone81VpnConfiguration](../resources/intune_deviceconfig_windowsphone81vpnconfiguration.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

@@ -1,4 +1,4 @@
-﻿# intuneBrand resource type
+﻿# intuneBrand resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
 intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.
 ### Properties

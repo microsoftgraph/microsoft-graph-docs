@@ -1,4 +1,4 @@
-# Working with Intune in Microsoft Graph  
+# Working with Intune in Microsoft Graph  > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
 Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected.  To understand what's available in Intune, start here: [Introduction to Microsoft Intune](https://docs.microsoft.com/en-us/intune/understand-explore/introduction-to-microsoft-intune).   
 

@@ -1,4 +1,4 @@
-﻿# updateMobileAppIdentifierDeployments action
+﻿# updateMobileAppIdentifierDeployments action> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 Update mobileAppIdentifierDeployments of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

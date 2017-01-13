@@ -1,4 +1,4 @@
-﻿# bypassActivationLock action
+﻿# bypassActivationLock action> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 Bypass activation lock for a [managedDevice](../resources/intune_onboarding_manageddevice.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

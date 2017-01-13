@@ -1,4 +1,4 @@
-﻿# localizedNotificationMessage resource type
+﻿# localizedNotificationMessage resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
 The text content of a Notification Message Template for the specified locale.
 ### Methods
