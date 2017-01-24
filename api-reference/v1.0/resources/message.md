@@ -6,7 +6,7 @@ A message in a mailFolder.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List messages](../api/user_list_messages.md) |[message](message.md) collection | Get all the messages in the signed-in user's mailbox (excluding the Deleted Items and Clutter folders). |
+|[List messages](../api/user_list_messages.md) |[message](message.md) collection | Get all the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). |
 |[Create message](../api/user_post_messages.md) | [message](message.md) | [Create](../api/user_post_messages.md#request-1) a draft of a new message. |
 |[Get message](../api/message_get.md) | [message](message.md) |Read properties and relationships of message object.|
 |[Update](../api/message_update.md) | [message](message.md) |Update message object.|
