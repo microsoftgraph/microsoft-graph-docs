@@ -1,7 +1,7 @@
 # Sovereign cloud deployments
 
 
-This article provides information about the different sovereign cloud instances of Microsoft Graph and the capabilities that are available to developers. 
+This article provides information about the different sovereign cloud instances of Microsoft Graph and the capabilities that are available to developers. The usage scenarios for sovereign include but not limited to requirements imposed for locality of the data due to regulations.
 
 
 ## Microsoft Graph operated by 21Vianet in China
