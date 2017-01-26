@@ -61,7 +61,7 @@ Here is an example of the request.
   "name": "get_calendarview"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendar/calendarView
+GET https://graph.microsoft.com/beta/me/calendar/calendarView?startDateTime=2017-01-01T19:00:00.0000000&endDateTime=2017-01-07T19:00:00.0000000
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

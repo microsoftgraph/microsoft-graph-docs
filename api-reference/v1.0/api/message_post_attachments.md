@@ -69,7 +69,22 @@ Here is an example of the response.
   "truncated": true
 } -->
 ```http
-HTTP 200 OK
+HTTP 201 OK
+
+{
+    "@odata.context": " ... ",
+    "@odata.type": "#microsoft.graph.fileAttachment",
+    "id": " ... ",
+    "lastModifiedDateTime": "2017-01-26T08:48:28Z",
+    "name": "smile.gif",
+    "contentType": "image/gif",
+    "size": 1008,
+    "isInline": false,
+    "contentId": null,
+    "contentLocation": null,
+    "contentBytes": "R0lGODdhEA ... YEAA7"
+}
+
 ```
 
 ## Example (item attachment)
