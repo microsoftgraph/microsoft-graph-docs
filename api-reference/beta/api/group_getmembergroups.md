@@ -8,7 +8,7 @@ request can return is 2046. Note that Office 365 Groups cannot contain groups. S
 always direct.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **scopes** is required to execute this API: *User.Read.All* AND *Group.Read.All* or *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -17,7 +17,7 @@ POST /groups/{id}/getMemberGroups
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer &lt;token&gt. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
