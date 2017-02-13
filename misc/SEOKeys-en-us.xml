@@ -1273,7 +1273,6 @@
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_get"/>
 			<Item text="List" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_list"/>
-			<Item text="List mobile app configuration device status" url="/en-us/api-reference/beta/pi/intune_apps_ioslobappprovisioningconfiguration_list_manageddevicemobileappconfigurationdevicestatus"/>
 			<Item text="List mobile app configuration user status" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_list_manageddevicemobileappconfigurationuserstatus"/>
 			<Item text="List mobile app configuration group assignment" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_list_mdmappconfiggroupassignment"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_update"/>
@@ -2392,7 +2391,6 @@
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_get"/>
       <Item text="Get device compliance overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_get_devicecompliancedeviceoverview"/>
-      <Item text="Get device configuration overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_get_deviceconfigurationdeviceoverview"/>
 			<Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_list"/>
 			<Item text="List device compliance device status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_list_devicecompliancedevicestatus"/>
 			<Item text="List device compliance group assingment" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_list_devicecompliancepolicygroupassignment"/>
