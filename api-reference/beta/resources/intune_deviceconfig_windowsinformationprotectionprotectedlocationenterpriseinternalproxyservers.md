@@ -6,14 +6,14 @@ Windows Information Protection Protected Location Enterprise Internal Proxy Serv
 
 Inherits from [windowsInformationProtectionProtectedLocation](../resources/intune_deviceconfig_windowsinformationprotectionprotectedlocation.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |proxyServerUris|String collection|Proxy Server Uris.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

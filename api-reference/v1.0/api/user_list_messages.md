@@ -5,10 +5,23 @@ Get the messages in the signed-in user's mailbox (including the Deleted Items an
 One of the following **scopes** is required to execute this API:
 *Mail.Read; Mail.ReadWrite*
 ## HTTP request
+
+To get all the messages in a user's mailbox:
+
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/messages
 GET /users/{id | userPrincipalName}/messages
 ```
+
+To get messages in a specific folder in the user's mailbox:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/{id}/messages
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
+```
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers

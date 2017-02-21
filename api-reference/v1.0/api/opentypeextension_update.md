@@ -6,40 +6,57 @@ Update a data extension ([openTypeExtension](../resources/openTypeExtension.md) 
 extension is updated.
 - Otherwise that property and its data are added to the extension. 
 
-The extension can be in a message, event, or contact in the signed-in user's mailbox on Office 365 or
-Outlook.com. Or, it can be an event or post for an Office 365 group. Data in an extension can be primitive types, 
-or arrays of primitive types.
+The data in an extension can be primitive types, or arrays of primitive types.
 
 
 ## Prerequisites
 
-One of the following **scopes** is required to execute this API, depending on the resource you're
-creating the extension in:
+One of the following **permissions** is required to execute this API, depending on the resource that 
+the extension was created in:
 
-- _Mail.ReadWrite_
-- _Calendars.ReadWrite_
-- _Contacts.ReadWrite_
-- _Group.ReadWrite.All_
+|**Supported resource**|**Permission**|**Supported resource**|**Permission** |
+|:-----|:-----|:-----|:-----|
+| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group event](../resources/event.md) | _Calendars.ReadWrite_ | 
+| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ | 
+| [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
  
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+In the request, identify the resource instance, use the **extensions** 
+navigation property of that instance to identify the extension, and do a `PATCH` on that extension instance.
 
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+PATCH /groups/{id}/events/{id}/extensions/{extensionId}
+PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
+```
+
+>**Note:** Some resources support identifying an instance in multiple ways all of which support updating an extension. 
+The above section includes only a subset of the 
+supported syntax. You can find a more complete description of the ways to identify an existing instance in the corresponding `GET` topic below. 
+
+- [Get a contact](../api/contact_get.md)
+- [Get an event](../api/event_get.md)
+- [Get a group event](../api/event_get.md)
+- [Get a group post](../api/post_get.md)
+- [Get a message](../api/message_get.md) 
+
+For example, you can identify an existing message in the signed-in user's mailbox as follows:
+<!-- { "blockType": "ignored" } -->
+```http
+/me/messages/{id}
+```
+
+To update an extension in an existing message instance in that mailbox, build upon that URL, 
+identify an extension using the **extensions** navigation property of that message, and do a `PATCH` on that extension as shown below:
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/messages/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-PATCH /me/mailFolders/{id}/messages/{id}/extensions/{extensionId}
-
-PATCH /me/events/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-
-PATCH /me/contacts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-
-PATCH /groups/{id}/events/{id}/extensions/{extensionId}
-
-PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-PATCH /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
 ```
+
+See the [Request body](#request-body) section about including in the request body any custom data to change or add to that extension.
 
 
 ## Parameters

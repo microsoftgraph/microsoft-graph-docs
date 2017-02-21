@@ -6,7 +6,7 @@ Windows Information Protection App Rule Desktop Template definition.
 
 Inherits from [windowsInformationProtectionAppRuleTemplate](../resources/intune_deviceconfig_windowsinformationprotectionappruletemplate.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |publisher|String|Publisher (Empty field is consider matching all).|
@@ -15,9 +15,9 @@ Inherits from [windowsInformationProtectionAppRuleTemplate](../resources/intune_
 |version|String|Version.|
 |versionCondition|String|Version condition. Possible values are: `andAbove`, `andBelow`, `equal`.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged. Pre-staged device identities are assigned to this type of profile to apply the profile's configurations at enrollment of the corresponding device.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List enrollmentProfiles](../api/intune_corpenrollment_enrollmentprofile_list.md)|[enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) collection|List properties and relationships of the [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) objects.|
@@ -14,7 +14,7 @@ The enrollmentProfile resource represents a collection of configurations which m
 |[exportMobileConfig function](../api/intune_corpenrollment_enrollmentprofile_exportmobileconfig.md)|String|Not yet documented|
 |[updateDeviceProfileAssignment action](../api/intune_corpenrollment_enrollmentprofile_updatedeviceprofileassignment.md)|None|Not yet documented|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|The GUID for the object|
@@ -23,9 +23,9 @@ The enrollmentProfile resource represents a collection of configurations which m
 |requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication|
 |configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

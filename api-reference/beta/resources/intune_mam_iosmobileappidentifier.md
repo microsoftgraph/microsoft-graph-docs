@@ -6,14 +6,14 @@ The identifier for an iOS app.
 
 Inherits from [mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |bundleId|String|The identifier for an app, as specified in the app store.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -9,7 +9,8 @@ One of the following **scopes** is required to execute this API: *Directory.Read
 GET /directoryRoles/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method does **not** support the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response (e.g. $filter is not supported here).
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|

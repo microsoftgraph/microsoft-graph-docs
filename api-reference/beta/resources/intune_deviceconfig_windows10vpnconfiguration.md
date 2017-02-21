@@ -6,7 +6,7 @@ By providing the configurations in this profile you can instruct the Windows 10 
 
 Inherits from [windowsVpnConfiguration](../resources/intune_deviceconfig_windowsvpnconfiguration.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List windows10VpnConfigurations](../api/intune_deviceconfig_windows10vpnconfiguration_list.md)|[windows10VpnConfiguration](../resources/intune_deviceconfig_windows10vpnconfiguration.md) collection|List properties and relationships of the [windows10VpnConfiguration](../resources/intune_deviceconfig_windows10vpnconfiguration.md) objects.|
@@ -20,7 +20,7 @@ Inherits from [windowsVpnConfiguration](../resources/intune_deviceconfig_windows
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_windows10vpnconfiguration_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 |[Get windows10CertificateProfileBase](../api/intune_deviceconfig_windows10vpnconfiguration_get_windows10certificateprofilebase.md)|[windows10CertificateProfileBase](../resources/intune_deviceconfig_windows10certificateprofilebase.md)|Get the [windows10CertificateProfileBase](../resources/intune_deviceconfig_windows10certificateprofilebase.md) from the identityCertificate navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -49,7 +49,7 @@ Inherits from [windowsVpnConfiguration](../resources/intune_deviceconfig_windows
 |routes|[vpnRoute](../resources/intune_deviceconfig_vpnroute.md) collection|Routes (optional for third-party providers).|
 |dnsRules|[vpnDnsRule](../resources/intune_deviceconfig_vpndnsrule.md) collection|DNS rules.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -58,7 +58,7 @@ Inherits from [windowsVpnConfiguration](../resources/intune_deviceconfig_windows
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |identityCertificate|[windows10CertificateProfileBase](../resources/intune_deviceconfig_windows10certificateprofilebase.md)|Identity certificate for client authentication when authentication method is certificate.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

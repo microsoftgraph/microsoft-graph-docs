@@ -6,7 +6,7 @@ By providing the configurations in this profile you can instruct the Windows Pho
 
 Inherits from [windows81VpnConfiguration](../resources/intune_deviceconfig_windows81vpnconfiguration.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List windowsPhone81VpnConfigurations](../api/intune_deviceconfig_windowsphone81vpnconfiguration_list.md)|[windowsPhone81VpnConfiguration](../resources/intune_deviceconfig_windowsphone81vpnconfiguration.md) collection|List properties and relationships of the [windowsPhone81VpnConfiguration](../resources/intune_deviceconfig_windowsphone81vpnconfiguration.md) objects.|
@@ -20,7 +20,7 @@ Inherits from [windows81VpnConfiguration](../resources/intune_deviceconfig_windo
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_windowsphone81vpnconfiguration_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 |[Get windowsPhone81CertificateProfileBase](../api/intune_deviceconfig_windowsphone81vpnconfiguration_get_windowsphone81certificateprofilebase.md)|[windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md)|Get the [windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md) from the identityCertificate navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -43,7 +43,7 @@ Inherits from [windows81VpnConfiguration](../resources/intune_deviceconfig_windo
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |dnsSuffixSearchList|String collection|DNS suffix search list.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -52,7 +52,7 @@ Inherits from [windows81VpnConfiguration](../resources/intune_deviceconfig_windo
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |identityCertificate|[windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md)|Identity certificate for client authentication when authentication method is certificate.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -1,8 +1,9 @@
 # Get subscribedSku
+Retrieve a specific commercial subscription that an organization has acquired.
 
-Retrieve the properties and relationships of subscribedsku object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API: *Directory.Read.All*, *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

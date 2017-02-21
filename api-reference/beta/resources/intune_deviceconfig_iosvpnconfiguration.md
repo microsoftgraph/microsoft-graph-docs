@@ -6,7 +6,7 @@ By providing the configurations in this profile you can instruct the iOS device 
 
 Inherits from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List iosVpnConfigurations](../api/intune_deviceconfig_iosvpnconfiguration_list.md)|[iosVpnConfiguration](../resources/intune_deviceconfig_iosvpnconfiguration.md) collection|List properties and relationships of the [iosVpnConfiguration](../resources/intune_deviceconfig_iosvpnconfiguration.md) objects.|
@@ -20,7 +20,7 @@ Inherits from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnc
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_iosvpnconfiguration_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 |[Get iosCertificateProfileBase](../api/intune_deviceconfig_iosvpnconfiguration_get_ioscertificateprofilebase.md)|[iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)|Get the [iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md) from the identityCertificate navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -44,7 +44,7 @@ Inherits from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnc
 |onDemandRules|[vpnOnDemandRule](../resources/intune_deviceconfig_vpnondemandrule.md) collection|On-Demand Rules Inherited from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|Proxy Server. Inherited from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md)|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -53,7 +53,7 @@ Inherits from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnc
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |identityCertificate|[iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)|Identity certificate for client authentication when authentication method is certificate.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

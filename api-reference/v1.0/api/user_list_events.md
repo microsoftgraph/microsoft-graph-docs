@@ -13,6 +13,18 @@ One of the following **scopes** is required to execute this API:
 ```http
 GET /me/events
 GET /users/{id | userPrincipalName}/events
+
+GET /me/calendar/events
+GET /users/{id | userPrincipalName}/calendar/events
+
+GET /me/calendars/{id}/events
+GET /users/{id | userPrincipalName}/calendars/{id}/events
+
+GET /me/calendargroup/calendars/{id}/events
+GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events
+
+GET /me/calendargroups/{id}/calendars/{id}/events
+GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

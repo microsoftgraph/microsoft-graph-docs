@@ -303,3 +303,8 @@ content-length: 96
 ```
 
 The request payload contains the input to the `sendMail` action, which is also defined in the $metadata.
+
+## Use Microsoft Graph client libraries
+Like the power and ease of SDKs? While you can always call Microsoft Graph using the REST API, we also provide SDKs for many popular platforms.
+
+Explore our [SDKs](https://graph.microsoft.io/en-us/code-samples-and-sdks).

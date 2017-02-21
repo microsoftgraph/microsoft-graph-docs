@@ -7,7 +7,7 @@ The ManagedAppRegistration resource represents the details of an app, with manag
 
 Inherits from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List iosManagedAppRegistrations](../api/intune_mam_iosmanagedappregistration_list.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) collection|List properties and relationships of the [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) objects.|
@@ -19,7 +19,7 @@ Inherits from [managedAppRegistration](../resources/intune_mam_managedappregistr
 |[List managedAppPolicies](../api/intune_mam_iosmanagedappregistration_list_managedapppolicy.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Get the managedAppPolicies from the intendedPolicies navigation property.|
 |[List managedAppOperations](../api/intune_mam_iosmanagedappregistration_list_managedappoperation.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md) collection|Get the managedAppOperations from the operations navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |createdDateTime|DateTimeOffset|Date and time of creation Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
@@ -36,14 +36,14 @@ Inherits from [managedAppRegistration](../resources/intune_mam_managedappregistr
 |id|String|Key of the entity. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |version|String|Version of the entity. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |appliedPolicies|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Zero or more policys already applied on the registered app when it last synchronized with managment service. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |intendedPolicies|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Zero or more policies admin intended for the app as of now. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |operations|[managedAppOperation](../resources/intune_mam_managedappoperation.md) collection|Zero or more long running operations triggered on the app registration. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -6,7 +6,7 @@ Android PKCS certificate profile
 
 Inherits from [androidCertificateProfileBase](../resources/intune_deviceconfig_androidcertificateprofilebase.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List androidPkcsCertificateProfiles](../api/intune_deviceconfig_androidpkcscertificateprofile_list.md)|[androidPkcsCertificateProfile](../resources/intune_deviceconfig_androidpkcscertificateprofile.md) collection|List properties and relationships of the [androidPkcsCertificateProfile](../resources/intune_deviceconfig_androidpkcscertificateprofile.md) objects.|
@@ -20,7 +20,7 @@ Inherits from [androidCertificateProfileBase](../resources/intune_deviceconfig_a
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_androidpkcscertificateprofile_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 |[Get androidTrustedRootCertificate](../api/intune_deviceconfig_androidpkcscertificateprofile_get_androidtrustedrootcertificate.md)|[androidTrustedRootCertificate](../resources/intune_deviceconfig_androidtrustedrootcertificate.md)|Get the [androidTrustedRootCertificate](../resources/intune_deviceconfig_androidtrustedrootcertificate.md) from the rootCertificate navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -39,7 +39,7 @@ Inherits from [androidCertificateProfileBase](../resources/intune_deviceconfig_a
 |certificationAuthorityName|String|PKCS Certification Authority Name|
 |certificateTemplateName|String|PKCS Certificate Template Name|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -48,7 +48,7 @@ Inherits from [androidCertificateProfileBase](../resources/intune_deviceconfig_a
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |rootCertificate|[androidTrustedRootCertificate](../resources/intune_deviceconfig_androidtrustedrootcertificate.md)|Trusted Root Certificate. Inherited from [androidCertificateProfileBase](../resources/intune_deviceconfig_androidcertificateprofilebase.md)|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

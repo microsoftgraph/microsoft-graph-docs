@@ -3,13 +3,13 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Summary data for managed devices
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[Get managedDeviceOverview](../api/intune_onboarding_manageddeviceoverview_get.md)|[managedDeviceOverview](../resources/intune_onboarding_manageddeviceoverview.md)|Read properties and relationships of the [managedDeviceOverview](../resources/intune_onboarding_manageddeviceoverview.md) object.|
 |[Update managedDeviceOverview](../api/intune_onboarding_manageddeviceoverview_update.md)|[managedDeviceOverview](../resources/intune_onboarding_manageddeviceoverview.md)|Update the properties of a [managedDeviceOverview](../resources/intune_onboarding_manageddeviceoverview.md) object.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Not yet documented|
@@ -18,9 +18,9 @@ Summary data for managed devices
 |dualEnrolledDeviceCount|Int32|The number of devices enrolled in both MDM and EAS|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune_onboarding_deviceoperatingsystemsummary.md)|Device operating system summary.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

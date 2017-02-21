@@ -6,7 +6,7 @@ Policy used to configure detailed management settings targeted to specific secur
 
 Inherits from [managedAppProtection](../resources/intune_mam_managedappprotection.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List targetedManagedAppProtections](../api/intune_mam_targetedmanagedappprotection_list.md)|[targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md) collection|List properties and relationships of the [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md) objects.|
@@ -16,7 +16,7 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |[Get managedAppPolicyDeploymentSummary](../api/intune_mam_targetedmanagedappprotection_get_managedapppolicydeploymentsummary.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Get the [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) from the deploymentSummary navigation property.|
 |[List directoryObjects](../api/intune_mam_targetedmanagedappprotection_list_directoryobject.md)|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Get the directoryObjects from the targetedSecurityGroups navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
@@ -48,14 +48,14 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |targetedSecurityGroupsCount|Int32|The number of groups to which the configuration is deployed. Read only property.|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |targetedSecurityGroups|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Navigation property to list of security groups to which the configuration is deployed|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -151,11 +151,11 @@ The following are some app scenarios using the `User` and `Group` resources and 
 | App wants to read other users' basic information (only display name and picture), for example to show in a people picking experience	 | _User.ReadBasic.All_  |  Read all user's basic profiles |
 | App wants to read complete user profile for signed in user (see direct reports, and manager, etc)	 | _User.Read_ | Enable sign-in and read user profile|
 | App wants to read complete user profile all users	 | _User.Read.All_ |  Read all user's full profiles   |
-| App wants to read files, mail and calendar information for the signed in user	 | _User.Read_, _Files.Read_, _Mail.Read_, _Calendar.Read_ | Enable sign-in and read user profile, Read users' files,  Read user mail,  Read user calendars |
+| App wants to read files, mail and calendar information for the signed in user	 | _User.Read_, _Files.Read_, _Mail.Read_, _Calendars.Read_ | Enable sign-in and read user profile, Read users' files,  Read user mail,  Read user calendars |
 | App wants to read the signed-in user's (my) files and files that other users have shared with the signed-in user (me). | _User.Read_, _Files.Read_, _Sites.Read.All_ | Enable sign-in and read user profile, Read users' files,  Read items in all site collections |
 | App wants to read and write complete user profile for signed in user	 | _User.ReadWrite_ | Read and write access to user profile |
 | App wants to read and write complete user profile all users	 | _User.ReadWrite.All_ | Read and write all user's full profiles |
-| App wants to read and write files, mail and calendar information for the signed in user	 | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendar.ReadWrite_  |  Read and write access to user profile,  Read and write access to user profile,  Read and write access to user mail, Have full access to user calendars |
+| App wants to read and write files, mail and calendar information for the signed in user	 | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  Read and write access to user profile,  Read and write access to user profile,  Read and write access to user mail, Have full access to user calendars |
    
 
 ###Access scenarios using the Group resource and the required scopes

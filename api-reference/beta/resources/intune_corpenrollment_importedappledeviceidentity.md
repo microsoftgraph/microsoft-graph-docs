@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The importedAppleDeviceIdentity resource represents the imported device identity of an Apple device .
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List importedAppleDeviceIdentities](../api/intune_corpenrollment_importedappledeviceidentity_list.md)|[importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) collection|List properties and relationships of the [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) objects.|
@@ -13,7 +13,7 @@ The importedAppleDeviceIdentity resource represents the imported device identity
 |[Update importedAppleDeviceIdentity](../api/intune_corpenrollment_importedappledeviceidentity_update.md)|[importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md)|Update the properties of a [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) object.|
 |[importAppleDeviceIdentityList action](../api/intune_corpenrollment_importedappledeviceidentity_importappledeviceidentitylist.md)|[importedAppleDeviceIdentityResult](../resources/intune_corpenrollment_importedappledeviceidentityresult.md) collection|Not yet documented|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
@@ -28,9 +28,9 @@ The importedAppleDeviceIdentity resource represents the imported device identity
 |enrollmentState|String|The state of the device in Intune Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
 |platform|String|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

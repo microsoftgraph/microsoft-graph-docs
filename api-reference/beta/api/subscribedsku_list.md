@@ -1,8 +1,9 @@
 # List subscribedSkus
+Retrieve the list of commercial subscriptions that an organization has acquired.
 
-Retrieve a list of subscribedsku objects.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API: *Directory.Read.All*, *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

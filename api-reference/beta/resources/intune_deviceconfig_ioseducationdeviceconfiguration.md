@@ -6,7 +6,7 @@ iOS Education configuration profile
 
 Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List iosEducationDeviceConfigurations](../api/intune_deviceconfig_ioseducationdeviceconfiguration_list.md)|[iosEducationDeviceConfiguration](../resources/intune_deviceconfig_ioseducationdeviceconfiguration.md) collection|List properties and relationships of the [iosEducationDeviceConfiguration](../resources/intune_deviceconfig_ioseducationdeviceconfiguration.md) objects.|
@@ -23,7 +23,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |[List iosTrustedRootCertificates](../api/intune_deviceconfig_ioseducationdeviceconfiguration_list_iostrustedrootcertificate.md)|[iosTrustedRootCertificate](../resources/intune_deviceconfig_iostrustedrootcertificate.md) collection|Get the iosTrustedRootCertificates from the studentRootCertificates navigation property.|
 |[Get iosCertificateProfileBase](../api/intune_deviceconfig_ioseducationdeviceconfiguration_get_ioscertificateprofilebase.md)|[iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)|Get the [iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md) from the studentIdentityCertificate navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -33,7 +33,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -45,7 +45,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |studentRootCertificates|[iosTrustedRootCertificate](../resources/intune_deviceconfig_iostrustedrootcertificate.md) collection|Student Trusted Root Certificate.|
 |studentIdentityCertificate|[iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)|Student identity certificate for client authentication.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

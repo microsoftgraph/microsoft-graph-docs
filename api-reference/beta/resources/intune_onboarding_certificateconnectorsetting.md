@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Certificate connector settings.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |status|Int32|Certificate connector status|
@@ -13,9 +13,9 @@ Certificate connector settings.
 |connectorVersion|String|Version of certificate connector|
 |lastUploadVersion|Int64|Version of last uploaded certificate connector|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

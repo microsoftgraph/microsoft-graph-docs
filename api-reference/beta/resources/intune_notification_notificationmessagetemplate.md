@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Notification messages are messages that are sent to end users who are determined to be not-compliant with the compliance policies defined by the administrator. Administrators choose notifications and configure them in the Intune Admin Console using the compliance policy creation page under the “Actions for non-compliance” section. Use the notificationMessageTemplate object to create your own custom notifications for administrators to choose while configuring actions for non-compliance.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List notificationMessageTemplates](../api/intune_notification_notificationmessagetemplate_list.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) collection|List properties and relationships of the [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) objects.|
@@ -14,7 +14,7 @@ Notification messages are messages that are sent to end users who are determined
 |[sendTestMessage action](../api/intune_notification_notificationmessagetemplate_sendtestmessage.md)|None|Not yet documented|
 |[List localizedNotificationMessages](../api/intune_notification_notificationmessagetemplate_list_localizednotificationmessage.md)|[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) collection|Get the localizedNotificationMessages from the localizedNotificationMessages navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
@@ -24,12 +24,12 @@ Notification messages are messages that are sent to end users who are determined
 |defaultLocale|String|The default locale to fallback onto when the requested locale is not available.|
 |brandingOptions|String|The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |localizedNotificationMessages|[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) collection|The list of localized messages for this Notification Message Template.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

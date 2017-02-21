@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Singleton entity that acts as a container for all device management functionality.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[Get deviceManagement](../api/intune_rbac_devicemanagement_get.md)|[deviceManagement](../resources/intune_rbac_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_rbac_devicemanagement.md) object.|
@@ -16,19 +16,19 @@ Singleton entity that acts as a container for all device management functionalit
 |[List resourceOperations](../api/intune_rbac_devicemanagement_list_resourceoperation.md)|[resourceOperation](../resources/intune_rbac_resourceoperation.md) collection|Get the resourceOperations from the resourceOperations navigation property.|
 |[Create resourceOperation](../api/intune_rbac_devicemanagement_create_resourceoperation.md)|[resourceOperation](../resources/intune_rbac_resourceoperation.md)|Create a new [resourceOperation](../resources/intune_rbac_resourceoperation.md) by posting to the resourceOperations collection.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Not yet documented|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |roleDefinitions|[roleDefinition](../resources/intune_rbac_roledefinition.md) collection|The Role Definitions.|
 |roleAssignments|[roleAssignment](../resources/intune_rbac_roleassignment.md) collection|The Role Assignments.|
 |resourceOperations|[resourceOperation](../resources/intune_rbac_resourceoperation.md) collection|The Resource Operations.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -1,14 +1,14 @@
 # group: getMemberGroups
 Return all the groups that the specified group is a member of. The check is transitive, unlike reading the 
-[memberOf](../api/group_list_memberof.md) navigation 
-property, which returns only the groups that the group is a direct member of.
+[memberOf](../api/group_list_memberof.md) navigation property, which returns only the groups that the group is a direct member of.
 
 This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each 
 request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is 
 always direct.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following **scopes** is required to execute this API: *Group.Read.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -24,7 +24,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean|**true** to specify that only security groups that the group is a member of should be returned; **false** to specify that all groups that the group is a member of should be returned.|
+|securityEnabledOnly|Boolean|Set to **false**. Returning only security-enabled groups is supported for users only.|
 
 ## Response
 If successful, this method returns `200, OK` response code and String collection in the response body that contains the IDs of the groups that the group is a member of.
@@ -43,7 +43,7 @@ Content-type: application/json
 Content-length: 33
 
 {
-  "securityEnabledOnly": true
+  "securityEnabledOnly": false
 }
 ```
 

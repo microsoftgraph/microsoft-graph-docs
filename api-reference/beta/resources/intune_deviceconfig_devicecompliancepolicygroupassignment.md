@@ -6,7 +6,7 @@ Device compliance policy group assignment.
 
 Inherits from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List deviceCompliancePolicyGroupAssignments](../api/intune_deviceconfig_devicecompliancepolicygroupassignment_list.md)|[deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) collection|List properties and relationships of the [deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) objects.|
@@ -16,18 +16,18 @@ Inherits from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfi
 |[Update deviceCompliancePolicyGroupAssignment](../api/intune_deviceconfig_devicecompliancepolicygroupassignment_update.md)|[deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md)|Update the properties of a [deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) object.|
 |[Get deviceCompliancePolicy](../api/intune_deviceconfig_devicecompliancepolicygroupassignment_get_devicecompliancepolicy.md)|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|Get the [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) from the deviceCompliancePolicy navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)|
 |targetGroupId|String|The Id of the AAD group we are targeting the device compliance policy to.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |deviceCompliancePolicy|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|The navigation link to the  device compliance polic targeted. Inherited from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

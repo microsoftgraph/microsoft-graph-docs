@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Apple MDM push certificate setting.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |appleIdentifier|String|Apple Id of the account used to create the MDM push certificate.|
@@ -13,9 +13,9 @@ Apple MDM push certificate setting.
 |certificateUploadStatus|String|The certificate upload status.|
 |certificateUploadFailureReason|String|The reason the certificate upload failed.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

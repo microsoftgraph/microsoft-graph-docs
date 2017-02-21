@@ -1,74 +1,84 @@
 # Create data extension
 
-Create a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) and add custom properties in a new or existing instance of a resource. 
-
-The resource can be a message, calendar event, or contact in the signed-in user's mailbox on Office 365 or
-Outlook.com. Or, it can be an event or post for an Office 365 group. 
-
+Create a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) and add custom properties 
+in a new or existing instance of a supported resource. 
 
 ## Prerequisites
 
-One of the following **scopes** is required to execute this API, depending on the resource you're
-creating the extension in:
+One of the following **permissions** is required to execute this API, depending on the resource you're
+creating the extension in.
 
-- _Mail.ReadWrite_
-- _Calendars.ReadWrite_
-- _Contacts.ReadWrite_
-- _Group.ReadWrite.All_
- 
+|**Supported resource**|**Permission**|**Supported resource**|**Permission** |
+|:-----|:-----|:-----|:-----|
+| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group event](../resources/event.md) | _Calendars.ReadWrite_ | 
+| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ | 
+| [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+
+
 ## HTTP request
-You can create an extension in a new or existing resource instance.
 
-To create an extension in a _new_ resource instance, use the same REST request as creating the
-instance, and include the properties of the new resource instance _and extension_ in the request body.
-Note that some resources support creation in more than one way. For more information on creating these resource instances,
-see the corresponding topics for creating a [message](../resources/message.md), [event](../api/user_post_events.md), 
-[contact](../api/user_post_contacts.md), [group event](../api/group_post_events.md), and [group post](../resources/post.md). 
- 
-The following is the syntax of the requests. 
+### Create an extension in a new resource instance
+
+Use the same REST request as creating the instance. 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/messages
-POST /users/{id|userPrincipalName}/messages
-POST /me/mailFolders/{id}/messages
-
-POST /me/events
-POST /users/{id|userPrincipalName}/events
-
-POST /me/contacts
 POST /users/{id|userPrincipalName}/contacts
-
+POST /users/{id|userPrincipalName}/events
+POST /users/{id|userPrincipalName}/messages
 POST /groups/{id}/events
-
 POST /groups/{id}/threads/{id}/posts/{id}/reply
-POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
-POST /groups/{id}/threads/{id}/reply
-POST /groups/{id}/conversations/{id}/threads/{id}/reply
-POST /groups/{id}/threads
-POST /groups/{id}/conversations
 ```
 
-To create an extension in an existing resource instance, specify the instance in the
-request, and include the extension in the request body.
+>**Note:** Some resources support creation in multiple ways all of which support creating an extension. The above section includes only a subset of the 
+supported syntax. For a more complete description of the ways to create a resource instance, see the corresponding
+topic below.
 
+- [Create a contact](../api/user_post_contacts.md)
+- [Create an event](../api/user_post_events.md)
+- [Create a group event](../api/group_post_events.md)
+- [Create a group post](../resources/post.md)
+- [Create a message](../api/user_post_messages.md) 
+
+See the [Request body](#request-body) section about including the properties of the new resource instance _and the extension_ in the request body.
+
+### Create an extension in an existing resource instance
+
+Identify the resource instance in the request and do a `POST` to the **extensions** navigation property.
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{id|userPrincipalName}/contacts/{id}/extensions
+POST /users/{id|userPrincipalName}/events/{id}/extensions
+POST /users/{id|userPrincipalName}/messages/{id}/extensions
+POST /groups/{id}/events/{id}/extensions
+POST /groups/{id}/threads/{id}/posts/{id}/extensions
+```
+
+>**Note:** Some resources support identifying an instance in multiple ways all of which support creating an extension. 
+The above section includes only a subset of the 
+supported syntax. You can find a more complete description of the ways to identify an existing instance in the corresponding `GET` topic below.
+
+- [Get a contact](../api/contact_get.md)
+- [Get an event](../api/event_get.md)
+- [Get a group event](../api/event_get.md)
+- [Get a group post](../api/post_get.md)
+- [Get a message](../api/message_get.md) 
+
+For example, you can identify an existing message in the signed-in user's mailbox as follows:
+<!-- { "blockType": "ignored" } -->
+```http
+/me/messages/{id}
+```
+
+To create an extension in an existing message instance in that mailbox, build upon that URL, 
+do a `POST` on the **extensions** navigation property of that instance, like below:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/extensions
-POST /users/{id|userPrincipalName}/messages/{id}/extensions
-POST /me/mailFolders/{id}/messages/{id}/extensions
-
-POST /me/events/{id}/extensions
-POST /users/{id|userPrincipalName}/events/{id}/extensions
-
-POST /me/contacts/{id}/extensions
-POST /users/{id|userPrincipalName}/contacts/{id}/extensions
-
-POST /groups/{id}/events/{id}/extensions
-
-POST /groups/{id}/threads/{id}/posts/{id}/extensions
-POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/extensions
 ```
+
+See the [Request body](#request-body) section about including _the extension_ in the request body.
 
 
 ## Parameters
@@ -87,7 +97,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/extensions
 ## Request body
 
 Provide a JSON body of an [openTypeExtension](../resources/openTypeExtension.md), with the following required
-name-value pairs, and any additional custom data. The data in the JSON payload can be primitive types, or arrays of 
+name-value pairs and any additional custom data. The data in the JSON payload can be primitive types, or arrays of 
 primitive types.
 
 | Name       | Value |
@@ -96,26 +106,24 @@ primitive types.
 | extensionName | %unique_string% |
 
 When creating an extension in a _new_ resource instance, in addition to the 
-new **openTypeExtension** object, provide a JSON representation of that resource instance ([message](../resources/message.md), 
-[event](../resources/event.md), [contact](../resources/contact.md), or [group post](../resources/post.md) object).
+new **openTypeExtension** object, provide a JSON representation of the relevant properties to create such a resource instance.
 
 ## Response
 
 #### Response code
-An operation successful in creating an extension returns the same response code as when the operation is used to
-create only the resource instance without the extension. Depending on the operation, it can be `201 Created` or `202 Accepted`. 
-Refer to the corresponding topics for creating the instance.
+Depending on the operation, the response code can be `201 Created` or `202 Accepted`.
+
+When creating an extension in the same operation as creating a resource instance, a successful 
+operation returns the same response code as when the operation is used to create only the resource instance without the extension. 
+Refer to the corresponding topics for creating the instance, as listed [above](#create-an-extension-in-a-new-resource-instance).
 
 #### Response body
-When creating an extension in a _new_ resource instance by a POST operation on a collection of [message](../resources/message.md), 
-[event](../resources/event.md), or [contact](../resources/contact.md) objects, the 
-response body includes the new instance expanded with the [openTypeExtension](../resources/openTypeExtension.md). 
 
-When creating an extension in a _new_ [group post](../resources/post.md), the response includes only a response code but not a response body.
-
-When creating an extension in an _existing_ resource instance, the response body includes 
-the **openTypeExtension** object.
- 
+| Scenario       | Resource  | Response body |
+|:---------------|:----------|:--------------|
+| Creating an extension while explicitly creating a _new_ resource instance | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Includes the new instance expanded with the [openTypeExtension](../resources/openTypeExtension.md) object. |
+| Creating an extension while implicitly creating a resource instance | [post](../resources/post.md) | The response includes only a response code but not a response body. |
+| Creating an extension in an _existing_ resource instance | All supported resources | Includes the **openTypeExtension** object. |
 
 
 ## Example

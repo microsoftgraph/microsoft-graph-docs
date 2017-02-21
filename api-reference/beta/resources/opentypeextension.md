@@ -1,4 +1,4 @@
-# openTypeExtension resource type
+# openTypeExtension resource type (data extensions)
 
 Office 365 data extensions are represented by the **openTypeExtension** resource. 
 

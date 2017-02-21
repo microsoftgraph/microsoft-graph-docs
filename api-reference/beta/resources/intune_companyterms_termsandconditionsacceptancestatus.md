@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 A termsAndConditionsAcceptanceStatus entity represents the acceptance status of a given Terms and Conditions (T&C) policy by a given user. Users must accept the most up-to-date version of the terms in order to retain access to the Company Portal.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List termsAndConditionsAcceptanceStatuses](../api/intune_companyterms_termsandconditionsacceptancestatus_list.md)|[termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) collection|List properties and relationships of the [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) objects.|
@@ -13,7 +13,7 @@ A termsAndConditionsAcceptanceStatus entity represents the acceptance status of 
 |[Update termsAndConditionsAcceptanceStatus](../api/intune_companyterms_termsandconditionsacceptancestatus_update.md)|[termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md)|Update the properties of a [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) object.|
 |[Get termsAndConditions](../api/intune_companyterms_termsandconditionsacceptancestatus_get_termsandconditions.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|Get the [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) from the termsAndConditions navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Unique identifier of the entity.|
@@ -21,12 +21,12 @@ A termsAndConditionsAcceptanceStatus entity represents the acceptance status of 
 |acceptedVersion|Int32|Most recent version number of the T&C accepted by the user.|
 |acceptedDateTime|DateTimeOffset|DateTime when the terms were last accepted by the user.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |termsAndConditions|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|Navigation link to the terms and conditions that are assigned.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

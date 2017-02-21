@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Device location
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |lastCollectedDateTimeUtc|DateTimeOffset|Time at which location was recorded, relative to UTC|
@@ -15,9 +15,9 @@ Device location
 |heading|Double|Heading in degrees from true north|
 |speed|Double|Speed the device is traveling in meters per second|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

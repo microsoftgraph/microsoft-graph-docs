@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains content properties for a specific app version. Each mobileAppContent can have multiple mobileAppContentFile.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List mobileAppContents](../api/intune_apps_mobileappcontent_list.md)|[mobileAppContent](../resources/intune_apps_mobileappcontent.md) collection|List properties and relationships of the [mobileAppContent](../resources/intune_apps_mobileappcontent.md) objects.|
@@ -13,17 +13,17 @@ Contains content properties for a specific app version. Each mobileAppContent ca
 |[Update mobileAppContent](../api/intune_apps_mobileappcontent_update.md)|[mobileAppContent](../resources/intune_apps_mobileappcontent.md)|Update the properties of a [mobileAppContent](../resources/intune_apps_mobileappcontent.md) object.|
 |[List mobileAppContentFiles](../api/intune_apps_mobileappcontent_list_mobileappcontentfile.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) collection|Get the mobileAppContentFiles from the files navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|The app content version.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |files|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) collection|The list of files for this app content version.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

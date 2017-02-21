@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Not yet documented
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List sideLoadingKeys](../api/intune_onboarding_sideloadingkey_list.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) collection|List properties and relationships of the [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) objects.|
@@ -12,7 +12,7 @@ Not yet documented
 |[Delete sideLoadingKey](../api/intune_onboarding_sideloadingkey_delete.md)|None|Deletes a [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md).|
 |[Update sideLoadingKey](../api/intune_onboarding_sideloadingkey_update.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md)|Update the properties of a [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) object.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Not yet documented|
@@ -22,9 +22,9 @@ Not yet documented
 |totalActivation|Int32|Not yet documented|
 |lastUpdatedDateTime|String|Not yet documented|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties for the installation state of a mobile app for a device.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List mobileAppInstallStatuses](../api/intune_apps_mobileappinstallstatus_list.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|List properties and relationships of the [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) objects.|
@@ -13,7 +13,7 @@ Contains properties for the installation state of a mobile app for a device.
 |[Update mobileAppInstallStatus](../api/intune_apps_mobileappinstallstatus_update.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md)|Update the properties of a [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object.|
 |[Get mobileApp](../api/intune_apps_mobileappinstallstatus_get_mobileapp.md)|[mobileApp](../resources/intune_apps_mobileapp.md)|Get the [mobileApp](../resources/intune_apps_mobileapp.md) from the app navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
@@ -25,12 +25,12 @@ Contains properties for the installation state of a mobile app for a device.
 |deviceType|Int32|Device Type|
 |osVersion|String|OS Version|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |app|[mobileApp](../resources/intune_apps_mobileapp.md)|The navigation link to the mobile app.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -3,11 +3,11 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [detectedApp](../resources/intune_onboarding_detectedapp.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementManagedDevices.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
@@ -17,13 +17,13 @@ POST /detectedapps/
 POST /detectedapps/{detectedappsId}/managedDevices/{managedDeviceId}/detectedApps/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a detectedApp object.
 The following table shows the properties that are required when you create a detectedApp.
 
@@ -37,11 +37,11 @@ The following table shows the properties that are required when you create a det
 
 
 
-### Response
+## Response
 If successful, this method returns a `201 Created` response code and a [detectedApp](../resources/intune_onboarding_detectedapp.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/detectedapps/
@@ -57,7 +57,7 @@ Content-length: 167
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

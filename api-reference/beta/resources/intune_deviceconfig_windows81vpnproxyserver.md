@@ -6,7 +6,7 @@ VPN Proxy Server.
 
 Inherits from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |automaticConfigurationScriptUrl|String|Proxy's automatic configuration script url. Inherited from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|
@@ -15,9 +15,9 @@ Inherits from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.m
 |automaticallyDetectProxySettings|Boolean|Automatically detect proxy settings.|
 |bypassProxyServerForLocalAddress|Boolean|Bypass proxy server for local address.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

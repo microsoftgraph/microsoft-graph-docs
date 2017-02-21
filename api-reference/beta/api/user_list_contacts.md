@@ -1,15 +1,29 @@
 # List contacts
 
-Get all the contacts in the signed-in user's mailbox.
+Get contacts in the user's mailbox.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Contacts.Read; Contacts.ReadWrite*
 ## HTTP request
+
+To get all the contacts in a user's mailbox:
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts
 GET /users/{id | userPrincipalName}/contacts
+```
+
+To get contacts in a specific folder in the user's mailbox:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/contactfolders/{Id}/contacts
+GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts
+
+GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
+GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

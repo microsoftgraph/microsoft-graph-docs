@@ -3,15 +3,15 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Windows Information Protection Data Recovery Certificate.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |dataRecoveryCertificate|Binary|Data recovery certificate.|
 |certificateFileName|String|File name to display in UI.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

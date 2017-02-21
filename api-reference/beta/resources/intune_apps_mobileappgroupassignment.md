@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties used to assign a mobile app to a group.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List mobileAppGroupAssignments](../api/intune_apps_mobileappgroupassignment_list.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|List properties and relationships of the [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) objects.|
@@ -13,19 +13,19 @@ Contains properties used to assign a mobile app to a group.
 |[Update mobileAppGroupAssignment](../api/intune_apps_mobileappgroupassignment_update.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md)|Update the properties of a [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) object.|
 |[Get mobileApp](../api/intune_apps_mobileappgroupassignment_get_mobileapp.md)|[mobileApp](../resources/intune_apps_mobileapp.md)|Get the [mobileApp](../resources/intune_apps_mobileapp.md) from the app navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |targetGroupId|String|The Id of the AAD group we are targeting the mobile app to.|
 |id|String|Key of the entity.|
 |installIntent|String|The install intent defined by the admin. Possible values are: `available`, `notApplicable`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |app|[mobileApp](../resources/intune_apps_mobileapp.md)|The navigation link to the mobile app being targeted.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

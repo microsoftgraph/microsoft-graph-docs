@@ -3,15 +3,15 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Platform specific enrollment restrictions
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |platformBlocked|Boolean|Block the platform from enrolling|
 |personalDeviceEnrollmentBlocked|Boolean|Block personally owned devices from enrolling|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

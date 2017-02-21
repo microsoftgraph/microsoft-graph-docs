@@ -32,7 +32,7 @@ A GET request with the **delta** function returns either:
 - A `nextLink` (that contains a URL with a **delta** function call and a _skipToken_), or 
 - A `deltaLink` (that contains a URL with a **delta** function call and _deltaToken_).
 
-These tokens are [state tokens](../delta_query_overview#state-tokens) which encode the 
+These tokens are [state tokens](delta_query_overview.md#state-tokens) which encode the 
 _startDateTime_ and _endDateTime_ parameters, and any other query parameter 
 in your initial delta query GET request. 
 
@@ -280,7 +280,7 @@ Prefer: odata.maxpagesize=2
 
 The third response returns the only remaining event in the calendar view, and a `deltaLink` URL which indicates 
 synchronization is complete for this calendar view. Save and use the `deltaLink` URL to 
-[synchronize that calendar view in the next round](#the-next-round-sample-request).
+[synchronize that calendar view in the next round](#the-next-round-sample-first-request).
 
 
 <!-- {

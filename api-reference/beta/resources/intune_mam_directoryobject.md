@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List directoryObjects](../api/intune_mam_directoryobject_list.md)|[directoryObject](../resources/intune_mam_directoryobject.md) collection|List properties and relationships of the [directoryObject](../resources/intune_mam_directoryobject.md) objects.|
@@ -12,14 +12,14 @@ Represents an Azure Active Directory object. The directoryObject type is the bas
 |[Delete directoryObject](../api/intune_mam_directoryobject_delete.md)|None|Deletes a [directoryObject](../resources/intune_mam_directoryobject.md).|
 |[Update directoryObject](../api/intune_mam_directoryobject_update.md)|[directoryObject](../resources/intune_mam_directoryobject.md)|Update the properties of a [directoryObject](../resources/intune_mam_directoryobject.md) object.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|The directory object identifier|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

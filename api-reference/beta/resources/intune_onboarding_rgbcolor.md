@@ -3,16 +3,16 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Color in RGB.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |r|Byte|Red value|
 |g|Byte|Green value|
 |b|Byte|Blue value|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

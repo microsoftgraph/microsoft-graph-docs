@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Device action result
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |actionName|String|Action name|
@@ -11,9 +11,9 @@ Device action result
 |startDateTime|DateTimeOffset|Time the action was initiated|
 |lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

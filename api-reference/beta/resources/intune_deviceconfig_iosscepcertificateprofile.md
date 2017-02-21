@@ -6,7 +6,7 @@ iOS SCEP certificate profile.
 
 Inherits from [iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List iosScepCertificateProfiles](../api/intune_deviceconfig_iosscepcertificateprofile_list.md)|[iosScepCertificateProfile](../resources/intune_deviceconfig_iosscepcertificateprofile.md) collection|List properties and relationships of the [iosScepCertificateProfile](../resources/intune_deviceconfig_iosscepcertificateprofile.md) objects.|
@@ -20,7 +20,7 @@ Inherits from [iosCertificateProfileBase](../resources/intune_deviceconfig_iosce
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_iosscepcertificateprofile_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 |[Get iosTrustedRootCertificate](../api/intune_deviceconfig_iosscepcertificateprofile_get_iostrustedrootcertificate.md)|[iosTrustedRootCertificate](../resources/intune_deviceconfig_iostrustedrootcertificate.md)|Get the [iosTrustedRootCertificate](../resources/intune_deviceconfig_iostrustedrootcertificate.md) from the rootCertificate navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -40,7 +40,7 @@ Inherits from [iosCertificateProfileBase](../resources/intune_deviceconfig_iosce
 |keySize|String|SCEP Key Size. Possible values are: `size1024`, `size2048`.|
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune_deviceconfig_extendedkeyusage.md) collection|Extended Key Usage (EKU) settings.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -49,7 +49,7 @@ Inherits from [iosCertificateProfileBase](../resources/intune_deviceconfig_iosce
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |rootCertificate|[iosTrustedRootCertificate](../resources/intune_deviceconfig_iostrustedrootcertificate.md)|Trusted Root Certificate.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -6,7 +6,7 @@ Reset passcode action result
 
 Inherits from [deviceActionResult](../resources/intune_onboarding_deviceactionresult.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |actionName|String|Action name Inherited from [deviceActionResult](../resources/intune_onboarding_deviceactionresult.md)|
@@ -15,9 +15,9 @@ Inherits from [deviceActionResult](../resources/intune_onboarding_deviceactionre
 |lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [deviceActionResult](../resources/intune_onboarding_deviceactionresult.md)|
 |passcode|String|Newly generated passcode for the device |
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

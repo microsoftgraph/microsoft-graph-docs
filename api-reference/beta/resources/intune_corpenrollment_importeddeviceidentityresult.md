@@ -6,7 +6,7 @@ The importedDeviceIdentityResult resource represents the result of attempting to
 
 Inherits from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List importedDeviceIdentityResults](../api/intune_corpenrollment_importeddeviceidentityresult_list.md)|[importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) collection|List properties and relationships of the [importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) objects.|
@@ -15,7 +15,7 @@ Inherits from [importedDeviceIdentity](../resources/intune_corpenrollment_import
 |[Delete importedDeviceIdentityResult](../api/intune_corpenrollment_importeddeviceidentityresult_delete.md)|None|Deletes a [importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md).|
 |[Update importedDeviceIdentityResult](../api/intune_corpenrollment_importeddeviceidentityresult_update.md)|[importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md)|Update the properties of a [importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) object.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Id of the imported device identity Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|
@@ -29,9 +29,9 @@ Inherits from [importedDeviceIdentity](../resources/intune_corpenrollment_import
 |platform|String|The platform of the Device. Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |status|Boolean|Status of imported device identity|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

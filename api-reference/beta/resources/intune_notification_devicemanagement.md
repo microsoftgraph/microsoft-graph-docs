@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Singleton entity that acts as a container for all device management functionality.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[Get deviceManagement](../api/intune_notification_devicemanagement_get.md)|[deviceManagement](../resources/intune_notification_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_notification_devicemanagement.md) object.|
@@ -11,17 +11,17 @@ Singleton entity that acts as a container for all device management functionalit
 |[List notificationMessageTemplates](../api/intune_notification_devicemanagement_list_notificationmessagetemplate.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) collection|Get the notificationMessageTemplates from the notificationMessageTemplates navigation property.|
 |[Create notificationMessageTemplate](../api/intune_notification_devicemanagement_create_notificationmessagetemplate.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)|Create a new [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) by posting to the notificationMessageTemplates collection.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Not yet documented|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) collection|The Notification Message Templates.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -13,7 +13,10 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id | userPrincipalName}/messages
+POST /me/messages
+POST /users/{id|userPrincipalName}/messages
+POST /me/mailFolders/{id}/messages
+POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 ## Request headers
 | Header       | Value |

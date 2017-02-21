@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Class for reporting status of a single mobile app.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |applicationId|String|Key of the entity.|
@@ -12,9 +12,9 @@ Class for reporting status of a single mobile app.
 |userFailures|Int64|The number of users in failure for this App.|
 |deviceFailures|Int64|The number of devices in failure for this App.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

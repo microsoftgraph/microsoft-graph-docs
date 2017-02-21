@@ -6,7 +6,7 @@ OMA Settings StringXML definition.
 
 Inherits from [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|Display Name. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
@@ -15,9 +15,9 @@ Inherits from [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 |fileName|String|File name associated with the Value property (*.xml).|
 |value|Binary|Value. (UTF8 encoded byte array)|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

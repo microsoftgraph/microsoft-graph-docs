@@ -6,7 +6,7 @@ Mac OS SCEP certificate profile.
 
 Inherits from [macOSCertificateProfileBase](../resources/intune_deviceconfig_macoscertificateprofilebase.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List macOSScepCertificateProfiles](../api/intune_deviceconfig_macosscepcertificateprofile_list.md)|[macOSScepCertificateProfile](../resources/intune_deviceconfig_macosscepcertificateprofile.md) collection|List properties and relationships of the [macOSScepCertificateProfile](../resources/intune_deviceconfig_macosscepcertificateprofile.md) objects.|
@@ -20,7 +20,7 @@ Inherits from [macOSCertificateProfileBase](../resources/intune_deviceconfig_mac
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_macosscepcertificateprofile_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 |[Get macOSTrustedRootCertificate](../api/intune_deviceconfig_macosscepcertificateprofile_get_macostrustedrootcertificate.md)|[macOSTrustedRootCertificate](../resources/intune_deviceconfig_macostrustedrootcertificate.md)|Get the [macOSTrustedRootCertificate](../resources/intune_deviceconfig_macostrustedrootcertificate.md) from the rootCertificate navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -41,7 +41,7 @@ Inherits from [macOSCertificateProfileBase](../resources/intune_deviceconfig_mac
 |hashAlgorithm|String|SCEP Hash Algorithm. Possible values are: `sha1`, `sha2`.|
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune_deviceconfig_extendedkeyusage.md) collection|Extended Key Usage (EKU) settings.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -50,7 +50,7 @@ Inherits from [macOSCertificateProfileBase](../resources/intune_deviceconfig_mac
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |rootCertificate|[macOSTrustedRootCertificate](../resources/intune_deviceconfig_macostrustedrootcertificate.md)|Trusted Root Certificate.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

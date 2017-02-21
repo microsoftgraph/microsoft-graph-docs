@@ -6,7 +6,7 @@ OMA Settings Integer definition.
 
 Inherits from [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|Display Name. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
@@ -14,9 +14,9 @@ Inherits from [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 |omaUri|String|OMA. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |value|Int32|Value.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

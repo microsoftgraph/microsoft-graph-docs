@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 CloudPki subscription certificate profile
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List cloudPkiSubscriptions](../api/intune_deviceconfig_cloudpkisubscription_list.md)|[cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) collection|List properties and relationships of the [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) objects.|
@@ -12,7 +12,7 @@ CloudPki subscription certificate profile
 |[Delete cloudPkiSubscription](../api/intune_deviceconfig_cloudpkisubscription_delete.md)|None|Deletes a [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md).|
 |[Update cloudPkiSubscription](../api/intune_deviceconfig_cloudpkisubscription_update.md)|[cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md)|Update the properties of a [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) object.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
@@ -28,9 +28,9 @@ CloudPki subscription certificate profile
 |trustedRootCertificate|Binary|PKCS Certificate Template Name|
 |version|Int32|Version of the CloudPkiSubscription.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -6,7 +6,7 @@ Locate device action result
 
 Inherits from [deviceActionResult](../resources/intune_onboarding_deviceactionresult.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |actionName|String|Action name Inherited from [deviceActionResult](../resources/intune_onboarding_deviceactionresult.md)|
@@ -15,9 +15,9 @@ Inherits from [deviceActionResult](../resources/intune_onboarding_deviceactionre
 |lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [deviceActionResult](../resources/intune_onboarding_deviceactionresult.md)|
 |deviceLocation|[deviceGeoLocation](../resources/intune_onboarding_devicegeolocation.md)|device location|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

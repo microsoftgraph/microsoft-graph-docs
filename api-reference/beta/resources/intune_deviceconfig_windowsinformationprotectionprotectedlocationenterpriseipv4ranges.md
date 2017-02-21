@@ -6,14 +6,14 @@ Windows Information Protection Protected Location Enterprise IPv4 Ranges definit
 
 Inherits from [windowsInformationProtectionProtectedLocation](../resources/intune_deviceconfig_windowsinformationprotectionprotectedlocation.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |ranges|[iPv4Range](../resources/intune_deviceconfig_ipv4range.md) collection|Ranges.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

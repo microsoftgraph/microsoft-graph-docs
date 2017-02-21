@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Hardware information of a given device.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |serialNumber|String|Serial number.|
@@ -19,9 +19,9 @@ Hardware information of a given device.
 |wifiMac|String|WiFi MAC address of the device|
 |operatingSystemLanguage|String|Operating system language of the device|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

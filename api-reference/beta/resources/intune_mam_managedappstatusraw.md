@@ -6,7 +6,7 @@ Represents an un-typed status report about organizations app protection and conf
 
 Inherits from [managedAppStatus](../resources/intune_mam_managedappstatus.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List managedAppStatusRaws](../api/intune_mam_managedappstatusraw_list.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) collection|List properties and relationships of the [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) objects.|
@@ -15,7 +15,7 @@ Inherits from [managedAppStatus](../resources/intune_mam_managedappstatus.md)
 |[Delete managedAppStatusRaw](../api/intune_mam_managedappstatusraw_delete.md)|None|Deletes a [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
 |[Update managedAppStatusRaw](../api/intune_mam_managedappstatusraw_update.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Update the properties of a [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) object.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|Friendly name of the status report. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
@@ -23,9 +23,9 @@ Inherits from [managedAppStatus](../resources/intune_mam_managedappstatus.md)
 |version|String|Version of the entity. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |content|[managedAppSummary](../resources/intune_mam_managedappsummary.md)|Status report content.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

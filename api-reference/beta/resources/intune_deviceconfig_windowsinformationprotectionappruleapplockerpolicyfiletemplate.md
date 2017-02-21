@@ -6,15 +6,15 @@ Windows Information Protection App Rule AppLocker Policy File Template definitio
 
 Inherits from [windowsInformationProtectionAppRuleTemplate](../resources/intune_deviceconfig_windowsinformationprotectionappruletemplate.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |payloadFileName|String|Payload file name. (.xml)|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

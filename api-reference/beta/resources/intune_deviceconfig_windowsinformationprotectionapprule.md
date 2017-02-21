@@ -3,16 +3,16 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Windows Information Protection App Rule definition.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |title|String|Title.|
 |mode|String|Mode. Possible values are: `allow`, `exempt`.|
 |template|[windowsInformationProtectionAppRuleTemplate](../resources/intune_deviceconfig_windowsinformationprotectionappruletemplate.md)|Template (Desktop, AppStore or AppLockerPolicyFile).|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -6,7 +6,7 @@ Contains properties and inherited properties for Windows Phone 8.1 Store apps.
 
 Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List windowsPhone81StoreApps](../api/intune_apps_windowsphone81storeapp_list.md)|[windowsPhone81StoreApp](../resources/intune_apps_windowsphone81storeapp.md) collection|List properties and relationships of the [windowsPhone81StoreApp](../resources/intune_apps_windowsphone81storeapp.md) objects.|
@@ -19,7 +19,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |[List mobileAppInstallStatuses](../api/intune_apps_windowsphone81storeapp_list_mobileappinstallstatus.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|Get the mobileAppInstallStatuses from the deviceStatuses navigation property.|
 |[List userAppInstallStatuses](../api/intune_apps_windowsphone81storeapp_list_userappinstallstatus.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|Get the userAppInstallStatuses from the userStatuses navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -39,7 +39,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |appStoreUrl|String|The Windows Phone 8.1 app store URL.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -47,7 +47,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

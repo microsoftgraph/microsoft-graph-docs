@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains the properties used to assign an MDM app configuration to a group.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List mdmAppConfigGroupAssignments](../api/intune_apps_mdmappconfiggroupassignment_list.md)|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) collection|List properties and relationships of the [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) objects.|
@@ -12,16 +12,16 @@ Contains the properties used to assign an MDM app configuration to a group.
 |[Delete mdmAppConfigGroupAssignment](../api/intune_apps_mdmappconfiggroupassignment_delete.md)|None|Deletes a [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md).|
 |[Update mdmAppConfigGroupAssignment](../api/intune_apps_mdmappconfiggroupassignment_update.md)|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md)|Update the properties of a [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) object.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |appConfiguration|String|The navigation link to the mdm app Configuration being targeted.|
 |targetGroupId|String|The Id of the AAD group we are targeting the mdm app configuration to.|
 |id|String|Key of the entity.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

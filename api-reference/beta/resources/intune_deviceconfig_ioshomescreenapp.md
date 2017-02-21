@@ -6,15 +6,15 @@ Represents an icon for an app on the Home Screen
 
 Inherits from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|Name of Application or Folder (optional) Inherited from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)|
 |bundleID|String|BundleID of app|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

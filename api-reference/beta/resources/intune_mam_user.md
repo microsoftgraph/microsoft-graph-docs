@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Represents an Azure Active Directory user object.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List users](../api/intune_mam_user_list.md)|[user](../resources/intune_mam_user.md) collection|List properties and relationships of the [user](../resources/intune_mam_user.md) objects.|
@@ -16,17 +16,17 @@ Represents an Azure Active Directory user object.
 |[wipeByDeviceTag action](../api/intune_mam_user_wipebydevicetag.md)|None|Not yet documented|
 |[List managedAppRegistrations](../api/intune_mam_user_list_managedappregistration.md)|[managedAppRegistration](../resources/intune_mam_managedappregistration.md) collection|Get the managedAppRegistrations from the managedAppRegistrations navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|The user identifier.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |managedAppRegistrations|[managedAppRegistration](../resources/intune_mam_managedappregistration.md) collection|Zero or more managed app registrations that belong to the user.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The text content of a Notification Message Template for the specified locale.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List localizedNotificationMessages](../api/intune_notification_localizednotificationmessage_list.md)|[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) collection|List properties and relationships of the [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) objects.|
@@ -12,7 +12,7 @@ The text content of a Notification Message Template for the specified locale.
 |[Delete localizedNotificationMessage](../api/intune_notification_localizednotificationmessage_delete.md)|None|Deletes a [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md).|
 |[Update localizedNotificationMessage](../api/intune_notification_localizednotificationmessage_update.md)|[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md)|Update the properties of a [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) object.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
@@ -22,9 +22,9 @@ The text content of a Notification Message Template for the specified locale.
 |messageTemplate|String|The Message Template content.|
 |isDefault|Boolean|Flag to indicate whether or not this is the default locale for language fallback. This flag can only be set. To unset, set this property to true on another Localized Notification Message.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|Company/organization name that is displayed to end users.|
@@ -20,9 +20,9 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 |darkBackgroundLogo|[mimeContent](../resources/intune_onboarding_mimecontent.md)|Logo image displayed in Company Portal apps which have a dark background behind the logo.|
 |showNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

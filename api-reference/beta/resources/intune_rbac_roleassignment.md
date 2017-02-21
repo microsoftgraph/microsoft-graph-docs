@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The Role Assignment resource. Role assignments tie together a role definition with members and scopes. There can be one or more role assignments per role. This applies to custom and built-in roles.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List roleAssignments](../api/intune_rbac_roleassignment_list.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md) collection|List properties and relationships of the [roleAssignment](../resources/intune_rbac_roleassignment.md) objects.|
@@ -13,7 +13,7 @@ The Role Assignment resource. Role assignments tie together a role definition wi
 |[Update roleAssignment](../api/intune_rbac_roleassignment_update.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|Update the properties of a [roleAssignment](../resources/intune_rbac_roleassignment.md) object.|
 |[Get roleDefinition](../api/intune_rbac_roleassignment_get_roledefinition.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md)|Get the [roleDefinition](../resources/intune_rbac_roledefinition.md) from the roleDefinition navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. This is read-only and automatically generated.|
@@ -22,12 +22,12 @@ The Role Assignment resource. Role assignments tie together a role definition wi
 |members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.|
 |scopeMembers|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |roleDefinition|[roleDefinition](../resources/intune_rbac_roledefinition.md)|Role definition this assignment is part of.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

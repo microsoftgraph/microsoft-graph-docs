@@ -6,7 +6,7 @@ Windows 8.1+ SCEP certificate profile
 
 Inherits from [windows81CertificateProfileBase](../resources/intune_deviceconfig_windows81certificateprofilebase.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List windows81SCEPCertificateProfiles](../api/intune_deviceconfig_windows81scepcertificateprofile_list.md)|[windows81SCEPCertificateProfile](../resources/intune_deviceconfig_windows81scepcertificateprofile.md) collection|List properties and relationships of the [windows81SCEPCertificateProfile](../resources/intune_deviceconfig_windows81scepcertificateprofile.md) objects.|
@@ -20,7 +20,7 @@ Inherits from [windows81CertificateProfileBase](../resources/intune_deviceconfig
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_windows81scepcertificateprofile_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 |[Get windows81TrustedRootCertificate](../api/intune_deviceconfig_windows81scepcertificateprofile_get_windows81trustedrootcertificate.md)|[windows81TrustedRootCertificate](../resources/intune_deviceconfig_windows81trustedrootcertificate.md)|Get the [windows81TrustedRootCertificate](../resources/intune_deviceconfig_windows81trustedrootcertificate.md) from the rootCertificate navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -41,7 +41,7 @@ Inherits from [windows81CertificateProfileBase](../resources/intune_deviceconfig
 |keySize|String|SCEP Key Size. Possible values are: `size1024`, `size2048`.|
 |hashAlgorithm|String|SCEP Hash Algorithm. Possible values are: `sha1`, `sha2`.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -50,7 +50,7 @@ Inherits from [windows81CertificateProfileBase](../resources/intune_deviceconfig
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |rootCertificate|[windows81TrustedRootCertificate](../resources/intune_deviceconfig_windows81trustedrootcertificate.md)|Trusted Root Certificate|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

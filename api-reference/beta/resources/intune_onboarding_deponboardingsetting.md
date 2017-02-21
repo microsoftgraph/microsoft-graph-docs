@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune. The onboarded service instance manages an Apple Token used to synchronize data between Apple and Intune.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List depOnboardingSettings](../api/intune_onboarding_deponboardingsetting_list.md)|[depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) collection|List properties and relationships of the [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) objects.|
@@ -12,7 +12,7 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |[Delete depOnboardingSetting](../api/intune_onboarding_deponboardingsetting_delete.md)|None|Deletes a [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md).|
 |[Update depOnboardingSetting](../api/intune_onboarding_deponboardingsetting_update.md)|[depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md)|Update the properties of a [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) object.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|UUID for the object|
@@ -22,9 +22,9 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |lastSuccessfulSyncDateTime|DateTimeOffset|When the service last syned with Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|When Intune last requested a sync.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -1,5 +1,5 @@
 # servicePrincipal: getMemberObjects
-
+Get the list of groups and directory roles that this service principal is a member of.  This check is transitive.
 
 ## Prerequisites
 The following **scopes** are required to execute this API: 

@@ -3,15 +3,15 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties of the possible iOS device types the mobile app can run on.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |iPad|Boolean|Whether the app should run on iPads.|
 |iPhoneAndIPod|Boolean|Whether the app should run on iPhones and iPods.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

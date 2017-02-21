@@ -6,15 +6,15 @@ A folder containing pages of apps on the Home Screen
 
 Inherits from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|Name of Application or Folder (optional) Inherited from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)|
 |pages|[iosHomeScreenFolderPage](../resources/intune_deviceconfig_ioshomescreenfolderpage.md) collection|Pages of Home Screen Layout Icons which must be Application Type|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties for the installation summary of a mobile app for a device.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |installedDeviceCount|Int32|Number of Devices that have successfully installed this app.|
@@ -13,9 +13,9 @@ Contains properties for the installation summary of a mobile app for a device.
 |failedUserCount|Int32|Number of Users that have 1 or more device that failed to install this app.|
 |notInstalledUserCount|Int32|Number of Users that did not install this app.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

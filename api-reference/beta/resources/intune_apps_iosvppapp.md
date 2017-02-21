@@ -6,7 +6,7 @@ Contains properties and inherited properties for iOS Volume-Purchased Program (V
 
 Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List iosVppApps](../api/intune_apps_iosvppapp_list.md)|[iosVppApp](../resources/intune_apps_iosvppapp.md) collection|List properties and relationships of the [iosVppApp](../resources/intune_apps_iosvppapp.md) objects.|
@@ -20,7 +20,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |[List userAppInstallStatuses](../api/intune_apps_iosvppapp_list_userappinstallstatus.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|Get the userAppInstallStatuses from the userStatuses navigation property.|
 |[Get appleVolumePurchaseProgramToken](../api/intune_apps_iosvppapp_get_applevolumepurchaseprogramtoken.md)|[appleVolumePurchaseProgramToken](../resources/intune_apps_applevolumepurchaseprogramtoken.md)|Get the [appleVolumePurchaseProgramToken](../resources/intune_apps_applevolumepurchaseprogramtoken.md) from the vppToken navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -45,7 +45,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |licensingType|[vppLicensingType](../resources/intune_apps_vpplicensingtype.md)|The supported License Type.|
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The applicable iOS Device Type.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -54,7 +54,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |vppToken|[appleVolumePurchaseProgramToken](../resources/intune_apps_applevolumepurchaseprogramtoken.md)|The VPP token assigned to the app.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

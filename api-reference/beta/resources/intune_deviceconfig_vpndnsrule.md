@@ -3,16 +3,16 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 VPN DNS Rule definition.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |name|String|Name.|
 |servers|String collection|Servers.|
 |proxyServerUri|String|Proxy Server Uri.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

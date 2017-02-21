@@ -6,7 +6,7 @@ Contains properties and inherited properties for Android Line Of Business apps.
 
 Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List androidLobApps](../api/intune_apps_androidlobapp_list.md)|[androidLobApp](../resources/intune_apps_androidlobapp.md) collection|List properties and relationships of the [androidLobApp](../resources/intune_apps_androidlobapp.md) objects.|
@@ -20,7 +20,7 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |[List userAppInstallStatuses](../api/intune_apps_androidlobapp_list_userappinstallstatus.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|Get the userAppInstallStatuses from the userStatuses navigation property.|
 |[List mobileAppContents](../api/intune_apps_androidlobapp_list_mobileappcontent.md)|[mobileAppContent](../resources/intune_apps_mobileappcontent.md) collection|Get the mobileAppContents from the contentVersions navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -46,7 +46,7 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |manifest|Binary|The manifest information.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -55,7 +55,7 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |contentVersions|[mobileAppContent](../resources/intune_apps_mobileappcontent.md) collection|The list of content versions for this app. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

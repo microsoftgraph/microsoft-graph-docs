@@ -12,17 +12,27 @@ One of the following **scopes** is required to execute this API:
 *Mail.Read; Mail.ReadWrite*
 ## HTTP request
 
-To get the messages in the user's mailbox:
+To get all the messages in a user's mailbox:
 
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/messages
 GET /users/{id | userPrincipalName}/messages
 ```
 
-To get all the messages in the user's mailbox that include a **mention** of the signed-in user.
+To get messages in a specific folder in the user's mailbox:
 
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/mailFolders/{id}/messages
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
+```
+
+To get all the messages in the user's mailbox that include a **mention** of the user:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/messages?$filter=mentionsPreview/isMentioned eq true
 GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned eq true
 ```
 

@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Not yet documented
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List users](../api/intune_onboarding_user_list.md)|[user](../resources/intune_onboarding_user.md) collection|List properties and relationships of the [user](../resources/intune_onboarding_user.md) objects.|
@@ -14,18 +14,18 @@ Not yet documented
 |[removeAllDevicesFromManagement action](../api/intune_onboarding_user_removealldevicesfrommanagement.md)|None|Not yet documented|
 |[List managedDevices](../api/intune_onboarding_user_list_manageddevice.md)|[managedDevice](../resources/intune_onboarding_manageddevice.md) collection|Get the managedDevices from the managedDevices navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Unique identifier of the user.|
 |deviceEnrollmentLimit|Int32|The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |managedDevices|[managedDevice](../resources/intune_onboarding_manageddevice.md) collection|The managed devices associated with the user.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

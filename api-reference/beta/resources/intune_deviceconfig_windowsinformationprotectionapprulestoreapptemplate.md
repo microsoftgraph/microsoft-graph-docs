@@ -6,15 +6,15 @@ Windows Information Protection App Rule Store App Template definition.
 
 Inherits from [windowsInformationProtectionAppRuleTemplate](../resources/intune_deviceconfig_windowsinformationprotectionappruletemplate.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |publisher|String|Publisher.|
 |productName|String|Product name.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

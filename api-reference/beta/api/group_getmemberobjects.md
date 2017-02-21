@@ -2,7 +2,8 @@
 Return all of the groups and administrative units that the group is a member of. The check is transitive. Note: Groups cannot be members of directory roles, so no directory roles will be returned.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.Read.All* or *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
+One of the following **scopes** is required to execute this API: *Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,7 +19,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean|**true** to specify that only security groups that the group is a member of should be returned; **false** to specify that all groups that the group is a member of should be returned.|
+|securityEnabledOnly|Boolean|Set to **false**. Returning only security-enabled groups is supported for users only.|
 
 ## Response
 If successful, this method returns `200, OK` response code and String collection in the response body that contains the IDs of the groups that the group is a member of.
@@ -37,7 +38,7 @@ Content-type: application/json
 Content-length: 33
 
 {
-  "securityEnabledOnly": true
+  "securityEnabledOnly": false
 }
 ```
 

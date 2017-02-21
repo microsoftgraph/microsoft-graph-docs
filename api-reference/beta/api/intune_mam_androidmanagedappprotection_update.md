@@ -3,11 +3,11 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
@@ -18,13 +18,13 @@ PATCH /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/{mana
 PATCH /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/{managedAppPolicyId}
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md) object.
 The following table shows the properties that are required when you create a [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md).
 
@@ -63,11 +63,11 @@ The following table shows the properties that are required when you create a [an
 
 
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and an updated [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}
@@ -111,7 +111,7 @@ Content-length: 1201
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

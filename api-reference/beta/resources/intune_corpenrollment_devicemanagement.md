@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The deviceManagement resource represents a tenant's collection device identities that have been pre-staged in Intune, and the enrollment profiles that may be assigned to device identities that support pre-enrollment configuration.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[Get deviceManagement](../api/intune_corpenrollment_devicemanagement_get.md)|[deviceManagement](../resources/intune_corpenrollment_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_corpenrollment_devicemanagement.md) object.|
@@ -15,19 +15,19 @@ The deviceManagement resource represents a tenant's collection device identities
 |[List importedAppleDeviceIdentities](../api/intune_corpenrollment_devicemanagement_list_importedappledeviceidentity.md)|[importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) collection|Get the importedAppleDeviceIdentities from the importedAppleDeviceIdentities navigation property.|
 |[Create importedAppleDeviceIdentity](../api/intune_corpenrollment_devicemanagement_create_importedappledeviceidentity.md)|[importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md)|Create a new [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) by posting to the importedAppleDeviceIdentities collection.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|The GUID for the object.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |enrollmentProfiles|[enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) collection|The enrollment profiles.|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) collection|The imported device identities.|
 |importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) collection|The imported Apple device identities.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

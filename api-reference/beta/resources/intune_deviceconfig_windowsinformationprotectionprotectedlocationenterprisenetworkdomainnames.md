@@ -6,14 +6,14 @@ Windows Information Protection Protected Location Enterprise Network Domain Name
 
 Inherits from [windowsInformationProtectionProtectedLocation](../resources/intune_deviceconfig_windowsinformationprotectionprotectedlocation.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |ipAddressesOrFqdns|String collection|IPAddresses or FQDNs.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 An item describing notification setting.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |bundleIdentifier|String|Bundle identifier of app to which to apply these notification settings.|
@@ -14,9 +14,9 @@ An item describing notification setting.
 |badgesEnabled|Boolean|Indicates whether badges are allowed for this app.|
 |soundsEnabled|Boolean|Indicates whether sounds are allowed for this app.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

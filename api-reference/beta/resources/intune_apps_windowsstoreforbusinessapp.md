@@ -6,7 +6,7 @@ Windows Store for Business Apps.
 
 Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List windowsStoreForBusinessApps](../api/intune_apps_windowsstoreforbusinessapp_list.md)|[windowsStoreForBusinessApp](../resources/intune_apps_windowsstoreforbusinessapp.md) collection|List properties and relationships of the [windowsStoreForBusinessApp](../resources/intune_apps_windowsstoreforbusinessapp.md) objects.|
@@ -19,7 +19,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |[List mobileAppInstallStatuses](../api/intune_apps_windowsstoreforbusinessapp_list_mobileappinstallstatus.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|Get the mobileAppInstallStatuses from the deviceStatuses navigation property.|
 |[List userAppInstallStatuses](../api/intune_apps_windowsstoreforbusinessapp_list_userappinstallstatus.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|Get the userAppInstallStatuses from the userStatuses navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -40,7 +40,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |usedLicenseCount|Int32|The number of Windows Store for Business licenses in use.|
 |totalLicenseCount|Int32|The total number of Windows Store for Business licenses.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -48,7 +48,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

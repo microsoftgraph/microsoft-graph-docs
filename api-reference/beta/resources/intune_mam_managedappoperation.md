@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Represents an operation applied against an app registration.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List managedAppOperations](../api/intune_mam_managedappoperation_list.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md) collection|List properties and relationships of the [managedAppOperation](../resources/intune_mam_managedappoperation.md) objects.|
@@ -12,7 +12,7 @@ Represents an operation applied against an app registration.
 |[Delete managedAppOperation](../api/intune_mam_managedappoperation_delete.md)|None|Deletes a [managedAppOperation](../resources/intune_mam_managedappoperation.md).|
 |[Update managedAppOperation](../api/intune_mam_managedappoperation_update.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md)|Update the properties of a [managedAppOperation](../resources/intune_mam_managedappoperation.md) object.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|The operation name.|
@@ -21,9 +21,9 @@ Represents an operation applied against an app registration.
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

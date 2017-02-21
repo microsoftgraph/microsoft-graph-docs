@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Scheduled Action Configuration
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List deviceComplianceActionItems](../api/intune_deviceconfig_devicecomplianceactionitem_list.md)|[deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md) collection|List properties and relationships of the [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md) objects.|
@@ -13,19 +13,19 @@ Scheduled Action Configuration
 |[Update deviceComplianceActionItem](../api/intune_deviceconfig_devicecomplianceactionitem_update.md)|[deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md)|Update the properties of a [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md) object.|
 |[Get notificationMessageTemplate](../api/intune_deviceconfig_devicecomplianceactionitem_get_notificationmessagetemplate.md)|[notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md)|Get the [notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md) from the notificationMessageTemplate navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
 |gracePeriodHours|Int32|Number of hours to wait till the action will be enforced.|
 |actionType|String|What action to take Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |notificationMessageTemplate|[notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md)|Notification message template.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

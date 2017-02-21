@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Report of remote actions initiated on the devices belonging to a certain tenant.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List remoteActionAudits](../api/intune_onboarding_remoteactionaudit_list.md)|[remoteActionAudit](../resources/intune_onboarding_remoteactionaudit.md) collection|List properties and relationships of the [remoteActionAudit](../resources/intune_onboarding_remoteactionaudit.md) objects.|
@@ -12,7 +12,7 @@ Report of remote actions initiated on the devices belonging to a certain tenant.
 |[Delete remoteActionAudit](../api/intune_onboarding_remoteactionaudit_delete.md)|None|Deletes a [remoteActionAudit](../resources/intune_onboarding_remoteactionaudit.md).|
 |[Update remoteActionAudit](../api/intune_onboarding_remoteactionaudit_update.md)|[remoteActionAudit](../resources/intune_onboarding_remoteactionaudit.md)|Update the properties of a [remoteActionAudit](../resources/intune_onboarding_remoteactionaudit.md) object.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Report Id.|
@@ -21,9 +21,9 @@ Report of remote actions initiated on the devices belonging to a certain tenant.
 |action|String|The action name. Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`.|
 |requestDateTime|DateTimeOffset|Time when the action was issued, given in UTC.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

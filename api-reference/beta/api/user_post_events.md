@@ -1,6 +1,6 @@
 # Create Event
 
-Create an [event](../resources/event.md) in the user's default calendar. 
+Create an [event](../resources/event.md) in the user's default calendar or specified calendar. 
 
 You can specify the time zone for each of the start and end times of the event as part of these values, as the 
 **start** and **end** properties are of [DateTimeTimeZone](../resources/datetimetimezone.md) type. 
@@ -14,7 +14,14 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/events
 POST /users/{id | userPrincipalName}/events
+
+POST /me/calendar/events
+POST /users/{id | userPrincipalName}/calendar/events
+
+POST /me/calendars/{id}/events
+POST /users/{id | userPrincipalName}/calendars/{id}/events
 ```
 ## Request headers
 | Header       | Value |
