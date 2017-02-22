@@ -7,7 +7,7 @@ REST API integration with Office 365. If your app uses v1.0 of the
 [Calendar](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/calendar), or 
 [Contacts](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contact) API, you will now also find a seamless 
 authentication and application experience in _hybrid_ deployments, regardless of whether the mailbox 
-is on-premises or in the cloud, provided that the deployment meets specific [requirements](#requirements-for-rest-api-to-work-in-hybrid-deployments). 
+is on-premises or in the cloud, provided that the deployment meets specific [requirements](#requirements-for-the-rest-api-to-work-in-hybrid-deployments). 
 
 
 Behind the scenes, when Microsoft Graph identifies that a REST API call is attempting to access an on-premises 

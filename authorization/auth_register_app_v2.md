@@ -2,7 +2,7 @@
 
 To use the Azure AD v2.0 endpoint, you need to register your app on the [Microsoft App Registration Portal](https://apps.dev.microsoft.com) (https://apps.dev.microsoft.com). Registering your app establishes your app's identity with the authentication provider, and enables your app to prove its identity when submitting authentication requests from the user. Registration generates the app ID and app secret that you'll use to configure the app for authentication.
 
-> **Note:** This article covers app registration with the Azure AD v2.0 endpoint. To [register your app with Azure AD](app_authentication_azure_ad.md), use the [Azure portal](https://aka.ms/aadapplist).
+> **Note:** This article covers app registration with the Azure AD v2.0 endpoint. To [register your app with Azure AD](app_authorization.md), use the [Azure portal](https://aka.ms/aadapplist).
 > 
 > Also, be aware that if you've registered apps in the Microsoft Azure Management portal already, those apps will not be listed in the App Registration Portal. Manage those apps in the Azure Management portal. 
 

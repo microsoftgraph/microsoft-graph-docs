@@ -4,7 +4,7 @@ To authenticate your applications using Microsoft Azure Active Directory (Azure 
 
 This article shows you how to associate your Office 365 account with Azure AD to create and manage apps.
 
- >**Note:** This article uses Azure AD as the authentication provider for your app. If you're using the Azure AD v2.0 endpoint, you don't need to perform this step. For more information, see [App authentication with Microsoft Graph](../auth_overview.md).
+ >**Note:** This article uses Azure AD as the authentication provider for your app. If you're using the Azure AD v2.0 endpoint, you don't need to perform this step. For more information, see [App authentication with Microsoft Graph](auth_overview.md).
 
 ## Prerequisites
 

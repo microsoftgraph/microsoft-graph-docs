@@ -4,8 +4,8 @@ To access a user's Microsoft data, your application must enable users to authent
 
 The Microsoft Graph supports two authentication providers:
 
-- To authenticate users with personal Microsoft accounts, such as _live.com_ or _outlook.com_ accounts, use the [Azure Active Directory (Azure AD) v2.0 endpoint](converged_auth).
-- To authenticate users with enterprise (that is, work or school) accounts, use [Azure AD](app_authorization).
+- To authenticate users with personal Microsoft accounts, such as _live.com_ or _outlook.com_ accounts, use the [Azure Active Directory (Azure AD) v2.0 endpoint](converged_auth.md).
+- To authenticate users with enterprise (that is, work or school) accounts, use [Azure AD](app_authorization.md).
 
 
 > **Building apps for enterprise customers?** Your app might not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>.  
@@ -90,7 +90,7 @@ When you decide which authentication provider meets your app's requirements, you
 
 - To register your app with Azure AD, use the [Azure portal](https://portal.azure.com/).
 
-	<!--For Azure AD, you'll also need to [associate your Office 365 account with Azure AD subscription](../auth_azure_ad/associate_account.md) in order to manage your apps.-->
+	<!--For Azure AD, you'll also need to associate your Office 365 account with Azure AD subscription in order to manage your apps.-->
 
 - To [register your app with the Azure AD v2.0 endpoint](auth_register_app_v2.md), use the [Microsoft Application Registration portal](https://apps.dev.microsoft.com).
 

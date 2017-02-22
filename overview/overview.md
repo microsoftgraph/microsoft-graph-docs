@@ -49,7 +49,7 @@ Microsoft Graph exposes two endpoints: /v1.0 and /beta. The /v1.0 endpoint inclu
 - Visit the [Microsoft Graph Explorer](https://graph.microsoft.io/graph-explorer).
 - Check out our [Microsoft Graph snippets samples](https://github.com/search?q=org%3Amicrosoftgraph+snippets-sample).
 
- >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with [MicrosoftGraph] and [office365].
+ >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with {MicrosoftGraph} and {office365}.
 
 
 

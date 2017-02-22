@@ -32,7 +32,7 @@ A GET request with the **delta** function returns either:
 - A `nextLink` (that contains a URL with a **delta** function call and a _skipToken_), or 
 - A `deltaLink` (that contains a URL with a **delta** function call and _deltaToken_).
 
-These tokens are [state tokens](delta_query_overview.md#state-tokens) which encode the 
+These tokens are [state tokens](delta_query_overview.md#state-tokens) which encode the refs/remotes/microsoftgraph/master
 _startDateTime_ and _endDateTime_ parameters, and any other query parameter 
 in your initial delta query GET request. 
 

@@ -543,8 +543,11 @@
         <Item text="Create notebook" url="/en-us/api-reference/beta/api/notes_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
       </Item>
       <Item text="Insights" url="/en-us/api-reference/beta/resources/" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
-        <Item text="List trendingAround" url="/en-us/api-reference/beta/api/user_list_trendingaround" SEOKeyword="List trendingAround, Microsoft Graph API, user API" SEODescription="Retrieve a list of item objects." />
-      </Item>
+        <Item text="Insights" url="/en-us/api-reference/beta/resources/insights" >
+			<Item text="List trending" url="/en-us/api-reference/beta/api/insights_list_trending" />
+			<Item text="List trendingAround" url="/en-us/api-reference/beta/api/user_list_trendingaround" SEOKeyword="List trendingAround, Microsoft Graph API, user API" SEODescription="Retrieve a list of item objects." />
+		</Item>
+	  </Item>
 	  <Item text="Groups" url="/en-us/api-reference/beta/resources/organization" SEOKeyword="groups, Microsoft Graph API, user API" SEODescription="">
         <Item text="List memberOf" url="/en-us/api-reference/beta/api/user_list_memberof" SEOKeyword="List memberOf, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
       </Item>
@@ -566,7 +569,12 @@
       </Item>
     </Item>
     <Item text="People and social" url="/en-us/api-reference/beta/resources/social_overview" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
-      <Item text="Person" url="/en-us/api-reference/beta/resources/person" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
+      <Item text="Insights" url="/en-us/api-reference/beta/resources/insights" >
+		<Item text="Trending" url="/en-us/api-reference/beta/resources/insights_trending" >
+			<Item text="List trending" url="/en-us/api-reference/beta/api/insights_list_trending" />
+		</Item>
+	  </Item>
+	  <Item text="Person" url="/en-us/api-reference/beta/resources/person" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
         <Item text="List people" url="/en-us/api-reference/beta/api/user_list_people" SEOKeyword="List people, Microsoft Graph API, user API" SEODescription="Retrieve a list of person objects." />
         <Item text="Get person" url="/en-us/api-reference/beta/api/person_get" SEOKeyword="Get person, Microsoft Graph API, person API" SEODescription="Retrieve the properties and relationships of person object." />
       </Item>
@@ -1154,10 +1162,11 @@
         <Item text="List subscribedSkus" url="/en-us/api-reference/beta/api/subscribedsku_list" SEOKeyword="List subscribedSkus, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve a list of subscribedsku objects." />
         <Item text="Get subscribedSku" url="/en-us/api-reference/beta/api/subscribedsku_get" SEOKeyword="Get subscribedSku, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve the properties and relationships of subscribedsku object." />
       </Item>
-	  <Item text="Service principal" url="/en-us/api-reference/beta/resources/serviceprincipal" />
+	  <Item text="Service principal" url="/en-us/api-reference/beta/resources/serviceprincipal" >
 		<Item text="Get service principal" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
 		<Item text="Update service principal" url="/en-us/api-reference/beta/api/serviceprincipal_update" />
 		<Item text="Delete service principal" url="/en-us/api-reference/beta/api/serviceprincipal_delete" />
+		</Item>
 	</Item>
     <Item text="Privileged Identity Management" url="/en-us/api-reference/beta/resources/privilegedIdentityManagement_root" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Azure Active Directory Privileged Identity Management">
       <Item text="Privileged Role" url="/en-us/api-reference/beta/resources/privilegedrole" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Privileged AAD Role Object">

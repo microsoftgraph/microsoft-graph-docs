@@ -2,7 +2,7 @@
 
 Find conceptual information related to working with Microsoft Graph.
 
-- [Delta query (preview)](delta_query_overview.md)
-- [Hybrid deployments (preview)](hybrid_rest_support.md)
-- [Paging Microsoft Graph data](paging.md)
-- [Sovereign deployments](deployments.md)
+- [Delta query (preview)](concepts/delta_query_overview.md)
+- [Hybrid deployments (preview)](concepts/hybrid_rest_support.md)
+- [Paging Microsoft Graph data](concepts/paging.md)
+- [Sovereign deployments](concepts/deployments.md)

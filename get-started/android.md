@@ -2,7 +2,7 @@
 
 > **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors. 
 
-> To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure Management Portal](https://aka.ms/aadapplist). For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](../auth_overview.md#deciding-between-azure-ad-and-the-v2-authentication-endpoint).
+> To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure Management Portal](https://aka.ms/aadapplist). For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](../authorization/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
 This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph. It walks you through building the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) and explains the main concepts that you implement to use Microsoft Graph in your app for Android. The article also describes how to access Microsoft Graph by using either the [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-sdk-android) or raw REST calls.
 
@@ -301,7 +301,7 @@ You're ready to try your Android app.
 5. Sign in with your personal or work or school account and grant the requested permissions.
 6. In the app selection dialog, tap your app to continue.
 
-Check the inbox of the email address that you configured in [Call Microsoft Graph](#call-the-microsoft-graph). You should have an email from the account that you used to sign in to the app.
+Check the inbox of the email address that you configured in [Call Microsoft Graph](#call-microsoft-graph). You should have an email from the account that you used to sign in to the app.
 
 ## Next steps
 - Try out the [Microsoft Graph explorer](https://graph.microsoft.io/graph-explorer).

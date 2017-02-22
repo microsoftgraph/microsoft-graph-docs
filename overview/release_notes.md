@@ -52,7 +52,7 @@ Examples of group features that support delegated and app-only permissions:
 
 * Creating and deleting groups
 * Getting and updating group properties pertaining to group administration or management
-* Group [directory settings](../resources/directorysetting.md), type and synchronization
+* Group [directory settings](../api-reference/v1.0/resources/directoryobject.md), type and synchronization
 * Group owners and membership
 
 
@@ -121,7 +121,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 ## Messages
 #### The comment parameter for creating a draft
 The **comment** parameter for creating a reply or forward draft ([createReply](../api-reference/v1.0/api/message_createreply.md), 
-[createReplyAll](../api-reference/v1.0/api/message_createreplyall), [createForward](../api-reference/v1.0/api/message_createforward.md)) 
+[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) 
 does not become part of the body of the resultant message draft.  
 
 
@@ -174,6 +174,6 @@ Additionally there are the following `/beta` limitations:
 * Cross-workload filtering/search is not available. 
 * Full-text search (using **$search**) is only available for some entities, like messages.
 
-  >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with [MicrosoftGraph] and [office365].
+  >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with {MicrosoftGraph} and {office365}.
 
 

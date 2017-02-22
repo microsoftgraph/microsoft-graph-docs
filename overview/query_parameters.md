@@ -142,7 +142,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space, for example,
 `?$orderby=name%20desc`.
 
- >  **Note**: If you query on the [user] resource, **$orderby** can't be combined with filter expressions.
+ >  **Note**: If you query on the [user](../api-reference/v1.0/resources/user.md) resource, **$orderby** can't be combined with filter expressions.
 
 ## $filter
 To filter the response data based on a set of criteria, use the **$filter** query option.
