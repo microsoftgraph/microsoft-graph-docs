@@ -4,6 +4,7 @@ Retrieve the reports of Exchange Client Activity.
 ### Prerequisites
 The following **scopes** are required to execute this API:
 - Reports.Read.All
+
 > Note: Permission scopes are listed in least privilege required order.
 
 ### HTTP request
