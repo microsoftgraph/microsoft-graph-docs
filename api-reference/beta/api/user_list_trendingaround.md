@@ -2,6 +2,8 @@
 
 Calculated insight that returns the list of items trending around a user.
 
+**Note:** This API will be deprecated and replaced by the [Trending API](../resources/insights_trending.md).
+
 ## Prerequisites
 The following **scopes** are required to execute this API: 
 *Sites.Read.All*
