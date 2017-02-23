@@ -27,7 +27,7 @@ A GET request with the **delta** function returns either:
 - A `nextLink` (that contains a URL with a **delta** function call and a _skipToken_), or 
 - A `deltaLink` (that contains a URL with a **delta** function call and _deltaToken_).
 
-These tokens are [state tokens](../delta_query_overview.md#state-tokens) that are completely opaque to the client. 
+These tokens are [state tokens](delta_query_overview.md#state-tokens) that are completely opaque to the client. 
 To proceed with a round of change tracking, simply copy and apply the URL returned from the last GET 
 request to the next **delta** function call for the same folder. A `deltaLink` returned in a response 
 signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL

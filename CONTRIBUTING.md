@@ -145,11 +145,6 @@ Congratulations, you have successfully contributed to the project.
 
 ## How to use Markdown to format your topic
 
-### Article template
-
-The [markdown template](/articles/0-markdown-template-for-new-articles.md) contains the basic Markdown for a topic that includes a table of contents, sections with subheadings, links to other Office developer topics, links to other sites, bold text, italic text, numbered and bulleted lists, code snippets, and images. 
-
-
 ### Standard Markdown
 
 All of the articles in this repository use Markdown.  While a complete introduction (and listing of all the syntax) can be found at [Markdown Home] [], we'll cover the basics you'll need.

@@ -47,6 +47,6 @@ Include the next sentence when supporting events.
 Office Graph encapsulates the relationships between different entities in Office 365. Use Office Graph to get social insights
 into individual users across Office 365.
 
-- List the items [trending around](../api/user_list_trendingaround.md) a user
-- List users who have been [working with](../api/user_list_workingwith.md) a user
+- List the items [trending around](../api/insights_list_trending.md) a user
+- List users who have been [working with](../api/user_list_people.md) a user
 

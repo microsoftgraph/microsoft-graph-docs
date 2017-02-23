@@ -39,7 +39,7 @@ The following tables list the Microsoft Graph permission scopes and explains the
 - The **Description** column describes the full set of privileges granted by the scope. For delegated scopes, the actual access granted to the app will be the least privileged combination (intersection) of the access granted by the scope and the privileges of the signed-in user. 
 - The scopes are grouped according to whether the permissions require an administrator's consent.
 
-  > **Note**: See [Known issues](../overview/release_notes) for `v1.0` and `beta` permission scope limitations.
+  > **Note**: See [Known issues](../overview/release_notes.md) for `v1.0` and `beta` permission scope limitations.
   
 ###Permissions requiring administrator's consent
 

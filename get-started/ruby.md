@@ -59,7 +59,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 	```
 	gem install bundler rack
 	```
-2. In the [config/environment.rb](config/environment.rb) file do the following.
+2. In the config/environment.rb file, do the following:
     - Replace *ENTER_YOUR_CLIENT_ID* with the client ID of your registered  application.
     - Replace *ENTER_YOUR_SECRET* with the key of your registered application.
 
