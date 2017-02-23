@@ -1,26 +1,34 @@
 # GET: YammerClientActivity
+
 Retrieve the reports of Yammer Client Activity.
 
-### Prerequisites
-The following **scopes** are required to execute this API: 
+## Prerequisites
+
+The following **scopes** are required to execute this API:
+
 - Reports.Read.All
 
 > Note: Permission scopes are listed in least privilege required order.
 
-### HTTP request
+## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /reports/YammerClientActivity(view=view-value, period=period-value, date=date-value)
 ```
-### Request headers
+
+## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer. required|
 
-### Request body
+## Request body
+
 In the request URL, provide following query parameters with values.
 
-| Parameter	   | Type	|Description|
+| Parameter   | Type|Description|
 |:---------------|:--------|:----------|
 |view|ViewType|View is an enumeration type, used to determine which type of information that current report should return. Can not be null.|
 |period|PeriodType|Period is an enumeration type, used to specify the aggregate type.|
@@ -41,42 +49,53 @@ The following **PeriodType** are available in this report:
 - D90
 - D180
 
-### Response
+## Response
+
 If successful, this method returns `200, OK` response code and [Report](../resources/report.md) object in the response body.
 
-### Example
+## Example
+
 Here is an example of how to call this API.
-##### Request
+
+### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "reportroot_yammerclientactivity"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/reports/YammerClientActivity(view='Detail',period='D7',date=null)
 ```
 
-##### Response
+### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.Report"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Data as of,User name,Display name,User state,State change date (UTC),Last activity date (UTC),Web,Windows Phone,Android Phone,iPhone,iPad,Other,Reporting period in days
 ```
-##### Other valid requests
+
+### Other valid requests
+
 <!-- {
   "blockType": "request",
   "name": "reportroot_yammerclientactivity"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/reports/YammerClientActivity(view='Detail',period=null,date='2017-02-02')
 GET https://graph.microsoft.com/beta/reports/YammerClientActivity(view='Distribution',period='D7',date=null)
 GET https://graph.microsoft.com/beta/reports/YammerClientActivity(view='Users',period='D7',date=null)
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

@@ -2,10 +2,9 @@
 
 Represent an Office 365 usage report object. It is a stream, which will return a csv file.
 
+## Methods
 
-### Methods
-
-| Method		   | Return Type	|Description|
+|Method|Return Type|Description|
 |:---------------|:--------|:----------|
 |Get [ExchangeClientActivity](../api/reportroot_exchangeclientactivity.md)|[Report](report.md)|Get all the reports of ExchangeClientActivity|
 |Get [ExchangeUserActivity](../api/reportroot_exchangeuseractivity.md)|[Report](report.md)|Get all the reports of ExchangeUserActivity|
@@ -25,12 +24,14 @@ Represent an Office 365 usage report object. It is a stream, which will return a
 |Get [YammerClientActivity](../api/reportroot_yammerclientactivity.md)|[Report](report.md)|Get all the reports of YammerClientActivity|
 |Get [YammerUserActivity](../api/reportroot_yammeruseractivity.md)|[Report](report.md)|Get all the reports of YammerUserActivity|
 
-### Properties
-| Property	   | Type	|Description|
+## Properties
+
+| Property   | Type|Description|
 |:---------------|:--------|:----------|
 |content|Stream|Represent a csv stream of Office 365 usage report. Read-only|
 
-### Relationships
+## Relationships
+
 None
 
 ### CSV representation
@@ -45,7 +46,7 @@ Here is a CSV representation of the resource.
   "@odata.type": "microsoft.graph.Report"
 }-->
 
-```
+```csv
 Column1Name,Column2Name
 column1Row0Val,column2Row0Val
 column1Row1Val,column2Row1Val
@@ -53,7 +54,6 @@ column1Row1Val,column2Row1Val
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-
 <!-- {
   "type": "#page.annotation",
   "description": "Report resource",
@@ -61,4 +61,3 @@ column1Row1Val,column2Row1Val
   "section": "documentation",
   "tocPath": ""
 }-->
-
