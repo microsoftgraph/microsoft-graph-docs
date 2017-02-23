@@ -2,6 +2,8 @@
 
 Retrieve the reports of Office Activations.
 
+> Note: You can go to [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60) to check the meaning of different views.
+
 ## Prerequisites
 
 The following **scopes** are required to execute this API:

@@ -2,6 +2,8 @@
 
 Retrieve the reports of OneDrive User Activity.
 
+> Note: You can go to [Office 365 Reports - OneDrive for Business activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353) to check the meaning of different views.
+
 ## Prerequisites
 
 The following **scopes** are required to execute this API:
@@ -32,7 +34,7 @@ In the request URL, provide following query parameters with values.
 |:---------------|:--------|:----------|
 |view|ViewType|View is an enumeration type, used to determine which type of information that current report should return. Can not be null.|
 |period|PeriodType|Period is an enumeration type, used to specify the aggregate type.|
-|date|String|A string represented date, format YYYY-MM-DD. Only available when view type is **Detail**, report would provide data for activity happening on that day.|
+|date|String|A string represented date, format YYYY-MM-DD. Only available when view type is **Detail**. If you call in with date parameter, you will only get back the set of users that did an activity on that day in that product and this data is retained only for 30 days.|
 
 > Note: When view type is **Detail**, the period parameter will be ignored. For other view types, date parameter will be ignored.
 
@@ -48,6 +50,8 @@ The following **PeriodType** are available in this report:
 - D30
 - D90
 - D180
+
+> Note: If you call with **Detail** view along with **PeriodType**, the return data is a list of all users that are licensed for the product with their respective last activity date.
 
 ## Response
 

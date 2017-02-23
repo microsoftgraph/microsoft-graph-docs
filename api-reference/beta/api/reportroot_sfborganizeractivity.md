@@ -2,6 +2,8 @@
 
 Retrieve the reports of Sky for Business Organizer Activity.
 
+> Note: You can go to [Office 365 Reports - Skype for Business conference organizer activity](https://support.office.com/client/Skype-for-Business-Online-conference-organized-activity-03a255d4-0e1d-4b24-b73d-7a62fae36254) to check the meaning of different views.
+
 ## Prerequisites
 
 The following **scopes** are required to execute this API:
@@ -32,7 +34,7 @@ In the request URL, provide following query parameters with values.
 |:---------------|:--------|:----------|
 |view|ViewType|View is an enumeration type, used to determine which type of information that current report should return. Can not be null.|
 |period|PeriodType|Period is an enumeration type, used to specify the aggregate type.|
-|date|String|A string represented date, format YYYY-MM-DD. Only available when view type is **Detail**, report would provide data for activity happening on that day.|
+|date|String|Date parameter is not available here, should set to null.|
 
 > Note: All the **Detail** reports of Sky for Business have been merged into [SfbUserActivity](reportroot_sfbuseractivity.md).
 
