@@ -8,7 +8,7 @@
 
 ## Known Limitations
 
-Tracking changes to relationships on Users, Groups, Organizational Contacts, and Administrative Units is only supported within the specific resource class for which changes are being tracked. For example, if a client is tracking changes on *groups* and has selected the *members* relationship, the client will only receive membership updates in the delta query response if those members are also *groups*. In other words, tracking group membership for users is not yet supported. The Microsoft Graph team understands that this is a high priority scenario and an update is targeted to be delivered in January 2017.
+Tracking changes to relationships on Users, Groups, Organizational Contacts, and Administrative Units is only supported within the specific resource class for which changes are being tracked. For example, if a client is tracking changes on *groups* and has selected the *members* relationship, the client will only receive membership updates in the delta query response if those members are also *groups*. In other words, tracking group membership for users is not yet supported. The Microsoft Graph team understands that this is a high priority scenario and an update is targeted to be delivered in March 2017.
 
 ### HTTP request
 
@@ -18,6 +18,36 @@ To begin tracking changes, you make a request including the delta function on th
 ```http
 GET /groups/delta
 ```
+
+### Query parameters
+
+Tracking changes in messages incurs a round of one or more **delta** function calls. If you use any query parameter 
+(other than `$deltatoken` and `$skiptoken`), you must specify 
+it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
+into the token portion of the `nextLink` or `deltaLink` URL provided in the response. 
+You only need to specify any desired query parameters once upfront. 
+In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already 
+includes the encoded, desired parameters.
+
+| Query parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+| $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same message collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same message collection. |
+
+### Optional query parameters
+
+This method supports OData Query Parameters to help customize the response.
+
+- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
+_id_ property is always returned. 
+- Delta query support `$select`, `$top`, and `$expand` for messages. 
+- There is limited support for `$filter` and `$orderby`:
+  * The only supported `$filter` expresssions are `$filter=receivedDateTime+ge+{value}` 
+  or `$filter=receivedDateTime+gt+{value}`.
+  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
+  an `$orderby` expression, the return order is not guaranteed. 
+- There is no support for `$search`.
+
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
