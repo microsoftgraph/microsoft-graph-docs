@@ -13,8 +13,11 @@ Represents a device registered in the directory. Inherits from [directoryObject]
 |[List registeredUsers](../api/device_list_registeredusers.md) |[directoryObject](directoryobject.md) collection| Get the registered users of the device from the registeredUsers navigation property.|
 |[Update](../api/device_update.md) | [device](device.md)  |Update the properties of the device object. |
 |[Delete](../api/device_delete.md) | None |Delete the device object. |
-
-
+|**Open extensions**| | |
+|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
+|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
+|**Schema extensions**| | |
+|[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -39,6 +42,7 @@ Represents a device registered in the directory. Inherits from [directoryObject]
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|extensions|[Extension](extension.md) collection|The collection of open extensions defined for the device. Nullable.|
 |registeredOwners|[directoryObject](directoryobject.md) collection|Users that are registered owners of the device. Read-only. Nullable.|
 |registeredUsers|[directoryObject](directoryobject.md) collection|Users that are registered users of the device. Read-only. Nullable.|
 

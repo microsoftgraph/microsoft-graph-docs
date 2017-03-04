@@ -1,6 +1,6 @@
-# Delete data extension
+# Delete open extension
 
-Delete a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) from the specified instance of a resource. 
+Delete an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) from the specified instance of a resource. 
 
 ## Prerequisites
 
@@ -9,9 +9,11 @@ deleting the extension from:
 
 |**Supported resource**|**Permission**|**Supported resource**|**Permission** |
 |:-----|:-----|:-----|:-----|
-| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group event](../resources/event.md) | _Calendars.ReadWrite_ | 
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ | 
-| [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [administrativeunit](../resources/administrativeunit.md) | _Directory.AccessAsUser.All_ | [device](../resources/device.md) | _Devices.ReadWrite.All_ |
+| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group](../resources/group.md) | _Group.ReadWrite.All_ |
+| [group event](../resources/event.md) | _Group.ReadWrite.All_ | [group post](../resources/post.md) | _Group.ReadWrite.All_ |
+| [message](../resources/message.md) | _Mail.ReadWrite_ | [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ |
+| [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ | [user](../resources/user.md) | _Directory.AccessAsUser.All_ |
  
 ## HTTP request
 
@@ -20,36 +22,20 @@ navigation property of that instance to identify the extension, and do a `DELETE
 
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+DELETE /groups/{id}/extensions/{extensionId}
 DELETE /groups/{id}/events/{id}/extensions/{extensionId}
 DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
+DELETE /administrativeUnits/{Id}/extensions/{extensionId}
+DELETE /devices/{Id}/extensions/{extensionId}
+DELETE /organization/{Id}/extensions/{extensionId}
 ```
 
->**Note:** Some resources support identifying an instance in multiple ways all of which support deleting an extension. 
-The above section includes only a subset of the 
-supported syntax. You can find a more complete description of the ways to identify an existing instance in the corresponding `GET` topic below. 
-
-- [Get a contact](../api/contact_get.md)
-- [Get an event](../api/event_get.md)
-- [Get a group event](../api/event_get.md)
-- [Get a group post](../api/post_get.md)
-- [Get a message](../api/message_get.md)
-
-For example, you can identify an existing message in the signed-in user's mailbox as follows:
-<!-- { "blockType": "ignored" } -->
-```http
-/me/messages/{id}
-```
-
-To delete an extension in an existing message instance in that mailbox, build upon that URL, 
-identify an extension using the **extensions** navigation property of that message, and do a `DELETE` on that extension as shown below:
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/messages/{id}/extensions/{extensionId}
-```
-
+>**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
+All other syntax that allows you to identify these resource instances supports deleting open extensions from them in a similar way.
 
 ## Parameters
 |**Parameter**|**Type**|**Description**|

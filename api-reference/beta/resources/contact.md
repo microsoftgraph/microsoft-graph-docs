@@ -108,14 +108,13 @@ Here is a JSON representation of the resource
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|extensions|[extension](extension.md) collection|The collection of open type data extensions defined for the contact. Read-only. Nullable.|
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for the contact. Nullable.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the contact. Read-only. Nullable.|
 |photo|[photo](profilephoto.md)| Optional contact picture. You can get or set a photo for a contact.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the contact. Read-only. Nullable.|
 
 
 ## Methods
-
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get contact](../api/contact_get.md) | [contact](contact.md) |Read properties and relationships of contact object.|
@@ -123,9 +122,9 @@ Here is a JSON representation of the resource
 |[Update](../api/contact_update.md) | [contact](contact.md) |Update contact object. |
 |[Delete](../api/contact_delete.md) | None |Delete contact object. |
 |[delta](../api/contact_delta.md)|[contact](contact.md) collection| Get a set of contacts that have been added, deleted, or updated in a specified folder.|
-|**Data extensions**| | |
-|[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
-|[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
+|**Open extensions**| | |
+|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
+|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Extended properties**| | |
 |[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contact](contact.md)  |Create one or more single-value extended properties in a new or existing contact.   |
 |[Get contact with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [contact](contact.md) | Get contacts that contain a single-value extended property by using `$expand` or `$filter`. |

@@ -50,7 +50,11 @@ by providing a [delta](../api/group_delta.md) function.
 |[Update setting](../api/directorysetting_update.md) | [directorySetting](directorysetting.md)	|Update a setting object. |
 |[Delete setting](../api/directorysetting_delete.md) | None |Delete a setting object. |
 |[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
-
+|**Open extensions**| | |
+|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
+|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
+|**Schema extensions**| | |
+|[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -88,6 +92,7 @@ by providing a [delta](../api/group_delta.md) function.
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
 |drive|[drive](drive.md)|The group's drive. Read-only.|
 |events|[event](event.md) collection|The group's events.|
+|extensions|[Extension](extension.md) collection|The collection of open extensions defined for the group. Nullable.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
 |members|[directoryObject](directoryobject.md) collection| Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
 |notes|[Notes](notes.md)| Read-only.|

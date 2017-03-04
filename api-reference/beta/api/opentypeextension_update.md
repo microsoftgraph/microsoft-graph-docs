@@ -1,6 +1,6 @@
-# Update data extension
+# Update open extension
 
-Update a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) with the properties in the request body:
+Update an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) with the properties in the request body:
 
 - If a property in the request body matches the name of an existing property in the extension, the data in the 
 extension is updated.
@@ -15,9 +15,11 @@ the extension was created in:
 
 |**Supported resource**|**Permission**|**Supported resource**|**Permission** |
 |:-----|:-----|:-----|:-----|
-| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group event](../resources/event.md) | _Calendars.ReadWrite_ | 
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ | 
-| [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [administrativeunit](../resources/administrativeunit.md) | _Directory.AccessAsUser.All_ | [device](../resources/device.md) | _Devices.ReadWrite.All_ |
+| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group](../resources/group.md) | _Group.ReadWrite.All_ |
+| [group event](../resources/event.md) | _Group.ReadWrite.All_ | [group post](../resources/post.md) | _Group.ReadWrite.All_ |
+| [message](../resources/message.md) | _Mail.ReadWrite_ | [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ |
+| [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ | [user](../resources/user.md) | _Directory.ReadWrite.All_ |
  
 ## HTTP request
 
@@ -26,35 +28,20 @@ navigation property of that instance to identify the extension, and do a `PATCH`
 
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+PATCH /groups/{id}/extensions/{extensionId}
 PATCH /groups/{id}/events/{id}/extensions/{extensionId}
 PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
+PATCH /administrativeUnits/{Id}/extensions/{extensionId}
+PATCH /devices/{Id}/extensions/{extensionId}
+PATCH /organization/{Id}/extensions/{extensionId}
 ```
 
->**Note:** Some resources support identifying an instance in multiple ways all of which support updating an extension. 
-The above section includes only a subset of the 
-supported syntax. You can find a more complete description of the ways to identify an existing instance in the corresponding `GET` topic below. 
-
-- [Get a contact](../api/contact_get.md)
-- [Get an event](../api/event_get.md)
-- [Get a group event](../api/event_get.md)
-- [Get a group post](../api/post_get.md)
-- [Get a message](../api/message_get.md) 
-
-For example, you can identify an existing message in the signed-in user's mailbox as follows:
-<!-- { "blockType": "ignored" } -->
-```http
-/me/messages/{id}
-```
-
-To update an extension in an existing message instance in that mailbox, build upon that URL, 
-identify an extension using the **extensions** navigation property of that message, and do a `PATCH` on that extension as shown below:
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /me/messages/{id}/extensions/{extensionId}
-```
+>**Note:** The above syntax shows some common ways to identify a resource instance, in order to update an extension in it. 
+All other syntax that allows you to identify these resource instances supports updating open extensions in them in a similar way.
 
 See the [Request body](#request-body) section about including in the request body any custom data to change or add to that extension.
 

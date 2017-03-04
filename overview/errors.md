@@ -34,7 +34,8 @@ The following table lists and describes the HTTP status codes that can be return
 | 429         | Too Many Requests               | Client application has been throttled and should not attempt to repeat the request until an amount of time has elapsed.                |
 | 500         | Internal Server Error           | There was an internal server error while processing the request.                                                                       |
 | 501         | Not Implemented                 | The requested feature isn’t implemented.                                                                                               |
-| 503         | Service Unavailable             | The service is temporarily unavailable. You may repeat the request after a delay. There may be a Retry-After header.                   |
+| 503         | Service Unavailable             | The service is temporarily unavailable for maintenance or is overloaded. You may repeat the request after a delay, the length of which may be specified in a Retry-After header.|
+| 504         | Gateway Timeout                 | The server, while acting as a proxy, did not receive a timely response from the upstream server it needed to access in attempting to complete the request. May occur together with 503. |
 | 507         | Insufficient Storage            | The maximum storage quota has been reached.                                                                                            |
 | 509         | Bandwidth Limit Exceeded        | Your app has been throttled for exceeding the maximum bandwidth cap. Your app can retry the request again after more time has elapsed. |
 

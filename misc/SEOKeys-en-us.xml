@@ -27,15 +27,19 @@
     <Item text="Azure AD" url="/en-us/authorization/app_authorization" SEODescription="Authenticate your Microsoft Graph app using Azure AD." />
   </Item>
   <Item text="Concepts" url="/en-us/concepts" >
-    <Item text="Delta query (preview)" url="/en-us/concepts/delta_query_overview" >
-      <Item text="Example: Events (preview)" url="/en-us/concepts/delta_query_events" />
-      <Item text="Example: Messages (preview)" url="/en-us/concepts/delta_query_messages" />
-      <Item text="Example: Groups (preview)" url="/en-us/concepts/delta_query_groups" />
-      <Item text="Example: Users (preview)" url="/en-us/concepts/delta_query_users" />
-    </Item>
-    <Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
-    <Item text="Paging" url="/en-us/concepts/paging" SEOKeyword="Paging, Microsoft Graph API, Overview" SEODescription="Implementing paging in the Microsoft Graph." />
-    <Item text="Sovereign deployments" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
+  	<Item text="Delta query (preview)" url="/en-us/concepts/delta_query_overview" >
+  		<Item text="Example: Events (preview)" url="/en-us/concepts/delta_query_events" />
+  		<Item text="Example: Messages (preview)" url="/en-us/concepts/delta_query_messages" />
+  		<Item text="Example: Groups (preview)" url="/en-us/concepts/delta_query_groups" />
+  		<Item text="Example: Users (preview)" url="/en-us/concepts/delta_query_users" />
+  	</Item>
+  	<Item text="Add custom data to resources" url="/en-us/concepts/extensibility_overview" SEOKeyword="Custom data, extensibility, extensions, open extensions, schema extensions" SEODescription="Add custom data to Microsoft Graph using open extensions or schema extensions.">
+  		<Item text="Example: Add custom data with open extensions (preview)" url="/en-us/concepts/extensibility_open_users" />
+  		<Item text="Example: Add custom data with schema extensions (preview)" url="/en-us/concepts/extensibility_schema_groups" />
+  	</Item>
+  	<Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
+  	<Item text="Paging" url="/en-us/concepts/paging" SEOKeyword="Paging, Microsoft Graph API, Overview" SEODescription="Implementing paging in the Microsoft Graph." />
+  	<Item text="Sovereign deployments" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
   </Item>
   <Item text="horizontalline" url="/" IsSeparation="true" />
 
@@ -664,11 +668,18 @@
         <Item text="Get resource" url="/en-us/api-reference/beta/api/resource_get" SEOKeyword="Get resource, Microsoft Graph API, resource API" SEODescription="Retrieve the properties and relationships of a file or image resource(../resources/resource.md) object." />
       </Item>
     </Item>
-    <Item text="Data Extensions" url="/en-us/api-reference/beta/resources/opentypeextension" SEOKeyword="extension API, Microsoft Graph API, extension API" SEODescription="">
-      <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
-      <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
-      <Item text="Update data extension" url="/en-us/api-reference/beta/api/opentypeextension_update" SEOKeyword="Update data extension, Microsoft Graph API, opentypeextension API" SEODescription="Update the properties of opentypeextension object." />
-      <Item text="Delete data extension" url="/en-us/api-reference/beta/api/opentypeextension_delete" SEOKeyword="Delete data extension, Microsoft Graph API, opentypeextension API" SEODescription="Delete data extension." />
+    <Item text="Open Extensions" url="/en-us/api-reference/beta/resources/opentypeextension" SEOKeyword="extension API, Microsoft Graph API, open extension API, open extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
+      <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create an open extension, Microsoft Graph API" SEODescription="Create an open extension." />
+      <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API" SEODescription="Retrieve the properties and relationships of an open extension." />
+      <Item text="Update open extension" url="/en-us/api-reference/beta/api/opentypeextension_update" SEOKeyword="Update open extension, Microsoft Graph API" SEODescription="Update the properties of an open extension." />
+      <Item text="Delete open extension" url="/en-us/api-reference/beta/api/opentypeextension_delete" SEOKeyword="Delete open extension, Microsoft Graph API" SEODescription="Delete open extension." />
+    </Item>
+    <Item text="Schema Extensions" url="/en-us/api-reference/beta/resources/schemaextension" SEOKeyword="extension API, Microsoft Graph API, schema extension API, schema extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
+      <Item text="List schema extensions" url="/en-us/api-reference/beta/api/schemaextension_list" SEOKeyword="List schema extensions, Microsoft Graph API" SEODescription="Retrieves a collection of schema extension definitions and their properties." />
+      <Item text="Create schema extension" url="/en-us/api-reference/beta/api/schemaextension_post_schemaextensions" SEOKeyword="Create an schema extension, Microsoft Graph API" SEODescription="API to create a schema extension definition." />
+      <Item text="Get schema extension" url="/en-us/api-reference/beta/api/schemaextension_get" SEOKeyword="Get schema extension, Microsoft Graph API" SEODescription="Retrieve the properties of a schema extension definition." />
+      <Item text="Update schema extension" url="/en-us/api-reference/beta/api/schemaextension_update" SEOKeyword="Update schema extension, Microsoft Graph API" SEODescription="Update the properties of a schema extension definition." />
+      <Item text="Delete schema extension" url="/en-us/api-reference/beta/api/schemaextension_delete" SEOKeyword="Delete schema extension, Microsoft Graph API" SEODescription="Delete a schema extension definition." />
     </Item>
     <Item text="Webhooks" url="/en-us/api-reference/beta/resources/webhooks" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
       <Item text="Subscription" url="/en-us/api-reference/beta/resources/subscription" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
@@ -803,8 +814,8 @@
         <Item text="Get MailTips" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
         <Item text="List attachments" url="/en-us/api-reference/beta/api/message_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Mail API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Add attachment" url="/en-us/api-reference/beta/api/message_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, message API" SEODescription="Use this API to create a new Attachment." />
-        <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
-        <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, message API" SEODescription="Use this API to Get data extension." />
+        <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create open extension, Microsoft Graph API, message API" SEODescription="Use this API to create open extension." />
+        <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
       </Item>
       <Item text="Focused Inbox" url="/en-us/api-reference/beta/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph, Focused inbox" SEODescription="">
         <Item text="Create Override" url="/en-us/api-reference/beta/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph, Focused inbox" SEODescription="Create an override for a sender identified by an SMTP address." />
@@ -853,8 +864,8 @@
         <Item text="List event instances" url="/en-us/api-reference/beta/api/event_list_instances" SEOKeyword="List event instances, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
         <Item text="List attachments" url="/en-us/api-reference/beta/api/event_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Add attachment" url="/en-us/api-reference/beta/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
-        <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
-        <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, message API" SEODescription="Use this API to Get data extension." />
+        <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create open extension, Microsoft Graph API, message API" SEODescription="Use this API to create open extension." />
+        <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
       </Item>
       <Item text="Event message" url="/en-us/api-reference/beta/resources/eventmessage" SEOKeyword="eventmessage API, Microsoft Graph API, eventmessage API" SEODescription="A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message.">
         <Item text="Get event message" url="/en-us/api-reference/beta/api/eventmessage_get" SEOKeyword="Get event message, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve the properties and relationships of eventmessage object." />
@@ -871,8 +882,8 @@
         <Item text="Forward event message" url="/en-us/api-reference/beta/api/message_forward" SEOKeyword="Forward event message, Microsoft Graph API, Outlook Calendar API" SEODescription="" />
         <Item text="Add attachment" url="/en-us/api-reference/beta/api/eventmessage_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
         <Item text="List attachments" url="/en-us/api-reference/beta/api/eventmessage_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
-        <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
-        <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, message API" SEODescription="Use this API to Get data extension." />
+        <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create open extension, Microsoft Graph API, message API" SEODescription="Use this API to create open extension." />
+        <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
       </Item>
       <Item text="Calendar" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
         <Item text="List calendars" url="/en-us/api-reference/beta/api/user_list_calendars" SEOKeyword="List calendars, Microsoft Graph API, Users API" SEODescription="Retrieve a list of calendar objects." />
@@ -917,8 +928,8 @@
         <Item text="Get contact" url="/en-us/api-reference/beta/api/contact_get" SEOKeyword="Get contact, Microsoft Graph API, contact API" SEODescription="Retrieve the properties and relationships of contact object." />
         <Item text="Update contact" url="/en-us/api-reference/beta/api/contact_update" SEOKeyword="Update contact, Microsoft Graph API, contact API" SEODescription="Update the properties of contact object." />
         <Item text="Delete contact" url="/en-us/api-reference/beta/api/contact_delete" SEOKeyword="Delete contact, Microsoft Graph API, contact API" SEODescription="Delete contact." />
-        <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
-        <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, message API" SEODescription="Use this API to Get data extension." />
+        <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create open extension, Microsoft Graph API, message API" SEODescription="Use this API to create open extension." />
+        <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
       </Item>
       <Item text="Contact folder" url="/en-us/api-reference/beta/resources/contactfolder" SEOKeyword="contactfolder API, Microsoft Graph API, contactfolder API" SEODescription="A folder that contains contacts.">
         <Item text="List contact folders" url="/en-us/api-reference/beta/api/user_list_contactfolders" SEOKeyword="List contactFolders, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contactfolder objects." />
@@ -997,8 +1008,8 @@
         <Item text="Forward post" url="/en-us/api-reference/beta/api/post_forward" SEOKeyword="post: forward, Microsoft Graph API, post API" SEODescription="" />
         <Item text="List attachments" url="/en-us/api-reference/beta/api/post_list_attachments" SEOKeyword="List post attachments, Microsoft Graph API, Outlook conversation API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Add attachment" url="/en-us/api-reference/beta/api/post_post_attachments" SEOKeyword="Create post attachment, Microsoft Graph API, Outlook conversation API" SEODescription="Use this API to create a new Attachment." />
-        <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
-        <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, message API" SEODescription="Use this API to Get data extension." />
+        <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create open extension, Microsoft Graph API, message API" SEODescription="Use this API to create open extension." />
+        <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
       </Item>
       <Item text="Calendar" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
         <Item text="List events" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="List events, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
@@ -1009,8 +1020,8 @@
         <Item text="List calendar view" url="/en-us/api-reference/beta/api/group_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
         <Item text="List attachments" url="/en-us/api-reference/beta/api/event_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Add attachment" url="/en-us/api-reference/beta/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
-        <Item text="Create data extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create data extension, Microsoft Graph API, message API" SEODescription="Use this API to create data extension." />
-        <Item text="Get data extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, message API" SEODescription="Use this API to Get data extension." />
+        <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create open extension, Microsoft Graph API, message API" SEODescription="Use this API to create open extension." />
+        <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
       </Item>
       <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
         <Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
@@ -1208,6 +1219,28 @@
       </Item>
     </Item>
 
+	<Item text="Reports" url="/en-us/api-reference/beta/resources/report" >
+		<Item text="Office 365 usage reports" url="/en-us/api-reference/beta/resources/report" >
+			<Item text="Get email app usage report" url="/en-us/api-reference/beta/api/reportroot_emailappusage" SEOKeyword="Get Email App Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Email App Usage reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get email activity report" url="/en-us/api-reference/beta/api/reportroot_emailactivity" SEOKeyword="Get Email Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Exchange Email Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get mailbox usage report" url="/en-us/api-reference/beta/api/reportroot_mailboxusage" SEOKeyword="Get Mailbox Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Mailbox Usage reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get Office active users report" url="/en-us/api-reference/beta/api/reportroot_office365activeusers" SEOKeyword="Get Office 365 Active Users report, Microsoft Graph API, Report API" SEODescription="Retrieve the Office 365 Active Users reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get Office 365 groups activity report" url="/en-us/api-reference/beta/api/reportroot_office365groupsactivity" SEOKeyword="Get Office 365 Groups Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Office 365 Groups Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get Office365 activations report" url="/en-us/api-reference/beta/api/reportroot_office365activations" SEOKeyword="Get Office 365 Activations report, Microsoft Graph API, Report API" SEODescription="Retrieve the Office 365 Activations reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get OneDrive usage report" url="/en-us/api-reference/beta/api/reportroot_onedriveusage" SEOKeyword="Get OneDrive Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the OneDrive Usage reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get OneDrive activity report" url="/en-us/api-reference/beta/api/reportroot_onedriveactivity" SEOKeyword="Get OneDrive Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the OneDrive Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get Skype device usage report" url="/en-us/api-reference/beta/api/reportroot_sfbdeviceusage" SEOKeyword="Get Skype for Business Device Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business Device Usage reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get Skype organizer activity report" url="/en-us/api-reference/beta/api/reportroot_sfborganizeractivity" SEOKeyword="Get Skype for Business Organizer Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business Organizer Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get Skype peer-to-peer activity report" url="/en-us/api-reference/beta/api/reportroot_sfbp2pactivity" SEOKeyword="Get Skype for Business Peer to Peer Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business Peer to Peer Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get Skype participant activity report" url="/en-us/api-reference/beta/api/reportroot_sfbparticipantactivity" SEOKeyword="Get Skype for Business Participant Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business Participant Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get Skype activity report" url="/en-us/api-reference/beta/api/reportroot_sfbactivity" SEOKeyword="Get Skype for Business User Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business User Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get SharePoint site usage report" url="/en-us/api-reference/beta/api/reportroot_sharepointsiteusage" SEOKeyword="Get SharePoint Site Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the SharePoint Site Usage reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get SharePoint activity report" url="/en-us/api-reference/beta/api/reportroot_sharepointactivity" SEOKeyword="Get SharePoint Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the SharePoint Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get Yammer device usage report" url="/en-us/api-reference/beta/api/reportroot_yammerdeviceusage" SEOKeyword="Get Yammer Device Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Yammer Device Usage reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get Yammer activity report" url="/en-us/api-reference/beta/api/reportroot_yammeractivity" SEOKeyword="Get Yammer Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Yammer Activity reports. The response will be a CSV file in a binary stream." />
+		</Item>
+	</Item>
+	
     <Item text="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
       <Item text="Manage apps" url="/en-us/api-reference/beta/resources/intune_apps_app_conceptual">
         <Item text="Android LOB app" url="/en-us/api-reference/beta/resources/intune_apps_androidlobapp">
@@ -1622,7 +1655,7 @@
           <item text="List user app install statuses" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_list_userappinstallstatus"/>
           <item text="List mobile app contents" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_list_mobileappcontent"/>
         </item>
-      </Item>       
+      </Item>
       <Item text="Company" url="/en-us/api-reference/beta/resources/intune_company_conceptual">
         <Item text="Terms and conditions" url="/en-us/api-reference/beta/resources/intune_companyterms_termsandconditions">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_create"/>
@@ -1657,57 +1690,57 @@
           <Item text="List" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_list"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_update"/>
         </Item>
-            <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_corpenrollment_devicemanagement">
-              <Item text="Create enrollment proilfe" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_create_enrollmentprofile"/>
-              <Item text="Import Apple device identity" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_create_importedappledeviceidentity"/>
-              <Item text="Import device identity" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_create_importeddeviceidentity"/>
-              <Item text="Get" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_get"/>
-              <Item text="List enrollment profile" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_list_enrollmentprofile"/>
-              <Item text="List imported Apple identity" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_list_importedappledeviceidentity"/>
-              <Item text="List imported device identity" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_list_importeddeviceidentity"/>
-              <Item text="Update" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_update"/>
-            </Item>
-            <Item text="Enrollment profile" url="/en-us/api-reference/beta/resources/intune_corpenrollment_enrollmentprofile">
-              <Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_create"/>
-              <Item text="Delete" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_delete"/>
-              <Item text="Export mobile configuration" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_exportmobileconfig"/>
-              <Item text="Get" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_get"/>
-              <Item text="List" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_list"/>
-              <Item text="Update" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_update"/>
-              <Item text="Update device profile assignment" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_updatedeviceprofileassignment"/>
-            </Item>
-            <Item text="Imported Apple device identity" url="/en-us/api-reference/beta/resources/intune_corpenrollment_importedappledeviceidentity">
-              <Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_create"/>
-              <Item text="Delete" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_delete"/>
-              <Item text="Get" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_get"/>
-              <Item text="Import Apple device identity list" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_importappledeviceidentitylist"/>
-              <Item text="List" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_list"/>
-              <Item text="Update" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_update"/>
-            </Item>
-            <Item text="Imported Apple device identity result" url="/en-us/api-reference/beta/resources/intune_corpenrollment_importedappledeviceidentityresult">
-              <Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_create"/>
-              <Item text="Delete" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_delete"/>
-              <Item text="Get" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_get"/>
-              <Item text="List" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_list"/>
-              <Item text="Update" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_update"/>
-            </Item>
-            <Item text="Imported device identity" url="/en-us/api-reference/beta/resources/intune_corpenrollment_importeddeviceidentity">
-              <Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_create"/>
-              <Item text="Delete" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_delete"/>
-              <Item text="Get" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_get"/>
-              <Item text="Import device identity list" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_importdeviceidentitylist"/>
-              <Item text="List" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_list"/>
-              <Item text="Update" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_update"/>
-            </Item>
-            <Item text="Imported device identity result" url="/en-us/api-reference/beta/resources/intune_corpenrollment_importeddeviceidentityresult">
-              <Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentityresult_create"/>
-              <Item text="Delete" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentityresult_delete"/>
-              <Item text="Get" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentityresult_get"/>
-              <Item text="List" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentityresult_list"/>
-              <Item text="Update" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentityresult_update"/>
-            </Item>
-            <Item text="Management certificate with thumbprint" url="/en-us/api-reference/beta/resources/intune_corpenrollment_managementcertificatewiththumbprint"/>
-          </Item>
+        <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_corpenrollment_devicemanagement">
+          <Item text="Create enrollment proilfe" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_create_enrollmentprofile"/>
+          <Item text="Import Apple device identity" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_create_importedappledeviceidentity"/>
+          <Item text="Import device identity" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_create_importeddeviceidentity"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_get"/>
+          <Item text="List enrollment profile" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_list_enrollmentprofile"/>
+          <Item text="List imported Apple identity" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_list_importedappledeviceidentity"/>
+          <Item text="List imported device identity" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_list_importeddeviceidentity"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_update"/>
+        </Item>
+        <Item text="Enrollment profile" url="/en-us/api-reference/beta/resources/intune_corpenrollment_enrollmentprofile">
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_delete"/>
+          <Item text="Export mobile configuration" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_exportmobileconfig"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_get"/>
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_list"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_update"/>
+          <Item text="Update device profile assignment" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_updatedeviceprofileassignment"/>
+        </Item>
+        <Item text="Imported Apple device identity" url="/en-us/api-reference/beta/resources/intune_corpenrollment_importedappledeviceidentity">
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_delete"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_get"/>
+          <Item text="Import Apple device identity list" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_importappledeviceidentitylist"/>
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_list"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_update"/>
+        </Item>
+        <Item text="Imported Apple device identity result" url="/en-us/api-reference/beta/resources/intune_corpenrollment_importedappledeviceidentityresult">
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_delete"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_get"/>
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_list"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_update"/>
+        </Item>
+        <Item text="Imported device identity" url="/en-us/api-reference/beta/resources/intune_corpenrollment_importeddeviceidentity">
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_delete"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_get"/>
+          <Item text="Import device identity list" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_importdeviceidentitylist"/>
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_list"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_update"/>
+        </Item>
+        <Item text="Imported device identity result" url="/en-us/api-reference/beta/resources/intune_corpenrollment_importeddeviceidentityresult">
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentityresult_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentityresult_delete"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentityresult_get"/>
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentityresult_list"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentityresult_update"/>
+        </Item>
+        <Item text="Management certificate with thumbprint" url="/en-us/api-reference/beta/resources/intune_corpenrollment_managementcertificatewiththumbprint"/>
+      </Item>
       <Item text="Device configuration" url="/en-us/api-reference/beta/resources/intune_device_configuration_conceptual">
         <Item text="Android certificate profile base" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidcertificateprofilebase">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcertificateprofilebase_get"/>
