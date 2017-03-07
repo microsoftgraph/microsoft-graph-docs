@@ -21,6 +21,12 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## February 2017
 
+### Directory APIs
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|Beta|New entity:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
+
 ### Intune APIs
 
 |Change type|Version|Description|
