@@ -1200,7 +1200,7 @@
         <Item text="List audit events" url="/en-us/api-reference/beta/api/privilegedoperationevent_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, Audit" SEODescription="Retrieve a list of audit events." />
       </Item>
     </Item>
-    <Item text="Identity Protection" url="/en-us/api-reference/beta/resources/identityProtection_root" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection" SEODescription="API for querying data from and using Azure Active Directory Identity Protection">
+    <Item text="Identity Protection" url="/en-us/api-reference/beta/resources/identityprotection_root" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection" SEODescription="API for querying data from and using Azure Active Directory Identity Protection">
       <Item text="Identity Risk Events" url="/en-us/api-reference/beta/resources/identityriskevent" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection, Event Risk, Identity Risk" SEODescription="Queries risk event data from Azure AD Identity Protection">
         <Item text="List identityRiskEvent" url="/en-us/api-reference/beta/api/identityriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  identityRiskEvent API" SEODescription="Retrieve a list of identityRiskEvent objects." />
         <Item text="Get identityRiskEvent" url="/en-us/api-reference/beta/api/identityriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  identityRiskEvent API" SEODescription="Retrieve an identityRiskEvent object." />

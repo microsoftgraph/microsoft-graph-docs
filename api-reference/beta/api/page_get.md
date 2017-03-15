@@ -2,12 +2,21 @@
 
 Retrieve the properties and relationships of a [page](../resources/page.md) object.
 
+**Getting page information**
+
+Access a page's metadata by page identifier:
+
+```
+GET /me/notes/pages/{id}
+```
+
 **Getting page content**
 
 You can use the page's `content` endpoint to get the HTML content of a page:
 
 ```
 GET /me/notes/pages/{id}/content[?includeIDs=true]
+GET /me/notes/pages/{id}/$value[?includeIDs=true]
 ```
 
 The `includeIDs=true` query option is used to [update pages](../api/page_update.md).
