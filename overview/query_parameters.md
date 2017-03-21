@@ -4,15 +4,15 @@ Microsoft Graph provides several optional query parameters that you can use to s
 
 |Name|Value|Description|
 |:---------------|:--------|:-------|
-|`$filter`|string|Filters the response based on a set of criteria.|
-|`$select`|string|Comma-separated list of properties to include in the response.|
-|`$expand`|string|Comma-separated list of relationships to expand and include in the response.  |
-|`$orderby`|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|v
-|`$top`|int|The number of items to return in a result set.|
-|`$skip`|int|The number of items to skip in a result set.|
-|`$skipToken`|string|Paging token that is used to get the next set of results.|
-|`$count`|none|A collection and the number of items in the collection.|
-|`$search`|string|A property and value pair separated by a colon. |
+|[`$filter`](#filter)|string|Filters the response based on a set of criteria.|
+|[`$select`](#select)|string|Comma-separated list of properties to include in the response.|
+|[`$expand`](#expand)|string|Comma-separated list of relationships to expand and include in the response.  |
+|[`$orderby`](#orderby)|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|v
+|[`$top`](#top)|int|The number of items to return in a result set.|
+|[`$skip`](#skip)|int|The number of items to skip in a result set.|
+|[`$skipToken`](#skiptoken)|string|Paging token that is used to get the next set of results.|
+|[`$count`](#count)|none|A collection and the number of items in the collection.|
+|[`$search`](#search)|string|A property and value pair separated by a colon. |
 
 These parameters are compatible with the [OData V4 query language](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356).
 
@@ -93,7 +93,7 @@ However, in some cases you might want to include those results in a response.
 You can use the `$expand` query string parameter to instruct the API to expand a child object or collection and include those results.
 
 For example, to retrieve the root drive information and the top level child items in a drive, you use the `$expand` parameter.
-This example also uses a `$select` statement to only return the `id` and `name` properties of the children items.
+This example also uses a [`$select`](#select) statement to only return the `id` and `name` properties of the children items.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
@@ -188,7 +188,7 @@ This would return both the `contacts` collection, and the number of items in the
 
 To restrict the results of a request that match a search criterion, use the `$search` query parameter.
 
-> **Note:** You can currently search messages but not contacts or events. A `$search` request returns up to 250 results. You cannot use `$filter` or `$orderby` in a search request.
+> **Note:** You can currently search messages but not contacts or events. A `$search` request returns up to 250 results. You cannot use [`$filter`](#filter) or [`$orderby`](#orderby) in a search request.
 
 Search criteria are expressed using Advanced Query Syntax (AQS). The results are sorted by the date and time that the message was sent.
 
