@@ -4,15 +4,15 @@ Microsoft Graph provides several optional query parameters that you can use to s
 
 |Name|Value|Description|
 |:---------------|:--------|:-------|
-|`$search`|string|A property and value pair separated by a colon. |
+|`$filter`|string|Filters the response based on a set of criteria.|
 |`$select`|string|Comma-separated list of properties to include in the response.|
 |`$expand`|string|Comma-separated list of relationships to expand and include in the response.  |
-|`$orderby`|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
-|`$filter`|string|Filters the response based on a set of criteria.|
+|`$orderby`|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|v
 |`$top`|int|The number of items to return in a result set.|
 |`$skip`|int|The number of items to skip in a result set.|
 |`$skipToken`|string|Paging token that is used to get the next set of results.|
 |`$count`|none|A collection and the number of items in the collection.|
+|`$search`|string|A property and value pair separated by a colon. |
 
 These parameters are compatible with the [OData V4 query language](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356).
 
@@ -32,29 +32,20 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/addre
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address%20eq%20%27jon@contoso.com%27
 ```
 
-## `search`
+## `$filter`
 
-To restrict the results of a request that match a search criterion, use the `$search` query parameter.
-
-> **Note:** You can currently search messages but not contacts or events. A `$search` request returns up to 250 results. You cannot use `$filter` or `$orderby` in a search request.
-
-Search criteria are expressed using Advanced Query Syntax (AQS). The results are sorted by the date and time that the message was sent.
-
-You can specify the following properties on a `message` in a `$search` criterion:
-`attachments`, `bccRecipients`, `body`, `category`, `ccRecipients`, `content`, `from`, `hasAttachments`, `participants`, `receivedDateTime`, `sender`, `subject`, `toRecipients`
-
-If you do a search on messages and specify only a value, the search is carried out on the default search properties of `from`, `subject` and `body`.
-
-The following example returns all messages in the signed-in user's Inbox that contains "pizza" in any of the three default search properties:
+To filter the response data based on a set of criteria, use the `$filter` query option.
+For example, to return users in the organization filter by display name that starts with "Garth", the syntax is as follows:
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
+GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'Garth')
 ```
 
-The next example searches all messages in the user's Inbox that were sent from a specific email address:
+You can also filter by complex type entities.
+The following example returns messages that have the `address` field of the `from` property equal to `jon@contoso.com`. The `from` property is of the complex type `emailAddress`.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'jon@contoso.com'
 ```
 
 ## `$select`
@@ -140,22 +131,6 @@ To sort the results in ascending or descending order, append either `asc` or `de
 
  > **Note:** If you query on the [`user`](../api-reference/v1.0/resources/user.md) resource, `$orderby` can't be combined with filter expressions.
 
-## `$filter`
-
-To filter the response data based on a set of criteria, use the `$filter` query option.
-For example, to return users in the organization filter by display name that starts with "Garth", the syntax is as follows:
-
-```http
-GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'Garth')
-```
-
-You can also filter by complex type entities.
-The following example returns messages that have the `address` field of the `from` property equal to `jon@contoso.com`. The `from` property is of the complex type `emailAddress`.
-
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'jon@contoso.com'
-```
-
 ## `$top`
 
 To specify the maximum number of items to return in a result set, use the `$top` query option.
@@ -208,3 +183,28 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 This would return both the `contacts` collection, and the number of items in the `contacts` collection in the `@odata.count` property.
 
 >**Note:** This is not supported for [`directoryObject`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directoryobject) collections.
+
+## `search`
+
+To restrict the results of a request that match a search criterion, use the `$search` query parameter.
+
+> **Note:** You can currently search messages but not contacts or events. A `$search` request returns up to 250 results. You cannot use `$filter` or `$orderby` in a search request.
+
+Search criteria are expressed using Advanced Query Syntax (AQS). The results are sorted by the date and time that the message was sent.
+
+You can specify the following properties on a `message` in a `$search` criterion:
+`attachments`, `bccRecipients`, `body`, `category`, `ccRecipients`, `content`, `from`, `hasAttachments`, `participants`, `receivedDateTime`, `sender`, `subject`, `toRecipients`
+
+If you do a search on messages and specify only a value, the search is carried out on the default search properties of `from`, `subject` and `body`.
+
+The following example returns all messages in the signed-in user's Inbox that contains "pizza" in any of the three default search properties:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
+```
+
+The next example searches all messages in the user's Inbox that were sent from a specific email address:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
+```
