@@ -2,25 +2,26 @@
 
 Microsoft Graph provides several optional query parameters that you can use to specify and control the amount of data returned in a response. Microsoft Graph supports the following query options.
 
-|Name|Value|Description|
+|Name|Description|Example (click examples to try in [Graph Explorer][graph-explorer])
 |:---------------|:--------|:-------|
-|[`$filter`](#filter)|string|Filters the response based on a set of criteria.|
-|[`$select`](#select)|string|Comma-separated list of properties to include in the response.|
-|[`$expand`](#expand)|string|Comma-separated list of relationships to expand and include in the response.  |
-|[`$orderby`](#orderby)|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|v
-|[`$top`](#top)|int|The number of items to return in a result set.|
-|[`$skip`](#skip)|int|The number of items to skip in a result set.|
-|[`$skipToken`](#skiptoken)|string|Paging token that is used to get the next set of results.|
-|[`$count`](#count)|none|A collection and the number of items in the collection.|
-|[`$search`](#search)|string|A property and value pair separated by a colon. |
+|[`$filter`](#filter)|Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
+|[`$select`](#select)|Filters properties (columns).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
+|[`$expand`](#expand)|Retrieves related resources.|[`/groups/{id}?$expand=members`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/22be6ccb-15a5-459f-94ac-d1393bdd9e66?$expand=members&method=GET&version=v1.0)
+|[`$orderby`](#orderby)|Orders results.|[`/users?$orderby=displayName,userPrincipalName desc`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$orderby=displayName,userPrincipalName%20DESC&method=GET&version=v1.0)
+|[`$top`](#top)|Limits results. Typically used with `$skipToken`.|[`/users?$top=2`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
+|[`$skipToken`](#skiptoken)|Used with `$top` to retrieve a page of results.|See `nextLink` from the $top query for an example.
+|[`$count`](#count)|Retrieves the total count of matching resources.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
+<!-- TODO: figure out whether $search is actually used
+|[`$search`](#search)|A property and value pair separated by a colon.|
+-->
 
-These parameters are compatible with the [OData V4 query language](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356).
+These parameters are compatible with the [OData V4 query language][odata-query].
 
 > **Note:** On the Microsoft Graph `beta` endpoint, you can omit the `$` prefix for a simpler experience. For example, instead of `$expand`, you can use `expand`. For more details and examples, see [Supporting query parameters without $ prefixes in Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).
 
 **Encoding query parameters:**
 
-- If you are trying out query parameters in the [Microsoft Graph Explorer](https://graph.microsoft.io/en-us/graph-explorer#), you can just copy and paste the examples below without applying any URL-encoding to the query string. The following example works fine _in the Graph Explorer_ without encoding the space and quote characters:
+- If you are trying out query parameters in the [Microsoft Graph Explorer][graph-explorer], you can just copy and paste the examples below without applying any URL-encoding to the query string. The following example works fine _in the Graph Explorer_ without encoding the space and quote characters:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'jon@contoso.com'
@@ -208,3 +209,6 @@ The next example searches all messages in the user's Inbox that were sent from a
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 ```
+
+[graph-explorer]: https://graph.microsoft.io/en-us/graph-explorer
+[odata-query]: http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html#_Toc453752356
