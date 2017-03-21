@@ -17,20 +17,22 @@ Microsoft Graph provides several optional query parameters that you can use to s
 
 These parameters are compatible with the [OData V4 query language][odata-query].
 
-> **Note:** On the Microsoft Graph `beta` endpoint, you can omit the `$` prefix for a simpler experience. For example, instead of `$expand`, you can use `expand`. For more details and examples, see [Supporting query parameters without $ prefixes in Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).
+> **Note:** On the `beta` endpoint, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`. For more details and examples, see [Supporting query parameters without $ prefixes in Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).
 
 **Encoding query parameters:**
 
-- If you are trying out query parameters in the [Microsoft Graph Explorer][graph-explorer], you can just copy and paste the examples below without applying any URL-encoding to the query string. The following example works fine _in the Graph Explorer_ without encoding the space and quote characters:
+The values of query parameters should be percent-encoded. Many HTTP clients, browsers and tools (e.g., the [Graph Explorer][graph-explorer]) will help you with this. If a query is failing, one possible reason is failure to encode the values of query parameters appropriately.
+
+An unencoded URL looks like this:
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'jon@contoso.com'
+GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 ```
 
-- In general, when specifying query parameters _in your app_, make sure you appropriately encode characters that are [reserved for special meanings in an URI](https://tools.ietf.org/html/rfc3986#section-2.2). For example, encode the space and quote characters in the last example, as shown:
+An encoded URL looks like this:
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address%20eq%20%27jon@contoso.com%27
+GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
 ## `$filter`
