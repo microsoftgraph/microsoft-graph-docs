@@ -29,7 +29,7 @@ An unencoded URL looks like this:
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 ```
 
-An encoded URL looks like this:
+A properly encoded URL looks like this:
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
@@ -37,19 +37,58 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 
 ## `$filter`
 
-To filter the response data based on a set of criteria, use the `$filter` query option.
-For example, to return users in the organization filter by display name that starts with "Garth", the syntax is as follows:
+`$filter` can be used to retrieve just a subset of a collection. For example, to find users whose display name starts with `J`, use `startswith`.
+
+[Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
+
+**Request:**
 
 ```http
-GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'Garth')
+GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 ```
 
-You can also filter by complex type entities.
-The following example returns messages that have the `address` field of the `from` property equal to `jon@contoso.com`. The `from` property is of the complex type `emailAddress`.
+**Response:**
 
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'jon@contoso.com'
+```json
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "value": [
+        {
+            "id": "e013b9f3-a1ab-48d1-907b-e716c39d6363",
+            "businessPhones": [
+                "4255550100"
+            ],
+            "displayName": "Jan Madden",
+            "givenName": "Jan",
+            "jobTitle": null,
+            "mail": "demo32@a830edad9050849NDA1.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": "Madden",
+            "userPrincipalName": "demo32@a830edad9050849NDA1.onmicrosoft.com"
+        },
+        {
+            "id": "89efe8ed-d141-4151-a3e4-570a70022dff",
+            "businessPhones": [
+                "+1 425 555 0109"
+            ],
+            "displayName": "Janet Schorr",
+            "givenName": "Janet",
+            "jobTitle": "Product Marketing Manager",
+            "mail": "janets@a830edad9050849NDA1.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "18/2111",
+            "preferredLanguage": null,
+            "surname": "Schorr",
+            "userPrincipalName": "janets@a830edad9050849NDA1.onmicrosoft.com"
+        },
+        ...
+    ]
+}
 ```
+
+`$filter` has a very rich and expressive syntax with many built-in operators. Logical operators include equals (`eq`), not equals (`ne`), greater than (`gt`), greater than or equals (`gte`), and (`and`), or (`or`), not (`not`) etc. Arithmetic operators include add (`add`), subtract (`sub`), etc. String operators include contains (`contains`), starts with (`startswith`), etc. Lambda operators include any (`any`) and all (`all`). For additional details on `$filter` syntax, see the [OData protocol][odata-filter].
 
 ## `$select`
 
@@ -213,4 +252,5 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 ```
 
 [graph-explorer]: https://graph.microsoft.io/en-us/graph-explorer
-[odata-query]: http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html#_Toc453752356
+[odata-filter]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
+[odata-query]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356
