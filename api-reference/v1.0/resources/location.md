@@ -6,7 +6,7 @@ Represents location information of an event.
 ## Properties
 | Property  | Type   | Description                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
-| address | [physicalAddress](physicalAddress.md) |The street address of the location. |
+| address | [physicalAddress](physicaladdress.md) |The street address of the location. |
 | displayName  | String | The name associated with the location.                       |
 | locationEmailAddress | String | Optional email address of the location.              |
 
