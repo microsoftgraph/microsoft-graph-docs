@@ -32,7 +32,7 @@ The following table shows the properties that are required when you create a sch
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
 |description|String|Description for the schema extension.|
-|id|String|The unique identifier for the schema extension definition. <br> You can assign a value in one of two ways: <br> - Concatenate the name of one of your verified domains with a name for the schema extension to form a unique string in this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. As an example, `contoso_mySchema`. <br> - Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: `ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}`. An example would be `extkvbmkofy_mySchema`.  <br> This property cannot be changed after creation. |
+|id|String|The unique identifier for the schema extension definition. <br> You can assign a value in one of two ways: <br> - Concatenate the name of one of your verified domains with a name for the schema extension to form a unique string in this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. As an example, `contoso_mySchema`. <br> - Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. An example would be `extkvbmkofy_mySchema`.  <br> This property cannot be changed after creation. |
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition.|
 |targetTypes|String collection|Set of Microsoft Graph resource types (that support schema extensions) that this schema extension definition can be applied to.|
 
@@ -42,7 +42,7 @@ If successful, this method returns `201, Created` response code and [schemaExten
 ## Example
 ### Request 1
 The first example shows using a verified domain name, `graphlearn`, and a schema name, `courses`, to form a unique string for the **id** property of the 
-schema extension definition. The unique string is based on this format, {_domainName_}_{_schemaName_}.
+schema extension definition. The unique string is based on this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
 
 In the request body, supply a JSON representation of the [schemaExtension](../resources/schemaextension.md) object.
 <!-- {
@@ -150,7 +150,7 @@ Content-type: application/json
 
 ### Response 2
 The response includes a unique string in the **id** property that is based on the schema name provided in the request, together with the rest of the newly created schema definition. 
-The value in **id** in the response is based on the format, `ext\{_8-random-alphanumeric-chars_\}\_\{_schema-name_\}`. 
+The value in **id** in the response is based on the format, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
