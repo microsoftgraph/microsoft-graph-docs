@@ -2,7 +2,7 @@
 
 Represents a deleted item in the directory. When an item is deleted, it is added to the deleted items "container". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 
-Currently, deleted items functionality is only supported for the [group](group.md) resource.
+Currently, deleted items functionality is only supported for Office 365 [groups](group.md).
 
 ### Methods
 
