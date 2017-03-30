@@ -8,9 +8,8 @@ Retrieve the properties and relationships of user object.
 One of the following **scopes** is required to execute this API:
 *User.Read; User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
-> [!NOTE] 
-> *User.Read.All* and *User.ReadWrite.All* cannot perform any read operations on other users when the permission type is Application (client credentials). Alternatively select *Directory.Read.All* or *Directory.ReadWrite.All*. Check this and other Permission related issues in the [Release Notes](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#microsoft-graph-permissions).
->
+> Note: *User.Read.All* and *User.ReadWrite.All* cannot perform any read operations on other users when the permission type is Application (client credentials). Alternatively select *Directory.Read.All* or *Directory.ReadWrite.All*. Check this and other Permission related issues in the [Release Notes](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#microsoft-graph-permissions).
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
