@@ -1,14 +1,16 @@
-# List scopedAdministratorOf
+# List scopedRoleMemberOf
 
 Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) for the user.
+
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
+One of the following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/scopedAdministratorOf
-GET /users/{id}/scopedAdministratorOf
+GET /me/scopedrolememberof
+GET /users/{id}/scopedrolememberof
 
 ```
 ## Optional query parameters
@@ -17,7 +19,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer &lt;token&gt; *Required*  |
 
 ## Request body
 Do not supply a request body for this method.
@@ -28,10 +30,10 @@ If successful, this method returns a `200 OK` response code and collection of [s
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_scopedadministratorof"
+  "name": "get_scopedRoleMemberOf"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/scopedAdministratorOf
+GET https://graph.microsoft.com/beta/me/scopedrolememberof
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -66,7 +68,7 @@ Content-length: 307
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List scopedAdministratorOf",
+  "description": "List scopedRoleMemberOf",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -37,7 +37,7 @@ by providing a [delta](../api/user_delta.md) function.
 |[List ownedDevices](../api/user_list_owneddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects that are owned by the user from the ownedObjects navigation property.|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are retistered for the user from the registeredDevices navigation property.|
-|[List scopedAdministratorOf](../api/user_list_scopedadministratorof.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get the scoped-role adminstrative units memberships for this user.|
+|[List scopedRoleMemberOf](../api/user_list_scopedrolememberof.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get the scoped-role adminstrative units memberships for this user.|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects created by the user from the createdObjects navigation property.|
 |[assignLicense](../api/user_assignlicense.md)|[user](user.md)|Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.|
 |[List licenseDetails](../api/user_list_licensedetails.md) |[licenseDetails](licensedetails.md) collection| Get a licenseDetails object collection.|
@@ -130,7 +130,7 @@ by providing a [delta](../api/user_delta.md) function.
 |photos|[Photo](photo.md) collection| Read-only. Nullable.|
 |plans|[plan](plan.md) collection| Read-only. Nullable. Plans shared with the user. |
 |sharepoint|[sharepoint](sharepoint.md)| Access to the user's SharePoint site. Read-only. |
-|scopedAdministratorOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role adminstrative unit memberships for this user. Read-only. Nullable.|
+|scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role adminstrative unit memberships for this user. Read-only. Nullable.|
 |tasks|[task](task.md) collection| Read-only. Nullable. Tasks assigned to the user. |
 |trendingAround|[driveItem](driveitem.md) collection| Read-only. Nullable.|
 |workingWith|[User](user.md) collection| Read-only. Nullable.|
