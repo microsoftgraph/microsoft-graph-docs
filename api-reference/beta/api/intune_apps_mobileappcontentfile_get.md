@@ -17,7 +17,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCont
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 453
+Content-Length: 491
 
 {
   "value": {
@@ -55,7 +55,8 @@ Content-Length: 453
     "size": 4,
     "sizeEncrypted": 13,
     "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
-    "manifest": "bWFuaWZlc3Q="
+    "manifest": "bWFuaWZlc3Q=",
+    "uploadState": "transientError"
   }
 }
 ```

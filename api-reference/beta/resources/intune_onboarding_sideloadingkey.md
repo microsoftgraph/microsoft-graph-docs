@@ -2,7 +2,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Not yet documented
+SideLoadingKey entity is required for Windows 8 and 8.1 devices to intall Line Of Business Apps for a tenant.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|

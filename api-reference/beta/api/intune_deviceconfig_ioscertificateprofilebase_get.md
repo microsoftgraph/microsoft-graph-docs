@@ -6,7 +6,7 @@ Read properties and relationships of the [iosCertificateProfileBase](../resource
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -16,13 +16,11 @@ One of the following **scopes** is required to execute this API:
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosVpnConfiguration/identityCertificate/
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEasEmailProfileConfiguration/identityCertificate/
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEasEmailProfileConfiguration/smimeSigningCertificate/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEducationDeviceConfiguration/teacherIdentityCertificate/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEducationDeviceConfiguration/studentIdentityCertificate/
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication/
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|

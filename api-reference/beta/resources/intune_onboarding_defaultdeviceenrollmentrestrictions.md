@@ -12,8 +12,6 @@ Device Enrollment Restrictions
 |androidRestrictions|[deviceEnrollmentPlatformRestrictions](../resources/intune_onboarding_deviceenrollmentplatformrestrictions.md)|Restrictions on Windows Desktop enrollment|
 |macRestrictions|[deviceEnrollmentPlatformRestrictions](../resources/intune_onboarding_deviceenrollmentplatformrestrictions.md)|Restrictions on Mac enrollment|
 
->**Note:** The defaultDeviceEnrollmentRestrictions resource exposes settings to block personal device enrollment for all platforms types. However, the settings for macOS and Windows are for future development and are not currently used by Intune.
-
 ## Relationships
 None
 ## JSON Representation

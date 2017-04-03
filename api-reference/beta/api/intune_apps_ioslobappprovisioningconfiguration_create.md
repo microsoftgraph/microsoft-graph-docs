@@ -29,7 +29,7 @@ The following table shows the properties that are required when you create a ios
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
-|expiration|DateTimeOffset|Optional profile expiration date ime.|
+|expirationDateTime|DateTimeOffset|Optional profile expiration date and time.|
 |payloadFileName|String|Payload file name (*.mobileprovision | *.xml).|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
 |createdDateTime|DateTimeOffset|DateTime the object was created.|
@@ -49,11 +49,11 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/
 Content-type: application/json
-Content-length: 369
+Content-length: 377
 
 {
   "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
-  "expiration": "2016-12-31T23:58:07.1690227-08:00",
+  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "payloadFileName": "Payload File Name value",
   "payload": "cGF5bG9hZA==",
   "description": "Description value",
@@ -68,12 +68,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 477
+Content-Length: 485
 
 {
   "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
   "id": "e2a23631-3631-e2a2-3136-a2e23136a2e2",
-  "expiration": "2016-12-31T23:58:07.1690227-08:00",
+  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "payloadFileName": "Payload File Name value",
   "payload": "cGF5bG9hZA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",

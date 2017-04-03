@@ -6,7 +6,7 @@ Get the [roleDefinition](../resources/intune_rbac_roledefinition.md) from the ro
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementRBAC.ReadWrite.All; DeviceManagementRBAC.Read.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementRBAC.ReadWrite.All; DeviceManagementRBAC.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -18,7 +18,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|

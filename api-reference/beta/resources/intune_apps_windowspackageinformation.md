@@ -6,7 +6,8 @@ Contains properties for the package information for a Windows line of business a
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|applicableArchitecture|[windowsArchitecture](../resources/intune_apps_windowsarchitecture.md)|The Windows architecture for which this app can run on.|
+|applicableArchitecture|String|The Windows architecture for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|displayName|String|The Display Name.|
 |identityName|String|The Identity Name.|
 |identityPublisher|String|The Identity Publisher.|
 |identityResourceIdentifier|String|The Identity Resource Identifier.|
@@ -26,13 +27,8 @@ Here is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.windowsPackageInformation",
-  "applicableArchitecture": {
-    "@odata.type": "microsoft.graph.windowsArchitecture",
-    "x86": true,
-    "x64": true,
-    "arm": true,
-    "neutral": true
-  },
+  "applicableArchitecture": "String",
+  "displayName": "String",
   "identityName": "String",
   "identityPublisher": "String",
   "identityResourceIdentifier": "String",

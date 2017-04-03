@@ -44,6 +44,8 @@ Inherits from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentp
 |macOSRegistrationDisabled|Boolean|Indicates if Mac OS registration is disabled|
 |macOSFileVaultDisabled|Boolean|Indicates if Mac OS file vault is disabled|
 |awaitDeviceConfiguredConfirmation|Boolean|Indicates if the device will need to wait for configured confirmation|
+|sharedIPadMaximumUserCount|Int32|This specifies the maximum number of users that can use a shared iPad. Only applicable in shared iPad mode.|
+|enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios.Only applicable in shared iPads.|
 
 ## Relationships
 None
@@ -89,7 +91,9 @@ Here is a JSON representation of the resource.
   "diagnosticsDisabled": true,
   "macOSRegistrationDisabled": true,
   "macOSFileVaultDisabled": true,
-  "awaitDeviceConfiguredConfirmation": true
+  "awaitDeviceConfiguredConfirmation": true,
+  "sharedIPadMaximumUserCount": 1024,
+  "enableSharedIPad": true
 }
 ```
 

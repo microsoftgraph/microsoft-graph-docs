@@ -6,7 +6,7 @@ Read properties and relationships of the [iosGeneralDeviceConfiguration](../reso
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -19,7 +19,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7473
+Content-Length: 7659
 
 {
   "value": {
@@ -63,8 +63,14 @@ Content-Length: 7473
     "appleWatchBlockPairing": true,
     "appleWatchForceWristDetection": true,
     "appleNewsBlocked": true,
-    "appsSingleAppModeBundleIds": [
-      "Apps Single App Mode Bundle Ids value"
+    "appsSingleAppModeList": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
     ],
     "appsVisibilityList": [
       {

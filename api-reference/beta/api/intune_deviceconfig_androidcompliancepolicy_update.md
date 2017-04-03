@@ -6,7 +6,7 @@ Update the properties of a [androidCompliancePolicy](../resources/intune_devicec
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -38,7 +38,7 @@ The following table shows the properties that are required when you create a [an
 |version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |passwordRequired|Boolean|Require a password to unlock device.|
 |passwordMinimumLength|Int32|Minimum password length.|
-|passwordRequiredType|String|Type of characters in password Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`.|
+|passwordRequiredType|String|Type of characters in password Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordExpirationDays|Int32|Number of days before the password expires.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create a [an
 |securityDisableUsbDebugging|Boolean|Disable USB debugging on Android devices.|
 |requireAppVerify|Boolean|Require the Android Verify apps feature is turned on.|
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
-|deviceThreatProtectionRequiredSecurityLevel|String|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `none`, `low`, `medium`, `high`.|
+|deviceThreatProtectionRequiredSecurityLevel|String|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |securityBlockJailbrokenDevices|Boolean|Devices must not be jailbroken or rooted.|
 |osMinimumVersion|String|Minimum Android version.|
 |osMaximumVersion|String|Maximum Android version.|
@@ -64,7 +64,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 871
+Content-length: 875
 
 {
   "description": "Description value",
@@ -81,7 +81,7 @@ Content-length: 871
   "securityDisableUsbDebugging": true,
   "requireAppVerify": true,
   "deviceThreatProtectionEnabled": true,
-  "deviceThreatProtectionRequiredSecurityLevel": "low",
+  "deviceThreatProtectionRequiredSecurityLevel": "secured",
   "securityBlockJailbrokenDevices": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
@@ -95,7 +95,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1041
+Content-Length: 1045
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -115,7 +115,7 @@ Content-Length: 1041
   "securityDisableUsbDebugging": true,
   "requireAppVerify": true,
   "deviceThreatProtectionEnabled": true,
-  "deviceThreatProtectionRequiredSecurityLevel": "low",
+  "deviceThreatProtectionRequiredSecurityLevel": "secured",
   "securityBlockJailbrokenDevices": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",

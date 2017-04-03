@@ -6,7 +6,7 @@ Deletes a [windows10TeamGeneralConfiguration](../resources/intune_deviceconfig_w
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

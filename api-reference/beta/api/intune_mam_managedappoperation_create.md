@@ -13,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /managedAppRegistrations/{managedAppRegistrationsId}/operations/
+POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ If successful, this method returns a `201 Created` response code and a [managedA
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedAppRegistrations/{managedAppRegistrationsId}/operations/
+POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/
 Content-type: application/json
 Content-length: 223
 

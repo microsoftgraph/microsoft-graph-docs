@@ -6,7 +6,7 @@ Update the properties of a [depOnboardingSetting](../resources/intune_onboarding
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementServiceConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -34,6 +34,8 @@ The following table shows the properties that are required when you create a [de
 |lastModifiedDateTime|DateTimeOffset|When the service was onboarded.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|When the service last syned with Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|When Intune last requested a sync.|
+|shareTokenWithSchoolDataSyncService|Boolean|Whether or not the Dep token sharing is enabled with the School Data Sync service.|
+|lastSyncErrorCode|Int32|Error code reported by Apple during last dep sync.|
 
 
 
@@ -46,14 +48,16 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}/depOnboardingSettings/{depOnboardingSettingId}
 Content-type: application/json
-Content-length: 320
+Content-length: 395
 
 {
   "appleIdentifier": "Apple Identifier value",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
-  "lastSyncTriggeredDateTime": "2017-01-01T00:00:02.0916369-08:00"
+  "lastSyncTriggeredDateTime": "2017-01-01T00:00:02.0916369-08:00",
+  "shareTokenWithSchoolDataSyncService": true,
+  "lastSyncErrorCode": 1
 }
 ```
 
@@ -62,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 428
+Content-Length: 503
 
 {
   "@odata.type": "#microsoft.graph.depOnboardingSetting",
@@ -71,7 +75,9 @@ Content-Length: 428
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
-  "lastSyncTriggeredDateTime": "2017-01-01T00:00:02.0916369-08:00"
+  "lastSyncTriggeredDateTime": "2017-01-01T00:00:02.0916369-08:00",
+  "shareTokenWithSchoolDataSyncService": true,
+  "lastSyncErrorCode": 1
 }
 ```
 

@@ -13,6 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
+POST /mobileApps/
 POST /deviceAppManagement/mobileApps/
 ```
 
@@ -42,11 +43,17 @@ The following table shows the properties that are required when you create a win
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
+|applicableArchitectures|String|The Windows architecture(s) for which this app can run on. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md) Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|identityName|String|The Identity Name. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
+|identityPublisherHash|String|The Identity Publisher Hash. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
+|identityResourceIdentifier|String|The Identity Resource Identifier. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
+|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
+|phoneProductIdentifier|String|The Phone Product Identifier. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
+|phonePublisherId|String|The Phone Publisher Id. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
 |appXPackageInformationList|[windowsPackageInformation](../resources/intune_apps_windowspackageinformation.md) collection|The list of AppX Package Information.|
 
 
@@ -58,9 +65,9 @@ If successful, this method returns a `201 Created` response code and a [windowsP
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/
+POST https://graph.microsoft.com/beta/mobileApps/
 Content-type: application/json
-Content-length: 1823
+Content-length: 1927
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppXBundle",
@@ -80,29 +87,27 @@ Content-length: 1823
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 4,
-    "failedDeviceCount": 1,
-    "notInstalledDeviceCount": 7,
-    "installedUserCount": 2,
-    "failedUserCount": 15,
-    "notInstalledUserCount": 5
-  },
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
   "identityVersion": "Identity Version value",
+  "applicableArchitectures": "x86",
+  "identityName": "Identity Name value",
+  "identityPublisherHash": "Identity Publisher Hash value",
+  "identityResourceIdentifier": "Identity Resource Identifier value",
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
+    "v8_0": true,
+    "v8_1": true,
+    "v10_0": true
+  },
+  "phoneProductIdentifier": "Phone Product Identifier value",
+  "phonePublisherId": "Phone Publisher Id value",
   "appXPackageInformationList": [
     {
       "@odata.type": "microsoft.graph.windowsPackageInformation",
-      "applicableArchitecture": {
-        "@odata.type": "microsoft.graph.windowsArchitecture",
-        "x86": true,
-        "x64": true,
-        "arm": true,
-        "neutral": true
-      },
+      "applicableArchitecture": "x86",
+      "displayName": "Display Name value",
       "identityName": "Identity Name value",
       "identityPublisher": "Identity Publisher value",
       "identityResourceIdentifier": "Identity Resource Identifier value",
@@ -123,7 +128,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1931
+Content-Length: 2035
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppXBundle",
@@ -145,29 +150,27 @@ Content-Length: 1931
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 4,
-    "failedDeviceCount": 1,
-    "notInstalledDeviceCount": 7,
-    "installedUserCount": 2,
-    "failedUserCount": 15,
-    "notInstalledUserCount": 5
-  },
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
   "identityVersion": "Identity Version value",
+  "applicableArchitectures": "x86",
+  "identityName": "Identity Name value",
+  "identityPublisherHash": "Identity Publisher Hash value",
+  "identityResourceIdentifier": "Identity Resource Identifier value",
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
+    "v8_0": true,
+    "v8_1": true,
+    "v10_0": true
+  },
+  "phoneProductIdentifier": "Phone Product Identifier value",
+  "phonePublisherId": "Phone Publisher Id value",
   "appXPackageInformationList": [
     {
       "@odata.type": "microsoft.graph.windowsPackageInformation",
-      "applicableArchitecture": {
-        "@odata.type": "microsoft.graph.windowsArchitecture",
-        "x86": true,
-        "x64": true,
-        "arm": true,
-        "neutral": true
-      },
+      "applicableArchitecture": "x86",
+      "displayName": "Display Name value",
       "identityName": "Identity Name value",
       "identityPublisher": "Identity Publisher value",
       "identityResourceIdentifier": "Identity Resource Identifier value",

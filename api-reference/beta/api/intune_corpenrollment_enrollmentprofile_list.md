@@ -6,7 +6,7 @@ List properties and relationships of the [enrollmentProfile](../resources/intune
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

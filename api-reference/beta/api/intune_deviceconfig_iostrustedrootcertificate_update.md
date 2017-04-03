@@ -6,7 +6,7 @@ Update the properties of a [iosTrustedRootCertificate](../resources/intune_devic
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -14,8 +14,6 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEducationDeviceConfiguration/teacherRootCertificates/{iosTrustedRootCertificateId}
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEducationDeviceConfiguration/studentRootCertificates/{iosTrustedRootCertificateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEnterpriseWiFiConfiguration/rootCertificatesForServerValidation/{iosTrustedRootCertificateId}
 ```
 

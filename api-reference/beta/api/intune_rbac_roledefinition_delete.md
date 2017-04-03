@@ -6,7 +6,7 @@ Deletes a [roleDefinition](../resources/intune_rbac_roledefinition.md).
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementRBAC.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementRBAC.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

@@ -6,18 +6,18 @@ Read properties and relationships of the [sideLoadingKey](../resources/intune_on
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET /organization/{organizationId}/sideLoadingKeys/{sideLoadingKeyId}
+GET /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -34,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [sideLoadingKey]
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/organization/{organizationId}/sideLoadingKeys/{sideLoadingKeyId}
+GET https://graph.microsoft.com/beta/deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ```
 
 ### Response

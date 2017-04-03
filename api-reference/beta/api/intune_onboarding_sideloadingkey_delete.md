@@ -6,14 +6,14 @@ Deletes a [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md).
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementServiceConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-DELETE /organization/{organizationId}/sideLoadingKeys/{sideLoadingKeyId}
+DELETE /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ```
 
 ## Request headers
@@ -32,7 +32,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/organization/{organizationId}/sideLoadingKeys/{sideLoadingKeyId}
+DELETE https://graph.microsoft.com/beta/deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ```
 
 ### Response
