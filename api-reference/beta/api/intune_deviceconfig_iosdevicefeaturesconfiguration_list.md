@@ -6,7 +6,7 @@ List properties and relationships of the [iosDeviceFeaturesConfiguration](../res
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2528
+Content-Length: 2684
 
 {
   "value": [
@@ -68,6 +68,7 @@ Content-Length: 2528
           "pages": [
             {
               "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+              "displayName": "Display Name value",
               "apps": [
                 {
                   "@odata.type": "microsoft.graph.iosHomeScreenApp",
@@ -82,6 +83,7 @@ Content-Length: 2528
       "homeScreenPages": [
         {
           "@odata.type": "microsoft.graph.iosHomeScreenPage",
+          "displayName": "Display Name value",
           "icons": [
             {
               "@odata.type": "microsoft.graph.iosHomeScreenFolder",
@@ -89,6 +91,7 @@ Content-Length: 2528
               "pages": [
                 {
                   "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+                  "displayName": "Display Name value",
                   "apps": [
                     {
                       "@odata.type": "microsoft.graph.iosHomeScreenApp",

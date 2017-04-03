@@ -6,6 +6,7 @@ A folder containing apps on the Home Screen
 ## Properties
 |Property|Type|Description|
 |---|---|---|
+|displayName|String|Name of the folder page|
 |apps|[iosHomeScreenApp](../resources/intune_deviceconfig_ioshomescreenapp.md) collection|A list of apps to appear on a page within a folder|
 
 ## Relationships
@@ -21,6 +22,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenFolderPage",
+  "displayName": "String",
   "apps": [
     {
       "@odata.type": "microsoft.graph.iosHomeScreenApp",

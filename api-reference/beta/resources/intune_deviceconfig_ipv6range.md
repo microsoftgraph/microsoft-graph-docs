@@ -2,12 +2,15 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-IPv6 Range definition.
+IP V6 range
+
+Inherits from [ipRange](../resources/intune_deviceconfig_iprange.md)
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|lowerAddress|String|Lower address.|
-|upperAddress|String|Upper address.|
+|lowerAddress|String|Lower IP Address|
+|upperAddress|String|Upper IP Address|
 
 ## Relationships
 None

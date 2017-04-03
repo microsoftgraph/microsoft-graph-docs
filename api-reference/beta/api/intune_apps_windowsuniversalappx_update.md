@@ -13,6 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
+PATCH /mobileApps/{mobileAppsId}
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/
@@ -45,13 +46,15 @@ The following table shows the properties that are required when you create a [wi
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|applicableArchitectures|[windowsArchitecture](../resources/intune_apps_windowsarchitecture.md)|The Windows architecture(s) for which this app can run on.|
-|applicableDeviceTypes|[windowsDeviceType](../resources/intune_apps_windowsdevicetype.md)|The Windows device type(s) for which this app can run on.|
+|applicableArchitectures|String|The Windows architecture(s) for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|applicableDeviceTypes|String|The Windows device type(s) for which this app can run on. Possible values are: `none`, `desktop`, `mobile`.|
+|identityName|String|The Identity Name.|
+|identityPublisherHash|String|The Identity Publisher Hash.|
+|identityResourceIdentifier|String|The Identity Resource Identifier.|
 |isBundle|Boolean|Whether or not the app is a bundle.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 
@@ -64,9 +67,9 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
+PATCH https://graph.microsoft.com/beta/mobileApps/{mobileAppsId}
 Content-type: application/json
-Content-length: 1515
+Content-length: 1180
 
 {
   "displayName": "Display Name value",
@@ -85,31 +88,15 @@ Content-length: 1515
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 4,
-    "failedDeviceCount": 1,
-    "notInstalledDeviceCount": 7,
-    "installedUserCount": 2,
-    "failedUserCount": 15,
-    "notInstalledUserCount": 5
-  },
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
   "identityVersion": "Identity Version value",
-  "applicableArchitectures": {
-    "@odata.type": "microsoft.graph.windowsArchitecture",
-    "x86": true,
-    "x64": true,
-    "arm": true,
-    "neutral": true
-  },
-  "applicableDeviceTypes": {
-    "@odata.type": "microsoft.graph.windowsDeviceType",
-    "desktop": true,
-    "mobile": true
-  },
+  "applicableArchitectures": "x86",
+  "applicableDeviceTypes": "desktop",
+  "identityName": "Identity Name value",
+  "identityPublisherHash": "Identity Publisher Hash value",
+  "identityResourceIdentifier": "Identity Resource Identifier value",
   "isBundle": true,
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
@@ -125,7 +112,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1682
+Content-Length: 1347
 
 {
   "@odata.type": "#microsoft.graph.windowsUniversalAppX",
@@ -147,31 +134,15 @@ Content-Length: 1682
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 4,
-    "failedDeviceCount": 1,
-    "notInstalledDeviceCount": 7,
-    "installedUserCount": 2,
-    "failedUserCount": 15,
-    "notInstalledUserCount": 5
-  },
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
   "identityVersion": "Identity Version value",
-  "applicableArchitectures": {
-    "@odata.type": "microsoft.graph.windowsArchitecture",
-    "x86": true,
-    "x64": true,
-    "arm": true,
-    "neutral": true
-  },
-  "applicableDeviceTypes": {
-    "@odata.type": "microsoft.graph.windowsDeviceType",
-    "desktop": true,
-    "mobile": true
-  },
+  "applicableArchitectures": "x86",
+  "applicableDeviceTypes": "desktop",
+  "identityName": "Identity Name value",
+  "identityPublisherHash": "Identity Publisher Hash value",
+  "identityResourceIdentifier": "Identity Resource Identifier value",
   "isBundle": true,
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",

@@ -28,7 +28,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |---|---|---|
-|appProvisioningConfigurationGroupAssignments|[appProvisioningConfigGroupAssignment](../resources/intune_apps_appprovisioningconfiggroupassignment.md) collection|Not yet documented|
+|appProvisioningConfigurationGroupAssignments|[mobileAppProvisioningConfigGroupAssignment](../resources/intune_apps_mobileappprovisioningconfiggroupassignment.md) collection|Not yet documented|
 
 
 
@@ -42,14 +42,14 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assign
 
 Content-type: application/json
-Content-length: 256
+Content-length: 262
 
 {
   "appProvisioningConfigurationGroupAssignments": [
     {
-      "@odata.type": "#microsoft.graph.appProvisioningConfigGroupAssignment",
+      "@odata.type": "#microsoft.graph.mobileAppProvisioningConfigGroupAssignment",
       "targetGroupId": "Target Group Id value",
-      "id": "9f68a8a7-a8a7-9f68-a7a8-689fa7a8689f"
+      "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
     }
   ]
 }

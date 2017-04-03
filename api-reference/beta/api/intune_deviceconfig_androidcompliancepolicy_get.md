@@ -6,7 +6,7 @@ Read properties and relationships of the [androidCompliancePolicy](../resources/
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -19,7 +19,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupA
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1106
+Content-Length: 1110
 
 {
   "value": {
@@ -65,7 +65,7 @@ Content-Length: 1106
     "securityDisableUsbDebugging": true,
     "requireAppVerify": true,
     "deviceThreatProtectionEnabled": true,
-    "deviceThreatProtectionRequiredSecurityLevel": "low",
+    "deviceThreatProtectionRequiredSecurityLevel": "secured",
     "securityBlockJailbrokenDevices": true,
     "osMinimumVersion": "Os Minimum Version value",
     "osMaximumVersion": "Os Maximum Version value",

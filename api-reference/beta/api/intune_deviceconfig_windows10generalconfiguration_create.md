@@ -6,7 +6,7 @@ Create a new [windows10GeneralConfiguration](../resources/intune_deviceconfig_wi
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -76,6 +76,7 @@ The following table shows the properties that are required when you create a win
 |deviceManagementBlockFactoryResetOnMobile|Boolean|Indicates whether or not to Block the user from resetting their phone.|
 |deviceManagementBlockManualUnenroll|Boolean|Indicates whether or not to Block the user from doing manual un-enrollment from device management.|
 |diagnosticsDataSubmissionMode|String|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
+|oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
 |edgeBlockAutofill|Boolean|Indicates whether or not to block auto fill.|
 |edgeBlocked|Boolean|Indicates whether or not to Block the user from using the Edge browser.|
 |edgeCookiePolicy|String|Indicates which cookies to block in the Edge browser. Possible values are: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
@@ -85,12 +86,14 @@ The following table shows the properties that are required when you create a win
 |edgeBlockInPrivateBrowsing|Boolean|Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.|
 |edgeBlockJavaScript|Boolean|Indicates whether or not to Block the user from using JavaScript.|
 |edgeBlockPasswordManager|Boolean|Indicates whether or not to Block password manager.|
+|safeSearchFilter|String|Specifies what filter level of safe search is required. Possible values are: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Boolean|Indicates whether or not to block popups.|
 |edgeBlockSearchSuggestions|Boolean|Indicates whether or not to Block the user from using the search suggestions in the address bar.|
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to Block the user from sending Intranet traffic to Internet Explorer from Edge.|
 |edgeRequireSmartScreen|Boolean|Indicates whether or not to Require the user to use the smart screen filter.|
 |edgeEnterpriseModeSiteListLocation|String|Indicates the enterprise mode site list location. Could be a local file, local network or http location.|
 |edgeFirstRunUrl|String|The first run URL for when Edge browser is opened for the first time.|
+|edgeSearchEngine|[edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchenginebase.md)|Allows IT admins to set a default search engine for MDM-Controlled devices. Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set.|
 |edgeHomepageUrls|String collection|The list of URLs for homepages shodwn on MDM-enrolled devices on Edge browser.|
 |edgeBlockAccessToAboutFlags|Boolean|Indicates whether or not to prevent access to about flags on Edge browser.|
 |smartScreenBlockPromptOverride|Boolean|Indicates whether or not users can override SmartScreen Filter warnings about potentially malicious websites.|
@@ -104,6 +107,16 @@ The following table shows the properties that are required when you create a win
 |settingsBlockChangeRegion|Boolean|Indicates whether or not to block the user from changing the region settings.|
 |settingsBlockChangeLanguage|Boolean|Indicates whether or not to block the user from changing the language settings.|
 |settingsBlockChangePowerSleep|Boolean|Indicates whether or not to block the user from changing power and sleep settings.|
+|settingsBlockSettingsApp|Boolean|Indicates whether or not to block access to Settings app.|
+|settingsBlockSystemPage|Boolean|Indicates whether or not to block access to System in Settings app.|
+|settingsBlockDevicesPage|Boolean|Indicates whether or not to block access to Devices in Settings app.|
+|settingsBlockNetworkInternetPage|Boolean|Indicates whether or not to block access to Network & Internet in Settings app.|
+|settingsBlockPersonalizationPage|Boolean|Indicates whether or not to block access to Personalization in Settings app.|
+|settingsBlockAccountsPage|Boolean|Indicates whether or not to block access to Accounts in Settings app.|
+|settingsBlockTimeLanguagePage|Boolean|Indicates whether or not to block access to Time & Language in Settings app.|
+|settingsBlockEaseOfAccessPage|Boolean|Indicates whether or not to block access to Ease of Access in Settings app.|
+|settingsBlockPrivacyPage|Boolean|Indicates whether or not to block access to Privacy in Settings app.|
+|settingsBlockUpdateSecurityPage|Boolean|Indicates whether or not to block access to Update & Security in Settings app.|
 |locationServicesBlocked|Boolean|Indicates whether or not to Block the user from location services.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to Block action center notifications over lock screen.|
 |microsoftAccountBlocked|Boolean|Indicates whether or not to Block a Microsoft account.|
@@ -138,6 +151,13 @@ The following table shows the properties that are required when you create a win
 |storageRestrictAppDataToSystemVolume|Boolean|Indicates whether application data is restricted to the system drive.|
 |storageRestrictAppInstallToSystemVolume|Boolean|Indicates whether the installation of applications is restricted to the system drive.|
 |gameDvrBlocked|Boolean|Indicates whether or not to block DVR and broadcasting.|
+|experienceBlockWindowsSpotlight|Boolean|Allows IT admins to turn off all Windows Spotlight features|
+|experienceBlockWindowsTips|Boolean|Allows IT admins to turn off the popup of Windows Tips.|
+|experienceBlockConsumerSpecificFeatures|Boolean|Allows IT admins to block experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.|
+|startMenuLayoutXml|Binary|Allows admins to override the default Start menu layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in a UTF8 encoded byte array format.|
+|startMenuMode|String|Allows admins to decide how the Start menu is displayed. Possible values are: `userDefined`, `fullScreen`, `nonFullScreen`.|
+|logonBlockFastUserSwitching|Boolean|Disables the ability to quickly switch between users that are logged on simultaneously without logging off.|
+|startBlockUnpinningAppsFromTaskbar|Boolean|Indicates whether or not to block the user from unpinning apps from taskbar.|
 
 
 
@@ -150,7 +170,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 4767
+Content-length: 5638
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -206,6 +226,7 @@ Content-length: 4767
   "deviceManagementBlockFactoryResetOnMobile": true,
   "deviceManagementBlockManualUnenroll": true,
   "diagnosticsDataSubmissionMode": "none",
+  "oneDriveDisableFileSync": true,
   "edgeBlockAutofill": true,
   "edgeBlocked": true,
   "edgeCookiePolicy": "allow",
@@ -215,12 +236,16 @@ Content-length: 4767
   "edgeBlockInPrivateBrowsing": true,
   "edgeBlockJavaScript": true,
   "edgeBlockPasswordManager": true,
+  "safeSearchFilter": "strict",
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
   "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
+  "edgeSearchEngine": {
+    "@odata.type": "microsoft.graph.edgeSearchEngineBase"
+  },
   "edgeHomepageUrls": [
     "Edge Homepage Urls value"
   ],
@@ -236,6 +261,16 @@ Content-length: 4767
   "settingsBlockChangeRegion": true,
   "settingsBlockChangeLanguage": true,
   "settingsBlockChangePowerSleep": true,
+  "settingsBlockSettingsApp": true,
+  "settingsBlockSystemPage": true,
+  "settingsBlockDevicesPage": true,
+  "settingsBlockNetworkInternetPage": true,
+  "settingsBlockPersonalizationPage": true,
+  "settingsBlockAccountsPage": true,
+  "settingsBlockTimeLanguagePage": true,
+  "settingsBlockEaseOfAccessPage": true,
+  "settingsBlockPrivacyPage": true,
+  "settingsBlockUpdateSecurityPage": true,
   "locationServicesBlocked": true,
   "lockScreenBlockActionCenterNotifications": true,
   "microsoftAccountBlocked": true,
@@ -269,7 +304,14 @@ Content-length: 4767
   "windowsStoreEnablePrivateStoreOnly": true,
   "storageRestrictAppDataToSystemVolume": true,
   "storageRestrictAppInstallToSystemVolume": true,
-  "gameDvrBlocked": true
+  "gameDvrBlocked": true,
+  "experienceBlockWindowsSpotlight": true,
+  "experienceBlockWindowsTips": true,
+  "experienceBlockConsumerSpecificFeatures": true,
+  "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s",
+  "startMenuMode": "fullScreen",
+  "logonBlockFastUserSwitching": true,
+  "startBlockUnpinningAppsFromTaskbar": true
 }
 ```
 
@@ -278,7 +320,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4875
+Content-Length: 5746
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -336,6 +378,7 @@ Content-Length: 4875
   "deviceManagementBlockFactoryResetOnMobile": true,
   "deviceManagementBlockManualUnenroll": true,
   "diagnosticsDataSubmissionMode": "none",
+  "oneDriveDisableFileSync": true,
   "edgeBlockAutofill": true,
   "edgeBlocked": true,
   "edgeCookiePolicy": "allow",
@@ -345,12 +388,16 @@ Content-Length: 4875
   "edgeBlockInPrivateBrowsing": true,
   "edgeBlockJavaScript": true,
   "edgeBlockPasswordManager": true,
+  "safeSearchFilter": "strict",
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
   "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
+  "edgeSearchEngine": {
+    "@odata.type": "microsoft.graph.edgeSearchEngineBase"
+  },
   "edgeHomepageUrls": [
     "Edge Homepage Urls value"
   ],
@@ -366,6 +413,16 @@ Content-Length: 4875
   "settingsBlockChangeRegion": true,
   "settingsBlockChangeLanguage": true,
   "settingsBlockChangePowerSleep": true,
+  "settingsBlockSettingsApp": true,
+  "settingsBlockSystemPage": true,
+  "settingsBlockDevicesPage": true,
+  "settingsBlockNetworkInternetPage": true,
+  "settingsBlockPersonalizationPage": true,
+  "settingsBlockAccountsPage": true,
+  "settingsBlockTimeLanguagePage": true,
+  "settingsBlockEaseOfAccessPage": true,
+  "settingsBlockPrivacyPage": true,
+  "settingsBlockUpdateSecurityPage": true,
   "locationServicesBlocked": true,
   "lockScreenBlockActionCenterNotifications": true,
   "microsoftAccountBlocked": true,
@@ -399,7 +456,14 @@ Content-Length: 4875
   "windowsStoreEnablePrivateStoreOnly": true,
   "storageRestrictAppDataToSystemVolume": true,
   "storageRestrictAppInstallToSystemVolume": true,
-  "gameDvrBlocked": true
+  "gameDvrBlocked": true,
+  "experienceBlockWindowsSpotlight": true,
+  "experienceBlockWindowsTips": true,
+  "experienceBlockConsumerSpecificFeatures": true,
+  "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s",
+  "startMenuMode": "fullScreen",
+  "logonBlockFastUserSwitching": true,
+  "startBlockUnpinningAppsFromTaskbar": true
 }
 ```
 

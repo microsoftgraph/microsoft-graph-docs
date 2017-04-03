@@ -6,7 +6,7 @@ List properties and relationships of the [windows10GeneralConfiguration](../reso
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5384
+Content-Length: 6343
 
 {
   "value": [
@@ -100,6 +100,7 @@ Content-Length: 5384
       "deviceManagementBlockFactoryResetOnMobile": true,
       "deviceManagementBlockManualUnenroll": true,
       "diagnosticsDataSubmissionMode": "none",
+      "oneDriveDisableFileSync": true,
       "edgeBlockAutofill": true,
       "edgeBlocked": true,
       "edgeCookiePolicy": "allow",
@@ -109,12 +110,16 @@ Content-Length: 5384
       "edgeBlockInPrivateBrowsing": true,
       "edgeBlockJavaScript": true,
       "edgeBlockPasswordManager": true,
+      "safeSearchFilter": "strict",
       "edgeBlockPopups": true,
       "edgeBlockSearchSuggestions": true,
       "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
       "edgeRequireSmartScreen": true,
       "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
       "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
+      "edgeSearchEngine": {
+        "@odata.type": "microsoft.graph.edgeSearchEngineBase"
+      },
       "edgeHomepageUrls": [
         "Edge Homepage Urls value"
       ],
@@ -130,6 +135,16 @@ Content-Length: 5384
       "settingsBlockChangeRegion": true,
       "settingsBlockChangeLanguage": true,
       "settingsBlockChangePowerSleep": true,
+      "settingsBlockSettingsApp": true,
+      "settingsBlockSystemPage": true,
+      "settingsBlockDevicesPage": true,
+      "settingsBlockNetworkInternetPage": true,
+      "settingsBlockPersonalizationPage": true,
+      "settingsBlockAccountsPage": true,
+      "settingsBlockTimeLanguagePage": true,
+      "settingsBlockEaseOfAccessPage": true,
+      "settingsBlockPrivacyPage": true,
+      "settingsBlockUpdateSecurityPage": true,
       "locationServicesBlocked": true,
       "lockScreenBlockActionCenterNotifications": true,
       "microsoftAccountBlocked": true,
@@ -163,7 +178,14 @@ Content-Length: 5384
       "windowsStoreEnablePrivateStoreOnly": true,
       "storageRestrictAppDataToSystemVolume": true,
       "storageRestrictAppInstallToSystemVolume": true,
-      "gameDvrBlocked": true
+      "gameDvrBlocked": true,
+      "experienceBlockWindowsSpotlight": true,
+      "experienceBlockWindowsTips": true,
+      "experienceBlockConsumerSpecificFeatures": true,
+      "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s",
+      "startMenuMode": "fullScreen",
+      "logonBlockFastUserSwitching": true,
+      "startBlockUnpinningAppsFromTaskbar": true
     }
   ]
 }

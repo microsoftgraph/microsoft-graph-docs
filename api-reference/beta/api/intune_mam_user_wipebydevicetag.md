@@ -6,7 +6,7 @@ Not yet documented
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementManagedDevices.PriviligedOperation.All*
+*DeviceManagementManagedDevices.PriviligedOperation.All; DeviceManagementApps.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

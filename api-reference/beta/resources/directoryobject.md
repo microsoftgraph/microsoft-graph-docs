@@ -9,16 +9,20 @@ Represents an Azure Active Directory object. The **directoryObject** type is the
 |:---------------|:--------|:----------|
 |[Get directoryObject](../api/directoryobject_get.md) | [directoryObject](directoryobject.md) |Read the properties  of a directory object.|
 |[Delete](../api/directoryobject_delete.md) | None |Delete a directory object. |
-
+|[checkMemberGroups](../api/directoryobject_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
+|[getMemberGroups](../api/directoryobject_getmembergroups.md)|String collection|Return all the groups that the user, group, or directory object is a member of. The check is transitive.|
+|[getMemberObjects](../api/directoryobject_getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user, group, or directory object is a member of. The check is transitive. |
+|[getByIds](../api/directoryobject_getbyids.md) | [directoryObject](directoryobject.md) collection | Get a set of directory objects based on a set of supplied ids. |
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 |id|String|A Guid that is the unique identifier for the object; for example, 12345678-9abc-def0-1234-56789abcde. Key. Not nullable. Read-only.|
 
 ## Relationships
-None
 
+None
 
 ## JSON representation
 

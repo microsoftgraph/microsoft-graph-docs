@@ -14,6 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 DELETE /managedAppStatuses/{managedAppStatusesId}
+DELETE /deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 ```
 
 ## Request headers

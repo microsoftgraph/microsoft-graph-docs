@@ -21,6 +21,8 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |lastModifiedDateTime|DateTimeOffset|When the service was onboarded.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|When the service last syned with Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|When Intune last requested a sync.|
+|shareTokenWithSchoolDataSyncService|Boolean|Whether or not the Dep token sharing is enabled with the School Data Sync service.|
+|lastSyncErrorCode|Int32|Error code reported by Apple during last dep sync.|
 
 ## Relationships
 None
@@ -40,7 +42,9 @@ Here is a JSON representation of the resource.
   "tokenExpirationDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "lastSuccessfulSyncDateTime": "String (timestamp)",
-  "lastSyncTriggeredDateTime": "String (timestamp)"
+  "lastSyncTriggeredDateTime": "String (timestamp)",
+  "shareTokenWithSchoolDataSyncService": true,
+  "lastSyncErrorCode": 1024
 }
 ```
 

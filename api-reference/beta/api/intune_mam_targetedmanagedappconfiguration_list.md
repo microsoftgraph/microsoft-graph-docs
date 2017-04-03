@@ -13,9 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedAppPolicies/
-GET /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/
-GET /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/
+GET /deviceAppManagement/targetedManagedAppConfigurations/
 ```
 
 ## Request headers
@@ -34,7 +32,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppPolicies/
+GET https://graph.microsoft.com/beta/deviceAppManagement/targetedManagedAppConfigurations/
 ```
 
 ### Response

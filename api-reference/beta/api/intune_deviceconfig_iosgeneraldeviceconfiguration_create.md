@@ -6,7 +6,7 @@ Create a new [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_io
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -42,7 +42,7 @@ The following table shows the properties that are required when you create a ios
 |appleWatchBlockPairing|Boolean|Indicates whether or not to allow Apple Watch pairing when the device is in supervised mode (iOS 9.0 and later).|
 |appleWatchForceWristDetection|Boolean|Indicates whether or not to force a paired Apple Watch to use Wrist Detection (iOS 8.2 and later).|
 |appleNewsBlocked|Boolean|Indicates whether or not to block the user from using News when the device is in supervised mode (iOS 9.0 and later).|
-|appsSingleAppModeBundleIds|String collection|Gets or sets the list of app bundle IDs allowed to autonomously enter Single App Mode. Supervised only. iOS 7.0 and later.|
+|appsSingleAppModeList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|Gets or sets the list of iOS apps allowed to autonomously enter Single App Mode. Supervised only. iOS 7.0 and later.|
 |appsVisibilityList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps in the visibility list (either visible/launchable apps list or hidden/unlaunchable apps list, controlled by AppsVisibilityListType) (iOS 9.3 and later).|
 |appsVisibilityListType|String|Type of list that is in the AppsVisibilityList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |appStoreBlockAutomaticDownloads|Boolean|Indicates whether or not to block the automatic downloading of apps purchased on other devices when the device is in supervised mode (iOS 9.0 and later).|
@@ -170,7 +170,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 6964
+Content-length: 7138
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -186,8 +186,14 @@ Content-length: 6964
   "appleWatchBlockPairing": true,
   "appleWatchForceWristDetection": true,
   "appleNewsBlocked": true,
-  "appsSingleAppModeBundleIds": [
-    "Apps Single App Mode Bundle Ids value"
+  "appsSingleAppModeList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
   ],
   "appsVisibilityList": [
     {
@@ -370,7 +376,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7072
+Content-Length: 7246
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -388,8 +394,14 @@ Content-Length: 7072
   "appleWatchBlockPairing": true,
   "appleWatchForceWristDetection": true,
   "appleNewsBlocked": true,
-  "appsSingleAppModeBundleIds": [
-    "Apps Single App Mode Bundle Ids value"
+  "appsSingleAppModeList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
   ],
   "appsVisibilityList": [
     {

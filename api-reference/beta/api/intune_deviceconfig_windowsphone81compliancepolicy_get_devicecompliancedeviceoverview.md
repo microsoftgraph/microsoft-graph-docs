@@ -6,7 +6,7 @@ Get the [deviceComplianceDeviceOverview](../resources/intune_deviceconfig_device
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -17,7 +17,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/device
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -42,18 +42,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 366
+Content-Length: 337
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceComplianceDeviceOverview",
     "id": "886f167b-167b-886f-7b16-6f887b166f88",
-    "numberOfPendingDevices": 6,
-    "numberOfSucceededDevices": 8,
-    "numberOfErrorDevices": 4,
-    "numberOfFailedDevices": 5,
-    "lastUpdateTime": "2017-01-01T00:02:03.0612494-08:00",
-    "policyRevision": 14
+    "pendingCount": 12,
+    "successCount": 12,
+    "errorCount": 10,
+    "failedCount": 11,
+    "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
+    "configurationVersion": 4
   }
 }
 ```

@@ -13,6 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
+GET /mobileApps/
 GET /deviceAppManagement/mobileApps/
 ```
 
@@ -32,7 +33,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/
+GET https://graph.microsoft.com/beta/mobileApps/
 ```
 
 ### Response
@@ -40,7 +41,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2180
+Content-Length: 2276
 
 {
   "value": [
@@ -64,29 +65,27 @@ Content-Length: 2180
       "developer": "Developer value",
       "notes": "Notes value",
       "uploadState": 11,
-      "installSummary": {
-        "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-        "installedDeviceCount": 4,
-        "failedDeviceCount": 1,
-        "notInstalledDeviceCount": 7,
-        "installedUserCount": 2,
-        "failedUserCount": 15,
-        "notInstalledUserCount": 5
-      },
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
       "identityVersion": "Identity Version value",
+      "applicableArchitectures": "x86",
+      "identityName": "Identity Name value",
+      "identityPublisherHash": "Identity Publisher Hash value",
+      "identityResourceIdentifier": "Identity Resource Identifier value",
+      "minimumSupportedOperatingSystem": {
+        "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
+        "v8_0": true,
+        "v8_1": true,
+        "v10_0": true
+      },
+      "phoneProductIdentifier": "Phone Product Identifier value",
+      "phonePublisherId": "Phone Publisher Id value",
       "appXPackageInformationList": [
         {
           "@odata.type": "microsoft.graph.windowsPackageInformation",
-          "applicableArchitecture": {
-            "@odata.type": "microsoft.graph.windowsArchitecture",
-            "x86": true,
-            "x64": true,
-            "arm": true,
-            "neutral": true
-          },
+          "applicableArchitecture": "x86",
+          "displayName": "Display Name value",
           "identityName": "Identity Name value",
           "identityPublisher": "Identity Publisher value",
           "identityResourceIdentifier": "Identity Resource Identifier value",

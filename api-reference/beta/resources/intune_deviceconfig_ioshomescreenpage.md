@@ -6,6 +6,7 @@ A page containing apps and folders on the Home Screen
 ## Properties
 |Property|Type|Description|
 |---|---|---|
+|displayName|String|Name of the page|
 |icons|[iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md) collection|A list of apps and folders to appear on a page|
 
 ## Relationships
@@ -21,6 +22,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenPage",
+  "displayName": "String",
   "icons": [
     {
       "@odata.type": "microsoft.graph.iosHomeScreenFolder",
@@ -28,6 +30,7 @@ Here is a JSON representation of the resource.
       "pages": [
         {
           "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+          "displayName": "String",
           "apps": [
             {
               "@odata.type": "microsoft.graph.iosHomeScreenApp",
