@@ -6,7 +6,7 @@ Create a new [resourceOperation](../resources/intune_rbac_resourceoperation.md) 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementRBAC.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementRBAC.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

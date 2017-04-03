@@ -1,28 +1,15 @@
 # Working with Intune in Microsoft Graph  > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
-<!-- Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected.  To understand what's available in Intune, start here: [Introduction to Microsoft Intune](https://docs.microsoft.com/en-us/intune/understand-explore/introduction-to-microsoft-intune).   
+The Intune Graph API enables access to Intune information programmatically for your tenant, and the API performs the same Intune operations as those available through the **Azure Portal**.  
+## Sections of the Intune Graph API documentationThe following sections provide the reference documentation for the Intune Graph API and resources:- [Managed apps](intune_apps_app_conceptual.md)- [Company terms and conditions](intune_company_conceptual.md)- [Enroll corporate-owned devices](intune_corporate_enrollment_conceptual.md)- [Device configuration](intune_device_configuration_conceptual.md)- [Device managmement](intune_devicefe_conceptual.md)- [App protection](intune_app_protection_conceptual.md)- [Enroll devices for management](intune_onboarding_conceptual.md)- [Role-based access control](intune_rbac_conceptual.md)- [Telecom expense management](intune_tem_conceptual.md)## Using the Intune Graph API
 
-In short, with Intune you can: 
-
-* **Manage the mobile devices** your workforce uses to access company data. 
-* **Manage the mobile apps** your workforce uses. 
-* **Protect your company information** by helping to control the way your workforce accesses and shares it. 
-* **Ensure devices and apps are compliant** with company security requirements.  -->
-
-The Intune Graph API enables access to Intune information programmatically for your tenant, and the API performs the same Intune operations as those available through the **Azure Portal**.  ## Sections of the Intune Graph API documentationThe following sections provide the reference documentation for the Intune Graph API and resources:- [Managed apps](intune_apps_app_conceptual.md)- [Company terms and conditions](intune_company_conceptual.md)- [Enroll corporate-owned devices](intune_corporate_enrollment_conceptual.md)- [Device configuration](intune_device_configuration_conceptual.md)- [App protection](intune_app_protection_conceptual.md)- [Enroll devices for management](intune_onboarding_conceptual.md)- [Role-based access control](intune_rbac_conceptual.md)- [Telecom expense management](intune_tem_conceptual.md)<!-- For example, you could:
-
-* Retrieve information about Intune managed applications.
-* Create and assign a new Intune managed application to users. 
-* Create a configuration policy to set Wi-Fi and VPN profiles for Intune-managed iOS or Android devices. 
-* View device enrollment status for Intune managed devices view security compliance policy status for Intune managed devices.  -->
-## Using the Intune Graph API
 Intune provides data into the Microsoft Graph in the same way as other cloud services do, with rich entity information and relationship navigation.  Use Microsoft Graph to combine information from other services and Intune to build rich cross-service applications for IT professionals or end users.     
 
 Here is an example of how you can determine whether an application is installed on a user's device: 
 
 1. Get from Azure Active Directory a list of devices registered to a user: 
 
-    https://graph.microsoft.com/beta/{user}/ownedDevices 
+    https://graph.microsoft.com/beta/users/{user}/ownedDevices 
 
 2. Then view the list of applications for your tenant: 
 
@@ -32,6 +19,10 @@ Here is an example of how you can determine whether an application is installed 
 
     https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}/deviceStatuses/
 
+
+## Using Graph permission scopes
+
+Microsof Graph controls access to resources using permission scopes. As a developer, you must specify the permission scopes you need to access Intune resources. Typically, you specify the permission scopes you need in the Azure Active Directory portal. For more information, see [Microsoft Graph permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) and [Intune permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes#permission-scopes-in-preview).
 
 ## To use the Table of Contents on the Microsoft Graph site
   

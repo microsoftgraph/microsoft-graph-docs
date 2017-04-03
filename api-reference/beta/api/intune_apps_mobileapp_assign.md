@@ -13,6 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
+POST /mobileApps/{mobileAppsId}/assign
 POST /deviceAppManagement/mobileApps/{mobileAppId}/assign
 POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app//assign
 POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app//assign
@@ -42,7 +43,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assign
+POST https://graph.microsoft.com/beta/mobileApps/{mobileAppsId}/assign
 
 Content-type: application/json
 Content-length: 266

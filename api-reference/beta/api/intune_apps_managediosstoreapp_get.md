@@ -13,6 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
+GET /mobileApps/{mobileAppsId}
 GET /deviceAppManagement/mobileApps/{mobileAppId}
 GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/
 GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/
@@ -20,7 +21,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGro
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -37,7 +38,7 @@ If successful, this method returns a `200 OK` response code and [managedIOSStore
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
+GET https://graph.microsoft.com/beta/mobileApps/{mobileAppsId}
 ```
 
 ### Response
@@ -45,7 +46,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1205
+Content-Length: 909
 
 {
   "value": {
@@ -68,15 +69,6 @@ Content-Length: 1205
     "developer": "Developer value",
     "notes": "Notes value",
     "uploadState": 11,
-    "installSummary": {
-      "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-      "installedDeviceCount": 4,
-      "failedDeviceCount": 1,
-      "notInstalledDeviceCount": 7,
-      "installedUserCount": 2,
-      "failedUserCount": 15,
-      "notInstalledUserCount": 5
-    },
     "appAvailability": "lineOfBusiness",
     "version": "Version value",
     "bundleId": "Bundle Id value"

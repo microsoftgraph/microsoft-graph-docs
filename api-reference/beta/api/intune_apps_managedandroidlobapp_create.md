@@ -13,6 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
+POST /mobileApps/
 POST /deviceAppManagement/mobileApps/
 ```
 
@@ -42,7 +43,6 @@ The following table shows the properties that are required when you create a man
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |appAvailability|String|The Application's availability. Inherited from [managedApp](../resources/intune_apps_managedapp.md) Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
 |committedContentVersion|String|The internal committed content version. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
@@ -50,7 +50,6 @@ The following table shows the properties that are required when you create a man
 |size|Int64|The total size, including all uploaded files. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
 |identityVersion|String|The identity version. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
 |identityName|String|The Identity Name.|
-|manifest|Binary|The manifest information.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 
 
@@ -62,9 +61,9 @@ If successful, this method returns a `201 Created` response code and a [managedA
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/
+POST https://graph.microsoft.com/beta/mobileApps/
 Content-type: application/json
-Content-length: 1486
+Content-length: 1177
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -84,15 +83,6 @@ Content-length: 1486
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 4,
-    "failedDeviceCount": 1,
-    "notInstalledDeviceCount": 7,
-    "installedUserCount": 2,
-    "failedUserCount": 15,
-    "notInstalledUserCount": 5
-  },
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "committedContentVersion": "Committed Content Version value",
@@ -100,7 +90,6 @@ Content-length: 1486
   "size": 4,
   "identityVersion": "Identity Version value",
   "identityName": "Identity Name value",
-  "manifest": "bWFuaWZlc3Q=",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
     "v4_0": true,
@@ -120,7 +109,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1594
+Content-Length: 1285
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -142,15 +131,6 @@ Content-Length: 1594
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 4,
-    "failedDeviceCount": 1,
-    "notInstalledDeviceCount": 7,
-    "installedUserCount": 2,
-    "failedUserCount": 15,
-    "notInstalledUserCount": 5
-  },
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "committedContentVersion": "Committed Content Version value",
@@ -158,7 +138,6 @@ Content-Length: 1594
   "size": 4,
   "identityVersion": "Identity Version value",
   "identityName": "Identity Name value",
-  "manifest": "bWFuaWZlc3Q=",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
     "v4_0": true,

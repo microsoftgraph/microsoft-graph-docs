@@ -6,14 +6,14 @@ List properties and relationships of the [termsAndConditionsAcceptanceStatus](..
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET /termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/
+GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/
 ```
 
 ## Request headers
@@ -32,7 +32,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/
+GET https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/
 ```
 
 ### Response

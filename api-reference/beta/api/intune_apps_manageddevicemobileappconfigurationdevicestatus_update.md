@@ -14,6 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /iosMobileAppConfigurations/{iosMobileAppConfigurationsId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
+PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
 ```
 
 ## Request headers

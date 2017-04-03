@@ -13,12 +13,12 @@ Not yet documented
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
-|numberOfPendingUsers|Int32|Number of pending Users|
-|numberOfSucceededUsers|Int32|Number of succeeded Users|
-|numberOfErrorUsers|Int32|Number of error Users|
-|numberOfFailedUsers|Int32|Number of failed Users|
-|lastUpdateTime|DateTimeOffset|Last update time|
-|policyRevision|Int32|Version of the policy for that overview|
+|pendingCount|Int32|Number of pending Users|
+|successCount|Int32|Number of succeeded Users|
+|errorCount|Int32|Number of error Users|
+|failedCount|Int32|Number of failed Users|
+|lastUpdateDateTime|DateTimeOffset|Last update time|
+|configurationVersion|Int32|Version of the policy for that overview|
 
 ## Relationships
 None
@@ -34,12 +34,12 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationUserOverview",
   "id": "String (identifier)",
-  "numberOfPendingUsers": 1024,
-  "numberOfSucceededUsers": 1024,
-  "numberOfErrorUsers": 1024,
-  "numberOfFailedUsers": 1024,
-  "lastUpdateTime": "String (timestamp)",
-  "policyRevision": 1024
+  "pendingCount": 1024,
+  "successCount": 1024,
+  "errorCount": 1024,
+  "failedCount": 1024,
+  "lastUpdateDateTime": "String (timestamp)",
+  "configurationVersion": 1024
 }
 ```
 

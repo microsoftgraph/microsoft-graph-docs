@@ -14,6 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 POST /iosMobileAppConfigurations/{iosMobileAppConfigurationsId}/deviceStatuses/
+POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/deviceStatuses/
 ```
 
 ## Request headers

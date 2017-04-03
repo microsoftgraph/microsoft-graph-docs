@@ -13,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /managedAppRegistrations/{managedAppRegistrationsId}/operations/{managedAppOperationId}
+PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedAppRegistrations/{managedAppRegistrationsId}/operations/{managedAppOperationId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 Content-type: application/json
 Content-length: 165
 

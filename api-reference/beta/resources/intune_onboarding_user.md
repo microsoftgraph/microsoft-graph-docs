@@ -11,8 +11,6 @@ Not yet documented
 |[Create user](../api/intune_onboarding_user_create.md)|[user](../resources/intune_onboarding_user.md)|Create a new [user](../resources/intune_onboarding_user.md) object.|
 |[Delete user](../api/intune_onboarding_user_delete.md)|None|Deletes a [user](../resources/intune_onboarding_user.md).|
 |[Update user](../api/intune_onboarding_user_update.md)|[user](../resources/intune_onboarding_user.md)|Update the properties of a [user](../resources/intune_onboarding_user.md) object.|
-|[removeAllDevicesFromManagement action](../api/intune_onboarding_user_removealldevicesfrommanagement.md)|None|Not yet documented|
-|[List managedDevices](../api/intune_onboarding_user_list_manageddevice.md)|[managedDevice](../resources/intune_onboarding_manageddevice.md) collection|Get the managedDevices from the managedDevices navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -21,10 +19,7 @@ Not yet documented
 |deviceEnrollmentLimit|Int32|The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.|
 
 ## Relationships
-|Relationship|Type|Description|
-|---|---|---|
-|managedDevices|[managedDevice](../resources/intune_onboarding_manageddevice.md) collection|The managed devices associated with the user.|
-
+None
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

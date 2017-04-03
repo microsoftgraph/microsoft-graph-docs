@@ -14,8 +14,9 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /managedAppPolicies/
-GET /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/
-GET /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/
+GET /deviceAppManagement/managedAppPolicies/
+GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/
+GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/
 ```
 
 ## Request headers

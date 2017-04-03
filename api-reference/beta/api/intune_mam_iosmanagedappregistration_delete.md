@@ -15,6 +15,7 @@ One of the following **scopes** is required to execute this API:
 ```http
 DELETE /managedAppRegistrations/{managedAppRegistrationsId}
 DELETE /users/{usersId}/managedAppRegistrations/{managedAppRegistrationId}
+DELETE /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ```
 
 ## Request headers

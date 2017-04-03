@@ -6,7 +6,7 @@ Update the properties of a [deviceCategory](../resources/intune_onboarding_devic
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementManagedDevices.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -14,7 +14,6 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
-PATCH /detectedapps/{detectedappsId}/managedDevices/{managedDeviceId}/deviceCategory/
 ```
 
 ## Request headers
