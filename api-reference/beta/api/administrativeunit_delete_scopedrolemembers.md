@@ -7,7 +7,7 @@ The following **scope** is required to execute this API: *Directory.AccessAsUser
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /administrativeUnits/{id}/scopedrolemembers/{id}
+DELETE /administrativeunits/{id}/scopedrolemembers/{id}
 
 ```
 ## Request headers
@@ -27,7 +27,7 @@ If successful, this method returns `204, No Content` response code. It does not 
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_administrativeunit"
+  "name": "delete_scopedrolemember"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/administrativeunits/{id}/scopedrolemembers/{id}
