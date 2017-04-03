@@ -6,7 +6,7 @@ Create a new [iosCompliancePolicy](../resources/intune_deviceconfig_ioscomplianc
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -46,7 +46,8 @@ The following table shows the properties that are required when you create a ios
 |osMaximumVersion|String|Maximum IOS version.|
 |securityBlockJailbrokenDevices|Boolean|Devices must not be jailbroken or rooted.|
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
-|deviceThreatProtectionRequiredSecurityLevel|String|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `none`, `low`, `medium`, `high`.|
+|deviceThreatProtectionRequiredSecurityLevel|String|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|managedEmailProfileRequired|Boolean|Indicates whether or not to require a managed email profile.|
 
 
 
@@ -59,7 +60,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/
 Content-type: application/json
-Content-length: 765
+Content-length: 809
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -79,7 +80,8 @@ Content-length: 765
   "osMaximumVersion": "Os Maximum Version value",
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
-  "deviceThreatProtectionRequiredSecurityLevel": "low"
+  "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "managedEmailProfileRequired": true
 }
 ```
 
@@ -88,7 +90,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 873
+Content-Length: 917
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -110,7 +112,8 @@ Content-Length: 873
   "osMaximumVersion": "Os Maximum Version value",
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
-  "deviceThreatProtectionRequiredSecurityLevel": "low"
+  "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "managedEmailProfileRequired": true
 }
 ```
 

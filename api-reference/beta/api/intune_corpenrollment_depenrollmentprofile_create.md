@@ -6,7 +6,7 @@ Create a new [depEnrollmentProfile](../resources/intune_corpenrollment_depenroll
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementServiceConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -54,6 +54,8 @@ The following table shows the properties that are required when you create a dep
 |macOSRegistrationDisabled|Boolean|Indicates if Mac OS registration is disabled|
 |macOSFileVaultDisabled|Boolean|Indicates if Mac OS file vault is disabled|
 |awaitDeviceConfiguredConfirmation|Boolean|Indicates if the device will need to wait for configured confirmation|
+|sharedIPadMaximumUserCount|Int32|This specifies the maximum number of users that can use a shared iPad. Only applicable in shared iPad mode.|
+|enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios.Only applicable in shared iPads.|
 
 
 
@@ -66,7 +68,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/
 Content-type: application/json
-Content-length: 1153
+Content-length: 1219
 
 {
   "@odata.type": "#microsoft.graph.depEnrollmentProfile",
@@ -100,7 +102,9 @@ Content-length: 1153
   "diagnosticsDisabled": true,
   "macOSRegistrationDisabled": true,
   "macOSFileVaultDisabled": true,
-  "awaitDeviceConfiguredConfirmation": true
+  "awaitDeviceConfiguredConfirmation": true,
+  "sharedIPadMaximumUserCount": 10,
+  "enableSharedIPad": true
 }
 ```
 
@@ -109,7 +113,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1202
+Content-Length: 1268
 
 {
   "@odata.type": "#microsoft.graph.depEnrollmentProfile",
@@ -144,7 +148,9 @@ Content-Length: 1202
   "diagnosticsDisabled": true,
   "macOSRegistrationDisabled": true,
   "macOSFileVaultDisabled": true,
-  "awaitDeviceConfiguredConfirmation": true
+  "awaitDeviceConfiguredConfirmation": true,
+  "sharedIPadMaximumUserCount": 10,
+  "enableSharedIPad": true
 }
 ```
 

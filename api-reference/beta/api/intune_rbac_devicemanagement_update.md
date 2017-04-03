@@ -6,7 +6,7 @@ Update the properties of a [deviceManagement](../resources/intune_rbac_deviceman
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementRBAC.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementRBAC.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

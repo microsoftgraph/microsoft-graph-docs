@@ -3,9 +3,16 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties for the installation summary of a mobile app for a device.
+## Methods
+|Method|Return Type|Description|
+|---|---|---|
+|[Get mobileAppInstallSummary](../api/intune_apps_mobileappinstallsummary_get.md)|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Read properties and relationships of the [mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md) object.|
+|[Update mobileAppInstallSummary](../api/intune_apps_mobileappinstallsummary_update.md)|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Update the properties of a [mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
+|id|String|Key of the entity.|
 |installedDeviceCount|Int32|Number of Devices that have successfully installed this app.|
 |failedDeviceCount|Int32|Number of Devices that have failed to install this app.|
 |notInstalledDeviceCount|Int32|Number of Devices that does not have this app installed.|
@@ -26,6 +33,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallSummary",
+  "id": "String (identifier)",
   "installedDeviceCount": 1024,
   "failedDeviceCount": 1024,
   "notInstalledDeviceCount": 1024,

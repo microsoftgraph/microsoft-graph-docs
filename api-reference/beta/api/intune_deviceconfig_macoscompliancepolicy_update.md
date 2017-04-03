@@ -6,7 +6,7 @@ Update the properties of a [macOSCompliancePolicy](../resources/intune_devicecon
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -39,10 +39,16 @@ The following table shows the properties that are required when you create a [ma
 |passwordRequired|Boolean|Whether or not to require a password.|
 |passwordBlockSimple|Boolean|Indicates whether or not to block simple passwords.|
 |passwordExpirationDays|Int32|Number of days before the password expires.|
-|passwordMinimumLength|Int32|Minimum length of passwords.|
-|passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity required before a password is required.|
+|passwordMinimumLength|Int32|Minimum length of password.|
+|passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
-|passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
+|passwordRequiredType|String|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|osMinimumVersion|String|Minimum IOS version.|
+|osMaximumVersion|String|Maximum IOS version.|
+|deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
+|deviceThreatProtectionRequiredSecurityLevel|String|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|storageRequireEncryption|Boolean|Require encryption on Mac OS devices.|
 
 
 
@@ -55,7 +61,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 421
+Content-length: 705
 
 {
   "description": "Description value",
@@ -68,7 +74,13 @@ Content-length: 421
   "passwordMinimumLength": 5,
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordPreviousPasswordBlockCount": 2,
-  "passwordRequiredType": "alphanumeric"
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordRequiredType": "alphanumeric",
+  "osMinimumVersion": "Os Minimum Version value",
+  "osMaximumVersion": "Os Maximum Version value",
+  "deviceThreatProtectionEnabled": true,
+  "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "storageRequireEncryption": true
 }
 ```
 
@@ -77,7 +89,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 589
+Content-Length: 873
 
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -93,7 +105,13 @@ Content-Length: 589
   "passwordMinimumLength": 5,
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordPreviousPasswordBlockCount": 2,
-  "passwordRequiredType": "alphanumeric"
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordRequiredType": "alphanumeric",
+  "osMinimumVersion": "Os Minimum Version value",
+  "osMaximumVersion": "Os Maximum Version value",
+  "deviceThreatProtectionEnabled": true,
+  "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "storageRequireEncryption": true
 }
 ```
 

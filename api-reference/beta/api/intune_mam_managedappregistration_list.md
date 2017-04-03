@@ -15,6 +15,7 @@ One of the following **scopes** is required to execute this API:
 ```http
 GET /managedAppRegistrations/
 GET /users/{usersId}/managedAppRegistrations/
+GET /deviceAppManagement/managedAppRegistrations/
 ```
 
 ## Request headers

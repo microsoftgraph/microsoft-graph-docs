@@ -6,7 +6,7 @@ Update the properties of a [androidGeneralDeviceConfiguration](../resources/intu
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -62,7 +62,7 @@ The following table shows the properties that are required when you create a [an
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset.|
-|passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`.|
+|passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`.|
 |passwordRequired|Boolean|Indicates whether or not to require a password.|
 |powerOffBlocked|Boolean|Indicates whether or not to block powering off the device.|
 |factoryResetBlocked|Boolean|Indicates whether or not to block user performing a factory reset.|
@@ -74,7 +74,7 @@ The following table shows the properties that are required when you create a [an
 |storageRequireRemovableStorageEncryption|Boolean|Indicates whether or not to require removable storage encryption.|
 |voiceAssistantBlocked|Boolean|Indicates whether or not to block the use of the Voice Assistant.|
 |voiceDialingBlocked|Boolean|Indicates whether or not to block voice dialing.|
-|webBrowserAllowPopups|Boolean|Indicates whether or not to allow popups within the web browser.|
+|webBrowserBlockPopups|Boolean|Indicates whether or not to block popups within the web browser.|
 |webBrowserBlockAutofill|Boolean|Indicates whether or not to block the web browser's auto fill feature.|
 |webBrowserBlockJavaScript|Boolean|Indicates whether or not to block JavaScript within the web browser.|
 |webBrowserBlocked|Boolean|Indicates whether or not to block the web browser.|
@@ -145,7 +145,7 @@ Content-length: 2030
   "storageRequireRemovableStorageEncryption": true,
   "voiceAssistantBlocked": true,
   "voiceDialingBlocked": true,
-  "webBrowserAllowPopups": true,
+  "webBrowserBlockPopups": true,
   "webBrowserBlockAutofill": true,
   "webBrowserBlockJavaScript": true,
   "webBrowserBlocked": true,
@@ -215,7 +215,7 @@ Content-Length: 2210
   "storageRequireRemovableStorageEncryption": true,
   "voiceAssistantBlocked": true,
   "voiceDialingBlocked": true,
-  "webBrowserAllowPopups": true,
+  "webBrowserBlockPopups": true,
   "webBrowserBlockAutofill": true,
   "webBrowserBlockJavaScript": true,
   "webBrowserBlocked": true,

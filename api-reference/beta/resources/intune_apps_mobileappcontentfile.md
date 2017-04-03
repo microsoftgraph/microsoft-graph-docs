@@ -26,6 +26,7 @@ Contains properties for a single installer file that is associated with a given 
 |sizeEncrypted|Int64|The size of the file after encryption.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|The time the Azure storage Uri expires.|
 |manifest|Binary|The manifest information.|
+|uploadState|String|The state of the current upload request. Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
 
 ## Relationships
 None
@@ -48,7 +49,8 @@ Here is a JSON representation of the resource.
   "size": 1024,
   "sizeEncrypted": 1024,
   "azureStorageUriExpirationDateTime": "String (timestamp)",
-  "manifest": "binary"
+  "manifest": "binary",
+  "uploadState": "String"
 }
 ```
 

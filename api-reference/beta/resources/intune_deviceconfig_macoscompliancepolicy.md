@@ -20,6 +20,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |[List deviceComplianceUserStatuses](../api/intune_deviceconfig_macoscompliancepolicy_list_devicecomplianceuserstatus.md)|[deviceComplianceUserStatus](../resources/intune_deviceconfig_devicecomplianceuserstatus.md) collection|Get the deviceComplianceUserStatuses from the userStatuses navigation property.|
 |[Get deviceComplianceDeviceOverview](../api/intune_deviceconfig_macoscompliancepolicy_get_devicecompliancedeviceoverview.md)|[deviceComplianceDeviceOverview](../resources/intune_deviceconfig_devicecompliancedeviceoverview.md)|Get the [deviceComplianceDeviceOverview](../resources/intune_deviceconfig_devicecompliancedeviceoverview.md) from the deviceStatusOverview navigation property.|
 |[Get deviceComplianceUserOverview](../api/intune_deviceconfig_macoscompliancepolicy_get_devicecomplianceuseroverview.md)|[deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md)|Get the [deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md) from the userStatusOverview navigation property.|
+|[List settingStateDeviceSummaries](../api/intune_deviceconfig_macoscompliancepolicy_list_settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Get the settingStateDeviceSummaries from the deviceSettingStateSummaries navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -33,10 +34,16 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |passwordRequired|Boolean|Whether or not to require a password.|
 |passwordBlockSimple|Boolean|Indicates whether or not to block simple passwords.|
 |passwordExpirationDays|Int32|Number of days before the password expires.|
-|passwordMinimumLength|Int32|Minimum length of passwords.|
-|passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity required before a password is required.|
+|passwordMinimumLength|Int32|Minimum length of password.|
+|passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
-|passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
+|passwordRequiredType|String|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|osMinimumVersion|String|Minimum IOS version.|
+|osMaximumVersion|String|Maximum IOS version.|
+|deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
+|deviceThreatProtectionRequiredSecurityLevel|String|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|storageRequireEncryption|Boolean|Require encryption on Mac OS devices.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -47,6 +54,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |userStatuses|[deviceComplianceUserStatus](../resources/intune_deviceconfig_devicecomplianceuserstatus.md) collection|List of DeviceComplianceUserStatus. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune_deviceconfig_devicecompliancedeviceoverview.md)|Device compliance devices status overview Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |userStatusOverview|[deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md)|Device compliance users status overview Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Compliance Setting State Device Summary Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -71,7 +79,13 @@ Here is a JSON representation of the resource.
   "passwordMinimumLength": 1024,
   "passwordMinutesOfInactivityBeforeLock": 1024,
   "passwordPreviousPasswordBlockCount": 1024,
-  "passwordRequiredType": "String"
+  "passwordMinimumCharacterSetCount": 1024,
+  "passwordRequiredType": "String",
+  "osMinimumVersion": "String",
+  "osMaximumVersion": "String",
+  "deviceThreatProtectionEnabled": true,
+  "deviceThreatProtectionRequiredSecurityLevel": "String",
+  "storageRequireEncryption": true
 }
 ```
 

@@ -19,6 +19,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_windows10generalconfiguration_list_deviceconfigurationuserstatus.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Get the deviceConfigurationUserStatuses from the userStatuses navigation property.|
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_windows10generalconfiguration_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 |[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_windows10generalconfiguration_get_deviceconfigurationuseroverview.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Get the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) from the userStatusOverview navigation property.|
+|[List settingStateDeviceSummaries](../api/intune_deviceconfig_windows10generalconfiguration_list_settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Get the settingStateDeviceSummaries from the deviceSettingStateSummaries navigation property.|
+|[Get deviceConfigurationDeviceStateSummary](../api/intune_deviceconfig_windows10generalconfiguration_get_deviceconfigurationdevicestatesummary.md)|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|Get the [deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md) from the deviceConfigurationDeviceStateSummaries navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -71,6 +73,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |deviceManagementBlockFactoryResetOnMobile|Boolean|Indicates whether or not to Block the user from resetting their phone.|
 |deviceManagementBlockManualUnenroll|Boolean|Indicates whether or not to Block the user from doing manual un-enrollment from device management.|
 |diagnosticsDataSubmissionMode|String|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
+|oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
 |edgeBlockAutofill|Boolean|Indicates whether or not to block auto fill.|
 |edgeBlocked|Boolean|Indicates whether or not to Block the user from using the Edge browser.|
 |edgeCookiePolicy|String|Indicates which cookies to block in the Edge browser. Possible values are: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
@@ -80,12 +83,14 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |edgeBlockInPrivateBrowsing|Boolean|Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.|
 |edgeBlockJavaScript|Boolean|Indicates whether or not to Block the user from using JavaScript.|
 |edgeBlockPasswordManager|Boolean|Indicates whether or not to Block password manager.|
+|safeSearchFilter|String|Specifies what filter level of safe search is required. Possible values are: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Boolean|Indicates whether or not to block popups.|
 |edgeBlockSearchSuggestions|Boolean|Indicates whether or not to Block the user from using the search suggestions in the address bar.|
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to Block the user from sending Intranet traffic to Internet Explorer from Edge.|
 |edgeRequireSmartScreen|Boolean|Indicates whether or not to Require the user to use the smart screen filter.|
 |edgeEnterpriseModeSiteListLocation|String|Indicates the enterprise mode site list location. Could be a local file, local network or http location.|
 |edgeFirstRunUrl|String|The first run URL for when Edge browser is opened for the first time.|
+|edgeSearchEngine|[edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchenginebase.md)|Allows IT admins to set a default search engine for MDM-Controlled devices. Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set.|
 |edgeHomepageUrls|String collection|The list of URLs for homepages shodwn on MDM-enrolled devices on Edge browser.|
 |edgeBlockAccessToAboutFlags|Boolean|Indicates whether or not to prevent access to about flags on Edge browser.|
 |smartScreenBlockPromptOverride|Boolean|Indicates whether or not users can override SmartScreen Filter warnings about potentially malicious websites.|
@@ -99,6 +104,16 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |settingsBlockChangeRegion|Boolean|Indicates whether or not to block the user from changing the region settings.|
 |settingsBlockChangeLanguage|Boolean|Indicates whether or not to block the user from changing the language settings.|
 |settingsBlockChangePowerSleep|Boolean|Indicates whether or not to block the user from changing power and sleep settings.|
+|settingsBlockSettingsApp|Boolean|Indicates whether or not to block access to Settings app.|
+|settingsBlockSystemPage|Boolean|Indicates whether or not to block access to System in Settings app.|
+|settingsBlockDevicesPage|Boolean|Indicates whether or not to block access to Devices in Settings app.|
+|settingsBlockNetworkInternetPage|Boolean|Indicates whether or not to block access to Network & Internet in Settings app.|
+|settingsBlockPersonalizationPage|Boolean|Indicates whether or not to block access to Personalization in Settings app.|
+|settingsBlockAccountsPage|Boolean|Indicates whether or not to block access to Accounts in Settings app.|
+|settingsBlockTimeLanguagePage|Boolean|Indicates whether or not to block access to Time & Language in Settings app.|
+|settingsBlockEaseOfAccessPage|Boolean|Indicates whether or not to block access to Ease of Access in Settings app.|
+|settingsBlockPrivacyPage|Boolean|Indicates whether or not to block access to Privacy in Settings app.|
+|settingsBlockUpdateSecurityPage|Boolean|Indicates whether or not to block access to Update & Security in Settings app.|
 |locationServicesBlocked|Boolean|Indicates whether or not to Block the user from location services.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to Block action center notifications over lock screen.|
 |microsoftAccountBlocked|Boolean|Indicates whether or not to Block a Microsoft account.|
@@ -133,6 +148,13 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |storageRestrictAppDataToSystemVolume|Boolean|Indicates whether application data is restricted to the system drive.|
 |storageRestrictAppInstallToSystemVolume|Boolean|Indicates whether the installation of applications is restricted to the system drive.|
 |gameDvrBlocked|Boolean|Indicates whether or not to block DVR and broadcasting.|
+|experienceBlockWindowsSpotlight|Boolean|Allows IT admins to turn off all Windows Spotlight features|
+|experienceBlockWindowsTips|Boolean|Allows IT admins to turn off the popup of Windows Tips.|
+|experienceBlockConsumerSpecificFeatures|Boolean|Allows IT admins to block experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.|
+|startMenuLayoutXml|Binary|Allows admins to override the default Start menu layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in a UTF8 encoded byte array format.|
+|startMenuMode|String|Allows admins to decide how the Start menu is displayed. Possible values are: `userDefined`, `fullScreen`, `nonFullScreen`.|
+|logonBlockFastUserSwitching|Boolean|Disables the ability to quickly switch between users that are logged on simultaneously without logging off.|
+|startBlockUnpinningAppsFromTaskbar|Boolean|Indicates whether or not to block the user from unpinning apps from taskbar.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -142,6 +164,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|The device compliance state summary for this account. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -208,6 +232,7 @@ Here is a JSON representation of the resource.
   "deviceManagementBlockFactoryResetOnMobile": true,
   "deviceManagementBlockManualUnenroll": true,
   "diagnosticsDataSubmissionMode": "String",
+  "oneDriveDisableFileSync": true,
   "edgeBlockAutofill": true,
   "edgeBlocked": true,
   "edgeCookiePolicy": "String",
@@ -217,12 +242,16 @@ Here is a JSON representation of the resource.
   "edgeBlockInPrivateBrowsing": true,
   "edgeBlockJavaScript": true,
   "edgeBlockPasswordManager": true,
+  "safeSearchFilter": "String",
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "String",
   "edgeFirstRunUrl": "String",
+  "edgeSearchEngine": {
+    "@odata.type": "microsoft.graph.edgeSearchEngineBase"
+  },
   "edgeHomepageUrls": [
     "String"
   ],
@@ -238,6 +267,16 @@ Here is a JSON representation of the resource.
   "settingsBlockChangeRegion": true,
   "settingsBlockChangeLanguage": true,
   "settingsBlockChangePowerSleep": true,
+  "settingsBlockSettingsApp": true,
+  "settingsBlockSystemPage": true,
+  "settingsBlockDevicesPage": true,
+  "settingsBlockNetworkInternetPage": true,
+  "settingsBlockPersonalizationPage": true,
+  "settingsBlockAccountsPage": true,
+  "settingsBlockTimeLanguagePage": true,
+  "settingsBlockEaseOfAccessPage": true,
+  "settingsBlockPrivacyPage": true,
+  "settingsBlockUpdateSecurityPage": true,
   "locationServicesBlocked": true,
   "lockScreenBlockActionCenterNotifications": true,
   "microsoftAccountBlocked": true,
@@ -271,7 +310,14 @@ Here is a JSON representation of the resource.
   "windowsStoreEnablePrivateStoreOnly": true,
   "storageRestrictAppDataToSystemVolume": true,
   "storageRestrictAppInstallToSystemVolume": true,
-  "gameDvrBlocked": true
+  "gameDvrBlocked": true,
+  "experienceBlockWindowsSpotlight": true,
+  "experienceBlockWindowsTips": true,
+  "experienceBlockConsumerSpecificFeatures": true,
+  "startMenuLayoutXml": "binary",
+  "startMenuMode": "String",
+  "logonBlockFastUserSwitching": true,
+  "startBlockUnpinningAppsFromTaskbar": true
 }
 ```
 

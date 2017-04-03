@@ -13,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /managedAppPolicies/{managedAppPoliciesId}/targetedSecurityGroups/{directoryObjectId}
-PATCH /managedAppPolicies/{managedAppPoliciesId}/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/{directoryObjectId}
-PATCH /managedAppPolicies/{managedAppPoliciesId}/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/{directoryObjectId}
+PATCH /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetedSecurityGroups/{directoryObjectId}
+PATCH /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/{directoryObjectId}
+PATCH /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/{directoryObjectId}
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a `200 OK` response code and an updated [dire
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}/targetedSecurityGroups/{directoryObjectId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetedSecurityGroups/{directoryObjectId}
 Content-type: application/json
 Content-length: 2
 

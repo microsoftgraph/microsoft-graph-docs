@@ -13,9 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /managedAppPolicies/{managedAppPoliciesId}
-PATCH /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/{managedAppPolicyId}
-PATCH /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/{managedAppPolicyId}
+PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}
 ```
 
 ## Request headers
@@ -54,7 +52,7 @@ The following table shows the properties that are required when you create a [an
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `any`, `numeric`, `alphanumeric`, `alphanumericAndSymbol`.|
-|allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `oneDriveForBusiness`, `sharePoint`, `box`, `dropbox`, `googleDrive`, `localStorage`.|
+|allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `oneDriveForBusiness`, `sharePoint`, `localStorage`.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |fingerprintBlocked|Boolean|Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -72,7 +70,7 @@ If successful, this method returns a `200 OK` response code and an updated [andr
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}
 Content-type: application/json
 Content-length: 1265
 

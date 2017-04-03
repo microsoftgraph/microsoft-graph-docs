@@ -6,7 +6,7 @@ Update the properties of a [iosDeviceFeaturesConfiguration](../resources/intune_
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -54,7 +54,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2034
+Content-length: 2178
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -77,6 +77,7 @@ Content-length: 2034
       "pages": [
         {
           "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+          "displayName": "Display Name value",
           "apps": [
             {
               "@odata.type": "microsoft.graph.iosHomeScreenApp",
@@ -91,6 +92,7 @@ Content-length: 2034
   "homeScreenPages": [
     {
       "@odata.type": "microsoft.graph.iosHomeScreenPage",
+      "displayName": "Display Name value",
       "icons": [
         {
           "@odata.type": "microsoft.graph.iosHomeScreenFolder",
@@ -98,6 +100,7 @@ Content-length: 2034
           "pages": [
             {
               "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+              "displayName": "Display Name value",
               "apps": [
                 {
                   "@odata.type": "microsoft.graph.iosHomeScreenApp",
@@ -133,7 +136,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2211
+Content-Length: 2355
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -159,6 +162,7 @@ Content-Length: 2211
       "pages": [
         {
           "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+          "displayName": "Display Name value",
           "apps": [
             {
               "@odata.type": "microsoft.graph.iosHomeScreenApp",
@@ -173,6 +177,7 @@ Content-Length: 2211
   "homeScreenPages": [
     {
       "@odata.type": "microsoft.graph.iosHomeScreenPage",
+      "displayName": "Display Name value",
       "icons": [
         {
           "@odata.type": "microsoft.graph.iosHomeScreenFolder",
@@ -180,6 +185,7 @@ Content-Length: 2211
           "pages": [
             {
               "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+              "displayName": "Display Name value",
               "apps": [
                 {
                   "@odata.type": "microsoft.graph.iosHomeScreenApp",

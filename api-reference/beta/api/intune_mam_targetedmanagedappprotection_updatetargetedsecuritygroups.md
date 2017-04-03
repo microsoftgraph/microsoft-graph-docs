@@ -14,8 +14,9 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 POST /managedAppPolicies/{managedAppPoliciesId}/updateTargetedSecurityGroups
-POST /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/{managedAppPolicyId}/updateTargetedSecurityGroups
-POST /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/{managedAppPolicyId}/updateTargetedSecurityGroups
+POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/updateTargetedSecurityGroups
+POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/updateTargetedSecurityGroups
+POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/updateTargetedSecurityGroups
 ```
 
 ## Request headers

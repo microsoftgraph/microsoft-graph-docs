@@ -14,8 +14,9 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 POST /managedAppPolicies/{managedAppPoliciesId}/updateMobileAppIdentifierDeployments
-POST /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/{managedAppPolicyId}/updateMobileAppIdentifierDeployments
-POST /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/{managedAppPolicyId}/updateMobileAppIdentifierDeployments
+POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/updateMobileAppIdentifierDeployments
+POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/updateMobileAppIdentifierDeployments
+POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/updateMobileAppIdentifierDeployments
 ```
 
 ## Request headers

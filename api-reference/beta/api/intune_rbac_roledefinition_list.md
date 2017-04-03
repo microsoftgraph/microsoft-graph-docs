@@ -6,7 +6,7 @@ List properties and relationships of the [roleDefinition](../resources/intune_rb
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementRBAC.ReadWrite.All; DeviceManagementRBAC.Read.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementRBAC.ReadWrite.All; DeviceManagementRBAC.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
