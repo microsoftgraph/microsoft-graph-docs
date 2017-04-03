@@ -13,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /managedAppPolicies/{managedAppPoliciesId}/targetedSecurityGroups/{directoryObjectId}
-DELETE /managedAppPolicies/{managedAppPoliciesId}/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/{directoryObjectId}
-DELETE /managedAppPolicies/{managedAppPoliciesId}/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/{directoryObjectId}
+DELETE /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetedSecurityGroups/{directoryObjectId}
+DELETE /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/{directoryObjectId}
+DELETE /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/{directoryObjectId}
 ```
 
 ## Request headers
@@ -34,7 +34,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}/targetedSecurityGroups/{directoryObjectId}
+DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetedSecurityGroups/{directoryObjectId}
 ```
 
 ### Response

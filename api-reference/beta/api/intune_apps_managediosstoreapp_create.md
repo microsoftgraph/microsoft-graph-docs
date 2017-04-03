@@ -13,6 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
+POST /mobileApps/
 POST /deviceAppManagement/mobileApps/
 ```
 
@@ -42,7 +43,6 @@ The following table shows the properties that are required when you create a man
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |appAvailability|String|The Application's availability. Inherited from [managedApp](../resources/intune_apps_managedapp.md) Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
 |bundleId|String|The app's bundle ID.|
@@ -56,9 +56,9 @@ If successful, this method returns a `201 Created` response code and a [managedI
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/
+POST https://graph.microsoft.com/beta/mobileApps/
 Content-type: application/json
-Content-length: 1016
+Content-length: 738
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -78,15 +78,6 @@ Content-length: 1016
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 4,
-    "failedDeviceCount": 1,
-    "notInstalledDeviceCount": 7,
-    "installedUserCount": 2,
-    "failedUserCount": 15,
-    "notInstalledUserCount": 5
-  },
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "bundleId": "Bundle Id value"
@@ -98,7 +89,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1124
+Content-Length: 846
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -120,15 +111,6 @@ Content-Length: 1124
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 4,
-    "failedDeviceCount": 1,
-    "notInstalledDeviceCount": 7,
-    "installedUserCount": 2,
-    "failedUserCount": 15,
-    "notInstalledUserCount": 5
-  },
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "bundleId": "Bundle Id value"

@@ -6,7 +6,7 @@ Read properties and relationships of the [depOnboardingSetting](../resources/int
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -17,7 +17,7 @@ GET /organization/{organizationId}/depOnboardingSettings/{depOnboardingSettingId
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 461
+Content-Length: 540
 
 {
   "value": {
@@ -52,7 +52,9 @@ Content-Length: 461
     "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
-    "lastSyncTriggeredDateTime": "2017-01-01T00:00:02.0916369-08:00"
+    "lastSyncTriggeredDateTime": "2017-01-01T00:00:02.0916369-08:00",
+    "shareTokenWithSchoolDataSyncService": true,
+    "lastSyncErrorCode": 1
   }
 }
 ```

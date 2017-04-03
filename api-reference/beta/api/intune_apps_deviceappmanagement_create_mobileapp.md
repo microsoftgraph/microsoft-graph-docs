@@ -13,6 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
+POST /mobileApps/
 POST /deviceAppManagement/mobileApps/
 ```
 
@@ -42,7 +43,6 @@ The following table shows the properties that are required when you create a mob
 |developer|String|The developer of the app.|
 |notes|String|Notes for the app.|
 |uploadState|Int32|The upload state.|
-|installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary.|
 
 
 
@@ -53,9 +53,9 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/
+POST https://graph.microsoft.com/beta/mobileApps/
 Content-type: application/json
-Content-length: 902
+Content-length: 624
 
 {
   "@odata.type": "#microsoft.graph.mobileApp",
@@ -74,16 +74,7 @@ Content-length: 902
   "owner": "Owner value",
   "developer": "Developer value",
   "notes": "Notes value",
-  "uploadState": 11,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 4,
-    "failedDeviceCount": 1,
-    "notInstalledDeviceCount": 7,
-    "installedUserCount": 2,
-    "failedUserCount": 15,
-    "notInstalledUserCount": 5
-  }
+  "uploadState": 11
 }
 ```
 
@@ -92,7 +83,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1010
+Content-Length: 732
 
 {
   "@odata.type": "#microsoft.graph.mobileApp",
@@ -113,16 +104,7 @@ Content-Length: 1010
   "owner": "Owner value",
   "developer": "Developer value",
   "notes": "Notes value",
-  "uploadState": 11,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 4,
-    "failedDeviceCount": 1,
-    "notInstalledDeviceCount": 7,
-    "installedUserCount": 2,
-    "failedUserCount": 15,
-    "notInstalledUserCount": 5
-  }
+  "uploadState": 11
 }
 ```
 

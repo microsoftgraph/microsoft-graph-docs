@@ -29,6 +29,7 @@ Here is a JSON representation of the resource.
   "pages": [
     {
       "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+      "displayName": "String",
       "apps": [
         {
           "@odata.type": "microsoft.graph.iosHomeScreenApp",

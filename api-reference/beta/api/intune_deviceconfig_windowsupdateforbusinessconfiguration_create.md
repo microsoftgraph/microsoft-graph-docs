@@ -6,7 +6,7 @@ Create a new [windowsUpdateForBusinessConfiguration](../resources/intune_devicec
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -47,6 +47,7 @@ The following table shows the properties that are required when you create a win
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Quality Updates Pause Expiry datetime|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Feature Updates Pause Expiry datetime|
 |businessReadyUpdatesOnly|String|Business ready updates only or regular updates allowed too Possible values are: `userDefined`, `all`, `businessReadyOnly`.|
+|restartMode|String|Set restart mode allowed level to power or battery Possible values are: `userDefined`, `onBatteryWithAtLeast40PercentCharge`, `connectedToPowerSupply`.|
 
 
 
@@ -59,7 +60,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 974
+Content-length: 1031
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -83,7 +84,8 @@ Content-length: 974
   "featureUpdatesPaused": true,
   "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
   "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
-  "businessReadyUpdatesOnly": "all"
+  "businessReadyUpdatesOnly": "all",
+  "restartMode": "onBatteryWithAtLeast40PercentCharge"
 }
 ```
 
@@ -92,7 +94,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1082
+Content-Length: 1139
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -118,7 +120,8 @@ Content-Length: 1082
   "featureUpdatesPaused": true,
   "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
   "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
-  "businessReadyUpdatesOnly": "all"
+  "businessReadyUpdatesOnly": "all",
+  "restartMode": "onBatteryWithAtLeast40PercentCharge"
 }
 ```
 

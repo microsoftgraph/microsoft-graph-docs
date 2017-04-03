@@ -16,6 +16,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |[Update webApp](../api/intune_apps_webapp_update.md)|[webApp](../resources/intune_apps_webapp.md)|Update the properties of a [webApp](../resources/intune_apps_webapp.md) object.|
 |[List mobileAppCategories](../api/intune_apps_webapp_list_mobileappcategory.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|Get the mobileAppCategories from the categories navigation property.|
 |[List mobileAppGroupAssignments](../api/intune_apps_webapp_list_mobileappgroupassignment.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|Get the mobileAppGroupAssignments from the groupAssignments navigation property.|
+|[Get mobileAppInstallSummary](../api/intune_apps_webapp_get_mobileappinstallsummary.md)|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Get the [mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md) from the installSummary navigation property.|
 |[List mobileAppInstallStatuses](../api/intune_apps_webapp_list_mobileappinstallstatus.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|Get the mobileAppInstallStatuses from the deviceStatuses navigation property.|
 |[List userAppInstallStatuses](../api/intune_apps_webapp_list_userappinstallstatus.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|Get the userAppInstallStatuses from the userStatuses navigation property.|
 
@@ -36,7 +37,6 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |appUrl|String|The web app URL.|
 |useManagedBrowser|Boolean|Whether or not to use managed browser. This property is only applicable for Android and IOS.|
 
@@ -45,6 +45,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |---|---|---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |groupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 
@@ -77,15 +78,6 @@ Here is a JSON representation of the resource.
   "developer": "String",
   "notes": "String",
   "uploadState": 1024,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 1024,
-    "failedDeviceCount": 1024,
-    "notInstalledDeviceCount": 1024,
-    "installedUserCount": 1024,
-    "failedUserCount": 1024,
-    "notInstalledUserCount": 1024
-  },
   "appUrl": "String",
   "useManagedBrowser": true
 }
