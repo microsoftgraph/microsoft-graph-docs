@@ -43,7 +43,7 @@ This topic provides descriptions of the declared properties and navigation prope
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for this Administrative Unit. Nullable.|
 |members|[directoryObject](directoryObject.md) collection|Users and groups that are members of this Adminsitrative Unit. HTTP Methods: GET (list members), POST (add members), DELETE (remove members).|
-|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Scoped- role members of this Administrative Unit.  HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership). |
+|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Scoped-role members of this Administrative Unit.  HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership). |
 
 ## JSON representation
 

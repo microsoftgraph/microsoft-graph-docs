@@ -4,7 +4,7 @@ Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) 
 
 ## Prerequisites
 
-One of the following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
