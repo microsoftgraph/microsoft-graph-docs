@@ -25,7 +25,7 @@ If successful, this method returns a `200 OK` response code and collection of [s
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_scopedMembers_directoryrole"
+  "name": "get_scopedmembers_directoryrole"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/directoryRoles/{id}/scopedMembers
