@@ -1,43 +1,57 @@
-# Remove a scopedRoleMember
-Remove a scoped-role member from an adminstrative unit.
+# Remove directory role member
+
+Use this API to create a new directory role member.
 
 ## Prerequisites
+
 The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /administrativeunits/{id}/scopedrolemembers/{id}
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /directoryroles/{id}/members/{id}/$ref
 ```
+
 ## Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt; *Required* |
+
+| Name       | Type | Description|
+|:---------------|:--------|:----------|
+| Authorization  | string  | Bearer &lt;token&gt; *Required* |
 
 ## Request body
-Do not supply a request body for this method.
 
+In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
 
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example
+
 ##### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_scopedrolemember"
+  "name": "delete_directoryobject_from_directoryrole"
 }-->
+
 ```http
-DELETE https://graph.microsoft.com/beta/administrativeunits/{id}/scopedrolemembers/{id}
+DELETE https://graph.microsoft.com/v1.0/directoryroles/{id}/members/{id}/$ref
 ```
+
+In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
+
 ##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -46,7 +60,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete administrativeUnit",
+  "description": "Create member",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

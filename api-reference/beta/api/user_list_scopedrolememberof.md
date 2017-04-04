@@ -1,6 +1,6 @@
 # List scopedRoleMemberOf
 
-Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) for the user.
+Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) (of adminstrative units) for the user.
 
 ## Prerequisites
 
@@ -51,14 +51,14 @@ Content-length: 307
 {
   "value": [
     {
+      "id": "id-value",
       "roleId": "roleId-value",
       "administrativeUnitId": "administrativeUnitId-value",
       "roleMemberInfo": {
         "id": "id-value",
         "displayName": "displayName-value",
         "userPrincipalName": "userPrincipalName-value"
-      },
-      "id": "id-value"
+      }
     }
   ]
 }

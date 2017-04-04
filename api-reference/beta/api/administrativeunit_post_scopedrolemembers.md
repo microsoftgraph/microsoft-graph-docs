@@ -1,6 +1,6 @@
-# Create scopedRoleMembers
+# Ad a  scopedRoleMember
 
-Use this API to create a new [scopedRoleMembership](../resources/scopedrolemembership.md). NOTE: Only the *User account administrator* and *Helpdesk administrator* roles are supported for scoped-role memberships.
+Add a new [scopedRoleMembership](../resources/scopedrolemembership.md). NOTE: Only the *User account administrator* and *Helpdesk administrator* roles are currently supported for scoped-role memberships.
 
 ## Prerequisites
 The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
@@ -8,7 +8,7 @@ The following **scope** is required to execute this API: *Directory.AccessAsUser
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /administrativeUnits/{id}/scopedrolemembers
+POST /administrativeunits/{id}/scopedrolemembers
 ```
 ## Request headers
 | Name      |Description|
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "create_scopedrolemembership_from_administrativeunit"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedrolemembers
+POST https://graph.microsoft.com/beta/administrativeunits/{id}/scopedrolemembers
 Content-type: application/json
 Content-length: 272
 
