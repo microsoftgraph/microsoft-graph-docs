@@ -5,7 +5,7 @@ Retrieve the properties and relationships of an [administrativeUnit](../resource
 Since the **administrativeUnit** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in an **administrativeUnit** instance.
 
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
+One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -18,7 +18,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <token>. Required.|
+| Authorization  | Bearer  &lt;token&gt; *Required* |
 
 ## Request body
 Do not supply a request body for this method.

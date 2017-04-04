@@ -2,11 +2,11 @@
 
 Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) objects for a directory role.
 ## Prerequisites
-One of the following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
+One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryroles/{id}/scopedmembers
+GET /directoryroles/{id}/scopedMembers
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -63,7 +63,7 @@ Content-length: 307
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List scopedMembers",
+  "description": "List scopedmembers",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

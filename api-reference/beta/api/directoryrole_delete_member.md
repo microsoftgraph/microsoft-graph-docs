@@ -1,6 +1,6 @@
 # Remove directory role member
 
-Use this API to create a new directory role member.
+Remove a member from a directoryRole.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 
 ## Request body
 
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
+Do not supply a request body for this method.
 
 ## Response
 
@@ -42,11 +42,9 @@ Here is an example of the request.
 DELETE https://graph.microsoft.com/beta/directoryroles/{id}/members/{id}/$ref
 ```
 
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
-
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -60,7 +58,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create member",
+  "description": "Delete a member",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

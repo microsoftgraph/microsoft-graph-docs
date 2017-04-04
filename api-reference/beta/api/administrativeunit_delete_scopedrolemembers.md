@@ -7,7 +7,7 @@ The following **scope** is required to execute this API: *Directory.AccessAsUser
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /administrativeunits/{id}/scopedrolemembers/{id}
+DELETE /administrativeUnits/{id}/scopedRoleMembers/{id}
 
 ```
 ## Request headers
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "delete_scopedrolemember"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/administrativeunits/{id}/scopedrolemembers/{id}
+DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

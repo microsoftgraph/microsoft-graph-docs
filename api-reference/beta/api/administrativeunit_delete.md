@@ -2,7 +2,7 @@
 Delete an [administrativeUnit](../resources/administrativeunit.md).
 
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
+The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -13,7 +13,7 @@ DELETE /administrativeUnits/{id}
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <token>. Required.|
+| Authorization  | Bearer  &lt;token&gt; *Required* |
 
 ## Request body
 Do not supply a request body for this method.

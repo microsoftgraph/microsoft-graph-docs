@@ -49,7 +49,7 @@ POST /users/{id|userPrincipalName}/messages/{id}/extensions
 POST /groups/{id}/extensions
 POST /groups/{id}/events/{id}/extensions
 POST /groups/{id}/threads/{id}/posts/{id}/extensions
-POST /administrativeunits/{id}/extensions
+POST /administrativeUnits/{id}/extensions
 POST /devices/{id}/extensions
 POST /organization/{id}/extensions
 ```

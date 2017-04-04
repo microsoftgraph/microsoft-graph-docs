@@ -2,12 +2,12 @@
 
 Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) resources.
 ## Prerequisites
-One of the following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
+One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /administrativeunits/{id}/scopedrolemembers
+GET /administrativeUnits/{id}/scopedRoleMembers
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -26,10 +26,10 @@ If successful, this method returns a `200 OK` response code and collection of [s
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_scopedRoleMembers"
+  "name": "get_scopedrolemember"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/administrativeunits/{id}/scopedrolemembers
+GET https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

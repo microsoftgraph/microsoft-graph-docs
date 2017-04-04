@@ -38,7 +38,7 @@ When `identity` is used within a [scopedRoleMembership](scopedRoleMembership.md)
 
 - Additional properties, not defined in the schema, may also be returned. For example, if the identity represents a user, then the user's **userPrincipalName** will also be returned.
 
-The `identity` resource will return the latest uptodate information
+The `identity` resource will return the latest uptodate information.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
