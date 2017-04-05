@@ -1,4 +1,4 @@
-# Ad a  scopedRoleMember
+# Add a scopedRoleMember
 
 Add a new [scopedRoleMembership](../resources/scopedrolemembership.md). NOTE: Only the *User account administrator* and *Helpdesk administrator* roles are currently supported for scoped-role memberships.
 
