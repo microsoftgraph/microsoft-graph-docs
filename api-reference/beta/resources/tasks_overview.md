@@ -1,4 +1,7 @@
 # Groups, Plans and Tasks
+
+>**Important:** This API is deprecated and will be removed on May 26th, 2017. We recommend that you use [Planner](planner_overview.md) APIs.
+
 The new Office 365 Tasks API enables you to create tasks and assign them to users in a group in Office 365.
 
 ## Basics

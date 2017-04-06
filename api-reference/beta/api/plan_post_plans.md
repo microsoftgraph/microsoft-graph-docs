@@ -1,5 +1,7 @@
 # Create plan
 
+>**Important:** This API is deprecated and will be removed on May 26th, 2017. We recommend that you use [Create plannerPlan](planner_post_plans.md) API.
+
 Use this API to create a new plan. 
 
 Note that you need to have created a group and be a member of it before you can make the group an owner of the plan. Read the [overview](../resources/tasks_overview.md) to understand the relationship between group, plan and task.

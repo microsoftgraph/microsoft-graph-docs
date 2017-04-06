@@ -1,5 +1,7 @@
 # Delete plan
 
+>**Important:** This API is deprecated and will be removed on May 26th, 2017. We recommend that you use [Delete plannerPlan](plannerplan_delete.md) API.
+
 Delete plan.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:

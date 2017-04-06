@@ -1,5 +1,7 @@
 # taskBoardTaskFormat resource type
 
+>**Important:** This resource is deprecated and will be removed on May 26th, 2017. We recommend that you use [plannerassignedtotaskboardtaskformat](plannerassignedtotaskboardtaskformat.md), [plannerbuckettaskboardtaskformat](plannerbuckettaskboardtaskformat.md), and [plannerprogresstaskboardtaskformat](plannerprogresstaskboardtaskformat.md) resource.
+
 The TaskBoardTaskFormat resource represents the information used to render a task correctly in a task board view. Each [task](task.md) will have three taskBoardTaskFormat objects as there can be three task board views that a task is in.
 
 ## JSON representation

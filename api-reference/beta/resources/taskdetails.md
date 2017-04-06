@@ -1,5 +1,7 @@
 # taskDetails resource type
 
+>**Important:** This resource is deprecated and will be removed on May 26th, 2017. We recommend that you use [plannerTaskDetails](plannertaskdetails.md) resource.
+
 The TaskDetails resource represents the additional information about a task. Each [task](task.md) object has a details object.
 
 ## JSON representation

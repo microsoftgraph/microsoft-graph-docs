@@ -1,5 +1,7 @@
 # Update task
 
+>**Important:** This API is deprecated and will be removed on May 26th, 2017. We recommend that you use [Update plannerTask](plannerTask_update.md) API.
+
 Update the properties of task object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
