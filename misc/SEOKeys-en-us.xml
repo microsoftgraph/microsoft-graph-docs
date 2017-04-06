@@ -585,7 +585,7 @@
       </Item>
       <Item text="Mention" url="/en-us/api-reference/beta/resources/mention" SEODescription="Represents a notification to a person based on the person's email address." />
     </Item>
-    <Item text="Planner" url="/en-us/api-reference/beta/resources/planner_overview" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
+    <Item text="Planner" url="/en-us/api-reference/beta/resources/plannerplan" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
       <Item text="Plan" url="/en-us/api-reference/beta/resources/plannerplan" >
 		  <Item text="Create plan" url="/en-us/api-reference/beta/api/planner_post_plans" />
 		  <Item text="List plans for group" url="/en-us/api-reference/beta/api/plannergroup_list_plans" />
