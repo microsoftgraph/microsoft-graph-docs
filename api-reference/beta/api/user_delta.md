@@ -9,7 +9,7 @@
 
 ## Known Limitations
 
-Tracking changes to relationships on Users, Groups, Organizational Contacts, and Administrative Units is only supported within the specific resource class for which changes are being tracked. For example, if a client is tracking changes on *groups* and has selected the *members* relationship, the client will only receive membership updates in the delta query response if those members are also *groups*. In other words, tracking group membership for users is not yet supported. The Microsoft Graph team understands that this is a high priority scenario and an update is targeted to be delivered soon.
+For known limitations using delta query, see the [delta query section](../../../overview/release_notes.md#delta-query) in the known issues article.
 
 ### HTTP request
 
