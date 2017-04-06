@@ -1,14 +1,14 @@
-# Get data extension
+# Get open extension
 
-Get a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) identified by name or fully qualified name.
+Get an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) identified by name or fully qualified name.
 
-The following table lists the three scenarios where you can get a data extension from a supported resource instance.
+The following table lists the three scenarios where you can get an open extension from a supported resource instance.
 
 |**GET scenario**|**Supported resources**|**Response body**|
 |:-----|:-----|:-----|
-|Get a specific extension from a known resource instance.| [contact](../resources/contact.md), [event](../resources/event.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md) | Data extension only.|
-|Get a known resource instance expanded with a specific extension.|Contact, event, group event, message|A resource instance expanded with the data extension.|
-|Find and expand resource instances with a specific extension. |Contact, event, group event, message|Resource instances expanded with the data extension.|
+|Get a specific extension from a known resource instance.| [contact](../resources/contact.md), [event](../resources/event.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md) | Open extension only.|
+|Get a known resource instance expanded with a specific extension.|Contact, event, group event, message|A resource instance expanded with the open extension.|
+|Find and expand resource instances with a specific extension. |Contact, event, group event, message|Resource instances expanded with the open extension.|
 
 
 ## Prerequisites
@@ -18,15 +18,12 @@ One of the following **permissions** is required to execute this API, depending 
 |**Supported resource**|**Permission**|**Supported resource**|**Permission** |
 |:-----|:-----|:-----|:-----|
 | [event](../resources/event.md) | _Calendars.Read_ | [group event](../resources/event.md) | _Calendars.Read_ | 
-| [group post](../resources/post.md) | _Group.Read.All_ | [message](../resources/message.md) | _Mail.Read_ | 
-| [personal contact](../resources/contact.md) | _Contacts.Read_ |
+| [Group post](../resources/post.md) | _Group.Read.All_ | [message](../resources/message.md) | _Mail.Read_ | 
+| [Personal contact](../resources/contact.md) | _Contacts.Read_ |
  
 ## HTTP request
 
 This section lists the syntax for each of the three `GET` scenarios described above.
-
->**Note:** Some resources support identifying an instance in multiple ways, all of which support getting 
-an extension. The syntax in each of the next three sections below represents only a subset of what's supported. 
 
 ### Get a specific extension in a known resource instance
 
@@ -70,25 +67,9 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
-### Complete syntax
-
-You can find more complete descriptions of the ways to identify 
-an existing resource instance in the corresponding `GET` topic below: 
-
-- [Get a contact](../api/contact_get.md)
-- [Get an event](../api/event_get.md)
-- [Get a group event](../api/event_get.md)
-- [Get a group post](../api/post_get.md)
-- [Get a message](../api/message_get.md) 
-
-And you can find more complete descriptions of the ways to get 
-a supported resource collection in the corresponding topic below:
-
-- [List contacts](../api/User_list_contacts.md)
-- [List events](../api/user_list_events.md)
-- [List group events](../api/group_list_events.md)
-- [List messages](../api/user_list_messages.md) 
-
+>**Note:** The above syntax shows some common ways to identify a resource instance or collection, 
+in order to get an extension from it. All other syntax that allows you to identify these resource 
+instances or collections supports getting open extensions from them in a similar way.
 
 ## Parameters
 |**Parameter**|**Type**|**Description**|

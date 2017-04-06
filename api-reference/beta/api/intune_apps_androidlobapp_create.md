@@ -13,6 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
+POST /mobileApps/
 POST /deviceAppManagement/mobileApps/
 ```
 
@@ -42,7 +43,6 @@ The following table shows the properties that are required when you create a and
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
@@ -59,9 +59,9 @@ If successful, this method returns a `201 Created` response code and a [androidL
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/
+POST https://graph.microsoft.com/beta/mobileApps/
 Content-type: application/json
-Content-length: 1377
+Content-length: 1099
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -81,15 +81,6 @@ Content-length: 1377
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 4,
-    "failedDeviceCount": 1,
-    "notInstalledDeviceCount": 7,
-    "installedUserCount": 2,
-    "failedUserCount": 15,
-    "notInstalledUserCount": 5
-  },
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -114,7 +105,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1485
+Content-Length: 1207
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -136,15 +127,6 @@ Content-Length: 1485
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 4,
-    "failedDeviceCount": 1,
-    "notInstalledDeviceCount": 7,
-    "installedUserCount": 2,
-    "failedUserCount": 15,
-    "notInstalledUserCount": 5
-  },
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,

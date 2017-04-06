@@ -1,6 +1,6 @@
-# Create data extension
+# Create open extension
 
-Create a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) and add custom properties in a new or existing instance of a resource. 
+Create an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) and add custom properties in a new or existing instance of a resource. 
 
 ## Prerequisites
 
@@ -29,15 +29,8 @@ POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
 ```
 
->**Note:** Some resources support creation in multiple ways all of which support creating an extension. The above section includes only a subset of the 
-supported syntax. For a more complete description of the ways to create a resource instance, see the corresponding
-topic below.
-
-- [Create a contact](../api/user_post_contacts.md)
-- [Create an event](../api/user_post_events.md)
-- [Create a group event](../api/group_post_events.md)
-- [Create a group post](../resources/post.md)
-- [Create a message](../api/user_post_messages.md) 
+>**Note:** The above syntax shows some common ways to create the supported resource instances. All other POST syntax 
+that allows you to create these resource instances supports creating open extensions in them in a similar way.
 
 See the [Request body](#request-body) section about including the properties of the new resource instance _and the extension_ in the request body.
 
@@ -54,28 +47,8 @@ POST /groups/{id}/events/{id}/extensions
 POST /groups/{id}/threads/{id}/posts/{id}/extensions
 ```
 
->**Note:** Some resources support identifying an instance in multiple ways all of which support creating an extension. 
-The above section includes only a subset of the 
-supported syntax. You can find a more complete description of the ways to identify an existing instance in the corresponding `GET` topic below.
-
-- [Get a contact](../api/contact_get.md)
-- [Get an event](../api/event_get.md)
-- [Get a group event](../api/event_get.md)
-- [Get a group post](../api/post_get.md)
-- [Get a message](../api/message_get.md) 
-
-For example, you can identify an existing message in the signed-in user's mailbox as follows:
-<!-- { "blockType": "ignored" } -->
-```http
-/me/messages/{id}
-```
-
-To create an extension in an existing message instance in that mailbox, build upon that URL, 
-do a `POST` on the **extensions** navigation property of that instance, like below:
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages/{id}/extensions
-```
+>**Note:** The above syntax shows some common ways to identify a resource instance, in order to create an 
+extension in it. All other syntax that allows you to identify these resource instances supports creating open extensions in them in a similar way.
 
 See the [Request body](#request-body) section about including _the extension_ in the request body.
 

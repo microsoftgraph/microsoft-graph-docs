@@ -6,7 +6,7 @@ Get the [deviceComplianceUserOverview](../resources/intune_deviceconfig_deviceco
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -17,7 +17,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userSt
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -42,18 +42,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 356
+Content-Length: 335
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceComplianceUserOverview",
     "id": "2d4f5bf4-5bf4-2d4f-f45b-4f2df45b4f2d",
-    "numberOfPendingUsers": 4,
-    "numberOfSucceededUsers": 6,
-    "numberOfErrorUsers": 2,
-    "numberOfFailedUsers": 3,
-    "lastUpdateTime": "2017-01-01T00:02:03.0612494-08:00",
-    "policyRevision": 14
+    "pendingCount": 12,
+    "successCount": 12,
+    "errorCount": 10,
+    "failedCount": 11,
+    "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
+    "configurationVersion": 4
   }
 }
 ```

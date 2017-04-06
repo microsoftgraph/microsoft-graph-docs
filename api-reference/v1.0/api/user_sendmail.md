@@ -62,7 +62,7 @@ Content-length: 512
           "address": "danas@contoso.onmicrosoft.com"
         }
       }
-    ],
+    ]
   },
   "saveToSentItems": "false"
 }

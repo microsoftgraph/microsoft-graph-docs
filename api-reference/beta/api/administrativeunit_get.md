@@ -1,6 +1,9 @@
 # Get administrativeUnit
 
 Retrieve the properties and relationships of an [administrativeUnit](../resources/administrativeunit.md) object.
+
+Since the **administrativeUnit** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in an **administrativeUnit** instance.
+
 ## Prerequisites
 The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
 
@@ -36,7 +39,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeunit"
+  "@odata.type": "microsoft.graph.administrativeUnit"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -50,6 +53,15 @@ Content-length: 134
   "id": "id-value"
 }
 ```
+
+## See also
+
+- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
+<!--
+- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+-->
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

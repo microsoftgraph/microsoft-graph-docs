@@ -18,6 +18,8 @@ POST /devices
 ## Request body
 In the request body, supply a JSON representation of [device](../resources/device.md) object.
 
+Since the **device** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the device instance while creating it.
+
 
 ## Response
 If successful, this method returns `201, Created` response code and [device](../resources/device.md) object in the response body.
@@ -77,6 +79,13 @@ Content-length: 364
   "deviceVersion": 99
 }
 ```
+
+## See also
+
+- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

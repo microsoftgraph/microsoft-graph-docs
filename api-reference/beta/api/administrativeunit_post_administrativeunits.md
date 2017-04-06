@@ -17,6 +17,8 @@ POST /administrativeUnits
 ## Request body
 In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.
 
+Since the **administrativeUnit** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the administrative unit while creating it.
+
 
 ## Response
 If successful, this method returns `201, Created` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.
@@ -47,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeunit"
+  "@odata.type": "microsoft.graph.administrativeUnit"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -63,6 +65,15 @@ Content-length: 172
   }
 }
 ```
+
+## See also
+
+- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
+<!--
+- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+-->
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

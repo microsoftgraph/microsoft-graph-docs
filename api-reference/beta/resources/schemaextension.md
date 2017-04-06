@@ -29,7 +29,7 @@ Schema extensions are supported for the following resource types:
 |id|String|The unique identifier for the schema extension definition. The value must be a concatenation of one of your verified domains (e.g. contoso.com) and a name for the schema extension - e.g. *contoso_mySchema*. |
 |owner|String|The appId of the application that created the schema extension. Read-only.|
 |properties|[extensionSchemaProperty](extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition.|
-|status|String|The lifecycle state of the schema extension. Possible states are *InDevelopment*, *Available*, and *Deprecated*. Automatically set to *InDevelopment* on creation. [Schema extensions](../../../concepts/extensibility_overview.md#schema-extensions-(preview)) provides more information on the possible state transitions and behaviors.|
+|status|String|The lifecycle state of the schema extension. Possible states are *InDevelopment*, *Available*, and *Deprecated*. Automatically set to *InDevelopment* on creation. [Schema extensions](../../../concepts/extensibility_overview.md#schema-extensions-preview) provides more information on the possible state transitions and behaviors.|
 |targetTypes|String collection|Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Select from *user, device, event, group, message, post*.|
 
 ## JSON representation

@@ -7,7 +7,7 @@ Represents an AirPrint destination.
 |Property|Type|Description|
 |---|---|---|
 |ipAddress|String|The IP Address of the AirPrint destination.|
-|resourcePath|String|The resource path of an AirPrint destination.|
+|resourcePath|String|The Resource Path associated with the printer. This corresponds to the rp parameter of the _ipps.tcp Bonjour record. For example: printers/Canon_MG5300_series, printers/Xerox_Phaser_7600, ipp/print, Epson_IPP_Printer.|
 
 ## Relationships
 None

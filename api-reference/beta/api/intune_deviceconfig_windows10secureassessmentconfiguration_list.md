@@ -6,7 +6,7 @@ List properties and relationships of the [windows10SecureAssessmentConfiguration
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -54,9 +54,9 @@ Content-Length: 612
       "version": 7,
       "launchUri": "Launch Uri value",
       "configurationAccount": "Configuration Account value",
-      "blockPrinting": true,
-      "blockScreenCapture": true,
-      "blockTextSuggestion": true
+      "allowPrinting": true,
+      "allowScreenCapture": true,
+      "allowTextSuggestion": true
     }
   ]
 }

@@ -14,6 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /managedAppStatuses/
+GET /deviceAppManagement/managedAppStatuses/
 ```
 
 ## Request headers

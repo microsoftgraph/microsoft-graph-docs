@@ -26,7 +26,7 @@ test_script:
 
     {
 
-    if ([string]::IsNullOrEmpty($env:APPVEYOR_PULL_REQUEST_NUMBER)) 
+    # if ([string]::IsNullOrEmpty($env:APPVEYOR_PULL_REQUEST_NUMBER)) 
     
     {
     
@@ -36,15 +36,15 @@ test_script:
 
     }
     
-    else 
+    #else 
     
-    {
+    #{
     
       # Run the checks only on files changed since the master branch
     
-      $parms = "check-docs", "--appveyor-url", $env:APPVEYOR_API_URL, "--path", $reference, "--relax-string-validation", "--ignore-warnings", "--changes-since-branch-only", $env:APPVEYOR_REPO_BRANCH
+     # $parms = "check-docs", "--appveyor-url", $env:APPVEYOR_API_URL, "--path", $reference, "--relax-string-validation", "--ignore-warnings", "--changes-since-branch-only", $env:APPVEYOR_REPO_BRANCH
     
-    }
+    #}
 
     & $apidocs $parms    
 

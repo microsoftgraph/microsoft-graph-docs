@@ -16,11 +16,11 @@ One of the following **permissions** is required to execute this API, depending 
 
 |**Supported resource**|**Permission**|**Supported resource**|**Permission** |
 |:-----|:-----|:-----|:-----|
-| [administrativeunit](../resources/administrativeunit.md) | _Directory.Read.All_ | [device](../resources/device.md) | _Directory.Read.All_ |
+| [administrativeUnit](../resources/administrativeunit.md) | _Directory.Read.All_ | [device](../resources/device.md) | _Directory.Read.All_ |
 | [event](../resources/event.md) | _Calendars.Read_ | [group](../resources/group.md) | _Group.Read.All_ |
-| [group event](../resources/event.md) | _Group.Read.All_ | [group post](../resources/post.md) | _Group.Read.All_ |
+| [Group event](../resources/event.md) | _Group.Read.All_ | [group post](../resources/post.md) | _Group.Read.All_ |
 | [message](../resources/message.md) | _Mail.Read_ | [organization](../resources/organization.md) | _Directory.Read.All_ |
-| [personal contact](../resources/contact.md) | _Contacts.Read_ | [user](../resources/user.md) | _User.Read.All_ |
+| [Personal contact](../resources/contact.md) | _Contacts.Read_ | [user](../resources/user.md) | _User.Read.All_ |
 
 
 ## HTTP request

@@ -24,6 +24,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## Request body
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
 
+Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
+
 
 ## Response
 If successful, this method returns `201, Created` response code and [message](../resources/message.md) object in the response body.
@@ -77,6 +79,15 @@ Content-length: 248
   "bodyPreview": "bodyPreview-value"
 }
 ```
+
+## See also
+
+- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
+<!--
+- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+-->
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

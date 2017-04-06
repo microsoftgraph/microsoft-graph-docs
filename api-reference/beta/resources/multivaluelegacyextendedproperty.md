@@ -3,7 +3,7 @@
 An extended property that contains a collection of values.
 
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
-Office 365 data extensions or extended properties, and how to specify extended properties.
+open extensions or extended properties, and how to specify extended properties.
 
 ## Methods
 

@@ -38,6 +38,9 @@ In the request body, supply the values for relevant fields that should be update
 |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |subject|String|The subject of the message. Updatable only if IsDraft = true.|
 
+Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `PATCH` operation to 
+add, update, or delete your own app-specific data in custom properties of an extension in an existing **message** instance.
+
 ## Response
 If successful, this method returns a `200 OK` response code and updated [message](../resources/message.md) object in the response body.
 ## Example
@@ -86,6 +89,15 @@ Content-length: 248
   "inferenceClassification": "other"
 }
 ```
+
+## See also
+
+- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
+<!--
+- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+-->
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

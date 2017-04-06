@@ -10,8 +10,6 @@ One of the following scopes are required to execute this request:
 
 * Sites.Read.All
 * Sites.ReadWrite.All
-* Sites.Manage.All
-* Sites.FullControl.All
 
 ### HTTP request
 

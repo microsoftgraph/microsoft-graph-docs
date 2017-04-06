@@ -1,0 +1,60 @@
+# plannerBucket resource type
+
+The **plannerBucket** resource represents a bucket (or "custom column") for tasks in a plan in Office 365. It is contained in a [plannerPlan](plannerPlan.md) and can have a collection of [plannerTasks](plannerTask.md).
+
+
+
+### Methods
+
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[Get plannerBucket](../api/plannerbucket_get.md) | [plannerBucket](plannerbucket.md) |Read properties and relationships of **plannerBucket** object.|
+|[List plannerTasks](../api/plannerbucket_list_tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
+|[Create](../api/planner_post_buckets.md) | [bucket](bucket.md)	| Create a new **plannerBucket** object. |
+|[Update](../api/plannerbucket_update.md) | [plannerBucket](plannerbucket.md)	|Update **plannerBucket** object. |
+|[Delete](../api/plannerbucket_delete.md) | None |Delete **plannerBucket** object. |
+
+### Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|id|String| Read-only. ID of the bucket. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service.|
+|name|String|Name of the bucket.|
+|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner_order_hint_format.md).|
+|planId|String|Plan ID to which the bucket belongs.|
+
+### Relationships
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. The collection of tasks in the bucket.|
+
+### JSON representation
+
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.plannerBucket"
+}-->
+
+```json
+{
+  "id": "String (identifier)",
+  "name": "String",
+  "orderHint": "String",
+  "planId": "String"
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "plannerBucket resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -1,18 +1,29 @@
 # openTypeExtension resource type (open extensions) 
 
-Open extensions (formerly known as Office 365 data extensions) gives you an easy way to directly add untyped properties to a resource in the Microsoft Graph. Open extensions are represented by the openTypeExtension resource. Any open extension added to a resource shows up in the **extensions** navigation property, which is derived from the [extension](extension.md) abstract type.  Each extension has an additional **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom data. One way to help make sure extension names are unique is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `Com.Contoso.ContactInfo`. Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
+Open extensions (formerly known as Office 365 data extensions) gives you an easy way to directly add untyped properties to a resource in Microsoft Graph. 
+Open extensions are represented by the **openTypeExtension** resource. Any open extension added to a resource shows up in the **extensions** navigation property, 
+which is derived from the [extension](extension.md) abstract type.  Each extension has an **extensionName** property which is the only pre-defined, 
+writable property for all extensions, along with your custom data. One way to help make sure extension names are unique is to use a reverse domain name system (DNS) 
+format that is dependent on _your own domain_, for example, `Com.Contoso.ContactInfo`. Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
 
-Open extension example: [Add custom data to Users using Open Extensions (preview)](../../../concepts/extensibility_open_users.md)
+Open extension example: [Add custom data to Users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
 
-Open extensions are supported for:
+Open extensions are supported by the following resources in the corresponding versions - general availability (GA: /v1.0 and /beta) or preview (/beta).
 
- - a [message](message.md), [event](event.md), or [contact](contact.md) 
- - an **event** or [post](post.md) for an Office 365 group
- - an [administrative unit](administrativeunit.md)
- - a [device](device.md)
- - a [group](group.md)
- - an [organization](organization.md)
- - a [user](user.md)
+| Resource | Version |
+|---------------|-------|
+| [Administrative unit](administrativeunit.md)  | Preview only |
+| [Calendar event](event.md) | GA |
+| Group [calendar event](event.md) | GA |
+| Group conversation thread [post](post.md) | GA |
+| [device](device.md) | Preview only |
+| [group](group.md) | Preview only |
+| [message](message.md) | GA |
+| [organization](organization.md) | Preview only |
+| [Personal contact](contact.md) | GA |
+| [user](user.md) | Preview only |
+
+
 
 ### Use open extensions (for Outlook resources) or extended properties?
 

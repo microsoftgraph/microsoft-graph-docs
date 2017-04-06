@@ -1,6 +1,6 @@
-# Delete data extension
+# Delete open extension
 
-Delete a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) from the specified instance of a resource. 
+Delete an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) from the specified instance of a resource. 
 
 ## Prerequisites
 
@@ -27,29 +27,8 @@ DELETE /groups/{id}/events/{id}/extensions/{extensionId}
 DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
 ```
 
->**Note:** Some resources support identifying an instance in multiple ways all of which support deleting an extension. 
-The above section includes only a subset of the 
-supported syntax. You can find a more complete description of the ways to identify an existing instance in the corresponding `GET` topic below. 
-
-- [Get a contact](../api/contact_get.md)
-- [Get an event](../api/event_get.md)
-- [Get a group event](../api/event_get.md)
-- [Get a group post](../api/post_get.md)
-- [Get a message](../api/message_get.md)
-
-For example, you can identify an existing message in the signed-in user's mailbox as follows:
-<!-- { "blockType": "ignored" } -->
-```http
-/me/messages/{id}
-```
-
-To delete an extension in an existing message instance in that mailbox, build upon that URL, 
-identify an extension using the **extensions** navigation property of that message, and do a `DELETE` on that extension as shown below:
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/messages/{id}/extensions/{extensionId}
-```
-
+>**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
+All other syntax that allows you to identify these resource instances supports deleting open extensions from them in a similar way.
 
 ## Parameters
 |**Parameter**|**Type**|**Description**|

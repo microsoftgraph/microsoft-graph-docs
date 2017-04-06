@@ -6,14 +6,14 @@ Update the properties of a [sideLoadingKey](../resources/intune_onboarding_sidel
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementApps.ReadWrite.All; DeviceManagementServiceConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /organization/{organizationId}/sideLoadingKeys/{sideLoadingKeyId}
+PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ```
 
 ## Request headers
@@ -44,7 +44,7 @@ If successful, this method returns a `200 OK` response code and an updated [side
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/organization/{organizationId}/sideLoadingKeys/{sideLoadingKeyId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 Content-type: application/json
 Content-length: 193
 

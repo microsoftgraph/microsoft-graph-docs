@@ -26,7 +26,7 @@ As well as the following group resources:
 - group [post](../resources/post.md) 
 
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
-Office 365 data extensions or extended properties, and how to specify extended properties.
+open extensions or extended properties, and how to specify extended properties.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API, depending on the resource you're

@@ -8,7 +8,8 @@ Even though you cannot explicitly create a post, doing any of the following woul
 * [Reply to an existing thread](../api/conversationthread_reply.md) 
 * [Create a thread in a new conversation](../api/group_post_threads.md)
 * [Create a new conversation](../api/group_post_conversations.md)
- 
+
+This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
 
 ## JSON representation
 
@@ -93,6 +94,13 @@ Here is a JSON representation of the resource
 |[Get post with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [post](post.md) | Get posts that contain a single-value extended property by using `$expand` or `$filter`. |
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [post](post.md) | Create one or more multi-value extended properties in a new or existing post.  |
 |[Get post with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [post](post.md) | Get a post that contains a multi-value extended property by using `$expand`. |
+
+
+## See also
+
+- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 
 
 

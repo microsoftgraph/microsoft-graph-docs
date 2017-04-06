@@ -3,7 +3,7 @@
 The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. 
 This method only supports files up to 4MB in size.
 
-To upload large files see [Upload large files with an upload session](item_createUploadSession.md).
+To upload large files see [Upload large files with an upload session](item_createuploadsession.md).
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:

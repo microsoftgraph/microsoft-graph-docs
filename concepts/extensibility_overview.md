@@ -1,21 +1,26 @@
-# Add custom data to resources
+# Add custom data to resources using extensions
 
-Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights. While we’re constantly growing these data sets by adding new Microsoft cloud services, there's now a way for you to **extend** Microsoft Graph with your own custom application data. You can add custom properties to Microsoft Graph resources without requiring an external data store. For example, you might decide to keep your app lightweight and store app specific user profile data in Microsoft Graph by extending the user object. Alternatively, you might want to retain your app’s existing user profile store and link its records to users in Microsoft Graph by adding an app specific identifier to the user resource.
+Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources like 
+[user](../api-reference/beta/resources/user.md) and [message](../api-reference/beta/resources/message.md). There's now a way for you to _**extend**_ Microsoft Graph 
+with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store. 
+For example, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource. 
+Alternatively, you might want to retain your app’s existing user profile store, and simply add an app-specific store identifier
+to the **user** resource.
 
 Microsoft Graph offers two types of extensions. Choose the extension type that best suits your application needs:
 
-*  **Open extensions**: A good way for developers to get started with extending resources with custom data.
-*  **Schema extensions**: A more versatile mechanism for developers who care about storing typed data, making their schema discoverable and shareable, being able to filter, and in the future being able to perform input data validation and authorization.
+*  **Open extensions**: A good way for developers to get started.
+*  **Schema extensions**: A more versatile mechanism for developers who care about storing typed data, making their schema discoverable and shareable, being able to filter, and in the future, being able to perform input data validation and authorization.
 
->**Important:** You should not use this feature to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
+>**Important:** You should not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
 
 ## Supported Resources
 
-The following table shows the current support for open and schema extensions and whether they are in generally availability (GA /v1.0) or in preview (/beta). 
+The following table shows the current support for open and schema extensions and whether they are in general availability (GA /v1.0 and /beta) or only in preview (/beta). 
 
-| | Open extensions | Schema extensions |
+| Resource | Open extensions | Schema extensions |
 |---------------|-------|-------|
-| [administrative unit](../api-reference/beta/resources/administrativeunit.md) | Preview only | Coming soon |
+| [Administrative unit](../api-reference/beta/resources/administrativeunit.md) | Preview only | Coming soon |
 |  [calendar event](../api-reference/beta/resources/event.md) | GA | Preview only |
 |  Group [calendar event](../api-reference/beta/resources/event.md) | GA | Preview only |
 |  Group conversation thread [post](../api-reference/beta/resources/post.md) | GA | Preview only |
@@ -23,29 +28,75 @@ The following table shows the current support for open and schema extensions and
 |  [group](../api-reference/beta/resources/group.md) | Preview only | Preview only |
 |  [message](../api-reference/beta/resources/message.md) | GA | Preview only |
 |  [organization](../api-reference/beta/resources/organization.md) | Preview only | Coming soon |
-|  [personal contact](../api-reference/beta/resources/contact.md)| Preview only | Coming soon |
+|  [Personal contact](../api-reference/beta/resources/contact.md)| GA | Coming soon |
 |  [user](../api-reference/beta/resources/user.md) | Preview only | Preview only |
 
 ## Open extensions
-Open extensions gives you an easy way to directly add untyped properties to a resource in the Microsoft Graph. Any open extension added to a resource shows up in the **extensions** navigation property, which is derived from the [extension](../api-reference/beta/resources/extension.md) abstract type.  Each extension has an additional **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom data. One way to help make sure extension names are unique is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `Com.Contoso.ContactInfo`. Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
+[Open extensions](../api-reference/beta/resources/opentypeextension.md) (formerly known as Office 365 data extensions) are 
+[open types](http://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a flexible way to 
+add untyped app data directly to a resource instance. 
 
->**Note:** Open extensions for administrative units, devices, groups, organization and users are only available in preview.
+Open extensions, together with their custom data, are accessible through the **extensions** navigation property of the resource instance.
+The **extensionName** property is the only _pre-defined_, writable property in an open extension. When creating an open extension, you must assign the **extensionName** property a name that is unique within the tenant. 
+One way to do this is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `Com.Contoso.ContactInfo`. 
+Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
 
-Open extension example: [Add custom data to Users using Open Extensions (preview)](extensibility_open_users.md)
+You can [create an open extension](../api-reference/beta/api/opentypeextension_post_opentypeextension.md) in a resource instance and store custom data to it all in the same operation 
+(note [known limitation below](#known-limitations-for-extensions) for some of the supported resources).
+You can subsequently [read](../api-reference/beta/api/opentypeextension_get.md), [update](../api-reference/beta/api/opentypeextension_update.md), or [delete](../api-reference/beta/api/opentypeextension_delete.md) 
+the extension and its data. 
+
+>**Note:** Open extensions have been generally available (GA) for events, group posts, messages, and personal contacts. They are now also available for administrative units, 
+devices, groups, organizations, and users in preview.
+
+Open extension example: [Add custom data to users using open extensions (preview)](extensibility_open_users.md)
 
 ## Schema extensions (preview)
-With schema extensions, you can define the schema that you want to extend a resource class with (also known an entity-type). Schema extension definitions let you add strongly-typed custom data to a resource. This schema definition must be given a unique name based on one of your directory's verified domain names along with your extension name, for example `contoso_mySchema`. The custom data appears as a complex type (named with the unique `id` of the schema definition that it's created from) on the extended resource. Even better, your schema is also discoverable for other app developers to find and use, and to build further experiences on top of.
+[Schema extensions](../api-reference/beta/resources/schemaextension.md) allow you to define a schema you can use to extend a resource type. First, you create your schema extension definition.
+Then, use it to extend resource instances with strongly-typed custom data. In addition, you can control the [status](#schema-extensions-lifecycle) of your schema extension and let it 
+be discoverable by other apps. These apps can in turn use the extension for their data and build further experiences on top of it.
 
-Schema extension example: [Add custom data to Groups using Schema Extensions (preview)](extensibility_schema_groups.md)
+When creating a schema extension definition, you must provide a unique name for its **id**. There are two naming options:
+
+- If you already have a vanity `.com` domain that you have verified with your tenant, you can use the domain name along with the schema name 
+to define a unique name, in this format \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. For example, if your vanity domain is contoso.com then you can define 
+an **id** of, `contoso_mySchema`.  This is the preferred option.
+- If you don’t have a verified vanity domain, you can just set the **id** to a schema name (without a domain name prefix), for example, `mySchema`. 
+Microsoft Graph will assign a string ID for you based on the supplied name, in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}.  For example, `extkvbmkofy_mySchema`.
+
+You will see this unique name in **id** used as the name of the complex type which will store your custom data on the extended resource instance. 
+
+
+Unlike open extensions, managing schema extension definitions ([list](../api-reference/beta/api/schemaextension_list.md), [create](../api-reference/beta/api/schemaextension_post_schemaextensions.md), 
+[get](../api-reference/beta/api/schemaextension_get.md), [update](../api-reference/beta/api/schemaextension_update.md), and [delete](../api-reference/beta/api/schemaextension_delete.md)) 
+and their data (add, get, update, and delete data) are separate sets of API operations. 
+
+Since schema extensions are accessible as complex types in instances of the targeted resources, you can 
+do CRUD operations on the data in a schema extension in the following ways:
+
+- Use the resource `POST` method to specify custom data when creating a new resource instance.
+- Use the resource `GET` method to read the custom data.
+- Use the resource `PATCH` method to add or update custom data in an existing resource instance.
+- Use the resource `PATCH` method to set the complex type to null, to delete the custom data in the resource instance. 
+
+Schema extension example: [Add custom data to groups using schema extensions (preview)](extensibility_schema_groups.md)
+
 
 ### Schema extensions lifecycle
-When your app creates a schema extension definition, it is marked as the owner of that schema extension. Only this app can update and delete the schema extension definition. The schema extension may be updated with non-breaking changes only. The schema extension can be in various lifecycle states. You can change the lifecycle state through a PATCH operation.
+When your app creates a schema extension definition, the app is marked as the owner of that schema extension. 
+
+The owner app can move the extension through different states of a lifecycle, using a PATCH operation on its **status** property. 
+Depending on the current state, the owner app may be able to update or delete the extension. Any updates to a schema extension should always only be additive and non-breaking.
+
 
 | State | Lifecycle state behavior |
 |-------------|------------|
-| InDevelopment | Initial state after creation.  In this state, only the owning app can use the schema extension to add data to the targeted resource. The schema extension can be updated with additive changes and it can be deleted. Only the owning app can extend resources with this schema definition and only in the same directory where the owning app is registered. You can move the schema extension from *InDevelopment* to the *Available* state. |
-| Available |  The schema extension schema is available for use by all apps and can be used by any app to extend resources (as long as that app has permissions to that resource). The schema extension can be updated with additive changes but it can **not** be deleted. You can move the schema extension from *Available* to the *Deprecated* state. |
-| Deprecated |  When the schema extension is *Deprecated*, applications can still read and update extension properties based on the schema extension. The schema extension is not available to be viewed and cannot be used to create new properties. The schema extension cannot be updated or deleted. You can move a schema extension from *Deprecated* back to the *Available* state. |
+| InDevelopment | - Initial state after creation. The owner app is still developing the schema extension. <br> - In this state, only the owner app can use the schema extension. The owner app can update the extension definition with additive changes or delete it. Only the owner app can extend resource instances with this schema definition and only in the same directory where the owner app is registered. <br> - The owner app can move the extension from `InDevelopment` to the `Available` state. |
+| Available | - The schema extension is available for use by all apps in any tenant. <br> - Once the owner app sets the extension to `Available`, any app can simply add custom data to instances of those resource types specified in the extension (as long as the app has permissions to that resource). The app can assign custom data when creating a new instance, or updating an existing instance. Only the owner app can update the extension definition with additive changes, or delete the extension. <br> - The owner app can also move the schema extension from `Available` to the `Deprecated` state. |
+| Deprecated | - The schema extension definition can no longer be read or modified. <br> - No app can view, update, add new properties, or delete the extension. Apps can, however, still read, update, or delete extension _property values_. <br> - The owner app can move the schema extension from `Deprecated` back to the `Available` state. |
+
+>**Note:** You can continue to access or delete your custom data in a schema extension in the `Deprecated` state. There is, however, 
+currently a [known issue](#known-limitations-for-extensions) where you lose access to your custom data once the schema extension is deleted.
 
 ### Supported property data types 
 The following data types are supported when defining a property in a schema extension:
@@ -61,23 +112,31 @@ The following data types are supported when defining a property in a schema exte
 >**Note:** Multi-value properties are not currently supported.
 
 ### Azure AD directory schema extensions
-Creating, reading, updating and deleting [Azure AD directory schema extensions](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions) values on resources is supported through Microsoft Graph.  However, creating and managing Azure AD directory schema extensions definitions is not supported currently through Microsoft Graph.
+Azure AD supports a similar type of extensions, known as [directory schema extensions](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), 
+on a few [directoryObject](../api-reference/beta/resources/directoryObject.md) resources. While you must use Azure AD Graph API to create and manage the definitions of directory schema extensions, you can use Microsoft Graph API
+to add, get, update and delete _data_ in the properties of these extensions.
 
 ## Permissions
-The same [permission scopes](../authorization/permission_scopes.md) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource.  For example, for an app to be able to update the signed-in user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.
+The same [permissions](../authorization/permission_scopes.md) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource.  For example, for an app to be able to update the signed-in user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.
 
 Additionally, to create and manage schema extension definitions, an application must be granted the *Directory.AccessAsUser.All* permission.
  
 ## Known limitations for extensions
--   Filtering on schema extension property values is not yet supported (but will be available very soon)
--   Change tracking (Delta Query) is not supported for open or schema extension properties.
--   You cannot specify an open extension at the same time you create a resource for administrative unit, device, group, organization or user. You must first create the resource and then specify the open extension data in a subsequent ``POST`` request on that resource.  
+-   You cannot specify an open extension at the same time you create an instance of **administrativeUnit**, **device**, **group**, **organization** or **user**. You must first create the instance and then specify the open extension data in a subsequent ``POST`` request on that instance.  
+-   Change tracking (delta query) is not supported for open or schema extension properties.
+-   Filtering on schema extension property values is not yet supported (but will be available very soon).
 -   Deleting a schema extension definition will remove access to any custom data added based on the deleted schema. This is a temporary limitation.
--   Currently deleting a schema extension is possible in all states. In the future deletion will be possible only for schema extensions in the *InDevelopment* state.
--   To remove a schema extension complex type from a resource, you must set all the complex type's property values to `null`.  In the future this will be possible by simply setting the schema extension complex type to `null`.
--   Directory resources, such as users, groups and devices, currently limits the total number of schema extension property values that can be set on a resource, to 100.
+-   Currently deleting a schema extension is possible in all states. In the future deletion will be possible only for schema extensions in the `InDevelopment` state.
+-   To remove a schema extension complex type from a resource instance, you must set all the complex type's property values to `null`.  In the future this will be possible by simply setting the schema extension complex type to `null`.
+-   Directory resources, such as users, groups and devices, currently limit the total number of schema extension property values that can be set on a resource, to 100.
 
 ## Extension examples
-[Add custom data to Users using Open Extensions (preview)](extensibility_open_users.md)
+[Add custom data to users using open extensions (preview)](extensibility_open_users.md)
 
-[Add custom data to Groups using Schema Extensions (preview)](extensibility_schema_groups.md)
+[Add custom data to groups using schema extensions (preview)](extensibility_schema_groups.md)
+
+## See also
+
+[Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+
+[Adding and verifying a domain for an Office 365 tenant](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

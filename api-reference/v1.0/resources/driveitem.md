@@ -132,7 +132,7 @@ The URL will only be available for a short period of time before it is invalidat
 | [Create item](../api/item_post_children.md)            | `POST /drive/items/{item-id}/children`   |
 | [Update item](../api/item_update.md)                   | `PATCH /drive/items/{item-id}`           |
 | [Upload content](../api/item_uploadcontent.md)         | `PUT /drive/items/{item-id}/content`     |
-| [Download content](../api/item_downloadcontent.md)     | `GET /drive/items/{ite-id}/content`      |
+| [Download content](../api/item_downloadcontent.md)     | `GET /drive/items/{item-id}/content`      |
 | [Delete item](../api/item_delete.md)                   | `DELETE /drive/items/{item-id}`          |
 | [Move item](../api/item_move.md)                       | `PATCH /drive/items/{item-id}`           |
 | [Copy item](../api/item_copy.md)                       | `POST /drive/items/{item-id}/copy`       |

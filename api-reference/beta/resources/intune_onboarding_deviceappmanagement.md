@@ -9,6 +9,8 @@ Singleton entity that acts as a container for all device app management function
 |[Get deviceAppManagement](../api/intune_onboarding_deviceappmanagement_get.md)|[deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md) object.|
 |[Update deviceAppManagement](../api/intune_onboarding_deviceappmanagement_update.md)|[deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md)|Update the properties of a [deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md) object.|
 |[syncWindowsStoreForBusinessApps action](../api/intune_onboarding_deviceappmanagement_syncwindowsstoreforbusinessapps.md)|None|Not yet documented|
+|[List sideLoadingKeys](../api/intune_onboarding_deviceappmanagement_list_sideloadingkey.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) collection|Get the sideLoadingKeys from the sideLoadingKeys navigation property.|
+|[Create sideLoadingKey](../api/intune_onboarding_deviceappmanagement_create_sideloadingkey.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md)|Create a new [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) by posting to the sideLoadingKeys collection.|
 
 ## Properties
 |Property|Type|Description|
@@ -20,7 +22,10 @@ Singleton entity that acts as a container for all device app management function
 |windowsStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|The last time an application sync from the windows store for business was completed.|
 
 ## Relationships
-None
+|Relationship|Type|Description|
+|---|---|---|
+|sideLoadingKeys|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) collection|Side Loading Keys that are required for the Windows 8 and 8.1 Apps installation.|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

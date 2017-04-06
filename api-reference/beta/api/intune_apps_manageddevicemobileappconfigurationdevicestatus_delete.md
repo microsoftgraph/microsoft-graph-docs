@@ -14,6 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 DELETE /iosMobileAppConfigurations/{iosMobileAppConfigurationsId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
+DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
 ```
 
 ## Request headers

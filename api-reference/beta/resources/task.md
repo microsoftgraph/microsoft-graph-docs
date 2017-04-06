@@ -1,5 +1,7 @@
 # task resource type
 
+>**Important:** This resource is deprecated and will be removed on May 26th, 2017. We recommend that you use [plannerTask](plannertask.md) resource.
+
 The **task** resource represents a Planner task in Office 365. A Planner task is contained in a [plan](plan.md) and can be assigned to a [bucket](bucket.md) in a plan. Each task object has a [details](taskdetails.md) object which can contain more information about the task. See [overview](tasks_overview.md) for more information regarding relationships between group, plan and task.
 
 ## JSON representation

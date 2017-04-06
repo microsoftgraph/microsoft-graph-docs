@@ -1,5 +1,7 @@
 # planTaskBoard resource type
 
+>**Important:** This resource is deprecated and will be removed on May 26th, 2017.
+
 The PlanTaskBoard resource represents the information used to render a plan's task board view correctly. Each [plan](plan.md) will have three planTaskBoard objects as there can be three task board views for a plan.
 
 ## JSON representation

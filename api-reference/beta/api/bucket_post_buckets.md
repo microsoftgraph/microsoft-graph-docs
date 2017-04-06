@@ -1,5 +1,7 @@
 # Create bucket
 
+>**Important:** This API is deprecated and will be removed on May 26th, 2017. We recommend that you use [Create plannerBucket](planner_post_buckets.md) API.
+
 Use this API to create a new bucket.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:

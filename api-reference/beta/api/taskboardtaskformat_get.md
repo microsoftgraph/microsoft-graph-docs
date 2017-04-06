@@ -1,5 +1,7 @@
 # Get taskBoardTaskFormat
 
+>**Important:** This API is deprecated and will be removed on May 26th, 2017. We recommend that you use [Get plannerAssignedToTaskBoardTaskFormat](plannerAssignedToTaskBoardTaskFormat_get.md), [Get plannerBucketTaskBoardTaskFormat](plannerBucketTaskBoardTaskFormat_get.md), and [Get plannerProgressTaskBoardTaskFormat](plannerProgressTaskBoardTaskFormat_get.md) APIs.
+
 Retrieve the properties and relationships of taskboardtaskformat object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:

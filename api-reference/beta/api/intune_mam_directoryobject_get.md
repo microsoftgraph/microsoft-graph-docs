@@ -13,13 +13,13 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedAppPolicies/{managedAppPoliciesId}/targetedSecurityGroups/{directoryObjectId}
-GET /managedAppPolicies/{managedAppPoliciesId}/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/{directoryObjectId}
-GET /managedAppPolicies/{managedAppPoliciesId}/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/{directoryObjectId}
+GET /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetedSecurityGroups/{directoryObjectId}
+GET /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/{directoryObjectId}
+GET /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/{directoryObjectId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -36,7 +36,7 @@ If successful, this method returns a `200 OK` response code and [directoryObject
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}/targetedSecurityGroups/{directoryObjectId}
+GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetedSecurityGroups/{directoryObjectId}
 ```
 
 ### Response
