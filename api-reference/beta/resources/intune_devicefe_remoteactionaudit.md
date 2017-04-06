@@ -17,7 +17,7 @@ Report of remote actions initiated on the devices belonging to a certain tenant.
 |---|---|---|
 |id|String|Report Id.|
 |deviceDisplayName|String|Intune device name.|
-|userName|String|Deprecated. Please use InitiatedByUserPrincipalName instead.|
+|userName|String|\[deprecated\] Please use InitiatedByUserPrincipalName instead.|
 |initiatedByUserPrincipalName|String|User who initiated the device action, format is UPN.|
 |action|String|The action name. Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`.|
 |requestDateTime|DateTimeOffset|Time when the action was issued, given in UTC.|
