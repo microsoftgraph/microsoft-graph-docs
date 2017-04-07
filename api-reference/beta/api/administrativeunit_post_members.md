@@ -5,7 +5,7 @@ Use this API to add a member (user or group) to an administrative unit.
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
+The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -15,7 +15,7 @@ POST /administrativeUnits/{id}/members/$ref
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <token>. Required.|
+| Authorization  | Bearer  &lt;token&gt; *Required* |
 
 ## Request body
 In the request body, supply a JSON representation of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryObject.md) to be added.

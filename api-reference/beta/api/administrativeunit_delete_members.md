@@ -3,7 +3,7 @@
 Use this API to remove a member (user or group) from an administrative unit.
 
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
+The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -13,7 +13,7 @@ DELETE /administrativeUnits/{id}/members/{id}/$ref
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <token>. Required.|
+| Authorization  | Bearer  &lt;token&gt; *Required* |
 
 ## Request body
 Do not supply a request body for this method.

@@ -2,7 +2,7 @@
 
 Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
+The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -13,7 +13,7 @@ POST /administrativeUnits
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <token>. Required.|
+| Authorization  | Bearer  &lt;token&gt; *Required* |
 ## Request body
 In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.
 

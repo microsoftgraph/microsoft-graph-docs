@@ -1,19 +1,19 @@
-# Delete scoped-role administrators
-Delete a scoped-role administrator from an adminstrative unit.
+# Remove a scopedRoleMember
+Remove a scoped-role member from an adminstrative unit.
 
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
+The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /administrativeUnits/{id}/scopedAdministrators/{id}
+DELETE /administrativeUnits/{id}/scopedRoleMembers/{id}
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <token>. Required.|
+| Authorization  | Bearer &lt;token&gt; *Required* |
 
 ## Request body
 Do not supply a request body for this method.
@@ -27,10 +27,10 @@ If successful, this method returns `204, No Content` response code. It does not 
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_administrativeunit"
+  "name": "delete_scopedrolemember"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedAdministrators/{id}
+DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
