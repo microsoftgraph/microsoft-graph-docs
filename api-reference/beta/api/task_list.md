@@ -1,5 +1,7 @@
 # List tasks
 
+>**Important:** This API is deprecated and will be removed on May 26th, 2017.
+
 Retrieve a list of task* objects.
 
 *Note that filter is required for this method.

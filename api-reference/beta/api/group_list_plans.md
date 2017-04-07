@@ -1,5 +1,7 @@
 # List plans
 
+>**Important:** This API is deprecated and will be removed on May 26th, 2017. We recommend that you use [List group plannerplans](plannergroup_list_plans.md) API.
+
 Retrieve a list of [plan](../resources/plan.md) objects owned by the group. Today, a group can own no more than one plan.
 ## Prerequisites
 The following **scopes** are required to execute this API: 

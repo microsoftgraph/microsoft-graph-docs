@@ -1,5 +1,7 @@
 # Update taskboardtaskformat
 
+>**Important:** This API is deprecated and will be removed on May 26th, 2017. We recommend that you use [Update plannerAssignedToTaskBoardTaskFormat](plannerAssignedToTaskBoardTaskFormat_update.md), [Update plannerBucketTaskBoardTaskFormat](plannerBucketTaskBoardTaskFormat_update.md), and [Update plannerProgressTaskBoardTaskFormat](plannerProgressTaskBoardTaskFormat_update.md) APIs.
+
 Update the properties of taskboardtaskformat object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:

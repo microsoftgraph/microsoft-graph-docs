@@ -10,6 +10,10 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |:-------------|:-----------|:--------------|
 |Change|Beta|Added new onPremises properties onPremisesDomainName, OnPremisesSamAccountName, and onPremisesUserPrincipalName to the [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) entity. |
 
+|**Change type**|**Version**|**Description**| 
+|:-------------|:-----------|:--------------| 
+|Addition|Beta|Added new [Planner API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/planner_overview).<br /> New resources:<br />[plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan) <br />[plannerTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTask) <br />[plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) <br />[plannerTaskDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTaskDetails) <br />[plannerBucket](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerBucket) <br />[plannerAssignedToTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerassignedtotaskboardtaskformat) <br />[plannerBucketTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerbuckettaskboardtaskformat) <br />[plannerProgressTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerprogresstaskboardtaskformat) | 
+
 ## March 2017
 
 ### Intune APIs

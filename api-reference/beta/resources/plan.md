@@ -1,5 +1,7 @@
 # plan resource type
 
+>**Important:** This resource is deprecated and will be removed on May 26th, 2017. We recommend that you use [plannerPlan](plannerplan.md) resource.
+
 The Plan resource represents a plan in Office 365. A plan can be owned by a [group](group.md) and contains a collection of [tasks](task.md). It also can have a collection of [buckets](bucket.md). Each plan object has a [details](plandetails.md) object which can contain more information about the plan. See [overview](tasks_overview.md) for more information regarding relationships between group, plan and task.
 
 ## JSON representation
