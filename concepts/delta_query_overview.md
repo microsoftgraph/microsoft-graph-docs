@@ -76,7 +76,7 @@ The same [permissions](../authorization/permission_scopes.md) that are required 
 
 ## Known limitations
 
-For known limitations using delta query, see the [delta query section](../../../overview/release_notes.md#delta-query) in the known issues article.
+For known limitations using delta query, see the [delta query section](../overview/release_notes.md#delta-query) in the known issues article.
 
 ## Delta query request examples 
 
