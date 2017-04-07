@@ -21,24 +21,21 @@ The typical call pattern is as follows:
 A delta query GET response always includes a URL specified in a `nextLink` or `deltaLink` response header. 
 The `nextLink` URL includes a _skipToken_, and a `deltaLink` URL includes a _deltaToken_. 
 
-These tokens are completely opaque to the client. The following is all you need to know about them:
+These tokens are opaque to the client. The following details are what you need to know about them:
 
 - Each token reflects the state and represents a snapshot of the resource in that round of change tracking. 
-- These state tokens also encode and include other query parameters (such as `$select` if the resource supports it) 
-specified in the initial delta query request, so that you won't have to repeat them in subsequent delta query requests.
-- When carrying out delta query, you can simply copy and apply the `nextLink` or `deltaLink` URL as is to the next **delta** function call 
-without having to inspect the contents of the URL, including its state token.
+- The state tokens also encode and include other query parameters (such as `$select`) 
+specified in the initial delta query request. Therefore, it's not required to repeat them in subsequent delta query requests.
+- When carrying out delta query, you can copy and apply the `nextLink` or `deltaLink` URL to the next **delta** function call without having to inspect the contents of the URL, including its state token.
 
 
 ### Optional query parameters
 
-If a client uses a query parameter, it must be specified in the initial request. Microsoft Graph will automatically encode the specified parameter(s) into the `nextLink` or `deltaLink` provided in the response. 
-The calling application only needs to specify their desired query parameters once upfront. Microsoft Graph adds the specified parameters automatically for all subsequent requests.
+If a client uses a query parameter, it must be specified in the initial request. Microsoft Graph automatically encodes the specified parameter into the `nextLink` or `deltaLink` provided in the response. The calling application only needs to specify their desired query parameters once upfront. Microsoft Graph adds the specified parameters automatically for all subsequent requests.
 
 For users and groups, there are restrictions on using some query parameters:
 
--   If a `$select` query parameter is used, this indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. 
-This means that if a change occurs to a property that is not selected, the resource for which that property changed will not appear in the delta response after a subsequent request.
+-   If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed will not appear in the delta response after a subsequent request.
 -   `$expand` is not supported.
 
 ## Resource representation in the delta query response
@@ -47,8 +44,8 @@ This means that if a change occurs to a property that is not selected, the resou
 
 -   Updated instances are represented by their **id** with *at least* the properties that have been updated, but additional properties may be included.
 
--   Changes to relationships on users and groups are represented as annotations on the standard resource representation. These annotations will use the format `propertyName@delta`, 
-and will only appear when the client explicitly chooses to track changes to the relationship by using the `$select` parameter.
+-   Changes to relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`, 
+and only appear when the client explicitly chooses to track changes to the relationship by using the `$select` parameter.
 
 -   Removed instances are represented using only their **id** and an `@removed` node. The `@removed` node may include additional information about why the instance was removed.
 
@@ -56,7 +53,7 @@ and will only appear when the client explicitly chooses to track changes to the 
 
 ## Supported resources
 
-Delta query is currently supported in preview on the Microsoft Graph /beta endpoint for the following resources.
+Delta query is currently supported in preview on the Microsoft Graph /beta endpoint for the following resources:
 
 | **Resource collection** | **API** |
 |:------ | :------ |

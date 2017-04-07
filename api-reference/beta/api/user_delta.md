@@ -27,7 +27,7 @@ Tracking changes in users incurs a round of one or more **delta** function calls
 it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
 into the token portion of the `nextLink` or `deltaLink` URL provided in the response. 
 You only need to specify any desired query parameters once upfront. 
-In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already 
+In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already 
 includes the encoded, desired parameters.
 
 | Query parameter	   | Type	|Description|
@@ -60,7 +60,7 @@ Do not supply a request body for this method.
 
 ### Response
 
-If successful, this method returns `200, OK` response code and [user](../resources/user.md) collection object in the response body. The response will also include a nextLink URL or a deltaLink URL. 
+If successful, this method returns `200, OK` response code and [user](../resources/user.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL. 
 
 - If a nextLink URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the nextLink URL until a deltaLink URL is included in the response.
 
