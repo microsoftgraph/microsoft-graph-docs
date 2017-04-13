@@ -9,7 +9,6 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |:---------------|:--------|:----------|
 |[Get Worksheet](../api/worksheet_get.md) | [Worksheet](worksheet.md) |Read properties and relationships of worksheet object.|
 |[Create Chart](../api/worksheet_post_charts.md) |[Chart](chart.md)| Create a new Chart by posting to the charts collection.|
-|[List names](../api/worksheet_list_names.md) |[NamedItem](nameditem.md) collection| Get named item collection associated with the worksheet.|
 |[List charts](../api/worksheet_list_charts.md) |[Chart](chart.md) collection| Get a Chart object collection.|
 |[Create Table](../api/worksheet_post_tables.md) |[Table](table.md)| Create a new Table by posting to the tables collection.|
 |[List tables](../api/worksheet_list_tables.md) |[Table](table.md) collection| Get a Table object collection.|
@@ -34,7 +33,6 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |charts|[Chart](chart.md) collection|Returns collection of charts that are part of the worksheet. Read-only.|
-|names|[NamedItem](nameditem.md) collection|Returns collection of names that are associated with the worksheet. Read-only.|
 |pivotTables|[workbookPivotTable](workbookpivottable.md) collection| Collection of PivotTables that are part of the worksheet. |
 |protection|[WorksheetProtection](worksheetprotection.md)|Returns sheet protection object for a worksheet. Read-only.|
 |tables|[Table](table.md) collection|Collection of tables that are part of the worksheet. Read-only.|
