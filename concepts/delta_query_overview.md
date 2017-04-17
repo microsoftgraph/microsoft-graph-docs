@@ -79,9 +79,7 @@ The same [permissions](../authorization/permission_scopes.md) that are required 
 
 ## Known limitations
 
-Tracking changes to relationships on users and groups is only supported within the specific resource class for which changes are being tracked. For example, if a client is tracking changes on *groups* 
-and has selected the **members** relationship, the client will only receive membership updates in the delta query response if those members are also *groups*. 
-In other words, tracking group membership for users is not yet supported. The Microsoft Graph team understands that this is a high priority scenario and an update is targeted to be delivered in March 2017.
+For known limitations using delta query, see the [delta query section](../../../overview/release_notes.md#delta-query) in the known issues article.
 
 ## Delta query request examples 
 
