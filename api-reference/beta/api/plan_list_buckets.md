@@ -1,5 +1,7 @@
 # List buckets
 
+>**Important:** This API is deprecated and will be removed on May 26th, 2017. We recommend that you use [List plannerBuckets](plannerPlan_list buckets.md) API.
+
 Retrieve a list of bucket objects.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:

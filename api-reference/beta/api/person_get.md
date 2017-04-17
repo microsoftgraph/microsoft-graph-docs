@@ -30,8 +30,9 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and [person](../resources/person.md) object in the response body.
 ## Examples
-#### Browse
-The following request gets the people most relevant to the user, based on communication, collaboration, and business relationships. By default, each response returns 10 records, but you can change this using the *$top* parameter. This request requires the *People.Read* scope.
+### Browse
+The requests in this section get the people most relevant to the signed-in user (`/me`), based on communication, collaboration, and business relationships. 
+By default, each response returns 10 records, but you can change this using the *$top* parameter. These requests require the *People.Read* scope.
 
 <!-- {
   "blockType": "request",
@@ -63,29 +64,29 @@ Content-length: 196
 }
 ```
 
-##### Requesting a subsequent page of people
+#### Requesting a subsequent page of people
 If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request additional pages of information. If the previous request has additional information, the following request gets the next page of people from the server.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=10&$skip=10
 ```
 
-##### Sort the response
+#### Sort the response
 By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter. This query selects the people most relevant to you, sorts them by their display name, and then returns the first 10 people on the sorted list.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$orderby=DisplayName
 ```
-##### Changing the number of people returned and the fields returned
+#### Changing the number of people returned and the fields returned
 You can change the number of people returned in the response by setting the *$top* parameter. 
 
-The following example requests the 1,000 most relevant people. The request also limits the amount of data sent back from the server by requesting only the display name of the person.
+The following example requests the 1,000 perople most relevant to `/me`. The request also limits the amount of data sent back from the server by requesting only the display name of the person.
 
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=1000&$Select=DisplayName
 ```
-##### Selecting the fields to return
+#### Selecting the fields to return
 You can limit the amount of data returned from the server by using the *$select* parameter to choose one or more fields. The *@odata.id* field is always returned.
 
 The following example limits the response to the *DisplayName* and *EmailAddress* of the 10 most relevant people.
@@ -93,7 +94,7 @@ The following example limits the response to the *DisplayName* and *EmailAddress
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses
 ```
-##### Using a filter to limit the response
+#### Using a filter to limit the response
 You can use the *$filter* parameter to limit the response to only those people whose record contains the specified criteria. 
 
 The following query limits the response to people with the source "Directory."
@@ -103,7 +104,7 @@ The following query limits the response to people with the source "Directory."
 GET https://graph.microsoft.com/beta/me/people/?$Filter=Sources/Any (source: source/Type  eq 'Directory')
 ```
 
-##### Selecting the fields to return in a filtered response
+#### Selecting the fields to return in a filtered response
 
 You can combine the *$select* and *$filter* parameters to create a custom list of people relevant to the user and get only the fields that your application needs. 
 
@@ -114,33 +115,34 @@ The following example gets the *DisplayName* and *EmailAddress* of people whose 
 GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses&$Filter=DisplayName eq 'Nestor Kellum'
 ```
 
-#### Search people
-Search requests require the *People.Read* scope.
+### Search people
+The requests in this section also get the people most relevant to the signed-in user (`/me`). Search requests require the *People.Read* scope.
 
-##### Using search to select people
+#### Using search to select people
 
 Use the *$search* parameter to select people who meet a particular set of criteria. 
 
-The following search query returns relevant people whose GivenName or Surname begins with the letter "j".
+The following search query returns people relevant to `/me` whose GivenName or Surname begins with the letter "j".
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search=j
 ```
-##### Using search to specify a relevant topic
+#### Using search to specify a relevant topic
 
-The following request returns relevant people whose name contains "ma" and who have an association with "feature planning."
+The following request returns people relevant to `/me` whose name contains "ma" and who have an association with "feature planning."
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature planning"
 ```
-##### Performing a fuzzy search
+#### Performing a fuzzy search
 
-The following request does a search for a person named "Hermaini Hall." Because there is a relevant person named "Herminia Hull," the information for "Herminia Hull" is returned.
+The following request does a search for a person named "Hermaini Hall." Because there is a person named "Herminia Hull" relevant to the signed-in user, 
+the information for "Herminia Hull" is returned.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
 ```
-#### Related people
+### Related people
 
 The following request gets the people most relevant to another person in the user's organization. This request requires the *User.ReadBasic.All* scope. In this example, Nestor Kellum's relevant people are displayed.
 

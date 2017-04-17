@@ -8,8 +8,7 @@ When creating a new invitation you have several options available:
 2. When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources he has been invited to.
 
 ### Prerequisites
-The following **scopes** are required to execute this API:
-*Directory.ReadWrite.All* or *User.ReadWrite.All*
+One of the following scopes is required to execute this API: *User.Invite.All* or *User.ReadWrite.All*  or *Directory.ReadWrite.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

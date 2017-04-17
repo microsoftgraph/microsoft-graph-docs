@@ -1,5 +1,7 @@
 # Get bucket
 
+>**Important:** This API is deprecated and will be removed on May 26th, 2017. We recommend that you use [Get plannerBucket](plannerBucket_get.md) API.
+
 Retrieve the properties and relationships of bucket object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:

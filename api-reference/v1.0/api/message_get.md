@@ -4,6 +4,8 @@ Retrieve the properties and relationships of a [message](../resources/message.md
 
 Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
 
+Currently, this operation returns message bodies in only HTML format.
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.Read*  
@@ -54,7 +56,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "",
+    "contentType": "html",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"

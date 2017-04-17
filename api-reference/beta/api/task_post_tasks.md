@@ -1,5 +1,7 @@
 # Create task
 
+>**Important:** This API is deprecated and will be removed on May 26th, 2017. We recommend that you use [Create plannerTask](planner_post_tasks.md) API.
+
 Use this API to create a new task.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:

@@ -34,9 +34,15 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/addre
 ### $search
 To restrict the results of a request that match a search criterion, use the **$search** query parameter. 
 
->  **Note**: You can currently search messages but not contacts or events. A **$search** request returns up to 250 results. You cannot use **$filter** or **$orderby** in a search request.
+>  **Note**: You can currently use **$search** on collections of [message](../api-reference/v1.0/resources/message.md) and [person](../api-reference/beta/resources/person.md) 
+but not [contact](../api-reference/v1.0/resources/contact.md) or [event](../api-reference/v1.0/resources/event.md). A **$search** request returns up to 250 results. 
+You cannot use **$filter** or **$orderby** in a **$search** request.
 
-Search criteria are expressed using Advanced Query Syntax (AQS). The results are sorted by the date and time that the message was sent.
+Search criteria are expressed using Advanced Query Syntax (AQS). 
+
+**Applying $search on messages**
+
+Search results are sorted by the date and time that the message was sent.
 
 You can specify the following properties on a **message** in a **$search** criterion:
 **attachments**, **bccRecipients**, **body**, **category**, **ccRecipients**, **content**, **from**, **hasAttachments**, **participants**, **receivedDateTime**, **sender**, **subject**, **toRecipients**
@@ -49,7 +55,7 @@ The following example returns all messages in the signed-in user's Inbox that co
 GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 ```
 
-The next example searches all messages in the user's Inbox that were sent from a specific email address:
+The next example searches all the messages in the user's Inbox that were sent from a specific email address:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"

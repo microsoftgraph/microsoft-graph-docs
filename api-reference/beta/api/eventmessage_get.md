@@ -1,6 +1,21 @@
 # Get eventMessage
 
-Retrieve the properties and relationships of eventmessage object.
+Retrieve the properties and relationships of the [eventMessage](../resources/eventmessage.md) object.
+
+### Get the event message body in HTML or text format
+
+Event message bodies can be in HTML or text format.
+
+You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** and **uniqueBody** properties in a `GET` request:
+
+- Specify `Prefer: outlook.body-content-type="text"` to get a event message body returned in text format.
+- Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return the event message body in HTML format.
+
+If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:
+
+- For text format requests: `Preference-Applied: outlook.body-content-type="text"`
+- For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.Read*
@@ -52,7 +67,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "",
+    "contentType": "html",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value",

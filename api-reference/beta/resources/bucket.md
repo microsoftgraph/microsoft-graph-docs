@@ -1,5 +1,7 @@
 # bucket resource type
 
+>**Important:** This resource is deprecated and will be removed on May 26th, 2017. We recommend that you use [plannerBucket](plannerbucket.md) resource.
+
 The Bucket resource represents a bucket (or "custom column") for tasks in a plan in Office 365. It is contained in a [plan](plan.md) and can have a collection of [tasks](task.md).
 
 ## JSON representation

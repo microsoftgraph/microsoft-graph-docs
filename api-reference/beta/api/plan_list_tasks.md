@@ -1,5 +1,7 @@
 # List tasks
 
+>**Important:** This API is deprecated and will be removed on May 26th, 2017. We recommend that you use [List plannerTasks](plannerPlan_list_tasks.md) API.
+
 Retrieve a list of task objects.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
