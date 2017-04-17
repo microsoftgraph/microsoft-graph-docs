@@ -1,10 +1,24 @@
 # Get message
 
-Retrieve the properties and relationships of message object.
+Retrieve the properties and relationships of the [message](../resources/message.md) object.
 
 For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message.
 
 Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
+
+### Get the message body in HTML or text format
+
+Message bodies can be in HTML or text format.
+
+You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** and **uniqueBody** properties in a `GET` request:
+
+- Specify `Prefer: outlook.body-content-type="text"` to get a message body returned in text format.
+- Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return the message body in HTML format.
+
+If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:
+
+- For text format requests: `Preference-Applied: outlook.body-content-type="text"`
+- For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -41,6 +55,7 @@ of each [mention](../resources/mention.md) in the message expanded.
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
+| Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". Optional. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -48,16 +63,17 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.
 ## Example
 ##### Request 1
-The first example gets the specified message.
+The first example gets the specified message. It does not specify any header to indicate the desired format of the body to be returned.
 <!-- {
   "blockType": "request",
   "name": "get_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages/{id}
+GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')
 ```
 ##### Response 1
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. The **body** and **uniqueBody** properties are returned in the default HTML format.
+Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -66,18 +82,22 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
+Content-length: 5236
 
 {
-  "receivedDateTime": "2016-10-19T10:37:00Z",
-  "sentDateTime": "2016-10-19T10:37:00Z",
-  "hasAttachments": true,
-  "subject": "subject-value",
-  "body": {
-    "contentType": "",
-    "content": "content-value"
-  },
-  "bodyPreview": "bodyPreview-value"
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages/$entity",
+    "@odata.etag":"W/\"CQAAABYAAABmWdbhEgBXTophjCWt81m9AAAoZYj4\"",
+    "id":"AAMkAGI1AAAoZCfHAAA=",
+    "subject":"Welcome to our group!",
+    "bodyPreview":"Welcome to our group, Dana! Hope you will enjoy working with us !\r\n",
+    "body":{
+        "contentType":"html",
+        "content":"<html>\r\n<head></head><body><p>Welcome to our group, Dana! Hope you will enjoy working with us </p></body></html>\r\n"
+    },
+    "uniqueBody":{
+        "contentType":"html",
+        "content":"<html>\r\n<head></head><body><p>Welcome to our group, Dana! Hope you will enjoy working with us </p></body></html>\r\n"
+    }
 }
 ```
 
@@ -185,6 +205,49 @@ Content-length: 248
       "application":null
     }
   ]
+}
+```
+
+
+##### Request 3
+The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.
+<!-- {
+  "blockType": "request",
+  "name": "get_message_in_text"
+}-->
+```http
+Prefer: outlook.body-content-type="text"
+
+GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')?$select=subject,body,bodyPreview,uniqueBody
+```
+##### Response 3
+Here is an example of the response. 
+Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.message"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Preference-Applied: outlook.body-content-type="text"
+Content-length: 1550
+
+{
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)/$entity",
+    "@odata.etag":"W/\"CQAAABYAAABmWdbhEgBXTophjCWt81m9AAAoZYj4\"",
+    "id":"AAMkAGI1AAAoZCfHAAA=",
+    "subject":"Welcome to our group!",
+    "bodyPreview":"Welcome to our group, Dana! Hope you will enjoy working with us !\r\n\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\n\r\nTh",
+    "body":{
+        "contentType":"text",
+        "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\n\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\n\r\nThanks!\r\n\r\n"
+    },
+    "uniqueBody":{
+        "contentType":"text",
+        "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\nThanks!\r\n"
+    }
 }
 ```
 

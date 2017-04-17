@@ -38,8 +38,8 @@ An EventMessage is typically found in the Inbox folder where it arrives as the r
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|The Bcc: recipients for the message.|
-|body|[itemBody](itembody.md)|The body of the message.|
-|bodyPreview|String|The first 255 characters of the message body.|
+|body|[itemBody](itembody.md)|The body of the message. It can be in HTML or text format.|
+|bodyPreview|String|The first 255 characters of the message body. It is in text format.|
 |categories|String collection|The categories associated with the message.|
 |ccRecipients|[recipient](recipient.md) collection|The Cc: recipients for the message.|
 |changeKey|String|The version of the message.|

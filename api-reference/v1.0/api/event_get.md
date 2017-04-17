@@ -2,6 +2,12 @@
 
 Get the properties and relationships of the specified [event](../resources/event.md) object.
 
+Currently, this operation returns event bodies in only HTML format.
+
+Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
+
+### Support various time zones
+
 For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response. 
 
 For example, the following `Prefer: outlook.timezone` header sets the start and end times in the response to Eastern Standard Time.
@@ -16,7 +22,6 @@ times are returned in UTC.
 You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to 
 find out the time zone used when the event was created.
 
-Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -47,7 +52,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
-| Prefer: | outlook.timezone | The default time zone for events in the response. |
+| Prefer: outlook.timezone | string | The default time zone for events in the response. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -55,16 +60,21 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The first example gets the specified event. It specifies the following:
+
+- A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time. 
+- A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
 <!-- {
   "blockType": "request",
   "name": "get_event"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/{id}
+Prefer: outlook.timezone="Pacific Standard Time"
+
+GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. The **body** property is returned in the default format of HTML.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -73,35 +83,60 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 285
+Preference-Applied: outlook.timezone="Pacific Standard Time"
+Content-length: 1928
 
 {
-  "originalStartTimeZone": "originalStartTimeZone-value",
-  "originalEndTimeZone": "originalEndTimeZone-value",
-  "responseStatus": {
-    "response": "",
-    "time": "datetime-value"
-  },
-  "iCalUId": "iCalUId-value",
-  "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true,
-  "start": {
-    "dateTime": "datetime-value",
-    "timeZone": "timezone-value"
-  },
-  "end": {
-    "dateTime": "datetime-value",
-    "timeZone": "timezone-value"
-  },        
-  "location": {
-    "displayName": "displayName-value"
-  },
-  "organizer": {
-    "emailAddress": {
-      "address": "address-value",
-      "name": "name-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location)/$entity",
+    "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAAKGWwbw==\"",
+    "id":"AAMkAGIAAAoZDOFAAA=",
+    "subject":"Orientation ",
+    "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
+    "body":{
+        "contentType":"html",
+        "content":"<html><head></head><body><p>Dana, this is the time you selected for our orientation. Please bring the notes I sent you.</p></body></html>"
+    },
+    "start":{
+        "dateTime":"2017-04-21T10:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "end":{
+        "dateTime":"2017-04-21T12:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "location":{
+        "displayName":"Assembly Hall"
+    },
+    "attendees":[
+        {
+            "type":"required",
+            "status":{
+                "response":"none",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "emailAddress":{
+                "name":"Fanny Downs",
+                "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+            }
+        },
+        {
+            "type":"required",
+            "status":{
+                "response":"none",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "emailAddress":{
+                "name":"Dana Swope",
+                "address":"danas@a830edad905084922E17020313.onmicrosoft.com"
+            }
+        }
+    ],
+    "organizer":{
+        "emailAddress":{
+            "name":"Fanny Downs",
+            "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+        }
     }
-  }
 }
 ```
 

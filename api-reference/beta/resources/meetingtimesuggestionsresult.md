@@ -6,7 +6,7 @@ The following are the possible reasons that [findMeetingTimes](../api/user_findm
 
 |**emptySuggestionsReason value**|**Reasons**|
 |:-----|:-----|
-| attendeesUnavailable | All of the attendees' availability is known, but not enough attendees are available to reach the meeting confidence threshold, which is 50% by default, for any time period. This threshold is based on the attendees' free/busy status for a suggested meeting time period, with an attendee's free status corresponding to 100% chance of attendance, unknown status 49%, and busy status 0%.|
+| attendeesUnavailable | All of the attendees' availability is known, but not enough attendees are available to reach the [meeting confidence](../api/user_findmeetingtimes.md#the-confidence-of-a-meeting-suggestion) threshold, which is 50% by default, for any time period.|
 | attendeesUnavailableOrUnknown | Some or all of the attendees have unknown availability, causing the meeting confidence to fall below the set threshold, which is 50% by default. Attendee availability can become unknown if the attendee is outside of the organization, or there is an error obtaining free/busy information.|
 | locationsUnavailable | The **isRequired** property of the [locationConstraint](locationconstraint.md) parameter is specified as mandatory, and yet there are no locations available at the calculated time slots. |
 | organizerUnavailable | The **isOrganizerOptional** parameter is false and yet the organizer is not available during the requested time window. |
@@ -34,7 +34,7 @@ Here is a JSON representation of the resource
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|String|A reason for not returning any meeting suggestions. Possible values are: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, or `unknown`.|
+|emptySuggestionsReason|String|A reason for not returning any meeting suggestions. Possible values are: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, or `unknown`. This property is an empty string if the **meetingTimeSuggestions** property does include any meeting suggestions.|
 |meetingTimeSuggestions|[meetingTimeSuggestion](meetingTimeSuggestion.md) collection|An array of meeting suggestions.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

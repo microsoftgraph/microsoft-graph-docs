@@ -43,12 +43,12 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   "sharedWith": {
   },
   "categoryDescriptions": {
-    "1": "1-value",
-    "2": "2-value",
-    "3": "3-value",
-    "4": "4-value",
-    "5": "5-value",
-    "6": "6-value"
+    "category1": "1-value",
+    "category2": "2-value",
+    "category3": "3-value",
+    "category4": "4-value",
+    "category5": "5-value",
+    "category6": "6-value"
   }
 }
 ```
@@ -68,12 +68,12 @@ Content-length: 197
   "sharedWith": {
   },
   "categoryDescriptions": {
-    "1": "1-value",
-    "2": "2-value",
-    "3": "3-value",
-    "4": "4-value",
-    "5": "5-value",
-    "6": "6-value"
+    "category1": "1-value",
+    "category2": "2-value",
+    "category3": "3-value",
+    "category4": "4-value",
+    "category5": "5-value",
+    "category6": "6-value"
   },
   "id": "id-value"
 }

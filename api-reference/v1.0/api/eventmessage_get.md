@@ -1,6 +1,9 @@
 # Get eventMessage
 
-Retrieve the properties and relationships of eventmessage object.
+Retrieve the properties and relationships of [eventMessage](../resources/eventmessage.md) object.
+
+Currently, this operation returns event message bodies in only HTML format.
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.Read*
@@ -52,7 +55,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "",
+    "contentType": "html",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value",

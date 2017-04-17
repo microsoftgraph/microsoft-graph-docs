@@ -6,12 +6,12 @@ The **plannerCategoryDescriptions** resource represents the descriptive labels f
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|1|String|The label associated with Category 1|
-|2|String|The label associated with Category 2|
-|3|String|The label associated with Category 3|
-|4|String|The label associated with Category 4|
-|5|String|The label associated with Category 5|
-|6|String|The label associated with Category 6|
+|category1|String|The label associated with Category 1|
+|category2|String|The label associated with Category 2|
+|category3|String|The label associated with Category 3|
+|category4|String|The label associated with Category 4|
+|category5|String|The label associated with Category 5|
+|category6|String|The label associated with Category 6|
 
 ### JSON representation
 
@@ -27,12 +27,12 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "1": "String",
-  "2": "String",
-  "3": "String",
-  "4": "String",
-  "5": "String",
-  "6": "String"
+  "category1": "String",
+  "category2": "String",
+  "category3": "String",
+  "category4": "String",
+  "category5": "String",
+  "category6": "String"
 }
 
 ```
