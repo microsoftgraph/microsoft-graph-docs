@@ -14,7 +14,7 @@ This method does **not** support the [OData Query Parameters](http://developer.m
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer &lt;token&gt; *Required* |
 
 ## Request body
 Do not supply a request body for this method.

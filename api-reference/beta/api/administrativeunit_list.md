@@ -2,7 +2,7 @@
 
 Retrieve a list of [administrativeUnit](../resources/administrativeunit.md) objects.
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
+One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

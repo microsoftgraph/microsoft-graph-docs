@@ -4,6 +4,15 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## April 2017
 
+### Admininistrative units property changes
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Change|Beta|Changed roleMemberInfo property type to [identity](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/identity) for [scopedRoleMembership](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/scopedrolemembership) entity |
+|Change|Beta|Changed navigation property scopedAdministratorOf to scopedRoleMemberOf for [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user) entity |
+|Change|Beta|Changed navigation property scopedAdministrators to scopedRoleMembers for [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit) entity |
+|Change|Beta|Changed navigation property scopedAdministrators to scopedMembers for [directoryRole](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/directoryrole) entity |
+
 |**Change type**|**Version**|**Description**| 
 |:-------------|:-----------|:--------------|
 |Change|Beta|Added **HiddenMembership** as an additional value for the visibility property to the [Group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) entity |
