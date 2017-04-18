@@ -17,6 +17,7 @@ GET /me/drive/root/children
 GET /me/drive/items/{item-id}/children
 GET /me/drive/root:/{item-path}:/children
 GET /drives/{drive-id}/items/{item-id}/children
+GET /groups/{group-id}/drive/root/children
 GET /groups/{group-id}/drive/items/{item-id}
 ```
 
