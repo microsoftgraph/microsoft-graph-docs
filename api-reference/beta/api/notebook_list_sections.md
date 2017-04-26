@@ -3,20 +3,20 @@
 Retrieve a list of [section](../resources/section.md) objects from the specified notebook.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
-Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All 
+Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/notes/notebooks/{id}/sections
-GET /users/{id | userPrincipalName}/notes/notebooks/{id}/sections
-GET /groups/{id}/notes/notebooks/{id}/sections
+GET /me/onenote/notebooks/{id}/sections
+GET /users/{id | userPrincipalName}/onenote/notebooks/{id}/sections
+GET /groups/{id}/onenote/notebooks/{id}/sections
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 The default sort order is `name asc`.
 
-The default query expands `parentNotebook` and selects its `id`, `name`, and `self` properties. Valid `expand` values for sections are `parentNotebook` and `parentSectionGroup`.
+The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for sections are `parentNotebook` and `parentSectionGroup`.
 
 
 ## Request headers
@@ -37,14 +37,14 @@ Here is an example of the request.
   "name": "get_sections"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/notes/notebooks/{id}/sections
+GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sections
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.section",
+  "@odata.type": "microsoft.graph.onenoteSection",
   "isCollection": true
 } -->
 ```http
@@ -57,15 +57,19 @@ Content-length: 345
     {
       "isDefault": true,
       "pagesUrl": "pagesUrl-value",
-      "name": "name-value",
-      "createdBy": "createdBy-value",
-      "createdByIdentity": {
+      "displayName": "name-value",
+      "createdBy": {
         "user": {
           "id": "id-value",
           "displayName": "displayName-value"
         }
       },
-      "lastModifiedBy": "lastModifiedBy-value"
+      "lastModifiedBy": {
+        "user": {
+          "id": "id-value",
+          "displayName": "displayName-value"
+        }
+      }
     }
   ]
 }

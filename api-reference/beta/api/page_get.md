@@ -7,7 +7,7 @@ Retrieve the properties and relationships of a [page](../resources/page.md) obje
 Access a page's metadata by page identifier:
 
 ```
-GET /me/notes/pages/{id}
+GET /me/onenote/pages/{id}
 ```
 
 **Getting page content**
@@ -15,21 +15,21 @@ GET /me/notes/pages/{id}
 You can use the page's `content` endpoint to get the HTML content of a page:
 
 ```
-GET /me/notes/pages/{id}/content[?includeIDs=true]
-GET /me/notes/pages/{id}/$value[?includeIDs=true]
+GET /me/onenote/pages/{id}/content[?includeIDs=true]
+GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 ```
 
 The `includeIDs=true` query option is used to [update pages](../api/page_update.md).
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
-Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
+Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/notes/pages/{id}
-GET /users/{id | userPrincipalName}/notes/pages/{id}
-GET /groups/{id}/notes/pages/{id}
+GET /me/onenote/pages/{id}
+GET /users/{id | userPrincipalName}/onenote/pages/{id}
+GET /groups/{id}/onenote/pages/{id}
 ```
 ## Optional query parameters
 This method supports the `select` and `expand` [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and the [page](../re
 Here is an example of the request.
  <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/notes/pages/{id}
+GET https://graph.microsoft.com/beta/me/onenote/pages/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
@@ -74,7 +74,7 @@ Content-length: 312
   },
   "contentUrl": "contentUrl-value",
   "content": "content-value",
-  "lastModifiedTime": "2016-10-19T10:37:00Z"
+  "lastModifiedDateTime": "2016-10-19T10:37:00Z"
 }
 ```
 

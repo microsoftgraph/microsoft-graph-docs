@@ -12,7 +12,7 @@ Here is a JSON representation of the resource.
     "parentNotebook",
     "parentSection"
   ],
-  "@odata.type": "microsoft.graph.page"
+  "@odata.type": "microsoft.graph.onenotePage"
 }-->
 
 ```json
@@ -20,9 +20,9 @@ Here is a JSON representation of the resource.
   "content": "stream",
   "contentUrl": "string",
   "createdByAppId": "string",
-  "createdTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
   "id": "string (identifier)",
-  "lastModifiedTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
   "level": 1024,
   "links": {"@odata.type": "microsoft.graph.pageLinks"},
   "order": 1024,
@@ -37,9 +37,9 @@ Here is a JSON representation of the resource.
 |content|Stream|The page's HTML content.|
 |contentUrl|String|The URL for the page's HTML content.  Read-only.|
 |createdByAppId|String|The unique identifier of the application that created the page. Read-only.|
-|createdTime|DateTimeOffset|The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|createdDateTime|DateTimeOffset|The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |id|String|The unique identifier of the page.  Read-only.|
-|lastModifiedTime|DateTimeOffset|The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |level|Int32|The indentation level of the page. Read-only.|
 |links|[PageLinks](pagelinks.md)|Links for opening the page. The `oneNoteClientURL` link opens the page in the OneNote native client if it 's installed. The `oneNoteWebUrl` link opens the page in OneNote Online. Read-only.|
 |order|Int32|The order of the page within its parent section. Read-only.|

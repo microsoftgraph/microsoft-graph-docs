@@ -3,13 +3,13 @@
 Retrieve the binary data of a file or image [resource](../resources/resource.md) object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
-Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
+Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/notes/resources/{id}/content
-GET /users/{id | userPrincipalName}/notes/resources/{id}/content
-GET /groups/{id}/notes/resources/{id}/content
+GET /me/onenote/resources/{id}/content
+GET /users/{id | userPrincipalName}/onenote/resources/{id}/content
+GET /groups/{id}/onenote/resources/{id}/content
 ```
 
 ## Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "get_resource"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/notes/resources/{id}/content
+GET https://graph.microsoft.com/beta/me/onenote/resources/{id}/content
 ```
 ##### Response
 Here is an example of the response.
@@ -48,7 +48,7 @@ HTTP/1.1 200 OK
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.resource"
+  "@odata.type": "microsoft.graph.onenoteResource"
 } -->
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
