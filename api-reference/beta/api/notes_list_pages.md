@@ -3,20 +3,20 @@
 Retrieve a list of [page](../resources/page.md) objects.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
-Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
+Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/notes/pages
-GET /users/{id | userPrincipalName}/notes/pages
-GET /groups/{id}/notes/pages
+GET /me/onenote/pages
+GET /users/{id | userPrincipalName}/onenote/pages
+GET /groups/{id}/onenote/pages
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 The default query for pages returns the top 20 pages ordered by `lastModifiedTime desc`. If the default query returns more than 20 pages, the response contains an `@odata.nextLink` that you can use to page through the result set. The maximum number of pages returned for a `top` request is 100.
 
-The default response expands `parentSection` and selects the section's `id`, `name`, and `self` properties. Valid `expand` values for pages are `parentNotebook` and `parentSection`.
+The default response expands `parentSection` and selects the section's `id`, `displayName`, and `self` properties. Valid `expand` values for pages are `parentNotebook` and `parentSection`.
 
 ## Request headers
 | Name       | Type | Description|
@@ -33,7 +33,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 Here is an example of the request.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/notes/pages
+GET https://graph.microsoft.com/beta/me/onenote/pages
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
@@ -58,7 +58,7 @@ Content-length: 393
       },
       "contentUrl": "contentUrl-value",
       "content": "content-value",
-      "lastModifiedTime": "2016-10-19T10:37:00Z"
+      "lastModifiedDateTime": "2016-10-19T10:37:00Z"
     }
   ]
 }

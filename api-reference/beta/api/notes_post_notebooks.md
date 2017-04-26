@@ -3,13 +3,13 @@
 Create a new OneNote [notebook](../resources/notebook.md).
 ## Prerequisites
 One of the following **scopes** is required to execute this API:   
-Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
+Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/notes/notebooks
-POST /users/{id | userPrincipalName}/notes/notebooks
-POST /groups/{id}/notes/notebooks
+POST /me/onenote/notebooks
+POST /users/{id | userPrincipalName}/onenote/notebooks
+POST /groups/{id}/onenote/notebooks
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -34,12 +34,12 @@ Here is an example of the request.
   "name": "create_notebook_from_notes"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/notes/notebooks
+POST https://graph.microsoft.com/beta/me/onenote/notebooks
 Content-type: application/json
 Content-length: 30
 
 {
-  "name": "Notebook name"
+  "displayName": "Notebook name"
 }
 ```
 

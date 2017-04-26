@@ -1,4 +1,4 @@
-# notesOperation resource type
+# onenoteOperation resource type
 
 The status of certain long-running OneNote operations.
 
@@ -11,18 +11,19 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.notesoperation"
+  "@odata.type": "microsoft.graph.onenoteOperation"
 }-->
 
 ```json
 {
   "createdDateTime": "String (timestamp)",
-  "error": {"@odata.type": "microsoft.graph.notesOperationError"},
+  "error": {"@odata.type": "microsoft.graph.onenoteOperationError"},
   "id": "string (identifier)",
   "lastActionDateTime": "String (timestamp)",
   "resourceId": "string",
   "resourceLocation": "string",
-  "status": "string"
+  "status": "string",
+  "percentComplete": "string"
 }
 
 ```
@@ -36,6 +37,7 @@ Here is a JSON representation of the resource.
 |resourceId|string|The resource id.|
 |resourceLocation|string|The resource URI for the object. For example, the resource URI for a copied page or section. |
 |status|string|The current status of the operation: `notstarted`, `running`, `completed`, `failed` |
+|percentComplete|string|The operation percent complete if the operation is still in `running` status
 
 ## Relationships
 None

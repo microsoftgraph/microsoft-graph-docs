@@ -1,4 +1,4 @@
-# notesOperationError resource type
+# onenoteOperationError resource type
 
 An error from a failed OneNote operation.
 
@@ -11,7 +11,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.notesoperationerror"
+  "@odata.type": "microsoft.graph.onenoteOperationError"
 }-->
 
 ```json

@@ -1,59 +1,47 @@
-# notes resource type
+# onenote resource type
 
 The entry point for OneNote resources.
 
 All calls to the OneNote service through the Microsoft Graph API use this service root URL:
 
 ```
-https://graph.microsoft.com/{version}/{location}/notes/ 
+https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
-OneNote support is in preview, so the version is always `beta`. 
+The location can be user notebooks on Office 365 and consumer OneDrive and group notebooks on Office 365. SharePoint site-hosted notebooks is currently not supported. 
 
-Only user and group notebooks on Office 365 are supported. Accessing consumer notebooks on OneDrive or SharePoint site-hosted notebooks is currently not supported. 
-
-**User notebooks** To access personal notebooks on OneDrive for Business, use one of the following URLs:
+**User notebooks** To access personal notebooks on consumer OneDrive or OneDrive for Business, use one of the following URLs:
 
 ```
-https://graph.microsoft.com/beta/me/notes/{notebooks | sections | sectionGroups | pages} 
-https://graph.microsoft.com/beta/users/{userPrincipalName}/notes/{notebooks | sections | sectionGroups | pages} 
-https://graph.microsoft.com/beta/users/{id}/notes/{notebooks | sections | sectionGroups | pages} 
+https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
+https://graph.microsoft.com/{version}/users/{userPrincipalName}/onenote/{notebooks | sections | sectionGroups | pages} 
+https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 
 **Group notebooks** To access notebooks that are owned by a group, use the following service root URL:
 
 ```
-https://graph.microsoft.com/beta/groups/{id}/notes/{notebooks | sections | sectionGroups | pages} 
+https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 
 The following permission scopes provide levels of access to OneNote notebooks. Choosing permission scopes depends both on the location of the notebooks you're targeting and your app's functionality. 
 
-**Scopes for personal notebooks in OneDrive for Business that are owned by the current user**
+**Scopes for personal notebooks in consumer OneDrive or OneDrive for Business that are owned by the current user**
 
-| Scope (enterprise) | Permission in Azure portal | Description |
+| Scope | Permission in Azure portal | Description |
 |:-------|:------|:------|
-| Notes.Create | Create pages in user notebooks (preview) | Can view the titles of your notebooks and sections; create new pages in any location. Cannot view or edit existing pages. |
-| Notes.ReadWrite.CreatedByApp | Limited notebook access (preview) | Can view the titles of your notebooks and sections; create new pages; view and modify pages created by the app. Cannot view or modify pages created by other apps or in password protected sections. |
-| Notes.Read | Read user notebooks (preview) | Can view the contents of your notebooks and sections. Cannot create new pages; modify existing pages; access password protected sections. |
-| Notes.ReadWrite | Read and write user notebooks (preview) | Can view the titles of your notebooks and sections; view and modify all your pages; create new pages. Cannot access password protected sections. |
+| Notes.Create | Create users' OneNote notebooks | Can view the titles of your OneNote notebooks and sections; create new notebooks, sections and pages. |
+| Notes.Read | Read users' OneNote notebooks | Can read your OneNote notebooks. |
+| Notes.ReadWrite | Read and write users' OneNote notebooks | Can read, share and modify your OneNote notebooks. |
 
 **Scopes for personal notebooks shared by other users and group notebooks that the current user can access**
 
-| Scope (enterprise) | Permission in Azure portal | Description |
+| Scope | Permission in Azure portal | Description |
 |:-------|:------|:------|
-| Notes.Read.All | Read all notebooks that the user can access (preview) | Can view the contents of notebooks and sections in all notebooks that the signed-in user has access to. Cannot create new pages; modify existing pages; access password protected sections. |
-| Notes.ReadWrite.All | Read and write notebooks that the user can access (preview) | Can view the titles of notebooks and sections; view and modify all pages; create new pages in all notebooks that the signed-in user has access to. Cannot access password protected sections. |
+| Notes.Read.All | Read all OneNote notebooks that the user can access | Can read all the OneNote notebooks that the signed-in user has access to. |
+| Notes.ReadWrite.All | Read and write all OneNote notebooks that the user can access | Can read, share and modify all the OneNote notebooks that the signed-in user has access to. |
 
 **Note:** Accessing SharePoint site notebooks through the Graph API is currently not supported.
-
-**Scopes for groups**
-
-If you're accessing group notebooks, you'll need a Groups permission scope to get the group ID. Currently, these permissions require administrator rights.
-
-| Scope (enterprise) | Permission in Azure portal | Description |
-|:-------|:------|:------|
-| Group.Read.All | Read all groups | Can read all group properties and memberships; read group calendar and conversations on public groups and groups the signed in user is a member of. |
-| Group.ReadWrite.All | Read and write all groups | Can create groups on behalf of the signed-in user and read all group properties and memberships; update group properties and memberships for groups the signed-in user owns; read and write group calendar and conversations on public groups and groups the signed-in user is a member of. |
 
 <!-- {
   "blockType": "resource",

@@ -3,18 +3,18 @@
 Retrieve the properties and relationships of a [section](../resources/section.md) object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
-Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All 
+Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/notes/sections/{id}
-GET /users/{id | userPrincipalName}/notes/sections/{id}
-GET /groups/{id}/notes/sections/{id}
+GET /me/onenote/sections/{id}
+GET /users/{id | userPrincipalName}/onenote/sections/{id}
+GET /groups/{id}/onenote/sections/{id}
 ```
 ## Optional query parameters
 This method supports the `select` and `expand` [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
-The default query expands `parentNotebook` and selects its `id`, `name`, and `self` properties. Valid `expand` values for sections are `parentNotebook` and `parentSectionGroup`.
+The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for sections are `parentNotebook` and `parentSectionGroup`.
 
 ## Request headers
 | Name       | Type | Description|
@@ -34,14 +34,14 @@ Here is an example of the request.
   "name": "get_section"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/notes/sections/{id}
+GET https://graph.microsoft.com/beta/me/onenote/sections/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.section"
+  "@odata.type": "microsoft.graph.onenoteSection"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -51,15 +51,19 @@ Content-length: 272
 {
   "isDefault": true,
   "pagesUrl": "pagesUrl-value",
-  "name": "name-value",
-  "createdBy": "createdBy-value",
-  "createdByIdentity": {
+  "displayName": "name-value",
+  "createdBy": {
     "user": {
       "id": "id-value",
       "displayName": "displayName-value"
     }
   },
-  "lastModifiedBy": "lastModifiedBy-value"
+  "lastModifiedBy": {
+    "user": {
+      "id": "id-value",
+      "displayName": "displayName-value"
+    }
+  }
 }
 ```
 
