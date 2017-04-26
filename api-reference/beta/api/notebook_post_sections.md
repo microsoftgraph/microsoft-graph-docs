@@ -3,13 +3,13 @@
 Create a new [section](../resources/section.md) in the specified notebook.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:   
-Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All 
+Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/notes/notebooks/{id}/sections
-POST /users/{id | userPrincipalName}/notes/notebooks/{id}/sections
-POST /groups/{id}/notes/notebooks/{id}/sections
+POST /me/onenote/notebooks/{id}/sections
+POST /users/{id | userPrincipalName}/onenote/notebooks/{id}/sections
+POST /groups/{id}/onenote/notebooks/{id}/sections
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -33,12 +33,12 @@ Here is an example of the request.
   "name": "create_section_from_notebook"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/notes/notebooks/{id}/sections
+POST https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sections
 Content-type: application/json
 Content-length: 27
 
 {
-  "name": "Section name"
+  "displayName": "Section name"
 }
 ```
 ##### Response
@@ -46,7 +46,7 @@ Here is an example of the response. Note: The response object shown here is trun
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.section"
+  "@odata.type": "microsoft.graph.onenoteSection"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -56,15 +56,19 @@ Content-length: 272
 {
   "isDefault": true,
   "pagesUrl": "pagesUrl-value",
-  "name": "name-value",
-  "createdBy": "createdBy-value",
-  "createdByIdentity": {
+  "displayName": "name-value",
+  "createdBy": {
     "user": {
       "id": "id-value",
       "displayName": "displayName-value"
     }
   },
-  "lastModifiedBy": "lastModifiedBy-value"
+  "lastModifiedBy": {
+    "user": {
+      "id": "id-value",
+      "displayName": "displayName-value"
+    }
+  }
 }
 ```
 

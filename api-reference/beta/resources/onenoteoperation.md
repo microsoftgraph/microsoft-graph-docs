@@ -1,4 +1,4 @@
-# notesOperation resource type
+# onenoteOperation resource type
 
 The status of certain long-running OneNote operations.
 
@@ -11,18 +11,19 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.notesoperation"
+  "@odata.type": "microsoft.graph.onenoteOperation"
 }-->
 
 ```json
 {
   "createdDateTime": "String (timestamp)",
-  "error": {"@odata.type": "microsoft.graph.notesOperationError"},
+  "error": {"@odata.type": "microsoft.graph.onenoteOperationError"},
   "id": "string (identifier)",
   "lastActionDateTime": "String (timestamp)",
   "resourceId": "string",
   "resourceLocation": "string",
-  "status": "string"
+  "status": "string",
+  "percentComplete": "string"
 }
 
 ```
@@ -30,12 +31,13 @@ Here is a JSON representation of the resource.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |The start time of the operation.|
-|error|[notesOperationError](notesoperationerror.md)|The error returned by the operation.|
+|error|[onenoteOperationError](oennoteoperationerror.md)|The error returned by the operation.|
 |id|string|The operation id. Read-only.|
 |lastActionDateTime| DateTimeOffset |The time of the last action of the operation.|
 |resourceId|string|The resource id.|
 |resourceLocation|string|The resource URI for the object. For example, the resource URI for a copied page or section. |
 |status|string|The current status of the operation: `notstarted`, `running`, `completed`, `failed` |
+|percentComplete|string|The operation percent complete if the operation is still in `running` status
 
 ## Relationships
 None
@@ -45,14 +47,14 @@ None
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get operation](../api/notesoperation_get.md) | [NotesOperation](notesoperation.md) |Get the status of the operation. |
+|[Get operation](../api/onenoteoperation_get.md) | [onenoteOperation](onenoteoperation.md) |Get the status of the operation. |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "notesOperation resource",
+  "description": "onenoteOperation resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

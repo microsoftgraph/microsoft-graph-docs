@@ -19,12 +19,12 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "createdBy": "string",
-  "createdTime": "String (timestamp)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
   "id": "string (identifier)",
-  "lastModifiedBy": "string",
-  "lastModifiedTime": "String (timestamp)",
-  "name": "string",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "displayName": "string",
   "sectionGroupsUrl": "string",
   "sectionsUrl": "string",
   "self": "string"
@@ -34,12 +34,12 @@ Here is a JSON representation of the resource.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdBy|String|The user who created the section group. Read-only.|
-|createdTime|DateTimeOffset|The date and time when the section group was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|createdBy|[identitySet](identityset.md)|Identity of the user, device, and application which created the item. Read-only.|
+|createdDateTime|DateTimeOffset|The date and time when the section group was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |id|String|The unique identifier of the section group. Read-only.|
-|lastModifiedBy|String|The user who last modified the section group. Read-only.| 
-|lastModifiedTime|DateTimeOffset|The date and time when the section group was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
-|name|String|The name of the section group.|
+|lastModifiedBy|[identitySet](identityset.md)|Identity of the user, device, and application which created the item. Read-only.| 
+|lastModifiedDateTime|DateTimeOffset|The date and time when the section group was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|displayName|String|The name of the section group.|
 |sectionGroupsUrl|String|The URL for the `sectionGroups` navigation property, which returns all the section groups in the section group. Read-only.| 
 |sectionsUrl|String|The URL for the `sections` navigation property, which returns all the sections in the section group. Read-only.|
 |self|String|The endpoint where you can get details about the section group. Read-only.|

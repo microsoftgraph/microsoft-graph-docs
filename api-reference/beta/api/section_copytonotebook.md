@@ -4,13 +4,13 @@ Copies a section to a specific notebook.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:   
-Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All 
+Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/notes/sections/{id}/copyToNotebook
-POST /users/{id | userPrincipalName}/notes/sections/{id}/copyToNotebook
-POST /groups/{id}/notes/sections/{id}/copyToNotebook
+POST /me/onenote/sections/{id}/copyToNotebook
+POST /users/{id | userPrincipalName}/onenote/sections/{id}/copyToNotebook
+POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -28,7 +28,7 @@ In the request body, provide a JSON object that contains the parameters that you
 |renameAs|String|The name of the copy. Defaults to the name of the existing item. |
 
 ## Response
-If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](notesoperation_get.md).
+If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation_get.md).
 
 ## Example
 Here is an example of how to call this API.
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "section_copytonotebook"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/notes/sections/{id}/copyToNotebook
+POST https://graph.microsoft.com/beta/me/onenote/sections/{id}/copyToNotebook
 Content-type: application/json
 Content-length: 84
 
@@ -55,7 +55,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.copystatusmodel"
+  "@odata.type": "microsoft.graph.onenoteOperation"
 } -->
 ```http
 HTTP/1.1 202 Accepted

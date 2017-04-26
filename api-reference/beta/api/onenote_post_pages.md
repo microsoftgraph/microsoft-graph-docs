@@ -2,19 +2,19 @@
 
 Create a new OneNote page in the default section of the default notebook.
 
-To create a page in a different section in the default notebook, you can use the `sectionName` query parameter.  Example: `../notes/pages?sectionName=My%20section`
+To create a page in a different section in the default notebook, you can use the `sectionName` query parameter.  Example: `../onenote/pages?sectionName=My%20section`
 
-The `POST /notes/pages` operation is used only to create pages in the current user's default notebook. If you're targeting other notebooks, you can [create pages in a specified section](../api/section_post_pages.md).           
+The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook. If you're targeting other notebooks, you can [create pages in a specified section](../api/section_post_pages.md).           
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
-Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
+Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /me/notes/pages
-POST /users/{id | userPrincipalName}/notes/pages
-POST /groups/{id}/notes/pages
+POST /me/onenote/pages
+POST /users/{id | userPrincipalName}/onenote/pages
+POST /groups/{id}/onenote/pages
 ```
 
 ## Request headers  
@@ -35,11 +35,11 @@ If successful, this method returns a `201 Created` response code and the new [pa
 ##### Request
 Here is an example of the request.
 
-In the `../notes/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook. Example: `../notes/pages?sectionName=My%20section`. If the section doesn't exist (or was renamed), the API will create a new section.
+In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook. Example: `../onenote/pages?sectionName=My%20section`. If the section doesn't exist (or was renamed), the API will create a new section.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/me/notes/pages
+POST https://graph.microsoft.com/beta/me/onenote/pages
 Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
@@ -98,7 +98,7 @@ Content-length: 312
   },
   "contentUrl": "contentUrl-value",
   "content": "content-value",
-  "lastModifiedTime": "2016-10-19T10:37:00Z"
+  "lastModifiedDateTime": "2016-10-19T10:37:00Z"
 }
 ```
 

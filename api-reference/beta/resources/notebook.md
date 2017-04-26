@@ -17,15 +17,15 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "createdBy": "string",
-  "createdTime": "String (timestamp)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
   "id": "string (identifier)",
   "isDefault": true,
   "isShared": true,
-  "lastModifiedBy": "string",
-  "lastModifiedTime": "String (timestamp)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
   "links": {"@odata.type": "microsoft.graph.notebookLinks"},
-  "name": "string",
+  "displayName": "string",
   "sectionGroupsUrl": "string",
   "sectionsUrl": "string",
   "self": "string",
@@ -36,15 +36,15 @@ Here is a JSON representation of the resource
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdBy|String|The user who created the notebook. Read-only.|
-|createdTime|DateTimeOffset|The date and time when the notebook was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|createdBy|[identitySet](identityset.md)|Identity of the user, device, and application which created the item. Read-only.|
+|createdDateTime|DateTimeOffset|The date and time when the notebook was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |id|String|The unique identifier of the notebook. Read-only.|
 |isDefault|Boolean|Indicates whether this is the user's default notebook. Read-only.|
 |isShared|Boolean|Indicates whether the notebook is shared. If true, the contents of the notebook can be seen by people other than the owner. Read-only.|
-|lastModifiedBy|String|The user who last modified the notebook. Read-only.|
-|lastModifiedTime|DateTimeOffset|The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|lastModifiedBy|[identitySet](identityset.md)|Identity of the user, device, and application which created the item. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |links|[NotebookLinks](notebooklinks.md)|Links for opening the notebook. The `oneNoteClientURL` link opens the notebook in the OneNote native client if it's installed. The `oneNoteWebURL` link opens the notebook in OneNote Online.|
-|name|String|The name of the notebook.|
+|displayName|String|The name of the notebook.|
 |sectionGroupsUrl|String|The URL for the `sectionGroups` navigation property, which returns all the section groups in the notebook. Read-only.|
 |sectionsUrl|String|The URL for the `sections` navigation property, which returns all the sections in the notebook. Read-only.|
 |self|String|The endpoint where you can get details about the notebook. Read-only.|
