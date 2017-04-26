@@ -5,13 +5,13 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:   
-Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All 
+Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/notes/sections/{id}/copyToSectionGroup
-POST /users/{id | userPrincipalName}/notes/sections/{id}/copyToSectionGroup
-POST /groups/{id}/notes/sections/{id}/copyToSectionGroup
+POST /me/onenote/sections/{id}/copyToSectionGroup
+POST /users/{id | userPrincipalName}/onenote/sections/{id}/copyToSectionGroup
+POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -44,7 +44,7 @@ Here is an example of the request.
   "name": "section_copytosectiongroup"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/notes/sections/{id}/copyToSectionGroup
+POST https://graph.microsoft.com/beta/me/onenote/sections/{id}/copyToSectionGroup
 Content-type: application/json
 Content-length: 84
 
@@ -60,7 +60,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.copystatusmodel"
+  "@odata.type": "microsoft.graph.onenoteOperation"
 } -->
 ```http
 HTTP/1.1 202 Accepted

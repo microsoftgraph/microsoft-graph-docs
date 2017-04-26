@@ -3,13 +3,13 @@
 Retrieve the properties and relationships of a [sectionGroup](../resources/sectiongroup.md) object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
-Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
+Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/notes/sectionGroups/{id}
-GET /users/{id | userPrincipalName}/notes/sectionGroups/{id}
-GET /groups/{id}/notes/sectionGroups/{id}
+GET /me/onenote/sectionGroups/{id}
+GET /users/{id | userPrincipalName}/onenote/sectionGroups/{id}
+GET /groups/{id}/onenote/sectionGroups/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_sectiongroup"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/notes/sectionGroups/{id}
+GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
@@ -51,15 +51,19 @@ Content-length: 305
 {
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
-  "name": "name-value",
-  "createdBy": "createdBy-value",
-  "createdByIdentity": {
+  "displayName": "name-value",  
+  "createdBy": {
     "user": {
       "id": "id-value",
       "displayName": "displayName-value"
     }
   },
-  "lastModifiedBy": "lastModifiedBy-value"
+  "lastModifiedBy": {
+    "user": {
+      "id": "id-value",
+      "displayName": "displayName-value"
+    }
+  }
 }
 ```
 

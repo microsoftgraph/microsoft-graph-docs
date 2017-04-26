@@ -3,13 +3,13 @@
 Update the content of a OneNote page.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:   
-Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All 
+Notes.ReadWrite, or Notes.ReadWrite.All 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/notes/pages/{id}/content
-PATCH /users/{id | userPrincipalName}/notes/pages/{id}/content
-PATCH /groups/{id}/notes/pages/{id}/content
+PATCH /me/onenote/pages/{id}/content
+PATCH /users/{id | userPrincipalName}/onenote/pages/{id}/content
+PATCH /groups/{id}/onenote/pages/{id}/content
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "update_page"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/notes/pages/{id}/content
+PATCH https://graph.microsoft.com/beta/me/onenote/pages/{id}/content
 Content-type: application/json
 Content-length: 312
 
@@ -53,7 +53,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.page"
+  "@odata.type": "microsoft.graph.onenotePage"
 } -->
 ```http
 HTTP/1.1 204 No Content

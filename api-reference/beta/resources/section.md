@@ -13,18 +13,19 @@ Here is a JSON representation of the resource.
     "parentNotebook",
     "parentSectionGroup"
   ],
-  "@odata.type": "microsoft.graph.section"
+  "@odata.type": "microsoft.graph.onenoteSection"
 }-->
 
 ```json
 {
-  "createdBy": "string",
-  "createdTime": "String (timestamp)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
   "id": "string (identifier)",
   "isDefault": true,
-  "lastModifiedBy": "string",
-  "lastModifiedTime": "String (timestamp)",
-  "name": "string",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "links": {"@odata.type": "microsoft.graph.sectionLinks"},
+  "displayName": "string",
   "pagesUrl": "string",
   "self": "string"
 }
@@ -33,13 +34,14 @@ Here is a JSON representation of the resource.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdBy|String|The user who created the section. Read-only.|
-|createdTime|DateTimeOffset|The date and time when the section was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|createdBy|[identitySet](identityset.md)|Identity of the user, device, and application which created the item. Read-only.|
+|createdDateTime|DateTimeOffset|The date and time when the section was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |id|String|The unique identifier of the section.  Read-only.|
 |isDefault|Boolean|Indicates whether this is the user's default section. Read-only.|
-|lastModifiedBy|String|The user who last modified the section. Read-only.|
-|lastModifiedTime|DateTimeOffset|The date and time when the section was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
-|name|String|The name of the section. |
+|lastModifiedBy|[identitySet](identityset.md)|Identity of the user, device, and application which created the item. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the section was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|links|[SectionLinks](sectionlinks.md)|Links for opening the section. The `oneNoteClientURL` link opens the section in the OneNote native client if it's installed. The `oneNoteWebURL` link opens the section in OneNote Online.|
+|displayName|String|The name of the section. |
 |pagesUrl|String|The `pages` endpoint where you can get details for all the pages in the section. Read-only.|
 |self|String|The endpoint where you can get details about the section. Read-only.|
 

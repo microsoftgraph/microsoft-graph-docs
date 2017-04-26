@@ -3,13 +3,13 @@
 Retrieve a list of [notebook](../resources/notebook.md) objects.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
-Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All 
+Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/notes/notebooks
-GET /users/{id | userPrincipalName}/notes/notebooks
-GET /groups/{id}/notes/notebooks
+GET /me/onenote/notebooks
+GET /users/{id | userPrincipalName}/onenote/notebooks
+GET /groups/{id}/onenote/notebooks
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "get_notebooks"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/notes/notebooks
+GET https://graph.microsoft.com/beta/me/onenote/notebooks
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
