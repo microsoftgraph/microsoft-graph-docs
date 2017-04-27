@@ -1,4 +1,4 @@
-# user resource type
+﻿# user resource type
 
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
@@ -103,6 +103,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups and directory roles that the user is a member of. Read-only. Nullable.|
 |messages|[Message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
+|onenote|[OneNote](onenote.md)| Read-only.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
@@ -133,6 +134,7 @@ Here is a JSON representation of the resource
     "memberOf",
     "messages",
     "oauth2PermissionGrants",
+    "onenote",
     "ownedDevices",
     "ownedObjects",
     "photo",
