@@ -3,13 +3,13 @@
 Create a new [page](../resources/page.md) in the specified section.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:   
-Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All 
+Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/notes/sections/{id}/pages
-POST /users/{id | userPrincipalName}/notes/sections/{id}/pages
-POST /groups/{id}/notes/sections/{id}/pages
+POST /me/oennote/sections/{id}/pages
+POST /users/{id | userPrincipalName}/onenote/sections/{id}/pages
+POST /groups/{id}/onenote/sections/{id}/pages
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -31,7 +31,7 @@ Here is an example of the request.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/me/notes/sections/{id}/pages
+POST https://graph.microsoft.com/beta/me/onenote/sections/{id}/pages
 Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
@@ -89,7 +89,7 @@ Content-length: 312
     }
   },
   "contentUrl": "contentUrl-value",
-  "lastModifiedTime": "2016-10-19T10:37:00Z"
+  "lastModifiedDateTime": "2016-10-19T10:37:00Z"
 }
 ```
 

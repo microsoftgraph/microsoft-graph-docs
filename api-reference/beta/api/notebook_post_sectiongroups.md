@@ -3,13 +3,13 @@
 Create a new [section group](../resources/sectiongroup.md) in the specified notebook.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:   
-Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
+Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/notes/notebooks/{id}/sectionGroups
-POST /users/{id | userPrincipalName}/notes/notebooks/{id}/sectionGroups
-POST /groups/{id}/notes/notebooks/{id}/sectionGroups
+POST /me/onenote/notebooks/{id}/sectionGroups
+POST /users/{id | userPrincipalName}/onenote/notebooks/{id}/sectionGroups
+POST /groups/{id}/onenote/notebooks/{id}/sectionGroups
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -33,12 +33,12 @@ Here is an example of the request.
   "name": "create_sectiongroup_from_notebook"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/notes/notebooks/{id}/sectionGroups
+POST https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sectionGroups
 Content-type: application/json
 Content-length: 30
 
 {
-  "name": "Section group name"
+  "displayName": "Section group name"
 }
 ```
 
@@ -57,15 +57,17 @@ Content-length: 305
 {
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
-  "name": "name-value",
-  "createdBy": "createdBy-value",
-  "createdByIdentity": {
+  "displayName": "name-value",
+  "createdBy": {
     "user": {
       "id": "id-value",
       "displayName": "displayName-value"
     }
   },
-  "lastModifiedBy": "lastModifiedBy-value"
+  "lastModifiedBy": {
+      "id": "id-value",
+      "displayName": "displayName-value"
+    }
 }
 ```
 

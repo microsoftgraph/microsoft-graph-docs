@@ -1,4 +1,4 @@
-# user resource type
+﻿# user resource type
 
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
@@ -124,7 +124,7 @@ This resource supports [delta query](../../../concepts/delta_query_overview.md) 
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable.|
 |messages|[Message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
-|notes|[Notes](notes.md)| Read-only.|
+|onenote|[OneNote](onenote.md)| Read-only.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
 |people|[Person](person.md) collection| Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.|
@@ -162,6 +162,7 @@ Here is a JSON representation of the resource
     "manager",
     "memberOf",
     "messages",
+    "onenote",
     "oauth2PermissionGrants",
     "ownedDevices",
     "ownedObjects",

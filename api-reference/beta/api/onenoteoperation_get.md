@@ -1,4 +1,4 @@
-# Get notesOperation
+# Get onenoteOperation
 
 
 Get the status of a long-running OneNote operation. This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.   
@@ -11,13 +11,13 @@ If the status is `failed`, the error and `@api.diagnostics` properties provide e
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
-Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All  
+Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/notes/operations/{id}
-GET /users/{id | userPrincipalName}/notes/operations/{id}
-GET /groups/{id}/notes/operations/{id}
+GET /me/onenote/operations/{id}
+GET /users/{id | userPrincipalName}/onenote/operations/{id}
+GET /groups/{id}/onenote/operations/{id}
 ```
 ## Optional query parameters
 None.
@@ -31,23 +31,23 @@ None.
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and [notesOperation](../resources/notesoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [onenoteOperation](../resources/onenoteoperation.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_notesoperation"
+  "name": "get_onenoteoperation"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/notes/operations/{id}
+GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.notesoperation"
+  "@odata.type": "microsoft.graph.onenoteOperation"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -68,7 +68,7 @@ Content-length: 215
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get notesOperation",
+  "description": "Get onenoteOperation",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

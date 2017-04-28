@@ -3,20 +3,20 @@
 Retrieve a list of [sectionGroup](../resources/sectiongroup.md) objects.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
-Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
+Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/notes/sectionGroups
-GET /users/{id | userPrincipalName}/notes/sectionGroups
-GET /groups/{id}/notes/sectionGroups
+GET /me/onenote/sectionGroups
+GET /users/{id | userPrincipalName}/onenote/sectionGroups
+GET /groups/{id}/onenote/sectionGroups
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 The default sort order is `name asc`.
 
-The default query expands `parentNotebook` and selects its `id`, `name`, and `self` properties. Valid `expand` values for section groups are `sections`, `sectionGroups`, `parentNotebook`, and `parentSectionGroup`.
+The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for section groups are `sections`, `sectionGroups`, `parentNotebook`, and `parentSectionGroup`.
 
 ## Request headers
 | Name       | Type | Description|
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "get_sectiongroups"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/notes/sectionGroups
+GET https://graph.microsoft.com/beta/me/onenote/sectionGroups
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
@@ -56,15 +56,19 @@ Content-length: 378
     {
       "sectionsUrl": "sectionsUrl-value",
       "sectionGroupsUrl": "sectionGroupsUrl-value",
-      "name": "name-value",
-      "createdBy": "createdBy-value",
-      "createdByIdentity": {
+      "displayName": "name-value",      
+      "createdBy": {
         "user": {
           "id": "id-value",
           "displayName": "displayName-value"
         }
       },
-      "lastModifiedBy": "lastModifiedBy-value"
+      "lastModifiedBy": {
+        "user": {
+          "id": "id-value",
+          "displayName": "displayName-value"
+        }
+      }
     }
   ]
 }

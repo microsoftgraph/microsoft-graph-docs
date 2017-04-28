@@ -5,13 +5,13 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:   
-Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All  
+Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/notes/pages/{id}/copyToSection
-POST /users/{id | userPrincipalName}/notes/pages/{id}/copyToSection
-POST /groups/{id}/notes/pages/{id}/copyToSection
+POST /me/onenote/pages/{id}/copyToSection
+POST /users/{id | userPrincipalName}/onenote/pages/{id}/copyToSection
+POST /groups/{id}/onenote/pages/{id}/copyToSection
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -29,7 +29,7 @@ In the request body, provide a JSON object that contains the parameters that you
 
 
 ## Response
-If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](notesoperation_get.md).
+If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation_get.md).
 
 ## Example
 Here is an example of how to call this API.
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "page_copytosection"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/notes/pages/{id}/copyToSection
+POST https://graph.microsoft.com/beta/me/onenote/pages/{id}/copyToSection
 Content-type: application/json
 Content-length: 52
 
@@ -55,7 +55,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.copystatusmodel"
+  "@odata.type": "microsoft.graph.onenoteOperation"
 } -->
 ```http
 HTTP/1.1 202 Accepted
