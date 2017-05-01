@@ -2,13 +2,18 @@
 
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
-## April 2017
+## May 2017
 
 ### Administrative units property changes
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-|Change|Beta| Adminstrative unit APIs will be updated in preview (beta). The first set of changes will be applied on May 3, 2017. The changes include the following property renaming:<br />- **roleMemberInfo** complex type to **identity** complex type for the scopedRoleMembership entity<br />- **scopedAdministratorOf** navigation property to **scopedRoleMemberOf** for the user entity<br />- **scopedAdministrators** navigation property to **scopedRoleMembers** for the administrativeUnit entity<br />- **scopedAdministrators** navigation property to **scopedMembers** for the directoryRole entity |
+|Change|Beta|Changed roleMemberInfo property type to [identity](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/identity) for [scopedRoleMembership](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/scopedrolemembership) entity |
+|Change|Beta|Changed navigation property scopedAdministratorOf to scopedRoleMemberOf for [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user) entity |
+|Change|Beta|Changed navigation property scopedAdministrators to scopedRoleMembers for [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit) entity |
+|Change|Beta|Changed navigation property scopedAdministrators to scopedMembers for [directoryRole](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/directoryrole) entity |
+
+## April 2017
 
 ### Application and servicePrincipal API changes
 

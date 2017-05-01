@@ -1,12 +1,12 @@
-# List scopedAdministrators for a directory role
+# List scopedMembers for a directory role
 
 Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) objects for a directory role.
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
+One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{id}/scopedAdministrators
+GET /directoryroles/{id}/scopedMembers
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -14,7 +14,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <token>. Required.|
+| Authorization  | Bearer &lt;token&gt; *Required* |
 
 ## Request body
 Do not supply a request body for this method.
@@ -25,10 +25,10 @@ If successful, this method returns a `200 OK` response code and collection of [s
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_scopedadministrators_directoryrole"
+  "name": "get_scopedmembers_directoryrole"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/directoryRoles/{id}/scopedAdministrators
+GET https://graph.microsoft.com/beta/directoryRoles/{id}/scopedMembers
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -46,14 +46,14 @@ Content-length: 307
 {
   "value": [
     {
+      "id": "id-value",
       "roleId": "roleId-value",
       "administrativeUnitId": "administrativeUnitId-value",
       "roleMemberInfo": {
         "id": "id-value",
         "displayName": "displayName-value",
         "userPrincipalName": "userPrincipalName-value"
-      },
-      "id": "id-value"
+      }
     }
   ]
 }
@@ -63,7 +63,7 @@ Content-length: 307
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List scopedAdministrators",
+  "description": "List scopedmembers",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
