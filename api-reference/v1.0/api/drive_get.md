@@ -5,12 +5,12 @@ A Drive is the top-level container for a file system.
 Graph API allows you to access the Drive resource for a user's OneDrive or OneDrive for Business, or SharePoint document libraries.
 
 ## Prerequisites
+
 One of the following **scopes** is required to execute this API:
 
-  * Files.Read
-  * Files.ReadWrite
-  * Sites.Read.All
-
+* Files.Read
+* Files.ReadWrite
+* Sites.Read.All
 
 ## Get a user's OneDrive
 
@@ -19,6 +19,7 @@ To access a user's OneDrive or OneDrive for Business, your app should request th
 ### HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/drive
 GET /users/{idOrUserPrincipalName}/drive
@@ -29,19 +30,24 @@ GET /users/{idOrUserPrincipalName}/drive
 To access a [Group's](../resources/group.md) default document library, your app requests the **drive** relationship on the Group.
 
 ### HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{idOrUserPrincipalName}/drive
 ```
 
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and [Drive](../resources/drive.md) resource in the response body.
 
 ## Example
