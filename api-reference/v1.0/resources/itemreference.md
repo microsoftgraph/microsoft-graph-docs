@@ -16,22 +16,28 @@ Here is a JSON representation of the resource
 {
   "driveId": "string",
   "id": "string",
-  "path": "string"
+  "name": "string",
+  "path": "string",
+  "shareId": "string",
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" }
 }
 ```
 
 ## Properties
 
-| Property | Type   | Description                                                                   |
-|:---------|:-------|:------------------------------------------------------------------------------|
-| driveId  | String | Unique identifier of the OneDrive instance that contains the item. Read-only. |
-| id       | String | Unique identifier of the item in the drive. Read-only.            |
-| path     | String | Path that can be used to navigate to the item. Read-only.                     |
+| Property      | Type                              | Description                                                                                                |
+| :------------ | :-------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| driveId       | String                            | Unique identifier of the OneDrive instance that contains the item. Read-only.                              |
+| id            | String                            | Unique identifier of the item in the drive. Read-only.                                                     |
+| name          | String                            | The name of the item being referenced. Read-only.                                                          |
+| path          | String                            | Path that can be used to navigate to the item. Read-only.                                                  |
+| shareId       | String                            | A unique identifier for a shared resource that can be accessed via the [Shares](../api/shares_get.md) API. |
+| sharepointIds | [sharepointIds](sharepointids.md) | Returns identifiers useful for SharePoint REST compatibility. Read-only.                                   |
 
 
 ## Remarks
 
-To address an item from an **ItemReference** resource, construct a URL of the format:
+To address a **driveItem** from an **itemReference** resource, construct a URL of the format:
 
 ```http
 GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}

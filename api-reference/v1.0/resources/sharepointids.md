@@ -4,38 +4,41 @@ The **SharePointIds** resource groups the various identifiers for an item stored
 
 **Note:** items returned from OneDrive personal will not include a **SharePointIds** facet.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],
+  "optionalProperties": [ "listId", "listItemId", "listItemUniqueId", "siteId", "siteUrl", "webId" ],
   "@odata.type": "microsoft.graph.sharepointIds"
 }-->
+
 ```json
 {
     "listId": "string",
     "listItemId": "string",
     "listItemUniqueId": "string",
     "siteId": "string",
+    "siteUrl": "url",
     "webId": "string"
 }
 ```
 
-### Properties
+## Properties
 
-| Property          | Type    | Description                                                          |
-|:------------------|:--------|:---------------------------------------------------------------------|
-| listId            | string  | The unique identifier for the item's list in SharePoint.                          |
-| listItemId        | string  | An integer identifier for the item within the containing list.                    |
-| listItemUniqueId  | string  | The unique identifier for the item within OneDrive for Busienss or a SharePoint site. |
-| siteId            | string  | The unique identifier for the item's site collection. |
-| webId             | string  | The unique identifier for the item's site.                          |
+| Property         | Type         | Description                                                                                  |
+| :--------------- | :----------- | :------------------------------------------------------------------------------------------- |
+| listId           | string       | The unique identifier (guid) for the item's list in SharePoint.                              |
+| listItemId       | string       | An integer identifier for the item within the containing list.                               |
+| listItemUniqueId | string       | The unique identifier (guid) for the item within OneDrive for Busienss or a SharePoint site. |
+| siteId           | string       | The unique identifier (guid) for the item's site collection (SPSite).                        |
+| siteUrl          | string (url) | The SharePoint URL for the site that contains the item.                                      |
+| webId            | string       | The unique identifier (guid) for the item's site (SPWeb).                                    |
 
-## Remarks 
+## Remarks
 
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+For more information about the facets on a **driveItem**, see [**driveItem**](driveitem.md).
 
 
 

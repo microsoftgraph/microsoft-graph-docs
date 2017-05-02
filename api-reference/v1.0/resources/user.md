@@ -2,8 +2,13 @@
 
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
+<<<<<<< HEAD
+=======
+This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+>>>>>>> ff9e9d68... Update resources for v1.0
 
 ## Methods
+
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get user](../api/user_get.md) | [user](user.md) |Read properties and relationships of user object.|
@@ -41,7 +46,8 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |aboutMe|String|A freeform text entry field for the user to describe themselves.|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |
@@ -86,6 +92,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
 
 ## Relationships
+
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |calendar|[Calendar](calendar.md)|The user's primary calendar. Read-only.|
@@ -97,6 +104,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects that were created by the user. Read-only. Nullable.|
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. |
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
+|drives|[drive](drive.md) collection. | A collection of drives available for this user. Read-only. |
 |events|[Event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance. |
 |mailFolders|[MailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
@@ -107,7 +115,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
-
+|sites|[site][] collection | A collection of sites available for this user. Read-only. |
 
 ## JSON representation
 
@@ -197,6 +205,7 @@ Here is a JSON representation of the resource
   "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "drive": { "@odata.type": "microsoft.graph.drive" },
+  "drives": [ { "@odata.type": "microsoft.graph.drive" } ],
   "events": [ { "@odata.type": "microsoft.graph.event" } ],
   "inferenceClassification": { "@odata.type": "microsoft.graph.inferenceClassification" },
   "mailFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
@@ -205,7 +214,8 @@ Here is a JSON representation of the resource
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "sites": [ {"@odata.type": "microsoft.graph.site" }]
 }
 
 ```
