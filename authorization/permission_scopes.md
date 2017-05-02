@@ -68,11 +68,8 @@ The following tables list the Microsoft Graph permission scopes and explains the
 | _Contacts.ReadWrite.Shared_ |    Read and write user and shared contacts | Allows the app to create, read, update and delete contacts that the user has permissions to, including the user's own and shared contacts.|
 | _Files.Read_ |    Read user files and files shared with user | Allows the app to read the signed-in user's files and files shared with the user.| 
 | _Files.Read.All_ | Read all files that user can access | Allows the app to read all files the signed-in user can access. |
-| _Files.Read.Selected_ |    Read files that the user selects  | Allows the app to read files that the user selects. The app has access for several hours after the user selects a file. |
 | _Files.ReadWrite_ |   Have full access to user files and files shared with user | Allows the app to read, create, update and delete the signed-in user's files and files shared with the user. |
 | _Files.ReadWrite.All_ | Have full access to all files user can access | Allows the app to read, create, update and delete all files the signed-in user can access. |
-| _Files.ReadWrite.AppFolder_ | Have full access to the application's folder | Allows the app to read, create, update and delete files in the application's folder. |
-| _Files.ReadWrite.Selected_ |    Read and write files that the user selects | Allows the app to read and write files that the user selects. The app has access for several hours after the user selects a file. |
 | _Mail.Read_ |    Read user mail | Allows the app to read email in user mailboxes. |
 | _Mail.Read.Shared_ |    Read user and shared mail | Allows the app to read mail that the user can access, including the user's own and shared mail. |
 | _Mail.ReadWrite_ |    Read and write access to user mail | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail.|
@@ -97,8 +94,6 @@ The following tables list the Microsoft Graph permission scopes and explains the
 | _Device.ReadWrite.All_ | Read and write devices | Allows the app to read and write all device properties without a signed in user. Does not allow device creation, device deletion or update of device alternative security identifiers. |
 | _Directory.Read.All_ | Read directory data | Allows the app to read data in your organization's directory, such as users, groups and apps, without a signed-in user. |
 | _Directory.ReadWrite.All_ | Read and write directory data | Allows the app to read and write data in your organization's directory, such as users, and groups, without a signed-in user. Does not allow user or group deletion. |
-| _Files.Read.All_ | Read all files that user can access | Allows the app to read all files in all site collections without a signed in user. |
-| _Files.ReadWrite.All_ | Have full access to all files user can access | Allows the app to read, create, update and delete all files in all site collections without a signed in user. |
 | _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. Note that not all group API supports access using app-only permissions. See [known issues](../overview/release_notes.md#groups) for examples. |
 | _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. All of these operations can be performed by the app without a signed-in user. Note that not all group API supports access using app-only permissions. See [known issues](../overview/release_notes.md#groups) for examples.|
 | _Mail.Read_       |    Read mail in all mailboxes | Allows the app to read mail in all mailboxes without a signed-in user.|
@@ -177,5 +172,23 @@ The following are some app scenarios using the `User` and `Group` resources and 
 | App wants to discover (find) an Office 365 group. It allows the user to search for a particular group and choose one from the enumerated list to allow the user to join the group.	 | _Group.ReadWrite.All_ | Read and write all groups|
 | App wants to create a group through AAD Graph | 	_Group.ReadWrite.All_ | Read and write all groups|
  
+### Unsupported user-delegated permissions
+
+The following permission scopes are published in the Azure Portal and app registration portal but are not supported for use.
+
+|   **Scope**    |  **Permission**   |  **Description** |
+|:---------------|:------------------|:-----------------|
+| _Files.Read.Selected_ |    Read files that the user selects  | Allows the app to read files that the user selects. The app has access for several hours after the user selects a file. |
+| _Files.ReadWrite.AppFolder_ | Have full access to the application's folder | Allows the app to read, create, update and delete files in the application's folder. |
+| _Files.ReadWrite.Selected_ |    Read and write files that the user selects | Allows the app to read and write files that the user selects. The app has access for several hours after the user selects a file. |
+
+### Unsupported app-delegated permission
+
+The following permission scopes are published in the Azure Portal and app registration portal but are not supported for use.
+
+|   **Scope**    |  **Permission**   |  **Description** |
+|:---------------|:------------------|:-----------------|
+| _Files.Read.All_ | Read all files that user can access | Allows the app to read all files in all site collections without a signed in user. |
+| _Files.ReadWrite.All_ | Have full access to all files user can access | Allows the app to read, create, update and delete all files in all site collections without a signed in user. |
 
 
