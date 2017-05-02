@@ -16,7 +16,7 @@ This section provides information about Microsoft Graph operated by 21Vianet, an
 ### Microsoft Graph Explorer
 | Microsoft Graph Explorer in China | Microsoft Graph Explorer|
 |---------------------------|----------------|
-|https://graph.microsoft.io/zh-cn/graph-explorer| https://graph.microsoft.io/en-us/graph-explorer|
+|https://developer.microsoft.com/zh-cn/graph/graph-explorer-china| https://developer.microsoft.com/graph/graph-explorer|
 
 ### Azure OpenID Connect and OAuth2.0
 The endpoints used to acquire tokens for sign-in or to call Microsoft Graph operated by 21Vianet differ from those of other offerings. 
