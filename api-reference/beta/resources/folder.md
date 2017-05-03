@@ -17,15 +17,19 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "childCount": 1024
+  "childCount": 1024,
+  "view": { "@odata.type": "microsoft.graph.folderView" }
 }
 ```
 
 ## Properties
 
-| Property       | Type  | Description                                                     |
-|:---------------|:------|:----------------------------------------------------------------|
-| **childCount** | Int64 | Number of children contained immediately within this container. |
+| Property       | Type           | Description
+|:---------------|:---------------|:-------------------------------------------
+| **childCount** | Int64          | Number of children contained immediately within this container.
+| **view**       | [folderView][] | A collection of properties defining the recommended view for the folder.
+
+[folderView]: folderView.md
 
 ## Remarks 
 

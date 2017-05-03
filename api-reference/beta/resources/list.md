@@ -34,7 +34,7 @@ Properties after the blank line are inherited from **[baseItem][]**.
 
 ```json
 {
-  "fields": [ { "@odata.type": "microsoft.graph.fieldDefinition" }],
+  "fields": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
@@ -61,7 +61,7 @@ The **list** resource has the following properties.
 
 | Property name | Type                            | Description
 |:--------------|:--------------------------------|:---------------------------
-| **fields**    | Collection([fieldDefinition][]) | The collection of field definitions for this list.
+| **fields**    | Collection([columnDefinition][]) | The collection of field definitions for this list.
 | **list**      | [listInfo][]                    | Provides additional details about the list.
 
 The following properties are inherited from **[baseItem][]**.
@@ -89,7 +89,7 @@ The **list** resource has the following relationships to other resources.
 [baseItem]: baseItem.md
 [drive]: drive.md
 [driveItem]: driveItem.md
-[fieldDefinition]: fieldDefinition.md
+[columnDefinition]: columnDefinition.md
 [identitySet]: identitySet.md
 [listInfo]: listInfo.md
 [listItem]: listItem.md

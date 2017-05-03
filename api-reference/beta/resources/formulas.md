@@ -1,8 +1,8 @@
 # Formulas resource
 
-The **formulas** resource contains formulas used in a [field][].
+The **formulas** resource contains formulas used in a [column][].
 
-[field]: fieldDefinition.md
+[column]: columnDefinition.md
 
 ## JSON representation
 
@@ -26,8 +26,8 @@ Here is a JSON representation of the resource.
 
 | Property name  | Type    | Description                                                                                                                  |
 |:---------------|:--------|:---------------------------------------------------
-| **default**    | string  | The formula used to compute the default value for this field.
-| **validation** | string  | The formula used to validate input for this field.
+| **default**    | string  | The formula used to compute the default value for this column.
+| **validation** | string  | The formula used to validate input for this column.
 
 SharePoint formulas use a syntax similarl to Excel formulas.
 See [Examples of common formulas in SharePoint Lists][SPFormulas] for more information.

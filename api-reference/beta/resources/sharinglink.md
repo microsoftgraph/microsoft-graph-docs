@@ -19,27 +19,30 @@ Here is a JSON representation of the resource.
   "application": {"@odata.type": "microsoft.graph.identity"},
   "type": "view | edit",
   "scope": "anonymous | organization",
+  "webHtml": "string",
   "webUrl": "url"
 }
 ```
 
 ## Properties
 
-| Property    | Type                    | Description                                                                                                                                                                                             |
-|:------------|:------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| application | [identity](identity.md) | The app the link is associated with.                                                                                                                                                                    |
-| type        | String                  | The type of the link created.                                                                                                                                                                           |
-| scope       | String                  | The scope of the link represented by this permission. Value `anonymous` indicates the link is usable by anyone, `organization` indicates the link is only usable for users signed into the same tenant. |
-| webUrl      | String                  | A URL that opens the item in the browser on the OneDrive website.                                                                                                                                       |
+| Property    | Type                    | Description
+|:------------|:------------------------|:-------------------------------------
+| application | [identity](identity.md) | The app the link is associated with.
+| type        | String                  | The type of the link created.
+| scope       | String                  | The scope of the link represented by this permission. Value `anonymous` indicates the link is usable by anyone, `organization` indicates the link is only usable for users signed into the same tenant.
+| webHtml     | String                  | For `embed` links, this property contains the HTML code for an `<iframe>` element that will embed the item in a webpage.
+| webUrl      | String                  | A URL that opens the item in the browser on the OneDrive website.
 
 ## Type enumeration
 
 This table defines the possible values for the **type** property:
 
-| Value   | Role    | Description                                                                     |
-|:--------|:--------|:--------------------------------------------------------------------------------|
-| `view`  | `read`  | A view-only sharing link, allowing read-only access.                            |
-| `edit`  | `write` | An edit sharing link, allowing read-write access.                               |
+| Value   | Role    | Description
+|:--------|:--------|:---------------------------------------------------------
+| `view`  | `read`  | A view-only sharing link, allowing read-only access.
+| `edit`  | `write` | An edit sharing link, allowing read-write access.
+| `embed` | `read`  | A view-only sharing link that can be used to embed content into a host webpage. Embed links are not available for OneDrive for Business or SharePoint.
 
 ## Scope enumeration
 

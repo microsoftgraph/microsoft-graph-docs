@@ -19,19 +19,21 @@ Here is a JSON representation of the resource
     "listItemId": "string",
     "listItemUniqueId": "string",
     "siteId": "string",
+    "tenantId": "string",
     "webId": "string"
 }
 ```
 
 ### Properties
 
-| Property          | Type    | Description                                                          |
-|:------------------|:--------|:---------------------------------------------------------------------|
-| listId            | string  | The unique identifier for the item's list in SharePoint.                          |
-| listItemId        | string  | An integer identifier for the item within the containing list.                    |
-| listItemUniqueId  | string  | The unique identifier for the item within OneDrive for Busienss or a SharePoint site. |
-| siteId            | string  | The unique identifier for the item's site collection. |
-| webId             | string  | The unique identifier for the item's site.                          |
+| Property          | Type    | Description
+|:------------------|:--------|:-----------------------------------------------
+| listId            | string  | The unique identifier for the item's list in SharePoint.
+| listItemId        | string  | An integer identifier for the item within the containing list.
+| listItemUniqueId  | string  | The unique identifier for the item within OneDrive for Business or a SharePoint site.
+| siteId            | string  | The unique identifier for the item's site collection.
+| tenantId          | string  | The unique identifier for the Office 365 tenant.
+| webId             | string  | The unique identifier for the item's site.
 
 ## Remarks 
 

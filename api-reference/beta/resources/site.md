@@ -36,6 +36,7 @@ Properties after the blank line are inherited from **[baseItem][]**.
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
 
   "id": "string",
   "name": "name of site",
@@ -53,7 +54,7 @@ Properties after the blank line are inherited from **[baseItem][]**.
 
 The **site** resource has these properties.
 
-| Property name        | Type                    | Description                                                                                                                  |
+| Property name        | Type                    | Description
 |:---------------------|:------------------------|:---------------------------------
 | **root**             | [root facet][rootfacet] | If present, indicates that this is the root site in the site collection. Read-only.
 | **siteCollection**   | [siteCollection][]      | Provides details about the site's site collection. Available only on the root site. Read-only.
@@ -77,14 +78,16 @@ The following properties are inherited from **[baseItem][]**.
 
 The **site** resource has the following relationships to other resources.
 
-| Relationship name | Type                     | Description
-|:------------------|:-------------------------|:----------------------------------
-| **drive**         | [drive][]                | The default drive (document library) for this site.
-| **drives**        | Collection([drive][])    | The collection of drives (document libraries) under this site.
-| **items**         | Collection([baseItem][]) | Used to address any item contained in this site. This collection cannot be enumerated.
-| **lists**         | Collection([list][])     | The collection of lists under this site.
-| **sites**         | Collection([site][])     | The collection of the sub-sites under this site.
+| Relationship name | Type                             | Description
+|:------------------|:---------------------------------|:----------------------
+| **columns**       | Collection([columnDefinition][]) | The collection of column definitions reusable across lists under this site.
+| **drive**         | [drive][]                        | The default drive (document library) for this site.
+| **drives**        | Collection([drive][])            | The collection of drives (document libraries) under this site.
+| **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
+| **lists**         | Collection([list][])             | The collection of lists under this site.
+| **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
 
+[column]: columnDefinition.md
 [baseItem]: baseItem.md
 [drive]: drive.md
 [identitySet]: identitySet.md
