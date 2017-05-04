@@ -31,27 +31,27 @@ Finally grant your partner-managed app those configured permissions for all your
 
 1. Open a PowerShell session and connect to your partner tenant by entering your admin credentials into the sign-in window.
 
-```PowerShell
+    ```PowerShell
     Connect-AzureAd
-```
+    ```
 
 2. Find the group that represents the *Adminagents*.
 
-```PowerShell
+    ```PowerShell
     $group = Get-AzureADGroup -Filter "displayName eq 'Adminagents'"
-```
+    ```
 
 3. Find the service principal that has the same *appId* as your app.
 
-```PowerShell
+    ```PowerShell
     $sp = Get-AzureADServicePrincipal -Filter "appId eq '{yourAppsAppId}'"
-```
+    ```
 
 4. Finally, add the service principal to the *Adminagents* group.
 
-```PowerShell
+    ```PowerShell
     Add-AzureADGroupMember -ObjectId $group.ObjectId -RefObjectId $sp.ObjectId
-```
+    ```
 
 ## Token acquisition flows
 
@@ -63,26 +63,26 @@ Apart from pre-consented access to all your customer tenants, partner-managed ap
 2. Your app requests an access token for the intended partner-managed customer tenant.
 3. Your app uses the access token to call Microsoft Graph.
 
-This is a slight variation on the [authorization code grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code). To see how this would look, imagine your partner tenant is *partner.com* (which is the home tenant for your agents) and one of your customers is *customer.com*:
+This is a standard [authorization code grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code), except that your agents must sign-in using their partner accounts. To see how this would look, imagine your partner tenant is *partner.com* (which is the home tenant for your agents) and one of your customers is *customer.com*:
 
-1. [Acquire an authorization code:](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Your app makes a request to the ```/authorize``` endpoint, specifying ```common``` or ```partner.com``` for the target tenant.
+1. [Acquire an authorization code:](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Your app makes a request to the ```/authorize``` endpoint and must use a **customer tenant**, in our example ```customer.com```, for the target tenant. Your agents would still sign-in with their ```username@partner.com``` account.
 
-```http
-   GET https://login.microsoftonline.com/common/oauth2/authorize
-```
+    ```http
+   GET https://login.microsoftonline.com/customer.com/oauth2/authorize
+    ```
 
 2. [Aquire an access token using the authorization code:](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Your app must use a **customer tenant** as the target tenant, in our example ```customer.com```, when making the request to the ```token``` endpoint:
 
-```http
+    ```http
    POST https://login.microsoftonline.com/customer.com/oauth2/token
-```
+    ```
 
 3. Now you have an access token, call Microsoft Graph, putting the access token in the HTTP authorization header:
 
-```http
+    ```http
     GET https://graph.microsoft.com/beta/users
     Authorization: Bearer <token>
-```
+    ```
 
 ## Register your app in the regions you support
 <a name="region"></a>
