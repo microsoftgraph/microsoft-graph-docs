@@ -14,13 +14,13 @@ All examples below are relative to `https://graph.microsoft.com/v1.0`.
 
 [Get site]: ../api/site_get.md
 [Get root site][]: ../api/site_get.md
-[Get site by path]: ../api/baseitem_getbyurl.md
+[Get site by path]: ../api/site_get.md
 
 ## JSON representation
 
 Here is a JSON representation of a **site** resource.
 
-The **driveItem** resource is derrived from [**baseItem**](baseitem.md) and inherits properties from that resource.
+The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 
 <!-- { "blockType": "resource",
        "@odata.type": "microsoft.graph.site",
@@ -33,11 +33,12 @@ The **driveItem** resource is derrived from [**baseItem**](baseitem.md) and inhe
   "root": { "@odata.type": "microsoft.graph.root" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},
-  "title": "string",
+  "displayName": "string",
 
   /* relationships */
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
+  "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
 
   /* inherited from baseItem */
@@ -57,12 +58,12 @@ The **driveItem** resource is derrived from [**baseItem**](baseitem.md) and inhe
 | **id**                   | string                              | The unique identifier of the item. Read-only.                                                  |
 | **createdDateTime**      | DateTimeOffset                      | The date and time the item was created. Read-only.                                             |
 | **description**          | string                              | The descriptive text for the site.                                                             |
+| **displayName**          | string                              | The full title for the site. Read-only.                                                        |
 | **lastModifiedDateTime** | DateTimeOffset                      | The date and time the item was last modified. Read-only.                                       |
 | **name**                 | string                              | The name / title of the item.                                                                  |
 | **root**                 | [root][root.md]                     | If present, indicates that this is the root site in the site collection. Read-only.            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | Provides details about the site's site collection. Available only on the root site. Read-only. |
-| **title**                | string                              | The full title for the site. Read-only.                                                        |
 | **webUrl**               | string (url)                        | URL that displays the item in the browser. Read-only.                                          |
 
 ## Relationships
@@ -71,6 +72,7 @@ The **driveItem** resource is derrived from [**baseItem**](baseitem.md) and inhe
 |:------------------|:-------------------------|:----------------------------------
 | **drive**         | [drive][]                | The default drive (document library) for this site.
 | **drives**        | Collection([drive][])    | The collection of drives (document libraries) under this site.
+| **items**         | Collection([baseItem][]) | Used to address any item contained in this site. This collection cannot be enumerated.
 | **sites**         | Collection([site][])     | The collection of the sub-sites under this site.
 
 [baseItem]: baseItem.md

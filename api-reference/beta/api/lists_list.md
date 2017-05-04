@@ -15,8 +15,7 @@ One of the following scopes is required to execute this request:
 ### HTTP request
 
 ```http
-GET https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists
-GET https://graph.microsoft.com/beta/sharepoint:/{site-path}:/lists
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
 ### Example
@@ -26,7 +25,7 @@ GET https://graph.microsoft.com/beta/sharepoint:/{site-path}:/lists
 <!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
 ##### Response

@@ -4,33 +4,38 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 ## Tasks
 
-All examples below are relative to `https://graph.microsoft.com/beta`.
+All examples below are relative to `https://graph.microsoft.com/v1.0`.
 
-| Task name            | Example Request
-|:---------------------|:------------------------------------------------------
-| [Get site][]         | GET /sharepoint/sites/{site-id}
-| [Get lists][]        | GET /sharepoint/sites/{site}/lists
-| [Get list item][]    | GET /sharepoint/sites/{site}/lists/{list-id}/items/{item-id}
-| [Get site by path][] | GET /sharepoint:/{site-path}:/
+| Task name            | Example Request                                   |
+| :------------------- | :------------------------------------------------ |
+| [Get root site][]    | GET /sites/root                                   |
+| [Get site][]         | GET /sites/{site-id}                              |
+| [Get site by path][] | GET /sites/{hostname}:/{site-path}                |
 
 [Get site]: ../api/site_get.md
-[Get site by path]: ../api/baseItem_getByUrl.md
-[Get lists]: ../api/lists_list.md
-[Get list item]: ../api/listItem_get.md
+[Get root site][]: ../api/site_get.md
+[Get site by path]: ../api/site_get.md
 
 ## JSON representation
 
 Here is a JSON representation of a **site** resource.
-Properties after the blank line are inherited from **[baseItem][]**.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.site",
-       "keyProperty": "id", "optionalProperties": [ ] } -->
+
+The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
+
+<!-- { "blockType": "resource",
+       "@odata.type": "microsoft.graph.site",
+       "keyProperty": "id",
+       "optionalProperties": [ "root", "sharepointIds", "siteCollection", "drive", "drives", "sites" ] } -->
 
 ```json
 {
+  "id": "string",
   "root": { "@odata.type": "microsoft.graph.root" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},
-  "siteCollectionId": "guid",
-  "siteId": "guid",
+  "displayName": "string",
+
+  /* relationships */
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
@@ -38,45 +43,32 @@ Properties after the blank line are inherited from **[baseItem][]**.
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
 
-  "id": "string",
-  "name": "name of site",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "timestamp",
-  "description": "description of site",
+  /* inherited from baseItem */
+  "name": "string",
+  "createdDateTime": "datetime",
+  "description": "string",
   "eTag": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "timestamp",
-  "webUrl": "url to visit site in a browser"
+  "lastModifiedDateTime": "datetime",
+  "webUrl": "url"
 }
 ```
 
 ## Properties
 
-The **site** resource has these properties.
-
-| Property name        | Type                    | Description
-|:---------------------|:------------------------|:---------------------------------
-| **root**             | [root facet][rootfacet] | If present, indicates that this is the root site in the site collection. Read-only.
-| **siteCollection**   | [siteCollection][]      | Provides details about the site's site collection. Available only on the root site. Read-only.
-| **siteCollectionId** | guid                    | The SharePoint unique identifier for the site's site collection. Read-only.
-| **siteId**           | guid                    | The SharePoint unique identifier for the site. Read-only.
-
-The following properties are inherited from **[baseItem][]**.
-
-| Property name            | Type             | Description
-|:-------------------------|:-----------------|:-------------------------------
-| **id**                   | string           | The unique identifier of the item. Read-only.
-| **name**                 | string           | The name / title of the item.
-| **createdBy**            | [identitySet][]  | Identity of the creator of this item. Read-only.
-| **createdDateTime**      | DateTimeOffset   | The date and time the item was created. Read-only.
-| **description**          | string           | The descriptive text for the site.
-| **lastModifiedBy**       | [identitySet][]  | Identity of the last modifier of this item. Read-only.
-| **lastModifiedDateTime** | DateTimeOffset   | The date and time the item was last modified. Read-only.
-| **webUrl**               | string (url)     | URL that displays the item in the browser. Read-only.
+| Property name            | Type                                | Description                                                                                    |
+| :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
+| **id**                   | string                              | The unique identifier of the item. Read-only.                                                  |
+| **createdDateTime**      | DateTimeOffset                      | The date and time the item was created. Read-only.                                             |
+| **description**          | string                              | The descriptive text for the site.                                                             |
+| **displayName**          | string                              | The full title for the site. Read-only.                                                        |
+| **lastModifiedDateTime** | DateTimeOffset                      | The date and time the item was last modified. Read-only.                                       |
+| **name**                 | string                              | The name / title of the item.                                                                  |
+| **root**                 | [root][root.md]                     | If present, indicates that this is the root site in the site collection. Read-only.            |
+| **sharepointIds**        | [sharepointIds](sharepointids.md)   | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
+| **siteCollection**       | [siteCollection](sitecollection.md) | Provides details about the site's site collection. Available only on the root site. Read-only. |
+| **webUrl**               | string (url)                        | URL that displays the item in the browser. Read-only.                                          |
 
 ## Relationships
-
-The **site** resource has the following relationships to other resources.
 
 | Relationship name | Type                             | Description
 |:------------------|:---------------------------------|:----------------------
@@ -92,9 +84,7 @@ The **site** resource has the following relationships to other resources.
 [drive]: drive.md
 [identitySet]: identitySet.md
 [list]: list.md
-[rootfacet]: rootFacet.md
 [site]: site.md
-[siteCollection]: siteCollection.md
 
 <!-- {
   "type": "#page.annotation",

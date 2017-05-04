@@ -1,8 +1,20 @@
 # Get a site resource
 
-Returns metadata for a SharePoint [site][].
+Retrieve properties and relationships for a [site][] resource.
+A **site** resource represents a team site in SharePoint.
 
 [site]: ../resources/site.md
+
+A **site** is addressed be a unique identifier which is a composite ID of the following values:
+
+* Site collection hostname (contoso.sharepoint.com)
+* Site collection unique ID (guid)
+* Site unique ID (guid)
+
+There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:
+
+* `/sites/root`: The tenant root site.
+* `/groups/{group-id}/sites/root`: The group's team site.
 
 ## Prerequisites
 
@@ -11,12 +23,29 @@ One of the following scopes is required to execute this request:
 * Sites.Read.All
 * Sites.ReadWrite.All
 
-## HTTP request
+## Get the tenant's root site
+
+To access the root SharePoint site within a tenant:
 
 ```http
-GET https://graph.microsoft.com/beta/sharepoint/sites/{site-id}
-GET https://graph.microsoft.com/beta/sharepoint:/{site-path}
-GET https://graph.microsoft.com/beta/sharepoint/site
+GET /sites/root
+GET /sites/contoso.sharepoint.com
+```
+
+## Access a site by server-relative URL
+
+If you have the server-relative URL for a **site** resource, you can construct a request as follows:
+
+```http
+GET /sites/{hostname}:/{server-relative-path}
+```
+
+## Access a group team site
+
+To access the team site for a [group](../resources/group.md):
+
+```http
+GET /groups/{group-id}/sites/root
 ```
 
 ## Example
@@ -26,7 +55,7 @@ GET https://graph.microsoft.com/beta/sharepoint/site
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sharepoint/sites/{site-id}
+GET https://graph.microsoft.com/beta/sites/{site-id}
 ```
 
 ### Response

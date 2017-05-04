@@ -6,7 +6,7 @@ The **sharedDriveItem** resource is returned when using the [Shares](../api/shar
 
 Here is a JSON representation of the **sharedDriveItem** resource.
 
-The **sharedDriveItem** resource is derrived from [**baseItem**](baseitem.md) and inherits properties from that resource.
+The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 
 <!-- {
   "blockType": "resource",

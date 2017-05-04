@@ -55,7 +55,7 @@ GET /groups/{group-id}/sites/root
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sharepoint/sites/{site-id}
+GET https://graph.microsoft.com/v1.0/sites/{site-id}
 ```
 
 ### Response

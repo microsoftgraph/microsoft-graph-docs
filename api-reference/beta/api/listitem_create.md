@@ -13,8 +13,7 @@ One of the following scopes is required to execute this request:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists/{list-id}/items
-POST https://graph.microsoft.com/beta/sharepoint:/{list-path}:/items
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 ```
 
 ### Request body
@@ -31,7 +30,7 @@ Here is an example of how to create a new generic list item.
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
-POST https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
 {

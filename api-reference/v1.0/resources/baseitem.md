@@ -1,7 +1,7 @@
 # BaseItem resource type
 
 The **baseItem** resource is an abstract resource that contains a common set of properties shared among several other resources types.
-Resources that derrive from **baseItem** include:
+Resources that derive from **baseItem** include:
 
 * [drive](drive.md)
 * [driveItem](driveitem.md)
@@ -59,8 +59,11 @@ The `baseItem` type is not expected to be used directly.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "drive resource",
+  "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive"
-}-->
+  "tocPath": "Resources/baseItem",
+  "tocBookmarks": {
+    "Site": "#"
+  }
+} -->

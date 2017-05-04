@@ -1,38 +1,57 @@
 # SharedDriveItem resource type
 
-The **SharedDriveItem** resource is returned when using the [Shares](../api/shares_get.md) API to access a shared [DriveItem](driveitem.md).
-This resource is similar to a [Drive](drive.md) resource but is scoped to only the DriveItems that can be accessed by the sharing link or shareId.
+The **sharedDriveItem** resource is returned when using the [Shares](../api/shares_get.md) API to access a shared [driveItem](driveitem.md).
 
-### JSON representation
+## JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the **sharedDriveItem** resource.
+
+The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sharedDriveItem"
 }-->
+
 ```json
 {
     "id": "string",
     "name": "string",
     "owner": { "@odata.type": "microsoft.graph.identitySet" },
+
+    /* relationships*/
     "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
-    "root": { "@odata.type": "microsoft.graph.driveItem" }
+    "root": { "@odata.type": "microsoft.graph.driveItem" },
+    "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+    "site": { "@odata.type": "microsoft.graph.site" }
 }
 ```
 
-### Properties
+## Properties
 
-| Property  | Type                                  | Description                                                          |
-|:----------|:--------------------------------------|:---------------------------------------------------------------------|
-| id        | String                                | The unique identifier for the share being accessed.                  |
-| name      | String                                | The display name of the shared item.                                 |
-| owner     | [IdentitySet](identityset.md)         | Information about the owner of the shared item being referenced.     |
-| items     | Collection([DriveItem](driveitem.md)) | A collection of shared DriveItem resources. This collection cannot be enumerated, but items can be accessed by their unique ID. |
-| root      | [DriveItem](driveitem.md)             | The top level shared DriveItem. If a single file is shared, this item is the file. If a folder is shared, this item will be the folder. You can use the item's facets to determine which case applies. |
+| Property | Type                          | Description                                                      |
+| :------- | :---------------------------- | :--------------------------------------------------------------- |
+| id       | String                        | The unique identifier for the share being accessed.              |
+| name     | String                        | The display name of the shared item.                             |
+| owner    | [IdentitySet](identityset.md) | Information about the owner of the shared item being referenced. |
 
-## Remarks 
+## Relationships
+
+| Relationship | Type                                  | Description                                                                                                                                                                                                |
+| :----------- | :------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| items        | Collection([DriveItem](driveitem.md)) | A collection of shared **driveItem** resources. This collection cannot be enumerated, but items can be accessed by their unique ID.                                                                        |
+| root         | [DriveItem](driveitem.md)             | The top level shared **driveItem**. If a single file is shared, this item is the file. If a folder is shared, this item will be the folder. You can use the item's facets to determine which case applies. |
+| driveItem    | [driveItem](driveitem.md)             | A **driveItem** for the resource that was shared.  This is identical to the **root** property.                                                                                                             |
+| site         | [site](site.md)                       | A **site** resource that contains the item that was shared.                                                                                                                                                |
+
+## Methods
+
+| Method                                  | REST Path                |
+| :-------------------------------------- | :----------------------- |
+| [Get shared item](../api/shares_get.md) | `GET /shares/{share-id}` |
+
+## Remarks
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 

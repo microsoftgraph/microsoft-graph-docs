@@ -13,8 +13,7 @@ One of the following scopes is required to execute this request:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists/{list-id}/items/{item-id}/columnSet
-PATCH https://graph.microsoft.com/beta/sharepoint:/{list-path}:/items/{item-id}/columnSet
+PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/columnSet
 ```
 
 ### Optional request headers
@@ -36,7 +35,7 @@ All other values on the listItem are left alone.
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
-PATCH https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists/{list-id}/items/{item-id}/columnSet
+PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/columnSet
 Content-Type: application/json
 
 {

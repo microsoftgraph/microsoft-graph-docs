@@ -22,7 +22,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 
 Here is a JSON representation of a **driveItem** resource.
 
-The **driveItem** resource is derrived from [**baseItem**](baseitem.md) and inherits properties from that resource.
+The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 
 <!-- {
   "blockType": "resource",
@@ -33,7 +33,6 @@ The **driveItem** resource is derrived from [**baseItem**](baseitem.md) and inhe
 
 ```json
 {
-  "id": "string (identifier)",
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "cTag": "string",
   "deleted": { "@odata.type": "microsoft.graph.deleted" },
@@ -62,6 +61,7 @@ The **driveItem** resource is derrived from [**baseItem**](baseitem.md) and inhe
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
 
   /* inherited from baseItem */
+  "id": "string (identifier)",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "eTag": "string",
@@ -78,7 +78,6 @@ The **driveItem** resource is derrived from [**baseItem**](baseitem.md) and inhe
 
 | Property             | Type                                | Description                                                                                                                                                               |
 | :------------------- | :---------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| id                   | String                              | The unique identifier of the item within the Drive. Read-only.                                                                                                            |
 | audio                | [audio](audio.md)                   | Audio metadata, if the item is an audio file. Read-only.                                                                                                                  |
 | createdBy            | [identitySet](identityset.md)       | Identity of the user, device, and application which created the item. Read-only.                                                                                          |
 | createdDateTime      | DateTimeOffset                      | Date and time of item creation. Read-only.                                                                                                                                |
@@ -88,6 +87,7 @@ The **driveItem** resource is derrived from [**baseItem**](baseitem.md) and inhe
 | file                 | [file](file.md)                     | File metadata, if the item is a file. Read-only.                                                                                                                          |
 | fileSystemInfo       | [fileSystemInfo](filesysteminfo.md) | File system information on client. Read-write.                                                                                                                            |
 | folder               | [folder](folder.md)                 | Folder metadata, if the item is a folder. Read-only.                                                                                                                      |
+| id                   | String                              | The unique identifier of the item within the Drive. Read-only.                                                                                                            |
 | image                | [image](image.md)                   | Image metadata, if the item is an image. Read-only.                                                                                                                       |
 | lastModifiedBy       | [identitySet](identityset.md)       | Identity of the user, device, and application which last modified the item. Read-only.                                                                                    |
 | lastModifiedDateTime | DateTimeOffset                      | Date and time the item was last modified. Read-only.                                                                                                                      |

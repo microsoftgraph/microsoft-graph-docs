@@ -2,6 +2,8 @@
 
 The **siteCollection** resource provides more information about a site collection.
 
+If a [**site**](site.md) resource has a non-null **siteCollection** property, then the site is a root site for a site collection.
+
 ## JSON representation
 
 Here is a JSON representation of the resource.

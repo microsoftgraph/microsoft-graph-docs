@@ -9,7 +9,7 @@ Users without a OneDrive license may not have a default drive available.
 
 Here is a JSON representation of a **drive** resource.
 
-The **drive** resource is derrived from [**baseItem**](baseitem.md) and inherits properties from that resource.
+The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 
 <!-- {
   "blockType": "resource",

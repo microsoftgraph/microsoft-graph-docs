@@ -14,8 +14,7 @@ One of the following scopes are required to execute this request:
 ### HTTP request
 
 ```http
-GET https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists/{list-id}
-GET https://graph.microsoft.com/beta/sharepoint:/{list-path}
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
 ```
 
 ### Request body
@@ -29,7 +28,7 @@ Do not supply a request body with this method.
 <!-- { "blockType": "request", "name": "get-list" } -->
 
 ```http
-GET /sharepoint/sites/{site-id}/lists/{list-id}
+GET /sites/{site-id}/lists/{list-id}
 ```
 
 #### Response

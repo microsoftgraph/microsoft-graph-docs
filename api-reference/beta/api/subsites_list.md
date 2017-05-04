@@ -16,7 +16,7 @@ One of the following scopes is required to execute this request:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/sites
+GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 
 ### Example
@@ -26,7 +26,7 @@ GET https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/sites
 <!-- { "blockType": "request", "name": "list-subsites" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/sites
+GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 
 #### Response

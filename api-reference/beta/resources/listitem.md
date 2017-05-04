@@ -6,7 +6,7 @@ Columns in the list are available through the `columnSet` dictionary.
 ## Tasks on a listItem
 
 The following tasks are available for **listItem** resources.
-All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists/{list-id}`.
+All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}`.
 
 | Common task                    | HTTP method
 |:-------------------------------|:------------------------

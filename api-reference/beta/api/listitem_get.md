@@ -15,9 +15,8 @@ One of the following scopes is required to execute this request:
 ## HTTP request
 
 ```http
-GET https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists/{list-id}/items/{item-id}
-GET https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=columnSet
-GET https://graph.microsoft.com/beta/sharepoint:/{list-path}:/items/{item-id}
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=columnSet
 ```
 
 ## Example
@@ -27,7 +26,7 @@ GET https://graph.microsoft.com/beta/sharepoint:/{list-path}:/items/{item-id}
 <!-- { "blockType": "request", "name": "get-list-item" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=columnSet
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=columnSet
 ```
 
 ### Response

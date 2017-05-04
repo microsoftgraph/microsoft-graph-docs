@@ -17,8 +17,7 @@ One of the following scopes is required to execute this request:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists/{list-id}/items/{item-id}
-DELETE https://graph.microsoft.com/beta/sharepoint:/{list-path}:/items/{item-id}
+DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
 ### Optional request headers
@@ -36,7 +35,7 @@ Do not supply a request body with this method.
 <!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists/{list-id}/items/{item-id}
+DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
 ## Response
