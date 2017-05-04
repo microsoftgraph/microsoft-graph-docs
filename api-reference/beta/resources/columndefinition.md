@@ -8,20 +8,24 @@ Here is a JSON representation of a ColumnDefinition resource.
 
 ```json
 {
-  "id": "guid",
-  "name": "staticName",
-  "defaultValue": "defaultValue",
   "description": "description",
-  "type": "Integer | Text | DateTime | Lookup | ...",
+  "displayName": "friendly name",
+  "enforceUniqueValues": "true",
   "hidden": false,
+  "id": "string",
   "indexed": true,
+  "name": "staticNameForApi",
+  "readOnly": false,
   "required": false,
-  "title": "title",
-  "formulas": {
-    "@odata.type": "microsoft.graph.formulas",
-    "default": "string",
-    "validation": "string"
-  }
+  "boolean": { "@odata.type": "microsoft.graph.booleanColumn" },
+  "calculated": { "@odata.type": "microsoft.graph.calculatedColumn" },
+  "choice": { "@odata.type": "microsoft.graph.choiceColumn" },
+  "currency": { "@odata.type": "microsoft.graph.currencyColumn" },
+  "dateTime": { "@odata.type": "microsoft.graph.dateTimeColumn" },
+  "lookup": { "@odata.type": "microsoft.graph.lookupColumn" },
+  "number": { "@odata.type": "microsoft.graph.numberColumn" },
+  "personOrGroup": { "@odata.type": "microsoft.graph.personOrGroupColumn" },
+  "text": { "@odata.type": "microsoft.graph.textColumn" },
 }
 ```
 
@@ -29,21 +33,50 @@ Here is a JSON representation of a ColumnDefinition resource.
 
 The **columnDefinition** resource has the following properties.
 
-| Property name    | Type         | Description
-|:-----------------|:-------------|:-------------------------------------------
-| **id**           | string       | The unique identifier for the columnDefinition.
-| **name**         | string       | The name of the column as it appears in the [columnSet][] structure.
-| **defaultValue** | string       | The default value for the column
-| **description**  | string       | The description of the column
-| **type**         | string       | An enumerated value representing the column type. Can be `Integer`, `Text`, `DateTime`, `Lookup`, or another value. This corresponds to SharePoint's [SPFieldType][] enumeration.
-| **hidden**       | boolean      | Indicates whether the column is visible in most SharePoint experiences.
-| **indexed**      | boolean      | Indicates whether the column values can used for sorting and searching.
-| **required**     | boolean      | Indicates whether the column value is not optional.
-| **title**        | string       | The user-facing name of the column.
-| **formulas**     | [formulas][] | An object containing formulas used for the column's value.
+| Property name           | Type    | Description
+|:------------------------|:--------|:-----------------------------------------
+| **description**         | string  | The user-facing description of the column.
+| **displayName**         | string  | The user-facing name of the column.
+| **enforceUniqueValues** | boolean | If true, no two list items may have the same value for this column.
+| **hidden**              | boolean | Specifies whether the column is displayed in the user interface.
+| **id**                  | string  | The unique identifier for the column.
+| **indexed**             | boolean | Specifies whether the column values can used for sorting and searching.
+| **name**                | string  | The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see **displayName**.
+| **readOnly**            | bool    | Specifies whether the column values can be modified.
+| **required**            | boolean | Specifies whether the column value is not optional.
 
+Columns can hold data of various types.
+The following properties indicate what type of data a column stores, as well as additional settings for that data.
+These properties are mutually exclusive -- a column can only have one of them specified.
+
+| Property name     | Type                    | Description
+|:------------------|:------------------------|:-------------------------------
+| **boolean**       | [booleanColumn][]       | This column stores boolean values.
+| **calculated**    | [calculatedColumn][]    | This column's data is calculated based on other columns.
+| **choice**        | [choiceColumn][]        | This column stores data from a list of choices.
+| **currency**      | [currencyColumn][]      | This column stores currency values.
+| **dateTime**      | [dateTimeColumn][]      | This column stores DateTime values.
+| **lookup**        | [lookupColumn][]        | This column's data is looked up from another source in the site.
+| **number**        | [numberColumn][]        | This column stores number values.
+| **personOrGroup** | [personOrGroupColumn][] | This column stores Person or Group values.
+| **text**          | [textColumn][]          | This column stores text values.
+
+Note: These properties correspond to SharePoint's [SPFieldType][] enumeration.
+While the most common field types are represented above, this beta API is still missing some.
+In those cases, none of the column type facets will be populated, and the column will only have its basic properties.
+
+[booleanColumn]: booleanColumn.md
+[calculatedColumn]: calculatedColumn.md
+[choiceColumn]: choiceColumn.md
+[currencyColumn]: currencyColumn.md
+[dateTimeColumn]: dateTimeColumn.md
+[defaultColumnValue]: defaultColumnValue.md
+[lookupColumn]: lookupColumn.md
+[numberColumn]: numberColumn.md
+[personOrGroupColumn]: personOrGroupColumn.md
+[textColumn]: textColumn.md
 [columnSet]: fieldValueSet.md
-[formulas]: formulas.md
+
 [SPFieldType]: https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spfieldtype.aspx
 
 <!-- {

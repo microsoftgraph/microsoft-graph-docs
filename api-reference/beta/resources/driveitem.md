@@ -57,6 +57,7 @@ Here is a JSON representation of the resource.
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "listItem": [ {"@odata.type": "microsoft.graph.listItem"}],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ]
 }
@@ -114,13 +115,14 @@ The URL will only be available for a short period of time before it is invalidat
 
 ## Relationships
 
-| Relationship       | Type                                       | Description                                                                                                                                                                       |
-|:-------------------|:-------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| children           | [driveitem](driveitem.md) collection       | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.                                        |
-| createdByUser      | [user](user.md)                            | Identity of the user, device, and application which created the item. Read-only.                                                                                                  |
-| lastModifiedByUser | [user](user.md)                            | Identity of the user, device, and application which last modified the item. Read-only.                                                                                            |
-| permissions        | [permission](permission.md) collection     | The set of permissions for the item. Read-only. Nullable.                                                                                                                         |
-| thumbnails         | [thumbnailSet](thumbnailset.md) collection | Collection containing [ThumbnailSet](thumbnailSet.md) objects associated with the item. For more info, see [getting thumbnails](../api/thumbnailset_get.md). Read-only. Nullable. |
+| Relationship       | Type                                       | Description
+|:-------------------|:-------------------------------------------|:-----------
+| children           | [driveitem](driveitem.md) collection       | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
+| createdByUser      | [user](user.md)                            | Identity of the user, device, and application which created the item. Read-only.
+| lastModifiedByUser | [user](user.md)                            | Identity of the user, device, and application which last modified the item. Read-only.
+| listItem           | [listItem](listItem.md)                    | The corresponding Document Library list item for drive items in SharePoint.
+| permissions        | [permission](permission.md) collection     | The set of permissions for the item. Read-only. Nullable.
+| thumbnails         | [thumbnailSet](thumbnailset.md) collection | Collection containing [ThumbnailSet](thumbnailSet.md) objects associated with the item. For more info, see [getting thumbnails](../api/thumbnailset_get.md). Read-only. Nullable.
 
 
 ## Methods

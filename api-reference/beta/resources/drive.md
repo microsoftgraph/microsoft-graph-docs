@@ -21,6 +21,7 @@ Here is a JSON representation of the resource.
   "driveType": "string",
   "owner": {"@odata.type": "microsoft.graph.identitySet"},
   "quota": {"@odata.type": "microsoft.graph.quota"},
+  "list": {"@odata.type": "microsoft.graph.list" },
   "root": {"@odata.type": "microsoft.graph.driveItem" },
   "items": [ {"@odata.type": "microsoft.graph.driveItem" }],
   "special": [ {"@odata.type": "microsoft.graph.driveItem" }]
@@ -29,20 +30,21 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-| Property  | Type                          | Description                                                                                          |
-|:----------|:------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| id        | String                        | The unique identifier of the drive. Read-only.                                                                                                           |
-| driveType | String                        | Describes the type of drive represented by this resource. OneDrive personal drives will return `personal`. OneDrive for Business will return `business`. SharePoint document libraries will return `documentLibrary`. Read-only. |
-| owner     | [identitySet](identityset.md) | Optional. The user account that owns the drive.                                                                                                                    |
-| quota     | [quota](quota.md)             | Optional. Information about the drive's storage space quota.                                                                                                       |
+| Property  | Type                          | Description
+|:----------|:------------------------------|:---------------------------------
+| id        | String                        | The unique identifier of the drive. Read-only.
+| driveType | String                        | Describes the type of drive represented by this resource. OneDrive personal drives will return `personal`. OneDrive for Business will return `business`. SharePoint document libraries will return `documentLibrary`. Read-only.
+| owner     | [identitySet](identityset.md) | Optional. The user account that owns the drive.
+| quota     | [quota](quota.md)             | Optional. Information about the drive's storage space quota.
 
 ## Relationships
 
-| Relationship | Type |Description |
-|:--------|:---------------------------|:-------------------------------------------------------------------------|
-| items   | [driveitem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.                   |
-| root    | [driveitem](driveitem.md)            | The root folder of the drive. Read-only.                                 |
-| special | [driveitem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable. |
+| Relationship | Type | Description
+|:-------------|:-------------------------------------|:--------------------------------------
+| items        | [driveitem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
+| list         | [list](list.md)                      | The corresponding Document Library list for drives in SharePoint.
+| root         | [driveitem](driveitem.md)            | The root folder of the drive. Read-only.
+| special      | [driveitem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
 
 
 ## Methods

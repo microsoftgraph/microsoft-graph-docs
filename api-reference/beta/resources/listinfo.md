@@ -18,7 +18,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "hidden": false,
-  "baseTemplate": "DocumentLibrary | GenericList | Tasks | Survey | Links | Announcements | Contacts | ..."
+  "baseTemplate": "documentLibrary | genericList | tasks | survey | links | announcements | contacts | ..."
 }
 ```
 
@@ -27,7 +27,7 @@ Here is a JSON representation of the resource.
 | Property name | Type    | Description
 |:--------------|:--------|:------------------------------------------------
 | **hidden**    | Boolean | If `true`, indicates that the list is not normally visible in the SharePoint user experience.
-| **template**  | String  | An enumerated value that represents the base list template used in creating the list. Possible values include `DocumentLibrary`, `GenericList`, `Task`, `Survey`, `Annoucements`, `Contacts`, and more.
+| **template**  | String  | An enumerated value that represents the base list template used in creating the list. Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `annoucements`, `contacts`, and more.
 
 ### Remarks
 

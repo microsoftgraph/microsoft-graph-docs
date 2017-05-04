@@ -33,7 +33,7 @@ Properties after the blank line are inherited from **[baseItem][]**.
 ```json
 {
   "listItemId": 1,
-  "columnSet": { "@odata.type": "microsoft.graph.fieldValueSet" },
+  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
 
   "id": "string",
   "name": "name of resource",
@@ -74,7 +74,7 @@ The following properties are inherited from **[baseItem][]**.
 
 | Relationship name | Type              | Description
 |:------------------|:------------------|:-------------------------------------
-| **columnSet**     | [fieldValueSet][] | A collection of child items if the current item is a container / folder.
+| **fields**        | [fieldValueSet][] | The values of the columns set on this list item.
 | **driveItem**     | [driveItem][]     | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]**
 
 [baseItem]: baseItem.md

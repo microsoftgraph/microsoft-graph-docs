@@ -31,7 +31,7 @@ The server will return lookup values if your request includes a `select` stateme
 Example:
 
 ```http
-GET https://graph.microsoft.com/beta/sharepoint/sites/{site=id}/lists/{list-id}?expand=columnSet(select=Author,BookTitle,PageCount)
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=fieldValueSet(select=Author,BookTitle,PageCount)
 ```
 
 You may request up to 12 lookup fields in a single query, plus any number of regular fields.
