@@ -4,7 +4,7 @@ Microsoft Graph exposes multiple APIs from Office 365 and other Microsoft cloud 
  
 You can use Microsoft Graph to:
 
-- Access data from multiple Microsoft cloud services, including Azure Active Directory, Exchange Online as part of Office 365, SharePoint, OneDrive, OneNote, and Planner.
+- Access data from multiple Microsoft cloud services, including Azure Active Directory, Exchange Online as part of Office 365, SharePoint, OneDrive, OneNote,  Planner and Microsoft Teams.
 - Navigate between entities and relationships.
 - Access intelligence and insights from the Microsoft cloud (for commercial users).
 

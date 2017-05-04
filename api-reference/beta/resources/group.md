@@ -1,7 +1,11 @@
 # group resource type
 
-Represents an Azure Active Directory group, which can be an Office 365 group, dynamic group, or security group.
+Represents an Azure Active Directory group, which can be an Office 365 group, Microsoft Team, dynamic group, or security group.
 Inherits from [directoryObject](directoryobject.md).
+
+> **Microsoft Teams and the group APIs**:
+> * Microsoft Teams are built upon Office 365 groups.  All the following methods for groups can also be used with teams, with the exception that 'Create group' does not currently allow you to create a team.  There are also some methods specific to Microsoft Teams, which are clearly labelled as such.
+> * Care must be taken if using these APIs in your Microsoft Teams app - e.g. as part inside a 'tab' or 'bot' running inside Microsoft Teams.  This is because of differing consent models. Typically, users can directly consent to your Microsoft Teams app within a specific team.  However, currently enterprise admins must also consent to your app using these APIs, at which point it then has API access all of a user's teams.  You should ensure your Microsoft Teams app copes with not having the permissions it needs, and that it respects the user's intention about which teams it should operate in.
 
 This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
 
