@@ -8,7 +8,7 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [ "path" ],
+  "optionalProperties": [ "path", "shareId", "sharepointIds" ],
   "@odata.type": "microsoft.graph.itemReference"
 }-->
 
@@ -27,7 +27,7 @@ Here is a JSON representation of the resource
 
 | Property      | Type                              | Description                                                                                                |
 | :------------ | :-------------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| driveId       | String                            | Unique identifier of the OneDrive instance that contains the item. Read-only.                              |
+| driveId       | String                            | Unique identifier of the drive instance that contains the item. Read-only.                                 |
 | id            | String                            | Unique identifier of the item in the drive. Read-only.                                                     |
 | name          | String                            | The name of the item being referenced. Read-only.                                                          |
 | path          | String                            | Path that can be used to navigate to the item. Read-only.                                                  |

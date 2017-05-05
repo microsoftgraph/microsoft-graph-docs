@@ -36,6 +36,7 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "cTag": "string",
   "deleted": { "@odata.type": "microsoft.graph.deleted" },
+  "description": "string",
   "file": { "@odata.type": "microsoft.graph.file" },
   "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
   "folder": { "@odata.type": "microsoft.graph.folder" },
@@ -44,6 +45,7 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
   "package": { "@odata.type": "microsoft.graph.package" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
   "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
+  "root": { "@odata.type": "microsoft.graph.root" },
   "searchResult": { "@odata.type": "microsoft.graph.searchResult" },
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
@@ -53,7 +55,7 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
   "webDavUrl": "string",
 
   /* relationships */
-  "content": "stream",
+  "content": { "@odata.type": "Edm.Stream" },
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
@@ -70,6 +72,11 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
   "name": "string",
   "parentReference": {"@odata.type": "microsoft.graph.itemReference"},
   "webUrl": "string",
+
+  /* instance annotations */
+  "@microsoft.graph.conflictBehavior": "string",
+  "@microsoft.graph.downloadUrl": "url",
+  "@microsoft.graph.sourceUrl": "url"
 }
 
 ```
@@ -83,6 +90,7 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
 | createdDateTime      | DateTimeOffset                      | Date and time of item creation. Read-only.                                                                                                                                |
 | cTag                 | String                              | An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the item is a folder. Read-only. |
 | deleted              | [deleted](deleted.md)               | Information about the deleted state of the item. Read-only.                                                                                                               |
+| description          | String                              | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal                                                                                    |
 | eTag                 | String                              | eTag for the entire item (metadata + content). Read-only.                                                                                                                 |
 | file                 | [file](file.md)                     | File metadata, if the item is a file. Read-only.                                                                                                                          |
 | fileSystemInfo       | [fileSystemInfo](filesysteminfo.md) | File system information on client. Read-write.                                                                                                                            |
@@ -97,12 +105,14 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
 | parentReference      | [itemReference](itemreference.md)   | Parent information, if the item has a parent. Read-write.                                                                                                                 |
 | photo                | [photo](photo.md)                   | Photo metadata, if the item is a photo. Read-only.                                                                                                                        |
 | remoteItem           | [remoteItem](remoteitem.md)         | Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.                                                                        |
+| root                 | [root](root.md)                     | If this property is non-null, it indicates that the driveItem is the top-most driveItem in the drive.                                                                     |
 | searchResult         | [searchResult](searchresult.md)     | Search metadata, if the item is from a search result. Read-only.                                                                                                          |
 | shared               | [shared](shared.md)                 | Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only.                                               |
 | sharepointIds        | [sharepointIds](sharepointids.md)   | Returns identifiers useful for SharePoint REST compatibility. Read-only.                                                                                                  |
 | size                 | Int64                               | Size of the item in bytes. Read-only.                                                                                                                                     |
 | specialFolder        | [specialFolder](specialfolder.md)   | If the current item is also available as a special folder, this facet is returned. Read-only.                                                                             |
 | video                | [video](video.md)                   | Video metadata, if the item is a video. Read-only.                                                                                                                        |
+| webDavUrl            | String                              | WebDAV compatible URL for the item.                                                                                                                                       |
 | webUrl               | String                              | URL that displays the resource in the browser. Read-only.                                                                                                                 |
 
 **Note:** The eTag and cTag properties work differently on containers (folders).
@@ -138,19 +148,19 @@ The URL will only be available for a short period of time (1 hour) before it is 
 
 ## Methods
 
-| Method                                                 | REST Path                                |
-|:-------------------------------------------------------|:-----------------------------------------|
-| [Get item](../api/item_get.md)                         | `GET /drive/items/{item-id}`             |
-| [List children](../api/item_list_children.md)          | `GET /drive/items/{item-id}/children`    |
-| [Create item](../api/item_post_children.md)            | `POST /drive/items/{item-id}/children`   |
-| [Update item](../api/item_update.md)                   | `PATCH /drive/items/{item-id}`           |
-| [Upload content](../api/item_uploadcontent.md)         | `PUT /drive/items/{item-id}/content`     |
-| [Download content](../api/item_downloadcontent.md)     | `GET /drive/items/{item-id}/content`      |
-| [Delete item](../api/item_delete.md)                   | `DELETE /drive/items/{item-id}`          |
-| [Move item](../api/item_move.md)                       | `PATCH /drive/items/{item-id}`           |
-| [Copy item](../api/item_copy.md)                       | `POST /drive/items/{item-id}/copy`       |
-| [Search items](../api/item_search.md)                  | `GET /drive/items/{item-id}/search(q='text')`  |
-| [Find changes](../api/item_delta.md)                   | `GET /drive/root/delta`                  |
+| Method                                                 | REST Path
+|:-------------------------------------------------------|:--------------------
+| [Get item](../api/item_get.md)                         | `GET /drive/items/{item-id}`
+| [List children](../api/item_list_children.md)          | `GET /drive/items/{item-id}/children`
+| [Create item](../api/item_post_children.md)            | `POST /drive/items/{item-id}/children`
+| [Update item](../api/item_update.md)                   | `PATCH /drive/items/{item-id}`
+| [Upload content](../api/item_uploadcontent.md)         | `PUT /drive/items/{item-id}/content`
+| [Download content](../api/item_downloadcontent.md)     | `GET /drive/items/{item-id}/content`
+| [Delete item](../api/item_delete.md)                   | `DELETE /drive/items/{item-id}`
+| [Move item](../api/item_move.md)                       | `PATCH /drive/items/{item-id}`
+| [Copy item](../api/item_copy.md)                       | `POST /drive/items/{item-id}/copy`
+| [Search items](../api/item_search.md)                  | `GET /drive/items/{item-id}/search(q='text')`
+| [List changes in a drive](../api/item_delta.md)        | `GET /drive/root/delta`
 | [List thumbnails](../api/item_list_thumbnails.md)      | `GET /drive/items/{item-id}/thumbnails`  |
 | [Create sharing link](../api/item_createlink.md)       | `POST /drive/items/{item-id}/createLink` |
 | [Add permissions](../api/item_invite.md)               | `POST /drive/items/{item-id}/invite`     |

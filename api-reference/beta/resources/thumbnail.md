@@ -8,7 +8,7 @@ Here is a JSON representation of the **thumbnail** resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": ["content", "height", "width"],
+  "optionalProperties": ["content", "height", "width", "sourceItemId"],
   "@odata.type": "microsoft.graph.thumbnail"
 }-->
 

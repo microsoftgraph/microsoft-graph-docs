@@ -2,7 +2,7 @@
 
 The **SharingLink** resource groups link-related data items into a single structure.
 
-If a [**Permission**](permission.md) resource has a non-null **sharingLink** facet, the permission represents a sharnig link (as opposed to permissions granted to a person or group).
+If a [**Permission**](permission.md) resource has a non-null **sharingLink** facet, the permission represents a sharing link (as opposed to permissions granted to a person or group).
 
 ## JSON representation
 

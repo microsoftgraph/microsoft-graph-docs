@@ -9,12 +9,12 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "source"
-  ],
+  "optionalProperties": ["source", "small", "medium", "large"],
+  "openType": true,
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.thumbnailSet"
-}-->
+} -->
+
 ```json
 {
   "id": "string (identifier)",
