@@ -1,6 +1,6 @@
 # Create Channel
 
-Create a new channel as specified in the request body.
+Create a new channel in a Microsoft Team, as specified in the request body.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
