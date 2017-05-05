@@ -16,10 +16,10 @@ POST /groups/{id}/channels/{id}/threads
 | Authorization  | string  | Bearer <token>. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [chatThread](../resources/chatthread.md) object.
+In the request body, supply a JSON representation of a [chatThread](../resources/chatthread.md) object that contains the rootMessage property.
 
 ## Response
-If successful, this method returns `201, Created` response code and [chatThread](../resources/chatthread.md) object in the response body.  ???RT
+If successful, this method returns `204, No content` response code with an empty reponse body.
 
 ## Example
 ##### Request
@@ -36,18 +36,16 @@ Content-type: application/json
   "rootMessage": {
       "body": {
         "contentType": 2,
-        "content": "this is body content"
+        "content": "Hello world"
       }
   }
 }
 ```
-In the request body, supply a JSON representation of [chatThread](../resources/chatthread.md) object.
 
 > Currently, the contentType must be specified as an integer: 1 for "text" or 2 for "html".  Future API releases will fix this.
 
 ##### Response
 
-If successful, this method returns `201, Created` response code and the `id` of the new thread in the response body.   ??RT
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -55,13 +53,9 @@ Here is an example of the response.
   "@odata.type": "microsoft.graph.chatThread"
 } -->
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 204 Created
 Content-type: application/json
-Content-length: 346
-
-{
-  "id": "thread-id-value"
-}
+Content-length: 0
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

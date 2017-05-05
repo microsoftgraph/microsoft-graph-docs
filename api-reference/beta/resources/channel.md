@@ -10,7 +10,7 @@ A channel is a collection of [chatThreads](chatthread.md) within a Microsoft Tea
 |[List conversations](../api/group_list_channels.md) | [channel](channel.md) collection | Get the list of channels in this team.|
 |[Create](../api/group_post_channels.md) | [conversation](channel.md) | Create a new channel by including the display name and description.|
 |[Get channel](../api/channel_get.md) | [channel](channel.md) | Read properties and relationships of channel object.|
-|[Create chat  thread](../api/channel_post_chatthreads.md) | [chatThread](chatthread.md) collection| Create a chat thread in the specified channel.|
+|[Create chat thread](../api/channel_post_chatthreads.md) | [chatThread](chatthread.md) collection| Create a chat thread in the specified channel.|
 
 > Future beta API releases will support updating and deleting channels, and reading existing chat threads in a channel.
 

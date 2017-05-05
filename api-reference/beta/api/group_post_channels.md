@@ -34,12 +34,11 @@ POST https://graph.microsoft.com/beta/groups/{id}/channels
 Content-type: application/json
 
 {
-  "description": "This channel is where we debate all future architecture plans",
   "displayName": "Architecture Discussion"
+  "description": "This channel is where we debate all future architecture plans",
 }
 ```
 ##### Response
-???RT?
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -52,8 +51,8 @@ Content-type: application/json
 Content-length: 201
 {
   "id": "id-value",
-  "description": "This channel is where we debate all future architecture plans",
   "displayName": "Architecture Discussion"
+  "description": "This channel is where we debate all future architecture plans",
 }
 ```
 
