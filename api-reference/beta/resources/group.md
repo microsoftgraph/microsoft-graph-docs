@@ -51,6 +51,8 @@ by providing a [delta](../api/group_delta.md) function.
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations. Supported for only Office 365 groups.|
 |[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.|
 |[List photos](../api/group_list_photos.md) |[Photo](photo.md) collection| Get a photo object collection.|
+|[List channel](../api/group_list_channels.md) |[Channel](channel.md) collection| Get a channel object collection.|
+|[Create channel](../api/group_post_channels.md) |[Channel](channel.md)| Create a new Channel by posting to the channels collection.|
 |[Create setting](../api/directorysetting_post_settings.md) | [directorySetting](directorysetting.md) |Create a setting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
 |[Get setting](../api/directorysetting_get.md) | [directorySetting](directorysetting.md) |Read properties of a specific setting object.|
 |[List settings](../api/directorysetting_list.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
