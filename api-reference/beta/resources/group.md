@@ -1,7 +1,11 @@
 # group resource type
 
-Represents an Azure Active Directory group, which can be an Office 365 group, dynamic group, or security group.
+Represents an Azure Active Directory group, which can be an Office 365 group, Microsoft Team, dynamic group, or security group.
 Inherits from [directoryObject](directoryobject.md).
+
+> **Microsoft Teams and the group APIs**:
+> * Microsoft Teams are built upon Office 365 groups.  All the following methods for groups can also be used with teams, with the exception that 'Create group' does not currently allow you to create a team.  There are also some methods specific to Microsoft Teams, which are clearly labelled as such.
+> * Care must be taken if using the group APIs in a Microsoft Teams app - e.g. as part inside a 'tab' or 'bot' running inside Microsoft Teams - rather than in a standalone app.  This is because of differing consent models. Typically, users can directly consent to your Microsoft Teams app within a specific team.  However, currently [enterprise admins must also consent to your app (as registered in Azure AD) using the group APIs](../../../overview/release_notes.md), at which point it then has API access all of the groups/teams for each user.  You should ensure your Microsoft Teams app copes with not having the permissions it needs, and that it respects the user's intention about which teams it should operate in.  Note that these considerations do not apply if your are just using non-group [user APIs](user.md) that the user can always consent to themselves.
 
 This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
 
@@ -47,6 +51,8 @@ by providing a [delta](../api/group_delta.md) function.
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations. Supported for only Office 365 groups.|
 |[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.|
 |[List photos](../api/group_list_photos.md) |[Photo](photo.md) collection| Get a photo object collection.|
+|[List channel](../api/group_list_channels.md) |[Channel](channel.md) collection| Get a channel object collection.|
+|[Create channel](../api/group_post_channels.md) |[Channel](channel.md)| Create a new Channel by posting to the channels collection.|
 |[Create setting](../api/directorysetting_post_settings.md) | [directorySetting](directorysetting.md) |Create a setting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
 |[Get setting](../api/directorysetting_get.md) | [directorySetting](directorysetting.md) |Read properties of a specific setting object.|
 |[List settings](../api/directorysetting_list.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|

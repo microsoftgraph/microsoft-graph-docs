@@ -43,16 +43,15 @@ or access the ICS URL in the calendar resource.
 #### Using delta query
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
-## Groups
+## Groups and (beta) Microsoft Teams
 #### Policy
 Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App. 
 
-#### Group permission scopes
-Microsoft Graph exposes two permission scopes (*Group.Read.All* and *Group.ReadWrite.All*) for access to groups APIs.  
-These permission scopes must be consented to by an administrator (which is a change from preview).  In the future we plan to add new scopes for groups that can be consented by users.
+#### Permission scopes for groups and (beta) Microsoft Teams
+Microsoft Graph exposes two permission scopes (*Group.Read.All* and *Group.ReadWrite.All*) for access to the APIs for groups and Microsoft Teams.
+These permission scopes must be consented to by an administrator (which is a change from preview).  In the future we plan to add new scopes for groups and teams that can be consented by users.
 
-Also, only the API for core group administration and management supports access using delegated or app-only permissions. 
-All other features of the group API support only delegated permissions. 
+Also, only the API for core group administration and management supports access using delegated or app-only permissions. All other features of the group API support only delegated permissions. 
 
 Examples of group features that support delegated and app-only permissions: 
 
@@ -67,6 +66,18 @@ Examples of group features that support only delegated permissions:
 * Group conversations, events, photo
 * External senders, accepted or rejected senders, group subscription
 * User favorites and unseen count
+
+#### Teams in Microsoft Teams (beta)
+
+Microsoft Teams are built upon Office 365 groups.  All group APIs can also be used with teams, with the exception that 'Create group' does not currently allow you to create a team.  Future API releases will support this.
+
+#### Microsoft Teams channels (beta)
+
+Currently, you can read and create channels, but you cannot update or delete them.  Future API releases will support this.
+
+#### Microsoft Teams chat threads and chat messages (beta)
+
+Currently, you can create chat threads in channels, but you cannot read existing chat threads or add replies to them.  You also cannot read or write direct chats between users that are outside the scope of a team or channel.  Future API releases will add additional capabilities in this area.
 
 
 #### Adding and getting attachments of group posts
