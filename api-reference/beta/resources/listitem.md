@@ -1,7 +1,7 @@
 # ListItem resource
 
 This resource represents an item in a SharePoint **[list][]**.
-Columns in the list are available through the `columnSet` dictionary.
+Column values in the list are available through the `fieldValueSet` dictionary.
 
 ## Tasks on a listItem
 
@@ -11,11 +11,11 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 | Common task                    | HTTP method
 |:-------------------------------|:------------------------
 | [Get][]                        | GET /items/{item-id}
-| [Get column values][Get]       | GET /items/{item-id}?expand=columnSet
+| [Get column values][Get]       | GET /items/{item-id}?expand=fields
 | [Create][]                     | POST /items
 | [Delete][]                     | DELETE /items/{item-id}
 | [Update][]                     | PATCH /items/{item-id}
-| [Update column values][Update] | PATCH /items/{item-id}/columnSet
+| [Update column values][Update] | PATCH /items/{item-id}/fields
 
 [Get]: ../api/listItem_get.md
 [Create]: ../api/listItem_create.md
@@ -25,16 +25,16 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 ## JSON representation
 
 Here is a JSON representation of a **listItem** resource.
-Properties after the blank line are inherited from **[baseItem][]**.
+
 <!-- { "blockType": "resource", 
        "@odata.type": "microsoft.graph.listItem",
        "keyProperty": "id" } -->
 
 ```json
 {
-  "listItemId": 1,
   "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
 
+  /* inherited from baseItem */
   "id": "string",
   "name": "name of resource",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },

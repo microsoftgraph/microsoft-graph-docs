@@ -28,13 +28,13 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 ## JSON representation
 
 Here is a JSON representation of a **list** resource.
-Properties after the blank line are inherited from **[baseItem][]**.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.list",
        "keyProperty": "id", "optionalProperties": [ "items", "drive"] } -->
 
 ```json
 {
-  "fields": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
@@ -43,6 +43,7 @@ Properties after the blank line are inherited from **[baseItem][]**.
   "items": [ { "@odata.type": "microsoft.graph.listItem" } ],
   "drive": { "@odata.type": "microsoft.graph.drive" },
 
+  /* inherited from baseItem */
   "id": "string",
   "name": "name of list",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
@@ -61,7 +62,7 @@ The **list** resource has the following properties.
 
 | Property name | Type                            | Description
 |:--------------|:--------------------------------|:---------------------------
-| **fields**    | Collection([columnDefinition][]) | The collection of field definitions for this list.
+| **columns**   | Collection([columnDefinition][]) | The collection of field definitions for this list.
 | **list**      | [listInfo][]                    | Provides additional details about the list.
 
 The following properties are inherited from **[baseItem][]**.

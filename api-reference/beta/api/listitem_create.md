@@ -1,6 +1,6 @@
 # Create a new item in a list
 
-Create a new [listItem][] in a list.
+Create a new [listItem][] in a [list][].
 
 ## Prerequisites
 
@@ -18,10 +18,7 @@ POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 
 ### Request body
 
-**Note:** In this beta API you must first create an empty [listItem][] and then update it with column values.
-
-In the initial POST request body, supply an empty JSON object.
-Immediately follow up with an [update][] against the **columnSet** to supply its values.
+In the request body, supply a JSON representation of the [listItem][] resource to create.
 
 ### Example
 
@@ -34,6 +31,11 @@ POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
 {
+  "fields": {
+    "Title": "Widget",
+    "Color": "Purple",
+    "Weight": 32
+  }
 }
 ```
 
@@ -48,7 +50,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "f0e1ebd7-d919-4b1f-b765-080074afca3a",
+  "id": "20",
   "createdDateTime": "2016-08-30T08:26:00Z",
   "createdBy": {
     "user": {
@@ -68,10 +70,8 @@ Content-type: application/json
 
 **Note:** The response object is truncated for clarity. Default properties will be returned from the actual call.
 
-To finish creating the **listItem**, follow up this create with an [update][] call.
-
+[list]: ../resources/list.md
 [listItem]: ../resources/listItem.md
-[update]: listItem_update.md
 
 <!-- {
   "type": "#page.annotation",

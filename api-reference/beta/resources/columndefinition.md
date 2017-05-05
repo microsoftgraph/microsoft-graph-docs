@@ -75,7 +75,7 @@ In those cases, none of the column type facets will be populated, and the column
 [numberColumn]: numberColumn.md
 [personOrGroupColumn]: personOrGroupColumn.md
 [textColumn]: textColumn.md
-[columnSet]: fieldValueSet.md
+[fieldValueSet]: fieldValueSet.md
 
 [SPFieldType]: https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spfieldtype.aspx
 

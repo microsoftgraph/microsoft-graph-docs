@@ -6,8 +6,8 @@ The API design is likely to change as we incorporate feedback from developers.
 The SharePoint API in Microsoft Graph supports the following core scenarios:
 
 * Access to SharePoint **sites**, **lists**, and **drives** (document libraries)
-* Read-only support for **site** and **list** resources (no ability to create new sites or lists)
-* Read-write support for **listItems** and **driveItems**
+* Read-only support for **site** resources (no ability to create new sites)
+* Read-write support for **lists**, **listItems**, and **driveItems**
 * Address resources by SharePoint ID, URL, or relative path
 
 The SharePoint API exposes three major resource types:
@@ -20,10 +20,10 @@ The following is an example of a listItem resource.
 
 ```json
 {
-  "columnSet": {
+  "fields": {
     "Title": "Access card",
     "Employee": "Ryan Gregg",
-    "EmployeeId": 10,
+    "EmployeeId": "10",
     "CardSerial": "01235492",
     "Alias": "RGregg",
     "ID": 1,
@@ -39,7 +39,7 @@ The following is an example of a listItem resource.
   },
   "createdDateTime": "2016-09-20T06:15:25Z",
   "eTag": "48e941c3-9515-4c48-9760-c07c90c79d48,1",
-  "id": "48e941c3-9515-4c48-9760-c07c90c79d48",
+  "id": "4",
   "lastModifiedBy": {
     "user": {
       "id": "b757fdcb-0271-4807-b243-504139e4ba04",
@@ -47,18 +47,17 @@ The following is an example of a listItem resource.
     }
   },
   "lastModifiedDateTime": "2016-09-20T06:15:25Z",
-  "listItemId": 1
 }
 ```
 
 Resources expose data in three different ways:
 
 * _Properties_ (like **id** and **name**) expose simple values.
-* _Facets_ (like **columnSet** and **createdBy**) expose complex values.
+* _Facets_ (like **fields** and **createdBy**) expose complex values.
 * _References_ (like **items**) point to collections of other resources.
 
-You can expand references in your URL with the _expand_ query parameter; for example, `?expand=items`.
-You can request specific properties and facets with the _select_ query parameter; for example, `?select=id,columnSet`.
+You can expand references in your URL with the _expand_ query parameter; for example, `?expand=fields`.
+You can request specific properties and facets with the _select_ query parameter; for example, `?select=id,name`.
 By default, most properties and facets are returned while all references are hidden.
 For efficiency, we recommend that you specify _select_ and _expand_ to only return the data you care about.
 

@@ -11,7 +11,7 @@ Here is a JSON representation of a **fieldValueSet** resource.
 ```json
 {
     "Author": "Brad Cleaver",
-    "AuthorId": 13,
+    "AuthorLookupId": "13",
     "BookTitle": "Kangaroos and Wallabies: A Deep Dive",
     "PageCount": 350
 }
@@ -23,15 +23,15 @@ Each user-visible field in the **listItem** is returned as a name-value pair in 
 The example above is for a list that contains three columns, **Author**, **BookTitle**, and **PageCount**.
 
 Lookup fields (like `Author` above) are not returned by default.
-Instead, the server returns an 'id' field (like `AuthorId` above) referencing the listItem targeted in the lookup.
-The name of the 'id' field is the original field name followed by `Id`.
+Instead, the server returns a 'LookupId' field (like `AuthorLookupId` above) referencing the listItem targeted in the lookup.
+The name of the 'LookupId' field is the original field name followed by `LookupId`.
 
 Up to 12 lookup fields may be requested in a single query.
 The server will return lookup values if your request includes a `select` statement with the fields you need.
 Example:
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=fieldValueSet(select=Author,BookTitle,PageCount)
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Author,BookTitle,PageCount)
 ```
 
 You may request up to 12 lookup fields in a single query, plus any number of regular fields.

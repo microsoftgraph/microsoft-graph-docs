@@ -16,7 +16,8 @@ One of the following scopes is required to execute this request:
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=columnSet
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields(select=Column1,Column2)
 ```
 
 ## Example
@@ -26,7 +27,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 <!-- { "blockType": "request", "name": "get-list-item" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=columnSet
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
 
 ### Response
@@ -40,7 +41,7 @@ Content-type: application/json
 {
   "id": "d14922d8-43e6-4c8a-b029-e35c5b4e0d63",
   "listItemId": 2,
-  "columnSet": {
+  "fields": {
     "Name": "Widget",
     "Color": "Blue",
     "Quantity": 2357

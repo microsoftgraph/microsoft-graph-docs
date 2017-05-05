@@ -16,7 +16,8 @@ One of the following scopes is required to execute this request:
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=columnSet
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
 ### Example
@@ -26,7 +27,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 <!-- { "blockType": "request", "name": "get-list-items" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=columnSet
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
 ```
 
 #### Response
@@ -40,27 +41,24 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "62a5327f-48f8-4940-be9d-d9122da22a78",
-      "listItemId": 1,
-      "columnSet": {
+      "id": "2",
+      "fields": {
         "Name": "Gadget",
         "Color": "Red",
         "Quantity": 503
        }
     },
     {
-      "id": "d14922d8-43e6-4c8a-b029-e35c5b4e0d63",
-      "listItemId": 2,
-      "columnSet": {
+      "id": "4",
+      "fields": {
         "Name": "Widget",
         "Color": "Blue",
         "Quantity": 2357
        }
     },
     {
-      "id": "efcc7338-f373-4fe7-b3ce-e78931a6ec68",
-      "listItemId": 3,
-      "columnSet": {
+      "id": "7",
+      "fields": {
         "Name": "Gizmo",
         "Color": "Green",
         "Quantity": 92
