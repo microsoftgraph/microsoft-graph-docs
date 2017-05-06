@@ -210,17 +210,21 @@ Content-length: 248
 
 
 ##### Request 3
+
 The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.
+
 <!-- {
   "blockType": "request",
   "name": "get_message_in_text"
 }-->
-```http
-Prefer: outlook.body-content-type="text"
 
+```http
 GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')?$select=subject,body,bodyPreview,uniqueBody
+Prefer: outlook.body-content-type="text"
 ```
+
 ##### Response 3
+
 Here is an example of the response. 
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
 <!-- {

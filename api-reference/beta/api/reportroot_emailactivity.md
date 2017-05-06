@@ -91,7 +91,8 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/I0bJ_HpgnSeYRg4sXTiKqggV6eXU0t__XDezYGO-NQw
 ```
 
-Follow the 302 redirection and the downloading CSV file will have the schema as belowing.
+Follow the 302 redirection and the downloading CSV file will have the schema as below.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,7 +107,7 @@ Data as of,User principal name,User display name,Deleted,Deleted date,Last activ
 ### Other valid requests
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "reportroot_emailactivity"
 }-->
 

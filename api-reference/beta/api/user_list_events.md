@@ -85,9 +85,8 @@ The request does not specify any `Prefer: outlook.body-content-type` header to i
   "name": "get_events"
 }-->
 ```http
-Prefer: outlook.timezone="Pacific Standard Time"
-
 GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
+Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### Response 1
 Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.

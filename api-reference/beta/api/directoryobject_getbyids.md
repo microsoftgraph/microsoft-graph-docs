@@ -61,10 +61,11 @@ Content-type: application/json
 ##### Response
 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "directoryObject",
+  "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
 

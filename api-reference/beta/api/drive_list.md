@@ -43,7 +43,7 @@ GET https://graph.microsoft.com/beta/me/drives
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.drive",
   "isCollection": true
 } -->

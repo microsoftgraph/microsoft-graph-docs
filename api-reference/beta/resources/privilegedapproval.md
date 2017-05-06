@@ -46,7 +46,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "approvalDuration": String (timestamp),
+  "approvalDuration": "string (timestamp)",
   "approvalState": "string",
   "approvalType": "string",
   "approverReason": "String",

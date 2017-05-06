@@ -65,10 +65,11 @@ Content-length: 305
     }
   },
   "lastModifiedBy": {
-   "user": {
+    "user": {
       "id": "id-value",
       "displayName": "displayName-value"
-   }
+    }
+  }
 }
 ```
 
