@@ -13,7 +13,7 @@ All examples below are relative to `https://graph.microsoft.com/v1.0`.
 | [Get site by path][] | GET /sites/{hostname}:/{site-path}                |
 
 [Get site]: ../api/site_get.md
-[Get root site][]: ../api/site_get.md
+[Get root site]: ../api/site_get.md
 [Get site by path]: ../api/site_get.md
 
 ## JSON representation
@@ -63,7 +63,7 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
 | **displayName**          | string                              | The full title for the site. Read-only.                                                        |
 | **lastModifiedDateTime** | DateTimeOffset                      | The date and time the item was last modified. Read-only.                                       |
 | **name**                 | string                              | The name / title of the item.                                                                  |
-| **root**                 | [root][root.md]                     | If present, indicates that this is the root site in the site collection. Read-only.            |
+| **root**                 | [root](root.md)                     | If present, indicates that this is the root site in the site collection. Read-only.            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | Provides details about the site's site collection. Available only on the root site. Read-only. |
 | **webUrl**               | string (url)                        | URL that displays the item in the browser. Read-only.                                          |
@@ -79,10 +79,10 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
 | **lists**         | Collection([list][])             | The collection of lists under this site.
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
 
-[column]: columnDefinition.md
-[baseItem]: baseItem.md
+[columnDefinition]: columndefinition.md
+[baseItem]: baseitem.md
 [drive]: drive.md
-[identitySet]: identitySet.md
+[identitySet]: identityset.md
 [list]: list.md
 [site]: site.md
 

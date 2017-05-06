@@ -137,7 +137,7 @@ This resource supports [delta query](../../../concepts/delta_query_overview.md) 
 |trendingAround|[driveItem](driveitem.md) collection| Read-only. Nullable.|
 |workingWith|[User](user.md) collection| Read-only. Nullable.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
-|sites|[site][] collection | A collection of sites available for this user. Read-only. |
+|sites|[site](site.md) collection | A collection of sites available for this user. Read-only. |
 
 ## JSON representation
 

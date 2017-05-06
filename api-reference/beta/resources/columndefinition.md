@@ -3,6 +3,7 @@
 ## JSON representation
 
 Here is a JSON representation of a ColumnDefinition resource.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnDefinition",
        "keyProperty": "id", "optionalProperties": [ ] } -->
 
@@ -70,12 +71,13 @@ In those cases, none of the column type facets will be populated, and the column
 [choiceColumn]: choiceColumn.md
 [currencyColumn]: currencyColumn.md
 [dateTimeColumn]: dateTimeColumn.md
-[defaultColumnValue]: defaultColumnValue.md
 [lookupColumn]: lookupColumn.md
 [numberColumn]: numberColumn.md
 [personOrGroupColumn]: personOrGroupColumn.md
 [textColumn]: textColumn.md
 [fieldValueSet]: fieldValueSet.md
+[fields]: fieldvalueset.md
+[listItem]: listitem.md
 
 [SPFieldType]: https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spfieldtype.aspx
 

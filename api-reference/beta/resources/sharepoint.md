@@ -109,7 +109,6 @@ GET https://graph.microsoft.com/beta/sites/{hostname},{spsite-id}
 [site]: site.md
 [list]: list.md
 [drive]: drive.md
-[listItem]: listItem.md
 [siteCollection]: siteCollection.md
 
 <!-- {

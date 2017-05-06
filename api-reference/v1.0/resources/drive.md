@@ -58,6 +58,9 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | sharepointIds        | [sharepointIds][]             | Returns identifiers useful for SharePoint REST compatibility. Read-only.                                                                                                                                                         |
 | webUrl               | string (url)                  | URL that displays the resource in the browser. Read-only.                                                                                                                                                                        |
 
+[identitySet]: identityset.md
+[sharepointIds]: sharepointids.md
+
 ## Relationships
 
 | Relationship | Type                                 | Description                                                              |

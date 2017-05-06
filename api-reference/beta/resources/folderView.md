@@ -62,8 +62,8 @@ The following values are defined for the **viewType** property.
 | `thumbnails` | A view that uses larger thumbnails of driveItems to represent the items.
 
 
-[item-resource]: item.md
-[folder-facet]: folder_facet.md
+[item-resource]: driveitem.md
+[folder-facet]: folder.md
 
 <!-- uuid: f9e446fd-190b-4692-a605-bb60e78f1f19
 2017-05-03 02:34:40 UTC -->

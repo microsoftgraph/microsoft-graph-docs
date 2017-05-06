@@ -2,10 +2,7 @@
 
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
-<<<<<<< HEAD
-=======
 This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
->>>>>>> ff9e9d68... Update resources for v1.0
 
 ## Methods
 
@@ -115,7 +112,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
-|sites|[site][] collection | A collection of sites available for this user. Read-only. |
+|sites|[site](site.md) collection | A collection of sites available for this user. Read-only. |
 
 ## JSON representation
 
