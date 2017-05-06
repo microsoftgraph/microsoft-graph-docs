@@ -54,7 +54,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.share"
+  "@odata.type": "microsoft.graph.sharedDriveItem"
 } -->
 
 ```http
@@ -63,20 +63,12 @@ Content-type: application/json
 Content-length: 330
 
 {
-  "id": "id-value",
-  "name": "name-value",
+  "id": "6B6D1017-76B8-4229-8775-980FA003F7EC",
+  "name": "Shared document.docx",
   "owner": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "device": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
     "user": {
-      "displayName": "displayName-value",
-      "id": "id-value"
+      "displayName": "Ryan Gregg",
+      "id": "A5FE3621-7759-40F6-A458-BB985F075E81"
     }
   }
 }

@@ -47,7 +47,7 @@ Content-type: application/json
   "lastModifiedDateTime": "2016-08-30T08:32:00Z",
   "list": {
     "hidden": false,
-    "template": "generic"
+    "template": "genericList"
     }
 }
 ```

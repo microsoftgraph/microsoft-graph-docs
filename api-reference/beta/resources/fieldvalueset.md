@@ -12,15 +12,16 @@ Here is a JSON representation of a **fieldValueSet** resource.
 {
     "Author": "Brad Cleaver",
     "AuthorLookupId": "13",
-    "BookTitle": "Kangaroos and Wallabies: A Deep Dive",
-    "PageCount": 350
+    "Name": "Kangaroos and Wallabies: A Deep Dive",
+    "Color": "Red",
+    "Quantity": 350,
 }
 ```
 
 ## Properties
 
 Each user-visible field in the **listItem** is returned as a name-value pair in the **fieldValueSet**.
-The example above is for a list that contains three columns, **Author**, **BookTitle**, and **PageCount**.
+The example above is for a list that contains four columns, **Author**, **Name**, **Color**, and **Quantity**.
 
 Lookup fields (like `Author` above) are not returned by default.
 Instead, the server returns a 'LookupId' field (like `AuthorLookupId` above) referencing the listItem targeted in the lookup.

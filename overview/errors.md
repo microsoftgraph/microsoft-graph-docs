@@ -1,13 +1,5 @@
 # Microsoft Graph error responses and resource types
 
-<!--In this article:
-  
--	[Status code](#msg_status_code)
--	[Error resource type](#msg_error_resource_type)
--	[Code property](#msg_code_property)
-
-<a name="msg_error_response"> </a> -->
-
 Errors in Microsoft Graph are returned using standard HTTP status codes, as well as a JSON error
 response object.
 
@@ -43,6 +35,7 @@ The error response is a single JSON object that contains a single property
 named **error**. This object includes all the details of the error. You can use the information returned here instead of or in addition to the HTTP status code. The following is an example of a full JSON error body.
 
 <!-- { "blockType": "example", "@odata.type": "sample.error", "expectError": true, "name": "example-error-response"} -->
+
 ```json
 {
   "error": {
@@ -55,8 +48,6 @@ named **error**. This object includes all the details of the error. You can use 
   }
 }
 ```
-
-<!--<a name="msg_error_resource_type"> </a> -->
 
 ## Error resource type
 
@@ -71,6 +62,7 @@ specification for error responses.
 The error resource is composed of these resources:
 
 <!-- { "blockType": "resource", "@odata.type": "sample.error" } -->
+
 ```json
 {
   "error": { "@odata.type": "odata.error" }  
@@ -83,6 +75,7 @@ Inside the error response is an error resource that includes the following
 properties:
 
 <!-- { "blockType": "resource", "@odata.type": "odata.error", "optionalProperties": [ "target", "details", "innererror"] } -->
+
 ```json
 {
   "code": "string",
@@ -96,15 +89,6 @@ properties:
 | **code**       | string                 | An error code string for the error that occured                                                            |
 | **message**    | string                 | A developer ready message about the error that occured. This should not be displayed to the user directly. |
 | **innererror** | error object           | Optional. Additional error objects that may be more specific than the top level error.                     |
-<!-- {
-  "type": "#page.annotation",
-  "description": "Understand the error format for the API and error codes.",
-  "keywords": "error response, error, error codes, innererror, message, code",
-  "section": "documentation",
-  "tocPath": "Misc/Error Responses"
-} -->
-
-<!--<a name="msg_code_property"> </a> -->
 
 #### Code property
 
@@ -163,6 +147,7 @@ dynamic information specific to the failed request. You should only code
 against error codes returned in `code` properties.
 
 #### Detailed error codes
+
 The following are some additional errors that your app might encounter within the nested
 `innererror` objects. Apps are not required to handle these, but can if they
 choose. The service might add new error codes or stop returning old ones at any
@@ -213,8 +198,3 @@ time, so it is important that all apps be able to handle the [basic error codes]
 | **uploadSessionNotFound**          | Upload session not found.
 | **virusSuspicious**                | This document is suspicious and may have a virus.
 | **zeroOrFewerResultsRequested**    | Zero or fewer results requested.
-
-<!-- ##Additional Resources##
-
-- [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
-- [Hands on lab: Deep dive into the Microsoft Graph API](http://dev.office.com/hands-on-labs/4585) -->
