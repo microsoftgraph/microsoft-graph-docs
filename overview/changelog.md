@@ -2,6 +2,36 @@
 
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
+## May 2017
+
+### SharePoint Sites API
+
+|**Change type**|**Version**|**Description**|
+|:--------------|:----------|:--------------|
+| Addition      | v1.0      | Releasing the Sites API in v1.0 (previously only in beta).<br/> Added the **site** and **siteCollection** resource types.
+
+### SharePoint Lists API
+
+|**Change type**|**Version**|**Description**|
+|:--------------|:----------|:--------------|
+| Change | beta | Removed the **sharepoint** navigation properties. Sites are now accessed directly through the **sites** navigation property. <br/> Removed the **fieldDefinition** resource. It has been replaced by **columnDefinition**. <br/> Removed the **siteCollectionId** and **siteId** properties from **site**. Use **sharepointIds** instead. <br/> Removed the **listItemId** property from **listItem**. Use **sharepointIds** instead. <br/> Renamed the **columnSet** property on **listItem** to **fields**. <br/> Changed **site** resources to use the SharePoint hostname as part of their ID.
+| Addition | beta | Added the **booleanColumn**, **calculatedColumn**, **choiceColumn**, **dateTimeColumn**, **lookupColumn**, **numberColumn**, **personOrGroupColumn**, and **textColumn** resource types. <br/> Added the **displayName** property to **site**. <br/> Added the **columns** navigation property to **site**. <br/> Added the **list** and **listItem** navigation properties to **sharedDriveItem**. <br/> Added the **sharepointIds** property to **list** and **listItem**, and **site**. <br/> Added the **columnDefinition** resource type.
+
+### Drive APIs
+
+|**Change type**|**Version**|**Description**|
+|:--------------|:----------|:--------------|
+| Addition | v1.0 | Added the **baseItem** resource type, consisting of basic properties from **driveItem**.
+| Addition | v1.0 and Beta | Added the **sourceItemId** property to **thumbnail**. <br/> Added the **siteUrl** property to **sharepointIds**. <br/> Added the **sharedBy** and **sharedDateTime** properties to **shared**. <br/> Added the **shared** property to **remoteItem**. <br/> Added the **sharepointIds** property to **drive** and **itemReference**. <br/> Added **lastAccessedDateTime** to **fileSystemInfo**. <br/> Added the **driveItem** and **site** navigation properties to **sharedDriveItem**. <br/> Added the **parentReference** property to **baseItem**.
+| Change | v1.0 and Beta | Changed **driveItem** and **sharedDriveItem** to inherit from **baseItem**. <br/> Marked **identity** as an Open Type.
+| Change | Beta | Added the **configuratorUrl** and **webHtml** properties to **sharingLink**. <br/> Added the **folderView** resource type and the **view** property to the **folder** resource type. <br/> Added the **listItem** navigation property to **driveItem**. <br/> Added the **list** navigation property to **drive**.
+
+### Group
+
+|**Change type**|**Version**|**Description**|
+|:--------------|:----------|:--------------|
+| Addition | v1.0 and beta | Added the **drives** and **sites** navigation properties to **group**.
+
 ## April 2017
 
 ### Administrative units property changes

@@ -149,6 +149,12 @@
       <Item text="Delete permission" url="/en-us/api-reference/v1.0/api/permission_delete" SEOKeyword="Delete permission, Microsoft Graph API, permission API" SEODescription="Delete permission." />
     </Item>
   </Item>
+  <Item text="SharePoint" url="/en-us/api-reference/v1.0/resources/sharepoint" SEOKeyword="sharepoint, sites, lists, drives, microsoft graph api, sharepoint api">
+    <Item text="Sites" url="/en-us/api-reference/v1.0/resources/site" SEOKeyword="sharepoint, site, sites, microsoft graph api, sharepoint sites api" >
+      <Item text="Get site" url="/en-us/api-reference/v1.0/api/site_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />>
+      <Item text="List subsites" url="/en-us/api-reference/v1.0/api/subsites_list" SEOKeyword="sharepoint, list subsites" SEODescription="" />
+    </Item>
+  </Item>
   <Item text="Excel" url="/en-us/api-reference/v1.0/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
     <Item text="Workbook" url="/en-us/api-reference/v1.0/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
       <Item text="List tables" url="/en-us/api-reference/v1.0/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
@@ -820,14 +826,13 @@
     <Item text="SharePoint" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="sharepoint, sites, lists, drives, microsoft graph api, sharepoint api">
       <Item text="Sites" url="/en-us/api-reference/beta/resources/site" SEOKeyword="sharepoint, site, sites, microsoft graph api, sharepoint sites api" >
         <Item text="Get site" url="/en-us/api-reference/beta/api/site_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
-        <Item text="Get by URL" url="/en-us/api-reference/beta/api/baseitem_getbyurl" SEOKeyword="sharepoint, getbyurl, site" SEODescription="" />
         <Item text="Get lists" url="/en-us/api-reference/beta/api/lists_list" SEOKeyword="sharepoint, list lists, get lists" SEODescription="" />
         <Item text="List subsites" url="/en-us/api-reference/beta/api/subsites_list" SEOKeyword="sharepoint, list subsites" SEODescription="" />
       </Item>
       <Item text="Lists" url="/en-us/api-reference/beta/resources/list" SEOKeyword="sharepoint, list, lists, microsoft graph api, sharepoint list api">
         <Item text="Get list" url="/en-us/api-reference/beta/api/list_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
-        <Item text="Get by URL" url="/en-us/api-reference/beta/api/baseitem_getbyurl" SEOKeyword="sharepoint, getbyurl, site" SEODescription="" />
         <Item text="Get items" url="/en-us/api-reference/beta/api/listitems_list" SEOKeyword="sharepoint, list items, get items, get listitems" SEODescription="" />
+        <Item text="Create list" url="/en-us/api-reference/beta/api/list_create" SEOKeyword="sharepoint, create list, create, microsoft graph api, sharepoint list api" SEODescription="" />
       </Item>
       <Item text="ListItems" url="/en-us/api-reference/beta/resources/listitem" SEOKeyword="sharepoint, listitems, microsoft graph api, sharepoint list api" SEODescription="">
         <Item text="Get item" url="/en-us/api-reference/beta/api/listitem_get" SEOKeyword="sharepoint, get item, microsoft graph api, sharepoint list api" SEODescription="" />
