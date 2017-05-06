@@ -64,22 +64,27 @@ The first example gets the specified event. It specifies the following:
 
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time. 
 - A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
+
 <!-- {
   "blockType": "request",
   "name": "get_event"
 }-->
-```http
-Prefer: outlook.timezone="Pacific Standard Time"
 
+```http
 GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
+Prefer: outlook.timezone="Pacific Standard Time"
 ```
+
 ##### Response
+
 Here is an example of the response. The **body** property is returned in the default format of HTML.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

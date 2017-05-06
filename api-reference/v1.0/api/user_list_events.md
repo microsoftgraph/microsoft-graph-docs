@@ -69,9 +69,8 @@ Here is an example of the request. It specifies the following:
   "name": "get_events"
 }-->
 ```http
-Prefer: outlook.timezone="Pacific Standard Time"
-
 GET https://graph.microsoft.com/v1.0/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
+Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### Response
 Here is an example of the response. The **body** property is returned in the default HTML format.
