@@ -242,18 +242,13 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |Change  |Beta|New [endpoints](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/group_list_endpoints) navigation property on [groups](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) |
 |Addition|Beta|New entity:</br>[licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/licensedetails) |
 |Change  |Beta|New [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_licensedetails) navigation property on [users](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) |
+|Addition|Beta|New entity:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
 
 ### Reports APIs
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
 |Addition|Beta|Introduced the new preview API for Office 365 Reports. You can use it to get usage reports of how people in your business are using Office 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Office 365 license at all. For more details, see [report](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/report).|
-
-### Directory APIs
-
-|**Change type**|**Version**|**Description**|
-|:-------------|:-----------|:--------------|
-|Addition|Beta|New entity:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
 
 ## February 2017
 
