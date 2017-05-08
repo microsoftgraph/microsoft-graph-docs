@@ -3,6 +3,9 @@
 Positions the chart relative to cells on the worksheet.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -12,7 +15,7 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/setPosition
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body

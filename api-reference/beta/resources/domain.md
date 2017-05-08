@@ -8,11 +8,13 @@ To associate a domain with a tenant:
 
 1. [Associate](../api/domain_post_domains.md) a domain with a tenant.
 
-2. [Verify](../api/domain_list_verificationdnsrecords.md) ownership of the domain. Verification records can be added to the domain through the domain registrar or DNS server configuration.
+2. [Retrieve](../api/domain_list_verificationdnsrecords.md) the domain verification records. Add the verification record details to the domain's zone file using the domain registrar or DNS server configuration.
 
-3. [Indicate](../api/domain_update.md) the supported services you plan to use with the domain.
+3. [Verify](../api/domain_verify.md) the ownership of the domain. This will verify the domain and set the *isVerified* property to *true*.
 
-4. [Configure](../api/domain_list_serviceconfigurationrecords.md) the domain for supported services. Configuration records can be added to the domain through the domain registrar or DNS server configuration.
+4. [Indicate](../api/domain_update.md) the supported services you plan to use with the domain.
+
+5. [Configure](../api/domain_list_serviceconfigurationrecords.md) supported services by retrieving a list of records needed to enable services for the domain. Add the configuration record details to the domain's zone file using the domain registrar or DNS server configuration.
 
 ### Methods
 

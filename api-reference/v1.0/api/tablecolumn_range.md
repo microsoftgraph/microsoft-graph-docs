@@ -3,6 +3,9 @@
 Gets the range object associated with the entire column.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -13,7 +16,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/Range
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body

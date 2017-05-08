@@ -4,12 +4,10 @@ The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is
 
 ## Properties
 | Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|enabled|Int32|            |
-|suspended|Int32|            |
-|warning|Int32|            |
-
-
+|:-------------|:-----|:----------|
+|enabled|Int32| The number of units that are enabled. |
+|suspended|Int32| The number of units that are suspended. |
+|warning|Int32| The number of units that are in warning status. |
 
 ## JSON representation
 

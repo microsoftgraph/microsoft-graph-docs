@@ -44,3 +44,4 @@ For details and a list of all the properties, see the [user](user.md) object.
 |[`/users/{id}/events`](../api/user_list_events.md) | Lists the user's upcoming events in their calendar. |
 |[`/users/{id}/drive`](../api/drive_get.md)| Gets the user's OneDrive file store. |
 |[`/users/{id}/memberOf`](../api/user_list_memberof.md)| Lists the groups that the user is a member of. |
+|[`/users/{id}/joinedTeams`](../api/user_list_joinedteams.md)| Lists the Microsoft Teams that the user is a member of. |

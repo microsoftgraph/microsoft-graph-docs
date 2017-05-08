@@ -3,18 +3,21 @@
 Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/BoundingRect
-POST /workbook/worksheets(<id|name>)/range(<address>)/BoundingRect
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/BoundingRect
+GET /workbook/names(<name>)/range/BoundingRect
+GET /workbook/worksheets(<id|name>)/range(<address>)/BoundingRect
+GET /workbook/tables(<id|name>)/columns(<id|name>)/range/BoundingRect
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -36,7 +39,7 @@ Here is an example of the request.
   "name": "range_boundingrect"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/BoundingRect
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/BoundingRect
 Content-type: application/json
 Content-length: 42
 

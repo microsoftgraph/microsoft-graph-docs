@@ -3,18 +3,21 @@
 Returns the used range of the given range object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/UsedRange
-POST /workbook/worksheets(<id|name>)/range(<address>)/UsedRange
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/UsedRange
+GET /workbook/names(<name>)/range/UsedRange
+GET /workbook/worksheets(<id|name>)/range(<address>)/UsedRange
+GET /workbook/tables(<id|name>)/columns(<id|name>)/range/UsedRange
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -36,7 +39,7 @@ Here is an example of the request.
   "name": "range_usedrange"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/UsedRange
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/UsedRange
 Content-type: application/json
 Content-length: 24
 

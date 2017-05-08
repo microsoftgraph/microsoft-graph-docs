@@ -3,18 +3,21 @@
 Gets a column contained in the range.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Column
-POST /workbook/worksheets(<id|name>)/range(<address>)/Column
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Column
+GET /workbook/names(<name>)/range/Column
+GET /workbook/worksheets(<id|name>)/range(<address>)/Column
+GET /workbook/tables(<id|name>)/columns(<id|name>)/range/Column
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -36,7 +39,7 @@ Here is an example of the request.
   "name": "range_column"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/Column
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/Column
 Content-type: application/json
 Content-length: 21
 

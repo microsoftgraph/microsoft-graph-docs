@@ -6,7 +6,7 @@ Adds a domain to the tenant.
 
 ### Prerequisites
 
-One of the following **scopes** are required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
+One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
 
 ### HTTP request
 

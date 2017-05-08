@@ -2,8 +2,11 @@
 
 A message in a mailFolder.
 
-This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+This resource supports:
 
+- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
+by providing a [delta](../api/message_delta.md) function.
 
 ## Methods
 
@@ -18,6 +21,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |[createForward](../api/message_createforward.md)|[Message](message.md)|Create a draft of the Forward message. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
 |[createReply](../api/message_createreply.md)|[Message](message.md)|Create a draft of the Reply message. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
 |[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)|Create a draft of the Reply All message. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
+|[delta](../api/message_delta.md)|[message](message.md) collection| Get a set of messages that have been added, deleted, or updated in a specified folder.|
 |[forward](../api/message_forward.md)|None|Forward a message. The message is then saved in the Sent Items folder.|
 |[move](../api/message_move.md)|[Message](message.md)|Move the message to a folder. This creates a new copy of the message in the destination folder.|
 |[reply](../api/message_reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
@@ -29,6 +33,8 @@ This resource lets you add your own data to custom properties using [extensions]
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties in a new or existing instance of a resource.|
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension object or objects identified by name or fully qualified name.|
+|**Schema extensions**| | |
+|[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Extended properties**| | |
 |[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[message](message.md)  |Create one or more single-value extended properties in a new or existing message.   |
 |[Get message with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [message](message.md) | Get messages that contain a single-value extended property by using `$expand` or `$filter`. |
@@ -146,9 +152,11 @@ Here is a JSON representation of the resource
 
 - [Get mailbox settings](../api/user_get_mailboxsettings.md) 
 - [Update mailbox settings](../api/user_update_mailboxsettings.md)
+- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
+- [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md)
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

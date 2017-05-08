@@ -10,6 +10,8 @@ You can access a set of Excel objects (such as Table, Range, or Chart) by using 
 returns a collection of worksheet objects that are part of the workbook.    
 
 
+** Note: The Excel REST API supports only Office Open XML file formatted workbooks. The `.xls` extension workbooks are not supported. 
+
 ## Authorization and scopes
 
 You can use the [Azure AD v.20 endpoint](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
@@ -147,6 +149,34 @@ content-type: application/json;odata.metadata
 }
 ```
 
+#### Get a new worksheet 
+ 
+<!-- { "blockType": "ignored" } -->
+```http
+GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/Sheet32243
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+```
+
+Response 
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP code: 200, OK
+content-type: application/json;odata.metadata 
+
+{
+  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
+  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets(%27%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D%27)",
+  "id": "{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}",
+  "name": "Sheet32243",
+  "position": 5,
+  "visibility": "Visible"
+}
+```
+
+** Note: Worksheets can also be retrieved using the ID. However, currently the ID contains `{` and '}' characters, which needs to be URL encoded for the API to work. Example: In order to get a worksheet with ID of `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, URL encode the ID in the path as `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`. 
+
 #### Delete a worksheet
 
 Request
@@ -169,7 +199,7 @@ HTTP code: 204, No Content
 Request 
 
 ```
-PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('%7B00000000-0001-0000-0100-000000000000%7D')
+PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/SheetA
 content-type: Application/Json 
 accept: application/Json 
 authorization: Bearer {access-token} 
@@ -229,6 +259,8 @@ content-type: application/json;odata.metadata
   ]
 }
 ```
+
+** Note: Chart ID contains `{` and `}` characters (example: `{00000000-0008-0000-0100-000003000000}`), which needs to be URL encoded for the API to work. Example: In order to get a chart object, URL encode the ID in the path as `/charts/%7B00000000-0008-0000-0100-000003000000%7D`. 
 
 #### Get chart image
 
@@ -1192,7 +1224,7 @@ You can access the workbook functions through a collection of functions included
 ##### Request
 <!-- { "blockType": "ignored" } -->
 ```http
-https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
+https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/pmt
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -1213,7 +1245,7 @@ HTTP code: 200, OK
 content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookFunctionResult",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#workbookFunctionResult",
     "@odata.type": "#microsoft.graph.workbookFunctionResult",
     "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/root/workbook/functions/pmt()",
     "error": null,

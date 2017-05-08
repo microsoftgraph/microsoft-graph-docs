@@ -3,18 +3,21 @@
 Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Cell
-POST /workbook/worksheets(<id|name>)/range(<address>)/Cell
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Cell
+GET /workbook/names(<name>)/range/Cell
+GET /workbook/worksheets(<id|name>)/range(<address>)/Cell
+GET /workbook/tables(<id|name>)/columns(<id|name>)/range/Cell
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -37,7 +40,7 @@ Here is an example of the request.
   "name": "range_cell"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/Cell
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/Cell
 Content-type: application/json
 Content-length: 37
 

@@ -3,6 +3,9 @@
 Update the properties of chartdatalabels object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -11,7 +14,7 @@ PATCH /workbook/worksheets(<id|name>)/charts(<name>)/datalabels
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body

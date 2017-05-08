@@ -3,6 +3,9 @@
 Resets the range background.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -14,7 +17,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/fill/clear
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body

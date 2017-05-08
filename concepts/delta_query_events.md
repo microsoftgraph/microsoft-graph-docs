@@ -1,4 +1,4 @@
-# Get incremental changes to events in a calendar view (preview)
+# Get incremental changes to events in a calendar view 
 
 A calendar view is a collection of events in a date/time range from the default calendar (../me/calendarview) 
 or some other calendar of the user's. By using delta query, you can get 
@@ -19,8 +19,8 @@ Delta query for events is specific to a calendar and date/time range that you sp
 you need to track each calendar individually. 
 
 Tracking event changes in a calendar view typically is a round of one or more GET requests with 
-the [delta](../api-reference/beta/api/event_delta.md) function. The initial GET 
-request is very much like the way you [list a calendarView](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/calendar_list_calendarview), 
+the [delta](../api-reference/v1.0/api/event_delta.md) function. The initial GET 
+request is very much like the way you [list a calendarView](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_calendarview), 
 except that you include the **delta** function:
 
 ```
@@ -88,7 +88,7 @@ The first request specifies the following:
   "name": "get_calendarview_delta_1"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -109,8 +109,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -180,7 +180,7 @@ the same _startDateTime_ and _endDateTime_ parameters as in the initial request,
   "name": "get_calendarview_delta_2"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -200,8 +200,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -272,7 +272,7 @@ The third request continues to use the latest `nextLink` returned from the last 
   "name": "get_calendarview_delta_3"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -294,8 +294,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -343,7 +343,7 @@ Your first request in the next round will look like the following, assuming you 
   "name": "get_calendarview_delta_next"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -360,8 +360,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -412,6 +412,6 @@ Content-type: application/json
 ## See also
 
 - [Microsoft Graph delta query](../Concepts/delta_query_overview.md)
-- [Get incremental changes to messages (preview)](../Concepts/delta_query_messages.md)
-- [Get incremental changes to groups (preview)](../Concepts/delta_query_groups.md)
-- [Get incremental changes to users (preview)](../Concepts/delta_query_users.md)
+- [Get incremental changes to messages](../Concepts/delta_query_messages.md)
+- [Get incremental changes to groups](../Concepts/delta_query_groups.md)
+- [Get incremental changes to users](../Concepts/delta_query_users.md)

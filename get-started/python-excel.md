@@ -16,9 +16,9 @@ This walkthrough describes how to make requests to the Excel REST API from a Pyt
 
 
 ## Authorization and scopes
-You can use the [Azure AD v2.0 endpoint](https://graph.microsoft.io/en-us/docs/authorization/converged_auth) to authenticate Excel REST API calls. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
+You can use the [Azure AD v2.0 endpoint](https://graph.microsoft.io/en-us/docs/concepts/converged_auth) to authenticate Excel REST API calls. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
   
-One of the following [permission scopes](https://graph.microsoft.io/en-us/docs/authorization/permission_scopes) is required to use the Excel resource:
+One of the following [permission scopes](https://graph.microsoft.io/en-us/docs/concepts/permission_scopes) is required to use the Excel resource:
 
 * Files.Read 
 * Files.ReadWrite

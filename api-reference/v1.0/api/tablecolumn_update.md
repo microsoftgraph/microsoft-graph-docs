@@ -3,6 +3,9 @@
 Update the properties of tablecolumn object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -12,7 +15,7 @@ PATCH /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body

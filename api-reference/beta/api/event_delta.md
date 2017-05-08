@@ -113,8 +113,8 @@ Content-length: 359
 
 ### See also
 
-- [Microsoft Graph delta query (preview)](../../../concepts/delta_query_overview.md)
-- [Get incremental changes to messages in a folder (preview)](../../../concepts/delta_query_messages.md)
+- [Microsoft Graph delta query](../../../concepts/delta_query_overview.md)
+- [Get incremental changes to events in a folder](../../../concepts/delta_query_events.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

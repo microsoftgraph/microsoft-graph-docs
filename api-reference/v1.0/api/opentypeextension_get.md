@@ -6,9 +6,9 @@ The following table lists the three scenarios where you can get an open extensio
 
 |**GET scenario**|**Supported resources**|**Response body**|
 |:-----|:-----|:-----|
-|Get a specific extension from a known resource instance.| [contact](../resources/contact.md), [event](../resources/event.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md) | Open extension only.|
-|Get a known resource instance expanded with a specific extension.|Contact, event, group event, message|A resource instance expanded with the open extension.|
-|Find and expand resource instances with a specific extension. |Contact, event, group event, message|Resource instances expanded with the open extension.|
+|Get a specific extension from a known resource instance.| [Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md) | Open extension only.|
+|Get a known resource instance expanded with a specific extension.|Device, event, group, group event, group post, message, organization, personal contact, user |A resource instance expanded with the open extension.|
+|Find and expand resource instances with a specific extension. |Event, group event, group post, message, personal contact|Resource instances expanded with the open extension.|
 
 
 ## Prerequisites
@@ -17,10 +17,14 @@ One of the following **permissions** is required to execute this API, depending 
 
 |**Supported resource**|**Permission**|**Supported resource**|**Permission** |
 |:-----|:-----|:-----|:-----|
-| [event](../resources/event.md) | _Calendars.Read_ | [group event](../resources/event.md) | _Calendars.Read_ | 
-| [Group post](../resources/post.md) | _Group.Read.All_ | [message](../resources/message.md) | _Mail.Read_ | 
-| [Personal contact](../resources/contact.md) | _Contacts.Read_ |
- 
+| [Device](../resources/device.md) | _Directory.Read.All_ | [Event](../resources/event.md) | _Calendars.Read_ | 
+| [Group](../resources/group.md) | _Group.Read.All_ | [Group event](../resources/event.md) | _Group.Read.All_ | 
+| [Group post](../resources/post.md) | _Group.Read.All_ | [Message](../resources/message.md) | _Mail.Read_ | 
+| [Organization](../resources/organization.md) | _Directory.Read.All_ | [Personal contact](../resources/contact.md) | _Contacts.Read_ |
+| [User](../resources/user.md) | _User.Read.All_ | | |
+
+
+
 ## HTTP request
 
 This section lists the syntax for each of the three `GET` scenarios described above.
@@ -32,25 +36,43 @@ navigation property of that instance.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /devices/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/events/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+GET /groups/{Id}/extensions/{extensionId}
 GET /groups/{Id}/events/{Id}/extensions/{extensionId}
 GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /organization/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 ```
 
 
 ### Get a known resource instance expanded with a matching extension 
 
-Use the same REST request as getting the resource instance, look for an extension that matches a 
-filter on its **id** property, and expand the instance with the extension.
+For the event, group event, group post, message, personal contact resource types, you can use the same REST request as getting the resource instance, 
+look for an extension that matches a filter on its **id** property, and expand the instance with the extension. The response includes 
+most of the resource properties.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+```
+
+
+For the device, group, organization, and user resource types, you must also use a `$select` parameter to include
+the **id** property and any other properties you want from the resource instance:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /devices/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /groups/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 ```
 
 ### Filter for resource instances expanded with a matching extension 
@@ -61,10 +83,11 @@ with the extension.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/threads/{Id}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance or collection, 

@@ -3,6 +3,9 @@
 Deletes the cells associated with the range.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -14,7 +17,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/delete
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body

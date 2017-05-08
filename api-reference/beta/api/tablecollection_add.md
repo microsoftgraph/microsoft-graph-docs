@@ -3,6 +3,9 @@
 Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -13,7 +16,7 @@ POST /workbook/worksheets(<id|name>)/tables/add
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -41,7 +44,7 @@ Content-type: application/json
 Content-length: 54
 
 {
-  "address": "address-value",
+  "address": "Sheet1!A1:D5",
   "hasHeaders": true
 }
 ```

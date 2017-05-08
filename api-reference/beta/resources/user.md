@@ -33,6 +33,7 @@ This resource supports [delta query](../../../concepts/delta_query_overview.md) 
 |[List directReports](../api/user_list_directreports.md) |[directoryObject](directoryobject.md) collection| Get the users and contacts that report to the user from the directReports navigation property.|
 |[List manager](../api/user_list_manager.md) |[directoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property.|
 |[List memberOf](../api/user_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups, directory roles, and administrative units that the user is a direct member of from the memberOf navigation property.|
+|[List joinedTeams](../api/user_list_joinedTeams.md) |[groups](group.md) collection| Get the Microsoft Teams that the user is a direct member of from the joinedTeams navigation property.|
 |[List ownedDevices](../api/user_list_owneddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects that are owned by the user from the ownedObjects navigation property.|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are registered for the user from the registeredDevices navigation property.|
@@ -64,6 +65,7 @@ This resource supports [delta query](../../../concepts/delta_query_overview.md) 
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |city|String|The city in which the user is located. Supports $filter.|
 |country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
+|deletedDateTime|DateTimeOffset| The date and time the user was deleted. |
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |givenName|String|The given name (first name) of the user. Supports $filter.|
@@ -124,6 +126,7 @@ This resource supports [delta query](../../../concepts/delta_query_overview.md) 
 |mailFolders|[MailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable.|
+|joinedTeams|[group](group.md) collection|The Microsoft Teams that the user is a member of. Read-only. Nullable.|
 |messages|[Message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
 |onenote|[OneNote](onenote.md)| Read-only.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
@@ -161,6 +164,7 @@ Here is a JSON representation of the resource
     "mailFolders",
     "manager",
     "memberOf",
+    "joinedTeams",
     "messages",
     "onenote",
     "oauth2PermissionGrants",
@@ -184,6 +188,7 @@ Here is a JSON representation of the resource
   "city": "string",
   "companyName": "string",
   "country": "string",
+  "deletedDateTime": "String (timestamp)",
   "department": "string",
   "displayName": "string",
   "givenName": "string",
@@ -234,6 +239,7 @@ Here is a JSON representation of the resource
   "mailFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "manager": { "@odata.type": "microsoft.graph.directoryObject" },
   "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "joinedTeams": [ { "@odata.type": "microsoft.graph.group" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
@@ -246,8 +252,8 @@ Here is a JSON representation of the resource
 ## See also
 
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -2,6 +2,10 @@
 
 A folder that contains contacts.
 
+This resource supports using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
+by providing a [delta](../api/contactfolder_delta.md) function.
+
+
 ## Methods
 
 | Method       | Return Type  |Description|
@@ -11,6 +15,7 @@ A folder that contains contacts.
 |[Delete](../api/contactfolder_delete.md) | None |Delete contactFolder object. |
 |[List childFolders](../api/contactfolder_list_childfolders.md) |[ContactFolder](contactfolder.md) collection| Get a collection of child folders under the specified contact folder.|
 |[Create child contactFolder](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| Create a new contactFolder as a child of a specified folder.|
+|[delta](../api/contact_delta.md)|[contact](contact.md) collection| Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.|
 |[List contacts in folder](../api/contactfolder_list_contacts.md) |[Contact](contact.md) collection| Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.|
 |[Create contact in folder](../api/contactfolder_post_contacts.md) |[Contact](contact.md)| Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.|
 |[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contactFolder](contactFolder.md)  |Create one or more single-value extended properties in a new or existing contactFolder.   |
@@ -60,6 +65,12 @@ Here is a JSON representation of the resource
 }
 
 ```
+
+## See also
+
+- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
+- [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

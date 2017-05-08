@@ -4,6 +4,39 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## May 2017
 
+### Add deletedDateTime property
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Change|beta|Added deletedDateTime property to [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) entity.
+|Change|beta|Added deletedDateTime property to [group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) entity.
+|Change|beta|Added deletedDateTime property to [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) entity.
+
+### Add domain operations to v1.0
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|V1.0|Added operations on [domains](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain).<br/>New entities:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>New actions:</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/domain_verify) |
+
+### Add contracts to v1.0
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|V1.0|New entity:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) |
+
+### Add LicenseDetails to V1.0
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|v1.0|New entity:</br>[licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/licensedetails) |
+|Change  |v1.0|New [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/user_list_licensedetails) navigation property on [users](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) |
+
+### Planner APIs
+
+|**Change type**|**Version**|**Description**| 
+|:-------------|:-----------|:--------------|
+|Addition|v1.0|Added [Planner API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/planner_overview).<br />New resources:<br />[plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerPlan) <br />[plannerTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerTask) <br />[plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerPlanDetails) <br />[plannerTaskDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerTaskDetails) <br />[plannerBucket](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerBucket) <br />[plannerAssignedToTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerassignedtotaskboardtaskformat) <br />[plannerBucketTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerbuckettaskboardtaskformat) <br />[plannerProgressTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerprogresstaskboardtaskformat) | 
+
 ### SharePoint Sites API
 
 |**Change type**|**Version**|**Description**|
@@ -31,6 +64,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |**Change type**|**Version**|**Description**|
 |:--------------|:----------|:--------------|
 | Addition | v1.0 and beta | Added the **drives** and **sites** navigation properties to **group**.
+
 
 ## April 2017
 

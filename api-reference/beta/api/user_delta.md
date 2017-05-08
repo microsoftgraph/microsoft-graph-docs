@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-[Permissions](../../../authorization/permission_scopes.md) required to perform delta query for users can be one of the following: 
+[Permissions](../../../concepts/permissions_reference.md) required to perform delta query for users can be one of the following: 
 *User.Read; User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
 ## Known Limitations

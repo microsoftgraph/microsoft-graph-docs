@@ -2,6 +2,8 @@
 
 A mailFolder in a user's mailbox, such as Inbox, Drafts, and Sent Items. MailFolders can contain messages and child mailFolders.
 
+This resource supports using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
+by providing a [delta](../api/mailfolder_delta.md) function.
 
 ## Methods
 
@@ -15,6 +17,7 @@ A mailFolder in a user's mailbox, such as Inbox, Drafts, and Sent Items. MailFol
 |[Update](../api/mailfolder_update.md) | [mailFolder](mailfolder.md)|Update the specified mailFolder object. |
 |[Delete](../api/mailfolder_delete.md) | None |Delete the specified mailFolder object. |
 |[copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)|Copy a mailFolder and its contents to another mailFolder.|
+|[delta](../api/mailfolder_delta.md)|[mailFolder](mailfolder.md) collection|Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.|
 |[move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)|Move a mailFolder and its contents to another mailFolder.|
 |[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[mailFolder](mailFolder.md)  |Create one or more single-value extended properties in a new or existing mailFolder.   |
 |[Get mailFolder with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Get mailFolders that contain a single-value extended property by using `$expand` or `$filter`. |
@@ -78,6 +81,12 @@ Here is a JSON representation of the resource
 }
 
 ```
+
+## See also
+
+- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
+- [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -62,7 +62,7 @@ in the response body to 2.
 
 To track changes in the messages in a folder, you would make one or more **delta** function calls to get the set
 of incremental changes since the last delta query. For an example that shows a round of delta query calls, see 
-[Get incremental changes to messages in a folder (preview)](../../../concepts/delta_query_messages.md).
+[Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md).
  
 <!-- {
   "blockType": "request",
@@ -114,8 +114,8 @@ Content-length: 337
 
 ### See also
 
-- [Microsoft Graph delta query (preview)](../../../concepts/delta_query_overview.md)
-- [Get incremental changes to messages in a folder (preview)](../../../concepts/delta_query_messages.md)
+- [Microsoft Graph delta query](../../../concepts/delta_query_overview.md)
+- [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

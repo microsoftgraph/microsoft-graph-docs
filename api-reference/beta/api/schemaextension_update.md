@@ -29,7 +29,7 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |description|String|Description for the schema extension.|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition. Only additive changes are permitted. |
-|status|String|The lifecycle state of the schema extension. Possible states transitions are from *InDevelopment* to *Available*, *Available* to *Deprecated* and *Deprecated* to *Available*.|
+|status|String|The lifecycle state of the schema extension. The initial state upon creation is **InDevelopment**. Possible states transitions are from **InDevelopment** to **Available**, **Available** to **Deprecated** and **Deprecated** to **Available**.|
 |targetTypes|String collection|Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.  Only additive changes are permitted.|
 
 ## Response
@@ -99,7 +99,7 @@ Content-length: 201
 ## See also
 
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

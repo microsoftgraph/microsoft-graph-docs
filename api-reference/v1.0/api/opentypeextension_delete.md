@@ -9,9 +9,11 @@ deleting the extension from:
 
 |**Supported resource**|**Permission**|**Supported resource**|**Permission** |
 |:-----|:-----|:-----|:-----|
-| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group event](../resources/event.md) | _Calendars.ReadWrite_ | 
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ | 
-| [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
+| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
+| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ |
+| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
 
  
 ## HTTP request
@@ -20,11 +22,15 @@ navigation property of that instance to identify the extension, and do a `DELETE
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+DELETE /devices/{Id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+DELETE /groups/{id}/extensions/{extensionId}
 DELETE /groups/{id}/events/{id}/extensions/{extensionId}
 DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
+DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+DELETE /organization/{Id}/extensions/{extensionId}
+DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 

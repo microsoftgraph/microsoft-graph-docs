@@ -3,6 +3,9 @@
 Converts the table into a normal range of cells. All data is preserved.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -13,7 +16,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/convertToRange
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body

@@ -2,12 +2,10 @@
 
 An event in a calendar.
 
-This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+This resource supports:
 
-
-## Delta query support
-
-This resource supports [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
+- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
 by providing a [delta](../api/event_delta.md) function.
 
 ## JSON representation
@@ -148,10 +146,11 @@ Here is a JSON representation of the resource
 
 ## See also
 
+- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
+- [Get incremental changes to events in a folder](../../../concepts/delta_query_events.md)
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
-
+- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

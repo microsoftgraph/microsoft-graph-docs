@@ -3,6 +3,9 @@
 Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -13,7 +16,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/clear
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body

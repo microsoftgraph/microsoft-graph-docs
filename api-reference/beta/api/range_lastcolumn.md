@@ -3,18 +3,21 @@
 Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/LastColumn
-POST /workbook/worksheets(<id|name>)/range(<address>)/LastColumn
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/LastColumn
+GET /workbook/names(<name>)/range/LastColumn
+GET /workbook/worksheets(<id|name>)/range(<address>)/LastColumn
+GET /workbook/tables(<id|name>)/columns(<id|name>)/range/LastColumn
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -31,7 +34,7 @@ Here is an example of the request.
   "name": "range_lastcolumn"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/LastColumn
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/LastColumn
 ```
 
 ##### Response

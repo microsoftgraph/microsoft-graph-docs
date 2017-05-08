@@ -1,7 +1,7 @@
-# Get incremental changes to messages in a folder (preview)
+# Get incremental changes to messages in a folder 
 
 Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of 
-[delta](../api-reference/beta/api/message_delta.md) function calls. Delta data enables you to maintain 
+[delta](../api-reference/v1.0/api/message_delta.md) function calls. Delta data enables you to maintain 
 and synchronize a local store of a user's messages, 
 without having to fetch the entire set of the user's messages from the server every time.
 
@@ -15,11 +15,11 @@ subsequently, get incremental changes to that folder periodically.
 Delta query is a per-folder operation. To track the changes of the messages in a folder hierarchy, you need to track each folder individually. 
 
 Tracking message changes in a mail folder typically is a round of one or more GET requests with the **delta** function. The initial GET 
-request is very much like the way you [get messages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_messages), 
+request is very much like the way you [get messages](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages), 
 except that you include the **delta** function:
 
 ```
-GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
+GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 ```
 
 A GET request with the **delta** function returns either:
@@ -110,7 +110,7 @@ The first request specifies the following:
   "name": "get_messages_delta_1"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=Subject,Sender HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=Subject,Sender HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -128,8 +128,8 @@ The `nextLink` URL indicates there are more messages in the folder to get.
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -169,7 +169,7 @@ the same `$select` parameter as in the initial request, as the `skipToken` in th
   "name": "get_messages_delta_2"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -186,8 +186,8 @@ more messages to get from the folder.
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -227,7 +227,7 @@ The third request continues to use the latest `nextLink` URL returned from the l
   "name": "get_messages_delta_3"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -245,8 +245,8 @@ synchronization is complete for the time being for this folder. Save and use the
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -276,7 +276,7 @@ Your first request in the next round will look like the following, assuming you 
   "name": "get_messages_delta_next"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -285,6 +285,6 @@ Prefer: odata.maxpagesize=2
 ## See also
 
 - [Microsoft Graph delta query](../Concepts/delta_query_overview.md)
-- [Get incremental changes to events in a calendar view (preview)](../Concepts/delta_query_events.md)
-- [Get incremental changes to groups (preview)](../Concepts/delta_query_groups.md)
-- [Get incremental changes to users (preview)](../Concepts/delta_query_users.md)
+- [Get incremental changes to events in a calendar view](../Concepts/delta_query_events.md)
+- [Get incremental changes to groups](../Concepts/delta_query_groups.md)
+- [Get incremental changes to users](../Concepts/delta_query_users.md)

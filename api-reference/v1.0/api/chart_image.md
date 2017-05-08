@@ -3,6 +3,9 @@
 Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -12,7 +15,7 @@ GET /workbook/worksheets(<id|name>)/charts(<name>)/Image(width=0,height=0,fittin
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body

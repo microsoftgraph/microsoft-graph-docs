@@ -3,18 +3,21 @@
 Gets an object that represents the entire row of the range.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/EntireRow
-POST /workbook/worksheets(<id|name>)/range(<address>)/EntireRow
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/EntireRow
+GET /workbook/names(<name>)/range/EntireRow
+GET /workbook/worksheets(<id|name>)/range(<address>)/EntireRow
+GET /workbook/tables(<id|name>)/columns(<id|name>)/range/EntireRow
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -31,7 +34,7 @@ Here is an example of the request.
   "name": "range_entirerow"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/EntireRow
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/EntireRow
 ```
 
 ##### Response

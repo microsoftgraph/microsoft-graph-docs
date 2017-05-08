@@ -3,6 +3,9 @@
 Update the properties of nameditem object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -11,7 +14,7 @@ PATCH /workbook/names(<name>)
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -20,6 +23,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |visible|boolean|Specifies whether the object is visible or not.|
+|comment|	string	|Represents the comment associated with this name.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and updated [NamedItem](../resources/nameditem.md) object in the response body.
@@ -38,6 +42,8 @@ Content-length: 87
 {
   "name": "name-value",
   "type": "type-value",
+  "scope": "scope-value",
+  "comment": "comment-value",
   "value": {
   },
   "visible": true

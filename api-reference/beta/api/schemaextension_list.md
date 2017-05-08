@@ -1,6 +1,7 @@
 # List schemaExtensions
 
-Retrieve a list of schema extension definitions by getting the [schemaExtension](../resources/schemaextension.md) resources and their properties.
+Get a list of [schemaExtension](../resources/schemaextension.md) objects created by any apps you own in the current tenant (that can be 
+**InDevelopment**, **Available**, or **Deprecated**), and all other schema extensions owned by other apps that are marked as **Available**. 
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.AccessAsUser.All*
@@ -25,7 +26,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [schemaExtension](../resources/schemaextension.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows how to look among all the accessible extensions for a specific one by filtering on its unique **id**. 
 <!-- {
   "blockType": "request",
   "name": "get_schemaextensions"
@@ -70,7 +71,7 @@ Content-length: 274
 ## See also
 
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -3,18 +3,21 @@
 Gets the range object that represents the rectangular intersection of the given ranges.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Intersection
-POST /workbook/worksheets(<id|name>)/range(<address>)/Intersection
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Intersection
+GET /workbook/names(<name>)/range/Intersection
+GET /workbook/worksheets(<id|name>)/range(<address>)/Intersection
+GET /workbook/tables(<id|name>)/columns(<id|name>)/range/Intersection
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -36,7 +39,7 @@ Here is an example of the request.
   "name": "range_intersection"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Intersection
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Intersection
 Content-type: application/json
 Content-length: 42
 

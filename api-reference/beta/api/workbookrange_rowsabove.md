@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "workbookrange_rowsAbove"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=2)
+POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=2)
 ```
 
 ##### Response

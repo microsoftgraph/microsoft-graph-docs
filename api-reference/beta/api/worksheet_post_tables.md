@@ -3,6 +3,9 @@
 Use this API to create a new Table.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -12,7 +15,7 @@ POST /workbook/worksheets(<id|name>)/tables/$/add
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -35,7 +38,7 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "id": "99",
+  "id": 99,
   "name": "name-value",
   "showHeaders": true,
   "showTotals": true,

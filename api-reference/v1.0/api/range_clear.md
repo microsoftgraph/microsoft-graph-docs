@@ -3,18 +3,21 @@
 Clear range values, format, fill, border, etc.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/clear
-POST /workbook/worksheets(<id|name>)/range(<address>)/clear
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/clear
+GET /workbook/names(<name>)/range/clear
+GET /workbook/worksheets(<id|name>)/range(<address>)/clear
+GET /workbook/tables(<id|name>)/columns(<id|name>)/range/clear
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -36,7 +39,7 @@ Here is an example of the request.
   "name": "range_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
 Content-type: application/json
 Content-length: 32
 

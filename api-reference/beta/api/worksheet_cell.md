@@ -3,6 +3,9 @@
 Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -12,7 +15,7 @@ GET /workbook/worksheets(<id|name>)/Cell(row=<row>,column=<column>)
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Response
@@ -27,7 +30,7 @@ Here is an example of the request.
   "name": "worksheet_cell"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/Cell(row=<row>,column=<column>)
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/Cell(row=<row>,column=<column>)
 ```
 
 ##### Response

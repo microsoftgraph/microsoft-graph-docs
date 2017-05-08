@@ -2,27 +2,25 @@
 
 Contains information about a service SKU that a company is subscribed to.
 
-Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported.
-
-Inherits from [directoryObject](directoryobject.md).
-
+Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from [directoryObject](directoryobject.md).
 
 ## Methods
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Read properties of the subscribedSku object.|
+|[Get subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Read properties and relationships of subscribedSku object.|
+|[List subscribedsku](../api/subscribedsku_list.md) | [subscribedSku](subscribedsku.md) collection |Retrieve the list of commercial subscriptions that an organization has acquired.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|capabilityStatus|String|For example, "Enabled", "LockedOut", and "Suspended".|
-|consumedUnits|Int32|The number of licenses that have been assigned.|
-|id|String|The unique identifier for the subscribed sku object. Key. Read-only.|
-|prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)|Information about the number and status of prepaid licenses.|
-|servicePlans|[servicePlanInfo](serviceplaninfo.md) collection|Information about the service plans that are available with the SKU.|
-|skuId|Guid|The unique identifier (GUID) for the service SKU.|
-|skuPartNumber|String|The SKU part number; for example: "AAD_PREMIUM" or "RMSBASIC".|
-|appliesTo|String|For example, "User" or "Company".|
+|appliesTo|String| For example, "User" or "Company". |
+|capabilityStatus|String| For example, "Enabled". |
+|consumedUnits|Int32| The number of licenses that have been assigned. |
+|id|String| The unique identifier for the subscribed sku object. Key, not nullable. |
+|prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Information about the number and status of prepaid licenses. |
+|servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| Information about the service plans that are available with the SKU. Not nullable |
+|skuId|Guid| The unique identifier (GUID) for the service SKU. |
+|skuPartNumber|String| The SKU part number; for example: "AAD_PREMIUM" or "RMSBASIC". |
 
 ## Relationships
 None

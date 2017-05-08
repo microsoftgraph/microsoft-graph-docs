@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-[Permissions](../../../authorization/permission_scopes.md) required to perform delta query for groups can be either of the following: *Group.Read.All* or *Group.ReadWrite.All*
+[Permissions](../../../concepts/permissions_reference.md) required to perform delta query for groups can be either of the following: *Group.Read.All* or *Group.ReadWrite.All*
 
 ## Known Limitations
 

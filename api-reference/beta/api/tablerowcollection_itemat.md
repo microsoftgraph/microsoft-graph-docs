@@ -3,17 +3,20 @@
 Gets a row based on its position in the collection.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables(<id|name>)/rows/ItemAt(index=n)
-GET /workbook/worksheets(<id|name>)/tables(<id|name>)/rows/ItemAt(index=n)
+POST /workbook/tables(<id|name>)/rows/ItemAt
+POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows/ItemAt
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -29,13 +32,20 @@ If successful, this method returns `200, OK` response code and [TableRow](../res
 ## Example
 Here is an example of how to call this API.
 ##### Request
-Here is an example of the request. Returns 1st row. 
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "tablerowcollection_itemat"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/rows/ItemAt(0)
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/rows/ItemAt
+Content-type: application/json
+Content-length: 20
+
+{
+  "index": {
+  }
+}
 ```
 
 ##### Response

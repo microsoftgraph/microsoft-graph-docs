@@ -3,18 +3,21 @@
 Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/LastRow
-POST /workbook/worksheets(<id|name>)/range(<address>)/LastRow
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/LastRow
+GET /workbook/names(<name>)/range/LastRow
+GET /workbook/worksheets(<id|name>)/range(<address>)/LastRow
+GET /workbook/tables(<id|name>)/columns(<id|name>)/range/LastRow
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -31,7 +34,7 @@ Here is an example of the request.
   "name": "range_lastrow"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/LastRow
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/LastRow
 ```
 
 ##### Response
