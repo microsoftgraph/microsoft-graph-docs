@@ -11,11 +11,11 @@ By default, directory roles are scoped to be tenant-wide.  However, directory ro
 |[Get directoryRole](../api/directoryrole_get.md) | [directoryRole](directoryrole.md) |Read properties and relationships of directoryRole object.|
 |[Add member](../api/directoryrole_post_members.md) |[directoryObject](directoryobject.md)| Add a user to the directory role by posting to the members navigation property.|
 |[List members](../api/directoryrole_list_members.md) |[directoryObject](directoryobject.md) collection| Get the users that are members of the directory role from the members navigation property.|
-|[List scoped administrators](../api/directoryrole_list_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List the members of this directory role that are scoped to [administrative units](administrativeunit.md), through the scopedRoleMembership object collection.|
-<!--|[Remove member](../api/directoryrole_delete_members.md) |[directoryObject](directoryobject.md)| Remove a user from the directory role by posting to the members navigation property.|-->
+|[Remove a member](../api/directoryrole_delete_member.md) |[directoryObject](directoryobject.md)| Remove a user from the directory role.|
+|[List scoped-role members](../api/directoryrole_list_members.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List the members of this directory role that are scoped to [administrative units](administrativeunit.md), through the scopedRoleMembership resource collection.|
 
 ## Properties
-| Property	   | Type	|Description|
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 |description|String|The description for the directory role. Read-only. |
 |displayName|String|The display name for the directory role. Read-only. |
@@ -23,10 +23,10 @@ By default, directory roles are scoped to be tenant-wide.  However, directory ro
 |roleTemplateId|String| The **id** of the [directoryRoleTemplate](directoryroletemplate.md) that this role is based on. The property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only. |
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |members|[directoryObject](directoryobject.md) collection|Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable.|
-|scopedAdministrators|[scopedRoleMembership](scopedrolemembership.md) collection| Administrators of this directory role that are scoped to [administrative units](administrativeunit.md). Read-only. Nullable.|
+|scopedMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Members of this directory role that are scoped to [administrative units](administrativeunit.md). Read-only. Nullable.|
 
 ## JSON representation
 
