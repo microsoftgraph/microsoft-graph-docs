@@ -19,7 +19,7 @@ Check out some common and featured scenarios for working with the Microsoft Grap
 |   GET groups in my organization |	[`https://graph.microsoft.com/v1.0/groups`](https://graph.microsoft.io/en-us/graph-explorer/?request=groups&version=v1.0) |
 |   GET people related to me	| [`https://graph.microsoft.com/beta/me/people`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Fpeople&version=beta)  |
 |   GET items trending around me |	[`https://graph.microsoft.com/beta/me/insights/trending`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Finsights%2Ftrending&version=beta) |
-|   GET my tasks	| [`https://graph.microsoft.com/beta/me/tasks`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Ftasks&version=beta) |
+<!-- |   GET my tasks	| [`https://graph.microsoft.com/beta/me/tasks`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Ftasks&version=beta) | -->
 <!--|   GET my notes |	[`https://graph.microsoft.com/beta/me/notes/notebooks`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Fnotes%2Fnotebooks&version=beta) | -->
 
 ## Next steps
