@@ -17,7 +17,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/MailboxStorage(view=view-value, period=period-value)/content
+GET /reports/MailboxUsage(view=view-value, period=period-value)/content
 ```
 
 ## Request headers
