@@ -46,7 +46,7 @@ link available will be created.
 
 | Type value     | Description                                                                                                                   |
 |:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | Creates a link to the item accessible to anyone. Anonymous links may be disabled by the tenant administrator.                 |
+| `anonymous`    | Creates a link to the item accessible to anyone. Anonymous links can only be created for files, and this ability may be disabled by the tenant administrator.                 |
 | `organization` | Creates a link to the item accessible within an organization. Organization link scope is not available for OneDrive Personal. |
 
 ## Response
