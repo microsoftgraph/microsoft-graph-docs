@@ -39,7 +39,7 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 }
 ```
-In the request body, supply a JSON representation of the `id` of the [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
