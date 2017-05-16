@@ -171,11 +171,8 @@ It also will not return the following DriveItem properties:
 
 * **createdBy**
 * **cTag**
-* **eTag**
 * **fileSystemInfo**
 * **lastModifiedBy**
-* **parentReference**
-* **size**
 
 
 <!-- {
