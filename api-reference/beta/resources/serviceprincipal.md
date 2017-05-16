@@ -1,5 +1,10 @@
 # servicePrincipal resource type
 
+> [!IMPORTANT]
+> Extensive breaking changes are planned over the coming few months for Application and servicePrincipal APIs, in preview, before this rolls out to v1.0. We will update the documentation with the new changes as soon as we are ready.
+> 
+> 
+
 Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
 
 ### JSON representation
