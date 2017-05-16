@@ -1,5 +1,10 @@
 # application resource type
 
+> [!IMPORTANT]
+> Extensive breaking changes are planned over the coming few months for Application and servicePrincipal APIs, in preview, before this rolls out to v1.0. We will update this section with the changes as soon as we are ready.
+> 
+> 
+
 Represents an application. Any application that outsources authentication to Azure AD must be registered in a directory. This involves telling Azure AD about your application, including the URL where it's located, the URL to send replies after authentication, the URI to identify your application, and more.  For more information, see [Basics of Registering an Application in Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Inherits from [directoryObject](directoryObject.md).
 
 ### JSON representation
