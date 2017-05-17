@@ -18,9 +18,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 For example, you can use the `$filter` query parameter to filter shared items based on the Container Type:
 
-`https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/ContainerType eq 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'`
+`https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/MediaType eq 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'`
 
-See the available Container Types, Types, and MediaTypes you can filter by in [resourceVisualization](../resources/insights_resourceVisualization.md).
+See the available Container Types and Types you can filter by in [resourceVisualization](../resources/insights_resourceVisualization.md).
 
 
 ## Request headers
