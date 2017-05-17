@@ -14,7 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /appConfigurationGroupAssignments/{appConfigurationGroupAssignmentsId}
-GET /iosMobileAppConfigurations/{iosMobileAppConfigurationsId}/groupAssignments/{mdmAppConfigGroupAssignmentId}
+GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/groupAssignments/{mdmAppConfigGroupAssignmentId}
 ```
 
 ## Optional query parameters

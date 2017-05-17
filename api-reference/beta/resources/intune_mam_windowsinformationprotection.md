@@ -47,6 +47,8 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |enterpriseInternalProxyServers|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|This is the comma-separated list of internal proxy servers. For example, "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59". These proxies have been configured by the admin to connect to specific resources on the Internet. They are considered to be enterprise network locations. The proxies are only leveraged in configuring the EnterpriseCloudResources policy to force traffic to the matched cloud resources through these proxies|
 |enterpriseProxyServersAreAuthoritative|Boolean|Boolean value that tells the client to accept the configured list of proxies and not try to detect other work proxies. Default is false|
 |neutralDomainResources|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|List of domain names that can used for work or personal resource|
+|indexingEncryptedStoresOrItemsBlocked|Boolean|This switch is for the Windows Search Indexer, to allow or disallow indexing of items|
+|smbAutoEncryptedFileExtensions|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed|
 
 ## Relationships
@@ -173,6 +175,16 @@ Here is a JSON representation of the resource.
   ],
   "enterpriseProxyServersAreAuthoritative": true,
   "neutralDomainResources": [
+    {
+      "@odata.type": "microsoft.graph.windowsInformationProtectionResourceCollection",
+      "displayName": "String",
+      "resources": [
+        "String"
+      ]
+    }
+  ],
+  "indexingEncryptedStoresOrItemsBlocked": true,
+  "smbAutoEncryptedFileExtensions": [
     {
       "@odata.type": "microsoft.graph.windowsInformationProtectionResourceCollection",
       "displayName": "String",

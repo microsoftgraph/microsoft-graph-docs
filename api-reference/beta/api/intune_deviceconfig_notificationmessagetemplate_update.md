@@ -28,7 +28,7 @@ The following table shows the properties that are required when you create a [no
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 
 
 

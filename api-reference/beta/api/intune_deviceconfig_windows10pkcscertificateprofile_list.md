@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 918
+Content-Length: 1011
 
 {
   "value": [
@@ -60,7 +60,8 @@ Content-Length: 918
       "certificateValidityPeriodScale": "months",
       "certificationAuthority": "Certification Authority value",
       "certificationAuthorityName": "Certification Authority Name value",
-      "certificateTemplateName": "Certificate Template Name value"
+      "certificateTemplateName": "Certificate Template Name value",
+      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
     }
   ]
 }

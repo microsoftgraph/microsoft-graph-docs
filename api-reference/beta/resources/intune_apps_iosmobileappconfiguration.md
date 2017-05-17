@@ -24,14 +24,14 @@ Inherits from [managedDeviceMobileAppConfiguration](../resources/intune_apps_man
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|settingXml|String|mdm app configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|settings|[appConfigurationSettingItem](../resources/intune_apps_appconfigurationsettingitem.md) collection|app configuration setting items. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|String collection|the associated app. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
+|settingXml|String|mdm app configuration.|
+|settings|[appConfigurationSettingItem](../resources/intune_apps_appconfigurationsettingitem.md) collection|app configuration setting items.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -54,6 +54,14 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
   "id": "String (identifier)",
+  "targetedMobileApps": [
+    "String"
+  ],
+  "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "lastModifiedDateTime": "String (timestamp)",
+  "displayName": "String",
+  "version": 1024,
   "settingXml": "String",
   "settings": [
     {
@@ -62,15 +70,7 @@ Here is a JSON representation of the resource.
       "appConfigKeyType": "String",
       "appConfigKeyValue": "String"
     }
-  ],
-  "targetedMobileApps": [
-    "String"
-  ],
-  "createdDateTime": "String (timestamp)",
-  "description": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "displayName": "String",
-  "version": 1024
+  ]
 }
 ```
 

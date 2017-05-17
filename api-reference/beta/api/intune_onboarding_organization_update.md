@@ -29,7 +29,6 @@ The following table shows the properties that are required when you create a [or
 |Property|Type|Description|
 |---|---|---|
 |id|String|The GUID for the object.|
-|applePushNotificationCertificateSetting|[applePushNotificationCertificateSetting](../resources/intune_onboarding_applepushnotificationcertificatesetting.md)|Apple MDM push certificate setting.|
 |mobileDeviceManagementAuthority|String|Mobile device management authority. Possible values are: `unknown`, `intune`, `sccm`, `office365`.|
 |defaultDeviceEnrollmentRestrictions|[defaultDeviceEnrollmentRestrictions](../resources/intune_onboarding_defaultdeviceenrollmentrestrictions.md)|Device enrollment restrictions applied to all users by default|
 |defaultDeviceEnrollmentWindowsHelloForBusinessSettings|[defaultDeviceEnrollmentWindowsHelloForBusinessSettings](../resources/intune_onboarding_defaultdeviceenrollmentwindowshelloforbusinesssettings.md)|Windows Hello for Business settings applied to all users by default|
@@ -48,18 +47,9 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}
 Content-type: application/json
-Content-length: 4253
+Content-length: 4054
 
 {
-  "applePushNotificationCertificateSetting": {
-    "@odata.type": "microsoft.graph.applePushNotificationCertificateSetting",
-    "appleIdentifier": "Apple Identifier value",
-    "topicIdentifier": "Topic Identifier value",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
-    "certificateUploadStatus": "Certificate Upload Status value",
-    "certificateUploadFailureReason": "Certificate Upload Failure Reason value"
-  },
   "mobileDeviceManagementAuthority": "intune",
   "defaultDeviceEnrollmentRestrictions": {
     "@odata.type": "microsoft.graph.defaultDeviceEnrollmentRestrictions",
@@ -85,6 +75,13 @@ Content-length: 4253
       "osMaximumVersion": "Os Maximum Version value"
     },
     "androidRestrictions": {
+      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": "Os Minimum Version value",
+      "osMaximumVersion": "Os Maximum Version value"
+    },
+    "androidForWorkRestrictions": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
       "platformBlocked": true,
       "personalDeviceEnrollmentBlocked": true,
@@ -161,20 +158,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4353
+Content-Length: 4154
 
 {
   "@odata.type": "#microsoft.graph.organization",
   "id": "9efe224a-224a-9efe-4a22-fe9e4a22fe9e",
-  "applePushNotificationCertificateSetting": {
-    "@odata.type": "microsoft.graph.applePushNotificationCertificateSetting",
-    "appleIdentifier": "Apple Identifier value",
-    "topicIdentifier": "Topic Identifier value",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
-    "certificateUploadStatus": "Certificate Upload Status value",
-    "certificateUploadFailureReason": "Certificate Upload Failure Reason value"
-  },
   "mobileDeviceManagementAuthority": "intune",
   "defaultDeviceEnrollmentRestrictions": {
     "@odata.type": "microsoft.graph.defaultDeviceEnrollmentRestrictions",
@@ -200,6 +188,13 @@ Content-Length: 4353
       "osMaximumVersion": "Os Maximum Version value"
     },
     "androidRestrictions": {
+      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": "Os Minimum Version value",
+      "osMaximumVersion": "Os Maximum Version value"
+    },
+    "androidForWorkRestrictions": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
       "platformBlocked": true,
       "personalDeviceEnrollmentBlocked": true,

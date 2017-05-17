@@ -45,7 +45,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2904
+Content-Length: 2986
 
 {
   "value": {
@@ -118,8 +118,10 @@ Content-Length: 2904
     "exchangeAccessStateReason": "unknown",
     "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
     "isEncrypted": true,
+    "userPrincipalName": "User Principal Name value",
     "model": "Model value",
-    "manufacturer": "Manufacturer value"
+    "manufacturer": "Manufacturer value",
+    "imei": "Imei value"
   }
 }
 ```

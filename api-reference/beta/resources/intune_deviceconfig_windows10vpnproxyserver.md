@@ -11,7 +11,7 @@ Inherits from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.m
 |---|---|---|
 |automaticConfigurationScriptUrl|String|Proxy's automatic configuration script url. Inherited from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|
 |address|String|Address. Inherited from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|
-|port|Int32|Port. Inherited from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|
+|port|Int32|Port. Valid values 0 to 65535 Inherited from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|
 |bypassProxyServerForLocalAddress|Boolean|Bypass proxy server for local address.|
 
 ## Relationships

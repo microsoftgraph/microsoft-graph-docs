@@ -7,7 +7,7 @@ VPN Route definition.
 |Property|Type|Description|
 |---|---|---|
 |destinationPrefix|String|Destination prefix (IPv4/v6 address).|
-|prefixSize|Int32|Prefix size. (1-32)|
+|prefixSize|Int32|Prefix size. (1-32). Valid values 1 to 32|
 
 ## Relationships
 None

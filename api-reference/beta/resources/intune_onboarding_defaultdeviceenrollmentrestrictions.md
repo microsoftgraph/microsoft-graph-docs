@@ -7,9 +7,10 @@ Device Enrollment Restrictions
 |Property|Type|Description|
 |---|---|---|
 |iosRestrictions|[deviceEnrollmentPlatformRestrictions](../resources/intune_onboarding_deviceenrollmentplatformrestrictions.md)|Restrictions on iOS enrollment|
-|windowsRestrictions|[deviceEnrollmentPlatformRestrictions](../resources/intune_onboarding_deviceenrollmentplatformrestrictions.md)|Restrictions on Android enrollment|
+|windowsRestrictions|[deviceEnrollmentPlatformRestrictions](../resources/intune_onboarding_deviceenrollmentplatformrestrictions.md)|Restrictions on Windows Desktop enrollment|
 |windowsMobileRestrictions|[deviceEnrollmentPlatformRestrictions](../resources/intune_onboarding_deviceenrollmentplatformrestrictions.md)|Restrictions on Windows Mobile enrollment|
-|androidRestrictions|[deviceEnrollmentPlatformRestrictions](../resources/intune_onboarding_deviceenrollmentplatformrestrictions.md)|Restrictions on Windows Desktop enrollment|
+|androidRestrictions|[deviceEnrollmentPlatformRestrictions](../resources/intune_onboarding_deviceenrollmentplatformrestrictions.md)|Restrictions on Android enrollment|
+|androidForWorkRestrictions|[deviceEnrollmentPlatformRestrictions](../resources/intune_onboarding_deviceenrollmentplatformrestrictions.md)|Restrictions on Android for Work enrollment|
 |macRestrictions|[deviceEnrollmentPlatformRestrictions](../resources/intune_onboarding_deviceenrollmentplatformrestrictions.md)|Restrictions on Mac enrollment|
 
 ## Relationships
@@ -47,6 +48,13 @@ Here is a JSON representation of the resource.
     "osMaximumVersion": "String"
   },
   "androidRestrictions": {
+    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
+    "platformBlocked": true,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "String",
+    "osMaximumVersion": "String"
+  },
+  "androidForWorkRestrictions": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,

@@ -12,24 +12,25 @@ The following **scopes** are required to execute this API:
 GET /workbook/worksheets/{id|name}/UsedRange
 
 ```
+
+## Optional request parameter
+In the request URL, provide an optional query parameter.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|valuesOnly|Boolean|Optional. Considers only cells with values as used cells (ignores formatting).|
+
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
-
-## Request body
-In the request body, provide a JSON object with the following parameters.
-
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|valuesOnly|boolean|Optional. Considers only cells with values as used cells (ignores formatting).|
-
 ## Response
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+Here is an example that shows how to call this API.
 ##### Request
 Here is an example of the request.
 <!-- {
@@ -37,13 +38,9 @@ Here is an example of the request.
   "name": "worksheet_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
 Content-type: application/json
-Content-length: 24
 
-{
-  "valuesOnly": true
-}
 ```
 
 ##### Response

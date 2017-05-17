@@ -29,14 +29,14 @@ The following table shows the properties that are required when you create a ios
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|settingXml|String|mdm app configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|settings|[appConfigurationSettingItem](../resources/intune_apps_appconfigurationsettingitem.md) collection|app configuration setting items. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|String collection|the associated app. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
+|settingXml|String|mdm app configuration.|
+|settings|[appConfigurationSettingItem](../resources/intune_apps_appconfigurationsettingitem.md) collection|app configuration setting items.|
 
 
 
@@ -53,6 +53,13 @@ Content-length: 584
 
 {
   "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+  "targetedMobileApps": [
+    "Targeted Mobile Apps value"
+  ],
+  "description": "Description value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "displayName": "Display Name value",
+  "version": 7,
   "settingXml": "Setting Xml value",
   "settings": [
     {
@@ -61,14 +68,7 @@ Content-length: 584
       "appConfigKeyType": "integerType",
       "appConfigKeyValue": "App Config Key Value value"
     }
-  ],
-  "targetedMobileApps": [
-    "Targeted Mobile Apps value"
-  ],
-  "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "displayName": "Display Name value",
-  "version": 7
+  ]
 }
 ```
 
@@ -82,6 +82,14 @@ Content-Length: 692
 {
   "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
   "id": "b2c33191-3191-b2c3-9131-c3b29131c3b2",
+  "targetedMobileApps": [
+    "Targeted Mobile Apps value"
+  ],
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "description": "Description value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "displayName": "Display Name value",
+  "version": 7,
   "settingXml": "Setting Xml value",
   "settings": [
     {
@@ -90,15 +98,7 @@ Content-Length: 692
       "appConfigKeyType": "integerType",
       "appConfigKeyValue": "App Config Key Value value"
     }
-  ],
-  "targetedMobileApps": [
-    "Targeted Mobile Apps value"
-  ],
-  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-  "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "displayName": "Display Name value",
-  "version": 7
+  ]
 }
 ```
 

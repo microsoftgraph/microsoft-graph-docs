@@ -48,6 +48,14 @@ Content-Length: 749
   "value": {
     "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
     "id": "b2c33191-3191-b2c3-9131-c3b29131c3b2",
+    "targetedMobileApps": [
+      "Targeted Mobile Apps value"
+    ],
+    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+    "description": "Description value",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "displayName": "Display Name value",
+    "version": 7,
     "settingXml": "Setting Xml value",
     "settings": [
       {
@@ -56,15 +64,7 @@ Content-Length: 749
         "appConfigKeyType": "integerType",
         "appConfigKeyValue": "App Config Key Value value"
       }
-    ],
-    "targetedMobileApps": [
-      "Targeted Mobile Apps value"
-    ],
-    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-    "description": "Description value",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "displayName": "Display Name value",
-    "version": 7
+    ]
   }
 }
 ```

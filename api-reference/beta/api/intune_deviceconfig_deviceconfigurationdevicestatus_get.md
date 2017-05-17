@@ -49,13 +49,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 353
+Content-Length: 451
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceConfigurationDeviceStatus",
     "id": "674e98e5-98e5-674e-e598-4e67e5984e67",
     "deviceDisplayName": "Device Display Name value",
+    "userName": "User Name value",
+    "deviceModel": "Device Model value",
+    "platform": 8,
     "status": "notApplicable",
     "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
     "userPrincipalName": "User Principal Name value"

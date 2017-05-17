@@ -36,15 +36,24 @@ The following table shows the properties that are required when you create a and
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |passwordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
 |passwordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents.|
-|passwordExpirationDays|Int32|Number of days before the password expires.|
-|passwordMinimumLength|Int32|Minimum length of passwords.|
+|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 255|
+|passwordMinimumLength|Int32|Minimum length of passwords. Valid values 4 to 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
-|passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset.|
+|passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset. Valid values 4 to 11|
 |passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileDataSharingType|String|Type of data sharing that is allowed. Possible values are: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
 |workProfileBlockNotificationsWhileDeviceLocked|Boolean|Indicates whether or not to block notifications while device locked.|
 |workProfileDefaultAppPermissionPolicy|String|Type of password that is required. Possible values are: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
+|workProfilePasswordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock for work profile.|
+|workProfilePasswordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents for work profile.|
+|workProfilePasswordExpirationDays|Int32|Number of days before the work profile password expires. Valid values 1 to 255|
+|workProfilePasswordMinimumLength|Int32|Minimum length of work profile password. Valid values 4 to 16|
+|workProfilePasswordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
+|workProfilePasswordPreviousPasswordBlockCount|Int32|Number of previous work profile passwords to block. Valid values 0 to 24|
+|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 4 to 11|
+|workProfilePasswordRequiredType|String|Type of work profile password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
+|workProfileRequirePassword|Boolean|Password is required or not for work profile|
 
 
 
@@ -57,7 +66,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 752
+Content-length: 1228
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -75,7 +84,16 @@ Content-length: 752
   "passwordRequiredType": "lowSecurityBiometric",
   "workProfileDataSharingType": "preventAny",
   "workProfileBlockNotificationsWhileDeviceLocked": true,
-  "workProfileDefaultAppPermissionPolicy": "prompt"
+  "workProfileDefaultAppPermissionPolicy": "prompt",
+  "workProfilePasswordBlockFingerprintUnlock": true,
+  "workProfilePasswordBlockTrustAgents": true,
+  "workProfilePasswordExpirationDays": 1,
+  "workProfilePasswordMinimumLength": 0,
+  "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout": 9,
+  "workProfilePasswordPreviousPasswordBlockCount": 13,
+  "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
+  "workProfilePasswordRequiredType": "lowSecurityBiometric",
+  "workProfileRequirePassword": true
 }
 ```
 
@@ -84,7 +102,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 860
+Content-Length: 1336
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -104,7 +122,16 @@ Content-Length: 860
   "passwordRequiredType": "lowSecurityBiometric",
   "workProfileDataSharingType": "preventAny",
   "workProfileBlockNotificationsWhileDeviceLocked": true,
-  "workProfileDefaultAppPermissionPolicy": "prompt"
+  "workProfileDefaultAppPermissionPolicy": "prompt",
+  "workProfilePasswordBlockFingerprintUnlock": true,
+  "workProfilePasswordBlockTrustAgents": true,
+  "workProfilePasswordExpirationDays": 1,
+  "workProfilePasswordMinimumLength": 0,
+  "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout": 9,
+  "workProfilePasswordPreviousPasswordBlockCount": 13,
+  "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
+  "workProfilePasswordRequiredType": "lowSecurityBiometric",
+  "workProfileRequirePassword": true
 }
 ```
 

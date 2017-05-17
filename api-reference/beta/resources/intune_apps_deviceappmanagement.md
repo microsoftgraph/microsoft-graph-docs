@@ -17,6 +17,8 @@ Singleton entity that acts as a container for all device app management function
 |[List iosLobAppProvisioningConfigurations](../api/intune_apps_deviceappmanagement_list_ioslobappprovisioningconfiguration.md)|[iosLobAppProvisioningConfiguration](../resources/intune_apps_ioslobappprovisioningconfiguration.md) collection|Get the iosLobAppProvisioningConfigurations from the iosLobAppProvisioningConfigurations navigation property.|
 |[Create iosLobAppProvisioningConfiguration](../api/intune_apps_deviceappmanagement_create_ioslobappprovisioningconfiguration.md)|[iosLobAppProvisioningConfiguration](../resources/intune_apps_ioslobappprovisioningconfiguration.md)|Create a new [iosLobAppProvisioningConfiguration](../resources/intune_apps_ioslobappprovisioningconfiguration.md) by posting to the iosLobAppProvisioningConfigurations collection.|
 |[Get symantecCodeSigningCertificate](../api/intune_apps_deviceappmanagement_get_symanteccodesigningcertificate.md)|[symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md)|Get the [symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md) from the symantecCodeSigningCertificate navigation property.|
+|[List managedDeviceMobileAppConfigurations](../api/intune_apps_deviceappmanagement_list_manageddevicemobileappconfiguration.md)|[managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) collection|Get the managedDeviceMobileAppConfigurations from the mobileAppConfigurations navigation property.|
+|[Create managedDeviceMobileAppConfiguration](../api/intune_apps_deviceappmanagement_create_manageddevicemobileappconfiguration.md)|[managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|Create a new [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) by posting to the mobileAppConfigurations collection.|
 
 ## Properties
 |Property|Type|Description|
@@ -31,6 +33,7 @@ Singleton entity that acts as a container for all device app management function
 |enterpriseCodeSigningCertificates|[enterpriseCodeSigningCertificate](../resources/intune_apps_enterprisecodesigningcertificate.md) collection|The Windows Enterprise Code Signing Certificate.|
 |iosLobAppProvisioningConfigurations|[iosLobAppProvisioningConfiguration](../resources/intune_apps_ioslobappprovisioningconfiguration.md) collection|The IOS Lob App Provisioning Configurations.|
 |symantecCodeSigningCertificate|[symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md)|The WinPhone Symantec Code Signing Certificate.|
+|mobileAppConfigurations|[managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) collection|The Managed Device Mobile Application Configurations.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

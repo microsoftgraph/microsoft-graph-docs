@@ -11,7 +11,7 @@ Trusted Root and PFX certificates for iOS EDU.
 |certificationAuthority|String|PKCS Certification Authority.|
 |certificationAuthorityName|String|PKCS Certification Authority Name.|
 |certificateTemplateName|String|PKCS Certificate Template Name.|
-|renewalThresholdPercentage|Int32|Certificate renewal threshold percentage.|
+|renewalThresholdPercentage|Int32|Certificate renewal threshold percentage. Valid values 1 to 99|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period.|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period. Possible values are: `days`, `months`, `years`.|
 

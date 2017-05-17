@@ -35,7 +35,7 @@ The following table shows the properties that are required when you create a win
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a Microsoft account.|
-|applyOnlyToWindows81|Boolean|Value indicating whether this policy only applies to Windows 8.1.|
+|applyOnlyToWindows81|Boolean|Value indicating whether this policy only applies to Windows 8.1. This property is read-only.|
 |browserBlockAutofill|Boolean|Indicates whether or not to block auto fill.|
 |browserBlockAutomaticDetectionOfIntranetSites|Boolean|Indicates whether or not to block automatic detection of Intranet sites.|
 |browserBlockEnterpriseModeAccess|Boolean|Indicates whether or not to block enterprise mode access.|
@@ -60,7 +60,7 @@ The following table shows the properties that are required when you create a win
 |passwordMinimumLength|Int32|The minimum password length.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|The minutes of inactivity before the screen times out.|
 |passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
-|passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent re-use of.|
+|passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent re-use of. Valid values 0 to 24|
 |passwordRequiredType|String|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|The number of sign in failures before factory reset.|
 |storageRequireDeviceEncryption|Boolean|Indicates whether or not to require encryption on a mobile device.|

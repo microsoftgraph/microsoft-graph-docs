@@ -8,7 +8,6 @@ Windows management app entity.
 |---|---|---|
 |[Get windowsManagementApp](../api/intune_devicefe_windowsmanagementapp_get.md)|[windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md)|Read properties and relationships of the [windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md) object.|
 |[Update windowsManagementApp](../api/intune_devicefe_windowsmanagementapp_update.md)|[windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md)|Update the properties of a [windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md) object.|
-|[List windowsManagementAppHealthStates](../api/intune_devicefe_windowsmanagementapp_list_windowsmanagementapphealthstate.md)|[windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md) collection|Get the windowsManagementAppHealthStates from the healthStates navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -19,10 +18,7 @@ Windows management app entity.
 |lastModifiedTime|DateTimeOffset|Windows management app last modified time.|
 
 ## Relationships
-|Relationship|Type|Description|
-|---|---|---|
-|healthStates|[windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md) collection|The list of health statuses for installed Windows management apps.|
-
+None
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

@@ -38,14 +38,15 @@ The following table shows the properties that are required when you create a [ma
 |version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |passwordRequired|Boolean|Whether or not to require a password.|
 |passwordBlockSimple|Boolean|Indicates whether or not to block simple passwords.|
-|passwordExpirationDays|Int32|Number of days before the password expires.|
-|passwordMinimumLength|Int32|Minimum length of password.|
+|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 255|
+|passwordMinimumLength|Int32|Minimum length of password. Valid values 4 to 14|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
-|passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
+|passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 1 to 24|
 |passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
 |passwordRequiredType|String|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |osMinimumVersion|String|Minimum IOS version.|
 |osMaximumVersion|String|Maximum IOS version.|
+|systemIntegrityProtectionEnabled|Boolean|Require that devices have enabled system integrity protection.|
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
 |deviceThreatProtectionRequiredSecurityLevel|String|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Require encryption on Mac OS devices.|
@@ -61,7 +62,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 705
+Content-length: 750
 
 {
   "description": "Description value",
@@ -78,6 +79,7 @@ Content-length: 705
   "passwordRequiredType": "alphanumeric",
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
+  "systemIntegrityProtectionEnabled": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
   "storageRequireEncryption": true
@@ -89,7 +91,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 873
+Content-Length: 918
 
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -109,6 +111,7 @@ Content-Length: 873
   "passwordRequiredType": "alphanumeric",
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
+  "systemIntegrityProtectionEnabled": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
   "storageRequireEncryption": true

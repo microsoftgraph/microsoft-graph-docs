@@ -9,7 +9,7 @@ Inherits from [iosWebContentFilterBase](../resources/intune_deviceconfig_ioswebc
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|specificWebsitesOnly|[iosBookmark](../resources/intune_deviceconfig_iosbookmark.md) collection|URL bookmarks which will be installed into built-in browser and user is only allowed to access websites through bookmarks|
+|specificWebsitesOnly|[iosBookmark](../resources/intune_deviceconfig_iosbookmark.md) collection|URL bookmarks which will be installed into built-in browser and user is only allowed to access websites through bookmarks. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 None

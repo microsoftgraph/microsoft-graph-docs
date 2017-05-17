@@ -63,8 +63,10 @@ Devices that are managed or pre-enrolled through Intune
 |exchangeAccessStateReason|String|The reason for the device's access state in Exchange. Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device.|
 |isEncrypted|Boolean|Device encryption status|
+|userPrincipalName|String|Device user principal name|
 |model|String|Model of the device|
 |manufacturer|String|Manufacturer of the device|
+|imei|String|IMEI|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -151,8 +153,10 @@ Here is a JSON representation of the resource.
   "exchangeAccessStateReason": "String",
   "remoteAssistanceSessionUrl": "String",
   "isEncrypted": true,
+  "userPrincipalName": "String",
   "model": "String",
-  "manufacturer": "String"
+  "manufacturer": "String",
+  "imei": "String"
 }
 ```
 

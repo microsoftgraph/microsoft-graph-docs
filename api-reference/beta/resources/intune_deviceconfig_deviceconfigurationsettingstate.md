@@ -11,6 +11,8 @@ Device Configuration Setting State for a given device.
 |state|String|The compliance state of the setting Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |errorCode|Int32|Error code for the setting|
 |errorDescription|String|Error description|
+|userPrincipalName|String|UserPrincipalName.|
+|sources|[settingSource](../resources/intune_deviceconfig_settingsource.md) collection|Contributing policies|
 
 ## Relationships
 None
@@ -29,7 +31,15 @@ Here is a JSON representation of the resource.
   "instanceDisplayName": "String",
   "state": "String",
   "errorCode": 1024,
-  "errorDescription": "String"
+  "errorDescription": "String",
+  "userPrincipalName": "String",
+  "sources": [
+    {
+      "@odata.type": "microsoft.graph.settingSource",
+      "id": "String",
+      "displayName": "String"
+    }
+  ]
 }
 ```
 

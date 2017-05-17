@@ -30,33 +30,35 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|networkProxyApplySettingsDeviceWide|Boolean|If set, proxy settings will be applied to all processes and accounts in the device. Otherwise, it will be applied to the user account that’s enrolled into MDM.|
-|networkProxyDisableAutoDetect|Boolean|Disable automatic detection of settings. If enabled, the system will try to find the path to a proxy auto-config (PAC) script.|
-|networkProxyAutomaticConfigurationUrl|String|Address to the proxy auto-config (PAC) script you want to use.|
-|networkProxyServer|[windows10NetworkProxyServer](../resources/intune_deviceconfig_windows10networkproxyserver.md)|Specifies manual proxy server settings.|
-|accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a Microsoft account.|
-|antiTheftModeBlocked|Boolean|Indicates whether or not to block the user from selecting an AntiTheft mode preference (Windows 10 Mobile only).|
-|automaticUpdateMode|String|Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
-|automaticUpdateSchedule|String|Automatic update schedule. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|automaticUpdateTime|TimeOfDay|Automatic update time.|
-|bluetoothBlocked|Boolean|Whether or not to Block the user from using bluetooth.|
+|personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
+|personalizationLockScreenImageUrl|String|A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.|
+|bluetoothAllowedServices|String collection|Specify a list of allowed Bluetooth services and profiles in hex formatted strings.|
 |bluetoothBlockAdvertising|Boolean|Whether or not to Block the user from using bluetooth advertising.|
 |bluetoothBlockDiscoverableMode|Boolean|Whether or not to Block the user from using bluetooth discoverable mode.|
+|bluetoothBlockPrePairing|Boolean|Whether or not to block specific bundled Bluetooth peripherals to automatically pair with the host device.|
 |bluetoothDeviceName|String|Specify the device’s Bluetooth name. If not configured, the default local radio name is used.|
-|cameraBlocked|Boolean|Whether or not to Block the user from accessing the camera of the device.|
+|edgeBlockAutofill|Boolean|Indicates whether or not to block auto fill.|
+|edgeBlocked|Boolean|Indicates whether or not to Block the user from using the Edge browser.|
+|edgeCookiePolicy|String|Indicates which cookies to block in the Edge browser. Possible values are: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
+|edgeBlockDeveloperTools|Boolean|Indicates whether or not to block developer tools in the Edge browser.|
+|edgeBlockSendingDoNotTrackHeader|Boolean|Indicates whether or not to Block the user from sending the do not track header.|
+|edgeBlockExtensions|Boolean|Indicates whether or not to block extensions in the Edge browser.|
+|edgeBlockInPrivateBrowsing|Boolean|Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.|
+|edgeBlockJavaScript|Boolean|Indicates whether or not to Block the user from using JavaScript.|
+|edgeBlockPasswordManager|Boolean|Indicates whether or not to Block password manager.|
 |cellularBlockDataWhenRoaming|Boolean|Whether or not to Block the user from using data over cellular while roaming.|
 |cellularBlockVpn|Boolean|Whether or not to Block the user from using VPN over cellular.|
 |cellularBlockVpnWhenRoaming|Boolean|Whether or not to Block the user from using VPN when roaming over cellular.|
-|certificatesBlockManualRootCertificateInstallation|Boolean|Whether or not to Block the user from doing manual root certificate installation.|
-|copyPasteBlocked|Boolean|Whether or not to Block the user from using copy paste.|
-|cortanaBlocked|Boolean|Whether or not to Block the user from using Cortana.|
+|cellularData|String|Whether or not to allow the cellular data channel on the device. If not configured, the cellular data channel is allowed and the user can turn it off. Possible values are: `blocked`, `required`, `allowed`.|
 |defenderBlockEndUserAccess|Boolean|Whether or not to block end user access to Defender.|
-|defenderDaysBeforeDeletingQuarantinedMalware|Int32|Number of days before deleting quarantined malware.|
+|defenderDaysBeforeDeletingQuarantinedMalware|Int32|Number of days before deleting quarantined malware. Valid values 0 to 90|
+|defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune_deviceconfig_defenderdetectedmalwareactions.md)|Gets or sets Defender’s actions to take on detected Malware per threat level.|
 |defenderSystemScanSchedule|String|Defender day of the week for the system scan. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |defenderFilesAndFoldersToExclude|String collection|Files and folder to exclude from scans and real time protection.|
 |defenderFileExtensionsToExclude|String collection|File extensions to exclude from scans and real time protection.|
-|defenderScanMaxCpu|Int32|Max CPU usage percentage during scan.|
+|defenderScanMaxCpu|Int32|Max CPU usage percentage during scan. Valid values 0 to 100|
 |defenderMonitorFileActivity|String|Value for monitoring file activity. Possible values are: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
+|defenderPotentiallyUnwantedAppAction|String|Gets or sets Defender’s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop. Possible values are: `deviceDefault`, `block`, `audit`.|
 |defenderProcessesToExclude|String collection|Processes to exclude from scans and real time protection.|
 |defenderPromptForSampleSubmission|String|The configuration for how to prompt user for sample submission. Possible values are: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
 |defenderRequireBehaviorMonitoring|Boolean|Indicates whether or not to require behavior monitoring.|
@@ -70,23 +72,91 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |defenderScanMappedNetworkDrivesDuringFullScan|Boolean|Indicates whether or not to scan mapped network drives during full scan.|
 |defenderScanRemovableDrivesDuringFullScan|Boolean|Indicates whether or not to scan removable drives during full scan.|
 |defenderScanScriptsLoadedInInternetExplorer|Boolean|Indicates whether or not to scan scripts loaded in Internet Explorer browser.|
-|defenderSignatureUpdateIntervalInHours|Int32|The signature update interval in hours. Specify 0 not to check.|
+|defenderSignatureUpdateIntervalInHours|Int32|The signature update interval in hours. Specify 0 not to check. Valid values 0 to 24|
 |defenderScanType|String|The defender system scan type. Possible values are: `userDefined`, `disabled`, `quick`, `full`.|
 |defenderScheduledScanTime|TimeOfDay|The defender time for the system scan.|
 |defenderScheduledQuickScanTime|TimeOfDay|The time to perform a daily quick scan.|
+|lockScreenAllowTimeoutConfiguration|Boolean|Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.|
+|lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to block action center notifications over lock screen.|
+|lockScreenBlockCortana|Boolean|Indicates whether or not the user can interact with Cortana using speech while the system is locked.|
+|lockScreenBlockToastNotifications|Boolean|Indicates whether to allow toast notifications above the device lock screen.|
+|lockScreenTimeoutInSeconds|Int32|Set the duration (in seconds) from the screen locking to the screen turning off for Windows 10 Mobile devices. Supported values are 11-1800. Valid values 11 to 1800|
+|passwordBlockSimple|Boolean|Specify whether PINs or passwords such as "1111" or "1234" are allowed. For Windows 10 desktops, it also controls the use of picture passwords.|
+|passwordExpirationDays|Int32|The password expiration in days. Valid values 0 to 730|
+|passwordMinimumLength|Int32|The minimum password length. Valid values 4 to 16|
+|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|The minutes of inactivity before the screen times out.|
+|passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password. Valid values 1 to 4|
+|passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent reuse of. Valid values 0 to 50|
+|passwordRequired|Boolean|Indicates whether or not to require the user to have a password.|
+|passwordRequireWhenResumeFromIdleState|Boolean|Indicates whether or not to require a password upon resuming from an idle state.|
+|passwordRequiredType|String|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|The number of sign in failures before factory reset. Valid values 0 to 999|
+|privacyAutoAcceptPairingAndConsentPrompts|Boolean|Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when launching apps.|
+|privacyBlockInputPersonalization|Boolean|Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
+|startBlockUnpinningAppsFromTaskbar|Boolean|Indicates whether or not to block the user from unpinning apps from taskbar.|
+|startMenuAppListVisibility|String|Setting the value of this collapses the app list, removes the app list entirely, or disables the corresponding toggle in the Settings app. Possible values are: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
+|startMenuHideChangeAccountSettings|Boolean|Enabling this policy hides the change account setting from appearing in the user tile in the start menu.|
+|startMenuHideFrequentlyUsedApps|Boolean|Enabling this policy hides the most used apps from appearing on the start menu and disables the corresponding toggle in the Settings app.|
+|startMenuHideHibernate|Boolean|Enabling this policy hides hibernate from appearing in the power button in the start menu.|
+|startMenuHideLock|Boolean|Enabling this policy hides lock from appearing in the user tile in the start menu.|
+|startMenuHidePowerButton|Boolean|Enabling this policy hides the power button from appearing in the start menu.|
+|startMenuHideRecentJumpLists|Boolean|Enabling this policy hides recent jump lists from appearing on the start menu/taskbar and disables the corresponding toggle in the Settings app.|
+|startMenuHideRecentlyAddedApps|Boolean|Enabling this policy hides recently added apps from appearing on the start menu and disables the corresponding toggle in the Settings app.|
+|startMenuHideRestartOptions|Boolean|Enabling this policy hides “Restart/Update and Restart” from appearing in the power button in the start menu.|
+|startMenuHideShutDown|Boolean|Enabling this policy hides shut down/update and shut down from appearing in the power button in the start menu.|
+|startMenuHideSignOut|Boolean|Enabling this policy hides sign out from appearing in the user tile in the start menu.|
+|startMenuHideSleep|Boolean|Enabling this policy hides sleep from appearing in the power button in the start menu.|
+|startMenuHideSwitchAccount|Boolean|Enabling this policy hides switch account from appearing in the user tile in the start menu.|
+|startMenuHideUserTile|Boolean|Enabling this policy hides the user tile from appearing in the start menu.|
+|startMenuLayoutEdgeAssetsXml|Binary|This policy setting allows you to import Edge assets to be used with startMenuLayoutXml policy. Start layout can contain secondary tile from Edge app which looks for Edge local asset file. Edge local asset would not exist and cause Edge secondary tile to appear empty in this case. This policy only gets applied when startMenuLayoutXml policy is modified. The value should be a UTF-8 Base64 encoded byte array.|
+|startMenuLayoutXml|Binary|Allows admins to override the default Start menu layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in a UTF8 encoded byte array format.|
+|startMenuMode|String|Allows admins to decide how the Start menu is displayed. Possible values are: `userDefined`, `fullScreen`, `nonFullScreen`.|
+|startMenuPinnedFolderDocuments|String|Enforces the visibility (Show/Hide) of the Documents folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderDownloads|String|Enforces the visibility (Show/Hide) of the Downloads folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderFileExplorer|String|Enforces the visibility (Show/Hide) of the FileExplorer shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderHomeGroup|String|Enforces the visibility (Show/Hide) of the HomeGroup folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderMusic|String|Enforces the visibility (Show/Hide) of the Music folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderNetwork|String|Enforces the visibility (Show/Hide) of the Network folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderPersonalFolder|String|Enforces the visibility (Show/Hide) of the PersonalFolder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderPictures|String|Enforces the visibility (Show/Hide) of the Pictures folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderSettings|String|Enforces the visibility (Show/Hide) of the Settings folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderVideos|String|Enforces the visibility (Show/Hide) of the Videos folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|settingsBlockSettingsApp|Boolean|Indicates whether or not to block access to Settings app.|
+|settingsBlockSystemPage|Boolean|Indicates whether or not to block access to System in Settings app.|
+|settingsBlockDevicesPage|Boolean|Indicates whether or not to block access to Devices in Settings app.|
+|settingsBlockNetworkInternetPage|Boolean|Indicates whether or not to block access to Network & Internet in Settings app.|
+|settingsBlockPersonalizationPage|Boolean|Indicates whether or not to block access to Personalization in Settings app.|
+|settingsBlockAccountsPage|Boolean|Indicates whether or not to block access to Accounts in Settings app.|
+|settingsBlockTimeLanguagePage|Boolean|Indicates whether or not to block access to Time & Language in Settings app.|
+|settingsBlockEaseOfAccessPage|Boolean|Indicates whether or not to block access to Ease of Access in Settings app.|
+|settingsBlockPrivacyPage|Boolean|Indicates whether or not to block access to Privacy in Settings app.|
+|settingsBlockUpdateSecurityPage|Boolean|Indicates whether or not to block access to Update & Security in Settings app.|
+|settingsBlockAppsPage|Boolean|Indicates whether or not to block access to Apps in Settings app.|
+|settingsBlockGamingPage|Boolean|Indicates whether or not to block access to Gaming in Settings app.|
+|windowsSpotlightBlockConsumerSpecificFeatures|Boolean|Allows IT admins to block experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.|
+|windowsSpotlightBlocked|Boolean|Allows IT admins to turn off all Windows Spotlight features|
+|windowsSpotlightBlockOnActionCenter|Boolean|Block suggestions from Microsoft that show after each OS clean install, upgrade or in an on-going basis to introduce users to what is new or changed|
+|windowsSpotlightBlockTailoredExperiences|Boolean|Block personalized content in Windows spotlight based on user’s device usage.|
+|windowsSpotlightBlockThirdPartyNotifications|Boolean|Block third party content delivered via Windows Spotlight|
+|windowsSpotlightBlockWelcomeExperience|Boolean|Block Windows Spotlight Windows welcome experience|
+|windowsSpotlightBlockWindowsTips|Boolean|Allows IT admins to turn off the popup of Windows Tips.|
+|windowsSpotlightConfigureOnLockScreen|String|Specifies the type of Spotlight Possible values are: `notConfigured`, `disabled`, `enabled`.|
+|networkProxyApplySettingsDeviceWide|Boolean|If set, proxy settings will be applied to all processes and accounts in the device. Otherwise, it will be applied to the user account that’s enrolled into MDM.|
+|networkProxyDisableAutoDetect|Boolean|Disable automatic detection of settings. If enabled, the system will try to find the path to a proxy auto-config (PAC) script.|
+|networkProxyAutomaticConfigurationUrl|String|Address to the proxy auto-config (PAC) script you want to use.|
+|networkProxyServer|[windows10NetworkProxyServer](../resources/intune_deviceconfig_windows10networkproxyserver.md)|Specifies manual proxy server settings.|
+|accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a Microsoft account.|
+|antiTheftModeBlocked|Boolean|Indicates whether or not to block the user from selecting an AntiTheft mode preference (Windows 10 Mobile only).|
+|bluetoothBlocked|Boolean|Whether or not to Block the user from using bluetooth.|
+|cameraBlocked|Boolean|Whether or not to Block the user from accessing the camera of the device.|
+|connectedDevicesServiceBlocked|Boolean|Whether or not to block Connected Devices Service which enables discovery and connection to other devices, remote messaging, remote app sessions and other cross-device experiences.|
+|certificatesBlockManualRootCertificateInstallation|Boolean|Whether or not to Block the user from doing manual root certificate installation.|
+|copyPasteBlocked|Boolean|Whether or not to Block the user from using copy paste.|
+|cortanaBlocked|Boolean|Whether or not to Block the user from using Cortana.|
 |deviceManagementBlockFactoryResetOnMobile|Boolean|Indicates whether or not to Block the user from resetting their phone.|
 |deviceManagementBlockManualUnenroll|Boolean|Indicates whether or not to Block the user from doing manual un-enrollment from device management.|
 |diagnosticsDataSubmissionMode|String|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
-|edgeBlockAutofill|Boolean|Indicates whether or not to block auto fill.|
-|edgeBlocked|Boolean|Indicates whether or not to Block the user from using the Edge browser.|
-|edgeCookiePolicy|String|Indicates which cookies to block in the Edge browser. Possible values are: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
-|edgeBlockDeveloperTools|Boolean|Indicates whether or not to block developer tools in the Edge browser.|
-|edgeBlockSendingDoNotTrackHeader|Boolean|Indicates whether or not to Block the user from sending the do not track header.|
-|edgeBlockExtensions|Boolean|Indicates whether or not to block extensions in the Edge browser.|
-|edgeBlockInPrivateBrowsing|Boolean|Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.|
-|edgeBlockJavaScript|Boolean|Indicates whether or not to Block the user from using JavaScript.|
-|edgeBlockPasswordManager|Boolean|Indicates whether or not to Block password manager.|
 |safeSearchFilter|String|Specifies what filter level of safe search is required. Possible values are: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Boolean|Indicates whether or not to block popups.|
 |edgeBlockSearchSuggestions|Boolean|Indicates whether or not to Block the user from using the search suggestions in the address bar.|
@@ -108,31 +178,10 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |settingsBlockChangeRegion|Boolean|Indicates whether or not to block the user from changing the region settings.|
 |settingsBlockChangeLanguage|Boolean|Indicates whether or not to block the user from changing the language settings.|
 |settingsBlockChangePowerSleep|Boolean|Indicates whether or not to block the user from changing power and sleep settings.|
-|settingsBlockSettingsApp|Boolean|Indicates whether or not to block access to Settings app.|
-|settingsBlockSystemPage|Boolean|Indicates whether or not to block access to System in Settings app.|
-|settingsBlockDevicesPage|Boolean|Indicates whether or not to block access to Devices in Settings app.|
-|settingsBlockNetworkInternetPage|Boolean|Indicates whether or not to block access to Network & Internet in Settings app.|
-|settingsBlockPersonalizationPage|Boolean|Indicates whether or not to block access to Personalization in Settings app.|
-|settingsBlockAccountsPage|Boolean|Indicates whether or not to block access to Accounts in Settings app.|
-|settingsBlockTimeLanguagePage|Boolean|Indicates whether or not to block access to Time & Language in Settings app.|
-|settingsBlockEaseOfAccessPage|Boolean|Indicates whether or not to block access to Ease of Access in Settings app.|
-|settingsBlockPrivacyPage|Boolean|Indicates whether or not to block access to Privacy in Settings app.|
-|settingsBlockUpdateSecurityPage|Boolean|Indicates whether or not to block access to Update & Security in Settings app.|
 |locationServicesBlocked|Boolean|Indicates whether or not to Block the user from location services.|
-|lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to Block action center notifications over lock screen.|
 |microsoftAccountBlocked|Boolean|Indicates whether or not to Block a Microsoft account.|
 |microsoftAccountBlockSettingsSync|Boolean|Indicates whether or not to Block Microsoft account settings sync.|
 |nfcBlocked|Boolean|Indicates whether or not to Block the user from using near field communication.|
-|passwordExpirationDays|Int32|The password expiration in days.|
-|passwordMinimumLength|Int32|The minimum password length.|
-|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|The minutes of inactivity before the screen times out.|
-|passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
-|passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent re-use of.|
-|passwordRequired|Boolean|Indicates whether or not to require the user to have a password.|
-|passwordRequireWhenResumeFromIdleState|Boolean|Indicates whether or not to require a password upon resuming from an idle state.|
-|passwordRequiredType|String|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|The number of sign in failures before factory reset.|
-|prereleaseFeatures|String|The pre-release features. Possible values are: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
 |resetProtectionModeBlocked|Boolean|Indicates whether or not to Block the user from reset protection mode.|
 |screenCaptureBlocked|Boolean|Indicates whether or not to Block the user from taking Screenshots.|
 |storageBlockRemovableStorage|Boolean|Indicates whether or not to Block the user from using removable storage.|
@@ -142,7 +191,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |wiFiBlockAutomaticConnectHotspots|Boolean|Indicating whether or not to block automatically connecting to Wi-Fi hotspots. Has no impact if Wi-Fi is blocked.|
 |wiFiBlocked|Boolean|Indicates whether or not to Block the user from using Wi-Fi.|
 |wiFiBlockManualConfiguration|Boolean|Indicates whether or not to Block the user from using Wi-Fi manual configuration.|
-|wiFiScanInterval|Int32|Specify how often devices scan for Wi-Fi networks. Supported values are 1-500, where 100 = default, and 500 = low frequency.|
+|wiFiScanInterval|Int32|Specify how often devices scan for Wi-Fi networks. Supported values are 1-500, where 100 = default, and 500 = low frequency. Valid values 1 to 500|
 |wirelessDisplayBlockProjectionToThisDevice|Boolean|Indicates whether or not to allow other devices from discovering this PC for projection.|
 |wirelessDisplayBlockUserInputFromReceiver|Boolean|Indicates whether or not to allow user input from wireless display receiver.|
 |wirelessDisplayRequirePinForPairing|Boolean|Indicates whether or not to require a PIN for new devices to initiate pairing.|
@@ -159,33 +208,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |experienceBlockDeviceDiscovery|Boolean|Indicates whether or not to enable device discovery UX.|
 |experienceBlockErrorDialogWhenNoSIM|Boolean|Indicates whether or not to allow the error dialog from displaying if no SIM card is detected.|
 |experienceBlockTaskSwitcher|Boolean|Indicates whether or not to enable task switching on the device.|
-|experienceBlockWindowsSpotlight|Boolean|Allows IT admins to turn off all Windows Spotlight features|
-|experienceBlockWindowsTips|Boolean|Allows IT admins to turn off the popup of Windows Tips.|
-|experienceBlockConsumerSpecificFeatures|Boolean|Allows IT admins to block experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.|
-|startMenuLayoutXml|Binary|Allows admins to override the default Start menu layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in a UTF8 encoded byte array format.|
-|startMenuMode|String|Allows admins to decide how the Start menu is displayed. Possible values are: `userDefined`, `fullScreen`, `nonFullScreen`.|
 |logonBlockFastUserSwitching|Boolean|Disables the ability to quickly switch between users that are logged on simultaneously without logging off.|
-|startBlockUnpinningAppsFromTaskbar|Boolean|Indicates whether or not to block the user from unpinning apps from taskbar.|
-|startMenuPinnedFolderDocuments|String|Enforces the visibility (Show/Hide) of the Documents folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderDownloads|String|Enforces the visibility (Show/Hide) of the Downloads folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderFileExplorer|String|Enforces the visibility (Show/Hide) of the FileExplorer shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderHomeGroup|String|Enforces the visibility (Show/Hide) of the HomeGroup folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderMusic|String|Enforces the visibility (Show/Hide) of the Music folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderNetwork|String|Enforces the visibility (Show/Hide) of the Network folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderPersonalFolder|String|Enforces the visibility (Show/Hide) of the PersonalFolder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderPictures|String|Enforces the visibility (Show/Hide) of the Pictures folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderSettings|String|Enforces the visibility (Show/Hide) of the Settings folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderVideos|String|Enforces the visibility (Show/Hide) of the Videos folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
-|startMenuAppListVisibility|String|Setting the value of this collapses the app list, removes the app list entirely, or disables the corresponding toggle in the Settings app. Possible values are: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
-|startMenuHideFrequentlyUsedApps|Boolean|Enabling this policy hides the most used apps from appearing on the start menu and disables the corresponding toggle in the Settings app.|
-|startMenuHideRecentJumpLists|Boolean|Enabling this policy hides recent jump lists from appearing on the start menu/taskbar and disables the corresponding toggle in the Settings app.|
-|startMenuHideRecentlyAddedApps|Boolean|Enabling this policy hides recently added apps from appearing on the start menu and disables the corresponding toggle in the Settings app.|
-|startMenuHideRestartOptions|Boolean|Enabling this policy hides “Restart/Update and Restart” from appearing in the power button in the start menu.|
-|startMenuHideUserTile|Boolean|Enabling this policy hides the user tile from appearing in the start menu.|
-|startMenuHidePowerButton|Boolean|Enabling this policy hides the power button from appearing in the start menu.|
-|startMenuLayoutEdgeAssetsXml|Binary|This policy setting allows you to import Edge assets to be used with startMenuLayoutXml policy. Start layout can contain secondary tile from Edge app which looks for Edge local asset file. Edge local asset would not exist and cause Edge secondary tile to appear empty in this case. This policy only gets applied when startMenuLayoutXml policy is modified. The value should be a UTF-8 Base64 encoded byte array.|
-|personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
-|personalizationLockScreenImageUrl|String|A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -214,35 +237,37 @@ Here is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "version": 1024,
-  "networkProxyApplySettingsDeviceWide": true,
-  "networkProxyDisableAutoDetect": true,
-  "networkProxyAutomaticConfigurationUrl": "String",
-  "networkProxyServer": {
-    "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
-    "address": "String",
-    "exceptions": [
-      "String"
-    ],
-    "useForLocalAddresses": true
-  },
-  "accountsBlockAddingNonMicrosoftAccountEmail": true,
-  "antiTheftModeBlocked": true,
-  "automaticUpdateMode": "String",
-  "automaticUpdateSchedule": "String",
-  "automaticUpdateTime": "String (time of day)",
-  "bluetoothBlocked": true,
+  "personalizationDesktopImageUrl": "String",
+  "personalizationLockScreenImageUrl": "String",
+  "bluetoothAllowedServices": [
+    "String"
+  ],
   "bluetoothBlockAdvertising": true,
   "bluetoothBlockDiscoverableMode": true,
+  "bluetoothBlockPrePairing": true,
   "bluetoothDeviceName": "String",
-  "cameraBlocked": true,
+  "edgeBlockAutofill": true,
+  "edgeBlocked": true,
+  "edgeCookiePolicy": "String",
+  "edgeBlockDeveloperTools": true,
+  "edgeBlockSendingDoNotTrackHeader": true,
+  "edgeBlockExtensions": true,
+  "edgeBlockInPrivateBrowsing": true,
+  "edgeBlockJavaScript": true,
+  "edgeBlockPasswordManager": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
-  "certificatesBlockManualRootCertificateInstallation": true,
-  "copyPasteBlocked": true,
-  "cortanaBlocked": true,
+  "cellularData": "String",
   "defenderBlockEndUserAccess": true,
   "defenderDaysBeforeDeletingQuarantinedMalware": 1024,
+  "defenderDetectedMalwareActions": {
+    "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
+    "lowSeverity": "String",
+    "moderateSeverity": "String",
+    "highSeverity": "String",
+    "severeSeverity": "String"
+  },
   "defenderSystemScanSchedule": "String",
   "defenderFilesAndFoldersToExclude": [
     "String"
@@ -252,6 +277,7 @@ Here is a JSON representation of the resource.
   ],
   "defenderScanMaxCpu": 1024,
   "defenderMonitorFileActivity": "String",
+  "defenderPotentiallyUnwantedAppAction": "String",
   "defenderProcessesToExclude": [
     "String"
   ],
@@ -271,19 +297,94 @@ Here is a JSON representation of the resource.
   "defenderScanType": "String",
   "defenderScheduledScanTime": "String (time of day)",
   "defenderScheduledQuickScanTime": "String (time of day)",
+  "lockScreenAllowTimeoutConfiguration": true,
+  "lockScreenBlockActionCenterNotifications": true,
+  "lockScreenBlockCortana": true,
+  "lockScreenBlockToastNotifications": true,
+  "lockScreenTimeoutInSeconds": 1024,
+  "passwordBlockSimple": true,
+  "passwordExpirationDays": 1024,
+  "passwordMinimumLength": 1024,
+  "passwordMinutesOfInactivityBeforeScreenTimeout": 1024,
+  "passwordMinimumCharacterSetCount": 1024,
+  "passwordPreviousPasswordBlockCount": 1024,
+  "passwordRequired": true,
+  "passwordRequireWhenResumeFromIdleState": true,
+  "passwordRequiredType": "String",
+  "passwordSignInFailureCountBeforeFactoryReset": 1024,
+  "privacyAutoAcceptPairingAndConsentPrompts": true,
+  "privacyBlockInputPersonalization": true,
+  "startBlockUnpinningAppsFromTaskbar": true,
+  "startMenuAppListVisibility": "String",
+  "startMenuHideChangeAccountSettings": true,
+  "startMenuHideFrequentlyUsedApps": true,
+  "startMenuHideHibernate": true,
+  "startMenuHideLock": true,
+  "startMenuHidePowerButton": true,
+  "startMenuHideRecentJumpLists": true,
+  "startMenuHideRecentlyAddedApps": true,
+  "startMenuHideRestartOptions": true,
+  "startMenuHideShutDown": true,
+  "startMenuHideSignOut": true,
+  "startMenuHideSleep": true,
+  "startMenuHideSwitchAccount": true,
+  "startMenuHideUserTile": true,
+  "startMenuLayoutEdgeAssetsXml": "binary",
+  "startMenuLayoutXml": "binary",
+  "startMenuMode": "String",
+  "startMenuPinnedFolderDocuments": "String",
+  "startMenuPinnedFolderDownloads": "String",
+  "startMenuPinnedFolderFileExplorer": "String",
+  "startMenuPinnedFolderHomeGroup": "String",
+  "startMenuPinnedFolderMusic": "String",
+  "startMenuPinnedFolderNetwork": "String",
+  "startMenuPinnedFolderPersonalFolder": "String",
+  "startMenuPinnedFolderPictures": "String",
+  "startMenuPinnedFolderSettings": "String",
+  "startMenuPinnedFolderVideos": "String",
+  "settingsBlockSettingsApp": true,
+  "settingsBlockSystemPage": true,
+  "settingsBlockDevicesPage": true,
+  "settingsBlockNetworkInternetPage": true,
+  "settingsBlockPersonalizationPage": true,
+  "settingsBlockAccountsPage": true,
+  "settingsBlockTimeLanguagePage": true,
+  "settingsBlockEaseOfAccessPage": true,
+  "settingsBlockPrivacyPage": true,
+  "settingsBlockUpdateSecurityPage": true,
+  "settingsBlockAppsPage": true,
+  "settingsBlockGamingPage": true,
+  "windowsSpotlightBlockConsumerSpecificFeatures": true,
+  "windowsSpotlightBlocked": true,
+  "windowsSpotlightBlockOnActionCenter": true,
+  "windowsSpotlightBlockTailoredExperiences": true,
+  "windowsSpotlightBlockThirdPartyNotifications": true,
+  "windowsSpotlightBlockWelcomeExperience": true,
+  "windowsSpotlightBlockWindowsTips": true,
+  "windowsSpotlightConfigureOnLockScreen": "String",
+  "networkProxyApplySettingsDeviceWide": true,
+  "networkProxyDisableAutoDetect": true,
+  "networkProxyAutomaticConfigurationUrl": "String",
+  "networkProxyServer": {
+    "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
+    "address": "String",
+    "exceptions": [
+      "String"
+    ],
+    "useForLocalAddresses": true
+  },
+  "accountsBlockAddingNonMicrosoftAccountEmail": true,
+  "antiTheftModeBlocked": true,
+  "bluetoothBlocked": true,
+  "cameraBlocked": true,
+  "connectedDevicesServiceBlocked": true,
+  "certificatesBlockManualRootCertificateInstallation": true,
+  "copyPasteBlocked": true,
+  "cortanaBlocked": true,
   "deviceManagementBlockFactoryResetOnMobile": true,
   "deviceManagementBlockManualUnenroll": true,
   "diagnosticsDataSubmissionMode": "String",
   "oneDriveDisableFileSync": true,
-  "edgeBlockAutofill": true,
-  "edgeBlocked": true,
-  "edgeCookiePolicy": "String",
-  "edgeBlockDeveloperTools": true,
-  "edgeBlockSendingDoNotTrackHeader": true,
-  "edgeBlockExtensions": true,
-  "edgeBlockInPrivateBrowsing": true,
-  "edgeBlockJavaScript": true,
-  "edgeBlockPasswordManager": true,
   "safeSearchFilter": "String",
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
@@ -309,31 +410,10 @@ Here is a JSON representation of the resource.
   "settingsBlockChangeRegion": true,
   "settingsBlockChangeLanguage": true,
   "settingsBlockChangePowerSleep": true,
-  "settingsBlockSettingsApp": true,
-  "settingsBlockSystemPage": true,
-  "settingsBlockDevicesPage": true,
-  "settingsBlockNetworkInternetPage": true,
-  "settingsBlockPersonalizationPage": true,
-  "settingsBlockAccountsPage": true,
-  "settingsBlockTimeLanguagePage": true,
-  "settingsBlockEaseOfAccessPage": true,
-  "settingsBlockPrivacyPage": true,
-  "settingsBlockUpdateSecurityPage": true,
   "locationServicesBlocked": true,
-  "lockScreenBlockActionCenterNotifications": true,
   "microsoftAccountBlocked": true,
   "microsoftAccountBlockSettingsSync": true,
   "nfcBlocked": true,
-  "passwordExpirationDays": 1024,
-  "passwordMinimumLength": 1024,
-  "passwordMinutesOfInactivityBeforeScreenTimeout": 1024,
-  "passwordMinimumCharacterSetCount": 1024,
-  "passwordPreviousPasswordBlockCount": 1024,
-  "passwordRequired": true,
-  "passwordRequireWhenResumeFromIdleState": true,
-  "passwordRequiredType": "String",
-  "passwordSignInFailureCountBeforeFactoryReset": 1024,
-  "prereleaseFeatures": "String",
   "resetProtectionModeBlocked": true,
   "screenCaptureBlocked": true,
   "storageBlockRemovableStorage": true,
@@ -360,33 +440,7 @@ Here is a JSON representation of the resource.
   "experienceBlockDeviceDiscovery": true,
   "experienceBlockErrorDialogWhenNoSIM": true,
   "experienceBlockTaskSwitcher": true,
-  "experienceBlockWindowsSpotlight": true,
-  "experienceBlockWindowsTips": true,
-  "experienceBlockConsumerSpecificFeatures": true,
-  "startMenuLayoutXml": "binary",
-  "startMenuMode": "String",
-  "logonBlockFastUserSwitching": true,
-  "startBlockUnpinningAppsFromTaskbar": true,
-  "startMenuPinnedFolderDocuments": "String",
-  "startMenuPinnedFolderDownloads": "String",
-  "startMenuPinnedFolderFileExplorer": "String",
-  "startMenuPinnedFolderHomeGroup": "String",
-  "startMenuPinnedFolderMusic": "String",
-  "startMenuPinnedFolderNetwork": "String",
-  "startMenuPinnedFolderPersonalFolder": "String",
-  "startMenuPinnedFolderPictures": "String",
-  "startMenuPinnedFolderSettings": "String",
-  "startMenuPinnedFolderVideos": "String",
-  "startMenuAppListVisibility": "String",
-  "startMenuHideFrequentlyUsedApps": true,
-  "startMenuHideRecentJumpLists": true,
-  "startMenuHideRecentlyAddedApps": true,
-  "startMenuHideRestartOptions": true,
-  "startMenuHideUserTile": true,
-  "startMenuHidePowerButton": true,
-  "startMenuLayoutEdgeAssetsXml": "binary",
-  "personalizationDesktopImageUrl": "String",
-  "personalizationLockScreenImageUrl": "String"
+  "logonBlockFastUserSwitching": true
 }
 ```
 

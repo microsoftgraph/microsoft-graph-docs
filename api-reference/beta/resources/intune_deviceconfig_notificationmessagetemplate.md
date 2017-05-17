@@ -12,7 +12,7 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 
 ## Relationships
 None

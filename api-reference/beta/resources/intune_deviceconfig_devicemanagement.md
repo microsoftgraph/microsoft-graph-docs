@@ -20,6 +20,8 @@ Singleton entity that acts as a container for all device management functionalit
 |[List complianceSettingStateSummaries](../api/intune_deviceconfig_devicemanagement_list_compliancesettingstatesummary.md)|[complianceSettingStateSummary](../resources/intune_deviceconfig_compliancesettingstatesummary.md) collection|Get the complianceSettingStateSummaries from the complianceSettingStateSummaries navigation property.|
 |[Create complianceSettingStateSummary](../api/intune_deviceconfig_devicemanagement_create_compliancesettingstatesummary.md)|[complianceSettingStateSummary](../resources/intune_deviceconfig_compliancesettingstatesummary.md)|Create a new [complianceSettingStateSummary](../resources/intune_deviceconfig_compliancesettingstatesummary.md) by posting to the complianceSettingStateSummaries collection.|
 |[Get deviceConfigurationDeviceStateSummary](../api/intune_deviceconfig_devicemanagement_get_deviceconfigurationdevicestatesummary.md)|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|Get the [deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md) from the deviceConfigurationDeviceStateSummaries navigation property.|
+|[List cartToClassAssociations](../api/intune_deviceconfig_devicemanagement_list_carttoclassassociation.md)|[cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) collection|Get the cartToClassAssociations from the cartToClassAssociations navigation property.|
+|[Create cartToClassAssociation](../api/intune_deviceconfig_devicemanagement_create_carttoclassassociation.md)|[cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md)|Create a new [cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) by posting to the cartToClassAssociations collection.|
 
 ## Properties
 |Property|Type|Description|
@@ -37,6 +39,7 @@ Singleton entity that acts as a container for all device management functionalit
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md)|The device compliance state summary for this account.|
 |complianceSettingStateSummaries|[complianceSettingStateSummary](../resources/intune_deviceconfig_compliancesettingstatesummary.md) collection|The summary states of compliance policy settings for this account.|
 |deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|The device compliance state summary for this account.|
+|cartToClassAssociations|[cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) collection|The Cart To Class Associations.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

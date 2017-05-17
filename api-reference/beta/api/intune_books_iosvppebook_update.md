@@ -14,6 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
+PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}/eBook/
 ```
 
 ## Request headers

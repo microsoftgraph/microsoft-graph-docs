@@ -41,7 +41,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1374
+Content-Length: 1572
 
 {
   "value": [
@@ -84,7 +84,13 @@ Content-Length: 1374
         "sharePointDesigner": true,
         "visio": true,
         "word": true
-      }
+      },
+      "useSharedComputerActivation": true,
+      "updateChannel": "current",
+      "officePlatformArchitecture": "x86",
+      "localesToInstall": [
+        "Locales To Install value"
+      ]
     }
   ]
 }

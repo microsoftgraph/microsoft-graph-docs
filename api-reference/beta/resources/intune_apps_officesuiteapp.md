@@ -40,6 +40,10 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |autoAcceptEula|Boolean|The value to accept the EULA automatically on the enduser's device.|
 |productIds|String collection|The Product Ids that represent the Office365 Suite SKU.|
 |excludedApps|[excludedApps](../resources/intune_apps_excludedapps.md)|The property to represent the Apps which are excluded from the selected Office365 Product Id.|
+|useSharedComputerActivation|Boolean|The property to represent that whether the shared computer activation is used not for Office365 App Suite.|
+|updateChannel|String|The property to represent the Office365 Update Channel. Possible values are: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
+|officePlatformArchitecture|String|The property to represent the Office365 App Suite version. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|localesToInstall|String collection|The property to represent the locales which are installed when the Apps from Office365 is installed. It uses standard RFC 6033. Ref: https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -98,7 +102,13 @@ Here is a JSON representation of the resource.
     "sharePointDesigner": true,
     "visio": true,
     "word": true
-  }
+  },
+  "useSharedComputerActivation": true,
+  "updateChannel": "String",
+  "officePlatformArchitecture": "String",
+  "localesToInstall": [
+    "String"
+  ]
 }
 ```
 

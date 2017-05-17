@@ -41,7 +41,7 @@ The following table shows the properties that are required when you create a win
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
 |passwordRequiredType|String|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
-|passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent re-use of.|
+|passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent re-use of. Valid values 0 to 24|
 |osMinimumVersion|String|Minimum Windows 8.1 version.|
 |osMaximumVersion|String|Maximum Windows 8.1 version.|
 |storageRequireEncryption|Boolean|Indicates whether or not to require encryption on a windows 8.1 device.|

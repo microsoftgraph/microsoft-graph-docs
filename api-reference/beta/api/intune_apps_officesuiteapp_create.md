@@ -44,8 +44,12 @@ The following table shows the properties that are required when you create a off
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |autoAcceptEula|Boolean|The value to accept the EULA automatically on the enduser's device.|
-|productIds|String collection|The Product Ids that represent the Office365 Suite SKU. Possible values are: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail`, `projectProRetail`, `pdRetail`.|
+|productIds|String collection|The Product Ids that represent the Office365 Suite SKU. Possible values are: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail`, `projectProRetail`.|
 |excludedApps|[excludedApps](../resources/intune_apps_excludedapps.md)|The property to represent the Apps which are excluded from the selected Office365 Product Id.|
+|useSharedComputerActivation|Boolean|The property to represent that whether the shared computer activation is used not for Office365 App Suite.|
+|updateChannel|String|The property to represent the Office365 Update Channel. Possible values are: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
+|officePlatformArchitecture|String|The property to represent the Office365 App Suite version. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|localesToInstall|String collection|The property to represent the locales which are installed when the Apps from Office365 is installed. It uses standard RFC 6033. Ref: https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 
 
 
@@ -58,7 +62,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/mobileApps/
 Content-type: application/json
-Content-length: 1077
+Content-length: 1251
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -97,7 +101,13 @@ Content-length: 1077
     "sharePointDesigner": true,
     "visio": true,
     "word": true
-  }
+  },
+  "useSharedComputerActivation": true,
+  "updateChannel": "current",
+  "officePlatformArchitecture": "x86",
+  "localesToInstall": [
+    "Locales To Install value"
+  ]
 }
 ```
 
@@ -106,7 +116,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1185
+Content-Length: 1359
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -147,7 +157,13 @@ Content-Length: 1185
     "sharePointDesigner": true,
     "visio": true,
     "word": true
-  }
+  },
+  "useSharedComputerActivation": true,
+  "updateChannel": "current",
+  "officePlatformArchitecture": "x86",
+  "localesToInstall": [
+    "Locales To Install value"
+  ]
 }
 ```
 

@@ -10,7 +10,7 @@ Inherits from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreen
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|Name of the app Inherited from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)|
-|pages|[iosHomeScreenFolderPage](../resources/intune_deviceconfig_ioshomescreenfolderpage.md) collection|Pages of Home Screen Layout Icons which must be Application Type|
+|pages|[iosHomeScreenFolderPage](../resources/intune_deviceconfig_ioshomescreenfolderpage.md) collection|Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 None

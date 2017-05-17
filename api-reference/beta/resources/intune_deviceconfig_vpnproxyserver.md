@@ -8,7 +8,7 @@ VPN Proxy Server.
 |---|---|---|
 |automaticConfigurationScriptUrl|String|Proxy's automatic configuration script url.|
 |address|String|Address.|
-|port|Int32|Port.|
+|port|Int32|Port. Valid values 0 to 65535|
 
 ## Relationships
 None

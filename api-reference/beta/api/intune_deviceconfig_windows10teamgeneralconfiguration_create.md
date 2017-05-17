@@ -38,7 +38,7 @@ The following table shows the properties that are required when you create a win
 |azureOperationalInsightsWorkspaceId|String|The Azure Operational Insights workspace id.|
 |azureOperationalInsightsWorkspaceKey|String|The Azure Operational Insights Workspace key.|
 |maintenanceWindowBlocked|Boolean|Indicates whether or not to Block setting a maintenance window for device updates.|
-|maintenanceWindowDurationInHours|Int32|Maintenance window duration for device updates.|
+|maintenanceWindowDurationInHours|Int32|Maintenance window duration for device updates. Valid values 1 to 5|
 |maintenanceWindowStartTime|TimeOfDay|Maintenance window start time for device updates.|
 |miracastChannel|String|The channel. Possible values are: `userDefined`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `eleven`, `thirtySix`, `forty`, `fortyFour`, `fortyEight`, `oneHundredFortyNine`, `oneHundredFiftyThree`, `oneHundredFiftySeven`, `oneHundredSixtyOne`, `oneHundredSixtyFive`.|
 |miracastBlocked|Boolean|Indicates whether or not to Block wireless projection.|

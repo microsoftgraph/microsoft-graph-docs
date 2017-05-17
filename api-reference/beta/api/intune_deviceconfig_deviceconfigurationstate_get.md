@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 634
+Content-Length: 894
 
 {
   "value": {
@@ -55,7 +55,15 @@ Content-Length: 634
         "instanceDisplayName": "Instance Display Name value",
         "state": "notApplicable",
         "errorCode": 9,
-        "errorDescription": "Error Description value"
+        "errorDescription": "Error Description value",
+        "userPrincipalName": "User Principal Name value",
+        "sources": [
+          {
+            "@odata.type": "microsoft.graph.settingSource",
+            "id": "Id value",
+            "displayName": "Display Name value"
+          }
+        ]
       }
     ],
     "displayName": "Display Name value",

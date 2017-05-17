@@ -21,6 +21,13 @@ Not yet documented
 |unknownDeviceCount|Int32|Number of unknown devices.|
 |conflictDeviceCount|Int32|Number of conflict devices.|
 |notApplicableDeviceCount|Int32|Number of not applicable devices.|
+|compliantUserCount|Int32|Number of compliant users.|
+|nonCompliantUserCount|Int32|Number of non compliant users.|
+|remediatedUserCount|Int32|Number of remediated users.|
+|errorUserCount|Int32|Number of users had error.|
+|unknownUserCount|Int32|Number of unknown users.|
+|conflictUserCount|Int32|Number of conflict users.|
+|notApplicableUserCount|Int32|Number of not applicable users.|
 
 ## Relationships
 None
@@ -43,7 +50,14 @@ Here is a JSON representation of the resource.
   "errorDeviceCount": 1024,
   "unknownDeviceCount": 1024,
   "conflictDeviceCount": 1024,
-  "notApplicableDeviceCount": 1024
+  "notApplicableDeviceCount": 1024,
+  "compliantUserCount": 1024,
+  "nonCompliantUserCount": 1024,
+  "remediatedUserCount": 1024,
+  "errorUserCount": 1024,
+  "unknownUserCount": 1024,
+  "conflictUserCount": 1024,
+  "notApplicableUserCount": 1024
 }
 ```
 

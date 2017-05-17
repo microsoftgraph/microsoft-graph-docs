@@ -55,6 +55,8 @@ The following table shows the properties that are required when you create a [wi
 |enterpriseInternalProxyServers|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|This is the comma-separated list of internal proxy servers. For example, "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59". These proxies have been configured by the admin to connect to specific resources on the Internet. They are considered to be enterprise network locations. The proxies are only leveraged in configuring the EnterpriseCloudResources policy to force traffic to the matched cloud resources through these proxies Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseProxyServersAreAuthoritative|Boolean|Boolean value that tells the client to accept the configured list of proxies and not try to detect other work proxies. Default is false Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |neutralDomainResources|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|List of domain names that can used for work or personal resource Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|indexingEncryptedStoresOrItemsBlocked|Boolean|This switch is for the Windows Search Indexer, to allow or disallow indexing of items Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|smbAutoEncryptedFileExtensions|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |revokeOnMdmHandoffDisabled|Boolean|New property in RS2, pending documentation|
 |mdmEnrollmentUrl|String|Enrollment url for the MDM|
@@ -79,7 +81,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}
 Content-type: application/json
-Content-length: 4170
+Content-length: 4469
 
 {
   "displayName": "Display Name value",
@@ -193,6 +195,16 @@ Content-length: 4170
       ]
     }
   ],
+  "indexingEncryptedStoresOrItemsBlocked": true,
+  "smbAutoEncryptedFileExtensions": [
+    {
+      "@odata.type": "microsoft.graph.windowsInformationProtectionResourceCollection",
+      "displayName": "Display Name value",
+      "resources": [
+        "Resources value"
+      ]
+    }
+  ],
   "targetedSecurityGroupIds": [
     "Targeted Security Group Ids value"
   ],
@@ -215,7 +227,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4351
+Content-Length: 4650
 
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionPolicy",
@@ -324,6 +336,16 @@ Content-Length: 4351
   ],
   "enterpriseProxyServersAreAuthoritative": true,
   "neutralDomainResources": [
+    {
+      "@odata.type": "microsoft.graph.windowsInformationProtectionResourceCollection",
+      "displayName": "Display Name value",
+      "resources": [
+        "Resources value"
+      ]
+    }
+  ],
+  "indexingEncryptedStoresOrItemsBlocked": true,
+  "smbAutoEncryptedFileExtensions": [
     {
       "@odata.type": "microsoft.graph.windowsInformationProtectionResourceCollection",
       "displayName": "Display Name value",

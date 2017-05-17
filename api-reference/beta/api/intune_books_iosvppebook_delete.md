@@ -14,6 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 DELETE /deviceAppManagement/managedEBooks/{managedEBookId}
+DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}/eBook/
 ```
 
 ## Request headers

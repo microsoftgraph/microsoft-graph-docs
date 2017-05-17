@@ -14,7 +14,6 @@ Singleton entity that acts as a container for all device app management function
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
-|windowsManagementAppEnabled|Boolean|Windows management app enabled or not.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -32,8 +31,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.deviceAppManagement",
-  "id": "String (identifier)",
-  "windowsManagementAppEnabled": true
+  "id": "String (identifier)"
 }
 ```
 

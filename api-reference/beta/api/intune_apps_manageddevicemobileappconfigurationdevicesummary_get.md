@@ -13,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /iosMobileAppConfigurations/{iosMobileAppConfigurationsId}/deviceStatusSummary/
+GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatusSummary/
 ```
 
 ## Optional query parameters
@@ -34,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [managedDeviceMo
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/iosMobileAppConfigurations/{iosMobileAppConfigurationsId}/deviceStatusSummary/
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatusSummary/
 ```
 
 ### Response

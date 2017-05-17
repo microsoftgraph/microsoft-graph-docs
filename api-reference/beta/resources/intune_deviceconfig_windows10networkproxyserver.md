@@ -6,7 +6,7 @@ Network Proxy Server Policy.
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|address|String|Address to the proxy server. Specify an address in the format &lt;server&gt;\[":"&lt;port&gt;\].|
+|address|String|Address to the proxy server. Specify an address in the format &gt;server&lt;\[“:”&gt;port&lt;\]|
 |exceptions|String collection|Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node.|
 |useForLocalAddresses|Boolean|Specifies whether the proxy server should be used for local (intranet) addresses.|
 

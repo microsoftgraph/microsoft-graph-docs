@@ -498,8 +498,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _email_ |    View users' email address | Allows the app to read your users' primary email address. | No |
-| _offline_access_ |    Access user's data anytime (preview) | Allows the app to read and update user data, even when they are not currently using the app.| No |
-| _openid_ |    Sign users in (preview) | Allows users to sign in to the app with their work or school accounts and allows the app to see basic user profile information.| No |
+| _offline_access_ |    Access user's data anytime | Allows the app to read and update user data, even when they are not currently using the app.| No |
+| _openid_ |    Sign users in | Allows users to sign in to the app with their work or school accounts and allows the app to see basic user profile information.| No |
 | _profile_ |    View users' basic profile | Allows the app to see your users' basic profile (name, picture, user name).| No |
 
 #### Application permissions

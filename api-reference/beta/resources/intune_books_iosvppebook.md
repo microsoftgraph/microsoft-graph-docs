@@ -15,6 +15,7 @@ Inherits from [managedEBook](../resources/intune_books_managedebook.md)
 |[Delete iosVppEBook](../api/intune_books_iosvppebook_delete.md)|None|Deletes a [iosVppEBook](../resources/intune_books_iosvppebook.md).|
 |[Update iosVppEBook](../api/intune_books_iosvppebook_update.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md)|Update the properties of a [iosVppEBook](../resources/intune_books_iosvppebook.md) object.|
 |[List eBookGroupAssignments](../api/intune_books_iosvppebook_list_ebookgroupassignment.md)|[eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) collection|Get the eBookGroupAssignments from the groupAssignments navigation property.|
+|[Get eBookInstallSummary](../api/intune_books_iosvppebook_get_ebookinstallsummary.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Get the [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) from the installSummary navigation property.|
 |[List deviceInstallStates](../api/intune_books_iosvppebook_list_deviceinstallstate.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|Get the deviceInstallStates from the deviceStates navigation property.|
 |[List userInstallStateSummaries](../api/intune_books_iosvppebook_list_userinstallstatesummary.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection|Get the userInstallStateSummaries from the userStateSummary navigation property.|
 
@@ -44,6 +45,7 @@ Inherits from [managedEBook](../resources/intune_books_managedebook.md)
 |Relationship|Type|Description|
 |---|---|---|
 |groupAssignments|[eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) collection|The list of group assignments for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|installSummary|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Mobile App Install Summary. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |deviceStates|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|The list of installation states for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |userStateSummary|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection|The list of installation states for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 

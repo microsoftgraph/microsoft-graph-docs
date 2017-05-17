@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1064
+Content-Length: 1157
 
 {
   "value": [
@@ -69,7 +69,8 @@ Content-Length: 1064
           "name": "Name value",
           "objectIdentifier": "Object Identifier value"
         }
-      ]
+      ],
+      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
     }
   ]
 }

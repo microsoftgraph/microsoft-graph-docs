@@ -18,6 +18,8 @@ Device compliance setting State for a given device.
 |deviceId|String|The Device Id that is being reported|
 |deviceName|String|The Device Name that is being reported|
 |userName|String|The User Name that is being reported|
+|userPrincipalName|String|The User PrincipalName that is being reported|
+|deviceModel|String|The device model that is being reported|
 |state|String|The compliance state of the setting Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 
 ## Relationships
@@ -39,6 +41,8 @@ Here is a JSON representation of the resource.
   "deviceId": "String",
   "deviceName": "String",
   "userName": "String",
+  "userPrincipalName": "String",
+  "deviceModel": "String",
   "state": "String"
 }
 ```

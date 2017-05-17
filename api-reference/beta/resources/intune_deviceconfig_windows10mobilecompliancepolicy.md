@@ -33,11 +33,11 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |passwordRequired|Boolean|Require a password to unlock Windows Phone device.|
 |passwordBlockSimple|Boolean|Whether or not to block syncing the calendar.|
-|passwordMinimumLength|Int32|Minimum password length.|
+|passwordMinimumLength|Int32|Minimum password length. Valid values 4 to 16|
 |passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
 |passwordRequiredType|String|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent re-use of.|
-|passwordExpirationDays|Int32|Number of days before password expiration.|
+|passwordExpirationDays|Int32|Number of days before password expiration. Valid values 1 to 255|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordRequireToUnlockFromIdle|Boolean|Require a password to unlock an idle device.|
 |osMinimumVersion|String|Minimum Windows Phone version.|

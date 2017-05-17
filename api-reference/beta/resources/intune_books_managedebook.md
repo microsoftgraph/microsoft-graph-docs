@@ -8,7 +8,9 @@ An abstract class containing the base properties for Managed eBook.
 |---|---|---|
 |[List managedEBooks](../api/intune_books_managedebook_list.md)|[managedEBook](../resources/intune_books_managedebook.md) collection|List properties and relationships of the [managedEBook](../resources/intune_books_managedebook.md) objects.|
 |[Get managedEBook](../api/intune_books_managedebook_get.md)|[managedEBook](../resources/intune_books_managedebook.md)|Read properties and relationships of the [managedEBook](../resources/intune_books_managedebook.md) object.|
+|[assign action](../api/intune_books_managedebook_assign.md)|None|Not yet documented|
 |[List eBookGroupAssignments](../api/intune_books_managedebook_list_ebookgroupassignment.md)|[eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) collection|Get the eBookGroupAssignments from the groupAssignments navigation property.|
+|[Get eBookInstallSummary](../api/intune_books_managedebook_get_ebookinstallsummary.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Get the [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) from the installSummary navigation property.|
 |[List deviceInstallStates](../api/intune_books_managedebook_list_deviceinstallstate.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|Get the deviceInstallStates from the deviceStates navigation property.|
 |[List userInstallStateSummaries](../api/intune_books_managedebook_list_userinstallstatesummary.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection|Get the userInstallStateSummaries from the userStateSummary navigation property.|
 
@@ -30,6 +32,7 @@ An abstract class containing the base properties for Managed eBook.
 |Relationship|Type|Description|
 |---|---|---|
 |groupAssignments|[eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) collection|The list of group assignments for this eBook.|
+|installSummary|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Mobile App Install Summary.|
 |deviceStates|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|The list of installation states for this eBook.|
 |userStateSummary|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection|The list of installation states for this eBook.|
 

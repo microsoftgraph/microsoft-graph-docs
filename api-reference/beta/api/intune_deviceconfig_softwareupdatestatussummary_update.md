@@ -37,6 +37,13 @@ The following table shows the properties that are required when you create a [so
 |unknownDeviceCount|Int32|Number of unknown devices.|
 |conflictDeviceCount|Int32|Number of conflict devices.|
 |notApplicableDeviceCount|Int32|Number of not applicable devices.|
+|compliantUserCount|Int32|Number of compliant users.|
+|nonCompliantUserCount|Int32|Number of non compliant users.|
+|remediatedUserCount|Int32|Number of remediated users.|
+|errorUserCount|Int32|Number of users had error.|
+|unknownUserCount|Int32|Number of unknown users.|
+|conflictUserCount|Int32|Number of conflict users.|
+|notApplicableUserCount|Int32|Number of not applicable users.|
 
 
 
@@ -49,7 +56,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/softwareUpdateStatusSummary/
 Content-type: application/json
-Content-length: 254
+Content-length: 452
 
 {
   "displayName": "Display Name value",
@@ -59,7 +66,14 @@ Content-length: 254
   "errorDeviceCount": 0,
   "unknownDeviceCount": 2,
   "conflictDeviceCount": 3,
-  "notApplicableDeviceCount": 8
+  "notApplicableDeviceCount": 8,
+  "compliantUserCount": 2,
+  "nonCompliantUserCount": 5,
+  "remediatedUserCount": 3,
+  "errorUserCount": 14,
+  "unknownUserCount": 0,
+  "conflictUserCount": 1,
+  "notApplicableUserCount": 6
 }
 ```
 
@@ -68,7 +82,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 369
+Content-Length: 567
 
 {
   "@odata.type": "#microsoft.graph.softwareUpdateStatusSummary",
@@ -80,7 +94,14 @@ Content-Length: 369
   "errorDeviceCount": 0,
   "unknownDeviceCount": 2,
   "conflictDeviceCount": 3,
-  "notApplicableDeviceCount": 8
+  "notApplicableDeviceCount": 8,
+  "compliantUserCount": 2,
+  "nonCompliantUserCount": 5,
+  "remediatedUserCount": 3,
+  "errorUserCount": 14,
+  "unknownUserCount": 0,
+  "conflictUserCount": 1,
+  "notApplicableUserCount": 6
 }
 ```
 

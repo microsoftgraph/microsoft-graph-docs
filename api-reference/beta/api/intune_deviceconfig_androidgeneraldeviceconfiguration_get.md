@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2347
+Content-Length: 2559
 
 {
   "value": {
@@ -80,7 +80,15 @@ Content-Length: 2347
     "googlePlayStoreBlocked": true,
     "kioskModeBlockSleepButton": true,
     "kioskModeBlockVolumeButtons": true,
-    "kioskModeManagedAppId": "Kiosk Mode Managed App Id value",
+    "kioskModeManagedApps": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
     "nfcBlocked": true,
     "passwordBlockFingerprintUnlock": true,
     "passwordBlockTrustAgents": true,

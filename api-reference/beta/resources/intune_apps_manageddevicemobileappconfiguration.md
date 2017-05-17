@@ -19,8 +19,6 @@ An abstract class for Mobile app configuration for enrolled devices.
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
-|settingXml|String|mdm app configuration.|
-|settings|[appConfigurationSettingItem](../resources/intune_apps_appconfigurationsettingitem.md) collection|app configuration setting items.|
 |targetedMobileApps|String collection|the associated app.|
 |createdDateTime|DateTimeOffset|DateTime the object was created.|
 |description|String|Admin provided description of the Device Configuration.|
@@ -49,15 +47,6 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfiguration",
   "id": "String (identifier)",
-  "settingXml": "String",
-  "settings": [
-    {
-      "@odata.type": "microsoft.graph.appConfigurationSettingItem",
-      "appConfigKey": "String",
-      "appConfigKeyType": "String",
-      "appConfigKeyValue": "String"
-    }
-  ],
   "targetedMobileApps": [
     "String"
   ],

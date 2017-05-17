@@ -17,6 +17,9 @@ Not yet documented
 |---|---|---|
 |id|String|Key of the entity.|
 |deviceDisplayName|String|Device name of the DevicePolicyStatus.|
+|userName|String|The User Name that is being reported|
+|deviceModel|String|The device model that is being reported|
+|platform|Int32|Not yet documented|
 |status|String|Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
 |userPrincipalName|String|UserPrincipalName.|
@@ -36,6 +39,9 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceComplianceDeviceStatus",
   "id": "String (identifier)",
   "deviceDisplayName": "String",
+  "userName": "String",
+  "deviceModel": "String",
+  "platform": 1024,
   "status": "String",
   "lastReportedDateTime": "String (timestamp)",
   "userPrincipalName": "String"

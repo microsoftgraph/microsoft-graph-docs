@@ -47,7 +47,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/deviceConfigurationStates/{deviceConfigurationStateId}
 Content-type: application/json
-Content-length: 469
+Content-length: 713
 
 {
   "settingStates": [
@@ -57,7 +57,15 @@ Content-length: 469
       "instanceDisplayName": "Instance Display Name value",
       "state": "notApplicable",
       "errorCode": 9,
-      "errorDescription": "Error Description value"
+      "errorDescription": "Error Description value",
+      "userPrincipalName": "User Principal Name value",
+      "sources": [
+        {
+          "@odata.type": "microsoft.graph.settingSource",
+          "id": "Id value",
+          "displayName": "Display Name value"
+        }
+      ]
     }
   ],
   "displayName": "Display Name value",
@@ -73,7 +81,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 581
+Content-Length: 825
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationState",
@@ -85,7 +93,15 @@ Content-Length: 581
       "instanceDisplayName": "Instance Display Name value",
       "state": "notApplicable",
       "errorCode": 9,
-      "errorDescription": "Error Description value"
+      "errorDescription": "Error Description value",
+      "userPrincipalName": "User Principal Name value",
+      "sources": [
+        {
+          "@odata.type": "microsoft.graph.settingSource",
+          "id": "Id value",
+          "displayName": "Display Name value"
+        }
+      ]
     }
   ],
   "displayName": "Display Name value",

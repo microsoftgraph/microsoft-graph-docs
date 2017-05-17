@@ -14,6 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /deviceAppManagement/managedEBooks/{managedEBookId}
+GET /deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}/eBook/
 ```
 
 ## Optional query parameters

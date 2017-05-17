@@ -13,6 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
+PATCH /eBookGroupAssignments/{eBookGroupAssignmentsId}
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}
 ```
 
@@ -28,9 +29,9 @@ The following table shows the properties that are required when you create a [eB
 
 |Property|Type|Description|
 |---|---|---|
+|targetGroupId|String|The Id of the AAD group we are targeting the eBook to.|
 |id|String|Key of the entity.|
 |installIntent|String|The install intent defined by the admin. Possible values are: `notApplicable`, `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
-|targetGroupId|String|The Id of the AAD group we are targeting the eBook to.|
 
 
 
@@ -41,13 +42,13 @@ If successful, this method returns a `200 OK` response code and an updated [eBoo
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}
+PATCH https://graph.microsoft.com/beta/eBookGroupAssignments/{eBookGroupAssignmentsId}
 Content-type: application/json
 Content-length: 81
 
 {
-  "installIntent": "available",
-  "targetGroupId": "Target Group Id value"
+  "targetGroupId": "Target Group Id value",
+  "installIntent": "available"
 }
 ```
 
@@ -60,9 +61,9 @@ Content-Length: 189
 
 {
   "@odata.type": "#microsoft.graph.eBookGroupAssignment",
+  "targetGroupId": "Target Group Id value",
   "id": "6cb57cb9-7cb9-6cb5-b97c-b56cb97cb56c",
-  "installIntent": "available",
-  "targetGroupId": "Target Group Id value"
+  "installIntent": "available"
 }
 ```
 

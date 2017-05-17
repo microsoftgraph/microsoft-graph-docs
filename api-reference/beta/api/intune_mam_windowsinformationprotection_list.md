@@ -43,7 +43,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4385
+Content-Length: 4724
 
 {
   "value": [
@@ -154,6 +154,16 @@ Content-Length: 4385
       ],
       "enterpriseProxyServersAreAuthoritative": true,
       "neutralDomainResources": [
+        {
+          "@odata.type": "microsoft.graph.windowsInformationProtectionResourceCollection",
+          "displayName": "Display Name value",
+          "resources": [
+            "Resources value"
+          ]
+        }
+      ],
+      "indexingEncryptedStoresOrItemsBlocked": true,
+      "smbAutoEncryptedFileExtensions": [
         {
           "@odata.type": "microsoft.graph.windowsInformationProtectionResourceCollection",
           "displayName": "Display Name value",

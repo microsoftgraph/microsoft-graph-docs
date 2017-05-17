@@ -9,14 +9,11 @@ The organization resource represents an instance of global settings and resource
 |[List organizations](../api/intune_onboarding_organization_list.md)|[organization](../resources/intune_onboarding_organization.md) collection|List properties and relationships of the [organization](../resources/intune_onboarding_organization.md) objects.|
 |[Get organization](../api/intune_onboarding_organization_get.md)|[organization](../resources/intune_onboarding_organization.md)|Read properties and relationships of the [organization](../resources/intune_onboarding_organization.md) object.|
 |[Update organization](../api/intune_onboarding_organization_update.md)|[organization](../resources/intune_onboarding_organization.md)|Update the properties of a [organization](../resources/intune_onboarding_organization.md) object.|
-|[downloadApplePushNotificationCertificateSigningRequest function](../api/intune_onboarding_organization_downloadapplepushnotificationcertificatesigningrequest.md)|String|Not yet documented|
-|[uploadApplePushNotificationCertificate action](../api/intune_onboarding_organization_uploadapplepushnotificationcertificate.md)|[organization](../resources/intune_onboarding_organization.md)|Not yet documented|
 |[setMobileDeviceManagementAuthority action](../api/intune_onboarding_organization_setmobiledevicemanagementauthority.md)|Int32|Not yet documented|
 |[getEncryptionPublicKey function](../api/intune_onboarding_organization_getencryptionpublickey.md)|String|Not yet documented|
 |[uploadDepToken action](../api/intune_onboarding_organization_uploaddeptoken.md)|None|Not yet documented|
 |[syncWithAppleDeviceEnrollmentProgram action](../api/intune_onboarding_organization_syncwithappledeviceenrollmentprogram.md)|None|Not yet documented|
 |[toggleOnPremisesCertificateConnector action](../api/intune_onboarding_organization_toggleonpremisescertificateconnector.md)|Int32|Not yet documented|
-|[removeApplePushNotificationCertificate action](../api/intune_onboarding_organization_removeapplepushnotificationcertificate.md)|None|Not yet documented|
 |[List depOnboardingSettings](../api/intune_onboarding_organization_list_deponboardingsetting.md)|[depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) collection|Get the depOnboardingSettings from the depOnboardingSettings navigation property.|
 |[List appleVolumePurchaseProgramTokens](../api/intune_onboarding_organization_list_applevolumepurchaseprogramtoken.md)|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) collection|Get the appleVolumePurchaseProgramTokens from the appleVolumePurchaseProgramTokens navigation property.|
 
@@ -24,7 +21,6 @@ The organization resource represents an instance of global settings and resource
 |Property|Type|Description|
 |---|---|---|
 |id|String|The GUID for the object.|
-|applePushNotificationCertificateSetting|[applePushNotificationCertificateSetting](../resources/intune_onboarding_applepushnotificationcertificatesetting.md)|Apple MDM push certificate setting.|
 |mobileDeviceManagementAuthority|String|Mobile device management authority. Possible values are: `unknown`, `intune`, `sccm`, `office365`.|
 |defaultDeviceEnrollmentRestrictions|[defaultDeviceEnrollmentRestrictions](../resources/intune_onboarding_defaultdeviceenrollmentrestrictions.md)|Device enrollment restrictions applied to all users by default|
 |defaultDeviceEnrollmentWindowsHelloForBusinessSettings|[defaultDeviceEnrollmentWindowsHelloForBusinessSettings](../resources/intune_onboarding_defaultdeviceenrollmentwindowshelloforbusinesssettings.md)|Windows Hello for Business settings applied to all users by default|
@@ -50,15 +46,6 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.organization",
   "id": "String (identifier)",
-  "applePushNotificationCertificateSetting": {
-    "@odata.type": "microsoft.graph.applePushNotificationCertificateSetting",
-    "appleIdentifier": "String",
-    "topicIdentifier": "String",
-    "lastModifiedDateTime": "String (timestamp)",
-    "expirationDateTime": "String (timestamp)",
-    "certificateUploadStatus": "String",
-    "certificateUploadFailureReason": "String"
-  },
   "mobileDeviceManagementAuthority": "String",
   "defaultDeviceEnrollmentRestrictions": {
     "@odata.type": "microsoft.graph.defaultDeviceEnrollmentRestrictions",
@@ -84,6 +71,13 @@ Here is a JSON representation of the resource.
       "osMaximumVersion": "String"
     },
     "androidRestrictions": {
+      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": "String",
+      "osMaximumVersion": "String"
+    },
+    "androidForWorkRestrictions": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
       "platformBlocked": true,
       "personalDeviceEnrollmentBlocked": true,

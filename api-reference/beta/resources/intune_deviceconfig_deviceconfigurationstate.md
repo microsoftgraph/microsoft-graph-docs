@@ -44,7 +44,15 @@ Here is a JSON representation of the resource.
       "instanceDisplayName": "String",
       "state": "String",
       "errorCode": 1024,
-      "errorDescription": "String"
+      "errorDescription": "String",
+      "userPrincipalName": "String",
+      "sources": [
+        {
+          "@odata.type": "microsoft.graph.settingSource",
+          "id": "String",
+          "displayName": "String"
+        }
+      ]
     }
   ],
   "displayName": "String",

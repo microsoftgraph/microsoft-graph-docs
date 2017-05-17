@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1024
+Content-Length: 1115
 
 {
   "value": {
@@ -69,7 +69,8 @@ Content-Length: 1024
     ],
     "certificationAuthority": "Certification Authority value",
     "certificationAuthorityName": "Certification Authority Name value",
-    "certificateTemplateName": "Certificate Template Name value"
+    "certificateTemplateName": "Certificate Template Name value",
+    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
   }
 }
 ```

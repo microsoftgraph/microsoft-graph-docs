@@ -42,13 +42,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 175
+Content-Length: 133
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceAppManagement",
-    "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb",
-    "windowsManagementAppEnabled": true
+    "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
   }
 }
 ```

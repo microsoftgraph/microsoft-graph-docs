@@ -29,7 +29,6 @@ The following table shows the properties that are required when you create a [de
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
-|windowsManagementAppEnabled|Boolean|Windows management app enabled or not.|
 
 
 
@@ -42,11 +41,9 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement
 Content-type: application/json
-Content-length: 43
+Content-length: 2
 
-{
-  "windowsManagementAppEnabled": true
-}
+{}
 ```
 
 ### Response
@@ -54,12 +51,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 150
+Content-Length: 110
 
 {
   "@odata.type": "#microsoft.graph.deviceAppManagement",
-  "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb",
-  "windowsManagementAppEnabled": true
+  "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
 }
 ```
 
