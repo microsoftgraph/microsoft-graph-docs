@@ -1,0 +1,182 @@
+﻿# Update windowsPhone81GeneralConfiguration
+Update the properties of a [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md) object.
+### Prerequisites
+One of the following **scopes** is required to execute this API:
+
+*DeviceManagementConfiguration.ReadWrite.All*
+### HTTP Request
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
+PATCH /deviceManagement/deviceConfigurations/<id>
+PATCH /deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>/deviceConfiguration
+PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration
+```
+
+### Request headers
+|Header|Value|
+|---|---|
+|Authorization|Bearer &lt;token&gt; Required.|
+|Accept|application/json|
+
+### Request body
+In the request body, supply a JSON representation of a [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md) object.
+The following table shows the properties that are required when you create a [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md).
+
+|Property|Type|Description|
+|---|---|---|
+|id|String|Key of the entity. Inherited from [deviceConfiguration](deviceConfiguration.md).|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](deviceConfiguration.md).|
+|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](deviceConfiguration.md).|
+|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
+|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
+|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](deviceConfiguration.md).|
+|applyToWindows10Mobile|Boolean|Indicates whether or not to apply this configuration to Windows 10 mobile.|
+|applyOnlyToWindowsPhone81|Boolean|Value indicating whether this policy only applies to Windows Phone 8.1.|
+|appsBlockCopyPaste|Boolean|Indicates whether or not to block copy paste.|
+|bluetoothBlocked|Boolean|Indicates whether or not to block bluetooth.|
+|cameraBlocked|Boolean|Indicates whether or not to block camera.|
+|cellularBlockWifiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering. Has no impact if Wi-Fi is blocked.|
+|compliantAppsList|[appListItem](../resources/appListItem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
+|compliantAppListType|String|List that is in the AppComplianceList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
+|diagnosticDataBlockSubmission|Boolean|Indicates whether or not to block diagnostic data submission.|
+|emailBlockAddingAccounts|Boolean|Indicates whether or not to block custom email accounts.|
+|locationServicesBlocked|Boolean|Indicates whether or not to block location services.|
+|microsoftAccountBlocked|Boolean|Indicates whether or not to block using a Microsoft Account.|
+|nfcBlocked|Boolean|Indicates whether or not to block Near-Field Communication.|
+|passwordBlockSimple|Boolean|Indicates whether or not to block syncing the calendar.|
+|passwordExpirationDays|Int32|Number of days before the password expires.|
+|passwordMinimumLength|Int32|Minimum length of passwords.|
+|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before screen timeout.|
+|passwordMinimumCharacterSetCount|Int32|Number of character sets a password must contain.|
+|passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset.|
+|passwordRequiredType|String|Password type that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequired|Boolean|Indicates whether or not to require a password.|
+|screenCaptureBlocked|Boolean|Indicates whether or not to block screenshots.|
+|storageBlockRemovableStorage|Boolean|Indicates whether or not to block removable storage.|
+|storageRequireEncryption|Boolean|Indicates whether or not to require encryption.|
+|webBrowserBlocked|Boolean|Indicates whether or not to block the web browser.|
+|wifiBlocked|Boolean|Indicates whether or not to block Wi-Fi.|
+|wifiBlockAutomaticConnectHotspots|Boolean|Indicates whether or not to block automatically connecting to Wi-Fi hotspots. Has no impact if Wi-Fi is blocked.|
+|wifiBlockHotspotReporting|Boolean|Indicates whether or not to block Wi-Fi hotspot reporting. Has no impact if Wi-Fi is blocked.|
+|windowsStoreBlocked|Boolean|Indicates whether or not to block the Windows Store.|
+
+
+
+### Response
+If successful, this method returns a `200 OK` response code and an updated [windowsPhone81GeneralConfiguration](../resources/windowsPhone81GeneralConfiguration.md) object in the response body.
+
+### Example
+##### Request
+Here is an example of the request.
+```http
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>
+Content-type: application/json
+Content-length: 1491
+
+{
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "description": "Description value",
+  "displayName": "Display Name value",
+  "version": 7,
+  "applyToWindows10Mobile": true,
+  "applyOnlyToWindowsPhone81": true,
+  "appsBlockCopyPaste": true,
+  "bluetoothBlocked": true,
+  "cameraBlocked": true,
+  "cellularBlockWifiTethering": true,
+  "compliantAppsList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ],
+  "compliantAppListType": "appsInListCompliant",
+  "diagnosticDataBlockSubmission": true,
+  "emailBlockAddingAccounts": true,
+  "locationServicesBlocked": true,
+  "microsoftAccountBlocked": true,
+  "nfcBlocked": true,
+  "passwordBlockSimple": true,
+  "passwordExpirationDays": 22,
+  "passwordMinimumLength": 21,
+  "passwordMinutesOfInactivityBeforeScreenTimeout": 46,
+  "passwordMinimumCharacterSetCount": 32,
+  "passwordPreviousPasswordBlockCount": 34,
+  "passwordSignInFailureCountBeforeFactoryReset": 44,
+  "passwordRequiredType": "alphanumeric",
+  "passwordRequired": true,
+  "screenCaptureBlocked": true,
+  "storageBlockRemovableStorage": true,
+  "storageRequireEncryption": true,
+  "webBrowserBlocked": true,
+  "wifiBlocked": true,
+  "wifiBlockAutomaticConnectHotspots": true,
+  "wifiBlockHotspotReporting": true,
+  "windowsStoreBlocked": true
+}
+```
+
+##### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 1672
+
+{
+  "@odata.type": "#microsoft.graph.windowsPhone81GeneralConfiguration",
+  "id": "f5e0e34d-e34d-f5e0-4de3-e0f54de3e0f5",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "description": "Description value",
+  "displayName": "Display Name value",
+  "version": 7,
+  "applyToWindows10Mobile": true,
+  "applyOnlyToWindowsPhone81": true,
+  "appsBlockCopyPaste": true,
+  "bluetoothBlocked": true,
+  "cameraBlocked": true,
+  "cellularBlockWifiTethering": true,
+  "compliantAppsList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ],
+  "compliantAppListType": "appsInListCompliant",
+  "diagnosticDataBlockSubmission": true,
+  "emailBlockAddingAccounts": true,
+  "locationServicesBlocked": true,
+  "microsoftAccountBlocked": true,
+  "nfcBlocked": true,
+  "passwordBlockSimple": true,
+  "passwordExpirationDays": 22,
+  "passwordMinimumLength": 21,
+  "passwordMinutesOfInactivityBeforeScreenTimeout": 46,
+  "passwordMinimumCharacterSetCount": 32,
+  "passwordPreviousPasswordBlockCount": 34,
+  "passwordSignInFailureCountBeforeFactoryReset": 44,
+  "passwordRequiredType": "alphanumeric",
+  "passwordRequired": true,
+  "screenCaptureBlocked": true,
+  "storageBlockRemovableStorage": true,
+  "storageRequireEncryption": true,
+  "webBrowserBlocked": true,
+  "wifiBlocked": true,
+  "wifiBlockAutomaticConnectHotspots": true,
+  "wifiBlockHotspotReporting": true,
+  "windowsStoreBlocked": true
+}
+```
+
+
