@@ -7,9 +7,7 @@ This resource supports:
 - Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
 - Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
-> **Microsoft Teams and the group APIs**:
-> * Microsoft Teams are built upon Office 365 groups.  All the following methods for groups can also be used with teams, with the exception that 'Create group' does not currently allow you to create a team.  There are also some methods specific to Microsoft Teams, which are clearly labelled as such.
-> * Care must be taken if using the group APIs in a Microsoft Teams app - e.g. as part inside a 'tab' or 'bot' running inside Microsoft Teams - rather than in a standalone app.  This is because of differing consent models. Typically, users can directly consent to your Microsoft Teams app within a specific team.  However, currently [enterprise admins must also consent to your app (as registered in Azure AD) using the group APIs](../../../concepts/known_issues.md), at which point it then has API access all of the groups/teams for each user.  You should ensure your Microsoft Teams app copes with not having the permissions it needs, and that it respects the user's intention about which teams it should operate in.  Note that these considerations do not apply if your are just using non-group [user APIs](user.md) that the user can always consent to themselves.
+> **You can use these group APIs with Microsoft Teams**.  Please see [this guidance](teams_api_overview.md).
 
 ## Methods
 
