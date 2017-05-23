@@ -9,7 +9,7 @@ You can enable, configure, or disable one or more of these settings as part of [
 
 ## Prerequisites
 The following **scope** is required to execute this API:
-*Mailboxsettings.ReadWrite*  
+*MailboxSettings.ReadWrite*  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

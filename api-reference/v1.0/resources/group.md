@@ -7,6 +7,8 @@ This resource supports:
 - Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
 - Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
+> **Microsoft Teams is built upon Office 365 groups**.  You can use most of these APIs with Microsoft Teams.  Please see [this guidance](teams_api_overview.md).
+
 ## Methods
 
 | Method       | Return Type  |Description|

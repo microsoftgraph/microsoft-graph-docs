@@ -7,7 +7,7 @@ You can view all mailbox settings, or, get specific settings.
 
 ## Prerequisites
 The following **scope** is required to execute this API:
-*Mailboxsettings.ReadWrite*  
+*MailboxSettings.Read*  
 
 ## HTTP request
 To get all mailbox settings which include automatic replies settings:
