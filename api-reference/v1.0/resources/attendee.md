@@ -9,7 +9,7 @@ Derived from [attendeeBase](attendeebase.md).
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.|
 |type|String|The attendee type: `Required`, `Optional`, `Resource`.|
-|emailAddress|[emailAddress](emailAddress.md)|Includes the name and SMTP address of the attendee.|
+|emailAddress|[emailAddress](emailaddress.md)|Includes the name and SMTP address of the attendee.|
 
 
 ## JSON representation
