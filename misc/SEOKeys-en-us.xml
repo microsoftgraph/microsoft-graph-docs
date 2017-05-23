@@ -567,6 +567,8 @@
           <Item text="Create notebook" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
     </Item>
   </Item>
+  <Item text="Microsoft Teams" url="/en-us/api-reference/v1.0/resources/teams_api_overview" SEOKeyword="Teams API, Microsoft Graph API, Microsoft Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
+  </Item>
   <Item text="Directory" url="/en-us/api-reference/v1.0/resources/directoryobject" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
     <Item text="Contracts" url="/en-us/api-reference/v1.0/resources/contract" >
       <Item text="Get contract" url="/en-us/api-reference/v1.0/api/contract_get" />
@@ -1190,8 +1192,8 @@
           </Item>
         </Item>
     </Item>
-    <Item text="Groups and Teams" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
-      <Item text="Groups" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
+    <Item text="Groups" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
+      <Item text="Group" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
         <Item text="Add favorite" url="/en-us/api-reference/beta/api/group_addfavorite" SEOKeyword="group: addFavorite, Microsoft Graph API, group API" SEODescription="" />
         <Item text="Add member" url="/en-us/api-reference/beta/api/group_post_members" SEOKeyword="Create member, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new member." />
         <Item text="Add owner" url="/en-us/api-reference/beta/api/group_post_owners" SEOKeyword="Create owner, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new owner." />
@@ -1260,7 +1262,7 @@
       <Item text="Chat thread" url="/en-us/api-reference/beta/resources/chatthread" SEOKeyword="chatthread API, Microsoft Graph API, chatthread API" SEODescription="">
         <Item text="Create chat thread" url="/en-us/api-reference/beta/api/group_post_threads" SEOKeyword="Create chat thread, Microsoft Graph API, Microsoft Teams chat API" SEODescription="Use this API to create a new chat thread." />
       </Item>
-      <Item text="Chat Message" url="/en-us/api-reference/beta/resources/chatmessage" SEOKeyword="chat message API, Microsoft Graph API, chat message API" SEODescription="">
+      <Item text="Chat message" url="/en-us/api-reference/beta/resources/chatmessage" SEOKeyword="chat message API, Microsoft Graph API, chat message API" SEODescription="">
       </Item>
       <Item text="Calendar" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
         <Item text="List events" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="List events, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
@@ -1297,6 +1299,8 @@
       </Item>
       <Item text="Directory object" url="/en-us/api-reference/beta/resources/directoryobject" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
       </Item>
+    </Item>
+    <Item text="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="Teams API, Microsoft Graph API, Microsoft Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
     </Item>
     <Item text="Organizational contacts" url="/en-us/api-reference/beta/resources/orgcontact" SEOKeyword="orgcontact API, Microsoft Graph API, orgcontact API" SEODescription="">
       <Item text="Contact" url="/en-us/api-reference/beta/resources/orgcontact" SEOKeyword="orgcontact API, Microsoft Graph API, orgcontact API" SEODescription="">
