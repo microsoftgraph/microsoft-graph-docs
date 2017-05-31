@@ -1,4 +1,5 @@
-# sharingDetail resource type
+# insightIdentity
+ resource type
 
 Complex type containing properties of [Shared](insights_shared.md) items. 
 

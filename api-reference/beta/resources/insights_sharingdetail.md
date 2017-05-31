@@ -11,7 +11,7 @@ Here is a JSON representation of the resource
   "sharedDateTime": "dateTimeOffset",
   "sharingSubject": "string",
   "sharingType": "string",
-  "insightIdentity": "insightIdentity",
+  "sharedBy": "insightIdentity",
   "resourceReference": "resourceReference"
 }
 ```
