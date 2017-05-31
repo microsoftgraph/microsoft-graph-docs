@@ -23,5 +23,5 @@ Here is a JSON representation of the resource
 | sharedDateTime      	| DateTimeOffset| The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`. Read-only.  |
 | sharingSubject      	| String	      | The subject with which the document was shared. |
 | sharingType     		  | String        | Determines the way the document was shared, can be by a "Link", "Attachment", "Group", "Site".     |
-| sharedBy      	      | [insightIdentity](insights_identity.md)	    | The user who shared the document.  |
+| sharedBy      	      | [insightIdentity](insights_insightidentity.md)	    | The user who shared the document.  |
 | sharingReference		  | [resourceReference](insights_resourceReference.md)	    |  |
