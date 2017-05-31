@@ -121,6 +121,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |:--------------|:----------|:--------------|
 | Addition | v1.0 and beta | Added the **drives** and **sites** navigation properties to **group**.
 
+### Insights APIs
+
+|**Change type**|**Version**|**Description**| 
+|:-------------|:-----------|:--------------|
+|Addition|Beta|Added [Shared API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/insights_shared).<br />New resources:<br />[sharingDetail](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/insights_sharingdetail) <br />[insightIdentity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/insights_insightidentity) <br />
+|Addition|Beta|Added [Used API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/insights_used).<br />New resources:<br />[usageDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/insights_usagedetails) <br />
+|Change|Beta|New **Type** property in the:<br />[resourceVisualization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/insights_resourcevisualization) resource. <br />
+|Deletion|Beta|Removed the following entities:<br/>**workingWith**<br/>**trendingAround**<br/>|
 
 ### Intune APIs
 
