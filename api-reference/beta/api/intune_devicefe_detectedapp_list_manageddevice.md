@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3146
+Content-Length: 3232
 
 {
   "value": [
@@ -119,7 +119,8 @@ Content-Length: 3146
       "userPrincipalName": "User Principal Name value",
       "model": "Model value",
       "manufacturer": "Manufacturer value",
-      "imei": "Imei value"
+      "imei": "Imei value",
+      "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
     }
   ]
 }

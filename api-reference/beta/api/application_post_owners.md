@@ -2,7 +2,7 @@
 
 Use this API to create a new owner.
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -12,7 +12,7 @@ POST /applications/{id}/owners
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer &lt;token&gt; *Required*  |
 
 ## Request body
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.

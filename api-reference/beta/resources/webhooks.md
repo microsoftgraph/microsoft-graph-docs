@@ -78,14 +78,14 @@ POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 {
   "changeType": "created,updated",
-  "notificationURL": "https://webhook.azurewebsites.net/notificationClient",
+  "notificationUrl": "https://webhook.azurewebsites.net/notificationClient",
   "resource": "/me/mailfolders('inbox')/messages",
   "expirationDateTime": "2016-03-20T11:00:00.0000000Z",
   "clientState": "SecretClientState"
 }
 ```
 
-The changeType, notificationURL, resource, and expirationDateTime properties are required. See [subscription resource type](subscription.md) for property definitions and values. Although clientState is not required, you must include it to comply with our recommended notification handling process.
+The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](subscription.md) for property definitions and values. Although `clientState` is not required, you must include it to comply with our recommended notification handling process.
 
 If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subscription.md) object in the body.
 

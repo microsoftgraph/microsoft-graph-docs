@@ -28,6 +28,7 @@ The following table shows the properties that are required when you create a [de
 
 |Property|Type|Description|
 |---|---|---|
+|inGracePeriodCount|Int32|Number of devices that are in grace period|
 |id|String|Key of the entity.|
 |unknownDeviceCount|Int32|Number of unknown devices|
 |notApplicableDeviceCount|Int32|Number of not applicable devices|
@@ -48,9 +49,10 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicyDeviceStateSummary/
 Content-type: application/json
-Content-length: 214
+Content-length: 242
 
 {
+  "inGracePeriodCount": 2,
   "unknownDeviceCount": 2,
   "notApplicableDeviceCount": 8,
   "compliantDeviceCount": 4,
@@ -66,10 +68,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 342
+Content-Length: 370
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyDeviceStateSummary",
+  "inGracePeriodCount": 2,
   "id": "8c4de8a7-e8a7-8c4d-a7e8-4d8ca7e84d8c",
   "unknownDeviceCount": 2,
   "notApplicableDeviceCount": 8,

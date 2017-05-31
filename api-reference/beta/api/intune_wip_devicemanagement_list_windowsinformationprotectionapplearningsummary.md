@@ -6,7 +6,7 @@ Get the windowsInformationProtectionAppLearningSummaries from the windowsInforma
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+*DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

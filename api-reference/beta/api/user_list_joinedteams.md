@@ -1,9 +1,13 @@
 # List joinedTeams
 
-Get the Microsoft Teams that the user is a direct member of. 
+Get the teams that the user is a direct member of.
+ 
 ## Prerequisites
 One of the following **scopes** is required to execute this API: 
 *User.Read.All; User.ReadWrite.All*
+
+> Currrently, only [delegated permissions](../../../concepts/permissions_reference.md) are supported for this operation.  Future releases will support application permissions. 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

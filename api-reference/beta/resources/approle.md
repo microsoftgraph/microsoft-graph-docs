@@ -2,6 +2,7 @@
 
 Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role. The **appRoles** property of the [servicePrincipal](serviceprincipal.md) entity and of the [application](application.md) entity is a collection of **appRole**.
 
+> Important: This functionality is disabled in the current release.
 
 ## JSON representation
 

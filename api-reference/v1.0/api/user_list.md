@@ -2,7 +2,18 @@
 
 Retrieve a list of user objects.
 
-> Note: Listing users returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.
+> Note: Listing users returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object. However, only the following properties can be selected for individual users, e.g. /v1.0/me?$select=aboutMe, and not for collections of users, e.g. /v1.0/users?$select=aboutMe:
+>* aboutMe
+>* birthday
+>* hireDate
+>* interests
+>* mySite
+>* pastProjects
+>* preferredName
+>* responsibilities
+>* schools
+>* skills
+>* mailboxSettings
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:

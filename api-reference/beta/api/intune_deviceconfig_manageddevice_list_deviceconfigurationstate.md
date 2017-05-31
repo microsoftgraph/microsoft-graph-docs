@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 958
+Content-Length: 1180
 
 {
   "value": [
@@ -51,10 +51,14 @@ Content-Length: 958
         {
           "@odata.type": "microsoft.graph.deviceConfigurationSettingState",
           "setting": "Setting value",
+          "settingName": "Setting Name value",
           "instanceDisplayName": "Instance Display Name value",
           "state": "notApplicable",
           "errorCode": 9,
           "errorDescription": "Error Description value",
+          "userId": "User Id value",
+          "userName": "User Name value",
+          "userEmail": "User Email value",
           "userPrincipalName": "User Principal Name value",
           "sources": [
             {
@@ -62,7 +66,8 @@ Content-Length: 958
               "id": "Id value",
               "displayName": "Display Name value"
             }
-          ]
+          ],
+          "currentValue": "Current Value value"
         }
       ],
       "displayName": "Display Name value",

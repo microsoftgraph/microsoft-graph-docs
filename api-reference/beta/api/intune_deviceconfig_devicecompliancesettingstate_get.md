@@ -13,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceComplianceSettingStates/{deviceComplianceSettingStatesId}
+GET /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/{deviceComplianceSettingStateId}
 ```
 
 ## Optional query parameters
@@ -34,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [deviceComplianc
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceComplianceSettingStates/{deviceComplianceSettingStatesId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/{deviceComplianceSettingStateId}
 ```
 
 ### Response
@@ -42,16 +42,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 465
+Content-Length: 602
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceComplianceSettingState",
     "id": "9905f955-f955-9905-55f9-059955f90599",
     "devicePlatform": "androidForWork",
+    "platformType": "windowsRT",
+    "setting": "Setting value",
     "settingName": "Setting Name value",
     "deviceId": "Device Id value",
     "deviceName": "Device Name value",
+    "userId": "User Id value",
+    "userEmail": "User Email value",
     "userName": "User Name value",
     "userPrincipalName": "User Principal Name value",
     "deviceModel": "Device Model value",

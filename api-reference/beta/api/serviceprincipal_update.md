@@ -27,7 +27,7 @@ In the request body, supply the values for relevant fields that should be update
 |errorUrl|String|            |
 |homepage|String|The URL to the homepage of the associated application.|
 |keyCredentials|keyCredential|The collection of key credentials associated with the service principal.                            **Notes**: not nullable.            |
-|logoutUrl|String|            |
+|logoutUrl|String| Specifies the URL that will be used by Microsoft's authorization service to logout an user using [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) or SAML logout protocols. |
 |oauth2Permissions|oAuth2Permission|The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the application entity.                            **Notes**: Requires version 1.5 or newer, not nullable.            |
 |passwordCredentials|passwordCredential|The collection of password credentials associated with the service principal.                            **Notes**: not nullable.            |
 |preferredTokenSigningKeyThumbprint|String|Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions.                            **Notes**: Requires version 1.5 or newer.            |

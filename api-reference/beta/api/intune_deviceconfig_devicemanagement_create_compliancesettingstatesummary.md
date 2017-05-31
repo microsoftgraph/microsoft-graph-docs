@@ -28,9 +28,11 @@ The following table shows the properties that are required when you create a com
 
 |Property|Type|Description|
 |---|---|---|
+|setting|String|The setting class name and property name.|
 |settingName|String|Name of the setting.|
 |instanceDisplayName|String|Name of setting instance that is being reported.|
 |settingPlatform|String|Setting platform Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`.|
+|platformType|String|Setting platform Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`.|
 |id|String|Key of the entity.|
 |unknownDeviceCount|Int32|Number of unknown devices|
 |notApplicableDeviceCount|Int32|Number of not applicable devices|
@@ -51,13 +53,15 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/complianceSettingStateSummaries/
 Content-type: application/json
-Content-length: 419
+Content-length: 487
 
 {
   "@odata.type": "#microsoft.graph.complianceSettingStateSummary",
+  "setting": "Setting value",
   "settingName": "Setting Name value",
   "instanceDisplayName": "Instance Display Name value",
   "settingPlatform": "androidForWork",
+  "platformType": "androidForWork",
   "unknownDeviceCount": 2,
   "notApplicableDeviceCount": 8,
   "compliantDeviceCount": 4,
@@ -73,13 +77,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 468
+Content-Length: 536
 
 {
   "@odata.type": "#microsoft.graph.complianceSettingStateSummary",
+  "setting": "Setting value",
   "settingName": "Setting Name value",
   "instanceDisplayName": "Instance Display Name value",
   "settingPlatform": "androidForWork",
+  "platformType": "androidForWork",
   "id": "21926cf1-6cf1-2192-f16c-9221f16c9221",
   "unknownDeviceCount": 2,
   "notApplicableDeviceCount": 8,

@@ -41,10 +41,14 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.deviceConfigurationSettingState",
       "setting": "String",
+      "settingName": "String",
       "instanceDisplayName": "String",
       "state": "String",
       "errorCode": 1024,
       "errorDescription": "String",
+      "userId": "String",
+      "userName": "String",
+      "userEmail": "String",
       "userPrincipalName": "String",
       "sources": [
         {
@@ -52,7 +56,8 @@ Here is a JSON representation of the resource.
           "id": "String",
           "displayName": "String"
         }
-      ]
+      ],
+      "currentValue": "String"
     }
   ],
   "displayName": "String",

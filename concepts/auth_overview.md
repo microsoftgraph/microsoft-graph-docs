@@ -71,7 +71,7 @@ You can call Microsoft Graph from the following kinds of apps:
 - **Web APIs**: A client app calls a web API (secured by Azure AD), which then calls Microsoft Graph, all on behalf of a user. Supported by the Azure AD endpoint. For the Azure AD v2.0 endpoint, only supported if the client and the web API have the same Application Id; for example, a native app that calls a web API back end. 
 
 ## How do I get my app talking to Azure AD and Microsoft Graph?
-Before your app can get a token from Azure AD, it must be registered. For the Azure AD v2.0 endpoint, you use the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) to register your app. For the Azure AD endpoint, you use the [Azure portal](https://azure.portal.com/). Registration integrates your app with Azure AD and establishes the coordinates and identifiers that it uses to get tokens. These are:
+Before your app can get a token from Azure AD, it must be registered. For the Azure AD v2.0 endpoint, you use the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) to register your app. For the Azure AD endpoint, you use the [Azure portal](https://portal.azure.com/). Registration integrates your app with Azure AD and establishes the coordinates and identifiers that it uses to get tokens. These are:
 
 - **Application Id**: A unique identifier assigned by Azure AD. 
 - **Redirect URI/URL**: One or more endpoints at which your app will receive responses from Azure AD. (For native and mobile apps this is a URI assigned by Azure AD.)
@@ -146,7 +146,7 @@ For more information about differences between the Azure AD v2.0 endpoint and th
 Once you've registered your app, you're ready to get started!
 
 - For quick steps on getting an access token for apps that call Microsoft Graph on behalf of a user, see [Get access on behalf of users](auth_v2_user.md).
-- For quick steps on getting an access token for apps that call Microsoft Graph without a user, see [Get access without a user](auth_v2_user.md).
+- For quick steps on getting an access token for apps that call Microsoft Graph without a user, see [Get access without a user](auth_v2_service.md).
 - To see the permissions that you can use with Microsoft Graph, see [Permissions](permissions_reference.md).
 - If you're a Microsoft Cloud Solution provider interested in accessing partner-managed customer data through Microsoft Graph, see [Manage app access (CSPs)](auth_cloudsolutionprovider.md).
 

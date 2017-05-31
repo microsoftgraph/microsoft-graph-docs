@@ -17,7 +17,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/SfbOrganizerActivity(view=view-value, period=period-value)/content
+GET /reports/SfbParticipantActivity(view=view-value, period=period-value)/content
 ```
 
 ## Request headers

@@ -6,7 +6,7 @@ Update the properties of a [managedDevice](../resources/intune_endpointprotectio
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+*DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

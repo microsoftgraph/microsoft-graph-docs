@@ -1,16 +1,16 @@
-# Microsoft Graph optional query parameters
+# Customize responses: optional query parameters
 
-Microsoft Graph provides several optional query parameters that you can use to specify and control the amount of data returned in a response. Microsoft Graph supports the following query parameters.
+Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following following query parameters are supported.
 
 |Name|Description|Example (click examples to try in [Graph Explorer][graph-explorer])
 |:---------------|:--------|:-------|
-|[`$filter`](#filter)|Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
-|[`$select`](#select)|Filters properties (columns).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
-|[`$expand`](#expand)|Retrieves related resources.|[`/groups/{id}?$expand=members`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/22be6ccb-15a5-459f-94ac-d1393bdd9e66?$expand=members&method=GET&version=v1.0)
-|[`$orderby`](#orderby)|Orders results.|[`/users?$orderby=displayName,userPrincipalName desc`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$orderby=displayName,userPrincipalName%20DESC&method=GET&version=v1.0)
-|[`$top`](#top)|Limits results. Typically used with `$skipToken`.|[`/users?$top=2`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
-|[`$skipToken`](#skiptoken)|Used with `$top` to retrieve a page of results.|See `nextLink` from the $top query for an example.
-|[`$count`](#count)|Retrieves the total count of matching resources.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
+|[$filter](#filter)|Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
+|[$select](#select)|Filters properties (columns).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
+|[$expand](#expand)|Retrieves related resources.|[`/groups/{id}?$expand=members`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/22be6ccb-15a5-459f-94ac-d1393bdd9e66?$expand=members&method=GET&version=v1.0)
+|[$orderby](#orderby)|Orders results.|[`/users?$orderby=displayName,userPrincipalName desc`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$orderby=displayName,userPrincipalName%20DESC&method=GET&version=v1.0)
+|[$top](#top)|Limits results. Typically used with `$skipToken`.|[`/users?$top=2`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
+|[$skipToken](#skiptoken)|Used with `$top` to retrieve a page of results.|See `nextLink` from the $top query for an example.
+|[$count](#count)|Retrieves the total count of matching resources.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
 <!-- TODO: figure out whether $search is actually used
 |[`$search`](#search)|A property and value pair separated by a colon.|
 -->
@@ -35,7 +35,7 @@ A properly encoded URL looks like this:
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-## `$filter`
+## filter
 
 `$filter` can be used to retrieve just a subset of a collection. For example, to find users whose display name starts with `J`, use `startswith`.
 
@@ -90,10 +90,10 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 `$filter` has a very rich and expressive syntax with many built-in operators. Logical operators include equals (`eq`), not equals (`ne`), greater than (`gt`), greater than or equals (`gte`), and (`and`), or (`or`), not (`not`) etc. Arithmetic operators include add (`add`), subtract (`sub`), etc. String operators include contains (`contains`), starts with (`startswith`), etc. Lambda operators include any (`any`) and all (`all`). For additional details on `$filter` syntax, see the [OData protocol][odata-filter].
 
-## `$select`
 
-To specify a different set of properties to return than the default set provided by the Graph, use the `$select` query parameter.
-The `$select` parameter allows for choosing a subset or superset of the default set returned.
+## select
+
+In a collection or an individual entity, to specify a different set of properties to return instead of the default set, use the `$select` query parameter. The `$select` parameter allows for choosing a subset or superset of the default set returned.
 For example, when retrieving your messages, you might want to select that only the `from` and `subject` properties of messages are returned.
 
 ```http
@@ -126,7 +126,7 @@ in the response will only have those property values included.
 }
 ```-->
 
-## `$expand`
+## expand
 
 In Microsoft Graph API requests, navigations to an object or collection of the referenced item are not automatically expanded.
 This is by design because it reduces network traffic and the time it takes to generate a response from the service.
@@ -150,8 +150,7 @@ GET https://graph.microsoft.com/v1.0/users?$expand=directReports
 
 Some other resources may have a limit as well, so always check for possible errors.
 
-<!---The following shows a sample result that is returned in the response body.-->
-## `$orderby`
+## orderby
 
 To specify the sort order of the items returned from the Microsof Graph API, use the `$orderby` query parameter.
 
@@ -171,7 +170,7 @@ To sort the results in ascending or descending order, append either `asc` or `de
 
  > **Note:** If you query on the [`user`](../api-reference/v1.0/resources/user.md) resource, `$orderby` can't be combined with filter expressions.
 
-## `$top`
+## top
 
 To specify the maximum number of items to return in a result set, use the `$top` query parameter.
 The `$top` query parameter identifies a subset in the collection. This subset is formed by selecting only the first N items of the set, where N is a positive integer specified by this query parameter.
@@ -181,7 +180,7 @@ For example, to return the first five messages in the user's mailbox, the syntax
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-## `$skip`
+## skip
 
 (To set the number of items to skip before retrieving items in a collection, use the `$skip` query parameter.
 For example, to return events sorted by date created, and starting with the 21st event, the syntax is as follows.
@@ -190,7 +189,7 @@ For example, to return events sorted by date created, and starting with the 21st
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
 
-## `$skipToken`
+## skipToken
 
 To request second and subsequent pages of Graph data use the `$skipToken` query parameter.
 ]The `$skipToken` query parameter is provided in Urls returned from the Graph when the Graph has returned a partial subset of results, usually due to server-side paging.
@@ -212,7 +211,7 @@ To return the next page of users in your organization, the syntax is as follows.
 GET  https://graph.microsoft.com/v1.0/users?$orderby=displayName&$skiptoken=X%2783630372100000000000000000000%27
 ```
 
-## `$count`
+## count
 
 Use `$count` as a query parameter to include a count of the total number of items in a collection alongside the page of data values returned from the Graph, as in the following example:
 
@@ -224,7 +223,7 @@ This would return both the `contacts` collection, and the number of items in the
 
 >**Note:** This is not supported for [`directoryObject`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directoryobject) collections.
 
-## `search`
+## search
 
 To restrict the results of a request that match a search criterion, use the `$search` query parameter.
 

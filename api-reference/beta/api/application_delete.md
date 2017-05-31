@@ -1,18 +1,19 @@
 # Delete application
 
-Delete application.
+Deletes an application.
+
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{id}
-
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer &lt;token&gt; *Required* |
 
 ## Request body
 Do not supply a request body for this method.

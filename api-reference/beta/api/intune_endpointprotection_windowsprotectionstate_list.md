@@ -6,7 +6,7 @@ List properties and relationships of the [windowsProtectionState](../resources/i
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+*DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

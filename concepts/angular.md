@@ -265,7 +265,8 @@ If you're using the Microsoft Graph SDK, read on. If you're using REST, see the 
   
 2. Replace *// Send an email on behalf of the current user* with the following code. This configures and sends the POST request to the */me/sendMail* endpoint, and processes the response.
 
-        // Send an email.n sendMail(email) {
+        // Send an email on behalf of the current user.
+	sendMail: function sendMail(email) {
           return $http.post('https://graph.microsoft.com/v1.0/me/sendMail', { 'message' : email, 'saveToSentItems': true });        
         }
 

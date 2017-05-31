@@ -6,7 +6,7 @@ Deletes a [windowsInformationProtectionAppLearningSummary](../resources/intune_w
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+*DeviceManagementApps.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

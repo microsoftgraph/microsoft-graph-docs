@@ -13,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceComplianceSettingStates/
+GET /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/
 ```
 
 ## Request headers
@@ -32,7 +32,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceComplianceSettingStates/
+GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/
 ```
 
 ### Response
@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 499
+Content-Length: 644
 
 {
   "value": [
@@ -48,9 +48,13 @@ Content-Length: 499
       "@odata.type": "#microsoft.graph.deviceComplianceSettingState",
       "id": "9905f955-f955-9905-55f9-059955f90599",
       "devicePlatform": "androidForWork",
+      "platformType": "windowsRT",
+      "setting": "Setting value",
       "settingName": "Setting Name value",
       "deviceId": "Device Id value",
       "deviceName": "Device Name value",
+      "userId": "User Id value",
+      "userEmail": "User Email value",
       "userName": "User Name value",
       "userPrincipalName": "User Principal Name value",
       "deviceModel": "Device Model value",

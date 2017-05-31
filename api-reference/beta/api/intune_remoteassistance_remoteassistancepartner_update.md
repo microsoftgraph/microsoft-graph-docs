@@ -6,7 +6,7 @@ Update the properties of a [remoteAssistancePartner](../resources/intune_remotea
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+*DeviceManagementServiceConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

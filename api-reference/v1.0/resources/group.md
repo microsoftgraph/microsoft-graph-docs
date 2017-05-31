@@ -4,8 +4,11 @@ Represents an Azure Active Directory group, which can be an Office 365 group, dy
 Inherits from [directoryObject](directoryobject.md).
 
 This resource supports:
+
 - Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
 - Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
+
+> **Microsoft Teams is built on Office 365 groups**. You can use most of the groups APIs with Microsoft Teams. You cannot use [Create group](../api/group_post_groups.md) to create a team. For details, see the [Microsoft Teams reference](teams_api_overview.md).
 
 ## Methods
 
@@ -87,6 +90,7 @@ This resource supports:
 |memberOf|[directoryObject](directoryobject.md) collection|Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
 |members|[directoryObject](directoryobject.md) collection| Users and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups) Nullable.|
 |onenote|[OneNote](onenote.md)| Read-only.|
+|planner|[Planner](planner.md)| Entry-point to Planner resource that might exist for a Unified Group.|
 |owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Limited to 10 owners. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups). Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo |
 |rejectedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|

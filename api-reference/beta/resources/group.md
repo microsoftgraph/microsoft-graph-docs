@@ -4,12 +4,11 @@ Represents an Azure Active Directory group, which can be an Office 365 group, Mi
 Inherits from [directoryObject](directoryobject.md).
 
 This resource supports:
+
 - Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
 - Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
-> **Microsoft Teams and the group APIs**:
-> * Microsoft Teams are built upon Office 365 groups.  All the following methods for groups can also be used with teams, with the exception that 'Create group' does not currently allow you to create a team.  There are also some methods specific to Microsoft Teams, which are clearly labelled as such.
-> * Care must be taken if using the group APIs in a Microsoft Teams app - e.g. as part inside a 'tab' or 'bot' running inside Microsoft Teams - rather than in a standalone app.  This is because of differing consent models. Typically, users can directly consent to your Microsoft Teams app within a specific team.  However, currently [enterprise admins must also consent to your app (as registered in Azure AD) using the group APIs](../../../concepts/known_issues.md), at which point it then has API access all of the groups/teams for each user.  You should ensure your Microsoft Teams app copes with not having the permissions it needs, and that it respects the user's intention about which teams it should operate in.  Note that these considerations do not apply if your are just using non-group [user APIs](user.md) that the user can always consent to themselves.
+> **Microsoft Teams is built on Office 365 groups**. You can use most of the groups APIs with Microsoft Teams. You cannot use [Create group](../api/group_post_groups.md) to create a team. For details, see the [Microsoft Teams reference](teams_api_overview.md).
 
 ## Methods
 
@@ -40,7 +39,7 @@ This resource supports:
 |[Remove acceptedSender](../api/group_delete_acceptedsenders.md) |[directoryObject](directoryobject.md)| Remove a User or Group from the acceptedSenders collection.|
 |[List rejectedSenders](../api/group_list_rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the rejectedSenders list for this group.|
 |[Add rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the rejectedSenders collection.|
-|[List plans](../api/group_list_plans.md) |[plan](plan.md) collection| Get a plan object collection.|
+|[List plannerPlans](../api/plannergroup_list_plans.md) |[plannerPlan](plannerPlan.md) collection| Get plannerPlans owner by the group.|
 |[Remove rejectedSender](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new new User or Group from the rejectedSenders collection.|
 |[addFavorite](../api/group_addfavorite.md)|None|Add the group to the list of the current user's favorite groups. Supported for only Office 365 groups.|
 |[removeFavorite](../api/group_removefavorite.md)|None|Remove the group from the list of the current user's favorite groups. Supported for only Office 365 groups.|
@@ -111,7 +110,7 @@ This resource supports:
 |owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo |
 |photos|[Photo](photo.md) collection| Read-only. Nullable.|
-|plans|[plan](plan.md) collection| Read-only. Nullable. Plans owned by the group. A group can own no more than one plan. |
+|planner|[plannerGroup](plannerGroup.md)| Selective Planner services available to the group. Read-only. Nullable. |
 |rejectedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
 |settings|[directorySetting](directorySetting.md) collection| Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.|
 |sites|[site](site.md) collection|The list of SharePoint sites in this group. Access the default site with /sites/root.

@@ -15,7 +15,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer &lt;token&gt; *Required*  |
 
 ## Request body
 Do not supply a request body for this method.
@@ -42,41 +42,37 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 636
+Content-length: 1229
 
 {
   "value": [
-      {
-        "addIns": [
+    {
+      "api": {
+        "acceptedAccessTokenVersion": 1,
+        "publishedPermissionScopes": [
           {
-            "id": "id-value",
-            "type": "type-value",
-            "properties": [
-              {
-                "key": "key-value",
-                "value": "value-value"
-              }
-            ]
-          }
-        ],
-        "appId": "appId-value",
-        "appRoles": [
-          {
-            "allowedMemberTypes": [
-              "allowedMemberTypes-value"
-            ],
-            "description": "description-value",
-            "displayName": "displayName-value",
+            "adminConsentDescription": "adminConsentDescription-value",
+            "adminConsentDisplayName": "adminConsentDisplayName-value",
             "id": "id-value",
             "isEnabled": true,
-            "origin": "origin-value",
+            "type": "type-value",
+            "userConsentDescription": "userConsentDescription-value",
+            "userConsentDisplayName": "userConsentDisplayName-value",
             "value": "value-value"
           }
-        ],
-        "availableToOtherOrganizations": true,
-        "displayName": "displayName-value",
-        "errorUrl": "errorUrl-value"
+        ]
+      },
+      "allowPublicClient": true,
+      "applicationAliases": [
+        "applicationAliases-value"
+      ],
+      "createdDateTime": "datetime-value",
+      "installedClients": {
+        "redirectUrls": [
+          "redirectUrls-value"
+        ]
       }
+    }
   ]
 }
 ```
@@ -85,7 +81,7 @@ Content-length: 636
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get application",
+  "description": "List applications",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

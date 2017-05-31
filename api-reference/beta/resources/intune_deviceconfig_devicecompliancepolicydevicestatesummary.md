@@ -12,6 +12,7 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |---|---|---|
+|inGracePeriodCount|Int32|Number of devices that are in grace period|
 |id|String|Key of the entity.|
 |unknownDeviceCount|Int32|Number of unknown devices|
 |notApplicableDeviceCount|Int32|Number of not applicable devices|
@@ -34,6 +35,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyDeviceStateSummary",
+  "inGracePeriodCount": 1024,
   "id": "String (identifier)",
   "unknownDeviceCount": 1024,
   "notApplicableDeviceCount": 1024,

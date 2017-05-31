@@ -6,7 +6,7 @@ Deletes a [windowsProtectionState](../resources/intune_endpointprotection_window
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+*DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

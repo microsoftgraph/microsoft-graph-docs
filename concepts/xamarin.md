@@ -35,15 +35,15 @@ If you want to run the iOS project in this sample, you'll need the following:
  
 1. Sign into the [App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
 2. Select **Add an app**.
-3. Enter a name for the app, and select **Create application**.
+3. Enter a name for the app, and select **Create**.
 	
 	The registration page displays, listing the properties of your app.
  
 4. Under **Platforms**, select **Add platform**.
-5. Select **Mobile platform**.
-6. Copy the application id. You'll need to enter this values into the sample app.
+5. Select **Native Application**.
+6. Copy the Application Id value and the Custom Redirect URI value (under the **Native Application** header) that was created for you when you added the **Native Application** platform. This URI should contain your Application Id value and be in this form: `msal[Application Id]://auth` You'll need to enter these values into the sample app.
 
-	The application id is a unique identifier for your app. The redirect URI is a unique URI provided by Windows 10 for each application to ensure that messages sent to that URI are only sent to that application. 
+	The app id is a unique identifier for your app. 
 
 7. Select **Save**.
 
@@ -52,15 +52,24 @@ If you want to run the iOS project in this sample, you'll need the following:
 1. Open the solution file for the starter project in Visual Studio.
 2. Open the **App.cs** file inside the **XamarinConnect (Portable)** project and locate the `ClientId` field. Replace the application ID placeholder with the application id of the app you registered.
 
-```
-public static string ClientID = "ENTER_YOUR_CLIENT_ID";
-public static string[] Scopes = { "User.Read", "Mail.Send", "Files.ReadWrite" };
-```
-The `Scopes` value stores the Microsoft Graph permission scopes that the app will need to request when the user authenticates. Note that the `App` class constructor uses the ClientID value to instantiate an instance of the MSAL `PublicClientApplication` class. You'll use this class later to authenticate the user.
+	```
+	public static string ClientID = "ENTER_YOUR_CLIENT_ID";
+	public static string RedirectUri = "msal" + ClientID + "://auth";
+	public static string[] Scopes = { "User.Read", "Mail.Send", "Files.ReadWrite" };
+	```
+	The `Scopes` value stores the Microsoft Graph permission scopes that the app will need to request when the user authenticates. Note that the `App` class constructor uses the ClientID value to instantiate an instance of the MSAL `PublicClientApplication` class. You'll use this class later to authenticate the user.
+	
+	```
+	IdentityClientApp = new PublicClientApplication(ClientID);
+	```
 
-```
-IdentityClientApp = new PublicClientApplication(ClientID);
-```
+3. Open the UserDetailsClient.iOS\info.plist file in a text editor. Unfortunately you can't edit this file in Visual Studio. Locate the `<string>msalENTER_YOUR_CLIENT_ID</string>` element under `CFBundleURLSchemes` key.
+
+4. Replace `ENTER_YOUR_CLIENT_ID` with the application id value that you got when you registered your app. Be sure to retain `msal` before the application id. The resulting string value should look like this: `<string>msal[application id]</string>`.
+
+5. Open the UserDetailsClient.Droid\Properties\AndroidManifest.xml file. Locate this element: `<data android:scheme="msalENTER_YOUR_CLIENT_ID" android:host="auth" />`.
+
+6. Replace `ENTER_YOUR_CLIENT_ID` with the application id value that you got when you registered your app. Be sure to retain `msal` before the application id. The resulting string value should look like this: `<data android:scheme="msal[application id]" android:host="auth" />`.
 
 ## Send an email with Microsoft Graph
 
@@ -415,7 +424,6 @@ The complete class will look like this:
 
 
     }
-}
 ``` 
 
 You've now performed the three steps required for interacting with Microsoft Graph: app registration, user authentication, and making a request. 
@@ -433,7 +441,7 @@ You've now performed the three steps required for interacting with Microsoft Gra
 4. Choose the **Send mail** button. When the mail is sent, a Success message is displayed. This mail message includes the photo as an attachment and also provides a sharing link to the uploaded file in OneDrive.
 
 ## Next steps
-- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Try out the REST API using the [Graph explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 - Find examples of common operations in the [Microsoft Graph SDK Snippets Library for Xamarin.Forms](https://github.com/microsoftgraph/xamarin-csharp-snippets-sample), or explore our other [Xamarin samples](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=xamarin) on GitHub.
 
 ## See also

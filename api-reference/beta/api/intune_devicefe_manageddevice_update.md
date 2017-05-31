@@ -69,6 +69,7 @@ The following table shows the properties that are required when you create a [ma
 |model|String|Model of the device|
 |manufacturer|String|Manufacturer of the device|
 |imei|String|IMEI|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
 
 
 
@@ -81,7 +82,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
 Content-type: application/json
-Content-length: 2720
+Content-length: 2802
 
 {
   "userId": "User Id value",
@@ -154,7 +155,8 @@ Content-length: 2720
   "userPrincipalName": "User Principal Name value",
   "model": "Model value",
   "manufacturer": "Manufacturer value",
-  "imei": "Imei value"
+  "imei": "Imei value",
+  "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
 
@@ -163,7 +165,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2821
+Content-Length: 2903
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -238,7 +240,8 @@ Content-Length: 2821
   "userPrincipalName": "User Principal Name value",
   "model": "Model value",
   "manufacturer": "Manufacturer value",
-  "imei": "Imei value"
+  "imei": "Imei value",
+  "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
 

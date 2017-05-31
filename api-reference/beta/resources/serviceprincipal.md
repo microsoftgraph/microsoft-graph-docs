@@ -29,7 +29,6 @@ Here is a JSON representation of the resource
   "appId": "string",
   "appOwnerOrganizationId": "guid",
   "appRoleAssignmentRequired": true,
-  "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "displayName": "string",
   "errorUrl": "string",
   "homepage": "string",
@@ -59,7 +58,7 @@ Here is a JSON representation of the resource
 |errorUrl|String|            |
 |homepage|String|The URL to the homepage of the associated   application.|
 |keyCredentials|[keyCredential](keycredential.md) collection|The collection of key credentials associated with the service principal. Not nullable.            |
-|logoutUrl|String|            |
+|logoutUrl|String| Specifies the URL that will be used by Microsoft's authorization service to logout an user using [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) or SAML logout protocols.  |
 |oauth2Permissions|[oAuth2Permission](oauth2permission.md) collection|The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the [application](application.md) entity. Not nullable.            |
 |id|String|The unique identifier for the service principal. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |passwordCredentials|[passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the service principal. Not nullable. |

@@ -6,7 +6,7 @@ Create a new [windowsProtectionState](../resources/intune_endpointprotection_win
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+*DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

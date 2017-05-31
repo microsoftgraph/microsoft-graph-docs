@@ -47,17 +47,21 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/deviceCompliancePolicyStates/{deviceCompliancePolicyStateId}
 Content-type: application/json
-Content-length: 716
+Content-length: 918
 
 {
   "settingStates": [
     {
       "@odata.type": "microsoft.graph.deviceCompliancePolicySettingState",
       "setting": "Setting value",
+      "settingName": "Setting Name value",
       "instanceDisplayName": "Instance Display Name value",
       "state": "notApplicable",
       "errorCode": 9,
       "errorDescription": "Error Description value",
+      "userId": "User Id value",
+      "userName": "User Name value",
+      "userEmail": "User Email value",
       "userPrincipalName": "User Principal Name value",
       "sources": [
         {
@@ -65,7 +69,8 @@ Content-length: 716
           "id": "Id value",
           "displayName": "Display Name value"
         }
-      ]
+      ],
+      "currentValue": "Current Value value"
     }
   ],
   "displayName": "Display Name value",
@@ -81,7 +86,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 831
+Content-Length: 1033
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyState",
@@ -90,10 +95,14 @@ Content-Length: 831
     {
       "@odata.type": "microsoft.graph.deviceCompliancePolicySettingState",
       "setting": "Setting value",
+      "settingName": "Setting Name value",
       "instanceDisplayName": "Instance Display Name value",
       "state": "notApplicable",
       "errorCode": 9,
       "errorDescription": "Error Description value",
+      "userId": "User Id value",
+      "userName": "User Name value",
+      "userEmail": "User Email value",
       "userPrincipalName": "User Principal Name value",
       "sources": [
         {
@@ -101,7 +110,8 @@ Content-Length: 831
           "id": "Id value",
           "displayName": "Display Name value"
         }
-      ]
+      ],
+      "currentValue": "Current Value value"
     }
   ],
   "displayName": "Display Name value",

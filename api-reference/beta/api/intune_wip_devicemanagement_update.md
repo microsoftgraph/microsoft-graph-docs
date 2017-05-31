@@ -6,7 +6,7 @@ Update the properties of a [deviceManagement](../resources/intune_wip_devicemana
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+*DeviceManagementApps.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

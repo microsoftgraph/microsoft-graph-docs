@@ -67,6 +67,7 @@ Devices that are managed or pre-enrolled through Intune
 |model|String|Model of the device|
 |manufacturer|String|Manufacturer of the device|
 |imei|String|IMEI|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -156,7 +157,8 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String",
   "model": "String",
   "manufacturer": "String",
-  "imei": "String"
+  "imei": "String",
+  "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
 

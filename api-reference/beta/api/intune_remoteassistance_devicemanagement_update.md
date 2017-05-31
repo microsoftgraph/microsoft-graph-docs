@@ -6,7 +6,7 @@ Update the properties of a [deviceManagement](../resources/intune_remoteassistan
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+*DeviceManagementServiceConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

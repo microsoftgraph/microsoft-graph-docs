@@ -34,6 +34,7 @@ This resource supports:
 |[List joinedTeams](../api/user_list_joinedTeams.md) |[groups](group.md) collection| Get the Microsoft Teams that the user is a direct member of from the joinedTeams navigation property.|
 |[List ownedDevices](../api/user_list_owneddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects that are owned by the user from the ownedObjects navigation property.|
+|[List plannerTasks](../api/planneruser_list_tasks.md) |[plannerTask](plannerTask.md) collection| Get plannerTasks assigned to the user.|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are registered for the user from the registeredDevices navigation property.|
 |[List scoped-role memberships](../api/user_list_scopedrolememberof.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get the scoped-role administrative units memberships for this user.|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects created by the user from the createdObjects navigation property.|
@@ -132,10 +133,9 @@ This resource supports:
 |people|[person](person.md) collection| Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.|
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
 |photos|[Photo](photo.md) collection| Read-only. Nullable.|
-|plans|[plan](plan.md) collection| Read-only. Nullable. Plans shared with the user. |
+|planner|[plannerUser](plannerUser.md)| Selective Planner services available to the user. Read-only. Nullable. |
 |sharepoint|[sharepoint](sharepoint.md)| Access to the user's SharePoint site. Read-only. |
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
-|tasks|[task](task.md) collection| Read-only. Nullable. Tasks assigned to the user. |
 |trendingAround|[driveItem](driveitem.md) collection| Read-only. Nullable.|
 |workingWith|[user](user.md) collection| Read-only. Nullable.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
@@ -172,8 +172,7 @@ Here is a JSON representation of the resource
     "ownedDevices",
     "ownedObjects",
     "photo",
-    "registeredDevices",
-    "sharepoint"
+    "registeredDevices"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.user"
@@ -246,8 +245,7 @@ Here is a JSON representation of the resource
   "outlook": { "@odata.type": "microsoft.graph.outlookUser" },
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "sharepoint": { "@odata.type": "microsoft.graph.sharepoint" }
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
 
 ```

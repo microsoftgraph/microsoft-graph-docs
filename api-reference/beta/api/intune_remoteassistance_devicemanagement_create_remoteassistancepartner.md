@@ -6,7 +6,7 @@ Create a new [remoteAssistancePartner](../resources/intune_remoteassistance_remo
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+*DeviceManagementServiceConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
