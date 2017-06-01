@@ -39,7 +39,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 6. Under **Platforms**, choose **Add platform** > **Web**.
 
-7. Enter *http://localhost:3000/login* as the Redirect URI. 
+7. Enter *http://localhost:3000/token* as the Redirect URI. 
 
 8. Choose **Save**.
 

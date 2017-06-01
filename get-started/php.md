@@ -151,10 +151,10 @@ $response = $client->request('POST', 'https://graph.microsoft.com/v1.0/me/sendma
     ],
     'body' => $email
 ]);
-if($response.getStatusCode() === 201) {
+if($response->getStatusCode() === 201) {
     exit('Email sent, check your inbox');
 } else {
-    exit('There was an error sending the email. Status code: ' . $response.getStatusCode());
+    exit('There was an error sending the email. Status code: ' . $response->getStatusCode());
 }
 ```
 

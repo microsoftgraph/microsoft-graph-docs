@@ -44,11 +44,10 @@ Content-type: application/json
 Content-length: 51
 
 {
-  "index": {
-  },
+  "index": null,
   "values": [
-    {
-    }
+    [1, 2, 3],
+    [4, 5, 6]
   ]
 }
 ```

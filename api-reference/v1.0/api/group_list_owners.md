@@ -1,8 +1,10 @@
-# List owners
+Gr# List owners
 
 Retrieve a list of the group's owners. The owners are a set of non-admin users who are allowed to modify the group object. 
+
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
+The following **scopes** are required to execute this API: *Group.Read.All* and one of *User.ReadBasic.All* or *User.Read.All* or *User.ReadWrite.All*
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,7 +20,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -45,7 +47,7 @@ Content-length: 55
 {
   "value": [
     {
-      "id": "id-value"
+      "@odata.type": "#microsoft.graph.user"
     }
   ]
 }

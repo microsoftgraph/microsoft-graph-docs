@@ -75,7 +75,7 @@ Here is a JSON representation of the resource
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
 |flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
-|hasAttachments|Boolean|Indicates whether the message has attachments.|
+|hasAttachments|Boolean|Indicates whether the message has attachments. If a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the **body** property to look for a `src` attribute, such as `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`. |
 |id|String|Unique identifier for the message (note that this value may change if a message is moved or altered)|
 |importance|String| The importance of the message: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused`, `other`.|
