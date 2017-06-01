@@ -1,6 +1,7 @@
 # Create registeredOwner
 
 Add a user as a registered owner of the device.
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
 *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
@@ -19,7 +20,6 @@ POST /devices/{id}/registeredOwners/$ref
 ## Request body
 In the request body, supply a JSON representation of a [user](../resources/user.md) to be added.
 
-
 ## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
@@ -33,7 +33,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/devices/{id}/registeredOwners/$ref
 Content-type: application/json
-Content-length: 30
+Content-length: 97
 
 {
   "@odata.id":"https://graph.microsoft.com/beta/users/af9f55cc-78ad-4476-be6e-f9bb86a3dddd"
