@@ -4,6 +4,12 @@ An insight representing documents used by a specific user. The insights returns 
 
 - OneDrive for Business
 - SharePoint
+
+## Methods
+
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
+|[List used](../api/insights_list_used.md) |[insights_used](insights_used.md) collection| Get a list of used files.|
  
 ### Properties
 
@@ -18,7 +24,7 @@ An insight representing documents used by a specific user. The insights returns 
 
 | Property      | Type          | Description  |
 | ------------- |---------------| -------------|
-| resource    	| Entity		| Used for navigating to the item that was shared. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
+| resource    	| Entity		| Used for navigating to the item that was used. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
 
 ### JSON representation
 

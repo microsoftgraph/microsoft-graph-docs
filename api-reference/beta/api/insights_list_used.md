@@ -16,9 +16,13 @@ GET /users/<id | userPrincipalName>/insights/used
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
-For example, you can use the `$filter` query parameter to filter used items based on the Container Type:
+You can use the `$filter` query parameter to filter used items. For example, based on Type:
 
-`https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/MediaType eq 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'`
+`https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+
+Or based on Container Type:
+
+`https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
 See the available Container Types and Types you can filter by in [resourceVisualization](../resources/insights_resourceVisualization.md).
 

@@ -16,11 +16,17 @@ GET /users/<id | userPrincipalName>/insights/shared
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
-For example, you can use the `$filter` query parameter to filter shared items based on the Container Type:
+You can use the `$filter` query parameter to filter shared items. For example, based on Type:
 
-`https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/MediaType eq 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'`
+`https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 See the available Container Types and Types you can filter by in [resourceVisualization](../resources/insights_resourceVisualization.md).
+
+You can also retrieve files shared by a specific user. For example, by specifying the `lastshared/sharedby/address` property:
+
+`https://graph.microsoft.com/beta/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
+
+See the [sharingDetail](insights_sharingdetail.md) complex type.
 
 
 ## Request headers
