@@ -1,6 +1,6 @@
 # Get started with Microsoft Graph in a Xamarin Forms app
 
-> **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors. 
+> **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors. 
 
 This article describes the tasks required to get an access token from the [Azure AD v2.0 endpoint](https://developer.microsoft.com/graph/docs/concepts/converged_auth) and call Microsoft Graph. It walks you through the code inside the [Microsoft Graph Connect Sample for Xamarin Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) sample to explain the main concepts that you have to implement in an app that uses Microsoft Graph. The article also describes how to access Microsoft Graph by using the [Microsoft Graph Client Library](http://www.nuget.org/packages/Microsoft.Graph/).
 
@@ -27,7 +27,7 @@ If you want to run the iOS project in this sample, you'll need the following:
 - The latest iOS SDK
 - The latest version of Xcode
 - Mac OS X Sierra(10.12) & above 
-- [Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started/installation/mac/)
+- [Xamarin.iOS](https://docs.microsoft.com/visualstudio/mac/installation)
 - A [Xamarin Mac agent connected to Visual Studio](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/)
 
 
@@ -441,10 +441,10 @@ You've now performed the three steps required for interacting with Microsoft Gra
 4. Choose the **Send mail** button. When the mail is sent, a Success message is displayed. This mail message includes the photo as an attachment and also provides a sharing link to the uploaded file in OneDrive.
 
 ## Next steps
-- Try out the REST API using the [Graph explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- Try out the REST API using the [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Find examples of common operations in the [Microsoft Graph SDK Snippets Library for Xamarin.Forms](https://github.com/microsoftgraph/xamarin-csharp-snippets-sample), or explore our other [Xamarin samples](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=xamarin) on GitHub.
 
 ## See also
 - [Microsoft Graph .NET Client Library](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Azure AD v2.0 protocols](https://azure.microsoft.com/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 tokens](https://azure.microsoft.com/documentation/articles/active-directory-v2-tokens/)

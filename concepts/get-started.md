@@ -4,7 +4,7 @@ The articles in this section provide detailed guidance on how to build apps that
 
 Choose the article that covers the authentication provider and development platform of your choice, and get started connecting to Microsoft Graph.
 
-You can follow the steps in the article that covers the development platform that you choose, or, to quickly get a working solution up and running, try out the [quick start](http://dev.office.com/getting-started/office365apis) experience.
+You can follow the steps in the article that covers the development platform that you choose, or, to quickly get a working solution up and running, try out the [quick start](https://developer.microsoft.com/graph/quick-start) experience.
 
 To explore the finished Connect samples, see [Microsoft Graph](https://github.com/microsoftgraph) in GitHub. The following table lists the samples by authentication provider and platform, and notes whether they connect to Microsoft Graph using REST or a Microsoft Graph client library.
 
@@ -121,5 +121,5 @@ To explore the finished Connect samples, see [Microsoft Graph](https://github.co
 
 ## See also
 - Try out sample REST calls in our [API Explorer](https://graph.microsoft.io/graph-explorer).
-- [Azure AD endpoint documentation](https://azure.microsoft.com/en-us/documentation/services/active-directory/)
-- [Azure AD v2.0 endpoint documentation](https://azure.microsoft.com/en-us/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
+- [Azure AD endpoint documentation](https://azure.microsoft.com/documentation/services/active-directory/)
+- [Azure AD v2.0 endpoint documentation](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
