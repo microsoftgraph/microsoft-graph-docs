@@ -26,7 +26,7 @@ You can also retrieve files shared by a specific user. For example, by specifyin
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
 
-See the [sharingDetail](insights_sharingdetail.md) complex type.
+See the [sharingDetail](../resources/insights_sharingdetail.md) complex type.
 
 
 ## Request headers
