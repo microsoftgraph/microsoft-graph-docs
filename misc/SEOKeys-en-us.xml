@@ -34,14 +34,14 @@
     <Item text="Errors" url="/en-us/concepts/errors" SEOKeyword="Errors, Microsoft Graph API, Overview" SEODescription="Errors in the Microsoft Graph API service are returned using standard HTTP status codes, as well as a JSON error response object." />
   </Item>
   <Item text="Track changes" url="/en-us/concepts/delta_query_overview" >
-    <Item text="Get changes to events" url="/en-us/concepts/delta_query_events" />
-    <Item text="Get changes to groups" url="/en-us/concepts/delta_query_groups" />
-    <Item text="Get changes to messages" url="/en-us/concepts/delta_query_messages" />
-    <Item text="Get changes to users" url="/en-us/concepts/delta_query_users" />
+    <Item text="Get changes to events (example)" url="/en-us/concepts/delta_query_events" />
+    <Item text="Get changes to groups (example)" url="/en-us/concepts/delta_query_groups" />
+    <Item text="Get changes to messages (example)" url="/en-us/concepts/delta_query_messages" />
+    <Item text="Get changes to users (example)" url="/en-us/concepts/delta_query_users" />
   </Item>
   <Item text="Add custom data" url="/en-us/concepts/extensibility_overview" SEOKeyword="Custom data, extensibility, extensions, open extensions, schema extensions" SEODescription="Add custom data to Microsoft Graph using open extensions or schema extensions.">
-    <Item text="Open extensions" url="/en-us/concepts/extensibility_open_users" />
-    <Item text="Schema extensions" url="/en-us/concepts/extensibility_schema_groups" />
+    <Item text="Use open extensions (example)" url="/en-us/concepts/extensibility_open_users" />
+    <Item text="Use schema extensions (example)" url="/en-us/concepts/extensibility_schema_groups" />
   </Item>
   <Item text="National cloud deployments" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
   <Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />

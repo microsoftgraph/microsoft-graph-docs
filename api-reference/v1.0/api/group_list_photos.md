@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "get_photos"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/photos
+GET https://graph.microsoft.com/v1.0/groups/{id}/photos
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

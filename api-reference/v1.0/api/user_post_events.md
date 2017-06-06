@@ -1,6 +1,6 @@
 # Create Event
 
-Create an [event](../resources/event.md) in the user's default calendar. 
+Create an [event](../resources/event.md) in the user's default calendar or one of their custom calendars by `calendarId`.
 
 You can specify the time zone for each of the start and end times of the event as part of these values, as the 
 **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. 

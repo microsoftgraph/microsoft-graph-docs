@@ -7,6 +7,12 @@ An insight representing files shared with or by a specific user. The following s
 
 **Note**: We are currently working on populating the results of the Shared API with data. There may be some data missing in the first weeks after release.
 
+## Methods
+
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
+|[List shared](../api/insights_list_shared.md) |[insights_shared](insights_shared.md) collection| Get a list of shared files.|
+
 ### Properties
 
 | Property              | Type          	 		| Description  |

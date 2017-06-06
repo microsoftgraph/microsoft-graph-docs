@@ -65,7 +65,7 @@ Content-type: application/json
 While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md).
 The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.
 
-### Exmaple (single file)
+### Example (single file)
 
 ##### Request
 
@@ -90,7 +90,7 @@ Content-Type: application/json
 }
 ```
 
-### Exmaple (shared folder)
+### Example (shared folder)
 
 ##### Request
 
@@ -137,8 +137,8 @@ To transform a URL into a sharing token:
 
 1. Base64 encode the sharing URL.
 2. Convert the base64 encoded data to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by:
-  1. Trim trailing `=` characeters from the string
-  2. Replace unsafe URL characters with an equivelent character; replace `/` with `_` and `+` with `-`.
+  1. Trim trailing `=` characters from the string
+  2. Replace unsafe URL characters with an equivalent character; replace `/` with `_` and `+` with `-`.
 3. Append `u!` to the beginning of the string.
 
 For example, the following C# method transforms an input string into a sharing token:

@@ -1,6 +1,6 @@
 # List joinedTeams
 
-Get the teams that the user is a direct member of.
+Get the teams in Microsoft Teams that the user is a direct member of.
  
 ## Prerequisites
 One of the following **scopes** is required to execute this API: 

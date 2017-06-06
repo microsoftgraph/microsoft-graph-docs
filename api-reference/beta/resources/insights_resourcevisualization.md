@@ -60,12 +60,18 @@ Here is a JSON representation of the resource
 -	Folder
 -	Other
 
+Example query:
+`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+
 ## containerType property values
 The supported types can differ based on containers from which the [Insight](insights.md) returns files. For example, only the [Shared](insights_shared.md) insight returns files from 'DropBox', 'Box', and 'GDrive'.
 
--	Group
+-	OneDriveBusiness
 -	Site
 -	Mail
 -	DropBox
 -	Box
 -	GDrive
+
+Example query:
+`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`

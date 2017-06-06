@@ -2,6 +2,12 @@
 
 Rich relationship connecting a user to documents that are trending around the user (are relevant to the user). OneDrive files, and files stored on SharePoint team sites can trend around the user.
 
+## Methods
+
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
+|[List trending](../api/insights_list_trending.md) |[insights_trending](insights_trending.md) collection| Get a list of trending files.|
+
 ## Properties
 
 | Property      | Type          	 				| Description  |
