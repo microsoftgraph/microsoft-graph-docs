@@ -2,30 +2,41 @@
 
 Retrieve a list of user objects.
 
-> Note: Listing users returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.
-
 ## Prerequisites
+
 One of the following **scopes** is required to execute this API:
 *User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users
 ```
+
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+
+By default, only a limited set of properties are returned (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to customize which properties and relationships are returned for each  [user](../resources/user.md).
+
 ## Request headers
-| Header       | Value|
-|:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json | 
+| Header        | Value                      |
+|:--------------|:---------------------------|
+| Authorization | Bearer <token> (required)  |
+| Content-Type  | application/json           | 
 
 ## Request body
+
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body.
+
 ## Example
+
 ##### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
@@ -34,7 +45,9 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/users
 ```
+
 ##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
