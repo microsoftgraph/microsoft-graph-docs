@@ -18,7 +18,7 @@ One of the following **scopes** is required to execute this API:
 ```http
 GET /drives
 GET /me/drives
-GET /groups/{id}/drives
+GET /groups/{id}/drive
 ```
 
 ## Optional query parameters
