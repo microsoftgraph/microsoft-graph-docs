@@ -22,6 +22,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |**Change type**|**Version**|**Description**|
 |:--------------|:-----------|:-------------|
 |Addition|Beta|Added support for Project Rome, including [getting a list of devices](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_devices), [sending a command to a device](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/send_device_command), and [checking the status of a command](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/get_device_command_status).|
+|Addition|Beta|Added support for user Timeline Activities and History Items|
 
 ### Administrative units property changes
 
