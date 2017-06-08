@@ -18,8 +18,8 @@ Apps should renew their subscriptions before they expire. They can also unsubscr
 
 See the following code samples on GitHub.
 
-* [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
-* [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
+* [Microsoft Graph Messages Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
+* [Microsoft Graph Messages Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
 
 Let's take a look at the subscription process.
 
