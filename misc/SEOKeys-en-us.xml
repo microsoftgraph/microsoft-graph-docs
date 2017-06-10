@@ -222,7 +222,7 @@
     <Item text="Get attachment" url="/en-us/api-reference/v1.0/api/attachment_get" />
     <Item text="Delete attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" />
   </Item>
-  <Item text="Directory" url="/en-us/api-reference/v1.0/resources/directoryobject" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
+  <Item text="Azure Active Directory" url="/en-us/api-reference/v1.0/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
     <Item text="Contracts" url="/en-us/api-reference/v1.0/resources/contract" >
       <Item text="Get contract" url="/en-us/api-reference/v1.0/api/contract_get" />
       <Item text="List contracts" url="/en-us/api-reference/v1.0/api/contract_list" />
@@ -827,7 +827,7 @@
       <Item text="Get attachment" url="/en-us/api-reference/beta/api/attachment_get" />
       <Item text="Delete attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
     </Item>
-    <Item text="Directory" url="/en-us/api-reference/beta/resources/directoryobject" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
+    <Item text="Azure Active Directory" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
       <Item text="Administrative unit" url="/en-us/api-reference/beta/resources/administrativeunit" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="An administrative unit provides a conceptual container for User and Group directory objects. Using administrative units, a company administrator can now delegate administrative responsibilities to manage the users and groups contained within or scoped to an administrative unit to a regional or departmental administrator.">
         <Item text="Create administrative unit" url="/en-us/api-reference/beta/api/administrativeunit_post_administrativeunits" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="API to create a new administrativeUnit." />
         <Item text="List administrative unit" url="/en-us/api-reference/beta/api/administrativeunit_list" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="API to list administrativeUnit objects." />
@@ -924,6 +924,24 @@
         <Item text="Update extensionproperty" url="/en-us/api-reference/beta/api/extensionproperty_update" SEOKeyword="Update extensionproperty, Microsoft Graph API, extensionproperty API" SEODescription="Update the properties of extensionproperty object." />
         <Item text="Delete extensionProperty" url="/en-us/api-reference/beta/api/extensionproperty_delete" SEOKeyword="Delete extensionProperty, Microsoft Graph API, extensionproperty API" SEODescription="Delete extensionProperty." />
       </Item>
+    <Item text="Identity protection" url="/en-us/api-reference/beta/resources/identityprotection_root" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection" SEODescription="API for querying data from and using Azure Active Directory Identity Protection">
+      <Item text="Identity risk events" url="/en-us/api-reference/beta/resources/identityriskevent" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection, Event Risk, Identity Risk" SEODescription="Queries risk event data from Azure AD Identity Protection">
+        <Item text="List identityRiskEvent" url="/en-us/api-reference/beta/api/identityriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  identityRiskEvent API" SEODescription="Retrieve a list of identityRiskEvent objects." />
+        <Item text="Get identityRiskEvent" url="/en-us/api-reference/beta/api/identityriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  identityRiskEvent API" SEODescription="Retrieve an identityRiskEvent object." />
+        <Item text="List anonymousIpRiskEvent" url="/en-us/api-reference/beta/api/anonymousipriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  anonymousIpRiskEvent API" SEODescription="Retrieve a list of anonymousIpRiskEvent objects." />
+        <Item text="Get anonymousIpRiskEvent" url="/en-us/api-reference/beta/api/anonymousipriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  anonymousIpRiskEvent API" SEODescription="Retrieve an anonymousIpRiskEvent object." />
+        <Item text="List impossibleTravelRiskEvent" url="/en-us/api-reference/beta/api/impossibletravelriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  impossibleTravelRiskEvent API" SEODescription="Retrieve a list of impossibleTravelRiskEvent objects." />
+        <Item text="Get impossibleTravelRiskEvent" url="/en-us/api-reference/beta/api/impossibletravelriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  impossibleTravelRiskEvent API" SEODescription="Retrieve an impossibleTravelRiskEvent object." />
+        <Item text="List leakedCredentialsRiskEvent" url="/en-us/api-reference/beta/api/leakedcredentialsriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  leakedCredentialsRiskEvent API" SEODescription="Retrieve a list of leakedCredentialsRiskEvent objects." />
+        <Item text="Get leakedCredentialsRiskEvent" url="/en-us/api-reference/beta/api/leakedcredentialsriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  leakedCredentialsRiskEvent API" SEODescription="Retrieve a leakedCredentialsRiskEvent object." />
+        <Item text="List malwareRiskEvent" url="/en-us/api-reference/beta/api/malwareriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  malwareRiskEvent API" SEODescription="Retrieve a list of malwareRiskEvent objects." />
+        <Item text="Get malwareRiskEvent" url="/en-us/api-reference/beta/api/malwareriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  malwareRiskEvent API" SEODescription="Retrieve a malwareRiskEvent object." />
+        <Item text="List suspiciousIpRiskEvent" url="/en-us/api-reference/beta/api/suspiciousipriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  suspiciousIpRiskEvent API" SEODescription="Retrieve a list of suspiciousIpRiskEvent objects." />
+        <Item text="Get suspiciousIpRiskEvent" url="/en-us/api-reference/beta/api/suspiciousipriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  suspiciousIpRiskEvent API" SEODescription="Retrieve a suspiciousIpRiskEvent object." />
+        <Item text="List unfamiliarLocationRiskEvent" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  unfamiliarLocationRiskEvent API" SEODescription="Retrieve a list of unfamiliarLocationRiskEvent objects." />
+        <Item text="Get unfamiliarLocationRiskEvent" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  unfamiliarLocationRiskEvent API" SEODescription="Retrieve an unfamiliarLocationRiskEvent object." />
+      </Item>
+    </Item>
       <Item text="Invitation manager" url="/en-us/api-reference/beta/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
         <Item text="Create invitation" url="/en-us/api-reference/beta/api/invitation_post" SEODescription="Creates a new invitation to add an external user to the organization's directory." />
       </Item>
@@ -947,6 +965,29 @@
         <Item text="List assigned policies" url="/en-us/api-reference/beta/api/policy_list_assigned" SEODescription="List an entity’s assigned policies." />
         <Item text="List applied to applications" url="/en-us/api-reference/beta/api/policy_list_appliesto" SEODescription="List the applications and service principals with the given policy applied." />
       </Item>
+    <Item text="Privileged Identity Management" url="/en-us/api-reference/beta/resources/privilegedIdentityManagement_root" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Azure Active Directory Privileged Identity Management">
+      <Item text="Privileged Role" url="/en-us/api-reference/beta/resources/privilegedrole" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Privileged AAD Role Object">
+        <Item text="List privileged roles" url="/en-us/api-reference/beta/api/privilegedrole_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Retrieve a list of privilegedRole objects." />
+        <Item text="Get privileged role" url="/en-us/api-reference/beta/api/privilegedrole_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Retrieve a privilegedRole object." />
+        <Item text="List role assignments" url="/en-us/api-reference/beta/api/privilegedrole_list_assignments" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Retrieve a list of privilegedRoleAssignment objects." />
+        <Item text="Self role activate" url="/en-us/api-reference/beta/api/privilegedrole_selfactivate" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, activate" SEODescription="Self activate role assignment." />
+        <Item text="Self role deactivate" url="/en-us/api-reference/beta/api/privilegedrole_selfdeactivate" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, deactivate" SEODescription="Self deactivate role assignment." />
+        <Item text="Get role settings" url="/en-us/api-reference/beta/api/privilegedrolesettings_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, setting" SEODescription="Retrieve the setting for a role." />
+        <Item text="Get role summary" url="/en-us/api-reference/beta/api/privilegedrolesummary_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, summary" SEODescription="Retrieve the summary data for a role." />
+      </Item>
+      <Item text="Privileged Role Assignment" url="/en-us/api-reference/beta/resources/privilegedroleassignment" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, role" SEODescription="Privileged Role Assignment objects">
+        <Item text="List role assignments" url="/en-us/api-reference/beta/api/privilegedroleassignment_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, role" SEODescription="Retrieve a list of privilegedRoleAssignment objects." />
+        <Item text="Get role assignment" url="/en-us/api-reference/beta/api/privilegedroleassignment_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, role" SEODescription="Retrieve a privilegedRoleAssignment object." />
+        <Item text="Create role assignments" url="/en-us/api-reference/beta/api/privilegedroleassignment_post_privilegedroleassignments" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, role" SEODescription="Create a privilegedRoleAssignment objects." />
+        <Item text="Delete role assignment" url="/en-us/api-reference/beta/api/privilegedroleassignment_delete" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Delete a privilegedRoleAssignment objects." />
+        <Item text="Get my role assignments" url="/en-us/api-reference/beta/api/privilegedroleassignment_my" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Retrieve a list of privilegedRoleAssignment objects assigned to the requestor." />
+        <Item text="Make eligible role assignment" url="/en-us/api-reference/beta/api/privilegedroleassignment_makeeligible" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Make the role assignment as eligible." />
+        <Item text="Make permanent role assignment" url="/en-us/api-reference/beta/api/privilegedroleassignment_makepermanent" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Mkae the role assignment as permanent." />
+      </Item>
+      <Item text="Audit Event" url="/en-us/api-reference/beta/resources/privilegedoperationevent" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, Audit" SEODescription="Audit event from Privileged Identity Management">
+        <Item text="List audit events" url="/en-us/api-reference/beta/api/privilegedoperationevent_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, Audit" SEODescription="Retrieve a list of audit events." />
+      </Item>
+    </Item>
       <Item text="Service principal" url="/en-us/api-reference/beta/resources/serviceprincipal" >
         <Item text="Get service principal" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
         <Item text="Update service principal" url="/en-us/api-reference/beta/api/serviceprincipal_update" />
@@ -1000,24 +1041,6 @@
       <Item text="Nameditem" url="/en-us/api-reference/beta/resources/nameditem" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
         <Item text="List nameditem" url="/en-us/api-reference/beta/api/nameditem_get" SEOKeyword="" SEODescription="" />
         <Item text="List range" url="/en-us/api-reference/beta/api/nameditem_range" SEOKeyword="" SEODescription="" />
-      </Item>
-    </Item>
-    <Item text="Identity protection" url="/en-us/api-reference/beta/resources/identityprotection_root" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection" SEODescription="API for querying data from and using Azure Active Directory Identity Protection">
-      <Item text="Identity risk events" url="/en-us/api-reference/beta/resources/identityriskevent" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection, Event Risk, Identity Risk" SEODescription="Queries risk event data from Azure AD Identity Protection">
-        <Item text="List identityRiskEvent" url="/en-us/api-reference/beta/api/identityriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  identityRiskEvent API" SEODescription="Retrieve a list of identityRiskEvent objects." />
-        <Item text="Get identityRiskEvent" url="/en-us/api-reference/beta/api/identityriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  identityRiskEvent API" SEODescription="Retrieve an identityRiskEvent object." />
-        <Item text="List anonymousIpRiskEvent" url="/en-us/api-reference/beta/api/anonymousipriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  anonymousIpRiskEvent API" SEODescription="Retrieve a list of anonymousIpRiskEvent objects." />
-        <Item text="Get anonymousIpRiskEvent" url="/en-us/api-reference/beta/api/anonymousipriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  anonymousIpRiskEvent API" SEODescription="Retrieve an anonymousIpRiskEvent object." />
-        <Item text="List impossibleTravelRiskEvent" url="/en-us/api-reference/beta/api/impossibletravelriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  impossibleTravelRiskEvent API" SEODescription="Retrieve a list of impossibleTravelRiskEvent objects." />
-        <Item text="Get impossibleTravelRiskEvent" url="/en-us/api-reference/beta/api/impossibletravelriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  impossibleTravelRiskEvent API" SEODescription="Retrieve an impossibleTravelRiskEvent object." />
-        <Item text="List leakedCredentialsRiskEvent" url="/en-us/api-reference/beta/api/leakedcredentialsriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  leakedCredentialsRiskEvent API" SEODescription="Retrieve a list of leakedCredentialsRiskEvent objects." />
-        <Item text="Get leakedCredentialsRiskEvent" url="/en-us/api-reference/beta/api/leakedcredentialsriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  leakedCredentialsRiskEvent API" SEODescription="Retrieve a leakedCredentialsRiskEvent object." />
-        <Item text="List malwareRiskEvent" url="/en-us/api-reference/beta/api/malwareriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  malwareRiskEvent API" SEODescription="Retrieve a list of malwareRiskEvent objects." />
-        <Item text="Get malwareRiskEvent" url="/en-us/api-reference/beta/api/malwareriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  malwareRiskEvent API" SEODescription="Retrieve a malwareRiskEvent object." />
-        <Item text="List suspiciousIpRiskEvent" url="/en-us/api-reference/beta/api/suspiciousipriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  suspiciousIpRiskEvent API" SEODescription="Retrieve a list of suspiciousIpRiskEvent objects." />
-        <Item text="Get suspiciousIpRiskEvent" url="/en-us/api-reference/beta/api/suspiciousipriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  suspiciousIpRiskEvent API" SEODescription="Retrieve a suspiciousIpRiskEvent object." />
-        <Item text="List unfamiliarLocationRiskEvent" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  unfamiliarLocationRiskEvent API" SEODescription="Retrieve a list of unfamiliarLocationRiskEvent objects." />
-        <Item text="Get unfamiliarLocationRiskEvent" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  unfamiliarLocationRiskEvent API" SEODescription="Retrieve an unfamiliarLocationRiskEvent object." />
       </Item>
     </Item>
     <Item text="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
@@ -3457,29 +3480,6 @@
       <Item text="Progress task board task format" url="/en-us/api-reference/beta/resources/plannerprogresstaskboardtaskformat" >
         <Item text="Get progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_get" />
         <Item text="Update progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_update" />
-      </Item>
-    </Item>
-    <Item text="Privileged Identity Management" url="/en-us/api-reference/beta/resources/privilegedIdentityManagement_root" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Azure Active Directory Privileged Identity Management">
-      <Item text="Privileged Role" url="/en-us/api-reference/beta/resources/privilegedrole" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Privileged AAD Role Object">
-        <Item text="List privileged roles" url="/en-us/api-reference/beta/api/privilegedrole_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Retrieve a list of privilegedRole objects." />
-        <Item text="Get privileged role" url="/en-us/api-reference/beta/api/privilegedrole_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Retrieve a privilegedRole object." />
-        <Item text="List role assignments" url="/en-us/api-reference/beta/api/privilegedrole_list_assignments" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Retrieve a list of privilegedRoleAssignment objects." />
-        <Item text="Self role activate" url="/en-us/api-reference/beta/api/privilegedrole_selfactivate" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, activate" SEODescription="Self activate role assignment." />
-        <Item text="Self role deactivate" url="/en-us/api-reference/beta/api/privilegedrole_selfdeactivate" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, deactivate" SEODescription="Self deactivate role assignment." />
-        <Item text="Get role settings" url="/en-us/api-reference/beta/api/privilegedrolesettings_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, setting" SEODescription="Retrieve the setting for a role." />
-        <Item text="Get role summary" url="/en-us/api-reference/beta/api/privilegedrolesummary_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, summary" SEODescription="Retrieve the summary data for a role." />
-      </Item>
-      <Item text="Privileged Role Assignment" url="/en-us/api-reference/beta/resources/privilegedroleassignment" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, role" SEODescription="Privileged Role Assignment objects">
-        <Item text="List role assignments" url="/en-us/api-reference/beta/api/privilegedroleassignment_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, role" SEODescription="Retrieve a list of privilegedRoleAssignment objects." />
-        <Item text="Get role assignment" url="/en-us/api-reference/beta/api/privilegedroleassignment_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, role" SEODescription="Retrieve a privilegedRoleAssignment object." />
-        <Item text="Create role assignments" url="/en-us/api-reference/beta/api/privilegedroleassignment_post_privilegedroleassignments" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, role" SEODescription="Create a privilegedRoleAssignment objects." />
-        <Item text="Delete role assignment" url="/en-us/api-reference/beta/api/privilegedroleassignment_delete" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Delete a privilegedRoleAssignment objects." />
-        <Item text="Get my role assignments" url="/en-us/api-reference/beta/api/privilegedroleassignment_my" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Retrieve a list of privilegedRoleAssignment objects assigned to the requestor." />
-        <Item text="Make eligible role assignment" url="/en-us/api-reference/beta/api/privilegedroleassignment_makeeligible" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Make the role assignment as eligible." />
-        <Item text="Make permanent role assignment" url="/en-us/api-reference/beta/api/privilegedroleassignment_makepermanent" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Mkae the role assignment as permanent." />
-      </Item>
-      <Item text="Audit Event" url="/en-us/api-reference/beta/resources/privilegedoperationevent" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, Audit" SEODescription="Audit event from Privileged Identity Management">
-        <Item text="List audit events" url="/en-us/api-reference/beta/api/privilegedoperationevent_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, Audit" SEODescription="Retrieve a list of audit events." />
       </Item>
     </Item>
     <Item text="OneDrive" url="/en-us/api-reference/beta/resources/onedrive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="OneDrive APIs">
