@@ -15,7 +15,7 @@ POST /groups/{id}/rejectedSenders/$ref
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 In the request body, supply the id of a user or group object.

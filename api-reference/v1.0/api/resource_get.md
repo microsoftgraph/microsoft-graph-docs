@@ -17,7 +17,7 @@ GET /groups/{id}/onenote/resources/{id}/content
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | `Bearer <token>` A valid OAuth token provided to the app based on the user credentials and the user having authorized access. |
+| Authorization  | string  | Bearer {token}. Required.|
 
 ## Request body
 Do not supply a request body for this method.

@@ -14,7 +14,7 @@ PATCH /subscriptions/{id}
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Response
 If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.

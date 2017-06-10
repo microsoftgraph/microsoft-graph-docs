@@ -13,7 +13,7 @@ POST /administrativeUnits
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer  &lt;token&gt; *Required* |
+| Authorization  | Bearer {token}. Required.|
 ## Request body
 In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.
 

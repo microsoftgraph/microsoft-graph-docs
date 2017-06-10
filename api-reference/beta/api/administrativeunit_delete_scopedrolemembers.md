@@ -13,7 +13,7 @@ DELETE /administrativeUnits/{id}/scopedRoleMembers/{id}
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt; *Required* |
+| Authorization  | Bearer {token}. Required.|
 
 ## Request body
 Do not supply a request body for this method.

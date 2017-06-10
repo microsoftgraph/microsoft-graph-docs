@@ -19,7 +19,7 @@ POST /directoryObjects/{id}/getMemberObjects
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 | Content-Type  | application/json  |
 
 ## Request body

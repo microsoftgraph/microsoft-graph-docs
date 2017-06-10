@@ -13,7 +13,7 @@ PATCH /planner/tasks/<id>/details
 ### Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required.|
 | If-Match  | Last known ETag value for the **plannerTaskDetails** to be updated. Required.|
 
 ### Request body

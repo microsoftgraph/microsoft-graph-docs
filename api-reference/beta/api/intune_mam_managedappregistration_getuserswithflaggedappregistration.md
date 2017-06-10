@@ -20,7 +20,7 @@ GET /users/{usersId}/managedAppRegistrations//getUsersWithFlaggedAppRegistration
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required.|
 |Accept|application/json|
 
 ## Request body

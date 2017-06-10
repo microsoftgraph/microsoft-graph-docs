@@ -18,7 +18,7 @@ This method does **not** support [OData Query Parameters](http://developer.micro
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt;|
+| Authorization  | Bearer {token}. Required.|
 
 ### Request body
 Do not supply a request body for this method.

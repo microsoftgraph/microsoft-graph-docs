@@ -39,7 +39,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 | Prefer | string | <Time zone>. Optional, UTC assumed if absent.|
 
 ## Request body

@@ -125,7 +125,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required.|
 
 
 ## Request body

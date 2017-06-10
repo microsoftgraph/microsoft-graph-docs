@@ -15,7 +15,7 @@ POST /subscriptions
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 
 ## Response

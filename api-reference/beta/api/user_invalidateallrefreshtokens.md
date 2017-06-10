@@ -18,7 +18,7 @@ POST /users/{id | userPrincipalName}/invalidateAllRefreshTokens
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 This operation has no request content.

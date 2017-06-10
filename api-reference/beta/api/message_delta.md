@@ -47,7 +47,7 @@ _id_ property is always returned.
 ### Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {code}. Required.|
+| Authorization  | string  | Bearer {token}. Required.|
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 

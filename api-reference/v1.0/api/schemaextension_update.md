@@ -19,7 +19,7 @@ PATCH /schemaExtensions/{id}
 ### Optional request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt;. Required. |
+| Authorization  | Bearer {token}. Required. |
 | Content-Type   | application/json | 
 
 ## Request body

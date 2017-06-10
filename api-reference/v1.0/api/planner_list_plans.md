@@ -17,7 +17,7 @@ This method requires owner [filter](http://graph.microsoft.io/docs/overview/quer
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required.|
 
 ### Request body
 Do not supply a request body for this method.

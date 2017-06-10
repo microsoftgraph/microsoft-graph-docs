@@ -18,7 +18,7 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | `Bearer <token>` A valid OAuth token provided to the app based on the user credentials and the user having authorized access. |
+| Authorization  | string  | Bearer {token}. Required.|
 | Content-Type | string | `application/json` |
 
 ## Request body

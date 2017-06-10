@@ -63,7 +63,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 | Prefer: outlook.timezone | string | The default time zone for events in the response. Optional. |
 | Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". Optional. |
 

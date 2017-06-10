@@ -11,12 +11,10 @@ All examples below are relative to `https://graph.microsoft.com/v1.0`.
 | [Get root site][]    | GET /sites/root                                   |
 | [Get site][]         | GET /sites/{site-id}                              |
 | [Get site by path][] | GET /sites/{hostname}:/{site-path}                |
-| [Get site for a group][] | GET /groups/{group-id}/sites/root             |
 
 [Get site]: ../api/site_get.md
 [Get root site]: ../api/site_get.md
 [Get site by path]: ../api/site_get.md
-[Get site for a group]: ../api/site_get.md
 
 ## JSON representation
 

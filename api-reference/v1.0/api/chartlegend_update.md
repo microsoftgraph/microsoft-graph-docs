@@ -14,7 +14,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/legend
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 
 
 ## Request body

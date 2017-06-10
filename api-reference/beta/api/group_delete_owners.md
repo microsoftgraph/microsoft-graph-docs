@@ -13,7 +13,7 @@ DELETE /groups/{id}/owners/{id}/$ref
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer &lt;token&gt;. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.

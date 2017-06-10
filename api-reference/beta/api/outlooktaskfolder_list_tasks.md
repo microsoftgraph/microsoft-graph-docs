@@ -24,7 +24,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 | Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.| 
 
 ### Request body

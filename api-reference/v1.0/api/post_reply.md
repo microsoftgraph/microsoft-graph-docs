@@ -18,7 +18,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

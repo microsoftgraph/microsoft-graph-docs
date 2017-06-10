@@ -30,7 +30,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | image/jpeg. Required.  |
 
 ## Request body

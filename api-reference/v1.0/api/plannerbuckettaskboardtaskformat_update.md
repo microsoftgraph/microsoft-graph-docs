@@ -14,7 +14,7 @@ PATCH /planner/tasks/<id>/bucketTaskBoardFormat
 ### Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required.|
 | If-Match  | Last known ETag value for the **plannerBucketTaskBoardTaskFormat** to be updated. Required.|
 
 ### Request body

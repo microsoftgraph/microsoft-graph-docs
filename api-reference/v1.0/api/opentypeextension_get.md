@@ -116,7 +116,7 @@ Make sure you apply [URL encoding](http://www.w3schools.com/tags/ref_urlencode.a
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Authorization | Bearer {token}. Required.|
 
 
 ## Request body

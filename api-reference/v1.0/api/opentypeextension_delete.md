@@ -47,7 +47,7 @@ All other syntax that allows you to identify these resource instances supports d
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Authorization | Bearer {token}. Required.|
 
 
 ## Request body

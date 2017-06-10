@@ -70,7 +70,7 @@ See the [Request body](#request-body) section about including _the extension_ in
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Authorization | Bearer {token}. Required.|
 | Content-Type | application/json |
 
 ## Request body

@@ -41,7 +41,6 @@ Here is a JSON representation of a **baseItem** resource.
 | id                   | string            | The unique identifier of the drive. Read-only.                                         |
 | createdBy            | [identitySet][]   | Identity of the user, device, or application which created the item. Read-only.        |
 | createdDateTime      | dateTimeOffset    | Date and time of item creation. Read-only.                                             |
-| description          | string            | The descriptive text for the item.                                                     |
 | eTag                 | string            | ETag for the item. Read-only.                                                          |
 | lastModifiedBy       | [identitySet][]   | Identity of the user, device, and application which last modified the item. Read-only. |
 | lastModifiedDateTime | dateTimeOffset    | Date and time the item was last modified. Read-only.                                   |

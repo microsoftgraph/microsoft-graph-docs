@@ -24,7 +24,7 @@ In the request URL, provide an optional query parameter.
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 
 ## Response
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.

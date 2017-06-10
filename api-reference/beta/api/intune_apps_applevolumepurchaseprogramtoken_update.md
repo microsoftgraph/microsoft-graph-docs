@@ -19,7 +19,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/vp
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required.|
 |Accept|application/json|
 
 ## Request body

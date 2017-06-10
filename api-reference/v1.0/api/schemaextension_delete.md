@@ -19,7 +19,7 @@ DELETE /schemaExtensions/{id}
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt;. Required. |
+| Authorization  | Bearer {token}. Required. |
  
 
 ## Request body

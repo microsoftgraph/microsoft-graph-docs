@@ -12,7 +12,7 @@ POST /groups/{id}/calendar/events
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.

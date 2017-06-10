@@ -22,7 +22,7 @@ This method also supports the [OData Query Parameters](http://developer.microsof
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 | Prefer | string | <Time zone>. Optional, UTC assumed if absent.|
 
 ## Request body

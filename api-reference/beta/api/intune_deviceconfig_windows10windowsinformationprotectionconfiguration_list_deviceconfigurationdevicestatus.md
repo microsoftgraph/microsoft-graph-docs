@@ -26,7 +26,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required.|
 |Accept|application/json|
 
 ## Request body

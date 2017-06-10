@@ -18,7 +18,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## Request body

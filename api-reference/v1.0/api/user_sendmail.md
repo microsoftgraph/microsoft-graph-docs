@@ -15,7 +15,7 @@ POST /users/{id | userPrincipalName}/sendMail
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## Request body

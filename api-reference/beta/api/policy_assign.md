@@ -20,7 +20,7 @@ POST /serviceprincipals/{id}/policies/$ref
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | application/json  | Nature of the data in the body of an entity. Required. |
 
 ### Request body

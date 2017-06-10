@@ -17,7 +17,7 @@ Note that ``<id>`` is in the format of 'userId_roleId', where userId is the GUID
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required.|
 
 ## Request body
 Do not supply a request body for this method.

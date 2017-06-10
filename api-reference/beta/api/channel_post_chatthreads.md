@@ -16,7 +16,7 @@ POST /groups/{id}/channels/{id}/threads
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of a [chatThread](../resources/chatthread.md) object that contains the rootMessage property.

@@ -34,7 +34,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 | Prefer  | outlook.timezone="Eastern Standard Time". Optional. Use this to specify the time zone for start and end times in the response. If not specified, the response are returned in UTC. |
 
 ## Request body

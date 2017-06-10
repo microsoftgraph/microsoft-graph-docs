@@ -14,7 +14,7 @@ POST /groups/{id}/onenote/sections/{id}/pages
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | `Bearer <token>` A valid OAuth token provided to the app based on the user credentials and the user having authorized access. |
+| Authorization  | string  | Bearer {token}. Required.|
 | Content-Type | string | `text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type. |
 
 ## Request body

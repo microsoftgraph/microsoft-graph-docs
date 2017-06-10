@@ -12,7 +12,7 @@ POST /servicePrincipals/{id}/appRoleAssignments
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of [appRoleAssignment](../resources/approleassignment.md) object.

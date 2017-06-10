@@ -15,7 +15,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt; *Required*|
+| Authorization  | Bearer {token}. Required.|
 | Accept         | application/json; |
 
 ### Request body

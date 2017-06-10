@@ -17,7 +17,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 
 
 ## Request body

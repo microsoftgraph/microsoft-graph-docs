@@ -15,7 +15,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 
 
 ## Request body

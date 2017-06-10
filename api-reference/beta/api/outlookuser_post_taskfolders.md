@@ -13,7 +13,7 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 
 ### Request body
 In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.

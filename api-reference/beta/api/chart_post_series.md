@@ -15,7 +15,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 
 
 ## Request body

@@ -21,7 +21,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tas
 ### Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 | Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.| 
 
 

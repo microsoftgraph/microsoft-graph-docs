@@ -2,9 +2,7 @@
 
 Retrieve the list of [Drive](../resources/drive.md) resources available for a target [User](../resources/user.md) or [Group](../resources/group.md).
 Your app can also request the set of document libraries on the SharePoint root site.
-
 ## Prerequisites
-
 One of the following **scopes** is required to execute this API:
 
   * Files.Read
@@ -12,30 +10,25 @@ One of the following **scopes** is required to execute this API:
   * Sites.Read.All
 
 ## HTTP request
-
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /drives
 GET /me/drives
-GET /sites/{site-id}/drives
+GET /groups/{id}/drives
 ```
 
 ## Optional query parameters
-
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 ## Request body
-
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.
 
 ## Example
 
 ##### Request
-
 Here is an example of the request for the user's drives.
 
 <!-- {

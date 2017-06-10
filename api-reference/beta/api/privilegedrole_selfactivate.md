@@ -16,7 +16,7 @@ Note that ``<id>`` is the target role id.
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

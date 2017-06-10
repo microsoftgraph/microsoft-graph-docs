@@ -15,7 +15,7 @@ PATCH /devices/{id}
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 In the request body, supply the values for the [device](../resources/device.md) properties that should be updated.
