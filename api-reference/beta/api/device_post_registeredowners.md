@@ -1,6 +1,7 @@
 # Create registeredOwner
 
 Add a user as a registered owner of the device.
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
 *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
@@ -8,7 +9,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /devices/{id}/registeredOwners
+POST /devices/{id}/registeredOwners/$ref
 
 ```
 ## Request headers
@@ -17,47 +18,33 @@ POST /devices/{id}/registeredOwners
 | Authorization  | string  | Bearer <token>. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
-
+In the request body, supply a reference to the [user](../resources/user.md) to be added.
 
 ## Response
-If successful, this method returns `201, Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example
 ##### Request
-Here is an example of the request.
+Here is an example of the request. In the request body, supply a reference to the [user](../resources/user.md) to be added.
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_device"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/devices/{id}/registeredOwners
+POST https://graph.microsoft.com/beta/devices/{id}/registeredOwners/$ref
 Content-type: application/json
-Content-length: 30
+Content-length: 97
 
 {
-  "directoryObject": {
-  }
+  "@odata.id":"https://graph.microsoft.com/beta/users/af9f55cc-78ad-4476-be6e-f9bb86a3dddd"
 }
 ```
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 51
 
-{
-  "directoryObject": {
-    "id": "id-value"
-  }
-}
+##### Response
+Here is an example of the response. 
+
+```http
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
