@@ -14,7 +14,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json. Required.  |
 
 ## Request body

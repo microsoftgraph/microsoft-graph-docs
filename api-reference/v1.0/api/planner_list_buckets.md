@@ -18,7 +18,7 @@ This method requires planId [filter](http://graph.microsoft.io/docs/overview/que
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required.|
 
 ### Request body
 Do not supply a request body for this method.

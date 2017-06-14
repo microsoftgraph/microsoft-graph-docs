@@ -12,7 +12,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 
 
 ### Request body

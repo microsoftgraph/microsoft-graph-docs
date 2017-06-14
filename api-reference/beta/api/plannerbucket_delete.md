@@ -14,7 +14,7 @@ DELETE /planner/buckets/<id>
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required.|
 | If-Match  | Last known ETag value for the **plannerBucket** to be deleted. Required.|
 
 ### Request body

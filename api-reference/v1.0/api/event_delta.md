@@ -45,7 +45,7 @@ a `GET /calendarview` request. `$select` is not supported in this case.
 ### Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {code}. Required.|
+| Authorization  | string  | Bearer {token}. Required.|
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 | Prefer | string | {Time zone}. Optional, UTC assumed if absent.|

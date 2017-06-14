@@ -15,7 +15,7 @@ POST /administrativeUnits/{id}/members/$ref
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer  &lt;token&gt; *Required* |
+| Authorization  | Bearer {token}. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryObject.md) to be added.

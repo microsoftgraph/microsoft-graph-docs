@@ -46,7 +46,7 @@ _id_ property is always returned.
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;|
+| Authorization  | Bearer {token}. Required.|
 | Content-Type  | application/json |
 
 ### Request body

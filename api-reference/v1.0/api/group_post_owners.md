@@ -12,7 +12,7 @@ POST /groups/{id}/owners/$ref
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.

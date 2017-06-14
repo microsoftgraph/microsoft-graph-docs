@@ -13,7 +13,7 @@ PATCH /planner/tasks/<id>/progressTaskBoardFormat
 ### Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required.|
 | If-Match  | Last known ETag value for the **plannerProgressTaskBoardTaskFormat** to be updated. Required.|
 
 ### Request body

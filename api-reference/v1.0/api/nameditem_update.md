@@ -14,7 +14,7 @@ PATCH /workbook/names(<name>)
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 
 
 ## Request body

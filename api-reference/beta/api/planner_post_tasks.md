@@ -15,7 +15,7 @@ POST /planner/tasks
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required.|
 
 ### Request body
 In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.

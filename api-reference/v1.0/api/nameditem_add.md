@@ -18,7 +18,7 @@ POST /workbook/worksheets({id|name})/names/add
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 
 
 ## Request body
@@ -33,10 +33,8 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 If successful, this method returns `200, OK` response code and [NamedItem](../resources/NamedItem.md) object in the response body.
 
-
 ## Example
 Here is an example of how to call this API.
-
 ##### Request
 Here is an example of the request.
 <!-- {
@@ -49,12 +47,10 @@ Content-type: application/json
 Content-length: 54
 
 {
-  "name": "test5",
-  "reference": "=Sheet1!$F$15:$N$27",
+  "name": "myRange",
+  "reference": "=A10+B10",
   "comment": "Comment for the named item"
 }
-
-
 ```
 
 ##### Response
@@ -70,15 +66,12 @@ Content-type: application/json
 Content-length: 109
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookNamedItem",
-    "@odata.type": "#microsoft.graph.workbookNamedItem",
-    "@odata.id": "/users('ca41eb6e-5828-486b-ab52-c3bd1f7a4047')/drive/root/workbook/names(%27test5%27)",
-    "comment": "Comment for the named item",
-    "name": "test5",
-    "scope": "Workbook",
-    "type": "Range",
-    "value": "Sheet1!$F$15:$N$27",
-    "visible": true
+  "name": "myRange",
+  "comment": "Sample range",
+  "scope": "Workbook",
+  "type": "String",
+  "visible": true,
+  "value": "=A10+B10"
 }
 ```
 

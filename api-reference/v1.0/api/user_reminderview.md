@@ -22,7 +22,7 @@ In the request URL, provide the following function parameters with values.
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type   | application/json |
 | Prefer | <Time-zone>. Optional, UTC assumed if absent.| 
 

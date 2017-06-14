@@ -14,7 +14,7 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

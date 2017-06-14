@@ -56,7 +56,7 @@ See the [Request body](#request-body) section about including in the request bod
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Authorization | Bearer {token}. Required.|
 | Content-Type | application/json |
 
 ## Request body

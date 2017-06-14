@@ -13,7 +13,7 @@ POST /privilegedApproval
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required.|
 
 ### Request body
 In the request body, supply a JSON representation of [privilegedApproval](../resources/privilegedapproval.md) object.

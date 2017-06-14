@@ -13,7 +13,7 @@ POST /administrativeUnits/{id}/scopedRoleMembers
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt; *Required*|
+| Authorization  | Bearer {token}. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.

@@ -14,7 +14,7 @@ POST /applications
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer &lt;token&gt; *Required* |
+| Authorization  | string  | Bearer {token}. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of [application](../resources/application.md) object.

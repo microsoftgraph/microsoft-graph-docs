@@ -14,7 +14,7 @@ DELETE /groups/{id}/settings/{id}
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <token>. Required.|
+| Authorization  | Bearer {token}. Required.|
 
 ## Request body
 Do not supply a request body for this method.

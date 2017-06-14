@@ -12,7 +12,7 @@ GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body

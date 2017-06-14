@@ -118,7 +118,7 @@ PATCH /groups/{id}/events/{id}
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Authorization | Bearer {token}. Required.|
 | Content-Type | application/json |
 
 ## Request body

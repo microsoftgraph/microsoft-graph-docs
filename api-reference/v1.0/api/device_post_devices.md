@@ -14,7 +14,7 @@ POST /devices
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 | Content-type | string | application/json |
 
 ## Request body

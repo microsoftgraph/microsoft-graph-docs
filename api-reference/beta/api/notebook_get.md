@@ -19,7 +19,7 @@ Valid `expand` values for notebooks are `sections` and `sectionGroups`.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | `Bearer <token>` A valid OAuth token provided to the app based on the user credentials and the user having authorized access. |
+| Authorization  | string  | Bearer {token}. Required.|
 | Accept | string | `application/json` | 
 
 ## Request body

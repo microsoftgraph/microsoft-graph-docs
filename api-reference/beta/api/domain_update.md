@@ -21,7 +21,7 @@ PATCH /domains/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer &lt;token&gt; *Required* |
+| Authorization  | Bearer {token}. Required.|
 | Content-Type  | application/json |
 
 ### Request body

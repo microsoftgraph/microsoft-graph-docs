@@ -16,7 +16,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 
 
 ## Request body

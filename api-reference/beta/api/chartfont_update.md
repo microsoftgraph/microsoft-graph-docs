@@ -16,7 +16,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/fon
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 
 
 ## Request body

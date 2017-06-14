@@ -18,7 +18,7 @@ DELETE /drive/root/createdByUser/photo
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | if-match  | string  | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 
 ## Request body

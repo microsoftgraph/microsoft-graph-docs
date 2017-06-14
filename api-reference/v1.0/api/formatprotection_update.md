@@ -16,7 +16,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 
 
 ## Request body

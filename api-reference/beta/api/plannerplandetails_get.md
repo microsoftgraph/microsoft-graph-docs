@@ -14,7 +14,7 @@ GET /planner/plans/<id>/details
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required.|
 
 ### Request body
 Do not supply a request body for this method.

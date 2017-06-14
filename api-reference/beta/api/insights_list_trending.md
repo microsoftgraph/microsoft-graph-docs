@@ -28,7 +28,7 @@ See the available Container Types and Types you can filter by in [resourceVisual
 ## Request headers
 | Header       |  Value|
 |:-------------|:------|
-| Authorization  | Bearer <token>. Required.|
+| Authorization  | Bearer {token}. Required.|
 | Accept  | application/json|
 
 ## Request body

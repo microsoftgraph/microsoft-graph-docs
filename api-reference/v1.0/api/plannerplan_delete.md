@@ -14,7 +14,7 @@ DELETE /planner/plans/<id>
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required.|
 | If-Match  | Last known ETag value for the **plannerPlan** to be deleted. Required.|
 
 ### Request body

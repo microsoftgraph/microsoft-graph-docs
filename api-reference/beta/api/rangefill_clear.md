@@ -17,7 +17,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 
 
 ## Request body

@@ -20,7 +20,7 @@ POST /directory/deleteditems/{id}/restore
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;code&gt; *Required*|
+| Authorization  | Bearer {token}. Required.|
 | Accept | application/json |
 
 ### Request body

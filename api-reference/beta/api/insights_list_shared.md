@@ -32,7 +32,7 @@ See the [sharingDetail](../resources/insights_sharingdetail.md) complex type.
 ## Request headers
 | Header       |  Value|
 |:-------------|:------|
-| Authorization  | Bearer <token>. Required.|
+| Authorization  | Bearer {token}. Required.|
 | Accept  | application/json|
 
 ## Request body

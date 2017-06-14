@@ -13,7 +13,7 @@ POST /directoryRoles
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer &lt;token&gt; *Required* |
+| Authorization  | string  | Bearer {token}. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.

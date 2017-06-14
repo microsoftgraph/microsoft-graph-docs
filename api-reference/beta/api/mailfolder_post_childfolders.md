@@ -18,7 +18,7 @@ Specify the parent folder in the query URL as a folder ID, or the `Inbox`, `Draf
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json. Required.  |
 
 ## Request body

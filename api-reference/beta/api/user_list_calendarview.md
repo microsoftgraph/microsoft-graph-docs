@@ -43,7 +43,7 @@ This method also supports the [OData Query Parameters](http://developer.microsof
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 | Content-Type   | string  | application/json | 
 | Prefer | string | <Time zone>. Optional, UTC assumed if absent.|
 
