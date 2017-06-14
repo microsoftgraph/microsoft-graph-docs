@@ -20,13 +20,11 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|clientId|String||
-|consentType|String||
-|expiryTime|DateTimeOffset||
-|principalId|String||
-|resourceId|String||
-|scope|String||
-|startTime|DateTimeOffset||
+|clientId|String| The objectId of the service principal granted consent to impersonate the user when accessing the resource (represented by the resourceId property). |
+|consentType|String| Indicates if consent was provided by the administrator (on behalf of the organization) or by an individual. The possible values are *AllPrincipals* or *Principal*. |
+|principalId|String| If consentType is *AllPrincipals* this value is null, and the consent applies to all users in the organization. If consentType is *Principal* then this property specifies the objectId of the user that granted consent and applies only for that user. |
+|resourceId|String| Specifies the *objectId* of the resource service principal to which access has been granted. |
+|scope|String| Specifies the value of the scope claim that the resource application should expect in the OAuth 2.0 access token. |
 
 ## Response
 If successful, this method returns a `200 OK` response code and updated [oAuth2Permissiongrant](../resources/oAuth2Permissiongrant.md) object in the response body.

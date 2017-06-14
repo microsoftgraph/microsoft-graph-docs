@@ -1,7 +1,6 @@
 # oAuth2PermissionGrant resource type
 
-Represents the OAuth 2.0 delegated permission scopes that have been granted to an application (represented by a service principal) as part of the user or admin consent process. 
-
+Represents the OAuth 2.0 scopes (delegated permissions) that have been granted to an application (represented by a service principal) as part of the user or admin consent process.
 
 ## JSON representation
 
@@ -31,14 +30,14 @@ Here is a JSON representation of the resource
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|clientId|String||
-|consentType|String||
-|expiryTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|objectId|String| Read-only.|
-|principalId|String||
-|resourceId|String||
-|scope|String||
-|startTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|clientId|String| The objectId of the service principal granted consent to impersonate the user when accessing the resource (represented by the resourceId property). |
+|consentType|String| Indicates if consent was provided by the administrator (on behalf of the organization) or by an individual. The possible values are *AllPrincipals* or *Principal*. |
+|expiryTime|DateTimeOffset| Reserved for internal use. Returns **null**. |
+|objectId|String| Unique identifier. Read-only.|
+|principalId|String| If consentType is *AllPrincipals* this value is null, and the consent applies to all users in the organization. If consentType is *Principal*, then this property specifies the objectId of the user that granted consent and applies only for that user. |
+|resourceId|String| Specifies the *objectId* of the resource service principal to which access has been granted. |
+|scope|String| Specifies the value of the scope claim that the resource application should expect in the OAuth 2.0 access token. |
+|startTime|DateTimeOffset| Reserved for internal use. Returns **null**. |
 
 ## Relationships
 None
