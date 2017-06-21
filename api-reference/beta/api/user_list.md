@@ -17,11 +17,6 @@ GET /users
 
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
-<<<<<<< HEAD
-By default, only a limited set of properties are returned (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to customize which properties and relationships are returned for each  [user](../resources/user.md).
-
-=======
->>>>>>> Fixed formatting
 ## Request headers
 | Header        | Value                      |
 |:--------------|:---------------------------|
