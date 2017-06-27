@@ -1,4 +1,4 @@
-﻿# macOSEnterpriseWiFiConfiguration resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -14,20 +14,23 @@ Inherits from [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswif
 |[Create macOSEnterpriseWiFiConfiguration](../api/intune_deviceconfig_macosenterprisewificonfiguration_create.md)|[macOSEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_macosenterprisewificonfiguration.md)|Create a new [macOSEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_macosenterprisewificonfiguration.md) object.|
 |[Delete macOSEnterpriseWiFiConfiguration](../api/intune_deviceconfig_macosenterprisewificonfiguration_delete.md)|None|Deletes a [macOSEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_macosenterprisewificonfiguration.md).|
 |[Update macOSEnterpriseWiFiConfiguration](../api/intune_deviceconfig_macosenterprisewificonfiguration_update.md)|[macOSEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_macosenterprisewificonfiguration.md)|Update the properties of a [macOSEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_macosenterprisewificonfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/intune_deviceconfig_macosenterprisewificonfiguration_list_deviceconfigurationgroupassignment.md)|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuses](../api/intune_deviceconfig_macosenterprisewificonfiguration_list_deviceconfigurationdevicestatus.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Get the deviceConfigurationDeviceStatuses from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_macosenterprisewificonfiguration_list_deviceconfigurationuserstatus.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Get the deviceConfigurationUserStatuses from the userStatuses navigation property.|
-|[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_macosenterprisewificonfiguration_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
-|[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_macosenterprisewificonfiguration_get_deviceconfigurationuseroverview.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Get the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) from the userStatusOverview navigation property.|
-|[List settingStateDeviceSummaries](../api/intune_deviceconfig_macosenterprisewificonfiguration_list_settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Get the settingStateDeviceSummaries from the deviceSettingStateSummaries navigation property.|
-|[Get macOSTrustedRootCertificate](../api/intune_deviceconfig_macosenterprisewificonfiguration_get_macostrustedrootcertificate.md)|[macOSTrustedRootCertificate](../resources/intune_deviceconfig_macostrustedrootcertificate.md)|Get the [macOSTrustedRootCertificate](../resources/intune_deviceconfig_macostrustedrootcertificate.md) from the rootCertificateForServerValidation navigation property.|
-|[Get macOSCertificateProfileBase](../api/intune_deviceconfig_macosenterprisewificonfiguration_get_macoscertificateprofilebase.md)|[macOSCertificateProfileBase](../resources/intune_deviceconfig_macoscertificateprofilebase.md)|Get the [macOSCertificateProfileBase](../resources/intune_deviceconfig_macoscertificateprofilebase.md) from the identityCertificateForClientAuthentication navigation property.|
+|[List deviceConfigurationGroupAssignments](../api/intune_deviceconfig_deviceconfigurationgroupassignment_list.md)|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|List properties and relationships of the [deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) objects.|
+|[List deviceConfigurationDeviceStatuses](../api/intune_deviceconfig_deviceconfigurationdevicestatus_list.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|List properties and relationships of the [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) objects.|
+|[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_deviceconfigurationuserstatus_list.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|List properties and relationships of the [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) objects.|
+|[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_deviceconfigurationdeviceoverview_get.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Read properties and relationships of the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) object.|
+|[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_deviceconfigurationuseroverview_get.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Read properties and relationships of the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) object.|
+|[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
+|[Get macOSTrustedRootCertificate](../api/intune_deviceconfig_macostrustedrootcertificate_get.md)|[macOSTrustedRootCertificate](../resources/intune_deviceconfig_macostrustedrootcertificate.md)|Read properties and relationships of the [macOSTrustedRootCertificate](../resources/intune_deviceconfig_macostrustedrootcertificate.md) object.|
+|[Get macOSCertificateProfileBase](../api/intune_deviceconfig_macoscertificateprofilebase_get.md)|[macOSCertificateProfileBase](../resources/intune_deviceconfig_macoscertificateprofilebase.md)|Read properties and relationships of the [macOSCertificateProfileBase](../resources/intune_deviceconfig_macoscertificateprofilebase.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentStatus|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentProgress|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentErrorMessage|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -45,8 +48,8 @@ Inherits from [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswif
 |eapFastConfiguration|String|EAP-FAST Configuration Option when EAP-FAST is the selected EAP Type. Possible values are: `noProtectedAccessCredential`, `useProtectedAccessCredential`, `useProtectedAccessCredentialAndProvision`, `useProtectedAccessCredentialAndProvisionAnonymously`.|
 |trustedServerCertificateNames|String collection|Trusted server certificate names when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP. This is the common name used in the certificates issued by your trusted certificate authority (CA). If you provide this information, you can bypass the dynamic trust dialog that is displayed on end users devices when they connect to this Wi-Fi network.|
 |authenticationMethod|String|Authentication Method when EAP Type is configured to PEAP or EAP-TTLS. Possible values are: `certificate`, `usernameAndPassword`.|
-|nonEapAuthenticationMethodForEapTtls|String|Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
-|enableOuterIdentityPrivacy|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS, EAP-FAST or PEAP. This property masks usernames with the text you enter. For example, if you use 'anonymous', each user that authenticates with this Wi-Fi connection using their real username is displayed as 'anonymous'.|
+|innerAuthenticationProtocolForEapTtls|String|Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
+|outerIdentityPrivacyTemporaryValue|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS, EAP-FAST or PEAP. This property masks usernames with the text you enter. For example, if you use 'anonymous', each user that authenticates with this Wi-Fi connection using their real username is displayed as 'anonymous'.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -73,6 +76,9 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.macOSEnterpriseWiFiConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
+  "assignmentStatus": "String",
+  "assignmentProgress": "String",
+  "assignmentErrorMessage": "String",
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -92,8 +98,8 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "authenticationMethod": "String",
-  "nonEapAuthenticationMethodForEapTtls": "String",
-  "enableOuterIdentityPrivacy": "String"
+  "innerAuthenticationProtocolForEapTtls": "String",
+  "outerIdentityPrivacyTemporaryValue": "String"
 }
 ```
 

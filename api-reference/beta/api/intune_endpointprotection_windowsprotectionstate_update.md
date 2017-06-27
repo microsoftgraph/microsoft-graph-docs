@@ -20,7 +20,7 @@ PATCH /deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body

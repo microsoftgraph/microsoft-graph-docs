@@ -4,7 +4,7 @@
 
 Read properties and relationships of the [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ## HTTP Request
@@ -17,11 +17,11 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 774
+Content-Length: 712
 
 {
   "value": {
@@ -51,8 +51,6 @@ Content-Length: 774
     "description": "Description value",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-    "deployedAppCount": 0,
     "id": "2444e029-e029-2444-29e0-442429e04424",
     "version": "Version value",
     "customSettings": [
@@ -62,6 +60,7 @@ Content-Length: 774
         "value": "Value value"
       }
     ],
+    "deployedAppCount": 0,
     "targetedSecurityGroupIds": [
       "Targeted Security Group Ids value"
     ],

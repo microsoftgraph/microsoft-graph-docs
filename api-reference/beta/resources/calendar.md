@@ -26,7 +26,7 @@ A calendar which is a container for events.
 |canEdit |Boolean |True if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access. |
 |canShare |Boolean |True if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it. |
 |canViewPrivateItems |Boolean |True if the user can read calendar items that have been marked private, false otherwise. |
-|changeKey|String|Identifies the version of the calendar object. Every time the calendar is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.|
+|changeKey|String|Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.|
 |color|String|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |hexColor|String|A color representing the calendar. The color is represented by a 6-digit, 3-byte hexadecimal number. Each byte represents one of the red, green, and blue components of the color, in the range 00 to FF in hexadecimal notation. |
 |id|String|The group's unique identifier. Read-only.|
@@ -74,7 +74,7 @@ Here is a JSON representation of the resource
   "isShared": "boolean",
   "isSharedWithMe": "boolean",
   "name": "string",
-  "owner": {"@odata.type": "microsoft.graph.emailAddress"},
+  "owner": {"@odata.type": "microsoft.graph.emailAddress"}
 }
 
 ```

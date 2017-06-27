@@ -4,7 +4,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.Read.All*
 ## HTTP Request
@@ -13,15 +13,15 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduleActionsForRules
-POST /deviceCompliancePolicyAssignments/{deviceCompliancePolicyAssignmentsId}/deviceCompliancePolicy//scheduleActionsForRules
-POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy//scheduleActionsForRules
+POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}scheduleActionsForRules
+POST /deviceCompliancePolicyAssignments/{deviceCompliancePolicyAssignmentsId}/deviceCompliancePolicy/scheduleActionsForRules
+POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy/scheduleActionsForRules
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -41,7 +41,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduleActionsForRules
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}scheduleActionsForRules
 
 Content-type: application/json
 Content-length: 242

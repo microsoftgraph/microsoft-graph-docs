@@ -4,7 +4,7 @@
 
 List properties and relationships of the [iosWiFiConfiguration](../resources/intune_deviceconfig_ioswificonfiguration.md) objects.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
@@ -19,7 +19,7 @@ GET /deviceManagement/deviceConfigurations/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 809
+Content-Length: 1035
 
 {
   "value": [
@@ -48,6 +48,9 @@ Content-Length: 809
       "@odata.type": "#microsoft.graph.iosWiFiConfiguration",
       "id": "516f9ef9-9ef9-516f-f99e-6f51f99e6f51",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "assignmentStatus": "Assignment Status value",
+      "assignmentProgress": "Assignment Progress value",
+      "assignmentErrorMessage": "Assignment Error Message value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -60,7 +63,8 @@ Content-Length: 809
       "proxySettings": "manual",
       "proxyManualAddress": "Proxy Manual Address value",
       "proxyManualPort": 15,
-      "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
+      "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+      "preSharedKey": "Pre Shared Key value"
     }
   ]
 }

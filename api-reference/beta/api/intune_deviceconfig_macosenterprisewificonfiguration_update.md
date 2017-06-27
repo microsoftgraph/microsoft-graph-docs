@@ -4,7 +4,7 @@
 
 Update the properties of a [macOSEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_macosenterprisewificonfiguration.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
@@ -21,7 +21,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssign
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -32,6 +32,9 @@ The following table shows the properties that are required when you create a [ma
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentStatus|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentProgress|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentErrorMessage|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -49,8 +52,8 @@ The following table shows the properties that are required when you create a [ma
 |eapFastConfiguration|String|EAP-FAST Configuration Option when EAP-FAST is the selected EAP Type. Possible values are: `noProtectedAccessCredential`, `useProtectedAccessCredential`, `useProtectedAccessCredentialAndProvision`, `useProtectedAccessCredentialAndProvisionAnonymously`.|
 |trustedServerCertificateNames|String collection|Trusted server certificate names when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP. This is the common name used in the certificates issued by your trusted certificate authority (CA). If you provide this information, you can bypass the dynamic trust dialog that is displayed on end users devices when they connect to this Wi-Fi network.|
 |authenticationMethod|String|Authentication Method when EAP Type is configured to PEAP or EAP-TTLS. Possible values are: `certificate`, `usernameAndPassword`.|
-|nonEapAuthenticationMethodForEapTtls|String|Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
-|enableOuterIdentityPrivacy|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS, EAP-FAST or PEAP. This property masks usernames with the text you enter. For example, if you use 'anonymous', each user that authenticates with this Wi-Fi connection using their real username is displayed as 'anonymous'.|
+|innerAuthenticationProtocolForEapTtls|String|Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
+|outerIdentityPrivacyTemporaryValue|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS, EAP-FAST or PEAP. This property masks usernames with the text you enter. For example, if you use 'anonymous', each user that authenticates with this Wi-Fi connection using their real username is displayed as 'anonymous'.|
 
 
 
@@ -63,10 +66,13 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 925
+Content-length: 1110
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "assignmentStatus": "Assignment Status value",
+  "assignmentProgress": "Assignment Progress value",
+  "assignmentErrorMessage": "Assignment Error Message value",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -85,8 +91,8 @@ Content-length: 925
     "Trusted Server Certificate Names value"
   ],
   "authenticationMethod": "usernameAndPassword",
-  "nonEapAuthenticationMethodForEapTtls": "challengeHandshakeAuthenticationProtocol",
-  "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value"
+  "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
+  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
 
@@ -95,12 +101,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1104
+Content-Length: 1289
 
 {
   "@odata.type": "#microsoft.graph.macOSEnterpriseWiFiConfiguration",
   "id": "7a6f9a2e-9a2e-7a6f-2e9a-6f7a2e9a6f7a",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "assignmentStatus": "Assignment Status value",
+  "assignmentProgress": "Assignment Progress value",
+  "assignmentErrorMessage": "Assignment Error Message value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -120,8 +129,8 @@ Content-Length: 1104
     "Trusted Server Certificate Names value"
   ],
   "authenticationMethod": "usernameAndPassword",
-  "nonEapAuthenticationMethodForEapTtls": "challengeHandshakeAuthenticationProtocol",
-  "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value"
+  "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
+  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
 

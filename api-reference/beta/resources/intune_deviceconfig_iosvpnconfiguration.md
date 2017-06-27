@@ -1,4 +1,4 @@
-﻿# iosVpnConfiguration resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -14,19 +14,22 @@ Inherits from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnc
 |[Create iosVpnConfiguration](../api/intune_deviceconfig_iosvpnconfiguration_create.md)|[iosVpnConfiguration](../resources/intune_deviceconfig_iosvpnconfiguration.md)|Create a new [iosVpnConfiguration](../resources/intune_deviceconfig_iosvpnconfiguration.md) object.|
 |[Delete iosVpnConfiguration](../api/intune_deviceconfig_iosvpnconfiguration_delete.md)|None|Deletes a [iosVpnConfiguration](../resources/intune_deviceconfig_iosvpnconfiguration.md).|
 |[Update iosVpnConfiguration](../api/intune_deviceconfig_iosvpnconfiguration_update.md)|[iosVpnConfiguration](../resources/intune_deviceconfig_iosvpnconfiguration.md)|Update the properties of a [iosVpnConfiguration](../resources/intune_deviceconfig_iosvpnconfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/intune_deviceconfig_iosvpnconfiguration_list_deviceconfigurationgroupassignment.md)|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuses](../api/intune_deviceconfig_iosvpnconfiguration_list_deviceconfigurationdevicestatus.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Get the deviceConfigurationDeviceStatuses from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_iosvpnconfiguration_list_deviceconfigurationuserstatus.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Get the deviceConfigurationUserStatuses from the userStatuses navigation property.|
-|[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_iosvpnconfiguration_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
-|[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_iosvpnconfiguration_get_deviceconfigurationuseroverview.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Get the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) from the userStatusOverview navigation property.|
-|[List settingStateDeviceSummaries](../api/intune_deviceconfig_iosvpnconfiguration_list_settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Get the settingStateDeviceSummaries from the deviceSettingStateSummaries navigation property.|
-|[Get iosCertificateProfileBase](../api/intune_deviceconfig_iosvpnconfiguration_get_ioscertificateprofilebase.md)|[iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)|Get the [iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md) from the identityCertificate navigation property.|
+|[List deviceConfigurationGroupAssignments](../api/intune_deviceconfig_deviceconfigurationgroupassignment_list.md)|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|List properties and relationships of the [deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) objects.|
+|[List deviceConfigurationDeviceStatuses](../api/intune_deviceconfig_deviceconfigurationdevicestatus_list.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|List properties and relationships of the [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) objects.|
+|[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_deviceconfigurationuserstatus_list.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|List properties and relationships of the [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) objects.|
+|[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_deviceconfigurationdeviceoverview_get.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Read properties and relationships of the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) object.|
+|[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_deviceconfigurationuseroverview_get.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Read properties and relationships of the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) object.|
+|[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
+|[Get iosCertificateProfileBase](../api/intune_deviceconfig_ioscertificateprofilebase_get.md)|[iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)|Read properties and relationships of the [iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentStatus|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentProgress|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentErrorMessage|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -70,6 +73,9 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.iosVpnConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
+  "assignmentStatus": "String",
+  "assignmentProgress": "String",
+  "assignmentErrorMessage": "String",
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -83,6 +89,7 @@ Here is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.vpnServer",
     "description": "String",
     "ipAddressOrFqdn": "String",
+    "address": "String",
     "isDefaultServer": true
   },
   "identifier": "String",

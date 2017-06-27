@@ -4,9 +4,9 @@
 
 Create a new [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementServiceConfig.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -19,7 +19,7 @@ POST /deviceManagement/importedAppleDeviceIdentities/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body

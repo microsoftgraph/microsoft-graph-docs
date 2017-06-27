@@ -1,4 +1,4 @@
-﻿# termsAndConditions resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -11,8 +11,8 @@ A termsAndConditions entity represents the metadata and contents of a given Term
 |[Create termsAndConditions](../api/intune_companyterms_termsandconditions_create.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|Create a new [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object.|
 |[Delete termsAndConditions](../api/intune_companyterms_termsandconditions_delete.md)|None|Deletes a [termsAndConditions](../resources/intune_companyterms_termsandconditions.md).|
 |[Update termsAndConditions](../api/intune_companyterms_termsandconditions_update.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|Update the properties of a [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object.|
-|[List termsAndConditionsGroupAssignments](../api/intune_companyterms_termsandconditions_list_termsandconditionsgroupassignment.md)|[termsAndConditionsGroupAssignment](../resources/intune_companyterms_termsandconditionsgroupassignment.md) collection|Get the termsAndConditionsGroupAssignments from the groupAssignments navigation property.|
-|[List termsAndConditionsAcceptanceStatuses](../api/intune_companyterms_termsandconditions_list_termsandconditionsacceptancestatus.md)|[termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) collection|Get the termsAndConditionsAcceptanceStatuses from the acceptanceStatuses navigation property.|
+|[List termsAndConditionsGroupAssignments](../api/intune_companyterms_termsandconditionsgroupassignment_list.md)|[termsAndConditionsGroupAssignment](../resources/intune_companyterms_termsandconditionsgroupassignment.md) collection|List properties and relationships of the [termsAndConditionsGroupAssignment](../resources/intune_companyterms_termsandconditionsgroupassignment.md) objects.|
+|[List termsAndConditionsAcceptanceStatuses](../api/intune_companyterms_termsandconditionsacceptancestatus_list.md)|[termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) collection|List properties and relationships of the [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) objects.|
 
 ## Properties
 |Property|Type|Description|

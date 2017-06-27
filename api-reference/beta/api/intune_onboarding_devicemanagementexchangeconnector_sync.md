@@ -4,22 +4,22 @@
 
 Not yet documented
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementServiceConfig.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/sync
+POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}sync
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -39,7 +39,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/sync
+POST https://graph.microsoft.com/beta/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}sync
 
 Content-type: application/json
 Content-length: 31

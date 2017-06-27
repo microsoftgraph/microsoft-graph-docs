@@ -4,7 +4,7 @@
 
 Deletes a [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ## HTTP Request
@@ -20,7 +20,7 @@ DELETE /deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body

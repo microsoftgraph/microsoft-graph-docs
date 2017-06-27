@@ -4,7 +4,7 @@
 
 Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ## HTTP Request
@@ -13,13 +13,15 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/deploymentSummary/
+PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary/
+PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/deploymentSummary/
+PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/deploymentSummary/
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -44,7 +46,7 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/deploymentSummary/
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary/
 Content-type: application/json
 Content-length: 516
 

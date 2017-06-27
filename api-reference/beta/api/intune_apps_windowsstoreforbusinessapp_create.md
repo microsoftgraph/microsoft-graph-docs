@@ -4,7 +4,7 @@
 
 Create a new [windowsStoreForBusinessApp](../resources/intune_apps_windowsstoreforbusinessapp.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ## HTTP Request
@@ -20,7 +20,7 @@ POST /deviceAppManagement/mobileApps/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -47,6 +47,7 @@ The following table shows the properties that are required when you create a win
 |totalLicenseCount|Int32|The total number of Windows Store for Business licenses.|
 |productKey|String|The app product key|
 |licenseType|String|The app license type Possible values are: `offline`, `online`.|
+|packageIdentityName|String|The app package identifier|
 
 
 
@@ -59,7 +60,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/mobileApps/
 Content-type: application/json
-Content-length: 760
+Content-length: 817
 
 {
   "@odata.type": "#microsoft.graph.windowsStoreForBusinessApp",
@@ -82,7 +83,8 @@ Content-length: 760
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
   "productKey": "Product Key value",
-  "licenseType": "online"
+  "licenseType": "online",
+  "packageIdentityName": "Package Identity Name value"
 }
 ```
 
@@ -91,7 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 868
+Content-Length: 925
 
 {
   "@odata.type": "#microsoft.graph.windowsStoreForBusinessApp",
@@ -116,7 +118,8 @@ Content-Length: 868
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
   "productKey": "Product Key value",
-  "licenseType": "online"
+  "licenseType": "online",
+  "packageIdentityName": "Package Identity Name value"
 }
 ```
 

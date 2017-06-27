@@ -4,7 +4,7 @@
 
 Read properties and relationships of the [deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
@@ -17,11 +17,11 @@ GET /managedDevices/{managedDevicesId}/deviceCompliancePolicyStates/{deviceCompl
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1112
+Content-Length: 900
 
 {
   "value": {
@@ -52,14 +52,10 @@ Content-Length: 1112
       {
         "@odata.type": "microsoft.graph.deviceCompliancePolicySettingState",
         "setting": "Setting value",
-        "settingName": "Setting Name value",
         "instanceDisplayName": "Instance Display Name value",
         "state": "notApplicable",
         "errorCode": 9,
         "errorDescription": "Error Description value",
-        "userId": "User Id value",
-        "userName": "User Name value",
-        "userEmail": "User Email value",
         "userPrincipalName": "User Principal Name value",
         "sources": [
           {
@@ -67,8 +63,7 @@ Content-Length: 1112
             "id": "Id value",
             "displayName": "Display Name value"
           }
-        ],
-        "currentValue": "Current Value value"
+        ]
       }
     ],
     "displayName": "Display Name value",

@@ -1,4 +1,4 @@
-﻿# iosEnterpriseWiFiConfiguration resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -14,20 +14,23 @@ Inherits from [iosWiFiConfiguration](../resources/intune_deviceconfig_ioswificon
 |[Create iosEnterpriseWiFiConfiguration](../api/intune_deviceconfig_iosenterprisewificonfiguration_create.md)|[iosEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_iosenterprisewificonfiguration.md)|Create a new [iosEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_iosenterprisewificonfiguration.md) object.|
 |[Delete iosEnterpriseWiFiConfiguration](../api/intune_deviceconfig_iosenterprisewificonfiguration_delete.md)|None|Deletes a [iosEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_iosenterprisewificonfiguration.md).|
 |[Update iosEnterpriseWiFiConfiguration](../api/intune_deviceconfig_iosenterprisewificonfiguration_update.md)|[iosEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_iosenterprisewificonfiguration.md)|Update the properties of a [iosEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_iosenterprisewificonfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/intune_deviceconfig_iosenterprisewificonfiguration_list_deviceconfigurationgroupassignment.md)|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuses](../api/intune_deviceconfig_iosenterprisewificonfiguration_list_deviceconfigurationdevicestatus.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Get the deviceConfigurationDeviceStatuses from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_iosenterprisewificonfiguration_list_deviceconfigurationuserstatus.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Get the deviceConfigurationUserStatuses from the userStatuses navigation property.|
-|[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_iosenterprisewificonfiguration_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
-|[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_iosenterprisewificonfiguration_get_deviceconfigurationuseroverview.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Get the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) from the userStatusOverview navigation property.|
-|[List settingStateDeviceSummaries](../api/intune_deviceconfig_iosenterprisewificonfiguration_list_settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Get the settingStateDeviceSummaries from the deviceSettingStateSummaries navigation property.|
-|[List iosTrustedRootCertificates](../api/intune_deviceconfig_iosenterprisewificonfiguration_list_iostrustedrootcertificate.md)|[iosTrustedRootCertificate](../resources/intune_deviceconfig_iostrustedrootcertificate.md) collection|Get the iosTrustedRootCertificates from the rootCertificatesForServerValidation navigation property.|
-|[Get iosCertificateProfileBase](../api/intune_deviceconfig_iosenterprisewificonfiguration_get_ioscertificateprofilebase.md)|[iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)|Get the [iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md) from the identityCertificateForClientAuthentication navigation property.|
+|[List deviceConfigurationGroupAssignments](../api/intune_deviceconfig_deviceconfigurationgroupassignment_list.md)|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|List properties and relationships of the [deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) objects.|
+|[List deviceConfigurationDeviceStatuses](../api/intune_deviceconfig_deviceconfigurationdevicestatus_list.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|List properties and relationships of the [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) objects.|
+|[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_deviceconfigurationuserstatus_list.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|List properties and relationships of the [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) objects.|
+|[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_deviceconfigurationdeviceoverview_get.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Read properties and relationships of the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) object.|
+|[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_deviceconfigurationuseroverview_get.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Read properties and relationships of the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) object.|
+|[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
+|[List iosTrustedRootCertificates](../api/intune_deviceconfig_iostrustedrootcertificate_list.md)|[iosTrustedRootCertificate](../resources/intune_deviceconfig_iostrustedrootcertificate.md) collection|List properties and relationships of the [iosTrustedRootCertificate](../resources/intune_deviceconfig_iostrustedrootcertificate.md) objects.|
+|[Get iosCertificateProfileBase](../api/intune_deviceconfig_ioscertificateprofilebase_get.md)|[iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)|Read properties and relationships of the [iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentStatus|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentProgress|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentErrorMessage|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -41,12 +44,13 @@ Inherits from [iosWiFiConfiguration](../resources/intune_deviceconfig_ioswificon
 |proxyManualAddress|String|IP Address or DNS hostname of the proxy server when manual configuration is selected. Inherited from [iosWiFiConfiguration](../resources/intune_deviceconfig_ioswificonfiguration.md)|
 |proxyManualPort|Int32|Port of the proxy server when manual configuration is selected. Inherited from [iosWiFiConfiguration](../resources/intune_deviceconfig_ioswificonfiguration.md)|
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file. Inherited from [iosWiFiConfiguration](../resources/intune_deviceconfig_ioswificonfiguration.md)|
+|preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network. Inherited from [iosWiFiConfiguration](../resources/intune_deviceconfig_ioswificonfiguration.md)|
 |eapType|String|Extensible Authentication Protocol (EAP). Indicates the type of EAP protocol set on the the Wi-Fi endpoint (router). Possible values are: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap`, `eapFast`.|
 |eapFastConfiguration|String|EAP-FAST Configuration Option when EAP-FAST is the selected EAP Type. Possible values are: `noProtectedAccessCredential`, `useProtectedAccessCredential`, `useProtectedAccessCredentialAndProvision`, `useProtectedAccessCredentialAndProvisionAnonymously`.|
 |trustedServerCertificateNames|String collection|Trusted server certificate names when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP. This is the common name used in the certificates issued by your trusted certificate authority (CA). If you provide this information, you can bypass the dynamic trust dialog that is displayed on end users' devices when they connect to this Wi-Fi network.|
 |authenticationMethod|String|Authentication Method when EAP Type is configured to PEAP or EAP-TTLS. Possible values are: `certificate`, `usernameAndPassword`.|
-|nonEapAuthenticationMethodForEapTtls|String|Non-EAP Method for Authentication when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
-|enableOuterIdentityPrivacy|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP - TTLS, EAP - FAST or PEAP. This property masks usernames with the text you enter. For example, if you use 'anonymous', each user that authenticates with this Wi-Fi connection using their real username is displayed as 'anonymous'.|
+|innerAuthenticationProtocolForEapTtls|String|Non-EAP Method for Authentication when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
+|outerIdentityPrivacyTemporaryValue|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP - TTLS, EAP - FAST or PEAP. This property masks usernames with the text you enter. For example, if you use 'anonymous', each user that authenticates with this Wi-Fi connection using their real username is displayed as 'anonymous'.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -73,6 +77,9 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.iosEnterpriseWiFiConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
+  "assignmentStatus": "String",
+  "assignmentProgress": "String",
+  "assignmentErrorMessage": "String",
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -86,14 +93,15 @@ Here is a JSON representation of the resource.
   "proxyManualAddress": "String",
   "proxyManualPort": 1024,
   "proxyAutomaticConfigurationUrl": "String",
+  "preSharedKey": "String",
   "eapType": "String",
   "eapFastConfiguration": "String",
   "trustedServerCertificateNames": [
     "String"
   ],
   "authenticationMethod": "String",
-  "nonEapAuthenticationMethodForEapTtls": "String",
-  "enableOuterIdentityPrivacy": "String"
+  "innerAuthenticationProtocolForEapTtls": "String",
+  "outerIdentityPrivacyTemporaryValue": "String"
 }
 ```
 

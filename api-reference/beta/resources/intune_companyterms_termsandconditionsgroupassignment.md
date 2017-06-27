@@ -1,4 +1,4 @@
-﻿# termsAndConditionsGroupAssignment resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -11,7 +11,7 @@ A termsAndConditionsGroupAssignment entity represents the assignment of a given 
 |[Create termsAndConditionsGroupAssignment](../api/intune_companyterms_termsandconditionsgroupassignment_create.md)|[termsAndConditionsGroupAssignment](../resources/intune_companyterms_termsandconditionsgroupassignment.md)|Create a new [termsAndConditionsGroupAssignment](../resources/intune_companyterms_termsandconditionsgroupassignment.md) object.|
 |[Delete termsAndConditionsGroupAssignment](../api/intune_companyterms_termsandconditionsgroupassignment_delete.md)|None|Deletes a [termsAndConditionsGroupAssignment](../resources/intune_companyterms_termsandconditionsgroupassignment.md).|
 |[Update termsAndConditionsGroupAssignment](../api/intune_companyterms_termsandconditionsgroupassignment_update.md)|[termsAndConditionsGroupAssignment](../resources/intune_companyterms_termsandconditionsgroupassignment.md)|Update the properties of a [termsAndConditionsGroupAssignment](../resources/intune_companyterms_termsandconditionsgroupassignment.md) object.|
-|[Get termsAndConditions](../api/intune_companyterms_termsandconditionsgroupassignment_get_termsandconditions.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|Get the [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) from the termsAndConditions navigation property.|
+|[Get termsAndConditions](../api/intune_companyterms_termsandconditions_get.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|Read properties and relationships of the [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object.|
 
 ## Properties
 |Property|Type|Description|

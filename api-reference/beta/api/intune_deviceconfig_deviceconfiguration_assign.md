@@ -4,7 +4,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
@@ -13,15 +13,15 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assign
-POST /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration//assign
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration//assign
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}assign
+POST /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/assign
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/assign
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -41,7 +41,7 @@ If successful, this action returns a `200 OK` response code and a [deviceConfigu
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assign
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}assign
 
 Content-type: application/json
 Content-length: 274
@@ -63,14 +63,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 134
+Content-Length: 161
 
-[
-  {
-    "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
-    "id": "d59b6342-6342-d59b-4263-9bd542639bd5"
-  }
-]
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
+      "id": "d59b6342-6342-d59b-4263-9bd542639bd5"
+    }
+  ]
+}
 ```
 
 

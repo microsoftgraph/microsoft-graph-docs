@@ -1,4 +1,4 @@
-﻿# webApp resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -14,11 +14,11 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |[Create webApp](../api/intune_apps_webapp_create.md)|[webApp](../resources/intune_apps_webapp.md)|Create a new [webApp](../resources/intune_apps_webapp.md) object.|
 |[Delete webApp](../api/intune_apps_webapp_delete.md)|None|Deletes a [webApp](../resources/intune_apps_webapp.md).|
 |[Update webApp](../api/intune_apps_webapp_update.md)|[webApp](../resources/intune_apps_webapp.md)|Update the properties of a [webApp](../resources/intune_apps_webapp.md) object.|
-|[List mobileAppCategories](../api/intune_apps_webapp_list_mobileappcategory.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|Get the mobileAppCategories from the categories navigation property.|
-|[List mobileAppGroupAssignments](../api/intune_apps_webapp_list_mobileappgroupassignment.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|Get the mobileAppGroupAssignments from the groupAssignments navigation property.|
-|[Get mobileAppInstallSummary](../api/intune_apps_webapp_get_mobileappinstallsummary.md)|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Get the [mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md) from the installSummary navigation property.|
-|[List mobileAppInstallStatuses](../api/intune_apps_webapp_list_mobileappinstallstatus.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|Get the mobileAppInstallStatuses from the deviceStatuses navigation property.|
-|[List userAppInstallStatuses](../api/intune_apps_webapp_list_userappinstallstatus.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|Get the userAppInstallStatuses from the userStatuses navigation property.|
+|[List mobileAppCategories](../api/intune_apps_mobileappcategory_list.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|List properties and relationships of the [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) objects.|
+|[List mobileAppGroupAssignments](../api/intune_apps_mobileappgroupassignment_list.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|List properties and relationships of the [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) objects.|
+|[Get mobileAppInstallSummary](../api/intune_apps_mobileappinstallsummary_get.md)|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Read properties and relationships of the [mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md) object.|
+|[List mobileAppInstallStatuses](../api/intune_apps_mobileappinstallstatus_list.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|List properties and relationships of the [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) objects.|
+|[List userAppInstallStatuses](../api/intune_apps_userappinstallstatus_list.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|List properties and relationships of the [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) objects.|
 
 ## Properties
 |Property|Type|Description|

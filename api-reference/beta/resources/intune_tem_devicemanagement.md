@@ -8,8 +8,8 @@ Singleton entity that acts as a container for all device management functionalit
 |---|---|---|
 |[Get deviceManagement](../api/intune_tem_devicemanagement_get.md)|[deviceManagement](../resources/intune_tem_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_tem_devicemanagement.md) object.|
 |[Update deviceManagement](../api/intune_tem_devicemanagement_update.md)|[deviceManagement](../resources/intune_tem_devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune_tem_devicemanagement.md) object.|
-|[List telecomExpenseManagementPartners](../api/intune_tem_devicemanagement_list_telecomexpensemanagementpartner.md)|[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) collection|Get the telecomExpenseManagementPartners from the telecomExpenseManagementPartners navigation property.|
-|[Create telecomExpenseManagementPartner](../api/intune_tem_devicemanagement_create_telecomexpensemanagementpartner.md)|[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md)|Create a new [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) by posting to the telecomExpenseManagementPartners collection.|
+|[List telecomExpenseManagementPartners](../api/intune_tem_telecomexpensemanagementpartner_list.md)|[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) collection|List properties and relationships of the [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) objects.|
+|[Create telecomExpenseManagementPartner](../api/intune_tem_telecomexpensemanagementpartner_create.md)|[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md)|Create a new [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) object.|
 
 ## Properties
 |Property|Type|Description|

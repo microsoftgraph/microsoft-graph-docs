@@ -1,4 +1,4 @@
-﻿# iosGeneralDeviceConfiguration resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -14,18 +14,21 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |[Create iosGeneralDeviceConfiguration](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_create.md)|[iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md)|Create a new [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md) object.|
 |[Delete iosGeneralDeviceConfiguration](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_delete.md)|None|Deletes a [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md).|
 |[Update iosGeneralDeviceConfiguration](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_update.md)|[iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md)|Update the properties of a [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_list_deviceconfigurationgroupassignment.md)|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuses](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_list_deviceconfigurationdevicestatus.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Get the deviceConfigurationDeviceStatuses from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_list_deviceconfigurationuserstatus.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Get the deviceConfigurationUserStatuses from the userStatuses navigation property.|
-|[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
-|[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_get_deviceconfigurationuseroverview.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Get the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) from the userStatusOverview navigation property.|
-|[List settingStateDeviceSummaries](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_list_settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Get the settingStateDeviceSummaries from the deviceSettingStateSummaries navigation property.|
+|[List deviceConfigurationGroupAssignments](../api/intune_deviceconfig_deviceconfigurationgroupassignment_list.md)|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|List properties and relationships of the [deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) objects.|
+|[List deviceConfigurationDeviceStatuses](../api/intune_deviceconfig_deviceconfigurationdevicestatus_list.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|List properties and relationships of the [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) objects.|
+|[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_deviceconfigurationuserstatus_list.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|List properties and relationships of the [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) objects.|
+|[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_deviceconfigurationdeviceoverview_get.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Read properties and relationships of the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) object.|
+|[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_deviceconfigurationuseroverview_get.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Read properties and relationships of the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) object.|
+|[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentStatus|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentProgress|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentErrorMessage|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -55,6 +58,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |cellularBlockVoiceRoaming|Boolean|Indicates whether or not to block voice roaming.|
 |certificatesBlockUntrustedTlsCertificates|Boolean|Indicates whether or not to block untrusted TLS certificates.|
 |classroomAppBlockRemoteScreenObservation|Boolean|Indicates whether or not to allow remote screen observation by Classroom app when the device is in supervised mode (iOS 9.3 and later).|
+|classroomAppForceUnpromptedScreenObservation|Boolean|Indicates whether or not to automatically give permission to the teacher of a managed course on the Classroom app to view a student's screen without prompting when the device is in supervised mode.|
 |compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements.|
 |compliantAppListType|String|List that is in the AppComplianceList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |configurationProfileBlockChanges|Boolean|Indicates whether or not to block the user from installing configuration profiles and certificates interactively when the device is in supervised mode.|
@@ -72,7 +76,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |faceTimeBlocked|Boolean|Indicates whether or not to block the user from using FaceTime.|
 |findMyFriendsBlocked|Boolean|Indicates whether or not to block Find My Friends when the device is in supervised mode.|
 |gamingBlockGameCenterFriends|Boolean|Indicates whether or not to block the user from having friends in Game Center.|
-|gamingBlockMultiplayer|Boolean|Indicates whether or not to block  the user from using multiplayer gaming.|
+|gamingBlockMultiplayer|Boolean|Indicates whether or not to block the user from using multiplayer gaming.|
 |gameCenterBlocked|Boolean|Indicates whether or not to block the user from using Game Center when the device is in supervised mode.|
 |hostPairingBlocked|Boolean|indicates whether or not to allow host pairing to control the devices an iOS device can pair with when the iOS device is in supervised mode.|
 |iBooksStoreBlocked|Boolean|Indicates whether or not to block the user from using the iBooks Store when the device is in supervised mode.|
@@ -89,6 +93,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |iTunesBlockMusicService|Boolean|Indicates whether or not to block Music service and revert Music app to classic mode when the device is in supervised mode (iOS 9.3 and later and macOS 10.12 and later).|
 |iTunesBlockRadio|Boolean|Indicates whether or not to block the user from using iTunes Radio when the device is in supervised mode (iOS 9.3 and later).|
 |keyboardBlockAutoCorrect|Boolean|Indicates whether or not to block keyboard auto-correction when the device is in supervised mode (iOS 8.1.3 and later).|
+|keyboardBlockDictation|Boolean|Indicates whether or not to block the user from using dictation input when the device is in supervised mode.|
 |keyboardBlockPredictive|Boolean|Indicates whether or not to block predictive keyboards when device is in supervised mode (iOS 8.1.3 and later).|
 |keyboardBlockShortcuts|Boolean|Indicates whether or not to block keyboard shortcuts when the device is in supervised mode (iOS 9.0 and later).|
 |keyboardBlockSpellCheck|Boolean|Indicates whether or not to block keyboard spell-checking when the device is in supervised mode (iOS 8.1.3 and later).|
@@ -123,6 +128,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |mediaContentRatingNewZealand|[mediaContentRatingNewZealand](../resources/intune_deviceconfig_mediacontentratingnewzealand.md)|Media content rating settings for New Zealand|
 |mediaContentRatingUnitedKingdom|[mediaContentRatingUnitedKingdom](../resources/intune_deviceconfig_mediacontentratingunitedkingdom.md)|Media content rating settings for United Kingdom|
 |mediaContentRatingUnitedStates|[mediaContentRatingUnitedStates](../resources/intune_deviceconfig_mediacontentratingunitedstates.md)|Media content rating settings for United States|
+|networkUsageRules|[iosNetworkUsageRule](../resources/intune_deviceconfig_iosnetworkusagerule.md) collection|List of managed apps and the network rules that applies to them. This collection can contain a maximum of 1000 elements.|
 |mediaContentRatingApps|String|Media content rating settings for Apps Possible values are: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12`, `agesAbove17`.|
 |messagesBlocked|Boolean|Indicates whether or not to block the user from using the Messages app on the supervised device.|
 |notificationsBlockSettingsModification|Boolean|Indicates whether or not to allow notifications settings modification (iOS 9.3 and later).|
@@ -156,6 +162,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |spotlightBlockInternetResults|Boolean|Indicates whether or not to block Spotlight search from returning internet results on supervised device.|
 |voiceDialingBlocked|Boolean|Indicates whether or not to block voice dialing.|
 |wallpaperBlockModification|Boolean|Indicates whether or not to allow wallpaper modification on supervised device (iOS 9.0 and later) .|
+|wiFiConnectOnlyToConfiguredNetworks|Boolean|Indicates whether or not to force the device to use only Wi-Fi networks from configuration profiles when the device is in supervised mode.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -180,6 +187,9 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
+  "assignmentStatus": "String",
+  "assignmentProgress": "String",
+  "assignmentErrorMessage": "String",
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -225,6 +235,7 @@ Here is a JSON representation of the resource.
   "cellularBlockVoiceRoaming": true,
   "certificatesBlockUntrustedTlsCertificates": true,
   "classroomAppBlockRemoteScreenObservation": true,
+  "classroomAppForceUnpromptedScreenObservation": true,
   "compliantAppsList": [
     {
       "@odata.type": "microsoft.graph.appListItem",
@@ -269,6 +280,7 @@ Here is a JSON representation of the resource.
   "iTunesBlockMusicService": true,
   "iTunesBlockRadio": true,
   "keyboardBlockAutoCorrect": true,
+  "keyboardBlockDictation": true,
   "keyboardBlockPredictive": true,
   "keyboardBlockShortcuts": true,
   "keyboardBlockSpellCheck": true,
@@ -339,6 +351,22 @@ Here is a JSON representation of the resource.
     "movieRating": "String",
     "tvRating": "String"
   },
+  "networkUsageRules": [
+    {
+      "@odata.type": "microsoft.graph.iosNetworkUsageRule",
+      "managedApps": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "String",
+          "publisher": "String",
+          "appStoreUrl": "String",
+          "appId": "String"
+        }
+      ],
+      "cellularDataBlockWhenRoaming": true,
+      "cellularDataBlocked": true
+    }
+  ],
   "mediaContentRatingApps": "String",
   "messagesBlocked": true,
   "notificationsBlockSettingsModification": true,
@@ -375,7 +403,8 @@ Here is a JSON representation of the resource.
   "siriRequireProfanityFilter": true,
   "spotlightBlockInternetResults": true,
   "voiceDialingBlocked": true,
-  "wallpaperBlockModification": true
+  "wallpaperBlockModification": true,
+  "wiFiConnectOnlyToConfiguredNetworks": true
 }
 ```
 

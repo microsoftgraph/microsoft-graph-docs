@@ -4,7 +4,7 @@
 
 Create a new [iosWiFiConfiguration](../resources/intune_deviceconfig_ioswificonfiguration.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
@@ -19,7 +19,7 @@ POST /deviceManagement/deviceConfigurations/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -30,6 +30,9 @@ The following table shows the properties that are required when you create a ios
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentStatus|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentProgress|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentErrorMessage|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -43,6 +46,7 @@ The following table shows the properties that are required when you create a ios
 |proxyManualAddress|String|IP Address or DNS hostname of the proxy server when manual configuration is selected.|
 |proxyManualPort|Int32|Port of the proxy server when manual configuration is selected.|
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
+|preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 
 
 
@@ -55,11 +59,14 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 604
+Content-length: 814
 
 {
   "@odata.type": "#microsoft.graph.iosWiFiConfiguration",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "assignmentStatus": "Assignment Status value",
+  "assignmentProgress": "Assignment Progress value",
+  "assignmentErrorMessage": "Assignment Error Message value",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -71,7 +78,8 @@ Content-length: 604
   "proxySettings": "manual",
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
-  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "preSharedKey": "Pre Shared Key value"
 }
 ```
 
@@ -80,12 +88,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 712
+Content-Length: 922
 
 {
   "@odata.type": "#microsoft.graph.iosWiFiConfiguration",
   "id": "516f9ef9-9ef9-516f-f99e-6f51f99e6f51",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "assignmentStatus": "Assignment Status value",
+  "assignmentProgress": "Assignment Progress value",
+  "assignmentErrorMessage": "Assignment Error Message value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -98,7 +109,8 @@ Content-Length: 712
   "proxySettings": "manual",
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
-  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "preSharedKey": "Pre Shared Key value"
 }
 ```
 

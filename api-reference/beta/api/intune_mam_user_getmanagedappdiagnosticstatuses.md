@@ -2,9 +2,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Not yet documented
+Gets diagnostics validation status for a given user.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ## HTTP Request
@@ -13,13 +13,13 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /users/{usersId}/getManagedAppDiagnosticStatuses
+GET /users/{usersId}getManagedAppDiagnosticStatuses
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -32,7 +32,7 @@ If successful, this function returns a `200 OK` response code and a [managedAppD
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/users/{usersId}/getManagedAppDiagnosticStatuses
+GET https://graph.microsoft.com/beta/users/{usersId}getManagedAppDiagnosticStatuses
 ```
 
 ### Response
@@ -40,16 +40,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 218
+Content-Length: 249
 
-[
-  {
-    "@odata.type": "microsoft.graph.managedAppDiagnosticStatus",
-    "validationName": "Validation Name value",
-    "state": "State value",
-    "mitigationInstruction": "Mitigation Instruction value"
-  }
-]
+{
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.managedAppDiagnosticStatus",
+      "validationName": "Validation Name value",
+      "state": "State value",
+      "mitigationInstruction": "Mitigation Instruction value"
+    }
+  ]
+}
 ```
 
 

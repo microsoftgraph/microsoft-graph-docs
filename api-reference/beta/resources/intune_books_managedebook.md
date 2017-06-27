@@ -1,4 +1,4 @@
-﻿# managedEBook resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -9,10 +9,10 @@ An abstract class containing the base properties for Managed eBook.
 |[List managedEBooks](../api/intune_books_managedebook_list.md)|[managedEBook](../resources/intune_books_managedebook.md) collection|List properties and relationships of the [managedEBook](../resources/intune_books_managedebook.md) objects.|
 |[Get managedEBook](../api/intune_books_managedebook_get.md)|[managedEBook](../resources/intune_books_managedebook.md)|Read properties and relationships of the [managedEBook](../resources/intune_books_managedebook.md) object.|
 |[assign action](../api/intune_books_managedebook_assign.md)|None|Not yet documented|
-|[List eBookGroupAssignments](../api/intune_books_managedebook_list_ebookgroupassignment.md)|[eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) collection|Get the eBookGroupAssignments from the groupAssignments navigation property.|
-|[Get eBookInstallSummary](../api/intune_books_managedebook_get_ebookinstallsummary.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Get the [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) from the installSummary navigation property.|
-|[List deviceInstallStates](../api/intune_books_managedebook_list_deviceinstallstate.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|Get the deviceInstallStates from the deviceStates navigation property.|
-|[List userInstallStateSummaries](../api/intune_books_managedebook_list_userinstallstatesummary.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection|Get the userInstallStateSummaries from the userStateSummary navigation property.|
+|[List eBookGroupAssignments](../api/intune_books_ebookgroupassignment_list.md)|[eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) collection|List properties and relationships of the [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) objects.|
+|[Get eBookInstallSummary](../api/intune_books_ebookinstallsummary_get.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Read properties and relationships of the [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) object.|
+|[List deviceInstallStates](../api/intune_books_deviceinstallstate_list.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|List properties and relationships of the [deviceInstallState](../resources/intune_books_deviceinstallstate.md) objects.|
+|[List userInstallStateSummaries](../api/intune_books_userinstallstatesummary_list.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection|List properties and relationships of the [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) objects.|
 
 ## Properties
 |Property|Type|Description|

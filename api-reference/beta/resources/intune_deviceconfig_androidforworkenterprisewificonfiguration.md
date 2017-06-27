@@ -1,4 +1,4 @@
-﻿# androidForWorkEnterpriseWiFiConfiguration resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -14,20 +14,23 @@ Inherits from [androidForWorkWiFiConfiguration](../resources/intune_deviceconfig
 |[Create androidForWorkEnterpriseWiFiConfiguration](../api/intune_deviceconfig_androidforworkenterprisewificonfiguration_create.md)|[androidForWorkEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_androidforworkenterprisewificonfiguration.md)|Create a new [androidForWorkEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_androidforworkenterprisewificonfiguration.md) object.|
 |[Delete androidForWorkEnterpriseWiFiConfiguration](../api/intune_deviceconfig_androidforworkenterprisewificonfiguration_delete.md)|None|Deletes a [androidForWorkEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_androidforworkenterprisewificonfiguration.md).|
 |[Update androidForWorkEnterpriseWiFiConfiguration](../api/intune_deviceconfig_androidforworkenterprisewificonfiguration_update.md)|[androidForWorkEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_androidforworkenterprisewificonfiguration.md)|Update the properties of a [androidForWorkEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_androidforworkenterprisewificonfiguration.md) object.|
-|[List deviceConfigurationGroupAssignments](../api/intune_deviceconfig_androidforworkenterprisewificonfiguration_list_deviceconfigurationgroupassignment.md)|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
-|[List deviceConfigurationDeviceStatuses](../api/intune_deviceconfig_androidforworkenterprisewificonfiguration_list_deviceconfigurationdevicestatus.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Get the deviceConfigurationDeviceStatuses from the deviceStatuses navigation property.|
-|[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_androidforworkenterprisewificonfiguration_list_deviceconfigurationuserstatus.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Get the deviceConfigurationUserStatuses from the userStatuses navigation property.|
-|[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_androidforworkenterprisewificonfiguration_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
-|[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_androidforworkenterprisewificonfiguration_get_deviceconfigurationuseroverview.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Get the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) from the userStatusOverview navigation property.|
-|[List settingStateDeviceSummaries](../api/intune_deviceconfig_androidforworkenterprisewificonfiguration_list_settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Get the settingStateDeviceSummaries from the deviceSettingStateSummaries navigation property.|
-|[Get androidForWorkTrustedRootCertificate](../api/intune_deviceconfig_androidforworkenterprisewificonfiguration_get_androidforworktrustedrootcertificate.md)|[androidForWorkTrustedRootCertificate](../resources/intune_deviceconfig_androidforworktrustedrootcertificate.md)|Get the [androidForWorkTrustedRootCertificate](../resources/intune_deviceconfig_androidforworktrustedrootcertificate.md) from the rootCertificateForServerValidation navigation property.|
-|[Get androidForWorkCertificateProfileBase](../api/intune_deviceconfig_androidforworkenterprisewificonfiguration_get_androidforworkcertificateprofilebase.md)|[androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md)|Get the [androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md) from the identityCertificateForClientAuthentication navigation property.|
+|[List deviceConfigurationGroupAssignments](../api/intune_deviceconfig_deviceconfigurationgroupassignment_list.md)|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|List properties and relationships of the [deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) objects.|
+|[List deviceConfigurationDeviceStatuses](../api/intune_deviceconfig_deviceconfigurationdevicestatus_list.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|List properties and relationships of the [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) objects.|
+|[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_deviceconfigurationuserstatus_list.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|List properties and relationships of the [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) objects.|
+|[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_deviceconfigurationdeviceoverview_get.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Read properties and relationships of the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) object.|
+|[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_deviceconfigurationuseroverview_get.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Read properties and relationships of the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) object.|
+|[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
+|[Get androidForWorkTrustedRootCertificate](../api/intune_deviceconfig_androidforworktrustedrootcertificate_get.md)|[androidForWorkTrustedRootCertificate](../resources/intune_deviceconfig_androidforworktrustedrootcertificate.md)|Read properties and relationships of the [androidForWorkTrustedRootCertificate](../resources/intune_deviceconfig_androidforworktrustedrootcertificate.md) object.|
+|[Get androidForWorkCertificateProfileBase](../api/intune_deviceconfig_androidforworkcertificateprofilebase_get.md)|[androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md)|Read properties and relationships of the [androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentStatus|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentProgress|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentErrorMessage|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -68,6 +71,9 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.androidForWorkEnterpriseWiFiConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
+  "assignmentStatus": "String",
+  "assignmentProgress": "String",
+  "assignmentErrorMessage": "String",
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",

@@ -4,7 +4,7 @@
 
 List properties and relationships of the [windowsStoreForBusinessApp](../resources/intune_apps_windowsstoreforbusinessapp.md) objects.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ## HTTP Request
@@ -20,7 +20,7 @@ GET /deviceAppManagement/mobileApps/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -41,7 +41,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 993
+Content-Length: 1054
 
 {
   "value": [
@@ -68,7 +68,8 @@ Content-Length: 993
       "usedLicenseCount": 0,
       "totalLicenseCount": 1,
       "productKey": "Product Key value",
-      "licenseType": "online"
+      "licenseType": "online",
+      "packageIdentityName": "Package Identity Name value"
     }
   ]
 }

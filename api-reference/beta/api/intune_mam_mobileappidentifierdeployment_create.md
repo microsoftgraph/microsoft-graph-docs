@@ -4,7 +4,7 @@
 
 Create a new [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ## HTTP Request
@@ -13,13 +13,16 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/mobileAppIdentifierDeployments/
+POST /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/mobileAppIdentifierDeployments/
+POST /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/mobileAppIdentifierDeployments/
+POST /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/mobileAppIdentifierDeployments/
+POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/mobileAppIdentifierDeployments/
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -41,7 +44,7 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/mobileAppIdentifierDeployments/
+POST https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/mobileAppIdentifierDeployments/
 Content-type: application/json
 Content-length: 194
 

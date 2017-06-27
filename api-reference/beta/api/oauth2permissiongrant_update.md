@@ -1,8 +1,11 @@
-# Update oAuth2Permissiongrant
+# Update oAuth2PermissionGrant
 
-Update the properties of oAuth2Permissiongrant object.
+Update the properties of oAuth2PermissionGrant object.
+
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+
+One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -20,19 +23,14 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|clientId|String||
-|consentType|String||
-|expiryTime|DateTimeOffset||
-|principalId|String||
-|resourceId|String||
-|scope|String||
-|startTime|DateTimeOffset||
+|scope|String| Specifies the value of the scope claim that the resource application should expect in the OAuth 2.0 access token. |
 
 ## Response
-If successful, this method returns a `200 OK` response code and updated [oAuth2Permissiongrant](../resources/oAuth2Permissiongrant.md) object in the response body.
+If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "update_oAuth2Permissiongrant"
@@ -40,36 +38,16 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/oAuth2Permissiongrants/{id}
 Content-type: application/json
-Content-length: 180
+Content-length: 30
 
 {
-  "clientId": "clientId-value",
-  "consentType": "consentType-value",
-  "expiryTime": "2016-10-19T10:37:00Z",
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value"
+  "scope": "scope-value"
 }
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
-} -->
+ 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 200
-
-{
-  "clientId": "clientId-value",
-  "consentType": "consentType-value",
-  "expiryTime": "2016-10-19T10:37:00Z",
-  "id": "id-value",
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

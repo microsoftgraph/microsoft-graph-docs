@@ -14,8 +14,8 @@ The organization resource represents an instance of global settings and resource
 |[uploadDepToken action](../api/intune_onboarding_organization_uploaddeptoken.md)|None|Not yet documented|
 |[syncWithAppleDeviceEnrollmentProgram action](../api/intune_onboarding_organization_syncwithappledeviceenrollmentprogram.md)|None|Not yet documented|
 |[toggleOnPremisesCertificateConnector action](../api/intune_onboarding_organization_toggleonpremisescertificateconnector.md)|Int32|Not yet documented|
-|[List depOnboardingSettings](../api/intune_onboarding_organization_list_deponboardingsetting.md)|[depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) collection|Get the depOnboardingSettings from the depOnboardingSettings navigation property.|
-|[List appleVolumePurchaseProgramTokens](../api/intune_onboarding_organization_list_applevolumepurchaseprogramtoken.md)|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) collection|Get the appleVolumePurchaseProgramTokens from the appleVolumePurchaseProgramTokens navigation property.|
+|[List depOnboardingSettings](../api/intune_onboarding_deponboardingsetting_list.md)|[depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) collection|List properties and relationships of the [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) objects.|
+|[List appleVolumePurchaseProgramTokens](../api/intune_onboarding_applevolumepurchaseprogramtoken_list.md)|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) collection|List properties and relationships of the [appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) objects.|
 
 ## Properties
 |Property|Type|Description|

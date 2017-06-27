@@ -4,7 +4,7 @@
 
 Update the properties of a [deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
@@ -19,7 +19,7 @@ PATCH /managedDevices/{managedDevicesId}/deviceConfigurationStates/{deviceConfig
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -32,7 +32,7 @@ The following table shows the properties that are required when you create a [de
 |settingStates|[deviceConfigurationSettingState](../resources/intune_deviceconfig_deviceconfigurationsettingstate.md) collection|Not yet documented|
 |displayName|String|The name of the policy for this policyBase|
 |version|Int32|The version of the policy|
-|platformType|String|Platform type that the policy applies to Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`.|
+|platformType|String|Platform type that the policy applies to Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
 |state|String|The compliance state of the policy Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |settingCount|Int32|Count of how many setting a policy holds|
 
@@ -47,21 +47,17 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/deviceConfigurationStates/{deviceConfigurationStateId}
 Content-type: application/json
-Content-length: 915
+Content-length: 713
 
 {
   "settingStates": [
     {
       "@odata.type": "microsoft.graph.deviceConfigurationSettingState",
       "setting": "Setting value",
-      "settingName": "Setting Name value",
       "instanceDisplayName": "Instance Display Name value",
       "state": "notApplicable",
       "errorCode": 9,
       "errorDescription": "Error Description value",
-      "userId": "User Id value",
-      "userName": "User Name value",
-      "userEmail": "User Email value",
       "userPrincipalName": "User Principal Name value",
       "sources": [
         {
@@ -69,8 +65,7 @@ Content-length: 915
           "id": "Id value",
           "displayName": "Display Name value"
         }
-      ],
-      "currentValue": "Current Value value"
+      ]
     }
   ],
   "displayName": "Display Name value",
@@ -86,7 +81,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1027
+Content-Length: 825
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationState",
@@ -95,14 +90,10 @@ Content-Length: 1027
     {
       "@odata.type": "microsoft.graph.deviceConfigurationSettingState",
       "setting": "Setting value",
-      "settingName": "Setting Name value",
       "instanceDisplayName": "Instance Display Name value",
       "state": "notApplicable",
       "errorCode": 9,
       "errorDescription": "Error Description value",
-      "userId": "User Id value",
-      "userName": "User Name value",
-      "userEmail": "User Email value",
       "userPrincipalName": "User Principal Name value",
       "sources": [
         {
@@ -110,8 +101,7 @@ Content-Length: 1027
           "id": "Id value",
           "displayName": "Display Name value"
         }
-      ],
-      "currentValue": "Current Value value"
+      ]
     }
   ],
   "displayName": "Display Name value",

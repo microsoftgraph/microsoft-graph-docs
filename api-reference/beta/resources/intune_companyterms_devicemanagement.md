@@ -8,8 +8,8 @@ Singleton entity that acts as a container for all device management functionalit
 |---|---|---|
 |[Get deviceManagement](../api/intune_companyterms_devicemanagement_get.md)|[deviceManagement](../resources/intune_companyterms_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_companyterms_devicemanagement.md) object.|
 |[Update deviceManagement](../api/intune_companyterms_devicemanagement_update.md)|[deviceManagement](../resources/intune_companyterms_devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune_companyterms_devicemanagement.md) object.|
-|[List termsAndConditionses](../api/intune_companyterms_devicemanagement_list_termsandconditions.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) collection|Get the termsAndConditionses from the termsAndConditions navigation property.|
-|[Create termsAndConditions](../api/intune_companyterms_devicemanagement_create_termsandconditions.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|Create a new [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) by posting to the termsAndConditions collection.|
+|[List termsAndConditionses](../api/intune_companyterms_termsandconditions_list.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) collection|List properties and relationships of the [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) objects.|
+|[Create termsAndConditions](../api/intune_companyterms_termsandconditions_create.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|Create a new [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object.|
 
 ## Properties
 |Property|Type|Description|

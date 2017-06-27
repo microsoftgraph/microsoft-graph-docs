@@ -4,7 +4,7 @@
 
 Deletes a [detectedApp](../resources/intune_devicefe_detectedapp.md).
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
@@ -14,13 +14,13 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 DELETE /detectedapps/{detectedappsId}
-DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//detectedApps/{detectedAppId}
+DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//detectedApps/{detectedAppId}
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body

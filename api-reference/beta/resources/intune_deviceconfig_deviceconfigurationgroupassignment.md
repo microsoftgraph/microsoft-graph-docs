@@ -1,4 +1,4 @@
-﻿# deviceConfigurationGroupAssignment resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -14,7 +14,7 @@ Inherits from [deviceConfigurationAssignment](../resources/intune_deviceconfig_d
 |[Create deviceConfigurationGroupAssignment](../api/intune_deviceconfig_deviceconfigurationgroupassignment_create.md)|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md)|Create a new [deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) object.|
 |[Delete deviceConfigurationGroupAssignment](../api/intune_deviceconfig_deviceconfigurationgroupassignment_delete.md)|None|Deletes a [deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md).|
 |[Update deviceConfigurationGroupAssignment](../api/intune_deviceconfig_deviceconfigurationgroupassignment_update.md)|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md)|Update the properties of a [deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) object.|
-|[Get deviceConfiguration](../api/intune_deviceconfig_deviceconfigurationgroupassignment_get_deviceconfiguration.md)|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|Get the [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) from the deviceConfiguration navigation property.|
+|[Get deviceConfiguration](../api/intune_deviceconfig_deviceconfiguration_get.md)|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|Read properties and relationships of the [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|

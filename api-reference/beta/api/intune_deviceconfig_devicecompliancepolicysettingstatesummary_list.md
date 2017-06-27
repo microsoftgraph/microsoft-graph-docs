@@ -4,7 +4,7 @@
 
 List properties and relationships of the [deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md) objects.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
@@ -19,7 +19,7 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 637
+Content-Length: 532
 
 {
   "value": [
@@ -48,8 +48,6 @@ Content-Length: 637
       "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
       "setting": "Setting value",
       "settingName": "Setting Name value",
-      "instanceDisplayName": "Instance Display Name value",
-      "settingPlatform": "androidForWork",
       "platformType": "androidForWork",
       "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
       "unknownDeviceCount": 2,

@@ -4,7 +4,7 @@
 
 Update the properties of a [iosVpnConfiguration](../resources/intune_deviceconfig_iosvpnconfiguration.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
@@ -21,7 +21,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssign
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -32,6 +32,9 @@ The following table shows the properties that are required when you create a [io
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentStatus|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentProgress|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentErrorMessage|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -62,10 +65,13 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1593
+Content-length: 1793
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "assignmentStatus": "Assignment Status value",
+  "assignmentProgress": "Assignment Progress value",
+  "assignmentErrorMessage": "Assignment Error Message value",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -78,6 +84,7 @@ Content-length: 1593
     "@odata.type": "microsoft.graph.vpnServer",
     "description": "Description value",
     "ipAddressOrFqdn": "Ip Address Or Fqdn value",
+    "address": "Address value",
     "isDefaultServer": true
   },
   "identifier": "Identifier value",
@@ -126,12 +133,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1759
+Content-Length: 1959
 
 {
   "@odata.type": "#microsoft.graph.iosVpnConfiguration",
   "id": "bd12424c-424c-bd12-4c42-12bd4c4212bd",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "assignmentStatus": "Assignment Status value",
+  "assignmentProgress": "Assignment Progress value",
+  "assignmentErrorMessage": "Assignment Error Message value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -145,6 +155,7 @@ Content-Length: 1759
     "@odata.type": "microsoft.graph.vpnServer",
     "description": "Description value",
     "ipAddressOrFqdn": "Ip Address Or Fqdn value",
+    "address": "Address value",
     "isDefaultServer": true
   },
   "identifier": "Identifier value",

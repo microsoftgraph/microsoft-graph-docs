@@ -4,16 +4,15 @@
 
 Update the properties of a [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementServiceConfig.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /termsAndConditions/{termsAndConditionsId}
 PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}
 PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments/{termsAndConditionsGroupAssignmentId}/termsAndConditions/
 PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}/termsAndConditions/
@@ -22,7 +21,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -50,7 +49,7 @@ If successful, this method returns a `200 OK` response code and an updated [term
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/termsAndConditions/{termsAndConditionsId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}
 Content-type: application/json
 Content-length: 216
 

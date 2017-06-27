@@ -4,7 +4,7 @@
 
 Create a new [deviceManagementScript](../resources/intune_devicefe_devicemanagementscript.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
@@ -19,7 +19,7 @@ POST /deviceManagement/deviceManagementScripts/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -36,6 +36,8 @@ The following table shows the properties that are required when you create a dev
 |createdDateTime|DateTimeOffset|The date and time the device management script was created.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified.|
 |runAsAccount|String|Indicates the type of execution context the device management script runs in. Possible values are: `system`, `user`.|
+|enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked.|
+|fileName|String|Script file name.|
 
 
 
@@ -48,7 +50,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/
 Content-type: application/json
-Content-length: 354
+Content-length: 422
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScript",
@@ -59,7 +61,9 @@ Content-length: 354
   },
   "scriptContent": "Script Content value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "runAsAccount": "user"
+  "runAsAccount": "user",
+  "enforceSignatureCheck": true,
+  "fileName": "File Name value"
 }
 ```
 
@@ -68,7 +72,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 462
+Content-Length: 530
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScript",
@@ -81,7 +85,9 @@ Content-Length: 462
   "scriptContent": "Script Content value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "runAsAccount": "user"
+  "runAsAccount": "user",
+  "enforceSignatureCheck": true,
+  "fileName": "File Name value"
 }
 ```
 

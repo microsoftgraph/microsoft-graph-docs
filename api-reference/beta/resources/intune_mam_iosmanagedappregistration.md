@@ -1,4 +1,4 @@
-﻿# iosManagedAppRegistration resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -15,9 +15,9 @@ Inherits from [managedAppRegistration](../resources/intune_mam_managedappregistr
 |[Create iosManagedAppRegistration](../api/intune_mam_iosmanagedappregistration_create.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)|Create a new [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) object.|
 |[Delete iosManagedAppRegistration](../api/intune_mam_iosmanagedappregistration_delete.md)|None|Deletes a [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md).|
 |[Update iosManagedAppRegistration](../api/intune_mam_iosmanagedappregistration_update.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)|Update the properties of a [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) object.|
-|[List managedAppPolicies](../api/intune_mam_iosmanagedappregistration_list_managedapppolicy.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Get the managedAppPolicies from the appliedPolicies navigation property.|
-|[List managedAppPolicies](../api/intune_mam_iosmanagedappregistration_list_managedapppolicy.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Get the managedAppPolicies from the intendedPolicies navigation property.|
-|[List managedAppOperations](../api/intune_mam_iosmanagedappregistration_list_managedappoperation.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md) collection|Get the managedAppOperations from the operations navigation property.|
+|[List managedAppPolicies](../api/intune_mam_managedapppolicy_list.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) objects.|
+|[List managedAppPolicies](../api/intune_mam_managedapppolicy_list.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) objects.|
+|[List managedAppOperations](../api/intune_mam_managedappoperation_list.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md) collection|List properties and relationships of the [managedAppOperation](../resources/intune_mam_managedappoperation.md) objects.|
 
 ## Properties
 |Property|Type|Description|

@@ -4,7 +4,7 @@
 
 List properties and relationships of the [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md) objects.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ## HTTP Request
@@ -19,7 +19,7 @@ GET /deviceAppManagement/androidManagedAppProtections/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1954
+Content-Length: 1890
 
 {
   "value": [
@@ -50,8 +50,6 @@ Content-Length: 1954
       "description": "Description value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-      "deployedAppCount": 0,
       "id": "cf517ced-7ced-cf51-ed7c-51cfed7c51cf",
       "version": "Version value",
       "periodOfflineBeforeAccessCheck": "-PT17.1357909S",
@@ -86,7 +84,8 @@ Content-Length: 1954
         "Targeted Security Group Ids value"
       ],
       "screenCaptureBlocked": true,
-      "encryptAppData": true
+      "encryptAppData": true,
+      "deployedAppCount": 0
     }
   ]
 }

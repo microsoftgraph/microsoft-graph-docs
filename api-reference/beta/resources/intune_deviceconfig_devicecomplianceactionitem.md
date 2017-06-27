@@ -1,4 +1,4 @@
-﻿# deviceComplianceActionItem resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -11,7 +11,7 @@ Scheduled Action Configuration
 |[Create deviceComplianceActionItem](../api/intune_deviceconfig_devicecomplianceactionitem_create.md)|[deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md)|Create a new [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md) object.|
 |[Delete deviceComplianceActionItem](../api/intune_deviceconfig_devicecomplianceactionitem_delete.md)|None|Deletes a [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md).|
 |[Update deviceComplianceActionItem](../api/intune_deviceconfig_devicecomplianceactionitem_update.md)|[deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md)|Update the properties of a [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md) object.|
-|[Get notificationMessageTemplate](../api/intune_deviceconfig_devicecomplianceactionitem_get_notificationmessagetemplate.md)|[notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md)|Get the [notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md) from the notificationMessageTemplate navigation property.|
+|[Get notificationMessageTemplate](../api/intune_deviceconfig_notificationmessagetemplate_get.md)|[notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md)|Read properties and relationships of the [notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -8,7 +8,7 @@ A managed or unmanaged app that is installed on a managed device. Unmanaged apps
 |---|---|---|
 |[List detectedApps](../api/intune_devicefe_detectedapp_list.md)|[detectedApp](../resources/intune_devicefe_detectedapp.md) collection|List properties and relationships of the [detectedApp](../resources/intune_devicefe_detectedapp.md) objects.|
 |[Get detectedApp](../api/intune_devicefe_detectedapp_get.md)|[detectedApp](../resources/intune_devicefe_detectedapp.md)|Read properties and relationships of the [detectedApp](../resources/intune_devicefe_detectedapp.md) object.|
-|[List managedDevices](../api/intune_devicefe_detectedapp_list_manageddevice.md)|[managedDevice](../resources/intune_devicefe_manageddevice.md) collection|Get the managedDevices from the managedDevices navigation property.|
+|[List managedDevices](../api/intune_devicefe_manageddevice_list.md)|[managedDevice](../resources/intune_devicefe_manageddevice.md) collection|List properties and relationships of the [managedDevice](../resources/intune_devicefe_manageddevice.md) objects.|
 
 ## Properties
 |Property|Type|Description|

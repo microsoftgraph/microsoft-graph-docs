@@ -1,4 +1,4 @@
-﻿# deviceManagementExchangeOnPremisesPolicy resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -8,7 +8,7 @@ Singleton entity which represents the Exchange OnPremises policy configured for 
 |---|---|---|
 |[Get deviceManagementExchangeOnPremisesPolicy](../api/intune_onboarding_devicemanagementexchangeonpremisespolicy_get.md)|[deviceManagementExchangeOnPremisesPolicy](../resources/intune_onboarding_devicemanagementexchangeonpremisespolicy.md)|Read properties and relationships of the [deviceManagementExchangeOnPremisesPolicy](../resources/intune_onboarding_devicemanagementexchangeonpremisespolicy.md) object.|
 |[Update deviceManagementExchangeOnPremisesPolicy](../api/intune_onboarding_devicemanagementexchangeonpremisespolicy_update.md)|[deviceManagementExchangeOnPremisesPolicy](../resources/intune_onboarding_devicemanagementexchangeonpremisespolicy.md)|Update the properties of a [deviceManagementExchangeOnPremisesPolicy](../resources/intune_onboarding_devicemanagementexchangeonpremisespolicy.md) object.|
-|[Get onPremisesConditionalAccessSettings](../api/intune_onboarding_devicemanagementexchangeonpremisespolicy_get_onpremisesconditionalaccesssettings.md)|[onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md)|Get the [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) from the conditionalAccessSettings navigation property.|
+|[Get onPremisesConditionalAccessSettings](../api/intune_onboarding_onpremisesconditionalaccesssettings_get.md)|[onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md)|Read properties and relationships of the [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object.|
 
 ## Properties
 |Property|Type|Description|

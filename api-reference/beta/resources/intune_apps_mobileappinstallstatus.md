@@ -1,4 +1,4 @@
-﻿# mobileAppInstallStatus resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -11,7 +11,7 @@ Contains properties for the installation state of a mobile app for a device.
 |[Create mobileAppInstallStatus](../api/intune_apps_mobileappinstallstatus_create.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md)|Create a new [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object.|
 |[Delete mobileAppInstallStatus](../api/intune_apps_mobileappinstallstatus_delete.md)|None|Deletes a [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md).|
 |[Update mobileAppInstallStatus](../api/intune_apps_mobileappinstallstatus_update.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md)|Update the properties of a [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object.|
-|[Get mobileApp](../api/intune_apps_mobileappinstallstatus_get_mobileapp.md)|[mobileApp](../resources/intune_apps_mobileapp.md)|Get the [mobileApp](../resources/intune_apps_mobileapp.md) from the app navigation property.|
+|[Get mobileApp](../api/intune_apps_mobileapp_get.md)|[mobileApp](../resources/intune_apps_mobileapp.md)|Read properties and relationships of the [mobileApp](../resources/intune_apps_mobileapp.md) object.|
 
 ## Properties
 |Property|Type|Description|

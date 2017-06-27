@@ -4,9 +4,9 @@
 
 List properties and relationships of the [mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md) objects.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
-*DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementServiceConfig.ReadWrite.All; DeviceManagementServiceConfig.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -19,7 +19,7 @@ GET /deviceManagement/mobileThreatDefenseConnectors/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body

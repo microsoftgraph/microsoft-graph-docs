@@ -23,8 +23,8 @@ Devices that are managed or pre-enrolled through Intune
 |[cleanWindowsDevice action](../api/intune_devicefe_manageddevice_cleanwindowsdevice.md)|None|Not yet documented|
 |[logoutSharedAppleDeviceActiveUser action](../api/intune_devicefe_manageddevice_logoutsharedappledeviceactiveuser.md)|None|Not yet documented|
 |[deleteUserFromSharedAppleDevice action](../api/intune_devicefe_manageddevice_deleteuserfromsharedappledevice.md)|None|Not yet documented|
-|[List detectedApps](../api/intune_devicefe_manageddevice_list_detectedapp.md)|[detectedApp](../resources/intune_devicefe_detectedapp.md) collection|Get the detectedApps from the detectedApps navigation property.|
-|[Get deviceCategory](../api/intune_devicefe_manageddevice_get_devicecategory.md)|[deviceCategory](../resources/intune_devicefe_devicecategory.md)|Get the [deviceCategory](../resources/intune_devicefe_devicecategory.md) from the deviceCategory navigation property.|
+|[List detectedApps](../api/intune_devicefe_detectedapp_list.md)|[detectedApp](../resources/intune_devicefe_detectedapp.md) collection|List properties and relationships of the [detectedApp](../resources/intune_devicefe_detectedapp.md) objects.|
+|[Get deviceCategory](../api/intune_devicefe_devicecategory_get.md)|[deviceCategory](../resources/intune_devicefe_devicecategory.md)|Read properties and relationships of the [deviceCategory](../resources/intune_devicefe_devicecategory.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -43,7 +43,6 @@ Devices that are managed or pre-enrolled through Intune
 |deviceType|String|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `windowsBlue`, `windowsPhoneBlue`, `blackberry`, `palm`, `fakeDevice`, `unknown`.|
 |complianceState|String|Compliance state of the device. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`.|
 |jailBroken|String|whether the device is jail broken or rooted.|
-|managementAgents|Int32|Management channel of the device. Intune, EAS, etc.|
 |managementAgent|String|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configManagerClient`, `unknown`.|
 |osVersion|String|Operating system version of the device.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated.|
@@ -68,6 +67,7 @@ Devices that are managed or pre-enrolled through Intune
 |manufacturer|String|Manufacturer of the device|
 |imei|String|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
+|serialNumber|String|SerialNumber|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -134,7 +134,6 @@ Here is a JSON representation of the resource.
   "deviceType": "String",
   "complianceState": "String",
   "jailBroken": "String",
-  "managementAgents": 1024,
   "managementAgent": "String",
   "osVersion": "String",
   "easActivated": true,
@@ -158,7 +157,8 @@ Here is a JSON representation of the resource.
   "model": "String",
   "manufacturer": "String",
   "imei": "String",
-  "complianceGracePeriodExpirationDateTime": "String (timestamp)"
+  "complianceGracePeriodExpirationDateTime": "String (timestamp)",
+  "serialNumber": "String"
 }
 ```
 

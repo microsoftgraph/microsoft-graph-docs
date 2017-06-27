@@ -4,7 +4,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ## HTTP Request
@@ -13,25 +13,18 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /mobileApps//getMobileAppCount
-GET /deviceAppManagement/mobileApps//getMobileAppCount
+GET /mobileApps/getMobileAppCount
+GET /deviceAppManagement/mobileApps/getMobileAppCount
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
-The following table shows the parameters that can be used with this function.
-
-|Property|Type|Description|
-|---|---|---|
-|status|String|Not yet documented|
-
-
+Do not supply a request body for this method.
 
 ## Response
 If successful, this function returns a `200 OK` response code and a Int64 in the response body.
@@ -40,14 +33,7 @@ If successful, this function returns a `200 OK` response code and a Int64 in the
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/mobileApps//getMobileAppCount
-
-Content-type: application/json
-Content-length: 32
-
-{
-  "status": "Status value"
-}
+GET https://graph.microsoft.com/beta/mobileApps/getMobileAppCount(status='parameterValue')
 ```
 
 ### Response
@@ -55,9 +41,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1
+Content-Length: 18
 
-1
+{
+  "value": 1
+}
 ```
 
 

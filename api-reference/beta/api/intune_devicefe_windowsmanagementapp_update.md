@@ -4,7 +4,7 @@
 
 Update the properties of a [windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ## HTTP Request
@@ -19,7 +19,7 @@ PATCH /deviceAppManagement/windowsManagementApp/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -29,9 +29,7 @@ The following table shows the properties that are required when you create a [wi
 |Property|Type|Description|
 |---|---|---|
 |id|String|Unique Identifier for the Windows management app|
-|onboardingStatus|String|Windows management app onboarding status. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|deployedVersion|String|Windows management app deployed version.|
-|lastModifiedTime|DateTimeOffset|Windows management app last modified time.|
+|availableVersion|String|Windows management app available version.|
 
 
 
@@ -44,12 +42,10 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp/
 Content-type: application/json
-Content-length: 145
+Content-length: 53
 
 {
-  "onboardingStatus": "enabled",
-  "deployedVersion": "Deployed Version value",
-  "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00"
+  "availableVersion": "Available Version value"
 }
 ```
 
@@ -58,14 +54,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 253
+Content-Length: 161
 
 {
   "@odata.type": "#microsoft.graph.windowsManagementApp",
   "id": "5facc79c-c79c-5fac-9cc7-ac5f9cc7ac5f",
-  "onboardingStatus": "enabled",
-  "deployedVersion": "Deployed Version value",
-  "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00"
+  "availableVersion": "Available Version value"
 }
 ```
 

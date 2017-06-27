@@ -4,7 +4,7 @@
 
 List properties and relationships of the [windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) objects.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ## HTTP Request
@@ -19,7 +19,7 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5235
+Content-Length: 5141
 
 {
   "value": [
@@ -50,8 +50,6 @@ Content-Length: 5235
       "description": "Description value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-      "deployedAppCount": 0,
       "id": "6397be61-be61-6397-61be-976361be9763",
       "version": "Version value",
       "enforcementLevel": "encryptAndAuditOnly",

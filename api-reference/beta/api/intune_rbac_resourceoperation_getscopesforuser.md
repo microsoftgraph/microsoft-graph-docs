@@ -4,7 +4,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementRBAC.ReadWrite.All; DeviceManagementRBAC.Read.All*
 ## HTTP Request
@@ -13,24 +13,17 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/resourceOperations/{resourceOperationId}/getScopesForUser
+GET /deviceManagement/resourceOperations/{resourceOperationId}getScopesForUser
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
-The following table shows the parameters that can be used with this function.
-
-|Property|Type|Description|
-|---|---|---|
-|userid|String|Not yet documented|
-
-
+Do not supply a request body for this method.
 
 ## Response
 If successful, this function returns a `200 OK` response code and a String collection in the response body.
@@ -39,14 +32,7 @@ If successful, this function returns a `200 OK` response code and a String colle
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/resourceOperations/{resourceOperationId}/getScopesForUser
-
-Content-type: application/json
-Content-length: 32
-
-{
-  "userid": "Userid value"
-}
+GET https://graph.microsoft.com/beta/deviceManagement/resourceOperations/{resourceOperationId}getScopesForUser(userid='parameterValue')
 ```
 
 ### Response
@@ -54,11 +40,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 35
+Content-Length: 56
 
-[
-  "Get Scopes For User value"
-]
+{
+  "value": [
+    "Get Scopes For User value"
+  ]
+}
 ```
 
 

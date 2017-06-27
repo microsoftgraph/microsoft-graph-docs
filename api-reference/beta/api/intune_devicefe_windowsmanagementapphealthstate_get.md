@@ -4,7 +4,7 @@
 
 Read properties and relationships of the [windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ## HTTP Request
@@ -17,11 +17,11 @@ GET /deviceAppManagement/windowsManagementApp//healthStates/{windowsManagementAp
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -42,15 +42,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 392
+Content-Length: 382
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windowsManagementAppHealthState",
     "id": "5c7e50fb-50fb-5c7e-fb50-7e5cfb507e5c",
-    "healthStatus": "Health Status value",
+    "healthState": "healthy",
     "installedVersion": "Installed Version value",
-    "lastCheckInTime": "2016-12-31T23:57:17.3700428-08:00",
+    "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00",
     "deviceName": "Device Name value",
     "deviceOSVersion": "Device OSVersion value"
   }

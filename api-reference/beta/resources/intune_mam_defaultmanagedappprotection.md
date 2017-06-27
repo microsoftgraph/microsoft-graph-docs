@@ -1,4 +1,4 @@
-﻿# defaultManagedAppProtection resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -14,8 +14,7 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |[Create defaultManagedAppProtection](../api/intune_mam_defaultmanagedappprotection_create.md)|[defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md)|Create a new [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object.|
 |[Delete defaultManagedAppProtection](../api/intune_mam_defaultmanagedappprotection_delete.md)|None|Deletes a [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md).|
 |[Update defaultManagedAppProtection](../api/intune_mam_defaultmanagedappprotection_update.md)|[defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md)|Update the properties of a [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object.|
-|[List mobileAppIdentifierDeployments](../api/intune_mam_defaultmanagedappprotection_list_mobileappidentifierdeployment.md)|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|Get the mobileAppIdentifierDeployments from the mobileAppIdentifierDeployments navigation property.|
-|[Get managedAppPolicyDeploymentSummary](../api/intune_mam_defaultmanagedappprotection_get_managedapppolicydeploymentsummary.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Get the [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) from the deploymentSummary navigation property.|
+|[List mobileAppIdentifierDeployments](../api/intune_mam_mobileappidentifierdeployment_list.md)|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List properties and relationships of the [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) objects.|
 
 ## Properties
 |Property|Type|Description|
@@ -24,8 +23,6 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|lastModifiedTime|DateTimeOffset|DEPRECATED: Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|deployedAppCount|Int32|Count of apps to which the current policy is deployed. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |id|String|Key of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|The period after which access is checked when the device is not connected to the internet. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -58,12 +55,12 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |customSettings|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|A set of string key and string value pairs to be sent to the affected users, unalterned by this service|
+|deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
+|mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -80,8 +77,6 @@ Here is a JSON representation of the resource.
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedTime": "String (timestamp)",
-  "deployedAppCount": 1024,
   "id": "String (identifier)",
   "version": "String",
   "periodOfflineBeforeAccessCheck": "String (duration)",
@@ -121,7 +116,8 @@ Here is a JSON representation of the resource.
       "name": "String",
       "value": "String"
     }
-  ]
+  ],
+  "deployedAppCount": 1024
 }
 ```
 

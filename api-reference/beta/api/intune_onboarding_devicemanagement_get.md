@@ -4,7 +4,7 @@
 
 Read properties and relationships of the [deviceManagement](../resources/intune_onboarding_devicemanagement.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
@@ -17,11 +17,11 @@ GET /deviceManagement
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -42,12 +42,41 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 130
+Content-Length: 1188
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagement",
-    "id": "0b283420-3420-0b28-2034-280b2034280b"
+    "id": "0b283420-3420-0b28-2034-280b2034280b",
+    "intuneBrand": {
+      "@odata.type": "microsoft.graph.intuneBrand",
+      "displayName": "Display Name value",
+      "contactITName": "Contact ITName value",
+      "contactITPhoneNumber": "Contact ITPhone Number value",
+      "contactITEmailAddress": "Contact ITEmail Address value",
+      "contactITNotes": "Contact ITNotes value",
+      "privacyUrl": "https://example.com/privacyUrl/",
+      "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
+      "onlineSupportSiteName": "Online Support Site Name value",
+      "themeColor": {
+        "@odata.type": "microsoft.graph.rgbColor",
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "showLogo": true,
+      "lightBackgroundLogo": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "Type value",
+        "value": "dmFsdWU="
+      },
+      "darkBackgroundLogo": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "Type value",
+        "value": "dmFsdWU="
+      },
+      "showNameNextToLogo": true
+    }
   }
 }
 ```

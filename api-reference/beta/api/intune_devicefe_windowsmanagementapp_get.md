@@ -4,7 +4,7 @@
 
 Read properties and relationships of the [windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ## HTTP Request
@@ -17,11 +17,11 @@ GET /deviceAppManagement/windowsManagementApp/
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -42,15 +42,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 282
+Content-Length: 186
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windowsManagementApp",
     "id": "5facc79c-c79c-5fac-9cc7-ac5f9cc7ac5f",
-    "onboardingStatus": "enabled",
-    "deployedVersion": "Deployed Version value",
-    "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00"
+    "availableVersion": "Available Version value"
   }
 }
 ```

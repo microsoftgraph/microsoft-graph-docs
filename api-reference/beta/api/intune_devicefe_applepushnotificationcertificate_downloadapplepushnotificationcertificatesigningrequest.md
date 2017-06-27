@@ -4,22 +4,22 @@
 
 Not yet documented
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementServiceConfig.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET /deviceManagement/applePushNotificationCertificate//downloadApplePushNotificationCertificateSigningRequest
+GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotificationCertificateSigningRequest
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -32,7 +32,7 @@ If successful, this function returns a `200 OK` response code and a String in th
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate//downloadApplePushNotificationCertificateSigningRequest
+GET https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate/downloadApplePushNotificationCertificateSigningRequest
 ```
 
 ### Response
@@ -40,9 +40,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 66
+Content-Length: 85
 
-Download Apple Push Notification Certificate Signing Request value
+{
+  "value": "Download Apple Push Notification Certificate Signing Request value"
+}
 ```
 
 

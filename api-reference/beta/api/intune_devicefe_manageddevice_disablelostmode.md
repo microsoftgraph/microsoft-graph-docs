@@ -4,7 +4,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementManagedDevices.PriviligedOperation.All*
 ## HTTP Request
@@ -13,16 +13,16 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /managedDevices/{managedDevicesId}/disableLostMode
-POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//disableLostMode
-POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/user//managedDevices/{managedDeviceId}/disableLostMode
-POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/disableLostMode
+POST /managedDevices/{managedDevicesId}disableLostMode
+POST /users/{usersId}/managedDevices/{managedDeviceId}disableLostMode
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/disableLostMode
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}disableLostMode
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -35,7 +35,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/disableLostMode
+POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}disableLostMode
 ```
 
 ### Response

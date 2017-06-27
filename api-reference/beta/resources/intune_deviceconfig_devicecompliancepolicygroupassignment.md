@@ -1,4 +1,4 @@
-﻿# deviceCompliancePolicyGroupAssignment resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -14,7 +14,7 @@ Inherits from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfi
 |[Create deviceCompliancePolicyGroupAssignment](../api/intune_deviceconfig_devicecompliancepolicygroupassignment_create.md)|[deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md)|Create a new [deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) object.|
 |[Delete deviceCompliancePolicyGroupAssignment](../api/intune_deviceconfig_devicecompliancepolicygroupassignment_delete.md)|None|Deletes a [deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md).|
 |[Update deviceCompliancePolicyGroupAssignment](../api/intune_deviceconfig_devicecompliancepolicygroupassignment_update.md)|[deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md)|Update the properties of a [deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) object.|
-|[Get deviceCompliancePolicy](../api/intune_deviceconfig_devicecompliancepolicygroupassignment_get_devicecompliancepolicy.md)|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|Get the [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) from the deviceCompliancePolicy navigation property.|
+|[Get deviceCompliancePolicy](../api/intune_deviceconfig_devicecompliancepolicy_get.md)|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|Read properties and relationships of the [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) object.|
 
 ## Properties
 |Property|Type|Description|

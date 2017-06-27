@@ -121,7 +121,11 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Device.Read_ | Read user devices | Allows the app to read a user's list of devices on behalf of the signed-in user. | No |
+| _Device.Command_ | Communicate with user devices | Allows the app to launch another app or communicate with another app on a user's device on behalf of the signed-in user. | No |
+
 
 #### Application permissions
 
@@ -131,7 +135,7 @@ None.
 
 ### Remarks
 
-This permission is valid only for apps that target organizations.
+The _Device.Read_ and _Device.Command_ delegated permissions are valid only for personal Microsoft accounts.
 
 ### Example usage
 #### Application

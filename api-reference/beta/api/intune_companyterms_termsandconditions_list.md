@@ -4,23 +4,22 @@
 
 List properties and relationships of the [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) objects.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
-*DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementServiceConfig.ReadWrite.All; DeviceManagementServiceConfig.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET /termsAndConditions/
 GET /deviceManagement/termsAndConditions/
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -33,7 +32,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/termsAndConditions/
+GET https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/
 ```
 
 ### Response

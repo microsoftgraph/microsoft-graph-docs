@@ -4,7 +4,7 @@
 
 Create a new [directoryObject](../resources/intune_mam_directoryobject.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ## HTTP Request
@@ -13,15 +13,15 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetedSecurityGroups/
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/
+POST /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/targetedSecurityGroups/
+POST /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/targetedSecurityGroups/
+POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/targetedSecurityGroups/
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -41,7 +41,7 @@ If successful, this method returns a `201 Created` response code and a [director
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetedSecurityGroups/
+POST https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/targetedSecurityGroups/
 Content-type: application/json
 Content-length: 57
 

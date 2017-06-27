@@ -4,7 +4,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementManagedDevices.PriviligedOperation.All*
 ## HTTP Request
@@ -13,16 +13,16 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /managedDevices/{managedDevicesId}/logoutSharedAppleDeviceActiveUser
-POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//logoutSharedAppleDeviceActiveUser
-POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/user//managedDevices/{managedDeviceId}/logoutSharedAppleDeviceActiveUser
-POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/logoutSharedAppleDeviceActiveUser
+POST /managedDevices/{managedDevicesId}logoutSharedAppleDeviceActiveUser
+POST /users/{usersId}/managedDevices/{managedDeviceId}logoutSharedAppleDeviceActiveUser
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/logoutSharedAppleDeviceActiveUser
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}logoutSharedAppleDeviceActiveUser
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -35,7 +35,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/logoutSharedAppleDeviceActiveUser
+POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}logoutSharedAppleDeviceActiveUser
 ```
 
 ### Response

@@ -4,22 +4,22 @@
 
 Not yet documented
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
-*DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementServiceConfig.ReadWrite.All; DeviceManagementServiceConfig.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET /deviceManagement/enrollmentProfiles/{enrollmentProfileId}/exportMobileConfig
+GET /deviceManagement/enrollmentProfiles/{enrollmentProfileId}exportMobileConfig
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -32,7 +32,7 @@ If successful, this function returns a `200 OK` response code and a String in th
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/{enrollmentProfileId}/exportMobileConfig
+GET https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/{enrollmentProfileId}exportMobileConfig
 ```
 
 ### Response
@@ -40,9 +40,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 26
+Content-Length: 45
 
-Export Mobile Config value
+{
+  "value": "Export Mobile Config value"
+}
 ```
 
 

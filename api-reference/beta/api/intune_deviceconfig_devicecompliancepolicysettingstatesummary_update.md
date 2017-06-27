@@ -4,7 +4,7 @@
 
 Update the properties of a [deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
@@ -19,7 +19,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -30,9 +30,7 @@ The following table shows the properties that are required when you create a [de
 |---|---|---|
 |setting|String|The setting class name and property name.|
 |settingName|String|Name of the setting.|
-|instanceDisplayName|String|Name of setting instance that is being reported.|
-|settingPlatform|String|Setting platform Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`.|
-|platformType|String|Setting platform Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`.|
+|platformType|String|Setting platform Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
 |id|String|Key of the entity.|
 |unknownDeviceCount|Int32|Number of unknown devices|
 |notApplicableDeviceCount|Int32|Number of not applicable devices|
@@ -53,13 +51,11 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}
 Content-type: application/json
-Content-length: 419
+Content-length: 322
 
 {
   "setting": "Setting value",
   "settingName": "Setting Name value",
-  "instanceDisplayName": "Instance Display Name value",
-  "settingPlatform": "androidForWork",
   "platformType": "androidForWork",
   "unknownDeviceCount": 2,
   "notApplicableDeviceCount": 8,
@@ -76,14 +72,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 548
+Content-Length: 451
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
   "setting": "Setting value",
   "settingName": "Setting Name value",
-  "instanceDisplayName": "Instance Display Name value",
-  "settingPlatform": "androidForWork",
   "platformType": "androidForWork",
   "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
   "unknownDeviceCount": 2,

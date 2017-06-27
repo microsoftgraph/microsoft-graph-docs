@@ -4,7 +4,7 @@
 
 Update the properties of a [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ## HTTP Request
@@ -13,16 +13,16 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
-PATCH /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/allowedAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
-PATCH /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/microsoft.graph.windowsInformationProtection/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
-PATCH /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/microsoft.graph.windowsInformationProtection/allowedAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
+PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
+PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/allowedAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
+PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
+PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/allowedAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -46,7 +46,7 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
 Content-type: application/json
 Content-length: 131
 

@@ -10,9 +10,9 @@ The ManagedAppRegistration resource represents the details of an app, with manag
 |[List managedAppRegistrations](../api/intune_mam_managedappregistration_list.md)|[managedAppRegistration](../resources/intune_mam_managedappregistration.md) collection|List properties and relationships of the [managedAppRegistration](../resources/intune_mam_managedappregistration.md) objects.|
 |[Get managedAppRegistration](../api/intune_mam_managedappregistration_get.md)|[managedAppRegistration](../resources/intune_mam_managedappregistration.md)|Read properties and relationships of the [managedAppRegistration](../resources/intune_mam_managedappregistration.md) object.|
 |[getUserIdsWithFlaggedAppRegistration function](../api/intune_mam_managedappregistration_getuseridswithflaggedappregistration.md)|String collection|Not yet documented|
-|[List managedAppPolicies](../api/intune_mam_managedappregistration_list_managedapppolicy.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Get the managedAppPolicies from the appliedPolicies navigation property.|
-|[List managedAppPolicies](../api/intune_mam_managedappregistration_list_managedapppolicy.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Get the managedAppPolicies from the intendedPolicies navigation property.|
-|[List managedAppOperations](../api/intune_mam_managedappregistration_list_managedappoperation.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md) collection|Get the managedAppOperations from the operations navigation property.|
+|[List managedAppPolicies](../api/intune_mam_managedapppolicy_list.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) objects.|
+|[List managedAppPolicies](../api/intune_mam_managedapppolicy_list.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) objects.|
+|[List managedAppOperations](../api/intune_mam_managedappoperation_list.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md) collection|List properties and relationships of the [managedAppOperation](../resources/intune_mam_managedappoperation.md) objects.|
 
 ## Properties
 |Property|Type|Description|

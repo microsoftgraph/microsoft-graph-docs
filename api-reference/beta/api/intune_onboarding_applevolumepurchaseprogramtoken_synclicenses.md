@@ -4,22 +4,22 @@
 
 Not yet documented
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementServiceConfig.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /organization/{organizationId}/appleVolumePurchaseProgramTokens/{appleVolumePurchaseProgramTokenId}/syncLicenses
+POST /organization/{organizationId}/appleVolumePurchaseProgramTokens/{appleVolumePurchaseProgramTokenId}syncLicenses
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -32,7 +32,7 @@ If successful, this action returns a `200 OK` response code and a [appleVolumePu
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/organization/{organizationId}/appleVolumePurchaseProgramTokens/{appleVolumePurchaseProgramTokenId}/syncLicenses
+POST https://graph.microsoft.com/beta/organization/{organizationId}/appleVolumePurchaseProgramTokens/{appleVolumePurchaseProgramTokenId}syncLicenses
 ```
 
 ### Response
@@ -40,20 +40,22 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 530
+Content-Length: 571
 
 {
-  "@odata.type": "#microsoft.graph.appleVolumePurchaseProgramToken",
-  "id": "7284da05-da05-7284-05da-847205da8472",
-  "organizationName": "Organization Name value",
-  "volumePurchaseProgramTokenAccountType": "education",
-  "appleId": "Apple Id value",
-  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
-  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "token": "Token value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "state": "valid",
-  "lastSyncStatus": "inProgress"
+  "value": {
+    "@odata.type": "#microsoft.graph.appleVolumePurchaseProgramToken",
+    "id": "7284da05-da05-7284-05da-847205da8472",
+    "organizationName": "Organization Name value",
+    "volumePurchaseProgramTokenAccountType": "education",
+    "appleId": "Apple Id value",
+    "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+    "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+    "token": "Token value",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "state": "valid",
+    "lastSyncStatus": "inProgress"
+  }
 }
 ```
 

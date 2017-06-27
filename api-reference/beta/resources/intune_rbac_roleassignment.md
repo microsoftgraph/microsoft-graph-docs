@@ -1,4 +1,4 @@
-﻿# roleAssignment resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -11,7 +11,7 @@ The Role Assignment resource. Role assignments tie together a role definition wi
 |[Create roleAssignment](../api/intune_rbac_roleassignment_create.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|Create a new [roleAssignment](../resources/intune_rbac_roleassignment.md) object.|
 |[Delete roleAssignment](../api/intune_rbac_roleassignment_delete.md)|None|Deletes a [roleAssignment](../resources/intune_rbac_roleassignment.md).|
 |[Update roleAssignment](../api/intune_rbac_roleassignment_update.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|Update the properties of a [roleAssignment](../resources/intune_rbac_roleassignment.md) object.|
-|[Get roleDefinition](../api/intune_rbac_roleassignment_get_roledefinition.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md)|Get the [roleDefinition](../resources/intune_rbac_roledefinition.md) from the roleDefinition navigation property.|
+|[Get roleDefinition](../api/intune_rbac_roledefinition_get.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md)|Read properties and relationships of the [roleDefinition](../resources/intune_rbac_roledefinition.md) object.|
 
 ## Properties
 |Property|Type|Description|

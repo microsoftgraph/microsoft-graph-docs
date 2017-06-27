@@ -4,7 +4,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.Read.All*
 ## HTTP Request
@@ -13,13 +13,13 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /reports/deviceConfigurationDeviceActivity
+GET /reportsdeviceConfigurationDeviceActivity
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -32,7 +32,7 @@ If successful, this function returns a `200 OK` response code and a [report](../
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/reports/deviceConfigurationDeviceActivity
+GET https://graph.microsoft.com/beta/reportsdeviceConfigurationDeviceActivity
 ```
 
 ### Response
@@ -40,11 +40,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 100
+Content-Length: 123
 
 {
-  "@odata.type": "microsoft.graph.report",
-  "content": "<Unknown Primitive Type Edm.Stream>"
+  "value": {
+    "@odata.type": "microsoft.graph.report",
+    "content": "<Unknown Primitive Type Edm.Stream>"
+  }
 }
 ```
 

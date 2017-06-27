@@ -4,7 +4,7 @@
 
 Update the properties of a [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ## HTTP Request
@@ -13,13 +13,16 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/mobileAppIdentifierDeployments/{mobileAppIdentifierDeploymentId}
+PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/mobileAppIdentifierDeployments/{mobileAppIdentifierDeploymentId}
+PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/mobileAppIdentifierDeployments/{mobileAppIdentifierDeploymentId}
+PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/mobileAppIdentifierDeployments/{mobileAppIdentifierDeploymentId}
+PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/mobileAppIdentifierDeployments/{mobileAppIdentifierDeploymentId}
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -41,7 +44,7 @@ If successful, this method returns a `200 OK` response code and an updated [mobi
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/mobileAppIdentifierDeployments/{mobileAppIdentifierDeploymentId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/mobileAppIdentifierDeployments/{mobileAppIdentifierDeploymentId}
 Content-type: application/json
 Content-length: 126
 

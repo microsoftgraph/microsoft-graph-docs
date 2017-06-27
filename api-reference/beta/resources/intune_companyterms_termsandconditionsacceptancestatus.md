@@ -1,4 +1,4 @@
-﻿# termsAndConditionsAcceptanceStatus resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -11,7 +11,7 @@ A termsAndConditionsAcceptanceStatus entity represents the acceptance status of 
 |[Create termsAndConditionsAcceptanceStatus](../api/intune_companyterms_termsandconditionsacceptancestatus_create.md)|[termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md)|Create a new [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) object.|
 |[Delete termsAndConditionsAcceptanceStatus](../api/intune_companyterms_termsandconditionsacceptancestatus_delete.md)|None|Deletes a [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md).|
 |[Update termsAndConditionsAcceptanceStatus](../api/intune_companyterms_termsandconditionsacceptancestatus_update.md)|[termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md)|Update the properties of a [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) object.|
-|[Get termsAndConditions](../api/intune_companyterms_termsandconditionsacceptancestatus_get_termsandconditions.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|Get the [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) from the termsAndConditions navigation property.|
+|[Get termsAndConditions](../api/intune_companyterms_termsandconditions_get.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|Read properties and relationships of the [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -56,14 +56,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 98
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#me/calendars/$entity",
+    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
+    "id": "AAMkAGI2TGuLAAA=",
+    "name": "Calendar",
+    "color": "auto",
+    "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
+    "canShare":true,
+    "canViewPrivateItems":true,
+    "canEdit":true,
+    "owner":{
+        "name":"Fanny Downs",
+        "address":"fannyd@adatum.onmicrosoft.com"
+    }
 }
 ```
 

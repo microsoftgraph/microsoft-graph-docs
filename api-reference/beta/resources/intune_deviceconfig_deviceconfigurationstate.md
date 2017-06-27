@@ -1,4 +1,4 @@
-﻿# deviceConfigurationState resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -19,7 +19,7 @@ Device Configuration State for a given device.
 |settingStates|[deviceConfigurationSettingState](../resources/intune_deviceconfig_deviceconfigurationsettingstate.md) collection|Not yet documented|
 |displayName|String|The name of the policy for this policyBase|
 |version|Int32|The version of the policy|
-|platformType|String|Platform type that the policy applies to Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`.|
+|platformType|String|Platform type that the policy applies to Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
 |state|String|The compliance state of the policy Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |settingCount|Int32|Count of how many setting a policy holds|
 
@@ -41,14 +41,10 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.deviceConfigurationSettingState",
       "setting": "String",
-      "settingName": "String",
       "instanceDisplayName": "String",
       "state": "String",
       "errorCode": 1024,
       "errorDescription": "String",
-      "userId": "String",
-      "userName": "String",
-      "userEmail": "String",
       "userPrincipalName": "String",
       "sources": [
         {
@@ -56,8 +52,7 @@ Here is a JSON representation of the resource.
           "id": "String",
           "displayName": "String"
         }
-      ],
-      "currentValue": "String"
+      ]
     }
   ],
   "displayName": "String",

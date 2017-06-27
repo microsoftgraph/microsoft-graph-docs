@@ -4,7 +4,7 @@
 
 List properties and relationships of the [managedDevice](../resources/intune_devicefe_manageddevice.md) objects.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
@@ -14,14 +14,14 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /managedDevices/
-GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/user//managedDevices/
-GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/
+GET /users/{usersId}/managedDevices/
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3232
+Content-Length: 3248
 
 {
   "value": [
@@ -96,7 +96,6 @@ Content-Length: 3232
       "deviceType": "windowsRT",
       "complianceState": "compliant",
       "jailBroken": "Jail Broken value",
-      "managementAgents": 0,
       "managementAgent": "mdm",
       "osVersion": "Os Version value",
       "easActivated": true,
@@ -120,7 +119,8 @@ Content-Length: 3232
       "model": "Model value",
       "manufacturer": "Manufacturer value",
       "imei": "Imei value",
-      "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
+      "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00",
+      "serialNumber": "Serial Number value"
     }
   ]
 }

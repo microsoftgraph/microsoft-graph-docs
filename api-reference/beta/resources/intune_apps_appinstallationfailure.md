@@ -6,6 +6,11 @@ Class for reporting status of a single mobile app.
 ## Properties
 |Property|Type|Description|
 |---|---|---|
+|applicationId|String|Key of the entity.|
+|appName|String|The name of the App|
+|platformId|Int64|The platform ID for the App|
+|userFailures|Int64|The number of users in failure for this App.|
+|deviceFailures|Int64|The number of devices in failure for this App.|
 
 ## Relationships
 None
@@ -19,7 +24,12 @@ Here is a JSON representation of the resource.
 -->
 ```json
 {
-  "@odata.type": "#microsoft.graph.appInstallationFailure"
+  "@odata.type": "#microsoft.graph.appInstallationFailure",
+  "applicationId": "String",
+  "appName": "String",
+  "platformId": 1024,
+  "userFailures": 1024,
+  "deviceFailures": 1024
 }
 ```
 

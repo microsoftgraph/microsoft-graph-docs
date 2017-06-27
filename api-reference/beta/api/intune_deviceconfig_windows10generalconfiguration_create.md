@@ -4,7 +4,7 @@
 
 Create a new [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
@@ -19,7 +19,7 @@ POST /deviceManagement/deviceConfigurations/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -30,10 +30,19 @@ The following table shows the properties that are required when you create a win
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentStatus|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentProgress|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignmentErrorMessage|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|enterpriseCloudPrintDiscoveryEndPoint|String|Endpoint for discovering cloud printers.|
+|enterpriseCloudPrintOAuthAuthority|String|Authentication endpoint for acquiring OAuth tokens.|
+|enterpriseCloudPrintOAuthClientIdentifier|String|GUID of a client application authorized to retrieve OAuth tokens from the OAuth Authority.|
+|enterpriseCloudPrintResourceIdentifier|String|OAuth resource URI for print service as configured in the Azure portal.|
+|enterpriseCloudPrintDiscoveryMaxLimit|Int32|Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535|
+|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|OAuth resource URI for printer discovery service as configured in Azure portal.|
 |personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
 |personalizationLockScreenImageUrl|String|A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.|
 |bluetoothAllowedServices|String collection|Specify a list of allowed Bluetooth services and profiles in hex formatted strings.|
@@ -50,6 +59,13 @@ The following table shows the properties that are required when you create a win
 |edgeBlockInPrivateBrowsing|Boolean|Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.|
 |edgeBlockJavaScript|Boolean|Indicates whether or not to Block the user from using JavaScript.|
 |edgeBlockPasswordManager|Boolean|Indicates whether or not to Block password manager.|
+|edgeBlockAddressBarDropdown|Boolean|Block the address bar dropdown functionality in Microsoft Edge. Disable this settings to minimize network connections from Microsoft Edge to Microsoft services.|
+|edgeBlockCompatibilityList|Boolean|Block Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Edge properly display sites with known compatibility issues.|
+|edgeClearBrowsingDataOnExit|Boolean|Clear browsing data on exiting Microsoft Edge.|
+|edgeAllowStartPagesModification|Boolean|Allow users to change Start pages on Edge. Use the EdgeHomepageUrls to specify the Start pages that the user would see by default when they open Edge.|
+|edgeDisableFirstRunPage|Boolean|Block the Microsoft web page that opens on the first use of Microsoft Edge. This policy allows enterprises, like those enrolled in zero emissions configurations, to block this page.|
+|edgeBlockLiveTileDataCollection|Boolean|Block the collection of information by Microsoft for live tile creation when users pin a site to Start from Microsoft Edge.|
+|edgeSyncFavoritesWithInternetExplorer|Boolean|Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.|
 |cellularBlockDataWhenRoaming|Boolean|Whether or not to Block the user from using data over cellular while roaming.|
 |cellularBlockVpn|Boolean|Whether or not to Block the user from using VPN over cellular.|
 |cellularBlockVpnWhenRoaming|Boolean|Whether or not to Block the user from using VPN when roaming over cellular.|
@@ -225,14 +241,23 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 8620
+Content-length: 9642
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "assignmentStatus": "Assignment Status value",
+  "assignmentProgress": "Assignment Progress value",
+  "assignmentErrorMessage": "Assignment Error Message value",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
+  "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
+  "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
+  "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
+  "enterpriseCloudPrintDiscoveryMaxLimit": 5,
+  "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
   "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
   "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
   "bluetoothAllowedServices": [
@@ -251,6 +276,13 @@ Content-length: 8620
   "edgeBlockInPrivateBrowsing": true,
   "edgeBlockJavaScript": true,
   "edgeBlockPasswordManager": true,
+  "edgeBlockAddressBarDropdown": true,
+  "edgeBlockCompatibilityList": true,
+  "edgeClearBrowsingDataOnExit": true,
+  "edgeAllowStartPagesModification": true,
+  "edgeDisableFirstRunPage": true,
+  "edgeBlockLiveTileDataCollection": true,
+  "edgeSyncFavoritesWithInternetExplorer": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -445,16 +477,25 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 8728
+Content-Length: 9750
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
   "id": "a4235d71-5d71-a423-715d-23a4715d23a4",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "assignmentStatus": "Assignment Status value",
+  "assignmentProgress": "Assignment Progress value",
+  "assignmentErrorMessage": "Assignment Error Message value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
+  "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
+  "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
+  "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
+  "enterpriseCloudPrintDiscoveryMaxLimit": 5,
+  "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
   "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
   "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
   "bluetoothAllowedServices": [
@@ -473,6 +514,13 @@ Content-Length: 8728
   "edgeBlockInPrivateBrowsing": true,
   "edgeBlockJavaScript": true,
   "edgeBlockPasswordManager": true,
+  "edgeBlockAddressBarDropdown": true,
+  "edgeBlockCompatibilityList": true,
+  "edgeClearBrowsingDataOnExit": true,
+  "edgeAllowStartPagesModification": true,
+  "edgeDisableFirstRunPage": true,
+  "edgeBlockLiveTileDataCollection": true,
+  "edgeSyncFavoritesWithInternetExplorer": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,

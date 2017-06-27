@@ -8,7 +8,7 @@ Singleton entity that acts as a container for all device app management function
 |---|---|---|
 |[Get deviceAppManagement](../api/intune_devicefe_deviceappmanagement_get.md)|[deviceAppManagement](../resources/intune_devicefe_deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune_devicefe_deviceappmanagement.md) object.|
 |[Update deviceAppManagement](../api/intune_devicefe_deviceappmanagement_update.md)|[deviceAppManagement](../resources/intune_devicefe_deviceappmanagement.md)|Update the properties of a [deviceAppManagement](../resources/intune_devicefe_deviceappmanagement.md) object.|
-|[Get windowsManagementApp](../api/intune_devicefe_deviceappmanagement_get_windowsmanagementapp.md)|[windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md)|Get the [windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md) from the windowsManagementApp navigation property.|
+|[Get windowsManagementApp](../api/intune_devicefe_windowsmanagementapp_get.md)|[windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md)|Read properties and relationships of the [windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md) object.|
 
 ## Properties
 |Property|Type|Description|

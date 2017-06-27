@@ -1,4 +1,4 @@
-﻿# notificationMessageTemplate resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -12,7 +12,7 @@ Notification messages are messages that are sent to end users who are determined
 |[Delete notificationMessageTemplate](../api/intune_notification_notificationmessagetemplate_delete.md)|None|Deletes a [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md).|
 |[Update notificationMessageTemplate](../api/intune_notification_notificationmessagetemplate_update.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)|Update the properties of a [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) object.|
 |[sendTestMessage action](../api/intune_notification_notificationmessagetemplate_sendtestmessage.md)|None|Not yet documented|
-|[List localizedNotificationMessages](../api/intune_notification_notificationmessagetemplate_list_localizednotificationmessage.md)|[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) collection|Get the localizedNotificationMessages from the localizedNotificationMessages navigation property.|
+|[List localizedNotificationMessages](../api/intune_notification_localizednotificationmessage_list.md)|[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) collection|List properties and relationships of the [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) objects.|
 
 ## Properties
 |Property|Type|Description|

@@ -4,7 +4,7 @@
 
 List properties and relationships of the [managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md) objects.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ## HTTP Request
@@ -22,7 +22,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -43,7 +43,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 686
+Content-Length: 592
 
 {
   "value": [
@@ -53,8 +53,6 @@ Content-Length: 686
       "description": "Description value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-      "deployedAppCount": 0,
       "id": "2ed27cb5-7cb5-2ed2-b57c-d22eb57cd22e",
       "version": "Version value",
       "customSettings": [

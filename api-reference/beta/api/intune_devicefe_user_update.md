@@ -4,7 +4,7 @@
 
 Update the properties of a [user](../resources/intune_devicefe_user.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
@@ -14,13 +14,12 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /users/{usersId}
-PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/user/
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body

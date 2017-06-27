@@ -2,7 +2,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Not yet documented
+**TODO: Documentation is missing please add the `\[ODataDescription()\]` and/or `\[ODataLongDescription()\]` attributes.**
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -12,7 +12,7 @@ Not yet documented
 |[Delete user](../api/intune_devicefe_user_delete.md)|None|Deletes a [user](../resources/intune_devicefe_user.md).|
 |[Update user](../api/intune_devicefe_user_update.md)|[user](../resources/intune_devicefe_user.md)|Update the properties of a [user](../resources/intune_devicefe_user.md) object.|
 |[removeAllDevicesFromManagement action](../api/intune_devicefe_user_removealldevicesfrommanagement.md)|None|Not yet documented|
-|[List managedDevices](../api/intune_devicefe_user_list_manageddevice.md)|[managedDevice](../resources/intune_devicefe_manageddevice.md) collection|Get the managedDevices from the managedDevices navigation property.|
+|[List managedDevices](../api/intune_devicefe_manageddevice_list.md)|[managedDevice](../resources/intune_devicefe_manageddevice.md) collection|List properties and relationships of the [managedDevice](../resources/intune_devicefe_manageddevice.md) objects.|
 
 ## Properties
 |Property|Type|Description|

@@ -6,7 +6,7 @@ Read properties and relationships of the [remoteAssistancePartner](../resources/
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementServiceConfig.ReadWrite.All; DeviceManagementServiceConfig.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -21,7 +21,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body

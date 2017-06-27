@@ -4,33 +4,26 @@
 
 Not yet documented
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementServiceConfig.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
+GET /deviceManagementverifyWindowsEnrollmentAutoDiscovery
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
-The following table shows the parameters that can be used with this function.
-
-|Property|Type|Description|
-|---|---|---|
-|domainName|String|Not yet documented|
-
-
+Do not supply a request body for this method.
 
 ## Response
 If successful, this function returns a `200 OK` response code and a Boolean in the response body.
@@ -39,14 +32,7 @@ If successful, this function returns a `200 OK` response code and a Boolean in t
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/verifyWindowsEnrollmentAutoDiscovery
-
-Content-type: application/json
-Content-length: 41
-
-{
-  "domainName": "Domain Name value"
-}
+GET https://graph.microsoft.com/beta/deviceManagementverifyWindowsEnrollmentAutoDiscovery(domainName='parameterValue')
 ```
 
 ### Response
@@ -54,9 +40,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4
+Content-Length: 21
 
-True
+{
+  "value": true
+}
 ```
 
 

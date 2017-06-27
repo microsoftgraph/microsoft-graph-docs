@@ -4,7 +4,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ## HTTP Request
@@ -13,26 +13,18 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /mobileApps//getTopMobileApps
-GET /deviceAppManagement/mobileApps//getTopMobileApps
+GET /mobileApps/getTopMobileApps
+GET /deviceAppManagement/mobileApps/getTopMobileApps
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
-The following table shows the parameters that can be used with this function.
-
-|Property|Type|Description|
-|---|---|---|
-|status|String|Not yet documented|
-|count|Int64|Not yet documented|
-
-
+Do not supply a request body for this method.
 
 ## Response
 If successful, this function returns a `200 OK` response code and a [mobileApp](../resources/intune_apps_mobileapp.md) collection in the response body.
@@ -41,15 +33,7 @@ If successful, this function returns a `200 OK` response code and a [mobileApp](
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/mobileApps//getTopMobileApps
-
-Content-type: application/json
-Content-length: 47
-
-{
-  "status": "Status value",
-  "count": 5
-}
+GET https://graph.microsoft.com/beta/mobileApps/getTopMobileApps(status='parameterValue',count=5)
 ```
 
 ### Response
@@ -57,31 +41,33 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 780
+Content-Length: 841
 
-[
-  {
-    "@odata.type": "#microsoft.graph.mobileApp",
-    "id": "0177548a-548a-0177-8a54-77018a547701",
-    "displayName": "Display Name value",
-    "description": "Description value",
-    "publisher": "Publisher value",
-    "largeIcon": {
-      "@odata.type": "microsoft.graph.mimeContent",
-      "type": "Type value",
-      "value": "dmFsdWU="
-    },
-    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "isFeatured": true,
-    "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-    "informationUrl": "https://example.com/informationUrl/",
-    "owner": "Owner value",
-    "developer": "Developer value",
-    "notes": "Notes value",
-    "uploadState": 11
-  }
-]
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.mobileApp",
+      "id": "0177548a-548a-0177-8a54-77018a547701",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "publisher": "Publisher value",
+      "largeIcon": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "Type value",
+        "value": "dmFsdWU="
+      },
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "isFeatured": true,
+      "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
+      "informationUrl": "https://example.com/informationUrl/",
+      "owner": "Owner value",
+      "developer": "Developer value",
+      "notes": "Notes value",
+      "uploadState": 11
+    }
+  ]
+}
 ```
 
 

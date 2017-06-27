@@ -4,7 +4,7 @@
 
 Read properties and relationships of the [macOSEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_macosenterprisewificonfiguration.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
@@ -19,11 +19,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -44,13 +44,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1171
+Content-Length: 1362
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.macOSEnterpriseWiFiConfiguration",
     "id": "7a6f9a2e-9a2e-7a6f-2e9a-6f7a2e9a6f7a",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "assignmentStatus": "Assignment Status value",
+    "assignmentProgress": "Assignment Progress value",
+    "assignmentErrorMessage": "Assignment Error Message value",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -70,8 +73,8 @@ Content-Length: 1171
       "Trusted Server Certificate Names value"
     ],
     "authenticationMethod": "usernameAndPassword",
-    "nonEapAuthenticationMethodForEapTtls": "challengeHandshakeAuthenticationProtocol",
-    "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value"
+    "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
   }
 }
 ```

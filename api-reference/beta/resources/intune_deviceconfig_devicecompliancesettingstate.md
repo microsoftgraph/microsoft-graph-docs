@@ -1,4 +1,4 @@
-﻿# deviceComplianceSettingState resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -16,7 +16,6 @@ Device compliance setting State for a given device.
 |Property|Type|Description|
 |---|---|---|
 |id|String|Not yet documented|
-|devicePlatform|String|Device platform Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`.|
 |platformType|String|Device platform type Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `windowsBlue`, `windowsPhoneBlue`, `blackberry`, `palm`, `fakeDevice`, `unknown`.|
 |setting|String|The setting class name and property name.|
 |settingName|String|The Setting Name that is being reported|
@@ -43,7 +42,6 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceComplianceSettingState",
   "id": "String (identifier)",
-  "devicePlatform": "String",
   "platformType": "String",
   "setting": "String",
   "settingName": "String",

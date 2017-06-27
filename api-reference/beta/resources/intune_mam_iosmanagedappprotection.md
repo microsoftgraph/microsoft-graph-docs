@@ -1,4 +1,4 @@
-﻿# iosManagedAppProtection resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -16,9 +16,9 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |[Update iosManagedAppProtection](../api/intune_mam_iosmanagedappprotection_update.md)|[iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md)|Update the properties of a [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) object.|
 |[updateMobileAppIdentifierDeployments action](../api/intune_mam_iosmanagedappprotection_updatemobileappidentifierdeployments.md)|None|Not yet documented|
 |[updateTargetedSecurityGroups action](../api/intune_mam_iosmanagedappprotection_updatetargetedsecuritygroups.md)|None|Not yet documented|
-|[List mobileAppIdentifierDeployments](../api/intune_mam_iosmanagedappprotection_list_mobileappidentifierdeployment.md)|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|Get the mobileAppIdentifierDeployments from the mobileAppIdentifierDeployments navigation property.|
-|[Get managedAppPolicyDeploymentSummary](../api/intune_mam_iosmanagedappprotection_get_managedapppolicydeploymentsummary.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Get the [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) from the deploymentSummary navigation property.|
-|[List directoryObjects](../api/intune_mam_iosmanagedappprotection_list_directoryobject.md)|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Get the directoryObjects from the targetedSecurityGroups navigation property.|
+|[List directoryObjects](../api/intune_mam_directoryobject_list.md)|[directoryObject](../resources/intune_mam_directoryobject.md) collection|List properties and relationships of the [directoryObject](../resources/intune_mam_directoryobject.md) objects.|
+|[List mobileAppIdentifierDeployments](../api/intune_mam_mobileappidentifierdeployment_list.md)|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List properties and relationships of the [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) objects.|
+|[Get managedAppPolicyDeploymentSummary](../api/intune_mam_managedapppolicydeploymentsummary_get.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Read properties and relationships of the [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -27,8 +27,6 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|lastModifiedTime|DateTimeOffset|DEPRECATED: Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|deployedAppCount|Int32|Count of apps to which the current policy is deployed. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |id|String|Key of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|The period after which access is checked when the device is not connected to the internet. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -60,13 +58,14 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |appDataEncryptionType|String|Type of encryption which should be used for data in a managed app. Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
+|deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |targetedSecurityGroups|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Navigation property to list of security groups to which the configuration is deployed Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
+|mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed.|
+|deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -83,8 +82,6 @@ Here is a JSON representation of the resource.
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedTime": "String (timestamp)",
-  "deployedAppCount": 1024,
   "id": "String (identifier)",
   "version": "String",
   "periodOfflineBeforeAccessCheck": "String (duration)",
@@ -119,7 +116,8 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "appDataEncryptionType": "String",
-  "minimumRequiredSdkVersion": "String"
+  "minimumRequiredSdkVersion": "String",
+  "deployedAppCount": 1024
 }
 ```
 

@@ -4,7 +4,7 @@
 
 Create a new [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ## HTTP Request
@@ -19,7 +19,7 @@ POST /deviceAppManagement/androidManagedAppProtections/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -32,8 +32,6 @@ The following table shows the properties that are required when you create a and
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|lastModifiedTime|DateTimeOffset|DEPRECATED: Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|deployedAppCount|Int32|Count of apps to which the current policy is deployed. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |id|String|Key of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|The period after which access is checked when the device is not connected to the internet. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -65,6 +63,7 @@ The following table shows the properties that are required when you create a and
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |screenCaptureBlocked|Boolean|Indicates whether a managed user can take screen captures of managed apps|
 |encryptAppData|Boolean|Indicates whether application data for managed apps should be encrypted|
+|deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 
 
 
@@ -77,15 +76,13 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtections/
 Content-type: application/json
-Content-length: 1645
+Content-length: 1585
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",
   "displayName": "Display Name value",
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-  "deployedAppCount": 0,
   "version": "Version value",
   "periodOfflineBeforeAccessCheck": "-PT17.1357909S",
   "periodOnlineBeforeAccessCheck": "PT35.0018757S",
@@ -119,7 +116,8 @@ Content-length: 1645
     "Targeted Security Group Ids value"
   ],
   "screenCaptureBlocked": true,
-  "encryptAppData": true
+  "encryptAppData": true,
+  "deployedAppCount": 0
 }
 ```
 
@@ -128,7 +126,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1753
+Content-Length: 1693
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",
@@ -136,8 +134,6 @@ Content-Length: 1753
   "description": "Description value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-  "deployedAppCount": 0,
   "id": "cf517ced-7ced-cf51-ed7c-51cfed7c51cf",
   "version": "Version value",
   "periodOfflineBeforeAccessCheck": "-PT17.1357909S",
@@ -172,7 +168,8 @@ Content-Length: 1753
     "Targeted Security Group Ids value"
   ],
   "screenCaptureBlocked": true,
-  "encryptAppData": true
+  "encryptAppData": true,
+  "deployedAppCount": 0
 }
 ```
 

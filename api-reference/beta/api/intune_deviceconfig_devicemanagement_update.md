@@ -4,7 +4,7 @@
 
 Update the properties of a [deviceManagement](../resources/intune_deviceconfig_devicemanagement.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
@@ -19,7 +19,7 @@ PATCH /deviceManagement
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -42,11 +42,13 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement
 Content-type: application/json
-Content-length: 176
+Content-length: 316
 
 {
   "settings": {
     "@odata.type": "microsoft.graph.deviceManagementSettings",
+    "windowsCommercialId": "Windows Commercial Id value",
+    "windowsCommercialIdLastModifiedTime": "2016-12-31T23:59:46.9744002-08:00",
     "deviceComplianceCheckinThresholdDays": 4,
     "isScheduledActionEnabled": true
   }
@@ -58,13 +60,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 280
+Content-Length: 420
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
   "id": "0b283420-3420-0b28-2034-280b2034280b",
   "settings": {
     "@odata.type": "microsoft.graph.deviceManagementSettings",
+    "windowsCommercialId": "Windows Commercial Id value",
+    "windowsCommercialIdLastModifiedTime": "2016-12-31T23:59:46.9744002-08:00",
     "deviceComplianceCheckinThresholdDays": 4,
     "isScheduledActionEnabled": true
   }

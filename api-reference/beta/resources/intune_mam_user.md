@@ -11,11 +11,10 @@ Represents an Azure Active Directory user object.
 |[Create user](../api/intune_mam_user_create.md)|[user](../resources/intune_mam_user.md)|Create a new [user](../resources/intune_mam_user.md) object.|
 |[Delete user](../api/intune_mam_user_delete.md)|None|Deletes a [user](../resources/intune_mam_user.md).|
 |[Update user](../api/intune_mam_user_update.md)|[user](../resources/intune_mam_user.md)|Update the properties of a [user](../resources/intune_mam_user.md) object.|
-|[getManagedAppDiagnosticStatuses function](../api/intune_mam_user_getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md) collection|Not yet documented|
-|[getManagedAppPolicies function](../api/intune_mam_user_getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Not yet documented|
-|[wipeManagedAppRegistrationByDeviceTag action](../api/intune_mam_user_wipemanagedappregistrationbydevicetag.md)|None|Not yet documented|
-|[wipeByDeviceTag action](../api/intune_mam_user_wipebydevicetag.md)|None|Not yet documented|
-|[List managedAppRegistrations](../api/intune_mam_user_list_managedappregistration.md)|[managedAppRegistration](../resources/intune_mam_managedappregistration.md) collection|Get the managedAppRegistrations from the managedAppRegistrations navigation property.|
+|[getManagedAppDiagnosticStatuses function](../api/intune_mam_user_getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md) collection|Gets diagnostics validation status for a given user.|
+|[getManagedAppPolicies function](../api/intune_mam_user_getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Gets app restrictions for a given user.|
+|[wipeManagedAppRegistrationByDeviceTag action](../api/intune_mam_user_wipemanagedappregistrationbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
+|[List managedAppRegistrations](../api/intune_mam_managedappregistration_list.md)|[managedAppRegistration](../resources/intune_mam_managedappregistration.md) collection|List properties and relationships of the [managedAppRegistration](../resources/intune_mam_managedappregistration.md) objects.|
 
 ## Properties
 |Property|Type|Description|

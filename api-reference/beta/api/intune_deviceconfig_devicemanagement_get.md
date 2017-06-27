@@ -4,7 +4,7 @@
 
 Read properties and relationships of the [deviceManagement](../resources/intune_deviceconfig_devicemanagement.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
@@ -17,11 +17,11 @@ GET /deviceManagement
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 313
+Content-Length: 457
 
 {
   "value": {
@@ -50,6 +50,8 @@ Content-Length: 313
     "id": "0b283420-3420-0b28-2034-280b2034280b",
     "settings": {
       "@odata.type": "microsoft.graph.deviceManagementSettings",
+      "windowsCommercialId": "Windows Commercial Id value",
+      "windowsCommercialIdLastModifiedTime": "2016-12-31T23:59:46.9744002-08:00",
       "deviceComplianceCheckinThresholdDays": 4,
       "isScheduledActionEnabled": true
     }

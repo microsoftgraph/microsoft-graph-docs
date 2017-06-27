@@ -8,8 +8,8 @@ Devices that are managed or pre-enrolled through Intune
 |---|---|---|
 |[List managedDevices](../api/intune_deviceconfig_manageddevice_list.md)|[managedDevice](../resources/intune_deviceconfig_manageddevice.md) collection|List properties and relationships of the [managedDevice](../resources/intune_deviceconfig_manageddevice.md) objects.|
 |[Get managedDevice](../api/intune_deviceconfig_manageddevice_get.md)|[managedDevice](../resources/intune_deviceconfig_manageddevice.md)|Read properties and relationships of the [managedDevice](../resources/intune_deviceconfig_manageddevice.md) object.|
-|[List deviceConfigurationStates](../api/intune_deviceconfig_manageddevice_list_deviceconfigurationstate.md)|[deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md) collection|Get the deviceConfigurationStates from the deviceConfigurationStates navigation property.|
-|[List deviceCompliancePolicyStates](../api/intune_deviceconfig_manageddevice_list_devicecompliancepolicystate.md)|[deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) collection|Get the deviceCompliancePolicyStates from the deviceCompliancePolicyStates navigation property.|
+|[List deviceConfigurationStates](../api/intune_deviceconfig_deviceconfigurationstate_list.md)|[deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md) collection|List properties and relationships of the [deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md) objects.|
+|[List deviceCompliancePolicyStates](../api/intune_deviceconfig_devicecompliancepolicystate_list.md)|[deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) collection|List properties and relationships of the [deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) objects.|
 
 ## Properties
 |Property|Type|Description|

@@ -11,7 +11,7 @@ Contains properties used to assign a mobile app to a group.
 |[Create mobileAppGroupAssignment](../api/intune_apps_mobileappgroupassignment_create.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md)|Create a new [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) object.|
 |[Delete mobileAppGroupAssignment](../api/intune_apps_mobileappgroupassignment_delete.md)|None|Deletes a [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md).|
 |[Update mobileAppGroupAssignment](../api/intune_apps_mobileappgroupassignment_update.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md)|Update the properties of a [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) object.|
-|[Get mobileApp](../api/intune_apps_mobileappgroupassignment_get_mobileapp.md)|[mobileApp](../resources/intune_apps_mobileapp.md)|Get the [mobileApp](../resources/intune_apps_mobileapp.md) from the app navigation property.|
+|[Get mobileApp](../api/intune_apps_mobileapp_get.md)|[mobileApp](../resources/intune_apps_mobileapp.md)|Read properties and relationships of the [mobileApp](../resources/intune_apps_mobileapp.md) object.|
 
 ## Properties
 |Property|Type|Description|

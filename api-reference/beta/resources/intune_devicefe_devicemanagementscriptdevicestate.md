@@ -1,0 +1,52 @@
+﻿#  resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Contains properties for device run state of the device management script.
+## Methods
+|Method|Return Type|Description|
+|---|---|---|
+|[List deviceManagementScriptDeviceStates](../api/intune_devicefe_devicemanagementscriptdevicestate_list.md)|[deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md) collection|List properties and relationships of the [deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md) objects.|
+|[Get deviceManagementScriptDeviceState](../api/intune_devicefe_devicemanagementscriptdevicestate_get.md)|[deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md)|Read properties and relationships of the [deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md) object.|
+|[Create deviceManagementScriptDeviceState](../api/intune_devicefe_devicemanagementscriptdevicestate_create.md)|[deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md)|Create a new [deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md) object.|
+|[Delete deviceManagementScriptDeviceState](../api/intune_devicefe_devicemanagementscriptdevicestate_delete.md)|None|Deletes a [deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md).|
+|[Update deviceManagementScriptDeviceState](../api/intune_devicefe_devicemanagementscriptdevicestate_update.md)|[deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md)|Update the properties of a [deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md) object.|
+|[Get managedDevice](../api/intune_devicefe_manageddevice_get.md)|[managedDevice](../resources/intune_devicefe_manageddevice.md)|Read properties and relationships of the [managedDevice](../resources/intune_devicefe_manageddevice.md) object.|
+
+## Properties
+|Property|Type|Description|
+|---|---|---|
+|id|String|Key of the device management script device state entity.|
+|runState|String|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`.|
+|resultMessage|String|Details of execution output.|
+|lastStateUpdateDateTime|DateTimeOffset|Latest time the device management script executes.|
+|errorCode|Int32|Error code corresponding to erroneous execution of the device management script.|
+|errorDescription|String|Error description corresponding to erroneous execution of the device management script.|
+
+## Relationships
+|Relationship|Type|Description|
+|---|---|---|
+|managedDevice|[managedDevice](../resources/intune_devicefe_manageddevice.md)|The managed devices that executes the device management script.|
+
+## JSON Representation
+Here is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.deviceManagementScriptDeviceState"
+}
+-->
+```json
+{
+  "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
+  "id": "String (identifier)",
+  "runState": "String",
+  "resultMessage": "String",
+  "lastStateUpdateDateTime": "String (timestamp)",
+  "errorCode": 1024,
+  "errorDescription": "String"
+}
+```
+
+
+

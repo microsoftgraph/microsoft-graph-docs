@@ -4,7 +4,7 @@
 
 Read properties and relationships of the [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
@@ -19,11 +19,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -44,17 +44,26 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9169
+Content-Length: 10223
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
     "id": "a4235d71-5d71-a423-715d-23a4715d23a4",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "assignmentStatus": "Assignment Status value",
+    "assignmentProgress": "Assignment Progress value",
+    "assignmentErrorMessage": "Assignment Error Message value",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
+    "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
+    "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
+    "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
+    "enterpriseCloudPrintDiscoveryMaxLimit": 5,
+    "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
     "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
     "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
     "bluetoothAllowedServices": [
@@ -73,6 +82,13 @@ Content-Length: 9169
     "edgeBlockInPrivateBrowsing": true,
     "edgeBlockJavaScript": true,
     "edgeBlockPasswordManager": true,
+    "edgeBlockAddressBarDropdown": true,
+    "edgeBlockCompatibilityList": true,
+    "edgeClearBrowsingDataOnExit": true,
+    "edgeAllowStartPagesModification": true,
+    "edgeDisableFirstRunPage": true,
+    "edgeBlockLiveTileDataCollection": true,
+    "edgeSyncFavoritesWithInternetExplorer": true,
     "cellularBlockDataWhenRoaming": true,
     "cellularBlockVpn": true,
     "cellularBlockVpnWhenRoaming": true,

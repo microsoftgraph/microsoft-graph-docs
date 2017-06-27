@@ -9,8 +9,8 @@ Singleton entity that acts as a container for all device app management function
 |[Get deviceAppManagement](../api/intune_onboarding_deviceappmanagement_get.md)|[deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md) object.|
 |[Update deviceAppManagement](../api/intune_onboarding_deviceappmanagement_update.md)|[deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md)|Update the properties of a [deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md) object.|
 |[syncWindowsStoreForBusinessApps action](../api/intune_onboarding_deviceappmanagement_syncwindowsstoreforbusinessapps.md)|None|Not yet documented|
-|[List sideLoadingKeys](../api/intune_onboarding_deviceappmanagement_list_sideloadingkey.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) collection|Get the sideLoadingKeys from the sideLoadingKeys navigation property.|
-|[Create sideLoadingKey](../api/intune_onboarding_deviceappmanagement_create_sideloadingkey.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md)|Create a new [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) by posting to the sideLoadingKeys collection.|
+|[List sideLoadingKeys](../api/intune_onboarding_sideloadingkey_list.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) collection|List properties and relationships of the [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) objects.|
+|[Create sideLoadingKey](../api/intune_onboarding_sideloadingkey_create.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md)|Create a new [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -1,8 +1,10 @@
-# Delete oAuth2Permissiongrant
+# Delete oAuth2PermissionGrant
 
-Delete oAuth2Permissiongrant.
+Delete an oAuth2PermissionGrant.
+
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

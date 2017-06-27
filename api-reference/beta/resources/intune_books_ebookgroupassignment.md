@@ -11,7 +11,7 @@ Contains properties used to assign a eBook to a group.
 |[Create eBookGroupAssignment](../api/intune_books_ebookgroupassignment_create.md)|[eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md)|Create a new [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) object.|
 |[Delete eBookGroupAssignment](../api/intune_books_ebookgroupassignment_delete.md)|None|Deletes a [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md).|
 |[Update eBookGroupAssignment](../api/intune_books_ebookgroupassignment_update.md)|[eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md)|Update the properties of a [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) object.|
-|[Get managedEBook](../api/intune_books_ebookgroupassignment_get_managedebook.md)|[managedEBook](../resources/intune_books_managedebook.md)|Get the [managedEBook](../resources/intune_books_managedebook.md) from the eBook navigation property.|
+|[Get managedEBook](../api/intune_books_managedebook_get.md)|[managedEBook](../resources/intune_books_managedebook.md)|Read properties and relationships of the [managedEBook](../resources/intune_books_managedebook.md) object.|
 
 ## Properties
 |Property|Type|Description|

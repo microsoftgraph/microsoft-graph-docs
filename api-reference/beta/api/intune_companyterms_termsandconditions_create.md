@@ -4,23 +4,22 @@
 
 Create a new [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementServiceConfig.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /termsAndConditions/
 POST /deviceManagement/termsAndConditions/
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -48,7 +47,7 @@ If successful, this method returns a `201 Created` response code and a [termsAnd
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/termsAndConditions/
+POST https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/
 Content-type: application/json
 Content-length: 273
 

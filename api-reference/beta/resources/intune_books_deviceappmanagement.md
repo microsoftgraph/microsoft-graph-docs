@@ -8,8 +8,8 @@ Singleton entity that acts as a container for all device app management function
 |---|---|---|
 |[Get deviceAppManagement](../api/intune_books_deviceappmanagement_get.md)|[deviceAppManagement](../resources/intune_books_deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune_books_deviceappmanagement.md) object.|
 |[Update deviceAppManagement](../api/intune_books_deviceappmanagement_update.md)|[deviceAppManagement](../resources/intune_books_deviceappmanagement.md)|Update the properties of a [deviceAppManagement](../resources/intune_books_deviceappmanagement.md) object.|
-|[List managedEBooks](../api/intune_books_deviceappmanagement_list_managedebook.md)|[managedEBook](../resources/intune_books_managedebook.md) collection|Get the managedEBooks from the managedEBooks navigation property.|
-|[Create managedEBook](../api/intune_books_deviceappmanagement_create_managedebook.md)|[managedEBook](../resources/intune_books_managedebook.md)|Create a new [managedEBook](../resources/intune_books_managedebook.md) by posting to the managedEBooks collection.|
+|[List managedEBooks](../api/intune_books_managedebook_list.md)|[managedEBook](../resources/intune_books_managedebook.md) collection|List properties and relationships of the [managedEBook](../resources/intune_books_managedebook.md) objects.|
+|[Create managedEBook](../api/intune_books_managedebook_create.md)|[managedEBook](../resources/intune_books_managedebook.md)|Create a new [managedEBook](../resources/intune_books_managedebook.md) object.|
 
 ## Properties
 |Property|Type|Description|

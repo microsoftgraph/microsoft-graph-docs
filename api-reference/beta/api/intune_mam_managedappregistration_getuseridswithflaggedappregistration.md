@@ -4,7 +4,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
 ## HTTP Request
@@ -13,15 +13,15 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedAppRegistrations//getUserIdsWithFlaggedAppRegistration
-GET /users/{usersId}/managedAppRegistrations//getUserIdsWithFlaggedAppRegistration
-GET /deviceAppManagement/managedAppRegistrations//getUserIdsWithFlaggedAppRegistration
+GET /managedAppRegistrations/getUserIdsWithFlaggedAppRegistration
+GET /users/{usersId}/managedAppRegistrations/getUserIdsWithFlaggedAppRegistration
+GET /deviceAppManagement/managedAppRegistrations/getUserIdsWithFlaggedAppRegistration
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -34,7 +34,7 @@ If successful, this function returns a `200 OK` response code and a String colle
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppRegistrations//getUserIdsWithFlaggedAppRegistration
+GET https://graph.microsoft.com/beta/managedAppRegistrations/getUserIdsWithFlaggedAppRegistration
 ```
 
 ### Response
@@ -42,11 +42,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 58
+Content-Length: 79
 
-[
-  "Get User Ids With Flagged App Registration value"
-]
+{
+  "value": [
+    "Get User Ids With Flagged App Registration value"
+  ]
+}
 ```
 
 

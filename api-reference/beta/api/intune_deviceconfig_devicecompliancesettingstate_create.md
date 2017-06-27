@@ -4,7 +4,7 @@
 
 Create a new [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
@@ -19,7 +19,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -29,7 +29,6 @@ The following table shows the properties that are required when you create a dev
 |Property|Type|Description|
 |---|---|---|
 |id|String|Not yet documented|
-|devicePlatform|String|Device platform Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`.|
 |platformType|String|Device platform type Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `windowsBlue`, `windowsPhoneBlue`, `blackberry`, `palm`, `fakeDevice`, `unknown`.|
 |setting|String|The setting class name and property name.|
 |settingName|String|The Setting Name that is being reported|
@@ -53,11 +52,10 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/
 Content-type: application/json
-Content-length: 506
+Content-length: 467
 
 {
   "@odata.type": "#microsoft.graph.deviceComplianceSettingState",
-  "devicePlatform": "androidForWork",
   "platformType": "windowsRT",
   "setting": "Setting value",
   "settingName": "Setting Name value",
@@ -77,12 +75,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 555
+Content-Length: 516
 
 {
   "@odata.type": "#microsoft.graph.deviceComplianceSettingState",
   "id": "9905f955-f955-9905-55f9-059955f90599",
-  "devicePlatform": "androidForWork",
   "platformType": "windowsRT",
   "setting": "Setting value",
   "settingName": "Setting Name value",

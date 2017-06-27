@@ -1,4 +1,4 @@
-﻿# userInstallStateSummary resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -11,7 +11,7 @@ Contains properties for the installation state summary for a user.
 |[Create userInstallStateSummary](../api/intune_books_userinstallstatesummary_create.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)|Create a new [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) object.|
 |[Delete userInstallStateSummary](../api/intune_books_userinstallstatesummary_delete.md)|None|Deletes a [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md).|
 |[Update userInstallStateSummary](../api/intune_books_userinstallstatesummary_update.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)|Update the properties of a [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) object.|
-|[List deviceInstallStates](../api/intune_books_userinstallstatesummary_list_deviceinstallstate.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|Get the deviceInstallStates from the deviceStates navigation property.|
+|[List deviceInstallStates](../api/intune_books_deviceinstallstate_list.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|List properties and relationships of the [deviceInstallState](../resources/intune_books_deviceinstallstate.md) objects.|
 
 ## Properties
 |Property|Type|Description|

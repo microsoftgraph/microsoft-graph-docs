@@ -4,7 +4,7 @@
 
 Update the properties of a [directoryObject](../resources/intune_mam_directoryobject.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
 ## HTTP Request
@@ -13,15 +13,15 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetedSecurityGroups/{directoryObjectId}
-PATCH /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/{directoryObjectId}
-PATCH /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/{directoryObjectId}
+PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/targetedSecurityGroups/{directoryObjectId}
+PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/targetedSecurityGroups/{directoryObjectId}
+PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/targetedSecurityGroups/{directoryObjectId}
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -41,7 +41,7 @@ If successful, this method returns a `200 OK` response code and an updated [dire
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetedSecurityGroups/{directoryObjectId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/targetedSecurityGroups/{directoryObjectId}
 Content-type: application/json
 Content-length: 2
 

@@ -9,8 +9,6 @@ The ManagedAppPolicy resource represents a base type for platform specific polic
 |[List managedAppPolicies](../api/intune_mam_managedapppolicy_list.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) objects.|
 |[Get managedAppPolicy](../api/intune_mam_managedapppolicy_get.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Read properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) object.|
 |[updateMobileAppIdentifierDeployments action](../api/intune_mam_managedapppolicy_updatemobileappidentifierdeployments.md)|None|Not yet documented|
-|[List mobileAppIdentifierDeployments](../api/intune_mam_managedapppolicy_list_mobileappidentifierdeployment.md)|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|Get the mobileAppIdentifierDeployments from the mobileAppIdentifierDeployments navigation property.|
-|[Get managedAppPolicyDeploymentSummary](../api/intune_mam_managedapppolicy_get_managedapppolicydeploymentsummary.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Get the [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) from the deploymentSummary navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -19,17 +17,11 @@ The ManagedAppPolicy resource represents a base type for platform specific polic
 |description|String|The policy's description.|
 |createdDateTime|DateTimeOffset|The date and time the policy was created.|
 |lastModifiedDateTime|DateTimeOffset|Last time the policy was modified.|
-|lastModifiedTime|DateTimeOffset|DEPRECATED: Last time the policy was modified.|
-|deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 
 ## Relationships
-|Relationship|Type|Description|
-|---|---|---|
-|mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed.|
-|deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration.|
-
+None
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -45,8 +37,6 @@ Here is a JSON representation of the resource.
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedTime": "String (timestamp)",
-  "deployedAppCount": 1024,
   "id": "String (identifier)",
   "version": "String"
 }

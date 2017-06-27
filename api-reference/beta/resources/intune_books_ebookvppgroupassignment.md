@@ -1,4 +1,4 @@
-﻿# eBookVppGroupAssignment resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -14,7 +14,7 @@ Inherits from [eBookGroupAssignment](../resources/intune_books_ebookgroupassignm
 |[Create eBookVppGroupAssignment](../api/intune_books_ebookvppgroupassignment_create.md)|[eBookVppGroupAssignment](../resources/intune_books_ebookvppgroupassignment.md)|Create a new [eBookVppGroupAssignment](../resources/intune_books_ebookvppgroupassignment.md) object.|
 |[Delete eBookVppGroupAssignment](../api/intune_books_ebookvppgroupassignment_delete.md)|None|Deletes a [eBookVppGroupAssignment](../resources/intune_books_ebookvppgroupassignment.md).|
 |[Update eBookVppGroupAssignment](../api/intune_books_ebookvppgroupassignment_update.md)|[eBookVppGroupAssignment](../resources/intune_books_ebookvppgroupassignment.md)|Update the properties of a [eBookVppGroupAssignment](../resources/intune_books_ebookvppgroupassignment.md) object.|
-|[Get managedEBook](../api/intune_books_ebookvppgroupassignment_get_managedebook.md)|[managedEBook](../resources/intune_books_managedebook.md)|Get the [managedEBook](../resources/intune_books_managedebook.md) from the eBook navigation property.|
+|[Get managedEBook](../api/intune_books_managedebook_get.md)|[managedEBook](../resources/intune_books_managedebook.md)|Read properties and relationships of the [managedEBook](../resources/intune_books_managedebook.md) object.|
 
 ## Properties
 |Property|Type|Description|

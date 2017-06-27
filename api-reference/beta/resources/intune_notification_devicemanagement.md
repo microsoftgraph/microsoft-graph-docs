@@ -8,8 +8,8 @@ Singleton entity that acts as a container for all device management functionalit
 |---|---|---|
 |[Get deviceManagement](../api/intune_notification_devicemanagement_get.md)|[deviceManagement](../resources/intune_notification_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_notification_devicemanagement.md) object.|
 |[Update deviceManagement](../api/intune_notification_devicemanagement_update.md)|[deviceManagement](../resources/intune_notification_devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune_notification_devicemanagement.md) object.|
-|[List notificationMessageTemplates](../api/intune_notification_devicemanagement_list_notificationmessagetemplate.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) collection|Get the notificationMessageTemplates from the notificationMessageTemplates navigation property.|
-|[Create notificationMessageTemplate](../api/intune_notification_devicemanagement_create_notificationmessagetemplate.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)|Create a new [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) by posting to the notificationMessageTemplates collection.|
+|[List notificationMessageTemplates](../api/intune_notification_notificationmessagetemplate_list.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) collection|List properties and relationships of the [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) objects.|
+|[Create notificationMessageTemplate](../api/intune_notification_notificationmessagetemplate_create.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)|Create a new [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|

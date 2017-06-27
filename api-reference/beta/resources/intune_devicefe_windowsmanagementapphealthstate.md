@@ -1,4 +1,4 @@
-﻿# windowsManagementAppHealthState resource type
+﻿#  resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -16,9 +16,9 @@ Windows management app health state entity.
 |Property|Type|Description|
 |---|---|---|
 |id|String|Unique Identifier for the Windows management app health state|
-|healthStatus|String|Windows management app health status.|
+|healthState|String|Windows management app health state. Possible values are: `unknown`, `healthy`, `unhealthy`.|
 |installedVersion|String|Windows management app installed version.|
-|lastCheckInTime|DateTimeOffset|Windows management app last check-in time.|
+|lastCheckInDateTime|DateTimeOffset|Windows management app last check-in time.|
 |deviceName|String|Name of the device on which Windows management app is installed.|
 |deviceOSVersion|String|Windows 10 OS version of the device on which Windows management app is installed.|
 
@@ -36,9 +36,9 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.windowsManagementAppHealthState",
   "id": "String (identifier)",
-  "healthStatus": "String",
+  "healthState": "String",
   "installedVersion": "String",
-  "lastCheckInTime": "String (timestamp)",
+  "lastCheckInDateTime": "String (timestamp)",
   "deviceName": "String",
   "deviceOSVersion": "String"
 }
