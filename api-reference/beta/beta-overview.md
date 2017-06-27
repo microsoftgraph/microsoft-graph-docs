@@ -9,9 +9,11 @@ The reference content in this section documents the Microsoft Graph beta endpoin
 
 While working with the Intune Graph APIs, remember:
 
-1.  The APIs in the beta endpoint are subject to change. We don't recommend that you use them in your production apps. 
+1.  The APIs in the beta endpoint are subject to change. We recommend against using them in production apps. 
 
-2.  For mobile device management (MDM) scenarios, Graph APIs support Intune standalone environments; [hybrid environments](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) are not supported.
+1.  A license for the Intune service is required to use the Microsoft Graph APIs to configure Intune controls and policies.
+
+1.  For mobile device management (MDM) scenarios, Graph APIs support Intune standalone environments; [hybrid environments](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) are not supported.
 
 ##  Call Graph API endpoints
 
