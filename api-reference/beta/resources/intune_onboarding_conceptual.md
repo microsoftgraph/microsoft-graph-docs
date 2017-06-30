@@ -9,7 +9,7 @@ The following Graph resources are available to manage enrollment in Intune:
 - [Apple push notification certificate setting](intune_onboarding_applepushnotificationcertificatesetting.md)
 - [Apple volume purchase program token](intune_onboarding_applevolumepurchaseprogramtoken.md)
 - [Certificate connector setting](intune_onboarding_certificateconnectorsetting.md)
-- [Default device enrollment restirction](intune_onboarding_defaultdeviceenrollmentrestrictions.md)
+- [Default device enrollment restriction](intune_onboarding_defaultdeviceenrollmentrestrictions.md)
 - [Default enrollment Windows Shell for Business settings](intune_onboarding_defaultdeviceenrollmentwindowshelloforbusinesssettings.md)
 - [DEP onboard setting](intune_onboarding_deponboardingsetting.md)
 - [Device action result](intune_onboarding_deviceactionresult.md)

@@ -32,7 +32,7 @@ There are two types of permissions:
 - Delegated permissions are used by apps that run with a user present. The user's privileges are delegated to the app which makes calls on behalf of the user to Microsoft Graph. Many of these permissions can be consented to by a user, but others require administrator consent.  
 - Application permissions are used by apps that run without a user. These often grant an app broad privileges within an organization and always require the consent of an administrator.
 
-For a complete list of Microsoft Graph permissions, as well as the differences between Delegated and Application permissions, see the [Permissions reference](permissions_reference.md).
+For a complete list of Microsoft Graph permissions, as well as the differences between delegated and application permissions, see the [Permissions reference](permissions_reference.md).
 
 ## Where does my app get an access token?
 Your app gets access tokens from Azure Active Directory (Azure AD), Microsoft's cloud identity service. To get an access token, your app exchanges HTTP requests and responses with Azure AD using industry-standard protocols defined in the OAuth 2.0 and OpenID Connect 1.0 specifications. These protocols describe the Azure AD endpoints and exchanges with them -- or authentication flows -- that your app uses to securely authenticate with Azure AD and get access tokens.  

@@ -11,10 +11,11 @@ Use only PUT for this operation in the beta version.
 ## Prerequisites
 One of the following **scopes** is required to execute this API for:
 
--	Profile photo of any user in the tenant including the signed-in user - User.ReadWrite.All
--	Profile photo of specifically the signed-in user - User.ReadWrite, User.ReadWrite.All
+-	Profile photo of the signed-in **user** - *User.ReadWrite*, *User.ReadWrite.All*
 - Profile photo of a **group** - *Group.ReadWrite.All*
 - Photo of a **contact** - *Contacts.ReadWrite*
+
+> **Note** To update the photo of any user in the organization, your app must have the User.ReadWrite.All application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](../../../concepts/auth_v2_service.md).
 
 ## HTTP request to update the photo
 <!-- { "blockType": "ignored" } -->

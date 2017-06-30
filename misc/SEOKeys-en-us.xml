@@ -662,9 +662,6 @@
       </Item>
       <Item text="Directory objects" url="/en-us/api-reference/beta/resources/directoryobject" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
         <Item text="List owned devices" url="/en-us/api-reference/beta/api/user_list_owneddevices" SEOKeyword="List ownedDevices, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
-        <Item text="List user devices" url="/en-us/api-reference/beta/api/user_list_devices" />
-        <Item text="Send device command" url="/en-us/api-reference/beta/api/send_device_command" />
-        <Item text="Get device command status" url="/en-us/api-reference/beta/api/get_device_command_status" />
             <Item text="List registered devices" url="/en-us/api-reference/beta/api/user_list_registereddevices" SEOKeyword="List registeredDevices, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
             <Item text="List owned objects" url="/en-us/api-reference/beta/api/user_list_ownedobjects" SEOKeyword="List ownedObjects, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
             <Item text="List scoped administrator memberships" url="/en-us/api-reference/beta/api/user_list_scopedadministratorof" SEOKeyword="List scoped administrator memberships, Microsoft Graph API, Users API" SEODescription="Retrieve a list of scoped adminstrator membership objects." />
@@ -3812,7 +3809,20 @@
         <Item text="Update progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_update" />
       </Item>
     </Item>
-    <Item text="Reports" url="/en-us/api-reference/beta/resources/report" >
+    <Item text="Project Rome" url="/en-us/api-reference/beta/resources/project_rome_overview" > 
+		<Item text="List user devices" url="/en-us/api-reference/beta/api/user_list_devices" />
+		<Item text="Send device command" url="/en-us/api-reference/beta/api/send_device_command" />
+		<Item text="Get device command status" url="/en-us/api-reference/beta/api/get_device_command_status" />
+		<Item text="Activity" url="/en-us/api-reference/beta/resources/projectrome_activity" >
+			<Item text="Create or replace an activity" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
+			<Item text="Delete an activity" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
+		</Item>
+		<Item text="History item" url="/en-us/api-reference/beta/resources/projectrome_historyitem" >
+			<Item text="Create or replace a history item" url="/en-us/api-reference/beta/api/projectrome_put_historyitem" />
+			<Item text="Delete a history item" url="/en-us/api-reference/beta/api/projectrome_delete_historyitem" />
+		</Item>
+	</Item>
+	<Item text="Reports" url="/en-us/api-reference/beta/resources/report" >
       <Item text="Office 365 usage reports" url="/en-us/api-reference/beta/resources/report" >
 		  <Item text="Get email activity report" url="/en-us/api-reference/beta/api/reportroot_emailactivity" SEOKeyword="Get Email Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Exchange Email Activity reports. The response will be a CSV file in a binary stream." />
 		  <Item text="Get email app usage report" url="/en-us/api-reference/beta/api/reportroot_emailappusage" SEOKeyword="Get Email App Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Email App Usage reports. The response will be a CSV file in a binary stream." />

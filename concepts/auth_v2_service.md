@@ -28,13 +28,13 @@ For steps on how to configure an app using the Microsoft App Registration Portal
 With the OAuth 2.0 Client Credentials Grant flow, your app authenticates directly at the Azure AD v2.0 `/token` endpoint using the Application Id assigned by Azure AD and the Application Secret that you create using the portal. 
 
 ## 2. Configure permissions for Microsoft Graph
-For apps that run without a user, Microsoft Graph exposes Application permissions. You pre-configure these permissions when you register your app. Application permissions always require administrator consent. An administrator can either consent to these permissions using the [Azure portal](https://portal.azure.com) when your app is installed in their organization, or you can provide a sign-up experience in your app through which administrators can consent to the permissions you configured. Once administrator consent is recorded by Azure AD, your app can request tokens without having to request consent again. For more detailed information about the permissions available with Microsoft Graph, see the [Permissions reference](./permissions_reference.md)
+For apps that run without a user, Microsoft Graph exposes application permissions. (Microsoft Graph also exposes delegated permissions for apps that run on behalf of a user.) You pre-configure the application permissions your app needs when you register your app. Application permissions always require administrator consent. An administrator can either consent to these permissions using the [Azure portal](https://portal.azure.com) when your app is installed in their organization, or you can provide a sign-up experience in your app through which administrators can consent to the permissions you configured. Once administrator consent is recorded by Azure AD, your app can request tokens without having to request consent again. For more detailed information about the permissions available with Microsoft Graph, see the [Permissions reference](./permissions_reference.md)
 
-To configure Application permissions for your app in the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/): under **Microsoft Graph**, choose **Add** next to **Application Permissions** and then select the permissions your app requires in the **Select Permissions** dialog.
+To configure application permissions for your app in the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/): under **Microsoft Graph**, choose **Add** next to **Application Permissions** and then select the permissions your app requires in the **Select Permissions** dialog.
 
-The following screenshot shows the **Select Permissions** dialog for Microsoft Graph Application permissions. 
+The following screenshot shows the **Select Permissions** dialog for Microsoft Graph application permissions. 
 
-![Select Permissions dialog for Microsoft Graph Application permissions.](./images/v2-application-permissions.png)
+![Select Permissions dialog for Microsoft Graph application permissions.](./images/v2-application-permissions.png)
 
 > **Important**: We recommend configuring the least privileged set of permissions required by your app. This provides a much more comfortable experience for administrators than having to consent to a long list of permissions.
 >
@@ -60,7 +60,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | state |Recommended |A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on. |
 
 ### Consent experience
-Azure AD enforces that only a tenant administrator can sign in to complete the request. The administrator will be asked to approve all the Application permissions that you have requested for your app in the app registration portal. The following is an example of the consent dialog that Azure AD presents to the administrator:
+Azure AD enforces that only a tenant administrator can sign in to complete the request. The administrator will be asked to approve all the application permissions that you have requested for your app in the app registration portal. The following is an example of the consent dialog that Azure AD presents to the administrator:
 
 ![Administrator consent dialog.](./images/admin-consent.png)
 
@@ -105,7 +105,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865&scope=https%3A%2F%2Fgraph.microso
 | --- | --- | --- |
 | tenant |Required |The directory tenant that you want to request permission from. This can be in GUID or friendly name format. |
 | client_id |Required |The Application ID that the [Microsoft App Registration Portal](https://apps.dev.microsoft.com) assigned when you registered your app. |
-| scope |Required |The value passed for the `scope` parameter in this request should be the resource identifier (Application ID URI) of the resource you want, affixed with the `.default` suffix. For Microsoft Graph, the value is `https://graph.microsoft.com/.default`. This value informs the v2.0 endpoint that of all the Application permissions you have configured for your app, it should issue a token for the ones associated with the resource you want to use. |
+| scope |Required |The value passed for the `scope` parameter in this request should be the resource identifier (Application ID URI) of the resource you want, affixed with the `.default` suffix. For Microsoft Graph, the value is `https://graph.microsoft.com/.default`. This value informs the v2.0 endpoint that of all the application permissions you have configured for your app, it should issue a token for the ones associated with the resource you want to use. |
 | client_secret |Required |The Application Secret that you generated for your app in the app registration portal. |
 | grant_type |Required |Must be `client_credentials`. |
 
