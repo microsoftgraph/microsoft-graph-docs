@@ -19,6 +19,7 @@ PUT /me/drive/items/{parent-id}:/{filename}:/content
 PUT /me/drive/root:/{parent-path}/{filename}:/content
 PUT /me/drive/items/{parent-id}/children/{filename}/content
 PUT /groups/{id}/drive/items/{parent-id}/children/{filename}/content
+PUT /drivers/{driver-id}/items/{item-id}/children/{filename}/content
 ```
 
 ## Request body
