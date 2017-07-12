@@ -6,7 +6,7 @@ Check out some common and featured scenarios for working with the Microsoft Grap
 ## Popular requests
 | **Operation**	| **URL** |
 |:--------------------------|:----------------------------------------|
-|   GET my profile |	[`https://graph.microsoft.com/v1.0/me`](https://developer.microsoft.com/graph/graph-explorer/?request=me&version=v1.0) |
+|   GET my profile |	[https://graph.microsoft.com/v1.0/me](https://developer.microsoft.com/graph/graph-explorer/?request=me&version=v1.0) |
 |   GET my files | [`https://graph.microsoft.com/v1.0/me/drive/root/children`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fdrive%2Froot%2Fchildren&version=v1.0) |
 |   GET my photo | [`https://graph.microsoft.com/v1.0/me/photo/$value`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fphoto%2F%24value&version=v1.0) |
 |   GET my mail |	[`https://graph.microsoft.com/v1.0/me/messages`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmessages&version=v1.0) |
