@@ -1,11 +1,13 @@
 ﻿# Get access without a user
-Some apps run on a server without a user present. These kinds of apps are often referred to as background services or daemons. An example of such an app might be an email archival service that wakes up and runs overnight. Background services typically use the OAuth 2.0 client credentials grant flow to get access tokens from Azure AD. In this topic, we will walk through the basic steps to configure a background service and use the OAuth client credentials grant flow to get an access token from Azure AD to call Microsoft Graph. 
+Some apps call Microsoft Graph with their own identity and not on behalf of a user. In many cases, these are background services or daemons that run on a server without the presence of a signed-in user. An example of such an app might be an email archival service that wakes up and runs overnight. In some cases, apps that have a signed-in user present may also need to call Microsoft Graph under their own identity. For example, an app may need to use functionality that requires more elevated privileges in an organization than those carried by the signed-in user.  
+
+Apps that call Microsoft Graph with their own identity use the OAuth 2.0 client credentials grant flow to get access tokens from Azure AD. In this topic, we will walk through the basic steps to configure a service and use the OAuth client credentials grant flow to get an access token. 
 
 ## Authentication and authorization steps
-The basic steps required to authenticate a background service and get a token from the Azure AD v2.0 endpoint to make calls to Microsoft Graph are:
+The basic steps required to configure a service and get a token from the Azure AD v2.0 endpoint that your service can use to call Microsoft Graph under its own identity are:
 
 1. Register your app.
-2. Configure permissions for Microsoft Graph.
+2. Configure permissions for Microsoft Graph on your app.
 3. Get administrator consent.
 4. Get an access token.
 5. Use the access token to call Microsoft Graph.
@@ -16,19 +18,19 @@ To authenticate with the Azure v2.0 endpoint, you must first register your app a
 The following screenshot shows a web app registration that has been configured for a background service.
 ![Service app registration](./images/v2-service-registration.png)
 
-For a background service, you need to register your app for the Web platform and copy the following values:
+For a service that will call Microsoft Graph under its own identity, you need to register your app for the Web platform and copy the following values:
 
-- The Application Id assigned by the app registration portal.
+- The Application ID assigned by the app registration portal.
 - An Application Secret, either a password or a public/private key pair (certificate).
 - A Redirect URL for your service to receive token responses from Azure AD.
 - A Redirect URL for your service to receive admin consent responses if your app implements functionality to request administrator consent.  
 
 For steps on how to configure an app using the Microsoft App Registration Portal, see [Register your app](./auth_register_app_v2.md).
 
-With the OAuth 2.0 client credentials grant flow, your app authenticates directly at the Azure AD v2.0 `/token` endpoint using the Application Id assigned by Azure AD and the Application Secret that you create using the portal. 
+With the OAuth 2.0 client credentials grant flow, your app authenticates directly at the Azure AD v2.0 `/token` endpoint using the Application ID assigned by Azure AD and the Application Secret that you create using the portal. 
 
 ## 2. Configure permissions for Microsoft Graph
-For apps that run without a user, Microsoft Graph exposes application permissions. (Microsoft Graph also exposes delegated permissions for apps that run on behalf of a user.) You pre-configure the application permissions your app needs when you register your app. Application permissions always require administrator consent. An administrator can either consent to these permissions using the [Azure portal](https://portal.azure.com) when your app is installed in their organization, or you can provide a sign-up experience in your app through which administrators can consent to the permissions you configured. Once administrator consent is recorded by Azure AD, your app can request tokens without having to request consent again. For more detailed information about the permissions available with Microsoft Graph, see the [Permissions reference](./permissions_reference.md)
+For apps that call Microsoft Graph under their own identity, Microsoft Graph exposes application permissions. (Microsoft Graph also exposes delegated permissions for apps that call Microsoft Graph on behalf of a user.) You pre-configure the application permissions your app needs when you register your app. Application permissions always require administrator consent. An administrator can either consent to these permissions using the [Azure portal](https://portal.azure.com) when your app is installed in their organization, or you can provide a sign-up experience in your app through which administrators can consent to the permissions you configured. Once administrator consent is recorded by Azure AD, your app can request tokens without having to request consent again. For more detailed information about the permissions available with Microsoft Graph, see the [Permissions reference](./permissions_reference.md)
 
 To configure application permissions for your app in the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/): under **Microsoft Graph**, choose **Add** next to **Application Permissions** and then select the permissions your app requires in the **Select Permissions** dialog.
 
@@ -59,8 +61,8 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | redirect_uri |Required |The redirect URI where you want the response to be sent for your app to handle. It must exactly match one of the redirect URIs that you registered in the portal, except that it must be URL encoded, and it can have additional path segments. |
 | state |Recommended |A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on. |
 
-### Consent experience
-Azure AD enforces that only a tenant administrator can sign in to complete the request. The administrator will be asked to approve all the application permissions that you have requested for your app in the app registration portal. The following is an example of the consent dialog that Azure AD presents to the administrator:
+### Administrator consent experience
+With requests to the `/adminconsent` endpoint, Azure AD enforces that only a tenant administrator can sign in to complete the request. The administrator will be asked to approve all the application permissions that you have requested for your app in the app registration portal. The following is an example of the consent dialog that Azure AD presents to the administrator:
 
 ![Administrator consent dialog.](./images/admin-consent.png)
 
@@ -86,7 +88,7 @@ https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49
 ```
 
 ## 4. Get an access token
-In the OAuth 2.0 client credentials grant flow, you use the Application Id and Application Secret values that you saved when you registered your app to request an access token directly from the Azure AD v2.0 `/token` endpoint.
+In the OAuth 2.0 client credentials grant flow, you use the Application ID and Application Secret values that you saved when you registered your app to request an access token directly from the Azure AD v2.0 `/token` endpoint.
 
 You specify the pre-configured permissions by passing `https://graph.microsoft.com/.default` as the value for the `scope` parameter in the token request. See the `scope` parameter description in the token request below for details.
 
@@ -167,7 +169,12 @@ Content-Length: 407
 ```
 
 ## Supported app scenarios and resources
-Background services run on a server without the presence of a signed-in user and use the OAuth 2.0 client credentials grant to authenticate with Azure AD and get a token. For the v2.0 endpoint, you can explore this scenario further with the following resources:
+Apps that call Microsoft Graph under their own identity fall into one of two categories:
+
+- Background services (daemons) that run on a server without a signed-in user.
+- Apps that have a signed-in user but also call Microsoft Graph with their own identity; for example, to use functionality that requires more elevated privileges than those of the user.
+
+Apps that call Microsoft Graph with their own identity use the OAuth 2.0 client credentials grant to authenticate with Azure AD and get a token. For the v2.0 endpoint, you can explore this scenario further with the following resources:
 
 - For a more complete treatment of the client credentials grant flow that also includes error responses, see [Azure Active Directory v2.0 and the OAuth 2.0 client credentials flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds). 
 - For a sample that calls Microsoft Graph from a service, see the [v2.0 daemon sample](https://github.com/Azure-Samples/active-directory-dotnet-daemon-v2) on GitHub.
