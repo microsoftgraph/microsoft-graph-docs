@@ -43,6 +43,11 @@ This resource supports:
 |[List rejectedSenders](../api/group_list_rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the rejectedSenders list for this group.|
 |[Add rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the rejectedSenders collection.|
 |[Remove rejectedSender](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new new User or Group from the rejectedSenders collection.|
+|[Create setting](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
+|[Get setting](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
+|[List settings](../api/groupsetting_list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
+|[Update setting](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
+|[Delete setting](../api/groupsetting_delete.md) | None | Delete a setting object. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -101,6 +106,7 @@ This resource supports:
 |photos|[profilePhoto](profilephoto.md) collection| The profile photos owned by the group. Read-only. Nullable.|
 |planner|[Planner](planner.md)| Entry-point to Planner resource that might exist for a Unified Group.|
 |rejectedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
+|settings|[groupSetting](groupsetting.md) collection| Read-only. Nullable.|
 |sites|[site](site.md) collection|The list of SharePoint sites in this group. Access the default site with /sites/root.
 |threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|
 

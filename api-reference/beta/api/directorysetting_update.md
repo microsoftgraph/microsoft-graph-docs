@@ -16,14 +16,15 @@ PATCH /groups/{id}/settings/{id}
 | Authorization  | Bearer {token}. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. 
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|values|settingValue|The set of values that need to be updated.  NOTE: You must supply the entire collection, and cannot just update one setting of the collection.|
+| values | settingValue | The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values. |
 
 ## Response
 If successful, this method returns a `204 OK` response code.
+
 ## Example
 ##### Request
 Here is an example of the request.

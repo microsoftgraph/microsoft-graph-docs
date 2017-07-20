@@ -1,37 +1,42 @@
-# Delete a directory setting
+# Delete a group setting
 
-Delete a directory setting.
-## Prerequisites
-The following **scopes** are required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
-## HTTP request
+Delete a group setting.
+
+### Prerequisites
+
+One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
+### HTTP request
 <!-- { "blockType": "ignored" } -->
-Delete a specific tenant-wide or group setting
 ```http
-DELETE /settings/{id}
+DELETE /groupSettings/{id}
 DELETE /groups/{id}/settings/{id}
 
 ```
-## Request headers
-| Name       | Description|
+
+### Request headers
+
+| Name | Description |
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Content-Type  | application/json |
 
-## Request body
+### Request body
 Do not supply a request body for this method.
 
 
-## Response
+### Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-## Example
+### Example
 ##### Request
-Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_directorysetting"
+  "name": "delete_groupsetting"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/settings/{id}
+DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
 ##### Response
 <!-- {
@@ -46,7 +51,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete directorySetting",
+  "description": "Delete groupSetting",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
