@@ -52,18 +52,20 @@ Content-length: 346
 {
   "value": [
     {
-      "sources": [
+      "personType": [
         {
-          "type": "type-value"
+          "class": "class-value",
+          "subclass": "subclass-value"
         }
       ],
       "displayName": "displayName-value",
       "givenName": "givenName-value",
       "surname": "surname-value",
-      "title": "title-value",
-      "emailAddresses": [
+      "jobTitle": "jobTitle-value",
+      "scoredEmailAddresses": [
         {
-          "address": "address-value"
+          "address": "address-value",
+          "relevanceScore": "relevanceScore-value"
         }
       ]
     }
@@ -76,7 +78,7 @@ Content-length: 346
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Lit people",
+  "description": "List people",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

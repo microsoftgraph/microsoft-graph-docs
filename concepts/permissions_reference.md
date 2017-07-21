@@ -523,7 +523,8 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read_ |    Read users' relevant people lists (preview) | Allows the app to read a ranked list of relevant people of the signed-in user. The list includes local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype).| No |
+| _People.Read_ |    Read users' relevant people lists | Allows the app to read a scored list of relevant people of the signed-in user. The list can include local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype). | No |
+| _People.Read.All_ | Allows the app to read a scored list of relevant people of the signed-in user or other users in the signed-in user's organization. The list can include local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Yes
 
 #### Application permissions
 
@@ -531,10 +532,12 @@ None.
 
 ### Remarks
 
+People permissions are only valid for work and school accounts. 
 
 ### Example usage
 #### Delegated
-
+* _People.Read_ : Read a list of relevant people (`GET /me/people`)
+* _People.Read.All_ : Read a list of relevant people to another user in the same organization (`GET /users('{id})/people`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -640,7 +643,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _User.Read.All_  |     Read all users' full profiles           | Allows the app to read the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. | Yes |
 | _User.ReadWrite.All_ |     Read and write all users' full profiles | Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. Also allows the app to create and delete users as well as reset user passwords on behalf of the signed-in user. | Yes |
 | _User.Invite.All_  |     Invite guest users to the organization | Allows the app to invite guest users to your organization, on behalf of the signed-in user. | Yes |
-| _UserTimelineActivity.Write.CreatedByApp_  |     Write app activity to users' timeline | Allows the app to report the signed-in user's app activity information to Microsoft Timeline. | No |
 
 #### Application permissions
 
@@ -652,7 +654,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ### Remarks
 
-The only permissions valid for Microsoft accounts are _User.Read_, _User.ReadWrite_, and _UserTimelineActivity.Write.CreatedByApp_. For work or school accounts, all permissions are valid except  _UserTimelineActivity.Write.CreatedByApp_.
+The only permissions valid for Microsoft accounts are _User.Read_ and _User.ReadWrite_. For work or school accounts, all permissions are valid.
 
 With the _User.Read_ permission, an app can also read the basic company information of the signed-in user for a work or school account through the [organization](../api-reference/v1.0/resources/organization.md) resource. The following properties are available: id, displayName, and verifiedDomains.
 
