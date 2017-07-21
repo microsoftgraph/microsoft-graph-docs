@@ -1,34 +1,11 @@
-# Get person
+# Retrieve the most relevant people to you
 
-Retrieve the properties and relationships of a person object.
+Discovering who is relevant to you is a valuable insight. Microsoft Graph applications can use the People API to retrieve the most relevant people to a user. Along with generating this insight, the People API also provides fuzzy matching search support as well as retrieving the list of relevant users to another user you in the signed-in user's organization.  
+
+
 ## Prerequisites
 The following **scopes** are required to execute portions of this API: *People.Read*; *People.Read.All*
- 
-## HTTP request
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/people/{id}
-GET /users/{id}/people/{id}
-```
-## Optional query parameters
-|Name|Value|Description|
-|:---------------|:--------|:-------|
-|$filter|string|Limits the response to only those people whose record contains the specified criteria.|
-|$orderby|string|By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.|
-|$search|string|Search for people by name or alias. Supports Fuzzy matching|
-|$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.|
-|$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.|
-|$top|int|number of results to be returned.|
 
-## Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
-
-## Request body
-Do not supply a request body for this method.
-## Response
-If successful, this method returns a `200 OK` response code and [person](../resources/person.md) object in the response body.
 ## Examples
 ### Browse
 The requests in this section get the people most relevant to the signed-in user (`/me`), based on communication, collaboration, and business relationships. 
@@ -39,7 +16,7 @@ By default, each response returns 10 records, but you can change this using the 
   "name": "get_person"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/people/
+GET https://graph.microsoft.com/v1.0/me/people/
 ```
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -408,7 +385,7 @@ Content-type: application/json
 If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request additional pages of information. If the previous request has additional information, the following request gets the next page of people from the server.
 
 ```http
-GET https://graph.microsoft.com/beta/me/people/?$top=10&$skip=10
+GET https://graph.microsoft.com/v1.0/me/people/?$top=10&$skip=10
 ```
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -779,7 +756,7 @@ Content-type: application/json
 By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter. This query selects the people most relevant to you, sorts them by their display name, and then returns the first 10 people on the sorted list.
 
 ```http
-GET https://graph.microsoft.com/beta/me/people/?$orderby=displayName
+GET https://graph.microsoft.com/v1.0/me/people/?$orderby=displayName
 ```
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -1142,7 +1119,7 @@ The following example requests the 1,000 perople most relevant to `/me`. The req
 
 
 ```http
-GET https://graph.microsoft.com/beta/me/people/?$top=1000&$Select=displayName
+GET https://graph.microsoft.com/v1.0/me/people/?$top=1000&$Select=displayName
 ```
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -1221,7 +1198,7 @@ You can limit the amount of data returned from the server by using the *$select*
 The following example limits the response to the *displayName* and *ScoredEmailAddress* of the 10 most relevant people.
 
 ```http
-GET https://graph.microsoft.com/beta/me/people/?$select=displayName,scoredEmailAddresses
+GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses
 ```
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -1349,7 +1326,7 @@ The following query limits the response to people with the personType class "Per
 
 
 ```http
-GET https://graph.microsoft.com/beta/me/people/?$filter=personType/class eq 'Person' and personType/subclass eq 'OrganizationUser'
+GET https://graph.microsoft.com/v1.0/me/people/?$filter=personType/class eq 'Person' and personType/subclass eq 'OrganizationUser'
 ```
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -1723,7 +1700,7 @@ You can combine the *$select* and *$filter* parameters to create a custom list o
 The following example gets the *displayName* and *scoredEmailAddress* of people whose display name equals the specified name. In this example, only people whose display name equals "Joni Sherman" are returned. 
 
 ```http
-GET https://graph.microsoft.com/beta/me/people/?$select=displayName,scoredEmailAddresses&$Filter=displayName eq 'Joni Sherman'
+GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$Filter=displayName eq 'Joni Sherman'
 ```
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -1764,7 +1741,7 @@ Use the *$search* parameter to select people who meet a particular set of criter
 The following search query returns people relevant to `/me` whose displayName has a word that begins with the letter "b".
 
 ```http
-GET https://graph.microsoft.com/beta/me/people/?$search=b
+GET https://graph.microsoft.com/v1.0/me/people/?$search=b
 ```
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -1990,7 +1967,7 @@ Content-type: application/json
 The following request returns people relevant to `/me` whose name contains "j" and who have shown an interest in the Seattle Seahawks.
 
 ```http
-GET https://graph.microsoft.com/beta/me/people/?$search="j topic: Seattle Seahawks"
+GET https://graph.microsoft.com/v1.0/me/people/?$search="j topic: Seattle Seahawks"
 ```
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -2117,7 +2094,7 @@ The following request does a search for a person named "Megan Bowan." Because th
 the information for "Megan Bowen" is returned.
 
 ```http
-GET https://graph.microsoft.com/beta/me/people/?$search="Megan Bowan"
+GET https://graph.microsoft.com/v1.0/me/people/?$search="Megan Bowan"
 ```
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -2179,7 +2156,7 @@ Content-type: application/json
 The following request gets the people most relevant to another person in the user's organization. This request requires the *People.Read.All* scope. In this example, Joni Sherman's relevant people are displayed.
 
 ```http
-GET https://graph.microsoft.com/beta/users('benw@contoso.com')/people/
+GET https://graph.microsoft.com/v1.0/users('benw@contoso.com')/people/
 ```
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
