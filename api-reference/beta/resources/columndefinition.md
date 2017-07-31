@@ -28,7 +28,7 @@ Here is a JSON representation of a ColumnDefinition resource.
   "lookup": { "@odata.type": "microsoft.graph.lookupColumn" },
   "number": { "@odata.type": "microsoft.graph.numberColumn" },
   "personOrGroup": { "@odata.type": "microsoft.graph.personOrGroupColumn" },
-  "text": { "@odata.type": "microsoft.graph.textColumn" },
+  "text": { "@odata.type": "microsoft.graph.textColumn" }
 }
 ```
 
