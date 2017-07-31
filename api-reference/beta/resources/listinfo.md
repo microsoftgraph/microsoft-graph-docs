@@ -20,7 +20,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "hidden": false,
-  "baseTemplate": "documentLibrary | genericList | tasks | survey | links | announcements | contacts | ..."
+  "template": "documentLibrary | genericList | tasks | survey | links | announcements | contacts | ..."
 }
 ```
 
