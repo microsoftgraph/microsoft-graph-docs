@@ -47,6 +47,7 @@ The following **ViewType** are available in this report:
 - Files
 - Sites
 - Storage
+- Pages
 
 The following **PeriodType** are available in this report:
 
@@ -103,7 +104,7 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
-Data as of,Site URL,Site owner,Deleted,Last activity date (UTC),Files,Files viewed or edited,Storage used (B),Storage allocated (B),Reporting period in days
+Data as of,Site URL,Site owner,Deleted,Last activity date (UTC),Files,Files viewed or edited,Page views,Pages visited,Storage used (B),Storage allocated (B),Root Web Template,Reporting period in days
 ```
 
 ### Other valid requests
@@ -118,6 +119,7 @@ GET https://graph.microsoft.com/beta/reports/SharePointSiteUsage(view='Detail',d
 GET https://graph.microsoft.com/beta/reports/SharePointSiteUsage(view='Files',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/SharePointSiteUsage(view='Sites',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/SharePointSiteUsage(view='Storage',period='D7')/content
+GET https://graph.microsoft.com/beta/reports/SharePointSiteUsage(view='Pages',period='D7')/content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
