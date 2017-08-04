@@ -1,5 +1,7 @@
 # domain resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents a domain associated with the tenant.
 
 Use domain operations to associate domains to a tenant, verify domain ownership, and configure supported services.  Domain operations enable registrars to automate domain association for services such as Office 365. For example, as part of domain sign up, a registrar can enable a vanity domain for email, websites, authentication, etc.
@@ -16,7 +18,7 @@ To associate a domain with a tenant:
 
 5. [Configure](../api/domain_list_serviceconfigurationrecords.md) supported services by retrieving a list of records needed to enable services for the domain. Add the configuration record details to the domain's zone file using the domain registrar or DNS server configuration.
 
-### Methods
+## Methods
 
 | Method   | Return Type |Description|
 |:---------------|:--------|:----------|
@@ -30,7 +32,7 @@ To associate a domain with a tenant:
 |[ForceDelete domain](../api/domain_forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
 |[Verify domain](../api/domain_verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
 
-### Properties
+## Properties
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
@@ -45,7 +47,7 @@ To associate a domain with a tenant:
 |supportedServices|String collection| The capabilities assigned to the domain.<br><br>Can include 0, 1 or more of following values: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> The values which you can add/remove using Graph API include: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Not nullable|
 |state|[domainState](domainstate.md)| Status of asynchronous operations scheduled for the domain. |
 
-### Relationships
+## Relationships
 
 Relationships between a domain and other objects in the directory such as its verification records and service configuration records are exposed through navigation properties. You can read these relationships by targeting these navigation properties in your requests.
 
@@ -55,8 +57,7 @@ Relationships between a domain and other objects in the directory such as its ve
 |serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.<br>Read-only, Nullable |
 |verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.<br>Read-only, Nullable|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

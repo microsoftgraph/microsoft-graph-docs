@@ -1,5 +1,7 @@
 # List resource
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **list** resource represents a list in a [site][].
 This resource contains the top level properties of the list, including template and field definitions.
 

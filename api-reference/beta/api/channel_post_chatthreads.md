@@ -1,5 +1,7 @@
 # Create chat thread
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new chat thread in the specified channel by supplying the root messages.
 
 ## Prerequisites
@@ -11,7 +13,7 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/channels/{id}/threads
+POST /groups/{id}/channels/{id}/chatthreads
 ```
 ## Request headers
 | Name       | Type | Description|

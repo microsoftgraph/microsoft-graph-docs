@@ -1,8 +1,10 @@
 # web resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Specifies settings for a web application.
 
-### Properties
+## Properties
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
@@ -10,8 +12,7 @@ Specifies settings for a web application.
 |oauth2AllowImplicitFlow|Boolean| Specifies whether this web application can request tokens using the oAuth 2.0 implicit flow. The default is false. |
 |redirectUrls|String collection| Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to. |
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

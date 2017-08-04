@@ -4,7 +4,7 @@
 The **plannerPlanDetails** resource represents the additional information about a plan. Each [plan](plannerplan.md) object has a details object.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -12,19 +12,18 @@ The **plannerPlanDetails** resource represents the additional information about 
 |[Update](../api/plannerplandetails_update.md) | [plannerPlanDetails](plannerplandetails.md)	|Update **plannerPlanDetails** object. |
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|An object that specifies the descriptions of the six categories that can be associated with tasks in the plan|
 |id|String| Read-only. ID of the plan details. It is 28 characters long and case sensitive. [Format validation](planner_identifiers_disclaimer.md) is done on the service.|
 |sharedWith|[plannerUserIds](planneruserids.md)|Set of user ids that this plan is shared with. If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group. |
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

@@ -1,5 +1,7 @@
 # Get photo
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties).
 
 A GET photo operation first looks for the specified photo in the user's mailbox on Exchange Online, and if 

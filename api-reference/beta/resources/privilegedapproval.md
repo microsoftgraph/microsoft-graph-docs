@@ -1,9 +1,11 @@
 # privilegedApproval resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents an approval that is requested in Privileged Identity Management for getting into a role.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -13,7 +15,7 @@ Represents an approval that is requested in Privileged Identity Management for g
 |[Update privilegedApproval](../api/privilegedapproval_update.md) | [privilegedApproval](privilegedapproval.md)	|Update privilegedApproval object. |
 |[Myrequests](../api/privilegedapproval_myrequests.md)|[privilegedApproval](privilegedapproval.md)|Get the requestor's approval requests.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |approvalDuration|Duration||
@@ -27,13 +29,12 @@ Represents an approval that is requested in Privileged Identity Management for g
 |startDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |userId|String||
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| Read-only. Nullable.|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

@@ -1,5 +1,7 @@
 # Get Office365ActiveUsers report
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the reports of Office 365 Active Users. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d) to check the meaning of different views.

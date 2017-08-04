@@ -1,5 +1,7 @@
 # Use the Microsoft Graph API to work with Microsoft Teams
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Microsoft Teams is a chat-based workspace in Office 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, and more.
 
 In Microsoft Graph, Microsoft Teams is represented by a [group](../resources/group.md) resource. Both Microsoft Teams and Office 365 groups address 
@@ -16,6 +18,7 @@ The following are the differences at the API level:
 the [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md), and [post](../resources/post.md) resources. 
 - Currently, you can use the [Create groups](../api/group_post_groups.md) API to create an Office 365 group, but not a team in Microsoft Teams.
 - The [List joined teams](../api/user_list_joinedteams.md) method applies only to Microsoft Teams.
+- See also the [known issues](../../../concepts/known_issues.md) for these APIs.
 
 >**Note:** If you use the groups API in a [Microsoft Teams app](https://msdn.microsoft.com/en-us/microsoft-teams/index#apps-in-microsoft-teams) 
 rather than in a standalone app - for example as part of a tab or bot running in Microsoft Teams - follow the guidance in the article 

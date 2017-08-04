@@ -1,4 +1,7 @@
 # message: createForward
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a draft forward message to include a comment or update any message properties  
 all in one **createForward** call. You can then [send](../api/message_send.md) the draft message.
 

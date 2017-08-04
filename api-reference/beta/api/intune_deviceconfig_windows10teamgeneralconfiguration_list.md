@@ -1,5 +1,7 @@
 ﻿# List windows10TeamGeneralConfigurations
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 List properties and relationships of the [windows10TeamGeneralConfiguration](../resources/intune_deviceconfig_windows10teamgeneralconfiguration.md) objects.
@@ -40,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1292
+Content-Length: 2029
 
 {
   "value": [
@@ -58,12 +60,25 @@ Content-Length: 1292
       "azureOperationalInsightsBlockTelemetry": true,
       "azureOperationalInsightsWorkspaceId": "Azure Operational Insights Workspace Id value",
       "azureOperationalInsightsWorkspaceKey": "Azure Operational Insights Workspace Key value",
+      "connectAppBlockAutoLaunch": true,
+      "deviceAccountBlockExchangeServices": true,
+      "deviceAccountEmailAddress": "Device Account Email Address value",
+      "deviceAccountExchangeServerAddress": "Device Account Exchange Server Address value",
+      "deviceAccountRequirePasswordRotation": true,
+      "deviceAccountSessionInitiationProtocolAddress": "Device Account Session Initiation Protocol Address value",
       "maintenanceWindowBlocked": true,
       "maintenanceWindowDurationInHours": 0,
       "maintenanceWindowStartTime": "11:59:09.3130000",
       "miracastChannel": "one",
       "miracastBlocked": true,
       "miracastRequirePin": true,
+      "settingsBlockMyMeetingsAndFiles": true,
+      "settingsBlockSessionResume": true,
+      "settingsBlockSigninSuggestions": true,
+      "settingsDefaultVolume": 5,
+      "settingsScreenTimeoutInMinutes": 14,
+      "settingsSessionTimeoutInMinutes": 15,
+      "settingsSleepTimeoutInMinutes": 13,
       "welcomeScreenBlockAutomaticWakeUp": true,
       "welcomeScreenBackgroundImageUrl": "https://example.com/welcomeScreenBackgroundImageUrl/",
       "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"

@@ -2,10 +2,10 @@
 
 Represents a SRV record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.
 
-### Methods
+## Methods
 Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Unique identifier assigned to this entity. Not nullable, Read-only.|
@@ -21,12 +21,11 @@ Direct queries to this resource are not supported. Please see the [domain](domai
 |ttl|Int32| Value to use when configuring the *time-to-live (ttl)* property of the SRV record at the DNS host. Not nullable |
 |weight|Int32| Value to use when configuring the *weight* property of the SRV record at the DNS host. |
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

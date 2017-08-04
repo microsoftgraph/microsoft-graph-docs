@@ -1,4 +1,6 @@
-﻿# windowsProtectionState resource type
+﻿#  resource type
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -11,7 +13,7 @@ Device protection status entity.
 |[Create windowsProtectionState](../api/intune_endpointprotection_windowsprotectionstate_create.md)|[windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md)|Create a new [windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md) object.|
 |[Delete windowsProtectionState](../api/intune_endpointprotection_windowsprotectionstate_delete.md)|None|Deletes a [windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md).|
 |[Update windowsProtectionState](../api/intune_endpointprotection_windowsprotectionstate_update.md)|[windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md)|Update the properties of a [windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md) object.|
-|[List windowsDeviceMalwareStates](../api/intune_endpointprotection_windowsprotectionstate_list_windowsdevicemalwarestate.md)|[windowsDeviceMalwareState](../resources/intune_endpointprotection_windowsdevicemalwarestate.md) collection|Get the windowsDeviceMalwareStates from the detectedMalwareState navigation property.|
+|[List windowsDeviceMalwareStates](../api/intune_endpointprotection_windowsdevicemalwarestate_list.md)|[windowsDeviceMalwareState](../resources/intune_endpointprotection_windowsdevicemalwarestate.md) collection|List properties and relationships of the [windowsDeviceMalwareState](../resources/intune_endpointprotection_windowsdevicemalwarestate.md) objects.|
 
 ## Properties
 |Property|Type|Description|

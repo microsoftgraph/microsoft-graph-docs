@@ -1,5 +1,7 @@
 ﻿# assign action
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Not yet documented
@@ -14,7 +16,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}assign
-POST /deviceCompliancePolicyAssignments/{deviceCompliancePolicyAssignmentsId}/deviceCompliancePolicy/assign
 POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy/assign
 ```
 
@@ -44,14 +45,15 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}assign
 
 Content-type: application/json
-Content-length: 251
+Content-length: 280
 
 {
   "deviceCompliancePolicyGroupAssignments": [
     {
       "@odata.type": "#microsoft.graph.deviceCompliancePolicyGroupAssignment",
       "id": "fe44007c-007c-fe44-7c00-44fe7c0044fe",
-      "targetGroupId": "Target Group Id value"
+      "targetGroupId": "Target Group Id value",
+      "excludeGroup": true
     }
   ]
 }

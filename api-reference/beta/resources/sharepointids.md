@@ -1,5 +1,7 @@
 # SharePointIds resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **SharePointIds** resource groups the various identifiers for an item stored in a SharePoint site or OneDrive for Business into a single structure.
 
 **Note:** items returned from OneDrive personal will not include a **SharePointIds** facet.

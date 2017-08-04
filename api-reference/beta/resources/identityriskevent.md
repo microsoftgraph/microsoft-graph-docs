@@ -1,5 +1,7 @@
 # identityRiskEvent resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 A risk event detected by [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/). Specific risk event types include:
 * [sign-ins from anonymous IP addresses](anonymousipriskevent.md)
 * [sign-ins from malware-infected devices](malwareriskevent.md)

@@ -1,5 +1,7 @@
 # Create acceptedSender
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Add a new user or group to the acceptedSender list.
 
 Specify the user or group in `@odata.id` in the request body. Users in the accepted senders list can post 

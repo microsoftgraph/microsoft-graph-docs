@@ -1,5 +1,7 @@
 # Create rejectedSender
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Add a new user or group to the rejectedSender list.
 
 Specify the user or group in `@odata.id` in the request body. Users in the rejected senders list cannot 

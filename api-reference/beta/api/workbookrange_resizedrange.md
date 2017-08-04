@@ -1,29 +1,32 @@
 # workbookRange: resizedRange
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Files.Read,
 Files.ReadWrite_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-### Parameters
+## Parameters
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |deltarows|Int32|The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it|
 |deltaColumns|Int32|The number of columnsby which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.|
 
-### Request body
+## Request body
 In the request URL, provide following query parameters with values.
 
 | Parameter	   | Type	|Description|
@@ -34,7 +37,7 @@ In the request URL, provide following query parameters with values.
 ### Response
 If successful, this method returns `200, OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

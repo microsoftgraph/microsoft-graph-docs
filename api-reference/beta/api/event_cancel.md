@@ -1,5 +1,7 @@
 # event: cancel
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 This action allows the organizer of a meeting to send a cancellation message and cancel the event. 
 
 The action moves the event to the Deleted Items folder. The organizer can also cancel an occurrence of a recurring meeting 

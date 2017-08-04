@@ -1,5 +1,7 @@
 ﻿# List iosUpdateConfigurations
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 List properties and relationships of the [iosUpdateConfiguration](../resources/intune_deviceconfig_iosupdateconfiguration.md) objects.
@@ -40,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 751
+Content-Length: 787
 
 {
   "value": [
@@ -60,7 +62,8 @@ Content-Length: 751
       "activeHoursEnd": "11:59:00.8990000",
       "scheduledInstallDays": [
         "monday"
-      ]
+      ],
+      "utcTimeOffsetInMinutes": 6
     }
   ]
 }

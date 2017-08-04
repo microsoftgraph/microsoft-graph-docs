@@ -1,4 +1,7 @@
 # privilegedRole: selfActivate
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Activate the role that is assigned to the requestor.
 
 ## Prerequisites
@@ -31,6 +34,7 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 If successful, this method returns `200, OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
 
+Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
 ## Example
 Here is an example of how to call this API.
 ##### Request

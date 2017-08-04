@@ -1,4 +1,6 @@
-﻿# remoteActionAudit resource type
+﻿#  resource type
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -17,9 +19,13 @@ Report of remote actions initiated on the devices belonging to a certain tenant.
 |---|---|---|
 |id|String|Report Id.|
 |deviceDisplayName|String|Intune device name.|
-|userName|String|User who initiated the device action, format is UPN.|
-|action|String|The action name. Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`.|
+|userName|String|\[deprecated\] Please use InitiatedByUserPrincipalName instead.|
+|initiatedByUserPrincipalName|String|User who initiated the device action, format is UPN.|
+|action|String|The action name. Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`.|
 |requestDateTime|DateTimeOffset|Time when the action was issued, given in UTC.|
+|deviceOwnerUserPrincipalName|String|Upn of the device owner.|
+|deviceIMEI|String|IMEI of the device.|
+|actionState|String|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
 ## Relationships
 None
@@ -37,8 +43,12 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "deviceDisplayName": "String",
   "userName": "String",
+  "initiatedByUserPrincipalName": "String",
   "action": "String",
-  "requestDateTime": "String (timestamp)"
+  "requestDateTime": "String (timestamp)",
+  "deviceOwnerUserPrincipalName": "String",
+  "deviceIMEI": "String",
+  "actionState": "String"
 }
 ```
 

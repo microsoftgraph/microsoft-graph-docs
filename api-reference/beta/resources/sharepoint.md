@@ -1,5 +1,7 @@
 # Working with SharePoint sites in Microsoft Graph
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 >**Note:** this functionality is an early developer preview and is only available through the Microsoft Graph API **beta** endpoint.
 The API design is likely to change as we incorporate feedback from developers.
 

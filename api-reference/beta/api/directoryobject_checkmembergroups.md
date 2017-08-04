@@ -1,5 +1,7 @@
 # Check member groups
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Check for membership in a specified list of groups, and returns from that list those groups
 of which the specified user, group, service principal or directory object is a member. This function is transitive.
 

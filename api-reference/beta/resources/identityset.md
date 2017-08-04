@@ -1,5 +1,7 @@
 # IdentitySet resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **IdentitySet** resource is a keyed collection of [identity](identity.md) resources.
 It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
 

@@ -1,5 +1,7 @@
 # ListInfo resource
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **listInfo** complex type provides additional information about a [list][].
 
 [list]: list.md

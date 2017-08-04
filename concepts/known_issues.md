@@ -55,10 +55,11 @@ Examples of group features that support only delegated permissions:
 * Group conversations, events, photo
 * External senders, accepted or rejected senders, group subscription
 * User favorites and unseen count
+* Microsoft Teams channels and chats.
 
 ### Teams in Microsoft Teams (preview)
 
-Microsoft Teams and Office 365 groups share similar functionality. All group APIs can be used with teams, with the exception that the Create group API does not currently allow you to create a team.  Future API releases will support this.
+Microsoft Teams and Office 365 groups [share similar functionality](../api-reference/beta/resources/teams_api_overview.md). All group APIs can be used with teams, with the exception that the Create group API does not currently allow you to create a team.  Future API releases will support this.
 
 ### Microsoft Teams channels (preview)
 
@@ -68,6 +69,9 @@ Currently, you can read and create channels, but you cannot update or delete the
 
 Currently, you can create chat threads in channels, but you cannot read existing chat threads or add replies to them. Also, you cannot read or write direct chats between users that are outside the scope of a team or channel.  Future API releases will add additional capabilities in this area.
 
+### Microsoft Teams user's list of joined teams (preview)
+
+Currrently, [listing the teams a user has joined](../api-reference/beta/api/user_list_joinedteams.md) only works for the 'me' user for which the caller has [delegated permissions](permissions_reference.md).  Future releases will support this operation for any specified user ID.
 
 ### Adding and getting attachments of group posts
 
@@ -102,20 +106,25 @@ When attempting to access events in a calendar that has been shared by another u
 GET \users('{id}')\calendars('{id}')\events
 ```
 
-You may get HTTP 500 with the error code `ErrorInternalServerTransientError`.
+You may get HTTP 500 with the error code `ErrorInternalServerTransientError`. The error occurs because:
 
-Historically, there are two ways that calendar sharing has been implemented, which, for the purpose of differentiating them, 
-are referred to as the "old" implementation and "new" implementation. The error occurs because: 
+- Historically, there are two ways that calendar sharing has been implemented, which, for the purpose of differentiating them, 
+are referred to as the "old" approach and "new" approach.
+- The new approach is currently available for sharing calendars with view or edit permissions, but not with delegate permissions. 
+- You can use the calendar REST API to view or edit shared calendars only if the calendars were shared using the **new** approach. 
+- You cannot use the calendar REST API to view or edit such calendars (or their events) if the calendars were shared using the **old** approach.
 
-- Currently, only Outlook on the web, Outlook on iOS, and Outlook on Android support sharing calendars on Office 365 in the new way.
-- You can use the calendar REST API to view or edit shared calendars, only if the calendars were shared in the new way. 
-- You cannot use the calendar REST API to view or edit calendars (or their events) that have been shared in the old way.
 
-To work around this, the calendar owner should re-share the calendar in Outlook on the web, Outlook on iOS, or Outlook on Android, and you 
-should re-accept the calendar using Outlook on the web. After re-accepting, one way to verify if the calendar has been shared using the new model is 
-to successfully view the shared calendar in Outlook on iOS or Outlook on Android.
+If a calendar was shared with view or edit permissions but using the old approach, you can now work around the error and manually upgrade the calendar sharing to use the new approach. 
+Over time, Outlook will autmatically upgrade all shared calendars to use the new approach, including calendars shared with delegate permissions. 
 
-A calendar shared with you in the new way appears as just another calendar in your mailbox. You can use the calendar REST API to view or edit 
+To manually upgrade a shared calendar to use the new approach, follow these steps:
+1.	The recipient removes the calendar that was previously shared to them.
+2.	The calendar owner re-shares the calendar in Outlook on the web, Outlook on iOS, or Outlook on Android.
+3.	The recipient re-accepts the shared calendar using Outlook on the web. (It will be possible to use other Outlook clients soon.)
+4.	The recipient verifies that the calendar has been re-shared successfully using the new approach by being able to view the shared calendar in Outlook on iOS or Outlook on Android.
+
+A calendar shared with you in the new approach appears as just another calendar in your mailbox. You can use the calendar REST API to view or edit 
 events in the shared calendar, as if it's your own calendar. As an example:
 
 ```http

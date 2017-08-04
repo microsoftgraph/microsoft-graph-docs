@@ -1,5 +1,7 @@
 # automaticRepliesSetting resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Configuration settings to automatically notify the sender of an incoming email with a message from the 
 signed-in user. For example, an automatic reply to notify that the signed-in user is unavailable to 
 respond to emails. 

@@ -1,5 +1,7 @@
 ﻿#  resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties for the installation state of a mobile app for a device.
@@ -25,6 +27,7 @@ Contains properties for the installation state of a mobile app for a device.
 |osVersion|String|OS Version|
 |osDescription|String|OS Description|
 |userName|String|Device User Name|
+|userPrincipalName|String|User Principal Name|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -50,7 +53,8 @@ Here is a JSON representation of the resource.
   "errorCode": 1024,
   "osVersion": "String",
   "osDescription": "String",
-  "userName": "String"
+  "userName": "String",
+  "userPrincipalName": "String"
 }
 ```
 

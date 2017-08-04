@@ -59,7 +59,7 @@ To register your app, follow these steps; be sure to copy the indicated values t
 The following table shows the properties that you need to configure and copy for different kinds of apps. _Assigned_ means that you should use the value assigned by Azure AD.
 
 
-| App type | Platform | Application Id | Application Secret | Redirect URI/URL | Implicit Flow 
+| App type | Platform | Application ID | Application Secret | Redirect URI/URL | Implicit Flow 
 | --- | --- | --- | --- | --- | --- |
 | Native/Mobile | Native | Assigned  | No | Assigned | No |
 | Web App | Web | Assigned | Yes | Yes | Optional <br/>Open ID Connect middleware uses hybrid flow by default (Yes) | 
@@ -72,10 +72,10 @@ For more detail about the App Registration Portal and the properties you can con
 
 ## Azure AD endpoint considerations
 
-You use the [Azure portal](https://aka.ms/aadapplist) to register your app for the Azure AD endpoint. You configure the same basic properties like Application Id, Application Secret, and Redirect URI/URL, as you would for the v2.0 endpoint; however, there are some important differences to be aware of: 
+You use the [Azure portal](https://aka.ms/aadapplist) to register your app for the Azure AD endpoint. You configure the same basic properties like Application ID, Application Secret, and Redirect URI/URL, as you would for the v2.0 endpoint; however, there are some important differences to be aware of: 
 
 - You can only use a work or school account to register an app.
-- Your app will require a different Application Id for each platform.
+- Your app will require a different Application ID for each platform.
 - If your app is a multi-tenant app, you must explicitly configure it to be multi-tenant at the portal.
 - You must pre-configure all the permissions (including Microsoft Graph permissions) that your app needs at the portal. 
 

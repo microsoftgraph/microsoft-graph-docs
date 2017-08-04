@@ -1,5 +1,7 @@
 # TableCollection: add
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.
 ## Prerequisites
 The following **scopes** are required to execute this API: 

@@ -1,5 +1,7 @@
 # Get OneDriveActivity report
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the reports of OneDrive User Activity. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - OneDrive for Business activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353) to check the meaning of different views.

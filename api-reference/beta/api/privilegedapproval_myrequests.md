@@ -1,25 +1,31 @@
 # privilegedApproval: myRequests
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the requestor's approval requests.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
-### HTTP request
+
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedApproval/myRequests
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and [privilegedApproval](../resources/privilegedapproval.md) object in the response body.
 
-### Example
+Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
+
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

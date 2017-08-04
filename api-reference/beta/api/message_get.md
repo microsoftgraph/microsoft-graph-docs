@@ -1,5 +1,7 @@
 # Get message
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the properties and relationships of the [message](../resources/message.md) object.
 
 For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message.

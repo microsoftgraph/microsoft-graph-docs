@@ -1,5 +1,7 @@
 # List members
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get a list of the group's direct members. A group can have users, contacts, and other groups as members.
 This operation is not transitive.
 ## Prerequisites

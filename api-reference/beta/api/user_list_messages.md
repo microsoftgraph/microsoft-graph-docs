@@ -1,5 +1,7 @@
 # List messages
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). 
 
 In particular, you can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user.

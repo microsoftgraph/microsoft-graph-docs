@@ -1,5 +1,7 @@
 # Delete permission
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Remove access to a [DriveItem](../resources/driveitem.md).
 
 Only permissions that are not inherited can be deleted.

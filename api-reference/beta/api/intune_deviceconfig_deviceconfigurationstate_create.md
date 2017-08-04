@@ -1,5 +1,7 @@
 ﻿# Create deviceConfigurationState
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md) object.
@@ -47,7 +49,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/deviceConfigurationStates/
 Content-type: application/json
-Content-length: 776
+Content-length: 978
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationState",
@@ -55,10 +57,14 @@ Content-length: 776
     {
       "@odata.type": "microsoft.graph.deviceConfigurationSettingState",
       "setting": "Setting value",
+      "settingName": "Setting Name value",
       "instanceDisplayName": "Instance Display Name value",
       "state": "notApplicable",
       "errorCode": 9,
       "errorDescription": "Error Description value",
+      "userId": "User Id value",
+      "userName": "User Name value",
+      "userEmail": "User Email value",
       "userPrincipalName": "User Principal Name value",
       "sources": [
         {
@@ -66,7 +72,8 @@ Content-length: 776
           "id": "Id value",
           "displayName": "Display Name value"
         }
-      ]
+      ],
+      "currentValue": "Current Value value"
     }
   ],
   "displayName": "Display Name value",
@@ -82,7 +89,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 825
+Content-Length: 1027
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationState",
@@ -91,10 +98,14 @@ Content-Length: 825
     {
       "@odata.type": "microsoft.graph.deviceConfigurationSettingState",
       "setting": "Setting value",
+      "settingName": "Setting Name value",
       "instanceDisplayName": "Instance Display Name value",
       "state": "notApplicable",
       "errorCode": 9,
       "errorDescription": "Error Description value",
+      "userId": "User Id value",
+      "userName": "User Name value",
+      "userEmail": "User Email value",
       "userPrincipalName": "User Principal Name value",
       "sources": [
         {
@@ -102,7 +113,8 @@ Content-Length: 825
           "id": "Id value",
           "displayName": "Display Name value"
         }
-      ]
+      ],
+      "currentValue": "Current Value value"
     }
   ],
   "displayName": "Display Name value",

@@ -1,5 +1,7 @@
 # message: delta
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get a set of messages that have been added, deleted, or updated in a specified folder.
 
 A **delta** function call for messages in a folder is similar to a GET request, except that by appropriately 
@@ -7,9 +9,9 @@ applying [state tokens](../../../concepts/delta_query_overview.md) in one or mor
 that folder](../../../concepts/delta_query_messages.md). This allows you to maintain and synchronize a local store of a user's messages without 
 having to fetch the entire set of messages from the server every time.  
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: _Mail.Read_; _Mail.ReadWrite_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/delta
@@ -44,7 +46,7 @@ _id_ property is always returned.
   an `$orderby` expression, the return order is not guaranteed. 
 - There is no support for `$search`.
 
-### Request headers
+## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
@@ -55,7 +57,7 @@ _id_ property is always returned.
 ### Response
 If successful, this method returns a `200, OK` response code and [message](../resources/message.md) collection object in the response body.
 
-### Example
+## Example
 ##### Request
 The following example shows how to make a single **delta** function call, and limit the maximum number of messages 
 in the response body to 2.

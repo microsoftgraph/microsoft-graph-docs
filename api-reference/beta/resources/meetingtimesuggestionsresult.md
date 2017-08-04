@@ -1,5 +1,7 @@
 # meetingTimeSuggestionsResult resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 A collection of meeting suggestions if there is any, or the reason if there isn't.
 
 The following are the possible reasons that [findMeetingTimes](../api/user_findmeetingtimes.md) does not return any meeting suggestions.

@@ -1,5 +1,7 @@
 # Update an item in a list
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the properties on a **[listItem][]**.
 
 ## Prerequisites
@@ -8,7 +10,7 @@ One of the following scopes is required to execute this request:
 
 * Sites.ReadWrite.All
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
@@ -16,18 +18,18 @@ One of the following scopes is required to execute this request:
 PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
 
-### Optional request headers
+## Optional request headers
 
 | Name       | Value | Description
 |:-----------|:------|:--------------------------------------------------------
 | _if-match_ | etag  | If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.
 
 
-### Request body
+## Request body
 
 In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.
 
-### Example
+## Example
 
 Here is an example that updates the Color and Quantity fields of the list item with new values.
 All other values on the listItem are left alone. 

@@ -1,5 +1,7 @@
 # Get device command status
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the status of a command on a device. For the  full list of status codes, see [List of actionStatus](#list-of-actionstatus).
 
 ## Prerequisites
@@ -115,11 +117,11 @@ HTTP/1.1 200 OK
 Get a response payload for a specific action on a device. The response payload is used when querying an app service to carry data back.
 
 
-### Prerequisites
+## Prerequisites
 
 The following scope is required to execute this API: *Device.Command*
 
-### HTTP request
+## HTTP request
 
 ```http
 
@@ -127,7 +129,7 @@ GET me/beta/devices/{id}/command/{id}/responsePayload
 
 ```
 
-### Request headers
+## Request headers
 
 
 | Header |Value
@@ -151,7 +153,7 @@ HTTP/1.1 200 OK
 
 ```
 
-### Example
+## Example
 In this example, you will need the ID of the device and the ID of the command that has been issued to a device. The device ID is returned when issuing a GET call on `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command.
 
 #### Request

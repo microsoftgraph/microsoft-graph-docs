@@ -1,5 +1,7 @@
 ﻿# Update mobileAppInstallStatus
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object.
@@ -38,6 +40,7 @@ The following table shows the properties that are required when you create a [mo
 |osVersion|String|OS Version|
 |osDescription|String|OS Description|
 |userName|String|Device User Name|
+|userPrincipalName|String|User Principal Name|
 
 
 
@@ -50,7 +53,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}
 Content-type: application/json
-Content-length: 312
+Content-length: 365
 
 {
   "deviceName": "Device Name value",
@@ -60,7 +63,8 @@ Content-length: 312
   "errorCode": 9,
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
-  "userName": "User Name value"
+  "userName": "User Name value",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 
@@ -69,7 +73,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 422
+Content-Length: 475
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -81,7 +85,8 @@ Content-Length: 422
   "errorCode": 9,
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
-  "userName": "User Name value"
+  "userName": "User Name value",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 

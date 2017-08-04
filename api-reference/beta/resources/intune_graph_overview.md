@@ -1,7 +1,26 @@
-# Working with Intune in Microsoft Graph  > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+# Working with Intune in Microsoft Graph  
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
 The Intune Graph API enables access to Intune information programmatically for your tenant, and the API performs the same Intune operations as those available through the **Azure Portal**.  
-## Sections of the Intune Graph API documentationThe following sections provide the reference documentation for the Intune Graph API and resources:- [Managed apps](intune_apps_app_conceptual.md)- [Company terms and conditions](intune_company_conceptual.md)- [Enroll corporate-owned devices](intune_corporate_enrollment_conceptual.md)- [Device configuration](intune_device_configuration_conceptual.md)- [Device managmement](intune_devicefe_conceptual.md)- [App protection](intune_app_protection_conceptual.md)- [Enroll devices for management](intune_onboarding_conceptual.md)- [Role-based access control](intune_rbac_conceptual.md)- [Telecom expense management](intune_tem_conceptual.md)## Using the Intune Graph API
+
+## Sections of the Intune Graph API documentation
+
+The following sections provide the reference documentation for the Intune Graph API and resources:
+
+- [Managed apps](intune_apps_app_conceptual.md)
+- [Company terms and conditions](intune_company_conceptual.md)
+- [Enroll corporate-owned devices](intune_corporate_enrollment_conceptual.md)
+- [Device configuration](intune_device_configuration_conceptual.md)
+- [Device managmement](intune_devicefe_conceptual.md)
+- [App protection](intune_app_protection_conceptual.md)
+- [Enroll devices for management](intune_onboarding_conceptual.md)
+- [Role-based access control](intune_rbac_conceptual.md)
+- [Telecom expense management](intune_tem_conceptual.md)
+
+## Using the Intune Graph API
 
 Intune provides data into the Microsoft Graph in the same way as other cloud services do, with rich entity information and relationship navigation.  Use Microsoft Graph to combine information from other services and Intune to build rich cross-service applications for IT professionals or end users.     
 

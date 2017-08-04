@@ -1,5 +1,7 @@
 # List assignments
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects that are associated with the role. Each [privilegedRoleAssignment](../resources/privilegedroleassignment.md) represents a role assignment to a user.
 ## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
@@ -25,6 +27,8 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects in the response body.
+
+Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
 ## Example
 ##### Request
 Here is an example of the request.

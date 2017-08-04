@@ -1,5 +1,7 @@
 # Delete subscription
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Delete a subscription.
 ## Prerequisites
 One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite*, or *Files.ReadWrite.All*

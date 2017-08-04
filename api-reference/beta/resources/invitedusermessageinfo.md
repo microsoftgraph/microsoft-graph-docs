@@ -1,9 +1,11 @@
 # Configuring the invitation message
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The invitedUserMessageInfo object allows you to configure the [invitation](invitation.md) message.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |ccRecipients|[Recipients](recipients.md)|Additional recipients the invitation message should be sent to. Currently only 1 additional recipient is supported.|
@@ -11,8 +13,7 @@ The invitedUserMessageInfo object allows you to configure the [invitation](invit
 |messageLanguage|String|The language you want to send the default message in. If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody. The language format should be in ISO 639. The default is en-US.|
 
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource
 
 <!-- {"blockType": "resource", "@odata.type": "microsoft.graph.invitedUserMessageInfo"} -->

@@ -1,5 +1,7 @@
 # Update schemaExtension
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md).
 
 The update applies to all the resources that are included in the **targetTypes** property of the extension. These resources are among the 
@@ -19,7 +21,7 @@ The following **scope** is required to execute this API: *Directory.AccessAsUser
 PATCH /schemaExtensions/{id}
 ```
 
-### Optional request headers
+## Optional request headers
 
 | Name      |Description|
 |:----------|:----------|

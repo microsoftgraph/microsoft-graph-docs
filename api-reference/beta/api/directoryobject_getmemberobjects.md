@@ -1,5 +1,7 @@
 # Get member objects
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
  Returns all the groups, administrative units and directory roles that a user, group, service principals or directory object is a member of. This function is transitive. 
  > Note: Only users can be members of directory roles.
 

@@ -1,4 +1,4 @@
-# Customize responses: optional query parameters
+# Use query parameters to customize responses
 
 Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following following query parameters are supported.
 

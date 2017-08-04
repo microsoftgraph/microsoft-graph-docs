@@ -1,5 +1,7 @@
 ﻿# Create iosUpdateConfiguration
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [iosUpdateConfiguration](../resources/intune_deviceconfig_iosupdateconfiguration.md) object.
@@ -41,6 +43,7 @@ The following table shows the properties that are required when you create a ios
 |activeHoursStart|TimeOfDay|Active Hours Start (active hours mean the time window when updates install should not happen)|
 |activeHoursEnd|TimeOfDay|Active Hours End (active hours mean the time window when updates install should not happen)|
 |scheduledInstallDays|String collection|Days in week for which active hours are configured. This collection can contain a maximum of 7 elements. Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|utcTimeOffsetInMinutes|Int32|UTC Time Offset indicated in minutes|
 
 
 
@@ -53,7 +56,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 546
+Content-length: 578
 
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
@@ -69,7 +72,8 @@ Content-length: 546
   "activeHoursEnd": "11:59:00.8990000",
   "scheduledInstallDays": [
     "monday"
-  ]
+  ],
+  "utcTimeOffsetInMinutes": 6
 }
 ```
 
@@ -78,7 +82,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 654
+Content-Length: 686
 
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
@@ -96,7 +100,8 @@ Content-Length: 654
   "activeHoursEnd": "11:59:00.8990000",
   "scheduledInstallDays": [
     "monday"
-  ]
+  ],
+  "utcTimeOffsetInMinutes": 6
 }
 ```
 

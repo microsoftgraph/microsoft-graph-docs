@@ -1,5 +1,7 @@
 # invitation manager
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use the invitation manager to create an invite, in order to add an external user to the organization. 
 
 The invitation process uses the following flow:
@@ -12,12 +14,12 @@ The invitation process uses the following flow:
 Creating an invitation will return a redemption URL in the response (*inviteRedeemUrl*). The create invitation API can automatically send an email containing the redemption URL to the invited user, by setting the *sendInvitationMessage* to true. You can also customize the message that will be sent to the invited user. Instead, if you wish to send the redemption URL through some other means, you can set the *sendInvitationMessage* to false and use the redeem URL from the response to craft your own communication. Currently, there is no API to perform the redemption process. The invited user has to click on the *inviteRedeemUrl* link sent in the communication in the step above, and go through the interactive redemption process in a browser. Once completed, the invited user becomes an external user in the organization.
 
 
-### Methods
+## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Create invitation](../api/invitation_post.md) | invitation | Write properties and relationships of invitation object.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|The display name of the user being invited.|
@@ -29,13 +31,12 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 |invitedUserType|String|The userType of the user being invited. By default, this is Guest. You can invite as Member if you're are company administrator. |
 |status|String|The status of the invitation. Possible values: Completed, InProgress, and Error|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |invitedUser|[User](user.md)|The user created as part of the invitation creation. Read-Only|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.invitations" } -->

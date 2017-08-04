@@ -1,29 +1,31 @@
 # Get endpoint
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the properties and relationships of a specific [endpoint](../resources/endpoint.md) object.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/endpoints/{id}
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required.|
 | Content-Type   | Application/Json |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [Endpoint](../resources/endpoint.md) object in the response body.
-### Example
+## Example
 ##### Request
 
 <!-- {

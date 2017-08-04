@@ -1,5 +1,7 @@
 # message: forward
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Forward a message, add a comment or modify any updateable properties  
 all in one **forward** call. The message is saved in the Sent Items folder.
 

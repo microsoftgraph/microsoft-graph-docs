@@ -1,8 +1,10 @@
 # domainState resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents the status of asynchronous operations scheduled on a domain.
 
-### Properties
+## Properties
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
@@ -10,8 +12,7 @@ Represents the status of asynchronous operations scheduled on a domain.
 | operation | String | Type of asynchronous operation. The values can be *ForceDelete* or *Verification* |
 | status | String | Current status of the operation. <br> *Scheduled* - Operation has been scheduled but has not started. <br> *InProgress* - Task has started and is in progress. <br> *Failed* - Operation has failed. |
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

@@ -1,5 +1,7 @@
 # FolderView resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **FolderView** resource provides or sets recommendations on the user-experience of a folder.
 
 It is available on the [folder][folder-facet] property of [driveItem][item-resource] resources.

@@ -1,5 +1,7 @@
 # WorksheetCollection: add
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.
 ## Prerequisites
 The following **scopes** are required to execute this API: 

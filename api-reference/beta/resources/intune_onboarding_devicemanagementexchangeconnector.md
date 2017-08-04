@@ -1,5 +1,7 @@
 ﻿#  resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Entity which represents a connection to an Exchange environment.
@@ -22,6 +24,7 @@ Entity which represents a connection to an Exchange environment.
 |primarySmtpAddress|String|Email address used to configure the Service To Service Exchange Connector.|
 |serverName|String|The name of the server hosting the Exchange Connector.|
 |exchangeConnectorType|String|The type of Exchange Connector Configured. Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
+|version|String|The version of the ExchangeConnectorAgent|
 
 ## Relationships
 None
@@ -41,7 +44,8 @@ Here is a JSON representation of the resource.
   "status": "String",
   "primarySmtpAddress": "String",
   "serverName": "String",
-  "exchangeConnectorType": "String"
+  "exchangeConnectorType": "String",
+  "version": "String"
 }
 ```
 

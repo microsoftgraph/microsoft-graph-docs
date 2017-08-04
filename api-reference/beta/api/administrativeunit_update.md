@@ -1,5 +1,7 @@
 # Update administrativeunit
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the properties of an [administrativeUnit](../resources/administrativeunit.md) object.
 ## Prerequisites
 The following **scope** is required to execute this API: *Directory.AccessAsUser.All*

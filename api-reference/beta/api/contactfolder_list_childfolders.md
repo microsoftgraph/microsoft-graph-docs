@@ -1,5 +1,7 @@
 # List childFolders
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get a collection of child folders under the specified contact folder.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:

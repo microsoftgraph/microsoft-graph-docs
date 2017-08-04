@@ -1,5 +1,7 @@
 # Delete an item from a list
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Removes an item from a [list][].
 
 [list]: ../resources/list.md
@@ -20,17 +22,17 @@ One of the following scopes is required to execute this request:
 DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
-### Optional request headers
+## Optional request headers
 
 | Name       | Value | Description
 |:-----------|:------|:--------------------------------------------------------
 | _if-match_ | etag  | If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
 
-### Request body
+## Request body
 
 Do not supply a request body with this method.
 
-### Example
+## Example
 
 <!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
 

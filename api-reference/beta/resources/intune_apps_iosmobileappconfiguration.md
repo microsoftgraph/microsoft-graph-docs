@@ -1,5 +1,7 @@
 ﻿# iosMobileAppConfiguration resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties, inherited properties and actions for iOS mobile app configurations.
@@ -14,6 +16,7 @@ Inherits from [managedDeviceMobileAppConfiguration](../resources/intune_apps_man
 |[Create iosMobileAppConfiguration](../api/intune_apps_iosmobileappconfiguration_create.md)|[iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md)|Create a new [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) object.|
 |[Delete iosMobileAppConfiguration](../api/intune_apps_iosmobileappconfiguration_delete.md)|None|Deletes a [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md).|
 |[Update iosMobileAppConfiguration](../api/intune_apps_iosmobileappconfiguration_update.md)|[iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md)|Update the properties of a [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) object.|
+|[assign action](../api/intune_apps_iosmobileappconfiguration_assign.md)|None|Not yet documented|
 |[List mdmAppConfigGroupAssignments](../api/intune_apps_mdmappconfiggroupassignment_list.md)|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) collection|List properties and relationships of the [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) objects.|
 |[List managedDeviceMobileAppConfigurationDeviceStatuses](../api/intune_apps_manageddevicemobileappconfigurationdevicestatus_list.md)|[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) collection|List properties and relationships of the [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) objects.|
 |[List managedDeviceMobileAppConfigurationUserStatuses](../api/intune_apps_manageddevicemobileappconfigurationuserstatus_list.md)|[managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md) collection|List properties and relationships of the [managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md) objects.|

@@ -1,5 +1,7 @@
 # List memberOf
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get groups and administrative units that the group is a direct member of. 
 
 This operation is not transitive. Unlike getting a user's Office 365 Groups, this 

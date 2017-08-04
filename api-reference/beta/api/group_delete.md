@@ -1,5 +1,7 @@
 # Delete group
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Deletes a group.
 
 When a group is deleted, the item is added to [deleted items](../resources/directory.md). The group will remain in deleted items for up to 30 days. A group can be fully restored from deleted items during the 30 days. After 30 days, deleted items are permanently deleted.

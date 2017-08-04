@@ -1,5 +1,7 @@
 # chatMessage resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents an individual chat message within a [chatThread](chatthread.md) entity.
 
 Currently, you can [create the first (root) chat message in a new reply chain](../api/channel_post_chatthreads.md).  Other chat messages exist implicitly, but cannot be directly read or written.  Future API releases will support this.

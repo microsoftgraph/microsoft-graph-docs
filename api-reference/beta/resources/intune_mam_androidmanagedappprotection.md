@@ -1,5 +1,7 @@
 ﻿#  resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device
@@ -57,6 +59,7 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |targetedSecurityGroupsCount|Int32|The number of groups to which the configuration is deployed. Read only property. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |screenCaptureBlocked|Boolean|Indicates whether a managed user can take screen captures of managed apps|
+|disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|When this setting is enabled, app level encryption is disabled if device level encryption is enabled|
 |encryptAppData|Boolean|Indicates whether application data for managed apps should be encrypted|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 
@@ -116,6 +119,7 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "screenCaptureBlocked": true,
+  "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
   "encryptAppData": true,
   "deployedAppCount": 1024
 }

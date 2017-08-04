@@ -1,5 +1,7 @@
 # visualInfo resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 A complex type for representing visual elements in the [activity](../resources/projectrome_activity.md) object.
 
 Each user activity will be shown in Timeline as an Adaptive Card. App developers are encouraged to provide a custom Card which captures the essence of the activity which took place in your app. This is possible by providing a custom JSON card in the content property.

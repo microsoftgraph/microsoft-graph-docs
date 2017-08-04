@@ -1,5 +1,7 @@
 # Get thumbnailSet
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the properties and relationships of a [thumbnailSet](../resources/thumbnailset.md) object.
 
 For more info, see [List thumbnails](item_list_thumbnails.md).

@@ -1,5 +1,7 @@
 # Working with Webhooks in Microsoft Graph
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The Microsoft Graph REST API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes.
 
 Using the Microsoft Graph REST API, an app can subscribe to changes on the following resources:
@@ -23,7 +25,7 @@ See the following code samples on GitHub.
 
 Let's take a look at the subscription process.
 
-# Creating a subscription
+## Creating a subscription
 
 Creating a subscription is the first step to start receiving notifications for a resource. The subscription process is as follows:
 
@@ -89,7 +91,7 @@ The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` proper
 
 If successful, Microsoft Graph returns a `201 Created` code and a [subscription](subscription.md) object in the body.
 
-# Renewing a subscription
+## Renewing a subscription
 
 The client can renew a subscription with a specific expiration date of up to three days from the time of request. The expirationDateTime property is required.
 
@@ -105,7 +107,7 @@ Content-Type: application/json
 
 If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subscription.md) object in the body. The subscription object includes the new expirationDateTime value. 
 
-# Deleting a subscription
+## Deleting a subscription
 
 The client can stop receiving notifications by deleting the subscription using its ID.
 
@@ -115,7 +117,7 @@ DELETE https://graph.microsoft.com/beta/subscriptions/{id}
 
 If successful, Microsoft Graph returns a `204 No Content` code.
 
-# Notifications
+## Notifications
 
 The client starts receiving notifications after creating the subscription. Microsoft Graph sends a POST request to the notification URL when changes happen to the resource. The client only gets notifications according to the specified change type, such as *created*.
 
@@ -176,7 +178,7 @@ After your application starts receiving notifications it must process them. The 
 
 Repeat for other notifications in the request.
 
-# Additional resources
+## Additional resources
 
 * [Subscription resource type](subscription.md)
 * [Get subscription](../api/subscription_get.md)

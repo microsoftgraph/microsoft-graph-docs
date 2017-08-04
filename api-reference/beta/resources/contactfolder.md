@@ -1,5 +1,7 @@
 # contactFolder resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 A folder that contains contacts.
 
 This resource supports using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 

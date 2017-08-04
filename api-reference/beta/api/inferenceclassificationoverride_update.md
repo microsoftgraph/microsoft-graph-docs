@@ -1,5 +1,7 @@
 # Update inferenceClassificationOverride
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Change the **classifyAs** field of a [Focused Inbox](../resources/manage_focused_inbox.md) override as specified. 
 
 You cannot use PATCH to change any other fields in an [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) instance. 

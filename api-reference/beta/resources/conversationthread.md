@@ -1,4 +1,7 @@
 # conversationThread resource type
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 A conversationThread is a collection of [posts](post.md).
 
 The last post's recipients collection is the aggregated recipients of the entire thread. A thread can have a growing collection of recipients.

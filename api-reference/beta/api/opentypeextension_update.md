@@ -1,5 +1,7 @@
 # Update open extension
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) with the properties in the request body:
 
 - If a property in the request body matches the name of an existing property in the extension, the data in the 

@@ -1,5 +1,7 @@
 # contactFolder: delta
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
 
 A **delta** function call for contact folders in a mailbox is similar to a GET request, except that by appropriately 
@@ -7,10 +9,10 @@ applying [state tokens](../../../concepts/delta_query_overview.md) in one or mor
 you can query for incremental changes in the contact folders. This allows you to maintain and synchronize 
 a local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: _Contacts.Read_; _Contacts.ReadWrite_
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/delta
@@ -38,7 +40,7 @@ includes the encoded, desired parameters.
 You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
 _id_ property is always returned. 
 
-### Request headers
+## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
@@ -49,7 +51,7 @@ _id_ property is always returned.
 ### Response
 If successful, this method returns a `200, OK` response code and [contactFolder](../resources/contactfolder.md) collection object in the response body.
 
-### Example
+## Example
 ##### Request
 The following example shows how to make a single **delta** function call, and limit the maximum number of contact folders 
 in the response body to 2.

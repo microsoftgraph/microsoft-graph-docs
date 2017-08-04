@@ -1,4 +1,7 @@
 # group: addFavorite
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Add the group to the list of the current user's favorite groups. Supported for only Office 365 groups.
 
 ## Prerequisites

@@ -1,28 +1,29 @@
 # plannerUser resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **plannerUser** resource provide access to Planner resources for a [user](user.md). It doesn't contain any usable properties.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List plans](../api/planneruser_list_plans.md) |[plannerPlan](plannerplan.md) collection| Get a **plannerPlan** object collection.|
 |[List tasks](../api/planneruser_list_tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only. Identifier of the planenrUser|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |plans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerTasks](plannertask.md) assigned to the user.|
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) shared with the user.|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

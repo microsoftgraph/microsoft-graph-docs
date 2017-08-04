@@ -1,5 +1,7 @@
 # used resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or accessed. This includes documents in:
 
 - OneDrive for Business
@@ -11,7 +13,7 @@ An insight representing documents used by a specific user. The insights returns 
 |:---------------|:--------|:----------|
 |[List used](../api/insights_list_used.md) |[insights_used](insights_used.md) collection| Get a list of used files.|
  
-### Properties
+## Properties
 
 | Property              | Type          	 		| Description  |
 | -------------         |---------------	 		| -------------|
@@ -20,14 +22,13 @@ An insight representing documents used by a specific user. The insights returns 
 | resourceVisualization	| [resourceVisualization](insights_resourcevisualization.md)				| Properties that you can use to visualize the document in your experience. Read-only	   |
 | resourceReference		| [resourceReference](insights_resourcereference.md)                      | Reference properties of the used document, such as the url and type of the document. Read-only	   |
 
-### Relationships
+## Relationships
 
 | Property      | Type          | Description  |
 | ------------- |---------------| -------------|
 | resource    	| Entity		| Used for navigating to the item that was used. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource
 
 ```json

@@ -1,14 +1,16 @@
 # Assign Policy
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Assigns a [policy](../resources/policy.md) to an application or service principal.
 
 >Note: Currently, policy assignment only applies to Token lifetime Policy. This type of policy is described in [policy](../resources/policy.md).
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 
 ```http
 POST /applications/{id}/policies/$ref
@@ -17,19 +19,19 @@ POST /serviceprincipals/{id}/policies/$ref
 
 > Note: The "id" in the request is the "id" property of the application or service principal, not the "appid" property.
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | application/json  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON representation of the policy object to be added.
 
 ### Response
 If successful, this method returns `204, No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
-### Example
+## Example
 The following example assigns a policy to an application.
 
 ##### Request

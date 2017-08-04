@@ -1,5 +1,7 @@
 # Create Event
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create an [event](../resources/event.md) in the user's default calendar or specified calendar. 
 
 You can specify the time zone for each of the start and end times of the event as part of these values, as the 

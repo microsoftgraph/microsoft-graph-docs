@@ -1,5 +1,7 @@
 # Create subscription
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.
 ## Prerequisites
 One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* or *Files.ReadWrite.All*. ***Note:*** The /beta endpoint allows Application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with Application permissions.

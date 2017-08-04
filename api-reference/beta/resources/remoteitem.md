@@ -1,5 +1,7 @@
 # RemoteItem resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **remoteItem** resource indicates that a [**driveItem**](driveitem.md) references an item that exists in another drive.
 This resource provides the unique IDs of the source drive and target item.
 

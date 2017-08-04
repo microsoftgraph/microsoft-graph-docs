@@ -1,5 +1,7 @@
 # List tasks
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get all the Outlook tasks in the specified folder.
 
 By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask_complete.md) task operations) returns 
@@ -10,28 +12,28 @@ If there is more than one task group, and you want to get all the tasks in a spe
 [get all the task folders in that task group](outlooktaskgroup_list_taskfolders.md), 
 and then get the tasks in each of these task folders. 
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.Read_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.| 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [outlookTask](../resources/outlooktask.md) objects in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

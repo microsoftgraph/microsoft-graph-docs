@@ -1,5 +1,7 @@
 # Get SfbDeviceUsage report
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the reports of Skype for Business Client Activity. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - Skype for Business clients used](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3) to check the meaning of different views.

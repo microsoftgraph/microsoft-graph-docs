@@ -1,5 +1,7 @@
 # Add a member
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to add a member (user or group) to an administrative unit.
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`

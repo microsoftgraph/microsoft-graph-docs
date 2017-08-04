@@ -1,5 +1,7 @@
 ﻿# Update macOSWiFiConfiguration
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswificonfiguration.md) object.
@@ -14,7 +16,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-PATCH /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 
@@ -48,6 +49,7 @@ The following table shows the properties that are required when you create a [ma
 |proxyManualAddress|String|IP Address or DNS hostname of the proxy server when manual configuration is selected.|
 |proxyManualPort|Int32|Port of the proxy server when manual configuration is selected.|
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
+|preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 
 
 
@@ -60,7 +62,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 712
+Content-length: 755
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -78,7 +80,8 @@ Content-length: 712
   "proxySettings": "manual",
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
-  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "preSharedKey": "Pre Shared Key value"
 }
 ```
 
@@ -87,7 +90,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 881
+Content-Length: 924
 
 {
   "@odata.type": "#microsoft.graph.macOSWiFiConfiguration",
@@ -108,7 +111,8 @@ Content-Length: 881
   "proxySettings": "manual",
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
-  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "preSharedKey": "Pre Shared Key value"
 }
 ```
 

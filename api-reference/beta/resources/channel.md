@@ -1,5 +1,7 @@
 # channel resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 A channel is a collection of [chatThreads](chatthread.md) within a Microsoft Team.  A channel represents a topic, and therefore a logical isolation of discussion, within a Team. Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" channel.
 
 

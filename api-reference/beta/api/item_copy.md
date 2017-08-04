@@ -1,5 +1,7 @@
 # Copy a DriveItem
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Creates a copy of a [driveItem](../resources/driveitem.md) (including any children) under a new parent or with a new name.
 
 ## Prerequisites

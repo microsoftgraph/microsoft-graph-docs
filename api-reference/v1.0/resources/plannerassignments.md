@@ -5,7 +5,7 @@ is the ID of a user object a task is assigned to. The users can be assigned to t
 object with orderHint property populated as the value. The assignees can be unassigned from the task by setting the propety named with their ID to null.
 
 
-### Properties
+## Properties
 Properties of an Open Type can be defined by the client. In this case though, the client must provide assigned user's IDs as property names. The property must be set to a **plannerAssignment** object to create or modify assignees, and to null to remove them.
 
 Example:

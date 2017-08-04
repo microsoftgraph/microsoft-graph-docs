@@ -1,5 +1,7 @@
 # outlookTask resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 An Outlook item that can track a work item. 
 
 You can use a task to track the start, due and actual completion dates and times, its progress or status, whether it's recurring, and requires reminding.
@@ -21,7 +23,7 @@ different than UTC. The following example returns date-related properties in EST
 Prefer: outlook.timezone="Eastern Standard Time"
 ```
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -39,7 +41,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |[Get task with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [outlookTask](outlooktask.md) | Get an Outlook task that contains a multi-value extended property by using `$expand`. |
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedTo|String|The name of the person who has been assigned the task.|
@@ -63,15 +65,14 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |status|string|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |subject|String|A brief description or title of the task.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md), and [referenceAttachment](referenceattachment.md) attachments for the task.  Read-only. Nullable.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection|The collection of multi-value extended properties defined for the task. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|The collection of single-value extended properties defined for the task. Read-only. Nullable.|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

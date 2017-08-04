@@ -1,5 +1,7 @@
 # activity resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents a single activity within an app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a [history item](projectrome_historyitem.md) that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity.
 
 You can use activities in Microsoft Graph to enable users to get back to what they were doing in their app, across multiple devices. Activities that your app creates appear on all users' devices, and are exposed to users as deep links to specific content within your app. You can express specific content within your app as a destination that is showcased in Windows, and accessible on iOS and Android devices through Cortana notifications.

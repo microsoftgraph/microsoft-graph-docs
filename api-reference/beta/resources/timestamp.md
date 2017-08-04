@@ -1,5 +1,7 @@
 # timeStamp resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Date and time information for a point in time.
 
 ## JSON representation

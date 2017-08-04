@@ -1,5 +1,7 @@
 # Update DriveItem properties
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the metadata for a [DriveItem](../resources/driveitem.md) by ID or path.
 
 You can also use update to [move an item](item_move.md) to another parent by updating the item's **parentReference** property.

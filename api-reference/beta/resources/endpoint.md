@@ -1,15 +1,17 @@
 # Endpoint resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Endpoints represent URLs for resources associated with an entity.  For example, when a new Office 365 group is created, additional resources are also created as part of the Office 365 group. These include things like a group mailbox for conversations and a group OneDrive folder for documents and files. Further information about these Office 365 group resources, including their associated resource URLs can now be read using the *endpoints* navigation on the group resource-type. This allows applications to understand these resources, and even embed the resource URL experiences in their own experiences. 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List endpoints](../api/group_list_endpoints.md) |[Endpoint](endpoint.md) collection| Get an endpoint object collection. |
 |[Get endpoint](../api/endpoint_get.md) | [Endpoint](endpoint.md) |Read properties and relationships of an endpoint object.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 | capability     | String  | Describes the capability that is associated with this resource. (e.g. Messages, Conversations, etc.)  Not nullable. Read-only. |
@@ -19,13 +21,12 @@ Endpoints represent URLs for resources associated with an entity.  For example, 
 | providerResourceId|String| For Office 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.|
 | uri            | String  | URL of the published resource. Not nullable. Read-only.|
 
-### Relationships
+## Relationships
 
 None.
 
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

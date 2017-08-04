@@ -1,5 +1,7 @@
 # Audio resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **Audio** resource groups audio-related properties on an item into a single structure.
 
 If a [**DriveItem**](driveitem.md) has a non-null **audio** facet, the item represents an audio file.

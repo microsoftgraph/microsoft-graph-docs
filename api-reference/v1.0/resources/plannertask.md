@@ -3,7 +3,7 @@
 The **plannerTask** resource represents a Planner task in Office 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object which can contain more information about the task. See [overview](planner_overview.md) for more information regarding relationships between group, plan and task.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -11,7 +11,7 @@ The **plannerTask** resource represents a Planner task in Office 365. A Planner 
 |[Update](../api/plannertask_update.md) | [plannerTask](plannertask.md)	|Update **plannerTask** object. |
 |[Delete](../api/plannertask_delete.md) | None |Delete **plannerTask** object. |
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |activeChecklistItemCount|Int32|Number of checklist items with value set to 'false', representing incomplete items.|
@@ -36,7 +36,7 @@ The **plannerTask** resource represents a Planner task in Office 365. A Planner 
 |startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |title|String|Title of the task.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by assignedTo.|
@@ -44,8 +44,7 @@ The **plannerTask** resource represents a Planner task in Office 365. A Planner 
 |details|[plannerTaskDetails](plannertaskdetails.md)| Read-only. Nullable. Additional details about the task.|
 |progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

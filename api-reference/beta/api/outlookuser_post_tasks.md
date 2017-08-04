@@ -1,5 +1,7 @@
 # Create outlookTask
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.
 
 The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time 
@@ -9,28 +11,28 @@ By default, this operation (and the GET, PATCH, and [complete](../api/outlooktas
 You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone 
 different than UTC.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.ReadWrite_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id|userPrincipalName}/outlook/tasks
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.| 
 
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.
 
 
 ### Response
 If successful, this method returns `201, Created` response code and [outlookTask](../resources/outlooktask.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 The following example shows the use of the `Prefer: outlook.timezone` header. It creates a task, expresses **startDateTime** and **dueDateTime** in Eastern Standard Time (EST), and includes 
 a `Prefer` header of Pacific Standard Time (PST).

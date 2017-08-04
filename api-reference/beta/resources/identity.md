@@ -1,5 +1,7 @@
 # Identity resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The `identity` resource represents an identity of an _actor_.
 For example, an actor can be a user, device, or application.
 

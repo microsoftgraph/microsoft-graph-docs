@@ -1,5 +1,7 @@
 # Get SfbOrganizerActivity report
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the reports of Skype for Business Organizer Activity. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - Skype for Business conference organizer activity](https://support.office.com/client/Skype-for-Business-Online-conference-organized-activity-03a255d4-0e1d-4b24-b73d-7a62fae36254) to check the meaning of different views.

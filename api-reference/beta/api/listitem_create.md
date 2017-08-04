@@ -1,5 +1,7 @@
 # Create a new item in a list
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new [listItem][] in a [list][].
 
 ## Prerequisites
@@ -8,7 +10,7 @@ One of the following scopes is required to execute this request:
 
 * Sites.ReadWrite.All
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
@@ -16,11 +18,11 @@ One of the following scopes is required to execute this request:
 POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 ```
 
-### Request body
+## Request body
 
 In the request body, supply a JSON representation of the [listItem][] resource to create.
 
-### Example
+## Example
 
 Here is an example of how to create a new generic list item.
 

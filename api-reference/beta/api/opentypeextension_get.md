@@ -1,5 +1,7 @@
 # Get open extension
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) identified by name or fully qualified name.
 
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.

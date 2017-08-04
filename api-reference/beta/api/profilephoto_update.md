@@ -1,5 +1,7 @@
 # Update profilephoto
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the photo
 you can add to under 4MB.

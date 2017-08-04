@@ -1,5 +1,7 @@
 # Delete privilegedRoleAssignment
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Delete [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
 ## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
@@ -26,6 +28,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
+Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
 ## Example
 ##### Request
 Here is an example of the request.

@@ -1,5 +1,7 @@
 ﻿# Get iosUpdateDeviceStatus
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md) object.
@@ -42,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 582
+Content-Length: 666
 
 {
   "value": {
@@ -56,6 +58,7 @@ Content-Length: 582
     "userName": "User Name value",
     "deviceModel": "Device Model value",
     "platform": 8,
+    "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00",
     "status": "notApplicable",
     "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
     "userPrincipalName": "User Principal Name value"

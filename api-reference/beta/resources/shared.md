@@ -1,5 +1,7 @@
 # Shared resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **Shared** resource indicates a DriveItem has been shared with others.
 The resource includes information about how the item is shared.
 

@@ -1,28 +1,30 @@
 # Delete Policy
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Delete a [policy](../resources/policy.md).
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 
 ```http
 DELETE /policies/{id}
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 ### Response
 If successful, this method returns `204, No Content` response code. If unsuccessful...
 
-### Example
+## Example
 The following example deletes a policy.
 
 ##### Request

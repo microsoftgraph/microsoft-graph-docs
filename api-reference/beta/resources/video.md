@@ -1,5 +1,7 @@
 # Video resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **Video** resource groups video-related data items into a single structure.
 
 If a [**DriveItem**](driveitem.md) has a non-null **video** facet, the item represents a video file.

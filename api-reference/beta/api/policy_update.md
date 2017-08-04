@@ -1,23 +1,25 @@
 # Update Policy
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update properties in a preexisting [policy](../resources/policy.md).
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 
 ```http
 PATCH /policies/{id}
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | application/json  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the parameters that need to be updated. The following table shows the possible parameters.
 
 | Parameter	   | Type	|Description|
@@ -30,7 +32,7 @@ In the request body, provide a JSON object with the parameters that need to be u
 ### Response
 If successful, this method returns `204, No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
-### Example
+## Example
 The following example updates the definition of the token lifetime policy and sets it as the organization default.
 
 ##### Request

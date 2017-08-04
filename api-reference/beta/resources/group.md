@@ -1,5 +1,7 @@
 # group resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, a team in Microsoft Teams, a dynamic group, or a security group.
 Inherits from [directoryObject](directoryobject.md).
 

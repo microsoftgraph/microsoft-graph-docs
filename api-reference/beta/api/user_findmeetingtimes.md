@@ -1,4 +1,7 @@
 # user: findMeetingTimes
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Find meeting time suggestions based on organizer and attendee availability, and time or location constraints specified as parameters.
 
 If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property. 

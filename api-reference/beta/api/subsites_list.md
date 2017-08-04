@@ -1,5 +1,7 @@
 # Enumerate subsites
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get a collection of subsites defined for a [site][].
 
 [site]: ../resources/site.md
@@ -19,7 +21,7 @@ One of the following scopes is required to execute this request:
 GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 
-### Example
+## Example
 
 #### Request
 

@@ -1,5 +1,7 @@
 # event: delta
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) 
 of the user's primary calendar.
 
@@ -10,10 +12,10 @@ you can query for incremental changes in that calender view. This allows you to 
 a local store of a user's events in the primary calendar, without having to fetch all the events of that calendar 
 from the server every time.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: _Calendars.Read_; _Calendars.ReadWrite_ 
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -42,7 +44,7 @@ When you do a delta query on a calendar view, expect to get all the properties y
 a `GET /calendarview` request. `$select` is not supported in this case. 
 
 
-### Request headers
+## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
@@ -54,7 +56,7 @@ a `GET /calendarview` request. `$select` is not supported in this case.
 ### Response
 If successful, this method returns a `200, OK` response code and [event](../resources/event.md) collection object in the response body.
 
-### Example
+## Example
 ##### Request
 
 The following example shows how to make a single **delta** function call, and limit the maximum number of events 

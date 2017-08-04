@@ -1,5 +1,7 @@
 # Delete message
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Delete a message in the specified user's mailbox, or delete a relationship of the message.
 
 For example, you can delete a specific [mention](../resources/mention.md) of the current user's in the message.

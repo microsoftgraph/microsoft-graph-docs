@@ -1,24 +1,26 @@
 # Create Policy
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new [policy](../resources/policy.md) object by specifying display name, policy type, and policy description.
 
 >Note: The policy details will be validated before being stored. If it does not pass validation, a 400 Bad Request will be returned.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Directory.AccessAsUser.All*
-### HTTP request
+## HTTP request
 
 ```http
 POST /policies
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | application/json  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON representation of [policy](../resources/policy.md) object.
 
 The following table shows the properties that are required when you create a policy.
@@ -32,7 +34,7 @@ The following table shows the properties that are required when you create a pol
 ### Response
 If successful, this method returns `201, Created` response code and [policy](../resources/policy.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.  
 
-### Example
+## Example
 The following example creates a new token lifetime Policy. Notice the string definition parameter
 has escaped double quotes.
 

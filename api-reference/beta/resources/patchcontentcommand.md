@@ -1,5 +1,7 @@
 # patchContentCommand resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The changes to make to a OneNote page in a PATCH request.
 
 ## JSON representation

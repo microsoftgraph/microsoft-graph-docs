@@ -1,10 +1,12 @@
 ﻿# Update managedDeviceOverview
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
@@ -13,13 +15,13 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /managedDeviceOverview
+PATCH /deviceManagement/managedDeviceOverview/
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -28,11 +30,12 @@ The following table shows the properties that are required when you create a [ma
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Not yet documented|
+|id|String|Unique Identifier for the summary|
 |enrolledDeviceCount|Int32|Total enrolled device count. Does not include PC devices managed via Intune PC Agent|
 |mdmEnrolledCount|Int32|The number of devices enrolled in MDM|
 |dualEnrolledDeviceCount|Int32|The number of devices enrolled in both MDM and EAS|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune_devices_deviceoperatingsystemsummary.md)|Device operating system summary.|
+|deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune_devices_deviceexchangeaccessstatesummary.md)|Distribution of Exchange Access State in Intune|
 
 
 
@@ -43,9 +46,9 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedDeviceOverview
+PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview/
 Content-type: application/json
-Content-length: 324
+Content-length: 625
 
 {
   "enrolledDeviceCount": 3,
@@ -57,7 +60,16 @@ Content-length: 324
     "iosCount": 8,
     "macOSCount": 10,
     "windowsMobileCount": 2,
-    "windowsCount": 12
+    "windowsCount": 12,
+    "unknownCount": 12
+  },
+  "deviceExchangeAccessStateSummary": {
+    "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
+    "allowedDeviceCount": 2,
+    "blockedDeviceCount": 2,
+    "quarantinedDeviceCount": 6,
+    "unknownDeviceCount": 2,
+    "unavailableDeviceCount": 6
   }
 }
 ```
@@ -67,7 +79,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 433
+Content-Length: 734
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -81,7 +93,16 @@ Content-Length: 433
     "iosCount": 8,
     "macOSCount": 10,
     "windowsMobileCount": 2,
-    "windowsCount": 12
+    "windowsCount": 12,
+    "unknownCount": 12
+  },
+  "deviceExchangeAccessStateSummary": {
+    "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
+    "allowedDeviceCount": 2,
+    "blockedDeviceCount": 2,
+    "quarantinedDeviceCount": 6,
+    "unknownDeviceCount": 2,
+    "unavailableDeviceCount": 6
   }
 }
 ```

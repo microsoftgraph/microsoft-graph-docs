@@ -1,5 +1,7 @@
 # message: replyAll
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Reply to all recipients of a message by specifying a comment and modifying any updateable properties 
 for the reply, all by using the **replyAll** method. The message is then saved in the Sent Items folder.
 

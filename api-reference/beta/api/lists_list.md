@@ -1,5 +1,7 @@
 # Enumerate lists in a site
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the collection of [lists][] for a [site][].
 
 [lists]: ../resources/list.md
@@ -12,13 +14,13 @@ One of the following scopes is required to execute this request:
 * Sites.Read.All
 * Sites.ReadWrite.All
 
-### HTTP request
+## HTTP request
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
-### Example
+## Example
 
 #### Request
 

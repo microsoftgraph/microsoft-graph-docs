@@ -1,11 +1,13 @@
 # domainDnsTxtRecord resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents a TXT record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.
 
-### Methods
+## Methods
 Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Unique identifier assigned to this entity. Not nullable, Read-only. |
@@ -16,12 +18,11 @@ Direct queries to this resource are not supported. Please see the [domain](domai
 |text|String| Value used when configuring the *text* property at the DNS host. |
 |ttl|Int32| Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host. Not nullable |
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

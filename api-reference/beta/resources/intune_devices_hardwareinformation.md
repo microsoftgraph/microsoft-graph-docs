@@ -1,5 +1,7 @@
 ﻿# hardwareInformation resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Hardware information of a given device.
@@ -20,6 +22,8 @@ Hardware information of a given device.
 |operatingSystemLanguage|String|Operating system language of the device|
 |isSupervised|Boolean|Supervised mode of the device|
 |isEncrypted|Boolean|Encryption status of the device|
+|isSharedDevice|Boolean|Shared iPad|
+|sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune_devices_sharedappledeviceuser.md) collection|All users on the shared Apple device|
 
 ## Relationships
 None
@@ -47,7 +51,17 @@ Here is a JSON representation of the resource.
   "wifiMac": "String",
   "operatingSystemLanguage": "String",
   "isSupervised": true,
-  "isEncrypted": true
+  "isEncrypted": true,
+  "isSharedDevice": true,
+  "sharedDeviceCachedUsers": [
+    {
+      "@odata.type": "microsoft.graph.sharedAppleDeviceUser",
+      "userPrincipalName": "String",
+      "dataToSync": true,
+      "dataQuota": 1024,
+      "dataUsed": 1024
+    }
+  ]
 }
 ```
 

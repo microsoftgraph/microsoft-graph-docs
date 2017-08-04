@@ -1,5 +1,7 @@
 # Move a DriveItem
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
 This is a special case of the [Update](item_update.md) method.
 Your app can combine moving an item to a new container and updating other properties of the item into a single request.

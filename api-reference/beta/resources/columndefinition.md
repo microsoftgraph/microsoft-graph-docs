@@ -1,5 +1,7 @@
 # ColumnDefinition resource
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 ## JSON representation
 
 Here is a JSON representation of a ColumnDefinition resource.
@@ -26,7 +28,7 @@ Here is a JSON representation of a ColumnDefinition resource.
   "lookup": { "@odata.type": "microsoft.graph.lookupColumn" },
   "number": { "@odata.type": "microsoft.graph.numberColumn" },
   "personOrGroup": { "@odata.type": "microsoft.graph.personOrGroupColumn" },
-  "text": { "@odata.type": "microsoft.graph.textColumn" },
+  "text": { "@odata.type": "microsoft.graph.textColumn" }
 }
 ```
 

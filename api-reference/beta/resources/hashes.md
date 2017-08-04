@@ -1,5 +1,7 @@
 # Hashes resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **Hashes** resource groups available hashes into a single structure for an item.
 
 **Note:** Not all services provide a value for all hash properties listed.

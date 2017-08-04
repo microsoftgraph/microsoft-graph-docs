@@ -1,5 +1,7 @@
 # Azure AD Privileged Identity Management
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Here is the list of methods that are provided by [Privileged Identity Management](https://azure.microsoft.com/en-us/documentation/articles/active-directory-privileged-identity-management-configure/) service.
 
 The service is built on top of OData. To filter the results from the query, use the standard OData ``$filter`` expressions in the URIs.

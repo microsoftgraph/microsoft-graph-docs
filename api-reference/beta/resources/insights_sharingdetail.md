@@ -1,9 +1,10 @@
 # sharingDetail resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Complex type containing properties of [Shared](insights_shared.md) items. 
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource
 
 ```json
@@ -16,7 +17,7 @@ Here is a JSON representation of the resource
 }
 ```
 
-### Properties
+## Properties
 
 | Property              | Type          | Description  |
 | -------------         |-----------    | -------------|

@@ -1,5 +1,7 @@
 ﻿# managedDeviceOverview resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Summary data for managed devices
@@ -12,11 +14,12 @@ Summary data for managed devices
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|id|String|Not yet documented|
+|id|String|Unique Identifier for the summary|
 |enrolledDeviceCount|Int32|Total enrolled device count. Does not include PC devices managed via Intune PC Agent|
 |mdmEnrolledCount|Int32|The number of devices enrolled in MDM|
 |dualEnrolledDeviceCount|Int32|The number of devices enrolled in both MDM and EAS|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune_devices_deviceoperatingsystemsummary.md)|Device operating system summary.|
+|deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune_devices_deviceexchangeaccessstatesummary.md)|Distribution of Exchange Access State in Intune|
 
 ## Relationships
 None
@@ -41,7 +44,16 @@ Here is a JSON representation of the resource.
     "iosCount": 1024,
     "macOSCount": 1024,
     "windowsMobileCount": 1024,
-    "windowsCount": 1024
+    "windowsCount": 1024,
+    "unknownCount": 1024
+  },
+  "deviceExchangeAccessStateSummary": {
+    "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
+    "allowedDeviceCount": 1024,
+    "blockedDeviceCount": 1024,
+    "quarantinedDeviceCount": 1024,
+    "unknownDeviceCount": 1024,
+    "unavailableDeviceCount": 1024
   }
 }
 ```

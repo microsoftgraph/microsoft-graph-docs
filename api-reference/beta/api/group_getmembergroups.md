@@ -1,4 +1,7 @@
 # group: getMemberGroups
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Return all the groups that the specified group is a member of. The check is transitive, unlike reading the 
 [memberOf](../api/group_list_memberof.md) navigation property, which returns only the groups that the group is a direct member of.
 

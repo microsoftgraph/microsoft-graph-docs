@@ -1,5 +1,7 @@
 # List trendingAround
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Calculated insight that returns the list of items trending around a user.
 
 **Note:** This API will be deprecated and replaced by the [Trending API](../resources/insights_trending.md).

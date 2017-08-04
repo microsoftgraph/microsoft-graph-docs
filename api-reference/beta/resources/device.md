@@ -1,5 +1,7 @@
 # device resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents a device registered in the directory. Inherits from [directoryObject](directoryobject.md).
 
 This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).

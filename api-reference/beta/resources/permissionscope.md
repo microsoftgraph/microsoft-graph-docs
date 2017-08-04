@@ -1,8 +1,10 @@
 # permissionScope resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents an OAuth 2.0 delegated permission scope. The specified OAuth 2.0 delegated permission scopes may be requested by client applications (through the **requiredResourceAccess** collection on the [Application](application.md) object) when calling a resource application. The **oauth2Permissions** property of the [ServicePrincipal](serviceprincipal.md) entity and of the [Application](application.md) entity is a collection of **OAuth2Permission**.
 
-### Properties
+## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
@@ -16,8 +18,7 @@ Represents an OAuth 2.0 delegated permission scope. The specified OAuth 2.0 dele
 |userConsentDisplayName|String| Display name for the permission that appears in the end-user consent experience. |
 |value|String| The value of the scope claim that the resource application should expect in the OAuth 2.0 access token. |
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

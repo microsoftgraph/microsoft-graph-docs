@@ -1,5 +1,7 @@
 # List groups
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 List all the groups available in an organization, including but not limited to Office 365 Groups.
 The [default properties](../api/group_get.md#default-properties) of each group are returned.
 

@@ -1,5 +1,7 @@
 # Working with users in Microsoft Graph
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 You can use Microsoft Graph to build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files.
 
 You can access users through Microsoft Graph in two ways:

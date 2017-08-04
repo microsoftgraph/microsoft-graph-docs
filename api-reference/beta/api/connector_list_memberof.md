@@ -1,5 +1,7 @@
 # List memberOf
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the connectorgroup the connector is a member of.
 ## Prerequisites
 The following **scopes** are required to execute this API: *Directory.ReadWrite.All Or Directory.AccessAsUser.All*

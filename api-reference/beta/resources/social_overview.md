@@ -1,5 +1,7 @@
 # People and social overview
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Microsoft Graph supports social gestures in a user's social context, and provides access to useful people and social data.
 
 ## Aggregate and extract specific information about people

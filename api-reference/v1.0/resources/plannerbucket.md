@@ -4,7 +4,7 @@ The **plannerBucket** resource represents a bucket (or "custom column") for task
 
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -14,7 +14,7 @@ The **plannerBucket** resource represents a bucket (or "custom column") for task
 |[Update](../api/plannerbucket_update.md) | [plannerBucket](plannerbucket.md)	|Update **plannerBucket** object. |
 |[Delete](../api/plannerbucket_delete.md) | None |Delete **plannerBucket** object. |
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only. ID of the bucket. It is 28 characters long and case sensitive. [Format validation](planner_identifiers_disclaimer.md) is done on the service.|
@@ -22,13 +22,12 @@ The **plannerBucket** resource represents a bucket (or "custom column") for task
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner_order_hint_format.md).|
 |planId|String|Plan ID to which the bucket belongs.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. The collection of tasks in the bucket.|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

@@ -1,5 +1,7 @@
 # Use the Microsoft Graph API to integrate with Outlook mail
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account. 
 With the [appropriate delegated or application permissions](../../../concepts/permissions_reference.md), your app can access the mail data of 
 the signed-in user or any user in a tenant. The mail data can be in the cloud on Exchange Online as part of Office 365, or on 

@@ -1,5 +1,7 @@
 ﻿# Get iosUpdateConfiguration
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [iosUpdateConfiguration](../resources/intune_deviceconfig_iosupdateconfiguration.md) object.
@@ -14,7 +16,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-GET /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 
@@ -44,7 +45,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 705
+Content-Length: 739
 
 {
   "value": {
@@ -63,7 +64,8 @@ Content-Length: 705
     "activeHoursEnd": "11:59:00.8990000",
     "scheduledInstallDays": [
       "monday"
-    ]
+    ],
+    "utcTimeOffsetInMinutes": 6
   }
 }
 ```

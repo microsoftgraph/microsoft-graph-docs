@@ -1,5 +1,7 @@
 # List children of a driveItem
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.
 
 DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.

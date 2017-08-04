@@ -1,5 +1,6 @@
 # connector resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 <!-- Not supported items
 |[Create connectorGroup](../api/connector_post_memberof.md) |[connectorGroup](connectorgroup.md)| Associate a connector with a new connectorGroup by posting to the memberOf collection.|

@@ -1,5 +1,7 @@
 # List threads
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get all the threads in a group conversation.
 Note: You can also [get all the threads of a group](group_list_threads.md). 
 

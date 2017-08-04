@@ -1,5 +1,7 @@
 # List thumbnails for a DriveItem
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.
 
 A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources.

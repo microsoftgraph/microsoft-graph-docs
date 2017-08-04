@@ -1,5 +1,7 @@
 # mailTips resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message 
 as an automatic reply for a message recipient.
 

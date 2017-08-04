@@ -4,7 +4,7 @@
 The **plannerChecklistItem** resource represents an item in the checklist of a task. The checklist on a task is represented by the [checklistItems object](plannerchecklistitems.md).
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |isChecked|Boolean|Value is `true` if the item is checked and `false` otherwise.|
@@ -13,8 +13,7 @@ The **plannerChecklistItem** resource represents an item in the checklist of a t
 |orderHint|String|Used to set the relative order of items in the checklist. The format is defined as outlined [here](planner_order_hint_format.md).|
 |title|String|Title of the checklist item|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

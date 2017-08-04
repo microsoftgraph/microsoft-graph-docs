@@ -1,5 +1,7 @@
 ﻿# Update androidGeneralDeviceConfiguration
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [androidGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md) object.
@@ -14,7 +16,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-PATCH /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 
@@ -65,7 +66,7 @@ The following table shows the properties that are required when you create a [an
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset. Valid values 4 to 11|
-|passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`.|
+|passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
 |passwordRequired|Boolean|Indicates whether or not to require a password.|
 |powerOffBlocked|Boolean|Indicates whether or not to block powering off the device.|
 |factoryResetBlocked|Boolean|Indicates whether or not to block user performing a factory reset.|
@@ -83,6 +84,9 @@ The following table shows the properties that are required when you create a [an
 |webBrowserBlocked|Boolean|Indicates whether or not to block the web browser.|
 |webBrowserCookieSettings|String|Cookie settings within the web browser. Possible values are: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
 |wiFiBlocked|Boolean|Indicates whether or not to block syncing Wi-Fi.|
+|appsInstallAllowList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps which can be installed on the KNOX device. This collection can contain a maximum of 500 elements.|
+|appsLaunchBlockList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps which are blocked from being launched on the KNOX device. This collection can contain a maximum of 500 elements.|
+|appsHideList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps to be hidden on the KNOX device. This collection can contain a maximum of 500 elements.|
 
 
 
@@ -95,7 +99,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2393
+Content-length: 3161
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -164,7 +168,34 @@ Content-length: 2393
   "webBrowserBlockJavaScript": true,
   "webBrowserBlocked": true,
   "webBrowserCookieSettings": "blockAlways",
-  "wiFiBlocked": true
+  "wiFiBlocked": true,
+  "appsInstallAllowList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ],
+  "appsLaunchBlockList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ],
+  "appsHideList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ]
 }
 ```
 
@@ -173,7 +204,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2573
+Content-Length: 3341
 
 {
   "@odata.type": "#microsoft.graph.androidGeneralDeviceConfiguration",
@@ -245,7 +276,34 @@ Content-Length: 2573
   "webBrowserBlockJavaScript": true,
   "webBrowserBlocked": true,
   "webBrowserCookieSettings": "blockAlways",
-  "wiFiBlocked": true
+  "wiFiBlocked": true,
+  "appsInstallAllowList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ],
+  "appsLaunchBlockList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ],
+  "appsHideList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ]
 }
 ```
 

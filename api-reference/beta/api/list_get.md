@@ -1,5 +1,7 @@
 # Get metadata for a list
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Returns the metadata for a [list][].
 
 [list]: ../resources/list.md
@@ -11,18 +13,18 @@ One of the following scopes are required to execute this request:
 * Sites.Read.All
 * Sites.ReadWrite.All
 
-### HTTP request
+## HTTP request
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
-### Request body
+## Request body
 
 Do not supply a request body with this method.
 
-### Example
+## Example
 
 #### Request
 

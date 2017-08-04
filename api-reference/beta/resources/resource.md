@@ -1,5 +1,7 @@
 # resource resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 An image or other file resource on a OneNote page. 
 
 You can get the binary data of a resource, but getting a JSON representation of a resource object or a resource collection is not supported.

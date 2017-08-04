@@ -1,22 +1,22 @@
 # Delete plannerTask
 
 Delete **plannerTask**.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.ReadWrite.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /planner/tasks/<id>
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | If-Match  | Last known ETag value for the **plannerTask** to be deleted. Required.|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 
@@ -25,7 +25,7 @@ If successful, this method returns `204, No Content` response code. It does not 
 
 This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

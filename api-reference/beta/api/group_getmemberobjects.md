@@ -1,4 +1,7 @@
 # group: getMemberObjects
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Return all of the groups and administrative units that the group is a member of. The check is transitive. Note: Groups cannot be members of directory roles, so no directory roles will be returned.
 
 ## Prerequisites

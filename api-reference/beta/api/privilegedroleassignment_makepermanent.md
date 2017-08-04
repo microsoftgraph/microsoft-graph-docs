@@ -1,9 +1,13 @@
 # privilegedRoleAssignment: makePermanent
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Make the role assignment as permanent.
 
 ## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
+The tenant needs to be registered to PIM. Otherwise, HTTP 403 Forbidden error will be returned.
 
 The requestor needs to have _Privileged Role Administrator_ role. 
 ## HTTP request

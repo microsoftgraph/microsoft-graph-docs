@@ -1,5 +1,7 @@
 # scopedRoleMembership resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 A scoped-role membership describes a user's membership of a directory role, that is further scoped to an Administrative Unit (AU).  This provides a mechanism to allow a tenant-wide company adminsistrator to delegate administrative privileges to a user to manage users and groups in a subset of the organization (the subset being defined by an AU).
 
 ## Methods

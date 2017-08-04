@@ -1,5 +1,7 @@
 # Get multiValueLegacyExtendedProperty
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get a resource instance that contains a multi-value extended property by using `$expand`.
 
 Using the query parameter `$expand` allows you to get the specified instance expanded with the indicated extended 

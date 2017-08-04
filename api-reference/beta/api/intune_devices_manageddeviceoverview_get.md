@@ -1,10 +1,12 @@
 ﻿# Get managedDeviceOverview
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
@@ -13,15 +15,15 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedDeviceOverview
+GET /deviceManagement/managedDeviceOverview/
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -34,7 +36,7 @@ If successful, this method returns a `200 OK` response code and [managedDeviceOv
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedDeviceOverview
+GET https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview/
 ```
 
 ### Response
@@ -42,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 478
+Content-Length: 797
 
 {
   "value": {
@@ -57,7 +59,16 @@ Content-Length: 478
       "iosCount": 8,
       "macOSCount": 10,
       "windowsMobileCount": 2,
-      "windowsCount": 12
+      "windowsCount": 12,
+      "unknownCount": 12
+    },
+    "deviceExchangeAccessStateSummary": {
+      "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
+      "allowedDeviceCount": 2,
+      "blockedDeviceCount": 2,
+      "quarantinedDeviceCount": 6,
+      "unknownDeviceCount": 2,
+      "unavailableDeviceCount": 6
     }
   }
 }

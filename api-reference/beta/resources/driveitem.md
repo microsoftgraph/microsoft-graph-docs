@@ -1,5 +1,7 @@
 # DriveItem resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **driveItem** resource represents a file, folder, or other item stored in a drive.
 All file system objects in OneDrive and SharePoint are returned as **driveItem** resources.
 

@@ -1,32 +1,34 @@
 # Permanently delete item
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Permanently deletes an item from [deleted items](../resources/directory.md).
 
 Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources. You can permanently delete an item from deleted items. But, once an item is permanently deleted, it **cannot** be restored.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: 
 * For users: *User.ReadWrite.All or Directory.AccessAsUser.All*
 * For groups: *Group.ReadWrite.All or Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directory/deleteditems/{id}
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;code&gt; *Required*|
 | Accept  | application/json |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 ### Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 
 <!-- {

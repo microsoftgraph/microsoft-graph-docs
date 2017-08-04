@@ -1,12 +1,14 @@
 # outlookTaskFolder resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 A folder that contains Outlook tasks (collection of [outlookTask](outlooktask.md) objects). 
 
 In Outlook, the default task group, `My Tasks`, contains a default task folder, `Tasks`, for the user's mailbox. 
 You cannot rename or delete these default task group and folder, but you can create additional task groups and task folders.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -22,7 +24,7 @@ You cannot rename or delete these default task group and folder, but you can cre
 |[Get task folder with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Get an Outlook task folder that contains a multi-value extended property by using `$expand`. |
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |changeKey|String|The version of the task folder.|
@@ -31,15 +33,14 @@ You cannot rename or delete these default task group and folder, but you can cre
 |name|String|The name of the task folder.|
 |parentGroupKey|Guid|The unique GUID identifier for the task folder's parent group.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection|The collection of multi-value extended properties defined for the task folder. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|The collection of single-value extended properties defined for the task folder. Read-only. Nullable.|
 |tasks|[outlookTask](outlooktask.md) collection|The tasks in this task folder. Read-only. Nullable.|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

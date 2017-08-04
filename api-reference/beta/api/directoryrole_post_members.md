@@ -1,5 +1,7 @@
 # Add directory role member
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to create a new directory role member.
 ## Prerequisites
 The following **scope** is required to execute this API: *Directory.AccessAsUser.All*

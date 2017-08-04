@@ -2,7 +2,7 @@
 
 Contains information about a license assigned to a user.
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -10,7 +10,7 @@ Contains information about a license assigned to a user.
 
 <!--|[Get licenseDetails](../api/licensedetails_get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| The unique identifier for the license detail object. Read-only, Key, Not nullable |
@@ -18,11 +18,10 @@ Contains information about a license assigned to a user.
 |skuId|Guid| Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related [SubscribedSku](subscribedsku.md) object. Read-only |
 |skuPartNumber|String| Unique SKU display name. Equal to the skuPartNumber on the related [SubscribedSku](subscribedsku.md) object; for example: "AAD_Premium". Read-only |
 
-### Relationships
+## Relationships
 None
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

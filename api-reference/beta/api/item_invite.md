@@ -1,5 +1,7 @@
 # Send a sharing invitation
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Sends a sharing invitation for a **DriveItem**.
 A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 

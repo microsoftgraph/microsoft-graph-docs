@@ -1,9 +1,11 @@
 # outlookUser resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents the Outlook task services available to a user.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -15,10 +17,10 @@ Represents the Outlook task services available to a user.
 |[List tasks](../api/outlookuser_list_tasks.md) |[outlookTask](outlooktask.md) collection| Get all the Outlook tasks in the user's mailbox.|
 
 
-### Properties
+## Properties
 None
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |taskFolders|[outlookTaskFolder](outlooktaskfolder.md) collection| The user's Outlook task folders. Read-only. Nullable.|

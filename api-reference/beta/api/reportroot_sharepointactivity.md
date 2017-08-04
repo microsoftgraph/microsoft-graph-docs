@@ -1,5 +1,7 @@
 # Get SharePointActivity report
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the reports of SharePoint User Activity. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f) to check the meaning of different views.
@@ -44,6 +46,7 @@ The following **ViewType** are available in this report:
 - Detail
 - Files
 - Users
+- Pages
 
 The following **PeriodType** are available in this report:
 
@@ -100,7 +103,7 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
-Data as of,User principal name,Deleted,Deleted date,Last activity date (UTC),Files viewed or edited,Files synced,Files shared internally,Files shared externally,Products assigned,Reporting period in days
+Data as of,User principal name,Deleted,Deleted date,Last activity date (UTC),Files viewed or edited,Files synced,Files shared internally,Files shared externally,Pages visited,Products assigned,Reporting period in days
 ```
 
 ### Other valid requests
@@ -114,6 +117,7 @@ Data as of,User principal name,Deleted,Deleted date,Last activity date (UTC),Fil
 GET https://graph.microsoft.com/beta/reports/SharePointActivity(view='Detail',date='2017-02-02')/content
 GET https://graph.microsoft.com/beta/reports/SharePointActivity(view='Files',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/SharePointActivity(view='Users',period='D7')/content
+GET https://graph.microsoft.com/beta/reports/SharePointActivity(view='Pages',period='D7')/content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

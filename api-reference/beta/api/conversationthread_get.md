@@ -1,5 +1,7 @@
 # Get conversationThread
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, 
 you can specify the thread without referencing the parent conversation. 
 ## Prerequisites

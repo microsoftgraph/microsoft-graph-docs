@@ -1,5 +1,7 @@
 # Quota resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **quota** resource provides details about space constrains on a [Drive](drive.md) resource.
 
 ## JSON representation

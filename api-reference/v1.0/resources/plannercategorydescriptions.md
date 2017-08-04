@@ -3,7 +3,7 @@
 The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan. It belongs to the [plan details](plannerplandetails.md) object. There can be up to 6 categories defined. 
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |category1|String|The label associated with Category 1|
@@ -13,8 +13,7 @@ The **plannerCategoryDescriptions** resource represents the descriptive labels f
 |category5|String|The label associated with Category 5|
 |category6|String|The label associated with Category 6|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

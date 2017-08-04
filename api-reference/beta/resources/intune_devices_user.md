@@ -1,5 +1,7 @@
 ﻿# user resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Not yet documented
@@ -11,8 +13,8 @@ Not yet documented
 |[Create user](../api/intune_devices_user_create.md)|[user](../resources/intune_devices_user.md)|Create a new [user](../resources/intune_devices_user.md) object.|
 |[Delete user](../api/intune_devices_user_delete.md)|None|Deletes a [user](../resources/intune_devices_user.md).|
 |[Update user](../api/intune_devices_user_update.md)|[user](../resources/intune_devices_user.md)|Update the properties of a [user](../resources/intune_devices_user.md) object.|
-|[removeAllDevicesFromManagement action](../api/intune_devices_user_removealldevicesfrommanagement.md)|None|Not yet documented|
-|[List managedDevices](../api/intune_devices_user_list_manageddevice.md)|[managedDevice](../resources/intune_devices_manageddevice.md) collection|Get the managedDevices from the managedDevices navigation property.|
+|[removeAllDevicesFromManagement action](../api/intune_devices_user_removealldevicesfrommanagement.md)|None|Retire all devices from management for this user|
+|[List managedDevices](../api/intune_devices_manageddevice_list.md)|[managedDevice](../resources/intune_devices_manageddevice.md) collection|List properties and relationships of the [managedDevice](../resources/intune_devices_manageddevice.md) objects.|
 
 ## Properties
 |Property|Type|Description|

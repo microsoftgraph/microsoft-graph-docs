@@ -1,5 +1,7 @@
 ﻿# locateDeviceActionResult resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Locate device action result
@@ -10,7 +12,7 @@ Inherits from [deviceActionResult](../resources/intune_devices_deviceactionresul
 |Property|Type|Description|
 |---|---|---|
 |actionName|String|Action name Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|String|State of the action Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md) Possible values are: `none`, `pending`, `cancel`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|String|State of the action Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md) Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Time the action was initiated Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |deviceLocation|[deviceGeoLocation](../resources/intune_devices_devicegeolocation.md)|device location|

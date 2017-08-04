@@ -1,5 +1,7 @@
 ﻿# Get macOSEnterpriseWiFiConfiguration
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [macOSEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_macosenterprisewificonfiguration.md) object.
@@ -14,7 +16,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-GET /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 
@@ -44,7 +45,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1362
+Content-Length: 1407
 
 {
   "value": {
@@ -67,6 +68,7 @@ Content-Length: 1362
     "proxyManualAddress": "Proxy Manual Address value",
     "proxyManualPort": 15,
     "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+    "preSharedKey": "Pre Shared Key value",
     "eapType": "leap",
     "eapFastConfiguration": "useProtectedAccessCredential",
     "trustedServerCertificateNames": [

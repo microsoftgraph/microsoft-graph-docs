@@ -1,5 +1,7 @@
 # user: getMailTips
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).
 
 Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to 

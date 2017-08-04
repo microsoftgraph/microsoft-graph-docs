@@ -1,5 +1,7 @@
 # message: reply
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. 
 The message is then saved in the Sent Items folder.
 

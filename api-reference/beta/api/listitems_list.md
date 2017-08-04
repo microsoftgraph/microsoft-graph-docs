@@ -1,5 +1,7 @@
 # Enumerate items in a list
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the collection of [items][item] in a [list][].
 
 [list]: ../resources/list.md
@@ -20,7 +22,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
-### Example
+## Example
 
 #### Request
 

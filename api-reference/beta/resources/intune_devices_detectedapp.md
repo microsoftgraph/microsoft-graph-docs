@@ -1,5 +1,7 @@
 ﻿# detectedApp resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 A managed or unmanaged app that is installed on a managed device. Unmanaged apps will only appear for devices marked as corporate owned.
@@ -8,7 +10,7 @@ A managed or unmanaged app that is installed on a managed device. Unmanaged apps
 |---|---|---|
 |[List detectedApps](../api/intune_devices_detectedapp_list.md)|[detectedApp](../resources/intune_devices_detectedapp.md) collection|List properties and relationships of the [detectedApp](../resources/intune_devices_detectedapp.md) objects.|
 |[Get detectedApp](../api/intune_devices_detectedapp_get.md)|[detectedApp](../resources/intune_devices_detectedapp.md)|Read properties and relationships of the [detectedApp](../resources/intune_devices_detectedapp.md) object.|
-|[List managedDevices](../api/intune_devices_detectedapp_list_manageddevice.md)|[managedDevice](../resources/intune_devices_manageddevice.md) collection|Get the managedDevices from the managedDevices navigation property.|
+|[List managedDevices](../api/intune_devices_manageddevice_list.md)|[managedDevice](../resources/intune_devices_manageddevice.md) collection|List properties and relationships of the [managedDevice](../resources/intune_devices_manageddevice.md) objects.|
 
 ## Properties
 |Property|Type|Description|

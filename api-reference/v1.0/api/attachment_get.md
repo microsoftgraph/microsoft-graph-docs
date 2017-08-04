@@ -5,12 +5,13 @@ Read the properties and relationships of an attachment, attached to an [event](.
 
 An attachment can be one of the following types:
 
-* A file ([fileAttachment](../resources/fileattachment.md) resource)
-* An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)
-* A link to a file ([referenceAttachment](../resources/referenceAttachment.md) resource)
+* A file ([fileAttachment](../resources/fileattachment.md) resource).
+* An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource). You can use `$expand` to further get the properties of that item. See an [example](#request-2) below.
+* A link to a file ([referenceAttachment](../resources/referenceAttachment.md) resource).
 
 All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
 resource. 
+
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -75,7 +76,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and [attachment](../resources/attachment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an **attachment** object in the response body. 
+The properties of that type of attachment are returned: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md), 
+or [referenceAttachment](../resources/referenceAttachment.md).
 
 ## Example (file attachment)
 
@@ -116,17 +119,17 @@ Content-length: 199
 ```
 ## Example (item attachment)
 
-##### Request
-Here is an example of the request to get an item attachment on an event.
+##### Request 1
+The first example shows how to get an item attachment on a message. The properties of the **itemAttachment** are returned.
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
+GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 
-##### Response
+##### Response 1
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -137,15 +140,101 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.itemAttachment",
-  "lastModifiedDateTime": "datetime-value",
-  "name": "name-value",
-  "contentType": "contentType-value",
-  "size": 99,
-  "isInline": true,
-  "id": "id-value"
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments/$entity",
+  "@odata.type":"#microsoft.graph.itemAttachment",
+  "id":"AAMkADA1MCJKtzmnlcqVgqI=",
+  "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+  "name":"Reminder - please bring laptop",
+  "contentType":null,
+  "size":32005,
+  "isInline":false
 }
 ```
+
+##### Request 2
+The next example shows how to use `$expand` to get the properties of the item that is attached to the message. In this example, that item is 
+a message; the properties of that attached message are also returned.
+<!-- {
+  "blockType": "request",
+  "name": "get_and_expand_item_attachment"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item 
+```
+
+##### Response 2
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.itemAttachment"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments/$entity",
+  "@odata.type":"#microsoft.graph.itemAttachment",
+  "id":"AAMkADA1MCJKtzmnlcqVgqI=",
+  "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+  "name":"Reminder - please bring laptop",
+  "contentType":null,
+  "size":32005,
+  "isInline":false,
+  "item@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/item/$entity",
+  "item":{
+    "@odata.type":"#microsoft.graph.message",
+    "id":"",
+    "createdDateTime":"2017-07-21T00:20:41Z",
+    "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+    "receivedDateTime":"2017-07-21T00:19:55Z",
+    "sentDateTime":"2017-07-21T00:19:52Z",
+    "hasAttachments":false,
+    "internetMessageId":"<BY2PR15MB05189A084C01F466709E414F9CA40@BY2PR15MB0518.namprd15.prod.outlook.com>",
+    "subject":"Reminder - please bring laptop",
+    "importance":"normal",
+    "conversationId":"AAQkADA1MzMyOGI4LTlkZDctNDkzYy05M2RiLTdiN2E1NDE3MTRkOQAQAMG_NSCMBqdKrLa2EmR-lO0=",
+    "isDeliveryReceiptRequested":false,
+    "isReadReceiptRequested":false,
+    "isRead":false,
+    "isDraft":false,
+    "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADA1M3MTRkOQAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "body":{
+      "contentType":"html",
+      "content":"<html><head>\r\n</head>\r\n<body>\r\n</body>\r\n</html>"
+    },
+    "sender":{
+      "emailAddress":{
+        "name":"Adele Vance",
+        "address":"AdeleV@contoso.onmicrosoft.com"
+      }
+    },
+    "from":{
+      "emailAddress":{
+        "name":"Adele Vance",
+        "address":"AdeleV@contoso.onmicrosoft.com"
+      }
+    },
+    "toRecipients":[
+      {
+        "emailAddress":{
+          "name":"Alex Wilbur",
+          "address":"AlexW@contoso.onmicrosoft.com"
+        }
+      }
+    ],
+    "ccRecipients":[
+      {
+        "emailAddress":{
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.onmicrosoft.com"
+        }
+      }
+    ]
+  }
+}
+```
+
 
 
 ## Example (reference attachment)

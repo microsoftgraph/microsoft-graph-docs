@@ -1,5 +1,7 @@
 # Manage Focused Inbox
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Focused Inbox allows you to view important messages in the `Focused` tab of the Inbox, and the rest of the Inbox messages in the `Other` tab. The classification system 
 initially organizes Inbox messages in a default way. You can correct and train the system over time through the user interface or programmatically. The more you use it, 
 the better the system can infer which incoming message as important.

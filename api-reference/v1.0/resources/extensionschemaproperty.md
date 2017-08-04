@@ -3,7 +3,7 @@
 Use the **extensionSchemaProperty** resource to define a property's name and its type, as part of a [schemaExtension](schemaextension.md) definition.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |name|String| The name of the strongly-typed property defined as part of a schema extension.|
@@ -20,8 +20,7 @@ The following data types are supported when defining a property in a schema exte
 | Integer | 32-bit value. Not supported for messages, events and posts. |
 | String | 256 characters maximum. |
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

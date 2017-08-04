@@ -1,4 +1,7 @@
 # user: reminderView
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Return a list of calendar reminders within the specified start and end times. 
 
 ## Prerequisites

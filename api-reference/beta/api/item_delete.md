@@ -1,5 +1,7 @@
 # Delete a DriveItem
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Delete a [DriveItem](../resources/driveitem.md) by using its ID or path.
 Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
 

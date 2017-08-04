@@ -4,7 +4,7 @@ The **plannerExternalReference** resource represents the metadata of a reference
 
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |alias|String|A name alias to describe the reference.|
@@ -13,8 +13,7 @@ The **plannerExternalReference** resource represents the metadata of a reference
 |previewPriority|String|Used to set the relative priority order in which the reference will be shown as a preview on the task.|
 |type|String|Used to describe the type of the reference. Types include: `PowerPoint`, `Word`, `Excel`, `Other`.|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

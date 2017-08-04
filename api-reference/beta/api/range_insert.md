@@ -1,5 +1,7 @@
 # Range: insert
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.
 ## Prerequisites
 The following **scopes** are required to execute this API: 

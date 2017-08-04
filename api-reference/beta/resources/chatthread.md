@@ -1,4 +1,7 @@
 # chatThread resource type
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 A chatThread is a collection of [chatMessages](chatMessage.md) in Microsoft Teams.
 
 > Currently, chatThreads can be [created in channels](../api/channel_post_chatthreads.md).  Future API releases will support reading existing chatThreads, as well as reading/writing direct chats between users that are outside the scope of a team or channel.

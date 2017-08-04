@@ -1,5 +1,7 @@
 # Send mail
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Send the message specified in the request body. The message is saved in the Sent Items folder by default.
 
 In the same **sendMail** action call, you can:

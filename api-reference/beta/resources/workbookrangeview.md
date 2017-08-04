@@ -1,7 +1,10 @@
 # rangeView resource type
+
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 RangeView represents a set of visible cells of the parent range.
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -10,7 +13,7 @@ RangeView represents a set of visible cells of the parent range.
 |[Range](../api/workbookrangeview_range.md)|[workbookRange](range.md)|Return the range object associated with the range view|
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |columnCount|Int32|Returns the number of visible columns. Read-only.|
@@ -24,13 +27,12 @@ RangeView represents a set of visible cells of the parent range.
 |valueTypes|Json|Represents the type of data of each cell. Read-only. Possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error.	|
 |values|Json|Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.	|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |rows|[workbookRangeView](workbookrangeview.md) collection| Represents a collection of range views associated with the range. Read-only.	Read-only.|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

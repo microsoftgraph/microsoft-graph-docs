@@ -1,5 +1,7 @@
 ﻿#  resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 This topic provides descriptions of the declared methods, properties and relationships exposed by the androidGeneralDeviceConfiguration resource.
@@ -59,7 +61,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset. Valid values 4 to 11|
-|passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`.|
+|passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
 |passwordRequired|Boolean|Indicates whether or not to require a password.|
 |powerOffBlocked|Boolean|Indicates whether or not to block powering off the device.|
 |factoryResetBlocked|Boolean|Indicates whether or not to block user performing a factory reset.|
@@ -77,6 +79,9 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |webBrowserBlocked|Boolean|Indicates whether or not to block the web browser.|
 |webBrowserCookieSettings|String|Cookie settings within the web browser. Possible values are: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
 |wiFiBlocked|Boolean|Indicates whether or not to block syncing Wi-Fi.|
+|appsInstallAllowList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps which can be installed on the KNOX device. This collection can contain a maximum of 500 elements.|
+|appsLaunchBlockList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps which are blocked from being launched on the KNOX device. This collection can contain a maximum of 500 elements.|
+|appsHideList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps to be hidden on the KNOX device. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -167,7 +172,34 @@ Here is a JSON representation of the resource.
   "webBrowserBlockJavaScript": true,
   "webBrowserBlocked": true,
   "webBrowserCookieSettings": "String",
-  "wiFiBlocked": true
+  "wiFiBlocked": true,
+  "appsInstallAllowList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "String",
+      "publisher": "String",
+      "appStoreUrl": "String",
+      "appId": "String"
+    }
+  ],
+  "appsLaunchBlockList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "String",
+      "publisher": "String",
+      "appStoreUrl": "String",
+      "appId": "String"
+    }
+  ],
+  "appsHideList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "String",
+      "publisher": "String",
+      "appStoreUrl": "String",
+      "appId": "String"
+    }
+  ]
 }
 ```
 

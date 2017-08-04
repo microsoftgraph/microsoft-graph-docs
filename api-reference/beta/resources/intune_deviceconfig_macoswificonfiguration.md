@@ -1,5 +1,7 @@
 ﻿#  resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 By providing the configurations in this profile you can instruct the macOS device to connect to desired Wi-Fi endpoint. By specifying the authentication method and security types expected by Wi-Fi endpoint you can make the Wi-Fi connection seamless for end user.
@@ -42,6 +44,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |proxyManualAddress|String|IP Address or DNS hostname of the proxy server when manual configuration is selected.|
 |proxyManualPort|Int32|Port of the proxy server when manual configuration is selected.|
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
+|preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -81,7 +84,8 @@ Here is a JSON representation of the resource.
   "proxySettings": "String",
   "proxyManualAddress": "String",
   "proxyManualPort": 1024,
-  "proxyAutomaticConfigurationUrl": "String"
+  "proxyAutomaticConfigurationUrl": "String",
+  "preSharedKey": "String"
 }
 ```
 
