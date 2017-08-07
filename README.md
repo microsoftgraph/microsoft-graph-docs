@@ -20,28 +20,15 @@ You can contribute to [Microsoft Graph documentation](http://developer.microsoft
 
 ## Before we can accept your pull request
 
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
 ### Minor corrections
 
 Minor corrections or clarifications you submit for documentation and code examples in this repository don't require a Contribution License Agreement (CLA).
-Submissions are taken in the form of pull requests.
-We'll do our best to review pull requests within 10 business days.
-
 
 ### Larger submissions
 
-If you submit new or significant changes to documentation and code examples, you need to send us a signed Contribution License Agreement (CLA) before we can accept your pull request if you are in one of these groups:
-
-* Members of the Microsoft Open Technologies group
-* Contributors who don't work for Microsoft
-
-As a community member, **you must sign the Contribution License Agreement (CLA) before you can contribute large submissions to this project**, but you need to complete and submit the documentation only once.
-Please carefully review the document; you may also need to have your employer sign the document.
-
-Signing the Contribution License Agreement (CLA) does not grant you rights to commit to the main repository, but it does mean that the Office Developer and Office Developer Content Publishing teams will be able to review and consider your contributions and you will get credit if we do.
-
-You can download the Contribution License Agreement (CLA) [here](https://github.com/microsoftgraph/microsoft-graph-docs/raw/master/Contribution%20License%20Agreement.pdf). Please fill out the form and email it to [officedev@microsoft.com](mailto:officedev@microsoft.com).
-
-Once we receive and process your CLA, we'll do our best to review your pull requests within 10 business days.
+If you submit new or significant changes to documentation and code examples, you must sign a Contribution License Agreement (CLA) before your PR will be merged. This a one-time requirement for Microsoft projects in GitHub. You can read more about [Contribution License Agreements (CLA)](https://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia. You can sign the Microsoft Contribution License Agreement by visiting https://cla.microsoft.com/. Use your GitHub account to login.
 
 ## Repository organization
 
@@ -234,5 +221,3 @@ By using references grouped at the bottom of your file, you can easily find, edi
 [Markdown Home]: http://daringfireball.net/projects/markdown/
 [Markdown Pad]: http://markdownpad.com/
 [microsoftgraph/microsoft-graph-docs issues]: https://github.com/microsoftgraph/microsoft-graph-docs/issues
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
