@@ -6,6 +6,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## August 2017
 
+### People
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | v1.0 | Added People API documents to v1.0 and added [People API concept topic.](people_example.md)|
+
 ### OneNote
 
 |**Change type**|**Version**|**Description**|

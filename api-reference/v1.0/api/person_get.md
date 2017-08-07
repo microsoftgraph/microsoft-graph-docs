@@ -48,7 +48,7 @@ The following request does a search for a person named "Irene McGowan".
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/people/?$search="Irene McGowan"
+GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowan"
 ```
 
 The following example shows the response. 
@@ -114,7 +114,7 @@ The following example gets the **displayName** and **scoredEmailAddresses** of p
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'
+GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'
 ```
 
 The following example shows the response. 
