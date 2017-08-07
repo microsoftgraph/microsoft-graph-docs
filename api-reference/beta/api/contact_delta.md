@@ -10,9 +10,9 @@ you can query for incremental changes in the contacts in
 that folder. This allows you to maintain and synchronize a local store of a user's contacts without 
 having to fetch the entire set of contacts from the server every time.  
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: _Contacts.Read_; _Contacts.ReadWrite_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/{id}/contacts/delta
@@ -40,7 +40,7 @@ includes the encoded, desired parameters.
 _id_ property is always returned. 
 
 
-### Request headers
+## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
@@ -51,7 +51,7 @@ _id_ property is always returned.
 ### Response
 If successful, this method returns a `200, OK` response code and [contact](../resources/contact.md) collection object in the response body.
 
-### Example
+## Example
 ##### Request
 The following example shows how to make a single **delta** function call, use the `$select` parameter to get only 
 each contact's **displayName** property, and limit the maximum number of contacts 

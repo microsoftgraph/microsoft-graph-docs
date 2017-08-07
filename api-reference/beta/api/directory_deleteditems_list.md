@@ -6,12 +6,12 @@ Retrieve a list of recently deleted items from [deleted items](../resources/dire
 
 Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: 
 * For users: *User.Read.All; Directory.Read.All; User.ReadWrite.All; Directory.AccessAsUser.All*
 * For groups: *Group.Read.All; Directory.Read.All; Group.ReadWrite.All; Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /directory/deleteditems/Microsoft.Graph.Group
@@ -20,20 +20,20 @@ GET /directory/deletedItems/Microsoft.Graph.User
 
 This API currently supports retrieving object types of groups (Microsoft.Graph.Group) or users (Microsoft.Graph.User) from deleted items. The type is specified as a required part of the URI. Calling GET /directory/deleteditems without a type is not supported.
 
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer &lt;code&gt; *Required*|
 | Accept  | application/json |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
-### Example
+## Example
 ##### Request
 
 <!-- {

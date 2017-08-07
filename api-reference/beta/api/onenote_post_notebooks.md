@@ -12,6 +12,7 @@ Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
 POST /me/onenote/notebooks
 POST /users/{id | userPrincipalName}/onenote/notebooks
 POST /groups/{id}/onenote/notebooks
+POST /sites/{id}/onenote/notebooks
 ```
 ## Request headers
 | Name       | Type | Description|

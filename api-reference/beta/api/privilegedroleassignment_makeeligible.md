@@ -7,7 +7,6 @@ Make the role assignment as eligible. If the role assignment is already eligible
 ## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
-
 The requestor needs to have _Privileged Role Administrator_ role. 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -24,6 +23,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns `200, OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
 
+Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
 ## Example
 Here is an example of how to call this API.
 ##### Request

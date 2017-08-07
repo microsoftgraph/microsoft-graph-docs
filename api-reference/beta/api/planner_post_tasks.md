@@ -3,23 +3,23 @@
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a new **plannerTask**.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.ReadWrite.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /planner/tasks
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.
 The **plannerTask** planId property must be set to an existing [plannerPlan](../resources/plannerplan.md) object's id.
 
@@ -28,7 +28,7 @@ If successful, this method returns `201, Created` response code and [plannerTask
 
 This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

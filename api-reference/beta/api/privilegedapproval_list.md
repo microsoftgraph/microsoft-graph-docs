@@ -5,26 +5,30 @@
 Retrieve a list of privilegedapproval objects.
 
 To filter the results from the query, use the standard OData ``$filter`` expressions in the URIs.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
-### HTTP request
+
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedApproval
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of [privilegedApproval](../resources/privilegedapproval.md) objects in the response body.
-### Example
+
+Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
+
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

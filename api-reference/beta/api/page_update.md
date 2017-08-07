@@ -12,6 +12,7 @@ Notes.ReadWrite, or Notes.ReadWrite.All
 PATCH /me/onenote/pages/{id}/content
 PATCH /users/{id | userPrincipalName}/onenote/pages/{id}/content
 PATCH /groups/{id}/onenote/pages/{id}/content
+PATCH /sites/{id}/onenote/pages/{id}/content
 ```
 ## Request headers
 | Name       | Type | Description|

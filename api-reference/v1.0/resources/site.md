@@ -42,6 +42,7 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
+  "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
 
   /* inherited from baseItem */
   "name": "string",
@@ -76,11 +77,13 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
 | **drives**        | Collection([drive][])    | The collection of drives (document libraries) under this site.
 | **items**         | Collection([baseItem][]) | Used to address any item contained in this site. This collection cannot be enumerated.
 | **sites**         | Collection([site][])     | The collection of the sub-sites under this site.
+| **onenote**       | [onenote][]              | Calls the OneNote service for notebook related operations.
 
 [baseItem]: baseitem.md
 [drive]: drive.md
 [identitySet]: identityset.md
 [site]: site.md
+[onenote]: onenote.md
 
 <!-- {
   "type": "#page.annotation",

@@ -259,14 +259,25 @@
       <Item text="Get directoryRoleTemplate" url="/en-us/api-reference/v1.0/api/directoryroletemplate_get" SEOKeyword="Get directoryRoleTemplate, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryroletemplate object." />
     </Item>
     <Item text="Domains" url="/en-us/api-reference/v1.0/resources/domain" >
-      <Item text="List domains" url="/en-us/api-reference/v1.0/api/domain_list" />
+	  <Item text="List domains" url="/en-us/api-reference/v1.0/api/domain_list" />
       <Item text="Create domain" url="/en-us/api-reference/v1.0/api/domain_post_domains" />
       <Item text="Delete domain" url="/en-us/api-reference/v1.0/api/domain_delete" />
       <Item text="Get domain" url="/en-us/api-reference/v1.0/api/domain_get" />
       <Item text="Update domain" url="/en-us/api-reference/v1.0/api/domain_update" />
       <Item text="Verify domain" url="/en-us/api-reference/v1.0/api/domain_verify" />
 	  </Item>
-    <Item text="Invitation manager" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
+    <Item text="Group setting" url="/en-us/api-reference/v1.0/resources/groupsetting" >
+	  <Item text="Create setting" url="/en-us/api-reference/v1.0/api/groupsetting_post_groupsettings" />
+	  <Item text="Get setting" url="/en-us/api-reference/v1.0/api/groupsetting_get" />
+	  <Item text="List settings" url="/en-us/api-reference/v1.0/api/groupsetting_list" />
+	  <Item text="Update setting" url="/en-us/api-reference/v1.0/api/groupsetting_update" />
+	  <Item text="Delete setting" url="/en-us/api-reference/v1.0/api/groupsetting_delete" />
+	</Item>
+	<Item text="Group setting template" url="/en-us/api-reference/v1.0/resources/groupsettingtemplate" >
+	  <Item text="List group setting templates" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_list" />
+	  <Item text="Get group setting template" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_get" />
+	</Item>
+	<Item text="Invitation manager" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
       <Item text="Create invitation" url="/en-us/api-reference/v1.0/api/invitation_post" SEODescription="Creates a new invitation to add an external user to the organization's directory." />
     </Item>
     <Item text="Organization" url="/en-us/api-reference/v1.0/resources/organization" SEOKeyword="user organizational structure, Microsoft Graph API, user API" SEODescription="">
@@ -909,7 +920,7 @@
       <Item text="Directory setting" url="/en-us/api-reference/beta/resources/directorysetting" SEOKeyword="directorySetting API, Microsoft Graph API, directorysetting API" SEODescription="Governs entity or feature behaviors, both at a tenant-wide level or at a specific entity level.">
         <Item text="Create setting" url="/en-us/api-reference/beta/api/directorysetting_post_settings" SEOKeyword="Create directorySetting, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
         <Item text="Get setting" url="/en-us/api-reference/beta/api/directorysetting_get" SEOKeyword="Get directorySetting, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
-        <Item text="List setting" url="/en-us/api-reference/beta/api/directorysetting_list" SEOKeyword="List directorySetting, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
+        <Item text="List settings" url="/en-us/api-reference/beta/api/directorysetting_list" SEOKeyword="List directorySetting, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
         <Item text="Update setting" url="/en-us/api-reference/beta/api/directorysetting_update" SEOKeyword="Update directorySetting, Microsoft Graph API, Directory API" SEODescription="Update the properties of directoryrole object." />
         <Item text="Delete setting" url="/en-us/api-reference/beta/api/directorysetting_delete" SEOKeyword="Delete directorySetting, Microsoft Graph API, Directory API" SEODescription="Delete directoryRole." />
       </Item>

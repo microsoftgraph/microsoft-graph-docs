@@ -12,6 +12,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.Al
 GET /me/onenote/sectionGroups/{id}/sectionGroups
 GET /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sectionGroups
 GET /groups/{id}/onenote/sectionGroups/{id}/sectionGroups
+GET /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.

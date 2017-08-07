@@ -19,6 +19,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.Al
 GET /me/onenote/operations/{id}
 GET /users/{id | userPrincipalName}/onenote/operations/{id}
 GET /groups/{id}/onenote/operations/{id}
+GET /sites/{id}/onenote/operations/{id}
 ```
 ## Optional query parameters
 None.

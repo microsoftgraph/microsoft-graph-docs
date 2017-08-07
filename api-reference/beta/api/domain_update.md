@@ -7,11 +7,11 @@ Update the properties of domain object.
 > **Important:**
 > Only verified domains can be updated.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /domains/{id}
@@ -19,14 +19,14 @@ PATCH /domains/{id}
 
 > For {id}, specify the domain with its fully qualified domain name.
 
-### Request headers
+## Request headers
 
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}. Required. |
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 
 In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.
 
@@ -34,7 +34,7 @@ In the request body, supply the values for relevant fields to be updated. Existi
 
 If successful, this method returns a `204 No Content` response code and no response body.
 
-### Example
+## Example
 ##### Request
 
 <!-- {

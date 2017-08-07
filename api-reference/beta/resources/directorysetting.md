@@ -4,6 +4,7 @@
 
 Directory settings can be created based on the available [directorySettingTemplates](directorySettingTemplate.md), and changed from their preset defaults. These settings can govern entity or feature behaviors, both at a tenant-wide level or at a specific entity level. When the same setting is defined at both the tenant-wide and specific entity level, the specific entity level setting may opt-out from the tenant-wide setting.  For example, the tenant-wide setting may allow guests to be invited by existing members of groups, but a specific group setting may opt-out and not allow guests to be invited by members of the group. Currently system defined settings are only govern Office groups behavior.
 
+> **Note**: The /beta version of the directorySetting resource type only applies to groups. The /v1.0 version has been renamed to groupSetting.
 
 ## Methods
 

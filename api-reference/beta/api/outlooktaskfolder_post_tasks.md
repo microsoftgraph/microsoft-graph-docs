@@ -7,29 +7,29 @@ Create an Outlook task in the specified task folder.
 The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time 
 to be always midnight in the specified time zone.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.| 
 
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.
 
 
 ### Response
 If successful, this method returns `201, Created` response code and [outlookTask](../resources/outlooktask.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

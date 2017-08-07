@@ -18,11 +18,11 @@ The following actions are performed as part of this operation:
 
 After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code. To verify deletion of a domain, you can perform a [get domain](domain_get.md). If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -31,14 +31,14 @@ POST /domains/{id}/forceDelete
 
 > For {id}, specify the domain with its fully qualified domain name.
 
-### Request headers
+## Request headers
 
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required.|
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
@@ -50,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful, this method returns `200, OK` response code. 
 
-### Example
+## Example
 ##### Request
 <!-- {
   "blockType": "request",

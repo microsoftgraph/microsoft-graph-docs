@@ -15,6 +15,7 @@ Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
 POST /me/onenote/notebooks/{id}/copyNotebook
 POST /users/{id | userPrincipalName}/onenote/notebooks/{id}/copyNotebook
 POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
+POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -27,6 +28,8 @@ In the request body, provide a JSON object that contains the parameters that you
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
+|siteCollectionId|String|The id of the SharePoint site to copy to. Use only when copying to an Office 365 team site.|
+|siteId|String|The id of the SharePoint web to copy to. Use only when copying to an Office 365 team site.|
 |groupId|String|The id of the group to copy to. Use only when copying to an Office 365 group.|
 |renameAs|String|The name of the copy. Defaults to the name of the existing item. |
 

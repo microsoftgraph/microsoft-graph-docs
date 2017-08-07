@@ -15,9 +15,9 @@ By default, this operation (and the POST, GET, and PATCH task operations) return
 You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone 
 different than UTC.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.ReadWrite_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
@@ -25,18 +25,18 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}/complete
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}/complete
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.| 
 
-### Request body
+## Request body
 
 ### Response
 If successful, this method returns `200, OK` response code and [outlookTask](../resources/outlooktask.md) collection object in the response body.
 
-### Example
+## Example
 The following example marks the specified task as complete. It specifies Pacific Standard Time (PST) 
 in the `Prefer: outlook.timezone` header.
 ##### Request

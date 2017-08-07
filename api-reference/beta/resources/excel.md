@@ -12,7 +12,7 @@ You can access a set of Excel objects (such as Table, Range, or Chart) by using 
 returns a collection of worksheet objects that are part of the workbook.    
 
 
-** Note: The Excel REST API supports only Office Open XML file formatted workbooks. The `.xls` extension workbooks are not supported. 
+**Note:** The Excel REST API supports only Office Open XML file formatted workbooks. The `.xls` extension workbooks are not supported. 
 
 ## Authorization and scopes
 
