@@ -23,14 +23,14 @@ To begin a large file upload, your app must first request a new upload session.
 This creates a temporary storage location where the bytes of the file will be saved until the complete file is uploaded.
 Once the last byte of the file has been uploaded the upload session is completed and the final file is shown in the destination folder.
 
-## HTTP request
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root:/{path-to-item}:/createUploadSession
 POST /me/drive/items/{parent-item-id}:/{filename}:/createUploadSession
 ```
 
-## Request body
+### Request body
 No request body is required. 
 However, you can specify a request body to provide additional data about the file being uploaded.
 
@@ -44,7 +44,7 @@ For example, to control the behavior if the filename is already taken, you can s
 }
 ```
 
-## Optional request headers
+### Optional request headers
 
 | Name       | Value | Description                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -54,7 +54,7 @@ For example, to control the behavior if the filename is already taken, you can s
 ### Response
 The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
 
-## Example
+### Example
 
 <!-- {
   "blockType": "request",
@@ -64,7 +64,7 @@ The response to this request will provide the details of the newly created [uplo
 POST https://graph.microsoft.com/v1.0/me/drive/root:/{item-path}:/createUploadSession
 ```
 
-##### Response
+#### Response example
 Here is an example of the response.
 
 <!-- {
@@ -93,7 +93,7 @@ Uploading fragments out of order will result in an error.
 **Note:** If your app splits a file into multiple fragments, the size of each fragment **MUST** be a multiple of 320 KiB. 
 Using a fragment size that does not divide evenly by 320 will result in errors committing some files.
 
-## Example
+### Example
 
 This example is uploading the first 26 bytes of a 128 byte file.
 The **Content-Length** header specifies the size of the current request.
@@ -112,7 +112,7 @@ Content-Range: bytes 0-25/128
 **Important:** Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests.
 If a fragment declares a different file size, the request will fail.
 
-##### Response
+#### Response example
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -177,7 +177,7 @@ This should be used in scenarios where the upload is aborted, for example, if th
 
 Temporary files and their accompanying upload session are automatically cleaned up after the **expirationDateTime** has passed.
 
-## Example
+### Example
 
 The DELETE request will immedately expire the upload session and remove any previously uploaded bytes.
 
@@ -186,7 +186,7 @@ The DELETE request will immedately expire the upload session and remove any prev
 DELETE https://tenant-my.sharepoint.com/alkjl1kjklna
 ```
 
-##### Response
+#### Response example
 
 <!-- { "blockType": "response" } -->
 ```http
@@ -201,7 +201,7 @@ If this occurs, your app can still resume the file transfer from the previously 
 
 To find out which byte ranges have been received previously, your app can request the status of an upload session.
 
-## Example
+### Example
 Query the status of the upload by sending a GET request to the `uploadUrl`.
 
 <!-- { "blockType": "request", "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->

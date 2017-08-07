@@ -93,7 +93,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/I0bJ_HpgnSeYRg4sXTiKqggV6eXU0t__XDezYGO-NQw
 ```
 
-Follow the 302 redirection and the downloading CSV file will have the schema as below.
+Follow the 302 redirection and the downloading CSV file will have the schema as follows.
 
 <!-- {
   "blockType": "response",
