@@ -4,34 +4,34 @@
 
 Retrieve a list of servicePrincipal objects.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals
 ```
-### Optional query parameters
+## Optional query parameters
 
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name | Description |
 |:----------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 
 Do not supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns a `200 OK` response code and collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.
 
-### Example
+## Example
 
 ##### Request
 

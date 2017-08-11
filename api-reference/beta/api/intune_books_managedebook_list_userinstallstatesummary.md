@@ -28,16 +28,20 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) objects in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

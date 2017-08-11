@@ -72,7 +72,6 @@ The data in the JSON payload can be primitive types, or arrays of primitive type
 | @odata.type | Microsoft.Graph.OpenTypeExtension |
 | extensionName | %unique_string% |
 
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and the updated

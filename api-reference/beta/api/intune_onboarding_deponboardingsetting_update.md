@@ -39,13 +39,14 @@ The following table shows the properties that are required when you create a [de
 |shareTokenWithSchoolDataSyncService|Boolean|Whether or not the Dep token sharing is enabled with the School Data Sync service.|
 |lastSyncErrorCode|Int32|Error code reported by Apple during last dep sync.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}/depOnboardingSettings/{depOnboardingSettingId}
@@ -63,7 +64,8 @@ Content-length: 395
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

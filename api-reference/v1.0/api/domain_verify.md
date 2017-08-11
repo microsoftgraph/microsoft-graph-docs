@@ -5,11 +5,11 @@ Validates the ownership of the domain.
 > **Important:**
 > Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,19 +18,20 @@ POST /domains/{id}/verify
 
 > For {id}, specify the domain with its fully qualified domain name.
 
-### Request headers
+## Request headers
 
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required.|
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 
-### Response
+## Response
+
 If successful, this method returns `200, OK` response code and [domain](../resources/domain.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 <!-- {
   "blockType": "request",

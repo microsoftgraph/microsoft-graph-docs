@@ -12,6 +12,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.Al
 GET /me/onenote/notebooks
 GET /users/{id | userPrincipalName}/onenote/notebooks
 GET /groups/{id}/onenote/notebooks
+GET /sites/{id}/onenote/notebooks
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -28,7 +29,9 @@ Valid `expand` values for notebooks are `sections` and `sectionGroups`.
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [notebook](../resources/notebook.md) objects in the response body.
 ## Example
 ##### Request

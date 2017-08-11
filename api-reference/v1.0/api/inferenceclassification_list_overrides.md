@@ -19,7 +19,9 @@ GET /users/{id}/inferenceClassification/overrides
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.
 An empty collection is returned if the user doesn't have any overrides set up.
 ## Example

@@ -2,6 +2,7 @@
   <Item text="Overview" url="/en-us/concepts/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud." />    
   <Item text="Featured scenarios" url="/en-us/concepts/featured_scenarios" > 
 	  <Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
+	  <Item text="Get information about relevant people" url="/en-us/concepts/people_example" SEODescription="Use the People API to retrieve the people who are most relevant to a user." />
   </Item>
   <Item text="Build your first app" url="/en-us/concepts/get-started">
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Android app" />
@@ -259,14 +260,25 @@
       <Item text="Get directoryRoleTemplate" url="/en-us/api-reference/v1.0/api/directoryroletemplate_get" SEOKeyword="Get directoryRoleTemplate, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryroletemplate object." />
     </Item>
     <Item text="Domains" url="/en-us/api-reference/v1.0/resources/domain" >
-      <Item text="List domains" url="/en-us/api-reference/v1.0/api/domain_list" />
+	  <Item text="List domains" url="/en-us/api-reference/v1.0/api/domain_list" />
       <Item text="Create domain" url="/en-us/api-reference/v1.0/api/domain_post_domains" />
       <Item text="Delete domain" url="/en-us/api-reference/v1.0/api/domain_delete" />
       <Item text="Get domain" url="/en-us/api-reference/v1.0/api/domain_get" />
       <Item text="Update domain" url="/en-us/api-reference/v1.0/api/domain_update" />
       <Item text="Verify domain" url="/en-us/api-reference/v1.0/api/domain_verify" />
 	  </Item>
-    <Item text="Invitation manager" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
+    <Item text="Group setting" url="/en-us/api-reference/v1.0/resources/groupsetting" >
+	  <Item text="Create setting" url="/en-us/api-reference/v1.0/api/groupsetting_post_groupsettings" />
+	  <Item text="Get setting" url="/en-us/api-reference/v1.0/api/groupsetting_get" />
+	  <Item text="List settings" url="/en-us/api-reference/v1.0/api/groupsetting_list" />
+	  <Item text="Update setting" url="/en-us/api-reference/v1.0/api/groupsetting_update" />
+	  <Item text="Delete setting" url="/en-us/api-reference/v1.0/api/groupsetting_delete" />
+	</Item>
+	<Item text="Group setting template" url="/en-us/api-reference/v1.0/resources/groupsettingtemplate" >
+	  <Item text="List group setting templates" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_list" />
+	  <Item text="Get group setting template" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_get" />
+	</Item>
+	<Item text="Invitation manager" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
       <Item text="Create invitation" url="/en-us/api-reference/v1.0/api/invitation_post" SEODescription="Creates a new invitation to add an external user to the organization's directory." />
     </Item>
     <Item text="Organization" url="/en-us/api-reference/v1.0/resources/organization" SEOKeyword="user organizational structure, Microsoft Graph API, user API" SEODescription="">
@@ -535,6 +547,12 @@
       </Item>
     </Item>
   </Item>
+  <Item text="People" url="/en-us/api-reference/v1.0/resources/social_overview" >
+	<Item text="Person" url="/en-us/api-reference/v1.0/resources/person" >
+		<Item text="List people" url="/en-us/api-reference/v1.0/api/user_list_people" />
+		<Item text="Get person" url="/en-us/api-reference/v1.0/api/person_get" />
+	</Item>
+  </Item>
   <Item text="Personal contact" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="Personal contacts API">
     <Item text="Contact" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="Contact">
       <Item text="List contacts" url="/en-us/api-reference/v1.0/api/user_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contact objects." />
@@ -739,7 +757,8 @@
         <Item text="List deleted groups" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="List groups" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="List groups, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of group objects." />
         <Item text="List joined teams" url="/en-us/api-reference/beta/api/user_list_joinedteams" SEOKeyword="List joinedTeams, Microsoft Graph API, Users API" SEODescription="Retrieve a list of Microsoft Teams that the user belongs to." />
-        <Item text="List member of" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="List memberOf, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
+        <Item text="List lifecycle policies" url="/en-us/api-reference/beta/api/group_list_grouplifecyclepolicies" />
+		<Item text="List member of" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="List memberOf, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
         <Item text="List members" url="/en-us/api-reference/beta/api/group_list_members" SEOKeyword="List members, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
         <Item text="List owners" url="/en-us/api-reference/beta/api/group_list_owners" SEOKeyword="List owners, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
         <Item text="Permanently delete group" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
@@ -802,7 +821,17 @@
           <Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
         </Item>
       </Item>
-      <Item text="Notes" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
+      <Item text="Lifecycle policy" url="/en-us/api-reference/beta/resources/grouplifecyclepolicy" >
+		<Item text="Create policy" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies" />
+		<Item text="List policies" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_list" />
+		<Item text="Get policy" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_get" />
+		<Item text="Update policy" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_update" />
+		<Item text="Delete policy" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_delete" />
+		<Item text="Add group" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_addgroup" />
+		<Item text="Remove group" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_removegroup" />
+		<Item text="Renew group" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_renewgroup" />	  
+	  </Item>
+	  <Item text="Notes" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
         <Item text="List notebooks" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
         <Item text="Create notebook" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
       </Item>
@@ -909,7 +938,7 @@
       <Item text="Directory setting" url="/en-us/api-reference/beta/resources/directorysetting" SEOKeyword="directorySetting API, Microsoft Graph API, directorysetting API" SEODescription="Governs entity or feature behaviors, both at a tenant-wide level or at a specific entity level.">
         <Item text="Create setting" url="/en-us/api-reference/beta/api/directorysetting_post_settings" SEOKeyword="Create directorySetting, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
         <Item text="Get setting" url="/en-us/api-reference/beta/api/directorysetting_get" SEOKeyword="Get directorySetting, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
-        <Item text="List setting" url="/en-us/api-reference/beta/api/directorysetting_list" SEOKeyword="List directorySetting, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
+        <Item text="List settings" url="/en-us/api-reference/beta/api/directorysetting_list" SEOKeyword="List directorySetting, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
         <Item text="Update setting" url="/en-us/api-reference/beta/api/directorysetting_update" SEOKeyword="Update directorySetting, Microsoft Graph API, Directory API" SEODescription="Update the properties of directoryrole object." />
         <Item text="Delete setting" url="/en-us/api-reference/beta/api/directorysetting_delete" SEOKeyword="Delete directorySetting, Microsoft Graph API, Directory API" SEODescription="Delete directoryRole." />
       </Item>

@@ -35,13 +35,14 @@ The following table shows the properties that are required when you create a [wi
 |applicationType|String|Application Type Possible values are: `universal`, `desktop`.|
 |deviceCount|Int32|Device Count|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
@@ -55,7 +56,8 @@ Content-length: 106
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

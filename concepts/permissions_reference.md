@@ -156,8 +156,8 @@ None.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _DeviceManagementServiceConfiguration.Read.All_ | Read Microsoft Intune configuration (preview) | Allows the app to read Microsoft Intune service properties including device enrollment and third party service connection configuration. | Yes |
-| _DeviceManagementServiceConfiguration.ReadWrite.All_ | Read and write Microsoft Intune configuration (preview) | Allows the app to read and write Microsoft Intune service properties including device enrollment and third party service connection configuration. | Yes |
+| _DeviceManagementServiceConfig.Read.All_ | Read Microsoft Intune configuration (preview) | Allows the app to read Microsoft Intune service properties including device enrollment and third party service connection configuration. | Yes |
+| _DeviceManagementServiceConfig.ReadWrite.All_ | Read and write Microsoft Intune configuration (preview) | Allows the app to read and write Microsoft Intune service properties including device enrollment and third party service connection configuration. | Yes |
 | _DeviceManagementConfiguration.Read.All_ | Read Microsoft Intune device configuration and policies (preview) | Allows the app to read properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. | Yes |
 | _DeviceManagementConfiguration.ReadWrite.All_ | Read and write Microsoft Intune device configuration and policies (preview) | Allows the app to read and write properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. | Yes |
 | _DeviceManagementApps.Read.All_ | Read Microsoft Intune apps (preview) | Allows the app to read the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. | Yes |
@@ -523,18 +523,23 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read_ |    Read users' relevant people lists (preview) | Allows the app to read a ranked list of relevant people of the signed-in user. The list includes local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype).| No |
+| _People.Read_ |    Read users' relevant people lists | Allows the app to read a scored list of people relevant to the signed-in user. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). | No |
+| _People.Read.All_ | Read all users' relevant people lists | Allows the app to read a scored list of people relevant to the signed-in user or other users in the signed-in user's organization. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Yes |
 
 #### Application permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _People.Read.All_ | Read all users' relevant people lists | Allows the app to read a scored list of people relevant to the signed-in user or other users in the signed-in user's organization. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Yes |
 
 ### Remarks
 
+The People.Read.All permission is only valid for work and school accounts. 
 
 ### Example usage
 #### Delegated
-
+* _People.Read_ : Read a list of relevant people (`GET /me/people`)
+* _People.Read.All_ : Read a list of relevant people to another user in the same organization (`GET /users('{id})/people`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -640,7 +645,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _User.Read.All_  |     Read all users' full profiles           | Allows the app to read the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. | Yes |
 | _User.ReadWrite.All_ |     Read and write all users' full profiles | Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. Also allows the app to create and delete users as well as reset user passwords on behalf of the signed-in user. | Yes |
 | _User.Invite.All_  |     Invite guest users to the organization | Allows the app to invite guest users to your organization, on behalf of the signed-in user. | Yes |
-| _UserTimelineActivity.Write.CreatedByApp_  |     Write app activity to users' timeline | Allows the app to report the signed-in user's app activity information to Microsoft Timeline. | No |
 
 #### Application permissions
 
@@ -652,7 +656,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ### Remarks
 
-The only permissions valid for Microsoft accounts are _User.Read_, _User.ReadWrite_, and _UserTimelineActivity.Write.CreatedByApp_. For work or school accounts, all permissions are valid except  _UserTimelineActivity.Write.CreatedByApp_.
+The only permissions valid for Microsoft accounts are _User.Read_ and _User.ReadWrite_. For work or school accounts, all permissions are valid.
 
 With the _User.Read_ permission, an app can also read the basic company information of the signed-in user for a work or school account through the [organization](../api-reference/v1.0/resources/organization.md) resource. The following properties are available: id, displayName, and verifiedDomains.
 
@@ -738,8 +742,8 @@ This section shows some common scenarios that target [user](../api-reference/v1.
     
 | **App tasks involving Group**	 |  **Required permissions** |  **Permission strings** |
 |:-------------------------------|:---------------------|:---------------|
-| App wants to read basic group info like display name and picture; for example, to show in a group picking experience.	 | _Group.Read.All_  | Read all groups|
-| App wants to read all content in all public Office 365 groups, including files and conversations.  It also needs to show group members.  |  _Group.Read.All_, _User.ReadBasic.All_ | Read all groups, Read all users' basic profiles |
-| App wants to read and write all content in all public Office 365 groups, including files and conversations.  It also needs to show group members and be able to update group members (if the signed-in user is a group owner).  | 	_Group.ReadWrite.All_, _User.ReadBasic.All_ |  Read and write all groups, Read all users' basic profiles |
-| App wants to allow the user to join public Office 365 groups. It allows the user to search for a particular group and choose one from an enumerated list to join. The user is added to whichever group they select.	 |   _Group.ReadWrite.All_, _User.Read_ | Read and write all groups, Sign-in and read user profile |
-| App wants to create a group through Microsoft Graph. | 	_Group.ReadWrite.All_ | Read and write all groups|
+| App wants to read basic group info (only display name and picture), for example to show in a group picking experience	 | _Group.Read.All_  | Read all groups|
+| App wants to read all content in all Office 365 groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  |  _Group.Read.All_ | Read items in all site collections, Read all groups|
+| App wants to read and write all content in all Office 365 groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  | 	_Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Read and write all groups, Edit or delete items in all site collections |
+| App wants to discover (find) an Office 365 group. It allows the user to search for a particular group and choose one from the enumerated list to allow the user to join the group.	 | _Group.ReadWrite.All_ | Read and write all groups|
+| App wants to create a group through AAD Graph | 	_Group.ReadWrite.All_ | Read and write all groups|

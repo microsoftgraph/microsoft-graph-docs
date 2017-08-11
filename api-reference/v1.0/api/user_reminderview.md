@@ -30,6 +30,7 @@ In the request URL, provide the following function parameters with values.
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [reminder](../resources/reminder.md) collection object in the response body.
 
 ## Example

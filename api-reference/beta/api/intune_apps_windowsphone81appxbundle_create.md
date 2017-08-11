@@ -57,13 +57,14 @@ The following table shows the properties that are required when you create a win
 |phonePublisherId|String|The Phone Publisher Id. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
 |appXPackageInformationList|[windowsPackageInformation](../resources/intune_apps_windowspackageinformation.md) collection|The list of AppX Package Information.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [windowsPhone81AppXBundle](../resources/intune_apps_windowsphone81appxbundle.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/
@@ -124,7 +125,8 @@ Content-length: 1927
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

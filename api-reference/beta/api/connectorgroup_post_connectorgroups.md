@@ -19,8 +19,8 @@ POST /connectorGroups
 ## Request body
 In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [connectorGroup](../resources/connectorgroup.md) object in the response body.
 
 ## Example

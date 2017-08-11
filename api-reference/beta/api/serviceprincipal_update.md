@@ -40,6 +40,7 @@ In the request body, supply the values for relevant fields that should be update
 |tags|String|                                        **Notes**: not nullable.            |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [servicePrincipal](../resources/serviceprincipal.md) object in the response body.
 ## Example
 ##### Request

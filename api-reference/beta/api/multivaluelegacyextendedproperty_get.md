@@ -132,7 +132,9 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code. 
 
 The response body includes an object representing the requested resource instance, expanded with the matching 

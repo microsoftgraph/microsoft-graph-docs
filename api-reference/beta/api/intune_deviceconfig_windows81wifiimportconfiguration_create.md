@@ -43,13 +43,14 @@ The following table shows the properties that are required when you create a win
 |profileName|String|Profile name displayed in the UI.|
 |payload|Binary|Payload. (UTF8 encoded byte array). This is the XML file saved on the device you used to connect to the Wi-Fi endpoint.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [windows81WifiImportConfiguration](../resources/intune_deviceconfig_windows81wifiimportconfiguration.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
@@ -71,7 +72,8 @@ Content-length: 520
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

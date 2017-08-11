@@ -21,7 +21,7 @@ The following **scope** is required to execute this API: *Directory.AccessAsUser
 PATCH /schemaExtensions/{id}
 ```
 
-### Optional request headers
+## Optional request headers
 
 | Name      |Description|
 |:----------|:----------|

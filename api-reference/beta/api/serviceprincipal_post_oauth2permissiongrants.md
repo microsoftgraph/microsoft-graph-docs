@@ -19,8 +19,8 @@ POST /servicePrincipals/{id}/oAuth2Permissiongrants
 ## Request body
 In the request body, supply a JSON representation of [oAuth2Permissiongrant](../resources/oAuth2Permissiongrant.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [oAuth2Permissiongrant](../resources/oAuth2Permissiongrant.md) object in the response body.
 
 ## Example

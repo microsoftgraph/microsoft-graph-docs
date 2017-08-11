@@ -22,6 +22,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 ## Request body
 
 ## Response
+
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ## Example

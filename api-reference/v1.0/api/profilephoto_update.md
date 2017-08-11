@@ -47,6 +47,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 In the request body, include the binary data of the photo in the request body.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code.
 ## Example
 ##### Request

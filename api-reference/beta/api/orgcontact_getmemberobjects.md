@@ -23,6 +23,7 @@ In the request body, provide a JSON object with the following parameters.
 |securityEnabledOnly|Boolean||
 
 ## Response
+
 If successful, this method returns `200, OK` response code and String collection object in the response body.
 
 ## Example

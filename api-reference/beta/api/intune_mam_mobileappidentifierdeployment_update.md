@@ -37,13 +37,14 @@ The following table shows the properties that are required when you create a [mo
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/mobileAppIdentifierDeployments/{mobileAppIdentifierDeploymentId}
@@ -58,7 +59,8 @@ Content-length: 126
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

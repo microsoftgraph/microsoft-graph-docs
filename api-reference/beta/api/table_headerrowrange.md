@@ -24,6 +24,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/HeaderRowRange
 ## Request body
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example

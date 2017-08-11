@@ -23,8 +23,8 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
 ## Request body
 In the request body, supply a JSON representation of [ChartPoints](../resources/chartpoint.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [ChartPoints](../resources/chartpoint.md) object in the response body.
 
 ## Example

@@ -23,8 +23,8 @@ POST /groups/{group-id}/drive/items/{parent-item-id}/children
 ## Request body
 In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.
 
-
 ## Response
+
 If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.
 
 ## Example

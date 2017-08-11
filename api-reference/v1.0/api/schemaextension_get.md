@@ -22,6 +22,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and [schemaExtension](../resources/schemaextension.md) object in the response body.
 ## Example
 ##### Request

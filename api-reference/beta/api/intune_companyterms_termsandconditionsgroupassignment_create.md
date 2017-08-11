@@ -33,13 +33,14 @@ The following table shows the properties that are required when you create a ter
 |id|String|Unique identifier of the entity.|
 |targetGroupId|String|Unique identifier of a group that the T&C policy is assigned to.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [termsAndConditionsGroupAssignment](../resources/intune_companyterms_termsandconditionsgroupassignment.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments/
@@ -52,7 +53,8 @@ Content-length: 120
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

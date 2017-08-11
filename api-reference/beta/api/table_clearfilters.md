@@ -24,6 +24,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/clearFilters
 ## Request body
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

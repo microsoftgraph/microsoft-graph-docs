@@ -29,6 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 |method|string|Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

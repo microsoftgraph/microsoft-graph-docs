@@ -36,8 +36,8 @@ If you want to use **mention** to call out another user in the new message:
 - Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.
 - For each mention in the **mentions** property, you must specify the **mentioned** and **createdBy** properties.
 
-
 ## Response
+
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ## Example

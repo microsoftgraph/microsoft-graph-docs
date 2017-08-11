@@ -41,13 +41,14 @@ The following table shows the properties that are required when you create a [io
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [iosEducationDeviceConfiguration](../resources/intune_deviceconfig_ioseducationdeviceconfiguration.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
@@ -65,7 +66,8 @@ Content-length: 330
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

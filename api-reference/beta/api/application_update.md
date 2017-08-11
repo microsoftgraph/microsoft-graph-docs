@@ -41,6 +41,7 @@ In the request body, supply the values for relevant fields that should be update
 |web|[web](../resources/web.md)| Specifies settings for a web application. |
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code and does not return anything in the response body.
 ## Example
 ##### Request

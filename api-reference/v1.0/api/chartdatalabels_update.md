@@ -32,6 +32,7 @@ In the request body, supply the values for relevant fields that should be update
 |showValue|boolean|Boolean value representing if the data label value is visible or not.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [ChartDataLabels](../resources/chartdatalabels.md) object in the response body.
 ## Example
 ##### Request

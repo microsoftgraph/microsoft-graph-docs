@@ -27,6 +27,7 @@ In the request body, provide a JSON object with the following parameters.
 |removeLicenses|Guid|A collection of GUIDs that identify the licenses to remove.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [user](../resources/user.md) object in the response body.
 
 ## Example

@@ -36,13 +36,14 @@ The following table shows the properties that are required when you create a det
 |sizeInByte|Int64|Discovered application size in bytes. Read-only|
 |deviceCount|Int32|The number of devices that have installed this application|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [detectedApp](../resources/intune_devices_detectedapp.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//detectedApps/
@@ -58,7 +59,8 @@ Content-length: 167
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

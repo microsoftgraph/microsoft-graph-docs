@@ -28,6 +28,7 @@ GET me/devices
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a 200 response code and the user device properties in the response body.
 
 ```http
@@ -70,7 +71,8 @@ HTTP/1.1 200 OK
 ## Example
 This example will return the list of devices for a user. To command a device using `me/devices/{id}/command`, you will need to get the ID of the device that is returned.
 
-### Request
+##### Request
+
 Here is an example of the request.
 
 <!-- {
@@ -85,7 +87,7 @@ Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
 ```
 
-### Response
+##### Response
 
 <!-- {
   "blockType": "response",

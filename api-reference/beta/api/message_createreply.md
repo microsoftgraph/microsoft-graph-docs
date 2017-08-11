@@ -38,6 +38,7 @@ In the request body, provide a JSON object with the following parameters.
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [message](../resources/message.md) object in the response body.
 
 ## Example

@@ -37,8 +37,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 ## Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [Attachment](../resources/attachment.md) object in the response body.
 
 ## Example (file attachment)

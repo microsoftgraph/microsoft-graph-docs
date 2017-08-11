@@ -28,6 +28,7 @@ In the request body, provide a JSON object with the following parameters.
 |applyTo|string|Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

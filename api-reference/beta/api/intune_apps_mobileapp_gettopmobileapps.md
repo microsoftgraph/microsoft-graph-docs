@@ -33,19 +33,21 @@ The following table shows the parameters that can be used with this function.
 |status|String|Not yet documented|
 |count|Int64|Not yet documented|
 
-
-
 ## Response
+
 If successful, this function returns a `200 OK` response code and a [mobileApp](../resources/intune_apps_mobileapp.md) collection in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/getTopMobileApps(status='parameterValue',count=5)
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

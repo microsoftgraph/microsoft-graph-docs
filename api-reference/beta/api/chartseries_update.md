@@ -27,6 +27,7 @@ In the request body, supply the values for relevant fields that should be update
 |name|string|Represents the name of a series in a chart.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [ChartSeries](../resources/chartseries.md) object in the response body.
 ## Example
 ##### Request

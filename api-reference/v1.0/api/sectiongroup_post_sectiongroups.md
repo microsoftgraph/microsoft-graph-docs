@@ -12,6 +12,7 @@ Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
 POST /me/onenote/sectionGroups/{id}/sectionGroups
 POST /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sectionGroups
 POST /groups/{id}/onenote/sectionGroups/{id}/sectionGroups
+POST /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -25,6 +26,7 @@ In the request body, supply a name for the section group.
 Within the same hierarchy level, section group names must be unique. The name cannot contain more than 50 characters or contain the following characters:  ?*\/:<>|&#''%~
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [sectionGroup](../resources/sectiongroup.md) object in the response body.
 
 ## Example
@@ -58,14 +60,14 @@ Content-length: 305
 {
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
-  "displayName": "name-value",
+  "displayName": "name-value",  
   "createdBy": {
     "user": {
       "id": "id-value",
       "displayName": "displayName-value"
     }
   },
-  "lastModifiedBy": {
+  "lastModifiedBy": 
     "user": {
       "id": "id-value",
       "displayName": "displayName-value"

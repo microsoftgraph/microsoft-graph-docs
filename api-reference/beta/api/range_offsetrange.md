@@ -31,6 +31,7 @@ In the request body, provide a JSON object with the following parameters.
 |columnOffset|number|The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example

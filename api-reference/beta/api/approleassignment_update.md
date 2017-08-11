@@ -31,6 +31,7 @@ In the request body, supply the values for relevant fields that should be update
 |resourceId|Guid|The unique identifier (**objectId**) for the target resource (service principal) for which the assignment was made.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [appRoleAssignment](../resources/approleassignment.md) object in the response body.
 ## Example
 ##### Request

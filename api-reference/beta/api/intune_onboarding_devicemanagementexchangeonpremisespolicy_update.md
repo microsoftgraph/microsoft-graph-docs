@@ -36,13 +36,14 @@ The following table shows the properties that are required when you create a [de
 |accessRules|[deviceManagementExchangeAccessRule](../resources/intune_onboarding_devicemanagementexchangeaccessrule.md) collection|The list of device access rules in Exchange. The access rules apply globally to the entire Exchange organization|
 |knownDeviceClasses|[deviceManagementExchangeDeviceClass](../resources/intune_onboarding_devicemanagementexchangedeviceclass.md) collection|The list of device classes known to Exchange|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceManagementExchangeOnPremisesPolicy](../resources/intune_onboarding_devicemanagementexchangeonpremisespolicy.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/exchangeOnPremisesPolicy/
@@ -73,7 +74,8 @@ Content-length: 586
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

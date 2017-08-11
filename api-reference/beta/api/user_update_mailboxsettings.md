@@ -37,6 +37,7 @@ shouldn't include existing values that haven't changed. The following are the wr
 |timeZone|string|The default time zone for the user's mailbox.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and [mailboxSettings](../resources/mailboxSettings.md) object in the response body.
 ## Example
 ##### Request

@@ -33,13 +33,14 @@ The following table shows the parameters that can be used with this action.
 |---|---|---|
 |eBookGroupAssignments|[eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) collection|Not yet documented|
 
-
-
 ## Response
+
 If successful, this action returns a `204 No Content` response code.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}assign
@@ -59,7 +60,8 @@ Content-length: 254
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 204 No Content

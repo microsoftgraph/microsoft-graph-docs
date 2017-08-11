@@ -27,6 +27,7 @@ In the request body, supply the values for relevant fields that should be update
 |color|string|HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [RangeFill](../resources/rangefill.md) object in the response body.
 ## Example
 ##### Request

@@ -37,13 +37,14 @@ The following table shows the properties that are required when you create a [wi
 |deviceName|String|Name of the device on which Windows management app is installed.|
 |deviceOSVersion|String|Windows 10 OS version of the device on which Windows management app is installed.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp//healthStates/{windowsManagementAppHealthStateId}
@@ -59,7 +60,8 @@ Content-length: 230
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

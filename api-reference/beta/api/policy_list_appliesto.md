@@ -4,27 +4,28 @@
 
 Retrieve the [application](../resources/application.md) and [service principal](../resources/serviceprincipal.md) objects with the specified policy assigned.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 ```http
 GET /policies/{id}/appliesTo
 ```
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
+
 If successful, this method returns `200, OK` response code and [application](../resources/application.md) and [service principal](../resources/serviceprincipal.md) objects in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
-### Example
+## Example
 The following example retrieves the applications and service principals with a specific policy assigned.
 
 ##### Request

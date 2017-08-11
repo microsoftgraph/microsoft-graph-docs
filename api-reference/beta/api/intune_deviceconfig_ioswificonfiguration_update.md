@@ -51,13 +51,14 @@ The following table shows the properties that are required when you create a [io
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [iosWiFiConfiguration](../resources/intune_deviceconfig_ioswificonfiguration.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
@@ -85,7 +86,8 @@ Content-length: 755
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

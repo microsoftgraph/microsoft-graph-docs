@@ -27,6 +27,7 @@ In the request body, supply the values for relevant fields that should be update
 |targetObjects|String|The directory objects to which the directory extension property is being added.  Supported directory entities that can be extended are: “User”, “Group”, “organization”, “Device”, “Application” and “ServicePrincipal”                            **Notes**: not nullable.            |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [extensionProperty](../resources/extensionproperty.md) object in the response body.
 ## Example
 ##### Request

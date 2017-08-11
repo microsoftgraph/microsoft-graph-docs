@@ -37,13 +37,14 @@ The following table shows the properties that are required when you create a [ro
 |members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.|
 |scopeMembers|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [roleAssignment](../resources/intune_rbac_roleassignment.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{roleAssignmentId}
@@ -62,7 +63,8 @@ Content-length: 179
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

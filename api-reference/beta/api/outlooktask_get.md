@@ -8,29 +8,31 @@ By default, this operation (and the POST, PATCH, and [complete](../api/outlookta
 You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone 
 different than UTC.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.Read_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.| 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+
+## Response
+
 If successful, this method returns a `200 OK` response code and [outlookTask](../resources/outlooktask.md) object in the response body.
-### Example 1
+## Example 1
 ##### Request
 Here is an example of the request.
 <!-- {
@@ -88,7 +90,7 @@ Content-length: 376
 ```
 
 
-### Example 2
+## Example 2
 ##### Request
 This example uses the `Prefer: outlook.timezone` header to specify displaying date-time properties in the response  
 in Pacific Standard Time.

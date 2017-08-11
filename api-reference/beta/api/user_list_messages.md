@@ -69,7 +69,9 @@ the signed-in user.
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [message](../resources/message.md) objects in the response body.
 
 The default page size for this request is 10 messages. 

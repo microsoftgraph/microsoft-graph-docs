@@ -40,13 +40,14 @@ The following table shows the properties that are required when you create a imp
 |enrollmentState|String|The state of the device in Intune Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
 |platform|String|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/importedDeviceIdentities/
@@ -65,7 +66,8 @@ Content-length: 396
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

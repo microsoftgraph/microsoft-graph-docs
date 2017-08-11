@@ -22,8 +22,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows
 ## Request body
 In the request body, supply a JSON representation of [TableRow](../resources/tablerow.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [TableRow](../resources/tablerow.md) object in the response body.
 
 ## Example

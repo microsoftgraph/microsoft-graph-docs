@@ -4,38 +4,38 @@
 
 Retrieve a list of [contract](../resources/contract.md) objects associated to a partner tenant.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** are required to execute this API: *Directory.Read.All*, *Directory.ReadWrite.All*, or *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /contracts
 ```
 
-### Optional query parameters
+## Optional query parameters
 
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response. 
 
 > Filtering is supported for customerId, defaultDomainName, and displayName.
 
-### Request headers
+## Request headers
 
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 
 Do not supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [Contract](../resources/contract.md) objects in the response body.
 
-### Example
+## Example
 ##### Request
 
 <!-- {

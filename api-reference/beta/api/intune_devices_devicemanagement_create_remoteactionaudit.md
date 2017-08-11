@@ -36,13 +36,14 @@ The following table shows the properties that are required when you create a rem
 |action|String|The action name. Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`.|
 |requestDateTime|DateTimeOffset|Time when the action was issued, given in UTC.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [remoteActionAudit](../resources/intune_devices_remoteactionaudit.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/remoteActionAudits/
@@ -58,7 +59,8 @@ Content-length: 234
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

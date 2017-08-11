@@ -12,6 +12,7 @@ Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
 POST /me/onenote/sectionGroups/{id}/sections
 POST /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sections
 POST /groups/{id}/onenote/sectionGroups/{id}/sections
+POST /sites/{id}/onenote/sectionGroups/{id}/sections
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -24,8 +25,8 @@ In the request body, supply a name for the section.
 
 Within the same hierarchy level, section names must be unique. The name cannot contain more than 50 characters or contain the following characters:  ?*\/:<>|&#''%~
 
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [section](../resources/section.md) object in the response body.
 
 ## Example

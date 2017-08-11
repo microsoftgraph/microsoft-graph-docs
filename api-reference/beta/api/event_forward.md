@@ -48,6 +48,7 @@ In the request body, provide a JSON object with the following parameters.
 |ToRecipients|[recipient](../resources/recipient.md) collection|The list of recipients to forward the event to.|
 
 ## Response
+
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ## Example

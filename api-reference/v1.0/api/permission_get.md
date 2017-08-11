@@ -9,8 +9,8 @@ One of the following **scopes** is required to execute this API:
 * Files.ReadWrite
 * Files.Read.All
 * Files.ReadWrite.All
-* Shares.Read.All
-* Shares.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
 
 ## HTTP request
 
@@ -28,6 +28,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and [Permission](../resources/permission.md) resource in the response body.
 
 ## Example

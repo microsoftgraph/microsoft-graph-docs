@@ -43,13 +43,14 @@ The following table shows the properties that are required when you create a [wi
 |certFileName|String|File name to display in UI.|
 |destinationStore|String|Destination store location for the Trusted Root Certificate. Possible values are: `computerCertStoreRoot`, `computerCertStoreIntermediate`, `userCertStoreIntermediate`.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windows81TrustedRootCertificate](../resources/intune_deviceconfig_windows81trustedrootcertificate.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate/
@@ -70,7 +71,8 @@ Content-length: 494
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

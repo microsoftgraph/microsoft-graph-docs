@@ -33,13 +33,14 @@ The following table shows the parameters that can be used with this action.
 |appleIdentifier|String|Not yet documented|
 |applePushNotificationCertificate|String|Not yet documented|
 
-
-
 ## Response
+
 If successful, this action returns a `200 OK` response code and a [organization](../resources/intune_onboarding_organization.md) in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/organization/{organizationId}/uploadApplePushNotificationCertificate
@@ -53,7 +54,8 @@ Content-length: 135
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

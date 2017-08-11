@@ -27,6 +27,7 @@ In the request body, provide a JSON object with the following parameters.
 |DestinationId|String|The destination folder ID, or the `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` well-known folder name.|
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
 
 ## Example

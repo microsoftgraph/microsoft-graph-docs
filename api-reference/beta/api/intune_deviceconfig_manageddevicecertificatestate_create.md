@@ -50,13 +50,14 @@ The following table shows the properties that are required when you create a man
 |certificateKeyLength|Int32|Key length|
 |enhancedKeyUsage|String|Extended key usage|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/managedDeviceCertificateStates/
@@ -81,7 +82,8 @@ Content-length: 795
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

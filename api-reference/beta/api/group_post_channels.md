@@ -23,8 +23,8 @@ POST /groups/{id}/channels
 ## Request body
 In the request body, supply a JSON representation of [channel](../resources/channel.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [channel](../resources/channel.md) object in the response body.
 
 ## Example

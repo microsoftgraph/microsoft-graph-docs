@@ -39,13 +39,14 @@ The following table shows the properties that are required when you create a [sy
 |certStatus|Int32|The Cert Status Provisioned or not Provisioned.|
 |certType|Int32|The Type of the CodeSigning Cert as Symantec Cert.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [symantecCertificate](../resources/intune_apps_symanteccertificate.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/symantecCert/
@@ -63,7 +64,8 @@ Content-length: 236
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

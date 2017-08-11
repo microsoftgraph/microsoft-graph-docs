@@ -4,6 +4,7 @@
 
 Directory setting templates represent system-defined settings available to the tenant. [Directory settings](directorysetting.md) can be created based on the available directorySettingTemplates, and values changed from their preset defaults. Directory setting templates cannot be created, updated or deleted. These settings can represent tenant-wide settings, or can represent specific entity settings.  Currently, the only templates available apply to Office groups, and include settings such as whether users can create groups or invite guests from outside the organization to become members of a group.
 
+> **Note**: The /beta version of the directorySettingTemplate resource type only applies to groups. The /v1.0 version has been renamed to groupSettingTemplate.
 
 ## Methods
 

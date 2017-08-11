@@ -59,13 +59,14 @@ The following table shows the properties that are required when you create a [wi
 |phoneProductIdentifier|String|The Phone Product Identifier.|
 |phonePublisherId|String|The Phone Publisher Id.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
@@ -108,7 +109,8 @@ Content-length: 1234
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

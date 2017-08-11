@@ -21,8 +21,8 @@ POST /workbook/tables/$/add
 ## Request body
 In the request body, supply a JSON representation of [Table](../resources/table.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [Table](../resources/table.md) object in the response body.
 
 ## Example

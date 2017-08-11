@@ -21,7 +21,7 @@ One of the following **scopes** is required to execute this API:
 
 To access a user's OneDrive or OneDrive for Business, your app should request the **drive** relationship on the [User](../resources/user.md) resource.
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,7 +34,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 To access a [Group's](../resources/group.md) default document library, your app requests the **drive** relationship on the Group.
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 

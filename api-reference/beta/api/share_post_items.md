@@ -19,8 +19,8 @@ POST /shares/{id}/items
 ## Request body
 In the request body, supply a JSON representation of [item](../resources/driveitem.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [item](../resources/driveitem.md) object in the response body.
 
 ## Example

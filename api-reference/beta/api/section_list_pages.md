@@ -12,6 +12,7 @@ Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
 GET /me/onenote/sections/{id}/pages
 GET /users/{id | userPrincipalName}/onenote/sections/{id}/pages
 GET /groups/{id}/onenote/sections/{id}/pages
+GET /sites/{id}/onenote/sections/{id}/pages
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -28,7 +29,9 @@ The default response expands `parentSection` and selects the section's `id`, `na
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [page](../resources/page.md) objects in the response body.
 ## Example
 ##### Request

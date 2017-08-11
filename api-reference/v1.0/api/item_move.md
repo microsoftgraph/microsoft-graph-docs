@@ -39,6 +39,7 @@ For best performance you shouldn't include existing values that haven't changed.
 You either need to use the real ID of the root folder, or use `{"path": "/drive/root"}` for the parent reference.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
@@ -58,8 +59,10 @@ Content-type: application/json
 }
 ```
 
-## Response
-Here is an example of the response.
+##### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

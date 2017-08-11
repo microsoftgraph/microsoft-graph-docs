@@ -33,13 +33,14 @@ The following table shows the properties that are required when you create a [wi
 |id|String|Unique Identifier for the Windows management app|
 |availableVersion|String|Windows management app available version.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp/
@@ -51,7 +52,8 @@ Content-length: 53
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

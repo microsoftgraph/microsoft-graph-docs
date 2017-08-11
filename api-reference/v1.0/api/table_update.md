@@ -29,6 +29,7 @@ In the request body, supply the values for relevant fields that should be update
 |style|string|Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [Table](../resources/table.md) object in the response body.
 ## Example
 ##### Request

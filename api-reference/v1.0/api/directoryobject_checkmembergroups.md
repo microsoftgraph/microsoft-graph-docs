@@ -32,6 +32,7 @@ In the request body, provide a JSON object with the following parameters.
 |groupIds|String|A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and String collection object in the response body.
 
 ## Example

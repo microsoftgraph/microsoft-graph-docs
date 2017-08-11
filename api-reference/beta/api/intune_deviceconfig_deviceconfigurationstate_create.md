@@ -38,13 +38,14 @@ The following table shows the properties that are required when you create a dev
 |state|String|The compliance state of the policy Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |settingCount|Int32|Count of how many setting a policy holds|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/deviceConfigurationStates/
@@ -84,7 +85,8 @@ Content-length: 978
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

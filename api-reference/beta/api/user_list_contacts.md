@@ -42,7 +42,9 @@ For example, you can use the `$filter` query parameter to filter contacts based 
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [Contact](../resources/contact.md) objects in the response body.
 ## Example
 ##### Request

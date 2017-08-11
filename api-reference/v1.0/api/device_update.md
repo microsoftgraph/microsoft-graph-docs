@@ -19,7 +19,9 @@ PATCH /devices/{id}
 
 ## Request body
 In the request body, supply the values for the [device](../resources/device.md) properties that should be updated.
+
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 
 ## Example

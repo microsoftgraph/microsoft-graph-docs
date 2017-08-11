@@ -29,6 +29,7 @@ In the request body, supply the values for relevant fields that should be update
 |visibility|string|The Visibility of the worksheet. Possible values are: `Visible`, `Hidden`, `VeryHidden`.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [Worksheet](../resources/worksheet.md) object in the response body.
 ## Example
 ##### Request

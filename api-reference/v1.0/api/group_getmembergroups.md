@@ -28,6 +28,7 @@ In the request body, provide a JSON object with the following parameters.
 |securityEnabledOnly|Boolean|Set to **false**. Returning only security-enabled groups is supported for users only.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and String collection in the response body that contains the IDs of the groups that the group is a member of.
 
 ## Example

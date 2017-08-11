@@ -33,6 +33,7 @@ In the request body, provide a JSON object with the following parameters.
 |comment|string|The comment associated with the named item|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [NamedItem](../resources/NamedItem.md) object in the response body.
 
 ## Example

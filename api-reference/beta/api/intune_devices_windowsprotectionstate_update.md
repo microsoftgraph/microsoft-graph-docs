@@ -32,13 +32,14 @@ The following table shows the properties that are required when you create a [wi
 |---|---|---|
 |id|String|The unique Identifier for the device protection status object. This is device id of the device|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//microsoft.graph.windowsManagedDevice/windowsProtectionState/
@@ -48,7 +49,8 @@ Content-length: 2
 {}
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

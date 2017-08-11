@@ -40,13 +40,14 @@ The following table shows the properties that are required when you create a [an
 |enrollmentTarget|String|Indicates which users can enroll devices in Android for Work device management Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidForWorkSettings/
@@ -67,7 +68,8 @@ Content-length: 417
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

@@ -26,8 +26,8 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 ## Request body
 In the request body, supply a JSON representation of [Calendar](../resources/calendar.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [Calendar](../resources/calendar.md) object in the response body.
 
 ## Example

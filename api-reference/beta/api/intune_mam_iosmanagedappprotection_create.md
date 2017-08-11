@@ -67,13 +67,14 @@ The following table shows the properties that are required when you create a ios
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/
@@ -123,7 +124,8 @@ Content-length: 1641
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

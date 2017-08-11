@@ -30,6 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 |seriesBy|string|Optional. Specifies the way columns or rows are used as data series on the chart.  Possible values are: `Auto`, `Columns`, `Rows`.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Chart](../resources/chart.md) object in the response body.
 
 ## Example

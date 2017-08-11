@@ -30,6 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 |valuesOnly|boolean|Optional. Considers only cells with values as used cells.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example

@@ -28,6 +28,7 @@ In the request body, provide a JSON object with the following parameters.
 |index|number|Index value of the object to be retrieved. Zero-indexed.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [ChartSeries](../resources/chartseries.md) object in the response body.
 
 ## Example

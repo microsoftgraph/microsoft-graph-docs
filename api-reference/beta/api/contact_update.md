@@ -72,6 +72,7 @@ Since the **contact** resource supports [extensions](../../../concepts/extensibi
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **contact** instance.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [contact](../resources/contact.md) object in the response body.
 ## Example
 ##### Request

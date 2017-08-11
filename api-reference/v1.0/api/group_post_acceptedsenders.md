@@ -20,8 +20,8 @@ POST /groups/{id}/acceptedSenders/$ref
 ## Request body
 In the request body, supply the id of a user or group object.
 
-
 ## Response
+
 This method returns `204, No Content` response code and no response body.
 
 ## Example

@@ -29,8 +29,8 @@ In the request body, provide a JSON object that contains the parameters that you
 |groupId|String|The id of the group to copy to. Use only when copying to an Office 365 group.|
 |id|String|Required. The id of the destination section.|
 
-
 ## Response
+
 If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation_get.md).
 
 ## Example

@@ -8,30 +8,31 @@ Currently, deleted items functionality is only supported for the [group](../reso
 
 A recently deleted item will remain available for up to 30 days. After 30 days, the item is permanently deleted.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: 
 * For users: *User.ReadWrite.All or Directory.AccessAsUser.All*
 * For groups: *Group.ReadWrite.All or Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directory/deleteditems/{id}/restore
 ```
 
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;code&gt; *Required*|
 | Accept | application/json |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
+
 If successful, this method returns `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 
 <!-- {

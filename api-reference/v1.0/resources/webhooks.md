@@ -8,18 +8,42 @@ Using the Microsoft Graph REST API, an app can subscribe to changes on the follo
 * Events
 * Contacts
 * Group conversations
-* Drive root items
+* Content shared on OneDrive including drives associated with SharePoint sites
+* User's personal OneDrive folders
+
+For instance, you can create a subscription to a specific folder:
+`me/mailfolders('inbox')/messages`
+
+Or to a top-level resource:
+`me/messages`, `me/contacts`, `me/events`
+
+Or on a Sharepoint / OneDrive for Business drive:
+`/drive/root`
+
+Or on a user's personal OneDrive:
+`/drives/{id}/root`
+`/drives/{id}/root/subfolder`
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates cache and views, etc.
 
-Apps should renew their subscriptions before they expire. They can also unsubscribe at any time to stop getting notifications.
+Apps should renew their subscriptions before they expire. The current longest expiration time is three days minus 90 minutes from the time of creation. Apps need to renew their subscriptions before the expiration time. Otherwise they'll need to create a new subscription.
 
-See the following code samples on GitHub.
+Apps can also unsubscribe at any time to stop getting notifications.
+
+In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api/subscription_post_subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types. 
+
+| Permission type | Supported resource types in v1.0 |
+|:----------------|:---------------------------------|
+| Delegated - work or school account | [contact](contact.md), [conversation](conversation.md), [drive](drive.md), [event](event.md), [message](message.md) |
+| Delegated - personal Microsoft account | None |
+| Application | [contact](contact.md), [conversation](conversation.md), [event](event.md), [message](message.md) |
+
+## Code samples
+
+The following code samples are available on GitHub.
 
 * [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 * [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
-
-Let's take a look at the subscription process.
 
 # Creating a subscription
 
@@ -32,23 +56,6 @@ Creating a subscription is the first step to start receiving notifications for a
 3. The client sends the validation token back to Microsoft Graph.
 
 Client must store the subscription ID to correlate a notification with the corresponding subscription.
-
-## Characteristics of subscriptions
-
-You can create subscriptions for resources such as messages, events, contacts, and drive root items.
-
-You can create a subscription to a specific folder:
-`https://graph.microsoft.com/v1.0/me/mailfolders('inbox')/messages`
-
-Or to a top-level resource:
-`https://graph.microsoft.com/v1.0/me/messages`
-
-Or on a drive root item:
-`https://graph.microsoft.com/v1.0/me/drive/root`
-
-Creating a subscription in most cases requires read scope to the resource. For example, to get notifications messages, your app needs the `mail.read` permission. Please note that currently the `Files.ReadWrite` permission is required for OneDrive Drive root items and drives associated with SharePoint sites require `Files.ReadWrite.All`.
-
-Subscriptions expire. The current longest expiration time is three days minus 90 minutes (4230 in total) from the time of creation. Apps need to renew their subscriptions before the expiration time. Otherwise they'll need to create a new subscription.
 
 ## Notification URL validation
 
@@ -63,7 +70,7 @@ Microsoft Graph validates the notification URL in a subscription request before 
  
 2. The client must provide a response with the following characteristics within 10 seconds:
 
-  * An 200 (OK) status code.
+  * A 200 (OK) status code.
   * The content type must be text/plain. 
   * The body must include the validation token provided by Microsoft Graph.
 
@@ -160,7 +167,7 @@ When the user receives an email, Microsoft Graph sends a notification like the f
 }
 ```
 
-Note that the value object contains a list. If there are many queued notifications, Microsoft Graph sends them in a single request.
+Note the value object contains a list. If there are many queued notifications, Microsoft Graph sends them in a single request.
 
 ## Processing the notification
 

@@ -6,11 +6,11 @@ Deletes a domain from a tenant.
 > - Deleted domains are not recoverable.<br />
 > - Attempts to delete will fail if there are any resources or objects still dependent on the domain. You can find all dependent resources by using the [List domainNameReferences](domain_list_domainnamereferences.md) API.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /domains/{id}
@@ -18,22 +18,22 @@ DELETE /domains/{id}
 
 > For {id}, specify the domain with its fully qualified domain name.
 
-### Request headers
+## Request headers
 
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 
 Do not supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns `204, No Content` response code. It does not return a response body.
 
-### Example
+## Example
 ##### Request
 
 <!-- {

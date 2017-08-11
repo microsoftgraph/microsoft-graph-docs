@@ -19,8 +19,8 @@ POST /connectorGroups/{id}/members/$ref
 ## Request body
 In the request body, supply a JSON representation of a link to a   [connector](../resources/connector.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [connector](../resources/connector.md) object in the response body.
 
 ## Example

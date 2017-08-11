@@ -78,7 +78,7 @@ HTTP/1.1 201 OK
 
 Here is an example of a LaunchURI request; it will launch a URI or an application on the target device. To launch a URI or an app, issue a POST using the ID of the device (obtained from doing a GET call on `me/devices`). Set the *Type* parameters to *LaunchURI* and provide a URI value such as http://bing.com.
 
-### Request
+##### Request
 
 <!-- {
   "blockType": "request",
@@ -95,7 +95,7 @@ Content-Type: application/json; charset=utf-8
 
 ```
 
-### Response 
+##### Response 
 
 Here is an example of the response.
 
@@ -132,7 +132,7 @@ Here is an example of querying an app service on a device. To use an app service
 
 Several additional properties must be set in the call. *Type* must be set to *AppService*, *AppServiceName* must be set to the name of the app service defined in the application, *PackageFamilyName* must be set to the package family name defined in the app manifest, and *Payload* holds the keys and values for the service you are calling within the target application.
 
-### Request
+##### Request
 
 <!-- {
   "blockType": "request",
@@ -149,7 +149,8 @@ Content-Type: application/json; charset=utf-8
 
 ```
 
-### Response
+##### Response
+
 Here is an example of the response.
 
 <!-- {

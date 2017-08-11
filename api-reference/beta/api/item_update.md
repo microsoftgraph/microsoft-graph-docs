@@ -34,6 +34,7 @@ Existing properties that are not included in the request body will maintain thei
 For best performance your app should not include properties that haven't changed.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
@@ -52,8 +53,8 @@ Content-type: application/json
 }
 ```
 
-## Response
-Here is an example of the response. This response is truncated for readability.
+##### Response
+The following example shows the response. This response is truncated for readability.
 
 <!-- {
   "blockType": "response",

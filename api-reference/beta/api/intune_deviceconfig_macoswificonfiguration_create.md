@@ -50,13 +50,14 @@ The following table shows the properties that are required when you create a mac
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswificonfiguration.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
@@ -85,7 +86,8 @@ Content-length: 816
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

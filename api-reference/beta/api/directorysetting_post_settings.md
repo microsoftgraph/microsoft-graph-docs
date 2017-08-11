@@ -3,6 +3,9 @@
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a new setting, based on the templates available in directorySettingTemplates. These settings can be at the tenant-level or at an object level (currently only for groups). The creation request must provide settingValues for all the settings defined in the template. For group-specific settings, only the setting governing whether members of a group can invite guest users can be set. This will govern this behavior once the ability to add guest users to a group is generally available.
+
+> **Note**: The /beta version of this API is only applies to groups. The /v1.0 version of this API has been renamed to *Create groupSettings*.
+
 ## Prerequisites
 The following **scopes** are required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ## HTTP request
@@ -19,8 +22,8 @@ POST /groups/{id}/settings
 ## Request body
 In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.  However, the display name for the setting will be set based on the referenced settings template name.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
 
 ## Example

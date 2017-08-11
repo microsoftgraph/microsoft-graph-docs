@@ -30,6 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 |across|boolean|Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

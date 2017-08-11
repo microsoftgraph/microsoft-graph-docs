@@ -28,6 +28,7 @@ In the request body, provide a JSON object with the following parameters.
 |hasHeaders|boolean|Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Table](../resources/table.md) object in the response body.
 
 ## Example

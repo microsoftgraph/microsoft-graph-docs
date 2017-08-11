@@ -15,6 +15,7 @@ Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
 POST /me/onenote/sections/{id}/copyToSectionGroup
 POST /users/{id | userPrincipalName}/onenote/sections/{id}/copyToSectionGroup
 POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
+POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -27,6 +28,8 @@ In the request body, provide a JSON object that contains the parameters that you
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
+|siteCollectionId|String|The id of the SharePoint site to copy to. Use only when copying to an Office 365 team site.|
+|siteId|String|The id of the SharePoint web to copy to. Use only when copying to an Office 365 team site.|
 |groupId|String|The id of the group to copy to. Use only when copying to an Office 365 group.|
 |id|String|Required. The id of the destination section group. |
 |renameAs|String|The name of the copy. Defaults to the name of the existing item. |
@@ -36,6 +39,7 @@ In the request body, provide a JSON object that contains the parameters that you
 |siteId|String||-->
 
 ## Response
+
 If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation_get.md).
 
 ## Example

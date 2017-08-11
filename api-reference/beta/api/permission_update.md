@@ -38,8 +38,8 @@ For best performance you shouldn't include existing values that haven't changed.
 |:-------------|:-------|:------------------------------|
 | **roles**    | String | An array of permission types. |
 
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.
 
 ## Example

@@ -38,13 +38,14 @@ The following table shows the properties that are required when you create a [ma
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune_devicefe_deviceoperatingsystemsummary.md)|Device operating system summary.|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune_devicefe_deviceexchangeaccessstatesummary.md)|Distribution of Exchange Access State in Intune|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [managedDeviceOverview](../resources/intune_devicefe_manageddeviceoverview.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedDeviceOverview
@@ -74,7 +75,8 @@ Content-length: 600
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

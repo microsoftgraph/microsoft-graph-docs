@@ -24,8 +24,8 @@ Note that ``<id>`` is in the format of 'userId_roleId', where userId is the GUID
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.

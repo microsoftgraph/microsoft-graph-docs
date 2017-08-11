@@ -32,13 +32,14 @@ The following table shows the parameters that can be used with this action.
 |---|---|---|
 |hostName|String|The hostname of the callback URL to which the browser will be redirected after successfully completing sign-up.|
 
-
-
 ## Response
+
 If successful, this action returns a `200 OK` response code and a String in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkSettings/requestSignupUrl
@@ -51,7 +52,8 @@ Content-length: 37
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

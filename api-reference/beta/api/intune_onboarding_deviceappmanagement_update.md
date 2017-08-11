@@ -36,13 +36,14 @@ The following table shows the properties that are required when you create a [de
 |windowsStoreForBusinessLanguage|String|The locale information used to sync applications from the windows store for business.Cultures that are specific to a country/region. The names of these cultures follow RFC 4646 (Windows Vista and later). The format is <languagecode2>-<country/regioncode2>, where <languagecode2> is a lowercase two-letter code derived from ISO 639-1 and <country/regioncode2> is an uppercase two-letter code derived from ISO 3166. For example, en-US for English (United States) is a specific culture.|
 |windowsStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|The last time an application sync from the windows store for business was completed.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement
@@ -57,7 +58,8 @@ Content-length: 325
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

@@ -37,10 +37,13 @@ The following table shows the properties that are required when you create a sch
 |targetTypes|String collection|Set of Microsoft Graph resource types (that support schema extensions) that this schema extension definition can be applied to.|
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [schemaExtension](../resources/schemaextension.md) object in the response body.
 
 ## Example
-### Request 1
+
+##### Request 1
+
 The first example shows using a verified domain name, `graphlearn`, and a schema name, `courses`, to form a unique string for the **id** property of the 
 schema extension definition. The unique string is based on this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
 
@@ -76,7 +79,8 @@ Content-type: application/json
 }
 ```
 
-### Response 1
+##### Response 1
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -113,7 +117,8 @@ Content-length: 420
 }
 ```
 
-### Request 2
+##### Request 2
+
 The second example shows specifying just a schema name, `courses`, in the **id** property in the request, together with the JSON representation of the rest of the 
 properties in the [schemaExtension](../resources/schemaextension.md) object. Microsoft Graph will assign and return a unique string value in the response.
 
@@ -148,7 +153,8 @@ Content-type: application/json
 }
 ```
 
-### Response 2
+##### Response 2
+
 The response includes a unique string in the **id** property that is based on the schema name provided in the request, together with the rest of the newly created schema definition. 
 The value in **id** in the response is based on the format, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

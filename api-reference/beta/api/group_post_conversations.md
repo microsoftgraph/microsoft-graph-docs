@@ -21,8 +21,8 @@ POST /groups/{id}/conversations
 ## Request body
 In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationThread.md) and a [post](../resources/post.md).
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [conversation](../resources/conversation.md) object in the response body.
 
 ## Example

@@ -12,6 +12,7 @@ Notes.ReadWrite, or Notes.ReadWrite.All
 PATCH /me/onenote/pages/{id}/content
 PATCH /users/{id | userPrincipalName}/onenote/pages/{id}/content
 PATCH /groups/{id}/onenote/pages/{id}/content
+PATCH /sites/{id}/onenote/pages/{id}/content
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -23,6 +24,7 @@ PATCH /groups/{id}/onenote/pages/{id}/content
 In the request body, supply an array of [patchContentCommand](../resources/patchcontentcommand.md) objects that represent the changes to the page. For more information and examples, see <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">Update OneNote pages</a>.
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.  No JSON data is returned for a PATCH request.
 ## Example
 ##### Request

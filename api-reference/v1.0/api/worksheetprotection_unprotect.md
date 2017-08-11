@@ -26,6 +26,7 @@ In the request body, provide a JSON object with the following parameters.
 |password|string|Optional. sheet protection password.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

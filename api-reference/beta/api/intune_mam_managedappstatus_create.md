@@ -34,13 +34,14 @@ The following table shows the properties that are required when you create a man
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [managedAppStatus](../resources/intune_mam_managedappstatus.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppStatuses/
@@ -54,7 +55,8 @@ Content-length: 129
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

@@ -26,8 +26,8 @@ The following table shows the properties that are required when you activate a d
 |:---------|:---------|:---------|
 |roleTemplateId | string | The ID of the [directoryRoleTemplate](../resources/directoryroletemplate.md) that the role is based on. This is the only property that may be specified in the request.|
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [directoryRole](../resources/directoryrole.md) object in the response body.
 
 ## Example

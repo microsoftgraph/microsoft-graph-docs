@@ -33,8 +33,8 @@ In the request body, supply the new value for **classifyAs**. For best performan
 |:---------------|:--------|:----------|
 |classifyAs|string| Specifies how incoming messages from a specific sender should always be classified as. Possible values are: `focused`, `other`.|
 
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.
 ## Example
 ##### Request

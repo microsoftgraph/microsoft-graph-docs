@@ -30,6 +30,7 @@ In the request body, supply the values for relevant fields that should be update
 |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [eventMessage](../resources/eventmessage.md) object in the response body.
 ## Example
 ##### Request

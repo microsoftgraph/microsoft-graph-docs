@@ -28,6 +28,7 @@ In the request body, supply the values for relevant fields that should be update
 |isLocked|Boolean|Indicates if the thread is locked. Set to `true` to disallow posting.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [conversationThread](../resources/conversationthread.md) object in the response body.
 ## Example
 ##### Request

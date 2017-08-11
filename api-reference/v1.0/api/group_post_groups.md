@@ -41,6 +41,7 @@ Specify the **groupTypes** property if you're creating an Office 365 or dynamic 
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [group](../resources/group.md) object in the response body.
 
 ## Example

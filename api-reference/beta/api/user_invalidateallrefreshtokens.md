@@ -27,6 +27,7 @@ POST /users/{id | userPrincipalName}/invalidateAllRefreshTokens
 This operation has no request content.
 
 ## Response
+
 If successful, this method returns `204, No content` response code.
 
 ## Example

@@ -34,6 +34,7 @@ In the request body, supply the values for relevant fields that should be update
 |underline|string|Type of underline applied to the font. Possible values are: `None`, `Single`.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [ChartFont](../resources/chartfont.md) object in the response body.
 ## Example
 ##### Request

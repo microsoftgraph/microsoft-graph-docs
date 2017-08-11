@@ -29,6 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 |securityEnabledOnly|Boolean|**true** to specify that only security groups that the user is a member of should be returned; **false** to specify that all groups that the user is a member of should be returned. Note: Setting this parameter to **true** is only supported when calling this method on a user.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and String collection in the response body that contains the IDs of the groups that the user is a member of.
 
 ## Example

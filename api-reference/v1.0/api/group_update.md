@@ -42,6 +42,7 @@ and delegated permissions. All other members of the group API, including updatin
 support only delegated permissions. See [known issues](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes) for examples.
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 
 ## Example

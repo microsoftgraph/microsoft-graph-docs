@@ -47,6 +47,7 @@ Since the **organization** resource supports [extensions](../../../concepts/exte
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **organization** instance.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [organization](../resources/organization.md) object in the response body.
 ## Example
 ##### Request

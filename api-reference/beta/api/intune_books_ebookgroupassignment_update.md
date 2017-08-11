@@ -34,13 +34,14 @@ The following table shows the properties that are required when you create a [eB
 |id|String|Key of the entity.|
 |installIntent|String|The install intent defined by the admin. Possible values are: `notApplicable`, `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}
@@ -53,7 +54,8 @@ Content-length: 81
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

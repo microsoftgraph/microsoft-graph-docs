@@ -33,8 +33,8 @@ In the request body, provide a JSON object with the following parameters.
 |EmailAddresses|String collection|A collection of SMTP addresses of recipients to get MailTips for.|
 |MailTipsOptions|String|A enumeration of flags that represents the requested mailtips. Possible values are: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, and `totalMemberCount`.|
 
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [mailTips](../resources/mailtips.md) objects in the response body.
 ## Example
 ##### Request

@@ -76,13 +76,14 @@ The following table shows the properties that are required when you create a [wi
 |androidSecurityPatchLevel|String|Android security patch level Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |userDisplayName|String|User display name Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsManagedDevice](../resources/intune_devices_windowsmanageddevice.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
@@ -168,7 +169,8 @@ Content-length: 2977
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

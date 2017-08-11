@@ -26,6 +26,7 @@ In the request body, provide a JSON object with the following parameters.
 |name|string|Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Worksheet](../resources/worksheet.md) object in the response body.
 
 ## Example

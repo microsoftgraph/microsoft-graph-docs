@@ -23,6 +23,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/LastRow
 ## Request body
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example

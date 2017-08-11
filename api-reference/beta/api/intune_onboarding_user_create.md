@@ -33,13 +33,14 @@ The following table shows the properties that are required when you create a use
 |id|String|Unique identifier of the user.|
 |deviceEnrollmentLimit|Int32|The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [user](../resources/intune_onboarding_user.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/users/
@@ -52,7 +53,8 @@ Content-length: 77
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

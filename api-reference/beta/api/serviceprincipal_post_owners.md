@@ -19,8 +19,8 @@ POST /servicePrincipals/{id}/owners
 ## Request body
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
 
 ## Example

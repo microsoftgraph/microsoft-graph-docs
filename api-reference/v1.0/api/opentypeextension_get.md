@@ -121,7 +121,9 @@ Make sure you apply [URL encoding](http://www.w3schools.com/tags/ref_urlencode.a
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [openTypeExtension](../resources/opentypeextension.md) object in the response body.
 Depending on the GET query, the exact response body differs.
 ## Example

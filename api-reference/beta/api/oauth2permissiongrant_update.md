@@ -28,6 +28,7 @@ In the request body, supply the values for relevant fields that should be update
 |scope|String| Specifies the value of the scope claim that the resource application should expect in the OAuth 2.0 access token. |
 
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example

@@ -60,6 +60,7 @@ Since the **user** resource supports [extensions](../../../concepts/extensibilit
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **user** instance.
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 ## Example
 ##### Request

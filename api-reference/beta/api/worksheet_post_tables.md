@@ -30,6 +30,7 @@ In the request body, supply following parameters.
 | hasHeaders  | boolean|Boolean value that indicates whether the range has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.|
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [Table](../resources/table.md) object in the response body.
 
 ## Example

@@ -29,6 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 |securityEnabledOnly|Boolean| **true** to specify that only security groups that the entity is a member of should be returned; **false** to specify that all groups and directory roles that the entity is a member of should be returned. **Note**: The function can only be called on a user if the parameter is **true**. |
 
 ## Response
+
 If successful, this method returns `200, OK` response code and String collection object in the response body.
 
 ## Example

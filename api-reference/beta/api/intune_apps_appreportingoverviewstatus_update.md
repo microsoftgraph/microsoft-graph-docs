@@ -35,13 +35,14 @@ The following table shows the properties that are required when you create a [ap
 |failedApplicationCount|Int64|Number of users with failed devices across all apps.|
 |appInstallFailures|[appInstallationFailure](../resources/intune_apps_appinstallationfailure.md) collection|Individual status of app installation failures.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [appReportingOverviewStatus](../resources/intune_apps_appreportingoverviewstatus.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/appReportingOverview/
@@ -64,7 +65,8 @@ Content-length: 336
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

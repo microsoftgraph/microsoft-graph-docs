@@ -23,8 +23,8 @@ POST /groups/{id}/threads
 ## Request body
 In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object containing a [post](../resources/post.md).
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [conversationThread](../resources/conversationthread.md) object in the response body.
 
 ## Example

@@ -35,6 +35,7 @@ In the request body, supply a JSON representation of [event](../resources/event.
 Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the event while creating it.
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [event](../resources/event.md) object in the response body.
 
 ## Example

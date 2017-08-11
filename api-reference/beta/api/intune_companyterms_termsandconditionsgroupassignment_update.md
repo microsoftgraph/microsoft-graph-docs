@@ -33,13 +33,14 @@ The following table shows the properties that are required when you create a [te
 |id|String|Unique identifier of the entity.|
 |targetGroupId|String|Unique identifier of a group that the T&C policy is assigned to.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [termsAndConditionsGroupAssignment](../resources/intune_companyterms_termsandconditionsgroupassignment.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments/{termsAndConditionsGroupAssignmentId}
@@ -51,7 +52,8 @@ Content-length: 48
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

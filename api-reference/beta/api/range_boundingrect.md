@@ -30,6 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 |anotherRange|string|The range object or address or range name.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example

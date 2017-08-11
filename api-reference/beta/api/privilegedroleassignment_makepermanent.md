@@ -30,6 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 |ticketSystem|string|Optional. The ticket system.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
 
 ## Example

@@ -4,29 +4,31 @@
 
 Retrieve a list of licenseDetails objects.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *User.Read*; *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
-### Optional query parameters
+## Optional query parameters
 This method does **not** support [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters).
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer &lt;code&gt;|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+
+## Response
+
 If successful, this method returns a `200 OK` response code and collection of [licenseDetails](../resources/licensedetails.md) objects in the response body.
-### Example
+## Example
 ##### Request
 
 <!-- {

@@ -46,6 +46,7 @@ to help customize the response.
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md)
 object in the response body.
 

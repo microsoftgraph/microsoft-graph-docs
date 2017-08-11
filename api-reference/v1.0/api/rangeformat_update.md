@@ -31,6 +31,7 @@ In the request body, supply the values for relevant fields that should be update
 |wrapText|boolean|Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [RangeFormat](../resources/rangeformat.md) object in the response body.
 ## Example
 ##### Request

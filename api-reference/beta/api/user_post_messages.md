@@ -36,8 +36,8 @@ If you want to use **mention** to call out another user in the new message:
 
 Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
-
 ## Response
+
 If successful, this method returns a `201, Created` response code and a [message](../resources/message.md) object in the response body.
 
 ## Example

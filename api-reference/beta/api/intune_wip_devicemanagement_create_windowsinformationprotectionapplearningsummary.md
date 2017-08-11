@@ -35,13 +35,14 @@ The following table shows the properties that are required when you create a win
 |applicationType|String|Application Type Possible values are: `universal`, `desktop`.|
 |deviceCount|Int32|Device Count|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsInformationProtectionAppLearningSummaries/
@@ -56,7 +57,8 @@ Content-length: 191
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

@@ -22,8 +22,8 @@ In the request body, supply a JSON representation of [device](../resources/devic
 
 Since the **device** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the device instance while creating it.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [device](../resources/device.md) object in the response body.
 
 ## Example

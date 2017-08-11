@@ -25,6 +25,7 @@ In the request body, provide a JSON object with the following parameters.
 |destinationId|String|The folder ID, or the *Inbox*, *Drafts*, *SentItems*, or *DeletedItems* well-known folder name.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
 
 ## Example

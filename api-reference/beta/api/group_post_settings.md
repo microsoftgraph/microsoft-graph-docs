@@ -18,8 +18,8 @@ POST /groups/{id}/settings
 ## Request body
 In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
 
 ## Example

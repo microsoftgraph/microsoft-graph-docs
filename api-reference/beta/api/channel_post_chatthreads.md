@@ -24,6 +24,7 @@ POST /groups/{id}/channels/{id}/chatthreads
 In the request body, supply a JSON representation of a [chatThread](../resources/chatthread.md) object that contains the rootMessage property.
 
 ## Response
+
 If successful, this method returns `204, No content` response code with an empty reponse body.
 
 ## Example

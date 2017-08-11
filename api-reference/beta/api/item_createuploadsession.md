@@ -53,7 +53,8 @@ For example, to control the behavior if the filename is already taken, you can s
 | *if-match* | etag  | If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` errr response is returned. |
 
 
-### Response
+### Response 
+
 The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
 
 ### Example
@@ -66,8 +67,8 @@ The response to this request will provide the details of the newly created [uplo
 POST https://graph.microsoft.com/beta/me/drive/root:/{item-path}:/createUploadSession
 ```
 
-### Response
-Here is an example of the response.
+##### Response 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -114,7 +115,10 @@ Content-Range: bytes 0-25/128
 **Important:** Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests.
 If a fragment declares a different file size, the request will fail.
 
-### Response
+##### Response
+
+The following example shows the response.
+
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -188,7 +192,9 @@ The DELETE request will immedately expire the upload session and remove any prev
 DELETE https://tenant-my.sharepoint.com/alkjl1kjklna
 ```
 
-### Response
+##### Response 
+
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 ```http

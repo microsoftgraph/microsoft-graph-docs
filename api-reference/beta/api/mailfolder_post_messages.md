@@ -21,8 +21,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## Request body
 In the request body, supply a JSON representation of [Message](../resources/message.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
 
 ## Example

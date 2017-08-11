@@ -37,6 +37,7 @@ See the available Container Types and Types you can filter by in [resourceVisual
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a list of [trending](../resources/insights_trending.md) items in the response body. Each item contains visualization properties for displaying the item in your experience.
 
 ## Example

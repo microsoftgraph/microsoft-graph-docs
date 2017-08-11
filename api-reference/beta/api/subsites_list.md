@@ -21,7 +21,7 @@ One of the following scopes is required to execute this request:
 GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 
-### Example
+## Example
 
 #### Request
 

@@ -34,8 +34,8 @@ The following table shows the properties that are required when you create a use
 
 Since the **user** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [user](../resources/user.md) object in the response body.
 
 ## Example

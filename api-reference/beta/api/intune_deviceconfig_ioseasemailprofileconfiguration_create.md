@@ -51,13 +51,14 @@ The following table shows the properties that are required when you create a ios
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
 |usernameSource|String|Username attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [iosEasEmailProfileConfiguration](../resources/intune_deviceconfig_ioseasemailprofileconfiguration.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
@@ -87,7 +88,8 @@ Content-length: 843
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

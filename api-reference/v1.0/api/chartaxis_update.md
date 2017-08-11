@@ -30,6 +30,7 @@ In the request body, supply the values for relevant fields that should be update
 |minorUnit|object|Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [ChartAxis](../resources/chartaxis.md) object in the response body.
 ## Example
 ##### Request

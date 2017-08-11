@@ -26,8 +26,8 @@ POST /users/{id}/inferenceClassification/overrides
 ## Request body
 In the request body, supply a JSON representation of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.
 
 ## Example

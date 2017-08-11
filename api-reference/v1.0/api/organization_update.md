@@ -42,6 +42,7 @@ In the request body, supply the values for relevant fields that should be update
 |verifiedDomains|VerifiedDomain|The collection of domains associated with this tenant.                            **Notes**: not nullable.            |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [organization](../resources/organization.md) object in the response body.
 ## Example
 ##### Request

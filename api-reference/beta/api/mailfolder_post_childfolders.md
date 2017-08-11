@@ -32,6 +32,7 @@ In the request body, provide a JSON object with the following parameters. **disp
 |displayName|String|The display name of the new folder.|
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
 
 ## Example

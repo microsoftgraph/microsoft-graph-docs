@@ -22,7 +22,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [Contact](../resources/contact.md) objects in the response body.
 ## Example
 ##### Request

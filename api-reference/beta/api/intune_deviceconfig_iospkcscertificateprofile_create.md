@@ -49,13 +49,14 @@ The following table shows the properties that are required when you create a ios
 |certificateTemplateName|String|PKCS Certificate Template Name.|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [iosPkcsCertificateProfile](../resources/intune_deviceconfig_iospkcscertificateprofile.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
@@ -83,7 +84,8 @@ Content-length: 905
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

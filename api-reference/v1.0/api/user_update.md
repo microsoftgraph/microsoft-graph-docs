@@ -59,6 +59,7 @@ In the request body, supply the values for relevant fields that should be update
 |userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 ## Example
 ##### Request

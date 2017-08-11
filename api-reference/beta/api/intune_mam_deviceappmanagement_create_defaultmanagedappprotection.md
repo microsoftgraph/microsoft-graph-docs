@@ -69,13 +69,14 @@ The following table shows the properties that are required when you create a def
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |customSettings|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|A set of string key and string value pairs to be sent to the affected users, unalterned by this service|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/
@@ -131,7 +132,8 @@ Content-length: 1803
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

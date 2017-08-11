@@ -20,8 +20,8 @@ POST /users/{id | userPrincipalName}/contactFolders
 ## Request body
 In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
 
 ## Example

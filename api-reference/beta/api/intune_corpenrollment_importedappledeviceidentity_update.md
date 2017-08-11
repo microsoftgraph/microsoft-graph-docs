@@ -42,13 +42,14 @@ The following table shows the properties that are required when you create a [im
 |enrollmentState|String|The state of the device in Intune Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
 |platform|String|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/importedAppleDeviceIdentities/{importedAppleDeviceIdentityId}
@@ -68,7 +69,8 @@ Content-length: 431
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

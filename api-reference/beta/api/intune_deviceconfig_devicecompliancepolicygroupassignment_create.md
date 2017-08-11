@@ -34,13 +34,14 @@ The following table shows the properties that are required when you create a dev
 |targetGroupId|String|The Id of the AAD group we are targeting the device compliance policy to.|
 |excludeGroup|Boolean|Indicates if this group is should be excluded. Defaults that the group should be included|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/
@@ -54,7 +55,8 @@ Content-length: 149
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

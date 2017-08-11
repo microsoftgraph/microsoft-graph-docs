@@ -31,6 +31,7 @@ In the request body, supply the values for relevant fields that should be update
 |weight|string|Specifies the weight of the border around a range. Possible values are: `Hairline`, `Thin`, `Medium`, `Thick`.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [RangeBorder](../resources/rangeborder.md) object in the response body.
 ## Example
 ##### Request

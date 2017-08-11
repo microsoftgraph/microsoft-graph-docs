@@ -20,6 +20,7 @@ POST /directoryRoles/{id}/members/$ref
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.
 
 ## Response
+
 If successful, this method returns `204, No Content` response code.
 
 ## Example

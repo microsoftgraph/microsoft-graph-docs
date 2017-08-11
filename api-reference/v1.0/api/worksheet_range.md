@@ -26,6 +26,7 @@ In the request body, provide a JSON object with the following parameters.
 |address|string|Optional. The address or the name of the range. If not specified, the entire worksheet range is returned.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example

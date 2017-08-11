@@ -27,6 +27,7 @@ In the request body, provide a JSON object with the following parameters.
 |SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional. |
 
 ## Response
+
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ## Example

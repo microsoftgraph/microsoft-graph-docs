@@ -20,6 +20,7 @@ POST /groups/{id}/unsubscribeByMail
 ## Request body
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

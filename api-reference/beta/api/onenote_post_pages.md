@@ -17,6 +17,7 @@ Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
 POST /me/onenote/pages
 POST /users/{id | userPrincipalName}/onenote/pages
 POST /groups/{id}/onenote/pages
+POST /sites/{id}/onenote/pages
 ```
 
 ## Request headers  
@@ -31,6 +32,7 @@ In the request body, supply the HTML content for the page.
 The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and the new [page](../resources/page.md) object in the response body.
 
 ## Example

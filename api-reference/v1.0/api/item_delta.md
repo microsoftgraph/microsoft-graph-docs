@@ -39,6 +39,7 @@ This method supports `$select`, `$expand`, and `$top` [OData Query Parameters](h
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [DriveItem](../resources/driveitem.md) resources in the response body.
 
 In addition to the collection of DriveItems, the response will also include one of the following properties:

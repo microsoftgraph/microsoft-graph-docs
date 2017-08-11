@@ -34,13 +34,14 @@ The following table shows the properties that are required when you create a dev
 |displayName|String|Display name for the device category.|
 |description|String|Optional description for the device category.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceCategory](../resources/intune_onboarding_devicecategory.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCategories/
@@ -54,7 +55,8 @@ Content-length: 135
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

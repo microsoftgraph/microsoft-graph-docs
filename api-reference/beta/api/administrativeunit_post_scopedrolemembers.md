@@ -20,8 +20,8 @@ POST /administrativeUnits/{id}/scopedRoleMembers
 ## Request body
 In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [scopedRoleMembership](../resources/scopedrolemembership.md) object in the response body.
 
 ## Example

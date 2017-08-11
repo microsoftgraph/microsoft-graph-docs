@@ -30,6 +30,7 @@ In the request body, supply the values for relevant fields that should be update
 |visible|boolean|A boolean that specifies the visibility of an axis title.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [ChartAxisTitle](../resources/chartaxistitle.md) object in the response body.
 ## Example
 ##### Request

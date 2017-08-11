@@ -28,16 +28,20 @@ GET /users/{usersId}getManagedAppPolicies
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this function returns a `200 OK` response code and a [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/users/{usersId}getManagedAppPolicies
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
