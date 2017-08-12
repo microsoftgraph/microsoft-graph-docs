@@ -169,6 +169,8 @@ Content-length: 2197
 
 ##### Request 2
 The next example request specifies 3 locations where the organizer and attendees can attend the meeting from.
+
+In the request body, supply a JSON representation of [event](../resources/event.md) object.
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user_multiple_locations"
@@ -231,17 +233,21 @@ Content-length: 1390
         "latitude": 47.672,
         "longitude": -102.103
       },
-      "locationType": "localBusiness"
+      "locationType": "localBusiness",
+      "uniqueId":"https://www.bingapis.com/api/v6/localbusinesses/yn873x16234090646772411693", 
+      "uniqueIdType":"bing" 
     },
     {
       "displayName": "Home Office",
-      "locationType": "Default"
+      "locationType": "default",
+      "uniqueId":"f4439f4b-1520-4d84-ad5a-a7edec249471", 
+      "uniqueIdType":"locationStore"
     }
   ]
 
 }
 ```
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
+
 ##### Response 2
 The following example response shows the created event that specifies information for the 3 locations for the meeting. Because of the 
 `Prefer: outlook.timezone="Pacific Standard Time"` request header, the **start** and **end** properties are expressed in PST.

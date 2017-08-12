@@ -26,7 +26,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
 | Addition | Beta | Added a **locations** property to the [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) resource to support organizing an event that attendees can attend from more than one location. |
-| Addition | Beta | Added a **locationType** property to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type.|
+| Addition | Beta | Added the **locationType**, **uniqueId**, and **uniqueIdType** properties to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type.|
 
 ### People 
 

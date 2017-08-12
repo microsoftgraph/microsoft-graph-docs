@@ -14,6 +14,8 @@ Represents location information of an event.
 | locationEmailAddress | String | Optional email address of the location. |
 | locationUri | String | Optional URI representing the location. |
 | locationType | String | The type of location. Possible values are: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. |
+| uniqueId | String | A unique string that identifies the location. In particular, the string is a GUID if this identifier is of the `locationStore` type. The string is an email address if this identifier is of the `directory` type. The string is an URI if this identifier is of the `bing` type. |
+| uniqueIdType | String | The type of the unique location ID. Possible values are: `unknown`, `locationStore`, `directory`, `private`,`bing`. |
 
 
 ## JSON representation
@@ -32,7 +34,9 @@ Represents location information of an event.
   "displayName": "string",
   "locationEmailAddress": "string",
   "locationUri": "string",
-  "locationType": "string"
+  "locationType": "string",
+  "uniqueId": "string",
+  "uniqueIdType": "string"
 }
 
 ```
