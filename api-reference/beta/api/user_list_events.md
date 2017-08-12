@@ -93,7 +93,9 @@ GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview,
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### Response 1
-Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
+Here is an example of the response. For simplicity, this example shows only one event in the user's default calendar.
+
+Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,7 +106,7 @@ Here is an example of the response. Because no `Prefer: outlook.body-content-typ
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.timezone="Pacific Standard Time"
-Content-length: 1932
+Content-length: 1986
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location)",
@@ -127,7 +129,10 @@ Content-length: 1932
                 "timeZone":"Pacific Standard Time"
             },
             "location":{
-                "displayName":"Assembly Hall"
+                "displayName":"Conf Room 3; Fourth Coffee; Home Office",
+                "locationType":"default",
+                "uniqueId":"Conf Room 3; Fourth Coffee; Home Office",
+                "uniqueIdType":"private"
             },
             "attendees":[
                 {
@@ -138,7 +143,18 @@ Content-length: 1932
                     },
                     "emailAddress":{
                         "name":"Fanny Downs",
-                        "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                        "address":"fannyd@contoso.onmicrosoft.com"
+                    }
+                },
+                {
+                    "type":"required",
+                    "status":{
+                       "response":"none",
+                       "time":"0001-01-01T00:00:00Z"
+                    },
+                    "emailAddress":{
+                        "name":"Adele Vance",
+                        "address":"AdeleV@contoso.onmicrosoft.com"
                     }
                 },
                 {
@@ -149,14 +165,14 @@ Content-length: 1932
                     },
                     "emailAddress":{
                         "name":"Dana Swope",
-                        "address":"danas@a830edad905084922E17020313.onmicrosoft.com"
+                        "address":"danas@contoso.onmicrosoft.com"
                     }
                 }
             ],
             "organizer":{
                 "emailAddress":{
                     "name":"Fanny Downs",
-                    "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                    "address":"fannyd@contoso.onmicrosoft.com"
                 }
             }
         }

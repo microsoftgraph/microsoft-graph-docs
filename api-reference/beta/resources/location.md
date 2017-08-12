@@ -13,6 +13,7 @@ Represents location information of an event.
 | displayName  | String | The name associated with the location.                       |
 | locationEmailAddress | String | Optional email address of the location. |
 | locationUri | String | Optional URI representing the location. |
+| locationType | String | The type of location. Possible values are: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. |
 
 
 ## JSON representation
@@ -30,7 +31,8 @@ Represents location information of an event.
   "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "displayName": "string",
   "locationEmailAddress": "string",
-  "locationUri": "string"
+  "locationUri": "string",
+  "locationType": "string"
 }
 
 ```
