@@ -7,8 +7,15 @@ applying [state tokens](../../../concepts/delta_query_overview.md) in one or mor
 you can query for incremental changes in the contact folders. This allows you to maintain and synchronize 
 a local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: _Contacts.Read_; _Contacts.ReadWrite_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Contacts.Read, Contacts.ReadWrite    | 
+|Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite    | 
+|Application | Contacts.Read, Contacts.ReadWrite | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
