@@ -6,12 +6,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## August 2017
 
-### People 
-
-|**Change type**|**Version**|**Description**|
-|:-------------|:-----------|:--------------|
-| Addition | v1.0 | Added the [People APIs](../api-reference/v1.0/resources/person.md) to v1.0. For details about the People API, see [Get relevant information about people](people_example.md).|
-
 ### Group lifecycle policy
 
 |**Change type**|**Version**|**Description**|
@@ -26,6 +20,19 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:-------------|:-----------|:--------------|
 | Addition | v1.0 and Beta | Added the [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) navigation property to **site**.  |
 | Addition | Beta | Added the target *siteCollectionId* and target *siteId* parameters for the copy operations. For example: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
+
+### Outlook calendar
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | Beta | Added a **locations** property to the [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) resource to support organizing an event that attendees can attend from more than one location. |
+| Addition | Beta | Added the **locationType**, **uniqueId**, and **uniqueIdType** properties to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type.|
+
+### People 
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | v1.0 | Added the [People APIs](../api-reference/v1.0/resources/person.md) to v1.0. For details about the People API, see [Get relevant information about people](people_example.md).|
 
 
 ## July 2017
