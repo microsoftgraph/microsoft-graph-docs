@@ -1,19 +1,21 @@
 # Upload large files with an upload session
 
 Create an upload session to allow your app to upload files up to the maximum file size.
-An upload session allows your app to upload ranges of the file in sequental API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
 
 To upload a file using an upload session, there are two steps:
 
 1. [Create an upload session](#create-an-upload-session)
 2. [Upload bytes to the upload session](#upload-bytes-to-the-upload-session)
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
+|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    | 
+|Application | Sites.ReadWrite.All | 
 
 > **Note**: The Files.ReadWrite.All application permission is not yet supported on this API. Full support is planned soon. 
 
