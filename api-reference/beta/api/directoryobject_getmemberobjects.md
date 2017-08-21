@@ -6,7 +6,7 @@
  > Note: Only users can be members of directory roles.
 
 ## Prerequisites
-One of the following **scopes** are required to execute this API: _Directory.Read.All_
+One of the following **scopes** are required to execute this API: _Directory.Read.All_, _Directory.ReadWrite.All_, _Directory.AccessAsUser.All_
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
