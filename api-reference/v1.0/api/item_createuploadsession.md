@@ -30,6 +30,7 @@ Once the last byte of the file has been uploaded the upload session is completed
 ```http
 POST /me/drive/root:/{path-to-item}:/createUploadSession
 POST /me/drive/items/{parent-item-id}:/{filename}:/createUploadSession
+POST /drives/{drive-id}/items/{parent-item-id}:/{filename}:/createUploadSession
 ```
 
 ### Request body
