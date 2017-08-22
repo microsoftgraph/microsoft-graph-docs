@@ -13,7 +13,7 @@ The following examples are relative to `https://graph.microsoft.com/v1.0`.
 
 | Path                                   | Description
 |:---------------------------------------|:------------------------------------
-| /sites/root                            | Organization's default [site][].
+| /sites/root                            | Organization's default [site][]. Requires access to the root SharePoint site.
 | /sites/{site-id}                       | Access a specific [site][] by its ID.
 | /sites/{site-id}/drive                 | Access the default [drive](drive.md) (document library) for the given [site][].
 | /sites/{site-id}/drives                | Enumerate the [drives](drive.md) (document libraries) under the [site][].
