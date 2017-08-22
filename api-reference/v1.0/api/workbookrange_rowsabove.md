@@ -2,9 +2,15 @@
 
 Gets a certain number of rows above a given range.
 
-## Prerequisites
-The following **scopes** are required to execute this API: _Files.Read,
-Files.ReadWrite_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Files.ReadWrite    | 
+|Delegated (personal Microsoft account) | Not supported.    | 
+|Application | Not supported. | 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -25,8 +31,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 
 ## Request body
 
-## Response
-
+### Response
 If successful, this method returns `200, OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example

@@ -1,10 +1,14 @@
 # TableCollection: add
 
 Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Files.ReadWrite    | 
+|Delegated (personal Microsoft account) | Not supported.    | 
+|Application | Not supported. | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -1,9 +1,15 @@
 # workbookRange: resizedRange
 Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
 
-## Prerequisites
-The following **scopes** are required to execute this API: _Files.Read,
-Files.ReadWrite_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Files.ReadWrite    | 
+|Delegated (personal Microsoft account) | Not supported.    | 
+|Application | Not supported. | 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -31,8 +37,7 @@ In the request URL, provide following query parameters with values.
 |deltaRows|Int32||
 |deltaColumns|Int32||
 
-## Response
-
+### Response
 If successful, this method returns `200, OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example

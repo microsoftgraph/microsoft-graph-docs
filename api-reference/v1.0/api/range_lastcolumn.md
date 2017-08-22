@@ -1,10 +1,14 @@
 # Range: LastColumn
 
 Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Files.ReadWrite    | 
+|Delegated (personal Microsoft account) | Not supported.    | 
+|Application | Not supported. | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

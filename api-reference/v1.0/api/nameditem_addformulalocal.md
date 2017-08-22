@@ -1,12 +1,15 @@
 # Add Named Item FormulaLocal
 Adds a new name to the collection of the given scope using the user's locale for the formula.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-  * Files.ReadWrite
-  * Sites.Read.All
-  
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Files.ReadWrite, Sites.Read.All    | 
+|Delegated (personal Microsoft account) | Not supported.    | 
+|Application | Sites.Read.All | 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
