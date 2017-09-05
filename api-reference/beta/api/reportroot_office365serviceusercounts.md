@@ -31,29 +31,29 @@ GET /reports/Office365ServiceUserCounts(period='D7')
 ## Request body
 
 In the request URL, provide following query parameters with values.
- Parameter   | Type|Description|
--------------|-----|-----------
-period|String|Specify the aggregate type. The value must be one of the 'D7', 'D30', 'D90' and 'D180'. 'D7' represents the report of the last 7 days.
+| Parameter   | Type|Description|
+|:---------------|:--------|:----------|
+|period|String|Specify the aggregate type. The value must be one of the 'D7', 'D30', 'D90' and 'D180'. 'D7' represents the report of the last 7 days.|
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and office365ServiceUserCounts object in the response body.
 
 The **office365ServiceUserCounts** object has the following properties.
- Property       | Type
-----------------|-----
-reportRefreshDate|Date
-exchangeActive|Int64
-exchangeInactive|Int64
-oneDriveActive|Int64
-oneDriveInactive|Int64
-sharePointActive|Int64
-sharePointInactive|Int64
-skypeForBusinessActive|Int64
-skypeForBusinessInactive|Int64
-yammerActive|Int64
-yammerInactive|Int64
-reportPeriod|String
+| Property       | Type|
+|:---------------|:----------|
+|reportRefreshDate|Date|
+|exchangeActive|Int64|
+|exchangeInactive|Int64|
+|oneDriveActive|Int64|
+|oneDriveInactive|Int64|
+|sharePointActive|Int64|
+|sharePointInactive|Int64|
+|skypeForBusinessActive|Int64|
+|skypeForBusinessInactive|Int64|
+|yammerActive|Int64|
+|yammerInactive|Int64|
+|reportPeriod|String|
 
 ## Example
 
