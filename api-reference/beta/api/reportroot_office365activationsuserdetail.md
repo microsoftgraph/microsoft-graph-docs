@@ -45,8 +45,8 @@ The **office365ActivationsUserDetail** object has the following properties.
 |userActivationCounts|userActivationState collection|
 
 The **userActivationState** object has the following properties.
-|Property|Type|
-|---|---|
+| Property	   | Type	|
+|:---------------|:--------|
 |productLicenses|String|
 |lastActivityDate|Date|
 |windows|Int64|

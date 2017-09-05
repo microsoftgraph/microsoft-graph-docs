@@ -44,8 +44,8 @@ In the request URL, provide following query parameters with values.
 If successful, this method returns a `200 OK` response code and office365ActiveUsersDetail object in the response body.
 
 The **office365ActiveUsersDetail** object has the following properties.
-|Property|Type|
-|---|---|
+| Property	   | Type	|
+|:---------------|:--------|
 |reportRefreshDate|Date|
 |userPrincipalName|String|
 |displayName|String|

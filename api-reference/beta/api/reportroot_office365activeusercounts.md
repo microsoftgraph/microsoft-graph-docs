@@ -40,8 +40,8 @@ In the request URL, provide following query parameters with values.
 If successful, this method returns a `200 OK` response code and office365ActiveUserCounts object in the response body.
 
 The **office365ActiveUserCounts** object has the following properties.
-|Property|Type|
-|---|---|
+| Property	   | Type	|
+|:---------------|:--------|
 |reportRefreshDate|Date|
 |office365|Int64|
 |exchange|Int64|
