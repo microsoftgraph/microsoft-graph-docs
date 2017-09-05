@@ -34,8 +34,8 @@ GET /reports/SharePointSiteUsage(view=view-value, period=period-value, date=date
 
 In the request URL, provide following query parameters with values.
 
-| Parameter   | Type|Description|
-|:---------------|:--------|:----------|
+ Parameter   | Type|Description|
+--------------|-----|-----------
 |view|ViewType|View is an enumeration type, used to determine which type of information that current report should return. Can not be null.|
 |period|PeriodType|Period is an enumeration type, used to specify the aggregate type.|
 |date|String|Specifies the day to a view of the users that performed an activity on that day. Must have a format of YYYY-MM-DD. Only available for the last 30 days and is ignored unless view type is **Detail**|
