@@ -37,16 +37,16 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and office365ActivationsUserDetail object in the response body.
 
 The **office365ActivationsUserDetail** object has the following properties.
-|Property|Type|
-|---|---|
+| Property       | Type|
+|:---------------|:----------|
 |reportRefreshDate|Date|
 |userPrincipalName|String|
 |displayName|String|
 |userActivationCounts|userActivationState collection|
 
 The **userActivationState** object has the following properties.
-| Property	   | Type	|
-|:---------------|:--------|
+| Property       | Type|
+|:---------------|:----------|
 |productLicenses|String|
 |lastActivityDate|Date|
 |windows|Int64|
