@@ -1,4 +1,4 @@
-# Get Office365ActivationCount report
+# Get Office365ActivationCounts report
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/Office365ActivationCount
+GET /reports/Office365ActivationCounts
 ```
 
 ## Request headers
@@ -34,9 +34,9 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and office365ActivationCount object in the response body.
+If successful, this method returns a `200 OK` response code and office365ActivationCounts object in the response body.
 
-The **office365ActivationCount** object has the following properties.
+The **office365ActivationCounts** object has the following properties.
 
 | Property       | Type|
 |:---------------|:----------|
@@ -57,7 +57,7 @@ Here is an example of how to call this API.
 Here is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/beta/reports/Office365ActivationCount
+GET https://graph.microsoft.com/beta/reports/Office365ActivationCounts
 ```
 
 #### Response
@@ -70,7 +70,7 @@ Content-Type: application/json
 Content-Length: 312
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ActivationCount)", 
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ActivationCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

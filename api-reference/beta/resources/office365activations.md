@@ -8,5 +8,5 @@
 |Method|Return Type|Description|
 |:---------------|:--------|:----------|
 |Get [Office365ActivationsUserDetail](../api/reportroot_office365activationsuserdetail.md)|[office365ActivationsUserDetail](../api/reportroot_office365activationsuserdetail.md#response)|Get detail report of Office 365 activations|
-|Get [Office365ActivationCounts](../api/reportroot_office365activationcount.md)|[office365ActivationCounts](../api/reportroot_office365activationcount.md#response)|Get activations report of office 365 activations|
-|Get [Office365ActivationsUserCounts](../api/reportroot_office365activationsusercount.md)|[office365ActivationsUserCounts](../api/reportroot_office365activationsusercount.md#response)|Get users report of office 365 activations|
+|Get [Office365ActivationCounts](../api/reportroot_office365activationcounts.md)|[office365ActivationCounts](../api/reportroot_office365activationcounts.md#response)|Get activations report of office 365 activations|
+|Get [Office365ActivationsUserCounts](../api/reportroot_office365activationsusercounts.md)|[office365ActivationsUserCounts](../api/reportroot_office365activationsusercounts.md#response)|Get users report of office 365 activations|
