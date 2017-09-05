@@ -32,6 +32,7 @@ GET /reports/Office365ActiveUsersDetail(date='2017-09-01')
 ## Request body
 
 In the request URL, provide following query parameters with values.
+
 | Parameter   | Type|Description|
 |:---------------|:--------|:----------|
 |period|String|Specify the aggregate type. The value must be one of the 'D7', 'D30', 'D90' and 'D180'. 'D7' represents the report of the last 7 days.|
@@ -44,6 +45,7 @@ In the request URL, provide following query parameters with values.
 If successful, this method returns a `200 OK` response code and office365ActiveUsersDetail object in the response body.
 
 The **office365ActiveUsersDetail** object has the following properties.
+
 | Property       | Type|
 |:---------------|:----------|
 |reportRefreshDate|Date|

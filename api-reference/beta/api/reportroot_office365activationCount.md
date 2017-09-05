@@ -37,6 +37,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and office365ActivationCount object in the response body.
 
 The **office365ActivationCount** object has the following properties.
+
 | Property       | Type|
 |:---------------|:----------|
 |reportRefreshDate|Date|
