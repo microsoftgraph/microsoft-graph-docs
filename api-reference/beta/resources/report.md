@@ -26,6 +26,6 @@ The following sections provide the reference document for the Office 365 Graph A
 - [Yammer groups activity](yammergroupsactivity.md)
 
 
-## Using Graph permission scopes
+## Using Microsoft Graph permissions 
 
-Microsof Graph controls access to resources using permission scopes. As a developer, you must specify the permission scopes you need to access Reports resources. Typically, you specify the permission scopes you need in the Azure Active Directory portal. For more information, see [Microsoft Graph permission scopes](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) and [Reports permission scopes](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#reports-permissions).
+Microsof Graph controls access to resources via permissions. You must specify the permissions you need in order to access Reports resources. Typically, you specify permissions in the Azure Active Directory (Azure AD) portal. For more information, see [Microsoft Graph permissions reference](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) and [Reports permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#reports-permissions).
