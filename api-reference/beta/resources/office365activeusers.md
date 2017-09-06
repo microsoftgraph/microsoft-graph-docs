@@ -7,6 +7,6 @@
 ## Methods
 |Method|Return Type|Description|
 |:---------------|:--------|:----------|
-|Get [Office365ActiveUsersDetail](../api/reportroot_office365activeusersdetail.md)|[office365ActiveUsersDetail](../api/reportroot_office365activeusersdetail.md#response)|Get detail report of Office 365 active users|
-|Get [Office365ServiceUserCounts](../api/reportroot_office365serviceusercounts.md)|[office365ServiceUserCounts](../api/reportroot_office365serviceusercounts.md#response)|Get services report of Office 365 active users|
-|Get [Office365ActiveUserCounts](../api/reportroot_office365activeusercounts.md)|[office365ActiveUserCounts](../api/reportroot_office365activeusercounts.md#response)|Get users report of Office 365 active users|
+|[Get Office365ActiveUsersDetail](../api/reportroot_office365activeusersdetail.md)|[office365ActiveUsersDetail](../api/reportroot_office365activeusersdetail.md#response)|Get detail report of Office 365 active users.|
+|[Get Office365ServiceUserCounts](../api/reportroot_office365serviceusercounts.md)|[office365ServiceUserCounts](../api/reportroot_office365serviceusercounts.md#response)|Get services report of Office 365 active users.|
+|[Get Office365ActiveUserCounts](../api/reportroot_office365activeusercounts.md)|[office365ActiveUserCounts](../api/reportroot_office365activeusercounts.md#response)|Get users report of Office 365 active users.|
