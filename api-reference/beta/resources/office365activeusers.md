@@ -1,4 +1,4 @@
-# Getting Office 365 active users reports
+# Office 365 active users reports
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
