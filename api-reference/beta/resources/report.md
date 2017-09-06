@@ -25,15 +25,6 @@ The following sections provide the reference document for the Office 365 Graph A
 - [Yammer device usage](yammerdeviceusage.md)
 - [Yammer groups activity](yammergroupsactivity.md)
 
-## To use the Table of Contents on the Microsoft Graph site
-
-You can browse the Table of Contents (in the left pane of the site) to find the parts of the Office 365 usage reports Graph API and resource documentation you want to see.
-
-1. Click **/Beta Reference** to open the beta docs.
-
-2. Scroll down and click **Reports**.
-
-3. Continue to click subsections below **Office 365 usage reports** for the parts of the API you want to see.
 
 ## Using Graph permission scopes
 
