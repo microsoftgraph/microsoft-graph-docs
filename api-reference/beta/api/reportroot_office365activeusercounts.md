@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-> Note: You can go to [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d) to check the meaning of different views and names.
+> **Note:** For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
 
 ## Permissions
 
@@ -34,11 +34,11 @@ In the request URL, provide following query parameters with values.
 
 | Parameter   | Type|Description|
 |:---------------|:--------|:----------|
-|period|String|Specify the aggregate type. The value must be one of the 'D7', 'D30', 'D90' and 'D180'. 'D7' represents the report of the last 7 days.|
+|period|String|Specifies the aggregate type. The value must be one of the following: D7, D30, D90, or D180. D7 represents a report on the last 7 days.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and office365ActiveUserCounts object in the response body.
+If successful, this method returns a `200 OK` response code and an **office365ActiveUserCounts** object in the response body.
 
 The **office365ActiveUserCounts** object has the following properties.
 
@@ -56,11 +56,11 @@ The **office365ActiveUserCounts** object has the following properties.
 
 ## Example
 
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 #### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 ```http
 GET https://graph.microsoft.com/beta/reports/Office365ActiveUserCounts(period='D7')
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/reports/Office365ActiveUserCounts(period='D
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
