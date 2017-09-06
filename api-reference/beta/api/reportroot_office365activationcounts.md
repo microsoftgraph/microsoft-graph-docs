@@ -54,7 +54,7 @@ The following example shows how to call this API.
 
 #### Request
 
-The following example shows a request.
+The following example shows the request.
 
 ```http
 GET https://graph.microsoft.com/beta/reports/Office365ActivationCounts
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/reports/Office365ActivationCounts
 
 #### Response
 
-The following example shows a response.
+The following example shows the response.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
