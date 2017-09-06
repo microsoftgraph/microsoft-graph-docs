@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-> Note: You can go to [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60) to check the meaning of different views and names.
+> **Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and office365ActivationsUserDetail object in the response body.
+If successful, this method returns a `200 OK` response code and an office365ActivationsUserDetail object in the response body.
 
 The **office365ActivationsUserDetail** object has the following properties.
 
@@ -59,11 +59,11 @@ The **userActivationState** object has the following properties.
 
 ## Example
 
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 #### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 ```http
 GET https://graph.microsoft.com/beta/reports/Office365ActivationsUserDetail
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/reports/Office365ActivationsUserDetail
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
