@@ -87,7 +87,7 @@ As an example, if a meeting time suggestion involves 3 attendees with the follow
 |:-----|:-----|:-----|
 |Dana | Free | 100% |
 |John | Unknown | 49% |
-|Fanny | Busy | 0% |
+|Samantha | Busy | 0% |
 
 Then the confidence of the meeting time suggestion, which is the average chance of attendance, is (100% + 49% + 0%)/3 = 49.66%.
 
@@ -125,8 +125,8 @@ Content-Type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -199,7 +199,7 @@ Content-Length: 976
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }
@@ -230,7 +230,7 @@ Content-Length: 976
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }

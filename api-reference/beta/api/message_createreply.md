@@ -64,8 +64,8 @@ Content-Type: application/json
     "toRecipients":[
       {
         "emailAddress": {
-          "address":"fannyd@contoso.onmicrosoft.com",
-          "name":"Fanny Downs"
+          "address":"samanthab@contoso.onmicrosoft.com",
+          "name":"Samantha Booth"
         }
       },
       {
@@ -76,7 +76,7 @@ Content-Type: application/json
       }
      ]
   },
-  "comment": "Fanny, Randi, would you name the group if the project is approved, please?" 
+  "comment": "Samantha, Randi, would you name the group if the project is approved, please?" 
 }
 ```
 
@@ -99,7 +99,7 @@ Content-type: application/json
   "subject": "RE: Let's start a group",
   "Body": {
     "contentType": "HTML",
-    "content": "<html>\r\n<body>Fanny, Randi, would you name the group if the project is approved, please?\r\n<b>From:</b> Fanny Downs<br>\r\n<b>Sent:</b> Friday, March 4, 2016 12:23:35 AM<br>\r\n<b>To:</b> Admin<br>\r\n<b>Subject:</b> Re: Let's start a group</font>\r\n<p>That's a great idea!<br>\r\n</body>\r\n</html>"
+    "content": "<html>\r\n<body>Samantha, Randi, would you name the group if the project is approved, please?\r\n<b>From:</b> Samantha Booth<br>\r\n<b>Sent:</b> Friday, March 4, 2016 12:23:35 AM<br>\r\n<b>To:</b> Admin<br>\r\n<b>Subject:</b> Re: Let's start a group</font>\r\n<p>That's a great idea!<br>\r\n</body>\r\n</html>"
   },
   "sender": {
     "emailAddress": {
@@ -111,8 +111,8 @@ Content-type: application/json
   "toRecipients": [
     {
       "emailAddress": {
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com"
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com"
       }
     },
     {

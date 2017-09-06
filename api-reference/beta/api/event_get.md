@@ -130,9 +130,19 @@ Content-length: 1928
         "dateTime":"2017-04-21T12:00:00.0000000",
         "timeZone":"Pacific Standard Time"
     },
-    "location":{
-        "displayName":"Assembly Hall"
+    "location": {
+        "displayName": "Assembly Hall",
+        "locationType": "default",
+        "uniqueId": "Assembly Hall",
+        "uniqueIdType": "private"
     },
+    "locations": [
+        {
+            "displayName": "Assembly Hall",
+            "locationType": "default",
+            "uniqueIdType": "unknown"
+        }
+    ],
     "attendees":[
         {
             "type":"required",
@@ -141,8 +151,8 @@ Content-length: 1928
                 "time":"0001-01-01T00:00:00Z"
             },
             "emailAddress":{
-                "name":"Fanny Downs",
-                "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                "name":"Samantha Booth",
+                "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
             }
         },
         {
@@ -159,8 +169,8 @@ Content-length: 1928
     ],
     "organizer":{
         "emailAddress":{
-            "name":"Fanny Downs",
-            "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+            "name":"Samantha Booth",
+            "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
         }
     }
 }
@@ -185,6 +195,7 @@ Here is an example of the response. The **body** property is returned in text fo
 
 <!-- {
   "blockType": "response",
+  "name": "get_event_in_text",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
@@ -204,6 +215,123 @@ Content-length: 636
         "contentType":"text",
         "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
     }
+}
+```
+
+
+##### Request 3
+
+The third example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter 
+to return specific properties. 
+
+<!-- {
+  "blockType": "request",
+  "name": "get_event_multiple_locations"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/events('AAMkADAGAADDdm4NAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
+```
+##### Response 3
+Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 
+
+Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header, 
+the **start** and **end** properties are displayed in the default UTC time zone, and the body is in the default HTML format.  
+
+<!-- {
+  "blockType": "response",
+  "name": "get_event_multiple_locations",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1992
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,locations)/$entity",
+  "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
+  "id":"AAMkADAGAADDdm4NAAA=",
+  "subject":"Plan summer company picnic",
+  "bodyPreview":"Let's kick-start this event planning!",
+  "body":{
+    "contentType":"html",
+    "content":"<html>\r\n<head>\r\n</head>\r\n<body>\r\nLet's kick-start this event planning!\r\n</body>\r\n</html>\r\n"
+  },
+  "start":{
+    "dateTime":"2017-08-30T11:00:00.0000000",
+    "timeZone":"UTC"
+  },
+  "end":{
+    "dateTime":"2017-08-30T12:00:00.0000000",
+    "timeZone":"UTC"
+  },
+  "location":{
+    "displayName":"Conf Room 3; Fourth Coffee; Home Office",
+    "locationType":"default",
+    "uniqueId":"Conf Room 3; Fourth Coffee; Home Office",
+    "uniqueIdType":"private"
+  },
+  "locations":[
+    {
+      "displayName":"Conf Room 3",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    },
+    {
+      "displayName":"Fourth Coffee",
+      "locationType":"default",
+      "uniqueId":"Fourth Coffee",
+      "uniqueIdType":"private",
+      "address":{
+        "type":"unknown",
+        "street":"4567 Main St",
+        "city":"Redmond",
+        "state":"WA",
+        "countryOrRegion":"US",
+        "postalCode":"32008"
+      },
+      "coordinates":{
+        "latitude":47.672,
+        "longitude":-102.103
+      }
+    },
+    {
+      "displayName":"Home Office",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    }
+  ],
+  "attendees":[
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Dana Swope",
+        "address":"DanaS@contoso.onmicrosoft.com"
+      }
+    },
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Alex Wilber",
+        "address":"AlexW@contoso.onmicrosoft.com"
+      }
+    }
+  ],
+  "organizer":{
+    "emailAddress":{
+      "name":"Adele Vance",
+      "address":"AdeleV@contoso.onmicrosoft.com"
+    }
+  }
 }
 ```
 

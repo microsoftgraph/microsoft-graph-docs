@@ -80,8 +80,8 @@ Content-type: application/json
             "canViewPrivateItems":true,
             "canEdit":true,
             "owner":{
-                "name":"Fanny Downs",
-                "address":"fannyd@adatum.onmicrosoft.com"
+                "name":"Samantha Booth",
+                "address":"samanthab@adatum.onmicrosoft.com"
             }
         }
     ]

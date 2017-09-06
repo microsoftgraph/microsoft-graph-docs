@@ -70,9 +70,8 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
     b. Choose **Add Platform** and **Native Application**.
 
-    > **Note:** The Application Registration Portal provides a Redirect URI with a value of *msalYOUR NEW APP ID://auth*. Do not use the built-in redirect URIs. The [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) implements the MSAL authentication library which requires this redirect URI. If using a [supported third party library](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) or the **ADAL** library then you must use the built-in redirect URIs.
+    > **Note:** The Application Registration Portal provides a Redirect URI with a value of *msalENTER_YOUR_CLIENT_ID://auth*. Do not use the built-in redirect URIs. The [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) implements the MSAL authentication library that requires this redirect URI. If you're using a [supported third-party library](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) or the **ADAL** library, you must use the built-in redirect URIs.
 
-    For Guided Setup flow and unguided flow
 
     a. Add delegated permissions. You'll need **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite**, and **User.ReadBasic.All**. 
    
@@ -232,27 +231,40 @@ The connect sample app has a **Connect** button on the main activity. If you pre
 
 You need to make your app ready to handle the authorization server response, which contains a code that you can exchange for an access token.
 
-1. We need to tell the Android system that Connect app can handle requests to the redirect URL configured in the application registration. To do this open the **AndroidManifest** file and add the following children to the projects  **\<application/\>** element.
+1. You need to tell the Android system that Connect app can handle requests to the redirect URL configured in the application registration. To do this, open the **strings.xml** string resource file and add the following children to the projects  **\<application/\>** element.
+   ```xml
+   <!DOCTYPE resources [
+       <!ENTITY clientId "ENTER_YOUR_CLIENT_ID">
+       ]>
+
+    ...
+    <string name="client_Id">&clientId;</string>
+    <string name="msalPrefix">msal&clientId;</string>
+
+   ```
+
+   The string resources are used in the **AndroidManifest.xml** file. The **MSAL** library reads the client ID at runtime and returns REST responses to the redirect URL defined for the **BrowserTabActivity**.
+
     ```xml
         <uses-sdk tools:overrideLibrary="com.microsoft.identity.msal" />
         <application ...>
             ...
-            <activity
-                android:name="com.microsoft.identity.client.BrowserTabActivity">
-                <intent-filter>
-                    <action android:name="android.intent.action.VIEW" />
-                    <category android:name="android.intent.category.DEFAULT" />
-                    <category android:name="android.intent.category.BROWSABLE" />
-                    <data android:scheme="msalENTER_YOUR_CLIENT_ID"
-                        android:host="auth" />
-                </intent-filter>
-            </activity>
-            <meta-data
-                android:name="https://login.microsoftonline.com/common"
-                android:value="authority string"/>
-            <meta-data
-                android:name="com.microsoft.identity.client.ClientId"
-                android:value="ENTER_YOUR_CLIENT_ID"/>
+           <activity
+               android:name="com.microsoft.identity.client.BrowserTabActivity">
+               <intent-filter>
+                   <action android:name="android.intent.action.VIEW" />
+                   <category android:name="android.intent.category.DEFAULT" />
+                   <category android:name="android.intent.category.BROWSABLE" />
+                   <data android:scheme="@string/msalPrefix"
+                       android:host="auth" />
+               </intent-filter>
+           </activity>
+           <meta-data
+               android:name="https://login.microsoftonline.com/common"
+               android:value="authority string"/>
+           <meta-data
+               android:name="com.microsoft.identity.client.ClientId"
+               android:value="@string/client_Id"/>
         </application>
     ```
 2. The **MSAL** library needs access to the application Id assigned by the registration portal. **The MSAL library refers to the application Id as the "Client Id"**. It gets the application Id (Client Id) from the application context that you pass in the library constructor. 

@@ -86,8 +86,8 @@ Content-type: application/json
             "isSharedWithMe":false,
             "canEdit":true,
             "owner":{
-                "name":"Fanny Downs",
-                "address":"fannyd@adatum.onmicrosoft.com"
+                "name":"Samantha Booth",
+                "address":"samanthab@adatum.onmicrosoft.com"
             }
         }
     ]

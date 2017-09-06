@@ -149,8 +149,8 @@ The `nextLink` URL indicates there are more messages in the folder to get.
             "subject":"Holiday promotion sale",
             "sender":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AQMkADNkNAAAVRMKAAAAA=="

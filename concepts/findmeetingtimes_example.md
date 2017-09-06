@@ -46,7 +46,7 @@ with the reason (**emptySuggestionsReason**) that attendees are not available.
 
 The two calls to **findMeetingTimes** include the following parameters. All [parameters](../api-reference/v1.0/api/user_findmeetingtimes.md#request-body) for **findMeetingTimes** are optional.
 
-- **attendees**: one attendee, Fanny Downs, set as `required` for the **type** property
+- **attendees**: one attendee, Samantha Booth, set as `required` for the **type** property
 - **locationConstraint**: does not require any location suggestion
 - **timeConstraint**: the first call looks in the date/time range of April 18, 9am to April 20, 5pm; after the first call fails to suggest any times, the second call looks at April 21, 9am to 5pm
 - **meetingDuration**: two hours
@@ -71,8 +71,8 @@ Content-type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -146,8 +146,8 @@ Content-type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -220,7 +220,7 @@ Content-Length: 714
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }

@@ -46,6 +46,7 @@ Here is a JSON representation of the resource
   "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
+  "locations": [{"@odata.type": "microsoft.graph.location"}],
   "onlineMeetingUrl": "string",
   "organizer": {"@odata.type": "microsoft.graph.recipient"},
   "originalEndTimeZone": "string",
@@ -92,6 +93,7 @@ Here is a JSON representation of the resource
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |location|[Location](location.md)|The location of the event.|
+|locations|[Location](location.md) collection|The locations where the event is held or attended from.|
 |onlineMeetingUrl|String|A URL for an online meeting.|
 |organizer|[Recipient](recipient.md)|The organizer of the event.|
 |originalEndTimeZone|String|The end time zone that was set when the event was created. A value of `tzone://Microsoft/Custom`indicates that a legacy custom time zone was set in desktop Outlook.|

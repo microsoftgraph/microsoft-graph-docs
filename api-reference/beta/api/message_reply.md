@@ -67,8 +67,8 @@ Content-Type: application/json
     "toRecipients":[
       {
         "emailAddress": {
-          "address":"fannyd@contoso.onmicrosoft.com",
-          "name":"Fanny Downs"
+          "address":"samanthab@contoso.onmicrosoft.com",
+          "name":"Samantha Booth"
         }
       },
       {
@@ -79,7 +79,7 @@ Content-Type: application/json
       }
      ]
   },
-  "comment": "Fanny, Randi, would you name the group please?" 
+  "comment": "Samantha, Randi, would you name the group please?" 
 }
 ```
 

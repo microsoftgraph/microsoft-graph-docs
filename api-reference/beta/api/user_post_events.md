@@ -47,7 +47,7 @@ Since the **event** resource supports [extensions](../../../concepts/extensibili
 If successful, this method returns `201, Created` response code and [event](../resources/event.md) object in the response body.
 
 ## Example
-##### Request
+##### Request 1
 Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the **start** and **end** times in the response
 should use that time zone.
 <!-- {
@@ -80,8 +80,8 @@ Content-length: 600
   "attendees": [
     {
       "emailAddress": {
-        "address":"fannyd@contoso.onmicrosoft.com",
-        "name": "Fanny Downs"
+        "address":"samanthab@contoso.onmicrosoft.com",
+        "name": "Samantha Booth"
       },
       "type": "required"
     }
@@ -89,10 +89,12 @@ Content-length: 600
 }
 ```
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+##### Response 1
+Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header. 
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "create_event_from_user"
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
@@ -146,9 +148,19 @@ Content-length: 2197
         "dateTime":"2017-04-15T12:00:00.0000000",
         "timeZone":"Pacific Standard Time"
     },
-    "location":{
-        "displayName":"Harry's Bar"
+    "location": {
+        "displayName": "Harry's Bar",
+        "locationType": "default",
+        "uniqueId": "Harry's Bar",
+        "uniqueIdType": "private"
     },
+    "locations": [
+        {
+            "displayName": "Harry's Bar",
+            "locationType": "default",
+            "uniqueIdType": "unknown"
+        }
+    ],
     "recurrence":null,
     "attendees":[
         {
@@ -158,8 +170,8 @@ Content-length: 2197
                 "time":"0001-01-01T00:00:00Z"
             },
             "emailAddress":{
-                "name":"Fanny Downs",
-                "address":"fannyd@contoso.onmicrosoft.com"
+                "name":"Samantha Booth",
+                "address":"samanthab@contoso.onmicrosoft.com"
             }
         }
     ],
@@ -169,6 +181,211 @@ Content-length: 2197
             "address":"danas@contoso.onmicrosoft.com"
         }
     }
+}
+```
+
+
+##### Request 2
+The next example request specifies 3 locations where the organizer and attendees can attend the meeting from.
+
+In the request body, supply a JSON representation of [event](../resources/event.md) object.
+<!-- {
+  "blockType": "request",
+  "name": "create_event_from_user_multiple_locations"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/events
+Prefer: outlook.timezone="Pacific Standard Time"
+Content-type: application/json
+Content-length: 1390
+
+{
+  "subject": "Plan summer company picnic",
+  "body": {
+    "contentType": "HTML",
+    "content": "Let's kick-start this event planning!"
+  },
+  "start": {
+      "dateTime": "2017-08-30T11:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2017-08-30T12:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address": "DanaS@contoso.onmicrosoft.com",
+        "name": "Dana Swope"
+      },
+      "type": "Required"
+    },
+    {
+      "emailAddress": {
+        "address": "AlexW@contoso.onmicrosoft.com",
+        "name": "Alex Wilber"
+      },
+      "type": "Required"
+    }
+  ],
+  "location": {
+    "displayName": "Conf Room 3; Fourth Coffee; Home Office",
+    "locationType": "Default"
+  },
+  "locations": [
+    {
+      "displayName": "Conf Room 3"
+    },
+    {
+      "displayName": "Fourth Coffee",
+      "address": {
+        "street": "4567 Main St",
+        "city": "Redmond",
+        "state": "WA",
+        "countryOrRegion": "US",
+        "postalCode": "32008"
+      },
+      "coordinates": {
+        "latitude": 47.672,
+        "longitude": -102.103
+      }
+    },
+    {
+      "displayName": "Home Office"
+    }
+  ]
+
+}
+```
+
+##### Response 2
+The following example response shows the created event that specifies information for the 3 locations for the meeting. Because of the 
+`Prefer: outlook.timezone="Pacific Standard Time"` request header, the **start** and **end** properties are expressed in PST.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "name": "create_event_from_user_multiple_locations",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 2985
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events/$entity",
+  "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
+  "id":"AAMkADAGAADDdm4NAAA=",
+  "createdDateTime":"2017-08-30T07:06:33.8673345Z",
+  "lastModifiedDateTime":"2017-08-30T07:06:34.5079772Z",
+  "changeKey":"y53lbKh6jkaxHzFwGhgyxgAAz3IKMA==",
+  "categories":[
+
+  ],
+  "originalStartTimeZone":"Pacific Standard Time",
+  "originalEndTimeZone":"Pacific Standard Time",
+  "iCalUId":"04000000820089190544",
+  "reminderMinutesBeforeStart":15,
+  "isReminderOn":true,
+  "hasAttachments":false,
+  "subject":"Plan summer company picnic",
+  "bodyPreview":"Let's kick-start this event planning!",
+  "importance":"normal",
+  "sensitivity":"normal",
+  "isAllDay":false,
+  "isCancelled":false,
+  "isOrganizer":true,
+  "responseRequested":true,
+  "seriesMasterId":null,
+  "showAs":"busy",
+  "type":"singleInstance",
+  "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADAGAADDdm4NAAA%3D&exvsurl=1&path=/calendar/item",
+  "onlineMeetingUrl":null,
+  "responseStatus":{
+    "response":"organizer",
+    "time":"0001-01-01T00:00:00Z"
+  },
+  "body":{
+    "contentType":"html",
+    "content":"<html>\r\n<head>\r\n</head>\r\n<body>\r\nLet's kick-start this event planning!\r\n</body>\r\n</html>\r\n"
+  },
+  "start":{
+    "dateTime":"2017-08-30T11:00:00.0000000",
+    "timeZone":"Pacific Standard Time"
+  },
+  "end":{
+    "dateTime":"2017-08-30T12:00:00.0000000",
+    "timeZone":"Pacific Standard Time"
+  },
+  "location":{
+    "displayName":"Conf Room 3; Fourth Coffee; Home Office",
+    "locationType":"default",
+    "uniqueId":"Conf Room 3; Fourth Coffee; Home Office",
+    "uniqueIdType":"private"
+  },
+  "locations":[
+    {
+      "displayName":"Conf Room 3",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    },
+    {
+      "displayName":"Fourth Coffee",
+      "locationType":"default",
+      "uniqueId":"Fourth Coffee",
+      "uniqueIdType":"private",
+      "address":{
+        "type":"unknown",
+        "street":"4567 Main St",
+        "city":"Redmond",
+        "state":"WA",
+        "countryOrRegion":"US",
+        "postalCode":"32008"
+      },
+      "coordinates":{
+        "latitude":47.672,
+        "longitude":-102.103
+      }
+    },
+    {
+      "displayName":"Home Office",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    }
+  ],
+  "recurrence":null,
+  "attendees":[
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Dana Swope",
+        "address":"DanaS@contoso.onmicrosoft.com"
+      }
+    },
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Alex Wilber",
+        "address":"AlexW@contoso.onmicrosoft.com"
+      }
+    }
+  ],
+  "organizer":{
+    "emailAddress":{
+      "name":"Adele Vance",
+      "address":"AdeleV@contoso.onmicrosoft.com"
+    }
+  }
 }
 ```
 

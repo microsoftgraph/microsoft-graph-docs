@@ -241,13 +241,13 @@ Content-Length: 10674
     "edgeBlockSearchSuggestions": true,
     "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
     "edgeRequireSmartScreen": true,
-    "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
+    "edgeEnterpriseModeSiteListLocation": "Microsoft Edge Enterprise Mode Site List Location value",
     "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
     "edgeSearchEngine": {
       "@odata.type": "microsoft.graph.edgeSearchEngineBase"
     },
     "edgeHomepageUrls": [
-      "Edge Homepage Urls value"
+      "Microsoft Edge Homepage Urls value"
     ],
     "edgeBlockAccessToAboutFlags": true,
     "smartScreenBlockPromptOverride": true,

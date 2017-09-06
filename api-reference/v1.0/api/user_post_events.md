@@ -78,8 +78,8 @@ Content-length: 600
   "attendees": [
     {
       "emailAddress": {
-        "address":"fannyd@contoso.onmicrosoft.com",
-        "name": "Fanny Downs"
+        "address":"samanthab@contoso.onmicrosoft.com",
+        "name": "Samantha Booth"
       },
       "type": "required"
     }
@@ -156,8 +156,8 @@ Content-length: 2197
                 "time":"0001-01-01T00:00:00Z"
             },
             "emailAddress":{
-                "name":"Fanny Downs",
-                "address":"fannyd@contoso.onmicrosoft.com"
+                "name":"Samantha Booth",
+                "address":"samanthab@contoso.onmicrosoft.com"
             }
         }
     ],
