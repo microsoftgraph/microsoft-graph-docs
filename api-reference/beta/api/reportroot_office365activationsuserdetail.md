@@ -24,7 +24,7 @@ GET /reports/Office365ActivationsUserDetail
 
 ## Optional query parameters
 
-
+This method supports the `$top` and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
 ## Request headers
 
