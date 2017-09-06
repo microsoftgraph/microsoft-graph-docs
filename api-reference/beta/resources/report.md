@@ -25,16 +25,7 @@ The following sections provide the reference document for the Office 365 Graph A
 - [Yammer device usage](yammerdeviceusage.md)
 - [Yammer groups activity](yammergroupsactivity.md)
 
-## To use the Table of Contents on the Microsoft Graph site
 
-You can browse the Table of Contents (in the left pane of the site) to find the parts of the Office 365 usage reports Graph API and resource documentation you want to see.
+## Using Microsoft Graph permissions 
 
-1. Click **/Beta Reference** to open the beta docs.
-
-2. Scroll down and click **Reports**.
-
-3. Continue to click subsections below **Office 365 usage reports** for the parts of the API you want to see.
-
-## Using Graph permission scopes
-
-Microsof Graph controls access to resources using permission scopes. As a developer, you must specify the permission scopes you need to access Reports resources. Typically, you specify the permission scopes you need in the Azure Active Directory portal. For more information, see [Microsoft Graph permission scopes](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) and [Reports permission scopes](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#reports-permissions).
+Microsof Graph controls access to resources via permissions. You must specify the permissions you need in order to access Reports resources. Typically, you specify permissions in the Azure Active Directory (Azure AD) portal. For more information, see [Microsoft Graph permissions reference](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) and [Reports permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#reports-permissions).
