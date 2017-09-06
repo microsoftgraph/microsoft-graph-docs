@@ -22,6 +22,10 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/Office365ActivationsUserDetail
 ```
 
+## Optional query parameters
+
+
+
 ## Request headers
 
 | Name       | Description|
@@ -35,6 +39,8 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and an **office365ActivationsUserDetail** object in the response body.
+
+The default page size for this request is 2000 items.
 
 The **office365ActivationsUserDetail** object has the following properties.
 

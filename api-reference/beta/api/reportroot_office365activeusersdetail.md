@@ -23,6 +23,10 @@ GET /reports/Office365ActiveUsersDetail(period='D7')
 GET /reports/Office365ActiveUsersDetail(date='2017-09-01')
 ```
 
+## Optional query parameters
+
+This method supports the `$top` and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
+
 ## Request headers
 
 | Name       | Description|
@@ -43,6 +47,8 @@ In the request URL, provide following query parameters with values.
 ## Response
 
 If successful, this method returns a `200 OK` response code and an **office365ActiveUsersDetail** object in the response body.
+
+The default page size for this request is 2000 items.
 
 The **office365ActiveUsersDetail** object has the following properties.
 
