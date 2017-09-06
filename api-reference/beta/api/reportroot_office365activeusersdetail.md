@@ -48,8 +48,6 @@ In the request URL, provide following query parameters with values.
 
 If successful, this method returns a `200 OK` response code and an **office365ActiveUsersDetail** object in the response body.
 
-The default page size for this request is 2000 items.
-
 The **office365ActiveUsersDetail** object has the following properties.
 
 | Property       | Type|
@@ -75,6 +73,8 @@ The **office365ActiveUsersDetail** object has the following properties.
 |skypeForBusinessLicenseAssignDate|Date|
 |yammerLicenseAssignDate|Date|
 |assignedProducts|String collection|
+
+The default page size for this request is 2000 items.
 
 ## Example
 

@@ -40,8 +40,6 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and an **office365ActivationsUserDetail** object in the response body.
 
-The default page size for this request is 2000 items.
-
 The **office365ActivationsUserDetail** object has the following properties.
 
 | Property       | Type|
@@ -62,6 +60,9 @@ The **userActivationState** object has the following properties.
 |windows10Mobile|Int64|
 |ios|Int64|
 |android|Int64|
+
+
+The default page size for this request is 2000 items.
 
 ## Example
 
