@@ -95,7 +95,7 @@ Content-Length: 279
       "pop3App": 0, 
       "imap4App": 0, 
       "smtpApp": 0, 
-      "reportDate" : "2017-09-01"
+      "reportDate": "2017-09-01"
       "reportPeriod": "7"
     }
   ]
