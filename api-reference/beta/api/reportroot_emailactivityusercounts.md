@@ -1,10 +1,10 @@
-# Get Office365GroupsActivityGroupCounts report
+# Get EmailActivityUserCounts report
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get an Office 365 groups activity group counts report.
+Get an email activity counts report.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
+> **Note:** For details about different report views and names, see [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).
 
 ## Permissions
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/Office365GroupsActivityGroupCounts(period='D7')
+GET /reports/EmailActivityUserCounts(period='D7')
 ```
 
 ## Request headers
@@ -40,15 +40,16 @@ In the request URL, provide following query parameters with values.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an **office365GroupsActivityGroupCounts** object in the response body.
+If successful, this method returns a `200 OK` response code and an **emailActivitySummary** object in the response body.
 
-The **office365GroupsActivityGroupCounts** object has the following properties.
+The **emailActivitySummary** object has the following properties.
 
 | Property          | Type   |
 | :---------------- | :----- |
 | reportRefreshDate | Date   |
-| total             | Int64  |
-| active            | Int64  |
+| send              | Int64  |
+| receive           | Int64  |
+| read              | Int64  |
 | reportDate        | Date   |
 | reportPeriod      | String |
 
@@ -61,7 +62,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/beta/reports/Office365GroupsActivityGroupCounts(period='D7')
+GET https://graph.microsoft.com/v1.0/reports/EmailActivityUserCounts(period='D7')
 ```
 
 #### Response
@@ -72,15 +73,16 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 185
+Content-Length: 279
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365GroupsActivityGroupCounts)", 
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.emailActivitySummary)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
-      "total": 5344, 
-      "active": 0, 
+      "send": 69, 
+      "receive": 197, 
+      "read": 158, 
       "reportDate": "2017-09-01", 
       "reportPeriod": "7"
     }
