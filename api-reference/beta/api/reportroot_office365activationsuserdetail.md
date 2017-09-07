@@ -44,14 +44,14 @@ If successful, this method returns a `200 OK` response code and an **office365Ac
 
 The **office365ActivationsUserDetail** object has the following properties.
 
-| Property             | Type                           |
-| :------------------- | :----------------------------- |
-| reportRefreshDate    | Date                           |
-| userPrincipalName    | String                         |
-| displayName          | String                         |
-| userActivationCounts | userActivationState collection |
+| Property             | Type                            |
+| :------------------- | :------------------------------ |
+| reportRefreshDate    | Date                            |
+| userPrincipalName    | String                          |
+| displayName          | String                          |
+| userActivationCounts | userActivationCounts collection |
 
-The **userActivationState** object has the following properties.
+The **userActivationCounts** object has the following properties.
 
 | Property         | Type   |
 | :--------------- | :----- |

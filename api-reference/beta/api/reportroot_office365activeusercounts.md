@@ -53,7 +53,7 @@ The **office365ActiveUserCounts** object has the following properties.
 | sharePoint        | Int64  |
 | skypeForBusiness  | Int64  |
 | yammer            | Int64  |
-| lastActivityDate  | Date   |
+| reportDate        | Date   |
 | reportPeriod      | String |
 
 ## Example
@@ -88,7 +88,7 @@ Content-Length: 279
       "sharePoint": 800, 
       "skypeForBusiness": 200, 
       "yammer": 50, 
-      "lastActivityDate": "2017-08-29", 
+      "reportDate": "2017-08-29", 
       "reportPeriod": "7"
     }
   ]
