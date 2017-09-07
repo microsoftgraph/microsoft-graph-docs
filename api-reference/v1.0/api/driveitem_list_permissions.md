@@ -2,7 +2,7 @@
 
 List the effective permissions of on a [DriveItem](../resources/driveitem.md).
 
-The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](item_get.md) or a collection of DriveItems.
+The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem_get.md) or a collection of DriveItems.
 You must access the permissions property directly.
 
 ## Access to Permissions

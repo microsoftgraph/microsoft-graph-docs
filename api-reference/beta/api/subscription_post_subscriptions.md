@@ -128,7 +128,7 @@ Depending on the subscribed resource, an additional resourceData field may provi
   }
 }
 ```
-When receiving notifications from Drive subscriptions the resourceData will be null and the [delta](item_delta.md) API should be called to determine the changes that have occured. Here is an example of a Drive notification:
+When receiving notifications from Drive subscriptions the resourceData will be null and the [delta](driveitem_delta.md) API should be called to determine the changes that have occured. Here is an example of a Drive notification:
 ```http
 {
   "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",

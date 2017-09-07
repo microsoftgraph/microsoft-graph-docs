@@ -81,10 +81,10 @@ The following methods are available for drive resources.
 | :---------------------------------------------------- | :------------------------------- |
 | [Get user's default drive](../api/drive_get.md)       | `GET /me/drive`                  |
 | [Get another user's drive](../api/drive_get.md)       | `GET /users/{user-id}/drive`     |
-| [Get root folder for a drive](../api/item_get.md)     | `GET /drives/{drive-id}/root`    |
-| [List items in a drive](../api/item_list_children.md) | `GET /me/drive/root/children`    |
-| [List changes in a drive](../api/item_delta.md)       | `GET /me/drive/root/delta`       |
-| [Search items in a drive](../api/item_search.md)      | `GET /me/drive/search(q='text')` |
+| [Get root folder for a drive](../api/driveitem_get.md)     | `GET /drives/{drive-id}/root`    |
+| [List items in a drive](../api/driveitem_list_children.md) | `GET /me/drive/root/children`    |
+| [List changes in a drive](../api/driveitem_delta.md)       | `GET /me/drive/root/delta`       |
+| [Search items in a drive](../api/driveitem_search.md)      | `GET /me/drive/search(q='text')` |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

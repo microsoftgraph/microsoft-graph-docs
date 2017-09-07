@@ -28,7 +28,7 @@ Here is a JSON representation of the resource.
 
 | Property    | Type   | Description                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName | String | The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [find changes](../api/item_delta.md) |
+| displayName | String | The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [find changes](../api/driveitem_delta.md) |
 | id          | String | Unique identifier for the identity.                                                                                                                                                                                                                                                                                   |
 
 ## Remarks

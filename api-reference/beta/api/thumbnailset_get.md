@@ -4,7 +4,7 @@
 
 Retrieve the properties and relationships of a [thumbnailSet](../resources/thumbnailset.md) object.
 
-For more info, see [List thumbnails](item_list_thumbnails.md).
+For more info, see [List thumbnails](driveitem_list_thumbnails.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).

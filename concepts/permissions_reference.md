@@ -272,9 +272,9 @@ The Files.Read, Files.ReadWrite, Files.Read.All, and Files.ReadWrite.All delegat
 
 The Files.Read.Selected and Files.ReadWrite.Selected delegated permissions are only valid on work or school accounts and are only exposed for working with [Office 365 file handlers (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps). They should not be used for directly calling Microsoft Graph APIs. 
 
-The Files.ReadWrite.AppFolder delegated permission is only valid for personal accounts and is used for accessing the [App Root special folder](https://dev.onedrive.com/items/special_folders.htm) with the OneDrive [Get special folder](../api-reference/v1.0/api/drive_special.md) Microsoft Graph API.
+The Files.ReadWrite.AppFolder delegated permission is only valid for personal accounts and is used for accessing the [App Root special folder](https://dev.onedrive.com/items/special_folders.htm) with the OneDrive [Get special folder](../api-reference/v1.0/api/drive_get_specialfolder.md) Microsoft Graph API.
 
-The Files.ReadWrite.All application permission does not yet support the OneDrive [Create resumable upload session](../api-reference/v1.0/api/item_createuploadsession.md) Microsoft Graph API. Full support is coming soon. 
+The Files.ReadWrite.All application permission does not yet support the OneDrive [Create resumable upload session](../api-reference/v1.0/api/driveitem_createuploadsession.md) Microsoft Graph API. Full support is coming soon. 
 
 ### Example usage
 #### Delegated

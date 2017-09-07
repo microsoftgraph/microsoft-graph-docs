@@ -149,21 +149,21 @@ The URL will only be available for a short period of time (1 hour) before it is 
 
 | Method                                                 | REST Path
 |:-------------------------------------------------------|:--------------------
-| [Get item](../api/item_get.md)                         | `GET /drive/items/{item-id}`
-| [List children](../api/item_list_children.md)          | `GET /drive/items/{item-id}/children`
-| [Create item](../api/item_post_children.md)            | `POST /drive/items/{item-id}/children`
-| [Update item](../api/item_update.md)                   | `PATCH /drive/items/{item-id}`
-| [Upload content](../api/item_uploadcontent.md)         | `PUT /drive/items/{item-id}/content`
-| [Download content](../api/item_downloadcontent.md)     | `GET /drive/items/{item-id}/content`
-| [Delete item](../api/item_delete.md)                   | `DELETE /drive/items/{item-id}`
-| [Move item](../api/item_move.md)                       | `PATCH /drive/items/{item-id}`
-| [Copy item](../api/item_copy.md)                       | `POST /drive/items/{item-id}/copy`
-| [Search items](../api/item_search.md)                  | `GET /drive/items/{item-id}/search(q='text')`
-| [List changes in a drive](../api/item_delta.md)        | `GET /drive/root/delta`
-| [List thumbnails](../api/item_list_thumbnails.md)      | `GET /drive/items/{item-id}/thumbnails`  |
-| [Create sharing link](../api/item_createlink.md)       | `POST /drive/items/{item-id}/createLink` |
-| [Add permissions](../api/item_invite.md)               | `POST /drive/items/{item-id}/invite`     |
-| [List permissions](../api/item_list_permissions.md)    | `GET /drive/items/{item-id}/permissions` |
+| [Get item](../api/driveitem_get.md)                         | `GET /drive/items/{item-id}`
+| [List children](../api/driveitem_list_children.md)          | `GET /drive/items/{item-id}/children`
+| [Create item](../api/driveitem_post_children.md)            | `POST /drive/items/{item-id}/children`
+| [Update item](../api/driveitem_update.md)                   | `PATCH /drive/items/{item-id}`
+| [Upload content](../api/driveitem_put_content.md)         | `PUT /drive/items/{item-id}/content`
+| [Download content](../api/driveitem_get_content.md)     | `GET /drive/items/{item-id}/content`
+| [Delete item](../api/driveitem_delete.md)                   | `DELETE /drive/items/{item-id}`
+| [Move item](../api/driveitem_move.md)                       | `PATCH /drive/items/{item-id}`
+| [Copy item](../api/driveitem_copy.md)                       | `POST /drive/items/{item-id}/copy`
+| [Search items](../api/driveitem_search.md)                  | `GET /drive/items/{item-id}/search(q='text')`
+| [List changes in a drive](../api/driveitem_delta.md)        | `GET /drive/root/delta`
+| [List thumbnails](../api/driveitem_list_thumbnails.md)      | `GET /drive/items/{item-id}/thumbnails`  |
+| [Create sharing link](../api/driveitem_createlink.md)       | `POST /drive/items/{item-id}/createLink` |
+| [Add permissions](../api/driveitem_invite.md)               | `POST /drive/items/{item-id}/invite`     |
+| [List permissions](../api/driveitem_list_permissions.md)    | `GET /drive/items/{item-id}/permissions` |
 | [Delete permission](../api/permission_delete.md)       | `DELETE /drive/items/{item-id}/permissions/{perm-id}` |
 
 ## Remarks

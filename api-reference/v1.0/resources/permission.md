@@ -62,9 +62,9 @@ Permissions with an [**invitation**][SharingInvitation] facet represent permissi
 
 | Method                                              | REST Path
 |:----------------------------------------------------|:-----------------------
-| [List permissions](../api/item_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [List permissions](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Get permission](../api/permission_get.md)          | `GET /drive/items/{item-id}/permissions/{id}`
-| [Add](../api/item_invite.md)                        | `POST /drive/items/{item-id}/invite`
+| [Add](../api/driveitem_invite.md)                        | `POST /drive/items/{item-id}/invite`
 | [Update](../api/permission_update.md)               | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission_delete.md)               | `DELETE /drive/items/{item-id}/permissions/{id}`
 

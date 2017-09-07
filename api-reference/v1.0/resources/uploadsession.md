@@ -31,7 +31,7 @@ Here is a JSON representation of the resource
 
 ## Additional Resources
 
-See [Upload large files with an upload session](../api/item_createUploadSession.md) for details on how to upload files using an upload session.
+See [Upload large files with an upload session](../api/driveitem_createuploadsession.md) for details on how to upload files using an upload session.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

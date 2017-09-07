@@ -1,7 +1,7 @@
 # Move a DriveItem
 
 To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
-This is a special case of the [Update](item_update.md) method.
+This is a special case of the [Update](driveitem_update.md) method.
 Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 
 Items cannot be moved between [Drives](../resources/drive.md) using this request.
