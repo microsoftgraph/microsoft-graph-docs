@@ -10,11 +10,11 @@ Get an Office 365 activations user detail report.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Reports.Read.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :--------------------------------------- |
+| Delegated (work or school account)     | Not supported.                           |
+| Delegated (personal Microsoft account) | Not supported.                           |
+| Application                            | Reports.Read.All                         |
 
 ## HTTP request
 
@@ -30,9 +30,9 @@ This method supports the `$top` and `$skipToken` [OData query parameters](../../
 
 ## Request headers
 
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -44,24 +44,24 @@ If successful, this method returns a `200 OK` response code and an **office365Ac
 
 The **office365ActivationsUserDetail** object has the following properties.
 
-| Property       | Type|
-|:---------------|:----------|
-|reportRefreshDate|Date|
-|userPrincipalName|String|
-|displayName|String|
-|userActivationCounts|userActivationState collection|
+| Property             | Type                           |
+| :------------------- | :----------------------------- |
+| reportRefreshDate    | Date                           |
+| userPrincipalName    | String                         |
+| displayName          | String                         |
+| userActivationCounts | userActivationState collection |
 
 The **userActivationState** object has the following properties.
 
-| Property       | Type|
-|:---------------|:----------|
-|productLicenses|String|
-|lastActivityDate|Date|
-|windows|Int64|
-|mac|Int64|
-|windows10Mobile|Int64|
-|ios|Int64|
-|android|Int64|
+| Property         | Type   |
+| :--------------- | :----- |
+| productLicenses  | String |
+| lastActivityDate | Date   |
+| windows          | Int64  |
+| mac              | Int64  |
+| windows10Mobile  | Int64  |
+| ios              | Int64  |
+| android          | Int64  |
 
 
 The default page size for this request is 2000 items.
@@ -98,11 +98,11 @@ Content-Length: 466
         {
           "productLicenses": "Project Client", 
           "lastActivityDate": "2017-08-20", 
-          "windows": 0, 
+          "windows": 5, 
           "mac": 0, 
           "windows10Mobile": 0, 
           "ios": 0, 
-          "android": 0
+          "android": 2
         }
       ]
     }

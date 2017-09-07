@@ -1,8 +1,8 @@
-# Get Office365ActiveUserCounts report
+# Get Office365ServicesUserCounts report
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get an Office 365 active user counts report.
+Get an Office 365 services user count report.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/Office365ActiveUserCounts(period='D7')
+GET /reports/Office365ServicesUserCounts(period='D7')
 ```
 
 ## Request headers
@@ -40,21 +40,24 @@ In the request URL, provide following query parameters with values.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an **office365ActiveUserCounts** object in the response body.
+If successful, this method returns a `200 OK` response code and an **office365ServicesUserCounts** object in the response body.
 
-The **office365ActiveUserCounts** object has the following properties.
+The **office365ServicesUserCounts** object has the following properties.
 
-| Property          | Type   |
-| :---------------- | :----- |
-| reportRefreshDate | Date   |
-| office365         | Int64  |
-| exchange          | Int64  |
-| oneDrive          | Int64  |
-| sharePoint        | Int64  |
-| skypeForBusiness  | Int64  |
-| yammer            | Int64  |
-| lastActivityDate  | Date   |
-| reportPeriod      | String |
+| Property                 | Type   |
+| :----------------------- | :----- |
+| reportRefreshDate        | Date   |
+| exchangeActive           | Int64  |
+| exchangeInactive         | Int64  |
+| oneDriveActive           | Int64  |
+| oneDriveInactive         | Int64  |
+| sharePointActive         | Int64  |
+| sharePointInactive       | Int64  |
+| skypeForBusinessActive   | Int64  |
+| skypeForBusinessInactive | Int64  |
+| yammerActive             | Int64  |
+| yammerInactive           | Int64  |
+| reportPeriod             | String |
 
 ## Example
 
@@ -65,7 +68,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/beta/reports/Office365ActiveUserCounts(period='D7')
+GET https://graph.microsoft.com/beta/reports/Office365ServicesUserCounts(period='D7')
 ```
 
 #### Response
@@ -75,20 +78,23 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 279
+Content-Length: 433
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ActiveUserCounts)", 
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ServicesUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
-      "office365": 1700, 
-      "exchange": 1400, 
-      "oneDrive": 350, 
-      "sharePoint": 800, 
-      "skypeForBusiness": 200, 
-      "yammer": 50, 
-      "lastActivityDate": "2017-08-29", 
+      "exchangeActive": 2000, 
+      "exchangeInactive": 2000, 
+      "oneDriveActive": 1800, 
+      "oneDriveInactive": 2000, 
+      "sharePointActive": 2000, 
+      "sharePointInactive": 2000, 
+      "skypeForBusinessActive": 2000, 
+      "skypeForBusinessInactive": 2000, 
+      "yammerActive": 400, 
+      "yammerInactive": 2000, 
       "reportPeriod": "7"
     }
   ]

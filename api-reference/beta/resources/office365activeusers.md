@@ -5,8 +5,8 @@
 > **Note:** For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
 
 ## Methods
-|Method|Return Type|Description|
-|:---------------|:--------|:----------|
-|[Get Office365ActiveUsersDetail](../api/reportroot_office365activeusersdetail.md)|[office365ActiveUsersDetail](../api/reportroot_office365activeusersdetail.md#response)|Get detail report of Office 365 active users.|
-|[Get Office365ServiceUserCounts](../api/reportroot_office365serviceusercounts.md)|[office365ServiceUserCounts](../api/reportroot_office365serviceusercounts.md#response)|Get services report of Office 365 active users.|
-|[Get Office365ActiveUserCounts](../api/reportroot_office365activeusercounts.md)|[office365ActiveUserCounts](../api/reportroot_office365activeusercounts.md#response)|Get users report of Office 365 active users.|
+| Method                                   | Return Type                              | Description                              |
+| :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
+| [Get Office365ActiveUserDetail](../api/reportroot_office365activeuserdetail.md) | [office365ActiveUserDetail](../api/reportroot_office365activeuserdetail.md#response) | Get an Office 365 active user detail report. |
+| [Get Office365ActiveUserCounts](../api/reportroot_office365activeusercounts.md) | [office365ActiveUserCounts](../api/reportroot_office365activeusercounts.md#response) | Get an Office 365 active user counts report. |
+| [Get Office365ServicesUserCounts](../api/reportroot_office365servicesusercounts.md) | [office365ServicesUserCounts](../api/reportroot_office365servicesusercounts.md#response) | Get an Office 365 services user counts report. |

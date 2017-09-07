@@ -10,11 +10,11 @@ Get an Office 365 activations user counts report.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Reports.Read.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :--------------------------------------- |
+| Delegated (work or school account)     | Not supported.                           |
+| Delegated (personal Microsoft account) | Not supported.                           |
+| Application                            | Reports.Read.All                         |
 
 ## HTTP request
 
@@ -26,9 +26,9 @@ GET /reports/Office365ActivationsUserCounts
 
 ## Request headers
 
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -40,12 +40,12 @@ If successful, this method returns a `200 OK` response code and an **office365Ac
 
 The **office365ActivationsUserCounts** object has the following properties.
 
-| Property       | Type|
-|:---------------|:----------|
-|reportRefreshDate|Date|
-|productType|String|
-|assigned|Int64|
-|activated|Int64|
+| Property          | Type   |
+| :---------------- | :----- |
+| reportRefreshDate | Date   |
+| productType       | String |
+| assigned          | Int64  |
+| activated         | Int64  |
 
 ## Example
 
@@ -74,8 +74,8 @@ Content-Length: 316
     {
       "reportRefreshDate": "2017-09-01", 
       "productType": "Office 365 ProPlus", 
-      "assigned": 267984, 
-      "activated": 171005
+      "assigned": 2679, 
+      "activated": 1710
     }
   ]
 }
