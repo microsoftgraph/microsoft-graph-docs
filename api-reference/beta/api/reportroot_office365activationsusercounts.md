@@ -56,7 +56,7 @@ The following example shows how to call this API.
 The following example shows the request.
 
 ```http
-GET https://graph.microsoft.com/beta/reports/Office365ActivationsUserCounts
+GET https://graph.microsoft.com/v1.0/reports/Office365ActivationsUserCounts
 ```
 
 #### Response
@@ -69,7 +69,7 @@ Content-Type: application/json
 Content-Length: 316
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ActivationsUserCounts)", 
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.office365ActivationsUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

@@ -84,7 +84,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/beta/reports/Office365GroupsActivityUserDetail(period='D7')
+GET https://graph.microsoft.com/v1.0/reports/Office365GroupsActivityUserDetail(period='D7')
 ```
 
 #### Response
@@ -98,7 +98,7 @@ Content-Type: application/json
 Content-Length: 479
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365GroupsActivityUserDetail)", 
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.office365GroupsActivityUserDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
