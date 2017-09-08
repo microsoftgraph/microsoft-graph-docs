@@ -11,4 +11,4 @@
 | [Get OneDriveUsageUserDetail](../api/reportroot_onedriveusageuserdetail.md) | [oneDriveUsageUserDetail](../api/reportroot_onedriveusageuserdetail.md#response) | Get an OneDrive usage user detail report. |
 | [Get OneDriveUsageAccountCounts](../api/reportroot_onedriveusageaccountcounts.md) | [oneDriveUsageAccountCounts](../api/reportroot_onedriveusageaccountcounts.md#response) | Get an OneDrive usage account counts report. |
 | [Get OneDriveUsageFileCounts](../api/reportroot_onedriveusagefilecounts.md) | [oneDriveUsageFileCounts](../api/reportroot_onedriveusagefilecounts.md#response) | Get an OneDrive usage file counts report. |
-| [Get OneDriveUsageStorage](../api/reportroot_onedriveusagestorage.md) | [oneDriveUsageStorage](../api/reportroot_onedriveusagestorage.md#response) | Get an OneDrive usage storage report.    |
+| [Get OneDriveUsageStorage](../api/reportroot_onedriveusagestorage.md) | [siteUsageStorage](../api/reportroot_onedriveusagestorage.md#response) | Get an OneDrive usage storage report.    |
