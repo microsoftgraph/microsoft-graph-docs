@@ -9,6 +9,7 @@ To upload a file using an upload session, there are two steps:
 2. [Upload bytes to the upload session](#upload-bytes-to-the-upload-session)
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -16,8 +17,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
 |Application | Sites.ReadWrite.All |
-
-> **Note**: The Files.ReadWrite.All application permission is not yet supported on this API. Full support is planned soon. 
 
 ## Create an upload session
 
@@ -33,7 +32,8 @@ POST /me/drive/items/{parent-item-id}:/{filename}:/createUploadSession
 ```
 
 ### Request body
-No request body is required. 
+
+No request body is required.
 However, you can specify a request body to provide additional data about the file being uploaded.
 
 For example, to control the behavior if the filename is already taken, you can specify the conflict behavior property in the body of the request.
@@ -53,6 +53,7 @@ For example, to control the behavior if the filename is already taken, you can s
 | *if-match* | etag  | If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` errr response is returned. |
 
 ### Response
+
 The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
 
 ### Example

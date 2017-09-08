@@ -8,6 +8,7 @@ If a sharing link of the specified type already exists for the app, the existing
 DriveItem resources inherit permissions from their ancestors.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -17,17 +18,21 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-POST /me/drive/items/{item-id}/createLink
-POST /me/drive/root:/{item-path}:/createLink
-POST /groups/{group-id}/drive/items/{item-id}/createLink
-POST /drives/{drive-id}/items/{item-id}/createLink
+POST /drives/{driveId}/items/{itemId}/createLink
+POST /groups/{groupId}/drive/items/{itemId}/createLink
+POST /me/drive/items/{itemId}/createLink
+POST /sites/{siteId}/drive/items/{itemId}/createLink
+POST /users/{userId}/drive/items/{itemId}/createLink
 ```
 
 ## Request body
-The body of the request defines the type of sharing link your application is looking for.
-The request should be a JSON object with this property.
+
+The body of the request defines properties of the sharing link your application is requesting.
+The request should be a JSON object with the following properties.
 
 | Name      | Type   | Description                                                                  |
 |:----------|:-------|:-----------------------------------------------------------------------------|

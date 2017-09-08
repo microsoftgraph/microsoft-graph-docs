@@ -21,22 +21,14 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/drive/special/{name}
 ```
+
 ## Optional query parameters
 
 This method supports the `$expand` and `$select` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
-
-## Request headers
-
-| Name          | Type   | Description               |
-|:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer {token}. Required. |
-
-## Request body
-
-Do not supply a request body for this method.
 
 ## Response
 
