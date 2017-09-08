@@ -8,5 +8,5 @@
 | Method                                   | Return Type                              | Description                              |
 | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
 | [Get Office365ActivationsUserDetail](../api/reportroot_office365activationsuserdetail.md) | [office365ActivationsUserDetail](../api/reportroot_office365activationsuserdetail.md#response) | Get an Office 365 activations user detail report. |
-| [Get Office365ActivationCounts](../api/reportroot_office365activationcounts.md) | [office365ActivationCounts](../api/reportroot_office365activationcounts.md#response) | Get an Office 365 activation counts report . |
+| [Get Office365ActivationCounts](../api/reportroot_office365activationcounts.md) | [office365ActivationCounts](../api/reportroot_office365activationcounts.md#response) | Get an Office 365 activation counts report. |
 | [Get Office365ActivationsUserCounts](../api/reportroot_office365activationsusercounts.md) | [office365ActivationsUserCounts](../api/reportroot_office365activationsusercounts.md#response) | Get an Office 365 activations user counts report. |

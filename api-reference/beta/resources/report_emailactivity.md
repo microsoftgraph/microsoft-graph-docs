@@ -9,5 +9,5 @@
 | Method                                   | Return Type                              | Description                              |
 | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
 | [Get EmailActivityUserDetail](../api/reportroot_emailactivityuserdetail.md) | [emailActivityUserDetail](../api/reportroot_emailactivityuserdetail.md#response) | Get an email activity user detail report. |
-| [Get EmailActivityCounts](../api/reportroot_emailactivitycounts.md) | [emailActivitySummary](../api/reportroot_emailactivitycounts.md#response) | Get an email activity counts report .    |
+| [Get EmailActivityCounts](../api/reportroot_emailactivitycounts.md) | [emailActivitySummary](../api/reportroot_emailactivitycounts.md#response) | Get an email activity counts report.     |
 | [Get EmailActivityUserCounts](../api/reportroot_emailactivityusercounts.md) | [emailActivitySummary](../api/reportroot_emailactivityusercounts.md#response) | Get an email activity user counts report. |

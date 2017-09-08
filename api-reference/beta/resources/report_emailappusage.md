@@ -1,4 +1,4 @@
-# EmailAppUsageUserDetailEmail app usage reports
+# Email app usage reports
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,7 +8,7 @@
 
 | Method                                   | Return Type                              | Description                              |
 | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| [Get EmailAppUsageUserDetail](../api/reportroot_emailappusageuserdetail.md) | [emailAppUsageUserDetail](../api/reportroot_emailappusageuserdetail.md#response) | Get an email activity user detail report. |
-| [Get EmailAppUsageAppsUserCounts](../api/reportroot_emailappusageappsusercounts.md) | [emailAppUsageAppsUserCounts](../api/reportroot_emailappusageappsusercounts.md#response) | Get an email activity counts report .    |
-| [Get EmailAppUsageUserCounts](../api/reportroot_emailappusageusercounts.md) | [emailAppUsageUserCounts](../api/reportroot_emailappusageusercounts.md#response) | Get an email activity user counts report. |
-| [Get EmailAppUsageVersionsUserCounts](../api/reportroot_emailappusageversionsusercounts.md) | [emailAppUsageVersionsUserCounts](../api/reportroot_emailappusageversionsusercounts.md#response) | Get an email activity user counts report. |
+| [Get EmailAppUsageUserDetail](../api/reportroot_emailappusageuserdetail.md) | [emailAppUsageUserDetail](../api/reportroot_emailappusageuserdetail.md#response) | Get an email app usage user detail report. |
+| [Get EmailAppUsageAppsUserCounts](../api/reportroot_emailappusageappsusercounts.md) | [emailAppUsageAppsUserCounts](../api/reportroot_emailappusageappsusercounts.md#response) | Get an email app usage apps user counts report. |
+| [Get EmailAppUsageUserCounts](../api/reportroot_emailappusageusercounts.md) | [emailAppUsageUserCounts](../api/reportroot_emailappusageusercounts.md#response) | Get an email app usage user counts report. |
+| [Get EmailAppUsageVersionsUserCounts](../api/reportroot_emailappusageversionsusercounts.md) | [emailAppUsageVersionsUserCounts](../api/reportroot_emailappusageversionsusercounts.md#response) | Get an email app usage versions user counts report. |
