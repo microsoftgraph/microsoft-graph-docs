@@ -1,6 +1,6 @@
 # Copy a DriveItem
 
-Creates a copy of a [driveItem](../resources/driveitem.md) (including any children) under a new parent or with a new name.
+Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
 ## Permissions
 
@@ -15,13 +15,17 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-```
+
+```http
+POST /drives/{driveId}/items/{itemId}/copy
+POST /groups/{groupId}/drive/items/{itemId}/copy
 POST /me/drive/items/{item-id}/copy
-POST /me/drive/root:/{path}:/copy
-POST /groups/{group-id}/drive/items/{item-id}/copy
+POST /sites/{siteId}/drive/items/{itemId}/copy
+POST /users/{userId}/drive/items/{itemId}/copy
 ```
 
-## Request body
+### Request body
+
 In the request body, provide a JSON object with the following parameters.
 
 
@@ -30,39 +34,47 @@ In the request body, provide a JSON object with the following parameters.
 | parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy will be created in.                                         |
 | name            | string                                         | Optional. The new name for the copy. If this isn't provided, the same name will be used as the original.    |
 
-**Note:** The _parentReference_ should include either an `id` or `path` but not both. 
-If both are included, they need to reference the same item or an error will occur.
+**Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.
 
 ## Example
 
-<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite" } -->
+This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
+The new copy of the file will be named `contoso plan (copy).txt`.
+
+<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
+
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/copy
+POST /me/drive/items/{item-id}/copy
 Content-Type: application/json
 
 {
   "parentReference": {
-    "path": "/drive/root:/Documents"
+    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B"
+    "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
   },
-  "name": "contoso plan.docx"
+  "name": "contoso plan (copy).txt"
 }
 ```
 
 ## Response
 
-Returns details about how to monitor the progress of the copy, upon accepting the request.
+Returns details about how to [monitor the progress](../concepts/long-running-actions.md) of the copy, upon accepting the request.
 
 <!-- { "blockType": "response" } -->
 ```http
 HTTP/1.1 202 Accepted
+Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-## Remarks
+The value of the `Location` header provides a URL for a service that will return the current state of the copy operation.
+You can use this info to [determine when the copy has finished](../concepts/long-running-actions.md).
+
+### Remarks
 
 In many cases the copy action is performed asynchronously.
 The response from the API will only indicate that the copy operation was accepted or rejected, say due to the destination filename already being in use.
 
-**Note:** The API does not provide a method to know if the copy was successful.
+[item-resource]: ../resources/driveitem.md
 
 <!-- {
   "type": "#page.annotation",

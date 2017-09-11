@@ -1,6 +1,7 @@
-# Move a DriveItem
+# Move a DriveItem to a new folder
 
 To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
+
 This is a special case of the [Update](driveitem_update.md) method.
 Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 
@@ -17,68 +18,71 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
+
 ```http
-PATCH /me/drive/items/{item-id}
-PATCH /me/drive/root:/{item-path}
 PATCH /drives/{drive-id}/items/{item-id}
 PATCH /groups/{group-id}/drive/{item-id}
+PATCH /me/drive/items/{item-id}
+PATCH /sites/{site-id}/drive/items/{item-id}
+PATCH /users/{user-id}/drive/items/{item-id}
 ```
 
-## Request headers
+## Optional request headers
 
 | Name          | Type   | Description                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
 
 ## Request body
+
 In the request body, supply the new value for the **parentReference** property.
 Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 For best performance you shouldn't include existing values that haven't changed.
 
-**Note:** When moving items to the root of a OneDrive you cannot use the `"id:" "root"` syntax.
-You either need to use the real ID of the root folder, or use `{"path": "/drive/root"}` for the parent reference.
+**Note:** When moving items to the root of a drive your app cannot use the `"id:" "root"` syntax.
+Your app needs to provide the actual ID of the root folder for the parent reference.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
-This example moves an item specified by {item-id} into the **Documents** folder in the user's OneDrive.
 
-<!-- {
-  "blockType": "request",
-  "name": "update_item"
-}-->
+This example moves an item specified by {item-id} into a folder in the user's drive with the ID `new-parent-folder-id`.
+
+<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
+
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{item-id}
+PATCH /me/drive/items/{item-id}
 Content-type: application/json
 
 {
-	"name": "new-item-name",
-	"parentReference" : {"path": "/drive/root:/Documents"}
+  "parentReference": {
+    "id": "new-parent-folder-id"
+  },
+  "name": "new-item-name.txt"
 }
 ```
 
-##### Response
+### Response
 
-The following example shows the response.
+The following example shows the response for this move request.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.driveItem"
-} -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-	"id": "0123456789abc",
-	"name": "new-item-name",
-	"folder": { "childCount": 3 },
-  "parentReference": {
-    "id": "507DE6D5-0201-496A-AA87-5E2563247982",
-    "path": "/drive/root:/Documents"
+  "id": "0123456789abc",
+  "name": "new-item-name.txt",
+  "parentReference":
+  {
+    "driveId": "11231001",
+    "path": "/drive/root:/Documents",
+    "id": "1231203102!1011"
   }
 }
 ```
@@ -87,8 +91,8 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Move item",
-  "keywords": "",
+  "description": "Move an item to another location or rename the item.",
+  "keywords": "move,rename,mv,change location",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "OneDrive/DriveItems/Move"
+} -->

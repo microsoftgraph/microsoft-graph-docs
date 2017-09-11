@@ -25,10 +25,15 @@ This creates a temporary storage location where the bytes of the file will be sa
 Once the last byte of the file has been uploaded the upload session is completed and the final file is shown in the destination folder.
 
 ### HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-POST /me/drive/root:/{path-to-item}:/createUploadSession
-POST /me/drive/items/{parent-item-id}:/{filename}:/createUploadSession
+POST /drives/{driveId}/items/{itemId}/createUploadSession
+POST /groups/{groupId}/drive/items/{itemId}/createUploadSession
+POST /me/drive/items/{itemId}/createUploadSession
+POST /sites/{siteId}/drive/items/{itemId}/createUploadSession
+POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ```
 
 ### Request body
@@ -56,56 +61,60 @@ For example, to control the behavior if the filename is already taken, you can s
 
 The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
 
-### Example
-
-<!-- {
-  "blockType": "request",
-  "name": "driveItem_createUploadSession"
-}-->
+<!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/root:/{item-path}:/createUploadSession
+POST /drive/root:/{item-path}:/createUploadSession
+Content-Type: application/json
+
+{
+  "item": {
+    "@microsoft.graph.conflictBehavior": "rename",
+    "name": "largefile.dat"
+  }
+}
 ```
 
-##### Response 
+### Response
+The response to this request, if successful, will provide the details for where the remainder of the requests should be sent as an [UploadSession](../resources/uploadSession.md) resource.
 
-The following example shows the response.
+This resource provides details about where the byte range of the file should be uploaded and when the upload session expires.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.uploadSession"
-} -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
+       "optionalProperties": [ "nextExpectedRanges" ]  } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "uploadUrl": "https://tenant-my.sharepoint.com/alkjl1kjklna",
-  "expirationDateTime": "2020-08-24T10:58:00Z",
-  "nextExpectedRanges": ["0-"]
+  "uploadUrl": "https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337",
+  "expirationDateTime": "2015-01-29T09:21:55.523Z"
 }
 ```
 
 ## Upload bytes to the upload session
 
 To upload the file, or a portion of the file, your app makes a PUT request to the **uploadUrl** value received in the **createUploadSession** response.
-You can upload the entire file, or split the file into fragments, as long as the maximum bytes in any given request is less than 60 MiB.
+You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 60 MiB.
+
 The fragments of the file must be uploaded sequentally in order.
 Uploading fragments out of order will result in an error.
 
-**Note:** If your app splits a file into multiple fragments, the size of each fragment **MUST** be a multiple of 320 KiB. 
-Using a fragment size that does not divide evenly by 320 will result in errors committing some files.
+**Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes). 
+Using a fragment size that does not divide evenly by 320 KiB will result in errors committing some files.
 
 ### Example
 
-This example is uploading the first 26 bytes of a 128 byte file.
-The **Content-Length** header specifies the size of the current request.
-The **Content-Range** header indicates the range of bytes in the overall file that this request represents.
-The total length of the file must be known before you can upload the first fragment of the file.
+In this example, the app is uploading the first 26 bytes of a 128 byte file.
+
+* The **Content-Length** header specifies the size of the current request.
+* The **Content-Range** header indicates the range of bytes in the overall file that this request represents.
+* The total length of the file is known before you can upload the first fragment of the file.
 
 <!-- { "blockType": "request", "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
+
 ```
-PUT https://tenant-my.sharepoint.com/alkjl1kjklna
+PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 Content-Length: 26
 Content-Range: bytes 0-25/128
 
@@ -113,13 +122,14 @@ Content-Range: bytes 0-25/128
 ```
 
 **Important:** Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests.
-If a fragment declares a different file size, the request will fail.
+If a byte range declares a different file size, the request will fail.
 
 ##### Response
 
-The following example shows the response.
+When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -130,13 +140,28 @@ Content-Type: application/json
 }
 ```
 
-Your app can use the **nextExpectedRanges** value to determine where to start the next fragment.
+Your app can use the **nextExpectedRanges** value to determine where to start the next byte range.
 You may see multiple ranges specified, indicating parts of the file that the server has not yet received. 
 This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.
 
-You should always determine the fragment size according to the best practices below. 
-Do not assume that **nextExpectedRanges** will return reanges of proper size for an upload fragment. 
-The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how you should upload the file.
+You should always determine the size of your byte ranges according to the best practices below. 
+Do not assume that **nextExpectedRanges** will return reanges of proper size for a byte range to upload.
+The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+
+{
+  "expirationDateTime": "2015-01-29T09:21:55.523Z",
+  "nextExpectedRanges": [
+  "12345-55232",
+  "77829-99375"
+  ]
+}
+```
 
 **Notes:**
 
@@ -144,17 +169,17 @@ The **nextExpectedRanges** property indicates ranges of the file that have not b
 * On successful fragment writes, it will return the next range to start from (eg. "523-").
 * On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. 
   You can [request upload status](#resuming-an-in-progress-upload) to get a more detailed list of missing ranges.
-* Including the Authorization header when issuing the `PUT` call may result in a `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when issuing the `POST` during the first step. It should be not be included when issueing the `PUT`.   
-
+* Including the Authorization header when issuing the `PUT` call may result in a `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when issuing the `POST` during the first step. It should be not be included when issueing the `PUT`.
 
 ## Completing a file
 
-When the last fragment of a file is received the server will response with an `HTTP 201 Created` or `HTTP 200 OK`.
+When the last byte range of a file is received the server will response with an `HTTP 201 Created` or `HTTP 200 OK`.
 The response body will also include the default property set for the **driveItem** representing the completed file.
 
 <!-- { "blockType": "request", "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
+
 ```
-PUT https://tenant-my.sharepoint.com/alkjl1kjklna
+PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 Content-Length: 21
 Content-Range: bytes 101-127/128
 
@@ -162,6 +187,7 @@ Content-Range: bytes 101-127/128
 ```
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -173,30 +199,46 @@ Content-Type: application/json
   "file": { }
 }
 ```
-**Note:** The item response is truncated for documentation clarity.
+## Handling upload conflicts
 
-## Cancel an upload session
+If a conflict occurs after the file is uploaded (for example, an item with the same name was created during the upload session), an error is returned when the last byte range is uploaded.
+
+```http
+HTTP/1.1 409 Conflict
+Content-Type: application/json
+
+{
+  "error":
+  {
+    "code": "upload_name_conflict",
+    "message": "Another file exists with the same name as the uploaded session. You can redirect the upload session to use a new filename by calling PUT with the new metadata and @microsoft.graph.sourceUrl attribute.",
+  }
+}
+```
+
+## Cancel the upload session
 
 To cancel an upload session send a DELETE request to the upload URL.
 This cleans up the temporary file holding the data previously uploaded.
 This should be used in scenarios where the upload is aborted, for example, if the user cancels the transfer.
 
 Temporary files and their accompanying upload session are automatically cleaned up after the **expirationDateTime** has passed.
+Temporary files may not be deleted immedately after the expiration time has elapsed.
 
-### Example
-
-The DELETE request will immedately expire the upload session and remove any previously uploaded bytes.
+### Request
 
 <!-- { "blockType": "request", "name": "upload-fragment-cancel", "scopes": "files.readwrite" } -->
+
 ```http
-DELETE https://tenant-my.sharepoint.com/alkjl1kjklna
+DELETE https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 ```
 
-##### Response 
+### Response
 
 The following example shows the response.
 
 <!-- { "blockType": "response" } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -213,13 +255,15 @@ To find out which byte ranges have been received previously, your app can reques
 Query the status of the upload by sending a GET request to the `uploadUrl`.
 
 <!-- { "blockType": "request", "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
+
 ```
-GET https://tenant-my.sharepoint.com/alkjl1kjklna
+GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
 ```
 
 The server will respond with a list of missing byte ranges that need to be uploaded and the expiration time for the upload session.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
+
 ```http
 HTTP/1.1 200 OK
 
@@ -230,8 +274,37 @@ HTTP/1.1 200 OK
 ```
 
 ### Upload remaining data
+
 Now that your app knows where to start the upload from, resume the upload by following the steps in [upload bytes to the upload session](#upload-bytes-to-the-upload-session).
 
+## Handle upload errors
+
+When the last byte range of a file is uploaded, it is possible for an error to occur. 
+This can be due to a name conflict or quota limitation being exceeded.
+The upload session will be preserved until the expiration time, which allows your app to recover the upload by explicitly committing the upload session.
+
+To explicitly commit the upload session, your app must make a PUT request with a new **driveItem** resource that will be used when committing the upload session.
+This new request should correct the source of error that generated the original upload error.
+
+To indicate that your app is committing an existing upload session, the PUT request must include the `@microsoft.graph.sourceUrl` property with the value of your upload session URL.
+
+<!-- { "blockType": "request", "name": "explicit-upload-commit", "scopes": "files.readwrite" } -->
+
+```http
+PUT /me/drive/root:/{path_to_parent}
+Content-Type: application/json
+If-Match: {etag or ctag}
+
+{
+  "name": "largefile_2.vhd",
+  "@microsoft.graph.conflictBehavior": "rename",
+  "@microsoft.graph.sourceUrl": "{upload session URL}"
+}
+```
+
+**Note:** You can use the `@microsoft.graph.conflictBehavior` and `if-match` headers as expected in this call.
+
+If the file can be committed using the new metadata, an `HTTP 201 Created` or `HTTP 200 OK` response will be returned with the Item metadata for the uploaded file.
 
 ## Best practices
 
@@ -242,20 +315,15 @@ Now that your app knows where to start the upload from, resume the upload by fol
   * `504 Gateway Timeout`
 * Use an exponential back off strategy if any 5xx server errors are returned when resuming or retrying upload requests.
 * For other errors, you should not use an exponential back off strategy but limit the number of retry attempts made.
-* Handle `404 Not Found` errors when doing resumable uploads by starting the entire upload over.
-* Use resumable file transfers for files larger than 10 MiB (10 \* 1024 \* 1024 bytes).
-* A fragment size of 10 MiB for stable high speed connections is optimal. 
-  For slower or less reliable connections you may get better results from a smaller fragment size. 
-  The recommended fragment size is between 5-10 MiB.
-* Use a fragment size that is a multiple of 320 KiB (320 \* 1024 bytes). 
-  Failing to use a fragment size that is a multiple of 320 KiB can result in large file transfers failing after the last fragment is uploaded.
+* Handle `404 Not Found` errors when doing resumable uploads by starting the entire upload over. This indicates the upload session no longer exists.
+* Use resumable file transfers for files larger than 10 MiB (10,485,760 bytes).
+* A byte range size of 10 MiB for stable high speed connections is optimal. For slower or less reliable connections you may get better results from a smaller fragment size. The recommended fragment size is between 5-10 MiB.
+* Use a byte range size that is a multiple of 320 KiB (327,680 bytes). Failing to use a fragment size that is a multiple of 320 KiB can result in large file transfers failing after the last byte range is uploaded.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Upload item",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+  "description": "Upload large files using an upload session.",
+  "keywords": "upload,large file,fragment,BITS"
+} -->

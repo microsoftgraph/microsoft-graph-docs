@@ -30,6 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 To access the root SharePoint site within a tenant:
 
+<!-- { "blockType": "ignored" } -->
+
 ```http
 GET /sites/root
 GET /sites/contoso.sharepoint.com
@@ -53,26 +55,35 @@ GET /groups/{group-id}/sites/root
 
 ## Example
 
-##### Request
+### Request
 
-<!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "get-site" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}
+GET /sites/{site-id}
 ```
 
-##### Response
+### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "d297964f-d325-424b-a002-f54048a4622e",
-    "name": "OneDrive / SharePoint Team",
-    "description": "Collaboration site for the OneDrive and SharePoint team",
+  "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
+  "owner": {
+    "user": {
+      "displayName": "Daron Spektor",
+      "id": "5280E7FE-DC7A-4486-9490-E790D81DFEB3"
+    }
+  },
+  "displayName": "OneDrive Team Site",
+  "name": "1drvteam",
+  "createdDateTime": "2017-05-09T20:56:00Z",
+  "lastModifiedDateTime": "2017-05-09T20:56:01Z",
+  "webUrl": "https://contoso.sharepoint.com/teams/1drvteam"
 }
 ```
 

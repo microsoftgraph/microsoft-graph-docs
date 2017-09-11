@@ -1,9 +1,10 @@
-# Search for a DriveItem within a drive
+# Search for a DriveItems within a drive
 
 Search the hierarchy of items for items matching a query. 
 You can search within a folder hierarhcy, a whole drive, or files shared with the current user.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -13,20 +14,20 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```
-GET /me/drive/root/search(q='{search-text}')
-GET /me/drive/items/{item-id}/search(q='{search-text}')
-GET /me/drive/root:/{item-path}:/search(q='{search-text}')
 GET /drives/{drive-id}/root/search(q='{search-text}')
 GET /groups/{group-id}/drive/root/search(q='{search-text}')
+GET /me/drive/root/search(q='{search-text}')
+GET /sites/{site-id}/drive/root/search(q='{search-text}')
+GET /users/{user-id}/drive/root/search(q='{search-text}')
 ```
 
 ## Optional query parameters
-This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
-## Request body
-Do not supply a request body for this method.
+This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
 #### Function parameters
 
@@ -36,30 +37,26 @@ Do not supply a request body for this method.
 
 ## Example
 
-##### Request
+### Request
 
 Here is an example of the request searching the current user's OneDrive
-<!-- {
-  "blockType": "request",
-  "name": "item_search"
-}-->
+
+<!-- { "blockType": "request", "name": "item_search" }-->
+
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/root/search(q='{search-query}')
+GET /me/drive/root/search(q='{search-query}')
 ```
 
-##### Response
+### Response
+
 This method returns an object containing an collection of [DriveItems](../resources/driveitem.md) that match the search criteria.
 If no items were found, an empty collection is returned.
 
 If there are too many matches the response will be paged and an **@odata.nextLink** property will contain a URL to the next page of results.
 You can use the `$top` query parameter to specify the number of items in the page.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.driveItem",
-  "isCollection": true
-} -->
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.drveItem)", "truncated": true } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -88,26 +85,21 @@ Content-type: application/json
 In addition to searching for items within a drive, your app can search more broadly to include items shared with the current user.
 To broaden the search scope, use the **search** method on the [Drive](../resources/drive.md) resource.
 
-##### Request
+### Example
 
-<!-- {
-  "blockType": "request",
-  "name": "item_search_all"
-}-->
+<!-- { "blockType": "request", "name": "item_search_all" }-->
+
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/search(q='{search-query}')
+GET /me/drive/search(q='{search-query}')
 ```
 
-##### Response
+### Response
+
 Responses when searching from the **drive** resource may include items outside of the drive (items shared with the current user).
 These items will include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive. 
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.driveItem",
-  "isCollection": true
-} -->
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -132,15 +124,12 @@ Content-type: application/json
 }
 ```
 
-
-
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "item: search",
-  "keywords": "",
+  "description": "Search for a file across a OneDrive.",
+  "keywords": "search,query,bing,filename,content",
   "section": "documentation",
-  "tocPath": "OneDrive/Items/Search items"
+  "tocPath": "OneDrive/DriveItems/Search"
 }-->

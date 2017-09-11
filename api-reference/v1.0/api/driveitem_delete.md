@@ -16,31 +16,27 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```
-DELETE /me/drive/items/{item-id}
-DELETE /me/drive/root:/{item-path}
 DELETE /drives/{drive-id}/items/{item-id}
 DELETE /groups/{group-id}/drive/items/{item-id}
+DELETE /me/drive/items/{item-id}
+DELETE /sites/{siteId}/drive/items/{itemId}
+DELETE /users/{userId}/drive/items/{itemId}
 ```
 
-## Request headers
+## Optional request headers
 
 | Name          | Type   | Description                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
-## Request body
-Do not supply a request body for this method.
-
 ## Example
 
 Here is an example of how to call this API.
 
-<!-- {
-  "blockType": "request",
-  "name": "delete-item"
-}-->
+<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
+
 ```
-DELETE https://graph.microsoft.com/v1.0/me/drive/items/{item-id}
+DELETE /me/drive/items/{item-id}
 ```
 
 ## Response
@@ -48,6 +44,7 @@ DELETE https://graph.microsoft.com/v1.0/me/drive/items/{item-id}
 If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
 
 <!-- { "blockType": "response" } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -56,7 +53,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete item",
+  "description": "Delete a DriveItem from a drive",
   "keywords": "",
   "section": "documentation",
   "tocPath": "OneDrive/Item/Delete item"

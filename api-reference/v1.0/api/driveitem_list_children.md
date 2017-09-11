@@ -15,49 +15,62 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 ## HTTP request
+
+<!-- { "blockType": "ignored" } -->
+
 ```http
-GET /me/drive/root/children
-GET /me/drive/items/{item-id}/children
-GET /me/drive/root:/{item-path}:/children
 GET /drives/{drive-id}/items/{item-id}/children
-GET /groups/{group-id}/drive/root/children
-GET /groups/{group-id}/drive/items/{item-id}
+GET /groups/{group-id}/drive/items/{item-id}/children
+GET /me/drive/items/{item-id}/children
+GET /sites/{site-id}/drive/items/{item-id}/children
+GET /users/{user-id}/drive/items/{item-id}/children
 ```
 
 ## Optional query parameters
+
 This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
-## Request headers
+### Optional request headers
 
-| Name          | Type   | Description                                                                                                                                              |
-|:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
+| Header name     | Value | Description                                                                                                                                              |
+|:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _if-none-match_ | etag  | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
-## Request body
-Do not supply a request body for this method.
+## Examples
 
-## Example
+### List children in the root of the current user's drive
 
-##### Request
-Here is an example request to return the DriveItems in the root folder of the current user's OneDrive.
+To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.
 
-<!-- {
-  "blockType": "request",
-  "name": "get_children"
-}-->
+<!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/root/children
+GET /me/drive/root/children
+```
+
+
+### List children of a DriveItem with a known ID
+
+To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.
+
+<!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
+```http
+GET /drives/{drive-id}/items/{item-id}/children
+```
+
+### List children of a DriveItem with a known path
+
+<!-- { "blockType": "request", "name": "list-children-from-path", "scopes": "files.read" } -->
+```http
+GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ```
 
 ## Response
 
-Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.driveItem",
-  "isCollection": true
-} -->
+If successful, this method returns the list of items in the children collection of the target item.
+The children collection will be composed of [driveItem][item-resource] resources.
+
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -76,6 +89,8 @@ Content-type: application/json
 **Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
 
 You can control the page size through [optional query string parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)
+
+[item-resource]: ../resources/driveitem.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

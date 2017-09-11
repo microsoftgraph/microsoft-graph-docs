@@ -13,17 +13,35 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-POST /me/drive/items/{item-id}/invite
-POST /drive/items/{item-id}/invite
 POST /drives/{drive-id}/items/{item-id}/invite
 POST /groups/{group-id}/drive/items/{item-id}/invite
+POST /me/drive/items/{item-id}/invite
+POST /me/drive/root/{item-path}/invite
+POST /sites/{siteId}/drive/items/{itemId}/invite
+POST /users/{userId}/drive/items/{itemId}/invite
 ```
 
-## Request body
+### Request body
+
 In the request body, provide a JSON object with the following parameters.
 
+<!-- { "blockType": "resource", "@odata.type": "oneDrive.inviteParameters", "scopes": "files.readwrite" } -->
+```json
+{
+  "requireSignIn": false,
+  "sendInvitation": false,
+  "roles": [ "read | write"],
+  "recipients": [
+    { "@odata.type": "oneDrive.recipients" },
+    { "@odata.type": "oneDrive.recipients" }
+  ],
+  "message": "string"
+}
+```
 | Parameter        | Type                                            | Description                                                                                                |
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | A collection of recipients who will receive access and the sharing invitation.                                            |
@@ -32,22 +50,18 @@ In the request body, provide a JSON object with the following parameters.
 | sendInvitation   | Boolean                                         | Specifies if an email or post is generated (false) or if the permission is just created (true).            |
 | roles            | Collection(String)                              | Specify the roles that are be granted to the recipients of the sharing invitation.                         |
 
-## Response
+## Example
+
+This example sends a sharing invitation to a user with email address "ryan@contoso.org" with a message about a file being collaborated on.
+The invitation grants Ryan read-write access to the file.
+
+### HTTP Request
 
 If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.
 
-## Example
-Here is an example of how to call this API.
-
-##### Request
-Here is an example of the request.
-
-<!-- {
-  "blockType": "request",
-  "name": "item_invite"
-}-->
+<!-- { "blockType": "request", "name": "send-sharing-invite", "@odata.type": "oneDrive.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/items/{item-id}/invite
+POST /me/drive/items/{item-id}/invite
 Content-type: application/json
 
 {
@@ -63,14 +77,12 @@ Content-type: application/json
 }
 ```
 
-##### Response
+### Response
+
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permission",
-  "isCollection": true
-} -->
+
+<!-- { "blockType": "response", "@odata.type": "Collection(oneDrive.permission)", "truncated": true } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -105,8 +117,8 @@ Content-type: application/json
 
 <!-- {
   "type": "#page.annotation",
-  "description": "item: invite",
-  "keywords": "",
+  "description": "Add permissions to an item and optionally send a sharing notification.",
+  "keywords": "retrieve,item,metadata",
   "section": "documentation",
   "tocPath": ""
 }-->

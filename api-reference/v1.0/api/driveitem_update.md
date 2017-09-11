@@ -14,22 +14,27 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-PATCH /me/drive/items/{item-id}
-PATCH /me/drive/root:/{item-path}
 PATCH /drives/{drive-id}/items/{item-id}
 PATCH /groups/{group-id}/drive/items/{item-id}
+PATCH /me/drive/items/{item-id}
+PATCH /sites/{site-id}/drive/items/{item-id}
+PATCH /users/{user-id}/drive/items/{item-id}
 ```
 
-## Request headers
+## Optional request headers
 
 | Name          | Type   | Description                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
 
 ## Request body
+
 In the request body, supply the values for properties that should be updated.
+
 Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 For best performance your app should not include properties that haven't changed.
 
@@ -38,12 +43,11 @@ For best performance your app should not include properties that haven't changed
 If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
-This example renames the driveItem.
 
-<!-- {
-  "blockType": "request",
-  "name": "update_item"
-}-->
+This example renames the DriveItem resource to "new-file-name.docx".
+
+<!-- { "blockType": "request", "name": "update-item" } -->
+
 ```http
 PATCH /me/drive/items/{item-id}
 Content-type: application/json
@@ -53,15 +57,12 @@ Content-type: application/json
 }
 ```
 
-##### Response
+### Response
 
-The following example shows the response. This response is truncated for readability.
+If successful, this method returns an [driveItem][item-resource] resource in the response body.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.driveItem"
-} -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -77,8 +78,8 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update item",
-  "keywords": "",
+  "description": "Update or replace the contents or properties of an item.",
+  "keywords": "update,replace,contents,item",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Update item"
-}-->
+  "tocPath": "OneDrive/DriveItems/Update"
+} -->

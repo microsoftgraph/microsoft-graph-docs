@@ -12,25 +12,33 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
+GET /drives/{drive-id}/items/{item-id}
+GET /drives/{drive-id}/root:/{item-path}
+GET /groups/{group-id}/drive/items/{item-id}
+GET /groups/{group-id}/drive/root:/{item-path}
 GET /me/drive/items/{item-id}
 GET /me/drive/root:/{item-path}
-GET /drives/{drive-id}/items/{item-id}
-GET /groups/{group-id}/drive/items/{item-id}
+GET /sites/{siteId}/drive/items/{itemId}
+GET /sites/{siteId}/drive/root:/{item-path}
+GET /users/{userId}/drive/items/{itemId}
+GET /users/{userId}/drive/root:/{item-path}
 ```
 
 ## Optional query parameters
+
 This method supports the `$expand` and `$select` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
-## Request headers
+You can use the [`$expand` query string parameter](../../../concepts/query_parameters.md) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.
+
+## Optional request headers
 
 | Name          | Value  | Description                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
-
-## Request body
-Do not supply a request body for this method.
 
 ## Response
 
@@ -38,26 +46,22 @@ If successful, this method returns a `200 OK` response code and the [DriveItem](
 
 ## Example
 
-##### Request
+### Request
 
 Here is an example of the request to the root folder of the user's OneDrive.
 
-<!-- {
-  "blockType": "request",
-  "name": "get_item"
-}-->
-```
-GET https://graph.microsoft.com/v1.0//me/drive/root
+<!-- { "blockType": "request", "name": "get-item-metadata" }-->
+
+```http
+GET /me/drive/root
 ```
 
-##### Response
+## Response
+
 Here is an example of the response.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.driveItem"
-} -->
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -88,16 +92,12 @@ Content-type: application/json
 }
 ```
 
-## Notes
-
-You can use the [`$expand` query string parameter](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get item",
+  "description": "Get DriveItem",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Get item"
+  "tocPath": "OneDrive/DriveItems/Get item"
 }-->

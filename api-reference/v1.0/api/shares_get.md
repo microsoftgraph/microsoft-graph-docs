@@ -17,12 +17,33 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-GET /shares/{sharingIdOrUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
-## Request body
-Do not supply a request body for this method.
+### Path Parameters
+
+| Parameter Name        | Value    | Description                                                                         |
+|:----------------------|:---------|:------------------------------------------------------------------------------------|
+| **sharingTokenOrUrl** | `string` | Required. A sharing token as returned by the API or a properly encoded sharing URL. |
+
+### Encoding sharing URLs
+
+To encode a sharing URL, use the following logic:
+
+1. First, use base64 encode the URL.
+2. Convert the base64 encoded result to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by removing `=` characters
+   from the end of the value, replacing `/` with `_` and `+` with `-`.)
+3. Append `u!` to be beginning of the string.
+
+As an example, to encode a URL in C#:
+
+```csharp
+string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&authKey=1201919!12921!1";
+string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(sharingUrl));
+string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
+```
 
 ## Response
 
@@ -30,25 +51,21 @@ If successful, this method returns a `200 OK` response code and a [sharedDriveIt
 
 ## Example
 
-##### Request
+### Request
 
 Here is an example of the request to retrieve a shared item:
 
-<!-- {
-  "blockType": "request",
-  "name": "get_shares_by_url"
-}-->
+<!-- { "blockType": "request", "name": "get-shared-root" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
-##### Response
+
+### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.sharedDriveItem"
-} -->
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.sharedDriveItem" } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -61,6 +78,10 @@ Content-type: application/json
       "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
       "displayName": "Ryan Gregg"
     }
+  },
+  "remoteItem": { 
+    "driveId": "",
+    "id": ""
   }
 }
 ```
@@ -72,15 +93,19 @@ The **SharedDriveItem** resource includes a **root** and **items** relationships
 
 ## Example (single file)
 
-##### Request
+### Request
 
-By requesting the **root** relationship, the **DriveItem** that was shared will be returned.
+By requesting the **driveItem** relationship, the **DriveItem** that was shared will be returned.
+
+<!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root
+GET /shares/{shareIdOrUrl}/driveItem
 ```
 
-##### Response
+### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -97,15 +122,19 @@ Content-Type: application/json
 
 ## Example (shared folder)
 
-##### Request
+### Request
 
-By requesting the **root** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.
+By requesting the **driveItem** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.
+
+<!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root?$expand=children
+GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 
-##### Response
+### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -134,33 +163,13 @@ Content-Type: application/json
 }
 ```
 
-## Transform a sharing URL
-
-To access a sharing URL using the **shares** API, the URL needs to be transformed into a sharing token.
-
-To transform a URL into a sharing token:
-
-1. Base64 encode the sharing URL.
-2. Convert the base64 encoded data to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by:
-  1. Trim trailing `=` characters from the string
-  2. Replace unsafe URL characters with an equivalent character; replace `/` with `_` and `+` with `-`.
-3. Append `u!` to the beginning of the string.
-
-For example, the following C# method transforms an input string into a sharing token:
-
-```csharp
-string UrlToSharingToken(string inputUrl) {
-  var base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(inputUrl));
-  return "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
-}
-```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update permission",
-  "keywords": "",
+  "description": "Access the contents of a sharing link with the OneDrive API.",
+  "keywords": "shares,shared,sharing,share link, sharing link, share id, share token",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Update permission"
-}-->
+  "tocPath": "OneDrive/Sharing/Use a link"
+} -->

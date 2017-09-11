@@ -1,6 +1,8 @@
-# Update permission
+# Update sharing permission
 
-Update the properties of a permission by patching the resource.
+Update the properties of a sharing permission by patching the permission resource.
+
+Only the **roles** property can be modified this way.
 
 ## Permissions
 
@@ -15,21 +17,25 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-PATCH /me/drive/items/{item-id}/permissions/{perm-id}
-PATCH /me/drive/root:/{path}:/permissions/{perm-id}
 PATCH /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
+PATCH /me/drive/items/{item-id}/permissions/{perm-id}
+PATCH /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
+PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## Request headers
+## Optional request headers
 
 | Name          | Type   | Description                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
 ## Request body
+
 In the request body, supply the values for relevant fields that should be updated.
+
 Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 For best performance you shouldn't include existing values that haven't changed.
 
@@ -43,29 +49,25 @@ If successful, this method returns a `200 OK` response code and updated [permiss
 
 ## Example
 
-##### Request
+Here is an example of the request that changes the role on the sharing permission to read-only.
 
-Here is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "update_permission"
-}-->
+<!-- {"blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite"} -->
+
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions/{perm-id}
+PATCH /me/drive/items/{item-id}/permissions/{perm-id}
 Content-type: application/json
 
 {
   "roles": [ "read" ]
 }
 ```
-##### Response
 
-Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permission"
-} -->
+### Response
+
+If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the permission.
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -86,8 +88,8 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update permission",
-  "keywords": "",
+  "description": "Update an item's sharing permissions",
+  "keywords": "permission, permissions, sharing, change permissions, update permission",
   "section": "documentation",
   "tocPath": "OneDrive/Item/Update permission"
 }-->
