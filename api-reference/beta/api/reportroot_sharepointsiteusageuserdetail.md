@@ -100,6 +100,7 @@ Content-Length: 647
       "@odata.type": "#microsoft.graph.sharePointSiteUsageUserDetail", 
       "reportRefreshDate": "2017-09-01", 
       "siteUrl": "siteUrl-value", 
+      "ownerDisplayName": "ownerDisplayName-value", 
       "isDeleted": false, 
       "lastActivityDate": "2017-09-01", 
       "fileCount": 170, 
