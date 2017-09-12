@@ -10,5 +10,5 @@
 | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
 | [Get MailboxUsageUserDetail](../api/reportroot_mailboxusageuserdetail.md) | [mailboxUsageUserDetail](../api/reportroot_mailboxusageuserdetail.md#response) | Get a mailbox usage user detail report.  |
 | [Get MailboxUsageMailboxCounts](../api/reportroot_mailboxusagemailboxcounts.md) | [mailboxUsageMailboxCounts](../api/reportroot_mailboxusagemailboxcounts.md#response) | Get a mailbox usage mailbox counts report. |
-| [Get MailboxUsageQuotaMailboxStatusCounts](../api/reportroot_mailboxusagequotamailboxstatuscounts.md) | [mailboxUsageQuotaMailboxStatusCounts](../api/reportroot_mailboxusagequptamailboxstatuscounts.md#response) | Get a mailbox usage quota mailbox status counts report. |
+| [Get MailboxUsageQuotaMailboxStatusCounts](../api/reportroot_mailboxusagequotamailboxstatuscounts.md) | [mailboxUsageQuotaMailboxStatusCounts](../api/reportroot_mailboxusagequotamailboxstatuscounts.md#response) | Get a mailbox usage quota mailbox status counts report. |
 | [Get MailboxUsageStorage](../api/reportroot_mailboxusagestorage.md) | [mailboxUsageStorage](../api/reportroot_mailboxusagestorage.md#response) | Get a mailbox usage storage report.      |
