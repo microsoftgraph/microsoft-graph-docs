@@ -56,7 +56,7 @@ The **oneDriveUsageUserDetail** object has the following properties.
 | :--------------------- | :------ |
 | reportRefreshDate      | Date    |
 | siteUrl                | String  |
-| ownerPrincipalName     | String  |
+| ownerDisplayName       | String  |
 | isDeleted              | Boolean |
 | lastActivityDate       | Date    |
 | fileCount              | Int64   |
@@ -96,7 +96,7 @@ Content-Length: 532
       "@odata.type": "#microsoft.graph.oneDriveUsageUserDetail", 
       "reportRefreshDate": "2017-09-01", 
       "siteUrl": "siteUrl-value", 
-      "ownerPrincipalName": "ownerPrincipalName-value", 
+      "ownerDisplayName": "ownerDisplayName-value", 
       "isDeleted": false, 
       "lastActivityDate": "2017-09-01", 
       "fileCount": 9, 
