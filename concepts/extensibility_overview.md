@@ -60,13 +60,13 @@ be discoverable by other apps. These apps can in turn use the extension for thei
 
 When creating a schema extension definition, you must provide a unique name for its **id**. There are two naming options:
 
-- If you already have a vanity `.com` domain that you have verified with your tenant, you can use the domain name along with the schema name 
+- If you already have a vanity `.com`,`.net`, `.gov`, `.edu` or a `.org` domain that you have verified with your tenant, you can use the domain name along with the schema name 
 to define a unique name, in this format \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. For example, if your vanity domain is contoso.com then you can define 
 an **id** of, `contoso_mySchema`.  This is the preferred option.
-- If you don’t have a verified vanity domain, you can just set the **id** to a schema name (without a domain name prefix), for example, `mySchema`. 
+- If you don’t have a verified vanity domain, you can just set the **id** to a schema name (without a domain name prefix), for example, `mySchema`.
 Microsoft Graph will assign a string ID for you based on the supplied name, in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}.  For example, `extkvbmkofy_mySchema`.
 
-You will see this unique name in **id** used as the name of the complex type which will store your custom data on the extended resource instance. 
+You will see this unique name in **id** used as the name of the complex type which will store your custom data on the extended resource instance.
 
 Unlike open extensions, managing schema extension definitions ([list](../api-reference/v1.0/api/schemaextension_list.md), [create](../api-reference/v1.0/api/schemaextension_post_schemaextensions.md), 
 [get](../api-reference/v1.0/api/schemaextension_get.md), [update](../api-reference/v1.0/api/schemaextension_update.md), and [delete](../api-reference/v1.0/api/schemaextension_delete.md)) 
