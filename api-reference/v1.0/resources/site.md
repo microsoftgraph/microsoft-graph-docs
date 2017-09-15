@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Site resource
 
 The **site** resource provides metadata and relationships for a SharePoint site.
@@ -6,17 +11,19 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 All examples below are relative to `https://graph.microsoft.com/v1.0`.
 
-| Task name            | Example Request                                   |
-| :------------------- | :------------------------------------------------ |
-| [Get root site][]    | GET /sites/root                                   |
-| [Get site][]         | GET /sites/{site-id}                              |
-| [Get site by path][] | GET /sites/{hostname}:/{site-path}                |
-| [Get site for a group][] | GET /groups/{group-id}/sites/root             |
+| Task name                | Example Request
+|:-------------------------|:--------------------------------------------------
+| [Get root site][]        | GET /sites/root
+| [Get site][]             | GET /sites/{site-id}
+| [Get site by path][]     | GET /sites/{hostname}:/{site-path}
+| [Get site for a group][] | GET /groups/{group-id}/sites/root
+| [Search for sites][]     | GET /sites?search={query}
 
 [Get site]: ../api/site_get.md
 [Get root site]: ../api/site_get.md
-[Get site by path]: ../api/site_get.md
+[Get site by path]: ../api/site_getbypath.md
 [Get site for a group]: ../api/site_get.md
+[Search for sites]: ../api/site_search.md
 
 ## JSON representation
 
@@ -38,6 +45,7 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
   "displayName": "string",
 
   /* relationships */
+  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
@@ -71,15 +79,17 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
 
 ## Relationships
 
-| Relationship name | Type                     | Description
-|:------------------|:-------------------------|:----------------------------------
-| **drive**         | [drive][]                | The default drive (document library) for this site.
-| **drives**        | Collection([drive][])    | The collection of drives (document libraries) under this site.
-| **items**         | Collection([baseItem][]) | Used to address any item contained in this site. This collection cannot be enumerated.
-| **sites**         | Collection([site][])     | The collection of the sub-sites under this site.
-| **onenote**       | [onenote][]              | Calls the OneNote service for notebook related operations.
+| Relationship name | Type                        | Description
+|:------------------|:----------------------------|:---------------------------
+| **contentTypes**  | Collection([contentType][]) | The collection of content types defined for this site.
+| **drive**         | [drive][]                   | The default drive (document library) for this site.
+| **drives**        | Collection([drive][])       | The collection of drives (document libraries) under this site.
+| **items**         | Collection([baseItem][])    | Used to address any item contained in this site. This collection cannot be enumerated.
+| **sites**         | Collection([site][])        | The collection of the sub-sites under this site.
+| **onenote**       | [onenote][]                 | Calls the OneNote service for notebook related operations.
 
 [baseItem]: baseitem.md
+[contentType]: contentType.md
 [drive]: drive.md
 [identitySet]: identityset.md
 [site]: site.md
@@ -90,8 +100,6 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/Site",
-  "tocBookmarks": {
-    "Site": "#"
-  }
+  "tocPath": "Sites",
+  "tocBookmarks": { "Resources/Site": "#" }
 } -->

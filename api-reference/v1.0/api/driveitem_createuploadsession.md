@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Upload large files with an upload session
 
 Create an upload session to allow your app to upload files up to the maximum file size.
@@ -10,7 +15,7 @@ To upload a file using an upload session, there are two steps:
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -62,6 +67,7 @@ For example, to control the behavior if the filename is already taken, you can s
 The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
 
 <!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
+
 ```http
 POST /drive/root:/{item-path}:/createUploadSession
 Content-Type: application/json
@@ -75,6 +81,7 @@ Content-Type: application/json
 ```
 
 ### Response
+
 The response to this request, if successful, will provide the details for where the remainder of the requests should be sent as an [UploadSession](../resources/uploadSession.md) resource.
 
 This resource provides details about where the byte range of the file should be uploaded and when the upload session expires.
@@ -113,7 +120,7 @@ In this example, the app is uploading the first 26 bytes of a 128 byte file.
 
 <!-- { "blockType": "request", "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
 
-```
+```http
 PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 Content-Length: 26
 Content-Range: bytes 0-25/128
@@ -124,7 +131,7 @@ Content-Range: bytes 0-25/128
 **Important:** Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests.
 If a byte range declares a different file size, the request will fail.
 
-##### Response
+### Response
 
 When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.
 
@@ -163,7 +170,7 @@ Content-Type: application/json
 }
 ```
 
-**Notes:**
+## Remarks
 
 * The `nextExpectedRanges` property won't always list all of the missing ranges.
 * On successful fragment writes, it will return the next range to start from (eg. "523-").
@@ -199,6 +206,7 @@ Content-Type: application/json
   "file": { }
 }
 ```
+
 ## Handling upload conflicts
 
 If a conflict occurs after the file is uploaded (for example, an item with the same name was created during the upload session), an error is returned when the last byte range is uploaded.
@@ -252,6 +260,7 @@ If this occurs, your app can still resume the file transfer from the previously 
 To find out which byte ranges have been received previously, your app can request the status of an upload session.
 
 ### Example
+
 Query the status of the upload by sending a GET request to the `uploadUrl`.
 
 <!-- { "blockType": "request", "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
@@ -320,10 +329,17 @@ If the file can be committed using the new metadata, an `HTTP 201 Created` or `H
 * A byte range size of 10 MiB for stable high speed connections is optimal. For slower or less reliable connections you may get better results from a smaller fragment size. The recommended fragment size is between 5-10 MiB.
 * Use a byte range size that is a multiple of 320 KiB (327,680 bytes). Failing to use a fragment size that is a multiple of 320 KiB can result in large file transfers failing after the last byte range is uploaded.
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+## Error responses
+
+See the [Error Responses][error-response] topic for details about
+how errors are returned.
+
+[error-response]: ../concepts/errors.md
+[item-resource]: ../resources/driveitem.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Upload large files using an upload session.",
-  "keywords": "upload,large file,fragment,BITS"
+  "keywords": "upload,large file,fragment,BITS",
+  "section": "documentation"
 } -->

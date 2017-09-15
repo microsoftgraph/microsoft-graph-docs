@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # List recent files
 
 List a set of items that have been recently used by the signed in user.
@@ -5,7 +10,7 @@ This collection includes items that are in the user's drive as well as items the
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -88,5 +93,5 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   "description": "Retrieve a list of recently used files for the owner of the drive.",
   "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
-  "tocPath": "OneDrive/Drives/Recent files"
+  "tocPath": "Drives/Recent files"
 } -->

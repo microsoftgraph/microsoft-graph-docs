@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Drive resource type
 
 The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.
@@ -13,7 +18,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [ "items", "root", "special", "owner", "description" ],
+  "optionalProperties": [ "items", "root", "special", "owner", "description", "system" ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.drive"
 }-->
@@ -25,7 +30,8 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
   "owner": {"@odata.type": "microsoft.graph.identitySet"},
   "quota": {"@odata.type": "microsoft.graph.quota"},
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-
+  "system": { "@odata.type": "microsoft.graph.systemFacet" },
+  
   /* relationships */
   "root": {"@odata.type": "microsoft.graph.driveItem" },
   "items": [ {"@odata.type": "microsoft.graph.driveItem" }],
@@ -56,10 +62,12 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | owner                | [identitySet](identityset.md) | Optional. The user account that owns the drive. Read-only.                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | Optional. Information about the drive's storage space quota. Read-only.                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | Returns identifiers useful for SharePoint REST compatibility. Read-only.                                                                                                                                                         |
+| system               | [systemFacet][]               | If present, indicates that this is a system-managed drive. Read-only.
 | webUrl               | string (url)                  | URL that displays the resource in the browser. Read-only.                                                                                                                                                                        |
 
 [identitySet]: identityset.md
 [sharepointIds]: sharepointids.md
+[systemFacet]: systemFacet.md
 
 ## Relationships
 
@@ -86,8 +94,9 @@ The following methods are available for drive resources.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "drive resource",
-  "keywords": "",
+  "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
+  "keywords": "drive,objects,resources",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive"
-}-->
+  "tocPath": "Drives",
+  "tocBookmarks": { "Resources/Drive": "#" }
+} -->

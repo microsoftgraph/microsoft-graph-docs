@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Get sharing permission
 
 Return the effective sharing permission for a particular permission resource.
@@ -11,7 +16,7 @@ SharePoint permission levels set on an item are returned with an 'SP' prefix. Fo
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -33,7 +38,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## Optional query parameters
 
-This method support the [$select query parameter][odata-query-parameters] to shape the response.
+This method support the [$select query parameter](../concepts/optional-query-parameters.md) to shape the response.
 
 ## Response
 
@@ -55,8 +60,8 @@ GET /me/drive/items/{item-id}/permissions/{perm-id}
 
 If successful, this method returns a [Permission](../resources/permission.md) resource for the specified ID. 
 
+<!-- {"blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true} -->
 
-<!-- {"blockType": "response", "@odata.type": "oneDrive.permission", "truncated": true} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -82,12 +87,17 @@ Sharing links contain a unique token that provides access to the item for anyone
 
 Permissions with a [**invitation**](../resources/sharinginvitation.md) facet represent permissions added by inviting specific users or groups to have access to the file.
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### Error responses
+
+Read the [Error Responses][error-response] topic for more information about
+how errors are returned.
+
+[error-response]: ../concepts/errors.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get a DriveItem's sharing permissions",
   "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Get permission"
-}-->
+  "tocPath": "Sharing/Permissions"
+} -->

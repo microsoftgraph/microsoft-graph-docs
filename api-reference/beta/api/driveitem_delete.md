@@ -1,12 +1,16 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Delete a DriveItem
-
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Delete a [DriveItem](../resources/driveitem.md) by using its ID or path.
 Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -17,32 +21,29 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-```
-DELETE /me/drive/items/{item-id}
-DELETE /me/drive/root:/{item-path}
+
+```http
 DELETE /drives/{drive-id}/items/{item-id}
 DELETE /groups/{group-id}/drive/items/{item-id}
+DELETE /me/drive/items/{item-id}
+DELETE /sites/{siteId}/drive/items/{itemId}
+DELETE /users/{userId}/drive/items/{itemId}
 ```
 
-## Request headers
+## Optional request headers
 
 | Name          | Type   | Description                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
-## Request body
-Do not supply a request body for this method.
-
 ## Example
 
 Here is an example of how to call this API.
 
-<!-- {
-  "blockType": "request",
-  "name": "delete-item"
-}-->
-```
-DELETE https://graph.microsoft.com/beta/me/drive/items/{item-id}
+<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
+
+```http
+DELETE /me/drive/items/{item-id}
 ```
 
 ## Response
@@ -50,16 +51,22 @@ DELETE https://graph.microsoft.com/beta/me/drive/items/{item-id}
 If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
 
 <!-- { "blockType": "response" } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### Error responses
+
+See [Error Responses][error-response] for more info about
+how errors are returned.
+
+[error-response]: ../concepts/errors.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete item",
-  "keywords": "",
+  "description": "Delete a DriveItem from a drive",
+  "keywords": "delete,existing item,onedrive",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Delete item"
-}-->
+  "tocPath": "Items/Delete"
+} -->

@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # List children of a driveItem
 
 Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.
@@ -6,7 +11,8 @@ DriveItems with a non-null **folder** or **package** facet can have one or more 
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -28,7 +34,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ## Optional query parameters
 
-This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](../concepts/optional-query-parameters.md) to customize the response.
 
 ### Optional request headers
 
@@ -43,6 +49,7 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderb
 To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.
 
 <!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read" } -->
+
 ```http
 GET /me/drive/root/children
 ```
@@ -53,6 +60,7 @@ GET /me/drive/root/children
 To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.
 
 <!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
+
 ```http
 GET /drives/{drive-id}/items/{item-id}/children
 ```
@@ -60,6 +68,7 @@ GET /drives/{drive-id}/items/{item-id}/children
 ### List children of a DriveItem with a known path
 
 <!-- { "blockType": "request", "name": "list-children-from-path", "scopes": "files.read" } -->
+
 ```http
 GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ```
@@ -90,14 +99,18 @@ Content-type: application/json
 
 You can control the page size through [optional query string parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)
 
+### Error responses
+
+See [Error Responses][error-response] for more info about
+how errors are returned.
+
+[error-response]: ../concepts/errors.md
 [item-resource]: ../resources/driveitem.md
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List the children of an item.",
   "keywords": "list,children,collection",
   "section": "documentation",
-  "tocPath": "OneDrive/DriveItem/List children"
+  "tocPath": "Items/List children"
 } -->

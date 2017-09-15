@@ -1,9 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Create a new folder in a drive
 
 Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -91,13 +97,18 @@ Content-Type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+## Error response
+
+Read the [Error Responses][error-response] topic for more info about
+how errors are returned.
+[error-response]: ../concepts/errors.md
+[item-resource]: ../resources/driveitem.md
+[folder-facet]: ../resources/folder.md
 
 <!-- {
   "type": "#page.annotation",
   "description": "Create a folder item in a drive.",
   "keywords": "create,folder,new item",
   "section": "documentation",
-  "tocPath": "OneDrive/DriveItems/Create folder"
+  "tocPath": "Items/Create folder"
 } -->

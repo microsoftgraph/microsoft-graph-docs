@@ -1,10 +1,16 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Send a sharing invitation
 
 Sends a sharing invitation for a **DriveItem**.
 A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -20,28 +26,29 @@ One of the following permissions is required to call this API. To learn more, in
 POST /drives/{drive-id}/items/{item-id}/invite
 POST /groups/{group-id}/drive/items/{item-id}/invite
 POST /me/drive/items/{item-id}/invite
-POST /me/drive/root/{item-path}/invite
 POST /sites/{siteId}/drive/items/{itemId}/invite
 POST /users/{userId}/drive/items/{itemId}/invite
 ```
 
-### Request body
+## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-<!-- { "blockType": "resource", "@odata.type": "oneDrive.inviteParameters", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite" } -->
+
 ```json
 {
   "requireSignIn": false,
   "sendInvitation": false,
   "roles": [ "read | write"],
   "recipients": [
-    { "@odata.type": "oneDrive.recipients" },
-    { "@odata.type": "oneDrive.recipients" }
+    { "@odata.type": "microsoft.graph.driveRecipient" },
+    { "@odata.type": "microsoft.graph.driveRecipient" }
   ],
   "message": "string"
 }
 ```
+
 | Parameter        | Type                                            | Description                                                                                                |
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | A collection of recipients who will receive access and the sharing invitation.                                            |
@@ -59,7 +66,8 @@ The invitation grants Ryan read-write access to the file.
 
 If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.
 
-<!-- { "blockType": "request", "name": "send-sharing-invite", "@odata.type": "oneDrive.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "send-sharing-invite", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
+
 ```http
 POST /me/drive/items/{item-id}/invite
 Content-type: application/json
@@ -81,7 +89,7 @@ Content-type: application/json
 
 Here is an example of the response.
 
-<!-- { "blockType": "response", "@odata.type": "Collection(oneDrive.permission)", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -109,16 +117,21 @@ Content-type: application/json
 
 ## Remarks
 
-* [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem. 
+* [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive personal) cannot create or modify permissions on the root DriveItem.
 * For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+## Error Responses
+
+Read the [Error Responses][error-response] topic for more information about
+how errors are returned.
+
+
+[error-response]: ../concepts/errors.md
 
 <!-- {
   "type": "#page.annotation",
   "description": "Add permissions to an item and optionally send a sharing notification.",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Sharing/Add permissions"
+} -->

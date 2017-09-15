@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Get a site resource
 
 Retrieve properties and relationships for a [site][] resource.
@@ -8,8 +13,8 @@ A **site** resource represents a team site in SharePoint.
 A **site** is addressed be a unique identifier which is a composite ID of the following values:
 
 * Site collection hostname (contoso.sharepoint.com)
-* Site collection unique ID (guid)
-* Site unique ID (guid)
+* Site collection unique ID (GUID)
+* Site unique ID (GUID)
 
 There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:
 
@@ -18,7 +23,7 @@ There is also a reserved site identifier, `root`, which always references the ro
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -47,7 +52,7 @@ GET /sites/{hostname}:/{server-relative-path}
 
 ## Access a group team site
 
-To access the team site for a [group](../resources/group.md):
+To access the team site for a group:
 
 ```http
 GET /groups/{group-id}/sites/root
@@ -92,5 +97,5 @@ Content-type: application/json
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Site/Get site by ID"
+  "tocPath": "Sites/Get by ID"
 } -->

@@ -1,9 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Download the contents of a DriveItem
 
 Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the **file** property can be downloaded.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -42,6 +48,7 @@ GET /me/drive/items/{item-id}/content
 ```
 
 ### Response
+
 Returns a `302 Found` response redirecting to a pre-authenticated download URL for the file.
 This is the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.
 
@@ -73,6 +80,7 @@ This will return an `HTTP 206 Partial Content` response with the request range o
 If the range cannot be generated the Range header may be ignored and an `HTTP 200` response would be returned with the full contents of the file.
 
 <!-- { "blockType": "response", "name": "download-item-partial", "@odata.type": "stream" } -->
+
 ```http
 HTTP/1.1 206 Partial Content
 Content-Range: bytes 0-1023/2048
@@ -80,12 +88,17 @@ Content-Range: bytes 0-1023/2048
 <first 1024 bytes of file>
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### Error responses
+
+See [Error Responses][error-response] for more info about
+how errors are returned.
+
+[error-response]: ../concepts/errors.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Download the contents of a DriveItem.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "OneDrive/DriveItem/Download"
-}-->
+  "tocPath": "Items/Download"
+} -->

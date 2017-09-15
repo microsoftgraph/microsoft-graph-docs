@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Update DriveItem properties
 
 Update the metadata for a [DriveItem](../resources/driveitem.md) by ID or path.
@@ -5,7 +10,8 @@ Update the metadata for a [DriveItem](../resources/driveitem.md) by ID or path.
 You can also use update to [move an item](driveitem_move.md) to another parent by updating the item's **parentReference** property.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -53,7 +59,7 @@ PATCH /me/drive/items/{item-id}
 Content-type: application/json
 
 {
-	"name": "new-file-name.docx"
+  "name": "new-file-name.docx"
 }
 ```
 
@@ -68,18 +74,23 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-	"id": "01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK",
-	"name": "new-file-name.docx",
-	"file": { }
+  "id": "01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK",
+  "name": "new-file-name.docx",
+  "file": { }
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+## Error responses
+
+See [Error Responses][error-response] for details about how errors are returned.
+
+[error-response]: ../concepts/errors.md
+[item-resource]: ../resources/driveitem.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update or replace the contents or properties of an item.",
   "keywords": "update,replace,contents,item",
   "section": "documentation",
-  "tocPath": "OneDrive/DriveItems/Update"
+  "tocPath": "Items/Update"
 } -->

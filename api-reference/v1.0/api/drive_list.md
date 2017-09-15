@@ -1,10 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # List available drives
 
-Retrieve the list of [Drive](../resources/drive.md) resources available for a target [User](../resources/user.md), [Group](../resources/group.md),  or [Site](../resources/site.md).
+Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -52,7 +57,7 @@ GET /me/drives
 
 ## Optional query parameters
 
-This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../concepts/optional-query-parameters.md) to customize the response.
 
 
 ## Response
@@ -101,12 +106,11 @@ Most users will only have a single Drive resource.
 
 Groups and Sites may have multiple Drive resources available.
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List the available drives for a user, group, or site.",
   "keywords": "drive,onedrive.drive,list drives",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/List Drives"
-}-->
+  "tocPath": "Drives/List drives"
+} -->

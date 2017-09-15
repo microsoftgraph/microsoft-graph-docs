@@ -1,10 +1,5 @@
 # Working with SharePoint sites in Microsoft Graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
->**Note:** this functionality is an early developer preview and is only available through the Microsoft Graph API **beta** endpoint.
-The API design is likely to change as we incorporate feedback from developers.
-
 The SharePoint API in Microsoft Graph supports the following core scenarios:
 
 * Access to SharePoint **sites**, **lists**, and **drives** (document libraries)
@@ -69,14 +64,14 @@ The following examples are relative to `https://graph.microsoft.com/beta`.
 
 | Path                                   | Description
 |:---------------------------------------|:------------------------------------
-| /sites/root                            | Organization's default [site](site.md).
-| /sites/{site-id}                       | Access a specific [site](site.md) by its ID.
-| /sites/{site-id}/drive                 | Access the default [drive](drive.md) (document library) for the given [site](site.md).
-| /sites/{site-id}/drives                | Enumerate the [drives](drive.md) (document libraries) under the [site](site.md).
-| /sites/{site-id}/sites                 | Enumerate the sub-sites under the [site](site.md).
+| /sites/root                            | Organization's default [site][].
+| /sites/{site-id}                       | Access a specific [site][] by its ID.
+| /sites/{site-id}/drive                 | Access the default [drive](drive.md) (document library) for the given [site][].
+| /sites/{site-id}/drives                | Enumerate the [drives](drive.md) (document libraries) under the [site][].
+| /sites/{site-id}/sites                 | Enumerate the sub-sites under the [site][].
 | /sites/{site-id}/lists                 | Enumerate the [lists](list.md) under the [site](site.md).
 | /sites/{site-id}/lists/{list-id}/items | Enumerate the [listItems](listitem.md) under the [list](list.md).
-| /groups/{group-id}/sites/root          | Access a group's team [site](site.md)
+| /groups/{group-id}/sites/root          | Access a group's team [site][].
 
 Sites can also be addressed by path by using the SharePoint hostname, followed by a colon and the relative path to the site.
 You can optionally transition back to addressing the resource model by putting another colon at the end.
@@ -89,8 +84,8 @@ You can optionally transition back to addressing the resource model by putting a
 ## Note for existing SharePoint developers
 
 The Microsoft Graph SharePoint API has a few key differences with the CSOM APIs.
-The [site](site.md) resource maps to `SPWeb`.
-The root [site](site.md) (`SPWeb`) in a site collection has a [siteCollection](sitecollection.md) facet, which contains information about the `SPSite`.
+The [site][] resource maps to `SPWeb`.
+The root [site][] (`SPWeb`) in a site collection has a [siteCollection](sitecollection.md) facet, which contains information about the `SPSite`.
 Because IDs for sites are only unique within their site collection, addressing a site by ID requires providing both the site collection identifier and the site identifier.
 
 ```http

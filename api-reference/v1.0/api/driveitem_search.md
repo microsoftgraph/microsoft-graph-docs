@@ -1,11 +1,16 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Search for a DriveItems within a drive
 
-Search the hierarchy of items for items matching a query. 
-You can search within a folder hierarhcy, a whole drive, or files shared with the current user.
+Search the hierarchy of items for items matching a query.
+You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -17,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 
-```
+```http
 GET /drives/{drive-id}/root/search(q='{search-text}')
 GET /groups/{group-id}/drive/root/search(q='{search-text}')
 GET /me/drive/root/search(q='{search-text}')
@@ -27,9 +32,9 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 ## Optional query parameters
 
-This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../concepts/optional-query-parameters.md) to customize the response.
 
-#### Function parameters
+## Function parameters
 
 | Name | Value  | Description                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
@@ -55,7 +60,7 @@ If no items were found, an empty collection is returned.
 If there are too many matches the response will be paged and an **@odata.nextLink** property will contain a URL to the next page of results.
 You can use the `$top` query parameter to specify the number of items in the page.
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.drveItem)", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -124,12 +129,19 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+## Error responses
+
+See [Error Responses][error-response] for more information about
+how errors are returned.
+
+[error-response]: ../concepts/errors.md
+[item-resource]: ../resources/driveitem.md
+[odata-query-parameters]: ../concepts/optional-query-parameters.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Search for a file across a OneDrive.",
   "keywords": "search,query,bing,filename,content",
   "section": "documentation",
-  "tocPath": "OneDrive/DriveItems/Search"
-}-->
+  "tocPath": "Items/Search"
+} -->

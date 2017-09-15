@@ -1,11 +1,17 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Get Drive
 
-Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource. 
+Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.
+
 A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -29,16 +35,15 @@ GET /me/drive
 
 ## Get a user's OneDrive
 
-To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the [User](../resources/user.md) resource.
+To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the User resource.
 
 If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.
 
 ### HTTP request
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
 
 ```http
-GET /me/drive
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
@@ -50,7 +55,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 ## Get the document library associated with a group
 
-To access a [Group's](../resources/group.md) default document library, your app requests the **drive** relationship on the Group.
+To access a Group's default document library, your app requests the **drive** relationship on the Group.
 
 ### HTTP request
 
@@ -132,12 +137,17 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### Error response codes
+
+If the drive does not exist and cannot be provisioned automatically (when using delegated authentication) an `HTTP 404` response will be returned.
+
+[drive-resource]: ../resources/drive.md
+[odata-query-parameters]: ../concepts/optional-query-parameters.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Get Drive"
-}-->
+  "tocPath": "Drives/Get drive"
+} -->

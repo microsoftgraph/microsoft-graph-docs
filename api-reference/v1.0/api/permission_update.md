@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Update sharing permission
 
 Update the properties of a sharing permission by patching the permission resource.
@@ -6,7 +11,7 @@ Only the **roles** property can be modified this way.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -84,12 +89,17 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+## Error responses
+
+Read the [Error Responses][error-response] topic for more information about
+how errors are returned.
+
+[error-response]: ../concepts/errors.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update an item's sharing permissions",
   "keywords": "permission, permissions, sharing, change permissions, update permission",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Update permission"
-}-->
+  "tocPath": "Sharing/Update permission"
+} -->

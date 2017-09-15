@@ -1,8 +1,13 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Permission resource type
 
-The **Permission** resource provides information about a permission granted for a [DriveItem](driveitem.md) resource.
+The **Permission** resource provides information about a sharing permission granted for a [DriveItem](driveitem.md) resource.
 
-Permissions have a number of different forms.
+Sharing permissions have a number of different forms.
 The **Permission** resource represents these different forms through facets on the resource.
 
 ## JSON representation
@@ -60,13 +65,13 @@ Permissions with an [**invitation**][SharingInvitation] facet represent permissi
 
 ## Methods
 
-| Method                                              | REST Path
-|:----------------------------------------------------|:-----------------------
+| Method                                                   | REST Path
+|:---------------------------------------------------------|:-----------------------
 | [List permissions](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Get permission](../api/permission_get.md)          | `GET /drive/items/{item-id}/permissions/{id}`
+| [Get permission](../api/permission_get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
 | [Add](../api/driveitem_invite.md)                        | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission_update.md)               | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [Delete](../api/permission_delete.md)               | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [Update](../api/permission_update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Delete](../api/permission_delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 ## Remarks
@@ -77,8 +82,8 @@ OneDrive for Business and SharePoint document libraries do not return the **inhe
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "permission resource",
-  "keywords": "",
+  "description": "The permission object provides information about permissions and roles and sharing information.",
+  "keywords": "sharing,permissions,read,write,acl",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Permission"
+} -->

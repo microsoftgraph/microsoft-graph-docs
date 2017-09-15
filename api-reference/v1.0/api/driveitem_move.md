@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Move a DriveItem to a new folder
 
 To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
@@ -8,7 +13,7 @@ Your app can combine moving an item to a new container and updating other proper
 Items cannot be moved between [Drives](../resources/drive.md) using this request.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -87,12 +92,17 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+## Error responses
+
+See [Error Responses][error-response] for more info about
+how errors are returned.
+
+[error-response]: ../concepts/errors.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Move an item to another location or rename the item.",
   "keywords": "move,rename,mv,change location",
   "section": "documentation",
-  "tocPath": "OneDrive/DriveItems/Move"
+  "tocPath": "Items/Move"
 } -->

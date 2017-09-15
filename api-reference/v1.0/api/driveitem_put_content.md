@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Upload or replace the contents of a DriveItem
 
 The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. 
@@ -6,7 +11,8 @@ This method only supports files up to 4MB in size.
 To upload large files see [Upload large files with an upload session](driveitem_createuploadsession.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -15,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## HTTP request (to replace an existing item)
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -63,6 +70,7 @@ The contents of the file goes here.
 If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -80,7 +88,8 @@ Content-Type: application/json
 This example replaces the contents of a file with a known ID.
 
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
-```
+
+```http
 PUT /me/drive/items/{item-id}/content
 Content-Type: text/plain
 
@@ -88,9 +97,10 @@ The contents of the file goes here.
 ```
 
 ### Response
+
 If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.
 
-<!-- { "blockType": "response", "@odata.type": "oneDrive.item", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
 HTTP/1.1 201 Created
@@ -104,8 +114,14 @@ Content-Type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+## Error responses
+
+See [Error Responses][error-response] for details about
+how errors are returned.
+
+[error-response]: ../concepts/errors.md
+[item-resource]: ../resources/driveitem.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create a new file with content or update a file's content.",

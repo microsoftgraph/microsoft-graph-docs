@@ -1,6 +1,9 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Thumbnail resource type
-
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **thumbnail** resource type represents a thumbnail for an image, video, document, or any item that has a bitmap representation.
 
@@ -45,8 +48,7 @@ Here is a JSON representation of the **thumbnail** resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "thumbnail resource",
-  "keywords": "",
+  "description": "Thumbnail resource represents a single thumbnail for an item.",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Thumbnail"
+} -->

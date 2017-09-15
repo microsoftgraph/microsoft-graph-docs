@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Get a special folder by name
 
 Use the special collection to access a special folder by name.
@@ -10,7 +15,7 @@ Special folders are automatically created the first time an application attempts
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |            Permission type             |                                           Permissions (from least to most privileged)                                            |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
@@ -41,15 +46,15 @@ The follow special folder names are available in OneDrive and OneDrive for Busin
 
 ### Optional query parameters
 
-This method supports the `$expand` and `$select` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$expand` and `$select` [OData query parameters](../concepts/optional-query-parameters.md) to customize the response.
 
-## Response
+## HTTP Response
 
 This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.
 
 You can use this method of addressing a special folder inline with additional calls to properties or relationships on the driveItem.
 
-<!-- { "blockType": "response", "@odata.type": "oneDrive.item", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -80,7 +85,7 @@ GET /me/drive/special/{name}/children
 
 ### HTTP response
 
-<!-- { "blockType": "response", "@odata.type": "oneDrive.item", "isCollection": true, "truncated": true} -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 
 ```http
 HTTP/1.1 200 OK

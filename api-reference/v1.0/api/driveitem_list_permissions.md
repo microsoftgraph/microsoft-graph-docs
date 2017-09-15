@@ -1,6 +1,11 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # List sharing permissions on a DriveItem
 
-List the effective sharnig permissions of on a [DriveItem](../resources/driveitem.md).
+List the effective sharing permissions of on a [DriveItem](../resources/driveitem.md).
 
 ## Access to sharing permissions
 
@@ -12,7 +17,7 @@ The permissions collection includes potentially sensitive information and may no
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -35,7 +40,7 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 
 ## Optional query parameters
 
-This method supports the `$select` [OData Query Parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$select` [OData Query Parameters](../concepts/optional-query-parameters.md) to customize the response.
 
 ## Optional request headers
 
@@ -62,7 +67,8 @@ SharePoint permission levels set on an item are returned with an 'SP' prefix. Fo
 This example retrieves the collection of permissions on an item in the signed in user's drive.
 
 <!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
-```
+
+```http
 GET /me/drive/items/{item-id}/permissions
 ```
 
@@ -71,6 +77,7 @@ GET /me/drive/items/{item-id}/permissions
 This example response includes three permissions, the first is a sharing link with edit permissions, the second is an explicit permission for a user named John, which was inherited from a parent folder, and the third is a read-write sharing link created by an application.
 
 <!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -115,15 +122,22 @@ Content-Type: application/json
 }
 ```
 
-See [Get permission](permission_get.md) for more details on retrieving a single permission resource.
+## Remarks
 
+The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem_get.md) or a collection of DriveItems.
+You must access the permissions property directly.
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+## Error responses
+
+Read the [Error Responses][error-response] topic for more information about
+how errors are returned.
+
+[error-response]: ../concepts/errors.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "List permissions",
-  "keywords": "",
+  "description": "List an item's permissions",
+  "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/List permissions"
-}-->
+  "tocPath": "Sharing/Permissions"
+} -->

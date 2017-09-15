@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Track changes for a Drive
 
 This method allows your app to track changes to a drive and its children over time.
@@ -15,7 +20,8 @@ Items with this property set should be removed from your local state.
 **Note:** you should only delete a folder locally if it is empty after syncing all the changes.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -36,7 +42,8 @@ GET /users/{userId}/drive/root/delta
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$expand`, and `$top` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
+
+This method supports the `$select`, `$expand`, and `$top` [OData query parameters](../concepts/optional-query-parameters.md) to customize the response.
 
 ## Response
 
@@ -57,9 +64,7 @@ Here is an example of how to call this API to establish your local state.
 
 Here is an example of the initial request.
 
-<!-- {
-  "blockType": "request", "name": "get_item_delta_first"
-}-->
+<!-- { "blockType": "request", "name": "get_item_delta_first" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
@@ -170,13 +175,13 @@ Using `delta` is the only way to guarantee that you've read all of the data you 
 
 <!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
 
-```
+```http
 GET /me/drive/root/delta?token=latest
 ```
 
 ### Response
 
-<!-- { "blockType": "response", "@odata.type": "oneDrive.viewDelta" } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.viewDelta" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -201,11 +206,17 @@ Content-type: application/json
 * **lastModifiedBy**
 * **size**
 
+## Error responses
+
+In addition to the resync errors detailed above, see [Error Responses][error-response] for details about how errors are returned.
+
+[error-response]: ../concepts/errors.md
+[item-resource]: ../resources/driveitem.md
 
 <!-- {
   "type": "#page.annotation",
   "description": "Sync changes from the service to your client state.",
   "keywords": "sync,delta,changes,$delta",
   "section": "documentation",
-  "tocPath": "OneDrive/DriveItems/Sync changes"
+  "tocPath": "Items/Sync changes"
 } -->

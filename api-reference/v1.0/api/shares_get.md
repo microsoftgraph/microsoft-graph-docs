@@ -1,12 +1,17 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Accessing shared DriveItems
 
 Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.
 
-To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#transform-a-sharing-url).
+To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#encoding-sharing-urls).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -56,6 +61,7 @@ If successful, this method returns a `200 OK` response code and a [sharedDriveIt
 Here is an example of the request to retrieve a shared item:
 
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
+
 ```http
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
@@ -163,13 +169,21 @@ Content-Type: application/json
 }
 ```
 
+## Error Responses
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+Read the [Error Responses][error-response] topic for more information about
+how errors are returned.
+
+## Remarks
+
+* For OneDrive for Business and SharePoint, the Shares API always requires authentication and cannot be used to access anonymously shared content without a user context.
+
+[error-response]: ../concepts/errors.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Access the contents of a sharing link with the OneDrive API.",
   "keywords": "shares,shared,sharing,share link, sharing link, share id, share token",
   "section": "documentation",
-  "tocPath": "OneDrive/Sharing/Use a link"
+  "tocPath": "Sharing/Use a link"
 } -->

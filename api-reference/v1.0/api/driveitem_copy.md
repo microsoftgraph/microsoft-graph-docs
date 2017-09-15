@@ -1,10 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Copy a DriveItem
 
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -61,6 +66,7 @@ Content-Type: application/json
 Returns details about how to [monitor the progress](../concepts/long-running-actions.md) of the copy, upon accepting the request.
 
 <!-- { "blockType": "response" } -->
+
 ```http
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
@@ -81,5 +87,5 @@ The response from the API will only indicate that the copy operation was accepte
   "description": "Create a copy of an existing item.",
   "keywords": "copy existing item",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Copy"
+  "tocPath": "Items/Copy"
 } -->

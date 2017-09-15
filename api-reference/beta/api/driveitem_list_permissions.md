@@ -1,23 +1,23 @@
-# List permissions on a DriveItem
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
+# List sharing permissions on a DriveItem
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+List the effective sharing permissions of on a [DriveItem](../resources/driveitem.md).
 
-List the effective permissions of on a [DriveItem](../resources/driveitem.md).
-
-The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem_get.md) or a collection of DriveItems.
-You must access the permissions property directly.
-
-## Access to permissions
+## Access to sharing permissions
 
 The permissions collection includes potentially sensitive information and may not be available for every caller.
 
-* For the owner of the item, all permissions will be returned. 
-  This includes co-owners.
-* For a non-owner caller, only the permissions that apply to the caller are returned.
-* Permission properties that contain secrets (e.g. `shareId` and `webUrl`) are only returned for callers that are able to create the Permission.
+* For the owner of the item, all sharing permissions will be returned. This includes co-owners.
+* For a non-owner caller, only the sharing permissions that apply to the caller are returned.
+* Sharing permission properties that contain secrets (e.g. `shareId` and `webUrl`) are only returned for callers that are able to create the sharing permission.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -26,59 +26,58 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-GET /me/drive/items/{item-id}/permissions
-GET /me/drive/root:/{path}:/permissions
 GET /drives/{drive-id}/items/{item-id}/permissions
 GET /groups/{group-id}/drive/items/{item-id}/permissions
+GET /me/drive/items/{item-id}/permissions
+GET /me/drive/root:/{path}:/permissions
+GET /sites/{siteId}/drive/items/{itemId}/permissions
+GET /users/{userId}/drive/items/{itemId}/permissions
 ```
 
-## Request headers
+## Optional query parameters
+
+This method supports the `$select` [OData Query Parameters](../concepts/optional-query-parameters.md) to customize the response.
+
+## Optional request headers
 
 | Name          | Type   | Description                                                                                                                                     |
 |:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-none-match | string | If this request header is included and the etag provided matches the current etag on the item, an `HTTP 304 Not Modified` response is returned. |
 
-## Optional query parameters
-
-This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
-
-## Request body
-Do not supply a request body for this method.
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [Permission](../resources/permission.md) resources in the response body.
 
-Effective permissions of an item can come from two sources:
+Effective sharing permissions of a DriveItem can come from two sources:
 
-* Permissions applied directly on the item itself
-* Permissions inherited from the item's ancestors
+* Sharing permissions applied directly on the DriveItem itself
+* Sharing permissions inherited from the DriveItem's ancestors
 
 Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property.
 This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.
 
+SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
+
 ## Example
-##### Request
-Here is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_permissions"
-}-->
+
+This example retrieves the collection of permissions on an item in the signed in user's drive.
+
+<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
+
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions
+GET /me/drive/items/{item-id}/permissions
 ```
 
+### Response
 
-##### Response
-Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permission",
-  "isCollection": true
-} -->
+This example response includes three permissions, the first is a sharing link with edit permissions, the second is an explicit permission for a user named John, which was inherited from a parent folder, and the third is a read-write sharing link created by an application.
+
+<!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -115,7 +114,7 @@ Content-Type: application/json
         "type": "edit",
         "application": {
           "id": "12345",
-          "displayName": "TimeTravelPlus"
+          "displayName": "Contoso Time Manager"
         }
       }
     }
@@ -123,15 +122,22 @@ Content-Type: application/json
 }
 ```
 
-See [Get permission](permission_get.md) for more details about retrieving a single permission resource.
+## Remarks
 
+The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem_get.md) or a collection of DriveItems.
+You must access the permissions property directly.
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+## Error responses
+
+Read the [Error Responses][error-response] topic for more information about
+how errors are returned.
+
+[error-response]: ../concepts/errors.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "List permissions",
-  "keywords": "",
+  "description": "List an item's permissions",
+  "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/List permissions"
-}-->
+  "tocPath": "Sharing/Permissions"
+} -->

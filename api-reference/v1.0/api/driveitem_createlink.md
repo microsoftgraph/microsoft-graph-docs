@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Create a sharing link for a DriveItem
 
 You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.
@@ -9,7 +14,7 @@ DriveItem resources inherit sharing permissions from their ancestors.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -72,6 +77,7 @@ The following example requests a sharing link to be created for the DriveItem sp
 The sharing link is configured to be read-only and usable by anyone with the link.
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "item_createlink"
@@ -132,7 +138,7 @@ Content-Type: application/json
 
 ### Response
 
-<!-- { "blockType": "response", "@odata.type": "oneDrive.permission" } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
 ```http
 HTTP/1.1 201 Created
@@ -175,7 +181,7 @@ Content-Type: application/json
 
 ### Response
 
-<!-- { "blockType": "response", "@odata.type": "oneDrive.permission" } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
 ```http
 HTTP/1.1 201 Created
@@ -196,19 +202,16 @@ Content-Type: application/json
 }
 ```
 
-
 ## Remarks
 
 * Links created using this action do not expire unless a default expiration policy is enforced for the organization.
 * Links are visible in the sharing permissions for the item and can be removed by an owner of the item.
 * Links always point to the current version of a item unless the item is checked out (SharePoint only).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create a new sharing link for an item.",
   "keywords": "create,sharing,sharing link",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Create sharing link"
+  "tocPath": "Sharing/Create link"
 } -->

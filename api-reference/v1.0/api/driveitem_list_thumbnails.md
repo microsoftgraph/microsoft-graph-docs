@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # List thumbnails for a DriveItem
 
 Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.
@@ -19,7 +24,8 @@ Here are the most common ones:
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -30,6 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /drives/{drive-id}/items/{item-id}/thumbnails
 GET /groups/{group-id}/drive/items/{item-id}/thumbnails
@@ -37,9 +44,10 @@ GET /me/drive/items/{item-id}/thumbnails
 GET /sites/{site-id}/drive/items/{item-id}/thumbnails
 GET /users/{user-id}/drive/items/{item-id}/thumbnails
 ```
+
 ## Optional query parameters
 
-This method supports the `$select` [OData puery parameter](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$select` [OData puery parameter](../concepts/optional-query-parameters.md) to customize the response.
 
 ## Response
 
@@ -96,7 +104,6 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 
 ### Path parameters
 
-
 | Name         | Type   | Description                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | The unique identifier for the item referenced.                                           |
@@ -144,7 +151,7 @@ Thumbnail URLs are cache-safe. The URL will change, if the item changes in a way
 
 ## Getting thumbnails while listing DriveItems
 
-If you are retriving a list of DriveItem resources to display, you can use the _$expand_ query string parameter to also include the thumbnails for those resources.
+If you are retrieving a list of DriveItem resources to display, you can use the _$expand_ query string parameter to also include the thumbnails for those resources.
 This enables your app to retrieve thumbnails and items in a single request, instead of issuing many requests.
 
 ### HTTP request
@@ -171,23 +178,23 @@ Content-type: application/json
       "id": "182331E8-2788-4932-B52A-A6550577043F",
       "name": "my photo.jpg",
       "thumbnails": [
-      	{
-	  "small": { "width": 96,
-                     "height": 96,
-                     "url": "https://sn3302files..."
-	  }
-	}
+      {
+        "small": { "width": 96,
+                   "height": 96,
+                   "url": "https://sn3302files..."
+        }
+      }
     },
     {
       "id": "2D223953-A56B-4D9B-ADF3-13E7820673A2",
       "name": "presentation.pptx",
       "thumbnails": [
-      	{
-	  "small": { "width": 96,
-                     "height": 96,
-                     "url": "https://sn3302files..."
-	  }
-	}
+      {
+        "small": { "width": 96,
+                   "height": 96,
+                   "url": "https://sn3302files..."
+        }
+      }
     },
   ]
 }
@@ -203,6 +210,9 @@ While you can request any arbitrary thumbnail size, the defined values are likel
 | `small`        | 96 longest  | Original     | Small, highly compressed thumbnail cropped to a square aspect ratio. |
 | `medium`       | 176 longest | Original     | Cropped to the standard item size for the OneDrive web view.         |
 | `large`        | 800 longest | Original     | Thumbnail with the longest edge resized to 800 pixels.               |
+| `smallSquare`  | 96x96       | Square Crop  | Small square thumbnail                                               |
+| `mediumSquare` | 176x176     | Square Crop  | Small square thumbnail                                               |
+| `largeSquare`  | 800x800     | Square Crop  | Large square thumbnail                                               |
 
 ## Requesting custom thumbnail sizes
 
@@ -249,17 +259,24 @@ In some cases, a larger thumbnail may be returned than was requested, if the thu
 
 **Note** In OneDrive for Business and SharePoint:
 
-* Using these calls to expand the thumbnails collection will not work:
-  `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
-  `GET /drive/items/{item-id}/children?expand=thumbnails`
+Using these calls to expand the thumbnails collection will not work:
 
+* `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
+* `GET /drive/items/{item-id}/children?expand=thumbnails`
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+Thumbnails are not supported on SharePoint Server 2016.
+
+### Error responses
+
+See [Error Responses][error-response] for more info about
+how errors are returned.
+
+[error-response]: ../concepts/errors.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get metadata and content for thumbnails of multiple sizes for OneDrive items.",
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
-  "tocPath": "OneDrive/DriveItem/List thumbnails"
+  "tocPath": "Items/Thumbnails"
 } -->
