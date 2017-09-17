@@ -14,7 +14,7 @@ DriveItems with a non-null **folder** or **package** facet can have one or more 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -36,7 +36,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ## Optional query parameters
 
-This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](../concepts/optional-query-parameters.md) to customize the response.
+This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
 ### Optional request headers
 
@@ -106,7 +106,7 @@ You can control the page size through [optional query string parameters](http://
 See [Error Responses][error-response] for more info about
 how errors are returned.
 
-[error-response]: ../concepts/errors.md
+[error-response]: ../../../concepts/errors.md
 [item-resource]: ../resources/driveitem.md
 
 <!-- {

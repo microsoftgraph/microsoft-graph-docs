@@ -12,7 +12,7 @@ A sharing invitation provides permissions to the recipients and optionally sends
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -128,7 +128,7 @@ Read the [Error Responses][error-response] topic for more information about
 how errors are returned.
 
 
-[error-response]: ../concepts/errors.md
+[error-response]: ../../../concepts/errors.md
 
 <!-- {
   "type": "#page.annotation",

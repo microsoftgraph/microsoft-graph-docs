@@ -6,7 +6,7 @@ ms.date: 09/12/2017
 # ContentType resource type
 
 The **contentType** resource represents a _content type_ in SharePoint.
-Content types allow you to define a set of columns that must be present on every [**listItem**][] in a [**list**][].
+Content types allow you to define a set of columns that must be present on every [**listItem**][listItem] in a [**list**][list].
 
 [list]: list.md
 [listItem]: listItem.md
@@ -59,6 +59,7 @@ See [Introduction to content types and content type publishing][contentTypeIntro
 [columnLink]: columnLink.md
 [contentTypeIntro]: https://support.office.com/en-us/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5
 [itemReference]: itemReference.md
+[contentTypeOrder]: contentTypeOrder.md
 
 <!-- {
   "type": "#page.annotation",

@@ -12,7 +12,7 @@ To upload large files see [Upload large files with an upload session](driveitem_
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -119,7 +119,7 @@ Content-Type: application/json
 See [Error Responses][error-response] for details about
 how errors are returned.
 
-[error-response]: ../concepts/errors.md
+[error-response]: ../../../concepts/errors.md
 [item-resource]: ../resources/driveitem.md
 
 <!-- {

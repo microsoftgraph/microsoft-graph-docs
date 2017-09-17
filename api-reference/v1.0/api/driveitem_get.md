@@ -9,7 +9,7 @@ Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -36,9 +36,9 @@ GET /users/{userId}/drive/root:/{item-path}
 
 ## Optional query parameters
 
-This method supports the `$expand` and `$select` [OData query parameters](../concepts/optional-query-parameters.md) to customize the response.
+This method supports the `$expand` and `$select` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
-You can use the [`$expand` query string parameter](../concepts/optional-query-parameters.md) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.
+You can use the [`$expand` query string parameter](../../../concepts/query_parameters.md) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.
 
 ## Optional request headers
 
@@ -131,8 +131,8 @@ HTTP/1.1 200 OK
 See [Error Responses][error-response] for more info about
 how errors are returned.
 
-[error-response]: ../concepts/errors.md
-[odata-parameters]: ../concepts/optional-query-parameters.md
+[error-response]: ../../../concepts/errors.md
+[odata-parameters]: ../../../concepts/query_parameters.md
 [item-resource]: ../resources/driveitem.md
 [special-folder]: ../api/drive_get_specialfolder.md
 

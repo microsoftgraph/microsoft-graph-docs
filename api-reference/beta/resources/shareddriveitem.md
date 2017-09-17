@@ -46,18 +46,18 @@ The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and
 
 | Relationship name | Type                | Description
 | ------------------|:--------------------|:-----------------------------------
-| **driveItem**     | [**driveItem**][]   | Used to access the underlying **driveItem**
-| **list**          | [**list**][]        | Used to access the underlying **list**
-| **listItem**      | [**listItem**][]    | Used to access the underlying **listItem**
-| **site**          | [**site**][]        | Used to access the underlying **site**
+| **driveItem**     | [**driveItem**][driveItem]   | Used to access the underlying **driveItem**
+| **list**          | [**list**][list]        | Used to access the underlying **list**
+| **listItem**      | [**listItem**][listItem]    | Used to access the underlying **listItem**
+| **site**          | [**site**][site]        | Used to access the underlying **site**
 
 
 Alternatively, for **driveItems** shared from personal OneDrive accounts, the following relationships may also be used.
 
 | Relationship name | Type                         | Description
 | ------------------|:-----------------------------|:-----------------------------------
-| **items**         | [**driveItem**][] collection | All driveItems contained in the sharing root. This collection cannot be enumerated.
-| **driveItem**     | [**driveItem**][]            | Used to access the underlying **driveItem**
+| **items**         | [**driveItem**][driveItem] collection | All driveItems contained in the sharing root. This collection cannot be enumerated.
+| **driveItem**     | [**driveItem**][driveItem]            | Used to access the underlying **driveItem**
 
 [driveItem]: driveItem.md
 [list]: list.md
