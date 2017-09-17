@@ -5,6 +5,8 @@ ms.date: 09/11/2017
 ---
 # Update an item in a list
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the properties on a **[listItem][]**.
 
 ## Permissions

@@ -5,6 +5,8 @@ ms.date: 09/11/2017
 ---
 # Enumerate lists in a site
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the collection of [lists][] for a [site][].
 
 [lists]: ../resources/list.md

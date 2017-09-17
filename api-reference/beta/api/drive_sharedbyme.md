@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # List items shared from a drive
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Return the shared items that exist in the target drive.
 
 **Note:** this API is only available on OneDrive Personal.

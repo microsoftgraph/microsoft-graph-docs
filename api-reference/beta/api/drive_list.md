@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # List available drives
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).
 
 ## Permissions

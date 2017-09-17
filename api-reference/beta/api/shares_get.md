@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /shares/{shareIdOrEncodedSharingUrl}
+GET https://graph.microsoft.com/beta/shares/{shareIdOrEncodedSharingUrl}
 ```
 
 ### Path Parameters
@@ -63,7 +63,7 @@ Here is an example of the request to retrieve a shared item:
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
 
 ```http
-GET /shares/{shareIdOrEncodedSharingUrl}
+GET https://graph.microsoft.com/beta/shares/{shareIdOrEncodedSharingUrl}
 ```
 
 ### Response
@@ -135,7 +135,7 @@ By requesting the **driveItem** relationship and expanding the **children** coll
 <!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
 ```http
-GET /shares/{shareIdOrUrl}/driveItem?$expand=children
+GET https://graph.microsoft.com/beta/shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 
 ### Response
@@ -169,16 +169,9 @@ Content-Type: application/json
 }
 ```
 
-## Error Responses
-
-Read the [Error Responses][error-response] topic for more information about
-how errors are returned.
-
 ## Remarks
 
 * For OneDrive for Business and SharePoint, the Shares API always requires authentication and cannot be used to access anonymously shared content without a user context.
-
-[error-response]: ../concepts/errors.md
 
 <!-- {
   "type": "#page.annotation",

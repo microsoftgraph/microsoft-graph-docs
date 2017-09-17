@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # Download the contents of a DriveItem
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the **file** property can be downloaded.
 
 ## Permissions

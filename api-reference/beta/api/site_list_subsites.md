@@ -1,4 +1,11 @@
-# Enumerate subsites of a site
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
+# Enumerate subsites
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get a collection of subsites defined for a [site][].
 
@@ -6,7 +13,7 @@ Get a collection of subsites defined for a [site][].
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -16,23 +23,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
 ```http
-GET /sites/{site-id}/sites
+GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 
-## Example
-
-#### Request
-
-<!-- { "blockType": "request", "name": "list-subsites" } -->
-
-```http
-GET /sites/{site-id}/sites
-```
-
-#### Response
+## Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -67,5 +64,5 @@ Content-type: application/json
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Site/Enumerate subsites"
+  "tocPath": "Sites/List subsites"
 } -->

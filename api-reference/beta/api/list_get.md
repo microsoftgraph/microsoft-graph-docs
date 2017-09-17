@@ -5,6 +5,8 @@ ms.date: 09/11/2017
 ---
 # Get metadata for a list
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Returns the metadata for a [list][].
 
 [list]: ../resources/list.md

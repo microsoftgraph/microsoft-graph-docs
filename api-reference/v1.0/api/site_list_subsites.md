@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
 ```http
-GET /sites/{site-id}/sites
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 ```
 
 ## Response

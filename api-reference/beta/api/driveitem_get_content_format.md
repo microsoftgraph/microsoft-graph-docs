@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # Download a file in another format
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to retrieve the contents of an item in a specific format.
 Not all files can be converted into all formats.
 

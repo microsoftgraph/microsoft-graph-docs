@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # Get Drive
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.
 
 A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.

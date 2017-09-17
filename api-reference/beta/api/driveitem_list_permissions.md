@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # List sharing permissions on a DriveItem
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 List the effective sharing permissions of on a [DriveItem](../resources/driveitem.md).
 
 ## Access to sharing permissions

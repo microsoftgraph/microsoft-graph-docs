@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # Move a DriveItem to a new folder
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
 
 This is a special case of the [Update](driveitem_update.md) method.

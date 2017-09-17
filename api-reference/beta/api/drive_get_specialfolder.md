@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # Get a special folder by name
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use the special collection to access a special folder by name.
 
 Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.

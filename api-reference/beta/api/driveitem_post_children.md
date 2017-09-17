@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # Create a new folder in a drive
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.
 
 ## Permissions

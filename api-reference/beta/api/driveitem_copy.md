@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # Copy a DriveItem
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
 ## Permissions
