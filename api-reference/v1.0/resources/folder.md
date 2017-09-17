@@ -22,7 +22,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "childCount": 1024
+  "childCount": 1024,
   "view": { "@odata.type": "microsoft.graph.folderView" }
 }
 ```
