@@ -22,7 +22,7 @@ The **photo** resource provides photo and camera properties, for example, EXIF m
   "exposureNumerator": 1.0,
   "fNumber": 1.8,
   "focalLength": 22.5,
-  "iso": 100
+  "iso": 100,
   "takenDateTime": "String (timestamp)"
 }
 ```

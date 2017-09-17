@@ -10,7 +10,7 @@ The **contentTypeOrder** resource specifies in which order the Content Type will
 ## JSON representation
 
 Here is a JSON representation of a **contentTypeOrder** resource.
-<!-- { "blockType": "resource", "@type": "microsoft.graph.contentTypeOrder" "@type.aka": "oneDrive.contentTypeOrderFacet" } -->
+<!-- { "blockType": "resource", "@type": "microsoft.graph.contentTypeOrder", "@type.aka": "oneDrive.contentTypeOrderFacet" } -->
 
 ```json
 {

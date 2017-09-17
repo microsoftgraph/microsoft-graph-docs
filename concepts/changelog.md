@@ -29,41 +29,43 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Deletion | beta | Removed the **locale** property on the [NumberColumn][NumberColumn-beta] complex type. |
 | Deletion | beta | Removed the **enforceUniqueValues** property from [PersonOrGroupColumn][PersonOrGroupColumn-beta] complex type. |
 
-[ColumnDefinition]: ../api-reference/v1.0/resources/columndefinition.md
-[ColumnLink]: ../api-reference/v1.0/resources/columnLink.md
-[ContentType]: ../api-reference/v1.0/resources/contentType.md
-[List]: ../api-reference/v1.0/resources/list.md
-[ListItem]: ../api-reference/v1.0/resources/listitem.md
-[Site]: ../api-reference/v1.0/resources/site.md
+[BaseItemVersion-beta]: ../api-reference/beta/resources/baseitemversion.md
+[BooleanColumn-beta]:  ../api-reference/beta/resources/booleanColumn.md
 [BooleanColumn]: ../api-reference/v1.0/resources/booleancolumn.md
 [CalculatedColumn]: ../api-reference/v1.0/resources/calculatedcolumn.md
 [ChoiceColumn]: ../api-reference/v1.0/resources/choicecolumn.md
+[ColumnDefinition-beta]: ../api-reference/beta/resources/columndefinition.md
+[ColumnDefinition]: ../api-reference/v1.0/resources/columndefinition.md
+[ColumnLink-beta]: ../api-reference/beta/resources/columnLink.md
+[ColumnLink]: ../api-reference/v1.0/resources/columnLink.md
+[ContentType-beta]: ../api-reference/beta/resources/contentType.md
+[ContentType]: ../api-reference/v1.0/resources/contentType.md
+[ContentTypeInfo-beta]: ../api-reference/beta/resources/contentTypeInfo.md
 [ContentTypeInfo]: ../api-reference/v1.0/resources/contentTypeInfo.md
+[ContentTypeOrder-beta]: ../api-reference/beta/resources/contentTypeOrder.md
+[ContentTypeOrder]: ../api-reference/v1.0/resources/contentTypeOrder.md
+[CurrencyColumn-beta]: ../api-reference/beta/resources/currencycolumn.md
 [CurrencyColumn]: ../api-reference/v1.0/resources/currencycolumn.md
 [DateTimeColumn]: ../api-reference/v1.0/resources/datetimecolumn.md
 [DefaultColumnValue]: ../api-reference/v1.0/resources/defaultColumnValue.md
+[List-beta]: ../api-reference/beta/resources/list.md
+[List]: ../api-reference/v1.0/resources/list.md
+[ListInfo-beta]: ../api-reference/beta/resources/listinfo.md
 [ListInfo]: ../api-reference/v1.0/resources/listinfo.md
+[ListItem-beta]: ../api-reference/beta/resources/listitem.md
+[ListItem]: ../api-reference/v1.0/resources/listitem.md
+[ListItemVersion-beta]: ../api-reference/beta/resources/listitemversion.md
+[LookupColumn-beta]: ../api-reference/beta/resources/lookupColumn.md
 [LookupColumn]: ../api-reference/v1.0/resources/lookupcolumn.md
+[NumberColumn-beta]: ../api-reference/beta/resources/numberColumn.md
 [NumberColumn]: ../api-reference/v1.0/resources/numbercolumn.md
+[PersonOrGroupColumn-beta]: ../api-reference/beta/resources/personOrGroupColumn.md
 [PersonOrGroupColumn]: ../api-reference/v1.0/resources/personorgroupcolumn.md
+[Site-beta]: ../api-reference/beta/resources/site.md
+[Site]: ../api-reference/v1.0/resources/site.md
+[SystemFacet-beta]: ../api-reference/beta/resources/systemfacet.md
 [SystemFacet]: ../api-reference/v1.0/resources/systemFacet.md
 [TextColumn]: ../api-reference/v1.0/resources/textcolumn.md
-[BaseItemVersion-beta]: ../api-reference/beta/resources/baseitemversion.md
-[ColumnDefinition-beta]: ../api-reference/beta/resources/columndefinition.md
-[ColumnLink-beta]: ../api-reference/beta/resources/columnLink.md
-[ContentType-beta]: ../api-reference/beta/resources/contentType.md
-[ListItemVersion-beta]: ../api-reference/beta/resources/listitemversion.md
-[List-beta]: ../api-reference/beta/resources/list.md
-[ListItem-beta]: ../api-reference/beta/resources/listitem.md
-[Site-beta]: ../api-reference/beta/resources/site.md
-[BooleanColumn-beta]:  ../api-reference/beta/resources/booleanColumn.md
-[ContentTypeInfo-beta]: ../api-reference/beta/resources/contentTypeInfo.md
-[ContentTypeOrder-beta]: ../api-reference/beta/resources/contentTypeOrder.md
-[CurrencyColumn-beta]: ../api-reference/beta/resources/currencycolumn.md
-[SystemFacet-beta]: ../api-reference/beta/resources/systemfacet.md
-[LookupColumn-beta]: ../api-reference/beta/resources/lookupColumn.md
-[PersonOrGroupColumn-beta]: ../api-reference/beta/resources/personOrGroupColumn.md
-[NumberColumn-beta]: ../api-reference/beta/resources/numberColumn.md
 
 ### OneDrive
 
@@ -113,6 +115,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 [RestoreAction-beta]: ../api-reference/beta/resources/restoreaction.md
 [ShareAction-beta]: ../api-reference/beta/resources/shareaction.md
 [VersionAction-beta]: ../api-reference/beta/resources/versionaction.md
+[ItemReference-beta]: ../api-reference/beta/resources/itemreference.md
+[SharepointIds-beta]: ../api-reference/beta/resources/sharepointids.md
+[Video-beta]: ../api-reference/beta/resources/video.md
+[CheckIn-beta]: ../api-reference/beta/api/driveitem_checkin.md
+[CheckOut-beta]: ../api-reference/beta/api/driveitem_checkout.md
+[ValidatePermission-beta]: ../api-reference/beta/api/driveitem_validatepermission.md
+[CreateLink-beta]: ../api-reference/beta/api/driveitem_createlink.md
 
 
 ### SharePoint sites

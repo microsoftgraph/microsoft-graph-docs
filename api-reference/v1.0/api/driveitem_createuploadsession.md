@@ -155,7 +155,7 @@ You should always determine the size of your byte ranges according to the best p
 Do not assume that **nextExpectedRanges** will return reanges of proper size for a byte range to upload.
 The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
+<!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
 ```http
 HTTP/1.1 202 Accepted
