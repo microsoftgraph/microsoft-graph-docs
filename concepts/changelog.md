@@ -6,6 +6,123 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## September 2017
 
+### SharePoint lists
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | v1.0 | Added new entities: [ColumnDefinition][], [ColumnLink][], [ContentType][], [List][], [ListItem][]. |
+| Addition | v1.0 | Added the **columns**, **contentTypes**, **items**, and **lists** relationships to the [Site][] resource. |
+| Addition | v1.0 | Added new complex types: [BooleanColumn][], [CalculatedColumn][], [ChoiceColumn][], [ContentTypeInfo][], [ContentTypeOrder][], [CurrencyColumn][], [DateTimeColumn][], [DefaultColumnValue][], [ListInfo][], [LookupColumn][], [NumberColumn][], [PersonOrGroupColumn][], [SystemFacet][], [TextColumn][]. |
+| Addition | beta | Added new entities: [BaseItemVersion][BaseItemVersion-beta], [ColumnLink][ColumnLink-beta], [ContentType][ContentType-beta], [ListItemVersion][ListItemVersion-beta], |
+| Addition | beta | Added the **columnGroup**, **currency**, **defaultValue** and **displayName** properties to [ColumnDefinition][ColumnDefinition-beta]. |
+| Addition | beta | Added the **displayName** and **system** properties to the [List][List-beta] resource. |
+| Addition | beta | Added the **activities** and **contentTypes** relationships to the [List][List-beta] resource. |
+| Addition | beta | Added the **contentType** property to the [ListItem][ListItem-beta] resource. |
+| Addition | beta | Added the **activities** and **versions** relationships to the [ListItem][ListItem-beta] resource. |
+| Addition | beta | Added the **contentTypes** relationship to the [Site][Site-beta] resource. |
+| Addition | beta | Added the **outputType** property to the [BooleanColumn][BooleanColumn-beta] type. |
+| Addition | beta | Added new complex types: [ContentTypeInfo][ContentTypeInfo-beta], [ContentTypeOrder][ContentTypeOrder-beta], [CurrencyColumn][CurrencyColumn-beta], and [SystemFacet][SystemFacet-beta]. |
+| Addition | beta | Added the **contentTypesEnabled** property to the [ListInfo][ListInfo-beta] complex type. |
+| Addition | beta | Added the **allowUnlimitedLength** property on the [LookupColumn][LookupColumn-beta] complex type. |
+| Change   | beta | Renamed the **allowMultipleValue** property to **allowMultipleValues** on the [LookupColumn][LookupColumn-beta] complex type. |
+| Change   | beta | Renamed the **chooseFrom** property to **chooseFromType** on [PersonOrGroupColumn][PersonOrGroupColumn-beta] complex type. |
+| Deletion | beta | Removed the **locale** property on the [NumberColumn][NumberColumn-beta] complex type. |
+| Deletion | beta | Removed the **enforceUniqueValues** property from [PersonOrGroupColumn][PersonOrGroupColumn-beta] complex type. |
+
+[ColumnDefinition]: ../api-reference/v1.0/resources/columndefinition.md
+[ColumnLink]: ../api-reference/v1.0/resources/columnLink.md
+[ContentType]: ../api-reference/v1.0/resources/contentType.md
+[List]: ../api-reference/v1.0/resources/list.md
+[ListItem]: ../api-reference/v1.0/resources/listitem.md
+[Site]: ../api-reference/v1.0/resources/site.md
+[BooleanColumn]: ../api-reference/v1.0/resources/booleancolumn.md
+[CalculatedColumn]: ../api-reference/v1.0/resources/calculatedcolumn.md
+[ChoiceColumn]: ../api-reference/v1.0/resources/choicecolumn.md
+[ContentTypeInfo]: ../api-reference/v1.0/resources/contentTypeInfo.md
+[CurrencyColumn]: ../api-reference/v1.0/resources/currencycolumn.md
+[DateTimeColumn]: ../api-reference/v1.0/resources/datetimecolumn.md
+[DefaultColumnValue]: ../api-reference/v1.0/resources/defaultColumnValue.md
+[ListInfo]: ../api-reference/v1.0/resources/listinfo.md
+[LookupColumn]: ../api-reference/v1.0/resources/lookupcolumn.md
+[NumberColumn]: ../api-reference/v1.0/resources/numbercolumn.md
+[PersonOrGroupColumn]: ../api-reference/v1.0/resources/personorgroupcolumn.md
+[SystemFacet]: ../api-reference/v1.0/resources/systemFacet.md
+[TextColumn]: ../api-reference/v1.0/resources/textcolumn.md
+[BaseItemVersion-beta]: ../api-reference/beta/resources/baseitemversion.md
+[ColumnDefinition-beta]: ../api-reference/beta/resources/columndefinition.md
+[ColumnLink-beta]: ../api-reference/beta/resources/columnLink.md
+[ContentType-beta]: ../api-reference/beta/resources/contentType.md
+[ListItemVersion-beta]: ../api-reference/beta/resources/listitemversion.md
+[List-beta]: ../api-reference/beta/resources/list.md
+[ListItem-beta]: ../api-reference/beta/resources/listitem.md
+[Site-beta]: ../api-reference/beta/resources/site.md
+[BooleanColumn-beta]:  ../api-reference/beta/resources/booleanColumn.md
+[ContentTypeInfo-beta]: ../api-reference/beta/resources/contentTypeInfo.md
+[ContentTypeOrder-beta]: ../api-reference/beta/resources/contentTypeOrder.md
+[CurrencyColumn-beta]: ../api-reference/beta/resources/currencycolumn.md
+[SystemFacet-beta]: ../api-reference/beta/resources/systemfacet.md
+[LookupColumn-beta]: ../api-reference/beta/resources/lookupColumn.md
+[PersonOrGroupColumn-beta]: ../api-reference/beta/resources/personOrGroupColumn.md
+[NumberColumn-beta]: ../api-reference/beta/resources/numberColumn.md
+
+### OneDrive
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | v1.0 | Added the **system** property to the [Drive][] resource.  |
+| Addition | v1.0 | Added the **list** relationship to the [Drive][] resource. |
+| Addition | v1.0 | Added the **listItem** relationship to the [DriveItem][] resource. |
+| Addition | v1.0 | Added the **list** and **listItem** relationships to the [SharedDriveItem][] resource. |
+| Addition | v1.0 | Added new complex types: [FolderView][] |
+| Addition | v1.0 | Added the **view** property to the [Folder][] complex type. |
+| Addition | v1.0 | Added the **driveType** property to the [ItemReference][] complex type. |
+| Addition | v1.0 | Added the **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** and **frameRate** properties to the [Video][] complex type. |
+| Addition | beta | Added the **system** property to the [Drive][Drive-beta] resource.  |
+| Addition | beta | Added the **activities** relationship to the [Drive][Drive-beta] resource. |
+| Addition | beta | Added the **publication** property to the [DriveItem][DriveItem-beta] resource. |
+| Addition | beta | Added the **activities** and **versions** relationships to the [DriveItem][DriveItem-beta] resource. |
+| Addition | beta | Added new entities: [DriveItemVersion][DriveItemVersion-beta], [ItemActivity][ItemActivity-beta]. |
+| Addition | beta | Added new complex types: [CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta], [DeleteAction][DeleteAction-beta], [EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta], [ItemActivityTimeSet][ItemActivityTimeSet-beta], [MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta], [PublicationFacet][PublicationFacet-beta], [RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta], [ShareAction][ShareAction-beta], and [VersionAction][VersionAction-beta]. |
+| Addition | beta | Added the **driveType** property to the [ItemReference][ItemReference-beta] complex type. |
+| Deletion | beta | Removed the **tenantId** property from [SharepointIds][SharepointIds-beta] complex type. |
+| Addition | v1.0 | Added the **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** and **frameRate** properties to the [Video][Video-beta] complex type. |
+| Addition | beta | Added the [CheckIn][CheckIn-beta], [CheckOut][CheckOut-beta], and [ValidatePermission][ValidatePermission-beta] actions on the [DriveItem][DriveItem-beta] resource. |
+| Addition | beta | Added the **expirationDateTime**, **password**, **message**, and **recipients** properties on the [CreateLink][CreateLink-beta] action on a [DriveItem][DriveItem-beta] resource. |
+
+[Drive]: ../api-reference/v1.0/resources/drive.md
+[DriveItem]: ../api-reference/v1.0/resources/driveitem.md
+[SharedDriveItem]: ../api-reference/v1.0/resources/shareddriveitem.md
+[FolderView]: ../api-reference/v1.0/resources/folderview.md
+[Folder]: ../api-reference/v1.0/resources/folder.md
+[ItemReference]: ../api-reference/v1.0/resources/itemreference.md
+[Video]: ../api-reference/v1.0/resources/video.md
+[Drive-beta]: ../api-reference/beta/resources/drive.md
+[DriveItem-beta]: ../api-reference/beta/resources/driveitem.md
+[DriveItemVersion-beta]: ../api-reference/beta/resources/driveitemversion.md
+[ItemActivity-beta]: ../api-reference/beta/resources/itemactivity.md
+[CommentAction-beta]: ../api-reference/beta/resources/commentaction.md
+[CreateAction-beta]: ../api-reference/beta/resources/createaction.md
+[DeleteAction-beta]: ../api-reference/beta/resources/deleteaction.md
+[EditAction-beta]: ../api-reference/beta/resources/editaction.md
+[ItemActionSet-beta]: ../api-reference/beta/resources/itemactionset.md
+[ItemActivityTimeSet-beta]: ../api-reference/beta/resources/itemactivitytimeset.md
+[MentionAction-beta]: ../api-reference/beta/resources/mentionaction.md
+[MoveAction-beta]: ../api-reference/beta/resources/moveaction.md
+[PublicationFacet-beta]: ../api-reference/beta/resources/publicationfacet.md
+[RenameAction-beta]: ../api-reference/beta/resources/renameaction.md
+[RestoreAction-beta]: ../api-reference/beta/resources/restoreaction.md
+[ShareAction-beta]: ../api-reference/beta/resources/shareaction.md
+[VersionAction-beta]: ../api-reference/beta/resources/versionaction.md
+
+
+### SharePoint sites
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | beta | Added **dataLocationCode** and **root** properties to the [SiteCollection][SiteCollection-beta] complex type. |
+
+[SiteCollection-beta]: ../api-reference/beta/resources/sitecollection.md
+
 ### Outlook calendar
 
 |**Change type**|**Version**|**Description**|
