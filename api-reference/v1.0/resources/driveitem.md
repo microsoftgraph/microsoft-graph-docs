@@ -132,7 +132,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | createdByUser      | [user](user.md)                            | Identity of the user who created the item. Read-only.                                                                                                                             |
 | lastModifiedByUser | [user](user.md)                            | Identity of the user who last modified the item. Read-only.                                                                                                                       |
 | permissions        | [permission](permission.md) collection     | The set of permissions for the item. Read-only. Nullable.                                                                                                                         |
-| thumbnails         | [thumbnailSet](thumbnailset.md) collection | Collection containing [ThumbnailSet](thumbnailSet.md) objects associated with the item. For more info, see [getting thumbnails](../api/thumbnailset_get.md). Read-only. Nullable. |
+| thumbnails         | [thumbnailSet](thumbnailset.md) collection | Collection containing [ThumbnailSet](thumbnailSet.md) objects associated with the item. For more info, see [getting thumbnails](../api/driveitem_list_thumbnails.md). Read-only. Nullable. |
 
 ## Instance Attributes
 

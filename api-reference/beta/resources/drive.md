@@ -67,7 +67,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 
 [identitySet]: identityset.md
 [sharepointIds]: sharepointids.md
-[systemFacet]: systemFacet.md
+[systemFacet]: systemfacet.md
 
 ## Relationships
 

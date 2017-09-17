@@ -108,7 +108,7 @@ The **list** resource has the following relationships to other resources.
 [listInfo]: listInfo.md
 [listItem]: listItem.md
 [site]: site.md
-[systemFacet]: systemFacet.md
+[systemFacet]: systemfacet.md
 
 <!-- {
   "type": "#page.annotation",
