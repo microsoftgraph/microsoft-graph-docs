@@ -297,7 +297,7 @@ This new request should correct the source of error that generated the original 
 
 To indicate that your app is committing an existing upload session, the PUT request must include the `@microsoft.graph.sourceUrl` property with the value of your upload session URL.
 
-<!-- { "blockType": "request", "name": "explicit-upload-commit", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite" } -->
 
 ```http
 PUT /me/drive/root:/{path_to_parent}

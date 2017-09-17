@@ -115,7 +115,7 @@ These method support the [$select query parameter][odata-query-parameters] to sh
 
 Each of these methods returns a [Drive resource][drive-resource] for the matching drive in the response body.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive" } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default"] } -->
 
 ```http
 HTTP/1.1 200 OK

@@ -41,7 +41,6 @@ Here is a JSON representation of a **list** resource.
 {
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
-  "items": [ { "@odata.type": "microsoft.graph.contentType" } ],
   "displayName": "title of list",
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "items": [ { "@odata.type": "microsoft.graph.listItem" } ],

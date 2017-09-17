@@ -76,7 +76,7 @@ Content-Type: application/json
 DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](../resources/remoteitem.md) facet which indicates they are items from a different drive.
 To access the shared DriveItem resource, you will need to make a request using the information provided in **remoteItem** in the following format:
 
-<!-- { "blockType": "request", "name": "drives-get-remoteitem" } -->
+<!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 
 ```http
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}

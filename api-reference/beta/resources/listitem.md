@@ -38,17 +38,15 @@ Here is a JSON representation of a **listItem** resource.
 ```json
 {
   "contentType": { "@odata.type": "microsoft.graph.contentType" },
-  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
-
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "name of resource",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
   "createdDateTime": "timestamp",
   "description": "description of resource",
   "eTag": "string",
+  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
+  "id": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
+  "name": "name of resource",
   "webUrl": "url"
 }
 ```

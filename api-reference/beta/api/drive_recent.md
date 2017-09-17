@@ -84,7 +84,7 @@ Content-Type: application/json
 Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. 
 To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:
 
-<!-- { "blockType": "request", "name": "drives-get-remoteitem" } -->
+<!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 
 ```http
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}

@@ -61,14 +61,14 @@ GET /me/drives
 
 This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.drive)", 
-       "truncated": true } -->
+       "truncated": true,
+       "name": ["enum-drives", "user-list-drives", "group-list-drives", "site-list-drives"] } -->
 
 ```http
 HTTP/1.1 200 OK

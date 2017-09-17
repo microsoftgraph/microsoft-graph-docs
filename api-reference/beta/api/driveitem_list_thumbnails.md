@@ -74,7 +74,7 @@ For example, `/thumbnails?select=medium` retrieves only the medium sized thumbna
 
 ### Response
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet" } -->
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -180,24 +180,26 @@ Content-type: application/json
       "id": "182331E8-2788-4932-B52A-A6550577043F",
       "name": "my photo.jpg",
       "thumbnails": [
-      {
-        "small": { "width": 96,
-                   "height": 96,
-                   "url": "https://sn3302files..."
+        {
+          "small": { "width": 96,
+                     "height": 96,
+                     "url": "https://sn3302files..."
+                   }
         }
-      }
+      ]
     },
     {
       "id": "2D223953-A56B-4D9B-ADF3-13E7820673A2",
       "name": "presentation.pptx",
       "thumbnails": [
-      {
-        "small": { "width": 96,
-                   "height": 96,
-                   "url": "https://sn3302files..."
+        {
+          "small": { "width": 96,
+                     "height": 96,
+                     "url": "https://sn3302files..."
+                   }
         }
-      }
-    },
+      ]
+    }
   ]
 }
 ```

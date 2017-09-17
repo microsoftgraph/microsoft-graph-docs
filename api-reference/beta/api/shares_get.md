@@ -150,7 +150,7 @@ Content-Type: application/json
   "id": "9FFFDB3C-5B87-4062-9606-1B008CA88E44",
   "name": "Contoso Project",
   "eTag": "2246BD2D-7811-4660-BD0F-1CF36133677B,1",
-  "folder": {}
+  "folder": {},
   "size": 10911212,
   "children": [
     {

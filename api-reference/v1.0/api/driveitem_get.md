@@ -98,34 +98,6 @@ Content-type: application/json
 }
 ```
 
-## HEAD requests
-
-In most cases, a HEAD request will behave the same way as a GET request. 
-
-There are a couple differences:
-
-1. HEAD requests will only return the corresponding GET request's headers. This is standard practice for a HEAD response.
-2. HEAD requests will not automatically provision a [special folder][special-folder]. Instead, if a special folder is not present, a `404` error will be returned.
-
-In this example, you can see that requesting the root of your OneDrive will respond with simply `200 OK`.
-
-### HTTP request
-
-<!-- {"blockType": "request", "name": "head-root", "scopes": "files.read"} -->
-
-```http
-HEAD /drive/root
-Accept: application/json
-```
-
-### Response
-
-<!-- {"blockType": "response", "isEmpty": true } -->
-
-```http
-HTTP/1.1 200 OK
-```
-
 ## Remarks
 
 See [Error Responses][error-response] for more info about

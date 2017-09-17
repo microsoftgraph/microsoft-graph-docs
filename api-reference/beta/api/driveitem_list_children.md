@@ -80,7 +80,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 If successful, this method returns the list of items in the children collection of the target item.
 The children collection will be composed of [driveItem][item-resource] resources.
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true} -->
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true, "name": ["list-children-from-path", "list-children", "list-children-root"]} -->
 
 ```http
 HTTP/1.1 200 OK

@@ -66,7 +66,8 @@ If successful, this method returns a `200 OK` response code and collection of [D
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.drive)", 
-       "truncated": true } -->
+       "truncated": true,
+       "name": ["enum-drives", "user-list-drives", "group-list-drives", "site-list-drives"] } -->
 
 ```http
 HTTP/1.1 200 OK
