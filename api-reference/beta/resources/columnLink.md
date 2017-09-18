@@ -5,6 +5,8 @@ ms.date: 09/12/2017
 ---
 # ColumnLink resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 A **columnLink** on a [contentType][] attaches a site **columnDefinition** to that content type.
 
 [contentType]: contentType.md

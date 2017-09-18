@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # FileSystemInfo facet
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **FileSystemInfo** resource contains properties that are reported by the device's local file system for the local version of an item.
 This facet can be used to specify the last modified date or created date of the item as it was on the local device.
 

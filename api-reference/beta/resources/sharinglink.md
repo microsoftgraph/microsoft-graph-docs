@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # SharingLink resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -18,8 +23,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "application": {"@odata.type": "microsoft.graph.identity"},
-  "type": "view | edit",
+  "application": { "@odata.type": "microsoft.graph.identity" },
+  "type": "view | edit | embed",
   "scope": "anonymous | organization",
   "webHtml": "string",
   "webUrl": "url"
@@ -28,13 +33,15 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-| Property    | Type                    | Description
-|:------------|:------------------------|:-------------------------------------
-| application | [identity](identity.md) | The app the link is associated with.
-| type        | String                  | The type of the link created.
-| scope       | String                  | The scope of the link represented by this permission. Value `anonymous` indicates the link is usable by anyone, `organization` indicates the link is only usable for users signed into the same tenant.
-| webHtml     | String                  | For `embed` links, this property contains the HTML code for an `<iframe>` element that will embed the item in a webpage.
-| webUrl      | String                  | A URL that opens the item in the browser on the OneDrive website.
+| Property    | Type          | Description
+|:------------|:--------------|:-------------------------------------
+| application | [identity][]  | The app the link is associated with.
+| type        | String        | The type of the link created.
+| scope       | String        | The scope of the link represented by this permission. Value `anonymous` indicates the link is usable by anyone, `organization` indicates the link is only usable for users signed into the same tenant.
+| webHtml     | String        | For `embed` links, this property contains the HTML code for an `<iframe>` element that will embed the item in a webpage.
+| webUrl      | String        | A URL that opens the item in the browser on the OneDrive website.
+
+[Identity]: identity.md
 
 ## Type enumeration
 
@@ -57,8 +64,8 @@ This table defines the possible values for the **type** property:
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharingLink resource",
-  "keywords": "",
+  "description": "The sharing link facet provides information about how a file is shared.",
+  "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
   "tocPath": ""
 }-->

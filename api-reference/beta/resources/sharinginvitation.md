@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # SharingInvitation resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -42,8 +47,8 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharingInvitation resource",
-  "keywords": "",
+  "description": "The sharing invitation facet describes details of a sharing invitation associated with a permission.",
+  "keywords": "image,width,height,item,facet",
   "section": "documentation",
   "tocPath": ""
 }-->

@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # AsyncJobStatus resource
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 This resource provides information on the status of a asynchronous job progress.
 
 The following API calls return **AsyncJobStatus** resources:

@@ -5,6 +5,8 @@ ms.date: 09/11/2017
 ---
 # List resource
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **list** resource represents a list in a [site][].
 This resource contains the top level properties of the list, including template and field definitions.
 
@@ -16,29 +18,34 @@ You can, however, create or update [list items][listItem].
 
 All examples below are relative to a site, eg: `https://graph.microsoft.com/beta/sites/{site-id}`.
 
-| Common task              | HTTP method
-|:-------------------------|:------------------------------
-| [Get list][]             | GET /lists/{list-id}
-| [Enumerate list items][] | GET /lists/{list-id}/items
-| [Update list item][]     | PATCH /lists/{list-id}/items/{item-id}
-| [Delete list item][]     | DELETE /lists/{list-id}/items/{item-id}
-| [Create list item][]     | POST /lists/{list-id}
+| Common task               | HTTP method
+|:--------------------------|:------------------------------
+| [Get list][]              | GET /lists/{list-id}
+| [Enumerate list items][]  | GET /lists/{list-id}/items
+| [Update list item][]      | PATCH /lists/{list-id}/items/{item-id}
+| [Delete list item][]      | DELETE /lists/{list-id}/items/{item-id}
+| [Create list item][]      | POST /lists/{list-id}
+| [Get recent activities][] | GET /lists/{list-id}/activities
 
 [Get list]: ../api/list_get.md
 [Enumerate list items]: ../api/listItems_list.md
 [Update list item]: ../api/listItem_update.md
 [Delete list item]: ../api/listItem_delete.md
 [Create list item]: ../api/listItem_create.md
+[Get recent activities]: ../api/activities_list.md
 
 ## JSON representation
 
 Here is a JSON representation of a **list** resource.
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.list",
-       "keyProperty": "id", "optionalProperties": [ "items", "drive"] } -->
+<!-- { "blockType": "resource", 
+       "@odata.type": "microsoft.graph.list",
+       "keyProperty": "id", 
+       "optionalProperties": [ "items", "drive"] } -->
 
 ```json
 {
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
   "displayName": "title of list",
@@ -47,7 +54,7 @@ Here is a JSON representation of a **list** resource.
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
-    "template": "documentLibrary | generic | survey | links | announcements | contacts ..."
+    "template": "documentLibrary | genericList | survey | links | announcements | contacts ..."
   },
   "system": false,
 
@@ -95,6 +102,7 @@ The **list** resource has the following relationships to other resources.
 
 | Relationship name | Type                        | Description
 |:------------------|:----------------------------|:------------------------------
+| **activities**    | [itemActivity][] collection | The recent activities that took place within this list.
 | **drive**         | [drive][]                   | Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 | **items**         | Collection([listItem][])    | All items contained in the list.
 
@@ -104,6 +112,7 @@ The **list** resource has the following relationships to other resources.
 [driveItem]: driveItem.md
 [columnDefinition]: columnDefinition.md
 [identitySet]: identitySet.md
+[itemActivity]: itemActivity.md
 [listInfo]: listInfo.md
 [listItem]: listItem.md
 [site]: site.md

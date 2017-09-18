@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # File resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **File** resource groups file-related data items into a single structure.
 
 If a [**DriveItem**](driveitem.md) has a non-null **file** facet, the item represents an file.

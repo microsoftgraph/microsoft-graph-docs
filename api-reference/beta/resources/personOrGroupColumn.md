@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/11/2017
+---
 # PersonOrGroupColumn resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -7,13 +12,13 @@ The **personOrGroupColumn** on a [columnDefinition](columnDefinition.md) resourc
 ## JSON representation
 
 Here is a JSON representation of a **personOrGroupColumn** resource.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.personOrGroupColumn" } -->
+<!-- { "blockType": "resource", "@type": "microsoft.graph.personOrGroupColumn", "@property.aka": "chooseFromType=format" } -->
 
 ```json
 {
   "allowMultipleSelection": true,
   "displayAs": "account | contentType | created | department | ...",
-  "chooseFrom": "peopleAndGroups | peopleOnly"
+  "chooseFromType": "peopleAndGroups | peopleOnly"
 }
 ```
 
@@ -23,7 +28,7 @@ Here is a JSON representation of a **personOrGroupColumn** resource.
 |:---------------------------|:--------|:--------------------------------------
 | **allowMultipleSelection** | boolean | Indicates whether multiple values can be selected from the source.
 | **displayAs**              | string  | How to display the information about the person or group chosen. See below.
-| **chooseFrom**             | string  | Whether to allow selection of people only, or people and groups. Must be one of `peopleAndGroups` or `peopleOnly`.
+| **chooseFromType**         | string  | Whether to allow selection of people only, or people and groups. Must be one of `peopleAndGroups` or `peopleOnly`.
 
 ## DisplayAs values
 

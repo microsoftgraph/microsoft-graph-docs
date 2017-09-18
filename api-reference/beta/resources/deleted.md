@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # Deleted facet
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **Deleted** resource indicates that the item has been deleted.
 In this version of the API, the presence (non-null) of the resource value indicates that the file was deleted.
 A null (or missing) value indicates that the file is not deleted.

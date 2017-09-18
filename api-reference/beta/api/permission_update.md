@@ -1,8 +1,15 @@
-# Update permission
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
+# Update sharing permission
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update the properties of a permission by patching the resource.
+Update the properties of a sharing permission by patching the permission resource.
+
+Only the **roles** property can be modified this way.
 
 ## Permissions
 
@@ -18,13 +25,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/drive/items/{item-id}/permissions/{perm-id}
-PATCH /me/drive/root:/{path}:/permissions/{perm-id}
 PATCH /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
+PATCH /me/drive/items/{item-id}/permissions/{perm-id}
+PATCH /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
+PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## Request headers
+## Optional request headers
 
 | Name          | Type   | Description                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -45,13 +53,10 @@ If successful, this method returns a `200 OK` response code and updated [permiss
 
 ## Example
 
-##### Request
+Here is an example of the request that changes the role on the sharing permission to read-only.
 
-Here is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "update_permission"
-}-->
+<!-- {"blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite"} -->
+
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-id}
 Content-type: application/json
@@ -60,14 +65,12 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
-##### Response
+### Response
 
-Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permission"
-} -->
+If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the permission.
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -88,8 +91,8 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update permission",
-  "keywords": "",
+  "description": "Update an item's sharing permissions",
+  "keywords": "permission, permissions, sharing, change permissions, update permission",
   "section": "documentation",
   "tocPath": "OneDrive/Item/Update permission"
 }-->

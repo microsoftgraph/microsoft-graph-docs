@@ -45,7 +45,7 @@ GET https://graph.microsoft.com/beta/sites?select=siteCollection,webUrl&filter=s
 
 #### Response
 
-<!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
 ```json
 HTTP/1.1 200 OK

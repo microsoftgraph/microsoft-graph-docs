@@ -5,6 +5,8 @@ ms.date: 09/12/2017
 ---
 # System facet
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **System** facet indicates that the object is managed by the system for its own operation.
 Most apps should ignore items that have a System facet.
 

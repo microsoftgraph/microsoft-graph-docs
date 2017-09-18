@@ -5,6 +5,8 @@ ms.date: 09/12/2017
 ---
 # DefaultColumnValue resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **defaultColumnValue** on a [columnDefinition](columnDefinition.md) resource specifies the default value for this column.
 The default value can either be specified directly or as a formula.
 

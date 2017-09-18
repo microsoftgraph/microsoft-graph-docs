@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # Hashes resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **Hashes** resource groups available hashes into a single structure for an item.
 
 **Note:** Not all services provide a value for all hash properties listed.
@@ -43,6 +45,8 @@ If this is the case, the hash values on an item will be updated after the item i
 In OneDrive for Business and SharePoint Server 2016, **sha1Hash** and **crc32Hash** are not available.
 
 In OneDrive Personal, **quickXorHash** is not available.
+
+To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](../../code-snippets/quickxorhash.md).
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 

@@ -1,10 +1,15 @@
-# Delete permission
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
+# Delete a sharing permission
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Remove access to a [DriveItem](../resources/driveitem.md).
 
-Only permissions that are not inherited can be deleted.
+Only sharing permissions that are **not** inherited can be deleted.
 The **inheritedFrom** property must be `null`.
 
 ## Permissions
@@ -20,48 +25,38 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/drive/items/{item-id}/permissions/{perm-id}
-DELETE /me/drive/root:/{path}:/permissions/{perm-id}
-DELETE /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 DELETE /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
+DELETE /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/items/{item-id}/permissions/{perm-id}
+DELETE /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
+DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## Request headers
+## Optional request headers
 
 | Name          | Type   | Description                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
-## Request body
-Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns `204 No Content` response code.
-It does not return anything in the response body.
 
 ## Example
 
-##### Request
+This example removes the permission identified as {perm-id} from the item {item-id} in the current user's OneDrive.
 
-Here is an example of the request.
+<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
 
-<!-- {
-  "blockType": "request",
-  "name": "delete_permission"
-}-->
 ```http
 DELETE https://graph.microsoft.com/beta/me/drive/root/items/{item-id}/permissions/{perm-id}
 ```
 
-##### Response
+### Response
 
-Here is an example of the response.
+<!-- { "blockType": "response", "truncated": false } -->
 
-<!-- {
-  "blockType": "response",
-  "truncated": false
-} -->
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -74,8 +69,8 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete permission",
-  "keywords": "",
+  "description": "Remove an item's sharing permissions",
+  "keywords": "permission, permissions, sharing, remove permissions, delete permissions",
   "section": "documentation",
   "tocPath": "OneDrive/Item/Delete permission"
 }-->

@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 ---
 # DriveRecipient resource
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **DriveRecipient** resource represents a person, group, or other recipient to share with using the [invite](../api/driveitem_invite.md) action.
 
 ## JSON representation

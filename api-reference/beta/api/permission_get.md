@@ -1,9 +1,18 @@
-# Get permission
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
+# Get sharing permission
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of permission object.
+Return the effective sharing permission for a particular permission resource.
 
+Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
+Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.
+This property is an [ItemReference](../resources/itemReference.md) resource referencing the ancestor that the permission is inherited from.
+SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -17,16 +26,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/items/{item-id}/permissions/{perm-id}
-GET /me/drive/root:/{path}:/permissions/{perm-id}
 GET /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 GET /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
+GET /me/drive/items/{item-id}/permissions/{perm-id}
+GET /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
+GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
-## Request body
-Do not supply a request body for this method.
+This method support the [$select query parameter](../concepts/optional-query-parameters.md) to shape the response.
 
 ## Response
 
@@ -34,28 +42,24 @@ If successful, this method returns a `200 OK` response code and [Permission](../
 
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request to access a permission on the root folder.
+Here is an example of the request to access a permission on a folder.
 
-<!-- {
-  "blockType": "request",
-  "name": "get_permission"
-}-->
+<!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read" } -->
+
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-id}
 ```
-##### Response
-Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permission"
-} -->
+### Response
+
+If successful, this method returns a [Permission](../resources/permission.md) resource for the specified ID. 
+
+<!-- {"blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 762
 
 {
   "grantedTo": {
@@ -82,8 +86,8 @@ Permissions with a [**invitation**](../resources/sharinginvitation.md) facet rep
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get permission",
-  "keywords": "",
+  "description": "Get a DriveItem's sharing permissions",
+  "keywords": "permission, permissions, sharing",
   "section": "documentation",
   "tocPath": "OneDrive/Item/Get permission"
 }-->
