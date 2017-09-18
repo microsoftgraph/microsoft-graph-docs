@@ -88,7 +88,6 @@ In the previous table, the examples use `/drive`, but other pathes are valid too
 [identity-set]: identityset.md
 [quota-facet]: quota.md
 [drive-resource]: drive.md
-[drive-activities]: ../api/activities_list.md
 [drive-get]: ../api/drive_get.md
 [item-get]: ../api/driveitem_get.md
 [item-changes]: ../api/driveitem_delta.md

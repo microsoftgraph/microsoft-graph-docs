@@ -88,7 +88,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | beta | Added the **driveType** property to the [ItemReference][ItemReference-beta] complex type. |
 | Deletion | beta | Removed the **tenantId** property from [SharepointIds][SharepointIds-beta] complex type. |
 | Addition | v1.0 | Added the **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** and **frameRate** properties to the [Video][Video-beta] complex type. |
-| Addition | beta | Added the [CheckIn][CheckIn-beta], [CheckOut][CheckOut-beta], and [ValidatePermission][ValidatePermission-beta] actions on the [DriveItem][DriveItem-beta] resource. |
+| Addition | beta | Added the [CheckIn][CheckIn-beta] and [CheckOut][CheckOut-beta] actions on the [DriveItem][DriveItem-beta] resource. |
 | Addition | beta | Added the **expirationDateTime**, **password**, **message**, and **recipients** properties on the [CreateLink][CreateLink-beta] action on a [DriveItem][DriveItem-beta] resource. |
 
 [Drive]: ../api-reference/v1.0/resources/drive.md
@@ -120,7 +120,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 [Video-beta]: ../api-reference/beta/resources/video.md
 [CheckIn-beta]: ../api-reference/beta/api/driveitem_checkin.md
 [CheckOut-beta]: ../api-reference/beta/api/driveitem_checkout.md
-[ValidatePermission-beta]: ../api-reference/beta/api/driveitem_validatepermission.md
 [CreateLink-beta]: ../api-reference/beta/api/driveitem_createlink.md
 
 

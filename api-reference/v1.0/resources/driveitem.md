@@ -148,7 +148,6 @@ These properties are temporary and either a) define behavior the service should 
 **Note:** The @microsoft.graph.downloadUrl value is a short-lived URL and can't be cached.
 The URL will only be available for a short period of time (1 hour) before it is invalidated.
 
-
 ## Methods
 
 | Method                                                   | REST Path
@@ -187,10 +186,8 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [getting thumbnails]: ../api/driveitem_list_thumbnails.md
 [identitySet]: identitySet.md
 [image]: image.md
-[itemActivity]: itemActivity.md
 [itemReference]: itemReference.md
 [geoCoordinates]: geoCoordinates.md
-[List activities]: ../api/activities_list.md
 [package]: package.md
 [permission]: permission.md
 [photo]: photo.md
@@ -203,7 +200,6 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [thumbnailSet]: thumbnailSet.md
 [video]: video.md
 [user]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/users
-[publicationFacet]: publicationfacet.md
 
 <!-- {
   "type": "#page.annotation",

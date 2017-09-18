@@ -34,7 +34,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 ## Optional query parameters
 
-This method support the [$select query parameter](../concepts/optional-query-parameters.md) to shape the response.
+This method support the [$select query parameter](../../../concepts/query_parameters.md) to shape the response.
 
 ## Response
 

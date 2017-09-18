@@ -19,13 +19,11 @@ The following tasks are available for driveItemVersion resources.
 | [List versions][version-list]      | `GET /drive/items/{item-id}/versions`  |
 | [Get version][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
 | [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
-| [Delete version][version-delete]   | `DELETE /drive/items/{item-id}/versions/{version-id}`    |
 | [Restore version][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restore` |
 
 [version-list]: ../api/driveitem_list_versions.md
 [version-get]: ../api/driveitemversion_get.md
 [content-get]: ../api/driveitemversion_get_contents.md
-[version-delete]: ../api/driveitemversion_delete.md
 [version-restore]: ../api/driveitemversion_restore.md
 
 In the previous table, the examples use `/drive`, but there are many valid requests.

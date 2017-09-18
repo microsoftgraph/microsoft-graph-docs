@@ -46,8 +46,6 @@ In OneDrive for Business and SharePoint Server 2016, **sha1Hash** and **crc32Has
 
 In OneDrive Personal, **quickXorHash** is not available.
 
-To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](../../code-snippets/quickxorhash.md).
-
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
 
