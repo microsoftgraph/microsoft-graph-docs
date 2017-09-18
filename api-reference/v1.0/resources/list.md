@@ -25,7 +25,7 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 | [Create list item][]      | POST /lists/{list-id}
 
 [Get list]: ../api/list_get.md
-[Enumerate list items]: ../api/listItems_list.md
+[Enumerate list items]: ../api/listitem_list.md
 [Update list item]: ../api/listItem_update.md
 [Delete list item]: ../api/listItem_delete.md
 [Create list item]: ../api/listItem_create.md
