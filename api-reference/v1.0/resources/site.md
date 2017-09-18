@@ -49,7 +49,9 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
+  "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
 
   /* inherited from baseItem */
@@ -79,19 +81,23 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
 
 ## Relationships
 
-| Relationship name | Type                        | Description
-|:------------------|:----------------------------|:---------------------------
-| **contentTypes**  | Collection([contentType][]) | The collection of content types defined for this site.
-| **drive**         | [drive][]                   | The default drive (document library) for this site.
-| **drives**        | Collection([drive][])       | The collection of drives (document libraries) under this site.
-| **items**         | Collection([baseItem][])    | Used to address any item contained in this site. This collection cannot be enumerated.
-| **sites**         | Collection([site][])        | The collection of the sub-sites under this site.
-| **onenote**       | [onenote][]                 | Calls the OneNote service for notebook related operations.
+| Relationship name | Type                             | Description
+|:------------------|:---------------------------------|:----------------------
+| **columns**       | Collection([columnDefinition][]) | The collection of column definitions reusable across lists under this site.
+| **contentTypes**  | Collection([contentType][])      | The collection of content types defined for this site.
+| **drive**         | [drive][]                        | The default drive (document library) for this site.
+| **drives**        | Collection([drive][])            | The collection of drives (document libraries) under this site.
+| **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
+| **lists**         | Collection([list][])             | The collection of lists under this site.
+| **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
+| **onenote**       | [onenote][]                      | Calls the OneNote service for notebook related operations.
 
+[columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
 [contentType]: contentType.md
 [drive]: drive.md
 [identitySet]: identityset.md
+[list]: list.md
 [site]: site.md
 [onenote]: onenote.md
 

@@ -13,11 +13,11 @@ Search across a SharePoint tenant for [sites][] that match provided keywords.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+|Permission type                        | Permissions (from least to most privileged)
+|:--------------------------------------|:-------------------------------------
+|Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All
+|Delegated (personal Microsoft account) | Not supported.
+|Application                            | Sites.Read.All, Sites.ReadWrite.All
 
 ## HTTP request
 
@@ -29,16 +29,16 @@ GET /sites?search={query}
 
 ## Response
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
+<!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
   "value": [
     {
-      "id": "da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740",
+      "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740",
       "name": "Team A Site",
       "description": "",
       "createdDateTime": "2016-10-18T03:05:59Z",
@@ -46,7 +46,7 @@ Content-type: application/json
       "webUrl": "https://contoso.sharepoint.com/sites/siteA"
     },
     {
-      "id": "da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851",
+      "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851",
       "name": "Team B Site",
       "description": "",
       "createdDateTime": "2016-10-18T03:05:59Z",

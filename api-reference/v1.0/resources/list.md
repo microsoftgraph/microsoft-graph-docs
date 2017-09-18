@@ -16,13 +16,13 @@ You can, however, create or update [list items][listItem].
 
 All examples below are relative to a site, eg: `https://graph.microsoft.com/beta/sites/{site-id}`.
 
-| Common task              | HTTP method
-|:-------------------------|:------------------------------
-| [Get list][]             | GET /lists/{list-id}
-| [Enumerate list items][] | GET /lists/{list-id}/items
-| [Update list item][]     | PATCH /lists/{list-id}/items/{item-id}
-| [Delete list item][]     | DELETE /lists/{list-id}/items/{item-id}
-| [Create list item][]     | POST /lists/{list-id}
+| Common task               | HTTP method
+|:--------------------------|:------------------------------
+| [Get list][]              | GET /lists/{list-id}
+| [Enumerate list items][]  | GET /lists/{list-id}/items
+| [Update list item][]      | PATCH /lists/{list-id}/items/{item-id}
+| [Delete list item][]      | DELETE /lists/{list-id}/items/{item-id}
+| [Create list item][]      | POST /lists/{list-id}
 
 [Get list]: ../api/list_get.md
 [Enumerate list items]: ../api/listItems_list.md
@@ -34,8 +34,10 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 
 Here is a JSON representation of a **list** resource.
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.list",
-       "keyProperty": "id", "optionalProperties": [ "items", "drive"] } -->
+<!-- { "blockType": "resource", 
+       "@odata.type": "microsoft.graph.list",
+       "keyProperty": "id", 
+       "optionalProperties": [ "items", "drive"] } -->
 
 ```json
 {
@@ -47,7 +49,7 @@ Here is a JSON representation of a **list** resource.
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
-    "template": "documentLibrary | generic | survey | links | announcements | contacts ..."
+    "template": "documentLibrary | genericList | survey | links | announcements | contacts ..."
   },
   "system": false,
 

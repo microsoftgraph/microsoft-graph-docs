@@ -40,11 +40,6 @@ To access the root SharePoint site with a relative path:
 GET /sites/{hostname}:/{relative-path}
 ```
 
-### Request Body
-
-Do not supply a request body with this method.
-
-
 ## HTTP Response
 
 This method returns a [site][] resource for the site referenced by the unique identifier.

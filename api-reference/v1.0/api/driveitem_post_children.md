@@ -74,7 +74,7 @@ Content-Type: application/json
       "id": "309EC495-3E92-431D-9124-F0299633171D"
     }
   },
-  "createdDateTime": "20160920T14:34:00Z",
+  "createdDateTime": "2016-09-20T14:34:00Z",
   "eTag": "343F1FBD-E9B3-4DDE-BCA7-D61AEAFF44E5,1",
   "id": "ACEA49D1-1444-45A9-A1CB-68B1B28AE491",
   "lastModifiedBy": {
@@ -83,7 +83,7 @@ Content-Type: application/json
       "id": "309EC495-3E92-431D-9124-F0299633171D"
     }
   },
-  "lastModifiedDateTime": "20160920T14:34:00Z",
+  "lastModifiedDateTime": "2016-09-20T14:34:00Z",
   "name": "New Folder",
   "parentReference": {
     "driveId": "5FE38E3C-051C-4D55-9B83-8A437658275B",

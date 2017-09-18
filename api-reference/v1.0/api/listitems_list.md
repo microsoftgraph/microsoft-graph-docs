@@ -40,7 +40,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 
 #### Response
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 
 ```json
 HTTP/1.1 200 OK

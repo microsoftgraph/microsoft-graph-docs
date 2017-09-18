@@ -31,13 +31,13 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-| Property name   | Type         | Description
-|:----------------|:-------------|:--------------------
-| **application** | [Identity][] | Information about the application that created the sharing link.
-| **type**        | string       | The type of the link created.
-| **scope**       | string       | The scope of the link represented by this permission. Value `anonymous` indicates the link is usable by anyone, `organization` indicates the link is only usable for users signed into the same tenant.
-| **webHtml**     | string       | For embeddable links, this property contains the HTML code for an `<iframe>` element that will embed the item in a webpage.
-| **webUrl**      | string       | A URL that opens the item in the browser on the OneDrive website.
+| Property    | Type          | Description
+|:------------|:--------------|:-------------------------------------
+| application | [identity][]  | The app the link is associated with.
+| type        | String        | The type of the link created.
+| scope       | String        | The scope of the link represented by this permission. Value `anonymous` indicates the link is usable by anyone, `organization` indicates the link is only usable for users signed into the same tenant.
+| webHtml     | String        | For `embed` links, this property contains the HTML code for an `<iframe>` element that will embed the item in a webpage.
+| webUrl      | String        | A URL that opens the item in the browser on the OneDrive website.
 
 [Identity]: identity.md
 
@@ -45,11 +45,11 @@ Here is a JSON representation of the resource.
 
 This table defines the possible values for the **type** property:
 
-| Value   | Role    | Description                                                                     |
-|:--------|:--------|:--------------------------------------------------------------------------------|
-| `view`  | `read`  | A view-only sharing link, allowing read-only access.                            |
-| `edit`  | `write` | An edit sharing link, allowing read-write access.                               |
-| `embed` | `read`  | A view-only sharing link that can be used to embed content into a host webpage. Embed links are not available for OneDrive for Business or SharePoint. |
+| Value   | Role    | Description
+|:--------|:--------|:---------------------------------------------------------
+| `view`  | `read`  | A view-only sharing link, allowing read-only access.
+| `edit`  | `write` | An edit sharing link, allowing read-write access.
+| `embed` | `read`  | A view-only sharing link that can be used to embed content into a host webpage. Embed links are not available for OneDrive for Business or SharePoint.
 
 ## Scope enumeration
 

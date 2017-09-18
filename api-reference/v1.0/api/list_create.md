@@ -52,7 +52,7 @@ Content-Type: application/json
     }
   ],
   "list": {
-    "template": "generic"
+    "template": "genericList"
   }
 }
 ```
@@ -60,7 +60,7 @@ Content-Type: application/json
 **Note:** Custom columns are optional.
 
 In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.
-If the **list** facet or **template** is unspecified, the list defaults to the `generic` template, which includes a _Title_ column.
+If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.
 
 ## Response
 
