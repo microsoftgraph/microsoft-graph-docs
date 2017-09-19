@@ -51,7 +51,7 @@ Here is a JSON representation of the resource
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|The contents of the post. This is a default property. This property can be null.|
-|categories|String collection|The categories associated with the post.|
+|categories|String collection|The categories associated with the post. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) that has been defined for a user.|
 |changeKey|String|Identifies the version of the post. Every time the post is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |conversationId|String|Unique ID of the conversation. Read-only.|
 |conversationThreadId|String|Unique ID of the conversation thread. Read-only.|

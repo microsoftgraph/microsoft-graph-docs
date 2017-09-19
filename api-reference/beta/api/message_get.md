@@ -92,7 +92,7 @@ Note: The response object shown here is truncated for brevity. All of the proper
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 5236
+Content-length: 523
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages/$entity",
@@ -130,7 +130,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
+Content-length: 2248
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages/$entity",
@@ -262,6 +262,55 @@ Content-length: 1550
         "contentType":"text",
         "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\nThanks!\r\n"
     }
+}
+```
+
+##### Request 4
+
+The fourth example shows how to get the Internet message headers of a specific message.  
+
+<!-- {
+  "blockType": "request",
+  "name": "get_message_internet_headers"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/messages('AAMkAGVmMDEz')?$select=internetMessageHeaders
+```
+
+##### Response 4
+
+Here is an example of the response. Note: The number of Internet message headers in the response object has been reduced for brevity.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.message"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 355
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/messages(internetMessageHeaders)/$entity",
+  "@odata.type":"#microsoft.graph.eventMessageRequest",
+  "@odata.etag":"W/\"CwAAABYAAAAiIsqMbYjsT5e/T7KzowPTAAAa/qUB\"",
+  "id":"AAMkAGVmMDEz",
+  "internetMessageHeaders":[
+    {
+      "name":"Content-Type",
+      "value":"application/ms-tnef"
+    },
+    {
+      "name":"Content-Transfer-Encoding",
+      "value":"binary"
+    },
+    {
+      "name":"Subject",
+      "value":"Cloud and Mobile Working Group"
+    }
+  ]
 }
 ```
 

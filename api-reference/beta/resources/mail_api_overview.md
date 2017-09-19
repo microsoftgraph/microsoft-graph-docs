@@ -36,15 +36,19 @@ The Microsoft Graph API also provides methods and actions that support common us
 |:---------------|:--------|:----------|
 | **User-centric actions** | | |
 | Draft, read, reply, forward, send, update, or delete messages | [message](../resources/message.md) | [Methods of message](../resources/message.md#methods) |
-| Delegate another user to send messages on behalf of the mailbox owner | [message](../resources/message.md) | Setting the **from** and **sender** properties in a [message](../resources/message.md) |
+| Delegate another user to send messages on behalf of the mailbox owner | [message](../resources/message.md) | Set the **from** and **sender** properties in a [message](../resources/message.md) |
 | Let user view more important messages first | [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) | [Focused Inbox](../resources/manage_focused_inbox.md) |
 | Add, get, or delete attachments of a message | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Methods of attachment](../resources/attachment.md#methods) |
+| Get language and time zone choices for a user | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser_supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser_supportedtimezones.md) |
 | Get or update a user's automatic reply, locale or time zone | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md) | [Get user's mailbox settings](../api/user_get_mailboxsettings.md), <br> [Update user's mailbox settings](../api/user_update_mailboxsettings.md) |
 | Get MailTips of other recipients' special status, such as out-of-office (preview) | [user (preview)](../resources/user.md), <br> [mailTips (preview)](../resources/mailtips.md) | [Get MailTips](../api/user_getmailtips.md) |
 | Alert user if mentioned in other messages (preview) | [mention (preview)](../resources/mention.md) | [Get details of @-mentions in a message](../api/message_get.md#request-2) |
 | Unsubscribe user from an email distribution list (preview) | [message (preview)](../resources/message.md) | [Unsubscribe](../api/message_unsubscribe.md) |
 | **Mail and folder management** | | |
 | Organize messages in a mail folder hierarchy | [mailFolder](../resources/mailfolder.md)  | [Methods of mailFolder](../resources/mailfolder.md#methods) |
+| Categorize messages | [outlookCategory (preview)](../resources/outlookcategory.md) | [Methods of outlookCategory](../resources/outlookcategory.md#methods) |
+| Use Inbox rules to automate actions such as forwarding specific incoming messages | [messageRule (preview)](../resources/messagerule.md) | [Methods of messageRule](../resources/messagerule.md#methods) |
+| Get Internet message headers of a message | [message (preview)](../resources/message.md) | [Get the **internetMessageHeaders** property of a message](../api/message_get.md#request-4). |
 | Search and filter messages | [message](../resources/message.md) | [Query parameters](../../../concepts/query_parameters.md)  |
 | Get notified of changes to messages in a folder | [subscription](../resources/subscription.md) | [Working with webhooks in Microsoft Graph](../resources/webhooks.md) |
 | Synchronize messages or mail folder hierarchy | [message](../resources/message.md) | [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md) |

@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.Read, User.ReadBasic.All    |
 |Delegated (personal Microsoft account) | User.Read    |
-|Application | Not supported. |
+|Application | User.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
