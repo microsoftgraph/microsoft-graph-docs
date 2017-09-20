@@ -2,8 +2,9 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
+title: Root
 ---
-# Root resource
+# Root resource type
 
 The **Root** facet indicates that an object is the top-most one in its hierarchy.
 The presence (non-null) of the facet value indicates that the object is the root.

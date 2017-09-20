@@ -2,6 +2,7 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
+title: Resumable file upload
 ---
 # Upload large files with an upload session
 
@@ -313,7 +314,23 @@ If-Match: {etag or ctag}
 
 **Note:** You can use the `@microsoft.graph.conflictBehavior` and `if-match` headers as expected in this call.
 
+### HTTP response
+
 If the file can be committed using the new metadata, an `HTTP 201 Created` or `HTTP 200 OK` response will be returned with the Item metadata for the uploaded file.
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "912310013A123",
+  "name": "largefile.vhd",
+  "size": 128,
+  "file": { }
+}
+```
 
 ## Best practices
 

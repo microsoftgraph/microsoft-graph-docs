@@ -2,6 +2,7 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
+title: Search for files
 ---
 # Search for a DriveItems within a drive
 

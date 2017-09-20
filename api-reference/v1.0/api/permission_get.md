@@ -2,8 +2,9 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
+title: Get permissions
 ---
-# Get sharing permission
+# Get sharing permission for a file or folder
 
 Return the effective sharing permission for a particular permission resource.
 

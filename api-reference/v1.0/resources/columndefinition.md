@@ -2,6 +2,7 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
+title: ColumnDefinition
 ---
 # ColumnDefinition resource
 
@@ -74,6 +75,12 @@ These properties are mutually exclusive -- a column can only have one of them sp
 Note: These properties correspond to SharePoint's [SPFieldType][] enumeration.
 While the most common field types are represented above, this beta API is still missing some.
 In those cases, none of the column type facets will be populated, and the column will only have its basic properties.
+
+## Remarks
+
+ColumnDefinitions and field values for `hidden` columns are not shown by default.
+To see them when listing **columnDefinitions**, include `hidden` in your `$select` statement.
+To see them when showing **field** values on [listItems][listItem], include the desired columns by name in your `$select` statement.
 
 [booleanColumn]: booleanColumn.md
 [calculatedColumn]: calculatedColumn.md

@@ -2,8 +2,9 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
+title: Remove access to an item
 ---
-# Delete a sharing permission
+# Delete a sharing permission from a file or folder
 
 Remove access to a [DriveItem](../resources/driveitem.md).
 
