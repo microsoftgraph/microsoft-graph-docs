@@ -23,6 +23,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/cl
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
+Do not supply a request body for this method.
 
 ## Response
 
