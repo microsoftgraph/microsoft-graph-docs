@@ -2,6 +2,7 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
+title: Restore a previous version of a SharePoint list item
 ---
 # Restore a previous version of a ListItem
 

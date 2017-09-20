@@ -2,16 +2,14 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
+title: Drive
 ---
 # Drive resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.
 
-The drive resource is the top level object within a user's OneDrive.
-A user will always have at least one Drive available--the default Drive.
-The drive resource also represents a document library in a SharePoint site or
-Office 365 group.
-
+OneDrive users will always have at least one drive available, their default drive.
+Users without a OneDrive license may not have a default drive available.
 
 ## JSON representation
 

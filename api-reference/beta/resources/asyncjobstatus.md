@@ -2,6 +2,7 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
+title: AsyncJobStatus
 ---
 # AsyncJobStatus resource
 
@@ -15,7 +16,7 @@ The following API calls return **AsyncJobStatus** resources:
 
 ## JSON representation
 
-<!-- { "blockType": "resource", "@type": "microsoft.graph.asyncJobStatus" } -->
+<!-- { "blockType": "resource", "@type": "microsoft.graph.asyncJobStatus", "@type.aka": "oneDrive.asyncOperationStatus" } -->
 
 ```json
 {

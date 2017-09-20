@@ -2,6 +2,7 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
+title: Change sharing permissions
 ---
 # Update sharing permission
 
@@ -24,6 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
@@ -39,7 +41,9 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 | if-match      | string | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
 ## Request body
+
 In the request body, supply the values for relevant fields that should be updated.
+
 Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 For best performance you shouldn't include existing values that haven't changed.
 
@@ -65,6 +69,7 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
+
 ### Response
 
 If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the permission.

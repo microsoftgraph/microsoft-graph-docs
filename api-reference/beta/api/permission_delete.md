@@ -2,8 +2,9 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
+title: Remove access to an item
 ---
-# Delete a sharing permission
+# Delete a sharing permission from a file or folder
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

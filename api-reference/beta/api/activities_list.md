@@ -1,8 +1,16 @@
-# Enumerate activities
+---
+author: daspek
+ms.author: dspektor
+ms.date: 09/10/2017
+title: File Activities
+---
+# Enumerate activities (preview)
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 List the recent [activities][] that took place on an item or under a hierarchy.
+
+**Note:** Activities is in a limited Preview and not yet available to all tenants.
 
 [activities]: ../resources/itemActivity.md
 
@@ -23,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /drives/{drive-id}/activities
 GET /drives/{drive-id}/items/{item-id}/activities
-GET /sites/{site-id}/activities
 GET /sites/{site-id}/lists/{list-id}/activities
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 ```
@@ -47,27 +54,91 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "action": {
-        "edit": {},
-        "version": {
-          "newVersion": "29.0"
+    "value": [
+        {
+            "action": {
+                "comment": {}
+            },
+            "actor": {
+                "user": {
+                    "displayName": "Xavier Wilke"
+                }
+            },
+            "id": "EJalEvjV1EgIYFQAAAAAAA==",
+            "times": {
+                "recordedTime": "2017-07-29T18:34:40Z"
+            }
+        },
+        {
+            "action": {
+                "edit": {},
+                "version": {
+                    "newVersion": "2.0"
+                }
+            },
+            "actor": {
+                "user": {
+                    "displayName": "Judith Clemons"
+                }
+            },
+            "id": "cInT6/fV1EgFYFQAAAAAAA==",
+            "times": {
+                "recordedTime": "2017-07-29T16:23:35Z"
+            }
+        },
+        {
+            "action": {
+                "mention": {
+                    "mentionees": [
+                        {
+                            "user": {
+                                "displayName": "Judith Clemons"
+                            }
+                        }
+                    ]
+                }
+            },
+            "actor": {
+                "user": {
+                    "displayName": "Misty Suarez"
+                }
+            },
+            "id": "EBJa0vPV1EjFX1QAAAAAAA==",
+            "times": {
+                "recordedTime": "2017-07-28T20:14:14Z"
+            }
+        },
+        {
+            "action": {
+                "rename": {
+                    "oldName": "Document2.docx"
+                }
+            },
+            "actor": {
+                "user": {
+                    "displayName": "Misty Suarez"
+                }
+            },
+            "id": "QFJFlfPV1Ei/X1QAAAAAAA==",
+            "times": {
+                "recordedTime": "2017-07-28T20:12:32Z"
+            }
+        },
+        {
+            "action": {
+                "create": {}
+            },
+            "actor": {
+                "user": {
+                    "displayName": "Misty Suarez"
+                }
+            },
+            "id": "IJydkPPV1Ei9X1QAAAAAAA==",
+            "times": {
+                "recordedTime": "2017-07-28T20:02:24Z"
+            }
         }
-      },
-      "actor": {
-        "user": {
-          "email": "dspektor@contoso.com",
-          "displayName": "Daron Spektor",
-          "self": {}
-        }
-      },
-      "id": "cMLn2OP61Egyfg4AAAAAAA==",
-      "times": {
-        "recordedDateTime": "2017-09-13T20:13:06Z"
-      }
-    }
-  ]
+    ]
 }
 ```
 

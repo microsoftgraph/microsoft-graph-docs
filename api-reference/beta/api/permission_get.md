@@ -2,19 +2,24 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
+title: Get permissions
 ---
-# Get sharing permission
+# Get sharing permission for a file or folder
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Return the effective sharing permission for a particular permission resource.
 
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
+
 Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.
 This property is an [ItemReference](../resources/itemReference.md) resource referencing the ancestor that the permission is inherited from.
+
 SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -25,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 GET /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
@@ -32,6 +38,7 @@ GET /me/drive/items/{item-id}/permissions/{perm-id}
 GET /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
+
 ## Optional query parameters
 
 This method support the [$select query parameter](../../../concepts/query_parameters.md) to shape the response.

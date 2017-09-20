@@ -2,6 +2,7 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
+title: DriveItem
 ---
 # DriveItem resource type
 
@@ -175,6 +176,7 @@ The URL will only be available for a short period of time (1 hour) before it is 
 | [Add permissions](../api/driveitem_invite.md)            | `POST /drive/items/{item-id}/invite`
 | [List permissions](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Delete permission](../api/permission_delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+
 
 ## Remarks
 

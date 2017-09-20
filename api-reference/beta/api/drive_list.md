@@ -2,6 +2,7 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
+title: List Drives
 ---
 # List available drives
 
@@ -66,9 +67,9 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.
 
 <!-- { "blockType": "response", 
-       "@odata.type": "Collection(microsoft.graph.drive)", 
-       "truncated": true,
-       "name": ["enum-drives", "user-list-drives", "group-list-drives", "site-list-drives"] } -->
+       "@odata.type": "Collection(microsoft.graph.drive)",
+       "name": ["group-list-drives", "site-list-drives", "user-list-drives", "enum-drives"],
+       "truncated": true } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -108,6 +109,10 @@ Most users will only have a single Drive resource.
 
 Groups and Sites may have multiple Drive resources available.
 
+Drives with the [system][] facet are hidden by default.
+To list them, include `system` in your `$select` statement.
+
+[system]: ../resources/systemFacet.md
 
 <!-- {
   "type": "#page.annotation",
