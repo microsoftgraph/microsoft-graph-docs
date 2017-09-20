@@ -10,16 +10,19 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-| Addition | Beta | Added the **locations** property to the [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) resource to support organizing an event that attendees can attend from more than one location. |
+| Addition | Beta | Added the [findRoomLists](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/findroomlists) and [findRooms](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/findrooms) functions to the [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user) entity. |
+| Addition | Beta | Added the **locations** property to the [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) entity to support organizing an event that attendees can attend from more than one location. |
 | Addition | Beta | Added the **locationType** property to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type.|
 | Addition | Beta | Added the **uniqueId** and **uniqueIdType** properties to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type. These properties are only for internal use at this point.|
 
 
-### Outlook Inbox message rules
+### Outlook mail
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-| Addition | Beta | Added the **messageRules** navigation property to the [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) resource. **messageRules** is a collection of [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) instances. |
+| Addition | Beta | Added the **internetMessageHeaders** property to the [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/message) entity. |
+| Addition | Beta | Added the [internetMessageHeader](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/internetmessageheader) complex type.|
+| Addition | Beta | Added the **messageRules** navigation property to the [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) entity. **messageRules** is a collection of [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) instances. |
 | Addition | Beta | Added the [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) entity, and [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates), and [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange) complex types.  |
 | Addition | Beta | Added the following CRUD operations for message rules: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update), and [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete). |
 

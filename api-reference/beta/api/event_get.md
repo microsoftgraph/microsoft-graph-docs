@@ -186,9 +186,8 @@ The request also uses a `$select` query parameter to return specific properties.
   "name": "get_event_in_text"
 }-->
 ```http
-Prefer: outlook.body-content-type="text"
-
-GET https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAoZDOFAAA=')?$select=subject,body,bodyPreview  
+GET https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAoZDOFAAA=')?$select=subject,body,bodyPreview
+Prefer: outlook.body-content-type="text"  
 ```
 ##### Response 2
 Here is an example of the response. The **body** property is returned in text format. 

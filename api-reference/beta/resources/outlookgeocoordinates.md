@@ -18,12 +18,13 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "accuracy": 1024,
-  "altitude": 1024,
-  "altitudeAccuracy": 1024,
-  "latitude": 1024,
-  "longitude": 1024
+  "accuracy": 1024.13,
+  "altitude": 1024.13,
+  "altitudeAccuracy": 1024.13,
+  "latitude": 1024.13,
+  "longitude": 1024.13
 }
+
 
 ```
 ## Properties

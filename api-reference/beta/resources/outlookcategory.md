@@ -73,6 +73,16 @@ Here is a JSON representation of the resource.
 
 ```
 
+## Methods
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[List categories](../api/outlookuser_list_mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) collection |Get all the categories that have been defined for the user.|
+|[Get category](../api/outlookcategory_get.md) | [outlookCategory](../resources/outlookcategory.md) |Get the properties and relationships of the specified **outlookCategory** object.|
+|[Create](../api/outlookuser_post_mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |Create an **outlookCategory** object in the user's master list of categories.|
+|[Update](../api/outlookcategory_update.md) | [outlookCategory](../resources/outlookcategory.md) |Update the writable property, **color**, of the specified **outlookCategory** object. |
+|[Delete](../api/outlookcategory_delete.md) | None |Delete the specified **outlookCategory** object. |
+
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
