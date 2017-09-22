@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /reports/Office365ActiveUserDetail(period='D7')
-GET /reports/Office365ActiveUserDetail(date='2017-09-01')
+GET /reports/Office365ActiveUserDetail(date=2017-09-01)
 ```
 
 ## Optional query parameters
@@ -38,7 +38,7 @@ In the request URL, provide following query parameters with values.
 | Parameter | Type       | Description                              |
 | :-------- | :--------- | :--------------------------------------- |
 | period    | PeriodType | Specifies the aggregate type. The value must be one of the following: D7, D30, D90, or D180. D7 represents a report on the last 7 days. |
-| date      | String     | Specifies the day to a view of the users that performed an activity on that day. Must have a format of YYYY-MM-DD. Only available for the last 30 days. |
+| date      | Date       | Specifies the day to a view of the users that performed an activity on that day. Must have a format of YYYY-MM-DD. Only available for the last 30 days. |
 
 > **Note:** You need to set either period or date in the URL.
 
@@ -58,7 +58,7 @@ Many HTTP client libraries will automatically follow the 302 redirection and sta
 
 Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
 
-The CSV file has the following properties.
+The CSV file has the following headers for columns.
 
 | Property                               |
 | :------------------------------------- |

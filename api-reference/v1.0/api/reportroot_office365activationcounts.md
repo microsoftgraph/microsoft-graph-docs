@@ -39,7 +39,7 @@ Many HTTP client libraries will automatically follow the 302 redirection and sta
 
 Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
 
-The CSV file has the following properties.
+The CSV file has the following headers for columns.
 
 | Property            |
 | :------------------ |
