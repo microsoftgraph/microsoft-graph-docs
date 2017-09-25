@@ -75,18 +75,18 @@ Content-Type: application/json
 Content-Length: 335
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsuseractivitysummary)", 
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.teamsuseractivitysummary", 
-            "reportRefreshDate": "2017-09-01", 
-            "reportDate": "2017-09-01", 
-            "teamsChatMessages": 26, 
-            "privateChatMessages": 17, 
-            "calls": 4, 
-            "meetings": 0, 
-            "reportPeriod": "7"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsuseractivitysummary)", 
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.teamsuseractivitysummary", 
+      "reportRefreshDate": "2017-09-01", 
+      "reportDate": "2017-09-01", 
+      "teamsChatMessages": 26, 
+      "privateChatMessages": 17, 
+      "calls": 4, 
+      "meetings": 0, 
+      "reportPeriod": "7"
+    }
+  ]
 }
 ```

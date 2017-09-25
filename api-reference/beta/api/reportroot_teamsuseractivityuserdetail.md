@@ -90,25 +90,25 @@ Content-Type: application/json
 Content-Length: 506
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityUserDetail)", 
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.teamsUserActivityUserDetail", 
-            "reportRefreshDate": "2017-09-01", 
-            "userPrincipalName": "userPrincipalName-value", 
-            "lastActivityDate": "2017-09-01", 
-            "isDeleted": false, 
-            "deletedDate": null, 
-            "assignedProducts": [
-                "OFFICE 365 ENTERPRISE E5"
-            ], 
-            "teamsChatMessageCount": 0, 
-            "privateChatMessageCount": 49, 
-            "callCount": 2, 
-            "meetingCount": 0, 
-            "otherCount": 74, 
-            "reportPeriod": "7"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityUserDetail)", 
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.teamsUserActivityUserDetail", 
+      "reportRefreshDate": "2017-09-01", 
+      "userPrincipalName": "userPrincipalName-value", 
+      "lastActivityDate": "2017-09-01", 
+      "isDeleted": false, 
+      "deletedDate": null, 
+      "assignedProducts": [
+        "OFFICE 365 ENTERPRISE E5"
+      ], 
+      "teamsChatMessageCount": 0, 
+      "privateChatMessageCount": 49, 
+      "callCount": 2, 
+      "meetingCount": 0, 
+      "otherCount": 74, 
+      "reportPeriod": "7"
+    }
+  ]
 }
 ```

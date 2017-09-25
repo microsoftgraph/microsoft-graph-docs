@@ -90,23 +90,23 @@ Content-Type: application/json
 Content-Length: 431
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(teamsAppUsageAppsUserCounts)", 
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.teamsAppUsageUserDetail", 
-            "reportRefreshDate": "2017-09-01", 
-            "userPrincipalName": "userPrincipalName-value", 
-            "lastActivityDate": "2017-09-01", 
-            "isDeleted": false, 
-            "deletedDate": null, 
-            "web": false, 
-            "windowsPhone": false, 
-            "ios": true, 
-            "mac": false, 
-            "androidPhone": false, 
-            "windows": true, 
-            "reportPeriod": "7"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(teamsAppUsageAppsUserCounts)", 
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.teamsAppUsageUserDetail", 
+      "reportRefreshDate": "2017-09-01", 
+      "userPrincipalName": "userPrincipalName-value", 
+      "lastActivityDate": "2017-09-01", 
+      "isDeleted": false, 
+      "deletedDate": null, 
+      "web": false, 
+      "windowsPhone": false, 
+      "ios": true, 
+      "mac": false, 
+      "androidPhone": false, 
+      "windows": true, 
+      "reportPeriod": "7"
+    }
+  ]
 }
 ```

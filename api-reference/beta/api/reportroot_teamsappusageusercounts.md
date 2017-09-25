@@ -77,20 +77,20 @@ Content-Type: application/json
 Content-Length: 326
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(teamsAppUsageAppsUserCounts)", 
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.teamsAppUsageUserCounts", 
-            "reportRefreshDate": "2017-09-01", 
-            "web": 13, 
-            "windowsPhone": 0, 
-            "androidPhone": 22, 
-            "ios": 75, 
-            "mac": 16, 
-            "windows": 257, 
-            "reportDate": "2017-09-01", 
-            "reportPeriod": "7"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(teamsAppUsageAppsUserCounts)", 
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.teamsAppUsageUserCounts", 
+      "reportRefreshDate": "2017-09-01", 
+      "web": 13, 
+      "windowsPhone": 0, 
+      "androidPhone": 22, 
+      "ios": 75, 
+      "mac": 16, 
+      "windows": 257, 
+      "reportDate": "2017-09-01", 
+      "reportPeriod": "7"
+    }
+  ]
 }
 ```
