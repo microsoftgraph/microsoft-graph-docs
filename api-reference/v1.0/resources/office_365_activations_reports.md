@@ -5,6 +5,6 @@
 ## Methods
 | Method                                   | Return Type | Description                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Get Office365ActivationsUserDetail](../api/reportroot_office365activationsuserdetail.md) | Stream      | Get an Office 365 activations user detail report. |
-| [Get Office365ActivationCounts](../api/reportroot_office365activationcounts.md) | Stream      | Get an Office 365 activation counts report. |
-| [Get Office365ActivationsUserCounts](../api/reportroot_office365activationsusercounts.md) | Stream      | Get an Office 365 activations user counts report. |
+| [Get Office365ActivationsUserDetail report](../api/reportroot_office365activationsuserdetail.md) | Stream      | Get an Office 365 activations user detail report. |
+| [Get Office365ActivationCounts report](../api/reportroot_office365activationcounts.md) | Stream      | Get an Office 365 activation counts report. |
+| [Get Office365ActivationsUserCounts report](../api/reportroot_office365activationsusercounts.md) | Stream      | Get an Office 365 activations user counts report. |
