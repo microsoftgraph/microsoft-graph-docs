@@ -20,13 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/Office365ActiveUserCounts(period='D7')
 ```
 
-## Request headers
-
-| Name          | Description               |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
-
-## Request body
+## Request parameters
 
 In the request URL, provide following query parameters with values.
 
@@ -41,6 +35,12 @@ The following PeriodType are available in this report:
 - D90
 - D180
 
+## Request headers
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+
 ## Response
 
 If successful, this method returns `302 Found` response redirecting to a pre-authenticated download URL for the report.
@@ -52,7 +52,7 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 The CSV file has the following headers for columns.
 
-| Property            |
+| Column headers      |
 | :------------------ |
 | Report Refresh Date |
 | Office 365          |

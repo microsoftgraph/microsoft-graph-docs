@@ -26,10 +26,6 @@ GET /reports/Office365ActivationCounts
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
-## Request body
-
-Do not supply a request body for this method.
-
 ## Response
 
 If successful, this method returns `302 Found` response redirecting to a pre-authenticated download URL for the report.
@@ -41,7 +37,7 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 The CSV file has the following headers for columns.
 
-| Property            |
+| Column headers      |
 | :------------------ |
 | Report Refresh Date |
 | Product Type        |
@@ -66,14 +62,13 @@ GET https://graph.microsoft.com/v1.0/reports/Office365ActivationCounts
 #### Response
 
 The following example shows the response.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the downloading CSV file will have the schema as follows.
+Follow the 302 redirection and the CSV file that you download has the column headings that are listed below.
 
 ```http
 HTTP/1.1 200 OK

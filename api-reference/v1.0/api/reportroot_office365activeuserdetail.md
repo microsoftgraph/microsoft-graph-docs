@@ -21,17 +21,7 @@ GET /reports/Office365ActiveUserDetail(period='D7')
 GET /reports/Office365ActiveUserDetail(date=2017-09-01)
 ```
 
-## Optional query parameters
-
-This method supports the `$top` and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
-
-## Request headers
-
-| Name          | Description               |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
-
-## Request body
+## Request parameters
 
 In the request URL, provide following query parameters with values.
 
@@ -49,6 +39,14 @@ The following **PeriodType** are available in this report:
 - D90
 - D180
 
+This method supports the `$top` and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
+
+## Request headers
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+
 ## Response
 
 If successful, this method returns `302 Found` response redirecting to a pre-authenticated download URL for the report.
@@ -60,7 +58,7 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 The CSV file has the following headers for columns.
 
-| Property                               |
+| Column headers                         |
 | :------------------------------------- |
 | Report Refresh Date                    |
 | User Principal Name                    |
