@@ -1,6 +1,7 @@
 ﻿# iosManagedAppProtection resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device
@@ -9,7 +10,7 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List iosManagedAppProtections](../api/intune_mam_iosmanagedappprotection_list.md)|[iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) collection|List properties and relationships of the [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) objects.|
 |[Get iosManagedAppProtection](../api/intune_mam_iosmanagedappprotection_get.md)|[iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md)|Read properties and relationships of the [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) object.|
 |[Create iosManagedAppProtection](../api/intune_mam_iosmanagedappprotection_create.md)|[iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md)|Create a new [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) object.|
@@ -17,13 +18,10 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |[Update iosManagedAppProtection](../api/intune_mam_iosmanagedappprotection_update.md)|[iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md)|Update the properties of a [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) object.|
 |[updateMobileAppIdentifierDeployments action](../api/intune_mam_iosmanagedappprotection_updatemobileappidentifierdeployments.md)|None|Not yet documented|
 |[updateTargetedSecurityGroups action](../api/intune_mam_iosmanagedappprotection_updatetargetedsecuritygroups.md)|None|Not yet documented|
-|[List directoryObjects](../api/intune_mam_directoryobject_list.md)|[directoryObject](../resources/intune_mam_directoryobject.md) collection|List properties and relationships of the [directoryObject](../resources/intune_mam_directoryobject.md) objects.|
-|[List mobileAppIdentifierDeployments](../api/intune_mam_mobileappidentifierdeployment_list.md)|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List properties and relationships of the [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) objects.|
-|[Get managedAppPolicyDeploymentSummary](../api/intune_mam_managedapppolicydeploymentsummary_get.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Read properties and relationships of the [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
@@ -63,7 +61,7 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 
 ## Relationships
 |Relationship|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |targetedSecurityGroups|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Navigation property to list of security groups to which the configuration is deployed Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed.|
 |deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration.|
@@ -76,7 +74,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.iosManagedAppProtection"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
   "displayName": "String",

@@ -1,31 +1,37 @@
 ﻿# Get windowsManagedDevice
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [windowsManagedDevice](../resources/intune_devices_windowsmanageddevice.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_devices_permissions_reference.md).
 
-*DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 GET /managedDevices/{managedDevicesId}
-GET /users/{usersId}/managedDevices{managedDeviceId}
-GET /deviceManagement/managedDevices{managedDeviceId}
-GET /deviceManagement/deviceManagementScripts{deviceManagementScriptId}/deviceRunStates{deviceManagementScriptDeviceStateId}/managedDevice
-GET /deviceManagement/deviceManagementScripts{deviceManagementScriptId}/deviceRunStates{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps{detectedAppId}/managedDevices{managedDeviceId}
+GET /users/{usersId}/managedDevices/{managedDeviceId}
+GET /deviceManagement/managedDevices/{managedDeviceId}
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
@@ -38,16 +44,16 @@ If successful, this method returns a `200 OK` response code and [windowsManagedD
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 GET https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3594
+Content-Length: 5652
 
 {
   "value": {
@@ -107,6 +113,7 @@ Content-Length: 3594
     "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
     "aadRegistered": true,
     "enrollmentType": "userEnrollment",
+    "deviceEnrollmentType": "userEnrollment",
     "lostModeState": "enabled",
     "activationLockBypassCode": "Activation Lock Bypass Code value",
     "emailAddress": "Email Address value",
@@ -136,6 +143,41 @@ Content-Length: 3594
       "deviceConfiguration": true,
       "compliancePolicy": true,
       "windowsUpdateForBusiness": true
+    },
+    "wiFiMacAddress": "Wi Fi Mac Address value",
+    "deviceHealthAttestationState": {
+      "@odata.type": "microsoft.graph.deviceHealthAttestationState",
+      "lastUpdateDateTime": "Last Update Date Time value",
+      "contentNamespaceUrl": "https://example.com/contentNamespaceUrl/",
+      "deviceHealthAttestationStatus": "Device Health Attestation Status value",
+      "contentVersion": "Content Version value",
+      "issuedDateTime": "2016-12-31T23:58:22.1231038-08:00",
+      "attestationIdentityKey": "Attestation Identity Key value",
+      "resetCount": 10,
+      "restartCount": 12,
+      "dataExcutionPolicy": "Data Excution Policy value",
+      "bitLockerStatus": "Bit Locker Status value",
+      "bootManagerVersion": "Boot Manager Version value",
+      "codeIntegrityCheckVersion": "Code Integrity Check Version value",
+      "secureBoot": "Secure Boot value",
+      "bootDebugging": "Boot Debugging value",
+      "operatingSystemKernelDebugging": "Operating System Kernel Debugging value",
+      "codeIntegrity": "Code Integrity value",
+      "testSigning": "Test Signing value",
+      "safeMode": "Safe Mode value",
+      "windowsPE": "Windows PE value",
+      "earlyLaunchAntiMalwareDriverProtection": "Early Launch Anti Malware Driver Protection value",
+      "virtualSecureMode": "Virtual Secure Mode value",
+      "pcrHashAlgorithm": "Pcr Hash Algorithm value",
+      "bootAppSecurityVersion": "Boot App Security Version value",
+      "bootManagerSecurityVersion": "Boot Manager Security Version value",
+      "tpmVersion": "Tpm Version value",
+      "pcr0": "Pcr0 value",
+      "secureBootConfigurationPolicyFingerPrint": "Secure Boot Configuration Policy Finger Print value",
+      "codeIntegrityPolicy": "Code Integrity Policy value",
+      "bootRevisionListInfo": "Boot Revision List Info value",
+      "operatingSystemRevListInfo": "Operating System Rev List Info value",
+      "healthStatusMismatchInfo": "Health Status Mismatch Info value"
     }
   }
 }

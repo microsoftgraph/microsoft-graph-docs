@@ -1630,6 +1630,20 @@
         </Item>
       </Item>
       <Item text="Corporate Enrollment" url="/en-us/api-reference/beta/resources/intune_corporate_enrollment_conceptual">
+        <Item text="Active Directory Windows Autopilot deployment profile" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_update"/>
+        </Item>
+        <Item text="Azure AD Windows Autopilot deployment profile" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_azureadwindowsautopilotdeploymentprofile">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_update"/>
+        </Item>
         <Item text="DEP enrollment profile" url="/en-us/api-reference/beta/resources/intune_corpenrollment_depenrollmentprofile">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_delete"/>
@@ -3305,6 +3319,19 @@
             <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_list"/>
             <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_update"/>
         </Item>
+        <Item text="Device enrollment configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_get"/>
+          <Item text="assign action" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_assign"/>
+          <Item text="setPriority action" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_setpriority"/>
+        </Item>
+        <Item text="Device enrollment limit configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentlimitconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta"/>
+        </Item>
         <Item text="Device enrollment platform restrictions" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestrictions"/>
         <Item text="Device geolocation" url="/en-us/api-reference/beta/resources/intune_onboarding_devicegeolocation"/>
         <Item text="Device management Exchange connector" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector">
@@ -3315,20 +3342,44 @@
           <Item text="Sync" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_sync"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_update"/>
         </Item>
+        <Item text="Device enrollment platform restrictions configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_update"/>
+        </Item>
+        <Item text="Device enrollment Windows Hello for Business configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_update"/>
+        </Item>
         <Item text="Device management Exchange On-Premises policy" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeonpremisespolicy">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_get"/>
           <Item text="Get on-premises conditional access settings" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_get_onpremisesconditionalaccesssettings"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_update"/>
         </Item>
+        <Item text="Device management partner" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementpartner">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_update"/>
+        </Item>
         <Item text="Device operating system summary" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceoperatingsystemsummary"/>
+        <Item text="Enrollment configuration assignment" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_enrollmentconfigurationassignment">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_enrollmentconfigurationassignment_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_enrollmentconfigurationassignment_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_enrollmentconfigurationassignment_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_enrollmentconfigurationassignment_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_enrollmentconfigurationassignment_update"/>
+        </Item>
         <Item text="Hardware information" url="/en-us/api-reference/beta/resources/intune_onboarding_hardwareinformation"/>
         <Item text="Intune brand" url="/en-us/api-reference/beta/resources/intune_onboarding_intunebrand"/>
         <Item text="Located device action result" url="/en-us/api-reference/beta/resources/intune_onboarding_locatedeviceactionresult"/>
         <Item text="MIME content" url="/en-us/api-reference/beta/resources/intune_onboarding_mimecontent"/>
-        <Item text="On-premises conditional access settings" url="/en-us/api-reference/beta/resources/intune_onboarding_onpremisesconditionalaccesssettings">
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_onpremisesconditionalaccesssettings_get"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_onpremisesconditionalaccesssettings_update"/>
-        </Item>
         <Item text="Mobile threat defense connector" url="/en-us/api-reference/beta/resources/intune_onboarding_mobilethreatdefenseconnector">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_mobilethreatdefenseconnector_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_mobilethreatdefenseconnector_get"/>
@@ -3336,8 +3387,12 @@
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_mobilethreatdefenseconnector_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_mobilethreatdefenseconnector_update"/>
         </Item>
+        <Item text="On-premises conditional access settings" url="/en-us/api-reference/beta/resources/intune_onboarding_onpremisesconditionalaccesssettings">
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_onpremisesconditionalaccesssettings_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_onpremisesconditionalaccesssettings_update"/>
+        </Item>
         <Item text="Organization" url="/en-us/api-reference/beta/resources/intune_onboarding_organization">
-          <Item text="Dowload Apple push notification certificate signing request" url="/en-us/api-reference/beta/api/intune_onboarding_organization_downloadapplepushnotificationcertificatesigningrequest"/>
+          <Item text="Download Apple push notification certificate signing request" url="/en-us/api-reference/beta/api/intune_onboarding_organization_downloadapplepushnotificationcertificatesigningrequest"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_organization_get"/>
           <Item text="Get encryption public key" url="/en-us/api-reference/beta/api/intune_onboarding_organization_getencryptionpublickey"/>
           <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_organization_list"/>
@@ -3359,6 +3414,36 @@
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_get"/>
           <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_list"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_update"/>
+        </Item>
+        <Item text="Windows 10 enrollment completion page configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_update"/>
+        </Item>
+        <Item text="Windows 10 network boundary configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_windows10networkboundaryconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_update"/>
+        </Item>
+        <Item text="Windows Autopilot deployment profile" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotdeploymentprofile">
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_get"/>
+          <Item text="assign action" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_assign"/>
+        </Item>
+        <Item text="Windows Autopilot device identity" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotdeviceidentity">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_update"/>
+        </Item>
+        <Item text="Windows Autopilot settings" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotsettings">
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_update"/>
+          <Item text="sync action" url="/en-us/api-reference/beta"/>
         </Item>
       </Item>
       <Item text="Role based access control" url="/en-us/api-reference/beta/resources/intune_rbac_conceptual">

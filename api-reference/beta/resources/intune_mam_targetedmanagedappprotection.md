@@ -1,6 +1,7 @@
 ﻿# targetedManagedAppProtection resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Policy used to configure detailed management settings targeted to specific security groups
@@ -9,15 +10,14 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List targetedManagedAppProtections](../api/intune_mam_targetedmanagedappprotection_list.md)|[targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md) collection|List properties and relationships of the [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md) objects.|
 |[Get targetedManagedAppProtection](../api/intune_mam_targetedmanagedappprotection_get.md)|[targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|Read properties and relationships of the [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md) object.|
 |[updateTargetedSecurityGroups action](../api/intune_mam_targetedmanagedappprotection_updatetargetedsecuritygroups.md)|None|Not yet documented|
-|[List directoryObjects](../api/intune_mam_directoryobject_list.md)|[directoryObject](../resources/intune_mam_directoryobject.md) collection|List properties and relationships of the [directoryObject](../resources/intune_mam_directoryobject.md) objects.|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
@@ -54,7 +54,7 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 
 ## Relationships
 |Relationship|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |targetedSecurityGroups|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Navigation property to list of security groups to which the configuration is deployed|
 
 ## JSON Representation
@@ -65,7 +65,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.targetedManagedAppProtection"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppProtection",
   "displayName": "String",
