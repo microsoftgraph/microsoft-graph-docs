@@ -1,6 +1,6 @@
 # Get Office365ActiveUserCounts report
 
-Get an Office 365 active user counts report.
+Get the daily active users in the reporting period separated by product.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
 

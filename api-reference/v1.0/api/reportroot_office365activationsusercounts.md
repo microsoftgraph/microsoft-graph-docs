@@ -1,6 +1,6 @@
 # Get Office365ActivationsUserCounts report
 
-Get an Office 365 activations user counts report.
+Get the count of users that are enabled, and users that have activated the Office subscription on desktop or devices.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
