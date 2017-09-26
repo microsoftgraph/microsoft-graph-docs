@@ -75,13 +75,12 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 396
+Content-Length: 288
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.skypeForBusinessPeerToPeerActivityCounts)", 
   "value": [
     {
-      "@odata.type": "#microsoft.graph.skypeForBusinessPeerToPeerActivityCounts", 
       "im": 1177, 
       "audio": 107, 
       "video": 7, 

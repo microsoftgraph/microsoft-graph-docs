@@ -89,13 +89,12 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 589
+Content-Length: 441
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.yammerGroupsActivityUserDetail)", 
   "value": [
     {
-      "@odata.type": "#microsoft.graph.yammerGroupsActivityUserDetail", 
       "reportRefreshDate": "2017-09-01", 
       "groupDisplayName": "groupDisplayName-value", 
       "isDeleted": false, 

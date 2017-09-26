@@ -88,13 +88,12 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 609
+Content-Length: 450
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.oneDriveActivityUserDetail)", 
   "value": [
     {
-      "@odata.type": "#microsoft.graph.oneDriveActivityUserDetail", 
       "reportRefreshDate": "2017-09-01", 
       "userPrincipalName": "userPrincipalName-value", 
       "isDeleted": false, 

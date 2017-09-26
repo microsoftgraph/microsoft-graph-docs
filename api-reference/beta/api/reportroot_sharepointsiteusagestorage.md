@@ -72,13 +72,12 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 326
+Content-Length: 248
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.siteUsageStorage)", 
   "value": [
     {
-      "@odata.type": "#microsoft.graph.siteUsageStorage", 
       "reportRefreshDate": "2017-09-01", 
       "siteType": "All", 
       "storageUsedInByte": 171835798971, 

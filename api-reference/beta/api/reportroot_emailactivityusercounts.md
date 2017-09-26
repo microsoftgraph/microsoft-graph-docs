@@ -73,13 +73,12 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 369
+Content-Length: 237
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.emailActivitySummary)", 
   "value": [
     {
-      "@odata.type": "#microsoft.graph.emailActivitySummary", 
       "reportRefreshDate": "2017-09-01", 
       "send": 69, 
       "receive": 197, 

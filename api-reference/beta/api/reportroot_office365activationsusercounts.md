@@ -66,13 +66,12 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 293
+Content-Length: 233
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ActivationsUserCounts)", 
   "value": [
     {
-      "@odata.type": "#microsoft.graph.office365ActivationsUserCounts", 
       "reportRefreshDate": "2017-09-01", 
       "productType": "Office 365 ProPlus", 
       "assigned": 2679, 

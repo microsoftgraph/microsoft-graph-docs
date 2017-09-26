@@ -86,13 +86,12 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 684
+Content-Length: 526
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailboxUsageUserDetail)", 
   "value": [
     {
-      "@odata.type": "#microsoft.graph.mailboxUsageUserDetail", 
       "reportRefreshDate": "2017-09-01", 
       "userPrincipalName": "userPrincipalName-value", 
       "displayName": "displayName-value", 

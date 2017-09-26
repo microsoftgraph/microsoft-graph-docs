@@ -76,13 +76,12 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 402
+Content-Length: 284
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.yammerDeviceUsageUserCounts)", 
   "value": [
     {
-      "@odata.type": "#microsoft.graph.yammerDeviceUsageUserCounts", 
       "reportRefreshDate": "2017-09-01", 
       "web": 63, 
       "windowsPhone": 1, 

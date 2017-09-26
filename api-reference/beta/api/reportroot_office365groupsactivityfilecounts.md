@@ -72,13 +72,12 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 296
+Content-Length: 229
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365GroupsFileCounts)", 
   "value": [
     {
-      "@odata.type": "#microsoft.graph.office365GroupsActivityFileCounts", 
       "reportRefreshDate": "2017-09-01", 
       "total": 26, 
       "active": 5, 

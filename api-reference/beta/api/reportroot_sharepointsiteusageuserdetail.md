@@ -90,13 +90,12 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 647
+Content-Length: 484
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.sharePointSiteUsageUserDetail)", 
   "value": [
     {
-      "@odata.type": "#microsoft.graph.sharePointSiteUsageUserDetail", 
       "reportRefreshDate": "2017-09-01", 
       "siteUrl": "siteUrl-value", 
       "ownerDisplayName": "ownerDisplayName-value", 

@@ -73,13 +73,12 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 343
+Content-Length: 255
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.sharePointSiteUsageFileCounts)", 
   "value": [
     {
-      "@odata.type": "#microsoft.graph.sharePointSiteUsageFileCounts", 
       "reportRefreshDate": "2017-09-01", 
       "siteType": "All", 
       "total": 25687, 

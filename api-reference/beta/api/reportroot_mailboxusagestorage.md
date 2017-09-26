@@ -71,13 +71,12 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 303
+Content-Length: 235
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailboxUsageStorage)", 
   "value": [
     {
-      "@odata.type": "#microsoft.graph.mailboxUsageStorage", 
       "reportRefreshDate": "2017-09-01", 
       "storageUsedInByte": 5159432679270, 
       "reportDate": "2017-09-01", 

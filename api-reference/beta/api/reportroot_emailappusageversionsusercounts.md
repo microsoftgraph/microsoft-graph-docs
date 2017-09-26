@@ -74,13 +74,12 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 353
+Content-Length: 275
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.emailAppUsageVersionsUserCounts)", 
   "value": [
     {
-      "@odata.type": "#microsoft.graph.emailAppUsageVersionsUserCounts", 
       "reportRefreshDate": "2017-09-01", 
       "outlook2016": 1554, 
       "outlook2013": 64, 

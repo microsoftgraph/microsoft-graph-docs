@@ -72,13 +72,12 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 352
+Content-Length: 285
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365GroupsActivityStorage)", 
   "value": [
     {
-      "@odata.type": "#microsoft.graph.office365GroupsActivityStorage", 
       "reportRefreshDate": "2017-09-01", 
       "mailboxStorageUsedInByte": 523143237898, 
       "siteStorageUsedInByte": 31124384, 
