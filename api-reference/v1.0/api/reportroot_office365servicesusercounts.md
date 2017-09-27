@@ -1,6 +1,6 @@
 # Get Office365ServicesUserCounts report
 
-Get the count of users by activity type and Service.
+Get the count of users by activity type and service.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
 
@@ -17,16 +17,16 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET /reports/Office365ServicesUserCounts(period='D7')
+GET /reports/Office365ServicesUserCounts(period='{period_value}')
 ```
 
 ## Request parameters
 
-In the request URL, provide following query parameters with values.
+In the request URL, provide the following query parameters with values.
 
 | Parameter | Type       | Description                              |
 | :-------- | :--------- | :--------------------------------------- |
-| period    | PeriodType | Specifies the aggregate type. The value must be one of the following: D7, D30, D90, or D180. D7 represents a report on the last 7 days. |
+| period    | PeriodType | Specifies the aggregate type. The supported value for {period_value} are: D7, D30, D90, or D180. D7 represents a report on the last 7 days. |
 
 The following PeriodType are available in this report:
 
@@ -69,11 +69,9 @@ The CSV file has the following headers for columns.
 
 ## Example
 
-The following example shows how to call this API.
-
 #### Request
 
-The following is an example of the request.
+Here is an example of the request.
 
 ```http
 GET https://graph.microsoft.com/v1.0/reports/Office365ServicesUserCounts(period='D7')
@@ -81,8 +79,7 @@ GET https://graph.microsoft.com/v1.0/reports/Office365ServicesUserCounts(period=
 
 #### Response
 
-The following example shows the response.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response.
 
 ```http
 HTTP/1.1 302 Found

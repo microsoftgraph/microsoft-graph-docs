@@ -52,11 +52,9 @@ The CSV file has the following headers for columns.
 
 ## Example
 
-The following example shows how to call this API.
-
 #### Request
 
-The following is an example of the request.
+Here is an example of the request.
 
 ```http
 GET https://graph.microsoft.com/v1.0/reports/Office365ActivationsUserDetail
@@ -64,7 +62,7 @@ GET https://graph.microsoft.com/v1.0/reports/Office365ActivationsUserDetail
 
 #### Response
 
-The following example shows the response.
+Here is an example of the response.
 
 ```http
 HTTP/1.1 302 Found

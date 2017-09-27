@@ -1,6 +1,6 @@
 # Get Office365ActivationsUserCounts report
 
-Get the count of users that are enabled, and users that have activated the Office subscription on desktop or devices.
+Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
@@ -46,11 +46,9 @@ The CSV file has the following headers for columns.
 
 ## Example
 
-The following example shows how to call this API.
-
 #### Request
 
-The following example shows the request.
+Here is an example of the request.
 
 ```http
 GET https://graph.microsoft.com/v1.0/reports/Office365ActivationsUserCounts
@@ -58,7 +56,7 @@ GET https://graph.microsoft.com/v1.0/reports/Office365ActivationsUserCounts
 
 #### Response
 
-The following example shows the response.
+Here is an example of the response.
 
 ```http
 HTTP/1.1 302 Found

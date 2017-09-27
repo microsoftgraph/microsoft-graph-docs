@@ -1,6 +1,6 @@
 # Get Office365ActiveUserDetail report
 
-Get Office 365 active user detail.
+Get details about Office 365 active user.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
 
@@ -17,18 +17,18 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET /reports/Office365ActiveUserDetail(period='D7')
-GET /reports/Office365ActiveUserDetail(date=2017-09-01)
+GET /reports/Office365ActiveUserDetail(period='{period_value}')
+GET /reports/Office365ActiveUserDetail(date={date_value})
 ```
 
 ## Request parameters
 
-In the request URL, provide following query parameters with values.
+In the request URL, provide the following query parameters with values.
 
 | Parameter | Type       | Description                              |
 | :-------- | :--------- | :--------------------------------------- |
-| period    | PeriodType | Specifies the aggregate type. The value must be one of the following: D7, D30, D90, or D180. D7 represents a report on the last 7 days. |
-| date      | Date       | Specifies the day to a view of the users that performed an activity on that day. Must have a format of YYYY-MM-DD. Only available for the last 30 days. |
+| period    | PeriodType | Specifies the aggregate type. The supported value for {period_value} are: D7, D30, D90, or D180. D7 represents a report on the last 7 days. |
+| date      | Date       | Specifies the day to a view of the users that performed an activity on that day. {date_value} must have a format of YYYY-MM-DD. Specifies a date that is within the last 30 days, as the this report is only available for the last 30 days. |
 
 > **Note:** You need to set either period or date in the URL.
 
@@ -86,11 +86,9 @@ The default page size for this request is 2000 items.
 
 ## Example
 
-The following example shows how to call this API.
-
 #### Request
 
-The following is an example of the request.
+Here is an example of the request.
 
 ```http
 GET https://graph.microsoft.com/v1.0/reports/Office365ActiveUserDetail(period='D7')
@@ -98,8 +96,7 @@ GET https://graph.microsoft.com/v1.0/reports/Office365ActiveUserDetail(period='D
 
 #### Response
 
-The following example shows the response.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response.
 
 ```http
 HTTP/1.1 302 Found
