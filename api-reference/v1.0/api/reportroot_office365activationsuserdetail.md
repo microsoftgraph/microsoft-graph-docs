@@ -20,6 +20,10 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/Office365ActivationsUserDetail
 ```
 
+## Request parameters
+
+This method supports the `$top` and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
+
 ## Request headers
 
 | Name          | Description               |
