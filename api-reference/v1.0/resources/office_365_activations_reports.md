@@ -7,7 +7,7 @@ The Office 365 activation report gives you a view of which users have activated 
 ## Reports
 | Method                                   | Return Type | Description                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_office365activationsuserdetail.md) | Stream      | Get Office 365 activations user detail.  |
+| [Get user detail](../api/reportroot_office365activationsuserdetail.md) | Stream      | Get user detail about Office 365 activations. |
 | [Get activation counts](../api/reportroot_office365activationcounts.md) | Stream      | Get the count of Office 365 activations on desktops and devices. |
-| [Get user counts](../api/reportroot_office365activationsusercounts.md) | Stream      | Get the count of users that are enabled, and users that have activated the Office subscription on desktop or devices. |
+| [Get user counts](../api/reportroot_office365activationsusercounts.md) | Stream      | Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices. |
 
