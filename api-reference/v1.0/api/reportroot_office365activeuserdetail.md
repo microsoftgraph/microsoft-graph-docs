@@ -82,8 +82,6 @@ The CSV file has the following headers for columns.
 | Yammer License Assign Date             |
 | Assigned Products                      |
 
-The default page size for this request is 2000 items.
-
 ## Example
 
 #### Request
