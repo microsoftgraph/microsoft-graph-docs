@@ -39,8 +39,6 @@ The following **PeriodType** are available in this report:
 - D90
 - D180
 
-This method supports the `$top` and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
-
 ## Request headers
 
 | Name          | Description               |
