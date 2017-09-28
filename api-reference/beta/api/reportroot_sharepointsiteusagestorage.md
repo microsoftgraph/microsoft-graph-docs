@@ -1,8 +1,8 @@
-# Get SharePointSiteUsageStorage report
+# SharePointSiteUsageStorage function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get a SharePoint site usage storage report.
+Get the trend of storage allocated and consumed during the reporting period.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
 
@@ -21,22 +21,22 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/SharePointSiteUsageStorage(period='D7')?$format=application/json
+GET /reports/SharePointSiteUsageStorage(period='{period_value}')?$format=application/json
 ```
+
+## Request parameters
+
+In the request URL, provide the following query parameters with values.
+
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Request headers
 
 | Name          | Description               |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-
-## Request body
-
-In the request URL, provide following query parameters with values.
-
-| Parameter | Type   | Description                              |
-| :-------- | :----- | :--------------------------------------- |
-| period    | String | Specifies the aggregate type. The value must be one of the following: D7, D30, D90, or D180. D7 represents a report on the last 7 days. |
 
 ## Response
 
@@ -53,8 +53,6 @@ The **siteUsageStorage** object has the following properties.
 | reportPeriod      | String |
 
 ## Example
-
-The following example shows how to call this API.
 
 #### Request
 

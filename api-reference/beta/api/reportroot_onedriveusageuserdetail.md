@@ -1,8 +1,8 @@
-# Get OneDriveUsageUserDetail report
+# OneDriveUsageUserDetail function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get an OneDrive usage user detail report.
+Get user detail about OneDrive usage.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - OneDrive for Business usage](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680).
 
@@ -21,11 +21,20 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/OneDriveUsageUserDetail(period='D7')?$format=application/json
-GET /reports/OneDriveUsageUserDetail(date=2017-09-01)?$format=application/json
+GET /reports/OneDriveUsageUserDetail(period='{period_value}')?$format=application/json
+GET /reports/OneDriveUsageUserDetail(date={date_value})?$format=application/json
 ```
 
-## Optional query parameters
+## Request parameters
+
+In the request URL, provide the following query parameters with values.
+
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
+| date      | Date   | Specifies the day to a view of the users that performed an activity on that day. {date_value} must have a format of YYYY-MM-DD. Specifies a date that is within the last 30 days, as the this report is only available for the last 30 days. |
+
+> **Note:** You need to set either period or date in the URL.
 
 This method supports the `$top` and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
@@ -34,17 +43,6 @@ This method supports the `$top` and `$skipToken` [OData query parameters](../../
 | Name          | Description               |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-
-## Request body
-
-In the request URL, provide following query parameters with values.
-
-| Parameter | Type   | Description                              |
-| :-------- | :----- | :--------------------------------------- |
-| period    | String | Specifies the aggregate type. The value must be one of the following: D7, D30, D90, or D180. D7 represents a report on the last 7 days. |
-| date      | Date   | Specifies the day to a view of the users that performed an activity on that day. Must have a format of YYYY-MM-DD. Only available for the last 30 days. |
-
-> **Note:** You need to set either period or date in the URL.
 
 ## Response
 
@@ -68,8 +66,6 @@ The **oneDriveUsageUserDetail** object has the following properties.
 The default page size for this request is 2000 items.
 
 ## Example
-
-The following example shows how to call this API.
 
 #### Request
 
