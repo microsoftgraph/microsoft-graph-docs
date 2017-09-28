@@ -45,6 +45,12 @@
     <Item text="Use open extensions (example)" url="/en-us/concepts/extensibility_open_users" />
     <Item text="Use schema extensions (example)" url="/en-us/concepts/extensibility_schema_groups" />
   </Item>
+  <Item text="Integrate with OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote." >
+	<Item text="Input and Output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
+	<Item text="Open the OneNote client" url="/en-us/concepts/open_onenote_client" SEODescription="Open a OneNote application to a particular page or notebook." />
+	<Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
+	<Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  
+  </Item>
   <Item text="National cloud deployments" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
   <Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
   <Item text="Known issues" url="/en-us/concepts/known_issues" SEOKeyword="Release Notes, Microsoft Graph API, Overview" SEODescription="Known issues with the Microsoft Graph API." />
@@ -662,12 +668,12 @@
       <Item text="Get items" url="/en-us/api-reference/v1.0/api/listitem_list" SEOKeyword="sharepoint, list items, get items, get listitems" SEODescription="" />
       <Item text="Create list" url="/en-us/api-reference/v1.0/api/list_create" SEOKeyword="" SEODescription="" />>
     </Item>
-    <Item text="ListItems" url="/en-us/api-reference/v1.0/resources/listitem" SEOKeyword="" SEODescription="" >
-      <Item text="Get item" url="/en-us/api-reference/v1.0/api/list_get" SEOKeyword="" SEODescription="" />>
-      <Item text="Create item" url="/en-us/api-reference/v1.0/api/list_create" SEOKeyword="" SEODescription="" />>
-      <Item text="Update item" url="/en-us/api-reference/v1.0/api/list_delete" SEOKeyword="" SEODescription="" />>
-      <Item text="Delete item" url="/en-us/api-reference/v1.0/api/list_delete" SEOKeyword="" SEODescription="" />>
-    </Item>
+    <Item text="ListItems" url="/en-us/api-reference/v1.0/resources/listitem" SEOKeyword="sharepoint, listitems, microsoft graph api, sharepoint list api" SEODescription="">
+        <Item text="Get item" url="/en-us/api-reference/v1.0/api/listitem_get" SEOKeyword="sharepoint, get item, microsoft graph api, sharepoint list api" SEODescription="" />
+        <Item text="Create item" url="/en-us/api-reference/v1.0/api/listitem_create" SEOKeyword="sharepoint, create item, create, microsoft graph api, sharepoint list api" SEODescription="" />
+        <Item text="Update item" url="/en-us/api-reference/v1.0/api/listitem_update" SEOKeyword="sharepoint, update item, update, microsoft graph api, sharepoint list api" SEODescription="" />
+        <Item text="Delete item" url="/en-us/api-reference/v1.0/api/listitem_delete" SEOKeyword="sharepoint, delete item, delete, microsoft graph api, sharepoint list api" SEODescription="" />
+      </Item>
   </Item>
   <Item text="Webhooks" url="/en-us/api-reference/v1.0/resources/webhooks" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
     <Item text="Subscription" url="/en-us/api-reference/v1.0/resources/subscription" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
