@@ -1,13 +1,15 @@
 # OneDrive activity reports
 
+You can get the activity of every user licensed to use OneDrive by looking at their interaction with files on OneDrive. It also helps you to understand the level of collaboration going on by looking at the number of files shared.
+
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - OneDrive for Business activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)..
 
-## Methods
+## Reports
 
-| Method                                   | Return Type                              | Description                              |
+| Function                                 | Return Type                              | Description                              |
 | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| [Get OneDriveActivityUserDetail](../api/reportroot_onedriveactivityuserdetail.md) | [oneDriveActivityUserDetail](../api/reportroot_onedriveactivityuserdetail.md#response) | Get an OneDrive activity report.         |
-| [Get OneDriveActivityUserCounts](../api/reportroot_onedriveactivityusercounts.md) | [siteActivitySummary](../api/reportroot_onedriveactivityusercounts.md#response) | Get an OneDrive activity user counts report. |
-| [Get OneDriveActivityFileCounts](../api/reportroot_onedriveactivityfilecounts.md) | [siteActivitySummary](../api/reportroot_onedriveactivityfilecounts.md#response) | Get an OneDrive activity file counts report. |
+| [Get user detail](../api/reportroot_onedriveactivityuserdetail.md) | [oneDriveActivityUserDetail](../api/reportroot_onedriveactivityuserdetail.md#response) | Get user detail about OneDrive activity. |
+| [Get user counts](../api/reportroot_onedriveactivityusercounts.md) | [siteActivitySummary](../api/reportroot_onedriveactivityusercounts.md#response) | Get the trend in the number of active OneDrive users. |
+| [Get file counts](../api/reportroot_onedriveactivityfilecounts.md) | [siteActivitySummary](../api/reportroot_onedriveactivityfilecounts.md#response) | Get the unique number of licensed users that performed file interactions against any OneDrive account. |

@@ -1,14 +1,16 @@
 # SharePoint activity reports
 
+You can get the activity of every user licensed to use SharePoint by looking at their interaction with files. It also helps you to understand the level of collaboration going on by looking at the number of files shared.
+
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).
 
-## Methods
+## Reports
 
-| Method                                   | Return Type                              | Description                              |
+| Function                                 | Return Type                              | Description                              |
 | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| [Get SharePointActivityUserDetaill](../api/reportroot_sharepointactivityuserdetail.md) | [sharePointActivityUserDetail](../api/reportroot_sharepointactivityuserdetail.md#response) | Get a SharePoint activity user detail report. |
-| [Get SharePointActivityFileCounts](../api/reportroot_sharepointactivityfilecounts.md) | [siteActivitySummary](../api/reportroot_sharepointactivityfilecounts.md#response) | Get a SharePoint activity file counts report. |
-| [Get SharePointActivityUserCounts](../api/reportroot_sharepointactivityusercounts.md) | [sharePointActivityUserCounts](../api/reportroot_sharepointactivityusercounts.md#response) | Get a SharePoint activity user counts report. |
-| [Get SharePointActivityPages](../api/reportroot_sharepointactivitypages.md) | [sharePointActivityPages](../api/reportroot_sharepointactivitypages.md#response) | Get a SharePoint activity pages report.  |
+| [Get user detail](../api/reportroot_sharepointactivityuserdetail.md) | [sharePointActivityUserDetail](../api/reportroot_sharepointactivityuserdetail.md#response) | Get user detail about SharePoint activity. |
+| [Get file counts](../api/reportroot_sharepointactivityfilecounts.md) | [siteActivitySummary](../api/reportroot_sharepointactivityfilecounts.md#response) | Get the unique numbers of licensed users that perform file interactions with files stored on SharePoint sites. |
+| [Get user counts](../api/reportroot_sharepointactivityusercounts.md) | [sharePointActivityUserCounts](../api/reportroot_sharepointactivityusercounts.md#response) | Get the trend in the number of active users. A user is considered active if he or she has executed a file activity (save, sync, modify, or share) or visited a page within the specific time period. |
+| [Get pages](../api/reportroot_sharepointactivitypages.md) | [sharePointActivityPages](../api/reportroot_sharepointactivitypages.md#response) | Get the number of unique pages visited by users. |
