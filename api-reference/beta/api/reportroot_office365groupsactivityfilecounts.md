@@ -1,8 +1,8 @@
-# Get Office365GroupsFileCounts report
+# Office365ActivityGroupsFileCounts function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get an Office 365 groups file counts report.
+Get the number of total and active files across all group sites associated with an Office 365 Group.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
@@ -21,8 +21,16 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/Office365GroupsFileCounts(period='D7')?$format=application/json
+GET /reports/Office365GroupsActivityFileCounts(period='{period_value}')?$format=application/json
 ```
+
+## Request parameters
+
+In the request URL, provide the following query parameters with values.
+
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Request headers
 
@@ -30,19 +38,11 @@ GET /reports/Office365GroupsFileCounts(period='D7')?$format=application/json
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
-## Request body
-
-In the request URL, provide following query parameters with values.
-
-| Parameter | Type   | Description                              |
-| :-------- | :----- | :--------------------------------------- |
-| period    | String | Specifies the aggregate type. The value must be one of the following: D7, D30, D90, or D180. D7 represents a report on the last 7 days. |
-
 ## Response
 
-If successful, this method returns a `200 OK` response code and an **office365GroupsFileCounts** object in the response body.
+If successful, this method returns a `200 OK` response code and an **office365GroupsActivityFileCounts** object in the response body.
 
-The **office365GroupsFileCounts** object has the following properties.
+The **office365GroupsActivityFileCounts** object has the following properties.
 
 | Property          | Type   |
 | :---------------- | :----- |
@@ -54,14 +54,12 @@ The **office365GroupsFileCounts** object has the following properties.
 
 ## Example
 
-The following example shows how to call this API.
-
 #### Request
 
 The following is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/beta/reports/Office365GroupsFileCounts(period='D7')?$format=application/json
+GET https://graph.microsoft.com/beta/reports/Office365GroupsActivityFileCounts(period='D7')?$format=application/json
 ```
 
 #### Response
@@ -75,7 +73,7 @@ Content-Type: application/json
 Content-Length: 229
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365GroupsFileCounts)", 
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365GroupsActivityFileCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

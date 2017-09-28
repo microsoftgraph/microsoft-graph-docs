@@ -1,8 +1,8 @@
-# Get EmailAppUsageVersionsUserCounts report
+# EmailAppUsageVersionsUserCounts function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get an email app usage versions user counts report.
+Get the total count of unique users using a specific version of Outlook desktop.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).
 
@@ -21,22 +21,22 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/EmailAppUsageVersionsUserCounts(period='D7')?$format=application/json
+GET /reports/EmailAppUsageVersionsUserCounts(period='{period_value}')?$format=application/json
 ```
+
+## Request parameters
+
+In the request URL, provide the following query parameters with values.
+
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Request headers
 
 | Name          | Description               |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-
-## Request body
-
-In the request URL, provide following query parameters with values.
-
-| Parameter | Type   | Description                              |
-| :-------- | :----- | :--------------------------------------- |
-| period    | String | Specifies the aggregate type. The value must be one of the following: D7, D30, D90, or D180. D7 represents a report on the last 7 days. |
 
 ## Response
 
@@ -55,8 +55,6 @@ The **emailAppUsageVersionsUserCounts** object has the following properties.
 | reportPeriod      | String |
 
 ## Example
-
-The following example shows how to call this API.
 
 #### Request
 

@@ -1,8 +1,8 @@
-# Get Office365ServicesUserCounts report
+# Office365ServicesUserCounts function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get an Office 365 services user count report.
+Get the count of users by activity type and service.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
 
@@ -21,22 +21,22 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/Office365ServicesUserCounts(period='D7')?$format=application/json
+GET /reports/Office365ServicesUserCounts(period='{period_value}')?$format=application/json
 ```
+
+## Request parameters
+
+In the request URL, provide the following query parameters with values.
+
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Request headers
 
 | Name          | Description               |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-
-## Request body
-
-In the request URL, provide following query parameters with values.
-
-| Parameter | Type   | Description                              |
-| :-------- | :----- | :--------------------------------------- |
-| period    | String | Specifies the aggregate type. The value must be one of the following: D7, D30, D90, or D180. D7 represents a report on the last 7 days. |
 
 ## Response
 
@@ -60,8 +60,6 @@ The **office365ServicesUserCounts** object has the following properties.
 | reportPeriod             | String |
 
 ## Example
-
-The following example shows how to call this API.
 
 #### Request
 

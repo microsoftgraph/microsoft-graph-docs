@@ -1,8 +1,8 @@
-# Get MailboxUsageMailboxCounts report
+# MailboxUsageMailboxCounts function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get a mailbox usage mailbox counts report.
+Get the total count of user mailbox in your organization, and the total number that are active on any given day of the reporting period. A user mailbox is considered active if it had an email send or read activity.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).
 
@@ -21,22 +21,22 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/MailboxUsageMailboxCounts(period='D7')?$format=application/json
+GET /reports/MailboxUsageMailboxCounts(period='{period_value}')?$format=application/json
 ```
+
+## Request parameters
+
+In the request URL, provide the following query parameters with values.
+
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Request headers
 
 | Name          | Description               |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-
-## Request body
-
-In the request URL, provide following query parameters with values.
-
-| Parameter | Type   | Description                              |
-| :-------- | :----- | :--------------------------------------- |
-| period    | String | Specifies the aggregate type. The value must be one of the following: D7, D30, D90, or D180. D7 represents a report on the last 7 days. |
 
 ## Response
 
@@ -53,8 +53,6 @@ The **mailboxUsageMailboxCounts** object has the following properties.
 | reportPeriod      | String |
 
 ## Example
-
-The following example shows how to call this API.
 
 #### Request
 

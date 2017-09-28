@@ -1,8 +1,8 @@
-# Get Office365ActivationCounts report
+# Office365ActivationCounts function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get an Office 365 activation counts report.
+Get the count of Office 365 activations on desktops and devices.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
@@ -30,10 +30,6 @@ GET /reports/Office365ActivationCounts?$format=application/json
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
-## Request body
-
-Do not supply a request body for this method.
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an **office365ActivationCounts** object in the response body.
@@ -51,8 +47,6 @@ The **office365ActivationCounts** object has the following properties.
 | windows10Mobile   | Int64  |
 
 ## Example
-
-The following example shows how to call this API.
 
 #### Request
 

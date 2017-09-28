@@ -1,8 +1,8 @@
-# Get Office365ActivationsUserDetail report
+# Office365ActivationsUserDetail function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get an Office 365 activations user detail report.
+Get user detail about Office 365 activations.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/Office365ActivationsUserDetail?$format=application/json
 ```
 
-## Optional query parameters
+## Request parameters
 
 This method supports the `$top` and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
@@ -33,10 +33,6 @@ This method supports the `$top` and `$skipToken` [OData query parameters](../../
 | Name          | Description               |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-
-## Request body
-
-Do not supply a request body for this method.
 
 ## Response
 
@@ -67,8 +63,6 @@ The **userActivationCounts** object has the following properties.
 The default page size for this request is 2000 items.
 
 ## Example
-
-The following example shows how to call this API.
 
 #### Request
 
