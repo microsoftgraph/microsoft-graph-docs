@@ -1,0 +1,13 @@
+# Yammer device usage reports
+
+The Yammer device usage reports give you information about which devices your users are using Yammer on. You can view the number of daily users by device type, and number of users by device type. You can view both over a selected time period. You can also view details per user.
+
+> **Note:** For details about different report views and names, see [Office 365 Reports - Yammer device usage](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38).
+
+## Reports
+
+| Function                                 | Return Type | Description                              |
+| :--------------------------------------- | :---------- | :--------------------------------------- |
+| [Get user detail](../api/reportroot_yammerdeviceusageuserdetail.md) | Stream      | Get user detail about Yammer device usage. |
+| [Get distribution user counts](../api/reportroot_yammerdeviceusagedistributionusercounts.md) | Stream      | Get the number of users by device type.  |
+| [Get user counts](../api/reportroot_yammerdeviceusageusercounts.md) | Stream      | Get the number of daily users by device type. |
