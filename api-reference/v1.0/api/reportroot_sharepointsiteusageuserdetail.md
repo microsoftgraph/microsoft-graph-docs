@@ -1,8 +1,8 @@
-# Office365ActiveUserDetail function
+# SharePointSiteUsageUserDetail function
 
-Get details about Office 365 active user.
+Get user detail about SharePoint site usage.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
+> **Note:** For details about different report views and names, see [Office 365 Reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
 
 ## Permissions
 
@@ -17,8 +17,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET /reports/Office365ActiveUserDetail(period='{period_value}')
-GET /reports/Office365ActiveUserDetail(date={date_value})
+GET /reports/SharePointSiteUsageUserDetail(period='{period_value}')
+GET /reports/SharePointSiteUsageUserDetail(date={date_value})
 ```
 
 ## Request parameters
@@ -50,26 +50,18 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 The CSV file has the following headers for columns.
 
 - Report Refresh Date
-- User Principal Name
-- Display Name
+- Site URL
+- Owner Display Name
 - Is Deleted
-- Deleted Date
-- Has Exchange License
-- Has OneDrive License
-- Has SharePoint License
-- Has Skype For Business License
-- Has Yammer License
-- Exchange Last Activity Date
-- OneDrive Last Activity Date
-- SharePoint Last Activity Date
-- Skype For Business Last Activity Date
-- Yammer Last Activity Date
-- Exchange License Assign Date
-- OneDrive License Assign Date
-- SharePoint License Assign Date
-- Skype For Business License Assign Date
-- Yammer License Assign Date
-- Assigned Products
+- Last Activity Date
+- File Count
+- Active File Count
+- Page View Count
+- Visited Page Count
+- Storage Used (Byte)
+- Storage Allocated (Byte)
+- Root Web Template
+- Report Period
 
 ## Example
 
@@ -78,7 +70,7 @@ The CSV file has the following headers for columns.
 The following is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/v1.0/reports/Office365ActiveUserDetail(period='D7')
+GET https://graph.microsoft.com/v1.0/reports/SharePointSiteUsageUserDetail(period='D7')
 ```
 
 #### Response
@@ -95,5 +87,5 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Has Exchange License,Has OneDrive License,Has SharePoint License,Has Skype For Business License,Has Yammer License,Exchange Last Activity Date,OneDrive Last Activity Date,SharePoint Last Activity Date,Skype For Business Last Activity Date,Yammer Last Activity Date,Exchange License Assign Date,OneDrive License Assign Date,SharePoint License Assign Date,Skype For Business License Assign Date,Yammer License Assign Date,Assigned Products
+Report Refresh Date,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Report Period
 ```

@@ -1,8 +1,8 @@
-# Office365ActiveUserDetail function
+# EmailAppUsageUserDetail function
 
-Get details about Office 365 active user.
+Get user detail about email app usage.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
+> **Note:** For details about different report views and names, see [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).
 
 ## Permissions
 
@@ -17,8 +17,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET /reports/Office365ActiveUserDetail(period='{period_value}')
-GET /reports/Office365ActiveUserDetail(date={date_value})
+GET /reports/EmailAppUsageUserDetail(period='{period_value}')
+GET /reports/EmailAppUsageUserDetail(date={date_value})
 ```
 
 ## Request parameters
@@ -54,22 +54,17 @@ The CSV file has the following headers for columns.
 - Display Name
 - Is Deleted
 - Deleted Date
-- Has Exchange License
-- Has OneDrive License
-- Has SharePoint License
-- Has Skype For Business License
-- Has Yammer License
-- Exchange Last Activity Date
-- OneDrive Last Activity Date
-- SharePoint Last Activity Date
-- Skype For Business Last Activity Date
-- Yammer Last Activity Date
-- Exchange License Assign Date
-- OneDrive License Assign Date
-- SharePoint License Assign Date
-- Skype For Business License Assign Date
-- Yammer License Assign Date
-- Assigned Products
+- Last Activity Date
+- Mail For Mac
+- Outlook For Mac
+- Outlook For Windows
+- Outlook For Mobile
+- Other For Mobile
+- Outlook For Web
+- POP3 App
+- IMAP4 App
+- SMTP App
+- Report Period
 
 ## Example
 
@@ -78,7 +73,7 @@ The CSV file has the following headers for columns.
 The following is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/v1.0/reports/Office365ActiveUserDetail(period='D7')
+GET https://graph.microsoft.com/v1.0/reports/EmailAppUsageUserDetail(period='D7')
 ```
 
 #### Response
@@ -95,5 +90,5 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Has Exchange License,Has OneDrive License,Has SharePoint License,Has Skype For Business License,Has Yammer License,Exchange Last Activity Date,OneDrive Last Activity Date,SharePoint Last Activity Date,Skype For Business Last Activity Date,Yammer Last Activity Date,Exchange License Assign Date,OneDrive License Assign Date,SharePoint License Assign Date,Skype For Business License Assign Date,Yammer License Assign Date,Assigned Products
+Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Mail For Mac,Outlook For Mac,Outlook For Windows,Outlook For Mobile,Other For Mobile,Outlook For Web,POP3 App,IMAP4 App,SMTP App,Report Period
 ```

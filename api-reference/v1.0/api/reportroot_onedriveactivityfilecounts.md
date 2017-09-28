@@ -1,8 +1,8 @@
-# Office365ActivationsUserDetail function
+# OneDriveActivityFileCounts function
 
-Get user detail about Office 365 activations.
+Get the unique number of licensed users that performed file interactions against any OneDrive account.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
+> **Note:** For details about different report views and names, see [Office 365 Reports - OneDrive for Business activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353).
 
 ## Permissions
 
@@ -17,8 +17,16 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET /reports/Office365ActivationsUserDetail
+GET /reports/OneDriveActivityFileCounts(period='{period_value}')
 ```
+
+## Request parameters
+
+In the request URL, provide the following query parameters with values.
+
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Request headers
 
@@ -38,15 +46,12 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 The CSV file has the following headers for columns.
 
 - Report Refresh Date
-- User Principal Name
-- Display Name
-- Product Licenses
-- Last Activity Date
-- Windows
-- Mac
-- Windows 10 Mobile
-- iOS
-- Android
+- Viewed Or Edited
+- Synced
+- Shared Internally
+- Shared Externally
+- Report Date
+- Report Period
 
 ## Example
 
@@ -55,7 +60,7 @@ The CSV file has the following headers for columns.
 The following is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/v1.0/reports/Office365ActivationsUserDetail
+GET https://graph.microsoft.com/v1.0/reports/OneDriveActivityFileCounts(period='D7')
 ```
 
 #### Response
@@ -68,9 +73,9 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that you download has the column headings that are listed below.
+Follow the 302 redirection and the downloading CSV file will have the schema as follows.
 
 ```http
 HTTP/1.1 200 OK
-Report Refresh Date,User Principal Name,Display Name,Product Licenses,Last Activity Date,Windows,Mac,Windows 10 Mobile,iOS,Android
+Report Refresh Date,Viewed Or Edited,Synced,Shared Internally,Shared Externally,Report Date,Report Period
 ```

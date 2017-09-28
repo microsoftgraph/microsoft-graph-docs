@@ -1,4 +1,4 @@
-# Get Office365ActivationsUserCounts report
+# Office365ActivationsUserCounts function
 
 Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices.
 
@@ -37,18 +37,16 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 The CSV file has the following headers for columns.
 
-| Column headers      |
-| :------------------ |
-| Report Refresh Date |
-| Product Type        |
-| Assigned            |
-| Activated           |
+- Report Refresh Date
+- Product Type
+- Assigned
+- Activated
 
 ## Example
 
 #### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 ```http
 GET https://graph.microsoft.com/v1.0/reports/Office365ActivationsUserCounts
@@ -56,7 +54,7 @@ GET https://graph.microsoft.com/v1.0/reports/Office365ActivationsUserCounts
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 ```http
 HTTP/1.1 302 Found

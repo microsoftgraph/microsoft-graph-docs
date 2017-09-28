@@ -1,8 +1,8 @@
-# Office365ActivationsUserDetail function
+# SkypeForBusinessOrganizerActivityCounts function
 
-Get user detail about Office 365 activations.
+Get the usage trends and to see the total number of conferences that were organized and the type of conferences that are being held in your organization. It will show you the total number and types of IM, audio/video, application sharing, web, dial-in/out - 3rd party, and Dial-in/out Microsoft conferences that were organized across your organization.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
+> **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business conference organizer activity](https://support.office.com/client/Skype-for-Business-Online-conference-organized-activity-03a255d4-0e1d-4b24-b73d-7a62fae36254).
 
 ## Permissions
 
@@ -17,8 +17,16 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET /reports/Office365ActivationsUserDetail
+GET /reports/SkypeForBusinessOrganizerActivityCounts(period='{period_value}')
 ```
+
+## Request parameters
+
+In the request URL, provide the following query parameters with values.
+
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Request headers
 
@@ -38,15 +46,14 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 The CSV file has the following headers for columns.
 
 - Report Refresh Date
-- User Principal Name
-- Display Name
-- Product Licenses
-- Last Activity Date
-- Windows
-- Mac
-- Windows 10 Mobile
-- iOS
-- Android
+- Report Date
+- Report Period
+- IM
+- Audio/Video
+- App Sharing
+- Web
+- Dial-in/out 3rd Party
+- Dial-in/out Microsoft
 
 ## Example
 
@@ -55,7 +62,7 @@ The CSV file has the following headers for columns.
 The following is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/v1.0/reports/Office365ActivationsUserDetail
+GET https://graph.microsoft.com/v1.0/reports/SkypeForBusinessOrganizerActivityCounts(period='D7')
 ```
 
 #### Response
@@ -68,9 +75,9 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that you download has the column headings that are listed below.
+Follow the 302 redirection and the downloading CSV file will have the schema as follows.
 
 ```http
 HTTP/1.1 200 OK
-Report Refresh Date,User Principal Name,Display Name,Product Licenses,Last Activity Date,Windows,Mac,Windows 10 Mobile,iOS,Android
+Report Refresh Date,Report Date,Report Period,IM,Audio/Video,App Sharing,Web,Dial-in/out 3rd Party,Dial-in/out Microsoft
 ```

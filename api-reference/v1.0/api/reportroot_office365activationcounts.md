@@ -1,4 +1,4 @@
-# Get Office365ActivationCounts report
+# Office365ActivationCounts function
 
 Get the count of Office 365 activations on desktops and devices.
 
@@ -37,21 +37,19 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 The CSV file has the following headers for columns.
 
-| Column headers      |
-| :------------------ |
-| Report Refresh Date |
-| Product Type        |
-| Windows             |
-| Mac                 |
-| Android             |
-| iOS                 |
-| Windows 10 Mobile   |
+- Report Refresh Date
+- Product Type
+- Windows
+- Mac
+- Android
+- iOS
+- Windows 10 Mobile
 
 ## Example
 
 #### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 ```http
 GET https://graph.microsoft.com/v1.0/reports/Office365ActivationCounts
@@ -59,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/reports/Office365ActivationCounts
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 ```http
 HTTP/1.1 302 Found
 Content-Type: text/plain

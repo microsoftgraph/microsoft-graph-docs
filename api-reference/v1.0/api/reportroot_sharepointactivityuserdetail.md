@@ -1,8 +1,8 @@
-# Office365ActiveUserDetail function
+# SharePointActivityUserDetail function
 
-Get details about Office 365 active user.
+Get user detail about SharePoint activity.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
+> **Note:** For details about different report views and names, see [Office 365 Reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).
 
 ## Permissions
 
@@ -17,8 +17,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET /reports/Office365ActiveUserDetail(period='{period_value}')
-GET /reports/Office365ActiveUserDetail(date={date_value})
+GET /reports/SharePointActivityUserDetail(period='{period_value}')
+GET /reports/SharePointActivityUserDetail(date={date_value})
 ```
 
 ## Request parameters
@@ -51,25 +51,16 @@ The CSV file has the following headers for columns.
 
 - Report Refresh Date
 - User Principal Name
-- Display Name
 - Is Deleted
 - Deleted Date
-- Has Exchange License
-- Has OneDrive License
-- Has SharePoint License
-- Has Skype For Business License
-- Has Yammer License
-- Exchange Last Activity Date
-- OneDrive Last Activity Date
-- SharePoint Last Activity Date
-- Skype For Business Last Activity Date
-- Yammer Last Activity Date
-- Exchange License Assign Date
-- OneDrive License Assign Date
-- SharePoint License Assign Date
-- Skype For Business License Assign Date
-- Yammer License Assign Date
+- Last Activity Date
+- Viewed Or Edited File Count
+- Synced File Count
+- Shared Internally File Count
+- Shared Externally File Count
+- Visited Page Count
 - Assigned Products
+- Report Period
 
 ## Example
 
@@ -78,7 +69,7 @@ The CSV file has the following headers for columns.
 The following is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/v1.0/reports/Office365ActiveUserDetail(period='D7')
+GET https://graph.microsoft.com/v1.0/reports/SharePointActivityUserDetail(period='D7')
 ```
 
 #### Response
@@ -95,5 +86,5 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Has Exchange License,Has OneDrive License,Has SharePoint License,Has Skype For Business License,Has Yammer License,Exchange Last Activity Date,OneDrive Last Activity Date,SharePoint Last Activity Date,Skype For Business Last Activity Date,Yammer Last Activity Date,Exchange License Assign Date,OneDrive License Assign Date,SharePoint License Assign Date,Skype For Business License Assign Date,Yammer License Assign Date,Assigned Products
+Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Date,Viewed Or Edited File Count,Synced File Count,Shared Internally File Count,Shared Externally File Count,Visited Page Count,Assigned Products,Report Period
 ```

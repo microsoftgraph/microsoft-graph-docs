@@ -1,4 +1,4 @@
-# Get Office365ActiveUserCounts report
+# Office365ActiveUserCounts function
 
 Get the count of daily active users in the reporting period separated by product.
 
@@ -24,16 +24,9 @@ GET /reports/Office365ActiveUserCounts(period='{period_value}')
 
 In the request URL, provide the following query parameters with values.
 
-| Parameter | Type       | Description                              |
-| :-------- | :--------- | :--------------------------------------- |
-| period    | PeriodType | Specifies the aggregate type. The supported value for {period_value} are: D7, D30, D90, or D180. D7 represents a report on the last 7 days. |
-
-The following PeriodType are available in this report:
-
-- D7
-- D30
-- D90
-- D180
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Request headers
 
@@ -52,23 +45,21 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 The CSV file has the following headers for columns.
 
-| Column headers      |
-| :------------------ |
-| Report Refresh Date |
-| Office 365          |
-| Exchange            |
-| OneDrive            |
-| SharePoint          |
-| Skype For Business  |
-| Yammer              |
-| Report Date         |
-| Report Period       |
+- Report Refresh Date
+- Office 365
+- Exchange
+- OneDrive
+- SharePoint
+- Skype For Business 
+- Yammer
+- Report Date
+- Report Period
 
 ## Example
 
 #### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 ```http
 GET https://graph.microsoft.com/v1.0/reports/Office365ActiveUserCounts(period='D7')
@@ -76,7 +67,7 @@ GET https://graph.microsoft.com/v1.0/reports/Office365ActiveUserCounts(period='D
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 ```http
 HTTP/1.1 302 Found

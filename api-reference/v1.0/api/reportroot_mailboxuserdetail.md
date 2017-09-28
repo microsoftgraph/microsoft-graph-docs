@@ -1,8 +1,8 @@
-# Office365ActiveUserDetail function
+# MailboxUsageUserDetail function
 
-Get details about Office 365 active user.
+Get user detail about mailbox usage.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
+> **Note:** For details about different report views and names, see [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).
 
 ## Permissions
 
@@ -17,8 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET /reports/Office365ActiveUserDetail(period='{period_value}')
-GET /reports/Office365ActiveUserDetail(date={date_value})
+GET /reports/MailboxUsageUserDetail(period='{period_value}')
 ```
 
 ## Request parameters
@@ -27,10 +26,7 @@ In the request URL, provide the following query parameters with values.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
-| date      | Date   | Specifies the day to a view of the users that performed an activity on that day. {date_value} must have a format of YYYY-MM-DD. Specifies a date that is within the last 30 days, as the this report is only available for the last 30 days. |
-
-> **Note:** You need to set either period or date in the URL.
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Request headers
 
@@ -54,22 +50,14 @@ The CSV file has the following headers for columns.
 - Display Name
 - Is Deleted
 - Deleted Date
-- Has Exchange License
-- Has OneDrive License
-- Has SharePoint License
-- Has Skype For Business License
-- Has Yammer License
-- Exchange Last Activity Date
-- OneDrive Last Activity Date
-- SharePoint Last Activity Date
-- Skype For Business Last Activity Date
-- Yammer Last Activity Date
-- Exchange License Assign Date
-- OneDrive License Assign Date
-- SharePoint License Assign Date
-- Skype For Business License Assign Date
-- Yammer License Assign Date
-- Assigned Products
+- Created Date
+- Last Activity Date
+- Item Count
+- Storage Used (Byte)
+- Issue Warning Quota (Byte)
+- Prohibit Send Quota (Byte)
+- Prohibit Send/Receive Quota (Byte)
+- Report Period
 
 ## Example
 
@@ -78,7 +66,7 @@ The CSV file has the following headers for columns.
 The following is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/v1.0/reports/Office365ActiveUserDetail(period='D7')
+GET https://graph.microsoft.com/v1.0/reports/MailboxUsageUserDetail(period='D7')
 ```
 
 #### Response
@@ -95,5 +83,5 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Has Exchange License,Has OneDrive License,Has SharePoint License,Has Skype For Business License,Has Yammer License,Exchange Last Activity Date,OneDrive Last Activity Date,SharePoint Last Activity Date,Skype For Business Last Activity Date,Yammer Last Activity Date,Exchange License Assign Date,OneDrive License Assign Date,SharePoint License Assign Date,Skype For Business License Assign Date,Yammer License Assign Date,Assigned Products
+Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Created Date,Last Activity Date,Item Count,Storage Used (Byte),Issue Warning Quota (Byte),Prohibit Send Quota (Byte),Prohibit Send/Receive Quota (Byte),Report Period
 ```
