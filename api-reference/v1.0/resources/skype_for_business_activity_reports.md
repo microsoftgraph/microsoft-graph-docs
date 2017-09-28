@@ -1,5 +1,6 @@
 # Skype for Business activity reports
 
+You can get details on activity across your organization. These details are very helpful when you investigating, planning, and making other business decisions for your organization.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business activity](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424).
 
