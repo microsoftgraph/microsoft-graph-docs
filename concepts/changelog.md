@@ -760,8 +760,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-|Addition|Beta|Extend Microsoft Graph with application data by using [schema extensions](extensibility_overview.md#schema-extensions-preview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following example:<br/>[Add custom data to groups using Schema Extensions (preview)](extensibility_schema_groups.md)|
-|Addition|Beta|Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain. See [schema extensions](extensibility_overview.md#schema-extensions-preview) for details.|
+|Addition|Beta|Extend Microsoft Graph with application data by using [schema extensions](extensibility_overview.md#schema-extensions).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following example:<br/>[Add custom data to groups using Schema Extensions (preview)](extensibility_schema_groups.md)|
+|Addition|Beta|Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain. See [schema extensions](extensibility_overview.md#schema-extensions) for details.|
 
 ### Add custom data to Microsoft Graph using open extensions
 
