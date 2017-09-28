@@ -1,8 +1,8 @@
-# Get SkypeForBusinessOrganizerActivityCounts report
+# SkypeForBusinessOrganizerActivityCounts function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get a Skype for Business organizer activity counts report.
+Get the usage trends and to see the total number of conferences that were organized and the type of conferences that are being held in your organization. It will show you the total number and types of IM, audio/video, application sharing, web, dial-in/out - 3rd party, and Dial-in/out Microsoft conferences that were organized across your organization.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business conference organizer activity](https://support.office.com/client/Skype-for-Business-Online-conference-organized-activity-03a255d4-0e1d-4b24-b73d-7a62fae36254).
 
@@ -21,22 +21,22 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/SkypeForBusinessOrganizerActivityCounts(period='D7')?$format=application/json
+GET /reports/SkypeForBusinessOrganizerActivityCounts(period='{period_value}')?$format=application/json
 ```
+
+## Request parameters
+
+In the request URL, provide the following query parameters with values.
+
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Request headers
 
 | Name          | Description               |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-
-## Request body
-
-In the request URL, provide following query parameters with values.
-
-| Parameter | Type   | Description                              |
-| :-------- | :----- | :--------------------------------------- |
-| period    | String | Specifies the aggregate type. The value must be one of the following: D7, D30, D90, or D180. D7 represents a report on the last 7 days. |
 
 ## Response
 
@@ -57,8 +57,6 @@ The **skypeForBusinessOrganizerActivityCounts** object has the following propert
 | reportPeriod       | String |
 
 ## Example
-
-The following example shows how to call this API.
 
 #### Request
 

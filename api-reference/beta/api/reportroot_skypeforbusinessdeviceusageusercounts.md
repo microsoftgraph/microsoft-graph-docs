@@ -1,8 +1,8 @@
-# Get SkypeForBusinessDeviceUsageUserCounts report
+# SkypeForBusinessDeviceUsageUserCounts function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get a Skype for Business device usage user counts report.
+Get the usage trends and to see the number of users that are connected using the Skype for Business app that are used in your organization. It will show you the total number of users and types of Windows, Windows phone, Android phone, iPhone and iPad devices that have the Skype for Business client app installed and are being used across your organization.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business clients used](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3).
 
@@ -21,22 +21,22 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/SkypeForBusinessDeviceUsageUserCounts(period='D7')?$format=application/json
+GET /reports/SkypeForBusinessDeviceUsageUserCounts(period='{period_value}')?$format=application/json
 ```
+
+## Request parameters
+
+In the request URL, provide the following query parameters with values.
+
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Request headers
 
 | Name          | Description               |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-
-## Request body
-
-In the request URL, provide following query parameters with values.
-
-| Parameter | Type   | Description                              |
-| :-------- | :----- | :--------------------------------------- |
-| period    | String | Specifies the aggregate type. The value must be one of the following: D7, D30, D90, or D180. D7 represents a report on the last 7 days. |
 
 ## Response
 
@@ -56,8 +56,6 @@ The **skypeForBusinessDeviceUsageUserCounts** object has the following propertie
 | reportRefreshDate | Date  |
 
 ## Example
-
-The following example shows how to call this API.
 
 #### Request
 
