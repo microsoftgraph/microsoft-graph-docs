@@ -49,6 +49,7 @@ The CSV file has the following headers for columns.
 - SharePoint
 - Skype For Business 
 - Yammer
+- Teams
 - Report Date
 - Report Period
 

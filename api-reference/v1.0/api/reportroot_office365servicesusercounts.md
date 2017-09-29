@@ -53,6 +53,8 @@ The CSV file has the following headers for columns.
 - Skype For Business Inactive
 - Yammer Active
 - Yammer Inactive
+- Teams Active
+- Teams Inactive
 - Report Period
 
 ## Example
