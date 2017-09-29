@@ -23,12 +23,12 @@ GET /reports/YammerActivityUserDetail(date={date_value})
 
 ## Request parameters
 
-In the request URL, provide the following query parameters with values.
+In the request URL, provide the chosen query parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
-| date      | Date   | Specifies the day to a view of the users that performed an activity on that day. {date_value} must have a format of YYYY-MM-DD. Specifies a date that is within the last 30 days, as the this report is only available for the last 30 days. |
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
+| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. Specifies a date that is within the last 30 days, as this report is only available for the last 30 days. |
 
 > **Note:** You need to set either period or date in the URL.
 
@@ -40,12 +40,9 @@ In the request URL, provide the following query parameters with values.
 
 ## Response
 
-If successful, this method returns `302 Found` response redirecting to a pre-authenticated download URL for the report.
+If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-To download the contents of the file your application will need to follow the `Location` header in the response.
-Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immediately.
-
-Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
 
 The CSV file has the following headers for columns.
 
@@ -81,7 +78,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the downloading CSV file will have the schema as follows.
+Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
 ```http
 HTTP/1.1 200 OK

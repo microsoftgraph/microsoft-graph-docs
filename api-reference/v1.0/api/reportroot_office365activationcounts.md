@@ -28,12 +28,9 @@ GET /reports/Office365ActivationCounts
 
 ## Response
 
-If successful, this method returns `302 Found` response redirecting to a pre-authenticated download URL for the report.
+If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-To download the contents of the file your application will need to follow the `Location` header in the response.
-Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immediately.
-
-Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
 
 The CSV file has the following headers for columns.
 
@@ -64,7 +61,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that you download has the column headings that are listed below.
+Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
 ```http
 HTTP/1.1 200 OK
