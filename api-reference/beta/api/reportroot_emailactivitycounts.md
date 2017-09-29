@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Enables you to understand the trend of the amount of email activity going on in your organization. You can understand the split of email send or read or received activities.
+Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).
 
@@ -26,11 +26,11 @@ GET /reports/EmailActivityCounts(period='{period_value}')?$format=application/js
 
 ## Request parameters
 
-In the request URL, provide the following query parameters with values.
+In the request URL, provide the following query parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Request headers
 

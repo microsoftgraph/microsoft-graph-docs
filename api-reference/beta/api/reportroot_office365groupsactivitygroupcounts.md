@@ -26,11 +26,11 @@ GET /reports/Office365GroupsActivityGroupCounts(period='{period_value}')?$format
 
 ## Request parameters
 
-In the request URL, provide the following query parameters with values.
+In the request URL, provide the following query parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90 and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
+| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Request headers
 
