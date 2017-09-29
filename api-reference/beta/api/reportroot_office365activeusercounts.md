@@ -53,6 +53,7 @@ The **office365ActiveUserCounts** object has the following properties.
 | sharePoint        | Int64  |
 | skypeForBusiness  | Int64  |
 | yammer            | Int64  |
+| teams             | Int64  |
 | reportDate        | Date   |
 | reportPeriod      | String |
 

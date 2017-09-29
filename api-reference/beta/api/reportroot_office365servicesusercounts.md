@@ -57,6 +57,8 @@ The **office365ServicesUserCounts** object has the following properties.
 | skypeForBusinessInactive | Int64  |
 | yammerActive             | Int64  |
 | yammerInactive           | Int64  |
+| teamsActive              | Int64  |
+| teamsInactive            | Int64  |
 | reportPeriod             | String |
 
 ## Example

@@ -62,16 +62,19 @@ The **office365ActiveUserDetail** object has the following properties.
 | hasSharePointLicense              | Boolean           |
 | hasSkypeForBusinessLicense        | Boolean           |
 | hasYammerLicense                  | Boolean           |
+| hasTeamsLicense                   | Boolean           |
 | exchangeLastActivityDate          | Date              |
 | oneDriveLastActivityDate          | Date              |
 | sharePointLastActivityDate        | Date              |
 | skypeForBusinessLastActivityDate  | Date              |
 | yammerLastActivityDate            | Date              |
+| teamsLastActivityDate             | Date              |
 | exchangeLicenseAssignDate         | Date              |
 | oneDriveLicenseAssignDate         | Date              |
 | sharePointLicenseAssignDate       | Date              |
 | skypeForBusinessLicenseAssignDate | Date              |
 | yammerLicenseAssignDate           | Date              |
+| teamsLicenseAssignDate            | Date              |
 | assignedProducts                  | String collection |
 
 The default page size for this request is 2000 items.
