@@ -8,7 +8,7 @@ You can get the activity of every user licensed to use SharePoint by looking at 
 
 | Function                                 | Return Type | Description                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_sharepointactivityuserdetail.md) | Stream      | Get user detail about SharePoint activity. |
-| [Get file counts](../api/reportroot_sharepointactivityfilecounts.md) | Stream      | Get the unique numbers of licensed users that perform file interactions with files stored on SharePoint sites. |
-| [Get user counts](../api/reportroot_sharepointactivityusercounts.md) | Stream      | Get the trend in the number of active users. A user is considered active if he or she has executed a file activity (save, sync, modify, or share) or visited a page within the specific time period. |
+| [Get user detail](../api/reportroot_sharepointactivityuserdetail.md) | Stream      | Get details about SharePoint activity by user. |
+| [Get file counts](../api/reportroot_sharepointactivityfilecounts.md) | Stream      | Get the number of unique, licensed users who interacted with files stored on SharePoint sites. |
+| [Get user counts](../api/reportroot_sharepointactivityusercounts.md) | Stream      | Get the trend in the number of active users. A user is considered active if he or she has executed a file activity (save, sync, modify, or share) or visited a page within the specified time period. |
 | [Get pages](../api/reportroot_sharepointactivitypages.md) | Stream      | Get the number of unique pages visited by users. |

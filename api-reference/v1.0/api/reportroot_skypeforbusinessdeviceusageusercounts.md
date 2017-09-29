@@ -1,6 +1,6 @@
 # SkypeForBusinessDeviceUsageUserCounts function
 
-Get the usage trends and to see the number of users that are connected using the Skype for Business app that are used in your organization. It will show you the total number of users and types of Windows, Windows phone, Android phone, iPhone and iPad devices that have the Skype for Business client app installed and are being used across your organization.
+Get the usage trends on how many users in your organization have connected using the Skype for Business app. You will also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business clients used](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3).
 

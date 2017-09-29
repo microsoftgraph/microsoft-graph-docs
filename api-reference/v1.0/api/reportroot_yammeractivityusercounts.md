@@ -1,6 +1,6 @@
 # YammerActivityUserCounts function
 
-Get the trend of the amount of unique users who are generating the Yammer activities. You can look at the trend of users posting, reading, or liking Yammer messages.
+Get the trends on the number of unique users who post, read, and like Yammer messages.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).
 

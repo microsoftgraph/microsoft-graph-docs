@@ -8,6 +8,6 @@ You can understand the level of engagement of your organization with Yammer by l
 
 | Function                                 | Return Type | Description                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_yammeractivityuserdetail.md) | Stream      | Get user detail about Yammer activity.   |
-| [Get activity counts](../api/reportroot_yammeractivitycounts.md) | Stream      | Get the trend of the amount of Yammer activity going on in your organization. You can understand the split of messages posted, read, or liked. |
-| [Get user counts](../api/reportroot_yammeractivityusercounts.md) | Stream      | Get the trend of the amount of unique users who are generating the Yammer activities. You can look at the trend of users posting, reading, or liking Yammer messages. |
+| [Get user detail](../api/reportroot_yammeractivityuserdetail.md) | Stream      | Get details about Yammer activity by user. |
+| [Get activity counts](../api/reportroot_yammeractivitycounts.md) | Stream      | Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked. |
+| [Get user counts](../api/reportroot_yammeractivityusercounts.md) | Stream      | Get the trends on the number of unique users who post, read, and like Yammer messages. |

@@ -8,6 +8,6 @@ The Yammer device usage reports give you information about which devices your us
 
 | Function                                 | Return Type | Description                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_yammerdeviceusageuserdetail.md) | Stream      | Get user detail about Yammer device usage. |
+| [Get user detail](../api/reportroot_yammerdeviceusageuserdetail.md) | Stream      | Get details about Yammer device usage by user. |
 | [Get distribution user counts](../api/reportroot_yammerdeviceusagedistributionusercounts.md) | Stream      | Get the number of users by device type.  |
 | [Get user counts](../api/reportroot_yammerdeviceusageusercounts.md) | Stream      | Get the number of daily users by device type. |

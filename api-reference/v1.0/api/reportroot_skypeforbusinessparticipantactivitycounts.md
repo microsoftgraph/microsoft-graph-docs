@@ -1,6 +1,6 @@
 # SkypeForBusinessParticipantActivityCounts function
 
-Get the usage trends and to see the total number of conferences that were participated in and the type of conferences that are being held in your organization. It will show you the total number and types of IM, audio/video, application sharing, web, and dial-in/out - 3rd party conferences that were participated in across your organization.
+Get usage trends on the number and type of conference sessions that users from your organization participated in. Types of conference sessions include IM, audio/video, application sharing, web, and dial-in/out - 3rd party.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business conference participant activity](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b).
 

@@ -8,8 +8,8 @@ You can get a high level view of the value you are getting from SharePoint in te
 
 | Function                                 | Return Type | Description                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_sharepointsiteusageuserdetail.md) | Stream      | Get user detail about SharePoint site usage. |
-| [Get file counts](../api/reportroot_sharepointsiteusagefilecounts.md) | Stream      | Get the total number of files across all sites and the number of active files. The number of total files includes both user files and system files. A file is considered active if it has been saved, synced, modified or shared within the specific time period. |
-| [Get site counts](../api/reportroot_sharepointsiteusagesitecounts.md) | Stream      | Get the number of total and active sites. Any site in which users had viewed, modified, uploaded, downloaded, shared, or synced a file or viewed a page within the reporting period. |
+| [Get user detail](../api/reportroot_sharepointsiteusageuserdetail.md) | Stream      | Get details about SharePoint site usage by user. |
+| [Get file counts](../api/reportroot_sharepointsiteusagefilecounts.md) | Stream      | Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period. |
+| [Get site counts](../api/reportroot_sharepointsiteusagesitecounts.md) | Stream      | Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period. |
 | [Get storage](../api/reportroot_sharepointsiteusagestorage.md) | Stream      | Get the trend of storage allocated and consumed during the reporting period. |
 | [Get pages](../api/reportroot_sharepointsiteusagepages.md) | Stream      | Get the number of pages viewed across all sites. |

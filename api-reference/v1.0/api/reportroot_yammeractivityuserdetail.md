@@ -1,6 +1,6 @@
 # YammerActivityUserDetail function
 
-Get user detail about Yammer activity.
+Get details about Yammer activity by user.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).
 

@@ -1,6 +1,6 @@
 # SharePointSiteUsageUserDetail function
 
-Get user detail about SharePoint site usage.
+Get details about SharePoint site usage by user.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
 
