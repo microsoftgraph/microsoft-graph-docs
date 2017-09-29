@@ -10,6 +10,6 @@ You can get the activity of every user licensed to use OneDrive by looking at th
 
 | Function                                 | Return Type                              | Description                              |
 | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_onedriveactivityuserdetail.md) | [oneDriveActivityUserDetail](../api/reportroot_onedriveactivityuserdetail.md#response) | Get user detail about OneDrive activity. |
+| [Get user detail](../api/reportroot_onedriveactivityuserdetail.md) | [oneDriveActivityUserDetail](../api/reportroot_onedriveactivityuserdetail.md#response) | Get details about OneDrive activity by user. |
 | [Get user counts](../api/reportroot_onedriveactivityusercounts.md) | [siteActivitySummary](../api/reportroot_onedriveactivityusercounts.md#response) | Get the trend in the number of active OneDrive users. |
 | [Get file counts](../api/reportroot_onedriveactivityfilecounts.md) | [siteActivitySummary](../api/reportroot_onedriveactivityfilecounts.md#response) | Get the unique number of licensed users that performed file interactions against any OneDrive account. |

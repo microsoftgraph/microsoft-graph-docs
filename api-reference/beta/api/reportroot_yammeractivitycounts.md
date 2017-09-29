@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get the trend of the amount of Yammer activity going on in your organization. You can understand the split of messages posted, read, or liked.
+Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).
 

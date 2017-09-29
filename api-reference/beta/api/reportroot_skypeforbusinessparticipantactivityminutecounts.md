@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get the usage trends and to see the number of minutes that are used by users when they organize a conference using audio/video, and dial-in and dial-out - Microsoft as their conferencing provider. It will show you the total number of minutes of audio/video that are used during conferences that were participated in.
+Get usage trends on the length in minutes and type of conference sessions that users from your organization participated in. Types of conference sessions include audio/video, and dial-in and dial-out - Microsoft.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business conference participant activity](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b).
 

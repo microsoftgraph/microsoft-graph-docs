@@ -10,6 +10,6 @@ The Yammer device usage reports give you information about which devices your us
 
 | Function                                 | Return Type                              | Description                              |
 | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_yammerdeviceusageuserdetail.md) | [yammerDeviceUsageUserDetail](../api/reportroot_yammerdeviceusageuserdetail.md#response) | Get user detail about Yammer device usage. |
+| [Get user detail](../api/reportroot_yammerdeviceusageuserdetail.md) | [yammerDeviceUsageUserDetail](../api/reportroot_yammerdeviceusageuserdetail.md#response) | Get details about Yammer device usage by user. |
 | [Get distribution user counts](../api/reportroot_yammerdeviceusagedistributionusercounts.md) | [yammerDeviceUsageDistributionUserCounts](../api/reportroot_yammerdeviceusagedistributionusercounts.md#response) | Get the number of users by device type.  |
 | [Get user counts](../api/reportroot_yammerdeviceusageusercounts.md) | [yammerDeviceUsageUserCounts](../api/reportroot_yammerdeviceusageusercounts.md#response) | Get the number of daily users by device type. |

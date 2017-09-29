@@ -1,6 +1,6 @@
 # Mailbox usage reports
 
-You can get information about users with a user mailbox and the level of activity by each based on the email send and read activity. It also provides information about how much storage has been consumed by each user mailbox, and how many of them are approaching storage quotas.
+You can get information about users with a mailbox and their level of activity which is primarily based on emails sent and received. You can also see how much storage each mailbox consumes and how many are approaching storage quotas.
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -10,7 +10,7 @@ You can get information about users with a user mailbox and the level of activit
 
 | Function                                 | Return Type                              | Description                              |
 | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_mailboxusageuserdetail.md) | [mailboxUsageUserDetail](../api/reportroot_mailboxusageuserdetail.md#response) | Get user detail about mailbox usage.     |
-| [Get mailbox counts](../api/reportroot_mailboxusagemailboxcounts.md) | [mailboxUsageMailboxCounts](../api/reportroot_mailboxusagemailboxcounts.md#response) | Get the total count of user mailbox in your organization, and the total number that are active on any given day of the reporting period. A user mailbox is considered active if it had an email send or read activity. |
+| [Get user detail](../api/reportroot_mailboxusageuserdetail.md) | [mailboxUsageUserDetail](../api/reportroot_mailboxusageuserdetail.md#response) | Get details about mailbox usage.         |
+| [Get mailbox counts](../api/reportroot_mailboxusagemailboxcounts.md) | [mailboxUsageMailboxCounts](../api/reportroot_mailboxusagemailboxcounts.md#response) | Get the total number of user mailboxes in your organization and how many are active each day of the reporting period. A mailbox is considered active if the user sent or read any email. |
 | [Get quota mailbox status counts](../api/reportroot_mailboxusagequotamailboxstatuscounts.md) | [mailboxUsageQuotaMailboxStatusCounts](../api/reportroot_mailboxusagequotamailboxstatuscounts.md#response) | Get the count of user mailboxes in each quota category. |
 | [Get storage](../api/reportroot_mailboxusagestorage.md) | [mailboxUsageStorage](../api/reportroot_mailboxusagestorage.md#response) | Get the amount of storage used in your organization. |

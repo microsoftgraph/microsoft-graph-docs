@@ -10,6 +10,6 @@ You can gain insights into the activity of Yammer groups in your organization an
 
 | Function                                 | Return Type                              | Description                              |
 | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_yammergroupsactivityuserdetail.md) | [yammerGroupsActivityUserDetail](../api/reportroot_yammergroupsactivityuserdetail.md#response) | Get user detail about Yammer groups activity. |
-| [Get group counts](../api/reportroot_yammergroupsactivitygroupcounts.md) | [yammerGroupsActivityGroupCounts](../api/reportroot_yammergroupsactivitygroupcounts.md#response) | Get the total number of groups that existed, and how many performed group conversation activity. |
+| [Get user detail](../api/reportroot_yammergroupsactivityuserdetail.md) | [yammerGroupsActivityUserDetail](../api/reportroot_yammergroupsactivityuserdetail.md#response) | Get details about Yammer groups activity by user. |
+| [Get group counts](../api/reportroot_yammergroupsactivitygroupcounts.md) | [yammerGroupsActivityGroupCounts](../api/reportroot_yammergroupsactivitygroupcounts.md#response) | Get the total number of groups that existed and how many included group conversation activity. |
 | [Get activity counts](../api/reportroot_yammergroupsactivitycounts.md) | [yammerGroupsActivityCounts](../api/reportroot_yammergroupsactivitycounts.md#response) | Get the number Yammer messages posted, read, and liked in groups. |

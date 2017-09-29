@@ -1,6 +1,6 @@
 #Email activity reports
 
-You can get a high level view of email traffic within your organization from the Reports page, and then you can drill into the Email activity widget to understand the trends and per user level details of the email activity within your organization.
+You can get a high level view of email traffic within your organization from the Reports page. You can also drill into the Email Activity widget to understand the trends and details per user of the email activity in your organization.
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -10,6 +10,6 @@ You can get a high level view of email traffic within your organization from the
 
 | Function                                 | Return Type                              | Description                              |
 | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_emailactivityuserdetail.md) | [emailActivityUserDetail](../api/reportroot_emailactivityuserdetail.md#response) | Get user detail about email activity.    |
-| [Get activity counts](../api/reportroot_emailactivitycounts.md) | [emailActivitySummary](../api/reportroot_emailactivitycounts.md#response) | Enables you to understand the trend of the amount of email activity going on in your organization. You can understand the split of email send or read or received activities. |
-| [Get user counts](../api/reportroot_emailactivityusercounts.md) | [emailActivitySummary](../api/reportroot_emailactivityusercounts.md#response) | Enables you to understand the trend of the amount of unique users who are generating the email activities. You can look at the trend of users performing send, reading or receiving email activities. |
+| [Get user detail](../api/reportroot_emailactivityuserdetail.md) | [emailActivityUserDetail](../api/reportroot_emailactivityuserdetail.md#response) | Get details about email activity users have performed. |
+| [Get activity counts](../api/reportroot_emailactivitycounts.md) | [emailActivitySummary](../api/reportroot_emailactivitycounts.md#response) | Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization. |
+| [Get user counts](../api/reportroot_emailactivityusercounts.md) | [emailActivitySummary](../api/reportroot_emailactivityusercounts.md#response) | Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive. |
