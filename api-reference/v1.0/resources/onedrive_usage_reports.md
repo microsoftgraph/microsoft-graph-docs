@@ -9,6 +9,6 @@ You can get a high-level view of the value you are getting from OneDrive in term
 | Function                                 | Return Type | Description                              |
 | :--------------------------------------- | :---------- | ---------------------------------------- |
 | [Get user detail](../api/reportroot_onedriveusageuserdetail.md) | Stream      | Get details about OneDrive usage by user. |
-| [Get account counts](../api/reportroot_onedriveusageaccountcounts.md) | Stream      | Get the trend in the number of active OneDrive for Business sites. Any site on which users viewed, modified, uploaded, downloaded, shared, or synced files are considered active sites. |
+| [Get account counts](../api/reportroot_onedriveusageaccountcounts.md) | Stream      | Get the trend in the number of active OneDrive for Business sites. Any site on which users viewed, modified, uploaded, downloaded, shared, synced files is considered an active site. |
 | [Get file counts](../api/reportroot_onedriveusagefilecounts.md) | Stream      | Get the total number of files across all sites and how many are active files. A file is considered active if it has been saved, synced, modified, or shared within the specified time period. |
 | [Get storage](../api/reportroot_onedriveusagestorage.md) | Stream      | Get the trend on the amount of storage you are using in OneDrive for Business. |
