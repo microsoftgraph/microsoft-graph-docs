@@ -74,7 +74,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 307
+Content-Length: 317
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ActiveUserCounts)", 
@@ -87,6 +87,7 @@ Content-Length: 307
       "sharePoint": 795, 
       "skypeForBusiness": 251, 
       "yammer": 47, 
+      "teams": 10, 
       "reportDate": "2017-08-29", 
       "reportPeriod": "7"
     }

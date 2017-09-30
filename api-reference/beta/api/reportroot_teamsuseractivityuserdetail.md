@@ -87,7 +87,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 445
+Content-Length: 452
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityUserDetail)", 
@@ -105,7 +105,7 @@ Content-Length: 445
       "privateChatMessageCount": 49, 
       "callCount": 2, 
       "meetingCount": 0, 
-      "otherCount": 74, 
+      "hasOtherAction": true, 
       "reportPeriod": "7"
     }
   ]

@@ -96,7 +96,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 823
+Content-Length: 853
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ActiveUserDetail)", 
@@ -112,16 +112,19 @@ Content-Length: 823
       "hasSharePointLicense": false, 
       "hasSkypeForBusinessLicense": false, 
       "hasYammerLicense": false, 
+      "hasTeamsLicense": false, 
       "exchangeLastActivityDate": "2017-08-30", 
       "oneDriveLastActivityDate": null, 
       "sharePointLastActivityDate": null, 
       "skypeForBusinessLastActivityDate": null, 
       "yammerLastActivityDate": null, 
+      "teamsLastActivityDate": null, 
       "exchangeLicenseAssignDate": "2016-05-03", 
       "oneDriveLicenseAssignDate": null, 
       "sharePointLicenseAssignDate": null, 
       "skypeForBusinessLicenseAssignDate": null, 
       "yammerLicenseAssignDate": null, 
+      "teamsLicenseAssignDate": null, 
       "assignedProducts": [
         "OFFICE 365 ENTERPRISE E5"
       ]
