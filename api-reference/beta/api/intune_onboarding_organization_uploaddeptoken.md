@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Not yet documented
+Uploads a new DEP or ASM token to be the current token used by the Intune to authorize access to the Apple DEP or ASM account.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -35,8 +35,8 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |---|---|---|
-|appleId|String|Not yet documented|
-|depToken|String|Not yet documented|
+|appleId|String|The Apple ID used to access the Apple account providing the token.|
+|depToken|String|The token .p7m file provided by Apple.|
 
 ## Response
 If successful, this action returns a `204 No Content` response code.
