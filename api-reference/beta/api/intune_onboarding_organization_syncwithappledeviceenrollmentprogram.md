@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Not yet documented
+Makes a request for Apple DEP/ASM to send assigned serial numbers to Intune. This is a fire-and-forget call. Apple will respond to the request at an indeterminate time in the future. By default Apple DEP/ASM will send all assigned serial numbers (Full sync) unless it has been less than 7 days since the last Full Sync, in which case Apple DEP/ASM will only send serial numbers that have not already been sent in a prior sync (Delta Sync). This request also syncs all updated enrollment profiles and their assignments from Intune to Apple.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
