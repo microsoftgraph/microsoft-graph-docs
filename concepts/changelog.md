@@ -4,6 +4,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## October 2017
+
+### Azure AD B2C APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added new entities:<br/>[IdentityProvider](../api-reference/beta/resources/aadb2c_identityprovide.md)<br/>|
+
 ## September 2017
 
 ### Intune APIs
