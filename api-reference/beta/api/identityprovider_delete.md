@@ -10,10 +10,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Not supported.|
+|Delegated (work or school account)|IdentityProvider.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityProvider.ReadWrite.All|
+|Application|Not supported.|
 
+The work or school account must be a global administrator of the tenant.
 
 ## HTTP request
 

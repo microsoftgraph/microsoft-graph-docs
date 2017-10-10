@@ -10,9 +10,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Not supported.|
+|Delegated (work or school account)|IdentityProvider.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityProvider.ReadWrite.All|
+|Application|Not supported.|
+
+The work or school account must be a global administrator of the tenant.
 
 ## HTTP request
 
@@ -23,7 +25,7 @@ Content-type: application/json
     "name": "string",
     "type": "string",
     "clientId": "string",
-    "clientSecret": "string",
+    "clientSecret": "string"
 }
 ```
 
@@ -64,7 +66,7 @@ Content-type: application/json
     "name": "Login with Amazon",
     "type": "Amazon",
     "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-    "clientSecret": "000000000000",
+    "clientSecret": "000000000000"
 }
 ```
 
@@ -80,6 +82,6 @@ Content-type: application/json
     "name": "Login with Amazon",
     "type": "Amazon",
     "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-    "clientSecret": "*****",
+    "clientSecret": "*****"
 }
 ```

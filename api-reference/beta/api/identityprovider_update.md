@@ -10,9 +10,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Not supported.|
+|Delegated (work or school account)|IdentityProvider.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityProvider.ReadWrite.All|
+|Application|Not supported.|
+
+The work or school account must be a global administrator of the tenant.
 
 ## HTTP request
 
@@ -22,7 +24,7 @@ PATCH /identityProviders/{id}
     "name": "new-string",
     "type": "new-string",
     "clientId": "new-string",
-    "clientSecret": "new-string",
+    "clientSecret": "new-string"
 }
 ```
 
@@ -59,7 +61,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 {
-    "clientSecret": "1111111111111",
+    "clientSecret": "1111111111111"
 }
 ```
 
