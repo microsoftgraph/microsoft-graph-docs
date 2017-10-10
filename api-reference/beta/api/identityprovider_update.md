@@ -10,9 +10,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All IdentityProvider.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)| Not supported.|
+|Application|IdentityProvider.ReadWrite.All|
 
 ## HTTP request
 
@@ -23,7 +23,6 @@ PATCH /identityProviders/{id}
     "type": "new-string",
     "clientId": "new-string",
     "clientSecret": "new-string",
-    "scopes": "new-string",
 }
 ```
 
@@ -44,7 +43,6 @@ In the request body, provide a JSON object with one or more properties that need
 |name|String|The display name of the identity provider.|
 |clientId|String|The clientId of the application used to access the identity provider.|
 |clientSecret|String|The client-secret for the app used to access the identity provider.|
-|scopes|String|The scopes to request from the identity provider.  This is a space delimited list of scopes.|
 
 ## Response
 

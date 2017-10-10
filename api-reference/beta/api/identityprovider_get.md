@@ -10,9 +10,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All IdentityProvider.ReadWrite.All IdentityProvider.Read.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)| Not supported.|
+|Application|IdentityProvider.Read.All IdentityProvider.ReadWrite.All|
 
 ## HTTP request
 
@@ -57,9 +57,9 @@ Content-type: application/json
     "value": [{
         "id": "Amazon-OAUTH",
         "type": "Amazon",
-        "name": "displayName",
-        "clientId": "string"
-        "clientSecret": "string",
-        "scopes": "string",
+        "name": "Login with Amazon",
+        "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+        "clientSecret": "*****",
     }]
 }
+```

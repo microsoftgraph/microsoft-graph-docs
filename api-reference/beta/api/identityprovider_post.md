@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new [identityProvider](../resources/identityProvider.md) by specifying display name, identityProvider type, client id, and client secret.  Setting the scopes is optional.
+Create a new [identityProvider](../resources/identityProvider.md) by specifying display name, identityProvider type, client id, and client secret.
 
 ## Permissions
 
@@ -10,9 +10,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All IdentityProvider.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)| Not supported.|
+|Application|IdentityProvider.ReadWrite.All|
 
 ## HTTP request
 
@@ -24,7 +24,6 @@ Content-type: application/json
     "type": "string",
     "clientId": "string",
     "clientSecret": "string",
-    "scopes": "string",
 }
 ```
 
@@ -37,9 +36,7 @@ Content-type: application/json
 
 ## Request body
 
-In the request body, provide a JSON representation of [identityProvider](../resources/identityProvider.md) object.
-
-The following table shows the required properties:
+In the request body, provide a JSON representation of [identityProvider](../resources/identityProvider.md) object.  All of the following properties are required:
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
@@ -47,12 +44,6 @@ The following table shows the required properties:
 |name|String|The display name of the identity provider.|
 |clientId|String|The clientId of the application used to access the identity provider.|
 |clientSecret|String|The client-secret for the app used to access the identity provider.|
-
-The following table shows the optional properties:
-
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|scopes|String|The scopes to request from the identity provider.  This is a space delimited list of scopes.|
 
 ## Response
 
@@ -72,9 +63,8 @@ Content-type: application/json
 {
     "name": "Login with Amazon",
     "type": "Amazon",
-    "clientId": "00000000-0000-0000-0000-000000000000",
+    "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
     "clientSecret": "000000000000",
-    "scopes": "openid email profile",
 }
 ```
 
@@ -89,7 +79,7 @@ Content-type: application/json
     "id": "Amazon-OAUTH",
     "name": "Login with Amazon",
     "type": "Amazon",
-    "clientId": "00000000-0000-0000-0000-000000000000",
-    "clientSecret": "000000000000",
-    "scopes": "openid email profile",
+    "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+    "clientSecret": "*****",
 }
+```
