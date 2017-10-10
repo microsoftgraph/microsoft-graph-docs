@@ -6,31 +6,34 @@ This FAQ answers questions related to the [Microsoft Graph Quick Starts](https:/
 
 The quick start samples show you how to access the power of Microsoft Graph. 
 
-If you use the Office 365 REST APIs, you have to authenticate to each service you want to call. Microsoft Graph eliminates this complexity by unifying authentication and giving you access to all APIs via a single entry point. You can you authenticate once and access information across multiple applications and services. 
+If you use the Office 365 REST APIs, you have to authenticate to each service you want to call. Microsoft Graph eliminates this complexity by unifying authentication and giving you access to all APIs via a single entry point. You can authenticate once and access information across multiple applications and services. 
 
 The Microsoft Graph quick starts access three services with one authentication: Microsoft Account, OneDrive, and Outlook. Each quick start accesses information from Microsoft Account users' profiles, writes data to OneDrive (a photo), and generates an email using Outlook (including a link to the photo). 
 
-There are four steps to each quick start to get an example app that is ready to run:
+The quick starts involve four steps: 
 - Select your platform 
-- Get your app ID (aka client ID)
-- Build the sample,
-- Sign in, and send a profile photo via email
+- Get your app ID (client ID)
+- Build the sample
+- Sign in and send a profile photo via email
 
->**Note:** These samples are not designed to be production-ready code. They are designed to show you how you can complete the same scenario across many different languages and platforms. After you complete a quick start, we recommend that you you [fully understand authentication](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios) to create production-ready apps.
+When you complete the quick start, you have an app that's ready to run.
 
+>**Note:** These samples are not designed to be production-ready code. They are designed to show you how to complete a scenario using different languages and platforms. After you complete a quick start, we recommend that you learn about [authentication scenarios](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios) before you create production-ready apps.
 
-## General quick start sample questions
-Questions about the organization and contents of the suite of quick start samples.
+## General questions about the quick start samples
+
+This section answers questions about the organization and contents of the quick start samples.
 
 ### Why does my quick start contain a readme file?
 
 Each quick start registers a new application and creates a zip file that contains the contents of a GitHub repository. It updates the files in the repository so that you don't have to configure the sample application in the repository. You'll find these repositories in the [MicrosoftGraph organization](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=connect) on GitHub.
 
-Feel free to look at the repository associated with each quick start, file issues there, and/or follow the instructions in the Readme to register your own application. Follow the **Just give me the sample code** link under step 2 of each quick start to go to the associated repository.
+Feel free to look at the repository associated with each quick start, file issues there, and/or follow the instructions in the Readme to register your own application. To go to the repository, follow the **Just give me the sample code** link under step 2 of each quick start.
 
-### Which Microsoft API features do the quick start samples show?
+### Which Microsoft Graph APIs do the quick start samples feature?
 
-The suite of samples is being continually improved. Watch the sample repository that you are interested in. As we add features to your favorite sample, we announce the addition through the sample readme. The following table shows you the current features of each sample
+We're continually updating the quick start samples. To get the updates, watch the repository for the sample that you're interested in. As we add features, we'll update the sample readme file with the new information. The following table lists the current features for each sample.
+<!-- Replace the check mark images with an actual character that can be read by a screen reader. Or you could add alt text to each instance of the image. -->
 
 |Sample|Authenticate|Get profile pic|Upload pic to OneDrive|Sharing link in email|Attach pic to email|Send email|
 |-----:|-----:|-----:|------:|------:|------:|-----:|
@@ -48,13 +51,13 @@ The suite of samples is being continually improved. Watch the sample repository 
 |[Xamarin Connect](https://github.com/microsoftgraph/uwp-csharp-connect-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
 
 ## Authentication and authorization
-Questions related to authentication and authorization issues. 
+This section answers questions related to authentication and authorization. 
 
 ### Why don't any of the quick start samples show advanced authentication use cases?
 
-The quick start samples give you an introduction to authentication and Microsoft Graph API calls. When you add authentication and Graph API calls to your production application, you need to know how to design for advanced authentication scenarios involving security and conditional access issues.
+The quick start samples give you an introduction to authentication and Microsoft Graph API calls. When you add authentication and Microsoft Graph API calls to your production application, you need to know how to design for advanced authentication scenarios involving security and conditional access issues.
 
-You can find out more about advanced authentication scenarios for the authentication library you are using by visiting the authentication library publisher's pages.
+You can find out more about advanced authentication scenarios for the authentication library you are using by visiting the page for the authentication library publisher:
 
 - [OAuth2Client for Android and iOS](https://github.com/nxtbgthng/OAuth2Client)
 - [Passport for Node](http://passportjs.org/)
@@ -66,7 +69,7 @@ You can find out more about advanced authentication scenarios for the authentica
 - [Microsoft Authentication Library for JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js)
 
 ## Microsoft Graph API
-Questions about coding for the Microsoft Graph API
+This section answers questions about coding applications that use Microsoft Graph APIs.
 
 ### I didn’t get an email and I see no errors or exceptions. Why didn't this work?
 
@@ -74,9 +77,9 @@ If the sample appears to send an email but you don't see it in your Inbox, check
 
 ### Why doesn't the email sent by the sample have my profile picture?
 
-- This is usually because your profile has not been set up with a user profile picture. If you signed in with a Microsoft Service Account (MSA) then even if you have a profile picture, it will not appear in the email. The Microsoft Graph API is not currently supporting user profile pictures from MSA accounts. <br/>Most of the samples provided by the quick starts get your profile picture and upload it to the root directory of your OneDrive account. If you sign in with a Microsoft account (live.com, hotmail.com), Microsoft Graph can't currently fetch your profile picture, so we fall back to the thought bubble image.
+This is usually because your profile has not been set up with a user profile picture. If you signed in with a Microsoft Service Account (MSA) then even if you have a profile picture, it will not appear in the email. The Microsoft Graph API is not currently supporting user profile pictures from MSA accounts. <br/>Most of the samples provided by the quick starts get your profile picture and upload it to the root directory of your OneDrive account. If you sign in with a Microsoft account (live.com, hotmail.com), Microsoft Graph can't currently fetch your profile picture, so we fall back to the thought bubble image.
 
-- The Node sample and the iOS Objective C samples do not attach user profile pictures to the email message. 
+The Node sample and the iOS Objective C samples do not attach user profile pictures to the email message. 
 
 ## ASP .NET
 Questions related to coding, building, or running the ASP.NET quick start sample.
@@ -92,7 +95,7 @@ Questions related to coding, building, or running the Xamarin quick start sample
 If a sample that uses .NET libraries fails to build in Visual Studio, one or more of your projects might be running up against the 260-character Windows path length limit. Xamarin solutions, in particular, are susceptible to this, especially Android projects inside Xamarin solutions. Try moving the solution to a location at or close to the root directory. 
 
 ## Web stack samples
-Questions related to coding, building, or running quick start samples built with web technology.
+This section answers questions related to coding, building, or running quick start samples built with web technology.
 
 ### How do I know if my local computer supports a local web server?
 The quick start samples based on web technology provide the logic necessary to start and host a local web server. For example, the php sample based on the php 5.4.0+ runtime includes a [built-in web server](http://php.net/manual/en/features.commandline.webserver.php) that you will use for development. It is not intended to be used in a production environment. 
@@ -121,6 +124,6 @@ First try to run the sample app in an InPrivate or Incognito window. Sometimes w
 
 ## Didn't find what you need?
 
-If this FAQ didn't address a question you have or a problem you encountered with one or more of the quick starts, please report your question or problem on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph). 
+If this FAQ didn't address a question or problem you encountered with one or more of the quick starts, please report your question or problem on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph). 
 
 If your problem is related to the code sample provided by the quick start, you can also file an issue in the GitHub sample repository. You can find the repository by following the **Just give me the sample code** link under step 2 for each quick start.
