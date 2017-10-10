@@ -16,7 +16,7 @@ There are four steps to each quick start to get an example app that is ready to 
 - Build the sample,
 - Sign in, and send a profile photo via email
 
->Note: these are not designed to be production ready code; they are just easy illustrations for how you can do the same scenario across many different programing languages and platforms. Once you do a quick start, we recommend you [fully understand authentication](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios) to create production-ready apps.
+>**Note:** These samples are not designed to be production-ready code. They are designed to show you how you can complete the same scenario across many different languages and platforms. After you complete a quick start, we recommend that you you [fully understand authentication](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios) to create production-ready apps.
 
 
 ## General quick start sample questions
