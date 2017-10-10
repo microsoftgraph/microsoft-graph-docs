@@ -1,14 +1,14 @@
-# Microsoft Graph Quick Start FAQ
+# Microsoft Graph quick start FAQ
 
-This FAQ addresses questions and issues that you might encounter as you run through one of the [Microsoft Graph Quick Starts](https://developer.microsoft.com/en-us/graph/quick-start).
+This FAQ answers questions related to the [Microsoft Graph Quick Starts](https://developer.microsoft.com/en-us/graph/quick-start).
 
 ## What do the quick starts do?
 
-The quick start samples show you how to access the power of the Microsoft Graph. 
+The quick start samples show you how to access the power of Microsoft Graph. 
 
-With earlier Microsoft REST APIs you had to authenticate to each service you wanted to call. Microsoft Graph eliminates this complexity for developers by unifying authentication and combining all API entry points into one Graph API entry point. Now you authenticate once and get the power to access information across multiple applications and services. 
+If you use the Office 365 REST APIs, you have to authenticate to each service you want to call. Microsoft Graph eliminates this complexity by unifying authentication and giving you access to all APIs via a single entry point. You can you authenticate once and access information across multiple applications and services. 
 
-To illustrate, the Microsoft Graph quick start example will access 3 different services with one authentication: Microsoft Account, OneDrive, and Outlook. Each quick start will pull information from Microsoft Account users profiles, combining it with writing data to OneDrive (a photo) and then generate an email using Outlook (including a link to the photo). 
+The Microsoft Graph quick starts access three services with one authentication: Microsoft Account, OneDrive, and Outlook. Each quick start accesses information from Microsoft Account users' profiles, writes data to OneDrive (a photo), and generates an email using Outlook (including a link to the photo). 
 
 There are four steps to each quick start to get an example app that is ready to run:
 - Select your platform 
