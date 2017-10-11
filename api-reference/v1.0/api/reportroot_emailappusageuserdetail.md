@@ -16,6 +16,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } --> 
+
 ```http
 GET /reports/EmailAppUsageUserDetail(period='{period_value}')
 GET /reports/EmailAppUsageUserDetail(date={date_value})
@@ -69,6 +71,11 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_emailappusageuserdetail"
+}-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/reports/EmailAppUsageUserDetail(period='D7')
 ```
@@ -77,6 +84,8 @@ GET https://graph.microsoft.com/v1.0/reports/EmailAppUsageUserDetail(period='D7'
 
 The following is an example of the response.
 
+<!-- { "blockType": "ignored" } --> 
+
 ```http
 HTTP/1.1 302 Found
 Content-Type: text/plain
@@ -84,6 +93,12 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+} -->
 
 ```http
 HTTP/1.1 200 OK
