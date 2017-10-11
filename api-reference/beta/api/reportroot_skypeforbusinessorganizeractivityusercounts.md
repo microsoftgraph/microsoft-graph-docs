@@ -40,7 +40,7 @@ In the request URL, provide the following query parameter with a valid value.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an **skypeForBusinessOrganizerActivityUserCounts** object in the response body.
+If successful, this method returns a `200 OK` response code and a **skypeForBusinessOrganizerActivityUserCounts** object in the response body.
 
 The **skypeForBusinessOrganizerActivityUserCounts** object has the following properties.
 

@@ -46,7 +46,7 @@ This method supports the `$top` and `$skipToken` [OData query parameters](../../
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an **skypeForBusinessActivityUserDetail** object in the response body.
+If successful, this method returns a `200 OK` response code and a **skypeForBusinessActivityUserDetail** object in the response body.
 
 The **skypeForBusinessActivityUserDetail** object has the following properties.
 

@@ -40,7 +40,7 @@ In the request URL, provide the following query parameter with a valid value.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an **yammerDeviceUsageUserCounts** object in the response body.
+If successful, this method returns a `200 OK` response code and a **yammerDeviceUsageUserCounts** object in the response body.
 
 The **yammerDeviceUsageUserCounts** object has the following properties.
 

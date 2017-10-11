@@ -46,7 +46,7 @@ This method supports the `$top` and `$skipToken` [OData query parameters](../../
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an **sharePointSiteUsageUserDetail** object in the response body.
+If successful, this method returns a `200 OK` response code and a **sharePointSiteUsageUserDetail** object in the response body.
 
 The **sharePointSiteUsageUserDetail** object has the following properties.
 

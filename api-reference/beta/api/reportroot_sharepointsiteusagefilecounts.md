@@ -40,7 +40,7 @@ In the request URL, provide the following query parameter with a valid value.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an **sharePointSiteUsageFileCounts** object in the response body.
+If successful, this method returns a `200 OK` response code and a **sharePointSiteUsageFileCounts** object in the response body.
 
 The **sharePointSiteUsageFileCounts** object has the following properties.
 
