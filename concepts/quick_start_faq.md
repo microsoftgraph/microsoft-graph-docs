@@ -8,7 +8,7 @@ The quick start samples show you how to access the power of Microsoft Graph.
 
 If you use the Office 365 REST APIs, you have to authenticate to each service you want to call. Microsoft Graph eliminates this complexity by unifying authentication and giving you access to all APIs via a single entry point. You can authenticate once and access information across multiple applications and services. 
 
-The Microsoft Graph quick starts access three services with one authentication: Microsoft Account, OneDrive, and Outlook. Each quick start accesses information from Microsoft Account users' profiles, writes data to OneDrive (a photo), and generates an email using Outlook (including a link to the photo). 
+The Microsoft Graph quick starts access three services with one authentication: Microsoft account, OneDrive, and Outlook. Each quick start accesses information from Microsoft account users' profiles, writes data to OneDrive (a photo), and generates an email using Outlook (including a link to the photo). 
 
 The quick starts involve four steps: 
 - Select your platform 
@@ -30,12 +30,12 @@ Each quick start registers a new application and creates a zip file that contain
 
 Feel free to look at the repository associated with each quick start, file issues there, and/or follow the instructions in the Readme to register your own application. To go to the repository, follow the **Just give me the sample code** link under step 2 of each quick start.
 
-### Which Microsoft Graph APIs do the quick start samples feature?
+### Which Microsoft Graph features do the quick start samples use?
 
 We're continually updating the quick start samples. To get the updates, watch the repository for the sample that you're interested in. As we add features, we'll update the sample readme file with the new information. The following table lists the current features for each sample.
 <!-- Replace the check mark images with an actual character that can be read by a screen reader. Or you could add alt text to each instance of the image. -->
 
-|Sample|Authenticate|Get profile pic|Upload pic to OneDrive|Sharing link in email|Attach pic to email|Send email|
+|Sample|Authenticate|Get profile picture|Upload picture to OneDrive|Sharing link in email|Attach picture to email|Send email|
 |-----:|-----:|-----:|------:|------:|------:|-----:|
 |[Android Connect](https://github.com/microsoftgraph/android-java-connect-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
 |[Angular 2 Connect](https://github.com/microsoftgraph/angular-connect-sample)|![](./images/Check.PNG)| | | | |![](./images/Check.PNG)|
@@ -71,26 +71,34 @@ You can find out more about advanced authentication scenarios for the authentica
 ## Microsoft Graph API
 This section answers questions about coding applications that use Microsoft Graph APIs.
 
-### I didn’t get an email and I see no errors or exceptions. Why didn't this work?
+### I didn’t get an email and I don't see any errors or exceptions. Why didn't this work?
 
 If the sample appears to send an email but you don't see it in your Inbox, check your junk or spam folder. If you're sending the message from a test tenant, the message might get flagged as spam.
 
 ### Why doesn't the email sent by the sample have my profile picture?
 
-This is usually because your profile has not been set up with a user profile picture. If you signed in with a Microsoft Service Account (MSA) then even if you have a profile picture, it will not appear in the email. The Microsoft Graph API is not currently supporting user profile pictures from MSA accounts. <br/>Most of the samples provided by the quick starts get your profile picture and upload it to the root directory of your OneDrive account. If you sign in with a Microsoft account (live.com, hotmail.com), Microsoft Graph can't currently fetch your profile picture, so we fall back to the thought bubble image.
+This is usually because your profile has not been set up with a user profile picture. If you signed in with a Microsoft account, then even if you have a profile picture, it will not appear in the email. The Microsoft Graph API does not currently support user profile pictures from Microsoft accounts. Most of the quick start samples get your profile picture and upload it to the root directory of your OneDrive account. If you sign in with a Microsoft account (live.com, hotmail.com), Microsoft Graph can't currently fetch your profile picture and will fall back to the thought bubble image.
 
-The Node sample and the iOS Objective C samples do not attach user profile pictures to the email message. 
+The Node iOS Objective C samples do not attach user profile pictures to the email message. 
 
 ## ASP .NET
-Questions related to coding, building, or running the ASP.NET quick start sample.
+This section answers questions related to coding, building, or running the ASP.NET quick start sample.
+
+### Why won't my ASP.NET project build?
+
+If a sample that uses .NET libraries fails to build in Visual Studio, one or more of your projects might be running up against the 260-character Windows path length limit. Try moving the solution to a location at or close to the root directory. 
 
 ## Universal Windows Platform (UWP)
-Questions related to coding, building, or running the UWP quick start sample.
+This section answers questions related to coding, building, or running the UWP quick start sample.
+
+### Why won't my UWP project build?
+
+If a sample that uses .NET libraries fails to build in Visual Studio, one or more of your projects might be running up against the 260-character Windows path length limit. Try moving the solution to a location at or close to the root directory. 
 
 ## Xamarin
-Questions related to coding, building, or running the Xamarin quick start sample.
+This section answers questions related to coding, building, or running the Xamarin quick start sample.
 
-### Why won't my  ASP.NET, UWP, or Xamarin project build?
+### Why won't my project build?
 
 If a sample that uses .NET libraries fails to build in Visual Studio, one or more of your projects might be running up against the 260-character Windows path length limit. Xamarin solutions, in particular, are susceptible to this, especially Android projects inside Xamarin solutions. Try moving the solution to a location at or close to the root directory. 
 
@@ -98,11 +106,11 @@ If a sample that uses .NET libraries fails to build in Visual Studio, one or mor
 This section answers questions related to coding, building, or running quick start samples built with web technology.
 
 ### How do I know if my local computer supports a local web server?
-The quick start samples based on web technology provide the logic necessary to start and host a local web server. For example, the php sample based on the php 5.4.0+ runtime includes a [built-in web server](http://php.net/manual/en/features.commandline.webserver.php) that you will use for development. It is not intended to be used in a production environment. 
+The quick start samples based on web technology provide the logic necessary to start and host a local web server. For example, the PHP sample based on the PHP 5.4.0+ runtime includes a [built-in web server](http://php.net/manual/en/features.commandline.webserver.php) that you will use for development. It is not intended to be used in a production environment. 
 
-If you have downloaded the Node.js sample, read this [Node.js getting started guide](https://nodejs.org/en/docs/guides/getting-started-guide/) to learn about starting the Node web server. 
+If you have downloaded the Node.js sample, read the [Node.js getting started guide](https://nodejs.org/en/docs/guides/getting-started-guide/) to learn about starting the Node web server. 
 
-For the ASP.NET sample, Visual Studio 2015 and newer versions include a development web server that starts automatically when you run the sample. You don't need to configure the sample project to use the web server. 
+For the ASP.NET sample, Visual Studio 2015 and later versions include a development web server that starts automatically when you run the sample. You don't need to configure the sample project to use the web server. 
 
 The Ruby connect sample [readme](https://github.com/microsoftgraph/ruby-connect-rest-sample/blob/master/README.md) provides the instructions you need to start a local Ruby web server. 
 
@@ -124,6 +132,6 @@ First try to run the sample app in an InPrivate or Incognito window. Sometimes w
 
 ## Didn't find what you need?
 
-If this FAQ didn't address a question or problem you encountered with one or more of the quick starts, please report your question or problem on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph). 
+If this FAQ didn't address a question or problem you encountered with one or more of the quick starts, please report your question or problem on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph). Be sure to tag your question with microsoft-graph.
 
 If your problem is related to the code sample provided by the quick start, you can also file an issue in the GitHub sample repository. You can find the repository by following the **Just give me the sample code** link under step 2 for each quick start.
