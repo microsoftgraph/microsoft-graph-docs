@@ -59,6 +59,11 @@ The **sharePointSiteUsageSiteCounts** object has the following properties.
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_sharepointsiteusagesitecounts"
+}-->
+
 ```http
 GET https://graph.microsoft.com/beta/reports/SharePointSiteUsageSiteCounts(period='D7')?$format=application/json
 ```
@@ -67,6 +72,12 @@ GET https://graph.microsoft.com/beta/reports/SharePointSiteUsageSiteCounts(perio
 
 The following is an example of the response.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointSiteUsageSiteCounts"
+} -->
 
 ```http
 HTTP/1.1 200 OK

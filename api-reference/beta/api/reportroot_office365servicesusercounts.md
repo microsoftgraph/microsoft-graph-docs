@@ -67,6 +67,11 @@ The **office365ServicesUserCounts** object has the following properties.
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_office365servicesusercounts"
+}-->
+
 ```http
 GET https://graph.microsoft.com/beta/reports/Office365ServicesUserCounts(period='D7')?$format=application/json
 ```
@@ -75,6 +80,13 @@ GET https://graph.microsoft.com/beta/reports/Office365ServicesUserCounts(period=
 
 The following is an example of the response.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.office365ServicesUserCounts"
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json

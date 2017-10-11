@@ -52,6 +52,11 @@ The **office365ActivationCounts** object has the following properties.
 
 The following example shows the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_office365activationcounts"
+}-->
+
 ```http
 GET https://graph.microsoft.com/beta/reports/Office365ActivationCounts?$format=application/json
 ```
@@ -60,6 +65,13 @@ GET https://graph.microsoft.com/beta/reports/Office365ActivationCounts?$format=a
 
 The following example shows the response.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.office365ActivationCounts"
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json

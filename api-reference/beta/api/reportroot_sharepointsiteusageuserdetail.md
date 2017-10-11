@@ -74,6 +74,11 @@ The default page size for this request is 2000 items.
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_sharepointsiteusageuserdetail"
+}-->
+
 ```http
 GET https://graph.microsoft.com/beta/reports/SharePointSiteUsageUserDetail(period='D7')?$format=application/json
 ```
@@ -82,6 +87,12 @@ GET https://graph.microsoft.com/beta/reports/SharePointSiteUsageUserDetail(perio
 
 The following is an example of the response.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointSiteUsageUserDetail"
+} -->
 
 ```http
 HTTP/1.1 200 OK

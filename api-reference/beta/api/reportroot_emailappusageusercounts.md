@@ -65,6 +65,11 @@ The **emailAppUsageUserCounts** object has the following properties.
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_emailappusageusercounts"
+}-->
+
 ```http
 GET https://graph.microsoft.com/beta/reports/EmailAppUsageUserCounts(period='D7')?$format=application/json
 ```
@@ -73,6 +78,12 @@ GET https://graph.microsoft.com/beta/reports/EmailAppUsageUserCounts(period='D7'
 
 The following is an example of the response.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.emailAppUsageUserCounts"
+} -->
 
 ```http
 HTTP/1.1 200 OK

@@ -85,6 +85,11 @@ The default page size for this request is 2000 items.
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_office365activeuserdetail"
+}-->
+
 ```http
 GET https://graph.microsoft.com/beta/reports/Office365ActiveUserDetail(period='D7')?$format=application/json
 ```
@@ -93,6 +98,13 @@ GET https://graph.microsoft.com/beta/reports/Office365ActiveUserDetail(period='D
 
 The following is an example of the response.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.office365ActiveUserDetail"
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
