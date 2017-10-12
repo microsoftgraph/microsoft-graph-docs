@@ -46,7 +46,7 @@ This method supports the `$format`, `$top` and `$skipToken` [OData query paramet
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an **[office365ActiveUserDetail](../resources/office365activeuserdetail)** object in the response body.
+If successful, this method returns a `200 OK` response code and an **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object in the response body.
 
 The default page size for this request is 2000 items.
 
