@@ -91,5 +91,6 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/octet-stream
 Report Refresh Date,Report Date,Report Period,IM,Audio/Video,App Sharing,Web,Dial-in/out 3rd Party,Dial-in/out Microsoft
 ```

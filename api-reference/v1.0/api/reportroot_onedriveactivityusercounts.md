@@ -89,5 +89,6 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/octet-stream
 Report Refresh Date,Viewed Or Edited,Synced,Shared Internally,Shared Externally,Report Date,Report Period
 ```

@@ -102,5 +102,6 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/octet-stream
 Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Mail For Mac,Outlook For Mac,Outlook For Windows,Outlook For Mobile,Other For Mobile,Outlook For Web,POP3 App,IMAP4 App,SMTP App,Report Period
 ```

@@ -97,5 +97,6 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/octet-stream
 Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Send Count,Receive Count,Read count,Assigned Products,Report Period
 ```

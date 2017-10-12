@@ -99,5 +99,6 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/octet-stream
 Report Refresh Date,User Principal Name,Display Name,User State,State Change Date,Last Activity Date,Web,Windows Phone,Android Phone,iPhone,iPad,Other,Report Period
 ```
