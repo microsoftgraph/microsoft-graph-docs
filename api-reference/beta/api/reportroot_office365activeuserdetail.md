@@ -21,8 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/Office365ActiveUserDetail(period='{period_value}')?$format=application/json
-GET /reports/Office365ActiveUserDetail(date={date_value})?$format=application/json
+GET /reports/Office365ActiveUserDetail(period='{period_value}')
+GET /reports/Office365ActiveUserDetail(date={date_value})
 ```
 
 ## Request parameters
@@ -36,7 +36,7 @@ In the request URL, provide the chosen query parameter with a valid value.
 
 > **Note:** You need to set either period or date in the URL.
 
-This method supports the `$top` and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$format`, `$top` and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response. `$format` must be set application/json value.
 
 ## Request headers
 
@@ -46,36 +46,7 @@ This method supports the `$top` and `$skipToken` [OData query parameters](../../
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an **office365ActiveUserDetail** object in the response body.
-
-The **office365ActiveUserDetail** object has the following properties.
-
-| Property                          | Type              |
-| :-------------------------------- | :---------------- |
-| reportRefreshDate                 | Date              |
-| userPrincipalName                 | String            |
-| displayName                       | String            |
-| isDeleted                         | Boolean           |
-| deletedDate                       | Date              |
-| hasExchangeLicense                | Boolean           |
-| hasOneDriveLicense                | Boolean           |
-| hasSharePointLicense              | Boolean           |
-| hasSkypeForBusinessLicense        | Boolean           |
-| hasYammerLicense                  | Boolean           |
-| hasTeamsLicense                   | Boolean           |
-| exchangeLastActivityDate          | Date              |
-| oneDriveLastActivityDate          | Date              |
-| sharePointLastActivityDate        | Date              |
-| skypeForBusinessLastActivityDate  | Date              |
-| yammerLastActivityDate            | Date              |
-| teamsLastActivityDate             | Date              |
-| exchangeLicenseAssignDate         | Date              |
-| oneDriveLicenseAssignDate         | Date              |
-| sharePointLicenseAssignDate       | Date              |
-| skypeForBusinessLicenseAssignDate | Date              |
-| yammerLicenseAssignDate           | Date              |
-| teamsLicenseAssignDate            | Date              |
-| assignedProducts                  | String collection |
+If successful, this method returns a `200 OK` response code and an **[office365ActiveUserDetail](../resources/office365activeuserdetail)** object in the response body.
 
 The default page size for this request is 2000 items.
 

@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/Office365ActiveUserCounts(period='{period_value}')?$format=application/json
+GET /reports/Office365ActiveUserCounts(period='{period_value}')
 ```
 
 ## Request parameters
@@ -31,6 +31,8 @@ In the request URL, provide the following query parameter with a valid value.
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
+
+This method supports the `$format` [OData query parameters](../../../concepts/query_parameters.md) to customize the response. `$format` must be set application/json value.
 
 ## Request headers
 
