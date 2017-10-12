@@ -1,4 +1,4 @@
-# Office365ActiveUserDetail function
+# reportRoot: Office365ActiveUserDetail function
 
 Get details about Office 365 active users.
 

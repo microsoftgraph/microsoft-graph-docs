@@ -1,4 +1,4 @@
-# EmailAppUsageUserCounts function
+# reportRoot: EmailAppUsageUserCounts function
 
 Get the count of unique users that connected to Exchange Online using any email app.
 

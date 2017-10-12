@@ -1,4 +1,4 @@
-# Office365GroupsActivityUserDetail function
+# reportRoot: Office365GroupsActivityUserDetail function
 
 Get details about Office 365 groups activity by user.
 

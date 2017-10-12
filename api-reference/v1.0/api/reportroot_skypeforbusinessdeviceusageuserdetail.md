@@ -1,4 +1,4 @@
-# SkypeForBusinessDeviceUsageUserDetail function
+# reportRoot: SkypeForBusinessDeviceUsageUserDetail function
 
 Get details about Skype for Business device usage by user.
 

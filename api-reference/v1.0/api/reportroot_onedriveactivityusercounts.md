@@ -1,4 +1,4 @@
-# OneDriveActivityUserCounts function
+# reportRoot: OneDriveActivityUserCounts function
 
 Get the trend in the number of active OneDrive users.
 

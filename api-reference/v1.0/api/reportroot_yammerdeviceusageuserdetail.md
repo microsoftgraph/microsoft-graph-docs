@@ -1,4 +1,4 @@
-# YammerDeviceUsageUserDetail function
+# reportRoot: YammerDeviceUsageUserDetail function
 
 Get details about Yammer device usage by user.
 

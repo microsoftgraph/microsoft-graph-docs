@@ -1,4 +1,4 @@
-# SharePointActivityUserDetail function
+# reportRoot: SharePointActivityUserDetail function
 
 Get details about SharePoint activity by user.
 

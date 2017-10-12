@@ -1,4 +1,4 @@
-# SharePointActivityPages function
+# reportRoot: SharePointActivityPages function
 
 Get the number of unique pages visited by users.
 

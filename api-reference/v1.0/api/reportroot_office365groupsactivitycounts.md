@@ -1,4 +1,4 @@
-# Office365GroupsActivityCounts function
+# reportRoot: Office365GroupsActivityCounts function
 
 Get the number of group activities across group workloads.
 

@@ -1,4 +1,4 @@
-# YammerGroupsActivityGroupCounts function
+# reportRoot: YammerGroupsActivityGroupCounts function
 
 Get the total number of groups that existed and how many included group conversation activity.
 

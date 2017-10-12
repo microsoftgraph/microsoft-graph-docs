@@ -1,4 +1,4 @@
-# YammerDeviceUsageUserCounts function
+# reportRoot: YammerDeviceUsageUserCounts function
 
 Get the number of daily users by device type.
 

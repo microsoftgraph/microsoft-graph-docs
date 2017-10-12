@@ -1,4 +1,4 @@
-# MailboxUsageStorage function
+# reportRoot: MailboxUsageStorage function
 
 Get the amount of storage used in your organization.
 

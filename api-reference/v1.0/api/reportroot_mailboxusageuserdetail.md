@@ -1,4 +1,4 @@
-# MailboxUsageUserDetail function
+# reportRoot: MailboxUsageUserDetail function
 
 Get details about mailbox usage.
 

@@ -1,4 +1,4 @@
-# YammerGroupsActivityUserDetail function
+# reportRoot: YammerGroupsActivityUserDetail function
 
 Get details about Yammer groups activity by user.
 

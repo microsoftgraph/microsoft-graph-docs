@@ -1,4 +1,4 @@
-# SkypeForBusinessOrganizerActivityCounts function
+# reportRoot: SkypeForBusinessOrganizerActivityCounts function
 
 Get usage trends on the number and type of conference sessions held and organized by users in your organization. Types of conference sessions include IM, audio/video, application sharing, web, dial-in/out - 3rd party, and Dial-in/out Microsoft.
 

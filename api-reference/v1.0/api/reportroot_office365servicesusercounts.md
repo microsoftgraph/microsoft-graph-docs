@@ -1,4 +1,4 @@
-# Office365ServicesUserCounts function
+# reportRoot: Office365ServicesUserCounts function
 
 Get the count of users by activity type and service.
 

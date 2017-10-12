@@ -1,4 +1,4 @@
-# YammerActivityCounts function
+# reportRoot: YammerActivityCounts function
 
 Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
 

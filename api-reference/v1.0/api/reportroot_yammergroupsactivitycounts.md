@@ -1,4 +1,4 @@
-# YammerGroupsActivityCounts function
+# reportRoot: YammerGroupsActivityCounts function
 
 Get the number Yammer messages posted, read, and liked in groups.
 

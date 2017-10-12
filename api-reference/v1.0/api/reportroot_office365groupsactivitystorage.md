@@ -1,4 +1,4 @@
-# Office365GroupsActivityStorage function
+# reportRoot: Office365GroupsActivityStorage function
 
 Get the total storage used across all group mailboxes and group sites.
 

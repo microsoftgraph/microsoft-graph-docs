@@ -1,4 +1,4 @@
-# EmailAppUsageAppsUserCounts function
+# reportRoot: EmailAppUsageAppsUserCounts function
 
 Get the count of unique users per email app.
 

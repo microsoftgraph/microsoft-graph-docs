@@ -1,4 +1,4 @@
-# SharePointSiteUsageUserDetail function
+# reportRoot: SharePointSiteUsageUserDetail function
 
 Get details about SharePoint site usage by user.
 

@@ -1,4 +1,4 @@
-# Office365ActiveUserCounts function
+# reportRoot: Office365ActiveUserCounts function
 
 Get the count of daily active users in the reporting period by product.
 

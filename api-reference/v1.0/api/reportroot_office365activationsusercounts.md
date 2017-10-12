@@ -1,4 +1,4 @@
-# Office365ActivationsUserCounts function
+# reportRoot: Office365ActivationsUserCounts function
 
 Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices.
 

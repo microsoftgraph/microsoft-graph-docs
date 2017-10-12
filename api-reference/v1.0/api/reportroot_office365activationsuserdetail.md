@@ -1,4 +1,4 @@
-# Office365ActivationsUserDetail function
+# reportRoot: Office365ActivationsUserDetail function
 
 Get details about users who have activated Office 365.
 

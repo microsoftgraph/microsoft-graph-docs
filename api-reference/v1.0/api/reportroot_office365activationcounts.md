@@ -1,4 +1,4 @@
-# Office365ActivationCounts function
+# reportRoot: Office365ActivationCounts function
 
 Get the count of Office 365 activations on desktops and devices.
 

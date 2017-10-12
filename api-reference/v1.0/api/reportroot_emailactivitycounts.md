@@ -1,4 +1,4 @@
-# EmailActivityCounts function
+# reportRoot: EmailActivityCounts function
 
 Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization.
 

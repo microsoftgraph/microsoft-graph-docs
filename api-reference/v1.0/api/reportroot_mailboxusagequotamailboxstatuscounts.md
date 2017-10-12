@@ -1,4 +1,4 @@
-# MailboxUsageQuotaMailboxStatusCounts function
+# reportRoot: MailboxUsageQuotaMailboxStatusCounts function
 
 Get the count of user mailboxes in each quota category.
 

@@ -1,4 +1,4 @@
-# OneDriveUsageUserDetail function
+# reportRoot: OneDriveUsageUserDetail function
 
 Get details about OneDrive usage by user.
 

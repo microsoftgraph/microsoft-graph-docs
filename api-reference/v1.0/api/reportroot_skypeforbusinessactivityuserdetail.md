@@ -1,4 +1,4 @@
-# SkypeForBusinessActivityUserDetail function
+# reportRoot: SkypeForBusinessActivityUserDetail function
 
 Get details about Skype for Business activity by user.
 

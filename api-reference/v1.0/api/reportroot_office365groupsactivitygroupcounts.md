@@ -1,4 +1,4 @@
-# Office365GroupsActivityGroupCounts function
+# reportRoot: Office365GroupsActivityGroupCounts function
 
 Get the daily total number of groups and how many of them were active based on Email Conversations, Yammer Posts and SharePoint file activities.
 

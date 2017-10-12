@@ -1,4 +1,4 @@
-# EmailAppUsageVersionsUserCounts function
+# reportRoot: EmailAppUsageVersionsUserCounts function
 
 Get the count of unique users by Outlook desktop version.
 

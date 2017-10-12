@@ -1,4 +1,4 @@
-# EmailActivityUserCounts function
+# reportRoot: EmailActivityUserCounts function
 
 Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive.
 

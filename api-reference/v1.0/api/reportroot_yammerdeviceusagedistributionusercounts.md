@@ -1,4 +1,4 @@
-# YammerDeviceUsageDistributionUserCounts function
+# reportRoot: YammerDeviceUsageDistributionUserCounts function
 
 Get the number of users by device type.
 

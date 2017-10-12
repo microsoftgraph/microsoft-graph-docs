@@ -1,4 +1,4 @@
-# OneDriveActivityFileCounts function
+# reportRoot: OneDriveActivityFileCounts function
 
 Get the unique number of licensed users that performed file interactions against any OneDrive account.
 

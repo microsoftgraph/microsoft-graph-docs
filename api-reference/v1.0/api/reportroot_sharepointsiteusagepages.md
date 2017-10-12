@@ -1,4 +1,4 @@
-# SharePointSiteUsagePages function
+# reportRoot: SharePointSiteUsagePages function
 
 Get the number of pages viewed across all sites.
 

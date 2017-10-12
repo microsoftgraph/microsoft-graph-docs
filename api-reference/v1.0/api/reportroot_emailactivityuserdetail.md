@@ -1,4 +1,4 @@
-# EmailActivityUserDetail function
+# reportRoot: EmailActivityUserDetail function
 
 Get details about email activity users have performed.
 

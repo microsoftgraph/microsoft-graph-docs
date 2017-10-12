@@ -1,4 +1,4 @@
-# YammerActivityUserCounts function
+# reportRoot: YammerActivityUserCounts function
 
 Get the trends on the number of unique users who post, read, and like Yammer messages.
 

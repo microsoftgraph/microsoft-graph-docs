@@ -1,4 +1,4 @@
-# Office365GroupsActivityFileCounts function
+# reportRoot: Office365GroupsActivityFileCounts function
 
 Get the total number of files and how many of them were active across all group sites associated with an Office 365 Group.
 
