@@ -1019,6 +1019,13 @@
         <Item text="Get unfamiliarLocationRiskEvent" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  unfamiliarLocationRiskEvent API" SEODescription="Retrieve an unfamiliarLocationRiskEvent object." />
       </Item>
     </Item>
+      <Item text="Identity Provider" url="/en-us/api-reference/beta/resources/identityprovider" SEOKeyword="Azure AD, B2C, B2B, MSA, LinkedIn, Facebook, Google" SEODescription="Configure Identity Providers in Azure Active Directory and Azure Active Directory B2C." >
+        <Item text="List identityProviders" url="/en-us/api-reference/beta/api/identityprovider_list" SEODescription="List all identityProviders configured within the directory." />
+        <Item text="Create identityProvider" url="/en-us/api-reference/beta/api/identityprovider_post" SEODescription="Create a new identityProvider." />
+        <Item text="Get identityProvider" url="/en-us/api-reference/beta/api/identityprovider_get" SEODescription="Get an identityProvider by id." />
+        <Item text="Upate identityprovider" url="/en-us/api-reference/beta/api/identityprovider_update" SEODescription="Update the properties of an identityProvider." />
+        <Item text="Delete identityprovider" url="/en-us/api-reference/beta/api/identityprovider_delete" SEODescription="Delete an existing identityProvider." />
+      </Item>
       <Item text="Invitation manager" url="/en-us/api-reference/beta/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
         <Item text="Create invitation" url="/en-us/api-reference/beta/api/invitation_post" SEODescription="Creates a new invitation to add an external user to the organization's directory." />
       </Item>
