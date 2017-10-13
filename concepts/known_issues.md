@@ -193,6 +193,7 @@ does not become part of the body of the resultant message draft.
 ## Drives, files and content streaming
 
 * First time access to a user's personal drive through the Microsoft Graph before the user accesses their personal site through a browser leads to a 401 response.
+* The OneDrive file copy operation times out and returns a GatewayTimeout status code if the file copy operation hasn't completed within 10 seconds. The file copy operation completes normally but you won't know when it completes.
 
 ## Query parameter limitations
 
