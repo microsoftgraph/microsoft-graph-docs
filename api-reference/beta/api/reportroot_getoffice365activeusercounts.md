@@ -1,4 +1,4 @@
-# reportRoot: Office365ActiveUserCounts function
+# reportRoot: getOffice365ActiveUserCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/Office365ActiveUserCounts(period='{period_value}')
+GET /reports/getOffice365ActiveUserCounts(period='{period_value}')
 ```
 
 ## Request parameters
@@ -67,11 +67,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_office365activeusercounts"
+  "name": "reportroot_getoffice365activeusercounts"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/Office365ActiveUserCounts(period='D7')?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserCounts(period='D7')?$format=application/json
 ```
 
 #### Response
