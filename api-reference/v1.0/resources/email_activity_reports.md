@@ -8,6 +8,6 @@ You can get a high level view of email traffic within your organization from the
 
 | Function                                 | Return Type | Description                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_emailactivityuserdetail.md) | Stream      | Get details about email activity users have performed. |
-| [Get activity counts](../api/reportroot_emailactivitycounts.md) | Stream      | Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization. |
-| [Get user counts](../api/reportroot_emailactivityusercounts.md) | Stream      | Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive. |
+| [Get user detail](../api/reportroot_getemailactivityuserdetail.md) | Stream      | Get details about email activity users have performed. |
+| [Get activity counts](../api/reportroot_getemailactivitycounts.md) | Stream      | Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization. |
+| [Get user counts](../api/reportroot_getemailactivityusercounts.md) | Stream      | Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive. |
