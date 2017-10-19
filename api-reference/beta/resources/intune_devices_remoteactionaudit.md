@@ -1,13 +1,13 @@
 ﻿# remoteActionAudit resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Report of remote actions initiated on the devices belonging to a certain tenant.
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List remoteActionAudits](../api/intune_devices_remoteactionaudit_list.md)|[remoteActionAudit](../resources/intune_devices_remoteactionaudit.md) collection|List properties and relationships of the [remoteActionAudit](../resources/intune_devices_remoteactionaudit.md) objects.|
 |[Get remoteActionAudit](../api/intune_devices_remoteactionaudit_get.md)|[remoteActionAudit](../resources/intune_devices_remoteactionaudit.md)|Read properties and relationships of the [remoteActionAudit](../resources/intune_devices_remoteactionaudit.md) object.|
 |[Create remoteActionAudit](../api/intune_devices_remoteactionaudit_create.md)|[remoteActionAudit](../resources/intune_devices_remoteactionaudit.md)|Create a new [remoteActionAudit](../resources/intune_devices_remoteactionaudit.md) object.|
@@ -16,7 +16,7 @@ Report of remote actions initiated on the devices belonging to a certain tenant.
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Report Id.|
 |deviceDisplayName|String|Intune device name.|
 |userName|String|\[deprecated\] Please use InitiatedByUserPrincipalName instead.|
@@ -37,7 +37,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.remoteActionAudit"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.remoteActionAudit",
   "id": "String (identifier)",

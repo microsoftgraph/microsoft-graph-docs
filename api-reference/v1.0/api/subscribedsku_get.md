@@ -52,7 +52,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscribedSkus/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscribedSkus/$entity",
     "capabilityStatus": "Enabled",
     "consumedUnits": 14,
     "id": "48a80680-7326-48cd-9935-b556b81d3a4e_c7df2760-2c81-4ef7-b578-5b5392b571df",

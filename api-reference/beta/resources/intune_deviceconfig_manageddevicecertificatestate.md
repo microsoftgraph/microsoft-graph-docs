@@ -1,13 +1,13 @@
 ﻿# managedDeviceCertificateState resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-**TODO: Documentation is missing please add the `\[ODataDescription()\]` and/or `\[ODataLongDescription()\]` attributes.**
+Not yet documented
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List managedDeviceCertificateStates](../api/intune_deviceconfig_manageddevicecertificatestate_list.md)|[managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) collection|List properties and relationships of the [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) objects.|
 |[Get managedDeviceCertificateState](../api/intune_deviceconfig_manageddevicecertificatestate_get.md)|[managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md)|Read properties and relationships of the [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) object.|
 |[Create managedDeviceCertificateState](../api/intune_deviceconfig_manageddevicecertificatestate_create.md)|[managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md)|Create a new [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) object.|
@@ -16,7 +16,7 @@
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity.|
 |devicePlatform|String|Device platform Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`.|
 |certificateKeyUsage|String|Key usage Possible values are: `keyEncipherment`, `digitalSignature`.|
@@ -42,7 +42,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.managedDeviceCertificateState"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceCertificateState",
   "id": "String (identifier)",

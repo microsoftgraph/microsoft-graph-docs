@@ -1,23 +1,22 @@
 ﻿# windowsProtectionState resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Device protection status entity.
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List windowsProtectionStates](../api/intune_endpointprotection_windowsprotectionstate_list.md)|[windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md) collection|List properties and relationships of the [windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md) objects.|
 |[Get windowsProtectionState](../api/intune_endpointprotection_windowsprotectionstate_get.md)|[windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md)|Read properties and relationships of the [windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md) object.|
 |[Create windowsProtectionState](../api/intune_endpointprotection_windowsprotectionstate_create.md)|[windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md)|Create a new [windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md) object.|
 |[Delete windowsProtectionState](../api/intune_endpointprotection_windowsprotectionstate_delete.md)|None|Deletes a [windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md).|
 |[Update windowsProtectionState](../api/intune_endpointprotection_windowsprotectionstate_update.md)|[windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md)|Update the properties of a [windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md) object.|
-|[List windowsDeviceMalwareStates](../api/intune_endpointprotection_windowsdevicemalwarestate_list.md)|[windowsDeviceMalwareState](../resources/intune_endpointprotection_windowsdevicemalwarestate.md) collection|List properties and relationships of the [windowsDeviceMalwareState](../resources/intune_endpointprotection_windowsdevicemalwarestate.md) objects.|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|The unique Identifier for the device protection status object. This is device id of the device|
 |malwareProtectionEnabled|Boolean|Anti malware is enabled or not|
 |deviceState|String|Computer's state (like clean or pending full scan or pending reboot etc) Possible values are: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
@@ -39,7 +38,7 @@ Device protection status entity.
 
 ## Relationships
 |Relationship|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |detectedMalwareState|[windowsDeviceMalwareState](../resources/intune_endpointprotection_windowsdevicemalwarestate.md) collection|Device malware list|
 
 ## JSON Representation
@@ -50,7 +49,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.windowsProtectionState"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.windowsProtectionState",
   "id": "String (identifier)",

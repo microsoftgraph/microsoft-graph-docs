@@ -41,7 +41,7 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_person_collection"
+  "name": "get_person_collection_beta"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/people
@@ -88,7 +88,7 @@ Content-length: 346
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Lit people",
+  "description": "List people",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

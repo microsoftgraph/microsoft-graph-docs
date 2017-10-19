@@ -1,13 +1,13 @@
 ﻿# sideLoadingKey resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 SideLoadingKey entity is required for Windows 8 and 8.1 devices to intall Line Of Business Apps for a tenant.
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List sideLoadingKeys](../api/intune_onboarding_sideloadingkey_list.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) collection|List properties and relationships of the [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) objects.|
 |[Get sideLoadingKey](../api/intune_onboarding_sideloadingkey_get.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md)|Read properties and relationships of the [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) object.|
 |[Create sideLoadingKey](../api/intune_onboarding_sideloadingkey_create.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md)|Create a new [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) object.|
@@ -16,7 +16,7 @@ SideLoadingKey entity is required for Windows 8 and 8.1 devices to intall Line O
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Side Loading Key Unique Id.|
 |value|String|Side Loading Key Value, it is 5x5 value, seperated by hiphens.|
 |displayName|String|Side Loading Key Name displayed to the ITPro Admins.|
@@ -34,7 +34,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.sideLoadingKey"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.sideLoadingKey",
   "id": "String (identifier)",

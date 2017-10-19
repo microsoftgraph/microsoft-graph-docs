@@ -45,12 +45,6 @@
     <Item text="Use open extensions (example)" url="/en-us/concepts/extensibility_open_users" />
     <Item text="Use schema extensions (example)" url="/en-us/concepts/extensibility_schema_groups" />
   </Item>
-  <Item text="Integrate with OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote." >
-	<Item text="Input and Output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
-	<Item text="Open the OneNote client" url="/en-us/concepts/open_onenote_client" SEODescription="Open a OneNote application to a particular page or notebook." />
-	<Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
-	<Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  
-  </Item>
   <Item text="National cloud deployments" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
   <Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
   <Item text="Known issues" url="/en-us/concepts/known_issues" SEOKeyword="Release Notes, Microsoft Graph API, Overview" SEODescription="Known issues with the Microsoft Graph API." />
@@ -376,8 +370,12 @@
       <Item text="Delete permission" url="/en-us/api-reference/v1.0/api/permission_delete" SEOKeyword="Delete permission, Microsoft Graph API, permission API" SEODescription="Delete permission." />
     </Item>
   </Item>
-  <Item text="OneNote" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="OneNote API, Microsoft Graph API" SEODescription="">
-      <Item text="Notes" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="notes API, Microsoft Graph API, notes API" SEODescription="">
+  <Item text="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
+      <Item text="Input and Output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
+	  <Item text="Open the OneNote client" url="/en-us/concepts/open_onenote_client" SEODescription="Open a OneNote application to a particular page or notebook." />
+      <Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
+      <Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  
+	  <Item text="Notes" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="notes API, Microsoft Graph API, notes API" SEODescription="">
         <Item text="List notebooks" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
         <Item text="Create notebook" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
         <Item text="List sections" url="/en-us/api-reference/v1.0/api/onenote_list_sections" SEOKeyword="List sections, Microsoft Graph API, notes API" SEODescription="Retrieve a list of section(../resources/section.md) objects." />
@@ -1672,6 +1670,20 @@
         </Item>
       </Item>
       <Item text="Corporate Enrollment" url="/en-us/api-reference/beta/resources/intune_corporate_enrollment_conceptual">
+        <Item text="Active Directory Windows Autopilot deployment profile" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_update"/>
+        </Item>
+        <Item text="Azure AD Windows Autopilot deployment profile" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_azureadwindowsautopilotdeploymentprofile">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_update"/>
+        </Item>
         <Item text="DEP enrollment profile" url="/en-us/api-reference/beta/resources/intune_corpenrollment_depenrollmentprofile">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_delete"/>
@@ -3347,6 +3359,19 @@
             <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_list"/>
             <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_update"/>
         </Item>
+        <Item text="Device enrollment configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_get"/>
+          <Item text="assign action" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_assign"/>
+          <Item text="setPriority action" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_setpriority"/>
+        </Item>
+        <Item text="Device enrollment limit configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentlimitconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta"/>
+        </Item>
         <Item text="Device enrollment platform restrictions" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestrictions"/>
         <Item text="Device geolocation" url="/en-us/api-reference/beta/resources/intune_onboarding_devicegeolocation"/>
         <Item text="Device management Exchange connector" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector">
@@ -3357,12 +3382,34 @@
           <Item text="Sync" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_sync"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_update"/>
         </Item>
+        <Item text="Device enrollment platform restrictions configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_update"/>
+        </Item>
+        <Item text="Device enrollment Windows Hello for Business configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_update"/>
+        </Item>
         <Item text="Device management Exchange On-Premises policy" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeonpremisespolicy">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_get"/>
           <Item text="Get on-premises conditional access settings" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_get_onpremisesconditionalaccesssettings"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_update"/>
         </Item>
+        <Item text="Device management partner" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementpartner">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_update"/>
+        </Item>
         <Item text="Device operating system summary" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceoperatingsystemsummary"/>
+        <Item text="Enrollment configuration assignment" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_enrollmentconfigurationassignment">
         <Item text="Hardware information" url="/en-us/api-reference/beta/resources/intune_onboarding_hardwareinformation"/>
         <Item text="Intune brand" url="/en-us/api-reference/beta/resources/intune_onboarding_intunebrand"/>
         <Item text="Located device action result" url="/en-us/api-reference/beta/resources/intune_onboarding_locatedeviceactionresult"/>
@@ -3401,6 +3448,36 @@
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_get"/>
           <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_list"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_update"/>
+        </Item>
+        <Item text="Windows 10 enrollment completion page configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_update"/>
+        </Item>
+        <Item text="Windows 10 network boundary configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_windows10networkboundaryconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_update"/>
+        </Item>
+        <Item text="Windows Autopilot deployment profile" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotdeploymentprofile">
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_get"/>
+          <Item text="assign action" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_assign"/>
+        </Item>
+        <Item text="Windows Autopilot device identity" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotdeviceidentity">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_update"/>
+        </Item>
+        <Item text="Windows Autopilot settings" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotsettings">
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_update"/>
+          <Item text="sync action" url="/en-us/api-reference/beta"/>
         </Item>
       </Item>
       <Item text="Role based access control" url="/en-us/api-reference/beta/resources/intune_rbac_conceptual">
@@ -3459,7 +3536,8 @@
         </Item>
       </Item>
     </Item>
-    <Item text="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="Teams API, Microsoft Graph API, Microsoft Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
+    </Item>
+	<Item text="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="Teams API, Microsoft Graph API, Microsoft Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
       <Item text="Group (team)" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
         <Item text="Get group" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="Get group, Microsoft Graph API, Groups API" SEODescription="Retrieve the properties and relationships of group object." />
         <Item text="List groups" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="List groups, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of group objects." />
@@ -3563,7 +3641,11 @@
         <Item text="Delete permission" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="Delete permission, Microsoft Graph API, permission API" SEODescription="Delete permission." />
       </Item>
     </Item>
-    <Item text="OneNote" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="OneNote API, Microsoft Graph API" SEODescription="">
+    <Item text="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
+      <Item text="Input and Output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
+	  <Item text="Open the OneNote client" url="/en-us/concepts/open_onenote_client" SEODescription="Open a OneNote application to a particular page or notebook." />
+      <Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
+      <Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  
       <Item text="Notes" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="notes API, Microsoft Graph API, notes API" SEODescription="">
         <Item text="List notebooks" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
         <Item text="Create notebook" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />

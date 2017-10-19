@@ -43,6 +43,9 @@ Content-type: application/json
 workbook-session-id: {session-id}
 Content-length: 0
 
+{
+
+}
 ```
 
 Note that workbook-session-id header is required. 

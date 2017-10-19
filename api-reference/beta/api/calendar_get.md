@@ -2,7 +2,8 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of calendar object.
+Get the properties and relationships of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
+or the default calendar of an Office 365 [group](../resources/group.md).
 
 ### Get another user's calendar
 

@@ -19,7 +19,7 @@ An aggregation of information about a person from across mail, contacts, and soc
 |scoredEmailAddresses|[scoredEmailAddress](scoredemailaddress.md) collection|The person's email addresses.|
 |givenName|String|The person's given name.|
 |id|String|The person's unique identifier. Read-only.|
-|imAddress|String collection|The instant message voice over IP (VOIP) session initiation protocol (SIP) address for the user. Read-only.|
+|imAddress|String|The instant message voice over IP (VOIP) session initiation protocol (SIP) address for the user. Read-only.|
 |isFavorite|Boolean|`true` if the user has flagged this person as a favorite.|
 |jobTitle|String|The person's job title.|
 |officeLocation|String|The location of the person's office.|
@@ -55,14 +55,15 @@ The following is a JSON representation of the resource.
   "companyName": "string",
   "department": "string",
   "displayName": "string",
-  "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredemailaddress"}],
+  "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredEmailAddress"}],
   "givenName": "string",
   "id": "string (identifier)",
+  "imAddress": "string",
   "isFavorite": true,
   "jobTitle": "string",
   "officeLocation": "string",
   "personNotes": "string",
-  "personType": [{"@odata.type": "microsoft.graph.persontype"}],
+  "personType": [{"@odata.type": "microsoft.graph.personType"}],
   "phones": [{"@odata.type": "microsoft.graph.phone"}],
   "postalAddresses": [{"@odata.type": "microsoft.graph.location"}],
   "profession": "string",

@@ -84,10 +84,8 @@ GET https://graph.microsoft.com/beta/reports/OneDriveActivity(view='Detail',peri
 ##### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -97,10 +95,16 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+} -->
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: text/plain
+
 Data as of,User principal name,Deleted,Deleted date,Last activity date (UTC),Files viewed or edited,Files synced,Files shared internally,Files shared externally,Products assigned,Reporting period in days
 ```
 

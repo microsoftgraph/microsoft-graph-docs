@@ -4,12 +4,10 @@
 
 Get the list of time zones that are supported for the user, as configured on the user's mailbox server.
 
-You can explicitly specify to have time zones returned in the Windows time zone format, which is the default format.
+You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](http://www.iana.org/time-zones) 
+(also known as Olson time zone) format. The Windows format is the default.
 
-> **Note:** Currently, there is a known problem getting time zones in [Internet Assigned Numbers Authority (IANA) time zone](http://www.iana.org/time-zones) 
-(also known as Olson time zone) format using the Microsoft Graph endpoint. 
-
-When setting up an Outlook client, the user selects the preferred time zone from this supported list. You can subsequently get the preferred language by 
+When setting up an Outlook client, the user selects the preferred time zone from this supported list. You can subsequently get the preferred time zone by 
 [getting the user's mailbox settings](user_get_mailboxsettings.md).
 
 
@@ -65,6 +63,7 @@ GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones
 Here is an example of the response. 
 <!-- {
   "blockType": "response",
+  "name": "user_supportedtimezones_default",
   "truncated": true,
   "@odata.type": "microsoft.graph.timeZoneInformation",
   "isCollection": true
@@ -96,25 +95,27 @@ Content-type: application/json
 }
 ```
 
-<!--
 ##### Request 2
 The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format. 
-!-- {
+<-- {
   "blockType": "request",
   "name": "user_supportedtimezones_iana"
-}--
+} -->
+
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'Iana')
 ```
 
 ##### Response 2
 Here is an example of the response. 
-!-- {
+<-- {
   "blockType": "response",
+  "name": "user_supportedtimezones_iana",
   "truncated": true,
   "@odata.type": "microsoft.graph.timeZoneInformation",
   "isCollection": true
-} --
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -142,7 +143,6 @@ Content-type: application/json
 }
 ```
 
--->
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

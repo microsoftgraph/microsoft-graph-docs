@@ -1,19 +1,19 @@
 ﻿# eBookInstallSummary resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties for the installation summary of a book for a device.
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[Get eBookInstallSummary](../api/intune_books_ebookinstallsummary_get.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Read properties and relationships of the [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) object.|
 |[Update eBookInstallSummary](../api/intune_books_ebookinstallsummary_update.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Update the properties of a [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) object.|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity.|
 |installedDeviceCount|Int32|Number of Devices that have successfully installed this book.|
 |failedDeviceCount|Int32|Number of Devices that have failed to install this book.|
@@ -32,7 +32,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.eBookInstallSummary"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.eBookInstallSummary",
   "id": "String (identifier)",

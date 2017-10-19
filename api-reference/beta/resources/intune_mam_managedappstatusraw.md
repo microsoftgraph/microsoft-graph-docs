@@ -1,6 +1,6 @@
 ﻿# managedAppStatusRaw resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -10,7 +10,7 @@ Inherits from [managedAppStatus](../resources/intune_mam_managedappstatus.md)
 
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List managedAppStatusRaws](../api/intune_mam_managedappstatusraw_list.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) collection|List properties and relationships of the [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) objects.|
 |[Get managedAppStatusRaw](../api/intune_mam_managedappstatusraw_get.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Read properties and relationships of the [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) object.|
 |[Create managedAppStatusRaw](../api/intune_mam_managedappstatusraw_create.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Create a new [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) object.|
@@ -19,7 +19,7 @@ Inherits from [managedAppStatus](../resources/intune_mam_managedappstatus.md)
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |displayName|String|Friendly name of the status report. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |id|String|Key of the entity. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |version|String|Version of the entity. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
@@ -35,7 +35,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.managedAppStatusRaw"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.managedAppStatusRaw",
   "displayName": "String",

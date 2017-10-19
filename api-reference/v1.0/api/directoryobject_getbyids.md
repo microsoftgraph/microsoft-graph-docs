@@ -80,7 +80,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
     "value": [
       {
         "@odata.type": "#microsoft.graph.user",

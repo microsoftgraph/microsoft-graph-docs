@@ -5,41 +5,39 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [windows10TeamGeneralConfiguration](../resources/intune_deviceconfig_windows10teamgeneralconfiguration.md) object.
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceManagement/deviceConfigurations
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a windows10TeamGeneralConfiguration object.
-The following table shows the properties that are required when you create a windows10TeamGeneralConfiguration.
+In the request body, supply a JSON representation for the windows10TeamGeneralConfiguration object.
+
+The following table shows the properties that are required when you create the windows10TeamGeneralConfiguration.
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|assignmentStatus|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|assignmentProgress|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|assignmentErrorMessage|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -48,11 +46,6 @@ The following table shows the properties that are required when you create a win
 |azureOperationalInsightsWorkspaceId|String|The Azure Operational Insights workspace id.|
 |azureOperationalInsightsWorkspaceKey|String|The Azure Operational Insights Workspace key.|
 |connectAppBlockAutoLaunch|Boolean|Specifies whether to automatically launch the Connect app whenever a projection is initiated.|
-|deviceAccountBlockExchangeServices|Boolean|Specifies whether calendar sync and other Exchange server services is enabled.|
-|deviceAccountEmailAddress|String|The email address of the device account.|
-|deviceAccountExchangeServerAddress|String|Exchange server of the device account.|
-|deviceAccountRequirePasswordRotation|Boolean|Specifies whether automatic password rotation is enabled.|
-|deviceAccountSessionInitiationProtocolAddress|String|Session Initiation Protocol (SIP) address of the device account.|
 |maintenanceWindowBlocked|Boolean|Indicates whether or not to Block setting a maintenance window for device updates.|
 |maintenanceWindowDurationInHours|Int32|Maintenance window duration for device updates. Valid values 1 to 5|
 |maintenanceWindowStartTime|TimeOfDay|Maintenance window start time for device updates.|
@@ -70,23 +63,22 @@ The following table shows the properties that are required when you create a win
 |welcomeScreenBackgroundImageUrl|String|The welcome screen background image URL. The URL must use the HTTPS protocol and return a PNG image.|
 |welcomeScreenMeetingInformation|String|The welcome screen meeting information shown. Possible values are: `userDefined`, `showOrganizerAndTimeOnly`, `showOrganizerAndTimeAndSubject`.|
 
+
+
 ## Response
 If successful, this method returns a `201 Created` response code and a [windows10TeamGeneralConfiguration](../resources/intune_deviceconfig_windows10teamgeneralconfiguration.md) object in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1748
+Content-length: 1214
 
 {
   "@odata.type": "#microsoft.graph.windows10TeamGeneralConfiguration",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "assignmentStatus": "Assignment Status value",
-  "assignmentProgress": "Assignment Progress value",
-  "assignmentErrorMessage": "Assignment Error Message value",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -94,11 +86,6 @@ Content-length: 1748
   "azureOperationalInsightsWorkspaceId": "Azure Operational Insights Workspace Id value",
   "azureOperationalInsightsWorkspaceKey": "Azure Operational Insights Workspace Key value",
   "connectAppBlockAutoLaunch": true,
-  "deviceAccountBlockExchangeServices": true,
-  "deviceAccountEmailAddress": "Device Account Email Address value",
-  "deviceAccountExchangeServerAddress": "Device Account Exchange Server Address value",
-  "deviceAccountRequirePasswordRotation": true,
-  "deviceAccountSessionInitiationProtocolAddress": "Device Account Session Initiation Protocol Address value",
   "maintenanceWindowBlocked": true,
   "maintenanceWindowDurationInHours": 0,
   "maintenanceWindowStartTime": "11:59:09.3130000",
@@ -120,18 +107,15 @@ Content-length: 1748
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1856
+Content-Length: 1322
 
 {
   "@odata.type": "#microsoft.graph.windows10TeamGeneralConfiguration",
   "id": "0c94aa20-aa20-0c94-20aa-940c20aa940c",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "assignmentStatus": "Assignment Status value",
-  "assignmentProgress": "Assignment Progress value",
-  "assignmentErrorMessage": "Assignment Error Message value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -140,11 +124,6 @@ Content-Length: 1856
   "azureOperationalInsightsWorkspaceId": "Azure Operational Insights Workspace Id value",
   "azureOperationalInsightsWorkspaceKey": "Azure Operational Insights Workspace Key value",
   "connectAppBlockAutoLaunch": true,
-  "deviceAccountBlockExchangeServices": true,
-  "deviceAccountEmailAddress": "Device Account Email Address value",
-  "deviceAccountExchangeServerAddress": "Device Account Exchange Server Address value",
-  "deviceAccountRequirePasswordRotation": true,
-  "deviceAccountSessionInitiationProtocolAddress": "Device Account Session Initiation Protocol Address value",
   "maintenanceWindowBlocked": true,
   "maintenanceWindowDurationInHours": 0,
   "maintenanceWindowStartTime": "11:59:09.3130000",

@@ -5,36 +5,37 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) object.
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
-POST /importedDeviceIdentityResults
+``` http
+POST /deviceManagement/importedDeviceIdentities
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a importedDeviceIdentityResult object.
-The following table shows the properties that are required when you create a importedDeviceIdentityResult.
+In the request body, supply a JSON representation for the importedDeviceIdentityResult object.
+
+The following table shows the properties that are required when you create the importedDeviceIdentityResult.
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Id of the imported device identity Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|
 |importedDeviceIdentifier|String|Imported Device Identifier Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|
 |importedDeviceIdentityType|String|Type of Imported Device Identity Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) Possible values are: `unknown`, `imei`, `serialNumber`.|
@@ -46,14 +47,16 @@ The following table shows the properties that are required when you create a imp
 |platform|String|The platform of the Device. Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |status|Boolean|Status of imported device identity|
 
+
+
 ## Response
 If successful, this method returns a `201 Created` response code and a [importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) object in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
-```http
-POST https://graph.microsoft.com/beta/importedDeviceIdentityResults
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/importedDeviceIdentities
 Content-type: application/json
 Content-length: 421
 
@@ -72,7 +75,7 @@ Content-length: 421
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 529

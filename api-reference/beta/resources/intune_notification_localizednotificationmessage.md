@@ -1,13 +1,13 @@
 ﻿# localizedNotificationMessage resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The text content of a Notification Message Template for the specified locale.
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List localizedNotificationMessages](../api/intune_notification_localizednotificationmessage_list.md)|[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) collection|List properties and relationships of the [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) objects.|
 |[Get localizedNotificationMessage](../api/intune_notification_localizednotificationmessage_get.md)|[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md)|Read properties and relationships of the [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) object.|
 |[Create localizedNotificationMessage](../api/intune_notification_localizednotificationmessage_create.md)|[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md)|Create a new [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) object.|
@@ -16,7 +16,7 @@ The text content of a Notification Message Template for the specified locale.
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
 |locale|String|The Locale for which this message is destined.|
@@ -34,7 +34,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.localizedNotificationMessage"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.localizedNotificationMessage",
   "id": "String (identifier)",

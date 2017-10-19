@@ -1,13 +1,13 @@
 ﻿# vpnTrafficRule resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 VPN Traffic Rule definition.
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |name|String|Name.|
 |protocols|Int32|Protocols (0-255). Valid values 0 to 255|
 |localPortRanges|[numberRange](../resources/intune_deviceconfig_numberrange.md) collection|Local port range can be set only when protocol is either TCP or UDP (6 or 17). This collection can contain a maximum of 500 elements.|
@@ -29,7 +29,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.vpnTrafficRule"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.vpnTrafficRule",
   "name": "String",

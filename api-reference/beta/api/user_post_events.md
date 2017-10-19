@@ -48,8 +48,8 @@ If successful, this method returns `201, Created` response code and [event](../r
 
 ## Example
 ##### Request 1
-Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the **start** and **end** times in the response
-should use that time zone.
+Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end** 
+times in the response.
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -388,6 +388,175 @@ Content-length: 2985
   }
 }
 ```
+
+
+##### Request 3
+The third example shows how to create a recurring event. The event occurs from 12:00pm to 2:00pm, every Monday starting September 4, 2017, through the end of the year.
+<!-- {
+  "blockType": "request",
+  "name": "create_event_recurring"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/events
+Content-type: application/json
+
+{
+  "subject": "Let's go for lunch",
+  "body": {
+    "contentType": "HTML",
+    "content": "Does noon time work for you?"
+  },
+  "start": {
+      "dateTime": "2017-09-04T12:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2017-09-04T14:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "recurrence": {
+    "pattern": {
+      "type": "weekly",
+      "interval": 1,
+      "daysOfWeek": [ "Monday" ]
+    },
+    "range": {
+      "type": "endDate",
+      "startDate": "2017-09-04",
+      "endDate": "2017-12-31"
+    }
+  },
+  "location":{
+      "displayName":"Harry's Bar"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address":"AdeleV@contoso.onmicrosoft.com",
+        "name": "Adele Vance"
+      },
+      "type": "required"
+    }
+  ]
+}
+```
+In the request body, supply a JSON representation of [event](../resources/event.md) object.
+##### Response 3
+Here is an example of the response. 
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "name": "create_event_recurring",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('919717da-0460-4cca-a6be-d25382429896')/events/$entity",
+    "@odata.etag":"W/\"+T8RDneHMkKe2BGYEaQZ4wAA5a9Acw==\"",
+    "id":"AAMkADQwMD",
+    "createdDateTime":"2017-10-07T04:59:12.9698856Z",
+    "lastModifiedDateTime":"2017-10-07T04:59:13.8136423Z",
+    "changeKey":"+T8RDneHMkKe2BGYEaQZ4wAA5a9Acw==",
+    "categories":[
+
+    ],
+    "originalStartTimeZone":"Pacific Standard Time",
+    "originalEndTimeZone":"Pacific Standard Time",
+    "iCalUId":"040000008200E00074C5B7101A82E0080000000028CEBE04293FD3010000000000000000100000009F85AB8AF8ED4D4FAC777FA89954BDB7",
+    "reminderMinutesBeforeStart":15,
+    "isReminderOn":true,
+    "hasAttachments":false,
+    "subject":"Let's go for lunch",
+    "bodyPreview":"Does late morning work for you?",
+    "importance":"normal",
+    "sensitivity":"normal",
+    "isAllDay":false,
+    "isCancelled":false,
+    "isOrganizer":true,
+    "responseRequested":true,
+    "seriesMasterId":null,
+    "showAs":"busy",
+    "type":"seriesMaster",
+    "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADQwMD&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl":null,
+    "responseStatus":{
+        "response":"organizer",
+        "time":"0001-01-01T00:00:00Z"
+    },
+    "body":{
+        "contentType":"html",
+        "content":"<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes late morning work for you?\r\n</body>\r\n</html>\r\n"
+    },
+    "start":{
+        "dateTime":"2017-09-04T12:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "end":{
+        "dateTime":"2017-09-04T14:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "location":{
+        "displayName":"Harry's Bar",
+        "locationType":"default",
+        "uniqueId":"Harry's Bar",
+        "uniqueIdType":"private"
+    },
+    "locations":[
+        {
+            "displayName":"Harry's Bar",
+            "locationType":"default",
+            "uniqueIdType":"unknown"
+        }
+    ],
+    "recurrence":{
+        "pattern":{
+            "type":"weekly",
+            "interval":1,
+            "month":0,
+            "dayOfMonth":0,
+            "daysOfWeek":[
+                "monday"
+            ],
+            "firstDayOfWeek":"sunday",
+            "index":"first"
+        },
+        "range":{
+            "type":"endDate",
+            "startDate":"2017-09-04",
+            "endDate":"2017-12-31",
+            "recurrenceTimeZone":"Pacific Standard Time",
+            "numberOfOccurrences":0
+        }
+    },
+    "attendees":[
+        {
+            "type":"required",
+            "status":{
+                "response":"none",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "emailAddress":{
+                "name":"Adele Vance",
+                "address":"AdeleV@contoso.onmicrosoft.com"
+            }
+        }
+    ],
+    "organizer":{
+        "emailAddress":{
+            "name":"Alex Wilber",
+            "address":"AlexW@contoso.onmicrosoft.com"
+        }
+    },
+    "OnlineMeeting":null
+}
+```
+
+
+
 
 ## See also
 

@@ -1,13 +1,13 @@
 ﻿# mobileAppCategory resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties for a single Intune app category.
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List mobileAppCategories](../api/intune_apps_mobileappcategory_list.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|List properties and relationships of the [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) objects.|
 |[Get mobileAppCategory](../api/intune_apps_mobileappcategory_get.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md)|Read properties and relationships of the [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) object.|
 |[Create mobileAppCategory](../api/intune_apps_mobileappcategory_create.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md)|Create a new [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) object.|
@@ -16,7 +16,7 @@ Contains properties for a single Intune app category.
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|The key of the entity.|
 |displayName|String|The name of the app category.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the mobileAppCategory was last modified.|
@@ -31,7 +31,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.mobileAppCategory"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppCategory",
   "id": "String (identifier)",

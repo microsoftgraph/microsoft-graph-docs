@@ -1,13 +1,13 @@
 ﻿# importedAppleDeviceIdentity resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The importedAppleDeviceIdentity resource represents the imported device identity of an Apple device .
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List importedAppleDeviceIdentities](../api/intune_corpenrollment_importedappledeviceidentity_list.md)|[importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) collection|List properties and relationships of the [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) objects.|
 |[Get importedAppleDeviceIdentity](../api/intune_corpenrollment_importedappledeviceidentity_get.md)|[importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md)|Read properties and relationships of the [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) object.|
 |[Create importedAppleDeviceIdentity](../api/intune_corpenrollment_importedappledeviceidentity_create.md)|[importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md)|Create a new [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) object.|
@@ -17,7 +17,7 @@ The importedAppleDeviceIdentity resource represents the imported device identity
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity.|
 |serialNumber|String|Device serial number|
 |requestedEnrollmentProfileId|String|Enrollment profile Id admin intends to apply to the device during next enrollment|
@@ -40,7 +40,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.importedAppleDeviceIdentity"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.importedAppleDeviceIdentity",
   "id": "String (identifier)",

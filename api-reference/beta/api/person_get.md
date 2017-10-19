@@ -47,7 +47,7 @@ By default, each response returns 10 records, but you can change this using the 
 
 <!-- {
   "blockType": "request",
-  "name": "get_person"
+  "name": "get_person_beta"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/people/

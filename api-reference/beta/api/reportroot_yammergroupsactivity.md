@@ -85,10 +85,8 @@ GET https://graph.microsoft.com/beta/reports/YammerGroupsActivity(view='Detail',
 ##### Response
 
 The following is an example of the response.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -98,10 +96,16 @@ Location: https://reports.office.com/data/download/odffer_eYRg4sXTiKqggV6eXU0t__
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+} -->
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: text/plain
+
 ContentDate,Group name,Deleted,Group admin,Last activity date (UTC),Type,O365 connected,Members,Posted,Read,Liked,Reporting period in days
 ```
 

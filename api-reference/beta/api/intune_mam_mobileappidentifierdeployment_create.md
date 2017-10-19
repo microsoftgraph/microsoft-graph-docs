@@ -5,21 +5,21 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) object.
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | DeviceManagementApps.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/mobileAppIdentifierDeployments
 POST /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/mobileAppIdentifierDeployments
 POST /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/mobileAppIdentifierDeployments
@@ -28,19 +28,22 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a mobileAppIdentifierDeployment object.
-The following table shows the properties that are required when you create a mobileAppIdentifierDeployment.
+In the request body, supply a JSON representation for the mobileAppIdentifierDeployment object.
+
+The following table shows the properties that are required when you create the mobileAppIdentifierDeployment.
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|The identifier for an app with it's OS Type.|
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
+
+
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) object in the response body.
@@ -48,7 +51,7 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/mobileAppIdentifierDeployments
 Content-type: application/json
 Content-length: 194
@@ -64,7 +67,7 @@ Content-length: 194
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 243
