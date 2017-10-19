@@ -1,10 +1,14 @@
 # List rows
 
 Retrieve a list of tablerow objects.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -20,10 +24,11 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [TableRow](../resources/tablerow.md) objects in the response body.
 ## Example
 ##### Request

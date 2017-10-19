@@ -1,12 +1,19 @@
 ﻿# Create notificationMessageTemplate
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) by posting to the notificationMessageTemplates collection.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -34,13 +41,14 @@ The following table shows the properties that are required when you create a not
 |defaultLocale|String|The default locale to fallback onto when the requested locale is not available.|
 |brandingOptions|String|The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/
@@ -56,7 +64,8 @@ Content-length: 261
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

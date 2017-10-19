@@ -2,8 +2,15 @@
 
 Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,
 from the default calendar of a group.
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.Read.All, Group.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -27,7 +34,9 @@ This method also supports the [OData Query Parameters](http://developer.microsof
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request

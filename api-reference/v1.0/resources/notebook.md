@@ -61,6 +61,7 @@ Here is a JSON representation of the resource
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get notebook](../api/notebook_get.md) | [Notebook](notebook.md) |Read the properties and relationships of the notebook.|
+|[getRecentNotebooks](../api/notebook_getrecentnotebooks.md) | [recentNotebook](recentnotebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
 |[Create section group](../api/notebook_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Create a section group by posting to the sectionGroups collection in the specified notebook.|
 |[List section groups](../api/notebook_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups in the specified notebook.|
 |[Create section](../api/notebook_post_sections.md) |[Section](section.md)| Create a section by posting to the sections collection in the specified notebook.|

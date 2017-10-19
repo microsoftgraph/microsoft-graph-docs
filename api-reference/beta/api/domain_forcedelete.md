@@ -1,5 +1,7 @@
 # domain: forceDelete
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Deletes a domain using an asynchronous operation.
 
 The following actions are performed as part of this operation:
@@ -16,11 +18,18 @@ The following actions are performed as part of this operation:
 
 After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code. To verify deletion of a domain, you can perform a [get domain](domain_get.md). If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
 
-### Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-### HTTP request
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Domain.ReadWrite.All |
+
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -29,14 +38,14 @@ POST /domains/{id}/forceDelete
 
 > For {id}, specify the domain with its fully qualified domain name.
 
-### Request headers
+## Request headers
 
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required.|
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
@@ -44,11 +53,11 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |disableUserAccounts|Boolean| Option to disable renamed user accounts. If a user account is disabled, the user will not be allowed to sign in.<br>*True* (default) - User accounts renamed as part of this operation are disabled.<br>*False* - User accounts renamed as part of this operation are not disabled. |
 
-### Response
+## Response
 
 If successful, this method returns `200, OK` response code. 
 
-### Example
+## Example
 ##### Request
 <!-- {
   "blockType": "request",

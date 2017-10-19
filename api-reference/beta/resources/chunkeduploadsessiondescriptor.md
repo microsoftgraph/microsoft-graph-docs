@@ -6,8 +6,6 @@
 |:---------------|:--------|:----------|
 |name|String||
 
-
-
 ## JSON representation
 
 Here is a JSON representation of the resource
@@ -17,7 +15,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chunkedUploadSessionDescriptor"
+  "@odata.type": "microsoft.graph.chunkeduploadsessiondescriptor"
 }-->
 
 ```json

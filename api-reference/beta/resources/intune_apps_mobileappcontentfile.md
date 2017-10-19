@@ -1,11 +1,13 @@
-﻿#  resource type
+﻿# mobileAppContentFile resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties for a single installer file that is associated with a given mobileAppContent version.
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List mobileAppContentFiles](../api/intune_apps_mobileappcontentfile_list.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) collection|List properties and relationships of the [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) objects.|
 |[Get mobileAppContentFile](../api/intune_apps_mobileappcontentfile_get.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md)|Read properties and relationships of the [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) object.|
 |[Create mobileAppContentFile](../api/intune_apps_mobileappcontentfile_create.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md)|Create a new [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) object.|
@@ -16,7 +18,7 @@ Contains properties for a single installer file that is associated with a given 
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |azureStorageUri|String|The Azure Storage URI.|
 |isCommitted|Boolean|A value indicating whether the file is committed.|
 |id|String|The File Id.|
@@ -38,7 +40,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.mobileAppContentFile"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppContentFile",
   "azureStorageUri": "String",

@@ -1,10 +1,19 @@
 # List overrides
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the [Focused Inbox](../resources/manage_focused_inbox.md) overrides that a user has set up to always classify messages from certain senders in specific ways.
 
 Each override corresponds to an SMTP address of a sender. Initially, a user does not have any overrides.
-## Prerequisites
-The following **scopes** are required to execute this API: *Mail.Read*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Read    |
+|Delegated (personal Microsoft account) | Mail.Read    |
+|Application | Mail.Read |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -19,7 +28,9 @@ GET /users/{id}/inferenceClassification/overrides
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.
 ## Example
 ##### Request
@@ -48,8 +59,8 @@ Content-type: application/json
     {
       "classifyAs": "focused",
       "senderEmailAddress": {
-        "name": "Fanny Downs",
-        "address": "fannyd@adatum.onmicrosoft.com"
+        "name": "Samantha Booth",
+        "address": "samanthab@adatum.onmicrosoft.com"
       },
       "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
     },

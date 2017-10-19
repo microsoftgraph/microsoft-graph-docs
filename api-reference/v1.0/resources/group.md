@@ -43,6 +43,11 @@ This resource supports:
 |[List rejectedSenders](../api/group_list_rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the rejectedSenders list for this group.|
 |[Add rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the rejectedSenders collection.|
 |[Remove rejectedSender](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new new User or Group from the rejectedSenders collection.|
+|[Create setting](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
+|[Get setting](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
+|[List settings](../api/groupsetting_list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
+|[Update setting](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
+|[Delete setting](../api/groupsetting_delete.md) | None | Delete a setting object. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -59,12 +64,12 @@ This resource supports:
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations. Supported for only Office 365 groups.|
 |[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.|
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean|Default is **false**. Indicates if people external to the organization can send messages to the group.|
 |autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group.|
+|classification|String|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](groupsetting.md) value, based on the [template definition](groupsettingtemplate.md).|
 |createdDateTime|DateTimeOffset| The date and time the group was created. |
 |description|String|An optional description for the group. |
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
@@ -101,9 +106,9 @@ This resource supports:
 |photos|[profilePhoto](profilephoto.md) collection| The profile photos owned by the group. Read-only. Nullable.|
 |planner|[Planner](planner.md)| Entry-point to Planner resource that might exist for a Unified Group.|
 |rejectedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
+|settings|[groupSetting](groupsetting.md) collection| Read-only. Nullable.|
 |sites|[site](site.md) collection|The list of SharePoint sites in this group. Access the default site with /sites/root.
 |threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|
-
 
 ## JSON representation
 

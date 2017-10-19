@@ -1,12 +1,19 @@
 ﻿# Create termsAndConditions
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) by posting to the termsAndConditions collection.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -39,13 +46,14 @@ The following table shows the properties that are required when you create a ter
 |acceptanceStatement|String|Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy. This is shown to the user on prompts to accept the T&C policy.|
 |version|Int32|Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/termsAndConditions/
@@ -63,7 +71,8 @@ Content-length: 273
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

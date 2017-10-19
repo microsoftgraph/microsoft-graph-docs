@@ -1,5 +1,7 @@
 # post resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents an individual post item within a [converstaionThread](conversationthread.md) entity.
 
 Even though you cannot explicitly create a post, doing any of the following would create a post:
@@ -49,7 +51,7 @@ Here is a JSON representation of the resource
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|The contents of the post. This is a default property. This property can be null.|
-|categories|String collection|The categories associated with the post.|
+|categories|String collection|The categories associated with the post. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) that has been defined for a user.|
 |changeKey|String|Identifies the version of the post. Every time the post is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |conversationId|String|Unique ID of the conversation. Read-only.|
 |conversationThreadId|String|Unique ID of the conversation thread. Read-only.|
@@ -62,7 +64,6 @@ Here is a JSON representation of the resource
 |receivedDateTime|DateTimeOffset|Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |sender|[recipient](recipient.md)|Contains the address of the sender. The value of Sender is assumed to be the address of the authenticated user in the case when Sender is not specified. This is a default property.|
 
-
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
@@ -71,7 +72,6 @@ Here is a JSON representation of the resource
 |inReplyTo|[Post](post.md)|The earlier post that this post is replying to in the [conversationThread](conversationthread.md). Read-only.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the post. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the post. Read-only. Nullable.|
-
 
 ## Methods
 
@@ -94,7 +94,6 @@ Here is a JSON representation of the resource
 |[Get post with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [post](post.md) | Get posts that contain a single-value extended property by using `$expand` or `$filter`. |
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [post](post.md) | Create one or more multi-value extended properties in a new or existing post.  |
 |[Get post with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [post](post.md) | Get a post that contains a multi-value extended property by using `$expand`. |
-
 
 ## See also
 

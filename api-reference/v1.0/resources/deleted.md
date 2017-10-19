@@ -1,10 +1,16 @@
-# Deleted resource type
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Deleted
+---
+# Deleted facet
 
 The **Deleted** resource indicates that the item has been deleted.
 In this version of the API, the presence (non-null) of the resource value indicates that the file was deleted.
 A null (or missing) value indicates that the file is not deleted.
 
-See [view changes for an item](../api/item_delta.md) for more information on tracking changes and finding deleted items.
+See [view changes for an item](../api/driveitem_delta.md) for more information on tracking changes and finding deleted items.
 
 ## JSON representation
 
@@ -22,7 +28,6 @@ Here is a JSON representation of the resource.
   "state": "string"
 }
 ```
-
 ## Properties
 
 | Property | Type   | Description                               |
@@ -33,13 +38,10 @@ Here is a JSON representation of the resource.
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "deleted resource",
-  "keywords": "",
+  "description": "The deleted facet providers properties about deleted items",
+  "keywords": "deleted,delete,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Deleted"
+} -->

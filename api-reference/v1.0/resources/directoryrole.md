@@ -26,7 +26,6 @@ Represents an Azure AD directory role. Azure AD directory roles are also known a
 |:---------------|:--------|:----------|
 |members|[directoryObject](directoryobject.md) collection|Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable.|
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource

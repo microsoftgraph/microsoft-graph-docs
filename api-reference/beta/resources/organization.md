@@ -1,5 +1,7 @@
 # organization resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents an Azure Active Directory tenant. 
 
 This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
@@ -22,26 +24,26 @@ Only the read and update operations are supported on tenants; create and delete 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedPlans|[assignedPlan](assignedplan.md) collection|The collection of service plans associated with the tenant. Not nullable.            |
-|city|String|            |
+|city|String| City name of the address for the organization |
 |companyLastDirSyncTime|DateTimeOffset|The time and date at which the tenant was last synced with the on-premise directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|country|String|            |
-|countryLetterCode|String|            |
+|country|String| Country name of the address for the organization |
+|countryLetterCode|String| Country abbreviation for the organization |
 |deletionTimestamp|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |dirSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).|
 |displayName|String|The display name for the tenant.|
 |id|String|The unique identifier for the tenant. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |marketingNotificationEmails|String collection| Not nullable.            |
 |objectType|String|A string that identifies the object type. For tenants the value is always “Company”. |
-|postalCode|String|            |
-|preferredLanguage|String|            |
+|postalCode|String| Postal code of the address for the organization |
+|preferredLanguage|String| The preferred language for the organization. Should follow ISO 639-1 Code; for example "en". |
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection| Not nullable.            |
 |provisioningErrors|ProvisioningError collection| Not nullable.            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
-|state|String|            |
-|street|String|            |
+|state|String| State name of the address for the organization |
+|street|String| Street name of the address for organization |
 |technicalNotificationMails|String collection| Not nullable. |
-|telephoneNumber|String|            |
+|telephoneNumber|String| Telephone number for the organization |
 |verifiedDomains|[VerifiedDomain](verifieddomain.md) collection|The collection of domains associated with this tenant. Not nullable.            |
 
 ## Relationships

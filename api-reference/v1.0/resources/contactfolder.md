@@ -23,8 +23,6 @@ by providing a [delta](../api/contactfolder_delta.md) function.
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contactFolder](contactFolder.md) | Create one or more multi-value extended properties in a new or existing contactFolder.  |
 |[Get contactFolder with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | Get a contactFolder that contains a multi-value extended property by using `$expand`. |
 
-
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -39,7 +37,6 @@ by providing a [delta](../api/contactfolder_delta.md) function.
 |contacts|[Contact](contact.md) collection|The contacts in the folder. Navigation property. Read-only. Nullable.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.|
-
 
 ## JSON representation
 

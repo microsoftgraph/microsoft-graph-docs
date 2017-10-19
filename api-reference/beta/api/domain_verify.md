@@ -1,15 +1,24 @@
 # domain: verify
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Validates the ownership of the domain.
 
 > **Important:**
 > Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.
 
-### Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-### HTTP request
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All, Domain.ReadWrite.All |
+
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,19 +27,20 @@ POST /domains/{id}/verify
 
 > For {id}, specify the domain with its fully qualified domain name.
 
-### Request headers
+## Request headers
 
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required.|
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 
-### Response
+## Response
+
 If successful, this method returns `200, OK` response code and [domain](../resources/domain.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 <!-- {
   "blockType": "request",

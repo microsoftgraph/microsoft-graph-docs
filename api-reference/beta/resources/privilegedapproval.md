@@ -1,5 +1,7 @@
 # privilegedApproval resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents an approval that is requested in Privileged Identity Management for getting into a role.
 
 

@@ -1,33 +1,41 @@
 ﻿# Create depEnrollmentProfile
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementServiceConfig.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
-POST /deviceManagement/enrollmentProfiles/
+``` http
+POST /deviceManagement/enrollmentProfiles
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a depEnrollmentProfile object.
-The following table shows the properties that are required when you create a depEnrollmentProfile.
+In the request body, supply a JSON representation for the depEnrollmentProfile object.
+
+The following table shows the properties that are required when you create the depEnrollmentProfile.
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|The GUID for the object Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
 |displayName|String|Name of the profile Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
 |description|String|Description of the profile Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
@@ -55,7 +63,8 @@ The following table shows the properties that are required when you create a dep
 |macOSFileVaultDisabled|Boolean|Indicates if Mac OS file vault is disabled|
 |awaitDeviceConfiguredConfirmation|Boolean|Indicates if the device will need to wait for configured confirmation|
 |sharedIPadMaximumUserCount|Int32|This specifies the maximum number of users that can use a shared iPad. Only applicable in shared iPad mode.|
-|enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios.Only applicable in shared iPads.|
+|enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios. Only applicable in shared iPads.|
+|enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal.|
 
 
 
@@ -65,10 +74,10 @@ If successful, this method returns a `201 Created` response code and a [depEnrol
 ## Example
 ### Request
 Here is an example of the request.
-```http
-POST https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles
 Content-type: application/json
-Content-length: 1219
+Content-length: 1268
 
 {
   "@odata.type": "#microsoft.graph.depEnrollmentProfile",
@@ -104,16 +113,17 @@ Content-length: 1219
   "macOSFileVaultDisabled": true,
   "awaitDeviceConfiguredConfirmation": true,
   "sharedIPadMaximumUserCount": 10,
-  "enableSharedIPad": true
+  "enableSharedIPad": true,
+  "enableAuthenticationViaCompanyPortal": true
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1268
+Content-Length: 1317
 
 {
   "@odata.type": "#microsoft.graph.depEnrollmentProfile",
@@ -150,7 +160,8 @@ Content-Length: 1268
   "macOSFileVaultDisabled": true,
   "awaitDeviceConfiguredConfirmation": true,
   "sharedIPadMaximumUserCount": 10,
-  "enableSharedIPad": true
+  "enableSharedIPad": true,
+  "enableAuthenticationViaCompanyPortal": true
 }
 ```
 

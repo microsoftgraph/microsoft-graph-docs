@@ -1,3 +1,9 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharePointIds
+---
 # SharePointIds resource type
 
 The **SharePointIds** resource groups the various identifiers for an item stored in a SharePoint site or OneDrive for Business into a single structure.
@@ -27,14 +33,14 @@ Here is a JSON representation of the resource
 
 ## Properties
 
-| Property         | Type         | Description                                                                                  |
-| :--------------- | :----------- | :------------------------------------------------------------------------------------------- |
-| listId           | string       | The unique identifier (guid) for the item's list in SharePoint.                              |
-| listItemId       | string       | An integer identifier for the item within the containing list.                               |
-| listItemUniqueId | string       | The unique identifier (guid) for the item within OneDrive for Busienss or a SharePoint site. |
-| siteId           | string       | The unique identifier (guid) for the item's site collection (SPSite).                        |
-| siteUrl          | string (url) | The SharePoint URL for the site that contains the item.                                      |
-| webId            | string       | The unique identifier (guid) for the item's site (SPWeb).                                    |
+| Property         | Type         | Description
+|:-----------------|:-------------|:-------------------------------------------
+| listId           | string       | The unique identifier (guid) for the item's list in SharePoint.
+| listItemId       | string       | An integer identifier for the item within the containing list.
+| listItemUniqueId | string       | The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
+| siteId           | string       | The unique identifier (guid) for the item's site collection (SPSite).
+| siteUrl          | string (url) | The SharePoint URL for the site that contains the item.
+| webId            | string       | The unique identifier (guid) for the item's site (SPWeb).
 
 ## Remarks
 
@@ -46,8 +52,8 @@ For more information about the facets on a **driveItem**, see [**driveItem**](dr
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharepointIds resource",
-  "keywords": "",
+  "description": "The SharepointIds facet provides Sharepoint ids associated with an item.",
+  "keywords": "item, unique, id, csom, facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SharepointIds"
+} -->

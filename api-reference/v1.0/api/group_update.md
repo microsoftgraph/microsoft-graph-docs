@@ -2,8 +2,15 @@
 
 Update the properties of a group object.
 
-## Prerequisites
-The following **scope** is required to execute this API: *Group.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.ReadWrite.All |
 
 ## HTTP request
 
@@ -42,6 +49,7 @@ and delegated permissions. All other members of the group API, including updatin
 support only delegated permissions. See [known issues](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes) for examples.
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 
 ## Example

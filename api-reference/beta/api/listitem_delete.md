@@ -1,16 +1,28 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/11/2017
+title: Delete an entry from a SharePoint list
+---
 # Delete an item from a list
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Removes an item from a [list][].
 
 [list]: ../resources/list.md
 
-## Prerequisites
+## Permissions
 
 To delete an item, the user must have granted the application write access to the item to be deleted.
 
-One of the following scopes is required to execute this request:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Sites.ReadWrite.All |
 
 ## HTTP request
 
@@ -20,17 +32,17 @@ One of the following scopes is required to execute this request:
 DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
-### Optional request headers
+## Optional request headers
 
 | Name       | Value | Description
 |:-----------|:------|:--------------------------------------------------------
 | _if-match_ | etag  | If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
 
-### Request body
+## Request body
 
 Do not supply a request body with this method.
 
-### Example
+## Example
 
 <!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
 

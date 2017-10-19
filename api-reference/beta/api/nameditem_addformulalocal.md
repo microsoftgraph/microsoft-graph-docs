@@ -1,24 +1,26 @@
 # Add Named Item FormulaLocal
 Adds a new name to the collection of the given scope using the user's locale for the formula.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-  * Files.ReadWrite
-  * Sites.Read.All
-  
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite, Sites.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Sites.Read.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/add
-POST /workbook/worksheets({id|name})/names/addFormulaLocal
+POST /workbook/worksheets({id|name})/names/add
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -30,6 +32,7 @@ In the request body, provide a JSON object with the following parameters.
 |comment|string|The comment associated with the named item|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [NamedItem](../resources/NamedItem.md) object in the response body.
 
 ## Example
@@ -73,11 +76,12 @@ Content-length: 109
     "comment": "Comment for the named item",
     "name": "test7",
     "scope": "Workbook",
-    "type": "Double",
-    "value": 0,
+    "type": "String",
+    "value": "0",
     "visible": true
 }
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

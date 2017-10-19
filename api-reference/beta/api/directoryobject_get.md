@@ -1,8 +1,17 @@
 # Get directoryObject
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the properties and relationships of directoryobject object.
-## Prerequisites
-One of the following **scopes** is required to execute this API: _Directory.Read.All_ OR _Directory.AccessAsUser.All_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -17,7 +26,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
 ## Example
 ##### Request

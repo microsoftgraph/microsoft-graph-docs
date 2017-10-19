@@ -1,4 +1,6 @@
-﻿#  resource type
+﻿# defaultManagedAppProtection resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -8,17 +10,16 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List defaultManagedAppProtections](../api/intune_mam_defaultmanagedappprotection_list.md)|[defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) collection|List properties and relationships of the [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) objects.|
 |[Get defaultManagedAppProtection](../api/intune_mam_defaultmanagedappprotection_get.md)|[defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md)|Read properties and relationships of the [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object.|
 |[Create defaultManagedAppProtection](../api/intune_mam_defaultmanagedappprotection_create.md)|[defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md)|Create a new [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object.|
 |[Delete defaultManagedAppProtection](../api/intune_mam_defaultmanagedappprotection_delete.md)|None|Deletes a [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md).|
 |[Update defaultManagedAppProtection](../api/intune_mam_defaultmanagedappprotection_update.md)|[defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md)|Update the properties of a [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object.|
-|[List mobileAppIdentifierDeployments](../api/intune_mam_mobileappidentifierdeployment_list.md)|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List properties and relationships of the [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) objects.|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
@@ -53,14 +54,16 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |appDataEncryptionType|String|Type of encryption which should be used for data in a managed app. (iOS Only) Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked.|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
+|disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|When this setting is enabled, app level encryption is disabled if device level encryption is enabled|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |customSettings|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|A set of string key and string value pairs to be sent to the affected users, unalterned by this service|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 
 ## Relationships
 |Relationship|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed.|
+|deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -70,7 +73,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.defaultManagedAppProtection"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
   "displayName": "String",
@@ -109,6 +112,7 @@ Here is a JSON representation of the resource.
   "appDataEncryptionType": "String",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
+  "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
   "minimumRequiredSdkVersion": "String",
   "customSettings": [
     {

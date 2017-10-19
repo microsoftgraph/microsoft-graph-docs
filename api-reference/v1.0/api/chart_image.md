@@ -1,10 +1,14 @@
 # Chart: Image
 
 Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -17,7 +21,6 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -28,6 +31,7 @@ In the request body, provide a JSON object with the following parameters.
 |fittingMode|string|Optional. The method used to scale the chart to the specified to the specified dimensions (if both height and width are set)."  Possible values are: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and base-64 image string in the response body.
 
 ## Example

@@ -1,5 +1,7 @@
 # Update inferenceClassificationOverride
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Change the **classifyAs** field of a [Focused Inbox](../resources/manage_focused_inbox.md) override as specified. 
 
 You cannot use PATCH to change any other fields in an [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) instance. 
@@ -9,8 +11,15 @@ If an override exists for a sender and the sender changes his/her display name, 
 If an override exists for a sender and the sender changes his/her SMTP address, [deleting](inferenceclassificationoverride_delete.md) the existing override and [creating](inferenceclassification_post_overrides.md) a new one with 
 the new SMTP address is the only way to "update" the override for this sender.
 
-## Prerequisites
-The following **scopes** are required to execute this API: *Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -31,8 +40,8 @@ In the request body, supply the new value for **classifyAs**. For best performan
 |:---------------|:--------|:----------|
 |classifyAs|string| Specifies how incoming messages from a specific sender should always be classified as. Possible values are: `focused`, `other`.|
 
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.
 ## Example
 ##### Request

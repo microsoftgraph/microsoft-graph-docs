@@ -1,10 +1,27 @@
 # Update subscription
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Renew a subscription by extending its expiry time.
 
 Subscriptions to resources expire at dates proscribed by the individual resource types.  In order not to miss notifications, subscriptions should be renewed well in advance of their expiry date.  See [subscription](../resources/subscription.md) for individual expiry dates.
-## Prerequisites
-One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite*, or *Files.ReadWrite.All*
+## Permissions
+
+The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+| Resource type / Item        | Permission          |
+|-----------------------------|---------------------|
+| Contacts                    | Contacts.Read       |
+| Conversations               | Group.Read.All      |
+| Events                      | Calendars.Read      |
+| Messages                    | Mail.Read           |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
+| Drive  (User's OneDrive)    | Files.ReadWrite     |
+| Drives (Sharepoint shared content and drives) | Files.ReadWrite.All |
+
+***Note:*** The /beta endpoint allows application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with application permissions.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -17,6 +34,7 @@ PATCH /subscriptions/{id}
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.
 ## Example
 ##### Request

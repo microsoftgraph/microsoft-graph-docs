@@ -1,8 +1,18 @@
 # Add group owner
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -17,8 +27,8 @@ POST /groups/{id}/owners/$ref
 ## Request body
 In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
 
-
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example

@@ -1,8 +1,17 @@
 # List calendars
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a list of calendars belonging to a calendar group.
-## Prerequisites
-One of the following **scopes** is required to execute this API: _Calendars.Read_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read    |
+|Delegated (personal Microsoft account) | Calendars.Read    |
+|Application | Calendars.Read |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 A user's default [calendarGroup](../resources/calendargroup.md).
@@ -24,7 +33,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [Calendar](../resources/calendar.md) objects in the response body.
 ## Example
 ##### Request

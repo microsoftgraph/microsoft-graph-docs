@@ -1,4 +1,6 @@
-﻿#  resource type
+﻿# androidForWorkApp resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -8,21 +10,16 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List androidForWorkApps](../api/intune_apps_androidforworkapp_list.md)|[androidForWorkApp](../resources/intune_apps_androidforworkapp.md) collection|List properties and relationships of the [androidForWorkApp](../resources/intune_apps_androidforworkapp.md) objects.|
 |[Get androidForWorkApp](../api/intune_apps_androidforworkapp_get.md)|[androidForWorkApp](../resources/intune_apps_androidforworkapp.md)|Read properties and relationships of the [androidForWorkApp](../resources/intune_apps_androidforworkapp.md) object.|
 |[Create androidForWorkApp](../api/intune_apps_androidforworkapp_create.md)|[androidForWorkApp](../resources/intune_apps_androidforworkapp.md)|Create a new [androidForWorkApp](../resources/intune_apps_androidforworkapp.md) object.|
 |[Delete androidForWorkApp](../api/intune_apps_androidforworkapp_delete.md)|None|Deletes a [androidForWorkApp](../resources/intune_apps_androidforworkapp.md).|
 |[Update androidForWorkApp](../api/intune_apps_androidforworkapp_update.md)|[androidForWorkApp](../resources/intune_apps_androidforworkapp.md)|Update the properties of a [androidForWorkApp](../resources/intune_apps_androidforworkapp.md) object.|
-|[List mobileAppCategories](../api/intune_apps_mobileappcategory_list.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|List properties and relationships of the [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) objects.|
-|[List mobileAppGroupAssignments](../api/intune_apps_mobileappgroupassignment_list.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|List properties and relationships of the [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) objects.|
-|[Get mobileAppInstallSummary](../api/intune_apps_mobileappinstallsummary_get.md)|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Read properties and relationships of the [mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md) object.|
-|[List mobileAppInstallStatuses](../api/intune_apps_mobileappinstallstatus_list.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|List properties and relationships of the [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) objects.|
-|[List userAppInstallStatuses](../api/intune_apps_userappinstallstatus_list.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|List properties and relationships of the [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) objects.|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |description|String|The description of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -44,7 +41,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 
 ## Relationships
 |Relationship|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |groupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -59,7 +56,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.androidForWorkApp"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.androidForWorkApp",
   "id": "String (identifier)",

@@ -1,5 +1,7 @@
 # meetingTimeCandidate resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 A meeting suggestion that includes information like meeting time, attendance likelihood, individual 
 availability, and available meeting locations.
 
@@ -18,7 +20,7 @@ Here is a JSON representation of the resource
 ```json
 {
   "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailability"}],
-  "confidence": 1024,
+  "confidence": 1024.0,
   "locations": [{"@odata.type": "microsoft.graph.location"}],
   "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
   "organizerAvailability": "String",

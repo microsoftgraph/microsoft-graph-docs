@@ -1,10 +1,47 @@
 # List events
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get a list of [event](../resources/event.md) objects from the user's default calendar or 
 from a specified calendar. The list contains single instance meetings and series masters.
 
 To get expanded event instances, you can [get the calendar view](calendar_list_calendarview.md), or 
 [get the instances of an event](event_list_instances.md).
+
+### Get events in another user's calendar
+
+If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to 
+get events from another user's calendar. This section focuses on scenarios that involve delegated permissions.
+
+For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a calendar with John. 
+You can get the events in that shared calendar by specifying Garth’s user ID (or user principal name) in the example query shown below.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/events
+```
+
+This capability applies to all the supported GET events operations for an individual user, as listed in the [HTTP request](#http-request) section below. 
+It also applies if Garth has delegated his entire mailbox to John.
+
+If Garth has not shared his calendar with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
+will return an error. In such cases, specifying a user ID or user principal name only works for getting events in the signed-in user’s own calendars, 
+and the query is equivalent to using the /me shortcut:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/events
+```
+
+This capability is available in only GET operations of:
+
+- Shared contact folders
+- Shared calendars
+- Contacts and events in shared folders
+- The above resources in delegated mailboxes
+
+This capability is not available in other operations for contacts, events, and their folders.
+
 
 ### Support various time zones
 
@@ -37,9 +74,15 @@ If you specify either header, the response will include the corresponding `Prefe
 - For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`
 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.Read; Calendars.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
+|Application | Calendars.Read, Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -69,7 +112,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request 1
@@ -92,6 +137,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
 <!-- {
   "blockType": "response",
+  "name": "get_events",
   "truncated": true,
   "@odata.type": "microsoft.graph.event",
   "isCollection": true
@@ -122,9 +168,19 @@ Content-length: 1932
                 "dateTime":"2017-04-21T12:00:00.0000000",
                 "timeZone":"Pacific Standard Time"
             },
-            "location":{
-                "displayName":"Assembly Hall"
+            "location": {
+                "displayName": "Assembly Hall",
+                "locationType": "default",
+                "uniqueId": "Assembly Hall",
+                "uniqueIdType": "private"
             },
+            "locations": [
+                {
+                    "displayName": "Assembly Hall",
+                    "locationType": "default",
+                    "uniqueIdType": "unknown"
+                }
+            ],
             "attendees":[
                 {
                     "type":"required",
@@ -133,8 +189,8 @@ Content-length: 1932
                         "time":"0001-01-01T00:00:00Z"
                     },
                     "emailAddress":{
-                        "name":"Fanny Downs",
-                        "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                        "name":"Samantha Booth",
+                        "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
                     }
                 },
                 {
@@ -151,8 +207,8 @@ Content-length: 1932
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
                 }
             }
         }
@@ -169,9 +225,8 @@ The request also uses a `$select` query parameter to return specific properties.
   "name": "get_events_in_text"
 }-->
 ```http
-Prefer: outlook.body-content-type="text"
-
-GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview  
+GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview
+Prefer: outlook.body-content-type="text" 
 ```
 ##### Response 2
 Here is an example of the response. The **body** property is returned in text format. 

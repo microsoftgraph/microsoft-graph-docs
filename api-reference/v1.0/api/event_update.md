@@ -1,9 +1,15 @@
 # Update event
 
 Update the properties of event object.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
+|Application | Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -55,6 +61,7 @@ Since the **event** resource supports [extensions](../../../concepts/extensibili
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **event** instance.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [event](../resources/event.md) object in the response body.
 ## Example
 ##### Request

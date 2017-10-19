@@ -1,13 +1,21 @@
 # Create page
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new OneNote page in the default section of the default notebook.
 
 To create a page in a different section in the default notebook, you can use the `sectionName` query parameter.  Example: `../onenote/pages?sectionName=My%20section`
 
 The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook. If you're targeting other notebooks, you can [create pages in a specified section](../api/section_post_pages.md).           
-## Prerequisites
-One of the following **scopes** is required to execute this API:  
-Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite    |
+|Application | Notes.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 
@@ -15,6 +23,7 @@ Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
 POST /me/onenote/pages
 POST /users/{id | userPrincipalName}/onenote/pages
 POST /groups/{id}/onenote/pages
+POST /sites/{id}/onenote/pages
 ```
 
 ## Request headers  
@@ -29,6 +38,7 @@ In the request body, supply the HTML content for the page.
 The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and the new [page](../resources/page.md) object in the response body.
 
 ## Example

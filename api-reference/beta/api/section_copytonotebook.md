@@ -1,16 +1,26 @@
 # section: copyToNotebook
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Copies a section to a specific notebook.
 
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-## Prerequisites
-One of the following **scopes** is required to execute this API:   
-Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite    |
+|Application | Notes.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/sections/{id}/copyToNotebook
 POST /users/{id | userPrincipalName}/onenote/sections/{id}/copyToNotebook
 POST /groups/{id}/onenote/sections/{id}/copyToNotebook
+POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -23,11 +33,14 @@ In the request body, provide a JSON object that contains the parameters that you
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
+|siteCollectionId|String|The id of the SharePoint site to copy to. Use only when copying to an Office 365 team site.|
+|siteId|String|The id of the SharePoint web to copy to. Use only when copying to an Office 365 team site.|
 |groupId|String|The id of the group to copy to. Use only when copying to an Office 365 group.|
 |id|String|Required. The id of the destination notebook. |
 |renameAs|String|The name of the copy. Defaults to the name of the existing item. |
 
 ## Response
+
 If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation_get.md).
 
 ## Example

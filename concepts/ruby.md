@@ -285,7 +285,7 @@ Finally, the code uses the HTTP response code returned to notify the user whethe
 3. Go to `http://localhost:3000` in your web browser.
 
 ## See also
-- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Try out the REST API using the [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Explore our other [Microsoft Graph samples](https://github.com/microsoftgraph) on GitHub.
 
 

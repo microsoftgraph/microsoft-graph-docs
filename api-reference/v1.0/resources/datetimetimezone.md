@@ -8,7 +8,6 @@ Describes the date, time, and time zone of a point in time.
 |DateTime|String|A single point of time in a combined date and time representation (`<date>T<time>`).|
 |TimeZone|String|One of the following time zone names.|
 
-
 The _TimeZone_ property can be set to any of the time zones supported by Windows, as well as the following time zones names.
 
 Etc/GMT+12

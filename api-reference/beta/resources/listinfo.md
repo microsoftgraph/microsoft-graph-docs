@@ -1,4 +1,12 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/11/2017
+title: ListInfo
+---
 # ListInfo resource
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **listInfo** complex type provides additional information about a [list][].
 
@@ -17,17 +25,19 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "contentTypesEnabled": false,
   "hidden": false,
-  "baseTemplate": "documentLibrary | genericList | tasks | survey | links | announcements | contacts | ..."
+  "template": "documentLibrary | genericList | tasks | survey | links | announcements | contacts | ..."
 }
 ```
 
 ## Properties
 
-| Property name | Type    | Description
-|:--------------|:--------|:------------------------------------------------
-| **hidden**    | Boolean | If `true`, indicates that the list is not normally visible in the SharePoint user experience.
-| **template**  | String  | An enumerated value that represents the base list template used in creating the list. Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `annoucements`, `contacts`, and more.
+| Property name           | Type    | Description
+|:------------------------|:--------|:------------------------------------------------
+| **contentTypesEnabled** | Boolean | If `true`, indicates that content types are enabled for this list.
+| **hidden**              | Boolean | If `true`, indicates that the list is not normally visible in the SharePoint user experience.
+| **template**            | String  | An enumerated value that represents the base list template used in creating the list. Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more.
 
 ### Remarks
 

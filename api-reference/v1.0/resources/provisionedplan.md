@@ -10,7 +10,6 @@ The **provisionedPlans** property of the [user](user.md) entity and the [organiz
 |provisioningStatus|String|For example, “Success”.|
 |service|String|The name of the service; for example, “AccessControlS2S”|
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource

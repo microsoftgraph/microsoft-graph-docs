@@ -1,16 +1,20 @@
 # Get Office365GroupsActivity report
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the reports of Office 365 Groups Activity. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40) to check the meaning of different views.
 
-## Prerequisites
+## Permissions
 
-The following **scopes** are required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- Reports.Read.All
-
-> Note: Permission scopes are listed in least privilege required order.
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Reports.Read.All |
 
 ## HTTP request
 
@@ -66,7 +70,7 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 Here is an example of how to call this API.
 
-### Request
+##### Request
 
 Here is an example of the request.
 <!-- {
@@ -78,13 +82,11 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Detail',period='D7')/content
 ```
 
-### Response
+##### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -92,7 +94,8 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the downloading CSV file will have the schema as belowing.
+Follow the 302 redirection and the downloading CSV file will have the schema as follows.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,21 +104,21 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
-ContentDate,Group Name,Group Owner,Type,Last activity date (UTC),Deleted,Message received,Item count,Item size,Members,Guests,Reporting period in days
+Content-Type: text/plain
+
+ContentDate,Group name,Deleted,Group owner,Last activity date (UTC),Type,Members,Guests,Exchange emails received,SharePoint active files,Yammer messages posted,Yammer messages read,Yammer messages liked,Exchange mailbox total items,Exchange mailbox storage used (MB),SharePoint total files,SharePoint site storage used (MB),Reporting period in days
 ```
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_office365groupsactivity"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Detail',date='2017-02-02')/content
 GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Activity',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Groups',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Storage',period='D7')/content
+GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Files',period='D7')/content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,3 +1,9 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Get a SharePoint Site
+---
 # Get a site resource
 
 Retrieve properties and relationships for a [site][] resource.
@@ -8,24 +14,29 @@ A **site** resource represents a team site in SharePoint.
 A **site** is addressed be a unique identifier which is a composite ID of the following values:
 
 * Site collection hostname (contoso.sharepoint.com)
-* Site collection unique ID (guid)
-* Site unique ID (guid)
+* Site collection unique ID (GUID)
+* Site unique ID (GUID)
 
 There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:
 
 * `/sites/root`: The tenant root site.
 * `/groups/{group-id}/sites/root`: The group's team site.
 
-## Prerequisites
+## Permissions
 
-One of the following scopes is required to execute this request:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Sites.Read.All
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Sites.Read.All, Sites.ReadWrite.All |
 
 ## Get the tenant's root site
 
 To access the root SharePoint site within a tenant:
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /sites/root
@@ -42,7 +53,7 @@ GET /sites/{hostname}:/{server-relative-path}
 
 ## Access a group team site
 
-To access the team site for a [group](../resources/group.md):
+To access the team site for a group:
 
 ```http
 GET /groups/{group-id}/sites/root
@@ -52,24 +63,33 @@ GET /groups/{group-id}/sites/root
 
 ### Request
 
-<!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "get-site" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}
+GET /sites/{site-id}
 ```
 
 ### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "d297964f-d325-424b-a002-f54048a4622e",
-    "name": "OneDrive / SharePoint Team",
-    "description": "Collaboration site for the OneDrive and SharePoint team",
+  "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
+  "owner": {
+    "user": {
+      "displayName": "Daron Spektor",
+      "id": "5280E7FE-DC7A-4486-9490-E790D81DFEB3"
+    }
+  },
+  "displayName": "OneDrive Team Site",
+  "name": "1drvteam",
+  "createdDateTime": "2017-05-09T20:56:00Z",
+  "lastModifiedDateTime": "2017-05-09T20:56:01Z",
+  "webUrl": "https://contoso.sharepoint.com/teams/1drvteam"
 }
 ```
 
@@ -78,5 +98,5 @@ Content-type: application/json
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Site/Get site by ID"
+  "tocPath": "Sites/Get by ID"
 } -->

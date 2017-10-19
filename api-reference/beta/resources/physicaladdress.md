@@ -9,10 +9,8 @@ Represents the street address of a resource such as a contact or event.
 |city|String|The city.|
 |countryOrRegion|String|The country or region. It's a free-format string value, for example, "United States".|
 |postalCode|String|The postal code.|
-|postOfficeBox|String|The post office box number if there is one.|
 |state|String|The state.|
 |street|String|The street.|
-|type|String|The type of address. Possible values are: `home`, `business`, `other`, `unknown`.|
 
 ## JSON representation
 
@@ -31,10 +29,8 @@ Here is a JSON representation of the resource
   "city": "string",
   "countryOrRegion": "string",
   "postalCode": "string",
-  "postOfficeBox": "string",
   "state": "string",
-  "street": "string",
-  "type": "string"
+  "street": "string"
 }
 
 ```

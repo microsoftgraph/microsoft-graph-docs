@@ -1,4 +1,7 @@
 # message: createForward
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a draft forward message to include a comment or update any message properties  
 all in one **createForward** call. You can then [send](../api/message_send.md) the draft message.
 
@@ -8,9 +11,14 @@ all in one **createForward** call. You can then [send](../api/message_send.md) t
 - You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying 
 neither will return an HTTP 400 Bad Request error.
 
-## Prerequisites
-The following **scopes** are required to execute this API: 
-*Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,6 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [message](../resources/message.md) object in the response body.
 
 ## Example
@@ -86,7 +95,7 @@ Content-length: 272
   "subject": "FW: Let's start a group",
   "body": {
     "contentType": "HTML",
-    "content": "<html>\r\n<body>\r\nDana, just want to make sure you get this; you'll need this if the project gets approved.\r\n<b>From:</b> Admin<br>\r\n<b>Sent:</b> Tuesday, March 15, 2016 6:47:54 AM<br>\r\n<b>To:</b> Fanny Downs; Randi Welch<br>\r\n<b>Subject:</b> RE: Let's start a group</body>\r\n</html>\r\n"
+    "content": "<html>\r\n<body>\r\nDana, just want to make sure you get this; you'll need this if the project gets approved.\r\n<b>From:</b> Admin<br>\r\n<b>Sent:</b> Tuesday, March 15, 2016 6:47:54 AM<br>\r\n<b>To:</b> Samantha Booth; Randi Welch<br>\r\n<b>Subject:</b> RE: Let's start a group</body>\r\n</html>\r\n"
   },
   "sender": {
     "emailAddress": {

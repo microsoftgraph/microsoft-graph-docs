@@ -1,5 +1,7 @@
 # Update profilephoto
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the photo
 you can add to under 4MB.
@@ -8,12 +10,12 @@ Use only PUT for this operation in the beta version.
 
 > **Note** The update photo operation in beta supports only the user's work or school mailboxes and not personal mailboxes.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API for:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
--	Profile photo of the signed-in **user** - *User.ReadWrite*, *User.ReadWrite.All*
-- Profile photo of a **group** - *Group.ReadWrite.All*
-- Photo of a **contact** - *Contacts.ReadWrite*
+- Profile photo of the signed-in **user** - User.ReadWrite, User.ReadWrite.All
+- Profile photo of a **group** - Group.ReadWrite.All
+- Photo of a **contact** - Contacts.ReadWrite
 
 > **Note** To update the photo of any user in the organization, your app must have the User.ReadWrite.All application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](../../../concepts/auth_v2_service.md).
 
@@ -38,6 +40,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 In the request body, include the binary data of the photo in the request body.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code.
 ## Example
 ##### Request

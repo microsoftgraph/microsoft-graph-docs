@@ -1,5 +1,7 @@
 # group resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, a team in Microsoft Teams, a dynamic group, or a security group.
 Inherits from [directoryObject](directoryobject.md).
 
@@ -53,6 +55,7 @@ This resource supports:
 |[List rejectedSenders](../api/group_list_rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the rejectedSenders list for this group.|
 |[Add rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the rejectedSenders collection.|
 |[Remove rejectedSender](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new new User or Group from the rejectedSenders collection.|
+|[List groupLifecyclePolicies](../api/group_list_grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md) collection| List group lifecycle policies. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -69,7 +72,6 @@ This resource supports:
 |[subscribeByMail](../api/group_subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the current user to receive email conversations. Supported for only Office 365 groups.|
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations. Supported for only Office 365 groups.|
 |[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.|
-
 
 ## Properties
 | Property	   | Type	|Description|
@@ -123,7 +125,6 @@ This resource supports:
 |settings|[directorySetting](directorySetting.md) collection| Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.|
 |sites|[site](site.md) collection|The list of SharePoint sites in this group. Access the default site with /sites/root.
 |threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|
-
 
 ## JSON representation
 

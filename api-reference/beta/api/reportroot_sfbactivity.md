@@ -1,16 +1,20 @@
 # Get SfbActivity report
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the reports of Skype for Business User Activity. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - Skype for Business activity](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424) to check the meaning of different views.
 
-## Prerequisites
+## Permissions
 
-The following **scopes** are required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- Reports.Read.All
-
-> Note: Permission scopes are listed in least privilege required order.
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Reports.Read.All |
 
 ## HTTP request
 
@@ -65,7 +69,7 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 Here is an example of how to call this API.
 
-### Request
+##### Request
 
 Here is an example of the request.
 <!-- {
@@ -77,13 +81,11 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/reports/SfbActivity(view='Detail',period='D7')/content
 ```
 
-### Response
+##### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -91,7 +93,8 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDezYGO-NQw
 ```
 
-Follow the 302 redirection and the downloading CSV file will have the schema as belowing.
+Follow the 302 redirection and the downloading CSV file will have the schema as follows.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,15 +103,14 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: text/plain
+
 Data as of,User principal name,Deleted,Deleted date,Last activity date (UTC),P2P - total sessions,Conference organized - total sessions,Conference participated - total sessions,P2P - last activity date,Conference organized - last activity date,Conference participated - Last activity date,P2P - IM,P2P - audio,P2P - audio minutes,P2P - video,P2P - video minutes,P2P - app sharing,P2P - file transfers,Conference organized - IM,Conference organized - audio/video,Conference organized - audio/video minutes,Conference organized - app sharing,Conference organized - web,Conference organized dial-in/out 3rd party,Conference organized dial-in/out Microsoft,Conference organized dial-in Microsoft minutes,Conference organized dial-out Microsoft minutes,Conference participated - IM,Conference participated - audio/video,Conference participated - audio/video minutes,Conference participated - app sharing,Conference participated - web,Conference participated - dial-in,Products assigned,Reporting period in days
 ```
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_sfbactivity"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/SfbActivity(view='Detail',date='2017-02-02')/content

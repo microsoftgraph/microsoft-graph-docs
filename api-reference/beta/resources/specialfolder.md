@@ -1,9 +1,17 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SpecialFolder
+---
 # SpecialFolder resource type
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **SpecialFolder** resource groups special folder-related data items into a single structure.
 
-If a **DriveItem** has a non-null **specialFolder** facet, the item represents a specail (named) folder.
-Special folders can be accessed directly via the [special folders collection](../api/drive_special.md).
+If a **DriveItem** has a non-null **specialFolder** facet, the item represents a special (named) folder.
+Special folders can be accessed directly via the [special folders collection](../api/drive_get_specialfolder.md).
 
 Special folders provide simple aliases to access well-known folders without the need to look up the folder by path (which would require localization), or reference the folder with an ID.
 If a special folder is renamed or moved to another location within the drive, this syntax will continue to return that folder.
@@ -55,8 +63,8 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "specialFolder resource",
-  "keywords": "",
+  "description": "The SpecialFolder facet provides information about folders accessible as special folders.",
+  "keywords": "special folder,item,facet",
   "section": "documentation",
   "tocPath": ""
 }-->

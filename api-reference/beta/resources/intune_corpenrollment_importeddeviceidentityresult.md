@@ -1,5 +1,7 @@
 ﻿# importedDeviceIdentityResult resource type
 
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The importedDeviceIdentityResult resource represents the result of attempting to import a device identity.
@@ -8,7 +10,7 @@ Inherits from [importedDeviceIdentity](../resources/intune_corpenrollment_import
 
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List importedDeviceIdentityResults](../api/intune_corpenrollment_importeddeviceidentityresult_list.md)|[importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) collection|List properties and relationships of the [importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) objects.|
 |[Get importedDeviceIdentityResult](../api/intune_corpenrollment_importeddeviceidentityresult_get.md)|[importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md)|Read properties and relationships of the [importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) object.|
 |[Create importedDeviceIdentityResult](../api/intune_corpenrollment_importeddeviceidentityresult_create.md)|[importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md)|Create a new [importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) object.|
@@ -17,7 +19,7 @@ Inherits from [importedDeviceIdentity](../resources/intune_corpenrollment_import
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Id of the imported device identity Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|
 |importedDeviceIdentifier|String|Imported Device Identifier Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|
 |importedDeviceIdentityType|String|Type of Imported Device Identity Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) Possible values are: `unknown`, `imei`, `serialNumber`.|
@@ -39,7 +41,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.importedDeviceIdentityResult"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.importedDeviceIdentityResult",
   "id": "String (identifier)",

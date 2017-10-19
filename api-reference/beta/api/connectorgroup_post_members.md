@@ -1,8 +1,17 @@
 # Add connector to connectorGroup
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to add a connector to a connectorGroup.
-## Prerequisites
-The following **scopes** are required to execute this API: *Directory.ReadWrite.All Or Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -13,12 +22,11 @@ POST /connectorGroups/{id}/members/$ref
 |:---------------|:----------|
 | Authorization  | Bearer. Required|
 
-
 ## Request body
 In the request body, supply a JSON representation of a link to a   [connector](../resources/connector.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [connector](../resources/connector.md) object in the response body.
 
 ## Example

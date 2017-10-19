@@ -1,9 +1,17 @@
 # Get anonymousIpRiskEvent
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the properties and relationships of an anonymousipriskevent object.
-## Prerequisites
-The following **scopes** are required to execute this API:
-*IdentityRiskEvent.Read.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | IdentityRiskEvent.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | IdentityRiskEvent.Read.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,7 +26,9 @@ GET /anonymousIpRiskEvents/{id}
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [anonymousIpRiskEvent](../resources/anonymousipriskevent.md) object in the value of response body.
 ## Example
 ##### Request

@@ -1,29 +1,40 @@
 # List oauth2PermissionGrants
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a list of oauth2PermissionGrant objects.
 
-### Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API: *Directory.Read.All*, *Directory.ReadWrite.All*, or *Directory.AccessAsUser.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-### HTTP request
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All, Directory.ReadWrite.All |
+
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /oauth2PermissionGrants
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name | Description |
 |:----------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+
+## Response
+
 If successful, this method returns a `200 OK` response code and collection of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects in the response body.
-### Example
+## Example
 
 ##### Request
 
@@ -40,7 +51,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.oAuth2PermissionGrant",
+  "@odata.type": "microsoft.graph.oAuth2PermissionGrants",
   "isCollection": true
 } -->
 ```http

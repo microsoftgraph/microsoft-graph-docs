@@ -33,7 +33,6 @@ An EventMessage is typically found in the Inbox folder where it arrives as the r
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [eventMessage](eventMessage.md) | Create one or more multi-value extended properties in a new or existing eventMessage.  |
 |[Get eventMessage with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [eventMessage](eventMessage.md) | Get an eventMessage that contains a multi-value extended property by using `$expand`. |
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -66,7 +65,6 @@ An EventMessage is typically found in the Inbox folder where it arrives as the r
 |uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message.|
 |webLink|String|The URL to open the message in Outlook Web App.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook Web App review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL can be accessed from within an iFrame.|
 
-
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
@@ -75,7 +73,6 @@ An EventMessage is typically found in the Inbox folder where it arrives as the r
 |extensions|[Extension](extension.md) collection|The collection of open extensions defined for the eventMessage. Read-only. Nullable.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the eventMessage. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the eventMessage. Read-only. Nullable.|
-
 
 ## JSON representation
 

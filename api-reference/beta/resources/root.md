@@ -1,12 +1,23 @@
-# Root resource
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Root
+---
+# Root resource type
 
-The **Root** resource type is an empty resource. An instance of this resource on a [DriveItem](driveitem.md) or [Site](site.md) indicates that the item is the root of a hierarchy.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+The **Root** facet indicates that an object is the top-most one in its hierarchy.
+The presence (non-null) of the facet value indicates that the object is the root.
+A null (or missing) value indicates the object is not the root.
+
+**Note**: While this facet is empty today, in future API revisions the facet may be populated with additional properties.
 
 ## JSON representation
 
-Here is a JSON representation of a **Root** resource.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.root",
-       "keyProperty": "id", "optionalProperties": [ ] } -->
+<!-- { "blockType": "resource", "@type": "microsoft.graph.root" } -->
+
 ```json
 {
 }
@@ -19,11 +30,6 @@ The **Root** resource has no properties.
 
 <!-- {
   "type": "#page.annotation",
-  "description": "",
-  "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/Root",
-  "tocBookmarks": {
-    "Root": "#"
-  }
+  "tocPath": "Facets/Root"
 } -->

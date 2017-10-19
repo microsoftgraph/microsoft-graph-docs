@@ -1,10 +1,14 @@
 # Get sectionGroup
 
 Retrieve the properties and relationships of a [sectionGroup](../resources/sectiongroup.md) object.
-## Prerequisites
-One of the following **scopes** is required to execute this API:  
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Notes.Create, Notes.Read, Notes.ReadWrite    |
+|Application | Notes.Read.All, Notes.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -12,6 +16,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.Al
 GET /me/onenote/sectionGroups/{id}
 GET /users/{id | userPrincipalName}/onenote/sectionGroups/{id}
 GET /groups/{id}/onenote/sectionGroups/{id}
+GET /sites/{id}/onenote/sectionGroups/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -22,11 +27,13 @@ The default query expands `parentNotebook` and selects its `id`, `name`, and `se
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Accept | string | `application/json` | 
+| Accept | string | `application/json` |
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a [sectionGroup](../resources/sectiongroup.md) object in the response body.
 ## Example
 ##### Request

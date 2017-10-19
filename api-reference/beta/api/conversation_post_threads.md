@@ -1,5 +1,7 @@
 # Create thread
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new thread in the specified conversation.
 
 A thread and post are created as specified. Use [reply thread](conversationthread_reply.md) to further post
@@ -7,9 +9,15 @@ to that thread. Or, if you get the post ID, you can also [reply](post_reply.md) 
 
 Note: You can also [start a new conversation by first creating a thread](group_post_threads.md).
 
-## Prerequisites
-The following **scopes** are required to execute this API:
-*Group.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -23,8 +31,8 @@ POST /groups/{id}/conversations/{id}/threads
 ## Request body
 In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
 
 ## Example

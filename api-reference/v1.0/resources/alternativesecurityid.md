@@ -9,7 +9,6 @@ Contains an alternative security ID associated with a device. The **alternativeS
 |key|Binary|            |
 |type|Int32|            |
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource

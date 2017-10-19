@@ -1,5 +1,7 @@
 # assignedLicense resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents a license assigned to a user. The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.
 
 ## Properties
@@ -7,7 +9,6 @@ Represents a license assigned to a user. The **assignedLicenses** property of th
 |:---------------|:--------|:----------|
 |disabledPlans|Guid collection|A collection of the unique identifiers for plans that have been disabled.|
 |skuId|Guid|The unique identifier for the SKU.|
-
 
 ## JSON representation
 

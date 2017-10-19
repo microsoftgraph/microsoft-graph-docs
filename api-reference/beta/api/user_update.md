@@ -1,9 +1,16 @@
 # Update user
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the properties of a user object.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*User.ReadWrite; User.ReadWrite.All; Directory.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | User.ReadWrite    |
+|Application | User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -58,6 +65,7 @@ Since the **user** resource supports [extensions](../../../concepts/extensibilit
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **user** instance.
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 ## Example
 ##### Request

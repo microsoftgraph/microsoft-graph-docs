@@ -1,11 +1,20 @@
 # List members
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to get the members list (user and group) in an administrative unit.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-> Note: To list the members of a hidden membership in an administrative unit, the *Member.Read.Hidden* scope is required.
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All, Directory.ReadWrite.All |
+
+> Note: To list the members of a hidden membership in an administrative unit, the Member.Read.Hidden permission is required.
 
 ## HTTP request
 
@@ -22,6 +31,7 @@ GET /administrativeUnits/{id}/members/$ref
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [user](../resources/user.md) and/or [group](../resources/group.md) objects in the response body.  Instead, if you put `$ref` at the end of the request, the response will contain a collection of `@odata.id` links/URLs to the members.
 
 ## Examples

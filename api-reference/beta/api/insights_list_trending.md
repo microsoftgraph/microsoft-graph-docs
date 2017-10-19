@@ -1,9 +1,18 @@
 # List trending
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Calculated insight that returns the list of items trending around the user.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Sites.Read.All*; *Sites.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Sites.Read.All, Sites.ReadWrite.All |
 
 ## HTTP request
 ```http
@@ -35,6 +44,7 @@ See the available Container Types and Types you can filter by in [resourceVisual
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a list of [trending](../resources/insights_trending.md) items in the response body. Each item contains visualization properties for displaying the item in your experience.
 
 ## Example

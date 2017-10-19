@@ -1,33 +1,41 @@
 ﻿# Create iosManagedAppProtection
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
-POST /deviceAppManagement/iosManagedAppProtections/
+``` http
+POST /deviceAppManagement/iosManagedAppProtections
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a iosManagedAppProtection object.
-The following table shows the properties that are required when you create a iosManagedAppProtection.
+In the request body, supply a JSON representation for the iosManagedAppProtection object.
+
+The following table shows the properties that are required when you create the iosManagedAppProtection.
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
@@ -73,8 +81,8 @@ If successful, this method returns a `201 Created` response code and a [iosManag
 ## Example
 ### Request
 Here is an example of the request.
-```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/
+``` http
+POST https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections
 Content-type: application/json
 Content-length: 1641
 
@@ -123,7 +131,7 @@ Content-length: 1641
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 1749

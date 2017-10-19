@@ -1,5 +1,7 @@
 # message: createReply
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a draft of a reply message to include a comment or update any message properties 
 all in one **createReply** call. You can then [update](../api/message_update.md) or 
 [send](../api/message_send.md) the draft.
@@ -10,9 +12,15 @@ all in one **createReply** call. You can then [update](../api/message_update.md)
 - If **replyTo** is specified in the original message, per Internet Message Format ([RFC 2822](http://www.rfc-editor.org/info/rfc2822)), you should 
 send the reply to the recipients in **replyTo**, and not the recipients in **from**. 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -36,6 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [message](../resources/message.md) object in the response body.
 
 ## Example
@@ -55,8 +64,8 @@ Content-Type: application/json
     "toRecipients":[
       {
         "emailAddress": {
-          "address":"fannyd@contoso.onmicrosoft.com",
-          "name":"Fanny Downs"
+          "address":"samanthab@contoso.onmicrosoft.com",
+          "name":"Samantha Booth"
         }
       },
       {
@@ -67,7 +76,7 @@ Content-Type: application/json
       }
      ]
   },
-  "comment": "Fanny, Randi, would you name the group if the project is approved, please?" 
+  "comment": "Samantha, Randi, would you name the group if the project is approved, please?" 
 }
 ```
 
@@ -90,7 +99,7 @@ Content-type: application/json
   "subject": "RE: Let's start a group",
   "Body": {
     "contentType": "HTML",
-    "content": "<html>\r\n<body>Fanny, Randi, would you name the group if the project is approved, please?\r\n<b>From:</b> Fanny Downs<br>\r\n<b>Sent:</b> Friday, March 4, 2016 12:23:35 AM<br>\r\n<b>To:</b> Admin<br>\r\n<b>Subject:</b> Re: Let's start a group</font>\r\n<p>That's a great idea!<br>\r\n</body>\r\n</html>"
+    "content": "<html>\r\n<body>Samantha, Randi, would you name the group if the project is approved, please?\r\n<b>From:</b> Samantha Booth<br>\r\n<b>Sent:</b> Friday, March 4, 2016 12:23:35 AM<br>\r\n<b>To:</b> Admin<br>\r\n<b>Subject:</b> Re: Let's start a group</font>\r\n<p>That's a great idea!<br>\r\n</body>\r\n</html>"
   },
   "sender": {
     "emailAddress": {
@@ -102,8 +111,8 @@ Content-type: application/json
   "toRecipients": [
     {
       "emailAddress": {
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com"
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com"
       }
     },
     {

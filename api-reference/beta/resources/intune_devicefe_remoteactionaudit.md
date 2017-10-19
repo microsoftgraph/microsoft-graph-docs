@@ -1,7 +1,7 @@
-﻿#  resource type
+# remoteActionAudit resource type
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-
 Report of remote actions initiated on the devices belonging to a certain tenant.
 ## Methods
 |Method|Return Type|Description|
@@ -11,7 +11,6 @@ Report of remote actions initiated on the devices belonging to a certain tenant.
 |[Create remoteActionAudit](../api/intune_devicefe_remoteactionaudit_create.md)|[remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md)|Create a new [remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md) object.|
 |[Delete remoteActionAudit](../api/intune_devicefe_remoteactionaudit_delete.md)|None|Deletes a [remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md).|
 |[Update remoteActionAudit](../api/intune_devicefe_remoteactionaudit_update.md)|[remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md)|Update the properties of a [remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -24,7 +23,6 @@ Report of remote actions initiated on the devices belonging to a certain tenant.
 |deviceOwnerUserPrincipalName|String|Upn of the device owner.|
 |deviceIMEI|String|IMEI of the device.|
 |actionState|String|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-
 ## Relationships
 None
 ## JSON Representation
@@ -49,6 +47,3 @@ Here is a JSON representation of the resource.
   "actionState": "String"
 }
 ```
-
-
-

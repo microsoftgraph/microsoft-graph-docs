@@ -1,10 +1,19 @@
 # Create or replace an activity
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new or replace an existing user activity for your app.
 
-## Prerequisites
+## Permissions
 
-The following **scope** is required to execute this API: *UserTimelineActivity.Write.CreatedByApp* 
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | UserTimelineActivity.Write.CreatedByApp    |
+|Application | Not supported. |
 
 ## HTTP request
 

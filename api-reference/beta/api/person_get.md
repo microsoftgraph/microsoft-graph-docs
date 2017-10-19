@@ -1,9 +1,18 @@
 # Get person
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the properties and relationships of a person object.
-## Prerequisites
-The following **scopes** are required to execute this API: *People.Read*; *User.ReadBasic.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
  
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | People.Read, User.ReadBasic.All    |
+|Delegated (personal Microsoft account) | People.Read    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -27,16 +36,18 @@ GET /users/{id}/people/{id}
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [person](../resources/person.md) object in the response body.
 ## Examples
 ### Browse
 The requests in this section get the people most relevant to the signed-in user (`/me`), based on communication, collaboration, and business relationships. 
-By default, each response returns 10 records, but you can change this using the *$top* parameter. These requests require the *People.Read* scope.
+By default, each response returns 10 records, but you can change this using the *$top* parameter. These requests require the People.Read permission.
 
 <!-- {
   "blockType": "request",
-  "name": "get_person"
+  "name": "get_person_beta"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/people/
@@ -116,7 +127,7 @@ GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddress
 ```
 
 ### Search people
-The requests in this section also get the people most relevant to the signed-in user (`/me`). Search requests require the *People.Read* scope.
+The requests in this section also get the people most relevant to the signed-in user (`/me`). Search requests require the People.Read permission.
 
 #### Using search to select people
 
@@ -144,7 +155,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
 ```
 ### Related people
 
-The following request gets the people most relevant to another person in the user's organization. This request requires the *User.ReadBasic.All* scope. In this example, Nestor Kellum's relevant people are displayed.
+The following request gets the people most relevant to another person in the user's organization. This request requires the User.ReadBasic.All permission. In this example, Nestor Kellum's relevant people are displayed.
 
 ```http
 GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/

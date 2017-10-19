@@ -37,8 +37,6 @@ by providing a [delta](../api/event_delta.md) function.
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [event](event.md) | Create one or more multi-value extended properties in a new or existing event.  |
 |[Get event with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [event](event.md) | Get an event that contains a multi-value extended property by using `$expand`. |
 
-
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -85,7 +83,6 @@ by providing a [delta](../api/event_delta.md) function.
 |instances|[event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the event. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the event. Read-only. Nullable.|
-
 
 ## JSON representation
 

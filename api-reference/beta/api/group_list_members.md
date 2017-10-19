@@ -1,11 +1,20 @@
 # List members
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get a list of the group's direct members. A group can have users, contacts, and other groups as members.
 This operation is not transitive.
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Directory.Read.All*, *Directory.AccessAsUser.All*, *User.ReadBasic.All*, or *User.Read.All*.
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-> Note: To list the members of a hidden membership group, the *Member.Read.Hidden* scope is required.
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All, User.ReadBasic.All, User.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All, User.Read.All |
+
+> Note: To list the members of a hidden membership group, the Member.Read.Hidden permission is required.
  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -21,7 +30,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
 ##### Request

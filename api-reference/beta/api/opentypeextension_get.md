@@ -1,5 +1,7 @@
 # Get open extension
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) identified by name or fully qualified name.
 
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
@@ -10,18 +12,17 @@ The following table lists the three scenarios where you can get an open extensio
 |Get a known resource instance expanded with a specific extension.|Administrative unit, device, event, group, group event, group post, message, organization, personal contact, user |A resource instance expanded with the open extension.|
 |Find and expand resource instances with a specific extension. | Event, group event, group post, message, personal contact |Resource instances expanded with the open extension.|
 
-## Prerequisites
+## Permissions
 
-One of the following **permissions** is required to execute this API, depending on the resource that contains the extension.
+One of the following permissions is required to call this API, depending on the resource that contains the extension. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |**Supported resource**|**Permission**|**Supported resource**|**Permission** |
 |:-----|:-----|:-----|:-----|
-| [Administrative unit](../resources/administrativeunit.md) | _Directory.Read.All_ | [Device](../resources/device.md) | _Directory.Read.All_ |
-| [Event](../resources/event.md) | _Calendars.Read_ | [Group](../resources/group.md) | _Group.Read.All_ |
-| [Group event](../resources/event.md) | _Group.Read.All_ | [Group post](../resources/post.md) | _Group.Read.All_ |
-| [Message](../resources/message.md) | _Mail.Read_ | [Organization](../resources/organization.md) | _Directory.Read.All_ |
-| [Personal contact](../resources/contact.md) | _Contacts.Read_ | [User](../resources/user.md) | _User.Read.All_ |
-
+| [Administrative unit](../resources/administrativeunit.md) | Directory.Read.All | [Device](../resources/device.md) | Directory.Read.All |
+| [Event](../resources/event.md) | Calendars.Read | [Group](../resources/group.md) | Group.Read.All |
+| [Group event](../resources/event.md) | Group.Read.All | [Group post](../resources/post.md) | Group.Read.All |
+| [Message](../resources/message.md) | Mail.Read | [Organization](../resources/organization.md) | Directory.Read.All |
+| [Personal contact](../resources/contact.md) | Contacts.Read | [User](../resources/user.md) | User.Read.All |
 
 ## HTTP request
 
@@ -101,7 +102,6 @@ instances or collections supports getting open extensions from them in a similar
 |Id|string|Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension**.|
 |extensionId|string|Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.|
 
-
 ## Optional query parameters
 
 Make sure you apply [URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.
@@ -109,19 +109,19 @@ Make sure you apply [URL encoding](http://www.w3schools.com/tags/ref_urlencode.a
 |**Name**|**Value**|**Description**|
 |:---------------|:--------|:-------|
 |$filter|string|Returns an extension with its **id** matching the `extensionId` parameter value.|
-|$filter with **any** operator|string|Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.| 
+|$filter with **any** operator|string|Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.|
 |$expand|string|Expands a resource instance to include an extension. |
-
 
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
 | Authorization | Bearer {token}. Required. |
 
-
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [openTypeExtension](../resources/opentypeextension.md) object in the response body.
 Depending on the GET query, the exact response body differs.
 ## Example

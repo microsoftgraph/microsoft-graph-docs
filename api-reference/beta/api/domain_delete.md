@@ -1,15 +1,24 @@
 # Delete domain
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Deletes a domain from a tenant.
 
 > **Important:**
 > Deleted domains are not recoverable.
 
-### Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-### HTTP request
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Domain.ReadWrite.All |
+
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /domains/{id}
@@ -17,22 +26,22 @@ DELETE /domains/{id}
 
 > For {id}, specify the domain with its fully qualified domain name.
 
-### Request headers
+## Request headers
 
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 
 Do not supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns `204, No Content` response code. It does not return a response body.
 
-### Example
+## Example
 ##### Request
 
 <!-- {

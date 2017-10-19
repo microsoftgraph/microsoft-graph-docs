@@ -1,3 +1,8 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+---
 # Hashes resource type
 
 The **Hashes** resource groups available hashes into a single structure for an item.
@@ -16,12 +21,11 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "crc32Hash": "string",
-  "sha1Hash": "string",
-  "quickXorHash": "string"
+  "crc32Hash": "string (hex)",
+  "sha1Hash": "string (hex)",
+  "quickXorHash": "string (base64)"
 }
 ```
-
 
 ## Properties
 
@@ -29,26 +33,25 @@ Here is a JSON representation of the resource.
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
 | **crc32Hash**    | String | The CRC32 value of the file (if available). Read-only.            |
-| **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. | 
+| **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
 
 **Note:** In some cases hash values may not be available. 
 If this is the case, the hash values on an item will be updated after the item is downloaded.
 
-
 ## Remarks
 
-In OneDrive for Business, **sha1Hash** and **crc32Hash** are not available.
+In OneDrive for Business and SharePoint Server 2016, **sha1Hash** and **crc32Hash** are not available.
+
 In OneDrive Personal, **quickXorHash** is not available.
 
+To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](https://dev.onedrive.com/snippets/quickxorhash.htm).
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "hashes resource",
-  "keywords": "",
+  "description": "The hashes facet provides hash identifiers for a file in OneDrive",
+  "keywords": "hash,sha1,crc32,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Hashes"
+} -->

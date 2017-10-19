@@ -1,16 +1,25 @@
 # List verificationDnsRecords
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects.
 
 You cannot use an associated domain with your Azure AD tenant until ownership is verified. To verify the ownership of the domain, retrieve the domain verification records and add the details to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.
 
 Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
-### Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-### HTTP request
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All, Domain.ReadWrite.All |
+
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}/verificationDnsRecords
@@ -18,26 +27,26 @@ GET /domains/{id}/verificationDnsRecords
 
 > For {id}, specify the domain with its fully qualified domain name.
 
-### Optional query parameters
+## Optional query parameters
 
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 
 Do not supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns a `200 OK` response code and collection of [domainDnsRecord](../resources/domaindnsrecord.md) objects in the response body.
 
-### Example
+## Example
 ##### Request
 
 <!-- {

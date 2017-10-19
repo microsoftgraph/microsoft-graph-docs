@@ -1,16 +1,20 @@
 # Get Office365ActiveUsers report
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the reports of Office 365 Active Users. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d) to check the meaning of different views.
 
-## Prerequisites
+## Permissions
 
-The following **scopes** are required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- Reports.Read.All
-
-> Note: Permission scopes are listed in least privilege required order.
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Reports.Read.All |
 
 ## HTTP request
 
@@ -65,7 +69,7 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 Here is an example of how to call this API.
 
-### Request
+##### Request
 
 Here is an example of the request.
 <!-- {
@@ -77,13 +81,11 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/reports/Office365ActiveUsers(view='Detail', period='d7')/content
 ```
 
-### Response
+##### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -91,7 +93,8 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the downloading CSV file will have the schema as belowing.
+Follow the 302 redirection and the downloading CSV file will have the schema as follows.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,15 +103,14 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: text/plain
+
 Data as of,User principal name,DisplayName,Deleted,Deleted date,License For Exchange,License For OndDrive,License For SharePoint,License For Skype For Business,License For Yammer,Last Activity Date For Exchange,Last Activity Date For OndDrive,Last Activity Date For SharePoint,Last Activity Date For Skype For Business,Last Activity Date For Yammer,License Assigned Date For Exchange,License Assigned Date For OndDrive,License Assigned Date For SharePoint,License Assigned Date For Skype For Business,License Assigned Date For Yammer,Products assigned
 ```
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_office365activeusers"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/Office365ActiveUsers(view='Detail',date='2017-02-02')/content

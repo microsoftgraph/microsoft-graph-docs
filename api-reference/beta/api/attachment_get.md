@@ -1,5 +1,7 @@
 # Get attachment
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Read the properties and relationships of an attachment, attached to an [event](../resources/event.md), 
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md). 
 
@@ -12,13 +14,13 @@ An attachment can be one of the following types:
 All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
 resource. 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* If accessing attachments in messages: *Mail.Read*
-* If accessing attachments in events: *Calendars.Read*
-* If accessing attachments in Outlook tasks: *Tasks.Read*
-* If accessing attachments in group events or posts: *Group.Read.All*
+* If accessing attachments in messages: Mail.Read
+* If accessing attachments in events: Calendars.Read
+* If accessing attachments in Outlook tasks: Tasks.Read
+* If accessing attachments in group events or posts: Group.Read.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -88,7 +90,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [attachment](../resources/attachment.md) object in the response body.
 
 ## Example (file attachment)

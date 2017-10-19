@@ -1,10 +1,14 @@
 # Get resource
 
 Retrieve the binary data of a file or image [resource](../resources/resource.md) object.
-## Prerequisites
-One of the following **scopes** is required to execute this API:  
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Notes.Read, Notes.ReadWrite    |
+|Application | Notes.Read.All, Notes.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -12,6 +16,7 @@ Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
 GET /me/onenote/resources/{id}/content
 GET /users/{id | userPrincipalName}/onenote/resources/{id}/content
 GET /groups/{id}/onenote/resources/{id}/content
+GET /sites/{id}/onenote/resources/{id}/content
 ```
 
 ## Request headers
@@ -21,7 +26,9 @@ GET /groups/{id}/onenote/resources/{id}/content
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and the image or file binary data in the response body.
 
 Note: Images won't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.

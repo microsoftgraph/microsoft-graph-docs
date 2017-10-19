@@ -1,7 +1,7 @@
-﻿#  resource type
+# deviceManagementScriptDeviceState resource type
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-
 Contains properties for device run state of the device management script.
 ## Methods
 |Method|Return Type|Description|
@@ -12,7 +12,6 @@ Contains properties for device run state of the device management script.
 |[Delete deviceManagementScriptDeviceState](../api/intune_devicefe_devicemanagementscriptdevicestate_delete.md)|None|Deletes a [deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md).|
 |[Update deviceManagementScriptDeviceState](../api/intune_devicefe_devicemanagementscriptdevicestate_update.md)|[deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md)|Update the properties of a [deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md) object.|
 |[Get managedDevice](../api/intune_devicefe_manageddevice_get.md)|[managedDevice](../resources/intune_devicefe_manageddevice.md)|Read properties and relationships of the [managedDevice](../resources/intune_devicefe_manageddevice.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -22,12 +21,10 @@ Contains properties for device run state of the device management script.
 |lastStateUpdateDateTime|DateTimeOffset|Latest time the device management script executes.|
 |errorCode|Int32|Error code corresponding to erroneous execution of the device management script.|
 |errorDescription|String|Error description corresponding to erroneous execution of the device management script.|
-
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |managedDevice|[managedDevice](../resources/intune_devicefe_manageddevice.md)|The managed devices that executes the device management script.|
-
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -47,6 +44,3 @@ Here is a JSON representation of the resource.
   "errorDescription": "String"
 }
 ```
-
-
-

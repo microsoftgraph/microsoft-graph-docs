@@ -1,8 +1,15 @@
 # Update calendargroup
 
 Update the properties of calendargroup object.
-## Prerequisites
-One of the following **scopes** is required to execute this API: _Calendars.ReadWrite_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
+|Application | Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 Any [calendarGroup](../resources/calendargroup.md) of a user.
@@ -24,6 +31,7 @@ In the request body, supply the values for relevant fields that should be update
 |name|String|The group name.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [calendarGroup](../resources/calendargroup.md) object in the response body.
 ## Example
 ##### Request

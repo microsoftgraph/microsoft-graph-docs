@@ -1,16 +1,27 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/11/2017
+title: Get an entry from a SharePoint list
+---
 # Get an item in a list
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Returns the metadata for an [item][] in a [list][].
 
 [list]: ../resources/list.md
 [item]: ../resources/listItem.md
 
-## Prerequisites
+## Permissions
 
-One of the following scopes is required to execute this request:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Sites.Read.All
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Sites.Read.All, Sites.ReadWrite.All |
 
 ## HTTP request
 
@@ -22,7 +33,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 
 ## Example
 
-### Request
+##### Request
 
 <!-- { "blockType": "request", "name": "get-list-item" } -->
 
@@ -30,7 +41,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
 
-### Response
+##### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 

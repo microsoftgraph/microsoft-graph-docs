@@ -1,5 +1,7 @@
 # Update outlooktask
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Change writable properties of an Outlook task.
 
 The **completedDateTime** property can be set by the **complete** action, or explicitly by a PATCH operation. 
@@ -9,23 +11,29 @@ By default, this operation (and the POST, GET, and [complete](../api/outlooktask
 You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone 
 different than UTC.
 
-### Prerequisites
-The following **scopes** are required to execute this API: _Tasks.ReadWrite_
-### HTTP request
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Tasks.ReadWrite    |
+|Delegated (personal Microsoft account) | Tasks.ReadWrite    |
+|Application | Not supported. |
+
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 ```
-### Optional request headers
+## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}. Required. |
-| Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.| 
+| Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.|
 
-
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will 
 maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
@@ -51,10 +59,10 @@ maintain their previous values or be recalculated based on changes to other prop
 |status|string|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |subject|String|A brief description or title of the task.|
 
+## Response
 
-### Response
 If successful, this method returns a `200 OK` response code and updated [outlookTask](../resources/outlooktask.md) object in the response body.
-### Example
+## Example
 ##### Request
 The following example modifies the **dueDateTime** property and uses the `Prefer: outlook.timezone` 
 header to specify expressing the date-related properties in the response in Eastern Standard Time (EST).

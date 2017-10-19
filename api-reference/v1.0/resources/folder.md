@@ -1,3 +1,9 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Folder
+---
 # Folder resource type
 
 The **Folder** resource groups folder-related data on an item into a single structure. 
@@ -17,26 +23,29 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "childCount": 1024
+  "childCount": 1024,
+  "view": { "@odata.type": "microsoft.graph.folderView" }
 }
 ```
 
 ## Properties
 
-| Property       | Type  | Description                                                     |
-|:---------------|:------|:----------------------------------------------------------------|
-| **childCount** | Int64 | Number of children contained immediately within this container. |
+| Property       | Type           | Description
+|:---------------|:---------------|:-------------------------------------------
+| **childCount** | Int64          | Number of children contained immediately within this container.
+| **view**       | [folderView][] | A collection of properties defining the recommended view for the folder.
 
 ## Remarks 
 
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+For more information about the facets on a DriveItem, see [DriveItem][].
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[folderView]: folderView.md
+[DriveItem]: driveItem.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "folder resource",
-  "keywords": "",
+  "description": "The Folder facet describes properties of a folder",
+  "keywords": "folder,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Folder"
+} -->

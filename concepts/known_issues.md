@@ -116,7 +116,7 @@ are referred to as the "old" approach and "new" approach.
 
 
 If a calendar was shared with view or edit permissions but using the old approach, you can now work around the error and manually upgrade the calendar sharing to use the new approach. 
-Over time, Outlook will autmatically upgrade all shared calendars to use the new approach, including calendars shared with delegate permissions. 
+Over time, Outlook will automatically upgrade all shared calendars to use the new approach, including calendars shared with delegate permissions. 
 
 To manually upgrade a shared calendar to use the new approach, follow these steps:
 1.	The recipient removes the calendar that was previously shared to them.

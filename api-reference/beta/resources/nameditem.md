@@ -14,15 +14,14 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 |[Range](../api/nameditem_range.md)|[Range](range.md)|Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.|
 |[List](../api/nameditem_list.md) | [NamedItem](nameditem.md) collection |Get namedItem object collection. |
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |name|string|The name of the object. Read-only.|
 |comment|string|Represents the comment associated with this name.|
-|scope|string||Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.|
+|scope|string|Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.|
 |type|string|Indicates what type of reference is associated with the name. Possible values are: `String`, `Integer`, `Double`, `Boolean`, `Range`. Read-only.|
-|value|object|Represents the formula that the name is defined to refer to. E.g. =Sheet14!$B$2:$H$12, =4.75, etc. Read-only.|
+|value|string|Represents the formula that the name is defined to refer to. E.g. =Sheet14!$B$2:$H$12, =4.75, etc. Read-only.|
 |visible|boolean|Specifies whether the object is visible or not.|
 
 ## Relationships
@@ -48,7 +47,7 @@ Here is a JSON representation of the resource.
   "comment": "string",
   "scope": "string",
   "type": "string",
-  "value": {"@odata.type": "microsoft.graph.range"},
+  "value": "string",
   "visible": true
   
 }

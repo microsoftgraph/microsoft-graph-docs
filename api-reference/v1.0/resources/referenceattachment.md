@@ -11,7 +11,6 @@ Derived from [attachment](attachment.md).
 |[Get](../api/attachment_get.md) | [referenceAttachment](referenceattachment.md) |Read properties and relationships of referenceAttachment object.|
 |[Delete](../api/attachment_delete.md) | None |Delete referenceAttachment object. |
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -21,7 +20,6 @@ Derived from [attachment](attachment.md).
 |lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |name|String|The text that is displayed below the icon representing the embedded attachment. This does not need to be the actual file name.|
 |size|Int32|The size of the attachment in bytes.|
-
 
 ## Relationships
 None

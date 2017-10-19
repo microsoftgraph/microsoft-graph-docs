@@ -5,6 +5,15 @@ Workbook is the top level object which contains related workbook objects such as
 ## Properties
 None
 
+## Methods
+
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
+|[Create Session](../api/workbook_createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Create a workbook session to start a persistent or non-persistent session.|
+|[Close Session](../api/workbook_closesession.md) | None |Close an existing session.|
+|[Refresh Session](../api/workbook_refreshsession.md) | None |Refresh an existing session.|
+
+
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
@@ -29,7 +38,7 @@ In the below example, `vlookup` function is called by passing lookup value, inpu
 Request: 
 
 ```http 
-POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
+POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -49,7 +58,7 @@ HTTP code: 200, OK
 content-type: application/json;odata.metadata 
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookFunctionResult",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#workbookFunctionResult",
     "@odata.type": "#microsoft.graph.workbookFunctionResult",
     "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/root/workbook/functions/vlookup()",
     "error": null,
@@ -64,7 +73,7 @@ In the below example, `median` function is called by passing the input range(s) 
 Request: 
 
 ```http 
-POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/median
+POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -84,7 +93,7 @@ HTTP code: 200, OK
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookFunctionResult",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#workbookFunctionResult",
   "@odata.type": "#microsoft.graph.workbookFunctionResult",
   "@odata.id": "/users('2abcad6a-2fca-4b6e-9577-e358a757d77d')/drive/root/workbook/functions/median()",
   "error": null,

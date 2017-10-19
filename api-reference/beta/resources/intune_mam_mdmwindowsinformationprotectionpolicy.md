@@ -1,4 +1,6 @@
-﻿#  resource type
+﻿# mdmWindowsInformationProtectionPolicy resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -8,19 +10,17 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List mdmWindowsInformationProtectionPolicies](../api/intune_mam_mdmwindowsinformationprotectionpolicy_list.md)|[mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md) collection|List properties and relationships of the [mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md) objects.|
 |[Get mdmWindowsInformationProtectionPolicy](../api/intune_mam_mdmwindowsinformationprotectionpolicy_get.md)|[mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md)|Read properties and relationships of the [mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md) object.|
 |[Create mdmWindowsInformationProtectionPolicy](../api/intune_mam_mdmwindowsinformationprotectionpolicy_create.md)|[mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md)|Create a new [mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md) object.|
 |[Delete mdmWindowsInformationProtectionPolicy](../api/intune_mam_mdmwindowsinformationprotectionpolicy_delete.md)|None|Deletes a [mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md).|
 |[Update mdmWindowsInformationProtectionPolicy](../api/intune_mam_mdmwindowsinformationprotectionpolicy_update.md)|[mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md)|Update the properties of a [mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md) object.|
 |[updateTargetedSecurityGroups action](../api/intune_mam_mdmwindowsinformationprotectionpolicy_updatetargetedsecuritygroups.md)|None|Not yet documented|
-|[List windowsInformationProtectionAppLockerFiles](../api/intune_mam_windowsinformationprotectionapplockerfile_list.md)|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|List properties and relationships of the [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) objects.|
-|[List windowsInformationProtectionAppLockerFiles](../api/intune_mam_windowsinformationprotectionapplockerfile_list.md)|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|List properties and relationships of the [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) objects.|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
@@ -52,7 +52,7 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 
 ## Relationships
 |Relationship|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |allowedAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input allowed and apps through xml files Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |exemptAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input exempt apps through xml files Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 
@@ -64,7 +64,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
   "displayName": "String",

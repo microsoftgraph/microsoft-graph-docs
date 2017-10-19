@@ -1,13 +1,20 @@
 # Get user mailbox settings
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the user's [mailboxSettings](../resources/mailboxsettings.md). This includes settings for automatic replies (notify people automatically upon 
 receipt of their email), locale (language and country/region), and time zone.
 
 You can view all mailbox settings, or, get specific settings.
 
-## Prerequisites
-The following **scope** is required to execute this API:
-*MailboxSettings.Read*  
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | MailboxSettings.Read    |
+|Delegated (personal Microsoft account) | MailboxSettings.Read    |
+|Application | MailboxSettings.Read |
 
 ## HTTP request
 To get all mailbox settings which include automatic replies settings:
@@ -38,7 +45,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and one of the following requested objects in the response body:
 
 - [mailboxSettings](../resources/mailboxsettings.md) object

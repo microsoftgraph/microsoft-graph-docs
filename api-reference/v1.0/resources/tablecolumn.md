@@ -18,7 +18,6 @@ Represents a column in a table.
 |[Itemat](../api/tablecolumncollection_itemat.md)|[TableColumn](tablecolumn.md)|Gets a column based on its position in the collection.|
 |[Add](../api/tablecolumncollection_add.md)|[TableColumn](tablecolumn.md)|Adds a new column to the table.|
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

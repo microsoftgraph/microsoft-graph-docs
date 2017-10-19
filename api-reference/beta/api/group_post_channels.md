@@ -1,11 +1,20 @@
 # Create Channel
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new channel in a Microsoft Team, as specified in the request body.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-> Currrently, only [delegated permissions](../../../concepts/permissions_reference.md) are supported for this operation.  Future releases will support application permissions. 
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
+> Currently, only [delegated permissions](../../../concepts/permissions_reference.md) are supported for this operation.  Future releases will support application permissions. 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -21,8 +30,8 @@ POST /groups/{id}/channels
 ## Request body
 In the request body, supply a JSON representation of [channel](../resources/channel.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [channel](../resources/channel.md) object in the response body.
 
 ## Example
@@ -52,6 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
+
 {
   "id": "id-value",
   "displayName": "Architecture Discussion",

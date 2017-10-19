@@ -1,11 +1,18 @@
 # List users
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a list of user objects.
 
-## Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API:
-*User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -21,7 +28,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Header        | Value                      |
 |:--------------|:---------------------------|
 | Authorization | Bearer {token} (required)  |
-| Content-Type  | application/json           | 
+| Content-Type  | application/json           |
 
 ## Request body
 
@@ -35,7 +42,6 @@ If successful, this method returns a `200 OK` response code and collection of [u
 
 ##### Request
 
-Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_users"
@@ -46,7 +52,8 @@ GET https://graph.microsoft.com/beta/users
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,

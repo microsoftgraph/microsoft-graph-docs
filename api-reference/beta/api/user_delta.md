@@ -1,12 +1,21 @@
 # user: delta
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 [Delta query](../../../concepts/delta_query_overview.md) enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. To discover changes to users, perform a request using the *delta* function. See [Using Delta Query](../../../concepts/delta_query_overview.md) for details.
 
-## Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API: *User.Read; User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-### HTTP request
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | User.Read, User.ReadWrite    |
+|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+## HTTP request
 
 To begin tracking changes, you make a request including the delta function on the users resource. 
 
@@ -30,7 +39,7 @@ includes the encoded, desired parameters.
 | $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same user collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same user collection. |
 
-### Optional query parameters
+## Optional query parameters
 
 This method supports OData Query Parameters to help customize the response.
 
@@ -43,16 +52,16 @@ _id_ property is always returned.
   an `$orderby` expression, the return order is not guaranteed. 
 - There is no support for `$search`.
 
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns `200, OK` response code and [user](../resources/user.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL. 
 
@@ -64,7 +73,7 @@ See:</br>
 - [Using Delta Query](../../../concepts/delta_query_overview.md) for more details</br>
 - [Get incremental changes for users](../../../concepts/delta_query_users.md) for an example requests.</br>
 
-### Example
+## Example
 ##### Request
 <!-- {
   "blockType": "request",

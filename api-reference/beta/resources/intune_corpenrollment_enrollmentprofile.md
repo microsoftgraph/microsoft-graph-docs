@@ -1,11 +1,13 @@
-﻿#  resource type
+﻿# enrollmentProfile resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged. Pre-staged device identities are assigned to this type of profile to apply the profile's configurations at enrollment of the corresponding device.
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List enrollmentProfiles](../api/intune_corpenrollment_enrollmentprofile_list.md)|[enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) collection|List properties and relationships of the [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) objects.|
 |[Get enrollmentProfile](../api/intune_corpenrollment_enrollmentprofile_get.md)|[enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|Read properties and relationships of the [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) object.|
 |[Create enrollmentProfile](../api/intune_corpenrollment_enrollmentprofile_create.md)|[enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|Create a new [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) object.|
@@ -16,7 +18,7 @@ The enrollmentProfile resource represents a collection of configurations which m
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|The GUID for the object|
 |displayName|String|Name of the profile|
 |description|String|Description of the profile|
@@ -33,7 +35,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.enrollmentProfile"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.enrollmentProfile",
   "id": "String (identifier)",

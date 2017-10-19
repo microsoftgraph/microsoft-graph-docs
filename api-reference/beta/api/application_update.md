@@ -1,8 +1,17 @@
 # Update application
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the properties of application object.
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -39,6 +48,7 @@ In the request body, supply the values for relevant fields that should be update
 |web|[web](../resources/web.md)| Specifies settings for a web application. |
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code and does not return anything in the response body.
 ## Example
 ##### Request

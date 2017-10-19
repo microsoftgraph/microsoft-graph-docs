@@ -1,12 +1,19 @@
 # List trendingAround
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Calculated insight that returns the list of items trending around a user.
 
 **Note:** This API will be deprecated and replaced by the [Trending API](../resources/insights_trending.md).
 
-## Prerequisites
-The following **scopes** are required to execute this API: 
-*Sites.Read.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Sites.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Sites.Read.All |
 
 ## HTTP request
 ```http
@@ -28,6 +35,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a 200 OK response code and collection of [driveItem](../resources/driveItem.md) objects in the response body.
 
 ## Example

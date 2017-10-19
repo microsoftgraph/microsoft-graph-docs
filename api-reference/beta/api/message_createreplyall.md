@@ -1,5 +1,7 @@
 # message: createReplyAll
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a draft of a reply-all message to include a comment or update any message properties, 
 all in one **createReplyAll** call. You can then [update](../api/message_update.md) or 
 [send](../api/message_send.md) the draft.
@@ -12,9 +14,15 @@ all in one **createReplyAll** call. You can then [update](../api/message_update.
 **replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties. 
 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -38,6 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply-all message.|
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [message](../resources/message.md) object in the response body.
 
 ## Example
@@ -85,7 +94,7 @@ Content-type: application/json
   "subject": "RE: Let's start a group",
   "body": {
     "contentType": "HTML",
-    "content": "<html>\r\n<body dir=\"ltr\">\r\nif the project gets approved, please take a look at the attached guidelines before you decide on the name.\r\n<b>From:</b> Admin<br>\r\n<b>Sent:</b> Tuesday, March 15, 2016 6:36:32 AM<br>\r\n<b>To:</b> Fanny Downs; Randi Welch<br>\r\n<b>Subject:</b> RE: Let's start a group\r\n<div>Fanny, Randi, would you name the group please?\r\n<b>From:</b> Fanny Downs<br>\r\n<b>Sent:</b> Friday, March 4, 2016 12:23:35 AM<br>\r\n<b>To:</b> Admin<br>\r\n<b>Subject:</b> Re: Let's start a group</font>\r\n</body>\r\n</html>"
+    "content": "<html>\r\n<body dir=\"ltr\">\r\nif the project gets approved, please take a look at the attached guidelines before you decide on the name.\r\n<b>From:</b> Admin<br>\r\n<b>Sent:</b> Tuesday, March 15, 2016 6:36:32 AM<br>\r\n<b>To:</b> Samantha Booth; Randi Welch<br>\r\n<b>Subject:</b> RE: Let's start a group\r\n<div>Samantha, Randi, would you name the group please?\r\n<b>From:</b> Samantha Booth<br>\r\n<b>Sent:</b> Friday, March 4, 2016 12:23:35 AM<br>\r\n<b>To:</b> Admin<br>\r\n<b>Subject:</b> Re: Let's start a group</font>\r\n</body>\r\n</html>"
   },
   "sender": {
     "emailAddress": {
@@ -97,8 +106,8 @@ Content-type: application/json
   "toRecipients": [
     {
       "emailAddress": {
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com"
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com"
       }
     },
     {

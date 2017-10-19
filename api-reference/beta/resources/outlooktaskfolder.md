@@ -1,5 +1,7 @@
 # outlookTaskFolder resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 A folder that contains Outlook tasks (collection of [outlookTask](outlooktask.md) objects). 
 
 In Outlook, the default task group, `My Tasks`, contains a default task folder, `Tasks`, for the user's mailbox. 
@@ -20,7 +22,6 @@ You cannot rename or delete these default task group and folder, but you can cre
 |[Get task folder with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Get Outlook task folders that contain a single-value extended property by using `$expand` or `$filter`. |
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [outlookTaskFolder](outlooktaskfolder.md) | Create one or more multi-value extended properties in a new or existing Outlook task folder.  |
 |[Get task folder with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Get an Outlook task folder that contains a multi-value extended property by using `$expand`. |
-
 
 ## Properties
 | Property	   | Type	|Description|

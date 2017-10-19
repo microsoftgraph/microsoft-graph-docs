@@ -1,5 +1,7 @@
 # Create invitation
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.
 
 When creating a new invitation you have several options available:
@@ -7,21 +9,28 @@ When creating a new invitation you have several options available:
 1. On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).
 2. When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources he has been invited to.
 
-### Prerequisites
-One of the following scopes is required to execute this API: *User.Invite.All* or *User.ReadWrite.All*  or *Directory.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-### HTTP request
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All |
+
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /invitations
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.
 
 The following table shows the properties that are required when you create a invitation.
@@ -31,11 +40,11 @@ The following table shows the properties that are required when you create a inv
 |invitedUserEmailAddress |string | The email address of the user you are inviting.|
 |inviteRedirectUrl |string |The URL that the user will be redirected to after redemption.|
 
+## Response
 
-### Response
 If successful, this method returns `201, Created` response code and [invitation](../resources/invitation.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

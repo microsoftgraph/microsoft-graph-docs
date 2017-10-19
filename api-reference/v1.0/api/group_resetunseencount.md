@@ -3,8 +3,15 @@
 Reset the unseenCount of all the posts that the current user has not seen since their last visit. Supported for 
 only Office 365 groups.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -19,6 +26,7 @@ POST /groups/{id}/resetUnseenCount
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

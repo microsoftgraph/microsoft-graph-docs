@@ -3,8 +3,15 @@
 Use this API to remove a member from an Office 365 group, a security group or a mail-enabled security group 
 through the **members** navigation property. You can remove users or other groups.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -20,6 +27,7 @@ DELETE /groups/{id}/members/{id}/$ref
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example

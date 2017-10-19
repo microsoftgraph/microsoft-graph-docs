@@ -8,10 +8,14 @@ If the status is `completed`, the `resourceLocation` property contains the resou
 
 If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:  
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All  
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Notes.Create, Notes.Read, Notes.ReadWrite    |
+|Application | Notes.Read.All, Notes.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -19,6 +23,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.Al
 GET /me/onenote/operations/{id}
 GET /users/{id | userPrincipalName}/onenote/operations/{id}
 GET /groups/{id}/onenote/operations/{id}
+GET /sites/{id}/onenote/operations/{id}
 ```
 ## Optional query parameters
 None.
@@ -27,11 +32,13 @@ None.
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Accept | string | `application/json` | 
+| Accept | string | `application/json` |
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [onenoteOperation](../resources/onenoteoperation.md) object in the response body.
 ## Example
 ##### Request

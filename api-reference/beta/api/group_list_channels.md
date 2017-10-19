@@ -1,10 +1,19 @@
 # List channels
 
-Retrieve the list of channels in this group.
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-> Currrently, only [delegated permissions](../../../concepts/permissions_reference.md) are supported for this operation.  Future releases will support application permissions. 
+Retrieve the list of channels in this group.
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
+> Currently, only [delegated permissions](../../../concepts/permissions_reference.md) are supported for this operation.  Future releases will support application permissions. 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -20,7 +29,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [Channel](../resources/channel.md) objects in the response body.
 ## Example
 ##### Request
@@ -48,8 +59,8 @@ Content-length: 262
 {
   "value": [
     {
-      "description": "description-value"
-      "displayName": "display-name-value"
+      "description": "description-value",
+      "displayName": "display-name-value",
       "id": "id-value"
     }
   ]

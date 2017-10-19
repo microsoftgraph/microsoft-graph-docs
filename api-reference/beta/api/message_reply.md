@@ -1,5 +1,7 @@
 # message: reply
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. 
 The message is then saved in the Sent Items folder.
 
@@ -13,9 +15,15 @@ and then [send](../api/message_send.md) the reply.
 you should send the reply to the recipients in **replyTo** and not the recipient in the **from** property. 
 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.Send*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Send    |
+|Delegated (personal Microsoft account) | Mail.Send    |
+|Application | Mail.Send |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,6 +47,7 @@ In the request body, provide a JSON object with the following parameters.
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
 ## Response
+
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ## Example
@@ -58,8 +67,8 @@ Content-Type: application/json
     "toRecipients":[
       {
         "emailAddress": {
-          "address":"fannyd@contoso.onmicrosoft.com",
-          "name":"Fanny Downs"
+          "address":"samanthab@contoso.onmicrosoft.com",
+          "name":"Samantha Booth"
         }
       },
       {
@@ -70,7 +79,7 @@ Content-Type: application/json
       }
      ]
   },
-  "comment": "Fanny, Randi, would you name the group please?" 
+  "comment": "Samantha, Randi, would you name the group please?" 
 }
 ```
 

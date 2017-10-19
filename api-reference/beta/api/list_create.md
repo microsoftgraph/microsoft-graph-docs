@@ -1,14 +1,26 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/11/2017
+title: Create a SharePoint List
+---
 # Create a new list
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create a new [list][] in a [site][].
 
-## Prerequisites
+## Permissions
 
-One of the following scopes is required to execute this request:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Sites.ReadWrite.All
+|            Permission type             | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Sites.Manage.All                            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.ReadWrite.All                         |
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
@@ -16,18 +28,18 @@ One of the following scopes is required to execute this request:
 POST https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
-### Request body
+## Request body
 
 In the request body, supply a JSON representation of the [list][] resource to create.
 
-### Example
+## Example
 
 Here is an example of how to create a new generic list.
 
 <!-- { "blockType": "request", "name": "create-list", "scopes": "sites.readwrite.all" } -->
 
-```json
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists
+```http
+POST /sites/{site-id}/lists
 Content-Type: application/json
 
 {
@@ -43,14 +55,15 @@ Content-Type: application/json
     }
   ],
   "list": {
-    "template": "generic"
+    "template": "genericList"
   }
 }
 ```
 
 **Note:** Custom columns are optional.
+
 In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.
-If the **list** facet or **template** is unspecified, the list defaults to the `generic` template, which includes a _Title_ column.
+If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.
 
 ## Response
 

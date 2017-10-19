@@ -1,33 +1,41 @@
 ﻿# Create resourceOperation
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [resourceOperation](../resources/intune_rbac_resourceoperation.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementRBAC.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
-POST /deviceManagement/resourceOperations/
+``` http
+POST /deviceManagement/resourceOperations
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a resourceOperation object.
-The following table shows the properties that are required when you create a resourceOperation.
+In the request body, supply a JSON representation for the resourceOperation object.
+
+The following table shows the properties that are required when you create the resourceOperation.
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the Resource Operation. Read-only, automatically generated.|
 |resourceName|String|Name of the Resource this operation is performed on.|
 |actionName|String|Type of action this operation is going to perform. The actionName should be concise and limited to as few words as possible.|
@@ -41,8 +49,8 @@ If successful, this method returns a `201 Created` response code and a [resource
 ## Example
 ### Request
 Here is an example of the request.
-```http
-POST https://graph.microsoft.com/beta/deviceManagement/resourceOperations/
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/resourceOperations
 Content-type: application/json
 Content-length: 178
 
@@ -56,7 +64,7 @@ Content-length: 178
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 227

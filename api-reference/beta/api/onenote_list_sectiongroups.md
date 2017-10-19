@@ -1,15 +1,24 @@
 # List sectionGroups
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a list of [sectionGroup](../resources/sectiongroup.md) objects.
-## Prerequisites
-One of the following **scopes** is required to execute this API:  
-Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Notes.Create, Notes.Read, Notes.ReadWrite    |
+|Application | Notes.Read.All, Notes.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/sectionGroups
 GET /users/{id | userPrincipalName}/onenote/sectionGroups
 GET /groups/{id}/onenote/sectionGroups
+GET /sites/{id}/onenote/sectionGroups
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -22,11 +31,13 @@ The default query expands `parentNotebook` and selects its `id`, `displayName`, 
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Accept | string | `application/json` |  
+| Accept | string | `application/json` |
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [sectionGroup](../resources/sectiongroup.md) objects in the response body.
 ## Example
 ##### Request

@@ -1,35 +1,39 @@
 # Restore deleted item
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Restores a recently deleted item from [deleted items](../resources/directory.md). 
 
 Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources. If an item was accidentally deleted, you can fully restore the item.
 
 A recently deleted item will remain available for up to 30 days. After 30 days, the item is permanently deleted.
 
-### Prerequisites
-One of the following **scopes** is required to execute this API: 
-* For users: *User.ReadWrite.All or Directory.AccessAsUser.All*
-* For groups: *Group.ReadWrite.All or Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-### HTTP request
+* For users: User.ReadWrite.All, Directory.AccessAsUser.All
+* For groups: Group.ReadWrite.All, Directory.AccessAsUser.All
+
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directory/deleteditems/{id}/restore
 ```
 
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;code&gt; *Required*|
 | Accept | application/json |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
+
 If successful, this method returns `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 
 <!-- {

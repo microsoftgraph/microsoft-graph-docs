@@ -1,10 +1,19 @@
 # Get member objects
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
  Returns all the groups, administrative units and directory roles that a user, group, service principals or directory object is a member of. This function is transitive. 
  > Note: Only users can be members of directory roles.
 
-## Prerequisites
-One of the following **scopes** are required to execute this API: _Directory.Read.All_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -30,6 +39,7 @@ In the request body, provide a JSON object with the following parameters.
 |securityEnabledOnly|Boolean| **true** to specify that only security groups that the entity is a member of should be returned; **false** to specify that all groups and directory roles that the entity is a member of should be returned. **Note**: The function can only be called on a user if the parameter is **true**. |
 
 ## Response
+
 If successful, this method returns `200, OK` response code and String collection object in the response body.
 
 ## Example

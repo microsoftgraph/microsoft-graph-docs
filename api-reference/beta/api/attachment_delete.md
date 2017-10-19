@@ -1,14 +1,16 @@
 # Delete attachment
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Delete an attachment from a calendar [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* If accessing attachments in Messages: *Mail.ReadWrite*
-* If accessing attachments in Events: *Calendars.ReadWrite*
-* If accessing attachments in Outlook tasks: *Tasks.ReadWrite*
-* If accessing attachments in Group Events or Posts: *Group.ReadWrite.All*
+* If accessing attachments in Messages: Mail.ReadWrite
+* If accessing attachments in Events: Calendars.ReadWrite
+* If accessing attachments in Outlook tasks: Tasks.ReadWrite
+* If accessing attachments in Group Events or Posts: Group.ReadWrite.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -77,8 +79,8 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example

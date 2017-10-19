@@ -1,10 +1,14 @@
 # Create ChartPoints
 
 Use this API to create a new ChartPoints.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -17,12 +21,11 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, supply a JSON representation of [ChartPoints](../resources/chartpoint.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [ChartPoints](../resources/chartpoint.md) object in the response body.
 
 ## Example

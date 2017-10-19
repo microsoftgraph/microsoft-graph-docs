@@ -1,10 +1,14 @@
 # TableCollection: add
 
 Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -18,7 +22,6 @@ POST /workbook/worksheets/{id|name}/tables/add
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -28,6 +31,7 @@ In the request body, provide a JSON object with the following parameters.
 |hasHeaders|boolean|Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Table](../resources/table.md) object in the response body.
 
 ## Example

@@ -1,5 +1,7 @@
 # Create multi-value extended property
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create one or more multi-value extended properties in a new or existing instance of a resource. 
 
 The following user resources are supported:
@@ -22,17 +24,16 @@ As well as the following group resources:
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
 open extensions or extended properties, and how to specify extended properties.
 
-## Prerequisites
+## Permissions
+One of the following permissions is required to call this API, depending on the resource you're
+creating the extended property in. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-One of the following **scopes** is required to execute this API, depending on the resource you're
-creating the extended property in:
+- Mail.ReadWrite
+- Calendars.ReadWrite
+- Contacts.ReadWrite
+- Tasks.ReadWrite
+- Group.ReadWrite.All
 
-- _Mail.ReadWrite_
-- _Calendars.ReadWrite_
-- _Contacts.ReadWrite_
-- _Tasks.ReadWrite_
-- _Group.ReadWrite.All_
- 
 ## HTTP request
 You can create extended properties in a new or existing resource instance.
 
@@ -141,7 +142,6 @@ PATCH /groups/{id}/events/{id}
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection| An array of one or more multi-valued extended properties. |
 |id|String|For each property in the **multiValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 |value|string|For each property in the **multiValueExtendedProperties** collection, specify the property value. Required.|
-
 
 ## Request headers
 | Name       | Value |

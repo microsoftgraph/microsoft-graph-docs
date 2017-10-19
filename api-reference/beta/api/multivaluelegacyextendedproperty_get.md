@@ -1,5 +1,7 @@
 # Get multiValueLegacyExtendedProperty
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get a resource instance that contains a multi-value extended property by using `$expand`.
 
 Using the query parameter `$expand` allows you to get the specified instance expanded with the indicated extended 
@@ -26,15 +28,15 @@ As well as the following group resources:
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
 open extensions or extended properties, and how to specify extended properties.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API, depending on the resource you're
-getting:
+## Permissions
+One of the following permissions is required to call this API, depending on the resource you're
+getting. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- _Mail.Read_
-- _Calendars.Read_
-- _Contacts.Read_
-- _Tasks.Read_
-- _Group.Read.All_ 
+- Mail.Read
+- Calendars.Read
+- Contacts.Read
+- Tasks.Read
+- Group.Read.All 
  
 ## HTTP request
 
@@ -121,16 +123,16 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 |_URL parameters_|
 |id_value|String|The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 
-
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code. 
 
 The response body includes an object representing the requested resource instance, expanded with the matching 

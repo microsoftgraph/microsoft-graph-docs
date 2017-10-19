@@ -1,28 +1,37 @@
 # List buckets
 
-Retrieve a list of **plannerbucket** objects contained by a [plannerPlan](../resources/plannerplan.md) object.
-### Prerequisites
-The following **scopes** are required to execute this API: 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-*Group.Read.All*
-### HTTP request
+Retrieve a list of **plannerbucket** objects contained by a [plannerPlan](../resources/plannerplan.md) object.
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /planner/plans/<id>/buckets
 ```
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+
+## Response
+
 If successful, this method returns a `200 OK` response code and collection of [plannerBucket](../resources/plannerbucket.md) objects in the response body.
 
 This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

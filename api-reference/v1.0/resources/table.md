@@ -24,8 +24,6 @@ Represents an Excel table.
 |[List](../api/table_list.md) | [Table](table.md) collection |Get table object collection. |
 |[Add](../api/tablecollection_add.md)|[Table](table.md)|Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.|
 
-
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

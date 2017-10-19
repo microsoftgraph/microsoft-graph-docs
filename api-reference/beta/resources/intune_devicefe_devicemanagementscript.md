@@ -1,7 +1,7 @@
-﻿#  resource type
+# deviceManagementScript resource type
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-
 Intune will provide customer the ability to run their Powershell scripts on the enrolled windows 10 Azure Active Directory joined devices. The script can be run once or periodically.
 ## Methods
 |Method|Return Type|Description|
@@ -16,7 +16,6 @@ Intune will provide customer the ability to run their Powershell scripts on the 
 |[Get deviceManagementScriptRunSummary](../api/intune_devicefe_devicemanagementscriptrunsummary_get.md)|[deviceManagementScriptRunSummary](../resources/intune_devicefe_devicemanagementscriptrunsummary.md)|Read properties and relationships of the [deviceManagementScriptRunSummary](../resources/intune_devicefe_devicemanagementscriptrunsummary.md) object.|
 |[List deviceManagementScriptDeviceStates](../api/intune_devicefe_devicemanagementscriptdevicestate_list.md)|[deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md) collection|List properties and relationships of the [deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md) objects.|
 |[List deviceManagementScriptUserStates](../api/intune_devicefe_devicemanagementscriptuserstate_list.md)|[deviceManagementScriptUserState](../resources/intune_devicefe_devicemanagementscriptuserstate.md) collection|List properties and relationships of the [deviceManagementScriptUserState](../resources/intune_devicefe_devicemanagementscriptuserstate.md) objects.|
-
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -30,7 +29,6 @@ Intune will provide customer the ability to run their Powershell scripts on the 
 |runAsAccount|String|Indicates the type of execution context the device management script runs in. Possible values are: `system`, `user`.|
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked.|
 |fileName|String|Script file name.|
-
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -38,7 +36,6 @@ Intune will provide customer the ability to run their Powershell scripts on the 
 |runSummary|[deviceManagementScriptRunSummary](../resources/intune_devicefe_devicemanagementscriptrunsummary.md)|Run summary for device management script.|
 |deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md) collection|List of run states for this script across all devices.|
 |userRunStates|[deviceManagementScriptUserState](../resources/intune_devicefe_devicemanagementscriptuserstate.md) collection|List of run states for this script across all users.|
-
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -64,6 +61,3 @@ Here is a JSON representation of the resource.
   "fileName": "String"
 }
 ```
-
-
-

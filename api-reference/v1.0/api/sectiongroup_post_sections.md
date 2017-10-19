@@ -1,10 +1,14 @@
 # Create section
 
 Create a new [section](../resources/section.md) in the specified section group.
-## Prerequisites
-One of the following **scopes** is required to execute this API:   
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite    |
+|Application | Notes.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -12,6 +16,7 @@ Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
 POST /me/onenote/sectionGroups/{id}/sections
 POST /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sections
 POST /groups/{id}/onenote/sectionGroups/{id}/sections
+POST /sites/{id}/onenote/sectionGroups/{id}/sections
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -24,8 +29,8 @@ In the request body, supply a name for the section.
 
 Within the same hierarchy level, section names must be unique. The name cannot contain more than 50 characters or contain the following characters:  ?*\/:<>|&#''%~
 
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [section](../resources/section.md) object in the response body.
 
 ## Example

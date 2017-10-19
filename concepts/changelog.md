@@ -4,6 +4,307 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## September 2017
+
+### Intune APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added new entities:<br/>[activeDirectoryWindowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile.md)<br/>[azureADWindowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_azureadwindowsautopilotdeploymentprofile.md)<br/>[deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md)<br/>[deviceEnrollmentLimitConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentlimitconfiguration.md)<br/>[deviceEnrollmentPlatformRestrictionsConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration.md)<br/>[deviceEnrollmentWindowsHelloForBusinessConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration.md)<br/>[deviceManagementPartner](../api-reference/beta/resources/intune_onboarding_devicemanagementpartner.md)<br/>[enrollmentConfigurationAssignment](../api-reference/beta/resources/intune_onboarding_enrollmentconfigurationassignment.md)<br/>[windows10EnrollmentCompletionPageConfiguration](../api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration.md)<br/>[windows10NetworkBoundaryConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10networkboundaryconfiguration.md)<br/>[windowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile.md)<br/>[windowsAutopilotDeviceIdentity](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity.md)<br/>[windowsAutopilotSettings](../api-reference/beta/resources/intune_enrollment_windowsautopilotsettings.md)<br/>|
+|Addition|Beta|Added new complex types:<br/>[adminConsent](../api-reference/beta/resources/intune_devices_adminconsent.md)<br/>[allDevicesAssignmentTarget](../api-reference/beta/resources/intune_onboarding_alldevicesassignmenttarget.md)<br/>[allLicensedUsersAssignmentTarget](../api-reference/beta/resources/intune_onboarding_alllicensedusersassignmenttarget.md)<br/>[deviceAndAppManagementAssignmentTarget](../api-reference/beta/resources/intune_onboarding_deviceandappmanagementassignmenttarget.md)<br/>[deviceEnrollmentPlatformRestriction](../api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestriction.md)<br/>[deviceHealthAttestationState](../api-reference/beta/resources/intune_devices_devicehealthattestationstate.md)<br/>[exclusionGroupAssignmentTarget](../api-reference/beta/resources/intune_onboarding_exclusiongroupassignmenttarget.md)<br/>[groupAssignmentTarget](../api-reference/beta/resources/intune_onboarding_groupassignmenttarget.md)<br/>[outOfBoxExperienceSettings](../api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings.md)<br/>[windowsFirewallNetworkProfile](../api-reference/beta/resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)<br/>[windowsNetworkIsolationCloudResource](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationcloudresource.md)<br/>[windowsNetworkIsolationCloudResourceCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationcloudresourcecollection.md)<br/>[windowsNetworkIsolationIPRangeCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationiprangecollection.md)<br/>[windowsNetworkIsolationPolicy](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationpolicy.md)<br/>[windowsNetworkIsolationResourceCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationresourcecollection.md)<br/>|
+|Addition|Beta|Added the [sync](../api-reference/beta/api/intune_enrollment_windowsautopilotsettings_sync.md) action on [windowsAutopilotSettings](../api-reference/beta/resources/intune_enrollment_windowsautopilotsettings.md) |
+|Addition|Beta|Added the [assign](../api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_assign.md) action on [windowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile.md) |
+|Addition|Beta|Added the [localActions](../api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_localactions.md) action on [deviceCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy.md) |
+|Addition|Beta|Added the [setPriority](../api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_setpriority.md) action on [deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md) |
+|Addition|Beta|Added the [assign](../api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_assign.md) action on [deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md) |
+|Addition|Beta|Added the uploadDepToken action on [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) collection |
+|Addition|Beta|Added the syncWithAppleDeviceEnrollmentProgram action on [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) collection |
+|Addition|Beta|Added the updateMobileAppIdentifierDeployments action on [managedAppProtection](../api-reference/beta/resources/intune_mam_managedappprotection.md) |
+|Addition|Beta|Added the assign action on [targetedManagedAppProtection](../api-reference/beta/resources/intune_mam_targetedmanagedappprotection.md) |
+|Addition|Beta|Added the assign action on [targetedManagedAppConfiguration](../api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration.md) |
+|Addition|Beta|Added the assign action on [windowsInformationProtection](../api-reference/beta/resources/intune_mam_windowsinformationprotection.md) |
+|Addition|Beta|Added the getEncryptionPublicKey function on [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) collection |
+|Change|Beta|Added the **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders**, **requireCompanyPortalAppIntegrity** and **conditionStatementId** properties to the [androidCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy.md) entity|
+|Change|Beta|Added the **requireAppVerify**, **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders** and **requireCompanyPortalAppIntegrity** properties to the [androidForWorkCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy.md) entity|
+|Change|Beta|Added the **blockCrossProfileCopyPaste** and **requireAppVerify** properties to the [androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md) entity|
+|Change|Beta|Added the **kioskModeApps** and **requireAppVerify** properties to the [androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md) entity|
+|Change|Beta|Removed the **kioskModeManagedApps** property from the [androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md) entity|
+|Change|Beta|Removed the **cloudPkiProvider**, **createdDateTime**, **description**, **lastModifiedDateTime**, **displayName**, **syncStatus**, **lastSyncError**, **lastSyncDateTime**, **credentials**, **trustedRootCertificate** and **version** properties from the [cloudPkiSubscription](../api-reference/beta/resources/intune_deviceconfig_cloudpkisubscription.md) entity|
+|Change|Beta|Removed the **assignmentStatus**, **assignmentProgress** and **assignmentErrorMessage** properties from the [deviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_deviceconfiguration.md) entity|
+|Change|Beta|Added the **adminConsent** property to the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) entity|
+|Change|Beta|Added the **vppTokenOrganizationName**, **vppTokenAccountType** and **vppTokenAppleId** properties to the [iosVppApp](../api-reference/beta/resources/intune_apps_iosvppapp.md) entity|
+|Change|Beta|Added the **deviceEnrollmentType**, **wiFiMacAddress** and **deviceHealthAttestationState** properties to the [managedDevice](../api-reference/beta/resources/intune_deviceconfig_manageddevice.md) entity|
+|Change|Beta|Added the **legacyAppConfiguration** property to the [managedDeviceMobileAppConfiguration](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration.md) entity|
+|Change|Beta|Added the **notApplicableCount** property to the [managedDeviceMobileAppConfigurationDeviceSummary](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md) entity|
+|Change|Beta|Added the **notApplicableCount** property to the [managedDeviceMobileAppConfigurationUserSummary](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationusersummary.md) entity|
+|Change|Beta|Added the **firewallBlockStatefulFTP**, **firewallIdleTimeoutForSecurityAssociationInSeconds**, **firewallPreSharedKeyEncodingMethod**, **firewallIPSecExemptionsAllowNeighborDiscovery**, **firewallIPSecExemptionsAllowICMP**, **firewallIPSecExemptionsAllowRouterDiscovery**, **firewallIPSecExemptionsAllowDHCP**, **firewallCertificateRevocationListCheckMethod**, **firewallMergeKeyingModuleSettings**, **firewallPacketQueueingMethod**, **firewallProfileDomain**, **firewallProfilePublic**, **firewallProfilePrivate**, **defenderAttackSurfaceReductionExcludedPaths**, **defenderOfficeAppsOtherProcessInjectionType**, **defenderOfficeAppsExecutableContentCreationOrLaunchType**, **defenderOfficeAppsLaunchChildProcessType**, **defenderOfficeMacroCodeAllowWin32ImportsType**, **defenderScriptObfuscatedMacroCodeType**, **defenderScriptDownloadedPayloadExecutionType**, **defenderEmailContentExecutionType**, **defenderGuardMyFoldersType**, **defenderGuardedFoldersAllowedAppPaths**, **defenderAdditionalGuardedFolders**, **defenderNetworkProtectionType**, **defenderExploitProtectionXml**, **defenderExploitProtectionXmlFileName**, **defenderSecurityCenterBlockExploitProtectionOverride**, **appLockerApplicationControl**, **applicationGuardBlockClipboardSharing**, **applicationGuardAllowPrintToPDF**, **applicationGuardAllowPrintToXPS**, **applicationGuardAllowPrintToLocalPrinters**, **applicationGuardAllowPrintToNetworkPrinters** and **bitLockerDisableWarningForOtherDiskEncryption** properties to the [windows10EndpointProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md) entity|
+|Change|Beta|Added the **displayAppListWithGdiDPIScalingTurnedOn**, **displayAppListWithGdiDPIScalingTurnedOff**, **messagingBlockSync**, **messagingBlockMMS** and **messagingBlockRichCommunicationServices** properties to the [windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration.md) entity|
+|Change|Beta|Removed the **bluetoothDeviceName** property from the [windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration.md) entity|
+|Change|Beta|Removed the **deviceAccountBlockExchangeServices**, **deviceAccountEmailAddress**, **deviceAccountExchangeServerAddress**, **deviceAccountRequirePasswordRotation** and **deviceAccountSessionInitiationProtocolAddress** properties from the [windows10TeamGeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10teamgeneralconfiguration.md) entity|
+|Change|Beta|Added the **localActions** navigation property to the [androidCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy.md) entity|
+|Change|Beta|Added the **windowsAutopilotSettings**, **windowsAutopilotDeviceIdentities**, **windowsAutopilotDeploymentProfiles**, **deviceEnrollmentConfigurations**, **deviceManagementPartners** and **depOnboardingSettings** navigation properties to the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) entity|
+|Change|Beta|Removed the **cloudPkiSubscriptions** navigation property from the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) entity|
+|Change|Beta|Added the **assignments** navigation property to the [targetedManagedAppConfiguration](../api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration.md) entity|
+|Change|Beta|Added the **assignments** navigation property to the [targetedManagedAppProtection](../api-reference/beta/resources/intune_mam_targetedmanagedappprotection.md) entity|
+|Change|Beta|Added the **assignments** navigation property to the [windowsInformationProtection](../api-reference/beta/resources/intune_mam_windowsinformationprotection.md) entity|
+
+### OneDrive
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | v1.0 | Added the **system** property to the [Drive][] resource.  |
+| Addition | v1.0 | Added the **list** relationship to the [Drive][] resource. |
+| Addition | v1.0 | Added the **listItem** relationship to the [DriveItem][] resource. |
+| Addition | v1.0 | Added the **list** and **listItem** relationships to the [SharedDriveItem][] resource. |
+| Addition | v1.0 | Added new complex types: [FolderView][] |
+| Addition | v1.0 | Added the **view** property to the [Folder][] complex type. |
+| Addition | v1.0 | Added the **driveType** property to the [ItemReference][] complex type. |
+| Addition | v1.0 | Added the **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** and **frameRate** properties to the [Video][] complex type. |
+| Addition | beta | Added the **system** property to the [Drive][Drive-beta] resource.  |
+| Addition | beta | Added the **activities** relationship to the [Drive][Drive-beta] resource. |
+| Addition | beta | Added the **publication** property to the [DriveItem][DriveItem-beta] resource. |
+| Addition | beta | Added the **activities** and **versions** relationships to the [DriveItem][DriveItem-beta] resource. |
+| Addition | beta | Added new entities: [DriveItemVersion][DriveItemVersion-beta], [ItemActivity][ItemActivity-beta]. |
+| Addition | beta | Added new complex types: [CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta], [DeleteAction][DeleteAction-beta], [EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta], [ItemActivityTimeSet][ItemActivityTimeSet-beta], [MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta], [PublicationFacet][PublicationFacet-beta], [RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta], [ShareAction][ShareAction-beta], and [VersionAction][VersionAction-beta]. |
+| Addition | beta | Added the **driveType** property to the [ItemReference][ItemReference-beta] complex type. |
+| Deletion | beta | Removed the **tenantId** property from [SharepointIds][SharepointIds-beta] complex type. |
+| Addition | v1.0 | Added the **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** and **frameRate** properties to the [Video][Video-beta] complex type. |
+| Addition | beta | Added the [CheckIn][CheckIn-beta] and [CheckOut][CheckOut-beta] actions on the [DriveItem][DriveItem-beta] resource. |
+| Addition | beta | Added the **expirationDateTime**, **password**, **message**, and **recipients** properties on the [CreateLink][CreateLink-beta] action on a [DriveItem][DriveItem-beta] resource. |
+
+[Drive]: ../api-reference/v1.0/resources/drive.md
+[DriveItem]: ../api-reference/v1.0/resources/driveitem.md
+[SharedDriveItem]: ../api-reference/v1.0/resources/shareddriveitem.md
+[FolderView]: ../api-reference/v1.0/resources/folderview.md
+[Folder]: ../api-reference/v1.0/resources/folder.md
+[ItemReference]: ../api-reference/v1.0/resources/itemreference.md
+[Video]: ../api-reference/v1.0/resources/video.md
+[Drive-beta]: ../api-reference/beta/resources/drive.md
+[DriveItem-beta]: ../api-reference/beta/resources/driveitem.md
+[DriveItemVersion-beta]: ../api-reference/beta/resources/driveitemversion.md
+[ItemActivity-beta]: ../api-reference/beta/resources/itemactivity.md
+[CommentAction-beta]: ../api-reference/beta/resources/commentaction.md
+[CreateAction-beta]: ../api-reference/beta/resources/createaction.md
+[DeleteAction-beta]: ../api-reference/beta/resources/deleteaction.md
+[EditAction-beta]: ../api-reference/beta/resources/editaction.md
+[ItemActionSet-beta]: ../api-reference/beta/resources/itemactionset.md
+[ItemActivityTimeSet-beta]: ../api-reference/beta/resources/itemactivitytimeset.md
+[MentionAction-beta]: ../api-reference/beta/resources/mentionaction.md
+[MoveAction-beta]: ../api-reference/beta/resources/moveaction.md
+[PublicationFacet-beta]: ../api-reference/beta/resources/publicationfacet.md
+[RenameAction-beta]: ../api-reference/beta/resources/renameaction.md
+[RestoreAction-beta]: ../api-reference/beta/resources/restoreaction.md
+[ShareAction-beta]: ../api-reference/beta/resources/shareaction.md
+[VersionAction-beta]: ../api-reference/beta/resources/versionaction.md
+[ItemReference-beta]: ../api-reference/beta/resources/itemreference.md
+[SharepointIds-beta]: ../api-reference/beta/resources/sharepointids.md
+[Video-beta]: ../api-reference/beta/resources/video.md
+[CheckIn-beta]: ../api-reference/beta/api/driveitem_checkin.md
+[CheckOut-beta]: ../api-reference/beta/api/driveitem_checkout.md
+[CreateLink-beta]: ../api-reference/beta/api/driveitem_createlink.md
+
+
+### Outlook calendar
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | Beta | Added the [findRoomLists](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_findroomlists) and [findRooms](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_findrooms) functions to the [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user) entity. |
+| Addition | Beta | Added the **locations** property to the [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) entity to support organizing an event that attendees can attend from more than one location. |
+| Addition | Beta | Added the **locationType** property to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type.|
+| Addition | Beta | Added the **uniqueId** and **uniqueIdType** properties to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type. These properties are only for internal use at this point.|
+| Change | v1.0 and beta | If you have appropriate delegated permissions from the signed-in user, you can specify another user's ID or user principal name to [get a calendar](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_get), or [get events in a calendar](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_events), if that user has shared that calendar with the signed-in user, or that user has delegated its mailbox to the signed-in user. |
+
+### Outlook contacts
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Change | v1.0 and beta | If you have appropriate delegated permissions from the signed-in user, you can specify another user's ID or user principal name to [get a contact folder](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/contactfolder_get), or [get contacts in a folder](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts), if that user has shared that folder with the signed-in user, or that user has delegated its mailbox to the signed-in user. |
+
+
+### Outlook mail
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | Beta | Added the **internetMessageHeaders** property to the [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/message) entity. |
+| Addition | Beta | Added the [internetMessageHeader](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/internetmessageheader) complex type.|
+| Addition | Beta | Added the **messageRules** navigation property to the [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) entity. **messageRules** is a collection of [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) instances. |
+| Addition | Beta | Added the [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) entity, and [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates), and [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange) complex types.  |
+| Addition | Beta | Added the following CRUD operations for message rules: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update), and [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete). |
+
+
+### Outlook user choices
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | Beta | Added the new **masterCategories** navigation property to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity. **masterCategories** is a collection of [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory) objects. |
+| Addition | Beta | Added the [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory) entity. |
+| Addition | Beta | Added the following CRUD operations for [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory): [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_post_mastercategories), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_update), and [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_delete). |
+| Addition | Beta | Added the new [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity.  |
+| Addition | Beta | Added the new [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity.  |
+
+
+### SharePoint lists
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | v1.0 | Added new entities: [ColumnDefinition][], [ColumnLink][], [ContentType][], [List][], [ListItem][]. |
+| Addition | v1.0 | Added the **columns**, **contentTypes**, **items**, and **lists** relationships to the [Site][] resource. |
+| Addition | v1.0 | Added new complex types: [BooleanColumn][], [CalculatedColumn][], [ChoiceColumn][], [ContentTypeInfo][], [ContentTypeOrder][], [CurrencyColumn][], [DateTimeColumn][], [DefaultColumnValue][], [ListInfo][], [LookupColumn][], [NumberColumn][], [PersonOrGroupColumn][], [SystemFacet][], [TextColumn][]. |
+| Addition | beta | Added new entities: [BaseItemVersion][BaseItemVersion-beta], [ColumnLink][ColumnLink-beta], [ContentType][ContentType-beta], [ListItemVersion][ListItemVersion-beta], |
+| Addition | beta | Added the **columnGroup**, **currency**, **defaultValue** and **displayName** properties to [ColumnDefinition][ColumnDefinition-beta]. |
+| Addition | beta | Added the **displayName** and **system** properties to the [List][List-beta] resource. |
+| Addition | beta | Added the **activities** and **contentTypes** relationships to the [List][List-beta] resource. |
+| Addition | beta | Added the **contentType** property to the [ListItem][ListItem-beta] resource. |
+| Addition | beta | Added the **activities** and **versions** relationships to the [ListItem][ListItem-beta] resource. |
+| Addition | beta | Added the **contentTypes** relationship to the [Site][Site-beta] resource. |
+| Addition | beta | Added the **outputType** property to the [BooleanColumn][BooleanColumn-beta] type. |
+| Addition | beta | Added new complex types: [ContentTypeInfo][ContentTypeInfo-beta], [ContentTypeOrder][ContentTypeOrder-beta], [CurrencyColumn][CurrencyColumn-beta], and [SystemFacet][SystemFacet-beta]. |
+| Addition | beta | Added the **contentTypesEnabled** property to the [ListInfo][ListInfo-beta] complex type. |
+| Addition | beta | Added the **allowUnlimitedLength** property on the [LookupColumn][LookupColumn-beta] complex type. |
+| Change   | beta | Renamed the **allowMultipleValue** property to **allowMultipleValues** on the [LookupColumn][LookupColumn-beta] complex type. |
+| Change   | beta | Renamed the **chooseFrom** property to **chooseFromType** on [PersonOrGroupColumn][PersonOrGroupColumn-beta] complex type. |
+| Deletion | beta | Removed the **locale** property on the [NumberColumn][NumberColumn-beta] complex type. |
+| Deletion | beta | Removed the **enforceUniqueValues** property from [PersonOrGroupColumn][PersonOrGroupColumn-beta] complex type. |
+
+[BaseItemVersion-beta]: ../api-reference/beta/resources/baseitemversion.md
+[BooleanColumn-beta]:  ../api-reference/beta/resources/booleanColumn.md
+[BooleanColumn]: ../api-reference/v1.0/resources/booleancolumn.md
+[CalculatedColumn]: ../api-reference/v1.0/resources/calculatedcolumn.md
+[ChoiceColumn]: ../api-reference/v1.0/resources/choicecolumn.md
+[ColumnDefinition-beta]: ../api-reference/beta/resources/columndefinition.md
+[ColumnDefinition]: ../api-reference/v1.0/resources/columndefinition.md
+[ColumnLink-beta]: ../api-reference/beta/resources/columnLink.md
+[ColumnLink]: ../api-reference/v1.0/resources/columnLink.md
+[ContentType-beta]: ../api-reference/beta/resources/contentType.md
+[ContentType]: ../api-reference/v1.0/resources/contentType.md
+[ContentTypeInfo-beta]: ../api-reference/beta/resources/contentTypeInfo.md
+[ContentTypeInfo]: ../api-reference/v1.0/resources/contentTypeInfo.md
+[ContentTypeOrder-beta]: ../api-reference/beta/resources/contentTypeOrder.md
+[ContentTypeOrder]: ../api-reference/v1.0/resources/contentTypeOrder.md
+[CurrencyColumn-beta]: ../api-reference/beta/resources/currencycolumn.md
+[CurrencyColumn]: ../api-reference/v1.0/resources/currencycolumn.md
+[DateTimeColumn]: ../api-reference/v1.0/resources/datetimecolumn.md
+[DefaultColumnValue]: ../api-reference/v1.0/resources/defaultColumnValue.md
+[List-beta]: ../api-reference/beta/resources/list.md
+[List]: ../api-reference/v1.0/resources/list.md
+[ListInfo-beta]: ../api-reference/beta/resources/listinfo.md
+[ListInfo]: ../api-reference/v1.0/resources/listinfo.md
+[ListItem-beta]: ../api-reference/beta/resources/listitem.md
+[ListItem]: ../api-reference/v1.0/resources/listitem.md
+[ListItemVersion-beta]: ../api-reference/beta/resources/listitemversion.md
+[LookupColumn-beta]: ../api-reference/beta/resources/lookupColumn.md
+[LookupColumn]: ../api-reference/v1.0/resources/lookupcolumn.md
+[NumberColumn-beta]: ../api-reference/beta/resources/numberColumn.md
+[NumberColumn]: ../api-reference/v1.0/resources/numbercolumn.md
+[PersonOrGroupColumn-beta]: ../api-reference/beta/resources/personOrGroupColumn.md
+[PersonOrGroupColumn]: ../api-reference/v1.0/resources/personorgroupcolumn.md
+[Site-beta]: ../api-reference/beta/resources/site.md
+[Site]: ../api-reference/v1.0/resources/site.md
+[SystemFacet-beta]: ../api-reference/beta/resources/systemfacet.md
+[SystemFacet]: ../api-reference/v1.0/resources/systemFacet.md
+[TextColumn]: ../api-reference/v1.0/resources/textcolumn.md
+
+
+### SharePoint sites
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | beta | Added **dataLocationCode** and **root** properties to the [SiteCollection][SiteCollection-beta] complex type. |
+
+[SiteCollection-beta]: ../api-reference/beta/resources/sitecollection.md
+
+
+## August 2017
+
+### Group lifecycle policy
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | Beta | Added [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy) entity. |
+| Addition | Beta | Added the following APIs for group lifecycle policy: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update), [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete), [add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup), [remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup), and [renew a group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup). |
+| Addition | Beta | Added [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) function to [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) entity. |
+
+### Intune APIs
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added new entity:<br/>[windowsPrivacyDataAccessControlItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem)<br/>|
+|Addition|Beta|Added new complex types:<br/>[configurationManagerClientEnabledFeatures](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_configurationmanagerclientenabledfeatures)<br/>[windowsDefenderScanActionResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_windowsdefenderscanactionresult)<br/>|
+|Addition|Beta|Added the [windowsDefenderScan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderscan.md) action on [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) |
+|Addition|Beta|Added the [windowsDefenderUpdateSignatures](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderupdatesignatures.md) action on [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) |
+|Addition|Beta|Added the [windowsPrivacyAccessControls](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols.md) action on [deviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration) |
+|Change|Beta|Added the **automaticallyUpdateApps** and **countryOrRegion** properties to the [appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_applevolumepurchaseprogramtoken) entity|
+|Change|Beta|Added the **enableAuthenticationViaCompanyPortal** property to the [depEnrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_corpenrollment_depenrollmentprofile) entity|
+|Change|Beta|Added the **notificationMessageCCList** property to the [deviceComplianceActionItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecomplianceactionitem) entity|
+|Change|Beta|Added the **notApplicableCount** property to the [deviceComplianceDeviceOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancedeviceoverview) entity|
+|Change|Beta|Added the **notApplicableCount** property to the [deviceComplianceUserOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecomplianceuseroverview) entity|
+|Change|Beta|Added the **notApplicableCount** property to the [deviceConfigurationDeviceOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationdeviceoverview) entity|
+|Change|Beta|Added the **notApplicableCount** property to the [deviceConfigurationUserOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuseroverview) entity|
+|Change|Beta|Added the **configurationManagerClientEnabledFeatures** property to the [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) entity|
+|Change|Beta|Removed the **intuneBrand** property from the [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_organization) entity|
+|Change|Beta|Added the **smartScreenEnableInShell**, **smartScreenBlockOverrideForFiles**, **applicationGuardEnabled**, **applicationGuardBlockFileTransfer**, **applicationGuardBlockNonEnterpriseContent**, **applicationGuardAllowPersistence** and **applicationGuardForceAuditing** properties to the [windows10EndpointProtectionConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration) entity|
+|Change|Beta|Added the **searchBlockDiacritics**, **searchDisableAutoLanguageDetection**, **searchDisableIndexingEncryptedItems**, **searchEnableRemoteQueries**, **searchDisableUseLocation**, **searchDisableIndexerBackoff**, **searchDisableIndexingRemovableDrive**, **searchEnableAutomaticIndexSizeManangement**, **smartScreenEnableAppInstallControl** and **privacyAdvertisingId** properties to the [windows10GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration) entity|
+|Change|Beta|Removed the **settingsDeviceName** property from the [windows10TeamGeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10teamgeneralconfiguration) entity|
+|Change|Beta|Removed the **restartMode** property from the [windowsUpdateForBusinessConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration) entity|
+|Change|Beta|Added the **detectedApps** and **managedDevices** navigation properties to the [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement) entity|
+|Change|Beta|Added the **privacyAccessControls** navigation property to the [windows10GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration) entity|
+|Change|Beta|Added the **secureByDefault** property to the [deviceManagementSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings) complex type|
+|Change|Beta|Added the **restartMode** property to the [windowsUpdateScheduledInstall](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsupdatescheduledinstall) complex type|
+
+### OneNote
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | v1.0 and Beta | Added the [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) navigation property to **site**.  |
+| Addition | Beta | Added the target *siteCollectionId* and target *siteId* parameters for the copy operations. For example: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
+
+### People 
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | v1.0 | Added the [People APIs](../api-reference/v1.0/resources/person.md) to v1.0. For details about the People API, see [Get relevant information about people](people_example.md).|
+
+
+
+
+## July 2017
+
+### Group settings
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition     | v1.0       | Added support for group settings.<br/>New resource types: [groupSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/groupsetting.md), [groupSettingTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/groupsettingtemplate.md), [settingValue](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/settingvalue.md), and [settingTemplateValue](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/settingtemplatevalue.md) |
+| Change       | v1.0       | Added property **classification** and navigation property **settings**  to [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group.md) |
+
+### Intune APIs
+
+|Change&nbsp;type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added the [assign](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_apps_iosmobileappconfiguration_assign) action on [iosMobileAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_iosmobileappconfiguration) |
+|Addition|Beta|Added the [syncDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_syncdevice) action on [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) |
+|Change|Beta|Added the **appsInstallAllowList**, **appsLaunchBlockList** and **appsHideList** properties to the [androidGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration) entity|
+|Change|Beta|Added the **disableAppEncryptionIfDeviceEncryptionIsEnabled** property to the [androidManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_androidmanagedappprotection) entity|
+|Change|Beta|Added the **disableAppEncryptionIfDeviceEncryptionIsEnabled** property to the [defaultManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_defaultmanagedappprotection) entity|
+|Change|Beta|Added the **complianceGracePeriodExpirationDateTime** property to the [deviceComplianceDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancedevicestatus) entity|
+|Change|Beta|Added the **complianceGracePeriodExpirationDateTime** property to the [deviceComplianceSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancesettingstate) entity|
+|Change|Beta|Added the **complianceGracePeriodExpirationDateTime** property to the [deviceConfigurationDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationdevicestatus) entity|
+|Change|Beta|Added the **subscriptions** property to the [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement) entity|
+|Change|Beta|Added the **version** property to the [deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector) entity|
+|Change|Beta|Added the **utcTimeOffsetInMinutes** property to the [iosUpdateConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosupdateconfiguration) entity|
+|Change|Beta|Added the **complianceGracePeriodExpirationDateTime** property to the [iosUpdateDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosupdatedevicestatus) entity|
+|Change|Beta|Added the **preSharedKey** property to the [macOSWiFiConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_macoswificonfiguration) entity|
+|Change|Beta|Added the **phoneNumber**, **androidSecurityPatchLevel** and **userDisplayName** properties to the [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) entity|
+|Change|Beta|Added the **userName**, **deviceModel**, **platform** and **complianceGracePeriodExpirationDateTime** properties to the [managedDeviceMobileAppConfigurationDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicestatus) entity|
+|Change|Beta|Added the **userPrincipalName** property to the [mobileAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappinstallstatus) entity|
+|Change|Beta|Added the **overrideDefaultRule** property to the [onPremisesConditionalAccessSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_onpremisesconditionalaccesssettings) entity|
+|Change|Beta|Added the **userPrincipalName** property to the [userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_userappinstallstatus) entity|
+|Change|Beta|Added the **connectAppBlockAutoLaunch**, **deviceAccountBlockExchangeServices**, **deviceAccountEmailAddress**, **deviceAccountExchangeServerAddress**, **deviceAccountRequirePasswordRotation**, **deviceAccountSessionInitiationProtocolAddress**, **settingsBlockMyMeetingsAndFiles**, **settingsBlockSessionResume**, **settingsBlockSigninSuggestions**, **settingsDefaultVolume**, **settingsScreenTimeoutInMinutes**, **settingsSessionTimeoutInMinutes** and **settingsSleepTimeoutInMinutes** properties to the [windows10TeamGeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10teamgeneralconfiguration) entity|
+|Change|Beta|Added the **deploymentSummary** navigation property to the [defaultManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_defaultmanagedappprotection) entity|
+|Change|Beta|Added the **settingName**, **userId**, **userName**, **userEmail** and **currentValue** properties to the [deviceCompliancePolicySettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstate) complex type|
+|Change|Beta|Added the **settingName**, **userId**, **userName**, **userEmail** and **currentValue** properties to the [deviceConfigurationSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationsettingstate) complex type|
+|Change|Beta|Added the **unknownCount** property to the [deviceOperatingSystemSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_deviceoperatingsystemsummary) complex type|
+
+
+
 ## June 2017
 
 ### Project Rome

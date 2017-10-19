@@ -1,88 +1,128 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Get Drive
+---
 # Get Drive
 
-Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource. 
-A Drive is the top-level container for a file system.
-Graph API allows access to the Drive resource for a user's OneDrive or OneDrive for Business, or SharePoint document libraries.
+Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.
 
-## Prerequisites
+A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
-One of the following **scopes** is required to execute this API:
+## Permissions
 
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-## Get a user's OneDrive
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
+|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the [User](../resources/user.md) resource.
+## Get current user's OneDrive
+
+The signed in user's drive (when using delegated authentication) can be accessed from the `me` singleton.
+
+If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.
 
 ### HTTP request
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive
-GET /users/{idOrUserPrincipalName}/drive
 ```
 
-## Get the document library associated with a group
+## Get a user's OneDrive
 
-To access a [Group's](../resources/group.md) default document library, your app requests the **drive** relationship on the Group.
+To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the User resource.
+
+If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.
 
 ### HTTP request
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
 
 ```http
-GET /groups/{idOrUserPrincipalName}/drive
+GET /users/{idOrUserPrincipalName}/drive
 ```
 
+### Path parameters
+
+| Parameter name | Value  | Description                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _idOrUserPrincipalName_     | string | Required. The identifier for the user object who owns the OneDrive. |
+
+## Get the document library associated with a group
+
+To access a Group's default document library, your app requests the **drive** relationship on the Group.
+
+### HTTP request
+
+<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
+
+```http
+GET /groups/{groupId}/drive
+```
+
+### Path parameters
+
+| Parameter name | Value  | Description                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _groupId_      | string | Required. The identifier for the group which owns the document library. |
+
+## Get the document library for a site
+
+To access a [Site's](../resources/site.md) default document library, your app requests the **drive** relationship on the Site.
+
+### HTTP request
+
+```http
+GET /sites/{siteId}/drive
+```
+
+### Path parameters
+
+| Parameter name | Value  | Description                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _siteId_       | string | Required. The identifier for the site that contains the document library. |
+
+## Get a drive by ID
+
+If you have the unique identifier for a drive, you can access it directly from the top-level drives collection.
+
+### HTTP request
+
+<!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
+
+```http
+GET /drives/{driveId}
+```
+
+### Path parameters
+
+| Parameter name | Value  | Description                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _driveId_      | string | Required. The identifier for the drive requested. |
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+These method support the [$select query parameter][odata-query-parameters] to shape the response.
 
-## Request body
+## HTTP response
 
-Do not supply a request body for this method.
+Each of these methods returns a [Drive resource][drive-resource] for the matching drive in the response body.
 
-## Response
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default"] } -->
 
-If successful, this method returns a `200 OK` response code and [Drive](../resources/drive.md) resource in the response body.
-
-## Example
-
-##### Request
-
-Here is an example of the request to get the sign-in user's OneDrive or OneDrive for Business.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_drive"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/drive
-```
-
-##### Response
-
-Here is an example of the response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.drive"
-} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
     "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-    "driveType": "business",    
+    "driveType": "business",
     "owner": {
         "user": {
             "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
@@ -98,12 +138,17 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### Error response codes
+
+If the drive does not exist and cannot be provisioned automatically (when using delegated authentication) an `HTTP 404` response will be returned.
+
+[drive-resource]: ../resources/drive.md
+[odata-query-parameters]: ../../../concepts/query_parameters.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Get Drive"
-}-->
+  "tocPath": "Drives/Get drive"
+} -->

@@ -1,83 +1,102 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: List Drives
+---
 # List available drives
 
-Retrieve the list of [Drive](../resources/drive.md) resources available for a target [User](../resources/user.md) or [Group](../resources/group.md).
-Your app can also request the set of document libraries on the SharePoint root site.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-## Prerequisites
+Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).
 
-One of the following **scopes** is required to execute this API:
+## Permissions
 
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-## HTTP request
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
+|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-<!-- { "blockType": "ignored" } -->
+## List a group's drives
+
+To list the document libraries for a group, your app requests the **drives** relationship on the Group.
+
+### HTTP request
+
+<!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all" } -->
+
 ```http
-GET /drives
+GET /groups/{groupId}/drives
+```
+
+## List a site's drives
+
+To list the document libraries for a site, your app requests the **drives** relationship on the Site.
+
+<!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all" } -->
+
+```http
+GET /sites/{siteId}/drives
+```
+
+## List a user's drives
+
+<!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read.all" } -->
+
+```http
+GET /users/{userId}/drives
+```
+
+## List the current user's drives
+
+<!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
+
+```http
 GET /me/drives
-GET /sites/{site-id}/drives
 ```
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
-
-## Request body
-
-Do not supply a request body for this method.
+This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.
 
-## Example
+<!-- { "blockType": "response", 
+       "@odata.type": "Collection(microsoft.graph.drive)",
+       "name": ["group-list-drives", "site-list-drives", "user-list-drives", "enum-drives"],
+       "truncated": true } -->
 
-##### Request
-
-Here is an example of the request for the user's drives.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_drives"
-}-->
-```http
-GET https://graph.microsoft.com/beta/me/drives
-```
-
-##### Response
-Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.drive",
-  "isCollection": true
-} -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 579
+Content-Type: application/json
 
 {
   "value": [
     {
-      "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-      "driveType": "business",    
+      "id": "942CAEB0-13AE-491B-85E4-7557CDC0F25F",
+      "driveType": "documentLibrary",
+      "name": "Shared Documents",
       "owner": {
-          "user": {
-              "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-              "displayName": "Ryan Gregg"
-          }
-      },
-      "quota": {
-          "deleted": 256938,
-          "remaining": 1099447353539,
-          "state": "normal",
-          "total": 1099511627776
+        "user": {
+          "id": "AE2A1EE9-81A7-423C-ABE4-B945F47509BB",
+          "displayName": "Ryan Gregg"
+        }
+      }
+    },
+    {
+      "id": "C1CD3ED9-0E98-4B0B-82D3-C8FB784B9DCC",
+      "driveType": "documentLibrary",
+      "name": "Contoso Project Files",
+      "owner": {
+        "user": {
+          "id": "406B2281-18E8-4416-9857-38C531B904F1",
+          "displayName": "Daron Spektor"
+        }
       }
     }
   ]
@@ -87,14 +106,18 @@ Content-length: 579
 ## Remarks
 
 Most users will only have a single Drive resource.
-Groups and some users may have multiple drive available.
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+Groups and Sites may have multiple Drive resources available.
+
+Drives with the [system][] facet are hidden by default.
+To list them, include `system` in your `$select` statement.
+
+[system]: ../resources/systemFacet.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "List drives",
-  "keywords": "",
+  "description": "List the available drives for a user, group, or site.",
+  "keywords": "drive,onedrive.drive,list drives",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/List Drives"
-}-->
+  "tocPath": "Drives/List drives"
+} -->

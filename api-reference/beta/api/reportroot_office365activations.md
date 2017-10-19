@@ -1,16 +1,20 @@
 # Get Office365Activations report
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the reports of Office 365 Activations. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60) to check the meaning of different views.
 
-## Prerequisites
+## Permissions
 
-The following **scopes** are required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- Reports.Read.All
-
-> Note: Permission scopes are listed in least privilege required order.
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Reports.Read.All |
 
 ## HTTP request
 
@@ -53,7 +57,7 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 Here is an example of how to call this API.
 
-### Request
+##### Request
 
 Here is an example of the request.
 <!-- {
@@ -65,13 +69,11 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/reports/Office365Activations(view='Detail')/content
 ```
 
-### Response
+##### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -79,7 +81,8 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the downloading CSV file will have the schema as belowing.
+Follow the 302 redirection and the downloading CSV file will have the schema as follows.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,15 +91,14 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: text/plain
+
 Data as of,User principal name,User display name,Product license,Last activity date (UTC),Windows OS,Mac OS,Windows 10 Mobile,iOS,Android
 ```
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_office365activations"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/Office365Activations(view='Activations')/content

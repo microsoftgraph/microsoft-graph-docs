@@ -2,12 +2,15 @@
 
 Adds a new name to the collection of the given scope using the user's locale for the formula.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-  * Files.ReadWrite
-  * Sites.Read.All
-  
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite, Sites.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Sites.Read.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -20,7 +23,6 @@ POST /workbook/worksheets({id|name})/names/add
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -31,6 +33,7 @@ In the request body, provide a JSON object with the following parameters.
 |comment|string|The comment associated with the named item|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [NamedItem](../resources/NamedItem.md) object in the response body.
 
 

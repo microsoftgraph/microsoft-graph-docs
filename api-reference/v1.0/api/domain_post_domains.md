@@ -4,31 +4,39 @@ Adds a domain to the tenant.
 
 **Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified. See [List verificationDnsRecords](domain_list_verificationdnsrecords.md) for details. Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
-### Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-### HTTP request
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Domain.ReadWrite.All |
+
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /domains
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required.|
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [domain](../resources/domain.md) object.
 
 > The request body contains the id property for the new domain. Id is the only property that can be specified and it is required. The id property value is the fully qualified domain name to create.
 
-### Response
+## Response
+
 If successful, this method returns `201, Created` response code and [domain](../resources/domain.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 
 In the request body, supply a JSON representation of [domain](../resources/domain.md) object.

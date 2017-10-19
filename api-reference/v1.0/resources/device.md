@@ -51,8 +51,6 @@ This resource lets you add your own data to custom properties using [extensions]
 |registeredOwners|[directoryObject](directoryobject.md) collection|Users that are registered owners of the device. Read-only. Nullable.|
 |registeredUsers|[directoryObject](directoryobject.md) collection|Users that are registered users of the device. Read-only. Nullable.|
 
-
-
 ## JSON representation
 
 Here is a JSON representation of the resource
