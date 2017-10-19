@@ -1,13 +1,13 @@
 ﻿# excludedApps resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties for Excluded Office365 Apps.
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |access|Boolean|The value for if MS Office Access should be excluded or not.|
 |excel|Boolean|The value for if MS Office Excel should be excluded or not.|
 |groove|Boolean|The value for if MS Office OneDrive for Business - Groove should be excluded or not.|
@@ -32,7 +32,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.excludedApps"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.excludedApps",
   "access": true,

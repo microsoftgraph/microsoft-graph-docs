@@ -1,6 +1,6 @@
 # Create Calendar
 
-Use this API to create a new calendar.
+Use this API to create a new calendar for a [user](../resources/user.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 

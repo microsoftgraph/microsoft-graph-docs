@@ -5,51 +5,54 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object.
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceManagement/deviceConfigurations
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a windows10GeneralConfiguration object.
-The following table shows the properties that are required when you create a windows10GeneralConfiguration.
+In the request body, supply a JSON representation for the windows10GeneralConfiguration object.
+
+The following table shows the properties that are required when you create the windows10GeneralConfiguration.
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|assignmentStatus|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|assignmentProgress|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|assignmentErrorMessage|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|displayAppListWithGdiDPIScalingTurnedOn|String collection|List of legacy applications that have GDI DPI Scaling turned on.|
+|displayAppListWithGdiDPIScalingTurnedOff|String collection|List of legacy applications that have GDI DPI Scaling turned off.|
 |enterpriseCloudPrintDiscoveryEndPoint|String|Endpoint for discovering cloud printers.|
 |enterpriseCloudPrintOAuthAuthority|String|Authentication endpoint for acquiring OAuth tokens.|
 |enterpriseCloudPrintOAuthClientIdentifier|String|GUID of a client application authorized to retrieve OAuth tokens from the OAuth Authority.|
 |enterpriseCloudPrintResourceIdentifier|String|OAuth resource URI for print service as configured in the Azure portal.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|OAuth resource URI for printer discovery service as configured in Azure portal.|
+|messagingBlockSync|Boolean|Indicates whether or not to block text message back up and restore and Messaging Everywhere.|
+|messagingBlockMMS|Boolean|Indicates whether or not to block the the MMS send/receive functionality on the device.|
+|messagingBlockRichCommunicationServices|Boolean|Indicates whether or not to block the the RCS send/receive functionality on the device.|
 |searchBlockDiacritics|Boolean|Specifies if search can use diacritics.|
 |searchDisableAutoLanguageDetection|Boolean|Specifies whether to use automatic language detection when indexing content and properties.|
 |searchDisableIndexingEncryptedItems|Boolean|Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for Cortana or Explorer.|
@@ -65,20 +68,19 @@ The following table shows the properties that are required when you create a win
 |bluetoothBlockAdvertising|Boolean|Whether or not to Block the user from using bluetooth advertising.|
 |bluetoothBlockDiscoverableMode|Boolean|Whether or not to Block the user from using bluetooth discoverable mode.|
 |bluetoothBlockPrePairing|Boolean|Whether or not to block specific bundled Bluetooth peripherals to automatically pair with the host device.|
-|bluetoothDeviceName|String|Specify the device’s Bluetooth name. If not configured, the default local radio name is used.|
 |edgeBlockAutofill|Boolean|Indicates whether or not to block auto fill.|
-|edgeBlocked|Boolean|Indicates whether or not to Block the user from using the Microsoft Edge browser.|
-|edgeCookiePolicy|String|Indicates which cookies to block in the Microsoft Edge browser. Possible values are: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
-|edgeBlockDeveloperTools|Boolean|Indicates whether or not to block developer tools in the Microsoft Edge browser.|
+|edgeBlocked|Boolean|Indicates whether or not to Block the user from using the Edge browser.|
+|edgeCookiePolicy|String|Indicates which cookies to block in the Edge browser. Possible values are: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
+|edgeBlockDeveloperTools|Boolean|Indicates whether or not to block developer tools in the Edge browser.|
 |edgeBlockSendingDoNotTrackHeader|Boolean|Indicates whether or not to Block the user from sending the do not track header.|
-|edgeBlockExtensions|Boolean|Indicates whether or not to block extensions in the Microsoft Edge browser.|
-|edgeBlockInPrivateBrowsing|Boolean|Indicates whether or not to block InPrivate browsing on corporate networks, in the Microsoft Edge browser.|
+|edgeBlockExtensions|Boolean|Indicates whether or not to block extensions in the Edge browser.|
+|edgeBlockInPrivateBrowsing|Boolean|Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.|
 |edgeBlockJavaScript|Boolean|Indicates whether or not to Block the user from using JavaScript.|
 |edgeBlockPasswordManager|Boolean|Indicates whether or not to Block password manager.|
 |edgeBlockAddressBarDropdown|Boolean|Block the address bar dropdown functionality in Microsoft Edge. Disable this settings to minimize network connections from Microsoft Edge to Microsoft services.|
-|edgeBlockCompatibilityList|Boolean|Block Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Microsoft Edge properly display sites with known compatibility issues.|
+|edgeBlockCompatibilityList|Boolean|Block Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Edge properly display sites with known compatibility issues.|
 |edgeClearBrowsingDataOnExit|Boolean|Clear browsing data on exiting Microsoft Edge.|
-|edgeAllowStartPagesModification|Boolean|Allow users to change Start pages on Microsoft Edge. Use the EdgeHomepageUrls to specify the Start pages that the user would see by default when they open Microsoft Edge.|
+|edgeAllowStartPagesModification|Boolean|Allow users to change Start pages on Edge. Use the EdgeHomepageUrls to specify the Start pages that the user would see by default when they open Edge.|
 |edgeDisableFirstRunPage|Boolean|Block the Microsoft web page that opens on the first use of Microsoft Edge. This policy allows enterprises, like those enrolled in zero emissions configurations, to block this page.|
 |edgeBlockLiveTileDataCollection|Boolean|Block the collection of information by Microsoft for live tile creation when users pin a site to Start from Microsoft Edge.|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.|
@@ -145,7 +147,7 @@ The following table shows the properties that are required when you create a win
 |startMenuHideSleep|Boolean|Enabling this policy hides sleep from appearing in the power button in the start menu.|
 |startMenuHideSwitchAccount|Boolean|Enabling this policy hides switch account from appearing in the user tile in the start menu.|
 |startMenuHideUserTile|Boolean|Enabling this policy hides the user tile from appearing in the start menu.|
-|startMenuLayoutEdgeAssetsXml|Binary|This policy setting allows you to import Microsoft Edge assets to be used with startMenuLayoutXml policy. Start layout can contain secondary tile from Microsoft Edge app which looks for Microsoft Edge local asset file. Microsoft Edge local asset would not exist and cause Microsoft Edge secondary tile to appear empty in this case. This policy only gets applied when startMenuLayoutXml policy is modified. The value should be a UTF-8 Base64 encoded byte array.|
+|startMenuLayoutEdgeAssetsXml|Binary|This policy setting allows you to import Edge assets to be used with startMenuLayoutXml policy. Start layout can contain secondary tile from Edge app which looks for Edge local asset file. Edge local asset would not exist and cause Edge secondary tile to appear empty in this case. This policy only gets applied when startMenuLayoutXml policy is modified. The value should be a UTF-8 Base64 encoded byte array.|
 |startMenuLayoutXml|Binary|Allows admins to override the default Start menu layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in a UTF8 encoded byte array format.|
 |startMenuMode|String|Allows admins to decide how the Start menu is displayed. Possible values are: `userDefined`, `fullScreen`, `nonFullScreen`.|
 |startMenuPinnedFolderDocuments|String|Enforces the visibility (Show/Hide) of the Documents folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
@@ -197,13 +199,13 @@ The following table shows the properties that are required when you create a win
 |safeSearchFilter|String|Specifies what filter level of safe search is required. Possible values are: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Boolean|Indicates whether or not to block popups.|
 |edgeBlockSearchSuggestions|Boolean|Indicates whether or not to Block the user from using the search suggestions in the address bar.|
-|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to Block the user from sending Intranet traffic to Internet Explorer from Microsoft Edge.|
+|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to Block the user from sending Intranet traffic to Internet Explorer from Edge.|
 |edgeRequireSmartScreen|Boolean|Indicates whether or not to Require the user to use the smart screen filter.|
 |edgeEnterpriseModeSiteListLocation|String|Indicates the enterprise mode site list location. Could be a local file, local network or http location.|
-|edgeFirstRunUrl|String|The first run URL for when the Microsoft Edge browser is opened for the first time.|
+|edgeFirstRunUrl|String|The first run URL for when Edge browser is opened for the first time.|
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchenginebase.md)|Allows IT admins to set a default search engine for MDM-Controlled devices. Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set.|
-|edgeHomepageUrls|String collection|The list of URLs for homepages shodwn on MDM-enrolled devices on the Microsoft Edge browser.|
-|edgeBlockAccessToAboutFlags|Boolean|Indicates whether or not to prevent access to about flags on the Microsoft Edge browser.|
+|edgeHomepageUrls|String collection|The list of URLs for homepages shodwn on MDM-enrolled devices on Edge browser.|
+|edgeBlockAccessToAboutFlags|Boolean|Indicates whether or not to prevent access to about flags on Edge browser.|
 |smartScreenBlockPromptOverride|Boolean|Indicates whether or not users can override SmartScreen Filter warnings about potentially malicious websites.|
 |smartScreenBlockPromptOverrideForFiles|Boolean|Indicates whether or not users can override the SmartScreen Filter warnings about downloading unverified files|
 |webRtcBlockLocalhostIpAddress|Boolean|Indicates whether or not user's localhost IP address is displayed while making phone calls using the WebRTC|
@@ -247,32 +249,40 @@ The following table shows the properties that are required when you create a win
 |experienceBlockTaskSwitcher|Boolean|Indicates whether or not to enable task switching on the device.|
 |logonBlockFastUserSwitching|Boolean|Disables the ability to quickly switch between users that are logged on simultaneously without logging off.|
 
+
+
 ## Response
 If successful, this method returns a `201 Created` response code and a [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 10073
+Content-length: 10192
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "assignmentStatus": "Assignment Status value",
-  "assignmentProgress": "Assignment Progress value",
-  "assignmentErrorMessage": "Assignment Error Message value",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "displayAppListWithGdiDPIScalingTurnedOn": [
+    "Display App List With Gdi DPIScaling Turned On value"
+  ],
+  "displayAppListWithGdiDPIScalingTurnedOff": [
+    "Display App List With Gdi DPIScaling Turned Off value"
+  ],
   "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
   "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
   "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
   "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
   "enterpriseCloudPrintDiscoveryMaxLimit": 5,
   "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+  "messagingBlockSync": true,
+  "messagingBlockMMS": true,
+  "messagingBlockRichCommunicationServices": true,
   "searchBlockDiacritics": true,
   "searchDisableAutoLanguageDetection": true,
   "searchDisableIndexingEncryptedItems": true,
@@ -290,7 +300,6 @@ Content-length: 10073
   "bluetoothBlockAdvertising": true,
   "bluetoothBlockDiscoverableMode": true,
   "bluetoothBlockPrePairing": true,
-  "bluetoothDeviceName": "Bluetooth Device Name value",
   "edgeBlockAutofill": true,
   "edgeBlocked": true,
   "edgeCookiePolicy": "allow",
@@ -499,28 +508,34 @@ Content-length: 10073
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 10181
+Content-Length: 10300
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
   "id": "a4235d71-5d71-a423-715d-23a4715d23a4",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "assignmentStatus": "Assignment Status value",
-  "assignmentProgress": "Assignment Progress value",
-  "assignmentErrorMessage": "Assignment Error Message value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "displayAppListWithGdiDPIScalingTurnedOn": [
+    "Display App List With Gdi DPIScaling Turned On value"
+  ],
+  "displayAppListWithGdiDPIScalingTurnedOff": [
+    "Display App List With Gdi DPIScaling Turned Off value"
+  ],
   "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
   "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
   "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
   "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
   "enterpriseCloudPrintDiscoveryMaxLimit": 5,
   "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+  "messagingBlockSync": true,
+  "messagingBlockMMS": true,
+  "messagingBlockRichCommunicationServices": true,
   "searchBlockDiacritics": true,
   "searchDisableAutoLanguageDetection": true,
   "searchDisableIndexingEncryptedItems": true,
@@ -538,7 +553,6 @@ Content-Length: 10181
   "bluetoothBlockAdvertising": true,
   "bluetoothBlockDiscoverableMode": true,
   "bluetoothBlockPrePairing": true,
-  "bluetoothDeviceName": "Bluetooth Device Name value",
   "edgeBlockAutofill": true,
   "edgeBlocked": true,
   "edgeCookiePolicy": "allow",

@@ -53,7 +53,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscribedSkus",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscribedSkus",
     "value": [
         {
             "capabilityStatus": "Enabled",

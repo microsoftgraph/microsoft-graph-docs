@@ -76,7 +76,7 @@ Content-length: 109
     "comment": "Comment for the named item",
     "name": "test7",
     "scope": "Workbook",
-    "type": "Double",
+    "type": "String",
     "value": "0",
     "visible": true
 }

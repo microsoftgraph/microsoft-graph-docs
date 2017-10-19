@@ -1,6 +1,6 @@
 ﻿# windows10VpnProxyServer resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -10,7 +10,7 @@ Inherits from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.m
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |automaticConfigurationScriptUrl|String|Proxy's automatic configuration script url. Inherited from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|
 |address|String|Address. Inherited from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|
 |port|Int32|Port. Valid values 0 to 65535 Inherited from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|
@@ -26,7 +26,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.windows10VpnProxyServer"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.windows10VpnProxyServer",
   "automaticConfigurationScriptUrl": "String",

@@ -1,19 +1,19 @@
 ﻿# deviceConfigurationUserStateSummary resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-**TODO: Documentation is missing please add the `\[ODataDescription()\]` and/or `\[ODataLongDescription()\]` attributes.**
+Not yet documented
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[Get deviceConfigurationUserStateSummary](../api/intune_deviceconfig_deviceconfigurationuserstatesummary_get.md)|[deviceConfigurationUserStateSummary](../resources/intune_deviceconfig_deviceconfigurationuserstatesummary.md)|Read properties and relationships of the [deviceConfigurationUserStateSummary](../resources/intune_deviceconfig_deviceconfigurationuserstatesummary.md) object.|
 |[Update deviceConfigurationUserStateSummary](../api/intune_deviceconfig_deviceconfigurationuserstatesummary_update.md)|[deviceConfigurationUserStateSummary](../resources/intune_deviceconfig_deviceconfigurationuserstatesummary.md)|Update the properties of a [deviceConfigurationUserStateSummary](../resources/intune_deviceconfig_deviceconfigurationuserstatesummary.md) object.|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity.|
 |unknownDeviceCount|Int32|Number of unknown devices|
 |notApplicableDeviceCount|Int32|Number of not applicable devices|
@@ -33,7 +33,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.deviceConfigurationUserStateSummary"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationUserStateSummary",
   "id": "String (identifier)",

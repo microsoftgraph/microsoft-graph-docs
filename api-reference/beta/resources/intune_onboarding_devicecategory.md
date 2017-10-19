@@ -1,13 +1,13 @@
 ﻿# deviceCategory resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List deviceCategories](../api/intune_onboarding_devicecategory_list.md)|[deviceCategory](../resources/intune_onboarding_devicecategory.md) collection|List properties and relationships of the [deviceCategory](../resources/intune_onboarding_devicecategory.md) objects.|
 |[Get deviceCategory](../api/intune_onboarding_devicecategory_get.md)|[deviceCategory](../resources/intune_onboarding_devicecategory.md)|Read properties and relationships of the [deviceCategory](../resources/intune_onboarding_devicecategory.md) object.|
 |[Create deviceCategory](../api/intune_onboarding_devicecategory_create.md)|[deviceCategory](../resources/intune_onboarding_devicecategory.md)|Create a new [deviceCategory](../resources/intune_onboarding_devicecategory.md) object.|
@@ -16,7 +16,7 @@ Device categories provides a way to organize your devices. Using device categori
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Unique identifier for the device category. Read-only.|
 |displayName|String|Display name for the device category.|
 |description|String|Optional description for the device category.|
@@ -31,7 +31,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.deviceCategory"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.deviceCategory",
   "id": "String (identifier)",

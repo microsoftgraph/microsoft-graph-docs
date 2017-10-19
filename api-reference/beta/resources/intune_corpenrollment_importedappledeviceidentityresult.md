@@ -1,6 +1,6 @@
 ﻿# importedAppleDeviceIdentityResult resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -10,7 +10,7 @@ Inherits from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_i
 
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List importedAppleDeviceIdentityResults](../api/intune_corpenrollment_importedappledeviceidentityresult_list.md)|[importedAppleDeviceIdentityResult](../resources/intune_corpenrollment_importedappledeviceidentityresult.md) collection|List properties and relationships of the [importedAppleDeviceIdentityResult](../resources/intune_corpenrollment_importedappledeviceidentityresult.md) objects.|
 |[Get importedAppleDeviceIdentityResult](../api/intune_corpenrollment_importedappledeviceidentityresult_get.md)|[importedAppleDeviceIdentityResult](../resources/intune_corpenrollment_importedappledeviceidentityresult.md)|Read properties and relationships of the [importedAppleDeviceIdentityResult](../resources/intune_corpenrollment_importedappledeviceidentityresult.md) object.|
 |[Create importedAppleDeviceIdentityResult](../api/intune_corpenrollment_importedappledeviceidentityresult_create.md)|[importedAppleDeviceIdentityResult](../resources/intune_corpenrollment_importedappledeviceidentityresult.md)|Create a new [importedAppleDeviceIdentityResult](../resources/intune_corpenrollment_importedappledeviceidentityresult.md) object.|
@@ -19,7 +19,7 @@ Inherits from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_i
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md)|
 |serialNumber|String|Device serial number Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md)|
 |requestedEnrollmentProfileId|String|Enrollment profile Id admin intends to apply to the device during next enrollment Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md)|
@@ -43,7 +43,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.importedAppleDeviceIdentityResult"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.importedAppleDeviceIdentityResult",
   "id": "String (identifier)",

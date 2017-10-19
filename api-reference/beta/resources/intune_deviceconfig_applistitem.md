@@ -1,17 +1,17 @@
 ﻿# appListItem resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-**TODO: Documentation is missing please add the `\[ODataDescription()\]` and/or `\[ODataLongDescription()\]` attributes.**
+Represents an app in the list of managed applications
 ## Properties
 |Property|Type|Description|
-|---|---|---|
-|name|String|Not yet documented|
-|publisher|String|Not yet documented|
-|appStoreUrl|String|Not yet documented|
-|appId|String|Not yet documented|
+|:---|:---|:---|
+|name|String|The application name|
+|publisher|String|The publisher of the application|
+|appStoreUrl|String|The Store URL of the application|
+|appId|String|The application or bundle identifier of the application|
 
 ## Relationships
 None
@@ -23,7 +23,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.appListItem"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.appListItem",
   "name": "String",

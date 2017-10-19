@@ -5,21 +5,21 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [windowsManagedDevice](../resources/intune_devices_windowsmanageddevice.md) object.
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /managedDevices/{managedDevicesId}
 PATCH /users/{usersId}/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/managedDevices/{managedDeviceId}
@@ -29,16 +29,17 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [windowsManagedDevice](../resources/intune_devices_windowsmanageddevice.md) object.
-The following table shows the properties that are required when you create a [windowsManagedDevice](../resources/intune_devices_windowsmanageddevice.md).
+In the request body, supply a JSON representation for the [windowsManagedDevice](../resources/intune_devices_windowsmanageddevice.md) object.
+
+The following table shows the properties that are required when you create the [windowsManagedDevice](../resources/intune_devices_windowsmanageddevice.md).
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Unique Identifier for the device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |userId|String|Unique Identifier for the user associated with the device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |deviceName|String|Name of the device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
@@ -51,15 +52,16 @@ The following table shows the properties that are required when you create a [wi
 |chassisType|String|Chassis type of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |deviceType|String|Platform of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `windowsBlue`, `windowsPhoneBlue`, `blackberry`, `palm`, `fakeDevice`, `unknown`.|
-|complianceState|String|Compliance state of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`.|
+|complianceState|String|Compliance state of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
-|managementAgent|String|Management channel of the device. Intune, EAS, etc. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configManagerClient`, `configurationManagerClientMdmEas`, `unknown`.|
+|managementAgent|String|Management channel of the device. Intune, EAS, etc. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`.|
 |osVersion|String|Operating system version of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |easDeviceId|String|Exchange ActiveSync Id of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |aadRegistered|Boolean|Whether the device is Azure Active Directory registered. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
-|enrollmentType|String|Enrollment type of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `userEnrollment`, `deviceEnrollment`, `deviceEnrollmentWithUDA`, `azureDomainJoined`, `userEnrollmentWithServiceAccount`, `depDeviceEnrollment`, `depDeviceEnrollmentWithUDA`, `autoEnrollment`.|
+|enrollmentType|String|Enrollment type of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `userEnrollment`, `deviceEnrollment`, `deviceEnrollmentWithUDA`, `azureDomainJoined`, `userEnrollmentWithServiceAccount`, `depDeviceEnrollment`, `depDeviceEnrollmentWithUDA`, `autoEnrollment`, `bulkAzureDomainJoined`, `onPremiseCoManaged`.|
+|deviceEnrollmentType|String|Enrollment type of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |lostModeState|String|Indicates if Lost mode is enabled or disabled Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `disabled`, `enabled`.|
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |emailAddress|String|Email(s) for the user associated with the device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
@@ -82,6 +84,10 @@ The following table shows the properties that are required when you create a [wi
 |androidSecurityPatchLevel|String|Android security patch level Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |userDisplayName|String|User display name Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune_devices_configurationmanagerclientenabledfeatures.md)|ConfigrMgr client enabled features Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|wiFiMacAddress|String|Wi-Fi MAC Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune_devices_devicehealthattestationstate.md)|The device health attestation state. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+
+
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [windowsManagedDevice](../resources/intune_devices_windowsmanageddevice.md) object in the response body.
@@ -89,10 +95,10 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
 Content-type: application/json
-Content-length: 3295
+Content-length: 5281
 
 {
   "userId": "User Id value",
@@ -149,6 +155,7 @@ Content-length: 3295
   "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
   "aadRegistered": true,
   "enrollmentType": "userEnrollment",
+  "deviceEnrollmentType": "userEnrollment",
   "lostModeState": "enabled",
   "activationLockBypassCode": "Activation Lock Bypass Code value",
   "emailAddress": "Email Address value",
@@ -178,16 +185,51 @@ Content-length: 3295
     "deviceConfiguration": true,
     "compliancePolicy": true,
     "windowsUpdateForBusiness": true
+  },
+  "wiFiMacAddress": "Wi Fi Mac Address value",
+  "deviceHealthAttestationState": {
+    "@odata.type": "microsoft.graph.deviceHealthAttestationState",
+    "lastUpdateDateTime": "Last Update Date Time value",
+    "contentNamespaceUrl": "https://example.com/contentNamespaceUrl/",
+    "deviceHealthAttestationStatus": "Device Health Attestation Status value",
+    "contentVersion": "Content Version value",
+    "issuedDateTime": "2016-12-31T23:58:22.1231038-08:00",
+    "attestationIdentityKey": "Attestation Identity Key value",
+    "resetCount": 10,
+    "restartCount": 12,
+    "dataExcutionPolicy": "Data Excution Policy value",
+    "bitLockerStatus": "Bit Locker Status value",
+    "bootManagerVersion": "Boot Manager Version value",
+    "codeIntegrityCheckVersion": "Code Integrity Check Version value",
+    "secureBoot": "Secure Boot value",
+    "bootDebugging": "Boot Debugging value",
+    "operatingSystemKernelDebugging": "Operating System Kernel Debugging value",
+    "codeIntegrity": "Code Integrity value",
+    "testSigning": "Test Signing value",
+    "safeMode": "Safe Mode value",
+    "windowsPE": "Windows PE value",
+    "earlyLaunchAntiMalwareDriverProtection": "Early Launch Anti Malware Driver Protection value",
+    "virtualSecureMode": "Virtual Secure Mode value",
+    "pcrHashAlgorithm": "Pcr Hash Algorithm value",
+    "bootAppSecurityVersion": "Boot App Security Version value",
+    "bootManagerSecurityVersion": "Boot Manager Security Version value",
+    "tpmVersion": "Tpm Version value",
+    "pcr0": "Pcr0 value",
+    "secureBootConfigurationPolicyFingerPrint": "Secure Boot Configuration Policy Finger Print value",
+    "codeIntegrityPolicy": "Code Integrity Policy value",
+    "bootRevisionListInfo": "Boot Revision List Info value",
+    "operatingSystemRevListInfo": "Operating System Rev List Info value",
+    "healthStatusMismatchInfo": "Health Status Mismatch Info value"
   }
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3403
+Content-Length: 5389
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -246,6 +288,7 @@ Content-Length: 3403
   "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
   "aadRegistered": true,
   "enrollmentType": "userEnrollment",
+  "deviceEnrollmentType": "userEnrollment",
   "lostModeState": "enabled",
   "activationLockBypassCode": "Activation Lock Bypass Code value",
   "emailAddress": "Email Address value",
@@ -275,6 +318,41 @@ Content-Length: 3403
     "deviceConfiguration": true,
     "compliancePolicy": true,
     "windowsUpdateForBusiness": true
+  },
+  "wiFiMacAddress": "Wi Fi Mac Address value",
+  "deviceHealthAttestationState": {
+    "@odata.type": "microsoft.graph.deviceHealthAttestationState",
+    "lastUpdateDateTime": "Last Update Date Time value",
+    "contentNamespaceUrl": "https://example.com/contentNamespaceUrl/",
+    "deviceHealthAttestationStatus": "Device Health Attestation Status value",
+    "contentVersion": "Content Version value",
+    "issuedDateTime": "2016-12-31T23:58:22.1231038-08:00",
+    "attestationIdentityKey": "Attestation Identity Key value",
+    "resetCount": 10,
+    "restartCount": 12,
+    "dataExcutionPolicy": "Data Excution Policy value",
+    "bitLockerStatus": "Bit Locker Status value",
+    "bootManagerVersion": "Boot Manager Version value",
+    "codeIntegrityCheckVersion": "Code Integrity Check Version value",
+    "secureBoot": "Secure Boot value",
+    "bootDebugging": "Boot Debugging value",
+    "operatingSystemKernelDebugging": "Operating System Kernel Debugging value",
+    "codeIntegrity": "Code Integrity value",
+    "testSigning": "Test Signing value",
+    "safeMode": "Safe Mode value",
+    "windowsPE": "Windows PE value",
+    "earlyLaunchAntiMalwareDriverProtection": "Early Launch Anti Malware Driver Protection value",
+    "virtualSecureMode": "Virtual Secure Mode value",
+    "pcrHashAlgorithm": "Pcr Hash Algorithm value",
+    "bootAppSecurityVersion": "Boot App Security Version value",
+    "bootManagerSecurityVersion": "Boot Manager Security Version value",
+    "tpmVersion": "Tpm Version value",
+    "pcr0": "Pcr0 value",
+    "secureBootConfigurationPolicyFingerPrint": "Secure Boot Configuration Policy Finger Print value",
+    "codeIntegrityPolicy": "Code Integrity Policy value",
+    "bootRevisionListInfo": "Boot Revision List Info value",
+    "operatingSystemRevListInfo": "Operating System Rev List Info value",
+    "healthStatusMismatchInfo": "Health Status Mismatch Info value"
   }
 }
 ```

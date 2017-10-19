@@ -6,15 +6,16 @@ Microsoft Graph provides optional query parameters that you can use to specify a
 
 |Name|Description|Example|
 |:---------------|:--------|:-------|
-|[$count](#count)|Retrieves the total count of matching resources.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
-|[$expand](#expand)|Retrieves related resources.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)
-|[$filter](#filter)|Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
-|[$orderby](#orderby)|Orders results.|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)
-|[$search](#search)| Returns results based on search criteria. Currently supported on `messages` and `person` collections.|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)
-|[$select](#select)|Filters properties (columns).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
-|[$skip](#skip)|Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results.  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)
-|[$skipToken](#skiptoken)|Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`
-|[$top](#top)|Sets the page size of results. |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
+|[$count](#count)|Retrieves the total count of matching resources.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)|
+|[$expand](#expand)|Retrieves related resources.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)|
+|[$filter](#filter)|Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)|
+|[$format](#format)|Returns the results in the specified media format.|[`/users?$format=json`](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)|
+|[$orderby](#orderby)|Orders results.|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)|
+|[$search](#search)| Returns results based on search criteria. Currently supported on `messages` and `person` collections.|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)|
+|[$select](#select)|Filters properties (columns).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)|
+|[$skip](#skip)|Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results.  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)|
+|[$skipToken](#skiptoken)|Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`|
+|[$top](#top)|Sets the page size of results. |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)|
 
 These parameters are compatible with the [OData V4 query language][odata-query]. Not all parameters are supported across all Microsoft Graph APIs, and support might differ significantly between the `v1.0` and `beta` endpoints. 
 
@@ -116,6 +117,20 @@ The following table shows some examples that use the `$filter` query parameter.
 | List all Office 365 groups in an organization. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 
 > **Note:** The following `$filter` operators are not supported for Azure AD resources:  `ne`, `gt`, `ge`, `lt`, `le`, and `not`. The `contains` string operator is currently not supported on any Microsoft Graph resources.
+
+## format
+
+Use the `$format` query parameter to specify the media format of the items returned from Microsoft Graph.
+
+For example, the following request returns the users in the organization in the json format:
+
+```http
+GET https://graph.microsoft.com/v1.0/users?$format=json
+```
+
+[Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)
+
+> **Note:** The `$format` query parameter supports a number of formats (for example, atom, xml, and json) but results may not be returned in all formats.
 
 ## orderby
 

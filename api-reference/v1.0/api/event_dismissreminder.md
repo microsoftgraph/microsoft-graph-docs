@@ -12,7 +12,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Calendars.ReadWrite |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/events/{id}/dismissReminder
@@ -31,36 +33,46 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/di
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 ```
+
+<br/>
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
-## Request body
+<br/>
 
 ## Response
 
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example
+
 Here is an example of how to call this API.
-##### Request
+
+### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "event_dismissreminder"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 ```
 
-##### Response
-##### Response
+<br/>
+
+### Response
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 ```

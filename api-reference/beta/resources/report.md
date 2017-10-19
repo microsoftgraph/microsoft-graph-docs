@@ -40,13 +40,7 @@ None
 
 Here is a CSV representation of the "Users" view of report Office365 Active Users.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.Report"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```csv
 Data as of,Office 365,Exchange,OneDrive,SharePoint,Skype For Business,Yammer

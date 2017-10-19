@@ -25,7 +25,6 @@ The _constraint_ element of the name determines the potential extent of access y
 * If **no constraint** is specified the app is limited to performing the operations on the resources owned by the signed-in user. For example, _User.Read_ grants privileges to read the profile of the signed-in user only, and _Mail.Read_ grants permission to read only mail in the mailbox of the signed-in user.
 
 > **Note**: In delegated scenarios, the effective permissions granted to your app may be constrained by the privileges of the signed-in user in the organization.
-> 
 
 ### Microsoft accounts and work or school accounts
 
@@ -33,27 +32,34 @@ Not all permissions are valid for both Microsoft accounts and work or school acc
 
 ### User and group search limitations for guest users in organizations
 
-User and group search capabilities allow the app to search for any user or group in an organization's directory by performing queries against the `/users` or `/groups` resource set (for example, `https://graph.microsoft.com/v1.0/users`). Both administrators and users have this capability; however, guest users do not. If the signed-in user is a guest user, depending on the permissions an app has been granted, it can read the profile of a specific user or group (for example, `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`); however, it cannot perform queries against the `/users` or `/groups` resource set that potentially return more than a single resource. With the appropriate permissions, the app can read the profiles of users or groups that it obtains by following links in navigation properties; for example, `/users/{id}/directReports` or `/groups/{id}/members`.
+User and group search capabilities allow the app to search for any user or group in an organization's directory by performing queries against the `/users` or `/groups` resource set (for example, `https://graph.microsoft.com/v1.0/users`). Both administrators and users have this capability; however, guest users do not. 
 
----
+If the signed-in user is a guest user, depending on the permissions an app has been granted, it can read the profile of a specific user or group (for example, `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`); however, it cannot perform queries against the `/users` or `/groups` resource set that potentially return more than a single resource. 
+
+With the appropriate permissions, the app can read the profiles of users or groups that it obtains by following links in navigation properties; for example, `/users/{id}/directReports` or `/groups/{id}/members`.
+
 
 ## Calendars permissions
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required |
+|Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Calendars.Read_ |    Read user calendars  | Allows the app to read events in user calendars.| No |
-| _Calendars.Read.Shared_ |    Read user and shared calendars | Allows the app to read events in all calendars that the user can access, including delegate and shared calendars. | No |
-| _Calendars.ReadWrite_ |    Have full access to user calendars  | Allows the app to create, read, update, and delete events in user calendars. | No |
-| _Calendars.ReadWrite.Shared_ |    Read and write user and shared calendars | Allows the app to create, read, update and delete events in all calendars the user has permissions to access. This includes delegate and shared calendars.| No |
+| _Calendars.Read_ |Read user calendars |Allows the app to read events in user calendars. |No |
+| _Calendars.Read.Shared_ |Read user and shared calendars |Allows the app to read events in all calendars that the user can access, including delegate and shared calendars. |No |
+| _Calendars.ReadWrite_ |Have full access to user calendars |Allows the app to create, read, update, and delete events in user calendars. |No |
+| _Calendars.ReadWrite.Shared_ |Read and write user and shared calendars |Allows the app to create, read, update and delete events in all calendars the user has permissions to access. This includes delegate and shared calendars.|No |
+
+<br/>
 
 #### Application permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required |
+|Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Calendars.Read_ |    Read calendars in all mailboxes  | Allows the app to read events of all calendars without a signed-in user.| Yes |
-| _Calendars.ReadWrite_ |    Read and write calendars in all mailboxes | Allows the app to create, read, update, and delete events of all calendars without a signed-in user.| Yes |
+|_Calendars.Read_ |Read calendars in all mailboxes |Allows the app to read events of all calendars without a signed-in user. |Yes |
+|_Calendars.ReadWrite_ |Read and write calendars in all mailboxes |Allows the app to create, read, update, and delete events of all calendars without a signed-in user. |Yes |
+
+<br/>
 
 ### Remarks
 
@@ -63,39 +69,38 @@ _Calendars.Read.Shared_ and _Calendars.ReadWrite.Shared_ are only valid for work
 
 #### Delegated
 
-* _Calendars.Read_ : Get events on the user's calendar between April 23, 2017 and April 29, 2017 (`GET /me/calendarView?startDateTime=2017-04-23T00:00:00&endDateTime=2017-04-29T00:00:00`).
+* _Calendars.Read_: Get events on the user's calendar between April 23, 2017 and April 29, 2017 (`GET /me/calendarView?startDateTime=2017-04-23T00:00:00&endDateTime=2017-04-29T00:00:00`).
 * _Calendars.Read.Shared_: Find meeting times where all attendees are available (`POST /users/{id|userPrincipalName}/findMeetingTimes`).
-* _Calendars.ReadWrite_ : Add an event to the user's calendar (`POST /me/events`).
+* _Calendars.ReadWrite_: Add an event to the user's calendar (`POST /me/events`).
 
 #### Application
 
-* _Calendars.Read_ : Find events in a conference room's calendar organized by bob@contoso.com (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`).
+* _Calendars.Read_: Find events in a conference room's calendar organized by bob@contoso.com (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`).
 * _Calendars.Read_: List all events on a user's calendar for the month of May (`GET /users/{id | userPrincipalName}/calendarView?startDateTime=2017-05-01T00:00:00&endDateTime=2017-06-01T00:00:00`)
-* _Calendars.ReadWrite_ : Add an event to a user's calendar for approved time off  (`POST /users/{id | userPrincipalName}/events`).
+* _Calendars.ReadWrite_: Add an event to a user's calendar for approved time off  (`POST /users/{id | userPrincipalName}/events`).
 * _Calendars.Send_: Send a message (`POST /users/{id | userPrincipalName}/sendCalendars`).
 
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
----
 
 ## Contacts permissions
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required |
+|Permission    |isplay String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Contacts.Read_ |    Read user contacts  | Allows the app to read user contacts. | No |
-| _Contacts.Read.Shared_ |    Read user and shared contacts | Allows the app to read contacts that the user has permissions to access, including the user's own and shared contacts. | No |
-| _Contacts.ReadWrite_ |    Have full access to user contacts  | Allows the app to create, read, update, and delete user contacts. | No |
-| _Contacts.ReadWrite.Shared_ |    Read and write user and shared contacts | Allows the app to create, read, update and delete contacts that the user has permissions to, including the user's own and shared contacts.| No |
+|_Contacts.Read_ |Read user contacts  |Allows the app to read user contacts. |No |
+|_Contacts.Read.Shared_ |Read user and shared contacts |Allows the app to read contacts that the user has permissions to access, including the user's own and shared contacts. |No |
+|_Contacts.ReadWrite_ |Have full access to user contacts |Allows the app to create, read, update, and delete user contacts. |No |
+|_Contacts.ReadWrite.Shared_ |Read and write user and shared contacts |Allows the app to create, read, update and delete contacts that the user has permissions to, including the user's own and shared contacts. |No |
 
 #### Application permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required |
+|Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Contacts.Read_ |    Read contacts in all mailboxes | Allows the app to read all contacts in all mailboxes without a signed-in user. | Yes |
-| _Contacts.ReadWrite_ |    Read and write contacts in all mailboxes  |Allows the app to create, read, update, and delete all contacts in all mailboxes without a signed-in user.| Yes |
+|_Contacts.Read_ |Read contacts in all mailboxes |Allows the app to read all contacts in all mailboxes without a signed-in user. |Yes |
+|_Contacts.ReadWrite_ |Read and write contacts in all mailboxes |Allows the app to create, read, update, and delete all contacts in all mailboxes without a signed-in user. |Yes |
 
 ### Remarks
 Only the _Contacts.Read_ and _Contacts.ReadWrite_ delegated permissions are valid for Microsoft accounts. 
@@ -103,94 +108,94 @@ Only the _Contacts.Read_ and _Contacts.ReadWrite_ delegated permissions are vali
 ### Example usage
 #### Delegated
 
-* _Contacts.Read_ : Read a contact from one of the top-level contact folders of the signed-in user (`GET /me/contactfolders/{Id}/contacts/{id}`).
-* _Contacts.ReadWrite_ : Update the contact photo of one of the signed-in user's contacts (`PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`). 
-* _Contacts.ReadWrite_ : Add contacts to the root folder of the signed-in user (`POST /me/contacts`).
+* _Contacts.Read_: Read a contact from one of the top-level contact folders of the signed-in user (`GET /me/contactfolders/{Id}/contacts/{id}`).
+* _Contacts.ReadWrite_: Update the contact photo of one of the signed-in user's contacts (`PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`). 
+* _Contacts.ReadWrite_: Add contacts to the root folder of the signed-in user (`POST /me/contacts`).
 
 #### Application
 
-* _Contacts.Read_ : Read contacts from one of the top-level contact folders of any user in the organization (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`). 
-* _Contacts.ReadWrite_ : Update the photo for any contact of any user in an organization (`PUT /user/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`). 
-* _Contacts.ReadWrite_ : Add contacts to the root folder of any user in the organization (`POST /users/{id | userPrincipalName}/contacts`).
+* _Contacts.Read_: Read contacts from one of the top-level contact folders of any user in the organization (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`). 
+* _Contacts.ReadWrite_: Update the photo for any contact of any user in an organization (`PUT /user/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`). 
+* _Contacts.ReadWrite_: Add contacts to the root folder of any user in the organization (`POST /users/{id | userPrincipalName}/contacts`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
----
 
 ## Device permissions
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required |
+|Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Device.Read_ | Read user devices | Allows the app to read a user's list of devices on behalf of the signed-in user. | No |
-| _Device.Command_ | Communicate with user devices | Allows the app to launch another app or communicate with another app on a user's device on behalf of the signed-in user. | No |
+|_Device.Read_ |Read user devices |Allows the app to read a user's list of devices on behalf of the signed-in user. |No |
+|_Device.Command_ |Communicate with user devices |Allows the app to launch another app or communicate with another app on a user's device on behalf of the signed-in user. |No |
 
 
 #### Application permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required |
+|Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Device.ReadWrite.All_ | Read and write devices | Allows the app to read and write all device properties without a signed in user. Does not allow device creation, device deletion or update of device alternative security identifiers. | Yes |
+|_Device.ReadWrite.All_ |Read and write devices |Allows the app to read and write all device properties without a signed in user. Does not allow device creation, device deletion, or update of device alternative security identifiers. |Yes |
 
 ### Remarks
 
 The _Device.Read_ and _Device.Command_ delegated permissions are valid only for personal Microsoft accounts.
 
 ### Example usage
+
 #### Application
 
-* _Device.ReadWrite.All_ : Read all registered devices in the organization (`GET /devices`).
+* _Device.ReadWrite.All_: Read all registered devices in the organization (`GET /devices`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
----
 
 ## Intune Device Management permissions
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required |
+|Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _DeviceManagementApps.Read.All_ | Read Microsoft Intune apps | Allows the app to read the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. | Yes |
-| _DeviceManagementApps.ReadWrite.All_ | Read and write Microsoft Intune apps | Allows the app to read and write the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. | Yes |
-| _DeviceManagementConfiguration.Read.All_ | Read Microsoft Intune device configuration and policies | Allows the app to read properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. | Yes |
-| _DeviceManagementConfiguration.ReadWrite.All_ | Read and write Microsoft Intune device configuration and policies  | Allows the app to read and write properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. | Yes |
-| _DeviceManagementManagedDevices.PrivilegedOperations.All_ | Perform user-impacting remote actions on Microsoft Intune devices | Allows the app to perform remote high impact actions such as wiping the device or resetting the passcode on devices managed by Microsoft Intune. | Yes |
-| _DeviceManagementManagedDevices.Read.All_ | Read Microsoft Intune devices | Allows the app to read the properties of devices managed by Microsoft Intune. | Yes |
-| _DeviceManagementManagedDevices.ReadWrite.All_ | Read and write Microsoft Intune devices | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device’s owner. | Yes |
-| _DeviceManagementRBAC.Read.All_ | Read Microsoft Intune RBAC settings | Allows the app to read the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. | Yes |
-| _DeviceManagementRBAC.ReadWrite.All_ | Read and write Microsoft Intune RBAC settings | Allows the app to read and write the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. | Yes |
-| _DeviceManagementServiceConfig.Read.All_ | Read Microsoft Intune configuration | Allows the app to read Intune service properties including device enrollment and third party service connection configuration. | Yes |
-| _DeviceManagementServiceConfig.ReadWrite.All_ | Read and write Microsoft Intune configuration | Allows the app to read and write Microsoft Intune service properties including device enrollment and third party service connection configuration. | Yes |
+|_DeviceManagementApps.Read.All_ | Read Microsoft Intune apps | Allows the app to read the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. | Yes |
+|_DeviceManagementApps.ReadWrite.All_ | Read and write Microsoft Intune apps | Allows the app to read and write the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. | Yes |
+|_DeviceManagementConfiguration.Read.All_ | Read Microsoft Intune device configuration and policies | Allows the app to read properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. | Yes |
+|_DeviceManagementConfiguration.ReadWrite.All_ | Read and write Microsoft Intune device configuration and policies  | Allows the app to read and write properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. | Yes |
+|_DeviceManagementManagedDevices.PrivilegedOperations.All_ | Perform user-impacting remote actions on Microsoft Intune devices | Allows the app to perform remote high impact actions such as wiping the device or resetting the passcode on devices managed by Microsoft Intune. | Yes |
+|_DeviceManagementManagedDevices.Read.All_ | Read Microsoft Intune devices | Allows the app to read the properties of devices managed by Microsoft Intune. | Yes |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | Read and write Microsoft Intune devices | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device’s owner. | Yes |
+|_DeviceManagementRBAC.Read.All_ | Read Microsoft Intune RBAC settings | Allows the app to read the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. | Yes |
+|_DeviceManagementRBAC.ReadWrite.All_ | Read and write Microsoft Intune RBAC settings | Allows the app to read and write the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. | Yes |
+|_DeviceManagementServiceConfig.Read.All_ | Read Microsoft Intune configuration | Allows the app to read Intune service properties including device enrollment and third party service connection configuration. | Yes |
+|_DeviceManagementServiceConfig.ReadWrite.All_ | Read and write Microsoft Intune configuration | Allows the app to read and write Microsoft Intune service properties including device enrollment and third party service connection configuration. | Yes |
 
 #### Application permissions
 
 None.
 
 ### Remarks
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 These permissions are only valid for work or school accounts.
 
 ### Example usage
+
 #### Application
 
-* _DeviceManagementServiceConfiguration.Read.All_ : Check the current state of the Intune subscription (`GET /deviceManagement/subscriptionState`)
-* _DeviceManagementServiceConfiguration.ReadWrite.All_ : Create new Terms and Conditions (`POST /deviceManagement/termsAndConditions`)
-* _DeviceManagementConfiguration.Read.All_ : Find the status of a device configuration (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`)
-* _DeviceManagementConfiguration.ReadWrite.All_ : Assign a device compliance policy to a group (`POST deviceCompliancePolicies/{id}/assign`)
-* _DeviceManagementApps.Read.All_ : Find all the Windows Store apps published to Intune (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`)
-* _DeviceManagementApps.ReadWrite.All_ : Publish a new application (`POST /deviceAppManagement/mobileApps`)
-* _DeviceManagementRBAC.Read.All_ : Find a role assignment by name (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`)
-* _DeviceManagementRBAC.ReadWrite.All_ : Create a new custom role (`POST /deviceManagement/roleDefinitions`)
-* _DeviceManagementManagedDevices.Read.All_ : Find a managed device by name  (`GET /managedDevices/?$filter=deviceName eq 'My Device'`)
-* _DeviceManagementManagedDevices.ReadWrite.All_ : Remove a managed device (`DELETE /managedDevices/{id}`)
-* _DeviceManagementManagedDevices.PrivilegedOperations.All_ : Reset the passcode on a user's managed device (`POST /managedDevices/{id}/resetPasscode`).
+* _DeviceManagementServiceConfiguration.Read.All_: Check the current state of the Intune subscription (`GET /deviceManagement/subscriptionState`).
+* _DeviceManagementServiceConfiguration.ReadWrite.All_: Create new Terms and Conditions (`POST /deviceManagement/termsAndConditions`).
+* _DeviceManagementConfiguration.Read.All_: Find the status of a device configuration (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
+* _DeviceManagementConfiguration.ReadWrite.All_: Assign a device compliance policy to a group (`POST deviceCompliancePolicies/{id}/assign`).
+* _DeviceManagementApps.Read.All_: Find all the Windows Store apps published to Intune (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
+* _DeviceManagementApps.ReadWrite.All_: Publish a new application (`POST /deviceAppManagement/mobileApps`).
+* _DeviceManagementRBAC.Read.All_: Find a role assignment by name (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
+* _DeviceManagementRBAC.ReadWrite.All_: Create a new custom role (`POST /deviceManagement/roleDefinitions`).
+* _DeviceManagementManagedDevices.Read.All_: Find a managed device by name (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
+* _DeviceManagementManagedDevices.ReadWrite.All_: Remove a managed device (`DELETE /managedDevices/{id}`).
+* _DeviceManagementManagedDevices.PrivilegedOperations.All_: Reset the passcode on a user's managed device (`POST /managedDevices/{id}/resetPasscode`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
----
 
 ## Directory permissions
 
@@ -198,9 +203,11 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Directory.Read.All_           |     Read directory data                     | Allows the app to read data in your organization's directory, such as users, groups and apps. | Yes |
-| _Directory.ReadWrite.All_      |     Read and write directory data           | Allows the app to read and write data in your organization's directory, such as users, and groups.  It does not allow the app to delete users or groups, or reset user passwords. | Yes |
-| _Directory.AccessAsUser.All_   |     Access directory as the signed-in user  | Allows the app to have the same access to information in the directory as the signed-in user.| Yes |
+| _Directory.Read.All_ |Read directory data | Allows the app to read data in your organization's directory, such as users, groups and apps. | Yes |
+| _Directory.ReadWrite.All_ |Read and write directory data | Allows the app to read and write data in your organization's directory, such as users, and groups. It does not allow the app to delete users or groups, or reset user passwords. | Yes |
+| _Directory.AccessAsUser.All_ |Access directory as the signed-in user  | Allows the app to have the same access to information in the directory as the signed-in user. | Yes |
+
+<br/>
 
 #### Application permissions
 
@@ -212,7 +219,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 ### Remarks
 Directory permissions are not supported on Microsoft accounts. 
 
- Directory permissions provide the highest level of privilege for accessing directory resources such as [User](../api-reference/v1.0/resources/user.md), [Group](../api-reference/v1.0/resources/group.md), and [Device](../api-reference/v1.0/resources/device.md) in an organization. They also exclusively control access to other directory resources like: [organizational contacts](../api-reference/beta/resources/orgcontact.md), [schema extension APIs](../api-reference/beta/resources/schemaextension.md), [Privileged Identity Management (PIM) APIs](../api-reference/beta/resources/privilegedidentitymanagement_root.md), as well as many of the resources and APIs listed under the **Azure Active Directory** node in the v1.0 and beta API reference documentation. These include administrative units, directory roles, directory settings, policy, and many more. 
+Directory permissions provide the highest level of privilege for accessing directory resources such as [User](../api-reference/v1.0/resources/user.md), [Group](../api-reference/v1.0/resources/group.md), and [Device](../api-reference/v1.0/resources/device.md) in an organization. 
+
+They also exclusively control access to other directory resources like: [organizational contacts](../api-reference/beta/resources/orgcontact.md), [schema extension APIs](../api-reference/beta/resources/schemaextension.md), [Privileged Identity Management (PIM) APIs](../api-reference/beta/resources/privilegedidentitymanagement_root.md), as well as many of the resources and APIs listed under the **Azure Active Directory** node in the v1.0 and beta API reference documentation. These include administrative units, directory roles, directory settings, policy, and many more. 
 
 The _Directory.ReadWrite.All_ permission grants the following privileges:
 
@@ -231,14 +240,15 @@ The _Directory.ReadWrite.All_ permission grants the following privileges:
  
 
 ### Example usage
+
 #### Delegated
-* _Directory.Read.All_ : List all administrative units in an organization (`GET /beta/administrativeUnits`)
-* _Directory.ReadWrite.All_ : Add members to a directory role (`POST /directoryRoles/{id}/members/$ref`)
+* _Directory.Read.All_: List all administrative units in an organization (`GET /beta/administrativeUnits`)
+* _Directory.ReadWrite.All_: Add members to a directory role (`POST /directoryRoles/{id}/members/$ref`)
 
 #### Application
-* _Directory.Read.All_ : List all memberships of a user, including directory roles and administrative units (`GET /beta/users/{id}/memberOf`)
-* _Directory.Read.All_ : List all group members, including service principals (`GET /beta/groups/{id}/members`)
-* _Directory.ReadWrite.All_ : Add an owner to a group (`POST /groups/{id}/owners/$ref`)
+* _Directory.Read.All_: List all memberships of a user, including directory roles and administrative units (`GET /beta/users/{id}/memberOf`)
+* _Directory.Read.All_: List all group members, including service principals (`GET /beta/groups/{id}/members`)
+* _Directory.ReadWrite.All_: Add an owner to a group (`POST /groups/{id}/owners/$ref`)
 
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
@@ -249,22 +259,22 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-| Permission                  | Display String                                         | Description                                                                                                                                                                                             | Admin Consent Required |
-| :-------------------------- | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------- |
-| _Files.Read_                | Read user files                                        | Allows the app to read the signed-in user's files.                                                                                                                                                      | No                     |
-| _Files.Read.All_            | Read all files that user can access                    | Allows the app to read all files the signed-in user can access.                                                                                                                                         | No                     |
-| _Files.ReadWrite_           | Have full access to user files                         | Allows the app to read, create, update, and delete the signed-in user's files.                                                                                                                          | No                     |
-| _Files.ReadWrite.All_       | Have full access to all files user can access          | Allows the app to read, create, update, and delete all files the signed-in user can access.                                                                                                             | No                     |
-| _Files.ReadWrite.AppFolder_ | Have full access to the application's folder (preview) | (Preview) Allows the app to read, create, update, and delete files in the application's folder.                                                                                                         | No                     |
-| _Files.Read.Selected_       | Read files that the user selects                       | **Limited support in Microsoft Graph - see Remarks** <br/> (Preview) Allows the app to read files that the user selects. The app has access for several hours after the user selects a file.            | No                     |
-| _Files.ReadWrite.Selected_  | Read and write files that the user selects             | **Limited support in Microsoft Graph -- see Remarks** <br/> (Preview) Allows the app to read and write files that the user selects. The app has access for several hours after the user selects a file. | No                     |
+|Permission |Display String |Description | Admin Consent Required |
+|:--------- |:------------- |:---------- | :--------------------- |
+| _Files.Read_ | Read user files | Allows the app to read the signed-in user's files. | No |
+| _Files.Read.All_ | Read all files that user can access | Allows the app to read all files the signed-in user can access. | No |
+| _Files.ReadWrite_  | Have full access to user files | Allows the app to read, create, update, and delete the signed-in user's files. | No|
+| _Files.ReadWrite.All_ | Have full access to all files user can access | Allows the app to read, create, update, and delete all files the signed-in user can access. | No |
+| _Files.ReadWrite.AppFolder_ | Have full access to the application's folder (preview) | (Preview) Allows the app to read, create, update, and delete files in the application's folder. | No |
+| _Files.Read.Selected_  | Read files that the user selects | **Limited support in Microsoft Graph; see Remarks** <br/> (Preview) Allows the app to read files that the user selects. The app has access for several hours after the user selects a file.  | No |
+| _Files.ReadWrite.Selected_ | Read and write files that the user selects | **Limited support in Microsoft Graph; see Remarks** <br/> (Preview) Allows the app to read and write files that the user selects. The app has access for several hours after the user selects a file. | No |
 
 #### Application permissions
 
-| Permission            | Display String                               | Description                                                                                                    | Admin Consent Required |
-| :-------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------------------------------- | :--------------------- |
-| _Files.Read.All_      | Read files in all site collections           | Allows the app to read all files in all site collections without a signed in user.                             | Yes                    |
-| _Files.ReadWrite.All_ | Read and write files in all site collections | Allows the app to read, create, update, and delete all files in all site collections without a signed in user. | Yes                    |
+| Permission | Display String | Description | Admin Consent Required |
+| :--------- | :------------- | :---------- | :--------------------- |
+| _Files.Read.All_ | Read files in all site collections | Allows the app to read all files in all site collections without a signed in user.  | Yes |
+| _Files.ReadWrite.All_ | Read and write files in all site collections | Allows the app to read, create, update, and delete all files in all site collections without a signed in user. | Yes |
 
 ### Remarks
 
@@ -278,17 +288,17 @@ The Files.ReadWrite.AppFolder delegated permission is only valid for personal ac
 
 
 ### Example usage
+
 #### Delegated
 
-* _Files.Read_ : Read files stored in the signed-in user's OneDrive (`GET /me/drive/root/children`)
-* _Files.Read.All_ : Read files shared with the signed-in user (`GET /me/drive/root/sharedWithMe`)
-* _Files.ReadWrite_ : Write a file in the signed-in user's OneDrive (`PUT /me/drive/root/children/filename.txt/content`)
-* _Files.ReadWrite.All_ : Write a file shared with the user (`PUT /users/rgregg@contoso.com/drive/root/children/file.txt/content`)
-* _Files.ReadWrite.AppFolder_ : Write files into the app's folder in OneDrive (`PUT /me/drive/special/approot/children/file.txt/content`)
+* _Files.Read_: Read files stored in the signed-in user's OneDrive (`GET /me/drive/root/children`)
+* _Files.Read.All_: Read files shared with the signed-in user (`GET /me/drive/root/sharedWithMe`)
+* _Files.ReadWrite_: Write a file in the signed-in user's OneDrive (`PUT /me/drive/root/children/filename.txt/content`)
+* _Files.ReadWrite.All_: Write a file shared with the user (`PUT /users/rgregg@contoso.com/drive/root/children/file.txt/content`)
+* _Files.ReadWrite.AppFolder_: Write files into the app's folder in OneDrive (`PUT /me/drive/special/approot/children/file.txt/content`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
----
 
 ## Group permissions
 
@@ -323,15 +333,15 @@ Group permissions are also used to control access to [Microsoft Planner](../api-
 ### Example usage
 #### Delegated
 
-* _Group.Read.All_ : Read all Office 365 groups that the signed-in user is a member of (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
-* _Group.Read.All_ : Read all Office 365 group content like conversations (`GET /groups/{id}/conversations`).
-* _Group.ReadWrite.All_ : Update group properties, like photo (`PUT /groups/{id}/photo/$value`).
-* _Group.ReadWrite.All_ : Update group members (`POST /groups/{id}/members/$ref`). NOTE: This also requires _User.ReadBasic.All_ to read the user to add as a member.
+* _Group.Read.All_: Read all Office 365 groups that the signed-in user is a member of (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
+* _Group.Read.All_: Read all Office 365 group content like conversations (`GET /groups/{id}/conversations`).
+* _Group.ReadWrite.All_: Update group properties, like photo (`PUT /groups/{id}/photo/$value`).
+* _Group.ReadWrite.All_: Update group members (`POST /groups/{id}/members/$ref`). NOTE: This also requires _User.ReadBasic.All_ to read the user to add as a member.
 
 #### Application
 
-* _Group.Read.All_ : Find all groups with name that starts with 'Sales' (`GET /groups?$filter=startswith(displayName,'Sales')`).
-* _Group.ReadWrite.All_ : Daemon service creates new events on an Office 365 group's calendar (`POST /groups/{id}/events`).
+* _Group.Read.All_: Find all groups with name that starts with 'Sales' (`GET /groups?$filter=startswith(displayName,'Sales')`).
+* _Group.ReadWrite.All_: Daemon service creates new events on an Office 365 group's calendar (`POST /groups/{id}/events`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -357,7 +367,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 _IdentityRiskEvent.Read.All_ is valid only for work or school accounts. For an app with delegated permissions to read identity risk information, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, or Security Reader. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
 ### Example usage
+
 #### Delegated and Application
+
 The following usages are valid for both delegated and application permissions:
 
 * Read all risk events generated for all users in the tenant (`GET /beta/identityRiskEvents`)
@@ -366,7 +378,6 @@ The following usages are valid for both delegated and application permissions:
  
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
----
 
 ## Mail permissions
 
@@ -403,16 +414,16 @@ With the _Mail.Send_ or _Mail.Send.Shared_ permission, an app can send mail and 
 
 #### Delegated
 
-* _Mail.Read_ : List messages in the user's inbox, sorted by `receivedDateTime` (`GET /me/mailfolders/inbox/messages?$orderby=receivedDateTime DESC`).
+* _Mail.Read_: List messages in the user's inbox, sorted by `receivedDateTime` (`GET /me/mailfolders/inbox/messages?$orderby=receivedDateTime DESC`).
 * _Mail.Read.Shared_: Find all messages with attachments in a user's inbox that has shared their inbox with the signed-in user (`GET /users{id | userPrincipalName}/mailfolders/inbox/messages?$filter=hasAttachments eq true`).
-* _Mail.ReadWrite_ : Mark a message read (`PATCH /me/messages/{id}`).
-* _Mail.Send_ : Send a message (`POST /me/sendmail`).
-* _MailboxSettings.ReadWrite_ : Update the user's automatic reply (`PATCH /me/mailboxSettings`).
+* _Mail.ReadWrite_: Mark a message read (`PATCH /me/messages/{id}`).
+* _Mail.Send_: Send a message (`POST /me/sendmail`).
+* _MailboxSettings.ReadWrite_: Update the user's automatic reply (`PATCH /me/mailboxSettings`).
 
 #### Application
 
-* _Mail.Read_ : Find messages from bob@contoso.com (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`).
-* _Mail.ReadWrite_ : Create a new folder in the Inbox named `Expense Reports` (`POST /users/{id | userPrincipalName}/mailfolders`).
+* _Mail.Read_: Find messages from bob@contoso.com (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`).
+* _Mail.ReadWrite_: Create a new folder in the Inbox named `Expense Reports` (`POST /users/{id | userPrincipalName}/mailfolders`).
 * _Mail.Send_: Send a message (`POST /users/{id | userPrincipalName}/sendmail`).
 * _MailboxSettings.Read_: Get the default timezone for the user's mailbox (`GET /users/{id | userPrincipalName}/mailboxSettings/timeZone`)
 
@@ -426,13 +437,13 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _Member.Read.Hidden_ | Read hidden memberships | Allows the app to read the memberships of hidden groups and administrative units on behalf of the signed-in user, for those hidden groups and administrative units that the signed-in user has access to. | Yes |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _Member.Read.Hidden_ | Read all hidden memberships | Allows the app to read the memberships of hidden groups and administrative units without a signed-in user. | Yes |
 
 ### Remarks
@@ -444,23 +455,23 @@ Membership in some Office 365 groups can be hidden. This means that only the mem
 
 #### Delegated
 
-* _Member.Read.Hidden_ : Read the members of an administrative unit with hidden membership on behalf of the signed-in user (`GET /administrativeUnits/{id}/members`).
-* _Member.Read.Hidden_ : Read the members of a group with hidden membership on behalf of the signed-in user (`GET /groups/{id}/members`).
+* _Member.Read.Hidden_: Read the members of an administrative unit with hidden membership on behalf of the signed-in user (`GET /administrativeUnits/{id}/members`).
+* _Member.Read.Hidden_: Read the members of a group with hidden membership on behalf of the signed-in user (`GET /groups/{id}/members`).
 
 #### Application
 
-* _Member.Read.Hidden_ : Read the members of an administrative unit with hidden membership (`GET /administrativeUnits/{id}/members`).
-* _Member.Read.Hidden_ : Read the members of a group with hidden membership (`GET /groups/{id}/members`).
+* _Member.Read.Hidden_: Read the members of an administrative unit with hidden membership (`GET /administrativeUnits/{id}/members`).
+* _Member.Read.Hidden_: Read the members of a group with hidden membership (`GET /groups/{id}/members`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
----
 
 ## Notes permissions
+
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _Notes.Read_ |    Read user OneNote notebooks | Allows the app to read the titles of OneNote notebooks and sections and to create new pages, notebooks, and sections on behalf of the signed-in user. | No |
 | _Notes.Create_ |    Create user OneNote notebooks | Allows the app to read the titles of OneNote notebooks and sections and to create new pages, notebooks, and sections on behalf of the signed-in user.| No |
 | _Notes.ReadWrite_ |    Read and write user OneNote notebooks | Allows the app to read, share, and modify OneNote notebooks on behalf of the signed-in user. | No |
@@ -471,7 +482,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _Notes.Read.All_ |    Read all OneNote notebooks | Allows the app to read all the OneNote notebooks in your organization, without a signed-in user. | Yes |
 | _Notes.ReadWrite.All_ |    Read and write all OneNote notebooks | Allows the app to read, share, and modify all the OneNote notebooks in your organization, without a signed-in user.| Yes |
 
@@ -488,27 +499,26 @@ For work or school accounts, _Notes.Read.All_ and _Notes.ReadWrite.All_ allow th
 ### Example usage
 #### Delegated
 
-* _Notes.Create_ : Create a new notebooks for the signed-in user (`POST /me/onenote/notebooks`).
-* _Notes.Read_ : Read the notebooks for the signed-in user (`GET /me/onenote/notebooks`).
-* _Notes.Read.All_ : Get all notebooks that the signed-in user has access to within the organization (`GET /me/onenote/notebooks?includesharednotebooks=true`).
-* _Notes.ReadWrite_ : Update the page of the signed-in user (`PATCH /me/onenote/pages/{id}/$value`).
-* _Notes.ReadWrite.All_ : Create a page in another user's notebook that the signed-in user has access to within the organization (`POST /users/{id}/onenote/pages`).
+* _Notes.Create_: Create a new notebooks for the signed-in user (`POST /me/onenote/notebooks`).
+* _Notes.Read_: Read the notebooks for the signed-in user (`GET /me/onenote/notebooks`).
+* _Notes.Read.All_: Get all notebooks that the signed-in user has access to within the organization (`GET /me/onenote/notebooks?includesharednotebooks=true`).
+* _Notes.ReadWrite_: Update the page of the signed-in user (`PATCH /me/onenote/pages/{id}/$value`).
+* _Notes.ReadWrite.All_: Create a page in another user's notebook that the signed-in user has access to within the organization (`POST /users/{id}/onenote/pages`).
 
 #### Application
 
-* _Notes.Read.All_ : Read all users notebooks in a group (`GET /groups/{id}/onenote/notebooks`).
-* _Notes.ReadWrite.All_ : Update the page in a notebook for any user in the organization (`PATCH /users/{id}/onenote/pages/{id}/$value`).
+* _Notes.Read.All_: Read all users notebooks in a group (`GET /groups/{id}/onenote/notebooks`).
+* _Notes.ReadWrite.All_: Update the page in a notebook for any user in the organization (`PATCH /users/{id}/onenote/pages/{id}/$value`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
----
 
 ## OpenID permissions
 
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _email_ |    View users' email address | Allows the app to read your users' primary email address. | No |
 | _offline_access_ |    Access user's data anytime | Allows the app to read and update user data, even when they are not currently using the app.| No |
 | _openid_ |    Sign users in | Allows users to sign in to the app with their work or school accounts and allows the app to see basic user profile information.| No |
@@ -525,8 +535,7 @@ With the Azure AD (v1.0) endpoint, only the _openid_ permission is used. You spe
 
 With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in the _scope_ parameter to explicitly request a refresh token when using the OAuth 2.0 or OpenID Connect protocols. With OpenID Connect, you specify the _openid_ permission to request an ID token. You can also specify the _email_ permission, _profile_ permission, or both to return additional claims in the ID token. You do not need to specify _User.Read_ to return an ID token with the v2.0 endpoint. For more information, see [OpenID Connect scopes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
 
-> **Important** The Microsoft Authentication Library (MSAL) currently specifies _offline\_access_, _openid_, _profile_, and _email_ by default in authorization and token requests. This means that, for the default case, if you specify these permissions explicitly, Azure AD may return an error.
->  
+> **Important** The Microsoft Authentication Library (MSAL) currently specifies _offline\_access_, _openid_, _profile_, and _email_ by default in authorization and token requests. This means that, for the default case, if you specify these permissions explicitly, Azure AD may return an error. 
 
 ---
 
@@ -543,16 +552,17 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read.All_ | Read all users' relevant people lists | Allows the app to read a scored list of people relevant to the signed-in user or other users in the signed-in user's organization. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Yes |
+| _People.Read.All_ | Read all users' relevant people lists | Allows the app to read a scored list of people relevant to the signed-in user or other users in the signed-in user's organization. <br/><br/>The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Yes |
 
 ### Remarks
 
 The People.Read.All permission is only valid for work and school accounts. 
 
 ### Example usage
+
 #### Delegated
-* _People.Read_ : Read a list of relevant people (`GET /me/people`)
-* _People.Read.All_ : Read a list of relevant people to another user in the same organization (`GET /users('{id})/people`)
+* _People.Read_: Read a list of relevant people (`GET /me/people`)
+* _People.Read.All_: Read a list of relevant people to another user in the same organization (`GET /users('{id})/people`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -567,7 +577,7 @@ None.
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _Reports.Read.All_ | Read all usage reports | Allows an app to read all service usage reports without a signed-in user. Services that provide usage reports include Office 365 and Azure Active Directory. | Yes |
 
 ### Remarks
@@ -577,9 +587,9 @@ Reports permissions are only valid for work or school accounts.
 
 #### Application
 
-* _Reports.Read.All_ : Read usage detail report of email apps with period of 7 days (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`)
-* _Reports.Read.All_ : Read activity detail report of email with date of '2017-01-01' (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`)
-* _Reports.Read.All_ : Read Office 365 activations detail report (`GET /reports/Office365Activations(view='Detail')/content`)
+* _Reports.Read.All_: Read usage detail report of email apps with period of 7 days (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`).
+* _Reports.Read.All_: Read activity detail report of email with date of '2017-01-01' (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`).
+* _Reports.Read.All_: Read Office 365 activations detail report (`GET /reports/Office365Activations(view='Detail')/content`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -589,21 +599,21 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-| Permission              | Display String                                                   | Description                                                                                                                   | Admin Consent Required |
-| :---------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
-| _Sites.Read.All_        | Read items in all site collections                               | Allows the app to read documents and list items in all site collections on behalf of the signed-in user.                      | No                     |
-| _Sites.ReadWrite.All_   | Read and write items in all site collections                     | Allows the app to edit or delete documents and list items in all site collections on behalf of the signed-in user.            | No                     |
-| _Sites.Manage.All_      | Create, edit, and delete items and lists in all site collections | Allows the app to manage and create lists, documents, and list items in all site collections on behalf of the signed-in user. | No                     |
-| _Sites.FullControl.All_ | Have full control of all site collections                        | Allows the app to have full control to SharePoint sites in all site collections on behalf of the signed-in user.              | Yes                    |
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Sites.Read.All_        | Read items in all site collections | Allows the app to read documents and list items in all site collections on behalf of the signed-in user. | No  |
+| _Sites.ReadWrite.All_   | Read and write items in all site collections | Allows the app to edit or delete documents and list items in all site collections on behalf of the signed-in user. | No  |
+| _Sites.Manage.All_      | Create, edit, and delete items and lists in all site collections | Allows the app to manage and create lists, documents, and list items in all site collections on behalf of the signed-in user. | No |
+| _Sites.FullControl.All_ | Have full control of all site collections | Allows the app to have full control to SharePoint sites in all site collections on behalf of the signed-in user.  | Yes  |
 
 #### Application permissions
 
-| Permission              | Display String                                                   | Description                                                                                                                   | Admin Consent Required |
-| :---------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
-| _Sites.Read.All_        | Read items in all site collections                               | Allows the app to read documents and list items in all site collections without a signed in user.                             | Yes                    |
-| _Sites.ReadWrite.All_   | Read and write items in all site collections                     | Allows the app to create, read, update, and delete documents and list items in all site collections without a signed in user. | Yes                    |
-| _Sites.Manage.All_      | Have full control of all site collections                        | Allows the app to manage and create lists, documents, and list items in all site collections without a signed-in user.        | Yes                    |
-| _Sites.FullControl.All_ | Create, edit, and delete items and lists in all site collections | Allows the app to have full control to SharePoint sites in all site collections without a signed-in user.                     | Yes                    |
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Sites.Read.All_        | Read items in all site collections | Allows the app to read documents and list items in all site collections without a signed in user. | Yes |
+| _Sites.ReadWrite.All_   | Read and write items in all site collections | Allows the app to create, read, update, and delete documents and list items in all site collections without a signed in user. | Yes |
+| _Sites.Manage.All_      | Have full control of all site collections | Allows the app to manage and create lists, documents, and list items in all site collections without a signed-in user.  | Yes  |
+| _Sites.FullControl.All_ | Create, edit, and delete items and lists in all site collections | Allows the app to have full control to SharePoint sites in all site collections without a signed-in user.  | Yes  |
 
 
 ### Remarks
@@ -614,10 +624,10 @@ Sites permissions are valid only on work or school accounts.
 
 #### Delegated
 
-* _Sites.Read.All_ : Read the lists on the SharePoint root site (`GET /v1.0/sites/root/lists`)
-* _Sites.ReadWrite.All_ : Create new list items in a SharePoint list (`POST /v1.0/sites/root/lists/123/items`)
-* _Sites.Manage.All_ : Add a new list to a SharePoint site (`POST /v1.0/sites/root/lists`)
-* _Sites.FullControl.All_ : Complete access to SharePoint sites and lists.
+* _Sites.Read.All_: Read the lists on the SharePoint root site (`GET /v1.0/sites/root/lists`)
+* _Sites.ReadWrite.All_: Create new list items in a SharePoint list (`POST /v1.0/sites/root/lists/123/items`)
+* _Sites.Manage.All_: Add a new list to a SharePoint site (`POST /v1.0/sites/root/lists`)
+* _Sites.FullControl.All_: Complete access to SharePoint sites and lists.
 
 ---
 
@@ -626,7 +636,7 @@ Sites permissions are valid only on work or school accounts.
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _Tasks.Read_ | Read user tasks | Allows the app to read user tasks. | No |
 | _Tasks.Read.Shared_ | Read user and shared tasks | Allows the app to read tasks a user has permissions to access, including their own and shared tasks. | No |
 | _Tasks.ReadWrite_ |    Create, read, update and delete user tasks and containers | Allows the app to create, read, update and delete tasks and containers (and tasks in them) that are assigned to or shared with the signed-in user.| No |
@@ -644,12 +654,12 @@ _Shared_ permissions are currently only supported for work or school accounts. E
 ### Example usage
 #### Delegated
 
-* _Tasks.Read_ : Get all tasks in a user's mailbox (`GET /me/outlook/tasks`).
-* _Tasks.Read.Shared_ : Access tasks in a folder shared to you by another user in your organization (`Get /users{id|userPrincipalName}/outlook/taskfolders/{id}/tasks`).
-* _Tasks.ReadWrite_ : Add an event to the user's default task folder (`POST /me/outook/tasks`).
-* _Tasks.Read_ : Get all uncompleted tasks in a user's mailbox (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`).
-* _Tasks.ReadWrite_ : Update a task in a user's mailbox (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`).
-* _Tasks.ReadWrite.Shared_ : Complete a task on behalf of another user (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`).
+* _Tasks.Read_: Get all tasks in a user's mailbox (`GET /me/outlook/tasks`).
+* _Tasks.Read.Shared_: Access tasks in a folder shared to you by another user in your organization (`Get /users{id|userPrincipalName}/outlook/taskfolders/{id}/tasks`).
+* _Tasks.ReadWrite_: Add an event to the user's default task folder (`POST /me/outook/tasks`).
+* _Tasks.Read_: Get all uncompleted tasks in a user's mailbox (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`).
+* _Tasks.ReadWrite_: Update a task in a user's mailbox (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`).
+* _Tasks.ReadWrite.Shared_: Complete a task on behalf of another user (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -660,7 +670,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _User.Read_       |    Sign-in and read user profile | Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users.| No |
 | _User.ReadWrite_ |    Read and write access to user profile | Allows the app to read your profile. It also allows the app to update your profile information on your behalf. | No |
 | _User.ReadBasic.All_ |    Read all users' basic profiles | Allows the app to read a basic set of profile properties of other users in your organization on behalf of the signed-in user. This includes display name, first and last name, email address and photo. | No |
@@ -671,7 +681,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|:----------------|:------------------|:-------------|:-----------------------|
 | _User.Read.All_ |    Read all users' full profiles | Allows the app to read the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.| Yes |
 | _User.ReadWrite.All_ |   Read and write all users' full profiles | Allows the app to read and write the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.  Also allows the app to create and delete non-administrative users. Does not allow reset of user passwords. | Yes |
 | _User.Invite.All_  |     Invite guest users to the organization | Allows the app to invite guest users to your organization, without a signed-in user. | Yes |
@@ -725,18 +735,19 @@ The _User.ReadBasic.All_ permission constrains app access to a limited set of pr
 To read the group memberships of a user (`memberOf`), the app must have either [_Group.Read.All_](#group-permissions) or [_Group.ReadWrite.All_](#group-permissions). However, if the user also has membership in a [directoryRole](../api-reference/v1.0/resources/directoryrole.md) or an [administrativeUnit](../api-reference/beta/resources/administrativeunit.md), the app will need effective permissions to read those resources too, or Microsoft Graph will return an error. This means the app will also need [Directory permissions](#directory-permissions), and, for delegated permissions, the signed-in user will also need sufficient privileges in the organization to access directory roles and administrative units. 
 
 ### Example usage
+
 #### Delegated
 
-* _User.Read_ : Read the full profile for the signed-in user (`GET /me`).
-* _User.ReadWrite_ : Update the photo of the signed-in user (`PUT /me/photo/$value`).
-* _User.ReadBasic.All_ : Find all users whose name starts with "David" (`GET /users?$filter=startswith(displayName,'David')`).
-* _User.Read.All_ : Read a user's manager (`GET /user/{id | userPrincipalName}/manager`).
+* _User.Read_: Read the full profile for the signed-in user (`GET /me`).
+* _User.ReadWrite_: Update the photo of the signed-in user (`PUT /me/photo/$value`).
+* _User.ReadBasic.All_: Find all users whose name starts with "David" (`GET /users?$filter=startswith(displayName,'David')`).
+* _User.Read.All_: Read a user's manager (`GET /user/{id | userPrincipalName}/manager`).
 
 
 #### Application
 
-* _User.Read.All_ : Read all users and relationships through delta query (`GET /beta/users/delta?$select=displayName,givenName,surname`).
-* _User.ReadWrite.All_ : Update the photo for any user in the organization (`PUT /user/{id | userPrincipalName}/photo/$value`).
+* _User.Read.All_: Read all users and relationships through delta query (`GET /beta/users/delta?$select=displayName,givenName,surname`).
+* _User.ReadWrite.All_: Update the photo for any user in the organization (`PUT /user/{id | userPrincipalName}/photo/$value`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 

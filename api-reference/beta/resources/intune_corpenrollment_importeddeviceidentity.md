@@ -1,13 +1,13 @@
 ﻿# importedDeviceIdentity resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The importedDeviceIdentity resource represents a unique hardware identity of a device that has been pre-staged for pre-enrollment configuration.
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List importedDeviceIdentities](../api/intune_corpenrollment_importeddeviceidentity_list.md)|[importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) collection|List properties and relationships of the [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) objects.|
 |[Get importedDeviceIdentity](../api/intune_corpenrollment_importeddeviceidentity_get.md)|[importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|Read properties and relationships of the [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) object.|
 |[Create importedDeviceIdentity](../api/intune_corpenrollment_importeddeviceidentity_create.md)|[importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|Create a new [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) object.|
@@ -17,7 +17,7 @@ The importedDeviceIdentity resource represents a unique hardware identity of a d
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Id of the imported device identity|
 |importedDeviceIdentifier|String|Imported Device Identifier|
 |importedDeviceIdentityType|String|Type of Imported Device Identity Possible values are: `unknown`, `imei`, `serialNumber`.|
@@ -38,7 +38,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.importedDeviceIdentity"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.importedDeviceIdentity",
   "id": "String (identifier)",

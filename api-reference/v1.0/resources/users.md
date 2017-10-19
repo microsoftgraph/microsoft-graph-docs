@@ -8,6 +8,7 @@ You can access [users](user.md) through Microsoft Graph in two ways:
 - By using the `/me` alias for the signed-in user, which is the same as `/users/{signed-in user's id}`
 
 ## Authorization
+
 One of the following [permissions](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.
 
 - User.ReadBasic.All
@@ -20,10 +21,11 @@ One of the following [permissions](https://developer.microsoft.com/en-us/graph/d
 - Directory.AccessAsUser.All
 
 ## Common properties
-The following represent the default set of properties that are returned when getting a user or listing users.  These are a subset of all available properties. To get more user properties, use the `$select` query parameter. 
 
-| Property | Description |
-|----------|-------------|
+The following represent the default set of properties that are returned when getting a user or listing users. These are a subset of all available properties. To get more user properties, use the `$select` query parameter. 
+
+|Property |Description |
+|:----------|:-------------|
 |id | The unique identifier for the user.|
 |businessPhones | The user's phone numbers.|
 |displayName | The name displayed in the address book for the user.|
@@ -36,13 +38,16 @@ The following represent the default set of properties that are returned when get
 |surname| The last name of the user. |
 |userPrincipalName| The user's principal name. |
 
+<br/>
+
 For details and a list of all the properties, see the [user](user.md) object.
 
 ## Common operations
->**Note:** Some of these operations require additional permissions.
+
+> **Note:** Some of these operations require additional permissions.
 
 | Path    | Description |
-|---------|-------------|
+|:---------|:-------------|
 |[`/users`](../api/user_list.md) | Lists users in the organization. |
 |[`/users/{id}`](../api/user_get.md) | Gets a specific user by id. |
 |[`/users/{id}/photo/$value`](../api/profilephoto_get.md)| Gets the user's profile photo. |

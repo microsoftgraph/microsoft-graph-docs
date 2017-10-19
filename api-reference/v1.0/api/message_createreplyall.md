@@ -1,7 +1,6 @@
 # message: createReplyAll
 
-Create a draft of the Reply All message. You can then [update](../api/message_update.md) or 
-[send](../api/message_send.md) the draft.
+Create a draft to reply to the sender and all the recipients of the specified [message](../resources/message.md). You can then [update](../api/message_update.md) the draft to add reply content to the **body** or change other message properties, or, simply [send](../api/message_send.md) the draft.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -24,9 +23,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ## Request body
+Do not supply a request body for this method.
 
 ## Response
 
@@ -42,12 +41,6 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReplyAll
-Content-type: application/json
-Content-length: 248
-
-{
-  "comment": "comment-value"
-}
 ```
 
 ##### Response

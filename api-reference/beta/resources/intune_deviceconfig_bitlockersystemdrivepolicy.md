@@ -1,13 +1,13 @@
 ﻿# bitLockerSystemDrivePolicy resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 BitLocker Encryption Base Policies.
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |encryptionMethod|String|Select the encryption method for operating system drives. Possible values are: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.|
 |startupAuthenticationRequired|Boolean|Require additional authentication at startup.|
 |startupAuthenticationBlockWithoutTpmChip|Boolean|Indicates whether to allow BitLocker without a compatible TPM (requires a password or a startup key on a USB flash drive).|
@@ -31,7 +31,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.bitLockerSystemDrivePolicy"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.bitLockerSystemDrivePolicy",
   "encryptionMethod": "String",

@@ -1,13 +1,13 @@
 ﻿# defaultDeviceEnrollmentWindowsHelloForBusinessSettings resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Device Enrollment Windows Hello for Business settings
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |pinMinimumLength|Int32|Controls the minimum number of characters required for the Windows Hello for Business PIN.  This value must be between 4 and 127, inclusive, and less than or equal to the value set for the maximum PIN.|
 |pinMaximumLength|Int32|Controls the maximum number of characters allowed for the Windows Hello for Business PIN. This value must be between 4 and 127, inclusive. This value must be greater than or equal to the value set for the minimum PIN.|
 |pinUppercaseLettersUsage|String|Controls the ability to use uppercase letters in the Windows Hello for Business PIN.  Allowed permits the use of uppercase letter(s), whereas Required ensures they are present. If set to Not Allowed, uppercase letters will not be permitted. Possible values are: `allowed`, `required`, `disallowed`.|
@@ -31,7 +31,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.defaultDeviceEnrollmentWindowsHelloForBusinessSettings"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.defaultDeviceEnrollmentWindowsHelloForBusinessSettings",
   "pinMinimumLength": 1024,

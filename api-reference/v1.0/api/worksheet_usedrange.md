@@ -43,8 +43,6 @@ Here is an example of the request.
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
-Content-type: application/json
-
 ```
 
 ##### Response

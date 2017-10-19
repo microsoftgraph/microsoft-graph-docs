@@ -1,20 +1,21 @@
 ﻿# deviceCompliancePolicyDeviceStateSummary resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-**TODO: Documentation is missing please add the `\[ODataDescription()\]` and/or `\[ODataLongDescription()\]` attributes.**
+Not yet documented
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[Get deviceCompliancePolicyDeviceStateSummary](../api/intune_deviceconfig_devicecompliancepolicydevicestatesummary_get.md)|[deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md)|Read properties and relationships of the [deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md) object.|
 |[Update deviceCompliancePolicyDeviceStateSummary](../api/intune_deviceconfig_devicecompliancepolicydevicestatesummary_update.md)|[deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md)|Update the properties of a [deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md) object.|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |inGracePeriodCount|Int32|Number of devices that are in grace period|
+|configManagerCount|Int32|Number of devices that have compliance managed by System Center Configuration Manager|
 |id|String|Key of the entity.|
 |unknownDeviceCount|Int32|Number of unknown devices|
 |notApplicableDeviceCount|Int32|Number of not applicable devices|
@@ -34,10 +35,11 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.deviceCompliancePolicyDeviceStateSummary"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyDeviceStateSummary",
   "inGracePeriodCount": 1024,
+  "configManagerCount": 1024,
   "id": "String (identifier)",
   "unknownDeviceCount": 1024,
   "notApplicableDeviceCount": 1024,

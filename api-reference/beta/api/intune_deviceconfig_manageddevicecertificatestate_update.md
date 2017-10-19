@@ -5,21 +5,21 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) object.
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
@@ -30,16 +30,17 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) object.
-The following table shows the properties that are required when you create a [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md).
+In the request body, supply a JSON representation for the [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) object.
+
+The following table shows the properties that are required when you create the [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md).
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity.|
 |devicePlatform|String|Device platform Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`.|
 |certificateKeyUsage|String|Key usage Possible values are: `keyEncipherment`, `digitalSignature`.|
@@ -55,13 +56,15 @@ The following table shows the properties that are required when you create a [ma
 |certificateKeyLength|Int32|Key length|
 |enhancedKeyUsage|String|Extended key usage|
 
+
+
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) object in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 Content-type: application/json
 Content-length: 727
@@ -85,7 +88,7 @@ Content-length: 727
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 844

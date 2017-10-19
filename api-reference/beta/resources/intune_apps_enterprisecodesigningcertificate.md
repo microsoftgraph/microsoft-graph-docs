@@ -1,13 +1,13 @@
 ﻿# enterpriseCodeSigningCertificate resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-**TODO: Documentation is missing please add the `\[ODataDescription()\]` and/or `\[ODataLongDescription()\]` attributes.**
+Not yet documented
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List enterpriseCodeSigningCertificates](../api/intune_apps_enterprisecodesigningcertificate_list.md)|[enterpriseCodeSigningCertificate](../resources/intune_apps_enterprisecodesigningcertificate.md) collection|List properties and relationships of the [enterpriseCodeSigningCertificate](../resources/intune_apps_enterprisecodesigningcertificate.md) objects.|
 |[Get enterpriseCodeSigningCertificate](../api/intune_apps_enterprisecodesigningcertificate_get.md)|[enterpriseCodeSigningCertificate](../resources/intune_apps_enterprisecodesigningcertificate.md)|Read properties and relationships of the [enterpriseCodeSigningCertificate](../resources/intune_apps_enterprisecodesigningcertificate.md) object.|
 |[Create enterpriseCodeSigningCertificate](../api/intune_apps_enterprisecodesigningcertificate_create.md)|[enterpriseCodeSigningCertificate](../resources/intune_apps_enterprisecodesigningcertificate.md)|Create a new [enterpriseCodeSigningCertificate](../resources/intune_apps_enterprisecodesigningcertificate.md) object.|
@@ -16,7 +16,7 @@
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|The key of the entity.|
 |content|Binary|The Windows Enterprise Code-Signing Certificate in the raw data format.|
 |status|String|The Certificate Status Provisioned or not Provisioned. Possible values are: `notProvisioned`, `provisioned`.|
@@ -37,7 +37,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.enterpriseCodeSigningCertificate"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.enterpriseCodeSigningCertificate",
   "id": "String (identifier)",

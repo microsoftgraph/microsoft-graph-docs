@@ -1,6 +1,16 @@
 # Add attachment
 
 Use this API to create a new Attachment.
+
+An attachment can be one of the following types:
+
+* A file ([fileAttachment](../resources/fileattachment.md) resource).
+* An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).
+* A link to a file ([referenceAttachment](../resources/referenceAttachment.md) resource).
+
+All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
+resource. 
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 

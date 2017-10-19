@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Use this API to create a new Calendar in a calendar group.
+Use this API to create a new calendar in a calendar group for a [user](../resources/user.md). 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -31,11 +31,11 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 | Content-Type  | application/json. Required.  |
 
 ## Request body
-In the request body, supply a JSON representation of [Calendar](../resources/calendar.md) object.
+In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [Calendar](../resources/calendar.md) object in the response body.
+If successful, this method returns `201, Created` response code and [calendar](../resources/calendar.md) object in the response body.
 
 ## Example
 ##### Request

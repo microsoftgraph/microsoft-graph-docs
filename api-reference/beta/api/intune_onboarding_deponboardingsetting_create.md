@@ -5,36 +5,37 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) object.
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
-POST /organization/{organizationId}/depOnboardingSettings
+``` http
+POST /deviceManagement/depOnboardingSettings
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a depOnboardingSetting object.
-The following table shows the properties that are required when you create a depOnboardingSetting.
+In the request body, supply a JSON representation for the depOnboardingSetting object.
+
+The following table shows the properties that are required when you create the depOnboardingSetting.
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|UUID for the object|
 |appleIdentifier|String|The Apple ID used to obtain the current token.|
 |tokenExpirationDateTime|DateTimeOffset|When the token will expire.|
@@ -44,14 +45,16 @@ The following table shows the properties that are required when you create a dep
 |shareTokenWithSchoolDataSyncService|Boolean|Whether or not the Dep token sharing is enabled with the School Data Sync service.|
 |lastSyncErrorCode|Int32|Error code reported by Apple during last dep sync.|
 
+
+
 ## Response
 If successful, this method returns a `201 Created` response code and a [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) object in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
-```http
-POST https://graph.microsoft.com/beta/organization/{organizationId}/depOnboardingSettings
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings
 Content-type: application/json
 Content-length: 454
 
@@ -69,7 +72,7 @@ Content-length: 454
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 503

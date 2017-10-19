@@ -5,21 +5,21 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [androidForWorkCompliancePolicy](../resources/intune_deviceconfig_androidforworkcompliancepolicy.md) object.
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy
 ```
@@ -28,7 +28,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupA
 This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
@@ -41,16 +41,16 @@ If successful, this method returns a `200 OK` response code and [androidForWorkC
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1086
+Content-Length: 1364
 
 {
   "value": {
@@ -69,13 +69,19 @@ Content-Length: 1086
     "passwordPreviousPasswordBlockCount": 2,
     "securityPreventInstallAppsFromUnknownSources": true,
     "securityDisableUsbDebugging": true,
+    "requireAppVerify": true,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
     "securityBlockJailbrokenDevices": true,
     "osMinimumVersion": "Os Minimum Version value",
     "osMaximumVersion": "Os Maximum Version value",
     "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
-    "storageRequireEncryption": true
+    "storageRequireEncryption": true,
+    "requireSafetyNetAttestationBasicIntegrity": true,
+    "requireSafetyNetAttestationCertifiedDevice": true,
+    "requireGooglePlayServices": true,
+    "requireUpToDateSecurityProviders": true,
+    "requireCompanyPortalAppIntegrity": true
   }
 }
 ```

@@ -24,7 +24,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "address": "string",
-  "relevanceScore": 1024
+  "relevanceScore": 1024.0
 }
 ```
 

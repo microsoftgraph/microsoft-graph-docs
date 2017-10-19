@@ -1,6 +1,6 @@
 ﻿# androidForWorkAppConfigurationExampleJson resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -10,7 +10,7 @@ Inherits from [androidForWorkAppConfigurationExample](../resources/intune_androi
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |example|String|Example as JSON.|
 
 ## Relationships
@@ -23,7 +23,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.androidForWorkAppConfigurationExampleJson"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.androidForWorkAppConfigurationExampleJson",
   "example": "String"
