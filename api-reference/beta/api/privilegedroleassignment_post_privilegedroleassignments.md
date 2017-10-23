@@ -29,7 +29,7 @@ In the request body, supply a JSON representation of [privilegedRoleAssignment](
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
+If successful, this method returns `201 Created` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
 
 Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
 ## Example

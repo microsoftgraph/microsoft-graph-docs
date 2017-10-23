@@ -27,7 +27,7 @@ In the request body, supply a JSON representation of a link to a   [connector](.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [connector](../resources/connector.md) object in the response body.
+If successful, this method returns `201 Created` response code and [connector](../resources/connector.md) object in the response body.
 
 ## Example
 ##### Request

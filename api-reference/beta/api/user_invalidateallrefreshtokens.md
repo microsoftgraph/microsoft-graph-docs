@@ -28,7 +28,7 @@ This operation has no request content.
 
 ## Response
 
-If successful, this method returns `204, No content` response code.
+If successful, this method returns `204 No Content` response code.
 
 ## Example
 Here is an example of how to call this API.

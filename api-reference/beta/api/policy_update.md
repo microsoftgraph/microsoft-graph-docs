@@ -36,7 +36,7 @@ In the request body, provide a JSON object with the parameters that need to be u
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 The following example updates the definition of the token lifetime policy and sets it as the organization default.

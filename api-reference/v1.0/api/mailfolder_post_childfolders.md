@@ -37,7 +37,7 @@ In the request body, provide a JSON object with the following parameters. **disp
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
+If successful, this method returns `201 Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
 
 ## Example
 ##### Request

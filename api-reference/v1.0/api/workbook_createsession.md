@@ -36,7 +36,7 @@ In the request body, supply a JSON representation of [WorkbookSessionInfo](../re
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body.
+If successful, this method returns `201 Created` response code and [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body.
 
 ## Example
 ##### Request

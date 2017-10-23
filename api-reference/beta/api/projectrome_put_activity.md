@@ -37,7 +37,7 @@ In the request body, supply a JSON representation of an [activity](../resources/
 
 ## Response
 
-If successful, this method returns the `201, Created` response code if the activity was created or `200, OK` if the activity was replaced.
+If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.
 
 ## Example
 

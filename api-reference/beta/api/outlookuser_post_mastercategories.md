@@ -30,7 +30,7 @@ In the request body, supply a JSON representation of [outlookCategory](../resour
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [outlookCategory](../resources/outlookCategory.md) object in the response body.
+If successful, this method returns `201 Created` response code and [outlookCategory](../resources/outlookCategory.md) object in the response body.
 
 ## Example
 ##### Request

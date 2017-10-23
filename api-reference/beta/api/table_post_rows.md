@@ -29,7 +29,7 @@ In the request body, supply a JSON representation of [TableRow](../resources/tab
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [TableRow](../resources/tablerow.md) object in the response body.
+If successful, this method returns `201 Created` response code and [TableRow](../resources/tablerow.md) object in the response body.
 
 ## Example
 ##### Request

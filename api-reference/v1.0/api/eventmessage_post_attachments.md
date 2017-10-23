@@ -37,7 +37,7 @@ In the request body, supply a JSON representation of [Attachment](../resources/a
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [Attachment](../resources/attachment.md) object in the response body.
+If successful, this method returns `201 Created` response code and [Attachment](../resources/attachment.md) object in the response body.
 
 ## Example (File attachment)
 ##### Request

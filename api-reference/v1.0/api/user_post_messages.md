@@ -34,7 +34,7 @@ Since the **message** resource supports [extensions](../../../concepts/extensibi
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [message](../resources/message.md) object in the response body.
+If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.
 
 ## Example
 ##### Request 1

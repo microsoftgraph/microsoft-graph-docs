@@ -57,7 +57,7 @@ When the value of `persistChanges` is set to `false`, a non-persistent session i
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -102,7 +102,7 @@ Response
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -140,7 +140,7 @@ workbook-session-id: {session-id}
 Response 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -166,7 +166,7 @@ workbook-session-id: {session-id}
 Response 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -194,7 +194,7 @@ workbook-session-id: {session-id}
 Response
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 
@@ -216,7 +216,7 @@ Response
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -245,7 +245,7 @@ workbook-session-id: {session-id}
 Response
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -279,7 +279,7 @@ workbook-session-id: {session-id}
 Response
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -305,7 +305,7 @@ authorization: Bearer {access-token}
 Response 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -337,7 +337,7 @@ Response
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -369,7 +369,7 @@ workbook-session-id: {session-id}
 Response
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 ### Table operations 
@@ -388,7 +388,7 @@ workbook-session-id: {session-id}
 Response
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 ```
 
@@ -408,7 +408,7 @@ workbook-session-id: {session-id}
 Response 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -436,7 +436,7 @@ Response
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -526,7 +526,7 @@ Response
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK 
+HTTP code: 200 OK 
 content-type: application/json;odata.metadata 
 
 {
@@ -640,7 +640,7 @@ workbook-session-id: {session-id}
 Response 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -674,7 +674,7 @@ Response
 
 <!-- { "blockType": "ignored" } -->
 ```http 
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -710,7 +710,7 @@ workbook-session-id: {session-id}
 Response 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 #### Delete table column 
@@ -725,7 +725,7 @@ workbook-session-id: {session-id}
 Response 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 #### Convert table to range 
@@ -740,7 +740,7 @@ workbook-session-id: {session-id}
 Response
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK 
+HTTP code: 200 OK 
 content-type: application/json;odata.metadata 
 ```
 
@@ -765,7 +765,7 @@ workbook-session-id: {session-id}
 Response
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 #### Table filter
@@ -790,7 +790,7 @@ workbook-session-id: {session-id}
 Response
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 
@@ -806,7 +806,7 @@ workbook-session-id: {session-id}
 Response
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 ### Range operations
@@ -825,7 +825,7 @@ Response
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -928,7 +928,7 @@ workbook-session-id: {session-id}
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata
 
 {
@@ -1038,7 +1038,7 @@ workbook-session-id: {session-id}
 Response
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 
@@ -1056,7 +1056,7 @@ Response
 
 <!-- { "blockType": "ignored" } -->
 ```http 
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json
 
 {
@@ -1245,7 +1245,7 @@ workbook-session-id: {session-id}
 
 <!-- { "blockType": "ignored" } -->
 ```http 
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json
 
 {

@@ -48,7 +48,7 @@ The following table shows the properties that are available when you create a sc
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [schemaExtension](../resources/schemaextension.md) object in the response body.
+If successful, this method returns `201 Created` response code and [schemaExtension](../resources/schemaextension.md) object in the response body.
 
 ## Example
 

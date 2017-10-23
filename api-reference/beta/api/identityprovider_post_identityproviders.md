@@ -43,7 +43,7 @@ In the request body, provide a JSON representation of [identityProvider](../reso
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [identityProvider](../resources/identityProvider.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns `201 Created` response code and [identityProvider](../resources/identityProvider.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 

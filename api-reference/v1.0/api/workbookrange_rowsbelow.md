@@ -32,7 +32,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 ## Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [workbookRange](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

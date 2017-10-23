@@ -59,7 +59,7 @@ a `GET /calendarview` request. `$select` is not supported in this case.
 
 ## Response
 
-If successful, this method returns a `200, OK` response code and [event](../resources/event.md) collection object in the response body.
+If successful, this method returns a `200 OK` response code and [event](../resources/event.md) collection object in the response body.
 
 ## Example
 ##### Request

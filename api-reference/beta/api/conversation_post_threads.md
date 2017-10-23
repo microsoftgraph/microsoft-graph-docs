@@ -33,7 +33,7 @@ In the request body, supply a JSON representation of [ConversationThread](../res
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
+If successful, this method returns `201 Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
 
 ## Example
 ##### Request
@@ -59,7 +59,7 @@ Content-type: application/json
 In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.
 ##### Response
 
-If successful, this method returns `201, Created` response code and the `id` of the new thread in the response body.
+If successful, this method returns `201 Created` response code and the `id` of the new thread in the response body.
 Here is an example of the response.
 <!-- {
   "blockType": "response",

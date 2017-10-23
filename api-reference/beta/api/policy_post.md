@@ -39,7 +39,7 @@ The following table shows the properties that are required when you create a pol
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [policy](../resources/policy.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.  
+If successful, this method returns `201 Created` response code and [policy](../resources/policy.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.  
 
 ## Example
 The following example creates a new token lifetime Policy. Notice the string definition parameter

@@ -42,7 +42,7 @@ In the request body, supply a JSON representation of [Event](../resources/event.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [Event](../resources/event.md) object in the response body.
+If successful, this method returns `201 Created` response code and [Event](../resources/event.md) object in the response body.
 
 ## Example
 ##### Request

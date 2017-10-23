@@ -47,7 +47,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [message](../resources/message.md) object in the response body.
+If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.
 
 ## Example
 The following example creates a draft to reply all, and adds an attachment and comment all in one **createReplyAll** call.

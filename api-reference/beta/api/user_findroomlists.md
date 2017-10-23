@@ -38,7 +38,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200, OK` response code and [emailAddress](../resources/emailaddress.md) collection object in the response body.
+If successful, this method returns a `200 OK` response code and [emailAddress](../resources/emailaddress.md) collection object in the response body.
 
 If no lists are defined in the tenant, then an empty array is returned.
 

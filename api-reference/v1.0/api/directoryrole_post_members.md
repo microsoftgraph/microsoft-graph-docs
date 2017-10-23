@@ -28,7 +28,7 @@ In the request body, supply a JSON representation of a [directoryObject](../reso
 
 ## Response
 
-If successful, this method returns `204, No Content` response code.
+If successful, this method returns `204 No Content` response code.
 
 ## Example
 ##### Request

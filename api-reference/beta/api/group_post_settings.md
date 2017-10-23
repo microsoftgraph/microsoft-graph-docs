@@ -27,7 +27,7 @@ In the request body, supply a JSON representation of [directorySetting](../resou
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
+If successful, this method returns `201 Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
 
 ## Example
 ##### Request

@@ -38,7 +38,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and String collection in the response body that contains the IDs of the groups that the user is a member of.
+If successful, this method returns `200 OK` response code and String collection in the response body that contains the IDs of the groups that the user is a member of.
 
 ## Example
 Here is an example of how to call this API.

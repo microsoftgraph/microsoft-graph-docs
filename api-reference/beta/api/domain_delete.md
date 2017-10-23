@@ -39,7 +39,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return a response body.
+If successful, this method returns `204 No Content` response code. It does not return a response body.
 
 ## Example
 ##### Request

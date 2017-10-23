@@ -35,7 +35,7 @@ No request body.
 
 ## Response
 
-If successful, this method returns the `204, No Content` response code if the activity was deleted.
+If successful, this method returns the `204 No Content` response code if the activity was deleted.
 
 ## Example
 

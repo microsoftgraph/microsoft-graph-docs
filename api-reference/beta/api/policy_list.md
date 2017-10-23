@@ -28,7 +28,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [policy](../resources/policy.md) objects in the response body. If unsuccessful...
+If successful, this method returns `200 OK` response code and [policy](../resources/policy.md) objects in the response body. If unsuccessful...
 
 ## Example
 The following example retrieves all policies.

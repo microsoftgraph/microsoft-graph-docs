@@ -43,7 +43,7 @@ when creating rules. You can specify any other writable **messageRule** properti
 |sequence| Int32 | Indicates the order in which the rule is executed, among other rules. Required.|
 
 ## Response
-If successful, this method returns `201, Created` response code and a **messageRule** object in the response body.
+If successful, this method returns `201 Created` response code and a **messageRule** object in the response body.
 
 ## Example
 ##### Request

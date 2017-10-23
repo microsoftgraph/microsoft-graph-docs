@@ -38,7 +38,7 @@ In the request body, supply a JSON representation of the [Contact](../resources/
 
 ## Response
 
-If successful, this method returns `201, Created` response code and the [Contact](../resources/contact.md) object in the response body.
+If successful, this method returns `201 Created` response code and the [Contact](../resources/contact.md) object in the response body.
 
 ## Example
 

@@ -37,7 +37,7 @@ In the request body, supply a JSON representation of a [historyItem](../resource
 
 ## Response
 
-If successful, this method returns the `201, Created` response code if the historyItem was created or `200, OK` if the historyItem was replaced.
+If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.
 
 ## Example
 

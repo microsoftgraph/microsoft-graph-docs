@@ -36,7 +36,7 @@ In the request body, supply a JSON representation of [domain](../resources/domai
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [domain](../resources/domain.md) object in the response body.
+If successful, this method returns `201 Created` response code and [domain](../resources/domain.md) object in the response body.
 
 ## Example
 ##### Request

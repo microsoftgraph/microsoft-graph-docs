@@ -29,7 +29,7 @@ In the request body, supply a JSON representation of [ContactFolder](../resource
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
+If successful, this method returns `201 Created` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
 
 ## Example
 ##### Request

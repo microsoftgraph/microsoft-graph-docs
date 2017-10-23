@@ -36,7 +36,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 ##### Request

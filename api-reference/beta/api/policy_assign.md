@@ -35,7 +35,7 @@ In the request body, provide a JSON representation of the policy object to be ad
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 The following example assigns a policy to an application.

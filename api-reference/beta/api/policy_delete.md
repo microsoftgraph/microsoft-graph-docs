@@ -28,7 +28,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. If unsuccessful...
+If successful, this method returns `204 No Content` response code. If unsuccessful...
 
 ## Example
 The following example deletes a policy.

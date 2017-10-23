@@ -27,7 +27,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
 

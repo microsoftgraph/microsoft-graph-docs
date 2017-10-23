@@ -34,7 +34,7 @@ The following table shows the properties that are required when you activate a d
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [directoryRole](../resources/directoryrole.md) object in the response body.
+If successful, this method returns `201 Created` response code and [directoryRole](../resources/directoryrole.md) object in the response body.
 
 ## Example
 ##### Request

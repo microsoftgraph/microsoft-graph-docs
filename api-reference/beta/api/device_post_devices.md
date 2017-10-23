@@ -31,7 +31,7 @@ Since the **device** resource supports [extensions](../../../concepts/extensibil
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [device](../resources/device.md) object in the response body.
+If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.
 
 ## Example
 ##### Request

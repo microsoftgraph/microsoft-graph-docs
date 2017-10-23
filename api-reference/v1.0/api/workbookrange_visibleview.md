@@ -24,7 +24,7 @@ GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
 ## Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [workbookRangeView](../resources/workbookrangeview.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRangeView](../resources/workbookrangeview.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

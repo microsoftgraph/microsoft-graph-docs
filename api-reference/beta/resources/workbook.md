@@ -54,7 +54,7 @@ workbook-session-id: {session-id}
 Response:
 
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -89,7 +89,7 @@ workbook-session-id: {session-id}
 Response:
 
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {

@@ -27,7 +27,7 @@ In the request body, supply a JSON representation of [Message](../resources/mess
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
+If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.
 
 ## Example
 ##### Request

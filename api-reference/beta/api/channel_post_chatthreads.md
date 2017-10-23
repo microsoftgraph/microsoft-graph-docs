@@ -30,7 +30,7 @@ In the request body, supply a JSON representation of a [chatThread](../resources
 
 ## Response
 
-If successful, this method returns `204, No content` response code with an empty reponse body.
+If successful, this method returns `204 No Content` response code with an empty reponse body.
 
 ## Example
 ##### Request

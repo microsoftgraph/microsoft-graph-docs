@@ -28,7 +28,7 @@ In the request body, supply a JSON representation of [ChartPoints](../resources/
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [ChartPoints](../resources/chartpoint.md) object in the response body.
+If successful, this method returns `201 Created` response code and [ChartPoints](../resources/chartpoint.md) object in the response body.
 
 ## Example
 ##### Request

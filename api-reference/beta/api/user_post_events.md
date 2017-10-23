@@ -44,7 +44,7 @@ Since the **event** resource supports [extensions](../../../concepts/extensibili
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [event](../resources/event.md) object in the response body.
+If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.
 
 ## Example
 ##### Request 1

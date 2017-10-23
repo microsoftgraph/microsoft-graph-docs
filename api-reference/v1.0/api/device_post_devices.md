@@ -29,7 +29,7 @@ In the request body, supply a JSON representation of [device](../resources/devic
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [device](../resources/device.md) object in the response body.
+If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.
 
 ## Example
 ##### Request

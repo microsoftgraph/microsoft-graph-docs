@@ -37,7 +37,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code. If the group is added to the policy, a **true** value is returned in the response body. Otherwise, a **false** value is returned in the reponse body.
+If successful, this method returns `200 OK` response code. If the group is added to the policy, a **true** value is returned in the response body. Otherwise, a **false** value is returned in the reponse body.
 
 ## Example
 
