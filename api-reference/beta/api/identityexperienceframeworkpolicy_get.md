@@ -35,7 +35,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a JSON representation of the [identityExperienceFrameworkPolicy](../resources/identityProvider.md) in the response body.
+If successful, this method returns `200 OK` response code and a JSON representation of the [identityExperienceFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md) in the response body.
 
 ## Example
 
@@ -48,7 +48,7 @@ The following example retrieves a specific **identityExperienceFrameworkPolicy**
   "name": "get_identityexperienceframeworkpolicy"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
+GET https://graph.microsoft.com/beta/policies/identityExperienceFramework/B2C_1A_Test
 ```
 
 ##### Response

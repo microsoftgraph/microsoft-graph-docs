@@ -1,8 +1,8 @@
-# Delete identityExperienceFrameworkPolicy
+# Copy identityExperienceFrameworkPolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Delete an existing [identityExperienceFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md).
+Make a copy of an [identityExperienceFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md) in the same tenant.
 
 ## Permissions
 
@@ -20,7 +20,11 @@ The work or school account must be a global administrator of the tenant.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /policies/identityExperienceFramework/{id}
+POST /policies/identityExperienceFramework/{id}/copy
+Content-type: application/json
+{
+  "destinationId": "destinationId-value"
+}
 ```
 
 ## Request headers
@@ -48,7 +52,11 @@ The following example deletes an **identityExperienceFrameworkPolicy**.
   "name": "delete_identityExperienceFramework"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/policies/identityExperienceFramework/B2C_1A_SocialAndLocalAccounts_Base
+POST https://graph.microsoft.com/beta/policies/identityExperienceFramework/B2C_1A_SocialAndLocalAccounts_Base/copy
+Content-type: application/json
+{
+  "destinationId": "B2C_1A_SocialAndLocalAccounts_Base_Backup"
+}
 ```
 
 ##### Response

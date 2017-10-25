@@ -1,8 +1,8 @@
-# List identityExperienceFrameworkPolies
+# List identityExperienceFrameworkPolicies
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve all [identityExperienceFrameworkPolies](../resources/identityexperienceframeworkpolicy.md) in the directory.
+Retrieve all [identityExperienceFrameworkPolicies](../resources/identityexperienceframeworkpolicy.md) in the directory.
 
 ## Permissions
 
@@ -35,11 +35,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a collection of [identityProviders](../resources/identityProvider.md) in JSON representation in the response body.
+If successful, this method returns `200 OK` response code and a collection of [identityExperienceFrameworkPolicies](../resources/identityexperienceframeworkpolicy.md) in JSON representation in the response body.
 
 ## Example
 
-The following example retrieves all **identityProvider**.
+The following example retrieves all **identityExperienceFrameworkPolicies**.
 
 ##### Request
 
@@ -48,7 +48,7 @@ The following example retrieves all **identityProvider**.
   "name": "get_identityexperienceframeworkpolicies"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/identityProviders
+GET https://graph.microsoft.com/beta/policies/identityExperienceFramework
 ```
 
 ##### Response
@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/beta/identityProviders
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider",
+  "@odata.type": "microsoft.graph.identityExperienceFrameworkPolicies",
   "isCollection": true
 } -->
 ```http
@@ -80,7 +80,7 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List identityProviders",
+  "description": "List identityExperienceFrameworkPolicies",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

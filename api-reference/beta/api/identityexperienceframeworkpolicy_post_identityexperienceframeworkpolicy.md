@@ -1,8 +1,8 @@
-# Create identityProvider
+# Create identityExperienceFrameworkPolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new [identityProvider](../resources/identityProvider.md) by specifying display name, identityProvider type, client ID, and client secret.
+Create a new [identityExperienceFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md).
 
 ## Permissions
 
@@ -10,7 +10,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityProvider.ReadWrite.All|
+|Delegated (work or school account)|Policy.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|Not supported.|
 
@@ -32,7 +32,7 @@ POST /policies/identityExperienceFramework
 
 ## Request body
 
-In the request body, provide a JSON representation of [identityProvider](../resources/identityProvider.md) object. All the properties listed in the following table are required.
+In the request body, provide a JSON representation of [identityExperienceFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md) object. All the properties listed in the following table are required.
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
@@ -43,17 +43,17 @@ In the request body, provide a JSON representation of [identityProvider](../reso
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [identityProvider](../resources/identityProvider.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns `201 Created` response code and [identityExperienceFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 
-The following example creates an **identityProvider**.
+The following example creates an **identityExperienceFrameworkPolicy**.
 
 ##### Request
 
 <!-- {
   "blockType": "request",
-  "name": "create_identityprovider_from_identityproviders"
+  "name": "create_identityExperienceFrameworkPolicy_from_identityExperienceFrameworkPolicy"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/policies/identityExperienceFramework
@@ -68,7 +68,7 @@ Content-Type:application/xml
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider"
+  "@odata.type": "microsoft.graph.identityExperienceFrameworkPolicy"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -82,7 +82,7 @@ Location /identityExperienceFrameworkPolicies/B2C_1A_SocialAndLocalAccounts_Base
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create identityProvider",
+  "description": "Create identityExperienceFrameworkPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
