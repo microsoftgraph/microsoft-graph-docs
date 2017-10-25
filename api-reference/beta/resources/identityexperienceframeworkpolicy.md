@@ -2,26 +2,26 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents an Identity Experience Framework Policy (also called Custom Policy) in Azure Active Directory B2C.  A custom policy in Azure AD B2C gives you full control over the identity authorization workflow.
+Represents an Identity Experience Framework Policy (also called custom policy) in Azure Active Directory B2C.  An Identity Experience Framework Policy gives you full control over the identity workflow.  Creating one enables:
 
-Creating an Identity Experience Framework Policy in your Azure AD B2C tenant enables you to:
+* Control of each step in the user journey through the identity stack.
+* Federation to any SAML, Open ID Connect, or OAuth2 identity provider.
+* Integration with other systems or user data stores by calling REST endpoints.
+* Transformation of claims and customization of tokens issued to the relying party application.
 
-* Control each step in the user journey through the identity stack.
-* Federate to any SAML, Open ID Connect, or OAuth2 identity provider.
-* Integrate with other systems or user data stores by calling REST endpoints.
-* Transform claims and customize tokens issued to the relying party application.
+For more information, visit [https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get identityExperienceFrameworkPolicy](../api/identityprovider_get.md) |identityExperienceFrameworkPolicy|Read properties of an existing identityExperienceFrameworkPolicy.|
-|[Create identityExperienceFrameworkPolicy](../api/identityprovider_post_identityproviders.md)|identityExperienceFrameworkPolicy|Create a new identityExperienceFrameworkPolicy.|
-|[Update identityExperienceFrameworkPolicy](../api/identityprovider_update.md)|None|Update an existing identityExperienceFrameworkPolicy.|
-|[Delete identityExperienceFrameworkPolicy](../api/identityprovider_delete.md)|None|Delete an existing identityExperienceFrameworkPolicy.|
-|[List identityExperienceFrameworkPolicy](../api/identityprovider_list.md)|identityExperienceFrameworkPolicy collection|List all identityExperienceFrameworkPolicies configured in a tenant.|
-|[Copy identityExperienceFrameworkPolicy](../api/identityprovider_list.md)|identityExperienceFrameworkPolicy|Make a copy of an identityExperienceFrameworkPolicy in the same tenant.|
-|[Swap identityExperienceFrameworkPolicy](../api/identityprovider_list.md)|None|Swap two identityExperienceFrameworkPolicies such as a staged and production policy.|
+|[Create identityExperienceFrameworkPolicy](../api/identityexperienceframeworkpolicy_post_identityexperienceframeworkpolicy.md)|identityExperienceFrameworkPolicy|Create a new identityExperienceFrameworkPolicy.|
+|[Get identityExperienceFrameworkPolicy](../api/identityexperienceframeworkpolicy_get.md) |identityExperienceFrameworkPolicy|Read properties of an existing identityExperienceFrameworkPolicy.|
+|[List identityExperienceFrameworkPolicy](../api/identityexperienceframeworkpolicy_list.md)|identityExperienceFrameworkPolicy collection|List all identityExperienceFrameworkPolicies configured in a tenant.|
+|[Update identityExperienceFrameworkPolicy](../api/identityexperienceframeworkpolicy_update.md)|None|Update an existing identityExperienceFrameworkPolicy.|
+|[Delete identityExperienceFrameworkPolicy](../api/identityexperienceframeworkpolicy_delete.md)|None|Delete an existing identityExperienceFrameworkPolicy.|
+|[Copy identityExperienceFrameworkPolicy](../api/identityexperienceframeworkpolicy_copy.md)|identityExperienceFrameworkPolicy|Make a copy of an identityExperienceFrameworkPolicy in the same tenant.|
+|[Swap identityExperienceFrameworkPolicy](../api/identityexperienceframeworkpolicy_swap.md)|None|Swap two identityExperienceFrameworkPolicies such as a staged and production policy.|
 
 ## Properties
 
