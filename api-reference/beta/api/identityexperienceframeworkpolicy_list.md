@@ -45,7 +45,7 @@ The following example retrieves all **identityExperienceFrameworkPolicies**.
 
 <!-- {
   "blockType": "request",
-  "name": "get_identityexperienceframeworkpolicies"
+  "name": "get__identityexperienceframeworks"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/policies/identityExperienceFramework
@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/beta/policies/identityExperienceFramework
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.identityExperienceFrameworkPolicies",
+  "@odata.type": "microsoft.graph.policy.identityExperienceFramework",
   "isCollection": true
 } -->
 ```http

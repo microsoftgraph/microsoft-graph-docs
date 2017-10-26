@@ -46,7 +46,7 @@ The following example creates an **identityExperienceFrameworkPolicy**.
 
 <!-- {
   "blockType": "request",
-  "name": "create_identityExperienceFrameworkPolicy_from_identityExperienceFrameworkPolicy"
+  "name": "create__identityexperienceframework_from__identityexperienceframework"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/policies/identityExperienceFramework
@@ -61,7 +61,7 @@ Content-Type:application/xml
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.policies.identityExperienceFramework"
+  "@odata.type": "microsoft.graph.policy.identityExperienceFramework"
 } -->
 ```http
 HTTP/1.1 201 Created

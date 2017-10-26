@@ -49,7 +49,7 @@ The following example deletes an **identityExperienceFrameworkPolicy**.
 
 <!-- {
   "blockType": "request",
-  "name": "swap_identityExperienceFramework"
+  "name": "swap_identityexperienceframework"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/policies/identityExperienceFramework/B2C_1A_SocialAndLocalAccounts_Base/swap

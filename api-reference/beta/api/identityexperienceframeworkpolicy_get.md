@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/beta/policies/identityExperienceFramework/B2C_1A
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.policies.identityExperienceFramework"
+  "@odata.type": "microsoft.graph.policy.identityExperienceFramework"
 } -->
 ```http
 HTTP/1.1 200 OK

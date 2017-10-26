@@ -29,7 +29,6 @@ For more information, visit [https://docs.microsoft.com/en-us/azure/active-direc
 |:---------------|:--------|:--------|:--------|:----------|
 |id|String|Yes|No|The id of the policy.|
 
-
 ## JSON representation
 
 The following is a JSON representation of the resource.
@@ -39,4 +38,14 @@ The following is a JSON representation of the resource.
     "@odata.mediaReadLink": "identityExperienceFrameworkPolicies/B2C_1A_Test/$value",
     "id": "B2C_1A_Test"
 }
+```
+
+## XML representation
+
+The following is an XML representation of the policy.  For the complete XML schema, refer to the TrustFrameworkPolicy xsd file here: [https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack).
+
+```xml
+<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base">
+    <!---PolicyContent-->
+</TrustFrameworkPolicy>
 ```

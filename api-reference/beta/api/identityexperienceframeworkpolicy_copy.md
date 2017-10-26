@@ -68,14 +68,14 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.policies.identityExperienceFramework"
+  "@odata.type": "microsoft.graph.policy.identityExperienceFramework"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.mediaReadLink": "identityExperienceFrameworkPolicies/B2C_1A_Test/$value",
-    "id": "B2C_1A_Test"
+    "@odata.mediaReadLink": "identityExperienceFrameworkPolicies/B2C_1A_SocialAndLocalAccounts_Base_Backup/$value",
+    "id": "B2C_1A_SocialAndLocalAccounts_Base_Backup"
 }
 ```
 
