@@ -95,7 +95,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserDetail(period='D7')
+GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserDetail(period='D7')?$format=text/csv
 ```
 
 #### Response
