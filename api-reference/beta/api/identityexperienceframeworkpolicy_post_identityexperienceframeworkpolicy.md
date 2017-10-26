@@ -32,14 +32,7 @@ POST /policies/identityExperienceFramework
 
 ## Request body
 
-In the request body, provide a JSON representation of [identityExperienceFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md) object. All the properties listed in the following table are required.
-
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|clientId|String|The client ID for the application. This is the client ID obtained when registering the application with the identity provider.|
-|clientSecret|String|The client secret for the application. This is the client secret obtained when registering the application with the identity provider.|
-|name|String|The display name of the identity provider.|
-|type|String|The identity provider type. It must be one of the following values: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+In the request body, provide a XML representation of the [identityExperienceFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md) object.
 
 ## Response
 
@@ -68,7 +61,7 @@ Content-Type:application/xml
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.identityExperienceFrameworkPolicy"
+  "@odata.type": "microsoft.graph.policies.identityExperienceFramework"
 } -->
 ```http
 HTTP/1.1 201 Created

@@ -35,7 +35,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a JSON representation of the [identityExperienceFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md) in the response body.
+If successful, this method returns `200 OK` response code and a XML representation of the [identityExperienceFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md) in the response body.
 
 ## Example
 
@@ -45,7 +45,7 @@ The following example retrieves a specific **identityExperienceFrameworkPolicy**
 
 <!-- {
   "blockType": "request",
-  "name": "get_identityexperienceframeworkpolicy"
+  "name": "get_identityexperienceframework"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/policies/identityExperienceFramework/B2C_1A_Test
@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/beta/policies/identityExperienceFramework/B2C_1A
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.microsoft.graph.policy.identityExperienceFramework"
+  "@odata.type": "microsoft.graph.policies.identityExperienceFramework"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -71,7 +71,7 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get identityExperienceFrameworkPolicy",
+  "description": "Get identityExperienceFramework",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

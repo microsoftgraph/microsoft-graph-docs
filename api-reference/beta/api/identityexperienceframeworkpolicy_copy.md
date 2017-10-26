@@ -35,11 +35,15 @@ Content-type: application/json
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, provide a JSON object with the following parameters.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|destinationId|String|The destination ID, for example: `B2C_1A_SocialAndLocal_Backup`.|
 
 ## Response
 
-If successful, this method returns `204 No Content` response code.
+If successful, this method returns `200 OK` response code and a XML representation of the [identityExperienceFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md) in the response body.
 
 ## Example
 
@@ -49,7 +53,7 @@ The following example deletes an **identityExperienceFrameworkPolicy**.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_identityExperienceFramework"
+  "name": "copy_identityExperienceFramework"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/policies/identityExperienceFramework/B2C_1A_SocialAndLocalAccounts_Base/copy
@@ -63,17 +67,23 @@ Content-type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.policies.identityExperienceFramework"
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.mediaReadLink": "identityExperienceFrameworkPolicies/B2C_1A_Test/$value",
+    "id": "B2C_1A_Test"
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete identityExperienceFrameworkPolicy",
+  "description": "Get identityExperienceFramework",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

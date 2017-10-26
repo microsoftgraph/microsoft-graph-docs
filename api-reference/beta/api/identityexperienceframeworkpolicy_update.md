@@ -1,8 +1,8 @@
-# Update identityProvider
+# Update identityExperienceFrameworkPolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update properties in an existing [identityProvider](../resources/identityProvider.md).
+Update properties in an existing [identityExperienceFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md).
 
 ## Permissions
 
@@ -10,7 +10,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityProvider.ReadWrite.All|
+|Delegated (work or school account)|Policy.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|Not supported.|
 
@@ -20,7 +20,7 @@ The work or school account must be a global administrator of the tenant.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /identityProviders/{id}
+PATCH /policies/identityExperienceFramework/{id}
 ```
 
 ## Request headers
@@ -32,13 +32,7 @@ PATCH /identityProviders/{id}
 
 ## Request body
 
-In the request body, provide a JSON object with one or more properties that need to be updated.
-
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|clientId|String|The client ID for the application. This is the client ID obtained when registering the application with the identity provider.|
-|clientSecret|String|The client secret for the application. This is the client secret obtained when registering the application with the identity provider.|
-|name|String|The display name of the identity provider.|
+In the request body, provide a XML representation of the [identityExperienceFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md) object.
 
 ## Response
 
@@ -46,22 +40,20 @@ If successful, this method returns `204 No Content` response code. If unsuccessf
 
 ## Example
 
-The following example updates the definition of the token lifetime **identityProvider** and sets it as the organization default.
+The following example updates **identityExperienceFrameworkPolicy**.
 
 ##### Request
 
 <!-- {
   "blockType": "request",
-  "name": "update_identityprovider"
+  "name": "update_identityexperienceframework"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
-Content-type: application/json
-Content-length: 41
-
-{
-    "clientSecret": "1111111111111"
-}
+PATCH https://graph.microsoft.com/beta/policies/identityExperienceFramework/B2C_1A_SocialAndLocalAccounts_Base
+Content-Type:application/xml
+<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base">
+    <!---PolicyContent-->
+</TrustFrameworkPolicy>
 ```
 
 ##### Response
@@ -78,7 +70,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update identityProvider",
+  "description": "Update identityExperienceFramework",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
