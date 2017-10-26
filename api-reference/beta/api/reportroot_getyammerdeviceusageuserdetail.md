@@ -56,12 +56,12 @@ The CSV file has the following headers for columns.
 - User State
 - State Change Date
 - Last Activity Date
-- Web
-- Windows Phone
-- Android Phone
-- iPhone
-- iPad
-- Other
+- Used Web
+- Used Windows Phone
+- Used Android Phone
+- Used iPhone
+- Used iPad
+- Used Others
 - Report Period
 
 ## Example
@@ -103,5 +103,5 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,User State,State Change Date,Last Activity Date,Web,Windows Phone,Android Phone,iPhone,iPad,Other,Report Period
+Report Refresh Date,User Principal Name,Display Name,User State,State Change Date,Last Activity Date,Used Web,Used Windows Phone,Used Android Phone,Used iPhone,Used iPad,Used Others,Report Period
 ```

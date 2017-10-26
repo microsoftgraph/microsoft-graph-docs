@@ -59,10 +59,6 @@ Content-length: 57
 
 ##### Response
 
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
