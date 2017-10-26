@@ -20,8 +20,6 @@ For more information, visit [https://docs.microsoft.com/en-us/azure/active-direc
 |[List identityExperienceFrameworkPolicy](../api/identityexperienceframeworkpolicy_list.md)|identityExperienceFrameworkPolicy collection|List all identityExperienceFrameworkPolicies configured in a tenant.|
 |[Update identityExperienceFrameworkPolicy](../api/identityexperienceframeworkpolicy_update.md)|None|Update an existing identityExperienceFrameworkPolicy.|
 |[Delete identityExperienceFrameworkPolicy](../api/identityexperienceframeworkpolicy_delete.md)|None|Delete an existing identityExperienceFrameworkPolicy.|
-|[Copy identityExperienceFrameworkPolicy](../api/identityexperienceframeworkpolicy_copy.md)|identityExperienceFrameworkPolicy|Make a copy of an identityExperienceFrameworkPolicy in the same tenant.|
-|[Swap identityExperienceFrameworkPolicy](../api/identityexperienceframeworkpolicy_swap.md)|None|Swap two identityExperienceFrameworkPolicies such as a staged and production policy.|
 
 ## Properties
 
