@@ -36,6 +36,8 @@ In the request URL, provide the chosen query parameter with a valid value.
 
 > **Note:** You need to set either period or date in the URL.
 
+This method supports the `$format`, `$top` and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response. `$format` can be set as either **text/csv** or **application/json**, the default value is text/csv.
+
 ## Request headers
 
 | Name          | Description               |
@@ -44,7 +46,7 @@ In the request URL, provide the chosen query parameter with a valid value.
 
 ## Response
 
-If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
+For the CSV one, if successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
 Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
 
@@ -75,7 +77,13 @@ The CSV file has the following headers for columns.
 - Teams License Assign Date
 - Assigned Products
 
+For the JSON one, if successful, this method returns a `200 OK` response code and an **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object in the response body.
+
 ## Example
+
+### CSV
+
+The following is an example of the CSV one.
 
 #### Request
 
@@ -115,4 +123,72 @@ HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
 Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Has Exchange License,Has OneDrive License,Has SharePoint License,Has Skype For Business License,Has Yammer License,Has Teams License,Exchange Last Activity Date,OneDrive Last Activity Date,SharePoint Last Activity Date,Skype For Business Last Activity Date,Yammer Last Activity Date,Teams Last Activity Date,Exchange License Assign Date,OneDrive License Assign Date,SharePoint License Assign Date,Skype For Business License Assign Date,Yammer License Assign Date,Teams License Assign Date,Assigned Products
+```
+
+### JSON
+
+The following is an example of the JSON one.
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getoffice365activeuserdetail"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserDetail(period='D7')?$format=application/json
+```
+
+#### Response
+
+The following is an example of the response.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.office365ActiveUserDetail"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 853
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ActiveUserDetail)", 
+  "value": [
+    {
+      "reportRefreshDate": "2017-09-01", 
+      "userPrincipalName": "userprincipalname-value", 
+      "displayName": "displayname-value", 
+      "isDeleted": false, 
+      "deletedDate": null, 
+      "hasExchangeLicense": true, 
+      "hasOneDriveLicense": false, 
+      "hasSharePointLicense": false, 
+      "hasSkypeForBusinessLicense": false, 
+      "hasYammerLicense": false, 
+      "hasTeamsLicense": false, 
+      "exchangeLastActivityDate": "2017-08-30", 
+      "oneDriveLastActivityDate": null, 
+      "sharePointLastActivityDate": null, 
+      "skypeForBusinessLastActivityDate": null, 
+      "yammerLastActivityDate": null, 
+      "teamsLastActivityDate": null, 
+      "exchangeLicenseAssignDate": "2016-05-03", 
+      "oneDriveLicenseAssignDate": null, 
+      "sharePointLicenseAssignDate": null, 
+      "skypeForBusinessLicenseAssignDate": null, 
+      "yammerLicenseAssignDate": null, 
+      "teamsLicenseAssignDate": null, 
+      "assignedProducts": [
+        "OFFICE 365 ENTERPRISE E5"
+      ]
+    }
+  ]
+}
 ```
