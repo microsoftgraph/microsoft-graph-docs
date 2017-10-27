@@ -32,7 +32,7 @@ In the request URL, provide the following query parameter with a valid value.
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
-This method supports the `$format` [OData query parameters](../../../concepts/query_parameters.md) to customize the response. `$format` can be set as either **text/csv** or **application/json**, the default value is text/csv.
+This method supports the `$format` [OData query parameters](../../../concepts/query_parameters.md) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
 
 ## Request headers
 
@@ -42,7 +42,9 @@ This method supports the `$format` [OData query parameters](../../../concepts/qu
 
 ## Response
 
-For the CSV one, if successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
+### CSV
+
+If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
 Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
 
@@ -59,13 +61,15 @@ The CSV file has the following headers for columns.
 - Report Date
 - Report Period
 
-For the JSON one, if successful, this method returns a `200 OK` response code and an **[office365ActiveUserCounts](../resources/office365activeusercounts.md)** object in the response body.
+### JSON
+
+If successful, this method returns a `200 OK` response code and an **[office365ActiveUserCounts](../resources/office365activeusercounts.md)** object in the response body.
 
 ## Example
 
 ### CSV
 
-The following is an example of the CSV one.
+The following is an example that outputs CSV.
 
 #### Request
 
@@ -109,7 +113,7 @@ Report Refresh Date,Office 365,Exchange,OneDrive,SharePoint,Skype For Business,Y
 
 ### JSON
 
-The following is an example of the JSON one.
+The following is an example that returns JSON.
 
 #### Request
 

@@ -5,18 +5,18 @@
 | Property                 | Type   | Description                              |
 | :----------------------- | :----- | ---------------------------------------- |
 | reportRefreshDate        | Date   | The latest date of the content.          |
-| exchangeActive           | Int64  | The number of Exchange active user. Any user with email read and send actions are considered as active user. |
-| exchangeInactive         | Int64  | The number of Exchange inactive user.    |
-| oneDriveActive           | Int64  | The number of OneDrive active user. Any user who viewed or edited files, shared files internally or externally, or synced files are considered as active user. |
-| oneDriveInactive         | Int64  | The number of OneDrive inactive user.    |
-| sharePointActive         | Int64  | The number of SharePoint active user. Any user who viewed or edited files, shared files internally or externally, synced files, or viewed SharePoint pages are considered as active user. |
-| sharePointInactive       | Int64  | The number of SharePoint inactive user.  |
-| skypeForBusinessActive   | Int64  | The number of Skype For Business active user. Any user who organized conferences, participated conferences or joined peer-to-peer sessions are considered as active user. |
-| skypeForBusinessInactive | Int64  | The number of Skype For Business inactive user. |
-| yammerActive             | Int64  | The number of Yammer active user. Any user with message post, read, and like actions are considered as active user. |
-| yammerInactive           | Int64  | The number of Yammer inactive user.      |
-| teamsActive              | Int64  | The number of Teams active user. Any user who posted messages in team channels, sent messages in private chat sessions, or participated meetings or calls are considered as active user. |
-| teamsInactive            | Int64  | The number of Teams inactive user.       |
+| exchangeActive           | Int64  | The number of active users on Exchange. Any user who can read and send email is considered an active user. |
+| exchangeInactive         | Int64  | The number of inactive users on Exchange. |
+| oneDriveActive           | Int64  | The number of active users on OneDrive. Any user who viewed or edited files, shared files internally or externally, or synced files is considered an active user. |
+| oneDriveInactive         | Int64  | The number of inactive users on OneDrive. |
+| sharePointActive         | Int64  | The number of active users on SharePoint. Any user who viewed or edited files, shared files internally or externally, synced files, or viewed SharePoint pages is considered an active user. |
+| sharePointInactive       | Int64  | The number of inactive users on SharePoint. |
+| skypeForBusinessActive   | Int64  | The number of active users on Skype For Business. Any user who organized conferences, participated conferences or joined peer-to-peer sessions is considered an active user. |
+| skypeForBusinessInactive | Int64  | The number of inactive users on Skype For Business. |
+| yammerActive             | Int64  | The number of active users on Yammer. Any user who can post, read, or like messages is considered an active user. |
+| yammerInactive           | Int64  | The number of inactive users on Yammer.  |
+| teamsActive              | Int64  | The number of active users on Teams. Any user who posted messages in team channels, sent messages in private chat sessions, or participated in meetings or calls is considered an active user. |
+| teamsInactive            | Int64  | The number of active users on Teams.     |
 | reportPeriod             | String | The range for report dates in days.      |
 
 ## JSON representation
