@@ -24,6 +24,8 @@ You can use Microsoft Graph to build experiences around the user's unique contex
 
 You can do all this and more with the Microsoft Graph API.
 
+>**Note:** When you use the Microsoft Graph API, you agree to the [Microsoft Graph Terms of Use](../misc/terms-of-use.md) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+
 ## Next steps
 
 - Check out some [Featured scenarios](../concepts/featured_scenarios.md).

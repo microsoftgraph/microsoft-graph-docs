@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/EntireRow
-GET /workbook/worksheets/{id|name}/range(<address>)/EntireRow
+GET /workbook/worksheets/{id|name}/range(address='<address>'/EntireRow
 GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireRow
 
 ```

@@ -67,7 +67,7 @@ and managing their data (add, get, update, and delete data) are separate sets of
 
 Because schema extensions are accessible as complex types in instances of the targeted resources, you can do CRUD operations on the custom data in a schema extension in the following ways:
 
-- Use the resource `POST` method to specify custom data when creating a new resource instance.
+- Use the resource `POST` method to specify custom data when creating a new resource instance. Note that there is a [known issue](known_issues.md#creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time) on the **contact**, **event**, **message**, and **post** resources that requires creating a schema extension using a `PATCH` operation.
 - Use the resource `GET` method to read the custom data.
 - Use the resource `PATCH` method to add or update custom data in an existing resource instance.
 - Use the resource `PATCH` method to set the complex type to null, to delete the custom data in the resource instance. 

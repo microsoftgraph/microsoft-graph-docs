@@ -106,7 +106,7 @@ Asia/Damascus
 
 Africa/Johannesburg
 
-Europe/Kiev
+Europe/Kyiv (Kiev)
 
 Europe/Istanbul
 
@@ -140,7 +140,7 @@ Asia/Kabul
 
 Asia/Karachi
 
-Asia/Tashkent
+Asia/Toshkent (Tashkent)
 
 Asia/Kolkata
 
@@ -148,13 +148,13 @@ Asia/Colombo
 
 Asia/Kathmandu
 
-Asia/Almaty
+Asia/Astana (Almaty)
 
 Asia/Dhaka
 
 Asia/Yekaterinburg
 
-Asia/Rangoon
+Asia/Yangon (Rangoon)
 
 Asia/Bangkok
 

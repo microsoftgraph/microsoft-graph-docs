@@ -2,6 +2,18 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
+Submits a email request on behalf of the signed-in user to unsubscribe from an email distribution list. Uses the information in the `List-Unsubscribe` header.
+
+Message senders can use mailing lists in a user-friendly way by including an option for recipients to opt out. They can do so by specifying the `List-Unsubscribe` header in each message following [RFC-2369](http://www.faqs.org/rfcs/rfc2369.html).
+
+**Note** In particular, for the **unsubscribe** action to work, the sender must specify `mailto:` and not URL-based unsubscribe information.
+
+Setting that header would also set the **unsubscribeEnabled** property of the [message](../resources/message.md) instance to `true`, and the **unsubscribeData** property to the header data.
+
+If the **unsubscribeEnabled** property of a message is `true`, you can use the **unsubscribe** action to unsubscribe the user from similar future messages as managed by the message sender.
+
+A successful **unsubscribe** action moves the message to the **Deleted Items** folder. The actual exclusion of the user from future mail distribution is managed by the sender.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -15,9 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id | userPrincipalName}/messages/{id}/unsubscribe
-POST /drive/root/createdByUser/messages/{id}/unsubscribe
-POST /drive/root/lastModifiedByUser/messages/{id}/unsubscribe
-
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -25,10 +34,11 @@ POST /drive/root/lastModifiedByUser/messages/{id}/unsubscribe
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -49,7 +59,7 @@ Here is an example of the response.
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

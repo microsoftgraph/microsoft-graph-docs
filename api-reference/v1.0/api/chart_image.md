@@ -55,7 +55,7 @@ Content-type: application/json;odata.metadata=minimal;odata.streaming=true
 }
 ```
 
-##### Usage
+## Usage
 
 You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
 

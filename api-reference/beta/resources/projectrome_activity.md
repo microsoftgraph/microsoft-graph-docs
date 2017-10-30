@@ -33,7 +33,12 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 |contentUrl | String | Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).|
 |visualElements| [visualInfo](../resources/projectrome_visualinfo.md) | Required. The object containing information to render the activity in the UX.|
 |contentInfo | Untyped JSON object | Optional. A custom piece of data - JSON-LD extensible description of content according to [schema.org](http://schema.org) syntax.|
-|historyItems | [historyItem](../resources/projectrome_historyitem.md) collection | Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.|
+
+## Relationships
+
+|Relationship | Type | Description|
+|:------------|:-----|:-----------|
+|historyItems| [historyItem](../resources/projectrome_historyitem.md) collection | Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.|
 
 ## JSON representation
 
@@ -50,7 +55,8 @@ Here is a JSON representation of the resource.
     "visualElements.attribution",
     "visualElements.description",
     "visualElements.backgroundColor",
-    "visualElements.content"
+    "visualElements.content",
+    "historyItems"
   ],
   "@odata.type": "microsoft.graph.activity"
 }-->
@@ -64,9 +70,11 @@ Here is a JSON representation of the resource.
     "activationUrl": "String (URL)",
     "contentUrl": "String (URL)",
     "fallbackUrl": "String (URL)",
+    "createdDateTime": "DateTimeOffset",
+    "lastModifiedDateTime": "DateTimeOffset",
+    "id": "String",
     "contentInfo": {
-        // JSON object
-        "@data.type": "microsoft.graph.Json",
+        "@data.type": "microsoft.graph.Json"
     },
     "visualElements": {
         "@data.type": "microsoft.graph.visualInfo",
@@ -80,10 +88,12 @@ Here is a JSON representation of the resource.
         "backgroundColor": "String",
         "displayText": "String",
         "content": {
-            // JSON object
             "@data.type": "microsoft.graph.Json"
         }
-    }
+    },
+    "historyItems": [
+        { "@odata.type": "microsoft.graph.historyItem" }
+    ]
 }
 ```
 

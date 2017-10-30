@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/format/font
-GET /workbook/worksheets/{id|name}/range(<address>)/format/font
+GET /workbook/worksheets/{id|name}/range(address='<address>')/format/font
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## Optional query parameters

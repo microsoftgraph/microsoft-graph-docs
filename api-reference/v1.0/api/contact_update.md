@@ -67,7 +67,7 @@ In the request body, supply the values for relevant fields that should be update
 |parentFolderId|String|The ID of the contact's parent folder.|
 |personalNotes|String|The user's notes about the contact.|
 |profession|String|The contact's profession.|
-|spouseName|String|The name of the contact's spouse.|
+|spouseName|String|The name of the contact's spouse/partner.|
 |surname|String|The contact's surname.|
 |title|String|The contact's title.|
 |yomiCompanyName|String|The phonetic Japanese company name of the contact. This property is optional.|

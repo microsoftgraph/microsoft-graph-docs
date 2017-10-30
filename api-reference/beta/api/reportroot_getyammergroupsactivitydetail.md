@@ -1,8 +1,8 @@
-# reportRoot: getYammerGroupsActivityUserDetail
+# reportRoot: getYammerGroupsActivityDetail
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get details about Yammer groups activity by user.
+Get details about Yammer groups activity by group.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Yammer groups activity](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31).
 
@@ -21,8 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } --> 
 
 ```http
-GET /reports/getYammerGroupsActivityUserDetail(period='{period_value}')
-GET /reports/getYammerGroupsActivityUserDetail(date={date_value})
+GET /reports/getYammerGroupsActivityDetail(period='{period_value}')
+GET /reports/getYammerGroupsActivityDetail(date={date_value})
 ```
 
 ## Request parameters
@@ -75,7 +75,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getYammerGroupsActivityUserDetail(period='D7')
+GET https://graph.microsoft.com/beta/reports/getYammerGroupsActivityDetail(period='D7')
 ```
 
 #### Response

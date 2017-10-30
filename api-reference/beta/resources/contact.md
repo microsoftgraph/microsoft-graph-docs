@@ -99,7 +99,7 @@ Here is a JSON representation of the resource
 |phones |[phone](phone.md) collection |Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone. |
 |postalAddresses |[physicalAddress](physicalAddress.md) collection |Addresses associated with the contact, for example, home address and business address. |
 |profession|String|The contact's profession.|
-|spouseName|String|The name of the contact's spouse.|
+|spouseName|String|The name of the contact's spouse/partner.|
 |surname|String|The contact's surname.|
 |title|String|The contact's title.|
 |websites |[website](website.md) collection|Web sites associated with the contact. |

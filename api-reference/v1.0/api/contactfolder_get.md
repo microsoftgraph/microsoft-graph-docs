@@ -30,12 +30,11 @@ GET /me/contactFolders/{id}
 
 This capability is available in only GET operations of:
 
-- Shared contact folders
-- Shared calendars
-- Contacts and events in shared folders
+- Shared contact folders, calendars, and message folders 
+- Contacts, events, and messages in shared folders
 - The above resources in delegated mailboxes
 
-This capability is not available in other operations for contacts, events, and their folders.
+This capability is not available in other operations for contacts, events, messages, and their folders.
 
 
 ## Permissions

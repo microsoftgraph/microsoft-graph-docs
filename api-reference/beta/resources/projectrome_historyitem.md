@@ -38,15 +38,20 @@ Here is a JSON representation of the resource.
     "lastActiveDateTime",
     "activeDurationSeconds"
   ],
-  "@odata.type": "microsoft.graph.historyitem"
+  "@odata.type": "microsoft.graph.historyItem"
 }-->
 
 ```json
 {
+    "status": "EnumType",
+    "createdDateTime": "DateTimeOffset",
+    "lastModifiedDateTime": "DateTimeOffset",
+    "id": "String",
+    "expirationDateTime": "DateTimeOffset",
     "startedDateTime": "DateTimeOffset",
     "userTimezone": "String",
     "lastActiveDateTime": "DateTimeOffset",
-    "activeDurationSeconds":"int",
+    "activeDurationSeconds":"int"
 }
 ```
 

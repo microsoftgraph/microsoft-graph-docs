@@ -8,8 +8,8 @@ You can send an email with this sample, but it does not retrieve the authenticat
 
 - [Get started with Microsoft Graph in an Objectve-C iOS App](ios_objectivec.md)
 
-## iOS Swift Sonnect sample
-This sample uses the Microsoft Graph client library for Objective-C to access the Microsoft Graph endpoint. User authentication is handled by the third-party [NXOAuth2Client](https://github.com/nxtbgthng/OAuth2Client) library. This library lets your app authenticate a user from an on premise Azure Active Directory instance but does not authenticate MSA users.
+## iOS Swift Connect sample
+This sample uses the Microsoft Graph client library for Objective C to access the Microsoft Graph endpoint. User authentication is handled by the third-party [NXOAuth2Client](https://github.com/nxtbgthng/OAuth2Client) library. This library lets your app authenticate a user from an on premise Azure Active Directory instance but does not authenticate MSA users.
 
 The sample shows you how to access the user's Azure profile through the Graph. You also learn how to get the user's profile photo, upload the photo to the user's OneDrive storage and embed the photo in the body of an Outlook email message.
 

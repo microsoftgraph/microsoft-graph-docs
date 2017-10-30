@@ -88,7 +88,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|Permission    |isplay String   |Description |Admin Consent Required |
+|Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Contacts.Read_ |Read user contacts  |Allows the app to read user contacts. |No |
 |_Contacts.Read.Shared_ |Read user and shared contacts |Allows the app to read contacts that the user has permissions to access, including the user's own and shared contacts. |No |

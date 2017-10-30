@@ -26,8 +26,8 @@ Only the read and update operations are supported on tenants; create and delete 
 |assignedPlans|[assignedPlan](assignedplan.md) collection|The collection of service plans associated with the tenant. Not nullable.            |
 |city|String| City name of the address for the organization |
 |companyLastDirSyncTime|DateTimeOffset|The time and date at which the tenant was last synced with the on-premise directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|country|String| Country name of the address for the organization |
-|countryLetterCode|String| Country abbreviation for the organization |
+|country|String| Country/region name of the address for the organization |
+|countryLetterCode|String| Country/region abbreviation for the organization |
 |deletionTimestamp|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |dirSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).|
 |displayName|String|The display name for the tenant.|

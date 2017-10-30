@@ -1,10 +1,10 @@
-# reportRoot: getSharePointSiteUsageUserDetail
+# reportRoot: getOffice365GroupsActivityDetail
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get details about SharePoint site usage by user.
+Get details about Office 365 Groups activity by group.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
+> **Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
 ## Permissions
 
@@ -21,8 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } --> 
 
 ```http
-GET /reports/getSharePointSiteUsageUserDetail(period='{period_value}')
-GET /reports/getSharePointSiteUsageUserDetail(date={date_value})
+GET /reports/getOffice365GroupsActivityDetail(period='{period_value}')
+GET /reports/getOffice365GroupsActivityDetail(date={date_value})
 ```
 
 ## Request parameters
@@ -51,17 +51,22 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns.
 
 - Report Refresh Date
-- Site URL
-- Owner Display Name
+- Group Display Name
 - Is Deleted
+- Owner Principal Name
 - Last Activity Date
-- File Count
-- Active File Count
-- Page View Count
-- Visited Page Count
-- Storage Used (Byte)
-- Storage Allocated (Byte)
-- Root Web Template
+- Group Type
+- Member Count
+- Guest Count
+- Exchange Received Email Count
+- SharePoint Active File Count
+- Yammer Posted Message Count
+- Yammer Read Message Count
+- Yammer Liked Message Count
+- Exchange Mailbox Total Item Count
+- Exchange Mailbox Storage Used (Byte)
+- SharePoint Total File Count
+- SharePoint Site Storage Used (Byte)
 - Report Period
 
 ## Example
@@ -72,11 +77,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getsharepointsiteusageuserdetail"
+  "name": "reportroot_getoffice365groupsactivityuserdetail"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageUserDetail(period='D7')
+GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(period='D7')
 ```
 
 #### Response
@@ -103,5 +108,5 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Report Period
+Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,Guest Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Report Period
 ```

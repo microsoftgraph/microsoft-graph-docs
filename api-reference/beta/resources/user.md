@@ -62,14 +62,15 @@ This resource supports:
 |[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|aboutMe|String|A freeform text entry field for the user to describe themselves.|
-|accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |
+| Property       | Type    | Description |
+|:---------------|:--------|:------------|
+|aboutMe|String|A freeform text entry field for the user to describe themselves.| 
+| accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|The plans that are assigned to the user. Read-only. Not nullable. |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |city|String|The city in which the user is located. Supports $filter.|
+| companyName | String | The company name which the user is associated. Read-only.
 |country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
 |deletedDateTime|DateTimeOffset| The date and time the user was deleted. |
 |department|String|The name for the department in which the user works. Supports $filter.|

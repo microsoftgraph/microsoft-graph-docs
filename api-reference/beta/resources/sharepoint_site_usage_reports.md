@@ -10,7 +10,7 @@ You can get a high level view of the value you are getting from SharePoint in te
 
 | Function                                 | Return Type | Description                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_getsharepointsiteusageuserdetail.md) | Stream      | Get details about SharePoint site usage by user. |
+| [Get site detail](../api/reportroot_getsharepointsiteusagedetail.md) | Stream      | Get details about SharePoint site usage. |
 | [Get file counts](../api/reportroot_getsharepointsiteusagefilecounts.md) | Stream      | Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period. |
 | [Get site counts](../api/reportroot_getsharepointsiteusagesitecounts.md) | Stream      | Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period. |
 | [Get storage](../api/reportroot_getsharepointsiteusagestorage.md) | Stream      | Get the trend of storage allocated and consumed during the reporting period. |

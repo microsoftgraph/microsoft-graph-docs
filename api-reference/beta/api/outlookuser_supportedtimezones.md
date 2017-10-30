@@ -38,7 +38,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ## Parameters
 | Function parameter       | Type | Description|
 |:---------------|:--------|:----------|
-| TimeZoneStandard  | String  | A time zone format. Supported values are: `Windows`, and `Iana` (when the current known problem with the latter is fixed). Optional. |
+| TimeZoneStandard  | String  | A time zone format. Supported values are: `Windows`, and `Iana`. Optional. |
 
 
 ## Request body
@@ -97,7 +97,8 @@ Content-type: application/json
 
 ##### Request 2
 The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format. 
-<-- {
+
+<!-- {
   "blockType": "request",
   "name": "user_supportedtimezones_iana"
 } -->
@@ -108,7 +109,8 @@ GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones(TimeZoneStand
 
 ##### Response 2
 Here is an example of the response. 
-<-- {
+
+<!-- {
   "blockType": "response",
   "name": "user_supportedtimezones_iana",
   "truncated": true,

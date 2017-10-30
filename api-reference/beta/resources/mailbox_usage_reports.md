@@ -10,7 +10,7 @@ You can get information about users with a mailbox and their level of activity w
 
 | Function                                 | Return Type | Description                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_getmailboxusageuserdetail.md) | Stream      | Get details about mailbox usage.         |
+| [Get mailbox detail](../api/reportroot_getmailboxusagedetail.md) | Stream      | Get details about mailbox usage.         |
 | [Get mailbox counts](../api/reportroot_getmailboxusagemailboxcounts.md) | Stream      | Get the total number of user mailboxes in your organization and how many are active each day of the reporting period. A mailbox is considered active if the user sent or read any email. |
 | [Get quota mailbox status counts](../api/reportroot_getmailboxusagequotamailboxstatuscounts.md) | Stream      | Get the count of user mailboxes in each quota category. |
 | [Get storage](../api/reportroot_getmailboxusagestorage.md) | Stream      | Get the amount of storage used in your organization. |

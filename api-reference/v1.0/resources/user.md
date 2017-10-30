@@ -63,7 +63,7 @@ This resource supports:
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |businessPhones|String collection|The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.|
 |city|String|The city in which the user is located. Supports $filter.|
-|companyName|String|The company name which the user is associated.|
+| companyName | String | The company name which the user is associated. Read-only.
 |country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|

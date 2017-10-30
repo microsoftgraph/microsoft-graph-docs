@@ -246,6 +246,11 @@ Change tracking (delta query) is not supported for open or schema extension prop
 
 You cannot specify an open extension at the same time you create an instance of **administrativeUnit**, **device**, **group**, **organization** or **user**. You must first create the instance and then specify the open extension data in a subsequent ``POST`` request on that instance.
 
+### Creating a resource instance and adding schema extension data at the same time
+
+You cannot specify a schema extension in the same operation as creating an instance of **contact**, **event**, **message**, or **post**. 
+You must first create the resource instance and then do a `PATCH` to that instance to add a schema extension and custom data. 
+
 ### Limit of 100 schema extension property values allowed per resource instance
 
 Directory resources, such as **device**, **group** and **user**, currently limit the total number of schema extension property values that can be set on a resource instance, to 100.
