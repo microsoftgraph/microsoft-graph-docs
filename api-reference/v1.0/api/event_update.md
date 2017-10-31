@@ -49,11 +49,11 @@ In the request body, supply the values for relevant fields that should be update
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 |location|[Location](../resources/location.md)|The location of the event.|
 |onlineMeetingUrl|String|A URL for an online meeting.|
-|recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|The recurrence patern for the event.|
+|recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the event.|
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 |sensitivity|String| Possible values are: `Normal`, `Personal`, `Private`, `Confidential`.|
-|showAs|String|The status to show: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1. Possible values are: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
+|showAs|String|The status to show. Possible values are: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
 |start|[DateTimeTimeZone](../resources/datetimetimezone.md)|The start time of the event. <br/><br/>By default, the start time is in UTC. You can specify an optional time zone in StartTimeZone, express the start time in that time zone, and include a time offset from UTC. Note that if you use StartTimeZone, you must specify a value for EndTimeZone as well.<br/><br/>This example specifies February 25, 2015, 7:34pm in Pacific Standard Time: "2015-02-25T19:34:00-08:00".  |
 |subject|String|The text of the event's subject line.|
 
@@ -63,8 +63,11 @@ add, update, or delete your own app-specific data in custom properties of an ext
 ## Response
 
 If successful, this method returns a `200 OK` response code and updated [event](../resources/event.md) object in the response body.
+
 ## Example
+
 ##### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
@@ -82,12 +85,15 @@ Content-length: 285
     "response": "",
     "time": "datetime-value"
   },
+  "recurrence": null,
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
 }
 ```
+
 ##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -106,6 +112,7 @@ Content-length: 285
     "response": "",
     "time": "datetime-value"
   },
+  "recurrence": null,  
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
