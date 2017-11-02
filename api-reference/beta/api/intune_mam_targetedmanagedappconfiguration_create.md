@@ -46,6 +46,7 @@ The following table shows the properties that are required when you create the t
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed|
 |targetedSecurityGroupsCount|Int32|Number of groups to which the configuration is deployed.|
+|isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not.|
 
 
 
@@ -58,7 +59,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/targetedManagedAppConfigurations
 Content-type: application/json
-Content-length: 547
+Content-length: 570
 
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppConfiguration",
@@ -77,7 +78,8 @@ Content-length: 547
   "targetedSecurityGroupIds": [
     "Targeted Security Group Ids value"
   ],
-  "targetedSecurityGroupsCount": 11
+  "targetedSecurityGroupsCount": 11,
+  "isAssigned": true
 }
 ```
 
@@ -86,7 +88,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 655
+Content-Length: 678
 
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppConfiguration",
@@ -107,7 +109,8 @@ Content-Length: 655
   "targetedSecurityGroupIds": [
     "Targeted Security Group Ids value"
   ],
-  "targetedSecurityGroupsCount": 11
+  "targetedSecurityGroupsCount": 11,
+  "isAssigned": true
 }
 ```
 

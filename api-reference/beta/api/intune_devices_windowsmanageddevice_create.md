@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the w
 |chassisType|String|Chassis type of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |deviceType|String|Platform of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `windowsBlue`, `windowsPhoneBlue`, `blackberry`, `palm`, `fakeDevice`, `unknown`.|
-|complianceState|String|Compliance state of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `configManager`.|
+|complianceState|String|Compliance state of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |managementAgent|String|Management channel of the device. Intune, EAS, etc. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`.|
 |osVersion|String|Operating system version of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
@@ -59,7 +59,6 @@ The following table shows the properties that are required when you create the w
 |easDeviceId|String|Exchange ActiveSync Id of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |aadRegistered|Boolean|Whether the device is Azure Active Directory registered. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
-|enrollmentType|String|Enrollment type of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `userEnrollment`, `deviceEnrollment`, `deviceEnrollmentWithUDA`, `azureDomainJoined`, `userEnrollmentWithServiceAccount`, `depDeviceEnrollment`, `depDeviceEnrollmentWithUDA`, `autoEnrollment`, `bulkAzureDomainJoined`, `onPremiseCoManaged`.|
 |deviceEnrollmentType|String|Enrollment type of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |lostModeState|String|Indicates if Lost mode is enabled or disabled Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `disabled`, `enabled`.|
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
@@ -85,6 +84,10 @@ The following table shows the properties that are required when you create the w
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune_devices_configurationmanagerclientenabledfeatures.md)|ConfigrMgr client enabled features Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |wiFiMacAddress|String|Wi-Fi MAC Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune_devices_devicehealthattestationstate.md)|The device health attestation state. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|subscriberCarrier|String|Subscriber Carrier Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|meid|String|MEID Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|totalStorageSpaceInBytes|Int64|Total Storage in Bytes Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|freeStorageSpaceInBytes|Int64|Free Storage in Bytes Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 
 
 
@@ -97,7 +100,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/managedDevices
 Content-type: application/json
-Content-length: 5340
+Content-length: 5445
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -154,7 +157,6 @@ Content-length: 5340
   "easDeviceId": "Eas Device Id value",
   "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
   "aadRegistered": true,
-  "enrollmentType": "userEnrollment",
   "deviceEnrollmentType": "userEnrollment",
   "lostModeState": "enabled",
   "activationLockBypassCode": "Activation Lock Bypass Code value",
@@ -220,7 +222,11 @@ Content-length: 5340
     "bootRevisionListInfo": "Boot Revision List Info value",
     "operatingSystemRevListInfo": "Operating System Rev List Info value",
     "healthStatusMismatchInfo": "Health Status Mismatch Info value"
-  }
+  },
+  "subscriberCarrier": "Subscriber Carrier value",
+  "meid": "Meid value",
+  "totalStorageSpaceInBytes": 8,
+  "freeStorageSpaceInBytes": 7
 }
 ```
 
@@ -229,7 +235,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 5389
+Content-Length: 5494
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -287,7 +293,6 @@ Content-Length: 5389
   "easDeviceId": "Eas Device Id value",
   "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
   "aadRegistered": true,
-  "enrollmentType": "userEnrollment",
   "deviceEnrollmentType": "userEnrollment",
   "lostModeState": "enabled",
   "activationLockBypassCode": "Activation Lock Bypass Code value",
@@ -353,7 +358,11 @@ Content-Length: 5389
     "bootRevisionListInfo": "Boot Revision List Info value",
     "operatingSystemRevListInfo": "Operating System Rev List Info value",
     "healthStatusMismatchInfo": "Health Status Mismatch Info value"
-  }
+  },
+  "subscriberCarrier": "Subscriber Carrier value",
+  "meid": "Meid value",
+  "totalStorageSpaceInBytes": 8,
+  "freeStorageSpaceInBytes": 7
 }
 ```
 

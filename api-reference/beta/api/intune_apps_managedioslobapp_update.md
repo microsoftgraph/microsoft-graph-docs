@@ -63,6 +63,8 @@ The following table shows the properties that are required when you create the [
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The iOS architecture for which this app can run on.|
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |expirationDateTime|DateTimeOffset|The expiration time.|
+|versionNumber|String|The version number of managed iOS Line of Business (LoB) app.|
+|buildNumber|String|The build number of managed iOS Line of Business (LoB) app.|
 
 
 
@@ -75,7 +77,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1206
+Content-length: 1290
 
 {
   "displayName": "Display Name value",
@@ -112,7 +114,9 @@ Content-length: 1206
     "v9_0": true,
     "v10_0": true
   },
-  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
+  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+  "versionNumber": "Version Number value",
+  "buildNumber": "Build Number value"
 }
 ```
 
@@ -121,7 +125,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1369
+Content-Length: 1453
 
 {
   "@odata.type": "#microsoft.graph.managedIOSLobApp",
@@ -161,7 +165,9 @@ Content-Length: 1369
     "v9_0": true,
     "v10_0": true
   },
-  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
+  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+  "versionNumber": "Version Number value",
+  "buildNumber": "Build Number value"
 }
 ```
 

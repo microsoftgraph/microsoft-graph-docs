@@ -37,6 +37,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |appConfigurationGroupAssignments|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) collection|Not yet documented|
+|assignments|[managedDeviceMobileAppConfigurationAssignment](../resources/intune_apps_manageddevicemobileappconfigurationassignment.md) collection|Not yet documented|
 
 
 
@@ -50,7 +51,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/assign
 
 Content-type: application/json
-Content-length: 289
+Content-length: 579
 
 {
   "appConfigurationGroupAssignments": [
@@ -59,6 +60,15 @@ Content-length: 289
       "appConfiguration": "App Configuration value",
       "targetGroupId": "Target Group Id value",
       "id": "347b9b52-9b52-347b-529b-7b34529b7b34"
+    }
+  ],
+  "assignments": [
+    {
+      "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment",
+      "id": "4df81c9c-1c9c-4df8-9c1c-f84d9c1cf84d",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      }
     }
   ]
 }

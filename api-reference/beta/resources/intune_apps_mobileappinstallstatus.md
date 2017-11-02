@@ -27,6 +27,7 @@ Contains properties for the installation state of a mobile app for a device.
 |osDescription|String|OS Description|
 |userName|String|Device User Name|
 |userPrincipalName|String|User Principal Name|
+|displayVersion|String|Human readable version of the application|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -53,7 +54,8 @@ Here is a JSON representation of the resource.
   "osVersion": "String",
   "osDescription": "String",
   "userName": "String",
-  "userPrincipalName": "String"
+  "userPrincipalName": "String",
+  "displayVersion": "String"
 }
 ```
 

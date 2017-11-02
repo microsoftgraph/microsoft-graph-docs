@@ -37,6 +37,7 @@ An abstract class containing the base properties for Intune mobile apps.
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app.|
 |groupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|The list of group assignments for this mobile app.|
+|assignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) collection|The list of group assignments for this mobile app.|
 |installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary.|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app.|
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app.|

@@ -5,9 +5,6 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Device compliance policy group assignment.
-
-Inherits from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)
-
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -20,14 +17,14 @@ Inherits from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)|
+|id|String|Key of the entity.|
 |targetGroupId|String|The Id of the AAD group we are targeting the device compliance policy to.|
 |excludeGroup|Boolean|Indicates if this group is should be excluded. Defaults that the group should be included|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceCompliancePolicy|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|The navigation link to the  device compliance polic targeted. Inherited from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)|
+|deviceCompliancePolicy|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|The navigation link to the  device compliance polic targeted.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

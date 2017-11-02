@@ -45,6 +45,12 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |secureBootEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation - secure boot is enabled.|
 |codeIntegrityEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation.|
 |storageRequireEncryption|Boolean|Require encryption on windows devices.|
+|activeFirewallRequired|Boolean|Require active firewall on Windows devices.|
+|uacRequired|Boolean|Require UAC on Windows devices.|
+|defenderEnabled|Boolean|Require Windows Defender Antimalware on Windows devices.|
+|defenderVersion|String|Require Windows Defender Antimalware minimum version on Windows devices.|
+|signatureOutOfDate|Boolean|Require Windows Defender Antimalware Signature to be up to date on Windows devices.|
+|rtpEnabled|Boolean|Require Windows Defender Antimalware Real-Time Protection on Windows devices.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -56,6 +62,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune_deviceconfig_devicecompliancedeviceoverview.md)|Device compliance devices status overview Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |userStatusOverview|[deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md)|Device compliance users status overview Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Compliance Setting State Device Summary Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|assignments|[deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) collection|The collection of assignments for this compliance policy. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -92,7 +99,13 @@ Here is a JSON representation of the resource.
   "bitLockerEnabled": true,
   "secureBootEnabled": true,
   "codeIntegrityEnabled": true,
-  "storageRequireEncryption": true
+  "storageRequireEncryption": true,
+  "activeFirewallRequired": true,
+  "uacRequired": true,
+  "defenderEnabled": true,
+  "defenderVersion": "String",
+  "signatureOutOfDate": true,
+  "rtpEnabled": true
 }
 ```
 

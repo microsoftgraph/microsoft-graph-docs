@@ -44,7 +44,7 @@ Devices that are managed or pre-enrolled through Intune
 |chassisType|String|Chassis type of the device. Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc.|
 |deviceType|String|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `windowsBlue`, `windowsPhoneBlue`, `blackberry`, `palm`, `fakeDevice`, `unknown`.|
-|complianceState|String|Compliance state of the device. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `configManager`.|
+|complianceState|String|Compliance state of the device. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted.|
 |managementAgent|String|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`.|
 |osVersion|String|Operating system version of the device.|
@@ -52,7 +52,6 @@ Devices that are managed or pre-enrolled through Intune
 |easDeviceId|String|Exchange ActiveSync Id of the device.|
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device.|
 |aadRegistered|Boolean|Whether the device is Azure Active Directory registered.|
-|enrollmentType|String|Enrollment type of the device. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollment`, `deviceEnrollmentWithUDA`, `azureDomainJoined`, `userEnrollmentWithServiceAccount`, `depDeviceEnrollment`, `depDeviceEnrollmentWithUDA`, `autoEnrollment`, `bulkAzureDomainJoined`, `onPremiseCoManaged`.|
 |deviceEnrollmentType|String|Enrollment type of the device. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |lostModeState|String|Indicates if Lost mode is enabled or disabled Possible values are: `disabled`, `enabled`.|
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed.|
@@ -78,6 +77,10 @@ Devices that are managed or pre-enrolled through Intune
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune_devices_configurationmanagerclientenabledfeatures.md)|ConfigrMgr client enabled features|
 |wiFiMacAddress|String|Wi-Fi MAC|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune_devices_devicehealthattestationstate.md)|The device health attestation state.|
+|subscriberCarrier|String|Subscriber Carrier|
+|meid|String|MEID|
+|totalStorageSpaceInBytes|Int64|Total Storage in Bytes|
+|freeStorageSpaceInBytes|Int64|Free Storage in Bytes|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -150,7 +153,6 @@ Here is a JSON representation of the resource.
   "easDeviceId": "String",
   "easActivationDateTime": "String (timestamp)",
   "aadRegistered": true,
-  "enrollmentType": "String",
   "deviceEnrollmentType": "String",
   "lostModeState": "String",
   "activationLockBypassCode": "String",
@@ -216,7 +218,11 @@ Here is a JSON representation of the resource.
     "bootRevisionListInfo": "String",
     "operatingSystemRevListInfo": "String",
     "healthStatusMismatchInfo": "String"
-  }
+  },
+  "subscriberCarrier": "String",
+  "meid": "String",
+  "totalStorageSpaceInBytes": 1024,
+  "freeStorageSpaceInBytes": 1024
 }
 ```
 

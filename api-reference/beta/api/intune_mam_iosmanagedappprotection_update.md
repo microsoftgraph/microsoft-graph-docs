@@ -58,6 +58,7 @@ The following table shows the properties that are required when you create the [
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `any`, `numeric`, `alphanumeric`, `alphanumericAndSymbol`.|
+|periodBeforePinReset|Duration|TimePeriod before the all-level pin must be reset if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `oneDriveForBusiness`, `sharePoint`, `localStorage`.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -68,6 +69,7 @@ The following table shows the properties that are required when you create the [
 |minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |targetedSecurityGroupsCount|Int32|The number of groups to which the configuration is deployed. Read only property. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
+|isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |appDataEncryptionType|String|Type of encryption which should be used for data in a managed app. Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
@@ -84,7 +86,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 Content-type: application/json
-Content-length: 1579
+Content-length: 1648
 
 {
   "displayName": "Display Name value",
@@ -107,6 +109,7 @@ Content-length: 1579
   "simplePinBlocked": true,
   "minimumPinLength": 0,
   "pinCharacterSet": "numeric",
+  "periodBeforePinReset": "PT3M29.6631862S",
   "allowedDataStorageLocations": [
     "sharePoint"
   ],
@@ -119,6 +122,7 @@ Content-length: 1579
   "minimumRequiredAppVersion": "Minimum Required App Version value",
   "minimumWarningAppVersion": "Minimum Warning App Version value",
   "targetedSecurityGroupsCount": 11,
+  "isAssigned": true,
   "targetedSecurityGroupIds": [
     "Targeted Security Group Ids value"
   ],
@@ -133,7 +137,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1749
+Content-Length: 1818
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -159,6 +163,7 @@ Content-Length: 1749
   "simplePinBlocked": true,
   "minimumPinLength": 0,
   "pinCharacterSet": "numeric",
+  "periodBeforePinReset": "PT3M29.6631862S",
   "allowedDataStorageLocations": [
     "sharePoint"
   ],
@@ -171,6 +176,7 @@ Content-Length: 1749
   "minimumRequiredAppVersion": "Minimum Required App Version value",
   "minimumWarningAppVersion": "Minimum Warning App Version value",
   "targetedSecurityGroupsCount": 11,
+  "isAssigned": true,
   "targetedSecurityGroupIds": [
     "Targeted Security Group Ids value"
   ],

@@ -33,6 +33,7 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune_devicec
 |homeScreenDockIcons|[iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md) collection|A list of app and folders to appear on the Home Screen Dock. This collection can contain a maximum of 500 elements.|
 |homeScreenPages|[iosHomeScreenPage](../resources/intune_deviceconfig_ioshomescreenpage.md) collection|A list of pages on the Home Screen. This collection can contain a maximum of 500 elements.|
 |notificationSettings|[iosNotificationSettings](../resources/intune_deviceconfig_iosnotificationsettings.md) collection|Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.|
+|singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune_deviceconfig_iossinglesignonsettings.md)|The Kerberos login settings that enable apps on receiving devices to authenticate smoothly.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -43,6 +44,7 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune_devicec
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|identityCertificateForClientAuthentication|[iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)|Identity Certificate for the renewal of Kerberos ticket used in single sign-on settings.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -65,7 +67,9 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.airPrintDestination",
       "ipAddress": "String",
-      "resourcePath": "String"
+      "resourcePath": "String",
+      "port": 1024,
+      "forceTls": true
     }
   ],
   "assetTagTemplate": "String",
@@ -138,7 +142,25 @@ Here is a JSON representation of the resource.
       "badgesEnabled": true,
       "soundsEnabled": true
     }
-  ]
+  ],
+  "singleSignOnSettings": {
+    "@odata.type": "microsoft.graph.iosSingleSignOnSettings",
+    "allowedAppsList": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "String",
+        "publisher": "String",
+        "appStoreUrl": "String",
+        "appId": "String"
+      }
+    ],
+    "allowedUrls": [
+      "String"
+    ],
+    "displayName": "String",
+    "kerberosPrincipalName": "String",
+    "kerberosRealm": "String"
+  }
 }
 ```
 

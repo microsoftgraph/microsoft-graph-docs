@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the [
 |chassisType|String|Chassis type of the device. Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc.|
 |deviceType|String|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `windowsBlue`, `windowsPhoneBlue`, `blackberry`, `palm`, `fakeDevice`, `unknown`.|
-|complianceState|String|Compliance state of the device. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `configManager`.|
+|complianceState|String|Compliance state of the device. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted.|
 |managementAgent|String|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`.|
 |osVersion|String|Operating system version of the device.|
@@ -60,7 +60,6 @@ The following table shows the properties that are required when you create the [
 |easDeviceId|String|Exchange ActiveSync Id of the device.|
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device.|
 |aadRegistered|Boolean|Whether the device is Azure Active Directory registered.|
-|enrollmentType|String|Enrollment type of the device. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollment`, `deviceEnrollmentWithUDA`, `azureDomainJoined`, `userEnrollmentWithServiceAccount`, `depDeviceEnrollment`, `depDeviceEnrollmentWithUDA`, `autoEnrollment`, `bulkAzureDomainJoined`, `onPremiseCoManaged`.|
 |deviceEnrollmentType|String|Enrollment type of the device. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |lostModeState|String|Indicates if Lost mode is enabled or disabled Possible values are: `disabled`, `enabled`.|
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed.|
@@ -86,6 +85,10 @@ The following table shows the properties that are required when you create the [
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune_devices_configurationmanagerclientenabledfeatures.md)|ConfigrMgr client enabled features|
 |wiFiMacAddress|String|Wi-Fi MAC|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune_devices_devicehealthattestationstate.md)|The device health attestation state.|
+|subscriberCarrier|String|Subscriber Carrier|
+|meid|String|MEID|
+|totalStorageSpaceInBytes|Int64|Total Storage in Bytes|
+|freeStorageSpaceInBytes|Int64|Free Storage in Bytes|
 
 
 
@@ -98,7 +101,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
 Content-type: application/json
-Content-length: 5281
+Content-length: 5386
 
 {
   "userId": "User Id value",
@@ -154,7 +157,6 @@ Content-length: 5281
   "easDeviceId": "Eas Device Id value",
   "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
   "aadRegistered": true,
-  "enrollmentType": "userEnrollment",
   "deviceEnrollmentType": "userEnrollment",
   "lostModeState": "enabled",
   "activationLockBypassCode": "Activation Lock Bypass Code value",
@@ -220,7 +222,11 @@ Content-length: 5281
     "bootRevisionListInfo": "Boot Revision List Info value",
     "operatingSystemRevListInfo": "Operating System Rev List Info value",
     "healthStatusMismatchInfo": "Health Status Mismatch Info value"
-  }
+  },
+  "subscriberCarrier": "Subscriber Carrier value",
+  "meid": "Meid value",
+  "totalStorageSpaceInBytes": 8,
+  "freeStorageSpaceInBytes": 7
 }
 ```
 
@@ -229,7 +235,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5382
+Content-Length: 5487
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -287,7 +293,6 @@ Content-Length: 5382
   "easDeviceId": "Eas Device Id value",
   "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
   "aadRegistered": true,
-  "enrollmentType": "userEnrollment",
   "deviceEnrollmentType": "userEnrollment",
   "lostModeState": "enabled",
   "activationLockBypassCode": "Activation Lock Bypass Code value",
@@ -353,7 +358,11 @@ Content-Length: 5382
     "bootRevisionListInfo": "Boot Revision List Info value",
     "operatingSystemRevListInfo": "Operating System Rev List Info value",
     "healthStatusMismatchInfo": "Health Status Mismatch Info value"
-  }
+  },
+  "subscriberCarrier": "Subscriber Carrier value",
+  "meid": "Meid value",
+  "totalStorageSpaceInBytes": 8,
+  "freeStorageSpaceInBytes": 7
 }
 ```
 

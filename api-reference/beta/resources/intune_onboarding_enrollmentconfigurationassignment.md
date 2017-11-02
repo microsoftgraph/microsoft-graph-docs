@@ -18,7 +18,7 @@ Not yet documented
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Not yet documented|
-|assignmentTarget|[deviceAndAppManagementAssignmentTarget](../resources/intune_onboarding_deviceandappmanagementassignmenttarget.md)|Not yet documented|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_onboarding_deviceandappmanagementassignmenttarget.md)|Not yet documented|
 
 ## Relationships
 None
@@ -34,7 +34,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "id": "String (identifier)",
-  "assignmentTarget": {
+  "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
   }
 }

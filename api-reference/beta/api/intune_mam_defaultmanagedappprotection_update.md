@@ -58,6 +58,7 @@ The following table shows the properties that are required when you create the [
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `any`, `numeric`, `alphanumeric`, `alphanumericAndSymbol`.|
+|periodBeforePinReset|Duration|TimePeriod before the all-level pin must be reset if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `oneDriveForBusiness`, `sharePoint`, `localStorage`.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -74,6 +75,8 @@ The following table shows the properties that are required when you create the [
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |customSettings|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|A set of string key and string value pairs to be sent to the affected users, unalterned by this service|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
+|minimumRequiredPatchVersion|String|Define the oldest required Android security patch level a user can have to gain secure access to the app.|
+|minimumWarningPatchVersion|String|Define the oldest recommended Android security patch level a user can have for secure access to the app.|
 
 
 
@@ -86,7 +89,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 1737
+Content-length: 1929
 
 {
   "displayName": "Display Name value",
@@ -109,6 +112,7 @@ Content-length: 1737
   "simplePinBlocked": true,
   "minimumPinLength": 0,
   "pinCharacterSet": "numeric",
+  "periodBeforePinReset": "PT3M29.6631862S",
   "allowedDataStorageLocations": [
     "sharePoint"
   ],
@@ -132,7 +136,9 @@ Content-length: 1737
       "value": "Value value"
     }
   ],
-  "deployedAppCount": 0
+  "deployedAppCount": 0,
+  "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
+  "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
 }
 ```
 
@@ -141,7 +147,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1911
+Content-Length: 2103
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -167,6 +173,7 @@ Content-Length: 1911
   "simplePinBlocked": true,
   "minimumPinLength": 0,
   "pinCharacterSet": "numeric",
+  "periodBeforePinReset": "PT3M29.6631862S",
   "allowedDataStorageLocations": [
     "sharePoint"
   ],
@@ -190,7 +197,9 @@ Content-Length: 1911
       "value": "Value value"
     }
   ],
-  "deployedAppCount": 0
+  "deployedAppCount": 0,
+  "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
+  "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
 }
 ```
 

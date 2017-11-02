@@ -62,6 +62,7 @@ The following table shows the properties that are required when you create the [
 |vppTokenOrganizationName|String|The organization associated with the Apple Volume Purchase Program Token|
 |vppTokenAccountType|String|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
 |vppTokenAppleId|String|The Apple Id associated with the given Apple Volume Purchase Program Token.|
+|bundleId|String|The Identity Name.|
 
 
 
@@ -74,7 +75,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1188
+Content-length: 1222
 
 {
   "displayName": "Display Name value",
@@ -109,7 +110,8 @@ Content-length: 1188
   },
   "vppTokenOrganizationName": "Vpp Token Organization Name value",
   "vppTokenAccountType": "education",
-  "vppTokenAppleId": "Vpp Token Apple Id value"
+  "vppTokenAppleId": "Vpp Token Apple Id value",
+  "bundleId": "Bundle Id value"
 }
 ```
 
@@ -118,7 +120,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1344
+Content-Length: 1378
 
 {
   "@odata.type": "#microsoft.graph.iosVppApp",
@@ -156,7 +158,8 @@ Content-Length: 1344
   },
   "vppTokenOrganizationName": "Vpp Token Organization Name value",
   "vppTokenAccountType": "education",
-  "vppTokenAppleId": "Vpp Token Apple Id value"
+  "vppTokenAppleId": "Vpp Token Apple Id value",
+  "bundleId": "Bundle Id value"
 }
 ```
 

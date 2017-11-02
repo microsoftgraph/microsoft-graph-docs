@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5141
+Content-Length: 5953
 
 {
   "value": [
@@ -91,6 +91,15 @@ Content-Length: 5141
           "productName": "Product Name value"
         }
       ],
+      "protectedApps": [
+        {
+          "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
+          "displayName": "Display Name value",
+          "description": "Description value",
+          "publisherName": "Publisher Name value",
+          "productName": "Product Name value"
+        }
+      ],
       "exemptApps": [
         {
           "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
@@ -116,6 +125,19 @@ Content-Length: 5141
           "resources": [
             {
               "@odata.type": "microsoft.graph.windowsInformationProtectionCloudResource",
+              "ipAddressOrFQDN": "Ip Address Or FQDN value",
+              "proxy": "Proxy value"
+            }
+          ]
+        }
+      ],
+      "enterpriseProxiedDomains": [
+        {
+          "@odata.type": "microsoft.graph.windowsInformationProtectionProxiedDomainCollection",
+          "displayName": "Display Name value",
+          "proxiedDomains": [
+            {
+              "@odata.type": "microsoft.graph.proxiedDomain",
               "ipAddressOrFQDN": "Ip Address Or FQDN value",
               "proxy": "Proxy value"
             }
@@ -177,6 +199,7 @@ Content-Length: 5141
       "targetedSecurityGroupIds": [
         "Targeted Security Group Ids value"
       ],
+      "isAssigned": true,
       "revokeOnMdmHandoffDisabled": true,
       "mdmEnrollmentUrl": "https://example.com/mdmEnrollmentUrl/",
       "windowsHelloForBusinessBlocked": true,

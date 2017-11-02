@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /iosMobileAppConfigurations
+POST /deviceAppManagement/mobileAppConfigurations
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [iosMobil
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/iosMobileAppConfigurations
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
 Content-length: 619
 

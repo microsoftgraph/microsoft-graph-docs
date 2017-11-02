@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 238
+Content-Length: 237
 
 {
   "value": [
@@ -55,7 +55,7 @@ Content-Length: 238
       "@odata.type": "#microsoft.graph.eBookGroupAssignment",
       "targetGroupId": "Target Group Id value",
       "id": "6cb57cb9-7cb9-6cb5-b97c-b56cb97cb56c",
-      "installIntent": "available"
+      "installIntent": "required"
     }
   ]
 }

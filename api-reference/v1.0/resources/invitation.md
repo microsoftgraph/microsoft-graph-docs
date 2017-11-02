@@ -26,7 +26,7 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 |sendInvitationMessage|Boolean|Indicates whether an email should be sent to the user being invited or not. The default is false.|
 |inviteRedirectUrl|String|The URL user should be redirected to once the invitation is redeemed. Required.|
 |inviteRedeemUrl|String|The URL user can use to redeem his invitation. Read-Only|
-|invitedUserType|String|The userType of the user being invited. By default, this is Guest. You can invite as Member if you're are company administrator. |
+|invitedUserType|String|The userType of the user being invited. By default, this is Guest. You can invite as Member if you are a company administrator. |
 |status|String|The status of the invitation. Possible values: PendingAcceptance, Completed, InProgress, and Error|
 
 ## Relationships

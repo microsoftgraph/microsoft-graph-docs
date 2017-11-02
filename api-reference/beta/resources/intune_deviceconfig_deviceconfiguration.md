@@ -12,6 +12,7 @@ Device Configuration.
 |[Get deviceConfiguration](../api/intune_deviceconfig_deviceconfiguration_get.md)|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|Read properties and relationships of the [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) object.|
 |[assign action](../api/intune_deviceconfig_deviceconfiguration_assign.md)|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) collection|Not yet documented|
 |[windowsPrivacyAccessControls action](../api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols.md)|None|Not yet documented|
+|[assignedAccessMultiModeProfiles action](../api/intune_deviceconfig_deviceconfiguration_assignedaccessmultimodeprofiles.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|

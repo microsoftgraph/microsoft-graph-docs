@@ -40,6 +40,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |mobileAppGroupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|Not yet documented|
+|mobileAppAssignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) collection|Not yet documented|
 
 
 
@@ -53,16 +54,29 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assign
 
 Content-type: application/json
-Content-length: 325
+Content-length: 728
 
 {
   "mobileAppGroupAssignments": [
     {
       "@odata.type": "#microsoft.graph.mobileAppGroupAssignment",
+      "id": "ce4d1a28-1a28-ce4d-281a-4dce281a4dce",
       "targetGroupId": "Target Group Id value",
       "vpnConfigurationId": "Vpn Configuration Id value",
-      "id": "ce4d1a28-1a28-ce4d-281a-4dce281a4dce",
       "installIntent": "notApplicable"
+    }
+  ],
+  "mobileAppAssignments": [
+    {
+      "@odata.type": "#microsoft.graph.mobileAppAssignment",
+      "id": "591620b7-20b7-5916-b720-1659b7201659",
+      "intent": "required",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      },
+      "settings": {
+        "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+      }
     }
   ]
 }

@@ -59,7 +59,9 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.airPrintDestination",
       "ipAddress": "String",
-      "resourcePath": "String"
+      "resourcePath": "String",
+      "port": 1024,
+      "forceTls": true
     }
   ]
 }

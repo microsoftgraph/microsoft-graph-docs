@@ -1269,6 +1269,14 @@
         </Item>
         <Item text="File encryption info" url="/en-us/api-reference/beta/resources/intune_apps_fileencryptioninfo"/>
         <Item text="iOS device type" url="/en-us/api-reference/beta/resources/intune_apps_iosdevicetype"/>
+        <Item text="iOS LOB app provisioning configuration assignment" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfigurationassignment">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_update"/>
+          <Item text="assign action" url="/en-us/graph/docs/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_assign" />
+        </Item>
         <Item text="iOS LOB application" url="/en-us/api-reference/beta/resources/intune_apps_ioslobapp">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_delete"/>
@@ -1335,6 +1343,21 @@
           <Item text="List device install states" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list_deviceinstallstate"/>
           <Item text="List user install state summaries" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list_userinstallstatesummary"/>
         </Item>
+        <Item text="iOS VPP e-book assignment" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_iosvppebookassignment">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_update"/>
+        </Item>
+        <Item text="Managed device mobile app configuration assignment" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationassignment">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_update"/>
+          <Item text="assign action" url="/en-us/graph/docs/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign" />
+        </Item>
         <Item text="Managed device mobile app configuration device summary" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_get"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_update"/>
@@ -1349,8 +1372,23 @@
           <Item text="List e-book group assignments" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_ebookgroupassignment"/>
           <Item text="List device install states" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_deviceinstallstate"/>
           <Item text="List user install state summaries" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_userinstallstatesummary"/>
-          <Item text="Assign" url="/en-us/graph/docs/api-reference/beta/api/intune_books_managedebook_assign"/>
+          <Item text="Assign action" url="/en-us/graph/docs/api-reference/beta/api/intune_books_managedebook_assign"/>
         </Item>
+        <Item text="Managed e-book assignment" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_managedebookassignment">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_update"/>
+      </Item>
+      <Item text="Mobile app assignment" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappassignment">
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_list"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_get"/>
+        <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_create"/>
+        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_delete"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_update"/>
+        <Item text="assign action" url="/en-us/graph/docs/api-reference/beta/api/intune_apps_mobileapp_assign" />
+      </Item>
         <Item text="Mobile app configuration" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration">
           <Item text="Assign" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign"/>
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_create"/>
@@ -1673,6 +1711,13 @@
           <Item text="List" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsacceptancestatus_list"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsacceptancestatus_update"/>
         </Item>
+        <Item text="Terms and conditions assignment" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_companyterms_termsandconditionsassignment">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_update"/>
+        </Item>
         <Item text="Terms and conditions group assignment" url="/en-us/api-reference/beta/resources/intune_companyterms_termsandconditionsgroupassignment">
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_delete"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_get"/>
@@ -1786,6 +1831,13 @@
           <Item text="List device configuration group assignment" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_list_deviceconfigurationgroupassignment"/>
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_list_deviceconfigurationuserstatus"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_update"/>
+        </Item>
+        <Item text="Android device compliance local action lock device with passcode" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_update"/>
         </Item>
         <Item text="Android EAS email profile configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androideasemailprofileconfiguration">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_androideasemailprofileconfiguration_create"/>
@@ -2121,6 +2173,7 @@
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_get"/>
           <Item text="Get device compliance overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_get_devicecompliancedeviceoverview"/>
           <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list"/>
+          <Item text="assign action" url="/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_assign" />
           <Item text="List device compliance status" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancedevicestatus"/>
           <Item text="List device compliance policy group assigment" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancepolicygroupassignment"/>
           <Item text="List device compliance scheduled action for rule" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancescheduledactionforrule"/>
@@ -2186,7 +2239,7 @@
           <Item text="Assign" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assign"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get"/>
           <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list"/>
-
+          <Item text="assignedAccessMultiModeProfiles" url="/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assignedaccessmultimodeprofiles" />
           <Item text="windowsPrivacyAccessControls" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols"/>
         </Item>
         <Item text="Device configuration assignment" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationassignment">
@@ -2726,7 +2779,14 @@
           <Item text="List device compliance user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10mobilecompliancepolicy_list_devicecomplianceuserstatus"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10mobilecompliancepolicy_update"/>
         </Item>
-        <Item text="Windows 10 Pkcs certificate profile" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10pkcscertificateprofile">
+        <Item text="Windows 10 PFX import certificate profile" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10pfximportcertificateprofile">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_update"/>
+        </Item>
+        <Item text="Windows 10 PKCS certificate profile" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10pkcscertificateprofile">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_delete"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_get"/>
@@ -2737,6 +2797,7 @@
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_list_deviceconfigurationuserstatus"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_update"/>
         </Item>
+        <Item text="Windows 10 proxy server" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10vpnproxyserver"/>
         <Item text="Windows 10 secure assessment configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10secureassessmentconfiguration">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10secureassessmentconfiguration_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10secureassessmentconfiguration_delete"/>
@@ -2771,7 +2832,6 @@
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10vpnconfiguration_list_deviceconfigurationuserstatus"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10vpnconfiguration_update"/>
         </Item>
-        <Item text="Windows 10 proxy server" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10vpnproxyserver"/>
         <Item text="Windows 8.1 cerficate profile base" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows81certificateprofilebase">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81certificateprofilebase_get"/>
           <Item text="Get device configuration overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81certificateprofilebase_get_deviceconfigurationdeviceoverview"/>
@@ -2849,6 +2909,13 @@
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81wifiimportconfiguration_list_deviceconfigurationuserstatus"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81wifiimportconfiguration_update"/>
         </Item>
+        <Item text="Windows assigned access profile" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsassignedaccessprofile">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_update"/>
+        </Item>
         <Item text="Windows certificate profile base" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowscertificateprofilebase">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_get"/>
@@ -2858,6 +2925,13 @@
           <Item text="Get device configuration device overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_get_deviceconfigurationdeviceoverview"/>
           <Item text="Get device configuration user overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_get_deviceconfigurationuseroverview"/>
         </Item>
+        <Item text="Windows domain join configuration" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsdomainjoinconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_update"/>
+        </Item>
         <Item text="Windows malware information" url="/en-us/api-reference/beta/resources/intune_endpointprotection_windowsmalwareinformation">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_get"/>
@@ -2865,6 +2939,20 @@
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_update"/>
           <Item text="List Windows protection states" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_list_windowsprotectionstate"/>
+        </Item>
+        <Item text="Windows Defender advanced threat protection configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration">
+            <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update"/>
+          <Item text="List device configuration group assignments" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationgroupassignment"/>
+          <Item text="List device configuration device statuses" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationdevicestatus"/>
+          <Item text="List device configuration user statuses" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationuserstatus"/>
+          <Item text="Get device configuration device overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdeviceoverview"/>
+          <Item text="Get device configuration user overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationuseroverview"/>
+          <Item text="List setting state device summaries" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_settingstatedevicesummary"/>
+          <Item text="Get device configuration device state summary" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdevicestatesummary"/>
         </Item>
         <Item text="Windows Phone 8.1 certificate profile base" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81certificateprofilebase">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81certificateprofilebase_get"/>
@@ -2885,20 +2973,6 @@
           <Item text="List device compliance schedule action for rule" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_list_devicecompliancescheduledactionforrule"/>
           <Item text="List device compliance user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_list_devicecomplianceuserstatus"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_update"/>
-        </Item>
-        <Item text="Windows Defender advanced threat protection configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration">
-            <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_create"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update"/>
-          <Item text="List device configuration group assignments" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationgroupassignment"/>
-          <Item text="List device configuration device statuses" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationdevicestatus"/>
-          <Item text="List device configuration user statuses" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationuserstatus"/>
-          <Item text="Get device configuration device overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdeviceoverview"/>
-          <Item text="Get device configuration user overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationuseroverview"/>
-          <Item text="List setting state device summaries" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_settingstatedevicesummary"/>
-          <Item text="Get device configuration device state summary" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdevicestatesummary"/>
         </Item>
         <Item text="Windows Phone 8.1 custom configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81customconfiguration">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81customconfiguration_create"/>
@@ -3010,6 +3084,13 @@
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_applepushnotificationcertificate_get"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_applepushnotificationcertificate_update"/>
         </Item>
+       <Item text="Audit event" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_auditing_auditevent">
+         <Item text="List" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_list"/>
+         <Item text="Get" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_get"/>
+         <Item text="Create" url="/en-us/api-reference/beta"/>
+         <Item text="Delete" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_delete"/>
+         <Item text="Update" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_update"/>
+       </Item>
         <Item text="Detected app" url="/en-us/api-reference/beta/resources/intune_devicefe_detectedapp">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_detectedapp_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_detectedapp_get"/>
@@ -3217,10 +3298,8 @@
         </Item>
         <Item text="Managed app policy" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicy">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_get"/>
-          <Item text="Get managed app policy deployment summary" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_get_managedapppolicydeploymentsummary"/>
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_list"/>
-          <Item text="List mobile app identifier deployment" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_list_mobileappidentifierdeployment"/>
-          <Item text="Update mobile app identifier deployment" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_updatemobileappidentifierdeployments"/>
+          <Item text="targetApps action" url="/en-us/graph/docs/api-reference/beta/api/intune_mam_managedapppolicy_targetapps" />
         </Item>
         <Item text="Managed app policy deployment summary" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicydeploymentsummary">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicydeploymentsummary_get"/>
@@ -3232,6 +3311,7 @@
           <Item text="Get managed app policy deployment summary" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_get_managedapppolicydeploymentsummary"/>
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_list"/>
           <Item text="List mobile app identifier deployment" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_list_mobileappidentifierdeployment"/>
+          <Item text="targetApps action" url="/en-us/graph/docs/api-reference/beta/api/intune_mam_managedappprotection_targetapps" />
         </Item>
         <Item text="Managed app registration" url="/en-us/api-reference/beta/resources/intune_mam_managedappregistration">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_managedappregistration_get"/>
@@ -3259,6 +3339,13 @@
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_mobileappidentifierdeployment_list"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_mobileappidentifierdeployment_update"/>
         </Item>
+        <Item text="Managed mobile app" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_managedmobileapp">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_update"/>
+        </Item>
         <Item text="MDM Windows Information Protection policy" url="/en-us/api-reference/beta/resources/intune_mam_mdmwindowsinformationprotectionpolicy">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_mdmwindowsinformationprotectionpolicy_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_mdmwindowsinformationprotectionpolicy_get"/>
@@ -3275,13 +3362,9 @@
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_delete"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_get"/>
-          <Item text="Get managed app policy deployment summary" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_get_managedapppolicydeploymentsummary"/>
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_list"/>
-          <Item text="List directory object" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_list_directoryobject"/>
-          <Item text="List mobile app identifier deployment" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_list_mobileappidentifierdeployment"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_update"/>
-          <Item text="Update mobile app identifier deployments" url="/en-us/api-reference/beta/api/intune_mam_targetedManagedAppConfiguration_updatemobileappidentifierdeployments"/>
-          <Item text="Update target security groups" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_updatetargetedsecuritygroups"/>
+          <Item text="targetApps action" url="en-us/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_targetapps" />
         </Item>
         <Item text="Targeted managed app protection" url="/en-us/api-reference/beta/resources/intune_mam_targetedmanagedappprotection">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappprotection_get"/>
@@ -3461,6 +3544,14 @@
           <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_list"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_update"/>
         </Item>
+      <Item text="VPP token" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_vpptoken">
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_list"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_get"/>
+        <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_create"/>
+        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_delete"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_update" url="/en-us/api-reference/beta"/>
+        <Item text="syncLicenses action" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_synclicenses"/>
+      </Item>
         <Item text="Windows 10 enrollment completion page configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_get"/>
@@ -3489,7 +3580,7 @@
         <Item text="Windows Autopilot settings" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotsettings">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_get"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_update"/>
-          <Item text="sync action" url="/en-us/api-reference/beta"/>
+          <Item text="sync action" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_sync"/>
         </Item>
       </Item>
       <Item text="Role based access control" url="/en-us/api-reference/beta/resources/intune_rbac_conceptual">

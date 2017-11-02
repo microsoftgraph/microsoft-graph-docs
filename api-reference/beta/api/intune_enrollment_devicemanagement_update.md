@@ -37,6 +37,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The GUID for the object.|
+|maximumDepTokens|Int32|Maximum number of dep tokens allowed per-tenant.|
 
 
 
@@ -49,9 +50,11 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement
 Content-type: application/json
-Content-length: 2
+Content-length: 29
 
-{}
+{
+  "maximumDepTokens": 0
+}
 ```
 
 ### Response
@@ -59,11 +62,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 107
+Content-Length: 133
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
-  "id": "0b283420-3420-0b28-2034-280b2034280b"
+  "id": "0b283420-3420-0b28-2034-280b2034280b",
+  "maximumDepTokens": 0
 }
 ```
 

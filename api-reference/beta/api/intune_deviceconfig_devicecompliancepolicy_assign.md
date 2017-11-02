@@ -38,6 +38,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |deviceCompliancePolicyGroupAssignments|[deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) collection|Not yet documented|
+|assignments|[deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) collection|Not yet documented|
 
 
 
@@ -51,7 +52,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 
 Content-type: application/json
-Content-length: 280
+Content-length: 557
 
 {
   "deviceCompliancePolicyGroupAssignments": [
@@ -60,6 +61,15 @@ Content-length: 280
       "id": "fe44007c-007c-fe44-7c00-44fe7c0044fe",
       "targetGroupId": "Target Group Id value",
       "excludeGroup": true
+    }
+  ],
+  "assignments": [
+    {
+      "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
+      "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      }
     }
   ]
 }
@@ -70,13 +80,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 164
+Content-Length: 274
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
-      "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92"
+      "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      }
     }
   ]
 }

@@ -14,7 +14,7 @@ Singleton entity that acts as a container for all device management functionalit
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String|Unique Identifier|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
 
 ## Relationships

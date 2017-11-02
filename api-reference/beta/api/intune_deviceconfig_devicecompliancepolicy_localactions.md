@@ -51,13 +51,14 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/localActions
 
 Content-type: application/json
-Content-length: 193
+Content-length: 227
 
 {
   "deviceComplianceLocalActions": [
     {
       "@odata.type": "#microsoft.graph.androidDeviceComplianceLocalActionBase",
-      "id": "63e17619-7619-63e1-1976-e1631976e163"
+      "id": "63e17619-7619-63e1-1976-e1631976e163",
+      "gracePeriodInMinutes": 4
     }
   ]
 }

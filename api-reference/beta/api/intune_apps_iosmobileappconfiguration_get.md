@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /iosMobileAppConfigurations/{iosMobileAppConfigurationsId}
+GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 ```
 
 ## Optional query parameters
@@ -41,7 +41,7 @@ If successful, this method returns a `200 OK` response code and [iosMobileAppCon
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/iosMobileAppConfigurations/{iosMobileAppConfigurationsId}
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 ```
 
 ### Response

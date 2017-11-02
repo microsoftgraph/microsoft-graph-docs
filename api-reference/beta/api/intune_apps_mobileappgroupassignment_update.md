@@ -36,9 +36,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
+|id|String|Key of the entity.|
 |targetGroupId|String|The Id of the AAD group we are targeting the mobile app to.|
 |vpnConfigurationId|String|The Id of the Vpn Profile to apply for this app.|
-|id|String|Key of the entity.|
 |installIntent|String|The install intent defined by the admin. Possible values are: `available`, `notApplicable`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 
@@ -70,9 +70,9 @@ Content-Length: 252
 
 {
   "@odata.type": "#microsoft.graph.mobileAppGroupAssignment",
+  "id": "ce4d1a28-1a28-ce4d-281a-4dce281a4dce",
   "targetGroupId": "Target Group Id value",
   "vpnConfigurationId": "Vpn Configuration Id value",
-  "id": "ce4d1a28-1a28-ce4d-281a-4dce281a4dce",
   "installIntent": "notApplicable"
 }
 ```

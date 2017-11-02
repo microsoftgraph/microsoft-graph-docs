@@ -57,58 +57,34 @@ Here is a JSON representation of the resource.
   "version": 1024,
   "windowsNetworkIsolationPolicy": {
     "@odata.type": "microsoft.graph.windowsNetworkIsolationPolicy",
-    "enterpriseNetworkDomainNames": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationResourceCollection",
-      "displayName": "String",
-      "resources": [
-        "String"
-      ]
-    },
-    "enterpriseCloudResources": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationCloudResourceCollection",
-      "displayName": "String",
-      "resources": [
-        {
-          "@odata.type": "microsoft.graph.windowsNetworkIsolationCloudResource",
-          "ipAddressOrFQDN": "String",
-          "proxy": "String"
-        }
-      ]
-    },
-    "enterpriseIPRanges": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationIPRangeCollection",
-      "displayName": "String",
-      "ranges": [
-        {
-          "@odata.type": "microsoft.graph.iPv6Range",
-          "lowerAddress": "String",
-          "upperAddress": "String"
-        }
-      ]
-    },
-    "enterpriseInternalProxyServers": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationResourceCollection",
-      "displayName": "String",
-      "resources": [
-        "String"
-      ]
-    },
+    "enterpriseNetworkDomainNames": [
+      "String"
+    ],
+    "enterpriseCloudResources": [
+      {
+        "@odata.type": "microsoft.graph.proxiedDomain",
+        "ipAddressOrFQDN": "String",
+        "proxy": "String"
+      }
+    ],
+    "enterpriseIPRanges": [
+      {
+        "@odata.type": "microsoft.graph.iPv6Range",
+        "lowerAddress": "String",
+        "upperAddress": "String"
+      }
+    ],
+    "enterpriseInternalProxyServers": [
+      "String"
+    ],
     "enterpriseIPRangesAreAuthoritative": true,
-    "enterpriseProxyServers": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationResourceCollection",
-      "displayName": "String",
-      "resources": [
-        "String"
-      ]
-    },
+    "enterpriseProxyServers": [
+      "String"
+    ],
     "enterpriseProxyServersAreAuthoritative": true,
-    "neutralDomainResources": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationResourceCollection",
-      "displayName": "String",
-      "resources": [
-        "String"
-      ]
-    }
+    "neutralDomainResources": [
+      "String"
+    ]
   }
 }
 ```

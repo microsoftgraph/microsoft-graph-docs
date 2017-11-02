@@ -18,6 +18,8 @@ Inherits from [managedAppConfiguration](../resources/intune_mam_managedappconfig
 |[Update targetedManagedAppConfiguration](../api/intune_mam_targetedmanagedappconfiguration_update.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md)|Update the properties of a [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) object.|
 |[updateMobileAppIdentifierDeployments action](../api/intune_mam_targetedmanagedappconfiguration_updatemobileappidentifierdeployments.md)|None|Not yet documented|
 |[updateTargetedSecurityGroups action](../api/intune_mam_targetedmanagedappconfiguration_updatetargetedsecuritygroups.md)|None|Not yet documented|
+|[assign action](../api/intune_mam_targetedmanagedappconfiguration_assign.md)|None|Not yet documented|
+|[targetApps action](../api/intune_mam_targetedmanagedappconfiguration_targetapps.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -32,12 +34,15 @@ Inherits from [managedAppConfiguration](../resources/intune_mam_managedappconfig
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed|
 |targetedSecurityGroupsCount|Int32|Number of groups to which the configuration is deployed.|
+|isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed.|
+|apps|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) collection|List of apps to which the policy is deployed.|
 |deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration.|
+|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) collection|Navigation property to list of inclusion and exclusion groups to which the policy is deployed.|
 |targetedSecurityGroups|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Navigation property to list of security groups to which the configuration is deployed.|
 
 ## JSON Representation
@@ -68,7 +73,8 @@ Here is a JSON representation of the resource.
   "targetedSecurityGroupIds": [
     "String"
   ],
-  "targetedSecurityGroupsCount": 1024
+  "targetedSecurityGroupsCount": 1024,
+  "isAssigned": true
 }
 ```
 

@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /iosMobileAppConfigurations/{iosMobileAppConfigurationsId}
+PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and an updated [iosM
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/iosMobileAppConfigurations/{iosMobileAppConfigurationsId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 Content-type: application/json
 Content-length: 555
 

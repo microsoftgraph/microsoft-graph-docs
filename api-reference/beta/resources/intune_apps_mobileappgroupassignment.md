@@ -17,9 +17,9 @@ Contains properties used to assign a mobile app to a group.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|id|String|Key of the entity.|
 |targetGroupId|String|The Id of the AAD group we are targeting the mobile app to.|
 |vpnConfigurationId|String|The Id of the Vpn Profile to apply for this app.|
-|id|String|Key of the entity.|
 |installIntent|String|The install intent defined by the admin. Possible values are: `available`, `notApplicable`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 ## Relationships
@@ -38,9 +38,9 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppGroupAssignment",
+  "id": "String (identifier)",
   "targetGroupId": "String",
   "vpnConfigurationId": "String",
-  "id": "String (identifier)",
   "installIntent": "String"
 }
 ```

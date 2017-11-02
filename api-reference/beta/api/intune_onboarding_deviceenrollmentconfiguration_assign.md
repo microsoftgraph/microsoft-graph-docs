@@ -50,14 +50,14 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assign
 
 Content-type: application/json
-Content-length: 314
+Content-length: 304
 
 {
   "enrollmentConfigurationAssignments": [
     {
       "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
       "id": "705b021c-021c-705b-1c02-5b701c025b70",
-      "assignmentTarget": {
+      "target": {
         "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
       }
     }

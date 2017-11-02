@@ -59,6 +59,7 @@ The following table shows the properties that are required when you create the [
 |identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |commandLine|String|The command line.|
 |productCode|String|The product code.|
+|productVersion|String|The product version of Windows Mobile MSI Line of Business (LoB) app.|
 
 
 
@@ -71,7 +72,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 817
+Content-length: 863
 
 {
   "displayName": "Display Name value",
@@ -95,7 +96,8 @@ Content-length: 817
   "size": 4,
   "identityVersion": "Identity Version value",
   "commandLine": "Command Line value",
-  "productCode": "Product Code value"
+  "productCode": "Product Code value",
+  "productVersion": "Product Version value"
 }
 ```
 
@@ -104,7 +106,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 980
+Content-Length: 1026
 
 {
   "@odata.type": "#microsoft.graph.windowsMobileMSI",
@@ -131,7 +133,8 @@ Content-Length: 980
   "size": 4,
   "identityVersion": "Identity Version value",
   "commandLine": "Command Line value",
-  "productCode": "Product Code value"
+  "productCode": "Product Code value",
+  "productVersion": "Product Version value"
 }
 ```
 

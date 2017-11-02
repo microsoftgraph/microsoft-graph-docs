@@ -47,6 +47,7 @@ The following table shows the properties that are required when you create the [
 |osDescription|String|OS Description|
 |userName|String|Device User Name|
 |userPrincipalName|String|User Principal Name|
+|displayVersion|String|Human readable version of the application|
 
 
 
@@ -59,7 +60,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}
 Content-type: application/json
-Content-length: 365
+Content-length: 411
 
 {
   "deviceName": "Device Name value",
@@ -70,7 +71,8 @@ Content-length: 365
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
   "userName": "User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "userPrincipalName": "User Principal Name value",
+  "displayVersion": "Display Version value"
 }
 ```
 
@@ -79,7 +81,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 475
+Content-Length: 521
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -92,7 +94,8 @@ Content-Length: 475
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
   "userName": "User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "userPrincipalName": "User Principal Name value",
+  "displayVersion": "Display Version value"
 }
 ```
 

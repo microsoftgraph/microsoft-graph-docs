@@ -15,6 +15,7 @@ The deviceManagement resource represents a tenant's collection device identities
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The GUID for the object.|
+|maximumDepTokens|Int32|Maximum number of dep tokens allowed per-tenant.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -34,7 +35,8 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "maximumDepTokens": 1024
 }
 ```
 

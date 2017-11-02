@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 588
+Content-Length: 635
 
 {
   "value": {
@@ -66,7 +66,9 @@ Content-Length: 588
       {
         "@odata.type": "microsoft.graph.airPrintDestination",
         "ipAddress": "Ip Address value",
-        "resourcePath": "Resource Path value"
+        "resourcePath": "Resource Path value",
+        "port": 4,
+        "forceTls": true
       }
     ]
   }

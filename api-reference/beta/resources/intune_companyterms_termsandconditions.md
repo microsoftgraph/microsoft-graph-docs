@@ -31,6 +31,7 @@ A termsAndConditions entity represents the metadata and contents of a given Term
 |Relationship|Type|Description|
 |:---|:---|:---|
 |groupAssignments|[termsAndConditionsGroupAssignment](../resources/intune_companyterms_termsandconditionsgroupassignment.md) collection|The list of group assignments for this T&C policy.|
+|assignments|[termsAndConditionsAssignment](../resources/intune_companyterms_termsandconditionsassignment.md) collection|The list of assignments for this T&C policy.|
 |acceptanceStatuses|[termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) collection|The list of acceptance statuses for this T&C policy.|
 
 ## JSON Representation

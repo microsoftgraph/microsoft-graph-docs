@@ -49,6 +49,7 @@ The following table shows the properties that are required when you create the i
 |homeScreenDockIcons|[iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md) collection|A list of app and folders to appear on the Home Screen Dock. This collection can contain a maximum of 500 elements.|
 |homeScreenPages|[iosHomeScreenPage](../resources/intune_deviceconfig_ioshomescreenpage.md) collection|A list of pages on the Home Screen. This collection can contain a maximum of 500 elements.|
 |notificationSettings|[iosNotificationSettings](../resources/intune_deviceconfig_iosnotificationsettings.md) collection|Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.|
+|singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune_deviceconfig_iossinglesignonsettings.md)|The Kerberos login settings that enable apps on receiving devices to authenticate smoothly.|
 
 
 
@@ -61,7 +62,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2601
+Content-length: 3222
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -73,7 +74,9 @@ Content-length: 2601
     {
       "@odata.type": "microsoft.graph.airPrintDestination",
       "ipAddress": "Ip Address value",
-      "resourcePath": "Resource Path value"
+      "resourcePath": "Resource Path value",
+      "port": 4,
+      "forceTls": true
     }
   ],
   "assetTagTemplate": "Asset Tag Template value",
@@ -146,7 +149,25 @@ Content-length: 2601
       "badgesEnabled": true,
       "soundsEnabled": true
     }
-  ]
+  ],
+  "singleSignOnSettings": {
+    "@odata.type": "microsoft.graph.iosSingleSignOnSettings",
+    "allowedAppsList": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
+    "allowedUrls": [
+      "Allowed Urls value"
+    ],
+    "displayName": "Display Name value",
+    "kerberosPrincipalName": "Kerberos Principal Name value",
+    "kerberosRealm": "Kerberos Realm value"
+  }
 }
 ```
 
@@ -155,7 +176,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2709
+Content-Length: 3330
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -169,7 +190,9 @@ Content-Length: 2709
     {
       "@odata.type": "microsoft.graph.airPrintDestination",
       "ipAddress": "Ip Address value",
-      "resourcePath": "Resource Path value"
+      "resourcePath": "Resource Path value",
+      "port": 4,
+      "forceTls": true
     }
   ],
   "assetTagTemplate": "Asset Tag Template value",
@@ -242,7 +265,25 @@ Content-Length: 2709
       "badgesEnabled": true,
       "soundsEnabled": true
     }
-  ]
+  ],
+  "singleSignOnSettings": {
+    "@odata.type": "microsoft.graph.iosSingleSignOnSettings",
+    "allowedAppsList": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
+    "allowedUrls": [
+      "Allowed Urls value"
+    ],
+    "displayName": "Display Name value",
+    "kerberosPrincipalName": "Kerberos Principal Name value",
+    "kerberosRealm": "Kerberos Realm value"
+  }
 }
 ```
 

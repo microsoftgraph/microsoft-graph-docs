@@ -4,14 +4,14 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Not yet documented
+Represents an assignment to a group.
 
 Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune_onboarding_deviceandappmanagementassignmenttarget.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|groupId|String|Not yet documented|
+|groupId|String|The group Id that is the target of the assignment.|
 
 ## Relationships
 None

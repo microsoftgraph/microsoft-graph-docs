@@ -16,8 +16,6 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |[Create iosManagedAppProtection](../api/intune_mam_iosmanagedappprotection_create.md)|[iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md)|Create a new [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) object.|
 |[Delete iosManagedAppProtection](../api/intune_mam_iosmanagedappprotection_delete.md)|None|Deletes a [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md).|
 |[Update iosManagedAppProtection](../api/intune_mam_iosmanagedappprotection_update.md)|[iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md)|Update the properties of a [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) object.|
-|[updateMobileAppIdentifierDeployments action](../api/intune_mam_iosmanagedappprotection_updatemobileappidentifierdeployments.md)|None|Not yet documented|
-|[updateTargetedSecurityGroups action](../api/intune_mam_iosmanagedappprotection_updatetargetedsecuritygroups.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -44,6 +42,7 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `any`, `numeric`, `alphanumeric`, `alphanumericAndSymbol`.|
+|periodBeforePinReset|Duration|TimePeriod before the all-level pin must be reset if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -54,6 +53,7 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |targetedSecurityGroupsCount|Int32|The number of groups to which the configuration is deployed. Read only property. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
+|isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |appDataEncryptionType|String|Type of encryption which should be used for data in a managed app. Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
@@ -63,7 +63,9 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |Relationship|Type|Description|
 |:---|:---|:---|
 |targetedSecurityGroups|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Navigation property to list of security groups to which the configuration is deployed Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
+|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) collection|Navigation property to list of inclusion and exclusion groups to which the policy is deployed. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed.|
+|apps|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) collection|List of apps to which the policy is deployed.|
 |deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration.|
 
 ## JSON Representation
@@ -99,6 +101,7 @@ Here is a JSON representation of the resource.
   "simplePinBlocked": true,
   "minimumPinLength": 1024,
   "pinCharacterSet": "String",
+  "periodBeforePinReset": "String (duration)",
   "allowedDataStorageLocations": [
     "String"
   ],
@@ -111,6 +114,7 @@ Here is a JSON representation of the resource.
   "minimumRequiredAppVersion": "String",
   "minimumWarningAppVersion": "String",
   "targetedSecurityGroupsCount": 1024,
+  "isAssigned": true,
   "targetedSecurityGroupIds": [
     "String"
   ],

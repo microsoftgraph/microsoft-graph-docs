@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Not yet documented
+Commits a file of a given app.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -36,7 +36,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|fileEncryptionInfo|[fileEncryptionInfo](../resources/intune_apps_fileencryptioninfo.md)|Not yet documented|
+|fileEncryptionInfo|[fileEncryptionInfo](../resources/intune_apps_fileencryptioninfo.md)|File encryption info parameter key.|
 
 
 

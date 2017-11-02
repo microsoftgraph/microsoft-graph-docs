@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1521
+Content-Length: 1559
 
 {
   "value": [
@@ -87,7 +87,8 @@ Content-Length: 1521
       },
       "vppTokenOrganizationName": "Vpp Token Organization Name value",
       "vppTokenAccountType": "education",
-      "vppTokenAppleId": "Vpp Token Apple Id value"
+      "vppTokenAppleId": "Vpp Token Apple Id value",
+      "bundleId": "Bundle Id value"
     }
   ]
 }

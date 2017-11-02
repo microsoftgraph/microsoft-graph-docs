@@ -16,7 +16,6 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 |[Create windowsInformationProtectionPolicy](../api/intune_mam_windowsinformationprotectionpolicy_create.md)|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md)|Create a new [windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) object.|
 |[Delete windowsInformationProtectionPolicy](../api/intune_mam_windowsinformationprotectionpolicy_delete.md)|None|Deletes a [windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md).|
 |[Update windowsInformationProtectionPolicy](../api/intune_mam_windowsinformationprotectionpolicy_update.md)|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md)|Update the properties of a [windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) object.|
-|[updateTargetedSecurityGroups action](../api/intune_mam_windowsinformationprotectionpolicy_updatetargetedsecuritygroups.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -37,9 +36,11 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 |azureRightsManagementServicesAllowed|Boolean|Specifies whether to allow Azure RMS encryption for WIP Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |iconsVisible|Boolean|Determines whether overlays are added to icons for WIP protected files in Explorer and enterprise only app tiles in the Start menu. Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |allowedApps|[windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md) collection|Allowed applications can access enterprise data and the data handled by those applications are protected with encryption Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|protectedApps|[windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md) collection|Protected applications can access enterprise data and the data handled by those applications are protected with encryption Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |exemptApps|[windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md) collection|Exempt applications can also access enterprise data, but the data handled by those applications are not protected. This is because some critical enterprise applications may have compatibility problems with encrypted data. Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseNetworkDomainNames|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|This is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseCloudResources|[windowsInformationProtectionCloudResourceCollection](../resources/intune_mam_windowsinformationprotectioncloudresourcecollection.md) collection|Contains a list of Enterprise resource domains hosted in the cloud that need to be protected. Connections to these resources are considered enterprise data. If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80). A proxy server used for this purpose must also be configured using the EnterpriseInternalProxyServers policy Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|enterpriseProxiedDomains|[windowsInformationProtectionProxiedDomainCollection](../resources/intune_mam_windowsinformationprotectionproxieddomaincollection.md) collection|Contains a list of Enterprise resource domains hosted in the cloud that need to be protected. Connections to these resources are considered enterprise data. If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80). A proxy server used for this purpose must also be configured using the EnterpriseInternalProxyServers policy Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseIPRanges|[windowsInformationProtectionIPRangeCollection](../resources/intune_mam_windowsinformationprotectioniprangecollection.md) collection|Sets the enterprise IP ranges that define the computers in the enterprise network. Data that comes from those computers will be considered part of the enterprise and protected. These locations will be considered a safe destination for enterprise data to be shared to Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseIPRangesAreAuthoritative|Boolean|Boolean value that tells the client to accept the configured list and not to use heuristics to attempt to find other subnets. Default is false Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseProxyServers|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|This is a list of proxy servers. Any server not on this list is considered non-enterprise Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
@@ -49,6 +50,7 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 |indexingEncryptedStoresOrItemsBlocked|Boolean|This switch is for the Windows Search Indexer, to allow or disallow indexing of items Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |smbAutoEncryptedFileExtensions|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not. Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |revokeOnMdmHandoffDisabled|Boolean|New property in RS2, pending documentation|
 |mdmEnrollmentUrl|String|Enrollment url for the MDM|
 |windowsHelloForBusinessBlocked|Boolean|Boolean value that sets Windows Hello for Business as a method for signing into Windows.|
@@ -65,7 +67,9 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 |Relationship|Type|Description|
 |:---|:---|:---|
 |allowedAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input allowed and apps through xml files Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|protectedAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input protected apps through xml files Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |exemptAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input exempt apps through xml files Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) collection|Navigation property to list of security groups targeted for policy. Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -116,6 +120,15 @@ Here is a JSON representation of the resource.
       "productName": "String"
     }
   ],
+  "protectedApps": [
+    {
+      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
+      "displayName": "String",
+      "description": "String",
+      "publisherName": "String",
+      "productName": "String"
+    }
+  ],
   "exemptApps": [
     {
       "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
@@ -141,6 +154,19 @@ Here is a JSON representation of the resource.
       "resources": [
         {
           "@odata.type": "microsoft.graph.windowsInformationProtectionCloudResource",
+          "ipAddressOrFQDN": "String",
+          "proxy": "String"
+        }
+      ]
+    }
+  ],
+  "enterpriseProxiedDomains": [
+    {
+      "@odata.type": "microsoft.graph.windowsInformationProtectionProxiedDomainCollection",
+      "displayName": "String",
+      "proxiedDomains": [
+        {
+          "@odata.type": "microsoft.graph.proxiedDomain",
           "ipAddressOrFQDN": "String",
           "proxy": "String"
         }
@@ -202,6 +228,7 @@ Here is a JSON representation of the resource.
   "targetedSecurityGroupIds": [
     "String"
   ],
+  "isAssigned": true,
   "revokeOnMdmHandoffDisabled": true,
   "mdmEnrollmentUrl": "String",
   "windowsHelloForBusinessBlocked": true,

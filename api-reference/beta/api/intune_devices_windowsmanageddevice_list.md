@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5910
+Content-Length: 6027
 
 {
   "value": [
@@ -110,7 +110,6 @@ Content-Length: 5910
       "easDeviceId": "Eas Device Id value",
       "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
       "aadRegistered": true,
-      "enrollmentType": "userEnrollment",
       "deviceEnrollmentType": "userEnrollment",
       "lostModeState": "enabled",
       "activationLockBypassCode": "Activation Lock Bypass Code value",
@@ -176,7 +175,11 @@ Content-Length: 5910
         "bootRevisionListInfo": "Boot Revision List Info value",
         "operatingSystemRevListInfo": "Operating System Rev List Info value",
         "healthStatusMismatchInfo": "Health Status Mismatch Info value"
-      }
+      },
+      "subscriberCarrier": "Subscriber Carrier value",
+      "meid": "Meid value",
+      "totalStorageSpaceInBytes": 8,
+      "freeStorageSpaceInBytes": 7
     }
   ]
 }

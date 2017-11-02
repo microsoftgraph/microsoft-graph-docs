@@ -51,7 +51,6 @@ The following table shows the properties that are required when you create the [
 |servers|[vpnServer](../resources/intune_deviceconfig_vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements.|
 |fingerprint|String|Fingerprint is a string that will be used to verify the VPN server can be trusted, which is only applicable when connection type is Check Point Capsule VPN.|
 |customData|[keyValue](../resources/intune_deviceconfig_keyvalue.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
-|enableSplitTunneling|Boolean|Send all network traffic through VPN.|
 |authenticationMethod|String|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
 
 
@@ -65,7 +64,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 815
+Content-length: 782
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -93,7 +92,6 @@ Content-length: 815
       "value": "Value value"
     }
   ],
-  "enableSplitTunneling": true,
   "authenticationMethod": "usernameAndPassword"
 }
 ```
@@ -103,7 +101,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 992
+Content-Length: 959
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkVpnConfiguration",
@@ -134,7 +132,6 @@ Content-Length: 992
       "value": "Value value"
     }
   ],
-  "enableSplitTunneling": true,
   "authenticationMethod": "usernameAndPassword"
 }
 ```

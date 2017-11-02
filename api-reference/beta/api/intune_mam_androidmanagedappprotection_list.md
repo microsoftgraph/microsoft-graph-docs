@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1954
+Content-Length: 2185
 
 {
   "value": [
@@ -75,6 +75,7 @@ Content-Length: 1954
       "simplePinBlocked": true,
       "minimumPinLength": 0,
       "pinCharacterSet": "numeric",
+      "periodBeforePinReset": "PT3M29.6631862S",
       "allowedDataStorageLocations": [
         "sharePoint"
       ],
@@ -87,13 +88,16 @@ Content-Length: 1954
       "minimumRequiredAppVersion": "Minimum Required App Version value",
       "minimumWarningAppVersion": "Minimum Warning App Version value",
       "targetedSecurityGroupsCount": 11,
+      "isAssigned": true,
       "targetedSecurityGroupIds": [
         "Targeted Security Group Ids value"
       ],
       "screenCaptureBlocked": true,
       "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
       "encryptAppData": true,
-      "deployedAppCount": 0
+      "deployedAppCount": 0,
+      "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
+      "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
     }
   ]
 }

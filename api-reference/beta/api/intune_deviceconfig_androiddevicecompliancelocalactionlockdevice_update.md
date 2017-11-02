@@ -37,6 +37,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [androidDeviceComplianceLocalActionBase](../resources/intune_deviceconfig_androiddevicecompliancelocalactionbase.md)|
+|gracePeriodInMinutes|Int32|Number of minutes to wait till a local action is enforced. Valid values 0 to 2147483647 Inherited from [androidDeviceComplianceLocalActionBase](../resources/intune_deviceconfig_androiddevicecompliancelocalactionbase.md)|
 
 
 
@@ -49,9 +50,11 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/microsoft.graph.androidCompliancePolicy/localActions/{androidDeviceComplianceLocalActionBaseId}
 Content-type: application/json
-Content-length: 2
+Content-length: 33
 
-{}
+{
+  "gracePeriodInMinutes": 4
+}
 ```
 
 ### Response
@@ -59,11 +62,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 135
+Content-Length: 165
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceComplianceLocalActionLockDevice",
-  "id": "ec210677-0677-ec21-7706-21ec770621ec"
+  "id": "ec210677-0677-ec21-7706-21ec770621ec",
+  "gracePeriodInMinutes": 4
 }
 ```
 

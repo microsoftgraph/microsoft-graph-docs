@@ -44,12 +44,15 @@ Inherits from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The iOS architecture for which this app can run on.|
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |expirationDateTime|DateTimeOffset|The expiration time.|
+|versionNumber|String|The version number of managed iOS Line of Business (LoB) app.|
+|buildNumber|String|The build number of managed iOS Line of Business (LoB) app.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |groupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|assignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -102,7 +105,9 @@ Here is a JSON representation of the resource.
     "v9_0": true,
     "v10_0": true
   },
-  "expirationDateTime": "String (timestamp)"
+  "expirationDateTime": "String (timestamp)",
+  "versionNumber": "String",
+  "buildNumber": "String"
 }
 ```
 
