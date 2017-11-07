@@ -10,7 +10,7 @@
 | isDeleted                         | Boolean           | Whether this user has been deleted or soft deleted. |
 | deletedDate                       | Date              | The date when the delete operation happened. Default value is "null" when the user has not been deleted. |
 | hasExchangeLicense                | Boolean           | Whether the user has been assigned an Exchange license. |
-| hasOneDriveLicense                | Boolean           | Whether the user has been assigned an OneDrive license. |
+| hasOneDriveLicense                | Boolean           | Whether the user has been assigned a OneDrive license. |
 | hasSharePointLicense              | Boolean           | Whether the user has been assigned a SharePoint license. |
 | hasSkypeForBusinessLicense        | Boolean           | Whether the user has been assigned a Skype For Business license. |
 | hasYammerLicense                  | Boolean           | Whether the user has been assigned a Yammer license. |
@@ -22,16 +22,16 @@
 | yammerLastActivityDate            | Date              | The date when user last posted, read, or liked message. |
 | teamsLastActivityDate             | Date              | The date when user last posted messages in team channels, sent messages in private chat sessions, or participated in meetings or calls. |
 | exchangeLicenseAssignDate         | Date              | The last date when the user was assigned an Exchange license. |
-| oneDriveLicenseAssignDate         | Date              | The last date when the user was assigned an OneDrive license. |
+| oneDriveLicenseAssignDate         | Date              | The last date when the user was assigned a OneDrive license. |
 | sharePointLicenseAssignDate       | Date              | The last date when the user was assigned a SharePoint license. |
-| skypeForBusinessLicenseAssignDate | Date              | The last date when the user was assigned an Skype For Business license. |
-| yammerLicenseAssignDate           | Date              | The last date when the user was assigned an Yammer license. |
-| teamsLicenseAssignDate            | Date              | The last date when the user was assigned an Teams license. |
+| skypeForBusinessLicenseAssignDate | Date              | The last date when the user was assigned a Skype For Business license. |
+| yammerLicenseAssignDate           | Date              | The last date when the user was assigned a Yammer license. |
+| teamsLicenseAssignDate            | Date              | The last date when the user was assigned a Teams license. |
 | assignedProducts                  | String collection | All the products assigned for the user.  |
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -41,8 +41,8 @@ Here is a JSON representation of the resource
 ```http
 {
   "reportRefreshDate": "Date", 
-  "userPrincipalName": "userprincipalname-value", 
-  "displayName": "displayname-value", 
+  "userPrincipalName": "String", 
+  "displayName": "String", 
   "isDeleted": true, 
   "deletedDate": "Date", 
   "hasExchangeLicense": true, 

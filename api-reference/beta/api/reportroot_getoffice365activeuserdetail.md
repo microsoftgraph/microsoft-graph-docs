@@ -97,7 +97,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getoffice365activeuserdetail"
+  "name": "reportroot_getoffice365activeuserdetail_csv"
 }-->
 
 ```http
@@ -141,7 +141,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getoffice365activeuserdetail"
+  "name": "reportroot_getoffice365activeuserdetail_json"
 }-->
 
 ```http
