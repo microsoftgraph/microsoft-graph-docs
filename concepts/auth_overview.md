@@ -8,7 +8,7 @@ This topic provides an overview of access tokens, Azure AD, and how your app can
 
 ## What is an access token and how do I use it?
 
-Access tokens issued by Azure AD are base 64 encoded JSON Web Tokens (JWT). They contain information (claims) that web APIs secured by Azure AD, like Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. When calling Microsoft Graph, you can treat access tokens as opaque. You should always transmit access tokens over a secure channel, such as transport layer security (HTTPS).
+Access tokens issued by Azure AD are base-64 encoded JSON Web Tokens (JWT). They contain information (claims) that web APIs secured by Azure AD, like Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. When calling Microsoft Graph, you can treat access tokens as opaque (that is, the token cannot be manipulated externally). You should always transmit access tokens over a secure channel, such as HTTPS.
 
 Here's an example of an Azure AD access token:
 
