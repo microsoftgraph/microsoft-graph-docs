@@ -24,6 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/getOffice365ActivationsUserDetail
 ```
 
+## Request parameters
+
+This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
+
 ## Request headers
 
 | Name          | Description               |
@@ -31,6 +35,8 @@ GET /reports/getOffice365ActivationsUserDetail
 | Authorization | Bearer {token}. Required. |
 
 ## Response
+
+### CSV
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
@@ -49,7 +55,17 @@ The CSV file has the following headers for columns.
 - iOS
 - Android
 
+### JSON
+
+If successful, this method returns a `200 OK` response code and an **[office365ActivationsUserDetail](../resources/office365activationsuserdetail.md)** object in the response body.
+
+The default page size for this request is 200 items.
+
 ## Example
+
+### CSV
+
+The following is an example that outputs CSV.
 
 #### Request
 
@@ -57,11 +73,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getoffice365activationsuserdetail"
+  "name": "reportroot_getoffice365activationsuserdetail_csv"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserDetail
+GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserDetail?$format=text/csv
 ```
 
 #### Response
@@ -89,4 +105,61 @@ HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
 Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android
+```
+
+### JSON
+
+The following is an example that returns JSON.
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getoffice365activationsuserdetail_json"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserDetail?$format=application/json
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.office365ActivationsUserDetail"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 400
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ActivationsUserDetail)", 
+  "value": [
+    {
+      "reportRefreshDate": "2017-09-01", 
+      "userPrincipalName": "userprincipalname-value", 
+      "displayName": "displayname-value", 
+      "userActivationCounts": [
+        {
+          "productLicenses": "Project Client", 
+          "lastActivatedDate": "2017-08-20", 
+          "windows": 5, 
+          "mac": 0, 
+          "windows10Mobile": 0, 
+          "ios": 0, 
+          "android": 2
+        }
+      ]
+    }
+  ]
+}
 ```

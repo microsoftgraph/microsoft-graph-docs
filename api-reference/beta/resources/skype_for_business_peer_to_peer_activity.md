@@ -8,9 +8,8 @@ You can get details on peer-to-peer activity across your organization. These det
 
 ## Reports
 
-| Function                                 | Return Type | Description                              |
-| :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Get activity counts](../api/reportroot_getskypeforbusinesspeertopeeractivitycounts.md) | Stream      | Get usage trends on the number and type of sessions held in your organization. Types of sessions include IM, audio, video, application sharing, and file transfer. |
-| [Get user counts](../api/reportroot_getskypeforbusinesspeertopeeractivityusercounts.md) | Stream      | Get usage trends on the number of unique users and type of peer-to-peer sessions held in your organization. Types of sessions include IM, audio, video, application sharing, and file transfers in peer-to-peer sessions. |
-| [Get minute counts](../api/reportroot_getskypeforbusinesspeertopeeractivityminutecounts.md) | Stream      | Get usage trends on the length in minutes and type of peer-to-peer sessions held in your organization. Types of sessions include audio and video. |
-
+| Function                                 | CSV return type | JSON return type                         | Description                              |
+| :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
+| [Get activity counts](../api/reportroot_getskypeforbusinesspeertopeeractivitycounts.md) | Stream          | [skypeForBusinessPeerToPeerActivityCounts](../resources/skypeforbusinesspeertopeeractivitycounts.md) | Get usage trends on the number and type of sessions held in your organization. Types of sessions include IM, audio, video, application sharing, and file transfer. |
+| [Get user counts](../api/reportroot_getskypeforbusinesspeertopeeractivityusercounts.md) | Stream          | [skypeForBusinessPeerToPeerActivityUserCounts](../resources/skypeforbusinesspeertopeeractivityusercounts.md) | Get usage trends on the number of unique users and type of peer-to-peer sessions held in your organization. Types of sessions include IM, audio, video, application sharing, and file transfers in peer-to-peer sessions. |
+| [Get minute counts](../api/reportroot_getskypeforbusinesspeertopeeractivityminutecounts.md) | Stream          | [skypeForBusinessPeerToPeerActivityMinuteCounts](../resources/skypeforbusinesspeertopeeractivityminutecounts.md) | Get usage trends on the length in minutes and type of peer-to-peer sessions held in your organization. Types of sessions include audio and video. |

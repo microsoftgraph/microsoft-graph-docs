@@ -31,10 +31,12 @@ In the request URL, provide the chosen query parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
-| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. Specifies a date that is within the last 30 days, as this report is only available for the last 30 days. |
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
+| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
 
 > **Note:** You need to set either period or date in the URL.
+
+This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
 
 ## Request headers
 
@@ -43,6 +45,8 @@ In the request URL, provide the chosen query parameter with a valid value.
 | Authorization | Bearer {token}. Required. |
 
 ## Response
+
+### CSV
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
@@ -67,7 +71,17 @@ The CSV file has the following headers for columns.
 - SMTP App
 - Report Period
 
+### JSON
+
+If successful, this method returns a `200 OK` response code and an **[emailAppUsageUserDetail](../resources/emailappusageuserdetail.md)** object in the response body.
+
+The default page size for this request is 200 items.
+
 ## Example
+
+### CSV
+
+The following is an example that outputs CSV.
 
 #### Request
 
@@ -75,11 +89,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getemailappusageuserdetail"
+  "name": "reportroot_getemailappusageuserdetail_csv"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getEmailAppUsageUserDetail(period='D7')
+GET https://graph.microsoft.com/beta/reports/getEmailAppUsageUserDetail(period='D7')?$format=text/csv
 ```
 
 #### Response
@@ -107,4 +121,67 @@ HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
 Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Mail For Mac,Outlook For Mac,Outlook For Windows,Outlook For Mobile,Other For Mobile,Outlook For Web,POP3 App,IMAP4 App,SMTP App,Report Period
+```
+
+### JSON
+
+The following is an example that returns JSON.
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getemailappusageuserdetail_json"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/reports/getEmailAppUsageUserDetail(period='D7')?$format=application/json
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.emailAppUsageUserDetail"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 515
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.emailAppUsageUserDetail)", 
+  "value": [
+    {
+      "reportRefreshDate": "2017-09-01", 
+      "userPrincipalName": "userPrincipalName-value", 
+      "displayName": "displayName-value", 
+      "isDeleted": false, 
+      "deletedDate": null, 
+      "lastActivityDate": "2017-09-01", 
+      "mailForMac": [ ], 
+      "outlookForMac": [ ], 
+      "outlookForWindows": [ ], 
+      "outlookForMobile": [
+        "Undetermined"
+      ], 
+      "otherForMobile": [ ], 
+      "outlookForWeb": [
+        "Undetermined"
+      ], 
+      "pop3App": [ ], 
+      "imap4App": [ ], 
+      "smtpApp": [ ], 
+      "reportPeriod": "7"
+    }
+  ]
+}
 ```

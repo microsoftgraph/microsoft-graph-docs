@@ -31,10 +31,12 @@ In the request URL, provide the chosen query parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
-| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. Specifies a date that is within the last 30 days, as this report is only available for the last 30 days. |
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
+| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
 
 > **Note:** You need to set either period or date in the URL.
+
+This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
 
 ## Request headers
 
@@ -43,6 +45,8 @@ In the request URL, provide the chosen query parameter with a valid value.
 | Authorization | Bearer {token}. Required. |
 
 ## Response
+
+### CSV
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
@@ -57,7 +61,7 @@ The CSV file has the following headers for columns.
 - Last Activity Date
 - Group Type
 - Member Count
-- Guest Count
+- External Member Count
 - Exchange Received Email Count
 - SharePoint Active File Count
 - Yammer Posted Message Count
@@ -69,7 +73,17 @@ The CSV file has the following headers for columns.
 - SharePoint Site Storage Used (Byte)
 - Report Period
 
+### JSON
+
+If successful, this method returns a `200 OK` response code and an **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** object in the response body.
+
+The default page size for this request is 200 items.
+
 ## Example
+
+### CSV
+
+The following is an example that outputs CSV.
 
 #### Request
 
@@ -77,11 +91,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getoffice365groupsactivityuserdetail"
+  "name": "reportroot_getoffice365groupsactivitydetail_csv"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(period='D7')
+GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(period='D7')?$format=text/csv
 ```
 
 #### Response
@@ -108,5 +122,66 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,Guest Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Report Period
+Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,External Member Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Report Period
+```
+
+### JSON
+
+The following is an example that returns JSON.
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getoffice365groupsactivitydetail_json"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(period='D7')?$format=application/json
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.office365GroupsActivityDetail"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 674
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365GroupsActivityDetail)", 
+  "value": [
+    {
+      "reportRefreshDate": "2017-09-01", 
+      "groupDisplayName": "groupDisplayName-value", 
+      "isDeleted": false, 
+      "ownerPrincipalName": "ownerDisplayName-value", 
+      "lastActivityDate": "2017-08-31", 
+      "groupType": "Private", 
+      "memberCount": 5, 
+      "externalMemberCount": 0, 
+      "exchangeReceivedEmailCount": 341, 
+      "sharePointActiveFileCount": 0, 
+      "yammerPostedMessageCount": 0, 
+      "yammerReadMessageCount": 0, 
+      "yammerLikedMessageCount": 0, 
+      "exchangeMailboxTotalItemCount": 343, 
+      "exchangeMailboxStorageUsedInBytes": 3724609, 
+      "sharePointTotalFileCount": 0, 
+      "sharePointSiteStorageUsedInBytes": 0, 
+      "reportPeriod": "30"
+    }
+  ]
+}
 ```

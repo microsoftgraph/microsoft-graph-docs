@@ -35,7 +35,7 @@ If successful, this method returns a `200 OK` response code and [team](../resour
 #### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_team"
 }-->
 ```http
@@ -44,7 +44,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/team
 #### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.team"
 } -->
@@ -54,32 +54,29 @@ Content-type: application/json
 Content-length: 401
 
 {
-  "value":
-  {  
-    "memberSettings": {
-      "allowCreateUpdateChannels": true,
-      "allowDeleteChannels": true,
-      "allowAddRemoveApps": true,
-      "allowCreateUpdateRemoveTabs": true,
-      "allowCreateUpdateRemoveConnectors": true    
-    },
-    "guestSettings": {
-      "allowCreateUpdateChannels": true,
-      "allowDeleteChannels": true 
-    },
-    "messagingSettings": {
-      "allowUserEditMessages": true,
-      "allowUserDeleteMessages": true,
-      "allowOwnerDeleteMessages": true,
-      "allowTeamMentions": true,
-      "allowChannelMentions": true    
-    },
-    "funSettings": {
-      "allowGiphy": true,
-      "giphyContentRating": "strict",
-      "allowStickersAndMemes": true,
-      "allowCustomMemes": true
-    }
+  "memberSettings": {
+    "allowCreateUpdateChannels": true,
+    "allowDeleteChannels": true,
+    "allowAddRemoveApps": true,
+    "allowCreateUpdateRemoveTabs": true,
+    "allowCreateUpdateRemoveConnectors": true    
+  },
+  "guestSettings": {
+    "allowCreateUpdateChannels": true,
+    "allowDeleteChannels": true 
+  },
+  "messagingSettings": {
+    "allowUserEditMessages": true,
+    "allowUserDeleteMessages": true,
+    "allowOwnerDeleteMessages": true,
+    "allowTeamMentions": true,
+    "allowChannelMentions": true    
+  },
+  "funSettings": {
+    "allowGiphy": true,
+    "giphyContentRating": "strict",
+    "allowStickersAndMemes": true,
+    "allowCustomMemes": true
   }
 }
 ```

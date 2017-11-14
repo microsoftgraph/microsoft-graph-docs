@@ -7,8 +7,8 @@ The Office 365 activation report gives you a view of which users have activated 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
 ## Reports
-| Function                                 | Return Type | Description                              |
-| :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_getoffice365activationsuserdetail.md) | Stream      | Get details about users who have activated Office 365. |
-| [Get activation counts](../api/reportroot_getoffice365activationcounts.md) | Stream      | Get the count of Office 365 activations on desktops and devices. |
-| [Get user counts](../api/reportroot_getoffice365activationsusercounts.md) | Stream      | Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices. |
+| Function                                 | CSV return type | JSON return type                         | Description                              |
+| :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
+| [Get user detail](../api/reportroot_getoffice365activationsuserdetail.md) | Stream          | [office365ActivationsUserDetail](../resources/office365activationsuserdetail.md) | Get details about users who have activated Office 365. |
+| [Get activation counts](../api/reportroot_getoffice365activationcounts.md) | Stream          | [office365ActivationCounts](../resources/office365activationcounts.md) | Get the count of Office 365 activations on desktops and devices. |
+| [Get user counts](../api/reportroot_getoffice365activationsusercounts.md) | Stream          | [office365ActivationsUserCounts](../resources/office365activationsusercounts.md) | Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices. |

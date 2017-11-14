@@ -30,7 +30,9 @@ In the request URL, provide the following query parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the aggregate type. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
+
+This method supports the `$format` [OData query parameter](../../../concepts/query_parameters.md) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
 
 ## Request headers
 
@@ -39,6 +41,8 @@ In the request URL, provide the following query parameter with a valid value.
 | Authorization | Bearer {token}. Required. |
 
 ## Response
+
+### CSV
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
@@ -57,7 +61,15 @@ The CSV file has the following headers for columns.
 - Report Date
 - Report Period
 
+### JSON
+
+If successful, this method returns a `200 OK` response code and an **[office365ActiveUserCounts](../resources/office365activeusercounts.md)** object in the response body.
+
 ## Example
+
+### CSV
+
+The following is an example that outputs CSV.
 
 #### Request
 
@@ -65,11 +77,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getoffice365activeusercounts"
+  "name": "reportroot_getoffice365activeusercounts_csv"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserCounts(period='D7')
+GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserCounts(period='D7')?$format=text/csv
 ```
 
 #### Response
@@ -97,4 +109,57 @@ HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
 Report Refresh Date,Office 365,Exchange,OneDrive,SharePoint,Skype For Business,Yammer,Teams,Report Date,Report Period
+```
+
+### JSON
+
+The following is an example that returns JSON.
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getoffice365activeusercounts_json"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserCounts(period='D7')?$format=application/json
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.office365ActiveUserCounts"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 317
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ActiveUserCounts)", 
+  "value": [
+    {
+      "reportRefreshDate": "2017-09-01", 
+      "office365": 1718, 
+      "exchange": 1429, 
+      "oneDrive": 350, 
+      "sharePoint": 795, 
+      "skypeForBusiness": 251, 
+      "yammer": 47, 
+      "teams": 10, 
+      "reportDate": "2017-08-29", 
+      "reportPeriod": "7"
+    }
+  ]
+}
 ```

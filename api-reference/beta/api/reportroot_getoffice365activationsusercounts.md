@@ -24,6 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/getOffice365ActivationsUserCounts
 ```
 
+## Request parameters
+
+This method supports the `$format` [OData query parameter](../../../concepts/query_parameters.md) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
+
 ## Request headers
 
 | Name          | Description               |
@@ -31,6 +35,8 @@ GET /reports/getOffice365ActivationsUserCounts
 | Authorization | Bearer {token}. Required. |
 
 ## Response
+
+### CSV
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
@@ -43,7 +49,15 @@ The CSV file has the following headers for columns.
 - Assigned
 - Activated
 
+### JSON
+
+If successful, this method returns a `200 OK` response code and an **[office365ActivationsUserCounts](../resources/office365activationsusercounts.md)** object in the response body.
+
 ## Example
+
+### CSV
+
+The following is an example that outputs CSV.
 
 #### Request
 
@@ -51,11 +65,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getoffice365activationsusercounts"
+  "name": "reportroot_getoffice365activationsusercounts_csv"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserCounts
+GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserCounts?$format=text/csv
 ```
 
 #### Response
@@ -83,4 +97,51 @@ HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
 Report Refresh Date,Product Type,Assigned,Activated
+```
+
+### JSON
+
+The following is an example that returns JSON.
+
+#### Request
+
+The following example shows the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getoffice365activationsusercounts_json"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserCounts?$format=application/json
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.office365ActivationsUserCounts"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 233
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ActivationsUserCounts)", 
+  "value": [
+    {
+      "reportRefreshDate": "2017-09-01", 
+      "productType": "Office 365 ProPlus", 
+      "assigned": 2679, 
+      "activated": 1710
+    }
+  ]
+}
 ```
