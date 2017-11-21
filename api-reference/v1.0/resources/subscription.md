@@ -1,5 +1,5 @@
 # Subscription Resource Type
-A subscription allows a client app to receive notifications about data on the Microsoft Graph. Currently subscriptions are enabled for the following datasets:
+A subscription allows a client app to receive notifications about data on the Microsoft Graph. Currently, subscriptions are enabled for the following datasets:
 
 1. Mail, events, and contacts from Outlook
 1. Conversations from Office Groups.
@@ -46,7 +46,8 @@ Here is a JSON representation of the resource.
 |Calendar| 4230 minutes.|
 |Contacts| 4230 minutes.|
 |Group conversations| 4230 minutes.|
-|Drive root items| 43200 minutes.|
+|Drive root items| 43200 minutes. Existing applications and new applications should use this value. Higher values will be restricted in upcoming releases. |
+
 
 ## Relationships
 None
