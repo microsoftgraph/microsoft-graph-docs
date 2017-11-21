@@ -1,4 +1,4 @@
-# mailboxUsageQuotaMailboxStatusCounts resource type
+# mailboxUsageQuotaStatusMailboxCounts resource type
 
 ## Properties
 
@@ -19,7 +19,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.mailboxUsageQuotaMailboxStatusCounts"
+  "@odata.type": "microsoft.graph.mailboxUsageQuotaStatusMailboxCounts"
 } -->
 
 ```json

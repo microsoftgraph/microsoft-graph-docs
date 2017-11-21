@@ -21,7 +21,7 @@ workbook-session-id: {session-id}
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| workbook-session-id | Workbook session Id to be refreshd |
+| workbook-session-id | Workbook session Id to be refreshed |
 
 ## Request body
 This API does not require any request body.

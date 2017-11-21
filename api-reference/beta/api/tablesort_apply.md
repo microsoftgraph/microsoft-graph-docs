@@ -23,6 +23,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

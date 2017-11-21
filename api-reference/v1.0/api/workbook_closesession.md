@@ -20,7 +20,7 @@ workbook-session-id: {session-id}
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+| Authorization  | Bearer {token}. Required. | | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 | workbook-session-id | Workbook session Id to be closed |
 
 ## Request body

@@ -1,4 +1,4 @@
-# reportRoot: getMailboxUsageQuotaMailboxStatusCounts
+# reportRoot: getMailboxUsageQuotaStatusMailboxCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } --> 
 
 ```http
-GET /reports/getMailboxUsageQuotaMailboxStatusCounts(period='{period_value}')
+GET /reports/getMailboxUsageQuotaStatusMailboxCounts(period='{period_value}')
 ```
 
 ## Request parameters
@@ -61,7 +61,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[mailboxUsageQuotaMailboxStatusCounts](../resources/mailboxusagequotamailboxstatuscounts.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a **[mailboxUsageQuotaStatusMailboxCounts](../resources/mailboxusagequotastatusmailboxcounts.md)** object in the response body.
 
 ## Example
 
@@ -75,11 +75,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getmailboxusagequotamailboxstatuscounts_csv"
+  "name": "reportroot_getmailboxusagequotastatusmailboxcounts_csv"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getMailboxUsageQuotaMailboxStatusCounts(period='D7')?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getMailboxUsageQuotaStatusMailboxCounts(period='D7')?$format=text/csv
 ```
 
 #### Response
@@ -119,11 +119,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getmailboxusagequotamailboxstatuscounts_json"
+  "name": "reportroot_getmailboxusagequotastatusmailboxcounts_json"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getMailboxUsageQuotaMailboxStatusCounts(period='D7')?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getMailboxUsageQuotaStatusMailboxCounts(period='D7')?$format=application/json
 ```
 
 #### Response
@@ -135,7 +135,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mailboxUsageQuotaMailboxStatusCounts"
+  "@odata.type": "microsoft.graph.mailboxUsageQuotaStatusMailboxCounts"
 } -->
 
 ```http

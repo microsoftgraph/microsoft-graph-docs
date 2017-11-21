@@ -20,6 +20,7 @@ GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Response
 

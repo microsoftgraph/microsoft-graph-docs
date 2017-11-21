@@ -35,6 +35,17 @@ Content-Type: application/json
       "id": "3",
       "method": "GET",
       "url": "/groups/{id}/events"
+    },
+    {
+      "id": "4",
+      "url": "/me",
+      "method": "PATCH",
+      "body": {
+        "city" : "Redmond"
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
     }
   ]
 }
@@ -74,6 +85,11 @@ Content-Type: application/json
         "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.plannerTask)",
         "value": []
       }
+    },
+    {
+      "id": "4",
+      "status": 204,
+      "body": null
     }
   ]
 }
@@ -89,7 +105,7 @@ The `id` property functions primarily as a correlation value to associate indivi
 
 The `method` and `url` properties are exactly what you would see at the start of any given HTTP request. The method is the HTTP method, and the URL is the resource URL the individual request would typically be sent to.
 
-Individual requests can optionally also contain a `headers` property and a `body` property. Both of these properties are typically JSON objects. In some cases, the `body` might be a base64 URL-encoded value rather than a JSON object - for example, when the body is an image. When a `body` is included with the request, the `headers` object must contain a value for `content-type`.
+Individual requests can optionally also contain a `headers` property and a `body` property. Both of these properties are typically JSON objects, as shown in the previous example. In some cases, the `body` might be a base64 URL-encoded value rather than a JSON object - for example, when the body is an image. When a `body` is included with the request, the `headers` object must contain a value for `Content-Type`.
 
 ## Response format
 
