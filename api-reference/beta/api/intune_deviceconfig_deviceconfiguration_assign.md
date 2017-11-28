@@ -19,7 +19,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
+POST /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/assign
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assign
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/assign
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration/assign
@@ -58,7 +59,6 @@ Content-length: 274
   "deviceConfigurationGroupAssignments": [
     {
       "@odata.type": "#microsoft.graph.deviceConfigurationGroupAssignment",
-      "id": "561d26c5-26c5-561d-c526-1d56c5261d56",
       "targetGroupId": "Target Group Id value",
       "excludeGroup": true
     }
