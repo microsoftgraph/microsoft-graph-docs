@@ -6,6 +6,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## November 2017
 
+### Groups
+
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Addition | V1.0 | Added renewedDateTime and createdDateTime property to [group](../api-reference/v1.0/resources/group.md) |
+
 ### Webhooks
 
 | Change type | Version | Description                              |
