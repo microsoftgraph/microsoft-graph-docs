@@ -33,7 +33,7 @@ Or on a user's personal OneDrive:
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates cache and views, etc.
 
-Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum Expiration Times Per Resource](subscription.md#maximum-expiration-times-per-resource).
+Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](subscription.md#maximum-length-of-subscription-per-resource-type).
 
 Apps can also unsubscribe at any time to stop getting notifications.
 

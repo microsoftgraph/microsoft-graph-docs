@@ -16,7 +16,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Breaking change | Beta and V1.0 | Reduced [webhooks](../api-reference/v1.0/resources/webhooks.md) [maximum expiration time](../api-reference/v1.0/resources/subscription.md#maximum-expiration-times-per-resource) for drive root items. | 
+| Breaking change | Beta and V1.0 | Reduced [webhooks](../api-reference/v1.0/resources/webhooks.md) [maximum length of subscription expiration time](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) for drive root items. The new value is the supported maximum expiration time for drive root items. | 
 
 ### Reports APIs
 | Change type | Version | Description                              |

@@ -1098,7 +1098,71 @@
         <Item text="Get subscribedSku" url="/en-us/api-reference/beta/api/subscribedsku_get" SEOKeyword="Get subscribedSku, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve the properties and relationships of subscribedsku object." />
       </Item>
     </Item>
-    <Item text="Excel" url="/en-us/api-reference/beta/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
+    <Item text="Education" url="/en-us/api-reference/beta/resources/education-overview" >
+		<Item text="Schools" url="/en-us/api-reference/beta/resources/educationschool" >
+			<Item text="List schools" url="/en-us/api-reference/beta/api/educationroot_list_schools" />
+			<Item text="Create school" url="/en-us/api-reference/beta/api/educationroot_post_schools" />
+			<Item text="Get school" url="/en-us/api-reference/beta/api/educationschool_get" />
+			<Item text="Update school" url="/en-us/api-reference/beta/api/educationschool_update" />
+			<Item text="Delete school" url="/en-us/api-reference/beta/api/educationschool_delete" />
+			<Item text="List classes" url="/en-us/api-reference/beta/api/educationschool_list_classes" />
+			<Item text="Create class" url="/en-us/api-reference/beta/api/educationschool_post_classes" />
+			<Item text="Remove class" url="/en-us/api-reference/beta/api/educationschool_delete_classes" />
+			<Item text="List users" url="/en-us/api-reference/beta/api/educationschool_list_users" />
+			<Item text="Add user" url="/en-us/api-reference/beta/api/educationschool_post_users" />
+			<Item text="Remove user" url="/en-us/api-reference/beta/api/educationschool_delete_users" />
+		</Item>
+		<Item text="Classes" url="/en-us/api-reference/beta/resources/educationclass" >
+			<Item text="List schools" url="/en-us/api-reference/beta/api/educationclass_list_schools" />
+			<Item text="List classes" url="/en-us/api-reference/beta/api/educationroot_list_classes" />
+			<Item text="Create class" url="/en-us/api-reference/beta/api/educationroot_post_classes" />
+			<Item text="Get class" url="/en-us/api-reference/beta/api/educationclass_get" />
+			<Item text="Update class" url="/en-us/api-reference/beta/api/educationclass_update" />
+			<Item text="Delete class" url="/en-us/api-reference/beta/api/educationclass_delete" />
+			<Item text="List teachers" url="/en-us/api-reference/beta/api/educationclass_list_teachers" />
+			<Item text="Add teacher" url="/en-us/api-reference/beta/api/educationclass_post_teachers" />
+			<Item text="Remove teacher" url="/en-us/api-reference/beta/api/educationclass_delete_teachers" />
+			<Item text="List members" url="/en-us/api-reference/beta/api/educationclass_list_members" />
+			<Item text="Add member" url="/en-us/api-reference/beta/api/educationclass_post_members" />
+			<Item text="Remove member" url="/en-us/api-reference/beta/api/educationclass_delete_members" />
+			<Item text="List assignments" url="/en-us/api-reference/beta/api/educationclass_list_assignments" />
+			<Item text="Create assignment" url="/en-us/api-reference/beta/api/educationclass_post_assignments" />	
+		</Item>
+		<Item text="Users" url="/en-us/api-reference/beta/resources/educationuser" >
+			<Item text="List schools" url="/en-us/api-reference/beta/api/educationuser_list_schools" />
+			<Item text="List classes" url="/en-us/api-reference/beta/api/educationuser_list_classes" />
+			<Item text="Get user" url="/en-us/api-reference/beta/api/educationuser_get" />
+			<Item text="Delete user" url="/en-us/api-reference/beta/api/educationuser_delete" />
+		</Item>
+		<Item text="Assignment" url="/en-us/api-reference/beta/resources/educationassignment" >
+			<Item text="Create assignment" url="/en-us/api-reference/beta/api/educationclass_post_assignments" />
+			<Item text="Get assignment" url="/en-us/api-reference/beta/api/educationassignment_get" />
+			<Item text="Update assignment" url="/en-us/api-reference/beta/api/educationassignment_update" />
+			<Item text="Delete assignment" url="/en-us/api-reference/beta/api/educationassignment_delete" />
+			<Item text="List assignment resources" url="/en-us/api-reference/beta/api/educationassignment_list_resources" />
+			<Item text="Create assignment resource" url="/en-us/api-reference/beta/api/educationassignment_post_resources" />
+			<Item text="Get assignment resource" url="/en-us/api-reference/beta/api/educationassignmentresource_get" />
+			<Item text="Update assignment resource" url="/en-us/api-reference/beta/api/educationassignmentresource_update" />
+			<Item text="Delete resource from assignment" url="/en-us/api-reference/beta/api/educationassignmentresource_delete" />
+			<Item text="Publish assignment" url="/en-us/api-reference/beta/api/educationassignment_publish" />
+			<Item text="List submissions for assignment" url="/en-us/api-reference/beta/api/educationassignment_list_submissions" />
+			<Item text="Get resource folder URL" url="/en-us/api-reference/beta/api/educationassignment_getresourcesfolderurl" />
+		</Item>
+		<Item text="Submission" url="/en-us/api-reference/beta/resources/educationsubmission" >
+			<Item text="List submission resource" url="/en-us/api-reference/beta/api/educationsubmission_list_resources" />
+			<Item text="Add submission resource" url="/en-us/api-reference/beta/api/educationsubmission_post_resources" />
+			<Item text="Get submission resource" url="/en-us/api-reference/beta/api/educationsubmissionresource_get" />
+			<Item text="Delete submission resource" url="/en-us/api-reference/beta/api/educationsubmissionresource_delete" />
+			<Item text="Get submission" url="/en-us/api-reference/beta/api/educationsubmission_get" />
+			<Item text="Submit submission" url="/en-us/api-reference/beta/api/educationsubmission_submit" />
+			<Item text="Recall submission" url="/en-us/api-reference/beta/api/educationsubmission_recall" />
+			<Item text="List submitted resources" url="/en-us/api-reference/beta/api/educationsubmission_list_submittedresources" />
+			<Item text="Get submitted resource" url="/en-us/api-reference/beta/api/educationsubmittedsubmissionresource_get" />
+			<Item text="Grade submission" url="/en-us/api-reference/beta/api/educationsubmission_update" />
+			<Item text="Release submission" url="/en-us/api-reference/beta/api/educationsubmission_release" />
+		</Item>
+		</Item>
+	<Item text="Excel" url="/en-us/api-reference/beta/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
       <Item text="Workbook" url="/en-us/api-reference/beta/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
         <Item text="Create session" url="/en-us/api-reference/beta/api/workbook_createsession" />
 	    <Item text="Refresh session" url="/en-us/api-reference/beta/api/workbook_refreshsession" />
