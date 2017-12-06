@@ -11,6 +11,7 @@ Singleton entity that acts as a container for all device management functionalit
 |[Get deviceManagement](../api/intune_rbac_devicemanagement_get.md)|[deviceManagement](../resources/intune_rbac_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_rbac_devicemanagement.md) object.|
 |[Update deviceManagement](../api/intune_rbac_devicemanagement_update.md)|[deviceManagement](../resources/intune_rbac_devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune_rbac_devicemanagement.md) object.|
 |[getEffectivePermissions function](../api/intune_rbac_devicemanagement_geteffectivepermissions.md)|String collection|Retrieves the effective permissions of the currently authenticated user|
+|[getEffectivePermissions function](../api/intune_rbac_devicemanagement_geteffectivepermissions.md)|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|Retrieves the effective permissions of the currently authenticated user|
 
 ## Properties
 |Property|Type|Description|

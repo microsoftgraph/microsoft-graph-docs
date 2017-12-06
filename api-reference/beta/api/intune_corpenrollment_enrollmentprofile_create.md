@@ -41,6 +41,7 @@ The following table shows the properties that are required when you create the e
 |description|String|Description of the profile|
 |requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication|
 |configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment|
+|enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal.|
 
 
 
@@ -53,14 +54,15 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles
 Content-type: application/json
-Content-length: 257
+Content-length: 306
 
 {
   "@odata.type": "#microsoft.graph.enrollmentProfile",
   "displayName": "Display Name value",
   "description": "Description value",
   "requiresUserAuthentication": true,
-  "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/"
+  "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
+  "enableAuthenticationViaCompanyPortal": true
 }
 ```
 
@@ -69,7 +71,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 306
+Content-Length: 355
 
 {
   "@odata.type": "#microsoft.graph.enrollmentProfile",
@@ -77,7 +79,8 @@ Content-Length: 306
   "displayName": "Display Name value",
   "description": "Description value",
   "requiresUserAuthentication": true,
-  "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/"
+  "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
+  "enableAuthenticationViaCompanyPortal": true
 }
 ```
 

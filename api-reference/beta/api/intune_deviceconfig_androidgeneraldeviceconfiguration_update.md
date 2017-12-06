@@ -60,6 +60,7 @@ The following table shows the properties that are required when you create the [
 |googlePlayStoreBlocked|Boolean|Indicates whether or not to block the Google Play store.|
 |kioskModeBlockSleepButton|Boolean|Indicates whether or not to block the screen sleep button while in Kiosk Mode.|
 |kioskModeBlockVolumeButtons|Boolean|Indicates whether or not to block the volume buttons while in Kiosk Mode.|
+|dateAndTimeBlockChanges|Boolean|Indicates whether or not to block changing date and time while in KNOX Mode.|
 |kioskModeApps|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|A list of apps that will be allowed to run when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |nfcBlocked|Boolean|Indicates whether or not to block Near-Field Communication.|
 |passwordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
@@ -103,7 +104,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 3016
+Content-length: 3052
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -135,6 +136,7 @@ Content-length: 3016
   "googlePlayStoreBlocked": true,
   "kioskModeBlockSleepButton": true,
   "kioskModeBlockVolumeButtons": true,
+  "dateAndTimeBlockChanges": true,
   "kioskModeApps": [
     {
       "@odata.type": "microsoft.graph.appListItem",
@@ -206,7 +208,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3196
+Content-Length: 3232
 
 {
   "@odata.type": "#microsoft.graph.androidGeneralDeviceConfiguration",
@@ -241,6 +243,7 @@ Content-Length: 3196
   "googlePlayStoreBlocked": true,
   "kioskModeBlockSleepButton": true,
   "kioskModeBlockVolumeButtons": true,
+  "dateAndTimeBlockChanges": true,
   "kioskModeApps": [
     {
       "@odata.type": "microsoft.graph.appListItem",

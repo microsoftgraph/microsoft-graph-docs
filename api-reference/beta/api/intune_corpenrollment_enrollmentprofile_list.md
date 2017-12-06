@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 363
+Content-Length: 416
 
 {
   "value": [
@@ -57,7 +57,8 @@ Content-Length: 363
       "displayName": "Display Name value",
       "description": "Description value",
       "requiresUserAuthentication": true,
-      "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/"
+      "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
+      "enableAuthenticationViaCompanyPortal": true
     }
   ]
 }

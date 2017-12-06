@@ -52,6 +52,7 @@ The following table shows the properties that are required when you create the w
 |passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent re-use of. Valid values 0 to 24|
 |osMinimumVersion|String|Minimum Windows 8.1 version.|
 |osMaximumVersion|String|Maximum Windows 8.1 version.|
+|minimumUpdateAutoInstallClassification|String|The minimum update classification to install automatically. Possible values are: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
 |storageRequireEncryption|Boolean|Indicates whether or not to require encryption on a windows 8.1 device.|
 
 
@@ -65,7 +66,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 666
+Content-length: 738
 
 {
   "@odata.type": "#microsoft.graph.windows81CompliancePolicy",
@@ -83,6 +84,7 @@ Content-length: 666
   "passwordPreviousPasswordBlockCount": 2,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
+  "minimumUpdateAutoInstallClassification": "recommendedAndImportant",
   "storageRequireEncryption": true
 }
 ```
@@ -92,7 +94,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 774
+Content-Length: 846
 
 {
   "@odata.type": "#microsoft.graph.windows81CompliancePolicy",
@@ -112,6 +114,7 @@ Content-Length: 774
   "passwordPreviousPasswordBlockCount": 2,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
+  "minimumUpdateAutoInstallClassification": "recommendedAndImportant",
   "storageRequireEncryption": true
 }
 ```

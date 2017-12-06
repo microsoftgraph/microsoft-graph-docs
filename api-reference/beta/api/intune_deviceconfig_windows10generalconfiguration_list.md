@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11973
+Content-Length: 12063
 
 {
   "value": [
@@ -59,10 +59,12 @@ Content-Length: 11973
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "enableAutomaticRedeployment": true,
       "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
       "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
       "microsoftAccountSignInAssistantSettings": "disabled",
       "authenticationAllowSecondaryDevice": true,
+      "authenticationAllowFIDODevice": true,
       "cryptographyAllowFipsAlgorithmPolicy": true,
       "displayAppListWithGdiDPIScalingTurnedOn": [
         "Display App List With Gdi DPIScaling Turned On value"

@@ -18,7 +18,7 @@ Not yet documented
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|installStatus|String|The installation status of the policy report. Possible values are: `success`, `available`, `idle`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`.|
+|installStatus|String|The installation status of the policy report. Possible values are: `success`, `available`, `idle`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`.|
 |osVersion|String|The device version that is being reported.|
 |deviceId|String|The device id that is being reported.|
 |userId|String|The User id that is being reported.|

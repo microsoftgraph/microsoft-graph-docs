@@ -41,6 +41,7 @@ The following table shows the properties that are required when you create the d
 |description|String|Description of the profile Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
 |requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
 |configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
 |supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.|
 |supportDepartment|String|Support department information|
 |passCodeDisabled|Boolean|Indicates if Passcode setup pane is disabled|
@@ -64,7 +65,6 @@ The following table shows the properties that are required when you create the d
 |awaitDeviceConfiguredConfirmation|Boolean|Indicates if the device will need to wait for configured confirmation|
 |sharedIPadMaximumUserCount|Int32|This specifies the maximum number of users that can use a shared iPad. Only applicable in shared iPad mode.|
 |enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios. Only applicable in shared iPads.|
-|enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal.|
 
 
 
@@ -85,6 +85,7 @@ Content-length: 1268
   "description": "Description value",
   "requiresUserAuthentication": true,
   "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
+  "enableAuthenticationViaCompanyPortal": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
   "passCodeDisabled": true,
@@ -113,8 +114,7 @@ Content-length: 1268
   "macOSFileVaultDisabled": true,
   "awaitDeviceConfiguredConfirmation": true,
   "sharedIPadMaximumUserCount": 10,
-  "enableSharedIPad": true,
-  "enableAuthenticationViaCompanyPortal": true
+  "enableSharedIPad": true
 }
 ```
 
@@ -132,6 +132,7 @@ Content-Length: 1317
   "description": "Description value",
   "requiresUserAuthentication": true,
   "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
+  "enableAuthenticationViaCompanyPortal": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
   "passCodeDisabled": true,
@@ -160,8 +161,7 @@ Content-Length: 1317
   "macOSFileVaultDisabled": true,
   "awaitDeviceConfiguredConfirmation": true,
   "sharedIPadMaximumUserCount": 10,
-  "enableSharedIPad": true,
-  "enableAuthenticationViaCompanyPortal": true
+  "enableSharedIPad": true
 }
 ```
 

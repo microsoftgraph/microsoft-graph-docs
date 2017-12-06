@@ -58,6 +58,7 @@ Content-Length: 1494
       "description": "Description value",
       "requiresUserAuthentication": true,
       "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
+      "enableAuthenticationViaCompanyPortal": true,
       "supervisedModeEnabled": true,
       "supportDepartment": "Support Department value",
       "passCodeDisabled": true,
@@ -86,8 +87,7 @@ Content-Length: 1494
       "macOSFileVaultDisabled": true,
       "awaitDeviceConfiguredConfirmation": true,
       "sharedIPadMaximumUserCount": 10,
-      "enableSharedIPad": true,
-      "enableAuthenticationViaCompanyPortal": true
+      "enableSharedIPad": true
     }
   ]
 }

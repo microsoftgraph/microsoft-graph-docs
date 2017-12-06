@@ -55,6 +55,7 @@ The following table shows the properties that are required when you create the [
 |requireHealthyDeviceReport|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation.|
 |osMinimumVersion|String|Minimum Windows 10 version.|
 |osMaximumVersion|String|Maximum Windows 10 version.|
+|minimumUpdateAutoInstallClassification|String|The minimum update classification to install automatically. Possible values are: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
 |mobileOsMinimumVersion|String|Minimum Windows Phone version.|
 |mobileOsMaximumVersion|String|Maximum Windows Phone version.|
 |earlyLaunchAntiMalwareDriverEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation - early launch antimalware driver is enabled.|
@@ -81,7 +82,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1412
+Content-length: 1484
 
 {
   "description": "Description value",
@@ -100,6 +101,7 @@ Content-length: 1412
   "requireHealthyDeviceReport": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
+  "minimumUpdateAutoInstallClassification": "recommendedAndImportant",
   "mobileOsMinimumVersion": "Mobile Os Minimum Version value",
   "mobileOsMaximumVersion": "Mobile Os Maximum Version value",
   "earlyLaunchAntiMalwareDriverEnabled": true,
@@ -129,7 +131,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1584
+Content-Length: 1656
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -151,6 +153,7 @@ Content-Length: 1584
   "requireHealthyDeviceReport": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
+  "minimumUpdateAutoInstallClassification": "recommendedAndImportant",
   "mobileOsMinimumVersion": "Mobile Os Minimum Version value",
   "mobileOsMaximumVersion": "Mobile Os Maximum Version value",
   "earlyLaunchAntiMalwareDriverEnabled": true,

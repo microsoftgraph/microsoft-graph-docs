@@ -9,6 +9,7 @@ Not yet documented
 |Property|Type|Description|
 |:---|:---|:---|
 |actions|String collection|Allowed Actions|
+|resourceActions|[resourceAction](../resources/intune_rbac_resourceaction.md) collection|Actions|
 
 ## Relationships
 None
@@ -25,6 +26,17 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.rolePermission",
   "actions": [
     "String"
+  ],
+  "resourceActions": [
+    {
+      "@odata.type": "microsoft.graph.resourceAction",
+      "allowedResourceActions": [
+        "String"
+      ],
+      "notAllowedResourceActions": [
+        "String"
+      ]
+    }
   ]
 }
 ```
