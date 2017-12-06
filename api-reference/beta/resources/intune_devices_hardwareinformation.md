@@ -24,6 +24,12 @@ Hardware information of a given device.
 |isEncrypted|Boolean|Encryption status of the device|
 |isSharedDevice|Boolean|Shared iPad|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune_devices_sharedappledeviceuser.md) collection|All users on the shared Apple device|
+|tpmSpecificationVersion|String|String that specifies the specification version.|
+|operatingSystemEdition|String|String that specifies the OS edition.|
+|deviceFullQualifiedDomainName|String|Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string. |
+|deviceGuardVirtualizationBasedSecurityHardwareRequirementState|String|Virtualization-based security hardware requirement status. Possible values are: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
+|deviceGuardVirtualizationBasedSecurityState|String|Virtualization-based security status.  Possible values are: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
+|deviceGuardLocalSystemAuthorityCredentialGuardState|String|Local System Authority (LSA) credential guard status.  Possible values are: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
 
 ## Relationships
 None
@@ -61,7 +67,13 @@ Here is a JSON representation of the resource.
       "dataQuota": 1024,
       "dataUsed": 1024
     }
-  ]
+  ],
+  "tpmSpecificationVersion": "String",
+  "operatingSystemEdition": "String",
+  "deviceFullQualifiedDomainName": "String",
+  "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
+  "deviceGuardVirtualizationBasedSecurityState": "String",
+  "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
 }
 ```
 

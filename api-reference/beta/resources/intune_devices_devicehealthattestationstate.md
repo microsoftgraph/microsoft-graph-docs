@@ -39,6 +39,7 @@ Not yet documented
 |bootRevisionListInfo|String|The Boot Revision List that was loaded during initial boot on the attested device|
 |operatingSystemRevListInfo|String|The Operating System Revision List that was loaded during initial boot on the attested device|
 |healthStatusMismatchInfo|String|This attribute appears if DHA-Service detects an integrity issue|
+|healthAttestationSupportedStatus|String|This attribute indicates if DHA is supported for the device|
 
 ## Relationships
 None
@@ -83,7 +84,8 @@ Here is a JSON representation of the resource.
   "codeIntegrityPolicy": "String",
   "bootRevisionListInfo": "String",
   "operatingSystemRevListInfo": "String",
-  "healthStatusMismatchInfo": "String"
+  "healthStatusMismatchInfo": "String",
+  "healthAttestationSupportedStatus": "String"
 }
 ```
 

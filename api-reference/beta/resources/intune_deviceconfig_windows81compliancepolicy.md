@@ -36,6 +36,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent re-use of. Valid values 0 to 24|
 |osMinimumVersion|String|Minimum Windows 8.1 version.|
 |osMaximumVersion|String|Maximum Windows 8.1 version.|
+|minimumUpdateAutoInstallClassification|String|The minimum update classification to install automatically. Possible values are: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
 |storageRequireEncryption|Boolean|Indicates whether or not to require encryption on a windows 8.1 device.|
 
 ## Relationships
@@ -77,6 +78,7 @@ Here is a JSON representation of the resource.
   "passwordPreviousPasswordBlockCount": 1024,
   "osMinimumVersion": "String",
   "osMaximumVersion": "String",
+  "minimumUpdateAutoInstallClassification": "String",
   "storageRequireEncryption": true
 }
 ```

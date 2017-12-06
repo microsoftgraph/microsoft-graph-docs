@@ -21,7 +21,9 @@ The Role Definition resource. The role definition is the foundation of role base
 |displayName|String|Display Name of the Role definition.|
 |description|String|Description of the Role definition.|
 |permissions|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.|
+|rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.|
 |isBuiltInRoleDefinition|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.|
+|isBuiltIn|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -47,10 +49,41 @@ Here is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.rolePermission",
       "actions": [
         "String"
+      ],
+      "resourceActions": [
+        {
+          "@odata.type": "microsoft.graph.resourceAction",
+          "allowedResourceActions": [
+            "String"
+          ],
+          "notAllowedResourceActions": [
+            "String"
+          ]
+        }
       ]
     }
   ],
-  "isBuiltInRoleDefinition": true
+  "rolePermissions": [
+    {
+      "@odata.type": "microsoft.graph.rolePermission",
+      "actions": [
+        "String"
+      ],
+      "resourceActions": [
+        {
+          "@odata.type": "microsoft.graph.resourceAction",
+          "allowedResourceActions": [
+            "String"
+          ],
+          "notAllowedResourceActions": [
+            "String"
+          ]
+        }
+      ]
+    }
+  ],
+  "isBuiltInRoleDefinition": true,
+  "isBuiltIn": true
 }
 ```
 

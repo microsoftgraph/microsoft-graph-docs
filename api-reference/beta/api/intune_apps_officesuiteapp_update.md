@@ -60,6 +60,7 @@ The following table shows the properties that are required when you create the [
 |updateChannel|String|The property to represent the Office365 Update Channel. Possible values are: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
 |officePlatformArchitecture|String|The property to represent the Office365 App Suite version. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
 |localesToInstall|String collection|The property to represent the locales which are installed when the Apps from Office365 is installed. It uses standard RFC 6033. Ref: https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
+|installProgressDisplayLevel|String|to specify the level of display for the Installation Progress Setup UI on the Device. Possible values are: `none`, `full`.|
 
 
 
@@ -72,7 +73,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1198
+Content-length: 1240
 
 {
   "displayName": "Display Name value",
@@ -116,7 +117,8 @@ Content-length: 1198
   "officePlatformArchitecture": "x86",
   "localesToInstall": [
     "Locales To Install value"
-  ]
+  ],
+  "installProgressDisplayLevel": "full"
 }
 ```
 
@@ -125,7 +127,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1359
+Content-Length: 1401
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -172,7 +174,8 @@ Content-Length: 1359
   "officePlatformArchitecture": "x86",
   "localesToInstall": [
     "Locales To Install value"
-  ]
+  ],
+  "installProgressDisplayLevel": "full"
 }
 ```
 

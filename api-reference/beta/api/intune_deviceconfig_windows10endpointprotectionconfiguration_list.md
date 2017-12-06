@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7233
+Content-Length: 8097
 
 {
   "value": [
@@ -59,6 +59,17 @@ Content-Length: 7233
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "defenderSecurityCenterDisableAppBrowserUI": true,
+      "defenderSecurityCenterDisableFamilyUI": true,
+      "defenderSecurityCenterDisableHealthUI": true,
+      "defenderSecurityCenterDisableNetworkUI": true,
+      "defenderSecurityCenterDisableVirusUI": true,
+      "defenderSecurityCenterOrganizationDisplayName": "Defender Security Center Organization Display Name value",
+      "defenderSecurityCenterHelpEmail": "Defender Security Center Help Email value",
+      "defenderSecurityCenterHelpPhone": "Defender Security Center Help Phone value",
+      "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
+      "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
+      "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
       "firewallBlockStatefulFTP": true,
       "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
       "firewallPreSharedKeyEncodingMethod": "none",
@@ -148,6 +159,7 @@ Content-Length: 7233
       "applicationGuardAllowPrintToXPS": true,
       "applicationGuardAllowPrintToLocalPrinters": true,
       "applicationGuardAllowPrintToNetworkPrinters": true,
+      "applicationGuardAllowVirtualGPU": true,
       "bitLockerDisableWarningForOtherDiskEncryption": true,
       "bitLockerEnableStorageCardEncryptionOnMobile": true,
       "bitLockerEncryptDevice": true,

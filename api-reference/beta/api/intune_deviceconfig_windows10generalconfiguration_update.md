@@ -43,10 +43,12 @@ The following table shows the properties that are required when you create the [
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|enableAutomaticRedeployment|Boolean|Allow users with administrative rights to delete all user data and settings using CTRL + Win + R at the device lock screen so that the device can be automatically re-configured and re-enrolled into management.|
 |assignedAccessSingleModeUserName|String|This policy setting allows to define the user account that will be locked to Single App Kiosk Mode.|
 |assignedAccessSingleModeAppUserModelId|String|This policy setting allows to define the Application User Model ID (AUMID) that will be locked to Single App Kiosk Mode.|
 |microsoftAccountSignInAssistantSettings|String|Controls the Microsoft Account Sign-In Assistant (wlidsvc) NT service. Possible values are: `notConfigured`, `disabled`.|
 |authenticationAllowSecondaryDevice|Boolean|Allows secondary authentication devices to work with Windows.|
+|authenticationAllowFIDODevice|Boolean|Indicates whether or not to allow authentication using FIDO device (https://fidoalliance.org/)|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|Specify whether to allow or disallow the Federal Information Processing Standard (FIPS) policy.|
 |displayAppListWithGdiDPIScalingTurnedOn|String collection|List of legacy applications that have GDI DPI Scaling turned on.|
 |displayAppListWithGdiDPIScalingTurnedOff|String collection|List of legacy applications that have GDI DPI Scaling turned off.|
@@ -272,17 +274,19 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10752
+Content-length: 10834
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "enableAutomaticRedeployment": true,
   "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
   "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
+  "authenticationAllowFIDODevice": true,
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
     "Display App List With Gdi DPIScaling Turned On value"
@@ -533,7 +537,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10928
+Content-Length: 11010
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -543,10 +547,12 @@ Content-Length: 10928
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "enableAutomaticRedeployment": true,
   "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
   "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
+  "authenticationAllowFIDODevice": true,
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
     "Display App List With Gdi DPIScaling Turned On value"

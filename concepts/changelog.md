@@ -5,6 +5,43 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
 ## December 2017
+
+### Microsoft Intune APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added new entities:<br/>[androidForWorkEnrollmentProfile](../api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile)<br/>[deviceAndAppManagementRoleAssignment](../api-reference/beta/resources/intune_rbac_deviceandappmanagementroleassignment)<br/>[deviceAndAppManagementRoleDefinition](../api-reference/beta/resources/intune_rbac_deviceandappmanagementroledefinition)<br/>[macOSLobApp](../api-reference/beta/resources/intune_apps_macoslobapp)<br/>|
+|Addition|Beta|Added new complex types:<br/>[resourceAction](../api-reference/beta/resources/intune_rbac_resourceaction)<br/>[updateWindowsDeviceAccountActionParameter](../api-reference/beta/resources/intune_devices_updatewindowsdeviceaccountactionparameter)<br/>[vppTokenActionResult](../api-reference/beta/resources/intune_onboarding_vpptokenactionresult)<br/>[windowsDeviceAADAccount](../api-reference/beta/resources/intune_devices_windowsdeviceaadaccount)<br/>[windowsDeviceAccount](../api-reference/beta/resources/intune_devices_windowsdeviceaccount)<br/>[windowsDeviceADAccount](../docs/api-reference/beta/resources/intune_devices_windowsdeviceadaccount)<br/>|
+|Addition|Beta|Added the [revokeTokens](../api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_revoketokens) action on [androidForWorkEnrollmentProfile](../api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile) |
+|Addition|Beta|Added the [createToken](../api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_createtoken) action on [androidForWorkEnrollmentProfile](../api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile) |
+|Addition|Beta|Added the [wipe](../api-reference/beta/api/intune_devices_manageddevice_wipe) action on [managedDevice](../api-reference/beta/resources/intune_deviceconfig_manageddevice) |
+|Addition|Beta|Added the [updateWindowsDeviceAccount](../api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount) action on [managedDevice](../api-reference/beta/resources/intune_deviceconfig_manageddevice) |
+|Addition|Beta|Added the [revokeLicenses](../api-reference/beta/api/intune_onboarding_vpptoken_revokelicenses) action on [vppToken](../api-reference/beta/resources/intune_onboarding_vpptoken) |
+|Addition|Beta|Added the [getDevicePasscode](o:getDevicePasscode:Collection(microsoft.graph.deviceCompliancePolicy)) function on [deviceCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy) collection |
+|Addition|Beta|Added the [getEffectivePermissions](../api-reference/beta/api/intune_rbac_devicemanagement_geteffectivepermissions) function on [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement) |
+|Deletion|Beta|Removed the following entities:<br/>**windowsStoreForBusinessApp**<br/>|
+|Deletion|Beta|Removed the following complex types:<br/>**windowsStoreForBusinessAppAssignmentSettings**<br/>|
+|Change|Beta|Added the **dateAndTimeBlockChanges** property to the [androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration) entity|
+|Change|Beta|Removed the **enableAuthenticationViaCompanyPortal** property from the [depEnrollmentProfile](../api-reference/beta/resources/intune_corpenrollment_depenrollmentprofile) entity|
+|Change|Beta|Removed the **windowsStoreForBusinessLastSuccessfulSyncDateTime**, **isEnabledForWindowsStoreForBusiness**, **windowsStoreForBusinessLanguage** and **windowsStoreForBusinessLastCompletedApplicationSyncTime** properties from the [deviceAppManagement](../api-reference/beta/resources/intune_apps_deviceappmanagement) entity|
+|Change|Beta|Added the **maximumDepTokens** and **intuneAccountId** properties to the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement) entity|
+|Change|Beta|Added the **enableAuthenticationViaCompanyPortal** property to the [enrollmentProfile](../api-reference/beta/resources/intune_corpenrollment_enrollmentprofile) entity|
+|Change|Beta|Added the **managedDeviceName** and **partnerReportedThreatState** properties to the [managedDevice](../api-reference/beta/resources/intune_deviceconfig_manageddevice) entity|
+|Change|Beta|Added the **installProgressDisplayLevel** property to the [officeSuiteApp](../api-reference/beta/resources/intune_apps_officesuiteapp) entity|
+|Change|Beta|Added the **resourceScopes** property to the [roleAssignment](../api-reference/beta/resources/intune_rbac_roleassignment) entity|
+|Change|Beta|Added the **rolePermissions** and **isBuiltIn** properties to the [roleDefinition](../api-reference/beta/resources/intune_rbac_roledefinition) entity|
+|Change|Beta|Added the **tokenActionResults** property to the [vppToken](../api-reference/beta/resources/intune_onboarding_vpptoken) entity|
+|Change|Beta|Added the **minimumUpdateAutoInstallClassification** property to the [windows10CompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_windows10compliancepolicy) entity|
+|Change|Beta|Added the **defenderSecurityCenterDisableAppBrowserUI**, **defenderSecurityCenterDisableFamilyUI**, **defenderSecurityCenterDisableHealthUI**, **defenderSecurityCenterDisableNetworkUI**, **defenderSecurityCenterDisableVirusUI**, **defenderSecurityCenterOrganizationDisplayName**, **defenderSecurityCenterHelpEmail**, **defenderSecurityCenterHelpPhone**, **defenderSecurityCenterHelpURL**, **defenderSecurityCenterNotificationsFromApp**, **defenderSecurityCenterITContactDisplay** and **applicationGuardAllowVirtualGPU** properties to the [windows10EndpointProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration) entity|
+|Change|Beta|Added the **enableAutomaticRedeployment** and **authenticationAllowFIDODevice** properties to the [windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration) entity|
+|Change|Beta|Added the **trustedNetworkDomains** property to the [windows10VpnConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10vpnconfiguration) entity|
+|Change|Beta|Added the **minimumUpdateAutoInstallClassification** property to the [windows81CompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_windows81compliancepolicy) entity|
+|Change|Beta|Added the **androidForWorkEnrollmentProfiles** navigation property to the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement) entity|
+|Change|Beta|Added the **healthAttestationSupportedStatus** property to the [deviceHealthAttestationState](../api-reference/beta/resources/intune_devices_devicehealthattestationstate) complex type|
+|Change|Beta|Added the **tpmSpecificationVersion**, **operatingSystemEdition**, **deviceFullQualifiedDomainName**, **deviceGuardVirtualizationBasedSecurityHardwareRequirementState**, **deviceGuardVirtualizationBasedSecurityState** and **deviceGuardLocalSystemAuthorityCredentialGuardState** properties to the [hardwareInformation](../api-reference/beta/resources/intune_devices_hardwareinformation) complex type|
+|Change|Beta|Added the **vpnConfigurationId** property to the [iosVppAppAssignmentSettings](../api-reference/beta/resources/intune_apps_iosvppappassignmentsettings) complex type|
+|Change|Beta|Added the **resourceActions** property to the [rolePermission](../api-reference/beta/resources/intune_rbac_rolepermission) complex type|
+
 ### Education APIs
 
 |Change type|Version|Description|

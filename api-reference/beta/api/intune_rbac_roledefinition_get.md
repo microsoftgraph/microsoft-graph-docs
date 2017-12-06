@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 415
+Content-Length: 1301
 
 {
   "value": {
@@ -63,10 +63,41 @@ Content-Length: 415
         "@odata.type": "microsoft.graph.rolePermission",
         "actions": [
           "Actions value"
+        ],
+        "resourceActions": [
+          {
+            "@odata.type": "microsoft.graph.resourceAction",
+            "allowedResourceActions": [
+              "Allowed Resource Actions value"
+            ],
+            "notAllowedResourceActions": [
+              "Not Allowed Resource Actions value"
+            ]
+          }
         ]
       }
     ],
-    "isBuiltInRoleDefinition": true
+    "rolePermissions": [
+      {
+        "@odata.type": "microsoft.graph.rolePermission",
+        "actions": [
+          "Actions value"
+        ],
+        "resourceActions": [
+          {
+            "@odata.type": "microsoft.graph.resourceAction",
+            "allowedResourceActions": [
+              "Allowed Resource Actions value"
+            ],
+            "notAllowedResourceActions": [
+              "Not Allowed Resource Actions value"
+            ]
+          }
+        ]
+      }
+    ],
+    "isBuiltInRoleDefinition": true,
+    "isBuiltIn": true
   }
 }
 ```

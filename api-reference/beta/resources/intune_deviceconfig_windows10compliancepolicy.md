@@ -38,6 +38,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |requireHealthyDeviceReport|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation.|
 |osMinimumVersion|String|Minimum Windows 10 version.|
 |osMaximumVersion|String|Maximum Windows 10 version.|
+|minimumUpdateAutoInstallClassification|String|The minimum update classification to install automatically. Possible values are: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
 |mobileOsMinimumVersion|String|Minimum Windows Phone version.|
 |mobileOsMaximumVersion|String|Maximum Windows Phone version.|
 |earlyLaunchAntiMalwareDriverEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation - early launch antimalware driver is enabled.|
@@ -94,6 +95,7 @@ Here is a JSON representation of the resource.
   "requireHealthyDeviceReport": true,
   "osMinimumVersion": "String",
   "osMaximumVersion": "String",
+  "minimumUpdateAutoInstallClassification": "String",
   "mobileOsMinimumVersion": "String",
   "mobileOsMaximumVersion": "String",
   "earlyLaunchAntiMalwareDriverEnabled": true,

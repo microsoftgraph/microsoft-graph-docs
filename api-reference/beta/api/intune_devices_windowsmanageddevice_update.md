@@ -89,6 +89,8 @@ The following table shows the properties that are required when you create the [
 |meid|String|MEID Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |totalStorageSpaceInBytes|Int64|Total Storage in Bytes Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|partnerReportedThreatState|String|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
 
 
 
@@ -101,7 +103,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 5475
+Content-length: 6114
 
 {
   "userId": "User Id value",
@@ -131,7 +133,13 @@ Content-length: 5475
         "dataQuota": 9,
         "dataUsed": 8
       }
-    ]
+    ],
+    "tpmSpecificationVersion": "Tpm Specification Version value",
+    "operatingSystemEdition": "Operating System Edition value",
+    "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
+    "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
+    "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
   },
   "ownerType": "company",
   "deviceActionResults": [
@@ -222,12 +230,15 @@ Content-length: 5475
     "codeIntegrityPolicy": "Code Integrity Policy value",
     "bootRevisionListInfo": "Boot Revision List Info value",
     "operatingSystemRevListInfo": "Operating System Rev List Info value",
-    "healthStatusMismatchInfo": "Health Status Mismatch Info value"
+    "healthStatusMismatchInfo": "Health Status Mismatch Info value",
+    "healthAttestationSupportedStatus": "Health Attestation Supported Status value"
   },
   "subscriberCarrier": "Subscriber Carrier value",
   "meid": "Meid value",
   "totalStorageSpaceInBytes": 8,
-  "freeStorageSpaceInBytes": 7
+  "freeStorageSpaceInBytes": 7,
+  "managedDeviceName": "Managed Device Name value",
+  "partnerReportedThreatState": "activated"
 }
 ```
 
@@ -236,7 +247,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5583
+Content-Length: 6222
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -268,7 +279,13 @@ Content-Length: 5583
         "dataQuota": 9,
         "dataUsed": 8
       }
-    ]
+    ],
+    "tpmSpecificationVersion": "Tpm Specification Version value",
+    "operatingSystemEdition": "Operating System Edition value",
+    "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
+    "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
+    "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
   },
   "ownerType": "company",
   "deviceActionResults": [
@@ -359,12 +376,15 @@ Content-Length: 5583
     "codeIntegrityPolicy": "Code Integrity Policy value",
     "bootRevisionListInfo": "Boot Revision List Info value",
     "operatingSystemRevListInfo": "Operating System Rev List Info value",
-    "healthStatusMismatchInfo": "Health Status Mismatch Info value"
+    "healthStatusMismatchInfo": "Health Status Mismatch Info value",
+    "healthAttestationSupportedStatus": "Health Attestation Supported Status value"
   },
   "subscriberCarrier": "Subscriber Carrier value",
   "meid": "Meid value",
   "totalStorageSpaceInBytes": 8,
-  "freeStorageSpaceInBytes": 7
+  "freeStorageSpaceInBytes": 7,
+  "managedDeviceName": "Managed Device Name value",
+  "partnerReportedThreatState": "activated"
 }
 ```
 
