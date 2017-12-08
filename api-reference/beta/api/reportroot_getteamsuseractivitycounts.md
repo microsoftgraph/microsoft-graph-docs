@@ -1,10 +1,8 @@
-# reportRoot: getOneDriveActivityFileCounts
+# reportRoot: getTeamsUserActivityCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get the number of unique, licensed users that performed file interactions against any OneDrive account.
-
-> **Note:** For details about different report views and names, see [Office 365 Reports - OneDrive for Business activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353).
+Get the number of Microsoft Teams activities by activity type. The activity types are team chat messages, private chat messages, calls, and meetings.
 
 ## Permissions
 
@@ -18,10 +16,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getOneDriveActivityFileCounts(period='{period_value}')
+GET /reports/getTeamsUserActivityCounts(period='D7')
 ```
 
 ## Request parameters
@@ -51,16 +49,16 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns.
 
 - Report Refresh Date
-- Viewed Or Edited
-- Synced
-- Shared Internally
-- Shared Externally
 - Report Date
+- Team Chat Messages
+- Private Chat Messages
+- Calls
+- Meetings
 - Report Period
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[siteActivitySummary](../resources/siteactivitysummary.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a **[teamsUserActivityCounts](../resources/teamsuseractivitycounts.md)** object in the response body.
 
 ## Example
 
@@ -74,11 +72,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getonedriveactivityfilecounts_csv"
+  "name": "reportroot_getteamsuseractivitycounts_csv"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getOneDriveActivityFileCounts(period='D7')?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='D7')?$format=text/csv
 ```
 
 #### Response
@@ -92,7 +90,6 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
-
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
 <!-- {
@@ -105,7 +102,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Viewed Or Edited,Synced,Shared Internally,Shared Externally,Report Date,Report Period
+Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Report Period
 ```
 
 ### JSON
@@ -118,11 +115,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getonedriveactivityfilecounts_json"
+  "name": "reportroot_getteamsuseractivitycounts_json"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getOneDriveActivityFileCounts(period='D7')?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='D7')?$format=application/json
 ```
 
 #### Response
@@ -134,24 +131,24 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.siteActivitySummary"
+  "@odata.type": "microsoft.graph.teamsUserActivityCounts"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 280
+Content-Length: 277
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.siteActivitySummary)", 
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
-      "viewedOrEdited": 1997, 
-      "synced": 24756, 
-      "sharedInternally": 7, 
-      "sharedExternally": 0, 
       "reportDate": "2017-09-01", 
+      "teamChatMessages": 26, 
+      "privateChatMessages": 17, 
+      "calls": 4, 
+      "meetings": 0, 
       "reportPeriod": "7"
     }
   ]

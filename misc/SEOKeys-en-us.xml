@@ -1089,13 +1089,46 @@
     </Item>
       <Item text="Service principal" url="/en-us/api-reference/beta/resources/serviceprincipal" >
         <Item text="List service principal" url="/en-us/api-reference/beta/api/serviceprincipal_list" />
-		<Item text="Get service principal" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
+		    <Item text="Get service principal" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
         <Item text="Update service principal" url="/en-us/api-reference/beta/api/serviceprincipal_update" />
         <Item text="Delete service principal" url="/en-us/api-reference/beta/api/serviceprincipal_delete" />
       </Item>
       <Item text="Subscribed sku" url="/en-us/api-reference/beta/resources/subscribedsku" SEOKeyword="subscribedsku API, Microsoft Graph API, subscribedsku API" SEODescription="Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from DirectoryObject.">
         <Item text="List subscribedSkus" url="/en-us/api-reference/beta/api/subscribedsku_list" SEOKeyword="List subscribedSkus, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve a list of subscribedsku objects." />
         <Item text="Get subscribedSku" url="/en-us/api-reference/beta/api/subscribedsku_get" SEOKeyword="Get subscribedSku, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve the properties and relationships of subscribedsku object." />
+      </Item>
+      <Item text="Synchronization"            url="/en-us/api-reference/beta/resources/synchronization-overview" SEOKeyword="Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
+        <Item text="Configure synchronization with custom target attributes" url="/en-us/api-reference/beta/resources/synchronization-configure-with-custom-target-attributes"/>
+        <Item text="Configure synchronization with directory extension attributes" url="/en-us/api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes"/>
+        <Item text="Attribute definition"     url="/en-us/api-reference/beta/resources/synchronization_attributedefinition"/>
+        <Item text="Attribute mapping"        url="/en-us/api-reference/beta/resources/synchronization_attributemapping"/>
+        <Item text="Attribute mapping source" url="/en-us/api-reference/beta/resources/synchronization_attributemappingsource"/>
+        <Item text="Directory definition"     url="/en-us/api-reference/beta/resources/synchronization_directorydefinition"/>
+        <Item text="Filter"                   url="/en-us/api-reference/beta/resources/synchronization_filter" />
+        <Item text="Job"              url="/en-us/api-reference/beta/resources/synchronization_synchronizationjob" SEOKeyword="Synchronization job, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
+          <Item text="List jobs"      url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_list" />
+          <Item text="Create job"     url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_post" />
+		      <Item text="Get job"        url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_get"  />
+          <Item text="Start job"      url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_start" />
+          <Item text="Pause job"      url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_pause"  />
+          <Item text="Restart job"    url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_restart"  />
+          <Item text="Delete job"     url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_delete"  />
+        </Item>
+        <Item text="Object definition"     url="/en-us/api-reference/beta/resources/synchronization_objectdefinition"/>
+        <Item text="Object mapping"        url="/en-us/api-reference/beta/resources/synchronization_objectmapping"/>
+        <Item text="Rule"                     url="/en-us/api-reference/beta/resources/synchronization_synchronizationrule"/>
+        <Item text="Schema"             url="/en-us/api-reference/beta/resources/synchronization_synchronizationschema" SEOKeyword="Synchronization schema, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
+            <Item text="Get schema"     url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_get" />
+            <Item text="Get schema functions"  url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_functions"  />
+            <Item text="Get schema filter operators"  url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_filteroperators"  />
+            <Item text="Update schema"  url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_update"  />
+            <Item text="Reset schema"   url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_delete"  />
+        </Item>
+        <Item text="Status"                 url="/en-us/api-reference/beta/resources/synchronization_synchronizationstatus" />
+        <Item text="Template"               url="/en-us/api-reference/beta/resources/synchronization_synchronizationtemplate" SEOKeyword="Synchronization template, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">/>
+            <Item text="List templates"     url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_list" />
+            <Item text="Get template"       url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_get" />
+        </Item>
       </Item>
     </Item>
     <Item text="Education" url="/en-us/api-reference/beta/resources/education-overview" >
@@ -4322,6 +4355,16 @@
 		</Item>
 	</Item>
 	<Item text="Reports" url="/en-us/api-reference/beta/resources/report" >
+	  <Item text="Microsoft Teams device usage" url="/en-us/api-reference/beta/resources/microsoft_teams_device_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusageuserdetail" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusageusercounts" />
+		<Item text="Get distribution user counts" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusagedistributionusercounts" />
+	  </Item>
+	  <Item text="Microsoft Teams user activity" url="/en-us/api-reference/beta/resources/microsoft_teams_user_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivityusercounts" />
+	  </Item>
 	  <Item text="Outlook activity" url="/en-us/api-reference/beta/resources/email_activity_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getemailactivityuserdetail" />
 		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getemailactivitycounts" />

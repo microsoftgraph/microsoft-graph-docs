@@ -1,10 +1,8 @@
-# reportRoot: getOneDriveActivityFileCounts
+# reportRoot: getTeamsDeviceUsageUserCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get the number of unique, licensed users that performed file interactions against any OneDrive account.
-
-> **Note:** For details about different report views and names, see [Office 365 Reports - OneDrive for Business activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353).
+Get the number of Microsoft Teams daily unique users by device type.
 
 ## Permissions
 
@@ -18,10 +16,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getOneDriveActivityFileCounts(period='{period_value}')
+GET /reports/getTeamsDeviceUsageUserCounts(period='D7')
 ```
 
 ## Request parameters
@@ -51,16 +49,18 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns.
 
 - Report Refresh Date
-- Viewed Or Edited
-- Synced
-- Shared Internally
-- Shared Externally
+- Web
+- Windows Phone
+- Android Phone
+- iOS
+- Mac
+- Windows
 - Report Date
 - Report Period
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[siteActivitySummary](../resources/siteactivitysummary.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a **[teamsDeviceUsageUserCounts](../resources/teamsdeviceusageusercounts.md)** object in the response body.
 
 ## Example
 
@@ -74,11 +74,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getonedriveactivityfilecounts_csv"
+  "name": "reportroot_getteamsdeviceusageusercounts_csv"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getOneDriveActivityFileCounts(period='D7')?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserCounts(period='D7')?$format=text/csv
 ```
 
 #### Response
@@ -105,7 +105,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Viewed Or Edited,Synced,Shared Internally,Shared Externally,Report Date,Report Period
+Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Report Date,Report Period
 ```
 
 ### JSON
@@ -118,11 +118,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getonedriveactivityfilecounts_json"
+  "name": "reportroot_getteamsdeviceusageusercounts_json"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getOneDriveActivityFileCounts(period='D7')?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserCounts(period='D7')?$format=application/json
 ```
 
 #### Response
@@ -134,23 +134,25 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.siteActivitySummary"
+  "@odata.type": "microsoft.graph.teamsDeviceUsageUserCounts"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 280
+Content-Length: 269
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.siteActivitySummary)", 
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsDeviceUsageUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
-      "viewedOrEdited": 1997, 
-      "synced": 24756, 
-      "sharedInternally": 7, 
-      "sharedExternally": 0, 
+      "web": 13, 
+      "windowsPhone": 0, 
+      "androidPhone": 22, 
+      "ios": 75, 
+      "mac": 16, 
+      "windows": 257, 
       "reportDate": "2017-09-01", 
       "reportPeriod": "7"
     }

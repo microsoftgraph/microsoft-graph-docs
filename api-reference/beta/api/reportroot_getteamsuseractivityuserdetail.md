@@ -1,10 +1,8 @@
-# reportRoot: getOneDriveActivityFileCounts
+# reportRoot: getTeamsUserActivityUserDetail
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get the number of unique, licensed users that performed file interactions against any OneDrive account.
-
-> **Note:** For details about different report views and names, see [Office 365 Reports - OneDrive for Business activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353).
+Get details about Microsoft Teams user activity by user.
 
 ## Permissions
 
@@ -18,21 +16,25 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getOneDriveActivityFileCounts(period='{period_value}')
+GET /reports/getTeamsUserActivityUserDetail(period='D7')
+GET /reports/getTeamsUserActivityUserDetail(date=2017-09-01)
 ```
 
 ## Request parameters
 
-In the request URL, provide the following query parameter with a valid value.
+In the request URL, provide the chosen query parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
+| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
 
-This method supports the `$format` [OData query parameter](../../../concepts/query_parameters.md) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
+> **Note:** You need to set either period or date in the URL.
+
+This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
 
 ## Request headers
 
@@ -51,16 +53,23 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns.
 
 - Report Refresh Date
-- Viewed Or Edited
-- Synced
-- Shared Internally
-- Shared Externally
-- Report Date
+- User Principal Name
+- Last Activity Date
+- Is Deleted
+- Deleted Date
+- Assigned Products
+- Team Chat Message Count
+- Private Chat Message Count
+- Call Count
+- Meeting Count
+- Has Other Action
 - Report Period
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[siteActivitySummary](../resources/siteactivitysummary.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a **[teamsUserActivityUserDetail](../resources/teamsuseractivityuserdetail.md)** object in the response body.
+
+The default page size for this request is 2000 items.
 
 ## Example
 
@@ -74,11 +83,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getonedriveactivityfilecounts_csv"
+  "name": "reportroot_getteamsuseractivityuserdetail_csv"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getOneDriveActivityFileCounts(period='D7')?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserDetail(period='D7')?$format=text/csv
 ```
 
 #### Response
@@ -105,7 +114,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Viewed Or Edited,Synced,Shared Internally,Shared Externally,Report Date,Report Period
+Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Has Other Action,Report Period
 ```
 
 ### JSON
@@ -118,11 +127,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getonedriveactivityfilecounts_json"
+  "name": "reportroot_getteamsuseractivityuserdetail_json"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getOneDriveActivityFileCounts(period='D7')?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserDetail(period='D7')?$format=application/json
 ```
 
 #### Response
@@ -134,24 +143,31 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.siteActivitySummary"
+  "@odata.type": "microsoft.graph.teamsUserActivityUserDetail"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 280
+Content-Length: 452
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.siteActivitySummary)", 
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityUserDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
-      "viewedOrEdited": 1997, 
-      "synced": 24756, 
-      "sharedInternally": 7, 
-      "sharedExternally": 0, 
-      "reportDate": "2017-09-01", 
+      "userPrincipalName": "userPrincipalName-value", 
+      "lastActivityDate": "2017-09-01", 
+      "isDeleted": false, 
+      "deletedDate": null, 
+      "assignedProducts": [
+        "OFFICE 365 ENTERPRISE E5"
+      ], 
+      "teamChatMessageCount": 0, 
+      "privateChatMessageCount": 49, 
+      "callCount": 2, 
+      "meetingCount": 0, 
+      "hasOtherAction": true, 
       "reportPeriod": "7"
     }
   ]
