@@ -40,7 +40,9 @@ The following table shows the properties that are required when you create the r
 |displayName|String|Display Name of the Role definition.|
 |description|String|Description of the Role definition.|
 |permissions|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.|
+|rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.|
 |isBuiltInRoleDefinition|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.|
+|isBuiltIn|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.|
 
 
 
@@ -53,7 +55,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/roleDefinitions
 Content-type: application/json
-Content-length: 321
+Content-length: 1145
 
 {
   "@odata.type": "#microsoft.graph.roleDefinition",
@@ -64,10 +66,41 @@ Content-length: 321
       "@odata.type": "microsoft.graph.rolePermission",
       "actions": [
         "Actions value"
+      ],
+      "resourceActions": [
+        {
+          "@odata.type": "microsoft.graph.resourceAction",
+          "allowedResourceActions": [
+            "Allowed Resource Actions value"
+          ],
+          "notAllowedResourceActions": [
+            "Not Allowed Resource Actions value"
+          ]
+        }
       ]
     }
   ],
-  "isBuiltInRoleDefinition": true
+  "rolePermissions": [
+    {
+      "@odata.type": "microsoft.graph.rolePermission",
+      "actions": [
+        "Actions value"
+      ],
+      "resourceActions": [
+        {
+          "@odata.type": "microsoft.graph.resourceAction",
+          "allowedResourceActions": [
+            "Allowed Resource Actions value"
+          ],
+          "notAllowedResourceActions": [
+            "Not Allowed Resource Actions value"
+          ]
+        }
+      ]
+    }
+  ],
+  "isBuiltInRoleDefinition": true,
+  "isBuiltIn": true
 }
 ```
 
@@ -76,7 +109,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 370
+Content-Length: 1194
 
 {
   "@odata.type": "#microsoft.graph.roleDefinition",
@@ -88,10 +121,41 @@ Content-Length: 370
       "@odata.type": "microsoft.graph.rolePermission",
       "actions": [
         "Actions value"
+      ],
+      "resourceActions": [
+        {
+          "@odata.type": "microsoft.graph.resourceAction",
+          "allowedResourceActions": [
+            "Allowed Resource Actions value"
+          ],
+          "notAllowedResourceActions": [
+            "Not Allowed Resource Actions value"
+          ]
+        }
       ]
     }
   ],
-  "isBuiltInRoleDefinition": true
+  "rolePermissions": [
+    {
+      "@odata.type": "microsoft.graph.rolePermission",
+      "actions": [
+        "Actions value"
+      ],
+      "resourceActions": [
+        {
+          "@odata.type": "microsoft.graph.resourceAction",
+          "allowedResourceActions": [
+            "Allowed Resource Actions value"
+          ],
+          "notAllowedResourceActions": [
+            "Not Allowed Resource Actions value"
+          ]
+        }
+      ]
+    }
+  ],
+  "isBuiltInRoleDefinition": true,
+  "isBuiltIn": true
 }
 ```
 

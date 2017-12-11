@@ -43,6 +43,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |googlePlayStoreBlocked|Boolean|Indicates whether or not to block the Google Play store.|
 |kioskModeBlockSleepButton|Boolean|Indicates whether or not to block the screen sleep button while in Kiosk Mode.|
 |kioskModeBlockVolumeButtons|Boolean|Indicates whether or not to block the volume buttons while in Kiosk Mode.|
+|dateAndTimeBlockChanges|Boolean|Indicates whether or not to block changing date and time while in KNOX Mode.|
 |kioskModeApps|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|A list of apps that will be allowed to run when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |nfcBlocked|Boolean|Indicates whether or not to block Near-Field Communication.|
 |passwordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
@@ -128,6 +129,7 @@ Here is a JSON representation of the resource.
   "googlePlayStoreBlocked": true,
   "kioskModeBlockSleepButton": true,
   "kioskModeBlockVolumeButtons": true,
+  "dateAndTimeBlockChanges": true,
   "kioskModeApps": [
     {
       "@odata.type": "microsoft.graph.appListItem",

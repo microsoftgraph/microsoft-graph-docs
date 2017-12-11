@@ -42,6 +42,17 @@ The following table shows the properties that are required when you create the w
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|defenderSecurityCenterDisableAppBrowserUI|Boolean|Used to disable the display of the app and browser protection area.|
+|defenderSecurityCenterDisableFamilyUI|Boolean|Used to disable the display of the family options area.|
+|defenderSecurityCenterDisableHealthUI|Boolean|Used to disable the display of the device performance and health area.|
+|defenderSecurityCenterDisableNetworkUI|Boolean|Used to disable the display of the firewall and network protection area.|
+|defenderSecurityCenterDisableVirusUI|Boolean|Used to disable the display of the virus and threat protection area.|
+|defenderSecurityCenterOrganizationDisplayName|String|The company name that is displayed to the users.|
+|defenderSecurityCenterHelpEmail|String|The email address that is displayed to users.|
+|defenderSecurityCenterHelpPhone|String|The phone number or Skype ID that is displayed to users.|
+|defenderSecurityCenterHelpURL|String|The help portal URL this is displayed to users.|
+|defenderSecurityCenterNotificationsFromApp|String|Notifications to show from the displayed areas of app Possible values are: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
+|defenderSecurityCenterITContactDisplay|String|Configure where to display IT contact information to end users. Possible values are: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
 |firewallBlockStatefulFTP|Boolean|Blocks stateful FTP connections to the device|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after which security associations will expire and be deleted. Valid values 300 to 3600|
 |firewallPreSharedKeyEncodingMethod|String|Select the preshared key encoding to be used Possible values are: `deviceDefault`, `none`, `utF8`.|
@@ -83,6 +94,7 @@ The following table shows the properties that are required when you create the w
 |applicationGuardAllowPrintToXPS|Boolean|Allow printing to XPS from Container|
 |applicationGuardAllowPrintToLocalPrinters|Boolean|Allow printing to Local Printers from Container|
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|Allow printing to Network Printers from Container|
+|applicationGuardAllowVirtualGPU|Boolean|Allow application guard to use virtual GPU|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|Allows the Admin to disable the warning prompt for other disk encryption on the user machines.|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.|
 |bitLockerEncryptDevice|Boolean|Allows the admin to require encryption to be turned on using BitLocker.|
@@ -101,7 +113,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 6516
+Content-length: 7332
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -109,6 +121,17 @@ Content-length: 6516
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "defenderSecurityCenterDisableAppBrowserUI": true,
+  "defenderSecurityCenterDisableFamilyUI": true,
+  "defenderSecurityCenterDisableHealthUI": true,
+  "defenderSecurityCenterDisableNetworkUI": true,
+  "defenderSecurityCenterDisableVirusUI": true,
+  "defenderSecurityCenterOrganizationDisplayName": "Defender Security Center Organization Display Name value",
+  "defenderSecurityCenterHelpEmail": "Defender Security Center Help Email value",
+  "defenderSecurityCenterHelpPhone": "Defender Security Center Help Phone value",
+  "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
+  "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
+  "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
   "firewallPreSharedKeyEncodingMethod": "none",
@@ -198,6 +221,7 @@ Content-length: 6516
   "applicationGuardAllowPrintToXPS": true,
   "applicationGuardAllowPrintToLocalPrinters": true,
   "applicationGuardAllowPrintToNetworkPrinters": true,
+  "applicationGuardAllowVirtualGPU": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
@@ -254,7 +278,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 6624
+Content-Length: 7440
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -264,6 +288,17 @@ Content-Length: 6624
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "defenderSecurityCenterDisableAppBrowserUI": true,
+  "defenderSecurityCenterDisableFamilyUI": true,
+  "defenderSecurityCenterDisableHealthUI": true,
+  "defenderSecurityCenterDisableNetworkUI": true,
+  "defenderSecurityCenterDisableVirusUI": true,
+  "defenderSecurityCenterOrganizationDisplayName": "Defender Security Center Organization Display Name value",
+  "defenderSecurityCenterHelpEmail": "Defender Security Center Help Email value",
+  "defenderSecurityCenterHelpPhone": "Defender Security Center Help Phone value",
+  "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
+  "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
+  "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
   "firewallPreSharedKeyEncodingMethod": "none",
@@ -353,6 +388,7 @@ Content-Length: 6624
   "applicationGuardAllowPrintToXPS": true,
   "applicationGuardAllowPrintToLocalPrinters": true,
   "applicationGuardAllowPrintToNetworkPrinters": true,
+  "applicationGuardAllowVirtualGPU": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,

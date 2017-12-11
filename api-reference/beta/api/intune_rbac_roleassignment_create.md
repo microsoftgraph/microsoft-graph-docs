@@ -42,6 +42,7 @@ The following table shows the properties that are required when you create the r
 |description|String|Description of the Role Assignment.|
 |members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.|
 |scopeMembers|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
+|resourceScopes|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
 
 
 
@@ -54,7 +55,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/roleAssignments
 Content-type: application/json
-Content-length: 232
+Content-length: 290
 
 {
   "@odata.type": "#microsoft.graph.roleAssignment",
@@ -65,6 +66,9 @@ Content-length: 232
   ],
   "scopeMembers": [
     "Scope Members value"
+  ],
+  "resourceScopes": [
+    "Resource Scopes value"
   ]
 }
 ```
@@ -74,7 +78,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 281
+Content-Length: 339
 
 {
   "@odata.type": "#microsoft.graph.roleAssignment",
@@ -86,6 +90,9 @@ Content-Length: 281
   ],
   "scopeMembers": [
     "Scope Members value"
+  ],
+  "resourceScopes": [
+    "Resource Scopes value"
   ]
 }
 ```

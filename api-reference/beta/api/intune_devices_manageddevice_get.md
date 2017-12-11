@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5847
+Content-Length: 6504
 
 {
   "value": {
@@ -85,7 +85,13 @@ Content-Length: 5847
           "dataQuota": 9,
           "dataUsed": 8
         }
-      ]
+      ],
+      "tpmSpecificationVersion": "Tpm Specification Version value",
+      "operatingSystemEdition": "Operating System Edition value",
+      "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
+      "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
+      "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
+      "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
     },
     "ownerType": "company",
     "deviceActionResults": [
@@ -176,12 +182,15 @@ Content-Length: 5847
       "codeIntegrityPolicy": "Code Integrity Policy value",
       "bootRevisionListInfo": "Boot Revision List Info value",
       "operatingSystemRevListInfo": "Operating System Rev List Info value",
-      "healthStatusMismatchInfo": "Health Status Mismatch Info value"
+      "healthStatusMismatchInfo": "Health Status Mismatch Info value",
+      "healthAttestationSupportedStatus": "Health Attestation Supported Status value"
     },
     "subscriberCarrier": "Subscriber Carrier value",
     "meid": "Meid value",
     "totalStorageSpaceInBytes": 8,
-    "freeStorageSpaceInBytes": 7
+    "freeStorageSpaceInBytes": 7,
+    "managedDeviceName": "Managed Device Name value",
+    "partnerReportedThreatState": "activated"
   }
 }
 ```

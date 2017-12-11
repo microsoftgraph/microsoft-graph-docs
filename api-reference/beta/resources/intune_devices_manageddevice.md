@@ -29,6 +29,7 @@ Devices that are managed or pre-enrolled through Intune
 |[syncDevice action](../api/intune_devices_manageddevice_syncdevice.md)|None|Not yet documented|
 |[windowsDefenderScan action](../api/intune_devices_manageddevice_windowsdefenderscan.md)|None|Not yet documented|
 |[windowsDefenderUpdateSignatures action](../api/intune_devices_manageddevice_windowsdefenderupdatesignatures.md)|None|Not yet documented|
+|[updateWindowsDeviceAccount action](../api/intune_devices_manageddevice_updatewindowsdeviceaccount.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -83,6 +84,8 @@ Devices that are managed or pre-enrolled through Intune
 |meid|String|MEID|
 |totalStorageSpaceInBytes|Int64|Total Storage in Bytes|
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes|
+|managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name.|
+|partnerReportedThreatState|String|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -130,7 +133,13 @@ Here is a JSON representation of the resource.
         "dataQuota": 1024,
         "dataUsed": 1024
       }
-    ]
+    ],
+    "tpmSpecificationVersion": "String",
+    "operatingSystemEdition": "String",
+    "deviceFullQualifiedDomainName": "String",
+    "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
+    "deviceGuardVirtualizationBasedSecurityState": "String",
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
   },
   "ownerType": "String",
   "deviceActionResults": [
@@ -221,12 +230,15 @@ Here is a JSON representation of the resource.
     "codeIntegrityPolicy": "String",
     "bootRevisionListInfo": "String",
     "operatingSystemRevListInfo": "String",
-    "healthStatusMismatchInfo": "String"
+    "healthStatusMismatchInfo": "String",
+    "healthAttestationSupportedStatus": "String"
   },
   "subscriberCarrier": "String",
   "meid": "String",
   "totalStorageSpaceInBytes": 1024,
-  "freeStorageSpaceInBytes": 1024
+  "freeStorageSpaceInBytes": 1024,
+  "managedDeviceName": "String",
+  "partnerReportedThreatState": "String"
 }
 ```
 

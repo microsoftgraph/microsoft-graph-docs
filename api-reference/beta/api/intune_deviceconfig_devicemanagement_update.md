@@ -38,6 +38,8 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Unique Identifier|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
+|maximumDepTokens|Int32|Maximum number of dep tokens allowed per-tenant.|
+|intuneAccountId|Guid|Intune Account Id for given tenant|
 
 
 
@@ -50,7 +52,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement
 Content-type: application/json
-Content-length: 346
+Content-length: 431
 
 {
   "settings": {
@@ -60,7 +62,9 @@ Content-length: 346
     "deviceComplianceCheckinThresholdDays": 4,
     "isScheduledActionEnabled": true,
     "secureByDefault": true
-  }
+  },
+  "maximumDepTokens": 0,
+  "intuneAccountId": "<Unknown Primitive Type Edm.Guid>"
 }
 ```
 
@@ -69,7 +73,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 450
+Content-Length: 535
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
@@ -81,7 +85,9 @@ Content-Length: 450
     "deviceComplianceCheckinThresholdDays": 4,
     "isScheduledActionEnabled": true,
     "secureByDefault": true
-  }
+  },
+  "maximumDepTokens": 0,
+  "intuneAccountId": "<Unknown Primitive Type Edm.Guid>"
 }
 ```
 

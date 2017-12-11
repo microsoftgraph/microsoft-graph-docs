@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3405
+Content-Length: 3443
 
 {
   "value": {
@@ -86,6 +86,7 @@ Content-Length: 3405
     "googlePlayStoreBlocked": true,
     "kioskModeBlockSleepButton": true,
     "kioskModeBlockVolumeButtons": true,
+    "dateAndTimeBlockChanges": true,
     "kioskModeApps": [
       {
         "@odata.type": "microsoft.graph.appListItem",

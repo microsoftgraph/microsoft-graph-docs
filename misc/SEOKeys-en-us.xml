@@ -1466,6 +1466,13 @@
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_update"/>
         </Item>
+        <Item text="macOS LOB app" url="en-us/api-reference/beta/resources/intune_apps_macoslobapp">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_update"/>
+        </Item>
         <Item text="macOS office suite app" url="en-us/api-reference/beta/resources/intune_apps_macosofficesuiteapp">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_get"/>
@@ -2038,6 +2045,15 @@
           <Item text="Get device configuration device overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_deviceconfigurationdeviceoverview"/>
           <Item text="Get device configuration user overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_deviceconfigurationuseroverview"/>
           <Item text="Get Android for Work certificate profile base" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_androidforworkcertificateprofilebase"/>
+        </Item>
+        <Item text="Android for Work enrollment profile" url="/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_update"/>
+          <Item text="Create token" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_createtoken"/>
+          <Item text="Revoke tokens" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_revoketokens"/>
         </Item>
         <Item text="Android for Work enterprise Wi-Fi configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidforworkenterprisewificonfiguration">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkenterprisewificonfiguration_list"/>
@@ -3776,6 +3792,20 @@
           <Item text="List" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_list"/>
           <Item text="List role assignment" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_list_roleassignment"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_update"/>
+        </Item>
+        <Item text="Device and app management role assignment" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementroleassignment">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_update"/>
+        </Item>
+        <Item text="Device and app management role definition" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementroledefinition">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_update"/>
         </Item>
       </Item>
       <Item text="Telecom expense management" url="/en-us/api-reference/beta/resources/intune_tem_conceptual">
