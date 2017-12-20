@@ -3375,87 +3375,87 @@
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsvpnconfiguration_list_deviceconfigurationuserstatus"/>
         </Item>
       </Item>
-      <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_devicefe_conceptual">
-        <Item text="Apple push notification certificate" url="/en-us/api-reference/beta/resources/intune_devicefe_applepushnotificationcertificate">
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_applepushnotificationcertificate_get"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_applepushnotificationcertificate_update"/>
+      <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_devices_conceptual">
+        <Item text="Apple push notification certificate" url="/en-us/api-reference/beta/resources/intune_devices_applepushnotificationcertificate">
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_applepushnotificationcertificate_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_applepushnotificationcertificate_update"/>
         </Item>
-        <Item text="Detected app" url="/en-us/api-reference/beta/resources/intune_devicefe_detectedapp">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_detectedapp_list"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_detectedapp_get"/>
-          <Item text="List managed devices" url="/en-us/api-reference/beta/api/intune_devicefe_detectedapp_list_manageddevice"/>
+        <Item text="Detected app" url="/en-us/api-reference/beta/resources/intune_devices_detectedapp">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_get"/>
+          <Item text="List managed devices" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_list_manageddevice"/>
         </Item>
-        <Item text="Device category" url="/en-us/api-reference/beta/resources/intune_devicefe_devicecategory">
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicecategory_get"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicecategory_update"/>
+        <Item text="Device category" url="/en-us/api-reference/beta/resources/intune_devices_devicecategory">
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_devicecategory_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_devicecategory_update"/>
         </Item>
-        <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_devicefe_devicemanagement">
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_update"/>
-          <Item text="List remote action audits" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_list_remoteactionaudit"/>
-          <Item text="Create remote action audit" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_create_remoteactionaudit"/>
-          <Item text="Get apple push notification certificate" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_get_applepushnotificationcertificate"/>
+        <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagement">
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_update"/>
+          <Item text="List remote action audits" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_list_remoteactionaudit"/>
+          <Item text="Create remote action audit" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_create_remoteactionaudit"/>
+          <Item text="Get apple push notification certificate" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_get_applepushnotificationcertificate"/>
         </Item>
-        <Item text="Device management script" url="/en-us/api-reference/beta/resources/intune_devicefe_devicemanagementscript">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_list"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_get"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_create"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_delete"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_update"/>
-          <Item text="Assign action" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_assign"/>
-          <Item text="List device management script group assignments" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_list_devicemanagementscriptgroupassignment"/>
+        <Item text="Device management script" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscript">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_update"/>
+          <Item text="Assign action" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_assign"/>
+          <Item text="List device management script group assignments" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_list_devicemanagementscriptgroupassignment"/>
         </Item>
-        <Item text="Device management script group assignment" url="/en-us/api-reference/beta/resources/intune_devicefe_devicemanagementscriptgroupassignment">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_list"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_get"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_create"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_delete"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_update"/>
+        <Item text="Device management script group assignment" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptgroupassignment">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_update"/>
         </Item>
-        <Item text="Device management script device state" url="/en-us/api-reference/beta/resources/intune_devicefe_devicemanagementscriptdevicestate">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptdevicestate_list"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptdevicestate_get"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptdevicestate_create"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptdevicestate_delete"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptdevicestate_update"/>
-          <Item text="Get managedDevice" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_get"/>
+        <Item text="Device management script device state" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptdevicestate">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_update"/>
+          <Item text="Get managedDevice" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_get"/>
         </Item>
-        <Item text="Device management script run summary" url="/en-us/api-reference/beta/resources/intune_devicefe_devicemanagementscriptrunsummary">
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptrunsummary_get"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptrunsummary_update"/>
+        <Item text="Device management script run summary" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptrunsummary">
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptrunsummary_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptrunsummary_update"/>
         </Item>
-        <Item text="Device management script user state" url="/en-us/api-reference/beta/resources/intune_devicefe_devicemanagementscriptuserstate">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptuserstate_list"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptuserstate_get"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptuserstate_create"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptuserstate_delete"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptuserstate_update"/>
-          <Item text="List deviceManagementScriptDeviceStates" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptdevicestate_list"/>
+        <Item text="Device management script user state" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptuserstate">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_update"/>
+          <Item text="List deviceManagementScriptDeviceStates" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_list"/>
         </Item>
-        <Item text="Managed device" url="/en-us/api-reference/beta/resources/intune_devicefe_manageddevice">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_list"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_get"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_update"/>
-          <Item text="Bypass activation lock" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_bypassactivationlock"/>
-          <Item text="Clean Windows device" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_cleanwindowsdevice"/>
-          <Item text="Delete user from shared Apple device" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_deleteuserfromsharedappledevice"/>
-          <Item text="Disable lost mode" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_disablelostmode"/>
-          <Item text="Enable lost mode" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_enablelostmode"/>
-          <Item text="Get device category" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_get_devicecategory"/>
-          <Item text="List detected apps" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_list_detectedapp"/>
-          <Item text="Logout shared Apple device active user" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_logoutsharedappledeviceactiveuser"/>
-          <Item text="Locate device" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_locatedevice"/>
-          <Item text="Reboot now" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_rebootnow"/>
-          <Item text="Recover passcode" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_recoverpasscode"/>
-          <Item text="Remote lock" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_remotelock"/>
-          <Item text="Request remote assistance" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_requestremoteassistance"/>
-          <Item text="Reset passcode" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_resetpasscode"/>
-          <Item text="Retire" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_retire"/>
-          <Item text="Wipe" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_wipe"/>
+        <Item text="Managed device" url="/en-us/api-reference/beta/resources/intune_devices_manageddevice">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_update"/>
+          <Item text="Bypass activation lock" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_bypassactivationlock"/>
+          <Item text="Clean Windows device" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_cleanwindowsdevice"/>
+          <Item text="Delete user from shared Apple device" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_deleteuserfromsharedappledevice"/>
+          <Item text="Disable lost mode" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_disablelostmode"/>
+          <Item text="Enable lost mode" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_enablelostmode"/>
+          <Item text="Get device category" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_get_devicecategory"/>
+          <Item text="List detected apps" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_list_detectedapp"/>
+          <Item text="Logout shared Apple device active user" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_logoutsharedappledeviceactiveuser"/>
+          <Item text="Locate device" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_locatedevice"/>
+          <Item text="Reboot now" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_rebootnow"/>
+          <Item text="Recover passcode" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_recoverpasscode"/>
+          <Item text="Remote lock" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_remotelock"/>
+          <Item text="Request remote assistance" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_requestremoteassistance"/>
+          <Item text="Reset passcode" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_resetpasscode"/>
+          <Item text="Retire" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_retire"/>
+          <Item text="Wipe" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_wipe"/>
         </Item>
-        <Item text="Managed device overview" url="/en-us/api-reference/beta/resources/intune_devicefe_manageddeviceoverview">
-          <Item text="Get managedDeviceOverview" url="/en-us/api-reference/beta/api/intune_devicefe_manageddeviceoverview_get"/>
-          <Item text="Update managedDeviceOverview" url="/en-us/api-reference/beta/api/intune_devicefe_manageddeviceoverview_update"/>
+        <Item text="Managed device overview" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceoverview">
+          <Item text="Get managedDeviceOverview" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_get"/>
+          <Item text="Update managedDeviceOverview" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_update"/>
         </Item>
         <Item text="Remote assistance partner" url="/en-us/api-reference/beta/resources/intune_remoteassistance_remoteassistancepartner">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_remoteassistance_remoteassistancepartner_list"/>
@@ -3466,47 +3466,47 @@
           <Item text="Begin onboarding" url="/en-us/api-reference/beta/api/intune_remoteassistance_remoteassistancepartner_beginonboarding"/>
           <Item text="Disconnect" url="/en-us/api-reference/beta/api/intune_remoteassistance_remoteassistancepartner_disconnect"/>
         </Item>
-        <Item text="Remote action audit" url="/en-us/api-reference/beta/resources/intune_devicefe_remoteactionaudit">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_remoteactionaudit_list"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_remoteactionaudit_get"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_remoteactionaudit_create"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_remoteactionaudit_delete"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_remoteactionaudit_update"/>
+        <Item text="Remote action audit" url="/en-us/api-reference/beta/resources/intune_devices_remoteactionaudit">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_update"/>
         </Item>
-        <Item text="User" url="/en-us/api-reference/beta/resources/intune_devicefe_user">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_user_list"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_user_get"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_user_create"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_user_delete"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_user_update"/>
-          <Item text="Remove all devices from management" url="/en-us/api-reference/beta/api/intune_devicefe_user_removealldevicesfrommanagement"/>
-          <Item text="List managed devices" url="/en-us/api-reference/beta/api/intune_devicefe_user_list_manageddevice"/>
+        <Item text="User" url="/en-us/api-reference/beta/resources/intune_devices_user">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devices_user_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_user_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devices_user_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devices_user_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_user_update"/>
+          <Item text="Remove all devices from management" url="/en-us/api-reference/beta/api/intune_devices_user_removealldevicesfrommanagement"/>
+          <Item text="List managed devices" url="/en-us/api-reference/beta/api/intune_devices_user_list_manageddevice"/>
         </Item>
-        <Item text="Windows managed device" url="/en-us/api-reference/beta/resources/intune_devicefe_windowsmanageddevice">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanageddevice_list"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanageddevice_get"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanageddevice_create"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanageddevice_delete"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanageddevice_update"/>
-          <Item text="List detectedApps" url="/en-us/api-reference/beta/api/intune_devicefe_detectedapp_list"/>
-          <Item text="Get deviceCategory" url="/en-us/api-reference/beta/api/intune_devicefe_devicecategory_get"/>
-          <Item text="Get windowsProtectionState" url="/en-us/api-reference/beta/api/intune_devicefe_windowsprotectionstate_get"/>
+        <Item text="Windows managed device" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanageddevice">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_update"/>
+          <Item text="List detectedApps" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_list"/>
+          <Item text="Get deviceCategory" url="/en-us/api-reference/beta/api/intune_devices_devicecategory_get"/>
+          <Item text="Get windowsProtectionState" url="/en-us/api-reference/beta/api/intune_devices_windowsprotectionstate_get"/>
         </Item>
-        <Item text="Windows management app" url="/en-us/api-reference/beta/resources/intune_devicefe_windowsmanagementapp">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_list_windowsmanagementapphealthstate"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_get"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_update"/>
+        <Item text="Windows management app" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapp">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_list_windowsmanagementapphealthstate"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_update"/>
         </Item>
-        <Item text="Windows management app health state" url="/en-us/api-reference/beta/resources/intune_devicefe_windowsmanagementapphealthstate">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_list"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_get"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_create"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_delete"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_update"/>
+        <Item text="Windows management app health state" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapphealthstate">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_update"/>
         </Item>
-        <Item text="Windows management app health summary" url="/en-us/api-reference/beta/resources/intune_devicefe_windowsmanagementapphealthsummary">
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthsummary_get"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthsummary_update"/>
+        <Item text="Windows management app health summary" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapphealthsummary">
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthsummary_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthsummary_update"/>
         </Item>
       </Item>
       <Item text="App protection" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
