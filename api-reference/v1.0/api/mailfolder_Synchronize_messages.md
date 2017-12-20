@@ -4,7 +4,7 @@
 Synchronize signed-in user's local data store with the messages on the server.
 
 Message synchronization is a per-folder operation. For example, you can synchronize all of the messages in the signed-in user's local Inbox. To synchronize the messages in a folder hierarchy, synchronize each folder individually.
-The API supports both full synchronization that retrieves all of the messages in a folder, and incremental synchronization that retrieves all of the messages that have changed since the last full synchronization.
+The API supports both full synchronization that retrieves all of the messages in a folder, and incremental synchronization that retrieves all of the messages that have changed since the last synchronization.
 
 A full synchronization cycle contains at least one round. The first round starts the synchronization, each subsequent round returns another set of synchronized messages. When the mail folder is fully synchronized, Microsoft Graph provides a **delta link** to be used in subsequent incremental synchronizations.
 
