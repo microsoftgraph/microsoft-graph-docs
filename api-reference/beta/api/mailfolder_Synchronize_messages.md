@@ -144,14 +144,14 @@ Content-Length: 257503
             },
             "sender": {
                 "emailAddress": {
-                    "name": "Scott Deadrick",
-                    "address": "scott-deadrick@pluralsight.com"
+                    "name": "Elliot Hyde",
+                    "address": "elliot-hyde@tailspintoys.com"
                 }
             },
             "from": {
                 "emailAddress": {
-                    "name": "Scott Deadrick",
-                    "address": "scott-deadrick@pluralsight.com"
+                    "name": "Elliot Hyde",
+                    "address": "elliot-hyde@tailspintoys.com"
                 }
             },
             "toRecipients": [{
