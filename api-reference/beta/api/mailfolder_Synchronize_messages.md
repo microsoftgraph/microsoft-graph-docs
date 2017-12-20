@@ -1,24 +1,29 @@
-# Synchronize messages
+# Synchronize messages in a mail folder
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Synchronize signed-in user's local data store with the messages on the server.
 
-Message synchronization is a per-folder operation, for example, you can synchronize all of the messages in the signed-in user's local Inbox. To synchronize the messages in a folder hierarchy, synchronize each folder individually.
+Message synchronization is a per-folder operation. For example, you can synchronize all of the messages in the signed-in user's local Inbox. To synchronize the messages in a folder hierarchy, synchronize each folder individually.
 The API supports both full synchronization that retrieves all of the messages in a folder, and incremental synchronization that retrieves all of the messages that have changed since the last full synchronization.
 
+A full synchronization cycle contains at least one round. The first round starts the synchronization, each subsequent round returns another set of synchronized messages. When the mail folder is fully synchronized, Microsoft Graph provides a **delta link** to be used in subsequent incremental synchronizations.
 
+The JSON payload of every response in a round of message synchronization contains one of the following:
 
-Here is a work flow for a typical message synchronization cycle
+- `"@odata.nextLink": "https://graph.microsoft.com/beta/me/mailFolders/Inbox/messages/delta?$skiptoken=LztZwWjo5IivWgsDXIEomMBKSn2qCclS0"`
 
+- `"@odata.deltaLink": "https://graph.microsoft.com/beta/me/mailFolders/Inbox/messages/delta $deltatoken=LztZwWjo5"`
 
+The type of `@odata` key that is present in the JSON payload tells you if additional rounds of synchronization are needed. 
 
-|Sequence|Synchronization link type|Description|
+The following table shows the sequence of synchronization response `@odata` type values in a typical synchronization cycle. 
+
+|Sequence|`@odata` type|Next action|
 |:-------|:-------------|:------------|
-|Round 1|`@odata.nextLink`|Additional messages available|
-|Round 2|`@odata.nextLink`|Additional messages available|
-|Round n|`@odata.nextLink`|Additional messages available|
-|Round n+1|`@odata.deltaLink`|No additional messages to synchronize|
+|Round 1|`@odata.nextLink`|Get additional messages at the next link|
+|Round n|`@odata.nextLink`|Get additional messages at the next link|
+|Round n+1|`@odata.deltaLink`|No additional messages to synchronize. Cache the delta link value to be used in an incremental sync.|
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -364,7 +369,7 @@ Content-Length: 392
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.deltaLink": "https://graph.microsoft.com/beta/me/mailFolders/AAMkADk0MGFkODE3LWE4MmYtND/messages/delta?$deltatoken=LztZwWjo5IivWBhyxw5rAOn0G2spjS3WuY0raFhuWsc6DsTokRlUQFBfE7LZ2U3E1kh7zt7BB4SdqXNXJn4OGBlsAXb8RiBuoOayRLgTUQc.ejiaf1ixbKUfD7MLuo5Np9wsglJl-wa5Z9usbCb42JI",
+    "@odata.deltaLink": "https://graph.microsoft.com/beta/me/mailFolders/Inbox/messages/delta?$deltatoken=LztZwWjo5IivWBhyxw5rAOn0G2spjS3WuY0raFhuWsc6DsTokRlUQFBfE7LZ2U3E1kh7zt7BB4SdqXNXJn4OGBlsAXb8RiBuoOayRLgTUQc.ejiaf1ixbKUfD7MLuo5Np9wsglJl-wa5Z9usbCb42JI",
     "value": []
 }
 ```
