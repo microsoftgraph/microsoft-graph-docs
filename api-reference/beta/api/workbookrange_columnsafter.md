@@ -1,12 +1,18 @@
 # workbookRange: columnsAfter
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Gets a certain number of columns to the right of the given range.
 
-## Prerequisites
-The following **scopes** are required to execute this API: _Files.Read,
-Files.ReadWrite_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Files.ReadWrite    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -25,11 +31,11 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 |:---------------|:--------|:----------|
 |count|Int32|The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1|
 
-
 ## Request body
 
-### Response
-If successful, this method returns `200, OK` response code and [workbookRange](../resources/range.md) object in the response body.
+## Response
+
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

@@ -6,9 +6,16 @@ Deletes a domain from a tenant.
 > - Deleted domains are not recoverable.<br />
 > - Attempts to delete will fail if there are any resources or objects still dependent on the domain. You can find all dependent resources by using the [List domainNameReferences](domain_list_domainnamereferences.md) API.
 
-## Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Domain.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -29,9 +36,9 @@ DELETE /domains/{id}
 
 Do not supply a request body for this method.
 
-### Response
+## Response
 
-If successful, this method returns `204, No Content` response code. It does not return a response body.
+If successful, this method returns `204 No Content` response code. It does not return a response body.
 
 ## Example
 ##### Request

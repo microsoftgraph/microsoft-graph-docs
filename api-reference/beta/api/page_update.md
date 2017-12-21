@@ -1,11 +1,17 @@
 # Update page
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Update the content of a OneNote page.
-## Prerequisites
-One of the following **scopes** is required to execute this API:   
-Notes.ReadWrite, or Notes.ReadWrite.All 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Notes.ReadWrite    |
+|Application | Notes.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -24,6 +30,7 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 In the request body, supply an array of [patchContentCommand](../resources/patchcontentcommand.md) objects that represent the changes to the page. For more information and examples, see <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">Update OneNote pages</a>.
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.  No JSON data is returned for a PATCH request.
 ## Example
 ##### Request

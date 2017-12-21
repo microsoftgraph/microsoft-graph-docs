@@ -7,7 +7,6 @@ Represents information about a user in the sending or receiving end of an event,
 |:---------------|:--------|:----------|
 |emailAddress|[EmailAddress](emailaddress.md)|The recipient's email address.|
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource

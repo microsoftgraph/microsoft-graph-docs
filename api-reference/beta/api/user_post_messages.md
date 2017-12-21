@@ -1,6 +1,6 @@
 # Create Message
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
 
@@ -9,9 +9,15 @@ While creating the draft in the same **POST** call, you can:
 - Include an [attachment](../resources/attachment.md) 
 - Use a [mention](../resources/mention.md) to call out another user in the new message
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -36,9 +42,9 @@ If you want to use **mention** to call out another user in the new message:
 
 Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
-
 ## Response
-If successful, this method returns a `201, Created` response code and a [message](../resources/message.md) object in the response body.
+
+If successful, this method returns a `201 Created` response code and a [message](../resources/message.md) object in the response body.
 
 ## Example
 ##### Request 1
@@ -122,8 +128,8 @@ Content-length: 248
     "toRecipients":[
       {
           "emailAddress":{
-              "name":"Fanny Downs",
-              "address":"fannyd@contoso.onmicrosoft.com"
+              "name":"Samantha Booth",
+              "address":"samanthab@contoso.onmicrosoft.com"
           }
       }
     ],
@@ -171,8 +177,8 @@ Content-length: 748
   "toRecipients":[
     {
       "emailAddress":{
-        "name":"Fanny Downs",
-        "address":"fannyd@contoso.onmicrosoft.com"
+        "name":"Samantha Booth",
+        "address":"samanthab@contoso.onmicrosoft.com"
       }
     }
   ],

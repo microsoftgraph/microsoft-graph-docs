@@ -1,6 +1,6 @@
 # Update schemaExtension
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md).
 
@@ -10,9 +10,16 @@ The update applies to all the resources that are included in the **targetTypes**
 Only the app that created a schema extension (owner app) can make additive updates to the extension when the extension is in the **InDevelopment** or **Available** status. 
 That means the app cannot remove custom properties or target resource types from the definition. The app can, however, change the description of the extension.
 
-## Prerequisites
+## Permissions
 
-The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 

@@ -1,16 +1,20 @@
 # RangeFill: clear
 
 Resets the range background.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/fill/clear
-POST /workbook/worksheets/{id|name}/range(<address>)/format/fill/clear
+POST /workbook/worksheets/{id|name}/range(address='<address>')/format/fill/clear
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
 
 ```
@@ -18,12 +22,13 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 
 ## Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+
+If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.

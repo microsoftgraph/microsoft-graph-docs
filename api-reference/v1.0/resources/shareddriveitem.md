@@ -1,3 +1,9 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharedDriveItem
+---
 # SharedDriveItem resource type
 
 The **sharedDriveItem** resource is returned when using the [Shares](../api/shares_get.md) API to access a shared [driveItem](driveitem.md).
@@ -16,15 +22,16 @@ The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and
 
 ```json
 {
-    "id": "string",
-    "name": "string",
-    "owner": { "@odata.type": "microsoft.graph.identitySet" },
+  "id": "string",
+  "name": "string",
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
 
-    /* relationships*/
-    "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
-    "root": { "@odata.type": "microsoft.graph.driveItem" },
-    "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
-    "site": { "@odata.type": "microsoft.graph.site" }
+  "driveItem": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "list": { "@odata.type": "microsoft.graph.list" },
+  "listItem": { "@odata.type": "microsoft.graph.listItem" },
+  "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "site": { "@odata.type": "microsoft.graph.site" }
 }
 ```
 
@@ -38,12 +45,25 @@ The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and
 
 ## Relationships
 
-| Relationship | Type                                  | Description                                                                                                                                                                                                |
-| :----------- | :------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| items        | Collection([DriveItem](driveitem.md)) | A collection of shared **driveItem** resources. This collection cannot be enumerated, but items can be accessed by their unique ID.                                                                        |
-| root         | [DriveItem](driveitem.md)             | The top level shared **driveItem**. If a single file is shared, this item is the file. If a folder is shared, this item will be the folder. You can use the item's facets to determine which case applies. |
-| driveItem    | [driveItem](driveitem.md)             | A **driveItem** for the resource that was shared.  This is identical to the **root** property.                                                                                                             |
-| site         | [site](site.md)                       | A **site** resource that contains the item that was shared.                                                                                                                                                |
+| Relationship name | Type                | Description
+| ------------------|:--------------------|:-----------------------------------
+| **driveItem**     | [**driveItem**][driveItem]   | Used to access the underlying **driveItem**
+| **list**          | [**list**][list]        | Used to access the underlying **list**
+| **listItem**      | [**listItem**][listItem]    | Used to access the underlying **listItem**
+| **site**          | [**site**][site]        | Used to access the underlying **site**
+
+
+Alternatively, for **driveItems** shared from personal OneDrive accounts, the following relationships may also be used.
+
+| Relationship name | Type                         | Description
+| ------------------|:-----------------------------|:-----------------------------------
+| **items**         | [**driveItem**][driveItem] collection | All driveItems contained in the sharing root. This collection cannot be enumerated.
+| **driveItem**     | [**driveItem**][driveItem]            | Used to access the underlying **driveItem**
+
+[driveItem]: driveItem.md
+[list]: list.md
+[listItem]: listItem.md
+[site]: site.md
 
 ## Methods
 
@@ -55,12 +75,10 @@ The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharepointIds resource",
-  "keywords": "",
+  "description": "Share resource returns information about a shared item or collection of items.",
+  "keywords": "share,shared,sharing root,shared files, shared items",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Share"
+} -->

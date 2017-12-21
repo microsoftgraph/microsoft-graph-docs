@@ -1,6 +1,6 @@
 # plannerPlanDetails resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **plannerPlanDetails** resource represents the additional information about a plan. Each [plan](plannerplan.md) object has a details object.
 
@@ -11,7 +11,6 @@ The **plannerPlanDetails** resource represents the additional information about 
 |:---------------|:--------|:----------|
 |[Get plannerPlanDetails](../api/plannerplandetails_get.md) | [plannerPlanDetails](plannerplandetails.md) |Read properties and relationships of **plannerPlanDetails** object.|
 |[Update](../api/plannerplandetails_update.md) | [plannerPlanDetails](plannerplandetails.md)	|Update **plannerPlanDetails** object. |
-
 
 ## Properties
 | Property	   | Type	|Description|

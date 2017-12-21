@@ -1,13 +1,9 @@
-﻿#  resource type
-
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+# windowsManagedDevice resource type
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-
 Windows devices that are managed or pre-enrolled through Intune
-
 Inherits from [managedDevice](../resources/intune_devicefe_manageddevice.md)
-
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -19,7 +15,6 @@ Inherits from [managedDevice](../resources/intune_devicefe_manageddevice.md)
 |[List detectedApps](../api/intune_devicefe_detectedapp_list.md)|[detectedApp](../resources/intune_devicefe_detectedapp.md) collection|List properties and relationships of the [detectedApp](../resources/intune_devicefe_detectedapp.md) objects.|
 |[Get deviceCategory](../api/intune_devicefe_devicecategory_get.md)|[deviceCategory](../resources/intune_devicefe_devicecategory.md)|Read properties and relationships of the [deviceCategory](../resources/intune_devicefe_devicecategory.md) object.|
 |[Get windowsProtectionState](../api/intune_devicefe_windowsprotectionstate_get.md)|[windowsProtectionState](../resources/intune_devicefe_windowsprotectionstate.md)|Read properties and relationships of the [windowsProtectionState](../resources/intune_devicefe_windowsprotectionstate.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -62,14 +57,12 @@ Inherits from [managedDevice](../resources/intune_devicefe_manageddevice.md)
 |imei|String|IMEI Inherited from [managedDevice](../resources/intune_devicefe_manageddevice.md)|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires Inherited from [managedDevice](../resources/intune_devicefe_manageddevice.md)|
 |serialNumber|String|SerialNumber Inherited from [managedDevice](../resources/intune_devicefe_manageddevice.md)|
-
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |detectedApps|[detectedApp](../resources/intune_devicefe_detectedapp.md) collection|All applications currently installed on the device Inherited from [managedDevice](../resources/intune_devicefe_manageddevice.md)|
 |deviceCategory|[deviceCategory](../resources/intune_devicefe_devicecategory.md)|Device category Inherited from [managedDevice](../resources/intune_devicefe_manageddevice.md)|
 |windowsProtectionState|[windowsProtectionState](../resources/intune_devicefe_windowsprotectionstate.md)|The device protection status.|
-
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -156,6 +149,3 @@ Here is a JSON representation of the resource.
   "serialNumber": "String"
 }
 ```
-
-
-

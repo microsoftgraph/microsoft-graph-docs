@@ -11,7 +11,6 @@ The **assignedPlans** property of both the [user](user.md) entity and the [organ
 |service|String|The name of the service; for example, “Exchange”.|
 |servicePlanId|Guid|A GUID that identifies the service plan.|
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource

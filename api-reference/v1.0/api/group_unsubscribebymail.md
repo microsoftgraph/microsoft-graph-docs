@@ -1,10 +1,15 @@
 # group: unsubscribeByMail
+Calling this method will prevent the current user from receiving email notifications for this group about new posts, events, and files in that group. Supported for Office 365 groups only. 
 
-Calling this method will prevent the current user from receiving email notifications
-for this group about new posts, events, and files in that group. Supported for only Office 365 groups. 
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* 
-*Group.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -14,16 +19,17 @@ POST /groups/{id}/unsubscribeByMail
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Prefer | return=minimal. If minimal response header is included in the request header, then a successful response returns `204 No Content` code. Optional.  | 
 
 ## Request body
+Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "group_unsubscribebymail"
@@ -32,8 +38,8 @@ Here is an example of the request.
 POST https://graph.microsoft.com/v1.0/groups/{id}/unsubscribeByMail
 ```
 
-##### Response
-Here is an example of the response. 
+#### Response
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,6 +1,6 @@
 # fileAttachment resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 A file (such as a text file or Word document) attached to an [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md). The  **contentBytes** 
@@ -20,11 +20,10 @@ Derived from [attachment](attachment.md).
 |[Get](../api/attachment_get.md) | [fileAttachment](fileattachment.md) |Read properties and relationships of fileAttachment object.|
 |[Delete](../api/attachment_delete.md) | None |Delete fileAttachment object. |
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentBytes|Binary|The binary contents of the file.|
+|contentBytes|Binary|The base64-encoded contents of the file.|
 |contentId|String|The ID of the attachment in the Exchange store.|
 |contentLocation|String|The Uniform Resource Identifier (URI) that corresponds to the location of the content of the attachment.|
 |contentType|String|The content type of the attachment.|

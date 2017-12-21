@@ -1,9 +1,15 @@
 # user: reminderView
 Return a list of calendar reminders within the specified start and end times. 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Calendars.Read; Calendars.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
+|Application | Calendars.Read, Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,19 +24,19 @@ In the request URL, provide the following function parameters with values.
 |startDateTime|String|The start date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|The end date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T20:00:00.0000000".|
 
-
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type   | application/json |
-| Prefer | {Time-zone}. Optional, UTC assumed if absent.| 
+| Prefer | {Time-zone}. Optional, UTC assumed if absent.|
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `200, OK` response code and [reminder](../resources/reminder.md) collection object in the response body.
+
+If successful, this method returns `200 OK` response code and [reminder](../resources/reminder.md) collection object in the response body.
 
 ## Example
 Here is an example of how to call this API.

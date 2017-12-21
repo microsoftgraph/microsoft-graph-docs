@@ -1,3 +1,9 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SiteCollection
+---
 # SiteCollection resource
 
 The **siteCollection** resource provides more information about a site collection.
@@ -35,5 +41,5 @@ Here is a JSON representation of the resource.
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "Facets/SiteCollection"
 }-->

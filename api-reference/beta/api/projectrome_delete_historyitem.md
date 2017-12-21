@@ -1,12 +1,19 @@
 # Delete a historyItem
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Delete an existing history item for an existing user activity.
 
-## Prerequisites
+## Permissions
 
-The following **scope** is required to execute this API: *UserTimelineActivity.Write.CreatedByApp* 
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | UserTimelineActivity.Write.CreatedByApp    |
+|Application | Not supported. |
 
 ## HTTP request
 
@@ -28,7 +35,7 @@ No request body.
 
 ## Response
 
-If successful, this method returns the `204, No Content` response code if the history item was deleted.
+If successful, this method returns the `204 No Content` response code if the history item was deleted.
 
 ## Example
 

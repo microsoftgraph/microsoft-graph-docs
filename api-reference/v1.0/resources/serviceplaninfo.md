@@ -11,7 +11,6 @@ Contains information about a service plan associated with a subscribed SKU. The 
 |provisioningStatus|String|The provisioning status of the service plan. Possible values:<br/>"Success" - Service is fully provisioned.<br/>"Disabled" - Service has been disabled.<br/>"PendingInput" - Service is not yet provisioned; awaiting service confirmation.<br/>"PendingActivation" - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)<br/>"PendingProvisioning" - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.|
 |appliesTo|String|The object the service plan can be assigned to. Possible values:<br/>"User" - service plan can be assigned to individual users.<br/>"Company" - service plan can be assigned to the entire tenant.|
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource

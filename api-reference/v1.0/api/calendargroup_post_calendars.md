@@ -1,8 +1,15 @@
 # Create Calendar
 
-Use this API to create a new Calendar in a calendar group.
-## Prerequisites
-One of the following **scopes** is required to execute this API: _Calendars.ReadWrite_
+Use this API to create a new calendar in a calendar group for a [user](../resources/user.md). 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
+|Application | Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 A user's default [calendarGroup](../resources/calendargroup.md).
@@ -22,11 +29,11 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 | Content-Type  | application/json. Required.  |
 
 ## Request body
-In the request body, supply a JSON representation of [Calendar](../resources/calendar.md) object.
-
+In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
 
 ## Response
-If successful, this method returns `201, Created` response code and [Calendar](../resources/calendar.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and [calendar](../resources/calendar.md) object in the response body.
 
 ## Example
 ##### Request

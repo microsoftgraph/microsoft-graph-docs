@@ -6,13 +6,13 @@ A GET operation looks for the specified photo in the user's mailbox on Exchange 
 
 > **Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API for:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*	Profile photo of any user in the tenant including the signed-in user - *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-*	Profile photo of specifically the signed-in user - *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-* Profile photo of a **group** - *Group.Read.All; Group.ReadWrite.All*
-* Photo of a **contact** - *Contacts.Read; Contacts.ReadWrite*
+*	Profile photo of any user in the tenant including the signed-in user - User.ReadBasic.All, User.Read.All, User.ReadWrite.All
+*	Profile photo of specifically the signed-in user - User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All
+* Profile photo of a **group** - Group.Read.All, Group.ReadWrite.All
+* Photo of a **contact** - Contacts.Read, Contacts.ReadWrite
 
 ## HTTP request to get the photo
 <!-- { "blockType": "ignored" } -->

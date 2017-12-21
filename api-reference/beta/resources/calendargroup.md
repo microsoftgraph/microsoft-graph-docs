@@ -1,6 +1,6 @@
 # calendarGroup resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 A group of calendars.
 
@@ -18,7 +18,6 @@ A group of calendars.
 |[List calendars](../api/calendargroup_list_calendars.md) |[Calendar](calendar.md) collection| List calendars in a calendar group.|
 |[Create Calendar](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar in a calendar group.|
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -31,7 +30,6 @@ A group of calendars.
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |calendars|[Calendar](calendar.md) collection|The calendars in the calendar group. Navigation property. Read-only. Nullable.|
-
 
 ## JSON representation
 

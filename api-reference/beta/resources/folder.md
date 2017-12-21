@@ -1,6 +1,12 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Folder
+---
 # Folder resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **Folder** resource groups folder-related data on an item into a single structure. 
 [**DriveItems**](driveitem.md) with a non-null **folder** facet are containers for other DriveItems.
@@ -31,14 +37,14 @@ Here is a JSON representation of the resource.
 | **childCount** | Int64          | Number of children contained immediately within this container.
 | **view**       | [folderView][] | A collection of properties defining the recommended view for the folder.
 
-[folderView]: folderView.md
 
 ## Remarks 
 
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+For more information about the facets on a DriveItem, see [DriveItem][].
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[folderView]: folderView.md
+[DriveItem]: driveItem.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "folder resource",

@@ -1,9 +1,15 @@
 # Delete contact
 
 Delete a contact.
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Contacts.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Contacts.ReadWrite    |
+|Delegated (personal Microsoft account) | Contacts.ReadWrite    |
+|Application | Contacts.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).
@@ -30,9 +36,9 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/con
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 ##### Request

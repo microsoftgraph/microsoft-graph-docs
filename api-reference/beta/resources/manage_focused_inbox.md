@@ -1,6 +1,6 @@
 # Manage Focused Inbox
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Focused Inbox allows you to view important messages in the `Focused` tab of the Inbox, and the rest of the Inbox messages in the `Other` tab. The classification system 
 initially organizes Inbox messages in a default way. You can correct and train the system over time through the user interface or programmatically. The more you use it, 
@@ -33,5 +33,6 @@ including the Inbox.
 
 **Using overrides to classify consistently per sender**
 
-[Create an override for a sender](../api/inferenceclassification_post_overrides.md) | [List all user overrides](../api/inferenceclassification_list_overrides.md) | 
+[Create an override for a sender](../api/inferenceclassification_post_overrides.md) | [List all user overrides](../api/inferenceclassification_list_overrides.md) |
+
 [Update an override for a sender](../api/inferenceclassificationoverride_update.md) | [Delete a sender override](../api/inferenceclassificationoverride_delete.md) 

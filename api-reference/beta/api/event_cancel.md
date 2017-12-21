@@ -1,6 +1,6 @@
 # event: cancel
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 This action allows the organizer of a meeting to send a cancellation message and cancel the event. 
 
@@ -13,9 +13,15 @@ error message:
 This action differs from [Delete](event_delete.md) in that **Cancel** is available to only the organizer, and lets
 the organizer send a custom message to the attendees about the cancellation.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
+|Application | Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -50,7 +56,8 @@ In the request body, provide a JSON object with the following parameters.
 |comment|String|A comment about the cancellation sent to all the attendees. Optional.|
 
 ## Response
-If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
+
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.

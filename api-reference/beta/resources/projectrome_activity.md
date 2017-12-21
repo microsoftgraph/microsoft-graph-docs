@@ -1,6 +1,6 @@
 # activity resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents a single activity within an app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a [history item](projectrome_historyitem.md) that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity.
 
@@ -33,7 +33,13 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 |contentUrl | String | Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).|
 |visualElements| [visualInfo](../resources/projectrome_visualinfo.md) | Required. The object containing information to render the activity in the UX.|
 |contentInfo | Untyped JSON object | Optional. A custom piece of data - JSON-LD extensible description of content according to [schema.org](http://schema.org) syntax.|
-|historyItems | [historyItem](../resources/projectrome_historyitem.md) collection | Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.|
+|expirationDateTime| DateTimeOffset| Set by the server. DateTime in UTC when the object expired on the server.|
+
+## Relationships
+
+|Relationship | Type | Description|
+|:------------|:-----|:-----------|
+|historyItems| [historyItem](../resources/projectrome_historyitem.md) collection | Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.|
 
 ## JSON representation
 
@@ -47,10 +53,8 @@ Here is a JSON representation of the resource.
     "fallbackUrl",
     "contentUrl",
     "contentInfo",
-    "visualElements.attribution",
-    "visualElements.description",
-    "visualElements.backgroundColor",
-    "visualElements.content"
+    "visualElements",
+    "historyItems"
   ],
   "@odata.type": "microsoft.graph.activity"
 }-->
@@ -64,22 +68,13 @@ Here is a JSON representation of the resource.
     "activationUrl": "String (URL)",
     "contentUrl": "String (URL)",
     "fallbackUrl": "String (URL)",
-    "contentInfo": {
-        // JSON object
-    },
-    "visualElements": {
-        "attribution": {
-            "iconUrl": "String (URL)",
-            "alternativeText": "String",
-            "addImageQuery": "boolean",
-        },
-        "description": "String",
-        "backgroundColor": "String",
-        "displayText": "String",
-        "content": {
-            // JSON object
-        }
-    }
+    "createdDateTime": "DateTimeOffset",
+    "lastModifiedDateTime": "DateTimeOffset",
+    "expirationDateTime": "DateTimeOffset",
+    "id": "String",
+    "contentInfo": { "@data.type": "microsoft.graph.Json" },
+    "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
+    "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]
 }
 ```
 

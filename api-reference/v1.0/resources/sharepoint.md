@@ -2,10 +2,61 @@
 
 The SharePoint API in Microsoft Graph supports the following core scenarios:
 
-* Access to SharePoint **sites**, and **drives** (document libraries)
+* Access to SharePoint **sites**, **lists**, and **drives** (document libraries)
 * Read-only support for **site** resources (no ability to create new sites)
-* Read-write support for **driveItems**
+* Read-write support for **lists**, **listItems**, and **driveItems**
 * Address resources by SharePoint ID, URL, or relative path
+
+The SharePoint API exposes three major resource types:
+
+* [Site](site.md) _(top-level object)_
+* [List](list.md)
+* [ListItem](listitem.md)
+
+The following is an example of a listItem resource.
+
+```json
+{
+  "fields": {
+    "Title": "Access card",
+    "Employee": "Ryan Gregg",
+    "EmployeeId": "10",
+    "CardSerial": "01235492",
+    "Alias": "RGregg",
+    "ID": 1,
+    "ContentType": "Item",
+    "Modified": "2016-09-19T23:15:25-07:00",
+    "Created": "2016-09-19T23:15:25-07:00"
+  },
+  "createdBy": {
+    "user": {
+      "id": "b757fdcb-0271-4807-b243-504139e4ba04",
+      "displayName": "Ryan Gregg"
+    }
+  },
+  "createdDateTime": "2016-09-20T06:15:25Z",
+  "eTag": "48e941c3-9515-4c48-9760-c07c90c79d48,1",
+  "id": "4",
+  "lastModifiedBy": {
+    "user": {
+      "id": "b757fdcb-0271-4807-b243-504139e4ba04",
+      "displayName": "Ryan Gregg"
+    }
+  },
+  "lastModifiedDateTime": "2016-09-20T06:15:25Z",
+}
+```
+
+Resources expose data in three different ways:
+
+* _Properties_ (like **id** and **name**) expose simple values.
+* _Facets_ (like **fields** and **createdBy**) expose complex values.
+* _References_ (like **items**) point to collections of other resources.
+
+You can expand references in your URL with the _expand_ query parameter; for example, `?expand=fields`.
+You can request specific properties and facets with the _select_ query parameter; for example, `?select=id,name`.
+By default, most properties and facets are returned while all references are hidden.
+For efficiency, we recommend that you specify _select_ and _expand_ to only return the data you care about.
 
 ## SharePoint API root resources
 
@@ -18,6 +69,8 @@ The following examples are relative to `https://graph.microsoft.com/v1.0`.
 | /sites/{site-id}/drive                 | Access the default [drive](drive.md) (document library) for the given [site][].
 | /sites/{site-id}/drives                | Enumerate the [drives](drive.md) (document libraries) under the [site][].
 | /sites/{site-id}/sites                 | Enumerate the sub-sites under the [site][].
+| /sites/{site-id}/lists                 | Enumerate the [lists](list.md) under the [site](site.md).
+| /sites/{site-id}/lists/{list-id}/items | Enumerate the [listItems](listitem.md) under the [list](list.md).
 | /groups/{group-id}/sites/root          | Access a group's team [site][].
 
 Sites can also be addressed by path by using the SharePoint hostname, followed by a colon and the relative path to the site.
@@ -51,6 +104,7 @@ GET https://graph.microsoft.com/v1.0/sites/{hostname},{spsite-id}
 ```
 
 [site]: site.md
+[list]: list.md
 [drive]: drive.md
 [siteCollection]: siteCollection.md
 

@@ -1,6 +1,6 @@
-﻿#  resource type
+﻿# managedIOSStoreApp resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -10,21 +10,16 @@ Inherits from [managedApp](../resources/intune_apps_managedapp.md)
 
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List managedIOSStoreApps](../api/intune_apps_managediosstoreapp_list.md)|[managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md) collection|List properties and relationships of the [managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md) objects.|
 |[Get managedIOSStoreApp](../api/intune_apps_managediosstoreapp_get.md)|[managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md)|Read properties and relationships of the [managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md) object.|
 |[Create managedIOSStoreApp](../api/intune_apps_managediosstoreapp_create.md)|[managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md)|Create a new [managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md) object.|
 |[Delete managedIOSStoreApp](../api/intune_apps_managediosstoreapp_delete.md)|None|Deletes a [managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md).|
 |[Update managedIOSStoreApp](../api/intune_apps_managediosstoreapp_update.md)|[managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md)|Update the properties of a [managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md) object.|
-|[List mobileAppCategories](../api/intune_apps_mobileappcategory_list.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|List properties and relationships of the [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) objects.|
-|[List mobileAppGroupAssignments](../api/intune_apps_mobileappgroupassignment_list.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|List properties and relationships of the [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) objects.|
-|[Get mobileAppInstallSummary](../api/intune_apps_mobileappinstallsummary_get.md)|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Read properties and relationships of the [mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md) object.|
-|[List mobileAppInstallStatuses](../api/intune_apps_mobileappinstallstatus_list.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|List properties and relationships of the [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) objects.|
-|[List userAppInstallStatuses](../api/intune_apps_userappinstallstatus_list.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|List properties and relationships of the [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) objects.|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |description|String|The description of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -41,13 +36,17 @@ Inherits from [managedApp](../resources/intune_apps_managedapp.md)
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |appAvailability|String|The Application's availability. Inherited from [managedApp](../resources/intune_apps_managedapp.md) Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
-|bundleId|String|The app's bundle ID.|
+|bundleId|String|The app's Bundle ID.|
+|appStoreUrl|String|The Apple AppStoreUrl.|
+|applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The iOS architecture for which this app can run on.|
+|minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum supported operating system.|
 
 ## Relationships
 |Relationship|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |groupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|assignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -60,7 +59,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.managedIOSStoreApp"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
   "id": "String (identifier)",
@@ -83,7 +82,20 @@ Here is a JSON representation of the resource.
   "uploadState": 1024,
   "appAvailability": "String",
   "version": "String",
-  "bundleId": "String"
+  "bundleId": "String",
+  "appStoreUrl": "String",
+  "applicableDeviceType": {
+    "@odata.type": "microsoft.graph.iosDeviceType",
+    "iPad": true,
+    "iPhoneAndIPod": true
+  },
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
+    "v8_0": true,
+    "v9_0": true,
+    "v10_0": true,
+    "v11_0": true
+  }
 }
 ```
 

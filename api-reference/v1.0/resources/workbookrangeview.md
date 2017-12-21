@@ -9,7 +9,6 @@ RangeView represents a set of visible cells of the parent range.
 |[Itemat](../api/workbookrangeview_itemat.md)|[workbookRangeView](workbookrangeview.md)|Get a range view item based in index.|
 |[Range](../api/workbookrangeview_range.md)|[workbookRange](range.md)|Return the range object associated with the range view|
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

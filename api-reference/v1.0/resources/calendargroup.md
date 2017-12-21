@@ -16,7 +16,6 @@ A group of calendars.
 |[List calendars](../api/calendargroup_list_calendars.md) |[Calendar](calendar.md) collection| List calendars in a calendar group.|
 |[Create Calendar](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar in a calendar group.|
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -29,7 +28,6 @@ A group of calendars.
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |calendars|[Calendar](calendar.md) collection|The calendars in the calendar group. Navigation property. Read-only. Nullable.|
-
 
 ## JSON representation
 

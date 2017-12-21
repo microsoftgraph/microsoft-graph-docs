@@ -11,7 +11,6 @@ Derived from [attendeeBase](attendeebase.md).
 |type|String|The attendee type: `Required`, `Optional`, `Resource`.|
 |emailAddress|[emailAddress](emailAddress.md)|Includes the name and SMTP address of the attendee.|
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource

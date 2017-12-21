@@ -1,9 +1,7 @@
-﻿#  resource type
-
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+# windowsManagementAppHealthState resource type
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-
 Windows management app health state entity.
 ## Methods
 |Method|Return Type|Description|
@@ -13,7 +11,6 @@ Windows management app health state entity.
 |[Create windowsManagementAppHealthState](../api/intune_devicefe_windowsmanagementapphealthstate_create.md)|[windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md)|Create a new [windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md) object.|
 |[Delete windowsManagementAppHealthState](../api/intune_devicefe_windowsmanagementapphealthstate_delete.md)|None|Deletes a [windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md).|
 |[Update windowsManagementAppHealthState](../api/intune_devicefe_windowsmanagementapphealthstate_update.md)|[windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md)|Update the properties of a [windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -23,7 +20,6 @@ Windows management app health state entity.
 |lastCheckInDateTime|DateTimeOffset|Windows management app last check-in time.|
 |deviceName|String|Name of the device on which Windows management app is installed.|
 |deviceOSVersion|String|Windows 10 OS version of the device on which Windows management app is installed.|
-
 ## Relationships
 None
 ## JSON Representation
@@ -45,6 +41,3 @@ Here is a JSON representation of the resource.
   "deviceOSVersion": "String"
 }
 ```
-
-
-

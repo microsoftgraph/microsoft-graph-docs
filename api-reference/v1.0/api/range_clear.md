@@ -1,24 +1,28 @@
 # Range: clear
 
 Clear range values, format, fill, border, etc.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/clear
-GET /workbook/worksheets/{id|name}/range(<address>)/clear
-GET /workbook/tables/{id|name}/columns/{id|name}/range/clear
+POST /workbook/names(<name>)/range/clear
+POST /workbook/worksheets/{id|name}/range(address='<address>')/clear
+POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -28,7 +32,8 @@ In the request body, provide a JSON object with the following parameters.
 |applyTo|string|Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.|
 
 ## Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+
+If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -39,7 +44,7 @@ Here is an example of the request.
   "name": "range_clear"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
 Content-type: application/json
 Content-length: 32
 
@@ -56,7 +61,7 @@ Here is an example of the response.
   "@odata.type": "microsoft.graph.none"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

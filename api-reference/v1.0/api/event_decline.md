@@ -2,11 +2,20 @@
 
 Decline invitation to the specified event.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.ReadWrite*
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
+|Application | Calendars.ReadWrite |
+
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/events/{id}/decline
 POST /users/{id | userPrincipalName}/events/{id}/decline
@@ -25,13 +34,18 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/de
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/decline
 ```
+
+<br/>
+
 ## Request headers
+
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -40,16 +54,22 @@ In the request body, provide a JSON object with the following parameters.
 |sendResponse|Boolean|`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.|
 
 ## Response
-If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
+
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
+
 Here is an example of how to call this API.
-##### Request
+
+### Request
+
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "event_decline"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/decline
 Content-type: application/json
@@ -61,16 +81,22 @@ Content-length: 56
 }
 ```
 
-##### Response
-##### Response
+<br/>
+
+### Response
+
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 ```
+
+<br/>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

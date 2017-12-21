@@ -43,7 +43,6 @@ For information about the permissions required to work with OneNote APIs, see [N
 |sectionGroups|[SectionGroup](sectiongroup.md) collection|The section groups in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
 |sections|[Section](section.md) collection|The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
 
-
 ## Methods
 
 | Method		   | Return Type	|Description|

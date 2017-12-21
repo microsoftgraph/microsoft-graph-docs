@@ -173,7 +173,7 @@ You're ready to try your PHP app.
 Check the inbox of the email address that you configured in [Call the Microsoft Graph using REST](#call-microsoft-graph-using-rest) section. You should have an email from the account that you used to sign in to the app.
 
 ## Next steps
-- Try out the [Microsoft Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Try out the [Microsoft Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 
 ## See also

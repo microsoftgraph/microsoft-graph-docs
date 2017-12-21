@@ -8,7 +8,6 @@ The recurrence pattern and range.
 |pattern|[RecurrencePattern](recurrencepattern.md)|The frequency of an event.|
 |range|[RecurrenceRange](recurrencerange.md)|The duration of an event.|
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource
@@ -18,7 +17,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.patternedrecurrence"
+  "@odata.type": "microsoft.graph.patternedRecurrence"
 }-->
 
 ```json

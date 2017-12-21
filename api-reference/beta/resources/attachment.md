@@ -1,6 +1,6 @@
 # attachment resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 You can add related content to an [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md) in the form of an attachment.
@@ -28,7 +28,6 @@ The following methods apply to any of the derived types of attachments (**fileAt
 |[List attachments of an Outlook task](../api/outlooktask_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an Outlook task. |
 |[List attachments of a post](../api/post_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a post. |
 |[Delete](../api/attachment_delete.md) | None |Delete an attachment on an event, message, Outlook task, or post. |
-
 
 ## Properties
 

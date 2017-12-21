@@ -1,18 +1,22 @@
 # Range: Cell
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Files.ReadWrite    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/Cell
-GET /workbook/worksheets/{id|name}/range(<address>)/Cell
+GET /workbook/worksheets/{id|name}/range(address='<address>')/Cell
 GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 
 ```
@@ -20,7 +24,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -31,7 +35,8 @@ In the request body, provide a JSON object with the following parameters.
 |column|number|Column number of the cell to be retrieved. Zero-indexed.|
 
 ## Response
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+
+If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

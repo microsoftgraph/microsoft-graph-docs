@@ -1,12 +1,17 @@
 # List Policies assigned to Application or Service Principal
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the [policy](../resources/policy.md) objects assigned to an application or service principal.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -24,8 +29,9 @@ GET /applications/{id}/policies
 ## Request body
 Do not supply a request body for this method.
 
-### Response
-If successful, this method returns `200, OK` response code and [policy](../resources/policy.md) objects in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+## Response
+
+If successful, this method returns `200 OK` response code and [policy](../resources/policy.md) objects in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 The following example retrieves the policies assigned to an application.

@@ -1,6 +1,6 @@
 # outlookTask resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 An Outlook item that can track a work item. 
 
@@ -40,13 +40,12 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [outlookTask](outlooktask.md) | Create one or more multi-value extended properties in a new or existing Outlook task.  |
 |[Get task with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [outlookTask](outlooktask.md) | Get an Outlook task that contains a multi-value extended property by using `$expand`. |
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedTo|String|The name of the person who has been assigned the task.|
 |body|[itemBody](itembody.md)|The task body that typically contains information about the task. Note that only HTML type is supported.|
-|categories|String collection|The categories associated with the task.|
+|categories|String collection|The categories associated with the task. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) that the user has defined.|
 |changeKey|String|The version of the task.|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date in the specified time zone that the task was finished.|
 |createdDateTime|DateTimeOffset|The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|

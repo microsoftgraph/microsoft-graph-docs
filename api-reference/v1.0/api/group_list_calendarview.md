@@ -1,16 +1,23 @@
 # List calendarView
-
 Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,
 from the default calendar of a group.
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
-## Query parameters
 
+## Query parameters
 In the request URL, provide the following required query parameters with values.
 
 | Parameter	   | Type	|Description|
@@ -18,7 +25,8 @@ In the request URL, provide the following required query parameters with values.
 |startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
 
-This method also supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method also supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -27,11 +35,13 @@ This method also supports the [OData Query Parameters](http://developer.microsof
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
+
 ## Example
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_calendarview"
@@ -39,8 +49,10 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/calendarView
 ```
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

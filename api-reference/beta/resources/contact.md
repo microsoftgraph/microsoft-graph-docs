@@ -1,6 +1,6 @@
 # contact resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 A contact is an item in Outlook where you can organize and save information about the people and organizations you communicate with. Contacts are contained in contact folders.
 
@@ -72,7 +72,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |assistantName|String|The name of the contact's assistant.|
 |birthday|DateTimeOffset|The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|categories|String collection|The categories associated with the contact.|
+|categories|String collection|The categories associated with the contact. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) defined for the user.|
 |changeKey|String|Identifies the version of the contact. Every time the contact is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |children|String collection|The names of the contact's children.|
 |companyName|String|The name of the contact's company.|
@@ -99,7 +99,7 @@ Here is a JSON representation of the resource
 |phones |[phone](phone.md) collection |Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone. |
 |postalAddresses |[physicalAddress](physicalAddress.md) collection |Addresses associated with the contact, for example, home address and business address. |
 |profession|String|The contact's profession.|
-|spouseName|String|The name of the contact's spouse.|
+|spouseName|String|The name of the contact's spouse/partner.|
 |surname|String|The contact's surname.|
 |title|String|The contact's title.|
 |websites |[website](website.md) collection|Web sites associated with the contact. |
@@ -115,7 +115,6 @@ Here is a JSON representation of the resource
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the contact. Read-only. Nullable.|
 |photo|[photo](profilephoto.md)| Optional contact picture. You can get or set a photo for a contact.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the contact. Read-only. Nullable.|
-
 
 ## Methods
 | Method		   | Return Type	|Description|

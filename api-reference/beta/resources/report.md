@@ -1,70 +1,43 @@
-# report resource type
+# Working with Office 365 usage reports in Microsoft Graph
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents an Office 365 usage report object. It is a stream, which will return a CSV file.
+With Microsoft Graph, you can access Office 365 usage reports resources to get the information about how people in your business are using Office 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Office 365 license at all.
 
-## Methods
+## Authorization
 
-|Method|Return Type|Description|
-|:---------------|:--------|:----------|
-|Get [EmailAppUsage](../api/reportroot_emailappusage.md) report|[Report](report.md)|Get all the reports of EmailAppUsage|
-|Get [EmailActivity](../api/reportroot_emailactivity.md) report|[Report](report.md)|Get all the reports of EmailActivity|
-|Get [MailboxUsage](../api/reportroot_mailboxusage.md) report|[Report](report.md)|Get all the reports of MailboxUsage|
-|Get [Office365ActiveUsers](../api/reportroot_office365activeusers.md) report|[Report](report.md)|Get all the reports of Office365ActiveUsers|
-|Get [Office365GroupsActivity](../api/reportroot_office365groupsactivity.md) report|[Report](report.md)|Get all the reports of Office365GroupsActivity|
-|Get [Office365Activations](../api/reportroot_office365activations.md) report|[Report](report.md)|Get all the reports of Office365Activations|
-|Get [OneDriveUsage](../api/reportroot_onedriveusage.md) report|[Report](report.md)|Get all the reports of OneDriveUsage|
-|Get [OneDriveActivity](../api/reportroot_onedriveactivity.md) report|[Report](report.md)|Get all the reports of OneDriveActivity|
-|Get [SfbDeviceUsage](../api/reportroot_sfbdeviceusage.md) report|[Report](report.md)|Get all the reports of SfbDeviceUsage|
-|Get [SfbOrganizerActivity](../api/reportroot_sfborganizeractivity.md) report|[Report](report.md)|Get all the reports of SfbOrganizerActivity|
-|Get [SfbP2PActivity](../api/reportroot_sfbp2pactivity.md) report|[Report](report.md)|Get all the reports of SfbP2PActivity|
-|Get [SfbParticipantActivity](../api/reportroot_sfbparticipantactivity.md) report|[Report](report.md)|Get all the reports of SfbParticipantActivity|
-|Get [SfbActivity](../api/reportroot_sfbactivity.md) report|[Report](report.md)|Get all the reports of SfbActivity|
-|Get [SharePointSiteUsage](../api/reportroot_sharepointsiteusage.md) report|[Report](report.md)|Get all the reports of SharePointSiteUsage|
-|Get [SharePointActivity](../api/reportroot_sharepointactivity.md) report|[Report](report.md)|Get all the reports of SharePointActivity|
-|Get [YammerDeviceUsage](../api/reportroot_yammerdeviceusage.md) report|[Report](report.md)|Get all the reports of YammerDeviceUsage|
-|Get [YammerActivity](../api/reportroot_yammeractivity.md) report|[Report](report.md)|Get all the reports of YammerActivity|
+Microsoft Graph controls access to resources via permissions. You must specify the permissions you need in order to access Reports resources. Typically, you specify permissions in the Azure Active Directory (Azure AD) portal. For more information, see [Microsoft Graph permissions reference](../../../concepts/permissions_reference.md) and [Reports permissions](../../../concepts/permissions_reference.md#reports-permissions).
 
-## Properties
+## Changes to the Reports APIs
 
-| Property   | Type|Description|
-|:---------------|:--------|:----------|
-|content|Stream|Represent a csv stream of Office 365 usage report. Read-only|
+The original Reports APIs have been updated so you can call the API for the specific view you want instead of passing a view parameter. We recommend that you start using the new APIs in your applications as soon as possible. The following table lists the APIs that were removed and the new APIs that replaced them.
 
-## Relationships
+| Original API            | New API                                  |
+| :---------------------- | :--------------------------------------- |
+| EmailActivity           | <ul><li>[getEmailActivityUserDetail](../api/reportroot_getemailactivityuserdetail.md)</li><li>[getEmailActivityCounts](../api/reportroot_getemailactivitycounts.md)</li><li>[getEmailActivityUserCounts](../api/reportroot_getemailactivityusercounts.md)</li></ul> |
+| EmailAppUsage           | <ul><li>[getEmailAppUsageUserDetail](../api/reportroot_getemailappusageuserdetail.md)</li><li>[getEmailAppUsageAppsUserCounts](../api/reportroot_getemailappusageappsusercounts.md)</li><li>[getEmailAppUsageUserCounts](../api/reportroot_getemailappusageusercounts.md)</li><li>[getEmailAppUsageVersionsUserCounts](../api/reportroot_getemailappusageversionsusercounts.md)</li></ul> |
+| MailboxUsage            | <ul><li>[getMailboxUsageDetail](../api/reportroot_getmailboxusagedetail.md)</li><li>[getMailboxUsageMailboxCounts](../api/reportroot_getmailboxusagemailboxcounts.md)</li><li>[getMailboxUsageQuotaStatusMailboxCounts](../api/reportroot_getmailboxusagequotastatusmailboxcounts.md)</li><li>[getMailboxUsageStorage](../api/reportroot_getmailboxusagestorage.md)</li></ul> |
+| Office365Activations    | <ul><li>[getOffice365ActivationsUserDetail](../api/reportroot_getoffice365activationsuserdetail.md)</li><li>[getOffice365ActivationCounts](../api/reportroot_getoffice365activationcounts.md)</li><li>[getOffice365ActivationsUserCounts](../api/reportroot_getoffice365activationsusercounts.md)</li></ul> |
+| Office365ActiveUser     | <ul><li>[getOffice365ActiveUserDetail](../api/reportroot_getoffice365activeuserdetail.md)</li><li>[getOffice365ActiveUserCounts](../api/reportroot_getoffice365activeusercounts.md)</li><li>[getOffice365ServicesUserCounts](../api/reportroot_getoffice365servicesusercounts.md)</li></ul> |
+| Office365GroupsActivity | <ul><li>[getOffice365GroupsActivityDetail](../api/reportroot_getoffice365groupsactivitydetail.md)</li><li>[getOffice365GroupsActivityCounts](../api/reportroot_getoffice365groupsactivitycounts.md)</li><li>[getOffice365GroupsActivityGroupCounts](../api/reportroot_getoffice365groupsactivitygroupcounts.md)</li><li>[getOffice365GroupsActivityStorage](../api/reportroot_getoffice365groupsactivitystorage.md)</li><li>[getOffice365GroupsActivityFileCounts](../api/reportroot_getoffice365groupsactivityfilecounts.md)</li></ul> |
+| OneDriveActivity        | <ul><li>[getOneDriveActivityUserDetail](../api/reportroot_getonedriveactivityuserdetail.md)</li><li>[getOneDriveActivityUserCounts](../api/reportroot_getonedriveactivityusercounts.md)</li><li>[getOneDriveActivityFileCounts](../api/reportroot_getonedriveactivityfilecounts.md)</li></ul> |
+| OneDriveUsage           | <ul><li>[getOneDriveUsageAccountDetail](../api/reportroot_getonedriveusageaccountdetail.md)</li><li>[getOneDriveUsageAccountCounts](../api/reportroot_getonedriveusageaccountcounts.md)</li><li>[getOneDriveUsageFileCounts](../api/reportroot_getonedriveusagefilecounts.md)</li><li>[getOneDriveUsageStorage](../api/reportroot_getonedriveusagestorage.md)</li></ul> |
+| SharePointActivity      | <ul><li>[getSharePointActivityUserDetail](../api/reportroot_getsharepointactivityuserdetail.md)</li><li>[getSharePointActivityFileCounts](../api/reportroot_getsharepointactivityfilecounts.md)</li><li>[getSharePointActivityUserCounts](../api/reportroot_getsharepointactivityusercounts.md)</li><li>[getSharePointActivityPages](../api/reportroot_getsharepointactivitypages.md)</li></ul> |
+| SharePointSiteUsage     | <ul><li>[getSharePointSiteUsageDetail](../api/reportroot_getsharepointsiteusagedetail.md)</li><li>[getSharePointSiteUsageFileCounts](../api/reportroot_getsharepointsiteusagefilecounts.md)</li><li>[getSharePointSiteUsageSiteCounts](../api/reportroot_getsharepointsiteusagesitecounts.md)</li><li>[getSharePointSiteUsageStorage](../api/reportroot_getsharepointsiteusagestorage.md)</li><li>[getSharePointSiteUsagePages](../api/reportroot_getsharepointsiteusagepages.md)</li></ul> |
+| SfbActivity             | <ul><li>[getSkypeForBusinessActivityUserDetail](../api/reportroot_getskypeforbusinessactivityuserdetail.md)</li><li>[getSkypeForBusinessActivityCounts](../api/reportroot_getskypeforbusinessactivitycounts.md)</li><li>[getSkypeForBusinessActivityUserCounts](../api/reportroot_getskypeforbusinessactivityusercounts.md)</li></ul> |
+| SfbDeviceUsage          | <ul><li>[getSkypeForBusinessDeviceUsageUserDetail](../api/reportroot_getskypeforbusinessdeviceusageuserdetail.md)</li><li>[getSkypeForBusinessDeviceUsageDistributionUserCounts](../api/reportroot_getskypeforbusinessdeviceusagedistributionusercounts.md)</li><li>[getSkypeForBusinessDeviceUsageUserCounts](../api/reportroot_getskypeforbusinessdeviceusageusercounts.md)</li></ul> |
+| SfbOrganizerActivity    | <ul><li>[getSkypeForBusinessOrganizerActivityCounts](../api/reportroot_getskypeforbusinessorganizeractivitycounts.md)</li><li>[getSkypeForBusinessOrganizerActivityUserCounts](../api/reportroot_getskypeforbusinessorganizeractivityusercounts.md)</li><li>[getSkypeForBusinessOrganizerActivityMinuteCounts](../api/reportroot_getskypeforbusinessorganizeractivityminutecounts.md)</li></ul> |
+| SfbParticipantActivity  | <ul><li>[getSkypeForBusinessParticipantActivityCounts](../api/reportroot_getskypeforbusinessparticipantactivitycounts.md)</li><li>[getSkypeForBusinessParticipantActivityUserCounts](../api/reportroot_getskypeforbusinessparticipantactivityusercounts.md)</li><li>[getSkypeForBusinessParticipantActivityMinuteCounts](../api/reportroot_getskypeforbusinessparticipantactivityminutecounts.md)</li></ul> |
+| SfbP2PActivity          | <ul><li>[getSkypeForBusinessPeerToPeerActivityCounts](../api/reportroot_getskypeforbusinesspeertopeeractivitycounts.md)</li><li>[getSkypeForBusinessPeerToPeerActivityUserCounts](../api/reportroot_getskypeforbusinesspeertopeeractivityusercounts.md)</li><li>[getSkypeForBusinessPeerToPeerActivityMinuteCounts](../api/reportroot_getskypeforbusinesspeertopeeractivityminutecounts.md)</li></ul> |
+| YammerActivity          | <ul><li>[getYammerActivityUserDetail](../api/reportroot_getyammeractivityuserdetail.md)</li><li>[getYammerActivityCounts](../api/reportroot_getyammeractivitycounts.md)</li><li>[getYammerActivityUserCounts](../api/reportroot_getyammeractivityusercounts.md)</li></ul> |
+| YammerDeviceUsage       | <ul><li>[getYammerDeviceUsageUserDetail](../api/reportroot_getyammerdeviceusageuserdetail.md)</li><li>[getYammerDeviceUsageDistributionUserCounts](../api/reportroot_getyammerdeviceusagedistributionusercounts.md)</li><li>[getYammerDeviceUsageUserCounts](../api/reportroot_getyammerdeviceusageusercounts.md)</li></ul> |
+| YammerGroupsActivity    | <ul><li>[getYammerGroupsActivityDetail](../api/reportroot_getyammergroupsactivitydetail.md)</li><li>[getYammerGroupsActivityGroupCounts](../api/reportroot_getyammergroupsactivitygroupcounts.md)</li><li>[getYammerGroupsActivityCounts](../api/reportroot_getyammergroupsactivitycounts.md)</li></ul> |
 
-None
+## Next steps
 
-### CSV representation
+Reports resources and APIs can open up new ways for you to engage with users and manage their experiences with Microsoft Graph. To learn more:
 
-Here is a CSV representation of the "Users" view of report Office365 Active Users.
+- Drill down on the methods and properties of the resources most helpful to your scenario.
+- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.Report"
-}-->
-
-```csv
-Data as of,Office 365,Exchange,OneDrive,SharePoint,Skype For Business,Yammer
-2017-02-15,2052,1928,767,1262,1505,195
-2017-02-16,2065,1934,738,1263,1499,189
-2017-02-17,2051,1925,727,1247,1451,247
-2017-02-18,2023,1893,653,1167,1429,197
-2017-02-19,1779,1635,275,636,573,112
-2017-02-20,1405,1257,152,409,124,68
-2017-02-21,1617,1478,656,1187,1370,109
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Report resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).

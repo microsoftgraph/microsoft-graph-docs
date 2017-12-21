@@ -1,6 +1,6 @@
 ﻿# Planner
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The Office 365 Planner API enables you to create tasks and assign them to users in a group in Office 365.
 

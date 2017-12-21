@@ -1,6 +1,6 @@
 # referenceAttachment resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 A link to a folder or file (such as a text file or Word document) on a OneDrive for Business cloud drive, or other supported storage locations, attached to 
 an [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md) .
@@ -13,7 +13,6 @@ Derived from [attachment](attachment.md).
 |:---------------|:--------|:----------|
 |[Get](../api/attachment_get.md) | [referenceAttachment](referenceattachment.md) |Read properties and relationships of referenceAttachment object.|
 |[Delete](../api/attachment_delete.md) | None |Delete referenceAttachment object. |
-
 
 ## Properties
 | Property	   | Type	|Description|
@@ -30,8 +29,6 @@ Derived from [attachment](attachment.md).
 |size|Int32|The size of the attachment in bytes. Optional.|
 |sourceUrl|String|URL to get the attachment content. If this is a URL to a folder, then for the folder to be displayed correctly in Outlook or Outlook on the web, set **isFolder** to true. Required.|
 |thumbnailUrl|String|Applies to only a reference attachment of an image - URL to get a thumbnail image. Use **thumbnailUrl** and **previewUrl** only when **sourceUrl** identifies an image file. Optional.|
-
-
 
 ## Relationships
 None

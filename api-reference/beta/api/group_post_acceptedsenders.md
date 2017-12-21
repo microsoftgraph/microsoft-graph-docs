@@ -1,14 +1,20 @@
 # Create acceptedSender
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Add a new user or group to the acceptedSender list.
 
-Specify the user or group in `@odata.id` in the request body. Users in the accepted senders list can post 
-to conversations of the group . Make sure you do not specify the same user or group 
-in the accepted senders and rejected senders lists, otherwise you will get an error.
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
+Specify the user or group in `@odata.id` in the request body. Users in the accepted senders list can post to conversations of the group . Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -22,16 +28,15 @@ POST /groups/{id}/acceptedSenders/$ref
 ## Request body
 In the request body, supply the id of a user or group object.
 
-
 ## Response
-This method returns `204, No Content` response code and no response body.
+This method returns `204 No Content` response code and no response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "create_acceptedsender"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref
@@ -42,8 +47,9 @@ Content-length: 30
   "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"
 }
 ```
-##### Response
-Here is an example of the response.
+
+#### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,6 +1,6 @@
 # itemBody resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents properties of the body of an item, such as a message, event or group post.
 
@@ -9,7 +9,6 @@ Represents properties of the body of an item, such as a message, event or group 
 |:---------------|:--------|:----------|
 |content|String|The content of the item.|
 |contentType|String|The type of the content. Possible values are `Text` and `HTML`.|
-
 
 ## JSON representation
 

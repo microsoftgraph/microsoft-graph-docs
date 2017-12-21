@@ -7,9 +7,15 @@ to that thread. Or, if you get the post ID, you can also [reply](post_reply.md) 
 
 Note: You can also [start a new conversation by first creating a thread](group_post_threads.md).
 
-## Prerequisites
-The following **scopes** are required to execute this API:
-*Group.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -23,9 +29,9 @@ POST /groups/{id}/conversations/{id}/threads
 ## Request body
 In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.
 
-
 ## Response
-If successful, this method returns `201, Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
 
 ## Example
 ##### Request
@@ -51,7 +57,7 @@ Content-type: application/json
 In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.
 ##### Response
 
-If successful, this method returns `201, Created` response code and the `id` of the new thread in the response body.
+If successful, this method returns `201 Created` response code and the `id` of the new thread in the response body.
 Here is an example of the response. 
 <!-- {
   "blockType": "response",

@@ -1,6 +1,6 @@
 # installedClient resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Specifies settings for non Web App or Web Api. (e.g. Mobile or other public client such as an installed application running on a desktop device)
 

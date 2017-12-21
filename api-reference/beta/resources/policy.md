@@ -1,6 +1,6 @@
 # policy resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents an Azure AD policy. Policies are custom rules that can be enforced on applications, service principals, groups, or the entire organization they are assigned to. Currently only one type of policy is available:
 
@@ -18,7 +18,6 @@ This policy is described in further detail below.
 |[Assign policy](../api/policy_assign.md)|None|Assign a policy to an application, service principal.|
 |[List policies](../api/policy_list.md)|Policy collection|Get all policy objects in the organization.|
 |[List assigned policies](../api/policy_list_assigned.md)|Policy collection|Get all policy objects assigned to an application or service principal.|
-
 
 ### Common Properties
 | Property	   | Type	|Description|

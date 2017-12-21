@@ -1,6 +1,6 @@
 # emailAddress resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The name and email address of a contact or message recipient.
 
@@ -9,8 +9,6 @@ The name and email address of a contact or message recipient.
 |:---------------|:--------|:----------|
 |address|String|The email address of the person or entity.|
 |name|String|The display name of the person or entity.|
-
-
 
 ## JSON representation
 

@@ -1,12 +1,17 @@
 # Update Policy
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Update properties in a preexisting [policy](../resources/policy.md).
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 
@@ -29,8 +34,9 @@ In the request body, provide a JSON object with the parameters that need to be u
 |isOrganizationDefault|Boolean|Specifies if this policy is applied by default.|
 |type|String|Specifies the type of policy. Currently must be "TokenLifetimePolicy"|
 
-### Response
-If successful, this method returns `204, No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+## Response
+
+If successful, this method returns `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 The following example updates the definition of the token lifetime policy and sets it as the organization default.

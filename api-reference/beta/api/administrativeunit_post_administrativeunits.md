@@ -1,10 +1,17 @@
 # Create administrativeUnit
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).
-## Prerequisites
-The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -21,9 +28,9 @@ In the request body, supply a JSON representation of [administrativeUnit](../res
 
 Since the **administrativeUnit** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the administrative unit while creating it.
 
-
 ## Response
-If successful, this method returns `201, Created` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.
 
 ## Example
 ##### Request

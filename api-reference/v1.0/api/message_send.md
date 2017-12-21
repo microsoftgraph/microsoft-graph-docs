@@ -3,9 +3,15 @@
 Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or 
 a forward draft. The message is then saved in the Sent Items folder.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.Send*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Send    |
+|Delegated (personal Microsoft account) | Mail.Send    |
+|Application | Mail.Send |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -20,10 +26,11 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 ## Request body
 
 ## Response
-If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
+
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 ##### Request
 Here is an example of the request.
 <!-- {
@@ -35,7 +42,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 ```
 
 ##### Response
-##### Response
+
 Here is an example of the response.
 <!-- {
   "blockType": "response",

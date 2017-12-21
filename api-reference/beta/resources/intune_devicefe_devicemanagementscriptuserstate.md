@@ -1,9 +1,7 @@
-﻿#  resource type
-
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+# deviceManagementScriptUserState resource type
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-
 Contains properties for user run state of the device management script.
 ## Methods
 |Method|Return Type|Description|
@@ -14,7 +12,6 @@ Contains properties for user run state of the device management script.
 |[Delete deviceManagementScriptUserState](../api/intune_devicefe_devicemanagementscriptuserstate_delete.md)|None|Deletes a [deviceManagementScriptUserState](../resources/intune_devicefe_devicemanagementscriptuserstate.md).|
 |[Update deviceManagementScriptUserState](../api/intune_devicefe_devicemanagementscriptuserstate_update.md)|[deviceManagementScriptUserState](../resources/intune_devicefe_devicemanagementscriptuserstate.md)|Update the properties of a [deviceManagementScriptUserState](../resources/intune_devicefe_devicemanagementscriptuserstate.md) object.|
 |[List deviceManagementScriptDeviceStates](../api/intune_devicefe_devicemanagementscriptdevicestate_list.md)|[deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md) collection|List properties and relationships of the [deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md) objects.|
-
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -22,12 +19,10 @@ Contains properties for user run state of the device management script.
 |successDeviceCount|Int32|Success device count for specific user.|
 |errorDeviceCount|Int32|Error device count for specific user.|
 |userPrincipalName|String|User principle name of specific user.|
-
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune_devicefe_devicemanagementscriptdevicestate.md) collection|List of run states for this script across all devices of specific user.|
-
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -45,6 +40,3 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
-
-
-

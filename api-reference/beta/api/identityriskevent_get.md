@@ -1,11 +1,17 @@
 # Get identityRiskEvent
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the properties and relationships of identityriskevent object.
-## Prerequisites
-The following **scopes** are required to execute this API:
-*IdentityRiskEvent.Read.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | IdentityRiskEvent.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | IdentityRiskEvent.Read.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -19,7 +25,9 @@ GET /identityRiskEvents/{id}
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.
 ## Example
 ##### Request
@@ -29,7 +37,7 @@ Here is an example of the request.
   "name": "get_identityriskevent"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/identityRiskEvents/ec50e9fb-9da1-215b-e18c-b7e2a716b2a6-c2b6c2b9-dddc-acd0-2b39-d519d803dbc3-db69711e-9324-ec99-f010-6e63fb972e98
+GET https://graph.microsoft.com/beta/identityRiskEvents/ec50e9fb-9da1-215b-e18c-b7e2a716b2a6-c2b6c2b9-dddc-acd0-2b39-d519d803dbc3-db69711e-9324-ec99-f010-6e63fb972e98
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

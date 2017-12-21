@@ -37,8 +37,8 @@ Using Microsoft Graph to create and name an Office 365 group bypasses any Office
 
 ### Permissions for groups and Microsoft Teams
 
-Microsoft Graph exposes two permission (*Group.Read.All* and *Group.ReadWrite.All*) for access to the APIs for groups and Microsoft Teams.
-These permission must be consented to by an administrator (which is a change from preview).  In the future, we plan to add new permissions for groups and teams that users can consent to.
+Microsoft Graph exposes two permissions (*Group.Read.All* and *Group.ReadWrite.All*) for access to the APIs for groups and Microsoft Teams.
+These permissions must be consented to by an administrator (which is a change from preview).  In the future, we plan to add new permissions for groups and teams that users can consent to.
 
 Also, only the API for core group administration and management supports access using delegated or app-only permissions. All other features of the group API support only delegated permissions.
 
@@ -46,16 +46,15 @@ Examples of group features that support delegated and app-only permissions:
 
 * Creating and deleting groups
 * Getting and updating group properties pertaining to group administration or management
-* Group [directory settings](../api-reference/v1.0/resources/directoryobject.md), type and synchronization
+* Group [directory settings](../api-reference/v1.0/resources/directoryobject.md), type, and synchronization
 * Group owners and membership
-
 
 Examples of group features that support only delegated permissions:
 
 * Group conversations, events, photo
 * External senders, accepted or rejected senders, group subscription
 * User favorites and unseen count
-* Microsoft Teams channels and chats.
+* Microsoft Teams channels and chats
 
 ### Teams in Microsoft Teams (preview)
 
@@ -116,7 +115,7 @@ are referred to as the "old" approach and "new" approach.
 
 
 If a calendar was shared with view or edit permissions but using the old approach, you can now work around the error and manually upgrade the calendar sharing to use the new approach. 
-Over time, Outlook will autmatically upgrade all shared calendars to use the new approach, including calendars shared with delegate permissions. 
+Over time, Outlook will automatically upgrade all shared calendars to use the new approach, including calendars shared with delegate permissions. 
 
 To manually upgrade a shared calendar to use the new approach, follow these steps:
 1.	The recipient removes the calendar that was previously shared to them.
@@ -245,6 +244,11 @@ Change tracking (delta query) is not supported for open or schema extension prop
 ### Creating a resource and open extension at the same time
 
 You cannot specify an open extension at the same time you create an instance of **administrativeUnit**, **device**, **group**, **organization** or **user**. You must first create the instance and then specify the open extension data in a subsequent ``POST`` request on that instance.
+
+### Creating a resource instance and adding schema extension data at the same time
+
+You cannot specify a schema extension in the same operation as creating an instance of **contact**, **event**, **message**, or **post**. 
+You must first create the resource instance and then do a `PATCH` to that instance to add a schema extension and custom data. 
 
 ### Limit of 100 schema extension property values allowed per resource instance
 

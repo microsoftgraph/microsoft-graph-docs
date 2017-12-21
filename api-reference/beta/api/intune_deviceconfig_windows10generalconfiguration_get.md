@@ -1,29 +1,34 @@
 ﻿# Get windows10GeneralConfiguration
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
 ```
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
@@ -36,35 +41,63 @@ If successful, this method returns a `200 OK` response code and [windows10Genera
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10223
+Content-Length: 11539
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
     "id": "a4235d71-5d71-a423-715d-23a4715d23a4",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "assignmentStatus": "Assignment Status value",
-    "assignmentProgress": "Assignment Progress value",
-    "assignmentErrorMessage": "Assignment Error Message value",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "enableAutomaticRedeployment": true,
+    "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
+    "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
+    "microsoftAccountSignInAssistantSettings": "disabled",
+    "authenticationAllowSecondaryDevice": true,
+    "authenticationAllowFIDODevice": true,
+    "cryptographyAllowFipsAlgorithmPolicy": true,
+    "displayAppListWithGdiDPIScalingTurnedOn": [
+      "Display App List With Gdi DPIScaling Turned On value"
+    ],
+    "displayAppListWithGdiDPIScalingTurnedOff": [
+      "Display App List With Gdi DPIScaling Turned Off value"
+    ],
     "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
     "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
     "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
     "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
     "enterpriseCloudPrintDiscoveryMaxLimit": 5,
     "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+    "messagingBlockSync": true,
+    "messagingBlockMMS": true,
+    "messagingBlockRichCommunicationServices": true,
+    "searchBlockDiacritics": true,
+    "searchDisableAutoLanguageDetection": true,
+    "searchDisableIndexingEncryptedItems": true,
+    "searchEnableRemoteQueries": true,
+    "searchDisableUseLocation": true,
+    "searchDisableIndexerBackoff": true,
+    "searchDisableIndexingRemovableDrive": true,
+    "searchEnableAutomaticIndexSizeManangement": true,
+    "securityBlockAzureADJoinedDevicesAutoEncryption": true,
+    "diagnosticsDataSubmissionMode": "none",
+    "oneDriveDisableFileSync": true,
+    "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+    "inkWorkspaceAccess": "enabled",
+    "inkWorkspaceBlockSuggestedApps": true,
+    "smartScreenEnableAppInstallControl": true,
     "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
     "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
     "bluetoothAllowedServices": [
@@ -73,7 +106,6 @@ Content-Length: 10223
     "bluetoothBlockAdvertising": true,
     "bluetoothBlockDiscoverableMode": true,
     "bluetoothBlockPrePairing": true,
-    "bluetoothDeviceName": "Bluetooth Device Name value",
     "edgeBlockAutofill": true,
     "edgeBlocked": true,
     "edgeCookiePolicy": "allow",
@@ -132,6 +164,8 @@ Content-Length: 10223
     "defenderScanType": "disabled",
     "defenderScheduledScanTime": "11:59:10.9990000",
     "defenderScheduledQuickScanTime": "11:58:49.3840000",
+    "defenderCloudBlockLevel": "high",
+    "defenderCloudExtendedTimeout": 12,
     "lockScreenAllowTimeoutConfiguration": true,
     "lockScreenBlockActionCenterNotifications": true,
     "lockScreenBlockCortana": true,
@@ -147,6 +181,7 @@ Content-Length: 10223
     "passwordRequireWhenResumeFromIdleState": true,
     "passwordRequiredType": "alphanumeric",
     "passwordSignInFailureCountBeforeFactoryReset": 12,
+    "privacyAdvertisingId": "blocked",
     "privacyAutoAcceptPairingAndConsentPrompts": true,
     "privacyBlockInputPersonalization": true,
     "startBlockUnpinningAppsFromTaskbar": true,
@@ -218,8 +253,6 @@ Content-Length: 10223
     "cortanaBlocked": true,
     "deviceManagementBlockFactoryResetOnMobile": true,
     "deviceManagementBlockManualUnenroll": true,
-    "diagnosticsDataSubmissionMode": "none",
-    "oneDriveDisableFileSync": true,
     "safeSearchFilter": "strict",
     "edgeBlockPopups": true,
     "edgeBlockSearchSuggestions": true,

@@ -1,6 +1,6 @@
 # mention resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents a notification to a person based on the person's email address. This type of notification is also known as 
 @-mentions.
@@ -72,8 +72,8 @@ None
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Post](../api/user_sendmail.md#request-2) and send | None | Create and send mentions as part of a new message.| 
-|[Post](../api/user_post_messages.md#request-2) to a new draft | [message](../resources/message.md) that contains one or more **mention** objects. | Create a draft of a new message and include one or more **mention** objects.| 
+|[Post](../api/user_sendmail.md#request-2) and send | None | Create and send mentions as part of a new message.|
+|[Post](../api/user_post_messages.md#request-2) to a new draft | [message](../resources/message.md) that contains one or more **mention** objects. | Create a draft of a new message and include one or more **mention** objects.|
 |[Get](../api/user_list_messages.md#request-2) messages mentioning me | [message](../resources/message.md) collection | Get all the messages in the signed-in user's mailbox that contain a **mention** of this user.|
 |[Get](../api/message_get.md#request-2) a message and its mentions | [message](../resources/message.md) collection | Get a message and expand the details of each **mention** in the message.|
 |[Delete](../api/message_delete.md#request-2) a mention | None |Deletes the specified mention in the specified message in the signed-in user's mailbox. |

@@ -1,6 +1,6 @@
 # attendee resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 An event attendee.
 
@@ -12,7 +12,6 @@ Derived from [attendeeBase](attendeebase.md).
 |status|[ResponseStatus](responsestatus.md)|The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.|
 |type|String|The attendee type: `Required`, `Optional`, `Resource`.|
 |emailAddress|[emailAddress](emailAddress.md)|Includes the name and SMTP address of the attendee.|
-
 
 ## JSON representation
 

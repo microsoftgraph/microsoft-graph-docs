@@ -3,9 +3,15 @@
 Use this API to add an [attachment](../resources/attachment.md) to an event. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment
 you can add to under 4MB.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
+|Application | Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -40,9 +46,9 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## Request body
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
-
 ## Response
-If successful, this method returns `201, Created` response code and [attachment](../resources/attachment.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.
 
 ## Example (file attachment)
 

@@ -1,10 +1,17 @@
 # Create attachment
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md).
-## Prerequisites
-The following **scopes** are required to execute this API: _Tasks.ReadWrite_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Tasks.ReadWrite    |
+|Delegated (personal Microsoft account) | Tasks.ReadWrite    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -19,13 +26,12 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Authorization  | Bearer {token}. Required. |
 | Content-Type | A string that represents the type of data in the body of an entity. Required. |
 
-
 ## Request body
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
+## Response
 
-### Response
-If successful, this method returns `201, Created` response code and [attachment](../resources/attachment.md) object in the response body.
+If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.
 
 ## Example
 ##### Request

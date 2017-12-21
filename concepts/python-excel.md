@@ -152,7 +152,7 @@ Pass a JSON object by setting the `persistChanges` value to `true` or `false`. W
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -185,7 +185,7 @@ The session ID returned from the previous call is passed as a header on subseque
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {

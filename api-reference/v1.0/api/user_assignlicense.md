@@ -1,9 +1,15 @@
 # assignLicense
 Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*User.ReadWrite.All; Directory.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | User.ReadWrite.All, Directory.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -24,7 +30,8 @@ In the request body, provide a JSON object with the following parameters.
 |removeLicenses|Guid|A collection of GUIDs that identify the licenses to remove.|
 
 ## Response
-If successful, this method returns `200, OK` response code and [user](../resources/user.md) object in the response body.
+
+If successful, this method returns `200 OK` response code and [user](../resources/user.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

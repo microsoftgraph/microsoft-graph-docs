@@ -1,6 +1,6 @@
-﻿#  resource type
+﻿# managedAppProtection resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -10,13 +10,14 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List managedAppProtections](../api/intune_mam_managedappprotection_list.md)|[managedAppProtection](../resources/intune_mam_managedappprotection.md) collection|List properties and relationships of the [managedAppProtection](../resources/intune_mam_managedappprotection.md) objects.|
 |[Get managedAppProtection](../api/intune_mam_managedappprotection_get.md)|[managedAppProtection](../resources/intune_mam_managedappprotection.md)|Read properties and relationships of the [managedAppProtection](../resources/intune_mam_managedappprotection.md) object.|
+|[targetApps action](../api/intune_mam_managedappprotection_targetapps.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
@@ -38,7 +39,8 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |maximumPinRetries|Int32|Maximum number of incorrect pin retry attempts before the managed app is wiped.|
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked.|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True|
-|pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: `any`, `numeric`, `alphanumeric`, `alphanumericAndSymbol`.|
+|pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: `numeric`, `alphanumericAndSymbol`.|
+|periodBeforePinReset|Duration|TimePeriod before the all-level pin must be reset if PinRequired is set to True.|
 |allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device.|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps.|
@@ -59,7 +61,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.managedAppProtection"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.managedAppProtection",
   "displayName": "String",
@@ -84,6 +86,7 @@ Here is a JSON representation of the resource.
   "simplePinBlocked": true,
   "minimumPinLength": 1024,
   "pinCharacterSet": "String",
+  "periodBeforePinReset": "String (duration)",
   "allowedDataStorageLocations": [
     "String"
   ],

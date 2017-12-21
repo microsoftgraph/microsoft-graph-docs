@@ -1,35 +1,41 @@
 ﻿# Update defaultManagedAppProtection
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object.
-The following table shows the properties that are required when you create a [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md).
+In the request body, supply a JSON representation for the [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object.
+
+The following table shows the properties that are required when you create the [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md).
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
@@ -51,7 +57,8 @@ The following table shows the properties that are required when you create a [de
 |maximumPinRetries|Int32|Maximum number of incorrect pin retry attempts before the managed app is wiped. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `any`, `numeric`, `alphanumeric`, `alphanumericAndSymbol`.|
+|pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `numeric`, `alphanumericAndSymbol`.|
+|periodBeforePinReset|Duration|TimePeriod before the all-level pin must be reset if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `oneDriveForBusiness`, `sharePoint`, `localStorage`.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -68,6 +75,8 @@ The following table shows the properties that are required when you create a [de
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |customSettings|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|A set of string key and string value pairs to be sent to the affected users, unalterned by this service|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
+|minimumRequiredPatchVersion|String|Define the oldest required Android security patch level a user can have to gain secure access to the app.|
+|minimumWarningPatchVersion|String|Define the oldest recommended Android security patch level a user can have for secure access to the app.|
 
 
 
@@ -77,10 +86,10 @@ If successful, this method returns a `200 OK` response code and an updated [defa
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 1737
+Content-length: 1943
 
 {
   "displayName": "Display Name value",
@@ -102,7 +111,8 @@ Content-length: 1737
   "maximumPinRetries": 1,
   "simplePinBlocked": true,
   "minimumPinLength": 0,
-  "pinCharacterSet": "numeric",
+  "pinCharacterSet": "alphanumericAndSymbol",
+  "periodBeforePinReset": "PT3M29.6631862S",
   "allowedDataStorageLocations": [
     "sharePoint"
   ],
@@ -126,16 +136,18 @@ Content-length: 1737
       "value": "Value value"
     }
   ],
-  "deployedAppCount": 0
+  "deployedAppCount": 0,
+  "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
+  "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1911
+Content-Length: 2117
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -160,7 +172,8 @@ Content-Length: 1911
   "maximumPinRetries": 1,
   "simplePinBlocked": true,
   "minimumPinLength": 0,
-  "pinCharacterSet": "numeric",
+  "pinCharacterSet": "alphanumericAndSymbol",
+  "periodBeforePinReset": "PT3M29.6631862S",
   "allowedDataStorageLocations": [
     "sharePoint"
   ],
@@ -184,7 +197,9 @@ Content-Length: 1911
       "value": "Value value"
     }
   ],
-  "deployedAppCount": 0
+  "deployedAppCount": 0,
+  "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
+  "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
 }
 ```
 

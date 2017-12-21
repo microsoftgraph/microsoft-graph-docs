@@ -13,12 +13,12 @@ All these types of attachment resources are derived from the [attachment](../res
 resource. 
 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* If accessing attachments in messages: *Mail.Read*
-* If accessing attachments in events: *Calendars.Read*
-* If accessing attachments in group events or posts: *Group.Read.All*
+* If accessing attachments in messages: Mail.Read.
+* If accessing attachments in events: Calendars.Read.
+* If accessing attachments in group events or posts: Group.Read.All.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -75,7 +75,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and an **attachment** object in the response body. 
 The properties of that type of attachment are returned: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md), 
 or [referenceAttachment](../resources/referenceAttachment.md).

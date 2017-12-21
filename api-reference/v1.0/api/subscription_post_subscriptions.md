@@ -1,8 +1,19 @@
 # Create subscription
 
 Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.
-## Prerequisites
-One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* or *Files.ReadWrite.All*. ***Note:*** The /v1.0 endpoint allows Application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with Application permissions.
+## Permissions
+Creating a subscription requires read scope to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+| Resource type / Item        | Permission          |
+|-----------------------------|---------------------|
+| Contacts                    | Contacts.Read       |
+| Conversations               | Group.Read.All      |
+| Events                      | Calendars.Read      |
+| Messages                    | Mail.Read           |
+| Drive  (User's OneDrive)    | Files.ReadWrite     |
+| Drives (Sharepoint shared content and drives) | Files.ReadWrite.All |
+
+ ***Note:*** The /v1.0 endpoint allows Application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with Application permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -17,9 +28,9 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
-
 ## Response
-If successful, this method returns `201, Created` response code and a [subscription](../resources/subscription.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
 
 ## Example
 ##### Request
@@ -85,7 +96,7 @@ Content-type: text/plain
 Content-length: 7
 <token>
 ```
-##### Notification payload
+## Notification payload
 When the subscribed resource changes, the webhooks facility sends a notification to your notification URL with the following payload.  The notification endpoint must send a response of 200 or 204 with no response body within 30 seconds otherwise the notification attempt will be retried at exponentially increasing intervals.  Services that consistently take 30 seconds or more may be throttled and receive a sparser notification set.
 
 Services may also return a 422 response from a notification, in which case the subscription will be automatically deleted and the stream of notifications will come to a halt.
@@ -111,7 +122,7 @@ Depending on the subscribed resource, an additional resourceData field may provi
    ]
 }
 ```
-When receiving notifications from Drive subscriptions the resourceData will be null and the [delta](item_delta.md) API should be called to determine the changes that have occured. Here is an example of a Drive notification:
+When receiving notifications from Drive subscriptions the resourceData will be null and the [delta](driveitem_delta.md) API should be called to determine the changes that have occured. Here is an example of a Drive notification:
 ```http
 {
   "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",

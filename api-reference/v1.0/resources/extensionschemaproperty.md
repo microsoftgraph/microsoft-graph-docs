@@ -15,9 +15,9 @@ The following data types are supported when defining a property in a schema exte
 | Property Type | Remarks |
 |-------------|------------|
 | Binary | 256 bytes maximum. |
-| Boolean | Not supported for messages, events and posts. |
+| Boolean | Not supported for contacts, messages, events and posts. |
 | DateTime | Must be specified in ISO 8601 format. Will be stored in UTC. |
-| Integer | 32-bit value. Not supported for messages, events and posts. |
+| Integer | 32-bit value. Not supported for contacts, messages, events and posts. |
 | String | 256 characters maximum. |
 
 ## JSON representation

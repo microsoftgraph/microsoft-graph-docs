@@ -1,38 +1,44 @@
 ﻿# Update managedIOSStoreApp
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app/
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md) object.
-The following table shows the properties that are required when you create a [managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md).
+In the request body, supply a JSON representation for the [managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md) object.
+
+The following table shows the properties that are required when you create the [managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md).
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |description|String|The description of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -49,7 +55,10 @@ The following table shows the properties that are required when you create a [ma
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |appAvailability|String|The Application's availability. Inherited from [managedApp](../resources/intune_apps_managedapp.md) Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
-|bundleId|String|The app's bundle ID.|
+|bundleId|String|The app's Bundle ID.|
+|appStoreUrl|String|The Apple AppStoreUrl.|
+|applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The iOS architecture for which this app can run on.|
+|minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum supported operating system.|
 
 
 
@@ -59,10 +68,10 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 681
+Content-length: 1057
 
 {
   "displayName": "Display Name value",
@@ -83,16 +92,29 @@ Content-length: 681
   "uploadState": 11,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
-  "bundleId": "Bundle Id value"
+  "bundleId": "Bundle Id value",
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "applicableDeviceType": {
+    "@odata.type": "microsoft.graph.iosDeviceType",
+    "iPad": true,
+    "iPhoneAndIPod": true
+  },
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
+    "v8_0": true,
+    "v9_0": true,
+    "v10_0": true,
+    "v11_0": true
+  }
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 846
+Content-Length: 1222
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -116,7 +138,20 @@ Content-Length: 846
   "uploadState": 11,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
-  "bundleId": "Bundle Id value"
+  "bundleId": "Bundle Id value",
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "applicableDeviceType": {
+    "@odata.type": "microsoft.graph.iosDeviceType",
+    "iPad": true,
+    "iPhoneAndIPod": true
+  },
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
+    "v8_0": true,
+    "v9_0": true,
+    "v10_0": true,
+    "v11_0": true
+  }
 }
 ```
 

@@ -1,6 +1,6 @@
 # device resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents a device registered in the directory. Inherits from [directoryObject](directoryobject.md).
 
@@ -44,6 +44,12 @@ This resource lets you add your own data to custom properties using [extensions]
 |isManaged|Boolean|**true** if the device is managed by a Mobile Device Management (MDM) app such as Intune; otherwise, **false**.|
 |onPremisesLastSyncDateTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |id|String|The unique identifier for the device. Inherited from [directoryObject](directoryobject.md). Key, Not nullable. Read-only.|
+|Name| String | Friendly name of a device|
+|Status | String| Device is online or offline|
+|Platform |String|Platform of device|
+|Kind| String| Form factor of device|
+|Model| String| Model of device|
+|Manufacturer| String| Manufacturer of device|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -51,12 +57,11 @@ This resource lets you add your own data to custom properties using [extensions]
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Nullable.|
 |registeredOwners|[directoryObject](directoryobject.md) collection|Users that are registered owners of the device. Read-only. Nullable.|
 |registeredUsers|[directoryObject](directoryobject.md) collection|Users that are registered users of the device. Read-only. Nullable.|
-
-
+|commands | Collection(microsoft.graph.command) | Set of commands sent to this device|
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -86,9 +91,14 @@ Here is a JSON representation of the resource
   "operatingSystem": "string",
   "operatingSystemVersion": "string",
   "physicalIds": ["string"],
-  "trustType": "string"
+  "trustType": "string",
+  "Name": "string",
+  "Status": "string",
+  "Platform": "string",
+  "Kind": "string",
+  "Model": "string",
+  "Manufacturer": "string"
 }
-
 ```
 
 ## See also
