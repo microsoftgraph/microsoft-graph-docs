@@ -3375,7 +3375,7 @@
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsvpnconfiguration_list_deviceconfigurationuserstatus"/>
         </Item>
       </Item>
-      <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_devices_conceptual">
+      <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_devicefe_conceptual">
         <Item text="Apple push notification certificate" url="/en-us/api-reference/beta/resources/intune_devicefe_applepushnotificationcertificate">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_applepushnotificationcertificate_get"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_applepushnotificationcertificate_update"/>
