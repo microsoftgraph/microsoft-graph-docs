@@ -58,13 +58,6 @@ Content-type: application/json
   "value": [
     {
       "accountEnabled": true,
-      "alternativeSecurityIds": [
-        {
-          "type": 2,
-          "identityProvider": "identityProvider-value",
-          "key": "key-value"
-        }
-      ],
       "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
       "deviceId": "deviceId-value",
       "deviceMetadata": "deviceMetadata-value",
