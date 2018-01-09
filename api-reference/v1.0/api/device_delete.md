@@ -8,9 +8,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Device.ReadWrite.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_device"
@@ -42,7 +42,7 @@ Here is an example of the request.
 DELETE https://graph.microsoft.com/v1.0/devices/{id}
 ```
 ##### Response
-Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

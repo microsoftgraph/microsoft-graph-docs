@@ -1,13 +1,18 @@
 # List registeredUsers
 
 Retrieve a list of users that are registered users of the device.
+
+For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- Device.ReadWrite.All and User.ReadBasic.All
-- Directory.Read.All
-- Directory.ReadWrite.All 
-- Directory.AccessAsUser.All
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Device.ReadWrite.All and User.ReadBasic.All or Directory.Read.All or Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
