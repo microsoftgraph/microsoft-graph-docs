@@ -1,6 +1,6 @@
 # Microsoft Teams device usage reports
 
-These device usage reports give you information about which devices your users utilize to engage on Microsoft Teams.
+Use the Microsoft Teams device usage reports to get information about Microsoft Teams device usage in your organization.
 
 ## Methods
 

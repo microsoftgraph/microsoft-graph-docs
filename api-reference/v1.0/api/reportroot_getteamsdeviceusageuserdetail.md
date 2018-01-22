@@ -71,7 +71,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserDetail(period='D7')
+GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserDetail(period='D7')
 ```
 
 #### Response
