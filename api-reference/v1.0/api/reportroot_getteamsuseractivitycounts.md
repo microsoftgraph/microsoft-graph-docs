@@ -40,7 +40,7 @@ If successful, this method returns a `302 Found` response that redirects to a pr
 
 Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
 
-The CSV file has the following headers for columns.
+The CSV file has the following headers for columns:
 
 - Report Refresh Date
 - Report Date
