@@ -43,24 +43,6 @@ This capability is available in only GET operations of:
 
 This capability is not available in other operations for contacts, events, messages, and their folders.
 
-
-### List message bodies in HTML or text format
-
-Message bodies can be in HTML or text format.
-
-You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** and **uniqueBody** properties in a `GET` request:
-
-- Specify `Prefer: outlook.body-content-type="text"` to get message bodies returned in text format.
-- Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return message bodies in HTML format.
-
-<!--
-If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:
-
-- For text format requests: `Preference-Applied: outlook.body-content-type="text"`
-- For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`
-
--->
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -103,10 +85,10 @@ You can use the `$filter` query parameter on the **mentionsPreview** property to
 the signed-in user.
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". Optional. |
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
+| Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
 ## Request body
 Do not supply a request body for this method.

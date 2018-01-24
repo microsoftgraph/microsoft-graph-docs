@@ -31,7 +31,10 @@ POST /groups/{id}/conversations
 In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationThread.md) and a [post](../resources/post.md).
 
 ## Response
-If successful, this method returns `201 Created` response code and [conversation](../resources/conversation.md) object in the response body.
+If successful, this method returns `201 Created` response code and [conversation](../resources/conversation.md) object in the response body. 
+
+The response includes the IDs for the new conversation and thread, which you can use in the 
+[list posts](conversationthread_list_posts.md) operation to get the new post as well.
 
 ## Example
 #### Request
@@ -41,25 +44,31 @@ The following is an example of the request.
   "name": "create_conversation_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/conversations
+POST https://graph.microsoft.com/beta/groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations
 Content-type: application/json
 
 {
-  "topic": "New Conversation Topic",
-  "threads": [{
-    "posts": [{
-      "body": {
-        "contentType": "html",
-        "content": "this is body content"
-      },
-      "newParticipants": [{
-        "emailAddress": {
-          "name": "Alex Darrow",
-          "address": "alexd@contoso.com"
+    "topic":"New head count",
+    "threads":[
+        {
+            "posts":[
+                {
+                    "body":{
+                        "contentType":"html",
+                        "content":"The confirmation will come by the end of the week."
+                    },
+                    "newParticipants":[
+                        {
+                            "emailAddress":{
+                                "name":"Adele Vance",
+                                "address":"AdeleV@contoso.onmicrosoft.com"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      }]
-    }]
-  }]
+    ]
 }
 ```
 
@@ -74,17 +83,16 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-  "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "preview": "preview-value",
-  "id": "id-value"
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
+    "id":"AAQkADPxBgqECsrFDTuM=",
+    "threads@odata.context":"https://graph.microsoft.com/beta/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADPxBgqECsrFDTuM%3D')/threads",
+    "threads":[
+        {
+            "id":"AAQkADUNO4xAAMbGA93Sw-EGCoQKysUNO4w=="
+        }
+    ]
 }
 ```
 

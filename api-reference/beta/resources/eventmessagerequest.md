@@ -18,7 +18,7 @@ Here is a JSON representation of the resource
     "previousStartDateTime",
     "previousEndDateTime"
   ],
-  "@odata.type": "microsoft.graph.eventmessagerequest"
+  "@odata.type": "microsoft.graph.eventMessageRequest"
 }-->
 
 ```json
@@ -31,7 +31,7 @@ Here is a JSON representation of the resource
   "changeKey": "string",
   "conversationId": "string",
   "createdDateTime": "String (timestamp)",
-  "endDateTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
+  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
@@ -46,15 +46,15 @@ Here is a JSON representation of the resource
   "location": {"@odata.type": "microsoft.graph.location"},
   "meetingMessageType": "microsoft.graph.meetingMessageType",
   "parentFolderId": "string",
-  "previousEndDateTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
+  "previousEndDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "previousLocation": {"@odata.type": "microsoft.graph.location"},
-  "previousStartDateTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
+  "previousStartDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "receivedDateTime": "String (timestamp)",
-  "recurrence": {"@odata.type": "microsoft.graph.patternedrecurrence"},
+  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "sender": {"@odata.type": "microsoft.graph.recipient"},
   "sentDateTime": "String (timestamp)",
-  "startDateTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "type": "string",

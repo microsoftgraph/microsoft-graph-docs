@@ -1,6 +1,6 @@
 # Associate your Office 365 account with Azure AD to create and manage apps
 
-To authenticate your applications using Microsoft Azure Active Directory (Azure AD), you need to register them in Azure AD. This is where Office 365 user account and application information is stored. To manage Azure AD through the Azure Management Portal, you need a Microsoft Azure subscription. You can use the management portal in Microsoft Azure to manage users, roles, and apps. 
+To authenticate your applications using Microsoft Azure Active Directory (Azure AD), you need to register them in Azure AD. This is where Office 365 user account and application information is stored. To manage Azure AD through the Azure portal, you need a Microsoft Azure subscription. You can use the portal in Microsoft Azure to manage users, roles, and apps. 
 
 This article shows you how to associate your Office 365 account with Azure AD to create and manage apps.
 
@@ -27,7 +27,7 @@ If you don't have an existing Office 365 for business account, you can:
 ## To associate an existing Azure subscription with your Office 365 account
 
 
-1. Log on to the  [Microsoft Azure Management portal](https://manage.windowsazure.com) with your existing Azure credentials (for example, your Microsoft ID such as user@live.com).
+1. Log on to the  [Microsoft Azure portal](https://portal.azure.com) with your existing Azure credentials (for example, your Microsoft ID such as user@live.com).
 	    
 2. Select the  **Active Directory** node, then select the **Directory** tab and, at the bottom of the screen, select **New**. 
 	 
@@ -35,7 +35,7 @@ If you don't have an existing Office 365 for business account, you can:
 	
 5. In **Add directory**, in the **Directory** dropdown box, select  **Use existing directory**. Check **I am ready to be signed out**, and then select the check mark in the lower-right corner. 
 	
-	This brings you back to the Azure Management Portal.
+	This brings you back to the Azure portal.
 	    
 3. Log in with your Office 365 account information. 
 	

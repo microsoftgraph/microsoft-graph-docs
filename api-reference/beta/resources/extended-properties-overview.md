@@ -45,8 +45,10 @@ a single-value extended property to get all the instances that have that propert
 ## id Formats
 
 When creating a single-value or multi-value extended property, you can specify **id** in one of two formats, 
-based on either a string name or numeric identifier, and on the actual type of value or values of the property. Since 
-extended properties are in most cases inter-operating with defined MAPI properties not exposed in the 
+based on either a string name or numeric identifier, and on the actual type of value or values of the property. 
+The next 2 tables below describe the supported formats to specify single and multi-value extended properties. {_type_} represents the type of the value or values of the property. Shown in the examples are string, integer, and arrays of these types.
+
+Since extended properties are in most cases inter-operating with defined MAPI properties not exposed in the 
 Microsoft Graph API metadata, for simplicity, the format you choose should reflect whether the corresponding MAPI 
 property uses a character string or numeric value in its [MAPI property identifier](https://msdn.microsoft.com/en-us/library/office/cc815528.aspx).
 You can find information about mapping an extended property to an existing MAPI property, such as the property identifier and GUID, 
@@ -59,15 +61,15 @@ in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Prop
 
 |**Format**|**Example**|**Description**|
 |:---------|:----------|:--------------|
-| "*{_type_} {_guid_} **Name** {_name_}*" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) it belongs to, and a name.         |
-| "*{_type_} {_guid_} **Id** {_id_}*"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifies a property by the namespace (the GUID) it belongs to, and an identifier.  |
+| "{_type_} {_guid_} **Name** {_name_}" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) it belongs to, and a name.         |
+| "{_type_} {_guid_} **Id** {_id_}"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifies a property by the namespace (the GUID) it belongs to, and an identifier.  |
 
 **Valid id formats for multi-value extended properties**
 
 |**Format**|**Example**|**Description**|
 |:---------|:----------|:--------------|
-| "*{_type_} {_guid_} **Name** {_name_}*" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by namespace (the GUID) and name.         |
-| "*{_type_} {_guid_} **Id** {_id_}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifies a property by namespace (the GUID) and identifier.   |
+| "{_type_} {_guid_} **Name** {_name_}" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by namespace (the GUID) and name.         |
+| "{_type_} {_guid_} **Id** {_id_}"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifies a property by namespace (the GUID) and identifier.   |
 
 ## REST API operations
  
