@@ -1,7 +1,5 @@
 # group: resetUnseenCount
-
-Reset the unseenCount of all the posts that the current user has not seen since their last visit. Supported for 
-only Office 365 groups.
+Reset the unseenCount of all the posts that the current user has not seen since their last visit. Supported for Office 365 groups only.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -10,7 +8,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -21,18 +19,17 @@ POST /groups/{id}/resetUnseenCount
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Prefer | return=minimal. If minimal response header is included in the request header, then a successful response returns `204 No Content` code. Optional.  | 
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "group_resetunseencount"
@@ -41,8 +38,8 @@ Here is an example of the request.
 POST https://graph.microsoft.com/v1.0/groups/{id}/resetUnseenCount
 ```
 
-##### Response
-Here is an example of the response. 
+#### Response
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

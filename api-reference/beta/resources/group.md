@@ -17,9 +17,9 @@ This resource supports:
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |**Group management**| | |
-|[Create group](../api/group_post_groups.md) | [group](group.md) |Create a new group as specified. It can be an Office 365 group, dynamic group or security group.|
+|[Create group](../api/group_post_groups.md) | [group](group.md) |Create a new group as specified. It can be an Office 365 group, dynamic group, or security group.|
 |[Get group](../api/group_get.md) | [group](group.md) |Read properties and relationships of group object.|
-|[Update group](../api/group_update.md) | [group](group.md) |Update the properties of a group object. |
+|[Update group](../api/group_update.md) | None |Update the properties of a group object. |
 |[Delete group](../api/group_delete.md) | None |Delete group object. |
 |[List owners](../api/group_list_owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of the group from the **owners** navigation property.|
 |[Add owner](../api/group_post_owners.md) |[directoryObject](directoryobject.md)| Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and mail-enabled security groups only).|
@@ -35,20 +35,28 @@ This resource supports:
 |[List settings](../api/directorysetting_list.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
 |[Update setting](../api/directorysetting_update.md) | [directorySetting](directorysetting.md)	|Update a setting object. |
 |[Delete setting](../api/directorysetting_delete.md) | None |Delete a setting object. |
-|[List endpoints](../api/group_list_endpoints.md) |[Endpoint](endpoint.md) collection| Get an endpoint object collection. |
-|[Get endpoint](../api/endpoint_get.md) | [Endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
+|[List endpoints](../api/group_list_endpoints.md) |[endpoint](endpoint.md) collection| Get an endpoint object collection. |
+|[Get endpoint](../api/endpoint_get.md) | [endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
 |[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
 |**Calendar**| | |
-|[Create event](../api/group_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
-|[List events](../api/group_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
-|[List calendarView](../api/group_list_calendarview.md) |[Event](event.md) collection| Get a collection of events in a specified time window.|
+|[Create event](../api/group_post_events.md) |[event](event.md)| Create a new event by posting to the events collection.|
+|[Get event](../api/group_get_event.md) |[event](event.md)|Read properties of an event object.| 
+|[List events](../api/group_list_events.md) |[event](event.md) collection| Get an event object collection.|
+|[Update event](../api/group_update_event.md) |None|Update the properties of an event object.| 
+|[Delete event](../api/group_delete_event.md) |None|Delete event object.| 
+|[List calendarView](../api/group_list_calendarview.md) |[event](event.md) collection| Get a collection of events in a specified time window.|
 |**Chat channels**| | |
-|[Create channel](../api/group_post_channels.md) |[Channel](channel.md)| Create a new channel by posting to the channels collection.|
-|[List channel](../api/group_list_channels.md) |[Channel](channel.md) collection| Get a channel object collection.|
+|[Create channel](../api/group_post_channels.md) |[channel](channel.md)| Create a new channel by posting to the channels collection.|
+|[List channel](../api/group_list_channels.md) |[channel](channel.md) collection| Get a channel object collection.|
 |**Conversations**| | |
-|[Create conversation](../api/group_post_conversations.md) |[Conversation](conversation.md)| Create a new Conversation by posting to the conversations collection.|
-|[List conversations](../api/group_list_conversations.md) |[Conversation](conversation.md) collection| Get a Conversation object collection.|
-|[List threads](../api/group_list_threads.md) |[ConversationThread](conversationthread.md) collection| Get all the threads of a group.|
+|[Create conversation](../api/group_post_conversations.md) |[conversation](conversation.md)| Create a new conversation by posting to the conversations collection.|
+|[Get conversation](../api/group_get_conversation.md) |[conversation](conversation.md)| Read properties of a conversation object.| 
+|[List conversations](../api/group_list_conversations.md) |[conversation](conversation.md) collection| Get a conversation object collection.|
+|[Delete conversation](../api/group_delete_conversation.md) |None|Delete conversation object.|
+|[Get thread](../api/group_get_thread.md) |[conversationThread](conversationthread.md)| Read properties of a thread object.| 
+|[List threads](../api/group_list_threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads of a group.|
+|[Update thread](../api/group_update_thread.md) |None| Update properties of a thread object.| 
+|[Delete thread](../api/group_delete_thread.md) |None| Delete thread object
 |[List acceptedSenders](../api/group_list_acceptedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the acceptedSenders list for this group.|
 |[Add acceptedSender](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| Add a User or Group to the acceptSenders collection.|
 |[Remove acceptedSender](../api/group_delete_acceptedsenders.md) |[directoryObject](directoryobject.md)| Remove a User or Group from the acceptedSenders collection.|
@@ -66,12 +74,12 @@ This resource supports:
 |[List plannerPlans](../api/plannergroup_list_plans.md) |[plannerPlan](plannerPlan.md) collection| Get Planner plans owned by the group.|
 |**User settings**| | |
 |[addFavorite](../api/group_addfavorite.md)|None|Add the group to the list of the current user's favorite groups. Supported for only Office 365 groups.|
-|[removeFavorite](../api/group_removefavorite.md)|None|Remove the group from the list of the current user's favorite groups. Supported for only Office 365 groups.|
+|[removeFavorite](../api/group_removefavorite.md)|None|Remove the group from the list of the current user's favorite groups. Supported for Office 365 Groups only.|
 |[List memberOf](../api/group_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administative units that this user is a direct member of, from the **memberOf** navigation property.|
 |[List joinedTeams](../api/user_list_joinedteams.md) |[group](group.md) collection| Get the Microsoft Teams that the user is a direct member of.|
-|[subscribeByMail](../api/group_subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the current user to receive email conversations. Supported for only Office 365 groups.|
-|[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations. Supported for only Office 365 groups.|
-|[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.|
+|[subscribeByMail](../api/group_subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the current user to receive email conversations. Supported for Office 365 Groups only.|
+|[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations. Supported for Office 365 Groups only.|
+|[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for Office 365 Groups only.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -125,12 +133,11 @@ This resource supports:
 |planner|[plannerGroup](plannerGroup.md)| Selective Planner services available to the group. Read-only. Nullable. |
 |rejectedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
 |settings|[directorySetting](directorySetting.md) collection| Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.|
-|sites|[site](site.md) collection|The list of SharePoint sites in this group. Access the default site with /sites/root.
+|sites|[site](site.md) collection|The list of SharePoint sites in this group. Access the default site with /sites/root.|
 |threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|
 
 ## JSON representation
-
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",

@@ -1,6 +1,11 @@
 # TableRowCollection: add
 
 Adds a new row to the table.
+
+## Error Handling
+
+This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 

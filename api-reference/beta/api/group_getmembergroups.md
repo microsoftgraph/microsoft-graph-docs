@@ -2,8 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Return all the groups that the specified group is a member of. The check is transitive, unlike reading the 
-[memberOf](../api/group_list_memberof.md) navigation property, which returns only the groups that the group is a direct member of.
+Return all the groups that the specified group is a member of. The check is transitive, unlike reading the [memberOf](../api/group_list_memberof.md) navigation property, which returns only the groups that the group is a direct member of.
 
 This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each 
 request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is 
@@ -11,7 +10,6 @@ always direct.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
-
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -24,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /groups/{id}/getMemberGroups
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
@@ -37,13 +36,11 @@ In the request body, provide a JSON object with the following parameters.
 |securityEnabledOnly|Boolean|Set to **false**. Returning only security-enabled groups is supported for users only.|
 
 ## Response
-
 If successful, this method returns `200 OK` response code and String collection in the response body that contains the IDs of the groups that the group is a member of.
 
 ## Example
-Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "group_getmembergroups"
@@ -58,8 +55,9 @@ Content-length: 33
 }
 ```
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

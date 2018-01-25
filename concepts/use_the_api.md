@@ -54,7 +54,7 @@ For more information about API versions, see [Versioning and support](versioning
 
 Your URL will include the resource or resources you are interacting with in the request, such as `me`, `users`, `groups`, `drives`, and `sites`. Each of the top-level resources also include **relationships**, which you can use to access additional resources, like `me/messages` or `me/drive`. You can also interact with resources using **methods**; for example, to send an email, use `me/sendMail`.
 
-For more information about how to navigate resource relationships and methods, see Traverse the graph. 
+For more information about how to navigate resource relationships and methods, see [Traverse the graph](traverse_the_graph.md). 
 
 Each resource might require different permissions to access it. You will often need a higher level of permissions to create or update a resource than to read it. For details about required permissions, see the method reference topic. 
 

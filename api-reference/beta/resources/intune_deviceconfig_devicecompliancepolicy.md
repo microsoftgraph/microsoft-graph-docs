@@ -13,6 +13,7 @@ This is the base class for Compliance policy. Compliance policies are platform s
 |[assign action](../api/intune_deviceconfig_devicecompliancepolicy_assign.md)|[deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) collection|Not yet documented|
 |[scheduleActionsForRules action](../api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules.md)|None|Not yet documented|
 |[localActions action](../api/intune_deviceconfig_devicecompliancepolicy_localactions.md)|None|Not yet documented|
+|[getDevicePasscode function](../api/intune_deviceconfig_devicecompliancepolicy_getdevicepasscode.md)|String|Not yet documented|
 
 ## Properties
 |Property|Type|Description|

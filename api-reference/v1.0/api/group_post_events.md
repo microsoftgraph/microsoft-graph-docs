@@ -1,4 +1,4 @@
-# Create Event
+# Create event
 Use this API to create a new [event](../resources/event.md).
 
 ## Permissions
@@ -23,10 +23,10 @@ POST /groups/{id}/calendar/events
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-In the request body, supply a JSON representation of [Event](../resources/event.md) object.
+In the request body, supply a JSON representation of [event](../resources/event.md) object.
 
 ## Response
-If successful, this method returns `201 Created` response code and [Event](../resources/event.md) object in the response body.
+If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.
 
 ## Example
 #### Request

@@ -42,21 +42,6 @@ This capability is available in only GET operations of:
 
 This capability is not available in other operations for contacts, events, messages, and their folders.
 
-
-### Get the message body in HTML or text format
-
-Message bodies can be in HTML or text format.
-
-You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** and **uniqueBody** properties in a `GET` request:
-
-- Specify `Prefer: outlook.body-content-type="text"` to get a message body returned in text format.
-- Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return the message body in HTML format.
-
-If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:
-
-- For text format requests: `Preference-Applied: outlook.body-content-type="text"`
-- For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -98,7 +83,7 @@ of each [mention](../resources/mention.md) in the message expanded.
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". Optional. |
+| Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
 ## Request body
 Do not supply a request body for this method.

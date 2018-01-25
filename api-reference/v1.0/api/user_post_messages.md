@@ -46,18 +46,21 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages
 Content-type: application/json
-Content-length: 248
 
 {
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
-  "hasAttachments": true,
-  "subject": "subject-value",
-  "body": {
-    "contentType": "",
-    "content": "content-value"
-  },
-  "bodyPreview": "bodyPreview-value"
+    "subject":"Did you see last night's game?",
+    "importance":"Low",
+    "body":{
+        "contentType":"HTML",
+        "content":"They were <b>awesome</b>!"
+    },
+    "toRecipients":[
+        {
+            "emailAddress":{
+                "address":"AdeleV@contoso.onmicrosoft.com"
+            }
+        }
+    ]
 }
 ```
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
@@ -65,24 +68,60 @@ In the request body, supply a JSON representation of [message](../resources/mess
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "create_message_from_user",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 248
 
 {
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
-  "hasAttachments": true,
-  "subject": "subject-value",
-  "body": {
-    "contentType": "",
-    "content": "content-value"
-  },
-  "bodyPreview": "bodyPreview-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/messages/$entity",
+    "@odata.etag":"W/\"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti\"",
+    "id":"AAMkADNlNYjSAAA=",
+    "createdDateTime":"2017-07-22T01:53:56Z",
+    "lastModifiedDateTime":"2017-07-22T01:53:57Z",
+    "changeKey":"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti",
+    "categories":[
+
+    ],
+    "receivedDateTime":"2017-07-22T01:53:57Z",
+    "sentDateTime":"2017-07-22T01:53:57Z",
+    "hasAttachments":false,
+    "internetMessageId":"<MWHPR1301MB@MWHPR1301MB.namprd13.prod.outlook.com>",
+    "subject":"Did you see last night's game?",
+    "bodyPreview":"They were awesome!",
+    "importance":"low",
+    "parentFolderId":"AAMkADNlNWAAAAAAEPAAA=",
+    "conversationId":"AAQkADNlNFdXGBnqtY=",
+    "isDeliveryReceiptRequested":false,
+    "isReadReceiptRequested":false,
+    "isRead":true,
+    "isDraft":true,
+    "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADNlNYjSAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification":"focused",
+    "body":{
+        "contentType":"html",
+        "content":"<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nThey were <b>awesome</b>!\r\n</body>\r\n</html>\r\n"
+    },
+    "toRecipients":[
+        {
+            "emailAddress":{
+                "name":"Adele Vance",
+                "address":"AdeleV@contoso.onmicrosoft.com"
+            }
+        }
+    ],
+    "ccRecipients":[
+
+    ],
+    "bccRecipients":[
+
+    ],
+    "replyTo":[
+
+    ]
 }
 ```
 

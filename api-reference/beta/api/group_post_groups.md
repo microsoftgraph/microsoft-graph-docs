@@ -4,11 +4,11 @@
 
 Use this API to create a new [group](../resources/group.md) as specified in the request body. You can create one of three types of groups:
 
-* Office 365 group (unified group)
+* Office 365 Group (unified group)
 * Dynamic group
 * Security group
 
-> **Note**: Although Microsoft Teams is built on Office 365 groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
+> **Note**: Although Microsoft Teams is built on Office 365 Groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -24,21 +24,21 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /groups
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-
 The following table shows the properties of the [group](../resources/group.md) resource that you must specify at a minimum when you create a group. 
 
 | Property | Type | Description|
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. |
-| mailEnabled | boolean | Set to **true** for mail-enabled groups. Set this to **true** if creating an Office 365 group. Set this to **false** if creating dynamic or security group.|
+| mailEnabled | boolean | Set to **true** for mail-enabled groups. Set this to **true** if creating an Office 365 Group. Set this to **false** if creating dynamic or security group.|
 | mailNickname | string | The mail alias for the group. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups. Set this to **true** if creating a dynamic or security group. Set this to **false** if creating an Office 365 group. |
+| securityEnabled | boolean | Set to **true** for security-enabled groups. Set this to **true** if creating a dynamic or security group. Set this to **false** if creating an Office 365 Group. |
 
 Specify the **groupTypes** property if you're creating an Office 365 or dynamic group, as stated below.
 
@@ -53,15 +53,14 @@ Since the **group** resource supports [extensions](../../../concepts/extensibili
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
 ## Response
-
 If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of a request that creates an Office 365 group.
+#### Request
+The following is an example of a request that creates an Office 365 Group.
 <!-- {
   "blockType": "request",
-  "name": "create_group_from_groups"
+  "name": "create_group"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -80,8 +79,9 @@ Content-length: 244
 }
 ```
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. More properties will be returned from an actual call.
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

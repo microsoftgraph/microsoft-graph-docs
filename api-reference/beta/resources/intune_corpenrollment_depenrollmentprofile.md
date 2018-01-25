@@ -25,6 +25,7 @@ Inherits from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentp
 |description|String|Description of the profile Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
 |requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
 |configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
 |supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.|
 |supportDepartment|String|Support department information|
 |passCodeDisabled|Boolean|Indicates if Passcode setup pane is disabled|
@@ -48,7 +49,6 @@ Inherits from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentp
 |awaitDeviceConfiguredConfirmation|Boolean|Indicates if the device will need to wait for configured confirmation|
 |sharedIPadMaximumUserCount|Int32|This specifies the maximum number of users that can use a shared iPad. Only applicable in shared iPad mode.|
 |enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios. Only applicable in shared iPads.|
-|enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal.|
 
 ## Relationships
 None
@@ -68,6 +68,7 @@ Here is a JSON representation of the resource.
   "description": "String",
   "requiresUserAuthentication": true,
   "configurationEndpointUrl": "String",
+  "enableAuthenticationViaCompanyPortal": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "String",
   "passCodeDisabled": true,
@@ -96,8 +97,7 @@ Here is a JSON representation of the resource.
   "macOSFileVaultDisabled": true,
   "awaitDeviceConfiguredConfirmation": true,
   "sharedIPadMaximumUserCount": 1024,
-  "enableSharedIPad": true,
-  "enableAuthenticationViaCompanyPortal": true
+  "enableSharedIPad": true
 }
 ```
 

@@ -124,7 +124,7 @@
         <Item text="List tasks" url="/en-us/api-reference/v1.0/api/planneruser_list_tasks" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve a list of plan objects." />
     </Item>  
   </Item>
-  <Item text="Groups" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="user groups, Microsoft Graph API, user API" SEODescription="Groups API">
+  <Item text="Groups" url="/en-us/api-reference/v1.0/resources/groups-overview" SEOKeyword="user groups, Microsoft Graph API, user API" SEODescription="Groups API">
     <Item text="Group" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="user groups, Microsoft Graph API, user API" SEODescription="Groups API">
       <Item text="Add favorite" url="/en-us/api-reference/v1.0/api/group_addfavorite" />
       <Item text="Add member" url="/en-us/api-reference/v1.0/api/group_post_members" SEOKeyword="Create member, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new member." />
@@ -157,9 +157,9 @@
 	<Item text="Calendar" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="Calendar">
       <Item text="List events" url="/en-us/api-reference/v1.0/api/group_list_events" SEOKeyword="List events, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
       <Item text="Create event" url="/en-us/api-reference/v1.0/api/group_post_events" SEOKeyword="Create event, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new Event." />
-      <Item text="Get event" url="/en-us/api-reference/v1.0/api/event_get" />
-      <Item text="Update event" url="/en-us/api-reference/v1.0/api/event_update" />
-      <Item text="Delete event" url="/en-us/api-reference/v1.0/api/event_delete" />
+      <Item text="Get event" url="/en-us/api-reference/v1.0/api/group_get_event" />
+      <Item text="Update event" url="/en-us/api-reference/v1.0/api/group_update_event" />
+      <Item text="Delete event" url="/en-us/api-reference/v1.0/api/group_delete_event" />
       <Item text="List calendar view" url="/en-us/api-reference/v1.0/api/group_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
       <Item text="List attachments" url="/en-us/api-reference/v1.0/api/event_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
       <Item text="Add attachment" url="/en-us/api-reference/v1.0/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
@@ -169,8 +169,8 @@
     <Item text="Conversation" url="/en-us/api-reference/v1.0/resources/conversation" SEOKeyword="group conversations, Microsoft Graph API, group API" SEODescription="Conversation">
       <Item text="List conversations" url="/en-us/api-reference/v1.0/api/group_list_conversations" SEOKeyword="List conversations, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of conversation objects." />
       <Item text="Create conversation" url="/en-us/api-reference/v1.0/api/group_post_conversations" SEOKeyword="Create Conversation, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new Conversation." />
-      <Item text="Get group conversation" url="/en-us/api-reference/v1.0/api/conversation_get" SEOKeyword="Get group conversation, Microsoft Graph API, Outlook conversation API" SEODescription="Retrieve the properties and relationships of conversation object." />
-      <Item text="Delete group conversation" url="/en-us/api-reference/v1.0/api/conversation_delete" SEOKeyword="Delete group conversation, Microsoft Graph API, Outlook conversation API" SEODescription="Delete conversation." />
+      <Item text="Get group conversation" url="/en-us/api-reference/v1.0/api/group_get_conversation" SEOKeyword="Get group conversation, Microsoft Graph API, Outlook conversation API" SEODescription="Retrieve the properties and relationships of conversation object." />
+      <Item text="Delete group conversation" url="/en-us/api-reference/v1.0/api/group_delete_conversation" SEOKeyword="Delete group conversation, Microsoft Graph API, Outlook conversation API" SEODescription="Delete conversation." />
       <Item text="List conversation threads" url="/en-us/api-reference/v1.0/api/conversation_list_threads" SEOKeyword="List threads, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of conversationthread objects." />
       <Item text="Create conversation thread" url="/en-us/api-reference/v1.0/api/conversation_post_threads" SEOKeyword="Create thread, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new thread." />
       <Item text="List accepted senders" url="/en-us/api-reference/v1.0/api/group_list_acceptedsenders" SEOKeyword="List acceptedSenders, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
@@ -183,9 +183,9 @@
     <Item text="Conversation thread" url="/en-us/api-reference/v1.0/resources/conversationthread" SEOKeyword="conversationthread API, Microsoft Graph API, conversationthread API" SEODescription="Conversation Thread">
       <Item text="List threads" url="/en-us/api-reference/v1.0/api/group_list_threads" SEOKeyword="List threads, Microsoft Graph API, Outlook conversation API" SEODescription="Retrieve a list of conversationthread objects." />
       <Item text="Create thread" url="/en-us/api-reference/v1.0/api/group_post_threads" SEOKeyword="Create thread, Microsoft Graph API, Outlook conversation API" SEODescription="Use this API to create a new thread." />
-      <Item text="Get conversation thread" url="/en-us/api-reference/v1.0/api/conversationthread_get" SEOKeyword="Get conversationThread, Microsoft Graph API, Outlook conversation API" SEODescription="Retrieve the properties and relationships of conversationthread object." />
-      <Item text="Update conversation thread" url="/en-us/api-reference/v1.0/api/conversationthread_update" SEOKeyword="Update conversationthread, Microsoft Graph API, Outlook conversation API" SEODescription="Update the properties of conversationthread object." />
-      <Item text="Delete conversation thread" url="/en-us/api-reference/v1.0/api/conversationthread_delete" SEOKeyword="Delete conversationThread, Microsoft Graph API, Outlook conversation API" SEODescription="Delete conversationThread." />
+      <Item text="Get conversation thread" url="/en-us/api-reference/v1.0/api/group_get_thread" SEOKeyword="Get conversationThread, Microsoft Graph API, Outlook conversation API" SEODescription="Retrieve the properties and relationships of conversationthread object." />
+      <Item text="Update conversation thread" url="/en-us/api-reference/v1.0/api/group_update_thread" SEOKeyword="Update conversationthread, Microsoft Graph API, Outlook conversation API" SEODescription="Update the properties of conversationthread object." />
+      <Item text="Delete conversation thread" url="/en-us/api-reference/v1.0/api/group_delete_thread" SEOKeyword="Delete conversationThread, Microsoft Graph API, Outlook conversation API" SEODescription="Delete conversationThread." />
       <Item text="Reply to conversation thread" url="/en-us/api-reference/v1.0/api/conversationthread_reply" SEOKeyword="conversationThread: reply, Microsoft Graph API, conversationthread API" SEODescription="" />
     </Item>
     <Item text="Drive" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="Drive">
@@ -665,6 +665,106 @@
       <Item text="Update progress task board format" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_update" />
 	  </Item>
   </Item>
+  <Item text="Reports" url="/en-us/api-reference/v1.0/resources/report" >
+	  <Item text="Outlook activity" url="/en-us/api-reference/v1.0/resources/email_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivityusercounts" />
+	  </Item>
+	  <Item text="Outlook app usage" url="/en-us/api-reference/v1.0/resources/email_app_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageuserdetail" />
+		<Item text="Get apps user counts" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageappsusercounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageusercounts" />
+		<Item text="Get versions user counts" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageversionsusercounts" />
+	  </Item>
+	  <Item text="Outlook mailbox usage" url="/en-us/api-reference/v1.0/resources/mailbox_usage_reports" >
+		<Item text="Get mailbox detail" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagedetail" />
+		<Item text="Get mailbox counts" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagemailboxcounts" />
+		<Item text="Get quota status mailbox counts" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagequotastatusmailboxcounts" />
+		<Item text="Get  storage" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagestorage" />
+	  </Item>
+	  <Item text="Office 365 activations" url="/en-us/api-reference/v1.0/resources/office_365_activations_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationsuserdetail" />
+		<Item text="Get activation counts" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationcounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationsusercounts" />
+	  </Item>
+	  <Item text="Office 365 active users" url="/en-us/api-reference/v1.0/resources/office_365_active_users_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activeuserdetail" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activeusercounts" />
+		<Item text="Get services user counts" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365servicesusercounts" />
+	  </Item>
+	  <Item text="Office 365 groups activity" url="/en-us/api-reference/v1.0/resources/office_365_groups_activity_reports" >
+		<Item text="Get group detail" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitydetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitycounts" />
+		<Item text="Get group counts" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitygroupcounts" />
+		<Item text="Get storage" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitystorage" />
+		<Item text="Get file counts" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivityfilecounts" />
+	  </Item>
+	  <Item text="OneDrive activity" url="/en-us/api-reference/v1.0/resources/onedrive_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityuserdetail" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityusercounts" />
+		<Item text="Get file counts" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityfilecounts" />
+	  </Item>
+	  <Item text="OneDrive usage" url="/en-us/api-reference/v1.0/resources/onedrive_usage_reports" >
+		<Item text="Get account detail" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusageaccountdetail" />
+		<Item text="Get account counts" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusageaccountcounts" />
+		<Item text="Get file counts" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusagefilecounts" />
+		<Item text="Get storage" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusagestorage" />
+	  </Item>
+	  <Item text="SharePoint activity" url="/en-us/api-reference/v1.0/resources/sharepoint_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityuserdetail" />
+		<Item text="Get file counts" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityfilecounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityusercounts" />
+		<Item text="Get pages" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivitypages" />
+	  </Item>
+	  <Item text="SharePoint site usage" url="/en-us/api-reference/v1.0/resources/sharepoint_site_usage_reports" >
+		<Item text="Get site detail" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagedetail" />
+		<Item text="Get file counts" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagefilecounts" />
+		<Item text="Get site counts" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagesitecounts" />
+		<Item text="Get storage" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagestorage" />
+		<Item text="Get pages" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagepages" />
+	  </Item>
+	  <Item text="Skype for Business activity" url="/en-us/api-reference/v1.0/resources/skype_for_business_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivityusercounts" />
+	  </Item>
+	  <Item text="Skype for Business device usage" url="/en-us/api-reference/v1.0/resources/skype_for_business_device_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusageuserdetail" />
+		<Item text="Get distribution user counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusagedistributionusercounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Skype for Business organizer activity" url="/en-us/api-reference/v1.0/resources/skype_for_business_organizer_activity_reports" >
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivityusercounts" />
+		<Item text="Get minute counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivityminutecounts" />
+	  </Item>
+	  <Item text="Skype for Business participant activity" url="/en-us/api-reference/v1.0/resources/skype_for_business_participant_activity_reports" >
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivityusercounts" />
+		<Item text="Get minute counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivityminutecounts" />
+	  </Item>
+	  <Item text="Skype for Business peer-to-peer activity" url="/en-us/api-reference/v1.0/resources/skype_for_business_peer_to_peer_activity" >
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivityusercounts" />
+		<Item text="Get minute counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivityminutecounts" />
+	  </Item>
+	  <Item text="Yammer activity" url="/en-us/api-reference/v1.0/resources/yammer_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivityusercounts" />
+	  </Item>
+	  <Item text="Yammer device usage" url="/en-us/api-reference/v1.0/resources/yammer_device_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusageuserdetail" />
+		<Item text="Get distribution user counts" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusagedistributionusercounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Yammer groups activity" url="/en-us/api-reference/v1.0/resources/yammer_groups_activity_reports" >
+		<Item text="Get group detail" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitydetail" />
+		<Item text="Get group counts" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitygroupcounts" />
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitycounts" />
+	  </Item>
+	</Item>
   <Item text="Schema Extensions" url="/en-us/api-reference/v1.0/resources/schemaextension" SEOKeyword="extension API, Microsoft Graph API, schema extension API, schema extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
       <Item text="List schema extensions" url="/en-us/api-reference/v1.0/api/schemaextension_list" SEOKeyword="List schema extensions, Microsoft Graph API" SEODescription="Retrieves a collection of schema extension definitions and their properties." />
       <Item text="Create schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_post_schemaextensions" SEOKeyword="Create an schema extension, Microsoft Graph API" SEODescription="API to create a schema extension definition." />
@@ -799,7 +899,7 @@
         <Item text="List tasks" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve a list of plan objects." />
       </Item>
     </Item>
-    <Item text="Groups" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
+    <Item text="Groups" url="/en-us/api-reference/beta/resources/groups-overview" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
       <Item text="Group" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
         <Item text="Add favorite" url="/en-us/api-reference/beta/api/group_addfavorite" SEOKeyword="group: addFavorite, Microsoft Graph API, group API" SEODescription="" />
         <Item text="Add member" url="/en-us/api-reference/beta/api/group_post_members" SEOKeyword="Create member, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new member." />
@@ -838,9 +938,9 @@
 	  <Item text="Calendar" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
         <Item text="List events" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="List events, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
         <Item text="Create event" url="/en-us/api-reference/beta/api/group_post_events" SEOKeyword="Create event, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new Event." />
-        <Item text="Get event" url="/en-us/api-reference/beta/api/event_get" />
-        <Item text="Update event" url="/en-us/api-reference/beta/api/event_update" />
-        <Item text="Delete event" url="/en-us/api-reference/beta/api/event_delete" />
+        <Item text="Get event" url="/en-us/api-reference/beta/api/group_get_event" />
+        <Item text="Update event" url="/en-us/api-reference/beta/api/group_update_event" />
+        <Item text="Delete event" url="/en-us/api-reference/beta/api/group_delete_event" />
         <Item text="List calendar view" url="/en-us/api-reference/beta/api/group_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
         <Item text="List attachments" url="/en-us/api-reference/beta/api/event_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Add attachment" url="/en-us/api-reference/beta/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
@@ -850,8 +950,8 @@
       <Item text="Conversation" url="/en-us/api-reference/beta/resources/conversation" SEOKeyword="conversation API, Microsoft Graph API, conversation API" SEODescription="">
         <Item text="List conversations" url="/en-us/api-reference/beta/api/group_list_conversations" SEOKeyword="List conversations, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of conversation objects." />
         <Item text="Create conversation" url="/en-us/api-reference/beta/api/group_post_conversations" SEOKeyword="Create Conversation, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new Conversation." />
-        <Item text="Get group conversation" url="/en-us/api-reference/beta/api/conversation_get" SEOKeyword="Get group conversation, Microsoft Graph API, Outlook conversation API" SEODescription="Retrieve the properties and relationships of conversation object." />
-        <Item text="Delete group conversation" url="/en-us/api-reference/beta/api/conversation_delete" SEOKeyword="Delete group conversation, Microsoft Graph API, Outlook conversation API" SEODescription="Delete conversation." />
+        <Item text="Get group conversation" url="/en-us/api-reference/beta/api/group_get_conversation" SEOKeyword="Get group conversation, Microsoft Graph API, Outlook conversation API" SEODescription="Retrieve the properties and relationships of conversation object." />
+        <Item text="Delete group conversation" url="/en-us/api-reference/beta/api/group_delete_conversation" SEOKeyword="Delete group conversation, Microsoft Graph API, Outlook conversation API" SEODescription="Delete conversation." />
         <Item text="List conversation threads" url="/en-us/api-reference/beta/api/conversation_list_threads" SEOKeyword="List threads, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of conversationthread objects." />
         <Item text="Create conversation thread" url="/en-us/api-reference/beta/api/conversation_post_threads" SEOKeyword="Create thread, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new thread." />
         <Item text="List accepted senders" url="/en-us/api-reference/beta/api/group_list_acceptedsenders" SEOKeyword="List acceptedSenders, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
@@ -864,9 +964,9 @@
       <Item text="Conversation thread" url="/en-us/api-reference/beta/resources/conversationthread" SEOKeyword="conversationthread API, Microsoft Graph API, conversationthread API" SEODescription="">
         <Item text="List threads" url="/en-us/api-reference/beta/api/group_list_threads" SEOKeyword="List threads, Microsoft Graph API, Outlook conversation API" SEODescription="Retrieve a list of conversationthread objects." />
         <Item text="Create thread" url="/en-us/api-reference/beta/api/group_post_threads" SEOKeyword="Create thread, Microsoft Graph API, Outlook conversation API" SEODescription="Use this API to create a new thread." />
-        <Item text="Get conversation thread" url="/en-us/api-reference/beta/api/conversationthread_get" SEOKeyword="Get conversationThread, Microsoft Graph API, Outlook conversation API" SEODescription="Retrieve the properties and relationships of conversationthread object." />
-        <Item text="Update conversation thread" url="/en-us/api-reference/beta/api/conversationthread_update" SEOKeyword="Update conversationthread, Microsoft Graph API, Outlook conversation API" SEODescription="Update the properties of conversationthread object." />
-        <Item text="Delete conversation thread" url="/en-us/api-reference/beta/api/conversationthread_delete" SEOKeyword="Delete conversationThread, Microsoft Graph API, Outlook conversation API" SEODescription="Delete conversationThread." />
+        <Item text="Get conversation thread" url="/en-us/api-reference/beta/api/group_get_thread" SEOKeyword="Get conversationThread, Microsoft Graph API, Outlook conversation API" SEODescription="Retrieve the properties and relationships of conversationthread object." />
+        <Item text="Update conversation thread" url="/en-us/api-reference/beta/api/group_update_thread" SEOKeyword="Update conversationthread, Microsoft Graph API, Outlook conversation API" SEODescription="Update the properties of conversationthread object." />
+        <Item text="Delete conversation thread" url="/en-us/api-reference/beta/api/group_delete_thread" SEOKeyword="Delete conversationThread, Microsoft Graph API, Outlook conversation API" SEODescription="Delete conversationThread." />
         <Item text="Reply to conversation thread" url="/en-us/api-reference/beta/api/conversationthread_reply" SEOKeyword="conversationThread: reply, Microsoft Graph API, conversationthread API" SEODescription="" />
       </Item>
       <Item text="Directory object" url="/en-us/api-reference/beta/resources/directoryobject" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
@@ -1089,13 +1189,37 @@
     </Item>
       <Item text="Service principal" url="/en-us/api-reference/beta/resources/serviceprincipal" >
         <Item text="List service principal" url="/en-us/api-reference/beta/api/serviceprincipal_list" />
-		<Item text="Get service principal" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
+		    <Item text="Get service principal" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
         <Item text="Update service principal" url="/en-us/api-reference/beta/api/serviceprincipal_update" />
         <Item text="Delete service principal" url="/en-us/api-reference/beta/api/serviceprincipal_delete" />
       </Item>
       <Item text="Subscribed sku" url="/en-us/api-reference/beta/resources/subscribedsku" SEOKeyword="subscribedsku API, Microsoft Graph API, subscribedsku API" SEODescription="Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from DirectoryObject.">
         <Item text="List subscribedSkus" url="/en-us/api-reference/beta/api/subscribedsku_list" SEOKeyword="List subscribedSkus, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve a list of subscribedsku objects." />
         <Item text="Get subscribedSku" url="/en-us/api-reference/beta/api/subscribedsku_get" SEOKeyword="Get subscribedSku, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve the properties and relationships of subscribedsku object." />
+      </Item>
+      <Item text="Synchronization" url="/en-us/api-reference/beta/resources/synchronization-overview" SEOKeyword="Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
+        <Item text="Synchronize custom target attributes" url="/en-us/api-reference/beta/resources/synchronization-configure-with-custom-target-attributes"/>
+        <Item text="Synchronize directory extension attributes" url="/en-us/api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes"/>
+        <Item text="Job" url="/en-us/api-reference/beta/resources/synchronization_synchronizationjob" SEOKeyword="Synchronization job, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
+          <Item text="List jobs" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_list" />
+          <Item text="Create job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_post" />
+		  <Item text="Get job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_get"  />
+          <Item text="Start job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_start" />
+          <Item text="Pause job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_pause"  />
+          <Item text="Restart job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_restart"  />
+          <Item text="Delete job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_delete"  />
+        </Item>
+        <Item text="Schema" url="/en-us/api-reference/beta/resources/synchronization_synchronizationschema" SEOKeyword="Synchronization schema, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
+            <Item text="Get schema" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_get" />
+            <Item text="Get schema functions" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_functions"  />
+            <Item text="Get schema filter operators" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_filteroperators"  />
+            <Item text="Update schema" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_update"  />
+            <Item text="Reset schema" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_delete"  />
+        </Item>
+        <Item text="Template" url="/en-us/api-reference/beta/resources/synchronization_synchronizationtemplate" SEOKeyword="Synchronization template, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">/>
+            <Item text="List templates" url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_list" />
+            <Item text="Get template" url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_get" />
+        </Item>
       </Item>
     </Item>
     <Item text="Education" url="/en-us/api-reference/beta/resources/education-overview" >
@@ -1160,6 +1284,23 @@
 			<Item text="Get submitted resource" url="/en-us/api-reference/beta/api/educationsubmittedsubmissionresource_get" />
 			<Item text="Grade submission" url="/en-us/api-reference/beta/api/educationsubmission_update" />
 			<Item text="Release submission" url="/en-us/api-reference/beta/api/educationsubmission_release" />
+		</Item>
+		<Item text="Synchronization profile" url="/en-us/api-reference/beta/resources/educationsynchronizationprofile" >
+			<Item text="List profile" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_list" />
+			<Item text="Create profile" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_post" />
+			<Item text="Get profile" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_get" />
+			<Item text="Delete profile" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_delete" />
+			<Item text="Start sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_start" />
+			<Item text="Pause sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_pause" />
+			<Item text="Resume sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_resume" />
+			<Item text="Reset sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_resume" />
+			<Item text="Get upload URL" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_uploadurl" />
+		</Item>
+		<Item text="Synchronization profile status" url="/en-us/api-reference/beta/resources/educationsynchronizationprofilestatus" >
+			<Item text="Get sync status" url="/en-us/api-reference/beta/api/educationsynchronizationprofilestatus_get" />
+		</Item>
+		<Item text="Synchronization errors" url="/en-us/api-reference/beta/resources/educationsynchronizationerror" >
+			<Item text="Get sync errors" url="/en-us/api-reference/beta/api/educationsynchronizationerrors_get" />
 		</Item>
 		</Item>
 	<Item text="Excel" url="/en-us/api-reference/beta/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
@@ -1441,6 +1582,13 @@
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_update"/>
+        </Item>
+        <Item text="macOS LOB app" url="en-us/api-reference/beta/resources/intune_apps_macoslobapp">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_update"/>
         </Item>
         <Item text="macOS office suite app" url="en-us/api-reference/beta/resources/intune_apps_macosofficesuiteapp">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_list"/>
@@ -2014,6 +2162,15 @@
           <Item text="Get device configuration device overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_deviceconfigurationdeviceoverview"/>
           <Item text="Get device configuration user overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_deviceconfigurationuseroverview"/>
           <Item text="Get Android for Work certificate profile base" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_androidforworkcertificateprofilebase"/>
+        </Item>
+        <Item text="Android for Work enrollment profile" url="/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_update"/>
+          <Item text="Create token action" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_createtoken"/>
+          <Item text="Revoke tokens action" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_revoketokens"/>
         </Item>
         <Item text="Android for Work enterprise Wi-Fi configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidforworkenterprisewificonfiguration">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkenterprisewificonfiguration_list"/>
@@ -2758,6 +2915,7 @@
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_update"/>
+          <Item text="updateWindowsDeviceAccount" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount"/>
           <Item text="windowsDefenderScan action" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderscan" />
           <Item text="windowsDefenderUpdateSignatures" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
         </Item>
@@ -3681,6 +3839,7 @@
         <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_create"/>
         <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_delete"/>
         <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_update"/>
+        <Item text="revokeLicenses action" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_revokelicenses"/>
         <Item text="syncLicenses action" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_synclicenses"/>
       </Item>
         <Item text="Windows 10 enrollment completion page configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration">
@@ -3752,6 +3911,20 @@
           <Item text="List" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_list"/>
           <Item text="List role assignment" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_list_roleassignment"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_update"/>
+        </Item>
+        <Item text="Device and app management role assignment" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementroleassignment">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_update"/>
+        </Item>
+        <Item text="Device and app management role definition" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementroledefinition">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_update"/>
         </Item>
       </Item>
       <Item text="Telecom expense management" url="/en-us/api-reference/beta/resources/intune_tem_conceptual">
@@ -4292,6 +4465,16 @@
 		</Item>
 	</Item>
 	<Item text="Reports" url="/en-us/api-reference/beta/resources/report" >
+	  <Item text="Microsoft Teams device usage" url="/en-us/api-reference/beta/resources/microsoft_teams_device_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusageuserdetail" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusageusercounts" />
+		<Item text="Get distribution user counts" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusagedistributionusercounts" />
+	  </Item>
+	  <Item text="Microsoft Teams user activity" url="/en-us/api-reference/beta/resources/microsoft_teams_user_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivityusercounts" />
+	  </Item>
 	  <Item text="Outlook activity" url="/en-us/api-reference/beta/resources/email_activity_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getemailactivityuserdetail" />
 		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getemailactivitycounts" />

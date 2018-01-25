@@ -1,16 +1,14 @@
 # Remove rejectedSender
-
 Remove a user or group from the rejectedSenders list.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type                        | Permissions (from least to most privileged)  |
 |:---------------------------------------|:-------------------------------------------- |
-| Delegated (work or school account)     | Group.ReadWrite.All    
-| Delegated (personal Microsoft account) | Not supported
-| Application                            | Group.ReadWrite.All
+| Delegated (work or school account)     | Group.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -25,21 +23,17 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
 | Authorization  | Bearer {token}. Required. 
 
 ## Request body
-
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-
-##### Request
-
-Here are a couple of examples of the request.
+#### Request
+The following are a couple of examples of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "remove_rejectedSender_from_group"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{id}
@@ -47,9 +41,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=htt
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{id}
 ```
 
-##### Response
-
-Here is an example of the response. 
+#### Response
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -62,7 +55,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create rejectedSender",
+  "description": "Remove rejectedSender",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

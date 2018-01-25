@@ -14,10 +14,10 @@ This resource supports:
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |**Group management**| | |
-|[Create group](../api/group_post_groups.md) | [group](group.md) |Create a new group. It can be an Office 365 group, dynamic group or security group.|
+|[Create group](../api/group_post_groups.md) | [group](group.md) |Create a new group. It can be an Office 365 group, dynamic group, or security group.|
 |[Get group](../api/group_get.md) | [group](group.md) |Read properties of a group object.|
 |[List groups](../api/group_list.md) |[group](group.md) collection |List group objects and their properties.|
-|[Update group](../api/group_update.md) | [group](group.md) |Update the properties of a group object. |
+|[Update group](../api/group_update.md) | None |Update the properties of a group object. |
 |[Delete group](../api/group_delete.md) | None |Delete group object. |
 |[Add owner](../api/group_post_owners.md) |None| Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and mail-enabled security groups only).|
 |[List owners](../api/group_list_owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of the group from the **owners** navigation property.|
@@ -30,13 +30,21 @@ This resource supports:
 |[getMemberObjects](../api/group_getmemberobjects.md)|String collection|Return all of the groups that the group is a member of. The function is transitive. |
 |[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
 |**Calendar**| | |
-|[Create event](../api/group_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
-|[List events](../api/group_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
-|[List calendarView](../api/group_list_calendarview.md) |[Event](event.md) collection| Get a collection of events in a specified time window.|
+|[Create event](../api/group_post_events.md) |[event](event.md)| Create a new event by posting to the events collection.|
+|[Get event](../api/group_get_event.md) |[event](event.md)|Read properties of an event object.|
+|[List events](../api/group_list_events.md) |[event](event.md) collection| Get an event object collection.|
+|[Update event](../api/group_update_event.md) |None|Update the properties of an event object.|
+|[Delete event](../api/group_delete_event.md) |None|Delete event object.|
+|[List calendarView](../api/group_list_calendarview.md) |[event](event.md) collection| Get a collection of events in a specified time window.|
 |**Conversations**| | |
-|[Create conversation](../api/group_post_conversations.md) |[Conversation](conversation.md)| Create a new Conversation by posting to the conversations collection.|
-|[List conversations](../api/group_list_conversations.md) |[Conversation](conversation.md) collection| Get a Conversation object collection.|
-|[List threads](../api/group_list_threads.md) |[ConversationThread](conversationthread.md) collection| Get all the threads of a group.|
+|[Create conversation](../api/group_post_conversations.md) |[conversation](conversation.md)| Create a new conversation by posting to the conversations collection.|
+|[Get conversation](../api/group_get_conversation.md) |[conversation](conversation.md)| Read properties of a conversation object.|
+|[List conversations](../api/group_list_conversations.md) |[conversation](conversation.md) collection| Get a conversation object collection.|
+|[Delete conversation](../api/group_delete_conversation.md) |None|Delete conversation object.|
+|[Get thread](../api/group_get_thread.md) |[conversationThread](conversationthread.md)| Read properties of a thread object.|
+|[List threads](../api/group_list_threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads of a group.|
+|[Update thread](../api/group_update_thread.md) |None| Update properties of a thread object.|
+|[Delete thread](../api/group_delete_thread.md) |None| Delete thread object.|
 |[List acceptedSenders](../api/group_list_acceptedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the acceptedSenders list for this group.|
 |[Add acceptedSender](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| Add a User or Group to the acceptSenders collection.|
 |[Remove acceptedSender](../api/group_delete_acceptedsenders.md) |[directoryObject](directoryobject.md)| Remove a User or Group from the acceptedSenders collection.|
@@ -46,7 +54,7 @@ This resource supports:
 |[Create setting](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
 |[Get setting](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
 |[List settings](../api/groupsetting_list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
-|[Update setting](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
+|[Update setting](../api/groupsetting_update.md) | None | Update a setting object. |
 |[Delete setting](../api/groupsetting_delete.md) | None | Delete a setting object. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
@@ -104,15 +112,15 @@ This resource supports:
 |owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Limited to 10 owners. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups). Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo |
 |photos|[profilePhoto](profilephoto.md) collection| The profile photos owned by the group. Read-only. Nullable.|
-|planner|[Planner](planner.md)| Entry-point to Planner resource that might exist for a Unified Group.|
+|planner|[planner](planner.md)| Entry-point to Planner resource that might exist for a Unified Group.|
 |rejectedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
 |settings|[groupSetting](groupsetting.md) collection| Read-only. Nullable.|
-|sites|[site](site.md) collection|The list of SharePoint sites in this group. Access the default site with /sites/root.
+|sites|[site](site.md) collection|The list of SharePoint sites in this group. Access the default site with /sites/root.|
 |threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -57,21 +57,6 @@ times are returned in UTC.
 You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to 
 find out the time zone used when the event was created.
 
-### Get the event body in HTML or text format
-
-Event bodies can be in HTML or text format.
-
-You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** property in a `GET` request:
-
-- Specify `Prefer: outlook.body-content-type="text"` to get an event body returned in text format.
-- Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return the event body in HTML format.
-
-If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:
-
-- For text format requests: `Preference-Applied: outlook.body-content-type="text"`
-- For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`
-
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -107,8 +92,8 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Prefer: outlook.timezone | string | The default time zone for events in the response. Optional. |
-| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". Optional. |
+| Prefer: outlook.timezone | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
+| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
 
 ## Request body
 Do not supply a request body for this method.

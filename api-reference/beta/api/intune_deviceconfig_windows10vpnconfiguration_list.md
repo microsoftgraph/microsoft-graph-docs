@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3664
+Content-Length: 3749
 
 {
   "value": [
@@ -154,6 +154,9 @@ Content-Length: 3664
           ],
           "proxyServerUri": "Proxy Server Uri value"
         }
+      ],
+      "trustedNetworkDomains": [
+        "Trusted Network Domains value"
       ]
     }
   ]

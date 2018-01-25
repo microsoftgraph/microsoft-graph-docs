@@ -16,6 +16,8 @@ Singleton entity that acts as a container for all device management functionalit
 |:---|:---|:---|
 |id|String|Unique Identifier|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
+|maximumDepTokens|Int32|Maximum number of dep tokens allowed per-tenant.|
+|intuneAccountId|Guid|Intune Account Id for given tenant|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -51,7 +53,9 @@ Here is a JSON representation of the resource.
     "deviceComplianceCheckinThresholdDays": 1024,
     "isScheduledActionEnabled": true,
     "secureByDefault": true
-  }
+  },
+  "maximumDepTokens": 1024,
+  "intuneAccountId": "<Unknown Primitive Type Edm.Guid>"
 }
 ```
 

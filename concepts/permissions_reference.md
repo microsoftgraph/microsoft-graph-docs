@@ -261,6 +261,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |Permission |Display String |Description | Admin Consent Required |
 |:--------- |:------------- |:---------- | :--------------------- |
+|EduAdministration.Read | Read education app settings |  Allows the app to read education app settings on behalf of the user. | Yes |
+|EduAdministration.ReadWrite | Manage education app settings | Allows the app to manage education app settings on behalf of the user. | Yes |
 |EduAssignments.ReadBasic | Read users' class assignments without grades | Allows the app to read assignments without grades on behalf of the user | Yes |
 |EduAssignments.ReadWriteBasic | Read and write users' class assignments without grades | Allows the app to read and write assignments without grades on behalf of the user | Yes |
 |EduAssignments.Read | Read users' view of class assignments and their grades | Allows the app to read assignments and their grades on behalf of the user| Yes |

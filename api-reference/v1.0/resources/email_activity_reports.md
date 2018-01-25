@@ -1,6 +1,6 @@
 # Email activity reports
 
-You can get a high level view of email traffic within your organization from the Reports page. You can also drill into the Email Activity widget to understand the trends and details per user of the email activity in your organization.
+Use the email activity reports to get a high level view of email traffic within your organization. You can also drill into the Email Activity widget to understand the trends and details of the email activity per user in your organization.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).
 

@@ -24,6 +24,7 @@ The enrollmentProfile resource represents a collection of configurations which m
 |description|String|Description of the profile|
 |requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication|
 |configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment|
+|enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal.|
 
 ## Relationships
 None
@@ -42,7 +43,8 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "requiresUserAuthentication": true,
-  "configurationEndpointUrl": "String"
+  "configurationEndpointUrl": "String",
+  "enableAuthenticationViaCompanyPortal": true
 }
 ```
 

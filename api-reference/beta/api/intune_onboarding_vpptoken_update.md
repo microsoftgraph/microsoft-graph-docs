@@ -45,6 +45,7 @@ The following table shows the properties that are required when you create the [
 |token|String|The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.|
 |lastModifiedDateTime|DateTimeOffset|Last modification date time associated with the Apple Volume Purchase Program Token.|
 |state|String|Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`. Possible values are: `unknown`, `valid`, `expired`, `invalid`.|
+|tokenActionResults|[vppTokenActionResult](../resources/intune_onboarding_vpptokenactionresult.md) collection|The collection of statuses of the actions performed on the Apple Volume Purchase Program Token.|
 |lastSyncStatus|String|Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: `none`, `inProgress`, `completed`, `failed`. Possible values are: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Whether or not apps for the VPP token will be automatically updated.|
 |countryOrRegion|String|Whether or not apps for the VPP token will be automatically updated.|
@@ -60,7 +61,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/{vppTokenId}
 Content-type: application/json
-Content-length: 478
+Content-length: 840
 
 {
   "organizationName": "Organization Name value",
@@ -71,6 +72,16 @@ Content-length: 478
   "token": "Token value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "valid",
+  "tokenActionResults": [
+    {
+      "@odata.type": "microsoft.graph.vppTokenActionResult",
+      "actionName": "Action Name value",
+      "actionState": "inProgress",
+      "actionMessage": "Action Message value",
+      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+      "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
+    }
+  ],
   "lastSyncStatus": "inProgress",
   "automaticallyUpdateApps": true,
   "countryOrRegion": "Country Or Region value"
@@ -82,7 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 574
+Content-Length: 936
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -95,6 +106,16 @@ Content-Length: 574
   "token": "Token value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "valid",
+  "tokenActionResults": [
+    {
+      "@odata.type": "microsoft.graph.vppTokenActionResult",
+      "actionName": "Action Name value",
+      "actionState": "inProgress",
+      "actionMessage": "Action Message value",
+      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+      "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
+    }
+  ],
   "lastSyncStatus": "inProgress",
   "automaticallyUpdateApps": true,
   "countryOrRegion": "Country Or Region value"

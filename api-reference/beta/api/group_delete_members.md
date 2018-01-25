@@ -2,12 +2,10 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Use this API to remove a member from an Office 365 group, a security group or a mail-enabled security group 
-through the **members** navigation property. You can remove users or other groups.
+Use this API to remove a member from an Office 365 group, a security group, or a mail-enabled security group through the **members** navigation property. You can remove users or other groups.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
-
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -20,6 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /groups/{id}/members/{id}/$ref
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
@@ -29,12 +28,11 @@ DELETE /groups/{id}/members/{id}/$ref
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -44,8 +42,9 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/members/{id}/$ref
 ```
 In the request, specify the `id` of the directory object you want to remove after the $ref segment.
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

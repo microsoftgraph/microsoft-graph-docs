@@ -22,6 +22,7 @@ The Role Assignment resource. Role assignments tie together a role definition wi
 |description|String|Description of the Role Assignment.|
 |members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.|
 |scopeMembers|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
+|resourceScopes|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -46,6 +47,9 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "scopeMembers": [
+    "String"
+  ],
+  "resourceScopes": [
     "String"
   ]
 }
