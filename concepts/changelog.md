@@ -3,6 +3,15 @@
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
+## February 2018
+
+### Data Classification Service APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added new APIs.<br/>[Get classificationJobResponse](../api-reference/beta/api/classificationjobresponse_get.md)<br/>[List jobs](../api-reference/beta/api/dataclassificationservice_list_jobs.md)<br/>[List sensitiveTypes](../api-reference/beta/api/dataclassificationservice_list_sensitivetypes.md)<br/>[Classify File](../api-reference/beta/api/dataclassificationservice_post_classifyfile.md)<br/>[Classify Text](../api-reference/beta/api/dataclassificationservice_post_classifytext.md)<br/>[Get sensitiveType](../api-reference/beta/api/sensitivetype_get.md)|
+|Addition|Beta|Added new resources.<br/>[caasChildError](../api-reference/beta/resources/caaschilderror.md)<br/>[caasError](../api-reference/beta/resources/caaserror.md)<br/>[classificationJobResponse](../api-reference/beta/resources/classificationjobresponse.md)<br/>[dataClassificationService](../api-reference/beta/resources/dataclassificationservice.md)<br/>[detectedSensitiveContent](../api-reference/beta/resources/detectedsensitivecontent.md)<br/>[detectedSensitiveContentWrapper](../api-reference/beta/resources/detectedsensitivecontentwrapper.md)<br/>[fileClassificationRequest](../api-reference/beta/resources/fileclassificationrequest.md)<br/>[jobResponseBase](../api-reference/beta/resources/jobresponsebase.md)<br/>[sensitiveContentEvidence](../api-reference/beta/resources/sensitivecontentevidence.md)<br/>[sensitiveContentLocation](../api-reference/beta/resources/sensitivecontentlocation.md)<br/>[sensitiveType](../api-reference/beta/resources/sensitivetype.md)<br/>[textClassificationRequest](../api-reference/beta/resources/textclassificationrequest.md)|
+
 ## January 2018
 
 ### Education APIs
