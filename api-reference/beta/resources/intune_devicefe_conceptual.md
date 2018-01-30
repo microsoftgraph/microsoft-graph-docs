@@ -6,16 +6,8 @@
 
 The following Graph resources are available to perform device management operations in Intune:
 
-- [Apple push notification certificate](intune_devicefe_applepushnotificationcertificate.md)
-- [Detected app](intune_devicefe_detectedapp.md)
-- [Device category](intune_devicefe_devicecategory.md)
-- [Device management](intune_devicefe_devicemanagement.md)
-- [Device management script](intune_devicefe_devicemanagementscript.md)
-- [Device management script group assignment](intune_devicefe_devicemanagementscriptgroupassignment.md)
-- [Device management script state](intune_devicefe_devicemanagementscriptstate.md)
-- [Managed device](intune_devicefe_manageddevice.md)
-- [Managed device overview](intune_devicefe_manageddeviceoverview.md)
+- [Device management](intune_notification_devicemanagement.md)
+- [Device management](intune_remoteassistance_devicemanagement.md)
+- [Localized notification message](intune_notification_localizednotificationmessage.md)
+- [Notification message template](intune_notification_notificationmessagetemplate.md)
 - [Remote assistance partner](intune_remoteassistance_remoteassistancepartner.md)
-- [Remote action audit](intune_devicefe_remoteactionaudit.md)
-- [User](intune_devicefe_user.md)
-- [Windows management app](intune_devicefe_windowsmanagementapp.md)
