@@ -30,11 +30,12 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |passwordMinimumLength|Int32|Minimum password length. Valid values 4 to 16|
 |passwordRequiredType|String|Type of characters in password Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
-|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 255|
+|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
 |securityPreventInstallAppsFromUnknownSources|Boolean|Require that devices disallow installation of apps from unknown sources.|
 |securityDisableUsbDebugging|Boolean|Disable USB debugging on Android devices.|
 |requireAppVerify|Boolean|Require the Android Verify apps feature is turned on.|
+|securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
 |deviceThreatProtectionRequiredSecurityLevel|String|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |securityBlockJailbrokenDevices|Boolean|Devices must not be jailbroken or rooted.|
@@ -43,16 +44,20 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |minAndroidSecurityPatchLevel|String|Minimum Android security patch level.|
 |storageRequireEncryption|Boolean|Require encryption on Android devices.|
 |requireSafetyNetAttestationBasicIntegrity|Boolean|Require the device to pass the SafetyNet basic integrity check.|
+|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Require the device to pass the SafetyNet basic integrity check.|
 |requireSafetyNetAttestationCertifiedDevice|Boolean|Require the device to pass the SafetyNet certified device check.|
+|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Require the device to pass the SafetyNet certified device check.|
 |requireGooglePlayServices|Boolean|Require Google Play Services to be installed and enabled on the device.|
+|securityRequireGooglePlayServices|Boolean|Require Google Play Services to be installed and enabled on the device.|
 |requireUpToDateSecurityProviders|Boolean|Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.|
+|securityRequireUpToDateSecurityProviders|Boolean|Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.|
 |requireCompanyPortalAppIntegrity|Boolean|Require the device to pass the Company Portal client app runtime integrity check.|
+|securityRequireCompanyPortalAppIntegrity|Boolean|Require the device to pass the Company Portal client app runtime integrity check.|
 |conditionStatementId|String|Condition statement id.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|groupAssignments|[deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) collection|The list of group assignments for this compliance policy. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md) collection|The list of scheduled action for this rule Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |deviceStatuses|[deviceComplianceDeviceStatus](../resources/intune_deviceconfig_devicecompliancedevicestatus.md) collection|List of DeviceComplianceDeviceStatus. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |userStatuses|[deviceComplianceUserStatus](../resources/intune_deviceconfig_devicecomplianceuserstatus.md) collection|List of DeviceComplianceUserStatus. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
@@ -88,6 +93,7 @@ Here is a JSON representation of the resource.
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "requireAppVerify": true,
+  "securityRequireVerifyApps": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
   "securityBlockJailbrokenDevices": true,
@@ -96,10 +102,15 @@ Here is a JSON representation of the resource.
   "minAndroidSecurityPatchLevel": "String",
   "storageRequireEncryption": true,
   "requireSafetyNetAttestationBasicIntegrity": true,
+  "securityRequireSafetyNetAttestationBasicIntegrity": true,
   "requireSafetyNetAttestationCertifiedDevice": true,
+  "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "requireGooglePlayServices": true,
+  "securityRequireGooglePlayServices": true,
   "requireUpToDateSecurityProviders": true,
+  "securityRequireUpToDateSecurityProviders": true,
   "requireCompanyPortalAppIntegrity": true,
+  "securityRequireCompanyPortalAppIntegrity": true,
   "conditionStatementId": "String"
 }
 ```

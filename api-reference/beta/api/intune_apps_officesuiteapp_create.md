@@ -50,6 +50,7 @@ The following table shows the properties that are required when you create the o
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |autoAcceptEula|Boolean|The value to accept the EULA automatically on the enduser's device.|
 |productIds|String collection|The Product Ids that represent the Office365 Suite SKU. Possible values are: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail`, `projectProRetail`.|
 |excludedApps|[excludedApps](../resources/intune_apps_excludedapps.md)|The property to represent the Apps which are excluded from the selected Office365 Product Id.|
@@ -70,7 +71,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1293
+Content-length: 1329
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -90,6 +91,7 @@ Content-length: 1293
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "autoAcceptEula": true,
   "productIds": [
     "o365BusinessRetail"
@@ -125,7 +127,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1401
+Content-Length: 1437
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -147,6 +149,7 @@ Content-Length: 1401
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "autoAcceptEula": true,
   "productIds": [
     "o365BusinessRetail"

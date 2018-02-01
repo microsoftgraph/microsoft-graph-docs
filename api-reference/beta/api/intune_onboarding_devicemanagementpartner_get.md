@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 573
+Content-Length: 756
 
 {
   "value": {
@@ -62,7 +62,9 @@ Content-Length: 573
     "displayName": "Display Name value",
     "isConfigured": true,
     "whenPartnerDevicesWillBeRemoved": "2017-01-01T00:00:34.890321-08:00",
-    "whenPartnerDevicesWillBeMarkedAsNonCompliant": "2017-01-01T00:02:38.9066046-08:00"
+    "whenPartnerDevicesWillBeMarkedAsNonCompliant": "2017-01-01T00:02:38.9066046-08:00",
+    "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
+    "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
   }
 }
 ```

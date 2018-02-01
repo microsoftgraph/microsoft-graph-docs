@@ -51,6 +51,7 @@ The following table shows the properties that are required when you create the i
 |emailAddressSource|String|Email attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
 |hostName|String|Exchange location that (URL) that the native mail app connects to.|
 |requireSmime|Boolean|Indicates whether or not to use S/MIME certificate.|
+|smimeEnablePerMessageSwitch|Boolean|Indicates whether or not to allow unencrypted emails.|
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
 |usernameSource|String|Username attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
 
@@ -65,7 +66,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 676
+Content-length: 716
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -82,6 +83,7 @@ Content-length: 676
   "emailAddressSource": "primarySmtpAddress",
   "hostName": "Host Name value",
   "requireSmime": true,
+  "smimeEnablePerMessageSwitch": true,
   "requireSsl": true,
   "usernameSource": "primarySmtpAddress"
 }
@@ -92,7 +94,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 784
+Content-Length: 824
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -111,6 +113,7 @@ Content-Length: 784
   "emailAddressSource": "primarySmtpAddress",
   "hostName": "Host Name value",
   "requireSmime": true,
+  "smimeEnablePerMessageSwitch": true,
   "requireSsl": true,
   "usernameSource": "primarySmtpAddress"
 }

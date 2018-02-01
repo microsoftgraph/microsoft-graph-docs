@@ -19,11 +19,12 @@ actions such as copy, move, or send.
 
 Message bodies can be in HTML or text format.
 
-You can use well-known folder names such as `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` to identify certain mail folders that exist by default for all users.
+You can use well-known folder names such as  `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` to identify certain mail folders that exist by default for all users.
 For example, you can get messages in the Outlook **Sent Items** folder of the signed-in user, without first getting the folder ID:
 ```
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
+For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).
 
 ## Common use cases 
 

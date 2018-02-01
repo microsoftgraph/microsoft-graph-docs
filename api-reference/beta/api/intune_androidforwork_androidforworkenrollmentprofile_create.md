@@ -38,15 +38,19 @@ The following table shows the properties that are required when you create the a
 |:---|:---|:---|
 |accountId|String|Tenant GUID the enrollment profile belongs to.|
 |id|String|Unique GUID for the enrollment profile.|
-|name|String|Friendly name for the enrollment profile.|
+|name|String|(Deprecated) Display name for the enrollment profile.|
+|displayName|String|Display name for the enrollment profile.|
 |description|String|Description for the enrollment profile.|
 |createdDateTime|DateTimeOffset|Date time the enrollment profile was created.|
-|modifiedDateTime|DateTimeOffset|Date time the enrollment profile was last modified.|
+|modifiedDateTime|DateTimeOffset|(Deprecated) Date time the enrollment profile was last modified.|
+|lastModifiedDateTime|DateTimeOffset|Date time the enrollment profile was last modified.|
 |tokenValue|String|Value of the most recently created token for this enrollment profile.|
 |tokenExpirationDateTime|DateTimeOffset|Date time the most recently created token will expire.|
-|totalEnrollmentCount|Int32|Total number of Android devices that have enrolled using this enrollment profile.|
-|isTokenActive|Boolean|True if the token is still active; false it if has expired or been revoked.|
-|qrCode|String|String used to generate a QR code for the token.|
+|totalEnrollmentCount|Int32|(Deprecated) Total number of Android devices that have enrolled using this enrollment profile.|
+|enrolledDeviceCount|Int32|Total number of Android devices that have enrolled using this enrollment profile.|
+|qrCode|String|(Deprecated) String used to generate a QR code for the token.|
+|qrCodeContent|String|String used to generate a QR code for the token.|
+|qrCodeImage|[mimeContent](../resources/intune_androidforwork_mimecontent.md)|String used to generate a QR code for the token.|
 
 
 
@@ -59,18 +63,26 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkEnrollmentProfiles
 Content-type: application/json
-Content-length: 364
+Content-length: 645
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkEnrollmentProfile",
   "accountId": "Account Id value",
   "name": "Name value",
+  "displayName": "Display Name value",
   "description": "Description value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "tokenValue": "Token Value value",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
   "totalEnrollmentCount": 4,
-  "isTokenActive": true,
-  "qrCode": "Qr Code value"
+  "enrolledDeviceCount": 3,
+  "qrCode": "Qr Code value",
+  "qrCodeContent": "Qr Code Content value",
+  "qrCodeImage": {
+    "@odata.type": "microsoft.graph.mimeContent",
+    "type": "Type value",
+    "value": "dmFsdWU="
+  }
 }
 ```
 
@@ -79,21 +91,29 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 532
+Content-Length: 813
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkEnrollmentProfile",
   "accountId": "Account Id value",
   "id": "e6742553-2553-e674-5325-74e6532574e6",
   "name": "Name value",
+  "displayName": "Display Name value",
   "description": "Description value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "modifiedDateTime": "2017-01-01T00:00:22.8983556-08:00",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "tokenValue": "Token Value value",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
   "totalEnrollmentCount": 4,
-  "isTokenActive": true,
-  "qrCode": "Qr Code value"
+  "enrolledDeviceCount": 3,
+  "qrCode": "Qr Code value",
+  "qrCodeContent": "Qr Code Content value",
+  "qrCodeImage": {
+    "@odata.type": "microsoft.graph.mimeContent",
+    "type": "Type value",
+    "value": "dmFsdWU="
+  }
 }
 ```
 

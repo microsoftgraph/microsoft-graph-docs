@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app
 ```
 
 ## Request headers
@@ -53,16 +52,18 @@ The following table shows the properties that are required when you create the [
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |appAvailability|String|The Application's availability. Inherited from [managedApp](../resources/intune_apps_managedapp.md) Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
 |committedContentVersion|String|The internal committed content version. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
-|identityVersion|String|The identity version. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
+|packageId|String|The package identifier.|
 |identityName|String|The Identity Name.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |versionName|String|The version name of managed Android Line of Business (LoB) app.|
 |versionCode|String|The version code of managed Android Line of Business (LoB) app.|
+|identityVersion|String|The identity version.|
 
 
 
@@ -75,7 +76,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1198
+Content-length: 1270
 
 {
   "displayName": "Display Name value",
@@ -94,12 +95,13 @@ Content-length: 1198
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
+  "packageId": "Package Id value",
   "identityName": "Identity Name value",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
@@ -113,7 +115,8 @@ Content-length: 1198
     "v5_1": true
   },
   "versionName": "Version Name value",
-  "versionCode": "Version Code value"
+  "versionCode": "Version Code value",
+  "identityVersion": "Identity Version value"
 }
 ```
 
@@ -122,7 +125,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1365
+Content-Length: 1437
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -144,12 +147,13 @@ Content-Length: 1365
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
+  "packageId": "Package Id value",
   "identityName": "Identity Name value",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
@@ -163,7 +167,8 @@ Content-Length: 1365
     "v5_1": true
   },
   "versionName": "Version Name value",
-  "versionCode": "Version Code value"
+  "versionCode": "Version Code value",
+  "identityVersion": "Identity Version value"
 }
 ```
 

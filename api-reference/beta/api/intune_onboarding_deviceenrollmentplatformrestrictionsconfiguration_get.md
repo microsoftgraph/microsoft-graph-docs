@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2235
+Content-Length: 2536
 
 {
   "value": {
@@ -97,6 +97,13 @@ Content-Length: 2235
       "osMaximumVersion": "Os Maximum Version value"
     },
     "macRestriction": {
+      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": "Os Minimum Version value",
+      "osMaximumVersion": "Os Maximum Version value"
+    },
+    "macOSRestriction": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
       "platformBlocked": true,
       "personalDeviceEnrollmentBlocked": true,

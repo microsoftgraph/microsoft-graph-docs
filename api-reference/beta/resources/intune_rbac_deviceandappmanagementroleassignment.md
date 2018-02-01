@@ -23,9 +23,9 @@ Inherits from [roleAssignment](../resources/intune_rbac_roleassignment.md)
 |id|String|Key of the entity. This is read-only and automatically generated. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |displayName|String|The display or friendly name of the role Assignment. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |description|String|Description of the Role Assignment. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
-|members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |scopeMembers|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |resourceScopes|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -46,13 +46,13 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
-  "members": [
-    "String"
-  ],
   "scopeMembers": [
     "String"
   ],
   "resourceScopes": [
+    "String"
+  ],
+  "members": [
     "String"
   ]
 }

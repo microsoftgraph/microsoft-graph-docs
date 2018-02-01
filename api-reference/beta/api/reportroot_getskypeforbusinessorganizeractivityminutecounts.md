@@ -26,7 +26,7 @@ GET /reports/getSkypeForBusinessOrganizerActivityMinuteCounts(period='{period_va
 
 ## Request parameters
 
-In the request URL, provide the following query parameter with a valid value.
+In the request URL, provide the following parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |

@@ -49,15 +49,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 434
+Content-Length: 330
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windowsPrivacyDataAccessControlItem",
     "id": "03b15556-5556-03b1-5655-b1035655b103",
-    "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-    },
     "accessLevel": "forceAllow",
     "dataCategory": "accountInfo",
     "appPackageFamilyName": "App Package Family Name value",

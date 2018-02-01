@@ -38,7 +38,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |featureUpdatesPaused|Boolean|Pause Feature Updates|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Quality Updates Pause Expiry datetime|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Feature Updates Pause Expiry datetime|
-|businessReadyUpdatesOnly|String|Business ready updates only or regular updates allowed too Possible values are: `userDefined`, `all`, `businessReadyOnly`.|
+|businessReadyUpdatesOnly|String|Determines which branch devices will receive their updates from Possible values are: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
 |previewBuildSetting|String|Set the insider build control in the advanced options for Windows Update Possible values are: `userDefined`, `allowed`, `notAllowed`.|
 
 ## Relationships

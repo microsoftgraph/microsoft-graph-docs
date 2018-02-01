@@ -48,7 +48,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |nfcBlocked|Boolean|Indicates whether or not to block Near-Field Communication.|
 |passwordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
 |passwordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents.|
-|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 255|
+|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordMinimumLength|Int32|Minimum length of passwords. Valid values 4 to 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
@@ -75,6 +75,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |appsLaunchBlockList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps which are blocked from being launched on the KNOX device. This collection can contain a maximum of 500 elements.|
 |appsHideList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps to be hidden on the KNOX device. This collection can contain a maximum of 500 elements.|
 |requireAppVerify|Boolean|Require the Android Verify apps feature is turned on.|
+|securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -192,7 +193,8 @@ Here is a JSON representation of the resource.
       "appId": "String"
     }
   ],
-  "requireAppVerify": true
+  "requireAppVerify": true,
+  "securityRequireVerifyApps": true
 }
 ```
 

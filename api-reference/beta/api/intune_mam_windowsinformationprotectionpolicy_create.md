@@ -75,6 +75,7 @@ The following table shows the properties that are required when you create the w
 |numberOfPastPinsRemembered|Int32|Integer value that specifies the number of past PINs that can be associated to a user account that can't be reused. The largest number you can configure for this policy setting is 50. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then storage of previous PINs is not required. This node was added in Windows 10, version 1511. Default is 0.|
 |passwordMaximumAttemptCount|Int32|The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality. Range is an integer X where 4 <= X <= 16 for desktop and 0 <= X <= 999 for mobile devices.|
 |minutesOfInactivityBeforeDeviceLock|Int32|Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked.   Range is an integer X where 0 <= X <= 999.|
+|daysWithoutContactBeforeUnenroll|Int32|Offline interval before app data is wiped (days) |
 
 
 
@@ -87,7 +88,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionPolicies
 Content-type: application/json
-Content-length: 4424
+Content-length: 4466
 
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionPolicy",
@@ -223,7 +224,8 @@ Content-length: 4424
   "pinExpirationDays": 1,
   "numberOfPastPinsRemembered": 10,
   "passwordMaximumAttemptCount": 11,
-  "minutesOfInactivityBeforeDeviceLock": 3
+  "minutesOfInactivityBeforeDeviceLock": 3,
+  "daysWithoutContactBeforeUnenroll": 0
 }
 ```
 
@@ -232,7 +234,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4532
+Content-Length: 4574
 
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionPolicy",
@@ -370,7 +372,8 @@ Content-Length: 4532
   "pinExpirationDays": 1,
   "numberOfPastPinsRemembered": 10,
   "passwordMaximumAttemptCount": 11,
-  "minutesOfInactivityBeforeDeviceLock": 3
+  "minutesOfInactivityBeforeDeviceLock": 3,
+  "daysWithoutContactBeforeUnenroll": 0
 }
 ```
 

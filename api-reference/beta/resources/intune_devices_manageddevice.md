@@ -11,12 +11,12 @@ Devices that are managed or pre-enrolled through Intune
 |[Get managedDevice](../api/intune_devices_manageddevice_get.md)|[managedDevice](../resources/intune_devices_manageddevice.md)|Read properties and relationships of the [managedDevice](../resources/intune_devices_manageddevice.md) object.|
 |[Update managedDevice](../api/intune_devices_manageddevice_update.md)|[managedDevice](../resources/intune_devices_manageddevice.md)|Update the properties of a [managedDevice](../resources/intune_devices_manageddevice.md) object.|
 |[executeAction action](../api/intune_devices_manageddevice_executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune_devices_bulkmanageddeviceactionresult.md)|Not yet documented|
+|[enableLostMode action](../api/intune_devices_manageddevice_enablelostmode.md)|None|Enable lost mode|
 |[retire action](../api/intune_devices_manageddevice_retire.md)|None|Retire a device|
 |[wipe action](../api/intune_devices_manageddevice_wipe.md)|None|Wipe a device|
 |[resetPasscode action](../api/intune_devices_manageddevice_resetpasscode.md)|None|Reset passcode|
 |[remoteLock action](../api/intune_devices_manageddevice_remotelock.md)|None|Remote lock|
 |[requestRemoteAssistance action](../api/intune_devices_manageddevice_requestremoteassistance.md)|None|Request remote assistance|
-|[enableLostMode action](../api/intune_devices_manageddevice_enablelostmode.md)|None|Enable lost mode|
 |[disableLostMode action](../api/intune_devices_manageddevice_disablelostmode.md)|None|Disable lost mode|
 |[locateDevice action](../api/intune_devices_manageddevice_locatedevice.md)|None|Locate a device|
 |[bypassActivationLock action](../api/intune_devices_manageddevice_bypassactivationlock.md)|None|Bypass activation lock|
@@ -30,6 +30,7 @@ Devices that are managed or pre-enrolled through Intune
 |[windowsDefenderScan action](../api/intune_devices_manageddevice_windowsdefenderscan.md)|None|Not yet documented|
 |[windowsDefenderUpdateSignatures action](../api/intune_devices_manageddevice_windowsdefenderupdatesignatures.md)|None|Not yet documented|
 |[updateWindowsDeviceAccount action](../api/intune_devices_manageddevice_updatewindowsdeviceaccount.md)|None|Not yet documented|
+|[revokeAppleVppLicenses action](../api/intune_devices_manageddevice_revokeapplevpplicenses.md)|None|Revoke all Apple Vpp licenses for a device|
 
 ## Properties
 |Property|Type|Description|
@@ -45,21 +46,23 @@ Devices that are managed or pre-enrolled through Intune
 |lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune.|
 |chassisType|String|Chassis type of the device. Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc.|
-|deviceType|String|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `windowsBlue`, `windowsPhoneBlue`, `blackberry`, `palm`, `fakeDevice`, `unknown`.|
+|deviceType|String|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |complianceState|String|Compliance state of the device. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted.|
-|managementAgent|String|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`.|
+|managementAgent|String|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |osVersion|String|Operating system version of the device.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated.|
 |easDeviceId|String|Exchange ActiveSync Id of the device.|
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device.|
 |aadRegistered|Boolean|Whether the device is Azure Active Directory registered.|
+|azureADRegistered|Boolean|Whether the device is Azure Active Directory registered.|
 |deviceEnrollmentType|String|Enrollment type of the device. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |lostModeState|String|Indicates if Lost mode is enabled or disabled Possible values are: `disabled`, `enabled`.|
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed.|
 |emailAddress|String|Email(s) for the user associated with the device|
 |azureActiveDirectoryDeviceId|String|The unique identifier for the Azure Active Directory device. Read only.|
-|deviceRegistrationState|String|Device registration state. Possible values are: `notRegistered`, `smsidConflict`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `resetCert`, `notRegisteredPendingEnrollment`, `unknown`.|
+|azureADDeviceId|String|The unique identifier for the Azure Active Directory device. Read only.|
+|deviceRegistrationState|String|Device registration state. Possible values are: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |deviceCategoryDisplayName|String|Device category display name|
 |isSupervised|Boolean|Device supervised status|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Last time the device contacted Exchange.|
@@ -67,6 +70,7 @@ Devices that are managed or pre-enrolled through Intune
 |exchangeAccessStateReason|String|The reason for the device's access state in Exchange. Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device.|
 |remoteAssistanceSessionErrorString|String|An error string that identifies issues when creating Remote Assistance session objects.|
+|remoteAssistanceSessionErrorDetails|String|An error string that identifies issues when creating Remote Assistance session objects.|
 |isEncrypted|Boolean|Device encryption status|
 |userPrincipalName|String|Device user principal name|
 |model|String|Model of the device|
@@ -165,11 +169,13 @@ Here is a JSON representation of the resource.
   "easDeviceId": "String",
   "easActivationDateTime": "String (timestamp)",
   "aadRegistered": true,
+  "azureADRegistered": true,
   "deviceEnrollmentType": "String",
   "lostModeState": "String",
   "activationLockBypassCode": "String",
   "emailAddress": "String",
   "azureActiveDirectoryDeviceId": "String",
+  "azureADDeviceId": "String",
   "deviceRegistrationState": "String",
   "deviceCategoryDisplayName": "String",
   "isSupervised": true,
@@ -178,6 +184,7 @@ Here is a JSON representation of the resource.
   "exchangeAccessStateReason": "String",
   "remoteAssistanceSessionUrl": "String",
   "remoteAssistanceSessionErrorString": "String",
+  "remoteAssistanceSessionErrorDetails": "String",
   "isEncrypted": true,
   "userPrincipalName": "String",
   "model": "String",

@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4823
+Content-Length: 4867
 
 {
   "value": {
@@ -188,7 +188,8 @@ Content-Length: 4823
     "pinExpirationDays": 1,
     "numberOfPastPinsRemembered": 10,
     "passwordMaximumAttemptCount": 11,
-    "minutesOfInactivityBeforeDeviceLock": 3
+    "minutesOfInactivityBeforeDeviceLock": 3,
+    "daysWithoutContactBeforeUnenroll": 0
   }
 }
 ```

@@ -33,6 +33,7 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune_onboarding_dev
 |androidRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune_onboarding_deviceenrollmentplatformrestriction.md)|Not yet documented|
 |androidForWorkRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune_onboarding_deviceenrollmentplatformrestriction.md)|Not yet documented|
 |macRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune_onboarding_deviceenrollmentplatformrestriction.md)|Not yet documented|
+|macOSRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune_onboarding_deviceenrollmentplatformrestriction.md)|Not yet documented|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -93,6 +94,13 @@ Here is a JSON representation of the resource.
     "osMaximumVersion": "String"
   },
   "macRestriction": {
+    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+    "platformBlocked": true,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "String",
+    "osMaximumVersion": "String"
+  },
+  "macOSRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,

@@ -50,10 +50,10 @@ The following table shows the properties that are required when you create the w
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |applicableArchitectures|String|The Windows architecture(s) for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
 |identityName|String|The Identity Name.|
 |identityPublisherHash|String|The Identity Publisher Hash.|
@@ -61,6 +61,7 @@ The following table shows the properties that are required when you create the w
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |phoneProductIdentifier|String|The Phone Product Identifier.|
 |phonePublisherId|String|The Phone Publisher Id.|
+|identityVersion|String|The identity version.|
 
 
 
@@ -73,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1291
+Content-length: 1327
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppX",
@@ -93,10 +94,10 @@ Content-length: 1291
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
   "applicableArchitectures": "x86",
   "identityName": "Identity Name value",
   "identityPublisherHash": "Identity Publisher Hash value",
@@ -108,7 +109,8 @@ Content-length: 1291
     "v10_0": true
   },
   "phoneProductIdentifier": "Phone Product Identifier value",
-  "phonePublisherId": "Phone Publisher Id value"
+  "phonePublisherId": "Phone Publisher Id value",
+  "identityVersion": "Identity Version value"
 }
 ```
 
@@ -117,7 +119,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1399
+Content-Length: 1435
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppX",
@@ -139,10 +141,10 @@ Content-Length: 1399
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
   "applicableArchitectures": "x86",
   "identityName": "Identity Name value",
   "identityPublisherHash": "Identity Publisher Hash value",
@@ -154,7 +156,8 @@ Content-Length: 1399
     "v10_0": true
   },
   "phoneProductIdentifier": "Phone Product Identifier value",
-  "phonePublisherId": "Phone Publisher Id value"
+  "phonePublisherId": "Phone Publisher Id value",
+  "identityVersion": "Identity Version value"
 }
 ```
 

@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 561
+Content-Length: 597
 
 {
   "value": {
@@ -64,7 +64,8 @@ Content-Length: 561
       "@odata.type": "microsoft.graph.outOfBoxExperienceSettings",
       "hidePrivacySettings": true,
       "hideEULA": true,
-      "userType": "standard"
+      "userType": "standard",
+      "deviceUsageType": "shared"
     }
   }
 }

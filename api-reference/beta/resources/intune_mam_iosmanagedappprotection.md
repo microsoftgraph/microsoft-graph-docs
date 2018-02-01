@@ -56,6 +56,7 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |appDataEncryptionType|String|Type of encryption which should be used for data in a managed app. Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
+|faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -112,7 +113,8 @@ Here is a JSON representation of the resource.
   "isAssigned": true,
   "appDataEncryptionType": "String",
   "minimumRequiredSdkVersion": "String",
-  "deployedAppCount": 1024
+  "deployedAppCount": 1024,
+  "faceIdBlocked": true
 }
 ```
 

@@ -37,6 +37,7 @@ Here is a JSON representation of the resource.
   "deviceLocation": {
     "@odata.type": "microsoft.graph.deviceGeoLocation",
     "lastCollectedDateTimeUtc": "String (timestamp)",
+    "lastCollectedDateTime": "String (timestamp)",
     "longitude": "<Unknown Primitive Type Edm.Double>",
     "latitude": "<Unknown Primitive Type Edm.Double>",
     "altitude": "<Unknown Primitive Type Edm.Double>",

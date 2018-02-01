@@ -16,6 +16,7 @@ Represents an Azure Active Directory user object.
 |[getManagedAppDiagnosticStatuses function](../api/intune_mam_user_getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md) collection|Gets diagnostics validation status for a given user.|
 |[getManagedAppPolicies function](../api/intune_mam_user_getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Gets app restrictions for a given user.|
 |[wipeManagedAppRegistrationByDeviceTag action](../api/intune_mam_user_wipemanagedappregistrationbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
+|[wipeManagedAppRegistrationsByDeviceTag action](../api/intune_mam_user_wipemanagedappregistrationsbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
 
 ## Properties
 |Property|Type|Description|

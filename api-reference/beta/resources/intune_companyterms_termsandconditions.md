@@ -20,6 +20,7 @@ A termsAndConditions entity represents the metadata and contents of a given Term
 |id|String|Unique identifier of the T&C policy.|
 |createdDateTime|DateTimeOffset|DateTime the object was created.|
 |modifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
 |displayName|String|Administrator-supplied name for the T&C policy. |
 |description|String|Administrator-supplied description of the T&C policy.|
 |title|String|Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&C policy.|
@@ -48,6 +49,7 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
   "displayName": "String",
   "description": "String",
   "title": "String",

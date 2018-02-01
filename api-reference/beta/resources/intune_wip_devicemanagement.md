@@ -20,6 +20,7 @@ Singleton entity that acts as a container for all device management functionalit
 |Relationship|Type|Description|
 |:---|:---|:---|
 |windowsInformationProtectionAppLearningSummaries|[windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) collection|The windows information protection app learning summaries.|
+|windowsInformationProtectionNetworkLearningSummaries|[windowsInformationProtectionNetworkLearningSummary](../resources/intune_wip_windowsinformationprotectionnetworklearningsummary.md) collection|The windows information protection network learning summaries.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

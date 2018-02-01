@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 536
+Content-Length: 596
 
 {
   "value": [
@@ -61,7 +61,8 @@ Content-Length: 536
       "iosDeviceBlockedOnMissingPartnerData": true,
       "partnerUnsupportedOsVersionBlocked": true,
       "iosEnabled": true,
-      "partnerUnresponsivenessThresholdInDays": 6
+      "partnerUnresponsivenessThresholdInDays": 6,
+      "allowPartnerToCollectIOSApplicationMetadata": true
     }
   ]
 }

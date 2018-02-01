@@ -43,7 +43,7 @@ The following table shows the properties that are required when you create the i
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |passcodeBlockSimple|Boolean|Indicates whether or not to block simple passcodes.|
-|passcodeExpirationDays|Int32|Number of days before the passcode expires. Valid values 1 to 255|
+|passcodeExpirationDays|Int32|Number of days before the passcode expires. Valid values 1 to 65535|
 |passcodeMinimumLength|Int32|Minimum length of passcode. Valid values 4 to 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a passcode is required.|
 |passcodePreviousPasscodeBlockCount|Int32|Number of previous passcodes to block. Valid values 1 to 24|

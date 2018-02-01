@@ -20,8 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/roleAssignments/{roleAssignmentId}
-GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}
+GET /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 ```
 
 ## Optional query parameters
@@ -42,7 +41,7 @@ If successful, this method returns a `200 OK` response code and [deviceAndAppMan
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{roleAssignmentId}
+GET https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 ```
 
 ### Response
@@ -58,14 +57,14 @@ Content-Length: 406
     "id": "a12e8ebb-8ebb-a12e-bb8e-2ea1bb8e2ea1",
     "displayName": "Display Name value",
     "description": "Description value",
-    "members": [
-      "Members value"
-    ],
     "scopeMembers": [
       "Scope Members value"
     ],
     "resourceScopes": [
       "Resource Scopes value"
+    ],
+    "members": [
+      "Members value"
     ]
   }
 }

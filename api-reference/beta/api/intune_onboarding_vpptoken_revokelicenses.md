@@ -10,7 +10,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Determine scopes **|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -30,7 +30,15 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 |Accept|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|notifyManagedDevices|Boolean|Not yet documented|
+
+
 
 ## Response
 If successful, this action returns a `204 No Content` response code.
@@ -40,6 +48,13 @@ If successful, this action returns a `204 No Content` response code.
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
+
+Content-type: application/json
+Content-length: 36
+
+{
+  "notifyManagedDevices": true
+}
 ```
 
 ### Response

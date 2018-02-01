@@ -70,7 +70,8 @@ Here is a JSON representation of the resource.
       "type": "String",
       "value": "binary"
     },
-    "showNameNextToLogo": true
+    "showNameNextToLogo": true,
+    "showDisplayNameNextToLogo": true
   }
 }
 ```

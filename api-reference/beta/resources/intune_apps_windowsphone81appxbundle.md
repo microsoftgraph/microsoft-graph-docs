@@ -34,10 +34,10 @@ Inherits from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.m
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |applicableArchitectures|String|The Windows architecture(s) for which this app can run on. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md) Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
 |identityName|String|The Identity Name. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
 |identityPublisherHash|String|The Identity Publisher Hash. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
@@ -45,13 +45,13 @@ Inherits from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.m
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
 |phoneProductIdentifier|String|The Phone Product Identifier. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
 |phonePublisherId|String|The Phone Publisher Id. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
+|identityVersion|String|The identity version. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
 |appXPackageInformationList|[windowsPackageInformation](../resources/intune_apps_windowspackageinformation.md) collection|The list of AppX Package Information.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|groupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |assignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -87,10 +87,10 @@ Here is a JSON representation of the resource.
   "developer": "String",
   "notes": "String",
   "uploadState": 1024,
+  "publishingState": "String",
   "committedContentVersion": "String",
   "fileName": "String",
   "size": 1024,
-  "identityVersion": "String",
   "applicableArchitectures": "String",
   "identityName": "String",
   "identityPublisherHash": "String",
@@ -103,6 +103,7 @@ Here is a JSON representation of the resource.
   },
   "phoneProductIdentifier": "String",
   "phonePublisherId": "String",
+  "identityVersion": "String",
   "appXPackageInformationList": [
     {
       "@odata.type": "microsoft.graph.windowsPackageInformation",

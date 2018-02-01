@@ -36,13 +36,11 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent re-use of. Valid values 0 to 24|
 |osMinimumVersion|String|Minimum Windows 8.1 version.|
 |osMaximumVersion|String|Maximum Windows 8.1 version.|
-|minimumUpdateAutoInstallClassification|String|The minimum update classification to install automatically. Possible values are: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
 |storageRequireEncryption|Boolean|Indicates whether or not to require encryption on a windows 8.1 device.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|groupAssignments|[deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) collection|The list of group assignments for this compliance policy. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md) collection|The list of scheduled action for this rule Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |deviceStatuses|[deviceComplianceDeviceStatus](../resources/intune_deviceconfig_devicecompliancedevicestatus.md) collection|List of DeviceComplianceDeviceStatus. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |userStatuses|[deviceComplianceUserStatus](../resources/intune_deviceconfig_devicecomplianceuserstatus.md) collection|List of DeviceComplianceUserStatus. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
@@ -78,7 +76,6 @@ Here is a JSON representation of the resource.
   "passwordPreviousPasswordBlockCount": 1024,
   "osMinimumVersion": "String",
   "osMaximumVersion": "String",
-  "minimumUpdateAutoInstallClassification": "String",
   "storageRequireEncryption": true
 }
 ```

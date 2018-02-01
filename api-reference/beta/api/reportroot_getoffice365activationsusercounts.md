@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/getOffice365ActivationsUserCounts
 ```
 
-## Request parameters
+## Query parameters
 
 This method supports the `$format` [OData query parameter](../../../concepts/query_parameters.md) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
 

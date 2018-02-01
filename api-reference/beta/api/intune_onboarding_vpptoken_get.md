@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1001
+Content-Length: 948
 
 {
   "value": {
@@ -67,8 +67,7 @@ Content-Length: 1001
       {
         "@odata.type": "microsoft.graph.vppTokenActionResult",
         "actionName": "Action Name value",
-        "actionState": "inProgress",
-        "actionMessage": "Action Message value",
+        "actionState": "pending",
         "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
         "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
       }

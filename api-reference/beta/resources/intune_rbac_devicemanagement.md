@@ -10,8 +10,8 @@ Singleton entity that acts as a container for all device management functionalit
 |:---|:---|:---|
 |[Get deviceManagement](../api/intune_rbac_devicemanagement_get.md)|[deviceManagement](../resources/intune_rbac_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_rbac_devicemanagement.md) object.|
 |[Update deviceManagement](../api/intune_rbac_devicemanagement_update.md)|[deviceManagement](../resources/intune_rbac_devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune_rbac_devicemanagement.md) object.|
-|[getEffectivePermissions function](../api/intune_rbac_devicemanagement_geteffectivepermissions.md)|String collection|Retrieves the effective permissions of the currently authenticated user|
-|[getEffectivePermissions function](../api/intune_rbac_devicemanagement_geteffectivepermissions.md)|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|Retrieves the effective permissions of the currently authenticated user|
+|[getEffectivePermissions function](../api/intune_rbac_devicemanagement_geteffectivepermissions.md)|String collection|Not yet documented|
+|[getEffectivePermissions function](../api/intune_rbac_devicemanagement_geteffectivepermissions.md)|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -22,7 +22,7 @@ Singleton entity that acts as a container for all device management functionalit
 |Relationship|Type|Description|
 |:---|:---|:---|
 |roleDefinitions|[roleDefinition](../resources/intune_rbac_roledefinition.md) collection|The Role Definitions.|
-|roleAssignments|[roleAssignment](../resources/intune_rbac_roleassignment.md) collection|The Role Assignments.|
+|roleAssignments|[deviceAndAppManagementRoleAssignment](../resources/intune_rbac_deviceandappmanagementroleassignment.md) collection|The Role Assignments.|
 |resourceOperations|[resourceOperation](../resources/intune_rbac_resourceoperation.md) collection|The Resource Operations.|
 
 ## JSON Representation

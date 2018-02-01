@@ -25,7 +25,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(date=2017-09-01)
 
 ## Request parameters
 
-In the request URL, provide the chosen query parameter with a valid value.
+In the request URL, provide one of the following parameters with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |

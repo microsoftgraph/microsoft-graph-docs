@@ -50,21 +50,23 @@ The following table shows the properties that are required when you create the [
 |lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune.|
 |chassisType|String|Chassis type of the device. Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc.|
-|deviceType|String|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `windowsBlue`, `windowsPhoneBlue`, `blackberry`, `palm`, `fakeDevice`, `unknown`.|
+|deviceType|String|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |complianceState|String|Compliance state of the device. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted.|
-|managementAgent|String|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`.|
+|managementAgent|String|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |osVersion|String|Operating system version of the device.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated.|
 |easDeviceId|String|Exchange ActiveSync Id of the device.|
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device.|
 |aadRegistered|Boolean|Whether the device is Azure Active Directory registered.|
+|azureADRegistered|Boolean|Whether the device is Azure Active Directory registered.|
 |deviceEnrollmentType|String|Enrollment type of the device. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |lostModeState|String|Indicates if Lost mode is enabled or disabled Possible values are: `disabled`, `enabled`.|
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed.|
 |emailAddress|String|Email(s) for the user associated with the device|
 |azureActiveDirectoryDeviceId|String|The unique identifier for the Azure Active Directory device. Read only.|
-|deviceRegistrationState|String|Device registration state. Possible values are: `notRegistered`, `smsidConflict`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `resetCert`, `notRegisteredPendingEnrollment`, `unknown`.|
+|azureADDeviceId|String|The unique identifier for the Azure Active Directory device. Read only.|
+|deviceRegistrationState|String|Device registration state. Possible values are: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |deviceCategoryDisplayName|String|Device category display name|
 |isSupervised|Boolean|Device supervised status|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Last time the device contacted Exchange.|
@@ -72,6 +74,7 @@ The following table shows the properties that are required when you create the [
 |exchangeAccessStateReason|String|The reason for the device's access state in Exchange. Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device.|
 |remoteAssistanceSessionErrorString|String|An error string that identifies issues when creating Remote Assistance session objects.|
+|remoteAssistanceSessionErrorDetails|String|An error string that identifies issues when creating Remote Assistance session objects.|
 |isEncrypted|Boolean|Device encryption status|
 |userPrincipalName|String|Device user principal name|
 |model|String|Model of the device|
@@ -103,7 +106,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 6114
+Content-length: 6281
 
 {
   "userId": "User Id value",
@@ -165,12 +168,14 @@ Content-length: 6114
   "easDeviceId": "Eas Device Id value",
   "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
   "aadRegistered": true,
+  "azureADRegistered": true,
   "deviceEnrollmentType": "userEnrollment",
   "lostModeState": "enabled",
   "activationLockBypassCode": "Activation Lock Bypass Code value",
   "emailAddress": "Email Address value",
   "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
-  "deviceRegistrationState": "smsidConflict",
+  "azureADDeviceId": "Azure ADDevice Id value",
+  "deviceRegistrationState": "registered",
   "deviceCategoryDisplayName": "Device Category Display Name value",
   "isSupervised": true,
   "exchangeLastSuccessfulSyncDateTime": "2017-01-01T00:00:45.8803083-08:00",
@@ -178,6 +183,7 @@ Content-length: 6114
   "exchangeAccessStateReason": "unknown",
   "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
   "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
+  "remoteAssistanceSessionErrorDetails": "Remote Assistance Session Error Details value",
   "isEncrypted": true,
   "userPrincipalName": "User Principal Name value",
   "model": "Model value",
@@ -247,7 +253,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6215
+Content-Length: 6382
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -311,12 +317,14 @@ Content-Length: 6215
   "easDeviceId": "Eas Device Id value",
   "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
   "aadRegistered": true,
+  "azureADRegistered": true,
   "deviceEnrollmentType": "userEnrollment",
   "lostModeState": "enabled",
   "activationLockBypassCode": "Activation Lock Bypass Code value",
   "emailAddress": "Email Address value",
   "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
-  "deviceRegistrationState": "smsidConflict",
+  "azureADDeviceId": "Azure ADDevice Id value",
+  "deviceRegistrationState": "registered",
   "deviceCategoryDisplayName": "Device Category Display Name value",
   "isSupervised": true,
   "exchangeLastSuccessfulSyncDateTime": "2017-01-01T00:00:45.8803083-08:00",
@@ -324,6 +332,7 @@ Content-Length: 6215
   "exchangeAccessStateReason": "unknown",
   "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
   "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
+  "remoteAssistanceSessionErrorDetails": "Remote Assistance Session Error Details value",
   "isEncrypted": true,
   "userPrincipalName": "User Principal Name value",
   "model": "Model value",

@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Not yet documented
+Syncs licenses associated with a specific appleVolumePurchaseProgramToken
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1001
+Content-Length: 948
 
 {
   "value": {
@@ -65,8 +65,7 @@ Content-Length: 1001
       {
         "@odata.type": "microsoft.graph.vppTokenActionResult",
         "actionName": "Action Name value",
-        "actionState": "inProgress",
-        "actionMessage": "Action Message value",
+        "actionState": "pending",
         "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
         "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
       }

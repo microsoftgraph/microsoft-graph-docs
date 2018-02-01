@@ -31,21 +31,23 @@ Inherits from [managedDevice](../resources/intune_devices_manageddevice.md)
 |lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |chassisType|String|Chassis type of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
-|deviceType|String|Platform of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `windowsBlue`, `windowsPhoneBlue`, `blackberry`, `palm`, `fakeDevice`, `unknown`.|
+|deviceType|String|Platform of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |complianceState|String|Compliance state of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
-|managementAgent|String|Management channel of the device. Intune, EAS, etc. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`.|
+|managementAgent|String|Management channel of the device. Intune, EAS, etc. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |osVersion|String|Operating system version of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |easDeviceId|String|Exchange ActiveSync Id of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |aadRegistered|Boolean|Whether the device is Azure Active Directory registered. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|azureADRegistered|Boolean|Whether the device is Azure Active Directory registered. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |deviceEnrollmentType|String|Enrollment type of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |lostModeState|String|Indicates if Lost mode is enabled or disabled Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `disabled`, `enabled`.|
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |emailAddress|String|Email(s) for the user associated with the device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |azureActiveDirectoryDeviceId|String|The unique identifier for the Azure Active Directory device. Read only. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
-|deviceRegistrationState|String|Device registration state. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `notRegistered`, `smsidConflict`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `resetCert`, `notRegisteredPendingEnrollment`, `unknown`.|
+|azureADDeviceId|String|The unique identifier for the Azure Active Directory device. Read only. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|deviceRegistrationState|String|Device registration state. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |deviceCategoryDisplayName|String|Device category display name Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |isSupervised|Boolean|Device supervised status Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Last time the device contacted Exchange. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
@@ -53,6 +55,7 @@ Inherits from [managedDevice](../resources/intune_devices_manageddevice.md)
 |exchangeAccessStateReason|String|The reason for the device's access state in Exchange. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |remoteAssistanceSessionErrorString|String|An error string that identifies issues when creating Remote Assistance session objects. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|remoteAssistanceSessionErrorDetails|String|An error string that identifies issues when creating Remote Assistance session objects. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |isEncrypted|Boolean|Device encryption status Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |userPrincipalName|String|Device user principal name Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |model|String|Model of the device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
@@ -151,11 +154,13 @@ Here is a JSON representation of the resource.
   "easDeviceId": "String",
   "easActivationDateTime": "String (timestamp)",
   "aadRegistered": true,
+  "azureADRegistered": true,
   "deviceEnrollmentType": "String",
   "lostModeState": "String",
   "activationLockBypassCode": "String",
   "emailAddress": "String",
   "azureActiveDirectoryDeviceId": "String",
+  "azureADDeviceId": "String",
   "deviceRegistrationState": "String",
   "deviceCategoryDisplayName": "String",
   "isSupervised": true,
@@ -164,6 +169,7 @@ Here is a JSON representation of the resource.
   "exchangeAccessStateReason": "String",
   "remoteAssistanceSessionUrl": "String",
   "remoteAssistanceSessionErrorString": "String",
+  "remoteAssistanceSessionErrorDetails": "String",
   "isEncrypted": true,
   "userPrincipalName": "String",
   "model": "String",

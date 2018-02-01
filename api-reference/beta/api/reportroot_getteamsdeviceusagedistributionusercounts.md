@@ -24,7 +24,7 @@ GET /reports/getTeamsDeviceUsageDistributionUserCounts(period='D7')
 
 ## Request parameters
 
-In the request URL, provide the following query parameter with a valid value.
+In the request URL, provide the following parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
