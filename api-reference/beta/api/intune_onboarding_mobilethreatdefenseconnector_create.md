@@ -45,6 +45,7 @@ The following table shows the properties that are required when you create the m
 |partnerUnsupportedOsVersionBlocked|Boolean|Allows admin to block devices on the enabled platforms that do not meet minimum version requirements|
 |iosEnabled|Boolean|IOS Toggle On or Off|
 |partnerUnresponsivenessThresholdInDays|Int32|Get or Set days the per tenant tolerance to unresponsiveness for this partner integration|
+|allowPartnerToCollectIOSApplicationMetadata|Boolean|For IOS devices, allows the admin to configure whether the data sync partner may also collect metadata about installed applications from Intune|
 
 
 
@@ -57,7 +58,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConnectors
 Content-type: application/json
-Content-length: 414
+Content-length: 470
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
@@ -68,7 +69,8 @@ Content-length: 414
   "iosDeviceBlockedOnMissingPartnerData": true,
   "partnerUnsupportedOsVersionBlocked": true,
   "iosEnabled": true,
-  "partnerUnresponsivenessThresholdInDays": 6
+  "partnerUnresponsivenessThresholdInDays": 6,
+  "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
 
@@ -77,7 +79,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 463
+Content-Length: 519
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
@@ -89,7 +91,8 @@ Content-Length: 463
   "iosDeviceBlockedOnMissingPartnerData": true,
   "partnerUnsupportedOsVersionBlocked": true,
   "iosEnabled": true,
-  "partnerUnresponsivenessThresholdInDays": 6
+  "partnerUnresponsivenessThresholdInDays": 6,
+  "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
 

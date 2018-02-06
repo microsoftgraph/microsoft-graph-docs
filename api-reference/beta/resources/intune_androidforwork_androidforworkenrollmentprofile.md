@@ -13,7 +13,7 @@ Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
 |[Create androidForWorkEnrollmentProfile](../api/intune_androidforwork_androidforworkenrollmentprofile_create.md)|[androidForWorkEnrollmentProfile](../resources/intune_androidforwork_androidforworkenrollmentprofile.md)|Create a new [androidForWorkEnrollmentProfile](../resources/intune_androidforwork_androidforworkenrollmentprofile.md) object.|
 |[Delete androidForWorkEnrollmentProfile](../api/intune_androidforwork_androidforworkenrollmentprofile_delete.md)|None|Deletes a [androidForWorkEnrollmentProfile](../resources/intune_androidforwork_androidforworkenrollmentprofile.md).|
 |[Update androidForWorkEnrollmentProfile](../api/intune_androidforwork_androidforworkenrollmentprofile_update.md)|[androidForWorkEnrollmentProfile](../resources/intune_androidforwork_androidforworkenrollmentprofile.md)|Update the properties of a [androidForWorkEnrollmentProfile](../resources/intune_androidforwork_androidforworkenrollmentprofile.md) object.|
-|[revokeTokens action](../api/intune_androidforwork_androidforworkenrollmentprofile_revoketokens.md)|None|Not yet documented|
+|[revokeToken action](../api/intune_androidforwork_androidforworkenrollmentprofile_revoketoken.md)|None|Not yet documented|
 |[createToken action](../api/intune_androidforwork_androidforworkenrollmentprofile_createtoken.md)|None|Not yet documented|
 
 ## Properties
@@ -21,15 +21,19 @@ Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
 |:---|:---|:---|
 |accountId|String|Tenant GUID the enrollment profile belongs to.|
 |id|String|Unique GUID for the enrollment profile.|
-|name|String|Friendly name for the enrollment profile.|
+|name|String|(Deprecated) Display name for the enrollment profile.|
+|displayName|String|Display name for the enrollment profile.|
 |description|String|Description for the enrollment profile.|
 |createdDateTime|DateTimeOffset|Date time the enrollment profile was created.|
-|modifiedDateTime|DateTimeOffset|Date time the enrollment profile was last modified.|
+|modifiedDateTime|DateTimeOffset|(Deprecated) Date time the enrollment profile was last modified.|
+|lastModifiedDateTime|DateTimeOffset|Date time the enrollment profile was last modified.|
 |tokenValue|String|Value of the most recently created token for this enrollment profile.|
 |tokenExpirationDateTime|DateTimeOffset|Date time the most recently created token will expire.|
-|totalEnrollmentCount|Int32|Total number of Android devices that have enrolled using this enrollment profile.|
-|isTokenActive|Boolean|True if the token is still active; false it if has expired or been revoked.|
-|qrCode|String|String used to generate a QR code for the token.|
+|totalEnrollmentCount|Int32|(Deprecated) Total number of Android devices that have enrolled using this enrollment profile.|
+|enrolledDeviceCount|Int32|Total number of Android devices that have enrolled using this enrollment profile.|
+|qrCode|String|(Deprecated) String used to generate a QR code for the token.|
+|qrCodeContent|String|String used to generate a QR code for the token.|
+|qrCodeImage|[mimeContent](../resources/intune_androidforwork_mimecontent.md)|String used to generate a QR code for the token.|
 
 ## Relationships
 None
@@ -47,14 +51,22 @@ Here is a JSON representation of the resource.
   "accountId": "String",
   "id": "String (identifier)",
   "name": "String",
+  "displayName": "String",
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
   "tokenValue": "String",
   "tokenExpirationDateTime": "String (timestamp)",
   "totalEnrollmentCount": 1024,
-  "isTokenActive": true,
-  "qrCode": "String"
+  "enrolledDeviceCount": 1024,
+  "qrCode": "String",
+  "qrCodeContent": "String",
+  "qrCodeImage": {
+    "@odata.type": "microsoft.graph.mimeContent",
+    "type": "String",
+    "value": "binary"
+  }
 }
 ```
 

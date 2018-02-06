@@ -45,6 +45,7 @@ The following table shows the properties that are required when you create the [
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |launchUri|String|Url link to an assessment that's automatically loaded when the secure assessment browser is launched. It has to be a valid Url (http\[s\]://msdn.microsoft.com/).|
 |configurationAccount|String|The account used to configure the Windows device for taking the test. The user can be a domain account (domain\user), an AAD account (username@tenant.com) or a local account (username).|
+|configurationAccountType|String|The account type used to by ConfigurationAccount. Possible values are: `azureADAccount`, `domainAccount`, `localAccount`.|
 |allowPrinting|Boolean|Indicates whether or not to allow the app from printing during the test.|
 |allowScreenCapture|Boolean|Indicates whether or not to allow screen capture capability during a test.|
 |allowTextSuggestion|Boolean|Indicates whether or not to allow text suggestions during the test.|
@@ -60,7 +61,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 346
+Content-length: 394
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -69,6 +70,7 @@ Content-length: 346
   "version": 7,
   "launchUri": "Launch Uri value",
   "configurationAccount": "Configuration Account value",
+  "configurationAccountType": "domainAccount",
   "allowPrinting": true,
   "allowScreenCapture": true,
   "allowTextSuggestion": true
@@ -80,7 +82,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 531
+Content-Length: 579
 
 {
   "@odata.type": "#microsoft.graph.windows10SecureAssessmentConfiguration",
@@ -92,6 +94,7 @@ Content-Length: 531
   "version": 7,
   "launchUri": "Launch Uri value",
   "configurationAccount": "Configuration Account value",
+  "configurationAccountType": "domainAccount",
   "allowPrinting": true,
   "allowScreenCapture": true,
   "allowTextSuggestion": true

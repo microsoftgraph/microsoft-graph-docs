@@ -17,7 +17,6 @@ An abstract class for Mobile app configuration for enrolled devices.
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |targetedMobileApps|String collection|the associated app.|
-|legacyAppConfiguration|Boolean|App configuration creation source check.|
 |createdDateTime|DateTimeOffset|DateTime the object was created.|
 |description|String|Admin provided description of the Device Configuration.|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
@@ -49,7 +48,6 @@ Here is a JSON representation of the resource.
   "targetedMobileApps": [
     "String"
   ],
-  "legacyAppConfiguration": true,
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "lastModifiedDateTime": "String (timestamp)",

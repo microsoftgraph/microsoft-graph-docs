@@ -35,6 +35,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |emailAddressSource|String|Email attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
 |hostName|String|Exchange location that (URL) that the native mail app connects to.|
 |requireSmime|Boolean|Indicates whether or not to use S/MIME certificate.|
+|smimeEnablePerMessageSwitch|Boolean|Indicates whether or not to allow unencrypted emails.|
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
 |usernameSource|String|Username attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
 
@@ -49,7 +50,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |identityCertificate|[iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)|Identity certificate.|
-|smimeSigningCertificate|[iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)|S/MIME signing certificate.|
+|smimeSigningCertificate|[iosCertificateProfile](../resources/intune_deviceconfig_ioscertificateprofile.md)|S/MIME signing certificate.|
+|smimeEncryptionCertificate|[iosCertificateProfile](../resources/intune_deviceconfig_ioscertificateprofile.md)|S/MIME encryption certificate.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -77,6 +79,7 @@ Here is a JSON representation of the resource.
   "emailAddressSource": "String",
   "hostName": "String",
   "requireSmime": true,
+  "smimeEnablePerMessageSwitch": true,
   "requireSsl": true,
   "usernameSource": "String"
 }

@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6511
+Content-Length: 6684
 
 {
   "value": {
@@ -117,12 +117,14 @@ Content-Length: 6511
     "easDeviceId": "Eas Device Id value",
     "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
     "aadRegistered": true,
+    "azureADRegistered": true,
     "deviceEnrollmentType": "userEnrollment",
     "lostModeState": "enabled",
     "activationLockBypassCode": "Activation Lock Bypass Code value",
     "emailAddress": "Email Address value",
     "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
-    "deviceRegistrationState": "smsidConflict",
+    "azureADDeviceId": "Azure ADDevice Id value",
+    "deviceRegistrationState": "registered",
     "deviceCategoryDisplayName": "Device Category Display Name value",
     "isSupervised": true,
     "exchangeLastSuccessfulSyncDateTime": "2017-01-01T00:00:45.8803083-08:00",
@@ -130,6 +132,7 @@ Content-Length: 6511
     "exchangeAccessStateReason": "unknown",
     "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
     "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
+    "remoteAssistanceSessionErrorDetails": "Remote Assistance Session Error Details value",
     "isEncrypted": true,
     "userPrincipalName": "User Principal Name value",
     "model": "Model value",

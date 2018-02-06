@@ -62,7 +62,6 @@ The following table shows the properties that are required when you create the [
 |trafficRules|[vpnTrafficRule](../resources/intune_deviceconfig_vpntrafficrule.md) collection|Traffic rules. This collection can contain a maximum of 1000 elements.|
 |routes|[vpnRoute](../resources/intune_deviceconfig_vpnroute.md) collection|Routes (optional for third-party providers). This collection can contain a maximum of 1000 elements.|
 |dnsRules|[vpnDnsRule](../resources/intune_deviceconfig_vpndnsrule.md) collection|DNS rules. This collection can contain a maximum of 1000 elements.|
-|trustedNetworkDomains|String collection|Trusted Network Domains|
 
 
 
@@ -75,7 +74,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 3120
+Content-length: 3047
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -177,9 +176,6 @@ Content-length: 3120
       ],
       "proxyServerUri": "Proxy Server Uri value"
     }
-  ],
-  "trustedNetworkDomains": [
-    "Trusted Network Domains value"
   ]
 }
 ```
@@ -189,7 +185,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3292
+Content-Length: 3219
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
@@ -294,9 +290,6 @@ Content-Length: 3292
       ],
       "proxyServerUri": "Proxy Server Uri value"
     }
-  ],
-  "trustedNetworkDomains": [
-    "Trusted Network Domains value"
   ]
 }
 ```

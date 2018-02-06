@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1520
+Content-Length: 1560
 
 {
   "value": [
@@ -71,10 +71,10 @@ Content-Length: 1520
       "developer": "Developer value",
       "notes": "Notes value",
       "uploadState": 11,
+      "publishingState": "processing",
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
-      "identityVersion": "Identity Version value",
       "applicableArchitectures": "x86",
       "applicableDeviceTypes": "desktop",
       "identityName": "Identity Name value",
@@ -86,7 +86,8 @@ Content-Length: 1520
         "v8_0": true,
         "v8_1": true,
         "v10_0": true
-      }
+      },
+      "identityVersion": "Identity Version value"
     }
   ]
 }

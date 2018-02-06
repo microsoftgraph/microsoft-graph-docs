@@ -49,14 +49,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 513
+Content-Length: 521
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
     "id": "e11c1de8-1de8-e11c-e81d-1ce1e81d1ce1",
     "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-    "status": "connected",
+    "status": "connectionPending",
     "primarySmtpAddress": "Primary Smtp Address value",
     "serverName": "Server Name value",
     "exchangeConnectorType": "hosted",

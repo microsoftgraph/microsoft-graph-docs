@@ -10,6 +10,8 @@ Contains properties for iOS Volume-Purchased Program (Vpp) Licensing Type.
 |:---|:---|:---|
 |supportUserLicensing|Boolean|Whether the program supports the user licensing type.|
 |supportDeviceLicensing|Boolean|Whether the program supports the device licensing type.|
+|supportsUserLicensing|Boolean|Whether the program supports the user licensing type.|
+|supportsDeviceLicensing|Boolean|Whether the program supports the device licensing type.|
 
 ## Relationships
 None
@@ -25,7 +27,9 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.vppLicensingType",
   "supportUserLicensing": true,
-  "supportDeviceLicensing": true
+  "supportDeviceLicensing": true,
+  "supportsUserLicensing": true,
+  "supportsDeviceLicensing": true
 }
 ```
 

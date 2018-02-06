@@ -1,4 +1,4 @@
-# Combine multiple requests in one HTTP call using JSON batching (preview)
+# Combine multiple requests in one HTTP call using JSON batching
 
 JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. For example, a client might want to compose a view of unrelated data such as:
 
@@ -13,7 +13,7 @@ Combining these three individual requests into a single batch request can save t
 First you construct the JSON batch request for the previous example. In this scenario, the individual requests are not interdependent in any way and therefore can be placed into the batch request in any order.
 
 ```http
-POST https://graph.microsoft.com/beta/$batch
+POST https://graph.microsoft.com/v1.0/$batch
 Accept: application/json
 Content-Type: application/json
 ```
@@ -82,7 +82,7 @@ Content-Type: application/json
       "id": "2",
       "status": 200,
       "body": {
-        "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.plannerTask)",
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.plannerTask)",
         "value": []
       }
     },

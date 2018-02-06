@@ -86,6 +86,9 @@ The possible values for the limit types include:
 |MaximumReferencesOnTask|The `references` property on the [plannerTaskDetails](plannerTaskDetails.md) resource contains too many values.|
 |MaximumChecklistItemsOnTask|The `checklist` property on the [plannerTaskDetails](plannerTaskDetails.md) resource contains too many values.|
 |MaximumAssigneesInTasks|The `assignments` property on the [plannerTask](plannerTask.md) resource contains too many values.|
+|MaximumFavoritePlansForUser| The `favoritePlanReferences` property on the [plannerUser](plannerUser.md) resource contains too many values.|
+|MaximumRecentPlansForUser| The `recentPlanReferences` property on the [plannerUser](plannerUser.md) resource contains too many values.|
+|MaximumContextsOnPlan| The `contexts` proeprty on the [plannerPlan](plannerPlan.md) resource contains too many values.|
 
 ### 412 Precondition Failed 
 

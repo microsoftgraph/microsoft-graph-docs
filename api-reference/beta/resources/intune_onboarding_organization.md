@@ -12,9 +12,6 @@ The organization resource represents an instance of global settings and resource
 |[Get organization](../api/intune_onboarding_organization_get.md)|[organization](../resources/intune_onboarding_organization.md)|Read properties and relationships of the [organization](../resources/intune_onboarding_organization.md) object.|
 |[Update organization](../api/intune_onboarding_organization_update.md)|[organization](../resources/intune_onboarding_organization.md)|Update the properties of a [organization](../resources/intune_onboarding_organization.md) object.|
 |[setMobileDeviceManagementAuthority action](../api/intune_onboarding_organization_setmobiledevicemanagementauthority.md)|Int32|Set mobile device management authority|
-|[getEncryptionPublicKey function](../api/intune_onboarding_organization_getencryptionpublickey.md)|String|Gets the encryption public key from Apple device enrollment program.|
-|[uploadDepToken action](../api/intune_onboarding_organization_uploaddeptoken.md)|None|Uploads the sync token with Apple device enrollment program.|
-|[syncWithAppleDeviceEnrollmentProgram action](../api/intune_onboarding_organization_syncwithappledeviceenrollmentprogram.md)|None|Initiates a sync operation with Apple device enrollment program.|
 
 ## Properties
 |Property|Type|Description|
@@ -24,11 +21,7 @@ The organization resource represents an instance of global settings and resource
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune_onboarding_certificateconnectorsetting.md)|Certificate connector setting.|
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|depOnboardingSettings|[depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) collection|Intune only supports using 1 DEP token per tenant. This collections will support potential future development of multiple DEP tokens per-tenant.|
-|appleVolumePurchaseProgramTokens|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) collection|List of Vpp tokens for this organization.|
-
+None
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

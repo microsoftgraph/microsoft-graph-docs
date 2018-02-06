@@ -20,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/roleAssignments
 POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ```
 
@@ -40,7 +39,6 @@ The following table shows the properties that are required when you create the r
 |id|String|Key of the entity. This is read-only and automatically generated.|
 |displayName|String|The display or friendly name of the role Assignment.|
 |description|String|Description of the Role Assignment.|
-|members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.|
 |scopeMembers|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
 |resourceScopes|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
 
@@ -53,17 +51,14 @@ If successful, this method returns a `201 Created` response code and a [roleAssi
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/roleAssignments
+POST https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 Content-type: application/json
-Content-length: 290
+Content-length: 247
 
 {
   "@odata.type": "#microsoft.graph.roleAssignment",
   "displayName": "Display Name value",
   "description": "Description value",
-  "members": [
-    "Members value"
-  ],
   "scopeMembers": [
     "Scope Members value"
   ],
@@ -78,16 +73,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 339
+Content-Length: 296
 
 {
   "@odata.type": "#microsoft.graph.roleAssignment",
   "id": "b3234d24-4d24-b323-244d-23b3244d23b3",
   "displayName": "Display Name value",
   "description": "Description value",
-  "members": [
-    "Members value"
-  ],
   "scopeMembers": [
     "Scope Members value"
   ],

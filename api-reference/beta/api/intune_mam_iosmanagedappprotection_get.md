@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1811
+Content-Length: 1839
 
 {
   "value": {
@@ -91,7 +91,8 @@ Content-Length: 1811
     "isAssigned": true,
     "appDataEncryptionType": "afterDeviceRestart",
     "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
-    "deployedAppCount": 0
+    "deployedAppCount": 0,
+    "faceIdBlocked": true
   }
 }
 ```

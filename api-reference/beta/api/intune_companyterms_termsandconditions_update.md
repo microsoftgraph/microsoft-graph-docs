@@ -41,6 +41,7 @@ The following table shows the properties that are required when you create the [
 |id|String|Unique identifier of the T&C policy.|
 |createdDateTime|DateTimeOffset|DateTime the object was created.|
 |modifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
 |displayName|String|Administrator-supplied name for the T&C policy. |
 |description|String|Administrator-supplied description of the T&C policy.|
 |title|String|Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&C policy.|
@@ -59,9 +60,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}
 Content-type: application/json
-Content-length: 216
+Content-length: 280
 
 {
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "description": "Description value",
   "title": "Title value",
@@ -76,13 +78,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 441
+Content-Length: 505
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditions",
   "id": "eefc80cf-80cf-eefc-cf80-fceecf80fcee",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "modifiedDateTime": "2017-01-01T00:00:22.8983556-08:00",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "description": "Description value",
   "title": "Title value",

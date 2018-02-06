@@ -8,7 +8,7 @@ always direct.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
->**Note:** This API currently requires the Directory.Read.All permission or higher. Using the User.Read or User.ReadBasic.All permissions in combination with the Group.Read.All permission will return an error. This is a known bug.
+>**Note:** This API currently requires the Directory.Read.All permission or higher. Using the Group.Read.All permission, either alone or in combination with a User permission, will return an error. This is a known bug.
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

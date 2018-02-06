@@ -6,7 +6,7 @@
 
 iOS certificate profile base.
 
-Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)
+Inherits from [iosCertificateProfile](../resources/intune_deviceconfig_ioscertificateprofile.md)
 
 ## Methods
 |Method|Return Type|Description|

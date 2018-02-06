@@ -50,7 +50,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement
 Content-type: application/json
-Content-length: 1003
+Content-length: 1043
 
 {
   "intuneBrand": {
@@ -80,7 +80,8 @@ Content-length: 1003
       "type": "Type value",
       "value": "dmFsdWU="
     },
-    "showNameNextToLogo": true
+    "showNameNextToLogo": true,
+    "showDisplayNameNextToLogo": true
   }
 }
 ```
@@ -90,7 +91,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1107
+Content-Length: 1147
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
@@ -122,7 +123,8 @@ Content-Length: 1107
       "type": "Type value",
       "value": "dmFsdWU="
     },
-    "showNameNextToLogo": true
+    "showNameNextToLogo": true,
+    "showDisplayNameNextToLogo": true
   }
 }
 ```

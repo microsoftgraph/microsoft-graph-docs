@@ -25,7 +25,7 @@ GET /reports/getYammerDeviceUsageUserDetail(date={date_value})
 
 ## Request parameters
 
-In the request URL, provide the chosen query parameter with a valid value.
+In the request URL, provide the query parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |

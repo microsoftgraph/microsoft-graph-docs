@@ -20,8 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /deviceManagement/roleAssignments/{roleAssignmentId}
-PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}
+PATCH /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 ```
 
 ## Request headers
@@ -40,9 +39,9 @@ The following table shows the properties that are required when you create the [
 |id|String|Key of the entity. This is read-only and automatically generated. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |displayName|String|The display or friendly name of the role Assignment. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |description|String|Description of the Role Assignment. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
-|members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |scopeMembers|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |resourceScopes|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.|
 
 
 
@@ -53,21 +52,21 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{roleAssignmentId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 Content-type: application/json
 Content-length: 237
 
 {
   "displayName": "Display Name value",
   "description": "Description value",
-  "members": [
-    "Members value"
-  ],
   "scopeMembers": [
     "Scope Members value"
   ],
   "resourceScopes": [
     "Resource Scopes value"
+  ],
+  "members": [
+    "Members value"
   ]
 }
 ```
@@ -84,14 +83,14 @@ Content-Length: 361
   "id": "a12e8ebb-8ebb-a12e-bb8e-2ea1bb8e2ea1",
   "displayName": "Display Name value",
   "description": "Description value",
-  "members": [
-    "Members value"
-  ],
   "scopeMembers": [
     "Scope Members value"
   ],
   "resourceScopes": [
     "Resource Scopes value"
+  ],
+  "members": [
+    "Members value"
   ]
 }
 ```

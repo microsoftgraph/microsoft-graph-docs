@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /deviceAppManagement/mobileApps/{mobileAppId}
 GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
 GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
-GET /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app
 ```
 
 ## Optional query parameters
@@ -52,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1492
+Content-Length: 1530
 
 {
   "value": {
@@ -75,10 +74,10 @@ Content-Length: 1492
     "developer": "Developer value",
     "notes": "Notes value",
     "uploadState": 11,
+    "publishingState": "processing",
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
-    "identityVersion": "Identity Version value",
     "bundleId": "Bundle Id value",
     "applicableDeviceType": {
       "@odata.type": "microsoft.graph.iosDeviceType",
@@ -94,7 +93,8 @@ Content-Length: 1492
     },
     "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
     "versionNumber": "Version Number value",
-    "buildNumber": "Build Number value"
+    "buildNumber": "Build Number value",
+    "identityVersion": "Identity Version value"
   }
 }
 ```

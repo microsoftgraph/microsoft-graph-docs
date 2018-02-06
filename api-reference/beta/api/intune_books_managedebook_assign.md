@@ -21,7 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceAppManagement/managedEBooks/{managedEBookId}/assign
-POST /deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}/eBook/assign
 ```
 
 ## Request headers
@@ -37,7 +36,6 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|eBookGroupAssignments|[eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) collection|Not yet documented|
 |managedEBookAssignments|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md) collection|Not yet documented|
 
 
@@ -52,17 +50,9 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/assign
 
 Content-type: application/json
-Content-length: 568
+Content-length: 318
 
 {
-  "eBookGroupAssignments": [
-    {
-      "@odata.type": "#microsoft.graph.eBookGroupAssignment",
-      "targetGroupId": "Target Group Id value",
-      "id": "6cb57cb9-7cb9-6cb5-b97c-b56cb97cb56c",
-      "installIntent": "required"
-    }
-  ],
   "managedEBookAssignments": [
     {
       "@odata.type": "#microsoft.graph.managedEBookAssignment",

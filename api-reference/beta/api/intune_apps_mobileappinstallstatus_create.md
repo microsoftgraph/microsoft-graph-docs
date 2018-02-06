@@ -42,6 +42,7 @@ The following table shows the properties that are required when you create the m
 |deviceId|String|Device ID|
 |lastSyncDateTime|DateTimeOffset|Last sync date time|
 |mobileAppInstallStatusValue|String|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
+|installState|String|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |errorCode|Int32|The error code for install failures.|
 |osVersion|String|OS Version|
 |osDescription|String|OS Description|
@@ -60,7 +61,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses
 Content-type: application/json
-Content-length: 472
+Content-length: 501
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -68,6 +69,7 @@ Content-length: 472
   "deviceId": "Device Id value",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "mobileAppInstallStatusValue": "failed",
+  "installState": "failed",
   "errorCode": 9,
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
@@ -82,7 +84,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 521
+Content-Length: 550
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -91,6 +93,7 @@ Content-Length: 521
   "deviceId": "Device Id value",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "mobileAppInstallStatusValue": "failed",
+  "installState": "failed",
   "errorCode": 9,
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",

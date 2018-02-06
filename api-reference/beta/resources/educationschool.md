@@ -18,6 +18,7 @@ This resource is a subtype of [educationOrganization](educationorganization.md).
 |[Add user](../api/educationschool_post_users.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the school by posting to the **users** navigation property.|
 |[List users](../api/educationschool_list_users.md) |[educationUser](educationuser.md) collection| Get the **educationUser** object collection.|
 |[Remove user](../api/educationschool_delete_users.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the school through the **users** navigation property.|
+|[Get administrativeUnit](../api/educationschool_get_administrativeunit.md) |[administrativeUnit](administrativeunit.md)| Get the **administrativeUnit** that corresponds to this **educationSchool**.|
 |[Update](../api/educationschool_update.md) | [educationSchool](educationschool.md)	|Update an **educationSchool** object. |
 |[Delete](../api/educationschool_delete.md) | None |Delete an **educationSchool** object. |
 

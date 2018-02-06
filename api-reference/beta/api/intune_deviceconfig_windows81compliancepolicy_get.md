@@ -21,7 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
-GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy
 ```
 
 ## Optional query parameters
@@ -50,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 903
+Content-Length: 829
 
 {
   "value": {
@@ -71,7 +70,6 @@ Content-Length: 903
     "passwordPreviousPasswordBlockCount": 2,
     "osMinimumVersion": "Os Minimum Version value",
     "osMaximumVersion": "Os Maximum Version value",
-    "minimumUpdateAutoInstallClassification": "recommendedAndImportant",
     "storageRequireEncryption": true
   }
 }

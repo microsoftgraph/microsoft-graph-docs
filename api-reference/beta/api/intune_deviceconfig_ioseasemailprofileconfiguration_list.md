@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 889
+Content-Length: 933
 
 {
   "value": [
@@ -68,6 +68,7 @@ Content-Length: 889
       "emailAddressSource": "primarySmtpAddress",
       "hostName": "Host Name value",
       "requireSmime": true,
+      "smimeEnablePerMessageSwitch": true,
       "requireSsl": true,
       "usernameSource": "primarySmtpAddress"
     }

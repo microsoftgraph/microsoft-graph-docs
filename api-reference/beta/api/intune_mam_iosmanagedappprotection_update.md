@@ -72,6 +72,7 @@ The following table shows the properties that are required when you create the [
 |appDataEncryptionType|String|Type of encryption which should be used for data in a managed app. Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
+|faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.|
 
 
 
@@ -84,7 +85,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 Content-type: application/json
-Content-length: 1544
+Content-length: 1570
 
 {
   "displayName": "Display Name value",
@@ -122,7 +123,8 @@ Content-length: 1544
   "isAssigned": true,
   "appDataEncryptionType": "afterDeviceRestart",
   "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
-  "deployedAppCount": 0
+  "deployedAppCount": 0,
+  "faceIdBlocked": true
 }
 ```
 
@@ -131,7 +133,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1714
+Content-Length: 1740
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -172,7 +174,8 @@ Content-Length: 1714
   "isAssigned": true,
   "appDataEncryptionType": "afterDeviceRestart",
   "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
-  "deployedAppCount": 0
+  "deployedAppCount": 0,
+  "faceIdBlocked": true
 }
 ```
 

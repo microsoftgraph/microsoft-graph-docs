@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 12063
+Content-Length: 12154
 
 {
   "value": [
@@ -182,6 +182,8 @@ Content-Length: 12063
       "privacyAdvertisingId": "blocked",
       "privacyAutoAcceptPairingAndConsentPrompts": true,
       "privacyBlockInputPersonalization": true,
+      "privacyBlockPublishUserActivities": true,
+      "privacyBlockActivityFeed": true,
       "startBlockUnpinningAppsFromTaskbar": true,
       "startMenuAppListVisibility": "collapse",
       "startMenuHideChangeAccountSettings": true,

@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 564
+Content-Length: 595
 
 {
   "value": {
@@ -60,6 +60,7 @@ Content-Length: 564
     "deviceId": "Device Id value",
     "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
     "mobileAppInstallStatusValue": "failed",
+    "installState": "failed",
     "errorCode": 9,
     "osVersion": "Os Version value",
     "osDescription": "Os Description value",

@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1853
+Content-Length: 1888
 
 {
   "value": [
@@ -71,7 +71,6 @@ Content-Length: 1853
       "requireHealthyDeviceReport": true,
       "osMinimumVersion": "Os Minimum Version value",
       "osMaximumVersion": "Os Maximum Version value",
-      "minimumUpdateAutoInstallClassification": "recommendedAndImportant",
       "mobileOsMinimumVersion": "Mobile Os Minimum Version value",
       "mobileOsMaximumVersion": "Mobile Os Maximum Version value",
       "earlyLaunchAntiMalwareDriverEnabled": true,
@@ -92,7 +91,9 @@ Content-Length: 1853
           "lowestVersion": "Lowest Version value",
           "highestVersion": "Highest Version value"
         }
-      ]
+      ],
+      "deviceThreatProtectionEnabled": true,
+      "deviceThreatProtectionRequiredSecurityLevel": "secured"
     }
   ]
 }
