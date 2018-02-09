@@ -21,7 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/roleAssignments
-GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ```
 
 ## Request headers
@@ -57,14 +56,14 @@ Content-Length: 446
       "id": "a12e8ebb-8ebb-a12e-bb8e-2ea1bb8e2ea1",
       "displayName": "Display Name value",
       "description": "Description value",
-      "members": [
-        "Members value"
-      ],
       "scopeMembers": [
         "Scope Members value"
       ],
       "resourceScopes": [
         "Resource Scopes value"
+      ],
+      "members": [
+        "Members value"
       ]
     }
   ]

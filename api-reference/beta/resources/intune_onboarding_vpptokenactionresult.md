@@ -9,8 +9,7 @@ The status of the action performed with an Apple Volume Purchase Program token.
 |Property|Type|Description|
 |:---|:---|:---|
 |actionName|String|Action name|
-|actionState|String|State of the action Possible values are: `none`, `inProgress`, `successful`, `failed`.|
-|actionMessage|String|Message about the action status|
+|actionState|String|State of the action Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Time the action was initiated|
 |lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated|
 
@@ -29,7 +28,6 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.vppTokenActionResult",
   "actionName": "String",
   "actionState": "String",
-  "actionMessage": "String",
   "startDateTime": "String (timestamp)",
   "lastUpdatedDateTime": "String (timestamp)"
 }

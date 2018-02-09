@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 768
+Content-Length: 731
 
 {
   "value": {
@@ -58,7 +58,6 @@ Content-Length: 768
     "targetedMobileApps": [
       "Targeted Mobile Apps value"
     ],
-    "legacyAppConfiguration": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

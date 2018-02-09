@@ -47,16 +47,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1049
+Content-Length: 977
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.androidForWorkAppConfigurationSchema",
       "id": "c1230dc6-0dc6-c123-c60d-23c1c60d23c1",
-      "exampleJson": {
-        "@odata.type": "microsoft.graph.androidForWorkAppConfigurationExample"
-      },
+      "exampleJson": "ZXhhbXBsZUpzb24=",
       "schemaItems": [
         {
           "@odata.type": "microsoft.graph.androidForWorkAppConfigurationSchemaItem",

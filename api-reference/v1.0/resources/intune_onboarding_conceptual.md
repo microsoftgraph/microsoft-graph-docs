@@ -1,0 +1,45 @@
+# Enroll devices for management in Intune
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+
+You can enroll devices, including Windows PCs, to enable mobile device management (MDM) with Microsoft Intune. This topic describes different ways to enroll mobile devices in Intune management. The way you enroll your devices depends on the device type, ownership, and the level of management that's needed. "Bring your own device" (BYOD) enrollment lets users enroll their personal phones, tablets, or PCs. Corporate-owned device (COD) enrollment enables management scenarios like remote wipe, shared devices, or user affinity for a device.
+
+The following Graph resources are available to manage enrollment in Intune:
+
+- [Apple push notification certificate](intune_devices_applepushnotificationcertificate.md)
+- [Audit actor](intune_auditing_auditactor.md)
+- [Audit event](intune_auditing_auditevent.md)
+- [Audit property](intune_auditing_auditproperty.md)
+- [Audit resource](intune_auditing_auditresource.md)
+- [Configuration manager client enabled features](intune_devices_configurationmanagerclientenabledfeatures.md)
+- [Delete user from shared Apple device action result](intune_devices_deleteuserfromsharedappledeviceactionresult.md)
+- [Detected app](intune_devices_detectedapp.md)
+- [Device action result](intune_devices_deviceactionresult.md)
+- [Device category](intune_devices_devicecategory.md)
+- [Device exchange access state summary](intune_devices_deviceexchangeaccessstatesummary.md)
+- [Device geolocation](intune_devices_devicegeolocation.md)
+- [Device health attestation state](intune_devices_devicehealthattestationstate.md)
+- [Device management troubleshooting event](intune_troubleshooting_devicemanagementtroubleshootingevent.md)
+- [Device management](intune_devices_devicemanagement.md)
+- [Device management](intune_endpointprotection_devicemanagement.md)
+- [Device management](intune_notification_devicemanagement.md)
+- [Device management](intune_remoteassistance_devicemanagement.md)
+- [Device management](intune_troubleshooting_devicemanagement.md)
+- [Device management](intune_auditing_devicemanagement.md)
+- [Device operating system summary](intune_devices_deviceoperatingsystemsummary.md)
+- [Enrollment troubleshooting event](intune_troubleshooting_enrollmenttroubleshootingevent.md)
+- [Localized notification message](intune_notification_localizednotificationmessage.md)
+- [Locate device action result](intune_devices_locatedeviceactionresult.md)
+- [Managed device overview](intune_devices_manageddeviceoverview.md)
+- [Managed device](intune_devices_manageddevice.md)
+- [Notification message template](intune_notification_notificationmessagetemplate.md)
+- [Remote assistance partner](intune_remoteassistance_remoteassistancepartner.md)
+- [Remote lock action result](intune_devices_remotelockactionresult.md)
+- [Reset passcode action result](intune_devices_resetpasscodeactionresult.md)
+- [Update windows device account action parameter](intune_devices_updatewindowsdeviceaccountactionparameter.md)
+- [User](intune_devices_user.md)
+- [User](intune_troubleshooting_user.md)
+- [Windows defender scan action result](intune_devices_windowsdefenderscanactionresult.md)
+- [Windows device account](intune_devices_windowsdeviceaccount.md)
+- [Windows device AD account](intune_devices_windowsdeviceadaccount.md)
+- [Windows device Azure AD account](intune_devices_windowsdeviceazureadaccount.md)

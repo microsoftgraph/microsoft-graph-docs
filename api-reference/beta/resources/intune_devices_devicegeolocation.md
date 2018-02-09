@@ -9,6 +9,7 @@ Device location
 |Property|Type|Description|
 |:---|:---|:---|
 |lastCollectedDateTimeUtc|DateTimeOffset|Time at which location was recorded, relative to UTC|
+|lastCollectedDateTime|DateTimeOffset|Time at which location was recorded, relative to UTC|
 |longitude|Double|Longitude coordinate of the device's location|
 |latitude|Double|Latitude coordinate of the device's location|
 |altitude|Double|Altitude, given in meters above sea level|
@@ -31,6 +32,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceGeoLocation",
   "lastCollectedDateTimeUtc": "String (timestamp)",
+  "lastCollectedDateTime": "String (timestamp)",
   "longitude": "<Unknown Primitive Type Edm.Double>",
   "latitude": "<Unknown Primitive Type Edm.Double>",
   "altitude": "<Unknown Primitive Type Edm.Double>",

@@ -45,7 +45,6 @@ Inherits from [windowsVpnConfiguration](../resources/intune_deviceconfig_windows
 |trafficRules|[vpnTrafficRule](../resources/intune_deviceconfig_vpntrafficrule.md) collection|Traffic rules. This collection can contain a maximum of 1000 elements.|
 |routes|[vpnRoute](../resources/intune_deviceconfig_vpnroute.md) collection|Routes (optional for third-party providers). This collection can contain a maximum of 1000 elements.|
 |dnsRules|[vpnDnsRule](../resources/intune_deviceconfig_vpndnsrule.md) collection|DNS rules. This collection can contain a maximum of 1000 elements.|
-|trustedNetworkDomains|String collection|Trusted Network Domains|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -171,9 +170,6 @@ Here is a JSON representation of the resource.
       ],
       "proxyServerUri": "String"
     }
-  ],
-  "trustedNetworkDomains": [
-    "String"
   ]
 }
 ```

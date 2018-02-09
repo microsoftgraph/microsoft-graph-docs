@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 575
+Content-Length: 872
 
 {
   "value": {
@@ -57,14 +57,22 @@ Content-Length: 575
     "accountId": "Account Id value",
     "id": "e6742553-2553-e674-5325-74e6532574e6",
     "name": "Name value",
+    "displayName": "Display Name value",
     "description": "Description value",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "modifiedDateTime": "2017-01-01T00:00:22.8983556-08:00",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "tokenValue": "Token Value value",
     "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
     "totalEnrollmentCount": 4,
-    "isTokenActive": true,
-    "qrCode": "Qr Code value"
+    "enrolledDeviceCount": 3,
+    "qrCode": "Qr Code value",
+    "qrCodeContent": "Qr Code Content value",
+    "qrCodeImage": {
+      "@odata.type": "microsoft.graph.mimeContent",
+      "type": "Type value",
+      "value": "dmFsdWU="
+    }
   }
 }
 ```

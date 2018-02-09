@@ -22,6 +22,7 @@ For example, you can get messages in the Outlook **Sent Items** folder of the si
 ```
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
+For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).
 
 ## Common use cases 
 

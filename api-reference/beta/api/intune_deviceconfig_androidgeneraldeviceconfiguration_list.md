@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3649
+Content-Length: 3691
 
 {
   "value": [
@@ -147,7 +147,8 @@ Content-Length: 3649
           "appId": "App Id value"
         }
       ],
-      "requireAppVerify": true
+      "requireAppVerify": true,
+      "securityRequireVerifyApps": true
     }
   ]
 }

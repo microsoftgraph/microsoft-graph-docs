@@ -41,7 +41,7 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |keepEnrollmentData|Boolean|Not yet documented|
 |keepUserData|Boolean|Not yet documented|
-|code|String|Not yet documented|
+|macOsUnlockCode|String|Not yet documented|
 
 
 
@@ -55,12 +55,12 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/wipe
 
 Content-type: application/json
-Content-length: 84
+Content-length: 109
 
 {
   "keepEnrollmentData": true,
   "keepUserData": true,
-  "code": "Code value"
+  "macOsUnlockCode": "Mac Os Unlock Code value"
 }
 ```
 

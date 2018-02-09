@@ -24,10 +24,7 @@ Scheduled Action Configuration
 |notificationMessageCCList|String collection|A list of group IDs to speicify who to CC this notification message to.|
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|notificationMessageTemplate|[notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md)|Notification message template.|
-
+None
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

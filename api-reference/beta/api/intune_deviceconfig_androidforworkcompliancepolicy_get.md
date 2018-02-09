@@ -21,7 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
-GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy
 ```
 
 ## Optional query parameters
@@ -50,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1364
+Content-Length: 1691
 
 {
   "value": {
@@ -70,6 +69,7 @@ Content-Length: 1364
     "securityPreventInstallAppsFromUnknownSources": true,
     "securityDisableUsbDebugging": true,
     "requireAppVerify": true,
+    "securityRequireVerifyApps": true,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
     "securityBlockJailbrokenDevices": true,
@@ -78,10 +78,15 @@ Content-Length: 1364
     "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
     "storageRequireEncryption": true,
     "requireSafetyNetAttestationBasicIntegrity": true,
+    "securityRequireSafetyNetAttestationBasicIntegrity": true,
     "requireSafetyNetAttestationCertifiedDevice": true,
+    "securityRequireSafetyNetAttestationCertifiedDevice": true,
     "requireGooglePlayServices": true,
+    "securityRequireGooglePlayServices": true,
     "requireUpToDateSecurityProviders": true,
-    "requireCompanyPortalAppIntegrity": true
+    "securityRequireUpToDateSecurityProviders": true,
+    "requireCompanyPortalAppIntegrity": true,
+    "securityRequireCompanyPortalAppIntegrity": true
   }
 }
 ```

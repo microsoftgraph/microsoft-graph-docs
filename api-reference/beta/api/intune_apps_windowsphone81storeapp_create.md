@@ -50,6 +50,7 @@ The following table shows the properties that are required when you create the w
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |appStoreUrl|String|The Windows Phone 8.1 app store URL.|
 
 
@@ -63,7 +64,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 691
+Content-length: 727
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81StoreApp",
@@ -83,6 +84,7 @@ Content-length: 691
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
@@ -92,7 +94,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 799
+Content-Length: 835
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81StoreApp",
@@ -114,6 +116,7 @@ Content-Length: 799
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```

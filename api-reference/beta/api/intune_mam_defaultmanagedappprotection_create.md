@@ -77,6 +77,7 @@ The following table shows the properties that are required when you create the d
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |minimumRequiredPatchVersion|String|Define the oldest required Android security patch level a user can have to gain secure access to the app.|
 |minimumWarningPatchVersion|String|Define the oldest recommended Android security patch level a user can have for secure access to the app.|
+|faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.|
 
 
 
@@ -89,7 +90,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 2009
+Content-length: 2035
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -139,7 +140,8 @@ Content-length: 2009
   ],
   "deployedAppCount": 0,
   "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
-  "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
+  "minimumWarningPatchVersion": "Minimum Warning Patch Version value",
+  "faceIdBlocked": true
 }
 ```
 
@@ -148,7 +150,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2117
+Content-Length: 2143
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -200,7 +202,8 @@ Content-Length: 2117
   ],
   "deployedAppCount": 0,
   "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
-  "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
+  "minimumWarningPatchVersion": "Minimum Warning Patch Version value",
+  "faceIdBlocked": true
 }
 ```
 

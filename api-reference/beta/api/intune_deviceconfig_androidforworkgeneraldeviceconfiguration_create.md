@@ -44,7 +44,7 @@ The following table shows the properties that are required when you create the a
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |passwordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
 |passwordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents.|
-|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 255|
+|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordMinimumLength|Int32|Minimum length of passwords. Valid values 4 to 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
@@ -53,10 +53,11 @@ The following table shows the properties that are required when you create the a
 |workProfileDataSharingType|String|Type of data sharing that is allowed. Possible values are: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
 |workProfileBlockNotificationsWhileDeviceLocked|Boolean|Indicates whether or not to block notifications while device locked.|
 |blockCrossProfileCopyPaste|Boolean|Boolean that indicates if the setting disallow cross profile copy/paste is enabled.|
+|workProfileBlockCrossProfileCopyPaste|Boolean|Boolean that indicates if the setting disallow cross profile copy/paste is enabled.|
 |workProfileDefaultAppPermissionPolicy|String|Type of password that is required. Possible values are: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
 |workProfilePasswordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock for work profile.|
 |workProfilePasswordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents for work profile.|
-|workProfilePasswordExpirationDays|Int32|Number of days before the work profile password expires. Valid values 1 to 255|
+|workProfilePasswordExpirationDays|Int32|Number of days before the work profile password expires. Valid values 1 to 365|
 |workProfilePasswordMinimumLength|Int32|Minimum length of work profile password. Valid values 4 to 16|
 |workProfilePasswordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |workProfilePasswordPreviousPasswordBlockCount|Int32|Number of previous work profile passwords to block. Valid values 0 to 24|
@@ -64,6 +65,7 @@ The following table shows the properties that are required when you create the a
 |workProfilePasswordRequiredType|String|Type of work profile password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileRequirePassword|Boolean|Password is required or not for work profile|
 |requireAppVerify|Boolean|Require the Android Verify apps feature is turned on.|
+|securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 
 
 
@@ -76,7 +78,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1296
+Content-length: 1384
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -95,6 +97,7 @@ Content-length: 1296
   "workProfileDataSharingType": "preventAny",
   "workProfileBlockNotificationsWhileDeviceLocked": true,
   "blockCrossProfileCopyPaste": true,
+  "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "prompt",
   "workProfilePasswordBlockFingerprintUnlock": true,
   "workProfilePasswordBlockTrustAgents": true,
@@ -105,7 +108,8 @@ Content-length: 1296
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
   "workProfilePasswordRequiredType": "lowSecurityBiometric",
   "workProfileRequirePassword": true,
-  "requireAppVerify": true
+  "requireAppVerify": true,
+  "securityRequireVerifyApps": true
 }
 ```
 
@@ -114,7 +118,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1404
+Content-Length: 1492
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -135,6 +139,7 @@ Content-Length: 1404
   "workProfileDataSharingType": "preventAny",
   "workProfileBlockNotificationsWhileDeviceLocked": true,
   "blockCrossProfileCopyPaste": true,
+  "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "prompt",
   "workProfilePasswordBlockFingerprintUnlock": true,
   "workProfilePasswordBlockTrustAgents": true,
@@ -145,7 +150,8 @@ Content-Length: 1404
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
   "workProfilePasswordRequiredType": "lowSecurityBiometric",
   "workProfileRequirePassword": true,
-  "requireAppVerify": true
+  "requireAppVerify": true,
+  "securityRequireVerifyApps": true
 }
 ```
 

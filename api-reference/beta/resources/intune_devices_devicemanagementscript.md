@@ -21,8 +21,8 @@ Intune will provide customer the ability to run their Powershell scripts on the 
 |id|String|Unique Identifier for the device management script.|
 |displayName|String|Name of the device management script.|
 |description|String|Optional description for the device management script.|
-|runSchedule|[runSchedule](../resources/intune_devices_runschedule.md)|The the interval for script to run. If not defined the script will run once|
-|scriptContent|String|The base64 encoded script text.|
+|runSchedule|[runSchedule](../resources/intune_devices_runschedule.md)|The interval for script to run. If not defined the script will run once|
+|scriptContent|Binary|The script content.|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified.|
 |runAsAccount|String|Indicates the type of execution context the device management script runs in. Possible values are: `system`, `user`.|
@@ -33,6 +33,7 @@ Intune will provide customer the ability to run their Powershell scripts on the 
 |Relationship|Type|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune_devices_devicemanagementscriptgroupassignment.md) collection|The list of group assignments for the device management script.|
+|assignments|[deviceManagementScriptAssignment](../resources/intune_devices_devicemanagementscriptassignment.md) collection|The list of group assignments for the device management script.|
 |runSummary|[deviceManagementScriptRunSummary](../resources/intune_devices_devicemanagementscriptrunsummary.md)|Run summary for device management script.|
 |deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune_devices_devicemanagementscriptdevicestate.md) collection|List of run states for this script across all devices.|
 |userRunStates|[deviceManagementScriptUserState](../resources/intune_devices_devicemanagementscriptuserstate.md) collection|List of run states for this script across all users.|
@@ -54,7 +55,7 @@ Here is a JSON representation of the resource.
   "runSchedule": {
     "@odata.type": "microsoft.graph.runSchedule"
   },
-  "scriptContent": "String",
+  "scriptContent": "binary",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "runAsAccount": "String",

@@ -61,7 +61,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/{vppTokenId}
 Content-type: application/json
-Content-length: 840
+Content-length: 789
 
 {
   "organizationName": "Organization Name value",
@@ -76,8 +76,7 @@ Content-length: 840
     {
       "@odata.type": "microsoft.graph.vppTokenActionResult",
       "actionName": "Action Name value",
-      "actionState": "inProgress",
-      "actionMessage": "Action Message value",
+      "actionState": "pending",
       "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
       "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
     }
@@ -93,7 +92,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 936
+Content-Length: 885
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -110,8 +109,7 @@ Content-Length: 936
     {
       "@odata.type": "microsoft.graph.vppTokenActionResult",
       "actionName": "Action Name value",
-      "actionState": "inProgress",
-      "actionMessage": "Action Message value",
+      "actionState": "pending",
       "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
       "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
     }

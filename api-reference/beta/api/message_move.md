@@ -32,7 +32,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|DestinationId|String|The destination folder ID, or the `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` well-known folder name.|
+|DestinationId|String|The destination folder ID, or a well-known folder name such as *Inbox*, *Drafts*, *SentItems*, or *DeletedItems*. For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).|
 
 ## Response
 

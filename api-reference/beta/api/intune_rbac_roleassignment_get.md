@@ -20,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/roleAssignments/{roleAssignmentId}
 GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}
 ```
 
@@ -42,7 +41,7 @@ If successful, this method returns a `200 OK` response code and [roleAssignment]
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{roleAssignmentId}
+GET https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}
 ```
 
 ### Response
@@ -50,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 384
+Content-Length: 335
 
 {
   "value": {
@@ -58,9 +57,6 @@ Content-Length: 384
     "id": "b3234d24-4d24-b323-244d-23b3244d23b3",
     "displayName": "Display Name value",
     "description": "Description value",
-    "members": [
-      "Members value"
-    ],
     "scopeMembers": [
       "Scope Members value"
     ],

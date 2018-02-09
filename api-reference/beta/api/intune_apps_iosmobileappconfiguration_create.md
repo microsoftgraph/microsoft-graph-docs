@@ -38,7 +38,6 @@ The following table shows the properties that are required when you create the i
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|String collection|the associated app. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|legacyAppConfiguration|Boolean|App configuration creation source check. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
@@ -58,14 +57,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
-Content-length: 619
+Content-length: 584
 
 {
   "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
   "targetedMobileApps": [
     "Targeted Mobile Apps value"
   ],
-  "legacyAppConfiguration": true,
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
@@ -87,7 +85,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 727
+Content-Length: 692
 
 {
   "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
@@ -95,7 +93,6 @@ Content-Length: 727
   "targetedMobileApps": [
     "Targeted Mobile Apps value"
   ],
-  "legacyAppConfiguration": true,
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

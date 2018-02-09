@@ -42,7 +42,6 @@ Inherits from [managedEBook](../resources/intune_books_managedebook.md)
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|groupAssignments|[eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) collection|The list of group assignments for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |assignments|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md) collection|The list of assignments for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |installSummary|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Mobile App Install Summary. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |deviceStates|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|The list of installation states for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|

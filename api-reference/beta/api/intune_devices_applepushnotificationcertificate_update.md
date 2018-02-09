@@ -36,7 +36,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the device|
+|id|String|Unique Identifier for the certificate|
 |appleIdentifier|String|Apple Id of the account used to create the MDM push certificate.|
 |topicIdentifier|String|Topic Id.|
 |lastModifiedDateTime|DateTimeOffset|Last modified date and time for Apple push notification certificate.|

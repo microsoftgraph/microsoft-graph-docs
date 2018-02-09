@@ -37,7 +37,7 @@ The following table shows the properties that are required when you create the a
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity the Android package name for the application the schema corresponds to|
-|exampleJson|[androidForWorkAppConfigurationExample](../resources/intune_androidforwork_androidforworkappconfigurationexample.md)|Example JSON confirming to this schema that demonstrates how to set the configuration for this app|
+|exampleJson|Binary|UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app|
 |schemaItems|[androidForWorkAppConfigurationSchemaItem](../resources/intune_androidforwork_androidforworkappconfigurationschemaitem.md) collection|Collection of items each representing a named configuration option in the schema|
 
 
@@ -51,13 +51,11 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkAppConfigurationSchemas
 Content-type: application/json
-Content-length: 859
+Content-length: 795
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkAppConfigurationSchema",
-  "exampleJson": {
-    "@odata.type": "microsoft.graph.androidForWorkAppConfigurationExample"
-  },
+  "exampleJson": "ZXhhbXBsZUpzb24=",
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidForWorkAppConfigurationSchemaItem",
@@ -88,14 +86,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 908
+Content-Length: 844
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkAppConfigurationSchema",
   "id": "c1230dc6-0dc6-c123-c60d-23c1c60d23c1",
-  "exampleJson": {
-    "@odata.type": "microsoft.graph.androidForWorkAppConfigurationExample"
-  },
+  "exampleJson": "ZXhhbXBsZUpzb24=",
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidForWorkAppConfigurationSchemaItem",

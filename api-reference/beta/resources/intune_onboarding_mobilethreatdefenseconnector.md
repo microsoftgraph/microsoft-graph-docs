@@ -26,6 +26,7 @@ Entity which represents a connection to Mobile threat defense partner.
 |partnerUnsupportedOsVersionBlocked|Boolean|Allows admin to block devices on the enabled platforms that do not meet minimum version requirements|
 |iosEnabled|Boolean|IOS Toggle On or Off|
 |partnerUnresponsivenessThresholdInDays|Int32|Get or Set days the per tenant tolerance to unresponsiveness for this partner integration|
+|allowPartnerToCollectIOSApplicationMetadata|Boolean|For IOS devices, allows the admin to configure whether the data sync partner may also collect metadata about installed applications from Intune|
 
 ## Relationships
 None
@@ -48,7 +49,8 @@ Here is a JSON representation of the resource.
   "iosDeviceBlockedOnMissingPartnerData": true,
   "partnerUnsupportedOsVersionBlocked": true,
   "iosEnabled": true,
-  "partnerUnresponsivenessThresholdInDays": 1024
+  "partnerUnresponsivenessThresholdInDays": 1024,
+  "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
 

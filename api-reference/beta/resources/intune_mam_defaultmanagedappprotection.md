@@ -61,6 +61,7 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |minimumRequiredPatchVersion|String|Define the oldest required Android security patch level a user can have to gain secure access to the app.|
 |minimumWarningPatchVersion|String|Define the oldest recommended Android security patch level a user can have for secure access to the app.|
+|faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -127,7 +128,8 @@ Here is a JSON representation of the resource.
   ],
   "deployedAppCount": 1024,
   "minimumRequiredPatchVersion": "String",
-  "minimumWarningPatchVersion": "String"
+  "minimumWarningPatchVersion": "String",
+  "faceIdBlocked": true
 }
 ```
 

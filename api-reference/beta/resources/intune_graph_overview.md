@@ -8,20 +8,6 @@ The Microsoft Graph API for Intune enables programmatic access to Intune informa
 
 For mobile device management (MDM) scenarios, the Graph API for Intune supports standalone deployments; Intune [hybrid deployments](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) are not supported. 
 
-## Sections of the Intune Graph API documentation
-
-The following sections provide the reference documentation for the Intune Graph API and resources:
-
-- [Managed apps](intune_apps_app_conceptual.md)
-- [Company terms and conditions](intune_company_conceptual.md)
-- [Enroll corporate-owned devices](intune_corporate_enrollment_conceptual.md)
-- [Device configuration](intune_device_configuration_conceptual.md)
-- [Device managmement](intune_devicefe_conceptual.md)
-- [App protection](intune_app_protection_conceptual.md)
-- [Enroll devices for management](intune_onboarding_conceptual.md)
-- [Role-based access control](intune_rbac_conceptual.md)
-- [Telecom expense management](intune_tem_conceptual.md)
-
 ## Using the Intune Graph API
 
 Intune provides data into the Microsoft Graph in the same way as other cloud services do, with rich entity information and relationship navigation.  Use Microsoft Graph to combine information from other services and Intune to build rich cross-service applications for IT professionals or end users.     
@@ -51,4 +37,4 @@ You can browse the Table of Contents (in the left pane of the site) to find the 
 
 1. Click **/Beta Reference** to open the beta docs.
 2. Scroll down and click **Intune**.
-3. Continue to click subsections below **Intune** for the parts of the API you want to see.
+3. Continue to click subsections below **Intune** for the parts of the API you 

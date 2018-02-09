@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app
 ```
 
 ## Request headers
@@ -53,10 +52,10 @@ The following table shows the properties that are required when you create the [
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |applicableArchitectures|String|The Windows architecture(s) for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
 |applicableDeviceTypes|String|The Windows device type(s) for which this app can run on. Possible values are: `none`, `desktop`, `mobile`, `holographic`, `team`.|
 |identityName|String|The Identity Name.|
@@ -64,6 +63,7 @@ The following table shows the properties that are required when you create the [
 |identityResourceIdentifier|String|The Identity Resource Identifier.|
 |isBundle|Boolean|Whether or not the app is a bundle.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+|identityVersion|String|The identity version.|
 
 
 
@@ -76,7 +76,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1180
+Content-length: 1216
 
 {
   "displayName": "Display Name value",
@@ -95,10 +95,10 @@ Content-length: 1180
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
   "applicableArchitectures": "x86",
   "applicableDeviceTypes": "desktop",
   "identityName": "Identity Name value",
@@ -110,7 +110,8 @@ Content-length: 1180
     "v8_0": true,
     "v8_1": true,
     "v10_0": true
-  }
+  },
+  "identityVersion": "Identity Version value"
 }
 ```
 
@@ -119,7 +120,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1347
+Content-Length: 1383
 
 {
   "@odata.type": "#microsoft.graph.windowsUniversalAppX",
@@ -141,10 +142,10 @@ Content-Length: 1347
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
   "applicableArchitectures": "x86",
   "applicableDeviceTypes": "desktop",
   "identityName": "Identity Name value",
@@ -156,7 +157,8 @@ Content-Length: 1347
     "v8_0": true,
     "v8_1": true,
     "v10_0": true
-  }
+  },
+  "identityVersion": "Identity Version value"
 }
 ```
 

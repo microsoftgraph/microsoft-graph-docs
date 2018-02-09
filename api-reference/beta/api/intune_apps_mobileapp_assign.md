@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 POST /deviceAppManagement/mobileApps/{mobileAppId}/assign
 POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/assign
 POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/assign
-POST /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app/assign
 ```
 
 ## Request headers
@@ -39,7 +38,6 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|mobileAppGroupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|Not yet documented|
 |mobileAppAssignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) collection|Not yet documented|
 
 
@@ -54,18 +52,9 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assign
 
 Content-type: application/json
-Content-length: 728
+Content-length: 406
 
 {
-  "mobileAppGroupAssignments": [
-    {
-      "@odata.type": "#microsoft.graph.mobileAppGroupAssignment",
-      "id": "ce4d1a28-1a28-ce4d-281a-4dce281a4dce",
-      "targetGroupId": "Target Group Id value",
-      "vpnConfigurationId": "Vpn Configuration Id value",
-      "installIntent": "notApplicable"
-    }
-  ],
   "mobileAppAssignments": [
     {
       "@odata.type": "#microsoft.graph.mobileAppAssignment",

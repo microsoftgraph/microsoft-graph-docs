@@ -55,7 +55,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploymentProfiles/{windowsAutopilotDeploymentProfileId}
 Content-type: application/json
-Content-length: 338
+Content-length: 372
 
 {
   "displayName": "Display Name value",
@@ -65,7 +65,8 @@ Content-length: 338
     "@odata.type": "microsoft.graph.outOfBoxExperienceSettings",
     "hidePrivacySettings": true,
     "hideEULA": true,
-    "userType": "standard"
+    "userType": "standard",
+    "deviceUsageType": "shared"
   }
 }
 ```
@@ -75,7 +76,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 533
+Content-Length: 567
 
 {
   "@odata.type": "#microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile",
@@ -88,7 +89,8 @@ Content-Length: 533
     "@odata.type": "microsoft.graph.outOfBoxExperienceSettings",
     "hidePrivacySettings": true,
     "hideEULA": true,
-    "userType": "standard"
+    "userType": "standard",
+    "deviceUsageType": "shared"
   }
 }
 ```
