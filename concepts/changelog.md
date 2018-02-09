@@ -3,6 +3,13 @@
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
+## January 2018
+
+### Education APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added extra navigation properties and improve filtering support for [roster API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/education-overview).|
 
 ## December 2017
 

@@ -56,7 +56,7 @@ Here is a JSON representation of the resource.
 |:---------------|:--------|:----------|
 |application | String | The name of the application where the mention is created. Optional. Not used and defaulted as null for **message**. |
 |clientReference | String | A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for **message**. |
-|createdBy  | [emailAddress](../resources/emailAddress.md) | The email information of the user who made the mention. Required. |
+|createdBy  | [emailAddress](../resources/emailAddress.md) | The email information of the user who made the mention. |
 |createdDateTime  |DateTimeOffset |The date and time that the mention is created on the client. |
 |deepLink | String | A deep web link to the context of the mention in the resource instance. Optional. Not used and defaulted as null for **message**. |
 |id | String| The unique identifier of a mention in a resource instance.|

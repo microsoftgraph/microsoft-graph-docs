@@ -38,7 +38,7 @@ In the request body, supply a JSON representation of the [message](../resources/
 If you want to use **mention** to call out another user in the new message:
 
 - Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.
-- For each mention in the **mentions** property, you must specify the **mentioned** and **createdBy** properties.
+- For each mention in the **mentions** property, you must specify the **mentioned** property.
 
 Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
@@ -145,7 +145,7 @@ Content-type: application/json
 ```
 
 ##### Request 2
-The next example includes a mention of another user Dana Swope in the draft.
+The next example shows a draft email by Randi Welch to Samantha Booth. The message also includes a mention of another user, Dana Swope.
 
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
 <!-- {
@@ -171,11 +171,7 @@ Content-type: application/json
         "mentioned":{
           "name":"Dana Swope",
           "address":"danas@contoso.onmicrosoft.com"
-         },
-        "createdBy": {
-            "name":"Randi Welch",
-            "address":"randiw@contoso.onmicrosoft.com"
-        }
+         }
       }
     ]
 }
