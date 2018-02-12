@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1521
+Content-Length: 1681
 
 {
   "value": [
@@ -71,6 +71,7 @@ Content-Length: 1521
       "developer": "Developer value",
       "notes": "Notes value",
       "uploadState": 11,
+      "publishingState": "processing",
       "usedLicenseCount": 0,
       "totalLicenseCount": 1,
       "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -78,7 +79,9 @@ Content-Length: 1521
       "licensingType": {
         "@odata.type": "microsoft.graph.vppLicensingType",
         "supportUserLicensing": true,
-        "supportDeviceLicensing": true
+        "supportDeviceLicensing": true,
+        "supportsUserLicensing": true,
+        "supportsDeviceLicensing": true
       },
       "applicableDeviceType": {
         "@odata.type": "microsoft.graph.iosDeviceType",
@@ -87,7 +90,8 @@ Content-Length: 1521
       },
       "vppTokenOrganizationName": "Vpp Token Organization Name value",
       "vppTokenAccountType": "education",
-      "vppTokenAppleId": "Vpp Token Apple Id value"
+      "vppTokenAppleId": "Vpp Token Apple Id value",
+      "bundleId": "Bundle Id value"
     }
   ]
 }

@@ -32,6 +32,7 @@ This topic provides descriptions of the declared methods, properties and relatio
 |Relationship|Type|Description|
 |:---|:---|:---|
 |groupAssignments|[mobileAppProvisioningConfigGroupAssignment](../resources/intune_apps_mobileappprovisioningconfiggroupassignment.md) collection|The associated group assignments.|
+|assignments|[iosLobAppProvisioningConfigurationAssignment](../resources/intune_apps_ioslobappprovisioningconfigurationassignment.md) collection|The associated group assignments for IosLobAppProvisioningConfiguration.|
 |deviceStatuses|[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) collection|The list of device installation states for this mobile app configuration.|
 |userStatuses|[managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md) collection|The list of user installation states for this mobile app configuration.|
 

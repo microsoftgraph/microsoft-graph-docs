@@ -21,7 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 DELETE /deviceAppManagement/managedEBooks/{managedEBookId}
-DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}/eBook
 ```
 
 ## Request headers

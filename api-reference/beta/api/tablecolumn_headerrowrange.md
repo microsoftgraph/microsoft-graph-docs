@@ -23,6 +23,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/HeaderRow
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 

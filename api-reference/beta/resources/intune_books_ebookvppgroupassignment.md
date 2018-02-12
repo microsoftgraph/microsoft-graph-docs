@@ -22,7 +22,7 @@ Inherits from [eBookGroupAssignment](../resources/intune_books_ebookgroupassignm
 |:---|:---|:---|
 |targetGroupId|String|The Id of the AAD group we are targeting the eBook to. Inherited from [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md)|
 |id|String|Key of the entity. Inherited from [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md)|
-|installIntent|String|The install intent defined by the admin. Inherited from [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) Possible values are: `notApplicable`, `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|String|The install intent defined by the admin. Inherited from [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |useDeviceLicensing|Boolean|Whether or not to use device licensing.|
 
 ## Relationships

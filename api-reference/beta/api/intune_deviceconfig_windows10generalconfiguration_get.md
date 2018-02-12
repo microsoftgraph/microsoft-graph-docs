@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Optional query parameters
@@ -51,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10803
+Content-Length: 11626
 
 {
   "value": {
@@ -62,6 +61,13 @@ Content-Length: 10803
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "enableAutomaticRedeployment": true,
+    "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
+    "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
+    "microsoftAccountSignInAssistantSettings": "disabled",
+    "authenticationAllowSecondaryDevice": true,
+    "authenticationAllowFIDODevice": true,
+    "cryptographyAllowFipsAlgorithmPolicy": true,
     "displayAppListWithGdiDPIScalingTurnedOn": [
       "Display App List With Gdi DPIScaling Turned On value"
     ],
@@ -85,6 +91,12 @@ Content-Length: 10803
     "searchDisableIndexerBackoff": true,
     "searchDisableIndexingRemovableDrive": true,
     "searchEnableAutomaticIndexSizeManangement": true,
+    "securityBlockAzureADJoinedDevicesAutoEncryption": true,
+    "diagnosticsDataSubmissionMode": "none",
+    "oneDriveDisableFileSync": true,
+    "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+    "inkWorkspaceAccess": "enabled",
+    "inkWorkspaceBlockSuggestedApps": true,
     "smartScreenEnableAppInstallControl": true,
     "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
     "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
@@ -152,6 +164,8 @@ Content-Length: 10803
     "defenderScanType": "disabled",
     "defenderScheduledScanTime": "11:59:10.9990000",
     "defenderScheduledQuickScanTime": "11:58:49.3840000",
+    "defenderCloudBlockLevel": "high",
+    "defenderCloudExtendedTimeout": 12,
     "lockScreenAllowTimeoutConfiguration": true,
     "lockScreenBlockActionCenterNotifications": true,
     "lockScreenBlockCortana": true,
@@ -170,6 +184,8 @@ Content-Length: 10803
     "privacyAdvertisingId": "blocked",
     "privacyAutoAcceptPairingAndConsentPrompts": true,
     "privacyBlockInputPersonalization": true,
+    "privacyBlockPublishUserActivities": true,
+    "privacyBlockActivityFeed": true,
     "startBlockUnpinningAppsFromTaskbar": true,
     "startMenuAppListVisibility": "collapse",
     "startMenuHideChangeAccountSettings": true,
@@ -239,20 +255,18 @@ Content-Length: 10803
     "cortanaBlocked": true,
     "deviceManagementBlockFactoryResetOnMobile": true,
     "deviceManagementBlockManualUnenroll": true,
-    "diagnosticsDataSubmissionMode": "none",
-    "oneDriveDisableFileSync": true,
     "safeSearchFilter": "strict",
     "edgeBlockPopups": true,
     "edgeBlockSearchSuggestions": true,
     "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
     "edgeRequireSmartScreen": true,
-    "edgeEnterpriseModeSiteListLocation": "Microsoft Edge Enterprise Mode Site List Location value",
+    "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
     "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
     "edgeSearchEngine": {
       "@odata.type": "microsoft.graph.edgeSearchEngineBase"
     },
     "edgeHomepageUrls": [
-      "Microsoft Edge Homepage Urls value"
+      "Edge Homepage Urls value"
     ],
     "edgeBlockAccessToAboutFlags": true,
     "smartScreenBlockPromptOverride": true,

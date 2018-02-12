@@ -24,6 +24,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 

@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1263
+Content-Length: 1888
 
 {
   "value": [
@@ -77,7 +77,23 @@ Content-Length: 1263
       "bitLockerEnabled": true,
       "secureBootEnabled": true,
       "codeIntegrityEnabled": true,
-      "storageRequireEncryption": true
+      "storageRequireEncryption": true,
+      "activeFirewallRequired": true,
+      "uacRequired": true,
+      "defenderEnabled": true,
+      "defenderVersion": "Defender Version value",
+      "signatureOutOfDate": true,
+      "rtpEnabled": true,
+      "validOperatingSystemBuildRanges": [
+        {
+          "@odata.type": "microsoft.graph.operatingSystemVersionRange",
+          "description": "Description value",
+          "lowestVersion": "Lowest Version value",
+          "highestVersion": "Highest Version value"
+        }
+      ],
+      "deviceThreatProtectionEnabled": true,
+      "deviceThreatProtectionRequiredSecurityLevel": "secured"
     }
   ]
 }

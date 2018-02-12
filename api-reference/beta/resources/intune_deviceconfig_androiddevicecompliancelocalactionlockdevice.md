@@ -21,6 +21,7 @@ Inherits from [androidDeviceComplianceLocalActionBase](../resources/intune_devic
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [androidDeviceComplianceLocalActionBase](../resources/intune_deviceconfig_androiddevicecompliancelocalactionbase.md)|
+|gracePeriodInMinutes|Int32|Number of minutes to wait till a local action is enforced. Valid values 0 to 2147483647 Inherited from [androidDeviceComplianceLocalActionBase](../resources/intune_deviceconfig_androiddevicecompliancelocalactionbase.md)|
 
 ## Relationships
 None
@@ -35,7 +36,8 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidDeviceComplianceLocalActionLockDevice",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "gracePeriodInMinutes": 1024
 }
 ```
 

@@ -5,7 +5,7 @@ Your app must be registered with Azure AD. Registering your app establishes a un
 
 > **Note:** This article primarily covers registering apps with the Azure AD v2.0 endpoint. For information about registering your app with the Azure AD endpoint, see [Azure AD endpoint considerations](#azure-ad-endpoint-considerations) below.
 > 
-> Also, be aware that if you've previously registered apps in the Microsoft Azure Management portal, those apps will not be listed in the App Registration Portal. Manage those apps in the Azure Management portal. 
+> Also, be aware that if you've previously registered apps in the Microsoft Azure portal, those apps will not be listed in the App Registration Portal. Manage those apps in the Azure portal. 
 
 
 The following screenshot shows an example web app registration that has been configured with a password and implicit flow. 

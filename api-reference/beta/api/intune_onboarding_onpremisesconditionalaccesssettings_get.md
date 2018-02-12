@@ -20,6 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagement/conditionalAccessSettings
 GET /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 ```
 
@@ -41,7 +42,7 @@ If successful, this method returns a `200 OK` response code and [onPremisesCondi
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
+GET https://graph.microsoft.com/beta/deviceManagement/conditionalAccessSettings
 ```
 
 ### Response

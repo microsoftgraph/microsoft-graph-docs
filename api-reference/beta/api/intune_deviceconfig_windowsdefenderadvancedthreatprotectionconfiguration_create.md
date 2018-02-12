@@ -44,6 +44,7 @@ The following table shows the properties that are required when you create the w
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |advancedThreatProtectionOnboardingBlob|String|Windows Defender AdvancedThreatProtection Onboarding Blob.|
 |allowSampleSharing|Boolean|Windows Defender AdvancedThreatProtection "Allow Sample Sharing" Rule|
+|enableExpeditedTelemetryReporting|Boolean|Expedite Windows Defender Advanced Threat Protection telemetry reporting frequency.|
 |advancedThreatProtectionOffboardingBlob|String|Windows Defender AdvancedThreatProtection Offboarding Blob.|
 
 
@@ -57,7 +58,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 481
+Content-length: 527
 
 {
   "@odata.type": "#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration",
@@ -67,6 +68,7 @@ Content-length: 481
   "version": 7,
   "advancedThreatProtectionOnboardingBlob": "Advanced Threat Protection Onboarding Blob value",
   "allowSampleSharing": true,
+  "enableExpeditedTelemetryReporting": true,
   "advancedThreatProtectionOffboardingBlob": "Advanced Threat Protection Offboarding Blob value"
 }
 ```
@@ -76,7 +78,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 589
+Content-Length: 635
 
 {
   "@odata.type": "#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration",
@@ -88,6 +90,7 @@ Content-Length: 589
   "version": 7,
   "advancedThreatProtectionOnboardingBlob": "Advanced Threat Protection Onboarding Blob value",
   "allowSampleSharing": true,
+  "enableExpeditedTelemetryReporting": true,
   "advancedThreatProtectionOffboardingBlob": "Advanced Threat Protection Offboarding Blob value"
 }
 ```

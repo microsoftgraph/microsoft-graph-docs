@@ -20,11 +20,13 @@ Entity which represents a connection to an Exchange environment.
 |:---|:---|:---|
 |id|String|Not yet documented|
 |lastSyncDateTime|DateTimeOffset|Last sync time for the Exchange Connector|
-|status|String|Exchange Connector Status Possible values are: `connectionPending`, `connected`, `disconnected`, `none`.|
+|status|String|Exchange Connector Status Possible values are: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|String|Email address used to configure the Service To Service Exchange Connector.|
 |serverName|String|The name of the server hosting the Exchange Connector.|
 |exchangeConnectorType|String|The type of Exchange Connector Configured. Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |version|String|The version of the ExchangeConnectorAgent|
+|exchangeAlias|String|An alias assigned to the Exchange server|
+|exchangeOrganization|String|Exchange Organization to the Exchange server|
 
 ## Relationships
 None
@@ -45,7 +47,9 @@ Here is a JSON representation of the resource.
   "primarySmtpAddress": "String",
   "serverName": "String",
   "exchangeConnectorType": "String",
-  "version": "String"
+  "version": "String",
+  "exchangeAlias": "String",
+  "exchangeOrganization": "String"
 }
 ```
 

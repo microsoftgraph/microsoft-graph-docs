@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 324
+Content-Length: 466
 
 {
   "value": {
@@ -57,10 +57,14 @@ Content-Length: 324
     "id": "06a792e9-92e9-06a7-e992-a706e992a706",
     "installedDeviceCount": 4,
     "failedDeviceCount": 1,
+    "notApplicableDeviceCount": 8,
     "notInstalledDeviceCount": 7,
+    "pendingInstallDeviceCount": 9,
     "installedUserCount": 2,
     "failedUserCount": 15,
-    "notInstalledUserCount": 5
+    "notApplicableUserCount": 6,
+    "notInstalledUserCount": 5,
+    "pendingInstallUserCount": 7
   }
 }
 ```

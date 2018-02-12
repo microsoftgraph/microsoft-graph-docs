@@ -49,6 +49,7 @@ The following table shows the properties that are required when you create the [
 |androidRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune_onboarding_deviceenrollmentplatformrestriction.md)|Not yet documented|
 |androidForWorkRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune_onboarding_deviceenrollmentplatformrestriction.md)|Not yet documented|
 |macRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune_onboarding_deviceenrollmentplatformrestriction.md)|Not yet documented|
+|macOSRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune_onboarding_deviceenrollmentplatformrestriction.md)|Not yet documented|
 
 
 
@@ -61,7 +62,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 Content-type: application/json
-Content-length: 1920
+Content-length: 2207
 
 {
   "displayName": "Display Name value",
@@ -110,6 +111,13 @@ Content-length: 1920
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
     "osMaximumVersion": "Os Maximum Version value"
+  },
+  "macOSRestriction": {
+    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+    "platformBlocked": true,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "Os Minimum Version value",
+    "osMaximumVersion": "Os Maximum Version value"
   }
 }
 ```
@@ -119,7 +127,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2116
+Content-Length: 2403
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
@@ -166,6 +174,13 @@ Content-Length: 2116
     "osMaximumVersion": "Os Maximum Version value"
   },
   "macRestriction": {
+    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+    "platformBlocked": true,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "Os Minimum Version value",
+    "osMaximumVersion": "Os Maximum Version value"
+  },
+  "macOSRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,

@@ -22,9 +22,13 @@ POST /workbook/tables/$/add
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-## Request body
-In the request body, supply a JSON representation of [Table](../resources/table.md) object.
+### Request parameters
+| Name           | Type      |Description|
+|:---------------|:----------|:----------|
+| Address  | string| Range address. If you are calling this API off of `worksheets/{id or name}/tables/add` path, there is no need to for sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)|
+| hasHeaders  | boolean|Boolean value that indicates whether the range has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.|
 
 ## Response
 
@@ -43,14 +47,10 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "id": 99,
-  "name": "name-value",
-  "showHeaders": true,
-  "showTotals": true,
-  "style": "style-value"
+  "address": "A1:D8",
+  "hasHeaders": false
 }
 ```
-In the request body, supply a JSON representation of [Table](../resources/table.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {

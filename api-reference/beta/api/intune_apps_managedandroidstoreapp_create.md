@@ -50,9 +50,12 @@ The following table shows the properties that are required when you create the m
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |appAvailability|String|The Application's availability. Inherited from [managedApp](../resources/intune_apps_managedapp.md) Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
 |packageId|String|The app's package ID.|
+|appStoreUrl|String|The Android AppStoreUrl.|
+|minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|The value for the minimum supported operating system.|
 
 
 
@@ -65,7 +68,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 744
+Content-length: 1102
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidStoreApp",
@@ -85,9 +88,22 @@ Content-length: 744
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
-  "packageId": "Package Id value"
+  "packageId": "Package Id value",
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
+    "v4_0": true,
+    "v4_0_3": true,
+    "v4_1": true,
+    "v4_2": true,
+    "v4_3": true,
+    "v4_4": true,
+    "v5_0": true,
+    "v5_1": true
+  }
 }
 ```
 
@@ -96,7 +112,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 852
+Content-Length: 1210
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidStoreApp",
@@ -118,9 +134,22 @@ Content-Length: 852
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
-  "packageId": "Package Id value"
+  "packageId": "Package Id value",
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
+    "v4_0": true,
+    "v4_0_3": true,
+    "v4_1": true,
+    "v4_2": true,
+    "v4_3": true,
+    "v4_4": true,
+    "v5_0": true,
+    "v5_1": true
+  }
 }
 ```
 

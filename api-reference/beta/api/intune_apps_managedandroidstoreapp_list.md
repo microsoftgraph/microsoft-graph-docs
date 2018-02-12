@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 973
+Content-Length: 1383
 
 {
   "value": [
@@ -71,9 +71,22 @@ Content-Length: 973
       "developer": "Developer value",
       "notes": "Notes value",
       "uploadState": 11,
+      "publishingState": "processing",
       "appAvailability": "lineOfBusiness",
       "version": "Version value",
-      "packageId": "Package Id value"
+      "packageId": "Package Id value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "minimumSupportedOperatingSystem": {
+        "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
+        "v4_0": true,
+        "v4_0_3": true,
+        "v4_1": true,
+        "v4_2": true,
+        "v4_3": true,
+        "v4_4": true,
+        "v5_0": true,
+        "v5_1": true
+      }
     }
   ]
 }

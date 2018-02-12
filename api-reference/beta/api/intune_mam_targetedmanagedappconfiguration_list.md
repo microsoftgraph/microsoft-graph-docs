@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 764
+Content-Length: 657
 
 {
   "value": [
@@ -67,10 +67,7 @@ Content-Length: 764
         }
       ],
       "deployedAppCount": 0,
-      "targetedSecurityGroupIds": [
-        "Targeted Security Group Ids value"
-      ],
-      "targetedSecurityGroupsCount": 11
+      "isAssigned": true
     }
   ]
 }

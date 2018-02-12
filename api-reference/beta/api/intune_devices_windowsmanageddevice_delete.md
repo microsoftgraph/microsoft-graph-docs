@@ -20,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /managedDevices/{managedDevicesId}
 DELETE /users/{usersId}/managedDevices/{managedDeviceId}
 DELETE /deviceManagement/managedDevices/{managedDeviceId}
 DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
@@ -43,7 +42,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-DELETE https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
+DELETE https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
 ```
 
 ### Response

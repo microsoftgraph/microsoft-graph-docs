@@ -49,12 +49,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 158
+Content-Length: 190
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.androidDeviceComplianceLocalActionLockDevice",
-    "id": "ec210677-0677-ec21-7706-21ec770621ec"
+    "id": "ec210677-0677-ec21-7706-21ec770621ec",
+    "gracePeriodInMinutes": 4
   }
 }
 ```

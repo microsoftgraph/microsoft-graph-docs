@@ -49,16 +49,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 463
+Content-Length: 474
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceAppManagement",
     "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb",
-    "windowsStoreForBusinessLastSuccessfulSyncDateTime": "2017-01-01T00:02:28.7069473-08:00",
-    "isEnabledForWindowsStoreForBusiness": true,
-    "windowsStoreForBusinessLanguage": "Windows Store For Business Language value",
-    "windowsStoreForBusinessLastCompletedApplicationSyncTime": "2016-12-31T23:56:31.025453-08:00"
+    "microsoftStoreForBusinessLastSuccessfulSyncDateTime": "2016-12-31T23:57:45.2453148-08:00",
+    "isEnabledForMicrosoftStoreForBusiness": true,
+    "microsoftStoreForBusinessLanguage": "Microsoft Store For Business Language value",
+    "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "2017-01-01T00:02:00.0421137-08:00"
   }
 }
 ```

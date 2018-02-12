@@ -15,6 +15,7 @@ Local Action Configuration
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
+|gracePeriodInMinutes|Int32|Number of minutes to wait till a local action is enforced. Valid values 0 to 2147483647|
 
 ## Relationships
 None
@@ -29,7 +30,8 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidDeviceComplianceLocalActionBase",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "gracePeriodInMinutes": 1024
 }
 ```
 

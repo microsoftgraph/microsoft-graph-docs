@@ -1,6 +1,6 @@
 # Microsoft Graph API Terms of Use 
 
-Last revised in October 2017
+Last revised in December 2017
 
 Thank you for developing with Microsoft!
 
@@ -72,7 +72,7 @@ You may NOT:
 
 	5. Violating applicable privacy laws and regulations.
 
-c) **Accessing the Microsoft Intune through Graph API**
+c) **Accessing the Microsoft Intune Service through the Microsoft Graph API**
         
 When your Application or services access the Graph API for Intune using a Post command as documented at developer.microsoft.com/en-us/graph/docs you must include: 
 
@@ -82,10 +82,11 @@ When your Application or services access the Graph API for Intune using a Post c
 <li>In your Application and services’ marketing material and product documentation that references functionality enabled by your Application or service’s access to Microsoft Intune® through the Microsoft Graph API: 
 
 <ul>
-<li>- The attribution “Powered by Microsoft Intune®” displayed in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>, and</li>
+<li>- The attribution “Microsoft Intune® App Protection Policies” displayed in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>, and</li>
 <li>- A statement that use of your Application and services does not remove the need for users to maintain a valid license for their use of the Microsoft Intune® service.</li>
-<li>- In your Application’s user interface or console that displays commands for functionality enabled by the Graph API for Intune, include the attribution “Powered by Microsoft Intune®” in a conspicuous place on the console or UI. The attribution must be in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>.</li>
-</ul> 
+	</ul>
+<li>In your Application’s user interface or console that displays commands for functionality enabled by the Graph API for Intune, include the attribution “Microsoft Intune® App Protection Policies” in a conspicuous place on the console or UI. The attribution must be in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>.</li>
+
 </li>
 </ol>
 

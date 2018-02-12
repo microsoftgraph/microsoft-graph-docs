@@ -44,8 +44,7 @@ The following table shows the properties that are required when you create the t
 |version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |customSettings|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service Inherited from [managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md)|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
-|targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed|
-|targetedSecurityGroupsCount|Int32|Number of groups to which the configuration is deployed.|
+|isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not.|
 
 
 
@@ -58,7 +57,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/targetedManagedAppConfigurations
 Content-type: application/json
-Content-length: 547
+Content-length: 452
 
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppConfiguration",
@@ -74,10 +73,7 @@ Content-length: 547
     }
   ],
   "deployedAppCount": 0,
-  "targetedSecurityGroupIds": [
-    "Targeted Security Group Ids value"
-  ],
-  "targetedSecurityGroupsCount": 11
+  "isAssigned": true
 }
 ```
 
@@ -86,7 +82,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 655
+Content-Length: 560
 
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppConfiguration",
@@ -104,10 +100,7 @@ Content-Length: 655
     }
   ],
   "deployedAppCount": 0,
-  "targetedSecurityGroupIds": [
-    "Targeted Security Group Ids value"
-  ],
-  "targetedSecurityGroupsCount": 11
+  "isAssigned": true
 }
 ```
 

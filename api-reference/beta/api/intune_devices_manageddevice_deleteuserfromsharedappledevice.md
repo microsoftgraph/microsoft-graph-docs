@@ -20,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /managedDevices/{managedDevicesId}/deleteUserFromSharedAppleDevice
 POST /users/{usersId}/managedDevices/{managedDeviceId}/deleteUserFromSharedAppleDevice
 POST /deviceManagement/managedDevices/{managedDeviceId}/deleteUserFromSharedAppleDevice
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deleteUserFromSharedAppleDevice
@@ -51,7 +50,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/deleteUserFromSharedAppleDevice
+POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/deleteUserFromSharedAppleDevice
 
 Content-type: application/json
 Content-length: 56

@@ -43,7 +43,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|
+|id|String|Key of the entity.|
 |targetGroupId|String|The Id of the AAD group we are targeting the device configuration to.|
 |excludeGroup|Boolean|Indicates if this group is should be excluded. Defaults that the group should be included|
 

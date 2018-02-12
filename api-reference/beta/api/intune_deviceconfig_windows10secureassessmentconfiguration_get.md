@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Optional query parameters
@@ -51,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 574
+Content-Length: 624
 
 {
   "value": {
@@ -64,6 +63,7 @@ Content-Length: 574
     "version": 7,
     "launchUri": "Launch Uri value",
     "configurationAccount": "Configuration Account value",
+    "configurationAccountType": "domainAccount",
     "allowPrinting": true,
     "allowScreenCapture": true,
     "allowTextSuggestion": true

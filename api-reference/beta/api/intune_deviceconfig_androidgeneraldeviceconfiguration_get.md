@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Optional query parameters
@@ -51,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3405
+Content-Length: 3483
 
 {
   "value": {
@@ -87,6 +86,7 @@ Content-Length: 3405
     "googlePlayStoreBlocked": true,
     "kioskModeBlockSleepButton": true,
     "kioskModeBlockVolumeButtons": true,
+    "dateAndTimeBlockChanges": true,
     "kioskModeApps": [
       {
         "@odata.type": "microsoft.graph.appListItem",
@@ -149,7 +149,8 @@ Content-Length: 3405
         "appId": "App Id value"
       }
     ],
-    "requireAppVerify": true
+    "requireAppVerify": true,
+    "securityRequireVerifyApps": true
   }
 }
 ```

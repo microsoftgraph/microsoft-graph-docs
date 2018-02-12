@@ -43,7 +43,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-    "status": "EnumType",
+    "status": "String (EnumType)",
     "createdDateTime": "DateTimeOffset",
     "lastModifiedDateTime": "DateTimeOffset",
     "id": "String",

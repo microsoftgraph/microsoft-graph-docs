@@ -1,6 +1,6 @@
 # Delete group
-
 Delete group.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -8,13 +8,14 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
@@ -24,12 +25,11 @@ DELETE /groups/{id}
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_group"
@@ -37,8 +37,9 @@ Here is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/{id}
 ```
-##### Response
-Here is an example of the response. 
+
+#### Response
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

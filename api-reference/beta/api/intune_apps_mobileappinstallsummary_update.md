@@ -39,10 +39,14 @@ The following table shows the properties that are required when you create the [
 |id|String|Key of the entity.|
 |installedDeviceCount|Int32|Number of Devices that have successfully installed this app.|
 |failedDeviceCount|Int32|Number of Devices that have failed to install this app.|
+|notApplicableDeviceCount|Int32|Number of Devices that are not applicable for this app.|
 |notInstalledDeviceCount|Int32|Number of Devices that does not have this app installed.|
+|pendingInstallDeviceCount|Int32|Number of Devices that have been notified to install this app.|
 |installedUserCount|Int32|Number of Users whose devices have all succeeded to install this app.|
 |failedUserCount|Int32|Number of Users that have 1 or more device that failed to install this app.|
-|notInstalledUserCount|Int32|Number of Users that did not install this app.|
+|notApplicableUserCount|Int32|Number of Users whose devices were all not applicable for this app.|
+|notInstalledUserCount|Int32|Number of Users that have 1 or more devices that did not install this app.|
+|pendingInstallUserCount|Int32|Number of Users that have 1 or more device that have been notified to install this app and have 0 devices with failures.|
 
 
 
@@ -55,15 +59,19 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 Content-type: application/json
-Content-length: 178
+Content-length: 312
 
 {
   "installedDeviceCount": 4,
   "failedDeviceCount": 1,
+  "notApplicableDeviceCount": 8,
   "notInstalledDeviceCount": 7,
+  "pendingInstallDeviceCount": 9,
   "installedUserCount": 2,
   "failedUserCount": 15,
-  "notInstalledUserCount": 5
+  "notApplicableUserCount": 6,
+  "notInstalledUserCount": 5,
+  "pendingInstallUserCount": 7
 }
 ```
 
@@ -72,17 +80,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 289
+Content-Length: 423
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallSummary",
   "id": "06a792e9-92e9-06a7-e992-a706e992a706",
   "installedDeviceCount": 4,
   "failedDeviceCount": 1,
+  "notApplicableDeviceCount": 8,
   "notInstalledDeviceCount": 7,
+  "pendingInstallDeviceCount": 9,
   "installedUserCount": 2,
   "failedUserCount": 15,
-  "notInstalledUserCount": 5
+  "notApplicableUserCount": 6,
+  "notInstalledUserCount": 5,
+  "pendingInstallUserCount": 7
 }
 ```
 

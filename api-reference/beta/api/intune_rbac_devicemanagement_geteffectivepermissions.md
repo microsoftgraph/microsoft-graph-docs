@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Retrieves the effective permissions of the currently authenticated user
+Not yet documented
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -30,16 +30,23 @@ GET /deviceManagement/getEffectivePermissions
 |Accept|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+In the request URL, provide the following query parameters with values.
+The following table shows the parameters that can be used with this function.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|scope|String|Not yet documented|
+
+
 
 ## Response
-If successful, this function returns a `200 OK` response code and a String collection in the response body.
+If successful, this function returns a `200 OK` response code and a [rolePermission](../resources/intune_rbac_rolepermission.md) collection in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/getEffectivePermissions
+GET https://graph.microsoft.com/beta/deviceManagement/getEffectivePermissions(scope='parameterValue')
 ```
 
 ### Response
@@ -47,11 +54,27 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 62
+Content-Length: 471
 
 {
   "value": [
-    "Get Effective Permissions value"
+    {
+      "@odata.type": "microsoft.graph.rolePermission",
+      "actions": [
+        "Actions value"
+      ],
+      "resourceActions": [
+        {
+          "@odata.type": "microsoft.graph.resourceAction",
+          "allowedResourceActions": [
+            "Allowed Resource Actions value"
+          ],
+          "notAllowedResourceActions": [
+            "Not Allowed Resource Actions value"
+          ]
+        }
+      ]
+    }
   ]
 }
 ```

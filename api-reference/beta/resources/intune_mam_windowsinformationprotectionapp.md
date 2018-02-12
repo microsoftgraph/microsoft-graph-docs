@@ -12,6 +12,7 @@ App for Windows information protection
 |description|String|The app's description.|
 |publisherName|String|The publisher name|
 |productName|String|The product name.|
+|denied|Boolean|If true, app is denied protection or exemption.|
 
 ## Relationships
 None
@@ -29,7 +30,8 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "publisherName": "String",
-  "productName": "String"
+  "productName": "String",
+  "denied": true
 }
 ```
 

@@ -22,6 +22,7 @@ POST /workbook/worksheets/{id|name}/charts/
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, supply a JSON representation of [Chart](../resources/chart.md) object.

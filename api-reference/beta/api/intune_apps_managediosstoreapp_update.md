@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app
 ```
 
 ## Request headers
@@ -53,9 +52,13 @@ The following table shows the properties that are required when you create the [
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |appAvailability|String|The Application's availability. Inherited from [managedApp](../resources/intune_apps_managedapp.md) Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
-|bundleId|String|The app's bundle ID.|
+|bundleId|String|The app's Bundle ID.|
+|appStoreUrl|String|The Apple AppStoreUrl.|
+|applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The iOS architecture for which this app can run on.|
+|minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum supported operating system.|
 
 
 
@@ -68,7 +71,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 681
+Content-length: 1093
 
 {
   "displayName": "Display Name value",
@@ -87,9 +90,23 @@ Content-length: 681
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
-  "bundleId": "Bundle Id value"
+  "bundleId": "Bundle Id value",
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "applicableDeviceType": {
+    "@odata.type": "microsoft.graph.iosDeviceType",
+    "iPad": true,
+    "iPhoneAndIPod": true
+  },
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
+    "v8_0": true,
+    "v9_0": true,
+    "v10_0": true,
+    "v11_0": true
+  }
 }
 ```
 
@@ -98,7 +115,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 846
+Content-Length: 1258
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -120,9 +137,23 @@ Content-Length: 846
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
-  "bundleId": "Bundle Id value"
+  "bundleId": "Bundle Id value",
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "applicableDeviceType": {
+    "@odata.type": "microsoft.graph.iosDeviceType",
+    "iPad": true,
+    "iPhoneAndIPod": true
+  },
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
+    "v8_0": true,
+    "v9_0": true,
+    "v10_0": true,
+    "v11_0": true
+  }
 }
 ```
 

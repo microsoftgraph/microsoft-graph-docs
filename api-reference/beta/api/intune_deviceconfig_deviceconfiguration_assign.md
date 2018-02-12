@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assign
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/assign
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration/assign
 ```
 
 ## Request headers
@@ -39,6 +38,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |deviceConfigurationGroupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|Not yet documented|
+|assignments|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) collection|Not yet documented|
 
 
 
@@ -52,7 +52,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assign
 
 Content-type: application/json
-Content-length: 274
+Content-length: 548
 
 {
   "deviceConfigurationGroupAssignments": [
@@ -61,6 +61,15 @@ Content-length: 274
       "id": "561d26c5-26c5-561d-c526-1d56c5261d56",
       "targetGroupId": "Target Group Id value",
       "excludeGroup": true
+    }
+  ],
+  "assignments": [
+    {
+      "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
+      "id": "d59b6342-6342-d59b-4263-9bd542639bd5",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      }
     }
   ]
 }
@@ -71,13 +80,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 161
+Content-Length: 271
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
-      "id": "d59b6342-6342-d59b-4263-9bd542639bd5"
+      "id": "d59b6342-6342-d59b-4263-9bd542639bd5",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      }
     }
   ]
 }

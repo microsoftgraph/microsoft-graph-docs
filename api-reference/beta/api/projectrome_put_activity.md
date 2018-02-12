@@ -41,18 +41,18 @@ If successful, this method returns the `201 Created` response code if the activi
 
 ## Example
 
-##### Request
+#### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
-  "name": "upsert_activity"
-}-->
+    "blockType": "ignored",
+    "name": "upsert_activity"
+} -->
 
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
-Content-type: json
+Content-type: application/json
 Content-length: 364
 
 {
@@ -91,14 +91,14 @@ Content-length: 364
 }
 ```
 
-##### Response
+#### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.activity"
+    "blockType": "ignored",
+    "truncated": true,
+    "@odata.type": "microsoft.graph.activity"
 } -->
 
 ```http

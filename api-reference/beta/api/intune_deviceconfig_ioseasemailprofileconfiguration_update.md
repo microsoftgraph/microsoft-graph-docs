@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Request headers
@@ -53,6 +52,7 @@ The following table shows the properties that are required when you create the [
 |emailAddressSource|String|Email attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
 |hostName|String|Exchange location that (URL) that the native mail app connects to.|
 |requireSmime|Boolean|Indicates whether or not to use S/MIME certificate.|
+|smimeEnablePerMessageSwitch|Boolean|Indicates whether or not to allow unencrypted emails.|
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
 |usernameSource|String|Username attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
 
@@ -67,7 +67,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 606
+Content-length: 646
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -83,6 +83,7 @@ Content-length: 606
   "emailAddressSource": "primarySmtpAddress",
   "hostName": "Host Name value",
   "requireSmime": true,
+  "smimeEnablePerMessageSwitch": true,
   "requireSsl": true,
   "usernameSource": "primarySmtpAddress"
 }
@@ -93,7 +94,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 784
+Content-Length: 824
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -112,6 +113,7 @@ Content-Length: 784
   "emailAddressSource": "primarySmtpAddress",
   "hostName": "Host Name value",
   "requireSmime": true,
+  "smimeEnablePerMessageSwitch": true,
   "requireSsl": true,
   "usernameSource": "primarySmtpAddress"
 }

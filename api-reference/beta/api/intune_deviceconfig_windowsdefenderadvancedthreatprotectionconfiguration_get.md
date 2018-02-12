@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Optional query parameters
@@ -51,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 628
+Content-Length: 676
 
 {
   "value": {
@@ -64,6 +63,7 @@ Content-Length: 628
     "version": 7,
     "advancedThreatProtectionOnboardingBlob": "Advanced Threat Protection Onboarding Blob value",
     "allowSampleSharing": true,
+    "enableExpeditedTelemetryReporting": true,
     "advancedThreatProtectionOffboardingBlob": "Advanced Threat Protection Offboarding Blob value"
   }
 }

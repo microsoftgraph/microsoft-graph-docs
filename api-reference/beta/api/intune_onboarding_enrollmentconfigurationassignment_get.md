@@ -49,13 +49,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 261
+Content-Length: 251
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
     "id": "705b021c-021c-705b-1c02-5b701c025b70",
-    "assignmentTarget": {
+    "target": {
       "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
     }
   }

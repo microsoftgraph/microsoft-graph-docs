@@ -20,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /managedDevices/{managedDevicesId}/recoverPasscode
 POST /users/{usersId}/managedDevices/{managedDeviceId}/recoverPasscode
 POST /deviceManagement/managedDevices/{managedDeviceId}/recoverPasscode
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/recoverPasscode
@@ -43,7 +42,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/recoverPasscode
+POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/recoverPasscode
 ```
 
 ### Response

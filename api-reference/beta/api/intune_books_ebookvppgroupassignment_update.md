@@ -38,7 +38,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |targetGroupId|String|The Id of the AAD group we are targeting the eBook to. Inherited from [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md)|
 |id|String|Key of the entity. Inherited from [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md)|
-|installIntent|String|The install intent defined by the admin. Inherited from [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) Possible values are: `notApplicable`, `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|String|The install intent defined by the admin. Inherited from [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |useDeviceLicensing|Boolean|Whether or not to use device licensing.|
 
 
@@ -52,11 +52,11 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}
 Content-type: application/json
-Content-length: 112
+Content-length: 111
 
 {
   "targetGroupId": "Target Group Id value",
-  "installIntent": "available",
+  "installIntent": "required",
   "useDeviceLicensing": true
 }
 ```
@@ -66,13 +66,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 223
+Content-Length: 222
 
 {
   "@odata.type": "#microsoft.graph.eBookVppGroupAssignment",
   "targetGroupId": "Target Group Id value",
   "id": "5f54e6bf-e6bf-5f54-bfe6-545fbfe6545f",
-  "installIntent": "available",
+  "installIntent": "required",
   "useDeviceLicensing": true
 }
 ```

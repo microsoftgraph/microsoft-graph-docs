@@ -29,7 +29,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 
 ## Response
 
-If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.

@@ -2,12 +2,12 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Use this API to add a member to an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. 
-You can add users or other groups. Important: You can add only users to Office 365 groups.
+Use this API to add a member to an Office 365 Group, a security group, or a mail-enabled security group through the **members** navigation property.
+
+You can add users or other groups. Important: You can add only users to Office 365 Groups.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
-
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -20,6 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /groups/{id}/members/$ref
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
@@ -29,15 +30,14 @@ POST /groups/{id}/members/$ref
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) or [group](../resources/group.md) object to be added.
 
 ## Response
-
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "add_group_member"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/members/$ref
@@ -48,9 +48,11 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 ```
-In the request body, supply a JSON representation of the `id` of the [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+In the request body, supply a JSON representation of the `id` of the [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), or [group](../resources/group.md) object you want to add.
+
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

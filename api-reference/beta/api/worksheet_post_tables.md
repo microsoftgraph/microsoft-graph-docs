@@ -22,6 +22,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, supply following parameters. 

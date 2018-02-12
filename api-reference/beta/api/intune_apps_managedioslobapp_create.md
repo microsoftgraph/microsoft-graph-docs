@@ -50,16 +50,19 @@ The following table shows the properties that are required when you create the m
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |appAvailability|String|The Application's availability. Inherited from [managedApp](../resources/intune_apps_managedapp.md) Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
 |committedContentVersion|String|The internal committed content version. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
-|identityVersion|String|The identity version. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
 |bundleId|String|The Identity Name.|
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The iOS architecture for which this app can run on.|
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |expirationDateTime|DateTimeOffset|The expiration time.|
+|versionNumber|String|The version number of managed iOS Line of Business (LoB) app.|
+|buildNumber|String|The build number of managed iOS Line of Business (LoB) app.|
+|identityVersion|String|The identity version.|
 
 
 
@@ -72,7 +75,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1261
+Content-length: 1401
 
 {
   "@odata.type": "#microsoft.graph.managedIOSLobApp",
@@ -92,12 +95,12 @@ Content-length: 1261
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
   "bundleId": "Bundle Id value",
   "applicableDeviceType": {
     "@odata.type": "microsoft.graph.iosDeviceType",
@@ -108,9 +111,13 @@ Content-length: 1261
     "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
     "v8_0": true,
     "v9_0": true,
-    "v10_0": true
+    "v10_0": true,
+    "v11_0": true
   },
-  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
+  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+  "versionNumber": "Version Number value",
+  "buildNumber": "Build Number value",
+  "identityVersion": "Identity Version value"
 }
 ```
 
@@ -119,7 +126,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1369
+Content-Length: 1509
 
 {
   "@odata.type": "#microsoft.graph.managedIOSLobApp",
@@ -141,12 +148,12 @@ Content-Length: 1369
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
   "bundleId": "Bundle Id value",
   "applicableDeviceType": {
     "@odata.type": "microsoft.graph.iosDeviceType",
@@ -157,9 +164,13 @@ Content-Length: 1369
     "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
     "v8_0": true,
     "v9_0": true,
-    "v10_0": true
+    "v10_0": true,
+    "v11_0": true
   },
-  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
+  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+  "versionNumber": "Version Number value",
+  "buildNumber": "Build Number value",
+  "identityVersion": "Identity Version value"
 }
 ```
 

@@ -4,8 +4,7 @@
 
 Start a new group conversation by first creating a thread. 
 
-A new conversation, conversation thread, and post are created in the group. 
-Use [reply thread](conversationthread_reply.md) or [reply post](post_reply.md) to further post to that thread.
+A new conversation, conversation thread, and post are created in the group. Use [reply thread](conversationthread_reply.md) or [reply post](post_reply.md) to further post to that thread.
 
 Note: You can also [start a new thread in an existing conversation](conversation_post_threads.md). 
 
@@ -16,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,12 +32,11 @@ POST /groups/{id}/threads
 In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object containing a [post](../resources/post.md).
 
 ## Response
-
 If successful, this method returns `201 Created` response code and [conversationThread](../resources/conversationthread.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_conversationthread_from_group"
@@ -63,8 +61,10 @@ Content-type: application/json
   }]
 }
 ```
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

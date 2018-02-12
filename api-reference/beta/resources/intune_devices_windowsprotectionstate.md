@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Not yet documented
+Device protection status entity.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -15,9 +15,29 @@ Not yet documented
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique Identifier for the device protection status object. This is device id of the device|
+|malwareProtectionEnabled|Boolean|Anti malware is enabled or not|
+|deviceState|String|Computer's state (like clean or pending full scan or pending reboot etc) Possible values are: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
+|realTimeProtectionEnabled|Boolean|Real time protection is enabled or not?|
+|networkInspectionSystemEnabled|Boolean|Network inspection system enabled or not?|
+|quickScanOverdue|Boolean|Quick scan overdue or not?|
+|fullScanOverdue|Boolean|Full scan overdue or not?|
+|signatureUpdateOverdue|Boolean|Signature out of date or not?|
+|rebootRequired|Boolean|Reboot required or not?|
+|fullScanRequired|Boolean|Full scan required or not?|
+|engineVersion|String|Current endpoint protection engine's version|
+|signatureVersion|String|Current malware definitions version|
+|antiMalwareVersion|String|Current anti malware version|
+|lastQuickScanDateTime|DateTimeOffset|Last quick scan datetime|
+|lastFullScanDateTime|DateTimeOffset|Last quick scan datetime|
+|lastQuickScanSignatureVersion|String|Last quick scan signature version|
+|lastFullScanSignatureVersion|String|Last full scan signature version|
+|lastReportedDateTime|DateTimeOffset|Last device health status reported time|
 
 ## Relationships
-None
+|Relationship|Type|Description|
+|:---|:---|:---|
+|detectedMalwareState|[windowsDeviceMalwareState](../resources/intune_devices_windowsdevicemalwarestate.md) collection|Device malware list|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -29,7 +49,24 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsProtectionState",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "malwareProtectionEnabled": true,
+  "deviceState": "String",
+  "realTimeProtectionEnabled": true,
+  "networkInspectionSystemEnabled": true,
+  "quickScanOverdue": true,
+  "fullScanOverdue": true,
+  "signatureUpdateOverdue": true,
+  "rebootRequired": true,
+  "fullScanRequired": true,
+  "engineVersion": "String",
+  "signatureVersion": "String",
+  "antiMalwareVersion": "String",
+  "lastQuickScanDateTime": "String (timestamp)",
+  "lastFullScanDateTime": "String (timestamp)",
+  "lastQuickScanSignatureVersion": "String",
+  "lastFullScanSignatureVersion": "String",
+  "lastReportedDateTime": "String (timestamp)"
 }
 ```
 

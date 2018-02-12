@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3082
+Content-Length: 3783
 
 {
   "value": [
@@ -63,7 +63,9 @@ Content-Length: 3082
         {
           "@odata.type": "microsoft.graph.airPrintDestination",
           "ipAddress": "Ip Address value",
-          "resourcePath": "Resource Path value"
+          "resourcePath": "Resource Path value",
+          "port": 4,
+          "forceTls": true
         }
       ],
       "assetTagTemplate": "Asset Tag Template value",
@@ -136,7 +138,25 @@ Content-Length: 3082
           "badgesEnabled": true,
           "soundsEnabled": true
         }
-      ]
+      ],
+      "singleSignOnSettings": {
+        "@odata.type": "microsoft.graph.iosSingleSignOnSettings",
+        "allowedAppsList": [
+          {
+            "@odata.type": "microsoft.graph.appListItem",
+            "name": "Name value",
+            "publisher": "Publisher value",
+            "appStoreUrl": "https://example.com/appStoreUrl/",
+            "appId": "App Id value"
+          }
+        ],
+        "allowedUrls": [
+          "Allowed Urls value"
+        ],
+        "displayName": "Display Name value",
+        "kerberosPrincipalName": "Kerberos Principal Name value",
+        "kerberosRealm": "Kerberos Realm value"
+      }
     }
   ]
 }

@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /deviceAppManagement/mobileApps/{mobileAppId}
 GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
 GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
-GET /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app
 ```
 
 ## Optional query parameters
@@ -52,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 915
+Content-Length: 1299
 
 {
   "value": {
@@ -75,9 +74,22 @@ Content-Length: 915
     "developer": "Developer value",
     "notes": "Notes value",
     "uploadState": 11,
+    "publishingState": "processing",
     "appAvailability": "lineOfBusiness",
     "version": "Version value",
-    "packageId": "Package Id value"
+    "packageId": "Package Id value",
+    "appStoreUrl": "https://example.com/appStoreUrl/",
+    "minimumSupportedOperatingSystem": {
+      "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
+      "v4_0": true,
+      "v4_0_3": true,
+      "v4_1": true,
+      "v4_2": true,
+      "v4_3": true,
+      "v4_4": true,
+      "v5_0": true,
+      "v5_1": true
+    }
   }
 }
 ```

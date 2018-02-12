@@ -21,7 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceAppManagement/managedEBooks/{managedEBookId}
-GET /deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}/eBook
 ```
 
 ## Optional query parameters

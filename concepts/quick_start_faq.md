@@ -4,16 +4,17 @@ This FAQ answers questions related to the [Microsoft Graph Quick Starts](https:/
 
 ## What do the quick starts do?
 
-The quick start samples show you how to access the power of the Microsoft Graph. 
+The quick start samples show you how to access the power of Microsoft Graph. 
 
 If you use the Office 365 REST APIs, you have to authenticate to each service you want to call. Microsoft Graph eliminates this complexity by unifying authentication and giving you access to all APIs via a single entry point. You can authenticate once and access information across multiple applications and services. 
 
 The Microsoft Graph quick starts access three services with one authentication: Microsoft account, OneDrive, and Outlook. Each quick start accesses information from Microsoft account users' profiles, writes data to OneDrive (a photo), and generates an email using Outlook (including a link to the photo). 
 
 The quick starts involve four steps:
+
 - Select your platform 
-- Get your app ID (aka client ID)
-- Build the sample,
+- Get your app ID (client ID)
+- Build the sample
 - Sign in, and send a profile photo via email
 
 When you complete the quick start, you have an app that's ready to run.

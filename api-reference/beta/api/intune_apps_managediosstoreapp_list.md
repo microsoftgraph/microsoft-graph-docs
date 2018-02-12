@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 967
+Content-Length: 1435
 
 {
   "value": [
@@ -71,9 +71,23 @@ Content-Length: 967
       "developer": "Developer value",
       "notes": "Notes value",
       "uploadState": 11,
+      "publishingState": "processing",
       "appAvailability": "lineOfBusiness",
       "version": "Version value",
-      "bundleId": "Bundle Id value"
+      "bundleId": "Bundle Id value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "applicableDeviceType": {
+        "@odata.type": "microsoft.graph.iosDeviceType",
+        "iPad": true,
+        "iPhoneAndIPod": true
+      },
+      "minimumSupportedOperatingSystem": {
+        "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
+        "v8_0": true,
+        "v9_0": true,
+        "v10_0": true,
+        "v11_0": true
+      }
     }
   ]
 }

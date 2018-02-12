@@ -36,8 +36,10 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String|Unique Identifier|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
+|maximumDepTokens|Int32|Maximum number of dep tokens allowed per-tenant.|
+|intuneAccountId|Guid|Intune Account Id for given tenant|
 
 
 
@@ -50,17 +52,17 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement
 Content-type: application/json
-Content-length: 346
+Content-length: 291
 
 {
   "settings": {
     "@odata.type": "microsoft.graph.deviceManagementSettings",
-    "windowsCommercialId": "Windows Commercial Id value",
-    "windowsCommercialIdLastModifiedTime": "2016-12-31T23:59:46.9744002-08:00",
     "deviceComplianceCheckinThresholdDays": 4,
     "isScheduledActionEnabled": true,
     "secureByDefault": true
-  }
+  },
+  "maximumDepTokens": 0,
+  "intuneAccountId": "<Unknown Primitive Type Edm.Guid>"
 }
 ```
 
@@ -69,19 +71,19 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 450
+Content-Length: 395
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
   "id": "0b283420-3420-0b28-2034-280b2034280b",
   "settings": {
     "@odata.type": "microsoft.graph.deviceManagementSettings",
-    "windowsCommercialId": "Windows Commercial Id value",
-    "windowsCommercialIdLastModifiedTime": "2016-12-31T23:59:46.9744002-08:00",
     "deviceComplianceCheckinThresholdDays": 4,
     "isScheduledActionEnabled": true,
     "secureByDefault": true
-  }
+  },
+  "maximumDepTokens": 0,
+  "intuneAccountId": "<Unknown Primitive Type Edm.Guid>"
 }
 ```
 

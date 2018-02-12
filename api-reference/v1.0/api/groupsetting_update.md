@@ -37,10 +37,10 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `204 OK` response code and updated [groupSetting](../resources/groupsetting.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
-##### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
@@ -55,21 +55,69 @@ Content-length: 173
   "templateId": "templateId-value",
   "values": [
     {
-      "name": "name-value",
-      "value": "value-value"
+      "name": "CustomBlockedWordsList",
+      "value": ""
+    },
+    {
+      "name": "EnableMSStandardBlockedWords",
+      "value": "False"
+    },
+    {
+      "name": "ClassificationDescriptions",
+      "value": ""
+    },
+    {
+      "name": "DefaultClassification",
+      "value": ""
+    },
+    {
+      "name": "PrefixSuffixNamingRequirement",
+      "value": ""
+    },
+    {
+      "name": "AllowGuestsToBeGroupOwner",
+      "value": "False"
+    },
+    {
+      "name": "AllowGuestsToAccessGroups",
+      "value": "True"
+    },
+    {
+      "name": "GuestUsageGuidelinesUrl",
+      "value": ""
+    },
+    {
+      "name": "GroupCreationAllowedGroupId",
+      "value": "62e90394-69f5-4237-9190-012177145e10"
+    },
+    {
+      "name": "AllowToAddGuests",
+      "value": "True"
+    },
+    {
+      "name": "UsageGuidelinesUrl",
+      "value": ""
+    },
+    {
+      "name": "ClassificationList",
+      "value": ""
+    },
+    {
+      "name": "EnableGroupCreation",
+      "value": "True"
     }
   ]
 }
 ```
-##### Response
+
+#### Response
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.groupSetting"
+  "truncated": false
 } -->
 ```http
-HTTP/1.1 204 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

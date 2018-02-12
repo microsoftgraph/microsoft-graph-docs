@@ -18,6 +18,7 @@ Singleton entity that acts as a container for all device management functionalit
 |subscriptionState|String|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |subscriptions|String|Tenant's Subscription. Possible values are: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
 |adminConsent|[adminConsent](../resources/intune_devices_adminconsent.md)|Admin consent information.|
+|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune_devices_deviceprotectionoverview.md)|Device protection overview.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -28,6 +29,7 @@ Singleton entity that acts as a container for all device management functionalit
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md)|Device overview|
 |detectedApps|[detectedApp](../resources/intune_devices_detectedapp.md) collection|The list of detected apps associated with a device.|
 |managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md) collection|The list of managed devices.|
+|windowsMalwareInformation|[windowsMalwareInformation](../resources/intune_devices_windowsmalwareinformation.md) collection|The list of affected malware in the tenant.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -46,6 +48,19 @@ Here is a JSON representation of the resource.
   "adminConsent": {
     "@odata.type": "microsoft.graph.adminConsent",
     "collectFullIOSAppInventory": "String"
+  },
+  "deviceProtectionOverview": {
+    "@odata.type": "microsoft.graph.deviceProtectionOverview",
+    "totalReportedDeviceCount": 1024,
+    "inactiveThreatAgentDeviceCount": 1024,
+    "unknownStateThreatAgentDeviceCount": 1024,
+    "pendingSignatureUpdateDeviceCount": 1024,
+    "cleanDeviceCount": 1024,
+    "pendingFullScanDeviceCount": 1024,
+    "pendingRestartDeviceCount": 1024,
+    "pendingManualStepsDeviceCount": 1024,
+    "pendingOfflineScanDeviceCount": 1024,
+    "criticalFailuresDeviceCount": 1024
   }
 }
 ```

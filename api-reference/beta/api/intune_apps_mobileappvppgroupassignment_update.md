@@ -36,9 +36,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
+|id|String|Key of the entity. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md)|
 |targetGroupId|String|The Id of the AAD group we are targeting the mobile app to. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md)|
 |vpnConfigurationId|String|The Id of the Vpn Profile to apply for this app. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md)|
-|id|String|Key of the entity. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md)|
 |installIntent|String|The install intent defined by the admin. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) Possible values are: `available`, `notApplicable`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |useDeviceLicensing|Boolean|Whether or not to use device licensing.|
 
@@ -72,9 +72,9 @@ Content-Length: 286
 
 {
   "@odata.type": "#microsoft.graph.mobileAppVppGroupAssignment",
+  "id": "89a8674a-674a-89a8-4a67-a8894a67a889",
   "targetGroupId": "Target Group Id value",
   "vpnConfigurationId": "Vpn Configuration Id value",
-  "id": "89a8674a-674a-89a8-4a67-a8894a67a889",
   "installIntent": "notApplicable",
   "useDeviceLicensing": true
 }

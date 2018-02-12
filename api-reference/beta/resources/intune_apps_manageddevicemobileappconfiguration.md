@@ -17,7 +17,6 @@ An abstract class for Mobile app configuration for enrolled devices.
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |targetedMobileApps|String collection|the associated app.|
-|legacyAppConfiguration|Boolean|App configuration creation source check.|
 |createdDateTime|DateTimeOffset|DateTime the object was created.|
 |description|String|Admin provided description of the Device Configuration.|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
@@ -28,6 +27,7 @@ An abstract class for Mobile app configuration for enrolled devices.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |groupAssignments|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) collection|the associated group assignments.|
+|assignments|[managedDeviceMobileAppConfigurationAssignment](../resources/intune_apps_manageddevicemobileappconfigurationassignment.md) collection|The list of group assignemenets for app configration.|
 |deviceStatuses|[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) collection|List of ManagedDeviceMobileAppConfigurationDeviceStatus.|
 |userStatuses|[managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md) collection|List of ManagedDeviceMobileAppConfigurationUserStatus.|
 |deviceStatusSummary|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md)|App configuration device status summary.|
@@ -48,7 +48,6 @@ Here is a JSON representation of the resource.
   "targetedMobileApps": [
     "String"
   ],
-  "legacyAppConfiguration": true,
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "lastModifiedDateTime": "String (timestamp)",

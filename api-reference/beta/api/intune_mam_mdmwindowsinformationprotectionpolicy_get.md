@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4375
+Content-Length: 4343
 
 {
   "value": {
@@ -83,13 +83,14 @@ Content-Length: 4375
     "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
     "azureRightsManagementServicesAllowed": true,
     "iconsVisible": true,
-    "allowedApps": [
+    "protectedApps": [
       {
         "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
         "displayName": "Display Name value",
         "description": "Description value",
         "publisherName": "Publisher Name value",
-        "productName": "Product Name value"
+        "productName": "Product Name value",
+        "denied": true
       }
     ],
     "exemptApps": [
@@ -98,7 +99,8 @@ Content-Length: 4375
         "displayName": "Display Name value",
         "description": "Description value",
         "publisherName": "Publisher Name value",
-        "productName": "Product Name value"
+        "productName": "Product Name value",
+        "denied": true
       }
     ],
     "enterpriseNetworkDomainNames": [
@@ -110,13 +112,13 @@ Content-Length: 4375
         ]
       }
     ],
-    "enterpriseCloudResources": [
+    "enterpriseProxiedDomains": [
       {
-        "@odata.type": "microsoft.graph.windowsInformationProtectionCloudResourceCollection",
+        "@odata.type": "microsoft.graph.windowsInformationProtectionProxiedDomainCollection",
         "displayName": "Display Name value",
-        "resources": [
+        "proxiedDomains": [
           {
-            "@odata.type": "microsoft.graph.windowsInformationProtectionCloudResource",
+            "@odata.type": "microsoft.graph.proxiedDomain",
             "ipAddressOrFQDN": "Ip Address Or FQDN value",
             "proxy": "Proxy value"
           }
@@ -175,9 +177,7 @@ Content-Length: 4375
         ]
       }
     ],
-    "targetedSecurityGroupIds": [
-      "Targeted Security Group Ids value"
-    ]
+    "isAssigned": true
   }
 }
 ```

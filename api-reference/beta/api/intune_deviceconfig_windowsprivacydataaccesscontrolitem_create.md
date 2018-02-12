@@ -36,7 +36,7 @@ The following table shows the properties that are required when you create the w
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|
+|id|String|The key of WindowsPrivacyDataAccessControlItem.|
 |accessLevel|String|This indicates an access level for the privacy data category to which the specified application will be given to. Possible values are: `notConfigured`, `forceAllow`, `forceDeny`, `userInControl`.|
 |dataCategory|String|This indicates a privacy data category to which the specific access control will apply. Possible values are: `notConfigured`, `accountInfo`, `appsRunInBackground`, `calendar`, `callHistory`, `camera`, `contacts`, `diagnosticsInfo`, `email`, `location`, `messaging`, `microphone`, `motion`, `notifications`, `phone`, `radios`, `tasks`, `syncWithDevices`, `trustedDevices`.|
 |appPackageFamilyName|String|The Package Family Name of a Windows app. When set, the access level applies to the specified application.|

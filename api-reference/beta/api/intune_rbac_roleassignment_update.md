@@ -20,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /deviceManagement/roleAssignments/{roleAssignmentId}
 PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}
 ```
 
@@ -40,8 +39,8 @@ The following table shows the properties that are required when you create the [
 |id|String|Key of the entity. This is read-only and automatically generated.|
 |displayName|String|The display or friendly name of the role Assignment.|
 |description|String|Description of the Role Assignment.|
-|members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.|
 |scopeMembers|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
+|resourceScopes|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
 
 
 
@@ -52,18 +51,18 @@ If successful, this method returns a `200 OK` response code and an updated [role
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{roleAssignmentId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}
 Content-type: application/json
-Content-length: 179
+Content-length: 194
 
 {
   "displayName": "Display Name value",
   "description": "Description value",
-  "members": [
-    "Members value"
-  ],
   "scopeMembers": [
     "Scope Members value"
+  ],
+  "resourceScopes": [
+    "Resource Scopes value"
   ]
 }
 ```
@@ -73,18 +72,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 281
+Content-Length: 296
 
 {
   "@odata.type": "#microsoft.graph.roleAssignment",
   "id": "b3234d24-4d24-b323-244d-23b3244d23b3",
   "displayName": "Display Name value",
   "description": "Description value",
-  "members": [
-    "Members value"
-  ],
   "scopeMembers": [
     "Scope Members value"
+  ],
+  "resourceScopes": [
+    "Resource Scopes value"
   ]
 }
 ```

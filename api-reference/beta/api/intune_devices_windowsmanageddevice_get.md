@@ -20,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /managedDevices/{managedDevicesId}
 GET /users/{usersId}/managedDevices/{managedDeviceId}
 GET /deviceManagement/managedDevices/{managedDeviceId}
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
@@ -45,7 +44,7 @@ If successful, this method returns a `200 OK` response code and [windowsManagedD
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
+GET https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
 ```
 
 ### Response
@@ -53,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5652
+Content-Length: 6684
 
 {
   "value": {
@@ -86,7 +85,13 @@ Content-Length: 5652
           "dataQuota": 9,
           "dataUsed": 8
         }
-      ]
+      ],
+      "tpmSpecificationVersion": "Tpm Specification Version value",
+      "operatingSystemEdition": "Operating System Edition value",
+      "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
+      "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
+      "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
+      "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
     },
     "ownerType": "company",
     "deviceActionResults": [
@@ -112,19 +117,22 @@ Content-Length: 5652
     "easDeviceId": "Eas Device Id value",
     "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
     "aadRegistered": true,
-    "enrollmentType": "userEnrollment",
+    "azureADRegistered": true,
     "deviceEnrollmentType": "userEnrollment",
     "lostModeState": "enabled",
     "activationLockBypassCode": "Activation Lock Bypass Code value",
     "emailAddress": "Email Address value",
     "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
-    "deviceRegistrationState": "smsidConflict",
+    "azureADDeviceId": "Azure ADDevice Id value",
+    "deviceRegistrationState": "registered",
     "deviceCategoryDisplayName": "Device Category Display Name value",
     "isSupervised": true,
     "exchangeLastSuccessfulSyncDateTime": "2017-01-01T00:00:45.8803083-08:00",
     "exchangeAccessState": "unknown",
     "exchangeAccessStateReason": "unknown",
     "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
+    "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
+    "remoteAssistanceSessionErrorDetails": "Remote Assistance Session Error Details value",
     "isEncrypted": true,
     "userPrincipalName": "User Principal Name value",
     "model": "Model value",
@@ -177,8 +185,15 @@ Content-Length: 5652
       "codeIntegrityPolicy": "Code Integrity Policy value",
       "bootRevisionListInfo": "Boot Revision List Info value",
       "operatingSystemRevListInfo": "Operating System Rev List Info value",
-      "healthStatusMismatchInfo": "Health Status Mismatch Info value"
-    }
+      "healthStatusMismatchInfo": "Health Status Mismatch Info value",
+      "healthAttestationSupportedStatus": "Health Attestation Supported Status value"
+    },
+    "subscriberCarrier": "Subscriber Carrier value",
+    "meid": "Meid value",
+    "totalStorageSpaceInBytes": 8,
+    "freeStorageSpaceInBytes": 7,
+    "managedDeviceName": "Managed Device Name value",
+    "partnerReportedThreatState": "activated"
   }
 }
 ```

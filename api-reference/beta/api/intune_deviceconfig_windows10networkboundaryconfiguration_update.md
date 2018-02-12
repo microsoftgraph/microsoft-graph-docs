@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Request headers
@@ -57,7 +56,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2064
+Content-length: 1140
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -66,58 +65,34 @@ Content-length: 2064
   "version": 7,
   "windowsNetworkIsolationPolicy": {
     "@odata.type": "microsoft.graph.windowsNetworkIsolationPolicy",
-    "enterpriseNetworkDomainNames": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationResourceCollection",
-      "displayName": "Display Name value",
-      "resources": [
-        "Resources value"
-      ]
-    },
-    "enterpriseCloudResources": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationCloudResourceCollection",
-      "displayName": "Display Name value",
-      "resources": [
-        {
-          "@odata.type": "microsoft.graph.windowsNetworkIsolationCloudResource",
-          "ipAddressOrFQDN": "Ip Address Or FQDN value",
-          "proxy": "Proxy value"
-        }
-      ]
-    },
-    "enterpriseIPRanges": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationIPRangeCollection",
-      "displayName": "Display Name value",
-      "ranges": [
-        {
-          "@odata.type": "microsoft.graph.iPv6Range",
-          "lowerAddress": "Lower Address value",
-          "upperAddress": "Upper Address value"
-        }
-      ]
-    },
-    "enterpriseInternalProxyServers": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationResourceCollection",
-      "displayName": "Display Name value",
-      "resources": [
-        "Resources value"
-      ]
-    },
+    "enterpriseNetworkDomainNames": [
+      "Enterprise Network Domain Names value"
+    ],
+    "enterpriseCloudResources": [
+      {
+        "@odata.type": "microsoft.graph.proxiedDomain",
+        "ipAddressOrFQDN": "Ip Address Or FQDN value",
+        "proxy": "Proxy value"
+      }
+    ],
+    "enterpriseIPRanges": [
+      {
+        "@odata.type": "microsoft.graph.iPv6Range",
+        "lowerAddress": "Lower Address value",
+        "upperAddress": "Upper Address value"
+      }
+    ],
+    "enterpriseInternalProxyServers": [
+      "Enterprise Internal Proxy Servers value"
+    ],
     "enterpriseIPRangesAreAuthoritative": true,
-    "enterpriseProxyServers": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationResourceCollection",
-      "displayName": "Display Name value",
-      "resources": [
-        "Resources value"
-      ]
-    },
+    "enterpriseProxyServers": [
+      "Enterprise Proxy Servers value"
+    ],
     "enterpriseProxyServersAreAuthoritative": true,
-    "neutralDomainResources": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationResourceCollection",
-      "displayName": "Display Name value",
-      "resources": [
-        "Resources value"
-      ]
-    }
+    "neutralDomainResources": [
+      "Neutral Domain Resources value"
+    ]
   }
 }
 ```
@@ -127,7 +102,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2248
+Content-Length: 1324
 
 {
   "@odata.type": "#microsoft.graph.windows10NetworkBoundaryConfiguration",
@@ -139,58 +114,34 @@ Content-Length: 2248
   "version": 7,
   "windowsNetworkIsolationPolicy": {
     "@odata.type": "microsoft.graph.windowsNetworkIsolationPolicy",
-    "enterpriseNetworkDomainNames": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationResourceCollection",
-      "displayName": "Display Name value",
-      "resources": [
-        "Resources value"
-      ]
-    },
-    "enterpriseCloudResources": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationCloudResourceCollection",
-      "displayName": "Display Name value",
-      "resources": [
-        {
-          "@odata.type": "microsoft.graph.windowsNetworkIsolationCloudResource",
-          "ipAddressOrFQDN": "Ip Address Or FQDN value",
-          "proxy": "Proxy value"
-        }
-      ]
-    },
-    "enterpriseIPRanges": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationIPRangeCollection",
-      "displayName": "Display Name value",
-      "ranges": [
-        {
-          "@odata.type": "microsoft.graph.iPv6Range",
-          "lowerAddress": "Lower Address value",
-          "upperAddress": "Upper Address value"
-        }
-      ]
-    },
-    "enterpriseInternalProxyServers": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationResourceCollection",
-      "displayName": "Display Name value",
-      "resources": [
-        "Resources value"
-      ]
-    },
+    "enterpriseNetworkDomainNames": [
+      "Enterprise Network Domain Names value"
+    ],
+    "enterpriseCloudResources": [
+      {
+        "@odata.type": "microsoft.graph.proxiedDomain",
+        "ipAddressOrFQDN": "Ip Address Or FQDN value",
+        "proxy": "Proxy value"
+      }
+    ],
+    "enterpriseIPRanges": [
+      {
+        "@odata.type": "microsoft.graph.iPv6Range",
+        "lowerAddress": "Lower Address value",
+        "upperAddress": "Upper Address value"
+      }
+    ],
+    "enterpriseInternalProxyServers": [
+      "Enterprise Internal Proxy Servers value"
+    ],
     "enterpriseIPRangesAreAuthoritative": true,
-    "enterpriseProxyServers": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationResourceCollection",
-      "displayName": "Display Name value",
-      "resources": [
-        "Resources value"
-      ]
-    },
+    "enterpriseProxyServers": [
+      "Enterprise Proxy Servers value"
+    ],
     "enterpriseProxyServersAreAuthoritative": true,
-    "neutralDomainResources": {
-      "@odata.type": "microsoft.graph.windowsNetworkIsolationResourceCollection",
-      "displayName": "Display Name value",
-      "resources": [
-        "Resources value"
-      ]
-    }
+    "neutralDomainResources": [
+      "Neutral Domain Resources value"
+    ]
   }
 }
 ```

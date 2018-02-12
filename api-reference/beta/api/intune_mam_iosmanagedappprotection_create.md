@@ -57,7 +57,8 @@ The following table shows the properties that are required when you create the i
 |maximumPinRetries|Int32|Maximum number of incorrect pin retry attempts before the managed app is wiped. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `any`, `numeric`, `alphanumeric`, `alphanumericAndSymbol`.|
+|pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `numeric`, `alphanumericAndSymbol`.|
+|periodBeforePinReset|Duration|TimePeriod before the all-level pin must be reset if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `oneDriveForBusiness`, `sharePoint`, `localStorage`.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -67,11 +68,11 @@ The following table shows the properties that are required when you create the i
 |minimumWarningOsVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|targetedSecurityGroupsCount|Int32|The number of groups to which the configuration is deployed. Read only property. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
-|targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
+|isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |appDataEncryptionType|String|Type of encryption which should be used for data in a managed app. Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
+|faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.|
 
 
 
@@ -84,7 +85,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections
 Content-type: application/json
-Content-length: 1641
+Content-length: 1632
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -107,7 +108,8 @@ Content-length: 1641
   "maximumPinRetries": 1,
   "simplePinBlocked": true,
   "minimumPinLength": 0,
-  "pinCharacterSet": "numeric",
+  "pinCharacterSet": "alphanumericAndSymbol",
+  "periodBeforePinReset": "PT3M29.6631862S",
   "allowedDataStorageLocations": [
     "sharePoint"
   ],
@@ -119,13 +121,11 @@ Content-length: 1641
   "minimumWarningOsVersion": "Minimum Warning Os Version value",
   "minimumRequiredAppVersion": "Minimum Required App Version value",
   "minimumWarningAppVersion": "Minimum Warning App Version value",
-  "targetedSecurityGroupsCount": 11,
-  "targetedSecurityGroupIds": [
-    "Targeted Security Group Ids value"
-  ],
+  "isAssigned": true,
   "appDataEncryptionType": "afterDeviceRestart",
   "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
-  "deployedAppCount": 0
+  "deployedAppCount": 0,
+  "faceIdBlocked": true
 }
 ```
 
@@ -134,7 +134,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1749
+Content-Length: 1740
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -159,7 +159,8 @@ Content-Length: 1749
   "maximumPinRetries": 1,
   "simplePinBlocked": true,
   "minimumPinLength": 0,
-  "pinCharacterSet": "numeric",
+  "pinCharacterSet": "alphanumericAndSymbol",
+  "periodBeforePinReset": "PT3M29.6631862S",
   "allowedDataStorageLocations": [
     "sharePoint"
   ],
@@ -171,13 +172,11 @@ Content-Length: 1749
   "minimumWarningOsVersion": "Minimum Warning Os Version value",
   "minimumRequiredAppVersion": "Minimum Required App Version value",
   "minimumWarningAppVersion": "Minimum Warning App Version value",
-  "targetedSecurityGroupsCount": 11,
-  "targetedSecurityGroupIds": [
-    "Targeted Security Group Ids value"
-  ],
+  "isAssigned": true,
   "appDataEncryptionType": "afterDeviceRestart",
   "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
-  "deployedAppCount": 0
+  "deployedAppCount": 0,
+  "faceIdBlocked": true
 }
 ```
 

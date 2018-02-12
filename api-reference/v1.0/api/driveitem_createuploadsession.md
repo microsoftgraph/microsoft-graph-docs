@@ -49,6 +49,7 @@ However, you can specify a request body to provide additional data about the fil
 
 For example, to control the behavior if the filename is already taken, you can specify the conflict behavior property in the body of the request.
 
+<!-- { "blockType": "ignored" } -->
 ```json
 {
     "item": {
@@ -61,9 +62,9 @@ For example, to control the behavior if the filename is already taken, you can s
 
 | Name       | Value | Description                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *if-match* | etag  | If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` errr response is returned. |
+| *if-match* | etag  | If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` error response is returned. |
 
-### Response
+### Request
 
 The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
 
@@ -318,7 +319,7 @@ If-Match: {etag or ctag}
 
 If the file can be committed using the new metadata, an `HTTP 201 Created` or `HTTP 200 OK` response will be returned with the Item metadata for the uploaded file.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+<!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
 HTTP/1.1 201 Created

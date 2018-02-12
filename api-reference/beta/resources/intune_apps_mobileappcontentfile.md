@@ -13,8 +13,8 @@ Contains properties for a single installer file that is associated with a given 
 |[Create mobileAppContentFile](../api/intune_apps_mobileappcontentfile_create.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md)|Create a new [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) object.|
 |[Delete mobileAppContentFile](../api/intune_apps_mobileappcontentfile_delete.md)|None|Deletes a [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md).|
 |[Update mobileAppContentFile](../api/intune_apps_mobileappcontentfile_update.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md)|Update the properties of a [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) object.|
-|[commit action](../api/intune_apps_mobileappcontentfile_commit.md)|None|Not yet documented|
-|[renewUpload action](../api/intune_apps_mobileappcontentfile_renewupload.md)|None|Not yet documented|
+|[commit action](../api/intune_apps_mobileappcontentfile_commit.md)|None|Commits a file of a given app.|
+|[renewUpload action](../api/intune_apps_mobileappcontentfile_renewupload.md)|None|Renews the SAS URI for an application file upload.|
 
 ## Properties
 |Property|Type|Description|

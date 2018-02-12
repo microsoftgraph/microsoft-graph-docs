@@ -20,10 +20,10 @@
         "Content-Range",
         "Range"
       ],
-      "contentTypes": ["application/json", "multipart/related", "text/plain"]
+      "contentTypes": ["application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg"]
     },
     "httpResponse": {
-      "contentTypes": ["application/json", "multipart/related", "text/plain"],
+      "contentTypes": ["application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg"],
       "standardHeaders":
       [
         "Content-Range"

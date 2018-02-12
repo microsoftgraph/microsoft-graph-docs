@@ -1,5 +1,4 @@
 # List groups
-
 List all the groups available in an organization, including but not limited to Office 365 Groups.
 The [default properties](../api/group_get.md#default-properties) of each group are returned.
 
@@ -13,7 +12,6 @@ values, as shown in the following example:
 ```
 GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 ```
-
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -29,8 +27,10 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /groups
 ```
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -40,11 +40,11 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this method returns a `200 OK` response code and collection of [group](../resources/group.md) objects in the response body.
+
 ## Example
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_groups"
@@ -52,10 +52,11 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/v1.0/groups
 ```
-##### Response
-Here is an example of the response.
 
-Note: The response object shown here may be truncated for brevity. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.
+#### Response
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

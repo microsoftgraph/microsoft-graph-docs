@@ -15,6 +15,7 @@ Inherits from [windowsInformationProtectionApp](../resources/intune_mam_windowsi
 |description|String|The app's description. Inherited from [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
 |publisherName|String|The publisher name Inherited from [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
 |productName|String|The product name. Inherited from [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
+|denied|Boolean|If true, app is denied protection or exemption. Inherited from [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
 
 ## Relationships
 None
@@ -32,7 +33,8 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "publisherName": "String",
-  "productName": "String"
+  "productName": "String",
+  "denied": true
 }
 ```
 

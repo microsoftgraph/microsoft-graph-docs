@@ -37,6 +37,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |deviceManagementScriptGroupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune_devices_devicemanagementscriptgroupassignment.md) collection|Not yet documented|
+|deviceManagementScriptAssignments|[deviceManagementScriptAssignment](../resources/intune_devices_devicemanagementscriptassignment.md) collection|Not yet documented|
 
 
 
@@ -50,7 +51,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 
 Content-type: application/json
-Content-length: 251
+Content-length: 550
 
 {
   "deviceManagementScriptGroupAssignments": [
@@ -58,6 +59,15 @@ Content-length: 251
       "@odata.type": "#microsoft.graph.deviceManagementScriptGroupAssignment",
       "id": "ecd2357d-357d-ecd2-7d35-d2ec7d35d2ec",
       "targetGroupId": "Target Group Id value"
+    }
+  ],
+  "deviceManagementScriptAssignments": [
+    {
+      "@odata.type": "#microsoft.graph.deviceManagementScriptAssignment",
+      "id": "a87a601e-601e-a87a-1e60-7aa81e607aa8",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      }
     }
   ]
 }

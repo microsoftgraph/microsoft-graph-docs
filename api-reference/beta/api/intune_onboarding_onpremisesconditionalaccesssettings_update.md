@@ -20,6 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /deviceManagement/conditionalAccessSettings
 PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 ```
 
@@ -51,7 +52,7 @@ If successful, this method returns a `200 OK` response code and an updated [onPr
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
+PATCH https://graph.microsoft.com/beta/deviceManagement/conditionalAccessSettings
 Content-type: application/json
 Content-length: 195
 

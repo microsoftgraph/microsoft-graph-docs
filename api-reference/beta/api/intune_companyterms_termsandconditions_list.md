@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 514
+Content-Length: 582
 
 {
   "value": [
@@ -56,6 +56,7 @@ Content-Length: 514
       "id": "eefc80cf-80cf-eefc-cf80-fceecf80fcee",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "modifiedDateTime": "2017-01-01T00:00:22.8983556-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "displayName": "Display Name value",
       "description": "Description value",
       "title": "Title value",

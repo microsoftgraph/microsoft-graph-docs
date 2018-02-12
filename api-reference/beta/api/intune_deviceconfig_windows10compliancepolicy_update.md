@@ -21,7 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
-PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy
 ```
 
 ## Request headers
@@ -62,6 +61,15 @@ The following table shows the properties that are required when you create the [
 |secureBootEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation - secure boot is enabled.|
 |codeIntegrityEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation.|
 |storageRequireEncryption|Boolean|Require encryption on windows devices.|
+|activeFirewallRequired|Boolean|Require active firewall on Windows devices.|
+|uacRequired|Boolean|Require UAC on Windows devices.|
+|defenderEnabled|Boolean|Require Windows Defender Antimalware on Windows devices.|
+|defenderVersion|String|Require Windows Defender Antimalware minimum version on Windows devices.|
+|signatureOutOfDate|Boolean|Require Windows Defender Antimalware Signature to be up to date on Windows devices.|
+|rtpEnabled|Boolean|Require Windows Defender Antimalware Real-Time Protection on Windows devices.|
+|validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune_deviceconfig_operatingsystemversionrange.md) collection|The valid operating system build ranges on Windows devices. This collection can contain a maximum of 10000 elements.|
+|deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
+|deviceThreatProtectionRequiredSecurityLevel|String|Require Device Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 
 
 
@@ -74,7 +82,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 954
+Content-length: 1515
 
 {
   "description": "Description value",
@@ -99,7 +107,23 @@ Content-length: 954
   "bitLockerEnabled": true,
   "secureBootEnabled": true,
   "codeIntegrityEnabled": true,
-  "storageRequireEncryption": true
+  "storageRequireEncryption": true,
+  "activeFirewallRequired": true,
+  "uacRequired": true,
+  "defenderEnabled": true,
+  "defenderVersion": "Defender Version value",
+  "signatureOutOfDate": true,
+  "rtpEnabled": true,
+  "validOperatingSystemBuildRanges": [
+    {
+      "@odata.type": "microsoft.graph.operatingSystemVersionRange",
+      "description": "Description value",
+      "lowestVersion": "Lowest Version value",
+      "highestVersion": "Highest Version value"
+    }
+  ],
+  "deviceThreatProtectionEnabled": true,
+  "deviceThreatProtectionRequiredSecurityLevel": "secured"
 }
 ```
 
@@ -108,7 +132,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1126
+Content-Length: 1687
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -136,7 +160,23 @@ Content-Length: 1126
   "bitLockerEnabled": true,
   "secureBootEnabled": true,
   "codeIntegrityEnabled": true,
-  "storageRequireEncryption": true
+  "storageRequireEncryption": true,
+  "activeFirewallRequired": true,
+  "uacRequired": true,
+  "defenderEnabled": true,
+  "defenderVersion": "Defender Version value",
+  "signatureOutOfDate": true,
+  "rtpEnabled": true,
+  "validOperatingSystemBuildRanges": [
+    {
+      "@odata.type": "microsoft.graph.operatingSystemVersionRange",
+      "description": "Description value",
+      "lowestVersion": "Lowest Version value",
+      "highestVersion": "Highest Version value"
+    }
+  ],
+  "deviceThreatProtectionEnabled": true,
+  "deviceThreatProtectionRequiredSecurityLevel": "secured"
 }
 ```
 

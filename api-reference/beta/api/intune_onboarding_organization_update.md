@@ -38,9 +38,6 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The GUID for the object.|
 |mobileDeviceManagementAuthority|String|Mobile device management authority. Possible values are: `unknown`, `intune`, `sccm`, `office365`.|
-|defaultDeviceEnrollmentRestrictions|[defaultDeviceEnrollmentRestrictions](../resources/intune_onboarding_defaultdeviceenrollmentrestrictions.md)|Device enrollment restrictions applied to all users by default|
-|defaultDeviceEnrollmentWindowsHelloForBusinessSettings|[defaultDeviceEnrollmentWindowsHelloForBusinessSettings](../resources/intune_onboarding_defaultdeviceenrollmentwindowshelloforbusinesssettings.md)|Windows Hello for Business settings applied to all users by default|
-|defaultDeviceEnrollmentLimit|Int32|Device enrollment limit applied to all users by default|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune_onboarding_certificateconnectorsetting.md)|Certificate connector setting.|
 
 
@@ -54,71 +51,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}
 Content-type: application/json
-Content-length: 3054
+Content-length: 441
 
 {
   "mobileDeviceManagementAuthority": "intune",
-  "defaultDeviceEnrollmentRestrictions": {
-    "@odata.type": "microsoft.graph.defaultDeviceEnrollmentRestrictions",
-    "iosRestrictions": {
-      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
-      "platformBlocked": true,
-      "personalDeviceEnrollmentBlocked": true,
-      "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
-    },
-    "windowsRestrictions": {
-      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
-      "platformBlocked": true,
-      "personalDeviceEnrollmentBlocked": true,
-      "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
-    },
-    "windowsMobileRestrictions": {
-      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
-      "platformBlocked": true,
-      "personalDeviceEnrollmentBlocked": true,
-      "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
-    },
-    "androidRestrictions": {
-      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
-      "platformBlocked": true,
-      "personalDeviceEnrollmentBlocked": true,
-      "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
-    },
-    "androidForWorkRestrictions": {
-      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
-      "platformBlocked": true,
-      "personalDeviceEnrollmentBlocked": true,
-      "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
-    },
-    "macRestrictions": {
-      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
-      "platformBlocked": true,
-      "personalDeviceEnrollmentBlocked": true,
-      "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
-    }
-  },
-  "defaultDeviceEnrollmentWindowsHelloForBusinessSettings": {
-    "@odata.type": "microsoft.graph.defaultDeviceEnrollmentWindowsHelloForBusinessSettings",
-    "pinMinimumLength": 0,
-    "pinMaximumLength": 0,
-    "pinUppercaseLettersUsage": "required",
-    "pinLowercaseLettersUsage": "required",
-    "pinSpecialCharactersUsage": "required",
-    "windowsHelloForBusiness": "enabled",
-    "securityDeviceRequired": true,
-    "unlockWithBiometricsEnabled": true,
-    "mobilePinSignInEnabled": true,
-    "pinPreviousBlockCount": 5,
-    "pinExpirationInDays": 3,
-    "enhancedBiometrics": "enabled"
-  },
-  "defaultDeviceEnrollmentLimit": 12,
   "certificateConnectorSetting": {
     "@odata.type": "microsoft.graph.certificateConnectorSetting",
     "status": 6,
@@ -136,73 +72,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3154
+Content-Length: 541
 
 {
   "@odata.type": "#microsoft.graph.organization",
   "id": "9efe224a-224a-9efe-4a22-fe9e4a22fe9e",
   "mobileDeviceManagementAuthority": "intune",
-  "defaultDeviceEnrollmentRestrictions": {
-    "@odata.type": "microsoft.graph.defaultDeviceEnrollmentRestrictions",
-    "iosRestrictions": {
-      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
-      "platformBlocked": true,
-      "personalDeviceEnrollmentBlocked": true,
-      "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
-    },
-    "windowsRestrictions": {
-      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
-      "platformBlocked": true,
-      "personalDeviceEnrollmentBlocked": true,
-      "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
-    },
-    "windowsMobileRestrictions": {
-      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
-      "platformBlocked": true,
-      "personalDeviceEnrollmentBlocked": true,
-      "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
-    },
-    "androidRestrictions": {
-      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
-      "platformBlocked": true,
-      "personalDeviceEnrollmentBlocked": true,
-      "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
-    },
-    "androidForWorkRestrictions": {
-      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
-      "platformBlocked": true,
-      "personalDeviceEnrollmentBlocked": true,
-      "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
-    },
-    "macRestrictions": {
-      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
-      "platformBlocked": true,
-      "personalDeviceEnrollmentBlocked": true,
-      "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
-    }
-  },
-  "defaultDeviceEnrollmentWindowsHelloForBusinessSettings": {
-    "@odata.type": "microsoft.graph.defaultDeviceEnrollmentWindowsHelloForBusinessSettings",
-    "pinMinimumLength": 0,
-    "pinMaximumLength": 0,
-    "pinUppercaseLettersUsage": "required",
-    "pinLowercaseLettersUsage": "required",
-    "pinSpecialCharactersUsage": "required",
-    "windowsHelloForBusiness": "enabled",
-    "securityDeviceRequired": true,
-    "unlockWithBiometricsEnabled": true,
-    "mobilePinSignInEnabled": true,
-    "pinPreviousBlockCount": 5,
-    "pinExpirationInDays": 3,
-    "enhancedBiometrics": "enabled"
-  },
-  "defaultDeviceEnrollmentLimit": 12,
   "certificateConnectorSetting": {
     "@odata.type": "microsoft.graph.certificateConnectorSetting",
     "status": 6,

@@ -10,7 +10,7 @@ The ManagedAppPolicy resource represents a base type for platform specific polic
 |:---|:---|:---|
 |[List managedAppPolicies](../api/intune_mam_managedapppolicy_list.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) objects.|
 |[Get managedAppPolicy](../api/intune_mam_managedapppolicy_get.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Read properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) object.|
-|[updateMobileAppIdentifierDeployments action](../api/intune_mam_managedapppolicy_updatemobileappidentifierdeployments.md)|None|Not yet documented|
+|[targetApps action](../api/intune_mam_managedapppolicy_targetapps.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|

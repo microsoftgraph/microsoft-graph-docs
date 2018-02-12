@@ -127,8 +127,8 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 
 Get instances of a supported resource that have the extended property matching a filter on the 
 **id** and **value** properties. Make sure you apply 
-[URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - 
-forward slash and space.
+[URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, 
+forward slash, and space.
 
 
 Get **message** instances:
@@ -209,7 +209,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 |:-----|:-----|:-----|
 |_URL parameters_|
 |id_value|String|The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
-|property_value|String|The value of the extended property to match. Required where listed in the **HTTP request** section above.|
+|property_value |String|The value of the extended property to match. Required where listed in the **HTTP request** section above. If {property_value} is not a string, make sure you explicitly cast `ep/value` to the appropriate Edm data type when comparing it with {property_value}. See [request 3](#request-3) below for examples. |
 
 ## Request headers
 | Name      |Description|
@@ -243,7 +243,7 @@ extended property that has its **id** matching the string `String {66f5a359-4659
 ```http
 GET https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA=')?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
-##### Response 1
+#### Response 1
 The response body includes all the properties of the specified message and extended property returned from the filter.
 
 Note: The **message** object shown here is truncated for brevity. All of the properties will be returned from an actual call.
@@ -287,27 +287,66 @@ Content-type: application/json
 }
 ```
 
-****
-
 #### Request 2
 
-The second example gets messages that have the single-value extended property specified in the filter. The filter 
-returns the extended property that has:
+The second example gets messages that have the string-typed single-value extended property specified in the filter. The filter 
+looks for the extended property that has:
+
 - Its **id** matching the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`
 (with URL encoding removed here for ease of reading).
-- Its **value** being `Green`.
+
+- Its **value** being the string `Green`.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/api/beta/Me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
+GET https://graph.microsoft.com/beta/Me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
 ```
 
-##### Response 2
+#### Response 2
 
 A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all 
 the properties of the messages that have the extended property matching the filter. The response body is
 similar to the response from [getting a message collection](../api/user_list_messages.md). The response does not 
 include the matching extended property.
+
+
+#### Request 3
+
+The next 2 examples show how to get messages that have non-string typed single-value extended properties. For ease of reading, they do not 
+include the necessary URL encoding.
+
+The following example shows a filter that looks for the extended property that has:
+
+- Its **id** matching the string `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.
+
+- Its **value** being the GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`. To compare the property value with a GUID, cast `ep/value` to `Edm.Guid`.
+
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid' and cast(ep/value, Edm.Guid) eq (b9cf8971-7d55-4b73-9ffa-a584611b600b))
+```
+
+The next example shows a filter that looks for the extended property that has:
+
+- Its **id** matching the string `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete`.
+
+- Its **value** equal to the integer 12. To compare the property value with an integer, cast `ep/value` to `Edm.Int32`.
+
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete' and cast(ep/value, Edm.Int32) eq 12)
+```
+
+
+#### Response 3
+
+For each of the preceding 2 examples, a successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all 
+the properties of the messages that have the extended property matching the corresponding filter. The response body is
+similar to the response from [getting a message collection](../api/user_list_messages.md). The response does not 
+include the matching extended property.
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

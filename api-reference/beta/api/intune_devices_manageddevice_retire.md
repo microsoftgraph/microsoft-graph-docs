@@ -20,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /managedDevices/{managedDevicesId}/retire
 POST /users/{usersId}/managedDevices/{managedDeviceId}/retire
 POST /deviceManagement/managedDevices/{managedDeviceId}/retire
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/retire
@@ -43,7 +42,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/retire
+POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/retire
 ```
 
 ### Response

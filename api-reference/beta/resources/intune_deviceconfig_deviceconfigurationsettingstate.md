@@ -12,7 +12,7 @@ Device Configuration Setting State for a given device.
 |settingName|String|Localized/user friendly setting name that is being reported|
 |instanceDisplayName|String|Name of setting instance that is being reported.|
 |state|String|The compliance state of the setting Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
-|errorCode|Int32|Error code for the setting|
+|errorCode|Int64|Error code for the setting|
 |errorDescription|String|Error description|
 |userId|String|UserId|
 |userName|String|UserName|

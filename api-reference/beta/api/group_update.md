@@ -5,9 +5,7 @@
 Update the properties of a [group](../resources/group.md) object.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
-
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -23,13 +21,11 @@ PATCH /groups/{id}
 ```
 
 ## Request headers
-
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property   | Type |Description|
@@ -50,16 +46,14 @@ Since the **group** resource supports [extensions](../../../concepts/extensibili
 - You can update **autoSubscribeNewMembers** by specifying it in its own PATCH request, 
 without including the other properties in the table above.
 - Only a subset of the group API pertaining to core group administration and management support application 
-and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes) for examples.
+and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes) for examples.
 
 ## Response
-
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-
-##### Request
-
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_group"
@@ -81,7 +75,8 @@ Content-length: 211
 }
 ```
 
-##### Response
+#### Response
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true,

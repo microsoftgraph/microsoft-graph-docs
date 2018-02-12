@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1572
+Content-Length: 1658
 
 {
   "value": [
@@ -71,6 +71,7 @@ Content-Length: 1572
       "developer": "Developer value",
       "notes": "Notes value",
       "uploadState": 11,
+      "publishingState": "processing",
       "autoAcceptEula": true,
       "productIds": [
         "o365BusinessRetail"
@@ -96,7 +97,8 @@ Content-Length: 1572
       "officePlatformArchitecture": "x86",
       "localesToInstall": [
         "Locales To Install value"
-      ]
+      ],
+      "installProgressDisplayLevel": "full"
     }
   ]
 }

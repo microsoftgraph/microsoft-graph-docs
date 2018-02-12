@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 934
+Content-Length: 1191
 
 {
   "value": [
@@ -67,8 +67,11 @@ Content-Length: 934
       "eapType": "eapTtls",
       "authenticationMethod": "usernameAndPassword",
       "nonEapAuthenticationMethodForEapTtls": "challengeHandshakeAuthenticationProtocol",
+      "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
       "nonEapAuthenticationMethodForPeap": "microsoftChapVersionTwo",
-      "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value"
+      "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
+      "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value",
+      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
     }
   ]
 }

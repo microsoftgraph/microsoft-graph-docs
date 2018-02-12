@@ -4,14 +4,14 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Not yet documented
+Represents a group that should be excluded from an assignment.
 
 Inherits from [groupAssignmentTarget](../resources/intune_onboarding_groupassignmenttarget.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|groupId|String|Not yet documented Inherited from [groupAssignmentTarget](../resources/intune_onboarding_groupassignmenttarget.md)|
+|groupId|String|The group Id that is the target of the assignment. Inherited from [groupAssignmentTarget](../resources/intune_onboarding_groupassignmenttarget.md)|
 
 ## Relationships
 None

@@ -51,19 +51,19 @@ The following table shows the properties that are required when you create the m
 |rightsManagementServicesTemplateId|Guid|TemplateID GUID to use for RMS encryption. The RMS template allows the IT admin to configure the details about who has access to RMS-protected file and how long they have access Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |azureRightsManagementServicesAllowed|Boolean|Specifies whether to allow Azure RMS encryption for WIP Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |iconsVisible|Boolean|Determines whether overlays are added to icons for WIP protected files in Explorer and enterprise only app tiles in the Start menu. Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
-|allowedApps|[windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md) collection|Allowed applications can access enterprise data and the data handled by those applications are protected with encryption Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|protectedApps|[windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md) collection|Protected applications can access enterprise data and the data handled by those applications are protected with encryption Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |exemptApps|[windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md) collection|Exempt applications can also access enterprise data, but the data handled by those applications are not protected. This is because some critical enterprise applications may have compatibility problems with encrypted data. Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseNetworkDomainNames|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|This is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
-|enterpriseCloudResources|[windowsInformationProtectionCloudResourceCollection](../resources/intune_mam_windowsinformationprotectioncloudresourcecollection.md) collection|Contains a list of Enterprise resource domains hosted in the cloud that need to be protected. Connections to these resources are considered enterprise data. If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80). A proxy server used for this purpose must also be configured using the EnterpriseInternalProxyServers policy Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|enterpriseProxiedDomains|[windowsInformationProtectionProxiedDomainCollection](../resources/intune_mam_windowsinformationprotectionproxieddomaincollection.md) collection|Contains a list of Enterprise resource domains hosted in the cloud that need to be protected. Connections to these resources are considered enterprise data. If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80). A proxy server used for this purpose must also be configured using the EnterpriseInternalProxyServers policy Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseIPRanges|[windowsInformationProtectionIPRangeCollection](../resources/intune_mam_windowsinformationprotectioniprangecollection.md) collection|Sets the enterprise IP ranges that define the computers in the enterprise network. Data that comes from those computers will be considered part of the enterprise and protected. These locations will be considered a safe destination for enterprise data to be shared to Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseIPRangesAreAuthoritative|Boolean|Boolean value that tells the client to accept the configured list and not to use heuristics to attempt to find other subnets. Default is false Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseProxyServers|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|This is a list of proxy servers. Any server not on this list is considered non-enterprise Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
-|enterpriseInternalProxyServers|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|This is the comma-separated list of internal proxy servers. For example, "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59". These proxies have been configured by the admin to connect to specific resources on the Internet. They are considered to be enterprise network locations. The proxies are only leveraged in configuring the EnterpriseCloudResources policy to force traffic to the matched cloud resources through these proxies Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|enterpriseInternalProxyServers|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|This is the comma-separated list of internal proxy servers. For example, "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59". These proxies have been configured by the admin to connect to specific resources on the Internet. They are considered to be enterprise network locations. The proxies are only leveraged in configuring the EnterpriseProxiedDomains policy to force traffic to the matched domains through these proxies Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseProxyServersAreAuthoritative|Boolean|Boolean value that tells the client to accept the configured list of proxies and not try to detect other work proxies. Default is false Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |neutralDomainResources|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|List of domain names that can used for work or personal resource Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |indexingEncryptedStoresOrItemsBlocked|Boolean|This switch is for the Windows Search Indexer, to allow or disallow indexing of items Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |smbAutoEncryptedFileExtensions|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
-|targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not. Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 
 
 
@@ -76,7 +76,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mdmWindowsInformationProtectionPolicies
 Content-type: application/json
-Content-length: 3998
+Content-length: 3966
 
 {
   "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
@@ -107,13 +107,14 @@ Content-length: 3998
   "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
-  "allowedApps": [
+  "protectedApps": [
     {
       "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
       "displayName": "Display Name value",
       "description": "Description value",
       "publisherName": "Publisher Name value",
-      "productName": "Product Name value"
+      "productName": "Product Name value",
+      "denied": true
     }
   ],
   "exemptApps": [
@@ -122,7 +123,8 @@ Content-length: 3998
       "displayName": "Display Name value",
       "description": "Description value",
       "publisherName": "Publisher Name value",
-      "productName": "Product Name value"
+      "productName": "Product Name value",
+      "denied": true
     }
   ],
   "enterpriseNetworkDomainNames": [
@@ -134,13 +136,13 @@ Content-length: 3998
       ]
     }
   ],
-  "enterpriseCloudResources": [
+  "enterpriseProxiedDomains": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionCloudResourceCollection",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionProxiedDomainCollection",
       "displayName": "Display Name value",
-      "resources": [
+      "proxiedDomains": [
         {
-          "@odata.type": "microsoft.graph.windowsInformationProtectionCloudResource",
+          "@odata.type": "microsoft.graph.proxiedDomain",
           "ipAddressOrFQDN": "Ip Address Or FQDN value",
           "proxy": "Proxy value"
         }
@@ -199,9 +201,7 @@ Content-length: 3998
       ]
     }
   ],
-  "targetedSecurityGroupIds": [
-    "Targeted Security Group Ids value"
-  ]
+  "isAssigned": true
 }
 ```
 
@@ -210,7 +210,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4106
+Content-Length: 4074
 
 {
   "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
@@ -243,13 +243,14 @@ Content-Length: 4106
   "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
-  "allowedApps": [
+  "protectedApps": [
     {
       "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
       "displayName": "Display Name value",
       "description": "Description value",
       "publisherName": "Publisher Name value",
-      "productName": "Product Name value"
+      "productName": "Product Name value",
+      "denied": true
     }
   ],
   "exemptApps": [
@@ -258,7 +259,8 @@ Content-Length: 4106
       "displayName": "Display Name value",
       "description": "Description value",
       "publisherName": "Publisher Name value",
-      "productName": "Product Name value"
+      "productName": "Product Name value",
+      "denied": true
     }
   ],
   "enterpriseNetworkDomainNames": [
@@ -270,13 +272,13 @@ Content-Length: 4106
       ]
     }
   ],
-  "enterpriseCloudResources": [
+  "enterpriseProxiedDomains": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionCloudResourceCollection",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionProxiedDomainCollection",
       "displayName": "Display Name value",
-      "resources": [
+      "proxiedDomains": [
         {
-          "@odata.type": "microsoft.graph.windowsInformationProtectionCloudResource",
+          "@odata.type": "microsoft.graph.proxiedDomain",
           "ipAddressOrFQDN": "Ip Address Or FQDN value",
           "proxy": "Proxy value"
         }
@@ -335,9 +337,7 @@ Content-Length: 4106
       ]
     }
   ],
-  "targetedSecurityGroupIds": [
-    "Targeted Security Group Ids value"
-  ]
+  "isAssigned": true
 }
 ```
 

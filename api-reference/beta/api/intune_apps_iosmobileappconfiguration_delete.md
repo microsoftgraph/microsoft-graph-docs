@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /iosMobileAppConfigurations/{iosMobileAppConfigurationsId}
+DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 ```
 
 ## Request headers
@@ -39,7 +39,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-DELETE https://graph.microsoft.com/beta/iosMobileAppConfigurations/{iosMobileAppConfigurationsId}
+DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 ```
 
 ### Response

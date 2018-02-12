@@ -30,7 +30,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|DestinationId|String|The destination folder ID, or the `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` well-known folder name.|
+|destinationId|String|The destination folder ID, or the `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` well-known folder name.|
+
 
 ## Response
 
@@ -50,7 +51,7 @@ Content-type: application/json
 Content-length: 44
 
 {
-  "DestinationId": "destinationId-value"
+  "destinationId": "destinationId-value"
 }
 ```
 

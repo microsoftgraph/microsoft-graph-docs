@@ -55,7 +55,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 429
+Content-length: 472
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -67,7 +67,9 @@ Content-length: 429
     {
       "@odata.type": "microsoft.graph.airPrintDestination",
       "ipAddress": "Ip Address value",
-      "resourcePath": "Resource Path value"
+      "resourcePath": "Resource Path value",
+      "port": 4,
+      "forceTls": true
     }
   ]
 }
@@ -78,7 +80,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 537
+Content-Length: 580
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -92,7 +94,9 @@ Content-Length: 537
     {
       "@odata.type": "microsoft.graph.airPrintDestination",
       "ipAddress": "Ip Address value",
-      "resourcePath": "Resource Path value"
+      "resourcePath": "Resource Path value",
+      "port": 4,
+      "forceTls": true
     }
   ]
 }

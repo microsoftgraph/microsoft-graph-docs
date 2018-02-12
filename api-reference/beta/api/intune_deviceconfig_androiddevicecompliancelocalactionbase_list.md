@@ -47,13 +47,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 170
+Content-Length: 204
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.androidDeviceComplianceLocalActionBase",
-      "id": "63e17619-7619-63e1-1976-e1631976e163"
+      "id": "63e17619-7619-63e1-1976-e1631976e163",
+      "gracePeriodInMinutes": 4
     }
   ]
 }

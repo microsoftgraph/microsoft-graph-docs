@@ -25,7 +25,6 @@ GET me/devices
 
 ## Request headers
 
-
 | Header |Value
 |:----|:------|
 |Authorization| Bearer {token}. Required. |
@@ -38,12 +37,15 @@ Do not supply a request body for this method.
 
 If successful, this method returns a 200 response code and the user device properties in the response body.
 
+<!-- { "blockType": "ignored" } -->
+
 ```http
 HTTP/1.1 200 OK
 ```
 
-```json
+<!-- { "blockType": "ignored" } -->
 
+```json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices",
   "value": [
@@ -53,7 +55,6 @@ HTTP/1.1 200 OK
       "status": "status",
       "platform": "platform",
       "kind": "formFactor",
-      "image": "image",
       "model": "model",
       "manufacturer": "manufacturer",
     }
@@ -61,32 +62,17 @@ HTTP/1.1 200 OK
 }
 ```
 
-## User device properties
-
-|**Name**|**Type**|**Description R/O**|
-|:----|:------|:------|
-|name| String | Friendly name of a device|
-|id| String| ID of a device|
-|status | String| Device is online or offline|
-|commands | contained navigation Collection(graph.microsoft.command) | Set of commands sent to this device|
-|platform |String|Platform of device|
-|kind| String| Form factor of device|
-|image| String| Location to icon image of device|
-|model| String| Model of device|
-|manufacturer| String| Manufacturer of device|
-
 ## Example
 This example will return the list of devices for a user. To command a device using `me/devices/{id}/command`, you will need to get the ID of the device that is returned.
 
-##### Request
+#### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
-  "name": "get_devices"
+  "blockType": "ignored",
+  "name": "list_devices"
 }-->
-
 
 ```http
 GET me/devices
@@ -94,32 +80,33 @@ Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
 ```
 
-##### Response
+#### Response
+
+The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "blockType": "ignored",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device",
   "isCollection": true
 } -->
 
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 140
 
 {
   "value": [
     {
-    "name": "JimSurface",
-    "id": "6841b3db-2b55-467b-ad84-79a41a4ef665",
-    "manufacturer": "Microsoft Corporation",
-    "model": "Surface Book",
-    "kind": "Tablet",
-    "status": "Unknown",
-    "platform": "Windows"
+      "Name": "JimSurface",
+      "id": "6841b3db-2b55-467b-ad84-79a41a4ef665",
+      "Manufacturer": "Microsoft Corporation",
+      "Model": "Surface Book",
+      "Kind": "Tablet",
+      "Status": "Unknown",
+      "Platform": "Windows"
     }
   ]
 }
 ```
-
-
-

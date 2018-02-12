@@ -6,7 +6,6 @@ You can get this information via the People API. For examples, see the [Examples
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
- 
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -18,25 +17,21 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/people/?$search='{property_value}'
-GET /me/people/?$filter={person_property} eq '{property_value}'
+GET /me/people/{id}
+GET /users/{id | userPrincipalName}/people/{id}
 ```
 
 ## Optional query parameters
-|Name|Value|Description|
-|:---------------|:--------|:-------|
-|$filter|string|Limits the response to only those people whose record contains the specified criteria.|
-|$orderby|string|By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.|
-|$search|string|Search for people by name or alias. Supports fuzzy matching.|
-|$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.|
-|$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.|
-|$top|int|Number of results to be returned.|
+This method supports the following [OData query parameters](../../../concepts/query_parameters.md) to help customize the response, with examples shown in the article [Get relevant information about people](../../../concepts/people_example.md).
 
-## Parameters
-| Parameter |Type       |Description|
-|:----------|:----------|:----------|
-|property_value|String     |The value of the extended property to match. Required where listed in the **HTTP request** section.|
-|person_property|String    |The person property to match. Required where listed in the **HTTP request** section.|
+|Name|Value|Description| 
+|:---------------|:--------|:-------| 
+|$filter|string|Limits the response to only those people whose record contains the specified criteria.| 
+|$orderby|string|By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.| 
+|$search|string|Search for people by name or alias. Supports Fuzzy matching.| 
+|$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.| 
+|$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.| 
+|$top|int|Number of results to be returned.| 
 
 ## Request headers
 | Name      |Description|
@@ -45,126 +40,106 @@ GET /me/people/?$filter={person_property} eq '{property_value}'
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
-If successful, this method returns a `200 OK` response code and a [person](../resources/person.md) object in the response body. The response can contain one person instance or a collection of person instances. 
+If successful, this method returns a `200 OK` response code and a [person](../resources/person.md) object in the response body.
+
 ## Examples
-### Perform a search 
-The following request does a search for a person named Irene McGowan. 
+#### Request 1
+The following is an example of the request that gets the person who has this ID in the user's organization. 
 
 <!-- {
   "blockType": "request",
-  "name": "get_person"
+  "name": "get_person_by_id"
 }-->
-
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowan"
+GET https://graph.microsoft.com/v1.0/me/people/e3d0513b-449e-4198-ba6f-bd97ae7cae85
 ```
 
-The following example shows the response. 
+#### Response 1
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
-  "name": "get_person",
+  "name": "get_person_by_id",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.person"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 629
 
 {
-    "value": [
-       {
-           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
-           "displayName": "Irene McGowan",
-           "givenName": "Irene",
-           "surname": "McGowan",
-           "birthday": "",
-           "personNotes": "",
-           "isFavorite": false,
-           "jobTitle": "Auditor",
-           "companyName": null,
-           "yomiCompany": "",
-           "department": "Finance",
-           "officeLocation": "12/1110",
-           "profession": "",
-           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
-           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
-           "scoredEmailAddresses": [
-               {
-                   "address": "irenem@contoso.onmicrosoft.com",
-                   "relevanceScore": -16.446060612802224
-               }
-           ],
-           "phones": [
-               {
-                   "type": "Business",
-                   "number": "+1 412 555 0109"
-               }
-           ],
-           "postalAddresses": [],
-           "websites": [],
-           "personType": [
-               {
-                    "class": "Person",
-                    "subclass": "OrganizationUser"
-                }
-            ]
-       }
-   ]
+  "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+  "displayName": "Isaiah Langer",
+  "givenName": "Isaiah",
+  "surname": "Langer",
+  "birthday": "",
+  "personNotes": "",
+  "isFavorite": false,
+  "jobTitle": "Web Marketing Manager",
+  "companyName": null,
+  "yomiCompany": "",
+  "department": "Sales & Marketing",
+  "officeLocation": "20/1101",
+  "profession": "",
+  "userPrincipalName": "IsaiahL@contoso.com",
+  "imAddress": "sip:isaiahl@contoso.com",
+  "scoredEmailAddresses": [
+      {
+          "address": "IsaiahL@contoso.com",
+          "relevanceScore": 20.0
+      }
+  ],
+  "phones": [
+      {
+          "type": "business",
+          "number": "+1 918 555 0101"
+      }
+  ],
+  "postalAddresses": [],
+  "websites": [],
+  "personType": {
+      "class": "Person",
+      "subclass": "OrganizationUser"
+  }
 }
 ```
-### Select the fields to return in a filtered response 
-You can combine the *$select* and *$filter* parameters to create a custom list of people relevant to the user and get only the fields that your application needs. 
 
-The following example gets the **displayName** and **scoredEmailAddresses** of people whose display name equals the specified name. In this example, only people whose display name equals "Lorrie Frye" are returned.
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'
-```
-
-The following is the properly encoded URL for the example request.
+#### Request 2
+The following is an example of the request that gets the person who has this ID in the user's organization and restricts the response to the selected properties.
 
 <!-- {
   "blockType": "request",
-  "name": "get_person_select_and_filter"
+  "name": "get_person_by_id_with_select"
 }-->
-
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName%20eq%20'Lorrie Frye'
+GET https://graph.microsoft.com/v1.0/me/people/e3d0513b-449e-4198-ba6f-bd97ae7cae85?$select=displayName
 ```
+#### Response 2
+The following is an example of the response.
 
-The following example shows the response. 
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
-  "name": "get_person_select_and_filter",
+  "name": "get_person_by_id_with_select",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.person"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 305
 
 {
-    "value": [
-        {
-            "id": "8CE6E1DE-CB84-4BF5-971D-D3ECF452E2B5",
-            "displayName": "Lorrie Frye",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8.0
-                }
-            ]
-        }
-    ]
+  "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+  "displayName": "Isaiah Langer"
 }
 ```
 

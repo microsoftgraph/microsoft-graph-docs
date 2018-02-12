@@ -45,11 +45,9 @@ Content-type: application/json
 Content-length: 150
 
 {
-  "administrativeUnit": {
-    "displayName": "displayName-value",
-    "description": "description-value",
-    "visibility": "visibility-value"
-  }
+    "displayName": "Seattle District Technical Schools",
+    "description": "Seattle district technical schools administration",
+    "visibility": "true"
 }
 ```
 In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.
@@ -67,10 +65,10 @@ Content-length: 172
 
 {
   "administrativeUnit": {
-    "displayName": "displayName-value",
-    "description": "description-value",
-    "visibility": "visibility-value",
-    "id": "id-value"
+    "displayName": "Seattle District Technical Schools",
+    "description": "Seattle district technical schools administration",
+    "visibility": "true",
+    "id": "7a3dc8f3-b3a0-4164-9a99-ed36f3af039f"
   }
 }
 ```

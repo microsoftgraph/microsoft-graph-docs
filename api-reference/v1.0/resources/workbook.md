@@ -31,9 +31,22 @@ _Important notes:_
 * The range input parameter is supplied using a range object instead of the range address string.  
 * The index parameter is 1-indexed unlike the 0-index used in most of the APIs. 
 
-Example: 
+Example: **vlookup**
 
-In the below example, `vlookup` function is called by passing lookup value, input range and the value to be returned. 
+In an Excel spreadsheet, the `vlookup` function takes the following arguments:
+
+1. The value you want to look up, also called the lookup value.
+2. The range where the lookup value is located. Remember that the lookup value should always be in the first column in the range for VLOOKUP to work correctly. For example, if your lookup value is in cell C2 then your range should start with C.
+3. The column number in the range that contains the return value. For example, if you specify B2: D11 as the range, you should count B as the first column, C as the second, and so on.
+4. Optionally, you can specify TRUE if you want an approximate match or FALSE if you want an exact match of the return value. If you don't specify anything, the default value will always be TRUE or approximate match.
+
+Inside a cell, the `vlookup` function looks like this: 
+
+=VLOOKUP(lookup value, range containing the lookup value, the column number in the range containing the return value, optionally specify TRUE for approximate match or FALSE for an exact match)
+
+(See the documentation for the [VLOOKUP Excel function](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)
+
+The example below shows how to call the `vlookup` function and pass these parameters with the Excel REST API.
 
 Request: 
 
@@ -66,9 +79,17 @@ content-type: application/json;odata.metadata
 }
 ```
 
-Example: 
+Example: `median`
 
-In the below example, `median` function is called by passing the input range(s) in an array. 
+In an Excel spreadsheet, the `median` function takes an array of one or more input ranges.
+
+Inside a cell, the `median` function looks like this example:
+
+=MEDIAN(A2:A6)
+
+(See the documentation for the [MEDIAN Excel function](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)
+
+The example below shows how to call the `median` function and one or more input ranges with the Excel REST API. 
 
 Request: 
 

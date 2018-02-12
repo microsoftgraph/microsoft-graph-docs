@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Request headers
@@ -56,7 +55,7 @@ The following table shows the properties that are required when you create the [
 |featureUpdatesPaused|Boolean|Pause Feature Updates|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Quality Updates Pause Expiry datetime|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Feature Updates Pause Expiry datetime|
-|businessReadyUpdatesOnly|String|Business ready updates only or regular updates allowed too Possible values are: `userDefined`, `all`, `businessReadyOnly`.|
+|businessReadyUpdatesOnly|String|Determines which branch devices will receive their updates from Possible values are: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
 |previewBuildSetting|String|Set the insider build control in the advanced options for Windows Update Possible values are: `userDefined`, `allowed`, `notAllowed`.|
 
 

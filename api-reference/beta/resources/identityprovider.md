@@ -39,12 +39,17 @@ Each identity provider has a process for creating an app registration. For examp
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.IdentityProvider"
+} -->
+
 ```json
 {
-    "id": "Amazon-OAUTH",
-    "type": "Amazon",
-    "name": "Login with Amazon",
-    "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-    "clientSecret": "*****"
+    "id": "String",
+    "type": "String",
+    "name": "String",
+    "clientId": "String",
+    "clientSecret": "String"
 }
 ```

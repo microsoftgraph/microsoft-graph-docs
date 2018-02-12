@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Optional query parameters
@@ -51,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6931
+Content-Length: 7771
 
 {
   "value": {
@@ -62,6 +61,17 @@ Content-Length: 6931
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "defenderSecurityCenterDisableAppBrowserUI": true,
+    "defenderSecurityCenterDisableFamilyUI": true,
+    "defenderSecurityCenterDisableHealthUI": true,
+    "defenderSecurityCenterDisableNetworkUI": true,
+    "defenderSecurityCenterDisableVirusUI": true,
+    "defenderSecurityCenterOrganizationDisplayName": "Defender Security Center Organization Display Name value",
+    "defenderSecurityCenterHelpEmail": "Defender Security Center Help Email value",
+    "defenderSecurityCenterHelpPhone": "Defender Security Center Help Phone value",
+    "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
+    "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
+    "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
     "firewallBlockStatefulFTP": true,
     "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
     "firewallPreSharedKeyEncodingMethod": "none",
@@ -151,6 +161,7 @@ Content-Length: 6931
     "applicationGuardAllowPrintToXPS": true,
     "applicationGuardAllowPrintToLocalPrinters": true,
     "applicationGuardAllowPrintToNetworkPrinters": true,
+    "applicationGuardAllowVirtualGPU": true,
     "bitLockerDisableWarningForOtherDiskEncryption": true,
     "bitLockerEnableStorageCardEncryptionOnMobile": true,
     "bitLockerEncryptDevice": true,

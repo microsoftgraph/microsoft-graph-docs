@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /iosMobileAppConfigurations/{iosMobileAppConfigurationsId}
+GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 ```
 
 ## Optional query parameters
@@ -41,7 +41,7 @@ If successful, this method returns a `200 OK` response code and [iosMobileAppCon
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/iosMobileAppConfigurations/{iosMobileAppConfigurationsId}
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 ```
 
 ### Response
@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 786
+Content-Length: 749
 
 {
   "value": {
@@ -58,7 +58,6 @@ Content-Length: 786
     "targetedMobileApps": [
       "Targeted Mobile Apps value"
     ],
-    "legacyAppConfiguration": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

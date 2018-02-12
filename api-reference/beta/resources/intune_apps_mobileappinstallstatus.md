@@ -21,12 +21,14 @@ Contains properties for the installation state of a mobile app for a device.
 |deviceName|String|Device name|
 |deviceId|String|Device ID|
 |lastSyncDateTime|DateTimeOffset|Last sync date time|
-|mobileAppInstallStatusValue|String|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`, `notApplicable`.|
+|mobileAppInstallStatusValue|String|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
+|installState|String|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |errorCode|Int32|The error code for install failures.|
 |osVersion|String|OS Version|
 |osDescription|String|OS Description|
 |userName|String|Device User Name|
 |userPrincipalName|String|User Principal Name|
+|displayVersion|String|Human readable version of the application|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -49,11 +51,13 @@ Here is a JSON representation of the resource.
   "deviceId": "String",
   "lastSyncDateTime": "String (timestamp)",
   "mobileAppInstallStatusValue": "String",
+  "installState": "String",
   "errorCode": 1024,
   "osVersion": "String",
   "osDescription": "String",
   "userName": "String",
-  "userPrincipalName": "String"
+  "userPrincipalName": "String",
+  "displayVersion": "String"
 }
 ```
 

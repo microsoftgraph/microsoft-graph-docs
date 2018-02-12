@@ -36,6 +36,7 @@ In the request body, supply the values for relevant fields that should be update
 |country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
+|employeeId|String|The employee identifier assigned to the user by the organization. Supports $filter.|
 |givenName|String|The given name (first name) of the user. Supports $filter.|
 |hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |interests|String collection|A list for the user to describe their interests.|

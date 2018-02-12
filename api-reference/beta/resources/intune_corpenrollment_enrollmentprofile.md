@@ -13,7 +13,7 @@ The enrollmentProfile resource represents a collection of configurations which m
 |[Create enrollmentProfile](../api/intune_corpenrollment_enrollmentprofile_create.md)|[enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|Create a new [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) object.|
 |[Delete enrollmentProfile](../api/intune_corpenrollment_enrollmentprofile_delete.md)|None|Deletes a [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md).|
 |[Update enrollmentProfile](../api/intune_corpenrollment_enrollmentprofile_update.md)|[enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|Update the properties of a [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) object.|
-|[exportMobileConfig function](../api/intune_corpenrollment_enrollmentprofile_exportmobileconfig.md)|String|Not yet documented|
+|[exportMobileConfig function](../api/intune_corpenrollment_enrollmentprofile_exportmobileconfig.md)|String|Exports the mobile configuration of the current enrollment profile.|
 |[updateDeviceProfileAssignment action](../api/intune_corpenrollment_enrollmentprofile_updatedeviceprofileassignment.md)|None|Not yet documented|
 
 ## Properties
@@ -24,6 +24,7 @@ The enrollmentProfile resource represents a collection of configurations which m
 |description|String|Description of the profile|
 |requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication|
 |configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment|
+|enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal.|
 
 ## Relationships
 None
@@ -42,7 +43,8 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "requiresUserAuthentication": true,
-  "configurationEndpointUrl": "String"
+  "configurationEndpointUrl": "String",
+  "enableAuthenticationViaCompanyPortal": true
 }
 ```
 

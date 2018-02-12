@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 330
+Content-Length: 856
 
 {
   "value": {
@@ -60,6 +60,19 @@ Content-Length: 330
     "adminConsent": {
       "@odata.type": "microsoft.graph.adminConsent",
       "collectFullIOSAppInventory": "granted"
+    },
+    "deviceProtectionOverview": {
+      "@odata.type": "microsoft.graph.deviceProtectionOverview",
+      "totalReportedDeviceCount": 8,
+      "inactiveThreatAgentDeviceCount": 14,
+      "unknownStateThreatAgentDeviceCount": 2,
+      "pendingSignatureUpdateDeviceCount": 1,
+      "cleanDeviceCount": 0,
+      "pendingFullScanDeviceCount": 10,
+      "pendingRestartDeviceCount": 9,
+      "pendingManualStepsDeviceCount": 13,
+      "pendingOfflineScanDeviceCount": 13,
+      "criticalFailuresDeviceCount": 11
     }
   }
 }

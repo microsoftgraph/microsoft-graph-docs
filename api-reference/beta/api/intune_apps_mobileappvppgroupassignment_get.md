@@ -54,9 +54,9 @@ Content-Length: 317
 {
   "value": {
     "@odata.type": "#microsoft.graph.mobileAppVppGroupAssignment",
+    "id": "89a8674a-674a-89a8-4a67-a8894a67a889",
     "targetGroupId": "Target Group Id value",
     "vpnConfigurationId": "Vpn Configuration Id value",
-    "id": "89a8674a-674a-89a8-4a67-a8894a67a889",
     "installIntent": "notApplicable",
     "useDeviceLicensing": true
   }

@@ -5,9 +5,7 @@
 [Delta query](../../../concepts/delta_query_overview.md) enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. To discover changes to groups, perform a request using the *delta* function. See [Using Delta Query](../../../concepts/delta_query_overview.md) for details.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
-
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -16,7 +14,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Group.Read.All, Group.ReadWrite.All |
 
 ## HTTP request
-
 To begin tracking changes, you make a request including the delta function on the groups resource. 
 
 <!-- { "blockType": "ignored" } -->
@@ -25,9 +22,10 @@ GET /groups/delta
 ```
 
 ### Query parameters
+Tracking changes in groups incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.
 
-Tracking changes in groups incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response. 
-You only need to specify any desired query parameters once upfront. 
+You only need to specify any desired query parameters once upfront.
+
 In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
 
 | Query parameter	   | Type	|Description|
@@ -36,17 +34,13 @@ In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from th
 | $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same group collection. |
 
 ## Optional query parameters
-
 This method supports OData Query Parameters to help customize the response.
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
 _id_ property is always returned. 
 - Delta query support `$select`, `$top`, and `$expand` for groups. 
 - There is limited support for `$filter` and `$orderby`:
-  * The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`.
-  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
-  an `$orderby` expression, the return order is not guaranteed. 
-- There is no support for `$search`.
+  * The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff`. There is a limit of 50 filtered objects.
 
 ## Request headers
 | Name       | Description|
@@ -58,7 +52,6 @@ _id_ property is always returned.
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this method returns `200 OK` response code and [group](../resources/group.md) collection object in the response body. The response also includes a state token which is either a nextLink URL or a deltaLink URL.
 
 - If a nextLink URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the nextLink URL until a deltaLink URL is included in the response.
@@ -70,7 +63,8 @@ See:</br>
 - [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for an example requests.</br>
     
 ## Example
-##### Request
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -79,8 +73,9 @@ See:</br>
 GET https://graph.microsoft.com/beta/groups/delta
 ```
 
-##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

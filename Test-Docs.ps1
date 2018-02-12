@@ -75,7 +75,7 @@ $reference_paths = [System.IO.Directory]::GetDirectories($path)
 ForEach($reference in $reference_paths)
 {
         # Run the checks on all files
-        $parms = "check-docs", "--path", $reference, "--ignore-warnings", "--relax-string-validation"
+        $parms = "check-docs", "--path", $reference, "--ignore-warnings", "--relax-string-validation", "--print-failures-only"
         if ($appVeyorUrl -ne $null)
         {
             $parms = $parms += "--appveyor-url", $appVeyorUrl

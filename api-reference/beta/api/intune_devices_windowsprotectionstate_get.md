@@ -20,7 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/microsoft.graph.windowsManagedDevice/windowsProtectionState
+GET /deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState/{windowsProtectionStateId}
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/windowsProtectionState
 ```
 
 ## Optional query parameters
@@ -41,7 +42,7 @@ If successful, this method returns a `200 OK` response code and [windowsProtecti
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/microsoft.graph.windowsManagedDevice/windowsProtectionState
+GET https://graph.microsoft.com/beta/deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState/{windowsProtectionStateId}
 ```
 
 ### Response
@@ -49,12 +50,29 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 136
+Content-Length: 971
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windowsProtectionState",
-    "id": "1ac6ea5a-ea5a-1ac6-5aea-c61a5aeac61a"
+    "id": "1ac6ea5a-ea5a-1ac6-5aea-c61a5aeac61a",
+    "malwareProtectionEnabled": true,
+    "deviceState": "fullScanPending",
+    "realTimeProtectionEnabled": true,
+    "networkInspectionSystemEnabled": true,
+    "quickScanOverdue": true,
+    "fullScanOverdue": true,
+    "signatureUpdateOverdue": true,
+    "rebootRequired": true,
+    "fullScanRequired": true,
+    "engineVersion": "Engine Version value",
+    "signatureVersion": "Signature Version value",
+    "antiMalwareVersion": "Anti Malware Version value",
+    "lastQuickScanDateTime": "2016-12-31T23:58:27.5900669-08:00",
+    "lastFullScanDateTime": "2017-01-01T00:01:44.9405639-08:00",
+    "lastQuickScanSignatureVersion": "Last Quick Scan Signature Version value",
+    "lastFullScanSignatureVersion": "Last Full Scan Signature Version value",
+    "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
   }
 }
 ```

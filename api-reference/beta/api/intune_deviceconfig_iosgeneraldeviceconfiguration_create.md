@@ -145,7 +145,7 @@ The following table shows the properties that are required when you create the i
 |passcodeBlockFingerprintModification|Boolean|Block modification of registered Touch ID fingerprints when in supervised mode.|
 |passcodeBlockModification|Boolean|Indicates whether or not to allow passcode modification on the supervised device (iOS 9.0 and later).|
 |passcodeBlockSimple|Boolean|Indicates whether or not to block simple passcodes.|
-|passcodeExpirationDays|Int32|Number of days before the passcode expires. Valid values 1 to 255|
+|passcodeExpirationDays|Int32|Number of days before the passcode expires. Valid values 1 to 65535|
 |passcodeMinimumLength|Int32|Minimum length of passcode. Valid values 4 to 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a passcode is required.|
 |passcodeMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|

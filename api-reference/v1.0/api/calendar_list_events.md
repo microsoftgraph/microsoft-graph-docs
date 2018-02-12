@@ -38,10 +38,10 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Prefer  | outlook.timezone="Eastern Standard Time". Optional. Use this to specify the time zone for start and end times in the response. If not specified, the response are returned in UTC. |
+| Name       | Type | Description |
+|:---------------|:--------|:--------|
+| Authorization  | string | Bearer {token}. Required.  |
+| Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 
 ## Request body
 Do not supply a request body for this method.

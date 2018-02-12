@@ -12,7 +12,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
+|Delegated (personal Microsoft account) | Not supported |
 |Application | Directory.ReadWrite.All |
 
 ## HTTP request
@@ -41,12 +41,12 @@ If successful, this method returns `200 OK` response code. If the group is added
 
 ## Example
 
-##### Request
+#### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "grouplifecyclepolicy_addgroup"
-}-->
+} -->
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}/addGroup
 Content-type: application/json
@@ -57,7 +57,8 @@ Content-length: 57
 }
 ```
 
-##### Response
+#### Response
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK

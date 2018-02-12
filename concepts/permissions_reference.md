@@ -4,9 +4,9 @@ Microsoft Graph exposes granular permissions that control the access that apps h
 ## Delegated permissions, Application permissions, and effective permissions
 Microsoft Graph has two types of permissions: **delegated permissions** and **application permissions**. 
 
-- **Delegated permissions** are used by apps that have a signed-in user present. For these apps either the user or an administrator consents to the permissions that the app requests and the app is delegated permission to act as the signed-in user when making calls to Microsoft Graph. Some delegated permissions can be consented to by non-administrative users, but some higher-privileged permissions require administrator consent.  
+- **Delegated permissions** are used by apps that have a signed-in user present. For these apps either the user or an administrator consents to the permissions that the app requests and the app is delegated permission to act as the signed-in user when making calls to Microsoft Graph. Some delegated permissions can be consented to by non-administrative users, but some higher-privileged permissions require [administrator consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes).  
 
-- **Application permissions** are used by apps that run without a signed-in user present; for example, apps that run as background services or daemons.  Application permissions can only be consented by an administrator. 
+- **Application permissions** are used by apps that run without a signed-in user present; for example, apps that run as background services or daemons.  Application permissions can only be [consented by an administrator](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
 
 _Effective permissions_ are the permissions that your app will have when making requests to Microsoft Graph. It is important to understand the difference between the delegated and application permissions that your app is granted and its effective permissions when making calls to Microsoft Graph.
 
@@ -254,6 +254,43 @@ The _Directory.ReadWrite.All_ permission grants the following privileges:
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
+
+## Education permissions
+
+#### Delegated permissions
+
+|Permission |Display String |Description | Admin Consent Required |
+|:--------- |:------------- |:---------- | :--------------------- |
+|EduAdministration.Read | Read education app settings |  Allows the app to read education app settings on behalf of the user. | Yes |
+|EduAdministration.ReadWrite | Manage education app settings | Allows the app to manage education app settings on behalf of the user. | Yes |
+|EduAssignments.ReadBasic | Read users' class assignments without grades | Allows the app to read assignments without grades on behalf of the user | Yes |
+|EduAssignments.ReadWriteBasic | Read and write users' class assignments without grades | Allows the app to read and write assignments without grades on behalf of the user | Yes |
+|EduAssignments.Read | Read users' view of class assignments and their grades | Allows the app to read assignments and their grades on behalf of the user| Yes |
+|EduAssignments.ReadWrite | Read and write users' view of class assignments and their grades | Allows the app to read and write assignments and their grades on behalf of the user|Yes |
+|EduRostering.ReadBasic| Read a limited subset of users' view of the roster | Allows the app to read a limited subset of the data from the  structure of schools and classes in an organization's roster and  education-specific information about users to be read on behalf of the user.  | Yes  |
+
+
+#### Application permissions
+
+| Permission | Display String | Description | Admin Consent Required |
+| :--------- | :------------- | :---------- | :--------------------- |
+|EduAssignments.ReadBasic.All| Read class assignments without grades|Allows the app to read assignments without grades for all users| Yes |
+|EduAssignments.ReadWriteBasic.All | Read and write class assignments without grades | Allows the app to read and write assignments without grades for all users| Yes |
+|EduAssignments.Read.All| Read class assignments with grades | Allows the app to read assignments and their grades for all users | Yes |
+|EduAssignments.ReadWrite.All | Read and write class assignments with grades | Allows the app to read and write assignments and their grades for all users | Yes |
+|EduRostering.ReadBasic.All | Read a limited subset of the organization's roster. | Allows the app to read a limited subset of both the structure of schools and classes in an organization's roster and education-specific information about all users. | Yes |
+|EduRostering.Read.All | Read the organization's roster. | Allows the app to read the structure of schools and classes in the organization's roster and education-specific information about all users to be read. | Yes |
+|EduRostering.ReadWrite.All| Read and write the organization's roster. | Allows the app to read and write the structure of schools and classes in the organization's roster and education-specific information about all users to be read and written.  | Yes |
+
+### Example usage
+
+#### Delegated
+
+* _EduAssignments.Read_: Get the signed-in student's assignment information (`GET /education/classes/<id>/assignments/<id>`)
+* _EduAssignments.ReadWriteBasic_: Submit signed-in student assignment (`GET /education/classes/<id>/assignments/<id>submit`)
+* _EduRoster.ReadBasic_: Classes a signed-in user attends or teaches (`GET /education/classes/<id>/members`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ## Files permissions
 

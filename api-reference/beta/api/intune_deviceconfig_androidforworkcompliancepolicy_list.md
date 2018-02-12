@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1434
+Content-Length: 1773
 
 {
   "value": [
@@ -68,6 +68,7 @@ Content-Length: 1434
       "securityPreventInstallAppsFromUnknownSources": true,
       "securityDisableUsbDebugging": true,
       "requireAppVerify": true,
+      "securityRequireVerifyApps": true,
       "deviceThreatProtectionEnabled": true,
       "deviceThreatProtectionRequiredSecurityLevel": "secured",
       "securityBlockJailbrokenDevices": true,
@@ -76,10 +77,15 @@ Content-Length: 1434
       "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
       "storageRequireEncryption": true,
       "requireSafetyNetAttestationBasicIntegrity": true,
+      "securityRequireSafetyNetAttestationBasicIntegrity": true,
       "requireSafetyNetAttestationCertifiedDevice": true,
+      "securityRequireSafetyNetAttestationCertifiedDevice": true,
       "requireGooglePlayServices": true,
+      "securityRequireGooglePlayServices": true,
       "requireUpToDateSecurityProviders": true,
-      "requireCompanyPortalAppIntegrity": true
+      "securityRequireUpToDateSecurityProviders": true,
+      "requireCompanyPortalAppIntegrity": true,
+      "securityRequireCompanyPortalAppIntegrity": true
     }
   ]
 }

@@ -50,14 +50,18 @@ The following table shows the properties that are required when you create the m
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |appAvailability|String|The Application's availability. Inherited from [managedApp](../resources/intune_apps_managedapp.md) Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
 |committedContentVersion|String|The internal committed content version. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
-|identityVersion|String|The identity version. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
+|packageId|String|The package identifier.|
 |identityName|String|The Identity Name.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+|versionName|String|The version name of managed Android Line of Business (LoB) app.|
+|versionCode|String|The version code of managed Android Line of Business (LoB) app.|
+|identityVersion|String|The identity version.|
 
 
 
@@ -70,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1177
+Content-length: 1329
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -90,12 +94,13 @@ Content-length: 1177
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
+  "packageId": "Package Id value",
   "identityName": "Identity Name value",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
@@ -107,7 +112,10 @@ Content-length: 1177
     "v4_4": true,
     "v5_0": true,
     "v5_1": true
-  }
+  },
+  "versionName": "Version Name value",
+  "versionCode": "Version Code value",
+  "identityVersion": "Identity Version value"
 }
 ```
 
@@ -116,7 +124,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1285
+Content-Length: 1437
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -138,12 +146,13 @@ Content-Length: 1285
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
+  "packageId": "Package Id value",
   "identityName": "Identity Name value",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
@@ -155,7 +164,10 @@ Content-Length: 1285
     "v4_4": true,
     "v5_0": true,
     "v5_1": true
-  }
+  },
+  "versionName": "Version Name value",
+  "versionCode": "Version Code value",
+  "identityVersion": "Identity Version value"
 }
 ```
 

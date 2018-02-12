@@ -17,10 +17,7 @@ Singleton entity that acts as a container for all device management functionalit
 |id|String|Unique Identifier|
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|windowsMalwareInformation|[windowsMalwareInformation](../resources/intune_endpointprotection_windowsmalwareinformation.md) collection|The list of affected malware in the tenant.|
-
+None
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

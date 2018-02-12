@@ -2,20 +2,26 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a list of users that are registered owners of the device.
+Retrieve a list of users that are registered owners of the device. A registered owner is the user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- Device.ReadWrite.All and User.ReadBasic.All
-- Directory.Read.All
-- Directory.ReadWrite.All
-- Directory.AccessAsUser.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Device.ReadWrite.All and User.ReadBasic.All or Directory.Read.All or Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}/registeredOwners
 ```
+
+> Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers

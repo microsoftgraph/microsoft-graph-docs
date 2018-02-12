@@ -37,8 +37,8 @@ Using Microsoft Graph to create and name an Office 365 group bypasses any Office
 
 ### Permissions for groups and Microsoft Teams
 
-Microsoft Graph exposes two permission (*Group.Read.All* and *Group.ReadWrite.All*) for access to the APIs for groups and Microsoft Teams.
-These permission must be consented to by an administrator (which is a change from preview).  In the future, we plan to add new permissions for groups and teams that users can consent to.
+Microsoft Graph exposes two permissions (*Group.Read.All* and *Group.ReadWrite.All*) for access to the APIs for groups and Microsoft Teams.
+These permissions must be consented to by an administrator (which is a change from preview).  In the future, we plan to add new permissions for groups and teams that users can consent to.
 
 Also, only the API for core group administration and management supports access using delegated or app-only permissions. All other features of the group API support only delegated permissions.
 
@@ -46,16 +46,15 @@ Examples of group features that support delegated and app-only permissions:
 
 * Creating and deleting groups
 * Getting and updating group properties pertaining to group administration or management
-* Group [directory settings](../api-reference/v1.0/resources/directoryobject.md), type and synchronization
+* Group [directory settings](../api-reference/v1.0/resources/directoryobject.md), type, and synchronization
 * Group owners and membership
-
 
 Examples of group features that support only delegated permissions:
 
 * Group conversations, events, photo
 * External senders, accepted or rejected senders, group subscription
 * User favorites and unseen count
-* Microsoft Teams channels and chats.
+* Microsoft Teams channels and chats
 
 ### Teams in Microsoft Teams (preview)
 
@@ -275,7 +274,7 @@ Always specify relative URIs in batch requests. Microsoft Graph then makes these
 
 ### Limit on batch size
 
-JSON batch requests are currently limited to 5 individual requests. As JSON batching matures, this limit will be raised.
+JSON batch requests are currently limited to 20 individual requests.
 
 ### Simplified dependencies
 

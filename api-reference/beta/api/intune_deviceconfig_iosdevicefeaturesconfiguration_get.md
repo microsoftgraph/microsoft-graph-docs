@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Optional query parameters
@@ -51,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2898
+Content-Length: 3559
 
 {
   "value": {
@@ -66,7 +65,9 @@ Content-Length: 2898
       {
         "@odata.type": "microsoft.graph.airPrintDestination",
         "ipAddress": "Ip Address value",
-        "resourcePath": "Resource Path value"
+        "resourcePath": "Resource Path value",
+        "port": 4,
+        "forceTls": true
       }
     ],
     "assetTagTemplate": "Asset Tag Template value",
@@ -139,7 +140,25 @@ Content-Length: 2898
         "badgesEnabled": true,
         "soundsEnabled": true
       }
-    ]
+    ],
+    "singleSignOnSettings": {
+      "@odata.type": "microsoft.graph.iosSingleSignOnSettings",
+      "allowedAppsList": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        }
+      ],
+      "allowedUrls": [
+        "Allowed Urls value"
+      ],
+      "displayName": "Display Name value",
+      "kerberosPrincipalName": "Kerberos Principal Name value",
+      "kerberosRealm": "Kerberos Realm value"
+    }
   }
 }
 ```

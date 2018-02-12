@@ -33,6 +33,7 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 |contentUrl | String | Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).|
 |visualElements| [visualInfo](../resources/projectrome_visualinfo.md) | Required. The object containing information to render the activity in the UX.|
 |contentInfo | Untyped JSON object | Optional. A custom piece of data - JSON-LD extensible description of content according to [schema.org](http://schema.org) syntax.|
+|expirationDateTime| DateTimeOffset| Set by the server. DateTime in UTC when the object expired on the server.|
 
 ## Relationships
 
@@ -52,10 +53,7 @@ Here is a JSON representation of the resource.
     "fallbackUrl",
     "contentUrl",
     "contentInfo",
-    "visualElements.attribution",
-    "visualElements.description",
-    "visualElements.backgroundColor",
-    "visualElements.content",
+    "visualElements",
     "historyItems"
   ],
   "@odata.type": "microsoft.graph.activity"
@@ -72,28 +70,11 @@ Here is a JSON representation of the resource.
     "fallbackUrl": "String (URL)",
     "createdDateTime": "DateTimeOffset",
     "lastModifiedDateTime": "DateTimeOffset",
+    "expirationDateTime": "DateTimeOffset",
     "id": "String",
-    "contentInfo": {
-        "@data.type": "microsoft.graph.Json"
-    },
-    "visualElements": {
-        "@data.type": "microsoft.graph.visualInfo",
-        "attribution": {
-            "@odata.type": "microsoft.graph.imageInfo",
-            "iconUrl": "String (URL)",
-            "alternativeText": "String",
-            "addImageQuery": "boolean",
-        },
-        "description": "String",
-        "backgroundColor": "String",
-        "displayText": "String",
-        "content": {
-            "@data.type": "microsoft.graph.Json"
-        }
-    },
-    "historyItems": [
-        { "@odata.type": "microsoft.graph.historyItem" }
-    ]
+    "contentInfo": { "@data.type": "microsoft.graph.Json" },
+    "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
+    "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]
 }
 ```
 

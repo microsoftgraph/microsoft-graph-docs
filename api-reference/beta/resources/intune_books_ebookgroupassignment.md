@@ -19,7 +19,7 @@ Contains properties used to assign a eBook to a group.
 |:---|:---|:---|
 |targetGroupId|String|The Id of the AAD group we are targeting the eBook to.|
 |id|String|Key of the entity.|
-|installIntent|String|The install intent defined by the admin. Possible values are: `notApplicable`, `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|String|The install intent defined by the admin. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 ## Relationships
 |Relationship|Type|Description|

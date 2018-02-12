@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.microsoft.graph.IdentityProvider"
+  "@odata.type": "microsoft.graph.IdentityProvider"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 662
+Content-Length: 712
 
 {
   "value": [
@@ -61,6 +61,7 @@ Content-Length: 662
       "version": 7,
       "advancedThreatProtectionOnboardingBlob": "Advanced Threat Protection Onboarding Blob value",
       "allowSampleSharing": true,
+      "enableExpeditedTelemetryReporting": true,
       "advancedThreatProtectionOffboardingBlob": "Advanced Threat Protection Offboarding Blob value"
     }
   ]
