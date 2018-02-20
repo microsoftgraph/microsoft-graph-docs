@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1745
+Content-Length: 1467
 
 {
   "value": {
@@ -68,7 +68,6 @@ Content-Length: 1745
     "passwordPreviousPasswordBlockCount": 2,
     "securityPreventInstallAppsFromUnknownSources": true,
     "securityDisableUsbDebugging": true,
-    "requireAppVerify": true,
     "securityRequireVerifyApps": true,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
@@ -77,15 +76,10 @@ Content-Length: 1745
     "osMaximumVersion": "Os Maximum Version value",
     "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
     "storageRequireEncryption": true,
-    "requireSafetyNetAttestationBasicIntegrity": true,
     "securityRequireSafetyNetAttestationBasicIntegrity": true,
-    "requireSafetyNetAttestationCertifiedDevice": true,
     "securityRequireSafetyNetAttestationCertifiedDevice": true,
-    "requireGooglePlayServices": true,
     "securityRequireGooglePlayServices": true,
-    "requireUpToDateSecurityProviders": true,
     "securityRequireUpToDateSecurityProviders": true,
-    "requireCompanyPortalAppIntegrity": true,
     "securityRequireCompanyPortalAppIntegrity": true,
     "conditionStatementId": "Condition Statement Id value"
   }

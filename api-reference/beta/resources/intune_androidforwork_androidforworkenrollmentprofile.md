@@ -21,17 +21,13 @@ Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
 |:---|:---|:---|
 |accountId|String|Tenant GUID the enrollment profile belongs to.|
 |id|String|Unique GUID for the enrollment profile.|
-|name|String|(Deprecated) Display name for the enrollment profile.|
 |displayName|String|Display name for the enrollment profile.|
 |description|String|Description for the enrollment profile.|
 |createdDateTime|DateTimeOffset|Date time the enrollment profile was created.|
-|modifiedDateTime|DateTimeOffset|(Deprecated) Date time the enrollment profile was last modified.|
 |lastModifiedDateTime|DateTimeOffset|Date time the enrollment profile was last modified.|
 |tokenValue|String|Value of the most recently created token for this enrollment profile.|
 |tokenExpirationDateTime|DateTimeOffset|Date time the most recently created token will expire.|
-|totalEnrollmentCount|Int32|(Deprecated) Total number of Android devices that have enrolled using this enrollment profile.|
 |enrolledDeviceCount|Int32|Total number of Android devices that have enrolled using this enrollment profile.|
-|qrCode|String|(Deprecated) String used to generate a QR code for the token.|
 |qrCodeContent|String|String used to generate a QR code for the token.|
 |qrCodeImage|[mimeContent](../resources/intune_androidforwork_mimecontent.md)|String used to generate a QR code for the token.|
 
@@ -50,17 +46,13 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.androidForWorkEnrollmentProfile",
   "accountId": "String",
   "id": "String (identifier)",
-  "name": "String",
   "displayName": "String",
   "description": "String",
   "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "tokenValue": "String",
   "tokenExpirationDateTime": "String (timestamp)",
-  "totalEnrollmentCount": 1024,
   "enrolledDeviceCount": 1024,
-  "qrCode": "String",
   "qrCodeContent": "String",
   "qrCodeImage": {
     "@odata.type": "microsoft.graph.mimeContent",

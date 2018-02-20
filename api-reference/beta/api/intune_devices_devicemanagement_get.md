@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 856
+Content-Length: 843
 
 {
   "value": {
@@ -59,7 +59,7 @@ Content-Length: 856
     "subscriptions": "intune",
     "adminConsent": {
       "@odata.type": "microsoft.graph.adminConsent",
-      "collectFullIOSAppInventory": "granted"
+      "shareAPNSData": "granted"
     },
     "deviceProtectionOverview": {
       "@odata.type": "microsoft.graph.deviceProtectionOverview",

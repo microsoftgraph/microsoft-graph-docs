@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1649
+Content-Length: 1620
 
 {
   "value": [
@@ -69,7 +69,7 @@ Content-Length: 1649
       "passwordRequiredType": "lowSecurityBiometric",
       "workProfileDataSharingType": "preventAny",
       "workProfileBlockNotificationsWhileDeviceLocked": true,
-      "blockCrossProfileCopyPaste": true,
+      "workProfileBlockAddingAccounts": true,
       "workProfileBlockCrossProfileCopyPaste": true,
       "workProfileDefaultAppPermissionPolicy": "prompt",
       "workProfilePasswordBlockFingerprintUnlock": true,
@@ -81,7 +81,6 @@ Content-Length: 1649
       "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
       "workProfilePasswordRequiredType": "lowSecurityBiometric",
       "workProfileRequirePassword": true,
-      "requireAppVerify": true,
       "securityRequireVerifyApps": true
     }
   ]

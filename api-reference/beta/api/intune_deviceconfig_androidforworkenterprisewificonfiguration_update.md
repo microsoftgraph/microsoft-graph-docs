@@ -50,11 +50,8 @@ The following table shows the properties that are required when you create the [
 |wiFiSecurityType|String|Indicates whether Wi-Fi endpoint uses an EAP based security type. Inherited from [androidForWorkWiFiConfiguration](../resources/intune_deviceconfig_androidforworkwificonfiguration.md) Possible values are: `open`, `wpaEnterprise`.|
 |eapType|String|Indicates the type of EAP protocol set on the the Wi-Fi endpoint (router). Possible values are: `eapTls`, `eapTtls`, `peap`.|
 |authenticationMethod|String|Indicates the Authentication Method the client (device) needs to use when the EAP Type is configured to PEAP or EAP-TTLS. Possible values are: `certificate`, `usernameAndPassword`.|
-|nonEapAuthenticationMethodForEapTtls|String|Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |innerAuthenticationProtocolForEapTtls|String|Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
-|nonEapAuthenticationMethodForPeap|String|Non-EAP Method for Authentication (Inner Identity) when EAP Type is PEAP and Authenticationmethod is Username and Password. Possible values are: `none`, `microsoftChapVersionTwo`.|
 |innerAuthenticationProtocolForPeap|String|Non-EAP Method for Authentication (Inner Identity) when EAP Type is PEAP and Authenticationmethod is Username and Password. Possible values are: `none`, `microsoftChapVersionTwo`.|
-|enableOuterIdentityPrivacy|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS or PEAP. The String provided here is used to mask the username of individual users when they attempt to connect to Wi-Fi network.|
 |outerIdentityPrivacyTemporaryValue|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS or PEAP. The String provided here is used to mask the username of individual users when they attempt to connect to Wi-Fi network.|
 
 
@@ -68,7 +65,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 890
+Content-length: 664
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -82,11 +79,8 @@ Content-length: 890
   "wiFiSecurityType": "wpaEnterprise",
   "eapType": "eapTtls",
   "authenticationMethod": "usernameAndPassword",
-  "nonEapAuthenticationMethodForEapTtls": "challengeHandshakeAuthenticationProtocol",
   "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
-  "nonEapAuthenticationMethodForPeap": "microsoftChapVersionTwo",
   "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-  "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value",
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
@@ -96,7 +90,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1078
+Content-Length: 852
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkEnterpriseWiFiConfiguration",
@@ -113,11 +107,8 @@ Content-Length: 1078
   "wiFiSecurityType": "wpaEnterprise",
   "eapType": "eapTtls",
   "authenticationMethod": "usernameAndPassword",
-  "nonEapAuthenticationMethodForEapTtls": "challengeHandshakeAuthenticationProtocol",
   "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
-  "nonEapAuthenticationMethodForPeap": "microsoftChapVersionTwo",
   "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-  "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value",
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```

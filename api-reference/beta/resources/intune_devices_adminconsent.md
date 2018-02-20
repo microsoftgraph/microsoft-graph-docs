@@ -8,7 +8,7 @@ Admin consent information.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|collectFullIOSAppInventory|String|The admin consent state of collecting full iOS app inventory. Possible values are: `notConfigured`, `granted`, `notGranted`.|
+|shareAPNSData|String|The admin consent state of sharing user and device data to Apple. Possible values are: `notConfigured`, `granted`, `notGranted`.|
 
 ## Relationships
 None
@@ -23,7 +23,7 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.adminConsent",
-  "collectFullIOSAppInventory": "String"
+  "shareAPNSData": "String"
 }
 ```
 

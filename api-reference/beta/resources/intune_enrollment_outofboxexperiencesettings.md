@@ -11,7 +11,6 @@ Out of box experience setting
 |hidePrivacySettings|Boolean|Show or hide privacy settings to user|
 |hideEULA|Boolean|Show or hide EULA to user|
 |userType|String|Type of user Possible values are: `administrator`, `standard`.|
-|deviceUsageType|String|AAD join authentication type Possible values are: `singleUser`, `shared`.|
 
 ## Relationships
 None
@@ -28,8 +27,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.outOfBoxExperienceSettings",
   "hidePrivacySettings": true,
   "hideEULA": true,
-  "userType": "String",
-  "deviceUsageType": "String"
+  "userType": "String"
 }
 ```
 

@@ -97,6 +97,8 @@ The following table shows the properties that are required when you create the w
 |edgeDisableFirstRunPage|Boolean|Block the Microsoft web page that opens on the first use of Microsoft Edge. This policy allows enterprises, like those enrolled in zero emissions configurations, to block this page.|
 |edgeBlockLiveTileDataCollection|Boolean|Block the collection of information by Microsoft for live tile creation when users pin a site to Start from Microsoft Edge.|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.|
+|edgeFavoritesListLocation|String|The location of the favorites list to provision. Could be a local file, local network or http location.|
+|edgeBlockEditFavorites|Boolean|Indicates whether or not to Block the user from making changes to Favorites.|
 |cellularBlockDataWhenRoaming|Boolean|Whether or not to Block the user from using data over cellular while roaming.|
 |cellularBlockVpn|Boolean|Whether or not to Block the user from using VPN over cellular.|
 |cellularBlockVpnWhenRoaming|Boolean|Whether or not to Block the user from using VPN when roaming over cellular.|
@@ -275,7 +277,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 10985
+Content-length: 11090
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -344,6 +346,8 @@ Content-length: 10985
   "edgeDisableFirstRunPage": true,
   "edgeBlockLiveTileDataCollection": true,
   "edgeSyncFavoritesWithInternetExplorer": true,
+  "edgeFavoritesListLocation": "Edge Favorites List Location value",
+  "edgeBlockEditFavorites": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -541,7 +545,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 11093
+Content-Length: 11198
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -612,6 +616,8 @@ Content-Length: 11093
   "edgeDisableFirstRunPage": true,
   "edgeBlockLiveTileDataCollection": true,
   "edgeSyncFavoritesWithInternetExplorer": true,
+  "edgeFavoritesListLocation": "Edge Favorites List Location value",
+  "edgeBlockEditFavorites": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,

@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7771
+Content-Length: 8266
 
 {
   "value": {
@@ -61,6 +61,8 @@ Content-Length: 7771
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "localSecurityOptionsBlockMicrosoftAccounts": true,
+    "localSecurityOptionsEnableAdministratorAccount": true,
     "defenderSecurityCenterDisableAppBrowserUI": true,
     "defenderSecurityCenterDisableFamilyUI": true,
     "defenderSecurityCenterDisableHealthUI": true,
@@ -136,7 +138,13 @@ Content-Length: 7771
     "defenderOfficeMacroCodeAllowWin32ImportsType": "block",
     "defenderScriptObfuscatedMacroCodeType": "block",
     "defenderScriptDownloadedPayloadExecutionType": "block",
+    "defenderPreventCredentialStealingType": "enable",
+    "defenderProcessCreationType": "block",
+    "defenderUntrustedUSBProcessType": "block",
+    "defenderUntrustedExecutableType": "block",
     "defenderEmailContentExecutionType": "block",
+    "defenderPasswordProtectedEmailContentExecutionType": "block",
+    "defenderAdvancedRansomewareProtectionType": "enable",
     "defenderGuardMyFoldersType": "enable",
     "defenderGuardedFoldersAllowedAppPaths": [
       "Defender Guarded Folders Allowed App Paths value"
@@ -162,6 +170,7 @@ Content-Length: 7771
     "applicationGuardAllowPrintToLocalPrinters": true,
     "applicationGuardAllowPrintToNetworkPrinters": true,
     "applicationGuardAllowVirtualGPU": true,
+    "applicationGuardAllowFileSaveOnHost": true,
     "bitLockerDisableWarningForOtherDiskEncryption": true,
     "bitLockerEnableStorageCardEncryptionOnMobile": true,
     "bitLockerEncryptDevice": true,

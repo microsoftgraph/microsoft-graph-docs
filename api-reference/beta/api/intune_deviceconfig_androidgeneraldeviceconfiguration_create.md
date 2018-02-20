@@ -90,7 +90,6 @@ The following table shows the properties that are required when you create the a
 |appsInstallAllowList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps which can be installed on the KNOX device. This collection can contain a maximum of 500 elements.|
 |appsLaunchBlockList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps which are blocked from being launched on the KNOX device. This collection can contain a maximum of 500 elements.|
 |appsHideList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps to be hidden on the KNOX device. This collection can contain a maximum of 500 elements.|
-|requireAppVerify|Boolean|Require the Android Verify apps feature is turned on.|
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 
 
@@ -104,7 +103,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3162
+Content-length: 3133
 
 {
   "@odata.type": "#microsoft.graph.androidGeneralDeviceConfiguration",
@@ -200,7 +199,6 @@ Content-length: 3162
       "appId": "App Id value"
     }
   ],
-  "requireAppVerify": true,
   "securityRequireVerifyApps": true
 }
 ```
@@ -210,7 +208,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3270
+Content-Length: 3241
 
 {
   "@odata.type": "#microsoft.graph.androidGeneralDeviceConfiguration",
@@ -308,7 +306,6 @@ Content-Length: 3270
       "appId": "App Id value"
     }
   ],
-  "requireAppVerify": true,
   "securityRequireVerifyApps": true
 }
 ```

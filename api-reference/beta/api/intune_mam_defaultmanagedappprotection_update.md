@@ -77,6 +77,8 @@ The following table shows the properties that are required when you create the [
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |minimumRequiredPatchVersion|String|Define the oldest required Android security patch level a user can have to gain secure access to the app.|
 |minimumWarningPatchVersion|String|Define the oldest recommended Android security patch level a user can have for secure access to the app.|
+|exemptedAppProtocols|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|iOS Apps in this list will be exempt from the policy and will be able to receive data from managed apps.|
+|exemptedAppPackages|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|Android App packages in this list will be exempt from the policy and will be able to receive data from managed apps.|
 |faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.|
 
 
@@ -90,7 +92,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 1969
+Content-length: 2292
 
 {
   "displayName": "Display Name value",
@@ -140,6 +142,20 @@ Content-length: 1969
   "deployedAppCount": 0,
   "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
   "minimumWarningPatchVersion": "Minimum Warning Patch Version value",
+  "exemptedAppProtocols": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
+  "exemptedAppPackages": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
   "faceIdBlocked": true
 }
 ```
@@ -149,7 +165,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2143
+Content-Length: 2466
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -202,6 +218,20 @@ Content-Length: 2143
   "deployedAppCount": 0,
   "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
   "minimumWarningPatchVersion": "Minimum Warning Patch Version value",
+  "exemptedAppProtocols": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
+  "exemptedAppPackages": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
   "faceIdBlocked": true
 }
 ```

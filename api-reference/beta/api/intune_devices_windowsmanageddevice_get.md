@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6684
+Content-Length: 6743
 
 {
   "value": {
@@ -193,7 +193,8 @@ Content-Length: 6684
     "totalStorageSpaceInBytes": 8,
     "freeStorageSpaceInBytes": 7,
     "managedDeviceName": "Managed Device Name value",
-    "partnerReportedThreatState": "activated"
+    "partnerReportedThreatState": "activated",
+    "lastLoggedOnUserId": "Last Logged On User Id value"
   }
 }
 ```

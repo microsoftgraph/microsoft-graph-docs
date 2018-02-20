@@ -128,7 +128,7 @@ Although the access token is opaque to your app, the response contains a list of
 | scope |A space separated list of the Microsoft Graph permissions that the access_token is valid for. |
 | expires_in |How long the access token is valid (in seconds). |
 | access_token |The requested access token. Your app can use this token to call Microsoft Graph. |
-| refresh_token |An OAuth 2.0 refresh token. Your app can use this token acquire additional access tokens after the current access token expires.  Refresh tokens are long-lived, and can be used to retain access to resources for extended periods of time.  For more detail, refer to the [v2.0 token reference](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens). |
+| refresh_token |An OAuth 2.0 refresh token. Your app can use this token to acquire additional access tokens after the current access token expires.  Refresh tokens are long-lived, and can be used to retain access to resources for extended periods of time.  For more detail, refer to the [v2.0 token reference](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens). |
 
 ## 4. Use the access token to call Microsoft Graph
 
@@ -252,5 +252,3 @@ For more information about getting access to Microsoft Graph on behalf of a user
 - For information about using the Azure AD endpoint with different kinds of apps, see the **Get Started** links in the [Azure Active Directory developers guide](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). The guide contains links to overview topics, code walk-throughs, and protocol documentation for different kinds of app supported by the Azure AD endpoint.
 - For information about the Active Directory Authentication Library (ADAL) and server middleware available for use with the Azure AD endpoint, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries).
 
-
- 

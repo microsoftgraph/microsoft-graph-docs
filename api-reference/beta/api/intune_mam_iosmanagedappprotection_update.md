@@ -69,10 +69,12 @@ The following table shows the properties that are required when you create the [
 |minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
+|targetedAppManagementLevels|String|The intended app management levels for this policy Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md) Possible values are: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
 |appDataEncryptionType|String|Type of encryption which should be used for data in a managed app. Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.|
+|exemptedAppProtocols|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|Apps in this list will be exempt from the policy and will be able to receive data from managed apps.|
 
 
 
@@ -85,7 +87,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 Content-type: application/json
-Content-length: 1570
+Content-length: 1779
 
 {
   "displayName": "Display Name value",
@@ -121,10 +123,18 @@ Content-length: 1570
   "minimumRequiredAppVersion": "Minimum Required App Version value",
   "minimumWarningAppVersion": "Minimum Warning App Version value",
   "isAssigned": true,
+  "targetedAppManagementLevels": "unmanaged",
   "appDataEncryptionType": "afterDeviceRestart",
   "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
   "deployedAppCount": 0,
-  "faceIdBlocked": true
+  "faceIdBlocked": true,
+  "exemptedAppProtocols": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ]
 }
 ```
 
@@ -133,7 +143,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1740
+Content-Length: 1949
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -172,10 +182,18 @@ Content-Length: 1740
   "minimumRequiredAppVersion": "Minimum Required App Version value",
   "minimumWarningAppVersion": "Minimum Warning App Version value",
   "isAssigned": true,
+  "targetedAppManagementLevels": "unmanaged",
   "appDataEncryptionType": "afterDeviceRestart",
   "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
   "deployedAppCount": 0,
-  "faceIdBlocked": true
+  "faceIdBlocked": true,
+  "exemptedAppProtocols": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ]
 }
 ```
 

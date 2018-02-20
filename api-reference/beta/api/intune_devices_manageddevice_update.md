@@ -94,6 +94,7 @@ The following table shows the properties that are required when you create the [
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes|
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name.|
 |partnerReportedThreatState|String|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
+|lastLoggedOnUserId|String|Indicates the last logged on user of a device|
 
 
 
@@ -106,7 +107,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 6281
+Content-length: 6338
 
 {
   "userId": "User Id value",
@@ -244,7 +245,8 @@ Content-length: 6281
   "totalStorageSpaceInBytes": 8,
   "freeStorageSpaceInBytes": 7,
   "managedDeviceName": "Managed Device Name value",
-  "partnerReportedThreatState": "activated"
+  "partnerReportedThreatState": "activated",
+  "lastLoggedOnUserId": "Last Logged On User Id value"
 }
 ```
 
@@ -253,7 +255,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6382
+Content-Length: 6439
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -393,7 +395,8 @@ Content-Length: 6382
   "totalStorageSpaceInBytes": 8,
   "freeStorageSpaceInBytes": 7,
   "managedDeviceName": "Managed Device Name value",
-  "partnerReportedThreatState": "activated"
+  "partnerReportedThreatState": "activated",
+  "lastLoggedOnUserId": "Last Logged On User Id value"
 }
 ```
 

@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11626
+Content-Length: 11735
 
 {
   "value": {
@@ -122,6 +122,8 @@ Content-Length: 11626
     "edgeDisableFirstRunPage": true,
     "edgeBlockLiveTileDataCollection": true,
     "edgeSyncFavoritesWithInternetExplorer": true,
+    "edgeFavoritesListLocation": "Edge Favorites List Location value",
+    "edgeBlockEditFavorites": true,
     "cellularBlockDataWhenRoaming": true,
     "cellularBlockVpn": true,
     "cellularBlockVpnWhenRoaming": true,
