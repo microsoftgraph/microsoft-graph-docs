@@ -107,6 +107,10 @@ To learn more about formulating membershipRules, see [Create attribute-based rul
 
 > **Note**: Dynamic membership rules requires the tenant to have a license at tier [Azure Active Directory Premium P1](https://azure.microsoft.com/en-us/pricing/details/active-directory/) or greater.
 
+## Other types of groups
+
+Office 365 groups in Yammer are used to facilitate user collaboration through Yammer posts. This type of group can be returned through a read request, but their posts can't be accessed through the API. When Yammer posts and conversation feeds are enabled on a group, default Office 365 group conversations are disabled. To learn more, see [Yammer developer API docs](https://developer.yammer.com/docs).
+
 ## Common use cases
 
 Using Microsoft Graph, you can perform the following common operations.
