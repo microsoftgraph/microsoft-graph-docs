@@ -51,6 +51,7 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not.|
+|targetedAppManagementLevels|String|The intended app management levels for this policy Possible values are: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -102,7 +103,8 @@ Here is a JSON representation of the resource.
   "minimumWarningOsVersion": "String",
   "minimumRequiredAppVersion": "String",
   "minimumWarningAppVersion": "String",
-  "isAssigned": true
+  "isAssigned": true,
+  "targetedAppManagementLevels": "String"
 }
 ```
 

@@ -40,10 +40,7 @@ This method supports OData Query Parameters to help customize the response.
 _id_ property is always returned. 
 - Delta query support `$select`, `$top`, and `$expand` for groups. 
 - There is limited support for `$filter` and `$orderby`:
-  * The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`.
-  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
-  an `$orderby` expression, the return order is not guaranteed. 
-- There is no support for `$search`.
+  * The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff`. There is a limit of 50 filtered objects.
 
 ## Request headers
 | Name       | Description|

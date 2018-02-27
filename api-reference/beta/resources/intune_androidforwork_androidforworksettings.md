@@ -27,6 +27,7 @@ Settings for Android For Work.
 |lastModifiedDateTime|DateTimeOffset|Last modification time for Android for Work settings|
 |enrollmentTarget|String|Indicates which users can enroll devices in Android for Work device management Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'|
+|deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
 
 ## Relationships
 None
@@ -51,7 +52,8 @@ Here is a JSON representation of the resource.
   "enrollmentTarget": "String",
   "targetGroupIds": [
     "String"
-  ]
+  ],
+  "deviceOwnerManagementEnabled": true
 }
 ```
 

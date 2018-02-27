@@ -74,7 +74,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |appsInstallAllowList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps which can be installed on the KNOX device. This collection can contain a maximum of 500 elements.|
 |appsLaunchBlockList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps which are blocked from being launched on the KNOX device. This collection can contain a maximum of 500 elements.|
 |appsHideList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps to be hidden on the KNOX device. This collection can contain a maximum of 500 elements.|
-|requireAppVerify|Boolean|Require the Android Verify apps feature is turned on.|
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 
 ## Relationships
@@ -193,7 +192,6 @@ Here is a JSON representation of the resource.
       "appId": "String"
     }
   ],
-  "requireAppVerify": true,
   "securityRequireVerifyApps": true
 }
 ```

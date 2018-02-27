@@ -36,7 +36,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileDataSharingType|String|Type of data sharing that is allowed. Possible values are: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
 |workProfileBlockNotificationsWhileDeviceLocked|Boolean|Indicates whether or not to block notifications while device locked.|
-|blockCrossProfileCopyPaste|Boolean|Boolean that indicates if the setting disallow cross profile copy/paste is enabled.|
+|workProfileBlockAddingAccounts|Boolean|Block users from adding/removing accounts in work profile.|
 |workProfileBlockCrossProfileCopyPaste|Boolean|Boolean that indicates if the setting disallow cross profile copy/paste is enabled.|
 |workProfileDefaultAppPermissionPolicy|String|Type of password that is required. Possible values are: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
 |workProfilePasswordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock for work profile.|
@@ -48,7 +48,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 4 to 11|
 |workProfilePasswordRequiredType|String|Type of work profile password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileRequirePassword|Boolean|Password is required or not for work profile|
-|requireAppVerify|Boolean|Require the Android Verify apps feature is turned on.|
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 
 ## Relationships
@@ -89,7 +88,7 @@ Here is a JSON representation of the resource.
   "passwordRequiredType": "String",
   "workProfileDataSharingType": "String",
   "workProfileBlockNotificationsWhileDeviceLocked": true,
-  "blockCrossProfileCopyPaste": true,
+  "workProfileBlockAddingAccounts": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "String",
   "workProfilePasswordBlockFingerprintUnlock": true,
@@ -101,7 +100,6 @@ Here is a JSON representation of the resource.
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 1024,
   "workProfilePasswordRequiredType": "String",
   "workProfileRequirePassword": true,
-  "requireAppVerify": true,
   "securityRequireVerifyApps": true
 }
 ```

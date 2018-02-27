@@ -47,7 +47,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "get_domainnamereferences"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/domains/contoso.com/domainNameReferences
+GET https://graph.microsoft.com/v1.0/domains/contoso.com/domainNameReferences
 ```
 
 ##### Response

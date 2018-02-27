@@ -53,14 +53,14 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement
 Content-type: application/json
-Content-length: 691
+Content-length: 678
 
 {
   "subscriptionState": "active",
   "subscriptions": "intune",
   "adminConsent": {
     "@odata.type": "microsoft.graph.adminConsent",
-    "collectFullIOSAppInventory": "granted"
+    "shareAPNSData": "granted"
   },
   "deviceProtectionOverview": {
     "@odata.type": "microsoft.graph.deviceProtectionOverview",
@@ -83,7 +83,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 795
+Content-Length: 782
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
@@ -92,7 +92,7 @@ Content-Length: 795
   "subscriptions": "intune",
   "adminConsent": {
     "@odata.type": "microsoft.graph.adminConsent",
-    "collectFullIOSAppInventory": "granted"
+    "shareAPNSData": "granted"
   },
   "deviceProtectionOverview": {
     "@odata.type": "microsoft.graph.deviceProtectionOverview",

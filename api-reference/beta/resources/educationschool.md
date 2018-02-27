@@ -7,6 +7,8 @@ A school. The **educationSchool** resource currently corresponds to an [administ
 This resource is a subtype of [educationOrganization](educationorganization.md).
 
 
+
+
 ## Methods
 
 | Method		   | Return Type	|Description|

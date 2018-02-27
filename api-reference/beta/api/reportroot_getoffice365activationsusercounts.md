@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices.
+Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
@@ -48,6 +48,7 @@ The CSV file has the following headers for columns.
 - Product Type
 - Assigned
 - Activated
+- Shared Computer Activation
 
 ### JSON
 
@@ -96,7 +97,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Product Type,Assigned,Activated
+Report Refresh Date,Product Type,Assigned,Activated,Shared Computer Activation
 ```
 
 ### JSON
@@ -140,7 +141,8 @@ Content-Length: 233
       "reportRefreshDate": "2017-09-01", 
       "productType": "Office 365 ProPlus", 
       "assigned": 2679, 
-      "activated": 1710
+      "activated": 1710,
+      "sharedComputerActivation": 1024
     }
   ]
 }

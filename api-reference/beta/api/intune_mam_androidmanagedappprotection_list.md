@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2065
+Content-Length: 2305
 
 {
   "value": [
@@ -88,12 +88,20 @@ Content-Length: 2065
       "minimumRequiredAppVersion": "Minimum Required App Version value",
       "minimumWarningAppVersion": "Minimum Warning App Version value",
       "isAssigned": true,
+      "targetedAppManagementLevels": "unmanaged",
       "screenCaptureBlocked": true,
       "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
       "encryptAppData": true,
       "deployedAppCount": 0,
       "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
-      "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
+      "minimumWarningPatchVersion": "Minimum Warning Patch Version value",
+      "exemptedAppPackages": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ]
     }
   ]
 }

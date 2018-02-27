@@ -52,8 +52,7 @@ Here is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.outOfBoxExperienceSettings",
     "hidePrivacySettings": true,
     "hideEULA": true,
-    "userType": "String",
-    "deviceUsageType": "String"
+    "userType": "String"
   }
 }
 ```

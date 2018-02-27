@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the a
 |passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileDataSharingType|String|Type of data sharing that is allowed. Possible values are: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
 |workProfileBlockNotificationsWhileDeviceLocked|Boolean|Indicates whether or not to block notifications while device locked.|
-|blockCrossProfileCopyPaste|Boolean|Boolean that indicates if the setting disallow cross profile copy/paste is enabled.|
+|workProfileBlockAddingAccounts|Boolean|Block users from adding/removing accounts in work profile.|
 |workProfileBlockCrossProfileCopyPaste|Boolean|Boolean that indicates if the setting disallow cross profile copy/paste is enabled.|
 |workProfileDefaultAppPermissionPolicy|String|Type of password that is required. Possible values are: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
 |workProfilePasswordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock for work profile.|
@@ -64,7 +64,6 @@ The following table shows the properties that are required when you create the a
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 4 to 11|
 |workProfilePasswordRequiredType|String|Type of work profile password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileRequirePassword|Boolean|Password is required or not for work profile|
-|requireAppVerify|Boolean|Require the Android Verify apps feature is turned on.|
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 
 
@@ -78,7 +77,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1384
+Content-length: 1359
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -96,7 +95,7 @@ Content-length: 1384
   "passwordRequiredType": "lowSecurityBiometric",
   "workProfileDataSharingType": "preventAny",
   "workProfileBlockNotificationsWhileDeviceLocked": true,
-  "blockCrossProfileCopyPaste": true,
+  "workProfileBlockAddingAccounts": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "prompt",
   "workProfilePasswordBlockFingerprintUnlock": true,
@@ -108,7 +107,6 @@ Content-length: 1384
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
   "workProfilePasswordRequiredType": "lowSecurityBiometric",
   "workProfileRequirePassword": true,
-  "requireAppVerify": true,
   "securityRequireVerifyApps": true
 }
 ```
@@ -118,7 +116,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1492
+Content-Length: 1467
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -138,7 +136,7 @@ Content-Length: 1492
   "passwordRequiredType": "lowSecurityBiometric",
   "workProfileDataSharingType": "preventAny",
   "workProfileBlockNotificationsWhileDeviceLocked": true,
-  "blockCrossProfileCopyPaste": true,
+  "workProfileBlockAddingAccounts": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "prompt",
   "workProfilePasswordBlockFingerprintUnlock": true,
@@ -150,7 +148,6 @@ Content-Length: 1492
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
   "workProfilePasswordRequiredType": "lowSecurityBiometric",
   "workProfileRequirePassword": true,
-  "requireAppVerify": true,
   "securityRequireVerifyApps": true
 }
 ```
