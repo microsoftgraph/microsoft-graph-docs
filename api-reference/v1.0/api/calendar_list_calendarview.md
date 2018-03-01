@@ -3,11 +3,11 @@
 Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,
 from the default calendar `(../me/calendarview)` of a user or group, or some other calendar of the user's.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Events in a user's calendar: _Calendars.Read_ or _Calendars.ReadWrite_
-* Events in a group calendar: _Group.Read.All_ or _Group.ReadWrite.All_
+* Events in a user's calendar: Calendars.Read or Calendars.ReadWrite
+* Events in a group calendar: Group.Read.All or Group.ReadWrite.All
 
 ## HTTP request
 
@@ -48,14 +48,16 @@ In the request URL, provide the following required query parameters with values.
 
 This method also supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Prefer  | outlook.timezone="Eastern Standard Time". Optional. Use this to specify the time zone for start and end times in the response. If not specified, the response are returned in UTC. |
+| Name       | Type | Description |
+|:---------------|:--------|:--------|
+| Authorization  | string | Bearer {token}. Required.  |
+| Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request

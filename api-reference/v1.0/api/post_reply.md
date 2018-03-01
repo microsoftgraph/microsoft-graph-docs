@@ -3,10 +3,14 @@
 Reply to a post and add a new post to the specified thread in a group conversation. You can specify 
 both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*Group.Readwrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -28,7 +32,8 @@ In the request body, provide a JSON object with the following parameters.
 |post|[post](../resources/post.md)|The new post that is being replied with.|
 
 ## Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+
+If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.

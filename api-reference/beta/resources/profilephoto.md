@@ -1,6 +1,6 @@
 # profilePhoto resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 A profile photo of a user, group or an Outlook contact accessed from Exchange Online or Azure Active Directory (AAD). It's binary data not encoded in base-64.
 
@@ -14,14 +14,12 @@ The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64
 |[Get profilePhoto](../api/profilephoto_get.md) | [profilePhoto](profilephoto.md) |Get the specified **profilePhoto** or its metadata (**profilePhoto** properties). |
 |[Update](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |Assign a photo to the specified user, group, or contact. The photo should be in binary. It replaces the existing photo, if any. |
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|string|Read-only.|
 |height|int32|The height of the photo. Read-only.|
 |width|int32|The width of the photo. Read-only.|
-
 
 ## Relationships
 None

@@ -1,6 +1,6 @@
 # Get photo
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties).
 
@@ -19,15 +19,13 @@ metadata.
 > **Note** The GET photo operation in beta supports a user's work, school, or personal mailboxes. The GET photo metadata operation,
 however, supports only the user's work or school mailboxes and not personal mailboxes.
 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-
-## Prerequisites
-One of the following **scopes** is required to execute this API for:
-
-*	Profile photo of any user in the tenant including the signed-in user - *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-*	Profile photo of specifically the signed-in user - *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-* Profile photo of a **group** - *Group.Read.All; Group.ReadWrite.All*
-* Photo of a **contact** - *Contacts.Read; Contacts.ReadWrite*
+*	Profile photo of any user in the tenant including the signed-in user - User.ReadBasic.All, User.Read.All, User.ReadWrite.All
+*	Profile photo of specifically the signed-in user - User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All
+* Profile photo of a **group** - Group.Read.All, Group.ReadWrite.All
+* Photo of a **contact** - Contacts.Read, Contacts.ReadWrite
 
 ## HTTP request to get the photo
 <!-- { "blockType": "ignored" } -->
@@ -165,6 +163,23 @@ Content-type: application/json
     "height": 1
 }
 ```
+## Using the binary data of the requested photo
+
+When you use the `/photo/$value` endpoint to get the binary data for a profile photo, you'll need to convert the data into a base-64 string in order to add it as an email attachment. Here is an example in JavaScript of how to create an array that you can pass as the value of the `Attachments` parameter of an [Outlook Message](user_post_messages.md).
+
+      const attachments = [{
+        '@odata.type': '#microsoft.graph.fileAttachment',
+        ContentBytes: file.toString('base64'),
+        Name: 'mypic.jpg'
+      }];
+
+See the [Microsoft Graph Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) for an implementation of this example.
+
+If you want to display the image on a web page, create an in-memory object from the image and make that object the source of an image element. Here is an example in JavaScript of this operation.
+
+    const url = window.URL || window.webkitURL;
+    const blobUrl = url.createObjectURL(image.data);
+    document.getElementById(imageElement).setAttribute("src", blobUrl);
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -4,8 +4,15 @@ Send the message specified in the request body. The message is saved in the Sent
 
 You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Mail.Send*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Send    |
+|Delegated (personal Microsoft account) | Mail.Send    |
+|Application | Mail.Send |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -27,7 +34,8 @@ In the request body, provide a JSON object with the following parameters.
 |SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional. |
 
 ## Response
-If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
+
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.

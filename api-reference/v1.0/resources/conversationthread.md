@@ -34,7 +34,6 @@ A new thread is created when a recipient is removed from the thread.
 |:---------------|:--------|:----------|
 |posts|[post](post.md) collection| Read-only. Nullable.|
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource

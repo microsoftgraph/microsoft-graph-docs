@@ -7,9 +7,16 @@ Some common uses for this function are to:
 * Resolve ids returned by functions (that return collections of ids) such as [getMemberObjects](directoryobject_getmemberobjects.md) or [getMemberGroups](directoryobject_getmembergroups.md)  to their backing directory objects.
 * Resolve ids persisted in an external store by the application to their backing directory objects.
 
-## Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API: _Directory.Read.All_; _Directory.AccessAsUser.All_
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All |
 
 ## HTTP request
 
@@ -37,7 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and String collection object in the response body.
+If successful, this method returns `200 OK` response code and String collection object in the response body.
 
 ## Example
 
@@ -73,7 +80,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
     "value": [
       {
         "@odata.type": "#microsoft.graph.user",

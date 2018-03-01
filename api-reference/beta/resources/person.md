@@ -1,6 +1,6 @@
 # person resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 An aggregation of information about a person from across mail, contacts and social networks. People can be local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype).
 
@@ -9,7 +9,6 @@ An aggregation of information about a person from across mail, contacts and soci
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get person](../api/person_get.md) | [person](person.md) |Read properties and relationships of a person object.|
-
 
 ## Properties
 | Property	   | Type	|Description|

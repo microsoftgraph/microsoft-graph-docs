@@ -8,13 +8,12 @@ You can use either PATCH or PUT for this operation in version 1.0.
 
 > **Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.
 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-## Prerequisites
-One of the following **scopes** is required to execute this API for:
-
-- Profile photo of the signed-in **user** - *User.ReadWrite*, *User.ReadWrite.All*
-- Profile photo of a **group** - *Group.ReadWrite.All*
-- Photo of a **contact** - *Contacts.ReadWrite*
+- Profile photo of the signed-in **user** - User.ReadWrite, User.ReadWrite.All
+- Profile photo of a **group** - Group.ReadWrite.All
+- Photo of a **contact** - Contacts.ReadWrite
 
 > **Note** To update the photo of any user in the organization, your app must have the User.ReadWrite.All application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](../../../concepts/auth_v2_service.md).
 
@@ -47,6 +46,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 In the request body, include the binary data of the photo in the request body.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code.
 ## Example
 ##### Request

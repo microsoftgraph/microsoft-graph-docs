@@ -1,12 +1,16 @@
 # List registeredOwners
 
-Retrieve a list of users that are registered owners of the device.
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-- *Device.ReadWrite.All* and *User.ReadBasic.All*
-- *Directory.Read.All*
-- *Directory.ReadWrite.All* 
-- *Directory.AccessAsUser.All*
+Retrieve a list of users that are registered owners of the device. A registered owner is the user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Device.ReadWrite.All and User.ReadBasic.All or Directory.Read.All or Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -22,7 +26,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
 ##### Request

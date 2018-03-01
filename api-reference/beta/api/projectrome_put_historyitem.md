@@ -1,12 +1,19 @@
 # Create or replace a historyItem
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create a new or replace an existing history item for an existing user activity.
 
-## Prerequisites
+## Permissions
 
-The following **scope** is required to execute this API: *UserTimelineActivity.Write.CreatedByApp* 
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | UserTimelineActivity.Write.CreatedByApp    |
+|Application | Not supported. |
 
 ## HTTP request
 
@@ -30,22 +37,22 @@ In the request body, supply a JSON representation of a [historyItem](../resource
 
 ## Response
 
-If successful, this method returns the `201, Created` response code if the historyItem was created or `200, OK` if the historyItem was replaced.
+If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.
 
 ## Example
 
-##### Request
+#### Request
 
 Here is an example of the request.
 
 <!-- {
-  "blockType": "request",
-  "name": "upsert_historyItem"
-}-->
+    "blockType": "ignored",
+    "name": "upsert_historyItem"
+} -->
 
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
-Content-type: json
+Content-type: application/json
 Content-length: 364
 
 {
@@ -55,14 +62,14 @@ Content-length: 364
 }
 ```
 
-##### Response
+#### Response
 
 Here is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.historyitem"
+    "blockType": "ignored",
+    "truncated": true,
+    "@odata.type": "microsoft.graph.historyItem"
 } -->
 
 ```http

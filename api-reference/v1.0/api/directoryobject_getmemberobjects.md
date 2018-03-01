@@ -3,12 +3,14 @@
  Returns all the groups and directory roles that a user, group, or directory object is a member of. This function is transitive. 
  > Note: Only users can be members of directory roles.
 
-## Prerequisites
-One of the following **scopes** are required to execute this API:
-- _User.Read.All_ AND _Group.Read.All_
-- _Directory.Read.All_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-> Note: Permission scopes are listed in least privilege required order.
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Read.All and Group.Read.All, Directory.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | User.Read.All and Group.Read.All, Directory.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +35,8 @@ In the request body, provide a JSON object with the following parameters.
 |securityEnabledOnly|Boolean| **true** to specify that only security groups that the entity is a member of should be returned; **false** to specify that all groups and directory roles that the entity is a member of should be returned. **Note**: The function can only be called on a user if the parameter is **true**. |
 
 ## Response
-If successful, this method returns `200, OK` response code and String collection object in the response body.
+
+If successful, this method returns `200 OK` response code and String collection object in the response body.
 
 ## Example
 

@@ -1,12 +1,19 @@
 # Check member groups
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Check for membership in a specified list of groups, and returns from that list those groups
 of which the specified user, group, service principal or directory object is a member. This function is transitive.
 
-## Prerequisites
-The following **scopes** are required to execute this API: _Directory.Read.All_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -31,7 +38,8 @@ In the request body, provide a JSON object with the following parameters.
 |groupIds|String|A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.|
 
 ## Response
-If successful, this method returns `200, OK` response code and String collection object in the response body.
+
+If successful, this method returns `200 OK` response code and String collection object in the response body.
 
 ## Example
 

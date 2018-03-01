@@ -8,7 +8,6 @@ Represents properties of the body of an item, such as a message, event or group 
 |content|String|The content of the item.|
 |contentType|String|The type of the content. Possible values are `Text` and `HTML`.|
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource

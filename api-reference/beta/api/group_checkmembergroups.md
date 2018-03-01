@@ -1,6 +1,6 @@
 # group: checkMemberGroups
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Check for membership in the specified list of groups. Returns from the list those groups of which 
 the specified group has a direct or transitive membership. 
@@ -9,8 +9,17 @@ You can check up to a maximum of 20 groups per request. This function supports O
 types of groups provisioned in Azure AD. Note that Office 365 Groups cannot contain groups. So membership 
 in an Office 365 Group is always direct. 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+>**Note:** This API currently requires the Directory.Read.All permission or higher. Using the Group.Read.All permission will return an error. This is a known bug.
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | *Group.Read.All*, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | *Group.Read.All*, Directory.Read.All, Directory.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -29,7 +38,8 @@ In the request body, provide a JSON object with the following parameters.
 |groupIds|String|An array of group ids|
 
 ## Response
-If successful, this method returns `200, OK` response code and String collection object in the response body.
+
+If successful, this method returns `200 OK` response code and String collection object in the response body.
 
 ## Example
 Here is an example of how to call this API.

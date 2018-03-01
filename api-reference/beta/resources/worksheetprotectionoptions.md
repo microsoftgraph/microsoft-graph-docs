@@ -1,6 +1,6 @@
 # WorksheetProtectionOptions resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents the options in sheet protection.
 
@@ -18,7 +18,6 @@ Represents the options in sheet protection.
 |allowInsertRows|boolean|Represents the worksheet protection option of allowing inserting rows.|
 |allowPivotTables|boolean|Represents the worksheet protection option of allowing using pivot table feature.|
 |allowSort|boolean|Represents the worksheet protection option of allowing using sort feature.|
-
 
 ## JSON representation
 

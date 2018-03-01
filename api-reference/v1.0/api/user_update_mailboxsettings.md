@@ -7,9 +7,17 @@ You can enable, configure, or disable one or more of these settings as part of [
 
 **Note** You cannot create or delete any mailbox settings.
 
-## Prerequisites
-The following **scope** is required to execute this API:
-*MailboxSettings.ReadWrite*  
+When you update the preferred time zone for a user, you can specify it in the Windows or  [Internet Assigned Numbers Authority (IANA) time zone](http://www.iana.org/time-zones) (also known as Olson time zone) format.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | MailboxSettings.ReadWrite    |
+|Delegated (personal Microsoft account) | MailboxSettings.ReadWrite    |
+|Application | MailboxSettings.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -35,6 +43,7 @@ shouldn't include existing values that haven't changed. The following are the wr
 |timeZone|string|The default time zone for the user's mailbox.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and [mailboxSettings](../resources/mailboxSettings.md) object in the response body.
 ## Example
 ##### Request

@@ -14,7 +14,6 @@
 |eventWebLink|String|The URL to open the event in Outlook on the web.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame.|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the reminder is set to occur.|
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource

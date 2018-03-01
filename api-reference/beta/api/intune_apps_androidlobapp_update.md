@@ -1,38 +1,43 @@
 ﻿# Update androidLobApp
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [androidLobApp](../resources/intune_apps_androidlobapp.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app/
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [androidLobApp](../resources/intune_apps_androidlobapp.md) object.
-The following table shows the properties that are required when you create a [androidLobApp](../resources/intune_apps_androidlobapp.md).
+In the request body, supply a JSON representation for the [androidLobApp](../resources/intune_apps_androidlobapp.md) object.
+
+The following table shows the properties that are required when you create the [androidLobApp](../resources/intune_apps_androidlobapp.md).
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |description|String|The description of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -47,12 +52,16 @@ The following table shows the properties that are required when you create a [an
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
+|packageId|String|The package identifier.|
 |identityName|String|The Identity Name.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+|versionName|String|The version name of Android Line of Business (LoB) app.|
+|versionCode|String|The version code of Android Line of Business (LoB) app.|
+|identityVersion|String|The identity version.|
 
 
 
@@ -62,10 +71,10 @@ If successful, this method returns a `200 OK` response code and an updated [andr
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1047
+Content-length: 1199
 
 {
   "displayName": "Display Name value",
@@ -84,10 +93,11 @@ Content-length: 1047
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
+  "packageId": "Package Id value",
   "identityName": "Identity Name value",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
@@ -99,16 +109,19 @@ Content-length: 1047
     "v4_4": true,
     "v5_0": true,
     "v5_1": true
-  }
+  },
+  "versionName": "Version Name value",
+  "versionCode": "Version Code value",
+  "identityVersion": "Identity Version value"
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1207
+Content-Length: 1359
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -130,10 +143,11 @@ Content-Length: 1207
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
+  "packageId": "Package Id value",
   "identityName": "Identity Name value",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
@@ -145,7 +159,10 @@ Content-Length: 1207
     "v4_4": true,
     "v5_0": true,
     "v5_1": true
-  }
+  },
+  "versionName": "Version Name value",
+  "versionCode": "Version Code value",
+  "identityVersion": "Identity Version value"
 }
 ```
 

@@ -1,38 +1,43 @@
 ﻿# Update windowsStoreApp
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [windowsStoreApp](../resources/intune_apps_windowsstoreapp.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app/
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [windowsStoreApp](../resources/intune_apps_windowsstoreapp.md) object.
-The following table shows the properties that are required when you create a [windowsStoreApp](../resources/intune_apps_windowsstoreapp.md).
+In the request body, supply a JSON representation for the [windowsStoreApp](../resources/intune_apps_windowsstoreapp.md) object.
+
+The following table shows the properties that are required when you create the [windowsStoreApp](../resources/intune_apps_windowsstoreapp.md).
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |description|String|The description of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -47,6 +52,7 @@ The following table shows the properties that are required when you create a [wi
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |appStoreUrl|String|The Windows app store URL.|
 
 
@@ -57,10 +63,10 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 630
+Content-length: 666
 
 {
   "displayName": "Display Name value",
@@ -79,16 +85,17 @@ Content-length: 630
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 792
+Content-Length: 828
 
 {
   "@odata.type": "#microsoft.graph.windowsStoreApp",
@@ -110,6 +117,7 @@ Content-Length: 792
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```

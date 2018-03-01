@@ -22,6 +22,7 @@ For example, you can get messages in the Outlook **Sent Items** folder of the si
 ```
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
+For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).
 
 ## Common use cases 
 
@@ -46,9 +47,6 @@ The Microsoft Graph API also provides methods and actions that support common us
 | **App development** | | |
 | Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md) |
 | Access custom data for under-exposed Outlook MAPI properties | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook extended properties overview](../resources/extended-properties-overview.md) |
-
-
-
 
 ## Next steps
 The mail API can open up new ways for you to engage with users: 

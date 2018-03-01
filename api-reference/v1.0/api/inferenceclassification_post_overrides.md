@@ -9,8 +9,15 @@ as specified in the override.
 - The maximum number of overrides supported for a mailbox is 1000, based on unique sender SMTP addresses.
 - The POST operation supports creating only one override at a time.
 
-## Prerequisites
-The following **scopes** are required to execute this API: *Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -26,9 +33,9 @@ POST /users/{id}/inferenceClassification/overrides
 ## Request body
 In the request body, supply a JSON representation of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object.
 
-
 ## Response
-If successful, this method returns `201, Created` response code and an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.
 
 ## Example
 ##### Request
@@ -44,8 +51,8 @@ Content-type: application/json
 {
   "classifyAs": "focused",
   "senderEmailAddress": {
-    "name": "Fanny Downs",
-    "address": "fannyd@adatum.onmicrosoft.com"
+    "name": "Samantha Booth",
+    "address": "samanthab@adatum.onmicrosoft.com"
   }
 }
 ```
@@ -64,8 +71,8 @@ Content-type: application/json
 {
   "classifyAs": "focused",
   "senderEmailAddress": {
-    "name": "Fanny Downs",
-    "address": "fannyd@adatum.onmicrosoft.com"
+    "name": "Samantha Booth",
+    "address": "samanthab@adatum.onmicrosoft.com"
   },
   "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
 }

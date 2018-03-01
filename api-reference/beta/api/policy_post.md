@@ -1,14 +1,20 @@
 # Create Policy
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create a new [policy](../resources/policy.md) object by specifying display name, policy type, and policy description.
 
 >Note: The policy details will be validated before being stored. If it does not pass validation, a 400 Bad Request will be returned.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
 
 ```http
@@ -31,8 +37,9 @@ The following table shows the properties that are required when you create a pol
 |displayName|String|A custom name for the policy.|
 |type|String|Specifies the type of policy. Currently must be "TokenLifetimePolicy"|
 
-### Response
-If successful, this method returns `201, Created` response code and [policy](../resources/policy.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.  
+## Response
+
+If successful, this method returns `201 Created` response code and [policy](../resources/policy.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.  
 
 ## Example
 The following example creates a new token lifetime Policy. Notice the string definition parameter

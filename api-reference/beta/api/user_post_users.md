@@ -1,12 +1,18 @@
 # Create user
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a new user.
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Directory.ReadWrite.All; Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -34,9 +40,9 @@ The following table shows the properties that are required when you create a use
 
 Since the **user** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
 
-
 ## Response
-If successful, this method returns `201, Created` response code and [user](../resources/user.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and [user](../resources/user.md) object in the response body.
 
 ## Example
 ##### Request

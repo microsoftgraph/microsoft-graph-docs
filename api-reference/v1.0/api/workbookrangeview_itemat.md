@@ -1,8 +1,15 @@
 # workbookRangeView: itemAt
 
 
-## Prerequisites
-The following **scopes** are required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -22,8 +29,9 @@ In the request URL, provide following query parameters with values.
 |:---------------|:--------|:----------|
 |index|Int32|Index of the item to be returned.|
 
-### Response
-If successful, this method returns `200, OK` response code and [workbookRangeView](../resources/workbookrangeview.md) object in the response body.
+## Response
+
+If successful, this method returns `200 OK` response code and [workbookRangeView](../resources/workbookrangeview.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

@@ -1,16 +1,20 @@
 # Get RangeFormat
 
 Retrieve the properties and relationships of rangeformat object.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/format
-GET /workbook/worksheets/{id|name}/range(<address>)/format
+GET /workbook/worksheets/{id|name}/range(address='<address>')/format
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
 ## Optional query parameters
@@ -20,11 +24,13 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [RangeFormat](../resources/rangeformat.md) object in the response body.
 ## Example
 ##### Request

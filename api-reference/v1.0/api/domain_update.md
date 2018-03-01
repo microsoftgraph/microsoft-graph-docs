@@ -5,9 +5,16 @@ Update the properties of domain object.
 > **Important:**
 > Only verified domains can be updated.
 
-## Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Domain.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -28,7 +35,7 @@ PATCH /domains/{id}
 
 In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.
 
-### Response
+## Response
 
 If successful, this method returns a `204 No Content` response code and no response body.
 
@@ -40,7 +47,7 @@ If successful, this method returns a `204 No Content` response code and no respo
   "name": "update_domain"
 }-->
 ```http
-PATCH https://graph.microsoft.com/V1.0/domains/contoso.com
+PATCH https://graph.microsoft.com/v1.0/domains/contoso.com
 Content-type: application/json
 
 {

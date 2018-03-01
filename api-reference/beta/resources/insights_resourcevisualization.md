@@ -1,6 +1,6 @@
 # resourceVisualization resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Complex type containing properties of [Insights](insights.md).
 
@@ -33,7 +33,6 @@ Here is a JSON representation of the resource
 | containerWebUrl      	| String		| A path leading to the folder in which the item is stored. |
 | containerDisplayName  | String		| A string describing where the item is stored. For example, the name of a SharePoint site or the user name identifying the owner of the OneDrive storing the item.  |
 | containerType    		| String | Can be used for filtering by the type of container in which the file is stored. Such as Site or OneDriveBusiness.	   |
-
 
 ## Type property values
 -	PowerPoint

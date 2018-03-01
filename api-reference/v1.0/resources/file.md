@@ -1,3 +1,9 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: File
+---
 # File resource type
 
 The **File** resource groups file-related data items into a single structure.
@@ -33,14 +39,10 @@ Here is a JSON representation of the resource.
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "file resource",
-  "keywords": "",
+  "description": "The file facet describes properties of a file",
+  "keywords": "file,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/File"
+} -->

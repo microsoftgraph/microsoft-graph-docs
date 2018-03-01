@@ -1,6 +1,6 @@
 # mailTips resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message 
 as an automatic reply for a message recipient.
@@ -21,7 +21,6 @@ as an automatic reply for a message recipient.
 | recipientScope | String | The scope of the recipient. Possible values are: `none`, `internal`, `external`, `externalPartner`, `externalNonParther`. For example, an administrator can set another organization to be its "partner". The scope is useful if an administrator wants certain mailtips to be accessible to certain scopes. It's also useful to senders to inform them that their message may leave the organization, helping them make the correct decisions about wording, tone and content.|
 | recipientSuggestions | [recipient](../resources/recipient.md) collection | Recipients suggested based on previous contexts where they appear in the same message. |
 | totalMemberCount | Int32 | The number of members if the recipient is a distribution list. |
-
 
 ## JSON representation
 

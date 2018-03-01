@@ -2,8 +2,16 @@
 
 Update the properties of a registered device.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Device.ReadWrite.All* or *Directory.AccessAsUser.All* 
+Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (personal Microsoft account) | Not supported. |
+|Application | Not supported |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -18,13 +26,25 @@ PATCH /devices/{id}
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply the values for the [device](../resources/device.md) properties that should be updated.
+
+In the request body, supply the values for the [device](../resources/device.md) properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. |
+|operatingSystem|String|The type of operating system on the device.|
+|operatingSystemVersion|String|The version of the operating system on the device|
+|displayName|String|The display name for the device.|
+|isCompliant|Boolean|**true** if the device complies with Mobile Device Management (MDM) policies; otherwise, **false**. This can only be updated by an approved MDM app. |
+|isManaged|Boolean|**true** if the device is managed by a Mobile Device Management (MDM) app; otherwise, **false**. This can only be updated by an approved MDM app. |
+
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "update_device"
@@ -32,13 +52,14 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/devices/{id}
 Content-type: application/json
+Content-length: 31
 
 {
-  "accountEnabled": true
+  "accountEnabled": false
 }
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

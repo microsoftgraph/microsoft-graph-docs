@@ -1,15 +1,16 @@
 # Get deleted item
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).
 
 Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-* For users: *User.Read.All; User.ReadWrite.All; Directory.Read.All*
-* For groups: *Group.Read.All; Group.ReadWrite.All; Directory.Read.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+* For users: User.Read.All, User.ReadWrite.All, Directory.Read.All
+* For groups: Group.Read.All, Group.ReadWrite.All, Directory.Read.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -28,7 +29,9 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 
 ## Request body
 Do not supply a request body for this method.
-### Response
+
+## Response
+
 If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
 ## Example
 ##### Request

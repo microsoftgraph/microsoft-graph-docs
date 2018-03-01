@@ -1,38 +1,43 @@
 ﻿# Update managedAndroidStoreApp
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [managedAndroidStoreApp](../resources/intune_apps_managedandroidstoreapp.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app/
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [managedAndroidStoreApp](../resources/intune_apps_managedandroidstoreapp.md) object.
-The following table shows the properties that are required when you create a [managedAndroidStoreApp](../resources/intune_apps_managedandroidstoreapp.md).
+In the request body, supply a JSON representation for the [managedAndroidStoreApp](../resources/intune_apps_managedandroidstoreapp.md) object.
+
+The following table shows the properties that are required when you create the [managedAndroidStoreApp](../resources/intune_apps_managedandroidstoreapp.md).
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |description|String|The description of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -47,9 +52,12 @@ The following table shows the properties that are required when you create a [ma
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |appAvailability|String|The Application's availability. Inherited from [managedApp](../resources/intune_apps_managedapp.md) Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
 |packageId|String|The app's package ID.|
+|appStoreUrl|String|The Android AppStoreUrl.|
+|minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|The value for the minimum supported operating system.|
 
 
 
@@ -59,10 +67,10 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 683
+Content-length: 1041
 
 {
   "displayName": "Display Name value",
@@ -81,18 +89,31 @@ Content-length: 683
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
-  "packageId": "Package Id value"
+  "packageId": "Package Id value",
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
+    "v4_0": true,
+    "v4_0_3": true,
+    "v4_1": true,
+    "v4_2": true,
+    "v4_3": true,
+    "v4_4": true,
+    "v5_0": true,
+    "v5_1": true
+  }
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 852
+Content-Length: 1210
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidStoreApp",
@@ -114,9 +135,22 @@ Content-Length: 852
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
-  "packageId": "Package Id value"
+  "packageId": "Package Id value",
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
+    "v4_0": true,
+    "v4_0_3": true,
+    "v4_1": true,
+    "v4_2": true,
+    "v4_3": true,
+    "v4_4": true,
+    "v5_0": true,
+    "v5_1": true
+  }
 }
 ```
 

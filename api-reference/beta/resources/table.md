@@ -1,6 +1,6 @@
 # Table resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents an Excel table.
 
@@ -25,8 +25,6 @@ Represents an Excel table.
 |[Reapplyfilters](../api/table_reapplyfilters.md)|None|Reapplies all the filters currently on the table.|
 |[List](../api/table_list.md) | [Table](table.md) collection |Get table object collection. |
 |[Add](../api/tablecollection_add.md)|[Table](table.md)|Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.|
-
-
 
 ## Properties
 | Property	   | Type	|Description|

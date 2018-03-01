@@ -1,10 +1,17 @@
 # Get outlookTaskFolder
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get the properties and relationships of the specified Outlook task folder.
-## Prerequisites
-The following **scopes** are required to execute this API: _Tasks.Read_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Tasks.Read    |
+|Delegated (personal Microsoft account) | Tasks.Read    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -21,7 +28,9 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 
 ## Request body
 Do not supply a request body for this method.
-### Response
+
+## Response
+
 If successful, this method returns a `200 OK` response code and [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.
 ## Example
 ##### Request

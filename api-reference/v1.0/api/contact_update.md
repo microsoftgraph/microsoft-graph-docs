@@ -1,9 +1,15 @@
 # Update contact
 
 Update the properties of a contact object.
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Contacts.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Contacts.ReadWrite    |
+|Delegated (personal Microsoft account) | Contacts.ReadWrite    |
+|Application | Contacts.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).
@@ -61,7 +67,7 @@ In the request body, supply the values for relevant fields that should be update
 |parentFolderId|String|The ID of the contact's parent folder.|
 |personalNotes|String|The user's notes about the contact.|
 |profession|String|The contact's profession.|
-|spouseName|String|The name of the contact's spouse.|
+|spouseName|String|The name of the contact's spouse/partner.|
 |surname|String|The contact's surname.|
 |title|String|The contact's title.|
 |yomiCompanyName|String|The phonetic Japanese company name of the contact. This property is optional.|
@@ -69,6 +75,7 @@ In the request body, supply the values for relevant fields that should be update
 |yomiSurname|String|The phonetic Japanese surname (last name)  of the contact. This property is optional.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [contact](../resources/contact.md) object in the response body.
 ## Example
 ##### Request

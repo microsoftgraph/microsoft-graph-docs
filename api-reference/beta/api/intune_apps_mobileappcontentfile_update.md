@@ -1,35 +1,41 @@
 ﻿# Update mobileAppContentFile
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) object.
-The following table shows the properties that are required when you create a [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md).
+In the request body, supply a JSON representation for the [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) object.
+
+The following table shows the properties that are required when you create the [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md).
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |azureStorageUri|String|The Azure Storage URI.|
 |isCommitted|Boolean|A value indicating whether the file is committed.|
 |id|String|The File Id.|
@@ -40,6 +46,7 @@ The following table shows the properties that are required when you create a [mo
 |azureStorageUriExpirationDateTime|DateTimeOffset|The time the Azure storage Uri expires.|
 |manifest|Binary|The manifest information.|
 |uploadState|String|The state of the current upload request. Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
+|isFrameworkFile|Boolean|A value indicating whether the file is a framework file.|
 
 
 
@@ -49,10 +56,10 @@ If successful, this method returns a `200 OK` response code and an updated [mobi
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}
 Content-type: application/json
-Content-length: 283
+Content-length: 311
 
 {
   "azureStorageUri": "Azure Storage Uri value",
@@ -62,16 +69,17 @@ Content-length: 283
   "sizeEncrypted": 13,
   "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
   "manifest": "bWFuaWZlc3Q=",
-  "uploadState": "transientError"
+  "uploadState": "transientError",
+  "isFrameworkFile": true
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 450
+Content-Length: 478
 
 {
   "@odata.type": "#microsoft.graph.mobileAppContentFile",
@@ -84,7 +92,8 @@ Content-Length: 450
   "sizeEncrypted": 13,
   "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
   "manifest": "bWFuaWZlc3Q=",
-  "uploadState": "transientError"
+  "uploadState": "transientError",
+  "isFrameworkFile": true
 }
 ```
 

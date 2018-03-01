@@ -3,10 +3,14 @@ Copies a section to a specific section group.
 
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:   
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite    |
+|Application | Notes.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,6 +39,7 @@ In the request body, provide a JSON object that contains the parameters that you
 |siteId|String||-->
 
 ## Response
+
 If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation_get.md).
 
 ## Example

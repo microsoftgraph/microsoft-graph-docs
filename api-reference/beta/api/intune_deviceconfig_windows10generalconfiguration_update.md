@@ -1,58 +1,87 @@
 ﻿# Update windows10GeneralConfiguration
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object.
-The following table shows the properties that are required when you create a [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md).
+In the request body, supply a JSON representation for the [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object.
+
+The following table shows the properties that are required when you create the [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md).
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|assignmentStatus|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|assignmentProgress|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|assignmentErrorMessage|String|Read-only. DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|enableAutomaticRedeployment|Boolean|Allow users with administrative rights to delete all user data and settings using CTRL + Win + R at the device lock screen so that the device can be automatically re-configured and re-enrolled into management.|
+|assignedAccessSingleModeUserName|String|This policy setting allows to define the user account that will be locked to Single App Kiosk Mode.|
+|assignedAccessSingleModeAppUserModelId|String|This policy setting allows to define the Application User Model ID (AUMID) that will be locked to Single App Kiosk Mode.|
+|microsoftAccountSignInAssistantSettings|String|Controls the Microsoft Account Sign-In Assistant (wlidsvc) NT service. Possible values are: `notConfigured`, `disabled`.|
+|authenticationAllowSecondaryDevice|Boolean|Allows secondary authentication devices to work with Windows.|
+|authenticationAllowFIDODevice|Boolean|Indicates whether or not to allow authentication using FIDO device (https://fidoalliance.org/)|
+|cryptographyAllowFipsAlgorithmPolicy|Boolean|Specify whether to allow or disallow the Federal Information Processing Standard (FIPS) policy.|
+|displayAppListWithGdiDPIScalingTurnedOn|String collection|List of legacy applications that have GDI DPI Scaling turned on.|
+|displayAppListWithGdiDPIScalingTurnedOff|String collection|List of legacy applications that have GDI DPI Scaling turned off.|
 |enterpriseCloudPrintDiscoveryEndPoint|String|Endpoint for discovering cloud printers.|
 |enterpriseCloudPrintOAuthAuthority|String|Authentication endpoint for acquiring OAuth tokens.|
 |enterpriseCloudPrintOAuthClientIdentifier|String|GUID of a client application authorized to retrieve OAuth tokens from the OAuth Authority.|
 |enterpriseCloudPrintResourceIdentifier|String|OAuth resource URI for print service as configured in the Azure portal.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|OAuth resource URI for printer discovery service as configured in Azure portal.|
+|messagingBlockSync|Boolean|Indicates whether or not to block text message back up and restore and Messaging Everywhere.|
+|messagingBlockMMS|Boolean|Indicates whether or not to block the the MMS send/receive functionality on the device.|
+|messagingBlockRichCommunicationServices|Boolean|Indicates whether or not to block the the RCS send/receive functionality on the device.|
+|searchBlockDiacritics|Boolean|Specifies if search can use diacritics.|
+|searchDisableAutoLanguageDetection|Boolean|Specifies whether to use automatic language detection when indexing content and properties.|
+|searchDisableIndexingEncryptedItems|Boolean|Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for Cortana or Explorer.|
+|searchEnableRemoteQueries|Boolean|Indicates whether or not to block remote queries of this computer’s index.|
+|searchDisableUseLocation|Boolean|Specifies if search can use location information.|
+|searchDisableIndexerBackoff|Boolean|Indicates whether or not to disable the search indexer backoff feature.|
+|searchDisableIndexingRemovableDrive|Boolean|Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.|
+|searchEnableAutomaticIndexSizeManangement|Boolean|Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.|
+|securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|Specify whether to allow automatic device encryption during OOBE when the device is Azure AD joined (desktop only).|
+|diagnosticsDataSubmissionMode|String|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
+|oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
+|systemTelemetryProxyServer|String|Gets or sets the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests.|
+|inkWorkspaceAccess|String|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|inkWorkspaceBlockSuggestedApps|Boolean|Specify whether to show recommended app suggestions in the ink workspace.|
+|smartScreenEnableAppInstallControl|Boolean|Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
 |personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
 |personalizationLockScreenImageUrl|String|A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.|
 |bluetoothAllowedServices|String collection|Specify a list of allowed Bluetooth services and profiles in hex formatted strings.|
 |bluetoothBlockAdvertising|Boolean|Whether or not to Block the user from using bluetooth advertising.|
 |bluetoothBlockDiscoverableMode|Boolean|Whether or not to Block the user from using bluetooth discoverable mode.|
 |bluetoothBlockPrePairing|Boolean|Whether or not to block specific bundled Bluetooth peripherals to automatically pair with the host device.|
-|bluetoothDeviceName|String|Specify the device’s Bluetooth name. If not configured, the default local radio name is used.|
 |edgeBlockAutofill|Boolean|Indicates whether or not to block auto fill.|
 |edgeBlocked|Boolean|Indicates whether or not to Block the user from using the Edge browser.|
 |edgeCookiePolicy|String|Indicates which cookies to block in the Edge browser. Possible values are: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
@@ -69,6 +98,8 @@ The following table shows the properties that are required when you create a [wi
 |edgeDisableFirstRunPage|Boolean|Block the Microsoft web page that opens on the first use of Microsoft Edge. This policy allows enterprises, like those enrolled in zero emissions configurations, to block this page.|
 |edgeBlockLiveTileDataCollection|Boolean|Block the collection of information by Microsoft for live tile creation when users pin a site to Start from Microsoft Edge.|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.|
+|edgeFavoritesListLocation|String|The location of the favorites list to provision. Could be a local file, local network or http location.|
+|edgeBlockEditFavorites|Boolean|Indicates whether or not to Block the user from making changes to Favorites.|
 |cellularBlockDataWhenRoaming|Boolean|Whether or not to Block the user from using data over cellular while roaming.|
 |cellularBlockVpn|Boolean|Whether or not to Block the user from using VPN over cellular.|
 |cellularBlockVpnWhenRoaming|Boolean|Whether or not to Block the user from using VPN when roaming over cellular.|
@@ -99,6 +130,8 @@ The following table shows the properties that are required when you create a [wi
 |defenderScanType|String|The defender system scan type. Possible values are: `userDefined`, `disabled`, `quick`, `full`.|
 |defenderScheduledScanTime|TimeOfDay|The defender time for the system scan.|
 |defenderScheduledQuickScanTime|TimeOfDay|The time to perform a daily quick scan.|
+|defenderCloudBlockLevel|String|Specifies the level of cloud-delivered protection. Possible values are: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
+|defenderCloudExtendedTimeout|Int32|Timeout extension for file scanning by the cloud. Valid values 0 to 50|
 |lockScreenAllowTimeoutConfiguration|Boolean|Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to block action center notifications over lock screen.|
 |lockScreenBlockCortana|Boolean|Indicates whether or not the user can interact with Cortana using speech while the system is locked.|
@@ -108,14 +141,17 @@ The following table shows the properties that are required when you create a [wi
 |passwordExpirationDays|Int32|The password expiration in days. Valid values 0 to 730|
 |passwordMinimumLength|Int32|The minimum password length. Valid values 4 to 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|The minutes of inactivity before the screen times out.|
-|passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password. Valid values 1 to 4|
+|passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
 |passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent reuse of. Valid values 0 to 50|
 |passwordRequired|Boolean|Indicates whether or not to require the user to have a password.|
 |passwordRequireWhenResumeFromIdleState|Boolean|Indicates whether or not to require a password upon resuming from an idle state.|
 |passwordRequiredType|String|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|The number of sign in failures before factory reset. Valid values 0 to 999|
+|privacyAdvertisingId|String|Enables or disables the use of advertising ID. Added in Windows 10, version 1607. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when launching apps.|
 |privacyBlockInputPersonalization|Boolean|Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
+|privacyBlockPublishUserActivities|Boolean|Blocks the shared experiences/discovery of recently used resources in task switcher etc.|
+|privacyBlockActivityFeed|Boolean|Blocks the usage of cloud based speech services for Cortana, Dictation, or Store applications|
 |startBlockUnpinningAppsFromTaskbar|Boolean|Indicates whether or not to block the user from unpinning apps from taskbar.|
 |startMenuAppListVisibility|String|Setting the value of this collapses the app list, removes the app list entirely, or disables the corresponding toggle in the Settings app. Possible values are: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Boolean|Enabling this policy hides the change account setting from appearing in the user tile in the start menu.|
@@ -178,8 +214,6 @@ The following table shows the properties that are required when you create a [wi
 |cortanaBlocked|Boolean|Whether or not to Block the user from using Cortana.|
 |deviceManagementBlockFactoryResetOnMobile|Boolean|Indicates whether or not to Block the user from resetting their phone.|
 |deviceManagementBlockManualUnenroll|Boolean|Indicates whether or not to Block the user from doing manual un-enrollment from device management.|
-|diagnosticsDataSubmissionMode|String|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
-|oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
 |safeSearchFilter|String|Specifies what filter level of safe search is required. Possible values are: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Boolean|Indicates whether or not to block popups.|
 |edgeBlockSearchSuggestions|Boolean|Indicates whether or not to Block the user from using the search suggestions in the address bar.|
@@ -241,25 +275,53 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 9574
+Content-length: 11022
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "assignmentStatus": "Assignment Status value",
-  "assignmentProgress": "Assignment Progress value",
-  "assignmentErrorMessage": "Assignment Error Message value",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "enableAutomaticRedeployment": true,
+  "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
+  "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
+  "microsoftAccountSignInAssistantSettings": "disabled",
+  "authenticationAllowSecondaryDevice": true,
+  "authenticationAllowFIDODevice": true,
+  "cryptographyAllowFipsAlgorithmPolicy": true,
+  "displayAppListWithGdiDPIScalingTurnedOn": [
+    "Display App List With Gdi DPIScaling Turned On value"
+  ],
+  "displayAppListWithGdiDPIScalingTurnedOff": [
+    "Display App List With Gdi DPIScaling Turned Off value"
+  ],
   "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
   "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
   "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
   "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
   "enterpriseCloudPrintDiscoveryMaxLimit": 5,
   "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+  "messagingBlockSync": true,
+  "messagingBlockMMS": true,
+  "messagingBlockRichCommunicationServices": true,
+  "searchBlockDiacritics": true,
+  "searchDisableAutoLanguageDetection": true,
+  "searchDisableIndexingEncryptedItems": true,
+  "searchEnableRemoteQueries": true,
+  "searchDisableUseLocation": true,
+  "searchDisableIndexerBackoff": true,
+  "searchDisableIndexingRemovableDrive": true,
+  "searchEnableAutomaticIndexSizeManangement": true,
+  "securityBlockAzureADJoinedDevicesAutoEncryption": true,
+  "diagnosticsDataSubmissionMode": "none",
+  "oneDriveDisableFileSync": true,
+  "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+  "inkWorkspaceAccess": "enabled",
+  "inkWorkspaceBlockSuggestedApps": true,
+  "smartScreenEnableAppInstallControl": true,
   "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
   "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
   "bluetoothAllowedServices": [
@@ -268,7 +330,6 @@ Content-length: 9574
   "bluetoothBlockAdvertising": true,
   "bluetoothBlockDiscoverableMode": true,
   "bluetoothBlockPrePairing": true,
-  "bluetoothDeviceName": "Bluetooth Device Name value",
   "edgeBlockAutofill": true,
   "edgeBlocked": true,
   "edgeCookiePolicy": "allow",
@@ -285,6 +346,8 @@ Content-length: 9574
   "edgeDisableFirstRunPage": true,
   "edgeBlockLiveTileDataCollection": true,
   "edgeSyncFavoritesWithInternetExplorer": true,
+  "edgeFavoritesListLocation": "Edge Favorites List Location value",
+  "edgeBlockEditFavorites": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -327,6 +390,8 @@ Content-length: 9574
   "defenderScanType": "disabled",
   "defenderScheduledScanTime": "11:59:10.9990000",
   "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeout": 12,
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
@@ -342,8 +407,11 @@ Content-length: 9574
   "passwordRequireWhenResumeFromIdleState": true,
   "passwordRequiredType": "alphanumeric",
   "passwordSignInFailureCountBeforeFactoryReset": 12,
+  "privacyAdvertisingId": "blocked",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
   "privacyBlockInputPersonalization": true,
+  "privacyBlockPublishUserActivities": true,
+  "privacyBlockActivityFeed": true,
   "startBlockUnpinningAppsFromTaskbar": true,
   "startMenuAppListVisibility": "collapse",
   "startMenuHideChangeAccountSettings": true,
@@ -413,8 +481,6 @@ Content-length: 9574
   "cortanaBlocked": true,
   "deviceManagementBlockFactoryResetOnMobile": true,
   "deviceManagementBlockManualUnenroll": true,
-  "diagnosticsDataSubmissionMode": "none",
-  "oneDriveDisableFileSync": true,
   "safeSearchFilter": "strict",
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
@@ -476,28 +542,56 @@ Content-length: 9574
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9750
+Content-Length: 11198
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
   "id": "a4235d71-5d71-a423-715d-23a4715d23a4",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "assignmentStatus": "Assignment Status value",
-  "assignmentProgress": "Assignment Progress value",
-  "assignmentErrorMessage": "Assignment Error Message value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "enableAutomaticRedeployment": true,
+  "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
+  "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
+  "microsoftAccountSignInAssistantSettings": "disabled",
+  "authenticationAllowSecondaryDevice": true,
+  "authenticationAllowFIDODevice": true,
+  "cryptographyAllowFipsAlgorithmPolicy": true,
+  "displayAppListWithGdiDPIScalingTurnedOn": [
+    "Display App List With Gdi DPIScaling Turned On value"
+  ],
+  "displayAppListWithGdiDPIScalingTurnedOff": [
+    "Display App List With Gdi DPIScaling Turned Off value"
+  ],
   "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
   "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
   "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
   "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
   "enterpriseCloudPrintDiscoveryMaxLimit": 5,
   "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+  "messagingBlockSync": true,
+  "messagingBlockMMS": true,
+  "messagingBlockRichCommunicationServices": true,
+  "searchBlockDiacritics": true,
+  "searchDisableAutoLanguageDetection": true,
+  "searchDisableIndexingEncryptedItems": true,
+  "searchEnableRemoteQueries": true,
+  "searchDisableUseLocation": true,
+  "searchDisableIndexerBackoff": true,
+  "searchDisableIndexingRemovableDrive": true,
+  "searchEnableAutomaticIndexSizeManangement": true,
+  "securityBlockAzureADJoinedDevicesAutoEncryption": true,
+  "diagnosticsDataSubmissionMode": "none",
+  "oneDriveDisableFileSync": true,
+  "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+  "inkWorkspaceAccess": "enabled",
+  "inkWorkspaceBlockSuggestedApps": true,
+  "smartScreenEnableAppInstallControl": true,
   "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
   "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
   "bluetoothAllowedServices": [
@@ -506,7 +600,6 @@ Content-Length: 9750
   "bluetoothBlockAdvertising": true,
   "bluetoothBlockDiscoverableMode": true,
   "bluetoothBlockPrePairing": true,
-  "bluetoothDeviceName": "Bluetooth Device Name value",
   "edgeBlockAutofill": true,
   "edgeBlocked": true,
   "edgeCookiePolicy": "allow",
@@ -523,6 +616,8 @@ Content-Length: 9750
   "edgeDisableFirstRunPage": true,
   "edgeBlockLiveTileDataCollection": true,
   "edgeSyncFavoritesWithInternetExplorer": true,
+  "edgeFavoritesListLocation": "Edge Favorites List Location value",
+  "edgeBlockEditFavorites": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -565,6 +660,8 @@ Content-Length: 9750
   "defenderScanType": "disabled",
   "defenderScheduledScanTime": "11:59:10.9990000",
   "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeout": 12,
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
@@ -580,8 +677,11 @@ Content-Length: 9750
   "passwordRequireWhenResumeFromIdleState": true,
   "passwordRequiredType": "alphanumeric",
   "passwordSignInFailureCountBeforeFactoryReset": 12,
+  "privacyAdvertisingId": "blocked",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
   "privacyBlockInputPersonalization": true,
+  "privacyBlockPublishUserActivities": true,
+  "privacyBlockActivityFeed": true,
   "startBlockUnpinningAppsFromTaskbar": true,
   "startMenuAppListVisibility": "collapse",
   "startMenuHideChangeAccountSettings": true,
@@ -651,8 +751,6 @@ Content-Length: 9750
   "cortanaBlocked": true,
   "deviceManagementBlockFactoryResetOnMobile": true,
   "deviceManagementBlockManualUnenroll": true,
-  "diagnosticsDataSubmissionMode": "none",
-  "oneDriveDisableFileSync": true,
   "safeSearchFilter": "strict",
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,

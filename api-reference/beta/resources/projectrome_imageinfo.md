@@ -1,6 +1,6 @@
 # imageInfo resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 A  complex type for representing an image in the [visualInfo](../resources/projectrome_visualinfo.md) part of the [activity](../resources/projectrome_activity.md) object.
 
@@ -23,14 +23,15 @@ Here is a JSON representation of the resource
     "alternativeText",
     "addImageQuery"
   ],
-  "@odata.type": "microsoft.graph.activity.imageinfo"
+  "@odata.type": "microsoft.graph.imageInfo"
 }-->
 
 ```json
-"attribution": {
+{
+    "@odata.type": "microsoft.graph.imageInfo",
     "iconUrl": "String (URL)",
     "alternativeText": "String",
-    "addImageQuery": "boolean",
+    "addImageQuery": "boolean"
 }
 ```
 

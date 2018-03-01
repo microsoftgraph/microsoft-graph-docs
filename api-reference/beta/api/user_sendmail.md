@@ -1,6 +1,6 @@
 # Send mail
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Send the message specified in the request body. The message is saved in the Sent Items folder by default.
 
@@ -9,8 +9,15 @@ In the same **sendMail** action call, you can:
 - Include an [attachment](../resources/attachment.md)
 - Use a [mention](../resources/mention.md) to call out another user in the new message
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Mail.Send*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Send    |
+|Delegated (personal Microsoft account) | Mail.Send    |
+|Application | Mail.Send |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -34,11 +41,11 @@ In the request body, provide a JSON object with the following parameters.
 If you want to use **mention** to call out another user in the new message:
 
 - Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.
-- For each mention in the **mentions** property, you must specify the **mentioned** and **createdBy** properties.
-
+- For each mention in the **mentions** property, you must specify the **mentioned** property.
 
 ## Response
-If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
+
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -63,7 +70,7 @@ Content-length: 512
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "fannyd@contoso.onmicrosoft.com"
+          "address": "samanthab@contoso.onmicrosoft.com"
         }
       }
     ],
@@ -91,7 +98,7 @@ HTTP/1.1 202 Accepted
 
 
 ##### Request 2
-The next example includes a mention of another user Dana Swope in the draft.
+The next example shows a message by the signed-in user to Samantha Booth. The message also includes a mention of another user, Dana Swope.
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_mentions"
@@ -107,8 +114,8 @@ Content-length: 344
     "toRecipients":[
       {
           "emailAddress":{
-              "name":"Fanny Downs",
-              "address":"fannyd@contoso.onmicrosoft.com"
+              "name":"Samantha Booth",
+              "address":"samanthab@contoso.onmicrosoft.com"
           }
       }
     ],
@@ -117,11 +124,7 @@ Content-length: 344
         "mentioned":{
           "name":"Dana Swope",
           "address":"danas@contoso.onmicrosoft.com"
-         },
-        "createdBy": {
-            "name":"Randi Welch",
-            "address":"randiw@contoso.onmicrosoft.com"
-        }
+         }
       }
     ]
   }

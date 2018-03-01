@@ -8,8 +8,6 @@ The name and email address of a contact or message recipient.
 |address|String|The email address of the person or entity.|
 |name|String|The display name of the person or entity.|
 
-
-
 ## JSON representation
 
 Here is a JSON representation of the resource

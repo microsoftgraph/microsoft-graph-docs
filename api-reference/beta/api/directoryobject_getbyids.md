@@ -1,6 +1,6 @@
 # Get directory objects from a list of ids
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Returns the directory objects specified in a list of ids.  NOTE: The directory objects returned are the full objects containing **all** their properties. The `$select` query option is not available for this operation.
 
@@ -9,9 +9,16 @@ Some common uses for this function are to:
 * Resolve ids returned by functions (that return collections of ids) such as [getMemberObjects](directoryobject_getmemberobjects.md) or [getMemberGroups](directoryobject_getmembergroups.md)  to their backing directory objects.
 * Resolve ids persisted in an external store by the application to their backing directory objects.
 
-## Prerequisites
+## Permissions
 
-One of the following **scopes** are required to execute this API: _Directory.Read.All_
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All |
 
 ## HTTP request
 
@@ -39,7 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and String collection object in the response body.
+If successful, this method returns `200 OK` response code and String collection object in the response body.
 
 ## Example
 

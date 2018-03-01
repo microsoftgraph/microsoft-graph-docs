@@ -1,16 +1,20 @@
 # Range: BoundingRect
 
 Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/BoundingRect
-GET /workbook/worksheets/{id|name}/range(<address>)/BoundingRect
+GET /workbook/worksheets/{id|name}/range(address='<address>')/BoundingRect
 GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
 
 ```
@@ -18,7 +22,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -28,7 +32,8 @@ In the request body, provide a JSON object with the following parameters.
 |anotherRange|string|The range object or address or range name.|
 
 ## Response
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+
+If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

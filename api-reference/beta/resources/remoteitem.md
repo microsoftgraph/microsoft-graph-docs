@@ -1,6 +1,12 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: RemoteItem
+---
 # RemoteItem resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **remoteItem** resource indicates that a [**driveItem**](driveitem.md) references an item that exists in another drive.
 This resource provides the unique IDs of the source drive and target item.
@@ -31,7 +37,6 @@ This resource provides the unique IDs of the source drive and target item.
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "size": 1024,
-  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "webDavUrl": "url",
   "webUrl": "url"
 }
@@ -55,7 +60,6 @@ This resource provides the unique IDs of the source drive and target item.
 | shared               | [shared](shared.md)                 | Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only.                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Provides interop between items in OneDrive for Business and SharePoint with the full set of item identifiers. Read-only.                                          |
 | size                 | Int64                               | Size of the remote item. Read-only.                                                                                                                               |
-| specialFolder        | [SpecialFolder](specialfolder.md)   | If the current item is also available as a special folder, this facet is returned. Read-only.                                                                     |
 | webDavUrl            | Url                                 | DAV compatible URL for the item.                                                                                                                                  |
 | webUrl               | Url                                 | URL that displays the resource in the browser. Read-only.                                                                                                         |
 
@@ -63,10 +67,10 @@ This resource provides the unique IDs of the source drive and target item.
 
 For more information about the facets on a **driveItem**, see [driveItem](driveitem.md).
 
-
 <!-- {
   "type": "#page.annotation",
-  "description": "remoteItem resource type provides a link to an item in another drive.",
-  "keywords": "remoteitem symlink remote drive shared with me add to onedrive",
-  "section": "documentation"
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
+  "section": "documentation",
+  "tocPath": "Facets/RemoteItem"
 } -->

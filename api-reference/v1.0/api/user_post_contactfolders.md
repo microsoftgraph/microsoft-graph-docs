@@ -3,9 +3,15 @@
 Create a new contactFolder under the user's default contacts folder.
 
 You can also [create a new contactfolder as a child of any specified contact folder](contactfolder_post_childfolders.md).
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Contacts.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Contacts.ReadWrite    |
+|Delegated (personal Microsoft account) | Contacts.ReadWrite    |
+|Application | Contacts.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -20,9 +26,9 @@ POST /users/{id | userPrincipalName}/contactFolders
 ## Request body
 In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.
 
-
 ## Response
-If successful, this method returns `201, Created` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
 
 ## Example
 ##### Request

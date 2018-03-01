@@ -2,12 +2,16 @@
 # Update user
 
 Update the properties of a user object.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*User.ReadWrite; User.ReadWrite.All; Directory.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-When updating the passwordProfile property, the following scope is required:
-*Directory.AccessAsUser.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | User.ReadWrite    |
+|Application | User.ReadWrite.All, Directory.ReadWrite.All |
+
+When updating the passwordProfile property, the following permission is required: Directory.AccessAsUser.All.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -59,6 +63,7 @@ In the request body, supply the values for relevant fields that should be update
 |userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 ## Example
 ##### Request
@@ -91,8 +96,7 @@ Content-length: 491
   "businessPhones": [
     "businessPhones-value"
   ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+  "city": "city-value"
 }
 ```
 ##### Response

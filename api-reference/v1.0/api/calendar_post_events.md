@@ -1,9 +1,15 @@
 # Create Event
 
 Use this API to create a new Event in the default or the specified calendar.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
+|Application | Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 A user's or group's default [calendar](../resources/calendar.md).
@@ -34,9 +40,9 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## Request body
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
 
-
 ## Response
-If successful, this method returns `201, Created` response code and [Event](../resources/event.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and [Event](../resources/event.md) object in the response body.
 
 ## Example
 ##### Request

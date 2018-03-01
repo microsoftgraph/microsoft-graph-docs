@@ -12,7 +12,6 @@ Specifies a domain for a tenant. The **verifiedDomains** property of the [organi
 |name|String|The domain name; for example, “contoso.onmicrosoft.com”|
 |type|String|For example, “Managed”.|
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource

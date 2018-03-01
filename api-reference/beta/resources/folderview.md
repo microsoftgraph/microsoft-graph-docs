@@ -1,10 +1,16 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: FolderView
+---
 # FolderView resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **FolderView** resource provides or sets recommendations on the user-experience of a folder.
 
-It is available on the [folder][folder-facet] property of [driveItem][item-resource] resources.
+It is available from the [folder][folder-facet] property of [driveItem][item-resource] resources.
 
 ## JSON representation
 
@@ -26,6 +32,7 @@ It is available on the [folder][folder-facet] property of [driveItem][item-resou
 | **sortOrder**         | string | If true, indicates that items should be sorted in descending order. Otherwise, items should be sorted ascending.
 | **viewType**          | string | The type of view that should be used to represent the folder.
 
+You can use the _sortBy_ property to control the sort order of the items in applications that respect the **viewType** facet.
 
 ### sortBy values
 

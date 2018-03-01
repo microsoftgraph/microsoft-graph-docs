@@ -1,13 +1,13 @@
-﻿#  resource type
+﻿# androidForWorkSettings resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Settings for Android For Work.
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[Get androidForWorkSettings](../api/intune_androidforwork_androidforworksettings_get.md)|[androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md)|Read properties and relationships of the [androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md) object.|
 |[Update androidForWorkSettings](../api/intune_androidforwork_androidforworksettings_update.md)|[androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md)|Update the properties of a [androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md) object.|
 |[requestSignupUrl action](../api/intune_androidforwork_androidforworksettings_requestsignupurl.md)|String|Generates a sign-up URL that is used to enroll in Android for Work management.|
@@ -17,7 +17,7 @@ Settings for Android For Work.
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|The Android for Work settings identifier|
 |bindStatus|String|Bind status of the tenant with the Google EMM API Possible values are: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Last completion time for app sync|
@@ -27,6 +27,7 @@ Settings for Android For Work.
 |lastModifiedDateTime|DateTimeOffset|Last modification time for Android for Work settings|
 |enrollmentTarget|String|Indicates which users can enroll devices in Android for Work device management Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'|
+|deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
 
 ## Relationships
 None
@@ -38,7 +39,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.androidForWorkSettings"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.androidForWorkSettings",
   "id": "String (identifier)",
@@ -51,7 +52,8 @@ Here is a JSON representation of the resource.
   "enrollmentTarget": "String",
   "targetGroupIds": [
     "String"
-  ]
+  ],
+  "deviceOwnerManagementEnabled": true
 }
 ```
 

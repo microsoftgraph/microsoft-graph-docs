@@ -1,6 +1,6 @@
 # message resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 A message in a mailbox folder.
 
@@ -43,6 +43,8 @@ Here is a JSON representation of the resource
   "id": "string (identifier)",
   "importance": "String",
   "inferenceClassification": "String",
+  "internetMessageId": "String",
+  "internetMessageHeaders": [{"@odata.type": "microsoft.graph.internetMessageHeader"}],
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
   "isRead": true,
@@ -57,9 +59,15 @@ Here is a JSON representation of the resource
   "subject": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "uniqueBody": {"@odata.type": "microsoft.graph.itemBody"},
-  "UnsubscribeData": "string",
-  "UnsubscribeEnabled": true,
-  "webLink": "string"
+  "unsubscribeData": "string",
+  "unsubscribeEnabled": true,
+  "webLink": "string",
+
+  "attachments": [{"@odata.type": "microsoft.graph.attachment"}],
+  "extensions": [{"@odata.type": "microsoft.graph.extension"}],
+  "mentions": [{"@odata.type": "microsoft.graph.mention"}],
+  "multiValueExtendedProperties": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
+  "singleValueExtendedProperties": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
 }
 
 ```
@@ -69,7 +77,7 @@ Here is a JSON representation of the resource
 |bccRecipients|[recipient](recipient.md) collection|The Bcc: recipients for the message.|
 |body|[itemBody](itembody.md)|The body of the message. It can be in HTML or text format.|
 |bodyPreview|String|The first 255 characters of the message body. It is in text format.|
-|categories|String collection|The categories associated with the message.|
+|categories|String collection|The categories associated with the message. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) defined for the user. |
 |ccRecipients|[recipient](recipient.md) collection|The Cc: recipients for the message.|
 |changeKey|String|The version of the message.|
 |conversationId|String|The ID of the conversation the email belongs to.|
@@ -81,6 +89,8 @@ Here is a JSON representation of the resource
 |id|String|Unique identifier for the message (note that this value may change if a message is moved or altered)|
 |importance|String| The importance of the message: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused`, `other`.|
+|internetMessageId | String | The message ID in the format specified by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Updatable only if **isDraft** is true.|
+|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only.|
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.|
 |isRead|Boolean|Indicates whether the message has been read.|
@@ -111,7 +121,7 @@ Prefer: outlook.allow-unsafe-html
 
 When a message is being composed, in most cases, the From and Sender properties represent the same signed-in user, unless either is updated as described in the following scenarios:
 
-- The **from** property can be changed if the Exchange administrator has assigned **sendAs** rights of the mailbox to some other users. The administrator can do this by selecting **Mailbox Permissions** of the mailbox owner in the Azure Management Portal, or by using the Exchange Admin Center or a Windows PowerShell Add-ADPermission cmdlet. Then, you can programmatically set the **from** property to one of these users who have **sendAs** rights for that mailbox.
+- The **from** property can be changed if the Exchange administrator has assigned **sendAs** rights of the mailbox to some other users. The administrator can do this by selecting **Mailbox Permissions** of the mailbox owner in the Azure portal, or by using the Exchange Admin Center or a Windows PowerShell Add-ADPermission cmdlet. Then, you can programmatically set the **from** property to one of these users who have **sendAs** rights for that mailbox.
 - The **sender** property can be changed if the mailbox owner has delegated one or more users to be able to send messages from that mailbox. The mailbox owner can delegate in Outlook. When a delegate sends a message on behalf of the mailbox owner, the **sender** property is set to the delegate’s account, and the **from** property remains as the mailbox owner. Programmatically, you can set the **sender** property to a user who has got delegate right for that mailbox.
 
 ## Relationships
@@ -122,7 +132,6 @@ When a message is being composed, in most cases, the From and Sender properties 
 |mentions|[mention](mention.md) collection | A collection of mentions in the message, ordered by the **createdDateTime** from the newest to the oldest. By default, a `GET` /messages does not return this property unless you apply `$expand` on the property.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the message. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the message. Read-only. Nullable.|
-
 
 ## Methods
 
@@ -157,7 +166,6 @@ When a message is being composed, in most cases, the From and Sender properties 
 |[Get message with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [message](message.md) | Get messages that contain a single-value extended property by using `$expand` or `$filter`. |
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [message](message.md) | Create one or more multi-value extended properties in a new or existing message.  |
 |[Get message with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [message](message.md) | Get a message that contains a multi-value extended property by using `$expand`. |
-
 
 ## See also
 

@@ -3,10 +3,24 @@
 Use this API to add an [attachment](../resources/attachment.md) to a post. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment
 you can add to under 4MB.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
 
-* Group.ReadWrite.All
+An attachment can be one of the following types:
+
+* A file ([fileAttachment](../resources/fileattachment.md) resource).
+* An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).
+* A link to a file ([referenceAttachment](../resources/referenceAttachment.md) resource).
+
+All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
+resource. 
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -23,9 +37,9 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 
-
 ## Response
-If successful, this method returns `201, Created` response code and [Attachment](../resources/attachment.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and [Attachment](../resources/attachment.md) object in the response body.
 
 ## Example (file attachment)
 

@@ -6,6 +6,41 @@ Currently, this operation returns event bodies in only HTML format.
 
 Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
 
+
+### Get events in another user's calendar
+
+If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get events 
+from another user's calendar. This section focuses on scenarios that involve delegated permissions.
+
+For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a calendar with John. 
+You can get an event in that shared calendar by specifying Garth’s user ID (or user principal name) in the example query shown below.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/events/{id}
+```
+
+This capability applies to all the supported GET events operations for an individual user, as listed in the [HTTP request](#http-request) section below . 
+It also applies if Garth has delegated his entire mailbox to John.
+
+If Garth has not shared his calendar with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
+will return an error. In such cases, specifying a user ID or user principal name only works for getting an event in the signed-in user’s own calendars, 
+and the query is equivalent to using the /me shortcut:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/events/{id}
+```
+
+This capability is available in only GET operations of:
+
+- Shared contact folders, calendars, and message folders 
+- Contacts, events, and messages in shared folders
+- The above resources in delegated mailboxes
+
+This capability is not available in other operations for contacts, events, messages, and their folders.
+
+
 ### Support various time zones
 
 For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response. 
@@ -23,9 +58,15 @@ You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties
 find out the time zone used when the event was created.
 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.Read*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read    |
+|Delegated (personal Microsoft account) | Calendars.Read    |
+|Application | Calendars.Read |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,14 +90,17 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Prefer: outlook.timezone | string | The default time zone for events in the response. |
+| Name       | Type | Description |
+|:---------------|:--------|:--------|
+| Authorization  | string | Bearer {token}. Required.  |
+| Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
+| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.
 ## Example
 ##### Request
@@ -120,8 +164,8 @@ Content-length: 1928
                 "time":"0001-01-01T00:00:00Z"
             },
             "emailAddress":{
-                "name":"Fanny Downs",
-                "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                "name":"Samantha Booth",
+                "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
             }
         },
         {
@@ -138,8 +182,8 @@ Content-length: 1928
     ],
     "organizer":{
         "emailAddress":{
-            "name":"Fanny Downs",
-            "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+            "name":"Samantha Booth",
+            "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
         }
     }
 }

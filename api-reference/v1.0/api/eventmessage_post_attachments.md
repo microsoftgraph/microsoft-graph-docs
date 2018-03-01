@@ -1,8 +1,25 @@
 # Add attachment
 
 Use this API to create a new Attachment.
-## Prerequisites
-The following **scopes** are required to execute this API:  _Mail.ReadWrite_
+
+An attachment can be one of the following types:
+
+* A file ([fileAttachment](../resources/fileattachment.md) resource).
+* An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).
+* A link to a file ([referenceAttachment](../resources/referenceAttachment.md) resource).
+
+All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
+resource. 
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,9 +35,9 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ## Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 
-
 ## Response
-If successful, this method returns `201, Created` response code and [Attachment](../resources/attachment.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and [Attachment](../resources/attachment.md) object in the response body.
 
 ## Example (File attachment)
 ##### Request

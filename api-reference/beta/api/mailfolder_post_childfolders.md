@@ -1,12 +1,18 @@
 # Create MailFolder
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a new child mailfolder.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -14,8 +20,7 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-Specify the parent folder in the query URL as a folder ID, or the `Inbox`, `Drafts`, `SentItems`, or 
-`DeletedItems` well-known folder name.
+Specify the parent folder in the query URL as a folder ID, or a well-known folder name such as *Inbox*, *Drafts*, *SentItems*, or *DeletedItems*. For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).
 
 ## Request headers
 | Header       | Value |
@@ -32,7 +37,8 @@ In the request body, provide a JSON object with the following parameters. **disp
 |displayName|String|The display name of the new folder.|
 
 ## Response
-If successful, this method returns `201, Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
 
 ## Example
 ##### Request

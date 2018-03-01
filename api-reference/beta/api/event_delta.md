@@ -1,6 +1,6 @@
 # event: delta
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) 
 of the user's primary calendar.
@@ -12,8 +12,15 @@ you can query for incremental changes in that calender view. This allows you to 
 a local store of a user's events in the primary calendar, without having to fetch all the events of that calendar 
 from the server every time.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: _Calendars.Read_; _Calendars.ReadWrite_ 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
+|Application | Calendars.Read, Calendars.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -52,9 +59,9 @@ a `GET /calendarview` request. `$select` is not supported in this case.
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 | Prefer | string | {Time zone}. Optional, UTC assumed if absent.|
 
+## Response
 
-### Response
-If successful, this method returns a `200, OK` response code and [event](../resources/event.md) collection object in the response body.
+If successful, this method returns a `200 OK` response code and [event](../resources/event.md) collection object in the response body.
 
 ## Example
 ##### Request

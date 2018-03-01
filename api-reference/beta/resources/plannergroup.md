@@ -1,6 +1,6 @@
 # plannerGroup resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **plannerGroup** resource provides access to Planner resources for a [group](group.md). It doesn't contain any usable properties.
 

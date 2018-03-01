@@ -1,9 +1,15 @@
 # Create Calendar
 
-Use this API to create a new calendar.
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Calendars.ReadWrite*
+Use this API to create a new calendar for a [user](../resources/user.md).
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
+|Application | Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,9 +24,9 @@ POST /users/{id | userPrincipalName}/calendars
 ## Request body
 In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
 
-
 ## Response
-If successful, this method returns `201, Created` response code and [calendar](../resources/calendar.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and [calendar](../resources/calendar.md) object in the response body.
 
 ## Example
 ##### Request
@@ -60,8 +66,8 @@ Content-type: application/json
     "canViewPrivateItems":true,
     "canEdit":true,
     "owner":{
-        "name":"Fanny Downs",
-        "address":"fannyd@adatum.onmicrosoft.com"
+        "name":"Samantha Booth",
+        "address":"samanthab@adatum.onmicrosoft.com"
     }
 }
 ```

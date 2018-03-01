@@ -1,6 +1,10 @@
 # mailFolder resource type
 
-A mailFolder in a user's mailbox, such as Inbox, Drafts, and Sent Items. MailFolders can contain messages and child mailFolders.
+A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders.
+
+Outlook creates certain folders for users by default. Instead of using the corresponding folder **id** value, for convenience, you can use 
+the following well-known folder names when accessing these folders in a **mailFolder** collection: `ArchiveRoot`, `ConversationHistory`, `DeletedItems`, 
+`Drafts`, `Inbox`, `JunkEmail`, `Outbox`, and `SentItems`.
 
 This resource supports using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
 by providing a [delta](../api/mailfolder_delta.md) function.
@@ -23,7 +27,6 @@ by providing a [delta](../api/mailfolder_delta.md) function.
 |[Get mailFolder with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Get mailFolders that contain a single-value extended property by using `$expand` or `$filter`. |
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [mailFolder](mailFolder.md) | Create one or more multi-value extended properties in a new or existing mailFolder.  |
 |[Get mailFolder with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Get a mailFolder that contains a multi-value extended property by using `$expand`. |
-
 
 ## Properties
 | Property	   | Type	|Description|
@@ -52,7 +55,6 @@ MailFolders in Outlook can contain more than one type of items, for example, the
 |messages|[Message](message.md) collection|The collection of messages in the mailFolder.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.|
-
 
 ## JSON representation
 

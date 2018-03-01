@@ -1,11 +1,17 @@
 # Create Message
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a new Message in a mailfolder.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -21,9 +27,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## Request body
 In the request body, supply a JSON representation of [Message](../resources/message.md) object.
 
-
 ## Response
-If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.
 
 ## Example
 ##### Request

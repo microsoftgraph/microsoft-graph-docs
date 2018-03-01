@@ -1,6 +1,12 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: IdentitySet
+---
 # IdentitySet resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **IdentitySet** resource is a keyed collection of [identity](identity.md) resources.
 It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
@@ -9,12 +15,9 @@ It is used to represent a set of identities associated with various events for a
 
 Here is a JSON representation of the resource.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ "user", "device", "application" ],
-  "@odata.type": "microsoft.graph.identitySet"
-}-->
-
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identitySet",
+       "optionalProperties": ["user", "application", "device"],
+       "openType": true } -->
 ```json
 {
   "application": {"@odata.type": "microsoft.graph.identity"},
@@ -40,8 +43,7 @@ See [DriveItem](driveitem.md) for usage of **IdentitySet** resources.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "identitySet resource",
-  "keywords": "",
+  "description": "Identity set is a collection of identities",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/IdentitySet"
+} -->

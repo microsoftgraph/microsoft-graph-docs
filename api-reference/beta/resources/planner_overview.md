@@ -1,6 +1,6 @@
 ﻿# Planner
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The Office 365 Planner API enables you to create tasks and assign them to users in a group in Office 365.
 
@@ -86,6 +86,9 @@ The possible values for the limit types include:
 |MaximumReferencesOnTask|The `references` property on the [plannerTaskDetails](plannerTaskDetails.md) resource contains too many values.|
 |MaximumChecklistItemsOnTask|The `checklist` property on the [plannerTaskDetails](plannerTaskDetails.md) resource contains too many values.|
 |MaximumAssigneesInTasks|The `assignments` property on the [plannerTask](plannerTask.md) resource contains too many values.|
+|MaximumFavoritePlansForUser| The `favoritePlanReferences` property on the [plannerUser](plannerUser.md) resource contains too many values.|
+|MaximumRecentPlansForUser| The `recentPlanReferences` property on the [plannerUser](plannerUser.md) resource contains too many values.|
+|MaximumContextsOnPlan| The `contexts` proeprty on the [plannerPlan](plannerPlan.md) resource contains too many values.|
 
 ### 412 Precondition Failed 
 

@@ -1,10 +1,14 @@
 # Worksheet: Range
 
 Gets the range object specified by the address or name.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -16,7 +20,7 @@ POST /workbook/worksheets/{id|name}/Range
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -26,7 +30,8 @@ In the request body, provide a JSON object with the following parameters.
 |address|string|Optional. The address or the name of the range. If not specified, the entire worksheet range is returned.|
 
 ## Response
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+
+If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

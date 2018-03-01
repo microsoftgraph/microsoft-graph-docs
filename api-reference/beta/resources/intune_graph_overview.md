@@ -1,24 +1,12 @@
 # Working with Intune in Microsoft Graph  
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
-The Intune Graph API enables access to Intune information programmatically for your tenant, and the API performs the same Intune operations as those available through the **Azure Portal**.  
+The Microsoft Graph API for Intune enables programmatic access to Intune information for your tenant; the API performs the same Intune operations as those available through the **Azure Portal**.  
 
-## Sections of the Intune Graph API documentation
-
-The following sections provide the reference documentation for the Intune Graph API and resources:
-
-- [Managed apps](intune_apps_app_conceptual.md)
-- [Company terms and conditions](intune_company_conceptual.md)
-- [Enroll corporate-owned devices](intune_corporate_enrollment_conceptual.md)
-- [Device configuration](intune_device_configuration_conceptual.md)
-- [Device managmement](intune_devicefe_conceptual.md)
-- [App protection](intune_app_protection_conceptual.md)
-- [Enroll devices for management](intune_onboarding_conceptual.md)
-- [Role-based access control](intune_rbac_conceptual.md)
-- [Telecom expense management](intune_tem_conceptual.md)
+For mobile device management (MDM) scenarios, the Graph API for Intune supports standalone deployments; Intune [hybrid deployments](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) are not supported. 
 
 ## Using the Intune Graph API
 
@@ -49,4 +37,4 @@ You can browse the Table of Contents (in the left pane of the site) to find the 
 
 1. Click **/Beta Reference** to open the beta docs.
 2. Scroll down and click **Intune**.
-3. Continue to click subsections below **Intune** for the parts of the API you want to see.
+3. Continue to click subsections below **Intune** for the parts of the API you 

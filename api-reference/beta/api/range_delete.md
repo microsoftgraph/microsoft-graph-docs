@@ -1,18 +1,22 @@
 # Range: delete
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Deletes the cells associated with the range.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Files.ReadWrite    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/delete
-POST /workbook/worksheets/{id|name}/range(<address>)/delete
+POST /workbook/worksheets/{id|name}/range(address='<address>')/delete
 POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 ```
@@ -20,7 +24,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -30,7 +34,8 @@ In the request body, provide a JSON object with the following parameters.
 |shift|string|Specifies which way to shift the cells.  Possible values are: `Up`, `Left`.|
 
 ## Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+
+If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.

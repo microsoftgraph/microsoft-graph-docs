@@ -26,7 +26,6 @@ The following methods apply to any of the derived types of attachments (**fileAt
 |[List attachments of a post](../api/post_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a post. |
 |[Delete](../api/attachment_delete.md) | None |Delete an attachment on an event, message, or post. |
 
-
 ## Properties
 
 The following are the base properties of any attachment resource. Refer to the specific type of attachment ([fileAttachment](../resources/fileattachment.md),

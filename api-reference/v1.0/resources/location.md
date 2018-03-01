@@ -10,8 +10,6 @@ Represents location information of an event.
 | displayName  | String | The name associated with the location.                       |
 | locationEmailAddress | String | Optional email address of the location.              |
 
-
-
 ## JSON representation
 
 <!-- {

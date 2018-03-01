@@ -1,13 +1,17 @@
-# FileSystemInfo resource type
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: FileSystemInfo
+---
+# FileSystemInfo facet
 
 The **FileSystemInfo** resource contains properties that are reported by the device's local file system for the local version of an item.
 This facet can be used to specify the last modified date or created date of the item as it was on the local device.
 
-**Note:** The **FileSystemInfo** property is not available for DriveItems in SharePoint or OneDrive for Business.
+It is available on the fileSystemInfo property of [driveItem][item-resource] resources.
 
 ## JSON representation
-
-Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -19,8 +23,9 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "createdDateTime": "datetime",
-  "lastModifiedDateTime": "datetime"
+  "createdDateTime" : "datetime",
+  "lastAccessedDateTime": "datetime",
+  "lastModifiedDateTime" : "datetime"
 }
 ```
 
@@ -48,14 +53,16 @@ If the file's content is updated and these properties are not provided, **lastMo
 
 ## Remarks
 
+* **lastAccessedDateTime** is not available for items in SharePoint online or OneDrive for Business.
+
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[item-resource]: ../resources/driveitem.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "fileSystemInfo resource",
-  "keywords": "",
+  "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
+  "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/FileSystemInfo"
+} -->

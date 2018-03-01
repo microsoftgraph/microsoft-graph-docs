@@ -3,7 +3,7 @@
 Get a resource instance that contains a multi-value extended property by using `$expand`.
 
 Using the query parameter `$expand` allows you to get the specified instance expanded with the indicated extended 
-property. This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md)
+property. This is currently the only way to get the [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md)
 object that represents an extended property.
 
 The following user resources are supported:
@@ -24,14 +24,14 @@ As well as the following group resources:
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
 open extensions or extended properties, and how to specify extended properties.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API, depending on the resource you're
-getting:
+## Permissions
+One of the following permissions is required to call this API, depending on the resource you're
+getting. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- _Mail.Read_
-- _Calendars.Read_
-- _Contacts.Read_
-- _Group.Read.All_ 
+- Mail.Read
+- Calendars.Read
+- Contacts.Read
+- Group.Read.All 
  
 ## HTTP request
 
@@ -42,54 +42,54 @@ Get a resource instance expanded with the extended property which matches a filt
 Get a **message** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/mailFolders/{id}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **mailFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 Get an **event** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **calendar** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **contact** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **contactFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a group **event** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 Get a group **post** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 ## Parameters
@@ -98,16 +98,16 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 |_URL parameters_|
 |id_value|String|The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 
-
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code. 
 
 The response body includes an object representing the requested resource instance, expanded with the matching 

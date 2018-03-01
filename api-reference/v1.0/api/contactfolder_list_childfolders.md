@@ -1,9 +1,15 @@
 # List childFolders
 
 Get a collection of child folders under the specified contact folder.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Contacts.Read; Contacts.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Contacts.Read, Contacts.ReadWrite    |
+|Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite    |
+|Application | Contacts.Read, Contacts.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -19,7 +25,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [ContactFolder](../resources/contactfolder.md) objects in the response body.
 ## Example
 ##### Request

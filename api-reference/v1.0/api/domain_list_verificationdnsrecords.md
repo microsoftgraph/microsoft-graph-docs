@@ -6,9 +6,16 @@ You cannot use an associated domain with your Azure AD tenant until ownership is
 
 Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
-## Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All, Domain.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +40,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 
 Do not supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns a `200 OK` response code and collection of [domainDnsRecord](../resources/domaindnsrecord.md) objects in the response body.
 
@@ -45,7 +52,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "get_verificationdnsrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/domains/contoso.com/verificationDnsRecords
+GET https://graph.microsoft.com/v1.0/domains/contoso.com/verificationDnsRecords
 ```
 
 ##### Response

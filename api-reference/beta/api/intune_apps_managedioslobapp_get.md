@@ -1,31 +1,35 @@
 ﻿# Get managedIOSLobApp
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [managedIOSLobApp](../resources/intune_apps_managedioslobapp.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 GET /deviceAppManagement/mobileApps/{mobileAppId}
-GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/
-GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/
-GET /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app/
+GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
+GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
@@ -38,16 +42,16 @@ If successful, this method returns a `200 OK` response code and [managedIOSLobAp
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1464
+Content-Length: 1612
 
 {
   "value": {
@@ -70,12 +74,12 @@ Content-Length: 1464
     "developer": "Developer value",
     "notes": "Notes value",
     "uploadState": 11,
+    "publishingState": "processing",
     "appAvailability": "lineOfBusiness",
     "version": "Version value",
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
-    "identityVersion": "Identity Version value",
     "bundleId": "Bundle Id value",
     "applicableDeviceType": {
       "@odata.type": "microsoft.graph.iosDeviceType",
@@ -86,9 +90,13 @@ Content-Length: 1464
       "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
       "v8_0": true,
       "v9_0": true,
-      "v10_0": true
+      "v10_0": true,
+      "v11_0": true
     },
-    "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
+    "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+    "versionNumber": "Version Number value",
+    "buildNumber": "Build Number value",
+    "identityVersion": "Identity Version value"
   }
 }
 ```

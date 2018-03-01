@@ -1,6 +1,6 @@
 # assignedPlan resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **assignedPlans** property of both the [user](user.md) entity and the [organization](organization.md) entity is a collection of **assignedPlan**.
 
@@ -12,7 +12,6 @@ The **assignedPlans** property of both the [user](user.md) entity and the [organ
 |capabilityStatus|String|For example, “Enabled”.|
 |service|String|The name of the service; for example, “Exchange”.|
 |servicePlanId|Guid|A GUID that identifies the service plan.|
-
 
 ## JSON representation
 

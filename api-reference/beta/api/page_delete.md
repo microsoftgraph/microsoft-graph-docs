@@ -1,11 +1,17 @@
 # Delete page
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Delete a OneNote page.
-## Prerequisites
-One of the following **scopes** is required to execute this API:   
-Notes.ReadWrite, or Notes.ReadWrite.All 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Notes.ReadWrite    |
+|Application | Notes.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -19,8 +25,8 @@ DELETE /sites/{id}/onenote/pages/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
-
 ## Response
+
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example

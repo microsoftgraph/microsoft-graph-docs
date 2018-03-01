@@ -1,6 +1,6 @@
 # patternedRecurrence resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The recurrence pattern and range.
 
@@ -9,7 +9,6 @@ The recurrence pattern and range.
 |:---------------|:--------|:----------|
 |pattern|[RecurrencePattern](recurrencepattern.md)|The frequency of an event.|
 |range|[RecurrenceRange](recurrencerange.md)|The duration of an event.|
-
 
 ## JSON representation
 
@@ -20,7 +19,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.patternedrecurrence"
+  "@odata.type": "microsoft.graph.patternedRecurrence"
 }-->
 
 ```json

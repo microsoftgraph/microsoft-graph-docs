@@ -1,6 +1,12 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Site
+---
 # Site resource
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **site** resource provides metadata and relationships for a SharePoint site.
 
@@ -8,15 +14,21 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 All examples below are relative to `https://graph.microsoft.com/v1.0`.
 
-| Task name            | Example Request                                   |
-| :------------------- | :------------------------------------------------ |
-| [Get root site][]    | GET /sites/root                                   |
-| [Get site][]         | GET /sites/{site-id}                              |
-| [Get site by path][] | GET /sites/{hostname}:/{site-path}                |
+| Task name                | Example Request
+|:-------------------------|:--------------------------------------------------
+| [Get root site][]        | GET /sites/root
+| [Get site][]             | GET /sites/{site-id}
+| [Get site by path][]     | GET /sites/{hostname}:/{site-path}
+| [Get site for a group][] | GET /groups/{group-id}/sites/root
+| [List root sites][]      | GET /sites?filter=root ne null&select=siteCollection,webUrl
+| [Search for sites][]     | GET /sites?search={query}
 
 [Get site]: ../api/site_get.md
 [Get root site]: ../api/site_get.md
-[Get site by path]: ../api/site_get.md
+[Get site by path]: ../api/site_getbypath.md
+[Get site for a group]: ../api/site_get.md
+[List root sites]: ../api/site_list.md
+[Search for sites]: ../api/site_search.md
 
 ## JSON representation
 
@@ -38,6 +50,7 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
   "displayName": "string",
 
   /* relationships */
+  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
@@ -76,6 +89,7 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
 | Relationship name | Type                             | Description
 |:------------------|:---------------------------------|:----------------------
 | **columns**       | Collection([columnDefinition][]) | The collection of column definitions reusable across lists under this site.
+| **contentTypes**  | Collection([contentType][])      | The collection of content types defined for this site.
 | **drive**         | [drive][]                        | The default drive (document library) for this site.
 | **drives**        | Collection([drive][])            | The collection of drives (document libraries) under this site.
 | **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
@@ -85,6 +99,7 @@ The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inher
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
+[contentType]: contentType.md
 [drive]: drive.md
 [identitySet]: identityset.md
 [list]: list.md

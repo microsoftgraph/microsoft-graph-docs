@@ -4,9 +4,50 @@ Get the messages in the signed-in user's mailbox (including the Deleted Items an
 
 Currently, this operation returns message bodies in only HTML format.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.Read; Mail.ReadWrite*
+
+### Get messages in another user's message folder
+
+If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get messages 
+from another user's message folder. This section focuses on scenarios that involve delegated permissions.
+
+For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a message folder with John. 
+You can get the messages in that shared folder by specifying Garth’s user ID (or user principal name) in the example query shown below.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/messages
+```
+
+This capability applies to all the supported GET messages operations for an individual user, as listed in the [HTTP request](#http-request) section below. 
+It also applies if Garth has delegated his entire mailbox to John.
+
+If Garth has not shared his message folder with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
+will return an error. In such cases, specifying a user ID or user principal name only works for getting messages in the signed-in user’s own message folders, 
+and the query is equivalent to using the /me shortcut:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/messages
+```
+
+This capability is available in only GET operations of:
+
+- Shared contact folders, calendars, and message folders 
+- Contacts, events, and messages in shared folders
+- The above resources in delegated mailboxes
+
+This capability is not available in other operations for contacts, events, messages, and their folders.
+
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    |
+|Application | Mail.Read, Mail.ReadWrite |
+
 ## HTTP request
 
 To get all the messages in a user's mailbox:
@@ -28,14 +69,17 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
- 
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
+| Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
+
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.
 
 The default page size for this request is 10 messages.

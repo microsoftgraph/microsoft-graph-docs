@@ -1,6 +1,6 @@
 # mailFolder: delta
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
 
@@ -9,8 +9,15 @@ applying [state tokens](../../../concepts/delta_query_overview.md) in one or mor
 you can query for incremental changes in the mail folders. This allows you to maintain and synchronize 
 a local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: _Mail.Read_; _Mail.ReadWrite_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    |
+|Application | Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +41,6 @@ includes the encoded, desired parameters.
 | $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same mail folder collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same mail folder collection. |
 
-
 #### OData query parameters
 
 You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
@@ -47,9 +53,9 @@ _id_ property is always returned.
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
+## Response
 
-### Response
-If successful, this method returns a `200, OK` response code and [mailFolder](../resources/mailfolder.md) collection object in the response body.
+If successful, this method returns a `200 OK` response code and [mailFolder](../resources/mailfolder.md) collection object in the response body.
 
 ## Example
 ##### Request

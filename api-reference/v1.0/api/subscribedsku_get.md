@@ -1,8 +1,15 @@
 # Get subscribedSku
 Retrieve a specific commercial subscription that an organization has acquired.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Directory.Read.All*, *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -19,7 +26,9 @@ This method does **not** support the [OData Query Parameters](http://developer.m
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [subscribedSku](../resources/subscribedsku.md) object in the response body.
 ## Example
 ##### Request
@@ -43,7 +52,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscribedSkus/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscribedSkus/$entity",
     "capabilityStatus": "Enabled",
     "consumedUnits": 14,
     "id": "48a80680-7326-48cd-9935-b556b81d3a4e_c7df2760-2c81-4ef7-b578-5b5392b571df",

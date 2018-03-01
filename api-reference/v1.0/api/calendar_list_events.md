@@ -5,9 +5,15 @@ Retrieve a list of events in a calendar.  The list contains single instance meet
 To get expanded event instances, you can [get the calendar view](calendar_list_calendarview.md), or 
 [get the instances of an event](event_list_instances.md).
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.Read*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read    |
+|Delegated (personal Microsoft account) | Calendars.Read    |
+|Application | Calendars.Read |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 A user's or group's default [calendar](../resources/calendar.md).
@@ -32,14 +38,16 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Prefer  | outlook.timezone="Eastern Standard Time". Optional. Use this to specify the time zone for start and end times in the response. If not specified, the response are returned in UTC. |
+| Name       | Type | Description |
+|:---------------|:--------|:--------|
+| Authorization  | string | Bearer {token}. Required.  |
+| Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request

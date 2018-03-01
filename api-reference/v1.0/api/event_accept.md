@@ -2,9 +2,15 @@
 
 Accept the specified event.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
+|Application | Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -40,7 +46,8 @@ In the request body, provide a JSON object with the following parameters.
 |sendResponse|Boolean|`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.|
 
 ## Response
-If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
+
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.

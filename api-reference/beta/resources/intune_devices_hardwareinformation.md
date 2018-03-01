@@ -1,13 +1,13 @@
 ﻿# hardwareInformation resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Hardware information of a given device.
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |serialNumber|String|Serial number.|
 |totalStorageSpace|Int64|Total storage space of the device.|
 |freeStorageSpace|Int64|Free storage space of the device.|
@@ -24,6 +24,12 @@ Hardware information of a given device.
 |isEncrypted|Boolean|Encryption status of the device|
 |isSharedDevice|Boolean|Shared iPad|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune_devices_sharedappledeviceuser.md) collection|All users on the shared Apple device|
+|tpmSpecificationVersion|String|String that specifies the specification version.|
+|operatingSystemEdition|String|String that specifies the OS edition.|
+|deviceFullQualifiedDomainName|String|Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string. |
+|deviceGuardVirtualizationBasedSecurityHardwareRequirementState|String|Virtualization-based security hardware requirement status. Possible values are: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
+|deviceGuardVirtualizationBasedSecurityState|String|Virtualization-based security status.  Possible values are: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
+|deviceGuardLocalSystemAuthorityCredentialGuardState|String|Local System Authority (LSA) credential guard status.  Possible values are: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
 
 ## Relationships
 None
@@ -35,7 +41,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.hardwareInformation"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.hardwareInformation",
   "serialNumber": "String",
@@ -61,7 +67,13 @@ Here is a JSON representation of the resource.
       "dataQuota": 1024,
       "dataUsed": 1024
     }
-  ]
+  ],
+  "tpmSpecificationVersion": "String",
+  "operatingSystemEdition": "String",
+  "deviceFullQualifiedDomainName": "String",
+  "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
+  "deviceGuardVirtualizationBasedSecurityState": "String",
+  "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
 }
 ```
 

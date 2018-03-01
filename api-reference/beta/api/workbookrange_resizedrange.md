@@ -1,12 +1,18 @@
 # workbookRange: resizedRange
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
 
-## Prerequisites
-The following **scopes** are required to execute this API: _Files.Read,
-Files.ReadWrite_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Files.ReadWrite    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -34,8 +40,9 @@ In the request URL, provide following query parameters with values.
 |deltaRows|Int32||
 |deltaColumns|Int32||
 
-### Response
-If successful, this method returns `200, OK` response code and [workbookRange](../resources/range.md) object in the response body.
+## Response
+
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

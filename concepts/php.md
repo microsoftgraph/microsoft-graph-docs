@@ -6,7 +6,7 @@ To use Microsoft Graph in your PHP app, you need to show the Microsoft sign in p
 
 ![Sign in page for Microsoft accounts](images/MicrosoftSignIn.png)
 
-**Don't feel like building an app?** Get up and running fast by downloading the [Connect Sample for PHP (REST)](https://github.com/microsoftgraph/php-connect-rest-sample) that this article is based on. Or try out the [Connect Sample for PHP (SDK)](https://github.com/microsoftgraph/php-connect-sample) version that uses the [Microsoft Graph Library for PHP](https://github.com/microsoftgraph/msgraph-sdk-php) (Preview).
+**Don't feel like building an app?** Get up and running fast by downloading the [Connect Sample for PHP (REST)](https://github.com/microsoftgraph/php-connect-rest-sample) that this article is based on. Or try out the [Connect Sample for PHP (SDK)](https://github.com/microsoftgraph/php-connect-sample) version that uses the [Microsoft Graph Library for PHP](https://github.com/microsoftgraph/msgraph-sdk-php).
 
 
 ## Prerequisites
@@ -173,7 +173,7 @@ You're ready to try your PHP app.
 Check the inbox of the email address that you configured in [Call the Microsoft Graph using REST](#call-microsoft-graph-using-rest) section. You should have an email from the account that you used to sign in to the app.
 
 ## Next steps
-- Try out the [Microsoft Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Try out the [Microsoft Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 
 ## See also

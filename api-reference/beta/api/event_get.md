@@ -1,10 +1,45 @@
 # Get event
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get the properties and relationships of the specified [event](../resources/event.md) object.
 
 Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
+
+### Get events in another user's calendar
+
+If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get events 
+from another user's calendar. This section focuses on scenarios that involve delegated permissions.
+
+For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a calendar with John. 
+You can get an event in that shared calendar by specifying Garth’s user ID (or user principal name) in the example query shown below.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/events/{id}
+```
+
+This capability applies to all the supported GET events operations for an individual user, as listed in the [HTTP request](#http-request) section below . 
+It also applies if Garth has delegated his entire mailbox to John.
+
+If Garth has not shared his calendar with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
+will return an error. In such cases, specifying a user ID or user principal name only works for getting an event in the signed-in user’s own calendars, 
+and the query is equivalent to using the /me shortcut:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/events/{id}
+```
+
+This capability is available in only GET operations of:
+
+- Shared contact folders, calendars, and message folders 
+- Contacts, events, and messages in shared folders
+- The above resources in delegated mailboxes
+
+This capability is not available in other operations for contacts, events, messages, and their folders.
+
+
 
 ### Support various time zones
 
@@ -22,24 +57,15 @@ times are returned in UTC.
 You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to 
 find out the time zone used when the event was created.
 
-### Get the event body in HTML or text format
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-Event bodies can be in HTML or text format.
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read    |
+|Delegated (personal Microsoft account) | Calendars.Read    |
+|Application | Calendars.Read |
 
-You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** property in a `GET` request:
-
-- Specify `Prefer: outlook.body-content-type="text"` to get an event body returned in text format.
-- Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return the event body in HTML format.
-
-If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:
-
-- For text format requests: `Preference-Applied: outlook.body-content-type="text"`
-- For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`
-
-
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.Read*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -66,12 +92,14 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Prefer: outlook.timezone | string | The default time zone for events in the response. Optional. |
-| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". Optional. |
+| Prefer: outlook.timezone | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
+| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.
 ## Example
 ##### Request 1
@@ -122,9 +150,19 @@ Content-length: 1928
         "dateTime":"2017-04-21T12:00:00.0000000",
         "timeZone":"Pacific Standard Time"
     },
-    "location":{
-        "displayName":"Assembly Hall"
+    "location": {
+        "displayName": "Assembly Hall",
+        "locationType": "default",
+        "uniqueId": "Assembly Hall",
+        "uniqueIdType": "private"
     },
+    "locations": [
+        {
+            "displayName": "Assembly Hall",
+            "locationType": "default",
+            "uniqueIdType": "unknown"
+        }
+    ],
     "attendees":[
         {
             "type":"required",
@@ -133,8 +171,8 @@ Content-length: 1928
                 "time":"0001-01-01T00:00:00Z"
             },
             "emailAddress":{
-                "name":"Fanny Downs",
-                "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                "name":"Samantha Booth",
+                "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
             }
         },
         {
@@ -151,8 +189,8 @@ Content-length: 1928
     ],
     "organizer":{
         "emailAddress":{
-            "name":"Fanny Downs",
-            "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+            "name":"Samantha Booth",
+            "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
         }
     }
 }
@@ -168,15 +206,15 @@ The request also uses a `$select` query parameter to return specific properties.
   "name": "get_event_in_text"
 }-->
 ```http
+GET https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAoZDOFAAA=')?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text"
-
-GET https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAoZDOFAAA=')?$select=subject,body,bodyPreview  
 ```
 ##### Response 2
 Here is an example of the response. The **body** property is returned in text format. 
 
 <!-- {
   "blockType": "response",
+  "name": "get_event_in_text",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
@@ -196,6 +234,123 @@ Content-length: 636
         "contentType":"text",
         "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
     }
+}
+```
+
+
+##### Request 3
+
+The third example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter 
+to return specific properties. 
+
+<!-- {
+  "blockType": "request",
+  "name": "get_event_multiple_locations"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/events('AAMkADAGAADDdm4NAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
+```
+##### Response 3
+Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 
+
+Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header, 
+the **start** and **end** properties are displayed in the default UTC time zone, and the body is in the default HTML format.  
+
+<!-- {
+  "blockType": "response",
+  "name": "get_event_multiple_locations",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1992
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,locations)/$entity",
+  "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
+  "id":"AAMkADAGAADDdm4NAAA=",
+  "subject":"Plan summer company picnic",
+  "bodyPreview":"Let's kick-start this event planning!",
+  "body":{
+    "contentType":"html",
+    "content":"<html>\r\n<head>\r\n</head>\r\n<body>\r\nLet's kick-start this event planning!\r\n</body>\r\n</html>\r\n"
+  },
+  "start":{
+    "dateTime":"2017-08-30T11:00:00.0000000",
+    "timeZone":"UTC"
+  },
+  "end":{
+    "dateTime":"2017-08-30T12:00:00.0000000",
+    "timeZone":"UTC"
+  },
+  "location":{
+    "displayName":"Conf Room 3; Fourth Coffee; Home Office",
+    "locationType":"default",
+    "uniqueId":"Conf Room 3; Fourth Coffee; Home Office",
+    "uniqueIdType":"private"
+  },
+  "locations":[
+    {
+      "displayName":"Conf Room 3",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    },
+    {
+      "displayName":"Fourth Coffee",
+      "locationType":"default",
+      "uniqueId":"Fourth Coffee",
+      "uniqueIdType":"private",
+      "address":{
+        "type":"unknown",
+        "street":"4567 Main St",
+        "city":"Redmond",
+        "state":"WA",
+        "countryOrRegion":"US",
+        "postalCode":"32008"
+      },
+      "coordinates":{
+        "latitude":47.672,
+        "longitude":-102.103
+      }
+    },
+    {
+      "displayName":"Home Office",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    }
+  ],
+  "attendees":[
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Dana Swope",
+        "address":"DanaS@contoso.onmicrosoft.com"
+      }
+    },
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Alex Wilber",
+        "address":"AlexW@contoso.onmicrosoft.com"
+      }
+    }
+  ],
+  "organizer":{
+    "emailAddress":{
+      "name":"Adele Vance",
+      "address":"AdeleV@contoso.onmicrosoft.com"
+    }
+  }
 }
 ```
 

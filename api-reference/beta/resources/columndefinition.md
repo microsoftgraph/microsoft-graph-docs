@@ -1,6 +1,12 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/11/2017
+title: ColumnDefinition
+---
 # ColumnDefinition resource
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 ## JSON representation
 
@@ -11,6 +17,7 @@ Here is a JSON representation of a ColumnDefinition resource.
 
 ```json
 {
+  "columnGroup": "string",
   "description": "description",
   "displayName": "friendly name",
   "enforceUniqueValues": "true",
@@ -25,6 +32,7 @@ Here is a JSON representation of a ColumnDefinition resource.
   "choice": { "@odata.type": "microsoft.graph.choiceColumn" },
   "currency": { "@odata.type": "microsoft.graph.currencyColumn" },
   "dateTime": { "@odata.type": "microsoft.graph.dateTimeColumn" },
+  "defaultValue": { "@odata.type": "microsoft.graph.defaultColumnValue" },
   "lookup": { "@odata.type": "microsoft.graph.lookupColumn" },
   "number": { "@odata.type": "microsoft.graph.numberColumn" },
   "personOrGroup": { "@odata.type": "microsoft.graph.personOrGroupColumn" },
@@ -38,6 +46,7 @@ The **columnDefinition** resource has the following properties.
 
 | Property name           | Type    | Description
 |:------------------------|:--------|:-----------------------------------------
+| **columnGroup**         | string  | For site columns, the name of the group this column belongs to. Helps organize related columns.
 | **description**         | string  | The user-facing description of the column.
 | **displayName**         | string  | The user-facing name of the column.
 | **enforceUniqueValues** | boolean | If true, no two list items may have the same value for this column.
@@ -59,6 +68,7 @@ These properties are mutually exclusive -- a column can only have one of them sp
 | **choice**        | [choiceColumn][]        | This column stores data from a list of choices.
 | **currency**      | [currencyColumn][]      | This column stores currency values.
 | **dateTime**      | [dateTimeColumn][]      | This column stores DateTime values.
+| **defaultValue**  | [defaultColumnValue][]  | The default value for this column.
 | **lookup**        | [lookupColumn][]        | This column's data is looked up from another source in the site.
 | **number**        | [numberColumn][]        | This column stores number values.
 | **personOrGroup** | [personOrGroupColumn][] | This column stores Person or Group values.
@@ -73,6 +83,7 @@ In those cases, none of the column type facets will be populated, and the column
 [choiceColumn]: choiceColumn.md
 [currencyColumn]: currencyColumn.md
 [dateTimeColumn]: dateTimeColumn.md
+[defaultColumnValue]: defaultColumnValue.md
 [lookupColumn]: lookupColumn.md
 [numberColumn]: numberColumn.md
 [personOrGroupColumn]: personOrGroupColumn.md

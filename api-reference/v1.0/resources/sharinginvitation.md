@@ -1,3 +1,9 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharingInvitation
+---
 # SharingInvitation resource type
 
 The **SharingInvitation** resource groups invitation-related data items into a single strucutre.
@@ -20,7 +26,6 @@ Here is a JSON representation of the resource
   "invitedBy": {"@odata.type": "microsoft.graph.identitySet" },
   "signInRequired": true
 }
-
 ```
 
 ## Properties
@@ -36,12 +41,10 @@ Here is a JSON representation of the resource
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharingInvitation resource",
-  "keywords": "",
+  "description": "The sharing invitation facet describes details of a sharing invitation associated with a permission.",
+  "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SharingInvitation"
+} -->

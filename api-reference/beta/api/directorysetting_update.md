@@ -1,13 +1,20 @@
 # Update a directory setting
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Update the properties of a specific directory setting object.
 
 > **Note**: The /beta version of this API is only applies to groups. The /v1.0 version of this API has been renamed to *Update groupSettings*.
 
-## Prerequisites
-The following **scopes** are required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 Update a tenant-wide or group specific setting.
@@ -28,6 +35,7 @@ In the request body, supply the values for relevant fields that should be update
 | values | settingValue | The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values. |
 
 ## Response
+
 If successful, this method returns a `204 OK` response code.
 
 ## Example

@@ -1,6 +1,6 @@
 # provisionedPlan resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.
 
@@ -11,7 +11,6 @@ The **provisionedPlans** property of the [user](user.md) entity and the [organiz
 |capabilityStatus|String|For example, “Enabled”.|
 |provisioningStatus|String|For example, “Success”.|
 |service|String|The name of the service; for example, “AccessControlS2S”|
-
 
 ## JSON representation
 
