@@ -104,7 +104,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 Content-length: 420
 {
-    "id": "graphlearn_courses",
+    "id": "graphlearn_course",
     "description": "Graph Learn training courses extensions",
     "targetTypes": [
         "Group"
