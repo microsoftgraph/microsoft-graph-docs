@@ -1,7 +1,5 @@
 # educationSynchronizationCustomization resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Provides settings for customizing the school data profile synchronization of the resource entities. The customization can be applied to all the entities being synchronized. 
 
 >**Note:** The **synchronizationStartDate** property only applies to the **StudentEnrollment** entity.

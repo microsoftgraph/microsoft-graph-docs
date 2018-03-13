@@ -1,7 +1,5 @@
 # educationSynchronizationCustomizations resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Contains the list of entities to sync and their [customizations](educationsynchronizationcustomization.md), if any.
 
 > **Note:** Customization of properties to sync does not apply to the **studentEnrollment** and **teacherRoster** entities.

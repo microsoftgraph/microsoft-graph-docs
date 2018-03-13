@@ -1,7 +1,5 @@
 # educationSynchronizationLicenseAssignment resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Represents the license information to assign to user accounts. The resource will be used to set up license assignments when creating new user accounts.
 
 ## Properties

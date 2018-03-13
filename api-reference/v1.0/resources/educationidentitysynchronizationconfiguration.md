@@ -1,7 +1,5 @@
 # educationIdentitySynchronizationConfiguration resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Abstract base class for all school data profile identity synchronization configurations. The derived classes define the behavior for synchronizing identities. The following are the derived types.
 
 ## Derived types

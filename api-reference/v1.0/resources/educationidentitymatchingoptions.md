@@ -1,7 +1,5 @@
 # educationIdentityMatchingOptions resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Provides a mapping between a source property and a target property for matching user accounts. The source property should exist in the source data. The target property should be a valid property in Azure Active Directory (Azure AD).
 
 ## Properties

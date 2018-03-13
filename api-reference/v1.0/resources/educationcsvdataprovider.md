@@ -1,7 +1,5 @@
 # educationCsvDataProvider resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Used to set up the school data synchronization profile when CSV files are the input source.  
 
 Derived from [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).

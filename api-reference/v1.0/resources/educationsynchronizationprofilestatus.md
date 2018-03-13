@@ -1,7 +1,5 @@
 # educationSynchronizationProfileStatus resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Represents the synchronization status of a school data [synchronization profile](educationsynchronizationprofile.md). 
 
 > **Note:** Updates to the **educationSynchronizationProfileStatus** might be delayed due to the asynchronous nature of background sync processing.
