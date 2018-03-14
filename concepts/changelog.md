@@ -6,6 +6,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2018
 
+### Reports APIs
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|beta|Added the **siteId** property to the [sharePointSiteUsageDetail](../api-reference/beta/resources/sharepointsiteusagedetail.md) entity.|
+
 ### Group lifecycle policy
 
 | **Change type** | **Version** | **Description**                          |
