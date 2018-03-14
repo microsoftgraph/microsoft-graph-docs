@@ -60,6 +60,24 @@ The rostering APIs support the following scenarios:
 
 <!-- Should you list delete scenarios here as well? -->
 
+## School data sync management
+
+[School Data Sync](https://sds.microsoft.com/) helps to automate the process of importing and synchronizing roster data from student information systems with Azure Active Directory (Azure AD) and Office 365. You can use the school data sync management APIs in Microsoft Graph to set up synchronization from either a CSV file or a supported SIS API connector.
+
+The school data sync management APIs support the following scenarios:
+
+- [List synchronization profiles](../api/educationsynchronizationprofile_list.md)
+- [Get synchronization profile](../api/educationsynchronizationprofile_get.md)
+- [Create synchronization profile](../api/educationsynchronizationprofile_post.md)
+- [Delete synchronization profile](../api/educationsynchronizationprofile_delete.md)
+- [Pause an ongoing sync](../api/educationsynchronizationprofile_pause.md)
+- [Resume a paused sync](../api/educationsynchronizationprofile_resume.md)
+- [Reset a sync](../api/educationsynchronizationprofile_reset.md)
+- [Start sync for uploaded files](../api/educationsynchronizationprofile_start.md) 
+- [Get an upload URL](../api/educationsynchronizationprofile_uploadurl.md)
+- [Get status of a sync](../api/educationsynchronizationprofilestatus_get.md)
+- [Get synchronization errors](../api/educationsynchronizationerrors_get.md)
+
 ## Next steps
 Use the Microsoft Graph education APIs to build education solutions that access school rosters. To learn more:
 
