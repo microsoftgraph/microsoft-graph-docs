@@ -1,7 +1,5 @@
 # Resume sync on an educationSynchronizationProfile
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Resume the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
 ## Permissions

@@ -1,7 +1,5 @@
 # Delete a educationSynchronizationProfile
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Delete a school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.
 
 ## Permissions
