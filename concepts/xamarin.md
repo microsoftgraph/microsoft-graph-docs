@@ -16,7 +16,7 @@ This is the app you'll create.
 
 To get started, you'll need: 
 
-- A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
+- A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://developer.microsoft.com/en-us/office/dev-program)
 - Visual Studio 2015 
 - [Xamarin for Visual Studio](https://www.xamarin.com/visual-studio)
 - Windows 10 ([development mode enabled](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx))
@@ -448,3 +448,4 @@ You've now performed the three steps required for interacting with Microsoft Gra
 - [Microsoft Graph .NET Client Library](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
 - [Azure AD v2.0 protocols](https://azure.microsoft.com/documentation/articles/active-directory-v2-protocols/)
 - [Azure AD v2.0 tokens](https://azure.microsoft.com/documentation/articles/active-directory-v2-tokens/)
+- [Office 365 Developer Program setup docs](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program)

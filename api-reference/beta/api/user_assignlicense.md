@@ -1,12 +1,14 @@
 # assignLicense
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> [!IMPORTANT] 
+> APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings. For example, an organization can have an Office 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user. You can also enable and disable specific plans associated with a subscription. To learn more about subscriptions and licenses, see this [Technet article](https://technet.microsoft.com/en-us/library/mt765146.aspx).
+Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings. For example, an organization can have an Office 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user. You can also enable and disable specific plans associated with a subscription. To learn more about subscriptions and licenses, see [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](https://docs.microsoft.com/en-us/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
 To get the subscriptions available in the directory, perform a [GET subscribedSkus request](subscribedsku_list.md). 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -15,18 +17,24 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.ReadWrite.All, Directory.ReadWrite.All |
 
+
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /users/{id | userPrincipalName}/assignLicense
 ```
+
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -39,12 +47,16 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code and an updated [user](../resources/user.md) object in the response body.
 
 ## Example
+
 Add licenses to the user.
+
 ##### Request
+
 <!-- {
   "blockType": "request",
   "name": "user_assignlicense"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
@@ -66,9 +78,11 @@ Content-length: 185
 ```
 
 ## Example
+
 Remove licenses from the user.
 
-#####Request
+##### Request
+
 ```http
 POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
@@ -81,12 +95,15 @@ Content-length: 185
 ```
 
 ##### Response
+
 In both examples, the response is the updated user object. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.user"
-} -->
+} --> 
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
