@@ -1,5 +1,8 @@
 <Menu>
-  <Item text="Overview" url="/en-us/concepts/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud." />    
+  <Item text="Overview" url="/en-us/concepts/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud." >    
+	<Item text="Services in Microsoft Graph" url="/en-us/concepts/overview-major-services" />
+	<Item text="Users you can reach" url="" />
+  </Item>
   <Item text="Featured scenarios" url="/en-us/concepts/featured_scenarios" > 
 	  <Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
 	  <Item text="Get information about relevant people" url="/en-us/concepts/people_example" SEODescription="Use the People API to retrieve the people who are most relevant to a user." />
