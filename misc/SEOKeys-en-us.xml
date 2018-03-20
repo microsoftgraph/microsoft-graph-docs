@@ -2500,6 +2500,14 @@
             <Item text="Get template" url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_get" />
         </Item>
       </Item>
+	  <Item text="Terms of use" url="/en-us/api-reference/beta/resources/agreement" SEODescription="The Azure AD Terms of Use API in Microsoft Graph provides a simple method organizations can use to present information to end users. This ensures users see relevant disclaimers for legal or compliance requirements." >
+		<Item text="Create terms of use agreement" url="/en-us/api-reference/beta/api/agreement_post_agreements" SEODescription="Use this Microsoft Graph API to create a new terms of use agreement." />
+        <Item text="List terms of use agreements" url="/en-us/api-reference/beta/api/agreement_list" SEODescription="Use this Microsoft Graph API to list terms of use agreement objects." />
+        <Item text="Get terms of use agreement" url="/en-us/api-reference/beta/api/agreement_get" SEODescription="Use this Microsoft Graph API to get a terms of use agreement object." />
+        <Item text="Update terms of use agreement" url="/en-us/api-reference/beta/api/agreement_update" SEODescription="Use this Microsoft Graph API to get a terms of use agreement object." />
+        <Item text="Delete terms of use agreement" url="/en-us/api-reference/beta/api/agreement_delete" SEODescription="Use this Microsoft Graph API to delete a terms of use agreement object." />
+        <Item text="List terms of use acceptance statuses of user" url="/en-us/api-reference/beta/api/user_list_agreementacceptances" SEODescription="Use this Microsoft Graph API to list terms of use acceptance statuses of user." />
+	  </Item>
     </Item>
     <Item text="Education" url="/en-us/api-reference/beta/resources/education-overview" >
 		<Item text="Schools" url="/en-us/api-reference/beta/resources/educationschool" >
