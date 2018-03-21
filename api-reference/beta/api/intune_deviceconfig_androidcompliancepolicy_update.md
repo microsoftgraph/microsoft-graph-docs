@@ -21,7 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
-PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy
 ```
 
 ## Request headers
@@ -47,11 +46,11 @@ The following table shows the properties that are required when you create the [
 |passwordMinimumLength|Int32|Minimum password length. Valid values 4 to 16|
 |passwordRequiredType|String|Type of characters in password Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
-|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 255|
+|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
 |securityPreventInstallAppsFromUnknownSources|Boolean|Require that devices disallow installation of apps from unknown sources.|
 |securityDisableUsbDebugging|Boolean|Disable USB debugging on Android devices.|
-|requireAppVerify|Boolean|Require the Android Verify apps feature is turned on.|
+|securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
 |deviceThreatProtectionRequiredSecurityLevel|String|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |securityBlockJailbrokenDevices|Boolean|Devices must not be jailbroken or rooted.|
@@ -59,11 +58,11 @@ The following table shows the properties that are required when you create the [
 |osMaximumVersion|String|Maximum Android version.|
 |minAndroidSecurityPatchLevel|String|Minimum Android security patch level.|
 |storageRequireEncryption|Boolean|Require encryption on Android devices.|
-|requireSafetyNetAttestationBasicIntegrity|Boolean|Require the device to pass the SafetyNet basic integrity check.|
-|requireSafetyNetAttestationCertifiedDevice|Boolean|Require the device to pass the SafetyNet certified device check.|
-|requireGooglePlayServices|Boolean|Require Google Play Services to be installed and enabled on the device.|
-|requireUpToDateSecurityProviders|Boolean|Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.|
-|requireCompanyPortalAppIntegrity|Boolean|Require the device to pass the Company Portal client app runtime integrity check.|
+|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Require the device to pass the SafetyNet basic integrity check.|
+|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Require the device to pass the SafetyNet certified device check.|
+|securityRequireGooglePlayServices|Boolean|Require Google Play Services to be installed and enabled on the device.|
+|securityRequireUpToDateSecurityProviders|Boolean|Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.|
+|securityRequireCompanyPortalAppIntegrity|Boolean|Require the device to pass the Company Portal client app runtime integrity check.|
 |conditionStatementId|String|Condition statement id.|
 
 
@@ -77,7 +76,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1171
+Content-length: 1220
 
 {
   "description": "Description value",
@@ -92,7 +91,7 @@ Content-length: 1171
   "passwordPreviousPasswordBlockCount": 2,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
-  "requireAppVerify": true,
+  "securityRequireVerifyApps": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
   "securityBlockJailbrokenDevices": true,
@@ -100,11 +99,11 @@ Content-length: 1171
   "osMaximumVersion": "Os Maximum Version value",
   "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
   "storageRequireEncryption": true,
-  "requireSafetyNetAttestationBasicIntegrity": true,
-  "requireSafetyNetAttestationCertifiedDevice": true,
-  "requireGooglePlayServices": true,
-  "requireUpToDateSecurityProviders": true,
-  "requireCompanyPortalAppIntegrity": true,
+  "securityRequireSafetyNetAttestationBasicIntegrity": true,
+  "securityRequireSafetyNetAttestationCertifiedDevice": true,
+  "securityRequireGooglePlayServices": true,
+  "securityRequireUpToDateSecurityProviders": true,
+  "securityRequireCompanyPortalAppIntegrity": true,
   "conditionStatementId": "Condition Statement Id value"
 }
 ```
@@ -114,7 +113,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1341
+Content-Length: 1390
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -132,7 +131,7 @@ Content-Length: 1341
   "passwordPreviousPasswordBlockCount": 2,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
-  "requireAppVerify": true,
+  "securityRequireVerifyApps": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
   "securityBlockJailbrokenDevices": true,
@@ -140,11 +139,11 @@ Content-Length: 1341
   "osMaximumVersion": "Os Maximum Version value",
   "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
   "storageRequireEncryption": true,
-  "requireSafetyNetAttestationBasicIntegrity": true,
-  "requireSafetyNetAttestationCertifiedDevice": true,
-  "requireGooglePlayServices": true,
-  "requireUpToDateSecurityProviders": true,
-  "requireCompanyPortalAppIntegrity": true,
+  "securityRequireSafetyNetAttestationBasicIntegrity": true,
+  "securityRequireSafetyNetAttestationCertifiedDevice": true,
+  "securityRequireGooglePlayServices": true,
+  "securityRequireUpToDateSecurityProviders": true,
+  "securityRequireCompanyPortalAppIntegrity": true,
   "conditionStatementId": "Condition Statement Id value"
 }
 ```

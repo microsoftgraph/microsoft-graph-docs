@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1016
+Content-Length: 1096
 
 {
   "value": [
@@ -71,6 +71,8 @@ Content-Length: 1016
       "developer": "Developer value",
       "notes": "Notes value",
       "uploadState": 11,
+      "publishingState": "processing",
+      "packageId": "Package Id value",
       "appIdentifier": "App Identifier value",
       "usedLicenseCount": 0,
       "totalLicenseCount": 1,

@@ -41,7 +41,7 @@ The following table shows the properties that are required when you create the v
 |vppTokenAccountType|String|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
 |appleId|String|The apple Id associated with the given Apple Volume Purchase Program Token.|
 |expirationDateTime|DateTimeOffset|The expiration date time of the Apple Volume Purchase Program Token.|
-|lastSyncDateTime|DateTimeOffset|The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.|
+|lastSyncDateTime|DateTimeOffset|The last time when an application sync was done with the Apple volume purchase program service using the Apple Volume Purchase Program Token.|
 |token|String|The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.|
 |lastModifiedDateTime|DateTimeOffset|Last modification date time associated with the Apple Volume Purchase Program Token.|
 |state|String|Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`. Possible values are: `unknown`, `valid`, `expired`, `invalid`.|
@@ -61,7 +61,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/vppTokens
 Content-type: application/json
-Content-length: 887
+Content-length: 836
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -77,8 +77,7 @@ Content-length: 887
     {
       "@odata.type": "microsoft.graph.vppTokenActionResult",
       "actionName": "Action Name value",
-      "actionState": "inProgress",
-      "actionMessage": "Action Message value",
+      "actionState": "pending",
       "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
       "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
     }
@@ -94,7 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 936
+Content-Length: 885
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -111,8 +110,7 @@ Content-Length: 936
     {
       "@odata.type": "microsoft.graph.vppTokenActionResult",
       "actionName": "Action Name value",
-      "actionState": "inProgress",
-      "actionMessage": "Action Message value",
+      "actionState": "pending",
       "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
       "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
     }

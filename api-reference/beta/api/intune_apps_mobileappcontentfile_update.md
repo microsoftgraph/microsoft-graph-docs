@@ -46,6 +46,7 @@ The following table shows the properties that are required when you create the [
 |azureStorageUriExpirationDateTime|DateTimeOffset|The time the Azure storage Uri expires.|
 |manifest|Binary|The manifest information.|
 |uploadState|String|The state of the current upload request. Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
+|isFrameworkFile|Boolean|A value indicating whether the file is a framework file.|
 
 
 
@@ -58,7 +59,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}
 Content-type: application/json
-Content-length: 283
+Content-length: 311
 
 {
   "azureStorageUri": "Azure Storage Uri value",
@@ -68,7 +69,8 @@ Content-length: 283
   "sizeEncrypted": 13,
   "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
   "manifest": "bWFuaWZlc3Q=",
-  "uploadState": "transientError"
+  "uploadState": "transientError",
+  "isFrameworkFile": true
 }
 ```
 
@@ -77,7 +79,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 450
+Content-Length: 478
 
 {
   "@odata.type": "#microsoft.graph.mobileAppContentFile",
@@ -90,7 +92,8 @@ Content-Length: 450
   "sizeEncrypted": 13,
   "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
   "manifest": "bWFuaWZlc3Q=",
-  "uploadState": "transientError"
+  "uploadState": "transientError",
+  "isFrameworkFile": true
 }
 ```
 

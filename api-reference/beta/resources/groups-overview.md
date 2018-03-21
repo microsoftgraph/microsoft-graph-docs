@@ -6,7 +6,7 @@ Groups are collections of [users](user.md) and other principals who share access
 
 | Type              | Use case | groupType | mail-enabled | security-enabled | Can be created via API? |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Office 365 groups](#office-365-groups) | Facilitating user collaboration with shared Microsoft online resources. | `["Unified"]` | `true` | `false` | Yes | [user](user.md) |
+| [Office 365 groups](#office-365-groups) | Facilitating user collaboration with shared Microsoft online resources. | `["Unified"]` | `true` | `false` | Yes |
 | [Security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources. | `[]` | `false` | `true` | Yes |
 | [Mail-enabled security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources, with a shared group mailbox. | `[]` | `true` | `true` | No |
 | Distribution groups | Distributing mail to the members of the group. It is recommended to use Office 365 groups due to the richer set of resources it provides. | `[]` | `true` | `false` | No |
@@ -58,7 +58,7 @@ To learn more about Office 365 groups and the administrator experiences, see [Le
 
 Security groups are for controlling user access to resources. By checking whether a user is a member of a security group, your app can make authorization decisions when that user is trying to access some secure resources in your app. Security groups can have users and other security groups as members.
 
-Mail-enabled security groups are used in the same way that security groups are, but with the added feature of a shared mailbox for the groups. Mail-enabled security groups can't be created through the API, but other group operations will still work here. Learn more in the [Manage mail-enabled security groups Exchange article](https://technet.microsoft.com/en-us/library/bb123521%28v=exchg.160%29.aspx).
+Mail-enabled security groups are used in the same way that security groups are, but with the added feature of a shared mailbox for the groups. Mail-enabled security groups can't be created through the API, but other group operations work. Mail-enabled security groups are read only. Learn more in the [Manage mail-enabled security groups Exchange article](https://technet.microsoft.com/en-us/library/bb123521%28v=exchg.160%29.aspx).
 
 ### Security group example
 

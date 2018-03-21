@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1811
+Content-Length: 2064
 
 {
   "value": {
@@ -89,9 +89,18 @@ Content-Length: 1811
     "minimumRequiredAppVersion": "Minimum Required App Version value",
     "minimumWarningAppVersion": "Minimum Warning App Version value",
     "isAssigned": true,
+    "targetedAppManagementLevels": "unmanaged",
     "appDataEncryptionType": "afterDeviceRestart",
     "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
-    "deployedAppCount": 0
+    "deployedAppCount": 0,
+    "faceIdBlocked": true,
+    "exemptedAppProtocols": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "Name value",
+        "value": "Value value"
+      }
+    ]
   }
 }
 ```

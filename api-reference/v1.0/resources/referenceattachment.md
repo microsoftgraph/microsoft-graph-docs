@@ -19,7 +19,7 @@ Derived from [attachment](attachment.md).
 |isInline|Boolean|Set to true if the attachment appears inline in the body of the embedding object.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |name|String|The text that is displayed below the icon representing the embedded attachment. This does not need to be the actual file name.|
-|size|Int32|The size of the attachment in bytes.|
+|size|Int32|The size of the metadata that is stored on the message for the attachment in bytes. This value does not indicate the size of the actual file.|
 
 ## Relationships
 None

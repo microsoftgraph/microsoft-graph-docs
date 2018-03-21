@@ -59,7 +59,7 @@ Content-Length: 615
       "runSchedule": {
         "@odata.type": "microsoft.graph.runSchedule"
       },
-      "scriptContent": "Script Content value",
+      "scriptContent": "c2NyaXB0Q29udGVudA==",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "runAsAccount": "user",

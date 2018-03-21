@@ -274,7 +274,7 @@ Always specify relative URIs in batch requests. Microsoft Graph then makes these
 
 ### Limit on batch size
 
-JSON batch requests are currently limited to 5 individual requests. As JSON batching matures, this limit will be raised.
+JSON batch requests are currently limited to 20 individual requests.
 
 ### Simplified dependencies
 

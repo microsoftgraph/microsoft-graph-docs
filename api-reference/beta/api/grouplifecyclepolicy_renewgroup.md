@@ -4,6 +4,8 @@
 
 Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
+> **Note:** In V1.0, [use the group resource to make renew requests](../../v1.0/api/group_renew.md).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -11,9 +13,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All    |
+|Delegated (work or school account) | Group.ReadWrite.All or Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported |
-|Application | Not supported |
+|Application | Group.ReadWrite.All or Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

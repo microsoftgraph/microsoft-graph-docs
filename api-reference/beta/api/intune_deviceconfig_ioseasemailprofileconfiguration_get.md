@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 839
+Content-Length: 881
 
 {
   "value": {
@@ -70,6 +70,7 @@ Content-Length: 839
     "emailAddressSource": "primarySmtpAddress",
     "hostName": "Host Name value",
     "requireSmime": true,
+    "smimeEnablePerMessageSwitch": true,
     "requireSsl": true,
     "usernameSource": "primarySmtpAddress"
   }

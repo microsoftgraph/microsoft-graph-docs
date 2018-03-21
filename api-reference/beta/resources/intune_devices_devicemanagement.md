@@ -47,7 +47,7 @@ Here is a JSON representation of the resource.
   "subscriptions": "String",
   "adminConsent": {
     "@odata.type": "microsoft.graph.adminConsent",
-    "collectFullIOSAppInventory": "String"
+    "shareAPNSData": "String"
   },
   "deviceProtectionOverview": {
     "@odata.type": "microsoft.graph.deviceProtectionOverview",

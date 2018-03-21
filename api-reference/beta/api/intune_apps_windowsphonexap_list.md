@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1276
+Content-Length: 1316
 
 {
   "value": [
@@ -71,17 +71,18 @@ Content-Length: 1276
       "developer": "Developer value",
       "notes": "Notes value",
       "uploadState": 11,
+      "publishingState": "processing",
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
-      "identityVersion": "Identity Version value",
       "minimumSupportedOperatingSystem": {
         "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
         "v8_0": true,
         "v8_1": true,
         "v10_0": true
       },
-      "productIdentifier": "Product Identifier value"
+      "productIdentifier": "Product Identifier value",
+      "identityVersion": "Identity Version value"
     }
   ]
 }

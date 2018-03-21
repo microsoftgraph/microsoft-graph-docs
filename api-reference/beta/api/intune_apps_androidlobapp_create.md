@@ -50,14 +50,16 @@ The following table shows the properties that are required when you create the a
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
+|packageId|String|The package identifier.|
 |identityName|String|The Identity Name.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |versionName|String|The version name of Android Line of Business (LoB) app.|
 |versionCode|String|The version code of Android Line of Business (LoB) app.|
+|identityVersion|String|The identity version.|
 
 
 
@@ -70,7 +72,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1179
+Content-length: 1251
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -90,10 +92,11 @@ Content-length: 1179
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
+  "packageId": "Package Id value",
   "identityName": "Identity Name value",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
@@ -107,7 +110,8 @@ Content-length: 1179
     "v5_1": true
   },
   "versionName": "Version Name value",
-  "versionCode": "Version Code value"
+  "versionCode": "Version Code value",
+  "identityVersion": "Identity Version value"
 }
 ```
 
@@ -116,7 +120,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1287
+Content-Length: 1359
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -138,10 +142,11 @@ Content-Length: 1287
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
+  "packageId": "Package Id value",
   "identityName": "Identity Name value",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
@@ -155,7 +160,8 @@ Content-Length: 1287
     "v5_1": true
   },
   "versionName": "Version Name value",
-  "versionCode": "Version Code value"
+  "versionCode": "Version Code value",
+  "identityVersion": "Identity Version value"
 }
 ```
 

@@ -5,10 +5,10 @@
 | Property          | Type   | Description                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Date   | The latest date of the content.          |
-| productType       | String | The product type such as "Office 365 ProPlus", "Project Client", "Visio Pro for Office 365". |
-| windows           | Int64  | The activation count on Windows. This number includes every single activation on any Windows machine. |
+| productType       | String | The product type, such as "Office 365 ProPlus", "Project Client", or "Visio Pro for Office 365". |
+| windows           | Int64  | The activation count on Windows. This number includes every activation on any Windows computer. |
 | mac               | Int64  | The activation count on Mac OS.          |
-| android           | Int64  | The activation count on Android device.  |
+| android           | Int64  | The activation count on an Android device.  |
 | ios               | Int64  | The activation count on iOS.             |
 | windows10Mobile   | Int64  | The activation count on Windows 10 mobile. |
 

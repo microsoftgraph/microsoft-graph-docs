@@ -22,6 +22,7 @@ The deviceManagement resource represents a tenant's collection device identities
 |windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune_enrollment_windowsautopilotsettings.md)|The Windows autopilot account settings.|
 |windowsAutopilotDeviceIdentities|[windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md) collection|The Windows autopilot device identities contained collection.|
 |windowsAutopilotDeploymentProfiles|[windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md) collection|Windows auto pilot deployment profiles|
+|importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) collection|Collection of imported Windows autopilot devices.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

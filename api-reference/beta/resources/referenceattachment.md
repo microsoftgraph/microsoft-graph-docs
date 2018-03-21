@@ -26,7 +26,7 @@ Derived from [attachment](attachment.md).
 |permission|ReferenceAttachmentPermissions|Specifies the permissions granted for the attachment by the type of provider in **providerType**. Possible values are: `other`, `view`, `edit`, `anonymousView`, `anonymousEdit`, `organizationView`, `organizationEdit`. Optional.|
 |previewUrl|String|Applies to only a reference attachment of an image - URL to get a preview image. Use **thumbnailUrl** and **previewUrl** only when **sourceUrl** identifies an image file. Optional.|
 |providerType|ReferenceAttachmentProviders|The type of provider that supports an attachment of this contentType. Possible values are: `other`, `oneDriveBusiness`, `oneDriveConsumer`, `dropbox`. Optional.|
-|size|Int32|The size of the attachment in bytes. Optional.|
+|size|Int32|The size of the metadata in bytes that is stored on the message for the reference attachment. This value does not indicate the size of the actual file. Optional.|
 |sourceUrl|String|URL to get the attachment content. If this is a URL to a folder, then for the folder to be displayed correctly in Outlook or Outlook on the web, set **isFolder** to true. Required.|
 |thumbnailUrl|String|Applies to only a reference attachment of an image - URL to get a thumbnail image. Use **thumbnailUrl** and **previewUrl** only when **sourceUrl** identifies an image file. Optional.|
 

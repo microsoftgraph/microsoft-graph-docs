@@ -39,7 +39,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "get_domains"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/domains
+GET https://graph.microsoft.com/v1.0/domains
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

@@ -59,8 +59,8 @@ The following table shows the properties that are required when you create the [
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|OAuth resource URI for printer discovery service as configured in Azure portal.|
 |messagingBlockSync|Boolean|Indicates whether or not to block text message back up and restore and Messaging Everywhere.|
-|messagingBlockMMS|Boolean|Indicates whether or not to block the the MMS send/receive functionality on the device.|
-|messagingBlockRichCommunicationServices|Boolean|Indicates whether or not to block the the RCS send/receive functionality on the device.|
+|messagingBlockMMS|Boolean|Indicates whether or not to block the MMS send/receive functionality on the device.|
+|messagingBlockRichCommunicationServices|Boolean|Indicates whether or not to block the RCS send/receive functionality on the device.|
 |searchBlockDiacritics|Boolean|Specifies if search can use diacritics.|
 |searchDisableAutoLanguageDetection|Boolean|Specifies whether to use automatic language detection when indexing content and properties.|
 |searchDisableIndexingEncryptedItems|Boolean|Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for Cortana or Explorer.|
@@ -98,6 +98,8 @@ The following table shows the properties that are required when you create the [
 |edgeDisableFirstRunPage|Boolean|Block the Microsoft web page that opens on the first use of Microsoft Edge. This policy allows enterprises, like those enrolled in zero emissions configurations, to block this page.|
 |edgeBlockLiveTileDataCollection|Boolean|Block the collection of information by Microsoft for live tile creation when users pin a site to Start from Microsoft Edge.|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.|
+|edgeFavoritesListLocation|String|The location of the favorites list to provision. Could be a local file, local network or http location.|
+|edgeBlockEditFavorites|Boolean|Indicates whether or not to Block the user from making changes to Favorites.|
 |cellularBlockDataWhenRoaming|Boolean|Whether or not to Block the user from using data over cellular while roaming.|
 |cellularBlockVpn|Boolean|Whether or not to Block the user from using VPN over cellular.|
 |cellularBlockVpnWhenRoaming|Boolean|Whether or not to Block the user from using VPN when roaming over cellular.|
@@ -148,6 +150,8 @@ The following table shows the properties that are required when you create the [
 |privacyAdvertisingId|String|Enables or disables the use of advertising ID. Added in Windows 10, version 1607. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when launching apps.|
 |privacyBlockInputPersonalization|Boolean|Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
+|privacyBlockPublishUserActivities|Boolean|Blocks the shared experiences/discovery of recently used resources in task switcher etc.|
+|privacyBlockActivityFeed|Boolean|Blocks the usage of cloud based speech services for Cortana, Dictation, or Store applications|
 |startBlockUnpinningAppsFromTaskbar|Boolean|Indicates whether or not to block the user from unpinning apps from taskbar.|
 |startMenuAppListVisibility|String|Setting the value of this collapses the app list, removes the app list entirely, or disables the corresponding toggle in the Settings app. Possible values are: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Boolean|Enabling this policy hides the change account setting from appearing in the user tile in the start menu.|
@@ -274,7 +278,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10834
+Content-length: 11022
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -342,6 +346,8 @@ Content-length: 10834
   "edgeDisableFirstRunPage": true,
   "edgeBlockLiveTileDataCollection": true,
   "edgeSyncFavoritesWithInternetExplorer": true,
+  "edgeFavoritesListLocation": "Edge Favorites List Location value",
+  "edgeBlockEditFavorites": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -404,6 +410,8 @@ Content-length: 10834
   "privacyAdvertisingId": "blocked",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
   "privacyBlockInputPersonalization": true,
+  "privacyBlockPublishUserActivities": true,
+  "privacyBlockActivityFeed": true,
   "startBlockUnpinningAppsFromTaskbar": true,
   "startMenuAppListVisibility": "collapse",
   "startMenuHideChangeAccountSettings": true,
@@ -537,7 +545,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11010
+Content-Length: 11198
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -608,6 +616,8 @@ Content-Length: 11010
   "edgeDisableFirstRunPage": true,
   "edgeBlockLiveTileDataCollection": true,
   "edgeSyncFavoritesWithInternetExplorer": true,
+  "edgeFavoritesListLocation": "Edge Favorites List Location value",
+  "edgeBlockEditFavorites": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -670,6 +680,8 @@ Content-Length: 11010
   "privacyAdvertisingId": "blocked",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
   "privacyBlockInputPersonalization": true,
+  "privacyBlockPublishUserActivities": true,
+  "privacyBlockActivityFeed": true,
   "startBlockUnpinningAppsFromTaskbar": true,
   "startMenuAppListVisibility": "collapse",
   "startMenuHideChangeAccountSettings": true,

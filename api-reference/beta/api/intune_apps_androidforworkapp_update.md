@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app
 ```
 
 ## Request headers
@@ -53,6 +52,8 @@ The following table shows the properties that are required when you create the [
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
+|packageId|String|The package identifier.|
 |appIdentifier|String|The Identity Name.|
 |usedLicenseCount|Int32|The number of VPP licenses in use.|
 |totalLicenseCount|Int32|The total number of VPP licenses.|
@@ -69,7 +70,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 727
+Content-length: 799
 
 {
   "displayName": "Display Name value",
@@ -88,6 +89,8 @@ Content-length: 727
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
+  "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
@@ -100,7 +103,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 891
+Content-Length: 963
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkApp",
@@ -122,6 +125,8 @@ Content-Length: 891
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
+  "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,

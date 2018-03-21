@@ -44,7 +44,7 @@ In the request body, supply the values for relevant fields that should be update
 |body|[ItemBody](../resources/itembody.md)|The body of the message associated with the event.|
 |categories|String|The categories associated with the event.|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|The date and time that the event ends.<br/><br/>By default, the end time is in UTC. You can specify an optional time zone in EndTimeZone, express the end time in that time zone, and include a time offset from UTC. Note that if you use EndTimeZone, you must specify a value for StartTimeZone as well.<br/><br/>This example specifies February 25, 2015, 9:34pm in Pacific Standard Time: "2015-02-25T21:34:00-08:00". |
-|importance|String|The importance of the event: Low = 0, Normal = 1, High = 2. Possible values are: `Low`, `Normal`, `High`.|
+|importance|String|The importance of the event. Possible values are: `Low`, `Normal`, `High`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 |location|[Location](../resources/location.md)|The location of the event.|

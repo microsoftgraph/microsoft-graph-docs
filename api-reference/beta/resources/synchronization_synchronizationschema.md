@@ -4,7 +4,7 @@
 
 Defines what objects will be synchronized and how they will be synchronized. The synchronization schema contains most of the setup information for a particular synchronization job. Typically, you will customize some of the [attribute mappings](synchronization_attributemapping.md), or add a [scoping filter](synchronization_filter.md) to synchronize only objects that satisfy a certain condition.
 
-The following sections describe the high-level components of the the synchronization schema.
+The following sections describe the high-level components of the synchronization schema.
 
 ## Directory definitions
 

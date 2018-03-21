@@ -59,6 +59,7 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 |numberOfPastPinsRemembered|Int32|Integer value that specifies the number of past PINs that can be associated to a user account that can't be reused. The largest number you can configure for this policy setting is 50. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then storage of previous PINs is not required. This node was added in Windows 10, version 1511. Default is 0.|
 |passwordMaximumAttemptCount|Int32|The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality. Range is an integer X where 4 <= X <= 16 for desktop and 0 <= X <= 999 for mobile devices.|
 |minutesOfInactivityBeforeDeviceLock|Int32|Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked.   Range is an integer X where 0 <= X <= 999.|
+|daysWithoutContactBeforeUnenroll|Int32|Offline interval before app data is wiped (days) |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -212,7 +213,8 @@ Here is a JSON representation of the resource.
   "pinExpirationDays": 1024,
   "numberOfPastPinsRemembered": 1024,
   "passwordMaximumAttemptCount": 1024,
-  "minutesOfInactivityBeforeDeviceLock": 1024
+  "minutesOfInactivityBeforeDeviceLock": 1024,
+  "daysWithoutContactBeforeUnenroll": 1024
 }
 ```
 

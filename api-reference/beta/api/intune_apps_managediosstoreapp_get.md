@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /deviceAppManagement/mobileApps/{mobileAppId}
 GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
 GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
-GET /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app
 ```
 
 ## Optional query parameters
@@ -52,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1311
+Content-Length: 1349
 
 {
   "value": {
@@ -75,6 +74,7 @@ Content-Length: 1311
     "developer": "Developer value",
     "notes": "Notes value",
     "uploadState": 11,
+    "publishingState": "processing",
     "appAvailability": "lineOfBusiness",
     "version": "Version value",
     "bundleId": "Bundle Id value",

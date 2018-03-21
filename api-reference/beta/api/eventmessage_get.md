@@ -170,7 +170,7 @@ Content-type: application/json
 ##### Request 2
 The second example shows how to get the event associated with an event message. It uses 
 the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, 
-and apply an $expand parameter to get the the properties of the event.
+and apply an $expand parameter to get the properties of the event.
 <!-- {
   "blockType": "request",
   "name": "get_event_based_on_eventmessage"

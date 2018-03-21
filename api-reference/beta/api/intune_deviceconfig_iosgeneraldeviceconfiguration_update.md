@@ -91,7 +91,7 @@ The following table shows the properties that are required when you create the [
 |hostPairingBlocked|Boolean|indicates whether or not to allow host pairing to control the devices an iOS device can pair with when the iOS device is in supervised mode.|
 |iBooksStoreBlocked|Boolean|Indicates whether or not to block the user from using the iBooks Store when the device is in supervised mode.|
 |iBooksStoreBlockErotica|Boolean|Indicates whether or not to block the user from downloading media from the iBookstore that has been tagged as erotica.|
-|iCloudBlockActivityContinuation|Boolean|Indicates whether or not to block  the the user from continuing work they started on iOS device to another iOS or macOS device.|
+|iCloudBlockActivityContinuation|Boolean|Indicates whether or not to block  the user from continuing work they started on iOS device to another iOS or macOS device.|
 |iCloudBlockBackup|Boolean|Indicates whether or not to block iCloud backup.|
 |iCloudBlockDocumentSync|Boolean|Indicates whether or not to block iCloud document sync.|
 |iCloudBlockManagedAppsSync|Boolean|Indicates whether or not to block Managed Apps Cloud Sync.|
@@ -146,7 +146,7 @@ The following table shows the properties that are required when you create the [
 |passcodeBlockFingerprintModification|Boolean|Block modification of registered Touch ID fingerprints when in supervised mode.|
 |passcodeBlockModification|Boolean|Indicates whether or not to allow passcode modification on the supervised device (iOS 9.0 and later).|
 |passcodeBlockSimple|Boolean|Indicates whether or not to block simple passcodes.|
-|passcodeExpirationDays|Int32|Number of days before the passcode expires. Valid values 1 to 255|
+|passcodeExpirationDays|Int32|Number of days before the passcode expires. Valid values 1 to 65535|
 |passcodeMinimumLength|Int32|Minimum length of passcode. Valid values 4 to 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a passcode is required.|
 |passcodeMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|

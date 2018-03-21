@@ -51,16 +51,13 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/windowsPrivacyAccessControls
 
 Content-type: application/json
-Content-length: 489
+Content-length: 379
 
 {
   "windowsPrivacyAccessControls": [
     {
       "@odata.type": "#microsoft.graph.windowsPrivacyDataAccessControlItem",
       "id": "03b15556-5556-03b1-5655-b1035655b103",
-      "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      },
       "accessLevel": "forceAllow",
       "dataCategory": "accountInfo",
       "appPackageFamilyName": "App Package Family Name value",

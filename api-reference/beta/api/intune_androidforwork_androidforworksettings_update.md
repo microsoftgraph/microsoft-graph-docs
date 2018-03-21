@@ -45,6 +45,7 @@ The following table shows the properties that are required when you create the [
 |lastModifiedDateTime|DateTimeOffset|Last modification time for Android for Work settings|
 |enrollmentTarget|String|Indicates which users can enroll devices in Android for Work device management Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'|
+|deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
 
 
 
@@ -57,7 +58,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidForWorkSettings
 Content-type: application/json
-Content-length: 417
+Content-length: 458
 
 {
   "bindStatus": "bound",
@@ -69,7 +70,8 @@ Content-length: 417
   "enrollmentTarget": "all",
   "targetGroupIds": [
     "Target Group Ids value"
-  ]
+  ],
+  "deviceOwnerManagementEnabled": true
 }
 ```
 
@@ -78,7 +80,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 527
+Content-Length: 568
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkSettings",
@@ -92,7 +94,8 @@ Content-Length: 527
   "enrollmentTarget": "all",
   "targetGroupIds": [
     "Target Group Ids value"
-  ]
+  ],
+  "deviceOwnerManagementEnabled": true
 }
 ```
 

@@ -21,7 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
-POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy/assign
 ```
 
 ## Request headers
@@ -37,7 +36,6 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceCompliancePolicyGroupAssignments|[deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) collection|Not yet documented|
 |assignments|[deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) collection|Not yet documented|
 
 
@@ -52,17 +50,9 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 
 Content-type: application/json
-Content-length: 557
+Content-length: 280
 
 {
-  "deviceCompliancePolicyGroupAssignments": [
-    {
-      "@odata.type": "#microsoft.graph.deviceCompliancePolicyGroupAssignment",
-      "id": "fe44007c-007c-fe44-7c00-44fe7c0044fe",
-      "targetGroupId": "Target Group Id value",
-      "excludeGroup": true
-    }
-  ],
   "assignments": [
     {
       "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",

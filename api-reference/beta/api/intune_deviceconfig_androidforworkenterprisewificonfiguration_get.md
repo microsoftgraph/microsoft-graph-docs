@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 886
+Content-Length: 905
 
 {
   "value": {
@@ -68,9 +68,9 @@ Content-Length: 886
     "wiFiSecurityType": "wpaEnterprise",
     "eapType": "eapTtls",
     "authenticationMethod": "usernameAndPassword",
-    "nonEapAuthenticationMethodForEapTtls": "challengeHandshakeAuthenticationProtocol",
-    "nonEapAuthenticationMethodForPeap": "microsoftChapVersionTwo",
-    "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value"
+    "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
+    "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
   }
 }
 ```

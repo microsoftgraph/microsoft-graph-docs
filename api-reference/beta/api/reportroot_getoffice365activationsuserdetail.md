@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/getOffice365ActivationsUserDetail
 ```
 
-## Request parameters
+## Query parameters
 
 This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
 
@@ -54,6 +54,7 @@ The CSV file has the following headers for columns.
 - Windows 10 Mobile
 - iOS
 - Android
+- Activated On Shared Computer
 
 ### JSON
 
@@ -104,7 +105,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android
+Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android,Activated On Shared Computer
 ```
 
 ### JSON
@@ -150,13 +151,14 @@ Content-Length: 400
       "displayName": "displayname-value", 
       "userActivationCounts": [
         {
-          "productLicenses": "Project Client", 
+          "productType": "Project Client", 
           "lastActivatedDate": "2017-08-20", 
           "windows": 5, 
           "mac": 0, 
           "windows10Mobile": 0, 
           "ios": 0, 
-          "android": 2
+          "android": 2,
+          "activatedOnSharedComputer": true
         }
       ]
     }

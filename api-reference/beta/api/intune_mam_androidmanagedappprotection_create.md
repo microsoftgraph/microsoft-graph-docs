@@ -69,12 +69,14 @@ The following table shows the properties that are required when you create the a
 |minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
+|targetedAppManagementLevels|String|The intended app management levels for this policy Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md) Possible values are: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
 |screenCaptureBlocked|Boolean|Indicates whether a managed user can take screen captures of managed apps|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|When this setting is enabled, app level encryption is disabled if device level encryption is enabled|
 |encryptAppData|Boolean|Indicates whether application data for managed apps should be encrypted|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |minimumRequiredPatchVersion|String|Define the oldest required Android security patch level a user can have to gain secure access to the app.|
 |minimumWarningPatchVersion|String|Define the oldest recommended Android security patch level a user can have for secure access to the app.|
+|exemptedAppPackages|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|App packages in this list will be exempt from the policy and will be able to receive data from managed apps.|
 
 
 
@@ -87,7 +89,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtections
 Content-type: application/json
-Content-length: 1756
+Content-length: 1964
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",
@@ -124,12 +126,20 @@ Content-length: 1756
   "minimumRequiredAppVersion": "Minimum Required App Version value",
   "minimumWarningAppVersion": "Minimum Warning App Version value",
   "isAssigned": true,
+  "targetedAppManagementLevels": "unmanaged",
   "screenCaptureBlocked": true,
   "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
   "encryptAppData": true,
   "deployedAppCount": 0,
   "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
-  "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
+  "minimumWarningPatchVersion": "Minimum Warning Patch Version value",
+  "exemptedAppPackages": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ]
 }
 ```
 
@@ -138,7 +148,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1864
+Content-Length: 2072
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",
@@ -177,12 +187,20 @@ Content-Length: 1864
   "minimumRequiredAppVersion": "Minimum Required App Version value",
   "minimumWarningAppVersion": "Minimum Warning App Version value",
   "isAssigned": true,
+  "targetedAppManagementLevels": "unmanaged",
   "screenCaptureBlocked": true,
   "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
   "encryptAppData": true,
   "deployedAppCount": 0,
   "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
-  "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
+  "minimumWarningPatchVersion": "Minimum Warning Patch Version value",
+  "exemptedAppPackages": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ]
 }
 ```
 

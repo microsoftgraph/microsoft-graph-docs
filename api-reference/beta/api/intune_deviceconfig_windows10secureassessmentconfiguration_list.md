@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 612
+Content-Length: 827
 
 {
   "value": [
@@ -61,9 +61,15 @@ Content-Length: 612
       "version": 7,
       "launchUri": "Launch Uri value",
       "configurationAccount": "Configuration Account value",
+      "configurationAccountType": "domainAccount",
       "allowPrinting": true,
       "allowScreenCapture": true,
-      "allowTextSuggestion": true
+      "allowTextSuggestion": true,
+      "printerNames": [
+        "Printer Names value"
+      ],
+      "defaultPrinterName": "Default Printer Name value",
+      "blockAddingNewPrinter": true
     }
   ]
 }

@@ -23,7 +23,7 @@ An aggregation of information about a person from across mail, contacts, and soc
 |isFavorite|Boolean|`true` if the user has flagged this person as a favorite.|
 |jobTitle|String|The person's job title.|
 |officeLocation|String|The location of the person's office.|
-|personNotes|String|Free-form notes that the the user has taken about this person.|
+|personNotes|String|Free-form notes that the user has taken about this person.|
 |personType|[personType](persontype.md) collection|The type of person.|
 |phones|[phone](phone.md) collection|The person's phone numbers.|
 |postalAddresses|[location](location.md) collection|The person's addresses.|

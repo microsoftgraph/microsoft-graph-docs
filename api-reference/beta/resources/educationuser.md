@@ -11,8 +11,9 @@ This object provides a targeted subset of properties from the core [user](user.m
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get educationUser](../api/educationuser_get.md) | [educationUser](educationuser.md) |Read properties and relationships of an **educationUser** object.|
-|[List classes](../api/educationuser_list_classes.md) |[educationClass](educationclass.md) collection| Get an **educationClass** object collection.|
-|[List schools](../api/educationuser_list_schools.md) |[educationSchool](educationschool.md) collection| Get an **educationSchool** object collection.|
+|[List classes](../api/educationuser_list_classes.md) |[educationClass](educationclass.md) collection| Get the **educationClass** object collection for which the user is member.|
+|[List schools](../api/educationuser_list_schools.md) |[educationSchool](educationschool.md) collection| Get the **educationSchool** object collection for which the user is a member.|
+|[Get user](../api/educationuser_get_user.md) |[user](user.md)| Get the simple directory **user** that corresponds to this **educationUser**.|
 |[Update](../api/educationuser_update.md) | [educationUser](educationuser.md)	|Update an **educationUser** object. |
 |[Delete](../api/educationuser_delete.md) | None |Delete an **educationUser** object. |
 
@@ -37,7 +38,7 @@ This object provides a targeted subset of properties from the core [user](user.m
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two can be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example, "en-US".|
-|primaryRole|string| Default role for a user. The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `enum_sentinel`.|
+|primaryRole|string| Default role for a user. The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `enum_sentinel`. Supports $filter.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
 |residenceAddress|[physicalAddress](physicaladdress.md)| Address where user lives.|
 |student|[educationStudent](educationstudent.md)| If the primary role is student, this block will contain student specific data.|

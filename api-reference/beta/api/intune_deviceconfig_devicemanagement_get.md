@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 578
+Content-Length: 434
 
 {
   "value": {
@@ -57,8 +57,6 @@ Content-Length: 578
     "id": "0b283420-3420-0b28-2034-280b2034280b",
     "settings": {
       "@odata.type": "microsoft.graph.deviceManagementSettings",
-      "windowsCommercialId": "Windows Commercial Id value",
-      "windowsCommercialIdLastModifiedTime": "2016-12-31T23:59:46.9744002-08:00",
       "deviceComplianceCheckinThresholdDays": 4,
       "isScheduledActionEnabled": true,
       "secureByDefault": true

@@ -39,8 +39,8 @@ The following table shows the properties that are required when you create the d
 |id|String|Unique Identifier for the device management script.|
 |displayName|String|Name of the device management script.|
 |description|String|Optional description for the device management script.|
-|runSchedule|[runSchedule](../resources/intune_devices_runschedule.md)|The the interval for script to run. If not defined the script will run once|
-|scriptContent|String|The base64 encoded script text.|
+|runSchedule|[runSchedule](../resources/intune_devices_runschedule.md)|The interval for script to run. If not defined the script will run once|
+|scriptContent|Binary|The script content.|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified.|
 |runAsAccount|String|Indicates the type of execution context the device management script runs in. Possible values are: `system`, `user`.|
@@ -67,7 +67,7 @@ Content-length: 422
   "runSchedule": {
     "@odata.type": "microsoft.graph.runSchedule"
   },
-  "scriptContent": "Script Content value",
+  "scriptContent": "c2NyaXB0Q29udGVudA==",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
@@ -90,7 +90,7 @@ Content-Length: 530
   "runSchedule": {
     "@odata.type": "microsoft.graph.runSchedule"
   },
-  "scriptContent": "Script Content value",
+  "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "runAsAccount": "user",

@@ -44,7 +44,7 @@ The following table shows the properties that are required when you create the m
 |version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |passwordRequired|Boolean|Whether or not to require a password.|
 |passwordBlockSimple|Boolean|Indicates whether or not to block simple passwords.|
-|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 255|
+|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 65535|
 |passwordMinimumLength|Int32|Minimum length of password. Valid values 4 to 14|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 1 to 24|

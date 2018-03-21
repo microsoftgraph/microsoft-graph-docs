@@ -23,7 +23,7 @@ Depending on how an event is created, expect Outlook to set the read-only **loca
 ## Properties
 | Property  | Type   | Description                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
-| address | [physicalAddress](physicalAddress.md) |The street address of the location. |
+| address | [physicalAddress](physicaladdress.md) |The street address of the location. |
 | coordinates | [outlookGeoCoordinates](outlookGeoCoordinates.md) | The geographic coordinates and elevation of the location. |
 | displayName  | String | The name associated with the location.                       |
 | locationEmailAddress | String | Optional email address of the location. |

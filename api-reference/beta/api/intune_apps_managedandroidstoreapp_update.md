@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app
 ```
 
 ## Request headers
@@ -53,6 +52,7 @@ The following table shows the properties that are required when you create the [
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |appAvailability|String|The Application's availability. Inherited from [managedApp](../resources/intune_apps_managedapp.md) Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
 |packageId|String|The app's package ID.|
@@ -70,7 +70,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1005
+Content-length: 1041
 
 {
   "displayName": "Display Name value",
@@ -89,6 +89,7 @@ Content-length: 1005
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "packageId": "Package Id value",
@@ -112,7 +113,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1174
+Content-Length: 1210
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidStoreApp",
@@ -134,6 +135,7 @@ Content-Length: 1174
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "packageId": "Package Id value",

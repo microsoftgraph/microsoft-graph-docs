@@ -18,7 +18,7 @@ Schema describing an Android for Work application's custom configurations.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity the Android package name for the application the schema corresponds to|
-|exampleJson|[androidForWorkAppConfigurationExample](../resources/intune_androidforwork_androidforworkappconfigurationexample.md)|Example JSON confirming to this schema that demonstrates how to set the configuration for this app|
+|exampleJson|Binary|UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app|
 |schemaItems|[androidForWorkAppConfigurationSchemaItem](../resources/intune_androidforwork_androidforworkappconfigurationschemaitem.md) collection|Collection of items each representing a named configuration option in the schema|
 
 ## Relationships
@@ -35,9 +35,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.androidForWorkAppConfigurationSchema",
   "id": "String (identifier)",
-  "exampleJson": {
-    "@odata.type": "microsoft.graph.androidForWorkAppConfigurationExample"
-  },
+  "exampleJson": "binary",
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidForWorkAppConfigurationSchemaItem",

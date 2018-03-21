@@ -42,6 +42,8 @@ The following table shows the properties that are required when you create the w
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|localSecurityOptionsBlockMicrosoftAccounts|Boolean|Prevent users from adding new Microsoft accounts to this computer.|
+|localSecurityOptionsEnableAdministratorAccount|Boolean|Determines whether the local Administrator account is enabled or disabled.|
 |defenderSecurityCenterDisableAppBrowserUI|Boolean|Used to disable the display of the app and browser protection area.|
 |defenderSecurityCenterDisableFamilyUI|Boolean|Used to disable the display of the family options area.|
 |defenderSecurityCenterDisableHealthUI|Boolean|Used to disable the display of the device performance and health area.|
@@ -73,8 +75,14 @@ The following table shows the properties that are required when you create the w
 |defenderOfficeMacroCodeAllowWin32ImportsType|String|Value indicating the behavior of Win32 imports from Macro code in Office Possible values are: `userDefined`, `block`, `auditMode`.|
 |defenderScriptObfuscatedMacroCodeType|String|Value indicating the behavior of obfuscated js/vbs/ps/macro code Possible values are: `userDefined`, `block`, `auditMode`.|
 |defenderScriptDownloadedPayloadExecutionType|String|Value indicating the behavior of js/vbs executing payload downloaded from Internet Possible values are: `userDefined`, `block`, `auditMode`.|
-|defenderEmailContentExecutionType|String|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email(webmail/mail-client) Possible values are: `userDefined`, `block`, `auditMode`.|
-|defenderGuardMyFoldersType|String|Value indicating the behavior of protected folders Possible values are: `userDefined`, `enable`, `auditMode`.|
+|defenderPreventCredentialStealingType|String|Value indicating if credential stealing from the Windows local security authority subsystem is permitted Possible values are: `userDefined`, `enable`, `auditMode`.|
+|defenderProcessCreationType|String|Value indicating response to process creations originating from PSExec and WMI commands Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderUntrustedUSBProcessType|String|Value indicating response to untrusted and unsigned processes that run from USB Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderUntrustedExecutableType|String|Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderEmailContentExecutionType|String|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client) Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderPasswordProtectedEmailContentExecutionType|String|Value indicating if execution of password-protected executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client) Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderAdvancedRansomewareProtectionType|String|Value indicating use of advanced protection against ransomeware Possible values are: `userDefined`, `enable`, `auditMode`.|
+|defenderGuardMyFoldersType|String|Value indicating the behavior of protected folders Possible values are: `userDefined`, `enable`, `auditMode`, `blockDiskModification`, `auditDiskModification`.|
 |defenderGuardedFoldersAllowedAppPaths|String collection|List of paths to exe that are allowed to access protected folders|
 |defenderAdditionalGuardedFolders|String collection|List of folder paths to be added to the list of protected folders|
 |defenderNetworkProtectionType|String|Value indicating the behavior of NetworkProtection Possible values are: `userDefined`, `enable`, `auditMode`.|
@@ -95,6 +103,7 @@ The following table shows the properties that are required when you create the w
 |applicationGuardAllowPrintToLocalPrinters|Boolean|Allow printing to Local Printers from Container|
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|Allow printing to Network Printers from Container|
 |applicationGuardAllowVirtualGPU|Boolean|Allow application guard to use virtual GPU|
+|applicationGuardAllowFileSaveOnHost|Boolean|Allow users to download files from Edge in the application guard container and save them on the host file system|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|Allows the Admin to disable the warning prompt for other disk encryption on the user machines.|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.|
 |bitLockerEncryptDevice|Boolean|Allows the admin to require encryption to be turned on using BitLocker.|
@@ -113,7 +122,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 7332
+Content-length: 7809
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -121,6 +130,8 @@ Content-length: 7332
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "localSecurityOptionsBlockMicrosoftAccounts": true,
+  "localSecurityOptionsEnableAdministratorAccount": true,
   "defenderSecurityCenterDisableAppBrowserUI": true,
   "defenderSecurityCenterDisableFamilyUI": true,
   "defenderSecurityCenterDisableHealthUI": true,
@@ -196,7 +207,13 @@ Content-length: 7332
   "defenderOfficeMacroCodeAllowWin32ImportsType": "block",
   "defenderScriptObfuscatedMacroCodeType": "block",
   "defenderScriptDownloadedPayloadExecutionType": "block",
+  "defenderPreventCredentialStealingType": "enable",
+  "defenderProcessCreationType": "block",
+  "defenderUntrustedUSBProcessType": "block",
+  "defenderUntrustedExecutableType": "block",
   "defenderEmailContentExecutionType": "block",
+  "defenderPasswordProtectedEmailContentExecutionType": "block",
+  "defenderAdvancedRansomewareProtectionType": "enable",
   "defenderGuardMyFoldersType": "enable",
   "defenderGuardedFoldersAllowedAppPaths": [
     "Defender Guarded Folders Allowed App Paths value"
@@ -222,6 +239,7 @@ Content-length: 7332
   "applicationGuardAllowPrintToLocalPrinters": true,
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
+  "applicationGuardAllowFileSaveOnHost": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
@@ -278,7 +296,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7440
+Content-Length: 7917
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -288,6 +306,8 @@ Content-Length: 7440
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "localSecurityOptionsBlockMicrosoftAccounts": true,
+  "localSecurityOptionsEnableAdministratorAccount": true,
   "defenderSecurityCenterDisableAppBrowserUI": true,
   "defenderSecurityCenterDisableFamilyUI": true,
   "defenderSecurityCenterDisableHealthUI": true,
@@ -363,7 +383,13 @@ Content-Length: 7440
   "defenderOfficeMacroCodeAllowWin32ImportsType": "block",
   "defenderScriptObfuscatedMacroCodeType": "block",
   "defenderScriptDownloadedPayloadExecutionType": "block",
+  "defenderPreventCredentialStealingType": "enable",
+  "defenderProcessCreationType": "block",
+  "defenderUntrustedUSBProcessType": "block",
+  "defenderUntrustedExecutableType": "block",
   "defenderEmailContentExecutionType": "block",
+  "defenderPasswordProtectedEmailContentExecutionType": "block",
+  "defenderAdvancedRansomewareProtectionType": "enable",
   "defenderGuardMyFoldersType": "enable",
   "defenderGuardedFoldersAllowedAppPaths": [
     "Defender Guarded Folders Allowed App Paths value"
@@ -389,6 +415,7 @@ Content-Length: 7440
   "applicationGuardAllowPrintToLocalPrinters": true,
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
+  "applicationGuardAllowFileSaveOnHost": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
