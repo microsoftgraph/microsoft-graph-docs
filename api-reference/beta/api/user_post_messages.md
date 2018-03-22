@@ -191,7 +191,7 @@ Content-type: application/json
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/Messages/$entity",
-  "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages('AQMkADJmMTUAAAW1fsAAAAA==')",
+  "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages/AQMkADJmMTUAAAW1fsAAAAA==",
   "@odata.etag":"W/\"CQAAABYAAAAPFhK2FclcRbABBJhCde8iAAAAbYj7\"",
   "id":"AQMkADJmMTUAAAW1fsAAAAA==",
   "body":{
@@ -213,10 +213,10 @@ Content-type: application/json
   "mentionsPreview":{
     "isMentioned":false
   },
-  "mentions@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages('AQMkADJmMTUAAAW1fsAAAAA%3D%3D')/mentions",
+  "mentions@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages/AQMkADJmMTUAAAW1fsAAAAA%3D%3D/mentions",
   "mentions":[
     {
-      "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages('AQMkADJmMTUAAAW1fsAAAAA==')/mentions('4577bba4-b063-4cea-9073-6f7ca815fcec')",
+      "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages/AQMkADJmMTUAAAW1fsAAAAA==/mentions('4577bba4-b063-4cea-9073-6f7ca815fcec')",
       "id":"4577bba4-b063-4cea-9073-6f7ca815fcec",
       "mentioned":{
         "name":"Dana Swope",

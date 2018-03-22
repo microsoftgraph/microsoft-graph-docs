@@ -20,6 +20,7 @@ Direct queries to this resource are not supported. Please see the [domain](domai
 |supportedService|String| Microsoft Online Service or feature that has a dependency on this SRV record.</br></br>Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |ttl|Int32| Value to use when configuring the *time-to-live (ttl)* property of the SRV record at the DNS host. Not nullable |
 |weight|Int32| Value to use when configuring the *weight* property of the SRV record at the DNS host. |
+|canonicalName|string|cname|
 
 ## Relationships
 None

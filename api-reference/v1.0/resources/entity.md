@@ -26,6 +26,8 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "abstract": "true",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],

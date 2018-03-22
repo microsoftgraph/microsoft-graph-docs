@@ -8,10 +8,11 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.outlookitem"
+  "@odata.type": "microsoft.graph.outlookItem"
 }-->
 
 ```json

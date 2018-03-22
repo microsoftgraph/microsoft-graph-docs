@@ -17,6 +17,7 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|id|string|id|
 |name|string|The name of the object. Read-only.|
 |comment|string|Represents the comment associated with this name.|
 |scope|string|Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.|
@@ -35,6 +36,7 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
@@ -43,6 +45,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "id": "string",
   "name": "string",
   "comment": "string",
   "scope": "string",

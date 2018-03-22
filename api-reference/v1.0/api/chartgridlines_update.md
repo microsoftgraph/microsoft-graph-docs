@@ -13,9 +13,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/majorgridlines
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
+PATCH /workbook/worksheets/{id|name}/charts/<name>/axes/valueAxis/minorGridlines
+PATCH /workbook/worksheets/{id|name}/charts/<name>/axes/valueAxis/majorgridlines
+PATCH /workbook/worksheets/{id|name}/charts/<name>/axes/seriesAxis/majorgridlines
 ```
 ## Request headers
 | Name       | Description|
@@ -41,7 +41,7 @@ Here is an example of the request.
   "name": "update_chartgridlines"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/axes/valueAxis/minorGridlines
 Content-type: application/json
 Content-length: 21
 

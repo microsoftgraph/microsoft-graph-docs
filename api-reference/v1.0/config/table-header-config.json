@@ -60,7 +60,7 @@
       {
         "type": "ParameterDefinition",
         "columns": {
-          "name": [ "Parameter Name", "Property Name", "Property", "Name", "Relationship name", "Relationship" ],
+          "name": [ "Parameter Name", "Parameter", "Property Name", "Property", "Name", "Relationship name", "Relationship" ],
           "type": [ "Type", "Value" ],
           "description": [ "Description" ],
           "required": [ "Description" ]

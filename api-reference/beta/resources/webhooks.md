@@ -16,7 +16,7 @@ Using the Microsoft Graph REST API, an app can subscribe to changes on the follo
 * User's personal OneDrive folders
 
 For instance, you can create a subscription to a specific folder:
-`me/mailfolders('inbox')/messages`
+`me/mailFolders/inbox/messages`
 
 Or to a top-level resource:
 `me/messages`, `me/contacts`, `me/events`, `users`, or `groups`
@@ -92,7 +92,7 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/notificationClient",
-  "resource": "/me/mailfolders('inbox')/messages",
+  "resource": "/me/mailFolders/inbox/messages",
   "expirationDateTime": "2016-03-20T11:00:00.0000000Z",
   "clientState": "SecretClientState"
 }

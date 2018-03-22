@@ -13,10 +13,12 @@ Represents a single axis in a chart.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+| id       |string   | Unique identifier. Read-only.|
 |majorUnit|object|Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.|
 |maximum|object|Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.|
 |minimum|object|Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.|
 |minorUnit|object|Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.|
+
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -32,20 +34,25 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartaxis"
+  "@odata.type": "microsoft.graph.chartAxis"
 }-->
 
 ```json
 {
+  "id": "string",
   "majorUnit": "string",
   "maximum": "string",
   "minimum": "string",
-  "minorUnit": "string"
+  "minorUnit": "string",
+  "format": {"@odata.type": "microsoft.graph.chartAxisFormat"},
+  "majorGridlines": {"@odata.type": "microsoft.graph.chartGridlines"},
+  "minorGridlines": {"@odata.type": "microsoft.graph.chartGridlines"},
+  "title": {"@odata.type": "microsoft.graph.chartAxisTitle"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

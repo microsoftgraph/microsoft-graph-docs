@@ -72,7 +72,7 @@ The response to this request will provide the details of the newly created [uplo
 <!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /drive/root:/{item-path}:/createUploadSession
+POST /me/drive/root:/{item-path}:/createUploadSession
 Content-Type: application/json
 
 {

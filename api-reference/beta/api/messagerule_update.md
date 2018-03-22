@@ -51,7 +51,7 @@ The following example changes the name of the rule, and the actions to be taken 
   "name": "update_messagerule"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
+PATCH https://graph.microsoft.com/beta/me/mailFolders/inbox/messagerules('AQAAAJ5dZqA=')
 
 Content-type: application/json
 

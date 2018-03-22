@@ -46,7 +46,7 @@ Content-type: application/json
 {
    "changeType": "created,updated",
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
-   "resource": "me/mailFolders('Inbox')/messages",
+   "resource": "me/mailFolders/Inbox/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
    "clientState": "subscription-identifier"
 }
@@ -59,10 +59,10 @@ The following are valid values for the resource property of the subscription:
 
 | Resource type | Examples |
 |:------ |:----- |
-|Mail|me/mailfolders('inbox')/messages<br />me/messages|
+|Mail|me/mailFolders/inbox/messages<br />me/messages|
 |Contacts|me/contacts|
 |Calendars|me/events|
-|Conversations|groups('*{id}*')/conversations|
+|Conversations|groups/{id}/conversations|
 |Drives|me/drive/root|
 
 ##### Response
@@ -77,7 +77,7 @@ HTTP/1.1 201 Created
 
 {
   "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
-  "resource":"me/mailFolders('Inbox')/messages",
+  "resource":"me/mailFolders/Inbox/messages",
   "changeType":"created, updated",
   "clientState":"subscription-identifier",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",

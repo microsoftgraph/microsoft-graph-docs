@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/contoso.com/serviceConfigurationRecords
+GET /domains/{domain-name}/serviceConfigurationRecords
 ```
 
 ## Optional query parameters
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "get_serviceconfigurationrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/contoso.com/serviceConfigurationRecords
+GET https://graph.microsoft.com/beta/domains/{domain-name}/serviceConfigurationRecords
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

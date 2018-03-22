@@ -2,11 +2,23 @@
 
 Describes the date, time, and time zone of a point in time.
 
+## JSON representation
+
+Here is a JSON representation of a **dateTimeColumn** resource.
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.dateTimeColumn" } -->
+
+```json
+{
+  "dateTime": "datetime",
+  "timeZone": "timezone"
+}
+```
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|DateTime|String|A single point of time in a combined date and time representation (`<date>T<time>`).|
-|TimeZone|String|One of the following time zone names.|
+|dateTime|String|A single point of time in a combined date and time representation (`<date>T<time>`).|
+|timeZone|String|One of the following time zone names.|
 
 The _TimeZone_ property can be set to any of the time zones supported by Windows, as well as the following time zones names.
 

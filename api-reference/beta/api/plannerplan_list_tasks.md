@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "get_tasks"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/tasks
+GET https://graph.microsoft.com/beta/planner/plans/{plan-id}/tasks
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

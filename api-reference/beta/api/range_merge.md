@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/merge
+POST /workbook/names/<name>/range/merge
 POST /workbook/worksheets/{id|name}/range(address='<address>')/merge
 POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 
@@ -46,7 +46,7 @@ Here is an example of the request.
   "name": "range_merge"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/merge
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/<name>/range/merge
 Content-type: application/json
 Content-length: 20
 

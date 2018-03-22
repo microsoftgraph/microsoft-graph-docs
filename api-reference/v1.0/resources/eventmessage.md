@@ -52,7 +52,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an at
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
-|id|String||
+|id|String|unique identifier|
 |importance|String| The importance of the message: `low`, `normal`, `high`.|
 |inferenceClassification|String| Possible values are: `focused`, `other`.|
 |internetMessageId |String |The message ID in the format specified by [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
@@ -87,6 +87,7 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.message",
   "optionalProperties": [
     "attachments",
     "event",

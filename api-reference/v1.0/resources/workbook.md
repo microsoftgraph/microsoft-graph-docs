@@ -2,8 +2,32 @@
 
 Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
 
+## JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.workbook"
+}-->
+
+```json
+{
+  "id": "string",
+  "names": [{"@odata.type": "microsoft.graph.namedItem"}],
+  "tables": [{"@odata.type": "microsoft.graph.table"}],
+  "worksheets": [{"@odata.type": "microsoft.graph.worksheet"}]
+}
+```
+
 ## Properties
-None
+| Property   | Type |Description|
+|:---------------|:--------|:----------|
+| id       |string   | Unique identifier. Read-only.
 
 ## Methods
 
@@ -20,6 +44,7 @@ None
 |names|[NamedItem](nameditem.md) collection|Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|
 |tables|[Table](table.md) collection|Represents a collection of tables associated with the workbook. Read-only.|
 |worksheets|[Worksheet](worksheet.md) collection|Represents a collection of worksheets associated with the workbook. Read-only.|
+
 
 ## Functions
 

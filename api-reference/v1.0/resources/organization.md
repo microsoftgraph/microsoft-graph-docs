@@ -35,7 +35,6 @@ This resource lets you add your own data to custom properties using [extensions]
 | postalCode                           | String                                                            | Postal code of the address for the organization                                                                                                                                                                                                                                      |
 | preferredLanguage                    | String                                                            | The preferred language for the organization. Should follow ISO 639-1 Code; for example "en".                                                                                                                                                                                         |
 | provisionedPlans                     | [ProvisionedPlan](provisionedplan.md) collection                  | Not nullable.                                                                                                                                                                                                                                                                        |
-| provisioningErrors                   | ProvisioningError collection                                      | Not nullable.                                                                                                                                                                                                                                                                        |
 | securityComplianceNotificationMails  | String collection                                                 |                                                                                                                                                                                                                                                                                      |
 | securityComplianceNotificationPhones | String collection                                                 |                                                                                                                                                                                                                                                                                      |
 | state                                | String                                                            | State name of the address for the organization                                                                                                                                                                                                                                       |
@@ -68,10 +67,14 @@ Here is a JSON representation of the resource
   "businessPhones": ["string"],
   "city": "string",
   "country": "string",
+  "companyLastDirSyncTime": "String (timestamp)",
   "countryLetterCode": "string",
+  "deletionTimestamp": "String (timestamp)",
+  "dirSyncEnabled": true,
   "displayName": "string",
   "id": "string (identifier)",
   "marketingNotificationEmails": ["string"],
+  "objectType": "company",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
@@ -82,6 +85,7 @@ Here is a JSON representation of the resource
   "state": "string",
   "street": "string",
   "technicalNotificationMails": ["string"],
+  "telephoneNumber": "555-123-4567",
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
 

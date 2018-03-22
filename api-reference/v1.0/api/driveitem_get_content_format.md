@@ -20,8 +20,8 @@ To call this API, the user must have granted the application read access to the 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /drive/items/{item-id}/content?format={format}
-GET /drive/root:/{path and filename}:/content?format={format}
+GET /me/drive/items/{item-id}/content?format={format}
+GET /me/drive/root:/{path and filename}:/content?format={format}
 ```
 
 ### Optional request headers
@@ -49,7 +49,7 @@ The following values are valid for the **convert** parameter:
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
 ```http
-GET /drive/items/{item-id}/content?format={format}
+GET /me/drive/items/{item-id}/content?format={format}
 ```
 
 ## Response

@@ -44,6 +44,7 @@ Inherits from [managedAppRegistration](../resources/intune_mam_managedappregistr
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.managedAppRegistration",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosManagedAppRegistration"
 }

@@ -9,12 +9,13 @@ Represents a point of a series in a chart.
 |:---------------|:--------|:----------|
 |[Get ChartPoint](../api/chartpoint_get.md) | [ChartPoint](chartpoint.md) |Read properties and relationships of chartPoint object.|
 |[List](../api/chartpoint_list.md) | [ChartPoint](chartpoint.md) collection |Get chartPoint object collection. |
-|[Itemat](../api/chartpointscollection_itemat.md)|[ChartPoint](chartpoint.md)|Retrieve a point based on its position within the series.|
+|[ItemAt](../api/chartpointscollection_itemat.md)|[ChartPoint](chartpoint.md)|Retrieve a point based on its position within the series.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |value|object|Returns the value of a chart point. Read-only.|
+|id|string|unique identifier|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -27,6 +28,7 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -35,6 +37,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "id": "string",
   "value": "string"
 }
 

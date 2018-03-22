@@ -478,8 +478,8 @@ With the _Mail.Send_ or _Mail.Send.Shared_ permission, an app can send mail and 
 
 #### Delegated
 
-* _Mail.Read_: List messages in the user's inbox, sorted by `receivedDateTime` (`GET /me/mailfolders/inbox/messages?$orderby=receivedDateTime DESC`).
-* _Mail.Read.Shared_: Find all messages with attachments in a user's inbox that has shared their inbox with the signed-in user (`GET /users{id | userPrincipalName}/mailfolders/inbox/messages?$filter=hasAttachments eq true`).
+* _Mail.Read_: List messages in the user's inbox, sorted by `receivedDateTime` (`GET /me/mailFolders/inbox/messages?$orderby=receivedDateTime DESC`).
+* _Mail.Read.Shared_: Find all messages with attachments in a user's inbox that has shared their inbox with the signed-in user (`GET /users{id | userPrincipalName}/mailFolders/inbox/messages?$filter=hasAttachments eq true`).
 * _Mail.ReadWrite_: Mark a message read (`PATCH /me/messages/{id}`).
 * _Mail.Send_: Send a message (`POST /me/sendmail`).
 * _MailboxSettings.ReadWrite_: Update the user's automatic reply (`PATCH /me/mailboxSettings`).
@@ -487,7 +487,7 @@ With the _Mail.Send_ or _Mail.Send.Shared_ permission, an app can send mail and 
 #### Application
 
 * _Mail.Read_: Find messages from bob@contoso.com (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`).
-* _Mail.ReadWrite_: Create a new folder in the Inbox named `Expense Reports` (`POST /users/{id | userPrincipalName}/mailfolders`).
+* _Mail.ReadWrite_: Create a new folder in the Inbox named `Expense Reports` (`POST /users/{id | userPrincipalName}/mailFolders`).
 * _Mail.Send_: Send a message (`POST /users/{id | userPrincipalName}/sendmail`).
 * _MailboxSettings.Read_: Get the default timezone for the user's mailbox (`GET /users/{id | userPrincipalName}/mailboxSettings/timeZone`)
 

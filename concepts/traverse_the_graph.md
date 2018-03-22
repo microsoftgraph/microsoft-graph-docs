@@ -84,7 +84,7 @@ Microsoft Graph also lets you view collections by navigating the relationships o
 you can query for the collection of [mailFolder](..\api-reference\v1.0\resources\mailfolder.md) resources in the user's mailbox:
 
 ```no-highlight 
-GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailFolders HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
