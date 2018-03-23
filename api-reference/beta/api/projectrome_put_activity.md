@@ -11,8 +11,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | UserTimelineActivity.Write.CreatedByApp    |
+|Delegated (work or school account) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp    |
 |Application | Not supported. |
 
 ## HTTP request
@@ -112,6 +112,9 @@ Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
     "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
     "id": "14332800362997268276",
     "appActivityId": "/article?12345",
+    "status":"updated",
+    "expirationDateTime": "2017-02-26T20:20:48.114Z",
+    "id": "14332800362997268276",
     "visualElements": {
         "displayText": "Contoso How-To: How to Tie a Reef Knot",
         "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
@@ -142,7 +145,6 @@ Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
         "author": "Jennifer Booth",
         "name": "How to Tie a Reef Knot"
     },
-    "expirationDateTime": "2016-06-09T20:54:43.969Z"
 }
 ```
 
