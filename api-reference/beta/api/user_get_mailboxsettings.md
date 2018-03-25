@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | MailboxSettings.Read, MailboxSettings.ReadWrite    |
 |Delegated (personal Microsoft account) | MailboxSettings.Read, MailboxSettings.ReadWrite    |
-|Application | MailboxSettings.Read |
+|Application | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## HTTP request
 To get all the mailbox settings for a user:
