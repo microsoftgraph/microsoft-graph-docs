@@ -43,7 +43,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -78,7 +79,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Maynardd@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -113,7 +115,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Darrelh@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -166,7 +169,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Felixc@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -201,7 +205,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Lenorar@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -236,7 +241,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Manuelc@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -289,7 +295,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Adrianar@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -324,7 +331,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Alycec@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -359,7 +367,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Alyssac@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -473,7 +482,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ]
         },
@@ -483,7 +493,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Maynardd@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ]
         },
@@ -493,7 +504,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Darrelh@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ]
         }
@@ -536,7 +548,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -571,7 +584,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Maynardd@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -606,7 +620,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Darrelh@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -648,7 +663,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8,
+                    "selectionLikelihood": "notSpecified"
                 }
             ]
         }
@@ -693,7 +709,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "jant@contoso.onmicrosoft.com",
-                    "relevanceScore": -12.297347783416837
+                    "relevanceScore": -12.297347783416837,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -728,7 +745,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "jacobc@tailspintoys.com",
-                    "relevanceScore": -12.298154282019846
+                    "relevanceScore": -12.298154282019846,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [],
@@ -758,7 +776,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "jewellm@contoso.onmicrosoft.com",
-                    "relevanceScore": -12.531408487977451
+                    "relevanceScore": -12.531408487977451,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [],
@@ -843,7 +862,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Cliftonc@contoso.onmicrosoft.com",
-                    "relevanceScore": 20
+                    "relevanceScore": 20,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -878,7 +898,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Shereem@contoso.onmicrosoft.com",
-                    "relevanceScore": 10
+                    "relevanceScore": 10,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [
@@ -913,7 +934,8 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Vincentm@contoso.onmicrosoft.com",
-                    "relevanceScore": 10
+                    "relevanceScore": 10,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [

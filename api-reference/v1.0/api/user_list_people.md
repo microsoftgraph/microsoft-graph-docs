@@ -93,7 +93,8 @@ Content-length: 1370
             "scoredEmailAddresses": [
                 {
                     "address": "Marketing@contoso.com",
-                    "relevanceScore": 30.0
+                    "relevanceScore": 30.0,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [],
@@ -123,7 +124,8 @@ Content-length: 1370
             "scoredEmailAddresses": [
                 {
                     "address": "IsaiahL@contoso.com",
-                    "relevanceScore": 20.0
+                    "relevanceScore": 20.0,
+                    "selectionLikelihood": "notSpecified"
                 }
             ],
             "phones": [

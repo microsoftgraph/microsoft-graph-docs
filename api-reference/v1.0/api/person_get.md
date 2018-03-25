@@ -92,7 +92,8 @@ Content-length: 629
   "scoredEmailAddresses": [
       {
           "address": "IsaiahL@contoso.com",
-          "relevanceScore": 20.0
+          "relevanceScore": 20.0,
+          "selectionLikelihood": "notSpecified"
       }
   ],
   "phones": [
