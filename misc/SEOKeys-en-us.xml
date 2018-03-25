@@ -136,17 +136,27 @@
       <Item text="Get member groups" url="/en-us/api-reference/v1.0/api/group_getmembergroups" SEOKeyword="group: getMemberGroups, Microsoft Graph API, group API" SEODescription="" />
       <Item text="Get member objects" url="/en-us/api-reference/v1.0/api/group_getmemberobjects" SEOKeyword="group: getMemberObjects, Microsoft Graph API, group API" SEODescription="" />
       <Item text="List groups" url="/en-us/api-reference/v1.0/api/group_list" SEOKeyword="List groups, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of group objects." />
-      <Item text="List member of" url="/en-us/api-reference/v1.0/api/group_list_memberof" SEOKeyword="List memberOf, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
+      <Item text="List lifecycle policies" url="/en-us/api-reference/v1.0/api/group_list_grouplifecyclepolicies" />
+	  <Item text="List member of" url="/en-us/api-reference/v1.0/api/group_list_memberof" SEOKeyword="List memberOf, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
       <Item text="List members" url="/en-us/api-reference/v1.0/api/group_list_members" SEOKeyword="List members, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." /><Item text="List owners" url="/en-us/api-reference/v1.0/api/group_list_owners" SEOKeyword="List owners, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
       <Item text="Update group" url="/en-us/api-reference/v1.0/api/group_update" SEOKeyword="Update group, Microsoft Graph API, Groups API" SEODescription="Update the properties of group object." ></Item>
       <Item text="Remove favorite" url="/en-us/api-reference/v1.0/api/group_removefavorite" />
       <Item text="Remove member" url="/en-us/api-reference/v1.0/api/group_delete_members" SEOKeyword="Remove member, Microsoft Graph API, Groups API" SEODescription="Use this API to remove member." />
-      
       <Item text="Remove owner" url="/en-us/api-reference/v1.0/api/group_delete_owners" />
-      <Item text="Reset unseen count" url="/en-us/api-reference/v1.0/api/group_resetunseencount" SEOKeyword="group: resetUnseenCount, Microsoft Graph API, group API" SEODescription="" />
+      <Item text="Renew group" url="/en-us/api-reference/v1.0/api/group_renew" />
+	  <Item text="Reset unseen count" url="/en-us/api-reference/v1.0/api/group_resetunseencount" SEOKeyword="group: resetUnseenCount, Microsoft Graph API, group API" SEODescription="" />
       <Item text="Subscribe by mail" url="/en-us/api-reference/v1.0/api/group_subscribebymail" SEOKeyword="group: subscribeByMail, Microsoft Graph API, group API" SEODescription="" />
       <Item text="Unsubscribe by mail" url="/en-us/api-reference/v1.0/api/group_unsubscribebymail" SEOKeyword="group: unsubscribeByMail, Microsoft Graph API, group API" SEODescription="" />
-    </Item>
+      <Item text="Lifecycle policy" url="/en-us/api-reference/v1.0/resources/grouplifecyclepolicy" >
+		<Item text="List policies" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_list" />
+		<Item text="Create policy" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_post_grouplifecyclepolicies" />
+		<Item text="Get policy" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_get" />
+		<Item text="Update policy" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_update" />
+		<Item text="Delete policy" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_delete" />
+		<Item text="Add group" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_addgroup" />
+		<Item text="Remove group" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_removegroup" />
+	  </Item>
+	</Item>
     <Item text="Attachment" url="/en-us/api-reference/v1.0/resources/attachment">
 		<Item text="File attachment resource" url="/en-us/api-reference/v1.0/resources/fileattachment" />
 		<Item text="Item attachment resource" url="/en-us/api-reference/v1.0/resources/itemattachment" />
@@ -2562,7 +2572,7 @@
 			<Item text="Start sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_start" />
 			<Item text="Pause sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_pause" />
 			<Item text="Resume sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_resume" />
-			<Item text="Reset sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_resume" />
+			<Item text="Reset sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_reset" />
 			<Item text="Get upload URL" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_uploadurl" />
 		</Item>
 		<Item text="Synchronization profile status" url="/en-us/api-reference/beta/resources/educationsynchronizationprofilestatus" >

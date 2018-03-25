@@ -2,17 +2,27 @@
 
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (profilePhoto properties).
 
-A GET operation looks for the specified photo in the user's mailbox on Exchange Online.
-
 > **Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.
 
+The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', 
+'360x360','432x432', '504x504', and '648x648'. Photos can be any dimension if they are stored in Azure Active Directory.
+
+You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.
+If the size you request is not available, you can still get a smaller size that the user has uploaded and made available.
+For example, if the user uploads a photo that is 504x504 pixels, then all but the 648x648 size of photo will be available for download.
+If the specified size is not available in the user's mailbox or in Azure Active Directory, the size of '1x1' is returned with the rest of 
+metadata.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*	Profile photo of any user in the tenant including the signed-in user - User.ReadBasic.All, User.Read.All, User.ReadWrite.All
-*	Profile photo of specifically the signed-in user - User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All
-* Profile photo of a **group** - Group.Read.All, Group.ReadWrite.All
-* Photo of a **contact** - Contacts.Read, Contacts.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | For **user** resource:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
+|Delegated (personal Microsoft account) | Not supported |
+|Application                        | For **user** resource:<br/>User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
+
 
 ## HTTP request to get the photo
 <!-- { "blockType": "ignored" } -->
@@ -36,6 +46,14 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
+
+## Parameters
+
+|**Parameter**|**Type**|**Description**|
+|:-----|:-----|:-----|
+|_URL parameters_|
+|size  |String  | A photo size. The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', 
+'360x360','432x432', '504x504', and '648x648'. Photos can be any dimension if they are stored in Azure Active Directory. |
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -65,6 +83,20 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 Contains the binary data of the requested photo. The HTTP response code is 200.
 
 ##### Request 2
+This request gets the 48x48 photo for the signed-in user.
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
+Content-Type: image/jpg
+```
+
+##### Response 2
+Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.
+
+##### Request 3
 This request gets the metadata of the user photo of the signed-in user.
 <!-- {
   "blockType": "ignored"
@@ -73,7 +105,7 @@ This request gets the metadata of the user photo of the signed-in user.
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### Response 2
+##### Response 3
 
 The following response data shows the photo metadata. Note: The response object shown here may be truncated for brevity.
 <!-- {

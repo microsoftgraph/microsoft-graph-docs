@@ -5,6 +5,7 @@
 | Property                | Type    |
 | :---------------------- | :------ |
 | reportRefreshDate       | Date    |
+| siteId                  | Guid  |
 | siteUrl                 | String  |
 | ownerDisplayName        | String  |
 | isDeleted               | Boolean |
@@ -30,6 +31,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "reportRefreshDate": "Date", 
+  "siteId": "Guid", 
   "siteUrl": "String", 
   "ownerDisplayName": "String", 
   "isDeleted": true, 

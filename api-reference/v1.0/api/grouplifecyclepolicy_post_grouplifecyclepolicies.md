@@ -1,19 +1,16 @@
 # Create groupLifecyclePolicy
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported |
-|Application |  Directory.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +42,7 @@ If successful, this method returns `201 Created` response code and [groupLifecyc
   "name": "create_grouplifecyclepolicy_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groupLifecyclePolicies
+POST https://graph.microsoft.com/v1.0/groupLifecyclePolicies
 Content-type: application/json
 Content-length: 125
 
