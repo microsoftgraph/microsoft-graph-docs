@@ -2572,7 +2572,7 @@
 			<Item text="Start sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_start" />
 			<Item text="Pause sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_pause" />
 			<Item text="Resume sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_resume" />
-			<Item text="Reset sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_resume" />
+			<Item text="Reset sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_reset" />
 			<Item text="Get upload URL" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_uploadurl" />
 		</Item>
 		<Item text="Synchronization profile status" url="/en-us/api-reference/beta/resources/educationsynchronizationprofilestatus" >
