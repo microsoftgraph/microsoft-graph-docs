@@ -8,7 +8,9 @@ Here is a JSON representation of the resource
 
 <!-- {
   "abstract": "true",
+  "baseType": "microsoft.graph.entity",
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
 
   ],

@@ -14,7 +14,7 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|line|[ChartLineFormat](chartlineformat.md)|Represents chart line formatting. Read-only.|
+|line|[WorkbookChartLineFormat](chartlineformat.md)|Represents chart line formatting. Read-only.|
 
 
 ## JSON representation
@@ -27,13 +27,13 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartGridlinesFormat"
+  "@odata.type": "microsoft.graph.workbookChartGridlinesFormat"
 }-->
 
 ```json
 {
   "id": "string",
-  "line": {"@odata.type": "microsoft.graph.chartLineFormat"}
+  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
 }
 ```
 

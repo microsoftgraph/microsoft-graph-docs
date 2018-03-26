@@ -14,7 +14,7 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|font|[ChartFont](chartfont.md)|Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.|
+|font|[WorkbookChartFont](chartfont.md)|Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.|
 
 ## JSON representation
 
@@ -26,13 +26,13 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartAxisTitleFormat"
+  "@odata.type": "microsoft.graph.workbookChartAxisTitleFormat"
 }-->
 
 ```json
 {
   "id": "string",
-  "font": {"@odata.type": "microsoft.graph.chartFont"}
+  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
 }
 ```
 

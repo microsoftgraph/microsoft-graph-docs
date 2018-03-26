@@ -7,8 +7,8 @@ Represents a single axis in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxis](../api/chartaxis_get.md) | [ChartAxis](chartaxis.md) |Read properties and relationships of chartAxis object.|
-|[Update](../api/chartaxis_update.md) | [ChartAxis](chartaxis.md)	|Update ChartAxis object. |
+|[Get ChartAxis](../api/chartaxis_get.md) | [WorkbookChartAxis](chartaxis.md) |Read properties and relationships of chartAxis object.|
+|[Update](../api/chartaxis_update.md) | [WorkbookChartAxis](chartaxis.md)	|Update ChartAxis object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -23,10 +23,10 @@ Represents a single axis in a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[ChartAxisFormat](chartaxisformat.md)|Represents the formatting of a chart object, which includes line and font formatting. Read-only.|
-|majorGridlines|[ChartGridlines](chartgridlines.md)|Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.|
-|minorGridlines|[ChartGridlines](chartgridlines.md)|Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.|
-|title|[ChartAxisTitle](chartaxistitle.md)|Represents the axis title. Read-only.|
+|format|[WorkbookChartAxisFormat](chartaxisformat.md)|Represents the formatting of a chart object, which includes line and font formatting. Read-only.|
+|majorGridlines|[WorkbookChartGridlines](chartgridlines.md)|Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.|
+|minorGridlines|[WorkbookChartGridlines](chartgridlines.md)|Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.|
+|title|[WorkbookChartAxisTitle](chartaxistitle.md)|Represents the axis title. Read-only.|
 
 ## JSON representation
 
@@ -38,7 +38,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartAxis"
+  "@odata.type": "microsoft.graph.workbookChartAxis"
 }-->
 
 ```json
@@ -48,10 +48,10 @@ Here is a JSON representation of the resource.
   "maximum": "string",
   "minimum": "string",
   "minorUnit": "string",
-  "format": {"@odata.type": "microsoft.graph.chartAxisFormat"},
-  "majorGridlines": {"@odata.type": "microsoft.graph.chartGridlines"},
-  "minorGridlines": {"@odata.type": "microsoft.graph.chartGridlines"},
-  "title": {"@odata.type": "microsoft.graph.chartAxisTitle"}
+  "format": {"@odata.type": "microsoft.graph.workbookChartAxisFormat"},
+  "majorGridlines": {"@odata.type": "microsoft.graph.workbookChartGridlines"},
+  "minorGridlines": {"@odata.type": "microsoft.graph.workbookChartGridlines"},
+  "title": {"@odata.type": "microsoft.graph.workbookChartAxisTitle"}
 }
 ```
 

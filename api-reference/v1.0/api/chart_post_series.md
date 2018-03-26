@@ -23,11 +23,11 @@ POST /workbook/worksheets/{id|name}/charts/<name>/series
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, supply a JSON representation of [ChartSeries](../resources/chartseries.md) object.
+In the request body, supply a JSON representation of [WorkbookChartSeries](../resources/chartseries.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [ChartSeries](../resources/chartseries.md) object in the response body.
+If successful, this method returns `201 Created` response code and [WorkbookChartSeries](../resources/chartseries.md) object in the response body.
 
 ## Example
 ##### Request
@@ -45,13 +45,13 @@ Content-length: 26
   "name": "name-value"
 }
 ```
-In the request body, supply a JSON representation of [ChartSeries](../resources/chartseries.md) object.
+In the request body, supply a JSON representation of [WorkbookChartSeries](../resources/chartseries.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 } -->
 ```http
 HTTP/1.1 201 Created

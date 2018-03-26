@@ -8,6 +8,7 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntityHierarchyModel",
   "optionalProperties": [
     "sectionGroups",
     "sections"
@@ -54,7 +55,7 @@ Here is a JSON representation of the resource
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |sectionGroups|[SectionGroup](sectiongroup.md) collection|The section groups in the notebook. Read-only. Nullable.|
-|sections|[Section](section.md) collection|The sections in the notebook. Read-only. Nullable.|
+|sections|[OnenoteSection](section.md) collection|The sections in the notebook. Read-only. Nullable.|
 
 ## Methods
 

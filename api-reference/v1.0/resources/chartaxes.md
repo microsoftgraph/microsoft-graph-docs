@@ -15,9 +15,9 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|categoryAxis|[ChartAxis](chartaxis.md)|Represents the category axis in a chart. Read-only.|
-|seriesAxis|[ChartAxis](chartaxis.md)|Represents the series axis of a 3-dimensional chart. Read-only.|
-|valueAxis|[ChartAxis](chartaxis.md)|Represents the value axis in an axis. Read-only.|
+|categoryAxis|[WorkbookChartAxis](chartaxis.md)|Represents the category axis in a chart. Read-only.|
+|seriesAxis|[WorkbookChartAxis](chartaxis.md)|Represents the series axis of a 3-dimensional chart. Read-only.|
+|valueAxis|[WorkbookChartAxis](chartaxis.md)|Represents the value axis in an axis. Read-only.|
 
 ## JSON representation
 
@@ -29,15 +29,15 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartAxes"
+  "@odata.type": "microsoft.graph.workbookChartAxes"
 }-->
 
 ```json
 {
   "id": "string",
-  "categoryAxis": {"@odata.type": "microsoft.graph.chartAxis"},
-  "seriesAxis": {"@odata.type": "microsoft.graph.chartAxis"},
-  "valueAxis": {"@odata.type": "microsoft.graph.chartAxis"}
+  "categoryAxis": {"@odata.type": "microsoft.graph.workbookChartAxis"},
+  "seriesAxis": {"@odata.type": "microsoft.graph.workbookChartAxis"},
+  "valueAxis": {"@odata.type": "microsoft.graph.workbookChartAxis"}
 }
 
 ```

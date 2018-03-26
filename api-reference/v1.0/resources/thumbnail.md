@@ -14,6 +14,7 @@ Here is a JSON representation of the **thumbnail** resource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": ["content", "height", "width", "sourceItemId"],
   "@odata.type": "microsoft.graph.thumbnail"
 }-->

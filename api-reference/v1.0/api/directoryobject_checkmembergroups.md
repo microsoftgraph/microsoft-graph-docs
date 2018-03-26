@@ -31,7 +31,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|groupIds|String|A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.|
+|groupIds|String collection|A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.|
 
 ## Response
 
@@ -46,7 +46,7 @@ If successful, this method returns `200 OK` response code and String collection 
   "name": "directoryobject_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/checkMemberGroups
+POST https://graph.microsoft.com/v1.0/directoryObjects/{id}/checkMemberGroups
 Content-type: application/json
 
 {

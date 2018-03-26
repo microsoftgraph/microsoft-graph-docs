@@ -16,6 +16,7 @@ The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.baseItem",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sharedDriveItem"
 }-->

@@ -14,8 +14,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[ChartFill](chartfill.md)|Represents the fill format of a chart series, which includes background formating information. Read-only.|
-|line|[ChartLineFormat](chartlineformat.md)|Represents line formatting. Read-only.|
+|fill|[WorkbookChartFill](chartfill.md)|Represents the fill format of a chart series, which includes background formating information. Read-only.|
+|line|[WorkbookChartLineFormat](chartlineformat.md)|Represents line formatting. Read-only.|
 
 
 ## JSON representation
@@ -28,14 +28,14 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartSeriesFormat"
+  "@odata.type": "microsoft.graph.workbookChartSeriesFormat"
 }-->
 
 ```json
 {
   "id": "string",
-  "fill": {"@odata.type": "microsoft.graph.chartFill"},
-  "line": {"@odata.type": "microsoft.graph.chartLineFormat"}
+  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
+  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
 }
 ```
 

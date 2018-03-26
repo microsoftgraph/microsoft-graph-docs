@@ -14,8 +14,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[ChartFill](chartfill.md)|Represents the fill format of the current chart data label. Read-only.|
-|font|[ChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.|
+|fill|[WorkbookChartFill](chartfill.md)|Represents the fill format of the current chart data label. Read-only.|
+|font|[WorkbookChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.|
 
 
 ## JSON representation
@@ -28,14 +28,14 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartDataLabelFormat"
+  "@odata.type": "microsoft.graph.workbookChartDataLabelFormat"
 }-->
 
 ```json
 {
   "id": "string",
-  "fill": {"@odata.type": "microsoft.graph.chartFill"},
-  "font": {"@odata.type": "microsoft.graph.chartFont"}
+  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
+  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
 }
 ```
 

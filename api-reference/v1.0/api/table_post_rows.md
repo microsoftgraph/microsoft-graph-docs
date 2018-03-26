@@ -24,11 +24,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, supply a JSON representation of [TableRow](../resources/tablerow.md) object.
+In the request body, supply a JSON representation of [WorkbookTableRow](../resources/tablerow.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [TableRow](../resources/tablerow.md) object in the response body.
+If successful, this method returns `201 Created` response code and [WorkbookTableRow](../resources/tablerow.md) object in the response body.
 
 ## Example
 ##### Request
@@ -47,13 +47,13 @@ Content-length: 45
   "values": "values-value"
 }
 ```
-In the request body, supply a JSON representation of [TableRow](../resources/tablerow.md) object.
+In the request body, supply a JSON representation of [WorkbookTableRow](../resources/tablerow.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
 HTTP/1.1 201 Created

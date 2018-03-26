@@ -32,6 +32,7 @@ RangeView represents a set of visible cells of the parent range.
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.workbookRangeView"
 }-->

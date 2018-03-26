@@ -7,12 +7,12 @@ Represents an Excel table.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Table](../api/table_get.md) | [Table](table.md) |Read properties and relationships of table object.|
-|[Create TableColumn](../api/table_post_columns.md) |[TableColumn](tablecolumn.md)| Create a new TableColumn by posting to the columns collection.|
-|[List columns](../api/table_list_columns.md) |[TableColumn](tablecolumn.md) collection| Get a TableColumn object collection.|
-|[Create TableRow](../api/table_post_rows.md) |[TableRow](tablerow.md)| Create a new TableRow by posting to the rows collection.|
-|[List rows](../api/table_list_rows.md) |[TableRow](tablerow.md) collection| Get a TableRow object collection.|
-|[Update](../api/table_update.md) | [Table](table.md)	|Update Table object. |
+|[Get Table](../api/table_get.md) | [WorkbookTable](table.md) |Read properties and relationships of table object.|
+|[Create TableColumn](../api/table_post_columns.md) |[WorkbookTableColumn](tablecolumn.md)| Create a new TableColumn by posting to the columns collection.|
+|[List columns](../api/table_list_columns.md) |[WorkbookTableColumn](tablecolumn.md) collection| Get a TableColumn object collection.|
+|[Create TableRow](../api/table_post_rows.md) |[WorkbookTableRow](tablerow.md)| Create a new TableRow by posting to the rows collection.|
+|[List rows](../api/table_list_rows.md) |[WorkbookTableRow](tablerow.md) collection| Get a TableRow object collection.|
+|[Update](../api/table_update.md) | [WorkbookTable](table.md)	|Update Table object. |
 |[Databodyrange](../api/table_databodyrange.md)|[Range](range.md)|Gets the range object associated with the data body of the table.|
 |[Headerrowrange](../api/table_headerrowrange.md)|[Range](range.md)|Gets the range object associated with header row of the table.|
 |[Range](../api/table_range.md)|[Range](range.md)|Gets the range object associated with the entire table.|
@@ -21,8 +21,8 @@ Represents an Excel table.
 |[Converttorange](../api/table_converttorange.md)|[Range](range.md)|Converts the table into a normal range of cells. All data is preserved.|
 |[Delete](../api/table_delete.md)|None|Deletes the table.|
 |[Reapplyfilters](../api/table_reapplyfilters.md)|None|Reapplies all the filters currently on the table.|
-|[List](../api/table_list.md) | [Table](table.md) collection |Get table object collection. |
-|[Add](../api/tablecollection_add.md)|[Table](table.md)|Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.|
+|[List](../api/table_list.md) | [WorkbookTable](table.md) collection |Get table object collection. |
+|[Add](../api/tablecollection_add.md)|[WorkbookTable](table.md)|Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -41,10 +41,10 @@ Represents an Excel table.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|columns|[TableColumn](tablecolumn.md) collection|Represents a collection of all the columns in the table. Read-only.|
-|rows|[TableRow](tablerow.md) collection|Represents a collection of all the rows in the table. Read-only.|
-|sort|[TableSort](tablesort.md)|Represents the sorting for the table. Read-only.|
-|worksheet|[Worksheet](worksheet.md)|The worksheet containing the current table. Read-only.|
+|columns|[WorkbookTableColumn](tablecolumn.md) collection|Represents a collection of all the columns in the table. Read-only.|
+|rows|[WorkbookTableRow](tablerow.md) collection|Represents a collection of all the rows in the table. Read-only.|
+|sort|[WorkbookTableSort](tablesort.md)|Represents the sorting for the table. Read-only.|
+|worksheet|[WorkbookWorksheet](worksheet.md)|The worksheet containing the current table. Read-only.|
 
 ## JSON representation
 
@@ -56,7 +56,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 }-->
 
 ```json

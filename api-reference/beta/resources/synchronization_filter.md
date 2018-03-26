@@ -26,7 +26,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.filter"
+  "@odata.type": "microsoft.graph.workbookFilter"
 }-->
 
 ```json

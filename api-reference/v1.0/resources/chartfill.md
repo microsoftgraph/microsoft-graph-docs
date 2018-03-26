@@ -27,7 +27,7 @@ None
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartFill"
+  "@odata.type": "microsoft.graph.workbookChartFill"
 }-->
 
 ```json

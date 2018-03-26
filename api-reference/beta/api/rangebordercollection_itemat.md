@@ -15,9 +15,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/<name>/range/format/borders/ItemAt
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/ItemAt
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
+POST /workbook/names/<name>/range/format/borders/itemAt
+POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/itemAt
+POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/itemAt
 
 ```
 ## Request headers
@@ -35,7 +35,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.
+If successful, this method returns `200 OK` response code and [WorkbookRangeBorder](../resources/rangeborder.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -43,10 +43,11 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "idempotent": true,
   "name": "rangebordercollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/<name>/range/format/borders/ItemAt
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/<name>/range/format/borders/itemAt
 Content-type: application/json
 Content-length: 20
 
@@ -61,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeBorder"
+  "@odata.type": "microsoft.graph.workbookRangeBorder"
 } -->
 ```http
 HTTP/1.1 200 OK

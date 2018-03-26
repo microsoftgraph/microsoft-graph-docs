@@ -17,9 +17,9 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|names|[NamedItem](nameditem.md) collection|Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|
-|tables|[Table](table.md) collection|Represents a collection of tables associated with the workbook. Read-only.|
-|worksheets|[Worksheet](worksheet.md) collection|Represents a collection of worksheets associated with the workbook. Read-only.|
+|names|[WorkbookNamedItem](nameditem.md) collection|Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|
+|tables|[WorkbookTable](table.md) collection|Represents a collection of tables associated with the workbook. Read-only.|
+|worksheets|[WorkbookWorksheet](worksheet.md) collection|Represents a collection of worksheets associated with the workbook. Read-only.|
 
 ## Functions
 

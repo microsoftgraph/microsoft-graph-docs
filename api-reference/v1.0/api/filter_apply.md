@@ -27,7 +27,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|criteria|FilterCriteria|The criteria to apply.|
+|criteria|WorkbookFilterCriteria|The criteria to apply.|
 
 ## Response
 

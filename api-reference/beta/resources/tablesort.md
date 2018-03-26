@@ -9,7 +9,7 @@ Manages sorting operations on Table objects.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TableSort](../api/tablesort_get.md) | [TableSort](tablesort.md) |Read properties and relationships of tableSort object.|
+|[Get TableSort](../api/tablesort_get.md) | [WorkbookTableSort](tablesort.md) |Read properties and relationships of tableSort object.|
 |[Apply](../api/tablesort_apply.md)|None|Perform a sort operation.|
 |[Clear](../api/tablesort_clear.md)|None|Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.|
 |[Reapply](../api/tablesort_reapply.md)|None|Reapplies the current sorting parameters to the table.|
@@ -23,7 +23,7 @@ Manages sorting operations on Table objects.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fields|[SortField](sortfield.md)|Represents the current conditions used to last sort the table. Read-only.|
+|fields|[WorkbookSortField](sortfield.md)|Represents the current conditions used to last sort the table. Read-only.|
 
 ## JSON representation
 
@@ -34,7 +34,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.tableSort"
+  "@odata.type": "microsoft.graph.workbookTableSort"
 }-->
 
 ```json

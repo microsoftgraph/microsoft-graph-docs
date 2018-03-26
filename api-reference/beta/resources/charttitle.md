@@ -9,8 +9,8 @@ Represents a chart title object of a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartTitle](../api/charttitle_get.md) | [ChartTitle](charttitle.md) |Read properties and relationships of chartTitle object.|
-|[Update](../api/charttitle_update.md) | [ChartTitle](charttitle.md)	|Update ChartTitle object. |
+|[Get ChartTitle](../api/charttitle_get.md) | [WorkbookChartTitle](charttitle.md) |Read properties and relationships of chartTitle object.|
+|[Update](../api/charttitle_update.md) | [WorkbookChartTitle](charttitle.md)	|Update ChartTitle object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -22,7 +22,7 @@ Represents a chart title object of a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[ChartTitleFormat](charttitleformat.md)|Represents the formatting of a chart title, which includes fill and font formatting. Read-only.|
+|format|[WorkbookChartTitleFormat](charttitleformat.md)|Represents the formatting of a chart title, which includes fill and font formatting. Read-only.|
 
 ## JSON representation
 
@@ -33,7 +33,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 }-->
 
 ```json

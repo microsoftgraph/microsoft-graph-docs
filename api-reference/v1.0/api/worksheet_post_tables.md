@@ -33,7 +33,7 @@ In the request body, supply following parameters.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [Table](../resources/table.md) object in the response body.
+If successful, this method returns `201 Created` response code and [WorkbookTable](../resources/table.md) object in the response body.
 
 ## Example
 ##### Request
@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 201 Created

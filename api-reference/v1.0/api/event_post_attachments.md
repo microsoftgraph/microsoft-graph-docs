@@ -59,7 +59,7 @@ Here is an example of the request.
   "name": "create_file_attachment_from_event"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments 
+POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
 Content-length: 151
 

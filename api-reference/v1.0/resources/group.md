@@ -132,6 +132,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.directoryObject",
   "optionalProperties": [
     "acceptedSenders",
     "appRoleAssignments",

@@ -16,7 +16,7 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|criteria|[FilterCriteria](filtercriteria.md)|The currently applied filter on the given column. Read-only.|
+|criteria|[WorkbookFilterCriteria](filtercriteria.md)|The currently applied filter on the given column. Read-only.|
 
 ## JSON representation
 
@@ -28,7 +28,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.filter"
+  "@odata.type": "microsoft.graph.workbookFilter"
 }-->
 
 ```json

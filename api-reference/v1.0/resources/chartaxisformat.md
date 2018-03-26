@@ -14,8 +14,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|font|[ChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.|
-|line|[ChartLineFormat](chartlineformat.md)|Represents chart line formatting. Read-only.|
+|font|[WorkbookChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.|
+|line|[WorkbookChartLineFormat](chartlineformat.md)|Represents chart line formatting. Read-only.|
 
 
 ## JSON representation
@@ -28,14 +28,14 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartAxisFormat"
+  "@odata.type": "microsoft.graph.workbookChartAxisFormat"
 }-->
 
 ```json
 {
   "id": "string",
-  "font": {"@odata.type": "microsoft.graph.chartFont"},
-  "line": {"@odata.type": "microsoft.graph.chartLineFormat"}
+  "font": {"@odata.type": "microsoft.graph.workbookChartFont"},
+  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
 }
 ```
 
