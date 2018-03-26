@@ -1,4 +1,4 @@
-# Reset sync on an educationSynchronizationProfile
+# Reset sync on educationSynchronizationProfile
 
 Reset the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
