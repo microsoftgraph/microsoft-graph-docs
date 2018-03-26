@@ -19,7 +19,7 @@ DELETE /synchronizationProfiles/{id}
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required.  |
-|Delegated (personal Microsoft account|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
 ## Request body
