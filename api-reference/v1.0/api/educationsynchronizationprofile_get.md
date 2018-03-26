@@ -1,6 +1,6 @@
-# Get an educationSynchronizationProfile
+# Get educationSynchronizationProfile
 
-Retrieve a school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.
+Retrieve school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -8,7 +8,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions (from least to most privileged) |
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.Read, EduAdministration.ReadWrite |
-|Delegated (personal Microsoft account|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
 ## HTTP request
@@ -35,7 +35,7 @@ The following is an example of the request.
   "name": "get_educationSynchronizationProfile"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
+GET https://graph.microsoft.com/v1.0/education/synchronizationProfiles/{id}
 ```
 
 ##### Response
@@ -54,7 +54,7 @@ Content-type: application/json
 Content-length: 2487
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/synchronizationProfiles/$entity",
     "displayName": "Test Profile",
     "state": "provisioned",
     "id": "86904b1e-c7d0-4ead-b13a-98f11fc400ee",
