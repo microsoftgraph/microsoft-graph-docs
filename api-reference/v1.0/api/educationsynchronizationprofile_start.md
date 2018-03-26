@@ -1,4 +1,4 @@
-# Start sync after uploading files to an educationSynchronizationProfile
+# Start sync after uploading files to educationSynchronizationProfile
 
 Verify the files uploaded to a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. If the verification is successful, synchronization will start on the profile. Otherwise, the response will contain errors and warnings. If the response contains errors, the synchronization will not start. If the response contains only warnings, synchronization will start.
 
@@ -10,7 +10,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions |
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.ReadWrite |
-|Delegated (personal Microsoft account|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
 ## HTTP request
@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "post_educationSynchronizationProfile_start"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/start
+POST https://graph.microsoft.com/v1.0/education/synchronizationProfiles/{id}/start
 ```
 
 ##### Response
@@ -57,7 +57,7 @@ Content-type: application/json
 Content-length: 2105
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/Collection(microsoft.graph.verificationMessage)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/Collection(microsoft.graph.verificationMessage)",
     "value": [
         {
             "type": "Error",
