@@ -1,4 +1,4 @@
-# educationSynchronizationProfile: uploadUrl
+# get educationSynchronizationProfile: uploadUrl
 
 Retrieve a shared access signature (SAS) for uploading source files to Azure blob storage for a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. The SAS token has a validity of one hour.
 
@@ -10,7 +10,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions |
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.ReadWrite |
-|Delegated (personal Microsoft account|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
 ## HTTP request
@@ -37,7 +37,7 @@ The following is an example of the request.
   "name": "get_educationSynchronizationProfile_uploadurl"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uploadUrl
+GET https://graph.microsoft.com/v1.0/education/synchronizationProfiles/{id}/uploadUrl
 ```
 
 ##### Response
@@ -55,7 +55,7 @@ Content-type: application/json
 Content-length: 314
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#String",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#String",
     "value": "https://sdsstorage.blob.core.windows.net/86904b1e-c7d0-4ead-b13a-98f11fc400ee?sv=2015-07-08&sr=c&si=SharedAccessPolicy_20170704044441&sig=CH65vxxqXETCkQNH0Lfsu31cUo0s0XcEEo0OE2YiL6Q%3D&se=2017-07-04T08%3A43%3A01Z&sp=w"
 }
 ```
