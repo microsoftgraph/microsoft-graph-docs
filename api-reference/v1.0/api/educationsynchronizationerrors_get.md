@@ -37,9 +37,9 @@ The following is an example of the request.
   "name": "get_educationSynchronizationProfile_error"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/error
+GET https://graph.microsoft.com/v1.0/education/synchronizationProfiles/{id}/error
 ```
-
+v
 ##### Response
 The following is an example of the response. 
 
@@ -56,32 +56,32 @@ Content-type: application/json
 Content-length: 1568
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles('{id}')/errors",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/synchronizationProfiles('{id}')/errors",
     "@odata.count": 14,
     "value": [
         {
             "entryType": "Student",
             "errorCode": "UnsynchronizableChange",
             "errorMessage": "Student cannot be updated as no matching entry in Active Directory was found for Student.  Verify the identity matching criteria for the profile.",
-            "joiningValue": "richard.2wilson@testschool.edu",
+            "joiningValue": "matija.goltez@testschool.edu",
             "recordedDateTime": "2017-07-05T00:52:45Z",
-            "reportableIdentifier": "richard.2wilson"
+            "reportableIdentifier": "matija.goltez"
         },
         {
             "entryType": "Teacher",
             "errorCode": "UnsynchronizableChange",
             "errorMessage": "Teacher cannot be updated as no matching entry in Active Directory was found for Teacher.  Verify the identity matching criteria for the profile.",
-            "joiningValue": "alberto2.dorsey@testschool.edu",
+            "joiningValue": "jennifer.booth@testschool.edu",
             "recordedDateTime": "2017-07-05T00:52:57Z",
-            "reportableIdentifier": "alberto2.dorsey"
+            "reportableIdentifier": "jennifer.booth"
         },
         {
             "entryType": "Teacher",
             "errorCode": "UnsynchronizableChange",
             "errorMessage": "Teacher cannot be updated as no matching entry in Active Directory was found for Teacher.  Verify the identity matching criteria for the profile.",
-            "joiningValue": "madeline2.bullock@testschool.edu",
+            "joiningValue": "cong.du@testschool.edu",
             "recordedDateTime": "2017-07-05T00:52:57Z",
-            "reportableIdentifier": "madeline2.bullock"
+            "reportableIdentifier": "cong.du"
         }
     ]
 }
