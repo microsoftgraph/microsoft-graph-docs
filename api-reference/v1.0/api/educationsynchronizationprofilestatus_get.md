@@ -1,4 +1,4 @@
-# Get the status of an educationSynchronizationProfile
+# Get educationSynchronizationProfile status
 
 Get the status of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. The response will indicate the status of the sync.
 
@@ -8,7 +8,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions (from least to most privileged) |
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.Read, EduAdministration.ReadWrite |
-|Delegated (personal Microsoft account|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
 ## HTTP request
@@ -35,7 +35,7 @@ The following is an example of the request.
   "name": "get_educationSynchronizationProfile_status"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/profileStatus
+GET https://graph.microsoft.com/v1.0/education/synchronizationProfiles/{id}/profileStatus
 ```
 
 ##### Response
@@ -53,7 +53,7 @@ Content-type: application/json
 Content-length: 232
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles('{id}')/profileStatus/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/synchronizationProfiles('{id}')/profileStatus/$entity",
     "status": "inProgress",
     "lastSynchronizationDateTime": "2017-07-04T22:06:37.6472621Z"
 }
