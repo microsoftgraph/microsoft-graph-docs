@@ -1,4 +1,4 @@
-# Resume sync on an educationSynchronizationProfile
+# Resume sync on educationSynchronizationProfile
 
 Resume the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
@@ -8,7 +8,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions |
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.ReadWrite |
-|Delegated (personal Microsoft account|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
 ## HTTP request
@@ -35,7 +35,7 @@ The following is an example of the request.
   "name": "post_educationSynchronizationProfile_resume"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/resume
+POST https://graph.microsoft.com/v1.0/education/synchronizationProfiles/{id}/resume
 ```
 
 ##### Response
