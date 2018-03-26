@@ -1,4 +1,4 @@
-# Pause sync on an educationSynchronizationProfile
+# Pause sync on educationSynchronizationProfile
 
 Pause the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
