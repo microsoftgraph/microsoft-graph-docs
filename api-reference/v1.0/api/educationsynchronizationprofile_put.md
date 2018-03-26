@@ -1,4 +1,4 @@
-# Update an educationSynchronizationProfile
+# Update educationSynchronizationProfile
 
 Update properties for an existing school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
