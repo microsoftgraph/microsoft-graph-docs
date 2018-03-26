@@ -1,4 +1,4 @@
-# Delete a educationSynchronizationProfile
+# Delete educationSynchronizationProfile
 
 Delete a school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.
 
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "get_synchronizationProfile"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
+DELETE https://graph.microsoft.com/v1.0/education/synchronizationProfiles/{id}
 ```
 
 ##### Response
