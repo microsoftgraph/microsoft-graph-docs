@@ -25,13 +25,13 @@ Here is a JSON representation of a **textColumn** resource.
 
 ## Properties
 
-| Property name                   | Type   | Description
-|:--------------------------------|:-------|:-----------------------------------------------
-| **allowMultipleLines**          | string | Whether to allow multiple lines of text.
-| **appendChangesToExistingText** | string | Whether updates to this column should replace existing text, or append to it.
-| **linesForEditing**             | int    | The size of the text box.
-| **maxLength**                   | int    | The maximum number of characters for the value.
-| **textType**                    | string | The type of text being stored. Must be one of `plain` or `richText`
+| Property name                   | Type    | Description
+|:--------------------------------|:--------|:---------------------------------
+| **allowMultipleLines**          | boolean | Whether to allow multiple lines of text.
+| **appendChangesToExistingText** | boolean | Whether updates to this column should replace existing text, or append to it.
+| **linesForEditing**             | int32   | The size of the text box.
+| **maxLength**                   | int32   | The maximum number of characters for the value.
+| **textType**                    | string  | The type of text being stored. Must be one of `plain` or `richText`
 
 <!-- {
   "type": "#page.annotation",
