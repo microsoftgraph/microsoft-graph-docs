@@ -1,6 +1,6 @@
 # educationFileSynchronizationVerificationMessage resource type
 
-Represents an error returned to the client in response to a request to [start synchronization](../api/educationsynchronizationprofile_start.md) for CSV-based school data profiles. The resource will contain errors that result from the verification. Users must fix the source data before you restart the request to synchronize with Azure Active Directory (Azure AD).
+Represents an error returned to the client in response to a request to [start synchronization](../api/educationsynchronizationprofile_start.md) for CSV-based school data profiles. The resource contains errors that result from the verification. A user must fix the source data before they restart the request to synchronize with Azure Active Directory (Azure AD).
 
 ## Properties
 
