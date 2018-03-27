@@ -27,12 +27,11 @@ None.
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "optionalProperties": [],
   "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.groupSettingTemplate"
 }-->
 

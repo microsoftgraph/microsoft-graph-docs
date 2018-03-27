@@ -35,7 +35,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 
 In the request body, provide a JSON object with the following parameters.
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "ignored", "scopes": "files.readwrite" } -->
 
 ```json
 {

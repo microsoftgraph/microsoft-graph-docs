@@ -12,10 +12,14 @@ The **thumbnail** resource type represents a thumbnail for an image, video, docu
 
 Here is a JSON representation of the **thumbnail** resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "optionalProperties": ["content", "height", "width", "sourceItemId"],
+  "optionalProperties": [
+    "content",
+    "height",
+    "width",
+    "sourceItemId"
+  ],
   "@odata.type": "microsoft.graph.thumbnail"
 }-->
 

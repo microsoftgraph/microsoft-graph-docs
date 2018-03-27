@@ -38,12 +38,13 @@ A new thread is created when a recipient is removed from the thread.
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "posts"
   ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.conversationThread"
 }-->
 

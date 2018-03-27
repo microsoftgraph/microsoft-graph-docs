@@ -32,9 +32,12 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 
 Here is a JSON representation of a **listItem** resource.
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.listItem",
-       "keyProperty": "id" } -->
+<!--{
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.listItem"
+}-->
 
 ```json
 {

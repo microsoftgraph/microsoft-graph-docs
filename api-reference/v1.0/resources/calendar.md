@@ -43,7 +43,7 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "calendarView",
@@ -52,6 +52,7 @@ Here is a JSON representation of the resource
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.calendar"
 }-->
 

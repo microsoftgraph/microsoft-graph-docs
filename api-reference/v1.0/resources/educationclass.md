@@ -45,12 +45,11 @@ Represents a class within a school. The **educationClass** resource corresponds 
 
 The following is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "optionalProperties": [],
   "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.educationClass"
 }-->
 

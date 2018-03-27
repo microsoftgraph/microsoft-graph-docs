@@ -116,7 +116,7 @@ You can address this new item using the resourceId, for example:
 <!-- { "blockType": "request", "name": "lro-copy-item-example-complete", "scopes": "files.readwrite" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/01MOWKYVJML57KN2ANMBA3JZJS2MBGC7KM
+GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem" } -->

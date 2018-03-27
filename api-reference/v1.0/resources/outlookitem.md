@@ -6,12 +6,11 @@
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "abstract": true,
+  "optionalProperties": [],
   "baseType": "microsoft.graph.entity",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.outlookItem"
 }-->
 

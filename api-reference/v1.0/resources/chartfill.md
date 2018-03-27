@@ -21,12 +21,11 @@ None
 
 ## JSON representation
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "optionalProperties": [],
   "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookChartFill"
 }-->
 

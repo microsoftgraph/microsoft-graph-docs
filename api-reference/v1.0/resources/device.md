@@ -51,7 +51,7 @@ This resource lets you add your own data to custom properties using [extensions]
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "extensions",
@@ -59,6 +59,7 @@ Here is a JSON representation of the resource
     "registeredUsers"
   ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.device"
 }-->
 

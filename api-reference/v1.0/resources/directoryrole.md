@@ -30,7 +30,7 @@ Represents an Azure AD directory role. Azure AD directory roles are also known a
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "memberOf",
@@ -39,6 +39,7 @@ Here is a JSON representation of the resource
     "owners"
   ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.directoryRole"
 }-->
 

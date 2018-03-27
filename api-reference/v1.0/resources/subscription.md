@@ -10,11 +10,10 @@ A subscription allows a client app to receive notifications about data on the Mi
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.subscription"
 }-->
 

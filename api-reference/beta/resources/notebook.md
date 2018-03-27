@@ -56,7 +56,7 @@ Here is a JSON representation of the resource
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |sectionGroups|[SectionGroup](sectiongroup.md) collection|The section groups in the notebook. Read-only. Nullable.|
-|sections|[Section](section.md) collection|The sections in the notebook. Read-only. Nullable.|
+|sections|[OnenoteSection](section.md) collection|The sections in the notebook. Read-only. Nullable.|
 
 ## Methods
 
@@ -66,8 +66,8 @@ Here is a JSON representation of the resource
 |[getRecentNotebooks](../api/notebook_getrecentnotebooks.md) | [recentNotebook](recentnotebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
 |[Create section group](../api/notebook_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Create a section group by posting to the sectionGroups collection in the specified notebook.|
 |[List section groups](../api/notebook_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups in the specified notebook.|
-|[Create section](../api/notebook_post_sections.md) |[Section](section.md)| Create a section by posting to the sections collection in the specified notebook.|
-|[List sections](../api/notebook_list_sections.md) |[Section](section.md) collection| Get a collection of sections in the specified notebook.|
+|[Create section](../api/notebook_post_sections.md) |[OnenoteSection](section.md)| Create a section by posting to the sections collection in the specified notebook.|
+|[List sections](../api/notebook_list_sections.md) |[OnenoteSection](section.md) collection| Get a collection of sections in the specified notebook.|
 |[copyNotebook](../api/notebook_copynotebook.md)| None | Copies a notebook.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

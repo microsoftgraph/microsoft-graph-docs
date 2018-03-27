@@ -30,12 +30,12 @@ Derived from [attachment](attachment.md).
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
     "item"
   ],
+  "baseType": "microsoft.graph.attachment",
   "@odata.type": "microsoft.graph.itemAttachment"
 }-->
 

@@ -60,7 +60,7 @@ MailFolders in Outlook can contain more than one type of items, for example, the
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
@@ -69,6 +69,7 @@ Here is a JSON representation of the resource
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.mailFolder"
 }-->
 

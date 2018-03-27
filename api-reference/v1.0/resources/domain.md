@@ -57,12 +57,11 @@ Relationships between a domain and other objects in the directory such as its ve
 ## JSON representation
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "optionalProperties": [],
   "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.domain"
 }-->
 

@@ -1,4 +1,4 @@
-﻿# user resource type
+# user resource type
 
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
@@ -132,9 +132,8 @@ This resource supports:
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.directoryObject",
   "optionalProperties": [
     "appRoleAssignments",
     "calendar",
@@ -161,6 +160,7 @@ Here is a JSON representation of the resource
     "registeredDevices"
   ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.user"
 }-->
 

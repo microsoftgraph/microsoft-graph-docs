@@ -43,7 +43,7 @@ The first example shows how to get the properties of an event message based on t
   "name": "get_eventmessage"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
+GET https://graph.microsoft.com/v1.0/me/messages/{message-id}
 ```
 ##### Response 1
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -129,7 +129,7 @@ and apply an $expand parameter to get the properties of the event.
   "name": "get_event_based_on_eventmessage"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=microsoft.graph.eventMessage/event
+GET https://graph.microsoft.com/v1.0/me/messages/{message-id}?$expand=microsoft.graph.eventMessage/event
 ```
 ##### Response 2
 Here is an example of the response. The properties of the associated event are returned in the response. 

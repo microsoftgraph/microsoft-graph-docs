@@ -32,12 +32,13 @@ A conversation is a collection of [threads](conversationthread.md), and a thread
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "threads"
   ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.conversation"
 }-->
 

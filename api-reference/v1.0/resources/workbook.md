@@ -6,12 +6,11 @@ Workbook is the top level object which contains related workbook objects such as
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "optionalProperties": [],
   "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbook"
 }-->
 

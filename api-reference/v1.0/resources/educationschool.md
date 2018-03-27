@@ -48,12 +48,10 @@ A resource representing a school and used to manage the classes, teachers, and s
 
 The following is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.educationOrganization",
   "@odata.type": "microsoft.graph.educationSchool"
 }-->
 

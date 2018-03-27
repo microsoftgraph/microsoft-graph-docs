@@ -1,4 +1,4 @@
-﻿# mobileThreatDefenseConnector resource type
+# mobileThreatDefenseConnector resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -29,12 +29,12 @@ Entity which represents a connection to Mobile threat defense partner.
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.mobileThreatDefenseConnector"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",

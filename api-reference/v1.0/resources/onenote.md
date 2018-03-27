@@ -41,7 +41,7 @@ For information about the permissions required to work with OneNote APIs, see [N
 |pages|[Page](page.md) collection|The pages in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
 |resources|[Resource](resource.md) collection |The image and other file resources in OneNote pages. Getting a resources collection is not supported, but you can [get the binary content of a specific resource](resource.md). Read-only. Nullable.|
 |sectionGroups|[SectionGroup](sectiongroup.md) collection|The section groups in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
-|sections|[Section](section.md) collection|The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
+|sections|[OnenoteSection](section.md) collection|The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
 
 ## Methods
 
@@ -52,7 +52,7 @@ For information about the permissions required to work with OneNote APIs, see [N
 |[Create page](../api/onenote_post_pages.md) |[Page](page.md)| Create a page by posting to the pages collection.|
 |[List pages](../api/onenote_list_pages.md) |[Page](page.md) collection| Get a collection of pages.|
 |[List section groups](../api/onenote_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups.|
-|[List sections](../api/onenote_list_sections.md) |[Section](section.md) collection| Get a collection of sections.|
+|[List sections](../api/onenote_list_sections.md) |[OnenoteSection](section.md) collection| Get a collection of sections.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

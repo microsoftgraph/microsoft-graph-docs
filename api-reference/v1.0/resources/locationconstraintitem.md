@@ -8,12 +8,10 @@ Derived from [location](location.md).
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.locationConstraintItem",
-  "optionalProperties": [
-  
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.location",
   "@odata.type": "microsoft.graph.locationConstraintItem"
 }-->
 

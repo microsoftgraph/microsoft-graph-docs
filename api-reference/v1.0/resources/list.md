@@ -35,10 +35,16 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 
 Here is a JSON representation of a **list** resource.
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.list",
-       "keyProperty": "id", 
-       "optionalProperties": [ "items", "drive"] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "items",
+    "drive"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.list"
+}-->
 
 ```json
 {

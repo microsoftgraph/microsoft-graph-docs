@@ -43,12 +43,11 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "optionalProperties": [],
   "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookWorksheet"
 }-->
 
