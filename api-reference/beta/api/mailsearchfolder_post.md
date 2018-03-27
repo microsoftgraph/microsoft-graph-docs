@@ -34,13 +34,14 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-| displayName |String |The display name of the new folder.|
+| @odata.type | String | The type of folder to be created. Set to "microsoft.graph.mailSearchFolder". |
+| displayName | String | The display name of the new folder.|
 | includeNestedFolders | Boolean | How the mailbox folder hierarchy should be traversed. `true` means that a deep search should be done while `false` means a shallow search should be done instead. |
 | sourceFolderIDs | String collection | The mailbox folders that should be mined. |
 | filterQuery | String | The OData query to filter the messages. |
 
 ## Response
-If successful, this method returns `201 Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
+If successful, this method returns `201 Created` response code and [mailSearchFolder](../resources/mailsearchfolder.md) object in the response body.
 
 ## Example
 #### Request
@@ -50,15 +51,16 @@ The following is an example of the request.
   "name": "create_mailsearchfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/mailFolders/{id}/childFolders
+POST https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childfolders
 Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "displayName-value",
+  "@odata.type": "microsoft.graph.mailSearchFolder",
+  "displayName": "Get MyAnalytics",
   "includeNestedFolders": true,
   "sourceFolderIDs": ["AAMkAGVmMDEzM"],
-  "filterQuery": "((Sender/EmailAddress/Address eq 'admin@abc.com' and contains(Subject, 'some message')))"
+  "filterQuery": "contains(subject, 'MyAnalytics')"
 }
 ```
 
@@ -76,16 +78,20 @@ Content-type: application/json
 Content-length: 179
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value",
-  "childFolderCount": 99,
-  "unreadItemCount": 99,
-  "totalItemCount": 99,
-  "id": "id-value",
+  "@odata.type": "#microsoft.graph.mailSearchFolder",
+  "id": "AAMkAGVmMDEzMx",
+  "displayName": "Get MyAnalytics",
+  "parentFolderId": "AAMkAGVmMDEzMy",
+  "childFolderCount": 0,
+  "unreadItemCount": 0,
+  "totalItemCount": 13,
+  "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
-  "sourceFolderIDs": ["AAMkAGVmMDEzM"],
-  "filterQuery": "((Sender/EmailAddress/Address eq 'admin@abc.com' and contains(Subject, 'some message')))"
+  "sourceFolderIDs": [
+      "AAMkAGVmMDEzMi"
+  ],
+  "filterQuery": "contains(subject, 'MyAnalytics')"
 }
 ```
 

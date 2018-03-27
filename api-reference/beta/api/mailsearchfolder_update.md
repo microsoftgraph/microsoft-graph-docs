@@ -52,11 +52,8 @@ Content-type: application/json
 Content-length: 159
 
 {
-    "displayName": "displayName-value",
-    "isSupported": true,
-    "includeNestedFolders": true,
-    "sourceFolderIDs": ["AAMkAGVmMDEzM"],
-    "filterQuery": "((Sender/EmailAddress/Address eq 'admin@abc.com' and contains(Subject, 'some message')))"
+  "@odata.type": "microsoft.graph.mailSearchFolder",
+  "filterQuery": "contains(subject, 'Analytics')))"
 }
 ```
 
@@ -74,16 +71,20 @@ Content-type: application/json
 Content-length: 179
 
 {
-    "id": "AAMkAGVmMDEzM",
-    "displayName": "displayName-value",
-    "parentFolderId": "AAMkAGVmMDEzI",
-    "childFolderCount": 2,
-    "unreadItemCount": 59,
-    "totalItemCount": 60,
-    "isSupported": true,
-    "includeNestedFolders": true,
-    "sourceFolderIDs": ["AAMkAGVmMDEzM"],
-    "filterQuery": "((Sender/EmailAddress/Address eq 'admin@abc.com' and contains(Subject, 'some message')))"
+  "@odata.type": "#microsoft.graph.mailSearchFolder",
+  "id": "AAMkAGVmMDEzMx",
+  "displayName": "Get MyAnalytics",
+  "parentFolderId": "AAMkAGVmMDEzMy",
+  "childFolderCount": 0,
+  "unreadItemCount": 0,
+  "totalItemCount": 0,
+  "wellKnownName": null,
+  "isSupported": true,
+  "includeNestedFolders": true,
+  "sourceFolderIDs": [
+      "AAMkAGVmMDEzMi"
+  ],
+  "filterQuery": "contains(subject, 'Analytics')"
 }
 ```
 

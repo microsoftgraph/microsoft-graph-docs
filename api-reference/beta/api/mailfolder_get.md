@@ -68,8 +68,8 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and [mailFolder](../resources/mailfolder.md) object in the response body.
 
-## Example
-#### Request
+## Example 1
+#### Request 1
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -79,13 +79,48 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 ```
 
-#### Response
+#### Response 1
 The following is an example of the response.
  >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailFolder"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 179
+
+{
+    "id": "AAMkAGVmMDEzM",
+    "displayName": "Inbox",
+    "parentFolderId": "AAMkAGVmMDEzI",
+    "childFolderCount": 2,
+    "unreadItemCount": 59,
+    "totalItemCount": 60,
+    "wellKnownName": "inbox"
+}
+```
+
+## Example 2
+#### Request 2
+The following is a search folder example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_mailSearchfolder"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
+```
+
+#### Response 2
+The following is an example of the response.
+ >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailSearchFolder"
 } -->
 ```http
 HTTP/1.1 200 OK

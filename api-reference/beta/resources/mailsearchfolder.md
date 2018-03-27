@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "includeNestedFolders": true,
   "isSupported": true,
+  "includeNestedFolders": true,
   "sourceFolderIDs": ["string"],
   "filterQuery": "string"
 }

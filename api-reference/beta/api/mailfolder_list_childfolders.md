@@ -35,8 +35,8 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [MailFolder](../resources/mailfolder.md) objects in the response body.
 
-## Example
-#### Request
+## Example 1
+#### Request 1
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -46,7 +46,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 ```
 
-#### Response
+#### Response 1
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -80,6 +80,74 @@ Content-length: 232
         "unreadItemCount": 5,
         "totalItemCount": 5,
         "wellKnownName": null
+    },
+    {
+        "id": "AAMkAGVmMDEzMA",
+        "displayName": "Finder",
+        "parentFolderId": "AAMkAGVmMDEzM",
+        "childFolderCount": 4,
+        "unreadItemCount": 0,
+        "totalItemCount": 0,
+        "wellKnownName": "searchfolders"
+    }
+  ]
+}
+```
+
+## Example 2
+#### Request 2
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_childfolders_of_searchfolders"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
+```
+
+#### Response 2
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailSearchFolder",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 232
+
+{
+  "value": [
+    {
+        "id": "AAMkAGVmMDEzA",
+        "displayName": "Internal Screens",
+        "parentFolderId": "AAMkAGVmMDEzM",
+        "childFolderCount": 0,
+        "unreadItemCount": 2,
+        "totalItemCount": 2,
+        "wellKnownName": null
+    },
+    {
+        "id": "AAMkAGVmMDEzB",
+        "displayName": "Project Falcon",
+        "parentFolderId": "AAMkAGVmMDEzM",
+        "childFolderCount": 0,
+        "unreadItemCount": 5,
+        "totalItemCount": 5,
+        "wellKnownName": null
+    },
+    {
+        "id": "AAMkAGVmMDEzMA",
+        "displayName": "Finder",
+        "parentFolderId": "AAMkAGVmMDEzM",
+        "childFolderCount": 4,
+        "unreadItemCount": 0,
+        "totalItemCount": 0,
+        "wellKnownName": "searchfolders"
     }
   ]
 }
