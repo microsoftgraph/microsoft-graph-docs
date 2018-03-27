@@ -1,6 +1,6 @@
 # scoredEmailAddress resource type
 
-Represents a scored email address.
+Represents a weighted email address of a [person](person.md).
 
 
 ## Properties
@@ -8,6 +8,7 @@ Represents a scored email address.
 |:---------------|:--------|:----------|
 |address|string|The email address.|
 |relevanceScore|double|The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships. |
+|selectionLikelihood | string | Describes the plausibility that the user selects the email address. |
 
 ## JSON representation
 
@@ -24,7 +25,8 @@ Here is a JSON representation of the resource.
 ```json
 {
   "address": "string",
-  "relevanceScore": 1024.0
+  "relevanceScore": 1024.0,
+  "selectionLikelihood": "string"
 }
 ```
 
