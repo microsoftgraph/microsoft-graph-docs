@@ -8,7 +8,7 @@ This article describes the tasks required to get an access token from the [Azure
 
 You can download the version of the app that you'll create from this GitHub repo:
 
-* [Office 365 Connect Sample for iOS Using the Microsoft Graph SDK](https://github.com/microsoftgraph/ios-objectivec-connect-sample)
+* [Office 365 Connect Sample for iOS Using the Microsoft Graph SDK](https://github.com/microsoftgraph/ios-swift-connect-sample)
 
 The following image shows the app you'll create.
 

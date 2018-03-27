@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /educationn/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
+GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
