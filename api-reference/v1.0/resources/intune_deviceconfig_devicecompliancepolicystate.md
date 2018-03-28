@@ -19,9 +19,34 @@ Device Compliance Policy State for a given device.
 |settingStates|[deviceCompliancePolicySettingState](../resources/intune_deviceconfig_devicecompliancepolicysettingstate.md) collection|Not yet documented|
 |displayName|String|The name of the policy for this policyBase|
 |version|Int32|The version of the policy|
-|platformType|String|Platform type that the policy applies to Possible values are: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
-|state|String|The compliance state of the policy Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|platformType|policyPlatformType|Platform type that the policy applies to Possible values are: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
+|state|complianceState|The compliance state of the policy Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |settingCount|Int32|Count of how many setting a policy holds|
+
+### policyPlatformType values
+
+| Value
+|:-------------------------
+| android
+| iOS
+| macOS
+| windowsPhone81
+| windows81AndLater
+| windows10AndLater
+| all
+
+
+### complianceState values
+
+| Value
+|:-------------------------
+| unknown
+| compliant
+| noncompliant
+| conflict
+| error
+| inGracePeriod
+| configManager
 
 ## Relationships
 None

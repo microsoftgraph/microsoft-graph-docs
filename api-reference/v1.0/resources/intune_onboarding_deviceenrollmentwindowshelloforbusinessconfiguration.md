@@ -27,16 +27,43 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune_onboarding_dev
 |version|Int32|Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |pinMinimumLength|Int32|Not yet documented|
 |pinMaximumLength|Int32|Not yet documented|
-|pinUppercaseCharactersUsage|String|Not yet documented Possible values are: `allowed`, `required`, `disallowed`.|
-|pinLowercaseCharactersUsage|String|Not yet documented Possible values are: `allowed`, `required`, `disallowed`.|
-|pinSpecialCharactersUsage|String|Not yet documented Possible values are: `allowed`, `required`, `disallowed`.|
-|state|String|Not yet documented Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|pinUppercaseCharactersUsage|windowsHelloForBusinessPinUsage|Not yet documented Possible values are: `allowed`, `required`, `disallowed`.|
+|pinLowercaseCharactersUsage|windowsHelloForBusinessPinUsage|Not yet documented Possible values are: `allowed`, `required`, `disallowed`.|
+|pinSpecialCharactersUsage|windowsHelloForBusinessPinUsage|Not yet documented Possible values are: `allowed`, `required`, `disallowed`.|
+|state|windowsSpotlightEnablementSettings|Not yet documented Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |securityDeviceRequired|Boolean|Not yet documented|
 |unlockWithBiometricsEnabled|Boolean|Not yet documented|
 |remotePassportEnabled|Boolean|Not yet documented|
 |pinPreviousBlockCount|Int32|Not yet documented|
 |pinExpirationInDays|Int32|Not yet documented|
-|enhancedBiometricsState|String|Not yet documented Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|enhancedBiometricsState|windowsSpotlightEnablementSettings|Not yet documented Possible values are: `notConfigured`, `enabled`, `disabled`.|
+
+### enablement values
+
+| Value
+|:-------------------------
+| notConfigured
+| enabled
+| disabled
+
+
+### windowsHelloForBusinessPinUsage values
+
+| Value
+|:-------------------------
+| allowed
+| required
+| disallowed
+
+
+### windowsSpotlightEnablementSettings values
+
+| Value
+|:-------------------------
+| notConfigured
+| disabled
+| enabled
+
 
 ## Relationships
 |Relationship|Type|Description|

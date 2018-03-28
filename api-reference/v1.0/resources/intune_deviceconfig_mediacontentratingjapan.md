@@ -1,4 +1,4 @@
-﻿# mediaContentRatingJapan resource type
+# mediaContentRatingJapan resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,8 +6,29 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|String|Movies rating selected for Japan Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`.|
-|tvRating|String|TV rating selected for Japan Possible values are: `allAllowed`, `allBlocked`, `explicitAllowed`.|
+|movieRating|ratingJapanMoviesType|Movies rating selected for Japan Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`.|
+|tvRating|ratingJapanTelevisionType|TV rating selected for Japan Possible values are: `allAllowed`, `allBlocked`, `explicitAllowed`.|
+
+### ratingJapanTelevisionType values
+
+| Value
+|:-------------------------
+| allAllowed
+| allBlocked
+| explicitAllowed
+
+
+### ratingJapanMoviesType values
+
+| Value
+|:-------------------------
+| allAllowed
+| allBlocked
+| general
+| parentalGuidance
+| agesAbove15
+| agesAbove18
+
 
 ## Relationships
 None

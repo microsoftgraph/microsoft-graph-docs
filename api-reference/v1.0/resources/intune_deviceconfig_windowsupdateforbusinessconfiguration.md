@@ -24,9 +24,9 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|deliveryOptimizationMode|String|Delivery Optimization Mode Possible values are: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
-|prereleaseFeatures|String|The pre-release features. Possible values are: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
-|automaticUpdateMode|String|Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
+|deliveryOptimizationMode|windowsDeliveryOptimizationMode|Delivery Optimization Mode Possible values are: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
+|prereleaseFeatures|prereleaseFeatures|The pre-release features. Possible values are: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
+|automaticUpdateMode|automaticUpdateMode|Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
 |microsoftUpdateServiceAllowed|Boolean|Allow Microsoft Update Service|
 |driversExcluded|Boolean|Exclude Windows update Drivers|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune_deviceconfig_windowsupdateinstallscheduletype.md)|Installation schedule|
@@ -36,7 +36,51 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |featureUpdatesPaused|Boolean|Pause Feature Updates|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Quality Updates Pause Expiry datetime|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Feature Updates Pause Expiry datetime|
-|businessReadyUpdatesOnly|String|Determines which branch devices will receive their updates from Possible values are: `userDefined`, `all`, `businessReadyOnly`.|
+|businessReadyUpdatesOnly|windowsUpdateType|Determines which branch devices will receive their updates from Possible values are: `userDefined`, `all`, `businessReadyOnly`.|
+
+### windowsUpdateType values
+
+| Value
+|:-------------------------
+| userDefined
+| all
+| businessReadyOnly
+
+
+### windowsDeliveryOptimizationMode values
+
+| Value
+|:-------------------------
+| userDefined
+| httpOnly
+| httpWithPeeringNat
+| httpWithPeeringPrivateGroup
+| httpWithInternetPeering
+| simpleDownload
+| bypassMode
+
+
+### prereleaseFeatures values
+
+| Value
+|:-------------------------
+| userDefined
+| settingsOnly
+| settingsAndExperimentations
+| notAllowed
+
+
+### automaticUpdateMode values
+
+| Value
+|:-------------------------
+| userDefined
+| notifyDownload
+| autoInstallAtMaintenanceTime
+| autoInstallAndRebootAtMaintenanceTime
+| autoInstallAndRebootAtScheduledTime
+| autoInstallAndRebootWithoutEndUserControl
+
 
 ## Relationships
 |Relationship|Type|Description|

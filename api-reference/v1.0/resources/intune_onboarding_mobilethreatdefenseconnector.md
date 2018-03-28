@@ -17,13 +17,35 @@ Entity which represents a connection to Mobile threat defense partner.
 |:---|:---|:---|
 |id|String|Not yet documented|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp of last heartbeat after admin enabled option Connect to MTP|
-|partnerState|String|Partner state of this tenant Possible values are: `unavailable`, `available`, `enabled`, `unresponsive`.|
+|partnerState|mobileThreatPartnerTenantState|Partner state of this tenant Possible values are: `unavailable`, `available`, `enabled`, `unresponsive`.|
 |androidEnabled|Boolean|Android Toggle On or Off|
 |androidDeviceBlockedOnMissingPartnerData|Boolean|For Android, Allows admin to config must receive data from the data sync partner prior to being considered compliant|
 |iosDeviceBlockedOnMissingPartnerData|Boolean|For IOS, Allows admin to config must receive data from the data sync partner prior to being considered compliant|
 |partnerUnsupportedOsVersionBlocked|Boolean|Allows admin to block devices on the enabled platforms that do not meet minimum version requirements|
 |iosEnabled|Boolean|IOS Toggle On or Off|
 |partnerUnresponsivenessThresholdInDays|Int32|Get or Set days the per tenant tolerance to unresponsiveness for this partner integration|
+
+### deviceManagementPartnerTenantState values
+
+| Value
+|:-------------------------
+| unknown
+| unavailable
+| enabled
+| terminated
+| rejected
+| unresponsive
+
+
+### mobileThreatPartnerTenantState values
+
+| Value
+|:-------------------------
+| unavailable
+| available
+| enabled
+| unresponsive
+
 
 ## Relationships
 None

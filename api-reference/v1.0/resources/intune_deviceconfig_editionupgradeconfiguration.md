@@ -25,9 +25,27 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |licenseType|String|Edition Upgrade License Type. Possible values are: `productKey`, `licenseFile`.|
-|targetEdition|String|Edition Upgrade Target Edition. Possible values are: `windows10Enterprise`, `windows10EnterpriseN`, `windows10Education`, `windows10EducationN`, `windows10MobileEnterprise`, `windows10HolographicEnterprise`, `windows10Professional`, `windows10ProfessionalN`, `windows10ProfessionalEducation`, `windows10ProfessionalEducationN`, `windows10ProfessionalWorkstation`, `windows10ProfessionalWorkstationN`.|
+|targetEdition|windows10EditionType|Edition Upgrade Target Edition. Possible values are: `windows10Enterprise`, `windows10EnterpriseN`, `windows10Education`, `windows10EducationN`, `windows10MobileEnterprise`, `windows10HolographicEnterprise`, `windows10Professional`, `windows10ProfessionalN`, `windows10ProfessionalEducation`, `windows10ProfessionalEducationN`, `windows10ProfessionalWorkstation`, `windows10ProfessionalWorkstationN`.|
 |license|String|Edition Upgrade License File Content.|
 |productKey|String|Edition Upgrade Product Key.|
+
+### windows10EditionType values
+
+| Value
+|:-------------------------
+| windows10Enterprise
+| windows10EnterpriseN
+| windows10Education
+| windows10EducationN
+| windows10MobileEnterprise
+| windows10HolographicEnterprise
+| windows10Professional
+| windows10ProfessionalN
+| windows10ProfessionalEducation
+| windows10ProfessionalEducationN
+| windows10ProfessionalWorkstation
+| windows10ProfessionalWorkstationN
+
 
 ## Relationships
 |Relationship|Type|Description|

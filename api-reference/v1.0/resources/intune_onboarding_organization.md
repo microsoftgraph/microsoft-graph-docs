@@ -15,7 +15,17 @@ The organization resource represents an instance of global settings and resource
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The GUID for the object.|
-|mobileDeviceManagementAuthority|String|Mobile device management authority. Possible values are: `unknown`, `intune`, `sccm`, `office365`.|
+|mobileDeviceManagementAuthority|mdmAuthority|Mobile device management authority. Possible values are: `unknown`, `intune`, `sccm`, `office365`.|
+
+### mdmAuthority values
+
+| Value
+|:-------------------------
+| unknown
+| intune
+| sccm
+| office365
+
 
 ## Relationships
 None

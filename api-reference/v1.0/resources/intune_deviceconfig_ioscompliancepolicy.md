@@ -1,4 +1,4 @@
-﻿# iosCompliancePolicy resource type
+# iosCompliancePolicy resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -30,14 +30,61 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a passcode is required.|
 |passcodePreviousPasscodeBlockCount|Int32|Number of previous passcodes to block. Valid values 1 to 24|
 |passcodeMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
-|passcodeRequiredType|String|The required passcode type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passcodeRequiredType|androidRequiredPasswordType|The required passcode type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Boolean|Indicates whether or not to require a passcode.|
 |osMinimumVersion|String|Minimum IOS version.|
 |osMaximumVersion|String|Maximum IOS version.|
 |securityBlockJailbrokenDevices|Boolean|Devices must not be jailbroken or rooted.|
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
-|deviceThreatProtectionRequiredSecurityLevel|String|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|deviceThreatProtectionRequiredSecurityLevel|siteSecurityLevel|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Boolean|Indicates whether or not to require a managed email profile.|
+
+### deviceThreatProtectionLevel values
+
+| Value
+|:-------------------------
+| unavailable
+| secured
+| low
+| medium
+| high
+| notSet
+
+
+### siteSecurityLevel values
+
+| Value
+|:-------------------------
+| userDefined
+| low
+| mediumLow
+| medium
+| mediumHigh
+| high
+
+
+### requiredPasswordType values
+
+| Value
+|:-------------------------
+| deviceDefault
+| alphanumeric
+| numeric
+
+
+### androidRequiredPasswordType values
+
+| Value
+|:-------------------------
+| deviceDefault
+| alphabetic
+| alphanumeric
+| alphanumericWithSymbols
+| lowSecurityBiometric
+| numeric
+| numericComplex
+| any
+
 
 ## Relationships
 |Relationship|Type|Description|

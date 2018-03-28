@@ -1,4 +1,4 @@
-﻿# mediaContentRatingIreland resource type
+# mediaContentRatingIreland resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,8 +6,35 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|String|Movies rating selected for Ireland Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.|
-|tvRating|String|TV rating selected for Ireland Possible values are: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.|
+|movieRating|ratingIrelandMoviesType|Movies rating selected for Ireland Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.|
+|tvRating|ratingIrelandTelevisionType|TV rating selected for Ireland Possible values are: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.|
+
+### ratingIrelandTelevisionType values
+
+| Value
+|:-------------------------
+| allAllowed
+| allBlocked
+| general
+| children
+| youngAdults
+| parentalSupervision
+| mature
+
+
+### ratingIrelandMoviesType values
+
+| Value
+|:-------------------------
+| allAllowed
+| allBlocked
+| general
+| parentalGuidance
+| agesAbove12
+| agesAbove15
+| agesAbove16
+| adults
+
 
 ## Relationships
 None

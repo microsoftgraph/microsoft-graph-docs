@@ -1,4 +1,4 @@
-﻿# mediaContentRatingUnitedStates resource type
+# mediaContentRatingUnitedStates resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,8 +6,35 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|String|Movies rating selected for United States Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `parentalGuidance13`, `restricted`, `adults`.|
-|tvRating|String|TV rating selected for United States Possible values are: `allAllowed`, `allBlocked`, `childrenAll`, `childrenAbove7`, `general`, `parentalGuidance`, `childrenAbove14`, `adults`.|
+|movieRating|ratingUnitedStatesMoviesType|Movies rating selected for United States Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `parentalGuidance13`, `restricted`, `adults`.|
+|tvRating|ratingUnitedStatesTelevisionType|TV rating selected for United States Possible values are: `allAllowed`, `allBlocked`, `childrenAll`, `childrenAbove7`, `general`, `parentalGuidance`, `childrenAbove14`, `adults`.|
+
+### ratingUnitedStatesTelevisionType values
+
+| Value
+|:-------------------------
+| allAllowed
+| allBlocked
+| childrenAll
+| childrenAbove7
+| general
+| parentalGuidance
+| childrenAbove14
+| adults
+
+
+### ratingUnitedStatesMoviesType values
+
+| Value
+|:-------------------------
+| allAllowed
+| allBlocked
+| general
+| parentalGuidance
+| parentalGuidance13
+| restricted
+| adults
+
 
 ## Relationships
 None

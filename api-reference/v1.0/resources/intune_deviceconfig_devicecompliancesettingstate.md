@@ -25,8 +25,20 @@ Device compliance setting State for a given device.
 |userName|String|The User Name that is being reported|
 |userPrincipalName|String|The User PrincipalName that is being reported|
 |deviceModel|String|The device model that is being reported|
-|state|String|The compliance state of the setting Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|state|complianceState|The compliance state of the setting Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
+
+### complianceState values
+
+| Value
+|:-------------------------
+| unknown
+| compliant
+| noncompliant
+| conflict
+| error
+| inGracePeriod
+| configManager
 
 ## Relationships
 None

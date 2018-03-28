@@ -50,7 +50,7 @@ by providing a [delta](../api/event_delta.md) function.
 |hasAttachments|Boolean|Set to true if the event has attachments.|
 |iCalUId|String|A unique identifier that is shared by all instances of an event across different calendars.|
 |id|String| Read-only.|
-|importance|String|The importance of the event. Possible values are: `Low`, `Normal`, `High`.|
+|importance|importance|The importance of the event. Possible values are: `Low`, `Normal`, `High`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isCancelled|Boolean|Set to true if the event has been canceled.|
 |isOrganizer|Boolean|Set to true if the message sender is also the organizer.|
@@ -66,13 +66,42 @@ by providing a [delta](../api/event_delta.md) function.
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 |responseStatus|[responseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
-|sensitivity|String| Possible values are: `Normal`, `Personal`, `Private`, `Confidential`.|
+|sensitivity|sensitivity| Possible values are: `Normal`, `Personal`, `Private`, `Confidential`.|
 |seriesMasterId|String|The categories assigned to the item.|
 |showAs|String|The status to show. Possible values are: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event starts.|
 |subject|String|The text of the event's subject line.|
-|type|String|The event type. Possible values are: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`. Read-only.|
+|type|eventType|The event type. Possible values are: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`. Read-only.|
 |webLink|String|The URL to open the event in Outlook Web App.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame.|
+
+### eventType values
+
+| Value
+|:-------------------------
+| singleInstance
+| occurrence
+| exception
+| seriesMaster
+
+
+### sensitivity values
+
+| Value
+|:-------------------------
+| normal
+| personal
+| private
+| confidential
+
+
+### importance values
+
+| Value
+|:-------------------------
+| low
+| normal
+| high
+
 
 ## Relationships
 | Relationship | Type	|Description|

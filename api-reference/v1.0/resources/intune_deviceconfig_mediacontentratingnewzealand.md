@@ -1,4 +1,4 @@
-﻿# mediaContentRatingNewZealand resource type
+# mediaContentRatingNewZealand resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,8 +6,35 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|String|Movies rating selected for New Zealand Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted`.|
-|tvRating|String|TV rating selected for New Zealand Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults`.|
+|movieRating|ratingNewZealandMoviesType|Movies rating selected for New Zealand Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted`.|
+|tvRating|ratingNewZealandTelevisionType|TV rating selected for New Zealand Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults`.|
+
+### ratingNewZealandTelevisionType values
+
+| Value
+|:-------------------------
+| allAllowed
+| allBlocked
+| general
+| parentalGuidance
+| adults
+
+### ratingNewZealandMoviesType values
+
+| Value
+|:-------------------------
+| allAllowed
+| allBlocked
+| general
+| parentalGuidance
+| mature
+| agesAbove13
+| agesAbove15
+| agesAbove16
+| agesAbove18
+| restricted
+| agesAbove16Restricted
+
 
 ## Relationships
 None

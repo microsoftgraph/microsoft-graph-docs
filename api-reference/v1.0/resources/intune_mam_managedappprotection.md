@@ -24,10 +24,10 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|The period after which access is checked when the device is not connected to the internet.|
 |periodOnlineBeforeAccessCheck|Duration|The period after which access is checked when the device is connected to the internet.|
-|allowedInboundDataTransferSources|String|Sources from which data is allowed to be transferred. Possible values are: `allApps`, `managedApps`, `none`.|
-|allowedOutboundDataTransferDestinations|String|Destinations to which data is allowed to be transferred. Possible values are: `allApps`, `managedApps`, `none`.|
+|allowedInboundDataTransferSources|managedAppDataTransferLevel|Sources from which data is allowed to be transferred. Possible values are: `allApps`, `managedApps`, `none`.|
+|allowedOutboundDataTransferDestinations|managedAppDataTransferLevel|Destinations to which data is allowed to be transferred. Possible values are: `allApps`, `managedApps`, `none`.|
 |organizationalCredentialsRequired|Boolean|Indicates whether organizational credentials are required for app use.|
-|allowedOutboundClipboardSharingLevel|String|The level to which the clipboard may be shared between apps on the managed device. Possible values are: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
+|allowedOutboundClipboardSharingLevel|managedAppClipboardSharingLevel|The level to which the clipboard may be shared between apps on the managed device. Possible values are: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
 |dataBackupBlocked|Boolean|Indicates whether the backup of a managed app's data is blocked.|
 |deviceComplianceRequired|Boolean|Indicates whether device compliance is required.|
 |managedBrowserToOpenLinksRequired|Boolean|Indicates whether internet links should be opened in the managed browser app.|
@@ -48,6 +48,25 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |minimumWarningOsVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data.|
 |minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app.|
+
+### managedAppClipboardSharingLevel values
+
+| Value
+|:-------------------------
+| allApps
+| managedAppsWithPasteIn
+| managedApps
+| blocked
+
+
+### managedAppDataTransferLevel values
+
+| Value
+|:-------------------------
+| allApps
+| managedApps
+| none
+
 
 ## Relationships
 None

@@ -17,13 +17,44 @@ Entity which represents a connection to device management partner.
 |:---|:---|:---|
 |id|String|Not yet documented|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp of last heartbeat after admin enabled option Connect to Device management Partner|
-|partnerState|String|Partner state of this tenant Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|partnerAppType|String|Partner App type Possible values are: `unknown`, `singleTenantApp`, `multiTenantApp`.|
+|partnerState|mobileThreatPartnerTenantState|Partner state of this tenant Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
+|partnerAppType|deviceManagementPartnerAppType|Partner App type Possible values are: `unknown`, `singleTenantApp`, `multiTenantApp`.|
 |singleTenantAppId|String|Partner Single tenant App id|
 |displayName|String|Partner display name|
 |isConfigured|Boolean|Whether device management partner is configured or not|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|DateTime in UTC when PartnerDevices will be removed|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|DateTime in UTC when PartnerDevices will be marked as NonCompliant|
+
+### deviceManagementPartnerAppType values
+
+| Value
+|:-------------------------
+| unknown
+| singleTenantApp
+| multiTenantApp
+
+
+### deviceManagementPartnerTenantState values
+
+| Value
+|:-------------------------
+| unknown
+| unavailable
+| enabled
+| terminated
+| rejected
+| unresponsive
+
+
+### mobileThreatPartnerTenantState values
+
+| Value
+|:-------------------------
+| unavailable
+| available
+| enabled
+| unresponsive
+
 
 ## Relationships
 None

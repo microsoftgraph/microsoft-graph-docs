@@ -17,9 +17,21 @@ Scheduled Action Configuration
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |gracePeriodHours|Int32|Number of hours to wait till the action will be enforced. Valid values 0 to 8760|
-|actionType|String|What action to take Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
+|actionType|deviceComplianceActionType|What action to take Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
 |notificationTemplateId|String|What notification Message template to use|
 |notificationMessageCCList|String collection|A list of group IDs to speicify who to CC this notification message to.|
+
+### deviceComplianceActionType values
+
+| Value
+|:-------------------------
+| noAction
+| notification
+| block
+| retire
+| wipe
+| removeResourceAccessProfiles
+
 
 ## Relationships
 None

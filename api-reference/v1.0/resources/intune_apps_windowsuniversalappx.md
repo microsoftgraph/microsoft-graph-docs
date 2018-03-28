@@ -35,14 +35,36 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|applicableArchitectures|String|The Windows architecture(s) for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
-|applicableDeviceTypes|String|The Windows device type(s) for which this app can run on. Possible values are: `none`, `desktop`, `mobile`, `holographic`, `team`.|
+|applicableArchitectures|windowsArchitecture|The Windows architecture(s) for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|applicableDeviceTypes|windowsDeviceType|The Windows device type(s) for which this app can run on. Possible values are: `none`, `desktop`, `mobile`, `holographic`, `team`.|
 |identityName|String|The Identity Name.|
 |identityPublisherHash|String|The Identity Publisher Hash.|
 |identityResourceIdentifier|String|The Identity Resource Identifier.|
 |isBundle|Boolean|Whether or not the app is a bundle.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |identityVersion|String|The identity version.|
+
+### windowsDeviceType values
+
+| Value
+|:-------------------------
+| none
+| desktop
+| mobile
+| holographic
+| team
+
+
+### windowsArchitecture values
+
+| Value
+|:-------------------------
+| none
+| x86
+| x64
+| arm
+| neutral
+
 
 ## Relationships
 |Relationship|Type|Description|

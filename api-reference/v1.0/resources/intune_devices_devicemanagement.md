@@ -13,7 +13,20 @@ Singleton entity that acts as a container for all device management functionalit
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique Identifier for the device|
-|subscriptionState|String|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|subscriptionState|deviceManagementSubscriptionState|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+
+### deviceManagementSubscriptionState values
+
+| Value
+|:-------------------------
+| pending
+| active
+| warning
+| disabled
+| deleted
+| blocked
+| lockedOut
+
 
 ## Relationships
 |Relationship|Type|Description|

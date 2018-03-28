@@ -26,9 +26,42 @@ Inherits from [deviceManagementTroubleshootingEvent](../resources/intune_trouble
 |osVersion|String|OS Version.|
 |userId|String|Identifier for the user that tried to enroll the device.|
 |deviceId|String|Azure AD device identifier.|
-|enrollmentType|String|Type of the enrollment. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
-|failureCategory|String|Highlevel failure category. Possible values are: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected`.|
+|enrollmentType|deviceEnrollmentType|Type of the enrollment. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
+|failureCategory|deviceEnrollmentFailureReason|Highlevel failure category. Possible values are: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected`.|
 |failureReason|String|Detailed failure reason.|
+
+### deviceEnrollmentFailureReason values
+
+| Value
+|:-------------------------
+| unknown
+| authentication
+| authorization
+| accountValidation
+| userValidation
+| deviceNotSupported
+| inMaintenance
+| badRequest
+| featureNotSupported
+| enrollmentRestrictionsEnforced
+| clientDisconnected
+
+
+### deviceEnrollmentType values
+
+| Value
+|:-------------------------
+| unknown
+| userEnrollment
+| deviceEnrollmentManager
+| appleBulkWithUser
+| appleBulkWithoutUser
+| windowsAzureADJoin
+| windowsBulkUserless
+| windowsAutoEnrollment
+| windowsBulkAzureDomainJoin
+| windowsCoManagement
+
 
 ## Relationships
 None

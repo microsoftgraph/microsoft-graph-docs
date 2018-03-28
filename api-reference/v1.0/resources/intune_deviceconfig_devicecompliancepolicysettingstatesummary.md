@@ -17,7 +17,7 @@ Device Compilance Policy Setting State summary across the account.
 |:---|:---|:---|
 |setting|String|The setting class name and property name.|
 |settingName|String|Name of the setting.|
-|platformType|String|Setting platform Possible values are: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
+|platformType|policyPlatformType|Setting platform Possible values are: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
 |id|String|Key of the entity.|
 |unknownDeviceCount|Int32|Number of unknown devices|
 |notApplicableDeviceCount|Int32|Number of not applicable devices|
@@ -26,6 +26,19 @@ Device Compilance Policy Setting State summary across the account.
 |nonCompliantDeviceCount|Int32|Number of NonCompliant devices|
 |errorDeviceCount|Int32|Number of error devices|
 |conflictDeviceCount|Int32|Number of conflict devices|
+
+### policyPlatformType values
+
+| Value
+|:-------------------------
+| android
+| iOS
+| macOS
+| windowsPhone81
+| windows81AndLater
+| windows10AndLater
+| all
+
 
 ## Relationships
 |Relationship|Type|Description|

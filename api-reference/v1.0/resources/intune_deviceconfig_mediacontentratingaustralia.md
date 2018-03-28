@@ -1,4 +1,4 @@
-﻿# mediaContentRatingAustralia resource type
+# mediaContentRatingAustralia resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,8 +6,36 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|String|Movies rating selected for Australia Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18`.|
-|tvRating|String|TV rating selected for Australia Possible values are: `allAllowed`, `allBlocked`, `preschoolers`, `children`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove15AdultViolence`.|
+|movieRating|ratingAustraliaMoviesType|Movies rating selected for Australia Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18`.|
+|tvRating|ratingAustraliaTelevisionType|TV rating selected for Australia Possible values are: `allAllowed`, `allBlocked`, `preschoolers`, `children`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove15AdultViolence`.|
+
+### ratingAustraliaTelevisionType values
+
+| Value
+|:-------------------------
+| allAllowed
+| allBlocked
+| preschoolers
+| children
+| general
+| parentalGuidance
+| mature
+| agesAbove15
+| agesAbove15AdultViolence
+
+
+### ratingAustraliaMoviesType values
+
+| Value
+|:-------------------------
+| allAllowed
+| allBlocked
+| general
+| parentalGuidance
+| mature
+| agesAbove15
+| agesAbove18
+
 
 ## Relationships
 None

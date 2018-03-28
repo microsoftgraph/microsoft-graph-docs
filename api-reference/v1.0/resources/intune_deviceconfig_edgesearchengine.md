@@ -1,4 +1,4 @@
-﻿# edgeSearchEngine resource type
+# edgeSearchEngine resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -9,7 +9,15 @@ Inherits from [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearch
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|edgeSearchEngineType|String|Allows IT admins to set a predefined default search engine for MDM-Controlled devices. Possible values are: `default`, `bing`.|
+|edgeSearchEngineType|edgeSearchEngineType|Allows IT admins to set a predefined default search engine for MDM-Controlled devices. Possible values are: `default`, `bing`.|
+
+### edgeSearchEngineType values
+
+| Value
+|:-------------------------
+| default
+| bing
+
 
 ## Relationships
 None

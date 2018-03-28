@@ -1,4 +1,4 @@
-﻿# macOSCompliancePolicy resource type
+# macOSCompliancePolicy resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -31,13 +31,45 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 1 to 24|
 |passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
-|passwordRequiredType|String|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|requiredPasswordType|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |osMinimumVersion|String|Minimum IOS version.|
 |osMaximumVersion|String|Maximum IOS version.|
 |systemIntegrityProtectionEnabled|Boolean|Require that devices have enabled system integrity protection.|
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
-|deviceThreatProtectionRequiredSecurityLevel|String|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|deviceThreatProtectionRequiredSecurityLevel|siteSecurityLevel|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Require encryption on Mac OS devices.|
+
+### deviceThreatProtectionLevel values
+
+| Value
+|:-------------------------
+| unavailable
+| secured
+| low
+| medium
+| high
+| notSet
+
+
+### siteSecurityLevel values
+
+| Value
+|:-------------------------
+| userDefined
+| low
+| mediumLow
+| medium
+| mediumHigh
+| high
+
+
+### requiredPasswordType values
+
+| Value
+|:-------------------------
+| deviceDefault
+| alphanumeric
+| numeric
 
 ## Relationships
 |Relationship|Type|Description|

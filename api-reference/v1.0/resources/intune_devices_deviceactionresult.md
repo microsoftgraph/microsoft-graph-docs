@@ -1,4 +1,4 @@
-﻿# deviceActionResult resource type
+# deviceActionResult resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -7,9 +7,22 @@ Device action result
 |Property|Type|Description|
 |:---|:---|:---|
 |actionName|String|Action name|
-|actionState|String|State of the action Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|actionState|State of the action Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Time the action was initiated|
 |lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated|
+
+### actionState values
+
+| Value
+|:-------------------------
+| none
+| pending
+| canceled
+| active
+| done
+| failed
+| notSupported
+
 
 ## Relationships
 None

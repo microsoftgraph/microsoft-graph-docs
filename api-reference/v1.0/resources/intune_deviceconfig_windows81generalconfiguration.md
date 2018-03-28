@@ -36,13 +36,13 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |browserBlockSingleWordEntryOnIntranetSites|Boolean|Indicates whether or not to block a single word entry on Intranet sites.|
 |browserRequireSmartScreen|Boolean|Indicates whether or not to require the user to use the smart screen filter.|
 |browserEnterpriseModeSiteListLocation|String|The enterprise mode site list location. Could be a local file, local network or http location.|
-|browserInternetSecurityLevel|String|The internet security level. Possible values are: `userDefined`, `medium`, `mediumHigh`, `high`.|
-|browserIntranetSecurityLevel|String|The Intranet security level. Possible values are: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserInternetSecurityLevel|internetSiteSecurityLevel|The internet security level. Possible values are: `userDefined`, `medium`, `mediumHigh`, `high`.|
+|browserIntranetSecurityLevel|internetSiteSecurityLevel|The Intranet security level. Possible values are: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |browserLoggingReportLocation|String|The logging report location.|
 |browserRequireHighSecurityForRestrictedSites|Boolean|Indicates whether or not to require high security for restricted sites.|
 |browserRequireFirewall|Boolean|Indicates whether or not to require a firewall.|
 |browserRequireFraudWarning|Boolean|Indicates whether or not to require fraud warning.|
-|browserTrustedSitesSecurityLevel|String|The trusted sites security level. Possible values are: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserTrustedSitesSecurityLevel|internetSiteSecurityLevel|The trusted sites security level. Possible values are: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |cellularBlockDataRoaming|Boolean|Indicates whether or not to block data roaming.|
 |diagnosticsBlockDataSubmission|Boolean|Indicates whether or not to block diagnostic data submission.|
 |passwordBlockPicturePasswordAndPin|Boolean|Indicates whether or not to Block the user from using a pictures password and pin.|
@@ -51,12 +51,65 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|The minutes of inactivity before the screen times out.|
 |passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
 |passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent re-use of. Valid values 0 to 24|
-|passwordRequiredType|String|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|requiredPasswordType|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|The number of sign in failures before factory reset.|
 |storageRequireDeviceEncryption|Boolean|Indicates whether or not to require encryption on a mobile device.|
 |updatesRequireAutomaticUpdates|Boolean|Indicates whether or not to require automatic updates.|
-|userAccountControlSettings|String|The user account control settings. Possible values are: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
+|userAccountControlSettings|windowsUserAccountControlSettings|The user account control settings. Possible values are: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
 |workFoldersUrl|String|The work folders url.|
+
+### deviceThreatProtectionLevel values
+
+| Value
+|:-------------------------
+| unavailable
+| secured
+| low
+| medium
+| high
+| notSet
+
+
+### windowsUserAccountControlSettings values
+
+| Value
+|:-------------------------
+| userDefined
+| alwaysNotify
+| notifyOnAppChanges
+| notifyOnAppChangesWithoutDimming
+| neverNotify
+
+
+### siteSecurityLevel values
+
+| Value
+|:-------------------------
+| userDefined
+| low
+| mediumLow
+| medium
+| mediumHigh
+| high
+
+
+### internetSiteSecurityLevel values
+
+| Value
+|:-------------------------
+| userDefined
+| medium
+| mediumHigh
+| high
+
+
+### requiredPasswordType values
+
+| Value
+|:-------------------------
+| deviceDefault
+| alphanumeric
+| numeric
 
 ## Relationships
 |Relationship|Type|Description|
