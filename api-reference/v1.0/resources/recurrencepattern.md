@@ -27,7 +27,7 @@ Use the **type** property to specify the different types of **recurrencePattern*
 |index|weekIndex|Specifies on which instance of the allowed days specified in **daysOfsWeek** the event occurs, counted from the first instance in the month. Possible values are: `first`, `second`, `third`, `fourth`, `last`. Default is `first`. Optional and used if **type** is `relativeMonthly` or `relativeYearly`. |
 |interval|Int32|The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the **type**. Required. |
 |month|Int32|The month in which the event occurs.  This is a number from 1 to 12.|
-|type|String|The recurrence pattern type: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Required.|
+|type|recurrencePatternType|The recurrence pattern type: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Required.|
 
 ### weekIndex values
 
@@ -52,6 +52,16 @@ Use the **type** property to specify the different types of **recurrencePattern*
 | friday
 | saturday
 
+### recurrencePatternType values
+
+| Value
+|:-------------------------
+| dailey
+| weekly
+| absoluteMonthly
+| relativeMonthly
+| absoluteYearly
+| relativeYearly
 
 ## JSON representation
 
