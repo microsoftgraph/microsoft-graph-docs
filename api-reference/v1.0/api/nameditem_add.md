@@ -30,7 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |name|string|The name of the named item.|
-|reference|string|The formula or the range that the name will refer to.|
+|reference|Json|The formula or the range that the name will refer to.|
 |comment|string|The comment associated with the named item|
 
 ## Response

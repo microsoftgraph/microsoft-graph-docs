@@ -30,7 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |type|string|Represents the type of a chart.  Possible values are: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie`, `etc.`.|
-|sourceData|string|The Range object corresponding to the source data.|
+|sourceData|Json|The Range object corresponding to the source data.|
 |seriesBy|string|Optional. Specifies the way columns or rows are used as data series on the chart.  Possible values are: `Auto`, `Columns`, `Rows`.|
 
 ## Response

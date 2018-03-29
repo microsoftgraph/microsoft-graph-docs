@@ -27,8 +27,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|startCell|string|The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.|
-|endCell|string|Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.|
+|startCell|Json|The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.|
+|endCell|Json|Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.|
 
 ## Response
 
