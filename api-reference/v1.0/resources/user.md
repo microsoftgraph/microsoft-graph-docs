@@ -134,6 +134,7 @@ Here is a JSON representation of the resource
 
 <!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "appRoleAssignments",
     "calendar",

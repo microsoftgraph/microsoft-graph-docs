@@ -130,9 +130,10 @@ This resource supports:
 
 The following is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.directoryObject",
+  "openType": true,
   "optionalProperties": [
     "acceptedSenders",
     "appRoleAssignments",

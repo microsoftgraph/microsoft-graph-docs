@@ -62,15 +62,16 @@ This resource lets you add your own data to custom properties using [extensions]
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.outlookItem",
+  "openType": true,
   "optionalProperties": [
     "attachments",
     "inReplyTo",
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
+  "baseType": "microsoft.graph.outlookItem",
   "@odata.type": "microsoft.graph.post"
 }-->
 

@@ -117,8 +117,9 @@ by providing a [delta](../api/event_delta.md) function.
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "attachments",
     "calendar",
@@ -127,8 +128,8 @@ Here is a JSON representation of the resource
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
-  "baseType": "microsoft.graph.outlookItem",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.outlookItem",
   "@odata.type": "microsoft.graph.event"
 }-->
 

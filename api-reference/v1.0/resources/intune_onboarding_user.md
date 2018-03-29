@@ -24,6 +24,7 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
+  "openType": true,
   "keyProperty": "id",
   "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.user"
