@@ -37,12 +37,12 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |browserRequireSmartScreen|Boolean|Indicates whether or not to require the user to use the smart screen filter.|
 |browserEnterpriseModeSiteListLocation|String|The enterprise mode site list location. Could be a local file, local network or http location.|
 |browserInternetSecurityLevel|internetSiteSecurityLevel|The internet security level. Possible values are: `userDefined`, `medium`, `mediumHigh`, `high`.|
-|browserIntranetSecurityLevel|internetSiteSecurityLevel|The Intranet security level. Possible values are: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserIntranetSecurityLevel|siteSecurityLevel|The Intranet security level. Possible values are: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |browserLoggingReportLocation|String|The logging report location.|
 |browserRequireHighSecurityForRestrictedSites|Boolean|Indicates whether or not to require high security for restricted sites.|
 |browserRequireFirewall|Boolean|Indicates whether or not to require a firewall.|
 |browserRequireFraudWarning|Boolean|Indicates whether or not to require fraud warning.|
-|browserTrustedSitesSecurityLevel|internetSiteSecurityLevel|The trusted sites security level. Possible values are: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserTrustedSitesSecurityLevel|siteSecurityLevel|The trusted sites security level. Possible values are: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |cellularBlockDataRoaming|Boolean|Indicates whether or not to block data roaming.|
 |diagnosticsBlockDataSubmission|Boolean|Indicates whether or not to block diagnostic data submission.|
 |passwordBlockPicturePasswordAndPin|Boolean|Indicates whether or not to Block the user from using a pictures password and pin.|

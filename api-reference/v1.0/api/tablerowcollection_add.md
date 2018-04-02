@@ -34,7 +34,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |index|Int32|Optional. Specifies the relative position of the new row. If null, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.|
-|values|(boolean or string or number)|Optional. A 2-dimensional array of unformatted values of the table row.|
+|values|Json|Optional. A 2-dimensional array of unformatted values of the table row.|
 
 ## Response
 

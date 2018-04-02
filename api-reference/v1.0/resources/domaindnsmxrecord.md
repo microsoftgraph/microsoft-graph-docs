@@ -16,7 +16,6 @@ Direct queries to this resource are not supported. Please see the [domain](domai
 |recordType|String| Type of DNS record. The value is always *Mx*. Key |
 |supportedService|String| Microsoft Online Service or feature that has a dependency on this MX record.</br></br>Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |ttl|Int32| Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host. Not nullable |
-|canonicalName|string|cname|
 
 ## Relationships
 None
@@ -35,7 +34,6 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",

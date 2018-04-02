@@ -11,8 +11,8 @@ Represents properties of the body of an item, such as a message, event or group 
 ### bodyType values
 | Value
 |:---------
-| Text
-| HTML
+| text
+| html
 
 ## JSON representation
 

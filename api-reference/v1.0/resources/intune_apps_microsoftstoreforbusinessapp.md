@@ -35,8 +35,15 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |usedLicenseCount|Int32|The number of Microsoft Store for Business licenses in use.|
 |totalLicenseCount|Int32|The total number of Microsoft Store for Business licenses.|
 |productKey|String|The app product key|
-|licenseType|String|The app license type Possible values are: `offline`, `online`.|
+|licenseType|microsoftStoreForBusinessLicenseType|The app license type Possible values are: `offline`, `online`.|
 |packageIdentityName|String|The app package identifier|
+
+### microsoftStoreForBusinessLicenseType values
+
+| Value
+|:-----------------
+| offline
+| online
 
 ## Relationships
 |Relationship|Type|Description|

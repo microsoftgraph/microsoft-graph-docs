@@ -13,8 +13,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/TotalRowRange
-POST /workbook/worksheets/{id|name}/tables/{id|name}/TotalRowRange
+POST /workbook/tables/{id|name}/totalRowRange
+POST /workbook/worksheets/{id|name}/tables/{id|name}/totalRowRange
 
 ```
 ## Request headers
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "table_totalrowrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/TotalRowRange
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/totalRowRange
 ```
 
 ##### Response

@@ -22,7 +22,7 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 |comment|string|Represents the comment associated with this name.|
 |scope|string|Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.|
 |type|string|Indicates what type of reference is associated with the name. Possible values are: `String`, `Integer`, `Double`, `Boolean`, `Range`. Read-only.|
-|value|string|Represents the formula that the name is defined to refer to. E.g. =Sheet14!$B$2:$H$12, =4.75, etc. Read-only.|
+|value|Json|Represents the formula that the name is defined to refer to. E.g. =Sheet14!$B$2:$H$12, =4.75, etc. Read-only.|
 |visible|boolean|Specifies whether the object is visible or not.|
 
 ## Relationships
@@ -50,7 +50,7 @@ Here is a JSON representation of the resource.
   "comment": "string",
   "scope": "string",
   "type": "string",
-  "value": "string",
+  "value": {"@odata.type": "microsoft.graph.Json"},
   "visible": true
   
 }

@@ -37,9 +37,9 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |maximumPinRetries|Int32|Maximum number of incorrect pin retry attempts before the managed app is wiped.|
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked.|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True|
-|pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: `numeric`, `alphanumericAndSymbol`.|
+|pinCharacterSet|managedAppPinCharacterSet|Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: `numeric`, `alphanumericAndSymbol`.|
 |periodBeforePinReset|Duration|TimePeriod before the all-level pin must be reset if PinRequired is set to True.|
-|allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data.|
+|allowedDataStorageLocations|managedAppDataStorageLocation collection|Data storage locations where a user may store managed data.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device.|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps.|
 |fingerprintBlocked|Boolean|Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.|
@@ -67,6 +67,20 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 | managedApps
 | none
 
+### managedAppDataStorageLocation values
+
+| Value
+|:-------------------------
+| oneDriveForBusiness
+| sharePoint
+| localStorage
+
+### managedAppPinCharacterSet values
+
+| Value
+|:-------------------------
+| numeric
+| alphanumericAndSymbol
 
 ## Relationships
 None

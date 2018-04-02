@@ -17,7 +17,7 @@ Entity which represents a connection to device management partner.
 |:---|:---|:---|
 |id|String|Not yet documented|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp of last heartbeat after admin enabled option Connect to Device management Partner|
-|partnerState|mobileThreatPartnerTenantState|Partner state of this tenant Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
+|partnerState|deviceManagementPartnerTenantState|Partner state of this tenant Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |partnerAppType|deviceManagementPartnerAppType|Partner App type Possible values are: `unknown`, `singleTenantApp`, `multiTenantApp`.|
 |singleTenantAppId|String|Partner Single tenant App id|
 |displayName|String|Partner display name|
@@ -43,16 +43,6 @@ Entity which represents a connection to device management partner.
 | enabled
 | terminated
 | rejected
-| unresponsive
-
-
-### mobileThreatPartnerTenantState values
-
-| Value
-|:-------------------------
-| unavailable
-| available
-| enabled
 | unresponsive
 
 

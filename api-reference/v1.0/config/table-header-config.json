@@ -23,7 +23,7 @@
       },
       {
         "type": "PathParameters",
-        "titles": [ "Path Parameters", "Parameters" ],
+        "titles": [ "Path Parameters", "Parameters", "Function Parameters" ],
         "parseAs": "ParameterDefinition"
       },
       {

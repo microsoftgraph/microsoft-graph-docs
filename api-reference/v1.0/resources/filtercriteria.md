@@ -21,7 +21,7 @@ Here is a JSON representation of the resource.
   "criterion2": "string",
   "dynamicCriteria": "string",
   "filterOn": "string",
-  "values": "string"
+  "values": {"@odata.type": "microsoft.graph.Json"}
 }
 
 ```

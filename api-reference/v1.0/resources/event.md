@@ -68,7 +68,7 @@ by providing a [delta](../api/event_delta.md) function.
 |responseStatus|[responseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
 |sensitivity|sensitivity| Possible values are: `Normal`, `Personal`, `Private`, `Confidential`.|
 |seriesMasterId|String|The categories assigned to the item.|
-|showAs|String|The status to show. Possible values are: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
+|showAs|freeBusyStatus|The status to show. Possible values are: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event starts.|
 |subject|String|The text of the event's subject line.|
 |type|eventType|The event type. Possible values are: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`. Read-only.|
@@ -100,6 +100,7 @@ by providing a [delta](../api/event_delta.md) function.
 |:-------------------------
 | low
 | normal
+| medium
 | high
 
 

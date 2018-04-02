@@ -30,13 +30,13 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune_onboarding_dev
 |pinUppercaseCharactersUsage|windowsHelloForBusinessPinUsage|Not yet documented Possible values are: `allowed`, `required`, `disallowed`.|
 |pinLowercaseCharactersUsage|windowsHelloForBusinessPinUsage|Not yet documented Possible values are: `allowed`, `required`, `disallowed`.|
 |pinSpecialCharactersUsage|windowsHelloForBusinessPinUsage|Not yet documented Possible values are: `allowed`, `required`, `disallowed`.|
-|state|windowsSpotlightEnablementSettings|Not yet documented Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|state|enablement|Not yet documented Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |securityDeviceRequired|Boolean|Not yet documented|
 |unlockWithBiometricsEnabled|Boolean|Not yet documented|
 |remotePassportEnabled|Boolean|Not yet documented|
 |pinPreviousBlockCount|Int32|Not yet documented|
 |pinExpirationInDays|Int32|Not yet documented|
-|enhancedBiometricsState|windowsSpotlightEnablementSettings|Not yet documented Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|enhancedBiometricsState|enablement|Not yet documented Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 ### enablement values
 
@@ -54,16 +54,6 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune_onboarding_dev
 | allowed
 | required
 | disallowed
-
-
-### windowsSpotlightEnablementSettings values
-
-| Value
-|:-------------------------
-| notConfigured
-| disabled
-| enabled
-
 
 ## Relationships
 |Relationship|Type|Description|

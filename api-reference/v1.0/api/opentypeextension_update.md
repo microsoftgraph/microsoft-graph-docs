@@ -177,7 +177,7 @@ with an `expirationDate` value of `2015-07-03T13:04:00Z`:
 The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "update_opentypeextension"
 }-->
 ```http
@@ -203,7 +203,7 @@ Content-type: application/json
 Here is the response of the second example which shows the updated `expirationDate` in the extension.
 
 <!-- {  
-  "blockType": "response",  
+  "blockType": "ignored",  
   "truncated": true,  
   "@odata.type": "microsoft.graph.opentypeextension"  
 } --> 

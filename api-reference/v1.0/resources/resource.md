@@ -1,4 +1,4 @@
-# resource resource type
+# OneNoteResource resource type
 
 An image or other file resource on a OneNote page. 
 
@@ -6,11 +6,19 @@ You can get the binary data of a resource, but getting a JSON representation of 
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntityBaseModel",
   "optionalProperties": [
 
   ],
   "@odata.type": "microsoft.graph.onenoteResource"
 }-->
+
+```json
+{
+  "content": { "@odata.type": "Edm.Stream" },
+  "contentUrl": "string (url)"
+}
+```
 
 Get the binary data of a specific resource by sending a GET request to the resource's `content` endpoint:
 
@@ -43,7 +51,11 @@ An `object` tag (which represents files such as PDF, DOCX, and PNG) includes the
 ```
 
 ## Properties
-None.
+
+| Property             | Type            | Description
+|:---------------------|:----------------|:---------------------------------
+| content              | Stream          | The content stream
+| contentUrl           | String (url)    | The URL for downloading the content
 
 ## Relationships
 None.

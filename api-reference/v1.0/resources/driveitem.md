@@ -131,9 +131,10 @@ The eTag value is only modified when the folder's properties are changed, except
 | Relationship       | Type                        | Description
 |:-------------------|:----------------------------|:--------------------------
 | content            | Stream                      | The content stream, if the item represents a file.
-| children           | driveitem collection        | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
+| children           | driveItem collection        | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
 | createdByUser      | [user][]                    | Identity of the user who created the item. Read-only.
 | lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.
+| listItem           | [listItem][]                | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
 | permissions        | [permission][] collection   | The set of permissions for the item. Read-only. Nullable.
 | thumbnails         | [thumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
 | workbook           | [workbook][]                | The Excel workbook contents, if the item represents an Excel file.

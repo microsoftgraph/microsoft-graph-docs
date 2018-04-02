@@ -114,7 +114,7 @@ This resource supports:
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects that were created by the user. Read-only. Nullable.|
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. |
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
-|drives|[drive](drive.md) collection. | A collection of drives available for this user. Read-only. |
+|drives|[drive](drive.md) collection| A collection of drives available for this user. Read-only. |
 |events|[Event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Read-only. Nullable.|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance. |
@@ -122,7 +122,7 @@ This resource supports:
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups and directory roles that the user is a member of. Read-only. Nullable.|
 |messages|[Message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
-|onenote|[OneNote](onenote.md)| Read-only.|
+|onenote|[Onenote](onenote.md)| Read-only.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|

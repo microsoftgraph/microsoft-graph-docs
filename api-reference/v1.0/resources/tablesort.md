@@ -15,13 +15,9 @@ Manages sorting operations on Table objects.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|fields|[WorkbookSortField](sortfield.md) collection|Represents the current conditions used to last sort the table. Read-only.|
 |matchCase|boolean|Represents whether the casing impacted the last sort of the table. Read-only.|
 |method|string|Represents Chinese character ordering method last used to sort the table. Possible values are: `PinYin`, `StrokeCount`. Read-only.|
-
-## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|fields|[WorkbookSortField](sortfield.md)|Represents the current conditions used to last sort the table. Read-only.|
 
 ## JSON representation
 

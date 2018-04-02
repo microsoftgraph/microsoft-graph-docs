@@ -68,7 +68,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |defenderBlockEndUserAccess|Boolean|Whether or not to block end user access to Defender.|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|Number of days before deleting quarantined malware. Valid values 0 to 90|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune_deviceconfig_defenderdetectedmalwareactions.md)|Gets or sets Defender’s actions to take on detected Malware per threat level.|
-|defenderSystemScanSchedule|dayOfWeek|Defender day of the week for the system scan. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|defenderSystemScanSchedule|weeklySchedule|Defender day of the week for the system scan. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |defenderFilesAndFoldersToExclude|String collection|Files and folder to exclude from scans and real time protection.|
 |defenderFileExtensionsToExclude|String collection|File extensions to exclude from scans and real time protection.|
 |defenderScanMaxCpu|Int32|Max CPU usage percentage during scan. Valid values 0 to 100|

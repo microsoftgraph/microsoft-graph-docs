@@ -49,7 +49,7 @@ Here is a JSON representation of the resource.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|pages|[Page](page.md) collection|The collection of pages in the section.  Read-only. Nullable.|
+|pages|[OnenotePage](page.md) collection|The collection of pages in the section.  Read-only. Nullable.|
 |parentNotebook|[Notebook](notebook.md)|The notebook that contains the section.  Read-only.|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)|The section group that contains the section.  Read-only.|
 

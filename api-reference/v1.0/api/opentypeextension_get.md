@@ -312,7 +312,7 @@ Content-type: application/json
 The fourth example references an extension by its fully qualified name and gets the extension in the specified group post.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_opentypeextension_4"
 }-->
 ```http
@@ -324,7 +324,7 @@ GET https://graph.microsoft.com/v1.0/groups/{group-id}/threads/{thread-id}/posts
 Here is the response from the fourth example. 
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": false,
   "@odata.type": "microsoft.graph.opentypeextension"
 } -->

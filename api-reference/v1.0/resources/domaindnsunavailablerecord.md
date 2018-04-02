@@ -27,14 +27,12 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "canonicalName": "String",
   "description": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
   "recordType": "String",
   "supportedService": "String",
-  "text": "String",
   "ttl": 1024
 }
 

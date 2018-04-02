@@ -46,8 +46,8 @@ Here is a JSON representation of the resource, which is sent in the body of the 
 
 | Value
 |:-------------------------
-| after
-| before
+| After
+| Before
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

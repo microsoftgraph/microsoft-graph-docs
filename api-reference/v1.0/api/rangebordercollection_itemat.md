@@ -29,7 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|index|number|Index value of the object to be retrieved. Zero-indexed.|
+|index|Int32|Index value of the object to be retrieved. Zero-indexed.|
 
 ## Response
 
@@ -50,8 +50,7 @@ Content-type: application/json
 Content-length: 20
 
 {
-  "index": {
-  }
+  "index": 1
 }
 ```
 

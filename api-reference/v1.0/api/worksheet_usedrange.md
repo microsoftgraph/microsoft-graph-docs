@@ -13,12 +13,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/UsedRange
+GET /workbook/worksheets/{id|name}/usedRange
 
 ```
 
-## Optional request parameter
-In the request URL, provide an optional query parameter.
+## Parameters
+In the request URL you may provide optional parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -43,7 +43,7 @@ Here is an example of the request.
   "name": "worksheet_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange(valuesOnly=true)
 ```
 
 ##### Response

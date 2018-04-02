@@ -134,7 +134,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |passcodeMinimumCharacterSetCount|Int32|Number of character sets a passcode must contain. Valid values 0 to 4|
 |passcodePreviousPasscodeBlockCount|Int32|Number of previous passcodes to block. Valid values 1 to 24|
 |passcodeSignInFailureCountBeforeWipe|Int32|Number of sign in failures allowed before wiping the device. Valid values 4 to 11|
-|passcodeRequiredType|androidRequiredPasswordType|Type of passcode that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passcodeRequiredType|requiredPasswordType|Type of passcode that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Boolean|Indicates whether or not to require a passcode.|
 |podcastsBlocked|Boolean|Indicates whether or not to block the user from using podcasts on the supervised device (iOS 8.0 and later).|
 |safariBlockAutofill|Boolean|Indicates whether or not to block the user from using Auto fill in Safari.|
@@ -184,21 +184,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 | allowCurrentWebSite
 | allowFromWebsitesVisited
 | allowAlways
-
-
-### androidRequiredPasswordType values
-
-| Value
-|:-------------------------
-| deviceDefault
-| alphabetic
-| alphanumeric
-| alphanumericWithSymbols
-| lowSecurityBiometric
-| numeric
-| numericComplex
-| any
-
 
 ### appListType values
 

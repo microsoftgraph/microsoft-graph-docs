@@ -57,8 +57,16 @@ Here is a JSON representation of a **baseItem** resource.
 | parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-write.                              |
 | webUrl               | string (url)      | URL that displays the resource in the browser. Read-only.                              |
 
+## Relationships
+
+| Relationship       | Type     | Description
+|:-------------------|:---------|:---------------------------------------------
+| createdByUser      | [user][] | Identity of the user who created the item. Read-only.
+| lastModifiedByUser | [user][] | Identity of the user who last modified the item. Read-only.
+
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
+[user]: user.md
 
 ## Remarks
 

@@ -20,7 +20,7 @@ Device Configuration State for a given device.
 |displayName|String|The name of the policy for this policyBase|
 |version|Int32|The version of the policy|
 |platformType|policyPlatformType|Platform type that the policy applies to Possible values are: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
-|state|complianceState|The compliance state of the policy Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|state|complianceStatus|The compliance state of the policy Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |settingCount|Int32|Count of how many setting a policy holds|
 
 ### policyPlatformType values
@@ -35,17 +35,17 @@ Device Configuration State for a given device.
 | windows10AndLater
 | all
 
-### complianceState values
+### complianceStatus values
 
 | Value
 |:-------------------------
 | unknown
+| notApplicable
 | compliant
-| noncompliant
-| conflict
+| remediated
+| nonCompliant
 | error
-| inGracePeriod
-| configManager
+| conflict
 
 ## Relationships
 None

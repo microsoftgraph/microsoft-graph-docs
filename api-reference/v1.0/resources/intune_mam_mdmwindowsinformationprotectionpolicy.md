@@ -68,7 +68,7 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.windowsInformationProtection",
   "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy"
 }
 -->

@@ -36,7 +36,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |osMaximumVersion|String|Maximum IOS version.|
 |systemIntegrityProtectionEnabled|Boolean|Require that devices have enabled system integrity protection.|
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
-|deviceThreatProtectionRequiredSecurityLevel|siteSecurityLevel|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|deviceThreatProtectionRequiredSecurityLevel|deviceThreatProtectionLevel|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Require encryption on Mac OS devices.|
 
 ### deviceThreatProtectionLevel values
@@ -49,19 +49,6 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 | medium
 | high
 | notSet
-
-
-### siteSecurityLevel values
-
-| Value
-|:-------------------------
-| userDefined
-| low
-| mediumLow
-| medium
-| mediumHigh
-| high
-
 
 ### requiredPasswordType values
 

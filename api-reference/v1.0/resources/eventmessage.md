@@ -61,7 +61,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an at
 |isRead|Boolean|Indicates whether the message has been read.|
 |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the message was last changed.|
-|meetingMessageType|String| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
+|meetingMessageType|meetingMessageType| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
@@ -71,6 +71,17 @@ Aside from a meeting request, an **eventMessage** instance can be found in an at
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
 |uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message.|
 |webLink|String|The URL to open the message in Outlook Web App.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook Web App review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL can be accessed from within an iFrame.|
+
+### meetingMessageType values
+
+| Values
+|:-----------------
+| none
+| meetingRequest
+| meetingCancelled
+| meetingAccepted
+| meetingTetativelyAccepted
+| meetingDeclined
 
 ## Relationships
 | Relationship | Type	|Description|

@@ -56,7 +56,7 @@ Use the **type** property to specify the different types of **recurrencePattern*
 
 | Value
 |:-------------------------
-| dailey
+| daily
 | weekly
 | absoluteMonthly
 | relativeMonthly

@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/<name>/range/Row
+POST /workbook/names/<name>/range/row
 POST /workbook/worksheets/{id|name}/range(address='<address>')/Row
 POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
 
@@ -29,7 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|row|number|Row number of the range to be retrieved. Zero-indexed.|
+|row|Int32|Row number of the range to be retrieved. Zero-indexed.|
 
 ## Response
 
@@ -50,8 +50,7 @@ Content-type: application/json
 Content-length: 18
 
 {
-  "row": {
-  }
+  "row": 2
 }
 ```
 

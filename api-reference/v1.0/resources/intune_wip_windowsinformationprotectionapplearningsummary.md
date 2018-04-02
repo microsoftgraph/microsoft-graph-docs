@@ -17,8 +17,15 @@ Windows Information Protection AppLearning Summary entity.
 |:---|:---|:---|
 |id|String|Unique Identifier for the WindowsInformationProtectionAppLearningSummary.|
 |applicationName|String|Application Name|
-|applicationType|String|Application Type Possible values are: `universal`, `desktop`.|
+|applicationType|applicationType|Application Type Possible values are: `universal`, `desktop`.|
 |deviceCount|Int32|Device Count|
+
+### applicationType values
+
+| Value
+|:-----------------
+| universal
+| desktop
 
 ## Relationships
 None

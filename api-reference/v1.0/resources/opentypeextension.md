@@ -41,7 +41,7 @@ Here is a JSON representation of the resource.
   "openType": true,
   "optionalProperties": [],
   "baseType": "microsoft.graph.extension",
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 }-->
 
 ```json

@@ -7,7 +7,15 @@ Abstract entity used to model the commonality between different organization typ
 |:---------------|:--------|:----------|
 |description|String| Organization description.|
 |displayName|String| Organization display name.|
-|externalSource|string| Source where this organization was created from. Possible values are: `sis`, `manual`, `unknownFutureValue`.|
+|externalSource|educationExternalSource| Source where this organization was created from. Possible values are: `sis`, `manual`, `unknownFutureValue`.|
+
+### educationExternalSource values
+
+| Value
+|:-------------
+| sis
+| manual
+| unknownFutureValue
 
 ## Relationships
 None.

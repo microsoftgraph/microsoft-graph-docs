@@ -31,7 +31,7 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.userREMOVEME"
+  "@odata.type": "microsoft.graph.user"
 }
 -->
 ``` json

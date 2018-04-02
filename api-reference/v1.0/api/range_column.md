@@ -13,9 +13,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/<name>/range/Column
-GET /workbook/worksheets/{id|name}/range(address='<address>')/Column
-GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
+GET /workbook/names/<name>/range/column
+GET /workbook/worksheets/{id|name}/range(address='<address>')/column
+GET /workbook/tables/{id|name}/columns/{id|name}/range/column
 
 ```
 ## Request headers
@@ -29,7 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|column|number|Column number of the range to be retrieved. Zero-indexed.|
+|column|Int32|Column number of the range to be retrieved. Zero-indexed.|
 
 ## Response
 
@@ -44,13 +44,12 @@ Here is an example of the request.
   "name": "range_column"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/<name>/range/Column
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/<name>/range/column
 Content-type: application/json
 Content-length: 21
 
 {
-  "column": {
-  }
+  "column": 5
 }
 ```
 

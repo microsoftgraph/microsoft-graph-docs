@@ -89,6 +89,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | items        | [DriveItem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
 | root         | [DriveItem](driveitem.md)            | The root folder of the drive. Read-only.
 | special      | [DriveItem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
+| list         | [List](list.md)                      | For drives in SharePoint, the underlying document library list. Read-only. Nullable.
 
 ## Methods
 

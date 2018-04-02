@@ -26,7 +26,15 @@ An abstract class containing the base properties for Intune mobile apps.
 |owner|String|The owner of the app.|
 |developer|String|The developer of the app.|
 |notes|String|Notes for the app.|
-|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Possible values are: `notPublished`, `processing`, `published`.|
+|publishingState|mobileAppPublishingState|The publishing state for the app. The app cannot be assigned unless the app is published. Possible values are: `notPublished`, `processing`, `published`.|
+
+### mobileAppPublishingState values
+
+| Value
+|:-----------------
+| notPublished
+| processing
+| published
 
 ## Relationships
 |Relationship|Type|Description|
