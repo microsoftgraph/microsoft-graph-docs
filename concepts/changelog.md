@@ -4,6 +4,49 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## April 2018
+
+### Outlook calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0          | Added the **locations** property to the [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event) entity to support organizing an event that attendees can attend from more than one location. |
+| Addition        | v1.0          | Added the **locationType** property to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/location) complex type. |
+| Addition        | v1.0          | Added the **uniqueId** and **uniqueIdType** properties to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/location) complex type. These properties are only for internal use at this point. |
+
+
+### Outlook contacts
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | v1.0          | Added the **flag** property to the [contact](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact) entity. Added the shared [followupFlag](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/followupflag) complex type.|
+
+
+### Outlook mail
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | v1.0          | Added the **flag** property to the [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message) entity. Added the shared [followupFlag](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/followupflag) complex type.|
+| Addition        | v1.0        | Added the **internetMessageHeaders** property to the [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message) entity. |
+| Addition        | v1.0        | Added the [internetMessageHeader](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/internetmessageheader) complex type. |
+| Addition        | v1.0        | Added the **messageRules** navigation property to the [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/mailfolder) entity. **messageRules** is a collection of [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/messagerule) instances. |
+| Addition        | v1.0        | Added the [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/messagerule) entity, and [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/messagerulepredicates), and [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/sizerange) complex types. |
+| Addition        | v1.0        | Added the following CRUD operations for message rules: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/messagerule_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/messagerule_update), and [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/messagerule_delete). |
+
+
+### Outlook user choices
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | v1.0        | Added the new **masterCategories** navigation property to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/outlookuser) entity. **masterCategories** is a collection of [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/outlookCategory) objects. |
+| Addition        | v1.0        | Added the [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/outlookCategory) entity. |
+| Addition        | v1.0        | Added the following CRUD operations for [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/outlookCategory): [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/outlookuser_post_mastercategories), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/outlookcategory_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/outlookcategory_update), and [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/outlookcategory_delete). |
+| Addition        | v1.0        | Added the new [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/outlookuser_supportedlanguages) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/outlookuser) entity. |
+| Addition        | v1.0        | Added the new [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/outlookuser_supportedtimezones) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/outlookuser) entity. |
+|Addition | v1.0 | Added the new **workingHours** property to [mailboxSettings](../api-reference/v1.0/resources/mailboxsettings.md). See [workingHours resource type](../api-reference/v1.0/resources/workinghours.md) for information on the supported use cases.|
+|Addition | v1.0 | Added the following new complex types: <br> [workingHours](../api-reference/v1.0/resources/workinghours.md) <br> [timeZoneBase](../api-reference/v1.0/resources/timezonebase.md) <br> [customTimeZone](../api-reference/v1.0/resources/customtimezone.md) <br> [standardTimeZoneOffset](../api-reference/v1.0/resources/standardtimezoneoffset.md) <br> [daylightTimeZoneOffset](../api-reference/v1.0/resources/daylighttimezoneoffset.md)|
+
+
 ## March 2018
 
 ### ActivityFeedService APIs
