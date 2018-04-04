@@ -4,6 +4,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## April 2018
+
+### Security APIs
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta       | Added [Security API](https://github.com/edwardkoval/microsoft-graph-docs/pull/1/files)
+
 ## March 2018
 
 ### ActivityFeedService APIs
