@@ -4,6 +4,16 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## April 2018
+
+### Outlook mail
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | Beta | Added [mailSearchFolder](../api-reference/beta/resources/mailsearchfolder.md). |
+| Addition | Beta | Added the following APIs for mail search folder: [Create](../api-reference/beta/api/mailsearchfolder_post.md), [Update](../api-reference/beta/api/mailsearchfolder_update.md). |
+| Change | Beta | Added support for mail search folder to [delete mailFolder](../api-reference/beta/api/mailfolder_delete.md), [get mailFolder](../api-reference/beta/api/mailfolder_get.md), and [list child folders](../api-reference/beta/api/mailfolder_list_childfolders.md). |
+
 ## March 2018
 
 ### ActivityFeedService APIs
