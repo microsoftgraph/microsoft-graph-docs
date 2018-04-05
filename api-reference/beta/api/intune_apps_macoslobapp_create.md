@@ -50,13 +50,18 @@ The following table shows the properties that are required when you create the m
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |bundleId|String|The Identity Name.|
-|minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+|minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune_apps_macosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+|buildNumber|String|The build number of MacOS Line of Business (LoB) app.|
 |versionNumber|String|The version number of MacOS Line of Business (LoB) app.|
+|childApps|[macOSLobChildApp](../resources/intune_apps_macoslobchildapp.md) collection|The app list in this bundle package|
+|identityVersion|String|The identity version.|
+|md5HashChunkSize|Int32|The chunk size for MD5 hash|
+|md5Hash|String collection|The MD5 hash codes|
 
 
 
@@ -69,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1053
+Content-length: 1491
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -89,19 +94,36 @@ Content-length: 1053
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
   "bundleId": "Bundle Id value",
   "minimumSupportedOperatingSystem": {
-    "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
-    "v8_0": true,
-    "v9_0": true,
-    "v10_0": true,
-    "v11_0": true
+    "@odata.type": "microsoft.graph.macOSMinimumOperatingSystem",
+    "v10_7": true,
+    "v10_8": true,
+    "v10_9": true,
+    "v10_10": true,
+    "v10_11": true,
+    "v10_12": true,
+    "v10_13": true
   },
-  "versionNumber": "Version Number value"
+  "buildNumber": "Build Number value",
+  "versionNumber": "Version Number value",
+  "childApps": [
+    {
+      "@odata.type": "microsoft.graph.macOSLobChildApp",
+      "bundleId": "Bundle Id value",
+      "buildNumber": "Build Number value",
+      "versionNumber": "Version Number value"
+    }
+  ],
+  "identityVersion": "Identity Version value",
+  "md5HashChunkSize": 0,
+  "md5Hash": [
+    "Md5Hash value"
+  ]
 }
 ```
 
@@ -110,7 +132,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1161
+Content-Length: 1599
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -132,19 +154,36 @@ Content-Length: 1161
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
-  "identityVersion": "Identity Version value",
   "bundleId": "Bundle Id value",
   "minimumSupportedOperatingSystem": {
-    "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
-    "v8_0": true,
-    "v9_0": true,
-    "v10_0": true,
-    "v11_0": true
+    "@odata.type": "microsoft.graph.macOSMinimumOperatingSystem",
+    "v10_7": true,
+    "v10_8": true,
+    "v10_9": true,
+    "v10_10": true,
+    "v10_11": true,
+    "v10_12": true,
+    "v10_13": true
   },
-  "versionNumber": "Version Number value"
+  "buildNumber": "Build Number value",
+  "versionNumber": "Version Number value",
+  "childApps": [
+    {
+      "@odata.type": "microsoft.graph.macOSLobChildApp",
+      "bundleId": "Bundle Id value",
+      "buildNumber": "Build Number value",
+      "versionNumber": "Version Number value"
+    }
+  ],
+  "identityVersion": "Identity Version value",
+  "md5HashChunkSize": 0,
+  "md5Hash": [
+    "Md5Hash value"
+  ]
 }
 ```
 

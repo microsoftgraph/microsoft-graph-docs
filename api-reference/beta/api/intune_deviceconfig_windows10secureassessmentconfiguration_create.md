@@ -48,9 +48,6 @@ The following table shows the properties that are required when you create the w
 |allowPrinting|Boolean|Indicates whether or not to allow the app from printing during the test.|
 |allowScreenCapture|Boolean|Indicates whether or not to allow screen capture capability during a test.|
 |allowTextSuggestion|Boolean|Indicates whether or not to allow text suggestions during the test.|
-|printerNames|String collection|Automatically provision printers based on their names (network host names).|
-|defaultPrinterName|String|Name (network host name) of an installed printer.|
-|blockAddingNewPrinter|Boolean|Prevent user installation of additional printers from printers settings.|
 
 
 
@@ -63,7 +60,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 614
+Content-length: 471
 
 {
   "@odata.type": "#microsoft.graph.windows10SecureAssessmentConfiguration",
@@ -76,12 +73,7 @@ Content-length: 614
   "configurationAccountType": "domainAccount",
   "allowPrinting": true,
   "allowScreenCapture": true,
-  "allowTextSuggestion": true,
-  "printerNames": [
-    "Printer Names value"
-  ],
-  "defaultPrinterName": "Default Printer Name value",
-  "blockAddingNewPrinter": true
+  "allowTextSuggestion": true
 }
 ```
 
@@ -90,7 +82,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 722
+Content-Length: 579
 
 {
   "@odata.type": "#microsoft.graph.windows10SecureAssessmentConfiguration",
@@ -105,12 +97,7 @@ Content-Length: 722
   "configurationAccountType": "domainAccount",
   "allowPrinting": true,
   "allowScreenCapture": true,
-  "allowTextSuggestion": true,
-  "printerNames": [
-    "Printer Names value"
-  ],
-  "defaultPrinterName": "Default Printer Name value",
-  "blockAddingNewPrinter": true
+  "allowTextSuggestion": true
 }
 ```
 

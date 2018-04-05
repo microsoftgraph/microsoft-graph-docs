@@ -9,11 +9,11 @@ Since the **organization** resource supports [extensions](../../../concepts/exte
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
+|Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Delegated (work or school account) | User.Read, Directory.Read.All |
+|Delegated (personal Microsoft account) | Not supported. |
+|Application | Directory.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

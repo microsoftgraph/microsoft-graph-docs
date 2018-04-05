@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1238
+Content-Length: 1309
 
 {
   "value": {
@@ -79,7 +79,9 @@ Content-Length: 1238
     "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
     "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
     "businessReadyUpdatesOnly": "all",
-    "previewBuildSetting": "allowed"
+    "previewBuildSetting": "allowed",
+    "skipChecksBeforeRestart": true,
+    "updateWeeks": "firstWeek"
   }
 }
 ```

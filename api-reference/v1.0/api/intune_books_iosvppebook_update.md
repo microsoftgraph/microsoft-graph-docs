@@ -41,7 +41,7 @@ The following table shows the properties that are required when you create the [
 |publishedDateTime|DateTimeOffset|The date and time when the eBook was published. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Book cover. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |createdDateTime|DateTimeOffset|The date and time when the eBook file was created. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time when teh eBook was last modified. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the eBook was last modified. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |informationUrl|String|The more information Url. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |privacyInformationUrl|String|The privacy statement Url. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |vppTokenId|Guid|The Vpp token ID.|

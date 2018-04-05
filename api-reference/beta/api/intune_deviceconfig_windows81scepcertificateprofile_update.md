@@ -45,8 +45,8 @@ The following table shows the properties that are required when you create the [
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |renewalThresholdPercentage|Int32|Certificate renewal threshold percentage. Valid values 1 to 99 Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md)|
 |keyStorageProvider|String|Key Storage Provider (KSP) Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md) Possible values are: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
-|subjectNameFormat|String|Certificate Subject Name Format Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md) Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`.|
-|subjectAlternativeNameType|String|Certificate Subject Alternative Name Type Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md) Possible values are: `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
+|subjectNameFormat|String|Certificate Subject Name Format Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md) Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
+|subjectAlternativeNameType|String|Certificate Subject Alternative Name Type Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md) Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md)|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md) Possible values are: `days`, `months`, `years`.|
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune_deviceconfig_extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements. Inherited from [windows81CertificateProfileBase](../resources/intune_deviceconfig_windows81certificateprofilebase.md)|
@@ -56,6 +56,7 @@ The following table shows the properties that are required when you create the [
 |keySize|String|SCEP Key Size. Possible values are: `size1024`, `size2048`.|
 |hashAlgorithm|String|SCEP Hash Algorithm. Possible values are: `sha1`, `sha2`.|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
+|certificateStore|String|Target store certificate Possible values are: `user`, `machine`.|
 
 
 
@@ -68,7 +69,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 934
+Content-length: 963
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -78,7 +79,7 @@ Content-length: 934
   "renewalThresholdPercentage": 10,
   "keyStorageProvider": "useTpmKspOtherwiseFail",
   "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "userPrincipalName",
+  "subjectAlternativeNameType": "emailAddress",
   "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "extendedKeyUsages": [
@@ -95,7 +96,8 @@ Content-length: 934
   "keyUsage": "digitalSignature",
   "keySize": "size2048",
   "hashAlgorithm": "sha2",
-  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+  "certificateStore": "machine"
 }
 ```
 
@@ -104,7 +106,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1112
+Content-Length: 1141
 
 {
   "@odata.type": "#microsoft.graph.windows81SCEPCertificateProfile",
@@ -117,7 +119,7 @@ Content-Length: 1112
   "renewalThresholdPercentage": 10,
   "keyStorageProvider": "useTpmKspOtherwiseFail",
   "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "userPrincipalName",
+  "subjectAlternativeNameType": "emailAddress",
   "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "extendedKeyUsages": [
@@ -134,7 +136,8 @@ Content-Length: 1112
   "keyUsage": "digitalSignature",
   "keySize": "size2048",
   "hashAlgorithm": "sha2",
-  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+  "certificateStore": "machine"
 }
 ```
 

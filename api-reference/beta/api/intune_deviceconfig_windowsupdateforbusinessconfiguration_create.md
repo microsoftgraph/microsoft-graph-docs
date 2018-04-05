@@ -56,6 +56,8 @@ The following table shows the properties that are required when you create the w
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Feature Updates Pause Expiry datetime|
 |businessReadyUpdatesOnly|String|Determines which branch devices will receive their updates from Possible values are: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
 |previewBuildSetting|String|Set the insider build control in the advanced options for Windows Update Possible values are: `userDefined`, `allowed`, `notAllowed`.|
+|skipChecksBeforeRestart|Boolean|Set to skip all check before restart: Battery level = 40%, User presence, Display Needed, Presentation mode, Full screen mode, phone call state, game mode etc. |
+|updateWeeks|String|Scheduled the update installation on the weeks of the month Possible values are: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
 
 
 
@@ -68,7 +70,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1059
+Content-length: 1126
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -94,7 +96,9 @@ Content-length: 1059
   "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
   "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
   "businessReadyUpdatesOnly": "all",
-  "previewBuildSetting": "allowed"
+  "previewBuildSetting": "allowed",
+  "skipChecksBeforeRestart": true,
+  "updateWeeks": "firstWeek"
 }
 ```
 
@@ -103,7 +107,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1167
+Content-Length: 1234
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -131,7 +135,9 @@ Content-Length: 1167
   "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
   "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
   "businessReadyUpdatesOnly": "all",
-  "previewBuildSetting": "allowed"
+  "previewBuildSetting": "allowed",
+  "skipChecksBeforeRestart": true,
+  "updateWeeks": "firstWeek"
 }
 ```
 

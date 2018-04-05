@@ -27,7 +27,36 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |localSecurityOptionsBlockMicrosoftAccounts|Boolean|Prevent users from adding new Microsoft accounts to this computer.|
-|localSecurityOptionsEnableAdministratorAccount|Boolean|Determines whether the local Administrator account is enabled or disabled.|
+|localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|Enable Local accounts that are not password protected to log on from locations other than the physical device.Default is enabled|
+|localSecurityOptionsEnableAdministratorAccount|Boolean|Determines whether the Local Administrator account is enabled or disabled.|
+|localSecurityOptionsAdministratorAccountName|String|Define a different account name to be associated with the security identifier (SID) for the account “Administrator”.|
+|localSecurityOptionsEnableGuestAccount|Boolean|Determines if the Guest account is enabled or disabled.|
+|localSecurityOptionsGuestAccountName|String|Define a different account name to be associated with the security identifier (SID) for the account “Guest”.|
+|localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|Prevent a portable computer from being undocked without having to log in.|
+|localSecurityOptionsBlockUsersInstallingPrinterDrivers|Boolean|Restrict installing printer drivers as part of connecting to a shared printer to admins only.|
+|localSecurityOptionsBlockRemoteOpticalDriveAccess|Boolean|Enabling this settings allows only interactively logged on user to access CD-ROM media.|
+|localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser|String|Define who is allowed to format and eject removable NTFS media. Possible values are: `notConfigured`, `administrators`, `administratorsAndPowerUsers`, `administratorsAndInteractiveUsers`.|
+|localSecurityOptionsMachineInactivityLimit|Int32|Define maximum minutes of inactivity on the interactive desktop’s login screen until the screen saver runs.|
+|localSecurityOptionsDoNotRequireCtrlAltDel|Boolean|Require CTRL+ALT+DEL to be pressed before a user can log on.|
+|localSecurityOptionsInformationDisplayedOnLockScreen|String|Configure the user information that is displayed when the session is locked. If not configured, user display name, domain and username are shown Possible values are: `notConfigured`, `administrators`, `administratorsAndPowerUsers`, `administratorsAndInteractiveUsers`.|
+|localSecurityOptionsHideLastSignedInUser|Boolean|Do not display the username of the last person who signed in on this device.|
+|localSecurityOptionsHideUsernameAtSignIn|Boolean|Do not display the username of the person signing in to this device after credentials are entered and before the device’s desktop is shown.|
+|localSecurityOptionsLogOnMessageTitle|String|Set message title for users attempting to log in.|
+|localSecurityOptionsLogOnMessageText|String|Set message text for users attempting to log in.|
+|localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|Block PKU2U authentication requests to this device to use online identities.|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|Edit the default Security Descriptor Definition Language string to allow or deny users and groups to make remote calls to the SAM.|
+|localSecurityOptionsClearVirtualMemoryPageFile|Boolean|This security setting determines whether the virtual memory pagefile is cleared when the system is shut down.|
+|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Boolean|This security setting determines whether a computer can be shut down without having to log on to Windows.|
+|localSecurityOptionsAllowUIAccessApplicationElevation|Boolean|Allow UIAccess apps to prompt for elevation without using the secure desktop.|
+|localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations|Boolean|Virtualize file and registry write failures to per user locations|
+|localSecurityOptionsOnlyElevateSignedExecutables|Boolean|Enforce PKI certification path validation for a given executable file before it is permitted to run.|
+|localSecurityOptionsAdministratorElevationPromptBehavior|String|Define the behavior of the elevation prompt for admins in Admin Approval Mode. Possible values are: `notConfigured`, `elevateWithoutPrompting`, `promptForCredentialsOnTheSecureDesktop`, `promptForConsentOnTheSecureDesktop`, `promptForCredentials`, `promptForConsent`, `promptForConsentForNonWindowsBinaries`.|
+|localSecurityOptionsStandardUserElevationPromptBehavior|String|Define the behavior of the elevation prompt for standard users. Possible values are: `notConfigured`, `automaticallyDenyElevationRequests`, `promptForCredentialsOnTheSecureDesktop`, `promptForCredentials`.|
+|localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|Boolean|Enable all elevation requests to go to the interactive user's desktop rather than the secure desktop. Prompt behavior policy settings for admins and standard users are used.|
+|localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|Boolean|App installations requiring elevated privileges will prompt for admin credentials.Default is enabled|
+|localSecurityOptionsAllowUIAccessApplicationsForSecureLocations|Boolean|Allow UIAccess apps to prompt for elevation without using the secure desktop.Default is enabled|
+|localSecurityOptionsUseAdminApprovalMode|Boolean|Defines whether the built-in admin account uses Admin Approval Mode or runs all apps with full admin privileges.Default is enabled|
+|localSecurityOptionsUseAdminApprovalModeForAdministrators|Boolean|Define whether Admin Approval Mode and all UAC policy settings are enabled, default is enabled|
 |defenderSecurityCenterDisableAppBrowserUI|Boolean|Used to disable the display of the app and browser protection area.|
 |defenderSecurityCenterDisableFamilyUI|Boolean|Used to disable the display of the family options area.|
 |defenderSecurityCenterDisableHealthUI|Boolean|Used to disable the display of the device performance and health area.|
@@ -64,7 +93,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |defenderUntrustedUSBProcessType|String|Value indicating response to untrusted and unsigned processes that run from USB Possible values are: `userDefined`, `block`, `auditMode`.|
 |defenderUntrustedExecutableType|String|Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria Possible values are: `userDefined`, `block`, `auditMode`.|
 |defenderEmailContentExecutionType|String|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client) Possible values are: `userDefined`, `block`, `auditMode`.|
-|defenderPasswordProtectedEmailContentExecutionType|String|Value indicating if execution of password-protected executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client) Possible values are: `userDefined`, `block`, `auditMode`.|
 |defenderAdvancedRansomewareProtectionType|String|Value indicating use of advanced protection against ransomeware Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderGuardMyFoldersType|String|Value indicating the behavior of protected folders Possible values are: `userDefined`, `enable`, `auditMode`, `blockDiskModification`, `auditDiskModification`.|
 |defenderGuardedFoldersAllowedAppPaths|String collection|List of paths to exe that are allowed to access protected folders|
@@ -74,6 +102,9 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |defenderExploitProtectionXmlFileName|String|Name of the file from which DefenderExploitProtectionXml was obtained.|
 |defenderSecurityCenterBlockExploitProtectionOverride|Boolean|Indicates whether or not to block user from overriding Exploit Protection settings.|
 |appLockerApplicationControl|String|Enables the Admin to choose what types of app to allow on devices. Possible values are: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
+|deviceGuardLocalSystemAuthorityCredentialGuardSettings|String|Turn on Credential Guard when Platform Security Level with Secure Boot and Virtualization Based Security are both enabled. Possible values are: `notConfigured`, `enableWithUEFILock`, `enableWithoutUEFILock`.|
+|deviceGuardEnableVirtualizationBasedSecurity|Boolean|Turns On Virtualization Based Security(VBS).|
+|deviceGuardEnableSecureBootWithDMA|Boolean|Specifies whether Platform Security Level is enabled at next reboot.|
 |smartScreenEnableInShell|Boolean|Allows IT Admins to configure SmartScreen for Windows.|
 |smartScreenBlockOverrideForFiles|Boolean|Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.|
 |applicationGuardEnabled|Boolean|Enable Windows Defender Application Guard|
@@ -124,7 +155,36 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "version": 1024,
   "localSecurityOptionsBlockMicrosoftAccounts": true,
+  "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
   "localSecurityOptionsEnableAdministratorAccount": true,
+  "localSecurityOptionsAdministratorAccountName": "String",
+  "localSecurityOptionsEnableGuestAccount": true,
+  "localSecurityOptionsGuestAccountName": "String",
+  "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
+  "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
+  "localSecurityOptionsBlockRemoteOpticalDriveAccess": true,
+  "localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser": "String",
+  "localSecurityOptionsMachineInactivityLimit": 1024,
+  "localSecurityOptionsDoNotRequireCtrlAltDel": true,
+  "localSecurityOptionsInformationDisplayedOnLockScreen": "String",
+  "localSecurityOptionsHideLastSignedInUser": true,
+  "localSecurityOptionsHideUsernameAtSignIn": true,
+  "localSecurityOptionsLogOnMessageTitle": "String",
+  "localSecurityOptionsLogOnMessageText": "String",
+  "localSecurityOptionsAllowPKU2UAuthenticationRequests": true,
+  "localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager": "String",
+  "localSecurityOptionsClearVirtualMemoryPageFile": true,
+  "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
+  "localSecurityOptionsAllowUIAccessApplicationElevation": true,
+  "localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations": true,
+  "localSecurityOptionsOnlyElevateSignedExecutables": true,
+  "localSecurityOptionsAdministratorElevationPromptBehavior": "String",
+  "localSecurityOptionsStandardUserElevationPromptBehavior": "String",
+  "localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation": true,
+  "localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation": true,
+  "localSecurityOptionsAllowUIAccessApplicationsForSecureLocations": true,
+  "localSecurityOptionsUseAdminApprovalMode": true,
+  "localSecurityOptionsUseAdminApprovalModeForAdministrators": true,
   "defenderSecurityCenterDisableAppBrowserUI": true,
   "defenderSecurityCenterDisableFamilyUI": true,
   "defenderSecurityCenterDisableHealthUI": true,
@@ -205,7 +265,6 @@ Here is a JSON representation of the resource.
   "defenderUntrustedUSBProcessType": "String",
   "defenderUntrustedExecutableType": "String",
   "defenderEmailContentExecutionType": "String",
-  "defenderPasswordProtectedEmailContentExecutionType": "String",
   "defenderAdvancedRansomewareProtectionType": "String",
   "defenderGuardMyFoldersType": "String",
   "defenderGuardedFoldersAllowedAppPaths": [
@@ -219,6 +278,9 @@ Here is a JSON representation of the resource.
   "defenderExploitProtectionXmlFileName": "String",
   "defenderSecurityCenterBlockExploitProtectionOverride": true,
   "appLockerApplicationControl": "String",
+  "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "String",
+  "deviceGuardEnableVirtualizationBasedSecurity": true,
+  "deviceGuardEnableSecureBootWithDMA": true,
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,

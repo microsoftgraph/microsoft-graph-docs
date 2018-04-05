@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Generates a sign-up URL that is used to enroll in Android for Work management.
+Not yet documented
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -36,7 +36,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|hostName|String|The hostname of the callback URL to which the browser will be redirected after successfully completing sign-up.|
+|hostName|String|Not yet documented|
 
 
 

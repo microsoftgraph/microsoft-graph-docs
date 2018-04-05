@@ -53,6 +53,7 @@ The following table shows the properties that are required when you create the a
 |workProfileDataSharingType|String|Type of data sharing that is allowed. Possible values are: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
 |workProfileBlockNotificationsWhileDeviceLocked|Boolean|Indicates whether or not to block notifications while device locked.|
 |workProfileBlockAddingAccounts|Boolean|Block users from adding/removing accounts in work profile.|
+|workProfileBluetoothEnableContactSharing|Boolean|Allow bluetooth devices to access enterprise contacts.|
 |workProfileBlockCrossProfileCopyPaste|Boolean|Boolean that indicates if the setting disallow cross profile copy/paste is enabled.|
 |workProfileDefaultAppPermissionPolicy|String|Type of password that is required. Possible values are: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
 |workProfilePasswordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock for work profile.|
@@ -77,7 +78,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1359
+Content-length: 1412
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -96,6 +97,7 @@ Content-length: 1359
   "workProfileDataSharingType": "preventAny",
   "workProfileBlockNotificationsWhileDeviceLocked": true,
   "workProfileBlockAddingAccounts": true,
+  "workProfileBluetoothEnableContactSharing": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "prompt",
   "workProfilePasswordBlockFingerprintUnlock": true,
@@ -116,7 +118,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1467
+Content-Length: 1520
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -137,6 +139,7 @@ Content-Length: 1467
   "workProfileDataSharingType": "preventAny",
   "workProfileBlockNotificationsWhileDeviceLocked": true,
   "workProfileBlockAddingAccounts": true,
+  "workProfileBluetoothEnableContactSharing": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "prompt",
   "workProfilePasswordBlockFingerprintUnlock": true,

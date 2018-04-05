@@ -27,7 +27,7 @@ Inherits from [managedEBook](../resources/intune_books_managedebook.md)
 |publishedDateTime|DateTimeOffset|The date and time when the eBook was published. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Book cover. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |createdDateTime|DateTimeOffset|The date and time when the eBook file was created. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time when teh eBook was last modified. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the eBook was last modified. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |informationUrl|String|The more information Url. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |privacyInformationUrl|String|The privacy statement Url. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |vppTokenId|Guid|The Vpp token ID.|
@@ -42,6 +42,7 @@ Inherits from [managedEBook](../resources/intune_books_managedebook.md)
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|categories|[managedEBookCategory](../resources/intune_books_managedebookcategory.md) collection|The list of categories for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |assignments|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md) collection|The list of assignments for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |installSummary|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Mobile App Install Summary. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |deviceStates|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|The list of installation states for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|

@@ -2500,6 +2500,14 @@
             <Item text="Get template" url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_get" />
         </Item>
       </Item>
+	  <Item text="Terms of use" url="/en-us/api-reference/beta/resources/agreement" SEODescription="The Azure AD Terms of Use API in Microsoft Graph provides a simple method organizations can use to present information to end users. This ensures users see relevant disclaimers for legal or compliance requirements." >
+		<Item text="Create agreement" url="/en-us/api-reference/beta/api/agreement_post_agreements" SEODescription="Use this Microsoft Graph API to create a new terms of use agreement." />
+        <Item text="List agreements" url="/en-us/api-reference/beta/api/agreement_list" SEODescription="Use this Microsoft Graph API to list terms of use agreement objects." />
+        <Item text="Get agreement" url="/en-us/api-reference/beta/api/agreement_get" SEODescription="Use this Microsoft Graph API to get a terms of use agreement object." />
+        <Item text="Update agreement" url="/en-us/api-reference/beta/api/agreement_update" SEODescription="Use this Microsoft Graph API to get a terms of use agreement object." />
+        <Item text="Delete agreement" url="/en-us/api-reference/beta/api/agreement_delete" SEODescription="Use this Microsoft Graph API to delete a terms of use agreement object." />
+        <Item text="List acceptance status" url="/en-us/api-reference/beta/api/user_list_agreementacceptances" SEODescription="Use this Microsoft Graph API to list terms of use acceptance statuses of user." />
+	  </Item>
     </Item>
     <Item text="Education" url="/en-us/api-reference/beta/resources/education-overview" >
 		<Item text="Schools" url="/en-us/api-reference/beta/resources/educationschool" >
@@ -5258,8 +5266,10 @@
 		<Item text="Send device command" url="/en-us/api-reference/beta/api/send_device_command" />
 		<Item text="Get device command status" url="/en-us/api-reference/beta/api/get_device_command_status" />
 		<Item text="Activity" url="/en-us/api-reference/beta/resources/projectrome_activity" >
-			<Item text="Create or replace an activity" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
-			<Item text="Delete an activity" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
+			<Item text="Create or replace activity" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
+			<Item text="Get activities" url="/en-us/api-reference/beta/api/projectrome_get_activities" />
+			<Item text="Get recent activities" url="/en-us/api-reference/beta/api/projectrome_get_recent_activities" />
+			<Item text="Delete activity" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
 		</Item>
 		<Item text="History item" url="/en-us/api-reference/beta/resources/projectrome_historyitem" >
 			<Item text="Create or replace a history item" url="/en-us/api-reference/beta/api/projectrome_put_historyitem" />

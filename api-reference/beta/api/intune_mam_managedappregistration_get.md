@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 756
+Content-Length: 858
 
 {
   "value": {
@@ -62,6 +62,8 @@ Content-Length: 756
     "deviceType": "Device Type value",
     "deviceTag": "Device Tag value",
     "deviceName": "Device Name value",
+    "managedDeviceId": "Managed Device Id value",
+    "azureADDeviceId": "Azure ADDevice Id value",
     "flaggedReasons": [
       "rootedDevice"
     ],

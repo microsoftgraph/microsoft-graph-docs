@@ -30,6 +30,7 @@ Singleton entity that acts as a container for all device management functionalit
 |detectedApps|[detectedApp](../resources/intune_devices_detectedapp.md) collection|The list of detected apps associated with a device.|
 |managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md) collection|The list of managed devices.|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune_devices_windowsmalwareinformation.md) collection|The list of affected malware in the tenant.|
+|dataSharingConsents|[dataSharingConsent](../resources/intune_devices_datasharingconsent.md) collection|Data sharing consents.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

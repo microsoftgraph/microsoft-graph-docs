@@ -6,10 +6,10 @@ Update the properties of the currently authenticated organization.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
+|Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | Not supported.    |
+|Delegated (work or school account) | Directory.AccessAsUser.All |
+|Delegated (personal Microsoft account) | Not supported. |
 |Application | Not supported. |
 
 ## HTTP request
@@ -28,34 +28,19 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|assignedPlans|AssignedPlan|The collection of service plans associated with the tenant.                            **Notes**: not nullable.            |
-|city|String|            |
-|companyLastDirSyncTime|DateTimeOffset|The time and date at which the tenant was last synced with the on-premise directory.|
-|country|String|            |
-|countryLetterCode|String|            |
-|deletionTimestamp|DateTimeOffset||
-|dirSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).|
-|displayName|String|The display name for the tenant.|
-|marketingNotificationEmails|String|                                        **Notes**: not nullable.            |
-|objectType|String|A string that identifies the object type. For tenants the value is always “Company”. Inherited from [directoryObject](../resources/directoryobject.md).|
-|postalCode|String|            |
-|preferredLanguage|String|            |
-|provisionedPlans|ProvisionedPlan|                                        **Notes**: not nullable.            |
-|provisioningErrors|ProvisioningError|                                        **Notes**: not nullable.            |
-|securityComplianceNotificationMails|String||
-|securityComplianceNotificationPhones|String||
-|state|String|            |
-|street|String|            |
-|technicalNotificationMails|String|                                        **Notes**: not nullable.            |
-|telephoneNumber|String|            |
-|verifiedDomains|VerifiedDomain|The collection of domains associated with this tenant.                            **Notes**: not nullable.            |
+|marketingNotificationEmails|String collection|                                        **Notes**: not nullable.            |
+|privacyProfile|[privacyProfile](../resources/privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |
+|securityComplianceNotificationMails|String collection||
+|securityComplianceNotificationPhones|String collection||
+|technicalNotificationMails|String collection|                                        **Notes**: not nullable.            |
 
 Since the **organization** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `PATCH` operation to 
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **organization** instance.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [organization](../resources/organization.md) object in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+
 ## Example
 ##### Request
 Here is an example of the request.
@@ -69,52 +54,26 @@ Content-type: application/json
 Content-length: 411
 
 {
-  "assignedPlans": [
+  "marketingNotificationEmails" : ["marketing@contoso.com"],
+  "privacyProfile" :
     {
-      "assignedDateTime": "2016-10-19T10:37:00Z",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "displayName": "displayName-value"
+      "contactEmail":"alice@contoso.com",
+      "statementUrl":"https://contoso.com/privacyStatement"
+    },
+  "securityComplianceNotificationMails" : ["security@contoso.com"],
+  "securityComplianceNotificationPhones" : ["(123) 456-7890"],
+  "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.organization"
+  "@odata.type": "microsoft.graph.administrativeunit"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 411
-
-{
-  "assignedPlans": [
-    {
-      "assignedDateTime": "2016-10-19T10:37:00Z",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "displayName": "displayName-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 ## See also

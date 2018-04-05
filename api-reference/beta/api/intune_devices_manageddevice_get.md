@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6736
+Content-Length: 6885
 
 {
   "value": {
@@ -194,7 +194,13 @@ Content-Length: 6736
     "freeStorageSpaceInBytes": 7,
     "managedDeviceName": "Managed Device Name value",
     "partnerReportedThreatState": "activated",
-    "lastLoggedOnUserId": "Last Logged On User Id value"
+    "usersLoggedOn": [
+      {
+        "@odata.type": "microsoft.graph.loggedOnUser",
+        "userId": "User Id value",
+        "lastLogOnDateTime": "2016-12-31T23:58:37.4262708-08:00"
+      }
+    ]
   }
 }
 ```

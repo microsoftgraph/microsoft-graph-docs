@@ -74,7 +74,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |hostPairingBlocked|Boolean|indicates whether or not to allow host pairing to control the devices an iOS device can pair with when the iOS device is in supervised mode.|
 |iBooksStoreBlocked|Boolean|Indicates whether or not to block the user from using the iBooks Store when the device is in supervised mode.|
 |iBooksStoreBlockErotica|Boolean|Indicates whether or not to block the user from downloading media from the iBookstore that has been tagged as erotica.|
-|iCloudBlockActivityContinuation|Boolean|Indicates whether or not to block  the user from continuing work they started on iOS device to another iOS or macOS device.|
+|iCloudBlockActivityContinuation|Boolean|Indicates whether or not to block  the the user from continuing work they started on iOS device to another iOS or macOS device.|
 |iCloudBlockBackup|Boolean|Indicates whether or not to block iCloud backup.|
 |iCloudBlockDocumentSync|Boolean|Indicates whether or not to block iCloud document sync.|
 |iCloudBlockManagedAppsSync|Boolean|Indicates whether or not to block Managed Apps Cloud Sync.|
@@ -110,7 +110,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |kioskModeManagedAppId|String|Managed app id of the app to use for kiosk mode. If KioskModeManagedAppId is specified then KioskModeAppStoreUrl will be ignored.|
 |lockScreenBlockControlCenter|Boolean|Indicates whether or not to block the user from using control center on the lock screen.|
 |lockScreenBlockNotificationView|Boolean|Indicates whether or not to block the user from using the notification view on the lock screen.|
-|lockScreenBlockPassbook|Boolean|Indicates whether or not to block the user from using passbook when the device is locked.|
+|lockScreenBlockPassbook|Boolean|Indicates whether or not to block the user from using Wallet when the device is locked.|
 |lockScreenBlockTodayView|Boolean|Indicates whether or not to block the user from using the Today View on the lock screen.|
 |mediaContentRatingAustralia|[mediaContentRatingAustralia](../resources/intune_deviceconfig_mediacontentratingaustralia.md)|Media content rating settings for Australia|
 |mediaContentRatingCanada|[mediaContentRatingCanada](../resources/intune_deviceconfig_mediacontentratingcanada.md)|Media content rating settings for Canada|

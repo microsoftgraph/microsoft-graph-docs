@@ -20,7 +20,10 @@ Singleton entity that acts as a container for all device app management function
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|The last time an application sync from the Microsoft Store for Business was completed.|
 
 ## Relationships
-None
+|Relationship|Type|Description|
+|:---|:---|:---|
+|vppTokens|[vppToken](../resources/intune_onboarding_vpptoken.md) collection|List of Vpp tokens for this organization.|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

@@ -93,7 +93,7 @@ The following table shows the properties that are required when you create the w
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |partnerReportedThreatState|String|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
-|lastLoggedOnUserId|String|Indicates the last logged on user of a device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|usersLoggedOn|[loggedOnUser](../resources/intune_devices_loggedonuser.md) collection|Indicates the last logged on users of a device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 
 
 
@@ -106,7 +106,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices
 Content-type: application/json
-Content-length: 6397
+Content-length: 6534
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -246,7 +246,13 @@ Content-length: 6397
   "freeStorageSpaceInBytes": 7,
   "managedDeviceName": "Managed Device Name value",
   "partnerReportedThreatState": "activated",
-  "lastLoggedOnUserId": "Last Logged On User Id value"
+  "usersLoggedOn": [
+    {
+      "@odata.type": "microsoft.graph.loggedOnUser",
+      "userId": "User Id value",
+      "lastLogOnDateTime": "2016-12-31T23:58:37.4262708-08:00"
+    }
+  ]
 }
 ```
 
@@ -255,7 +261,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 6446
+Content-Length: 6583
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -396,7 +402,13 @@ Content-Length: 6446
   "freeStorageSpaceInBytes": 7,
   "managedDeviceName": "Managed Device Name value",
   "partnerReportedThreatState": "activated",
-  "lastLoggedOnUserId": "Last Logged On User Id value"
+  "usersLoggedOn": [
+    {
+      "@odata.type": "microsoft.graph.loggedOnUser",
+      "userId": "User Id value",
+      "lastLogOnDateTime": "2016-12-31T23:58:37.4262708-08:00"
+    }
+  ]
 }
 ```
 

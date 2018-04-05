@@ -16,6 +16,8 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 |:------|:------------|:-----------|
 |[Create or replace activity](../api/projectrome_put_activity.md) | [activity](projectrome_activity.md) |Creates or replaces an existing activity (upsert). The appActivityId needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe. |
 |[Delete an activity](../api/projectrome_delete_activity.md) | No Content | Deletes the specified activity for that user from your app.|
+|[Get activities](../api/projectrome_get_activities.md) | Collection of [activities](projectrome_activity.md) | Gets the activities for your app for a given user.|
+|[Get recent activities](../api/projectrome_get_recent_activities.md) | Collection of [activities](projectrome_activity.md) | Gets the most recent activities for your app for a given user, sorted and based on the most recently created or updated [historyItems](projectrome_historyitem.md).|
 
 ## Properties
 
@@ -33,7 +35,8 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 |contentUrl | String | Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).|
 |visualElements| [visualInfo](../resources/projectrome_visualinfo.md) | Required. The object containing information to render the activity in the UX.|
 |contentInfo | Untyped JSON object | Optional. A custom piece of data - JSON-LD extensible description of content according to [schema.org](http://schema.org) syntax.|
-|expirationDateTime| DateTimeOffset| Set by the server. DateTime in UTC when the object expired on the server.|
+|expirationDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object expired on the server.|
+|status | EnumType | Set by the server. A status code used to identify valid objects. Values: active, updated, deleted, ignored.|
 
 ## Relationships
 
@@ -72,6 +75,7 @@ Here is a JSON representation of the resource.
     "lastModifiedDateTime": "DateTimeOffset",
     "expirationDateTime": "DateTimeOffset",
     "id": "String",
+    "status": "EnumType",
     "contentInfo": { "@data.type": "microsoft.graph.Json" },
     "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
     "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]

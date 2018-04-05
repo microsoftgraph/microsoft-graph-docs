@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 712
+Content-Length: 932
 
 {
   "value": [
@@ -60,9 +60,11 @@ Content-Length: 712
       "displayName": "Display Name value",
       "version": 7,
       "advancedThreatProtectionOnboardingBlob": "Advanced Threat Protection Onboarding Blob value",
+      "advancedThreatProtectionOnboardingFilename": "Advanced Threat Protection Onboarding Filename value",
       "allowSampleSharing": true,
       "enableExpeditedTelemetryReporting": true,
-      "advancedThreatProtectionOffboardingBlob": "Advanced Threat Protection Offboarding Blob value"
+      "advancedThreatProtectionOffboardingBlob": "Advanced Threat Protection Offboarding Blob value",
+      "advancedThreatProtectionOffboardingFilename": "Advanced Threat Protection Offboarding Filename value"
     }
   ]
 }

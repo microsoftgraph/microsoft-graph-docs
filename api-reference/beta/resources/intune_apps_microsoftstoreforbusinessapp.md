@@ -49,6 +49,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|containedApps|[mobileContainedApp](../resources/intune_apps_mobilecontainedapp.md) collection|The collection of contained apps in a mobileApp acting as a package.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

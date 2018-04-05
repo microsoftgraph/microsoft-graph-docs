@@ -14,6 +14,7 @@ Not yet documented
 |[Delete user](../api/intune_devices_user_delete.md)|None|Deletes a [user](../resources/intune_devices_user.md).|
 |[Update user](../api/intune_devices_user_update.md)|[user](../resources/intune_devices_user.md)|Update the properties of a [user](../resources/intune_devices_user.md) object.|
 |[removeAllDevicesFromManagement action](../api/intune_devices_user_removealldevicesfrommanagement.md)|None|Retire all devices from management for this user|
+|[getLoggedOnManagedDevices function](../api/intune_devices_user_getloggedonmanageddevices.md)|[managedDevice](../resources/intune_devices_manageddevice.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|

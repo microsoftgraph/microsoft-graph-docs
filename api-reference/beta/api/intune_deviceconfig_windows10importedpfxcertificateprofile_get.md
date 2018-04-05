@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 675
+Content-Length: 713
 
 {
   "value": {
@@ -64,9 +64,10 @@ Content-Length: 675
     "renewalThresholdPercentage": 10,
     "keyStorageProvider": "useTpmKspOtherwiseFail",
     "subjectNameFormat": "commonNameIncludingEmail",
-    "subjectAlternativeNameType": "userPrincipalName",
+    "subjectAlternativeNameType": "emailAddress",
     "certificateValidityPeriodValue": 14,
-    "certificateValidityPeriodScale": "months"
+    "certificateValidityPeriodScale": "months",
+    "intendedPurpose": "smimeEncryption"
   }
 }
 ```

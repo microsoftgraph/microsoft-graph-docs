@@ -20,7 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceSetupConfigurations/{deviceSetupConfigurationId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
 ```
 
 ## Request headers
@@ -39,7 +40,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceSetupConfigurations/{deviceSetupConfigurationId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### Response

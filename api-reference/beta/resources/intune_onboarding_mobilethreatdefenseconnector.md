@@ -18,13 +18,17 @@ Entity which represents a connection to Mobile threat defense partner.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Not yet documented|
-|lastHeartbeatDateTime|DateTimeOffset|Timestamp of last heartbeat after admin enabled option Connect to MTP|
-|partnerState|String|Partner state of this tenant Possible values are: `unavailable`, `available`, `enabled`, `unresponsive`.|
-|androidEnabled|Boolean|Android Toggle On or Off|
-|androidDeviceBlockedOnMissingPartnerData|Boolean|For Android, Allows admin to config must receive data from the data sync partner prior to being considered compliant|
-|iosDeviceBlockedOnMissingPartnerData|Boolean|For IOS, Allows admin to config must receive data from the data sync partner prior to being considered compliant|
-|partnerUnsupportedOsVersionBlocked|Boolean|Allows admin to block devices on the enabled platforms that do not meet minimum version requirements|
-|iosEnabled|Boolean|IOS Toggle On or Off|
+|lastHeartbeatDateTime|DateTimeOffset|DateTime of last Heartbeat recieved from the Data Sync Partner|
+|partnerState|String|Data Sync Partner state for this account Possible values are: `unavailable`, `available`, `enabled`, `unresponsive`.|
+|androidEnabled|Boolean|For Android, set whether data from the data sync partner should be used during compliance evaluations|
+|iosEnabled|Boolean|For IOS, get or set whether data from the data sync partner should be used during compliance evaluations|
+|windowsEnabled|Boolean|For Windows, get or set whether data from the data sync partner should be used during compliance evaluations|
+|macEnabled|Boolean|For Mac, get or set whether data from the data sync partner should be used during compliance evaluations|
+|androidDeviceBlockedOnMissingPartnerData|Boolean|For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant|
+|iosDeviceBlockedOnMissingPartnerData|Boolean|For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant|
+|windowsDeviceBlockedOnMissingPartnerData|Boolean|For Windows, set whether Intune must receive data from the data sync partner prior to marking a device compliant|
+|macDeviceBlockedOnMissingPartnerData|Boolean|For Mac, get or set whether Intune must receive data from the data sync partner prior to marking a device compliant|
+|partnerUnsupportedOsVersionBlocked|Boolean|Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner|
 |partnerUnresponsivenessThresholdInDays|Int32|Get or Set days the per tenant tolerance to unresponsiveness for this partner integration|
 |allowPartnerToCollectIOSApplicationMetadata|Boolean|For IOS devices, allows the admin to configure whether the data sync partner may also collect metadata about installed applications from Intune|
 
@@ -45,10 +49,14 @@ Here is a JSON representation of the resource.
   "lastHeartbeatDateTime": "String (timestamp)",
   "partnerState": "String",
   "androidEnabled": true,
+  "iosEnabled": true,
+  "windowsEnabled": true,
+  "macEnabled": true,
   "androidDeviceBlockedOnMissingPartnerData": true,
   "iosDeviceBlockedOnMissingPartnerData": true,
+  "windowsDeviceBlockedOnMissingPartnerData": true,
+  "macDeviceBlockedOnMissingPartnerData": true,
   "partnerUnsupportedOsVersionBlocked": true,
-  "iosEnabled": true,
   "partnerUnresponsivenessThresholdInDays": 1024,
   "allowPartnerToCollectIOSApplicationMetadata": true
 }

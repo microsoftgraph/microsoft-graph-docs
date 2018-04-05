@@ -20,6 +20,7 @@ Summary data for managed devices
 |dualEnrolledDeviceCount|Int32|The number of devices enrolled in both MDM and EAS|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune_devices_deviceoperatingsystemsummary.md)|Device operating system summary.|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune_devices_deviceexchangeaccessstatesummary.md)|Distribution of Exchange Access State in Intune|
+|lastModifiedDateTime|DateTimeOffset|Last modified date time of device overview|
 
 ## Relationships
 None
@@ -54,7 +55,8 @@ Here is a JSON representation of the resource.
     "quarantinedDeviceCount": 1024,
     "unknownDeviceCount": 1024,
     "unavailableDeviceCount": 1024
-  }
+  },
+  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
 

@@ -90,7 +90,7 @@ Devices that are managed or pre-enrolled through Intune
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes|
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name.|
 |partnerReportedThreatState|String|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
-|lastLoggedOnUserId|String|Indicates the last logged on user of a device|
+|usersLoggedOn|[loggedOnUser](../resources/intune_devices_loggedonuser.md) collection|Indicates the last logged on users of a device|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -247,7 +247,13 @@ Here is a JSON representation of the resource.
   "freeStorageSpaceInBytes": 1024,
   "managedDeviceName": "String",
   "partnerReportedThreatState": "String",
-  "lastLoggedOnUserId": "String"
+  "usersLoggedOn": [
+    {
+      "@odata.type": "microsoft.graph.loggedOnUser",
+      "userId": "String",
+      "lastLogOnDateTime": "String (timestamp)"
+    }
+  ]
 }
 ```
 

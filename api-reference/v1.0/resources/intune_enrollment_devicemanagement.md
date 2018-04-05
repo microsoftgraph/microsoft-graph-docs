@@ -15,7 +15,10 @@ The deviceManagement resource represents a tenant's collection device identities
 |id|String|The GUID for the object.|
 
 ## Relationships
-None
+|Relationship|Type|Description|
+|:---|:---|:---|
+|importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) collection|Collection of imported Windows autopilot devices.|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
