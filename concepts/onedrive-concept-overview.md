@@ -5,7 +5,7 @@ People work with files in a variety of apps, like Microsoft Teams, Groups, Share
 OneDrive lets users access these files no matter where they are stored, and Microsoft Graph lets you use a single API to do it.
 
 Files in Office 365 are stored in [drives][Drive API].
-Users can store files in a personal drive--their OneDrive--or in a shared drive powered by a [SharePoint][] document library.
+Users can store files in a personal drive - their OneDrive - or in a shared drive powered by a [SharePoint][] document library.
 OneDrive's flexibility lets users collaborate however it works best for them.
 Users can share links to files, copy or move files to team drives, or even attach OneDrive files to mail messages in Outlook.
 
