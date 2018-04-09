@@ -14,11 +14,11 @@ Users can share links to files, copy or move files to team drives, or even attac
 ### Tap into a ecosystem with billions of files
 
 OneDrive users can access their files from any device, online or offline, and share files with people inside or outside their organization.
-OneDrive enables real-time co-authoring in familiar apps like Word, Excel, and PowerPoint.
-Files light up with rich thumbnails for hundreds of formats, video streaming, analytics, and more, powered by the Microsoft Graph.
+OneDrive enables real-time coauthoring in familiar apps like Word, Excel, and PowerPoint.
+Files light up with rich thumbnails for hundreds of formats, video streaming, analytics, and more, powered by Microsoft Graph.
 Data in OneDrive is protected with advanced encryption, compliance, and security features that customers trust.
 
-With over 500 million devices running the OneDrive app and over 85% of the Fortune 500 having OneDrive for Business, integrating your app with OneDrive lets you connect with millions of consumers, students, and business users and engage with customers where they already do their work everyday.
+With over 500 million devices running the OneDrive app and over 85% of the Fortune 500 using OneDrive for Business, by integrating your app with OneDrive, you can connect with millions of consumers, students, and business users and engage with customers where they already do their work every day.
 
 ### Store your app's files in a powerful cloud
 
