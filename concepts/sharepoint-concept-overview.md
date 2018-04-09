@@ -9,7 +9,7 @@ It lets people share and manage content, knowledge, and applications to empower 
 
 - Team sites store the content that users collaborate on with their coworkers.
 - Communication sites and portals allow users to publish rich content pages to share across the organization.
-- SharePoint sites are behind Office 365 Groups, Microsoft Teams, and custom portals, so you can use Microsoft Graph to access data no matter where it's kept.
+- SharePoint sites are behind Office 365 Groups, Microsoft Teams, and portals, so you can use Microsoft Graph to access data no matter where it's kept.
 
 ### Unleash your data with SharePoint lists
 
