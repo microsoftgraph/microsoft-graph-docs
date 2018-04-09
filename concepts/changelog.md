@@ -6,13 +6,49 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## April 2018
 
+### Outlook calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0          | Added the **locations** property to the [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event) entity to support organizing an event that attendees can attend from more than one location. |
+| Addition        | v1.0          | Added the **locationType** property to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/location) complex type. |
+| Addition        | v1.0          | Added the **uniqueId** and **uniqueIdType** properties to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/location) complex type. These properties are only for internal use at this point. |
+
+
+### Outlook contacts
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | v1.0          | Added the **flag** property to the [contact](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact) entity. Added the shared [followupFlag](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/followupflag) complex type.|
+
+
 ### Outlook mail
 
-| **Change type** | **Version** | **Description**              |
+| **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
+| Addition        | v1.0          | Added the **flag** property to the [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message) entity. Added the shared [followupFlag](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/followupflag) complex type.|
+| Addition        | v1.0        | Added the **internetMessageHeaders** property to the [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message) entity. |
+| Addition        | v1.0        | Added the [internetMessageHeader](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/internetmessageheader) complex type. |
+| Addition        | v1.0        | Added the **messageRules** navigation property to the [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/mailfolder) entity. **messageRules** is a collection of [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/messagerule) instances. |
+| Addition        | v1.0        | Added the [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/messagerule) entity, and [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/messagerulepredicates), and [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/sizerange) complex types. |
+| Addition        | v1.0        | Added the following CRUD operations for message rules: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/messagerule_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/messagerule_update), and [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/messagerule_delete). |
 | Addition | Beta | Added [mailSearchFolder](../api-reference/beta/resources/mailsearchfolder.md). |
 | Addition | Beta | Added the following APIs for mail search folder: [Create](../api-reference/beta/api/mailsearchfolder_post.md), [Update](../api-reference/beta/api/mailsearchfolder_update.md). |
 | Change | Beta | Added support for mail search folder to [delete mailFolder](../api-reference/beta/api/mailfolder_delete.md), [get mailFolder](../api-reference/beta/api/mailfolder_get.md), and [list child folders](../api-reference/beta/api/mailfolder_list_childfolders.md). |
+
+
+### Outlook user choices
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | v1.0        | Added the new **masterCategories** navigation property to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/outlookuser) entity. **masterCategories** is a collection of [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/outlookCategory) objects. |
+| Addition        | v1.0        | Added the [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/outlookCategory) entity. |
+| Addition        | v1.0        | Added the following CRUD operations for [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/outlookCategory): [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/outlookuser_post_mastercategories), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/outlookcategory_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/outlookcategory_update), and [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/outlookcategory_delete). |
+| Addition        | v1.0        | Added the new [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/outlookuser_supportedlanguages) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/outlookuser) entity. |
+| Addition        | v1.0        | Added the new [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/outlookuser_supportedtimezones) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/outlookuser) entity. |
+|Addition | v1.0 | Added the new **workingHours** property to [mailboxSettings](../api-reference/v1.0/resources/mailboxsettings.md). See [workingHours resource type](../api-reference/v1.0/resources/workinghours.md) for information on the supported use cases.|
+|Addition | v1.0 | Added the following new complex types: <br> [workingHours](../api-reference/v1.0/resources/workinghours.md) <br> [timeZoneBase](../api-reference/v1.0/resources/timezonebase.md) <br> [customTimeZone](../api-reference/v1.0/resources/customtimezone.md) <br> [standardTimeZoneOffset](../api-reference/v1.0/resources/standardtimezoneoffset.md) <br> [daylightTimeZoneOffset](../api-reference/v1.0/resources/daylighttimezoneoffset.md)|
+
 
 ## March 2018
 
@@ -36,16 +72,18 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta        | Added the **onPremisesExtensionAttributes** complex type to the [user](../api-reference/beta/resources/user.md) entity. This contains the on-premises AD extension attributes 1-15. |
 | Addition        | Beta        | Added the **privacyProfile** complex type to the [organization](../api-reference/beta/resources/organization.md) entity. |
-| Addition        | V1.0        | Added support for [restoring and permanently deleting users and groups](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/directory). |
+| Addition        | V1.0        | Added support for [restoring and permanently deleting users and groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directory). |
 
 ### Excel APIs
-|Change type|Version|Description|
-|:---|:---|:---|
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
 |Change|v1.0|Added the **legacyId** property to the [Excel Table](../api-reference/v1.0/resources/table.md) entity. This will contain the numeric value identifier (string data type) that will remain constact for a given Excel table. This is provided as an additional metadata if the application relied on the legacy identifier used in older Excel client applications. Note: The `id` and `legacyId` property should be treated as an opaque string value and should not be parsed to any other type within your application. |
 
 ### Reports APIs
-|Change type|Version|Description|
-|:---|:---|:---|
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
 |Addition|beta|Added the **siteId** property to the [sharePointSiteUsageDetail](../api-reference/beta/resources/sharepointsiteusagedetail.md) entity.|
 
 ### Group lifecycle policy
