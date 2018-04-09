@@ -29,23 +29,26 @@
   <Item text="Users" url="/en-us/concepts/azuread-users-concept-overview" />
   <Item text="Groups" url="/en-us/concepts/office365-groups-concept-overview" />
   <Item text="Calendar (Outlook)" url="/en-us/concepts/outlook-calendar-concept-overview" >
-	<Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
+	  <Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
   </Item>
-  <Item text="Cross-device experiences" url="/en-us/concepts/project-rome-concept-overview" />
+  <Item text="Cross-device experiences" url="/en-us/concepts/cross-device-concept-overview" >
+    <Item text="Activity feed" url="/en-us/concepts/activity-feed-concept-overview" />
+    <Item text="Device relay (preview)" url="/en-us/concepts/device-relay-concept-overview" />
+  </Item>
   <Item text="Devices and apps (Intune)" url="/en-us/concepts/intune-concept-overview" />
   <Item text="Education" url="/en-us/concepts/education-concept-overview" />
   <Item text="Files (OneDrive)" url="/en-us/concepts/onedrive-concept-overview" />
   <Item text="Identity and access (Azure AD)" url="/en-us/concepts/azuread-identity-access-management-concept-overview" />
   <Item text="Mail (Outlook)" url="/en-us/concepts/outlook-mail-concept-overview" >
-	<Item text="Create and send messages" url="/en-us/concepts/outlook-create-send-messages" />
-	<Item text="Organize messages" url="/en-us/concepts/outlook-organize-messages" />
-	<Item text="Share message folders" url="/en-us/concepts/outlook-share-messages-folders" />
+	  <Item text="Create and send messages" url="/en-us/concepts/outlook-create-send-messages" />
+	  <Item text="Organize messages" url="/en-us/concepts/outlook-organize-messages" />
+	  <Item text="Share message folders" url="/en-us/concepts/outlook-share-messages-folders" />
   </Item>
-   <Item text="Notes (OneNote)" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
-      <Item text="Input and Output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
+  <Item text="Notes (OneNote)" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
+    <Item text="Input and Output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
 	  <Item text="Open the OneNote client" url="/en-us/concepts/open_onenote_client" SEODescription="Open a OneNote application to a particular page or notebook." />
-      <Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
-      <Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  
+    <Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
+    <Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  
   </Item>
   <Item text="Personal contacts (Outlook)" url="/en-us/concepts/outlook-contacts-concept-overview" />
   <Item text="Reports" url="/en-us/concepts/reportroot-concept-overview" />

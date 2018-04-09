@@ -124,15 +124,15 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Security: security graph (preview) | Azure AD | Provides a unified gateway to security insights and actions across Microsoft solutions. | [Security in Microsoft Graph](../concepts/security-concept-overview.md) |
 | Security: identity risk detection (preview) | Azure AD | Gets information about risk events in user accounts detected by adaptive machine learning. | [Security in Microsoft Graph](../concepts/security-concept-overview.md)  |
+| Security: security graph (preview) | Azure AD | Provides a unified gateway to security insights and actions across Microsoft solutions. | [Security in Microsoft Graph](../concepts/security-concept-overview.md) |
 
 
 ## Cross-device experiences
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Cross-device app continuance | Cross-device experiences | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for cross-device experiences](../concepts/project-rome-concept-overview.md) |
+| Cross-device app continuance | Cross-device experiences | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for cross-device experiences](../concepts/cross-device-concept-overview.md) |
 
 
 ## Usage reports
