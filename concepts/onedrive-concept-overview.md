@@ -1,60 +1,54 @@
 # OneDrive file storage API overview
 
 OneDrive is the files hub in Office 365.
+People work with files in a variety of apps, like Microsoft Teams, Groups, SharePoint, and more.
+OneDrive lets users access these files no matter where they are stored, and Microsoft Graph lets you use a single API to do it.
 
-People work with files across a variety of apps -- Microsoft Teams, SharePoint Team Sites, Groups, and more.
-OneDrive lets users access their files no matter where they are stored, and the OneDrive API in Microsoft Graph lets you use a single API to do it.
-
-The best place for files that belong to a team is a [SharePoint][] document library.
-Office 365 groups, Microsoft Teams, and Team Sites all use document libraries for their file storage.
-Files and folders in a library can be accessed by anyone in the team as well as shared with other people and groups.
-
-The best place for personal files is in a user's personal drive.
-Personal files start out private to the owner, but can also be shared with others.
-
-OneDrive's flexibility lets users collaborate on files however it works best for them.
-Users can share links to files in their personal drives, copy or move files to team drives, or even attach OneDrive files to mail messages in Outlook.
+Files in Office 365 are stored in [drives][Drive API].
+Users can store files in a personal drive - their OneDrive - or in a shared drive powered by a [SharePoint][] document library.
+OneDrive's flexibility lets users collaborate however it works best for them.
+Users can share links to files, copy or move files to team drives, or even attach OneDrive files to mail messages in Outlook.
 
 ## Why integrate with OneDrive file storage in the cloud?
 
-### Tap into an ecosystem with billions of files
+### Tap into a ecosystem with billions of files
 
 OneDrive users can access their files from any device, online or offline, and share files with people inside or outside their organization.
-OneDrive enables real-time co-authoring in familiar apps like Word, Excel, and PowerPoint.
-Files light up with rich thumbnails for hundreds formats, video streaming, search, analytics, and more, powered by the Microsoft Graph.
+OneDrive enables real-time coauthoring in familiar apps like Word, Excel, and PowerPoint.
+Files light up with rich thumbnails for hundreds of formats, video streaming, analytics, and more, powered by Microsoft Graph.
 Data in OneDrive is protected with advanced encryption, compliance, and security features that customers trust.
 
-With over 500 million devices running the OneDrive app and over 85% of the Fortune 500 having OneDrive for Business, integrating your app with OneDrive lets you connect with millions of consumers, students, and business users and engage with customers where they already do their work everyday.
+With over 500 million devices running the OneDrive app and over 85% of the Fortune 500 using OneDrive for Business, by integrating your app with OneDrive, you can connect with millions of consumers, students, and business users and engage with customers where they already do their work every day.
 
 ### Store your app's files in a powerful cloud
 
-When you store your files in OneDrive, your app can leverage the features of Microsoft's cloud and your users can access their files anywhere.
+When you store your files in OneDrive, your app can take advantage of the features of the Microsoft cloud and your users can access their files anywhere.
 Use the [file picker][] SDK to quickly open, download, save, or share files stored in OneDrive from within your own app, using the same experience OneDrive users are familiar with.
-Get metadata about selected files directly from the picker, or use Microsoft Graph APIs to interact more deeply with files.
-Use [special folders][] to work with files in well-known locations like `Documents` and `Camera Roll`, or give your app its own personal folder.
+Get information about selected files directly from the picker SDK, or use Microsoft Graph APIs directly to interact more deeply with files.
+Use [special folders][] to store files in well-known locations on OneDrive, like `Documents` and `Camera Roll`, or give your app its own personal folder.
 
 ### Bring your app straight to users within OneDrive
 
 OneDrive customers can use or launch your app directly from within OneDrive to open, edit, or preview files.
-Use OneDrive's [file handler][] extensions to provide icons and previews for your own custom file extensions, add your app to the 'New' button or even add your own custom actions to the menu bar to launch your app.
+Use OneDrive's [file handler][] extensions to provide icons and previews for your own custom file extensions, add your app to the **New** button or even add your own custom actions to the menu bar to launch your app.
 
 ### Work with content in formats your app understands
 
-OneDrive lets your app get file content in the most convenient format for you.
+Your app can get file content in the format that is most convenient for you.
 Your app can display custom-sized [thumbnails][] for hundreds of different file formats.
 You can download files in a variety of alternative [formats][], like PDF.
-You can even embed OneDrive's own file previewers within your own app using the [preview][] API (beta).
+You can even embed the OneDrive file previewers within your app by using the [preview][] API (beta).
 
 ### Work with file content and metadata without downloading the binary
 
-Microsoft Graph lets you access rich content through REST APIs without having to download the binary.
+With Microsoft Graph, you can access rich content through REST APIs without having to download the binary.
 Explore extracted metadata from [photo][], [audio][], and [video][] files.
 Use the [Excel API][] to work directly with the raw data stored in an Excel workbook.
 Use the [Notes API][] to access the contents of OneNote notebooks.
 
 ### React to file changes
 
-With [webhooks][], your app can get notified when files changes so you can quickly react.
+With [webhooks][], your app can get notified when files change so you can quickly react.
 Use the [delta API][] to see what changed since the last time your app synchronized with the cloud.
 
 ## Next steps

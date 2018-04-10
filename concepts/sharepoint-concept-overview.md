@@ -1,38 +1,33 @@
 # SharePoint sites and content API overview
 
-SharePoint is your mobile, intelligent intranet.  With SharePoint you can share and manage content, knowledge and applications to empower teamwork, quickly find information, and seamlessly collaborate across the organization.
+SharePoint is your mobile, intelligent intranet.
+It lets people share and manage content, knowledge, and applications to empower teamwork, quickly find information, and seamlessly collaborate across the organization.
 
 ## Why integrate with SharePoint sites and content?
 
-### SharePoint sites power many of your high value collaboration and communication scenarios
+### SharePoint sites power team collaboration and communication
 
-- Team sites store the information you’re collaborating on with your coworkers, whether you’re using Office 365 Groups or Microsoft Teams you’ll have a SharePoint team site behind you.
-- Communication sites and portals allow you to publish rich content pages to share across your organization.
-- Each site contains a mix of lists and document libraries.
+- Team sites store the content that users collaborate on with their coworkers.
+- Communication sites and portals allow users to publish rich content pages to share across the organization.
+- SharePoint sites are behind Office 365 Groups, Microsoft Teams, and portals, so you can use Microsoft Graph to access data no matter where it's kept.
 
-### Store your business data in SharePoint lists
+### Unleash your data with SharePoint lists
 
-- Lists can be used to store business data ranging from a simple customer contact list to data for an issue tracker.
-- Lists can have custom schemas associated with them making them incredibly flexible.
+[Lists][list] are the foundation for data storage in SharePoint.
+[Create lists][create] to store a variety of business data, from a simple customer contact list all the way to a custom business application, fronted with PowerApps.
+When you use [columns][] to define your schema, SharePoint can protect the integrity of your data as well as enable up rich indexing, querying, and search capabilities.
 
-### Document Libraries are lists that store files
+### Bring the power of lists to your team's files
 
-- You can access a Document Library as you would any other list or as a Drive resource.
-- Just like a regular list you can extend the schema of a Document Library to support your business needs with custom columns.
+SharePoint stores files in a special [list type][] called a document library.
+You can use the [OneDrive API][] to work with a library as a [drive][], or the SharePoint API to work with it as a [list][].
+Just like a regular list you can extend the schema of a Document Library to support your business needs with custom columns.
 
-### Pages are rich web pages created directly in SharePoint
+### Light up your app with your users' SharePoint intranet data
 
-- Build rich web pages with responsive layouts using a modern authoring engine.
-- Pages are made up of content and web parts.
-- Custom Web parts allow you to integrate  
-- Today Pages are accessed as files in the unique Site Pages Document Library.
-
-### Use Microsoft Graph to enrich your custom solutions with your SharePoint intranet data
-
-- Integrate list data with custom line-of-business apps, create new lists or update existing list data
-- Upload files for collaboration or archiving
-- Build custom schema by adding columns to your sites and lists
-- And much more!
+With Microsoft Graph, you can surface your users' most important data within your app.
+Keep things fresh by [querying][] the list that stores your users' data.
+[Create][] your own lists for your app and let users access your data in other SharePoint experiences, or keep things hidden.
 
 ### Use Microsoft Graph to extend SharePoint
 
@@ -41,16 +36,23 @@ As a platform, SharePoint provides several models for extension and integration.
 - The [SharePoint Framework][] provides a way to build web parts using client-side technologies and open source tooling that can be hosted on SharePoint pages.
 - [SharePoint Add-ins][] are self-contained extensions that can be added to a SharePoint site without the need for custom code to run on the server.
 
+When your app runs within a SharePoint page, you can easily use Microsoft Graph to access data across Office 365.
+
 To learn about these models in more detail, visit the [SharePoint Dev Center][] or the [SharePoint Developer Docs][].
 
 ## Next steps
 
-Get started with SharePoint in Microsoft Graph by learning more about working with sites [here][].
+Get started with SharePoint in Microsoft Graph by learning more about working with sites [here][SharePoint].
 
+[list]: ../api-reference/v1.0/resources/list.md
+[columns]: ../api-reference/v1.0/resources/columndefinition.md
+[list type]: ../api-reference/v1.0/resources/listinfo.md
+[create]: ../api-reference/v1.0/api/list_create.md
+[querying]: ../api-reference/v1.0/api/listitem_get.md
+[drive]: ../api-reference/v1.0/resources/drive.md
+[OneDrive API]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onedrive
 [SharePoint Framework]: https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview
 [SharePoint Add-ins]: https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins
 [SharePoint Dev Center]: https://developer.microsoft.com/sharepoint
 [SharePoint Developer Docs]: http://aka.ms/spdev-docs
-[here]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/sharepoint
-
-
+[SharePoint]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/sharepoint
