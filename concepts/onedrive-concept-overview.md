@@ -1,8 +1,8 @@
 # OneDrive file storage API overview
 
 OneDrive is the files hub in Office 365.
-People work with files in a variety of apps, like Microsoft Teams, Groups, SharePoint, and more.
-OneDrive lets users access these files no matter where they are stored, and Microsoft Graph lets you use a single API to do it.
+People work with files in a variety of contexts, like Microsoft Teams, groups, SharePoint, and more.
+With OneDrive, users can access these files no matter where they are stored, and with Microsoft Graph, you can use a single API to work with them.
 
 Files in Office 365 are stored in [drives][Drive API].
 Users can store files in a personal drive - their OneDrive - or in a shared drive powered by a [SharePoint][] document library.
@@ -11,7 +11,7 @@ Users can share links to files, copy or move files to team drives, or even attac
 
 ## Why integrate with OneDrive file storage in the cloud?
 
-### Tap into a ecosystem with billions of files
+### Tap into an ecosystem with billions of files
 
 OneDrive users can access their files from any device, online or offline, and share files with people inside or outside their organization.
 OneDrive enables real-time coauthoring in familiar apps like Word, Excel, and PowerPoint.
