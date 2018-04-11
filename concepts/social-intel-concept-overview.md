@@ -45,7 +45,7 @@ Thanks to the Shared and Used APIs, your app can show users what they have been 
 
 The new Office 365 people cards tap into the Used and Shared Insights to connect the dots between people and units of knowledge. The people card identifies and displays relevant information about the person that's being looked up.
 
-![Office Delve helps users discover the information that is most interesting to them](images/peoplecard_concept.png)
+![Office 365 people cards display relevant information about a person](images/peoplecard_concept.png)
 
 #### What can I do with Insight APIs in Microsoft Graph?
 
