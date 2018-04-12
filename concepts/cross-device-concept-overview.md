@@ -2,6 +2,8 @@
 
 {Describe a common context for the activity feed and device relay modules, to serve developers in the explore stage of their journey.}
 
+Add this sentence.
+
 ## Next steps
 
 - [Use the Microsoft Graph API to enable cross-device experiences](../api-reference/v1.0/resources/cross-device-reference-overview.md)
