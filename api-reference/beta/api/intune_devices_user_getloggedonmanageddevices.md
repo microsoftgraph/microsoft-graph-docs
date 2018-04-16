@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7189
+Content-Length: 7272
 
 {
   "value": [
@@ -196,7 +196,8 @@ Content-Length: 7189
           "userId": "User Id value",
           "lastLogOnDateTime": "2016-12-31T23:58:37.4262708-08:00"
         }
-      ]
+      ],
+      "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00"
     }
   ]
 }

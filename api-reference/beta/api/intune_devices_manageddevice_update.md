@@ -95,6 +95,7 @@ The following table shows the properties that are required when you create the [
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name.|
 |partnerReportedThreatState|String|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
 |usersLoggedOn|[loggedOnUser](../resources/intune_devices_loggedonuser.md) collection|Indicates the last logged on users of a device|
+|managementCertificateExpirationDate|DateTimeOffset|Reports device management certificate expiration date|
 
 
 
@@ -107,7 +108,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 6475
+Content-length: 6554
 
 {
   "userId": "User Id value",
@@ -252,7 +253,8 @@ Content-length: 6475
       "userId": "User Id value",
       "lastLogOnDateTime": "2016-12-31T23:58:37.4262708-08:00"
     }
-  ]
+  ],
+  "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00"
 }
 ```
 
@@ -261,7 +263,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6576
+Content-Length: 6655
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -408,7 +410,8 @@ Content-Length: 6576
       "userId": "User Id value",
       "lastLogOnDateTime": "2016-12-31T23:58:37.4262708-08:00"
     }
-  ]
+  ],
+  "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00"
 }
 ```
 

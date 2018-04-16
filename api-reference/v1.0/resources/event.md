@@ -50,28 +50,29 @@ by providing a [delta](../api/event_delta.md) function.
 |hasAttachments|Boolean|Set to true if the event has attachments.|
 |iCalUId|String|A unique identifier that is shared by all instances of an event across different calendars.|
 |id|String| Read-only.|
-|importance|String|The importance of the event. Possible values are: `Low`, `Normal`, `High`.|
+|importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isCancelled|Boolean|Set to true if the event has been canceled.|
 |isOrganizer|Boolean|Set to true if the message sender is also the organizer.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|The location of the event.|
+|locations|[location](location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
 |onlineMeetingUrl|String|A URL for an online meeting.|
 |organizer|[recipient](recipient.md)|The organizer of the event.|
-|originalEndTimeZone|String|The end time zone that was set when the event was created. A value of `tzone://Microsoft/Custom`indicates that a legacy custom time zone was set in desktop Outlook.|
+|originalEndTimeZone|String|The end time zone that was set when the event was created. A value of `tzone://Microsoft/Custom` indicates that a legacy custom time zone was set in desktop Outlook.|
 |originalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |originalStartTimeZone|String|The start time zone that was set when the event was created. A value of `tzone://Microsoft/Custom` indicates that a legacy custom time zone was set in desktop Outlook. |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|The recurrence pattern for the event.|
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 |responseStatus|[responseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
-|sensitivity|String| Possible values are: `Normal`, `Personal`, `Private`, `Confidential`.|
+|sensitivity|String| Possible values are: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|The categories assigned to the item.|
-|showAs|String|The status to show. Possible values are: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
+|showAs|String|The status to show. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event starts.|
 |subject|String|The text of the event's subject line.|
-|type|String|The event type. Possible values are: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`. Read-only.|
+|type|String|The event type. Possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only.|
 |webLink|String|The URL to open the event in Outlook Web App.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame.|
 
 ## Relationships
@@ -121,6 +122,7 @@ Here is a JSON representation of the resource
   "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
+  "locations": [{"@odata.type": "microsoft.graph.location"}],
   "onlineMeetingUrl": "string",
   "organizer": {"@odata.type": "microsoft.graph.recipient"},
   "originalEndTimeZone": "string",

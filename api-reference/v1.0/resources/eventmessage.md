@@ -50,11 +50,13 @@ Aside from a meeting request, an **eventMessage** instance can be found in an at
 |changeKey|String|The version of the message.|
 |conversationId|String|The ID of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
+|flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
 |id|String||
 |importance|String| The importance of the message: `low`, `normal`, `high`.|
 |inferenceClassification|String| Possible values are: `focused`, `other`.|
+|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only.|
 |internetMessageId |String |The message ID in the format specified by [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.|
@@ -107,11 +109,13 @@ Here is a JSON representation of the resource
   "changeKey": "string",
   "conversationId": "string",
   "createdDateTime": "DateTimeOffset",
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
   "importance": "String",
   "inferenceClassification": "String",
+  "internetMessageHeaders": [{"@odata.type": "microsoft.graph.internetMessageHeader"}],
   "internetMessageId": "String",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,

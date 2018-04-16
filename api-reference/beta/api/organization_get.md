@@ -15,6 +15,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Directory.Read.All |
 
+> Note: Applications granted the User.Read permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.  All other properties will return with `null` values. To read all properties, use Directory.Read.All.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

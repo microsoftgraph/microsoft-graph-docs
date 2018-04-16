@@ -1,14 +1,18 @@
 # List organization
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a list of organization objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
+|Delegated (work or school account) | User.Read, Directory.Read.All, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Directory.Read.All, Directory.ReadWrite.All |
+
+> Note: Applications granted the User.Read permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.  All other properties will return with `null` values. To read all properties, use Directory.Read.All.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +40,7 @@ Here is an example of the request.
   "name": "get_organization"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/organization
+GET https://graph.microsoft.com/beta/organization
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -56,7 +60,7 @@ Content-length: 500
     {
       "assignedPlans": [
         {
-          "assignedDateTime": "datetime-value",
+          "assignedDateTime": "2016-10-19T10:37:00Z",
           "capabilityStatus": "capabilityStatus-value",
           "service": "service-value",
           "servicePlanId": "servicePlanId-value"

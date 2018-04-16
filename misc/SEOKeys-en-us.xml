@@ -106,12 +106,20 @@
       <Item text="Send mail" url="/en-us/api-reference/v1.0/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, user API" SEODescription="" />
       <Item text="Get mailbox settings" url="/en-us/api-reference/v1.0/api/user_get_mailboxsettings" SEODescription="" />
       <Item text="Update mailbox settings" url="/en-us/api-reference/v1.0/api/user_update_mailboxsettings" SEODescription="" />
+	  <Item text="List rules" url="/en-us/api-reference/beta/v1.0/mailfolder_list_messagerules" />
+	  <Item text="Create rules" url="/en-us/api-reference/v1.0/api/mailfolder_post_messagerules" />
     </Item>
     <Item text="Notes" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
       <Item text="List notebooks" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
       <Item text="Create notebook" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
     </Item>
-    <Item text="Org hierarchy" url="/en-us/api-reference/v1.0/resources/organization" SEOKeyword="user organizational structure, Microsoft Graph API, user API" SEODescription="Retrieve the user organizational structure.">
+    <Item text="Outlook settings" url="/en-us/api-reference/v1.0/resources/outlookuser" >
+		<Item text="Get language choices" url="/en-us/api-reference/v1.0/api/outlookuser_supportedlanguages" />
+		<Item text="Get time zone choices" url="/en-us/api-reference/v1.0/api/outlookuser_supportedtimezones" />
+		<Item text="List categories" url="/en-us/api-reference/v1.0/api/outlookuser_list_mastercategories" />
+		<Item text="Create category" url="/en-us/api-reference/v1.0/api/outlookuser_post_mastercategories" />
+	</Item>
+	<Item text="Org hierarchy" url="/en-us/api-reference/v1.0/resources/organization" SEOKeyword="user organizational structure, Microsoft Graph API, user API" SEODescription="Retrieve the user organizational structure.">
       <Item text="List direct reports" url="/en-us/api-reference/v1.0/api/user_list_directreports" SEOKeyword="List directReports, Microsoft Graph API, Users API" SEODescription="Retrieve a list of Directoryobject objects." />
       <Item text="Get manager" url="/en-us/api-reference/v1.0/api/user_list_manager" SEOKeyword="Get manager, Microsoft Graph API, Users API" SEODescription="Get manager." />
       <Item text="Assign manager" url="/en-us/api-reference/v1.0/api/user_post_manager" SEOKeyword="Create directReport, Microsoft Graph API, Users API" SEODescription="Use this API to create a new directReport." />
@@ -1778,7 +1786,14 @@
       <Item text="List calendars in calendar group" url="/en-us/api-reference/v1.0/api/calendargroup_list_calendars" SEOKeyword="List calendars, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of calendar objects." />
       <Item text="Create calendar in calendar group" url="/en-us/api-reference/v1.0/api/calendargroup_post_calendars" SEOKeyword="Create calendar group, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Calendar." />
     </Item>
-    <Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
+    <Item text="Categories" url="/en-us/api-reference/v1.0/resources/outlookcategory" >
+		<Item text="List categories" url="/en-us/api-reference/v1.0/api/outlookuser_list_mastercategories" />
+		<Item text="Create category" url="/en-us/api-reference/v1.0/api/outlookuser_post_mastercategories" />
+		<Item text="Get category" url="/en-us/api-reference/v1.0/api/outlookcategory_get" />
+		<Item text="Update category" url="/en-us/api-reference/v1.0/api/outlookcategory_update" />
+		<Item text="Delete category" url="/en-us/api-reference/v1.0/api/outlookcategory_delete" />
+	</Item>
+	<Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
       <Item text="Single-value extended property" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="" >
         <Item text="Create single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
         <Item text="Get single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
@@ -1837,7 +1852,21 @@
       <Item text="List child folders" url="/en-us/api-reference/v1.0/api/mailfolder_list_childfolders" SEOKeyword="List childFolders, Microsoft Graph API, Outlook Mail API" SEODescription="Retrieve a list of mailfolder objects." />
       <Item text="Create mail child folder" url="/en-us/api-reference/v1.0/api/mailfolder_post_childfolders" SEOKeyword="Create mailFolder, Microsoft Graph API, Outlook Mail API" SEODescription="Use this API to create a new MailFolder." />
     </Item>
-    <Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
+    <Item text="Categories" url="/en-us/api-reference/v1.0/resources/outlookcategory" >
+		<Item text="List categories" url="/en-us/api-reference/v1.0/api/outlookuser_list_mastercategories" />
+		<Item text="Create category" url="/en-us/api-reference/v1.0/api/outlookuser_post_mastercategories" />
+		<Item text="Get category" url="/en-us/api-reference/v1.0/api/outlookcategory_get" />
+		<Item text="Update category" url="/en-us/api-reference/v1.0/api/outlookcategory_update" />
+		<Item text="Delete category" url="/en-us/api-reference/v1.0/api/outlookcategory_delete" />
+	</Item>
+	<Item text="Rules" url="/en-us/api-reference/v1.0/resources/messagerule" >
+		<Item text="List rules" url="/en-us/api-reference/v1.0/api/mailfolder_list_messagerules" />
+		<Item text="Create rule" url="/en-us/api-reference/v1.0/api/mailfolder_post_messagerules" />
+		<Item text="Get rule" url="/en-us/api-reference/v1.0/messagerule_get" />
+		<Item text="Update rule" url="/en-us/api-reference/v1.0/api/messagerule_update" />	  
+		<Item text="Delete rule" url="/en-us/api-reference/v1.0/api/messagerule_delete" />
+	  </Item>
+	<Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
       <Item text="Single-value extended property" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="" >
         <Item text="Create single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
         <Item text="Get single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
@@ -1875,7 +1904,14 @@
       <Item text="List contacts in folder" url="/en-us/api-reference/v1.0/api/contactfolder_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, contactfolder API" SEODescription="Retrieve a list of contact objects." />
       <Item text="Create contact in folder" url="/en-us/api-reference/v1.0/api/contactfolder_post_contacts" SEOKeyword="Create Contact, Microsoft Graph API, contactfolder API" SEODescription="Use this API to create a new Contact." />
     </Item>
-    <Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
+    <Item text="Categories" url="/en-us/api-reference/v1.0/resources/outlookcategory" >
+		<Item text="List categories" url="/en-us/api-reference/v1.0/api/outlookuser_list_mastercategories" />
+		<Item text="Create category" url="/en-us/api-reference/v1.0/api/outlookuser_post_mastercategories" />
+		<Item text="Get category" url="/en-us/api-reference/v1.0/api/outlookcategory_get" />
+		<Item text="Update category" url="/en-us/api-reference/v1.0/api/outlookcategory_update" />
+		<Item text="Delete category" url="/en-us/api-reference/v1.0/api/outlookcategory_delete" />
+	</Item>
+	<Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
       <Item text="Single-value extended property" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="" >
         <Item text="Create single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
         <Item text="Get single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
@@ -5086,7 +5122,16 @@
         <Item text="List child folders" url="/en-us/api-reference/beta/api/mailfolder_list_childfolders" SEOKeyword="List childFolders, Microsoft Graph API, Outlook Mail API" SEODescription="Retrieve a list of mailfolder objects." />
         <Item text="Create mail child folder" url="/en-us/api-reference/beta/api/mailfolder_post_childfolders" SEOKeyword="Create mailFolder, Microsoft Graph API, Outlook Mail API" SEODescription="Use this API to create a new MailFolder." />
       </Item>
-      <Item text="Rules" url="/en-us/api-reference/beta/resources/messagerule" >
+	  <Item text="Mail search folder" url="/en-us/api-reference/beta/resources/mailsearchfolder" SEODescription="">
+        <Item text="List mail search folders" url="/en-us/api-reference/beta/api/user_list_mailfolders" SEODescription="Retrieve a list of mailfolder objects." />
+        <Item text="Create mail search folder" url="/en-us/api-reference/beta/api/mailsearchfolder_post" SEODescription="Use this API to create a new MailFolder." />
+        <Item text="Get mail search folder" url="/en-us/api-reference/beta/api/mailfolder_get" SEODescription="Retrieve the properties and relationships of mailfolder object." />
+        <Item text="Update mail search folder" url="/en-us/api-reference/beta/api/mailsearchfolder_update" SEODescription="Update the properties of mailfolder object." />
+        <Item text="Delete mail search folder" url="/en-us/api-reference/beta/api/mailfolder_delete" SEODescription="Delete mailFolder." />
+        <Item text="List messages in folder" url="/en-us/api-reference/beta/api/mailfolder_list_messages" SEODescription="Retrieve a list of message objects." />
+        <Item text="List child folders" url="/en-us/api-reference/beta/api/mailfolder_list_childfolders" SEODescription="Retrieve a list of mailfolder objects." />
+      </Item>
+	  <Item text="Rules" url="/en-us/api-reference/beta/resources/messagerule" >
 		<Item text="List rules" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
 		<Item text="Create rule" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
 		<Item text="Get rule" url="/en-us/api-reference/beta/api/messagerule_get" />
@@ -5393,7 +5438,16 @@
       <Item text="Update schema extension" url="/en-us/api-reference/beta/api/schemaextension_update" SEOKeyword="Update schema extension, Microsoft Graph API" SEODescription="Update the properties of a schema extension definition." />
       <Item text="Delete schema extension" url="/en-us/api-reference/beta/api/schemaextension_delete" SEOKeyword="Delete schema extension, Microsoft Graph API" SEODescription="Delete a schema extension definition." />
     </Item>
-    <Item text="SharePoint" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="sharepoint, sites, lists, drives, microsoft graph api, sharepoint api">
+    <Item text="Security" url="/en-us/api-reference/beta/resources/security-api-overview" >
+		<Item text="Alerts" url="/en-us/api-reference/beta/resources/alert" >
+			<Item text="List alerts" url="/en-us/api-reference/beta/api/alert_list" />
+			<Item text="Get alert" url="/en-us/api-reference/beta/api/alert_get" />
+			<Item text="Update alert" url="/en-us/api-reference/beta/api/alert_update" />
+		</Item>
+		<Item text="Errors" url="/en-us/api-reference/beta/resources/security-error-codes" />
+	    	<Item text="Integrate with a SIEM" url="/en-us/concepts/security_siemintegration" />
+	</Item>
+	<Item text="SharePoint" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="sharepoint, sites, lists, drives, microsoft graph api, sharepoint api">
       <Item text="Sites" url="/en-us/api-reference/beta/resources/site" SEOKeyword="sharepoint, site, sites, microsoft graph api, sharepoint sites api" >
         <Item text="Get site" url="/en-us/api-reference/beta/api/site_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
         <Item text="Get lists" url="/en-us/api-reference/beta/api/lists_list" SEOKeyword="sharepoint, list lists, get lists" SEODescription="" />

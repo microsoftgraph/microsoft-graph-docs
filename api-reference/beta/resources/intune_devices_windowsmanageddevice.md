@@ -76,6 +76,7 @@ Inherits from [managedDevice](../resources/intune_devices_manageddevice.md)
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |partnerReportedThreatState|String|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
 |usersLoggedOn|[loggedOnUser](../resources/intune_devices_loggedonuser.md) collection|Indicates the last logged on users of a device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|managementCertificateExpirationDate|DateTimeOffset|Reports device management certificate expiration date Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -238,7 +239,8 @@ Here is a JSON representation of the resource.
       "userId": "String",
       "lastLogOnDateTime": "String (timestamp)"
     }
-  ]
+  ],
+  "managementCertificateExpirationDate": "String (timestamp)"
 }
 ```
 

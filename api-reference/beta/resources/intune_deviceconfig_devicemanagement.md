@@ -49,7 +49,8 @@ Here is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.deviceManagementSettings",
     "deviceComplianceCheckinThresholdDays": 1024,
     "isScheduledActionEnabled": true,
-    "secureByDefault": true
+    "secureByDefault": true,
+    "enhancedJailBreak": true,
   },
   "maximumDepTokens": 1024,
   "intuneAccountId": "<Unknown Primitive Type Edm.Guid>"
