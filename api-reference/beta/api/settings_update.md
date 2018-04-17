@@ -20,11 +20,13 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /me/settings/
 ```
 
-Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. See [Permissions](../../../concepts/permissions_reference.md).
+Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. See [Permissions](../../../concepts/permissions_reference.md). 
 
 ```http
 PATCH /users/{id | userPrincipalName}/settings/
 ```
+
+Only members of the [Organization Management](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) role group can update the 'contributionToContentDiscoveryDisabled' property of other users. 
 
 ## Request headers
 
