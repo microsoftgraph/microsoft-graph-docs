@@ -32,8 +32,8 @@ Build and run investigation and remediation runbooks, automate security policy c
 ## Resources
 
 * [ASP.NET (C#) SDK](https://www.nuget.org/packages/Microsoft.Graph)
-* [ASP.NET (C#) sample](https://github.com/search?q=aspnet+sample+user:microsoftgraph&type=Repositories)
-* [Python sample](https://github.com/search?q=python+sample+user:microsoftgraph&type=Repositories)
+* [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
+* [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
 
 Microsoft Graph security solutions will receive alerts from the following data providers:
 

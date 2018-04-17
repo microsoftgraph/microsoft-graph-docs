@@ -67,10 +67,12 @@ Content-length: 252
 {
   "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource":"me/messages",
+  "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
   "changeType":"created,updated",
   "clientState":"subscription-identifier",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
-  "expirationDateTime":"2016-11-22T18:23:45.9356913Z"
+  "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
+  "creatorUserId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
 

@@ -10,13 +10,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta       | Added [Security API](../api-reference/beta/resources/security-api-overview.md)
-| Addition        | Beta       | Added [alert](../api-reference/beta/resources/alert.md) and its related entities
-| Addition        | Beta       | Added [get alert](../api-reference/beta/api/alert_get.md)
-| Addition        | Beta       | Added [list alerts](../api-reference/beta/api/alert_list.md)
-| Addition        | Beta       | Added [update alert](../api-reference/beta/api/alert_update.md)
-| Addition        | Beta       | Added [errors](../api-reference/beta/resources/security-error-codes.md)
-| Addition        | Beta       | Added [SIEM integration instructions](../concepts/security_siemintegration.md)
+| Addition        | Beta       | Added the [security API](../api-reference/beta/resources/security-api-overview.md), including the following resources and operations:<br/>[alert](../api-reference/beta/resources/alert.md) (and related entities)<br/>[Get alert](../api-reference/beta/api/alert_get.md)<br/>[List alerts](../api-reference/beta/api/alert_list.md)<br/>[Update alert](../api-reference/beta/api/alert_update.md)<br/><br/>Added the following supporting documentation:<br/>[Errors](../api-reference/beta/resources/security-error-codes.md)<br/>[Integrate with a SIEM](../concepts/security_siemintegration.md)
 
 ### Reports APIs
 |Change type|Version|Description|
@@ -73,6 +67,16 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition | v1.0 | Added the new **workingHours** property to [mailboxSettings](../api-reference/v1.0/resources/mailboxsettings.md). See [workingHours resource type](../api-reference/v1.0/resources/workinghours.md) for information on the supported use cases.|
 |Addition | v1.0 | Added the following new complex types: <br> [workingHours](../api-reference/v1.0/resources/workinghours.md) <br> [timeZoneBase](../api-reference/v1.0/resources/timezonebase.md) <br> [customTimeZone](../api-reference/v1.0/resources/customtimezone.md) <br> [standardTimeZoneOffset](../api-reference/v1.0/resources/standardtimezoneoffset.md) <br> [daylightTimeZoneOffset](../api-reference/v1.0/resources/daylighttimezoneoffset.md)|
 
+### Education APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Change|Beta|Added the reportableIdentifier property to [educationsynchronizationerror](../api-reference/beta/resources/educationsynchronizationerror.md).|
+|Change|Beta|Updated the response options for the [uploadUrl](../api-reference/beta/api/educationsynchronizationprofile_uploadurl.md) API.|
+|Change|Beta|Updated the text for description of the [educationSynchronizationError](../api-reference/beta/resources/educationsynchronizationerror.md) resource type.|
+|Change|Beta|Updated the text for description of the [get sync errors](../api-reference/beta/api/educationsynchronizationerrors_get.md) API.|
+
+
 ## March 2018
 
 ### ActivityFeedService APIs
@@ -88,6 +92,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Change | Beta | Added **status** property to [activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity) |
 | Change | Beta | Added **activity** navigation property to [historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem) |
 | Change | Beta | Added new APIs to [Project Rome overview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/project_rome_overview) |
+
+### Azure AD APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Change|beta|Added the **applicationID** and **creatorUserID** properties to the [subscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/subscription) resource. |
+|Change|beta|Added the [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/subscription_list) operation to the [subscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/subscription) entity. |
+
 
 ### Directory APIs
 

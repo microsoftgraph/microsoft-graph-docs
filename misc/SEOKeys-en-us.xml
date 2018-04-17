@@ -5468,7 +5468,8 @@
     </Item>
     <Item text="Webhooks" url="/en-us/api-reference/beta/resources/webhooks" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
       <Item text="Subscription" url="/en-us/api-reference/beta/resources/subscription" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
-        <Item text="Get subscription" url="/en-us/api-reference/beta/api/subscription_get" SEOKeyword="List subscriptions, Microsoft Graph API, webhoooks API" SEODescription="Retrieve a list of subscription." />
+        <Item text="List subscriptions" url="/en-us/api-reference/beta/api/subscription_list" SEOKeyword="List subscriptions, Microsoft Graph API, webhoooks API" SEODescription="Retrieve a list of subscription." />
+        <Item text="Get subscription" url="/en-us/api-reference/beta/api/subscription_get" SEOKeyword="Get subscription, Microsoft Graph API, webhoooks API" SEODescription="Retrieve properties for a given subscription." />
         <Item text="Create subscription" url="/en-us/api-reference/beta/api/subscription_post_subscriptions" />
         <Item text="Update subscription" url="/en-us/api-reference/beta/api/subscription_update" />
         <Item text="Delete subscription" url="/en-us/api-reference/beta/api/subscription_delete" />
