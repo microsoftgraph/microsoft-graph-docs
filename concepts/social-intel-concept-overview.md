@@ -19,23 +19,23 @@ The insights API uses advanced analytics and machine learning to provide the mos
 
 During a typical working day, users often interact with large amounts of information stored across many documents and collaborate with other users in many different ways. It's important that they can always can find what they need, when they need it.
 
-The Insights APIs, which include the [Trending](../api-reference/beta/resources/insights_trending.md), [Shared](../api-reference/beta/resources/insights_shared.md), and [Used](../api-reference/beta/resources/insights_used.md) APIs, allow you to surface files from across Office 365 based on your users' current context and needs to make them more productive and improve collaboration in your organization.
+The Insights APIs, which include the [trending](../api-reference/beta/resources/insights_trending.md), [shared](../api-reference/beta/resources/insights_shared.md), and [used](../api-reference/beta/resources/insights_used.md) APIs, allow you to surface files from across Office 365 based on your users' current context and needs to make them more productive and improve collaboration in your organization.
 
 It is easy to render the results from the Insights APIs in your app. Every result comes with a set of common visualization properties, like a preview image URL or a preview text.
 
 ### Make relevant content visible
 
-The results of the [Trending](../api-reference/beta/resources/insights_trending.md) API are sorted by relevance, and by default, your app will display what's most important on top.
+The results of the [trending](../api-reference/beta/resources/insights_trending.md) API are sorted by relevance, and by default, your app will display what's most important on top.
 
-In Office 365, Delve uses the Trending Insight to help users discover the  information that is most interesting to them right now - across Office 365.
+In Office 365, Delve uses the trending Insight to help users discover the  information that is most interesting to them right now - across Office 365.
 
 ![Office Delve helps users discover the information that is most interesting to them](images/delve_concept.png)
 
 ### Allow users to collaborate and get back to work
 
-Thanks to the [Shared](../api-reference/beta/resources/insights_shared.md) and [Used](../api-reference/beta/resources/insights_used.md) APIs, your app can show users what they have been working on most recently. Or display what their colleagues have shared with them most recently in Office 365.
+Thanks to the [shared](../api-reference/beta/resources/insights_shared.md) and [used](../api-reference/beta/resources/insights_used.md) APIs, your app can show users what they have been working on most recently. Or display what their colleagues have shared with them most recently in Office 365.
 
-The new Office 365 people cards tap into the Used and Shared Insights to connect the dots between people and units of knowledge. The people card identifies and displays relevant information about the person that's being looked up. Users can see people cards across the suite, for example in the Outlook on the web.
+The new Office 365 people cards tap into the used and shared Insights to connect the dots between people and units of knowledge. The people card identifies and displays relevant information about the person that's being looked up. Users can see people cards across the suite, for example in the Outlook on the web.
 ![Office 365 people cards display relevant information about a person](images/peoplecard_concept.png)
 
 ### What can I do with Insight APIs in Microsoft Graph?
