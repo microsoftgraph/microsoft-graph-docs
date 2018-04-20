@@ -1,6 +1,8 @@
 # Get directory objects from a list of ids
 
-Returns the directory objects specified in a list of ids.  NOTE: The directory objects returned are the full objects containing **all** their properties. The `$select` query option is not available for this operation.
+Returns the directory objects specified in a list of ids.
+
+NOTE: Not all directory objects returned are the full objects containing **all** their properties. For example [user](../resources/user.md) objects are returned with a limited set of properties, but when used in combination with the `$select` query option such as `$select=id` full [user](../resources/user.md) objects will be returned.
 
 Some common uses for this function are to:
 
