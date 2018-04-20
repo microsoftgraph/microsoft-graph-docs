@@ -30,6 +30,7 @@ Contains properties for a single installer file that is associated with a given 
 |manifest|Binary|The manifest information.|
 |uploadState|String|The state of the current upload request. Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
 |isFrameworkFile|Boolean|A value indicating whether the file is a framework file.|
+|isDependency|Boolean|Whether the content file is a dependency for the main content file.|
 
 ## Relationships
 None
@@ -54,7 +55,8 @@ Here is a JSON representation of the resource.
   "azureStorageUriExpirationDateTime": "String (timestamp)",
   "manifest": "binary",
   "uploadState": "String",
-  "isFrameworkFile": true
+  "isFrameworkFile": true,
+  "isDependency": true
 }
 ```
 

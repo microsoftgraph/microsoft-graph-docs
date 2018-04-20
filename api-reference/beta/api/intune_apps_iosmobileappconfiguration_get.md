@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 749
+Content-Length: 803
 
 {
   "value": {
@@ -64,6 +64,7 @@ Content-Length: 749
     "displayName": "Display Name value",
     "version": 7,
     "settingXml": "Setting Xml value",
+    "encodedSettingXml": "ZW5jb2RlZFNldHRpbmdYbWw=",
     "settings": [
       {
         "@odata.type": "microsoft.graph.appConfigurationSettingItem",

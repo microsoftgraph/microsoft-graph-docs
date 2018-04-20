@@ -48,6 +48,7 @@ Here is a JSON representation of the resource
   "id": "string (identifier)",
   "importance": "String",
   "inferenceClassification": "String",
+  "internetMessageHeaders": [{"@odata.type": "microsoft.graph.internetMessageHeader"}],
   "internetMessageId": "String",
   "isAllDay": "Boolean",
   "isDeliveryReceiptRequested": true,
@@ -95,8 +96,8 @@ Here is a JSON representation of the resource
 |id|String||
 |importance|String| The importance of the message: `low`, `normal`, `high`.|
 |inferenceClassification|String| Possible values are: `focused`, `other`.|
-|internetMessageId |String |The message ID in the format specified by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). |
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only.|
+|internetMessageId |String |The message ID in the format specified by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). |
 |isAllDay |Boolean|Indicates whether the event lasts the entire day. Adjusting this property requires adjusting the **startDateTime** and **endDateTime** properties of the event as well.|
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.|

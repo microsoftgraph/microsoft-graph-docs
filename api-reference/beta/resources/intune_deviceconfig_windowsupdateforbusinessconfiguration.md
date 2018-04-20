@@ -40,6 +40,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Feature Updates Pause Expiry datetime|
 |businessReadyUpdatesOnly|String|Determines which branch devices will receive their updates from Possible values are: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
 |previewBuildSetting|String|Set the insider build control in the advanced options for Windows Update Possible values are: `userDefined`, `allowed`, `notAllowed`.|
+|skipChecksBeforeRestart|Boolean|Set to skip all check before restart: Battery level = 40%, User presence, Display Needed, Presentation mode, Full screen mode, phone call state, game mode etc. |
+|updateWeeks|String|Scheduled the update installation on the weeks of the month Possible values are: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -87,7 +89,9 @@ Here is a JSON representation of the resource.
   "qualityUpdatesPauseExpiryDateTime": "String (timestamp)",
   "featureUpdatesPauseExpiryDateTime": "String (timestamp)",
   "businessReadyUpdatesOnly": "String",
-  "previewBuildSetting": "String"
+  "previewBuildSetting": "String",
+  "skipChecksBeforeRestart": true,
+  "updateWeeks": "String"
 }
 ```
 

@@ -34,19 +34,23 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |bundleId|String|The Identity Name.|
-|minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+|minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune_apps_macosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+|buildNumber|String|The build number of MacOS Line of Business (LoB) app.|
 |versionNumber|String|The version number of MacOS Line of Business (LoB) app.|
+|childApps|[macOSLobChildApp](../resources/intune_apps_macoslobchildapp.md) collection|The app list in this bundle package|
+|identityVersion|String|The identity version.|
+|md5HashChunkSize|Int32|The chunk size for MD5 hash|
+|md5Hash|String collection|The MD5 hash codes|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|groupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |assignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -82,19 +86,36 @@ Here is a JSON representation of the resource.
   "developer": "String",
   "notes": "String",
   "uploadState": 1024,
+  "publishingState": "String",
   "committedContentVersion": "String",
   "fileName": "String",
   "size": 1024,
-  "identityVersion": "String",
   "bundleId": "String",
   "minimumSupportedOperatingSystem": {
-    "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
-    "v8_0": true,
-    "v9_0": true,
-    "v10_0": true,
-    "v11_0": true
+    "@odata.type": "microsoft.graph.macOSMinimumOperatingSystem",
+    "v10_7": true,
+    "v10_8": true,
+    "v10_9": true,
+    "v10_10": true,
+    "v10_11": true,
+    "v10_12": true,
+    "v10_13": true
   },
-  "versionNumber": "String"
+  "buildNumber": "String",
+  "versionNumber": "String",
+  "childApps": [
+    {
+      "@odata.type": "microsoft.graph.macOSLobChildApp",
+      "bundleId": "String",
+      "buildNumber": "String",
+      "versionNumber": "String"
+    }
+  ],
+  "identityVersion": "String",
+  "md5HashChunkSize": 1024,
+  "md5Hash": [
+    "String"
+  ]
 }
 ```
 

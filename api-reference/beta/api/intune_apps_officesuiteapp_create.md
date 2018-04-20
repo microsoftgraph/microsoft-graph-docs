@@ -58,7 +58,8 @@ The following table shows the properties that are required when you create the o
 |updateChannel|String|The property to represent the Office365 Update Channel. Possible values are: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
 |officePlatformArchitecture|String|The property to represent the Office365 App Suite version. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
 |localesToInstall|String collection|The property to represent the locales which are installed when the Apps from Office365 is installed. It uses standard RFC 6033. Ref: https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
-|installProgressDisplayLevel|String|to specify the level of display for the Installation Progress Setup UI on the Device. Possible values are: `none`, `full`.|
+|installProgressDisplayLevel|String|To specify the level of display for the Installation Progress Setup UI on the Device. Possible values are: `none`, `full`.|
+|shouldUninstallOlderVersionsOfOffice|Boolean|The property to determine whether to uninstall existing Office MSI if an OfficeSuiteApp is deployed to the device or not.|
 
 
 
@@ -71,7 +72,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1329
+Content-length: 1378
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -118,7 +119,8 @@ Content-length: 1329
   "localesToInstall": [
     "Locales To Install value"
   ],
-  "installProgressDisplayLevel": "full"
+  "installProgressDisplayLevel": "full",
+  "shouldUninstallOlderVersionsOfOffice": true
 }
 ```
 
@@ -127,7 +129,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1437
+Content-Length: 1486
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -176,7 +178,8 @@ Content-Length: 1437
   "localesToInstall": [
     "Locales To Install value"
   ],
-  "installProgressDisplayLevel": "full"
+  "installProgressDisplayLevel": "full",
+  "shouldUninstallOlderVersionsOfOffice": true
 }
 ```
 

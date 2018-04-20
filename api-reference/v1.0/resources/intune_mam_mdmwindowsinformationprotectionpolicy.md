@@ -62,7 +62,7 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 |:---|:---|:---|
 |protectedAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input protected apps through xml files Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |exemptAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input exempt apps through xml files Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
-|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) collection|Navigation property to list of security groups targeted for policy. Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|assignments|targetedManagedAppPolicyAssignment collection|Navigation property to list of security groups targeted for policy. Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

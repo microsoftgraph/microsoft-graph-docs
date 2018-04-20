@@ -14,7 +14,7 @@ The [Azure AD v2.0 endpoint](https://azure.microsoft.com/en-us/documentation/art
 
 To get started, you'll need: 
 
-- A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
+- A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 - Visual Studio 2015 
 - The [Microsoft Graph Connect Sample for ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample). You'll use the **starter-project** folder in the sample files.
 

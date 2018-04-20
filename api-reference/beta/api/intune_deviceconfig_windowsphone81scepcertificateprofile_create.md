@@ -44,8 +44,8 @@ The following table shows the properties that are required when you create the w
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |renewalThresholdPercentage|Int32|Certificate renewal threshold percentage. Inherited from [windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md)|
 |keyStorageProvider|String|Key Storage Provider (KSP). Inherited from [windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md) Possible values are: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
-|subjectNameFormat|String|Certificate Subject Name Format. Inherited from [windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md) Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`.|
-|subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Inherited from [windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md) Possible values are: `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
+|subjectNameFormat|String|Certificate Subject Name Format. Inherited from [windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md) Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
+|subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Inherited from [windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md) Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validtiy Period. Inherited from [windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md)|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period. Inherited from [windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md) Possible values are: `days`, `months`, `years`.|
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune_deviceconfig_extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements. Inherited from [windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md)|
@@ -67,7 +67,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1009
+Content-length: 1004
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81SCEPCertificateProfile",
@@ -78,7 +78,7 @@ Content-length: 1009
   "renewalThresholdPercentage": 10,
   "keyStorageProvider": "useTpmKspOtherwiseFail",
   "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "userPrincipalName",
+  "subjectAlternativeNameType": "emailAddress",
   "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "extendedKeyUsages": [
@@ -104,7 +104,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1117
+Content-Length: 1112
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81SCEPCertificateProfile",
@@ -117,7 +117,7 @@ Content-Length: 1117
   "renewalThresholdPercentage": 10,
   "keyStorageProvider": "useTpmKspOtherwiseFail",
   "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "userPrincipalName",
+  "subjectAlternativeNameType": "emailAddress",
   "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "extendedKeyUsages": [

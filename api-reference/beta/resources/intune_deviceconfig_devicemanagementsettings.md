@@ -11,6 +11,7 @@ Not yet documented
 |deviceComplianceCheckinThresholdDays|Int32|The number of days a device is allowed to go without checking in to remain compliant. Valid values 0 to 120|
 |isScheduledActionEnabled|Boolean|Is feature enabled or not for scheduled action for rule.|
 |secureByDefault|Boolean|Device should be noncompliant when there is no compliance policy targeted when this is true|
+|enhancedJailBreak|Boolean|Is feature enabled or not for enhanced jailbreak detection.|
 
 ## Relationships
 None
@@ -27,7 +28,8 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceManagementSettings",
   "deviceComplianceCheckinThresholdDays": 1024,
   "isScheduledActionEnabled": true,
-  "secureByDefault": true
+  "secureByDefault": true,
+  "enhancedJailBreak": true,
 }
 ```
 

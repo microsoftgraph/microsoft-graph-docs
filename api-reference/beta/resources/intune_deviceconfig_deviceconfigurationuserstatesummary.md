@@ -15,13 +15,13 @@ Not yet documented
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|unknownDeviceCount|Int32|Number of unknown devices|
-|notApplicableDeviceCount|Int32|Number of not applicable devices|
-|compliantDeviceCount|Int32|Number of compliant devices|
-|remediatedDeviceCount|Int32|Number of remediated devices|
-|nonCompliantDeviceCount|Int32|Number of NonCompliant devices|
-|errorDeviceCount|Int32|Number of error devices|
-|conflictDeviceCount|Int32|Number of conflict devices|
+|unknownUserCount|Int32|Number of unknown users|
+|notApplicableUserCount|Int32|Number of not applicable users|
+|compliantUserCount|Int32|Number of compliant users|
+|remediatedUserCount|Int32|Number of remediated users|
+|nonCompliantUserCount|Int32|Number of NonCompliant users|
+|errorUserCount|Int32|Number of error users|
+|conflictUserCount|Int32|Number of conflict users|
 
 ## Relationships
 None
@@ -37,13 +37,13 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationUserStateSummary",
   "id": "String (identifier)",
-  "unknownDeviceCount": 1024,
-  "notApplicableDeviceCount": 1024,
-  "compliantDeviceCount": 1024,
-  "remediatedDeviceCount": 1024,
-  "nonCompliantDeviceCount": 1024,
-  "errorDeviceCount": 1024,
-  "conflictDeviceCount": 1024
+  "unknownUserCount": 1024,
+  "notApplicableUserCount": 1024,
+  "compliantUserCount": 1024,
+  "remediatedUserCount": 1024,
+  "nonCompliantUserCount": 1024,
+  "errorUserCount": 1024,
+  "conflictUserCount": 1024
 }
 ```
 

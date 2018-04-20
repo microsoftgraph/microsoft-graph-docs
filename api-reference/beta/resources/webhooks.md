@@ -73,7 +73,7 @@ Microsoft Graph validates the notification URL in a subscription request before 
 
   ```
   POST https://{notificationUrl}?validationToken={TokenDefinedByMicrosoftGraph}
-  ClientState: {Data sent in ClientState value in subscription request (if any)}
+  clientState: {Data sent in ClientState value in subscription request (if any)}
   ```
  
 2. The client must provide a response with the following characteristics within 10 seconds:

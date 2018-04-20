@@ -12,9 +12,6 @@ Inherits from [managedAppRegistration](../resources/intune_mam_managedappregistr
 |:---|:---|:---|
 |[List iosManagedAppRegistrations](../api/intune_mam_iosmanagedappregistration_list.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) collection|List properties and relationships of the [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) objects.|
 |[Get iosManagedAppRegistration](../api/intune_mam_iosmanagedappregistration_get.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)|Read properties and relationships of the [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) object.|
-|[Create iosManagedAppRegistration](../api/intune_mam_iosmanagedappregistration_create.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)|Create a new [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) object.|
-|[Delete iosManagedAppRegistration](../api/intune_mam_iosmanagedappregistration_delete.md)|None|Deletes a [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md).|
-|[Update iosManagedAppRegistration](../api/intune_mam_iosmanagedappregistration_update.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)|Update the properties of a [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 797
+Content-Length: 863
 
 {
   "value": {
@@ -74,7 +74,8 @@ Content-Length: 797
       "quarantinedDeviceCount": 6,
       "unknownDeviceCount": 2,
       "unavailableDeviceCount": 6
-    }
+    },
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
   }
 }
 ```

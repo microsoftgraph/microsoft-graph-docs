@@ -32,9 +32,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |allowPrinting|Boolean|Indicates whether or not to allow the app from printing during the test.|
 |allowScreenCapture|Boolean|Indicates whether or not to allow screen capture capability during a test.|
 |allowTextSuggestion|Boolean|Indicates whether or not to allow text suggestions during the test.|
-|printerNames|String collection|Automatically provision printers based on their names (network host names).|
-|defaultPrinterName|String|Name (network host name) of an installed printer.|
-|blockAddingNewPrinter|Boolean|Prevent user installation of additional printers from printers settings.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -69,12 +66,7 @@ Here is a JSON representation of the resource.
   "configurationAccountType": "String",
   "allowPrinting": true,
   "allowScreenCapture": true,
-  "allowTextSuggestion": true,
-  "printerNames": [
-    "String"
-  ],
-  "defaultPrinterName": "String",
-  "blockAddingNewPrinter": true
+  "allowTextSuggestion": true
 }
 ```
 

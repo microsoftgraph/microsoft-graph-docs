@@ -25,8 +25,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |renewalThresholdPercentage|Int32|Certificate renewal threshold percentage. Valid values 1 to 99|
 |keyStorageProvider|String|Key Storage Provider (KSP) Possible values are: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
-|subjectNameFormat|String|Certificate Subject Name Format Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`.|
-|subjectAlternativeNameType|String|Certificate Subject Alternative Name Type Possible values are: `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
+|subjectNameFormat|String|Certificate Subject Name Format Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
+|subjectAlternativeNameType|String|Certificate Subject Alternative Name Type Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period Possible values are: `days`, `months`, `years`.|
 

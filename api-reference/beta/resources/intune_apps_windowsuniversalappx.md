@@ -56,6 +56,7 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |contentVersions|[mobileAppContent](../resources/intune_apps_mobileappcontent.md) collection|The list of content versions for this app. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
+|committedContainedApps|[mobileContainedApp](../resources/intune_apps_mobilecontainedapp.md) collection|The collection of contained apps in the committed mobileAppContent of a windowsUniversalAppX app.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

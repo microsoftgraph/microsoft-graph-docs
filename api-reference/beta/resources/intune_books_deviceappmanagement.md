@@ -20,6 +20,7 @@ Singleton entity that acts as a container for all device app management function
 |Relationship|Type|Description|
 |:---|:---|:---|
 |managedEBooks|[managedEBook](../resources/intune_books_managedebook.md) collection|The Managed eBook.|
+|managedEBookCategories|[managedEBookCategory](../resources/intune_books_managedebookcategory.md) collection|The mobile eBook categories.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8610
+Content-Length: 11054
 
 {
   "value": [
@@ -60,7 +60,36 @@ Content-Length: 8610
       "displayName": "Display Name value",
       "version": 7,
       "localSecurityOptionsBlockMicrosoftAccounts": true,
+      "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
       "localSecurityOptionsEnableAdministratorAccount": true,
+      "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
+      "localSecurityOptionsEnableGuestAccount": true,
+      "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
+      "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
+      "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
+      "localSecurityOptionsBlockRemoteOpticalDriveAccess": true,
+      "localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser": "administrators",
+      "localSecurityOptionsMachineInactivityLimit": 10,
+      "localSecurityOptionsDoNotRequireCtrlAltDel": true,
+      "localSecurityOptionsInformationDisplayedOnLockScreen": "administrators",
+      "localSecurityOptionsHideLastSignedInUser": true,
+      "localSecurityOptionsHideUsernameAtSignIn": true,
+      "localSecurityOptionsLogOnMessageTitle": "Local Security Options Log On Message Title value",
+      "localSecurityOptionsLogOnMessageText": "Local Security Options Log On Message Text value",
+      "localSecurityOptionsAllowPKU2UAuthenticationRequests": true,
+      "localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager": "Local Security Options Allow Remote Calls To Security Accounts Manager value",
+      "localSecurityOptionsClearVirtualMemoryPageFile": true,
+      "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
+      "localSecurityOptionsAllowUIAccessApplicationElevation": true,
+      "localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations": true,
+      "localSecurityOptionsOnlyElevateSignedExecutables": true,
+      "localSecurityOptionsAdministratorElevationPromptBehavior": "elevateWithoutPrompting",
+      "localSecurityOptionsStandardUserElevationPromptBehavior": "automaticallyDenyElevationRequests",
+      "localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation": true,
+      "localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation": true,
+      "localSecurityOptionsAllowUIAccessApplicationsForSecureLocations": true,
+      "localSecurityOptionsUseAdminApprovalMode": true,
+      "localSecurityOptionsUseAdminApprovalModeForAdministrators": true,
       "defenderSecurityCenterDisableAppBrowserUI": true,
       "defenderSecurityCenterDisableFamilyUI": true,
       "defenderSecurityCenterDisableHealthUI": true,
@@ -141,7 +170,6 @@ Content-Length: 8610
       "defenderUntrustedUSBProcessType": "block",
       "defenderUntrustedExecutableType": "block",
       "defenderEmailContentExecutionType": "block",
-      "defenderPasswordProtectedEmailContentExecutionType": "block",
       "defenderAdvancedRansomewareProtectionType": "enable",
       "defenderGuardMyFoldersType": "enable",
       "defenderGuardedFoldersAllowedAppPaths": [
@@ -155,6 +183,9 @@ Content-Length: 8610
       "defenderExploitProtectionXmlFileName": "Defender Exploit Protection Xml File Name value",
       "defenderSecurityCenterBlockExploitProtectionOverride": true,
       "appLockerApplicationControl": "enforceComponentsAndStoreApps",
+      "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
+      "deviceGuardEnableVirtualizationBasedSecurity": true,
+      "deviceGuardEnableSecureBootWithDMA": true,
       "smartScreenEnableInShell": true,
       "smartScreenBlockOverrideForFiles": true,
       "applicationGuardEnabled": true,

@@ -12,9 +12,6 @@ Inherits from [managedAppRegistration](../resources/intune_mam_managedappregistr
 |:---|:---|:---|
 |[List androidManagedAppRegistrations](../api/intune_mam_androidmanagedappregistration_list.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md) collection|List properties and relationships of the [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md) objects.|
 |[Get androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_get.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Read properties and relationships of the [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md) object.|
-|[Create androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_create.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Create a new [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md) object.|
-|[Delete androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_delete.md)|None|Deletes a [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md).|
-|[Update androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_update.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Update the properties of a [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -72,7 +72,7 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) collection|Navigation property to list of inclusion and exclusion groups to which the policy is deployed.|
+|assignments|targetedManagedAppPolicyAssignment collection|Navigation property to list of inclusion and exclusion groups to which the policy is deployed.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

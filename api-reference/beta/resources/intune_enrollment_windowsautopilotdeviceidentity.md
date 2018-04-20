@@ -21,6 +21,7 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |deploymentProfileAssignmentStatus|String|Profile assignment status of the Windows autopilot device. Possible values are: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Profile set time of the Windows autopilot device.|
 |orderIdentifier|String|Order Identifier of the Windows autopilot device.|
+|purchaseOrderIdentifier|String|Purchase Order Identifier of the Windows autopilot device.|
 |serialNumber|String|Serial number of the Windows autopilot device.|
 |productKey|String|Product Key of the Windows autopilot device.|
 |manufacturer|String|Oem manufacturer of the Windows autopilot device.|
@@ -48,6 +49,7 @@ Here is a JSON representation of the resource.
   "deploymentProfileAssignmentStatus": "String",
   "deploymentProfileAssignedDateTime": "String (timestamp)",
   "orderIdentifier": "String",
+  "purchaseOrderIdentifier": "String",
   "serialNumber": "String",
   "productKey": "String",
   "manufacturer": "String",

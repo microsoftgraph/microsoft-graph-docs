@@ -78,11 +78,9 @@ Here is a JSON representation of the resource
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get orgContact](../api/orgcontact_get.md) | [orgContact](orgcontact.md) |Read properties and relationships of orgContact object.|
-|[Create directReport](../api/orgcontact_post_directreports.md) |[directoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
-|[List directReports](../api/orgcontact_list_directreports.md) |[directoryObject](directoryobject.md) collection| Get a directReport object collection.|
-|[Create memberOf](../api/orgcontact_post_memberof.md) |[directoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
+|[Get manager](../api/orgcontact_get_manager.md) |[directoryObject](directoryobject.md)| Get the contact's manager.|
+|[List directReports](../api/orgcontact_list_directreports.md) |[directoryObject](directoryobject.md) collection| List the contact's direct reports.|
 |[List memberOf](../api/orgcontact_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get a memberOf object collection.|
-|[Update](../api/orgcontact_update.md) | [orgContact](orgcontact.md)	|Update orgContact object. |
 |[Delete](../api/orgcontact_delete.md) | None |Delete orgContact object. |
 |[checkMemberGroups](../api/orgcontact_checkmembergroups.md)|String collection| Check for group membership. |
 |[getMemberGroups](../api/orgcontact_getmembergroups.md)|String collection| Return all the groups that the specified contact is a member of. |

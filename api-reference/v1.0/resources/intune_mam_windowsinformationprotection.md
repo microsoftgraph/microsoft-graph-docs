@@ -60,7 +60,7 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |:---|:---|:---|
 |protectedAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input protected apps through xml files|
 |exemptAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input exempt apps through xml files|
-|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) collection|Navigation property to list of security groups targeted for policy.|
+|assignments|targetedManagedAppPolicyAssignment collection|Navigation property to list of security groups targeted for policy.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

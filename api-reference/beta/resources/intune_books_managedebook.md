@@ -22,13 +22,14 @@ An abstract class containing the base properties for Managed eBook.
 |publishedDateTime|DateTimeOffset|The date and time when the eBook was published.|
 |largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Book cover.|
 |createdDateTime|DateTimeOffset|The date and time when the eBook file was created.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when teh eBook was last modified.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the eBook was last modified.|
 |informationUrl|String|The more information Url.|
 |privacyInformationUrl|String|The privacy statement Url.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|categories|[managedEBookCategory](../resources/intune_books_managedebookcategory.md) collection|The list of categories for this eBook.|
 |assignments|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md) collection|The list of assignments for this eBook.|
 |installSummary|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Mobile App Install Summary.|
 |deviceStates|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|The list of installation states for this eBook.|

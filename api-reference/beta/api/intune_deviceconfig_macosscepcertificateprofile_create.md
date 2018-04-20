@@ -44,7 +44,7 @@ The following table shows the properties that are required when you create the m
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |renewalThresholdPercentage|Int32|Certificate renewal threshold percentage. Inherited from [macOSCertificateProfileBase](../resources/intune_deviceconfig_macoscertificateprofilebase.md)|
 |subjectNameFormat|String|Certificate Subject Name Format. Inherited from [macOSCertificateProfileBase](../resources/intune_deviceconfig_macoscertificateprofilebase.md) Possible values are: `commonName`, `commonNameAsEmail`, `custom`, `commonNameIncludingEmail`, `commonNameAsIMEI`, `commonNameAsSerialNumber`.|
-|subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Inherited from [macOSCertificateProfileBase](../resources/intune_deviceconfig_macoscertificateprofilebase.md) Possible values are: `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
+|subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Inherited from [macOSCertificateProfileBase](../resources/intune_deviceconfig_macoscertificateprofilebase.md) Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period. Inherited from [macOSCertificateProfileBase](../resources/intune_deviceconfig_macoscertificateprofilebase.md)|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period. Inherited from [macOSCertificateProfileBase](../resources/intune_deviceconfig_macoscertificateprofilebase.md) Possible values are: `days`, `months`, `years`.|
 |scepServerUrls|String collection|SCEP Server Url(s).|
@@ -66,7 +66,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 942
+Content-length: 937
 
 {
   "@odata.type": "#microsoft.graph.macOSScepCertificateProfile",
@@ -76,7 +76,7 @@ Content-length: 942
   "version": 7,
   "renewalThresholdPercentage": 10,
   "subjectNameFormat": "commonNameAsEmail",
-  "subjectAlternativeNameType": "userPrincipalName",
+  "subjectAlternativeNameType": "emailAddress",
   "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "scepServerUrls": [
@@ -102,7 +102,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1050
+Content-Length: 1045
 
 {
   "@odata.type": "#microsoft.graph.macOSScepCertificateProfile",
@@ -114,7 +114,7 @@ Content-Length: 1050
   "version": 7,
   "renewalThresholdPercentage": 10,
   "subjectNameFormat": "commonNameAsEmail",
-  "subjectAlternativeNameType": "userPrincipalName",
+  "subjectAlternativeNameType": "emailAddress",
   "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "scepServerUrls": [

@@ -8,7 +8,7 @@ This article describes the tasks required to get an access token from the [Azure
 
 You can download the version of the app that you'll create from this GitHub repo:
 
-* [Office 365 Connect Sample for iOS Using the Microsoft Graph SDK](https://github.com/microsoftgraph/ios-objectivec-connect-sample)
+* [Office 365 Connect Sample for iOS Using the Microsoft Graph SDK](https://github.com/microsoftgraph/ios-swift-connect-sample)
 
 The following image shows the app you'll create.
 
@@ -25,7 +25,7 @@ To get started, you'll need:
 
 * [Xcode](https://developer.apple.com/xcode/downloads/) from Apple
 * Installation of [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) as a dependency manager
-* A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
+* A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 * The [Microsoft Graph Starter Project for iOS](https://github.com/microsoftgraph/ios-objectivec-connect-sample). This template contains classes that you'll add code to. To get this project, clone or download the sample project from this location, and you'll work with the workspace inside the **starter-project** folder (**ios-objectivec-connect-sample.xcworkspace**).
 
 ## Register the app

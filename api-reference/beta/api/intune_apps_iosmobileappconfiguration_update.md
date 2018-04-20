@@ -44,6 +44,7 @@ The following table shows the properties that are required when you create the [
 |displayName|String|Admin provided name of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |settingXml|String|mdm app configuration.|
+|encodedSettingXml|Binary|mdm app configuration Base64 binary.|
 |settings|[appConfigurationSettingItem](../resources/intune_apps_appconfigurationsettingitem.md) collection|app configuration setting items.|
 
 
@@ -57,7 +58,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 Content-type: application/json
-Content-length: 520
+Content-length: 572
 
 {
   "targetedMobileApps": [
@@ -68,6 +69,7 @@ Content-length: 520
   "displayName": "Display Name value",
   "version": 7,
   "settingXml": "Setting Xml value",
+  "encodedSettingXml": "ZW5jb2RlZFNldHRpbmdYbWw=",
   "settings": [
     {
       "@odata.type": "microsoft.graph.appConfigurationSettingItem",
@@ -84,7 +86,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 692
+Content-Length: 744
 
 {
   "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
@@ -98,6 +100,7 @@ Content-Length: 692
   "displayName": "Display Name value",
   "version": 7,
   "settingXml": "Setting Xml value",
+  "encodedSettingXml": "ZW5jb2RlZFNldHRpbmdYbWw=",
   "settings": [
     {
       "@odata.type": "microsoft.graph.appConfigurationSettingItem",

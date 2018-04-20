@@ -43,11 +43,12 @@ The following table shows the properties that are required when you create the a
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |renewalThresholdPercentage|Int32|Certificate renewal threshold percentage. Valid values 1 to 99 Inherited from [androidCertificateProfileBase](../resources/intune_deviceconfig_androidcertificateprofilebase.md)|
-|subjectNameFormat|String|Certificate Subject Name Format. Inherited from [androidCertificateProfileBase](../resources/intune_deviceconfig_androidcertificateprofilebase.md) Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`.|
-|subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Inherited from [androidCertificateProfileBase](../resources/intune_deviceconfig_androidcertificateprofilebase.md) Possible values are: `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
+|subjectNameFormat|String|Certificate Subject Name Format. Inherited from [androidCertificateProfileBase](../resources/intune_deviceconfig_androidcertificateprofilebase.md) Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
+|subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Inherited from [androidCertificateProfileBase](../resources/intune_deviceconfig_androidcertificateprofilebase.md) Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period. Inherited from [androidCertificateProfileBase](../resources/intune_deviceconfig_androidcertificateprofilebase.md)|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period. Inherited from [androidCertificateProfileBase](../resources/intune_deviceconfig_androidcertificateprofilebase.md) Possible values are: `days`, `months`, `years`.|
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune_deviceconfig_extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements. Inherited from [androidCertificateProfileBase](../resources/intune_deviceconfig_androidcertificateprofilebase.md)|
+|intendedPurpose|String|Not yet documented Possible values are: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
 
 
 
@@ -60,7 +61,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 662
+Content-length: 698
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkImportedPFXCertificateProfile",
@@ -70,7 +71,7 @@ Content-length: 662
   "version": 7,
   "renewalThresholdPercentage": 10,
   "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "userPrincipalName",
+  "subjectAlternativeNameType": "emailAddress",
   "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "extendedKeyUsages": [
@@ -79,7 +80,8 @@ Content-length: 662
       "name": "Name value",
       "objectIdentifier": "Object Identifier value"
     }
-  ]
+  ],
+  "intendedPurpose": "smimeEncryption"
 }
 ```
 
@@ -88,7 +90,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 770
+Content-Length: 806
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkImportedPFXCertificateProfile",
@@ -100,7 +102,7 @@ Content-Length: 770
   "version": 7,
   "renewalThresholdPercentage": 10,
   "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "userPrincipalName",
+  "subjectAlternativeNameType": "emailAddress",
   "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "extendedKeyUsages": [
@@ -109,7 +111,8 @@ Content-Length: 770
       "name": "Name value",
       "objectIdentifier": "Object Identifier value"
     }
-  ]
+  ],
+  "intendedPurpose": "smimeEncryption"
 }
 ```
 

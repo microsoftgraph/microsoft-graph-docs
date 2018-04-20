@@ -13,7 +13,7 @@ Inherits from [windowsUpdateInstallScheduleType](../resources/intune_deviceconfi
 |:---|:---|:---|
 |scheduledInstallDay|String|Scheduled Install Day in week Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |scheduledInstallTime|TimeOfDay|Scheduled Install Time during day|
-|restartMode|String|Set restart mode allowed level to power or battery Possible values are: `userDefined`, `batteryLevelCheckEnabled`, `batteryLevelCheckDisabled`.|
+|restartMode|String|Deprecated - Set restart mode allowed level to power or battery Possible values are: `userDefined`, `batteryLevelCheckEnabled`, `batteryLevelCheckDisabled`.|
 
 ## Relationships
 None

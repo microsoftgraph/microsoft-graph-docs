@@ -44,7 +44,7 @@ The following table shows the properties that are required when you create the i
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |renewalThresholdPercentage|Int32|Certificate renewal threshold percentage. Valid values 1 to 99 Inherited from [iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)|
 |subjectNameFormat|String|Certificate Subject Name Format. Inherited from [iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md) Possible values are: `commonName`, `commonNameAsEmail`, `custom`, `commonNameIncludingEmail`, `commonNameAsIMEI`, `commonNameAsSerialNumber`.|
-|subjectAlternativeNameType|String|Certificate Subject Alternative Name type. Inherited from [iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md) Possible values are: `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
+|subjectAlternativeNameType|String|Certificate Subject Alternative Name type. Inherited from [iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md) Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period. Inherited from [iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period. Inherited from [iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md) Possible values are: `days`, `months`, `years`.|
 |certificationAuthority|String|PKCS Certification Authority.|
@@ -63,7 +63,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 738
+Content-length: 733
 
 {
   "@odata.type": "#microsoft.graph.iosPkcsCertificateProfile",
@@ -73,7 +73,7 @@ Content-length: 738
   "version": 7,
   "renewalThresholdPercentage": 10,
   "subjectNameFormat": "commonNameAsEmail",
-  "subjectAlternativeNameType": "userPrincipalName",
+  "subjectAlternativeNameType": "emailAddress",
   "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "certificationAuthority": "Certification Authority value",
@@ -88,7 +88,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 846
+Content-Length: 841
 
 {
   "@odata.type": "#microsoft.graph.iosPkcsCertificateProfile",
@@ -100,7 +100,7 @@ Content-Length: 846
   "version": 7,
   "renewalThresholdPercentage": 10,
   "subjectNameFormat": "commonNameAsEmail",
-  "subjectAlternativeNameType": "userPrincipalName",
+  "subjectAlternativeNameType": "emailAddress",
   "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "certificationAuthority": "Certification Authority value",

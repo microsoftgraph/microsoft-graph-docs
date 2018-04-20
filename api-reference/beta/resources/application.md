@@ -13,7 +13,6 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "createdOnBehalfOf",
-    "extensionProperties",
     "owners"
   ],
   "@odata.type": "microsoft.graph.application"
@@ -70,7 +69,6 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |connectorGroup|[connectorGroup](connectorgroup.md)| The connectorGroup the application is using with Azure AD Application Proxy. Nullable.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
-|extensionProperties|[extensionProperty](extensionproperty.md) collection|The extension properties associated with the application. Read-only. Nullable.|
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer.  Read-only. Nullable.|
 |policy|[policy](policy.md) collection|The policies assigned to this application.|
 
@@ -83,7 +81,6 @@ Here is a JSON representation of the resource
 |[List applications](../api/application_list.md) | application | Retrieve the list of applications in the organization. |
 |[Update application](../api/application_update.md) | application |Update application object. |
 |[Delete application](../api/application_delete.md) | None |Delete application object. |
-|[List extensionProperties](../api/application_list_extensionproperties.md) |[extensionProperty](extensionproperty.md) collection| Get a extensionProperty object collection.|
 |[List assigned policies](../api/policy_list_assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
 |[Create owner](../api/application_post_owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[List owners](../api/application_list_owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|

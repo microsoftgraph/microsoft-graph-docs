@@ -13,6 +13,8 @@ Not yet documented
 |[Create user](../api/intune_onboarding_user_create.md)|[user](../resources/intune_onboarding_user.md)|Create a new [user](../resources/intune_onboarding_user.md) object.|
 |[Delete user](../api/intune_onboarding_user_delete.md)|None|Deletes a [user](../resources/intune_onboarding_user.md).|
 |[Update user](../api/intune_onboarding_user_update.md)|[user](../resources/intune_onboarding_user.md)|Update the properties of a [user](../resources/intune_onboarding_user.md) object.|
+|[exportDeviceAndAppManagementData function](../api/intune_onboarding_user_exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune_onboarding_deviceandappmanagementdata.md)|Not yet documented|
+|[exportDeviceAndAppManagementData function](../api/intune_onboarding_user_exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune_onboarding_deviceandappmanagementdata.md)|Not yet documented|
 |[getEffectiveDeviceEnrollmentConfigurations function](../api/intune_onboarding_user_geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) collection|Not yet documented|
 
 ## Properties

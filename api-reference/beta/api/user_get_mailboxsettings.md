@@ -16,9 +16,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | MailboxSettings.Read    |
-|Delegated (personal Microsoft account) | MailboxSettings.Read    |
-|Application | MailboxSettings.Read |
+|Delegated (work or school account) | MailboxSettings.Read, MailboxSettings.ReadWrite    |
+|Delegated (personal Microsoft account) | MailboxSettings.Read, MailboxSettings.ReadWrite    |
+|Application | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## HTTP request
 To get all the mailbox settings for a user:
@@ -189,7 +189,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/testexchangebeta/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/mailboxSettings/workingHours",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/mailboxSettings/workingHours",
     "daysOfWeek":[
         "monday",
         "tuesday",
