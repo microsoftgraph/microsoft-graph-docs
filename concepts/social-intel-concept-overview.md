@@ -6,20 +6,20 @@ The people API returns people ordered by relevance to a user, based on that user
 
 The insights API uses advanced analytics and machine learning to provide the most relevant files users need throughout their work day. The API powers familiar Office 365 experiences, including Office Delve, SharePoint Home, the Discover view in OneDrive for Business, and Outlook on the web.
 
-## Why integrate with people data in Microsoft Graph
+## Why integrate with people data?
 
 {<=1.5 pages of value proposition for developers.}
 
- {Here we can have People API-specific value prop section}
+{Here we can have People API-specific value prop section}
 
 
-## Why integrate with document-based insights in Microsoft Graph (preview)
+## Why integrate with document-based insights (preview)?
 
 ### Use intelligence to improve collaboration
 
 During a typical working day, users often interact with large amounts of information stored across many documents and collaborate with other users in many different ways. It's important that they can always can find what they need, when they need it.
 
-You can use the insights API, which includes [trending](../api-reference/beta/resources/insights_trending.md), [shared](../api-reference/beta/resources/insights_shared.md), and [used](../api-reference/beta/resources/insights_used.md), to surface files from across Office 365 based on your users' current context and needs, making users more productive and improving collaboration in your organization.
+You can use the insights API, which includes the [trending](../api-reference/beta/resources/insights_trending.md), [shared](../api-reference/beta/resources/insights_shared.md), and [used](../api-reference/beta/resources/insights_used.md) APIs, to surface files from across Office 365 based on your users' current context and needs, making users more productive and improving collaboration in your organization.
 
 It is easy to render the results from the insights API in your app. Every result comes with a set of common visualization properties, like a preview image URL or preview text.
 
@@ -36,19 +36,10 @@ In Office 365, Delve uses the trending insight to help users discover the inform
 Thanks to the [shared](../api-reference/beta/resources/insights_shared.md) and [used](../api-reference/beta/resources/insights_used.md) APIs, your app can show users what they have been working on most recently, or display what their colleagues have shared with them most recently in Office 365.
 
 The new Office 365 people cards tap into the used and shared insights to connect the dots between people and units of knowledge. The people card identifies and displays relevant information about a person. Users can see people cards across the suite, for example in Outlook on the web.
+
 ![Screenshot of a people card for a user in Outlook on the web, showing recent files](images/peoplecard_concept.png)
-
-### What can I do with the insight APIs in Microsoft Graph?
-
-These are some of the most popular requests for working with insights.
-
-| Operation                 | URL                                                                                                                                                                      |
-| :------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GET my trending documents | [https://graph.microsoft.com/beta/me/insights/trending](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/insights/trending&method=GET&version=beta) |
-| GET my shared files       | [https://graph.microsoft.com/beta/me/insights/shared](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/insights/shared&method=GET&version=beta)     |
-| GET my used files         | [https://graph.microsoft.com/beta/me/insights/used](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/insights/used&method=GET&version=beta)         |
 
 ## Next steps
 
 * Use the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to try out the insight API with your own files. Choose **Show more samples** in the column on the left. Use the menu to toggle Insights (beta) **On**.
-* To get started with insights API in Microsoft Graph, see [Use the insights API](../api-reference/beta/resources/insights.md).
+* To get started with insights API, see [Use the insights API](../api-reference/beta/resources/insights.md).
