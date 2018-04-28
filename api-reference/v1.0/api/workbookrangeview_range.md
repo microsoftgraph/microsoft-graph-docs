@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/range
+GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/range
 
 ```
 ## Request headers

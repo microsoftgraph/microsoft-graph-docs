@@ -47,7 +47,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
+  "@odata.type": "microsoft.graph.report"
 } -->
 ```http
 HTTP/1.1 200 OK

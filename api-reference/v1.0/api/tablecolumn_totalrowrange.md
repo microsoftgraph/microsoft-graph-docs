@@ -35,6 +35,7 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "idempotent": true,
   "name": "tablecolumn_totalrowrange"
 }-->
 ```http

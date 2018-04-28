@@ -105,6 +105,7 @@ This resource supports:
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|activities|[userActivity](projectrome_activity.md) collection|The user's activities across devices. Read-only. Nullable.|
 |calendar|[Calendar](calendar.md)|The user's primary calendar. Read-only.|
 |calendarGroups|[CalendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
 |calendarView|[Event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
@@ -123,9 +124,11 @@ This resource supports:
 |memberOf|[directoryObject](directoryobject.md) collection|The groups and directory roles that the user is a member of. Read-only. Nullable.|
 |messages|[Message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
 |onenote|[Onenote](onenote.md)| Read-only.|
+|outlook|[OutlookUser](outlookuser.md)| Read-only.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
+|planner|[plannerUser](planneruser.md)| Entry-point to the Planner resource that might exist for a user. Read-only.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
 
 ## JSON representation
@@ -228,6 +231,7 @@ Here is a JSON representation of the resource
   "manager": { "@odata.type": "microsoft.graph.directoryObject" },
   "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
+  "outlook": { "@odata.type": "microsoft.graph.outlookUser" },
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "ownedObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },

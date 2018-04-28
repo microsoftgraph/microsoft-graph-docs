@@ -76,7 +76,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an at
 
 ### meetingMessageType values
 
-| Values
+| Value
 |:-----------------
 | none
 | meetingRequest

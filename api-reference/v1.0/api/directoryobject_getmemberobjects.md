@@ -25,7 +25,7 @@ POST /directoryObjects/{id}/getMemberObjects
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | application/json  |
+| Content-Type   | string  | application/json  |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

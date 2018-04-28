@@ -10,11 +10,7 @@ Represents a condition in a sorting operation.
 |dataOption|string|Represents additional sorting options for this field. Possible values are: `Normal`, `TextAsNumber`.|
 |key|int|Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).|
 |sortOn|string|Represents the type of sorting of this condition. Possible values are: `Value`, `CellColor`, `FontColor`, `Icon`.|
-
-## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|icon|[Icon](icon.md)|Represents the icon that is the target of the condition if the sorting is on the cell's icon.|
+|icon|[WorkbookIcon](icon.md)|Represents the icon that is the target of the condition if the sorting is on the cell's icon.|
 
 ## JSON representation
 

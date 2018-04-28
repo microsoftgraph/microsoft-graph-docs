@@ -22,8 +22,7 @@ POST /workbook/worksheets/{id|name}/range
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-## Request body
-In the request body, provide a JSON object with the following parameters.
+## Function parameters
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -39,17 +38,10 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "idempotent": true,
   "name": "worksheet_range"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range
-Content-type: application/json
-Content-length: 32
-
-{
-  "address": "address-value"
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='A1:B2')
 ```
 
 ##### Response

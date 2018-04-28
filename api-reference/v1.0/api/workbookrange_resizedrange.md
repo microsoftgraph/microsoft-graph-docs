@@ -26,16 +26,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|deltarows|Int32|The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it|
-|deltaColumns|Int32|The number of columnsby which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.|
-
-## Request body
-In the request URL, provide following query parameters with values.
-
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|deltaRows|Int32||
-|deltaColumns|Int32||
+|deltaRows|Int32|The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it|
+|deltaColumns|Int32|The number of columns by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.|
 
 ### Response
 If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.

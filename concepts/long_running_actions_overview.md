@@ -58,7 +58,7 @@ However, if your app needs to show the status of the copy action or ensure that 
 To check on the status of the copy action, the app makes a request to the URL provided in the previous response.
 *Note:* This request does not require authentication, since the URL is short-lived and unique to the original caller. 
 
-<!-- { "blockType": "request", "name": "lro-check-status", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status", "scopes": "files.readwrite" } -->
 
 ```http
 GET https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
@@ -87,7 +87,7 @@ The app can continue to poll the monitor URL to request status updates and keep 
 After a few seconds the copy operation has completed.
 This time when the app makes a request to the monitor URL the response is a redirection to the finished result of the action.
 
-<!-- { "blockType": "request", "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
 
 ```http
 GET https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717

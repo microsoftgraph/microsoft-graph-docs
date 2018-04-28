@@ -41,6 +41,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 ```json
 {
   "audio": { "@odata.type": "microsoft.graph.audio" },
+  "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
   "description": "string",
@@ -62,7 +63,6 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "webDavUrl": "string",
 
   /* relationships */
-  "content": { "@odata.type": "Edm.Stream" },
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
@@ -93,6 +93,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | Property             | Type               | Description
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only.
+| content              | Stream             | The content stream, if the item represents a file.
 | createdBy            | [identitySet][]    | Identity of the user, device, and application which created the item. Read-only.
 | createdDateTime      | DateTimeOffset     | Date and time of item creation. Read-only.
 | cTag                 | String             | An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the item is a folder. Read-only.
@@ -130,7 +131,6 @@ The eTag value is only modified when the folder's properties are changed, except
 
 | Relationship       | Type                        | Description
 |:-------------------|:----------------------------|:--------------------------
-| content            | Stream                      | The content stream, if the item represents a file.
 | children           | driveItem collection        | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
 | createdByUser      | [user][]                    | Identity of the user who created the item. Read-only.
 | lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.

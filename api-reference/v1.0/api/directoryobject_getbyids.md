@@ -31,7 +31,7 @@ POST /directoryObjects/getById
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | application/json  |
+| Content-Type  | string | application/json  |
 
 ## Request body
 

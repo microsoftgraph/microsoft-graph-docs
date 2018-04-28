@@ -38,11 +38,11 @@ GET /me/drive/root:/{path and filename}:/content?format={format}
 | _format_  | string | Specify the format the item's content should be downloaded as. |
 
 
-The following values are valid for the **convert** parameter:
+The following values are valid for the **format** parameter:
 
-| Value   | Description                        | Supported source extensions |
-|:--------|:-----------------------------------|-----------------------------|
-| **pdf** | Converts the item into PDF format. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx | 
+| Format value | Description                        | Supported source extensions
+|:-------------|:-----------------------------------|----------------------------
+| pdf          | Converts the item into PDF format. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
 
 ### Example
 

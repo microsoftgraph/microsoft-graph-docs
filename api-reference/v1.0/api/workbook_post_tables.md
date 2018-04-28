@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/$/add
+POST /workbook/tables/{table-id}/add
 
 ```
 ## Request headers
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "create_table_from_workbook"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/$/add
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{table-id}/add
 Content-type: application/json
 Content-length: 109
 

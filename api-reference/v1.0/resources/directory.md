@@ -31,6 +31,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.directory"
 }-->
 
@@ -39,6 +40,22 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
+
+## Example
+
+<!--{"blockType": "request"}-->
+```http
+GET https://graph.microsoft.com/v1.0/directory
+```
+
+<!--{"blockType": "response", "@odata.type": "microsoft.graph.directory"}-->
+```json
+HTTP/1.1 200 OK
+
+{
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

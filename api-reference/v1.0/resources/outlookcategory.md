@@ -18,40 +18,41 @@ to 25 different colors to categories in a user's master list.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |displayName|String|A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.|
-|color|String|A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors. See the note below. |
+|color|categoryColor|A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors. See the note below. |
 
 > **Note** The possible values for **color** are pre-set constants such as `None`, `preset0` and `preset1`. Each pre-set constant is further mapped to a color; the actual
 color is dependent on the Outlook client that the categories are being displayed in. The following table shows the colors mapped to each pre-set constant for Outlook (desktop client). 
 
+### categoryColor values
 
-| Pre-set constant	| Color mapped to in Outlook |
+|Value	| Color mapped to in Outlook |
 |:---------------|:--------|
-| None | No color mapped |
-| Preset0 | Red |
-| Preset1 | Orange |
-| Preset2 | Brown |
-| Preset3 | Yellow |
-| Preset4 | Green |
-| Preset5 | Teal |
-| Preset6 | Olive |
-| Preset7 | Blue |
-| Preset8 | Purple |
-| Preset9 | Cranberry |
-| Preset10 | Steel |
-| Preset11 | DarkSteel |
-| Preset12 | Gray |
-| Preset13 | DarkGray |
-| Preset14 | Black |
-| Preset15 | DarkRed |
-| Preset16 | DarkOrange |
-| Preset17 | DarkBrown |
-| Preset18 | DarkYellow |
-| Preset19 | DarkGreen |
-| Preset20 | DarkTeal |
-| Preset21 | DarkOlive |
-| Preset22 | DarkBlue |
-| Preset23 | DarkPurple |
-| Preset24 | DarkCranberry |
+| none | No color mapped |
+| preset0 | Red |
+| preset1 | Orange |
+| preset2 | Brown |
+| preset3 | Yellow |
+| preset4 | Green |
+| preset5 | Teal |
+| preset6 | Olive |
+| preset7 | Blue |
+| preset8 | Purple |
+| preset9 | Cranberry |
+| preset10 | Steel |
+| preset11 | DarkSteel |
+| preset12 | Gray |
+| preset13 | DarkGray |
+| preset14 | Black |
+| preset15 | DarkRed |
+| preset16 | DarkOrange |
+| preset17 | DarkBrown |
+| preset18 | DarkYellow |
+| preset19 | DarkGreen |
+| preset20 | DarkTeal |
+| preset21 | DarkOlive |
+| preset22 | DarkBlue |
+| preset23 | DarkPurple |
+| preset24 | DarkCranberry |
 
 ## JSON representation
 Here is a JSON representation of the resource.
@@ -61,6 +62,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookCategory"
 }-->
 

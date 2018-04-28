@@ -45,9 +45,9 @@ In the request body, supply the values for relevant fields that should be update
 Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 For best performance you shouldn't include existing values that haven't changed.
 
-| Property     | Type   | Description                   |
-|:-------------|:-------|:------------------------------|
-| **roles**    | String | An array of permission types. |
+| Property | Type              | Description                   |
+|:---------|:------------------|:------------------------------|
+| roles    | String collection | An array of permission types. |
 
 ## Response
 

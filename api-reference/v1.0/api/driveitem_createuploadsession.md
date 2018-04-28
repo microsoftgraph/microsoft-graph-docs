@@ -106,7 +106,7 @@ Content-Type: application/json
 To upload the file, or a portion of the file, your app makes a PUT request to the **uploadUrl** value received in the **createUploadSession** response.
 You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 60 MiB.
 
-The fragments of the file must be uploaded sequentally in order.
+The fragments of the file must be uploaded sequentially in order.
 Uploading fragments out of order will result in an error.
 
 **Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes). 
@@ -120,7 +120,7 @@ In this example, the app is uploading the first 26 bytes of a 128 byte file.
 * The **Content-Range** header indicates the range of bytes in the overall file that this request represents.
 * The total length of the file is known before you can upload the first fragment of the file.
 
-<!-- { "blockType": "request", "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
 
 ```http
 PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
@@ -185,7 +185,7 @@ Content-Type: application/json
 When the last byte range of a file is received the server will response with an `HTTP 201 Created` or `HTTP 200 OK`.
 The response body will also include the default property set for the **driveItem** representing the completed file.
 
-<!-- { "blockType": "request", "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
 
 ```
 PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
@@ -237,7 +237,7 @@ Temporary files may not be deleted immedately after the expiration time has elap
 
 ### Request
 
-<!-- { "blockType": "request", "name": "upload-fragment-cancel", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-cancel", "scopes": "files.readwrite" } -->
 
 ```http
 DELETE https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
@@ -265,7 +265,7 @@ To find out which byte ranges have been received previously, your app can reques
 
 Query the status of the upload by sending a GET request to the `uploadUrl`.
 
-<!-- { "blockType": "request", "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
 
 ```
 GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs

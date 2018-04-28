@@ -39,7 +39,26 @@ Here is a JSON representation of the resource.
 {
   "id": "String (identifier)"
 }
+```
 
+## Example
+
+The **planner** resource is available at the root of the graph.
+
+<!--{
+  "blockType": "request"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/planner
+```
+
+<!--{
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.planner"
+}-->
+```json
+{
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
