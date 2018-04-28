@@ -137,6 +137,7 @@ Here is a JSON representation of the resource
 
 <!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.directoryObject",
   "openType": true,
   "optionalProperties": [
     "appRoleAssignments",
@@ -163,8 +164,6 @@ Here is a JSON representation of the resource
     "photo",
     "registeredDevices"
   ],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.user"
 }-->
 

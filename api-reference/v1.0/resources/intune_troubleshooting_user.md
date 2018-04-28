@@ -28,9 +28,8 @@ Not yet documented
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "openType": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.directoryObject",
+  "openType": true,
   "@odata.type": "microsoft.graph.user"
 }-->
 ``` json
