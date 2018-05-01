@@ -49,39 +49,6 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app.|
 
-### managedAppClipboardSharingLevel values
-
-| Value
-|:-------------------------
-| allApps
-| managedAppsWithPasteIn
-| managedApps
-| blocked
-
-
-### managedAppDataTransferLevel values
-
-| Value
-|:-------------------------
-| allApps
-| managedApps
-| none
-
-### managedAppDataStorageLocation values
-
-| Value
-|:-------------------------
-| oneDriveForBusiness
-| sharePoint
-| localStorage
-
-### managedAppPinCharacterSet values
-
-| Value
-|:-------------------------
-| numeric
-| alphanumericAndSymbol
-
 ## Relationships
 None
 ## JSON Representation

@@ -58,25 +58,6 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |minimumRequiredPatchVersion|String|Define the oldest required Android security patch level a user can have to gain secure access to the app.|
 |minimumWarningPatchVersion|String|Define the oldest recommended Android security patch level a user can have for secure access to the app.|
 
-### managedAppClipboardSharingLevel values
-
-| Value
-|:-------------------------
-| allApps
-| managedAppsWithPasteIn
-| managedApps
-| blocked
-
-
-### managedAppDataTransferLevel values
-
-| Value
-|:-------------------------
-| allApps
-| managedApps
-| none
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

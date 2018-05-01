@@ -10,17 +10,6 @@ Contains properties for App configuration setting item.
 |appConfigKeyType|mdmAppConfigKeyType|app configuration key type. Possible values are: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
 |appConfigKeyValue|String|app configuration key value.|
 
-### mdmAppConfigKeyType values
-
-| Value
-|:-------------------------
-| stringType
-| integerType
-| realType
-| booleanType
-| tokenType
-
-
 ## Relationships
 None
 ## JSON Representation

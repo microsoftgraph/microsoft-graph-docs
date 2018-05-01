@@ -8,7 +8,8 @@
       },
       {
         "type": "EnumerationValues",
-        "titles": [ "Enumerated Values", "{x} enumeration", "{x} enumeration values", "{x} members", "{x} values" , "{x} flags" ],
+        "titles": [ "Enumerated Values", "{x} enumeration", "{x} enumeration values", "{x} members", "{x} values" , "{x} flags", "Members" ],
+        "parents": [ "{x} enum type" ],
         "parseAs": "EnumerationDefinition"
       },
       {
@@ -69,9 +70,9 @@
       {
         "type": "EnumerationDefinition",
         "columns": {
-          "value": [ "Value" ],
-          "description": [ "Description" ],
-          "name": ["Name"]
+          "memberName": [ "Member", "Name", "Value" ],
+          "numericValue": ["Numeric Value", "Value"],
+          "description": [ "Description" ]
         }
       },
       {

@@ -21,18 +21,6 @@ Scheduled Action Configuration
 |notificationTemplateId|String|What notification Message template to use|
 |notificationMessageCCList|String collection|A list of group IDs to speicify who to CC this notification message to.|
 
-### deviceComplianceActionType values
-
-| Value
-|:-------------------------
-| noAction
-| notification
-| block
-| retire
-| wipe
-| removeResourceAccessProfiles
-
-
 ## Relationships
 None
 ## JSON Representation

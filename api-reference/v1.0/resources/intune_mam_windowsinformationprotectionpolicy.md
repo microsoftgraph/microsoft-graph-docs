@@ -59,25 +59,6 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 |minutesOfInactivityBeforeDeviceLock|Int32|Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked.   Range is an integer X where 0 <= X <= 999.|
 |daysWithoutContactBeforeUnenroll|Int32|Offline interval before app data is wiped (days) |
 
-### windowsInformationProtectionPinCharacterRequirements values
-
-| Value
-|:-------------------------
-| notAllow
-| requireAtLeastOne
-| allow
-
-
-### windowsInformationProtectionEnforcementLevel values
-
-| Value
-|:-------------------------
-| noProtection
-| encryptAndAuditOnly
-| encryptAuditAndPrompt
-| encryptAuditAndBlock
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

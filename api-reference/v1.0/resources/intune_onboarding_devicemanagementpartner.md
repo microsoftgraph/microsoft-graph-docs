@@ -25,27 +25,6 @@ Entity which represents a connection to device management partner.
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|DateTime in UTC when PartnerDevices will be removed|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|DateTime in UTC when PartnerDevices will be marked as NonCompliant|
 
-### deviceManagementPartnerAppType values
-
-| Value
-|:-------------------------
-| unknown
-| singleTenantApp
-| multiTenantApp
-
-
-### deviceManagementPartnerTenantState values
-
-| Value
-|:-------------------------
-| unknown
-| unavailable
-| enabled
-| terminated
-| rejected
-| unresponsive
-
-
 ## Relationships
 None
 ## JSON Representation

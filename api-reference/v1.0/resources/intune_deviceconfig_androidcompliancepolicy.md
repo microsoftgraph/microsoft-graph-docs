@@ -46,41 +46,6 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |securityRequireUpToDateSecurityProviders|Boolean|Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Require the device to pass the Company Portal client app runtime integrity check.|
 
-### deviceThreatProtectionLevel values
-
-| Value
-|:-------------------------
-| unavailable
-| secured
-| low
-| medium
-| high
-| notSet
-
-
-### requiredPasswordType values
-
-| Value
-|:-------------------------
-| deviceDefault
-| alphanumeric
-| numeric
-
-
-### androidRequiredPasswordType values
-
-| Value
-|:-------------------------
-| deviceDefault
-| alphabetic
-| alphanumeric
-| alphanumericWithSymbols
-| lowSecurityBiometric
-| numeric
-| numericComplex
-| any
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

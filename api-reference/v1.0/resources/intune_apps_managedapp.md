@@ -32,13 +32,6 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|The Application's availability. Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version.|
 
-### managedAppAvailability values
-
-| Value
-|:-----------------
-| global
-| lineOfBusiness
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

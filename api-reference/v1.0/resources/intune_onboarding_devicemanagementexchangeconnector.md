@@ -26,26 +26,6 @@ Entity which represents a connection to an Exchange environment.
 |exchangeAlias|String|An alias assigned to the Exchange server|
 |exchangeOrganization|String|Exchange Organization to the Exchange server|
 
-### deviceManagementExchangeConnectorType values
-
-| Value
-|:-------------------------
-| onPremises
-| hosted
-| serviceToService
-| dedicated
-
-
-### deviceManagementExchangeConnectorStatus values
-
-| Value
-|:-------------------------
-| none
-| connectionPending
-| connected
-| disconnected
-
-
 ## Relationships
 None
 ## JSON Representation

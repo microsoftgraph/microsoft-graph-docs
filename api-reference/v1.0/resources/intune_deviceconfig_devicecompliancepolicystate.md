@@ -23,31 +23,6 @@ Device Compliance Policy State for a given device.
 |state|complianceStatus|The compliance state of the policy Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |settingCount|Int32|Count of how many setting a policy holds|
 
-### policyPlatformType values
-
-| Value
-|:-------------------------
-| android
-| iOS
-| macOS
-| windowsPhone81
-| windows81AndLater
-| windows10AndLater
-| all
-
-
-### complianceStatus values
-
-| Value
-|:-------------------------
-| unknown
-| notApplicable
-| compliant
-| remediated
-| nonCompliant
-| error
-| conflict
-
 ## Relationships
 None
 ## JSON Representation

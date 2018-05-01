@@ -28,40 +28,6 @@ Not yet documented
 |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
 |userPrincipalName|String|UserPrincipalName.|
 
-### iosUpdatesInstallStatus values
-
-| Value
-|:-------------------------
-| success
-| available
-| idle
-| downloading
-| downloadFailed
-| downloadRequiresComputer
-| downloadInsufficientSpace
-| downloadInsufficientPower
-| downloadInsufficientNetwork
-| installing
-| installInsufficientSpace
-| installInsufficientPower
-| installPhoneCallInProgress
-| installFailed
-| notSupportedOperation
-| sharedDeviceUserLoggedInError
-
-### complianceStatus values
-
-| Value
-|:-------------------------
-| unknown
-| notApplicable
-| compliant
-| remediated
-| nonCompliant
-| error
-| conflict
-
-
 ## Relationships
 None
 ## JSON Representation

@@ -61,35 +61,6 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |minimumWarningPatchVersion|String|Define the oldest recommended Android security patch level a user can have for secure access to the app.|
 |faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.|
 
-### managedAppDataEncryptionType values
-
-| Value
-|:-------------------------
-| useDeviceSettings
-| afterDeviceRestart
-| whenDeviceLockedExceptOpenFiles
-| whenDeviceLocked
-
-
-### managedAppClipboardSharingLevel values
-
-| Value
-|:-------------------------
-| allApps
-| managedAppsWithPasteIn
-| managedApps
-| blocked
-
-
-### managedAppDataTransferLevel values
-
-| Value
-|:-------------------------
-| allApps
-| managedApps
-| none
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

@@ -45,15 +45,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 | alphanumeric
 | numeric
 
-### appListType values
-
-| Value
-|:-------------------------
-| none
-| appsInListCompliant
-| appsNotInListCompliant
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

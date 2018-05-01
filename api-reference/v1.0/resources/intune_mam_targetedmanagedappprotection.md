@@ -50,25 +50,6 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not.|
 
-### managedAppClipboardSharingLevel values
-
-| Value
-|:-------------------------
-| allApps
-| managedAppsWithPasteIn
-| managedApps
-| blocked
-
-
-### managedAppDataTransferLevel values
-
-| Value
-|:-------------------------
-| allApps
-| managedApps
-| none
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

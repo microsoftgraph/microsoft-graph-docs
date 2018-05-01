@@ -29,31 +29,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |license|String|Edition Upgrade License File Content.|
 |productKey|String|Edition Upgrade Product Key.|
 
-### editionUpgradeLicenseType values
-
-| Value
-|:-------------------------
-| productKey
-| licenseFile
-
-### windows10EditionType values
-
-| Value
-|:-------------------------
-| windows10Enterprise
-| windows10EnterpriseN
-| windows10Education
-| windows10EducationN
-| windows10MobileEnterprise
-| windows10HolographicEnterprise
-| windows10Professional
-| windows10ProfessionalN
-| windows10ProfessionalEducation
-| windows10ProfessionalEducationN
-| windows10ProfessionalWorkstation
-| windows10ProfessionalWorkstationN
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

@@ -44,28 +44,6 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |identityVersion|String|The identity version.|
 
-### windowsDeviceType values
-
-| Value
-|:-------------------------
-| none
-| desktop
-| mobile
-| holographic
-| team
-
-
-### windowsArchitecture values
-
-| Value
-|:-------------------------
-| none
-| x86
-| x64
-| arm
-| neutral
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

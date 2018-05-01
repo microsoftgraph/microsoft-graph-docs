@@ -47,16 +47,6 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 |smbAutoEncryptedFileExtensions|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not. Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 
-### windowsInformationProtectionEnforcementLevel values
-
-| Value
-|:-------------------------
-| noProtection
-| encryptAndAuditOnly
-| encryptAuditAndPrompt
-| encryptAuditAndBlock
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

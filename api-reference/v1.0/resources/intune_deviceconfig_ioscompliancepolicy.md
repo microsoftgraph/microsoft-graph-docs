@@ -39,27 +39,6 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Boolean|Indicates whether or not to require a managed email profile.|
 
-### deviceThreatProtectionLevel values
-
-| Value
-|:-------------------------
-| unavailable
-| secured
-| low
-| medium
-| high
-| notSet
-
-
-### requiredPasswordType values
-
-| Value
-|:-------------------------
-| deviceDefault
-| alphanumeric
-| numeric
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

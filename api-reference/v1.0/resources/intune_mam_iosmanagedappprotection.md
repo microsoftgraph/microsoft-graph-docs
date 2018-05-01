@@ -56,35 +56,6 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.|
 
-### managedAppDataEncryptionType values
-
-| Value
-|:-------------------------
-| useDeviceSettings
-| afterDeviceRestart
-| whenDeviceLockedExceptOpenFiles
-| whenDeviceLocked
-
-
-### managedAppClipboardSharingLevel values
-
-| Value
-|:-------------------------
-| allApps
-| managedAppsWithPasteIn
-| managedApps
-| blocked
-
-
-### managedAppDataTransferLevel values
-
-| Value
-|:-------------------------
-| allApps
-| managedApps
-| none
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

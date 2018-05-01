@@ -73,49 +73,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |appsHideList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps to be hidden on the KNOX device. This collection can contain a maximum of 500 elements.|
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 
-### requiredPasswordType values
-
-| Value
-|:-------------------------
-| deviceDefault
-| alphanumeric
-| numeric
-
-
-### webBrowserCookieSettings values
-
-| Value
-|:-------------------------
-| browserDefault
-| blockAlways
-| allowCurrentWebSite
-| allowFromWebsitesVisited
-| allowAlways
-
-
-### androidRequiredPasswordType values
-
-| Value
-|:-------------------------
-| deviceDefault
-| alphabetic
-| alphanumeric
-| alphanumericWithSymbols
-| lowSecurityBiometric
-| numeric
-| numericComplex
-| any
-
-
-### appListType values
-
-| Value
-|:-------------------------
-| none
-| appsInListCompliant
-| appsNotInListCompliant
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

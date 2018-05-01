@@ -25,18 +25,6 @@ Contains properties for the installation state for a device.
 |osDescription|String|OS Description.|
 |userName|String|Device User Name.|
 
-### installState values
-
-| Value
-|:-------------------------
-| notApplicable
-| installed
-| failed
-| notInstalled
-| uninstallFailed
-| unknown
-
-
 ## Relationships
 None
 ## JSON Representation

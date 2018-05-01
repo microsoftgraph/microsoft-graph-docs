@@ -27,19 +27,6 @@ Device Compilance Policy Setting State summary across the account.
 |errorDeviceCount|Int32|Number of error devices|
 |conflictDeviceCount|Int32|Number of conflict devices|
 
-### policyPlatformType values
-
-| Value
-|:-------------------------
-| android
-| iOS
-| macOS
-| windowsPhone81
-| windows81AndLater
-| windows10AndLater
-| all
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

@@ -155,45 +155,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |wallpaperBlockModification|Boolean|Indicates whether or not to allow wallpaper modification on supervised device (iOS 9.0 and later) .|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|Indicates whether or not to force the device to use only Wi-Fi networks from configuration profiles when the device is in supervised mode.|
 
-### requiredPasswordType values
-
-| Value
-|:-------------------------
-| deviceDefault
-| alphanumeric
-| numeric
-
-
-### ratingAppsType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| agesAbove4
-| agesAbove9
-| agesAbove12
-| agesAbove17
-
-### webBrowserCookieSettings values
-
-| Value
-|:-------------------------
-| browserDefault
-| blockAlways
-| allowCurrentWebSite
-| allowFromWebsitesVisited
-| allowAlways
-
-### appListType values
-
-| Value
-|:-------------------------
-| none
-| appsInListCompliant
-| appsNotInListCompliant
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

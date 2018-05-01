@@ -43,14 +43,6 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |vppTokenAppleId|String|The Apple Id associated with the given Apple Volume Purchase Program Token.|
 |bundleId|String|The Identity Name.|
 
-### vppTokenAccountType values
-
-| Value
-|:-------------------------
-| business
-| education
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

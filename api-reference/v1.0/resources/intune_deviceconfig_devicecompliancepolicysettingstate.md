@@ -19,18 +19,6 @@ Device Compilance Policy Setting State for a given device.
 |sources|[settingSource](../resources/intune_deviceconfig_settingsource.md) collection|Contributing policies|
 |currentValue|String|Current value of setting on device|
 
-### complianceState values
-
-| Value
-|:-------------------------
-| unknown
-| compliant
-| noncompliant
-| conflict
-| error
-| inGracePeriod
-| configManager
-
 ## Relationships
 None
 ## JSON Representation

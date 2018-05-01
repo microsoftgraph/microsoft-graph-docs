@@ -25,28 +25,6 @@ Entity which represents a connection to Mobile threat defense partner.
 |partnerUnsupportedOsVersionBlocked|Boolean|Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner|
 |partnerUnresponsivenessThresholdInDays|Int32|Get or Set days the per tenant tolerance to unresponsiveness for this partner integration|
 
-### deviceManagementPartnerTenantState values
-
-| Value
-|:-------------------------
-| unknown
-| unavailable
-| enabled
-| terminated
-| rejected
-| unresponsive
-
-
-### mobileThreatPartnerTenantState values
-
-| Value
-|:-------------------------
-| unavailable
-| available
-| enabled
-| unresponsive
-
-
 ## Relationships
 None
 ## JSON Representation

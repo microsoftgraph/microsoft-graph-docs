@@ -58,59 +58,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|The user account control settings. Possible values are: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
 |workFoldersUrl|String|The work folders url.|
 
-### deviceThreatProtectionLevel values
-
-| Value
-|:-------------------------
-| unavailable
-| secured
-| low
-| medium
-| high
-| notSet
-
-
-### windowsUserAccountControlSettings values
-
-| Value
-|:-------------------------
-| userDefined
-| alwaysNotify
-| notifyOnAppChanges
-| notifyOnAppChangesWithoutDimming
-| neverNotify
-
-
-### siteSecurityLevel values
-
-| Value
-|:-------------------------
-| userDefined
-| low
-| mediumLow
-| medium
-| mediumHigh
-| high
-
-
-### internetSiteSecurityLevel values
-
-| Value
-|:-------------------------
-| userDefined
-| medium
-| mediumHigh
-| high
-
-
-### requiredPasswordType values
-
-| Value
-|:-------------------------
-| deviceDefault
-| alphanumeric
-| numeric
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

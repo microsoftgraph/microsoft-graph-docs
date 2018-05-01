@@ -29,34 +29,6 @@ You purchase multiple licenses for iOS apps through the Apple Volume Purchase Pr
 |automaticallyUpdateApps|Boolean|Whether or not apps for the VPP token will be automatically updated.|
 |countryOrRegion|String|Whether or not apps for the VPP token will be automatically updated.|
 
-### vppTokenAccountType values
-
-| Value
-|:-------------------------
-| business
-| education
-
-
-### vppTokenSyncStatus values
-
-| Value
-|:-------------------------
-| none
-| inProgress
-| completed
-| failed
-
-
-### vppTokenState values
-
-| Value
-|:-------------------------
-| unknown
-| valid
-| expired
-| invalid
-
-
 ## Relationships
 None
 ## JSON Representation

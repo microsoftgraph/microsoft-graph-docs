@@ -38,13 +38,6 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |licenseType|[microsoftStoreForBusinessLicenseType](../resources/intune_apps_microsoftstoreforbusinesslicensetype.md)|The app license type. Possible values are: `offline`, `online`.|
 |packageIdentityName|String|The app package identifier|
 
-### microsoftStoreForBusinessLicenseType values
-
-| Value
-|:-----------------
-| offline
-| online
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
