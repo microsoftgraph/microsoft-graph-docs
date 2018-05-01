@@ -127,7 +127,16 @@ Here is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
-  "@odata.type": "microsoft.graph.windows81GeneralConfiguration"
+  "@odata.type": "microsoft.graph.windows81GeneralConfiguration",
+  "@odata.annotations": [
+    {
+      "property": "applyOnlyToWindows81",
+      "capabilities": {
+        "computed": true,
+        "permissions": ""
+      }
+    }
+  ]
 }-->
 ``` json
 {

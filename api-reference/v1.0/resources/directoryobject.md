@@ -34,7 +34,19 @@ Here is a JSON representation of the resource
   "optionalProperties": [],
   "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.directoryObject"
+  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

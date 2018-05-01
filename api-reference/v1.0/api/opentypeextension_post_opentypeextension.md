@@ -56,10 +56,9 @@ extension in it. All other syntax that allows you to identify these resource ins
 
 See the [Request body](#request-body) section about including _the extension_ in the request body.
 
-## Parameters
-|**Parameter**|**Type**|**Description**|
+## Path parameters
+|Parameter|Type|Description|
 |:-----|:-----|:-----|
-|_URL parameters_|
 |id|string|A unique identifier for an object in the corresponding collection. Required.|
 
 ## Request headers
@@ -296,7 +295,7 @@ extension:
   "name": "post_opentypeextension_3"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions 
+POST https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions
 
 {
   "@odata.type" : "microsoft.graph.openTypeExtension",

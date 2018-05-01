@@ -68,7 +68,30 @@ Here is a JSON representation of the resource
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.calendar"
+  "@odata.type": "microsoft.graph.calendar",
+  "@odata.annotations": [
+    {
+      "property": "calendarView",
+      "capabilities": {
+        "changeTracking": true,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "navigability": "",
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "events",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "navigability": "",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

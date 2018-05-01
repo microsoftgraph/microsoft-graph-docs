@@ -23,7 +23,7 @@ Currently, deleted items functionality is only supported for Office 365 [groups]
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|deleteditems|[directoryObject](directoryobject.md) collection| Recently deleted items. Read-only. Nullable.|
+|deletedItems|[directoryObject](directoryobject.md) collection| Recently deleted items. Read-only. Nullable.|
 
 ## JSON representation
 Here is a JSON representation of the resource.

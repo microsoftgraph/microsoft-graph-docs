@@ -72,7 +72,35 @@ Here is a JSON representation of the resource
     "singleValueExtendedProperties"
   ],
   "baseType": "microsoft.graph.outlookItem",
-  "@odata.type": "microsoft.graph.post"
+  "@odata.type": "microsoft.graph.post",
+  "@odata.annotations": [
+    {
+      "property": "attachments",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "inReplyTo",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "navigability": "",
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

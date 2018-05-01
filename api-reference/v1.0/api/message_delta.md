@@ -76,7 +76,6 @@ of incremental changes since the last delta query. For an example that shows a r
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
-
 Prefer: odata.maxpagesize=2
 ```
 

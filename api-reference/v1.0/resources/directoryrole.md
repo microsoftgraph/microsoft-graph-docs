@@ -41,7 +41,14 @@ Here is a JSON representation of the resource
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.directoryObject",
-  "@odata.type": "microsoft.graph.directoryRole"
+  "@odata.type": "microsoft.graph.directoryRole",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json

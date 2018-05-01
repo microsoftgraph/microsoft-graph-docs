@@ -82,7 +82,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an at
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
-| meetingTetativelyAccepted
+| meetingTentativelyAccepted
 | meetingDeclined
 
 ## Relationships
@@ -108,7 +108,19 @@ Here is a JSON representation of the resource
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
-  "@odata.type": "microsoft.graph.eventMessage"
+  "@odata.type": "microsoft.graph.eventMessage",
+  "@odata.annotations": [
+    {
+      "property": "event",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

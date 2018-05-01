@@ -154,7 +154,100 @@ The following is a JSON representation of the resource.
     "threads"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "changeTracking": true
+      }
+    },
+    {
+      "property": "acceptedSenders",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "calendar",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "calendarView",
+      "capabilities": {
+        "changeTracking": true,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "conversations",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "events",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "photo",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "photos",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "rejectedSenders",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "threads",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

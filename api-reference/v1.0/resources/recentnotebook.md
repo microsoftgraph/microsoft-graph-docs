@@ -34,8 +34,10 @@ The following is a JSON representation of the resource.
 ### onenoteSourceService values
 | Value
 |:---------------------
-| OneDriveForBusiness
+| Unknown
 | OneDrive
+| OneDriveForBusiness
+| OnPremOneDriveForBusiness
 
 ## Methods
 

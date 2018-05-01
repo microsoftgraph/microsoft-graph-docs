@@ -52,7 +52,25 @@ Here is a JSON representation of the resource
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.contactFolder"
+  "@odata.type": "microsoft.graph.contactFolder",
+  "@odata.annotations": [
+    {
+      "property": "childFolders",
+      "capabilities": {
+        "navigability": "single",
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "contacts",
+      "capabilities": {
+        "changeTracking": true,
+        "navigability": "",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

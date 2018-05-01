@@ -32,7 +32,14 @@ Here is a JSON representation of the resource
   "optionalProperties": [],
   "keyProperty": "id",
   "baseType": "microsoft.graph.directoryObject",
-  "@odata.type": "microsoft.graph.directoryRoleTemplate"
+  "@odata.type": "microsoft.graph.directoryRoleTemplate",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json

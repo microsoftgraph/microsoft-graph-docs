@@ -36,7 +36,19 @@ Here is a JSON representation of the resource
     "item"
   ],
   "baseType": "microsoft.graph.attachment",
-  "@odata.type": "microsoft.graph.itemAttachment"
+  "@odata.type": "microsoft.graph.itemAttachment",
+  "@odata.annotations": [
+    {
+      "property": "item",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

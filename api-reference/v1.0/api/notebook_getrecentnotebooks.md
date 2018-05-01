@@ -46,7 +46,7 @@ The following example shows how to call this API.
 The following example shows the request.
 <!-- { "blockType": "request", "name": "recent_notebooks", "scopes": "notes.read" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks=true)
+GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=true)
 ```
 
 #### Response
@@ -55,7 +55,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.notebook",
+  "@odata.type": "Collection(microsoft.graph.recentNotebook)",
   "isCollection": true
 } -->
 ```http

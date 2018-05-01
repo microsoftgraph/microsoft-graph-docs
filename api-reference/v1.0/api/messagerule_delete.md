@@ -36,6 +36,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox"],
   "name": "delete_messagerule"
 }-->
 ```http

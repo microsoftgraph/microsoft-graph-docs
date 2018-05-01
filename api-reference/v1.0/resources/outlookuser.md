@@ -25,7 +25,17 @@ None
 <!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.outlookUser"
+  "@odata.type": "microsoft.graph.outlookUser",
+  "@odata.annotations": [
+    {
+      "property": "masterCategories",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 ```json
 {

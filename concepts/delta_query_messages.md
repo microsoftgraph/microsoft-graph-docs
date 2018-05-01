@@ -272,7 +272,7 @@ you will be able to get only those messages that have changed (by being added, d
 Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_messages_delta_next"
 }-->
 ```

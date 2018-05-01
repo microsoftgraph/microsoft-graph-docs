@@ -95,7 +95,6 @@ When a message is being composed, in most cases, the From and Sender properties 
 | Value
 |:-----------------
 | low
-| medium
 | normal
 | high
 
@@ -122,7 +121,23 @@ Here is a JSON representation of the resource
     "multiValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.message"
+  "@odata.type": "microsoft.graph.message",
+  "@odata.annotations": [
+    {
+      "property": "attachments",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

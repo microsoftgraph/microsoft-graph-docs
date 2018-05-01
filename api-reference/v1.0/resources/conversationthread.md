@@ -45,7 +45,19 @@ Here is a JSON representation of the resource
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.conversationThread"
+  "@odata.type": "microsoft.graph.conversationThread",
+  "@odata.annotations": [
+    {
+      "property": "posts",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

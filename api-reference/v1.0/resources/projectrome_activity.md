@@ -49,7 +49,7 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 
 |Relationship | Type | Description|
 |:------------|:-----|:-----------|
-|historyItems| [historyItem](../resources/projectrome_historyitem.md) collection | Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.|
+|historyItems| [activityHistoryItem](../resources/projectrome_historyitem.md) collection | Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.|
 
 ## JSON representation
 
@@ -67,7 +67,16 @@ Here is a JSON representation of the resource.
     "historyItems"
   ],
   "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.userActivity"
+  "@odata.type": "microsoft.graph.userActivity",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "countable": false,
+        "selectable": false,
+        "skippable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -84,9 +93,9 @@ Here is a JSON representation of the resource.
     "expirationDateTime": "DateTimeOffset",
     "id": "String",
     "status": "active | updated | deleted | ignored",
-    "contentInfo": { "@data.type": "microsoft.graph.Json" },
-    "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
-    "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]
+    "contentInfo": { "@odata.type": "microsoft.graph.Json" },
+    "visualElements": { "@odata.type": "microsoft.graph.visualInfo" },
+    "historyItems": [{ "@odata.type": "microsoft.graph.activityHistoryItem" }]
 }
 ```
 

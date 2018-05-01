@@ -164,7 +164,132 @@ Here is a JSON representation of the resource
     "photo",
     "registeredDevices"
   ],
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.user",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "changeTracking": true
+      }
+    },
+    {
+      "property": "calendar",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "calendarGroups",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "calendars",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "calendarView",
+      "capabilities": {
+        "changeTracking": true,
+        "deletable": false,
+        "expandable": true,
+        "insertable": false,
+        "navigability": "",
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "contactFolders",
+      "capabilities": {
+        "changeTracking": true,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "contacts",
+      "capabilities": {
+        "changeTracking": true,
+        "expandable": false
+      }
+    },
+    {
+      "property": "events",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "inferenceClassification",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "mailFolders",
+      "capabilities": {
+        "changeTracking": true,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "messages",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false
+      }
+    },
+    {
+      "property": "people",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "photo",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "photos",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

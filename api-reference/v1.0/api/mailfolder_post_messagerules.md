@@ -49,6 +49,7 @@ If successful, this method returns `201 Created` response code and a **messageRu
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox"],
   "name": "create_messagerule_from_mailfolder"
 }-->
 ```http

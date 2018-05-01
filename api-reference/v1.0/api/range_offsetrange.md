@@ -29,8 +29,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|rowOffset|number|The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.|
-|columnOffset|number|The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.|
+|rowOffset|Int32|The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.|
+|columnOffset|Int32|The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.|
 
 ## Response
 
@@ -50,10 +50,8 @@ Content-type: application/json
 Content-length: 49
 
 {
-  "rowOffset": {
-  },
-  "columnOffset": {
-  }
+  "rowOffset": 3,
+  "columnOffset": 5
 }
 ```
 

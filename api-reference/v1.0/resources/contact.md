@@ -95,7 +95,26 @@ Here is a JSON representation of the resource
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.contact"
+  "@odata.type": "microsoft.graph.contact",
+  "@odata.annotations": [
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "photo",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

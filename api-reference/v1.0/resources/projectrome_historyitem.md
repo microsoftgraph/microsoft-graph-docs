@@ -43,7 +43,16 @@ Here is a JSON representation of the resource.
     "activeDurationSeconds"
   ],
   "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.historyItem"
+  "@odata.type": "microsoft.graph.activityHistoryItem",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "countable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

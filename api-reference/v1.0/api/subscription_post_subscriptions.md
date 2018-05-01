@@ -77,7 +77,7 @@ HTTP/1.1 201 Created
 
 {
   "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
-  "resource":"me/mailFolders/Inbox/messages",
+  "resource":"me/mailFolders/inbox/messages",
   "changeType":"created, updated",
   "clientState":"subscription-identifier",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",

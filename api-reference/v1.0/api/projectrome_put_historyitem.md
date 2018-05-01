@@ -67,7 +67,7 @@ Here is an example of the response.
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.historyItem"
+    "@odata.type": "microsoft.graph.activityHistoryItem"
 } -->
 
 ```http

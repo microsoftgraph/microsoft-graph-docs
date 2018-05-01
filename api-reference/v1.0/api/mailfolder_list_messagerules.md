@@ -33,6 +33,7 @@ If successful, this method returns a `200 OK` response code and collection of [m
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox"],
   "name": "get_messagerules"
 }-->
 ```http

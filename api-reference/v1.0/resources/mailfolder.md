@@ -72,7 +72,32 @@ Here is a JSON representation of the resource
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.mailFolder"
+  "@odata.type": "microsoft.graph.mailFolder",
+  "@odata.annotations": [
+    {
+      "property": "childFolders",
+      "capabilities": {
+        "changeTracking": false,
+        "navigability": "",
+        "searchable": false
+      }
+    },
+    {
+      "property": "messageRules",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "messages",
+      "capabilities": {
+        "changeTracking": true,
+        "navigability": ""
+      }
+    }
+  ]
 }-->
 
 ```json

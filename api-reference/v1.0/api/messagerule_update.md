@@ -47,6 +47,7 @@ The following example changes the name of the rule, and the actions to be taken 
 [example](messagerule_get.md#example) in [Get rule](messagerule_get.md), from forwarding to an address to marking its importance as high. 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox"],
   "name": "update_messagerule"
 }-->
 ```http

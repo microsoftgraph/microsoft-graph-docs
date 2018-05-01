@@ -12,7 +12,7 @@ Represents the set of conditions and exceptions that are available for a rule.
 | fromAddresses | Collection([recipient](recipient.md)) | Represents the specific sender email addresses of an incoming message in order for the condition or exception to apply. |
 | hasAttachments | Boolean | Indicates whether an incoming message must have attachments in order for the condition or exception to apply. |
 | headerContains | Collection(String) | Represents the strings that appear in the headers of an incoming message in order for the condition or exception to apply. |
-| importance | String | The importance that is stamped on an incoming message in order for the condition or exception to apply: `low`, `normal`, `high`. |
+| importance | importance | The importance that is stamped on an incoming message in order for the condition or exception to apply: `low`, `normal`, `high`. |
 | isApprovalRequest | Boolean | Indicates whether an incoming message must be an approval request in order for the condition or exception to apply. |
 | isAutomaticForward | Boolean | Indicates whether an incoming message must be automatically forwarded in order for the condition or exception to apply. |
 | isAutomaticReply | Boolean | Indicates whether an incoming message must be an auto reply in order for the condition or exception to apply. |
@@ -28,7 +28,7 @@ Represents the set of conditions and exceptions that are available for a rule.
 | notSentToMe | Boolean | Indicates whether the owner of the mailbox must not be a recipient of an incoming message in order for the condition or exception to apply. |
 | recipientContains | Collection(String) | Represents the strings that appear in either the **toRecipients** or **ccRecipients** properties of an incoming message in order for the condition or exception to apply. |
 | senderContains | Collection(String) | Represents the strings that appear in the **from** property of an incoming message in order for the condition or exception to apply. |
-| sensitivity | String | Represents the sensitivity level that must be stamped on an incoming message in order for the condition or exception to apply. Possible values are: `normal`, `personal`, `private`, `confidential`. |
+| sensitivity | sensitivity | Represents the sensitivity level that must be stamped on an incoming message in order for the condition or exception to apply. Possible values are: `normal`, `personal`, `private`, `confidential`. |
 | sentCcMe | Boolean | Indicates whether the owner of the mailbox must be in the **ccRecipients** property of an incoming message in order for the condition or exception to apply. |
 | sentOnlyToMe | Boolean | Indicates whether the owner of the mailbox must be the only recipient in an incoming message in order for the condition or exception to apply. |
 | sentToAddresses | Collection([recipient](recipient.md)) | Represents the email addresses that an incoming message must have been sent to in order for the condition or exception to apply. |
@@ -53,8 +53,22 @@ Represents the set of conditions and exceptions that are available for a rule.
 | replyToAll
 | review
 
+### importance values
 
+| Value
+|:-----------------
+| low
+| normal
+| high
 
+### sensitivity values
+
+| Value
+|:-----------------
+| normal
+| personal
+| private
+| confidential
 
 ## JSON representation
 Here is a JSON representation of the resource.

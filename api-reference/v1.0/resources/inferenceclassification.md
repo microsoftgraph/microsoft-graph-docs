@@ -32,7 +32,17 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.inferenceClassification"
+  "@odata.type": "microsoft.graph.inferenceClassification",
+  "@odata.annotations": [
+    {
+      "property": "overrides",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
