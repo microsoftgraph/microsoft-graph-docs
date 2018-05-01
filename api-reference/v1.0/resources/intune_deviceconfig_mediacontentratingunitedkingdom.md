@@ -6,31 +6,8 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|ratingUnitedKingdomMoviesType|Movies rating selected for United Kingdom Possible values are: `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15`, `adults`.|
-|tvRating|ratingUnitedKingdomTelevisionType|TV rating selected for United Kingdom Possible values are: `allAllowed`, `allBlocked`, `caution`.|
-
-### ratingUnitedKingdomTelevisionType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| caution
-
-
-### ratingUnitedKingdomMoviesType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| general
-| universalChildren
-| parentalGuidance
-| agesAbove12Video
-| agesAbove12Cinema
-| agesAbove15
-| adults
+|movieRating|[ratingUnitedKingdomMoviesType](../resources/intune_deviceconfig_ratingunitedkingdommoviestype.md)|Movies rating selected for United Kingdom. Possible values are: `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15`, `adults`.|
+|tvRating|[ratingUnitedKingdomTelevisionType](../resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype.md)|TV rating selected for United Kingdom. Possible values are: `allAllowed`, `allBlocked`, `caution`.|
 
 ## Relationships
 None

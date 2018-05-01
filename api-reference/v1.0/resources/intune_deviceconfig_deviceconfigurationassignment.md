@@ -16,7 +16,7 @@ The device configuration assignment entity assigns an AAD group to a specific de
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The key of the assignment.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_deviceconfig_deviceandappmanagementassignmenttarget.md)|The assignment target for the device configuration.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|The assignment target for the device configuration.|
 
 ## Relationships
 None

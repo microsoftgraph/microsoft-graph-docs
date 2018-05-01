@@ -26,7 +26,7 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 |lastModifiedDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object was modified on the server. |
 |id | String | Server-generated ID used for URL addressing.|
 |appActivityId | String | Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.|
-|activitySourceHost | String | Required. URL pointing to the JSON file which stores the cross-platform identity mapping for the application.|
+|activitySourceHost | String | Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.|
 |appDisplayName | String | Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.|
 |activationUrl | String | Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.|
 |fallbackUrl | String | Optional. URL used to launch the activity in a web-based app, if available.|

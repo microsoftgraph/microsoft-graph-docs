@@ -6,35 +6,8 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|ratingIrelandMoviesType|Movies rating selected for Ireland Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.|
-|tvRating|ratingIrelandTelevisionType|TV rating selected for Ireland Possible values are: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.|
-
-### ratingIrelandTelevisionType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| general
-| children
-| youngAdults
-| parentalSupervision
-| mature
-
-
-### ratingIrelandMoviesType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| general
-| parentalGuidance
-| agesAbove12
-| agesAbove15
-| agesAbove16
-| adults
-
+|movieRating|[ratingIrelandMoviesType](../resources/intune_deviceconfig_ratingirelandmoviestype.md)|Movies rating selected for Ireland. Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.|
+|tvRating|[ratingIrelandTelevisionType](../resources/intune_deviceconfig_ratingirelandtelevisiontype.md)|TV rating selected for Ireland. Possible values are: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.|
 
 ## Relationships
 None

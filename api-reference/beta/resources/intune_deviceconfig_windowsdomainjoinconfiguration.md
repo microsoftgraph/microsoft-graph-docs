@@ -11,11 +11,11 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List windowsDomainJoinConfigurations](../api/intune_deviceconfig_windowsdomainjoinconfiguration_list.md)|[windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md) collection|List properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md) objects.|
-|[Get windowsDomainJoinConfiguration](../api/intune_deviceconfig_windowsdomainjoinconfiguration_get.md)|[windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md)|Read properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md) object.|
-|[Create windowsDomainJoinConfiguration](../api/intune_deviceconfig_windowsdomainjoinconfiguration_create.md)|[windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md)|Create a new [windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md) object.|
-|[Delete windowsDomainJoinConfiguration](../api/intune_deviceconfig_windowsdomainjoinconfiguration_delete.md)|None|Deletes a [windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md).|
-|[Update windowsDomainJoinConfiguration](../api/intune_deviceconfig_windowsdomainjoinconfiguration_update.md)|[windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md)|Update the properties of a [windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md) object.|
+|[List windowsDomainJoinConfigurations](../api/intune_shared_windowsdomainjoinconfiguration_list.md)|[windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) collection|List properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) objects.|
+|[Get windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_get.md)|[windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md)|Read properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object.|
+|[Create windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_create.md)|[windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md)|Create a new [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object.|
+|[Delete windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_delete.md)|None|Deletes a [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md).|
+|[Update windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_update.md)|[windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md)|Update the properties of a [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -26,9 +26,9 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|computerNameStaticPrefix|String|Fixed prefix to be used for computer name. This property can only be set during creation.|
-|computerNameSuffixRandomCharCount|Int32|Dynamically generated characters used as suffix for computer name. Valid values 3 to 14. This property can only be set during creation.|
-|activeDirectoryDomainName|String|Active Directory domain name to join. This property can only be set during creation.|
+|computerNameStaticPrefix|String|Fixed prefix to be used for computer name.|
+|computerNameSuffixRandomCharCount|Int32|Dynamically generated characters used as suffix for computer name. Valid values 3 to 14|
+|activeDirectoryDomainName|String|Active Directory domain name to join.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -40,6 +40,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|networkAccessConfigurations|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) collection|Reference to device configurations required for network connectivity|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

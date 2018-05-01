@@ -6,36 +6,8 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|ratingAustraliaMoviesType|Movies rating selected for Australia Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18`.|
-|tvRating|ratingAustraliaTelevisionType|TV rating selected for Australia Possible values are: `allAllowed`, `allBlocked`, `preschoolers`, `children`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove15AdultViolence`.|
-
-### ratingAustraliaTelevisionType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| preschoolers
-| children
-| general
-| parentalGuidance
-| mature
-| agesAbove15
-| agesAbove15AdultViolence
-
-
-### ratingAustraliaMoviesType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| general
-| parentalGuidance
-| mature
-| agesAbove15
-| agesAbove18
-
+|movieRating|[ratingAustraliaMoviesType](../resources/intune_deviceconfig_ratingaustraliamoviestype.md)|Movies rating selected for Australia. Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18`.|
+|tvRating|[ratingAustraliaTelevisionType](../resources/intune_deviceconfig_ratingaustraliatelevisiontype.md)|TV rating selected for Australia. Possible values are: `allAllowed`, `allBlocked`, `preschoolers`, `children`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove15AdultViolence`.|
 
 ## Relationships
 None

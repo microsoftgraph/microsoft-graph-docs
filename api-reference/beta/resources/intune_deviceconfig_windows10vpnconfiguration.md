@@ -29,9 +29,12 @@ Inherits from [windowsVpnConfiguration](../resources/intune_deviceconfig_windows
 |connectionName|String|Connection name displayed to the user. Inherited from [windowsVpnConfiguration](../resources/intune_deviceconfig_windowsvpnconfiguration.md)|
 |servers|[vpnServer](../resources/intune_deviceconfig_vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements. Inherited from [windowsVpnConfiguration](../resources/intune_deviceconfig_windowsvpnconfiguration.md)|
 |customXml|Binary|Custom XML commands that configures the VPN connection. (UTF8 encoded byte array) Inherited from [windowsVpnConfiguration](../resources/intune_deviceconfig_windowsvpnconfiguration.md)|
-|connectionType|String|Connection type. Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`.|
+|profileTarget|[windows10VpnProfileTarget](../resources/intune_deviceconfig_windows10vpnprofiletarget.md)|Profile target type. Possible values are: `user`, `device`, `autoPilotDevice`.|
+|connectionType|[windows10VpnConnectionType](../resources/intune_deviceconfig_windows10vpnconnectiontype.md)|Connection type. Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`.|
 |enableSplitTunneling|Boolean|Enable split tunneling.|
-|authenticationMethod|String|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `customEapXml`.|
+|enableAlwaysOn|Boolean|Enable Always On mode.|
+|enableDeviceTunnel|Boolean|Enable device tunnel.|
+|authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune_deviceconfig_windows10vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `customEapXml`.|
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |enableConditionalAccess|Boolean|Enable conditional access.|
 |enableSingleSignOnWithAlternateCertificate|Boolean|Enable single sign-on (SSO) with alternate certificate.|
@@ -80,14 +83,16 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.vpnServer",
       "description": "String",
-      "ipAddressOrFqdn": "String",
       "address": "String",
       "isDefaultServer": true
     }
   ],
   "customXml": "binary",
+  "profileTarget": "String",
   "connectionType": "String",
   "enableSplitTunneling": true,
+  "enableAlwaysOn": true,
+  "enableDeviceTunnel": true,
   "authenticationMethod": "String",
   "rememberUserCredentials": true,
   "enableConditionalAccess": true,

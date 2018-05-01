@@ -8,8 +8,8 @@ Not yet documented
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get windowsDomainJoinConfiguration](../api/intune_enrollment_windowsdomainjoinconfiguration_get.md)|[windowsDomainJoinConfiguration](../resources/intune_enrollment_windowsdomainjoinconfiguration.md)|Read properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune_enrollment_windowsdomainjoinconfiguration.md) object.|
-|[Update windowsDomainJoinConfiguration](../api/intune_enrollment_windowsdomainjoinconfiguration_update.md)|[windowsDomainJoinConfiguration](../resources/intune_enrollment_windowsdomainjoinconfiguration.md)|Update the properties of a [windowsDomainJoinConfiguration](../resources/intune_enrollment_windowsdomainjoinconfiguration.md) object.|
+|[Get windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_get.md)|[windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md)|Read properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object.|
+|[Update windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_update.md)|[windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md)|Update the properties of a [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|

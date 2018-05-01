@@ -38,7 +38,7 @@ The following table shows the properties that are required when you create the [
 |displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |description|String|The description of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |publisher|String|The publisher of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|largeIcon|[mimeContent](../resources/intune_apps_mimecontent.md)|The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |createdDateTime|DateTimeOffset|The date and time the app was created. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |isFeatured|Boolean|The value indicating whether the app is marked as featured by the admin. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -47,11 +47,11 @@ The following table shows the properties that are required when you create the [
 |owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
 |usedLicenseCount|Int32|The number of Microsoft Store for Business licenses in use.|
 |totalLicenseCount|Int32|The total number of Microsoft Store for Business licenses.|
 |productKey|String|The app product key|
-|licenseType|String|The app license type Possible values are: `offline`, `online`.|
+|licenseType|[microsoftStoreForBusinessLicenseType](../resources/intune_apps_microsoftstoreforbusinesslicensetype.md)|The app license type. Possible values are: `offline`, `online`.|
 |packageIdentityName|String|The app package identifier|
 
 

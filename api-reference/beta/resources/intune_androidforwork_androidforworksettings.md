@@ -19,13 +19,13 @@ Settings for Android For Work.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The Android for Work settings identifier|
-|bindStatus|String|Bind status of the tenant with the Google EMM API Possible values are: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
+|bindStatus|[androidForWorkBindStatus](../resources/intune_androidforwork_androidforworkbindstatus.md)|Bind status of the tenant with the Google EMM API. Possible values are: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Last completion time for app sync|
-|lastAppSyncStatus|String|Last application sync result Possible values are: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
+|lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune_androidforwork_androidforworksyncstatus.md)|Last application sync result. Possible values are: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
 |ownerUserPrincipalName|String|Owner UPN that created the enterprise|
 |ownerOrganizationName|String|Organization name used when onboarding Android for Work|
 |lastModifiedDateTime|DateTimeOffset|Last modification time for Android for Work settings|
-|enrollmentTarget|String|Indicates which users can enroll devices in Android for Work device management Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
+|enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune_androidforwork_androidforworkenrollmenttarget.md)|Indicates which users can enroll devices in Android for Work device management. Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'|
 |deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
 

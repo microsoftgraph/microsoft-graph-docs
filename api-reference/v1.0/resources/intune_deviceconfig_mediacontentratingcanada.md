@@ -6,35 +6,8 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|ratingCanadaMoviesType|Movies rating selected for Canada Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`, `restricted`.|
-|tvRating|ratingCanadaTelevisionType|TV rating selected for Canada Possible values are: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`.|
-
-### ratingCanadaTelevisionType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| children
-| childrenAbove8
-| general
-| parentalGuidance
-| agesAbove14
-| agesAbove18
-
-
-### ratingCanadaMoviesType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| general
-| parentalGuidance
-| agesAbove14
-| agesAbove18
-| restricted
-
+|movieRating|[ratingCanadaMoviesType](../resources/intune_deviceconfig_ratingcanadamoviestype.md)|Movies rating selected for Canada. Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`, `restricted`.|
+|tvRating|[ratingCanadaTelevisionType](../resources/intune_deviceconfig_ratingcanadatelevisiontype.md)|TV rating selected for Canada. Possible values are: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`.|
 
 ## Relationships
 None

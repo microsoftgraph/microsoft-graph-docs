@@ -86,7 +86,7 @@ Content-Type: application/json
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/activities?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
     "value": [{
         "@odata.type": "#microsoft.graph.activity",
-        "activitySourceHost": "http://www.contoso.com",
+        "activitySourceHost": "https://www.contoso.com",
         "createdDateTime": "2018-02-26T18:34:29.592Z",
         "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",
         "id": "5347642601316252694",
@@ -99,7 +99,7 @@ Content-Type: application/json
               },
             "displayText": "Contoso How-To: How to Tie a Reef Knot",
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
-            "backgroundColor": "#FFD4FF7F",
+            "backgroundColor": "#ff0000",
             "content": {
               "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
               "type": "AdaptiveCard",

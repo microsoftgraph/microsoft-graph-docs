@@ -6,33 +6,8 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|ratingFranceMoviesType|Movies rating selected for France Possible values are: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.|
-|tvRating|ratingFranceTelevisionType|TV rating selected for France Possible values are: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.|
-
-### ratingFranceTelevisionType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| agesAbove10
-| agesAbove12
-| agesAbove16
-| agesAbove18
-
-
-### ratingFranceMoviesType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| agesAbove10
-| agesAbove12
-| agesAbove16
-| agesAbove18
-
-
+|movieRating|[ratingFranceMoviesType](../resources/intune_deviceconfig_ratingfrancemoviestype.md)|Movies rating selected for France. Possible values are: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.|
+|tvRating|[ratingFranceTelevisionType](../resources/intune_deviceconfig_ratingfrancetelevisiontype.md)|TV rating selected for France. Possible values are: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.|
 
 ## Relationships
 None

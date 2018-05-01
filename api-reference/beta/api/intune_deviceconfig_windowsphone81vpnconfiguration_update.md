@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Request headers
@@ -47,13 +48,13 @@ The following table shows the properties that are required when you create the [
 |servers|[vpnServer](../resources/intune_deviceconfig_vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements. Inherited from [windowsVpnConfiguration](../resources/intune_deviceconfig_windowsvpnconfiguration.md)|
 |customXml|Binary|Custom XML commands that configures the VPN connection. (UTF8 encoded byte array) Inherited from [windowsVpnConfiguration](../resources/intune_deviceconfig_windowsvpnconfiguration.md)|
 |applyOnlyToWindows81|Boolean|Value indicating whether this policy only applies to Windows 8.1. This property is read-only. Inherited from [windows81VpnConfiguration](../resources/intune_deviceconfig_windows81vpnconfiguration.md)|
-|connectionType|String|Connection type. Inherited from [windows81VpnConfiguration](../resources/intune_deviceconfig_windows81vpnconfiguration.md) Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`.|
+|connectionType|[windowsVpnConnectionType](../resources/intune_deviceconfig_windowsvpnconnectiontype.md)|Connection type. Inherited from [windows81VpnConfiguration](../resources/intune_deviceconfig_windows81vpnconfiguration.md). Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`.|
 |loginGroupOrDomain|String|Login group or domain when connection type is set to Dell SonicWALL Mobile Connection. Inherited from [windows81VpnConfiguration](../resources/intune_deviceconfig_windows81vpnconfiguration.md)|
 |enableSplitTunneling|Boolean|Enable split tunneling for the VPN. Inherited from [windows81VpnConfiguration](../resources/intune_deviceconfig_windows81vpnconfiguration.md)|
 |proxyServer|[windows81VpnProxyServer](../resources/intune_deviceconfig_windows81vpnproxyserver.md)|Proxy Server. Inherited from [windows81VpnConfiguration](../resources/intune_deviceconfig_windows81vpnconfiguration.md)|
 |bypassVpnOnCompanyWifi|Boolean|Bypass VPN on company Wi-Fi.|
 |bypassVpnOnHomeWifi|Boolean|Bypass VPN on home Wi-Fi.|
-|authenticationMethod|String|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
+|authenticationMethod|[vpnAuthenticationMethod](../resources/intune_deviceconfig_vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |dnsSuffixSearchList|String collection|DNS suffix search list.|
 
@@ -68,7 +69,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1200
+Content-length: 1146
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -80,7 +81,6 @@ Content-length: 1200
     {
       "@odata.type": "microsoft.graph.vpnServer",
       "description": "Description value",
-      "ipAddressOrFqdn": "Ip Address Or Fqdn value",
       "address": "Address value",
       "isDefaultServer": true
     }
@@ -113,7 +113,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1377
+Content-Length: 1323
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81VpnConfiguration",
@@ -128,7 +128,6 @@ Content-Length: 1377
     {
       "@odata.type": "microsoft.graph.vpnServer",
       "description": "Description value",
-      "ipAddressOrFqdn": "Ip Address Or Fqdn value",
       "address": "Address value",
       "isDefaultServer": true
     }

@@ -38,7 +38,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The key of the NDES Connector.|
 |lastConnectionDateTime|DateTimeOffset|Last connection time for the Ndes Connector|
-|state|String|Ndes Connector Status Possible values are: `none`, `active`, `inactive`.|
+|state|[ndesConnectorState](../resources/intune_deviceconfig_ndesconnectorstate.md)|Ndes Connector Status. Possible values are: `none`, `active`, `inactive`.|
 |displayName|String|The friendly name of the Ndes Connector.|
 
 

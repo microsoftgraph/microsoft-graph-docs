@@ -6,29 +6,8 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|ratingJapanMoviesType|Movies rating selected for Japan Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`.|
-|tvRating|ratingJapanTelevisionType|TV rating selected for Japan Possible values are: `allAllowed`, `allBlocked`, `explicitAllowed`.|
-
-### ratingJapanTelevisionType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| explicitAllowed
-
-
-### ratingJapanMoviesType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| general
-| parentalGuidance
-| agesAbove15
-| agesAbove18
-
+|movieRating|[ratingJapanMoviesType](../resources/intune_deviceconfig_ratingjapanmoviestype.md)|Movies rating selected for Japan. Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`.|
+|tvRating|[ratingJapanTelevisionType](../resources/intune_deviceconfig_ratingjapantelevisiontype.md)|TV rating selected for Japan. Possible values are: `allAllowed`, `allBlocked`, `explicitAllowed`.|
 
 ## Relationships
 None

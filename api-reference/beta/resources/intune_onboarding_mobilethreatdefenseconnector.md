@@ -19,7 +19,7 @@ Entity which represents a connection to Mobile threat defense partner.
 |:---|:---|:---|
 |id|String|Not yet documented|
 |lastHeartbeatDateTime|DateTimeOffset|DateTime of last Heartbeat recieved from the Data Sync Partner|
-|partnerState|String|Data Sync Partner state for this account Possible values are: `unavailable`, `available`, `enabled`, `unresponsive`.|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune_onboarding_mobilethreatpartnertenantstate.md)|Data Sync Partner state for this account. Possible values are: `unavailable`, `available`, `enabled`, `unresponsive`.|
 |androidEnabled|Boolean|For Android, set whether data from the data sync partner should be used during compliance evaluations|
 |iosEnabled|Boolean|For IOS, get or set whether data from the data sync partner should be used during compliance evaluations|
 |windowsEnabled|Boolean|For Windows, get or set whether data from the data sync partner should be used during compliance evaluations|

@@ -34,7 +34,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|syncType|String|The type of sync which will be executed, full sync or delta sync.|
+|syncType|[deviceManagementExchangeConnectorSyncType](../resources/intune_onboarding_devicemanagementexchangeconnectorsynctype.md)|The type of sync which will be executed, full sync or delta sync.|
 
 
 

@@ -18,7 +18,7 @@ An abstract class containing the base properties for Managed eBook.
 |description|String|Description.|
 |publisher|String|Publisher.|
 |publishedDateTime|DateTimeOffset|The date and time when the eBook was published.|
-|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Book cover.|
+|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Book cover.|
 |createdDateTime|DateTimeOffset|The date and time when the eBook file was created.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the eBook was last modified.|
 |informationUrl|String|The more information Url.|

@@ -28,7 +28,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |trustedRootCertificate|Binary|Trusted Root Certificate|
 |certFileName|String|File name to display in UI.|
-|destinationStore|String|Destination store location for the Trusted Root Certificate. Possible values are: `computerCertStoreRoot`, `computerCertStoreIntermediate`, `userCertStoreIntermediate`.|
+|destinationStore|[certificateDestinationStore](../resources/intune_deviceconfig_certificatedestinationstore.md)|Destination store location for the Trusted Root Certificate. Possible values are: `computerCertStoreRoot`, `computerCertStoreIntermediate`, `userCertStoreIntermediate`.|
 
 ## Relationships
 |Relationship|Type|Description|

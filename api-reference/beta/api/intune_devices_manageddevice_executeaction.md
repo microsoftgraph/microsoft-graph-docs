@@ -38,7 +38,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|actionName|String|Not yet documented|
+|actionName|[managedDeviceRemoteAction](../resources/intune_devices_manageddeviceremoteaction.md)|Not yet documented|
 |deviceIds|String collection|Not yet documented|
 
 

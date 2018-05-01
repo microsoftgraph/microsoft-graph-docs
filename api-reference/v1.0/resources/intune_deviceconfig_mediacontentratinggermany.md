@@ -6,34 +6,8 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|ratingGermanyMoviesType|Movies rating selected for Germany Possible values are: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.|
-|tvRating|ratingGermanyTelevisionType|TV rating selected for Germany Possible values are: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.|
-
-### ratingGermanyTelevisionType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| general
-| agesAbove6
-| agesAbove12
-| agesAbove16
-| adults
-
-
-### ratingGermanyMoviesType values
-
-| Value
-|:-------------------------
-| allAllowed
-| allBlocked
-| general
-| agesAbove6
-| agesAbove12
-| agesAbove16
-| adults
-
+|movieRating|[ratingGermanyMoviesType](../resources/intune_deviceconfig_ratinggermanymoviestype.md)|Movies rating selected for Germany. Possible values are: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.|
+|tvRating|[ratingGermanyTelevisionType](../resources/intune_deviceconfig_ratinggermanytelevisiontype.md)|TV rating selected for Germany. Possible values are: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.|
 
 ## Relationships
 None

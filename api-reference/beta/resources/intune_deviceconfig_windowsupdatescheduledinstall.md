@@ -11,9 +11,8 @@ Inherits from [windowsUpdateInstallScheduleType](../resources/intune_deviceconfi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|scheduledInstallDay|String|Scheduled Install Day in week Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|scheduledInstallDay|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Scheduled Install Day in week. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |scheduledInstallTime|TimeOfDay|Scheduled Install Time during day|
-|restartMode|String|Deprecated - Set restart mode allowed level to power or battery Possible values are: `userDefined`, `batteryLevelCheckEnabled`, `batteryLevelCheckDisabled`.|
 
 ## Relationships
 None
@@ -29,8 +28,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.windowsUpdateScheduledInstall",
   "scheduledInstallDay": "String",
-  "scheduledInstallTime": "String (time of day)",
-  "restartMode": "String"
+  "scheduledInstallTime": "String (time of day)"
 }
 ```
 
