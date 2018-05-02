@@ -11,9 +11,7 @@ Represents the fill formatting for a chart element.
 |[Setsolidcolor](../api/chartfill_setsolidcolor.md)|None|Sets the fill formatting of a chart element to a uniform color.|
 
 ## Properties
-| Property | Type    |Description
-|:---------|:--------|:------------------------------------
-| id       |string   | Unique identifier. Read-only.
+None
 
 ## Relationships
 None

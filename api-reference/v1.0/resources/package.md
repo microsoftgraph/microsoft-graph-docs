@@ -24,7 +24,7 @@ DriveItems with the **package** facet do not include a **folder** or **file** fa
 
 | Property Name | Type   | Description                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| type      | string | A string indicating the type of package. While `oneNote` is the only currently defined value, you should expect other package types to be returned and handle them accordingly. |
+| **type**      | string | An string indicating the type of package. While `oneNote` is the only currently defined value, you should expect other package types to be returned and handle them accordingly. |
 
 ## Remarks 
 

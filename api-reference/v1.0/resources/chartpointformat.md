@@ -7,9 +7,7 @@ Represents formatting object for chart points.
 None
 
 ## Properties
-| Property | Type    |Description
-|:---------|:--------|:------------------------------------
-| id       |string   | Unique identifier. Read-only.
+None
 
 ## Relationships
 | Relationship | Type	|Description|

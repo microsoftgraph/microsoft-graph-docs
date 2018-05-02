@@ -19,7 +19,6 @@ Represents a single axis in a chart.
 |minimum|Json|Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.|
 |minorUnit|Json|Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.|
 
-
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
@@ -42,7 +41,6 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string",
   "majorUnit": "string",
   "maximum": "string",
   "minimum": "string",
@@ -52,6 +50,7 @@ Here is a JSON representation of the resource.
   "minorGridlines": {"@odata.type": "microsoft.graph.workbookChartGridlines"},
   "title": {"@odata.type": "microsoft.graph.workbookChartAxisTitle"}
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

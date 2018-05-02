@@ -13,9 +13,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/<name>/axes/valueAxis
-GET /workbook/worksheets/{id|name}/charts/<name>/axes/seriesAxis
-GET /workbook/worksheets/{id|name}/charts/<name>/axes/categoryaxis
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "get_chartaxis"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/axes/valueAxis
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

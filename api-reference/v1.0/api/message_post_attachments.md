@@ -65,7 +65,7 @@ Here is an example of the request.
   "name": "create_file_attachment_from_message"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/{message-id}/attachments
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
 Content-length: 142
 
@@ -113,7 +113,7 @@ Here is an example of the request.
 }-->
 
 ```
-POST https://graph.microsoft.com/v1.0/me/messages/{message-id}/attachments
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
 Content-length: 200
 

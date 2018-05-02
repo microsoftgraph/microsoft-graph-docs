@@ -35,7 +35,6 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
-       "baseType": "microsoft.graph.baseItem",
        "keyProperty": "id", "openType": true } -->
 
 ```json
@@ -68,7 +67,6 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
-  "workbook": { "@odata.type": "microsoft.graph.workbook"},
 
   /* inherited from baseItem */
   "id": "string (identifier)",
@@ -137,7 +135,6 @@ The eTag value is only modified when the folder's properties are changed, except
 | listItem           | [listItem][]                | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
 | permissions        | [permission][] collection   | The set of permissions for the item. Read-only. Nullable.
 | thumbnails         | [thumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
-| workbook           | [workbook][]                | The Excel workbook contents, if the item represents an Excel file.
 
 ## Instance Attributes
 
@@ -203,7 +200,6 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [specialFolder]: specialFolder.md
 [thumbnailSet]: thumbnailSet.md
 [video]: video.md
-[workbook]: workbook.md
 [user]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/users
 
 <!-- {

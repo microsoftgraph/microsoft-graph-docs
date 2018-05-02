@@ -17,7 +17,7 @@ It is available from the [folder][folder-facet] property of [driveItem][item-res
 ```json
 {
   "sortBy": "default | name | type | size | takenOrCreatedDateTime | lastModifiedDateTime | sequence",
-  "sortOrder": "ascending | descending",
+  "sortDescending": "ascending | descending",
   "viewType": "default | icons | details | thumbnails"
 }
 ```

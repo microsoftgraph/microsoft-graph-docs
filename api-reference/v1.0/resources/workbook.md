@@ -24,9 +24,7 @@ Here is a JSON representation of the resource
 ```
 
 ## Properties
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-| id       |string   | Unique identifier. Read-only.
+None
 
 ## Methods
 
@@ -43,7 +41,6 @@ Here is a JSON representation of the resource
 |names|[WorkbookNamedItem](nameditem.md) collection|Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|
 |tables|[WorkbookTable](table.md) collection|Represents a collection of tables associated with the workbook. Read-only.|
 |worksheets|[WorkbookWorksheet](worksheet.md) collection|Represents a collection of worksheets associated with the workbook. Read-only.|
-
 
 ## Functions
 
