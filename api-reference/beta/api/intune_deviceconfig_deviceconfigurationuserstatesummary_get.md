@@ -49,19 +49,19 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 374
+Content-Length: 361
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceConfigurationUserStateSummary",
     "id": "e8957887-7887-e895-8778-95e8877895e8",
-    "unknownDeviceCount": 2,
-    "notApplicableDeviceCount": 8,
-    "compliantDeviceCount": 4,
-    "remediatedDeviceCount": 5,
-    "nonCompliantDeviceCount": 7,
-    "errorDeviceCount": 0,
-    "conflictDeviceCount": 3
+    "unknownUserCount": 0,
+    "notApplicableUserCount": 6,
+    "compliantUserCount": 2,
+    "remediatedUserCount": 3,
+    "nonCompliantUserCount": 5,
+    "errorUserCount": 14,
+    "conflictUserCount": 1
   }
 }
 ```

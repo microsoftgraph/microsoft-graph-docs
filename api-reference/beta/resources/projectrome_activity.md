@@ -16,6 +16,8 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 |:------|:------------|:-----------|
 |[Create or replace activity](../api/projectrome_put_activity.md) | [activity](projectrome_activity.md) |Creates or replaces an existing activity (upsert). The appActivityId needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe. |
 |[Delete an activity](../api/projectrome_delete_activity.md) | No Content | Deletes the specified activity for that user from your app.|
+|[Get activities](../api/projectrome_get_activities.md) | Collection of [activities](projectrome_activity.md) | Gets the activities for your app for a given user.|
+|[Get recent activities](../api/projectrome_get_recent_activities.md) | Collection of [activities](projectrome_activity.md) | Gets the most recent activities for your app for a given user, sorted and based on the most recently created or updated [historyItems](projectrome_historyitem.md).|
 
 ## Properties
 
@@ -26,14 +28,15 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 |lastModifiedDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object was modified on the server. |
 |id | String | Server-generated ID used for URL addressing.|
 |appActivityId | String | Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.|
-|activitySourceHost | String | Required. URL pointing to the JSON file which stores the cross-platform identity mapping for the application.|
+|activitySourceHost | String | Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.|
 |appDisplayName | String | Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.|
 |activationUrl | String | Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.|
 |fallbackUrl | String | Optional. URL used to launch the activity in a web-based app, if available.|
 |contentUrl | String | Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).|
 |visualElements| [visualInfo](../resources/projectrome_visualinfo.md) | Required. The object containing information to render the activity in the UX.|
 |contentInfo | Untyped JSON object | Optional. A custom piece of data - JSON-LD extensible description of content according to [schema.org](http://schema.org) syntax.|
-|expirationDateTime| DateTimeOffset| Set by the server. DateTime in UTC when the object expired on the server.|
+|expirationDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object expired on the server.|
+|status | EnumType | Set by the server. A status code used to identify valid objects. Values: active, updated, deleted, ignored.|
 
 ## Relationships
 
@@ -72,6 +75,7 @@ Here is a JSON representation of the resource.
     "lastModifiedDateTime": "DateTimeOffset",
     "expirationDateTime": "DateTimeOffset",
     "id": "String",
+    "status": "EnumType",
     "contentInfo": { "@data.type": "microsoft.graph.Json" },
     "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
     "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]

@@ -42,6 +42,8 @@ The following table shows the properties that are required when you create the [
 |dualEnrolledDeviceCount|Int32|The number of devices enrolled in both MDM and EAS|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune_devices_deviceoperatingsystemsummary.md)|Device operating system summary.|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune_devices_deviceexchangeaccessstatesummary.md)|Distribution of Exchange Access State in Intune|
+|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune_devices_manageddevicemodelsandmanufacturers.md)|Models and Manufactures meatadata for managed devices in the account|
+|lastModifiedDateTime|DateTimeOffset|Last modified date time of device overview|
 
 
 
@@ -54,7 +56,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 625
+Content-length: 947
 
 {
   "enrolledDeviceCount": 3,
@@ -76,7 +78,17 @@ Content-length: 625
     "quarantinedDeviceCount": 6,
     "unknownDeviceCount": 2,
     "unavailableDeviceCount": 6
-  }
+  },
+  "managedDeviceModelsAndManufacturers": {
+    "@odata.type": "microsoft.graph.managedDeviceModelsAndManufacturers",
+    "deviceModels": [
+      "Device Models value"
+    ],
+    "deviceManufacturers": [
+      "Device Manufacturers value"
+    ]
+  },
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
 
@@ -85,7 +97,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 734
+Content-Length: 1056
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -109,7 +121,17 @@ Content-Length: 734
     "quarantinedDeviceCount": 6,
     "unknownDeviceCount": 2,
     "unavailableDeviceCount": 6
-  }
+  },
+  "managedDeviceModelsAndManufacturers": {
+    "@odata.type": "microsoft.graph.managedDeviceModelsAndManufacturers",
+    "deviceModels": [
+      "Device Models value"
+    ],
+    "deviceManufacturers": [
+      "Device Manufacturers value"
+    ]
+  },
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
 

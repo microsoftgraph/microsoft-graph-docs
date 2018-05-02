@@ -22,7 +22,7 @@ The ManagedAppRegistration resource represents the details of an app, with manag
 |deviceType|String|Host device type|
 |deviceTag|String|App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in all conditions.|
 |deviceName|String|Host device name|
-|flaggedReasons|String collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device|
+|flaggedReasons|[managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md) collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device|
 |userId|String|The user Id to who this app registration belongs.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|The app package Identifier|
 |id|String|Key of the entity.|

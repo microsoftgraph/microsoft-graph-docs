@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A complex type for representing visual elements in the [activity](../resources/projectrome_activity.md) object.
+A complex type for representing the **visualElements** property in the [activity](../resources/projectrome_activity.md) object.
 
 Each user activity will be shown in Timeline as an Adaptive Card. App developers are encouraged to provide a custom Card which captures the essence of the activity which took place in your app. This is possible by providing a custom JSON card in the content property.
 
@@ -14,9 +14,9 @@ If a custom card is not provided, a simple card will be generated using displayT
 
 |Name | Type | Description|
 |:----|:------|:-----------|
-|displayText | String | Rquired. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)|
+|displayText | String | Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)|
 |description | String | Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)|
-|backgroundColor | String | Optional. Background color used to render the activity in the UI - brand color for the application source of the activity|
+|backgroundColor | String | Optional. Background color used to render the activity in the UI - brand color for the application source of the activity. Must be a valid hex color|
 |content | Untyped JSON object | Optional. Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI|
 |attribution | [imageInfo](../resources/projectrome_imageinfo.md) | Optional. JSON object used to represent an icon which represents the application used to generate the activity|
 
@@ -41,7 +41,7 @@ The following is a JSON representation of the resource.
     "attribution": {
         "@odata.type": "microsoft.graph.imageInfo",
         "iconUrl": "String (URL)",
-        "alternativeText": "String",
+        "alternateText": "String",
         "addImageQuery": "boolean"
     },
     "description": "String",

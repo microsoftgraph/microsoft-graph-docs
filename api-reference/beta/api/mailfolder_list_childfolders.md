@@ -4,6 +4,7 @@
 
 Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level 
 folder collection and navigate to another folder.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -19,8 +20,10 @@ One of the following permissions is required to call this API. To learn more, in
 GET /me/mailFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -30,20 +33,23 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this method returns a `200 OK` response code and collection of [MailFolder](../resources/mailfolder.md) objects in the response body.
-## Example
-##### Request
-Here is an example of the request.
+
+## Example 1
+#### Request 1
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_childfolders"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/mailFolders/{id}/childFolders
+GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 ```
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+#### Response 1
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -58,12 +64,90 @@ Content-length: 232
 {
   "value": [
     {
-      "displayName": "displayName-value",
-      "parentFolderId": "parentFolderId-value",
-      "childFolderCount": 99,
-      "unreadItemCount": 99,
-      "totalItemCount": 99,
-      "id": "id-value"
+        "id": "AAMkAGVmMDEzA",
+        "displayName": "Internal Screens",
+        "parentFolderId": "AAMkAGVmMDEzM",
+        "childFolderCount": 0,
+        "unreadItemCount": 2,
+        "totalItemCount": 2,
+        "wellKnownName": null
+    },
+    {
+        "id": "AAMkAGVmMDEzB",
+        "displayName": "Project Falcon",
+        "parentFolderId": "AAMkAGVmMDEzM",
+        "childFolderCount": 0,
+        "unreadItemCount": 5,
+        "totalItemCount": 5,
+        "wellKnownName": null
+    },
+    {
+        "id": "AAMkAGVmMDEzMA",
+        "displayName": "Finder",
+        "parentFolderId": "AAMkAGVmMDEzM",
+        "childFolderCount": 4,
+        "unreadItemCount": 0,
+        "totalItemCount": 0,
+        "wellKnownName": "searchfolders"
+    }
+  ]
+}
+```
+
+## Example 2
+#### Request 2
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_childfolders_of_searchfolders"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
+```
+
+#### Response 2
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailSearchFolder",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 232
+
+{
+  "value": [
+    {
+        "id": "AAMkAGVmMDEzA",
+        "displayName": "Internal Screens",
+        "parentFolderId": "AAMkAGVmMDEzM",
+        "childFolderCount": 0,
+        "unreadItemCount": 2,
+        "totalItemCount": 2,
+        "wellKnownName": null
+    },
+    {
+        "id": "AAMkAGVmMDEzB",
+        "displayName": "Project Falcon",
+        "parentFolderId": "AAMkAGVmMDEzM",
+        "childFolderCount": 0,
+        "unreadItemCount": 5,
+        "totalItemCount": 5,
+        "wellKnownName": null
+    },
+    {
+        "id": "AAMkAGVmMDEzMA",
+        "displayName": "Finder",
+        "parentFolderId": "AAMkAGVmMDEzM",
+        "childFolderCount": 4,
+        "unreadItemCount": 0,
+        "totalItemCount": 0,
+        "wellKnownName": "searchfolders"
     }
   ]
 }

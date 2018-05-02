@@ -37,13 +37,13 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|unknownDeviceCount|Int32|Number of unknown devices|
-|notApplicableDeviceCount|Int32|Number of not applicable devices|
-|compliantDeviceCount|Int32|Number of compliant devices|
-|remediatedDeviceCount|Int32|Number of remediated devices|
-|nonCompliantDeviceCount|Int32|Number of NonCompliant devices|
-|errorDeviceCount|Int32|Number of error devices|
-|conflictDeviceCount|Int32|Number of conflict devices|
+|unknownUserCount|Int32|Number of unknown users|
+|notApplicableUserCount|Int32|Number of not applicable users|
+|compliantUserCount|Int32|Number of compliant users|
+|remediatedUserCount|Int32|Number of remediated users|
+|nonCompliantUserCount|Int32|Number of NonCompliant users|
+|errorUserCount|Int32|Number of error users|
+|conflictUserCount|Int32|Number of conflict users|
 
 
 
@@ -56,16 +56,16 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationUserStateSummaries
 Content-type: application/json
-Content-length: 214
+Content-length: 201
 
 {
-  "unknownDeviceCount": 2,
-  "notApplicableDeviceCount": 8,
-  "compliantDeviceCount": 4,
-  "remediatedDeviceCount": 5,
-  "nonCompliantDeviceCount": 7,
-  "errorDeviceCount": 0,
-  "conflictDeviceCount": 3
+  "unknownUserCount": 0,
+  "notApplicableUserCount": 6,
+  "compliantUserCount": 2,
+  "remediatedUserCount": 3,
+  "nonCompliantUserCount": 5,
+  "errorUserCount": 14,
+  "conflictUserCount": 1
 }
 ```
 
@@ -74,18 +74,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 337
+Content-Length: 324
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationUserStateSummary",
   "id": "e8957887-7887-e895-8778-95e8877895e8",
-  "unknownDeviceCount": 2,
-  "notApplicableDeviceCount": 8,
-  "compliantDeviceCount": 4,
-  "remediatedDeviceCount": 5,
-  "nonCompliantDeviceCount": 7,
-  "errorDeviceCount": 0,
-  "conflictDeviceCount": 3
+  "unknownUserCount": 0,
+  "notApplicableUserCount": 6,
+  "compliantUserCount": 2,
+  "remediatedUserCount": 3,
+  "nonCompliantUserCount": 5,
+  "errorUserCount": 14,
+  "conflictUserCount": 1
 }
 ```
 

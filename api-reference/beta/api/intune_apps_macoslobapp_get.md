@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /deviceAppManagement/mobileApps/{mobileAppId}
 GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
 GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
-GET /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app
 ```
 
 ## Optional query parameters
@@ -52,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1244
+Content-Length: 1716
 
 {
   "value": {
@@ -75,19 +74,36 @@ Content-Length: 1244
     "developer": "Developer value",
     "notes": "Notes value",
     "uploadState": 11,
+    "publishingState": "processing",
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
-    "identityVersion": "Identity Version value",
     "bundleId": "Bundle Id value",
     "minimumSupportedOperatingSystem": {
-      "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
-      "v8_0": true,
-      "v9_0": true,
-      "v10_0": true,
-      "v11_0": true
+      "@odata.type": "microsoft.graph.macOSMinimumOperatingSystem",
+      "v10_7": true,
+      "v10_8": true,
+      "v10_9": true,
+      "v10_10": true,
+      "v10_11": true,
+      "v10_12": true,
+      "v10_13": true
     },
-    "versionNumber": "Version Number value"
+    "buildNumber": "Build Number value",
+    "versionNumber": "Version Number value",
+    "childApps": [
+      {
+        "@odata.type": "microsoft.graph.macOSLobChildApp",
+        "bundleId": "Bundle Id value",
+        "buildNumber": "Build Number value",
+        "versionNumber": "Version Number value"
+      }
+    ],
+    "identityVersion": "Identity Version value",
+    "md5HashChunkSize": 0,
+    "md5Hash": [
+      "Md5Hash value"
+    ]
   }
 }
 ```

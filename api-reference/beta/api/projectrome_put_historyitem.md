@@ -11,8 +11,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | UserTimelineActivity.Write.CreatedByApp    |
+|Delegated (work or school account) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp    |
 |Application | Not supported. |
 
 ## HTTP request
@@ -77,13 +77,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "status": 1,
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('user%40contoso.com')/activities('13881113971988980728')/historyItems/$entity",
+    "status": "updated",
     "userTimezone": "Africa/Casablanca",
-    "createdDateTime": "2017-06-09T20:58:46.706Z",
-    "lastModifiedDateTime": "2017-06-09T20:58:46.706Z",
-    "id": "390e06e2-7e5b-4133-8014-fac7ac5991af",
-    "startedDateTime": "2015-02-11T20:54:04.345Z",
-    "lastActiveDateTime": "2015-02-11T20:54:04.345Z",
+    "createdDateTime": "2018-02-26T20:28:22.14Z",
+    "lastModifiedDateTime": "2018-02-26T20:28:22.155Z",
+    "id": "9d0b74e4-4b41-43ea-b34d-f9c1bf9f809c",
+    "startedDateTime": "2018-02-26T20:54:04.345Z",
+    "lastActiveDateTime": "2018-02-26T20:54:24.345Z",
+    "expirationDateTime": "2018-03-28T20:28:22.14Z",
+    "activeDurationSeconds": 20
 }
 ```
 

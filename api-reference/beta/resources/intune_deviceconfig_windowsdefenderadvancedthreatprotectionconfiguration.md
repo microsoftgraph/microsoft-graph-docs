@@ -27,9 +27,11 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |advancedThreatProtectionOnboardingBlob|String|Windows Defender AdvancedThreatProtection Onboarding Blob.|
+|advancedThreatProtectionOnboardingFilename|String|Name of the file from which AdvancedThreatProtectionOnboardingBlob was obtained.|
 |allowSampleSharing|Boolean|Windows Defender AdvancedThreatProtection "Allow Sample Sharing" Rule|
 |enableExpeditedTelemetryReporting|Boolean|Expedite Windows Defender Advanced Threat Protection telemetry reporting frequency.|
 |advancedThreatProtectionOffboardingBlob|String|Windows Defender AdvancedThreatProtection Offboarding Blob.|
+|advancedThreatProtectionOffboardingFilename|String|Name of the file from which AdvancedThreatProtectionOffboardingBlob was obtained.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -60,9 +62,11 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "version": 1024,
   "advancedThreatProtectionOnboardingBlob": "String",
+  "advancedThreatProtectionOnboardingFilename": "String",
   "allowSampleSharing": true,
   "enableExpeditedTelemetryReporting": true,
-  "advancedThreatProtectionOffboardingBlob": "String"
+  "advancedThreatProtectionOffboardingBlob": "String",
+  "advancedThreatProtectionOffboardingFilename": "String"
 }
 ```
 

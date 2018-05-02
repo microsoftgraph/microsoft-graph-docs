@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md) object.
+Update the properties of a [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -20,7 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /deviceManagement/deviceSetupConfigurations/{deviceSetupConfigurationId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Request headers
@@ -30,38 +32,38 @@ PATCH /deviceManagement/deviceSetupConfigurations/{deviceSetupConfigurationId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md) object.
+In the request body, supply a JSON representation for the [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object.
 
-The following table shows the properties that are required when you create the [windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md).
+The following table shows the properties that are required when you create the [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [deviceSetupConfiguration](../resources/intune_deviceconfig_devicesetupconfiguration.md)|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceSetupConfiguration](../resources/intune_deviceconfig_devicesetupconfiguration.md)|
-|description|String|Admin provided description of the Device Configuration. Inherited from [deviceSetupConfiguration](../resources/intune_deviceconfig_devicesetupconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceSetupConfiguration](../resources/intune_deviceconfig_devicesetupconfiguration.md)|
-|displayName|String|Admin provided name of the device configuration. Inherited from [deviceSetupConfiguration](../resources/intune_deviceconfig_devicesetupconfiguration.md)|
-|version|Int32|Version of the device configuration. Inherited from [deviceSetupConfiguration](../resources/intune_deviceconfig_devicesetupconfiguration.md)|
-|computerNameStaticPrefix|String|Fixed prefix to be used for computer name. This property can only be set during creation.|
-|computerNameSuffixRandomCharCount|Int32|Dynamically generated characters used as suffix for computer name. Valid values 3 to 14. This property can only be set during creation.|
-|activeDirectoryDomainName|String|Active Directory domain name to join. This property can only be set during creation.|
+|id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|computerNameStaticPrefix|String|Fixed prefix to be used for computer name.|
+|computerNameSuffixRandomCharCount|Int32|Dynamically generated characters used as suffix for computer name. Valid values 3 to 14|
+|activeDirectoryDomainName|String|Active Directory domain name to join.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceSetupConfigurations/{deviceSetupConfigurationId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
 Content-length: 344
 
 {
-  "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
   "computerNameStaticPrefix": "Computer Name Static Prefix value",
@@ -80,9 +82,9 @@ Content-Length: 521
 {
   "@odata.type": "#microsoft.graph.windowsDomainJoinConfiguration",
   "id": "40118d08-8d08-4011-088d-1140088d1140",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "computerNameStaticPrefix": "Computer Name Static Prefix value",

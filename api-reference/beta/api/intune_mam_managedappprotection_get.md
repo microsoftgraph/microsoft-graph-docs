@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1631
+Content-Length: 1862
 
 {
   "value": {
@@ -89,7 +89,11 @@ Content-Length: 1631
     "minimumRequiredOsVersion": "Minimum Required Os Version value",
     "minimumWarningOsVersion": "Minimum Warning Os Version value",
     "minimumRequiredAppVersion": "Minimum Required App Version value",
-    "minimumWarningAppVersion": "Minimum Warning App Version value"
+    "minimumWarningAppVersion": "Minimum Warning App Version value",
+    "minimumWipeOsVersion": "Minimum Wipe Os Version value",
+    "minimumWipeAppVersion": "Minimum Wipe App Version value",
+    "appActionIfDeviceComplianceRequired": "wipe",
+    "appActionIfMaximumPinRetriesExceeded": "wipe"
   }
 }
 ```

@@ -39,7 +39,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The unique Identifier for the device protection status object. This is device id of the device|
 |malwareProtectionEnabled|Boolean|Anti malware is enabled or not|
-|deviceState|String|Computer's state (like clean or pending full scan or pending reboot etc) Possible values are: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
+|deviceState|[windowsDeviceHealthState](../resources/intune_devices_windowsdevicehealthstate.md)|Computer's state (like clean or pending full scan or pending reboot etc). Possible values are: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
 |realTimeProtectionEnabled|Boolean|Real time protection is enabled or not?|
 |networkInspectionSystemEnabled|Boolean|Network inspection system enabled or not?|
 |quickScanOverdue|Boolean|Quick scan overdue or not?|

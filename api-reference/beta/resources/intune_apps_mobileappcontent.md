@@ -23,6 +23,7 @@ Contains content properties for a specific app version. Each mobileAppContent ca
 |Relationship|Type|Description|
 |:---|:---|:---|
 |files|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) collection|The list of files for this app content version.|
+|containedApps|[mobileContainedApp](../resources/intune_apps_mobilecontainedapp.md) collection|The collection of contained apps in a MobileLobApp acting as a package.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

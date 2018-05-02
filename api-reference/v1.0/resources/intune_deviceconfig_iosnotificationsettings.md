@@ -12,7 +12,7 @@ An item describing notification setting.
 |enabled|Boolean|Indicates whether notifications are allowed for this app.|
 |showInNotificationCenter|Boolean|Indicates whether notifications can be shown in notification center.|
 |showOnLockScreen|Boolean|Indicates whether notifications can be shown on the lock screen.|
-|alertType|String|Indicates the type of alert for notifications for this app. Possible values are: `deviceDefault`, `banner`, `modal`, `none`.|
+|alertType|[iosNotificationAlertType](../resources/intune_deviceconfig_iosnotificationalerttype.md)|Indicates the type of alert for notifications for this app. Possible values are: `deviceDefault`, `banner`, `modal`, `none`.|
 |badgesEnabled|Boolean|Indicates whether badges are allowed for this app.|
 |soundsEnabled|Boolean|Indicates whether sounds are allowed for this app.|
 

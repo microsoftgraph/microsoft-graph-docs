@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/deviceConfigurations
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
@@ -47,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3664
+Content-Length: 3706
 
 {
   "value": [
@@ -64,14 +65,16 @@ Content-Length: 3664
         {
           "@odata.type": "microsoft.graph.vpnServer",
           "description": "Description value",
-          "ipAddressOrFqdn": "Ip Address Or Fqdn value",
           "address": "Address value",
           "isDefaultServer": true
         }
       ],
       "customXml": "Y3VzdG9tWG1s",
+      "profileTarget": "device",
       "connectionType": "f5EdgeClient",
       "enableSplitTunneling": true,
+      "enableAlwaysOn": true,
+      "enableDeviceTunnel": true,
       "authenticationMethod": "usernameAndPassword",
       "rememberUserCredentials": true,
       "enableConditionalAccess": true,

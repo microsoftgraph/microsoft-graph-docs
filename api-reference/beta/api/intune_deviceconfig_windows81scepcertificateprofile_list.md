@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/deviceConfigurations
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
@@ -47,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1257
+Content-Length: 1290
 
 {
   "value": [
@@ -62,7 +63,7 @@ Content-Length: 1257
       "renewalThresholdPercentage": 10,
       "keyStorageProvider": "useTpmKspOtherwiseFail",
       "subjectNameFormat": "commonNameIncludingEmail",
-      "subjectAlternativeNameType": "userPrincipalName",
+      "subjectAlternativeNameType": "emailAddress",
       "certificateValidityPeriodValue": 14,
       "certificateValidityPeriodScale": "months",
       "extendedKeyUsages": [
@@ -79,7 +80,8 @@ Content-Length: 1257
       "keyUsage": "digitalSignature",
       "keySize": "size2048",
       "hashAlgorithm": "sha2",
-      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+      "certificateStore": "machine"
     }
   ]
 }

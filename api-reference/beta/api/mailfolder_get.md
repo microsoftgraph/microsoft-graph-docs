@@ -38,7 +38,6 @@ This capability is available in only GET operations of:
 
 This capability is not available in other operations for contacts, events, messages, and their folders.
 
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -54,8 +53,10 @@ One of the following permissions is required to call this API. To learn more, in
 GET /me/mailFolders/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}
 ```
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -65,20 +66,22 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this method returns a `200 OK` response code and [mailFolder](../resources/mailfolder.md) object in the response body.
-## Example
-##### Request
-Here is an example of the request.
+
+## Example 1
+#### Request 1
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_mailfolder"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/mailFolders/{id}
+GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 ```
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+#### Response 1
+The following is an example of the response.
+ >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,12 +93,48 @@ Content-type: application/json
 Content-length: 179
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value",
-  "childFolderCount": 99,
-  "unreadItemCount": 99,
-  "totalItemCount": 99,
-  "id": "id-value"
+    "id": "AAMkAGVmMDEzM",
+    "displayName": "Inbox",
+    "parentFolderId": "AAMkAGVmMDEzI",
+    "childFolderCount": 2,
+    "unreadItemCount": 59,
+    "totalItemCount": 60,
+    "wellKnownName": "inbox"
+}
+```
+
+## Example 2
+#### Request 2
+The following is a search folder example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_mailSearchfolder"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
+```
+
+#### Response 2
+The following is an example of the response.
+ >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailSearchFolder"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 179
+
+{
+    "id": "AAMkAGVmMDEzM",
+    "displayName": "Inbox",
+    "parentFolderId": "AAMkAGVmMDEzI",
+    "childFolderCount": 2,
+    "unreadItemCount": 59,
+    "totalItemCount": 60,
+    "wellKnownName": "inbox"
 }
 ```
 

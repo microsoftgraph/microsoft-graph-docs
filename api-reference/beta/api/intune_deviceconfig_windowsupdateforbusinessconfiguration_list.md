@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/deviceConfigurations
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
@@ -47,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1304
+Content-Length: 1327
 
 {
   "value": [
@@ -67,8 +68,7 @@ Content-Length: 1304
       "installationSchedule": {
         "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall",
         "scheduledInstallDay": "everyday",
-        "scheduledInstallTime": "11:59:31.3170000",
-        "restartMode": "batteryLevelCheckEnabled"
+        "scheduledInstallTime": "11:59:31.3170000"
       },
       "qualityUpdatesDeferralPeriodInDays": 2,
       "featureUpdatesDeferralPeriodInDays": 2,
@@ -77,7 +77,9 @@ Content-Length: 1304
       "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
       "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
       "businessReadyUpdatesOnly": "all",
-      "previewBuildSetting": "allowed"
+      "previewBuildSetting": "allowed",
+      "skipChecksBeforeRestart": true,
+      "updateWeeks": "firstWeek"
     }
   ]
 }

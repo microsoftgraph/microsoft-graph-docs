@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 592
+Content-Length: 659
 
 {
   "value": {
@@ -59,6 +59,7 @@ Content-Length: 592
     "deploymentProfileAssignmentStatus": "assignedInSync",
     "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
     "orderIdentifier": "Order Identifier value",
+    "purchaseOrderIdentifier": "Purchase Order Identifier value",
     "serialNumber": "Serial Number value",
     "productKey": "Product Key value",
     "manufacturer": "Manufacturer value",

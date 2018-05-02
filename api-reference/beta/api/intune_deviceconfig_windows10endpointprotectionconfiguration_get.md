@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Optional query parameters
@@ -50,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8266
+Content-Length: 11163
 
 {
   "value": {
@@ -62,12 +63,49 @@ Content-Length: 8266
     "displayName": "Display Name value",
     "version": 7,
     "localSecurityOptionsBlockMicrosoftAccounts": true,
+    "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
     "localSecurityOptionsEnableAdministratorAccount": true,
+    "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
+    "localSecurityOptionsEnableGuestAccount": true,
+    "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
+    "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
+    "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
+    "localSecurityOptionsBlockRemoteOpticalDriveAccess": true,
+    "localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser": "administrators",
+    "localSecurityOptionsMachineInactivityLimit": 10,
+    "localSecurityOptionsMachineInactivityLimitInMinutes": 3,
+    "localSecurityOptionsDoNotRequireCtrlAltDel": true,
+    "localSecurityOptionsHideLastSignedInUser": true,
+    "localSecurityOptionsHideUsernameAtSignIn": true,
+    "localSecurityOptionsLogOnMessageTitle": "Local Security Options Log On Message Title value",
+    "localSecurityOptionsLogOnMessageText": "Local Security Options Log On Message Text value",
+    "localSecurityOptionsAllowPKU2UAuthenticationRequests": true,
+    "localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool": true,
+    "localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager": "Local Security Options Allow Remote Calls To Security Accounts Manager value",
+    "localSecurityOptionsClearVirtualMemoryPageFile": true,
+    "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
+    "localSecurityOptionsAllowUIAccessApplicationElevation": true,
+    "localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations": true,
+    "localSecurityOptionsOnlyElevateSignedExecutables": true,
+    "localSecurityOptionsAdministratorElevationPromptBehavior": "elevateWithoutPrompting",
+    "localSecurityOptionsStandardUserElevationPromptBehavior": "automaticallyDenyElevationRequests",
+    "localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation": true,
+    "localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation": true,
+    "localSecurityOptionsAllowUIAccessApplicationsForSecureLocations": true,
+    "localSecurityOptionsUseAdminApprovalMode": true,
+    "localSecurityOptionsUseAdminApprovalModeForAdministrators": true,
+    "localSecurityOptionsInformationShownOnLockScreen": "userDisplayNameDomainUser",
+    "localSecurityOptionsInformationDisplayedOnLockScreen": "administrators",
     "defenderSecurityCenterDisableAppBrowserUI": true,
     "defenderSecurityCenterDisableFamilyUI": true,
     "defenderSecurityCenterDisableHealthUI": true,
     "defenderSecurityCenterDisableNetworkUI": true,
     "defenderSecurityCenterDisableVirusUI": true,
+    "defenderSecurityCenterDisableAccountUI": true,
+    "defenderSecurityCenterDisableHardwareUI": true,
+    "defenderSecurityCenterDisableRansomwareUI": true,
+    "defenderSecurityCenterDisableSecureBootUI": true,
+    "defenderSecurityCenterDisableTroubleshootingUI": true,
     "defenderSecurityCenterOrganizationDisplayName": "Defender Security Center Organization Display Name value",
     "defenderSecurityCenterHelpEmail": "Defender Security Center Help Email value",
     "defenderSecurityCenterHelpPhone": "Defender Security Center Help Phone value",
@@ -143,7 +181,6 @@ Content-Length: 8266
     "defenderUntrustedUSBProcessType": "block",
     "defenderUntrustedExecutableType": "block",
     "defenderEmailContentExecutionType": "block",
-    "defenderPasswordProtectedEmailContentExecutionType": "block",
     "defenderAdvancedRansomewareProtectionType": "enable",
     "defenderGuardMyFoldersType": "enable",
     "defenderGuardedFoldersAllowedAppPaths": [
@@ -157,6 +194,9 @@ Content-Length: 8266
     "defenderExploitProtectionXmlFileName": "Defender Exploit Protection Xml File Name value",
     "defenderSecurityCenterBlockExploitProtectionOverride": true,
     "appLockerApplicationControl": "enforceComponentsAndStoreApps",
+    "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
+    "deviceGuardEnableVirtualizationBasedSecurity": true,
+    "deviceGuardEnableSecureBootWithDMA": true,
     "smartScreenEnableInShell": true,
     "smartScreenBlockOverrideForFiles": true,
     "applicationGuardEnabled": true,

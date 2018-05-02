@@ -56,10 +56,10 @@ Content-Length: 502
     "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
     "partnerState": "available",
     "androidEnabled": true,
+    "iosEnabled": true,
     "androidDeviceBlockedOnMissingPartnerData": true,
     "iosDeviceBlockedOnMissingPartnerData": true,
     "partnerUnsupportedOsVersionBlocked": true,
-    "iosEnabled": true,
     "partnerUnresponsivenessThresholdInDays": 6
   }
 }

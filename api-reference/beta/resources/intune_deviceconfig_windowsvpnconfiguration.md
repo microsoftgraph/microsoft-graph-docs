@@ -60,7 +60,6 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.vpnServer",
       "description": "String",
-      "ipAddressOrFqdn": "String",
       "address": "String",
       "isDefaultServer": true
     }

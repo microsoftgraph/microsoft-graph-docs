@@ -44,7 +44,7 @@ The following table shows the properties that are required when you create the [
 |passwordBlockSimple|Boolean|Whether or not to block syncing the calendar.|
 |passwordMinimumLength|Int32|Minimum password length. Valid values 4 to 16|
 |passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
-|passwordRequiredType|String|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent re-use of.|
 |passwordExpirationDays|Int32|Number of days before password expiration. Valid values 1 to 255|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|

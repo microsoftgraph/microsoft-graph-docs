@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2191
+Content-Length: 2641
 
 {
   "value": {
@@ -88,6 +88,10 @@ Content-Length: 2191
     "minimumWarningOsVersion": "Minimum Warning Os Version value",
     "minimumRequiredAppVersion": "Minimum Required App Version value",
     "minimumWarningAppVersion": "Minimum Warning App Version value",
+    "minimumWipeOsVersion": "Minimum Wipe Os Version value",
+    "minimumWipeAppVersion": "Minimum Wipe App Version value",
+    "appActionIfDeviceComplianceRequired": "wipe",
+    "appActionIfMaximumPinRetriesExceeded": "wipe",
     "isAssigned": true,
     "targetedAppManagementLevels": "unmanaged",
     "screenCaptureBlocked": true,
@@ -102,7 +106,10 @@ Content-Length: 2191
         "name": "Name value",
         "value": "Value value"
       }
-    ]
+    ],
+    "minimumWipePatchVersion": "Minimum Wipe Patch Version value",
+    "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
+    "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe"
   }
 }
 ```

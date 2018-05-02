@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Optional query parameters
@@ -50,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 680
+Content-Length: 718
 
 {
   "value": {
@@ -64,9 +65,10 @@ Content-Length: 680
     "renewalThresholdPercentage": 10,
     "keyStorageProvider": "useTpmKspOtherwiseFail",
     "subjectNameFormat": "commonNameIncludingEmail",
-    "subjectAlternativeNameType": "userPrincipalName",
+    "subjectAlternativeNameType": "emailAddress",
     "certificateValidityPeriodValue": 14,
-    "certificateValidityPeriodScale": "months"
+    "certificateValidityPeriodScale": "months",
+    "intendedPurpose": "smimeEncryption"
   }
 }
 ```

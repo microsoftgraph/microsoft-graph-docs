@@ -15,11 +15,11 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http 
-GET /directory/deleteditems/Microsoft.Graph.Group
-GET /directory/deletedItems/Microsoft.Graph.User
+GET /directory/deleteditems/microsoft.graph.group
+GET /directory/deletedItems/microsoft.graph.user
 ```
 
-This API currently supports retrieving object types of groups (Microsoft.Graph.Group) or users (Microsoft.Graph.User) from deleted items. The type is specified as a required part of the URI. Calling GET /directory/deleteditems without a type is not supported.
+This API currently supports retrieving object types of groups (microsoft.graph.group) or users (microsoft.graph.user) from deleted items. The type is specified as a required part of the URI. Calling GET /directory/deleteditems without a type is not supported.
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -44,7 +44,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "get_deleteditems"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/directory/deleteditems/Microsoft.Graph.Group
+GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.group
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/deviceConfigurations
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
@@ -47,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 827
+Content-Length: 664
 
 {
   "value": [
@@ -64,12 +65,7 @@ Content-Length: 827
       "configurationAccountType": "domainAccount",
       "allowPrinting": true,
       "allowScreenCapture": true,
-      "allowTextSuggestion": true,
-      "printerNames": [
-        "Printer Names value"
-      ],
-      "defaultPrinterName": "Default Printer Name value",
-      "blockAddingNewPrinter": true
+      "allowTextSuggestion": true
     }
   ]
 }
