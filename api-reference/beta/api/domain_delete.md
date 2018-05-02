@@ -49,7 +49,7 @@ If successful, this method returns `204 No Content` response code. It does not r
   "name": "delete_domain"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/domains/{domain-name}
+DELETE https://graph.microsoft.com/beta/domains/contoso.com
 ```
 
 ##### Response

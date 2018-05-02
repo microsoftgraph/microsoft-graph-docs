@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/<name>/series/<undefined>
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
 ```
 ## Optional request headers
 | Name       | Description|
@@ -41,7 +41,7 @@ Here is an example of the request.
   "name": "update_chartseries"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/series/<undefined>
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
 Content-type: application/json
 Content-length: 26
 

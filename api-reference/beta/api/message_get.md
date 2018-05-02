@@ -99,7 +99,7 @@ The first example gets the specified message. It does not specify any header to 
   "name": "get_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
+GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')
 ```
 ##### Response 1
 Here is an example of the response. The **body** and **uniqueBody** properties are returned in the default HTML format.
@@ -154,7 +154,7 @@ Content-length: 2248
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages/$entity",
-  "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages/AQMkADJmMTUAAAgVZAAAA",
+  "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages('AQMkADJmMTUAAAgVZAAAA')",
   "@odata.etag":"W/\"CQAAABYAAAAPFhK2FclcRbABBJhCde8iAAAAAATI\"",
   "id":"AQMkADJmMTUAAAgVZAAAA",
   "subject":"Start planning soon",
@@ -196,10 +196,10 @@ Content-length: 2248
   "mentionsPreview":{
     "isMentioned":true
   },
-  "mentions@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages/AQMkADJmMTUAAAgVZAAAA/mentions",
+  "mentions@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages('AQMkADJmMTUAAAgVZAAAA')/mentions",
   "mentions":[
     {
-      "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages/AQMkADJmMTUAAAgVZAAAA/mentions('138f4c0a-1130-4776-b780-bf79d73abb3f')",
+      "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages('AQMkADJmMTUAAAgVZAAAA')/mentions('138f4c0a-1130-4776-b780-bf79d73abb3f')",
       "id":"138f4c0a-1130-4776-b780-bf79d73abb3f",
       "mentioned":{
         "name":"Dana Swope",
@@ -217,7 +217,7 @@ Content-length: 2248
       "application":null
     },
     {
-      "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages/AQMkADJmMTUAAAgVZAAAA/mentions('7b94df1a-0086-482a-b0da-e62fae12f983')",
+      "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages('AQMkADJmMTUAAAgVZAAAA')/mentions('7b94df1a-0086-482a-b0da-e62fae12f983')",
       "id":"7b94df1a-0086-482a-b0da-e62fae12f983",
       "mentioned":{
         "name":"Randi Welch",
@@ -249,7 +249,7 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=?$select=subject,body,bodyPreview,uniqueBody
+GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
 
@@ -295,7 +295,7 @@ The fourth example shows how to get the Internet message headers of a specific m
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz?$select=internetMessageHeaders
+GET https://graph.microsoft.com/beta/me/messages('AAMkAGVmMDEz')?$select=internetMessageHeaders
 ```
 
 ##### Response 4

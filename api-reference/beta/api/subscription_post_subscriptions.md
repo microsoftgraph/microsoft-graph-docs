@@ -51,7 +51,7 @@ Content-type: application/json
 {
    "changeType": "created,updated",
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
-   "resource": "me/mailFolders/Inbox/messages",
+   "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
    "clientState": "subscription-identifier"
 }
@@ -64,7 +64,7 @@ The following are valid values for the resource property of the subscription:
 
 | Resource type | Examples |
 |:------ |:----- |
-|Mail|me/mailFolders/inbox/messages<br />me/messages|
+|Mail|me/mailfolders('inbox')/messages<br />me/messages|
 |Contacts|me/contacts|
 |Calendars|me/events|
 |Users|users|
@@ -87,7 +87,7 @@ Content-length: 252
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity",
   "id": "7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
-  "resource": "me/mailFolders/Inbox/messages",
+  "resource": "me/mailFolders('Inbox')/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
   "changeType": "created,updated",
   "clientState": "subscription-identifier",

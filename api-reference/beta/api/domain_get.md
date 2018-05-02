@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and [domain](../reso
   "name": "get_domain"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/{domain-name}
+GET https://graph.microsoft.com/beta/domains/contoso.com
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
