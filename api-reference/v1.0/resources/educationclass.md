@@ -49,6 +49,7 @@ Represents a class within a school. The **educationClass** resource corresponds 
 |members|[educationUser](../resources/educationuser.md) collection| All users in the class. Nullable.|
 |schools|[educationSchool](../resources/educationschool.md) collection| All schools that this class is associated with. Nullable.|
 |teachers|[educationUser](../resources/educationuser.md) collection|  All teachers in the class. Nullable.|
+|group|[group](../resources/group.md)| The directory group corresponding to this class.|
 
 ## JSON representation
 

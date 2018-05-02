@@ -25,34 +25,34 @@ color is dependent on the Outlook client that the categories are being displayed
 
 ### categoryColor values
 
-|Value	| Color mapped to in Outlook |
-|:---------------|:--------|
-| none | No color mapped |
-| preset0 | Red |
-| preset1 | Orange |
-| preset2 | Brown |
-| preset3 | Yellow |
-| preset4 | Green |
-| preset5 | Teal |
-| preset6 | Olive |
-| preset7 | Blue |
-| preset8 | Purple |
-| preset9 | Cranberry |
-| preset10 | Steel |
-| preset11 | DarkSteel |
-| preset12 | Gray |
-| preset13 | DarkGray |
-| preset14 | Black |
-| preset15 | DarkRed |
-| preset16 | DarkOrange |
-| preset17 | DarkBrown |
-| preset18 | DarkYellow |
-| preset19 | DarkGreen |
-| preset20 | DarkTeal |
-| preset21 | DarkOlive |
-| preset22 | DarkBlue |
-| preset23 | DarkPurple |
-| preset24 | DarkCranberry |
+| Member   |Value    | Description
+|:---------|:--------|:-------------------
+| none     | -1      | No color mapped
+| preset0  | 0       | Red
+| preset1  | 1       | Orange
+| preset2  | 2       | Brown
+| preset3  | 3       | Yellow
+| preset4  | 4       | Green
+| preset5  | 5       | Teal
+| preset6  | 6       | Olive
+| preset7  | 7       | Blue
+| preset8  | 8       | Purple
+| preset9  | 9       | Cranberry
+| preset10 | 10      | Steel
+| preset11 | 11      | DarkSteel
+| preset12 | 12      | Gray
+| preset13 | 13      | DarkGray
+| preset14 | 14      | Black
+| preset15 | 15      | DarkRed
+| preset16 | 16      | DarkOrange
+| preset17 | 17      | DarkBrown
+| preset18 | 18      | DarkYellow
+| preset19 | 19      | DarkGreen
+| preset20 | 20      | DarkTeal
+| preset21 | 21      | DarkOlive
+| preset22 | 22      | DarkBlue
+| preset23 | 23      | DarkPurple
+| preset24 | 24      | DarkCranberry
 
 ## JSON representation
 Here is a JSON representation of the resource.

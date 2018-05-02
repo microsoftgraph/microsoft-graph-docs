@@ -127,6 +127,7 @@ This resource supports:
 |outlook|[OutlookUser](outlookuser.md)| Read-only.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
+|people|[person](person.md) collection| People that are relevant to the user. Read-only. Nullable.
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
 |planner|[plannerUser](planneruser.md)| Entry-point to the Planner resource that might exist for a user. Read-only.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|

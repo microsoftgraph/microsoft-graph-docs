@@ -80,13 +80,39 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(period=
 
 The following is an example of the response.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
 
 ```http
 HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+
+#### Request
+
+If the `date` parameter is specified, the report is scoped to activities that took place on the given date.
+
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getyammeractivityuserdetail_date"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(date='2018-03-05')
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
+
+```http
+HTTP/1.1 302 Found
+Content-Type: text/plain
+Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+```
+
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 

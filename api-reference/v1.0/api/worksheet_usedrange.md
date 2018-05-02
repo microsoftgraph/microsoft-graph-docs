@@ -36,11 +36,42 @@ If successful, this method returns `200 OK` response code and [Range](../resourc
 
 ## Example
 Here is an example that shows how to call this API.
+
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "worksheet_usedrange"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange
+```
+
+##### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRange"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 169
+
+{
+  "address": "address-value",
+  "addressLocal": "addressLocal-value"
+}
+```
+
+Alternatively, this function can be called with the optional `valuesOnly` parameter.
+
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "worksheet_usedrange_valuesonly"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange(valuesOnly=true)

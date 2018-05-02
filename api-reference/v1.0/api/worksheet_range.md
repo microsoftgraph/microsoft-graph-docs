@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/range
+GET /workbook/worksheets/{id|name}/range
 
 ```
 ## Request headers
@@ -65,6 +65,41 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+
+If the optional `address` parameter is not specified, this function returns the entire worksheet range.
+
+##### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "worksheet_range_noaddress"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range
+```
+
+##### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRange"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 169
+
+{
+  "address": "address-value",
+  "addressLocal": "addressLocal-value",
+  "cellCount": 99,
+  "columnCount": 99,
+  "columnIndex": 99,
+  "valueTypes": "valueTypes-value"
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

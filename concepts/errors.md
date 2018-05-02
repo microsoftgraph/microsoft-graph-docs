@@ -70,7 +70,7 @@ specification for error responses.
 
 The error resource is composed of these resources:
 
-<!-- { "blockType": "resource", "@odata.type": "sample.error" } -->
+<!-- { "blockType": "resource", "@odata.type": "odata.error" } -->
 ```json
 {
   "error": { "@odata.type": "odata.error" }  

@@ -31,7 +31,7 @@ Here is a JSON representation of a **numberColumn** resource.
 | **maximum**        | double | The maximum permitted value.
 | **minimum**        | double | The minimum permitted value.
 
-## DecimalPlaces values
+## DecimalPlaces
 
 | Value          | Description
 |:---------------|:--------------------------------------------------------------

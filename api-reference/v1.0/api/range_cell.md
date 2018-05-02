@@ -24,8 +24,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/cell
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-## Request body
-In the request body, provide a JSON object with the following parameters.
+## Path parameters
+In the path, provide the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -45,14 +45,7 @@ Here is an example of the request.
   "name": "range_cell"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/<name>/range/cell
-Content-type: application/json
-Content-length: 37
-
-{
-  "row": 5,
-  "column": 6
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/<name>/range/cell(row=5,column=6)
 ```
 
 ##### Response
