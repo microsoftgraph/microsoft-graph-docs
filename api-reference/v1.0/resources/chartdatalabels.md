@@ -21,7 +21,6 @@ Represents a collection of all the data labels on a chart point.
 |showPercentage|boolean|Boolean value representing if the data label percentage is visible or not.|
 |showSeriesName|boolean|Boolean value representing if the data label series name is visible or not.|
 |showValue|boolean|Boolean value representing if the data label value is visible or not.|
-| id       |string   | Unique identifier. Read-only.
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -34,7 +33,6 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -43,7 +41,6 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string",
   "position": "string",
   "separator": "string",
   "showBubbleSize": true,

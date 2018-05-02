@@ -158,7 +158,6 @@ The following is a JSON representation of the resource.
 {
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
-  "classification": "string",
   "createdDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",

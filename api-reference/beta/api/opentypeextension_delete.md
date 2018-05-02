@@ -65,14 +65,14 @@ The first example references an extension by its name and deletes the extension 
   "name": "delete_opentypeextension"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/messages/{message-id}/extensions/{extension-name}
+DELETE https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
 ```
 
 The second example deletes an extension in the specified group event.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVlN17IsAAA=')/extensions/{extension-name}
+DELETE https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVlN17IsAAA=')/extensions('Com.Contoso.Referral')
 ```
 
  

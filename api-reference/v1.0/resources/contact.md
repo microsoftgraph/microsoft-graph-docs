@@ -86,7 +86,6 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.outlookItem",
   "optionalProperties": [
     "extensions",
     "multiValueExtendedProperties",

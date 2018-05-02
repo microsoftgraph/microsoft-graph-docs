@@ -7,7 +7,6 @@ An abstract type to support the OData v4 open type [openTypeExtension](openTypeE
 Here is a JSON representation of the resource
 
 <!-- {
-  "abstract": "true",
   "blockType": "resource",
   "optionalProperties": [
 

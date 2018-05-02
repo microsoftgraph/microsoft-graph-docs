@@ -18,25 +18,6 @@ None
 |:---------------|:--------|:----------|
 |criteria|[FilterCriteria](filtercriteria.md)|The currently applied filter on the given column. Read-only.|
 
-## JSON representation
-
-Here is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.filter"
-}-->
-
-```json
-{
-  "id": "string"
-}
-```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

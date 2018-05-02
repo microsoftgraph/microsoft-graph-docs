@@ -99,7 +99,6 @@ Here is a JSON representation of the resource
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
-  "baseType": "microsoft.graph.outlookItem",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.event"
 }-->

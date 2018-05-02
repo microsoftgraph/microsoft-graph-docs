@@ -47,7 +47,7 @@ If successful, this method returns a `204 No Content` response code and no respo
   "name": "update_domain"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/domains/{domain-name}
+PATCH https://graph.microsoft.com/v1.0/domains/contoso.com
 Content-type: application/json
 
 {

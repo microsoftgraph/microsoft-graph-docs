@@ -20,7 +20,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 <!-- { "blockType": "resource", 
        "@odata.type": "microsoft.graph.drive",
        "keyProperty": "id", 
-       "optionalProperties": [ "activities", "createdBy", "createdDateTime", "description", "lastModifiedBy", "lastModifiedDateTime", "name", "webUrl", "items", "root", "sharepointIds", "special", "system"] } -->
+       "optionalProperties": [ "activities", "createdBy", "createdDateTime", "description", "lastModifiedBy", "lastModifiedDateTime", "name", "webUrl", "items", "root", "special", "system"] } -->
 
 ```json
 {
@@ -36,7 +36,6 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
   "owner": { "@odata.type": "microsoft.graph.identitySet" },
   "quota": { "@odata.type": "microsoft.graph.quota" },
   "root": { "@odata.type": "microsoft.graph.driveItem" },
-  "sharepointIds": [ { "@odata.type": "microsoft.graph.sharepointIds" }],
   "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "system": { "@odata.type": "microsoft.graph.systemFacet" },
   "webUrl": "url"

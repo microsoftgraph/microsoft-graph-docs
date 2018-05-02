@@ -15,8 +15,6 @@ Enapsulates the formatting options for line elements.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |color|string|HTML color code representing the color of lines in the chart.|
-| id       |string   | Unique identifier. Read-only.|
-
 
 ## Relationships
 None
@@ -28,7 +26,6 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -37,7 +34,6 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string",
   "color": "string"
 }
 

@@ -15,9 +15,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/<name>/axes/seriesAxis/format/line
-PATCH /workbook/worksheets/{id|name}/charts/<name>/axes/categoryaxis/format/line
-PATCH /workbook/worksheets/{id|name}/charts/<name>/axes/seriesAxis/majorgridlines/format/line
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/line
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines/format/line
 ```
 ## Optional request headers
 | Name       | Description|
@@ -43,7 +43,7 @@ Here is an example of the request.
   "name": "update_chartlineformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/axes/seriesAxis/format/line
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line
 Content-type: application/json
 Content-length: 28
 

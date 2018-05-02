@@ -60,7 +60,6 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
-  "baseType": "microsoft.graph.deviceCompliancePolicy",
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidCompliancePolicy"

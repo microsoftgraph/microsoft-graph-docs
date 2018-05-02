@@ -43,7 +43,7 @@ Here is an example of the request.
   "name": "workbookrange_columnsbefore"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
 ```
 
 ##### Response

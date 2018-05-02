@@ -40,9 +40,7 @@ Here is a JSON representation of a ColumnDefinition resource.
 
 ## Properties
 
-Columns can hold data of various types.
-The following properties indicate what type of data a column stores, as well as additional settings for that data.
-The type-related properties (boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text) are mutually exclusive -- a column can only have one of them specified.
+The **columnDefinition** resource has the following properties.
 
 | Property name           | Type    | Description
 |:------------------------|:--------|:-----------------------------------------
@@ -56,6 +54,13 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 | **name**                | string  | The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see **displayName**.
 | **readOnly**            | bool    | Specifies whether the column values can be modified.
 | **required**            | boolean | Specifies whether the column value is not optional.
+
+Columns can hold data of various types.
+The following properties indicate what type of data a column stores, as well as additional settings for that data.
+These properties are mutually exclusive -- a column can only have one of them specified.
+
+| Property name     | Type                    | Description
+|:------------------|:------------------------|:-------------------------------
 | **boolean**       | [booleanColumn][]       | This column stores boolean values.
 | **calculated**    | [calculatedColumn][]    | This column's data is calculated based on other columns.
 | **choice**        | [choiceColumn][]        | This column stores data from a list of choices.

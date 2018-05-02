@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/<name>/range
+POST /workbook/names(<name>)/Range
 
 ```
 ## Request headers
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "nameditem_range"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/<name>/range
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/Range
 ```
 
 ##### Response

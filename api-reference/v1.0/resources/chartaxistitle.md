@@ -13,7 +13,6 @@ Represents the title of a chart axis.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| id       |string   | Unique identifier. Read-only.
 |text|string|Represents the axis title.|
 |visible|boolean|A boolean that specifies the visibility of an axis title.|
 
@@ -28,7 +27,6 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -37,10 +35,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string",
   "text": "string",
-  "visible": true,
-  "format": {"@odata.type":"microsoft.graph.chartAxisTitleFormat"}
+  "visible": true
 }
 
 ```

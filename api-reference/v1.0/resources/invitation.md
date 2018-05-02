@@ -43,7 +43,6 @@ Here is a JSON representation of the resource
   "invitedUserDisplayName": "string",
   "invitedUserEmailAddress": "string",
   "invitedUserMessageInfo": {"@odata.type": "microsoft.graph.invitedUserMessageInfo"},
-  "invitedUserType": "string",
   "sendInvitationMessage": false,
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
