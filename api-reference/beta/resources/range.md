@@ -59,9 +59,9 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookRangeFormat](rangeformat.md)|Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only.|
-|sort|[WorkbookRangeSort](rangesort.md)|The worksheet containing the current range. Read-only.|
-|worksheet|[WorkbookWorksheet](worksheet.md)|The worksheet containing the current range. Read-only.|
+|format|[RangeFormat](rangeformat.md)|Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only.|
+|sort|[RangeSort](rangesort.md)|The worksheet containing the current range. Read-only.|
+|worksheet|[Worksheet](worksheet.md)|The worksheet containing the current range. Read-only.|
 
 ## JSON representation
 
@@ -72,7 +72,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookRange"
+  "@odata.type": "microsoft.graph.range"
 }-->
 
 ```json

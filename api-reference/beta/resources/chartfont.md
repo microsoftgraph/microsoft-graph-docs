@@ -9,8 +9,8 @@ This object represents the font attributes (font name, font size, color, etc.) f
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartFont](../api/chartfont_get.md) | [WorkbookChartFont](chartfont.md) |Read properties and relationships of chartFont object.|
-|[Update](../api/chartfont_update.md) | [WorkbookChartFont](chartfont.md)	|Update ChartFont object. |
+|[Get ChartFont](../api/chartfont_get.md) | [ChartFont](chartfont.md) |Read properties and relationships of chartFont object.|
+|[Update](../api/chartfont_update.md) | [ChartFont](chartfont.md)	|Update ChartFont object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -35,7 +35,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookChartFont"
+  "@odata.type": "microsoft.graph.chartFont"
 }-->
 
 ```json

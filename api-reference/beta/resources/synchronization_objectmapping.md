@@ -38,7 +38,7 @@ The following is a JSON representation of the resource.
   "flowTypes": "String",
   "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
   "name": "String",
-  "scope": {"@odata.type": "microsoft.graph.workbookFilter"},
+  "scope": {"@odata.type": "microsoft.graph.filter"},
   "sourceObjectName": "String",
   "targetObjectName": "String"
 }

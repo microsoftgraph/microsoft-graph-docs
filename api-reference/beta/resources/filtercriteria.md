@@ -13,7 +13,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookFilterCriteria"
+  "@odata.type": "microsoft.graph.filterCriteria"
 }-->
 
 ```json

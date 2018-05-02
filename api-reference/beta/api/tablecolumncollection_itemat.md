@@ -15,8 +15,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/itemAt
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/itemAt
+POST /workbook/tables/{id|name}/columns/ItemAt
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
 
 ```
 ## Request headers
@@ -34,7 +34,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [WorkbookTableColumn](../resources/tablecolumn.md) object in the response body.
+If successful, this method returns `200 OK` response code and [TableColumn](../resources/tablecolumn.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -42,11 +42,10 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "idempotent": true,
   "name": "tablecolumncollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/itemAt
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/ItemAt
 Content-type: application/json
 Content-length: 20
 
@@ -61,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookTableColumn"
+  "@odata.type": "microsoft.graph.tableColumn"
 } -->
 ```http
 HTTP/1.1 200 OK

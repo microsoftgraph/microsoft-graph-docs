@@ -33,7 +33,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [WorkbookRangeFont](../resources/rangefont.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [RangeFont](../resources/rangefont.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRangeFont"
+  "@odata.type": "microsoft.graph.rangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
