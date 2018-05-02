@@ -8,7 +8,7 @@ Contains properties for the package information for a Windows line of business a
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|applicableArchitecture|String|The Windows architecture for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|applicableArchitecture|[windowsArchitecture](../resources/intune_apps_windowsarchitecture.md)|The Windows architecture for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
 |displayName|String|The Display Name.|
 |identityName|String|The Identity Name.|
 |identityPublisher|String|The Identity Publisher.|

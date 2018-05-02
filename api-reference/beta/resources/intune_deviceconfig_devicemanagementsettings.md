@@ -12,6 +12,7 @@ Not yet documented
 |isScheduledActionEnabled|Boolean|Is feature enabled or not for scheduled action for rule.|
 |secureByDefault|Boolean|Device should be noncompliant when there is no compliance policy targeted when this is true|
 |enhancedJailBreak|Boolean|Is feature enabled or not for enhanced jailbreak detection.|
+|deviceInactivityBeforeRetirementInDay|Int32|When the device does not check in for specified number of days, the company data might be removed and the device will not be under management. Valid values 30 to 270|
 
 ## Relationships
 None
@@ -30,6 +31,7 @@ Here is a JSON representation of the resource.
   "isScheduledActionEnabled": true,
   "secureByDefault": true,
   "enhancedJailBreak": true,
+  "deviceInactivityBeforeRetirementInDay": 1024
 }
 ```
 

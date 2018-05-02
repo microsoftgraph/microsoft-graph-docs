@@ -19,7 +19,7 @@ Contains properties for the installation state for a device.
 |deviceName|String|Device name.|
 |deviceId|String|Device Id.|
 |lastSyncDateTime|DateTimeOffset|Last sync date and time.|
-|installState|String|The install state of the eBook. Possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
+|installState|[installState](../resources/intune_books_installstate.md)|The install state of the eBook. Possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
 |errorCode|String|The error code for install failures.|
 |osVersion|String|OS Version.|
 |osDescription|String|OS Description.|

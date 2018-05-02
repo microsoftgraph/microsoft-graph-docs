@@ -11,9 +11,6 @@ Inherits from [managedAppStatus](../resources/intune_mam_managedappstatus.md)
 |:---|:---|:---|
 |[List managedAppStatusRaws](../api/intune_mam_managedappstatusraw_list.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) collection|List properties and relationships of the [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) objects.|
 |[Get managedAppStatusRaw](../api/intune_mam_managedappstatusraw_get.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Read properties and relationships of the [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) object.|
-|[Create managedAppStatusRaw](../api/intune_mam_managedappstatusraw_create.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Create a new [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) object.|
-|[Delete managedAppStatusRaw](../api/intune_mam_managedappstatusraw_delete.md)|None|Deletes a [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
-|[Update managedAppStatusRaw](../api/intune_mam_managedappstatusraw_update.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Update the properties of a [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) object.|
 
 ## Properties
 |Property|Type|Description|

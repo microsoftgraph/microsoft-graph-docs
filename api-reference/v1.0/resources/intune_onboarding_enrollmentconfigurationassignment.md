@@ -16,7 +16,7 @@ Not yet documented
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Not yet documented|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_onboarding_deviceandappmanagementassignmenttarget.md)|Not yet documented|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Not yet documented|
 
 ## Relationships
 None

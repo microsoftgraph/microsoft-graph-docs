@@ -19,13 +19,13 @@ Enterprise settings for an Android managed store account.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The Android store account enterprise settings identifier|
-|bindStatus|String|Bind status of the tenant with the Google EMM API Possible values are: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
+|bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune_androidforwork_androidmanagedstoreaccountbindstatus.md)|Bind status of the tenant with the Google EMM API. Possible values are: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Last completion time for app sync|
-|lastAppSyncStatus|String|Last application sync result Possible values are: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
+|lastAppSyncStatus|[androidManagedStoreAccountAppSyncStatus](../resources/intune_androidforwork_androidmanagedstoreaccountappsyncstatus.md)|Last application sync result. Possible values are: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
 |ownerUserPrincipalName|String|Owner UPN that created the enterprise|
 |ownerOrganizationName|String|Organization name used when onboarding Android Enterprise|
 |lastModifiedDateTime|DateTimeOffset|Last modification time for Android enterprise settings|
-|enrollmentTarget|String|Indicates which users can enroll devices in Android Enterprise device management Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
+|enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune_androidforwork_androidmanagedstoreaccountenrollmenttarget.md)|Indicates which users can enroll devices in Android Enterprise device management. Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'|
 |deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
 

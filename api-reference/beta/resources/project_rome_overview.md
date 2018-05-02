@@ -6,22 +6,6 @@
 
 Two key components are exposed via Microsoft Graph to enable these experiences: devices and activities. 
 
-## Devices
-
-You can use Project Rome APIs in Microsoft Graph to:
-
-- Discover and connect to user's devices
-- Remotely launch apps on those devices
-- Send messages to your apps on those devices
-
-With these APIs, you can build apps that create rich experiences that transcend a single device. For example, you can extend your app to launch on a bigger screen. Or you can create a companion experience for an app on another of the user's devices.
-
-You can use the following Microsoft Graph APIs to communicate with other Windows devices:
-
-- [List the user's devices](../api/user_list_devices.md)
-- [Send a command to a device](../api/send_device_command.md)
-- [Get command status](../api/get_device_command_status.md)
-
 ## Activities
 
 Activities in Microsoft Graph enable you to drive user engagement with your apps across devices and platforms. An activity is the unit of user engagement, and consists of three components:
@@ -43,3 +27,18 @@ You can use the following Microsoft Graph APIs to create and retrieve user activ
 - [Create or replace a history item](../api/projectrome_put_historyitem.md)
 - [Delete a history item](../api/projectrome_delete_historyitem.md)
 
+## Devices
+
+You can use Project Rome APIs in Microsoft Graph to:
+
+- Discover and connect to user's devices
+- Remotely launch apps on those devices
+- Send messages to your apps on those devices
+
+With these APIs, you can build apps that create rich experiences that transcend a single device. For example, you can extend your app to launch on a bigger screen. Or you can create a companion experience for an app on another of the user's devices.
+
+You can use the following Microsoft Graph APIs to communicate with other Windows devices:
+
+- [List the user's devices](../api/user_list_devices.md)
+- [Send a command to a device](../api/send_device_command.md)
+- [Get command status](../api/get_device_command_status.md)

@@ -9,7 +9,7 @@ A complex type for representing the **attribution** property in the [visualInfo]
 |Name | Type | Description|
 |:----|:-----|:-----------|
 |iconUrl | String | Optional; URI that points to an icon which represents the application used to generate the activity|
-|alternativeText | String | Optional; alt-text accessible content for the image|
+|alternateText | String | Optional; alt-text accessible content for the image|
 |addImageQuery | Boolean | Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image|
 
 ## JSON Representation
@@ -20,7 +20,7 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "iconUrl",
-    "alternativeText",
+    "alternateText",
     "addImageQuery"
   ],
   "@odata.type": "microsoft.graph.imageInfo"
@@ -30,7 +30,7 @@ Here is a JSON representation of the resource
 {
     "@odata.type": "microsoft.graph.imageInfo",
     "iconUrl": "String (URL)",
-    "alternativeText": "String",
+    "alternateText": "String",
     "addImageQuery": "boolean"
 }
 ```

@@ -17,7 +17,7 @@ An abstract class containing the base properties for Intune mobile apps.
 |displayName|String|The admin provided or imported title of the app.|
 |description|String|The description of the app.|
 |publisher|String|The publisher of the app.|
-|largeIcon|[mimeContent](../resources/intune_apps_mimecontent.md)|The large icon, to be displayed in the app details and used for upload of the icon.|
+|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|The large icon, to be displayed in the app details and used for upload of the icon.|
 |createdDateTime|DateTimeOffset|The date and time the app was created.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified.|
 |isFeatured|Boolean|The value indicating whether the app is marked as featured by the admin.|
@@ -26,7 +26,7 @@ An abstract class containing the base properties for Intune mobile apps.
 |owner|String|The owner of the app.|
 |developer|String|The developer of the app.|
 |notes|String|Notes for the app.|
-|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Possible values are: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Possible values are: `notPublished`, `processing`, `published`.|
 
 ## Relationships
 |Relationship|Type|Description|

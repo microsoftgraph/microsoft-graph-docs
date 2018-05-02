@@ -20,11 +20,13 @@ Windows Autopilot Deployment Profile
 |createdDateTime|DateTimeOffset|Profile creation time|
 |lastModifiedDateTime|DateTimeOffset|Profile last modified time|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune_enrollment_outofboxexperiencesettings.md)|Out of box experience setting|
+|enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune_enrollment_windowsenrollmentstatusscreensettings.md)|Enrollment status screen setting|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |assignedDevices|[windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md) collection|The list of assigned devices for the profile.|
+|assignments|[windowsAutopilotDeploymentProfileAssignment](../resources/intune_enrollment_windowsautopilotdeploymentprofileassignment.md) collection|The list of group assignments for the profile.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -47,6 +49,16 @@ Here is a JSON representation of the resource.
     "hidePrivacySettings": true,
     "hideEULA": true,
     "userType": "String"
+  },
+  "enrollmentStatusScreenSettings": {
+    "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
+    "hideInstallationProgress": true,
+    "allowDeviceUseBeforeProfileAndAppInstallComplete": true,
+    "blockDeviceSetupRetryByUser": true,
+    "allowLogCollectionOnInstallFailure": true,
+    "customErrorMessage": "String",
+    "installProgressTimeoutInMinutes": 1024,
+    "allowDeviceUseOnInstallFailure": true
   }
 }
 ```

@@ -58,7 +58,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/auditEvents
 Content-type: application/json
-Content-length: 1444
+Content-length: 1387
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -67,9 +67,6 @@ Content-length: 1444
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "Type value",
-    "permissions": [
-      "Permissions value"
-    ],
     "userPermissions": [
       "User Permissions value"
     ],
@@ -111,7 +108,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1493
+Content-Length: 1436
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -121,9 +118,6 @@ Content-Length: 1493
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "Type value",
-    "permissions": [
-      "Permissions value"
-    ],
     "userPermissions": [
       "User Permissions value"
     ],

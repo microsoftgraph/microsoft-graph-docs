@@ -11,8 +11,8 @@ VPN On-Demand Rule definition.
 |ssids|String collection|Network Service Set Identifiers (SSIDs).|
 |dnsSearchDomains|String collection|DNS Search Domains.|
 |probeUrl|String|A URL to probe. If this URL is successfully fetched (returning a 200 HTTP status code) without redirection, this rule matches.|
-|action|String|Action. Possible values are: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
-|domainAction|String|Domain Action (Only applicable when Action is evaluate connection). Possible values are: `connectIfNeeded`, `neverConnect`.|
+|action|[vpnOnDemandRuleConnectionAction](../resources/intune_deviceconfig_vpnondemandruleconnectionaction.md)|Action. Possible values are: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
+|domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune_deviceconfig_vpnondemandruleconnectiondomainaction.md)|Domain Action (Only applicable when Action is evaluate connection). Possible values are: `connectIfNeeded`, `neverConnect`.|
 |domains|String collection|Domains (Only applicable when Action is evaluate connection).|
 |probeRequiredUrl|String|Probe Required Url (Only applicable when Action is evaluate connection and DomainAction is connect if needed).|
 

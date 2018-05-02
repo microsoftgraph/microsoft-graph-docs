@@ -7,7 +7,6 @@ A class containing the properties for Audit Actor.
 |Property|Type|Description|
 |:---|:---|:---|
 |type|String|Actor Type.|
-|permissions|String collection|List of user permissions when the audit was performed.|
 |userPermissions|String collection|List of user permissions when the audit was performed.|
 |applicationId|String|AAD Application Id.|
 |applicationDisplayName|String|Name of the Application.|
@@ -30,9 +29,6 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.auditActor",
   "type": "String",
-  "permissions": [
-    "String"
-  ],
   "userPermissions": [
     "String"
   ],
