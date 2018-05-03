@@ -3,7 +3,7 @@
     "tables": [
       {
         "type": "AuthScopes",
-        "titles": [ "Authentication Scopes" ],
+        "titles": [ "Permissions" ],
         "parseAs": "AuthScopeDefinition"
       },
       {
@@ -78,8 +78,8 @@
       {
         "type": "AuthScopeDefinition",
         "columns": {
-          "scope": [ "Scope Name" ],
-          "title": [ "Title" ],
+          "scope": [ "Permissions (from least to most privileged)" ],
+          "title": [ "Permission type" ],
           "description": [ "Description" ],
           "required": [ "Required" ]
         }
