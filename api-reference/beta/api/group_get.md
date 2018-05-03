@@ -23,7 +23,7 @@ These are a subset of all available properties.
 * onPremisesLastSyncDateTime
 * onPremisesSecurityIdentifier
 * onPremisesSyncEnabled
-* preferredLanguage
+* preferredLanguage - Not supported; a value for this property cannot be set and returns `null` when called.
 * proxyAddresses
 * renewedDateTime
 * securityEnabled

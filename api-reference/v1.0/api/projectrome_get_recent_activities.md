@@ -26,12 +26,12 @@ This method supports some [OData Query Parameters](http://developer.microsoft.co
 
 - $expand for the **historyItems** navigation property.
 - $top to limit the maximum number of items across pages.
-- $filter on the **lastModifiedDateTime** property for either activities or **historyItems**, if expanded.
+- $filter on the **lastModifiedDateTime** property for activities
 
 The following are some examples of supported queries with URL encoding.
 
 ```
-/me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
+/me/activities/recent?$expand=historyItems
 
 /me/activities/recent?$filter=lastModifiedDateTime%20lt%202018-01-16T01:03:21.347Z%20and%20lastModifiedDateTime%20gt%202018-01-03T01:03:21.347Z
 

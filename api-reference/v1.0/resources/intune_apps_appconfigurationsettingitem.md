@@ -7,7 +7,7 @@ Contains properties for App configuration setting item.
 |Property|Type|Description|
 |:---|:---|:---|
 |appConfigKey|String|app configuration key.|
-|appConfigKeyType|String|app configuration key type. Possible values are: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
+|appConfigKeyType|[mdmAppConfigKeyType](../resources/intune_apps_mdmappconfigkeytype.md)|app configuration key type. Possible values are: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
 |appConfigKeyValue|String|app configuration key value.|
 
 ## Relationships

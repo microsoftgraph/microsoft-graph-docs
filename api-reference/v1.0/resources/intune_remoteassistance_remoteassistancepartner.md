@@ -20,7 +20,7 @@ remoteAssistPartner resources represent the metadata and status of a given Remot
 |id|String|Unique identifier of the partner.|
 |displayName|String|Display name of the partner.|
 |onboardingUrl|String|URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.|
-|onboardingStatus|String|TBD Possible values are: `notOnboarded`, `onboarding`, `onboarded`.|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|TBD. Possible values are: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Timestamp of the last request sent to Intune by the TEM partner.|
 
 ## Relationships

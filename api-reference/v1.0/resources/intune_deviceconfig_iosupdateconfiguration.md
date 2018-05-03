@@ -26,7 +26,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |activeHoursStart|TimeOfDay|Active Hours Start (active hours mean the time window when updates install should not happen)|
 |activeHoursEnd|TimeOfDay|Active Hours End (active hours mean the time window when updates install should not happen)|
-|scheduledInstallDays|String collection|Days in week for which active hours are configured. This collection can contain a maximum of 7 elements.|
+|scheduledInstallDays|[dayOfWeek](../resources/intune_deviceconfig_dayofweek.md) collection|Days in week for which active hours are configured. This collection can contain a maximum of 7 elements.|
 |utcTimeOffsetInMinutes|Int32|UTC Time Offset indicated in minutes|
 
 ## Relationships

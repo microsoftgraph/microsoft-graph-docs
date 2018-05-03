@@ -247,6 +247,12 @@
       <Item text="Get contract" url="/en-us/api-reference/v1.0/api/contract_get" />
       <Item text="List contracts" url="/en-us/api-reference/v1.0/api/contract_list" />
 	 </Item>
+   <Item text="Deleted items" url="/en-us/api-reference/v1.0/resources/directory" >
+      <Item text="Get deleted item" url="/en-us/api-reference/v1.0/api/directory_deleteditems_get" />
+      <Item text="List deleted items" url="/en-us/api-reference/v1.0/api/directory_deleteditems_list" />
+      <Item text="Permanently delete item" url="/en-us/api-reference/v1.0/api/directory_deleteditems_delete" />
+      <Item text="Restore deleted item" url="/en-us/api-reference/v1.0/api/directory_deleteditems_restore" />
+    </Item>
     <Item text="Device" url="/en-us/api-reference/v1.0/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
       <Item text="List devices" url="/en-us/api-reference/v1.0/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />
       <Item text="Create device" url="/en-us/api-reference/v1.0/api/device_post_devices" SEOKeyword="Create Device, Microsoft Graph API, Device API" SEODescription="Use this API to create a new Device." />
@@ -2328,6 +2334,16 @@
         <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
       </Item>
     </Item>
+    <Item text="Audit logs" url="/en-us/api-reference/beta/resources/directoryaudit">
+      <Item text="Directory audit" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="directoryAudit object, Microsoft Graph API, Azure AD, audit logs" SEODescription="">
+        <Item text="List directory audits" url="/en-us/api-reference/beta/api/directoryaudit_list" SEOKeyword="Audit log API, Microsoft Graph API, Azure AD, audit logs" SEODescription="API to return a list of directoryAudit objects."/>
+        <Item text="Get directory audit" url="/en-us/api-reference/beta/api/directoryaudit_get" SEOKeyword="Audit log API, Microsoft Graph API, Azure AD, audit logs" SEODescription="API to return a directoryAudit object."/>
+      </Item>
+      <Item text="Sign-in" url="/en-us/api-reference/beta/resources/signin" >
+        <Item text="List sign-ins" url="/en-us/api-reference/beta/api/signin_list" />
+        <Item text="Get sign-in" url="/en-us/api-reference/beta/api/signin_get" />
+      </Item>
+    </Item>
     <Item text="Azure Active Directory" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
       <Item text="Administrative unit" url="/en-us/api-reference/beta/resources/administrativeunit" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="An administrative unit provides a conceptual container for User and Group directory objects. Using administrative units, a company administrator can now delegate administrative responsibilities to manage the users and groups contained within or scoped to an administrative unit to a regional or departmental administrator.">
         <Item text="Create administrative unit" url="/en-us/api-reference/beta/api/administrativeunit_post_administrativeunits" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="API to create a new administrativeUnit." />
@@ -2358,7 +2374,6 @@
           <Item text="List owners" url="/en-us/api-reference/beta/api/application_list_owners" SEOKeyword="List owners, Microsoft Graph API, application API" SEODescription="Retrieve a list of directoryobject objects." />
           <Item text="Assign owner" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Create owner, Microsoft Graph API, application API" SEODescription="Use this API to create a new owner." />
           <Item text="List extension properties" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="List extensionProperties, Microsoft Graph API, application API" SEODescription="Retrieve a list of extensionproperty objects." />
-                    
         </Item>
       <Item text="Contracts" url="/en-us/api-reference/beta/resources/contract" >
         <Item text="Get contract" url="/en-us/api-reference/beta/api/contract_get" />
@@ -2369,6 +2384,7 @@
         <Item text="List deleted items" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="Permanently delete item" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="Restore deleted item" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
+        <Item text="List deleted items owner by user" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
       </Item>
       <Item text="Device" url="/en-us/api-reference/beta/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
         <Item text="List devices" url="/en-us/api-reference/beta/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />

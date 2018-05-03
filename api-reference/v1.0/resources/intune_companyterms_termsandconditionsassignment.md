@@ -16,7 +16,7 @@ A termsAndConditionsAssignment entity represents the assignment of a given Terms
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier of the entity.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_companyterms_deviceandappmanagementassignmenttarget.md)|Assignment target that the T&C policy is assigned to.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Assignment target that the T&C policy is assigned to.|
 
 ## Relationships
 None

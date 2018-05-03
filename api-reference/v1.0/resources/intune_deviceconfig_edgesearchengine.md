@@ -9,7 +9,7 @@ Inherits from [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearch
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|edgeSearchEngineType|String|Allows IT admins to set a predefined default search engine for MDM-Controlled devices. Possible values are: `default`, `bing`.|
+|edgeSearchEngineType|[edgeSearchEngineType](../resources/intune_deviceconfig_edgesearchenginetype.md)|Allows IT admins to set a predefined default search engine for MDM-Controlled devices. Possible values are: `default`, `bing`.|
 
 ## Relationships
 None

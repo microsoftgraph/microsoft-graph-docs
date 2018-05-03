@@ -14,6 +14,7 @@ Currently, deleted items functionality is only supported for Office 365 [groups]
 |[Restore deleted item](../api/directory_deleteditems_restore.md) |[directoryObject](directoryobject.md)| Restores a recently deleted item. |
 |[List deleted items](../api/directory_deleteditems_list.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted items. |
 |[Permanently delete an item](../api/directory_deleteditems_delete.md) | None | Permanently deletes an item. |
+|[List deleted items owned by a user](../api/directory_deleteditems_user_owned.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
 
 ## Properties
 | Property   | Type |Description|
