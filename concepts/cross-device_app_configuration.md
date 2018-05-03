@@ -127,8 +127,8 @@ This sample includes all valid platform identifiers accepted at this time. JSON 
 {"platform":"windows_win32", "application":"DefaultBrowser_NOPUBLISHERID!Microsoft.Contoso.Default"},</br>
 {"platform":"android","application":"com.example.myapp"},</br>
 {"platform":"ios", "application":"com.example.myapp"},</br>
-{"platform":"web", "application":"https://www.contoso.com"},</br>
-{"platform":"web", "application":"https://chat.contoso.com"},**</br>
+{"platform":"web", "application":"ht<span>tps://</span>contoso.com"},</br>
+{"platform":"web", "application":"ht<span>tps://</span>chat.contoso.com"},**</br>
 {"platform":"msa", "application":"00000000603E0BF"},</br>
 {"platform":"msa", "application":"48932b46-98b1-4020-9be4-cc7a65643c9e"},</br>
 ]
@@ -154,8 +154,8 @@ To enable cross-device experiences, your app users must login with either a Mic
 {"platform":"windows_win32", "application":"DefaultBrowser_NOPUBLISHERID!Microsoft.Contoso.Default"},</br>
 {"platform":"android","application":"com.example.myapp"},</br>
 {"platform":"ios", "application":"com.example.myapp"},</br>
-{"platform":"web", "application":"https://www.contoso.com"},</br>
-{"platform":"web", "application":"https://chat.contoso.com"},</br>
+{"platform":"web", "application":"ht<span>tps://</span>contoso.com"},</br>
+{"platform":"web", "application":"ht<span>tps://</span>chat.contoso.com"},</br>
 **{"platform":"msa", "application":"00000000603E0BF"},</br>
 {"platform":"msa", "application":"48932b46-98b1-4020-9be4-cc7a65643c9e"},</br>
 ]**
