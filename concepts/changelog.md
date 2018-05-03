@@ -286,6 +286,19 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **containedApps** navigation property to the [mobileAppContent](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_mobileappcontent) entity|
 |Addition|beta|Added the **committedContainedApps** navigation property to the [windowsUniversalAppX](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappx) entity|
 
+### OneDrive
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|v1.0|Added new entities:<br/>[baseItemVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/baseItemVersion)<br/>[driveItemVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveItemVersion)<br/>[listItemVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/listItemVersion)<br/> |
+|Addition|v1.0|Added new complex types:<br/>[publicationFacet](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/publicationFacet)<br/> |
+|Addition|v1.0|Added the <b>publication</b> property to the [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveItem) entity |
+|Addition|v1.0|Added the <b>versions</b> navigation property to the [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveItem) entity |
+|Addition|v1.0|Added the <b>versions</b> navigation property to the [listItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/listItem) entity |
+|Addition|v1.0|Added the <b>root</b> property to the [siteCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/siteCollection) entity |
+|Addition|v1.0|Added the [restoreVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/driveitemversion_restore) action for the [driveItemVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveItemVersion) entity |
+|Addition|v1.0|Added the [restoreVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/listitemversion_restore) action for the [listItemVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/listItemVersion) entity |
+
+
 ## February 2018
 
 ### Microsoft Intune APIs

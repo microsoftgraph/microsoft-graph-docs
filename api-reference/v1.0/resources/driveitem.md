@@ -62,11 +62,12 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 
   /* relationships */
   "content": { "@odata.type": "Edm.Stream" },
+  "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
-  "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
-  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
+  "versions": [ {"@odata.type": "Collection(microsoft.graph.driveItemVersion)"}],
 
   /* inherited from baseItem */
   "id": "string (identifier)",
@@ -109,6 +110,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | package              | [package][]        | If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
 | parentReference      | [itemReference][]  | Parent information, if the item has a parent. Read-write.
 | photo                | [photo][]          | Photo metadata, if the item is a photo. Read-only.
+| publication          | [publicationFacet][] | Provides information about the published or checked-out state of an item, in locations that support such actions. This property is not returned by default. Read-only. |
 | remoteItem           | [remoteItem][]     | Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.
 | root                 | [root][]           | If this property is non-null, it indicates that the driveItem is the top-most driveItem in the drive.
 | searchResult         | [searchResult][]   | Search metadata, if the item is from a search result. Read-only.
@@ -126,7 +128,7 @@ The eTag value is only modified when the folder's properties are changed, except
 
 ## Relationships
 
-| Relationship       | Type                        | Description
+| Relationship       | Type                            | Description
 |:-------------------|:----------------------------|:--------------------------
 | content            | Stream                      | The content stream, if the item represents a file.
 | children           | driveitem collection        | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
@@ -134,6 +136,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.
 | permissions        | [permission][] collection   | The set of permissions for the item. Read-only. Nullable.
 | thumbnails         | [thumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
+| versions           | [driveItemVersion][] collection | The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
 
 ## Instance Attributes
 
@@ -155,6 +158,7 @@ The URL will only be available for a short period of time (1 hour) before it is 
 |:---------------------------------------------------------|:------------------
 | [Get item](../api/driveitem_get.md)                      | `GET /drive/items/{item-id}`
 | [List children](../api/driveitem_list_children.md)       | `GET /drive/items/{item-id}/children`
+| [List versions](../api/driveitem_list_versions.md)       | `GET /drive/items/{item-id}/versions`
 | [Create item](../api/driveitem_post_children.md)         | `POST /drive/items/{item-id}/children`
 | [Update item](../api/driveitem_update.md)                | `PATCH /drive/items/{item-id}`
 | [Upload content](../api/driveitem_put_content.md)        | `PUT /drive/items/{item-id}/content`
@@ -180,9 +184,11 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [baseItem]: baseItem.md
 [deleted]: deleted.md
 [download-format]: ../api/driveitem_get_content_format.md
+[driveItemVersion]: driveItemVersion.md
 [file]: file.md
 [fileSystemInfo]: fileSystemInfo.md
 [folder]: folder.md
+[getting previous versions]: ../api/driveitem_list_versions.md
 [getting thumbnails]: ../api/driveitem_list_thumbnails.md
 [identitySet]: identitySet.md
 [image]: image.md
@@ -200,6 +206,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [thumbnailSet]: thumbnailSet.md
 [video]: video.md
 [user]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/users
+[publicationFacet]: publicationfacet.md
 
 <!-- {
   "type": "#page.annotation",
