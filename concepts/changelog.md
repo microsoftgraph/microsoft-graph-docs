@@ -26,6 +26,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 |Change type|Version|Description|
 |:---|:---|:---|
+|Change|Beta|Updated the possible values of **educationSubmissionStatus** type in the status property of  [educationsubmission](../api-reference/beta/resources/educationsubmission.md).|
+|Change|Beta|Added the **educationAssignmentIndividualRecipient** complex type to the assignTo property of [educationAssignment](../api-reference/beta/resources/educationassignment.md).|
+|Change|Beta|Added the **unsubmittedBy**, **unsubmittedDate**, **returnedBy**, **returnedDate** property of [educationSubmission](../api-reference/beta/resources/educationsubmission.md).|
+|Addition|Beta|Added the [return](../api-reference/beta/api/educationSubmission_return.md) and  [unsubmit](../api-reference/beta/api/educationSubmission_unsubmit.md) action to [educationSubmission](../api-reference/beta/resources/educationsubmission.md).|
+|Change|Beta|Removed the [release](../api-reference/beta/api/educationSubmission_release.md) and  [recall](../api-reference/beta/api/educationSubmission_recall.md) action to [educationSubmission](../api-reference/beta/resources/educationsubmission.md).|
 |Change|Beta|Added the reportableIdentifier property to [educationsynchronizationerror](../api-reference/beta/resources/educationsynchronizationerror.md).|
 |Change|Beta|Updated the response options for the [uploadUrl](../api-reference/beta/api/educationsynchronizationprofile_uploadurl.md) API.|
 |Change|Beta|Updated the text for description of the [educationSynchronizationError](../api-reference/beta/resources/educationsynchronizationerror.md) resource type.|
