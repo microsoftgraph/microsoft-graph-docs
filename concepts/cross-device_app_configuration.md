@@ -1,4 +1,4 @@
-# Delight users with cross-device apps, powered by Project Rome 
+# Build cross-device apps, powered by Project Rome 
 Project Rome aims to help developers build experiences that cross devices and platforms seamlessly, reducing friction for users and helping to drive app engagement. In order for applications to share data across devices & platforms using Project Rome APIs an app developer can configure a cross-device app which includes information about your platform-specific apps. **Let's learn why and how you should configure a cross-device app.**  
 
 A cross-device app is required to take advantage of the following capabilities powered by Project Rome: 
@@ -29,15 +29,11 @@ You can host your cross-device app configuration either as a JSON file hosted on
 ### Windows Dev Center profile - *Recommended* 
 You can use all Project Rome capabilities using a cross-device app managed in [Windows Dev Center](https://developer.microsoft.com/en-us/windows). The Windows Dev Center also offers the *best* way to manage any cross-device app configuration changes. You can save updates to an existing profile securely until you're ready to publish changes to production. When you publish changes to an existing cross-device app in the Dev Center the new profile will be effective after approximately **one hour**.  
 
-[view details](#configure-a-cross-device-app-using-windows-dev-center)
-
 ### Externally hosted JSON file - *Limited* 
 You can use the following Project Rome capabilities on all supported platforms using a cross-device app managed as an externally hosted JSON file:   
 * Read & write user activities from all platforms using the MSGraph [Activity Feed API](../api-reference/v1.0/resources/activity-feed-api-overview.md)
 * Write user activities from all platforms (Windows, iOS, Android, web) using either the Project Rome SDK
 If you will **only** use the capabilities outlined above, you can host your cross-device app configuration externally on your domain as a JSON file.
-
-[view details](#configure-a-cross-device-app-using-an-externally-hosted-json-file)
 
 Once you've determined the method you'll use to manage your cross-device app, you're ready to get started collecting the information you'll need to configure it. Instructions for how to configure your cross-device app using each hosting method are outlined below.  
 
@@ -55,7 +51,7 @@ When using Windows Dev Center to manage your cross-device app configuration, the
 To assert your domain ownership for your cross-device app, you'll need to add a [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) entry for your domain with a unique value provided to you in the Dev Center. This value is unique per cross-device app. To find the unique value for your app, simply login to Windows Dev Center and choose **Cross-device experiences** from the menu at left to start configuring a new cross-device app. Once you've given your new cross-device app a name, select **Verify your cross-device app domain** from the sub-menu. This page will display instructions with a unique value **inline** (*e.g. MS=95ff4557-813f-45a5-b2f6-1f94170b979f*). Make sure to copy the entire value including 'MS='
 
 ### Step 2: Collect your platform-specific application IDs
-**Collect the platform-specific application IDs for each application and platform which will use the [Activity Feed](../api-reference/v1.0/resources/activity-feed-api-overview.md) and/or [Device Relay API](../api-reference/beta/resources/project-rome-overview.md).**
+**Collect the platform-specific application IDs for each application and platform which will use [Project Rome APIs] (https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/project_rome_overview).**
 You'll need to collect each of the platform-specific application IDs in order to associate them to your cross-device app identity. Using Windows Dev Center, you'll be able to select from *Universal Windows Platform* apps associated to your developer account, but you'll need to manually provide application ids for any of your win32, iOS and/or Android apps and identify the primary URL for any associated web apps. You can associate up to 10 ids per platform. 
 
 #### Where do I find these ids?
@@ -121,17 +117,17 @@ There is no need to include a JSON object for all platforms. Only include JSON o
 This sample includes all valid platform identifiers accepted at this time. JSON objects which include an invalid platform value will be stripped out.  
 
 *Example:*
-
-**[</br>
-{"platform":"windows_universal", "application":"Microsoft.Contoso_8wekyb3d8bbwe"},</br>
-{"platform":"windows_win32", "application":"DefaultBrowser_NOPUBLISHERID!Microsoft.Contoso.Default"},</br>
-{"platform":"android","application":"com.example.myapp"},</br>
-{"platform":"ios", "application":"com.example.myapp"},</br>
-{"platform":"web", "application":"https://contoso.com"},</br>
-{"platform":"web", "application":"https://chat.contoso.com"},**</br>
-{"platform":"msa", "application":"00000000603E0BF"},</br>
-{"platform":"msa", "application":"48932b46-98b1-4020-9be4-cc7a65643c9e"},</br>
+```[
+{"platform":"windows_universal", "application":"Microsoft.Contoso_8wekyb3d8bbwe"},
+{"platform":"windows_win32", "application":"DefaultBrowser_NOPUBLISHERID!Microsoft.Contoso.Default"},
+{"platform":"android","application":"com.example.myapp"},
+{"platform":"ios", "application":"com.example.myapp"},
+{"platform":"web", "application":"https://contoso.com"},
+{"platform":"web", "application":"https://chat.contoso.com"},
+{"platform":"msa", "application":"00000000603E0BF"},
+{"platform":"msa", "application":"48932b46-98b1-4020-9be4-cc7a65643c9e"},
 ]
+```
 
 #### Where do I find these ids?
 * **windows_universal** - Please provide an AUMID for each UWP app. You can refer to documentation here: 
@@ -148,17 +144,17 @@ This sample includes all valid platform identifiers accepted at this time. JSON 
 To enable cross-device experiences, your app users must login with either a Microsoft Account or an Azure Active Directory account. You will provide the app ID / client IDs used to support authentication in your apps powered by Project Rome APIs as part of the cross-device app configuration stored in your externally hosted JSON file to enable cross-platform support. You can provide up to ten instances.
 
 *Example:*
-
-[</br>
-{"platform":"windows_universal", "application":"Microsoft.Contoso_8wekyb3d8bbwe"},</br>
-{"platform":"windows_win32", "application":"DefaultBrowser_NOPUBLISHERID!Microsoft.Contoso.Default"},</br>
-{"platform":"android","application":"com.example.myapp"},</br>
-{"platform":"ios", "application":"com.example.myapp"},</br>
-{"platform":"web", "application":"https://contoso.com"},</br>
-{"platform":"web", "application":"https://chat.contoso.com"},</br>
-**{"platform":"msa", "application":"00000000603E0BF"},</br>
-{"platform":"msa", "application":"48932b46-98b1-4020-9be4-cc7a65643c9e"},</br>
-]**
+```[
+{"platform":"windows_universal", "application":"Microsoft.Contoso_8wekyb3d8bbwe"},
+{"platform":"windows_win32", "application":"DefaultBrowser_NOPUBLISHERID!Microsoft.Contoso.Default"},
+{"platform":"android","application":"com.example.myapp"},
+{"platform":"ios", "application":"com.example.myapp"},
+{"platform":"web", "application":"https://contoso.com"},
+{"platform":"web", "application":"https://chat.contoso.com"},
+{"platform":"msa", "application":"00000000603E0BF"},
+{"platform":"msa", "application":"48932b46-98b1-4020-9be4-cc7a65643c9e"},
+]
+```
 
 You can find your existing app ID / client IDs or provision new ones by logging into https://apps.dev.microsoft.com  with your developer account. Upon logging in, you can view the App Id / client Id for any of your apps. Both Live SDK (hex values) and Converged app ids (GUIDs) are supported. The IDs used to enable support for Microsoft Account or Azure Active Directory must be added using the platform type "msa" as outlined in the example above.  
 
