@@ -33,7 +33,8 @@ Represents an Azure Active Directory user object.
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
+  "openType": true,
   "@odata.type": "microsoft.graph.user"
 }
 -->
