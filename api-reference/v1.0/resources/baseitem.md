@@ -22,6 +22,8 @@ Here is a JSON representation of a **baseItem** resource.
   "blockType": "resource",
   "optionalProperties": [ "createdBy", "lastModifiedBy", "description", "parentReference", "webUrl" ],
   "keyProperty": "id",
+  "abstract": true,
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.baseItem"
 }-->
 

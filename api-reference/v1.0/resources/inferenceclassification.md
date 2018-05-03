@@ -31,6 +31,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.inferenceClassification",
   "@odata.annotations": [
     {

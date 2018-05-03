@@ -107,6 +107,7 @@ Here is a JSON representation of the resource
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
+  "baseType": "microsoft.graph.message",
   "@odata.type": "microsoft.graph.eventMessage",
   "@odata.annotations": [
     {

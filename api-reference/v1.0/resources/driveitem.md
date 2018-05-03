@@ -31,6 +31,7 @@ Here is a JSON representation of a **driveItem** resource.
 The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits properties from that resource.
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
+       "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
@@ -135,6 +136,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | listItem           | [listItem][]                | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
 | permissions        | [permission][] collection   | The set of permissions for the item. Read-only. Nullable.
 | thumbnails         | [thumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
+| workbook           | [workbook][]                | For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable.
 
 ## Instance Attributes
 
@@ -200,6 +202,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [specialFolder]: specialFolder.md
 [thumbnailSet]: thumbnailSet.md
 [video]: video.md
+[workbook]: workbook.md
 [user]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/users
 
 <!-- {

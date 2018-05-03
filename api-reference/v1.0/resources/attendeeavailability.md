@@ -29,14 +29,14 @@ Here is a JSON representation of the resource
 
 ### freeBusyStatus values
 
-| Value
-|:-------------------------
-| free
-| tentative
-| busy
-| oof
-| workingElsewhere
-| unknown
+| Member            |Value
+|:------------------|:-------
+| free              | 0
+| tentative         | 1
+| busy              | 2
+| oof               | 3
+| workingElsewhere  | 4
+| unknown           | -1
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

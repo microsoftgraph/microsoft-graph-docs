@@ -49,9 +49,9 @@ This object provides a targeted subset of properties from the core [user](user.m
 ### educationUserRole values
 | Value
 |:---------------------
-| none
 | student
 | teacher
+| none
 | unknownFutureValue
 
 ## Relationships

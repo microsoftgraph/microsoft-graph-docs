@@ -115,7 +115,7 @@ This resource supports:
 |drives|[drive](drive.md) collection|The group's drives. Read-only.|
 |events|[event](event.md) collection|The group's calendar events.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the group. Read-only. Nullable.|
-|groupLifecyclePolicies|[groupLifecyclePolicies](groupLifecyclePolicies.md) collection|The collection of lifecycle policies for this group. Read-only. Nullable.|
+|groupLifecyclePolicies|[groupLifecyclePolicy](groupLifecyclePolicy.md) collection|The collection of lifecycle policies for this group. Read-only. Nullable.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
 |members|[directoryObject](directoryobject.md) collection| Users and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups) Nullable.|
 |onenote|[Onenote](onenote.md)| Read-only.|

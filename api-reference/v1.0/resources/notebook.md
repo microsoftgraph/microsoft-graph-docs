@@ -53,12 +53,12 @@ Here is a JSON representation of the resource
 
 ### onenoteUserRole values
 
-| Value
-|:-------------------------
-| Owner
-| Contributor
-| Reader
-| None
+| Member      | Value
+|:------------|:------------
+| Owner       | 0
+| Contributor | 1
+| Reader      | 2
+| None        | -1
 
 
 ## Relationships
