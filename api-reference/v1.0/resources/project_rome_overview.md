@@ -24,3 +24,7 @@ You can use the following Microsoft Graph APIs to create and retrieve user activ
 - [Delete an activity](../api/projectrome_delete_activity.md)
 - [Create or replace a history item](../api/projectrome_put_historyitem.md)
 - [Delete a history item](../api/projectrome_delete_historyitem.md)
+
+**See also:** 
+- **[Overview of enabling cross-device experience using activity feed API in Microsoft Graph](../../../concepts/activity-feed-concept-overview.md)**
+- [Use the activity feed API to resume a user's activity across devices](activity-feed-api-overview.md)

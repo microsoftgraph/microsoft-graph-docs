@@ -42,3 +42,9 @@ You can use the following Microsoft Graph APIs to communicate with other Windows
 - [List the user's devices](../api/user_list_devices.md)
 - [Send a command to a device](../api/send_device_command.md)
 - [Get command status](../api/get_device_command_status.md)
+
+**See also:**
+- **[Overview of enabling cross-device experience using activity feed API in Microsoft Graph](../../../concepts/activity-feed-concept-overview.md)**
+- [Use the activity feed API to resume a user's activity across devices](activity-feed-api-overview.md)
+- [Overview of enabling cross-device experience using device replay API in Microsoft Graph](../../../concepts/device-relay-concept-overview.md)
+- [Use the device relay API to transfer a user's experience across devices](device-relay-api-overview.md)
