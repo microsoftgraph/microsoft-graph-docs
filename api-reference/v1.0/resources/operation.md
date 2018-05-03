@@ -26,7 +26,7 @@ Here is a JSON representation of the resource.
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |The start time of the operation.|
 |lastActionDateTime| DateTimeOffset |The time of the last action of the operation.|
-|status|operationStatus|The current status of the operation: `notstarted`, `running`, `completed`, `failed` |
+|status|operationStatus|The current status of the operation: `notStarted`, `running`, `completed`, `failed` |
 
 ### operationStatus values
 

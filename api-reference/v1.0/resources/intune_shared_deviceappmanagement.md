@@ -26,7 +26,7 @@ Singleton entity that acts as a container for all device app management function
 |defaultManagedAppProtections|[defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) collection|Default managed app policies.|
 |managedAppPolicies|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Managed app policies.|
 |managedAppRegistrations|[managedAppRegistration](../resources/intune_mam_managedappregistration.md) collection|The managed app registrations.|
-|managedAppStatuses|[managedAppStatus](../resources/intune_mam_managedappstatus.md) collection|The managed app statuses.|
+<!-- |managedAppStatuses|[managedAppStatus](../resources/intune_mam_managedappstatus.md) collection|The managed app statuses.| -->
 |managedEBooks|[managedEBook](../resources/intune_books_managedebook.md) collection|The Managed eBook.|
 |mdmWindowsInformationProtectionPolicies|[mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md) collection|Windows information protection for apps running on devices which are MDM enrolled.|
 |mobileAppCategories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The mobile app categories.|
@@ -41,6 +41,7 @@ Here is a JSON representation of the resource.  Note that this is only an exampl
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceAppManagement"
 }
 -->
