@@ -55,7 +55,7 @@ When using Windows Dev Center to manage your cross-device app configuration, the
 To assert your domain ownership for your cross-device app, you'll need to add a [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) entry for your domain with a unique value provided to you in the Dev Center. This value is unique per cross-device app. To find the unique value for your app, simply login to Windows Dev Center and choose **Cross-device experiences** from the menu at left to start configuring a new cross-device app. Once you've given your new cross-device app a name, select **Verify your cross-device app domain** from the sub-menu. This page will display instructions with a unique value **inline** (*e.g. MS=95ff4557-813f-45a5-b2f6-1f94170b979f*). Make sure to copy the entire value including 'MS='
 
 ### Step 2: Collect your platform-specific application IDs
-**Collect the platform-specific application IDs for each application and platform which will use the [Activity Feed](../api-reference/v1.0/resources/activity-feed-api-overview.md) and/or [Device Relay API](../api-reference/v1.0/resources/device-relay-api-overview.md).** 
+**Collect the platform-specific application IDs for each application and platform which will use the [Activity Feed](../api-reference/v1.0/resources/activity-feed-api-overview.md) and/or [Device Relay API](../api-reference/beta/resources/project-rome-overview.md).**
 You'll need to collect each of the platform-specific application IDs in order to associate them to your cross-device app identity. Using Windows Dev Center, you'll be able to select from *Universal Windows Platform* apps associated to your developer account, but you'll need to manually provide application ids for any of your win32, iOS and/or Android apps and identify the primary URL for any associated web apps. You can associate up to 10 ids per platform. 
 
 #### Where do I find these ids?
@@ -122,8 +122,8 @@ This sample includes all valid platform identifiers accepted at this time. JSON 
 
 *Example:*
 
-**[
-{"platform":"windows_universal", "application":"Microsoft.Contoso_8wekyb3d8bbwe"}, </br>
+**[</br>
+{"platform":"windows_universal", "application":"Microsoft.Contoso_8wekyb3d8bbwe"},</br>
 {"platform":"windows_win32", "application":"DefaultBrowser_NOPUBLISHERID!Microsoft.Contoso.Default"},</br>
 {"platform":"android","application":"com.example.myapp"},</br>
 {"platform":"ios", "application":"com.example.myapp"},</br>
