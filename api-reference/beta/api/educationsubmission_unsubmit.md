@@ -1,8 +1,8 @@
-# educationSubmission: recall
+# educationSubmission: unsubmit
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Indicates that a student wants to take back a submission. This action can only be done by a student. It will change the status of the submission from "submitted" back to "working".
+An action that indicates that a student is done with the work and is ready to hand in the assignment. This action can only be taken by the student. This will change the status of the submission from "submitted" to "working". During the unsubmit process, all the existing workingResources will be emptied and submittedResources will be copied over to the workingResources bucket. The teacher will be looking at the working resources list for grading.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -10,13 +10,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegated (personal Microsoft account) |  Not supported  |
-|Application |Not supported.  | 
+|Delegated (personal Microsoft account) |  Not supported.  |
+|Application | Not supported. | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/<id>/assignments/{id}/submissions/{id}/recall
+POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit
 
 ```
 ## Request headers
@@ -25,9 +25,10 @@ POST /education/classes/<id>/assignments/{id}/submissions/{id}/recall
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
+Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 The following example shows how to call this API.
@@ -35,10 +36,10 @@ The following example shows how to call this API.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "educationsubmission_recall"
+  "name": "educationsubmission_unsubmit"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/recall
+POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/unsubmit
 ```
 
 ##### Response
@@ -57,7 +58,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "educationSubmission: recall",
+  "description": "educationSubmission: unsubmit",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
