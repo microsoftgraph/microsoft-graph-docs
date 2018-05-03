@@ -1,9 +1,9 @@
 # Build cross-device apps, powered by Project Rome 
-Project Rome aims to help developers build experiences that cross devices and platforms seamlessly, reducing friction for users and helping to drive app engagement. In order for applications to share data across devices & platforms using Project Rome APIs an app developer can configure a cross-device app which includes information about your platform-specific apps. **Let's learn why and how you should configure a cross-device app.**  
+You can use Project Rome to build experiences that cross devices and platforms seamlessly, reducing friction for users and helping to drive app engagement. In order for applications to share data across devices & platforms using Project Rome APIs you can configure a cross-device app which includes information about your platform-specific apps. **Let's learn why and how you should configure a cross-device app.**  
 
 A cross-device app is required to take advantage of the following capabilities powered by Project Rome: 
 
-1. Use the activity feed API on MSGraph  
+1. Use the activity feed API on Microsoft Graph  
 2. Read & write user activities published by a group of platform-specific applications using the Project Rome SDK for Windows, Android, and/or iOS
 3. Use the device relay capabilities to target apps using the Project Rome SDK for Android or iOS 
 
