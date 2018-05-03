@@ -15,9 +15,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/<name>/axes/valueAxis/minorGridlines
-PATCH /workbook/worksheets/{id|name}/charts/<name>/axes/valueAxis/majorgridlines
-PATCH /workbook/worksheets/{id|name}/charts/<name>/axes/seriesAxis/majorgridlines
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/majorgridlines
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 ```
 ## Optional request headers
 | Name       | Description|
@@ -34,7 +34,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [WorkbookChartGridlines](../resources/chartgridlines.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [ChartGridlines](../resources/chartgridlines.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -43,7 +43,7 @@ Here is an example of the request.
   "name": "update_chartgridlines"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/axes/valueAxis/minorGridlines
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
 Content-type: application/json
 Content-length: 21
 
@@ -56,7 +56,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartGridLines"
+  "@odata.type": "microsoft.graph.chartGridLines"
 } -->
 ```http
 HTTP/1.1 200 OK

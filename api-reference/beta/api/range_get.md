@@ -41,14 +41,14 @@ Here is an example of the request.
   "name": "get_range"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/<name>/range
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRange"
+  "@odata.type": "microsoft.graph.range"
 } -->
 ```http
 HTTP/1.1 200 OK

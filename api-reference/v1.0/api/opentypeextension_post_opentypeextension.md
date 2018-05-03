@@ -210,7 +210,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
     {
       "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
       "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df800e5@1717f226-49d1-4d0c-9d74-709fad664b77')/messages
-('AAMkAGEbs88AAB84uLuAAA=')/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+('AAMkAGEbs88AAB84uLuAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
       "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
@@ -238,7 +238,7 @@ extension:
   "name": "post_opentypeextension_2"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/{message-id}/extensions
+POST https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 
 { 
   "@odata.type" : "microsoft.graph.openTypeExtension", 
@@ -406,7 +406,7 @@ in turn contains the **body** of the new post, and the following data for the ex
   "name": "post_opentypeextension_5"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{group-id}/conversations
+POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations
 
 {
   "Topic": "Does anyone have a second?",

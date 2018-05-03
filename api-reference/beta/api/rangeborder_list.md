@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/<name>/range/format/borders
+GET /workbook/names(<name>)/range/format/borders
 GET /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 ```
@@ -33,7 +33,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [WorkbookRangeBorder](../resources/rangeborder.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [RangeBorder](../resources/rangeborder.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -42,14 +42,14 @@ Here is an example of the request.
   "name": "get_rangebordercollection"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/<name>/range/format/borders
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format/borders
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRangeBorder",
+  "@odata.type": "microsoft.graph.rangeBorder",
   "isCollection": true
 } -->
 ```http

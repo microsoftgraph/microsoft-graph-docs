@@ -84,7 +84,7 @@ The user may choose to change their roaming profile information.  This update ca
 
 ##### Request
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/extensions/{extension-name}
+PATCH https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 Content-type: application/json
 {
     "theme":"light",
@@ -103,7 +103,7 @@ The user decides that they don't want a roaming profile anymore, so they delete 
 
 ##### Request
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/extensions/{extension-name}
+DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 ```
 
 ##### Response

@@ -245,7 +245,7 @@ extended property:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/beta/me/messages/{message-id}
+PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA=')
 
 Content-Type: application/json
 

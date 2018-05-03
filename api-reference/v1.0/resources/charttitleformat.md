@@ -7,9 +7,7 @@ Encapsulates the format properties for the chart title.
 None
 
 ## Properties
-| Property | Type    |Description
-|:---------|:--------|:------------------------------------
-| id       |string   | Unique identifier. Read-only.
+None
 
 ## Relationships
 | Relationship | Type	|Description|

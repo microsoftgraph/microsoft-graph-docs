@@ -33,7 +33,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [WorkbookWorksheet](../resources/worksheet.md) object in the response body.
+If successful, this method returns `200 OK` response code and [Worksheet](../resources/worksheet.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookWorksheet"
+  "@odata.type": "microsoft.graph.worksheet"
 } -->
 ```http
 HTTP/1.1 200 OK

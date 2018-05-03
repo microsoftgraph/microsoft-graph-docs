@@ -43,7 +43,11 @@ Here is an example of the request.
   "name": "chartpointscollection_itemat"
 }-->
 ```http
+<<<<<<< HEAD
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/series/<undefined>/points/itemAt
+=======
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/ItemAt
+>>>>>>> master
 Content-type: application/json
 Content-length: 20
 

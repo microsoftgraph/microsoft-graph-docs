@@ -9,8 +9,8 @@ Represents the background of a range object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFill](../api/rangefill_get.md) | [WorkbookRangeFill](rangefill.md) |Read properties and relationships of rangeFill object.|
-|[Update](../api/rangefill_update.md) | [WorkbookRangeFill](rangefill.md)	|Update RangeFill object. |
+|[Get RangeFill](../api/rangefill_get.md) | [RangeFill](rangefill.md) |Read properties and relationships of rangeFill object.|
+|[Update](../api/rangefill_update.md) | [RangeFill](rangefill.md)	|Update RangeFill object. |
 |[Clear](../api/rangefill_clear.md)|None|Resets the range background.|
 
 ## Properties
@@ -31,7 +31,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookRangeFill"
+  "@odata.type": "microsoft.graph.rangeFill"
 }-->
 
 ```json

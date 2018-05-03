@@ -5,7 +5,7 @@
 Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) 
 of the user's primary calendar.
 
-A **delta** function call for events is similar to a `GET /calendarView` request for 
+A **delta** function call for events is similar to a `GET /calendarview` request for 
 a range of dates in the user's primary calendar, except that by appropriately 
 applying [state tokens](../../../concepts/delta_query_overview.md) in one or more of these calls, 
 you can query for incremental changes in that calender view. This allows you to maintain and synchronize 
@@ -48,7 +48,7 @@ includes the encoded, desired parameters.
 | $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
 
 When you do a delta query on a calendar view, expect to get all the properties you'd normally get from 
-a `GET /calendarView` request. `$select` is not supported in this case. 
+a `GET /calendarview` request. `$select` is not supported in this case. 
 
 
 ## Request headers
@@ -77,7 +77,7 @@ appropriate [state tokens](../../../concepts/delta_query_overview.md), to get th
   "name": "event_delta"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarView/delta?startdatetime={start_datetime}&enddatetime={end_datetime}
+GET https://graph.microsoft.com/beta/me/calendarview/delta?startdatetime={start_datetime}&enddatetime={end_datetime}
 
 Prefer: odata.maxpagesize=2
 ```
@@ -103,7 +103,7 @@ Content-type: application/json
 Content-length: 359
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarView/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "originalStartTimeZone": "originalStartTimeZone-value",

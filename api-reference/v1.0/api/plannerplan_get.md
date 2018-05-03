@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "get_plannerplan"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
+GET https://graph.microsoft.com/v1.0/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

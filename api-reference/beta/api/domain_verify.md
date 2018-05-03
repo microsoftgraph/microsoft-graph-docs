@@ -47,7 +47,7 @@ If successful, this method returns `200 OK` response code and [domain](../resour
   "name": "domain_verify"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/domains/{domain-name}/verify
+POST https://graph.microsoft.com/beta/domains/contoso.com/verify
 ```
 
 ##### Response

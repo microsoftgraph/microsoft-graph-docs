@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/range
+POST /workbook/worksheets/{id|name}/Range
 
 ```
 ## Request headers
@@ -44,7 +44,7 @@ Here is an example of the request.
   "name": "worksheet_range"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/range
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/Range
 Content-type: application/json
 Content-length: 32
 
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRange"
+  "@odata.type": "microsoft.graph.range"
 } -->
 ```http
 HTTP/1.1 200 OK

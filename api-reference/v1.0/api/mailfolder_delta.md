@@ -100,7 +100,7 @@ Content-type: application/json
 Content-length: 254
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailFolders/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "displayName": "displayName-value",

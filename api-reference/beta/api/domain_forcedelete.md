@@ -64,7 +64,7 @@ If successful, this method returns `200 OK` response code.
   "name": "domain_forcedelete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/domains/{domain-name}/forceDelete
+POST https://graph.microsoft.com/beta/domains/contoso.com/forceDelete
 Content-type: application/json
 Content-length: 33
 

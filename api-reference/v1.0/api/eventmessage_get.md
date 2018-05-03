@@ -204,7 +204,7 @@ Content-type: application/json
    "replyTo":[
 
    ],
-   "event@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages/AAMkADYAAAImV_jAAA%3D/microsoft.graph.eventMessage/event/$entity",
+   "event@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages('AAMkADYAAAImV_jAAA%3D')/microsoft.graph.eventMessage/event/$entity",
    "event":{
       "@odata.etag":"W/\"V5Qf0i9DeEOoOqPo0mABLgAACJpBWg==\"",
       "id":"AAMkADYAAAImVu6AAA=",

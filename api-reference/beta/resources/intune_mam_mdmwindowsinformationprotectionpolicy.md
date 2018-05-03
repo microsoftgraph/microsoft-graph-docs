@@ -61,12 +61,12 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy"
+  "@odata.type": "microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
+  "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
   "displayName": "String",
   "description": "String",
   "createdDateTime": "String (timestamp)",

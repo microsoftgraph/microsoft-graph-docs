@@ -89,7 +89,7 @@ Content-length: 272
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages/$entity",
-  "@odata.id": "https://graph.microsoft.com/beta/users('86b6ceaf-57f7-4278-97c4-4da0a97f6cdb@70559e59-b378-49ea-8e53-07a3a3d27f5b')/messages/AAMkADA1MTAAAH5JKqAAA=",
+  "@odata.id": "https://graph.microsoft.com/beta/users('86b6ceaf-57f7-4278-97c4-4da0a97f6cdb@70559e59-b378-49ea-8e53-07a3a3d27f5b')/messages('AAMkADA1MTAAAH5JKqAAA=')",
   "@odata.etag": "W/\"CQAAABYAAADX8oL1Wa7jQbcPAHouCzswAAAH5/DQ\"",
   "id": "AAMkADA1MTAAAH5JKqAAA=",
   "subject": "FW: Let's start a group",

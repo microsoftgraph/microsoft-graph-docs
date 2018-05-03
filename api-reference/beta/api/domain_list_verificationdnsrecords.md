@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "get_verificationdnsrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/{domain-name}/verificationDnsRecords
+GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords
 ```
 
 ##### Response

@@ -15,9 +15,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/<name>/axes/valueAxis/format/font
-PATCH /workbook/worksheets/{id|name}/charts/<name>/axes/seriesAxis/format/font
-PATCH /workbook/worksheets/{id|name}/charts/<name>/axes/categoryaxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
 ```
 ## Optional request headers
 | Name       | Description|
@@ -39,7 +39,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [WorkbookChartFont](../resources/chartfont.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [ChartFont](../resources/chartfont.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -48,7 +48,7 @@ Here is an example of the request.
   "name": "update_chartfont"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/axes/valueAxis/format/font
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
 Content-type: application/json
 Content-length: 134
 
@@ -66,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartFont"
+  "@odata.type": "microsoft.graph.chartFont"
 } -->
 ```http
 HTTP/1.1 200 OK

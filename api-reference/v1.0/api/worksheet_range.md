@@ -41,6 +41,7 @@ Here is an example of the request.
   "name": "worksheet_range"
 }-->
 ```http
+<<<<<<< HEAD
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='A1:B2')
 ```
 
@@ -53,6 +54,9 @@ Here is an example of the response. Note: The response object shown here may be 
 } -->
 ```http
 HTTP/1.1 200 OK
+=======
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/Range
+>>>>>>> master
 Content-type: application/json
 Content-length: 169
 

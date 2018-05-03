@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/<name>/setData
+POST /workbook/worksheets/{id|name}/charts(<name>)/setData
 
 ```
 ## Request headers
@@ -29,7 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|sourceData|Json|The Range object corresponding to the source data.|
+|sourceData|string|The Range object corresponding to the source data.|
 |seriesBy|string|Optional. Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, Columns.  Possible values are: `Auto`, `Columns`, `Rows`.|
 
 ## Response
@@ -45,7 +45,7 @@ Here is an example of the request.
   "name": "chart_setdata"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/setData
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/setData
 Content-type: application/json
 Content-length: 70
 

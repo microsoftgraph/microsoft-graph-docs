@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/<name>/range/format
+PATCH /workbook/names(<name>)/range/format
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
@@ -38,12 +38,12 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [WorkbookRangeFormat](../resources/rangeformat.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [RangeFormat](../resources/rangeformat.md) object in the response body.
 ## Example
 
 ### Update the format, fill, and font properties in three table cells
 
-The following examples demonstrate how to update properties of the [WorkbookRangeFormat](../resources/rangeformat.md), [WorkbookRangeFill](../resources/rangefill.md), and [WorkbookRangeFont](../resources/rangefont.md) properties of a specified range.
+The following examples demonstrate how to update properties of the [RangeFormat](../resources/rangeformat.md), [RangeFill](../resources/rangefill.md), and [RangeFont](../resources/rangefont.md) properties of a specified range.
 
 The result of this set of requests is a table with three cells formatted like the top three cells in the image below.
 
@@ -72,7 +72,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRangeFormat"
+  "@odata.type": "microsoft.graph.rangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -109,7 +109,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRangeFont"
+  "@odata.type": "microsoft.graph.rangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -145,7 +145,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRangeFill"
+  "@odata.type": "microsoft.graph.rangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -179,7 +179,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRangeFormat"
+  "@odata.type": "microsoft.graph.rangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -215,7 +215,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRangeFont"
+  "@odata.type": "microsoft.graph.rangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -251,7 +251,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRangeFill"
+  "@odata.type": "microsoft.graph.rangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -286,7 +286,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRangeFormat"
+  "@odata.type": "microsoft.graph.rangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -323,7 +323,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRangeFont"
+  "@odata.type": "microsoft.graph.rangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -359,7 +359,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRangeFill"
+  "@odata.type": "microsoft.graph.rangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK

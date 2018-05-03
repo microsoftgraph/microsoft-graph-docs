@@ -15,9 +15,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/<name>/range/entireColumn
-GET /workbook/worksheets/{id|name}/range(address='<address>')/entireColumn
-GET /workbook/tables/{id|name}/columns/{id|name}/range/entireColumn
+GET /workbook/names(<name>)/range/EntireColumn
+GET /workbook/worksheets/{id|name}/range(address='<address>')/EntireColumn
+GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireColumn
 
 ```
 ## Request headers
@@ -41,7 +41,7 @@ Here is an example of the request.
   "name": "range_entirecolumn"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/<name>/range/entireColumn
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/EntireColumn
 ```
 
 ##### Response
@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRange"
+  "@odata.type": "microsoft.graph.range"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -25,6 +25,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. Required.|
+|alternativeSecurityIds|alternativeSecurityId collection| For internal use only. Not nullable. |
 |approximateLastSignInDateTime|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` Read-only. |
 |deviceId|string| Unique identifier set by Azure Device Registration Service at the time of registration. |
 |deviceMetadata|String| For interal use only. Set to null. |

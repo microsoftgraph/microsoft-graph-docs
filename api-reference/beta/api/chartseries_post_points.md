@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/<name>/series/<undefined>/points
+POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
 
 ```
 ## Request headers
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "create_chartpoints_from_chartseries"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/series/<undefined>/points
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
 Content-type: application/json
 Content-length: 3
 
@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartPoint"
+  "@odata.type": "microsoft.graph.chartPoint"
 } -->
 ```http
 HTTP/1.1 201 Created

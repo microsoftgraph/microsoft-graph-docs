@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/<name>/series/itemAt
+POST /workbook/worksheets/{id|name}/charts(<name>)/series/ItemAt
 
 ```
 ## Request headers
@@ -33,7 +33,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [WorkbookChartSeries](../resources/chartseries.md) object in the response body.
+If successful, this method returns `200 OK` response code and [ChartSeries](../resources/chartseries.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -41,11 +41,10 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "idempotent": true,
   "name": "chartseriescollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/series/itemAt
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series/ItemAt
 Content-type: application/json
 Content-length: 20
 
@@ -60,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartSeries"
+  "@odata.type": "microsoft.graph.chartSeries"
 } -->
 ```http
 HTTP/1.1 200 OK

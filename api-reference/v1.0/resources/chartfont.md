@@ -19,10 +19,10 @@ This object represents the font attributes (font name, font size, color, etc.) f
 |name|string|Font name (e.g. "Calibri")|
 |size|double|Size of the font (e.g. 11)|
 |underline|string|Type of underline applied to the font. Possible values are: `None`, `Single`.|
-| id       |string   | Unique identifier. Read-only.
 
 ## Relationships
 None
+
 
 ## JSON representation
 
@@ -38,7 +38,6 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string",
   "bold": true,
   "color": "string",
   "italic": true,
@@ -46,6 +45,7 @@ Here is a JSON representation of the resource.
   "size": 1024,
   "underline": "string"
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
