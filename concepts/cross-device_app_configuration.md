@@ -27,13 +27,15 @@ By associating push notification credentials for each of the platforms where you
 You can host your cross-device app configuration either as a JSON file hosted on your domain or as a profile configurable via [Windows Dev Center](https://developer.microsoft.com/en-us/windows). You should choose a hosting option based on the Project Rome capabilities you want to enable in your apps. 
 
 ### Windows Dev Center profile - *Recommended* 
-You can use all Project Rome capabilities using a cross-device app managed in [Windows Dev Center](https://developer.microsoft.com/en-us/windows). The Windows Dev Center also offers the *best* way to manage any cross-device app configuration changes. You can save updates to an existing profile securely until you're ready to publish changes to production. When you publish changes to an existing cross-device app in the Dev Center the new profile will be effective after approximately **one hour**.
+You can use all Project Rome capabilities using a cross-device app managed in [Windows Dev Center](https://developer.microsoft.com/en-us/windows). The Windows Dev Center also offers the *best* way to manage any cross-device app configuration changes. You can save updates to an existing profile securely until you're ready to publish changes to production. When you publish changes to an existing cross-device app in the Dev Center the new profile will be effective after approximately **one hour**.  
+[view details](#configure-a-cross-device-app-using-windows-dev-center)
 
 ### Externally hosted JSON file - *Limited*
 You can use the following Project Rome capabilities on all supported platforms using a cross-device app managed as an externally hosted JSON file:   
 * Read & write user activities from all platforms using the MSGraph [Activity Feed API](../api-reference/v1.0/resources/activity-feed-api-overview.md)
 * Write user activities from all platforms (Windows, iOS, Android, web) using either the Project Rome SDK
-If you will **only** use the capabilities outlined above, you can host your cross-device app configuration externally on your domain as a JSON file. 
+If you will **only** use the capabilities outlined above, you can host your cross-device app configuration externally on your domain as a JSON file.  
+[view details](#configure-a-cross-device-app-using-an-externally-hosted-JSON-file)
 
 Once you've determined the method you'll use to manage your cross-device app, you're ready to get started collecting the information you'll need to configure it. Instructions for how to configure your cross-device app using each hosting method are outlined below.  
 
