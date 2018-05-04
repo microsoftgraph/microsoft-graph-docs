@@ -69,7 +69,7 @@ Content-type: application/json
 Content-length: 72
 
 {
-  "contributionToContentDiscoveryAsOrganizationDisabled": false
+  "contributionToContentDiscoveryAsOrganizationDisabled": false,
   "contributionToContentDiscoveryDisabled": true
 }
 ```
