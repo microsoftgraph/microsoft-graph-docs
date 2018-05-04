@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryroles/{id}/members/{id}/$ref
+DELETE /directoryRoles/{id}/members/{id}/$ref
 ```
 
 ## Request headers
@@ -46,7 +46,7 @@ Here is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryroles/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/{id}/$ref
 ```
 
 ##### Response

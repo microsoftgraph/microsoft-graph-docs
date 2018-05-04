@@ -13,8 +13,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueAxis
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesAxis
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
 ```
 ## Optional request headers
@@ -44,7 +44,7 @@ Here is an example of the request.
   "name": "update_chartaxis"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueAxis
 Content-type: application/json
 Content-length: 64
 
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartaxis"
+  "@odata.type": "microsoft.graph.workbookChartAxis"
 } -->
 ```http
 HTTP/1.1 200 OK
