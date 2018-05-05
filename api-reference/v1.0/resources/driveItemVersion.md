@@ -11,7 +11,7 @@ The following tasks are available for driveItemVersion resources.
 | :--------------------------------- | :-------------------------- |
 | [List versions][version-list]      | `GET /drive/items/{item-id}/versions`  |
 | [Get version][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
-| [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/contents` |
+| [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
 | [Restore version][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreVersion` |
 
 [version-list]: ../api/driveitem_list_versions.md
@@ -51,7 +51,7 @@ The following table defines the relationships that the **driveItemVersion** reso
 
 | Relationship name |  Type  |            Description             |
 | :---------------- | :----- | :--------------------------------- |
-| **contents**       | Stream | The content stream of the version. |
+| **content**       | Stream | The content stream of the version. |
 
 <!-- {
   "type": "#page.annotation",
