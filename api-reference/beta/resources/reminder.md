@@ -2,6 +2,8 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
+A reminder for an [event](event.md) in a user [calendar](calendar.md).
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

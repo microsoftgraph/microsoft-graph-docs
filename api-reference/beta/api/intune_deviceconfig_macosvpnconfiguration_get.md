@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Optional query parameters
@@ -50,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1927
+Content-Length: 1873
 
 {
   "value": {
@@ -69,7 +70,6 @@ Content-Length: 1927
     "server": {
       "@odata.type": "microsoft.graph.vpnServer",
       "description": "Description value",
-      "ipAddressOrFqdn": "Ip Address Or Fqdn value",
       "address": "Address value",
       "isDefaultServer": true
     },

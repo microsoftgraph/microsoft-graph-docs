@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Request headers
@@ -43,9 +44,9 @@ The following table shows the properties that are required when you create the [
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|deliveryOptimizationMode|String|Delivery Optimization Mode Possible values are: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
-|prereleaseFeatures|String|The pre-release features. Possible values are: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
-|automaticUpdateMode|String|Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
+|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune_deviceconfig_windowsdeliveryoptimizationmode.md)|Delivery Optimization Mode. Possible values are: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
+|prereleaseFeatures|[prereleaseFeatures](../resources/intune_deviceconfig_prereleasefeatures.md)|The pre-release features. Possible values are: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
+|automaticUpdateMode|[automaticUpdateMode](../resources/intune_deviceconfig_automaticupdatemode.md)|Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
 |microsoftUpdateServiceAllowed|Boolean|Allow Microsoft Update Service|
 |driversExcluded|Boolean|Exclude Windows update Drivers|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune_deviceconfig_windowsupdateinstallscheduletype.md)|Installation schedule|
@@ -55,10 +56,10 @@ The following table shows the properties that are required when you create the [
 |featureUpdatesPaused|Boolean|Pause Feature Updates|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Quality Updates Pause Expiry datetime|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Feature Updates Pause Expiry datetime|
-|businessReadyUpdatesOnly|String|Determines which branch devices will receive their updates from Possible values are: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
-|previewBuildSetting|String|Set the insider build control in the advanced options for Windows Update Possible values are: `userDefined`, `allowed`, `notAllowed`.|
+|businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune_deviceconfig_windowsupdatetype.md)|Determines which branch devices will receive their updates from. Possible values are: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
+|previewBuildSetting|[windowsUpdateInsiderBuildControl](../resources/intune_deviceconfig_windowsupdateinsiderbuildcontrol.md)|Set the insider build control in the advanced options for Windows Update. Possible values are: `userDefined`, `allowed`, `notAllowed`.|
 |skipChecksBeforeRestart|Boolean|Set to skip all check before restart: Battery level = 40%, User presence, Display Needed, Presentation mode, Full screen mode, phone call state, game mode etc. |
-|updateWeeks|String|Scheduled the update installation on the weeks of the month Possible values are: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
+|updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune_deviceconfig_windowsupdateforbusinessupdateweeks.md)|Scheduled the update installation on the weeks of the month. Possible values are: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
 
 
 
@@ -71,7 +72,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1050
+Content-length: 1002
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -86,8 +87,7 @@ Content-length: 1050
   "installationSchedule": {
     "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall",
     "scheduledInstallDay": "everyday",
-    "scheduledInstallTime": "11:59:31.3170000",
-    "restartMode": "batteryLevelCheckEnabled"
+    "scheduledInstallTime": "11:59:31.3170000"
   },
   "qualityUpdatesDeferralPeriodInDays": 2,
   "featureUpdatesDeferralPeriodInDays": 2,
@@ -107,7 +107,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1234
+Content-Length: 1186
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -125,8 +125,7 @@ Content-Length: 1234
   "installationSchedule": {
     "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall",
     "scheduledInstallDay": "everyday",
-    "scheduledInstallTime": "11:59:31.3170000",
-    "restartMode": "batteryLevelCheckEnabled"
+    "scheduledInstallTime": "11:59:31.3170000"
   },
   "qualityUpdatesDeferralPeriodInDays": 2,
   "featureUpdatesDeferralPeriodInDays": 2,

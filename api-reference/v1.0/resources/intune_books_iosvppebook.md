@@ -23,7 +23,7 @@ Inherits from [managedEBook](../resources/intune_books_managedebook.md)
 |description|String|Description. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |publisher|String|Publisher. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |publishedDateTime|DateTimeOffset|The date and time when the eBook was published. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Book cover. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Book cover. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |createdDateTime|DateTimeOffset|The date and time when the eBook file was created. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the eBook was last modified. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |informationUrl|String|The more information Url. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|

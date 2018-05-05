@@ -47,7 +47,7 @@ The following table shows the properties that are required when you create the [
 |maintenanceWindowBlocked|Boolean|Indicates whether or not to Block setting a maintenance window for device updates.|
 |maintenanceWindowDurationInHours|Int32|Maintenance window duration for device updates. Valid values 0 to 5|
 |maintenanceWindowStartTime|TimeOfDay|Maintenance window start time for device updates.|
-|miracastChannel|String|The channel. Possible values are: `userDefined`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `eleven`, `thirtySix`, `forty`, `fortyFour`, `fortyEight`, `oneHundredFortyNine`, `oneHundredFiftyThree`, `oneHundredFiftySeven`, `oneHundredSixtyOne`, `oneHundredSixtyFive`.|
+|miracastChannel|[miracastChannel](../resources/intune_deviceconfig_miracastchannel.md)|The channel. Possible values are: `userDefined`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `eleven`, `thirtySix`, `forty`, `fortyFour`, `fortyEight`, `oneHundredFortyNine`, `oneHundredFiftyThree`, `oneHundredFiftySeven`, `oneHundredSixtyOne`, `oneHundredSixtyFive`.|
 |miracastBlocked|Boolean|Indicates whether or not to Block wireless projection.|
 |miracastRequirePin|Boolean|Indicates whether or not to require a pin for wireless projection.|
 |settingsBlockMyMeetingsAndFiles|Boolean|Specifies whether to disable the "My meetings and files" feature in the Start menu, which shows the signed-in user's meetings and files from Office 365.|
@@ -59,7 +59,7 @@ The following table shows the properties that are required when you create the [
 |settingsSleepTimeoutInMinutes|Int32|Specifies the number of minutes until the Hub enters sleep mode.|
 |welcomeScreenBlockAutomaticWakeUp|Boolean|Indicates whether or not to Block the welcome screen from waking up automatically when someone enters the room.|
 |welcomeScreenBackgroundImageUrl|String|The welcome screen background image URL. The URL must use the HTTPS protocol and return a PNG image.|
-|welcomeScreenMeetingInformation|String|The welcome screen meeting information shown. Possible values are: `userDefined`, `showOrganizerAndTimeOnly`, `showOrganizerAndTimeAndSubject`.|
+|welcomeScreenMeetingInformation|[welcomeScreenMeetingInformation](../resources/intune_deviceconfig_welcomescreenmeetinginformation.md)|The welcome screen meeting information shown. Possible values are: `userDefined`, `showOrganizerAndTimeOnly`, `showOrganizerAndTimeAndSubject`.|
 
 
 

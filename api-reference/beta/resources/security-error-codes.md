@@ -34,3 +34,7 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/29000",    (usual timeout limit is s
 ```
 
 > **Note:** Each HTTP header is a collection of subitems, so users can enumerate the Warning header and check all items.
+
+## Additional resources
+
+If you’re having trouble with authentication see our [blog post](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376#M2).

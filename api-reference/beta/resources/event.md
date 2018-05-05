@@ -104,7 +104,7 @@ Here is a JSON representation of the resource
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
 |sensitivity|String| Possible values are: `normal`, `personal`, `private`, `confidential`.|
-|seriesMasterId|String|The categories assigned to the item.|
+|seriesMasterId|String|The ID for the recurring series master item, if this event is part of a recurring series.|
 |showAs|String|The status to show. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[DateTimeTimeZone](datetimetimezone.md)|The start time of the event.|
 |subject|String|The text of the event's subject line.|

@@ -55,7 +55,7 @@ Content-length: 364
 
 {
     "appActivityId": "/article?12345",
-    "activitySourceHost": "http://www.contoso.com",
+    "activitySourceHost": "https://www.contoso.com",
     "userTimezone": "Africa/Casablanca",
     "appDisplayName": "Contoso, Ltd.",
     "activationUrl": "http://www.contoso.com/article?id=12345",
@@ -74,7 +74,7 @@ Content-length: 364
             "addImageQuery": "false",
         },
         "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
-        "backgroundColor": "#FFD4FF7F",
+        "backgroundColor": "#ff0000",
         "displayText": "Contoso How-To: How to Tie a Reef Knot",
         "content": {
             "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
@@ -121,7 +121,7 @@ Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
             "alternateText": "Contoso, Ltd.",
             "addImageQuery": false
         },
-        "backgroundColor": "#FFD4FF7F",
+        "backgroundColor": "#ff0000",
         "content": {
             "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
             "type": "AdaptiveCard",
@@ -164,7 +164,7 @@ Content-length: 364
 
 {
     "appActivityId": "/article?12345",
-    "activitySourceHost": "http://www.contoso.com",
+    "activitySourceHost": "https://www.contoso.com",
     "userTimezone": "Africa/Casablanca",
     "appDisplayName": "Contoso, Ltd.",
     "activationUrl": "http://www.contoso.com/article?id=12345",
@@ -183,7 +183,7 @@ Content-length: 364
             "addImageQuery": "false",
         },
         "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
-        "backgroundColor": "#FFD4FF7F",
+        "backgroundColor": "#ff0000",
         "displayText": "Contoso How-To: How to Tie a Reef Knot",
         "content": {
             "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
@@ -237,7 +237,7 @@ Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
             "alternateText": "Contoso, Ltd.",
             "addImageQuery": false
         },
-        "backgroundColor": "#FFD4FF7F",
+        "backgroundColor": "#ff0000",
         "content": {
             "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
             "type": "AdaptiveCard",

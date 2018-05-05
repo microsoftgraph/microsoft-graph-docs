@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/deviceConfigurations
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
@@ -43,13 +44,13 @@ The following table shows the properties that are required when you create the a
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |connectionName|String|Connection name displayed to the user.|
-|connectionType|String|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`.|
+|connectionType|[androidVpnConnectionType](../resources/intune_deviceconfig_androidvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `paloAltoGlobalProtect`.|
 |role|String|Role when connection type is set to Pulse Secure.|
 |realm|String|Realm when connection type is set to Pulse Secure.|
 |servers|[vpnServer](../resources/intune_deviceconfig_vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements.|
 |fingerprint|String|Fingerprint is a string that will be used to verify the VPN server can be trusted, which is only applicable when connection type is Check Point Capsule VPN.|
-|customData|[keyValue](../resources/intune_deviceconfig_keyvalue.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
-|authenticationMethod|String|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
+|customData|[keyValue](../resources/keyvalue.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
+|authenticationMethod|[vpnAuthenticationMethod](../resources/intune_deviceconfig_vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
 
 
 
@@ -62,7 +63,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 844
+Content-length: 790
 
 {
   "@odata.type": "#microsoft.graph.androidVpnConfiguration",
@@ -78,7 +79,6 @@ Content-length: 844
     {
       "@odata.type": "microsoft.graph.vpnServer",
       "description": "Description value",
-      "ipAddressOrFqdn": "Ip Address Or Fqdn value",
       "address": "Address value",
       "isDefaultServer": true
     }
@@ -100,7 +100,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 952
+Content-Length: 898
 
 {
   "@odata.type": "#microsoft.graph.androidVpnConfiguration",
@@ -118,7 +118,6 @@ Content-Length: 952
     {
       "@odata.type": "microsoft.graph.vpnServer",
       "description": "Description value",
-      "ipAddressOrFqdn": "Ip Address Or Fqdn value",
       "address": "Address value",
       "isDefaultServer": true
     }

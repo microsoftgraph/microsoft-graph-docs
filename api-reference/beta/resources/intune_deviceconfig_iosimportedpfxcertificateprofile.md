@@ -26,7 +26,7 @@ Inherits from [iosCertificateProfile](../resources/intune_deviceconfig_ioscertif
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|intendedPurpose|String|Not yet documented Possible values are: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
+|intendedPurpose|[intendedPurpose](../resources/intune_deviceconfig_intendedpurpose.md)|Not yet documented. Possible values are: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
 
 ## Relationships
 |Relationship|Type|Description|

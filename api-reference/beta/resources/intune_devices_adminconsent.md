@@ -8,7 +8,7 @@ Admin consent information.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|shareAPNSData|String|The admin consent state of sharing user and device data to Apple. Possible values are: `notConfigured`, `granted`, `notGranted`.|
+|shareAPNSData|[adminConsentState](../resources/intune_devices_adminconsentstate.md)|The admin consent state of sharing user and device data to Apple. Possible values are: `notConfigured`, `granted`, `notGranted`.|
 
 ## Relationships
 None

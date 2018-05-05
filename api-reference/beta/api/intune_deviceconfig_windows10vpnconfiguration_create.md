@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/deviceConfigurations
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
@@ -45,9 +46,12 @@ The following table shows the properties that are required when you create the w
 |connectionName|String|Connection name displayed to the user. Inherited from [windowsVpnConfiguration](../resources/intune_deviceconfig_windowsvpnconfiguration.md)|
 |servers|[vpnServer](../resources/intune_deviceconfig_vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements. Inherited from [windowsVpnConfiguration](../resources/intune_deviceconfig_windowsvpnconfiguration.md)|
 |customXml|Binary|Custom XML commands that configures the VPN connection. (UTF8 encoded byte array) Inherited from [windowsVpnConfiguration](../resources/intune_deviceconfig_windowsvpnconfiguration.md)|
-|connectionType|String|Connection type. Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`.|
+|profileTarget|[windows10VpnProfileTarget](../resources/intune_deviceconfig_windows10vpnprofiletarget.md)|Profile target type. Possible values are: `user`, `device`, `autoPilotDevice`.|
+|connectionType|[windows10VpnConnectionType](../resources/intune_deviceconfig_windows10vpnconnectiontype.md)|Connection type. Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`.|
 |enableSplitTunneling|Boolean|Enable split tunneling.|
-|authenticationMethod|String|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `customEapXml`.|
+|enableAlwaysOn|Boolean|Enable Always On mode.|
+|enableDeviceTunnel|Boolean|Enable device tunnel.|
+|authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune_deviceconfig_windows10vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `customEapXml`.|
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |enableConditionalAccess|Boolean|Enable conditional access.|
 |enableSingleSignOnWithAlternateCertificate|Boolean|Enable single sign-on (SSO) with alternate certificate.|
@@ -73,7 +77,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3111
+Content-length: 3145
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
@@ -86,14 +90,16 @@ Content-length: 3111
     {
       "@odata.type": "microsoft.graph.vpnServer",
       "description": "Description value",
-      "ipAddressOrFqdn": "Ip Address Or Fqdn value",
       "address": "Address value",
       "isDefaultServer": true
     }
   ],
   "customXml": "Y3VzdG9tWG1s",
+  "profileTarget": "device",
   "connectionType": "f5EdgeClient",
   "enableSplitTunneling": true,
+  "enableAlwaysOn": true,
+  "enableDeviceTunnel": true,
   "authenticationMethod": "usernameAndPassword",
   "rememberUserCredentials": true,
   "enableConditionalAccess": true,
@@ -185,7 +191,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3219
+Content-Length: 3253
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
@@ -200,14 +206,16 @@ Content-Length: 3219
     {
       "@odata.type": "microsoft.graph.vpnServer",
       "description": "Description value",
-      "ipAddressOrFqdn": "Ip Address Or Fqdn value",
       "address": "Address value",
       "isDefaultServer": true
     }
   ],
   "customXml": "Y3VzdG9tWG1s",
+  "profileTarget": "device",
   "connectionType": "f5EdgeClient",
   "enableSplitTunneling": true,
+  "enableAlwaysOn": true,
+  "enableDeviceTunnel": true,
   "authenticationMethod": "usernameAndPassword",
   "rememberUserCredentials": true,
   "enableConditionalAccess": true,

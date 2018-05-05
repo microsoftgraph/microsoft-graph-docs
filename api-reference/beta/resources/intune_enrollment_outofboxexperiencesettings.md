@@ -10,7 +10,7 @@ Out of box experience setting
 |:---|:---|:---|
 |hidePrivacySettings|Boolean|Show or hide privacy settings to user|
 |hideEULA|Boolean|Show or hide EULA to user|
-|userType|String|Type of user Possible values are: `administrator`, `standard`.|
+|userType|[windowsUserType](../resources/intune_enrollment_windowsusertype.md)|Type of user. Possible values are: `administrator`, `standard`.|
 
 ## Relationships
 None

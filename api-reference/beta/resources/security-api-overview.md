@@ -8,15 +8,11 @@ The security API in Microsoft Graph makes it easy to connect with and extend Int
 
 ## Why connect to the Intelligent Security Graph?
 
-By using the security API to connect with Microsoft and partner security solutions that are part of the Intelligent Security Graph, you can more readily realize and enrich the value of these solutions. 
+The security API provides a unified gateway to connect to security solutions from Microsoft and partners. Queries are federated to all security providers in Microsoft Graph and responses are aggregated.
 
 ### Unify and standardize alert management
 
 Correlate alerts across security solutions more easily with a common alert schema. Write code once to integrate alerts from any Microsoft Graph integrated security solution, and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions such as Splunk and IBM QRadar via [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub).
-
-### Federated security aggregation service
-
-Queries submitted to the Microsoft Graph security API are sent to all onboarded security providers and the aggregated responses are returned to the caller.
 
 ### Unlock security context to drive investigation
 
@@ -31,7 +27,6 @@ Build and run investigation and remediation runbooks, automate security policy c
 
 ## Resources
 
-* [ASP.NET (C#) SDK](https://www.nuget.org/packages/Microsoft.Graph)
 * [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
 * [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
 
@@ -42,6 +37,10 @@ Microsoft Graph security solutions will receive alerts from the following data p
 
 ## Authorization
 
+The security API provides access to some of your organization’s most sensitive information. To better understand the types of authorization and how to manage them, we provide additional details in our Microsoft TechCommuity forums at the link below. 
+
+[Understanding authorization when calling the Microsoft Graph Security API](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376)
+
 For more information about permissions, including delegated and application permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 ## Common use cases
@@ -50,7 +49,7 @@ The following are some of the most popular requests for working with the securit
 
 | **Use cases**   | **REST resources** | **Try it in Graph Explorer** |
 |:---------------|:--------|:----------|
-| Get alerts | [Get alerts](../api/alert_list.md) | [https://graph.microsoft.com/beta/security/alerts](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/alerts&method=GET&version=testSecurity&GraphUrl=https://graph.microsoft.com) |
+| Get alerts | [Get alerts](../api/alert_list.md) | [https://graph.microsoft.com/beta/security/alerts](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/alerts&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | Update alerts | [Update alert](../api/alert_update.md) | `https://graph.microsoft.com/beta/security/alerts/{alert-id}` |
 
 <!-- (| Get security profiles | [Security profiles](../resources/securityprofiles.md) | [https://graph.microsoft.com/beta/security/hostSecurityProfiles](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/hostSecurityProfiles&method=GET&version=testSecurity&GraphUrl=https://graph.microsoft.com) | ) -->

@@ -246,5 +246,7 @@ and other [parameters](../api-reference/v1.0/api/user_findmeetingtimes.md#reques
 
 After getting meeting time suggestions, you may want to:
 
-1. [Create an event and send it as a meeting request](../api-reference/v1.0/api/user_post_events.md) 
-2. [Add an attachment](../api-reference/v1.0/api/event_post_attachments.md) to the event
+1. [Create an event and send it as a meeting request](../api-reference/v1.0/api/user_post_events.md).
+2. [Add an attachment](../api-reference/v1.0/api/event_post_attachments.md) to the event.
+
+Find out more about [integrating with Outlook calendar](outlook-calendar-concept-overview.md).

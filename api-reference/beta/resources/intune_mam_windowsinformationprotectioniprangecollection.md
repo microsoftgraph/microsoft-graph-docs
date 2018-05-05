@@ -9,7 +9,7 @@ Windows Information Protection IP Range Collection
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name|
-|ranges|[ipRange](../resources/intune_mam_iprange.md) collection|Collection of ip ranges|
+|ranges|[ipRange](../resources/intune_shared_iprange.md) collection|Collection of ip ranges|
 
 ## Relationships
 None

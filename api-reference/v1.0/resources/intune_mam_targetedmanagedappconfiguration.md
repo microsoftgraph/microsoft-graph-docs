@@ -35,7 +35,7 @@ Inherits from [managedAppConfiguration](../resources/intune_mam_managedappconfig
 |:---|:---|:---|
 |apps|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) collection|List of apps to which the policy is deployed.|
 |deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration.|
-|assignments|targetedManagedAppPolicyAssignment collection|Navigation property to list of inclusion and exclusion groups to which the policy is deployed.|
+|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) collection|Navigation property to list of inclusion and exclusion groups to which the policy is deployed.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

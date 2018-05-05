@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Dismiss a reminder that has been triggered.
+Dismiss a reminder that has been triggered for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -19,11 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /me/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/events/{id}/dismissReminder
-POST /groups/{id}/events/{id}/dismissReminder
 
 POST /me/calendar/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendar/events/{id}/dismissReminder
-POST /groups/{id}/calendar/events/{id}/dismissReminder
 
 POST /me/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/dismissReminder

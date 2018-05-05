@@ -46,9 +46,11 @@ The following table shows the properties that are required when you create the [
 |id|String|Key of the entity.|
 |pendingCount|Int32|Number of pending devices|
 |notApplicableCount|Int32|Number of not applicable devices|
+|notApplicablePlatformCount|Int32|Number of not applicable devices due to mismatch platform and policy|
 |successCount|Int32|Number of succeeded devices|
 |errorCount|Int32|Number of error devices|
 |failedCount|Int32|Number of failed devices|
+|conflictCount|Int32|Number of devices in conflict|
 |lastUpdateDateTime|DateTimeOffset|Last update time|
 |configurationVersion|Int32|Version of the policy for that overview|
 
@@ -63,14 +65,16 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview
 Content-type: application/json
-Content-length: 212
+Content-length: 273
 
 {
   "pendingCount": 12,
   "notApplicableCount": 2,
+  "notApplicablePlatformCount": 10,
   "successCount": 12,
   "errorCount": 10,
   "failedCount": 11,
+  "conflictCount": 13,
   "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
   "configurationVersion": 4
 }
@@ -81,16 +85,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 333
+Content-Length: 394
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationDeviceOverview",
   "id": "62d48e3a-8e3a-62d4-3a8e-d4623a8ed462",
   "pendingCount": 12,
   "notApplicableCount": 2,
+  "notApplicablePlatformCount": 10,
   "successCount": 12,
   "errorCount": 10,
   "failedCount": 11,
+  "conflictCount": 13,
   "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
   "configurationVersion": 4
 }
