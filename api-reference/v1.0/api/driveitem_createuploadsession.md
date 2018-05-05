@@ -45,16 +45,26 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### Request body
 
 No request body is required.
-However, you can specify a request body to provide additional data about the file being uploaded.
+However, you can specify an `item` property in the request body, providing additional data about the file being uploaded.
+
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
+```json
+{
+  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "description": "description",
+  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
+  "name": "filename.txt"
+}
+```
 
 For example, to control the behavior if the filename is already taken, you can specify the conflict behavior property in the body of the request.
 
 <!-- { "blockType": "ignored" } -->
 ```json
 {
-    "item": {
-        "@microsoft.graph.conflictBehavior": "rename"
-    }
+  "item": {
+    "@microsoft.graph.conflictBehavior": "rename"
+  }
 }
 ```
 
@@ -76,6 +86,7 @@ Content-Type: application/json
 
 {
   "item": {
+    "@odata.type": "microsoft.graph.driveItemUploadableProperties",
     "@microsoft.graph.conflictBehavior": "rename",
     "name": "largefile.dat"
   }

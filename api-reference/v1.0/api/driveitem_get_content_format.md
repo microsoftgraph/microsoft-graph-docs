@@ -49,7 +49,7 @@ The following values are valid for the **format** parameter:
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
 ```http
-GET /drive/items/{item-id}/content?format={format}
+GET /me/drive/items/{item-id}/content?format={format}
 ```
 
 ## Response

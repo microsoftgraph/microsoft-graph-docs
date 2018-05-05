@@ -238,7 +238,7 @@ extension:
   "name": "post_opentypeextension_2"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
+POST https://graph.microsoft.com/v1.0/me/messages/{message-id}/extensions
 
 { 
   "@odata.type" : "microsoft.graph.openTypeExtension", 
@@ -406,7 +406,7 @@ in turn contains the **body** of the new post, and the following data for the ex
   "name": "post_opentypeextension_5"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations
+POST https://graph.microsoft.com/v1.0/groups/{group-id}/conversations
 
 {
   "Topic": "Does anyone have a second?",

@@ -128,7 +128,7 @@ The first example shows how to get an item attachment on a message. The properti
   "name": "get_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
+GET https://graph.microsoft.com/v1.0/me/messages/{message-id}/attachments/{attachment-id}
 ```
 
 ##### Response 1
@@ -161,7 +161,7 @@ a message; the properties of that attached message are also returned.
   "name": "get_and_expand_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item 
+GET https://graph.microsoft.com/v1.0/me/messages/{message-id}/attachments/{attachment-id}/?$expand=microsoft.graph.itemattachment/item 
 ```
 
 ##### Response 2

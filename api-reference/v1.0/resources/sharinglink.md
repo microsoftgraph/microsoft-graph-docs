@@ -42,7 +42,7 @@ Here is a JSON representation of the resource.
 
 [Identity]: identity.md
 
-## Type enumeration
+## Type options
 
 This table defines the possible values for the **type** property:
 

@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/clear
+POST /workbook/names/<name>/range/clear
 POST /workbook/worksheets/{id|name}/range(address='<address>')/clear
 POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
@@ -44,7 +44,7 @@ Here is an example of the request.
   "name": "range_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/<name>/range/clear
 Content-type: application/json
 Content-length: 32
 

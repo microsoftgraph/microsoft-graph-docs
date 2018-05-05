@@ -202,7 +202,7 @@ Content-type: application/json
 }
 ```
 
-## Size values
+## Size options
 
 This table defines the possible thumbnail sizes.
 While you can request any arbitrary thumbnail size, the defined values are likely to exist and return a value quickly:

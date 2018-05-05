@@ -156,8 +156,8 @@ Content-Type: application/json
     ] 
   },  
   "meetingDuration": "PT2H",
-  "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "returnSuggestionReasons": true,
+  "minimumAttendeePercentage": 100.0
 }
 ```
 

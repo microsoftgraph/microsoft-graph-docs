@@ -75,7 +75,7 @@ appropriate [state tokens](../../../concepts/delta_query_overview.md), to get th
   "name": "event_delta"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarview/delta?startdatetime={start_datetime}&enddatetime={end_datetime}
+GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime={start_datetime}&enddatetime={end_datetime}
 
 Prefer: odata.maxpagesize=2
 ```
@@ -101,7 +101,7 @@ Content-type: application/json
 Content-length: 359
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "originalStartTimeZone": "originalStartTimeZone-value",

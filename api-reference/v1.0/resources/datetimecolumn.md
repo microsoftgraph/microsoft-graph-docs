@@ -27,7 +27,7 @@ Here is a JSON representation of a **dateTimeColumn** resource.
 | **displayAs**      | string             | How the value should be presented in the UX. Must be one of `default`, `friendly`, or `standard`. See below for more details. If unspecified, treated as `default`.
 | **format**         | string             | Indicates whether the value should be presented as a date only or a date and time. Must be one of `dateOnly` or `dateTime`
 
-## DisplayAs values
+## DisplayAs options
 
 | Value        | Description
 |:-------------|:--------------------------------------------------------------

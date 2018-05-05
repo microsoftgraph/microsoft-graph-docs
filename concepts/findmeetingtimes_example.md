@@ -58,7 +58,7 @@ The two calls to **findMeetingTimes** include the following parameters. All [par
 Look for a 2-hour free time slot for both users over April 18-20.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "findmeetingtimes_example_first"
 }-->
 ```http
@@ -77,11 +77,11 @@ Content-type: application/json
     }
   ],  
   "locationConstraint": { 
-    "isRequired": "false",  
-    "suggestLocation": "false",  
+    "isRequired": false,  
+    "suggestLocation": false,  
     "locations": [ 
       { 
-        "resolveAvailability": "false",
+        "resolveAvailability": false,
         "displayName": "Conf room Hood" 
       } 
     ] 
@@ -102,15 +102,15 @@ Content-type: application/json
     ] 
   },  
   "meetingDuration": "PT2H",
-  "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "returnSuggestionReasons": true,
+  "minimumAttendeePercentage": 100
 }
 ```
 
 ### First response
 There is no 2-hour time slot during the work hours of April 18-20 when both users are available.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
   "isCollection": false
@@ -133,7 +133,7 @@ Content-Length: 184
 ### Second request
 Look for a 2-hour time slot on April 21.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "findmeetingtimes_example_second"
 }-->
 ```http
@@ -152,11 +152,11 @@ Content-type: application/json
     }
   ],  
   "locationConstraint": { 
-    "isRequired": "false",  
-    "suggestLocation": "false",  
+    "isRequired": false,  
+    "suggestLocation": false,  
     "locations": [ 
       { 
-        "resolveAvailability": "false",
+        "resolveAvailability": false,
         "displayName": "Conf room Hood" 
       } 
     ] 
@@ -177,15 +177,15 @@ Content-type: application/json
     ] 
   },  
   "meetingDuration": "PT2H",
-  "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "returnSuggestionReasons": true,
+  "minimumAttendeePercentage": 100
 }
 ```
 
 ### Second response
 The second **findMeetingTimes** request suggests April 21, 2-4pm for both users to meet.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
   "isCollection": false
