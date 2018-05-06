@@ -8,7 +8,7 @@ Allows IT admind to set a predefined default search engine for MDM-Controlled de
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|default|0|Uses factory settings of Edge to assign the default search engine as per the user market|
+|default|0|Uses factory settings of Microsoft Edge to assign the default search engine as per the user market|
 |bing|1|Sets Bing as the default search engine|
 
 

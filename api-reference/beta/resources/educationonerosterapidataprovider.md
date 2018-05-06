@@ -29,15 +29,14 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 {
     "@odata.type": "#microsoft.graph.educationoneRosterApiDataProvider",
     "connectionUrl": "String",
-    "providerName": "String"
+    "providerName": "String",
     "schoolsIds": [
         "String"
-    ]
+    ],
     "connectionSettings": {
         "@odata.type": "#microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
         "clientId": "String",
-    "clientSecret": "String",
-        "clientSecret": "String"
+        "clientSecret": "String",
     },
     "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
 }

@@ -1,6 +1,6 @@
 # event: tentativelyAccept
 
-Tentatively accept the specified event.
+Tentatively accept the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -16,11 +16,9 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /me/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/events/{id}/tentativelyAccept
-POST /groups/{id}/events/{id}/tentativelyAccept
 
 POST /me/calendar/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendar/events/{id}/tentativelyAccept
-POST /groups/{id}/calendar/events/{id}/tentativelyAccept
 
 POST /me/calendars/{id}/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/tentativelyAccept

@@ -4,6 +4,12 @@
 
 A calendar which is a container for events. It can be a calendar for a [user](user.md), or the default calendar of an Office 365 [group](group.md).
 
+> **Note:** There are a few minor differences in the way you can interact with user calendars and group calendars:
+
+ - You can organize only user calendars in a [calendarGroup](calendargroup.md).
+ - Outlook automatically accepts all meeting requests on behalf of groups. You can [accept](../api/event_accept.md), [tentatively accept](../api/event_tentativelyaccept.md), or [decline](../api/event_decline.md)  meeting requests for user calendars only.
+  - Outlook doesn't support reminders for group events. You can [snooze](../api/event_snoozereminder.md) or [dismiss](../api/event_dismissreminder.md) a [reminder](reminder.md) for user calendars only.
+
 ## Methods
 
 | Method       | Return Type  |Description|

@@ -1,14 +1,14 @@
-﻿# Planner
+﻿# Use the Planner REST API
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The Office 365 Planner API enables you to create tasks and assign them to users in a group in Office 365.
+You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Office 365.
 
-Before you get started with trying out the Planner API, it is worth understanding how the main objects in Planner API relate to each other as well as Office 365 groups.
+Before you get started with Planner API, it is worth understanding how the main objects relate to each other as well as to Office 365 groups.
 
 ## Groups
 Office 365 groups are the owners of the plans in the Planner API.
-To [get the plans owned by a group](../api/plannergroup_list_plans.md), make the HTTP request below.
+To [get the plans owned by a group](../api/plannergroup_list_plans.md), make the following HTTP request.
 
 ```http
 GET /groups/{id}/planner/plans
@@ -16,13 +16,13 @@ GET /groups/{id}/planner/plans
 
 When [creating a new plan](../api/planner_post_plans.md), give the plan a group owner by setting the `owner` property on a plan object. A plan must be owned by a group. A group can own multiple plans.
 
-> **Note:** The user who is creating the plan must be a member of the group that will own the plan. When you create a new group by using using [Create group](../api/group_post_groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group_post_members.md).
+>**Note:** The user who is creating the plan must be a member of the group that will own the plan. When you create a new group by using using [Create group](../api/group_post_groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group_post_members.md).
 
 ## Plans
 [Plans](plannerplan.md) are the containers of [tasks](plannertask.md). 
 To [create a task in a plan](../api/planner_post_tasks.md), set the `planId` property on the task object to the ID of the plan while creating the task.
 Tasks currently cannot be created without plans.
-To [retrieve the tasks in a plan](../api/plannerplan_list_tasks.md), make the HTTP request below.
+To [retrieve the tasks in a plan](../api/plannerplan_list_tasks.md), make the following HTTP request.
 
 ```http
 GET /planner/plans/{id}/tasks

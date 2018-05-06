@@ -1,4 +1,4 @@
-# Use the Microsoft Graph API to integrate with Outlook mail
+# Use the Outlook mail REST API
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account. 
 With the [appropriate delegated or application permissions](../../../concepts/permissions_reference.md), your app can access the mail data of 
@@ -22,7 +22,6 @@ For example, you can get messages in the Outlook **Sent Items** folder of the si
 ```
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
-For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).
 
 ## Common use cases 
 
@@ -51,6 +50,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 ## Next steps
 The mail API can open up new ways for you to engage with users: 
 
+- [Outlook mail API overview](../../../concepts/outlook-mail-concept-overview.md)
 - Drill down on the [methods](../resources/message.md#methods), [properties](../resources/message.md#properties), and [relationships](../resources/message.md#relationships) 
 of the [message](../resources/message.md) and [mailFolder](../resources/mailfolder.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).

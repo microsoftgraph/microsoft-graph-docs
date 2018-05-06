@@ -7,9 +7,9 @@ The **eventMessage** entity is derived from [message](message.md). The **meeting
 When an organizer or app sends a meeting request, the meeting request arrives in an attendee's Inbox as an **eventMessage** instance with the **meetingMessageType** of **meetingRequest**. In addition, Outlook automatically creates an **event** instance in the attendee's calendar, with the **showAs** property as **tentative**. 
 
 To get the properties of the associated event in the attendee's mailbox, the app can use the **event** navigation property of the **eventMessage**, as shown in 
-this [get event message example](../api/eventmessage_get.md#request-2). The app can also respond to the event on behalf of the attendee programmatically, by [accepting](../api/event_accept.md), [tentatively accepting](../api/event_tentativelyaccept.md), or [declining](../api/event_decline.md)] the event.
+this [get event message example](../api/eventmessage_get.md#request-2). The app can also respond to the event on behalf of the attendee programmatically, by [accepting](../api/event_accept.md), [tentatively accepting](../api/event_tentativelyaccept.md), or [declining](../api/event_decline.md) the event.
 
-Aside from a meeting request, an **eventMessage** instance can be found in an attendee's Inbox folder as the result of an event organizer cancelling a meeting, or in the organizser's Inbox as a result of an attendee responding to the meeting request. An app can act on event messages in the same way as on messages with minor differences.
+Aside from a meeting request, an **eventMessage** instance can be found in an attendee's Inbox folder as the result of an event organizer cancelling a meeting, or in the organizer's Inbox as a result of an attendee responding to the meeting request. An app can act on event messages in the same way as on messages with minor differences.
 
 ## Methods
 
