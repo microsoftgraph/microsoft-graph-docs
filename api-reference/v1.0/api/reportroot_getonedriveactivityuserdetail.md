@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "samples" } --> 
 
 ```http
 GET /reports/getOneDriveActivityUserDetail(period='{period_value}')

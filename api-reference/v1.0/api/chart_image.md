@@ -11,10 +11,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "samples" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/<name>/Image(width=0,height=0,fittingMode='fit')
-
+GET /workbook/worksheets/{id|name}/charts/<name>/image
+GET /workbook/worksheets/{id|name}/charts/<name>/image(width=640)
+GET /workbook/worksheets/{id|name}/charts/<name>/image(width=640,height=480)
+GET /workbook/worksheets/{id|name}/charts/<name>/image(width=640,height=480,fittingMode='fit')
 ```
 ## Request headers
 | Name       | Description|
@@ -27,19 +29,19 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|height|Int32|Optional. The desired height of the resulting image.|
-|width|Int32|Optional. The desired width of the resulting image.|
-|fittingMode|string|Optional. The method used to scale the chart to the specified dimensions (if both height and width are set)."  Possible values are: `Fit`, `FitAndCenter`, `Fill`.|
+|height|Int32|The desired height of the resulting image. Optional.|
+|width|Int32|The desired width of the resulting image. Optional.|
+|fittingMode|string|The method used to scale the chart to the specified dimensions (if both height and width are set)."  Possible values are: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## Response
 
 If successful, this method returns `200 OK` response code and base-64 image string in the response body.
 
 ## Example
-Here are some examples of how to call this API.
+Here is an example of how to call this API.
 
 ##### Request
-Here is an example request that specifies `width`, `height`, and `fittingMode`.
+Here is an example of the request.
 
 <!-- { "blockType": "request" } -->
 ```http
@@ -48,63 +50,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json;odata.metadata=minimal;odata.streaming=true
-
-{
-"value" : "base-64 chart image string"
-}
-```
-
-##### Request
-If `fittingMode` is not specified, the service defaults to `fit`.
-
-<!-- { "blockType": "request" } -->
-```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/image(width=640,height=480)
-```
-
-##### Response
-<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json;odata.metadata=minimal;odata.streaming=true
-
-{
-"value" : "base-64 chart image string"
-}
-```
-
-##### Request
-If only one dimension (such as `width`) is specified, the service automatically scales the other dimension.
-
-<!-- { "blockType": "request" } -->
-```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/image(width=640)
-```
-
-##### Response
-<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json;odata.metadata=minimal;odata.streaming=true
-
-{
-"value" : "base-64 chart image string"
-}
-```
-
-##### Request
-If only no parameters are specified, the service automatically chooses a size.
-
-<!-- { "blockType": "request" } -->
-```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/image
-```
-
-##### Response
 <!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK

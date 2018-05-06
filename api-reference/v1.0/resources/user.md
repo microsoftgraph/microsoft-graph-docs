@@ -119,6 +119,7 @@ This resource supports:
 |events|[Event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Read-only. Nullable.|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance. |
+|licenseDetails|[LicenseDetails](licensedetails.md) collection|A collection of this user's license details. Nullable.|
 |mailFolders|[MailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups and directory roles that the user is a member of. Read-only. Nullable.|

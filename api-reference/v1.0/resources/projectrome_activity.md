@@ -44,6 +44,7 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 | updated
 | deleted
 | ignored
+| unknownFutureValue
 
 ## Relationships
 
