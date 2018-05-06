@@ -1,17 +1,17 @@
-﻿# Planner
-The Office 365 Planner API enables you to create tasks and assign them to users in a group in Office 365.
+﻿# Use the Planner REST API
+You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Office 365.
 
-Before you get started with trying out the Planner API, it is worth understanding how the main objects in Planner API relate to each other as well as Office 365 groups.
+Before you get started with Planner API, it is worth understanding how the main objects relate to each other as well as to Office 365 groups.
 
 ## Groups
 Office 365 groups are the owners of the plans in the Planner API.
-To [get the plans owned by a group](../api/plannergroup_list_plans.md), make the HTTP request below.
+To [get the plans owned by a group](../api/plannergroup_list_plans.md), make the following HTTP request.
 
 ```http
 GET /groups/{id}/planner/plans
 ```
 
-When [creating a new plan](../api/planner_post_plans.md), make a group its owner by simply setting the `owner` property on a plan object. Plans must be owned by groups.
+When [creating a new plan](../api/planner_post_plans.md), make a group its owner by setting the `owner` property on a plan object. Plans must be owned by groups.
 
 >**Note:** The user who is creating the plan must be a member of the group. When you create a new group using the API, you are not automatically added to the group as a member. This has to be done using a separate API call.
 
@@ -19,7 +19,7 @@ When [creating a new plan](../api/planner_post_plans.md), make a group its owner
 [Plans](plannerplan.md) are the containers of [tasks](plannertask.md). 
 To [create a task in a plan](../api/planner_post_tasks.md), set the `planId` property on the task object to the ID of the plan while creating the task.
 Tasks currently cannot be created without plans.
-To [retrieve the tasks in a plan](../api/plannerplan_list_tasks.md), make the HTTP request below.
+To [retrieve the tasks in a plan](../api/plannerplan_list_tasks.md), make the following HTTP request.
 
 ```http
 GET /planner/plans/{id}/tasks

@@ -126,7 +126,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |applicationGuardAllowPrintToLocalPrinters|Boolean|Allow printing to Local Printers from Container|
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|Allow printing to Network Printers from Container|
 |applicationGuardAllowVirtualGPU|Boolean|Allow application guard to use virtual GPU|
-|applicationGuardAllowFileSaveOnHost|Boolean|Allow users to download files from Edge in the application guard container and save them on the host file system|
+|applicationGuardAllowFileSaveOnHost|Boolean|Allow users to download files from Microsoft Edge in the application guard container and save them on the host file system|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|Allows the Admin to disable the warning prompt for other disk encryption on the user machines.|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.|
 |bitLockerEncryptDevice|Boolean|Allows the admin to require encryption to be turned on using BitLocker.|

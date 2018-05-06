@@ -1,6 +1,6 @@
 # event: decline
 
-Decline invitation to the specified event.
+Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 
 ## Permissions
 
@@ -19,11 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /me/events/{id}/decline
 POST /users/{id | userPrincipalName}/events/{id}/decline
-POST /groups/{id}/events/{id}/decline
 
 POST /me/calendar/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendar/events/{id}/decline
-POST /groups/{id}/calendar/events/{id}/decline
 
 POST /me/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/decline

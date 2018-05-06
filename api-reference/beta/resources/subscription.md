@@ -46,7 +46,7 @@ Here is a JSON representation of the resource.
 | clientState        | string         | Specifies the value of the `clientState` property sent by the service in each notification. The maximum length is 255 characters. The client can check that the notification came from the service by comparing the value of the `clientState` property sent with the subscription with the value of the `clientState` property received with each notification. |
 | id                 | string         | Unique identifier for the subscription. Read-only.                                                                                                                                                                                                                                                                                                               |
 | applicationId      | string         | Identifier of the application used to create the subscription. |
-| creatorUserId      | string         | Identifier of the user that created the subscription. |
+| creatorUserId      | string         | Identifier of the user or service principal that created the subscription.<br/><br/>If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of.<br/>If the app used application permissions, this field contains the id of the service principal corresponding to the app.<br/><br/> **Note:** We will soon rename this property to *creatorId* in order to more precisely reflect its meaning. |
 
 
 ## Maximum length of subscription per resource type

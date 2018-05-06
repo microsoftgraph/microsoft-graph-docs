@@ -4,15 +4,48 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## May 2018
+
+### Groups
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0 and beta | Added the **importance** property to the [post](../api-reference/v1.0/resources/post.md) entity. |
+
+### Microsoft Bookings API
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | Beta          | Added the [bookingBusiness](../api-reference/beta/resources/bookingbusiness.md) entity and the following CRUD methods and actions: <br> [List](../api-reference/beta/api/bookingbusiness_list.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_bookingbusinesses.md) <br> [Get](../api-reference/beta/api/bookingbusiness_get.md) <br> [Update](../api-reference/beta/api/bookingbusiness_update.md) <br> [Delete](../api-reference/beta/api/bookingbusiness_delete.md) <br> [Publish](../api-reference/beta/api/bookingbusiness_publish.md) <br> [Unpublish](../api-reference/beta/api/bookingbusiness_unpublish.md). <br> Find out more about integrating with the [Microsoft Bookings API](booking-concept-overview.md). |
+| Addition        | Beta          | Added the [bookingAppointment](../api-reference/beta/resources/bookingappointment.md) entity and the following CRUD methods and action: <br> [List](../api-reference/beta/api/bookingbusiness_list_appointments.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_appointments.md) <br> [Get](../api-reference/beta/api/bookingappointment_get.md) <br> [Update](../api-reference/beta/api/bookingappointment_update.md) <br> [Delete](../api-reference/beta/api/bookingappointment_delete.md) <br> [Cancel](../api-reference/beta/api/bookingappointment_cancel.md). |
+| Addition        | Beta          | Added the [bookingCurrency](../api-reference/beta/resources/bookingcurrency.md) entity and the following methods: <br> [List](../api-reference/beta/api/bookingcurrency_list.md) <br> [Get](../api-reference/beta/api/bookingcurrency_get.md). |
+| Addition        | Beta          | Added the [bookingCustomer](../api-reference/beta/resources/bookingcustomer.md) entity and the following CRUD methods: <br> [List](../api-reference/beta/api/bookingbusiness_list_customers.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_customers.md) <br> [Get](../api-reference/beta/api/bookingcustomer_get.md) <br> [Update](../api-reference/beta/api/bookingcustomer_update.md) <br> [Delete](../api-reference/beta/api/bookingcustomer_delete.md).|
+| Addition        | Beta          | Added the [bookingService](../api-reference/beta/resources/bookingservice.md) entity and the following CRUD methods: <br> [List](../api-reference/beta/api/bookingbusiness_list_services.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_services.md) <br> [Get](../api-reference/beta/api/bookingservice_get.md) <br> [Update](../api-reference/beta/api/bookingservice_update.md) <br> [Delete](../api-reference/beta/api/bookingservice_delete.md).|
+| Addition        | Beta          | Added the [bookingStaffMember](../api-reference/beta/resources/bookingstaffmember.md) entity and the following CRUD methods: <br> [List](../api-reference/beta/api/bookingbusiness_list_staffmembers.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_staffmembers.md) <br> [Get](../api-reference/beta/api/bookingstaffmember_get.md) <br> [Update](../api-reference/beta/api/bookingstaffmember_update.md) <br> [Delete](../api-reference/beta/api/bookingstaffmember_delete.md).|
+| Addition        | Beta          | Added the following complex types: <br> [bookingNamedEntity](../api-reference/beta/resources/bookingnamedentity.md) <br> [bookingPerson](../api-reference/beta/resources/bookingperson.md) <br> [bookingReminder](../api-reference/beta/resources/bookingreminder.md) <br> [bookingWorkHours](../api-reference/beta/resources/bookingworkhours.md) <br> [bookingWorkTimeSlot](../api-reference/beta/resources/bookingworktimeslot.md).|
+
+### Insights API
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | Beta          | Added the [settings](../api-reference/beta/resources/user_settings.md) entity and the following CRUD methods: <br> [Get](../api-reference/beta/api/user_get_settings.md) <br> [Update](../api-reference/beta/api/user_update_settings.md) |
+
 ## April 2018
+
+### Audit log API
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added the [directoryAudit](../api-reference/beta/resources/directoryaudit.md) and [signIn](../api-reference/beta/resources/signin.md) entities to support a new audit log API. |
+|Addition|Beta|Added the following resources to support the audit log API: [appIndentity](../api-reference/beta/resources/appidentity.md), [auditActivityInitiator](../api-reference/beta/resources/auditactivityinitiator.md), [conditionalAccessPolicy](../api-reference/beta/resources/conditionalaccesspolicy.md), [deviceDetail](../api-reference/beta/resources/devicedetail.md), [mfaDetail](../api-reference/beta/resources/mfadetail.md), [modifiedProperty](../api-reference/beta/resources/modifiedproperty.md), [signinLocation](../api-reference/beta/resources/signinlocation.md), [signinStatus](../api-reference/beta/resources/signinstatus.md), [targetResource](../api-reference/beta/resources/targetresource.md), [targetResourceApp](../api-reference/beta/resources/targetresourceapp.md), [targetResourceDevice](../api-reference/beta/resources/targetresourcedevice.md), [targetResourceDirectory](../api-reference/beta/resources/targetresourcedirectory.md), [targetResourceGroup](../api-reference/beta/resources/targetresourcegroup.md), [targetResourceOther](../api-reference/beta/resources/targetresourceother.md), [targetResourcePolicy](../api-reference/beta/resources/targetresourcepolicy.md), [targetResourceRole](../api-reference/beta/resources/targetresourcerole.md), [targetResourceServicePrincipal](../api-reference/beta/resources/targetresourceserviceprincipal.md), [targetResourceUser](../api-reference/beta/resources/targetresourceuser.md), [userIdentity](../api-reference/beta/resources/useridentity.md) |
 
 ### Directory APIs
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | V1.0        | Added the **privacyProfile** complex type to the [organization](../api-reference/v1.0/resources/organization.md) entity. |
-| Addition        | V1.0        | Added the **legalAgeGroup, ageGroup and consentProvidedForMinor** complex type to the [user](../api-reference/v1.0/resources/user.md) entity. |
-| Addition        | V1.0        | Added users and groups support to [webhook](../api-reference/v1.0/resources/webhooks.md) notification subscriptions. |
+| Addition        | v1.0        | Added the **privacyProfile** complex type to the [organization](../api-reference/v1.0/resources/organization.md) entity. |
+| Addition        | v1.0        | Added the **legalAgeGroup, ageGroup and consentProvidedForMinor** complex type to the [user](../api-reference/v1.0/resources/user.md) entity. |
+| Addition        | v1.0        | Added users and groups support to [webhook](../api-reference/v1.0/resources/webhooks.md) notification subscriptions. |
 | Addition        | beta        | Added [List deleted items owned by a user](../api-reference/beta/api/directory_deleteditems_user_owned.md) action to [directory (deleted items)](../api-reference/beta/resources/directory.md) resource | 
 
 ### Education APIs
@@ -190,7 +223,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta        | Added the **onPremisesExtensionAttributes** complex type to the [user](../api-reference/beta/resources/user.md) entity. This contains the on-premises AD extension attributes 1-15. |
 | Addition        | Beta        | Added the **privacyProfile** complex type to the [organization](../api-reference/beta/resources/organization.md) entity. |
-| Addition        | V1.0        | Added support for [restoring and permanently deleting users and groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directory). |
+| Addition        | v1.0        | Added support for [restoring and permanently deleting users and groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directory). |
 
 ### Excel APIs
 
@@ -278,6 +311,31 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **containedApps** navigation property to the [microsoftStoreForBusinessApp](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessapp) entity|
 |Addition|beta|Added the **containedApps** navigation property to the [mobileAppContent](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_mobileappcontent) entity|
 |Addition|beta|Added the **committedContainedApps** navigation property to the [windowsUniversalAppX](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappx) entity|
+
+### OneDrive
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|v1.0|Added new entities:<br/>[baseItemVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/baseItemVersion)<br/>[driveItemVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveItemVersion)<br/>[listItemVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/listItemVersion)<br/> |
+|Addition|v1.0|Added new complex types:<br/>[publicationFacet](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/publicationFacet)<br/> |
+|Addition|v1.0|Added the <b>publication</b> property to the [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveItem) entity |
+|Addition|v1.0|Added the <b>versions</b> navigation property to the [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveItem) entity |
+|Addition|v1.0|Added the <b>versions</b> navigation property to the [listItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/listItem) entity |
+|Addition|v1.0|Added the <b>root</b> property to the [siteCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/siteCollection) entity |
+|Addition|v1.0|Added the [restoreVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/driveitemversion_restore) action for the [driveItemVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveItemVersion) entity |
+|Addition|v1.0|Added the [restoreVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/listitemversion_restore) action for the [listItemVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/listItemVersion) entity |
+
+
+### OneDrive
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|beta|Added new complex type:<br/>[itemPreviewInfo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemPreviewInfo)<br/> |
+|Addition|beta|Added the <b>name</b> property to the [contentTypeInfo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/contentTypeInfo) complex type |
+|Addition|beta|Added the <b>objectType</b> property to the [deleteAction](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/deleteAction) complex type |
+|Addition|beta|Added the <b>newName</b> property to the [renameAction](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/renameAction) complex type |
+|Addition|beta|Added the <b>tenantId</b> property to the [sharepointIds](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/renameAction) complex type |
+|Addition|beta|Added the <b>lastRecordedDateTime</b> property to the [itemActivityTimeSet](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemActivityTimeSet) complex type |
+|Addition|beta|Added the [preview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/driveitem_preview) action for the [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/driveItem) entity |
+
 
 ## February 2018
 
@@ -2108,3 +2166,4 @@ Added support for dynamic group membership through the public preview API, inclu
 | Fix             | v1.0 and beta | Fixed being able to select certain user properties on other users, when referencing the user by user principal name (UPN). For example: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Fix             | v1.0 and beta | Fixed calling the _microsoft.graph.reminderView_ user bound function, which was failing with the following error: Could not find a property named businessPhones on type  Microsoft.OutlookServices.Reminder. |
 | Fix             | v1.0 and beta | Fixed user creation and update (POST/PATCH /v1.0/users), which was failing with a 400 error. |
+
