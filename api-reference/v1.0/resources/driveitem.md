@@ -63,12 +63,12 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "webDavUrl": "string",
 
   /* relationships */
-  "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
-  "versions": [ {"@odata.type": "Collection(microsoft.graph.driveItemVersion)"}],
+  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
   /* inherited from baseItem */
   "id": "string (identifier)",
