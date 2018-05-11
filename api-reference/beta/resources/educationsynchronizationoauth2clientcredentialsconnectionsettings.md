@@ -16,6 +16,9 @@ Derived from [educationSynchronizationConnectionSettings](educationSynchronizati
 ## JSON representation
 <!-- {
   "blockType": "resource",
+  "optionalProperties": [
+
+  ],
   "@odata.type": "#microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings"
 }-->
 
