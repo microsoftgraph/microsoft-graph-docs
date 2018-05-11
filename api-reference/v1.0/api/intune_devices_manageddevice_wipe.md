@@ -52,9 +52,7 @@ Here is an example of the request.
 <!-- { "blockType": "request" } -->
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/wipe
-
 Content-type: application/json
-Content-length: 109
 
 {
   "keepEnrollmentData": true,

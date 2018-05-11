@@ -66,7 +66,7 @@ Here is a JSON representation of the resource
       "property": "contacts",
       "capabilities": {
         "changeTracking": true,
-        "navigability": "",
+        "navigability": "single",
         "searchable": false
       }
     }

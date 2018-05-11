@@ -11,6 +11,7 @@ This request updates the vertical alignment, row height, and column height of th
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat"
 }-->
 ```http
@@ -49,6 +50,7 @@ This request updates the font style, size, and color of the first cell.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_font"
 }-->
 ```http
@@ -87,6 +89,7 @@ This request updates the background color of the first cell.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_fill"
 }-->
 ```http
@@ -117,6 +120,7 @@ This request updates the vertical alignment, horizontal alignment, row height, a
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_two"
 }-->
 ```http
@@ -156,6 +160,7 @@ This request updates the font style and size of the second cell.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_font_two"
 }-->
 ```http
@@ -193,6 +198,7 @@ This request updates the background color of the second cell.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_fill_two"
 }-->
 ```http
@@ -224,6 +230,7 @@ This request updates the horizontal alignment, vertical alignment, row height, a
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_three"
 }-->
 ```http
@@ -263,6 +270,7 @@ This request updates the font style, size, and color of the third cell. Note tha
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_font_three"
 }-->
 ```http
@@ -301,6 +309,7 @@ This request updates the background color of the third cell.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_fill_three"
 }-->
 ```http

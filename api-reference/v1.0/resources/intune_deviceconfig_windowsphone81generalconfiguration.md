@@ -84,7 +84,7 @@ Here is a JSON representation of the resource.
       "property": "applyOnlyToWindowsPhone81",
       "capabilities": {
         "computed": true,
-        "permissions": ""
+        "permissions": "Read"
       }
     }
   ]

@@ -95,7 +95,7 @@ Here is a JSON representation of the resource
         "changeTracking": false,
         "deletable": false,
         "insertable": false,
-        "navigability": "",
+        "navigability": "single",
         "searchable": false,
         "updatable": false
       }

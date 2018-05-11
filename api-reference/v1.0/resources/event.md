@@ -148,7 +148,7 @@ Here is a JSON representation of the resource
         "deletable": false,
         "expandable": false,
         "insertable": false,
-        "navigability": "",
+        "navigability": "single",
         "searchable": false,
         "updatable": false
       }
@@ -167,7 +167,7 @@ Here is a JSON representation of the resource
         "deletable": false,
         "expandable": false,
         "insertable": false,
-        "navigability": "",
+        "navigability": "single",
         "searchable": false,
         "updatable": false
       }

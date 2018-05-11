@@ -47,7 +47,7 @@ Here is a JSON representation of the resource
       "capabilities": {
         "changeTracking": false,
         "expandable": false,
-        "navigability": "",
+        "navigability": "single",
         "searchable": false
       }
     }

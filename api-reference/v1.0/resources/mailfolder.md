@@ -78,7 +78,7 @@ Here is a JSON representation of the resource
       "property": "childFolders",
       "capabilities": {
         "changeTracking": false,
-        "navigability": "",
+        "navigability": "single",
         "searchable": false
       }
     },
@@ -94,7 +94,7 @@ Here is a JSON representation of the resource
       "property": "messages",
       "capabilities": {
         "changeTracking": true,
-        "navigability": ""
+        "navigability": "single"
       }
     }
   ]

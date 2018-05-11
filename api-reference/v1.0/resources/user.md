@@ -207,7 +207,7 @@ Here is a JSON representation of the resource
         "deletable": false,
         "expandable": true,
         "insertable": false,
-        "navigability": "",
+        "navigability": "single",
         "searchable": false,
         "updatable": false
       }

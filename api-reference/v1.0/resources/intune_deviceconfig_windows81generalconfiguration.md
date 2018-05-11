@@ -80,7 +80,7 @@ Here is a JSON representation of the resource.
       "property": "applyOnlyToWindows81",
       "capabilities": {
         "computed": true,
-        "permissions": ""
+        "permissions": "Read"
       }
     }
   ]
