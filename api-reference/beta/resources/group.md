@@ -10,7 +10,7 @@ This resource supports:
 - Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
 - Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
-> **Microsoft Teams and Office 365 groups support group collaboration**. You can use most of the Office 365 groups API with Microsoft Teams. You cannot use [Create group](../api/group_post_groups.md) to create a team. For details, see the [Microsoft Teams overview](teams_api_overview.md).
+> **Microsoft Teams and Office 365 groups support group collaboration**. You can use most of the Office 365 groups API with Microsoft Teams. To create a [team](team.md), first  [create group](../api/group_post_groups.md) and then [add a team to it](../api/team_put_teams.md). For details, see the [Microsoft Teams overview](teams_api_overview.md).
 
 ## Methods
 
@@ -42,22 +42,22 @@ This resource supports:
 |[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
 |**Calendar**| | |
 |[Create event](../api/group_post_events.md) |[event](event.md)| Create a new event by posting to the events collection.|
-|[Get event](../api/group_get_event.md) |[event](event.md)|Read properties of an event object.| 
+|[Get event](../api/group_get_event.md) |[event](event.md)|Read properties of an event object.|
 |[List events](../api/group_list_events.md) |[event](event.md) collection| Get an event object collection.|
-|[Update event](../api/group_update_event.md) |None|Update the properties of an event object.| 
-|[Delete event](../api/group_delete_event.md) |None|Delete event object.| 
+|[Update event](../api/group_update_event.md) |None|Update the properties of an event object.|
+|[Delete event](../api/group_delete_event.md) |None|Delete event object.|
 |[List calendarView](../api/group_list_calendarview.md) |[event](event.md) collection| Get a collection of events in a specified time window.|
 |**Chat channels**| | |
 |[Create channel](../api/group_post_channels.md) |[channel](channel.md)| Create a new channel by posting to the channels collection.|
 |[List channel](../api/group_list_channels.md) |[channel](channel.md) collection| Get a channel object collection.|
 |**Conversations**| | |
 |[Create conversation](../api/group_post_conversations.md) |[conversation](conversation.md)| Create a new conversation by posting to the conversations collection.|
-|[Get conversation](../api/group_get_conversation.md) |[conversation](conversation.md)| Read properties of a conversation object.| 
+|[Get conversation](../api/group_get_conversation.md) |[conversation](conversation.md)| Read properties of a conversation object.|
 |[List conversations](../api/group_list_conversations.md) |[conversation](conversation.md) collection| Get a conversation object collection.|
 |[Delete conversation](../api/group_delete_conversation.md) |None|Delete conversation object.|
-|[Get thread](../api/group_get_thread.md) |[conversationThread](conversationthread.md)| Read properties of a thread object.| 
+|[Get thread](../api/group_get_thread.md) |[conversationThread](conversationthread.md)| Read properties of a thread object.|
 |[List threads](../api/group_list_threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads of a group.|
-|[Update thread](../api/group_update_thread.md) |None| Update properties of a thread object.| 
+|[Update thread](../api/group_update_thread.md) |None| Update properties of a thread object.|
 |[Delete thread](../api/group_delete_thread.md) |None| Delete thread object
 |[List acceptedSenders](../api/group_list_acceptedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the acceptedSenders list for this group.|
 |[Add acceptedSender](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| Add a User or Group to the acceptSenders collection.|

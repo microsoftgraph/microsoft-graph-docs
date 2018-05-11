@@ -8,8 +8,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All |
-|Delegated (personal Microsoft account) | Not supported. |
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
 ## HTTP request
@@ -36,17 +36,15 @@ In the request body, supply the values for relevant fields that should be update
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
-|technicalNotificationMails|String collection| 
+|technicalNotificationMails|String collection|                                        **Notes**: not nullable.            |
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
-
-Here is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -71,11 +69,7 @@ Content-length: 411
 }
 ```
 
-<br/>
-
 ### Response
-
-Here is an example of the response. **Note**: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -86,8 +80,6 @@ Here is an example of the response. **Note**: The response object shown here may
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<br/>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

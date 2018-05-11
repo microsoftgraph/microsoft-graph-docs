@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents an error during school data profile sync. An unique error will be generated for every entry that fails to synchronize with Azure Active Directory (Azure AD).
+Represents an error during school data profile validation and/or sync. A unique error is generated for every entry that fails to validate and/or synchronize with Azure Active Directory (Azure AD).
 
 ## Methods
 
@@ -14,11 +14,12 @@ Represents an error during school data profile sync. An unique error will be gen
 
 | Property | Type | Description |
 |:-|:-|:-|
-| **entryType** | string |  represents the sync entity (school, section, student, teacher)         |
-| **errorCode** | string |  represents the error code for this error         |
-| **errorMessage** | string |  contains a description of the error         |
-| **joiningValue** | string |  the unique identifier for the entry         |
-| **recordedDateTime** | DateTimeOffset |  the time of occurrence of this error         |
+| **entryType** | string |  Represents the sync entity (school, section, student, teacher).       |
+| **errorCode** | string |  Represents the error code for this error.         |
+| **errorMessage** | string |  Contains a description of the error.        |
+| **joiningValue** | string |  The unique identifier for the entry.         |
+| **recordedDateTime** | DateTimeOffset | The time of occurrence of this error.         |
+| **reportableIdentifier** | string | The identifier of this error entry.       |
 
 ## JSON representation
 <!-- {

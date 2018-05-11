@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7196
+Content-Length: 7492
 
 {
   "value": [
@@ -92,6 +92,7 @@ Content-Length: 7196
         "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
       },
       "ownerType": "company",
+      "managedDeviceOwnerType": "company",
       "deviceActionResults": [
         {
           "@odata.type": "microsoft.graph.deviceActionResult",
@@ -198,7 +199,11 @@ Content-Length: 7196
           "userId": "User Id value",
           "lastLogOnDateTime": "2016-12-31T23:58:37.4262708-08:00"
         }
-      ]
+      ],
+      "preferMdmOverGroupPolicyAppliedDateTime": "2016-12-31T23:57:34.4649887-08:00",
+      "isAutopilotEnrolled": true,
+      "requestUserEnrollmentApproval": true,
+      "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00"
     }
   ]
 }

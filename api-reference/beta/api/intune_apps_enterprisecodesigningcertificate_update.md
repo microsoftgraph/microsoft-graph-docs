@@ -38,7 +38,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The key of the entity.|
 |content|Binary|The Windows Enterprise Code-Signing Certificate in the raw data format.|
-|status|String|The Certificate Status Provisioned or not Provisioned. Possible values are: `notProvisioned`, `provisioned`.|
+|status|[certificateStatus](../resources/intune_apps_certificatestatus.md)|The Certificate Status Provisioned or not Provisioned. Possible values are: `notProvisioned`, `provisioned`.|
 |subjectName|String|The Subject Name for the cert.|
 |subject|String|The Subject Value for the cert.|
 |issuerName|String|The Issuer Name for the cert.|

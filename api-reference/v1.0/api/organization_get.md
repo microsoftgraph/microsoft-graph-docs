@@ -6,9 +6,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, Directory.Read.All    |
+|Delegated (work or school account) | User.Read, Directory.Read.All, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All |
+|Application | Directory.Read.All, Directory.ReadWrite.All |
+
+> Note: Applications granted the User.Read permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.  All other properties will return with `null` values. To read all properties, use Directory.Read.All.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -7,6 +7,8 @@ Using the Microsoft Graph REST API, an app can subscribe to changes on the follo
 * Messages
 * Events
 * Contacts
+* Users
+* Groups
 * Group conversations
 * Content shared on OneDrive including drives associated with SharePoint sites
 * User's personal OneDrive folders
@@ -14,8 +16,11 @@ Using the Microsoft Graph REST API, an app can subscribe to changes on the follo
 For instance, you can create a subscription to a specific folder:
 `me/mailfolders('inbox')/messages`
 
+Or a specific ID:
+`users/{id}`, `groups/{id}`, `groups/{id}/conversations`
+
 Or to a top-level resource:
-`me/messages`, `me/contacts`, `me/events`
+`me/messages`, `me/contacts`, `me/events`, `users`, or `groups`
 
 Or on a Sharepoint / OneDrive for Business drive:
 `/drive/root`
@@ -63,7 +68,7 @@ Microsoft Graph validates the notification URL in a subscription request before 
 
 1. Microsoft Graph sends a POST request to the notification URL:
 
-  ```
+  ``` http
   POST https://{notificationUrl}?validationToken={TokenDefinedByMicrosoftGraph}
   ClientState: {Data sent in ClientState value in subscription request (if any)}
   ```
@@ -78,7 +83,7 @@ The client should discard the validation token after providing it in the respons
 
 ## Subscription request example
 
-```
+``` 
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
@@ -93,6 +98,21 @@ Content-Type: application/json
 The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](subscription.md) for property definitions and values. Although `clientState` is not required, you must include it to comply with our recommended notification handling process.
 
 If successful, Microsoft Graph returns a `201 Created` code and a [subscription](subscription.md) object in the body.
+
+## Limitations
+
+Certain limits apply and may generate errors when exceeded:
+
+1) Maximum subscription quotas
+
+     Per App: 50,000 total subscriptions
+     Per Tenant: 35 total subscriptions across all apps
+     Per App and Tenant combination: 7 total subscriptions
+
+2) Azure AD B2C tenants are not supported
+
+3) Consumer account Users not supported
+
 
 # Renewing a subscription
 

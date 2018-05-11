@@ -8,6 +8,11 @@ Data sharing consent information.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
+|[List dataSharingConsents](../api/intune_devices_datasharingconsent_list.md)|[dataSharingConsent](../resources/intune_devices_datasharingconsent.md) collection|List properties and relationships of the [dataSharingConsent](../resources/intune_devices_datasharingconsent.md) objects.|
+|[Get dataSharingConsent](../api/intune_devices_datasharingconsent_get.md)|[dataSharingConsent](../resources/intune_devices_datasharingconsent.md)|Read properties and relationships of the [dataSharingConsent](../resources/intune_devices_datasharingconsent.md) object.|
+|[Create dataSharingConsent](../api/intune_devices_datasharingconsent_create.md)|[dataSharingConsent](../resources/intune_devices_datasharingconsent.md)|Create a new [dataSharingConsent](../resources/intune_devices_datasharingconsent.md) object.|
+|[Delete dataSharingConsent](../api/intune_devices_datasharingconsent_delete.md)|None|Deletes a [dataSharingConsent](../resources/intune_devices_datasharingconsent.md).|
+|[Update dataSharingConsent](../api/intune_devices_datasharingconsent_update.md)|[dataSharingConsent](../resources/intune_devices_datasharingconsent.md)|Update the properties of a [dataSharingConsent](../resources/intune_devices_datasharingconsent.md) object.|
 |[consentToDataSharing action](../api/intune_devices_datasharingconsent_consenttodatasharing.md)|[dataSharingConsent](../resources/intune_devices_datasharingconsent.md)|Not yet documented|
 
 ## Properties

@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 614
+Content-Length: 1114
 
 {
   "value": [
@@ -63,6 +63,16 @@ Content-Length: 614
         "hidePrivacySettings": true,
         "hideEULA": true,
         "userType": "standard"
+      },
+      "enrollmentStatusScreenSettings": {
+        "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
+        "hideInstallationProgress": true,
+        "allowDeviceUseBeforeProfileAndAppInstallComplete": true,
+        "blockDeviceSetupRetryByUser": true,
+        "allowLogCollectionOnInstallFailure": true,
+        "customErrorMessage": "Custom Error Message value",
+        "installProgressTimeoutInMinutes": 15,
+        "allowDeviceUseOnInstallFailure": true
       }
     }
   ]

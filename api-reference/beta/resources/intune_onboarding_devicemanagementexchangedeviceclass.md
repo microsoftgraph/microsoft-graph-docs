@@ -9,7 +9,7 @@ Device Class in Exchange.
 |Property|Type|Description|
 |:---|:---|:---|
 |name|String|Name of the device class which will be impacted by this rule.|
-|type|String|Type of device which is impacted by this rule e.g. Model, Family Possible values are: `family`, `model`.|
+|type|[deviceManagementExchangeAccessRuleType](../resources/intune_onboarding_devicemanagementexchangeaccessruletype.md)|Type of device which is impacted by this rule e.g. Model, Family. Possible values are: `family`, `model`.|
 
 ## Relationships
 None

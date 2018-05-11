@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/deviceConfigurations
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
@@ -47,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 12267
+Content-Length: 12467
 
 {
   "value": [
@@ -81,6 +82,11 @@ Content-Length: 12267
       "messagingBlockSync": true,
       "messagingBlockMMS": true,
       "messagingBlockRichCommunicationServices": true,
+      "printerNames": [
+        "Printer Names value"
+      ],
+      "printerDefaultName": "Printer Default Name value",
+      "printerBlockAddition": true,
       "searchBlockDiacritics": true,
       "searchDisableAutoLanguageDetection": true,
       "searchDisableIndexingEncryptedItems": true,
@@ -89,6 +95,7 @@ Content-Length: 12267
       "searchDisableIndexerBackoff": true,
       "searchDisableIndexingRemovableDrive": true,
       "searchEnableAutomaticIndexSizeManangement": true,
+      "searchBlockWebResults": true,
       "securityBlockAzureADJoinedDevicesAutoEncryption": true,
       "diagnosticsDataSubmissionMode": "none",
       "oneDriveDisableFileSync": true,

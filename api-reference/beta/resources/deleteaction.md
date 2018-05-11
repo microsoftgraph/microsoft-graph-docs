@@ -22,7 +22,8 @@ The presence of the **DeleteAction** resource on an [**itemActivity**][activity]
 
 ```json
 {
-  "name": "string"
+  "name": "string",
+  "objectType": "File | Folder"
 }
 ```
 
@@ -31,6 +32,7 @@ The presence of the **DeleteAction** resource on an [**itemActivity**][activity]
 | Property name | Type   | Description
 |:--------------|:-------|:----------------------------------------------------
 | name          | string | The name of the item that was deleted.
+| objectType    | string | `File` or `Folder`, depending on the type of the deleted item.
 
 ## Remarks
 

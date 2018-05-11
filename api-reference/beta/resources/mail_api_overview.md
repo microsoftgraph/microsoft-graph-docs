@@ -1,4 +1,4 @@
-# Use the Microsoft Graph API to integrate with Outlook mail
+# Use the Outlook mail REST API
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -19,12 +19,11 @@ actions such as copy, move, or send.
 
 Message bodies can be in HTML or text format.
 
-You can use well-known folder names such as  `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` to identify certain mail folders that exist by default for all users.
+You can use well-known folder names such as `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` to identify certain mail folders that exist by default for all users.
 For example, you can get messages in the Outlook **Sent Items** folder of the signed-in user, without first getting the folder ID:
 ```
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
-For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).
 
 ## Common use cases 
 
@@ -60,6 +59,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 ## Next steps
 The mail API can open up new ways for you to engage with users: 
 
+- [Outlook mail API overview](../../../concepts/outlook-mail-concept-overview.md)
 - Drill down on the [methods](../resources/message.md#methods), [properties](../resources/message.md#properties), and [relationships](../resources/message.md#relationships) 
 of the [message](../resources/message.md) and [mailFolder](../resources/mailfolder.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).

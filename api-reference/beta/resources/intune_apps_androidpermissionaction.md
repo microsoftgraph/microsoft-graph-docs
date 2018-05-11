@@ -9,7 +9,7 @@ Mapping between an Android app permission and the action Android should take whe
 |Property|Type|Description|
 |:---|:---|:---|
 |permission|String|Android permission string, defined in the official Android documentation.  Example 'android.permission.READ_CONTACTS'.|
-|action|String|Type of Android permission action. Possible values are: `prompt`, `autoGrant`, `autoDeny`.|
+|action|[androidPermissionActionType](../resources/intune_apps_androidpermissionactiontype.md)|Type of Android permission action. Possible values are: `prompt`, `autoGrant`, `autoDeny`.|
 
 ## Relationships
 None
