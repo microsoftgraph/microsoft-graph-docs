@@ -53,7 +53,7 @@ The following is an example of the request that gets the person who has this ID 
   "name": "get_person_by_id"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/e3d0513b-449e-4198-ba6f-bd97ae7cae85
+GET https://graph.microsoft.com/v1.0/me/people/{person-id}
 ```
 
 #### Response 1
@@ -118,7 +118,7 @@ The following is an example of the request that gets the person who has this ID 
   "name": "get_person_by_id_with_select"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/e3d0513b-449e-4198-ba6f-bd97ae7cae85?$select=displayName
+GET https://graph.microsoft.com/v1.0/me/people/{person-id}?$select=displayName
 ```
 #### Response 2
 The following is an example of the response.

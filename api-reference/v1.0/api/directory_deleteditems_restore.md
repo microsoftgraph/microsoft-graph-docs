@@ -52,7 +52,7 @@ If successful, this method returns `200 OK` response code and [directoryObject](
   "name": "create_directoryobject_from_directory"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directory/deletedItems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
+POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 ```
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
 ##### Response

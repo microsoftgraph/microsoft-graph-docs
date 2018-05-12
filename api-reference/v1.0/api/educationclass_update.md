@@ -46,7 +46,7 @@ The following is an example of the request.
   "name": "update_educationclass"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/classes/11014
+PATCH https://graph.microsoft.com/v1.0/education/classes/{class-id}
 Content-type: application/json
 Content-length: 224
 

@@ -41,7 +41,7 @@ Here is an example of the request.
   "name": "get_messagerule"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
+GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/{rule-id}
 ```
 ##### Response
 Here is an example of the response. By default, the date-time properties in the response are in UTC. 

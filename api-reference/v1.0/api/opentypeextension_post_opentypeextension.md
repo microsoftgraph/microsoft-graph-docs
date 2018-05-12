@@ -295,7 +295,7 @@ extension:
   "name": "post_opentypeextension_3"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions
+POST https://graph.microsoft.com/v1.0/groups/{group-id}/events/{event-id}/extensions
 
 {
   "@odata.type" : "microsoft.graph.openTypeExtension",

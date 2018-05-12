@@ -36,7 +36,7 @@ The following is an example of the request.
   "name": "delete_group_event"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/events/{event-id}
+DELETE https://graph.microsoft.com/v1.0/groups/{group-id}/events/{event-id}
 ```
 
 #### Response

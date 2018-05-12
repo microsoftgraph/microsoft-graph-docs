@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "delete_messagerule"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZp8=
+DELETE https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/{rule-id}
 
 ```
 ##### Response

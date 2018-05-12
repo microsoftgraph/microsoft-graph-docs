@@ -210,7 +210,7 @@ to return specific properties.
   "name": "get_event_multiple_locations"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGAADDdm4NAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
+GET https://graph.microsoft.com/v1.0/me/events/{event-id}?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
 ##### Response 2
 Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 

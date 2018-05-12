@@ -46,7 +46,7 @@ Here is an example of the request.
   "name": "update_outlookcategory"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac
+PATCH https://graph.microsoft.com/v1.0/me/outlook/masterCategories/{category-id}
 Content-type: application/json
 Content-length: 30
 
