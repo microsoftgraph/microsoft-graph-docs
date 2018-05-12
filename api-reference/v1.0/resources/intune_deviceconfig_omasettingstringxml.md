@@ -21,7 +21,6 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingStringXml"
 }-->

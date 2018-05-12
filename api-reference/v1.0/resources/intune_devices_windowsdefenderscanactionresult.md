@@ -34,7 +34,6 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceActionResult",
   "@odata.type": "microsoft.graph.windowsDefenderScanActionResult"
 }-->
