@@ -24,12 +24,10 @@ SharedPC Account Manager Policy. Only applies when the account manager is enable
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.sharedPCAccountManagerPolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharedPCAccountManagerPolicy",
