@@ -86,19 +86,30 @@ The following is a JSON representation of the resource.
   "id": "string",
   "accountEnabled": true,
   "assignedLicenses": {"@odata.type": "microsoft.graph.assignedLicense"},
+  "assignedPlans": {"@odata.type": "microsoft.graph.assignedPlan"},
+  "businessPhones": ["555-555-6568"],
+  "department": "string",
   "displayName": "string",
   "givenName": "string",
   "middleName": "string",
   "surname": "string",
   "mail": "string",
+  "mailNickname": "string",
   "mobilePhone": "string",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "externalSource": "string",
   "mailingAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "passwordPolicies": "string",
+  "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
+  "preferredLanguage": "string",
   "primaryRole": "string",
+  "provisionedPlans": {"@odata.type": "microsoft.graph.provisionedPlan"},
   "residenceAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
   "student": {"@odata.type": "microsoft.graph.educationStudent"},
-  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"}
+  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"},
+  "usageLocation": "string",
+  "userPrincipalName": "string",
+  "userType": "string"
 }
 
 ```
