@@ -38,5 +38,9 @@ Here is a JSON representation of a **textColumn** resource.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/textcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(plain,richText) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/TextColumn"
 } -->

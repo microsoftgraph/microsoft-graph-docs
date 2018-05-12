@@ -217,7 +217,7 @@ time, so it is important that all apps be able to handle the [basic error codes]
   "description": "Understand the error format for the API and error codes.",
   "keywords": "error response, error, error codes, innererror, message, code",
   "section": "documentation",
-   "suppressions": [
+  "suppressions": [
     " Warning: /concepts/errors.md:
       Multiple resources found in file, but we only support one per file. 'odata.error,odata.error'. Skipping."
   ],

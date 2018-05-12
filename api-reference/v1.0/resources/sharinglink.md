@@ -66,5 +66,11 @@ This table defines the possible values for the **type** property:
   "description": "The sharing link facet provides information about how a file is shared.",
   "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/sharinglink.md:
+      Found potential enums in resource example that weren't defined in a table:(view,edit,embed) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/sharinglink.md:
+      Found potential enums in resource example that weren't defined in a table:(anonymous,organization) are in resource, but () are in table"
+  ],
   "tocPath": "Facets/SharingLink"
 } -->

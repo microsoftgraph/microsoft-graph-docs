@@ -9,14 +9,12 @@ Here is a JSON representation of the resource
 <!--{
   "blockType": "resource",
   "optionalProperties": [],
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbook"
 }-->
 
 ```json
 {
-  "id": "string",
   "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
   "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
   "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]

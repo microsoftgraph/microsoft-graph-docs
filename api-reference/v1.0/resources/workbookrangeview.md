@@ -44,7 +44,6 @@ Here is a JSON representation of the resource.
   "formulas": "Json",
   "formulasLocal": "Json",
   "formulasR1C1": "Json",
-  "id": "String (identifier)",
   "index": 1024,
   "numberFormat": "Json",
   "rowCount": 1024,
