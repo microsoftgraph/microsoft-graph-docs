@@ -78,6 +78,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
   "id": "String (identifier)",
+  "intuneBrand": {"@odata.type": "microsoft.graph.intuneBrand"},
   "subscriptionState": "String",
   "settings": {"@odata.type": "microsoft.graph.deviceManagementSettings"}
 }

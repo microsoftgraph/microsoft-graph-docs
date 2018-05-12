@@ -73,6 +73,7 @@ Here is a JSON representation of the resource
   "companyLastDirSyncTime": "2018-05-12T13:09:20.111Z",
   "country": "string",
   "countryLetterCode": "string",
+  "deletionTimestamp": "2018-05-12T15:37:52.763Z",
   "displayName": "string",
   "id": "string (identifier)",
   "marketingNotificationEmails": ["string"],
@@ -80,13 +81,13 @@ Here is a JSON representation of the resource
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
   "preferredLanguage": "string",
-   "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
+  "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "securityComplianceNotificationMails": ["string"],
   "securityComplianceNotificationPhones": ["string"],
   "state": "string",
   "street": "string",
-   "technicalNotificationMails": ["string"],
+  "technicalNotificationMails": ["string"],
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
 

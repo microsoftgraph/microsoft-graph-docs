@@ -61,7 +61,9 @@ Note: Additional DisplayAs types may be returned.
   "section": "documentation",
   "suppressions": [
     "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
-      Found potential enums in resource example that weren't defined in a table:(peopleAndGroups,peopleOnly) are in resource, but () are in table"
+      Found potential enums in resource example that weren't defined in a table:(peopleAndGroups,peopleOnly) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(account,contentType,created,department,...) are in resource, but () are in table"
   ],
   "tocPath": "Resources/PersonOrGroupColumn"
 } -->
