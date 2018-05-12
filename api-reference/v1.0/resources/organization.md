@@ -70,6 +70,7 @@ Here is a JSON representation of the resource
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "businessPhones": ["string"],
   "city": "string",
+  "companyLastDirSyncTime": "2018-05-12T13:09:20.111Z",
   "country": "string",
   "countryLetterCode": "string",
   "displayName": "string",
@@ -79,13 +80,13 @@ Here is a JSON representation of the resource
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
   "preferredLanguage": "string",
-  "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
+   "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "securityComplianceNotificationMails": ["string"],
   "securityComplianceNotificationPhones": ["string"],
   "state": "string",
   "street": "string",
-  "technicalNotificationMails": ["string"],
+   "technicalNotificationMails": ["string"],
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
 

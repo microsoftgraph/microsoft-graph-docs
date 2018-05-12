@@ -84,13 +84,14 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "string",
+  "accountEnabled": true,
   "displayName": "string",
   "givenName": "string",
   "middleName": "string",
   "surname": "string",
   "mail": "string",
   "mobilePhone": "string",
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "externalSource": "string",
   "mailingAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
   "primaryRole": "string",

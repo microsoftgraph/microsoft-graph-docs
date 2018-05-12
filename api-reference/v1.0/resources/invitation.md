@@ -47,8 +47,8 @@ Here is a JSON representation of the resource
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
   "status": "string",
-
-  "invitedUser": {"@odata.type": "microsoft.graph.user"}
+  "invitedUser": {"@odata.type": "microsoft.graph.user"},
+  "invitedUserType": "string"
 }
 ```
 

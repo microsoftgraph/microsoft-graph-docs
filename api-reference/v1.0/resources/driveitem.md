@@ -52,6 +52,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
   "package": { "@odata.type": "microsoft.graph.package" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
+  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
   "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
   "root": { "@odata.type": "microsoft.graph.root" },
   "searchResult": { "@odata.type": "microsoft.graph.searchResult" },

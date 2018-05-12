@@ -310,6 +310,7 @@ Here is a JSON representation of the resource
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
+  "imAddresses": ["string"],
   "interests": ["string"],
   "jobTitle": "string",
   "mail": "string",

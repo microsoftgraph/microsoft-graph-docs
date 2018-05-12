@@ -30,7 +30,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "protected": true
+  "protected": true,
+  "options": { "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions" }
 }
 
 ```

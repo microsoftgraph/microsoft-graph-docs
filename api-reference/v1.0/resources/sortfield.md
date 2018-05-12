@@ -28,7 +28,8 @@ Here is a JSON representation of the resource.
   "color": "string",
   "dataOption": "string",
   "key": 1024,
-  "sortOn": "string"
+  "sortOn": "string",
+  "icon": { "@odata.type": "microsoft.graph.workbookIcon" }
 }
 
 ```

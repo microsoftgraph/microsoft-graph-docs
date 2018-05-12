@@ -35,7 +35,8 @@ Here is a JSON representation of the resource.
 ```json
 {
   "matchCase": true,
-  "method": "string"
+  "method": "string",
+  "fields": { "@odata.type": "microsoft.graph.workbookSortField" }
 }
 
 ```

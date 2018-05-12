@@ -36,7 +36,8 @@ In the previous table, the examples use `/drive`, but there are many valid reque
   "id": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
-  "publication": { "@odata.type": "microsoft.graph.publicationFacet" }
+  "publication": { "@odata.type": "microsoft.graph.publicationFacet" },
+  "size": 12356
 }
 ```
 
