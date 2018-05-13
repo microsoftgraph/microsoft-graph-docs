@@ -20,7 +20,7 @@ One of the following permissions is required to call this API, depending on the 
 | [Group](../resources/group.md) | Group.Read.All | [Group event](../resources/event.md) | Group.Read.All |
 | [Group post](../resources/post.md) | Group.Read.All | [Message](../resources/message.md) | Mail.Read |
 | [Organization](../resources/organization.md) | Directory.Read.All | [Personal contact](../resources/contact.md) | Contacts.Read |
-| [User](../resources/user.md) | User.Read.All | | |
+| [User](../resources/user.md) | User.ReadBasic.All | | |
 
 ## HTTP request
 

@@ -35,6 +35,7 @@
     <Item text="Activity feed" url="/en-us/concepts/activity-feed-concept-overview" />
     <Item text="Device relay (preview)" url="/en-us/concepts/device-relay-concept-overview" />
   </Item>
+  <Item text="Customer booking (preview)" ProdTag="Microsoft Bookings" url="/en-us/concepts/booking-concept-overview" />
   <Item text="Devices and apps" ProdTag="Intune" url="/en-us/concepts/intune-concept-overview" />
   <Item text="Education" url="/en-us/concepts/education-concept-overview" />
   <Item text="Files" ProdTag="OneDrive" url="/en-us/concepts/onedrive-concept-overview" />
@@ -70,11 +71,11 @@
   <Item text="Tasks and plans" ProdTag="Planner" url="/en-us/concepts/planner-concept-overview" />
   <Item text="Teamwork (preview)" ProdTag="Microsoft Teams" url="/en-us/concepts/teams-concept-overview" />
   <Item text="Workbooks and charts" ProdTag="Excel" url="/en-us/concepts/excel-concept-overview" >
-	  <Item text="Manage sessions" url="/en-us/concepts/manage-sessions-in-excel-with-microsoft-graph" />
-	  <Item text="Display a chart image" url="/en-us/concepts/display-a-chart-image-in-excel-with-microsoft-graph" />
-	  <Item text="Use workbook functions" url="/en-us/concepts/use-functions-in-excel-with-microsoft-graph" />
-	  <Item text="Update a range format" url="/en-us/concepts/update-range-format-in-excel-with-microsoft-graph" />
-	  <Item text="Write data to a workbook" url="/en-us/concepts/write-to-excel-workbook-with-microsoft-graph" />
+	  <Item text="Manage sessions" url="/en-us/concepts/excel-manage-sessions" />
+	  <Item text="Display a chart image" url="/en-us/concepts/excel-display-chart-image" />
+	  <Item text="Use workbook functions" url="/en-us/concepts/excel-use-functions" />
+	  <Item text="Update a range format" url="/en-us/concepts/excel-update-range-format" />
+	  <Item text="Write data to a workbook" url="/en-us/concepts/excel-write-to-workbook" />
   </Item>
 
  <Item Label="DEVELOP" url="" />
@@ -387,9 +388,6 @@
     </Item>
   </Item>
   <Item text="Cross-device experiences" ProdTag="Project Rome" url="/en-us/api-reference/v1.0/resources/project_rome_overview" > 
-		<Item text="List user devices" url="/en-us/api-reference/v1.0/api/user_list_devices" />
-		<Item text="Send device command" url="/en-us/api-reference/v1.0/api/send_device_command" />
-		<Item text="Get device command status" url="/en-us/api-reference/v1.0/api/get_device_command_status" />
 		<Item text="Activity feed" url="/en-us/api-reference/v1.0/resources/activity-feed-api-overview" >
 			<Item text="Activity" url="/en-us/api-reference/v1.0/resources/projectrome_activity" >
 				<Item text="Create or replace activity" url="/en-us/api-reference/v1.0/api/projectrome_put_activity" />
@@ -2504,6 +2502,50 @@
 				<Item text="Create or replace a history item" url="/en-us/api-reference/beta/api/projectrome_put_historyitem" />
 				<Item text="Delete a history item" url="/en-us/api-reference/beta/api/projectrome_delete_historyitem" />
 			</Item>
+		</Item>
+	</Item>
+	<Item text="Customer booking" ProdTag="Microsoft Bookings" url="/en-us/api-reference/beta/resources/booking-api-overview" >
+		<Item text="Booking business" url="/en-us/api-reference/beta/resources/bookingbusiness" >
+			<Item text="List" url="/en-us/api-reference/beta/api/bookingbusiness_list" />
+			<Item text="Create" url="/en-us/api-reference/beta/api/bookingbusiness_post_bookingbusinesses" />
+			<Item text="Get" url="/en-us/api-reference/beta/api/bookingbusiness_get" />
+			<Item text="Update" url="/en-us/api-reference/beta/api/bookingbusiness_update" />
+			<Item text="Delete" url="/en-us/api-reference/beta/api/bookingbusiness_delete" />
+			<Item text="Publish" url="/en-us/api-reference/beta/api/bookingbusiness_publish" />
+			<Item text="Unpublish" url="/en-us/api-reference/beta/api/bookingbusiness_unpublish" />
+		</Item>
+		<Item text="Booking appointment" url="/en-us/api-reference/beta/resources/bookingappointment" >
+			<Item text="List" url="/en-us/api-reference/beta/api/bookingbusiness_list_appointments" />
+			<Item text="Create" url="/en-us/api-reference/beta/api/bookingbusiness_post_appointments" />
+			<Item text="Get" url="/en-us/api-reference/beta/api/bookingappointment_get" />
+			<Item text="Update" url="/en-us/api-reference/beta/api/bookingappointment_update" />
+			<Item text="Delete" url="/en-us/api-reference/beta/api/bookingappointment_delete" />
+			<Item text="Cancel" url="/en-us/api-reference/beta/api/bookingappointment_cancel" />
+		</Item>
+		<Item text="Booking currency" url="/en-us/api-reference/beta/resources/bookingcurrency" >
+			<Item text="List" url="/en-us/api-reference/beta/api/bookingcurrency_list" />
+			<Item text="Get" url="/en-us/api-reference/beta/api/bookingcurrency_get" />
+		</Item>
+		<Item text="Booking customer" url="/en-us/api-reference/beta/resources/bookingcustomer" >
+			<Item text="List" url="/en-us/api-reference/beta/api/bookingbusiness_list_customers" />
+			<Item text="Create" url="/en-us/api-reference/beta/api/bookingbusiness_post_customers" />
+			<Item text="Get" url="/en-us/api-reference/beta/api/bookingcustomer_get" />
+			<Item text="Update" url="/en-us/api-reference/beta/api/bookingcustomer_update" />
+			<Item text="Delete" url="/en-us/api-reference/beta/api/bookingcustomer_delete" />
+		</Item>
+		<Item text="Booking service" url="/en-us/api-reference/beta/resources/bookingservice" >
+			<Item text="List" url="/en-us/api-reference/beta/api/bookingbusiness_list_services" />
+			<Item text="Create" url="/en-us/api-reference/beta/api/bookingbusiness_post_services" />
+			<Item text="Get" url="/en-us/api-reference/beta/api/bookingservice_get" />
+			<Item text="Update" url="/en-us/api-reference/beta/api/bookingservice_update" />
+			<Item text="Delete" url="/en-us/api-reference/beta/api/bookingservice_delete" />
+		</Item>
+		<Item text="Booking staff member" url="/en-us/api-reference/beta/resources/bookingstaffmember" >
+			<Item text="List" url="/en-us/api-reference/beta/api/bookingbusiness_list_staffmembers" />
+			<Item text="Create" url="/en-us/api-reference/beta/api/bookingbusiness_post_staffmembers" />
+			<Item text="Get" url="/en-us/api-reference/beta/api/bookingstaffmember_get" />
+			<Item text="Update" url="/en-us/api-reference/beta/api/bookingstaffmember_update" />
+			<Item text="Delete" url="/en-us/api-reference/beta/api/bookingstaffmember_delete" />
 		</Item>
 	</Item>
 	<Item text="Devices and apps" ProdTag="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
@@ -5000,7 +5042,7 @@
         <Item text="Delete permission" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="Delete permission, Microsoft Graph API, permission API" SEODescription="Delete permission." />
       </Item>
     </Item>
-	<Item text="Identity and acess" ProdTag="Azure AD" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
+	<Item text="Identity and access" ProdTag="Azure AD" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
       <Item text="Administrative unit" url="/en-us/api-reference/beta/resources/administrativeunit" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="An administrative unit provides a conceptual container for User and Group directory objects. Using administrative units, a company administrator can now delegate administrative responsibilities to manage the users and groups contained within or scoped to an administrative unit to a regional or departmental administrator.">
         <Item text="Create administrative unit" url="/en-us/api-reference/beta/api/administrativeunit_post_administrativeunits" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="API to create a new administrativeUnit." />
         <Item text="List administrative unit" url="/en-us/api-reference/beta/api/administrativeunit_list" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="API to list administrativeUnit objects." />
@@ -5823,7 +5865,8 @@
     </Item>  
     <Item text="Change notifications" url="/en-us/api-reference/beta/resources/webhooks" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
       <Item text="Subscription" url="/en-us/api-reference/beta/resources/subscription" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
-        <Item text="Get subscription" url="/en-us/api-reference/beta/api/subscription_get" SEOKeyword="List subscriptions, Microsoft Graph API, webhoooks API" SEODescription="Retrieve a list of subscription." />
+        <Item text="List subscription" url="/en-us/api-reference/beta/api/subscription_list" />
+		<Item text="Get subscription" url="/en-us/api-reference/beta/api/subscription_get" SEOKeyword="List subscriptions, Microsoft Graph API, webhoooks API" SEODescription="Retrieve a list of subscription." />
         <Item text="Create subscription" url="/en-us/api-reference/beta/api/subscription_post_subscriptions" />
         <Item text="Update subscription" url="/en-us/api-reference/beta/api/subscription_update" />
         <Item text="Delete subscription" url="/en-us/api-reference/beta/api/subscription_delete" />
