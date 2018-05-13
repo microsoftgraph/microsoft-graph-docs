@@ -29,7 +29,7 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
-  "value": "<Unknown Primitive Type Edm.Single>"
+  "value": 1.5
 }
 ```
 

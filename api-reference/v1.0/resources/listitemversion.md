@@ -28,7 +28,6 @@ The following tasks are available for listItemVersion resources.
 
 ```json
 {
-  "content": { "@odata.type": "Edm.Stream" },
   "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
   "id": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },

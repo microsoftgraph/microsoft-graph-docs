@@ -74,6 +74,14 @@ For example, to control the behavior if the filename is already taken, you can s
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` error response is returned. |
 
+## Properties
+
+| Property             | Type               | Description
+|:---------------------|:-------------------|:---------------------------------
+| description          | String             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal
+| fileSystemInfo       | [fileSystemInfo][] | File system information on client. Read-write.
+| name                 | String             | The name of the item (filename and extension). Read-write.
+
 ### Request
 
 The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
@@ -370,5 +378,9 @@ how errors are returned.
   "type": "#page.annotation",
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/driveitem_createuploadsession.md:
+      Found potential enums in resource example that weren't defined in a table:(rename,fail,overwrite) are in resource, but () are in table"
+  ],
   "section": "documentation"
 } -->

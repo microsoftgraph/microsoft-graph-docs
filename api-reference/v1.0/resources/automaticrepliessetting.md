@@ -64,5 +64,11 @@ Here is a JSON representation of the resource.
   "description": "automaticRepliesSetting resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/automaticrepliessetting.md/externalReplyMessage:
+      Found potential enums in parameter description declared as a string: (AlwaysEnabled,Scheduled) are in enum automaticRepliesStatus",
+    "Warning: /api-reference/v1.0/resources/automaticrepliessetting.md/internalReplyMessage:
+      Found potential enums in parameter description declared as a string: (AlwaysEnabled,Scheduled) are in enum automaticRepliesStatus"
+  ],
   "tocPath": ""
 }-->

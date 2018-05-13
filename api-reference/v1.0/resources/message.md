@@ -52,7 +52,7 @@ by providing a [delta](../api/message_delta.md) function.
 |changeKey|String|The version of the message.|
 |conversationId|String|The ID of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
-|flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
+|flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the **body** property to look for a `src` attribute, such as `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`.|
 |id|String|Unique identifier for the message (note that this value may change if a message is moved or altered)|

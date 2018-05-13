@@ -51,5 +51,11 @@ These properties may be updated.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/numbercolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(automatic,none,one,two,three,four,five) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/numbercolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(number,percentage) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/NumberColumn"
 } -->

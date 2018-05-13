@@ -70,7 +70,7 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "informationUrl": "String",
   "privacyInformationUrl": "String",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "appleId": "String",
   "vppOrganizationName": "String",
   "genres": [

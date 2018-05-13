@@ -44,17 +44,7 @@ Here is a JSON representation of the resource.
   "actionState": "String",
   "startDateTime": "String (timestamp)",
   "lastUpdatedDateTime": "String (timestamp)",
-  "deviceLocation": {
-    "@odata.type": "microsoft.graph.deviceGeoLocation",
-    "lastCollectedDateTime": "String (timestamp)",
-    "longitude": "<Unknown Primitive Type Edm.Double>",
-    "latitude": "<Unknown Primitive Type Edm.Double>",
-    "altitude": "<Unknown Primitive Type Edm.Double>",
-    "horizontalAccuracy": "<Unknown Primitive Type Edm.Double>",
-    "verticalAccuracy": "<Unknown Primitive Type Edm.Double>",
-    "heading": "<Unknown Primitive Type Edm.Double>",
-    "speed": "<Unknown Primitive Type Edm.Double>"
-  }
+  "deviceLocation": {"@odata.type": "microsoft.graph.deviceGeoLocation"}
 }
 ```
 

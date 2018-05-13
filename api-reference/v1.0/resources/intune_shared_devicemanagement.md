@@ -32,7 +32,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
 
 ## Relationships
-|Relationship|Type|Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+|Relationship|Type|Description|
 |:---|:---|:---|
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md)|Apple push notification certificate.|
 |auditEvents|[auditEvent](../resources/intune_auditing_auditevent.md) collection|The Audit Events|

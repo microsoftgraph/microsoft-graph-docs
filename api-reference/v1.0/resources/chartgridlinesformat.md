@@ -22,14 +22,12 @@ Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
   "optionalProperties": [],
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookChartGridlinesFormat"
 }-->
 
 ```json
 {
-  "id": "string",
   "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
 }
 ```

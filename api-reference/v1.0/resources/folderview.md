@@ -77,5 +77,13 @@ The following values are defined for the **viewType** property.
   "description": "The FolderView facet provides or sets recommendations on the user-experience of a folder.",
   "keywords": "view, folderview, sortby, sortorder, viewtype, coversourceid, folder",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/folderview.md:
+      Found potential enums in resource example that weren't defined in a table:(default,icons,details,thumbnails) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/folderview.md:
+      Found potential enums in resource example that weren't defined in a table:(default,name,type,size,takenOrCreatedDateTime,lastModifiedDateTime,sequence) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/folderview.md:
+      Found potential enums in resource example that weren't defined in a table:(ascending,descending) are in resource, but () are in table"
+  ],
   "tocPath": "Facets/FolderView"
 } -->

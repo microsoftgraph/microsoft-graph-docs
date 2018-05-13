@@ -153,13 +153,5 @@ The same [permissions](./permissions_reference.md) that are required to perform 
   "description": "Monitor the progress of long-running actions in the API.",
   "keywords": "monitor,long,running,operation,action",
   "section": "documentation",
-  "suppressions": [
-    "Warning: /concepts/long_running_actions_overview.md:
-      Unable to map some markdown elements into schema.
-         Unmapped methods:
-      lro-copy-item-example, lro-check-status, lro-check-status-complete, lro-copy-item-example-complete
-         Unmapped tables:
-      Supported resources - Unknown"
-  ],
   "tocPath": "Concepts/Long running actions"
 } -->

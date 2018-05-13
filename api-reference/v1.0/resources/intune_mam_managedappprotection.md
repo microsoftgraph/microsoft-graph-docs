@@ -39,7 +39,7 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True|
 |pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: `numeric`, `alphanumericAndSymbol`.|
 |periodBeforePinReset|Duration|TimePeriod before the all-level pin must be reset if PinRequired is set to True.|
-|allowedDataStorageLocations|[managedAppDataStorageLocation](../resources/intune_mam_managedappdatastoragelocation.md) collection|Data storage locations where a user may store managed data.|
+|allowedDataStorageLocations|[managedAppDataStorageLocation enum](../resources/intune_mam_managedappdatastoragelocation.md) collection|Data storage locations where a user may store managed data.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device.|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps.|
 |fingerprintBlocked|Boolean|Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.|

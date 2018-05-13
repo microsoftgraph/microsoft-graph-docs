@@ -27,13 +27,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "description": "String",
-  "id": "String (identifier)",
-  "isOptional": true,
-  "label": "String",
-  "recordType": "String",
-  "supportedService": "String",
-  "ttl": 1024
+  "description": "String"
 }
 
 ```

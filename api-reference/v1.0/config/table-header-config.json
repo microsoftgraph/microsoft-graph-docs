@@ -19,7 +19,7 @@
       },
       {
         "type": "HttpHeaders",
-        "titles": [ "Request Headers", "Response Headers" ],
+        "titles": [ "Request Headers", "Response Headers", "Optional request headers" ],
         "parseAs": "ParameterDefinition"
       },
       {
@@ -29,7 +29,7 @@
       },
       {
         "type": "QueryStringParameters",
-        "titles": [ "Query String Parameters", "Query parameters" ],
+        "titles": [ "Query String Parameters", "Query parameters", "Optional query parameters" ],
         "parseAs": "ParameterDefinition"
       },
       {

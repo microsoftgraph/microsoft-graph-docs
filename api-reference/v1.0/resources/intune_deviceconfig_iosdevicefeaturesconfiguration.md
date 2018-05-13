@@ -61,7 +61,7 @@ Here is a JSON representation of the resource.
   "lockScreenFootnote": "String",
   "homeScreenDockIcons": [
     {
-      "@odata.type": "microsoft.graph.iosHomeScreenFolder",
+      "@odata.type": "microsoft.graph.iosHomeScreenItem",
       "displayName": "String",
       "pages": [
         {

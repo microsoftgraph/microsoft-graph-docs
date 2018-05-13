@@ -50,7 +50,7 @@ Content-Length: 123
 {
   "value": {
     "@odata.type": "microsoft.graph.report",
-    "content": "<Unknown Primitive Type Edm.Stream>"
+    "content": {"@odata.type": "Edm.Stream"}
   }
 }
 ```

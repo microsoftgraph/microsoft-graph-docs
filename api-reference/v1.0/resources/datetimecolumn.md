@@ -41,5 +41,13 @@ Here is a JSON representation of a **dateTimeColumn** resource.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/choicecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(checkBoxes,dropDownMenu,radioButtons) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/datetimecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(default,friendly,standard) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/datetimecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(dateOnly,dateTime) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/DateTimeColumn"
 } -->

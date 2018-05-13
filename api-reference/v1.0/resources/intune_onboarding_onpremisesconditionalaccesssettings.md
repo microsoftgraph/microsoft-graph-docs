@@ -34,10 +34,10 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "fe4d7f2b-e7b8-4276-9976-7a3fc83edbbc"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "79199ed9-e50b-4257-8de4-70b9c8685061"
   ],
   "overrideDefaultRule": true
 }

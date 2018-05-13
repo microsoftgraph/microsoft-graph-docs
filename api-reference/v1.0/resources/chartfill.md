@@ -22,14 +22,12 @@ None
 <!--{
   "blockType": "resource",
   "optionalProperties": [],
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookChartFill"
 }-->
 
 ```json
 {
-  "id": "string"
 }
 ```
 

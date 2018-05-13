@@ -101,7 +101,7 @@ instances or collections supports getting open extensions from them in a similar
 
 Make sure you apply [URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.
 
-|**Name**|**Value**|**Description**|
+|Name|Value|Description|
 |:---------------|:--------|:-------|
 |$filter|string|Returns an extension with its **id** matching the `extensionId` parameter value.|
 |$filter with **any** operator|string|Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.|
@@ -465,5 +465,13 @@ HTTP/1.1 200 OK
   "description": "Get openTypeExtension",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/api/opentypeextension_get.md:
+        Unable to map some markdown elements into schema.
+            Unmapped methods:
+        get_opentypeextension_1, get_opentypeextension_2, get_opentypeextension_3, get_opentypeextension_5
+            Unmapped tables:
+        Get open extension - Unknown, Permissions - AuthScopes, Path parameters - PathParameters, Optional query parameters - PathParameters, Request headers - HttpHeaders"
+  ],
   "tocPath": ""
 }-->

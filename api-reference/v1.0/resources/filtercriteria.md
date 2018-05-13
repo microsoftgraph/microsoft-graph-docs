@@ -26,3 +26,23 @@ Here is a JSON representation of the resource.
 }
 
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'color' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'criterion1' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'criterion2' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'dynamicCriteria' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'filterOn' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'icon' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'values' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table."
+  ]
+} -->

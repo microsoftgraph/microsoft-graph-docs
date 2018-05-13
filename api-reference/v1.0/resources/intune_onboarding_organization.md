@@ -36,5 +36,9 @@ Here is a JSON representation of the resource.
 }
 ```
 
-
-
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: Resource microsoft.graph.organization is defined in multiple files: /api-reference/v1.0/resources/intune_onboarding_organization.md, /api-reference/v1.0/resources/organization.md",
+  ]
+}-->

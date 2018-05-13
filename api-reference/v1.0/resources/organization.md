@@ -24,8 +24,8 @@ This resource lets you add your own data to custom properties using [extensions]
 | assignedPlans                        | [assignedPlan](assignedplan.md) collection                        | The collection of service plans associated with the tenant. Not nullable.                                                                                                                                                                                                            |
 | city                                 | String                                                            | City name of the address for the organization                                                                                                                                                                                                                                        |
 | companyLastDirSyncTime               | DateTimeOffset                                                    | The time and date at which the tenant was last synced with the on-premise directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
-| country                              | String                                                            | Country/region name of the address for the organization                                                                                                                                                                                                                                     |
-| countryLetterCode                    | String                                                            | Country/region abbreviation for the organization                                                                                                                                                                                                                                            |
+| country                              | String                                                            | Country/region name of the address for the organization                                                                                                                                                                                                                              |
+| countryLetterCode                    | String                                                            | Country/region abbreviation for the organization                                                                                                                                                                                                                                     |
 | deletionTimestamp                    | DateTimeOffset                                                    | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`                                                                                     |
 | dirSyncEnabled                       | Boolean                                                           | **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).                        |
 | displayName                          | String                                                            | The display name for the tenant.                                                                                                                                                                                                                                                     |
@@ -36,7 +36,6 @@ This resource lets you add your own data to custom properties using [extensions]
 | preferredLanguage                    | String                                                            | The preferred language for the organization. Should follow ISO 639-1 Code; for example "en".                                                                                                                                                                                         |
 | privacyProfile                       | [privacyProfile](privacyprofile.md)                               | The privacy profile of an organization.                                                                                                                                                                                                                                              |
 | provisionedPlans                     | [ProvisionedPlan](provisionedplan.md) collection                  | Not nullable.                                                                                                                                                                                                                                                                        |
-| provisioningErrors                   | ProvisioningError collection                                      | Not nullable.                                                                                                                                                                                                                                                                        |
 | securityComplianceNotificationMails  | String collection                                                 |                                                                                                                                                                                                                                                                                      |
 | securityComplianceNotificationPhones | String collection                                                 |                                                                                                                                                                                                                                                                                      |
 | state                                | String                                                            | State name of the address for the organization                                                                                                                                                                                                                                       |
@@ -85,7 +84,6 @@ Here is a JSON representation of the resource
   "preferredLanguage": "string",
   "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
-  "provisioningErrors": {"@odata.type": "microsoft.graph.provisioningError"},
   "securityComplianceNotificationMails": ["string"],
   "securityComplianceNotificationPhones": ["string"],
   "state": "string",
@@ -110,5 +108,17 @@ Here is a JSON representation of the resource
   "description": "organization resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'businessPhones' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'onPremisesLastSyncDateTime' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'onPremisesSyncEnabled' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'securityComplianceNotificationMails' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'securityComplianceNotificationPhones' found in resource definition for 'microsoft.graph.organization', but not described in markdown table."
+  ],
   "tocPath": ""
 }-->

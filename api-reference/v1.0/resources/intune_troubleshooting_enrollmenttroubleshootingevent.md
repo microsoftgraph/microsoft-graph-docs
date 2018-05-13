@@ -32,6 +32,22 @@ Inherits from [deviceManagementTroubleshootingEvent](../resources/intune_trouble
 |failureCategory|deviceEnrollmentFailureReason|Highlevel failure category. Possible values are: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected`.|
 |failureReason|String|Detailed failure reason.|
 
+### deviceEnrollmentFailureReason values
+
+| Value
+|:-------------
+| unknown
+| authentication
+| authorization
+| accountValidation
+| userValidation
+| deviceNotSupported
+| inMaintenance
+| badRequest
+| featureNotSupported
+| enrollmentRestrictionsEnforced
+| clientDisconnected
+
 ## Relationships
 None
 ## JSON Representation

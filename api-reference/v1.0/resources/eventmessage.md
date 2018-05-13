@@ -50,10 +50,10 @@ Aside from a meeting request, an **eventMessage** instance can be found in an at
 |changeKey|String|The version of the message.|
 |conversationId|String|The ID of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
-|flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
+|flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
-|id|String||
+|id|String|Unique identifier for the event message (note that this value may change if a message is moved or altered)|
 |importance|String| The importance of the message: `low`, `normal`, `high`.|
 |inferenceClassification|String| Possible values are: `focused`, `other`.|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only.|

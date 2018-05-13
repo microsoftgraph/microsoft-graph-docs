@@ -19,7 +19,7 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.report",
-  "content": "<Unknown Primitive Type Edm.Stream>"
+  "content": {"@odata.type": "Edm.Stream"}
 }
 ```
 
