@@ -67,8 +67,9 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getonedriveactivityuserdetail"
 }-->
 

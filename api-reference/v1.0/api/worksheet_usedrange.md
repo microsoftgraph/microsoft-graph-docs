@@ -39,8 +39,9 @@ Here is an example that shows how to call this API.
 
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "worksheet_usedrange"
 }-->
 ```http
@@ -69,8 +70,9 @@ Alternatively, this function can be called with the optional `valuesOnly` parame
 
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "worksheet_usedrange_valuesonly"
 }-->
 ```http

@@ -37,10 +37,12 @@ If successful, this method returns `200 OK` response code and [WorkbookChart](..
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
+  "name": "chartcollection_itemat",
   "idempotent": true,
-  "name": "chartcollection_itemat"
+  "@type": "requestBodyResourceFor.chartcollection_itemat"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/itemAt

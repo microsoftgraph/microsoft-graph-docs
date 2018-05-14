@@ -39,10 +39,12 @@ If successful, this method returns `200 OK` response code and [Range](../resourc
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
+  "name": "range_row",
   "idempotent": true,
-  "name": "range_row"
+  "@type": "requestBodyResourceFor.range_row"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/<name>/range/row

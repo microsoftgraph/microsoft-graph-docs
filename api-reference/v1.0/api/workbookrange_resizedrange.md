@@ -36,10 +36,11 @@ If successful, this method returns `200 OK` response code and [workbookRange](..
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
-  "idempotent": true,
-  "name": "workbookrange_resizedrange"
+  "isComposable": true,
+  "name": "workbookrange_resizedrange",
+  "idempotent": true
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})

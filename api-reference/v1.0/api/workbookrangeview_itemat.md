@@ -37,8 +37,9 @@ If successful, this method returns `200 OK` response code and [workbookRangeView
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "workbookrangeview_itemat"
 }-->
 ```http

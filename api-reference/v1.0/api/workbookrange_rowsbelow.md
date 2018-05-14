@@ -38,10 +38,11 @@ If successful, this method returns `200 OK` response code and [workbookRange](..
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
-  "idempotent": true,
-  "name": "workbookrange_rowsBelow"
+  "isComposable": true,
+  "name": "workbookrange_rowsBelow",
+  "idempotent": true
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
@@ -73,10 +74,11 @@ If called without the `count` parameter, this function defaults to one row.
 
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
-  "idempotent": true,
-  "name": "workbookrange_rowsBelow_nocount"
+  "isComposable": true,
+  "name": "workbookrange_rowsBelow_nocount",
+  "idempotent": true
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow

@@ -67,8 +67,9 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getyammeractivityuserdetail"
 }-->
 
@@ -92,8 +93,9 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 If the `date` parameter is specified, the report is scoped to activities that took place on the given date.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getyammeractivityuserdetail_date"
 }-->
 
