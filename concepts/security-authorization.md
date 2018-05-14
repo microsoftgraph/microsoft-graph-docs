@@ -1,23 +1,23 @@
 # Authorization and the security API in Microsoft Graph
 
-Security data that's accessible via the security API in Microsoft Graph is sensitive and is protected by both permissions and Azure Active Directory (Azure AD) roles.
+Security data accessible via the security API in Microsoft Graph is sensitive and is protected by both permissions and Azure Active Directory (AAD) roles.
 
 The security API supports two types of authorization:
 
-- **Application-level authorization**, where there is no signed-in user (for example, a SIEM scenario). The permissions granted to the application determine authorization.
-- **User delegated authorization**, where a user who is a member of the Azure AD tenant is signed in. The user must be a member of the Azure AD Security Reader Limited Admin role, in addition to the application having been granted the required permissions.
+- **Application-level authorization**, where there is no signed-in user (for example, a SIEM scenario). The permissions granted to the application determine authorization. </br>Note: this option can also support cases where _Role-Based Access Control_ (aka RBAC) is managed by the application.
+- **User delegated authorization**, where a user who is a member of the AAD tenant is signed in. The user must be a member of an AAD Limited Admin role - either _Security Reader_ or _Securty Administrator_, in addition to the application having been granted the required permissions.
 
 There are two types of client applications: the Microsoft Graph Explorer, and a custom client app. </br> If calling from Graph Explorer:
 
-- The AAD tenant admin must explicitly grant consent for the requested permissions to the Graph Explorer application
-- The user must be a member of the Security Reader Limited Admin role in AAD
+- The AAD tenant admin must explicitly grant consent for the requested permissions to the Graph Explorer application.
+- The user must be a member of the Security Reader Limited Admin role in AAD (either _Security Reader_ or _Security Administrator_)
 
 > **Note**: Graph Explorer does not support application-level authorization
 
 If calling from a custom/your own application:
 
 - The AAD tenant admin must explicitly grant consent to your application. This is required both for application-level authorization as well as for user delegated authorization.
-- The user must be a member of the Security Reader Limited Admin role in AAD - if using user delegated authorization.
+- If using user delegated authorization, the user must be a member of the _Security Reader_ or _Security Administrator_ Limited Admin role in AAD.
 
 The following section contains a detailed technical explanation of using the Authorization mechanisms.
 
@@ -29,7 +29,7 @@ Security data provided via the Microsoft Graph Security API is sensitive and mus
 |:---------------------|:------------------|
 |Application developer or owner|Register application as an enterprise application|
 |Tenant Admin|Grant permissions to the application|
-|Tenant Admin|Assign roles to users|
+|Tenant Admin|Assign Limited Administrator roles to users|
 |Application developer|Sign-in as the user and use application to access Graph Security API|
 
 **To clarify:**
@@ -67,10 +67,10 @@ Security data provided via the Microsoft Graph Security API is sensitive and mus
 
 ### What you need:
 
-**Application Name:** a string used for the application name</br>
-**Redirect URL:** where the authentication response from AAD is sent to.</br>
-To begin with, you can use the test client web app homepage.</br>
-**Required Permissions:** the permissions that your application requires to be able to call Microsoft Graph
+**Application Name:** a string used for the application name. </br>
+**Redirect URL:** where the authentication response from AAD is sent to. </br>
+To begin with, you can use the test client web app homepage. </br>
+**Required Permissions:** the permissions that your application requires to be able to call Microsoft Graph.
 
 ### What you need to do:
 
@@ -92,8 +92,8 @@ Application registration only defines which permission the application requires 
 
 ### What you need:
 
-**Application Id:** the application ID from application registration portal</br>
-**Redirect URL:** the string you set in the application registration portal for authentication response
+**Application Id:** the application ID from application registration portal. </br>
+**Redirect URL:** the string you set in the application registration portal for authentication response.
 
 ### What you need to do:
 
@@ -117,7 +117,7 @@ A tenant admin must perform this step.
 
 The admin must:
 
-- Sign-in to [azure portal](https://portal.azure.com/#@isgdemodev.onmicrosoft.com/dashboard/private/76e81922-1bdf-455e-bdbb-33ff73765011) (http://portal.azure/com).
+- Sign-in to [azure portal](https://portal.azure.com) (http://portal.azure.com).
 - In the menu, select **Azure Active Directory** > **Users**.
 - Select the name of the desired user.
 - Select **Manage** > **Directory role**.
@@ -152,7 +152,7 @@ If the applications do not use any of the existing libraries, please follow this
 1. Get a code from AAD. The query to call contains parameter for Application ID, Redirect URl and **required permissions**.
 2. Use the code to get an access token.
 
-If you use OpenId Connect library, please see this [doc](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/authenticate) and call</br> app.UseOpenIdConnectAuthentication()
+If you use OpenId Connect library, please see this [doc](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/authenticate) and call</br> `app.UseOpenIdConnectAuthentication()`
 > **Note:** In the library, when requesting user delegated authentication tokens, the parameter for the library is “Requested Scopes”. Use “User.Read” for this parameter instead of using whatever the registered application requires. The “Requested Scopes” parameter does NOT affect the permissions contained in the returned authentication tokens, since these are determined by the permissions that the tenant admin granted the application.
 
 Using .Net MSAL library as example:
