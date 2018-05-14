@@ -4,12 +4,11 @@ An image or other file resource on a OneNote page.
 
 You can get the binary data of a resource, but getting a JSON representation of a resource object or a resource collection is not supported.
 
-<!-- {
+<!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.onenoteEntityBaseModel",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "@odata.type": "microsoft.graph.onenoteResource"
 }-->
 

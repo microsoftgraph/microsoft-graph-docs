@@ -41,6 +41,7 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "isComposable": true,
   "name": "range_intersection"
 }-->
 ```http
