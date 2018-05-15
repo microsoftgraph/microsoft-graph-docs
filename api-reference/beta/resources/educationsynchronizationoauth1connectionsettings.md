@@ -11,8 +11,12 @@ Derived from [educationSynchronizationConnectionSettings](educationSynchronizati
 No additional properties are exposed by this type.
 
 ## JSON representation
+
 <!-- {
   "blockType": "resource",
+  "optionalProperties": [
+
+  ],
   "@odata.type": "#microsoft.graph.educationSynchronizationOAuth1ConnectionSettings"
 }-->
 

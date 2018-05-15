@@ -14,8 +14,12 @@ Derived from [educationSynchronizationConnectionSettings](educationSynchronizati
 | **scope** | String | [The scope of the access request](https://tools.ietf.org/html/rfc6749#section-3.3). |
 
 ## JSON representation
+
 <!-- {
   "blockType": "resource",
+  "optionalProperties": [
+
+  ],
   "@odata.type": "#microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings"
 }-->
 
