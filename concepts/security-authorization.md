@@ -10,7 +10,7 @@ The security API supports two types of authorization:
 There are two types of client applications: the Microsoft Graph Explorer, and a custom client app. </br> If calling from Graph Explorer:
 
 - The AAD tenant admin must explicitly grant consent for the requested permissions to the Graph Explorer application.
-- The user must be a member of the Security Reader Limited Admin role in AAD (either _Security Reader_ or _Security Administrator_)
+- The user must be a member of the Security Reader Limited Admin role in AAD (either _Security Reader_ or _Security Administrator_).
 
 > **Note**: Graph Explorer does not support application-level authorization
 
@@ -27,10 +27,10 @@ Security data provided via the Microsoft Graph Security API is sensitive and mus
 
 | **Who** | **Action** |
 |:---------------------|:------------------|
-|Application developer or owner|Register application as an enterprise application|
-|Tenant Admin|Grant permissions to the application|
-|Tenant Admin|Assign Limited Administrator roles to users|
-|Application developer|Sign-in as the user and use application to access Graph Security API|
+|Application developer or owner|Register application as an enterprise application.|
+|Tenant admin|Grant permissions to the application.|
+|Tenant admin|Assign Limited Administrator roles to users.|
+|Application developer|Sign in as the user and use the application to access Graph Security API.|
 
 **To clarify:**
 
@@ -59,7 +59,7 @@ Security data provided via the Microsoft Graph Security API is sensitive and mus
 
 **Note**: for the same application (<b class=blue>App</b>), the AAD token for the application in tenant <b class=green>T1</b> and that for the application in tenant <b class=green>T2</b> contain different permissions, since the tenant admins each granted different permissions to the application (<b class=blue>App</b>).
 
-- To make <b class=blue>App</b> work again in tenant <b class=green>T1</b>, the admin of tenant <b class=green>T1</b> must explicitly grant permissions <b class=red>P1</b> and <b class=red>P2</b> to the application (<b class=blue>App</b>)
+- To make <b class=blue>App</b> work again in tenant <b class=green>T1</b>, the admin of tenant <b class=green>T1</b> must explicitly grant permissions <b class=red>P1</b> and <b class=red>P2</b> to the application (<b class=blue>App</b>).
 
 ## Register an Application in v2.0 endpoint
 
@@ -68,7 +68,7 @@ Security data provided via the Microsoft Graph Security API is sensitive and mus
 ### What you need:
 
 **Application Name:** a string used for the application name. </br>
-**Redirect URL:** where the authentication response from AAD is sent to. </br>
+**Redirect URL:** where the authentication response from AAD is sent. </br>
 To begin with, you can use the test client web app homepage. </br>
 **Required Permissions:** the permissions that your application requires to be able to call Microsoft Graph.
 
@@ -101,13 +101,13 @@ In a text editor, create following URL string:
 
 `https://login.microsoftonline.com/common/adminconsent?client_id=<Application Id>&state=12345&redirect_uri=<Redirect URL>`
 
-In a web browser, navigate to this URL, and sign-in as a tenant administrator; the popup dialog shows the list of permission the application requires, as specified in the application registration portal.</br>Click “**OK**” to grant the application these permissions.
+In a web browser, navigate to this URL, and sign in as a tenant administrator; the popup dialog shows the list of permission the application requires, as specified in the application registration portal.</br>Click “**OK**” to grant the application these permissions.
 
 > **Note:** this step grants permissions to the application - not to users. This means that all users belonging to the AAD tenant that using this application will be granted these permissions - even non-admin users.
 
 ## Assigning AAD roles to users
 
-Once an application is granted permissions, everyone with access to the application (i.e. members of the AAD tenant) will receive the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users be assigned the Azure AD **Security Reader** role.</br>Reference links: [admin role](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal),  [assign roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-assign-role-azure-portal).
+Once an application is granted permissions, everyone with access to the application (that is, members of the AAD tenant) will receive the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users be assigned the Azure AD **Security Reader** role.</br>Reference links: [admin role](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal),  [assign roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 ### What you need:
 
@@ -117,7 +117,7 @@ A tenant admin must perform this step.
 
 The admin must:
 
-- Sign-in to [azure portal](https://portal.azure.com) (http://portal.azure.com).
+- Sign in to [azure portal](https://portal.azure.com) (http://portal.azure.com).
 - In the menu, select **Azure Active Directory** > **Users**.
 - Select the name of the desired user.
 - Select **Manage** > **Directory role**.
@@ -149,7 +149,7 @@ There are code samples demonstrating on how to get authentication tokens for in 
 
 If the applications do not use any of the existing libraries, please follow this [doc](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user).
 
-1. Get a code from AAD. The query to call contains parameter for Application ID, Redirect URl and **required permissions**.
+1. Get a code from AAD. The query to call contains parameter for Application ID, Redirect URl, and **required permissions**.
 2. Use the code to get an access token.
 
 If you use OpenId Connect library, please see this [doc](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/authenticate) and call</br> `app.UseOpenIdConnectAuthentication()`
@@ -159,7 +159,7 @@ Using .Net MSAL library as example:
 
 `var accessToken = (await client.AcquireTokenAsync(scopes)).AccessToken;`
 
-> Note that scopes in above example should be minimum permission such as “User.Read”. However the returned access token can contains scopes such as “User.Read.All” or “User.ReadWrite.All” which were granted by tenant admin for current user tenant.
+> Note that scopes in above example should be minimum permission such as “User.Read”. However the returned access token can contain scopes such as “User.Read.All” or “User.ReadWrite.All” which were granted by tenant admin for current user tenant.
 
 ### What You receive:
 
