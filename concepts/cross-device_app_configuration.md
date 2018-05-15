@@ -1,13 +1,12 @@
-# Build cross-device apps, powered by Project Rome 
-You can use Project Rome to build experiences that cross devices and platforms seamlessly, reducing friction for users and helping to drive app engagement. In order for applications to share data across devices & platforms using Project Rome APIs you can configure a cross-device app which includes information about your platform-specific apps. **Let's learn why and how you should configure a cross-device app.**  
+# Build cross-device apps powered by Project Rome 
 
-A cross-device app is required to take advantage of the following capabilities powered by Project Rome: 
+You can use Project Rome to build experiences that cross devices and platforms seamlessly, reducing friction for users and helping to drive app engagement. For applications to share data across devices and platforms using Project Rome APIs, you need to configure a cross-device app that includes information about your platform-specific apps. 
 
-1. Use the activity feed API on Microsoft Graph  
-2. Read & write user activities published by a group of platform-specific applications using the Project Rome SDK for Windows, Android, and/or iOS
-3. Use the device relay capabilities to target apps using the Project Rome SDK for Android or iOS 
+A cross-device app enables you to: 
 
-Here are some examples of scenarios which can be enabled through Project Rome APIs with a cross-device app: 
+- Use the Project Rome activity feed API in Microsoft Graph.  
+- Read and  write user activities published by a group of platform-specific applications using the Project Rome SDK for Windows, Android, and/or iOS.
+- Use the device relay capabilities to target apps by using the Project Rome SDK for Android or iOS.
 
 ### Pick up where you left off across devices with the Activity Feed API
 For example, an app developer may configure a cross-device app to associate his apps for Windows, iOS, Android and the web so that the app on each platform may read & write user activities which are published by any app in the group. 
