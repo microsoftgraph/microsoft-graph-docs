@@ -40,7 +40,7 @@ Open extensions is the recommended solution for most scenarios involving storing
 you need to access custom data for Outlook MAPI properties that are not already exposed through the
 [Microsoft Graph API metadata](http://developer.microsoft.com/en-us/graph/docs/overview/call_api), you can use
 [extended properties and its REST API](extended-properties-overview.md). You can verify which properties the metadata
-exposes at https://graph.microsoft.com/v1.0/$metadata.
+exposes at [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
 
 ## JSON representation
 
