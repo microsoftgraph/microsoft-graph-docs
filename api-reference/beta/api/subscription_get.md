@@ -69,7 +69,7 @@ Content-length: 252
   "clientState":"subscription-identifier",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
-  "creatorUserId": "string"
+  "creatorId": "string"
 }
 ```
 

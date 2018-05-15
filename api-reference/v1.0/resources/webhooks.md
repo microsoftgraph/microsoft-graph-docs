@@ -14,7 +14,7 @@ Using the Microsoft Graph REST API, an app can subscribe to changes on the follo
 * User's personal OneDrive folders
 
 For instance, you can create a subscription to a specific folder:
-`me/mailfolders('inbox')/messages`
+`me/mailFolders('inbox')/messages`
 
 Or a specific ID:
 `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
@@ -31,17 +31,18 @@ Or on a user's personal OneDrive:
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates cache and views, etc.
 
-Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](subscription.md#maximum-length-of-subscription-per-resource-type).
+Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](./subscription.md#maximum-length-of-subscription-per-resource-type).
 
 Apps can also unsubscribe at any time to stop getting notifications.
 
 In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api/subscription_post_subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types. 
 
-| Permission type | Supported resource types in v1.0 |
-|:----------------|:---------------------------------|
-| Delegated - work or school account | [contact](contact.md), [conversation](conversation.md), [drive](drive.md), [event](event.md), [message](message.md) |
-| Delegated - personal Microsoft account | None |
-| Application | [contact](contact.md), [conversation](conversation.md), [event](event.md), [message](message.md) |
+| Permission type                        | Supported resource types in v1.0                                 |
+| :------------------------------------- | :--------------------------------------------------------------- |
+| Delegated - work or school account     | [contact][], [conversation][], [drive][], [event][], [message][] |
+| Delegated - personal Microsoft account | None                                                             |
+| Application                            | [contact][], [conversation][], [event][], [message][]            |
+
 
 ## Code samples
 
@@ -50,7 +51,7 @@ The following code samples are available on GitHub.
 * [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 * [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
 
-# Creating a subscription
+### Creating a subscription
 
 Creating a subscription is the first step to start receiving notifications for a resource. The subscription process is as follows:
 
@@ -62,7 +63,7 @@ Creating a subscription is the first step to start receiving notifications for a
 
 Client must store the subscription ID to correlate a notification with the corresponding subscription.
 
-## Notification URL validation
+### Notification URL validation
 
 Microsoft Graph validates the notification URL in a subscription request before creating the subscription. The validation process occurs as follows:
 
@@ -72,7 +73,7 @@ Microsoft Graph validates the notification URL in a subscription request before 
   POST https://{notificationUrl}?validationToken={TokenDefinedByMicrosoftGraph}
   ClientState: {Data sent in ClientState value in subscription request (if any)}
   ```
- 
+
 2. The client must provide a response with the following characteristics within 10 seconds:
 
   * A 200 (OK) status code.
@@ -81,9 +82,9 @@ Microsoft Graph validates the notification URL in a subscription request before 
 
 The client should discard the validation token after providing it in the response.
 
-## Subscription request example
+### Subscription request example
 
-``` 
+``` http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
@@ -95,32 +96,31 @@ Content-Type: application/json
 }
 ```
 
-The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](subscription.md) for property definitions and values. Although `clientState` is not required, you must include it to comply with our recommended notification handling process.
+The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](./subscription.md) for property definitions and values. Although `clientState` is not required, you must include it to comply with our recommended notification handling process.
 
-If successful, Microsoft Graph returns a `201 Created` code and a [subscription](subscription.md) object in the body.
+If successful, Microsoft Graph returns a `201 Created` code and a [subscription](./subscription.md) object in the body.
 
-## Limitations
+### Azure AD Resource Limitations
 
-Certain limits apply and may generate errors when exceeded:
+Certain limits apply to Azure AD based resources (users, groups) and may generate errors when exceeded:
 
-1) Maximum subscription quotas
+* Maximum subscription quotas:
 
-     Per App: 50,000 total subscriptions
-     Per Tenant: 35 total subscriptions across all apps
-     Per App and Tenant combination: 7 total subscriptions
+  * Per App: 50,000 total subscriptions
+  * Per Tenant: 35 total subscriptions across all apps
+  * Per App and Tenant combination: 7 total subscriptions
 
-2) Azure AD B2C tenants are not supported
+* Azure AD B2C tenants are not supported
 
-3) Consumer account Users not supported
+* Consumer account Users not supported
 
-
-# Renewing a subscription
+## Renewing a subscription
 
 The client can renew a subscription with a specific expiration date of up to three days from the time of request. The expirationDateTime property is required.
 
-## Subscription renewal example
+### Subscription renewal example
 
-```
+``` http
 PATCH https://graph.microsoft.com/v1.0/subscriptions/{id};
 Content-Type: application/json
 {
@@ -128,23 +128,23 @@ Content-Type: application/json
 }
 ```
 
-If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subscription.md) object in the body. The subscription object includes the new expirationDateTime value. 
+If successful, Microsoft Graph returns a `200 OK` code and a [subscription](./subscription.md) object in the body. The subscription object includes the new expirationDateTime value. 
 
-# Deleting a subscription
+## Deleting a subscription
 
 The client can stop receiving notifications by deleting the subscription using its ID.
 
-```
+``` http
 DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
 
 If successful, Microsoft Graph returns a `204 No Content` code.
 
-# Notifications
+## Notifications
 
 The client starts receiving notifications after creating the subscription. Microsoft Graph sends a POST request to the notification URL when changes happen to the resource. The client only gets notifications according to the specified change type, such as *created*.
 
-## Notification properties
+### Notification properties
 
 The notification object has the following properties:
 
@@ -159,14 +159,13 @@ The notification object has the following properties:
   * @odata.etag - The HTTP entity tag that represents a version of the object.
   * id - The identifier of the object.
 
-
 > Note: The Id value provided in resourceData is valid at the time the notification was queued. Some actions, such as moving a message to another folder, may result in a resource's Id being changed. 
 
-## Notification example
+### Notification example
 
 When the user receives an email, Microsoft Graph sends a notification like the following:
 
-```
+``` json
 {
   "value":[
   {
@@ -189,7 +188,7 @@ When the user receives an email, Microsoft Graph sends a notification like the f
 
 Note the value object contains a list. If there are many queued notifications, Microsoft Graph sends them in a single request.
 
-## Processing the notification
+### Processing the notification
 
 After your application starts receiving notifications it must process them. The following are the minimum tasks that your app must perform to process a notification:
 
@@ -197,15 +196,22 @@ After your application starts receiving notifications it must process them. The 
   > Note: If this isn't true, you shouldn't consider this a valid notification. You should also investigate where the notification comes from and take appropriate action.
 
 2. Update your application based on your business logic.
+
 3. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will retry resending the notification a number of times.
   > You should send a `202 - Accepted` status code even if the clientState property doesn't match the one submitted with the subscription request.
 
 Repeat for other notifications in the request.
 
-# Additional resources
+## See also
 
-* [Subscription resource type](subscription.md)
+* [Subscription resource type](./subscription.md)
 * [Get subscription](../api/subscription_get.md)
 * [Create subscription](../api/subscription_post_subscriptions.md)
 * [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 * [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
+
+[contact]: ./contact.md
+[conversation]: ./conversation.md
+[drive]: ./drive.md
+[event]: ./event.md
+[message]: ./message.md

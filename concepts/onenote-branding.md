@@ -117,10 +117,10 @@ Refer to the table below for details about how to refer to OneNote in various co
 ![Good example of logo in packaging](images/OneNoteUsagePackaging2.png)
 
 
-## Additional resources
+## See also
 If you have any questions about these guidelines or are creating new communications using the brand assets shown here, please contact us at [@onenotedev](http://twitter.com/onenotedev).
 
-- [Branding guidelines for OneNote API developers](https://www.microsoft.com/download/details.aspx?id=42977) (download page))
+- [Branding guidelines for OneNote API developers](https://www.microsoft.com/download/details.aspx?id=42977) (download page)
 - [Integrate with OneNote](integrate_with_onenote.md)
 - [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
 - [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)

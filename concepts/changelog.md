@@ -30,6 +30,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | Beta          | Added the [settings](../api-reference/beta/resources/user_settings.md) entity and the following CRUD methods: <br> [Get](../api-reference/beta/api/user_get_settings.md) <br> [Update](../api-reference/beta/api/user_update_settings.md) |
 
+### Azure AD APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Change           | Beta          | Renamed the **creatorUserId** property of the [subscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/subscription) entity to **creatorId** to better reflect its meaning. |
+
 ## April 2018
 
 ### Audit log API
