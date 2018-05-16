@@ -54,7 +54,7 @@ Content-type: application/json
 Content-length: 51
 
 {
-  "index": null,
+  "index": 5,
   "values": [
     [1, 2, 3],
     [4, 5, 6]

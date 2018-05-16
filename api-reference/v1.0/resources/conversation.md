@@ -44,7 +44,7 @@ Here is a JSON representation of the resource
     {
       "property": "threads",
       "capabilities": {
-        "changeTracking": false,
+        "changeTracking": true,
         "searchable": false
       }
     }
