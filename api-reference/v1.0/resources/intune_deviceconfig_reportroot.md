@@ -42,6 +42,9 @@ GET https://graph.microsoft.com/v1.0/reports
 
 <!--{"blockType": "response", "@odata.type": "microsoft.graph.reportRoot"}-->
 ```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
 }
 ```

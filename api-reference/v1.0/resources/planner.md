@@ -57,6 +57,9 @@ GET https://graph.microsoft.com/v1.0/planner
   "@odata.type": "microsoft.graph.planner"
 }-->
 ```json
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
 }
 ```

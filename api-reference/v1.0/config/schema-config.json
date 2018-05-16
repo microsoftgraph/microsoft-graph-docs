@@ -1,0 +1,24 @@
+{
+  "schemaConfig": {
+    "defaultNamespace": "microsoft.graph",
+    "baseUrls": [
+      "https://graph.microsoft.com/v1.0",
+      "https://graph.microsoft.com/beta",
+      "/v1.0",
+      "/beta"
+    ],
+    "notLowerCamel": [
+      "Json"
+    ]
+  },
+  "schemaDiffConfig": {
+    "dropElementsContaining": [
+      "microsoft.graph.workbookFunctions",
+      "microsoft.graph.workbookFunctionResult",
+      "microsoft.graph.workbookFilter"
+    ],
+    "keepElementsContaining": [
+      "workbook"
+    ]
+  }
+}

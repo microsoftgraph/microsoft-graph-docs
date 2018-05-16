@@ -106,7 +106,7 @@ The first request specifies the following:
 - The [optional request header](#optional-request-header), _odata.maxpagesize_, returning 2 messages at a time.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_messages_delta_1"
 }-->
 ```
@@ -165,7 +165,7 @@ The second request specifies the `nextLink` URL returned from the previous respo
 the same `$select` parameter as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes it.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_messages_delta_2"
 }-->
 ```
@@ -223,7 +223,7 @@ more messages to get from the folder.
 The third request continues to use the latest `nextLink` URL returned from the last sync request. 
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_messages_delta_3"
 }-->
 ```

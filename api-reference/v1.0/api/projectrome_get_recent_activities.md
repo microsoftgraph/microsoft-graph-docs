@@ -59,7 +59,7 @@ If successful, this method returns the `200 OK` response code with the user's re
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_recent_activities"
 }-->
 
@@ -72,9 +72,9 @@ GET https://graph.microsoft.com/v1.0/me/activities/recent
 The following is an example of the response.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.activity)"
+  "@odata.type": "Collection(microsoft.graph.userActivity)"
 } -->
 
 ```http
