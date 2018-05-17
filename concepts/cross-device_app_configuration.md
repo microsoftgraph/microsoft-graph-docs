@@ -62,21 +62,22 @@ To find the IDs:
 * **ios** - For details, see [Bundle](https://developer.apple.com/documentation/foundation/bundle) and [Required, localizable, and editable properties](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – Sign in to the [Application registration portal](https://apps.dev.microsoft.com). You can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and Converged app IDs (GUIDs) are supported.   
 
-### Step 3: Configure support for Microsoft Account or Azure Active Directory
-To enable cross-device experiences, your app users must login with either a [Microsoft Account](https://account.microsoft.com/account) or an [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide) account. You will provide the app ID / client IDs used to support authentication in your apps powered by Project Rome APIs as part of your cross-device app configuration to enable cross-platform support. You can provide up to ten instances.
+### Step 3: Configure support for Microsoft account or Azure AD
+To enable cross-device experiences, your app users must sign in with either a [Microsoft account](https://account.microsoft.com/account) or an [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide) account. You will provide the app ID/client IDs to support authentication as part of your cross-device app configuration to enable cross-platform support. You can provide up to 10 instances.
 
-You can find your existing app ID / client IDs or provision new ones by logging into https://apps.dev.microsoft.com with your developer account. Upon logging in, you can view the App Id / client Id for any of your apps. Both Live SDK (hex values) and Converged app ids (GUIDs) are supported.   
+You can find your existing app ID/client IDs or provision new ones by signing in to the [Application registration portal](https://apps.dev.microsoft.com) with your developer account. When you sign in to the portal, you can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and converged app IDs (GUIDs) are supported.   
 
-**Note:** *Application Developers using AAD only* 
+If you are building an application that will support Azure AD users, and you do not use a Converged application ID issued through the [Application registration portal](https://apps.dev.microsoft.com), you will need to provide the GUID for the application ID of your Azure app. To find the GUID for your tenant: 
 
-If you are building an application which will support AAD users, and you do not use a Converged application id issued through https://apps.dev.microsoft.com  you will need to provide the GUID for the Application ID of your Azure app. You can find the GUID in the Azure Portal for your Tenant, using the following steps: 
-1. Login to the Azure portal https://portal.azure.com 
-2. Select **Azure Active Directory** 
-3. Under **Manage** select **App registrations** 
-4. Select your app from the list and you can view your Application ID (GUID) listed under **Essentials** 
+1. Sign in to the [Azure portal](https://portal.azure.com). 
+2. Select **Azure Active Directory**.
+3. Under **Manage**, select **App registrations**. 
+4. Select your app from the list and view your Application ID (GUID) listed under **Essentials**.
 
 ### Step 4: Configure support for cross-platform push notifications (optional) 
-If you've opted to configure your cross-device app in Windows Dev Center, you can enable support for cross-platform push notifications by providing the credentials you use with the APIs for Android and iOS push messaging platforms. These are required if you're using the Project Rome SDKs for iOS and Android and you want to do more than publish user activities. If you are using Project Rome APIs for MSGraph only, you do not need to perform this step. You can associate up to 10 sets of credentials per platform. **Never store push notification credentials in an externally hosted JSON file.** 
+If you've opted to configure your cross-device app in the Windows Dev Center, you can enable support for cross-platform push notifications by providing the credentials you use with the APIs for Android and iOS push messaging platforms. These are required if you're using the Project Rome SDKs for iOS and Android and you want to do more than publish user activities. If you're using Project Rome APIs for Microsoft Graph only, you don't need to perform this step. You can associate up to 10 sets of credentials per platform. 
+
+>**Important:** Do not store push notification credentials in an externally hosted JSON file.
 
 #### Where do I find these ids?
 * **Windows Notification Service** - find details here: 
