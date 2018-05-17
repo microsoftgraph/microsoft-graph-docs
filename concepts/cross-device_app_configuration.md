@@ -36,8 +36,8 @@ You can use the following Project Rome capabilities on all supported platforms u
 
 If you **only** access these capabilities, you can host your cross-device app configuration externally on your domain as a JSON file.
 
-## Configure a cross-device app using Windows Dev Center
-A cross-device app ID is represented as a domain that you own. The domain points to a mapping of your platform-specific app IDs stored either as a JSON file hosted on your domain or configurable via Windows Dev Center. After you identify the domain you'll use to represent your cross-device app ID, you'll need to collect information to configure the associated profile. 
+## Configure a cross-device app using the Windows Dev Center
+A cross-device app ID is represented as a domain that you own. The domain points to a mapping of your platform-specific app IDs stored either as a JSON file hosted on your domain or configurable via the Windows Dev Center. After you identify the domain you'll use to represent your cross-device app ID, you'll need to collect information to configure the associated profile. 
 
 ### Step 1: Select a secure domain for your cross-device app ID and enable domain verification
 The domain used as your cross-device app ID must either be a top-level domain or a subdomain and must be protected via TLS. For example: https://contoso.com or https://myapp.contoso.com, but NOT https://myapp.contoso.com/somepath. **You must have a unique domain (or subdomain) per cross-device app.** However, you decide which apps to associate with a single cross-device app based on the cross-platform behavior you want to support. 
@@ -52,18 +52,15 @@ To assert your domain ownership for your cross-device app, you'll need to add a 
 ### Step 2: Collect your platform-specific application IDs
 Collect the platform-specific application IDs for each application and platform that will use [Project Rome APIs](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/project_rome_overview).
 
-You'll need to collect each of the platform-specific application IDs in order to associate them with your cross-device app identity. Using the Windows Dev Center, you'll be able to select from *Universal Windows Platform* apps associated to your developer account, but you'll need to manually provide application IDs for any of your win32, iOS, and/or Android apps and identify the primary URL for any associated web apps. You can associate up to 10 IDs per platform. 
+You'll need to collect each of the platform-specific application IDs in order to associate them with your cross-device app identity. Using the Windows Dev Center, you'll be able to select from Universal Windows Platform apps associated with your developer account, but you'll need to manually provide application IDs for any of your win32, iOS, or Android apps and identify the primary URL for any associated web apps. You can associate up to 10 IDs per platform. 
 
-#### Where do I find these IDs?
-* **windows_universal** - Provide an AUMID for each UWP app. You can refer to documentation here: 
-	* https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82) 
-	* https://docs.microsoft.com/en-US/uwp/schemas/appxpackage/appxmanifestschema/element-application
-* **windows_win32** - Please provide an AUMID for each app. For win32 apps, you'll need to use a script to retrieve this information. Use the instructions here:  https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)
-* **android** - Find details here: https://developer.android.com/studio/build/application-id.html#change_the_package_name 
-* **ios** - Find details here:
-	* https://developer.apple.com/documentation/foundation/bundle
-	* https://help.apple.com/itunes-connect/developer/#/devfc3066644
-* **msa** – https://apps.dev.microsoft.com This is the portal where you can obtain an application ID for your app supporting Microsoft account. Upon logging in, you can view the App Id / client Id for any of your apps. Both Live SDK (hex values) and Converged app ids (GUIDs) are supported.   
+To find the IDs:
+
+* **windows_universal** - Provide an AUMID for each UWP app. For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) and [Application](https://docs.microsoft.com/en-US/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** - Provide an AUMID for each app. For win32 apps, you'll need to use a script to retrieve this information. For details, see For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **android** - For details, see [Change the package name](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
+* **ios** - For details, see [Bundle](https://developer.apple.com/documentation/foundation/bundle) and [Required, localizable, and editable properties](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
+* **msa** – Sign in to the [Application registration portal](https://apps.dev.microsoft.com). You can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and Converged app IDs (GUIDs) are supported.   
 
 ### Step 3: Configure support for Microsoft Account or Azure Active Directory
 To enable cross-device experiences, your app users must login with either a [Microsoft Account](https://account.microsoft.com/account) or an [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide) account. You will provide the app ID / client IDs used to support authentication in your apps powered by Project Rome APIs as part of your cross-device app configuration to enable cross-platform support. You can provide up to ten instances.
