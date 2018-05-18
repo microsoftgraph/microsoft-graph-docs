@@ -71,7 +71,7 @@ To get an access token, the app posts form-encoded parameters to the token reque
 | client_secret | The app secret generated when registering the app. |
 | code | The authorization code obtained in the prior step. |
 | redirect_uri | This value must be the same as the value used in the authorization code request. |
-| grant_type | The type of grant the app is using. This value is `code` for the Authorization Code Grant flow. |
+| grant_type | The type of grant the app is using. This value is `authorization_code` for the Authorization Code Grant flow. |
 | scope | A space-separated list of [Microsoft Graph permission scopes](./permissions_reference.md) that the app is requesting. |
 
 The request URL for our application, using the code from the previous step, looks like the following.
