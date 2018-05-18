@@ -79,42 +79,41 @@ If you've opted to configure your cross-device app in the Windows Dev Center, yo
 
 >**Important:** Do not store push notification credentials in an externally hosted JSON file.
 
-#### Where do I find these ids?
-* **Windows Notification Service** - find details here: 
-	* https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service
-	* https://go.microsoft.com/fwlink/?linkid=871424
-* **Apple Push Notification Service** - https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html
-* **Google Cloud Messaging** - https://firebase.google.com/docs/cloud-messaging/
+To find the IDs:
 
-**Note:** If you are using Firebase to push notifications to iOS devices using Android credentials, you will still need to provide your APNS credentials as part of your cross-device app configuration. 
+* **Windows Notification Service** - See [Registering your app and receiving the credentials for your cloud service](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) and the [Application registration portal](https://apps.dev.microsoft.com).
+* **Apple Push Notification Service** -See [APNs Overview](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html).
+* **Google Cloud Messaging** - See [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/).
+
+**Note:** If you're using Firebase to push notifications to iOS devices using Android credentials, you'll need to provide your APNs credentials as part of your cross-device app configuration. 
 
 ## Configure a cross-device app using an externally hosted JSON file
-A cross-device app ID is represented as a domain which you own. The domain points to a mapping of your platform-specific app IDs stored either as a JSON file hosted on your domain or configurable via Windows Dev Center. Once you've identified the domain you'll use to represent your cross-device app ID, you'll need to collect information to configure the associated profile. Let's review how to configure and manage a cross-device app ID and associated profile *using an externally hosted JSON file*.   
+A cross-device app ID is represented as a domain that you own. The domain points to a mapping of your platform-specific app IDs stored either as a JSON file hosted on your domain or configurable via the Windows Dev Center. After you identify the domain you'll use to represent your cross-device app ID, you'll need to collect information to configure the associated profile. 
 
 ### Step 1: Select a secure domain for your cross-device app ID
-A cross-device app ID is represented as a domain which you own. The domain used as your cross-device app ID must either be a top level domain or a sub domain and be protected via TLS. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique domain (or sub domain) per cross-device app. However, you decide which apps to associate into a single cross-device app based on the cross-platform behavior you want to support. 
+A cross-device app ID is represented as a domain that you own. This must either be a top-level domain or a subdomain, and must be protected via TLS. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique domain (or subdomain) per cross-device app. However, you decide which apps to associate with a single cross-device app based on the cross-platform behavior you want to support. 
 
-For example, an app developer with a suite of game apps may use a separate sub-domain for each of these to ensure each app is only subscribed to the user activities it can resume when reading data across devices & platforms. By contrast, an app developer with a suite of productivity apps designed to work together may use a single domain for all of these so that any app is able to launch a member of the suite across devices.  
+For example, an app developer with a suite of game apps might use a separate subdomain for each to ensure that each app is only subscribed to the user activities it can resume when reading data across devices and platforms. An app developer with a suite of productivity apps designed to work together might use a single domain for all of these so that any app is able to launch a member of the suite across devices.  
 
 #### Assert domain ownership with an externally hosted JSON file 
-If you are using an externally hosted JSON file to manage your cross-device app, you assert domain ownership by including your Microsoft Account or Azure Active Directory app ids in the cross-platform-app-identifiers file as outlined in the instructions below. Your domain ownership will be verified as part of the publish process when you use the activity feed API to create user activities.
+If you're using an externally hosted JSON file to manage your cross-device app, you assert domain ownership by including your Microsoft account or Azure AD app IDs in the cross-platform-app-identifiers file. Your domain ownership will be verified as part of the publish process when you use the activity feed API to create user activities.
 
-The system will cache the contents of the JSON file to avoid generating frequent requests on your domain. If configured, the service will respect HTTP cache headers when evaluating when to refresh the cache. If not configured, the service will refresh every 24hrs. 
+The system will cache the contents of the JSON file to avoid generating frequent requests on your domain. If configured, the service will respect HTTP cache headers when evaluating when to refresh the cache. If not configured, the service will refresh every 24 hours. 
 
-### Step 2: Collect your platform-specific application IDs & construct your JSON file
-Collect the platform-specific application IDs for each application and platform which will use the Activity Feed and/or Device Relay API. 
-You'll need to collect each of the platform specific application IDs in order to associate them to your cross-device app identity. Using an externally hosted JSON file, you'll need to collect app ids for each of the platform-specific apps to configure as part of your cross-device app and assemble them into the specified format below. You can associate up to 10 ids per platform. 
+### Step 2: Collect your platform-specific application IDs and construct your JSON file
+Collect the platform-specific application IDs for each application and platform that will use the activity feed and/or device relay API. 
 
-#### Constructing your *cross-platform-app-identifiers* file
-The JSON file itself must be named **cross-platform-app-identifiers** and hosted at root of your HTTPS domain. The contents of the file are a JSON array of mappings between your application's supported platforms and the application IDs on those platforms. When constructing the file, you should include a JSON object for each application and platform which will use Project Rome APIs. 
+You'll need to collect each of the platform-specific application IDs in order to associate them with your cross-device app identity. Using an externally hosted JSON file, you'll need to collect app IDs for each of the platform-specific apps to configure as part of your cross-device app and assemble them into the specified format. You can associate up to 10 IDs per platform. 
+
+#### Constructing your cross-platform-app-identifiers file
+The JSON file itself must be named **cross-platform-app-identifiers** and hosted at root of your HTTPS domain. The contents of the file are a JSON array of mappings between your application's supported platforms and the application IDs on those platforms. When constructing the file, include a JSON object for each application and platform that will use Project Rome APIs. 
  
-The file will allow for multiple JSON objects with the same platform identifier. For example, an iphone app and ipad app should be listed as separate JSON objects each with a platform value of *ios*. You can see this demonstrated in the sample below for the web platform identifier.
+The file will allow for multiple JSON objects with the same platform identifier. For example, an iPhone app and an iPad app should be listed as separate JSON objects, each with a platform value of iOS. The web platform identifier is shown in the following example.
  
-There is no need to include a JSON object for all platforms. Only include JSON objects for platforms where your application is using Project Rome APIs.  For example, if you don't have an app client for the Android platform you don’t need an entry in the file for that platform.
+You don't need to include a JSON object for all platforms. Only include JSON objects for platforms where your application is using Project Rome APIs. For example, if you don't have an app client for the Android platform, you don’t need an entry in the file for Android.
  
-This sample includes all valid platform identifiers accepted at this time. JSON objects which include an invalid platform value will be stripped out.  
+The following example includes all the valid platform identifiers currently accepted. JSON objects that include an invalid platform value will be stripped out.  
 
-*Example:*
 ```[
 {"platform":"windows_universal", "application":"Microsoft.Contoso_8wekyb3d8bbwe"},
 {"platform":"windows_win32", "application":"DefaultBrowser_NOPUBLISHERID!Microsoft.Contoso.Default"},
@@ -127,16 +126,13 @@ This sample includes all valid platform identifiers accepted at this time. JSON 
 ]
 ```
 
-#### Where do I find these ids?
-* **windows_universal** - Please provide an AUMID for each UWP app. You can refer to documentation here: 
-	* https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82) 
-	* https://docs.microsoft.com/en-US/uwp/schemas/appxpackage/appxmanifestschema/element-application
-* **windows_win32** - Please provide an AUMID for each app. For win32 apps, you'll need to use a script to retrieve this information. Use the instructions here:  https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)
-* **android** - Find details here: https://developer.android.com/studio/build/application-id.html#change_the_package_name 
-* **ios** - Find details here:
-	* https://developer.apple.com/documentation/foundation/bundle
-	* https://help.apple.com/itunes-connect/developer/#/devfc3066644
-* **msa** – https://apps.dev.microsoft.com This is the portal where you can obtain an application ID for your app supporting Microsoft account. Upon logging in, you can view the App Id / client Id for any of your apps. Both Live SDK (hex values) and Converged app ids (GUIDs) are supported.   
+To find the IDs:
+
+* **windows_universal** - Provide an AUMID for each UWP app. For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) and [Application](https://docs.microsoft.com/en-US/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** - Provide an AUMID for each app. For win32 apps, you'll need to use a script to retrieve this information. For details, see For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **android** - For details, see [Change the package name](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
+* **ios** - For details, see [Bundle](https://developer.apple.com/documentation/foundation/bundle) and [Required, localizable, and editable properties](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
+* **msa** – Sign in to the [Application registration portal](https://apps.dev.microsoft.com). You can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and Converged app IDs (GUIDs) are supported.   
 
 ### Step 3: Configure support for Microsoft Account or Azure Active Directory
 To enable cross-device experiences, your app users must login with either a Microsoft Account or an Azure Active Directory account. You will provide the app ID / client IDs used to support authentication in your apps powered by Project Rome APIs as part of the cross-device app configuration stored in your externally hosted JSON file to enable cross-platform support. You can provide up to ten instances.
