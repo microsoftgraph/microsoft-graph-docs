@@ -63,11 +63,11 @@ To find the IDs:
 * **msa** – Sign in to the [Application registration portal](https://apps.dev.microsoft.com). You can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and Converged app IDs (GUIDs) are supported.   
 
 ### Step 3: Configure support for Microsoft account or Azure AD
-To enable cross-device experiences, your app users must sign in with either a [Microsoft account](https://account.microsoft.com/account) or an [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide) account. You will provide the app ID/client IDs to support authentication as part of your cross-device app configuration to enable cross-platform support. You can provide up to 10 instances.
+To enable cross-device experiences, your app users must sign in with either a [Microsoft account](https://account.microsoft.com/account) or an [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide) (Azure AD) account. You will provide the app ID/client IDs to support authentication as part of your cross-device app configuration to enable cross-platform support. You can provide up to 10 instances.
 
 You can find your existing app ID/client IDs or provision new ones by signing in to the [Application registration portal](https://apps.dev.microsoft.com) with your developer account. When you sign in to the portal, you can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and converged app IDs (GUIDs) are supported.   
 
-If you are building an application that will support Azure AD users, and you do not use a Converged application ID issued through the [Application registration portal](https://apps.dev.microsoft.com), you will need to provide the GUID for the application ID of your Azure app. To find the GUID for your tenant: 
+If you're building an application that will support Azure AD users, and you do not use a converged application ID issued through the [Application registration portal](https://apps.dev.microsoft.com), you will need to provide the GUID for the application ID of your Azure app. To find the GUID for your tenant: 
 
 1. Sign in to the [Azure portal](https://portal.azure.com). 
 2. Select **Azure Active Directory**.
@@ -134,10 +134,9 @@ To find the IDs:
 * **ios** - For details, see [Bundle](https://developer.apple.com/documentation/foundation/bundle) and [Required, localizable, and editable properties](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – Sign in to the [Application registration portal](https://apps.dev.microsoft.com). You can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and Converged app IDs (GUIDs) are supported.   
 
-### Step 3: Configure support for Microsoft Account or Azure Active Directory
-To enable cross-device experiences, your app users must login with either a Microsoft Account or an Azure Active Directory account. You will provide the app ID / client IDs used to support authentication in your apps powered by Project Rome APIs as part of the cross-device app configuration stored in your externally hosted JSON file to enable cross-platform support. You can provide up to ten instances.
+### Step 3: Configure support for Microsoft account or Azure AD
+To enable cross-device experiences, your app users must sign in with either a Microsoft account or an Azure AD account. You will provide the app ID/client IDs to support authentication as part of your cross-device app configuration to enable cross-platform support. You can provide up to 10 instances.
 
-*Example:*
 ```[
 {"platform":"windows_universal", "application":"Microsoft.Contoso_8wekyb3d8bbwe"},
 {"platform":"windows_win32", "application":"DefaultBrowser_NOPUBLISHERID!Microsoft.Contoso.Default"},
@@ -150,16 +149,16 @@ To enable cross-device experiences, your app users must login with either a Mic
 ]
 ```
 
-You can find your existing app ID / client IDs or provision new ones by logging into https://apps.dev.microsoft.com  with your developer account. Upon logging in, you can view the App Id / client Id for any of your apps. Both Live SDK (hex values) and Converged app ids (GUIDs) are supported. The IDs used to enable support for Microsoft Account or Azure Active Directory must be added using the platform type "msa" as outlined in the example above.  
+You can find your existing app ID/client IDs or provision new ones by signing in to the [Application Registration Portal](https://apps.dev.microsoft.com) with your developer account. When you sign in, you can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and converged app IDs (GUIDs) are supported. Use the platform type "msa" when you add the IDs used to enable support for a Microsoft account or Azure AD, as shown in the previous example.  
 
-**Note:** *Application Developers using AAD only* 
-If you are building an application which will support AAD users, and you do not use a Converged application id issued through https://apps.dev.microsoft.com  you will need to provide the GUID for the Application ID of your Azure app. This type of ID should also be configured as platform type *msa*. 
+>**Note:** If you're building an application that supports Azure AD users, and you do not use a converged application ID issued through the [Application Registration Portal](https://apps.dev.microsoft.com), you will need to provide the GUID for the application ID of your Azure app. This type of ID should also be configured as platform type "msa". 
 
-You can find the GUID in the Azure Portal for your Tenant, using the following steps: 
-1. Login to the Azure portal https://portal.azure.com 
-2. Select **Azure Active Directory** 
-3. Under **Manage** select **App registrations** 
-4. Select your app from the list and you can view your Application ID (GUID) listed under **Essentials** 
+To find the GUID in the Azure Portal for your tenant: 
+
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **Azure Active Directory**. 
+3. Under **Manage**, select **App registrations**.
+4. Select your app from the list. You can view your application ID (GUID) under **Essentials**.
 
 #### Encoding the cross-platform-app-identifiers file 
 If you're not seeing activities resume in the correct native applications across platforms or you're unable to read activities published by all members in the group -- there may be an issue with your JSON file being parsed appropriately. When outputting this file ensure you're saving the cross-platform-app-identifiers file with "Unicode (UTF-8 without signature) - Codepage 65001" encoding.
