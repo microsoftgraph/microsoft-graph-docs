@@ -6,6 +6,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## May 2018
 
+### Drive API
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta          | Added the [socketIo subscription](../api-reference/beta/api/driveItem_subscriptions_socketIo.md) function to the [driveItem](../api-reference/beta/resources/driveitem.md) resource. |
+
 ### Groups
 
 | **Change type** | **Version**   | **Description**                          |
