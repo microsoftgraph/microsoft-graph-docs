@@ -198,6 +198,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [image]: image.md
 [itemReference]: itemReference.md
 [geoCoordinates]: geoCoordinates.md
+[listItem]: listItem.md
 [package]: package.md
 [permission]: permission.md
 [photo]: photo.md

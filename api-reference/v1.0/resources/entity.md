@@ -1,13 +1,5 @@
 # entity resource type
 
-
-## Methods
-
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[Get entity](../api/entity_get.md) | [entity](entity.md) |Read properties and relationships of entity object.|
-|[Delete](../api/entity_delete.md) | None |Delete entity object. |
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -15,10 +7,6 @@
 
 ## Relationships
 None
-
-
-
-
 
 ## JSON representation
 
