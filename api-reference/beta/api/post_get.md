@@ -43,7 +43,7 @@ Here is an example of the request.
   "name": "get_post"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}
+GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f/threads/AAQkAD8EJUmcWwTJi06Cew==/posts/AQMkADgAAAIJbQAAAA==
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -55,27 +55,36 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 414
 
 {
-  "body": {
-    "contentType": "",
-    "content": "content-value"
-  },
-  "receivedDateTime": "2016-10-19T10:37:00Z",
-  "hasAttachments": true,
-  "from": {
-    "emailAddress": {
-      "name": "name-value",
-      "address": "address-value"
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups('0d75b8dc-c42d-44dd-890a-751a99c0589f')/threads('AAQkAD8EJUmcWwTJi06Cew%3D%3D')/posts/$entity",
+    "@odata.etag":"W/\"CQAAABYAAAC/3QURwysWS6IJYYw5exv4AAAAAAlK\"",
+    "id":"AQMkADgAAAIJbQAAAA==",
+    "createdDateTime":"2018-01-11T17:36:17Z",
+    "lastModifiedDateTime":"2018-01-11T17:36:17Z",
+    "importance": "normal",
+    "changeKey":"CQAAABYAAAC/3QURwysWS6IJYYw5exv4AAAAAAlK",
+    "categories":[
+
+    ],
+    "receivedDateTime":"2018-01-11T17:36:17Z",
+    "hasAttachments":false,
+    "body":{
+        "contentType":"html",
+        "content":"<html><body></body></html>"
+    },
+    "from":{
+        "emailAddress":{
+            "name":"Marketing",
+            "address":"Marketing@M365B489948.onmicrosoft.com"
+        }
+    },
+    "sender":{
+        "emailAddress":{
+            "name":"Marketing",
+            "address":"Marketing@M365B489948.onmicrosoft.com"
+        }
     }
-  },
-  "sender": {
-    "emailAddress": {
-      "name": "name-value",
-      "address": "address-value"
-    }
-  }
 }
 ```
 

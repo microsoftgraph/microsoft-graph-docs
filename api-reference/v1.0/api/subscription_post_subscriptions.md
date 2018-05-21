@@ -10,10 +10,12 @@ Creating a subscription requires read scope to the resource. For example, to get
 | Conversations               | Group.Read.All      |
 | Events                      | Calendars.Read      |
 | Messages                    | Mail.Read           |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
 | Drive  (User's OneDrive)    | Files.ReadWrite     |
 | Drives (Sharepoint shared content and drives) | Files.ReadWrite.All |
 
- ***Note:*** The /v1.0 endpoint allows Application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with Application permissions.
+ ***Note:*** The /v1.0 endpoint allows application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with application permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -62,6 +64,8 @@ The following are valid values for the resource property of the subscription:
 |Mail|me/mailfolders('inbox')/messages<br />me/messages|
 |Contacts|me/contacts|
 |Calendars|me/events|
+|Users|users|
+|Groups|groups|
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
 
@@ -74,14 +78,19 @@ Here is an example of the response. Note: The response object shown here may be 
 } -->
 ```http
 HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 252
 
 {
-  "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
-  "resource":"me/mailFolders('Inbox')/messages",
-  "changeType":"created, updated",
-  "clientState":"subscription-identifier",
-  "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
-  "expirationDateTime":"2016-11-20T18:23:45.9356913Z"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity",
+  "id": "7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
+  "resource": "me/mailFolders('Inbox')/messages",
+  "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
+  "changeType": "created,updated",
+  "clientState": "subscription-identifier",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+  "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
+  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
 ## Subscription validation

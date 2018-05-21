@@ -39,7 +39,7 @@ In the previous table, the examples use `/drive`, but there are many valid reque
   "id": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
-  "published": { "@odata.type": "microsoft.graph.publicationFacet" }
+  "publication": { "@odata.type": "microsoft.graph.publicationFacet" }
 }
 ```
 
@@ -50,7 +50,7 @@ In the previous table, the examples use `/drive`, but there are many valid reque
 | **id**                   | string                                               | The ID of the version. Read-only.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identitySet.md)           | Identity of the user which last modified the version. Read-only.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
-| **published**            | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
+| **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
 | **size**                 | Int64                                                | Indicates the size of the content stream for this version of the item.  |
 
 ## Relationships

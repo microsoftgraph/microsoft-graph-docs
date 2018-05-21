@@ -176,6 +176,7 @@ The age group and minor consent properties are optional properties used by Azure
 |events|[event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Nullable.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance. |
+|insights|[insights](insights.md) collection| Read-only. Nullable.|
 |joinedGroups|[group](group.md) collection| Read-only. Nullable.|
 |mailFolders|[mailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
@@ -192,8 +193,7 @@ The age group and minor consent properties are optional properties used by Azure
 |planner|[plannerUser](plannerUser.md)| Selective Planner services available to the user. Read-only. Nullable. |
 |sharepoint|[sharepoint](sharepoint.md)| Access to the user's SharePoint site. Read-only. |
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
-|trendingAround|[driveItem](driveitem.md) collection| Read-only. Nullable.|
-|workingWith|[user](user.md) collection| Read-only. Nullable.|
+|settings|[settings](user_settings.md) collection| Read-only. Nullable.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
 
 ## JSON representation
@@ -290,6 +290,8 @@ Here is a JSON representation of the resource
   "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "drive": { "@odata.type": "microsoft.graph.drive" },
+  "insights": { "@odata.type": "microsoft.graph.officeGraphInsights" },
+  "settings": { "@odata.type": "microsoft.graph.userSettings" },
   "events": [ { "@odata.type": "microsoft.graph.event" } ],
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "inferenceClassification": { "@odata.type": "microsoft.graph.inferenceClassification" },

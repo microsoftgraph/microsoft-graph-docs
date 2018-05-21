@@ -265,13 +265,13 @@ Your request contains an **expand** expression for a non-navigation property. On
 The **select** or **expand** expression in your request contains an invalid term.
 
 ### 20146
-The `style="position:absolute"` attribute is specified on an element, but the **body** element does not specify `data-absolute-enabled="true"`, which is required to support positioning. All position settings will be ignored. See [Create absolute positioned elements](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos).
+The `style="position:absolute"` attribute is specified on an element, but the **body** element does not specify `data-absolute-enabled="true"`, which is required to support positioning. All position settings will be ignored. See [Create absolute positioned elements](onenote-abs-pos.md).
 
 ### 20147
-The `style="position:absolute"` attribute is specified on an element that is not a direct child of the **body** element, which is not supported. If the element is a **div**, **img**, or **object**, make it a direct child of the body; otherwise the position settings will be ignored and its content will render inside an absolute positioned div. See [Create absolute positioned elements](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos).
+The `style="position:absolute"` attribute is specified on an element that is not a direct child of the **body** element, which is not supported. If the element is a **div**, **img**, or **object**, make it a direct child of the body; otherwise the position settings will be ignored and its content will render inside an absolute positioned div. See [Create absolute positioned elements](onenote-abs-pos.md).
 
 ### 20148
-The `style="position:absolute"` attribute is specified on an element type that does not support it. Only **div**, **img**, and **object** elements that are direct children of the page body support positioning. See [Create absolute positioned elements](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos).
+The `style="position:absolute"` attribute is specified on an element type that does not support it. Only **div**, **img**, and **object** elements that are direct children of the page body support positioning. See [Create absolute positioned elements](onenote-abs-pos.md).
 
 ### 20149
 Your request specifies a target element that cannot be found.

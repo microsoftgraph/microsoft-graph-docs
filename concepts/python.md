@@ -70,6 +70,7 @@ Here are some other Python samples that demonstrate how to work with various asp
 * [Python authentication samples for Microsoft Graph](https://github.com/microsoftgraph/python-sample-auth)
 * [Working with paginated Microsoft Graph responses in Python](https://github.com/microsoftgraph/python-sample-pagination)
 * [Working with Graph open extensions in Python](https://github.com/microsoftgraph/python-sample-open-extensions)
+* [Connect a Python web app to the Security API](https://github.com/microsoftgraph/python-security-rest-sample)
 
 If there's a particular sample you'd like to see, please let us know by [submitting an issue](https://github.com/microsoftgraph/python-sample-auth/issues). We're very interested in your feedback on any Microsoft Graph scenario you'd like to build in Python!
 

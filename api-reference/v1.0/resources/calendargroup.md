@@ -1,6 +1,6 @@
 # calendarGroup resource type
 
-A group of calendars.
+A group of user calendars.
 
 ## Methods
 

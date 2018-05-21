@@ -6,12 +6,13 @@ An aggregation of information about a person from across mail, contacts and soci
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Get person](../api/person_get.md) | [person](person.md) |Read properties and relationships of a person object.|
+|[List people](../api/user_list_people.md) | **person** |Get a collection of person objects ordered by their relevance to the [user](../resources/user.md).|
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property | Type | Description |
 |:---------------|:--------|:----------|
 |birthday|string|The person's birthday.|
 |companyName|string|The name of the person's company.|
@@ -36,8 +37,8 @@ An aggregation of information about a person from across mail, contacts and soci
 |yomiCompany|string|The phonetic Japanese name of the person's company.|
 
 ## Relationships
-None
 
+None
 
 ## JSON representation
 

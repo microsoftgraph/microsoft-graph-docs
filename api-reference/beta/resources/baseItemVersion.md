@@ -21,7 +21,7 @@ The **baseItemVersion** resource represents a previous version of an item or ent
   "id": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
-  "published": { "@odata.type": "microsoft.graph.publicationFacet" }
+  "publication": { "@odata.type": "microsoft.graph.publicationFacet" }
 }
 ```
 
@@ -32,7 +32,7 @@ The **baseItemVersion** resource represents a previous version of an item or ent
 | **id**                   | string                                               | The ID of the version. Read-only.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identitySet.md)           | Identity of the user which last modified the version. Read-only.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
-| **published**            | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
+| **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
 
 
 <!-- {
