@@ -17,7 +17,7 @@ Here are popular requests for working with audit log data:
 
 Operation | URL
 :----------|:----
-GET tenant user activities | [https://graph.microsoft.com/beta/auditLogs/directoyAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=beta)
+GET tenant user activities | [https://graph.microsoft.com/beta/auditLogs/directoryAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=beta)
 GET tenant user sign-ins | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
 
 ## What Azure AD licenses are needed to access audit logs?
