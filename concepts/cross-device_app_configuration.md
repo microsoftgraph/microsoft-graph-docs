@@ -173,7 +173,7 @@ If you're using the client-side APIs for Windows, iOS, or Android, you'll need t
 If you have an app using the activity feed API in Microsoft Graph, your host value must be supplied in the **activitySourceHost** property. For details, see [activity resource type](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_activity).
 
 ### Universal Windows apps
-If you have a Windows app, you will need to configure the host value in your app manifest before publishing data. For details, see  
+If you have a Windows app, you will need to configure the host value in your app manifest before publishing data. For details, see 
 [uap5:UserActivity](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
 
 <!-- Removing until we add the details.
