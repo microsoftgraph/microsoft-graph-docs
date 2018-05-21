@@ -24,7 +24,7 @@ are not. If you attempt to use an API that is not part of the supported set in a
 
 ## Requirements for the REST API to work in hybrid deployments
 
-Microsoft Graph provides openness (open standards support like JSON, OAUTH and ODATA, connecting from most popluar platforms)
+Microsoft Graph provides openness (open standards support like JSON, OAUTH and ODATA, connecting from most popular platforms)
 and flexibility (granular, tightly scoped permissions to access user data). 
 If your organization is interested in enabling Microsoft Graph app development and is currently in or considering a hybrid deployment, 
 be aware of the following deployment requirements:
