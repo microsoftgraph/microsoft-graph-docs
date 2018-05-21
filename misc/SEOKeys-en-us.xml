@@ -34,6 +34,7 @@
   <Item text="Cross-device experiences" ProdTag="Project Rome" url="/en-us/concepts/cross-device-concept-overview" >
     <Item text="Activity feed" url="/en-us/concepts/activity-feed-concept-overview" />
     <Item text="Device relay (preview)" url="/en-us/concepts/device-relay-concept-overview" />
+	<Item text="Build cross-device apps" url="/en-us/concepts/cross-device-app-configuration" />
   </Item>
   <Item text="Customer booking (preview)" ProdTag="Microsoft Bookings" url="/en-us/concepts/booking-concept-overview" />
   <Item text="Devices and apps" ProdTag="Intune" url="/en-us/concepts/intune-concept-overview" />
