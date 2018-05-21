@@ -161,30 +161,35 @@ To find the GUID in the Azure Portal for your tenant:
 4. Select your app from the list. You can view your application ID (GUID) under **Essentials**.
 
 #### Encoding the cross-platform-app-identifiers file 
-If you're not seeing activities resume in the correct native applications across platforms or you're unable to read activities published by all members in the group -- there may be an issue with your JSON file being parsed appropriately. When outputting this file ensure you're saving the cross-platform-app-identifiers file with "Unicode (UTF-8 without signature) - Codepage 65001" encoding.
+If you're not seeing activities resume in the correct native applications across platforms, or you're unable to read activities published by all members in the group, your JSON file might not be getting parsed appropriately. When outputting this file, make sure you're saving the cross-platform-app-identifiers file with "Unicode (UTF-8 without signature) - Codepage 65001" encoding.
 
 #### Updating the cross-platform-app-identifiers JSON file 
-The system will cache the contents of the JSON file to avoid generating frequent requests on your domain. If configured, the service will respect HTTP cache headers when evaluating when to refresh the cache. If not configured, the service will refresh every 24hrs. 
+The system will cache the contents of the JSON file to avoid generating frequent requests on your domain. If configured, the service will respect HTTP cache headers when evaluating when to refresh the cache. If not configured, the service will refresh every 24 hours. 
 
 ## Configure your app client 
-If you're using the client side API's for Windows, iOS or Android you'll need to make sure your app client is configured with the host value that represents your cross-device app identity (e.g. contoso.com).
+If you're using the client-side APIs for Windows, iOS, or Android, you'll need to make sure your app client is configured with the host value that represents your cross-device app identity (for example, contoso.com).
 
-### MSGraph apps 
-If you have an app using the Activity Feed API on MSGraph, your host value must be supplied in the activitySourceHost property. Refer to documentation available here: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_activity
+### Microsoft Graph apps 
+If you have an app using the activity feed API in Microsoft Graph, your host value must be supplied in the **activitySourceHost** property. For details, see [activity resource type](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_activity).
 
 ### Universal Windows apps
-If you have a Windows app, you will need to  configure the host value in your app manifest before publishing data. See details here: 
-https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity 
+If you have a Windows app, you will need to configure the host value in your app manifest before publishing data. For details, see  
+[uap5:UserActivity](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
 
+<!-- Removing until we add the details.
 ### iOS & Android apps
 *Details coming soon.*
+-->
 
 ## Maintaining your cross-device app configuration
-When releasing a new application which will generate user activities, it's important to update the cross-device app with the new configuration values in advance so that any new activities published are correctly associated with the cross device app. The cross-device app configuration associated to user activities which have been published prior to a change in configuration will not be updated automatically. However, an update operation performed on any activity with an old configuration will be updated to the most recent version on file.  
+When releasing a new application that will generate user activities, it's important to update the cross-device app with the new configuration values in advance so that any new activities published are correctly associated with the cross-device app. The cross-device app configuration associated with user activities that have been published prior to a change in configuration will not be updated automatically. However, an update operation performed on any activity with an old configuration will be updated to the most recent version on file.  
 
 ## Troubleshooting
-### Activities are not available to read & write for all apps in the cross-device app configuration
-The activity feed API ingests the cross-device app configuration asynchronously so configuration errors may not be readily apparent when publishing user activities. In the event the service fails to ingest the JSON file either due to TLS or formatting error any activities which have been published will be attributed to the app id which posted the activity, only. In the case of activities published via MSGraph, this is the MSA app id used to authorize requests to the Graph. In the case of activities published via client side APIs, the activity.applicationId will record the id of the platform-specific app which posted the activity, only. This will prevent read & write operations on activities from any other platform-specific apps identified in the cross-device app configuration. 
+
+The following are some common issues that can occur with the activity feed API.
+
+### Activities are not available to read and write for all apps in the cross-device app configuration
+The activity feed API ingests the cross-device app configuration asynchronously, so configuration errors might not be readily apparent when publishing user activities. In the event the service fails to ingest the JSON file, either due to TLS or formatting error, any activities that have been published will be attributed to the app ID that posted the activity, only. In the case of activities published via Microsoft Graph, this is the Microsoft account app ID used to authorize requests to Microsoft Graph. In the case of activities published via client-side APIs, the activity.applicationId will record the ID of the platform-specific app that posted the activity, only. This will prevent read and write operations on activities from any other platform-specific apps identified in the cross-device app configuration. 
 
 ### Platform will not initialize on Android or iOS
-The device relay API for Android or iOS requires the cross-device app configuration in order to instantiate connections to the Android or iOS app. In the event the platform fails to initialize successfully make sure you have correctly identified the MSA app ids & push notification credentials used to configure your cross-device app in Windows Dev Center and configured your client apps' host value with the domain that identifies your cross-device app. 
+The device relay API for Android or iOS requires the cross-device app configuration in order to instantiate connections to the Android or iOS app. In the event that the platform fails to initialize successfully, make sure you have correctly identified the Microsoft account app IDs and push notification credentials used to configure your cross-device app in the Windows Dev Center, and configure your client apps' host value with the domain that identifies your cross-device app. 
