@@ -36,5 +36,5 @@ To learn the sign-in report differences between plans, see [Risky sign-ins repor
 
 ## Next Steps
 
-- [directoryAudits](directoryAudits.md) resource and actions.
-- [signIns](signIns.md) resource and actions. 
+- [directoryAudit](directoryAudit.md) resource and actions.
+- [signIn](signIn.md) resource and actions. 
