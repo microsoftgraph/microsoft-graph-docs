@@ -118,6 +118,7 @@ The **list** resource has the following relationships to other resources.
 [identitySet]: identitySet.md
 [listInfo]: listInfo.md
 [listItem]: listItem.md
+[sharepointIds]: sharepointIds.md
 [site]: site.md
 [systemFacet]: systemFacet.md
 

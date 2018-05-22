@@ -28,16 +28,12 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.directory"
 }-->
 
 ```json
 {
-  "id": "String (identifier)"
 }
 ```
 

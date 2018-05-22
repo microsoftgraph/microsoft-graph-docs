@@ -22,14 +22,11 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.reportRoot"
 }-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.reportRoot",
-  "id": "String (identifier)"
 }
 ```
 

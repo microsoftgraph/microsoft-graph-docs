@@ -102,6 +102,7 @@ The following properties are inherited from **[baseItem][]**.
 [identitySet]: identitySet.md
 [list]: list.md
 [listItemVersion]: listItemVersion.md
+[sharepointIds]: sharepointIds.md
 
 <!-- {
   "type": "#page.annotation",

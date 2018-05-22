@@ -95,7 +95,7 @@ Content-Type: application/json
             "attribution": {
               "iconUrl": "http://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
-              "addImageQuery": "false",
+              "addImageQuery": false,
               },
             "displayText": "Contoso How-To: How to Tie a Reef Knot",
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
@@ -134,5 +134,9 @@ Content-Type: application/json
   "description": "Get recent activities",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Error: get_recent_activities/container/contentInfo:
+      Property 'contentInfo' is of type Custom but has no custom members."
+  ],
   "tocPath": ""
 }-->

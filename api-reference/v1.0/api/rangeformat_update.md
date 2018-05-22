@@ -375,5 +375,9 @@ Content-type: application/json
   "description": "Update rangeformat",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Error: update_rangeformat_font_three/underline:
+      Expected type String but actual was Single. Property: underline, actual value: 'Single'"
+  ],
   "tocPath": ""
 }-->

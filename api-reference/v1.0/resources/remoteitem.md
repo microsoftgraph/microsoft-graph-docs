@@ -67,6 +67,8 @@ This resource provides the unique IDs of the source drive and target item.
 
 For more information about the facets on a **driveItem**, see [driveItem](driveitem.md).
 
+[specialFolder]: specialFolder.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "The quota facet provides information about how much space the OneDrive has available.",

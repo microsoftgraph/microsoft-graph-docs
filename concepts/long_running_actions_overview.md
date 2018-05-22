@@ -113,13 +113,17 @@ Content-type: application/json
 Once the job has completed, the monitor URL returns the resourceId of the result, in this case the new copy of the original item.
 You can address this new item using the resourceId, for example:
 
-<!-- { "blockType": "request", "name": "lro-copy-item-example-complete", "scopes": "files.readwrite" } -->
+<!-- {
+  "blockType": "request",
+  "name": "lro-copy-item-example-complete",
+  "scopes": "files.readwrite"
+} -->
 
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem" } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -153,5 +157,11 @@ The same [permissions](./permissions_reference.md) that are required to perform 
   "description": "Monitor the progress of long-running actions in the API.",
   "keywords": "monitor,long,running,operation,action",
   "section": "documentation",
+  "suppressions": [
+    "Error: lro-check-status:
+      Unable to locate a definition for resource type: microsoft.graph.asyncJobStatus",
+    "Error: lro-check-status-complete:
+      Unable to locate a definition for resource type: microsoft.graph.asyncJobStatus"
+  ],
   "tocPath": "Concepts/Long running actions"
 } -->

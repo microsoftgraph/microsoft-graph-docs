@@ -42,7 +42,7 @@ The following table lists and describes the HTTP status codes that can be return
 The error response is a single JSON object that contains a single property
 named **error**. This object includes all the details of the error. You can use the information returned here instead of or in addition to the HTTP status code. The following is an example of a full JSON error body.
 
-<!-- { "blockType": "example", "@odata.type": "odata.error", "expectError": true, "name": "example-error-response"} -->
+<!-- { "blockType": "example", "@odata.type": "odata.error", "expectError": true, "name": "example-error-response", "truncated": true} -->
 ```json
 {
   "error": {
