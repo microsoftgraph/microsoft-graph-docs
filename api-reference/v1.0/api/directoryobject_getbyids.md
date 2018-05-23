@@ -1,12 +1,12 @@
 # Get directory objects from a list of ids
 
-Returns the directory objects specified in a list of ids.
+Returns the directory objects specified in a list of IDs.
 
-NOTE: Not all directory objects returned are the full objects containing **all** their properties. For example [user](../resources/user.md) objects are returned with a limited set of properties, but when used in combination with the `$select` query option such as `$select=id` full [user](../resources/user.md) objects will be returned.
+>**Note:** Not all directory objects returned are the full objects containing **all** their properties. For example, [user](../resources/user.md) objects are returned with a limited set of properties, but when used in combination with the `$select` query option such as `$select=id`, full [user](../resources/user.md) objects will be returned.
 
 Some common uses for this function are to:
 
-* Resolve ids returned by functions (that return collections of ids) such as [getMemberObjects](directoryobject_getmemberobjects.md) or [getMemberGroups](directoryobject_getmembergroups.md)  to their backing directory objects.
+* Resolve IDs returned by functions (that return collections of IDs) such as [getMemberObjects](directoryobject_getmemberobjects.md) or [getMemberGroups](directoryobject_getmembergroups.md) to their backing directory objects.
 * Resolve ids persisted in an external store by the application to their backing directory objects.
 
 ## Permissions
@@ -41,7 +41,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter   | Type |Description|
 |:---------------|:--------|:----------|
-|ids|String collection| A collection of ids for which to return objects. You can specify up to 1000 ids. |
+|ids|String collection| A collection of IDs for which to return objects. You can specify up to 1000 IDs. |
 |types|String collection| A collection of resource types that specifies the set of resource collections to search. If not specified, the default is [directoryObject](../resources/directoryobject.md), which contains all of the resource types defined in the directory. Any object that derives from `directoryObject` may be specified in the collection; for example: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md), and so on. The values are not case sensitive.|
 
 ## Response
