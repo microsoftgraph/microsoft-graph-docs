@@ -123,5 +123,9 @@ Content-length: 254
   "description": "contactFolder: delta",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: contactfolder_delta/container/wellKnownName:
+      Undocumented property 'wellKnownName' [String] was not expected on resource microsoft.graph.contactFolder."
+  ],
   "tocPath": ""
 }-->

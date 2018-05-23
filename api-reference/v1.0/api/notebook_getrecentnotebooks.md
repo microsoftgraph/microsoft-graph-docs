@@ -66,7 +66,7 @@ Content-Length: 1110
 {
   "value":[
     {
-      "name":"Personal Notebook","lastAccessedTime":"timestamp","links":{
+      "displayName":"Personal Notebook","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
           "href":"onenote:href-value"
         },"oneNoteWebUrl":{
@@ -74,7 +74,7 @@ Content-Length: 1110
         }
       },"sourceService":"OneDrive"
     },{
-      "name":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
+      "displayName":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
           "href":"onenote:href-value"
         },"oneNoteWebUrl":{

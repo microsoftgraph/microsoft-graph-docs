@@ -85,6 +85,7 @@ If the range cannot be generated the Range header may be ignored and an `HTTP 20
 ```http
 HTTP/1.1 206 Partial Content
 Content-Range: bytes 0-1023/2048
+Content-Type: application/octet-stream
 
 <first 1024 bytes of file>
 ```

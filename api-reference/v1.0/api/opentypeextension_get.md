@@ -380,6 +380,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages",

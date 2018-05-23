@@ -13,11 +13,6 @@ Currently, deleted items functionality is only supported for Office 365 [groups]
 |[List deleted items](../api/directory_deleteditems_list.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted items. |
 |[Permanently delete an item](../api/directory_deleteditems_delete.md) | None | Permanently deletes an item. |
 
-## Properties
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-|id|String| A unique identifier for the object; for example, 12345678-9abc-def0-1234-56789abcde. Key. Not nullable. Read-only.|
-
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
@@ -44,9 +39,10 @@ Here is a JSON representation of the resource.
 GET https://graph.microsoft.com/v1.0/directory
 ```
 
-<!--{"blockType": "response", "@odata.type": "microsoft.graph.directory"}-->
+<!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.directory"}-->
 ```json
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
 }

@@ -296,6 +296,7 @@ The server will respond with a list of missing byte ranges that need to be uploa
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "expirationDateTime": "2015-01-29T09:21:55.523Z",

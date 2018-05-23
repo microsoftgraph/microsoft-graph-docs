@@ -56,9 +56,9 @@ Content-type: application/json
 Content-length: 292
 
 {
-  "schoolPrincipalEmail": "AmyRoebuck@contoso.com",
-  "schoolPrincipalName": "Amy Roebuck",
-  "externalSchoolPrincipalId": "14007",
+  "principalEmail": "AmyRoebuck@contoso.com",
+  "principalName": "Amy Roebuck",
+  "externalPrincipalId": "14007",
   "lowestGrade": "9",
   "highestGrade": "12"
 }

@@ -11,11 +11,6 @@ The resource that represents an instance of History Reports.
 |[deviceConfigurationUserActivity function](../api/intune_deviceconfig_reportroot_deviceconfigurationuseractivity.md)|[report](../resources/intune_deviceconfig_report.md)|Metadata for the device configuration user activity report|
 |[deviceConfigurationDeviceActivity function](../api/intune_deviceconfig_reportroot_deviceconfigurationdeviceactivity.md)|[report](../resources/intune_deviceconfig_report.md)|Metadata for the device configuration device activity report|
 
-## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The unique identifier for this entity.|
-
 ## Relationships
 None
 ## JSON Representation
@@ -37,7 +32,7 @@ Here is a JSON representation of the resource.
 GET https://graph.microsoft.com/v1.0/reports
 ```
 
-<!--{"blockType": "response", "@odata.type": "microsoft.graph.reportRoot"}-->
+<!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.reportRoot"}-->
 ```json
 HTTP/1.1 200 OK
 Content-Type: application/json

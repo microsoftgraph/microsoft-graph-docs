@@ -48,8 +48,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "d14922d8-43e6-4c8a-b029-e35c5b4e0d63",
-  "listItemId": 2,
+  "id": "5",
   "fields": {
     "Name": "Widget",
     "Color": "Blue",

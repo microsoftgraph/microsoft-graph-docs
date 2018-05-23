@@ -96,7 +96,7 @@ The following is an example of the response.
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.activity"
+    "@odata.type": "microsoft.graph.userActivity"
 } -->
 
 ```http
@@ -212,7 +212,7 @@ The following is an example of the response.
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.activity"
+    "@odata.type": "microsoft.graph.userActivity"
 } -->
 
 ```http

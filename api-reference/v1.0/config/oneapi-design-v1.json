@@ -20,15 +20,21 @@
         "Content-Range",
         "Range"
       ],
-      "contentTypes": ["application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg"]
+      "contentTypes": ["application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg", "application/octet-stream"]
     },
     "httpResponse": {
-      "contentTypes": ["application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg"],
+      "contentTypes": ["application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg", "application/octet-stream"],
       "standardHeaders":
       [
         "Content-Range"
       ]
     },
+    "ignorableProperties": [
+      "@odata.context",
+      "@odata.type",
+      "@odata.id",
+      "@odata.etag"
+    ],
     "jsonSerialization": {
       "collectionPropertyNames": ["value"],
       "dateTimeFormats": ["yyyy-MM-ddThh:MM:SSz"]

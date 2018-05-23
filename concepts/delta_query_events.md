@@ -382,7 +382,6 @@ Content-type: application/json
             "location":{
                 "displayName":"Chapel of Saint Ignatius",
                 "address":{
-                    "type":"unknown",
                     "street":"900 Broadway",
                     "city":"Seattle",
                     "state":"WA",

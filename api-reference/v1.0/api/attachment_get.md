@@ -281,5 +281,9 @@ Content-length: 215
   "description": "Get attachment",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Error: get_and_expand_item_attachment/item:
+      Property 'item' is of type Custom but has no custom members."
+  ],
   "tocPath": ""
 }-->

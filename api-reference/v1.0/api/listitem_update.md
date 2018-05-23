@@ -58,7 +58,7 @@ Content-Type: application/json
 
 If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 
 ```json
 HTTP/1.1 201 Created

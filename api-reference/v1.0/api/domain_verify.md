@@ -67,7 +67,7 @@ Content-length: 192
   "isDefault": true,
   "isInitial": true,
   "isRoot": true,
-  "name": "contoso.com"
+  "id": "contoso.com"
 }
 ```
 
