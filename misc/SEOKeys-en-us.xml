@@ -5076,7 +5076,7 @@
           <Item text="Assign owner" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Create owner, Microsoft Graph API, application API" SEODescription="Use this API to create a new owner." />
           <Item text="List extension properties" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="List extensionProperties, Microsoft Graph API, application API" SEODescription="Retrieve a list of extensionproperty objects." />
         </Item>
-	  <Item text="Audit logs"  url="/en-us/api-reference/beta/resources/directoryaudit">
+	  <Item text="Audit logs"  url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="Directory audit" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="directoryAudit object, Microsoft Graph API, Azure AD, audit logs" SEODescription="">
 			<Item text="List directory audits" url="/en-us/api-reference/beta/api/directoryaudit_list" SEOKeyword="Audit log API, Microsoft Graph API, Azure AD, audit logs" SEODescription="API to return a list of directoryAudit objects."/>
 			<Item text="Get directory audit" url="/en-us/api-reference/beta/api/directoryaudit_get" SEOKeyword="Audit log API, Microsoft Graph API, Azure AD, audit logs" SEODescription="API to return a directoryAudit object."/>
