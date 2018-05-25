@@ -31,7 +31,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 #### Request
 
-<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
@@ -70,6 +70,13 @@ Content-type: application/json
   ]
 }
 ```
+
+## Remarks
+
+Lists with the [system][] facet are hidden by default.
+To list them, include `system` in your `$select` statement.
+
+[system]: ../resources/systemFacet.md
 
 <!-- {
   "type": "#page.annotation",

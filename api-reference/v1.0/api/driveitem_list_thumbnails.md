@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and collection of [T
 
 Here is an example of the request which retrieves available thumbnails for an item in the current user's OneDrive.
 
-<!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails
@@ -96,7 +96,7 @@ Retrieve the metadata for a single thumbnail and size by addressing it directly 
 
 ### HTTP request
 
-<!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
@@ -129,7 +129,7 @@ You can directly retrieve the content of the thumbnail by requesting the **conte
 
 ### HTTP request
 
-<!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
@@ -156,7 +156,7 @@ This enables your app to retrieve thumbnails and items in a single request, inst
 
 ### HTTP request
 
-<!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/children?$expand=thumbnails

@@ -131,7 +131,7 @@ The eTag value is only modified when the folder's properties are changed, except
 
 ## Relationships
 
-| Relationship       | Type                            | Description
+| Relationship       | Type                        | Description
 |:-------------------|:----------------------------|:--------------------------
 | children           | driveItem collection        | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
 | createdByUser      | [user][]                    | Identity of the user who created the item. Read-only.

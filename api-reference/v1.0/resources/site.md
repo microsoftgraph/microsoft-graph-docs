@@ -30,7 +30,7 @@ All examples below are relative to `https://graph.microsoft.com/v1.0`.
 
 Here is a JSON representation of a **site** resource.
 
-The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
+The **site** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 
 <!--{
   "blockType": "resource",

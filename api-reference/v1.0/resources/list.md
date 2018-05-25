@@ -15,7 +15,7 @@ The following tasks are available for list resources.
 **Note:** This beta only allows navigating lists, not creating or updating them.
 You can, however, create or update [list items][listItem].
 
-All examples below are relative to a site, eg: `https://graph.microsoft.com/beta/sites/{site-id}`.
+All examples below are relative to a site, eg: `https://graph.microsoft.com/v1.0/sites/{site-id}`.
 
 | Common task               | HTTP method
 |:--------------------------|:------------------------------
@@ -56,7 +56,7 @@ Here is a JSON representation of a **list** resource.
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
-    "template": "documentLibrary | genericList | survey | links | announcements | contacts ..."
+    "template": "documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
   },
   "system": false,
 

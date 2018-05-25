@@ -63,7 +63,7 @@ GET /groups/{group-id}/sites/root
 
 ### Request
 
-<!-- { "blockType": "request", "name": "get-site" } -->
+<!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all" } -->
 
 ```http
 GET /sites/{site-id}

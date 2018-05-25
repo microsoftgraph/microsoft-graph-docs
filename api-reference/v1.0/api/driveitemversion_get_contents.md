@@ -40,7 +40,7 @@ This example retrieves a version of a file in the current user's drive.
 
 ### HTTP request
 
-<!-- { "blockType": "request", "name": "get-version-contents", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-version-contents", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/versions/{version-id}/content
@@ -53,7 +53,7 @@ This returns a redirect to where the contents of the version can be downloaded.
 <!-- { "blockType": "response", "isEmpty": true  } -->
 
 ```http
-HTTP/1.1 302 Redirect
+HTTP/1.1 302 Found
 Location: https://onedrive.com/34FF49D6...
 ```
 

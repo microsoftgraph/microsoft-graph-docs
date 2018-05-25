@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 To access the root SharePoint site with a relative path:
 
-<!-- { "blockType": "ignored", "name": "get-site-by-hostname-and-path", "scopes": "service.sharepoint sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET /sites/{hostname}:/{relative-path}

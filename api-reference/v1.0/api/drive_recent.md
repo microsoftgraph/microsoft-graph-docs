@@ -24,6 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
        "scopes": "files.read",
+       "tags": "service.graph",
        "target": "action" } -->
 
 ```http
@@ -80,7 +81,7 @@ Content-Type: application/json
 
 ## Remarks
 
-Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. 
+Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive.
 To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->

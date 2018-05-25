@@ -63,11 +63,11 @@ This resource provides the unique IDs of the source drive and target item.
 | webDavUrl            | Url                                 | DAV compatible URL for the item.                                                                                                                                  |
 | webUrl               | Url                                 | URL that displays the resource in the browser. Read-only.                                                                                                         |
 
+[specialFolder]: specialFolder.md
+
 ## Remarks
 
 For more information about the facets on a **driveItem**, see [driveItem](driveitem.md).
-
-[specialFolder]: specialFolder.md
 
 <!-- {
   "type": "#page.annotation",
