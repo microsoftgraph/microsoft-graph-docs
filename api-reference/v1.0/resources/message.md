@@ -56,7 +56,7 @@ by providing a [delta](../api/message_delta.md) function.
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the **body** property to look for a `src` attribute, such as `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`.|
 |id|String|Unique identifier for the message (note that this value may change if a message is moved or altered)|
-|importance|String| The importance of the message: `Low`, `Normal`, `High`.|
+|importance|String| The importance of the message: `Low`, `Normal`, `High`. If the property is provided as an empty string, Low importance is set as default.|
 |inferenceClassification | String | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused` or `other`. |
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only.|
 |internetMessageId |String |The message ID in the format specified by [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
@@ -67,7 +67,7 @@ by providing a [delta](../api/message_delta.md) function.
 |lastModifiedDateTime|DateTimeOffset|The date and time the message was last changed.|
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
-|replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
+|replyTo|[recipient](recipient.md) collection|The email addresses to use when replying. This is a required property for new messages, but is not required for reply or replyAll methods.|
 |sender|[recipient](recipient.md)|The account that is actually used to generate the message.|
 |sentDateTime|DateTimeOffset|The date and time the message was sent.|
 |subject|String|The subject of the message.|
