@@ -1,6 +1,6 @@
 # Microsoft Graph API Terms of Use 
 
-Last revised in December 2017
+Last revised in May 2018
 
 Thank you for developing with Microsoft!
 
@@ -100,11 +100,19 @@ You must have a process to respond to any vulnerabilities in your Application, a
 
 In the event of a data breach by you resulting from any aspect of the Graph API involving your Application or any data collected through your Application, you will promptly contact the Microsoft Security Response Center ([secure@microsoft.com](mailto:secure@microsoft.com)) and provide details of the data breach. You agree to refrain from making public statements (e.g. press, blogs, social media, bulletin boards, etc.) without prior written and express permission from Microsoft in each instance as it relates to the Graph API.
 
-#### 5.	**Deletion of Customer Data; Your compliance with Privacy and Data Protection Laws**
+#### 5.	**Your compliance with Privacy and Data Protection Laws**
 
-a) You must delete all Customer data collected through the Graph API when the Customer uninstalls your Application or when the Customer closes its account with you.
+You must comply with all laws and regulations applicable to your use of the data accessed through Graph API, including without limitation laws related to privacy, biometric data, data protection, and confidentiality of communications. Your use of the Graph API is conditioned upon implementing and maintaining appropriate protections and measures for your service and Application, and that includes your responsibility to the data obtained through the use of the Graph APIs. For the data you obtained through the Graph API, you must: 
 
-b) You must comply with all laws and regulations applicable to your use of the data accessed through Graph API, including without limitation laws related to privacy, biometric data, data protection and confidentiality of communications. You are responsible for (i) implementing and maintaining privacy protections and measures for your service and Application, including necessary consents for use of data, and (ii) maintaining a written statement available to Customers and users that describe your privacy practices regarding data and information you collect and use, which must be as protective as Microsoft’s privacy polices applicable to the Graph API or the Microsoft Offerings.  
+a)	obtain all necessary consents before processing data and obtain additional consent if the processing changes, 
+
+b)	In the event you’re storing data locally, ensure that data is kept up to date and implement corrections, restrictions to data, or the deletion of data as reflected in the data obtained through your use of the Graph API,
+
+c)	implement proper retention and deletion policies, including deleting all data when your user abandons your Application, uninstalls your Application, closes its account with you, or abandons the account, and,
+
+d)	maintain and comply with a written statement available to Customers and users that describes your privacy practices regarding data and information you collect and use, and that statement must be as protective as the Microsoft Privacy Statement.
+
+Nothing in the Agreement shall be construed as creating a joint controller or processor- subprocessor relationship between you and Microsoft.
 
 #### 6.	**Changes to the Graph API and API Terms**
 

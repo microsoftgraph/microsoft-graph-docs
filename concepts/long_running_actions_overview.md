@@ -50,7 +50,7 @@ Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 
 **Note:** The location URL returned may not be on the Microsoft Graph API endpoint.
 
-In many cases this many be the end of the request, since the copy action will complete without the app doing any additional work.
+In many cases this may be the end of the request, since the copy action will complete without the app doing any additional work.
 However, if your app needs to show the status of the copy action or ensure that it completes without error, it can do so using the monitor URL.
 
 ## Retrieve a status report from the monitor URL

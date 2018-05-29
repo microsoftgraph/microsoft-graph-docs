@@ -2,6 +2,8 @@
 
 OneNote is a digital notebook that lets customers track ideas and notes for home, school, or work, by typing, sketching, or voice, on the web, phone, tablet, or desktop. They can freely organize notes, switch devices and pick up where they leave off, and collaborate on notes with others in real time.
 
+![A OneNote notebook with its sections and pages](images/onenote-page.png)
+
 ## Why integrate with OneNote?
 
 By integrating your apps with OneNote, you can create empowering experiences across multiple platforms that reach millions of users worldwide. You can use Microsoft Graph to access notebooks, sections, and pages in OneNote to create solutions that help your users plan and organize ideas and information.
@@ -64,4 +66,4 @@ Use the [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/g
 
 To make OneNote API calls from the Graph Explorer, choose **Show more samples** in the column on the left. Use the menu to toggle OneNote **On**. You will also need to enable the appropriate permissions. Under your account name in the menu on the left, choose **modify permissions**. For more information about OneNote permissions, see [Notes permissions](permissions_reference.md#notes-permissions).
 
-To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference content](../api-reference/v1.0/resources/onenote.md).
+To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference content](../api-reference/v1.0/resources/onenote-api-overview.md).

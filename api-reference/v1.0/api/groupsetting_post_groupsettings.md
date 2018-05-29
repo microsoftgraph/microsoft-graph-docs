@@ -50,16 +50,14 @@ Content-type: application/json
 Content-length: 215
 
 {
-  "groupSetting": {
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
-    "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
-    ]
-  }
+  "displayName": "displayName-value",
+  "templateId": "templateId-value",
+  "values": [
+    {
+      "name": "name-value",
+      "value": "value-value"
+    }
+  ]
 }
 ```
 In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object.
@@ -77,17 +75,15 @@ Content-type: application/json
 Content-length: 238
 
 {
-  "groupSetting": {
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
-    "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
-    ],
-    "id": "id-value"
-  }
+  "displayName": "displayName-value",
+  "templateId": "templateId-value",
+  "values": [
+    {
+      "name": "name-value",
+      "value": "value-value"
+    }
+  ],
+  "id": "id-value"
 }
 ```
 

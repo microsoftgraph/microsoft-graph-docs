@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /drives/items/{item-id}/content
+GET /drives/{drive-id}/items/{item-id}/content
 GET /groups/{group-id}/drive/items/{item-id}/content
 GET /me/drive/root:/{item-path}:/content
 GET /me/drive/items/{item-id}/content
