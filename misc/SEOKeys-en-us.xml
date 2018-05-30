@@ -1690,6 +1690,7 @@
       <Item text="List deleted items" url="/en-us/api-reference/v1.0/api/directory_deleteditems_list" />
       <Item text="Permanently delete item" url="/en-us/api-reference/v1.0/api/directory_deleteditems_delete" />
       <Item text="Restore deleted item" url="/en-us/api-reference/v1.0/api/directory_deleteditems_restore" />
+      <Item text="List deleted items owner by user" url="/en-us/api-reference/v1.0/api/directory_deleteditems_user_owned" />
     </Item>
     <Item text="Device" url="/en-us/api-reference/v1.0/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
       <Item text="List devices" url="/en-us/api-reference/v1.0/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />
@@ -5132,7 +5133,7 @@
         <Item text="List deleted items" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="Permanently delete item" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="Restore deleted item" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
-		<Item text="List deleted items owner by user" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
+        <Item text="List deleted items owner by user" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
        </Item>
 
       <Item text="Device" url="/en-us/api-reference/beta/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">

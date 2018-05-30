@@ -10,6 +10,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0        | Added [List deleted items owned by a user](../api-reference/v1.0/api/directory_deleteditems_user_owned.md) action to [directory (deleted items)](../api-reference/v1.0/resources/directory.md) resource | 
 | Addition | beta | Added the [getUserOwnedObjects](../api-reference/beta/api/directory_deleteditems_user_owned.md) function to the [directory](../api-reference/beta/resources/directory.md) resource to list the deleted groups owned by a given user. |
 
 ### Education API
