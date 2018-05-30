@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 12467
+Content-Length: 12618
 
 {
   "value": [
@@ -173,6 +173,9 @@ Content-Length: 12467
       "defenderScheduledQuickScanTime": "11:58:49.3840000",
       "defenderCloudBlockLevel": "high",
       "defenderCloudExtendedTimeout": 12,
+      "defenderBlockOnAccessProtection": true,
+      "defenderScheduleScanDay": "monday",
+      "defenderSubmitSamplesConsentType": "alwaysPrompt",
       "lockScreenAllowTimeoutConfiguration": true,
       "lockScreenBlockActionCenterNotifications": true,
       "lockScreenBlockCortana": true,

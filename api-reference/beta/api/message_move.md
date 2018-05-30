@@ -2,9 +2,10 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Move a message to a folder. This creates a new copy of the message in the destination folder.
+Move a message to a folder. This creates a new copy of the message in the destination folder and removes the original message.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -14,23 +15,28 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Mail.ReadWrite |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/messages/{id}/move
 POST /users/{id | userPrincipalName}/messages/{id}/move
 POST /me/mailFolders/{id}/messages/{id}/move
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 ```
+
 ## Request headers
+
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter   | Type |Description|
 |:---------------|:--------|:----------|
 |DestinationId|String|The destination folder ID, or a well-known folder name such as *Inbox*, *Drafts*, *SentItems*, or *DeletedItems*. For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).|
 
@@ -39,13 +45,17 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.
 
 ## Example
+
 Here is an example of how to call this API.
+
 ##### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "message_move"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/messages/{id}/move
 Content-type: application/json
@@ -57,12 +67,14 @@ Content-length: 44
 ```
 
 ##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

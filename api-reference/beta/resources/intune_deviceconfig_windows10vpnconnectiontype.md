@@ -17,6 +17,7 @@ VPN connection types.
 |l2tp|6|L2TP.|
 |pptp|7|PPTP.|
 |citrix|8|Citrix.|
+|paloAltoGlobalProtect|9|Palo Alto Networks GlobalProtect.|
 
 
 

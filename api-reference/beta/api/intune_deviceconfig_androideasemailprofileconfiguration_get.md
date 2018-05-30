@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 833
+Content-Length: 936
 
 {
   "value": {
@@ -74,7 +74,9 @@ Content-Length: 833
     "hostName": "Host Name value",
     "requireSmime": true,
     "requireSsl": true,
-    "usernameSource": "userPrincipalName"
+    "usernameSource": "userPrincipalName",
+    "userDomainNameSource": "netBiosDomainName",
+    "customDomainName": "Custom Domain Name value"
   }
 }
 ```

@@ -55,10 +55,4 @@ Often times apps have to store their data in an external data store and entail o
 
 - Find out more about [using the mail API](../api-reference/v1.0/resources/mail_api_overview.md) and its [use cases](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) in Microsoft Graph v1.0.
 
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /concepts/outlook-mail-concept-overview.md:
-      BookmarkSkippedDocFileNotFound: Link '[@-mentions (preview)](../api-reference/beta/api/message_get.md#request-2)'."
-  ]
-}-->
+

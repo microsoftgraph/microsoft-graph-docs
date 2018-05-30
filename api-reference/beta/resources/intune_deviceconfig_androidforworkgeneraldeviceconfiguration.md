@@ -40,6 +40,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |workProfileBluetoothEnableContactSharing|Boolean|Allow bluetooth devices to access enterprise contacts.|
 |workProfileBlockScreenCapture|Boolean|Block screen capture in work profile.|
 |workProfileBlockCrossProfileCallerId|Boolean|Block display work profile caller ID in personal profile.|
+|workProfileBlockCamera|Boolean|Block work profile camera.|
+|workProfileBlockCrossProfileContactsSearch|Boolean|Block work profile contacts availability in personal profile.|
 |workProfileBlockCrossProfileCopyPaste|Boolean|Boolean that indicates if the setting disallow cross profile copy/paste is enabled.|
 |workProfileDefaultAppPermissionPolicy|[androidForWorkDefaultAppPermissionPolicyType](../resources/intune_deviceconfig_androidforworkdefaultapppermissionpolicytype.md)|Type of password that is required. Possible values are: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
 |workProfilePasswordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock for work profile.|
@@ -59,7 +61,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) collection|The list of assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Device configuration installation status by device. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation status by user. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -95,6 +97,8 @@ Here is a JSON representation of the resource.
   "workProfileBluetoothEnableContactSharing": true,
   "workProfileBlockScreenCapture": true,
   "workProfileBlockCrossProfileCallerId": true,
+  "workProfileBlockCamera": true,
+  "workProfileBlockCrossProfileContactsSearch": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "String",
   "workProfilePasswordBlockFingerprintUnlock": true,

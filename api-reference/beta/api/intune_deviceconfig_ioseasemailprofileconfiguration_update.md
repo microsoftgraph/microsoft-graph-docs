@@ -44,6 +44,10 @@ The following table shows the properties that are required when you create the [
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|usernameSource|[userEmailSource](../resources/intune_deviceconfig_useremailsource.md)|Username attribute that is picked from AAD and injected into this profile before installing on the device. Inherited from [easEmailProfileConfigurationBase](../resources/intune_deviceconfig_easemailprofileconfigurationbase.md). Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
+|usernameAADSource|[usernameSource](../resources/intune_deviceconfig_usernamesource.md)|Name of the AAD field, that will be used to retrieve UserName for email profile. Inherited from [easEmailProfileConfigurationBase](../resources/intune_deviceconfig_easemailprofileconfigurationbase.md). Possible values are: `userPrincipalName`, `primarySmtpAddress`, `samAccountName`.|
+|userDomainNameSource|[domainNameSource](../resources/intune_deviceconfig_domainnamesource.md)|UserDomainname attribute that is picked from AAD and injected into this profile before installing on the device. Inherited from [easEmailProfileConfigurationBase](../resources/intune_deviceconfig_easemailprofileconfigurationbase.md). Possible values are: `fullDomainName`, `netBiosDomainName`.|
+|customDomainName|String|Custom domain name value used while generating an email profile before installing on the device. Inherited from [easEmailProfileConfigurationBase](../resources/intune_deviceconfig_easemailprofileconfigurationbase.md)|
 |accountName|String|Account name.|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune_deviceconfig_easauthenticationmethod.md)|Authentication method for this Email profile. Possible values are: `usernameAndPassword`, `certificate`.|
 |blockMovingMessagesToOtherEmailAccounts|Boolean|Indicates whether or not to block moving messages to other email accounts.|
@@ -55,7 +59,6 @@ The following table shows the properties that are required when you create the [
 |requireSmime|Boolean|Indicates whether or not to use S/MIME certificate.|
 |smimeEnablePerMessageSwitch|Boolean|Indicates whether or not to allow unencrypted emails.|
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
-|usernameSource|[userEmailSource](../resources/intune_deviceconfig_useremailsource.md)|Username attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
 
 
 
@@ -68,13 +71,17 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 646
+Content-length: 791
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "usernameSource": "primarySmtpAddress",
+  "usernameAADSource": "primarySmtpAddress",
+  "userDomainNameSource": "netBiosDomainName",
+  "customDomainName": "Custom Domain Name value",
   "accountName": "Account Name value",
   "authenticationMethod": "certificate",
   "blockMovingMessagesToOtherEmailAccounts": true,
@@ -85,8 +92,7 @@ Content-length: 646
   "hostName": "Host Name value",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,
-  "requireSsl": true,
-  "usernameSource": "primarySmtpAddress"
+  "requireSsl": true
 }
 ```
 
@@ -95,7 +101,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 824
+Content-Length: 969
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -105,6 +111,10 @@ Content-Length: 824
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "usernameSource": "primarySmtpAddress",
+  "usernameAADSource": "primarySmtpAddress",
+  "userDomainNameSource": "netBiosDomainName",
+  "customDomainName": "Custom Domain Name value",
   "accountName": "Account Name value",
   "authenticationMethod": "certificate",
   "blockMovingMessagesToOtherEmailAccounts": true,
@@ -115,8 +125,7 @@ Content-Length: 824
   "hostName": "Host Name value",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,
-  "requireSsl": true,
-  "usernameSource": "primarySmtpAddress"
+  "requireSsl": true
 }
 ```
 

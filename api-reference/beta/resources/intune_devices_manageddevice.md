@@ -13,6 +13,7 @@ Devices that are managed or pre-enrolled through Intune
 |[executeAction action](../api/intune_devices_manageddevice_executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune_devices_bulkmanageddeviceactionresult.md)|Not yet documented|
 |[enableLostMode action](../api/intune_devices_manageddevice_enablelostmode.md)|None|Enable lost mode|
 |[playLostModeSound action](../api/intune_devices_manageddevice_playlostmodesound.md)|None|Remote lock|
+|[setDeviceName action](../api/intune_devices_manageddevice_setdevicename.md)|None|Set device name of the device.|
 |[retire action](../api/intune_devices_manageddevice_retire.md)|None|Retire a device|
 |[wipe action](../api/intune_devices_manageddevice_wipe.md)|None|Wipe a device|
 |[resetPasscode action](../api/intune_devices_manageddevice_resetpasscode.md)|None|Reset passcode|
@@ -48,7 +49,7 @@ Devices that are managed or pre-enrolled through Intune
 |lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune.|
 |chassisType|[chassisType](../resources/intune_devices_chassistype.md)|Chassis type of the device. Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc.|
-|deviceType|[deviceType](../resources/intune_devices_devicetype.md)|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
+|deviceType|[deviceType](../resources/intune_shared_devicetype.md)|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |complianceState|[complianceState](../resources/intune_devices_compliancestate.md)|Compliance state of the device. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted.|
 |managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
@@ -58,7 +59,7 @@ Devices that are managed or pre-enrolled through Intune
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device.|
 |aadRegistered|Boolean|Whether the device is Azure Active Directory registered.|
 |azureADRegistered|Boolean|Whether the device is Azure Active Directory registered.|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune_devices_deviceenrollmenttype.md)|Enrollment type of the device. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune_shared_deviceenrollmenttype.md)|Enrollment type of the device. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |lostModeState|[lostModeState](../resources/intune_devices_lostmodestate.md)|Indicates if Lost mode is enabled or disabled. Possible values are: `disabled`, `enabled`.|
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed.|
 |emailAddress|String|Email(s) for the user associated with the device|
@@ -94,9 +95,11 @@ Devices that are managed or pre-enrolled through Intune
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
 |usersLoggedOn|[loggedOnUser](../resources/intune_devices_loggedonuser.md) collection|Indicates the last logged on users of a device|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Reports the DateTime the preferMdmOverGroupPolicy setting was set.  When set, the Intune MDM settings will override Group Policy settings if there is a conflict. Read Only.|
-|isAutopilotEnrolled|Boolean|Reports if the managed device is enrolled via auto-pilot.|
-|requestUserEnrollmentApproval|Boolean|Reports if the managed iOS device is user approval enrollment.|
+|autopilotEnrolled|Boolean|Reports if the managed device is enrolled via auto-pilot.|
+|requireUserEnrollmentApproval|Boolean|Reports if the managed iOS device is user approval enrollment.|
 |managementCertificateExpirationDate|DateTimeOffset|Reports device management certificate expiration date|
+|iccid|String|Integrated Circuit Card Identifier, it is A SIM card's unique identification number.|
+|udid|String|Unique Device Identifier for iOS and macOS devices.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -262,9 +265,11 @@ Here is a JSON representation of the resource.
     }
   ],
   "preferMdmOverGroupPolicyAppliedDateTime": "String (timestamp)",
-  "isAutopilotEnrolled": true,
-  "requestUserEnrollmentApproval": true,
-  "managementCertificateExpirationDate": "String (timestamp)"
+  "autopilotEnrolled": true,
+  "requireUserEnrollmentApproval": true,
+  "managementCertificateExpirationDate": "String (timestamp)",
+  "iccid": "String",
+  "udid": "String"
 }
 ```
 

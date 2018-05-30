@@ -1,6 +1,6 @@
 # Best practices for working with the OneNote API in Microsoft Graph
 
-This article provides recommendations for working with the OneNote APIs in Microsoft Graph. These recommendations are based on answers to common questions we see on StackOverflow and Twitter.
+This article provides recommendations for working with the OneNote APIs in Microsoft Graph. These recommendations are based on answers to common questions on Stack Overflow and Twitter.
 
 ## Use $select to select the minimum set of properties you need
 When you query for a resource (for example, sections inside a notebook), you make a request similar to the following.
