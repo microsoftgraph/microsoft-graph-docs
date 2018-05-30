@@ -221,7 +221,7 @@ While you can request any arbitrary thumbnail size, the defined values are likel
 In addition to the defined sizes, your app can request a custom thumbnail size by specifying the dimensions of the thumbnail prefixed with `c`.
 For example if your app needs thumbnails that are 300x400, it can request that size like this:
 
-<!-- { "name": "get-thumbnail-custom-size", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-thumbnail-custom-size", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
