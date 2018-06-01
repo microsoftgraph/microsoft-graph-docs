@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 335
+Content-Length: 367
 
 {
   "value": {
@@ -60,6 +60,7 @@ Content-Length: 335
     "scopeMembers": [
       "Scope Members value"
     ],
+    "scopeType": "allDevices",
     "resourceScopes": [
       "Resource Scopes value"
     ]

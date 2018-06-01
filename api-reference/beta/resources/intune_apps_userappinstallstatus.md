@@ -28,7 +28,7 @@ Contains properties for the installation status for a user.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |app|[mobileApp](../resources/intune_apps_mobileapp.md)|The navigation link to the mobile app.|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The install state of the app.|
+|deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The install state of the app on devices.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

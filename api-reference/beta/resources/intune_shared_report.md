@@ -15,6 +15,7 @@ Returns the content appropriate for the context, including:
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

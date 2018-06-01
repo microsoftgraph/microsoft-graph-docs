@@ -56,7 +56,9 @@ The following table shows the properties that are required when you create the [
 |hostName|String|Exchange location (URL) that the native mail app connects to.|
 |requireSmime|Boolean|Indicates whether or not to use S/MIME certificate.|
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
-|usernameSource|[androidUsernameSource](../resources/intune_deviceconfig_androidusernamesource.md)|Username attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `username`, `userPrincipalName`.|
+|usernameSource|[androidUsernameSource](../resources/intune_deviceconfig_androidusernamesource.md)|Username attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `username`, `userPrincipalName`, `samAccountName`, `primarySmtpAddress`.|
+|userDomainNameSource|[domainNameSource](../resources/intune_deviceconfig_domainnamesource.md)|UserDomainname attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `fullDomainName`, `netBiosDomainName`.|
+|customDomainName|String|Custom domain name value used while generating an email profile before installing on the device.|
 
 
 
@@ -69,7 +71,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 592
+Content-length: 691
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -88,7 +90,9 @@ Content-length: 592
   "hostName": "Host Name value",
   "requireSmime": true,
   "requireSsl": true,
-  "usernameSource": "userPrincipalName"
+  "usernameSource": "userPrincipalName",
+  "userDomainNameSource": "netBiosDomainName",
+  "customDomainName": "Custom Domain Name value"
 }
 ```
 
@@ -97,7 +101,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 774
+Content-Length: 873
 
 {
   "@odata.type": "#microsoft.graph.androidEasEmailProfileConfiguration",
@@ -119,7 +123,9 @@ Content-Length: 774
   "hostName": "Host Name value",
   "requireSmime": true,
   "requireSsl": true,
-  "usernameSource": "userPrincipalName"
+  "usernameSource": "userPrincipalName",
+  "userDomainNameSource": "netBiosDomainName",
+  "customDomainName": "Custom Domain Name value"
 }
 ```
 

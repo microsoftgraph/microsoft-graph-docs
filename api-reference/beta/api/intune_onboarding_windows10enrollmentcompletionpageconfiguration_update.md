@@ -43,10 +43,13 @@ The following table shows the properties that are required when you create the [
 |createdDateTime|DateTimeOffset|Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |version|Int32|Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|title|String|Not yet documented|
-|bodyText|String|Not yet documented|
-|moreInfoUrl|String|Not yet documented|
-|moreInfoText|String|Not yet documented|
+|showInstallationProgress|Boolean|Show or hide installation progress to user|
+|blockDeviceSetupRetryByUser|Boolean|Allow the user to retry the setup on installation failure|
+|allowDeviceResetOnInstallFailure|Boolean|Allow or block device reset on installation failure|
+|allowLogCollectionOnInstallFailure|Boolean|Allow or block log collection on installation failure|
+|customErrorMessage|String|Set custom error message to show upon installation failure|
+|installProgressTimeoutInMinutes|Int32|Set installation progress timeout in minutes|
+|allowDeviceUseOnInstallFailure|Boolean|Allow the user to continue using the device on installation failure|
 
 
 
@@ -59,7 +62,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 Content-type: application/json
-Content-length: 339
+Content-length: 490
 
 {
   "displayName": "Display Name value",
@@ -67,10 +70,13 @@ Content-length: 339
   "priority": 8,
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "version": 7,
-  "title": "Title value",
-  "bodyText": "Body Text value",
-  "moreInfoUrl": "https://example.com/moreInfoUrl/",
-  "moreInfoText": "More Info Text value"
+  "showInstallationProgress": true,
+  "blockDeviceSetupRetryByUser": true,
+  "allowDeviceResetOnInstallFailure": true,
+  "allowLogCollectionOnInstallFailure": true,
+  "customErrorMessage": "Custom Error Message value",
+  "installProgressTimeoutInMinutes": 15,
+  "allowDeviceUseOnInstallFailure": true
 }
 ```
 
@@ -79,7 +85,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 532
+Content-Length: 683
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -90,10 +96,13 @@ Content-Length: 532
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "version": 7,
-  "title": "Title value",
-  "bodyText": "Body Text value",
-  "moreInfoUrl": "https://example.com/moreInfoUrl/",
-  "moreInfoText": "More Info Text value"
+  "showInstallationProgress": true,
+  "blockDeviceSetupRetryByUser": true,
+  "allowDeviceResetOnInstallFailure": true,
+  "allowLogCollectionOnInstallFailure": true,
+  "customErrorMessage": "Custom Error Message value",
+  "installProgressTimeoutInMinutes": 15,
+  "allowDeviceUseOnInstallFailure": true
 }
 ```
 

@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11163
+Content-Length: 11896
 
 {
   "value": {
@@ -96,6 +96,15 @@ Content-Length: 11163
     "localSecurityOptionsUseAdminApprovalModeForAdministrators": true,
     "localSecurityOptionsInformationShownOnLockScreen": "userDisplayNameDomainUser",
     "localSecurityOptionsInformationDisplayedOnLockScreen": "administrators",
+    "localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees": true,
+    "localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers": true,
+    "localSecurityOptionsDisableServerDigitallySignCommunicationsAlways": true,
+    "localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees": true,
+    "localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares": true,
+    "localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts": true,
+    "localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares": true,
+    "localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange": true,
+    "localSecurityOptionsSmartCardRemovalBehavior": "noAction",
     "defenderSecurityCenterDisableAppBrowserUI": true,
     "defenderSecurityCenterDisableFamilyUI": true,
     "defenderSecurityCenterDisableHealthUI": true,

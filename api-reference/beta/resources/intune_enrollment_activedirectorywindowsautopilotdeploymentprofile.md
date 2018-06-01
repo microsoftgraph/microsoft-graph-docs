@@ -23,10 +23,12 @@ Inherits from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment
 |id|String|Profile Key Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 |displayName|String|Name of the profile Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 |description|String|Description of the profile Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
+|language|String|Language configured on the device Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 |createdDateTime|DateTimeOffset|Profile creation time Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 |lastModifiedDateTime|DateTimeOffset|Profile last modified time Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune_enrollment_outofboxexperiencesettings.md)|Out of box experience setting Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune_enrollment_windowsenrollmentstatusscreensettings.md)|Enrollment status screen setting Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
+|enrollmentSettings|[windowsAutoPilotEnrollmentSettings](../resources/intune_enrollment_windowsautopilotenrollmentsettings.md)|Enrollment settings delivered to auto pilot devices Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -49,13 +51,16 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
+  "language": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "outOfBoxExperienceSettings": {
     "@odata.type": "microsoft.graph.outOfBoxExperienceSettings",
     "hidePrivacySettings": true,
     "hideEULA": true,
-    "userType": "String"
+    "userType": "String",
+    "deviceUsageType": "String",
+    "skipKeyboardSelectionPage": true
   },
   "enrollmentStatusScreenSettings": {
     "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
@@ -66,6 +71,10 @@ Here is a JSON representation of the resource.
     "customErrorMessage": "String",
     "installProgressTimeoutInMinutes": 1024,
     "allowDeviceUseOnInstallFailure": true
+  },
+  "enrollmentSettings": {
+    "@odata.type": "microsoft.graph.windowsAutoPilotEnrollmentSettings",
+    "blockWindowsConsumerFeatures": true
   }
 }
 ```

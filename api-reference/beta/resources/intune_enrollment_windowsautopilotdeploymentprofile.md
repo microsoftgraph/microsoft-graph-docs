@@ -17,10 +17,12 @@ Windows Autopilot Deployment Profile
 |id|String|Profile Key|
 |displayName|String|Name of the profile|
 |description|String|Description of the profile|
+|language|String|Language configured on the device|
 |createdDateTime|DateTimeOffset|Profile creation time|
 |lastModifiedDateTime|DateTimeOffset|Profile last modified time|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune_enrollment_outofboxexperiencesettings.md)|Out of box experience setting|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune_enrollment_windowsenrollmentstatusscreensettings.md)|Enrollment status screen setting|
+|enrollmentSettings|[windowsAutoPilotEnrollmentSettings](../resources/intune_enrollment_windowsautopilotenrollmentsettings.md)|Enrollment settings delivered to auto pilot devices|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -42,13 +44,16 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
+  "language": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "outOfBoxExperienceSettings": {
     "@odata.type": "microsoft.graph.outOfBoxExperienceSettings",
     "hidePrivacySettings": true,
     "hideEULA": true,
-    "userType": "String"
+    "userType": "String",
+    "deviceUsageType": "String",
+    "skipKeyboardSelectionPage": true
   },
   "enrollmentStatusScreenSettings": {
     "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
@@ -59,6 +64,10 @@ Here is a JSON representation of the resource.
     "customErrorMessage": "String",
     "installProgressTimeoutInMinutes": 1024,
     "allowDeviceUseOnInstallFailure": true
+  },
+  "enrollmentSettings": {
+    "@odata.type": "microsoft.graph.windowsAutoPilotEnrollmentSettings",
+    "blockWindowsConsumerFeatures": true
   }
 }
 ```

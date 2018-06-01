@@ -12,7 +12,7 @@ Inherits from [vppTokenActionResult](../resources/intune_onboarding_vpptokenacti
 |Property|Type|Description|
 |:---|:---|:---|
 |actionName|String|Action name Inherited from [vppTokenActionResult](../resources/intune_onboarding_vpptokenactionresult.md)|
-|actionState|[actionState](../resources/intune_onboarding_actionstate.md)|State of the action Inherited from [vppTokenActionResult](../resources/intune_onboarding_vpptokenactionresult.md). Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune_shared_actionstate.md)|State of the action Inherited from [vppTokenActionResult](../resources/intune_onboarding_vpptokenactionresult.md). Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Time the action was initiated Inherited from [vppTokenActionResult](../resources/intune_onboarding_vpptokenactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [vppTokenActionResult](../resources/intune_onboarding_vpptokenactionresult.md)|
 |totalLicensesCount|Int32|A count of the number of licenses that were attempted to revoke.|

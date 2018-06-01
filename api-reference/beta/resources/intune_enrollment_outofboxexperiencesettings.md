@@ -11,6 +11,8 @@ Out of box experience setting
 |hidePrivacySettings|Boolean|Show or hide privacy settings to user|
 |hideEULA|Boolean|Show or hide EULA to user|
 |userType|[windowsUserType](../resources/intune_enrollment_windowsusertype.md)|Type of user. Possible values are: `administrator`, `standard`.|
+|deviceUsageType|[windowsDeviceUsageType](../resources/intune_enrollment_windowsdeviceusagetype.md)|AAD join authentication type. Possible values are: `singleUser`, `shared`.|
+|skipKeyboardSelectionPage|Boolean|If set, then skip the keyboard selection page if Language and Region are set|
 
 ## Relationships
 None
@@ -27,7 +29,9 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.outOfBoxExperienceSettings",
   "hidePrivacySettings": true,
   "hideEULA": true,
-  "userType": "String"
+  "userType": "String",
+  "deviceUsageType": "String",
+  "skipKeyboardSelectionPage": true
 }
 ```
 

@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7178
+Content-Length: 7232
 
 {
   "value": {
@@ -203,9 +203,11 @@ Content-Length: 7178
       }
     ],
     "preferMdmOverGroupPolicyAppliedDateTime": "2016-12-31T23:57:34.4649887-08:00",
-    "isAutopilotEnrolled": true,
-    "requestUserEnrollmentApproval": true,
-    "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00"
+    "autopilotEnrolled": true,
+    "requireUserEnrollmentApproval": true,
+    "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00",
+    "iccid": "Iccid value",
+    "udid": "Udid value"
   }
 }
 ```

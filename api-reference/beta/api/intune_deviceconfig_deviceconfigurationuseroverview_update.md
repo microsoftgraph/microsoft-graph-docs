@@ -45,10 +45,11 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |pendingCount|Int32|Number of pending Users|
-|notApplicableCount|Int32|Number of not applicable devices|
+|notApplicableCount|Int32|Number of not applicable users|
 |successCount|Int32|Number of succeeded Users|
 |errorCount|Int32|Number of error Users|
 |failedCount|Int32|Number of failed Users|
+|conflictCount|Int32|Number of users in conflict|
 |lastUpdateDateTime|DateTimeOffset|Last update time|
 |configurationVersion|Int32|Version of the policy for that overview|
 
@@ -63,7 +64,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusOverview
 Content-type: application/json
-Content-length: 212
+Content-length: 236
 
 {
   "pendingCount": 12,
@@ -71,6 +72,7 @@ Content-length: 212
   "successCount": 12,
   "errorCount": 10,
   "failedCount": 11,
+  "conflictCount": 13,
   "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
   "configurationVersion": 4
 }
@@ -81,7 +83,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 331
+Content-Length: 355
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationUserOverview",
@@ -91,6 +93,7 @@ Content-Length: 331
   "successCount": 12,
   "errorCount": 10,
   "failedCount": 11,
+  "conflictCount": 13,
   "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
   "configurationVersion": 4
 }

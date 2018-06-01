@@ -58,6 +58,8 @@ The following table shows the properties that are required when you create the [
 |workProfileBluetoothEnableContactSharing|Boolean|Allow bluetooth devices to access enterprise contacts.|
 |workProfileBlockScreenCapture|Boolean|Block screen capture in work profile.|
 |workProfileBlockCrossProfileCallerId|Boolean|Block display work profile caller ID in personal profile.|
+|workProfileBlockCamera|Boolean|Block work profile camera.|
+|workProfileBlockCrossProfileContactsSearch|Boolean|Block work profile contacts availability in personal profile.|
 |workProfileBlockCrossProfileCopyPaste|Boolean|Boolean that indicates if the setting disallow cross profile copy/paste is enabled.|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune_deviceconfig_androidworkprofiledefaultapppermissionpolicytype.md)|Type of password that is required. Possible values are: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
 |workProfilePasswordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock for work profile.|
@@ -82,7 +84,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1424
+Content-length: 1514
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -103,6 +105,8 @@ Content-length: 1424
   "workProfileBluetoothEnableContactSharing": true,
   "workProfileBlockScreenCapture": true,
   "workProfileBlockCrossProfileCallerId": true,
+  "workProfileBlockCamera": true,
+  "workProfileBlockCrossProfileContactsSearch": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "prompt",
   "workProfilePasswordBlockFingerprintUnlock": true,
@@ -123,7 +127,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1615
+Content-Length: 1705
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
@@ -147,6 +151,8 @@ Content-Length: 1615
   "workProfileBluetoothEnableContactSharing": true,
   "workProfileBlockScreenCapture": true,
   "workProfileBlockCrossProfileCallerId": true,
+  "workProfileBlockCamera": true,
+  "workProfileBlockCrossProfileContactsSearch": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "prompt",
   "workProfilePasswordBlockFingerprintUnlock": true,

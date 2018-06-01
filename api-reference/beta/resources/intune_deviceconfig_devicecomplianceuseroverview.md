@@ -16,10 +16,11 @@ Not yet documented
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |pendingCount|Int32|Number of pending Users|
-|notApplicableCount|Int32|Number of not applicable devices|
+|notApplicableCount|Int32|Number of not applicable users|
 |successCount|Int32|Number of succeeded Users|
 |errorCount|Int32|Number of error Users|
 |failedCount|Int32|Number of failed Users|
+|conflictCount|Int32|Number of users in conflict|
 |lastUpdateDateTime|DateTimeOffset|Last update time|
 |configurationVersion|Int32|Version of the policy for that overview|
 
@@ -42,6 +43,7 @@ Here is a JSON representation of the resource.
   "successCount": 1024,
   "errorCount": 1024,
   "failedCount": 1024,
+  "conflictCount": 1024,
   "lastUpdateDateTime": "String (timestamp)",
   "configurationVersion": 1024
 }
