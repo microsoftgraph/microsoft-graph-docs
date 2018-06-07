@@ -48,7 +48,7 @@ Content-length: 279
   "dueDateTime": "2014-02-01T00:00:00Z",
   "displayName": "Midterm 1",
     "instructions":  {
-      "contentType": "Text",
+      "contentType": "text",
       "content": "Read chapters 1 through 3"
     },
       "grading": {
@@ -102,7 +102,7 @@ Content-length: 279
     "maxPoints": 100
   },
   "instructions": {
-    "contentType": "Text",
+    "contentType": "text",
     "content": "Read chapters 1 through 3"
   },
   "lastModifiedBy": {
