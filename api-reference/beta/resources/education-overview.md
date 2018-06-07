@@ -78,8 +78,9 @@ The assignment APIs support the following scenarios:
 - [Publish assignment](../api/educationassignment_publish.md)
 - [Create assignment resource](../api/educationassignment_post_resources.md)
 - [Create submission resource](../api/educationsubmission_post_resources.md)
-- [Submit assignment](../api/educationsubmission_submit.md)   
-- [Release grades to student](../api/educationsubmission_release.md) 
+- [Submit assignment](../api/educationsubmission_submit.md) 
+- [Unsubmit assignment](../api/educationsubmission_unsubmit.md)   
+- [Return grades and feedback to student](../api/educationsubmission_return.md) 
 - [Get assignment details](../api/educationuser_list_assignments.md)
 
 The following are some common use cases for the assignment-related education APIs.
