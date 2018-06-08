@@ -1,4 +1,4 @@
-﻿# user resource type
+# user resource type
 
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
@@ -105,6 +105,7 @@ This resource supports:
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|activities|[userActivity](projectrome_activity.md) collection|The user's activities across devices. Read-only. Nullable.|
 |calendar|[Calendar](calendar.md)|The user's primary calendar. Read-only.|
 |calendarGroups|[CalendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
 |calendarView|[Event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
@@ -114,26 +115,32 @@ This resource supports:
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects that were created by the user. Read-only. Nullable.|
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. |
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
-|drives|[drive](drive.md) collection. | A collection of drives available for this user. Read-only. |
+|drives|[drive](drive.md) collection| A collection of drives available for this user. Read-only. |
 |events|[Event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Read-only. Nullable.|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance. |
+|licenseDetails|[LicenseDetails](licensedetails.md) collection|A collection of this user's license details. Nullable.|
 |mailFolders|[MailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups and directory roles that the user is a member of. Read-only. Nullable.|
 |messages|[Message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
-|onenote|[OneNote](onenote.md)| Read-only.|
+|onenote|[Onenote](onenote.md)| Read-only.|
+|outlook|[OutlookUser](outlookuser.md)| Read-only.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
+|people|[person](person.md) collection| People that are relevant to the user. Read-only. Nullable.
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
+|planner|[plannerUser](planneruser.md)| Entry-point to the Planner resource that might exist for a user. Read-only.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
 
 ## JSON representation
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.directoryObject",
+  "openType": true,
   "optionalProperties": [
     "appRoleAssignments",
     "calendar",
@@ -159,8 +166,132 @@ Here is a JSON representation of the resource
     "photo",
     "registeredDevices"
   ],
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.user",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "changeTracking": true
+      }
+    },
+    {
+      "property": "calendar",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "calendarGroups",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "calendars",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "calendarView",
+      "capabilities": {
+        "changeTracking": true,
+        "deletable": false,
+        "expandable": true,
+        "insertable": false,
+        "navigability": "single",
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "contactFolders",
+      "capabilities": {
+        "changeTracking": true,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "contacts",
+      "capabilities": {
+        "changeTracking": true,
+        "expandable": false
+      }
+    },
+    {
+      "property": "events",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "inferenceClassification",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "mailFolders",
+      "capabilities": {
+        "changeTracking": true,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "messages",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false
+      }
+    },
+    {
+      "property": "people",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "photo",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "photos",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -179,6 +310,7 @@ Here is a JSON representation of the resource
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
+  "imAddresses": ["string"],
   "interests": ["string"],
   "jobTitle": "string",
   "mail": "string",
@@ -225,6 +357,7 @@ Here is a JSON representation of the resource
   "manager": { "@odata.type": "microsoft.graph.directoryObject" },
   "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
+  "outlook": { "@odata.type": "microsoft.graph.outlookUser" },
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "ownedObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },

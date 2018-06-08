@@ -1,4 +1,4 @@
-﻿# windowsInformationProtection resource type
+# windowsInformationProtection resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -54,12 +54,13 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "abstract": true,
   "keyProperty": "id",
+  "baseType": "microsoft.graph.managedAppPolicy",
   "@odata.type": "microsoft.graph.windowsInformationProtection"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtection",
@@ -89,12 +90,12 @@ Here is a JSON representation of the resource.
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -104,7 +105,7 @@ Here is a JSON representation of the resource.
   ],
   "exemptApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",

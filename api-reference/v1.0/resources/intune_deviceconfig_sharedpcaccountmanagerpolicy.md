@@ -1,4 +1,4 @@
-﻿# sharedPCAccountManagerPolicy resource type
+# sharedPCAccountManagerPolicy resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -11,16 +11,23 @@ SharedPC Account Manager Policy. Only applies when the account manager is enable
 |inactiveThresholdDays|Int32|Specifies when the accounts will start being deleted when they have not been logged on during the specified period, given as number of days. Only applies when AccountDeletionPolicy is DiskSpaceThreshold or DiskSpaceThresholdOrInactiveThreshold.|
 |removeAccountsBelowDiskFreePercentage|Int32|Sets the percentage of disk space remaining on a PC before cached accounts will be deleted to free disk space. Accounts that have been inactive the longest will be deleted first. Only applies when AccountDeletionPolicy is DiskSpaceThresholdOrInactiveThreshold. Valid values 0 to 100|
 
+### sharedPCAccountDeletionPolicyType values
+
+| Value
+|:-------------------------
+| immediate
+| diskSpaceThreshold
+| diskSpaceThresholdOrInactiveThreshold
+
+
 ## Relationships
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.sharedPCAccountManagerPolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharedPCAccountManagerPolicy",

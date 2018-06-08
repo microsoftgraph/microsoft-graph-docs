@@ -1,10 +1,12 @@
-# chunkedUploadSessionDescriptor resource type
-
+# entity resource type
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|name|String||
+|id|String| Read-only.|
+
+## Relationships
+None
 
 ## JSON representation
 
@@ -12,15 +14,17 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "abstract": "true",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chunkeduploadsessiondescriptor"
+  "@odata.type": "microsoft.graph.entity"
 }-->
 
 ```json
 {
-  "name": "string"
+  "id": "string (identifier)"
 }
 
 ```
@@ -29,7 +33,7 @@ Here is a JSON representation of the resource
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "chunkedUploadSessionDescriptor resource",
+  "description": "entity resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

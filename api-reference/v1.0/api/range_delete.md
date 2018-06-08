@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/delete
+POST /workbook/names/<name>/range/delete
 POST /workbook/worksheets/{id|name}/range(address='<address>')/delete
 POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
@@ -44,7 +44,7 @@ Here is an example of the request.
   "name": "range_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/delete
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/<name>/range/delete
 Content-type: application/json
 Content-length: 28
 
@@ -57,8 +57,7 @@ Content-length: 28
 Here is an example of the response. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -50,10 +50,10 @@ Aside from a meeting request, an **eventMessage** instance can be found in an at
 |changeKey|String|The version of the message.|
 |conversationId|String|The ID of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
-|flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
+|flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
-|id|String||
+|id|String|Unique identifier for the event message (note that this value may change if a message is moved or altered)|
 |importance|String| The importance of the message: `low`, `normal`, `high`.|
 |inferenceClassification|String| Possible values are: `focused`, `other`.|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only.|
@@ -63,7 +63,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an at
 |isRead|Boolean|Indicates whether the message has been read.|
 |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the message was last changed.|
-|meetingMessageType|String| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
+|meetingMessageType|meetingMessageType| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
@@ -73,6 +73,17 @@ Aside from a meeting request, an **eventMessage** instance can be found in an at
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
 |uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message.|
 |webLink|String|The URL to open the message in Outlook Web App.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook Web App review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL can be accessed from within an iFrame.|
+
+### meetingMessageType values
+
+| Value
+|:-----------------
+| none
+| meetingRequest
+| meetingCancelled
+| meetingAccepted
+| meetingTentativelyAccepted
+| meetingDeclined
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -96,7 +107,20 @@ Here is a JSON representation of the resource
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
-  "@odata.type": "microsoft.graph.eventMessage"
+  "baseType": "microsoft.graph.message",
+  "@odata.type": "microsoft.graph.eventMessage",
+  "@odata.annotations": [
+    {
+      "property": "event",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -109,6 +133,7 @@ Here is a JSON representation of the resource
   "changeKey": "string",
   "conversationId": "string",
   "createdDateTime": "DateTimeOffset",
+  "event": { "@odata.type": "microsoft.graph.event" },
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,

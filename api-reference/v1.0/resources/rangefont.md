@@ -7,8 +7,8 @@ This object represents the font attributes (font name, font size, color, etc.) f
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFont](../api/rangefont_get.md) | [RangeFont](rangefont.md) |Read properties and relationships of rangeFont object.|
-|[Update](../api/rangefont_update.md) | [RangeFont](rangefont.md)	|Update RangeFont object. |
+|[Get RangeFont](../api/rangefont_get.md) | [WorkbookRangeFont](rangefont.md) |Read properties and relationships of rangeFont object.|
+|[Update](../api/rangefont_update.md) | [WorkbookRangeFont](rangefont.md)	|Update RangeFont object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -28,12 +28,11 @@ None
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.rangeFont"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 }-->
 
 ```json

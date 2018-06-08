@@ -69,11 +69,11 @@ The first example enables automatic replies for a date range, by setting the fol
   "name": "update_mailboxsettings"
 }-->
 ```http
-PATCH https://graph.microsoft.com/api/v1.0/me/mailboxSettings
+PATCH https://graph.microsoft.com/v1.0/me/mailboxSettings
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/api/v1.0/$metadata#Me/mailboxSettings",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings",
     "automaticRepliesSetting": {
         "status": "Scheduled",
         "scheduledStartDateTime": {
@@ -127,7 +127,7 @@ to a [custom time zone](../resources/customtimezone.md).
   "name": "update_mailboxsettings_2"
 }-->
 ```http
-PATCH https://graph.microsoft.com/api/v1.0/me/mailboxSettings
+PATCH https://graph.microsoft.com/v1.0/me/mailboxSettings
 Content-Type: application/json
 
 {

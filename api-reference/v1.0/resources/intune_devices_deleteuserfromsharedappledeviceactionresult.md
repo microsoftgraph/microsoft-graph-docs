@@ -1,4 +1,4 @@
-﻿# deleteUserFromSharedAppleDeviceActionResult resource type
+# deleteUserFromSharedAppleDeviceActionResult resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -15,13 +15,26 @@ Inherits from [deviceActionResult](../resources/intune_devices_deviceactionresul
 |lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |userPrincipalName|String|User principal name of the user to be deleted|
 
+### actionState values
+
+| Value
+|:-------------------------
+| none
+| pending
+| canceled
+| active
+| done
+| failed
+| notSupported
+
+
 ## Relationships
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceActionResult",
   "@odata.type": "microsoft.graph.deleteUserFromSharedAppleDeviceActionResult"
 }
 -->

@@ -52,7 +52,7 @@ Here is an example of the request.
   "name": "update_educationuser"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/users/13020
+PATCH https://graph.microsoft.com/v1.0/education/users/{user-id}
 Content-type: application/json
 Content-length: 508
 
@@ -97,7 +97,7 @@ Content-length: 508
         "state": "CA",
         "street": "12345 Main St."
       },
-  "primaryRole": "string",
+  "primaryRole": "student",
   "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -106,7 +106,6 @@ Content-length: 508
         "street": "12345 Main St."
       },
   "student": {
-      "primaryRole": "student",
       "externalId": "13005",
       "birthDate": "2001-01-01T00:00:00Z"
     }

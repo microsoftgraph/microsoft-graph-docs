@@ -1,4 +1,4 @@
-﻿# windowsPhone81GeneralConfiguration resource type
+# windowsPhone81GeneralConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -54,6 +54,14 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |wifiBlockHotspotReporting|Boolean|Indicates whether or not to block Wi-Fi hotspot reporting. Has no impact if Wi-Fi is blocked.|
 |windowsStoreBlocked|Boolean|Indicates whether or not to block the Windows Store.|
 
+### requiredPasswordType values
+
+| Value
+|:-------------------------
+| deviceDefault
+| alphanumeric
+| numeric
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
@@ -66,12 +74,21 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.windowsPhone81GeneralConfiguration"
-}
--->
+  "baseType": "microsoft.graph.deviceConfiguration",
+  "@odata.type": "microsoft.graph.windowsPhone81GeneralConfiguration",
+  "@odata.annotations": [
+    {
+      "property": "applyOnlyToWindowsPhone81",
+      "capabilities": {
+        "computed": true,
+        "permissions": "Read"
+      }
+    }
+  ]
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsPhone81GeneralConfiguration",

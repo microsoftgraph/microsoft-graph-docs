@@ -45,7 +45,7 @@ Here is an example of the request.
   "name": "update_plannertaskdetails"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 Content-type: application/json
 Content-length: 857
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

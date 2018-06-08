@@ -101,7 +101,7 @@ Content-length: 3890
     "certificate": "Y2VydGlmaWNhdGU="
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -210,7 +210,7 @@ Content-Type: application/json
 Content-Length: 4074
 
 {
-  "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
+  "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
   "displayName": "Display Name value",
   "description": "Description value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
@@ -237,7 +237,7 @@ Content-Length: 4074
     "certificate": "Y2VydGlmaWNhdGU="
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [

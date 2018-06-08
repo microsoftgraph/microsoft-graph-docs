@@ -75,7 +75,6 @@ returning **contact** rather than **message** collections.
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts/delta?$select=displayName
-
 Prefer: odata.maxpagesize=2
 ```
 

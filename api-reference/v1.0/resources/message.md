@@ -52,12 +52,12 @@ by providing a [delta](../api/message_delta.md) function.
 |changeKey|String|The version of the message.|
 |conversationId|String|The ID of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
-|flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
+|flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the **body** property to look for a `src` attribute, such as `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`.|
 |id|String|Unique identifier for the message (note that this value may change if a message is moved or altered)|
-|importance|String| The importance of the message: `Low`, `Normal`, `High`.|
-|inferenceClassification | String | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused` or `other`. |
+|importance|importance| The importance of the message: `Low`, `Normal`, `High`.|
+|inferenceClassification | inferenceClassificationType | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused` or `other`. |
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only.|
 |internetMessageId |String |The message ID in the format specified by [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
@@ -90,6 +90,14 @@ When a message is being composed, in most cases, the From and Sender properties 
 - The **from** property can be changed if the Exchange administrator has assigned **sendAs** rights of the mailbox to some other users. The administrator can do this by selecting **Mailbox Permissions** of the mailbox owner in the Azure portal, or by using the Exchange Admin Center or a Windows PowerShell Add-ADPermission cmdlet. Then, you can programmatically set the **from** property to one of these users who have **sendAs** rights for that mailbox.
 - The **sender** property can be changed if the mailbox owner has delegated one or more users to be able to send messages from that mailbox. The mailbox owner can delegate in Outlook. When a delegate sends a message on behalf of the mailbox owner, the **sender** property is set to the delegate’s account, and the **from** property remains as the mailbox owner. Programmatically, you can set the **sender** property to a user who has got delegate right for that mailbox.
 
+### importance values
+
+| Value
+|:-----------------
+| low
+| normal
+| high
+
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
@@ -102,8 +110,10 @@ When a message is being composed, in most cases, the From and Sender properties 
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.outlookItem",
+  "openType": true,
   "optionalProperties": [
     "attachments",
     "extensions",
@@ -111,7 +121,23 @@ Here is a JSON representation of the resource
     "multiValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.message"
+  "@odata.type": "microsoft.graph.message",
+  "@odata.annotations": [
+    {
+      "property": "attachments",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

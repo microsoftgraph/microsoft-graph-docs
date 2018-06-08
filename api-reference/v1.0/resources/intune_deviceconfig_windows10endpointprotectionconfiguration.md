@@ -1,4 +1,4 @@
-﻿# windows10EndpointProtectionConfiguration resource type
+# windows10EndpointProtectionConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -61,6 +61,69 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |bitLockerEncryptDevice|Boolean|Allows the admin to require encryption to be turned on using BitLocker.|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune_deviceconfig_bitlockerremovabledrivepolicy.md)|BitLocker Removable Drive Policy.|
 
+### applicationGuardBlockClipboardSharingType values
+
+| Value
+|:-------------------------
+| notConfigured
+| blockBoth
+| blockHostToContainer
+| blockContainerToHost
+| blockNone
+
+
+### applicationGuardBlockFileTransferType values
+
+| Value
+|:-------------------------
+| notConfigured
+| blockImageAndTextFile
+| blockImageFile
+| blockNone
+| blockTextFile
+
+
+### appLockerApplicationControlType values
+
+| Value
+|:-------------------------
+| notConfigured
+| enforceComponentsAndStoreApps
+| auditComponentsAndStoreApps
+| enforceComponentsStoreAppsAndSmartlocker
+| auditComponentsStoreAppsAndSmartlocker
+
+
+### firewallPacketQueueingMethodType values
+
+| Value
+|:-------------------------
+| deviceDefault
+| disabled
+| queueInbound
+| queueOutbound
+| queueBoth
+
+
+### firewallCertificateRevocationListCheckMethodType values
+
+| Value
+|:-------------------------
+| deviceDefault
+| none
+| attempt
+| require
+
+
+### firewallPreSharedKeyEncodingMethodType values
+
+| Value
+|:-------------------------
+| deviceDefault
+| none
+| utF8
+
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
@@ -73,12 +136,12 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceConfiguration",
   "@odata.type": "microsoft.graph.windows10EndpointProtectionConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",

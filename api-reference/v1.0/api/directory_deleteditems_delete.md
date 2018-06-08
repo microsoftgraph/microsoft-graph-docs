@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /directory/deleteditems/{id}
+DELETE /directory/deletedItems/{id}
 ```
 ## Request headers
 | Name       | Description|
@@ -49,7 +49,7 @@ If successful, this method returns `204 No Content` response code. It does not r
   "name": "delete_directory"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
+DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

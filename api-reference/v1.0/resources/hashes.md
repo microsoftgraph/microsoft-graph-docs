@@ -32,7 +32,7 @@ Here is a JSON representation of the resource.
 | Property         | Type   | Description                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
-| **crc32Hash**    | String | The CRC32 value of the file (if available). Read-only.            |
+| **crc32Hash**    | String | The CRC32 value of the file in little endian (if available). Read-only.            |
 | **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
 
 **Note:** In some cases hash values may not be available. 

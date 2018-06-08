@@ -25,7 +25,7 @@ POST /directoryObjects/{id}/getMemberObjects
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | application/json  |
+| Content-Type   | string  | application/json  |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -46,7 +46,7 @@ If successful, this method returns `200 OK` response code and String collection 
   "name": "directoryobject_getmemberobjects"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/getMemberObjects
+POST https://graph.microsoft.com/v1.0/directoryObjects/{object-id}/getMemberObjects
 Content-type: application/json
 
 {

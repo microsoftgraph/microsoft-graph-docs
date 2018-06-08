@@ -16,8 +16,19 @@ The **plannerTaskDetails** resource represents the additional information about 
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|The collection of checklist items on the task.|
 |description|String|Description of the task|
 |id|String| Read-only. ID of the task details. It is 28 characters long and case sensitive. [Format validation](planner_identifiers_disclaimer.md) is done on the service.|
-|previewType|string|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.|
+|previewType|plannerPreviewType|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|The collection of references on the task.|
+
+### plannerPreviewType values
+
+| Value
+|:-------------------------
+| automatic
+| noPreview
+| checklist
+| description
+| reference
+
 
 ## Relationships
 None
@@ -26,11 +37,10 @@ None
 ## JSON representation
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.plannerTaskDetails"
 }-->
 

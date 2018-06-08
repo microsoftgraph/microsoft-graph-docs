@@ -1,4 +1,4 @@
-﻿# macOSDeviceFeaturesConfiguration resource type
+# macOSDeviceFeaturesConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -37,12 +37,12 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune_devicec
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.appleDeviceFeaturesConfigurationBase",
   "@odata.type": "microsoft.graph.macOSDeviceFeaturesConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",

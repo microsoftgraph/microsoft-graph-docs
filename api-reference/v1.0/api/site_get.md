@@ -63,7 +63,7 @@ GET /groups/{group-id}/sites/root
 
 ### Request
 
-<!-- { "blockType": "request", "name": "get-site" } -->
+<!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all" } -->
 
 ```http
 GET /sites/{site-id}
@@ -79,12 +79,6 @@ Content-type: application/json
 
 {
   "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
-  "owner": {
-    "user": {
-      "displayName": "Daron Spektor",
-      "id": "5280E7FE-DC7A-4486-9490-E790D81DFEB3"
-    }
-  },
   "displayName": "OneDrive Team Site",
   "name": "1drvteam",
   "createdDateTime": "2017-05-09T20:56:00Z",

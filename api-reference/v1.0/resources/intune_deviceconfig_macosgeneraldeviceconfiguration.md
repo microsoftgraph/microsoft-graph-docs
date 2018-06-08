@@ -1,4 +1,4 @@
-﻿# macOSGeneralDeviceConfiguration resource type
+# macOSGeneralDeviceConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -37,6 +37,14 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Type of password that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Boolean|Whether or not to require a password.|
 
+### requiredPasswordType values
+
+| Value
+|:-------------------------
+| deviceDefault
+| alphanumeric
+| numeric
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
@@ -49,12 +57,12 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceConfiguration",
   "@odata.type": "microsoft.graph.macOSGeneralDeviceConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",

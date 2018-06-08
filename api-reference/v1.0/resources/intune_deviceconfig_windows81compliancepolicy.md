@@ -1,4 +1,4 @@
-﻿# windows81CompliancePolicy resource type
+# windows81CompliancePolicy resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -36,6 +36,14 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |osMaximumVersion|String|Maximum Windows 8.1 version.|
 |storageRequireEncryption|Boolean|Indicates whether or not to require encryption on a windows 8.1 device.|
 
+### requiredPasswordType values
+
+| Value
+|:-------------------------
+| deviceDefault
+| alphanumeric
+| numeric
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
@@ -49,12 +57,12 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceCompliancePolicy",
   "@odata.type": "microsoft.graph.windows81CompliancePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windows81CompliancePolicy",

@@ -1,4 +1,4 @@
-﻿# windowsFirewallNetworkProfile resource type
+# windowsFirewallNetworkProfile resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -19,16 +19,23 @@ Windows Firewall Profile Policies.
 |securedPacketExemptionAllowed|Boolean|Configures the firewall to allow the host computer to respond to unsolicited network traffic of that traffic is secured by IPSec even when stealthModeBlocked is set to true|
 |policyRulesFromGroupPolicyMerged|Boolean|Configures the firewall to merge Firewall Rule policies from group policy with those from local store instead of ignoring the local store rules|
 
+### stateManagementSetting values
+
+| Value
+|:-------------------------
+| notConfigured
+| blocked
+| allowed
+
+
 ## Relationships
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsFirewallNetworkProfile",

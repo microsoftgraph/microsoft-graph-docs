@@ -36,7 +36,8 @@ This is the base class for Compliance policy. Compliance policies are platform s
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "@odata.type": "microsoft.graph.deviceCompliancePolicy"
 }
 -->

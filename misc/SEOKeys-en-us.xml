@@ -399,15 +399,14 @@
 			</Item>
 			<Item text="History item" url="/en-us/api-reference/v1.0/resources/projectrome_historyitem" >
 				<Item text="Create or replace a history item" url="/en-us/api-reference/v1.0/api/projectrome_put_historyitem" />
-				<Item text="Delete a history item" url="/en-us/api-reference/v.10/api/projectrome_delete_historyitem" />
+				<Item text="Delete a history item" url="/en-us/api-reference/v1.0/api/projectrome_delete_historyitem" />
 			</Item>
 		</Item>
 	</Item>
    <Item text="Devices and apps" ProdTag="Intune" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
       <Item text="App management" url="/en-us/api-reference/v1.0/resources/intune_apps_app_conceptual">
-        <Item text="All devices assignment target" url="/en-us/api-reference/v1.0/resources/intune_apps_alldevicesassignmenttarget"/>
-        <Item text="All licensed users assignment target" url="/en-us/api-reference/v1.0/resources/intune_books_alllicensedusersassignmenttarget"/>
-        <Item text="All licensed users assignment target" url="/en-us/api-reference/v1.0/resources/intune_apps_alllicensedusersassignmenttarget"/>
+        <Item text="All devices assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_alldevicesassignmenttarget"/>
+        <Item text="All licensed users assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_alllicensedusersassignmenttarget"/>
         <Item text="Android for Work app configuration schema item" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworkappconfigurationschemaitem"/>
         <Item text="Android for Work app configuration schema" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworkappconfigurationschema">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_list"/>
@@ -448,15 +447,10 @@
           <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_apps_androidstoreapp_delete"/>
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_apps_androidstoreapp_update"/>
         </Item>
-        <Item text="Device and app management assignment target" url="/en-us/api-reference/v1.0/resources/intune_apps_deviceandappmanagementassignmenttarget"/>
-        <Item text="Device and app management assignment target" url="/en-us/api-reference/v1.0/resources/intune_books_deviceandappmanagementassignmenttarget"/>
-        <Item text="Device app management" url="/en-us/api-reference/v1.0/resources/intune_apps_deviceappmanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_apps_deviceappmanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_apps_deviceappmanagement_update"/>
-        </Item>
-        <Item text="Device app management" url="/en-us/api-reference/v1.0/resources/intune_books_deviceappmanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_books_deviceappmanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_books_deviceappmanagement_update"/>
+        <Item text="Device and app management assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceandappmanagementassignmenttarget"/>
+        <Item text="Device app management" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceappmanagement">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_update"/>
         </Item>
         <Item text="Device install state" url="/en-us/api-reference/v1.0/resources/intune_books_deviceinstallstate">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_list"/>
@@ -473,11 +467,9 @@
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_books_ebookinstallsummary_get"/>
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_books_ebookinstallsummary_update"/>
         </Item>
-        <Item text="Exclusion group assignment target" url="/en-us/api-reference/v1.0/resources/intune_apps_exclusiongroupassignmenttarget"/>
-        <Item text="Exclusion group assignment target" url="/en-us/api-reference/v1.0/resources/intune_books_exclusiongroupassignmenttarget"/>
+        <Item text="Exclusion group assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_exclusiongroupassignmenttarget"/>
         <Item text="File encryption info" url="/en-us/api-reference/v1.0/resources/intune_apps_fileencryptioninfo"/>
-        <Item text="Group assignment target" url="/en-us/api-reference/v1.0/resources/intune_apps_groupassignmenttarget"/>
-        <Item text="Group assignment target" url="/en-us/api-reference/v1.0/resources/intune_books_groupassignmenttarget"/>
+        <Item text="Group assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_groupassignmenttarget"/>
         <Item text="iOS device type" url="/en-us/api-reference/v1.0/resources/intune_apps_iosdevicetype"/>
         <Item text="iOS LOB app assignment settings" url="/en-us/api-reference/v1.0/resources/intune_apps_ioslobappassignmentsettings"/>
         <Item text="iOS LOB app" url="/en-us/api-reference/v1.0/resources/intune_apps_ioslobapp">
@@ -610,7 +602,7 @@
         </Item>
         <Item text="MIME content" url="/en-us/api-reference/v1.0/resources/intune_apps_mimecontent"/>
         <Item text="MIME content" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_mimecontent"/>
-        <Item text="MIME content" url="/en-us/api-reference/v1.0/resources/intune_books_mimecontent"/>
+        <Item text="MIME content" url="/en-us/api-reference/v1.0/resources/intune_shared_mimecontent"/>
         <Item text="Mobile app assignment settings" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappassignmentsettings"/>
         <Item text="Mobile app assignment" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappassignment">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_list"/>
@@ -715,9 +707,9 @@
         </Item>
       </Item>
       <Item text="Corporate enrollment" url="/en-us/api-reference/v1.0/resources/intune_corporate_enrollment_conceptual">
-        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_corpenrollment_devicemanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_corpenrollment_devicemanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_corpenrollment_devicemanagement_update"/>
+        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update"/>
         </Item>
         <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_enrollment_devicemanagement">
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_enrollment_devicemanagement_get"/>
@@ -725,8 +717,8 @@
         </Item>
       </Item>
       <Item text="Device configuration" url="/en-us/api-reference/v1.0/resources/intune_device_configuration_conceptual">
-        <Item text="All devices assignment target" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_alldevicesassignmenttarget"/>
-        <Item text="All licensed users assignment target" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_alllicensedusersassignmenttarget"/>
+        <Item text="All devices assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_alldevicesassignmenttarget"/>
+        <Item text="All licensed users assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_alllicensedusersassignmenttarget"/>
         <Item text="Android compliance policy" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidcompliancepolicy">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_get"/>
@@ -755,7 +747,7 @@
         </Item>
         <Item text="BitLocker removable drive policy" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_bitlockerremovabledrivepolicy"/>
         <Item text="Defender detected malware actions" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderdetectedmalwareactions"/>
-        <Item text="Device and app management assignment target" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceandappmanagementassignmenttarget"/>
+        <Item text="Device and app management assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceandappmanagementassignmenttarget"/>
         <Item text="Device compliance action item" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactionitem">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_get"/>
@@ -879,8 +871,8 @@
         </Item>
         <Item text="Device management settings" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicemanagementsettings"/>
         <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicemanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicemanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicemanagement_update"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update"/>
         </Item>
         <Item text="Edge search engine base" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginebase"/>
         <Item text="Edge search engine custom" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginecustom"/>
@@ -892,8 +884,8 @@
           <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_delete"/>
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_update"/>
         </Item>
-        <Item text="Exclusion group assignment target" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_exclusiongroupassignmenttarget"/>
-        <Item text="Group assignment target" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_groupassignmenttarget"/>
+        <Item text="Exclusion group assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_exclusiongroupassignmenttarget"/>
+        <Item text="Group assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_groupassignmenttarget"/>
         <Item text="iOS certificate profile" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioscertificateprofile">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_ioscertificateprofile_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_ioscertificateprofile_get"/>
@@ -1021,7 +1013,7 @@
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_softwareupdatestatussummary_get"/>
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_softwareupdatestatussummary_update"/>
         </Item>
-        <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_uri"/>
+        <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_shared_uri"/>
         <Item text="Windows 10 compliance policy" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10compliancepolicy">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10compliancepolicy_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10compliancepolicy_get"/>
@@ -1133,7 +1125,7 @@
         <Item text="Windows update install schedule type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateinstallscheduletype"/>
         <Item text="Windows update scheduled install" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdatescheduledinstall"/>
       </Item>
-      <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_corpenrollment_devicemanagement">
+      <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
         <Item text="Apple push notification certificate" url="/en-us/api-reference/v1.0/resources/intune_devices_applepushnotificationcertificate">
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_devices_applepushnotificationcertificate_get"/>
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_devices_applepushnotificationcertificate_update"/>
@@ -1158,9 +1150,9 @@
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_devices_detectedapp_update"/>
         </Item>
         <Item text="Device action result" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceactionresult"/>
-        <Item text="Device category" url="/en-us/api-reference/v1.0/resources/intune_devices_devicecategory">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_devices_devicecategory_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_devices_devicecategory_update"/>
+        <Item text="Device category" url="/en-us/api-reference/v1.0/resources/intune_shared_devicecategory">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_update"/>
         </Item>
         <Item text="Device exchange access state summary" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceexchangeaccessstatesummary"/>
         <Item text="Device geolocation" url="/en-us/api-reference/v1.0/resources/intune_devices_devicegeolocation"/>
@@ -1172,29 +1164,29 @@
           <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_delete"/>
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_update"/>
         </Item>
-        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_devices_devicemanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_devices_devicemanagement_update"/>
+        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update"/>
         </Item>
-        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_endpointprotection_devicemanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_endpointprotection_devicemanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_endpointprotection_devicemanagement_update"/>
+        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update"/>
         </Item>
-        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_notification_devicemanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_notification_devicemanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_notification_devicemanagement_update"/>
+        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update"/>
         </Item>
-        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_remoteassistance_devicemanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_devicemanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_devicemanagement_update"/>
+        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update"/>
         </Item>
         <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_devicemanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagement_update"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update"/>
         </Item>
-        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_auditing_devicemanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_auditing_devicemanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_auditing_devicemanagement_update"/>
+        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update"/>
         </Item>
         <Item text="Device operating system summary" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceoperatingsystemsummary"/>
         <Item text="Enrollment troubleshooting event" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
@@ -1261,20 +1253,20 @@
         <Item text="Remote lock action result" url="/en-us/api-reference/v1.0/resources/intune_devices_remotelockactionresult"/>
         <Item text="Reset passcode action result" url="/en-us/api-reference/v1.0/resources/intune_devices_resetpasscodeactionresult"/>
         <Item text="Update windows device account action parameter" url="/en-us/api-reference/v1.0/resources/intune_devices_updatewindowsdeviceaccountactionparameter"/>
-        <Item text="User" url="/en-us/api-reference/v1.0/resources/intune_devices_user">
-          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_devices_user_list"/>
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_devices_user_get"/>
-          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_devices_user_create"/>
-          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_devices_user_delete"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_devices_user_update"/>
-          <Item text="removeAllDevicesFromManagement action" url="/en-us/api-reference/v1.0/api/intune_devices_user_removealldevicesfrommanagement"/>
+        <Item text="User" url="/en-us/api-reference/v1.0/resources/intune_shared_user">
+          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_shared_user_list"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_user_get"/>
+          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_user_create"/>
+          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_user_delete"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_user_update"/>
+          <Item text="removeAllDevicesFromManagement action" url="/en-us/api-reference/v1.0/api/intune_shared_user_removealldevicesfrommanagement"/>
         </Item>
-        <Item text="User" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_user">
-          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_list"/>
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_get"/>
-          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_create"/>
-          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_delete"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_update"/>
+        <Item text="User" url="/en-us/api-reference/v1.0/resources/intune_shared_user">
+          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_shared_user_list"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_user_get"/>
+          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_user_create"/>
+          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_user_delete"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_user_update"/>
         </Item>
         <Item text="Windows defender scan action result" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdefenderscanactionresult"/>
         <Item text="Windows device account" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceaccount"/>
@@ -1282,7 +1274,7 @@
         <Item text="Windows device Azure AD account" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceazureadaccount"/>
       </Item>
       <Item text="App protection" url="/en-us/api-reference/v1.0/resources/intune_app_protection_conceptual">
-        <Item text="All devices assignment target" url="/en-us/api-reference/v1.0/resources/intune_mam_alldevicesassignmenttarget"/>
+        <Item text="All devices assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_alldevicesassignmenttarget"/>
         <Item text="All licensed users assignment target" url="/en-us/api-reference/v1.0/resources/intune_mam_alllicensedusersassignmenttarget"/>
         <Item text="Android managed app protection" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappprotection">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_list"/>
@@ -1304,16 +1296,16 @@
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_update"/>
         </Item>
         <Item text="Device and app management assignment target" url="/en-us/api-reference/v1.0/resources/intune_mam_deviceandappmanagementassignmenttarget"/>
-        <Item text="Device app management" url="/en-us/api-reference/v1.0/resources/intune_mam_deviceappmanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_mam_deviceappmanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_mam_deviceappmanagement_update"/>
+        <Item text="Device app management" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceappmanagement">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_update"/>
         </Item>
-        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_wip_devicemanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_wip_devicemanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_wip_devicemanagement_update"/>
+        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update"/>
         </Item>
-        <Item text="Exclusion group assignment target" url="/en-us/api-reference/v1.0/resources/intune_mam_exclusiongroupassignmenttarget"/>
-        <Item text="Group assignment target" url="/en-us/api-reference/v1.0/resources/intune_mam_groupassignmenttarget"/>
+        <Item text="Exclusion group assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_exclusiongroupassignmenttarget"/>
+        <Item text="Group assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_groupassignmenttarget"/>
         <Item text="iOS managed app protection" url="/en-us/api-reference/v1.0/resources/intune_mam_iosmanagedappprotection">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_get"/>
@@ -1400,13 +1392,13 @@
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_get"/>
           <Item text="assign action" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_assign"/>
         </Item>
-        <Item text="User" url="/en-us/api-reference/v1.0/resources/intune_mam_user">
-          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_mam_user_list"/>
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_mam_user_get"/>
-          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_mam_user_create"/>
-          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_mam_user_delete"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_mam_user_update"/>
-          <Item text="wipeManagedAppRegistrationsByDeviceTag action" url="/en-us/api-reference/v1.0/api/intune_mam_user_wipemanagedappregistrationsbydevicetag"/>
+        <Item text="User" url="/en-us/api-reference/v1.0/resources/intune_shared_user">
+          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_shared_user_list"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_user_get"/>
+          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_user_create"/>
+          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_user_delete"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_user_update"/>
+          <Item text="wipeManagedAppRegistrationsByDeviceTag action" url="/en-us/api-reference/v1.0/api/intune_shared_user_wipemanagedappregistrationsbydevicetag"/>
         </Item>
         <Item text="Windows information protection app learning summary" url="/en-us/api-reference/v1.0/resources/intune_wip_windowsinformationprotectionapplearningsummary">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionapplearningsummary_list"/>
@@ -1453,17 +1445,17 @@
         <Item text="All devices assignment target" url="/en-us/api-reference/v1.0/resources/intune_onboarding_alldevicesassignmenttarget"/>
         <Item text="All licensed users assignment target" url="/en-us/api-reference/v1.0/resources/intune_onboarding_alllicensedusersassignmenttarget"/>
         <Item text="Device and app management assignment target" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceandappmanagementassignmenttarget"/>
-        <Item text="Device app management" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceappmanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_update"/>
-          <Item text="syncMicrosoftStoreForBusinessApps action" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_syncmicrosoftstoreforbusinessapps"/>
+        <Item text="Device app management" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceappmanagement">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_update"/>
+          <Item text="syncMicrosoftStoreForBusinessApps action" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps"/>
         </Item>
-        <Item text="Device category" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicecategory">
-          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_list"/>
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_get"/>
-          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_create"/>
-          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_delete"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_update"/>
+        <Item text="Device category" url="/en-us/api-reference/v1.0/resources/intune_shared_devicecategory">
+          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_list"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_get"/>
+          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_create"/>
+          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_delete"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_update"/>
         </Item>
         <Item text="Device enrollment configuration" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceenrollmentconfiguration">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceenrollmentconfiguration_list"/>
@@ -1508,9 +1500,9 @@
           <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_delete"/>
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_update"/>
         </Item>
-        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagement_update"/>
+        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update"/>
         </Item>
         <Item text="Enrollment configuration assignment" url="/en-us/api-reference/v1.0/resources/intune_onboarding_enrollmentconfigurationassignment">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_list"/>
@@ -1519,10 +1511,10 @@
           <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_delete"/>
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_update"/>
         </Item>
-        <Item text="Exclusion group assignment target" url="/en-us/api-reference/v1.0/resources/intune_onboarding_exclusiongroupassignmenttarget"/>
-        <Item text="Group assignment target" url="/en-us/api-reference/v1.0/resources/intune_onboarding_groupassignmenttarget"/>
+        <Item text="Exclusion group assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_exclusiongroupassignmenttarget"/>
+        <Item text="Group assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_groupassignmenttarget"/>
         <Item text="Intune brand" url="/en-us/api-reference/v1.0/resources/intune_onboarding_intunebrand"/>
-        <Item text="MIME content" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mimecontent"/>
+        <Item text="MIME content" url="/en-us/api-reference/v1.0/resources/intune_shared_mimecontent"/>
         <Item text="Mobile threat defense connector" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mobilethreatdefenseconnector">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_get"/>
@@ -1541,12 +1533,12 @@
           <Item text="setMobileDeviceManagementAuthority action" url="/en-us/api-reference/v1.0/api/intune_onboarding_organization_setmobiledevicemanagementauthority"/>
         </Item>
         <Item text="RGB color" url="/en-us/api-reference/v1.0/resources/intune_onboarding_rgbcolor"/>
-        <Item text="User" url="/en-us/api-reference/v1.0/resources/intune_onboarding_user">
-          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_list"/>
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_get"/>
-          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_create"/>
-          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_delete"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_update"/>
+        <Item text="User" url="/en-us/api-reference/v1.0/resources/intune_shared_user">
+          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_shared_user_list"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_user_get"/>
+          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_user_create"/>
+          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_user_delete"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_user_update"/>
         </Item>
       </Item>
       <Item text="Role based access control" url="/en-us/api-reference/v1.0/resources/intune_rbac_conceptual">
@@ -1564,9 +1556,9 @@
           <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroledefinition_delete"/>
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroledefinition_update"/>
         </Item>
-        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_rbac_devicemanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_rbac_devicemanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_rbac_devicemanagement_update"/>
+        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update"/>
         </Item>
         <Item text="Resource action" url="/en-us/api-reference/v1.0/resources/intune_rbac_resourceaction"/>
         <Item text="Resource operation" url="/en-us/api-reference/v1.0/resources/intune_rbac_resourceoperation">
@@ -1591,12 +1583,12 @@
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_rbac_roledefinition_update"/>
         </Item>
         <Item text="Role permission" url="/en-us/api-reference/v1.0/resources/intune_rbac_rolepermission"/>
-        <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_rbac_uri"/>
+        <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_shared_uri"/>
       </Item>
       <Item text="Telecom expenses" url="/en-us/api-reference/v1.0/resources/intune_tem_conceptual">
-        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_tem_devicemanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_tem_devicemanagement_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_tem_devicemanagement_update"/>
+        <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update"/>
         </Item>
         <Item text="Telecom expense management partner" url="/en-us/api-reference/v1.0/resources/intune_tem_telecomexpensemanagementpartner">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_tem_telecomexpensemanagementpartner_list"/>
@@ -5613,7 +5605,7 @@
 	<Item text="Sites and lists" ProdTag="SharePoint" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="sharepoint, sites, lists, drives, microsoft graph api, sharepoint api">
       <Item text="Sites" url="/en-us/api-reference/beta/resources/site" SEOKeyword="sharepoint, site, sites, microsoft graph api, sharepoint sites api" >
         <Item text="Get site" url="/en-us/api-reference/beta/api/site_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
-        <Item text="Get lists" url="/en-us/api-reference/beta/api/lists_list" SEOKeyword="sharepoint, list lists, get lists" SEODescription="" />
+        <Item text="Get lists" url="/en-us/api-reference/beta/api/list_list" SEOKeyword="sharepoint, list lists, get lists" SEODescription="" />
         <Item text="List subsites" url="/en-us/api-reference/beta/api/site_list_subsites" SEOKeyword="sharepoint, list subsites" SEODescription="" />
       </Item>
       <Item text="Lists" url="/en-us/api-reference/beta/resources/list" SEOKeyword="sharepoint, list, lists, microsoft graph api, sharepoint list api">
@@ -5908,4 +5900,3 @@
     </Item>
 	</Item>
 	</Menu>
-

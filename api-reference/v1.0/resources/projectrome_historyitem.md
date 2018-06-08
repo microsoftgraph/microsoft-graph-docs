@@ -15,7 +15,7 @@ When an app creates a session, a **historyItem** object should be added to the *
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-|status | EnumType | Set by the server. A status code used to identify valid objects. Values: active, updated, deleted, ignored.|
+|status | status | Set by the server. A status code used to identify valid objects. Values: active, updated, deleted, ignored.|
 |userTimezone | String | Optional. The timezone in which the user's device used to generate the activity was located at activity creation time. Values supplied as Olson IDs in order to support cross-platform representation.|
 |createdDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object was created on the server.|
 |lastModifiedDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object was modified on the server.|
@@ -29,7 +29,7 @@ When an app creates a session, a **historyItem** object should be added to the *
 
 |Relationship | Type | Description|
 |:------------|:-----|:-----------|
-|activity| [activity](../resources/projectrome_activity.md) | Optional. NavigationProperty/Containment; navigation property to the associated activity.|
+|activity| [userActivity](../resources/projectrome_activity.md) | Optional. NavigationProperty/Containment; navigation property to the associated activity.|
 
 ## JSON representation
 
@@ -42,12 +42,22 @@ Here is a JSON representation of the resource.
     "lastActiveDateTime",
     "activeDurationSeconds"
   ],
-  "@odata.type": "microsoft.graph.historyItem"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.activityHistoryItem",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "countable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json
 {
-    "status": "String (EnumType)",
+    "status": "active | updated | deleted | ignored",
     "createdDateTime": "DateTimeOffset",
     "lastModifiedDateTime": "DateTimeOffset",
     "id": "String",

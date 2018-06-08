@@ -13,8 +13,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/DataBodyRange
+POST /workbook/tables/{id|name}/columns/{id|name}/dataBodyRange
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/dataBodyRange
 
 ```
 ## Request headers
@@ -33,12 +33,14 @@ If successful, this method returns `200 OK` response code and [Range](../resourc
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "tablecolumn_databodyrange"
+  "isComposable": true,
+  "name": "tablecolumn_databodyrange",
+  "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/dataBodyRange
 ```
 
 ##### Response
@@ -46,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

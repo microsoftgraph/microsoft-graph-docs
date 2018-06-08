@@ -1,4 +1,4 @@
-﻿# mobileAppAssignment resource type
+# mobileAppAssignment resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -20,16 +20,26 @@ A class containing the properties used for Group Assignment of a Mobile App.
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|The target group assignment defined by the admin.|
 |settings|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|The settings for target assignment defined by the admin.|
 
+### installIntent values
+
+| Value
+|:-------------------------
+| available
+| required
+| uninstall
+| availableWithoutEnrollment
+
+
 ## Relationships
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.mobileAppAssignment"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",

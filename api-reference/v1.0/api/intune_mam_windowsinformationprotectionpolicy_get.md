@@ -78,7 +78,7 @@ Content-Length: 4867
       "certificate": "Y2VydGlmaWNhdGU="
     },
     "revokeOnUnenrollDisabled": true,
-    "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+    "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
     "azureRightsManagementServicesAllowed": true,
     "iconsVisible": true,
     "protectedApps": [

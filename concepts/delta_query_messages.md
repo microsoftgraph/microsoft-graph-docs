@@ -105,12 +105,12 @@ The first request specifies the following:
 - The [optional request header](#optional-request-header), _odata.maxpagesize_, returning 2 messages at a time.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_messages_delta_1"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=subject,sender,isRead HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/{folder-id}/messages/delta?$select=subject,sender,isRead HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -167,12 +167,12 @@ The second request specifies the `nextLink` URL returned from the previous respo
 the same `$select` parameter as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes it.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_messages_delta_2"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/{folder-id}/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -228,12 +228,11 @@ more messages to get from the folder.
 The third request continues to use the latest `nextLink` URL returned from the last sync request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_messages_delta_3"
 }-->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
+```
+GET https://graph.microsoft.com/v1.0/me/mailFolders/{folder-id}/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -279,12 +278,12 @@ you will be able to get only those messages that have changed (by being added, d
 Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_messages_delta_next"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/{folder-id}/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 

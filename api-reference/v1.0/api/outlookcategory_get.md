@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "get_outlookcategory"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories('de912e4d-c790-4da9-949c-ccd933aaa0f7')
+GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/{category-id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

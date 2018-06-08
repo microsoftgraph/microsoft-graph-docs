@@ -1,4 +1,4 @@
-﻿# iosUpdateConfiguration resource type
+# iosUpdateConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -26,7 +26,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |activeHoursStart|TimeOfDay|Active Hours Start (active hours mean the time window when updates install should not happen)|
 |activeHoursEnd|TimeOfDay|Active Hours End (active hours mean the time window when updates install should not happen)|
-|scheduledInstallDays|[dayOfWeek](../resources/intune_deviceconfig_dayofweek.md) collection|Days in week for which active hours are configured. This collection can contain a maximum of 7 elements.|
+|scheduledInstallDays|[dayOfWeek enum](../resources/intune_deviceconfig_dayofweek.md) collection|Days in week for which active hours are configured. This collection can contain a maximum of 7 elements.|
 |utcTimeOffsetInMinutes|Int32|UTC Time Offset indicated in minutes|
 
 ## Relationships
@@ -41,12 +41,12 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceConfiguration",
   "@odata.type": "microsoft.graph.iosUpdateConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",

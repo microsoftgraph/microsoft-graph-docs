@@ -36,7 +36,7 @@ This object provides a targeted subset of properties from the core [user](user.m
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two can be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example, "en-US".|
-|primaryRole|string| Default role for a user. The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `enum_sentinel`. Supports $filter.|
+|primaryRole|educationUserRole| Default role for a user. The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `unknownFutureValue`. Supports $filter.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
 |residenceAddress|[physicalAddress](physicaladdress.md)| Address where user lives.|
 |student|[educationStudent](educationstudent.md)| If the primary role is student, this block will contain student specific data.|
@@ -46,12 +46,21 @@ This object provides a targeted subset of properties from the core [user](user.m
 |userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby.
 |userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
 
+### educationUserRole values
+| Value
+|:---------------------
+| student
+| teacher
+| none
+| unknownFutureValue
+
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |classes|[educationClass](educationclass.md) collection| Classes to which the user belongs. Nullable.|
 |schools|[educationSchool](educationschool.md) collection| Schools to which the user belongs. Nullable.|
-|assignments| [educationAssignment](../../beta/resources/educationAssignment.md)| List of assignments for hte user. Nullable.|
+|assignments| [educationAssignment](../../beta/resources/educationAssignment.md)| List of assignments for the user. Nullable.|
+|user|[user](user.md)| The directory user corresponding to this user.|
 
 >**Note:**  The **educationassignment** resource is a /beta version resource. If using this resource, be sure to review the [change log](../../../concepts/changelog.md) periodically. When Microsoft Graph API resources are released to the /v1.0  endpoint, the release is noted in the change log. If your app consumes the **educationassignment** resource, you will need to declare base request URLs as shown in the following code block:  
 ```JavaScript
@@ -64,30 +73,43 @@ var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for admi
 
 The following is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.educationUser"
 }-->
 
 ```json
 {
   "id": "string",
+  "accountEnabled": true,
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
+  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
+  "businessPhones": ["555-555-6568"],
+  "department": "string",
   "displayName": "string",
   "givenName": "string",
   "middleName": "string",
   "surname": "string",
   "mail": "string",
+  "mailNickname": "string",
   "mobilePhone": "string",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "externalSource": "string",
   "mailingAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "passwordPolicies": "string",
+  "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
+  "preferredLanguage": "string",
   "primaryRole": "string",
+  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "residenceAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
   "student": {"@odata.type": "microsoft.graph.educationStudent"},
-  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"}
+  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"},
+  "usageLocation": "string",
+  "userPrincipalName": "string",
+  "userType": "string"
 }
 
 ```
@@ -99,5 +121,9 @@ The following is a JSON representation of the resource.
   "description": "educationUser resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Error: microsoft.graph.educationUser/assignments:
+      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN"
+  ],
   "tocPath": ""
 }-->

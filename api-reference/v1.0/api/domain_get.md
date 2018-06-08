@@ -44,6 +44,7 @@ If successful, this method returns a `200 OK` response code and [domain](../reso
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "get_domain"
 }-->
 ```http

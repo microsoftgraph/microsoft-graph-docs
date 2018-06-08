@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object shown here is trun
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup",
+  "@odata.type": "microsoft.graph.sectionGroup",
   "isCollection": true
 } -->
 ```http

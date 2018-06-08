@@ -103,12 +103,12 @@ PATCH /groups/{id}/events/{id}
 ```
 
 
-## Parameters
-|**Parameter**|**Type**|**Description**|
+## Path parameters
+|Parameter|Type|Description|
 |:-----|:-----|:-----|
-|_URL parameters_|
 |id|string|A unique identifier for an object in the corresponding collection. Required.|
-|_Body parameters_|
+
+## Request body parameters
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection| An array of one or more multi-valued extended properties. |
 |id|String|For each property in the **multiValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 |value|string|For each property in the **multiValueExtendedProperties** collection, specify the property value. Required.|

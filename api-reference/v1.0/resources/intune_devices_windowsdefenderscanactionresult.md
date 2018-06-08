@@ -1,4 +1,4 @@
-﻿# windowsDefenderScanActionResult resource type
+# windowsDefenderScanActionResult resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -15,16 +15,28 @@ Inherits from [deviceActionResult](../resources/intune_devices_deviceactionresul
 |lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |scanType|String|Scan type either full scan or quick scan|
 
+### actionState values
+
+| Value
+|:-------------------------
+| none
+| pending
+| canceled
+| active
+| done
+| failed
+| notSupported
+
+
 ## Relationships
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceActionResult",
   "@odata.type": "microsoft.graph.windowsDefenderScanActionResult"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsDefenderScanActionResult",

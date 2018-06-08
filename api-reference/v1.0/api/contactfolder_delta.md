@@ -74,7 +74,6 @@ returning **contactFolder** rather than **message** collections.
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/contactFolders/delta
-
 Prefer: odata.maxpagesize=2
 ```
 
@@ -124,5 +123,9 @@ Content-length: 254
   "description": "contactFolder: delta",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: contactfolder_delta/container/wellKnownName:
+      Undocumented property 'wellKnownName' [String] was not expected on resource microsoft.graph.contactFolder."
+  ],
   "tocPath": ""
 }-->

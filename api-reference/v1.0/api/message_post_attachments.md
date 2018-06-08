@@ -65,14 +65,14 @@ Here is an example of the request.
   "name": "create_file_attachment_from_message"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
+POST https://graph.microsoft.com/v1.0/me/messages/{message-id}/attachments
 Content-type: application/json
 Content-length: 142
 
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
   "name": "smile",
-  "contentBytes": "R0lGODdhEAYEAA7"
+  "contentBytes": "base64R0lGODdhEAYEAA7"
 }
 ```
 
@@ -98,7 +98,7 @@ Content-length: 202
     "isInline": false,
     "contentId": null,
     "contentLocation": null,
-    "contentBytes": "R0lGODdhEAYEAA7"
+    "contentBytes": "base64R0lGODdhEAYEAA7"
 }
 
 ```
@@ -113,7 +113,7 @@ Here is an example of the request.
 }-->
 
 ```
-POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
+POST https://graph.microsoft.com/v1.0/me/messages/{message-id}/attachments
 Content-type: application/json
 Content-length: 200
 

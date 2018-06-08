@@ -63,7 +63,7 @@ Content-length: 245
       "isDefault": true,
       "isInitial": true,
       "isRoot": true,
-      "name": "contoso.com",
+      "id": "contoso.com",
       "supportedServices": [
         "Email",
         "OfficeCommunicationsOnline"

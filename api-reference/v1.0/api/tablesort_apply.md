@@ -28,7 +28,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|fields|SortField|The list of conditions to sort on.|
+|fields|WorkbookSortField collection|The list of conditions to sort on.|
 |matchCase|boolean|Optional. Whether to have the casing impact string ordering.|
 |method|string|Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.|
 
@@ -72,8 +72,7 @@ Content-length: 298
 Here is an example of the response. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

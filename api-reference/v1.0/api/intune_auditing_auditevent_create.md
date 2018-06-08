@@ -82,7 +82,7 @@ Content-length: 1387
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -133,7 +133,7 @@ Content-Length: 1436
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",

@@ -39,6 +39,8 @@ The following table shows the properties of the [group](../resources/group.md) r
 
 Specify the **groupTypes** property if you're creating an Office 365 or dynamic group, as stated below.
 
+### groupTypes options
+
 | Type of group | **groupTypes** property |
 |:--------------|:------------------------|
 | Office 365 (aka unified group)| "Unified" |

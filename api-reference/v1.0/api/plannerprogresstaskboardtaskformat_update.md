@@ -42,7 +42,7 @@ Here is an example of the request.
   "name": "update_plannerprogresstaskboardtaskformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/hsOf2dhOJkqyYYZEtdzDe2QAIUCR/progressTaskBoardFormat
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/progressTaskBoardFormat
 Content-type: application/json
 Content-length: 34
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
