@@ -11,6 +11,8 @@ test_script:
     
     if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
 
+hosts:
+  api.nuget.org: 93.184.221.200
 nuget:
   account_feed: true
 notifications:
