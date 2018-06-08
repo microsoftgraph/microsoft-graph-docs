@@ -11,10 +11,6 @@ test_script:
     
     if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
 
-hosts:
-  api.nuget.org: 93.184.221.200
-nuget:
-  account_feed: true
 notifications:
 - provider: Slack
   incoming_webhook: https://hooks.slack.com/services/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
@@ -22,3 +18,7 @@ notifications:
   on_build_success: true
   on_build_failure: true
   on_build_status_changed: false
+
+nuget:
+  account_feed: true
+  project_feed: true
