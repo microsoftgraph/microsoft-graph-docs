@@ -1,5 +1,7 @@
 version: 1.0.{build}
 clone_depth: 1
+nuget:
+  account_feed: true
 build_script:
 - ps: >-
     Write-Host "no build required"
@@ -18,7 +20,3 @@ notifications:
   on_build_success: true
   on_build_failure: true
   on_build_status_changed: false
-
-nuget:
-  account_feed: true
-  project_feed: true
