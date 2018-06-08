@@ -35,7 +35,7 @@ if (Get-Command "apidoc.exe" -ErrorAction SilentlyContinue) {
 
     # install markdown scanner from nuget
     Write-Host "Running nuget.exe from ", $nugetPath
-    $nugetParams = "install", "ApiDoctor", "-OutputDirectory", $packagesPath, "-source", "AppVeyorAccountFeed", "-NonInteractive"
+    $nugetParams = "install", "ApiDoctor", "-OutputDirectory", $packagesPath, "-source", "apidoctor", "-NonInteractive"
     & $nugetPath $nugetParams
 
     if ($LastExitCode -ne 0) { 
