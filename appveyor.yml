@@ -1,7 +1,7 @@
 version: 1.0.{build}
 clone_depth: 1
-nuget:
-  account_feed: true
+install:
+- cmd: nuget sources add -name apidoctor -source https://ci.appveyor.com/nuget/apidoctor-gs6wtfa3xo5b
 build_script:
 - ps: >-
     Write-Host "no build required"
