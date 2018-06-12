@@ -967,9 +967,9 @@
           <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macosgeneraldeviceconfiguration_delete"/>
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macosgeneraldeviceconfiguration_update"/>
         </Item>
-        <Item text="Managed device" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_manageddevice">
-          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_manageddevice_list"/>
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_manageddevice_get"/>
+        <Item text="Managed device" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddevice">
+          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_list"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_get"/>
         </Item>
         <Item text="Media content rating Australia" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingaustralia"/>
         <Item text="Media content rating Canada" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingcanada"/>
