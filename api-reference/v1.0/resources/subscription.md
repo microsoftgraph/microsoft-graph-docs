@@ -49,7 +49,7 @@ Here is a JSON representation of the resource.
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| changeType | string | Required. Indicates the type of change in the subscribed resource that will raise a notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list. |
+| changeType | string | Required. Indicates the type of change in the subscribed resource that will raise a notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list.<br><br>Note: Drive root item notifications support only the `updated` changeType. User and group notifications support `updated` and `deleted` changeType.|
 | notificationUrl | string | Required. The URL of the endpoint that will receive the notifications. This URL must make use of the HTTPS protocol. |
 | resource | string | Required. Specifies the resource that will be monitored for changes. Do not include the base URL (`https://graph.microsoft.com/v1.0/`). |
 | expirationDateTime | [dateTime](http://tools.ietf.org/html/rfc3339) | Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. |
