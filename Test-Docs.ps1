@@ -59,7 +59,7 @@ $appVeyorUrl = $env:APPVEYOR_API_URL
 $parms = "check-links", "--path", $repoPath
 if ($appVeyorUrl -ne $null)
 {
-#    $parms = $parms += "--appveyor-url", $appVeyorUrl
+    $parms = $parms += "--appveyor-url", $appVeyorUrl
 }
 
 & $apidoc $parms

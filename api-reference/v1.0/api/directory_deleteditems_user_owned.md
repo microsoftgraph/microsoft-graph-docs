@@ -26,7 +26,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 ## Request headers
 
-| **Name**      | **Description**           |
+| Name          | Description               |
 | ------------- | ------------------------- |
 | Authorization | Bearer {token}. Required. |
 
