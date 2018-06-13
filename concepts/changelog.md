@@ -2294,6 +2294,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change|v1.0 |Added the [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/subscription_list) operation to the [subscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/subscription) entity. |
 |Change|v1.0 |Added the **applicationID** and **creatorId** properties to the [subscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/subscription) entity. |
 
+### Microsoft Teams APIs
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition         | Beta          | Added team archive and unarchive APIs, as well as async operation resources for Microsoft Teams. |
+
 ## April 2018
 
 ### Audit log API

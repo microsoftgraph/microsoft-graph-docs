@@ -14,6 +14,7 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 | Change team settings                  | [teamMemberSettings](../resources/teammembersettings.md), [teamGuestSettings](../resources/teamGuestSettings.md), [teamMessagingSettings](../resources/teammessagingsettings.md), [teamFunSettings](../resources/teamGuestSettings.md) |                                                              |
 | Get the photo of a member of a team   | [profilePhoto](../../v1.0/api/profilephoto_get.md) |                                                              |
 | List notebooks for a Team             | [Notebook](../../v1.0/resources/notebook.md) | [List notebooks in a group](../../v1.0/api/onenote_list_notebooks.md) |
+| Archive and restore a team            | [team](team.md) | [Archive team](../api/team_archive.md), [Unarchive team](../api/team_unarchive.md) |
 
 ## Membership changes in Microsoft Teams
 
