@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/<name>/series
+POST /workbook/worksheets/{id|name}/charts/{name}/series
 
 ```
 ## Request headers
@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "create_chartseries_from_chart"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/series
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series
 Content-type: application/json
 Content-length: 26
 

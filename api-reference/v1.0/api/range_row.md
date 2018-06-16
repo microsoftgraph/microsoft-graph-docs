@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/<name>/range/row
+POST /workbook/names/{name}/range/row
 POST /workbook/worksheets/{id|name}/range(address='<address>')/row
 POST /workbook/tables/{id|name}/columns/{id|name}/range/row
 
@@ -47,7 +47,7 @@ Here is an example of the request.
   "@type": "requestBodyResourceFor.range_row"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/<name>/range/row
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/row
 Content-type: application/json
 Content-length: 18
 

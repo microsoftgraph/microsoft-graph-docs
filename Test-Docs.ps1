@@ -33,7 +33,7 @@ if (Get-Command "apidoc.exe" -ErrorAction SilentlyContinue) {
     $packagesPath = Join-Path $repoPath -ChildPath "apidoctor"
     $result = New-Item -ItemType Directory -Force -Path $packagesPath
 
-    # install markdown scanner from nuget
+    # install apidoctor from nuget
     Write-Host "Running nuget.exe from ", $nugetPath
     $nugetParams = "install", "ApiDoctor", "-OutputDirectory", $packagesPath, "-NonInteractive", "-DisableParallelProcessing"
     & $nugetPath $nugetParams

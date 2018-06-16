@@ -13,9 +13,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/<name>/format/fill/setSolidColor
-POST /workbook/worksheets/{id|name}/charts/<name>/title/format/fill/setSolidColor
-POST /workbook/worksheets/{id|name}/charts/<name>/legend/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts/{name}/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts/{name}/title/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/setSolidColor
 
 ```
 ## Request headers
@@ -44,7 +44,7 @@ Here is an example of the request.
   "name": "chartfill_setsolidcolor"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/<name>/format/fill/setSolidColor
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/format/fill/setSolidColor
 Content-type: application/json
 Content-length: 28
 

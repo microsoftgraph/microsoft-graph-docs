@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/<name>/range/cell
+GET /workbook/names/{name}/range/cell
 GET /workbook/worksheets/{id|name}/range(address='<address>')/cell
 GET /workbook/tables/{id|name}/columns/{id|name}/range/cell
 
@@ -46,7 +46,7 @@ Here is an example of the request.
   "name": "range_cell"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/<name>/range/cell(row=5,column=6)
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/cell(row=5,column=6)
 ```
 
 ##### Response

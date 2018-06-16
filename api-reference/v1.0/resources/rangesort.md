@@ -41,7 +41,7 @@ Here is an example of the request.
   "name": "range_sort"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/<name>/range/sort
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort
 ```
 
 ##### Response

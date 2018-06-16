@@ -13,9 +13,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/<name>/axes/seriesAxis/format/line/clear
-POST /workbook/worksheets/{id|name}/charts/<name>/axes/categoryaxis/format/line/clear
-POST /workbook/worksheets/{id|name}/charts/<name>/axes/seriesAxis/majorgridlines/format/line/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/format/line/clear
 
 ```
 ## Request headers

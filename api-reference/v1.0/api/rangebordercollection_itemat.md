@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/<name>/range/format/borders/itemAt
+POST /workbook/names/{name}/range/format/borders/itemAt
 POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/itemAt
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/itemAt
 
@@ -47,7 +47,7 @@ Here is an example of the request.
   "@type": "requestBodyResourceFor.rangebordercollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/<name>/range/format/borders/itemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/borders/itemAt
 Content-type: application/json
 Content-length: 20
 
