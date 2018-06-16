@@ -3,7 +3,7 @@
 A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders.
 
 Outlook creates certain folders for users by default. Instead of using the corresponding folder **id** value, for convenience, you can use 
-the following well-known folder names when accessing these folders in a **mailFolder** collection: `ArchiveRoot`, `ConversationHistory`, `DeletedItems`, 
+the following well-known folder names when accessing these folders in a **mailFolder** collection: `Archive`, `ConversationHistory`, `DeletedItems`, 
 `Drafts`, `Inbox`, `JunkEmail`, `Outbox`, and `SentItems`.
 
 This resource supports using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
