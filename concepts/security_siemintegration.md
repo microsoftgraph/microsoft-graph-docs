@@ -48,10 +48,12 @@ Security alerts are highly privileged data typically viewable only by security r
 
 > **Note:** At this time, the Azure Monitor Diagnostic settings blade does not allow configuration of tenant-level resources. Because  security API alerts is a tenant-level resource, you have to use the Azure Resource Manager API to configure Azure Monitor for your organization’s security alerts.
 
+1. In your Azure subscription, register "microsoft.insights" (Azure Monitor) as a resource provider.  
+> **Note:** Do not register "Microsoft.SecurityGraph" (Security Graph API) as a resource provider in your Azure subscription since "Microsoft.SecurityGraph" is a tenant level provider. Tenant level configuration will be part of #6 below. 
 
-1. To configure Azure Monitor using the Azure Resource Manager API, obtain the [ARMClient](https://github.com/projectkudu/ARMClient) tool. This tool will be used to send REST API calls to the Azure portal from a command line.
+2. To configure Azure Monitor using the Azure Resource Manager API, obtain the [ARMClient](https://github.com/projectkudu/ARMClient) tool. This tool will be used to send REST API calls to the Azure portal from a command line.
 
-2. Prepare a diagnostic setting request JSON file like the following:
+3. Prepare a diagnostic setting request JSON file like the following:
 
     ``` json
     {
@@ -83,26 +85,26 @@ Security alerts are highly privileged data typically viewable only by security r
      
      **“days”:** 7 is the number of days you want to retain messages in your event hub.
 
-3. Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file **AzMonConfig.json.**
+4. Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file **AzMonConfig.json.**
 
-4. Run the following command to sigh in to the ARMClient tool. You will need to be using Global Administrator account credentials.
+5. Run the following command to sigh in to the ARMClient tool. You will need to be using Global Administrator account credentials.
 
     ``` shell
     ARMClient.exe login
     ```
 
-5. Run the following command to configure Azure Monitor to send security alerts to your event hub namespace. This will automatically provision an event hub within the namespace and start the flow of security alerts into the event hub. Ensure that the setting name (in this example, **securityApiAlerts**) matches the setting name you specified in the JSON file for the **name** field.
+6. Run the following command to configure Azure Monitor to send security alerts to your event hub namespace. This will automatically provision an event hub within the namespace and start the flow of security alerts into the event hub. Ensure that the setting name (in this example, **securityApiAlerts**) matches the setting name you specified in the JSON file for the **name** field.
 
     ``` shell
     ARMClient.exe put https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview  @".\AzMonConfig.json"
     ```
 
-6. To verify the settings were applied correctly, run this command and verify that the output matches your JSON file settings.
+7. To verify the settings were applied correctly, run this command and verify that the output matches your JSON file settings.
 
     ``` shell
     ARMClient.exe get https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview
     ```
-7. Exit the ARMClient tool. You have now completed the configuration of Azure Monitor to send security alerts from your tenant to event hub.
+8. Exit the ARMClient tool. You have now completed the configuration of Azure Monitor to send security alerts from your tenant to event hub.
 
 ## Step 3: Download and install the Azure Monitor Add-on for Splunk which will allow Splunk to consume security alerts
 

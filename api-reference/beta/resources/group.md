@@ -17,7 +17,7 @@ This resource supports:
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |**Group management**| | |
-|[Create group](../api/group_post_groups.md) | [group](group.md) |Create a new group as specified. It can be an Office 365 group, dynamic group, or security group.|
+|[Create group](../api/group_post_groups.md) | [group](group.md) |Create a new group as specified. It can be an Office 365 group, dynamic group, security group, or team.|
 |[Get group](../api/group_get.md) | [group](group.md) |Read properties and relationships of group object.|
 |[Update group](../api/group_update.md) | None |Update the properties of a group object. |
 |[Delete group](../api/group_delete.md) | None |Delete group object. |
@@ -40,6 +40,7 @@ This resource supports:
 |[List endpoints](../api/group_list_endpoints.md) |[endpoint](endpoint.md) collection| Get an endpoint object collection. |
 |[Get endpoint](../api/endpoint_get.md) | [endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
 |[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
+|[validateProperties](../api/group_validateproperties.md)|JSON| Validate an Office 365 group's display name or mail nickname complies with naming policies. | 
 |**Calendar**| | |
 |[Create event](../api/group_post_events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group_get_event.md) |[event](event.md)|Read properties of an event object.|

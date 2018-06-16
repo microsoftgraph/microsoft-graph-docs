@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/team/channels/{id}/chatthreads
+POST /teams/{id}/channels/{id}/chatthreads
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "create_chatthread_from_channel"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/team/channels/{id}/chatthreads
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/chatthreads
 Content-type: application/json
 
 {

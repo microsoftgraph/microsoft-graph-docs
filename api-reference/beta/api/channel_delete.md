@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/team/channels/{id}
+DELETE /teams/{id}/channels/{id}
 ```
 ## Request headers
 | Header       | Value |
@@ -37,7 +37,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/groups/{id}/team/channels/{id}
+DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
 
 #### Response

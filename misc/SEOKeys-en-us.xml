@@ -5080,7 +5080,7 @@
           <Item text="Assign owner" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Create owner, Microsoft Graph API, application API" SEODescription="Use this API to create a new owner." />
           <Item text="List extension properties" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="List extensionProperties, Microsoft Graph API, application API" SEODescription="Retrieve a list of extensionproperty objects." />
         </Item>
-	  <Item text="Audit logs"  url="/en-us/api-reference/beta/resources/directoryaudit">
+	  <Item text="Audit logs"  url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="Directory audit" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="directoryAudit object, Microsoft Graph API, Azure AD, audit logs" SEODescription="">
 			<Item text="List directory audits" url="/en-us/api-reference/beta/api/directoryaudit_list" SEOKeyword="Audit log API, Microsoft Graph API, Azure AD, audit logs" SEODescription="API to return a list of directoryAudit objects."/>
 			<Item text="Get directory audit" url="/en-us/api-reference/beta/api/directoryaudit_get" SEOKeyword="Audit log API, Microsoft Graph API, Azure AD, audit logs" SEODescription="API to return a directoryAudit object."/>
@@ -5101,7 +5101,6 @@
         <Item text="Restore deleted item" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
         <Item text="List deleted items owned by user" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
        </Item>
-
       <Item text="Device" url="/en-us/api-reference/beta/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
         <Item text="List devices" url="/en-us/api-reference/beta/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />
         <Item text="Create device" url="/en-us/api-reference/beta/api/device_post_devices" SEOKeyword="Create Device, Microsoft Graph API, Device API" SEODescription="Use this API to create a new Device." />
@@ -5229,6 +5228,31 @@
       <Item text="Audit event" url="/en-us/api-reference/beta/resources/privilegedoperationevent" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, Audit" SEODescription="Audit event from Privileged Identity Management">
         <Item text="List audit events" url="/en-us/api-reference/beta/api/privilegedoperationevent_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, Audit" SEODescription="Retrieve a list of audit events." />
       </Item>
+	  <Item text="Managed resources" url="/en-us/api-reference/beta/resources/governanceresource" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governanceresource_list" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governanceresource_get" />
+	  </Item>
+	  <Item text="Role definitions" url="/en-us/api-reference/beta/resources/governanceroledefinition" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governanceroledefinition_list" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governanceroledefinition_get" />
+	  </Item>
+	  <Item text="Role settings" url="/en-us/api-reference/beta/resources/governancerolesetting" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governancerolesetting_list" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governancerolesetting_get" />
+		<Item text="Update" url="/en-us/api-reference/beta/api/governancerolesetting_update" />
+	  </Item>
+	  <Item text="Role assignments" url="/en-us/api-reference/beta/resources/governanceroleassignment" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governanceroleassignment_list" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governanceroleassignment_get" />
+		<Item text="Export" url="/en-us/api-reference/beta/api/governanceroleassignment_export" />
+	  </Item>
+	  <Item text="Role assignment requests" url="/en-us/api-reference/beta/resources/governanceroleassignmentrequest" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_list" />
+		<Item text="Create" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_post" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_get" />
+		<Item text="Update" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_update" />
+		<Item text="Cancel" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_cancel" />
+	  </Item>
     </Item>
       <Item text="Service principal" url="/en-us/api-reference/beta/resources/serviceprincipal" >
         <Item text="List service principal" url="/en-us/api-reference/beta/api/serviceprincipal_list" />
@@ -5666,7 +5690,8 @@
     </Item>
     <Item text="Teamwork" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="Teams API, Microsoft Graph API, Microsoft Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
       <Item text="Group (team)" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
-        <Item text="Get group" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="Get group, Microsoft Graph API, Groups API" SEODescription="Retrieve the properties and relationships of group object." />
+        <Item text="Create group" url="/en-us/api-reference/beta/api/group_post_groups" />
+		<Item text="Get group" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="Get group, Microsoft Graph API, Groups API" SEODescription="Retrieve the properties and relationships of group object." />
         <Item text="List groups" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="List groups, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of group objects." />
         <Item text="Update group" url="/en-us/api-reference/beta/api/group_update" SEOKeyword="Update group, Microsoft Graph API, Groups API" SEODescription="Update the properties of group object." />
         <Item text="Delete group" url="/en-us/api-reference/beta/api/group_delete" SEOKeyword="Delete group, Microsoft Graph API, Groups API" SEODescription="Delete group." />
@@ -5690,11 +5715,10 @@
 		<Item text="Create team" url="/en-us/api-reference/beta/api/team_put_teams" />
 		<Item text="Get team" url="/en-us/api-reference/beta/api/team_get" />
 		<Item text="Update team" url="/en-us/api-reference/beta/api/team_update" />
+		<Item text="Archive team" url="/en-us/api-reference/beta/api/team_archive" />
+		<Item text="Unarchive team" url="/en-us/api-reference/beta/api/team_unarchive" />
+		<Item text="Clone team" url="/en-us/api-reference/beta/api/team_clone" />
 	  </Item>
-	  <Item text="Photo" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
-        <Item text="Get photo" url="/en-us/api-reference/beta/api/profilephoto_get" />
-        <Item text="Update photo" url="/en-us/api-reference/beta/api/profilephoto_update" />
-      </Item>
       <Item text="Channel" url="/en-us/api-reference/beta/resources/channel" SEOKeyword="channel API, Microsoft Graph API, channel API" SEODescription="">
         <Item text="List channels" url="/en-us/api-reference/beta/api/group_list_channels" SEOKeyword="List channels, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of channel objects." />
         <Item text="Create channel" url="/en-us/api-reference/beta/api/group_post_channels" SEOKeyword="Create Conversation, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new channel." />
@@ -5703,7 +5727,12 @@
       <Item text="Chat thread" url="/en-us/api-reference/beta/resources/chatthread" SEOKeyword="chatthread API, Microsoft Graph API, chatthread API" SEODescription="">
         <Item text="Create chat thread" url="/en-us/api-reference/beta/api/channel_post_chatthreads" SEOKeyword="Create chat thread, Microsoft Graph API, Microsoft Teams chat API" SEODescription="Use this API to create a new chat thread." />
       </Item>
-      <Item text="Chat message" url="/en-us/api-reference/beta/resources/chatmessage" SEOKeyword="chat message API, Microsoft Graph API, chat message API" SEODescription="">
+      <Item text="Team apps" url="/en-us/api-reference/beta/resources/teamsapp" >
+		<Item text="List apps" url="/en-us/api-reference/beta/api/teams_apps_list" />
+		<Item text="Add app" url="/en-us/api-reference/beta/api/teams_apps_add" />
+		<Item text="Delete app" url="/en-us/api-reference/beta/api/teams_apps_delete" />
+	  </Item>
+	  <Item text="Chat message" url="/en-us/api-reference/beta/resources/chatmessage" SEOKeyword="chat message API, Microsoft Graph API, chat message API" SEODescription="">
       </Item>
       <Item text="Calendar" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
         <Item text="List events" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="List events, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
@@ -5728,15 +5757,9 @@
         <Item text="List notebooks" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
         <Item text="Create notebook" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
       </Item>
-      <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
-        <Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
-          <Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
-          <Item text="Get single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
-        </Item>
-        <Item text="Multi-value extended property" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="" >
-          <Item text="Create multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
-          <Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
-        </Item>
+	   <Item text="Photo" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
+        <Item text="Get photo" url="/en-us/api-reference/beta/api/profilephoto_get" />
+        <Item text="Update photo" url="/en-us/api-reference/beta/api/profilephoto_update" />
       </Item>
     </Item>
     <Item text="To-do tasks" ProdTag="Outlook" url="/en-us/api-reference/beta/resources/outlooktask" >
