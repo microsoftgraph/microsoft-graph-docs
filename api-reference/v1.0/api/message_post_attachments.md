@@ -62,10 +62,11 @@ If successful, this method returns `201 Created` response code and [Attachment](
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkpsDRVK"],
   "name": "create_file_attachment_from_message"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/{message-id}/attachments
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
 Content-length: 142
 
@@ -109,11 +110,12 @@ Content-length: 202
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkpsDRVK"],
   "name": "create_item_attachment_from_message"
 }-->
 
 ```
-POST https://graph.microsoft.com/v1.0/me/messages/{message-id}/attachments
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
 Content-length: 200
 

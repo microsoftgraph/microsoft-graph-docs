@@ -36,11 +36,11 @@ If successful, this method returns `204 No Content` response code. It does not r
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["inbox"],
+  "sampleKeys": ["inbox", "AQAAAJ5dZp8="],
   "name": "delete_messagerule"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/{rule-id}
+DELETE https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZp8=
 
 ```
 ##### Response

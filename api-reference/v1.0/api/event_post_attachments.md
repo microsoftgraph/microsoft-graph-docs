@@ -66,10 +66,11 @@ If successful, this method returns `201 Created` response code and [attachment](
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
   "name": "create_file_attachment_from_event"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/{event-id}/attachments
+POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
 Content-length: 151
 
@@ -116,10 +117,11 @@ Here is an example which attaches an event with another event as an item attachm
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
   "name": "create_item_attachment_from_event"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/{event-id}/attachments
+POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
 Content-length: 600
 

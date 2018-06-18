@@ -37,11 +37,11 @@ If successful, this method returns a `200 OK` response code and [messageRule](..
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["inbox"],
+  "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
   "name": "get_messagerule"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/{rule-id}
+GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
 ```
 ##### Response
 Here is an example of the response. By default, the date-time properties in the response are in UTC. 
