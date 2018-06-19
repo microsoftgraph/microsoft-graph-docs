@@ -26,6 +26,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | beta | Added the [governanceRoleSetting](../api-reference/beta/resources/governancerolesetting.md) entity, and the following methods and actions:<br> [List](../api-reference/beta/api/governancerolesetting_list.md) <br> [Get](../api-reference/beta/api/governancerolesetting_get.md) <br> [Update](../api-reference/beta/api/governancerolesetting_update.md) |
 | Addition | beta | Added the following complex types: <br> [governancePermission](../api-reference/beta/resources/governancepermission.md) <br> [governanceRoleAssignmentRequestStatus](../api-reference/beta/resources/governanceroleassignmentrequeststatus.md) <br> [governanceRuleSetting](../api-reference/beta/resources/governancerulesetting.md) <br> [governanceSchedule](../api-reference/beta/resources/governanceschedule.md)|
 
+### Security APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta        | Added new enum types:<br/>[alertFeedback](../api-reference/beta/resources/alertfeedbackenumtype.md)<br/>[alertStatus](../api-reference/beta/resources/alertstatusenumtype.md)<br/>[alertType](../api-reference/beta/resources/alerttypeenumtype.md)<br/>[applicationPermissionsRequired](../api-reference/beta/resources/applicationpermissionsrequiredenumtype.md)<br/>[logonType](../api-reference/beta/resources/logontypeenumtype.md)<br/>[processIntegrityLevel](../api-reference/beta/resources/processintegritylevelenumtype.md)<br/>[securityNetworkProtocol](../api-reference/beta/resources/securitynetworkprotocolenumtype.md)<br/>[userAccountSecurityType](../api-reference/beta/resources/useraccountsecuritytypeenumtype.md)<br/>
 
 ## May 2018
 

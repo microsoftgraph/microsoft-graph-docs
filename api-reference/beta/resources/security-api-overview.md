@@ -29,6 +29,7 @@ Build and run investigation and remediation runbooks, automate security policy c
 
 * [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
 * [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
+* [Node.js (JavaScript) sample](https://github.com/microsoftgraph/nodejs-security-sample)
 
 Microsoft Graph security solutions will receive alerts from the following data providers:
 
