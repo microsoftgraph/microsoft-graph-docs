@@ -203,11 +203,15 @@ Content-type: application/json
 * The `parentReference` property on items will not include a value for **path**. This occurs because renaming a folder does not result in any descendants of the folder being returned from **delta**. **When using delta you should always track items by id**.
 * In OneDrive for Business and SharePoint, `delta` is only supported on the `root` folder, not on other folders within a drive.
 
-* Delta will not return the following DriveItem properties:
+* Delta will not return the following DriveItem properties when accessing OneDrive for Business accounts:
+    * `cTag`
+    * `lastModifiedBy`
 
-* **cTag**
-* **lastModifiedBy**
-* **size**
+    Delta also omits the following properties for deleted objects: 
+    * Delta will not return the `name` property on objects deleted from OneDrive for Business accounts.
+    * The `size` property will always have a value of 0 for items deleted from a OneDrive for Business account.
+    * Delta will not return the `cTag` property on objects deleted from consumer OneDrive accounts.
+    * Delta will not return the `size` property on objects deleted from consumer OneDrive accounts.
 
 ## Error responses
 
