@@ -101,7 +101,7 @@ Content-type: application/json
             "deleted": { }
         }
     ],
-    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/delta?token=1230919asd190410jlka"
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/delta(token=1230919asd190410jlka)"
 }
 ```
 
@@ -119,7 +119,7 @@ Here is an example request after the initial request.
 <!-- { "blockType": "request", "name": "get_item_delta_last" }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/root/delta?token=1230919asd190410jlka
+GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
 ```
 
 ### Response
@@ -146,7 +146,7 @@ Content-type: application/json
             "file": { }
         }
     ],
-    "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?token=1230919asd190410jlka"
+    "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?(token='1230919asd190410jlka')"
 }
 ```
 
