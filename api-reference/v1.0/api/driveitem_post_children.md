@@ -60,7 +60,7 @@ Content-Type: application/json
 
 ### Response
 
-If successful, this method returns the newly created folder as a [DriveItem][item-resource] resource.
+If successful, this method returns the newly created folder as a [DriveItem](../resources/driveitem.md) resource.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -100,11 +100,14 @@ Content-Type: application/json
 
 ## Error response
 
-Read the [Error Responses][error-response] topic for more info about
+Read the [Error Responses](../../../concepts/errors.md) topic for more info about
 how errors are returned.
-[error-response]: ../../../concepts/errors.md
-[item-resource]: ../resources/driveitem.md
-[folder-facet]: ../resources/folder.md
+
+[Error Responses](../../../concepts/errors.md)
+
+[DriveItem](../resources/driveitem.md)
+
+[Folder](../resources/folder.md)
 
 <!-- {
   "type": "#page.annotation",
