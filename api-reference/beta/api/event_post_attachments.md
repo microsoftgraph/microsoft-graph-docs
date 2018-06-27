@@ -15,18 +15,27 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Calendars.ReadWrite |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).
+
+<!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
+-->
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/attachments
 POST /users/{id | userPrincipalName}/events/{id}/attachments
-POST /groups/{id}/events/{id}/attachments
 
 POST /me/calendar/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
-POST /groups/{id}/calendar/events/{id}/attachments
 ```
+
+<!--
+POST /groups/{id}/events/{id}/attachments
+POST /groups/{id}/calendar/events/{id}/attachments
+-->
+
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
@@ -35,6 +44,7 @@ POST /me/calendargroup/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
@@ -150,9 +160,9 @@ Content-type: application/json
 Content-length: 162
 
 {
-    "@odata.context":"https://graph.microsoft.com/api/beta/$metadata#me/events('AAMkAGI1AAAt9AHjAAA=')/attachments/$entity",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/events('AAMkAGI1AAAt9AHjAAA=')/attachments/$entity",
     "@odata.type":"#microsoft.graph.itemAttachment",
-    "@odata.id":"https://graph.microsoft.com/api/beta/users('fdcbcf34-2505-4d07-be5b-0a55b699d157@41a5b830-45ac-4f1b-9bfc-baafa3b7db2e')/events('AAMkAGI1AAAt9AHjAAA=')/attachments('AAMkADNkN2Jp5JVnQIe9r0=')",
+    "@odata.id":"https://graph.microsoft.com/beta/users('fdcbcf34-2505-4d07-be5b-0a55b699d157@41a5b830-45ac-4f1b-9bfc-baafa3b7db2e')/events('AAMkAGI1AAAt9AHjAAA=')/attachments('AAMkADNkN2Jp5JVnQIe9r0=')",
     "id":"AAMkADNkNJp5JVnQIe9r0=",
     "lastModifiedDateTime":"2016-12-01T22:27:13Z",
     "name":"Holiday event",

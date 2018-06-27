@@ -4,7 +4,70 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## July 2018
+
+### Application and servicePrincipal API changes
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Change          | Beta        | The [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) and [servicePrincipal](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/serviceprincipal) APIs will be updated in preview (beta). The first set of changes will be applied on July 16, 2018. The changes include property renaming and restructuring. Most of the existing properties will not be available until the changes are completed. There will be new properties added. The changes will be released in preview (beta) prior to releasing to v1.0. |
+
+## June 2018
+
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | All | New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy that allow a client app to create, read, update and delete applications and service principals as described in the [permissions topic](permissions_reference.md#application-resource-permissions). |
+
+### Microsoft Teams APIs
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition         | Beta          | Added team [archive](../api-reference/beta/api/team_archive.md) and [unarchive](../api-reference/beta/api/team_unarchive.md) APIs.|
+|Addition         | Beta          | Added team [clone](../api-reference/beta/api/team_clone.md) operation. |
+|Addition         | Beta          | Added APIs to add and remove [apps](../api-reference/beta/resources/teamsApp.md) to teams. |
+|Change|Beta|Updated the path to the [team](../api-reference/beta/resources/team.md) entity.|
+|Change|Beta|Updated the path to the [channel](../api-reference/beta/resources/channel.md) entity.|
+
+
+### Privileged Identity Management APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [privilegedAccess](../api-reference/beta/resources/privilegedaccess.md) entity.|
+| Addition | beta | Added the [governanceResource](../api-reference/beta/resources/governanceresource.md) entity, and the following methods and actions: <br> [List](../api-reference/beta/api/governanceresource_list.md) <br> [Get](../api-reference/beta/api/governanceresource_get.md)<br>|
+| Addition | beta | Added the [governanceSubject](../api-reference/beta/resources/governancesubject.md) entity.|
+| Addition | beta | Added the [governanceRoleDefinition](../api-reference/beta/resources/governanceroledefinition.md) entity, and tollowing methods and actions:<br> [List](../api-reference/beta/api/governanceroledefinition_list.md) <br> [Get](../api-reference/beta/api/governanceroledefinition_get.md) |
+| Addition | beta | Added the [governanceRoleAssignment](../api-reference/beta/resources/governanceroleassignment.md) entity, and following methods and actions:<br> [List](../api-reference/beta/api/governanceroleassignment_list.md) <br> [Get](../api-reference/beta/api/governanceroleassignment_get.md) <br> [Export](../api-reference/beta/api/governanceroleassignment_export.md) |
+| Addition | beta | Added the [governanceRoleAssignmentRequest](../api-reference/beta/resources/governanceroleassignmentrequest.md) entity, and following methods and actions:<br> [List](../api-reference/beta/api/governanceroleassignmentrequest_list.md) <br> [Get](../api-reference/beta/api/governanceroleassignmentrequest_get.md) <br> [Create](../api-reference/beta/api/governanceroleassignmentrequest_post.md) <br> [Cancel](../api-reference/beta/api/governanceroleassignmentrequest_cancel.md) <br> [Update](../api-reference/beta/api/governanceroleassignmentrequest_update.md) |
+| Addition | beta | Added the [governanceRoleSetting](../api-reference/beta/resources/governancerolesetting.md) entity, and the following methods and actions:<br> [List](../api-reference/beta/api/governancerolesetting_list.md) <br> [Get](../api-reference/beta/api/governancerolesetting_get.md) <br> [Update](../api-reference/beta/api/governancerolesetting_update.md) |
+| Addition | beta | Added the following complex types: <br> [governancePermission](../api-reference/beta/resources/governancepermission.md) <br> [governanceRoleAssignmentRequestStatus](../api-reference/beta/resources/governanceroleassignmentrequeststatus.md) <br> [governanceRuleSetting](../api-reference/beta/resources/governancerulesetting.md) <br> [governanceSchedule](../api-reference/beta/resources/governanceschedule.md)|
+
+### Security APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta        | Added new enum types:<br/>[alertFeedback](../api-reference/beta/resources/alertfeedbackenumtype.md)<br/>[alertStatus](../api-reference/beta/resources/alertstatusenumtype.md)<br/>[alertType](../api-reference/beta/resources/alerttypeenumtype.md)<br/>[applicationPermissionsRequired](../api-reference/beta/resources/applicationpermissionsrequiredenumtype.md)<br/>[logonType](../api-reference/beta/resources/logontypeenumtype.md)<br/>[processIntegrityLevel](../api-reference/beta/resources/processintegritylevelenumtype.md)<br/>[securityNetworkProtocol](../api-reference/beta/resources/securitynetworkprotocolenumtype.md)<br/>[userAccountSecurityType](../api-reference/beta/resources/useraccountsecuritytypeenumtype.md)<br/>
+
 ## May 2018
+
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0        | Added [List deleted items owned by a user](../api-reference/v1.0/api/directory_deleteditems_user_owned.md) action to [directory (deleted items)](../api-reference/v1.0/resources/directory.md) resource | 
+| Addition | beta | Added the [getUserOwnedObjects](../api-reference/beta/api/directory_deleteditems_user_owned.md) function to the [directory](../api-reference/beta/resources/directory.md) resource to list the deleted groups owned by a given user. |
+
+### Education API
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Change          | v1.0 and beta | The scope **Members.Read.Hidden** is required to read or update the **Members** collection on an [educationClass](../api-reference/v1.0/resources/educationclass.md) entity using app-only tokens. |
+|Change           |Beta           |Updated the possible values of **educationSubmissionStatus** type in the status property of  [educationsubmission](../api-reference/beta/resources/educationsubmission.md).|
+|Change           |Beta           |Added the **educationAssignmentIndividualRecipient** complex type to the assignTo property of [educationAssignment](../api-reference/beta/resources/educationassignment.md).|
+|Change           |Beta           |Added the **unsubmittedBy**, **unsubmittedDate**, **returnedBy**, **returnedDate** property of [educationSubmission](../api-reference/beta/resources/educationsubmission.md).|
+|Addition         |Beta           |Added the [return](../api-reference/beta/api/educationSubmission_return.md) and  [unsubmit](../api-reference/beta/api/educationSubmission_unsubmit.md) action to [educationSubmission](../api-reference/beta/resources/educationsubmission.md).|
+|Change           |Beta           |Removed the release and  recall action on [educationSubmission](../api-reference/beta/resources/educationsubmission.md).|
 
 ### Groups
 
@@ -23,6 +86,55 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | Beta          | Added the [bookingService](../api-reference/beta/resources/bookingservice.md) entity and the following CRUD methods: <br> [List](../api-reference/beta/api/bookingbusiness_list_services.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_services.md) <br> [Get](../api-reference/beta/api/bookingservice_get.md) <br> [Update](../api-reference/beta/api/bookingservice_update.md) <br> [Delete](../api-reference/beta/api/bookingservice_delete.md).|
 | Addition        | Beta          | Added the [bookingStaffMember](../api-reference/beta/resources/bookingstaffmember.md) entity and the following CRUD methods: <br> [List](../api-reference/beta/api/bookingbusiness_list_staffmembers.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_staffmembers.md) <br> [Get](../api-reference/beta/api/bookingstaffmember_get.md) <br> [Update](../api-reference/beta/api/bookingstaffmember_update.md) <br> [Delete](../api-reference/beta/api/bookingstaffmember_delete.md).|
 | Addition        | Beta          | Added the following complex types: <br> [bookingNamedEntity](../api-reference/beta/resources/bookingnamedentity.md) <br> [bookingPerson](../api-reference/beta/resources/bookingperson.md) <br> [bookingReminder](../api-reference/beta/resources/bookingreminder.md) <br> [bookingWorkHours](../api-reference/beta/resources/bookingworkhours.md) <br> [bookingWorkTimeSlot](../api-reference/beta/resources/bookingworktimeslot.md).|
+
+### Microsoft Intune APIs
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|beta|Added new entities:<br/>[androidWorkProfileCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md)<br/>[easEmailProfileConfigurationBase](../api-reference/beta/resources/intune_deviceconfig_easemailprofileconfigurationbase.md)<br/>[mobileAppIntentAndState](../api-reference/beta/resources/intune_troubleshooting_mobileappintentandstate.md)<br/>[mobileAppTroubleshootingEvent](../api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingevent.md)<br/>[unsupportedDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_unsupporteddeviceconfiguration.md)<br/>[windowsKioskConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowskioskconfiguration.md)<br/>|
+|Addition|beta|Added new complex types:<br/>[managedDeviceCleanupSettings](../api-reference/beta/resources/intune_devices_manageddevicecleanupsettings.md)<br/>[mobileAppIntentAndStateDetail](../api-reference/beta/resources/intune_troubleshooting_mobileappintentandstatedetail.md)<br/>[mobileAppTroubleshootingAppPolicyCreationHistory](../api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingapppolicycreationhistory.md)<br/>[mobileAppTroubleshootingAppStateHistory](../api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingappstatehistory.md)<br/>[mobileAppTroubleshootingAppTargetHistory](../api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingapptargethistory.md)<br/>[mobileAppTroubleshootingAppUpdateHistory](../api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingappupdatehistory.md)<br/>[mobileAppTroubleshootingDeviceCheckinHistory](../api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingdevicecheckinhistory.md)<br/>[mobileAppTroubleshootingHistoryItem](../api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootinghistoryitem.md)<br/>[unsupportedDeviceConfigurationDetail](../api-reference/beta/resources/intune_deviceconfig_unsupporteddeviceconfigurationdetail.md)<br/>[windowsAutoPilotEnrollmentSettings](../api-reference/beta/resources/intune_enrollment_windowsautopilotenrollmentsettings.md)<br/>[windowsKioskActiveDirectoryGroup](../api-reference/beta/resources/intune_deviceconfig_windowskioskactivedirectorygroup.md)<br/>[windowsKioskAppBase](../api-reference/beta/resources/intune_deviceconfig_windowskioskappbase.md)<br/>[windowsKioskAppConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowskioskappconfiguration.md)<br/>[windowsKioskAutologon](../api-reference/beta/resources/intune_deviceconfig_windowskioskautologon.md)<br/>[windowsKioskAzureADGroup](../api-reference/beta/resources/intune_deviceconfig_windowskioskazureadgroup.md)<br/>[windowsKioskAzureADUser](../api-reference/beta/resources/intune_deviceconfig_windowskioskazureaduser.md)<br/>[windowsKioskDesktopApp](../api-reference/beta/resources/intune_deviceconfig_windowskioskdesktopapp.md)<br/>[windowsKioskLocalGroup](../api-reference/beta/resources/intune_deviceconfig_windowskiosklocalgroup.md)<br/>[windowsKioskLocalUser](../api-reference/beta/resources/intune_deviceconfig_windowskiosklocaluser.md)<br/>[windowsKioskMultipleApps](../api-reference/beta/resources/intune_deviceconfig_windowskioskmultipleapps.md)<br/>[windowsKioskProfile](../api-reference/beta/resources/intune_deviceconfig_windowskioskprofile.md)<br/>[windowsKioskSingleUWPApp](../api-reference/beta/resources/intune_deviceconfig_windowskiosksingleuwpapp.md)<br/>[windowsKioskUser](../api-reference/beta/resources/intune_deviceconfig_windowskioskuser.md)<br/>[windowsKioskUWPApp](../api-reference/beta/resources/intune_deviceconfig_windowskioskuwpapp.md)<br/>[windowsKioskVisitor](../api-reference/beta/resources/intune_deviceconfig_windowskioskvisitor.md)<br/>|
+|Addition|beta|Added new enum types:<br/>[defenderScheduleScanDay](../api-reference/beta/resources/intune_deviceconfig_defenderschedulescanday.md)<br/>[defenderSubmitSamplesConsentType](../api-reference/beta/resources/intune_deviceconfig_defendersubmitsamplesconsenttype.md)<br/>[domainNameSource](../api-reference/beta/resources/intune_deviceconfig_domainnamesource.md)<br/>[localSecurityOptionsSmartCardRemovalBehaviorType](../api-reference/beta/resources/intune_deviceconfig_localsecurityoptionssmartcardremovalbehaviortype.md)<br/>[mobileAppActionType](../api-reference/beta/resources/intune_troubleshooting_mobileappactiontype.md)<br/>[mobileAppIntent](../api-reference/beta/resources/intune_troubleshooting_mobileappintent.md)<br/>[roleAssignmentScopeType](../api-reference/beta/resources/intune_rbac_roleassignmentscopetype.md)<br/>[usernameSource](../api-reference/beta/resources/intune_deviceconfig_usernamesource.md)<br/>[windowsDeviceUsageType](../api-reference/beta/resources/intune_enrollment_windowsdeviceusagetype.md)<br/>|
+|Addition|beta|Added the [setDeviceName](../api-reference/beta/api/intune_devices_manageddevice_setdevicename.md)<br/>action on [managedDevice](../api-reference/beta/resources/intune_devices_manageddevice.md) |
+|Deletion|beta|Removed the following entities:<br/>**depEnrollmentProfile**<br/>**enrollmentProfile**<br/>**importedAppleDeviceIdentity**<br/>**importedAppleDeviceIdentityResult**<br/>|
+|Deletion|beta|Removed the following complex types:<br/>**managementCertificateWithThumbprint**<br/>|
+|Deletion|beta|Removed the following enum types:<br/>**depTokenType**<br/>**discoverySource**<br/>**iTunesPairingMode**<br/>|
+|Deletion|beta|Removed the importAppleDeviceIdentityList action on [importedAppleDeviceIdentity](../api-reference/beta/resources/intune_corpenrollment_importedappledeviceidentity.md) collection |
+|Deletion|beta|Removed the [updateDeviceProfileAssignment](../api-reference/beta/api/intune_corpenrollment_enrollmentprofile_updatedeviceprofileassignment.md) action on [enrollmentProfile](../api-reference/beta/resources/intune_corpenrollment_enrollmentprofile.md) |
+|Deletion|beta|Removed the setDefaultProfile action on [enrollmentProfile](../api-reference/beta/resources/intune_corpenrollment_enrollmentprofile.md) |
+|Deletion|beta|Removed the shareForSchoolDataSyncService action on [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) |
+|Deletion|beta|Removed the unshareForSchoolDataSyncService action on [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) |
+|Deletion|beta|Removed the exportMobileConfig](../api-reference/beta/api/intune_corpenrollment_enrollmentprofile_exportmobileconfig.md) function on [enrollmentProfile](../api-reference/beta/resources/intune_corpenrollment_enrollmentprofile.md) |
+|Addition|beta|Added the **userDomainNameSource** and **customDomainName** properties to the [androidEasEmailProfileConfiguration](../api-reference/beta/resources/intune_deviceconfig_androideasemailprofileconfiguration.md) entity|
+|Addition|beta|Added the **workProfileBlockCamera** and **workProfileBlockCrossProfileContactsSearch** properties to the [androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md) entity|
+|Addition|beta|Added the **workProfileBlockCamera** and **workProfileBlockCrossProfileContactsSearch** properties to the [androidWorkProfileGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md) entity|
+|Addition|beta|Added the **thirdPartyKeyboardsBlocked** and **filterOpenInToOnlyManagedApps** properties to the [defaultManagedAppProtection](../api-reference/beta/resources/intune_mam_defaultmanagedappprotection.md) entity|
+|Addition|beta|Added the **conflictCount** property to the [deviceComplianceUserOverview](../api-reference/beta/resources/intune_deviceconfig_devicecomplianceuseroverview.md) entity|
+|Addition|beta|Added the **conflictCount** property to the [deviceConfigurationUserOverview](../api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuseroverview.md) entity|
+|Addition|beta|Added the **managedDeviceCleanupSettings** property to the [deviceManagement](../api-reference/beta/resources/intune_shared_devicemanagement.md) entity|
+|Deletion|beta|Removed the **usernameSource** property from the [iosEasEmailProfileConfiguration](../api-reference/beta/resources/intune_deviceconfig_ioseasemailprofileconfiguration.md) entity|
+|Addition|beta|Added the **thirdPartyKeyboardsBlocked** and **filterOpenInToOnlyManagedApps** properties to the [iosManagedAppProtection](../api-reference/beta/resources/intune_mam_iosmanagedappprotection.md) entity|
+|Addition|beta|Added the **ignoreVersionDetection** property to the [macOSLobApp](../api-reference/beta/resources/intune_apps_macoslobapp.md) entity|
+|Addition|beta|Added the **pinRequiredOnLaunchInsteadOfBiometric** and **pinRequiredInsteadOfBiometricTimeout** properties to the [managedAppProtection](../api-reference/beta/resources/intune_mam_managedappprotection.md) entity|
+|Addition|beta|Added the **autopilotEnrolled**, **requireUserEnrollmentApproval**, **iccid** and **udid** properties to the [managedDevice](../api-reference/beta/resources/intune_devices_manageddevice.md) entity|
+|Deletion|beta|Removed the **isAutopilotEnrolled** property from the [managedDevice](../api-reference/beta/resources/intune_devices_manageddevice.md) entity|
+|Addition|beta|Added the **notApplicablePlatformCount** and **conflictCount** properties to the [managedDeviceMobileAppConfigurationDeviceSummary](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md) entity|
+|Addition|beta|Added the **conflictCount** property to the [managedDeviceMobileAppConfigurationUserSummary](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationusersummary.md) entity|
+|Addition|beta|Added the **scopeType** property to the [roleAssignment](../api-reference/beta/resources/intune_rbac_roleassignment.md) entity|
+|Deletion|beta|Removed the **usernameSource** property from the [windows10EasEmailProfileConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10easemailprofileconfiguration.md) entity|
+|Addition|beta|Added the **localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees**, **localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers**, **localSecurityOptionsDisableServerDigitallySignCommunicationsAlways**, **localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees**, **localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares**, **localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts**, **localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares**, **localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange** and **localSecurityOptionsSmartCardRemovalBehavior** properties to the [windows10EndpointProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md) entity|
+|Addition|beta|Added the **showInstallationProgress**, **blockDeviceSetupRetryByUser**, **allowDeviceResetOnInstallFailure**, **allowLogCollectionOnInstallFailure**, **customErrorMessage**, **installProgressTimeoutInMinutes** and **allowDeviceUseOnInstallFailure** properties to the [windows10EnrollmentCompletionPageConfiguration](../api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration.md) entity|
+|Deletion|beta|Removed the **title**, **bodyText**, **moreInfoUrl** and **moreInfoText** properties from the [windows10EnrollmentCompletionPageConfiguration](../api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration.md) entity|
+|Addition|beta|Added the **defenderBlockOnAccessProtection**, **defenderScheduleScanDay** and **defenderSubmitSamplesConsentType** properties to the [windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration.md) entity|
+|Addition|beta|Added the **language** and **enrollmentSettings** properties to the [windowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile.md) entity|
+|Addition|beta|Added the **useDeviceContext** property to the [windowsMobileMSI](../api-reference/beta/resources/intune_apps_windowsmobilemsi.md) entity|
+|Deletion|beta|Removed the **usernameSource** property from the [windowsPhoneEASEmailProfileConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsphoneeasemailprofileconfiguration.md) entity|
+|Deletion|beta|Removed the **localActions** navigation property from the [androidCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy.md) entity|
+|Deletion|beta|Removed the **enrollmentProfiles** and **importedAppleDeviceIdentities** navigation properties from the [deviceManagement](../api-reference/beta/resources/intune_shared_devicemanagement.md) entity|
+|Addition|beta|Added the **mobileAppIntentAndStates** and **mobileAppTroubleshootingEvents** navigation properties to the [user](../api-reference/beta/resources/intune_shared_user.md) entity|
+|Addition|beta|Added the **deviceUsageType** and **skipKeyboardSelectionPage** properties to the [outOfBoxExperienceSettings](../api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings.md) complex type|
+|Deletion|beta|Removed the **paloAltoGlobalProtect** member from the [androidForWorkVpnConnectionType](../api-reference/beta/resources/intune_deviceconfig_androidforworkvpnconnectiontype.md) enum type|
+|Addition|beta|Added the **samAccountName** and **primarySmtpAddress** members to the [androidUsernameSource](../api-reference/beta/resources/intune_deviceconfig_androidusernamesource.md) enum type|
+|Deletion|beta|Removed the **paloAltoGlobalProtect** member from the [androidVpnConnectionType](../api-reference/beta/resources/intune_deviceconfig_androidvpnconnectiontype.md) enum type|
+|Addition|beta|Added the **paloAltoGlobalProtect** member to the [windows10VpnConnectionType](../api-reference/beta/resources/intune_deviceconfig_windows10vpnconnectiontype.md) enum type|
 
 ### Insights API
 
@@ -159,6 +271,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|Beta|Added new [teamFunSettings](../api-reference/beta/resources/teamFunSettings.md) entity.|
 |Addition|Beta|Added new [delete channel](../api-reference/beta/api/channel_delete.md) operation.|
 |Addition|Beta|Added new [patch channel](../api-reference/beta/api/channel_patch.md) operation.|
+|Addition|Beta|Added new webUrl property to [team](../api-reference/beta/resources/team.md) resource.|
 |Change|Beta|Updated the path to the [channel](../api-reference/beta/resources/channel.md) entity.|
 
 

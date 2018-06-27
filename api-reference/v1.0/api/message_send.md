@@ -1,9 +1,10 @@
 # message: send
 
-Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or 
+Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or
 a forward draft. The message is then saved in the Sent Items folder.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -13,15 +14,20 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Mail.Send |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/messages/{id}/send
 POST /users/{id | userPrincipalName}/messages/{id}/send
 ```
+
 ## Request headers
+
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
+| Content-Length | number | 0. Required. |
 
 ## Request body
 
@@ -30,13 +36,17 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
+
 The following example shows how to call this API.
+
 ##### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "message_send"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 ```
@@ -48,6 +58,7 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```

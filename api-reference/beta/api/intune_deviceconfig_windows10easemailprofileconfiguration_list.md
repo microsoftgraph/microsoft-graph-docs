@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 789
+Content-Length: 946
 
 {
   "value": [
@@ -60,6 +60,10 @@ Content-Length: 789
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "usernameSource": "primarySmtpAddress",
+      "usernameAADSource": "primarySmtpAddress",
+      "userDomainNameSource": "netBiosDomainName",
+      "customDomainName": "Custom Domain Name value",
       "accountName": "Account Name value",
       "syncCalendar": true,
       "syncContacts": true,
@@ -68,8 +72,7 @@ Content-Length: 789
       "emailAddressSource": "primarySmtpAddress",
       "emailSyncSchedule": "asMessagesArrive",
       "hostName": "Host Name value",
-      "requireSsl": true,
-      "usernameSource": "primarySmtpAddress"
+      "requireSsl": true
     }
   ]
 }

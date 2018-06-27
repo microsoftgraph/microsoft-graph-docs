@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/team/channels/{id}
+GET /teams/{id}/channels/{id}
 
 ```
 ## Optional query parameters
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_channel"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/team/channels/{id}
+GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

@@ -8,7 +8,7 @@ Use this API to create a new [group](../resources/group.md) as specified in the 
 * Dynamic group
 * Security group
 
-> **Note**: Although Microsoft Teams is built on Office 365 Groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
+> **Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team_put_teams.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).

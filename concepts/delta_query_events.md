@@ -364,6 +364,13 @@ Content-type: application/json
     "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
     "value":[
         {
+            "@odata.type": "#microsoft.graph.event",
+            "id": "AAMkADk0MGFkODE3LWE4MmYtNDRhOS04OGQLkRkXbBznTvAADb6ytyAAA=",
+            "@removed": {
+                "reason": "deleted"
+            }
+        },
+        {
             "@odata.type":"#microsoft.graph.event",
             "@odata.etag":"W/\"EZ9r3czxY0m2jz8c45czkwAALZu97w==\"",
             "subject":"Attend service",

@@ -41,7 +41,7 @@ The following are examples of a few scenarios enabled by the assignments API:
 - [Create a student dashboard to show which assignments are due by when](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationclass_list_assignments)
 
 
-## Enable school admins to manage identity and roster sync using School Data Sync Management (preview)
+### Enable school admins to manage identity and roster sync using School Data Sync Management (preview)
 
 [School Data Sync](https://sds.microsoft.com/) helps to automate the process of importing and synchronizing student identity and roster data from student information systems with Azure Active Directory (Azure AD) and Office 365. When the information is synchronized, you can use the roster APIs to read the roster information into the applications. If you're a system integrator setting up integration of a school's Student Information System with School Data Sync, you can use the [SDS management APIs](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationsynchronizationprofile) in Microsoft Graph to set up synchronization from either a CSV file or a supported SIS API connector.
 

@@ -10,7 +10,7 @@ Contains stateful information about the application.
 |:---------------|:--------|:----------|
 |deploymentPackageUrl|String|URI to deployment package and/or type of deployment package. (for example, appx, MSI, and so on).|
 |name|String|Application name.|
-|permissionsRequired|String|The level of permissions the application requires to function. Possible values are: `unknown`, `anonymous`, `guest`, `user`, `administrator`, `system`.|
+|permissionsRequired|[applicationPermissionsRequired](applicationpermissionsrequiredenumtype.md) enum|The level of permissions the application requires to function. Possible values are: `unknown`, `anonymous`, `guest`, `user`, `administrator`, `system`.|
 |publisher|String|The application publisher name. This helps distinguish between applications with the same AppX name.|
 |riskScore|String|Provider-generated/calculated risk score of the application.|
 
@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
 {
   "deploymentPackageUrl": "String",
   "name": "String",
-  "permissionsRequired": "String",
+  "permissionsRequired": "@odata.type: microsoft.graph.applicationPermissionsRequired",
   "publisher": "String",
   "riskScore": "String"
 }

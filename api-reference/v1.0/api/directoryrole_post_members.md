@@ -38,7 +38,7 @@ If successful, this method returns `204 No Content` response code.
   "name": "create_directoryobject_from_directoryrole"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoles/{id}/members
+POST https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/$ref
 Content-type: application/json
 
 {

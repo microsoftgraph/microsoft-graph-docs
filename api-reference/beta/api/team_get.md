@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/team
+GET /teams/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
@@ -39,7 +39,7 @@ The following is an example of the request.
   "name": "get_team"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/team
+GET https://graph.microsoft.com/beta/teams/{id}
 ```
 #### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

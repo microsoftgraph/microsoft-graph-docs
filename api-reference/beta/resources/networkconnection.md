@@ -10,7 +10,7 @@ Contains stateful information about the network connection related to the alert.
 |:---------------|:--------|:----------|
 |destinationAddress|String|Destination IP address (of the network connection).|
 |destinationPort|String|Destination port (of the network connection).|
-|protocol|String|Network protocol. Possible values are: `unknown`, `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`.|
+|protocol|[securityNetworkProtocol](securitynetworkprotocolenumtype.md) enum|Network protocol. Possible values are: `unknown`, `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`.|
 |sourceAddress|String|Source (i.e. origin) IP address (of the network connection).|
 |sourcePort|String|Source (i.e. origin) IP port (of the network connection).|
 |uri|String|Network connection URI string.|
@@ -31,7 +31,7 @@ The following is a JSON representation of the resource.
 {
   "destinationAddress": "String",
   "destinationPort": "String",
-  "protocol": "String",
+  "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
   "sourceAddress": "String",
   "sourcePort": "String",
   "uri": "String"

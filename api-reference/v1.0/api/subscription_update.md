@@ -2,7 +2,7 @@
 
 Renew a subscription by extending its expiry time.
 
-Subscriptions to resources expire at dates proscribed by the individual resource types.  In order not to miss notifications, subscriptions should be renewed well in advance of their expiry date.  See [subscription](../resources/subscription.md) for individual expiry dates.
+Subscriptions expire after a length of time that varies by resource type. In order to avoid missing notifications, an app should renew its subscriptions well in advance of their expiry date. See [subscription](../resources/subscription.md) for maximum length of a subscription for each resource type.
 
 ## Permissions
 
@@ -17,15 +17,18 @@ The following table lists the suggested permission needed for each resource. To 
 | Groups                      | Group.Read.All      |
 | Users                       | User.Read.All       |
 | Drive  (User's OneDrive)    | Files.ReadWrite     |
-| Drives (Sharepoint shared content and drives) | Files.ReadWrite.All |
+| Drives (SharePoint shared content and drives) | Files.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH /subscriptions/{id}
 ```
 
 ## Request headers
+
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
@@ -33,13 +36,17 @@ PATCH /subscriptions/{id}
 ## Response
 
 If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.
+
 ## Example
+
 ##### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_subscription"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
 Content-type: application/json
@@ -50,12 +57,14 @@ Content-type: application/json
 ```
 
 ##### Response
+
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "microsoft.graph.subscription"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -72,7 +81,6 @@ Content-length: 252
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
-
 
 <!-- {
   "type": "#page.annotation",

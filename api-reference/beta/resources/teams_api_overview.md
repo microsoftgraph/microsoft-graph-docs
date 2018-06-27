@@ -10,12 +10,42 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 | Create and delete teams               | [team](team.md) | [Create team](../api/team_put_teams.md) |
 | Add members and owners                | [group](../resources/group.md) | [Add member](../api/group_post_members.md), [Remove member](../api/group_delete_members.md) |
 | Add and remove channels               | [channel](../resources/channel.md) | [Create channel](../api/group_post_channels.md) |
+| Add apps to team                      | [teamsApp](../resources/teamsApp.md) | [Add apps](../api/teams_apps_add.md) |
 | Post a message                        | [chatMessage](../resources/chatmessage.md) | [Post a message](../api/channel_post_chatthreads.md) |
 | Change team settings                  | [teamMemberSettings](../resources/teammembersettings.md), [teamGuestSettings](../resources/teamGuestSettings.md), [teamMessagingSettings](../resources/teammessagingsettings.md), [teamFunSettings](../resources/teamGuestSettings.md) |                                                              |
+| Archive the team                      | [team](team.md) | [Archive team](../api/team_archive.md) | 
 | Get the photo of a member of a team   | [profilePhoto](../../v1.0/api/profilephoto_get.md) |                                                              |
 | List notebooks for a Team             | [Notebook](../../v1.0/resources/notebook.md) | [List notebooks in a group](../../v1.0/api/onenote_list_notebooks.md) |
 
-##Teams and groups
+## Membership changes in Microsoft Teams
+
+When adding members to or removing members from a team using the Microsoft Graph v1.0 endpoint,
+there is a delay before the membership changes are reflected in the Microsoft Teams application/website.
+If a current team member or owner is signed in to the Microsoft Teams application/website,
+the change will be reflected within an hour.
+If none of those users are signed in to the Microsoft Teams application/website
+the change will not be reflected until an hour after one of them signs in.
+
+The beta endpoint is faster -- under a minute in most cases,
+regardless of whether the user is logged in or not.
+Here are the beta APIs to use:
+
+| Use case      | Verb      | URL |
+| ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Add member](../api/group_post_members.md)	| POST	    | https://graph.microsoft.com/beta/groups/{id}/members/$ref  |
+| [Remove member](../api/group_delete_members.md)	| DELETE	| https://graph.microsoft.com/beta/groups/{id}/members/{userId}/$ref |
+| [Add owner](../api/group_post_owners.md)     | POST	    | https://graph.microsoft.com/beta/groups/{id}/owners/$ref |
+| [Remove owner](../api/group_delete_owners.md)	| DELETE	| https://graph.microsoft.com/beta/groups/{id}/owners/{userId}/$ref |
+| [Update team](../api/team_update.md)	| PATCH     | https://graph.microsoft.com/beta/teams/{id} |
+
+When adding owners, regardless of which endpoint use, you will generally want to add that user as a member as well. 
+If you have an owner that's not also a member, different apps and APIs will handle that differently. 
+For instance, Microsoft Teams will show teams that the user is either a member or an owner of, 
+while the Teams PowerShell cmdlets and the /me/joinedTeams API will only show teams the user is a member of. 
+To avoid confusion, consider having all owners also be on the members list.
+
+
+## Teams and groups
 
 In Microsoft Graph, Microsoft Teams is represented by a [group](../resources/group.md) resource. Both Microsoft Teams and Office 365 groups address 
 the various needs of group collaboration. Almost all the group-based features apply to Microsoft Teams and 
@@ -23,7 +53,7 @@ Office 365 groups, such as group calendar, files, notes, photo, plans, and so on
 between members. Team members communicate by persistent chat in the context of a specific team. Office 365 group members communicate by group conversations, 
 which are email conversations that occur in the context of a group in Outlook.
 
-The following are the differences at the API level: 
+The following are the differences at the API level between teams and groups: 
 
 - Persistent chat is available only to Microsoft Teams. This feature is hierarchically represented by the 
 [channel](../resources/channel.md), [chatThread](../resources/chatthread.md), and [chatMessage](../resources/chatmessage.md) resources.

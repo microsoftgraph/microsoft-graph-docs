@@ -27,10 +27,13 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune_onboarding_dev
 |createdDateTime|DateTimeOffset|Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |version|Int32|Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|title|String|Not yet documented|
-|bodyText|String|Not yet documented|
-|moreInfoUrl|String|Not yet documented|
-|moreInfoText|String|Not yet documented|
+|showInstallationProgress|Boolean|Show or hide installation progress to user|
+|blockDeviceSetupRetryByUser|Boolean|Allow the user to retry the setup on installation failure|
+|allowDeviceResetOnInstallFailure|Boolean|Allow or block device reset on installation failure|
+|allowLogCollectionOnInstallFailure|Boolean|Allow or block log collection on installation failure|
+|customErrorMessage|String|Set custom error message to show upon installation failure|
+|installProgressTimeoutInMinutes|Int32|Set installation progress timeout in minutes|
+|allowDeviceUseOnInstallFailure|Boolean|Allow the user to continue using the device on installation failure|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -55,10 +58,13 @@ Here is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "version": 1024,
-  "title": "String",
-  "bodyText": "String",
-  "moreInfoUrl": "String",
-  "moreInfoText": "String"
+  "showInstallationProgress": true,
+  "blockDeviceSetupRetryByUser": true,
+  "allowDeviceResetOnInstallFailure": true,
+  "allowLogCollectionOnInstallFailure": true,
+  "customErrorMessage": "String",
+  "installProgressTimeoutInMinutes": 1024,
+  "allowDeviceUseOnInstallFailure": true
 }
 ```
 

@@ -83,6 +83,9 @@ Here is an example of the response. Note: The response object shown here may be 
                 "webUrl" : "webUrl-value", 
                 "id": "id-value", 
                 "type: "type-value" 
+            }
+        }
+    ]
 }
 ```
 

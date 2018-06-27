@@ -16,6 +16,7 @@ Inherits from [ipRange](../resources/intune_shared_iprange.md)
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
