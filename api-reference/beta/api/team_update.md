@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /groups/{id}/team
+PATCH /teams/{id}
 ```
 ## Request headers
 | Header       | Value |
@@ -42,7 +42,7 @@ The following is an example of the request.
   "name": "update_team"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/groups/{id}/team
+PATCH https://graph.microsoft.com/beta/teams/{id}
 Content-type: application/json
 Content-length: 211
 

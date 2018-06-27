@@ -258,6 +258,10 @@ You must first create the resource instance and then do a `PATCH` to that instan
 
 Directory resources, such as **device**, **group** and **user**, currently limit the total number of schema extension property values that can be set on a resource instance, to 100.
 
+### Filtering on schema extension properties not supported on all entity types
+
+Filtering on schema extension properties (using the `$filter` expresssion) is not supported for Outlook entity types - **contact**, **event**, **message**, or **post**.
+
 ## JSON Batching
 
 ### No nested batch

@@ -5,8 +5,8 @@ Represents the assignment of a user or group to a role.
 
 Privileged Identity Management (PIM) supports two types of assignments:
 
-1. Active assignment - Represents the direct access that users and groups have to resources.
-2. Eligible assignment - Represents an intermediate stage of privileged access to resources, between no access and direct access. Administrators can temporarily set users/groups to `eligible assignment` in advance. Whenever the access is needed for users/group members, `activation` on the `eligible assignment` is needed to gain the instant access to the resource for several hours. After `activation`, an `active assignment` will be created for the users/group members to indicate the activated status.
+1. Active assignment - Represents the direct access to resources.
+2. Eligible assignment - Represents an intermediate stage of privileged access to resources, between no access and direct access. Administrators can temporarily assign users/groups to `eligible assignment` in advance. Whenever the access is needed for users/group members, `activation` on the `eligible assignment` is needed to gain the instant access to the resource for several hours. After activation, an `active assignment` will be created for the users/group members to indicate the activated status.
 
 ## Methods
 

@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/team/channels
+POST /teams/{id}/channels
 ```
 ## Request headers
 | Header       | Value |
@@ -42,7 +42,7 @@ Here is an example of the request.
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/team/channels
+POST https://graph.microsoft.com/beta/teams/{id}/channels
 Content-type: application/json
 
 {

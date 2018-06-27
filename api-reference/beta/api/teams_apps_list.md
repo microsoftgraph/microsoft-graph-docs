@@ -1,8 +1,9 @@
-# Delete channel
+# List apps in team
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Delete the channel.
+Retrieve the list of apps installed in the specified [team](../resources/team.md).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -15,8 +16,11 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /teams/{id}/channels/{id}
+GET /teams/{id}/apps
 ```
+## Optional query parameters
+None.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -26,37 +30,47 @@ DELETE /teams/{id}/channels/{id}
 Do not supply a request body for this method.
 
 ## Response
+If successful, this method returns a `200 OK` response code and collection of [teamsApp](../resources/teamsApp.md) objects in the response body.
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 ## Example
-##### Request
+#### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_channel"
+  "name": "get_owners"
 }-->
-
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
+GET https://graph.microsoft.com/beta/teams/{id}/apps
 ```
 
 #### Response
-
-The following is an example of the response. 
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
 } -->
-
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 55
+
+{
+  "value": [
+    {
+      "id": "id-value"
+    }
+  ]
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete channel",
+  "description": "List owners",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

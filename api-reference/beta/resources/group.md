@@ -17,7 +17,7 @@ This resource supports:
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |**Group management**| | |
-|[Create group](../api/group_post_groups.md) | [group](group.md) |Create a new group as specified. It can be an Office 365 group, dynamic group, or security group.|
+|[Create group](../api/group_post_groups.md) | [group](group.md) |Create a new group as specified. It can be an Office 365 group, dynamic group, security group, or team.|
 |[Get group](../api/group_get.md) | [group](group.md) |Read properties and relationships of group object.|
 |[Update group](../api/group_update.md) | None |Update the properties of a group object. |
 |[Delete group](../api/group_delete.md) | None |Delete group object. |
