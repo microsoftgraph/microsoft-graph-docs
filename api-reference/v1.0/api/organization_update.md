@@ -52,7 +52,7 @@ If successful, this method returns a `204 No Content` response code.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization
+PATCH https://graph.microsoft.com/v1.0/organization/<tenant-id>
 Content-type: application/json
 Content-length: 411
 
