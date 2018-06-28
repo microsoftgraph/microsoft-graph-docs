@@ -28,7 +28,6 @@ Inherits from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment
 |lastModifiedDateTime|DateTimeOffset|Profile last modified time Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune_enrollment_outofboxexperiencesettings.md)|Out of box experience setting Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune_enrollment_windowsenrollmentstatusscreensettings.md)|Enrollment status screen setting Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
-|enrollmentSettings|[windowsAutoPilotEnrollmentSettings](../resources/intune_enrollment_windowsautopilotenrollmentsettings.md)|Enrollment settings delivered to auto pilot devices Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -70,13 +69,12 @@ Here is a JSON representation of the resource.
     "customErrorMessage": "String",
     "installProgressTimeoutInMinutes": 1024,
     "allowDeviceUseOnInstallFailure": true
-  },
-  "enrollmentSettings": {
-    "@odata.type": "microsoft.graph.windowsAutoPilotEnrollmentSettings",
-    "blockWindowsConsumerFeatures": true
   }
 }
 ```
+
+
+
 
 
 

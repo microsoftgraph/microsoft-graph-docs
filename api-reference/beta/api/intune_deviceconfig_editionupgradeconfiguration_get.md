@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 524
+Content-Length: 554
 
 {
   "value": {
@@ -65,10 +65,13 @@ Content-Length: 524
     "licenseType": "licenseFile",
     "targetEdition": "windows10EnterpriseN",
     "license": "License value",
-    "productKey": "Product Key value"
+    "productKey": "Product Key value",
   }
 }
 ```
+
+
+
 
 
 

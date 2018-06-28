@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3783
+Content-Length: 4044
 
 {
   "value": [
@@ -73,6 +73,14 @@ Content-Length: 3783
       "contentFilterSettings": {
         "@odata.type": "microsoft.graph.iosWebContentFilterSpecificWebsitesAccess",
         "specificWebsitesOnly": [
+          {
+            "@odata.type": "microsoft.graph.iosBookmark",
+            "url": "Url value",
+            "bookmarkFolder": "Bookmark Folder value",
+            "displayName": "Display Name value"
+          }
+        ],
+        "websiteList": [
           {
             "@odata.type": "microsoft.graph.iosBookmark",
             "url": "Url value",
@@ -162,6 +170,9 @@ Content-Length: 3783
   ]
 }
 ```
+
+
+
 
 
 

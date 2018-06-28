@@ -73,7 +73,6 @@ The following table shows the properties that are required when you create the w
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune_devices_devicemanagementexchangeaccessstate.md)|The Access State of the device in Exchange. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md). Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune_devices_devicemanagementexchangeaccessstatereason.md)|The reason for the device's access state in Exchange. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md). Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
-|remoteAssistanceSessionErrorString|String|An error string that identifies issues when creating Remote Assistance session objects. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |remoteAssistanceSessionErrorDetails|String|An error string that identifies issues when creating Remote Assistance session objects. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |isEncrypted|Boolean|Device encryption status Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |userPrincipalName|String|Device user principal name Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
@@ -113,7 +112,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices
 Content-type: application/json
-Content-length: 6860
+Content-length: 6771
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -191,7 +190,6 @@ Content-length: 6860
   "exchangeAccessState": "unknown",
   "exchangeAccessStateReason": "unknown",
   "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
-  "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
   "remoteAssistanceSessionErrorDetails": "Remote Assistance Session Error Details value",
   "isEncrypted": true,
   "userPrincipalName": "User Principal Name value",
@@ -275,7 +273,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 6909
+Content-Length: 6820
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -354,7 +352,6 @@ Content-Length: 6909
   "exchangeAccessState": "unknown",
   "exchangeAccessStateReason": "unknown",
   "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
-  "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
   "remoteAssistanceSessionErrorDetails": "Remote Assistance Session Error Details value",
   "isEncrypted": true,
   "userPrincipalName": "User Principal Name value",
@@ -432,6 +429,9 @@ Content-Length: 6909
   "udid": "Udid value"
 }
 ```
+
+
+
 
 
 

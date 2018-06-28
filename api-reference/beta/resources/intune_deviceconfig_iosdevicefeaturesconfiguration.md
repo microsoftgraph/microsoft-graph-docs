@@ -83,6 +83,14 @@ Here is a JSON representation of the resource.
         "bookmarkFolder": "String",
         "displayName": "String"
       }
+    ],
+    "websiteList": [
+      {
+        "@odata.type": "microsoft.graph.iosBookmark",
+        "url": "String",
+        "bookmarkFolder": "String",
+        "displayName": "String"
+      }
     ]
   },
   "lockScreenFootnote": "String",
@@ -164,6 +172,9 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
+
+
 
 
 

@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-> **Note:** You must include the **alert** ID as a parameter with this method.
+> **Note:** You must include the **alert** ID as a parameter and vendorInformation containing the `provider` and `vendor` with this method.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -32,7 +32,7 @@ PATCH /security/alerts/{id}
 
 ## Request body
 
-In the request body, supply a JSON representation of the values for relevant fields that should be updated. The following table lists the fields that can be updated for an alert. The values for existing properties that are not included in the request body will not change. For best performance, don't include existing values that haven't changed.
+In the request body, supply a JSON representation of the values for relevant fields that should be updated. The body **must** contain the `vendorInformation` property with valid `provider` and `vendor` fields. The following table lists the fields that can be updated for an alert. The values for existing properties that are not included in the request body will not change. For best performance, don't include existing values that haven't changed.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
@@ -42,6 +42,8 @@ In the request body, supply a JSON representation of the values for relevant fie
 |feedback|[alertFeedback](../resources/alertfeedbackenumtype.md) enum|Analyst feedback on the alert. Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|[alertStatus](../resources/alertstatusenumtype.md) enum|Alert lifecycle status (stage). Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.|
 |tags|String|User-definable labels that can be applied to an alert and can serve as filter conditions (for example, "HVA", "SAW).|
+|vendorInformation *|[securityVendorInformation](../resources/securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker). **Provider and vendor fields are required.**|
+(\* Indicates a mandatory field.)
 
 ## Response
 
@@ -69,7 +71,12 @@ Content-type: application/json
   "comments": "String",
   "feedback": "string",
   "status": "string",
-  "tags": ["String"]
+  "tags": ["String"],
+  "vendorInformation":
+    {
+      "provider": "String",
+      "vendor": "String"
+    }
 }
 ```
 
@@ -108,7 +115,12 @@ Prefer: return=representation
   "comments": "String",
   "feedback": "@odata.type: microsoft.graph.alertFeedback",
   "status": "@odata.type: microsoft.graph.alertStatus",
-  "tags": ["String"]
+  "tags": ["String"],
+  "vendorInformation":
+    {
+      "provider": "String",
+      "vendor": "String"
+    }
 }
 ```
 

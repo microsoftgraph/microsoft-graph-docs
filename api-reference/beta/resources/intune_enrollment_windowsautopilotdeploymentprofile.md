@@ -22,7 +22,6 @@ Windows Autopilot Deployment Profile
 |lastModifiedDateTime|DateTimeOffset|Profile last modified time|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune_enrollment_outofboxexperiencesettings.md)|Out of box experience setting|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune_enrollment_windowsenrollmentstatusscreensettings.md)|Enrollment status screen setting|
-|enrollmentSettings|[windowsAutoPilotEnrollmentSettings](../resources/intune_enrollment_windowsautopilotenrollmentsettings.md)|Enrollment settings delivered to auto pilot devices|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -64,13 +63,12 @@ Here is a JSON representation of the resource.
     "customErrorMessage": "String",
     "installProgressTimeoutInMinutes": 1024,
     "allowDeviceUseOnInstallFailure": true
-  },
-  "enrollmentSettings": {
-    "@odata.type": "microsoft.graph.windowsAutoPilotEnrollmentSettings",
-    "blockWindowsConsumerFeatures": true
   }
 }
 ```
+
+
+
 
 
 
