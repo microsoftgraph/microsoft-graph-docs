@@ -56,7 +56,6 @@ The following table shows the properties that are required when you create the w
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Quality Updates Pause Expiry datetime|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Feature Updates Pause Expiry datetime|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune_deviceconfig_windowsupdatetype.md)|Determines which branch devices will receive their updates from. Possible values are: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
-|previewBuildSetting|[windowsUpdateInsiderBuildControl](../resources/intune_deviceconfig_windowsupdateinsiderbuildcontrol.md)|Set the insider build control in the advanced options for Windows Update. Possible values are: `userDefined`, `allowed`, `notAllowed`.|
 |skipChecksBeforeRestart|Boolean|Set to skip all check before restart: Battery level = 40%, User presence, Display Needed, Presentation mode, Full screen mode, phone call state, game mode etc. |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune_deviceconfig_windowsupdateforbusinessupdateweeks.md)|Scheduled the update installation on the weeks of the month. Possible values are: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
 
@@ -71,7 +70,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1078
+Content-length: 1041
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -96,7 +95,6 @@ Content-length: 1078
   "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
   "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
   "businessReadyUpdatesOnly": "all",
-  "previewBuildSetting": "allowed",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "firstWeek"
 }
@@ -107,7 +105,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1186
+Content-Length: 1149
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -134,11 +132,13 @@ Content-Length: 1186
   "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
   "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
   "businessReadyUpdatesOnly": "all",
-  "previewBuildSetting": "allowed",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "firstWeek"
 }
 ```
+
+
+
 
 
 

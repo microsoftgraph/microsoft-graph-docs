@@ -44,8 +44,8 @@ The following table shows the properties that are required when you create the [
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|licenseType|[editionUpgradeLicenseType](../resources/intune_deviceconfig_editionupgradelicensetype.md)|Edition Upgrade License Type. Possible values are: `productKey`, `licenseFile`.|
-|targetEdition|[windows10EditionType](../resources/intune_deviceconfig_windows10editiontype.md)|Edition Upgrade Target Edition. Possible values are: `windows10Enterprise`, `windows10EnterpriseN`, `windows10Education`, `windows10EducationN`, `windows10MobileEnterprise`, `windows10HolographicEnterprise`, `windows10Professional`, `windows10ProfessionalN`, `windows10ProfessionalEducation`, `windows10ProfessionalEducationN`, `windows10ProfessionalWorkstation`, `windows10ProfessionalWorkstationN`.|
+|licenseType|[editionUpgradeLicenseType](../resources/intune_deviceconfig_editionupgradelicensetype.md)|Edition Upgrade License Type. Possible values are: `productKey`, `licenseFile`, `notConfigured`.|
+|targetEdition|[windows10EditionType](../resources/intune_deviceconfig_windows10editiontype.md)|Edition Upgrade Target Edition. Possible values are: `windows10Enterprise`, `windows10EnterpriseN`, `windows10Education`, `windows10EducationN`, `windows10MobileEnterprise`, `windows10HolographicEnterprise`, `windows10Professional`, `windows10ProfessionalN`, `windows10ProfessionalEducation`, `windows10ProfessionalEducationN`, `windows10ProfessionalWorkstation`, `windows10ProfessionalWorkstationN`, `notConfigured`.|
 |license|String|Edition Upgrade License File Content.|
 |productKey|String|Edition Upgrade Product Key.|
 
@@ -60,7 +60,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 309
+Content-length: 337
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -70,7 +70,7 @@ Content-length: 309
   "licenseType": "licenseFile",
   "targetEdition": "windows10EnterpriseN",
   "license": "License value",
-  "productKey": "Product Key value"
+  "productKey": "Product Key value",
 }
 ```
 
@@ -79,7 +79,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 483
+Content-Length: 511
 
 {
   "@odata.type": "#microsoft.graph.editionUpgradeConfiguration",
@@ -92,9 +92,12 @@ Content-Length: 483
   "licenseType": "licenseFile",
   "targetEdition": "windows10EnterpriseN",
   "license": "License value",
-  "productKey": "Product Key value"
+  "productKey": "Product Key value",
 }
 ```
+
+
+
 
 
 

@@ -49,21 +49,24 @@ The following table shows the properties that are required when you create the a
 |cameraBlocked|Boolean|Indicates whether or not to disable the use of the camera.|
 |factoryResetDeviceAdministratorEmails|String collection|List of Google account emails that will be required to authenticate after a device is factory reset before it can be set up.|
 |factoryResetBlocked|Boolean|Indicates whether or not the factory reset option in settings is disabled.|
-|kioskModeApps|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|A list of managed apps that will be shown when the device is in Kiosk Mode.|
+|kioskModeApps|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|A list of managed apps that will be shown when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |microphoneForceMute|Boolean|Indicates whether or not to block unmuting the microphone on the device.|
 |networkEscapeHatchAllowed|Boolean|Indicates whether or not the device will allow connecting to a temporary network connection at boot time.|
 |passwordBlockKeyguard|Boolean|Indicates whether or not the keyguard is disabled.|
-|passwordExpirationDays|Int32|Indicates the amount of time in seconds that a password can be set for before it expires and a new password will be required.|
-|passwordMinimumLength|Int32|Indicates the minimum length of the password required on the device.|
-|passwordMinutesOfInactivityBeforeScreenTimeout|Int64|Milliseconds of inactivity before the screen times out.|
-|passwordPreviousPasswordCountToBlock|Int32|Indicates the length of password history, where the user will not be able to enter a new password that is the same as any password in the history.|
+|passwordExpirationDays|Int32|Indicates the amount of time in seconds that a password can be set for before it expires and a new password will be required. Valid values 1 to 365|
+|passwordMinimumLength|Int32|Indicates the minimum length of the password required on the device. Valid values 4 to 16|
+|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Milliseconds of inactivity before the screen times out.|
+|passwordPreviousPasswordCountToBlock|Int32|Indicates the length of password history, where the user will not be able to enter a new password that is the same as any password in the history. Valid values 0 to 24|
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune_deviceconfig_androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the device. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`.|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect password before the device is wiped.|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect password before the device is wiped. Valid values 4 to 11|
 |safeBootBlocked|Boolean|Indicates whether or not rebooting the device into safe boot is disabled.|
 |screenCaptureBlocked|Boolean|Indicates whether or not to disable the capability to take screenshots.|
 |securityAllowDebuggingFeatures|Boolean|Indicates whether or not to block the user from enabling debugging features on the device.|
 |statusBarBlocked|Boolean|Indicates whether or the status bar is disabled, including notifications, quick settings and other screen overlays.|
-|stayOnModes|[androidDeviceOwnerBatteryPluggedMode](../resources/intune_deviceconfig_androiddeviceownerbatterypluggedmode.md) collection|List of modes in which the device's display will stay powered-on. Possible values are: `notConfigured`, `ac`, `usb`, `wireless`.|
+|stayOnModes|[androidDeviceOwnerBatteryPluggedMode](../resources/intune_deviceconfig_androiddeviceownerbatterypluggedmode.md) collection|List of modes in which the device's display will stay powered-on. This collection can contain a maximum of 4 elements. Possible values are: `notConfigured`, `ac`, `usb`, `wireless`.|
+|systemUpdateWindowStartMinutesAfterMidnight|Int32|Indicates the number of minutes after midnight that the system update window starts. Valid values 0 to 1440|
+|systemUpdateWindowEndMinutesAfterMidnight|Int32|Indicates the number of minutes after midnight that the system update window ends. Valid values 0 to 1440|
+|systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune_deviceconfig_androiddeviceownersystemupdateinstalltype.md)|The type of system update configuration. Possible values are: `deviceDefault`, `postpone`, `windowed`, `automatic`.|
 |usersBlockAdd|Boolean|Indicates whether or not adding users and profiles is disabled.|
 |usersBlockRemove|Boolean|Indicates whether or not to disable removing other users from the device.|
 |volumeBlockAdjustment|Boolean|Indicates whether or not adjusting the master volume is disabled.|
@@ -81,7 +84,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1507
+Content-length: 1654
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -122,6 +125,9 @@ Content-length: 1507
   "stayOnModes": [
     "ac"
   ],
+  "systemUpdateWindowStartMinutesAfterMidnight": 11,
+  "systemUpdateWindowEndMinutesAfterMidnight": 9,
+  "systemUpdateInstallType": "postpone",
   "usersBlockAdd": true,
   "usersBlockRemove": true,
   "volumeBlockAdjustment": true,
@@ -135,7 +141,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1615
+Content-Length: 1762
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -178,6 +184,9 @@ Content-Length: 1615
   "stayOnModes": [
     "ac"
   ],
+  "systemUpdateWindowStartMinutesAfterMidnight": 11,
+  "systemUpdateWindowEndMinutesAfterMidnight": 9,
+  "systemUpdateInstallType": "postpone",
   "usersBlockAdd": true,
   "usersBlockRemove": true,
   "volumeBlockAdjustment": true,
@@ -185,6 +194,9 @@ Content-Length: 1615
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
+
+
+
 
 
 

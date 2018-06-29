@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2032
+Content-Length: 2107
 
 {
   "value": {
@@ -93,12 +93,16 @@ Content-Length: 2032
     "passwordSignInFailureCountBeforeFactoryReset": 12,
     "storageRequireDeviceEncryption": true,
     "minimumAutoInstallClassification": "recommendedAndImportant",
+    "updatesMinimumAutoInstallClassification": "recommendedAndImportant",
     "updatesRequireAutomaticUpdates": true,
     "userAccountControlSettings": "alwaysNotify",
     "workFoldersUrl": "https://example.com/workFoldersUrl/"
   }
 }
 ```
+
+
+
 
 
 

@@ -10,7 +10,8 @@ The deviceManagement resource represents a container whose contents vary accordi
 - Device configuration settings
 - Endpoint protection objects and relationships
 - Notifications
-- Onboarding policies, settings, and details
+- On-boarding policies, settings, and details
+- Resource access
 - Role-based access control (RBAC) policies
 - Remote assistance partners
 - Telecom expanse management partners
@@ -22,7 +23,9 @@ The deviceManagement resource represents a container whose contents vary accordi
 |:---|:---|:---|
 |[Get deviceManagement](../api/intune_shared_devicemanagement_get.md)|Read properties and relationships of the [deviceManagement](../resources/intune_shared_devicemanagement.md) object.|
 |[Update deviceManagement](../api/intune_shared_devicemanagement_update.md)|Update the properties of a [deviceManagement](../resources/intune_shared_devicemanagement.md) object.|
-|**Onboarding**|
+|**Device management**|
+|[sendCustomNotificationToCompanyPortal action](../api/intune_shared_devicemanagement_sendcustomnotificationtocompanyportal.md)|None|Not yet documented|
+|**On-boarding**|
 |[verifyWindowsEnrollmentAutoDiscovery function](../api/intune_shared_devicemanagement_verifywindowsenrollmentautodiscovery.md)|Boolean|Not yet documented|
 |**Role based access control (RBAC)**|
 |[getEffectivePermissions function](../api/intune_shared_devicemanagement_geteffectivepermissions.md)|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|Retrieves the effective permissions of the currently authenticated user|
@@ -42,7 +45,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune_devices_manageddevicecleanupsettings.md)|Device cleanup rule|
 |subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |subscriptions|[deviceManagementSubscriptions](../resources/intune_devices_devicemanagementsubscriptions.md)|Tenant's Subscription. Possible values are: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
-|**Onboarding**|
+|**On-boarding**|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
 
 ## Relationships
@@ -62,6 +65,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |**Corporate enrollment**|
 |enrollmentProfiles|[enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) collection|The enrollment profiles.|
 |importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) collection|The imported Apple device identities.|
+|importedDeviceIdentities|[importedDeviceIdentity](../resources/intune_shared_importeddeviceidentity.md) collection|The imported device identities.|
 |**Device configuration**|
 |cartToClassAssociations|[cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) collection|The Cart To Class Associations.|
 |deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) collection|The device compliance policies.|
@@ -83,15 +87,15 @@ The deviceManagement resource represents a container whose contents vary accordi
 |managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md) collection|The list of managed devices.|
 |remoteActionAudits|[remoteActionAudit](../resources/intune_devices_remoteactionaudit.md) collection|The list of device remote action audits with the tenant.|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune_devices_windowsmalwareinformation.md) collection|The list of affected malware in the tenant.|
-|**Device enrollment**|
-|importedDeviceIdentities|[importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md) collection|The imported device identities.|
+|**Enrollment**|
+|importedDeviceIdentities|importedDeviceIdentity collection|The imported device identities.|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) collection|Collection of imported Windows autopilot devices.|
 |windowsAutopilotDeploymentProfiles|[windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md) collection|Windows auto pilot deployment profiles|
 |windowsAutopilotDeviceIdentities|[windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md) collection|The Windows autopilot device identities contained collection.|
 |windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune_enrollment_windowsautopilotsettings.md)|The Windows autopilot account settings.|
 |**Notifications**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) collection|The Notification Message Templates.|
-|**Onboarding**|
+|**On-boarding**|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md)|The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) collection|Intune only supports using 1 DEP token per tenant. This collections will support potential future development of multiple DEP tokens per-tenant.|
 |deviceCategories|[deviceCategory](../resources/intune_shared_devicecategory.md) collection|The list of device categories with the tenant.|
@@ -103,6 +107,8 @@ The deviceManagement resource represents a container whose contents vary accordi
 |mobileThreatDefenseConnectors|[mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md) collection|The list of Mobile threat Defense connectors configured by the tenant.|
 |**Remote assistance**|
 |remoteAssistancePartners|[remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) collection|The remote assist partners.|
+|**Resource access**|
+|userPfxCertificates|[userPFXCertificate](../resources/intune_raimportcerts_userpfxcertificate.md) collection|Collection of PFX certificates associated with a user.|
 |**Role based access control (RBAC)**|
 |resourceOperations|[resourceOperation](../resources/intune_rbac_resourceoperation.md) collection|The Resource Operations.|
 |roleAssignments|[deviceAndAppManagementRoleAssignment](../resources/intune_rbac_deviceandappmanagementroleassignment.md) collection|The Role Assignments.|

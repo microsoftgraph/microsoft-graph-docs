@@ -78,7 +78,7 @@
 - [Remote assistance partner](intune_remoteassistance_remoteassistancepartner.md)
 - [Remote lock action result](intune_devices_remotelockactionresult.md)
 - [Reset passcode action result](intune_devices_resetpasscodeactionresult.md)
-- [Revoke apple VPP licenses action result](intune_devices_revokeapplevpplicensesactionresult.md)
+- [Revoke Apple VPP licenses action result](intune_devices_revokeapplevpplicensesactionresult.md)
 - [Run as account type](intune_devices_runasaccounttype.md)
 - [Run schedule](intune_devices_runschedule.md)
 - [Shared Apple device user](intune_devices_sharedappledeviceuser.md)

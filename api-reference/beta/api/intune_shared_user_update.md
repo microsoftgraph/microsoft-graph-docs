@@ -5,16 +5,23 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [user](../resources/intune_shared_user.md) object.
+
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|(_devices_)<br/>DeviceManagementManagedDevices.ReadWrite.All<br />(_mam_) <br/>DeviceManagementApps.ReadWrite.All<br/>(_onboarding_)<br />DeviceManagementServiceConfig.ReadWrite.All<br/>(_troubleshooting_)<br/> DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)||
+| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **On-boarding** | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp; &nbsp; **Troubleshooting** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
@@ -24,12 +31,14 @@ PATCH /users/{usersId}
 ```
 
 ## Request headers
+
 |Header|Value|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
+
 In the request body, supply a JSON representation for the [user](../resources/intune_shared_user.md) object.
 
 The following table shows the properties that are required when you create the [user](../resources/intune_shared_user.md).
@@ -37,15 +46,19 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier of the user.|
+|**On-boarding**|
 |deviceEnrollmentLimit|Int32|The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.|
 
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [user](../resources/intune_shared_user.md) object in the response body.
 
 ## Example
+
 ### Request
+
 Here is an example of the request.
+
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{usersId}
 Content-type: application/json
@@ -55,7 +68,9 @@ Content-length: 2
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
