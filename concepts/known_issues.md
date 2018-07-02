@@ -189,6 +189,28 @@ The **comment** parameter for creating a reply or forward draft ([createReply](.
 [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md))
 does not become part of the body of the resultant message draft.
 
+## Bookings
+
+### ErrorExceededFindCountLimit when querying bookingBusinesses
+
+Getting the list of `bookingBusinesses` fails with the following error code when an organization has several booking businesses and the account making the request is not an administrator:
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+The set of businesses returned by the request can be limited by including a query parameter, for example:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
 ## Drives, files and content streaming
 
 * First time access to a user's personal drive through the Microsoft Graph before the user accesses their personal site through a browser leads to a 401 response.

@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7232
+Content-Length: 7141
 
 {
   "value": {
@@ -132,7 +132,6 @@ Content-Length: 7232
     "exchangeAccessState": "unknown",
     "exchangeAccessStateReason": "unknown",
     "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
-    "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
     "remoteAssistanceSessionErrorDetails": "Remote Assistance Session Error Details value",
     "isEncrypted": true,
     "userPrincipalName": "User Principal Name value",
@@ -211,6 +210,9 @@ Content-Length: 7232
   }
 }
 ```
+
+
+
 
 
 

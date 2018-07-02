@@ -4,7 +4,7 @@
  
 Get a collection of [bookingbusiness](../resources/bookingbusiness.md) objects that has been created for the tenant. 
 
-This operation returns only the **id** and **displayName** of each Bookings business in the collection. For performance considerations, other properties are _returned_ as null even if they have been set. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness_get.md) operation.
+This operation returns only the **id** and **displayName** of each Bookings business in the collection. For performance considerations, other properties are _not returned_ even if they have been set. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness_get.md) operation.
 
 
 ## Permissions
@@ -23,6 +23,15 @@ GET /bookingBusinesses
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+
+This method also supports the following parameters:
+- **query**: a string that limits the results to businesses that match the given value.
+
+For example:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
 
 ## Request headers
 | Name      |Description|
@@ -44,7 +53,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/bookingBusinesses
 ```
 ##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -57,39 +66,15 @@ Content-type: application/json
 Content-length: 526
 
 {
-    "@odata.context":"https://graph.microsoft.com/testbookings/$metadata#bookingBusinesses",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses",
     "value":[
         {
             "id":"Contosolunchdelivery@M365B489948.onmicrosoft.com",
             "displayName":"Contoso lunch delivery",
-            "businessType":null,
-            "phone":null,
-            "email":null,
-            "webSiteUrl":null,
-            "defaultCurrencyIso":null,
-            "isPublished":null,
-            "publicUrl":null,
-            "address":null,
-            "schedulingPolicy":null,
-            "businessHours":[
-
-            ]
         },
         {
             "id":"Fabrikam@M365B489948.onmicrosoft.com",
             "displayName":"Fabrikam",
-            "businessType":null,
-            "phone":null,
-            "email":null,
-            "webSiteUrl":null,
-            "defaultCurrencyIso":null,
-            "isPublished":null,
-            "publicUrl":null,
-            "address":null,
-            "schedulingPolicy":null,
-            "businessHours":[
-
-            ]
         }
     ]
 }

@@ -30,6 +30,8 @@ Represents an Azure Active Directory user object.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier of the user.|
+|**On-boarding**|
+|deviceEnrollmentLimit|Int32|The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.|
 
 ## Relationships
 |Relationship|Type|Description|

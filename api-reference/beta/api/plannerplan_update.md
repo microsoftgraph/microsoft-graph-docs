@@ -1,8 +1,9 @@
-# Update plannerplan
+# Update plannerPlan
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update the properties of **plannerplan** object.
+Update the properties of **plannerPlan** object.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -17,7 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 PATCH /planner/plans/<id>
 ```
-## Optional request headers
+
+## Request headers
+
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}. Required. |

@@ -26,7 +26,6 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCert
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/rootCertificate/deviceStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate/deviceStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate/deviceStatuses
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate/deviceStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate/deviceStatuses
 ```
 
@@ -99,6 +98,9 @@ Content-Length: 496
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

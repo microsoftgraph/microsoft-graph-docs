@@ -99,17 +99,27 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for public networks|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for private networks|
 |defenderAttackSurfaceReductionExcludedPaths|String collection|List of exe files and folders to be excluded from attack surface reduction rules|
-|defenderOfficeAppsOtherProcessInjectionType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating the behavior of  Office applications injecting into other processes. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderOfficeAppsOtherProcessInjectionType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating the behavior of Office applications injecting into other processes. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderOfficeAppsOtherProcessInjection|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating the behavior of  Office applications injecting into other processes. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderOfficeAppsExecutableContentCreationOrLaunchType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating the behavior of Office applications/macros creating or launching executable content. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderOfficeAppsExecutableContentCreationOrLaunch|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating the behavior of Office applications/macros creating or launching executable content. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderOfficeAppsLaunchChildProcessType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating the behavior of Office application launching child processes. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderOfficeAppsLaunchChildProcess|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating the behavior of Office application launching child processes. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderOfficeMacroCodeAllowWin32ImportsType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating the behavior of Win32 imports from Macro code in Office. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderOfficeMacroCodeAllowWin32Imports|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating the behavior of Win32 imports from Macro code in Office. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderScriptObfuscatedMacroCodeType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating the behavior of obfuscated js/vbs/ps/macro code. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderScriptObfuscatedMacroCode|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating the behavior of obfuscated js/vbs/ps/macro code. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderScriptDownloadedPayloadExecutionType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating the behavior of js/vbs executing payload downloaded from Internet. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderScriptDownloadedPayloadExecution|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating the behavior of js/vbs executing payload downloaded from Internet. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderPreventCredentialStealingType|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating if credential stealing from the Windows local security authority subsystem is permitted. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderProcessCreationType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating response to process creations originating from PSExec and WMI commands. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderProcessCreation|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating response to process creations originating from PSExec and WMI commands. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderUntrustedUSBProcessType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating response to untrusted and unsigned processes that run from USB. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderUntrustedUSBProcess|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating response to untrusted and unsigned processes that run from USB. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderUntrustedExecutableType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderUntrustedExecutable|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderEmailContentExecutionType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client). Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderEmailContentExecution|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client). Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderAdvancedRansomewareProtectionType|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating use of advanced protection against ransomeware. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderGuardMyFoldersType|[folderProtectionType](../resources/intune_deviceconfig_folderprotectiontype.md)|Value indicating the behavior of protected folders. Possible values are: `userDefined`, `enable`, `auditMode`, `blockDiskModification`, `auditDiskModification`.|
 |defenderGuardedFoldersAllowedAppPaths|String collection|List of paths to exe that are allowed to access protected folders|
@@ -289,16 +299,26 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "defenderOfficeAppsOtherProcessInjectionType": "String",
+  "defenderOfficeAppsOtherProcessInjection": "String",
   "defenderOfficeAppsExecutableContentCreationOrLaunchType": "String",
+  "defenderOfficeAppsExecutableContentCreationOrLaunch": "String",
   "defenderOfficeAppsLaunchChildProcessType": "String",
+  "defenderOfficeAppsLaunchChildProcess": "String",
   "defenderOfficeMacroCodeAllowWin32ImportsType": "String",
+  "defenderOfficeMacroCodeAllowWin32Imports": "String",
   "defenderScriptObfuscatedMacroCodeType": "String",
+  "defenderScriptObfuscatedMacroCode": "String",
   "defenderScriptDownloadedPayloadExecutionType": "String",
+  "defenderScriptDownloadedPayloadExecution": "String",
   "defenderPreventCredentialStealingType": "String",
   "defenderProcessCreationType": "String",
+  "defenderProcessCreation": "String",
   "defenderUntrustedUSBProcessType": "String",
+  "defenderUntrustedUSBProcess": "String",
   "defenderUntrustedExecutableType": "String",
+  "defenderUntrustedExecutable": "String",
   "defenderEmailContentExecutionType": "String",
+  "defenderEmailContentExecution": "String",
   "defenderAdvancedRansomewareProtectionType": "String",
   "defenderGuardMyFoldersType": "String",
   "defenderGuardedFoldersAllowedAppPaths": [
@@ -379,6 +399,9 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
+
+
 
 
 

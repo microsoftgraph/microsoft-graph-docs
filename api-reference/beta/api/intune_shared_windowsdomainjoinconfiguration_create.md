@@ -10,7 +10,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)||
+| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -25,12 +26,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## Request headers
+
 |Header|Value|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
+
 In the request body, supply a JSON representation for the windowsDomainJoinConfiguration object.
 
 The following table shows the properties that are required when you create the windowsDomainJoinConfiguration.
@@ -38,23 +41,27 @@ The following table shows the properties that are required when you create the w
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|activeDirectoryDomainName|String|Active Directory domain name to join.|
+|computerNameStaticPrefix|String|Fixed prefix to be used for computer name.|
+|computerNameSuffixRandomCharCount|Int32|Dynamically generated characters used as suffix for computer name. Valid values 3 to 14|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|computerNameStaticPrefix|String|Fixed prefix to be used for computer name.|
-|computerNameSuffixRandomCharCount|Int32|Dynamically generated characters used as suffix for computer name. Valid values 3 to 14|
-|activeDirectoryDomainName|String|Active Directory domain name to join.|
 
 
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
+
 Here is an example of the request.
+
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
@@ -73,7 +80,9 @@ Content-length: 413
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

@@ -57,6 +57,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |passwordSignInFailureCountBeforeFactoryReset|Int32|The number of sign in failures before factory reset.|
 |storageRequireDeviceEncryption|Boolean|Indicates whether or not to require encryption on a mobile device.|
 |minimumAutoInstallClassification|[updateClassification](../resources/intune_deviceconfig_updateclassification.md)|The minimum update classification to install automatically. Possible values are: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
+|updatesMinimumAutoInstallClassification|[updateClassification](../resources/intune_deviceconfig_updateclassification.md)|The minimum update classification to install automatically. Possible values are: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
 |updatesRequireAutomaticUpdates|Boolean|Indicates whether or not to require automatic updates.|
 |userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|The user account control settings. Possible values are: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
 |workFoldersUrl|String|The work folders url.|
@@ -120,11 +121,15 @@ Here is a JSON representation of the resource.
   "passwordSignInFailureCountBeforeFactoryReset": 1024,
   "storageRequireDeviceEncryption": true,
   "minimumAutoInstallClassification": "String",
+  "updatesMinimumAutoInstallClassification": "String",
   "updatesRequireAutomaticUpdates": true,
   "userAccountControlSettings": "String",
   "workFoldersUrl": "String"
 }
 ```
+
+
+
 
 
 
