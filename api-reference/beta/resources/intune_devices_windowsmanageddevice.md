@@ -55,7 +55,6 @@ Inherits from [managedDevice](../resources/intune_devices_manageddevice.md)
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune_devices_devicemanagementexchangeaccessstate.md)|The Access State of the device in Exchange. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md). Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune_devices_devicemanagementexchangeaccessstatereason.md)|The reason for the device's access state in Exchange. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md). Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
-|remoteAssistanceSessionErrorString|String|An error string that identifies issues when creating Remote Assistance session objects. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |remoteAssistanceSessionErrorDetails|String|An error string that identifies issues when creating Remote Assistance session objects. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |isEncrypted|Boolean|Device encryption status Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |userPrincipalName|String|Device user principal name Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
@@ -88,7 +87,7 @@ Inherits from [managedDevice](../resources/intune_devices_manageddevice.md)
 |Relationship|Type|Description|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune_devices_detectedapp.md) collection|All applications currently installed on the device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
-|deviceCategory|[deviceCategory](../resources/intune_shared_devicecategory.md)|Device category Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|deviceCategory|[deviceCategory](../resources/intune_shared_devicecategory.md)|Device category; inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |windowsProtectionState|[windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md)|The device protection status. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 
 ## JSON Representation
@@ -177,7 +176,6 @@ Here is a JSON representation of the resource.
   "exchangeAccessState": "String",
   "exchangeAccessStateReason": "String",
   "remoteAssistanceSessionUrl": "String",
-  "remoteAssistanceSessionErrorString": "String",
   "remoteAssistanceSessionErrorDetails": "String",
   "isEncrypted": true,
   "userPrincipalName": "String",
@@ -255,6 +253,9 @@ Here is a JSON representation of the resource.
   "udid": "String"
 }
 ```
+
+
+
 
 
 

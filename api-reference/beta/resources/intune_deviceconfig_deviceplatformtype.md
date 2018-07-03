@@ -15,6 +15,10 @@ Supported platform types.
 |windowsPhone81|4|WindowsPhone 8.1.|
 |windows81AndLater|5|Windows 8.1 and later|
 |windows10AndLater|6|Windows 10 and later.|
+|androidWorkProfile|7|Android Work Profile.|
+
+
+
 
 
 

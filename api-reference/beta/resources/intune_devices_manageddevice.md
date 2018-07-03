@@ -72,7 +72,6 @@ Devices that are managed or pre-enrolled through Intune
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune_devices_devicemanagementexchangeaccessstate.md)|The Access State of the device in Exchange. Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune_devices_devicemanagementexchangeaccessstatereason.md)|The reason for the device's access state in Exchange. Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device.|
-|remoteAssistanceSessionErrorString|String|An error string that identifies issues when creating Remote Assistance session objects.|
 |remoteAssistanceSessionErrorDetails|String|An error string that identifies issues when creating Remote Assistance session objects.|
 |isEncrypted|Boolean|Device encryption status|
 |userPrincipalName|String|Device user principal name|
@@ -194,7 +193,6 @@ Here is a JSON representation of the resource.
   "exchangeAccessState": "String",
   "exchangeAccessStateReason": "String",
   "remoteAssistanceSessionUrl": "String",
-  "remoteAssistanceSessionErrorString": "String",
   "remoteAssistanceSessionErrorDetails": "String",
   "isEncrypted": true,
   "userPrincipalName": "String",
@@ -272,6 +270,9 @@ Here is a JSON representation of the resource.
   "udid": "String"
 }
 ```
+
+
+
 
 
 

@@ -69,6 +69,7 @@ The following table shows the properties that are required when you create the w
 |searchDisableIndexingEncryptedItems|Boolean|Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for Cortana or Explorer.|
 |searchEnableRemoteQueries|Boolean|Indicates whether or not to block remote queries of this computer’s index.|
 |searchDisableUseLocation|Boolean|Specifies if search can use location information.|
+|searchDisableLocation|Boolean|Specifies if search can use location information.|
 |searchDisableIndexerBackoff|Boolean|Indicates whether or not to disable the search indexer backoff feature.|
 |searchDisableIndexingRemovableDrive|Boolean|Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.|
 |searchEnableAutomaticIndexSizeManangement|Boolean|Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.|
@@ -78,6 +79,7 @@ The following table shows the properties that are required when you create the w
 |oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
 |systemTelemetryProxyServer|String|Gets or sets the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests.|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune_deviceconfig_inkaccesssetting.md)|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|inkWorkspaceAccessState|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |inkWorkspaceBlockSuggestedApps|Boolean|Specify whether to show recommended app suggestions in the ink workspace.|
 |smartScreenEnableAppInstallControl|Boolean|Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
 |personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
@@ -117,6 +119,7 @@ The following table shows the properties that are required when you create the w
 |defenderScanMaxCpu|Int32|Max CPU usage percentage during scan. Valid values 0 to 100|
 |defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune_deviceconfig_defendermonitorfileactivity.md)|Value for monitoring file activity. Possible values are: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
 |defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune_deviceconfig_defenderpotentiallyunwantedappaction.md)|Gets or sets Defender’s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop. Possible values are: `deviceDefault`, `block`, `audit`.|
+|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Gets or sets Defender’s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderProcessesToExclude|String collection|Processes to exclude from scans and real time protection.|
 |defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune_deviceconfig_defenderpromptforsamplesubmission.md)|The configuration for how to prompt user for sample submission. Possible values are: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
 |defenderRequireBehaviorMonitoring|Boolean|Indicates whether or not to require behavior monitoring.|
@@ -136,6 +139,7 @@ The following table shows the properties that are required when you create the w
 |defenderScheduledQuickScanTime|TimeOfDay|The time to perform a daily quick scan.|
 |defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune_deviceconfig_defendercloudblockleveltype.md)|Specifies the level of cloud-delivered protection. Possible values are: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
 |defenderCloudExtendedTimeout|Int32|Timeout extension for file scanning by the cloud. Valid values 0 to 50|
+|defenderCloudExtendedTimeoutInSeconds|Int32|Timeout extension for file scanning by the cloud. Valid values 0 to 50|
 |defenderBlockOnAccessProtection|Boolean|Allows or disallows Windows Defender On Access Protection functionality.|
 |defenderScheduleScanDay|[defenderScheduleScanDay](../resources/intune_deviceconfig_defenderschedulescanday.md)|Selects the day that the Windows Defender scan should run. Possible values are: `everyday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`, `noScheduledScan`.|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune_deviceconfig_defendersubmitsamplesconsenttype.md)|Checks for the user consent level in Windows Defender to send data. Possible values are: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
@@ -285,7 +289,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 11405
+Content-length: 11587
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -325,6 +329,7 @@ Content-length: 11405
   "searchDisableIndexingEncryptedItems": true,
   "searchEnableRemoteQueries": true,
   "searchDisableUseLocation": true,
+  "searchDisableLocation": true,
   "searchDisableIndexerBackoff": true,
   "searchDisableIndexingRemovableDrive": true,
   "searchEnableAutomaticIndexSizeManangement": true,
@@ -334,6 +339,7 @@ Content-length: 11405
   "oneDriveDisableFileSync": true,
   "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
   "inkWorkspaceAccess": "enabled",
+  "inkWorkspaceAccessState": "blocked",
   "inkWorkspaceBlockSuggestedApps": true,
   "smartScreenEnableAppInstallControl": true,
   "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
@@ -385,6 +391,7 @@ Content-length: 11405
   "defenderScanMaxCpu": 2,
   "defenderMonitorFileActivity": "disable",
   "defenderPotentiallyUnwantedAppAction": "block",
+  "defenderPotentiallyUnwantedAppActionSetting": "enable",
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
   ],
@@ -406,6 +413,7 @@ Content-length: 11405
   "defenderScheduledQuickScanTime": "11:58:49.3840000",
   "defenderCloudBlockLevel": "high",
   "defenderCloudExtendedTimeout": 12,
+  "defenderCloudExtendedTimeoutInSeconds": 5,
   "defenderBlockOnAccessProtection": true,
   "defenderScheduleScanDay": "monday",
   "defenderSubmitSamplesConsentType": "alwaysPrompt",
@@ -562,7 +570,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 11513
+Content-Length: 11695
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -604,6 +612,7 @@ Content-Length: 11513
   "searchDisableIndexingEncryptedItems": true,
   "searchEnableRemoteQueries": true,
   "searchDisableUseLocation": true,
+  "searchDisableLocation": true,
   "searchDisableIndexerBackoff": true,
   "searchDisableIndexingRemovableDrive": true,
   "searchEnableAutomaticIndexSizeManangement": true,
@@ -613,6 +622,7 @@ Content-Length: 11513
   "oneDriveDisableFileSync": true,
   "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
   "inkWorkspaceAccess": "enabled",
+  "inkWorkspaceAccessState": "blocked",
   "inkWorkspaceBlockSuggestedApps": true,
   "smartScreenEnableAppInstallControl": true,
   "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
@@ -664,6 +674,7 @@ Content-Length: 11513
   "defenderScanMaxCpu": 2,
   "defenderMonitorFileActivity": "disable",
   "defenderPotentiallyUnwantedAppAction": "block",
+  "defenderPotentiallyUnwantedAppActionSetting": "enable",
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
   ],
@@ -685,6 +696,7 @@ Content-Length: 11513
   "defenderScheduledQuickScanTime": "11:58:49.3840000",
   "defenderCloudBlockLevel": "high",
   "defenderCloudExtendedTimeout": 12,
+  "defenderCloudExtendedTimeoutInSeconds": 5,
   "defenderBlockOnAccessProtection": true,
   "defenderScheduleScanDay": "monday",
   "defenderSubmitSamplesConsentType": "alwaysPrompt",
@@ -835,6 +847,9 @@ Content-Length: 11513
   "logonBlockFastUserSwitching": true
 }
 ```
+
+
+
 
 
 

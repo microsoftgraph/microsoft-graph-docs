@@ -52,6 +52,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |searchDisableIndexingEncryptedItems|Boolean|Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for Cortana or Explorer.|
 |searchEnableRemoteQueries|Boolean|Indicates whether or not to block remote queries of this computer’s index.|
 |searchDisableUseLocation|Boolean|Specifies if search can use location information.|
+|searchDisableLocation|Boolean|Specifies if search can use location information.|
 |searchDisableIndexerBackoff|Boolean|Indicates whether or not to disable the search indexer backoff feature.|
 |searchDisableIndexingRemovableDrive|Boolean|Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.|
 |searchEnableAutomaticIndexSizeManangement|Boolean|Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.|
@@ -61,6 +62,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
 |systemTelemetryProxyServer|String|Gets or sets the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests.|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune_deviceconfig_inkaccesssetting.md)|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|inkWorkspaceAccessState|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |inkWorkspaceBlockSuggestedApps|Boolean|Specify whether to show recommended app suggestions in the ink workspace.|
 |smartScreenEnableAppInstallControl|Boolean|Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
 |personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
@@ -100,6 +102,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |defenderScanMaxCpu|Int32|Max CPU usage percentage during scan. Valid values 0 to 100|
 |defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune_deviceconfig_defendermonitorfileactivity.md)|Value for monitoring file activity. Possible values are: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
 |defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune_deviceconfig_defenderpotentiallyunwantedappaction.md)|Gets or sets Defender’s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop. Possible values are: `deviceDefault`, `block`, `audit`.|
+|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Gets or sets Defender’s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderProcessesToExclude|String collection|Processes to exclude from scans and real time protection.|
 |defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune_deviceconfig_defenderpromptforsamplesubmission.md)|The configuration for how to prompt user for sample submission. Possible values are: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
 |defenderRequireBehaviorMonitoring|Boolean|Indicates whether or not to require behavior monitoring.|
@@ -119,6 +122,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |defenderScheduledQuickScanTime|TimeOfDay|The time to perform a daily quick scan.|
 |defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune_deviceconfig_defendercloudblockleveltype.md)|Specifies the level of cloud-delivered protection. Possible values are: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
 |defenderCloudExtendedTimeout|Int32|Timeout extension for file scanning by the cloud. Valid values 0 to 50|
+|defenderCloudExtendedTimeoutInSeconds|Int32|Timeout extension for file scanning by the cloud. Valid values 0 to 50|
 |defenderBlockOnAccessProtection|Boolean|Allows or disallows Windows Defender On Access Protection functionality.|
 |defenderScheduleScanDay|[defenderScheduleScanDay](../resources/intune_deviceconfig_defenderschedulescanday.md)|Selects the day that the Windows Defender scan should run. Possible values are: `everyday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`, `noScheduledScan`.|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune_deviceconfig_defendersubmitsamplesconsenttype.md)|Checks for the user consent level in Windows Defender to send data. Possible values are: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
@@ -319,6 +323,7 @@ Here is a JSON representation of the resource.
   "searchDisableIndexingEncryptedItems": true,
   "searchEnableRemoteQueries": true,
   "searchDisableUseLocation": true,
+  "searchDisableLocation": true,
   "searchDisableIndexerBackoff": true,
   "searchDisableIndexingRemovableDrive": true,
   "searchEnableAutomaticIndexSizeManangement": true,
@@ -328,6 +333,7 @@ Here is a JSON representation of the resource.
   "oneDriveDisableFileSync": true,
   "systemTelemetryProxyServer": "String",
   "inkWorkspaceAccess": "String",
+  "inkWorkspaceAccessState": "String",
   "inkWorkspaceBlockSuggestedApps": true,
   "smartScreenEnableAppInstallControl": true,
   "personalizationDesktopImageUrl": "String",
@@ -379,6 +385,7 @@ Here is a JSON representation of the resource.
   "defenderScanMaxCpu": 1024,
   "defenderMonitorFileActivity": "String",
   "defenderPotentiallyUnwantedAppAction": "String",
+  "defenderPotentiallyUnwantedAppActionSetting": "String",
   "defenderProcessesToExclude": [
     "String"
   ],
@@ -400,6 +407,7 @@ Here is a JSON representation of the resource.
   "defenderScheduledQuickScanTime": "String (time of day)",
   "defenderCloudBlockLevel": "String",
   "defenderCloudExtendedTimeout": 1024,
+  "defenderCloudExtendedTimeoutInSeconds": 1024,
   "defenderBlockOnAccessProtection": true,
   "defenderScheduleScanDay": "String",
   "defenderSubmitSamplesConsentType": "String",
@@ -550,6 +558,9 @@ Here is a JSON representation of the resource.
   "logonBlockFastUserSwitching": true
 }
 ```
+
+
+
 
 
 

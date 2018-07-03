@@ -75,6 +75,7 @@ The following table shows the properties that are required when you create the [
 |passwordSignInFailureCountBeforeFactoryReset|Int32|The number of sign in failures before factory reset.|
 |storageRequireDeviceEncryption|Boolean|Indicates whether or not to require encryption on a mobile device.|
 |minimumAutoInstallClassification|[updateClassification](../resources/intune_deviceconfig_updateclassification.md)|The minimum update classification to install automatically. Possible values are: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
+|updatesMinimumAutoInstallClassification|[updateClassification](../resources/intune_deviceconfig_updateclassification.md)|The minimum update classification to install automatically. Possible values are: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
 |updatesRequireAutomaticUpdates|Boolean|Indicates whether or not to require automatic updates.|
 |userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|The user account control settings. Possible values are: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
 |workFoldersUrl|String|The work folders url.|
@@ -90,7 +91,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1755
+Content-length: 1828
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -128,6 +129,7 @@ Content-length: 1755
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "storageRequireDeviceEncryption": true,
   "minimumAutoInstallClassification": "recommendedAndImportant",
+  "updatesMinimumAutoInstallClassification": "recommendedAndImportant",
   "updatesRequireAutomaticUpdates": true,
   "userAccountControlSettings": "alwaysNotify",
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
@@ -139,7 +141,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1931
+Content-Length: 2004
 
 {
   "@odata.type": "#microsoft.graph.windows81GeneralConfiguration",
@@ -180,11 +182,15 @@ Content-Length: 1931
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "storageRequireDeviceEncryption": true,
   "minimumAutoInstallClassification": "recommendedAndImportant",
+  "updatesMinimumAutoInstallClassification": "recommendedAndImportant",
   "updatesRequireAutomaticUpdates": true,
   "userAccountControlSettings": "alwaysNotify",
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
 }
 ```
+
+
+
 
 
 
