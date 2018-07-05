@@ -2,7 +2,14 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents an individual chat message within a [channel](channel.md) or chat entity. The message can be an root message or part of a thread which is defined by the replyToId property in the message
+Represents an individual chat message within a [channel](channel.md) or chat entity. The message can be an root message or part of a thread which is defined by the replyToId property in the message.
+
+## Methods
+
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
+|[Get Channel messages](../api/channel_message_get.md) | [chatmessage](chatmessage.md) collection | Get the root messages in a channel.|
+|[Get replies to a message](../api/channel_message_replies_get.md) | [chatmessage](chatmessage.md) collection| Get the replies of a message in channel.|
 
 ## Properties
 | Property	   | Type	|Description|
