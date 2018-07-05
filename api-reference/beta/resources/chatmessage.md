@@ -2,15 +2,28 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents an individual chat message within a [chatThread](chatthread.md) entity.
-
-Currently, you can [create the first (root) chat message in a new reply chain](../api/channel_post_chatthreads.md).  Other chat messages exist implicitly, but cannot be directly read or written.  Future API releases will support this.
+Represents an individual chat message within a [channel](channel.md) or chat entity. The message can be an root message or part of a thread which is defined by the replyToId property in the message
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|body|[itemBody](itembody.md)|The contents of the chatMessage. This is a default property.|
-|id|String| Read-only.|
+|id|String| Read-only. Unique id of the message.|
+|replyToId| string | Id of the parent message/root message of the thread |
+|from|IdentitySet| Details of the sender of the message|
+|etag| string | Version number of the message |
+|messageType|String|The type of message, current supported values are: message, chatEvent, Typing|
+|createDateTime|dateTimeOffset|Read only. Timestamp of when the message was created|
+|lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the message was edited/updated|
+|isDeleted|boolean|Represents if a message has been soft deleted|
+|deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted |
+|subject|string|Message subject line. Optional|
+|body|itemBody|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param|
+|summary|string|Summary text of the message that could be used for push notifications and summary views or fall back views|
+|attachment|chatAttachment collection| Array of attachments that are part of the message|
+|mentions|chatMention collection| List of entities mentioned in the message. Currently supports user, bot, team, channel|
+|importance| string | The importance of the message: Normal, High|
+|reactions| chatReactions collection | Reactions for this message (ex: Like)|
+|locale|string|Locale of the message set by the client|
 
 ## JSON representation
 
@@ -30,8 +43,23 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "body": {"@odata.type": "microsoft.graph.itemBody"},
   "id": "string (identifier)",
+  "replyToId": "string (identifier)",
+  "from" : {"@odata.type": "microsoft.graph.IdentitySet"},
+  "etag": "string",
+  "messageType": "string",
+  "createdDateTime": "string (timestamp)",
+  "lastModifiedDateTime": "string (timestamp)",
+  "isDeleted": "boolean",
+  "deletedDateTime": "string (timestamp)",
+  "subject": "string",
+  "body": {"@odata.type": "microsoft.graph.itemBody"},
+  "summary": "string",
+  "attachments": [{"@odata.type": "microsoft.graph.chatAttachement"}],
+  "mentions": [{"@odata.type": "microsoft.graph.chatMention"}],
+  "importance": "string",
+  "reactions": [{"@odata.type": "microsoft.graph.chatReaction"}],
+  "locale": "string"
 }
 
 ```
