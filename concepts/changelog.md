@@ -6,11 +6,42 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## July 2018
 
+### Microsoft Teams API's
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Change|beta|Updated [chatmessage](../api-reference/beta/resources/chatmessage.md)) resource|
+|Addition|beta|Added [Chat attachment](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Chat mention](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Chat reaction](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [GET all channel messages API](../api-reference/beta/api/channel_message_list.md) |
+|Addition|beta|Added [GET channel message API](../api-reference/beta/api/channel_message_get.md) |
+|Addition|beta|Added [GET all message replies API](../api-reference/beta/api/channel_message_replies_list.md) |
+|Addition|beta|Added [Get reply to a message API](../api-reference/beta/api/channel_message_replies_get.md) |
+
+
 ### Application and servicePrincipal API changes
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Change          | Beta        | The [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) and [servicePrincipal](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/serviceprincipal) APIs will be updated in preview (beta). The first set of changes will be applied on July 16, 2018. The changes include property renaming and restructuring. Most of the existing properties will not be available until the changes are completed. There will be new properties added. The changes will be released in preview (beta) prior to releasing to v1.0. |
+
+### Microsoft Teams APIs
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Deletion|beta|Removed DELETE /groups/{id}/team/channels/{id}, use DELETE /teams/{id}/channels/{id} instead. |
+|Deletion|beta|Removed GET /groups/{id}/team/channels/{id}, use GET /teams/{id}/channels/{id} instead. |
+|Deletion|beta|Removed PATCH /groups/{id}/team/channels/{id}, use  PATCH /teams/{id}/channels/{id} instead. |
+|Deletion|beta|Removed POST /groups/{id}/team/channels/{id}/chatthreads, use POST /teams/{id}/channels/{id}/chatthreads instead. |
+|Deletion|beta|Removed GET /groups/{id}/team/channels, use GET /teams/{id}/channels instead. |
+|Deletion|beta|Removed DELETE /groups/{id}/channels/{id} , use DELETE /teams/{id}/channels/{id} instead. |
+|Deletion|beta|Removed GET /groups/{id}/channels/{id}, use GET /teams/{id}/channels/{id} instead. |
+|Deletion|beta|Removed PATCH /groups/{id}/channels/{id}, use  PATCH /teams/{id}/channels/{id} instead. |
+|Deletion|beta|Removed POST /groups/{id}/channels/{id}/chatthreads, use POST /teams/{id}/channels/{id}/chatthreads instead. |
+|Deletion|beta|Removed GET /groups/{id}/channels, use GET /teams/{id}/channels instead. |
+|Deletion|beta|Removed POST /groups/{id}/team/channels, use POST /teams/{id}/channels instead. |
+|Deletion|beta|Removed GET /groups/{id}/team, use GET /teams/{id} instead. |
+|Deletion|beta|Removed PATCH /groups/{id}/team, use PATCH /teams/{id} instead. |
+
 
 ## June 2018
 

@@ -52,7 +52,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/testBookings/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/services",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/services",
     "value": [
         {
             "id": "f9b9121f-aed7-4c8c-bb3a-a1796a0b0b2d",

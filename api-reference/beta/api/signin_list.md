@@ -83,12 +83,12 @@ Content-length: 264
 	"value": [{
 		"id": "id",
 		"createdDateTime": "2018-01-09T21:17:21.5077253Z",
-		"userDisplayName": "Bill G",
-		"userPrincipalName": "billg@microsoft.com",
+		"userDisplayName": "Jamie Doe",
+		"userPrincipalName": "jdoe@contoso.com",
 		"userId": "bbb3b4b5-e6e6-f7f5-f7f5-090805040302",
 		"appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
 		"appDisplayName": "Azure",
-		"ipAddress": "111.11.23.546",
+		"ipAddress": "127.0.0.0",
 		"status": {
 			"errorCode": 0,
 			"failureReason": null,
@@ -118,7 +118,7 @@ Content-length: 264
 			"mfaAuthMethod": "Phone Auth",
 			"mfaAuthDetail": null
 		},
-		"correlationId": "17444d3c-563d-4b08-ac20-815892b87e42",
+		"correlationId": "1B3944d3c-563d-4b08-ac20-815892b87e42",
 		"conditionalAccessApplied": true,
 		"conditionalAccessPolicies": [{
 			"id": "26490ed6-52b3-4102-aeff-aad2292abacf",
