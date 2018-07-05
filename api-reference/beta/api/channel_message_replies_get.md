@@ -1,8 +1,8 @@
-# Get channel messages
+# Get a reply to a channel message
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-This API allows you to get all the replies of a [message](../resouces/chatmmessage.md) in a [channel](../resources/channel.md) of a team.
+This API allows you to get a single reply to a [message](../resouces/chatmmessage.md) in a [channel](../resources/channel.md) of a team.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/{id}/messages/{id}/replies
+GET /teams/{id}/channels/{id}/messages/{id}/replies/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "get_channel"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
+GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -55,132 +55,128 @@ Content-length: 201
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-  "value": [
+  "id": "id-value",
+  "replyToId": "id-value",
+  "from" : {
+      "user": { 
+      "id":  "id-value",
+      "displayName": "John Doe"
+      }  
+  }
+  "etag": "id-value",
+  "messageType": "message",
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "body": {
+      "content": "This is a response to a message.",
+      "contentType": "Text"
+  },
+  "attachments": [
     {
-        "id": "id-value",
-        "replyToId": "id-value",
-        "from" : {
-            "user": { 
-            "id":  "id-value",
-            "displayName": "John Doe"
-            }  
-        }
-        "etag": "id-value",
-        "messageType": "message",
-        "createdDateTime": "datetime-value",
-        "lastModifiedDateTime": "datetime-value",
-        "body": {
-            "content": "This is a response to a message.",
-            "contentType": "Text"
-        },
-        "attachments": [
-        {
-          "id": "string (identifier)",
-          "contentType": "string",
-          "contentUrl": "string",
-          "content": {
-            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-            "type": "AdaptiveCard",
-            "version": "1.0",
-            "speak": "The forecast for Seattle January 20 is mostly clear with a High of 51 degrees and Low of 40 degrees",
-            "body": [
+      "id": "string (identifier)",
+      "contentType": "string",
+      "contentUrl": "string",
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "speak": "The forecast for Seattle January 20 is mostly clear with a High of 51 degrees and Low of 40 degrees",
+        "body": [
+          {
+            "type": "TextBlock",
+            "text": "Seattle, WA",
+            "size": "large",
+            "isSubtle": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "September 18, 7:30 AM",
+            "spacing": "none"
+          },
+          {
+            "type": "ColumnSet",
+            "columns": [
               {
-                "type": "TextBlock",
-                "text": "Seattle, WA",
-                "size": "large",
-                "isSubtle": true
-              },
-              {
-                "type": "TextBlock",
-                "text": "September 18, 7:30 AM",
-                "spacing": "none"
-              },
-              {
-                "type": "ColumnSet",
-                "columns": [
+                "type": "Column",
+                "width": "auto",
+                "items": [
                   {
-                    "type": "Column",
-                    "width": "auto",
-                    "items": [
-                      {
-                        "type": "Image",
-                        "url": "http://messagecardplayground.azurewebsites.net/assets/Mostly%20Cloudy-Square.png",
-                        "size": "small"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "Column",
-                    "width": "auto",
-                    "items": [
-                      {
-                        "type": "TextBlock",
-                        "text": "42",
-                        "size": "extraLarge",
-                        "spacing": "none"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                      {
-                        "type": "TextBlock",
-                        "text": "°F",
-                        "weight": "bolder",
-                        "spacing": "small"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                      {
-                        "type": "TextBlock",
-                        "text": "Hi 51",
-                        "horizontalAlignment": "left"
-                      },
-                      {
-                        "type": "TextBlock",
-                        "text": "Lo 40",
-                        "horizontalAlignment": "left",
-                        "spacing": "none"
-                      }
-                    ]
+                    "type": "Image",
+                    "url": "http://messagecardplayground.azurewebsites.net/assets/Mostly%20Cloudy-Square.png",
+                    "size": "small"
                   }
                 ]
-            }
-          ]
-        },
-        "name": "string",
-        "thumbnailUrl": "string"
-      }
-    ],
-        "mentions": [
-            {
-                "type": "user",
-                "id": "id-value ",
-                "mentionText": "Test User",
-            }
-        ],
-        "importance": "normal",
-        "reactions": [
-            {
-                "type": "like",
-                "user": [
-                { 
-                    "id":  "id-value",
-                    "displayName": "John Doe"
-                }
-                ],
-                "createdDateTime": "date-value"
-            }
-        ]
-        "locale": "en-us"
+              },
+              {
+                "type": "Column",
+                "width": "auto",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "42",
+                    "size": "extraLarge",
+                    "spacing": "none"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "stretch",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "°F",
+                    "weight": "bolder",
+                    "spacing": "small"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "stretch",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "Hi 51",
+                    "horizontalAlignment": "left"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "Lo 40",
+                    "horizontalAlignment": "left",
+                    "spacing": "none"
+                  }
+                ]
+              }
+            ]
+        }
+      ]
+    },
+      "name": "string",
+      "thumbnailUrl": "string"
     }
-  ]
+  ],
+  "mentions": [
+      {
+          "type": "user",
+          "id": "id-value ",
+          "mentionText": "Test User",
+      }
+  ],
+  "importance": "normal",
+  "reactions": [
+      {
+          "type": "like",
+          "user": [
+          { 
+              "id":  "id-value",
+              "displayName": "John Doe"
+          }
+          ],
+          "createdDateTime": "date-value"
+      }
+  ],
+  "locale": "en-us"
 }
 ```
 
