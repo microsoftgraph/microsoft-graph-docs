@@ -6,6 +6,19 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## July 2018
 
+### Microsoft Teams API's
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Change|beta|Updated [chatmessage](../api-reference/beta/resources/chatmessage.md)) resource|
+|Addition|beta|Added [Chat attachment](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Chat mention](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Chat reaction](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [GET all channel messages API](../api-reference/beta/api/channel_message_list.md) |
+|Addition|beta|Added [GET channel message API](../api-reference/beta/api/channel_message_get.md) |
+|Addition|beta|Added [GET all message replies API](../api-reference/beta/api/channel_message_replies_list.md) |
+|Addition|beta|Added [Get reply to a message API](../api-reference/beta/api/channel_message_replies_get.md) |
+
+
 ### Application and servicePrincipal API changes
 
 | **Change type** | **Version** | **Description**                          |
