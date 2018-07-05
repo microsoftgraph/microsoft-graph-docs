@@ -8,8 +8,10 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List Channel messages](../api/channel_message_get.md) | [chatmessage](chatmessage.md) collection | Get the root messages in a channel.|
-|[List replies to a message](../api/channel_message_replies_get.md) | [chatmessage](chatmessage.md) collection| Get the replies of a message in channel.|
+|[List Channel messages](../api/channel_message_list.md) | [chatmessage](chatmessage.md) collection | Get the list of all root messages in a channel.|
+|[Get Channel message](../api/channel_message_get.md) | [chatmessage](chatmessage.md) | Get a single root message from a channel.|
+|[List replies to a message](../api/channel_message_replies_list.md) | [chatmessage](chatmessage.md) collection| Get the list of all replies to a message in channel.|
+|[Get a reply to a message](../api/channel_message_replies_get.md) | [chatmessage](chatmessage.md)| Get a single reply to a message in a channel.|
 
 ## Properties
 | Property	   | Type	|Description|
