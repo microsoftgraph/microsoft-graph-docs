@@ -20,18 +20,6 @@ That means the transition from daylight saving time to standard occurs at 2 AM o
 | time | Edm.TimeOfDay | Represents the time of day when the transition from daylight saving time to standard time occurs. |
 | year | Edm.Int32 | Represents how frequently in terms of years the change from daylight saving time to standard time occurs. For example, a value of 0 means every year.|
 
-### dayOfWeek values
-
-| Value
-|:-------------------------
-| sunday
-| monday
-| tuesday
-| wednesday
-| thursday
-| friday
-| saturday
-
 ## JSON representation
 
 Here is a JSON representation of the resource.

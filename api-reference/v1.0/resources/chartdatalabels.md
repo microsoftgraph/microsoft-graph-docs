@@ -13,7 +13,7 @@ Represents a collection of all the data labels on a chart point.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|position|string|DataLabelPosition value that represents the position of the data label. Possible values are: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
+|position|string|DataLabelPosition value that represents the position of the data label. The possible values are: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
 |separator|string|String representing the separator used for the data labels on a chart.|
 |showBubbleSize|boolean|Boolean value representing if the data label bubble size is visible or not.|
 |showCategoryName|boolean|Boolean value representing if the data label category name is visible or not.|

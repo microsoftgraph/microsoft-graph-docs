@@ -30,18 +30,8 @@ Represents a class within a school. The **educationClass** resource corresponds 
 |classCode|String| Class code used by the school to identify the class.|
 |externalId|String| ID of the class from the syncing system. |
 |externalName|String|Name of the class in the syncing system.|
-|externalSource|educationExternalSource| How this class was created. Possible values are: `sis`, `manual`, `unknownFutureValue`.|
+|externalSource|educationExternalSource| How this class was created. The possible values are: `sis`, `manual`, `unknownFutureValue`.|
 |term|[educationTerm](educationterm.md)|Term for this class.|
-
-### educationExternalSource values
-
-| Value
-|:-------------------------
-| sis
-| manual
-| unknownFutureValue
-
-
 
 ## Relationships
 | Relationship | Type	|Description|

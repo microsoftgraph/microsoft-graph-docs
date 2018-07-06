@@ -28,7 +28,7 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |name|string|The display name of the worksheet.|
 |position|int|The zero-based position of the worksheet within the workbook.|
-|visibility|string|The Visibility of the worksheet. Possible values are: `Visible`, `Hidden`, `VeryHidden`.|
+|visibility|string|The Visibility of the worksheet. The possible values are: `Visible`, `Hidden`, `VeryHidden`.|
 
 ## Response
 

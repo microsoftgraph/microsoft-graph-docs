@@ -6,19 +6,8 @@ The response status of a meeting request.
 
 | Property | Type           | Description |
 |:---------|:---------------|:------------|
-| response | responseType   | The response type. Possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
+| response | responseType   | The response type. The possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
 | time     | DateTimeOffset | The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`
-
-### responseType values
-
-| Value
-|:-------------------------
-| none
-| organizer
-| tentativelyAccepted
-| accepted
-| declined
-| notResponded
 
 ## JSON representation
 

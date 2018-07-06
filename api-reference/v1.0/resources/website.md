@@ -6,20 +6,9 @@ Represents a website.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|websiteType| Possible values are: `other`, `home`, `work`, `blog`, `profile`.|
+|type|websiteType| The possible values are: `other`, `home`, `work`, `blog`, `profile`.|
 |address|string|The URL of the website.|
 |displayName|string|The display name of the web site.|
-
-### websiteType values
-
-| Value
-|:-------------------------
-| other
-| home
-| work
-| blog
-| profile
-
 
 ## JSON representation
 

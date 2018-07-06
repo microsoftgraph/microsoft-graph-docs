@@ -32,8 +32,8 @@ In the request body, provide a JSON object with the following parameters.
 |fields|WorkbookSortField collection|The list of conditions to sort on.|
 |matchCase|boolean|Optional. Whether to have the casing impact string ordering.|
 |hasHeaders|boolean|Optional. Whether the range has a header.|
-|orientation|string|Optional. Whether the operation is sorting rows or columns.  Possible values are: `Rows`, `Columns`.|
-|method|string|Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.|
+|orientation|string|Optional. Whether the operation is sorting rows or columns.  The possible values are: `Rows`, `Columns`.|
+|method|string|Optional. The ordering method used for Chinese characters.  The possible values are: `PinYin`, `StrokeCount`.|
 
 ## Response
 

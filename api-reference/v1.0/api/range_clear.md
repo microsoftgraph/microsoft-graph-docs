@@ -29,7 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|applyTo|string|Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.|
+|applyTo|string|Optional. Determines the type of clear action.  The possible values are: `All`, `Formats`, `Contents`.|
 
 ## Response
 

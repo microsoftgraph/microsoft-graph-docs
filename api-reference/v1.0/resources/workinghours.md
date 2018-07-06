@@ -21,18 +21,6 @@ appropriate time zone.
 | endTime | Edm.TimeOfDay | The time of the day that the user stops working. |
 | timeZone | [timeZoneBase](timezonebase.md) | The time zone to which the working hours apply. |
 
-### dayOfWeek values
-
-| Value
-|:-------------------------
-| sunday
-| monday
-| tuesday
-| wednesday
-| thursday
-| friday
-| saturday
-
 ## JSON representation
 
 Here is a JSON representation of the resource.

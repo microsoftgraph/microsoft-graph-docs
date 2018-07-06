@@ -9,22 +9,8 @@ Inherits from [windowsUpdateInstallScheduleType](../resources/intune_deviceconfi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|scheduledInstallDay|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Scheduled Install Day in week. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|scheduledInstallDay|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Scheduled Install Day in week. The possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |scheduledInstallTime|TimeOfDay|Scheduled Install Time during day|
-
-### weeklySchedule values
-
-| Value
-|:-------------------------
-| userDefined
-| everyday
-| sunday
-| monday
-| tuesday
-| wednesday
-| thursday
-| friday
-| saturday
 
 ## Relationships
 None

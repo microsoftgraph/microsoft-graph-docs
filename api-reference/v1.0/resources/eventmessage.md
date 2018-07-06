@@ -55,7 +55,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an at
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
 |id|String|Unique identifier for the event message (note that this value may change if a message is moved or altered)|
 |importance|String| The importance of the message: `low`, `normal`, `high`.|
-|inferenceClassification|String| Possible values are: `focused`, `other`.|
+|inferenceClassification|String| The possible values are: `focused`, `other`.|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only.|
 |internetMessageId |String |The message ID in the format specified by [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
@@ -73,17 +73,6 @@ Aside from a meeting request, an **eventMessage** instance can be found in an at
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
 |uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message.|
 |webLink|String|The URL to open the message in Outlook Web App.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook Web App review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL can be accessed from within an iFrame.|
-
-### meetingMessageType values
-
-| Value
-|:-----------------
-| none
-| meetingRequest
-| meetingCancelled
-| meetingAccepted
-| meetingTentativelyAccepted
-| meetingDeclined
 
 ## Relationships
 | Relationship | Type	|Description|

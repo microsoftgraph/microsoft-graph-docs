@@ -28,15 +28,6 @@ Here is a JSON representation of the resource.
 |lastActionDateTime| DateTimeOffset |The time of the last action of the operation.|
 |status|operationStatus|The current status of the operation: `notStarted`, `running`, `completed`, `failed` |
 
-### operationStatus values
-
-| Value
-|:-----------------
-| NotStarted
-| Running
-| Completed
-| Failed
-
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->
 <!-- {

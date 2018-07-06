@@ -36,16 +36,6 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 |expirationDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object expired on the server.|
 |status | status | Set by the server. A status code used to identify valid objects. Values: active, updated, deleted, ignored.|
 
-### status values
-
-| Value
-|:-----------------
-| active
-| updated
-| deleted
-| ignored
-| unknownFutureValue
-
 ## Relationships
 
 |Relationship | Type | Description|

@@ -21,7 +21,7 @@ RangeView represents a set of visible cells of the parent range.
 |numberFormat|Json|Represents Excel's number format code for the given cell. Read-only.	|
 |rowCount|Int32|Returns the number of visible rows. Read-only.	|
 |text|Json|Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.	|
-|valueTypes|Json|Represents the type of data of each cell. Read-only. Possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error.	|
+|valueTypes|Json|Represents the type of data of each cell. Read-only. The possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error.	|
 |values|Json|Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.	|
 
 ## Relationships

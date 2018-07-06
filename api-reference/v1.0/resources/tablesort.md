@@ -17,7 +17,7 @@ Manages sorting operations on Table objects.
 |:---------------|:--------|:----------|
 |fields|[WorkbookSortField](sortfield.md) collection|Represents the current conditions used to last sort the table. Read-only.|
 |matchCase|boolean|Represents whether the casing impacted the last sort of the table. Read-only.|
-|method|string|Represents Chinese character ordering method last used to sort the table. Possible values are: `PinYin`, `StrokeCount`. Read-only.|
+|method|string|Represents Chinese character ordering method last used to sort the table. The possible values are: `PinYin`, `StrokeCount`. Read-only.|
 
 ## JSON representation
 

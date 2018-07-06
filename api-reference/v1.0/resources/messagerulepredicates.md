@@ -24,11 +24,11 @@ Represents the set of conditions and exceptions that are available for a rule.
 | isReadReceipt | Boolean | Indicates whether an incoming message must be a read receipt in order for the condition or exception to apply. |
 | isSigned | Boolean | Indicates whether an incoming message must be S/MIME-signed in order for the condition or exception to apply. |
 | isVoicemail | Boolean | Indicates whether an incoming message must be a voice mail in order for the condition or exception to apply. |
-| messageActionFlag | messageActionFlag  | Represents the flag-for-action value that appears on an incoming message in order for the condition or exception to apply. Possible values are: `any`, `call`, `doNotForward`, `followUp`, `fyi`, `forward`, `noResponseNecessary`, `read`, `reply`, `replyToAll`, `review`. |
+| messageActionFlag | messageActionFlag  | Represents the flag-for-action value that appears on an incoming message in order for the condition or exception to apply. The possible values are: `any`, `call`, `doNotForward`, `followUp`, `fyi`, `forward`, `noResponseNecessary`, `read`, `reply`, `replyToAll`, `review`. |
 | notSentToMe | Boolean | Indicates whether the owner of the mailbox must not be a recipient of an incoming message in order for the condition or exception to apply. |
 | recipientContains | Collection(String) | Represents the strings that appear in either the **toRecipients** or **ccRecipients** properties of an incoming message in order for the condition or exception to apply. |
 | senderContains | Collection(String) | Represents the strings that appear in the **from** property of an incoming message in order for the condition or exception to apply. |
-| sensitivity | sensitivity | Represents the sensitivity level that must be stamped on an incoming message in order for the condition or exception to apply. Possible values are: `normal`, `personal`, `private`, `confidential`. |
+| sensitivity | sensitivity | Represents the sensitivity level that must be stamped on an incoming message in order for the condition or exception to apply. The possible values are: `normal`, `personal`, `private`, `confidential`. |
 | sentCcMe | Boolean | Indicates whether the owner of the mailbox must be in the **ccRecipients** property of an incoming message in order for the condition or exception to apply. |
 | sentOnlyToMe | Boolean | Indicates whether the owner of the mailbox must be the only recipient in an incoming message in order for the condition or exception to apply. |
 | sentToAddresses | Collection([recipient](recipient.md)) | Represents the email addresses that an incoming message must have been sent to in order for the condition or exception to apply. |
@@ -36,39 +36,6 @@ Represents the set of conditions and exceptions that are available for a rule.
 | sentToOrCcMe | Boolean | Indicates whether the owner of the mailbox must be in either a **toRecipients** or **ccRecipients** property of an incoming message in order for the condition or exception to apply. |
 | subjectContains | Collection(String) | Represents the strings that appear in the subject of an incoming message in order for the condition or exception to apply. |
 | withinSizeRange | [sizeRange](sizerange.md) | Represents the minimum and maximum sizes (in kilobytes) that an incoming message must fall in between in order for the condition or exception to apply. |
-
-### messageActionFlag values
-
-| Value
-|:-------------------------
-| any
-| call
-| doNotForward
-| followUp
-| fyi
-| forward
-| noResponseNecessary
-| read
-| reply
-| replyToAll
-| review
-
-### importance values
-
-| Value
-|:-----------------
-| low
-| normal
-| high
-
-### sensitivity values
-
-| Value
-|:-----------------
-| normal
-| personal
-| private
-| confidential
 
 ## JSON representation
 Here is a JSON representation of the resource.

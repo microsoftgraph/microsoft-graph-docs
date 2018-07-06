@@ -51,16 +51,6 @@ Here is a JSON representation of the resource
 |self|String|The endpoint where you can get details about the notebook. Read-only.|
 |userRole|onenoteUserRole|Possible values are: `Owner`, `Contributor`, `Reader`, `None`. Owner represents owner-level access to the notebook. Contributor represents read/write access to the notebook. Reader represents read-only access to the notebook. Read-only.|
 
-### onenoteUserRole values
-
-| Member      | Value
-|:------------|:------------
-| Owner       | 0
-| Contributor | 1
-| Reader      | 2
-| None        | -1
-
-
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|

@@ -31,7 +31,7 @@ Represents an Excel table.
 |name|string|Name of the table.|
 |showHeaders|boolean|Indicates whether the header row is visible or not. This value can be set to show or remove the header row.|
 |showTotals|boolean|Indicates whether the total row is visible or not. This value can be set to show or remove the total row.|
-|style|string|Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.|
+|style|string|Constant value that represents the Table style. The possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.|
 |highlightFirstColumn|Boolean|Indicates whether the first column contains special formatting.	|
 |highlightLastColumn|Boolean|Indicates whether the last column contains special formatting.	|
 |showBandedColumns|Boolean|Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.	|

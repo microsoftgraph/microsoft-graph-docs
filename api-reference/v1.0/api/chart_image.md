@@ -31,7 +31,7 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |height|Int32|The desired height of the resulting image. Optional.|
 |width|Int32|The desired width of the resulting image. Optional.|
-|fittingMode|string|The method used to scale the chart to the specified dimensions (if both height and width are set)."  Possible values are: `Fit`, `FitAndCenter`, `Fill`.|
+|fittingMode|string|The method used to scale the chart to the specified dimensions (if both height and width are set)."  The possible values are: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## Response
 

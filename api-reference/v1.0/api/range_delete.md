@@ -29,7 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|shift|string|Specifies which way to shift the cells.  Possible values are: `Up`, `Left`.|
+|shift|string|Specifies which way to shift the cells.  The possible values are: `Up`, `Left`.|
 
 ## Response
 

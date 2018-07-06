@@ -34,7 +34,7 @@ In the request body, supply the values for relevant fields that should be update
 |classCode|String| Class code used by the school.|
 |externalId|String| ID of the class from the syncing system. |
 |externalName|String|Name of the class in the syncing system.|
-|externalSource|string| How this class was created. Possible values are: `sis`, `manual`, `enum_sentinel`.|
+|externalSource|string| How this class was created. The possible values are: `sis`, `manual`, `enum_sentinel`.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [educationClass](../resources/educationclass.md) object in the response body.

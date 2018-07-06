@@ -37,21 +37,6 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 |name|String|The calendar name.|
 |owner |[emailAddress](emailaddress.md) | If set, this represents the user who created or added the calendar. For a calendar that the user created or added, the **owner** property is set to the user. For a calendar shared with the user, the **owner** property is set to the person who shared that calendar with the user. |
 
-### calendarColor values
-| Member     | Value
-|:-----------|:----------
-| auto       | -1
-| lightBlue  | 0
-| lightGreen | 1
-| lightOrange| 2
-| lightGray  | 3
-| lightYellow| 4
-| lightTeal  | 5
-| lightPink  | 6
-| lightBrown | 7
-| lightRed   | 8
-| maxColor   | 9
-
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|

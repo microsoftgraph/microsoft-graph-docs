@@ -9,7 +9,7 @@ Device Configuration Setting State for a given device.
 |setting|String|The setting that is being reported|
 |settingName|String|Localized/user friendly setting name that is being reported|
 |instanceDisplayName|String|Name of setting instance that is being reported.|
-|state|[complianceStatus](../resources/intune_deviceconfig_compliancestatus.md)|The compliance state of the setting. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|state|[complianceStatus](../resources/intune_deviceconfig_compliancestatus.md)|The compliance state of the setting. The possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |errorCode|Int64|Error code for the setting|
 |errorDescription|String|Error description|
 |userId|String|UserId|
@@ -18,18 +18,6 @@ Device Configuration Setting State for a given device.
 |userPrincipalName|String|UserPrincipalName.|
 |sources|[settingSource](../resources/intune_deviceconfig_settingsource.md) collection|Contributing policies|
 |currentValue|String|Current value of setting on device|
-
-### complianceStatus values
-
-| Value
-|:-------------------------
-| unknown
-| notApplicable
-| compliant
-| remediated
-| nonCompliant
-| error
-| conflict
 
 ## Relationships
 None

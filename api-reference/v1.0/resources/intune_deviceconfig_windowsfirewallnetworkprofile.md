@@ -6,7 +6,7 @@ Windows Firewall Profile Policies.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|firewallEnabled|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Turn on the firewall and advanced security enforcement. Possible values are: `notConfigured`, `blocked`, `allowed`.|
+|firewallEnabled|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Turn on the firewall and advanced security enforcement. The possible values are: `notConfigured`, `blocked`, `allowed`.|
 |stealthModeBlocked|Boolean|Prevent the server from operating in stealth mode|
 |incomingTrafficBlocked|Boolean|Configures the firewall to block all incoming traffic regardless of other policy settings|
 |unicastResponsesToMulticastBroadcastsBlocked|Boolean|Configures the firewall to block unicast responses to multicast broadcast traffic|
@@ -18,15 +18,6 @@ Windows Firewall Profile Policies.
 |inboundConnectionsBlocked|Boolean|Configures the firewall to block all incoming connections by default|
 |securedPacketExemptionAllowed|Boolean|Configures the firewall to allow the host computer to respond to unsolicited network traffic of that traffic is secured by IPSec even when stealthModeBlocked is set to true|
 |policyRulesFromGroupPolicyMerged|Boolean|Configures the firewall to merge Firewall Rule policies from group policy with those from local store instead of ignoring the local store rules|
-
-### stateManagementSetting values
-
-| Value
-|:-------------------------
-| notConfigured
-| blocked
-| allowed
-
 
 ## Relationships
 None

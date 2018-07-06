@@ -28,7 +28,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |passwordBlockSimple|Boolean|Whether or not to block syncing the calendar.|
 |passwordMinimumLength|Int32|Minimum password length. Valid values 4 to 16|
 |passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|The required password type. The possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent re-use of.|
 |passwordExpirationDays|Int32|Number of days before password expiration. Valid values 1 to 255|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
@@ -40,14 +40,6 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |secureBootEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation - secure boot is enabled.|
 |codeIntegrityEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation.|
 |storageRequireEncryption|Boolean|Require encryption on windows devices.|
-
-### requiredPasswordType values
-
-| Value
-|:-------------------------
-| deviceDefault
-| alphanumeric
-| numeric
 
 ## Relationships
 |Relationship|Type|Description|

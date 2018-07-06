@@ -18,7 +18,7 @@ This object represents the font attributes (font name, font size, color, etc.) f
 |italic|boolean|Represents the italic status of the font.|
 |name|string|Font name (e.g. "Calibri")|
 |size|double|Font size.|
-|underline|string|Type of underline applied to the font. Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|underline|string|Type of underline applied to the font. The possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
 ## Relationships
 None

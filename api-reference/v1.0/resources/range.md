@@ -51,7 +51,7 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 |rowHidden|boolean|Represents if all rows of the current range are hidden.|
 |rowIndex|int|Returns the row number of the first cell in the range. Zero-indexed. Read-only.|
 |text|Json|Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.|
-|valueTypes|Json|Represents the type of data of each cell. Possible values are: `Unknown`, `Empty`, `String`, `Integer`, `Double`, `Boolean`, `Error`. Read-only.|
+|valueTypes|Json|Represents the type of data of each cell. The possible values are: `Unknown`, `Empty`, `String`, `Integer`, `Double`, `Boolean`, `Error`. Read-only.|
 |values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
 
 ## Relationships
