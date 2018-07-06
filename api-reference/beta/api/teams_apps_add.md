@@ -16,21 +16,23 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/apps/{id}
+POST /teams/{id}/apps
 ```
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Supply an empty request body for this method:
 
-```http
-{ }
-```
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|id|String|The id of the app to add|
+
 
 ## Response
 
@@ -43,7 +45,10 @@ The following is an example of the request.
   "name": "get_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/apps/{id}
+POST https://graph.microsoft.com/beta/teams/{id}/apps
+{
+  "id": "12345678-9abc-def0-123456789a"
+}
 ```
 #### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

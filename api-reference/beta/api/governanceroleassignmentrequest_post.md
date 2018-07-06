@@ -60,7 +60,7 @@ If successful, this method returns a `201, Created` response code and a [governa
 ## Error codes
 This API follows the standard of HTTP codes, in addition to the error codes listed in the following table.
 
-|Error code     | Error message              | Details
+|Error code     | Error message              | Details |
 |:--------------------| :---------------------|:--------------------|
 | 400 BadRequest | RoleNotFound    | The `roleDefinitionId` provided in the request body cannot be found.
 | 400 BadRequest | ResourceIsLocked    | The resource provided in the request body is in state of `Locked` and cannot create role assignment requests.

@@ -12,7 +12,7 @@ Contains stateful information about the process related to the alert.
 |authenticodeHash256|String|Authenticode 256 hash of image file (used by AppLocker and others).|
 |commandLine|String|The full process invocation commandline including all parameters.|
 |createdDateTime|DateTimeOffset|Time at which the process was started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|integrityLevel|String|The integrity level of the process. Possible values are: `unknown`, `untrusted`, `low`, `medium`, `high`, `system`.|
+|integrityLevel|[processIntegrityLevel](processintegritylevelenumtype.md) enum|The integrity level of the process. Possible values are: `unknown`, `untrusted`, `low`, `medium`, `high`, `system`.|
 |isElevated|Boolean|True if the process is elevated.|
 |name|String|The name of the process' Image file.|
 |parentProcessCreatedDateTime|DateTimeOffset|DateTime at which the parent process was started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
   "authenticodeHash256": "String",
   "commandLine": "String",
   "createdDateTime": "String (timestamp)",
-  "integrityLevel": "String",
+  "integrityLevel": "@odata.type: microsoft.graph.processIntegrityLevel",
   "isElevated": true,
   "name": "String",
   "parentProcessCreatedDateTime": "String (timestamp)",

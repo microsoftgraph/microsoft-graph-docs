@@ -9,8 +9,8 @@ Proxied Domain
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ipAddressOrFQDN|String|The IP address or FQDN|
-|proxy|String|Proxy IP|
+|ipAddressOrFQDN|String|The IP address or FQDN.|
+|proxy|String|Proxy IP or FQDN.|
 
 ## Relationships
 None

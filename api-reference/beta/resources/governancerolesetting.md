@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents a set of configurations on each role definition that needs to be evaluated against when role assignments are created or modified. For example, role settings might include "maximum assignment duration", "MFA required on activation", and so on.
+Represents a set of configurations on each role definition that needs to be evaluated against when role assignments are created or modified. For example, role settings might include "maximum assignment duration" rule, "MFA required on activation" rule, and so on.
 
 ## Methods
 
@@ -23,7 +23,7 @@ Represents a set of configurations on each role definition that needs to be eval
 |lastUpdatedBy        |String                                  |Read-only. The display name of the administrator who last updated the roleSetting.|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) collection|The rule settings that are evaluated when an administrator tries to add an eligible role assignment.|
 |adminMemberSettings  |[governanceRuleSetting](../resources/governancerulesetting.md) collection|The rule settings that are evaluated when an administrator tries to add a direct member role assignment.|
-|userEligibleSettings |[governanceRuleSetting](../resources/governancerulesetting.md) collection|The rule settings that are evaluated when a user tries to add an eligible role assignment. The setting is not supported for now in the `pimforazurerbac` scenario.|
+|userEligibleSettings |[governanceRuleSetting](../resources/governancerulesetting.md) collection|The rule settings that are evaluated when a user tries to add an eligible role assignment. The setting is not supported for now.|
 |userMemberSettings   |[governanceRuleSetting](../resources/governancerulesetting.md) collection|The rule settings that are evaluated when a user tries to activate his role assignment.|
 
 ## Relationships

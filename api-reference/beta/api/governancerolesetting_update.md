@@ -41,10 +41,10 @@ If successful, this method returns `204 NoContent` response code. It does not re
 
 ## Error codes
 This API follows the standard of HTTP codes. Besides, the custom error codes are shown below.
-|Error code     | Error message              | Details
-|:--------------------| :---------------------|:--------------------|
-| 400 BadRequest | RoleSettingNotFound | The [governanceRoleSetting](../resources/governancerolesetting.md) does not exist in system.
-| 400 BadRequest | InvalidRoleSetting    | The [governanceRuleSettings](../resources/governancerulesetting.md) values provided in the request body are not valid.
+|Error code     | Error message         | Details             |
+|:--------------| :---------------------|:--------------------|
+| 400 BadRequest| RoleSettingNotFound   | The [governanceRoleSetting](../resources/governancerolesetting.md) does not exist in system.
+| 400 BadRequest| InvalidRoleSetting    | The [governanceRuleSettings](../resources/governancerulesetting.md) values provided in the request body are not valid.
 
 ## Example 
 This example updates the role setting for Custom Role 3 in the subscription Wingtip Toys - Prod.

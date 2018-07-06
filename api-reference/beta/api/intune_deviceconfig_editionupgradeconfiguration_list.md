@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 560
+Content-Length: 592
 
 {
   "value": [
@@ -63,11 +63,14 @@ Content-Length: 560
       "licenseType": "licenseFile",
       "targetEdition": "windows10EnterpriseN",
       "license": "License value",
-      "productKey": "Product Key value"
+      "productKey": "Product Key value",
     }
   ]
 }
 ```
+
+
+
 
 
 

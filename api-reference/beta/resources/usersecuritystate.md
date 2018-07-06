@@ -14,10 +14,10 @@ Contains stateful information about the user account.
 |logonId|String|User sign-in ID.|
 |logonIpAddress|String|IP Address the sign-in request originated from.|
 |logonLocation|String|Location (by IP address mapping) associated with a user sign-in event by this user.|
-|logonType|String|Method of user signin. Possible values are: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
+|logonType|[logonType](logontypeenumtype.md) enum|Method of user signin. Possible values are: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 |onPremisesSecurityIdentifier|String|Active Directory (on-premises) Security Identifier (SID) of the user.|
 |riskScore|String|Provider-generated/calculated risk score of the user account.|
-|userAccountType|String|User account type (group membership), per Windows definition. Possible values are: `unknown`, `standard`, `power`, `administrator`.|
+|userAccountType|[userAccountSecurityType](useraccountsecuritytypeenumtype.md) enum|User account type (group membership), per Windows definition. Possible values are: `unknown`, `standard`, `power`, `administrator`.|
 |userPrincipalName|String|User sign-in name - internet format: (user account name)@(user account DNS domain name).|
 
 ## JSON representation
@@ -40,10 +40,10 @@ The following is a JSON representation of the resource.
   "logonId": "String",
   "logonIpAddress": "String",
   "logonLocation": "String",
-  "logonType": "String",
+  "logonType": "@odata.type: microsoft.graph.logonType",
   "onPremisesSecurityIdentifier": "String",
   "riskScore": "String",
-  "userAccountType": "String",
+  "userAccountType": "@odata.type: microsoft.graph.userAccountSecurityType",
   "userPrincipalName": "String"
 }
 

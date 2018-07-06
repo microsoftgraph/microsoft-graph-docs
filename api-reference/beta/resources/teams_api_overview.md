@@ -12,7 +12,7 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 | Add and remove channels               | [channel](../resources/channel.md) | [Create channel](../api/group_post_channels.md) |
 | Add apps to team                      | [teamsApp](../resources/teamsApp.md) | [Add apps](../api/teams_apps_add.md) |
 | Post a message                        | [chatMessage](../resources/chatmessage.md) | [Post a message](../api/channel_post_chatthreads.md) |
-| Change team settings                  | [teamMemberSettings](../resources/teammembersettings.md), [teamGuestSettings](../resources/teamGuestSettings.md), [teamMessagingSettings](../resources/teammessagingsettings.md), [teamFunSettings](../resources/teamGuestSettings.md) |                                                              |
+| Change team settings                  | [teamMemberSettings](../resources/teammembersettings.md), [teamGuestSettings](../resources/teamGuestSettings.md), [teamMessagingSettings](../resources/teammessagingsettings.md), [teamFunSettings](../resources/teamFunSettings.md) |                                                              |
 | Archive the team                      | [team](team.md) | [Archive team](../api/team_archive.md) | 
 | Get the photo of a member of a team   | [profilePhoto](../../v1.0/api/profilephoto_get.md) |                                                              |
 | List notebooks for a Team             | [Notebook](../../v1.0/resources/notebook.md) | [List notebooks in a group](../../v1.0/api/onenote_list_notebooks.md) |

@@ -4,7 +4,7 @@
 
 Represents the request for role assignment operations in Privilegd Identity Management.
 
-`governanceRoleAssignmentRequest` is a request-modeled entity used to manage the lifecycle of role assignments. It represents the intention or decision of the users and administrators, and also provides the flexibility to enable implementation of recurrent schduling, approval gates, and so on, as compared to directly exposing `POST`, `PUT`, and `DELETE` operations on `governanceRoleAssignment`.
+`governanceRoleAssignmentRequest` is a ticket-modeled entity used to manage the lifecycle of role assignments. It represents the intention/decision of the users and administrators, and also provides the flexibility to enable implementation of recurrent schduling, approval gates, and so on, as compared to directly exposing `POST`, `PUT`, and `DELETE` operations on `governanceRoleAssignment`.
 
 ## Methods
 

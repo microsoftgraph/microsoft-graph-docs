@@ -36,7 +36,7 @@ The group has the same id as the team -- ie, /groups/{id}/team is the same as /t
 
 | Relationship | Type	| Description |
 |:---------------|:--------|:----------|
-|apps|[teamsApp](teamsApp.md) collection|The collection of apps installed in this team.|
+|apps|[teamsApp](teamsapp.md) collection|The collection of apps installed in this team.|
 |channels|[channel](channel.md) collection|The collection of channels associated with the team.|
 
 ## JSON representation

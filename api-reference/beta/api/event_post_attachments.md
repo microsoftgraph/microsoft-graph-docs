@@ -160,9 +160,9 @@ Content-type: application/json
 Content-length: 162
 
 {
-    "@odata.context":"https://graph.microsoft.com/api/beta/$metadata#me/events('AAMkAGI1AAAt9AHjAAA=')/attachments/$entity",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/events('AAMkAGI1AAAt9AHjAAA=')/attachments/$entity",
     "@odata.type":"#microsoft.graph.itemAttachment",
-    "@odata.id":"https://graph.microsoft.com/api/beta/users('fdcbcf34-2505-4d07-be5b-0a55b699d157@41a5b830-45ac-4f1b-9bfc-baafa3b7db2e')/events('AAMkAGI1AAAt9AHjAAA=')/attachments('AAMkADNkN2Jp5JVnQIe9r0=')",
+    "@odata.id":"https://graph.microsoft.com/beta/users('fdcbcf34-2505-4d07-be5b-0a55b699d157@41a5b830-45ac-4f1b-9bfc-baafa3b7db2e')/events('AAMkAGI1AAAt9AHjAAA=')/attachments('AAMkADNkN2Jp5JVnQIe9r0=')",
     "id":"AAMkADNkNJp5JVnQIe9r0=",
     "lastModifiedDateTime":"2016-12-01T22:27:13Z",
     "name":"Holiday event",
