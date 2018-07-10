@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 12618
+Content-Length: 12816
 
 {
   "value": [
@@ -92,6 +92,7 @@ Content-Length: 12618
       "searchDisableIndexingEncryptedItems": true,
       "searchEnableRemoteQueries": true,
       "searchDisableUseLocation": true,
+      "searchDisableLocation": true,
       "searchDisableIndexerBackoff": true,
       "searchDisableIndexingRemovableDrive": true,
       "searchEnableAutomaticIndexSizeManangement": true,
@@ -101,6 +102,7 @@ Content-Length: 12618
       "oneDriveDisableFileSync": true,
       "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
       "inkWorkspaceAccess": "enabled",
+      "inkWorkspaceAccessState": "blocked",
       "inkWorkspaceBlockSuggestedApps": true,
       "smartScreenEnableAppInstallControl": true,
       "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
@@ -152,6 +154,7 @@ Content-Length: 12618
       "defenderScanMaxCpu": 2,
       "defenderMonitorFileActivity": "disable",
       "defenderPotentiallyUnwantedAppAction": "block",
+      "defenderPotentiallyUnwantedAppActionSetting": "enable",
       "defenderProcessesToExclude": [
         "Defender Processes To Exclude value"
       ],
@@ -173,6 +176,7 @@ Content-Length: 12618
       "defenderScheduledQuickScanTime": "11:58:49.3840000",
       "defenderCloudBlockLevel": "high",
       "defenderCloudExtendedTimeout": 12,
+      "defenderCloudExtendedTimeoutInSeconds": 5,
       "defenderBlockOnAccessProtection": true,
       "defenderScheduleScanDay": "monday",
       "defenderSubmitSamplesConsentType": "alwaysPrompt",
@@ -325,6 +329,9 @@ Content-Length: 12618
   ]
 }
 ```
+
+
+
 
 
 

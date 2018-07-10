@@ -15,6 +15,7 @@ You purchase multiple licenses for iOS apps through the Apple Volume Purchase Pr
 |[Update vppToken](../api/intune_onboarding_vpptoken_update.md)|[vppToken](../resources/intune_onboarding_vpptoken.md)|Update the properties of a [vppToken](../resources/intune_onboarding_vpptoken.md) object.|
 |[syncLicenses action](../api/intune_onboarding_vpptoken_synclicenses.md)|[vppToken](../resources/intune_onboarding_vpptoken.md)|Syncs licenses associated with a specific appleVolumePurchaseProgramToken|
 |[revokeLicenses action](../api/intune_onboarding_vpptoken_revokelicenses.md)|None|Revoke licenses associated with a specific appleVolumePurchaseProgramToken|
+|[getLicensesForApp function](../api/intune_onboarding_vpptoken_getlicensesforapp.md)|[vppTokenLicenseSummary](../resources/intune_onboarding_vpptokenlicensesummary.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -71,6 +72,9 @@ Here is a JSON representation of the resource.
   "dataSharingConsentGranted": true
 }
 ```
+
+
+
 
 
 

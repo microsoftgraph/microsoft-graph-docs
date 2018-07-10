@@ -1,6 +1,7 @@
-# Update plannerplan
+# Update plannerPlan
 
-Update the properties of **plannerplan** object.
+Update the properties of **plannerPlan** object.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -15,7 +16,9 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 PATCH /planner/plans/<id>
 ```
-## Optional request headers
+
+## Request headers
+
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}. Required. |

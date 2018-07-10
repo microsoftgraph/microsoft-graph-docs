@@ -51,6 +51,8 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |defenderVersion|String|Require Windows Defender Antimalware minimum version on Windows devices.|
 |signatureOutOfDate|Boolean|Require Windows Defender Antimalware Signature to be up to date on Windows devices.|
 |rtpEnabled|Boolean|Require Windows Defender Antimalware Real-Time Protection on Windows devices.|
+|antivirusRequired|Boolean|Require any Antivirus solution registered with Windows Decurity Center to be on and monitoring (e.g. Symantec, Windows Defender).|
+|antiSpywareRequired|Boolean|Require any AntiSpyware solution registered with Windows Decurity Center to be on and monitoring (e.g. Symantec, Windows Defender).|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune_deviceconfig_operatingsystemversionrange.md) collection|The valid operating system build ranges on Windows devices. This collection can contain a maximum of 10000 elements.|
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Require Device Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
@@ -108,6 +110,8 @@ Here is a JSON representation of the resource.
   "defenderVersion": "String",
   "signatureOutOfDate": true,
   "rtpEnabled": true,
+  "antivirusRequired": true,
+  "antiSpywareRequired": true,
   "validOperatingSystemBuildRanges": [
     {
       "@odata.type": "microsoft.graph.operatingSystemVersionRange",
@@ -120,6 +124,9 @@ Here is a JSON representation of the resource.
   "deviceThreatProtectionRequiredSecurityLevel": "String"
 }
 ```
+
+
+
 
 
 

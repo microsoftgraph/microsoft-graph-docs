@@ -50,6 +50,7 @@ The following table shows the properties that are required when you create the a
 |servers|[vpnServer](../resources/intune_deviceconfig_vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements.|
 |fingerprint|String|Fingerprint is a string that will be used to verify the VPN server can be trusted, which is only applicable when connection type is Check Point Capsule VPN.|
 |customData|[keyValue](../resources/intune_deviceconfig_keyvalue.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
+|customKeyValueData|[keyValuePair](../resources/intune_shared_keyvaluepair.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune_deviceconfig_vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
 
 
@@ -63,7 +64,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 797
+Content-length: 957
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkVpnConfiguration",
@@ -91,6 +92,13 @@ Content-length: 797
       "value": "Value value"
     }
   ],
+  "customKeyValueData": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
   "authenticationMethod": "usernameAndPassword"
 }
 ```
@@ -100,7 +108,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 905
+Content-Length: 1065
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkVpnConfiguration",
@@ -130,9 +138,19 @@ Content-Length: 905
       "value": "Value value"
     }
   ],
+  "customKeyValueData": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
   "authenticationMethod": "usernameAndPassword"
 }
 ```
+
+
+
 
 
 

@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11896
+Content-Length: 12431
 
 {
   "value": {
@@ -180,16 +180,26 @@ Content-Length: 11896
       "Defender Attack Surface Reduction Excluded Paths value"
     ],
     "defenderOfficeAppsOtherProcessInjectionType": "block",
+    "defenderOfficeAppsOtherProcessInjection": "enable",
     "defenderOfficeAppsExecutableContentCreationOrLaunchType": "block",
+    "defenderOfficeAppsExecutableContentCreationOrLaunch": "enable",
     "defenderOfficeAppsLaunchChildProcessType": "block",
+    "defenderOfficeAppsLaunchChildProcess": "enable",
     "defenderOfficeMacroCodeAllowWin32ImportsType": "block",
+    "defenderOfficeMacroCodeAllowWin32Imports": "enable",
     "defenderScriptObfuscatedMacroCodeType": "block",
+    "defenderScriptObfuscatedMacroCode": "enable",
     "defenderScriptDownloadedPayloadExecutionType": "block",
+    "defenderScriptDownloadedPayloadExecution": "enable",
     "defenderPreventCredentialStealingType": "enable",
     "defenderProcessCreationType": "block",
+    "defenderProcessCreation": "enable",
     "defenderUntrustedUSBProcessType": "block",
+    "defenderUntrustedUSBProcess": "enable",
     "defenderUntrustedExecutableType": "block",
+    "defenderUntrustedExecutable": "enable",
     "defenderEmailContentExecutionType": "block",
+    "defenderEmailContentExecution": "enable",
     "defenderAdvancedRansomewareProtectionType": "enable",
     "defenderGuardMyFoldersType": "enable",
     "defenderGuardedFoldersAllowedAppPaths": [
@@ -271,6 +281,9 @@ Content-Length: 11896
   }
 }
 ```
+
+
+
 
 
 

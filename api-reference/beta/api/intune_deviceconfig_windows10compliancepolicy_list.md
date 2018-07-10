@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1888
+Content-Length: 1958
 
 {
   "value": [
@@ -84,6 +84,8 @@ Content-Length: 1888
       "defenderVersion": "Defender Version value",
       "signatureOutOfDate": true,
       "rtpEnabled": true,
+      "antivirusRequired": true,
+      "antiSpywareRequired": true,
       "validOperatingSystemBuildRanges": [
         {
           "@odata.type": "microsoft.graph.operatingSystemVersionRange",
@@ -98,6 +100,9 @@ Content-Length: 1888
   ]
 }
 ```
+
+
+
 
 
 

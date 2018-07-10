@@ -17,7 +17,7 @@ Contains properties used to assign a eBook to a group.
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|The assignment target for eBook.|
-|installIntent|[installIntent](../resources/intune_books_installintent.md)|The install intent for eBook. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|The install intent for eBook. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 ## Relationships
 None

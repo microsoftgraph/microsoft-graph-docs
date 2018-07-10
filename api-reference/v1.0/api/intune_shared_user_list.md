@@ -11,7 +11,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)| _varies by context_|
 | &nbsp; &nbsp; Devices | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 | &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
-| &nbsp; &nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp; &nbsp; On-boarding | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; Troubleshooting | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
@@ -38,14 +38,17 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [user](../resources/intune_shared_user.md) objects in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
+
 ``` http
 GET https://graph.microsoft.com/v1.0/users
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

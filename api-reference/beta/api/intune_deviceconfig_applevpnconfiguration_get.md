@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1873
+Content-Length: 2047
 
 {
   "value": {
@@ -78,6 +78,13 @@ Content-Length: 1873
       {
         "@odata.type": "microsoft.graph.keyValue",
         "key": "Key value",
+        "value": "Value value"
+      }
+    ],
+    "customKeyValueData": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "Name value",
         "value": "Value value"
       }
     ],
@@ -114,6 +121,9 @@ Content-Length: 1873
   }
 }
 ```
+
+
+
 
 
 

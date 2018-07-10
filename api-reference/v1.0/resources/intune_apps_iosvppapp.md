@@ -39,7 +39,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |licensingType|[vppLicensingType](../resources/intune_apps_vpplicensingtype.md)|The supported License Type.|
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The applicable iOS Device Type.|
 |vppTokenOrganizationName|String|The organization associated with the Apple Volume Purchase Program Token|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune_apps_vpptokenaccounttype.md)|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
 |vppTokenAppleId|String|The Apple Id associated with the given Apple Volume Purchase Program Token.|
 |bundleId|String|The Identity Name.|
 

@@ -87,6 +87,29 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
 
+## Bookings
+
+### ErrorExceededFindCountLimit when querying bookingBusinesses
+
+Getting the list of `bookingBusinesses` fails with the following error code when an organization has several Bookings businesses and the account making the request is not an administrator:
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+As a workaround, you can limit the set of businesses returned by the request by including a `query` parameter, for example:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
+
 ## Calendars
 
 ### Adding and accessing ICS-based calendars in user's mailbox
@@ -188,6 +211,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 The **comment** parameter for creating a reply or forward draft ([createReply](../api-reference/v1.0/api/message_createreply.md),
 [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md))
 does not become part of the body of the resultant message draft.
+
 
 ## Drives, files and content streaming
 

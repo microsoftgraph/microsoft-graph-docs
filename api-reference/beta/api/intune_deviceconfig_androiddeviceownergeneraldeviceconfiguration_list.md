@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1828
+Content-Length: 1987
 
 {
   "value": [
@@ -93,6 +93,9 @@ Content-Length: 1828
       "stayOnModes": [
         "ac"
       ],
+      "systemUpdateWindowStartMinutesAfterMidnight": 11,
+      "systemUpdateWindowEndMinutesAfterMidnight": 9,
+      "systemUpdateInstallType": "postpone",
       "usersBlockAdd": true,
       "usersBlockRemove": true,
       "volumeBlockAdjustment": true,
@@ -102,6 +105,9 @@ Content-Length: 1828
   ]
 }
 ```
+
+
+
 
 
 
