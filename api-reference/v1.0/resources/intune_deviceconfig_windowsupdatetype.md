@@ -9,6 +9,9 @@ Which branch devices will receive their updates from
 |userDefined|0|Allow the user to set.|
 |all|1|Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted).|
 |businessReadyOnly|2|Semi-annual Channel. Device gets feature updates from Semi-annual Channel.|
+|windowsInsiderBuildFast|3|Windows Insider build - Fast|
+|windowsInsiderBuildSlow|4|Windows Insider build - Slow|
+|windowsInsiderBuildRelease|5|Release Windows Insider build|
 
 
 

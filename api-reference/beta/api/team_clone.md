@@ -72,7 +72,6 @@ POST /teams/{id}/clone
 Content-Type: application/json
 
 {  
-     "classification": "MBI",
      "displayName": "Library Assist",
      "description": "Self help community for library",
      "mailNickname": "libassist",
@@ -90,11 +89,9 @@ The following is an example of the response. Note: The response object shown her
 } -->
 ```http
 HTTP/1.1 202 Accepted
-Content-type: application/json
-Location: /groups/06805b9e-77e3-4b93-ac81-525eb87513b8/team/operations/c5d5908e-7c3c-43ff-9079-160a647b54e4
-
-{  
-}
+Location: /teams({id})/operations({opId})
+Content-Type: text/plain
+Content-Length: 0
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

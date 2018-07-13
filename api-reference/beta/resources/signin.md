@@ -1,7 +1,5 @@
 # signIn resource type
-This represent a resource that details the user or application sign-in activity in your tenant 
-
-
+This resource details user or application sign-in activity in your directory. 
 
 ## Methods
 
