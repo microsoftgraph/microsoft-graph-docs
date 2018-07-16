@@ -25,6 +25,9 @@ Here is a JSON representation of the resource.
   "deleted": 1024,
   "remaining": 1024,
   "state": "normal | nearing | critical | exceeded",
+  "storagePlans": {
+    "upgradeAvailable": true
+  },
   "total": 1024,
   "used": 1024
 }
@@ -32,13 +35,14 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-| Property name | Type   | Description                                                                 |
-|:--------------|:-------|:----------------------------------------------------------------------------|
-| total         | Int64  | Total allowed storage space, in bytes. Read-only.                           |
-| used          | Int64  | Total space used, in bytes. Read-only.                                      |
-| remaining     | Int64  | Total space remaining before reaching the quota limit, in bytes. Read-only. |
-| deleted       | Int64  | Total space consumed by files in the recycle bin, in bytes. Read-only.      |
-| state         | string | Enumeration value that indicates the state of the storage space. Read-only. |
+| Property name | Type                            | Description                                                                  |
+|:--------------|:--------------------------------|:-----------------------------------------------------------------------------|
+| total         | Int64                           | Total allowed storage space, in bytes. Read-only.                            |
+| used          | Int64                           | Total space used, in bytes. Read-only.                                       |
+| remaining     | Int64                           | Total space remaining before reaching the quota limit, in bytes. Read-only.  |
+| deleted       | Int64                           | Total space consumed by files in the recycle bin, in bytes. Read-only.       |
+| state         | string                          | Enumeration value that indicates the state of the storage space. Read-only.  |
+| storagePlans  | [storagePlans](storagePlans.md) | Information about the drive's storage quota plans. Only in Personal OneDrive.|
 
 ## State Enumeration
 

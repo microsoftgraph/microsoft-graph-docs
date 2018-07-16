@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 To begin a large file upload, your app must first request a new upload session.
 This creates a temporary storage location where the bytes of the file will be saved until the complete file is uploaded.
 Once the last byte of the file has been uploaded the upload session is completed and the final file is shown in the destination folder.
+Alternatively, you can defer final creation of the file in the destination until you explicitly make a request to complete the upload, by setting the `deferCommit` property in the request arguments.
 
 ### HTTP request
 
@@ -47,15 +48,26 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### Request body
 
 No request body is required.
-However, you can specify a request body to provide additional data about the file being uploaded.
+However, you can specify properties in the request body providing additional data about the file being uploaded and customizing the semantics of the upload operation.
 
-For example, to control the behavior if the filename is already taken, you can specify the conflict behavior property in the body of the request.
+For example, the `item` property allows setting the following parameters:
+```json
+{
+  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "description": "description",
+  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
+  "name": "filename.txt"
+}
+```
+
+The following example controls the behavior if the filename is already taken, and also specifies that the final file should not be created until an explicit completion request is made:
 
 ```json
 {
-    "item": {
-        "@microsoft.graph.conflictBehavior": "rename"
-    }
+  "item": {
+    "@microsoft.graph.conflictBehavior": "rename"
+  },
+  "deferCommit": true
 }
 ```
 
@@ -63,9 +75,24 @@ For example, to control the behavior if the filename is already taken, you can s
 
 | Name       | Value | Description                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *if-match* | etag  | If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` errr response is returned. |
+| *if-match* | etag  | If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` error response is returned. |
 
-### Response
+## Parameters
+
+| Parameter            | Type                          | Description
+|:---------------------|:------------------------------|:---------------------------------
+| item                 | driveItemUploadableProperties | Data about the file being uploaded
+| deferCommit          | Boolean                       | If set to true, final creation of the file in the destination will require an explicit request. Only on OneDrive for Business.
+
+## Item Properties
+
+| Property             | Type               | Description
+|:---------------------|:-------------------|:---------------------------------
+| description          | String             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
+| fileSystemInfo       | [fileSystemInfo][] | File system information on client. Read-write.
+| name                 | String             | The name of the item (filename and extension). Read-write.
+
+### Request
 
 The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
 
@@ -107,7 +134,7 @@ Content-Type: application/json
 To upload the file, or a portion of the file, your app makes a PUT request to the **uploadUrl** value received in the **createUploadSession** response.
 You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 60 MiB.
 
-The fragments of the file must be uploaded sequentally in order.
+The fragments of the file must be uploaded sequentially in order.
 Uploading fragments out of order will result in an error.
 
 **Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes). 
@@ -183,7 +210,10 @@ Content-Type: application/json
 
 ## Completing a file
 
-When the last byte range of a file is received the server will response with an `HTTP 201 Created` or `HTTP 200 OK`.
+If `deferCommit` is false or unset, then the upload is automatically completed when the final byte range of the file is PUT to the upload URL.
+If `deferCommit` is true, then after the final byte range of the file is PUT to the upload URL, the upload should be explicitly completed by a final POST request to the upload url with zero-length content.
+
+When the upload is completed, the server will respond to the final request with an `HTTP 201 Created` or `HTTP 200 OK`.
 The response body will also include the default property set for the **driveItem** representing the completed file.
 
 <!-- { "blockType": "request", "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
@@ -194,6 +224,28 @@ Content-Length: 21
 Content-Range: bytes 101-127/128
 
 <final bytes of the file>
+```
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "912310013A123",
+  "name": "largefile.vhd",
+  "size": 128,
+  "file": { }
+}
+```
+
+
+<!-- { "blockType": "request", "name": "commit-upload", "scopes": "files.readwrite" } -->
+
+```
+POST https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
+Content-Length: 0
 ```
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
@@ -308,7 +360,7 @@ Content-Type: application/json
 If-Match: {etag or ctag}
 
 {
-  "name": "largefile_2.vhd",
+  "name": "largefile.vhd",
   "@microsoft.graph.conflictBehavior": "rename",
   "@microsoft.graph.sourceUrl": "{upload session URL}"
 }
@@ -355,6 +407,7 @@ how errors are returned.
 
 [error-response]: ../../../concepts/errors.md
 [item-resource]: ../resources/driveitem.md
+[fileSystemInfo]: ../resources/filesysteminfo.md
 
 <!-- {
   "type": "#page.annotation",
