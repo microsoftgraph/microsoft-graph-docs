@@ -6,6 +6,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## July 2018
 
+### Microsoft OneDrive & SharePoint APIs
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta        | Added the **deferCommit** argument to the [createUploadSession](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/driveitem_createuploadsession) action on [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/driveitem)|
+| Addition        | Beta        | Added the [storagePlans](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/storagePlans) complex type |
+| Addition        | Beta        | Added the **storagePlans** property to the [quota](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/quota) complex type |
+
 ### Application and servicePrincipal API changes
 
 | **Change type** | **Version** | **Description**                          |
