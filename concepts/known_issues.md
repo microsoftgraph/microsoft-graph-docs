@@ -60,10 +60,6 @@ Examples of group features that support only delegated permissions:
 
 Microsoft Teams and Office 365 groups [share similar functionality](../api-reference/beta/resources/teams_api_overview.md). All group APIs can be used with teams, with the exception that the Create group API does not currently allow you to create a team.  Future API releases will support this.
 
-### Microsoft Teams channels (preview)
-
-Currently, you can read and create channels, but you cannot update or delete them.  Future API releases will support this.
-
 ### Microsoft Teams chat threads and chat messages (preview)
 
 Currently, you can create chat threads in channels, but you cannot read existing chat threads or add replies to them. Also, you cannot read or write direct chats between users that are outside the scope of a team or channel.  Future API releases will add additional capabilities in this area.

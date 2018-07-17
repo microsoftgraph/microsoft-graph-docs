@@ -6,7 +6,8 @@ A team in Microsoft Teams is a collection of [channels](channel.md).
 A channel represents a topic, and therefore a logical isolation of discussion, within a team.
 
 Every team is associated with a [group](../resources/group.md).
-The group has the same id as the team -- ie, /groups/{id}/team is the same as /teams/{id}.
+The group has the same ID as the team - for example, /groups/{id}/team is the same as /teams/{id}.
+For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams_api_overview.md).
 
 ## Methods
 
@@ -19,6 +20,7 @@ The group has the same id as the team -- ie, /groups/{id}/team is the same as /t
 |[Clone team](../api/team_clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
 |[Archive team](../api/team_archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
 |[Unarchive team](../api/team_unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
+|[List your teams](../api/user_list_joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
 
 
 ## Properties
@@ -89,3 +91,6 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+## See Also
+[Teams API Overview](teams_api_overview.md)
