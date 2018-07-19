@@ -45,7 +45,6 @@ Content-type: application/json
 Content-length: 67
 
 {
-  "allowPublicClient": true,
   "displayName": "Display name"
 }
 ```
