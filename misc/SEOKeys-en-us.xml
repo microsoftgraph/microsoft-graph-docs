@@ -2489,7 +2489,6 @@
 		<Item text="Activity feed" url="/en-us/api-reference/beta/resources/activity-feed-api-overview" >
 			<Item text="Activity" url="/en-us/api-reference/beta/resources/projectrome_activity" >
 				<Item text="Create or replace an activity" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
-				<Item text="Create or replace activity" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
 				<Item text="Delete an activity" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
 				<Item text="Get activities" url="/en-us/api-reference/beta/api/projectrome_get_activities" />
 				<Item text="Get recent activities" url="/en-us/api-reference/beta/api/projectrome_get_recent_activities" />
@@ -2512,12 +2511,13 @@
 			<Item text="Unpublish" url="/en-us/api-reference/beta/api/bookingbusiness_unpublish" />
 		</Item>
 		<Item text="Booking appointment" url="/en-us/api-reference/beta/resources/bookingappointment" >
-			<Item text="List" url="/en-us/api-reference/beta/api/bookingbusiness_list_appointments" />
-			<Item text="Create" url="/en-us/api-reference/beta/api/bookingbusiness_post_appointments" />
-			<Item text="Get" url="/en-us/api-reference/beta/api/bookingappointment_get" />
-			<Item text="Update" url="/en-us/api-reference/beta/api/bookingappointment_update" />
-			<Item text="Delete" url="/en-us/api-reference/beta/api/bookingappointment_delete" />
-			<Item text="Cancel" url="/en-us/api-reference/beta/api/bookingappointment_cancel" />
+			<Item text="List calendar view" url="/en-us/api-reference/beta/api/bookingbusiness_list_calendarview" />
+			<Item text="List appointments" url="/en-us/api-reference/beta/api/bookingbusiness_list_appointments" />
+			<Item text="Create appointment" url="/en-us/api-reference/beta/api/bookingbusiness_post_appointments" />
+			<Item text="Get appointment" url="/en-us/api-reference/beta/api/bookingappointment_get" />
+			<Item text="Update appointment" url="/en-us/api-reference/beta/api/bookingappointment_update" />
+			<Item text="Delete appointment" url="/en-us/api-reference/beta/api/bookingappointment_delete" />
+			<Item text="Cancel appointment" url="/en-us/api-reference/beta/api/bookingappointment_cancel" />
 		</Item>
 		<Item text="Booking currency" url="/en-us/api-reference/beta/resources/bookingcurrency" >
 			<Item text="List" url="/en-us/api-reference/beta/api/bookingcurrency_list" />
@@ -5173,7 +5173,6 @@
           <Item text="Delete application" url="/en-us/api-reference/beta/api/application_delete" SEOKeyword="Delete application, Microsoft Graph API, application API" SEODescription="Delete application." />
           <Item text="List owners" url="/en-us/api-reference/beta/api/application_list_owners" SEOKeyword="List owners, Microsoft Graph API, application API" SEODescription="Retrieve a list of directoryobject objects." />
           <Item text="Assign owner" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Create owner, Microsoft Graph API, application API" SEODescription="Use this API to create a new owner." />
-          <Item text="List extension properties" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="List extensionProperties, Microsoft Graph API, application API" SEODescription="Retrieve a list of extensionproperty objects." />
         </Item>
 	  <Item text="Audit logs"  url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="Directory audit" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="directoryAudit object, Microsoft Graph API, Azure AD, audit logs" SEODescription="">
@@ -5247,11 +5246,6 @@
         <Item text="Get domain" url="/en-us/api-reference/beta/api/domain_get" />
         <Item text="Update domain" url="/en-us/api-reference/beta/api/domain_update" />
         <Item text="Verify domain" url="/en-us/api-reference/beta/api/domain_verify" />
-      </Item>
-      <Item text="Extension property" url="/en-us/api-reference/beta/resources/extensionproperty" SEOKeyword="extensionproperty API, Microsoft Graph API, extensionproperty API" SEODescription="Allows an application to define and use a set of additional properties that can be added to directory objects (users, groups, tenant details, devices, applications, and service principals) without the application requiring an external data store. For more information about extension properties, see Azure AD Graph API Directory Schema Extensions(https://msdn.microsoft.com/en-us/library/azure/dn720459.aspx). Inherits from DirectoryObject.">
-        <Item text="Get extensionProperty" url="/en-us/api-reference/beta/api/extensionproperty_get" SEOKeyword="Get extensionProperty, Microsoft Graph API, extensionproperty API" SEODescription="Retrieve the properties and relationships of extensionproperty object." />
-        <Item text="Update extensionproperty" url="/en-us/api-reference/beta/api/extensionproperty_update" SEOKeyword="Update extensionproperty, Microsoft Graph API, extensionproperty API" SEODescription="Update the properties of extensionproperty object." />
-        <Item text="Delete extensionProperty" url="/en-us/api-reference/beta/api/extensionproperty_delete" SEOKeyword="Delete extensionProperty, Microsoft Graph API, extensionproperty API" SEODescription="Delete extensionProperty." />
       </Item>
     <Item text="Identity protection" url="/en-us/api-reference/beta/resources/identityprotection_root" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection" SEODescription="API for querying data from and using Azure Active Directory Identity Protection">
       <Item text="Identity risk events" url="/en-us/api-reference/beta/resources/identityriskevent" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection, Event Risk, Identity Risk" SEODescription="Queries risk event data from Azure AD Identity Protection">
