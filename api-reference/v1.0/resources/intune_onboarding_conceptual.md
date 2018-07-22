@@ -6,10 +6,6 @@ You can enroll devices, including Windows PCs, to enable mobile device managemen
 
 The following Graph resources are available to manage enrollment in Intune:
 
-- [DEP token type](intune_enrollment_deptokentype.md)
-- [Enrollment state](intune_enrollment_enrollmentstate.md)
+- [Imported windows autopilot device identity](intune_enrollment_importedwindowsautopilotdeviceidentity.md)
 - [Imported windows autopilot device identity import status](intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus.md)
 - [Imported windows autopilot device identity state](intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)
-- [Imported windows autopilot device identity](intune_enrollment_importedwindowsautopilotdeviceidentity.md)
-- [Platform](intune_enrollment_platform.md)
-- [Saved UI state generation options](intune_enrollment_saveduistategenerationoptions.md)

@@ -76,7 +76,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|The Bcc: recipients for the message.|
 |body|[itemBody](itembody.md)|The body of the message. It can be in HTML or text format.|
-|bodyPreview|String|The first 255 characters of the message body. It is in text format.|
+|bodyPreview|String|The first 255 characters of the message body. It is in text format. If the message contains instances of [mention](mention.md), this property would contain a concatenation of these mentions as well. |
 |categories|String collection|The categories associated with the message. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) defined for the user. |
 |ccRecipients|[recipient](recipient.md) collection|The Cc: recipients for the message.|
 |changeKey|String|The version of the message.|

@@ -11,7 +11,6 @@ Contains properties for a generic mime content.
 
 ## Relationships
 None
-
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

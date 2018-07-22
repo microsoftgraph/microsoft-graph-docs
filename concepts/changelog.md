@@ -12,6 +12,28 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Change          | Beta        | The [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) and [servicePrincipal](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/serviceprincipal) APIs will be updated in preview (beta). The first set of changes will be applied on July 16, 2018. The changes include property renaming and restructuring. Most of the existing properties will not be available until the changes are completed. There will be new properties added. The changes will be released in preview (beta) prior to releasing to v1.0. |
 
+### Microsoft Teams APIs
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Deletion|beta|Removed DELETE /groups/{id}/team/channels/{id}, use DELETE /teams/{id}/channels/{id} instead. |
+|Deletion|beta|Removed GET /groups/{id}/team/channels/{id}, use GET /teams/{id}/channels/{id} instead. |
+|Deletion|beta|Removed PATCH /groups/{id}/team/channels/{id}, use  PATCH /teams/{id}/channels/{id} instead. |
+|Deletion|beta|Removed POST /groups/{id}/team/channels/{id}/chatthreads, use POST /teams/{id}/channels/{id}/chatthreads instead. |
+|Deletion|beta|Removed GET /groups/{id}/team/channels, use GET /teams/{id}/channels instead. |
+|Deletion|beta|Removed DELETE /groups/{id}/channels/{id} , use DELETE /teams/{id}/channels/{id} instead. |
+|Deletion|beta|Removed GET /groups/{id}/channels/{id}, use GET /teams/{id}/channels/{id} instead. |
+|Deletion|beta|Removed PATCH /groups/{id}/channels/{id}, use  PATCH /teams/{id}/channels/{id} instead. |
+|Deletion|beta|Removed POST /groups/{id}/channels/{id}/chatthreads, use POST /teams/{id}/channels/{id}/chatthreads instead. |
+|Deletion|beta|Removed GET /groups/{id}/channels, use GET /teams/{id}/channels instead. |
+|Deletion|beta|Removed POST /groups/{id}/team/channels, use POST /teams/{id}/channels instead. |
+|Deletion|beta|Removed GET /groups/{id}/team, use GET /teams/{id} instead. |
+|Deletion|beta|Removed PATCH /groups/{id}/team, use PATCH /teams/{id} instead. |
+
+### Webhooks
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Breaking change | Beta and v1.0 | Reduced [webhooks](../api-reference/v1.0/resources/webhooks.md) [maximum length of subscription expiration time](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) for drive root items to 3 days. | 
+
 ## June 2018
 
 ### Directory APIs
@@ -24,6 +46,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 |Change type|Version|Description|
 |:---|:---|:---|
+|Addition|v1.0|Added the **connectorServerName** property to the [deviceManagementExchangeConnector](../api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnector.md) entity|
+|Addition|v1.0|Added the **firewallEnabled**, **firewallBlockAllIncoming** and **firewallEnableStealthMode** properties to the [macOSCompliancePolicy](../api-reference/v1.0/resources/intune_deviceconfig_macoscompliancepolicy.md) entity|
+|Addition|v1.0|Added the **unknown** member to the [iosUpdatesInstallStatus](../api-reference/v1.0/resources/intune_deviceconfig_iosupdatesinstallstatus.md) enum type|
 |Addition|beta|Added new entities:<br/>[androidDeviceOwnerWiFiConfiguration](../api-reference/beta/resources/intune_deviceconfig_androiddeviceownerwificonfiguration.md)<br/>[iosVppAppAssignedDeviceLicense](../api-reference/beta/resources/intune_apps_iosvppappassigneddevicelicense.md)<br/>[iosVppAppAssignedLicense](../api-reference/beta/resources/intune_apps_iosvppappassignedlicense.md)<br/>[iosVppAppAssignedUserLicense](../api-reference/beta/resources/intune_apps_iosvppappassigneduserlicense.md)<br/>[managedDeviceMobileAppConfigurationState](../api-reference/beta/resources/intune_deviceconfig_manageddevicemobileappconfigurationstate.md)<br/>[userPFXCertificate](../api-reference/beta/resources/intune_raimportcerts_userpfxcertificate.md)<br/>[vppTokenLicenseSummary](../api-reference/beta/resources/intune_onboarding_vppTokenLicenseSummary.md)<br/>|
 |Addition|beta|Added new complex types:<br/>[iosVppAppRevokeLicensesActionResult](../api-reference/beta/resources/intune_apps_iosvppapprevokelicensesactionresult.md)<br/>|
 |Addition|beta|Added new enum types:<br/>[androidDeviceOwnerSystemUpdateInstallType](../api-reference/beta/resources/intune_deviceconfig_androiddeviceownersystemupdateinstalltype.md)<br/>[androidDeviceOwnerWiFiSecurityType](../api-reference/beta/resources/intune_deviceconfig_androiddeviceownerwifisecuritytype.md)<br/>[userPfxIntendedPurpose](../api-reference/beta/resources/intune_raimportcerts_userpfxintendedpurpose.md)<br/>[userPfxPaddingScheme](../api-reference/beta/resources/intune_raimportcerts_userpfxpaddingscheme.md)<br/>|

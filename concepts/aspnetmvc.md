@@ -59,8 +59,8 @@ The redirect URI is the URL of the project that you registered. The requested [p
 
 In this step, you'll focus on the **SDKHelper**, **GraphService**, and **HomeController** classes. 
 
- - **SDKHelper** intializes an instance of the **GraphServiceClient** from the library before each call to the Microsoft Graph. This is when the access token is added to the request. 
- - **GraphService** builds and sends requests to the Microsoft Graph using the library, and processes the responses.
+ - **SDKHelper** intializes an instance of the **GraphServiceClient** from the library before each call to Microsoft Graph. This is when the access token is added to the request. 
+ - **GraphService** builds and sends requests to Microsoft Graph using the library, and processes the responses.
  - **HomeController** contains actions that initiate the calls to the library in response to UI events.
 
 The starter project already declares a dependency for the Microsoft Graph .NET Client Library NuGet package:  *Microsoft.Graph*.
@@ -104,7 +104,7 @@ The starter project already declares a dependency for the Microsoft Graph .NET C
 
   Note the call to **SampleAuthProvider** to get the token when the client is initialized.
 
-1. In the **Models** folder, open GraphService.cs. The service uses the library to interact with the Microsoft Graph.
+1. In the **Models** folder, open GraphService.cs. The service uses the library to interact with Microsoft Graph.
 
 1. Add the following **using** statement.
 

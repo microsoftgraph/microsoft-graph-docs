@@ -1,8 +1,8 @@
 # Create and send Outlook messages
 
-Emails are represented by the [message](../api-reference/v1.0/resources/message.md) resource in Microsoft Graph. 
+Emails are represented by the [message](../api-reference/v1.0/resources/message.md) resource in Microsoft Graph.
 
-By default, messages are identified by a unique entry ID in the **id** property. A store provider assigns a message an entry ID when the message is initially 
+By default, messages are identified by a unique entry ID in the **id** property. A store provider assigns a message an entry ID when the message is initially
 saved as a draft or sent. That ID changes when the message is copied or moved to another folder, store, or .PST file.
 
 ## Creating and sending mail
@@ -11,9 +11,9 @@ In Outlook, you can create and send an email in the same [sendMail](../api-refer
 
 Similarly, when responding to an email, you can create and send the response in the same action ([reply](../api-reference/v1.0/api/message_reply.md), [reply-all](../api-reference/v1.0/api//message_replyall.md), or [forward](../api-reference/v1.0/api/message_forward.md)). Or, you can create a draft for the response ([reply](../api-reference/v1.0/api/message_createreply.md), [reply-all](../api-reference/v1.0/api//message_createreplyall.md), or [forward](../api-reference/v1.0/api/message_createforward.md)), [add content](../api-reference/v1.0/api/message_update.md), and then [send](../api-reference/v1.0/api/message_send.md) the draft at a later time.
 
-To distinguish between a draft and a sent message programmatically, check the **isDraft** property. 
+To distinguish between a draft and a sent message programmatically, check the **isDraft** property.
 
-By default, draft messages are saved in the `Drafts` folder, sent messages are saved in the `Sent Items` folder. For convenience, you can identify the Drafts folder and SentItems folder by their corresponding well-known folder names. For example, you can do the following to [get the messages](../api-reference/v1.0/api/user_list_messages.md) in the Drafts folder:
+By default, draft messages are saved in the `Drafts` folder, sent messages are saved in the `Sent Items` folder. For convenience, you can identify the Drafts folder and SentItems folder by their corresponding [well-known folder names](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names). For example, you can do the following to [get the messages](../api-reference/v1.0/api/user_list_messages.md) in the Drafts folder:
 
 ```http
 GET /me/mailfolders('Drafts')
@@ -21,18 +21,20 @@ GET /me/mailfolders('Drafts')
 
 ### Body format and malicious script
 
-<!-- Remove the following 2 sections from the message.md topics 
+<!-- Remove the following 2 sections from the message.md topics
 -->
 
 The message body can be either HTML or text, with HTML as the default message body type returned in a GET response.
 
 When [getting a message](../api-reference/v1.0/api/message_get.md), you can specify the following request header to return the **body** and **uniqueBody** properties in text format:
 
-```
+```http
 Prefer: outlook.body-content-type="text"
 ```
+
 You can specify the following header, or, just skip the header, to get the message body in HTML format:
-```
+
+```http
 Prefer: outlook.body-content-type="html"
 ```
 
@@ -44,7 +46,8 @@ When you specify either header, a successful response would include the correspo
 If the body is HTML, by default, Outlook removes any potentially unsafe HTML (for example, JavaScript) embedded in the **body** property before returning the body content in a REST response.
 
 To get the entire, original HTML content, include the following HTTP request header:
-```
+
+```http
 Prefer: outlook.allow-unsafe-html
 ```
 
@@ -57,7 +60,7 @@ When a message is being composed, in most cases, Outlook sets the **from** and *
 
 ## Using MailTips to check recipient status and save time (preview)
 
-Use [MailTips](../api-reference/beta/resources/mailtips.md) to make smart decisions before sending an email. 
+Use [MailTips](../api-reference/beta/resources/mailtips.md) to make smart decisions before sending an email.
 MailTips can tell you information such as the recipient's mailbox is restricted to specific senders, or approval is required for emailing the recipient.
 
 ## Integrating with '@' social gesture (preview)
@@ -67,8 +70,7 @@ You can:
 
 - Create @-mentions when [creating a message](../api-reference/beta/api/user_post_messages.md#request-2)
 - [Get all the messages in a user's mailbox that contain an @-mention of the user](../api-reference/beta/api/user_list_messages.md#request-2)
-- [Get all the @-mention is a message](../api-reference/beta/api/message_get.md#request-2) 
-
+- [Get all the @-mention is a message](../api-reference/beta/api/message_get.md#request-2)
 
 ## Other shared capabilities
 

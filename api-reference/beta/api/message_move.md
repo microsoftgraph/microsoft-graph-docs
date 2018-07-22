@@ -8,8 +8,8 @@ Move a message to a folder. This creates a new copy of the message in the destin
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
+| Permission type | Permissions (from least to most privileged) |
+|:----------------|:--------------------------------------------|
 |Delegated (work or school account) | Mail.ReadWrite    |
 |Delegated (personal Microsoft account) | Mail.ReadWrite    |
 |Application | Mail.ReadWrite |
@@ -27,10 +27,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. |
+| Header | Value |
+|:-------|:------|
+| Authorization | `Bearer {token}`. Required. |
+| Content-Type | `application/json`. Required. |
 
 ## Request body
 
@@ -38,11 +38,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter   | Type |Description|
 |:---------------|:--------|:----------|
-|DestinationId|String|The destination folder ID, or a well-known folder name such as *Inbox*, *Drafts*, *SentItems*, or *DeletedItems*. For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).|
+|DestinationId|String|The destination folder ID, or a well-known folder name. For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md#well-known-folder-names).|
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [message](../resources/message.md) resource in the response body.
 
 ## Example
 
@@ -68,7 +68,9 @@ Content-length: 44
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -60,10 +60,6 @@ Examples of group features that support only delegated permissions:
 
 Microsoft Teams and Office 365 groups [share similar functionality](../api-reference/beta/resources/teams_api_overview.md). All group APIs can be used with teams, with the exception that the Create group API does not currently allow you to create a team.  Future API releases will support this.
 
-### Microsoft Teams channels (preview)
-
-Currently, you can read and create channels, but you cannot update or delete them.  Future API releases will support this.
-
 ### Microsoft Teams chat threads and chat messages (preview)
 
 Currently, you can create chat threads in channels, but you cannot read existing chat threads or add replies to them. Also, you cannot read or write direct chats between users that are outside the scope of a team or channel.  Future API releases will add additional capabilities in this area.
@@ -85,6 +81,29 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 ### Using delta query
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
+
+
+## Bookings
+
+### ErrorExceededFindCountLimit when querying bookingBusinesses
+
+Getting the list of `bookingBusinesses` fails with the following error code when an organization has several Bookings businesses and the account making the request is not an administrator:
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+As a workaround, you can limit the set of businesses returned by the request by including a `query` parameter, for example:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
 
 
 ## Calendars
@@ -188,6 +207,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 The **comment** parameter for creating a reply or forward draft ([createReply](../api-reference/v1.0/api/message_createreply.md),
 [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md))
 does not become part of the body of the resultant message draft.
+
 
 ## Drives, files and content streaming
 

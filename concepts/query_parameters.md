@@ -169,10 +169,10 @@ The following example shows a query filtered by the **subject** and **importance
 **receivedDateTime** properties in descending order.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome to exchange unified messaging' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
 
-[Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome to exchange unified messaging%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
+[Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
  > **Note:** With Azure AD resources that derive from [directoryObject](../api-reference/v1.0/resources/directoryobject.md), like [user](../api-reference/v1.0/resources/user.md) and [group](../api-reference/v1.0/resources/group.md), you cannot combine `$orderby` with `$filter` expressions. 
 
@@ -186,25 +186,26 @@ Use the `$search` query parameter to restrict the results of a request to match 
 
 Office 365 applications, such as Outlook and SharePoint, support the Keyword Query Language (KQL) syntax to do searches. This provides the convenience of a common discovery domain for their data stores. 
 
-When you search message collections, the results are sorted by the date and time that the message was sent. 
+You can specify the following property names that KQL recognizes in a $search query string. These property names are not properties defined in the **message** entity, but are internally mapped to properties in the **message** entity. See [searchable properties in Exchange](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange) for more information and examples.
 
-You can specify the following properties on a **message** in a `$search` criterion:
-
-- **attachments**
-- **bccRecipients**
+- **attachment**
+- **bcc**
 - **body**
 - **category**
-- **ccRecipients**
+- **cc**
 - **content**
 - **from**
-- **hasAttachments**
+- **has**
+- **importance**
 - **participants**
-- **receivedDateTime**
+- **received**
 - **sender**
 - **subject**
-- **toRecipients**
+- **to**
 
 If you do a search on messages and specify only a value, the search is carried out on the default search properties of **from**, **subject**, and **body**.
+
+The results of a search on a message collection are sorted by the date and time that the message was sent.
 
 The following example returns all messages in the signed-in user's Inbox that contains "pizza" in any of the three default search properties:
 

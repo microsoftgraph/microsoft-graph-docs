@@ -2,38 +2,41 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account. 
-With the [appropriate delegated or application permissions](../../../concepts/permissions_reference.md), your app can access the mail data of 
-the signed-in user or any user in a tenant. The mail data can be in the cloud on Exchange Online as part of Office 365, or on 
+Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
+With the [appropriate delegated or application permissions](../../../concepts/permissions_reference.md), your app can access the mail data of
+the signed-in user or any user in a tenant. The mail data can be in the cloud on Exchange Online as part of Office 365, or on
 Exchange on-premises in a [hybrid deployment](../../../concepts/hybrid_rest_support.md).
 
 ## Using the mail REST API
-Mail API requests are performed on behalf of a [user](../resources/user.md) which can be identified by the user's **id** property (a unique GUID), email address, 
+
+Mail API requests are performed on behalf of a [user](../resources/user.md) which can be identified by the user's **id** property (a unique GUID), email address,
 or the `me` shortcut alias for the signed-in user.
 
 Email messages are represented by the [message](../resources/message.md) resource and organized in a [mailFolder](../resources/mailfolder.md).
-Messages and mail folders are identified by their **id** property, obtainable from `GET` operations. 
+Messages and mail folders are identified by their **id** property, obtainable from `GET` operations.
 
->**Note:** In general, do not assume that **message** and **mailfolder** IDs are unique and immutable within a mailbox. They might change after certain 
-actions such as copy, move, or send. 
+> **Note:** In general, do not assume that **message** and **mailfolder** IDs are unique and immutable within a mailbox. They might change after certain
+actions such as copy, move, or send.
 
 Message bodies can be in HTML or text format.
 
-You can use well-known folder names such as `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` to identify certain mail folders that exist by default for all users.
+You can use well-known folder names such as `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` to identify certain mail folders that exist by default for all users. For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md#well-known-folder-names).
+
 For example, you can get messages in the Outlook **Sent Items** folder of the signed-in user, without first getting the folder ID:
-```
+
+```http
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
 
-## Common use cases 
+## Common use cases
 
-The **message** resource exposes properties such as **categories**, **conversationId**, **flag**, and **importance** that correspond to features 
-available in the UI, allowing apps to automate or integrate with the built-in Outlook user experience. 
+The **message** resource exposes properties such as **categories**, **conversationId**, **flag**, and **importance** that correspond to features
+available in the UI, allowing apps to automate or integrate with the built-in Outlook user experience.
 
 The Microsoft Graph API also provides methods and actions that support common use cases of messages.
 
-| Use cases		   | REST resources	| See also |
-|:---------------|:--------|:----------|
+| Use cases | REST resources | See also |
+|:----------|:---------------|:---------|
 | **User-centric actions** | | |
 | Draft, read, reply, forward, send, update, or delete messages | [message](../resources/message.md) | [Methods of message](../resources/message.md#methods) |
 | Delegate another user to send messages on behalf of the mailbox owner | [message](../resources/message.md) | Set the **from** and **sender** properties in a [message](../resources/message.md) |
@@ -57,13 +60,11 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Access custom data for under-exposed Outlook MAPI properties | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook extended properties overview](../resources/extended-properties-overview.md) |
 
 ## Next steps
-The mail API can open up new ways for you to engage with users: 
+
+The mail API can open up new ways for you to engage with users:
 
 - [Outlook mail API overview](../../../concepts/outlook-mail-concept-overview.md)
-- Drill down on the [methods](../resources/message.md#methods), [properties](../resources/message.md#properties), and [relationships](../resources/message.md#relationships) 
-of the [message](../resources/message.md) and [mailFolder](../resources/mailfolder.md) resources.
+- Drill down on the [methods](../resources/message.md#methods), [properties](../resources/message.md#properties), and [relationships](../resources/message.md#relationships) of the [message](../resources/message.md) and [mailFolder](../resources/mailfolder.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
 Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph/examples#partners).
-
-

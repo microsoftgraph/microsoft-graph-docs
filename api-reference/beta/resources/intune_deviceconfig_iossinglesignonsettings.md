@@ -12,7 +12,7 @@ iOS Kerberos authentication settings for single sign-on
 |allowedUrls|String collection|List of HTTP URLs that must be matched in order to use this login. With iOS 9.0 or later, a wildcard characters may be used.|
 |displayName|String|The display name of login settings shown on the receiving device.|
 |kerberosPrincipalName|String|A Kerberos principal name. If not provided, the user is prompted for one during profile installation.|
-|kerberosRealm|String|A Kerberos realm name. Case sensitive.|
+|kerberosRealm|String|A Kerberos realm name. case-sensitive.|
 
 ## Relationships
 None
