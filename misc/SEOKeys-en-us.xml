@@ -1561,16 +1561,16 @@
         <Item text="Compliance status" url="/en-us/api-reference/v1.0/resources/intune_shared_compliancestatus"/>
         <Item text="Device and app management assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceandappmanagementassignmenttarget"/>
         <Item text="Device app management" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceappmanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_update"/>
           <Item text="syncMicrosoftStoreForBusinessApps action" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps"/>
         </Item>
         <Item text="Device category" url="/en-us/api-reference/v1.0/resources/intune_shared_devicecategory">
-          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
-          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
-          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
+          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_list"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_get"/>
+          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_create"/>
+          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_delete"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_update"/>
         </Item>
         <Item text="Device enrollment type" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceenrollmenttype"/>
         <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
@@ -1584,10 +1584,10 @@
         <Item text="Saved UI state generation options" url="/en-us/api-reference/v1.0/resources/intune_shared_saveduistategenerationoptions"/>
         <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_shared_uri"/>
         <Item text="User" url="/en-us/api-reference/v1.0/resources/intune_shared_user">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_user"/>
-          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_user"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_user_get"/>
+          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_user_create"/>
           <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_user_delete"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_user"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_user_update"/>
           <Item text="removeAllDevicesFromManagement action" url="/en-us/api-reference/v1.0/api/intune_shared_user_removealldevicesfrommanagement"/>
           <Item text="wipeManagedAppRegistrationsByDeviceTag action" url="/en-us/api-reference/v1.0/api/intune_shared_user_wipemanagedappregistrationsbydevicetag"/>
         </Item>
@@ -4958,7 +4958,7 @@
         <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_shared_devicemanagement">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_get"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_update"/>
-          <Item text="sendCustomNotificationToCompanyPortal action" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_sendcustomnotificationtocompanyportal"/>
+          <Item text="sendCustomNotificationToCompanyPortal action" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_sendcustomnotificationtocompanyportal"/>
         </Item>
         <Item text="Device type" url="/en-us/api-reference/beta/resources/intune_shared_devicetype"/>
         <Item text="Enrollment state" url="/en-us/api-reference/beta/resources/intune_shared_enrollmentstate"/>

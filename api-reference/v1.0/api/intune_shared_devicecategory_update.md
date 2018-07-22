@@ -36,7 +36,6 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the device category. Read-only.|
-|**On-boarding**|
 |displayName|String|Display name for the device category.|
 |description|String|Optional description for the device category.|
 

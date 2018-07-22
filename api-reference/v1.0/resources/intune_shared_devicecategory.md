@@ -17,7 +17,6 @@ Device categories provides a way to organize your devices. Using device categori
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the device category. Read-only.|
-|**On-boarding**|
 |displayName|String|Display name for the device category.|
 |description|String|Optional description for the device category.|
 
