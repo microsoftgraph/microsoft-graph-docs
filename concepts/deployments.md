@@ -5,7 +5,7 @@ In addition to our global network of datacenters, Microsoft cloud services are a
 
 Current national clouds include:
 
-- Microsoft Cloud for US Government
+- Microsoft Cloud for US Government (GCC and GCC High)
 - Microsoft Cloud Germany
 - Azure and Office 365 operated by 21Vianet in China
 
@@ -19,7 +19,8 @@ The following table shows the service root endpoints for Microsoft Graph and Mic
 |---------------------------|----------------|----------------|
 | Microsoft Graph China operated by 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
 | Microsoft Graph Germany | https://graph.microsoft.de | Not supported. |
-| Microsoft Graph for US Government | https://graph.microsoft.com | Not supported. |
+| Microsoft Graph for US Government (GCC) | https://graph.microsoft.com | Not supported. |
+| Microsoft Graph for US Government (GCC High) | https://graph.microsoft.us | Not Supported. |
 | Microsoft Graph global service | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
 > **Note**: Apps can only access organizational data through the national cloud endpoints. This means that only data in tenants registered in the specific national cloud can be accessed. Apps that are trying to access consumer data associated with personal Microsoft accounts through Microsoft Graph should use the global service (https://graph.microsoft.com). Access tokens acquired for a national cloud deployment are not interchangeable with those acquired for the global service.
@@ -32,7 +33,7 @@ The following table lists the base URLs for the Azure Active Directory (Azure AD
 |---------------------------|----------------|
 | Azure AD China operated by 21Vianet |https://login.chinacloudapi.cn |
 | Azure AD Germany | https://login.microsoftonline.de |
-| Azure AD for US Government | https://login.microsoftonline.us |
+| Azure AD for US Government (GCC and GCC High) | https://login.microsoftonline.us |
 | Azure AD (global service) | https://login.microsoftonline.com |
 
 Requests to the Azure AD authorization or token endpoints can be formed using the appropriate region-specific base URL. For example, for Germany:
