@@ -10,12 +10,14 @@ Singleton entity that acts as a container for all device app management function
 |:---|:---|:---|
 |[Get deviceAppManagement](../api/intune_shared_deviceappmanagement_get.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) object.|
 |[Update deviceAppManagement](../api/intune_shared_deviceappmanagement_update.md)|Update the properties of a [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) object.|
+|**On-boarding**|
 |[syncMicrosoftStoreForBusinessApps action](../api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps.md)|None|Syncs Intune account with Microsoft Store For Business|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
+|**On-boarding**|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|Whether the account is enabled for syncing applications from the Microsoft Store for Business.|
 |microsoftStoreForBusinessLanguage|String|The locale information used to sync applications from the Microsoft Store for Business. Cultures that are specific to a country/region. The names of these cultures follow RFC 4646 (Windows Vista and later). The format is <languagecode2>-<country/regioncode2>, where <languagecode2> is a lowercase two-letter code derived from ISO 639-1 and <country/regioncode2> is an uppercase two-letter code derived from ISO 3166. For example, en-US for English (United States) is a specific culture.|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|The last time an application sync from the Microsoft Store for Business was completed.|
@@ -24,10 +26,13 @@ Singleton entity that acts as a container for all device app management function
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|**Apps**|
 |mobileAppCategories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The mobile app categories.|
 |mobileAppConfigurations|[managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) collection|The Managed Device Mobile Application Configurations.|
 |mobileApps|[mobileApp](../resources/intune_apps_mobileapp.md) collection|The mobile apps.|
+|**Books**|
 |managedEBooks|[managedEBook](../resources/intune_books_managedebook.md) collection|The Managed eBook.|
+|**Mobile app management (MAM)**|
 |androidManagedAppProtections|[androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md) collection|Android managed app policies.|
 |defaultManagedAppProtections|[defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) collection|Default managed app policies.|
 |iosManagedAppProtections|[iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) collection|iOS managed app policies.|
@@ -37,6 +42,7 @@ Singleton entity that acts as a container for all device app management function
 |mdmWindowsInformationProtectionPolicies|[mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md) collection|Windows information protection for apps running on devices which are MDM enrolled.|
 |targetedManagedAppConfigurations|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) collection|Targeted managed app configurations.|
 |windowsInformationProtectionPolicies|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) collection|Windows information protection for apps running on devices which are not MDM enrolled.|
+|**On-boarding**|
 |vppTokens|[vppToken](../resources/intune_onboarding_vpptoken.md) collection|List of Vpp tokens for this organization.|
 
 ## JSON Representation
