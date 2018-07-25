@@ -49,7 +49,8 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.user",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "deviceEnrollmentLimit": 5
 }
 ```
 

@@ -58,7 +58,7 @@
 	<Item text="Use note tags" url="/en-us/concepts/onenote-note-tags" />
 	<Item Label="RESOURCES" url="" />
 	<Item text="Input and output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
-	<Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
+	<Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />
 	<Item text="Branding guidelines" url="/en-us/concepts/onenote-branding" />
 	<Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
   </Item>
