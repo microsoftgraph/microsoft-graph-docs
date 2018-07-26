@@ -79,7 +79,6 @@ The following example sends the input HTML directly in the message body.
 ```html
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
 Authorization: Bearer {token}
-Authorization: Bearer {token}
 Content-Type: application/xhtml+xml
 
 <!DOCTYPE html>
