@@ -28,6 +28,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Microsoft Teams APIs
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta| Added application permissions support to [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) |
 |Deletion|beta|Removed DELETE /groups/{id}/team/channels/{id}, use DELETE /teams/{id}/channels/{id} instead. |
 |Deletion|beta|Removed GET /groups/{id}/team/channels/{id}, use GET /teams/{id}/channels/{id} instead. |
 |Deletion|beta|Removed PATCH /groups/{id}/team/channels/{id}, use  PATCH /teams/{id}/channels/{id} instead. |
@@ -41,6 +42,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Deletion|beta|Removed POST /groups/{id}/team/channels, use POST /teams/{id}/channels instead. |
 |Deletion|beta|Removed GET /groups/{id}/team, use GET /teams/{id} instead. |
 |Deletion|beta|Removed PATCH /groups/{id}/team, use PATCH /teams/{id} instead. |
+|Addition|beta|Added API to [list all teams in organization](../api-reference/beta/api/team_list_all_teams.md). |
 
 ### Webhooks
 | Change type | Version | Description                              |
