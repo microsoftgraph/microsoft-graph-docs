@@ -145,7 +145,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBO
 
 ## deltaLink response
 
-If no changes have occurred, the same `deltatoken` is returned with no results.
+If no changes have occurred, the differet `deltatoken` is returned with no results.
 
 ```http
 HTTP/1.1 200 OK
@@ -153,12 +153,12 @@ Content-type: application/json
 
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
-  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao461",
   "value": []
 }
 ```
 
-If changes have occurred, the same `deltatoken` is returned including a collection of changed users.
+If changes have occurred, the differet `deltatoken` is returned including a collection of changed users.
 
 ```http
 HTTP/1.1 200 OK
@@ -166,7 +166,7 @@ Content-type: application/json
 
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
-  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao462",
   "value": [
     {
       "displayName":"Testuser7",
