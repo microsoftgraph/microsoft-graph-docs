@@ -93,5 +93,48 @@ The following is a JSON representation of the resource.
   "tocPath": ""
 }-->
 
+
+If team is of type class, there might be a class settings property on the team.
+
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.team"
+}-->
+
+```json
+{  
+  "memberSettings": {
+    "allowCreateUpdateChannels": true,
+    "allowDeleteChannels": true,
+    "allowAddRemoveApps": true,
+    "allowCreateUpdateRemoveTabs": true,
+    "allowCreateUpdateRemoveConnectors": true    
+  },
+  "guestSettings": {
+    "allowCreateUpdateChannels": true,
+    "allowDeleteChannels": true 
+  },
+  "messagingSettings": {
+    "allowUserEditMessages": true,
+    "allowUserDeleteMessages": true,
+    "allowOwnerDeleteMessages": true,
+    "allowTeamMentions": true,
+    "allowChannelMentions": true    
+  },
+  "funSettings": {
+    "allowGiphy": true,
+    "giphyContentRating": "strict",
+    "allowStickersAndMemes": true,
+    "allowCustomMemes": true
+  },
+  "classSettings": {
+    "notifyGuardiansAboutAssignments": true
+  }
+  "webUrl": "https://...longUrl..."
+}
+
+```
+
 ## See Also
 [Teams API Overview](teams_api_overview.md)

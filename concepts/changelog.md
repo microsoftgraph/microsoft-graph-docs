@@ -4,6 +4,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## August 2018
+
+### Class Settings
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added  [classSettings](..\api-reference\beta\resources\teamClassSettings.md) property to [Team](../api-reference/beta/resources/team.md) resource that allows API callers to get settings specific to a class type team.|
+
 ## July 2018
 
 ### Directory APIs
