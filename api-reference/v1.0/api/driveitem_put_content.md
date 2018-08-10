@@ -99,12 +99,12 @@ The contents of the file goes here.
 
 ### Response
 
-If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.
+If successful, this method returns an [driveItem][item-resource] resource in the response body for the existing file.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
