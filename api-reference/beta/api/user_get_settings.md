@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Read the user and organization [settings](../resources/user_settings.md) object.
-To update the properties of the [settings](../resources/user_settings.md) object, see [update user settings](../resources/user_update_settings.md).
+To update the properties of the [settings](../resources/user_settings.md) object, see [update user settings](user_update_settings.md).
 
 ## Permissions
 

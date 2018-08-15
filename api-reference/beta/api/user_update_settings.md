@@ -4,7 +4,7 @@
 
 Update the properties of the [settings](../resources/user_settings.md) object. 
 Users in the same organization can have different settings based on their preference or on the organization policies. 
-To get the user current settings, see [current user settings](../resources/user_get_settings.md). 
+To get the user current settings, see [current user settings](user_get_settings.md). 
 
 ## Permissions
 

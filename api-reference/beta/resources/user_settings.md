@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The current user settings. 
-These settings can be [retrieved](../resources/user_get_settings.md) and [updated](../resources/user_update_settings.md).
+These settings can be [retrieved](../api/user_get_settings.md) and [updated](../api/user_update_settings.md).
 
 This resource supports:
 
