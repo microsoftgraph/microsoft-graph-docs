@@ -39,17 +39,15 @@ The Secure Score API provides access to some of your organization’s most sensi
 
 [Understanding authorization when calling the Microsoft Graph Security API](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376)
 
-For more information about permissions, including delegated and application permissions, see [Permissions](../../../concepts/permissions_reference.md).
-
 ## Common use cases
 
 The following are some of the most popular requests for working with the Secure Score API:
 
 | **Use cases**   | **REST resources** | **Try it in Graph Explorer** |
 |:---------------|:--------|:----------|
-| Get secureScores | [Get secureScores](../api/get_secureScores.md) | [https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
-| Get secureScoreControlProfiles | [Get secureScoreControlProfiles](../api/get_secureScoresControlProfile.md) | https://graph.microsoft.com/beta/security/secureScoreControlProfiles |
-| Update secureScoreControlProfiles | [Update secureScoreControlProfiles](../api/secureScoreControlProfiles_update.md) | https://graph.microsoft.com/beta/security/secureScoreControlProfiles |
+| Get secureScores | [Get secureScores](../resources/get_secureScores.md) | [https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Get secureScoreControlProfiles | [Get secureScoreControlProfiles](../resources/get_secureScoresControlProfile.md) | https://graph.microsoft.com/beta/security/secureScoreControlProfiles |
+| Update secureScoreControlProfiles | [Update secureScoreControlProfiles](../resources/secureScoreControlProfiles_update.md) | https://graph.microsoft.com/beta/security/secureScoreControlProfiles |
 
 
 <!-- (| Get security profiles | [Security profiles](../resources/securityprofiles.md) | [https://graph.microsoft.com/beta/security/hostSecurityProfiles](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/hostSecurityProfiles&method=GET&version=testSecurity&GraphUrl=https://graph.microsoft.com) | ) -->
