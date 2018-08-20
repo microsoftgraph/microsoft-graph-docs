@@ -58,7 +58,7 @@
 	<Item text="Use note tags" url="/en-us/concepts/onenote-note-tags" />
 	<Item Label="RESOURCES" url="" />
 	<Item text="Input and output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
-	<Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
+	<Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />
 	<Item text="Branding guidelines" url="/en-us/concepts/onenote-branding" />
 	<Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
   </Item>
@@ -399,7 +399,7 @@
 			</Item>
 			<Item text="History item" url="/en-us/api-reference/v1.0/resources/projectrome_historyitem" >
 				<Item text="Create or replace a history item" url="/en-us/api-reference/v1.0/api/projectrome_put_historyitem" />
-				<Item text="Delete a history item" url="/en-us/api-reference/v.10/api/projectrome_delete_historyitem" />
+				<Item text="Delete a history item" url="/en-us/api-reference/v1.0/api/projectrome_delete_historyitem" />
 			</Item>
 		</Item>
 	</Item>
@@ -1561,16 +1561,16 @@
         <Item text="Compliance status" url="/en-us/api-reference/v1.0/resources/intune_shared_compliancestatus"/>
         <Item text="Device and app management assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceandappmanagementassignmenttarget"/>
         <Item text="Device app management" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceappmanagement">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_update"/>
           <Item text="syncMicrosoftStoreForBusinessApps action" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps"/>
         </Item>
         <Item text="Device category" url="/en-us/api-reference/v1.0/resources/intune_shared_devicecategory">
-          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
-          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
-          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
+          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_list"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_get"/>
+          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_create"/>
+          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_delete"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_update"/>
         </Item>
         <Item text="Device enrollment type" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceenrollmenttype"/>
         <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
@@ -1584,10 +1584,10 @@
         <Item text="Saved UI state generation options" url="/en-us/api-reference/v1.0/resources/intune_shared_saveduistategenerationoptions"/>
         <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_shared_uri"/>
         <Item text="User" url="/en-us/api-reference/v1.0/resources/intune_shared_user">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_user"/>
-          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_user"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_user_get"/>
+          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_user_create"/>
           <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_user_delete"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_user"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_user_update"/>
           <Item text="removeAllDevicesFromManagement action" url="/en-us/api-reference/v1.0/api/intune_shared_user_removealldevicesfrommanagement"/>
           <Item text="wipeManagedAppRegistrationsByDeviceTag action" url="/en-us/api-reference/v1.0/api/intune_shared_user_wipemanagedappregistrationsbydevicetag"/>
         </Item>
@@ -1743,7 +1743,7 @@
       <Item text="Get org details" url="/en-us/api-reference/v1.0/api/organization_get" SEOKeyword="Get tenantDetail, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of tenantdetail object." />
       <Item text="Update org details" url="/en-us/api-reference/v1.0/api/organization_update" SEOKeyword="Update tenantdetail, Microsoft Graph API, Directory API" SEODescription="Update the properties of tenantdetail object." />
     </Item>
-    <Item text="Subscribed sku" url="/en-us/api-reference/v1.0/resources/subscribedsku" SEOKeyword="subscribedsku API, Microsoft Graph API, subscribedsku API" SEODescription="Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from DirectoryObject.">
+    <Item text="Subscribed SKU" url="/en-us/api-reference/v1.0/resources/subscribedsku" SEOKeyword="subscribedsku API, Microsoft Graph API, subscribedsku API" SEODescription="Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from DirectoryObject.">
       <Item text="List subscribedSkus" url="/en-us/api-reference/v1.0/api/subscribedsku_list" SEOKeyword="List subscribedSkus, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve a list of subscribedsku objects." />
       <Item text="Get subscribedSku" url="/en-us/api-reference/v1.0/api/subscribedsku_get" SEOKeyword="Get subscribedSku, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve the properties and relationships of subscribedsku object." />
     </Item>
@@ -2207,7 +2207,7 @@
         <Item text="List owned devices" url="/en-us/api-reference/beta/api/user_list_owneddevices" SEOKeyword="List ownedDevices, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
             <Item text="List registered devices" url="/en-us/api-reference/beta/api/user_list_registereddevices" SEOKeyword="List registeredDevices, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
             <Item text="List owned objects" url="/en-us/api-reference/beta/api/user_list_ownedobjects" SEOKeyword="List ownedObjects, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
-            <Item text="List scoped administrator memberships" url="/en-us/api-reference/beta/api/user_list_scopedmemberof" SEOKeyword="List scoped administrator memberships, Microsoft Graph API, Users API" SEODescription="Retrieve a list of scoped adminstrator membership objects." />
+            <Item text="List scoped administrator memberships" url="/en-us/api-reference/beta/api/user_list_scopedrolememberof" SEOKeyword="List scoped administrator memberships, Microsoft Graph API, Users API" SEODescription="Retrieve a list of scoped adminstrator membership objects." />
             <Item text="List created objects" url="/en-us/api-reference/beta/api/user_list_createdobjects" SEOKeyword="List createdObjects, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
             <Item text="Assign license" url="/en-us/api-reference/beta/api/user_assignlicense" SEOKeyword="user: assignLicense, Microsoft Graph API, user API" SEODescription="" />
             <Item text="Get member objects" url="/en-us/api-reference/beta/api/user_getmemberobjects" SEOKeyword="user: getMemberObjects, Microsoft Graph API, user API" SEODescription="" />
@@ -4958,7 +4958,7 @@
         <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_shared_devicemanagement">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_get"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_update"/>
-          <Item text="sendCustomNotificationToCompanyPortal action" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_sendcustomnotificationtocompanyportal"/>
+          <Item text="sendCustomNotificationToCompanyPortal action" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_sendcustomnotificationtocompanyportal"/>
         </Item>
         <Item text="Device type" url="/en-us/api-reference/beta/resources/intune_shared_devicetype"/>
         <Item text="Enrollment state" url="/en-us/api-reference/beta/resources/intune_shared_enrollmentstate"/>
@@ -5145,6 +5145,41 @@
       </Item>
     </Item>
 	<Item text="Identity and access" ProdTag="Azure AD" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
+
+      <Item text="Access reviews" url="/en-us/api-reference/beta/resources/accessreviews_root" SEOKeyword="Access review API, Microsoft Graph API, accessReview API" SEODescription="The Access review API lets you validate group and app access and membership.">
+        <Item text="Access review" url="/en-us/api-reference/beta/resources/accessreview" SEOKeyword="Access review API, Microsoft Graph API, accessReview resource">
+           <Item text="Create access review" url="/en-us/api-reference/beta/api/accessreview_create" SEOKeyword="Access review API, Microsoft Graph API, accessReview API, create accessReview" />
+           <Item text="Delete access review" url="/en-us/api-reference/beta/api/accessreview_delete"  />
+           <Item text="Get access review" url="/en-us/api-reference/beta/api/accessreview_get"  />
+           <Item text="Update access review" url="/en-us/api-reference/beta/api/accessreview_update"  />
+           <Item text="Add reviewer" url="/en-us/api-reference/beta/api/accessreview_addreviewer"  />
+           <Item text="List decisions" url="/en-us/api-reference/beta/api/accessreview_listdecisions"  />
+           <Item text="List my decisions" url="/en-us/api-reference/beta/api/accessreview_listmydecisions"  />
+           <Item text="List reviewers" url="/en-us/api-reference/beta/api/accessreview_listreviewers"  />
+           <Item text="Remove reviewer" url="/en-us/api-reference/beta/api/accessreview_removereviewer"  />
+           <Item text="Reset" url="/en-us/api-reference/beta/api/accessreview_reset"  />
+           <Item text="Send reminder" url="/en-us/api-reference/beta/api/accessreview_sendreminder"  />
+           <Item text="Stop" url="/en-us/api-reference/beta/api/accessreview_stop"  />
+        </Item>
+        <Item text="Business flow template" url="/en-us/api-reference/beta/resources/businessflowtemplate">
+           <Item text="List" url="/en-us/api-reference/beta/api/businessflowtemplate_list"  />
+        </Item>
+        <Item text="Program" url="/en-us/api-reference/beta/resources/program">
+           <Item text="Create" url="/en-us/api-reference/beta/api/program_list"  />
+           <Item text="Delete" url="/en-us/api-reference/beta/api/program_list"  />
+           <Item text="List" url="/en-us/api-reference/beta/api/program_list"  />
+           <Item text="Update" url="/en-us/api-reference/beta/api/program_list"  />
+           <Item text="List controls" url="/en-us/api-reference/beta/api/program_listcontrols"  />
+        </Item>
+        <Item text="Program control" url="/en-us/api-reference/beta/resources/programcontrol">
+           <Item text="Create" url="/en-us/api-reference/beta/api/programcontrol_create"  />
+           <Item text="Delete" url="/en-us/api-reference/beta/api/programcontrol_delete"  />
+           <Item text="List" url="/en-us/api-reference/beta/api/programcontrol_list"  />
+        </Item>
+        <Item text="Program control type" url="/en-us/api-reference/beta/resources/programcontroltype">
+           <Item text="List" url="/en-us/api-reference/beta/api/programcontroltype_list"  />
+        </Item>
+      </Item>
       <Item text="Administrative unit" url="/en-us/api-reference/beta/resources/administrativeunit" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="An administrative unit provides a conceptual container for User and Group directory objects. Using administrative units, a company administrator can now delegate administrative responsibilities to manage the users and groups contained within or scoped to an administrative unit to a regional or departmental administrator.">
         <Item text="Create administrative unit" url="/en-us/api-reference/beta/api/administrativeunit_post_administrativeunits" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="API to create a new administrativeUnit." />
         <Item text="List administrative unit" url="/en-us/api-reference/beta/api/administrativeunit_list" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="API to list administrativeUnit objects." />
@@ -5697,7 +5732,7 @@
 	<Item text="Sites and lists" ProdTag="SharePoint" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="sharepoint, sites, lists, drives, microsoft graph api, sharepoint api">
       <Item text="Sites" url="/en-us/api-reference/beta/resources/site" SEOKeyword="sharepoint, site, sites, microsoft graph api, sharepoint sites api" >
         <Item text="Get site" url="/en-us/api-reference/beta/api/site_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
-        <Item text="Get lists" url="/en-us/api-reference/beta/api/lists_list" SEOKeyword="sharepoint, list lists, get lists" SEODescription="" />
+        <Item text="Get lists" url="/en-us/api-reference/beta/api/list_list" SEOKeyword="sharepoint, list lists, get lists" SEODescription="" />
         <Item text="List subsites" url="/en-us/api-reference/beta/api/site_list_subsites" SEOKeyword="sharepoint, list subsites" SEODescription="" />
       </Item>
       <Item text="Lists" url="/en-us/api-reference/beta/resources/list" SEOKeyword="sharepoint, list, lists, microsoft graph api, sharepoint list api">
@@ -5995,4 +6030,3 @@
     </Item>
 	</Item>
 	</Menu>
-

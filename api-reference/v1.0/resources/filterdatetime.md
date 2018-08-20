@@ -6,7 +6,7 @@ Represents how to filter a date when filtering on values.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |date|string|The date in ISO8601 format used to filter data.|
-|specificity|string|How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of april 2009. Possible values are: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
+|specificity|string|How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of april 2009. The possible values are: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
 
 ## Relationships
 None
@@ -21,7 +21,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.filterDateTime"
+  "@odata.type": "microsoft.graph.workbookFilterDateTime"
 }-->
 
 ```json

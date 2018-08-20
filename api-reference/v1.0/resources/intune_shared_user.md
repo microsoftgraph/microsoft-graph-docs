@@ -41,16 +41,22 @@ Represents an Azure Active Directory user object.
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
+  "openType": true,
   "@odata.type": "microsoft.graph.user"
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.user",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "deviceEnrollmentLimit": 5
 }
 ```
 
-
-
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: Resource microsoft.graph.user is defined in multiple files: /api-reference/v1.0/resources/intune_shared_user.md, /api-reference/v1.0/resources/user.md",
+  ]
+}-->

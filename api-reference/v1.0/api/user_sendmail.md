@@ -30,8 +30,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|Message|[Message](../resources/message.md)|The message to send. Required.|
-|SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional. |
+|message|[Message](../resources/message.md)|The message to send. Required.|
+|saveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional. |
 
 ## Response
 

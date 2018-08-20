@@ -66,17 +66,18 @@ If successful, this method returns `201 Created` response code and [attachment](
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
   "name": "create_file_attachment_from_event"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments 
+POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
 Content-length: 151
 
 {
     "@odata.type": "#microsoft.graph.fileAttachment",
     "name": "menu.txt",
-    "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
+    "contentBytes": "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
 }
 ```
 
@@ -91,7 +92,7 @@ Here is an example of the response.
 } -->
 ```http
 HTTP 201 Created
-Content-Length: 735
+Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events('AAMkAGI1AAAt9AHjAAA%3D')/attachments/$entity",
@@ -104,7 +105,7 @@ Content-Length: 735
     "isInline":false,
     "contentId":null,
     "contentLocation":null,
-    "contentBytes":"bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+    "contentBytes":"base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
 
@@ -116,10 +117,11 @@ Here is an example which attaches an event with another event as an item attachm
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
   "name": "create_item_attachment_from_event"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments
+POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
 Content-length: 600
 

@@ -45,7 +45,7 @@ If successful, this method returns `200 OK` response code and [domain](../resour
   "name": "domain_verify"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/domains/contoso.com/verify
+POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 ```
 
 ##### Response
@@ -67,7 +67,7 @@ Content-length: 192
   "isDefault": true,
   "isInitial": true,
   "isRoot": true,
-  "name": "contoso.com"
+  "id": "contoso.com"
 }
 ```
 

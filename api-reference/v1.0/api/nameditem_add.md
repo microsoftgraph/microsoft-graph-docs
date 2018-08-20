@@ -30,12 +30,12 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |name|string|The name of the named item.|
-|reference|string|The formula or the range that the name will refer to.|
+|reference|Json|The formula or the range that the name will refer to.|
 |comment|string|The comment associated with the named item|
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [NamedItem](../resources/NamedItem.md) object in the response body.
+If successful, this method returns `200 OK` response code and [WorkbookNamedItem](../resources/NamedItem.md) object in the response body.
 
 
 ## Example
@@ -66,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -93,5 +93,9 @@ Content-length: 109
   "description": "NamedItemCollection: add",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: NamedItemcollection_add/value:
+      Schemas type was 'Custom' which is not supported. Add a resource type to the definition of property: value"
+  ],
   "tocPath": ""
 }-->

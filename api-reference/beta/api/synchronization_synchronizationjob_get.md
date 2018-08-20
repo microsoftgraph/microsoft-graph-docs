@@ -75,6 +75,7 @@ Content-length: 2577
         "code": "Paused",
         "lastExecution": null,
         "lastSuccessfulExecution": null,
+        "progress": [],
         "lastSuccessfulExecutionWithExports": null,
         "steadyStateFirstAchievedTime": "0001-01-01T00:00:00Z",
         "steadyStateLastAchievedTime": "0001-01-01T00:00:00Z",

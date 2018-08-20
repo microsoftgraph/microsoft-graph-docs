@@ -300,9 +300,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated
 
-* _EduAssignments.Read_: Get the signed-in student's assignment information (`GET /education/classes/<id>/assignments/<id>`)
-* _EduAssignments.ReadWriteBasic_: Submit signed-in student assignment (`GET /education/classes/<id>/assignments/<id>submit`)
-* _EduRoster.ReadBasic_: Classes a signed-in user attends or teaches (`GET /education/classes/<id>/members`)
+* _EduAssignments.Read_: Get the signed-in student's assignment information (`GET /education/classes/{id}/assignments/{id}`)
+* _EduAssignments.ReadWriteBasic_: Submit signed-in student assignment (`GET /education/classes/{id}/assignments/{id}submit`)
+* _EduRoster.ReadBasic_: Classes a signed-in user attends or teaches (`GET /education/classes/{id}/members`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 

@@ -31,7 +31,7 @@ The **plannerTask** resource represents a Planner task in Office 365. A Planner 
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner_order_hint_format.md).|
 |percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
 |planId|String|Plan ID to which the task belongs.|
-|previewType|string|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
+|previewType|plannerPreviewType|This sets the type of preview that shows up on the task. The possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |referenceCount|Int32|Number of external references that exist on the task.|
 |startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |title|String|Title of the task.|
@@ -49,6 +49,7 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

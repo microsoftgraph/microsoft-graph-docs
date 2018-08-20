@@ -45,7 +45,7 @@ by providing a [delta](../api/contact_delta.md) function.
 |department|String|The contact's department.|
 |displayName|String|The contact's display name.|
 |emailAddresses|[EmailAddress](emailaddress.md) collection|The contact's email addresses.|
-|flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
+|flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |fileAs|String|The name the contact is filed under.|
 |generation|String|The contact's generation.|
 |givenName|String|The contact's given name.|
@@ -86,6 +86,8 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.outlookItem",
+  "openType": true,
   "optionalProperties": [
     "extensions",
     "multiValueExtendedProperties",
@@ -93,7 +95,26 @@ Here is a JSON representation of the resource
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.contact"
+  "@odata.type": "microsoft.graph.contact",
+  "@odata.annotations": [
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "photo",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

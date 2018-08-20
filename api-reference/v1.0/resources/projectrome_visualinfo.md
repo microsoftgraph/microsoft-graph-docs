@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "@data.type": "microsoft.graph.visualInfo",
+    "@odata.type": "microsoft.graph.visualInfo",
     "attribution": {
         "@odata.type": "microsoft.graph.imageInfo",
         "iconUrl": "String (URL)",
@@ -46,7 +46,7 @@ The following is a JSON representation of the resource.
     "backgroundColor": "String",
     "displayText": "String",
     "content": {
-        "@data.type": "microsoft.graph.Json"
+        "@odata.type": "microsoft.graph.Json"
     }
 }
 ```

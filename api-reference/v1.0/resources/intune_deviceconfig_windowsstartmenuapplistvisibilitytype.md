@@ -3,7 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Type of start menu app list visibility.
-## Members
+## windowsStartMenuAppListVisibilityType flags
 |Member|Value|Description|
 |:---|:---|:---|
 |userDefined|0|User defined. Default value.|

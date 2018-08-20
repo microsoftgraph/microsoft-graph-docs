@@ -64,7 +64,7 @@ Here is a JSON representation of the resource.
   "activityType": "String",
   "activityOperationType": "String",
   "activityResult": "String",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",

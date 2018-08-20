@@ -30,9 +30,8 @@ Represents a class within a school. The **educationClass** resource corresponds 
 |classCode|String| Class code used by the school to identify the class.|
 |externalId|String| ID of the class from the syncing system. |
 |externalName|String|Name of the class in the syncing system.|
-|externalSource|string| How this class was created. Possible values are: `sis`, `manual`, `unknownFutureValue`.|
+|externalSource|educationExternalSource| How this class was created. The possible values are: `sis`, `manual`, `unknownFutureValue`.|
 |term|[educationTerm](educationterm.md)|Term for this class.|
-
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -40,16 +39,17 @@ Represents a class within a school. The **educationClass** resource corresponds 
 |members|[educationUser](../resources/educationuser.md) collection| All users in the class. Nullable.|
 |schools|[educationSchool](../resources/educationschool.md) collection| All schools that this class is associated with. Nullable.|
 |teachers|[educationUser](../resources/educationuser.md) collection|  All teachers in the class. Nullable.|
+|group|[group](../resources/group.md)| The directory group corresponding to this class.|
 
 ## JSON representation
 
 The following is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.educationClass"
 }-->
 
@@ -64,7 +64,7 @@ The following is a JSON representation of the resource.
   "externalName": "String",
   "externalSource": "string",
   "mailNickname": "String",
-  "term": {"@odata.type": "microsoft.graph.education.term"}
+  "term": {"@odata.type": "microsoft.graph.educationTerm"}
 }
 
 ```

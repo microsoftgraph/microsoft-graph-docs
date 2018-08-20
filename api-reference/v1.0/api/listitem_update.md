@@ -42,7 +42,7 @@ In the request body, supply a JSON representation of a [fieldValueSet][] specify
 Here is an example that updates the Color and Quantity fields of the list item with new values.
 All other values on the listItem are left alone. 
 
-<!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
 PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
@@ -58,7 +58,7 @@ Content-Type: application/json
 
 If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 
 ```json
 HTTP/1.1 201 Created

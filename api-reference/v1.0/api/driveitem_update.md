@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and updated [DriveIt
 
 This example renames the DriveItem resource to "new-file-name.docx".
 
-<!-- { "blockType": "request", "name": "update-item" } -->
+<!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}

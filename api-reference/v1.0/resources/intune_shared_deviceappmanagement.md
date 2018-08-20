@@ -50,6 +50,7 @@ Here is a JSON representation of the resource.  Note that this is only an exampl
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceAppManagement"
 }
 -->

@@ -41,7 +41,7 @@ DELETE /users/{userId}/drive/items/{itemId}
 
 Here is an example of how to call this API.
 
-<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 DELETE /me/drive/items/{item-id}
