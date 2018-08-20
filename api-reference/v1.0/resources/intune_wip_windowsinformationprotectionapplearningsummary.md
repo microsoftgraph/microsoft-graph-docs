@@ -1,4 +1,4 @@
-﻿# windowsInformationProtectionAppLearningSummary resource type
+# windowsInformationProtectionAppLearningSummary resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -17,19 +17,19 @@ Windows Information Protection AppLearning Summary entity.
 |:---|:---|:---|
 |id|String|Unique Identifier for the WindowsInformationProtectionAppLearningSummary.|
 |applicationName|String|Application Name|
-|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Application Type. Possible values are: `universal`, `desktop`.|
+|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Application Type. The possible values are: `universal`, `desktop`.|
 |deviceCount|Int32|Device Count|
 
 ## Relationships
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.windowsInformationProtectionAppLearningSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",

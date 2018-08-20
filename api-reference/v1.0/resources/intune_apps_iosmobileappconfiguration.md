@@ -41,7 +41,7 @@ Inherits from [managedDeviceMobileAppConfiguration](../resources/intune_apps_man
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.managedDeviceMobileAppConfiguration",
   "@odata.type": "microsoft.graph.iosMobileAppConfiguration"
 }
 -->

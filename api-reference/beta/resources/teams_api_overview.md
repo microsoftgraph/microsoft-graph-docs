@@ -8,7 +8,7 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 
 In Microsoft Graph, Microsoft Teams is represented by a [group](../resources/group.md) resource. Both Microsoft Teams and Office 365 groups address 
 the various needs of group collaboration. Almost all the group-based features apply to Microsoft Teams and 
-Office 365 groups, such as group calendar, files, notes, photo, plans, and so on. The main difference between a team and an Office 365 group is the mode of communication 
+Office 365 groups, such as group calendar, files, notes, photo, plans, and so on. The main difference between a [team](team.md) and an Office 365 group is the mode of communication 
 between members. Team members communicate by persistent chat in the context of a specific team. Office 365 group members communicate by group conversations, 
 which are email conversations that occur in the context of a group in Outlook.
 
@@ -72,14 +72,10 @@ Similarly, if the {userId} in the URL or payload is expressed as a UPN rather th
 | Add members and owners                | [group](../resources/group.md) | [Add member](../api/group_post_members.md), [Remove member](../api/group_delete_members.md) |
 | Add and remove channels               | [channel](../resources/channel.md) | [Create channel](../api/group_post_channels.md) |
 | Add apps to team                      | [teamsApp](../resources/teamsApp.md) | [Add apps](../api/teams_apps_add.md) |
-| Post a message                        | [chatMessage](../resources/chatmessage.md) | [Create chat thread](../api/channel_post_chatthreads.md) |
 | Get a channel message                 | [chatMessage](../resources/chatmessage.md) | [Get channel message](../api/channel_get_message.md) |
 | Get all the replies of a message      | [chatMessage](../resources/chatmessage.md) | [Get all replies to a channel message](../api/channel_list_messagereplies.md) |
+| Post a message                        | [chatMessage](../resources/chatmessage.md) | [Create chat thread](../api/channel_post_chatthreads.md) |
 | Change team settings                  | [teamMemberSettings](../resources/teammembersettings.md), [teamGuestSettings](../resources/teamGuestSettings.md), [teamMessagingSettings](../resources/teammessagingsettings.md), [teamFunSettings](../resources/teamFunSettings.md) |                                                              |
 | Archive the team                      | [team](team.md) | [Archive team](../api/team_archive.md) | 
 | Get the photo of a member of a team   | [profilePhoto](../../v1.0/api/profilephoto_get.md) |                                                              |
 | List notebooks for a team             | [Notebook](../../v1.0/resources/notebook.md) | [List notebooks in a group](../../v1.0/api/onenote_list_notebooks.md) |
-
-
-
-

@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/{id}/contacts/delta
-GET /users/<id>/contactFolders/{id}/contacts/delta
+GET /users/{id}/contactFolders/{id}/contacts/delta
 ```
 
 ### Query parameters
@@ -75,7 +75,6 @@ returning **contact** rather than **message** collections.
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts/delta?$select=displayName
-
 Prefer: odata.maxpagesize=2
 ```
 

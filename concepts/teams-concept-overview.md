@@ -1,4 +1,4 @@
-# Microsoft Teams teamwork API overview
+# Microsoft Teams API overview (preview)
 
 Microsoft Teams is the ultimate hub for teamwork and intelligent communications. Built on the strength and scale of Office 365 with over 120 million users, Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features.
 
@@ -31,7 +31,6 @@ If a Microsoft Teams tab or bot app is not the ideal way to complete your scenar
 |Messaging extensions|Allow users to query and share enhanced cards in conversations.|
 |Services|Enhance your client applications with Microsoft Graph data via your web service.|
 
-
 ### Create multiple teams and channels
 
 Allow your customers to create new [teams](../api-reference/beta/resources/team.md) and [channels](../api-reference/beta/resources/channel.md) linked to your app. Make creating large numbers of teams and populating them with users and channels easy by using the Microsoft Teams API.
@@ -45,9 +44,7 @@ When the business issue is resolved and you no longer need the virtual team, use
 ## Next steps
 
 - Learn how to [use the Microsoft Teams API](../api-reference/beta/resources/teams_api_overview.md).
-- Drill down on the methods, properties, and relationships of the [team](../api-reference/beta/resources/team.md), [channel](../api-reference/beta/resources/channel.md), and [group](.../api-reference/v1.0/resources/group.md) resources.
+- Drill down on the methods, properties, and relationships of the [team](../api-reference/beta/resources/team.md), [channel](../api-reference/beta/resources/channel.md), and [group](../api-reference/v1.0/resources/group.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 - Read more about the [Microsoft Teams programming model](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/concepts-overview).
 - Get a jump-start with [sample code](https://github.com/OfficeDev/microsoft-teams-sample-graph).
-
-

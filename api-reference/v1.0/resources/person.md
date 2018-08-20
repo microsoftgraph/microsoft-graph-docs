@@ -24,7 +24,7 @@ An aggregation of information about a person from across mail, contacts, and soc
 |jobTitle|String|The person's job title.|
 |officeLocation|String|The location of the person's office.|
 |personNotes|String|Free-form notes that the user has taken about this person.|
-|personType|[personType](persontype.md) collection|The type of person.|
+|personType|[personType](persontype.md) |The type of person.|
 |phones|[phone](phone.md) collection|The person's phone numbers.|
 |postalAddresses|[location](location.md) collection|The person's addresses.|
 |profession|String|The person's profession.|
@@ -41,11 +41,10 @@ None.
 
 The following is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.person"
 }-->
 

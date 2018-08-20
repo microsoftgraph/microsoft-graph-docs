@@ -23,7 +23,12 @@ In the previous table, the examples use `/drive`, but there are many valid reque
 
 ## JSON representation
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemVersion", "@type.aka": "oneDrive.driveItemVersion" } -->
+<!--{
+  "blockType": "resource",
+  "baseType": "microsoft.graph.baseItemVersion",
+  "@odata.type": "microsoft.graph.driveItemVersion",
+  "@type.aka": "oneDrive.driveItemVersion"
+}-->
 
 ```json
 {
@@ -31,7 +36,8 @@ In the previous table, the examples use `/drive`, but there are many valid reque
   "id": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
-  "publication": { "@odata.type": "microsoft.graph.publicationFacet" }
+  "publication": { "@odata.type": "microsoft.graph.publicationFacet" },
+  "size": 12356
 }
 ```
 
@@ -44,14 +50,7 @@ In the previous table, the examples use `/drive`, but there are many valid reque
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
 | **size**                 | Int64                                                | Indicates the size of the content stream for this version of the item.  |
-
-## Relationships
-
-The following table defines the relationships that the **driveItemVersion** resource has to other resources.
-
-| Relationship name |  Type  |            Description             |
-| :---------------- | :----- | :--------------------------------- |
-| **content**       | Stream | The content stream of the version. |
+| **content**              | Stream                                               | The content stream for this version of the item.                        |
 
 <!-- {
   "type": "#page.annotation",

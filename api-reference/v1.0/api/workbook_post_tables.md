@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/$/add
+POST /workbook/tables/{table-id}/add
 
 ```
 ## Request headers
@@ -30,7 +30,7 @@ POST /workbook/tables/$/add
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [Table](../resources/table.md) object in the response body.
+If successful, this method returns `201 Created` response code and [WorkbookTable](../resources/table.md) object in the response body.
 
 ## Example
 ##### Request
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "create_table_from_workbook"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/$/add
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{table-id}/add
 Content-type: application/json
 Content-length: 109
 
@@ -54,7 +54,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 201 Created

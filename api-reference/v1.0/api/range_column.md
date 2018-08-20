@@ -13,9 +13,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/Column
-GET /workbook/worksheets/{id|name}/range(address='<address>')/Column
-GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
+GET /workbook/names/{name}/range/column
+GET /workbook/worksheets/{id|name}/range(address='<address>')/column
+GET /workbook/tables/{id|name}/columns/{id|name}/range/column
 
 ```
 ## Request headers
@@ -24,12 +24,12 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-## Request body
-In the request body, provide a JSON object with the following parameters.
+## Path parameters
+In the request path, provide the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|column|number|Column number of the range to be retrieved. Zero-indexed.|
+|column|Int32|Column number of the range to be retrieved. Zero-indexed.|
 
 ## Response
 
@@ -39,19 +39,13 @@ If successful, this method returns `200 OK` response code and [Range](../resourc
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_column"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Column
-Content-type: application/json
-Content-length: 21
-
-{
-  "column": {
-  }
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/column(column=5)
 ```
 
 ##### Response
@@ -59,7 +53,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

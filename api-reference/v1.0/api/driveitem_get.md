@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and the [DriveItem](
 
 Here is an example of the request to the root folder of the user's OneDrive.
 
-<!-- { "blockType": "request", "name": "get-item-metadata" }-->
+<!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/root

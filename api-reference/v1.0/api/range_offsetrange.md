@@ -13,9 +13,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/OffsetRange
-GET /workbook/worksheets/{id|name}/range(address='<address>')/OffsetRange
-GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
+GET /workbook/names/{name}/range/offsetRange
+GET /workbook/worksheets/{id|name}/range(address='<address>')/offsetRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/offsetRange
 
 ```
 ## Request headers
@@ -29,8 +29,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|rowOffset|number|The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.|
-|columnOffset|number|The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.|
+|rowOffset|Int32|The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.|
+|columnOffset|Int32|The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.|
 
 ## Response
 
@@ -42,18 +42,17 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "isComposable": true,
   "name": "range_offsetrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/offsetRange
 Content-type: application/json
 Content-length: 49
 
 {
-  "rowOffset": {
-  },
-  "columnOffset": {
-  }
+  "rowOffset": 3,
+  "columnOffset": 5
 }
 ```
 
@@ -62,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

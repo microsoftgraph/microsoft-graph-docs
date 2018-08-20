@@ -47,7 +47,7 @@ Here is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/activities/13881113971988980728/
+DELETE https://graph.microsoft.com/v1.0/me/activities/{activity-id}/
 ```
 
 ##### Response

@@ -4,7 +4,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
-## AUGUST 2018
+## August 2018
 
 ### Insights API
 
@@ -12,6 +12,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Change          | Beta          | Updated the [settings](../api-reference/beta/resources/user_settings.md) entity and the following CRUD methods: <br> [Get](../api-reference/beta/api/user_get_settings.md) <br> [Update](../api-reference/beta/api/user_update_settings.md) |
 
+### Synchronization APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added **progress** property to [sychronizationStatus](../api-reference/beta/resources/synchronization_synchronizationstatus.md) to permit clients to monitor the progress of a synchronization job.|
 
 ## July 2018
 
@@ -20,19 +25,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added  isMultipleDataLocationsForServicesEnabled property to [Organization](../api-reference/beta/resources/organization.md) resource that allows apps to verify that tenant is enabled for Multi-Geo capabilities. Added preferredDataLocation property to [user](../api-reference/beta/resources/user.md) and [group](../api-reference/beta/resources/group.md) resources that allow setting preferred data location for a user and group.|
-
-### Microsoft Teams APIs
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Change|beta|Updated [chatmessage](../api-reference/beta/resources/chatmessage.md)) resource|
-|Addition|beta|Added [Chat attachment](../api-reference/beta/resources/chatattachment.md) resource type|
-|Addition|beta|Added [Chat mention](../api-reference/beta/resources/chatattachment.md) resource type|
-|Addition|beta|Added [Chat reaction](../api-reference/beta/resources/chatattachment.md) resource type|
-|Addition|beta|Added [Get all channel messages API](../api-reference/beta/api/channel_list_messages.md) |
-|Addition|beta|Added [Get channel message API](../api-reference/beta/api/channel_get_message.md) |
-|Addition|beta|Added [Get all message replies API](../api-reference/beta/api/channel_list_messagereplies.md) |
-|Addition|beta|Added [Get reply to a message API](../api-reference/beta/api/channel_get_messagereply.md) |
-
 
 ### Application and servicePrincipal API changes
 
@@ -43,7 +35,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Microsoft Teams APIs
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|beta| Added application permissions support to [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) |
+|Addition|beta|Added application permissions support to [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) |
+|Addition|beta|Added [Get all channel messages API](../api-reference/beta/api/channel_list_messages.md) |
+|Addition|beta|Added [Get channel message API](../api-reference/beta/api/channel_get_message.md) |
+|Addition|beta|Added [Get all message replies API](../api-reference/beta/api/channel_list_messagereplies.md) |
+|Addition|beta|Added [Get reply to a message API](../api-reference/beta/api/channel_get_messagereply.md) |
+|Addition|beta|Added [Chat attachment](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Chat mention](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Chat reaction](../api-reference/beta/resources/chatattachment.md) resource type|
+|Change|beta|Updated [chatmessage](../api-reference/beta/resources/chatmessage.md)) resource|
 |Deletion|beta|Removed DELETE /groups/{id}/team/channels/{id}, use DELETE /teams/{id}/channels/{id} instead. |
 |Deletion|beta|Removed GET /groups/{id}/team/channels/{id}, use GET /teams/{id}/channels/{id} instead. |
 |Deletion|beta|Removed PATCH /groups/{id}/team/channels/{id}, use  PATCH /teams/{id}/channels/{id} instead. |
@@ -73,11 +73,18 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## June 2018
 
+### Identity and access APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [access reviews](../api-reference/beta/resources/accessreviews_root.md) feature to [Azure AD](../api-reference/beta/resources/azure_ad_overview.md). |
+
 ### Directory APIs
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | All | New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy_ that allows a client app to create, read, update, and delete applications and service principals as described in the [permissions topic](permissions_reference.md#application-resource-permissions). |
+| Addition | v1.0 | Added **ageGroup**, **legalAgeGroupClassification**, and **ConsentRequiredForMinor** properties to [user](../api-reference/v1.0/resources/user.md) resource
 
 ### Microsoft Intune APIs
 

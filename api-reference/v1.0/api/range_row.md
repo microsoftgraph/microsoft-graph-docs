@@ -13,9 +13,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Row
-POST /workbook/worksheets/{id|name}/range(address='<address>')/Row
-POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
+POST /workbook/names/{name}/range/row
+POST /workbook/worksheets/{id|name}/range(address='<address>')/row
+POST /workbook/tables/{id|name}/columns/{id|name}/range/row
 
 ```
 ## Request headers
@@ -29,7 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|row|number|Row number of the range to be retrieved. Zero-indexed.|
+|row|Int32|Row number of the range to be retrieved. Zero-indexed.|
 
 ## Response
 
@@ -39,18 +39,20 @@ If successful, this method returns `200 OK` response code and [Range](../resourc
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "range_row"
+  "isComposable": true,
+  "name": "range_row",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.range_row"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Row
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/row
 Content-type: application/json
 Content-length: 18
 
 {
-  "row": {
-  }
+  "row": 2
 }
 ```
 
@@ -59,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

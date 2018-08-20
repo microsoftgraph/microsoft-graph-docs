@@ -132,17 +132,6 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 PATCH /groups/{id}/events/{id}
 ```
 
-
-## Parameters
-|**Parameter**|**Type**|**Description**|
-|:-----|:-----|:-----|
-|_URL parameters_|
-|id|string|A unique identifier for an object, represented by its **id** property, in the corresponding collection. Required.|
-|_Body parameters_|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) collection| An array of one or more single-valued extended properties. |
-|id|String|For each property in the **singleValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
-|value|string|For each property in the **singleValueExtendedProperties** collection, specify the property value. Required.|
-
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
@@ -153,6 +142,12 @@ PATCH /groups/{id}/events/{id}
 
 Provide a JSON body of each [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) object in the 
 **singleValueExtendedProperties** collection property of the resource instance.
+
+|**Property**|**Type**|**Description**|
+|:-----|:-----|:-----|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) collection| An array of one or more single-valued extended properties. |
+|id|String|For each property in the **singleValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
+|value|string|For each property in the **singleValueExtendedProperties** collection, specify the property value. Required.|
 
 When creating an extended property in a _new_ resource instance, in addition to the 
 new **singleValueExtendedProperties** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md), 

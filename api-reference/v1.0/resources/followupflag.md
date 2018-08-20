@@ -8,7 +8,7 @@ Allows setting a flag for the user to follow up on an item later. Supported item
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](dateTimeTimeZone.md)|The date and time that the follow-up was finished.|
 |dueDateTime|**dateTimeTimeZone**|The date and time that the follow-up is to be finished.|
-|flagStatus|String|The status for follow-up for an item. Possible values are `notFlagged`, `complete`, and `flagged`.|
+|flagStatus|followupFlagStatus|The status for follow-up for an item. Possible values are `notFlagged`, `complete`, and `flagged`.|
 |startDateTime|**dateTimeTimeZone**|The date and time that the follow-up is to begin.|
 
 ## JSON representation

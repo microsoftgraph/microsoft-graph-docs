@@ -7,12 +7,12 @@ Represents a series in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartSeries](../api/chartseries_get.md) | [ChartSeries](chartseries.md) |Read properties and relationships of chartSeries object.|
+|[Get ChartSeries](../api/chartseries_get.md) | [WorkbookChartSeries](chartseries.md) |Read properties and relationships of chartSeries object.|
 |[Create ChartPoints](../api/chartseries_post_points.md) |[ChartPoints](chartpoint.md)| Create a new ChartPoints by posting to the points collection.|
 |[List points](../api/chartseries_list_points.md) |[ChartPoints](chartpoint.md) collection| Get a ChartPoints object collection.|
-|[Update](../api/chartseries_update.md) | [ChartSeries](chartseries.md)	|Update ChartSeries object. |
-|[List](../api/chartseries_list.md) | [ChartSeries](chartseries.md) collection |Get chartSeries object collection. |
-|[Itemat](../api/chartseriescollection_itemat.md)|[ChartSeries](chartseries.md)|Retrieves a series based on its position in the collection|
+|[Update](../api/chartseries_update.md) | [WorkbookChartSeries](chartseries.md)	|Update ChartSeries object. |
+|[List](../api/chartseries_list.md) | [WorkbookChartSeries](chartseries.md) collection |Get chartSeries object collection. |
+|[ItemAt](../api/chartseriescollection_itemat.md)|[WorkbookChartSeries](chartseries.md)|Retrieves a series based on its position in the collection|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -22,8 +22,8 @@ Represents a series in a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[ChartSeriesFormat](chartseriesformat.md)|Represents the formatting of a chart series, which includes fill and line formatting. Read-only.|
-|points|[ChartPoints](chartpoint.md) collection|Represents a collection of all points in the series. Read-only.|
+|format|[WorkbookChartSeriesFormat](chartseriesformat.md)|Represents the formatting of a chart series, which includes fill and line formatting. Read-only.|
+|points|[WorkbookChartPoint](chartpoint.md) collection|Represents a collection of all points in the series. Read-only.|
 
 ## JSON representation
 
@@ -31,10 +31,11 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 }-->
 
 ```json

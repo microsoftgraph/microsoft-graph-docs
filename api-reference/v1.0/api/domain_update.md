@@ -44,6 +44,7 @@ If successful, this method returns a `204 No Content` response code and no respo
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "update_domain"
 }-->
 ```http

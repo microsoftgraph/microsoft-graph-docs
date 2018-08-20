@@ -40,7 +40,7 @@ For more information about working with groups and members in teams, see [Use th
 | Relationship | Type	| Description |
 |:---------------|:--------|:----------|
 |apps|[teamsApp](teamsapp.md) collection|The collection of apps installed in this team.|
-|channels|[channel](channel.md) collection|The collection of channels associated with the team.|
+|channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
 
 ## JSON representation
 

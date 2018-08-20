@@ -10,8 +10,13 @@ title: ColumnDefinition
 
 Here is a JSON representation of a ColumnDefinition resource.
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnDefinition",
-       "keyProperty": "id", "optionalProperties": [ ] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.columnDefinition"
+}-->
 
 ```json
 {
