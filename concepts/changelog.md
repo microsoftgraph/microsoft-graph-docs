@@ -4,7 +4,98 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## August 2018
+
+### Microsoft Intune APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|beta|Added new entities:<br/>[advancedThreatProtectionOnboardingDeviceSettingState](../api-reference/beta/resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md)<br/>[advancedThreatProtectionOnboardingStateSummary](../api-reference/beta/resources/intune_deviceconfig_advancedthreatprotectiononboardingstatesummary.md)<br/>[depEnrollmentBaseProfile](../api-reference/beta/resources/intune_enrollment_depenrollmentbaseprofile.md)<br/>[depEnrollmentProfile](../api-reference/beta/resources/intune_enrollment_depenrollmentprofile.md)<br/>[depIOSEnrollmentProfile](../api-reference/beta/resources/intune_enrollment_depiosenrollmentprofile.md)<br/>[depMacOSEnrollmentProfile](../api-reference/beta/resources/intune_enrollment_depmacosenrollmentprofile.md)<br/>[enrollmentProfile](../api-reference/beta/resources/intune_enrollment_enrollmentprofile.md)<br/>[importedAppleDeviceIdentity](../api-reference/beta/resources/intune_enrollment_importedappledeviceidentity.md)<br/>[importedAppleDeviceIdentityResult](../api-reference/beta/resources/intune_enrollment_importedappledeviceidentityresult.md)<br/>[importedWindowsAutopilotDeviceIdentityUpload](../api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md)<br/>[roleScopeTag](../api-reference/beta/resources/intune_rbac_rolescopetag.md)<br/>[windowsIdentityProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsidentityprotectionconfiguration.md)<br/>|
+|Addition|beta|Added new complex types:<br/>[configurationManagerClientHealthState](../api-reference/beta/resources/intune_devices_configurationmanagerclienthealthstate.md)<br/>[customSubjectAlternativeName](../api-reference/beta/resources/intune_deviceconfig_customsubjectalternativename.md)<br/>[deviceManagementUserRightsLocalUserOrGroup](../api-reference/beta/resources/intune_deviceconfig_devicemanagementuserrightslocaluserorgroup.md)<br/>[deviceManagementUserRightsSetting](../api-reference/beta/resources/intune_deviceconfig_devicemanagementuserrightssetting.md)<br/>[managementCertificateWithThumbprint](../api-reference/beta/resources/intune_enrollment_managementcertificatewiththumbprint.md)<br/>[mobileAppSupportedDeviceType](../api-reference/beta/resources/intune_troubleshooting_mobileappsupporteddevicetype.md)<br/>[osVersionCount](../api-reference/beta/resources/intune_devices_osversioncount.md)<br/>[windowsMalwareCategoryCount](../api-reference/beta/resources/intune_devices_windowsmalwarecategorycount.md)<br/>[windowsMalwareExecutionStateCount](../api-reference/beta/resources/intune_devices_windowsmalwareexecutionstatecount.md)<br/>[windowsMalwareNameCount](../api-reference/beta/resources/intune_devices_windowsmalwarenamecount.md)<br/>[windowsMalwareOverview](../api-reference/beta/resources/intune_devices_windowsmalwareoverview.md)<br/>[windowsMalwareStateCount](../api-reference/beta/resources/intune_devices_windowsmalwarestatecount.md)<br/>|
+|Addition|beta|Added new enum types:<br/>[configurationManagerClientState](../api-reference/beta/resources/intune_devices_configurationmanagerclientstate.md)<br/>[depTokenType](../api-reference/beta/resources/intune_enrollment_deptokentype.md)<br/>[discoverySource](../api-reference/beta/resources/intune_enrollment_discoverysource.md)<br/>[importedWindowsAutopilotDeviceIdentityUploadStatus](../api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityuploadstatus.md)<br/>[iTunesPairingMode](../api-reference/beta/resources/intune_enrollment_itunespairingmode.md)<br/>[lanManagerAuthenticationLevel](../api-reference/beta/resources/intune_deviceconfig_lanmanagerauthenticationlevel.md)<br/>[localSecurityOptionsMinimumSessionSecurity](../api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsminimumsessionsecurity.md)<br/>[resultantAppStateDetail](../api-reference/beta/resources/intune_apps_resultantappstatedetail.md)<br/>[vpnProviderType](../api-reference/beta/resources/intune_deviceconfig_vpnprovidertype.md)<br/>[windowsMalwareThreatState](../api-reference/beta/resources/intune_devices_windowsmalwarethreatstate.md)<br/>|
+|Addition|beta|Added the [uploadDepToken](../api-reference/beta/api/intune_enrollment_deponboardingsetting_uploaddeptoken.md.md) action on [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
+|Addition|beta|Added the [syncWithAppleDeviceEnrollmentProgram](../api-reference/beta/api/intune_enrollment_deponboardingsetting_syncwithappledeviceenrollmentprogram.md.md) action on [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
+|Addition|beta|Added the [setDefaultProfile](../api-reference/beta/api/intune_enrollment_enrollmentprofile_setdefaultprofile.md.md) action on [enrollmentProfile](../api-reference/beta/resources/intune_enrollment_enrollmentprofile.md) |
+|Addition|beta|Added the **importAppleDeviceIdentityList** action on [importedAppleDeviceIdentity](../api-reference/beta/resources/intune_enrollment_importedappledeviceidentity.md) collection |
+|Addition|beta|Added the [updateDeviceProfileAssignment](../api-reference/beta/api/intune_enrollment_enrollmentprofile_updatedeviceprofileassignment.md.md) action on [enrollmentProfile](../api-reference/beta/resources/intune_enrollment_enrollmentprofile.md) |
+|Addition|beta|Added the [shareForSchoolDataSyncService](../api-reference/beta/api/intune_enrollment_deponboardingsetting_shareforschooldatasyncservice.md.md) action on [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
+|Addition|beta|Added the [unshareForSchoolDataSyncService](../api-reference/beta/api/intune_enrollment_deponboardingsetting_unshareforschooldatasyncservice.md.md) action on [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
+|Addition|beta|Added the [assignUserToDevice](../api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_assignusertodevice.md.md) action on [windowsAutopilotDeviceIdentity](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity.md) |
+|Addition|beta|Added the [getRoleScopeTagsByResource](../api-reference/beta/api/intune_rbac_devicemanagement_getrolescopetagsbyresource.md.md) function on [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) |
+|Addition|beta|Added the [getRoleScopeTagsByIds](../api-reference/beta/api/intune_rbac_devicemanagement_getrolescopetagsbyids.md.md) function on [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) |
+|Addition|beta|Added the [getEncryptionPublicKey](../api-reference/beta/api/intune_enrollment_deponboardingsetting_getencryptionpublickey.md.md) function on [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
+|Addition|beta|Added the [exportMobileConfig](../api-reference/beta/api/intune_enrollment_enrollmentprofile_exportmobileconfig.md.md) function on [enrollmentProfile](../api-reference/beta/resources/intune_enrollment_enrollmentprofile.md) |
+|Addition|beta|Added the [autopilotDeviceStream](../api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentityupload_autopilotdevicestream.md.md) function on [importedWindowsAutopilotDeviceIdentityUpload](../api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) |
+|Deletion|beta|Removed the **uploadDepToken** collection |
+|Deletion|beta|Removed the **syncWithAppleDeviceEnrollmentProgram** action on [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) collection |
+|Deletion|beta|Removed the **getEncryptionPublicKey** function on [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) collection |
+|Addition|beta|Added the **restrictedApps** property to the [androidForWorkCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy.md) entity|
+|Addition|beta|Added the **vpnAlwaysOnPackageIdentifier** and **vpnEnableAlwaysOnLockdownMode** properties to the [androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md) entity|
+|Deletion|beta|Removed the **packageName** property from the [androidForWorkMobileAppConfiguration](../api-reference/beta/resources/intune_apps_androidforworkmobileappconfiguration.md) entity|
+|Addition|beta|Added the **restrictedApps** property to the [androidWorkProfileCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md) entity|
+|Addition|beta|Added the **vpnAlwaysOnPackageIdentifier** and **vpnEnableAlwaysOnLockdownMode** properties to the [androidWorkProfileGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md) entity|
+|Addition|beta|Added the **optInToDeviceIdSharing** property to the [appleVpnConfiguration](../api-reference/beta/resources/intune_deviceconfig_applevpnconfiguration.md) entity|
+|Addition|beta|Added the **tokenType**, **tokenName**, **syncedDeviceCount**, **defaultProfileDisplayName** and **dataSharingConsentGranted** properties to the [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) entity|
+|Addition|beta|Added the **roleScopeTagIds** property to the [deviceCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy.md) entity|
+|Addition|beta|Added the **roleScopeTagIds** and **supportsScopeTags** properties to the [deviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_deviceconfiguration.md) entity|
+|Addition|beta|Added the **windowsMalwareOverview** property to the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) entity|
+|Change|beta|Changed the following properties on the [iosCertificateProfileBase](../api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase.md) entity:<br/>**subjectAlternativeNameType** from required to optional<br/>|
+|Addition|beta|Added the **restrictedApps** property to the [iosCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_ioscompliancepolicy.md) entity|
+|Addition|beta|Added the **certificateStore** and **customSubjectAlternativeNames** properties to the [iosScepCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_iosscepcertificateprofile.md) entity|
+|Addition|beta|Added the **enforcedSoftwareUpdateDelayInDays** property to the [iosUpdateConfiguration](../api-reference/beta/resources/intune_deviceconfig_iosupdateconfiguration.md) entity|
+|Addition|beta|Added the **providerType**, **userDomain**, **strictEnforcement**, **cloudName** and **excludeList** properties to the [iosVpnConfiguration](../api-reference/beta/resources/intune_deviceconfig_iosvpnconfiguration.md) entity|
+|Addition|beta|Added the **safariBlockAutofill**, **cameraBlocked**, **iTunesBlockMusicService**, **spotlightBlockInternetResults**, **keyboardBlockDictation**, **definitionLookupBlocked**, **appleWatchBlockAutoUnlock**, **iTunesBlockFileSharing**, **iCloudBlockDocumentSync**, **iCloudBlockMail**, **iCloudBlockAddressBook**, **iCloudBlockCalendar**, **iCloudBlockReminders**, **iCloudBlockBookmarks**, **iCloudBlockNotes**, **airDropBlocked**, **passwordBlockModification** and **passwordBlockFingerprintUnlock** properties to the [macOSGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_macosgeneraldeviceconfiguration.md) entity|
+|Addition|beta|Added the **roleScopeTagIds**, **windowsActiveMalwareCount**, **windowsRemediatedMalwareCount**, **notes** and **configurationManagerClientHealthState** properties to the [managedDevice](../api-reference/beta/resources/intune_devices_manageddevice.md) entity|
+|Addition|beta|Added the **installStateDetail** property to the [mobileAppInstallStatus](../api-reference/beta/resources/intune_apps_mobileappinstallstatus.md) entity|
+|Addition|beta|Added the **roleScopeTagIds** property to the [notificationMessageTemplate](../api-reference/beta/resources/intune_notification_notificationmessagetemplate.md) entity|
+|Addition|beta|Added the **targetVersion** and **updateVersion** properties to the [officeSuiteApp](../api-reference/beta/resources/intune_apps_officesuiteapp.md) entity|
+|Addition|beta|Added the **resource** property to the [resourceOperation](../api-reference/beta/resources/intune_rbac_resourceoperation.md) entity|
+|Addition|beta|Added the **localStorage**, **setPowerPolicies** and **signInOnResume** properties to the [sharedPCConfiguration](../api-reference/beta/resources/intune_deviceconfig_sharedpcconfiguration.md) entity|
+|Addition|beta|Added the **configurationManagerComplianceRequired** property to the [windows10CompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_windows10compliancepolicy.md) entity|
+|Addition|beta|Added the **userRightsAccessCredentialManagerAsTrustedCaller**, **userRightsAllowAccessFromNetwork**, **userRightsBlockAccessFromNetwork**, **userRightsActAsPartOfTheOperatingSystem**, **userRightsLocalLogOn**, **userRightsBackupData**, **userRightsChangeSystemTime**, **userRightsCreateGlobalObjects**, **userRightsCreatePageFile**, **userRightsCreatePermanentSharedObjects**, **userRightsCreateSymbolicLinks**, **userRightsCreateToken**, **userRightsDebugPrograms**, **userRightsRemoteDesktopServicesLogOn**, **userRightsDelegation**, **userRightsGenerateSecurityAudits**, **userRightsImpersonateClient**, **userRightsIncreaseSchedulingPriority**, **userRightsLoadUnloadDrivers**, **userRightsLockMemory**, **userRightsManageAuditingAndSecurityLogs**, **userRightsManageVolumes**, **userRightsModifyFirmwareEnvironment**, **userRightsModifyObjectLabels**, **userRightsProfileSingleProcess**, **userRightsRemoteShutdown**, **userRightsRestoreData**, **userRightsTakeOwnership**, **userRightsRegisterProcessAsService**, **localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients**, **localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers**, **lanManagerAuthenticationLevel** and **lanManagerWorkstationEnableInsecureGuestLogons** properties to the [windows10EndpointProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md) entity|
+|Addition|beta|Added the **passwordMinimumAgeInDays**, **tenantLockdownRequireNetworkDuringOutOfBoxExperience** and **dataProtectionBlockDirectMemoryAccess** properties to the [windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration.md) entity|
+|Addition|beta|Added the **extendedKeyUsages** property to the [windows10PkcsCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_windows10pkcscertificateprofile.md) entity|
+|Addition|beta|Added the **enableDnsRegistration** and **dnsSuffixes** properties to the [windows10VpnConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10vpnconfiguration.md) entity|
+|Addition|beta|Added the **customSubjectAlternativeNames** property to the [windows81CertificateProfileBase](../api-reference/beta/resources/intune_deviceconfig_windows81certificateprofilebase.md) entity|
+|Addition|beta|Added the **extractHardwareHash** and **deviceNameTemplate** properties to the [windowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile.md) entity|
+|Addition|beta|Added the **addressableUserName** and **userPrincipalName** properties to the [windowsAutopilotDeviceIdentity](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity.md) entity|
+|Addition|beta|Added the **threatState** property to the [windowsDeviceMalwareState](../api-reference/beta/resources/intune_devices_windowsdevicemalwarestate.md) entity|
+|Addition|beta|Added the **qualityUpdatesPauseStartDateTime**, **featureUpdatesPauseStartDateTime**, **featureUpdatesRollbackWindowInDays**, **qualityUpdatesWillBeRolledBack**, **featureUpdatesWillBeRolledBack**, **qualityUpdatesRollbackStartDateTime** and **featureUpdatesRollbackStartDateTime** properties to the [windowsUpdateForBusinessConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) entity|
+|Addition|beta|Added the **trustedServerCertificateNames** property to the [windowsWifiEnterpriseEAPConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowswifienterpriseeapconfiguration.md) entity|
+|Addition|beta|Added the **defaultIosEnrollmentProfile**, **defaultMacOsEnrollmentProfile**, **enrollmentProfiles** and **importedAppleDeviceIdentities** navigation properties to the [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) entity|
+|Addition|beta|Added the **roleScopeTags** navigation property to the [deviceAndAppManagementRoleAssignment](../api-reference/beta/resources/intune_rbac_deviceandappmanagementroleassignment.md) entity|
+|Addition|beta|Added the **advancedThreatProtectionOnboardingStateSummary**, **roleScopeTags** and **importedWindowsAutopilotDeviceIdentityUploads** navigation properties to the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) entity|
+|Addition|beta|Added the **supportedDeviceTypes** property to the [mobileAppIntentAndStateDetail](../api-reference/beta/resources/intune_troubleshooting_mobileappintentandstatedetail.md) complex type|
+|Addition|beta|Added the **hideEscapeLink** property to the [outOfBoxExperienceSettings](../api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings.md) complex type|
+|Addition|beta|Added the **zscalerPrivateAccess**, **f5Access2018**, **citrixSso** and **paloAltoGlobalProtectV2** members to the [appleVpnConnectionType](../api-reference/beta/resources/intune_deviceconfig_applevpnconnectiontype.md) enum type|
+|Addition|beta|Added the **userAbandonment** member to the [deviceEnrollmentFailureReason](../api-reference/beta/resources/intune_troubleshooting_deviceenrollmentfailurereason.md) enum type|
+|Addition|beta|Added the **blocked** member to the [enrollmentState](../api-reference/beta/resources/intune_enrollment_enrollmentstate.md) enum type|
+|Addition|beta|Added the **microsoft365ManagedMdm** member to the [managementAgentType](../api-reference/beta/resources/intune_devices_managementagenttype.md) enum type|
+|Addition|beta|Added the **domainNameService** member to the [subjectAlternativeNameType](../api-reference/beta/resources/intune_deviceconfig_subjectalternativenametype.md) enum type|
+|Addition|beta|Added the **wpa2Personal** and **wpa2Enterprise** members to the [wiFiSecurityType](../api-reference/beta/resources/intune_deviceconfig_wifisecuritytype.md) enum type|
+|Addition|beta|Added the **enterpriseUnwantedSoftware**, **ransom** and **hipsRule** members to the [windowsMalwareCategory](../api-reference/beta/resources/intune_devices_windowsmalwarecategory.md) enum type|
+
 ## July 2018
+
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Change|beta|Updated [chatmessage](../api-reference/beta/resources/chatmessage.md) resource|
+|Addition|beta|Added [Chat attachment](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Chat mention](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Chat reaction](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Get all channel messages API](../api-reference/beta/api/channel_list_messages.md) |
+|Addition|beta|Added [Get channel message API](../api-reference/beta/api/channel_get_message.md) |
+|Addition|beta|Added [Get all message replies API](../api-reference/beta/api/channel_list_messagereplies.md) |
+|Addition|beta|Added [Get reply to a message API](../api-reference/beta/api/channel_get_messagereply.md) |
+
+### Synchronization APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added **progress** property to [sychronizationStatus](../api-reference/beta/resources/synchronization_synchronizationstatus.md) to permit clients to monitor the progress of a synchronization job.|
+
 
 ### Application and servicePrincipal API changes
 
@@ -15,6 +106,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Microsoft Teams APIs
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta|Added application permissions support to [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) |
+|Addition|beta|Added [Get all channel messages API](../api-reference/beta/api/channel_list_messages.md) |
+|Addition|beta|Added [Get channel message API](../api-reference/beta/api/channel_get_message.md) |
+|Addition|beta|Added [Get all message replies API](../api-reference/beta/api/channel_list_messagereplies.md) |
+|Addition|beta|Added [Get reply to a message API](../api-reference/beta/api/channel_get_messagereply.md) |
+|Addition|beta|Added [Chat attachment](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Chat mention](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Chat reaction](../api-reference/beta/resources/chatattachment.md) resource type|
+|Change|beta|Updated [chatmessage](../api-reference/beta/resources/chatmessage.md)) resource|
 |Deletion|beta|Removed DELETE /groups/{id}/team/channels/{id}, use DELETE /teams/{id}/channels/{id} instead. |
 |Deletion|beta|Removed GET /groups/{id}/team/channels/{id}, use GET /teams/{id}/channels/{id} instead. |
 |Deletion|beta|Removed PATCH /groups/{id}/team/channels/{id}, use  PATCH /teams/{id}/channels/{id} instead. |
@@ -28,15 +128,34 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Deletion|beta|Removed POST /groups/{id}/team/channels, use POST /teams/{id}/channels instead. |
 |Deletion|beta|Removed GET /groups/{id}/team, use GET /teams/{id} instead. |
 |Deletion|beta|Removed PATCH /groups/{id}/team, use PATCH /teams/{id} instead. |
+|Addition|beta|Added API to [list all teams in organization](../api-reference/beta/api/team_list_all_teams.md). |
+
+### Outlook contacts
+| **Change type** | **Version**   | **Description**                          |
+|:--------------- |:------------- |:---------------------------------------- |
+|Addition |Beta | Added the complex type [typedEmailAddress](../api-reference/beta/resources/typedemailaddress.md). |
+|Change | Beta | Changed the type of the **emailAddresses** property of [contact](../api-reference/beta/resources/contact.md) to be a collection of **typedEmailAddress** instances.|
+
+### Webhooks
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Breaking change | Beta and v1.0 | Reduced [webhooks](../api-reference/v1.0/resources/webhooks.md) [maximum length of subscription expiration time](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) for drive root items to 3 days. | 
 
 
 ## June 2018
+
+### Identity and access APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [access reviews](../api-reference/beta/resources/accessreviews_root.md) feature to [Azure AD](../api-reference/beta/resources/azure_ad_overview.md). |
 
 ### Directory APIs
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | All | New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy that allow a client app to create, read, update and delete applications and service principals as described in the [permissions topic](permissions_reference.md#application-resource-permissions). |
+| Addition | All | New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy_ that allows a client app to create, read, update, and delete applications and service principals as described in the [permissions topic](permissions_reference.md#application-resource-permissions). |
+| Addition | v1.0 | Added **ageGroup**, **legalAgeGroupClassification**, and **ConsentRequiredForMinor** properties to [user](../api-reference/v1.0/resources/user.md) resource
 
 ### Microsoft Intune APIs
 
@@ -81,7 +200,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **notConfigured** member to the [editionUpgradeLicenseType](../api-reference/beta/resources/intune_deviceconfig_editionupgradelicensetype.md) enum type|
 |Addition|beta|Added the **unknown** member to the [iosUpdatesInstallStatus](../api-reference/beta/resources/intune_deviceconfig_iosupdatesinstallstatus.md) enum type|
 |Addition|beta|Added the **userRequestedInstall** member to the [mobileAppActionType](../api-reference/beta/resources/intune_troubleshooting_mobileappactiontype.md) enum type|
-|Addition|beta|Added the **notConfigured** member to the [windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md) enum type|
+|Addition|beta|Added the **notConfigured** member to the [windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md) enum type
 
 ### Microsoft Teams APIs
 | **Change type** | **Version**   | **Description**                          |

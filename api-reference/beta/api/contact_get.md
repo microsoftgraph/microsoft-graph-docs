@@ -91,7 +91,7 @@ Here is an example of the request.
   "name": "get_contact"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/contacts/{id}
+GET https://graph.microsoft.com/beta/me/contacts/AAMkAGI2THk0AAA=
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -103,7 +103,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1977
 
 {
   "id": "AAMkAGI2THk0AAA=",
@@ -128,7 +127,13 @@ Content-length: 1977
   "emailAddresses": [
     {
       "name": "Garth",
-      "address": "garth@a830edad9050849NDA1.onmicrosoft.com"
+      "address": "garth@a830edad9050849NDA1.onmicrosoft.com",
+      "type": "unknown"
+    },
+    {
+      "name": "Garth",
+      "address": "garth@contoso.onmicrosoft.com",
+      "type": "personal"
     }
   ],
   "imAddresses": [

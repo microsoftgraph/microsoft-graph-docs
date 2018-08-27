@@ -12,19 +12,19 @@ The typical call pattern is as follows:
      a.  If a `nextLink` URL is returned, there may be additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL to retrieve all pages of data until a `deltaLink` URL is returned in the response.
 
      b.  If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the `deltaLink` URL to learn about changes to the resource.
-     
+
 3.  When the application needs to learn about changes to the resource, it makes a new request using the `deltaLink` URL received in step 2. This request *may* be made immediately after completing step 2 or when the application checks for changes.
 4.  Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `nextLink` URL or a `deltaLink` URL.
 
 ### State tokens
 
-A delta query GET response always includes a URL specified in a `nextLink` or `deltaLink` response header. 
-The `nextLink` URL includes a _skipToken_, and a `deltaLink` URL includes a _deltaToken_. 
+A delta query GET response always includes a URL specified in a `nextLink` or `deltaLink` response header.
+The `nextLink` URL includes a _skipToken_, and a `deltaLink` URL includes a _deltaToken_.
 
 These tokens are opaque to the client. The following details are what you need to know about them:
 
-- Each token reflects the state and represents a snapshot of the resource in that round of change tracking. 
-- The state tokens also encode and include other query parameters (such as `$select`) 
+- Each token reflects the state and represents a snapshot of the resource in that round of change tracking.
+- The state tokens also encode and include other query parameters (such as `$select`)
 specified in the initial delta query request. Therefore, it's not required to repeat them in subsequent delta query requests.
 - When carrying out delta query, you can copy and apply the `nextLink` or `deltaLink` URL to the next **delta** function call without having to inspect the contents of the URL, including its state token.
 
@@ -36,9 +36,9 @@ If a client uses a query parameter, it must be specified in the initial request.
 For users and groups, there are restrictions on using some query parameters:
 
 -   If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
--   `$expand` is not supported.
+-   `$expand` is only suported for the `manager` and `members` navigational property for users and groups respectively.
 
-For users and groups APIs, scoping filters allow you to track changes to one or more specific users or groups by objectId. For example, the following request: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' returns changes for the groups matching the ids specified in the query filter. 
+For users and groups APIs, scoping filters allow you to track changes to one or more specific users or groups by objectId. For example, the following request: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' returns changes for the groups matching the ids specified in the query filter.
 
 ## Resource representation in the delta query response
 
@@ -65,10 +65,10 @@ Delta query is currently supported for the following resources.
 | Events in a calendar view (date range) of the primary calendar | [delta](../api-reference/v1.0/api/event_delta.md) function of the [event](../api-reference/v1.0/resources/event.md) resource |
 | Groups | [delta](../api-reference/v1.0/api/group_delta.md) function of the [group](../api-reference/v1.0/resources/group.md) resource |
 | Mail folders | [delta](../api-reference/v1.0/api/mailfolder_delta.md) function of the [mailFolder](../api-reference/v1.0/resources/mailFolder.md) resource |
-| Messages in a folder | [delta](../api-reference/v1.0/api/message_delta.md) function of the [message](../api-reference/v1.0/resources/message.md) resource | 
+| Messages in a folder | [delta](../api-reference/v1.0/api/message_delta.md) function of the [message](../api-reference/v1.0/resources/message.md) resource |
 | Personal contact folders | [delta](../api-reference/v1.0/api/contactfolder_delta.md) function of the [contactFolder](../api-reference/v1.0/resources/contactfolder.md) resource |
 | Personal contacts in a folder | [delta](../api-reference/v1.0/api/contact_delta.md) function of the [contact](../api-reference/v1.0/resources/contact.md) resource |
-| Users | [delta](../api-reference/v1.0/api/user_delta.md) function of the [user](../api-reference/v1.0/resources/user.md) resource | 
+| Users | [delta](../api-reference/v1.0/api/user_delta.md) function of the [user](../api-reference/v1.0/resources/user.md) resource |
 | Drive items\* | [delta](../api-reference/v1.0/api/driveitem_delta.md) function of the [driveItem](../api-reference/v1.0/resources/driveitem.md) resource |
 | Planner items\*\* | [delta](../api-reference/beta/api/planneruser_list_delta.md) function of the all segment of [plannerUser](../api-reference/beta/resources/planneruser.md) resource (preview) |
 
@@ -81,7 +81,7 @@ Delta query is currently supported for the following resources.
 
 The same [permissions](./permissions_reference.md) that are required to read a specific resource are also required to perform delta query on that resource.
 
-## Delta query request examples 
+## Delta query request examples
 
 - [Get incremental changes to events in a calendar view](../concepts/delta_query_events.md)
 - [Get incremental changes to messages in a folder](./delta_query_messages.md)

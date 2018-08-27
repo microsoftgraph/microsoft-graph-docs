@@ -19,4 +19,3 @@ Partner state of this tenant.
 
 
 
-

@@ -104,6 +104,7 @@ This resource supports:
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product (including Azure AD Connect, DirSync and MIM + Connector) during provisioning. |
 |onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Read-only. |
 |onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter.|
+|preferredDataLocation|String|The preferred data location for the user. For more information see: [OneDrive for Business Multi-Geo tenant configuration](https://docs.microsoft.com/office365/enterprise/multi-geo-tenant-configuration)  and [Multi-Geo Capabilities in Exchange Online](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online).|
 |preferredLanguage|String|The preferred language for an Office 365 group. Should follow ISO 639-1 Code; for example "en-US".|
 |proxyAddresses|String collection| For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only. Not nullable. Supports $filter. |
 |renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/grouplifecyclepolicy_renewgroup.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
@@ -184,6 +185,7 @@ The following is a JSON representation of the resource
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
+  "preferredDataLocation": ["string"],
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,

@@ -21,4 +21,3 @@ Data type for a configuration item inside an Android application's custom config
 
 
 
-

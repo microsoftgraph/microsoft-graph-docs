@@ -15,4 +15,3 @@ Possible types of Application
 
 
 
-

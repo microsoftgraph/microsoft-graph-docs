@@ -1,4 +1,4 @@
-﻿# deviceComplianceSettingState resource type
+# deviceComplianceSettingState resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -25,19 +25,19 @@ Device compliance setting State for a given device.
 |userName|String|The User Name that is being reported|
 |userPrincipalName|String|The User PrincipalName that is being reported|
 |deviceModel|String|The device model that is being reported|
-|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|The compliance state of the setting. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|The compliance state of the setting. The possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
 
 ## Relationships
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceComplianceSettingState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceSettingState",

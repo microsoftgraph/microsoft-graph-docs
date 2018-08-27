@@ -1,4 +1,4 @@
-﻿# windowsFirewallNetworkProfile resource type
+# windowsFirewallNetworkProfile resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,7 +6,7 @@ Windows Firewall Profile Policies.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|firewallEnabled|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Turn on the firewall and advanced security enforcement. Possible values are: `notConfigured`, `blocked`, `allowed`.|
+|firewallEnabled|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Turn on the firewall and advanced security enforcement. The possible values are: `notConfigured`, `blocked`, `allowed`.|
 |stealthModeBlocked|Boolean|Prevent the server from operating in stealth mode|
 |incomingTrafficBlocked|Boolean|Configures the firewall to block all incoming traffic regardless of other policy settings|
 |unicastResponsesToMulticastBroadcastsBlocked|Boolean|Configures the firewall to block unicast responses to multicast broadcast traffic|
@@ -23,12 +23,10 @@ Windows Firewall Profile Policies.
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsFirewallNetworkProfile",

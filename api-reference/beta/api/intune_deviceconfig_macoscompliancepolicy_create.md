@@ -36,6 +36,7 @@ The following table shows the properties that are required when you create the m
 
 |Property|Type|Description|
 |:---|:---|:---|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |id|String|Key of the entity. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
@@ -71,10 +72,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 913
+Content-length: 975
 
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
@@ -104,10 +108,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1021
+Content-Length: 1083
 
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "id": "ddbadff3-dff3-ddba-f3df-baddf3dfbadd",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
@@ -133,7 +140,6 @@ Content-Length: 1021
   "firewallEnableStealthMode": true
 }
 ```
-
 
 
 

@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /directoryObjects/getById
+POST /directoryObjects/getByIds
 ```
 
 ## Request headers
@@ -31,7 +31,7 @@ POST /directoryObjects/getById
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | application/json  |
+| Content-Type  | string | application/json  |
 
 ## Request body
 
@@ -40,7 +40,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter   | Type |Description|
 |:---------------|:--------|:----------|
 |ids|String collection| A collection of ids for which to return objects. You can specify up to 1000 ids. |
-|types|String collection| A collection of resource types that specifies the set of resource collections to search. If not specified, the default is [directoryObject](../resources/directoryobject.md), which contains all of the resource types defined in the directory. Any object that derives from `directoryObject` may be specified in the collection; for example: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md), and so on. The values are not case sensitive.|
+|types|String collection| A collection of resource types that specifies the set of resource collections to search. If not specified, the default is [directoryObject](../resources/directoryobject.md), which contains all of the resource types defined in the directory. Any object that derives from `directoryObject` may be specified in the collection; for example: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md), and so on. The values are not case-sensitive.|
 
 ## Response
 
@@ -60,7 +60,7 @@ POST https://graph.microsoft.com/v1.0/directoryObjects/getByIds
 Content-type: application/json
 
 {
-    "ids":["84b80893-8749-40a3-97b7-68513b600544","5d6059b6-368d-45f8-91e1-8e07d485f1d0"],
+    "ids":["84b80893874940a3-97b7-68513b600544","5d6059b6368d-45f8-91e18e07d485f1d0"],
     "types":["user"]
 }
 ```

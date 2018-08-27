@@ -1,4 +1,4 @@
-﻿# deviceInstallState resource type
+# deviceInstallState resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -19,7 +19,7 @@ Contains properties for the installation state for a device.
 |deviceName|String|Device name.|
 |deviceId|String|Device Id.|
 |lastSyncDateTime|DateTimeOffset|Last sync date and time.|
-|installState|[installState](../resources/intune_books_installstate.md)|The install state of the eBook. Possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
+|installState|[installState](../resources/intune_books_installstate.md)|The install state of the eBook. The possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
 |errorCode|String|The error code for install failures.|
 |osVersion|String|OS Version.|
 |osDescription|String|OS Description.|
@@ -29,12 +29,12 @@ Contains properties for the installation state for a device.
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceInstallState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceInstallState",

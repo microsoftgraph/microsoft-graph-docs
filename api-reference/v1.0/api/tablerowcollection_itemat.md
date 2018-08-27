@@ -13,8 +13,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows/ItemAt
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
+POST /workbook/tables/{id|name}/rows/itemAt
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt
 
 ```
 ## Request headers
@@ -28,28 +28,30 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|index|number|Index value of the object to be retrieved. Zero-indexed.|
+|index|Int32|Index value of the object to be retrieved. Zero-indexed.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [TableRow](../resources/tablerow.md) object in the response body.
+If successful, this method returns `200 OK` response code and [WorkbookTableRow](../resources/tablerow.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "tablerowcollection_itemat"
+  "isComposable": true,
+  "name": "tablerowcollection_itemat",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.tablerowcollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/itemAt
 Content-type: application/json
 Content-length: 20
 
 {
-  "index": {
-  }
+  "index": 4
 }
 ```
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
 HTTP/1.1 200 OK

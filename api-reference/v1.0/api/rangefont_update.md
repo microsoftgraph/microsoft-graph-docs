@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range/format/font
+PATCH /workbook/names/{name}/range/format/font
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
@@ -33,11 +33,11 @@ In the request body, supply the values for relevant fields that should be update
 |italic|boolean|Represents the italic status of the font.|
 |name|string|Font name (e.g. "Calibri")|
 |size|double|Font size.|
-|underline|string|Type of underline applied to the font. Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|underline|string|Type of underline applied to the font. The possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [RangeFont](../resources/rangefont.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [WorkbookRangeFont](../resources/rangefont.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -46,7 +46,7 @@ Here is an example of the request.
   "name": "update_rangefont"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/font
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/font
 Content-type: application/json
 Content-length: 134
 
@@ -64,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFont"
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK

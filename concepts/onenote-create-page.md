@@ -1,10 +1,12 @@
 # Create OneNote pages
 
-*__Applies to:__ Consumer notebooks on OneDrive | Enterprise notebooks on Office 365*
+**Applies to**: Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
 
 To create a OneNote page, you send a POST request to a *pages* endpoint. For example:
 
-`POST ../notes/sections/{id}/pages`</p>
+`POST ../notes/sections/{id}/pages`
+
+<br/>
 
 Send the HTML that defines the page in the message body. If the request is successful, Microsoft Graph returns a 201 HTTP status code.
 
@@ -14,44 +16,43 @@ Send the HTML that defines the page in the message body. If the request is succe
 
 
 <a name="request-uri"></a>
+
 ## Construct the request URI
 
 To construct the POST request URI, start with the service root URL:
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
+<br/>
+
 Then append the *pages* endpoint:
 
-**Create a page in any section (specified by section name)**
+- **Create a page in any section (specified by section name)**<br/><br/>`.../pages?sectionName=DefaultSection`
 
-`.../pages?sectionName=DefaultSection`
-
-**Create a page in any section (specified by ID)** 
-
-`.../sections/{section-id}/pages` 
+- **Create a page in any section (specified by ID)**<br/><br/>`.../sections/{section-id}/pages` 
 
 If you're creating pages in the user's personal notebook, Microsoft Graph also provides endpoints you can use to create pages in the default notebook:
 
-**Create a page in the default section of the default notebook** 
-
-`../pages` 
+- **Create a page in the default section of the default notebook**<br/><br/>`../pages` 
 
 
 
 Your full request URI will look like one of these examples:
-* `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages`
-* `https://graph.microsoft.com/v1.0/me/onenote/pages?sectionName=Homework`
+
+- `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages`
+- `https://graph.microsoft.com/v1.0/me/onenote/pages?sectionName=Homework`
 
 Learn more about the [service root URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url).
 
 <a name="post-pages-section-name"></a>
+
 ### Using the *sectionName* URL parameter
 
 The following rules apply when using the *sectionName* parameter to create a page in a named section in the default notebook:
 
 - Only top-level sections can be referenced (not sections within section groups).
 
-- If a section with the specified name doesn't exist in the default notebook, the API creates it. These characters are not allowed for section names: ? * \ / : &lt; &gt; | &amp; # " % ~
+- If a section with the specified name doesn't exist in the default notebook, the API creates it. These characters are not allowed for section names: `? * \ / : < > | & # " % ~`
 
 - Section names are case-insensitive for matching, but case is preserved when sections are created. So "My New Section" will display like that, but "my new section" would also match on subsequent posts.
 
@@ -66,6 +67,7 @@ Because sections are created if they don't exist, it's safe to use this call wit
 
 
 <a name="message-body"></a>
+
 ## Construct the message body
 
 The HTML that defines page content is called *input HTML*. Input HTML supports a [subset of standard HTML and CSS](#supported-html-and-css-for-onenote-pages), with the addition of custom attributes. (Custom attributes, like **data-id** and **data-render-src**, are described in [Input and output HTML](onenote_input_output_html.md).) 
@@ -74,9 +76,8 @@ Send the input HTML in the message body of the POST request. You can send the in
 
 The following example sends the input HTML directly in the message body.
 
-```
+```html
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
-Authorization: Bearer {token}
 Authorization: Bearer {token}
 Content-Type: application/xhtml+xml
 
@@ -93,12 +94,16 @@ Content-Type: application/xhtml+xml
 </html>
 ```
 
+<br/>
+
 If you're sending binary data, you must use a [multipart request](#example-request). 
 
->To simplify programming and consistency in your app, you can use multipart requests to create all pages. It's a good idea to use a library to construct multipart messages. This reduces the risk of creating malformed payloads.
+> **Note:**
+> To simplify programming and consistency in your app, you can use multipart requests to create all pages. It's a good idea to use a library to construct multipart messages. This reduces the risk of creating malformed payloads.
 
 
 <a name="input-html-rules"></a>
+
 ### Requirements and limitations for input HTML in POST pages requests
 
 When sending input HTML, be aware of these general requirements and limitations:  
@@ -111,10 +116,11 @@ When sending input HTML, be aware of these general requirements and limitations:
 
 - Microsoft Graph supports a [subset of HTML elements](#supported-html-and-css-for-onenote-pages). 
 
-- Microsoft Graph supports a subset of common HTML attributes and a set of custom attributes, such as the **data-id** attribute used for updating pages. See [Input and output HTML](onenote_input_output_html.md) for supported attributes.
+- Microsoft Graph supports a subset of common HTML attributes and a set of custom attributes, such as the **data-id** attribute used for updating pages. For supported attributes, see [Input and output HTML](onenote_input_output_html.md).
 
 
 <a name="supported-html"></a>
+
 ### Supported HTML and CSS for OneNote pages
 
 Not all elements, attributes, and properties are supported (in HTML4, XHTML, CSS, HTML5, etc.). Instead, Microsoft Graph accepts a limited set of HTML that better fits how people use OneNote. For more information, see [HTML tag support for pages](http://dev.onenote.com/docs#/introduction/html-tag-support-for-pages). If a tag's not listed there, it'll probably be ignored.
@@ -136,12 +142,12 @@ Microsoft Graph preserves the semantic content and basic structure of the input 
 
 
 <a name="example"></a>
+
 ## Example request
 
-This example multipart request creates a page that contains images and an embedded file. The required **Presentation** part contains the input HTML that defines the page. The **imageBlock1** part contains the binary image data 
- and **fileBlock1** contains the binary file data. Data parts can also contain HTML, in which case Microsoft Graph [renders the HTML as an image](onenote_images_files.md#add-an-image-using-binary-data) on the OneNote page. 
+This example multipart request creates a page that contains images and an embedded file. The required **Presentation** part contains the input HTML that defines the page. The **imageBlock1** part contains the binary image data, and **fileBlock1** contains the binary file data. Data parts can also contain HTML, in which case Microsoft Graph [renders the HTML as an image](onenote_images_files.md#add-an-image-using-binary-data) on the OneNote page. 
 
-```
+```html
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
 Authorization: Bearer {token}
 Content-Type: multipart/form-data; boundary=MyPartBoundary198374
@@ -181,23 +187,27 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-For more examples that show how to create pages that contain images and other files, see [Add images and files](onenote_images_files.md), our [tutorials](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-tutorial), and our [samples](https://github.com/onenotedev). Also, learn how to [create absolute positioned elements](onenote-abs-pos.md), [use note tags](onenote-note-tags.md), and [extract data](onenote-extract-data.md) for business card captures and online recipe and product listings.
+For more examples that show how to create pages that contain images and other files, see [Add images and files](onenote_images_files.md), our [tutorials](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-tutorial), and our [samples](https://github.com/onenotedev). Also, learn how to [create absolute positioned elements](onenote-abs-pos.md), [use note tags](onenote-note-tags.md), and [extract data](onenote-extract-data.md) for business card captures and online recipe and product listings.
 
 Microsoft Graph is strict about some formats, such as CRLF newlines in a multipart message body. To reduce the risk of creating malformed payloads, you should use a library to construct multipart messages. 
- If you do receive a 400 status for a malformed payload, check the formatting of newlines and whitespaces, and check for encoding issues. For example, try using `charset=utf-8` (example: `Content-Type: text/html; charset=utf-8`).
+
+If you do receive a 400 status for a malformed payload, check the formatting of newlines and whitespaces, and check for encoding issues. For example, try using `charset=utf-8` (example: `Content-Type: text/html; charset=utf-8`).
 
 See [requirements and limitations for input HTML](#requirements-and-limitations-for-input-html-in-post-pages-requests) and [size limits for POST requests](onenote_images_files.md#size-limitations-for-post-pages-requests).
 
 
 <a name="request-response-info"></a>
+
 ## Request and response information for *POST pages* requests
 
 | Request data | Description |  
 |------|------|  
 | Protocol | All requests use the SSL/TLS HTTPS protocol. |  
-| Authorization header | <p>`Bearer {token}`, where *{token}* is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permissions_reference.md).</p> |  
-| Content-Type header | <p>`text/html` or `application/xhtml+xml` for the HTML content, whether it's sent directly in the message body or in the required "Presentation" part of multipart requests.</p><p>Multipart requests are required when sending binary data, and use the `multipart/form-data; boundary=part-boundary` content type, where *{part-boundary}* is a string that signals the start and end of each data part.</p> |  
+| Authorization header | <p>`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permissions_reference.md).</p> |  
+| Content-Type header | <p>`text/html` or `application/xhtml+xml` for the HTML content, whether it's sent directly in the message body or in the required "Presentation" part of multipart requests.</p><p>Multipart requests are required when sending binary data, and use the `multipart/form-data; boundary=part-boundary` content type, where `{part-boundary}` is a string that signals the start and end of each data part.</p> |  
 | Accept header | `application/json` | 
+
+<br/>
 
 | Response data | Description |  
 |------|------|  
@@ -209,17 +219,26 @@ See [requirements and limitations for input HTML](#requirements-and-limitations-
 
 
 <a name="root-url"></a>
+
 ### Constructing the Microsoft Graph service root URL
 
-The Microsoft Graph service root URL uses the following format for all calls to Microsoft Graph. `https://graph.microsoft.com/{version}/me/onenote/`  The `version` segment in the URL represents the version of Microsoft Graph that you want to use. Use `v1.0` for stable production code. Use `beta` to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code. Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use the [Microsoft Graph](https://graph.microsoft.com/v1.0/users) to get user IDs. 
+The Microsoft Graph service root URL uses the following format for all calls to Microsoft Graph:
+
+`https://graph.microsoft.com/{version}/me/onenote/`  
+
+The `version` segment in the URL represents the version of Microsoft Graph that you want to use. Use `v1.0` for stable production code. Use `beta` to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code. 
+
+Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use [Microsoft Graph](https://graph.microsoft.com/v1.0/users) to get user IDs. 
 
 
 <a name="permissions"></a>
+
 ## Permissions
 
 To create OneNote pages, you'll need to request appropriate permissions. Choose the lowest level of permissions that your app needs to do its work.
 
-Choose from: 
+Choose from:
+
 - Notes.Create
 - Notes.ReadWrite
 - Notes.ReadWrite.All
@@ -230,7 +249,8 @@ For more information about permission scopes and how they work, see [Microsoft G
 
 
 <a name="see-also"></a>
-## Additional resources
+
+## See also
 
 - [Add images and files](onenote_images_files.md)
 - [Create absolute positioned elements](onenote-abs-pos.md)  

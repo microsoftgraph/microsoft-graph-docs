@@ -17,10 +17,27 @@ Here is a JSON representation of a Drive resource.
 
 The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.drive",
-       "keyProperty": "id", 
-       "optionalProperties": [ "activities", "createdBy", "createdDateTime", "description", "lastModifiedBy", "lastModifiedDateTime", "name", "webUrl", "items", "root", "special", "system"] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "activities",
+    "createdBy",
+    "createdDateTime",
+    "description",
+    "lastModifiedBy",
+    "lastModifiedDateTime",
+    "name",
+    "webUrl",
+    "items",
+    "root",
+    "sharepointIds",
+    "special",
+    "system"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.drive"
+}-->
 
 ```json
 {
@@ -36,6 +53,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
   "owner": { "@odata.type": "microsoft.graph.identitySet" },
   "quota": { "@odata.type": "microsoft.graph.quota" },
   "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "system": { "@odata.type": "microsoft.graph.systemFacet" },
   "webUrl": "url"
@@ -68,9 +86,10 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 
 | Relationship | Type                                 | Description
 |:-------------|:-------------------------------------|:-----------------------
-| items        | [driveitem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
-| root         | [driveitem](driveitem.md)            | The root folder of the drive. Read-only.
-| special      | [driveitem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
+| items        | [DriveItem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
+| root         | [DriveItem](driveitem.md)            | The root folder of the drive. Read-only.
+| special      | [DriveItem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
+| list         | [List](list.md)                      | For drives in SharePoint, the underlying document library list. Read-only. Nullable.
 
 ## Methods
 
@@ -101,6 +120,10 @@ In the previous table, the examples use `/drive`, but other pathes are valid too
   "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
   "keywords": "drive,objects,resources",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/drive.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Drives",
   "tocBookmarks": { "Resources/Drive": "#" }
 } -->

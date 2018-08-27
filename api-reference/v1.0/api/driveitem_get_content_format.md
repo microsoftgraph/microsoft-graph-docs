@@ -38,18 +38,20 @@ GET /drive/root:/{path and filename}:/content?format={format}
 | _format_  | string | Specify the format the item's content should be downloaded as. |
 
 
-The following values are valid for the **convert** parameter:
+#### Format options
 
-| Value   | Description                        | Supported source extensions |
-|:--------|:-----------------------------------|-----------------------------|
-| **pdf** | Converts the item into PDF format. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx | 
+The following values are valid for the **format** parameter:
+
+| Format value | Description                        | Supported source extensions
+|:-------------|:-----------------------------------|----------------------------
+| pdf          | Converts the item into PDF format. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
 
 ### Example
 
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
 ```http
-GET /drive/items/{item-id}/content?format={format}
+GET /me/drive/items/{item-id}/content?format={format}
 ```
 
 ## Response

@@ -13,9 +13,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/EntireColumn
-GET /workbook/worksheets/{id|name}/range(address='<address>')/EntireColumn
-GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireColumn
+GET /workbook/names/{name}/range/entireColumn
+GET /workbook/worksheets/{id|name}/range(address='<address>')/entireColumn
+GET /workbook/tables/{id|name}/columns/{id|name}/range/entireColumn
 
 ```
 ## Request headers
@@ -34,12 +34,13 @@ If successful, this method returns `200 OK` response code and [Range](../resourc
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_entirecolumn"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/EntireColumn
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/entireColumn
 ```
 
 ##### Response
@@ -47,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

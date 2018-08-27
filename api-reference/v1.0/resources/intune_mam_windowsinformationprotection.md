@@ -1,4 +1,4 @@
-﻿# windowsInformationProtection resource type
+# windowsInformationProtection resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -22,7 +22,7 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |lastModifiedDateTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |id|String|Key of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP enforcement level.See the Enum definition for supported values. Possible values are: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP enforcement level.See the Enum definition for supported values. The possible values are: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
 |enterpriseDomain|String|Primary enterprise domain|
 |enterpriseProtectedDomainNames|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|List of enterprise domains to be protected|
 |protectionUnderLockConfigRequired|Boolean|Specifies whether the protection under lock feature (also known as encrypt under pin) should be configured|
@@ -54,12 +54,13 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "abstract": true,
   "keyProperty": "id",
+  "baseType": "microsoft.graph.managedAppPolicy",
   "@odata.type": "microsoft.graph.windowsInformationProtection"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtection",
@@ -89,12 +90,12 @@ Here is a JSON representation of the resource.
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -104,7 +105,7 @@ Here is a JSON representation of the resource.
   ],
   "exemptApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",

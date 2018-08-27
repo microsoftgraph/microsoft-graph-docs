@@ -10,8 +10,6 @@ The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64',
 You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.
 If the size you request is not available, you can still get a smaller size that the user has uploaded and made available.
 For example, if the user uploads a photo that is 504x504 pixels, then all but the 648x648 size of photo will be available for download.
-If the specified size is not available in the user's mailbox or in Azure Active Directory, the size of '1x1' is returned with the rest of 
-metadata.
 
 ## Permissions
 
@@ -39,6 +37,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
+GET /me/photos
 GET /users/{id | userPrincipalName}/photo
 GET /groups/{id}/photo
 GET /me/contacts/{id}/photo
@@ -47,11 +46,22 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
+## HTTP request to get the metadata for a specific photo size
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/photos/{size}
+GET /users/{id | userPrincipalName}/photos/{size}
+GET /groups/{id}/photos/{size}
+GET /me/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contacts/{id}/photos/{size}
+GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
+```
+
 ## Parameters
 
-|**Parameter**|**Type**|**Description**|
+|Parameter|Type|Description|
 |:-----|:-----|:-----|
-|_URL parameters_|
 |size  |String  | A photo size. The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', 
 '360x360','432x432', '504x504', and '648x648'. Photos can be any dimension if they are stored in Azure Active Directory. |
 

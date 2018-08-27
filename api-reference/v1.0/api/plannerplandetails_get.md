@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/plans/<id>/details
+GET /planner/plans/{id}/details
 ```
 
 ## Request headers
@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "get_plannerplandetails"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details
+GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/details
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

@@ -1,4 +1,4 @@
-﻿# groupAssignmentTarget resource type
+# groupAssignmentTarget resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -15,12 +15,11 @@ Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune_share
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
   "@odata.type": "microsoft.graph.groupAssignmentTarget"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.groupAssignmentTarget",

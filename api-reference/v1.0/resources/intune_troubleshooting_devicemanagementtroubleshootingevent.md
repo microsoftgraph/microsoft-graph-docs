@@ -1,4 +1,4 @@
-﻿# deviceManagementTroubleshootingEvent resource type
+# deviceManagementTroubleshootingEvent resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -25,12 +25,12 @@ Event representing an general failure.
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceManagementTroubleshootingEvent"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementTroubleshootingEvent",

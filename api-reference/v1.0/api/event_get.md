@@ -111,11 +111,12 @@ The first example gets the specified event. It specifies the following:
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGIAAAoZDOFAAA="],
   "name": "get_event"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
+GET https://graph.microsoft.com/v1.0/me/events/AAMkAGIAAAoZDOFAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
@@ -207,10 +208,11 @@ to return specific properties.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADAGAADDdm4NAAA="],
   "name": "get_event_multiple_locations"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events('AAMkADAGAADDdm4NAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
+GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGAADDdm4NAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
 ##### Response 2
 Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 
@@ -267,7 +269,6 @@ Content-length: 1992
       "uniqueId":"Fourth Coffee",
       "uniqueIdType":"private",
       "address":{
-        "type":"unknown",
         "street":"4567 Main St",
         "city":"Redmond",
         "state":"WA",

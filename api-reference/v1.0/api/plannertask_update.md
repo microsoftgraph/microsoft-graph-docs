@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/tasks/<id>
+PATCH /planner/tasks/{id}
 ```
 ## Optional request headers
 | Name       | Description|
@@ -29,7 +29,7 @@ In the request body, supply the values for relevant fields that should be update
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|The categories to which the task has been applied. See [applied Categories](../resources/plannerappliedcategories.md) for possible values.|
 |assigneePriority|String|Hint used to order items of this type in a list view. The format is defined in [Using order hints in Planner](../resources/planner_order_hint_format.md).|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|The set of users the task is assigned to.|
-|bucketId|String|Bucket id to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case sensitive. [Format validation](../resources/planner_identifiers_disclaimer.md) is done on the service. |
+|bucketId|String|Bucket id to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case-sensitive. [Format validation](../resources/planner_identifiers_disclaimer.md) is done on the service. |
 |conversationThreadId|String|Thread id of the conversation on the task. This is the id of the conversation thread object created in the group.|
 |dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined in [Using order hints in Planner](../resources/planner_order_hint_format.md).|
@@ -52,7 +52,7 @@ Here is an example of the request.
   "name": "update_plannertask"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}
 Content-type: application/json
 Content-length: 247
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

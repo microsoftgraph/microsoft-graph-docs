@@ -23,7 +23,7 @@ Additionally, without one of the  **All** permissions, shared items returned fro
 
 ## HTTP request
 
-<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/sharedWithMe

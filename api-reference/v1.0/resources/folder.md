@@ -32,7 +32,7 @@ Here is a JSON representation of the resource.
 
 | Property       | Type           | Description
 |:---------------|:---------------|:-------------------------------------------
-| **childCount** | Int64          | Number of children contained immediately within this container.
+| **childCount** | Int32          | Number of children contained immediately within this container.
 | **view**       | [folderView][] | A collection of properties defining the recommended view for the folder.
 
 ## Remarks 

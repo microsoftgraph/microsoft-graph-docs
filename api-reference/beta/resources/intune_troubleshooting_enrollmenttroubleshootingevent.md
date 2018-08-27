@@ -29,7 +29,7 @@ Inherits from [deviceManagementTroubleshootingEvent](../resources/intune_trouble
 |userId|String|Identifier for the user that tried to enroll the device.|
 |deviceId|String|Azure AD device identifier.|
 |enrollmentType|[deviceEnrollmentType](../resources/intune_shared_deviceenrollmenttype.md)|Type of the enrollment. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
-|failureCategory|[deviceEnrollmentFailureReason](../resources/intune_troubleshooting_deviceenrollmentfailurereason.md)|Highlevel failure category. Possible values are: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected`.|
+|failureCategory|[deviceEnrollmentFailureReason](../resources/intune_troubleshooting_deviceenrollmentfailurereason.md)|Highlevel failure category. Possible values are: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected`, `userAbandonment`.|
 |failureReason|String|Detailed failure reason.|
 
 ## Relationships
@@ -58,9 +58,6 @@ Here is a JSON representation of the resource.
   "failureReason": "String"
 }
 ```
-
-
-
 
 
 

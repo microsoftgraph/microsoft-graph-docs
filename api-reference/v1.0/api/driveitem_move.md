@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and updated [DriveIt
 
 This example moves an item specified by {item-id} into a folder in the user's drive with the ID `new-parent-folder-id`.
 
-<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -65,7 +65,7 @@ Content-type: application/json
 
 {
   "parentReference": {
-    "id": "new-parent-folder-id"
+    "id": "{new-parent-folder-id}"
   },
   "name": "new-item-name.txt"
 }

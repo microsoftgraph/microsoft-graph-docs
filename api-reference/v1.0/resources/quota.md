@@ -52,5 +52,9 @@ Here is a JSON representation of the resource.
   "description": "The quota facet provides information about how much space the OneDrive has available.",
   "keywords": "quota,available,remaining,used",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/quota.md:
+      Found potential enums in resource example that weren't defined in a table:(normal, nearing,critical,exceeded) are in resource, but () are in table"
+  ],
   "tocPath": "Facets/Quota"
 } -->

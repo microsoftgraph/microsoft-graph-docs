@@ -37,6 +37,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the Resource Operation. Read-only, automatically generated.|
+|resource|String|Resource category to which this Operation belongs.|
 |resourceName|String|Name of the Resource this operation is performed on.|
 |actionName|String|Type of action this operation is going to perform. The actionName should be concise and limited to as few words as possible.|
 |description|String|Description of the resource operation. The description is used in mouse-over text for the operation when shown in the Azure Portal.|
@@ -52,9 +53,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/resourceOperations/{resourceOperationId}
 Content-type: application/json
-Content-length: 122
+Content-length: 155
 
 {
+  "resource": "Resource value",
   "resourceName": "Resource Name value",
   "actionName": "Action Name value",
   "description": "Description value"
@@ -66,17 +68,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 227
+Content-Length: 260
 
 {
   "@odata.type": "#microsoft.graph.resourceOperation",
   "id": "232b8fee-8fee-232b-ee8f-2b23ee8f2b23",
+  "resource": "Resource value",
   "resourceName": "Resource Name value",
   "actionName": "Action Name value",
   "description": "Description value"
 }
 ```
-
 
 
 

@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 627
+Content-Length: 1001
 
 {
   "value": [
@@ -63,16 +63,21 @@ Content-Length: 627
           "displayName": "Display Name value",
           "mobileAppIntent": "notAvailable",
           "displayVersion": "Display Version value",
-          "installState": "failed"
+          "installState": "failed",
+          "supportedDeviceTypes": [
+            {
+              "@odata.type": "microsoft.graph.mobileAppSupportedDeviceType",
+              "type": "windowsRT",
+              "minimumOperatingSystemVersion": "Minimum Operating System Version value",
+              "maximumOperatingSystemVersion": "Maximum Operating System Version value"
+            }
+          ]
         }
       ]
     }
   ]
 }
 ```
-
-
-
 
 
 

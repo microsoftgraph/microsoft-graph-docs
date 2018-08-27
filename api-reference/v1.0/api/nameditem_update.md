@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)
+PATCH /workbook/names/{name}
 ```
 ## Optional request headers
 | Name       | Description|
@@ -31,7 +31,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [NamedItem](../resources/nameditem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [WorkbookNamedItem](../resources/nameditem.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "update_nameditem"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}
 Content-type: application/json
 Content-length: 87
 
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 } -->
 ```http
 HTTP/1.1 200 OK

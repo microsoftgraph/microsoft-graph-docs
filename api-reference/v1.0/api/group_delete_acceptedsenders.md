@@ -14,7 +14,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
+DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
+DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{other-group-id}
 ```
 
 ## Request headers
@@ -30,16 +31,14 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 #### Request
-The following are a couple of examples of the request.
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{id}
-
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 
 #### Response

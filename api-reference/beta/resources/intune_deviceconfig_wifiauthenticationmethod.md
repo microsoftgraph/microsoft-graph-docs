@@ -15,4 +15,3 @@ Wi-Fi authentication method.
 
 
 
-

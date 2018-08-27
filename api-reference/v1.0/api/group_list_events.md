@@ -38,6 +38,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
   "name": "get_group_events"
 }-->
 ```http

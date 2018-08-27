@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1154
+Content-Length: 1276
 
 {
   "value": {
@@ -67,7 +67,8 @@ Content-Length: 1154
       "hideEULA": true,
       "userType": "standard",
       "deviceUsageType": "shared",
-      "skipKeyboardSelectionPage": true
+      "skipKeyboardSelectionPage": true,
+      "hideEscapeLink": true
     },
     "enrollmentStatusScreenSettings": {
       "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
@@ -78,11 +79,12 @@ Content-Length: 1154
       "customErrorMessage": "Custom Error Message value",
       "installProgressTimeoutInMinutes": 15,
       "allowDeviceUseOnInstallFailure": true
-    }
+    },
+    "extractHardwareHash": true,
+    "deviceNameTemplate": "Device Name Template value"
   }
 }
 ```
-
 
 
 

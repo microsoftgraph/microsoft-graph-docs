@@ -9,11 +9,11 @@ Represents an Azure Active Directory user object.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List users](../api/intune_shared_user_list.md) objects.|
-|[Get user](../api/intune_shared_user_get.md) object.|
-|[Create user](../api/intune_shared_user_create.md) object.|
-|[Delete user](../api/intune_shared_user_delete.md).|
-|[Update user](../api/intune_shared_user_update.md) object.|
+|[List users](../api/intune_shared_user_list.md) objects.|[user](../resources/intune_shared_user.md) collection|List properties and relationships of the [user](../resources/intune_shared_user.md) objects.|
+|[Get user](../api/intune_shared_user_get.md) object.|[user](../resources/intune_shared_user.md)|Read properties and relationships of the [user](../resources/intune_shared_user.md) object.|
+|[Create user](../api/intune_shared_user_create.md) object.|[user](../resources/intune_shared_user.md)|Create a new [user](../resources/intune_shared_user.md) object.|
+|[Delete user](../api/intune_shared_user_delete.md).|None|Deletes a [user](../resources/intune_shared_user.md).|
+|[Update user](../api/intune_shared_user_update.md) object.|[user](../resources/intune_shared_user.md)|Update the properties of a [user](../resources/intune_shared_user.md) object.|
 |**Device management**|
 |[getLoggedOnManagedDevices function](../api/intune_shared_user_getloggedonmanageddevices.md)|[managedDevice](../resources/intune_devices_manageddevice.md) collection|Not yet documented|
 |[removeAllDevicesFromManagement action](../api/intune_shared_user_removealldevicesfrommanagement.md)|None|Retire all devices from management for this user|

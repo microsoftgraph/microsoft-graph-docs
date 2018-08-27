@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
+GET /workbook/worksheets/{id|name}/cell(row=<row>,column=<column>)
 
 ```
 ## Request headers
@@ -21,6 +21,14 @@ GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+
+## Parameters
+In the request path, provide the following parameters.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|row|Int32|Row number of the cell to be retrieved. Zero-indexed.|
+|column|Int32|Column number of the cell to be retrieved. Zero-indexed.|
 
 ## Response
 
@@ -30,12 +38,13 @@ If successful, this method returns `200 OK` response code and [Range](../resourc
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "worksheet_cell"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/cell(row=<row>,column=<column>)
 ```
 
 ##### Response
@@ -43,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -3,6 +3,7 @@
 This article describes error codes that are returned by the OneNote APIs in Microsoft Graph whenever a request sent through the API fails.
 
 ## Error response example
+
 When your request generates an error, the OneNote API stops performing the request and returns an error response as a JSON object. An error response contains the associated error code, a message, and a link to the appropriate section of this article. The following example shows how an error response looks.
 
 ```json
@@ -21,6 +22,7 @@ When your request generates an error, the OneNote API stops performing the reque
 For more information about Microsoft Graph errors, see [Microsoft Graph error responses and resource types](errors.md).
 
 ## Codes from 10001 to 19999
+
 The service is having problems or is sending information to the application.
 
 ### 10001
@@ -36,7 +38,7 @@ The current user's account has exceeded the maximum number of active requests. Y
 The service can't create a page in the requested section because that section is protected by a password.
 
 ### 10005
-The request contains more than the maximum number of image tags in which the **data-render-src** attribute contains a PDF. See [Add images and files](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files).
+The request contains more than the maximum number of image tags in which the **data-render-src** attribute contains a PDF. See [Add images and files](onenote_images_files.md).
 
 ### 10006
 The OneNote API was unable to create a page in the specified section because that section is corrupt.
@@ -48,7 +50,7 @@ The server is too busy to handle the incoming request at this moment. Please try
 One or more of the document libraries on the user or group's OneDrive contains more than 5000 OneNote items (notebooks, sections, section groups), and cannot be queried using the API. Please make sure that none of the user or group's document libraries contains more than 5000 OneNote items. See the [OneNote Dev blog](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) for mitigation steps.
 
 ### 10012
-Unable to create or update the entity because the library that contains the notebook requires items to be checked out before they can be edited. For more information, see https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7.
+Unable to create or update the entity because the library that contains the notebook requires items to be checked out before they can be edited. For more information, see [Set up a library to require check-out of files](https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
 
 Either remove the check-out requirement from the library, or move the notebook.
 
@@ -71,6 +73,7 @@ Bad Request.
 The request failed because an undetermined error occurred.
 
 ## Codes from 20001 to 29999
+
 The application code has done something wrong.
 
 ### 20001
@@ -109,6 +112,7 @@ The request contains a malformed multipart payload. Problems could include missi
 
 ### 20012
 The request doesn't supply a content type for the specified part. 
+
 ### 20013
 The request doesn't supply Content-Type and Content-Disposition headers for the specified part. 
 
@@ -135,6 +139,7 @@ Encountered malformed Json in request body.
 
 ### 20100
 Something is wrong with the syntax of your request. 
+
 ### 20101
 The property that you requested doesn't exist.
 
@@ -142,7 +147,7 @@ The property that you requested doesn't exist.
 You requested a resource that doesn't exist.
 
 ### 20103
-The **expand** query is not supported for this request. See [Supported OData query string options](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#query-options).
+The **expand** query is not supported for this request. See [Supported OData query string options](onenote-get-content.md#supported-odata-query-string-options).
 
 ### 20104
 The **pagelevel** query option is supported only when querying for the pages collection in a section or for a specific page. For example:  
@@ -186,19 +191,19 @@ The HTML in the "Presentation" part contains a **data-attachment** attribute tha
 Your request specifies a PATCH target that can't be located.
 
 ### 20121
-Your request contains an invalid PATCH argument. See [Update page content](../api-reference/v1.0/api/page_update.md).
+Your request contains an invalid PATCH argument. See [Update page content](onenote_update_page.md).
 
 ### 20122
-Your request specifies an unsupported PATCH action. See [Update page content](../api-reference/v1.0/api/page_update.md).
+Your request specifies an unsupported PATCH action. See [Update page content](onenote_update_page.md).
 
 ### 20123
 The PATCH request is unable to alter the specified page.
 
 ### 20124
-Your multipart PATCH request doesn't include a "commands" part with the PATCH action JSON structure. See [Update page content](../api-reference/v1.0/api/page_update.md).
+Your multipart PATCH request doesn't include a "commands" part with the PATCH action JSON structure. See [Update page content](onenote_update_page.md).
 
 ### 20125
-Your PATCH request contains no actions. See [Update page content](../api-reference/v1.0/api/page_update.md).
+Your PATCH request contains no actions. See [Update page content](onenote_update_page.md).
 
 ### 20126
 The message body contains either incorrectly formatted JSON or fields that are not supported for this operation.
@@ -222,38 +227,41 @@ Your request contains an invalid value for Content-Type. Use the value indicated
 Your request contains invalid content. Common causes for this are a missing Content-Type request header and/or no content in the body of the request. 
 
 ### 20133
-Your request specifies a PATCH target that is not supported. See [Update page content](../api-reference/v1.0/api/page_update.md).
+Your request specifies a PATCH target that is not supported. See [Update page content](onenote_update_page.md).
 
 ### 20134
-Your request specifies an invalid element as the target of the PATCH action. If the target uses the **data-id** identifier, make sure it's prefixed with a # symbol. See [Update page content](../api-reference/v1.0/api/page_update.md).
+Your request specifies an invalid element as the target of the PATCH action. If the target uses the **data-id** identifier, make sure it's prefixed with a # symbol. See [Update page content](onenote_update_page.md).
 
 ### 20135
-Your request specifies an entity type that is not supported for the PATCH operation. See [Update page content](../api-reference/v1.0/api/page_update.md).
+Your request specifies an entity type that is not supported for the PATCH operation. See [Update page content](onenote_update_page.md).
 
 ### 20136
-Your request contains an invalid or missing **data-render-src** or **data-render-method** attribute. See [Extract data from captures](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data).
+Your request contains an invalid or missing **data-render-src** or **data-render-method** attribute. See [Extract data from captures](onenote-extract-data.md).
 
 ### 20137
 The target page does not support PATCH requests.
 
 ### 20138
-The target element type in your PATCH request doesn't support the **append** action. See [Update page content](../api-reference/v1.0/api/page_update.md).
+The target element type in your PATCH request doesn't support the **append** action. See [Update page content](onenote_update_page.md).
 
 ### 20139
-Your request contains an invalid **data-tag** attribute value. See [Use note tags](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags).
+Your request contains an invalid **data-tag** attribute value. See [Use note tags](onenote-note-tags.md).
 
 ### 20140
-Your request contains an invalid **data-tag** status value. Check box note tags can have a **completed** status. Example:
+Your request contains an invalid **data-tag** status value. Check box note tags can have a **completed** status. 
+
+Example:
+
 ```html
     <p data-tag="to-do:completed">To-do note tag in completed state (checked box in the UI)</p>
 ```
-See [Use note tags](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags).
+See [Use note tags](onenote-note-tags.md).
 
 ### 20141
-The target in your PATCH request doesn't support the specified action. See [Update page content](../api-reference/v1.0/api/page_update.md).
+The target in your PATCH request doesn't support the specified action. See [Update page content](onenote_update_page.md).
 
 ### 20142
-Your request contains an **expand** expression for a parent of child entities or a child of parent entities, which is not supported. See [Supported OData query string options](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#query-options).
+Your request contains an **expand** expression for a parent of child entities or a child of parent entities, which is not supported. See [Supported OData query string options](onenote-get-content.md#supported-odata-query-string-options).
 
 ### 20143
 The OData query is invalid.
@@ -315,7 +323,7 @@ The application has issued too many requests on behalf of a user in a short peri
 For more information, see [OneNote API throttling and how to avoid it](http://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx).
 
 ### 20168
-The video source specified in the request is not supported. See [Supported video sites](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files#videos) for the current list.
+The video source specified in the request is not supported. See [Supported video sites](onenote_images_files.md#adding-videos) for the current list.
 
 
 ## Codes from 30001 to 39999

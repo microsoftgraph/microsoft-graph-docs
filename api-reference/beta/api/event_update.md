@@ -49,7 +49,6 @@ In the request body, supply the values for relevant fields that should be update
 | importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 | isAllDay|Boolean|Set to true if the event lasts all day.|
 | isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
-| onlineMeetingUrl|String|A URL for an online meeting.|
 | location|Location|The location of the event.|
 |locations|[Location](../resources/location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
 | recurrence|PatternedRecurrence|The recurrence pattern for the event.|

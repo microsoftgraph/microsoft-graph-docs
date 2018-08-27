@@ -1,6 +1,6 @@
 # List sections
 
-Retrieve a list of [section](../resources/section.md) objects.
+Retrieve a list of [onenoteSection](../resources/section.md) objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -36,7 +36,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [section](../resources/section.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [onenoteSection](../resources/section.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.

@@ -358,7 +358,6 @@ Content-length: 2985
       "uniqueId":"Fourth Coffee",
       "uniqueIdType":"private",
       "address":{
-        "type":"unknown",
         "street":"4567 Main St",
         "city":"Redmond",
         "state":"WA",

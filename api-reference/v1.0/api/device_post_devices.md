@@ -48,7 +48,7 @@ Content-type: application/json
   [
     {
       "type":2,
-      "key":"Y3YxN2E1MWFlYw=="
+      "key":"base64Y3YxN2E1MWFlYw=="
     }
   ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
@@ -75,7 +75,7 @@ Content-type: application/json
   [
     {
       "type":2,
-      "key":"Y3YxN2E1MWFlYw=="
+      "key":"base64Y3YxN2E1MWFlYw=="
     }
   ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",

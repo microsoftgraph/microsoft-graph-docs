@@ -300,9 +300,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated
 
-* _EduAssignments.Read_: Get the signed-in student's assignment information (`GET /education/classes/<id>/assignments/<id>`)
-* _EduAssignments.ReadWriteBasic_: Submit signed-in student assignment (`GET /education/classes/<id>/assignments/<id>submit`)
-* _EduRoster.ReadBasic_: Classes a signed-in user attends or teaches (`GET /education/classes/<id>/members`)
+* _EduAssignments.Read_: Get the signed-in student's assignment information (`GET /education/classes/{id}/assignments/{id}`)
+* _EduAssignments.ReadWriteBasic_: Submit signed-in student assignment (`GET /education/classes/{id}/assignments/{id}submit`)
+* _EduRoster.ReadBasic_: Classes a signed-in user attends or teaches (`GET /education/classes/{id}/members`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -603,7 +603,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Notes.Read_ |    Read user OneNote notebooks | Allows the app to read the titles of OneNote notebooks and sections and to create new pages, notebooks, and sections on behalf of the signed-in user. | No |
+| _Notes.Read_ |    Read user OneNote notebooks | Allows the app to read OneNote notebooks on behalf of the signed-in user.| No |
 | _Notes.Create_ |    Create user OneNote notebooks | Allows the app to read the titles of OneNote notebooks and sections and to create new pages, notebooks, and sections on behalf of the signed-in user.| No |
 | _Notes.ReadWrite_ |    Read and write user OneNote notebooks | Allows the app to read, share, and modify OneNote notebooks on behalf of the signed-in user. | No |
 | _Notes.Read.All_ |    Read all OneNote notebooks that user can access | Allows the app to read OneNote notebooks that the signed-in user has access to in the organization. | No |

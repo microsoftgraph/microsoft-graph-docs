@@ -67,7 +67,7 @@ SharePoint permission levels set on an item are returned with an 'SP' prefix. Fo
 
 This example retrieves the collection of permissions on an item in the signed in user's drive.
 
-<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions

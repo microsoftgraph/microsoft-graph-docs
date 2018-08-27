@@ -9,7 +9,7 @@ Derived from [attendeeBase](attendeebase.md).
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.|
 |type|String|The attendee type: `required`, `optional`, `resource`.|
-|emailAddress|[emailAddress](emailAddress.md)|Includes the name and SMTP address of the attendee.|
+|emailAddress|[emailAddress](emailaddress.md)|Includes the name and SMTP address of the attendee.|
 
 ## JSON representation
 
@@ -17,6 +17,7 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
 
   ],

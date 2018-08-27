@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
+PATCH /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}
 ```
 ## Optional request headers
 | Name       | Description|
@@ -30,7 +30,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [ChartSeries](../resources/chartseries.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [WorkbookChartSeries](../resources/chartseries.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "update_chartseries"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}
 Content-type: application/json
 Content-length: 26
 
@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 } -->
 ```http
 HTTP/1.1 200 OK

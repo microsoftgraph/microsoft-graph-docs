@@ -42,7 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter   | Type |Description|
 |:---------------|:--------|:----------|
 |ids|String collection| A collection of ids for which to return objects. You can specify up to 1000 ids. |
-|types|String collection| A collection of resource types that specifies the set of resource collections to search. If not specified, the default is [directoryObject](../resources/directoryobject.md), which contains all of the resource types defined in the directory. Any object that derives from `directoryObject` may be specified in the collection; for example: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md), and so on. The values are not case sensitive.|
+|types|String collection| A collection of resource types that specifies the set of resource collections to search. If not specified, the default is [directoryObject](../resources/directoryobject.md), which contains all of the resource types defined in the directory. Any object that derives from `directoryObject` may be specified in the collection; for example: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md), and so on. The values are not case-sensitive.|
 
 ## Response
 
