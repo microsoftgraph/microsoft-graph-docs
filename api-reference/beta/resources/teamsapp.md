@@ -22,10 +22,11 @@ then use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) 
 
 |Name          |Type           |Description                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|name			|string      |name of the app.|
-|version		|string      |version of the app.|
-|isBlocked		|bool        |an indication whether the app is blocked by tenant.|
-|installedState |[teamsAppInstalledState](../resources/teamsappinstalledstate.md)   |app's install state|
+|id			|string      |App id.|
+|name			|string      |Name of the app.|
+|version		|string      |Version of the app.|
+|isBlocked		|bool        |An indication whether the app is blocked by tenant.|
+|installedState |[teamsAppInstalledState](../resources/teamsappinstalledstate.md)   |App's install state.|
 |context		|[teamsAppContext](../resources/teamsappcontext.md)  |Where the app came from |
 
 ## JSON representation
