@@ -6,6 +6,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## August 2018
 
+### Security APIs
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta       | Added the Secure Score to the [security API](../api-reference/beta/resources/securescore-api-overview.md), including the following resources and operations:<br/>[secureScores](../api-reference/beta/resources/secureScores.md) (and related entities)<br/>[Get secureScores](../api-reference/beta/resouces/get_secureScores.md)<br/>[secureScoreControlProfiles](../api-reference/beta/secureScoreControlProfiles.md)<br/>[Get secureScoreControlProfiles](../api-reference/beta/resouces/get_secureScoreControlProfiles.md)<br/>[Update secureScoreControlProfiles](../api-reference/beta/resources/secureScoreControlProfiles_update.md)
+
 ### Microsoft Intune APIs
 
 |Change type|Version|Description|
