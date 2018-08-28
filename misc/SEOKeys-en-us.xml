@@ -5903,6 +5903,13 @@
 			<Item text="Update alert" url="/en-us/api-reference/beta/api/alert_update" />
 		</Item>
 		<Item text="Errors" url="/en-us/api-reference/beta/resources/security-error-codes" />
+		<Item text="Secure Score" url="/en-us/api-reference/beta/resources/securescore-api-overview" >
+			<Item text="secureScores" url="/en-us/api-reference/beta/api/secureScores" />
+			<Item text="Get secureScores" url="/en-us/api-reference/beta/api/get_secureScores" />
+			<Item text="secureScoreControlProfiles" url="/en-us/api-reference/beta/api/secureScoreControlProfiles" />
+			<Item text="Get secureScoreControlProfiles" url="/en-us/api-reference/beta/api/get_secureScoreControlProfiles" />
+			<Item text="Update secureScoreControlProfiles" url="/en-us/api-reference/beta/api/secureScoreControlProfiles_update" />
+		</Item>
 	</Item>
 	<Item text="Sites and lists" ProdTag="SharePoint" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="sharepoint, sites, lists, drives, microsoft graph api, sharepoint api">
       <Item text="Sites" url="/en-us/api-reference/beta/resources/site" SEOKeyword="sharepoint, site, sites, microsoft graph api, sharepoint sites api" >
