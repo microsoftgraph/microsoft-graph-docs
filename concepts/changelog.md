@@ -87,31 +87,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0        | Added support for the [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_getmailtips.md) action to get any MailTips for specific recipients. Added the following resources: [automaticRepliesMailTips](../api-reference/v1.0/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/v1.0/resources/mailtips.md), [mailTipsError](../api-reference/v1.0/resources/mailtipserror.md). |
 
-### Security APIs
-
-| **Change type** | **Version** | **Description**              |
-| :-------------- | :---------- | :--------------------------------------- |
-| Addition        | beta       | Added **activityGroupName**, **cloudAppStates**, **confidence**, and **registryKeyStates** properties to [alert](../api-reference/beta/resources/alert.md ). |
-|Deletion|beta| Removed **activityGroupStates**, **applicationStates**, **malwareWasRunning**, **riskScore** and **type** properties from [alert](../api-reference/beta/resources/alert.md ). |
-|Change|beta| Changed **comments** type from a `String` to a `String collection`, and changed **severity** type from a `String` to a [alertSeverity](../api-reference/beta/resources/alertseverityenumtype.md) enum in [alert](../api-reference/beta/resources/alert.md). |
-| Addition        | beta       | Added the following resource types: <br/> [cloudAppSecurityState](../api-reference/beta/resources/cloudappsecuritystate.md) <br/> [fileHash](../api-reference/beta/resources/filehash.md) <br/> [registryKeyState](../api-reference/beta/resources/registrykeystate.md) |
-|Deletion|beta| Removed the following resource types: <br/> **activityGroupState**  <br/> **applicationSecurityState** |
-| Addition        | beta       | Added the following enums: <br/> [alertSeverity](../api-reference/beta/resources/alertseverityenumtype.md) <br/> [connectionDirection](../api-reference/beta/resources/connectiondirectionenumtype.md) <br/> [connectionStatus](../api-reference/beta/resources/connectionstatusenumtype.md) <br/> [emailRole](../api-reference/beta/resources/emailroleenumtype.md) <br/> [fileHashType](../api-reference/beta/resources/filehashtypeenumtype.md) <br/> [registryHive](../api-reference/beta/resources/registryhiveenumtype.md)  <br/> [registryOperation](../api-reference/beta/resources/registryoperationenumtype.md) <br/> [registryValueType](../api-reference/beta/resources/registryvaluetypeenumtype.md)|
-|Deletion|beta| Removed the following enum types: <br/> **alertType** <br/> **applicationPermissionsRequired** |
-| Addition        | beta       | Added **fileHash** property to [fileSecurityState](../api-reference/beta/resources/filesecuritystate.md ).|
-|Deletion|beta| Removed **authenticodeHash256** and **sha256** properties from [fileSecurityState](../api-reference/beta/resources/filesecuritystate.md). |
-| Addition | beta | Added **os** property to [hostSecurityState](../api-reference/beta/resources/hostsecuritystate.md).|
-| Addition | beta | Added **category**, **family**, and **wasRunning** properties to [malwareState](../api-reference/beta/resources/malwarestate.md).|
-|Deletion|beta| Removed **aliases** property from [malwareState](../api-reference/beta/resources/malwarestate.md). |
-|Change|beta| Moved **malwareWasRunning** property from  [alert](../api-reference/beta/resources/alert.md ) to [malwareState](../api-reference/beta/resources/malwarestate.md) and renamed to **wasRunning**. |
-| Addition        | beta       | Added **applicationName**, **destinationDomain**, **direction**, **domainRegisteredDateTime**, **localDnsName**, **natDestinationAddress**, **natDestinationPort**, **natSourceAddress**, **natSourcePort**, **riskScore**, **status**, and **urlParameters** properties to [networkConnection](../api-reference/beta/resources/networkconnection.md ).|
-|Change|beta| Changed **uri** property to **destinationUrl** in [networkConnection](../api-reference/beta/resources/networkconnection.md ). |
-| Addition        | beta       | Added **fileHash** property to [process](../api-reference/beta/resources/process.md ).|
-|Deletion|beta| Removed **authenticodeHash256** and **sha256** properties from [process](../api-reference/beta/resources/process.md ). |
-| Addition        | beta       | Added **aadUserId**, **emailRole**, **isVpn**, and **logonIp** properties to [userSecurityState](../api-reference/beta/resources/usersecuritystate.md).|
-|Change|beta| Changed **logonIpAddress** property to **logonIp** in [userSecurityState](../api-reference/beta/resources/usersecuritystate.md). |
-| Addition        | beta       | Added **wasRunning** property to [vulnerabilityState](../api-reference/beta/resources/vulnerabilitystate.md).|
-|Deletion|beta| Removed **name** property from [vulnerabilityState](../api-reference/beta/resources/vulnerabilitystate.md). |
 
 ## July 2018
 

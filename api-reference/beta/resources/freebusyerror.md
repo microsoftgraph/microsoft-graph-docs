@@ -1,15 +1,15 @@
-# activityGroupState resource type
+# freeBusyError resource type
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
-Contains stateful information about the activity group.
+ 
+Represents error information from attempting to get the availability of a user, distribution list, or resource.
 
 ## Properties
-
-| Property   | Type |Description|
+| Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|aliases|String collection|[STIX 2.0 standard](https://oasis-open.github.io/cti-documentation/stix/intro) list of aliases for the activity group.|
-|name|String|[STIX 2.0 standard](https://oasis-open.github.io/cti-documentation/stix/intro) display name for the activity group.|
+|message |String |Describes the error. |
+|responseCode |String |The response code from querying for the availability of the user, distribution list, or resource. |
+
 
 ## JSON representation
 
@@ -20,13 +20,13 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.activityGroupState"
+  "@odata.type": "microsoft.graph.freeBusyError"
 }-->
 
 ```json
 {
-  "aliases": ["String"],
-  "name": "String"
+  "message": "String",
+  "responseCode": "String"
 }
 
 ```
@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "activityGroupState resource",
+  "description": "freeBusyError resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
