@@ -1,7 +1,5 @@
 # user: getMailTips
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).
 
 Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to 
@@ -50,7 +48,7 @@ The following example gets MailTips for the specified recipients, for any automa
   "name": "user_getmailtips"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/getMailTips
+POST https://graph.microsoft.com/v1.0/me/getMailTips
 Content-Type: application/json
 
 {
@@ -75,7 +73,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailTips)",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.mailTips)",
     "value":[
         {
             "emailAddress":{
