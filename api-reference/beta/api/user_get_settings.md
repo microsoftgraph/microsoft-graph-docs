@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Read the user and organization [settings](../resources/user_settings.md) object.
-To update the properties of the [settings](../resources/user_settings.md) object, see [update user settings](user_update_settings.md).
+To learn how to update the properties of the [settings](../resources/user_settings.md) object, see [update user settings](user_update_settings.md).
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /me/settings/
 ```
 
-Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. See [Permissions](../../../concepts/permissions_reference.md).
+Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](../../../concepts/permissions_reference.md).
 
 ```http
 GET /users/{id | userPrincipalName}/settings/
