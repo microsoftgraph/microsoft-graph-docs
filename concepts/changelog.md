@@ -6,6 +6,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## August 2018
 
+
 ### Insights API
 
 | **Change type** | **Version**   | **Description**                          |
