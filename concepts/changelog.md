@@ -13,7 +13,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Change          | Beta          | Updated the [settings](../api-reference/beta/resources/user_settings.md) entity and the following CRUD methods: <br> [Get](../api-reference/beta/api/user_get_settings.md) <br> [Update](../api-reference/beta/api/user_update_settings.md) |
 
 ### Synchronization APIs
-=======
+
 ### Microsoft Intune APIs
 
 |Change type|Version|Description|
