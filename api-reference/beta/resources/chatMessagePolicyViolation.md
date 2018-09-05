@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents properties for policy violation to a chat message entity.
+Represents the properties of a policy violation on a chat message.
 
 An entity of type `chatMessagePolicyViolation` is a part of [chatMessage](chatMessage.md) entity.
 
