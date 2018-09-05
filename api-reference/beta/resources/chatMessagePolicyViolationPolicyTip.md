@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents the properties of policy tip on chat message policy violation object.
+Represents the properties of policy tip on a chat message policy violation object.
 
 An entity of type `chatMessagePolicyViolationPolicyTip` is a part of the [chatMessagePolicyViolation](chatMessagePolicyViolation.md) entity.
 
