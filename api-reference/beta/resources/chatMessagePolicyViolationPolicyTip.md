@@ -4,7 +4,7 @@
 
 Represents properties for policy violation to a chat message entity.
 
-An entity of type `chatMessagePolicyViolationPolicyTip` is a part of [chatMessagePolicyViolation](chatMessagePolicyViolation.md) entity.
+An entity of type `chatMessagePolicyViolationPolicyTip` is a part of the [chatMessagePolicyViolation](chatMessagePolicyViolation.md) entity.
 
 ## Properties
 | Property	   | Type	|Description|
@@ -14,7 +14,7 @@ An entity of type `chatMessagePolicyViolationPolicyTip` is a part of [chatMessag
 |matchedConditionDescriptions|string collection|An array that contains a description of each sensitive data condiation that has been matached in the given message.|
 
 ## JSON representation
-The following is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 ```json
 {
