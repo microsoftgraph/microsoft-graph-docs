@@ -9,14 +9,14 @@ An entity of type `chatMessagePolicyViolation` is a part of [chatMessage](chatMe
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|dlpAction|bitwise enum|Indicates the action taken by DLP provider on the message with sensitive content. Possible values are <li>None</li><li>NotifySender</li><li>BlockAccess</li><li>BlockAccessExternal</li>|
+|dlpAction|bitwise enum|Indicates the action taken by the DLP provider on the message with sensitive content. Possible values are: <li>None</li><li>NotifySender</li><li>BlockAccess</li><li>BlockAccessExternal</li>|
 |justificationText|string|Justification text provided by the sender of the message. When the DLP provider is updating the message for blocking sensitive content, justificationText is not required.|
-|policyTip|chatMessagePolicyViolationPolicyTip|The policy tip for the DLP Violation which has generalText, complianceUrl, and matchedConditionDescription.|
-|userAction|bitwise enum|Indicates the action taken by the user on a message blocked by DLP provider. Possible values are <li>None</li><li>Override</li><li>ReportFalsePositive</li>When the DLP provider is updating the message for blocking sensitive content, userAction is not required.|
+|policyTip|chatMessagePolicyViolationPolicyTip|The policy tip for the DLP Violation, which has generalText, complianceUrl, and matchedConditionDescription.|
+|userAction|bitwise enum|Indicates the action taken by the user on a message blocked by the DLP provider. Possible values are: <li>None</li><li>Override</li><li>ReportFalsePositive</li>When the DLP provider is updating the message for blocking sensitive content, userAction is not required.|
 |verdictDetails|bitwise enum|Indicates the details of the allowed sender actions based on the verdict of the DLP provider for the message processed. Possible values include: <li>None</li><li>AllowFalsePositiveOverride</li><li>AllowOverridewithoutJustification</li><li>AllowOverridewithJustification</li>AllowOverridewithoutJustification and AllowOverridewithJustification are mutually exclusive.|
 
 ## JSON representation
-The following is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
