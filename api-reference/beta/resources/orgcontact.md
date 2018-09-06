@@ -53,7 +53,7 @@ Here is a JSON representation of the resource
 |givenName|String| The given name (first name) of the contact. |
 |jobTitle|String| The contact's job title. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product (including Azure AD Connect, DirSync and MIM + Connector) during provisioning. |
+|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product during provisioning. |
 |mail|String| The SMTP address for the contact, for example, "jeff@contoso.onmicrosoft.com". |
 |mailNickname|String| The mail alias for the contact. |
 |mobilePhone|String| The primary cellular telephone number for the contact. |
