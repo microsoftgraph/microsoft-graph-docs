@@ -13,6 +13,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Change          | Beta          | Updated the [settings](../api-reference/beta/resources/user_settings.md) entity and the following CRUD methods: <br> [Get](../api-reference/beta/api/user_get_settings.md) <br> [Update](../api-reference/beta/api/user_update_settings.md) |
 
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added  [onPremisesProvisioningErrors](../api-reference/v1.0/resources/onpremisesprovisioningerror.md) property to [User](../api-reference/v1.0/resources/user.md) and [Group](../api-reference/v1.0/resources/group.md) entities that represents directory synchronization errors when synchronizing on-premises directories to Azure Active Directory when using Microsoft synchronization product (including Azure AD Connect, DirSync and MIM + Connector).|
+| Addition | v1.0 | Added  [onPremisesExtensionAttribute](../api-reference/v1.0/resources/onpremisesprovisioningerror.md) property to [User](../api-reference/v1.0/resources/user.md) entity that contains fifteen custom extension attribute properties. For an onPremisesSyncEnabled user, this set of properties is mastered in on-premises Active Directory and synchronized to Azure AD, and is read-only. For a cloud-only user (where onPremisesSyncEnabled is false), these properties may be set during creation or update.|
+|Addition|v1.0|Added the **onPremisesDomainName** property to the [User](../api-reference/v1.0/resources/user.md) entity|
+
 ### Microsoft Intune APIs
 
 |Change type|Version|Description|
