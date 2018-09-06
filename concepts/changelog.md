@@ -6,14 +6,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## August 2018
 
-
-### Insights API
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Change          | Beta          | Updated the [settings](../api-reference/beta/resources/user_settings.md) entity and the following CRUD methods: <br> [Get](../api-reference/beta/api/user_get_settings.md) <br> [Update](../api-reference/beta/api/user_update_settings.md) |
-
-
 ### Directory APIs
 
 | **Change type** | **Version**   | **Description**                          |
