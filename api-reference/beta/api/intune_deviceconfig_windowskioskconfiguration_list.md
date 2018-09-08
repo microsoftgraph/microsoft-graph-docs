@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1873
+Content-Length: 1714
 
 {
   "value": [
@@ -56,10 +56,6 @@ Content-Length: 1873
       "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
       "id": "146a990b-990b-146a-0b99-6a140b996a14",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "roleScopeTagIds": [
-        "Role Scope Tag Ids value"
-      ],
-      "supportsScopeTags": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -92,7 +88,6 @@ Content-Length: 1873
       "kioskBrowserDefaultUrl": "https://example.com/kioskBrowserDefaultUrl/",
       "kioskBrowserEnableHomeButton": true,
       "kioskBrowserEnableNavigationButtons": true,
-      "kioskBrowserEnableEndSessionButton": true,
       "kioskBrowserRestartOnIdleTimeInMinutes": 6,
       "kioskBrowserBlockedURLs": [
         "Kiosk Browser Blocked URLs value"
@@ -104,6 +99,7 @@ Content-Length: 1873
   ]
 }
 ```
+
 
 
 

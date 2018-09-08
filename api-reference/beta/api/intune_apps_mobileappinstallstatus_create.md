@@ -43,8 +43,7 @@ The following table shows the properties that are required when you create the m
 |lastSyncDateTime|DateTimeOffset|Last sync date time|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune_shared_resultantappstate.md)|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installState|[resultantAppState](../resources/intune_shared_resultantappstate.md)|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
-|installStateDetail|[resultantAppStateDetail](../resources/intune_apps_resultantappstatedetail.md)|The install state detail of the app. Possible values are: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
-|errorCode|Int32|The error code for install or uninstall failures.|
+|errorCode|Int32|The error code for install failures.|
 |osVersion|String|OS Version|
 |osDescription|String|OS Description|
 |userName|String|Device User Name|
@@ -62,7 +61,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses
 Content-type: application/json
-Content-length: 549
+Content-length: 501
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -71,7 +70,6 @@ Content-length: 549
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "mobileAppInstallStatusValue": "failed",
   "installState": "failed",
-  "installStateDetail": "seeInstallErrorCode",
   "errorCode": 9,
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
@@ -86,7 +84,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 598
+Content-Length: 550
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -96,7 +94,6 @@ Content-Length: 598
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "mobileAppInstallStatusValue": "failed",
   "installState": "failed",
-  "installStateDetail": "seeInstallErrorCode",
   "errorCode": 9,
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
@@ -105,6 +102,7 @@ Content-Length: 598
   "displayVersion": "Display Version value"
 }
 ```
+
 
 
 

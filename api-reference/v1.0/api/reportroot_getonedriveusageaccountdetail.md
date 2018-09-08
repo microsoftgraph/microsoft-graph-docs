@@ -23,7 +23,7 @@ GET /reports/getOneDriveUsageAccountDetail(period='{period_value}')
 GET /reports/getOneDriveUsageAccountDetail(date={date_value})
 ```
 
-## Function parameters
+## Request parameters
 
 In the request URL, provide one of the following parameters with a valid value.
 

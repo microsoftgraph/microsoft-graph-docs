@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 727
+Content-Length: 731
 
 {
   "value": {
@@ -63,7 +63,7 @@ Content-Length: 727
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "displayName": "Display Name value",
     "version": 7,
-    "packageId": "Package Id value",
+    "packageName": "Package Name value",
     "payloadJson": "Payload Json value",
     "permissionActions": [
       {
@@ -75,6 +75,7 @@ Content-Length: 727
   }
 }
 ```
+
 
 
 

@@ -9,7 +9,7 @@ Contains information about the properties that triggered a detection (properties
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |name|String|Name of the property serving as a detection trigger.|
-|type|String|Type of the property in the key:value pair for interpretation. For example, String, Boolean, etc.|
+|type|String|Type of the property in the key:value pair for interpretation. For example, String, Boolean, and so on.|
 |value|String|Value of the property serving as a detection trigger.|
 
 ## JSON representation
@@ -29,17 +29,6 @@ The following is a JSON representation of the resource.
   "name": "String",
   "type": "String",
   "value": "String"
-}
-
-```
-
-## Example
-
-```json
-{
-  "name": "hostState.privateIpAddress",
-  "type": "String",
-  "value": "10.154.9.40"
 }
 
 ```

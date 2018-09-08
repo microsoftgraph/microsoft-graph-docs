@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/getTeamsUserActivityCounts(period='{period_value}')
 ```
 
-## Function parameters
+## Request parameters
 
 In the request URL, provide the following parameter with a valid value.
 

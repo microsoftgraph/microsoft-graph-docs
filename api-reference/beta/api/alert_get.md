@@ -64,35 +64,41 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "activityGroupName": "String",
-  "assignedTo": "String",
-  "azureSubscriptionId": "String",
-  "azureTenantId": "String",
-  "category": "String",
-  "closedDateTime": "String (timestamp)",
-  "cloudAppStates": [
+  "activityGroupStates": [
     {
-      "destinationServiceIp": "String",
-      "destinationServiceName": "String",
-      "riskScore": "String"
+      "aliases": [
+        "aliases-value"
+      ],
+      "name": "name-value"
     }
   ],
-  "comments": ["String"],
-  "confidence": 1024,
+  "applicationStates": [
+    {
+      "deploymentPackageUrl": "deploymentPackageUrl-value",
+      "name": "name-value",
+      "permissionsRequired": "permissionsRequired-value",
+      "publisher": "publisher-value",
+      "riskScore": "riskScore-value"
+    }
+  ],
+  "assignedTo": "assignedTo-value",
+  "azureSubscriptionId": "azureSubscriptionId-value",
+  "azureTenantId": "String",
+  "category": "category-value",
+  "closedDateTime": "String (timestamp)",
+  "comments": "String",
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "detectionIds": ["String"],
   "eventDateTime": "String (timestamp)",
-  "feedback": "@odata.type: microsoft.graph.alertFeedback",
+  "feedback": "String",
   "fileStates": [
     {
-      "fileHash": {
-        "hashType": "@odata.type: microsoft.graph.fileHashType",
-        "hashValue": "String"
-      },
+      "authenticodeHash256": "String",
       "name": "String",
       "path": "String",
-      "riskScore": "String"
+      "riskScore": "String",
+      "sha256": "String"
     }
   ],
   "hostStates": [
@@ -102,7 +108,6 @@ Content-type: application/json
       "isAzureAadRegistered": true,
       "isHybridAzureDomainJoined": true,
       "netBiosName": "String",
-      "os": "String",
       "privateIpAddress": "String",
       "publicIpAddress": "String",
       "riskScore": "String"
@@ -112,72 +117,44 @@ Content-type: application/json
   "lastModifiedDateTime": "String (timestamp)",
   "malwareStates": [
     {
-      "category": "String",
-      "family": "String",
+      "aliases": ["String"],
       "name": "String",
-      "severity": "String",
-      "wasRunning": true
+      "severity": "String"
     }
   ],
+  "malwareWasRunning": true,
   "networkConnections": [
     {
-      "applicationName": "String",
       "destinationAddress": "String",
-      "destinationDomain": "String",
       "destinationPort": "String",
-      "destinationUrl": "String",
-      "direction": "@odata.type: microsoft.graph.connectionDirection",
-      "domainRegisteredDateTime": "String (timestamp)",
-      "localDnsName": "String",
-      "natDestinationAddress": "String",
-      "natDestinationPort": "String",
-      "natSourceAddress": "String",
-      "natSourcePort": "String",
-      "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
-      "riskScore": "String",
+      "protocol": "String",
       "sourceAddress": "String",
       "sourcePort": "String",
-      "status": "@odata.type: microsoft.graph.connectionStatus",
-      "urlParameters": "String"
+      "uri": "String"
     }
   ],
   "processes": [
     {
       "accountName": "String",
+      "authenticodeHash256": "String",
       "commandLine": "String",
       "createdDateTime": "String (timestamp)",
-      "fileHash": {
-        "hashType": "@odata.type: microsoft.graph.fileHashType",
-        "hashValue": "String"
-      },
-      "integrityLevel": "@odata.type: microsoft.graph.processIntegrityLevel",
+      "integrityLevel": "String",
       "isElevated": true,
       "name": "String",
       "parentProcessCreatedDateTime": "String (timestamp)",
       "parentProcessId": 1024,
       "parentProcessName": "String",
       "path": "String",
-      "processId": 1024
+      "processId": 1024,
+      "sha256": "String"
     }
   ],
   "recommendedActions": ["String"],
-  "registryKeyStates": [
-    {
-      "hive": "@odata.type: microsoft.graph.registryHive",
-      "key": "String",
-      "oldKey": "String",
-      "oldValueData": "String",
-      "oldValueName": "String",
-      "operation": "@odata.type: microsoft.graph.registryOperation",
-      "processId": 1024,
-      "valueData": "String",
-      "valueName": "String",
-      "valueType": "@odata.type: microsoft.graph.registryValueType"
-    }
-  ],
-  "severity": "@odata.type: microsoft.graph.alertSeverity",
+  "riskScore": "String",
+  "severity": "String",
   "sourceMaterials": ["String"],
-  "status": "@odata.type: microsoft.graph.alertStatus",
+  "status": "string",
   "tags": ["String"],
   "title": "String",
   "triggers": [
@@ -187,25 +164,24 @@ Content-type: application/json
       "value": "String"
     }
   ],
+  "type": "string",
   "userStates": [
     {
-      "aadUserId": "String",
       "accountName": "String",
       "domainName": "String",
-      "emailRole": "@odata.type: microsoft.graph.emailRole",
-      "isVpn": true,
       "logonDateTime": "String (timestamp)",
       "logonId": "String",
-      "logonIp": "String",
+      "logonIpAddress": "String",
       "logonLocation": "String",
-      "logonType": "@odata.type: microsoft.graph.logonType",
+      "logonType": "String",
       "onPremisesSecurityIdentifier": "String",
       "riskScore": "String",
-      "userAccountType": "@odata.type: microsoft.graph.userAccountSecurityType",
+      "userAccountType": "String",
       "userPrincipalName": "String"
     }
   ],
-  "vendorInformation": {
+  "vendorInformation":
+  {
     "provider": "String",
     "providerVersion": "String",
     "subProvider": "String",
@@ -214,8 +190,8 @@ Content-type: application/json
   "vulnerabilityStates": [
     {
       "cve": "String",
-      "severity": "String",
-      "wasRunning": true
+      "name": "String",
+      "severity": "String"
     }
   ]
 }

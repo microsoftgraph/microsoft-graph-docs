@@ -2,7 +2,8 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-User settings.
+The current user settings. 
+To learn how to get or update user settings, see [Get settings](../api/user_get_settings.md) and [Update settings](../api/user_update_settings.md).
 
 This resource supports:
 
@@ -32,8 +33,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "contributionToContentDiscoveryDisabled": true,
-  "contributionToContentDiscoveryAsOrganizationDisabled": true
+  "contributionToContentDiscoveryDisabled": false,
+  "contributionToContentDiscoveryAsOrganizationDisabled": false
 }
 
 ```

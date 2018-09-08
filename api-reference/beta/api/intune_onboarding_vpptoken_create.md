@@ -44,14 +44,12 @@ The following table shows the properties that are required when you create the v
 |lastSyncDateTime|DateTimeOffset|The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.|
 |token|String|The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.|
 |lastModifiedDateTime|DateTimeOffset|Last modification date time associated with the Apple Volume Purchase Program Token.|
-|state|[vppTokenState](../resources/intune_onboarding_vpptokenstate.md)|Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Possible values are: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`.|
+|state|[vppTokenState](../resources/intune_onboarding_vpptokenstate.md)|Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`. Possible values are: `unknown`, `valid`, `expired`, `invalid`.|
 |tokenActionResults|[vppTokenActionResult](../resources/intune_onboarding_vpptokenactionresult.md) collection|The collection of statuses of the actions performed on the Apple Volume Purchase Program Token.|
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune_onboarding_vpptokensyncstatus.md)|Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: `none`, `inProgress`, `completed`, `failed`. Possible values are: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Whether or not apps for the VPP token will be automatically updated.|
 |countryOrRegion|String|Whether or not apps for the VPP token will be automatically updated.|
 |dataSharingConsentGranted|Boolean|Consent granted for data sharing with the Apple Volume Purchase Program.|
-|displayName|String|An admin specified token friendly name.|
-|locationName|String|Token location returned from Apple VPP.|
 
 
 
@@ -64,7 +62,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/vppTokens
 Content-type: application/json
-Content-length: 956
+Content-length: 874
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -88,9 +86,7 @@ Content-length: 956
   "lastSyncStatus": "inProgress",
   "automaticallyUpdateApps": true,
   "countryOrRegion": "Country Or Region value",
-  "dataSharingConsentGranted": true,
-  "displayName": "Display Name value",
-  "locationName": "Location Name value"
+  "dataSharingConsentGranted": true
 }
 ```
 
@@ -99,7 +95,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1005
+Content-Length: 923
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -124,11 +120,10 @@ Content-Length: 1005
   "lastSyncStatus": "inProgress",
   "automaticallyUpdateApps": true,
   "countryOrRegion": "Country Or Region value",
-  "dataSharingConsentGranted": true,
-  "displayName": "Display Name value",
-  "locationName": "Location Name value"
+  "dataSharingConsentGranted": true
 }
 ```
+
 
 
 

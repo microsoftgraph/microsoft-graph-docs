@@ -36,7 +36,6 @@ The following table shows the properties that are required when you create the i
 
 |Property|Type|Description|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |id|String|Key of the entity. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
@@ -57,7 +56,6 @@ The following table shows the properties that are required when you create the i
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Boolean|Indicates whether or not to require a managed email profile.|
-|restrictedApps|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|Require the device to not have the specified apps installed. This collection can contain a maximum of 10000 elements.|
 
 
 
@@ -70,13 +68,10 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1124
+Content-length: 809
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
-  "roleScopeTagIds": [
-    "Role Scope Tag Ids value"
-  ],
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
@@ -94,16 +89,7 @@ Content-length: 1124
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
-  "managedEmailProfileRequired": true,
-  "restrictedApps": [
-    {
-      "@odata.type": "microsoft.graph.appListItem",
-      "name": "Name value",
-      "publisher": "Publisher value",
-      "appStoreUrl": "https://example.com/appStoreUrl/",
-      "appId": "App Id value"
-    }
-  ]
+  "managedEmailProfileRequired": true
 }
 ```
 
@@ -112,13 +98,10 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1232
+Content-Length: 917
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
-  "roleScopeTagIds": [
-    "Role Scope Tag Ids value"
-  ],
   "id": "4f501351-1351-4f50-5113-504f5113504f",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
@@ -138,18 +121,10 @@ Content-Length: 1232
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
-  "managedEmailProfileRequired": true,
-  "restrictedApps": [
-    {
-      "@odata.type": "microsoft.graph.appListItem",
-      "name": "Name value",
-      "publisher": "Publisher value",
-      "appStoreUrl": "https://example.com/appStoreUrl/",
-      "appId": "App Id value"
-    }
-  ]
+  "managedEmailProfileRequired": true
 }
 ```
+
 
 
 

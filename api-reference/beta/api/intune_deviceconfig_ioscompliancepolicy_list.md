@@ -47,15 +47,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1397
+Content-Length: 1034
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.iosCompliancePolicy",
-      "roleScopeTagIds": [
-        "Role Scope Tag Ids value"
-      ],
       "id": "4f501351-1351-4f50-5113-504f5113504f",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
@@ -75,20 +72,12 @@ Content-Length: 1397
       "securityBlockJailbrokenDevices": true,
       "deviceThreatProtectionEnabled": true,
       "deviceThreatProtectionRequiredSecurityLevel": "secured",
-      "managedEmailProfileRequired": true,
-      "restrictedApps": [
-        {
-          "@odata.type": "microsoft.graph.appListItem",
-          "name": "Name value",
-          "publisher": "Publisher value",
-          "appStoreUrl": "https://example.com/appStoreUrl/",
-          "appId": "App Id value"
-        }
-      ]
+      "managedEmailProfileRequired": true
     }
   ]
 }
 ```
+
 
 
 

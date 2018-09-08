@@ -78,7 +78,7 @@ These properties are mutually exclusive -- a column can only have one of them sp
 | **text**          | [textColumn][]          | This column stores text values.
 
 Note: These properties correspond to SharePoint's [SPFieldType][] enumeration.
-While the most common field types are represented above, this API is still missing some.
+While the most common field types are represented above, this beta API is still missing some.
 In those cases, none of the column type facets will be populated, and the column will only have its basic properties.
 
 ## Remarks

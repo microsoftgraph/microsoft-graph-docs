@@ -13,7 +13,6 @@ Out of box experience setting
 |userType|[windowsUserType](../resources/intune_enrollment_windowsusertype.md)|Type of user. Possible values are: `administrator`, `standard`.|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune_enrollment_windowsdeviceusagetype.md)|AAD join authentication type. Possible values are: `singleUser`, `shared`.|
 |skipKeyboardSelectionPage|Boolean|If set, then skip the keyboard selection page if Language and Region are set|
-|hideEscapeLink|Boolean|If set to true, then the user can't start over with different account, on company sign-in|
 
 ## Relationships
 None
@@ -32,10 +31,10 @@ Here is a JSON representation of the resource.
   "hideEULA": true,
   "userType": "String",
   "deviceUsageType": "String",
-  "skipKeyboardSelectionPage": true,
-  "hideEscapeLink": true
+  "skipKeyboardSelectionPage": true
 }
 ```
+
 
 
 

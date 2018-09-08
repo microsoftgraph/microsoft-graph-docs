@@ -4,19 +4,17 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Reports the state of an app after an attempted installation or update request.
-
+Not yet documented
 ## Members
-
 |Member|Value|Description|
 |:---|:---|:---|
-|installed|1|The application is installed with no errors.|
-|failed|2|The application failed to install.|
-|notInstalled|3|The application is not installed.|
-|uninstallFailed|4|The application failed to uninstall.|
-|pendingInstall|5|The installation of the application is in progress.|
-|unknown|99|The status of the application is unknown.|
-|notApplicable|-1|The application state cannot be determined.|
+|installed|1|Not yet documented|
+|failed|2|Not yet documented|
+|notInstalled|3|Not yet documented|
+|uninstallFailed|4|Not yet documented|
+|pendingInstall|5|Not yet documented|
+|unknown|99|Not yet documented|
+|notApplicable|-1|Not yet documented|
 
 
 

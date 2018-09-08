@@ -17,7 +17,7 @@ GET /workbook/worksheets/{id|name}/usedRange
 
 ```
 
-## Function parameters
+## Parameters
 In the request URL you may provide optional parameters.
 
 | Parameter	   | Type	|Description|
@@ -29,9 +29,6 @@ In the request URL you may provide optional parameters.
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
-
-## Request body
-Do not supply a request body for this method.
 
 ## Response
 

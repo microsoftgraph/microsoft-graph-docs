@@ -62,10 +62,9 @@ If successful, this method returns a `200 OK` response code and [deviceCategory]
 
 ### Request
 
-Here is are examples of the request.
+Here is an example of the request.
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 GET https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 

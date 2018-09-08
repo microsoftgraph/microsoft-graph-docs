@@ -36,7 +36,6 @@ The following table shows the properties that are required when you create the w
 
 |Property|Type|Description|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |id|String|Key of the entity. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
@@ -66,13 +65,10 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 733
+Content-length: 671
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81CompliancePolicy",
-  "roleScopeTagIds": [
-    "Role Scope Tag Ids value"
-  ],
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
@@ -96,13 +92,10 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 841
+Content-Length: 779
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81CompliancePolicy",
-  "roleScopeTagIds": [
-    "Role Scope Tag Ids value"
-  ],
   "id": "e6021ad4-1ad4-e602-d41a-02e6d41a02e6",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
@@ -122,6 +115,7 @@ Content-Length: 841
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

@@ -11,7 +11,7 @@ Returns the content appropriate for the context, including:
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|Stream|Report content; details vary by report type.|
+|content|Stream|Report content.|
 
 ## Relationships
 None

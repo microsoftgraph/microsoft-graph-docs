@@ -8,10 +8,11 @@ Contains information about the file (not process) related to the alert.
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|fileHash|[fileHash](filehash.md)|Complex type containing file hashes (cryptographic and location-sensitive).|
+|authenticodeHash256|String|Authenticode 256 hash of image file (used by AppLocker and others).|
 |name|String|File name (without path).|
 |path|String|Full file path of the file/imageFile.|
-|riskScore|String|Provider generated/calculated risk score of the alert file. Recommended value range of 0-1, which equates to a percentage.|
+|riskScore|String|Provider generated/calculated risk score of the alert file.|
+|sha256|String|Sha256 cryptographic hash of the alert file.|
 
 ## JSON representation
 
@@ -27,10 +28,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "fileHash": {"@odata.type": "microsoft.graph.fileHash"},
+  "authenticodeHash256": "String",
   "name": "String",
   "path": "String",
-  "riskScore": "String"
+  "riskScore": "String",
+  "sha256": "String"
 }
 
 ```

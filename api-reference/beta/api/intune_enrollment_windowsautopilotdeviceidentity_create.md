@@ -46,10 +46,8 @@ The following table shows the properties that are required when you create the w
 |productKey|String|Product Key of the Windows autopilot device.|
 |manufacturer|String|Oem manufacturer of the Windows autopilot device.|
 |model|String|Model name of the Windows autopilot device.|
-|enrollmentState|[enrollmentState](../resources/intune_enrollment_enrollmentstate.md)|Intune enrollment state of the Windows autopilot device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|enrollmentState|[enrollmentState](../resources/intune_shared_enrollmentstate.md)|Intune enrollment state of the Windows autopilot device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows autopilot device.|
-|addressableUserName|String|Addressable user name.|
-|userPrincipalName|String|User Principal Name.|
 
 
 
@@ -62,7 +60,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 677
+Content-length: 567
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -75,9 +73,7 @@ Content-length: 677
   "manufacturer": "Manufacturer value",
   "model": "Model value",
   "enrollmentState": "enrolled",
-  "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
-  "addressableUserName": "Addressable User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00"
 }
 ```
 
@@ -86,7 +82,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 726
+Content-Length: 616
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -100,11 +96,10 @@ Content-Length: 726
   "manufacturer": "Manufacturer value",
   "model": "Model value",
   "enrollmentState": "enrolled",
-  "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
-  "addressableUserName": "Addressable User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00"
 }
 ```
+
 
 
 

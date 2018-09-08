@@ -14,7 +14,7 @@ Inherits from [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 |displayName|String|Display Name. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |description|String|Description. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|String|OMA. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|fileName|String|File name associated with the Value property (*.cer | *.crt | *.p7b | *.bin).|
+|fileName|String|File name associated with the Value property (*.cer | *.crt ).|
 |value|String|Value. (Base64 encoded string)|
 
 ## Relationships
@@ -37,6 +37,7 @@ Here is a JSON representation of the resource.
   "value": "String"
 }
 ```
+
 
 
 

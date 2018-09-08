@@ -1,8 +1,2 @@
 # Visual Studio Code Settings
 .vscode/
-
-# Test-Docs.ps1 related files
-nuget.exe
-*.nupkg
-apidoc.exe
-*.dll

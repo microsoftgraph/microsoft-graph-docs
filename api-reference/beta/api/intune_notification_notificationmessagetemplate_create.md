@@ -41,7 +41,6 @@ The following table shows the properties that are required when you create the n
 |displayName|String|Display name for the Notification Message Template.|
 |defaultLocale|String|The default locale to fallback onto when the requested locale is not available.|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 
 
 
@@ -54,17 +53,14 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates
 Content-type: application/json
-Content-length: 323
+Content-length: 261
 
 {
   "@odata.type": "#microsoft.graph.notificationMessageTemplate",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "defaultLocale": "Default Locale value",
-  "brandingOptions": "includeCompanyLogo",
-  "roleScopeTagIds": [
-    "Role Scope Tag Ids value"
-  ]
+  "brandingOptions": "includeCompanyLogo"
 }
 ```
 
@@ -73,7 +69,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 372
+Content-Length: 310
 
 {
   "@odata.type": "#microsoft.graph.notificationMessageTemplate",
@@ -81,12 +77,10 @@ Content-Length: 372
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "defaultLocale": "Default Locale value",
-  "brandingOptions": "includeCompanyLogo",
-  "roleScopeTagIds": [
-    "Role Scope Tag Ids value"
-  ]
+  "brandingOptions": "includeCompanyLogo"
 }
 ```
+
 
 
 

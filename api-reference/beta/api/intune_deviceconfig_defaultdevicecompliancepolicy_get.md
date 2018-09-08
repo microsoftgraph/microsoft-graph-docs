@@ -49,14 +49,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 440
+Content-Length: 372
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.defaultDeviceCompliancePolicy",
-    "roleScopeTagIds": [
-      "Role Scope Tag Ids value"
-    ],
     "id": "a285f027-f027-a285-27f0-85a227f085a2",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
@@ -66,6 +63,7 @@ Content-Length: 440
   }
 }
 ```
+
 
 
 
