@@ -75,9 +75,7 @@ Content-type: application/json
 
 
 ## See Also
-[Graph Reference](../api/dynamics_graph_reference.md)  
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)  
-[Error Codes](../dynamics_error_codes.md)  
+[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 [Tax Groups](../resources/dynamics_taxgroups.md)  
 [Get Tax Groups](../api/dynamics_taxgroups_get.md)  
 [Update Tax Groups](../api/dynamics_taxgroups_update.md)  

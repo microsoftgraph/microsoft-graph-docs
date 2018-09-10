@@ -71,4 +71,7 @@ Content-type: application/json
 ```
 
 ## See also
-[Microsoft Graph Reference](../api/dynamics_graph_reference.md)  
+[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
+[Tax Area](../resources/dynamics_taxarea.md)  
+[Create Tax Area](../api/dynamics_create_taxarea.md)  
+[Delete Tax Area](../api/dynamics_taxarea_delete.md)  

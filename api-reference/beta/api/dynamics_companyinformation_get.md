@@ -75,8 +75,7 @@ Here is an example of the response.
 
 
 ## See also
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)  
-[Error Codes](../dynamics_error_codes.md)  
+[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 [Companies](../resources/dynamics_companies.md)  
 [Company Information](../resources/dynamics_companyinformation.md)  
 [Update Company Information](dynamics_companyinformation_update.md)  

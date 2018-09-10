@@ -76,9 +76,7 @@ Here is an example of the response.
 ```
 
 ## See also
-[Graph Reference](../api/dynamics_graph_reference.md)  
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)  
-[Error Codes](../dynamics_error_codes.md)  
+[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 [Purchase Invoice Line](../resources/dynamics_purchaseinvoiceline.md)  
 [Create Purchase Invoice Line](../api/dynamics_create_purchaseinvoiceline.md)  
 [Update Purchase Invoice Line](../api/dynamics_purchaseinvoiceline_update.md)  

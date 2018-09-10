@@ -74,8 +74,7 @@ Content-type: application/json
 
 
 ## See also
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)  
-[Error Codes](../dynamics_error_codes.md)  
+[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 [IRS 1099](../resources/dynamics_irs1099.md)  
 [Get IRS 1099](../api/dynamics_irs1099_get.md)  
 [Patch IRS 1099](../api/dynamics_irs1099_update.md)  

@@ -73,9 +73,7 @@ Content-type: application/json
 ```
 
 ## See also
-[Graph Reference](../api/dynamics_graph_reference.md)  
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)  
-[Error Codes](../dynamics_error_codes.md)  
+[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 [Journal Line](../resources/dynamics_journalline.md)  
 [Get Journal Line](../api/dynamics_journalline_get.md)  
 [Create Journal Line](../api/dynamics_create_journalline.md)  

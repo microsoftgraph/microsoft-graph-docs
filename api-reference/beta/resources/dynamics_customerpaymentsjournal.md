@@ -52,8 +52,8 @@ Here is a JSON representation of the resource.
 
 ## See also
 [Microsoft Graph Reference](../api/dynamics_graph_reference.md)  
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)  
-[Error Codes](../dynamics_error_codes.md)  
+[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
+
 [Customer Payment Journal](../api/dynamics_customerpaymentsjournal_get.md)  
 [Post Customer Payment Journal](../api/dynamics_create_customerpaymentsjournal.md)  
 [Patch Customer Payment Journal](../api/dynamics_customerpaymentsjournal_update.md)  

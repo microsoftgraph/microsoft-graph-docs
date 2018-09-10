@@ -95,8 +95,8 @@ Here is a JSON representation of the resource.
 
 ```
 ## See also
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)  
-[Error Codes](../dynamics_error_codes.md)  
+[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
+
 [Get Customers](../api/dynamics_customer_get.md)  
 [Post Customers](../api/dynamics_create_customer.md)  
 [Patch Customers](../api/dynamics_customer_update.md)  

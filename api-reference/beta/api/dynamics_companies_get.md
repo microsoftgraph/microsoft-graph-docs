@@ -60,4 +60,4 @@ Here is an example of the response.
 
 
 ## See Also
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)  
+[Business Central API Overview](../dynamics-business-central-concept-overview.md)  

@@ -66,8 +66,7 @@ Here is an example of the response.
 
 
 ## See also
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)  
-[Error Codes](../dynamics_error_codes.md)  
+[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 [Aged Accounts Payable](../resources/dynamics_agedaccountspayable.md)  
 [Get Aged Accounts Receivable](../api/dynamics_agedaccountsreceivable_get.md)  
 [Account](../resources/dynamics_account.md)  

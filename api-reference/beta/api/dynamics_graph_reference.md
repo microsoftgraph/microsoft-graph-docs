@@ -1,5 +1,5 @@
 ---
-title: Microsoft Graph Reference | Microsoft Docs
+title: Working with Dynamics 365 Business Central resources in Microsoft Graph | Microsoft Docs
 description: API documentation for integration with Microsoft Graph
 services: project-madeira
 documentationcenter: ''
@@ -10,12 +10,12 @@ ms.topic: get-started-article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/19/2018
+ms.date: 09/10/2018
 ms.author: solsen
 
 ---
-# Microsoft graph reference
-In this section, you can find API documentation for Microsoft Graph.
+# Working with Dynamics 365 Business Central resources in Microsoft Graph
+In this section, you can find API documentation for the resources that are available for integration with Dynamics 365 Business Central.
 
 |For Resource Type|See|
 |-----------------|---|
@@ -61,6 +61,3 @@ In this section, you can find API documentation for Microsoft Graph.
 |purchaseInvoice resource type|[purchaseInvoice](../resources/dynamics_purchaseinvoice.md)|
 |purchaseInvoiceLine resource type|[purchaseInvoiceLine](../resources/dynamics_purchaseinvoiceline.md)|
 |generalLedgerEntries resource type|[generalLedgerEntries](../resources/dynamics_generalLedgerEntries.md)|
-|complex types JSON|[Complex Types JSON](../resources/dynamics_complextypes.md)|
-
-## See also

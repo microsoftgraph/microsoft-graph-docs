@@ -98,8 +98,8 @@ Here is a JSON representation of the resource.
 
 ## See also
 [Graph Reference](../api/dynamics_graph_reference.md)  
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)  
-[Error Codes](../dynamics_error_codes.md)  
+[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
+
 [Get Sales Credit Memo Line](../api/dynamics_salescreditmemoline_get.md)  
 [Create Sales Credit Memo Line](../api/dynamics_create_salescreditmemoline.md)  
 [Update Sales Credit Memo Line](../api/dynamics_salescreditmemoline_update.md)  

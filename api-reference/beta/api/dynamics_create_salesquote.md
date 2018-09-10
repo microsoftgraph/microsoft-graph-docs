@@ -55,9 +55,7 @@ Content-type: application/json
 }
 ```
 ## See also
-[Graph Reference](../api/dynamics_graph_reference.md)  
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)  
-[Error Codes](../dynamics_error_codes.md)  
+[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 [Sales Quote](../resources/dynamics_salesquote.md)  
 [Get Sales Quote](../api/dynamics_salesquote_get.md)  
 [Update Sales Quote](../api/dynamics_salesquote_update.md)  

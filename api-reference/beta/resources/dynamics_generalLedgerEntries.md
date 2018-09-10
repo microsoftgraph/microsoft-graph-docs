@@ -62,7 +62,7 @@ Here is a JSON representation of the resource.
 
 ```
 ## See also
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)  
-[Error Codes](../dynamics_error_codes.md)  
+[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
+
 [General Ledger Entries](../resources/dynamics_generalledgerentries.md)  
 [Get General Ledger Entries](../api/dynamics_generalledgerentries_get.md)  

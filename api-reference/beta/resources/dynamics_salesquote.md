@@ -116,8 +116,8 @@ The response has no content; the response code is 204. For the `makeInvoice` act
 
 ## See also
 [Graph Reference](../api/dynamics_graph_reference.md)  
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)  
-[Error Codes](../dynamics_error_codes.md)  
+[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
+
 [Get Sales Quote](../api/dynamics_salesquote_get.md)  
 [Create Sales Quote](../api/dynamics_create_salesquote.md)  
 [Update Sales Quote](../api/dynamics_salesquote_update.md)  
