@@ -51,7 +51,7 @@ Specify the **groupTypes** property if you're creating an Office 365 or dynamic 
 | Security | Do not set. |
 
 
->**Note:** Creating an Office 365 Group programmatically without a user context and  without specifying owners will create the group anonymously.  Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
+>**Note:** Creating an Office 365 Group programmatically with an app-only context and without specifying owners will create the group anonymously.  Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
 
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
@@ -109,7 +109,7 @@ Content-length: 244
 ```
 
 #### Request 2
-The second example request creates an Office 365 Group with owners specified.
+The second example request creates an Office 365 Group with owners and members specified.
 <!-- {
   "blockType": "request"
 }-->
@@ -127,6 +127,9 @@ Content-Type: application/json
   "mailNickname": "group1",
   "securityEnabled": false,
   "owners@odata.bind": [
+    "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
+  ],
+  "members@odata.bind": [
     "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
   ]
 }
