@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Adds (pins) a tab to the specified [channel](channel.md) within a [team](team.md). 
+Adds (pins) a tab to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -29,7 +29,7 @@ This method supports the [OData Query Parameters](../../../concepts/query_parame
 
 ## Request body
 
-A [teamsChannelTab](teamschanneltab.md).
+A [teamsChannelTab](../resources/teamschanneltab.md).
 
 ## Response
 
