@@ -22,10 +22,10 @@ then use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) 
 
 |Name               |Type      |Description
 |-------------------|----------|------------
-|id			            |string    |App id generated on upload.
+|id                 |string    |App id generated on upload.
 |externalId         |string    |Id of the app provided by the developer in the manifest.json.
-|name			          |string    |Name of the app.
-|version		        |string    |Version of the app.
+|name               |string    |Name of the app.
+|version            |string    |Version of the app.
 |distributionMethod |[teamsCatalogAppDistributionMethod](../resources/teamscatalogappdistributionmethod.md) |The various distribution scopes for an app.
 
 ## JSON representation
