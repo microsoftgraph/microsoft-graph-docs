@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Group.ReadWrite.All    |
+| Application                            | Group.ReadWrite.All                         |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,22 +41,12 @@ The following is an example of the request.
   "name": "update_team"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}
+PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
 Content-length: 211
 
-{  
-  "memberSettings": {
-    "allowCreateUpdateChannels": true
-  },
-  "messagingSettings": {
-    "allowUserEditMessages": true,
-    "allowUserDeleteMessages": true
-  },
-  "funSettings": {
-    "allowGiphy": true,
-    "giphyContentRating": "strict"
-  }
+{
+  "name": "My Contoso Tab - updated"
 }
 ```
 #### Response
@@ -66,7 +56,23 @@ Content-length: 211
   "@odata.type": "microsoft.graph.team"
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 Success
+Content-type: application/json
+
+{
+  "id": "tabId",
+  "name": "My Contoso Tab - updated",
+  "appId": "06805b9e-77e3-4b93-ac81-525eb87513b8",
+  "settings": {
+    "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
+    "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",
+    "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
+    "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
+  },
+  "messageId": null,
+  "sortOrderIndex": 20,
+  "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%contoso%to%tab
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

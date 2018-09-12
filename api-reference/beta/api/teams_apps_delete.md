@@ -11,12 +11,12 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+| Application                            | Group.ReadWrite.All                         |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /teams/{id}/apps/{id}
+DELETE /teams/{id}/channels/{id}/tabs/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
@@ -40,7 +40,7 @@ The following is an example of the request.
   "name": "get_team"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/apps/{id}
+DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
