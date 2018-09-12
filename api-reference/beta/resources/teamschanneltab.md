@@ -9,6 +9,7 @@ A teamsChannelTab is a [tab](../resources/teamschanneltab.md) that's pinned (att
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List tabs](../api/channels_tabs_list.md) | [teamsChannelTab](teamschanneltab.md) | Lists tabs pinned to a channel.|
+|[Get tab](../api/channels_tabs_get.md) | [teamsChannelTab](teamschanneltab.md) | Reads a tab pinned to a channel.|
 |[Add tab](../api/channels_tabs_add.md) | [teamsChannelTab](teamschanneltab.md) | Adds (pins) a tab to a channel.|
 |[Remove tab](../api/channels_tabs_delete.md) | [teamsChannelTab](teamschanneltab.md) | Removes (unpins) a tab from a channel.|
 |[Update tab](../api/channels_tabs_update.md) | [teamsChannelTab](teamschanneltab.md) | Updates the tab properties.|
