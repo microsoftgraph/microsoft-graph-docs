@@ -20,14 +20,13 @@ then use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) 
 
 ## Properties
 
-|Name          |Type           |Description                                                                                                                                      |
-|--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|id			|string      |App id.|
-|name			|string      |Name of the app.|
-|version		|string      |Version of the app.|
-|isBlocked		|bool        |An indication whether the app is blocked by tenant. Note: this property is deprecated and will be removed in the future. It is currently always false. |
-|installedState |[teamsAppInstalledState](../resources/teamsappinstalledstate.md)   |App's install state. Note: this property is deprecated and will be removed in the future. It is currently always "installed".|
-|context		|[teamsAppContext](../resources/teamsappcontext.md)  |Where the app came from. Note: this property will soon be replaced by a property named "distributionMethod" with values "store", "organization", and "sideloaded" |
+|Name               |Type      |Description
+|-------------------|----------|------------
+|id			            |string    |App id generated on upload.
+|externalId         |string    |Id of the app provided by the developer in the manifest.json.
+|name			          |string    |Name of the app.
+|version		        |string    |Version of the app.
+|distributionMethod |[teamsCatalogAppDistributionMethod](../resources/teamscatalogappdistributionmethod.md) |The various distribution scopes for an app.
 
 ## JSON representation
 
