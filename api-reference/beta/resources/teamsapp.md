@@ -54,3 +54,7 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+# See also
+
+[tab](../resources/teamschanneltab.md)

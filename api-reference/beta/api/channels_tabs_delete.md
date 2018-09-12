@@ -1,8 +1,8 @@
-# Delete app from team
+# Delete tab from channel
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Uninstalls an app from the specified [team](../resources/team.md).
+Removes (unpins) a tab from the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -11,7 +11,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-| Application                            | Group.ReadWrite.All                         |
+|Application | Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

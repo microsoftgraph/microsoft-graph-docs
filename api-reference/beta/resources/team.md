@@ -23,6 +23,7 @@ For more information about working with groups and members in teams, see [Use th
 |[List your teams](../api/user_list_joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
 |[List all teams](../api/team_list_all_teams.md) | [group](group.md) collection | List all groups that have teams. |
 |[Add app to team](../api/teams_apps_add.md) | [teamsApp](teamsapp.md) | Adds (installs) an app to a team.|
+|[Add tab to channel](../api/channels_tabs_add.md) | [teamsChannelTab](../resources/teamschanneltab.md) | Adds (installs) an app to a team.|
 |[List channel messages](../api/channel_list_messages.md)  | [chatMessage](../resources/chatmessage.md) | [Get messages in a channel](../api/channel_list_messages.md) |
 
 
