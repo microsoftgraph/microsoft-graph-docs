@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/{id}
+PATCH /teams/{id}/channels/{id}/tabs/{id}
 ```
 ## Request headers
 | Header       | Value |
