@@ -2,16 +2,16 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A teamsChannelTab is a tab that's pinned (attached) to a [channel](channel.md) within a [team](team.md). 
+A teamsChannelTab is a [tab](../resources/teamschanneltab.md) that's pinned (attached) to a [channel](channel.md) within a [team](team.md). 
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List tabs](../api/channels_tabs_list.md) | [teamsApp](teamsapp.md) | Lists tabs pinned to a channel.|
-|[Add tab](../api/channels_tabs_add.md) | [teamstab](teamstab.md) | Adds (pins) a tab to a channel.|
-|[Remove tab](../api/channels_tabs_delete.md) | [teamstab](teamstab.md) | Removes (unpins) a tab from a channel.|
-|[Update tab](../api/channels_tabs_delete.md) | [teamstab](teamstab.md) | Updates the tab properties.|
+|[List tabs](../api/channels_tabs_list.md) | [teamsChannelTab](teamschanneltab.md) | Lists tabs pinned to a channel.|
+|[Add tab](../api/channels_tabs_add.md) | [teamsChannelTab](teamschanneltab.md) | Adds (pins) a tab to a channel.|
+|[Remove tab](../api/channels_tabs_delete.md) | [teamsChannelTab](teamschanneltab.md) | Removes (unpins) a tab from a channel.|
+|[Update tab](../api/channels_tabs_delete.md) | [teamsChannelTab](teamschanneltab.md) | Updates the tab properties.|
 
 
 ## Properties
