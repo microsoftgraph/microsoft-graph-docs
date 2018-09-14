@@ -21,7 +21,6 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsInformationProtectionApp",
   "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp"
 }-->
 ``` json
@@ -34,6 +33,11 @@ Here is a JSON representation of the resource.
   "denied": true
 }
 ```
+
+
+
+
+
 
 
 

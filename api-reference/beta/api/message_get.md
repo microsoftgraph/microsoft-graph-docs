@@ -96,6 +96,7 @@ If successful, this method returns a `200 OK` response code and [message](../res
 The first example gets the specified message. It does not specify any header to indicate the desired format of the body to be returned.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
   "name": "get_message"
 }-->
 ```http
@@ -135,6 +136,7 @@ Content-length: 523
 In the next example, the signed-in user is Dana Swope. The example shows getting the details of all the mentions in the specified message in Dana's mailbox.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AQMkADJmMTUAAAgVZAAAA"],
   "name": "get_mentions_in_message"
 }-->
 ```http
@@ -245,6 +247,7 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
   "name": "get_message_in_text"
 }-->
 
@@ -291,6 +294,7 @@ The fourth example shows how to get the Internet message headers of a specific m
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEz"],
   "name": "get_message_internet_headers"
 }-->
 
@@ -310,7 +314,6 @@ Here is an example of the response. Note: The number of Internet message headers
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 355
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/messages(internetMessageHeaders)/$entity",
@@ -329,6 +332,14 @@ Content-length: 355
     {
       "name":"Subject",
       "value":"Cloud and Mobile Working Group"
+    },
+    {
+      "name":"x-custom-header-group-name",
+      "value":"Washington"
+    },
+    {
+      "name":"x-custom-header-group-id",
+      "value":"WA001"
     }
   ]
 }

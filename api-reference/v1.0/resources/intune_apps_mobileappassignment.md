@@ -16,7 +16,7 @@ A class containing the properties used for Group Assignment of a Mobile App.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|intent|[installIntent](../resources/intune_shared_installintent.md)|The install intent defined by the admin. The possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|intent|[installIntent](../resources/intune_shared_installintent.md)|The install intent defined by the admin. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|The target group assignment defined by the admin.|
 |settings|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|The settings for target assignment defined by the admin.|
 
@@ -26,8 +26,8 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppAssignment"
 }-->
 ``` json
@@ -43,6 +43,11 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
+
+
+
+
 
 
 

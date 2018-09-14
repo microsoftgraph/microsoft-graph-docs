@@ -10,7 +10,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)| _varies by context_ |
+| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 

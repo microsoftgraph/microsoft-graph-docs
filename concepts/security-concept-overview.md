@@ -1,35 +1,46 @@
-# Overview of security in Microsoft Graph (preview) 
+# Microsoft Graph Security API overview
 
-You can use Microsoft Graph to connect with Intelligent Security Graph to take advantage of Microsoft and security partner resources, and build better threat response solutions. Microsoft Graph also provides access to user and account risks detected by the Identity Protection service in Azure Active Directory (Azure AD), enabling you to integrate account risk data into your security applications.
+You can use the Microsoft Graph Security API to connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities. The Microsoft Graph Security API is an intermediary service (or broker) that provides a single programmatic interface to connect multiple [Microsoft Graph Security providers](../api-reference/v1.0/resources/securityvendorinformation.md) (also called security providers or providers). Requests to the Microsoft Graph Security API are federated to all applicable security providers. The results are aggregated and returned to the requesting application in a common schema, as shown in the following diagram. For details, see [Microsoft Graph Security data flow](security-dataflow.md).
 
-## Why use the security API and connect with Microsoft Intelligent Security Graph?
+![security_overview_diagram_1.png](./images/security_overview_diagram_1.png)
 
-The Intelligent Security Graph is a unified platform for combatting cyberthreats. It powers real-time threat protection for Microsoft products and services, and supports an ecosystem of integrated solutions.
+For information about authorization, see [Authorization and the security API](security-authorization.md). For information about permissions, including delegated and application permissions, see [Permissions](permissions_reference.md#security-permissions).
 
-The [security API in Microsoft Graph](https://aka.ms/graphsecuritydocs) makes it easy to connect with those solutions in the Intelligent Security Graph. It allows you to more readily realize and enrich the value of these solutions.
+## Why use the Microsoft Graph Security API?
 
-### Unify and standardize alert management
+The [Microsoft Graph Security API](../api-reference/v1.0/resources/security-api-overview.md) makes it easy to connect with different Microsoft and Microsoft partner security products and services. It allows you to more readily realize and enrich the value of these solutions.
 
-Correlate alerts across security solutions more easily with a common alert schema. Write code once to integrate alerts from any Microsoft Graph integrated security solution, and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions such as Splunk and IBM QRadar via [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub).
+### Unify and standardize alert tracking
 
-### Federated security aggregation service
+Write code once to integrate alerts from any Microsoft Graph-integrated security solution and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions, such as Splunk and IBM QRadar, via [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). For details about SIEM integration with the security API entities, see [Integrate with a SIEM](security_siemintegration.md).
 
-Use the security API as a federated security aggregation service to submit queries to all onboarded security providers, and get aggregated responses.
+### Correlate security alerts to improve threat protection and response
+
+Correlate alerts across security solutions more easily with a unified alert schema. This not only allows you to receive actionable alert information but allows security analysts to pivot and enrich alerts with asset and user information, enabling faster response to threats and asset protection.  
+
+### Update alert tags, status, and assignments
+
+Tag alerts with additional context or threat intelligence to inform response and remediation. Ensure that comments and feedback on alerts are captured for visibility to all workflows. Keep alert status and assignments in sync so that all integrated solutions reflect the current state. Use webhook subscriptions to get notified of changes.  
 
 ### Unlock security context to drive investigation
 
 Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure AD, Microsoft Intune, Office 365) to bring business and security contexts together and improve threat response.
 
-## Why use Azure AD to protect identities in your organization?
+### Proactively manage security risks (preview)
 
-Most security breaches are the result of attackers stealing a user’s identity, and attackers have become terrifyingly effective in taking advantage of third-party breaches, password spray attacks, and sophisticated phishing attacks. This means you need to protect all your user accounts from these attacks and proactively prevent compromised identities from being abused.
+Use the Microsoft Secure Score (preview) to provide visibility into your organization’s security needs and get suggestions for how to improve it, and project an improved score after those suggestions are incorporated. Easily measure your progress over time and get insights on specific changes that led to improvement in your score.
 
-Azure AD uses adaptive machine learning algorithms and heuristics to detect anomalies that indicate potentially compromised accounts. Using this data, Identity Protection protects your users with risk-based conditional access policies and generates reports and alerts on its detections.
+## Benefits of using the Microsoft Graph Security API
 
-Today, Microsoft Graph gives easy access to Azure AD Premium P1 and P2 customers to query risk detections made by Identity Protection and use those events in SIEM systems and security applications.
+The following table lists the benefits that different security solutions can access by integrating with the Microsoft Graph Security API.  
+
+|**Area**     | **Benefits**|
+|:---------------|:---------|
+|**Managed Security Service Providers (MSSPs)**|<ul><li>Streamlined integration with security operations tools and services.</li> <li>Reduced deployment and maintenance time and efforts.</li> <li>Ability to deliver more value to MSSP customers.</li></ul>|
+|**SIEM and IT Risk management solutions**|<ul><li>Smooth integration with Microsoft security solutions and ecosystem partners.</li> <li>Rich alert metadata.</li> <li>Better alert correlation.</li></ul>|
+|**Applications** <br>(Threat Intelligence, Mobile, Cloud, IOT, Fraud detection, Identity & Access, Risk & Compliance, Firewall, and so on)|<ul><li>Unified threat management, prevention, and risk management across various security solutions.</li> <li>Alerts, inventory, config, and actions exposed through Microsoft Graph.</li> <li>Instant integration with Microsoft Graph-enabled solutions.</li></ul>|
 
 ## Next steps
 
-- [Use the security API](../api-reference/beta/resources/security-api-overview.md)
-- [Use the Azure AD Identity Protection API](../api-reference/beta/resources/identityprotection_root.md)
-
+- [Use the Microsoft Graph Security API](../api-reference/v1.0/resources/security-api-overview.md)
+- Interested in becoming a security provider? Reach out to [graphsecfeedback](mailto:graphsecfeedback@microsoft.com).

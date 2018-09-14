@@ -30,8 +30,8 @@ A managed or unmanaged app that is installed on a managed device. Unmanaged apps
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.detectedApp"
 }-->
 ``` json
@@ -44,6 +44,11 @@ Here is a JSON representation of the resource.
   "deviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 
