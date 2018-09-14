@@ -17,14 +17,13 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "languageId", "region"
   ],
   "@odata.type": "microsoft.graph.participantInfo"
 }-->
-
 ```json
 {
-  "identity": {"@odata.type": "microsoft.graph.identitySet"},
+  "identity": { "@odata.type": "#microsoft.graph.identitySet" },
   "languageId": "String",
   "region": "String"
 }

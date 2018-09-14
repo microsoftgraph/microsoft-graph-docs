@@ -18,7 +18,7 @@ The audio routing group stores information about a private (participant-owned) A
 
 | Property      | Type              | Description                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | Read-only.                                                           |
+| id            | String            | Read-only. Server generated.                                         |
 | receivers     | String Collection | List of receiving participant ids.                                   |
 | routingMode   | String            | Routing group mode.  Possible values are: `oneToOne`, `multicast`.   |
 | sources       | String Collection | List of source participant ids.                                      |
@@ -43,46 +43,53 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.audioRoutingGroup"
 }-->
-
 ```json
 {
   "id": "String (identifier)",
-  "receivers": ["String"],
-  "routingMode": "String",
-  "sources": ["String"]
+  "receivers": [ "String" ],
+  "routingMode": "oneToOne | multicast",
+  "sources": [ "String" ]
 }
 ```
 
 ## Example - oneToOne
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.audioRoutingGroup"
+}-->
+```json
 {
-    "@odata.type": "#microsoft.graph.audioRoutingGroup",
-    "@odata.id": "app/calls/57DAB8B1894C409AB240BD8BEAE78896/audioRoutingGroups/oneToOne",
-    "routingMode": "oneToOne",
-    "sources": [
-        "0698446E77E24E4D85F80597083CB830"
-    ],
-    "receivers": [
-        "123456W7-7E24-E4D8-5F80-597083CB8302"
-    ]
+  "@odata.id": "app/calls/57DAB8B1894C409AB240BD8BEAE78896/audioRoutingGroups/oneToOne",
+  "id": "oneToOne",
+  "routingMode": "oneToOne",
+  "sources": [
+    "0698446E77E24E4D85F80597083CB830"
+  ],
+  "receivers": [
+    "123456W7-7E24-E4D8-5F80-597083CB8302"
+  ]
 }
 ```
 
 ## Example - multicast
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.audioRoutingGroup"
+}-->
+```json
 {
-    "@odata.type": "#microsoft.graph.audioRoutingGroup",
-    "@odata.id": "app/calls/57DAB8B1894C409AB240BD8BEAE78896/audioRoutingGroups/multicast",
-    "routingMode": "multicast",
-    "sources": [
-        "0698446E77E24E4D85F80597083CB830"
-    ],
-    "receivers": [
-        "123456W7-7E24-E4D8-5F80-597083CB8302",
-        "A239BDED-3A52-4D66-80DF-213EB3BA6695"
-    ]
+  "@odata.id": "app/calls/57DAB8B1894C409AB240BD8BEAE78896/audioRoutingGroups/multicast",
+  "id": "multicast",
+  "routingMode": "multicast",
+  "sources": [
+    "0698446E77E24E4D85F80597083CB830"
+  ],
+  "receivers": [
+    "123456W7-7E24-E4D8-5F80-597083CB8302",
+    "A239BDED-3A52-4D66-80DF-213EB3BA6695"
+  ]
 }
 ```
 

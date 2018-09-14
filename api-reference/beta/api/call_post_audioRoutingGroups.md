@@ -34,6 +34,7 @@ If successful, this method returns `201, Created` response code and [audioRoutin
 
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "create_audioRoutingGroup_from_call"
@@ -41,15 +42,17 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
 Content-Type: application/json
-Content-Length: 166
+Content-Length: 233
 
 {
-  "receivers": [
-    ""
-  ],
+  "id": "oneToOne",
   "routingMode": "oneToOne",
   "sources": [
-    ""
+    "632899f8-2ea1-4604-8413-27bd2892079f"
+  ],
+  "receivers": [
+    "550fae72-d251-43ec-868c-373732c2704f",
+    "72f988bf-86f1-41af-91ab-2d7cd011db47"
   ]
 }
 ```
@@ -58,6 +61,7 @@ In the request body, supply a JSON representation of [audioRoutingGroup](../reso
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -66,16 +70,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 187
+Content-Length: 233
 
 {
-  "id": "id-value",
-  "receivers": [
-    ""
-  ],
+  "id": "oneToOne",
   "routingMode": "oneToOne",
   "sources": [
-    ""
+    "632899f8-2ea1-4604-8413-27bd2892079f"
+  ],
+  "receivers": [
+    "550fae72-d251-43ec-868c-373732c2704f",
+    "72f988bf-86f1-41af-91ab-2d7cd011db47"
   ]
 }
 ```

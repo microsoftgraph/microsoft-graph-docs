@@ -1,4 +1,4 @@
-# MeetingInfo resource type
+# NoMediaConfig resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@
 
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
-| allowConversationWithoutHost | Boolean |  |
+| removeFromDefaultAudioGroup | Boolean |  |
 
 ## JSON representation
 
@@ -17,11 +17,11 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.meetingInfo"
+  "@odata.type": "microsoft.graph.noMediaConfig"
 }-->
 ```json
 {
-  "allowConversationWithoutHost": true
+  "removeFromDefaultAudioGroup": true
 }
 ```
 
@@ -29,7 +29,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "meetingInfo resource",
+  "description": "noMediaConfig resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

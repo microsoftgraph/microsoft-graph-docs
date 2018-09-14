@@ -26,25 +26,29 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.textPrompt"
 }-->
-
 ```json
 {
-  "culture": "String",
+  "culture": "enUs",
   "emphasize": true,
   "loop": 1024,
-  "sayAs": "String",
+  "sayAs": "unknown | yearMonthDay | monthDayYear | dayMonthYear | yearMonth | monthYear | monthDay | dayMonth | day | month | year | cardinal | ordinal | letters | time12 | time24 | telephone | name | phoneticName",
   "text": "String",
-  "voiceGender": "String"
+  "voiceGender": "female | male"
 }
 ```
 
 ## Example - Play silence for 5 seconds
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.textPrompt",
+  "truncated": true
+}-->
+```json
 {
-    "culture": "en-US",
-    "text": "Please enter your PIN",
-    "voiceGender": "female"
+  "culture": "enUs",
+  "text": "Please enter your PIN",
+  "voiceGender": "female"
 }
 ```
 

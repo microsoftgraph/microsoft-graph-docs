@@ -8,24 +8,24 @@ The participant type.
 
 | Method                                                          | Return Type                              | Description                                       |
 |:----------------------------------------------------------------|:-----------------------------------------|:--------------------------------------------------|
-| [Get participant](../api/participant_get.md)                    | [participant](./participant.md)          | Read properties of the **participant** object.    |
-| [ConfigureMixer](../api/participant_configureMixer.md)          | None                                     |                                                   |
-| [Invite](../api/participant_invite.md)                          | None                                     |                                                   |
-| [Mute participant](../api/participant_mute.md)                  | Operation location header                | Mute participant in a call.                       |
-| [MuteAll](../api/participant_muteAll.md)                        | [commsOperation](commsOperation.md)      |                                                   |
-| [Subscribe video](../api/participant_subscribeVideo.md)         | Operation location header                | Subscribe to video of a participant in a call.    |
+| [Get participant](../api/participant_get.md)                    | [participant](participant.md)            | Read properties of the **participant** object.    |
+| [ConfigureMixer](../api/participant_configureMixer.md)          | [commsOperation](commsOperation.md)      | Configure the participant audio mixer.            |
+| [Invite](../api/participant_invite.md)                          | [commsOperation](commsOperation.md)      | Invite a participant to the call.                 |
+| [Mute participant](../api/participant_mute.md)                  | [commsOperation](commsOperation.md)      | Mute a participant in a call.                     |
+| [Mute all participants](../api/participant_muteAll.md)          | [commsOperation](commsOperation.md)      | Mute all the participants in the meeting.         |
+| [Subscribe video](../api/participant_subscribeVideo.md)         | [commsOperation](commsOperation.md)      | Subscribe to video of a participant in a call.    |
 
 ## Properties
 
 | Property             | Type                                     | Description                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
 | id                   | String                                   | The participant id.                                          |
-| info                 | [identitySet](identitySet.md)            | The participant to add to the call.                          |
+| info                 | [participantInfo](participantInfo.md)    | The participant of the participant.                          |
 | isInLobby            | boolean                                  | true if the participant is in lobby                          |
 | isMuted              | boolean                                  | true if the participant is muted (client or server muted)    |
 | mediaStreams         | [mediaStream](mediaStream.md) collection | The list of media streams.                                   |
 | metadata             | String                                   | A blob of data provided by the participant in the roster     |
-| recordingInfo        | [recordingInfo](recordingInfo.md)        |                                                              |
+| recordingInfo        | [recordingInfo](recordingInfo.md)        | Information on whether the participant has recording capability. |
 
 ## Relationships
 None
@@ -41,59 +41,53 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.participant"
 }-->
-
 ```json
 {
   "id": "String (identifier)",
-  "info": {"@odata.type": "microsoft.graph.participantInfo"},
+  "info": {"@odata.type": "#microsoft.graph.participantInfo"},
+  "isInLobby": true,
   "isMuted": true,
-  "isTyping": true,
-  "mediaStreams": [{"@odata.type": "microsoft.graph.mediaStream"}],
+  "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ],
   "metadata": "String",
-  "role": "String",
-  "isInLobby": false,
+  "recordingInfo": { "@odata.type": "#microsoft.graph.recordingInfo" }
 }
 ```
 
 ## Example
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.participant"
+}-->
+```json
 {
-    "@odata.type": "#microsoft.graph.participant",
-    "recordingInfo": {"@odata.type": "microsoft.graph.recordingInfo"}
-    "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-    "info": {
-        "@odata.type": "#microsoft.graph.participantInfo",
-        "identity": {
-          "user": {
-            "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
-            "displayName": "Heidi Steen"
-          }
-        }
+  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+  "info": {
+    "identity": {
+      "user": {
+        "id": "550fae72-d251-43ec-868c-373732c2704f",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "displayName": "Heidi Steen"
+      }
     },
-    "metadata": "{
-        "eventName": "RecordingStarted",
-        "initiatorUserId": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698",
-        "timestamp": "2018-02-22T16:02:33Z"
-    }",
-    "mediaStreams": [
-        {
-            "mediaType": "audio",
-            "label": "main-audio",
-            "sourceId": 1,
-            "direction": "sendReceive",
-        },
-        {
-            "mediaType": "video",
-            "label": "main-video",
-            "sourceId": 2,
-            "direction": "sendReceive"
-        }
-    ],
-    "isMuted": false,
-    "isTyping": false,
-    "role": "attendee",
-    "isInLobby": false,
+    "languageId": "en-US",
+    "region": "westus"
+  },
+  "isInLobby": false,
+  "isMuted": false,
+  "mediaStreams": [
+    {
+      "sourceId": "1",
+      "direction": "sendReceive",
+      "label": "main-audio",
+      "mediaType": "audio",
+      "serverMuted": false
+    }
+  ],
+  "metadata": "metadata-value",
+  "recordingInfo": {
+    "status": "recordingCapable"
+  }
 }
 ```
 

@@ -5,13 +5,13 @@
 Redirect an incoming call.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type | Permissions (from least to most privileged)         |
-| :-------------- | :-------------------------------------------------- |
-| Application     | Calls.AudioVideo (for redirect to VOIP participant) |
-| Application     | Calls.PSTN (for redirect to PSTN participant)       |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     |                                             |
+| Delegated (personal Microsoft account) |                                             |
+| Application                            | Calls.Initiate.All                          |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -30,43 +30,49 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|targets|[identitySet](../resources/identitySet.md) collection||
+|targets|[invitationParticipantInfo](../resources/invitationParticipantInfo.md) collection||
 |targetDisposition|String||
 |timeout|Int32||
 |maskCallee|Boolean||
 |maskCaller|Boolean||
 
 ## Response
-If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsOperation.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.
 
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "call_redirect"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/redirect
-
 Content-Type: application/json
-Content-Length: 683
+Content-Length: 515
 
 {
   "targets": [
     {
-      "user": {
-        "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
-        "displayName": "Heidi Steen"
-      }
+      "endpointType": "default",
+      "identity": {
+        "user": {
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "displayName": "Heidi Steen"
+        }
+      },
+      "languageId": "en-US",
+      "region": "westus"
     }
   ],
   "targetDisposition": "default",
   "timeout": 99,
-  "maskCallee": true,
-  "maskCaller": true
+  "maskCallee": false,
+  "maskCaller": false
 }
 ```
 
@@ -76,174 +82,164 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.None"
 } -->
 ```http
 HTTP/1.1 200 OK
-
-{
-  "clientContext": "clientContext-value",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Running"
-}
 ```
 
 ## Example - Forward a call
 
 ##### Notification - Incoming
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "created",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.call",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-                "@odata.etag": "W/\"5445\"",
-                "callState": "incoming",
-                "direction": "incoming",
-                "correlationId": "2F3556DB-B502-4A69-8C0E-38AF3A6A9D94",
-                "source": {
-                    "@odata.type": "#microsoft.graph.participantInfo",
-                    "identity" : {
-                        "user" : {
-                            "displayName": "Test User",
-                            "language": "en-US",
-                            "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-                        }
-                    }
-                },
-                "targets" : [{
-                    "@odata.type": "#microsoft.graph.participantInfo",
-                    "identity" : {
-                        "application" : {
-                            "displayName": "Test BOT",
-                            "language": "en-US",
-                            "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-                        }
-                    }
-                }],
-                "requestedModalities": [ "audio", "video" ]
+  "value": [
+    {
+      "changeType": "created",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.etag": "W/\"5445\"",
+        "state": "incoming",
+        "direction": "incoming",
+        "source": {
+          "identity": {
+            "user": {
+              "displayName": "Test User",
+              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
             }
-        }
-    ]
+          },
+          "region": "westus",
+          "languageId": "en-US"
+        },
+        "targets": [
+          {
+            "identity": {
+              "application": {
+                "displayName": "Test BOT",
+                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+              }
+            },
+            "region": "westus",
+            "languageId": "en-US"
+          }
+        ],
+        "requestedModalities": [ "audio", "video" ]
+      }
+    }
+  ]
 }
 ```
 
 ##### Request
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/redirect
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
 
 {
-    "targets" : [
-        {
-            "user" : {
-                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572699"
-            }
+  "targets": [
+    {
+      "endpointType": "default",
+      "identity": {
+        "user": {
+          "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572699",
         }
-    ],
-    "targetDisposition": "forward",
-    "timeout": "60",
-    "maskCallee": false,
-    "maskCaller": false
+      },
+      "languageId": "en-US",
+      "region": "westus"
+    }
+  ],
+  "targetDisposition": "default",
+  "timeout": 60,
+  "maskCallee": false,
+  "maskCaller": false
 }
 ```
 
+##### Response
+
 ```http
 HTTP/1.1 200 OK
-
-{
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Running"
-}
 ```
 
 ##### Notification - Redirecting
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "updated",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.call",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-                "@odata.etag": "W/\"5445\"",
-                "callState": "redirecting"
-            }
-        }
-    ]
+  "value": [
+    {
+      "changeType": "updated",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.etag": "W/\"5445\"",
+        "state": "redirecting"
+      }
+    }
+  ]
 }
 ```
 
 ##### Notification - Terminated
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
-
-{
-    "value": [
-        {
-            "changeType": "updated",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.call",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-                "@odata.etag": "W/\"5445\"",
-                "callState": "terminated",
-                "answeredBy" : {
-                    "user" : {
-                        "displayName": "Test User 2",
-                        "language": "en-US",
-                        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572699"
-                    }
-                },
-                "terminationReason": "AppRedirected"
-            }
-        }
-    ]
-}
 ```
 
-##### Notification - Deleted
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "deleted",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.call",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-                "@odata.etag": "W/\"5445\""
+  "value": [
+    {
+      "changeType": "deleted",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.etag": "W/\"5445\"",
+        "state": "terminated",
+        "answeredBy": {
+          "identity": {
+            "user": {
+              "displayName": "Test User 2",
+              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572699"
             }
-        }
-    ]
+          }
+        },
+        "terminationReason": "AppRedirected"
+      }
+    }
+  ]
 }
 ```
 

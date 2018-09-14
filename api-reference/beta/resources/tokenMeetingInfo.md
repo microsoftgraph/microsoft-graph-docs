@@ -22,7 +22,6 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
-
 ```json
 {
   "allowConversationWithoutHost": true,
@@ -32,7 +31,11 @@ Here is a JSON representation of the resource.
 
 ## Example
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.tokenMeetingInfo"
+}-->
+```json
 {
   "allowConversationWithoutHost": true,
   "token": "ABCD123"

@@ -26,7 +26,6 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.audioDuckingConfiguration"
 }-->
-
 ```json
 {
   "lowerLevel": 1024,
@@ -38,12 +37,16 @@ Here is a JSON representation of the resource.
 
 ## Example - Phasing in and out defaults
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.audioDuckingConfiguration"
+}-->
+```json
 {
-    "lowerLevel": 20,
-    "rampActive": 1000,
-    "rampInactive": 1000,
-    "upperLevel": 100
+  "lowerLevel": 20,
+  "rampActive": 1000,
+  "rampInactive": 1000,
+  "upperLevel": 100
 }
 ```
 

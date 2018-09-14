@@ -24,37 +24,40 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.participantMixerLevel"
 }-->
-
 ```json
 {
-  "ducking": {"@odata.type": "microsoft.graph.audioDuckingConfiguration"},
+  "ducking": { "@odata.type": "#microsoft.graph.audioDuckingConfiguration" },
   "exclusiveMode": true,
   "participant": "String",
-  "sourceLevels": [{"@odata.type": "microsoft.graph.audioSourceLevel"}]
+  "sourceLevels": [ { "@odata.type": "#microsoft.graph.audioSourceLevel" } ]
 }
 ```
 
 ## Example - Mixer level
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.participantMixerLevel"
+}-->
+```json
 {
-    "participant": "123456W77E24E4D85F80597083CB830",
-    "ducking":
+  "ducking": {
+    "@odata.type": "#microsoft.graph.audioDuckingParameters",
+    "rampActive": 1000,
+    "rampInactive": 1000,
+    "lowerLevel": 20,
+    "upperLevel": 100
+  },
+  "exclusiveMode": true,
+  "participant": "123456W77E24E4D85F80597083CB830",
+  "sourceLevels": [
     {
-        "@odata.type": "#microsoft.graph.audioDuckingParameters",
-        "rampActive": 1000,
-        "rampInactive": 1000,
-        "lowerLevel": 20,
-        "upperLevel": 100
-    },
-    "exclusive": true,
-    "sourceLevels": [
-        {
-            "@odata.type": "#microsoft.graph.audioSourceLevel",
-            "participant": "8A34A46B3D174ADC8DCEDC4E7D572698",
-            "level": 100
-        }
-    ]
+      "@odata.type": "#microsoft.graph.audioSourceLevel",
+      "duckOthers": false,
+      "level": 100,
+      "participant": "8A34A46B3D174ADC8DCEDC4E7D572698"
+    }
+  ]
 }
 ```
 

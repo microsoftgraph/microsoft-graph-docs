@@ -23,22 +23,25 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.audioSourceLevel"
 }-->
-
-``` json
+```json
 {
-    "duckOthers": true,
-    "level": 1024,
-    "participant": "string"
+  "duckOthers": true,
+  "level": 1024,
+  "participant": "String"
 }
 ```
 
 ## Example - Listen to only one participant
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.audioSourceLevel"
+}-->
+```json
 {
-    "duckOthers": true,
-    "level": 100,
-    "participant": "8A34A46B3D174ADC8DCEDC4E7D572698"
+  "duckOthers": true,
+  "level": 100,
+  "participant": "8A34A46B3D174ADC8DCEDC4E7D572698"
 }
 ```
 

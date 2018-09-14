@@ -20,11 +20,10 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.meetingCapability"
 }-->
-
 ```json
 {
   "allowAnonymousUsersToDialOut": true,
-  "autoAdmittedUsers": "String"
+  "autoAdmittedUsers": "everyoneInCompany | everyone"
 }
 ```
 

@@ -1,56 +1,52 @@
-# Operation resource type
+# operation resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+The status of a long-running operation.
 
-The status of certain long-running operations.
+## JSON representation
 
-## Methods
-None
+Here is a JSON representation of the resource.
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.operation"
+}-->
+```json
+{
+  "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "lastActionDateTime": "String (timestamp)",
+  "status": "notStarted | running | completed | failed"
+}
+```
 
 ## Properties
 
 | Property           | Type            | Description                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | The start time of the operation.                                                |
-| id                 | String          | The operation id. Read Only.                                                    |
+| id                 | String          | The operation id. Read-only. Server generated.                                  |
 | lastActionDateTime | DateTimeOffset  | The time of the last action of the operation.                                   |
-| status             | String          | Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`. Read Only. |
-
-## Relationships
-None
-
-## JSON representation
-
-Here is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.operation"
-}-->
-
-```json
-{
-  "createdDateTime": "String (timestamp)",
-  "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
-  "status": "String"
-}
-```
+| status             | String          | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. Server generated. |
 
 ## Example
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.operation"
+}-->
+```json
 {
-    "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-    "status": "completed"
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "status": "completed"
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+<!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
+2018-03-30 10:29:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "operation resource",

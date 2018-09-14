@@ -1,16 +1,17 @@
-# List Participants
+# List participants
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get participants in the call.
+Retrieve a list of participant objects in the call.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type | Permissions (from least to most privileged) |
-| :-------------- | :------------------------------------------ |
-| Application     | Calls.MeetingJoin                           |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     |                                             |
+| Delegated (personal Microsoft account) |                                             |
+| Application                            |                                             |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -29,11 +30,15 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [participant](../resources/participant.md) objects in the response body.
+
 ## Example
+
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_participants"
@@ -44,16 +49,18 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.participant",
-  "isCollection": true 
+  "isCollection": true,
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1838
+Content-Length: 1152
 
 {
   "value": [
@@ -62,22 +69,23 @@ Content-Length: 1838
       "info": {
         "identity": {
           "user": {
-            "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
+            "id": "550fae72-d251-43ec-868c-373732c2704f",
+            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
             "displayName": "Heidi Steen"
           }
         },
         "languageId": "languageId-value",
         "region": "region-value"
       },
+      "isInLobby": false,
       "isMuted": true,
-      "isTyping": true,
       "mediaStreams": [
         {
-          "direction": "inactive",
-          "label": "label-value",
-          "mediaType": "unknown",
-          "serverMuted": true,
-          "sourceId": "sourceId-value"
+          "sourceId": "1",
+          "direction": "sendReceive",
+          "label": "main-audio",
+          "mediaType": "audio",
+          "serverMuted": false
         }
       ],
       "metadata": "metadata-value"
@@ -90,89 +98,94 @@ Content-Length: 1838
 
 ##### Request
 
-``` http
+```http
 GET /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants
 Authorization: Bearer <TOKEN>
 ```
 
 ##### Response
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.participant",
+  "isCollection": true,
+  "truncated": true
+}-->
+```json
 {
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.participant",
-            "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-            "info": {
-                "@odata.type": "#microsoft.graph.participantInfo",
-                "identity" : {
-                    "user" : {
-                        "region": "westus",
-                        "languageId": "en-US",
-                        "displayName": "Test User",
-                        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-                    }
-                }
-            },
-            "mediaStreams": [
-                {
-                    "mediaType": "audio",
-                    "label": "main-audio",
-                    "sourceId": 1,
-                    "direction": "sendReceive",
-                }
-            ]
+  "value": [
+    {
+      "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+      "info": {
+        "identity" : {
+          "user" : {
+            "displayName": "Test User",
+            "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+          }
         },
+        "region": "westus",
+        "languageId": "en-US",
+      },
+      "mediaStreams": [
         {
-            "@odata.type": "#microsoft.graph.participant",
-            "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-            "info": {
-                "@odata.type": "#microsoft.graph.participantInfo",
-                "identity" : {
-                    "phone": {
-                        "languageId": "en-US",
-                        "displayName": "+12345678890",
-                        "id": "+12345678890"
-                    }
-                }
-            },
-            "mediaStreams": [
-                {
-                    "mediaType": "audio",
-                    "label": "main-audio",
-                    "sourceId": 2,
-                    "direction": "sendReceive",
-                }
-            ],
-            "isMuted": true,
-        },
-        {
-            "@odata.type": "#microsoft.graph.participant",
-            "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-            "@odata.type": "#microsoft.graph.participantInfo",
-            "identity" : {
-                "info": {
-                    "application" : {
-                        "languageId": "en-US",
-                        "displayName": "Test BOT",
-                        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-                    }
-                }
-            },
-            "mediaStreams": [
-                {
-                    "mediaType": "audio",
-                    "label": "main-audio",
-                    "sourceId": 3,
-                    "direction": "sendReceive",
-                }
-            ],
-            "isMuted": true
+          "sourceId": "1",
+          "mediaType": "audio",
+          "label": "main-audio",
+          "direction": "sendReceive",
+          "serverMuted": false
         }
-    ]
+      ]
+    },
+    {
+      "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+      "info": {
+        "identity" : {
+          "phone": {
+            "displayName": "+12345678890",
+            "id": "+12345678890"
+          }
+        }
+      },
+      "mediaStreams": [
+        {
+          "sourceId": "2",
+          "mediaType": "audio",
+          "label": "main-audio",
+          "direction": "sendReceive",
+          "serverMuted": false
+        }
+      ],
+      "isMuted": true,
+    },
+    {
+      "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+      "info": {
+        "identity" : {
+          "application" : {
+            "displayName": "Test BOT",
+            "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+          }
+        },
+        "region": "westus",
+        "languageId": "en-US",
+      },
+      "mediaStreams": [
+        {
+          "sourceId": "3",
+          "mediaType": "audio",
+          "label": "main-audio",
+          "direction": "sendReceive",
+          "serverMuted": false
+        }
+      ],
+      "isMuted": true
+    }
+  ]
 }
 ```
 

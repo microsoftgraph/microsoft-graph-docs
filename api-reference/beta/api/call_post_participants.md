@@ -31,8 +31,10 @@ In the request body, supply a JSON representation of [participant](../resources/
 If successful, this method returns `201, Created` response code and [participant](../resources/participant.md) object in the response body.
 
 ## Example
+
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "create_participant_from_call"
@@ -40,13 +42,14 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants
 Content-Type: application/json
-Content-Length: 1536
+Content-Length: 956
 
 {
   "info": {
     "identity": {
       "user": {
-        "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
+        "id": "550fae72-d251-43ec-868c-373732c2704f",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
         "displayName": "Heidi Steen"
       }
     },
@@ -54,17 +57,15 @@ Content-Length: 1536
     "region": "region-value"
   },
   "isMuted": true,
-  "isTyping": true,
   "mediaStreams": [
     {
-      "direction": "inactive",
-      "label": "label-value",
-      "mediaType": "unknown",
-      "serverMuted": true,
-      "sourceId": "sourceId-value"
+      "sourceId": "1",
+      "direction": "sendReceive",
+      "label": "main-audio",
+      "mediaType": "audio",
+      "serverMuted": false
     }
-  ],
-  "metadata": "metadata-value"
+  ]
 }
 ```
 
@@ -72,6 +73,7 @@ In the request body, supply a JSON representation of [participant](../resources/
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -80,32 +82,36 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1557
+Content-Length: 967
 
 {
   "id": "id-value",
   "info": {
     "identity": {
       "user": {
-        "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
+        "id": "550fae72-d251-43ec-868c-373732c2704f",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
         "displayName": "Heidi Steen"
       }
     },
     "languageId": "languageId-value",
     "region": "region-value"
   },
+  "isInLobby": false,
   "isMuted": true,
-  "isTyping": true,
   "mediaStreams": [
     {
-      "direction": "inactive",
-      "label": "label-value",
-      "mediaType": "unknown",
-      "serverMuted": true,
-      "sourceId": "sourceId-value"
+      "sourceId": "1",
+      "direction": "sendReceive",
+      "label": "main-audio",
+      "mediaType": "audio",
+      "serverMuted": false
     }
   ],
-  "metadata": "metadata-value"
+  "metadata": "metadata-value",
+  "recordingInfo": {
+    "status": "recordingCapable"
+  }
 }
 ```
 

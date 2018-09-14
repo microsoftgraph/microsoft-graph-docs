@@ -8,14 +8,15 @@ Subscribe to video of a participant in a call.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type | Permissions (from least to most privileged) |
-| :-------------- | :------------------------------------------ |
-| Application     | Calls.MeetingJoin                           |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     |                                             |
+| Delegated (personal Microsoft account) |                                             |
+| Application                            |                                             |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-
-``` http
+```http
 POST /app/calls/{id}/participants/{id}/subscribeVideo
 POST /applications/{id}/calls/{id}/participants/{id}/subscribeVideo
 ```
@@ -43,13 +44,13 @@ Here is an example of how to call this API.
 
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "participant_subscribeVideo"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}/subscribeVideo
-
 Content-Type: application/json
 Content-Length: 123
 
@@ -61,12 +62,14 @@ Content-Length: 123
 }
 ```
 
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.commsOperation",
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -78,7 +81,7 @@ Content-Length: 306
   "createdDateTime": "2018-03-19T09:46:02Z",
   "id": "id-value",
   "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Completed"
+  "status": "completed"
 }
 ```
 
@@ -86,47 +89,43 @@ Content-Length: 306
 
 ##### Request
 
-``` http
+```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/0698446E77E24E4D85F80597083CB830/subscribeVideo
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "ignored",
+  "name": "participant_subscribeVideo"
+}-->
+```json
 {
-    "clientContext": "A904FBD5A31041E881E861877A3DE3CD",
-    "videoResolution": "hd720p",
-    "modality": "video",
-    "socketId" : 1
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "videoResolution": "hd720p",
+  "modality": "video",
+  "socketId": 1
 }
 ```
 
 ##### Response
 
-``` http
-HTTP/1.1 202 Accepted
-Location: /app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5
+```http
+HTTP/1.1 200 OK
 ```
 
-##### Notification - Operation Completed
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsOperation",
+  "truncated": true
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "deleted",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.subscribeVideoOperation",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-                "@odata.etag": "W/\"54451\"",
-                "clientContext": "A904FBD5A31041E881E861877A3DE3CD",
-                "status": "completed",
-            }
-        }
-    ]
+  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+  "status": "completed",
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
 

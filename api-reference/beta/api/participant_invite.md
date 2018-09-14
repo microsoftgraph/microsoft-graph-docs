@@ -5,14 +5,13 @@
 Invite participants to the active call.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type | Permissions (from least to most privileged)                |
-| :-------------- | :--------------------------------------------------------- |
-| Application     | Calls.AudioVideo (for `meetingInfo=null`)                  |
-| Application     | Calls.PSTN (for `meetingInfo=null` and outgoing PSTN call) |
-| Application     | Calls.MeetingJoin (for `meetingInfo!=null` )               |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     |                                             |
+| Delegated (personal Microsoft account) |                                             |
+| Application                            |                                             |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,17 +48,22 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/invite
 Content-Type: application/json
-Content-Length: 1471
+Content-Length: 464
 
 {
   "participants": [
     {
+      "endpointType": "default",
       "identity": {
         "user": {
-          "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
           "displayName": "Heidi Steen"
         }
-      }
+      },
+      "languageId": "languageId-value",
+      "region": "region-value",
+      "replacesCallId": "replacesCallId-value"
     }
   ],
   "clientContext": "clientContext-value"
@@ -77,14 +81,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 306
+Content-Length: 259
 
 {
-  "clientContext": "clientContext-value",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Running"
+  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+  "status": "running",
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
 
@@ -96,119 +100,145 @@ Please see [Inviting Participant in Existing Call](participant_inviteWithReplace
 
 ##### Request
 
-``` http
+```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/invite
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 
 {
-    "clientContext": "A904FBD5A31041E881E861877A3DE3CD",
-    "participants" : [{
-        "@odata.type": "#microsoft.graph.invitationParticipantInfo",
-        "identity" : {
-            "user" : {
-                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-            }
+  "participants": [
+    {
+      "endpointType": "default",
+      "identity": {
+        "user": {
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "displayName": "Heidi Steen"
         }
-    ]
+      },
+      "languageId": "en-US",
+      "region": "westus"
+    }
+  ],
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
 
 ##### Response
 
-``` http
-HTTP/1.1 202 Accepted
-Location: /app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 259
+
+{
+  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+  "status": "running",
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+}
 ```
 
 ##### Notification - Operation Completed
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "deleted",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-                "@odata.etag": "W/\"51\"",
-                "clientContext": "A904FBD5A31041E881E861877A3DE3CD",
-                "status": "completed"
-            }
-        }
-    ]
+  "value": [
+    {
+      "changeType": "deleted",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.commsOperation",
+        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.etag": "W/\"51\"",
+        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+        "status": "completed"
+      }
+    }
+  ]
 }
 ```
 
 ##### Notification - Roster Updated With Participant Added
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
+  "value": [
+    {
+      "changeType": "updated",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants",
+      "resourceData": [
         {
-            "changeType": "updated",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants",
-            "resourceData": [
-                {
-                    "@odata.type": "#microsoft.graph.participant",
-                    "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/8A34A46B3D174ADC8DCEDC4E7D572698",
-                    "@odata.etag": "W/\"51\"",
-                    "info": {
-                        "@odata.type": "#microsoft.graph.participantInfo",
-                        "identity" : {
-                            "user" : {
-                                "region": "westus",
-                                "languageId": "en-US",
-                                "displayName": "Test User",
-                                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-                            }
-                        }
-                    },
-                    "mediaStreams": [
-                        {
-                            "mediaType": "audio",
-                            "label": "main-audio",
-                            "sourceId": 1,
-                            "direction": "sendReceive",
-                        }
-                    ]
-                },
-                {
-                    "@odata.type": "#microsoft.graph.participant",
-                    "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/123456W77E24E4D85F80597083CB830",
-                    "@odata.etag": "W/\"55\"",
-                    "info": {
-                        "@odata.type": "#microsoft.graph.participantInfo",
-                        "identity" : {
-                            "application" : {
-                                "region": "westus",
-                                "languageId": "en-US",
-                                "displayName": "Test Bot",
-                                "id": "1234A46B-3D17-4ADC-8DCE-DC4E7D556789"
-                            }
-                        }
-                    },
-                    "mediaStreams": [
-                        {
-                            "mediaType": "audio",
-                            "label": "main-audio",
-                            "sourceId": 2,
-                            "direction": "sendReceive",
-                        }
-                    ]
-                }
-            ]
+          "@odata.type": "#microsoft.graph.participant",
+          "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/8A34A46B3D174ADC8DCEDC4E7D572698",
+          "@odata.etag": "W/\"51\"",
+          "info": {
+            "identity": {
+              "user": {
+                "displayName": "Test User",
+                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+              }
+            },
+            "region": "westus",
+            "languageId": "en-US",
+          },
+          "mediaStreams": [
+            {
+              "mediaType": "audio",
+              "label": "main-audio",
+              "sourceId": "1",
+              "direction": "sendReceive",
+              "serverMuted": false,
+            }
+          ]
+        },
+        {
+          "@odata.type": "#microsoft.graph.participant",
+          "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/123456W77E24E4D85F80597083CB830",
+          "@odata.etag": "W/\"55\"",
+          "info": {
+            "identity": {
+              "application": {
+                "displayName": "Test Bot",
+                "id": "1234A46B-3D17-4ADC-8DCE-DC4E7D556789"
+              }
+            },
+            "region": "westus",
+            "languageId": "en-US"
+          },
+          "mediaStreams": [
+            {
+              "mediaType": "audio",
+              "label": "main-audio",
+              "sourceId": "2",
+              "direction": "sendReceive",
+              "serverMuted": false,
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
 

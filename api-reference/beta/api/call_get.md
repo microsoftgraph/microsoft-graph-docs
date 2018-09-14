@@ -1,18 +1,16 @@
-# Get Call
+# Get call
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
-Get an active call.
+Retrieve the properties and relationships of call object.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type | Permissions (from least to most privileged)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Application     | Calls.AudioVideo (for `meetingInfo=null`)                    |
-| Application     | Calls.PSTN (for `meetingInfo=null` and outgoing PSTN call)   |
-| Application     | Calls.MeetingJoin (for `meetingInfo!=null` )                 |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     |                                             |
+| Delegated (personal Microsoft account) |                                             |
+| Application                            |                                             |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,8 +34,10 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [call](../resources/call.md) object in the response body.
 
 ## Example
+
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_call"
@@ -48,6 +48,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -56,23 +57,29 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6173
+Content-Length: 2821
 
 {
   "activeModalities": [
     "unknown"
   ],
   "answeredBy": {
-    "user": {
-      "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
-      "displayName": "Heidi Steen"
-    }
+    "identity": {
+      "user": {
+        "id": "550fae72-d251-43ec-868c-373732c2704f",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "displayName": "Heidi Steen"
+      }
+    },
+    "languageId": "languageId-value",
+    "region": "region-value"
   },
   "callRoutes": [
     {
       "final": {
         "user": {
-          "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
           "displayName": "Heidi Steen"
         }
       },
@@ -86,30 +93,40 @@ Content-Length: 6173
   ],
   "callbackUri": "callbackUri-value",
   "chatInfo": {
-    "messageId": "messageId-value",
-    "replyChainMessageId": "replyChainMessageId-value",
-    "threadId": "threadId-value"
+    "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+    "messageId": "0",
+    "replyChainMessageId": "0"
   },
   "direction": "incoming",
   "id": "id-value",
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "",
-    "removeFromDefaultAudioGroup": true
+    "blob": "<media config blob>"
   },
   "meetingCapability": {
     "allowAnonymousUsersToDialOut": true,
     "autoAdmittedUsers": "everyoneInCompany"
   },
   "meetingInfo": {
-    "@odata.type": "#microsoft.graph.tokenMeetingInfo",
-    "token": "token-value",
-    "type": "type-value"
+    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "organizer": {
+      "user": {
+        "id": "550fae72-d251-43ec-868c-373732c2704f",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "displayName": "Heidi Steen"
+      }
+    },
+    "allowConversationWithoutHost": true
   },
   "myParticipantId": "myParticipantId-value",
   "requestedModalities": [
-    "unknown"
+    "audio", "video"
   ],
+  "resultInfo": {
+    "code": "code-value",
+    "message": "message-value",
+    "subCode": "subCode-value"
+  },
   "ringingTimeoutInSeconds": 99,
   "routingPolicies": [
     "none"
@@ -117,7 +134,8 @@ Content-Length: 6173
   "source": {
     "identity": {
       "user": {
-        "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
+        "id": "550fae72-d251-43ec-868c-373732c2704f",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
         "displayName": "Heidi Steen"
       }
     },
@@ -126,12 +144,12 @@ Content-Length: 6173
   },
   "state": "incoming",
   "subject": "subject-value",
-  "targetDisposition": "default",
   "targets": [
     {
       "identity": {
         "user": {
-          "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
           "displayName": "Heidi Steen"
         }
       },

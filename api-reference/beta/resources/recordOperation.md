@@ -8,20 +8,27 @@ The recordOperation type
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
+| bargeInAllowed                 | Boolean                     | If yes, ongoing media operations are cancelled.                                                                                                   |
 | clientContext                  | String                      | The client context.                                                                                                                               |
 | completionReason               | String                      | Possible values are: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`. |
 | createdDateTime                | DateTimeOffset              |                                                                                                                                                   |
-| id                             | String                      | The server operation id. Read Only.                                                                                                               |
+| id                             | String                      | The server operation id. Read-only. Server generated.                                                                                             |
+| initialSilenceTimeoutInSeconds | Int32                       |                                                                                                                                                   |
 | lastActionDateTime             | DateTimeOffset              |                                                                                                                                                   |
-| length                         | Int32                       | The length of recording in seconds. Read Only.                                                                                                    |
+| maxRecordDurationInSeconds     | Int32                       |                                                                                                                                                   |
+| maxSilenceTimeoutInSeconds     | Int32                       |                                                                                                                                                   |
+| playBeep                       | Boolean                     |                                                                                                                                                   |
+| prompts                        | [prompt](prompt.md) collection |                                                                                                                                                |
 | recordResourceLocation         | String                      |                                                                                                                                                   |
-| resultInfo                     | [resultInfo](resultInfo.md) | The result information.  Read Only.                                                                                                               |
-| status                         | String                      | Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`. Read Only.                                                                   |
+| resultInfo                     | [resultInfo](resultInfo.md) | The result information.  Read-only. Server generated.                                                                                             |
+| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. Server generated.                                                 |
+| stopTones                      | String collection           |                                                                                                                                                   |
+| streamWhileRecording           | Boolean                     | If set to true, a resource location will be provided as soon as the recording starts.                                                             |
 
 ## Relationships
 None
 
-## Json Representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
@@ -32,33 +39,44 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.recordOperation"
 }-->
-
-``` json
+```json
 {
+  "bargeInAllowed": true,
   "clientContext": "String",
-  "completionReason": "String",
+  "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
+  "initialSilenceTimeoutInSeconds": 1024,
   "lastActionDateTime": "String (timestamp)",
-  "length": 1024,
+  "maxRecordDurationInSeconds": 1024,
+  "maxSilenceTimeoutInSeconds": 1024,
+  "playBeep": true,
+  "prompts": [{"@odata.type": "#microsoft.graph.prompt"}],
   "recordResourceLocation": "String",
-  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
-  "status": "String"
+  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
+  "status": "notStarted | running | completed | failed",
+  "stopTones": ["String"],
+  "streamWhileRecording": true
 }
 ```
 
 ## Example
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.recordOperation",
+  "truncated": true
+}-->
+```json
 {
-    "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-    "clientContext": "A904FBD5A31041E881E861877A3DE3CD",
-    "status": "completed",
-    "length": 900,
-    "resultInfo" : {
-        "code": "200",
-        "subCode": "callTerminated"
-    }
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+  "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+  "resultInfo": {
+    "code": "200",
+    "subCode": "callTerminated"
+  },
+  "status": "completed"
 }
 ```
 

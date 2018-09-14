@@ -23,7 +23,6 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.resultInfo"
 }-->
-
 ```json
 {
   "code": "String",
@@ -34,29 +33,43 @@ Here is a JSON representation of the resource.
 
 ## Example Error result
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.resultInfo"
+}-->
+```json
 {
-    "code": "100",
-    "message": "Internal Server Error.",
-    "subCode": "20"
+  "code": "100",
+  "message": "Internal Server Error.",
+  "subCode": "20"
 }
 ```
 
 ## Example Generic success result
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.resultInfo"
+}-->
+```json
 {
-    "code": "200",
-    "subCode": "0"
+  "code": "200",
+  "message": "",
+  "subCode": "0"
 }
 ```
 
 ## Example Record Success result
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.resultInfo"
+}-->
+```json
 {
-    "code": "200",
-    "subCode": "completedSilenceDetected"
+  "code": "200",
+  "message": "",
+  "subCode": "completedSilenceDetected"
 }
 ```
 

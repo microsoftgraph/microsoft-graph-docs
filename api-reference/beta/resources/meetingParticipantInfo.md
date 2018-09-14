@@ -1,4 +1,4 @@
-# MeetingInfo resource type
+# MeetingParticipantInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,9 @@
 
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
-| allowConversationWithoutHost | Boolean |  |
+| identity | [identitySet](identitySet.md) |  |
+| sipProxyAddress | String |  |
+| upn | String |  |
 
 ## JSON representation
 
@@ -17,11 +19,13 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.meetingInfo"
+  "@odata.type": "microsoft.graph.meetingParticipantInfo"
 }-->
 ```json
 {
-  "allowConversationWithoutHost": true
+  "identity": {"@odata.type": "#microsoft.graph.identitySet"},
+  "sipProxyAddress": "String",
+  "upn": "String"
 }
 ```
 
@@ -29,7 +33,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "meetingInfo resource",
+  "description": "meetingParticipantInfo resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

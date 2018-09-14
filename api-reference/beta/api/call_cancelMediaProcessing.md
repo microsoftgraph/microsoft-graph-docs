@@ -9,7 +9,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     |                                             |
 | Delegated (personal Microsoft account) |                                             |
-| Application                            | Calls.MeetingJoin                           |
+| Application                            |                                             |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -39,13 +39,13 @@ Here is an example of how to call this API.
 
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "call_cancelMediaProcessing"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/cancelMediaProcessing
-
 Content-Type: application/json
 Content-Length: 62
 
@@ -57,6 +57,7 @@ Content-Length: 62
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -65,38 +66,44 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 306
+Content-Length: 259
 
 {
   "clientContext": "clientContext-value",
   "createdDateTime": "2018-03-19T09:46:02Z",
   "id": "id-value",
   "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Running"
+  "status": "running"
 }
 ```
 
 ##### Notification - Operation Completed
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "deleted",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.cancelMediaProcessingOperation",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-                "@odata.etag": "W/\"54451\"",
-                "clientContext": "A904FBD5A31041E881E861877A3DE3CD",
-                "status": "completed"
-            }
-        }
-    ]
+  "value": [
+    {
+      "changeType": "deleted",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.commsOperation",
+        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.etag": "W/\"54451\"",
+        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+        "status": "completed"
+      }
+    }
+  ]
 }
 ```
 

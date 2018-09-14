@@ -8,7 +8,7 @@ The silencePrompt type.
 
 | Property    | Type    | Description                                                              |
 | :---------- | :------ | :----------------------------------------------------------------------- |
-| duration    | Int64 | The silence duration in milliseconds.                                    |
+| duration    | Int64   | The silence duration in milliseconds.                                    |
 
 ## JSON representation
 
@@ -21,7 +21,6 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.silencePrompt"
 }-->
-
 ```json
 {
   "duration": 1024
@@ -30,10 +29,13 @@ Here is a JSON representation of the resource.
 
 ## Example - Play silence for 5 seconds.
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.silencePrompt"
+}-->
+```json
 {
-    "@odata.type": "#microsoft.graph.silencePrompt",
-    "duration": 5000
+  "duration": 5000
 }
 ```
 

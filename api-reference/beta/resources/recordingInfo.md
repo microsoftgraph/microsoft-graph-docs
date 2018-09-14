@@ -20,11 +20,10 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.recordingInfo"
 }-->
-
 ```json
 {
-  "initiatedBy": {"@odata.type": "microsoft.graph.participantInfo"},
-  "status": "String"
+  "initiatedBy": {"@odata.type": "#microsoft.graph.participantInfo"},
+  "status": "recordingCapable | notRecording | startedRecording"
 }
 ```
 

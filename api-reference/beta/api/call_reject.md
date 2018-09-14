@@ -5,19 +5,17 @@
 Reject an incoming call.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type | Permissions (from least to most privileged)                |
-| :-------------- | :--------------------------------------------------------- |
-| Application     | Calls.AudioVideo (for `meetingInfo=null`)                  |
-| Application     | Calls.PSTN (for `meetingInfo=null` and outgoing PSTN call) |
-| Application     | Calls.MeetingJoin (for `meetingInfo!=null` )               |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     |                                             |
+| Delegated (personal Microsoft account) |                                             |
+| Application                            |                                             |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-
-``` http
+```http
 POST /app/calls/{id}/reject
 POST /applications/{id}/calls/{id}/reject
 ```
@@ -28,7 +26,6 @@ POST /applications/{id}/calls/{id}/reject
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
@@ -36,24 +33,10 @@ In the request body, provide a JSON object with the following parameters.
 |reason|String||
 
 ## Response
-
-If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsOperation.md) object in the response body.
-
-##### Response Headers
-
-No headers
-
-##### Response Body
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ```http
 HTTP/1.1 200 OK
-
-{
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Completed"
-}
 ```
 
 ## Example
@@ -61,60 +44,66 @@ Here is an example of how to call this API.
 
 ##### Notification - Incoming
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "created",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.call",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-                "@odata.etag": "W/\"5445\"",
-                "callState": "incoming",
-                "direction": "incoming",
-                "correlationId": "2F3556DB-B502-4A69-8C0E-38AF3A6A9D94",
-                "source": {
-                    "@odata.type": "#microsoft.graph.participantInfo",
-                    "identity" : {
-                        "user" : {
-                            "displayName": "Test User",
-                            "language": "en-US",
-                            "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-                        }
-                    }
-                },
-                "targets" : [{
-                    "@odata.type": "#microsoft.graph.participantInfo",
-                    "identity" : {
-                        "application" : {
-                            "displayName": "Test BOT",
-                            "language": "en-US",
-                            "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-                        }
-                    }
-                }],
-                "requestedModalities": [ "audio", "video" ]
+  "value": [
+    {
+      "changeType": "created",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.etag": "W/\"5445\"",
+        "state": "incoming",
+        "direction": "incoming",
+        "source": {
+          "identity": {
+            "user": {
+              "displayName": "Test User",
+              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
             }
-        }
-    ]
+          },
+          "region": "westus",
+          "languageId": "en-US"
+        },
+        "targets": [
+          {
+            "identity": {
+              "application": {
+                "displayName": "Test BOT",
+                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+              }
+            },
+            "region": "westus",
+            "languageId": "en-US"
+          }
+        ],
+        "requestedModalities": [ "audio", "video" ]
+      }
+    }
+  ]
 }
 ```
 
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "call_reject"
 }-->
-
-``` http
+```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/reject
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 Content-Length: 24
 
@@ -124,49 +113,45 @@ Content-Length: 24
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.None"
 } -->
-
 ```http
 HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 306
-
-{
-  "clientContext": "clientContext-value",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Completed"
-}
 ```
 
 ##### Notification - Deleted
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "deleted",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.call",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-                "@odata.etag": "W/\"5445\""
-            }
-        }
-    ]
+  "value": [
+    {
+      "changeType": "deleted",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.etag": "W/\"5445\""
+      }
+    }
+  ]
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

@@ -5,17 +5,17 @@
 Retrieve the properties and relationships of onlineMeeting object.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type                        | Permissions (from least to most privileged)           |
-|:---------------------------------------|:------------------------------------------------------|
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     |                                             |
+| Delegated (personal Microsoft account) |                                             |
 | Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-
-``` http
+```http
 GET /app/onlineMeetings/{id}
 GET /applications/{id}/onlineMeetings/{id}
 ```
@@ -29,79 +29,87 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this method returns a `200 OK` response code and [onlineMeeting](../resources/onlineMeeting.md) object in the response body.
 
 ## Example
 
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_onlineMeeting"
 }-->
-
-``` http
-GET https://graph.microsoft.com/beta/app/onlineMeetings/013448345
-Authorization: Bearer <TOKEN>
+```http
+GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
 ```
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.onlineMeeting"
 } -->
-
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1499
+Content-Length: 1574
 
 {
-  "accessLevel": "sameEnterprise",
+  "accessLevel": "everyone",
   "audioConferencing": {
-    "tollNumber": "12525634478",
-    "tollFreeNumber": "18666390588",
+    "tollNumber": "+12525634478",
+    "tollFreeNumber": "+18666390588",
     "participantPasscode": "2425999",
     "leaderPasscode": null,
     "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
   },
-  "canceledTime": "0001-01-01T00:00:00Z",
+  "canceledTime": "2018-03-19T09:46:02Z",
   "chatInfo": {
     "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
     "messageId": "0",
-    "replyChainMessageId": null
+    "replyChainMessageId": "0"
   },
-  "creationTime": "2018-05-30T00:12:19.0726086Z",
-  "endTime": "2018-05-30T01:00:00Z",
-  "entryExitAnnouncement": false,
-  "expirationTime": "2019-01-16T17:03:39.0579549Z",
+  "creationTime": "2018-03-19T09:46:02Z",
+  "endTime": "2018-03-19T09:46:02Z",
+  "entryExitAnnouncement": true,
+  "expirationTime": "2018-03-19T09:46:02Z",
   "id": "013448345",
-  "isCanceled": false,
+  "isCancelled": false,
   "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
   "meetingType": "calendar",
-  "organizer": {
-    "user": {
-      "id": "550fae72-d251-43ec-868c-373732c2704f",
-      "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+  "participants": {
+    "attendees": [
+      {
+        "identity": {
+          "user": {
+            "id": "550fae72-d251-43ec-868c-373732c2704f",
+            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+            "displayName": "Heidi Steen"
+          }
+        },
+        "sipProxyAddress": "sipProxyAddress-value",
+        "upn": "upn-value"
+      }
+    ],
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "displayName": "Heidi Steen"
+        }
+      },
+      "sipProxyAddress": "sipProxyAddress-value",
+      "upn": "upn-value"
     }
   },
-  "participants": [
-    {
-      "user": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-      }
-    }
-  ],
-  "phoneUserAdmission": true,
-  "startTime": "2018-05-30T00:30:00Z",
+  "startTime": "2018-03-19T09:46:02Z",
   "subject": "Quarterly sales numbers"
 }
 ```

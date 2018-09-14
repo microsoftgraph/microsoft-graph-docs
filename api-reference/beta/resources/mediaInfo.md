@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 ## Properties
-| Property	     | Type	   |Description|
+| Property	 | Type	   |Description|
 |:---------------|:--------|:----------|
 | resourceId     | String  |           |
 | uri            | String  |           |
@@ -19,13 +19,11 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.mediaInfo"
 }-->
-
 ```json
 {
   "resourceId": "String",
   "uri": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

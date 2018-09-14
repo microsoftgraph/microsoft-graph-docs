@@ -18,33 +18,36 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "preFetchMedia"
   ],
   "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
 }-->
-
 ```json
 {
-  "preFetchMedia": [{"@odata.type": "microsoft.graph.mediaInfo"}],
+  "preFetchMedia": [ { "@odata.type": "#microsoft.graph.mediaInfo" } ],
   "removeFromDefaultAudioGroup": true
 }
 ```
 
 ## Example
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
+}-->
+```json
 {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
-    "preFetchMedia": [
-        {
-            "url": "https://cdn.contoso.com/beep.wav",
-            "id": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
-        },
-        {
-            "url": "https://cdn.contoso.com/cool.wav",
-            "id": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
-        }
-    ]
+  "preFetchMedia": [
+    {
+      "uri": "https://cdn.contoso.com/beep.wav",
+      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+    },
+    {
+      "uri": "https://cdn.contoso.com/cool.wav",
+      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
+    }
+  ],
+  "removeFromDefaultAudioGroup": false
 }
 ```
 

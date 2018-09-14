@@ -2,14 +2,12 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The organizerMeetingInfo type.
-
 ## Properties
 
 | Property                     | Type                          | Description                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
 | allowConversationWithoutHost | Boolean                       |                                                 |
-| organizer                    | [identitySet](identitySet.md) | The organizer Azure Active Directory object ID. |
+| organizer                    | [identitySet](identitySet.md) | The organizer Azure Active Directory identity.  |
 
 ## JSON representation
 
@@ -22,20 +20,24 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.organizerMeetingInfo"
 }-->
-
 ```json
 {
   "allowConversationWithoutHost": true,
-  "organizer": {"@odata.type": "microsoft.graph.identitySet"}
+  "organizer": { "@odata.type": "#microsoft.graph.identitySet" }
 }
 ```
 
 ## Example
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.organizerMeetingInfo"
+}-->
+```json
 {
+  "allowConversationWithoutHost": true,
   "organizer": {
-    "user" : {
+    "user": {
       "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
       "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
     }

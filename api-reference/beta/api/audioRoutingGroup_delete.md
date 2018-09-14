@@ -5,14 +5,13 @@
 Delete audioRoutingGroup.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type | Permissions (from least to most privileged)  |
-| :-------------- | :------------------------------------------- |
-| Application     | Calls.AudioVideo                             |
-| Application     | Calls.PSTN                                   |
-| Application     | Calls.MeetingJoin                            |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     |                                             |
+| Delegated (personal Microsoft account) |                                             |
+| Application                            |                                             |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,8 +32,10 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example
+
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_audioRoutingGroup"

@@ -1,23 +1,21 @@
-# call: Record
+# call: record
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Record the call.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type | Permissions (from least to most privileged) |
-| :-------------- | :------------------------------------------ |
-| Application     | Calls.AudioVideo                            |
-| Application     | Calls.PSTN                                  |
-| Application     | Calls.MeetingJoin                           |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     |                                             |
+| Delegated (personal Microsoft account) |                                             |
+| Application                            |                                             |
 
 ## HTTP request
-
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 POST /app/calls/{id}/record
 POST /applications/{id}/calls/{id}/record
 ```
@@ -40,18 +38,9 @@ In the request body, provide a JSON object with the following parameters.
 |playBeep|Boolean||
 |streamWhileRecording|Boolean||
 |stopTones|String collection||
-|recordResourceLocation|String||
-|completionReason|String||
 |clientContext|String||
 
 ## Response
-
-##### Response Headers
-
-| Name               | Type   | Description                         |
-| :----------------- | :----- | :---------------------------------- |
-| Location           | String | The location of the created object. |
-
 If successful, this method returns `200, OK` response code and [recordOperation](../resources/recordOperation.md) object in the response body.
 
 ## Example
@@ -64,36 +53,35 @@ Here is an example of the request.
   "blockType": "request",
   "name": "call_record"
 }-->
-
-``` http
+```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/record
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
+Content-Length: 394
 
 {
-    "bargeInAllowed": true,
-    "clientContext": "A904FBD5A31041E881E861877A3DE3CD",
-    "prompts": [
-        {
-            "@odata.type": "#microsoft.graph.silencePrompt",
-            "duration": 5000
-        },
-        {
-            "@odata.type": "#microsoft.graph.mediaPrompt",
-            "mediaInfo": {
-                "url": "https://cdn.contoso.com/beep.wav",
-                "id": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
-            },
-            "loop": 5
-        }
-    ],
-    "maxRecordDurationInSeconds": 1800,
-    "initialSilenceTimeoutInSeconds": 10,
-    "maxSilenceTimeoutInSeconds": 2,
-    "recordingFormat": "wav",
-    "playBeep": true,
-    "streamWhileRecording": true,
-    "stopTones": [ "#", "11", "*" ],
+  "bargeInAllowed": true,
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "prompts": [
+    {
+      "@odata.type": "#microsoft.graph.silencePrompt",
+      "duration": 5000
+    },
+    {
+      "@odata.type": "#microsoft.graph.mediaPrompt",
+      "mediaInfo": {
+        "uri": "https://cdn.contoso.com/beep.wav",
+        "resourceid": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+      },
+      "loop": 5
+    }
+  ],
+  "maxRecordDurationInSeconds": 1800,
+  "initialSilenceTimeoutInSeconds": 10,
+  "maxSilenceTimeoutInSeconds": 2,
+  "recordingFormat": "wav",
+  "playBeep": true,
+  "streamWhileRecording": true,
+  "stopTones": [ "#", "11", "*" ],
 }
 ```
 
@@ -105,47 +93,49 @@ Here is an example of the response. Note: The response object shown here may be 
   "truncated": true,
   "@odata.type": "microsoft.graph.recordOperation"
 } -->
-
-``` http
+```http
 HTTP/1.1 200 OK
-Location: /app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5
 Content-Type: application/json
-Content-Length: 428
+Content-Length: 259
 
 {
-  "clientContext": "clientContext-value",
-  "completionReason": "operationCanceled",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Running"
+  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+  "status": "running",
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
 
 ##### Notification - Operation Completed
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "deleted",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.recordOperation",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-                "@odata.etag": "W/\"54451\"",
-                "clientContext": "A904FBD5A31041E881E861877A3DE3CD",
-                "status": "completed",
-                "recordResourceLocation": "file-location-url",
-                "length": 900,
-                "completionReason": "callTerminated"
-            }
-        }
-    ]
+  "value": [
+    {
+      "changeType": "deleted",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.recordOperation",
+        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.etag": "W/\"54451\"",
+        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+        "status": "completed",
+        "recordResourceLocation": "https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+        "completionReason": "stopToneDetected"
+      }
+    }
+  ]
 }
 ```
 

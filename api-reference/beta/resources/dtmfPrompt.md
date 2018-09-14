@@ -19,7 +19,6 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.dtmfPrompt"
 }-->
-
 ```json
 {
   "digits": "String"
@@ -28,9 +27,13 @@ Here is a JSON representation of the resource.
 
 ## Example
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.dtmfPrompt"
+}-->
+```json
 {
-    "digits": ",,1234,,,56789"
+  "digits": ",,1234,,,56789"
 }
 ```
 

@@ -27,8 +27,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|clientContext|String||
 |metadata|String||
+|clientContext|String||
 
 ## Response
 If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsOperation.md) object in the response body.
@@ -38,6 +38,7 @@ Here is an example of how to call this API.
 
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "call_updateMetadata"
@@ -48,8 +49,8 @@ Content-Type: application/json
 Content-Length: 79
 
 {
-  "clientContext": "clientContext-value",
-  "metadata": "metadata-value"
+  "metadata": "metadata-value",
+  "clientContext": "clientContext-value"
 }
 ```
 
@@ -64,14 +65,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 306
+Content-Length: 259
 
 {
-  "clientContext": "clientContext-value",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Completed"
+  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+  "status": "completed",
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
 

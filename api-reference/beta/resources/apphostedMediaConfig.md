@@ -2,8 +2,6 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The ApplicationMediaConfig type.
-
 ## Properties
 
 | Property                          | Type    | Description                                                     |
@@ -20,11 +18,9 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.appHostedMediaConfig",
-  "openType": true
-} -->
-
-``` json
+  "@odata.type": "microsoft.graph.appHostedMediaConfig"
+}-->
+```json
 {
   "blob": "String",
   "removeFromDefaultAudioGroup": true
@@ -38,27 +34,9 @@ Here is a JSON representation of the resource.
   "truncated": true,
   "@odata.type": "microsoft.graph.appHostedMediaConfig"
 } -->
-``` json
+```json
 {
-    "blob": {
-        "mpUri": "net.tcp://app.contoso.com:20100/MediaProcessor",
-        "audioRenderContexts": [
-            "27e887f5-17a6-4e5e-8a5a-e3663a65155d"
-        ],
-        "videoRenderContexts": [
-            "7e77a835-69a8-4dc7-a0f7-4c9d562c888a"
-        ],
-        "audioSourceContexts": [
-        ],
-        "videoSourceContexts": [
-            "7b5fc89d-6c22-45a3-821c-362e102384af"
-        ],
-        "supportedAudioFormat": "Pcm16K",
-        "mpMediaSessionId": "857c11de-7a41-403d-8044-0f4fa589efaf",
-        "skypeMediaBotsVersion": "1.5.0.1177",
-        "mediaStackVersion": "6.0.8980.141",
-        "mpVersion": "7.0.697.0"
-    }
+  "blob": "<media config blob>"
 }
 ```
 

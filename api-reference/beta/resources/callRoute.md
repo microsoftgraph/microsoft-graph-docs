@@ -23,32 +23,34 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.callRoute"
 }-->
-
 ```json
 {
   "final": {"@odata.type": "microsoft.graph.identitySet"},
   "original": {"@odata.type": "microsoft.graph.identitySet"},
-  "routingType": "String"
+  "routingType": "forwarded | lookup | selfFork"
 }
 ```
 
 ## Example
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.callRoute"
+}-->
+```json
 {
-    "@odata.type": "#microsoft.graph.callRoute",
-    "routingType": "lookup",
-    "original": {
-      "phone": {
-        "id": "+14258828080"
-      }
-    },
-    "final": {
-      "user": {
-        "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
-        "displayName": "Heidi Steen"
-      }
+  "routingType": "lookup",
+  "original": {
+    "phone": {
+      "id": "+14258828080"
     }
+  },
+  "final": {
+    "user": {
+      "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
+      "displayName": "Heidi Steen"
+    }
+  }
 }
 ```
 

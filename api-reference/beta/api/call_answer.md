@@ -5,14 +5,13 @@
 Answer an incoming call.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type | Permissions (from least to most privileged)                 |
-| :-------------- | :-----------------------------------------------------------|
-| Application     | Calls.AudioVideo (for `meetingInfo=null`)                   |
-| Application     | Calls.PSTN (for `meetingInfo=null` and outgoing PSTN call)  |
-| Application     | Calls.MeetingJoin (for `meetingInfo!=null` )                |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     |                                             |
+| Delegated (personal Microsoft account) |                                             |
+| Application                            |                                             |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,140 +35,145 @@ In the request body, provide a JSON object with the following parameters.
 |mediaConfig       |[mediaConfig](../resources/mediaConfig.md)|The media configuration. (Required)                                                                                                            |
 
 ## Response
-If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsOperation.md) object in the response body.
-
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 ## Example
 Here is an example of how to call this API.
 
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "call_answer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/answer
-
 Content-Type: application/json
-Content-Length: 324
+Content-Length: 211
 
 {
   "callbackUri": "callbackUri-value",
-  "acceptedModalities": [
-    "unknown"
-  ],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "",
-    "removeFromDefaultAudioGroup": true
-  }
+    "blob": "<media config blob>"
+  },
+  "acceptedModalities": [
+    "audio"
+  ]
 }
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.None"
 } -->
 ```http
 HTTP/1.1 200 OK
-
-{
-  "clientContext": "clientContext-value",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Running"
-}
 ```
 
 ## Example - Answer VOIP call with service hosted media
 
 ##### Notification - Incoming
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "created",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.call",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-                "@odata.etag": "W/\"5445\"",
-                "callState": "incoming",
-                "direction": "incoming",
-                "callRoutes": [{
-                    "@odata.type": "#microsoft.graph.callRoute",
-                    "routingType": "lookup",
-                    "original": {
-                      "phone": {
-                        "id": "+14258828080"
-                      }
-                    },
-                    "final": {
-                        "application" : {
-                            "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-                        }
-                    },
-                }],
-                "source": {
-                    "@odata.type": "#microsoft.graph.participantInfo",
-                    "identity" : {
-                        "user" : {
-                            "displayName": "Test User",
-                            "language": "en-US",
-                            "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-                        }
-                    }
-                },
-                "targets" : [{
-                    "@odata.type": #"microsoft.graph.participantInfo",
-                    "identity" : {
-                        "application" : {
-                            "displayName": "Test BOT",
-                            "language": "en-US",
-                            "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-                        }
-                    }
-                }],
-                "requestedModalities": [ "audio", "video" ]
+  "value": [
+    {
+      "changeType": "created",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.etag": "W/\"5445\"",
+        "state": "incoming",
+        "direction": "incoming",
+        "callRoutes": [
+          {
+            "routingType": "lookup",
+            "original": {
+              "phone": {
+                "id": "+14258828080"
+              }
+            },
+            "final": {
+              "user": {
+                "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
+                "displayName": "Heidi Steen"
+              }
             }
-        }
-    ]
+          }
+        ],
+        "source": {
+          "identity": {
+            "user": {
+              "displayName": "Test User",
+              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+            }
+          },
+          "region": "westus",
+          "languageId": "en-US"
+        },
+        "targets": [
+          {
+            "identity": {
+              "application": {
+                "displayName": "Test BOT",
+                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+              }
+            },
+            "languageId": "en-US"
+          }
+        ],
+        "requestedModalities": [ "audio" ]
+      }
+    }
+  ]
 }
 ```
 
 ##### Request
 
-``` http
+```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "ignored",
+  "name": "call_answer"
+}-->
+```json
 {
-    "callback": "https://bot.contoso.com/api/calls",
-    "acceptModalities": [ "audio", "video" ],
-    "mediaConfig": {
-        "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
-        "preFetchMedia": [
-            {
-                "url": "https://cdn.contoso.com/beep.wav",
-                "id": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
-            },
-            {
-                "url": "https://cdn.contoso.com/cool.wav",
-                "id": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
-            }
-        ]
-    }
+  "callbackUri": "https://bot.contoso.com/api/calls",
+  "acceptedModalities": [ "audio" ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+      {
+        "uri": "https://cdn.contoso.com/beep.wav",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+      },
+      {
+        "uri": "https://cdn.contoso.com/cool.wav",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
+      }
+    ]
+  }
 }
 ```
 
@@ -177,61 +181,93 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 200 OK
-
-{
-  "clientContext": "clientContext-value",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Running"
-}
 ```
 
 ##### Notification - Establishing
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "updated",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.call",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-                "@odata.etag": "W/\"5445\"",
-                "callState": "establishing",
+  "value": [
+    {
+      "changeType": "updated",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.etag": "W/\"5445\"",
+        "state": "establishing",
+        "callbackUri": "https://bot.contoso.com/api/calls",
+        "activeModalities": [ "audio" ],
+        "mediaConfig": {
+          "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+          "preFetchMedia": [
+            {
+              "uri": "https://cdn.contoso.com/beep.wav",
+              "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+            },
+            {
+              "uri": "https://cdn.contoso.com/cool.wav",
+              "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
             }
+          ]
         }
-    ]
+      }
+    }
+  ]
 }
 ```
 
 ##### Notification - Established
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "updated",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.call",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-                "@odata.etag": "W/\"5445\"",
-                "callState": "established",
-                "activeModalities": ["audio", "video"],
-                "requestedModalities": []
+  "value": [
+    {
+      "changeType": "updated",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.etag": "W/\"5445\"",
+        "state": "established",
+        "callbackUri": "https://bot.contoso.com/api/calls",
+        "activeModalities": [ "audio" ],
+        "mediaConfig": {
+          "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+          "preFetchMedia": [
+            {
+              "uri": "https://cdn.contoso.com/beep.wav",
+              "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+            },
+            {
+              "uri": "https://cdn.contoso.com/cool.wav",
+              "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
             }
+          ]
         }
-    ]
+      }
+    }
+  ]
 }
 ```
 
@@ -239,82 +275,79 @@ Content-Type: application/json
 
 ##### Notification - Incoming
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "created",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.call",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-                "@odata.etag": "W/\"5445\"",
-                "callState": "incoming",
-                "direction": "incoming",
-                "source": {
-                    "@odata.type": "#microsoft.graph.participantInfo",
-                    "identity" : {
-                        "user" : {
-                            "displayName": "Test User",
-                            "language": "en-US",
-                            "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-                        }
-                    }
-                },
-                "targets" : [{
-                    "@odata.type": "#microsoft.graph.participantInfo",
-                    "identity" : {
-                        "application" : {
-                            "displayName": "Test BOT",
-                            "language": "en-US",
-                            "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-                        }
-                    }
-                }],
-                "requestedModalities": [ "audio", "video" ]
+  "value": [
+    {
+      "changeType": "created",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.etag": "W/\"5445\"",
+        "state": "incoming",
+        "direction": "incoming",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "user": {
+              "displayName": "Test User",
+              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
             }
-        }
-    ]
+          },
+          "region": "westus",
+          "languageId": "en-US"
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "application": {
+                "displayName": "Test BOT",
+                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+              }
+            },
+            "region": "westus",
+            "languageId": "en-US"
+          }
+        ],
+        "requestedModalities": [ "audio" ]
+      }
+    }
+  ]
 }
 ```
 
 ##### Request
 
-``` http
+```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "ignored",
+  "name": "call_answer"
+}-->
+```json
 {
-    "acceptModalities": [ "audio", "video" ],
-    "mediaConfig": {
-        "@odata.type": "#microsoft.graph.applicationMediaConfig",
-        "blob": {
-            "mpUri": "net.tcp://app.contoso.com:20100/MediaProcessor",
-            "audioRenderContexts": [
-                "27e887f5-17a6-4e5e-8a5a-e3663a65155d"
-            ],
-            "videoRenderContexts": [
-                "7e77a835-69a8-4dc7-a0f7-4c9d562c888a"
-            ],
-            "audioSourceContexts": [
-                null
-            ],
-            "videoSourceContexts": [
-                "7b5fc89d-6c22-45a3-821c-362e102384af"
-            ],
-            "supportedAudioFormat": "Pcm16K",
-            "mpMediaSessionId": "857c11de-7a41-403d-8044-0f4fa589efaf",
-            "regionAffinity": null,
-            "skypeMediaBotsVersion": "1.5.0.1177",
-            "mediaStackVersion": "6.0.8980.141",
-            "mpVersion": "7.0.697.0"
-        }
-    }
+  "callbackUri": "https://bot.contoso.com/api/calls",
+  "acceptedModalities": [ "audio" ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<media config blob>"
+  }
 }
 ```
 
@@ -322,60 +355,65 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 200 OK
-
-{
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Running"
-}
 ```
 
 ##### Notification - Establishing
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "updated",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.call",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-                "@odata.etag": "W/\"5445\"",
-                "callState": "establishing",
-            }
-        }
-    ]
+  "value": [
+    {
+      "changeType": "updated",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.etag": "W/\"5445\"",
+        "state": "establishing",
+      }
+    }
+  ]
 }
 ```
 
 ##### Notification - Established
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.notifications"
+}-->
+```json
 {
-    "value": [
-        {
-            "changeType": "updated",
-            "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-            "resourceData": {
-                "@odata.type": "#microsoft.graph.call",
-                "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-                "@odata.etag": "W/\"5445\"",
-                "callState": "established",
-                "activeModalities": ["audio", "video"],
-                "requestedModalities": []
-            }
-        }
-    ]
+  "value": [
+    {
+      "changeType": "updated",
+      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.etag": "W/\"5445\"",
+        "state": "established",
+        "activeModalities": [ "audio" ],
+        "requestedModalities": []
+      }
+    }
+  ]
 }
 ```
 
