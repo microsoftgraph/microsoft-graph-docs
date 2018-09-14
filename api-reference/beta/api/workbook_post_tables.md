@@ -1,4 +1,4 @@
-# Create Table
+# Create table
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -24,8 +24,10 @@ POST /workbook/tables/$/add
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-### Request parameters
-| Name           | Type      |Description|
+## Request body
+In the request body, provide a JSON object with the following parameters.
+
+| Parameter           | Type      |Description|
 |:---------------|:----------|:----------|
 | Address  | string| Range address. If you are calling this API off of `worksheets/{id or name}/tables/add` path, there is no need to for sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)|
 | hasHeaders  | boolean|Boolean value that indicates whether the range has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.|

@@ -45,14 +45,19 @@ Here is a JSON representation of the resource.
       "displayName": "String",
       "mobileAppIntent": "String",
       "displayVersion": "String",
-      "installState": "String"
+      "installState": "String",
+      "supportedDeviceTypes": [
+        {
+          "@odata.type": "microsoft.graph.mobileAppSupportedDeviceType",
+          "type": "String",
+          "minimumOperatingSystemVersion": "String",
+          "maximumOperatingSystemVersion": "String"
+        }
+      ]
     }
   ]
 }
 ```
-
-
-
 
 
 

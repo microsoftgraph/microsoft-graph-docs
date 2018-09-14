@@ -23,7 +23,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(period='D7')
 GET /reports/getTeamsDeviceUsageUserDetail(date=2017-09-01)
 ```
 
-## Request parameters
+## Function parameters
 
 In the request URL, provide one of the following parameters with a valid value.
 

@@ -19,7 +19,6 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsDeviceAccount",
   "@odata.type": "microsoft.graph.windowsDeviceADAccount"
 }-->
 ``` json
@@ -30,6 +29,11 @@ Here is a JSON representation of the resource.
   "userName": "String"
 }
 ```
+
+
+
+
+
 
 
 

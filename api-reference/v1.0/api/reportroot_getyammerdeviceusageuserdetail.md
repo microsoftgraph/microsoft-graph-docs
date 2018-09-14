@@ -23,7 +23,7 @@ GET /reports/getYammerDeviceUsageUserDetail(period='{period_value}')
 GET /reports/getYammerDeviceUsageUserDetail(date={date_value})
 ```
 
-## Request parameters
+## Function parameters
 
 In the request URL, provide the query parameter with a valid value.
 

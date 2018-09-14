@@ -56,10 +56,10 @@ Content-length: 195
 {
   "enabled": true,
   "includedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "<Unknown Primitive Type Edm.Guid>"
   ],
   "excludedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "<Unknown Primitive Type Edm.Guid>"
   ],
   "overrideDefaultRule": true
 }
@@ -77,14 +77,19 @@ Content-Length: 318
   "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
   "enabled": true,
   "includedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "String"
   ],
   "excludedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "String"
   ],
   "overrideDefaultRule": true
 }
 ```
+
+
+
+
+
 
 
 

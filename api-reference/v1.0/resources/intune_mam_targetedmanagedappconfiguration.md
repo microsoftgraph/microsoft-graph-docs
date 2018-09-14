@@ -41,8 +41,8 @@ Inherits from [managedAppConfiguration](../resources/intune_mam_managedappconfig
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.targetedManagedAppConfiguration"
 }-->
 ``` json
@@ -65,6 +65,11 @@ Here is a JSON representation of the resource.
   "isAssigned": true
 }
 ```
+
+
+
+
+
 
 
 

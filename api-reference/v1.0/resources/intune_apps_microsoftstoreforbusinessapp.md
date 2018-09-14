@@ -31,11 +31,11 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md). The possible values are: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
 |usedLicenseCount|Int32|The number of Microsoft Store for Business licenses in use.|
 |totalLicenseCount|Int32|The total number of Microsoft Store for Business licenses.|
 |productKey|String|The app product key|
-|licenseType|[microsoftStoreForBusinessLicenseType](../resources/intune_apps_microsoftstoreforbusinesslicensetype.md)|The app license type. The possible values are: `offline`, `online`.|
+|licenseType|[microsoftStoreForBusinessLicenseType](../resources/intune_apps_microsoftstoreforbusinesslicensetype.md)|The app license type. Possible values are: `offline`, `online`.|
 |packageIdentityName|String|The app package identifier|
 
 ## Relationships
@@ -48,8 +48,8 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.mobileApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.microsoftStoreForBusinessApp"
 }-->
 ``` json
@@ -80,6 +80,11 @@ Here is a JSON representation of the resource.
   "packageIdentityName": "String"
 }
 ```
+
+
+
+
+
 
 
 

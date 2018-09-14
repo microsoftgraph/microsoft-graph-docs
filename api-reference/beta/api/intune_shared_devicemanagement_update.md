@@ -21,13 +21,14 @@ Note that the permission vary according to workflow.
 | &nbsp; &nbsp; Corporate enrollment | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; Device configuration | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; Device management | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; Electronic SIM | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; Enrollment | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; Fencing | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; Notification | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; On-boarding | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Resource access | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; RBAC | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp; &nbsp; Remote access | DeviceManagementConfiguration.Read.All |
 | &nbsp; &nbsp; Remote assistance | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Resource access | _Not documented yet_ |
 | &nbsp; &nbsp; Telecom expense management | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; Troublehooting | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; Windows Information Protection | DeviceManagementApps.ReadWrite.All |

@@ -20,6 +20,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |id|String|Key of the entity. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
@@ -40,6 +41,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Boolean|Indicates whether or not to require a managed email profile.|
+|restrictedApps|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|Require the device to not have the specified apps installed. This collection can contain a maximum of 10000 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -63,6 +65,9 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
+  "roleScopeTagIds": [
+    "String"
+  ],
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "description": "String",
@@ -82,10 +87,18 @@ Here is a JSON representation of the resource.
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
-  "managedEmailProfileRequired": true
+  "managedEmailProfileRequired": true,
+  "restrictedApps": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "String",
+      "publisher": "String",
+      "appStoreUrl": "String",
+      "appId": "String"
+    }
+  ]
 }
 ```
-
 
 
 

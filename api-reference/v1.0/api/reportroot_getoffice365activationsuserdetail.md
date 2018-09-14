@@ -47,6 +47,7 @@ The CSV file has the following headers for columns.
 - Windows 10 Mobile
 - iOS
 - Android
+- Activated On Shared Computer
 
 ## Example
 
@@ -88,5 +89,5 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android
+Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android,Activated On Shared Computer
 ```

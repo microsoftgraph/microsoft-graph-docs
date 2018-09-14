@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/getSkypeForBusinessDeviceUsageUserCounts(period='{period_value}')
 ```
 
-## Request parameters
+## Function parameters
 
 In the request URL, provide the following parameter with a valid value.
 

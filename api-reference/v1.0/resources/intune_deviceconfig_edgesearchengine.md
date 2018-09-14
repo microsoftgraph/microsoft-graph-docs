@@ -9,24 +9,27 @@ Inherits from [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearch
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|edgeSearchEngineType|[edgeSearchEngineType](../resources/intune_deviceconfig_edgesearchenginetype.md)|Allows IT admins to set a predefined default search engine for MDM-Controlled devices. The possible values are: `default`, `bing`.|
+|edgeSearchEngineType|[edgeSearchEngineType](../resources/intune_deviceconfig_edgesearchenginetype.md)|Allows IT admins to set a predefined default search engine for MDM-Controlled devices. Possible values are: `default`, `bing`.|
 
 ## Relationships
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.edgeSearchEngineBase",
   "@odata.type": "microsoft.graph.edgeSearchEngine"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.edgeSearchEngine",
   "edgeSearchEngineType": "String"
 }
 ```
+
+
+
+
+
 
 
 

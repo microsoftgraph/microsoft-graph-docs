@@ -22,7 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                        | For **user** resource:<br/>User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
 
 
-## HTTP request to get the photo
+## HTTP request 
+
+### Get the photo
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
@@ -33,7 +35,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
-## HTTP request to get the metadata of the photo
+### Get the metadata of the photo
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
@@ -46,7 +48,7 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-## HTTP request to get the metadata for a specific photo size
+### Get the metadata for a specific photo size
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photos/{size}
@@ -58,12 +60,11 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 ```
 
-## Parameters
+## Path parameters
 
 |Parameter|Type|Description|
 |:-----|:-----|:-----|
-|size  |String  | A photo size. The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', 
-'360x360','432x432', '504x504', and '648x648'. Photos can be any dimension if they are stored in Azure Active Directory. |
+|size  |String  | A photo size. The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', '360x360','432x432', '504x504', and '648x648'. Photos can be any dimension if they are stored in Azure Active Directory. |
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -75,9 +76,11 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
-## Response for getting the photo
+
+## Response
+### Response for getting the photo
 If successful, this method returns a `200 OK` response code and binary data of the requested photo.  If no photo exists, the operation returns `404 Not Found`.
-## Response for getting the metadata of the photo
+### Response for getting the metadata of the photo
 If successful, this method returns a `200 OK` response code and [profilePhoto](../resources/profilePhoto.md) object in the response body.
 ## Example
 ##### Request 1

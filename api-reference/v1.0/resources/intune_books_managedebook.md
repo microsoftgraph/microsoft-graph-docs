@@ -36,9 +36,8 @@ An abstract class containing the base properties for Managed eBook.
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBook"
 }-->
 ``` json
@@ -60,6 +59,11 @@ Here is a JSON representation of the resource.
   "privacyInformationUrl": "String"
 }
 ```
+
+
+
+
+
 
 
 

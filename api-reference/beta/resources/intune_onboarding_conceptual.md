@@ -9,7 +9,6 @@ You can enroll devices, including Windows PCs, to enable mobile device managemen
 The following Graph resources are available to manage enrollment in Intune:
 
 - [Certificate connector setting](intune_onboarding_certificateconnectorsetting.md)
-- [DEP on-boarding setting](intune_onboarding_deponboardingsetting.md)
 - [Device and app management data](intune_onboarding_deviceandappmanagementdata.md)
 - [Device enrollment configuration](intune_onboarding_deviceenrollmentconfiguration.md)
 - [Device enrollment limit configuration](intune_onboarding_deviceenrollmentlimitconfiguration.md)
@@ -28,7 +27,6 @@ The following Graph resources are available to manage enrollment in Intune:
 - [Device management partner](intune_onboarding_devicemanagementpartner.md)
 - [Device management partner app type](intune_onboarding_devicemanagementpartnerapptype.md)
 - [Device management partner tenant state](intune_onboarding_devicemanagementpartnertenantstate.md)
-- [Enablement](intune_onboarding_enablement.md)
 - [Enrollment configuration assignment](intune_onboarding_enrollmentconfigurationassignment.md)
 - [Intune brand](intune_onboarding_intunebrand.md)
 - [MDM authority](intune_onboarding_mdmauthority.md)
@@ -40,7 +38,7 @@ The following Graph resources are available to manage enrollment in Intune:
 - [Side loading key](intune_onboarding_sideloadingkey.md)
 - [VPP token](intune_onboarding_vpptoken.md)
 - [VPP token action result](intune_onboarding_vpptokenactionresult.md)
-- [VPP token license summary](intune_onboarding_vppTokenLicenseSummary.md)
+- [VPP token license summary](intune_onboarding_vpptokenlicensesummary.md)
 - [VPP token revoke licenses action result](intune_onboarding_vpptokenrevokelicensesactionresult.md)
 - [VPP token state](intune_onboarding_vpptokenstate.md)
 - [VPP token sync status](intune_onboarding_vpptokensyncstatus.md)

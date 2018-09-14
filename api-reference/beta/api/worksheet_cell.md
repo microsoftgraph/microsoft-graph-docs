@@ -15,14 +15,26 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
+GET /workbook/worksheets/{id|name}/Cell(row={row},column={column})
 
 ```
+
+## Function parameters
+In the request path, provide the following parameters.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|row|Int32|Row number of the cell to be retrieved. Zero-indexed.|
+|column|Int32|Column number of the cell to be retrieved. Zero-indexed.|
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+
+## Request body
+Do not supply a request body for this method.
 
 ## Response
 

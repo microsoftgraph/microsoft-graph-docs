@@ -23,16 +23,16 @@ GET /users/<id | userPrincipalName>/onenote/notebooks/getRecentNotebooks(include
 
 The `<id | userPrincipalName>` for the user must match the user encoded in the authorization token used to make the request.
 
-## Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {code}|
-
-## Parameters
+## Function parameters
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |includePersonalNotebooks|Boolean|Include notebooks owned by the user. Set to `true` to include notebooks owned by the user; otherwise, set to `false`. If you don't include the `includePersonalNotebooks` parameter, your request will return a `400` error response.|
+
+## Request headers
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer {code}|
 
 ## Request body
 Do not supply a request body for this method.

@@ -16,4 +16,3 @@ Indicates the publishing state of an app.
 
 
 
-

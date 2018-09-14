@@ -13,6 +13,7 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |[Create windowsAutopilotDeviceIdentity](../api/intune_enrollment_windowsautopilotdeviceidentity_create.md)|[windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md)|Create a new [windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md) object.|
 |[Delete windowsAutopilotDeviceIdentity](../api/intune_enrollment_windowsautopilotdeviceidentity_delete.md)|None|Deletes a [windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md).|
 |[Update windowsAutopilotDeviceIdentity](../api/intune_enrollment_windowsautopilotdeviceidentity_update.md)|[windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md)|Update the properties of a [windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md) object.|
+|[assignUserToDevice action](../api/intune_enrollment_windowsautopilotdeviceidentity_assignusertodevice.md)|None|Assigns user to Autopilot devices.|
 
 ## Properties
 |Property|Type|Description|
@@ -26,8 +27,10 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |productKey|String|Product Key of the Windows autopilot device.|
 |manufacturer|String|Oem manufacturer of the Windows autopilot device.|
 |model|String|Model name of the Windows autopilot device.|
-|enrollmentState|[enrollmentState](../resources/intune_shared_enrollmentstate.md)|Intune enrollment state of the Windows autopilot device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
+|enrollmentState|[enrollmentState](../resources/intune_enrollment_enrollmentstate.md)|Intune enrollment state of the Windows autopilot device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows autopilot device.|
+|addressableUserName|String|Addressable user name.|
+|userPrincipalName|String|User Principal Name.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -55,10 +58,11 @@ Here is a JSON representation of the resource.
   "manufacturer": "String",
   "model": "String",
   "enrollmentState": "String",
-  "lastContactedDateTime": "String (timestamp)"
+  "lastContactedDateTime": "String (timestamp)",
+  "addressableUserName": "String",
+  "userPrincipalName": "String"
 }
 ```
-
 
 
 

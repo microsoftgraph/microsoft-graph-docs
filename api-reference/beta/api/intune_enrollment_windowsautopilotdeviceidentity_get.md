@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 659
+Content-Length: 773
 
 {
   "value": {
@@ -65,11 +65,12 @@ Content-Length: 659
     "manufacturer": "Manufacturer value",
     "model": "Model value",
     "enrollmentState": "enrolled",
-    "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00"
+    "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
+    "addressableUserName": "Addressable User Name value",
+    "userPrincipalName": "User Principal Name value"
   }
 }
 ```
-
 
 
 

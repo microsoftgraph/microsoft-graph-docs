@@ -38,10 +38,9 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
 All other syntax that allows you to identify these resource instances supports deleting open extensions from them in a similar way.
 
-## Parameters
+## Path parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
-|_URL parameters_|
 |id|string|A unique identifier for an instance in the corresponding collection. Required.|
 |extensionId|string|This can be an extension name which is a unique text identifier for the extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
 

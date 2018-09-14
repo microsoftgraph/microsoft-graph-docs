@@ -46,10 +46,9 @@ All other syntax that allows you to identify these resource instances supports u
 
 See the [Request body](#request-body) section about including in the request body any custom data to change or add to that extension.
 
-## Parameters
+## Path parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
-|_URL parameters_|
 |id|string|A unique identifier for an instance of the corresponding collection. Required.|
 |extensionId|string|This can be an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
 

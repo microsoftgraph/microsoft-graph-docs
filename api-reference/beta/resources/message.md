@@ -84,7 +84,7 @@ Here is a JSON representation of the resource
 |conversationIndex|Binary|The Index of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
 |flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
-|from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
+|from|[recipient](recipient.md)|The mailbox owner and sender of the message. The value must correspond to the actual mailbox used.|
 |hasAttachments|Boolean|Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the **body** property to look for a `src` attribute, such as `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`. |
 |id|String|Unique identifier for the message (note that this value may change if a message is moved or altered)|
 |importance|String| The importance of the message: `Low`, `Normal`, `High`.|
@@ -100,7 +100,7 @@ Here is a JSON representation of the resource
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
-|sender|[recipient](recipient.md)|The account that is actually used to generate the message.|
+|sender|[recipient](recipient.md)|The account that is actually used to generate the message. In most cases, this value is the same as the **from** property. You can set this property to a different value when sending a message from a [shared mailbox](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes), or sending a message as a [delegate](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). In any case, the value must correspond to the actual mailbox used. |
 |sentDateTime|DateTimeOffset|The date and time the message was sent.|
 |subject|String|The subject of the message.|
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|

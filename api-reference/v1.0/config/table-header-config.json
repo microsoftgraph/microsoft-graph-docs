@@ -24,17 +24,17 @@
       },
       {
         "type": "PathParameters",
-        "titles": [ "Path Parameters", "Parameters", "Function Parameters" ],
+        "titles": [ "Path Parameters", "Function Parameters" ],
         "parseAs": "ParameterDefinition"
       },
       {
         "type": "QueryStringParameters",
-        "titles": [ "Query String Parameters", "Query parameters", "Optional query parameters" ],
+        "titles": [ "Query parameters", "Optional query parameters" ],
         "parseAs": "ParameterDefinition"
       },
       {
         "type": "RequestObjectProperties",
-        "titles": [ "Request Body", "Request body parameters" ],
+        "titles": [ "Request Body" ],
         "parseAs": "ParameterDefinition"
       },
       {

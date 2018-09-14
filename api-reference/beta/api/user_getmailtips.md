@@ -67,7 +67,8 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mailTips"
+  "@odata.type": "microsoft.graph.mailTips",
+  isCollection: true
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -86,6 +87,14 @@ Content-type: application/json
                 "messageLanguage":{
                     "locale":"en-US",
                     "displayName":"English (United States)"
+                },
+                "scheduledStartTime": {
+                    "dateTime": "2018-08-07T02:00:00.0000000",
+                    "timeZone": "UTC"
+                },
+                "scheduledEndTime": {
+                    "dateTime": "2018-08-09T02:00:00.0000000",
+                    "timeZone": "UTC"
                 }
             },
             "mailboxFull":false

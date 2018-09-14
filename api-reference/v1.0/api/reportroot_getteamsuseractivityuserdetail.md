@@ -21,7 +21,7 @@ GET /reports/getTeamsUserActivityUserDetail(period='{period_value}')
 GET /reports/getTeamsUserActivityUserDetail(date={date_value})
 ```
 
-## Request parameters
+## Function parameters
 
 In the request URL, provide one of the following parameters with a valid value.
 

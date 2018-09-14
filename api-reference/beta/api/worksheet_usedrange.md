@@ -30,6 +30,9 @@ In the request URL, provide an optional query parameter.
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
+## Request body
+Do not supply a request body for this method.
+
 ## Response
 
 If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.

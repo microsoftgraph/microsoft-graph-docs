@@ -95,10 +95,9 @@ in order to get an extension from it. All other syntax that allows you to identi
 instances or collections supports getting open extensions from them in a similar way.
 
 
-## Parameters
+## Path parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
-|_URL parameters_|
 |Id|string|Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension**.|
 |extensionId|string|Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.|
 

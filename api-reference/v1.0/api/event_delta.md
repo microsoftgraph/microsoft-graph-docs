@@ -28,7 +28,7 @@ GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 
 ```
 
-### Query parameters
+## Query parameters
 
 Tracking changes in events incurs a round of one or more **delta** function calls. If you use any query parameter 
 (other than `$deltatoken` and `$skiptoken`), you must specify 

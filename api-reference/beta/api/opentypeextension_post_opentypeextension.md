@@ -62,11 +62,10 @@ extension in it. All other syntaxes that allows you to identify these resource i
 
 See the [Request body](#request-body) section about including _the extension_ in the request body.
 
-## Parameters
+## Path parameters
 
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
-|_URL parameters_|
 |id|string|A unique identifier for an object in the corresponding collection. Required.|
 
 ## Request headers

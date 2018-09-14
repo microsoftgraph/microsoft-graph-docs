@@ -31,7 +31,6 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 In the request body, supply the parameters that are applicable to your rule. The following are body parameters that are typically used 
 when creating rules. You can specify any other writable **messageRule** properties as appropriate in the request body.
 
-### Request parameters
 | Name       | Type|Description|
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|Actions to be taken on a message when the corresponding conditions, if any, are fulfilled. Required.|
