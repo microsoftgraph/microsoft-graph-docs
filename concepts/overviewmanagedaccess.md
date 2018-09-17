@@ -1,0 +1,17 @@
+# Overview of Managed Access to Microsoft Graph
+Microsoft Graph contains the richest data in the world about workers and their workplace. It contains information on how people work, how they communicate, collaborate and manage their time. Managed Access to Microsoft Graph brings this data to Azure; meaning developers have many of the world's best development and hosting tools to work with this data. This enables customers to gain innovative or industry-specific applications that enhance their productivity while keeping full control over their Microsoft Graph data. Microsoft is bringing along the secured control that customers expect and solving the liability of developers holding on to the data.
+
+## Why use Managed Access?
+While the possible value of these applications is immense, Office 365 administrators must carefully consider the challenges inherent to moving and managing significant amounts of their organizational data. Managed Access is designed to give administrators new controls over the data they provide to application developers who forge insights with that data. There are three primary dimensions to the service:
+
+### Provide Granular Consent
+Unlike legacy consent models, where an administrator can only grant or deny an application access to specific data types, Managed Access raises the bar. Applications can specify exactly what types of data and/or filter content that an application can access. On the other side of this equation, administrators must give explicit approval to access Microsoft Graph data before access is granted. The request must specify the level of access requested, describe data policy enforcement, the reason for the request and the exact schema of the data requested. As a result, applications may use only the data essential to their function, while unrelated content is not provided. For example, an app may consume email headers, while body content and attachments are excluded. 
+
+### Value Data Governance
+Microsoft is facilitating rich, connected communication between Microsoft Graph and Azure with respect to the status of customers’ data. Developers creating applications that leverage Managed Access can specify a set of detailed policies with which they intend to comply.  Office 365 administrators may then review and consent to these policies. This practice minimizes compliance management overhead. Once consent is given, Microsoft monitors an application’s adherence to policy. In instances where an application violates (or attempts to violate) a policy established by the organization, Microsoft stops the flow of data to that application. 
+
+### Get Scalable Data Access
+Rich applications require access to large amounts of data, often from many users in your organization at once, joined together. Historically, application developers have needed to build complex infrastructure and make thousands upon thousands of API calls to orchestrate this data delivery. But Managed Access leverages the power of Azure Data Factory to deliver Office data from the entirety of your organization to your application, on a repeatable schedule, with just a few simple steps.
+
+## Next Steps
+To get started with Managed Access, visit our (getting started topic) (link to come in separate PR)
