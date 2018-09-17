@@ -13,5 +13,5 @@ Microsoft is facilitating rich, connected communication between Microsoft Graph 
 ### Get access to data at scale
 Rich applications require access to large amounts of data, often from many users in your organization at once. With the traditional transactional data model, you need to build a complex infrastructure and make thousands of API calls to orchestrate this data delivery. Managed Access uses the power of Azure Data Factory to deliver Office 365 data from your organization to your application, on a repeatable schedule, with just a few simple steps.
 
-## Next Steps
+## Next steps
 To get started with Managed Access, see (getting started topic) (link to come in separate PR).
