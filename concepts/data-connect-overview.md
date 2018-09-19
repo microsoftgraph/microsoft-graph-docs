@@ -1,4 +1,4 @@
-# Overview of Managed Access to Microsoft Graph
+# Overview of Microsoft Graph Data Connect
 Microsoft Graph contains rich data about workers and their workplace, including information about how people work and how they communicate, collaborate, and manage their time. Managed Access to Microsoft Graph brings this data to Microsoft Azure, which gives you access to many of the world's best development and hosting tools to work with this data. This enables customers to benefit from innovative or industry-specific applications that enhance their productivity while they keep full control over their Microsoft Graph data. Microsoft is bringing along the more secured control that customers expect and removing the need for developers to hold on to the data.
 
 ## Why use Managed Access?
