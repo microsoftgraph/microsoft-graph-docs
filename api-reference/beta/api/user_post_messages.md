@@ -116,6 +116,7 @@ Content-type: application/json
 
     ],
     "unsubscribeEnabled":false,
+    "mentionsPreview":null,
     "body":{
         "contentType":"html",
         "content":"<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nThey were <b>awesome</b>!\r\n</body>\r\n</html>\r\n"
@@ -137,7 +138,6 @@ Content-type: application/json
     "replyTo":[
 
     ],
-    "mentionsPreview":null,
     "flag":{
         "flagStatus":"notFlagged"
     }
@@ -236,6 +236,111 @@ Content-type: application/json
   ]
 }
 
+```
+
+##### Request 3
+The next example adds a couple of customer Internet message headers when creating the message draft.
+<!-- {
+  "blockType": "request",
+  "name": "create_message_with_headers_from_user"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/messages
+Content-type: application/json
+
+{
+    "subject":"9/8/2018: concert",
+    "body":{
+        "contentType":"HTML",
+        "content":"The group represents Washington."
+    },
+    "toRecipients":[
+        {
+            "emailAddress":{
+                "address":"AlexW@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "internetMessageHeaders":[
+        {
+            "name":"x-custom-header-group-name",
+            "value":"Washington"
+        },
+        {
+            "name":"x-custom-header-group-id",
+            "value":"WA001"
+        }
+    ]
+}
+```
+In the request body, supply a JSON representation of [message](../resources/message.md) object.
+##### Response 3
+Here is an example of the response. Note: Internet message headers are not returned by default in a POST response. The response object shown here may also be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "name": "create_message_with_headers_from_user",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('7f180cbb-a5ae-457c-b7e8-6f5b42ba33e7')/messages/$entity",
+    "@odata.etag":"W/\"CQAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAnjjuE\"",
+    "id":"AAMkADhNmAAA=",
+    "createdDateTime":"2018-09-09T02:54:56Z",
+    "lastModifiedDateTime":"2018-09-09T02:54:56Z",
+    "changeKey":"CQAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAnjjuE",
+    "categories":[
+
+    ],
+    "receivedDateTime":"2018-09-09T02:54:56Z",
+    "sentDateTime":"2018-09-09T02:54:56Z",
+    "hasAttachments":false,
+    "internetMessageId":"<MWHPR220MB1120.namprd22.prod.outlook.com>",
+    "subject":"9/8/2018: concert",
+    "bodyPreview":"The group represents Washington.",
+    "importance":"normal",
+    "parentFolderId":"AAMkADhAAAAAAEPAAA=",
+    "conversationId":"AAQkADhNCuP8OKSm-0NE=",
+    "isDeliveryReceiptRequested":false,
+    "isReadReceiptRequested":false,
+    "isRead":true,
+    "isDraft":true,
+    "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADhNmAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification":"focused",
+    "unsubscribeData":[
+
+    ],
+    "unsubscribeEnabled":false,
+    "mentionsPreview":null,
+    "body":{
+        "contentType":"html",
+        "content":"<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nThe group represents Washington.\r\n</body>\r\n</html>\r\n"
+    },
+    "toRecipients":[
+        {
+            "emailAddress":{
+                "name":"Alex Wilber",
+                "address":"AlexW@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "ccRecipients":[
+
+    ],
+    "bccRecipients":[
+
+    ],
+    "replyTo":[
+
+    ],
+    "flag":{
+        "flagStatus":"notFlagged"
+    }
+}
 ```
 
 ## See also

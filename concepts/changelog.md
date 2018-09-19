@@ -17,15 +17,29 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition         |beta         |Added the resource type, [teamsCatalogApp](../api-reference/beta/resources/teamscatalogapp.md)
 |Addition         |beta         |Added the enum, [teamsCatalogAppDistributionMethod](../api-reference/beta/resources/teamscatalogappdistributionmethod.md)
 |Change           |beta         |Changed **apps** in [team](../api-reference/beta/resources/team.md) from resource type **teamsApp** to [teamsCatalogApp](../api-reference/beta/resources/teamscatalogapp.md)
+|Change           | beta        | Announced that the context property on [teamsApp](../api-reference/beta/resources/teamsapp.md) will be renamed.|
+|Deletion         |beta         | Removed isBlocks and installedState properties from [teamsApp](../api-reference/beta/resources/teamsapp.md).|
 |Deletion         |beta         |Removed the resource type, **teamsApp**
 |Deletion         |beta         |Removed the following enum types: **teamsAppInstalledState**, **teamsAppContext**
+
+### Outlook mail
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0 and beta | The **internetMessageHeaders** property of the [message](../api-reference/v1.0/resources/message.md) entity is now writeable on message creation. |
+
+### Project Rome notifications API
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition          | Beta        | Added the [notification](../api-reference/beta/resources/projectrome_notification.md) resource type. |
+| Addition          | Beta        | Added the [Create and publish notification] (../api-reference/beta/api/projectrome_notification_post.md) API.|
 
 ### Security APIs
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta       | Added the Secure Score APIs to the [security API](../api-reference/beta/resources/securescore-api-overview.md), including the following resources and operations:<br/>[secureScores](../api-reference/beta/resources/securescores.md) (and related entities)<br/>[List secureScores](../api-reference/beta/api/securescores_list.md)<br/>[secureScoreControlProfiles](../api-reference/beta//resources/securescorecontrolprofiles.md)<br/>[List secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_list.md)<br/>[Update secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_update.md)
-
+| Addition        | Beta       | Added the Secure Score APIs to the [security API](../api-reference/beta/resources/security-api-overview.md), including the following resources and operations:<br/>[secureScores](../api-reference/beta/resources/securescores.md) (and related entities)<br/>[List secureScores](../api-reference/beta/api/securescores_list.md)<br/>[secureScoreControlProfiles](../api-reference/beta//resources/securescorecontrolprofiles.md)<br/>[List secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_list.md)<br/>[Update secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_update.md)
 
 ## August 2018
 

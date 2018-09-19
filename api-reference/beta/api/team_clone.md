@@ -89,7 +89,7 @@ The following is an example of the response. Note: The response object shown her
 } -->
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams({id})/operations({opId})
+Location: /teams{id}/operations({opId})
 Content-Type: text/plain
 Content-Length: 0
 ```

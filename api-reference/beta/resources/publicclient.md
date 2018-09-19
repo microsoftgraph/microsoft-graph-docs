@@ -1,4 +1,4 @@
-# installedClient resource type
+# publicClient resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,7 +8,7 @@ Specifies settings for non Web App or Web Api. (e.g. Mobile or other public clie
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|redirectUrls|String collection| Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to. |
+|redirectUris|String collection| Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to. |
 
 ## JSON representation
 Here is a JSON representation of the resource.
@@ -23,7 +23,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "redirectUrls": ["String"]
+  "redirectUris": ["String"]
 }
 
 ```

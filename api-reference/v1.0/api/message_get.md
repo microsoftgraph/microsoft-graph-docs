@@ -73,16 +73,17 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.
 ## Example
-##### Request
+##### Request 1
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADhMGAAA="],
   "name": "get_message"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages/{id}
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 ```
-##### Response
+##### Response 1
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -92,20 +93,117 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
-  "hasAttachments": true,
-  "subject": "subject-value",
-  "body": {
-    "contentType": "html",
-    "content": "content-value"
-  },
-  "bodyPreview": "bodyPreview-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('7f180cbb-a5ae-457c-b7e8-6f5b42ba33e7')/messages/$entity",
+    "@odata.etag":"W/\"CQAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAnjjuZ\"",
+    "id":"AAMkADhMGAAA=",
+    "createdDateTime":"2018-09-09T03:15:05Z",
+    "lastModifiedDateTime":"2018-09-09T03:15:08Z",
+    "changeKey":"CQAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAnjjuZ",
+    "categories":[
+
+    ],
+    "receivedDateTime":"2018-09-09T03:15:08Z",
+    "sentDateTime":"2018-09-09T03:15:06Z",
+    "hasAttachments":false,
+    "internetMessageId":"<MWHPR6E1BE060@MWHPR1120.namprd22.prod.outlook.com>",
+    "subject":"9/9/2018: concert",
+    "bodyPreview":"The group represents Nevada.",
+    "importance":"normal",
+    "parentFolderId":"AAMkADcbAAAAAAEJAAA=",
+    "conversationId":"AAQkADOUpag6yWs=",
+    "isDeliveryReceiptRequested":false,
+    "isReadReceiptRequested":false,
+    "isRead":true,
+    "isDraft":false,
+    "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADMGAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification":"focused",
+    "body":{
+        "contentType":"html",
+        "content":"<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nThe group represents Nevada.\r\n</body>\r\n</html>\r\n"
+    },
+    "sender":{
+        "emailAddress":{
+            "name":"Adele Vance",
+            "address":"adelev@contoso.OnMicrosoft.com"
+        }
+    },
+    "from":{
+        "emailAddress":{
+            "name":"Adele Vance",
+            "address":"adelev@contoso.OnMicrosoft.com"
+        }
+    },
+    "toRecipients":[
+        {
+            "emailAddress":{
+                "name":"Alex Wilber",
+                "address":"AlexW@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "ccRecipients":[
+
+    ],
+    "bccRecipients":[
+
+    ],
+    "replyTo":[
+
+    ],
+    "flag":{
+        "flagStatus":"notFlagged"
+    }
 }
 ```
+
+##### Request 2
+The next example uses a `$select` query parameter to get the Internet message headers of a message. 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
+  "name": "get_message_headers"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
+```
+##### Response 2
+Here is an example of the response. Note: The set of message headers in the response object is truncated for brevity. All of the headers will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('7f180cbb-a5ae-457c-b7e8-6f5b42ba33e7')/messages(internetMessageHeaders)/$entity",
+    "@odata.etag":"W/\"FwAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAW/0tB\"",
+    "id":"AAMkADhAAAW-VPeAAA=",
+    "internetMessageHeaders":[
+        {
+            "name":"MIME-Version",
+            "value":"1.0"
+        },
+        {
+            "name":"Content-Type",
+            "value":"multipart/report"
+        },
+        {
+            "name":"x-custom-header-group-name",
+            "value":"Washington"
+        },
+        {
+            "name":"x-custom-header-group-id",
+            "value":"WA001"
+        }
+    ]
+}
+```
+
 
 ## See also
 

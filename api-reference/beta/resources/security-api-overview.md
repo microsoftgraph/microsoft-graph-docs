@@ -1,65 +1,70 @@
-# Use the security API to integrate with Microsoft Intelligent Security Graph
+# Use the Microsoft Graph Security API
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Microsoft Intelligent Security Graph is a unified platform for combatting cyberthreats. It powers real-time threat protection for Microsoft products and services and supports an ecosystem of integrated solutions.
+The Microsoft Graph Security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners. This empowers customers to streamline security operations and better defend against increasing cyber threats. The Microsoft Graph Security API can be used as a federated security aggregation service to submit queries to all onboarded security providers to get aggregated responses. Use Microsoft Graph Security API to build applications that:
 
-The security API in Microsoft Graph makes it easy to connect with and extend Intelligent Security Graph. Use Microsoft Graph to build security solutions that consolidate and correlate security alerts from multiple sources, unlock contextual data to inform investigations, and automate security operations for greater efficiency.
+- Consolidate and correlate security alerts from multiple sources
+- Unlock contextual data to inform investigations
+- Automate security operations for greater efficiency
+- Provide visibility into security data to enable proactive risk management
 
-## Why connect to the Intelligent Security Graph?
+The Microsoft Graph Security API includes the following key entities.
 
-The security API provides a unified gateway to connect to security solutions from Microsoft and partners. Queries are federated to all security providers in Microsoft Graph and responses are aggregated.
+## Alerts
 
-### Unify and standardize alert management
+Alerts are potential security issues within a customer's tenant that Microsoft or partner security solutions have identified and are flagged for action or notification. With the Microsoft Graph Security [alerts](alert.md) entity, you can unify and streamline security  issues across all integrated solutions. This also enables applications to correlate alerts and context to improve threat protection and response. These unlock security operational efficiencies by reducing investigation time and time to resolution for incidents. With the alert update capability, you can sync the status of specific alerts across different security products and services that are integrated with the Microsoft Graph Security API by updating your [alerts](alert.md) entity.
 
-Correlate alerts across security solutions more easily with a common alert schema. Write code once to integrate alerts from any Microsoft Graph integrated security solution, and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions such as Splunk and IBM QRadar via [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub).
+Microsoft Graph Security-integrated solutions will receive alerts from the following security providers:
 
-### Unlock security context to drive investigation
+- Azure Security Center
+- Azure Active Directory Identity Protection
+- Azure Information Protection
+- Microsoft Cloud Application Security
+- Windows Defender Advanced Threat Protection
+- Microsoft Intune (private preview)
+- Office 365 (coming soon)
+- Partner solutions, such as Palo Alto Networks App Framework
 
-Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure Active Directory, Microsoft Intune, Office 365) to bring business and security context together and improve threat response.
+> **Note:** New providers are continuously onboarding to the Microsoft Graph Security ecosystem.
 
-<!-- LG: Add this content when this functionality is available. 
-### Automate SecOps for greater efficiency (coming soon)
--->
-<!-- 
-Build and run investigation and remediation runbooks, automate security policy checks and rule enforcement, and orchestrate actions across security solutions.
--->
+## Secure Score (preview)
 
-## Resources
-
-* [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
-* [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
-* [Node.js (JavaScript) sample](https://github.com/microsoftgraph/nodejs-security-sample)
-
-Microsoft Graph security solutions will receive alerts from the following data providers:
-
-* Azure Security Center (ASC)
-* Azure Active Directory Identity Protection (AADIP)
-
-## Authorization
-
-The security API provides access to some of your organization’s most sensitive information. To better understand the types of authorization and how to manage them, we provide additional details in our Microsoft TechCommuity forums at the link below. 
-
-[Understanding authorization when calling the Microsoft Graph Security API](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376)
-
-For more information about permissions, including delegated and application permissions, see [Permissions](../../../concepts/permissions_reference.md).
+[Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) is a security analytics solution that gives you visibility into your security portfolio and how to improve it. With a single score, you can better understand what you have done to reduce your risk in Microsoft solutions. You can also compare your score with other organizations and see how your score has been trending over time. The Microsoft Graph Security [secureScore](securescores.md) and [secureScoreControlProfiles](securescorecontrolprofiles.md) entities help you balance your organization's security and productivity needs while enabling the appropriate mix of security features. You can also project what your score would be after you adopt security features.
 
 ## Common use cases
 
-The following are some of the most popular requests for working with the security API:
+The following are some of the most popular requests for working with the Microsoft Graph Security API.
 
 | **Use cases**   | **REST resources** | **Try it in Graph Explorer** |
 |:---------------|:--------|:----------|
-| Get alerts | [Get alerts](../api/alert_list.md) | [https://graph.microsoft.com/beta/security/alerts](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/alerts&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
-| Update alerts | [Update alert](../api/alert_update.md) | `https://graph.microsoft.com/beta/security/alerts/{alert-id}` |
+| List alerts | [List alerts](../api/alert_list.md) | [https://graph.microsoft.com/beta/security/alerts](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/alerts&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Update alerts | [Update alert](../api/alert_update.md) | [https://graph.microsoft.com/beta/security/alerts/{alert-id}](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) |
+|List secure scores|[List secureScores](../api/securescores_list.md) (preview)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|List secure score control profiles|[List secureScoreControlProfiles](../api/securescorecontrolprofiles_list.md) (preview)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Update secure score control profiles|[Update secureScoreControlProfiles](../api/securescorecontrolprofiles_update.md) (preview)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
 
-<!-- (| Get security profiles | [Security profiles](../resources/securityprofiles.md) | [https://graph.microsoft.com/beta/security/hostSecurityProfiles](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/hostSecurityProfiles&method=GET&version=testSecurity&GraphUrl=https://graph.microsoft.com) | ) -->
+You can use Microsoft Graph [webhooks](../../../concepts/webhooks.md) to subscribe to and receive notifications about updates to Microsoft Graph Security entities.
 
 ## Next steps
 
-The security API can open up new ways for you to engage with security solutions from Microsoft and partners. Follow these steps to get started:
+The Microsoft Graph Security API can open up new ways for you to engage with different security solutions from Microsoft and partners. Follow these steps to get started:
 
-* Drill down into [alerts](../resources/alert.md)<!-- and [security profiles](../resources/securityprofiles.md).-->
-* Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
+- Drill down into [alerts](alert.md), [secureScore](securescores.md) (Preview), and [secureScoreControlProfiles](securescorecontrolprofiles.md) (Preview).
+- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
+- Try [subscribing to and receiving notifications](../../../concepts/webhooks.md) on entity changes.
 
 Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+
+## See also
+
+Code and contribute to these Microsoft Graph Security API samples:
+
+- [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
+- [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
+- [Node.js (JavaScript) sample](https://github.com/microsoftgraph/nodejs-security-sample)
+
+Engage with the community:
+
+- [Join the tech community](https://aka.ms/graphsecuritycommunity)
+- [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
