@@ -1,4 +1,4 @@
-# Get started with Managed Access to Microsoft Graph
+# Get started with Microsoft Graph Data Connect
 
 Before you can use Managed Access to Microsoft Graph, an Office 365 administrator must take two actions, both of which enable the ability for the admin to control data movement through Privileged Access Management (PAM). 
 
