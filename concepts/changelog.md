@@ -10,17 +10,17 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**
 | :-------------- | :---------- | :---------------------------------------
-|Addition         |beta         |Added application permissions support to [GET /teams/{id}](../api-reference/beta/api/team_get.md)
-|Addition         |beta         |Added application permissions support to [GET /teams/{id}/channels](../api-reference/beta/api/group_list_channels.md)
-|Addition         |beta         |Added application permissions support to [GET /teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md)
-|Addition         |beta         |Added the resource type, [appCatalogs](../api-reference/beta/resources/appcatalogs.md), as a singleton
-|Addition         |beta         |Added the resource type, [teamsCatalogApp](../api-reference/beta/resources/teamscatalogapp.md)
-|Addition         |beta         |Added the enum, [teamsCatalogAppDistributionMethod](../api-reference/beta/resources/teamscatalogappdistributionmethod.md)
-|Change           |beta         |Changed **apps** in [team](../api-reference/beta/resources/team.md) from resource type **teamsApp** to [teamsCatalogApp](../api-reference/beta/resources/teamscatalogapp.md)
+|Addition         |beta         |Added application permissions support to [GET /teams/{id}](../api-reference/beta/api/team_get.md).
+|Addition         |beta         |Added application permissions support to [GET /teams/{id}/channels](../api-reference/beta/api/group_list_channels.md).
+|Addition         |beta         |Added application permissions support to [GET /teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md).
+|Addition         |beta         |Added the resource type [appCatalogs](../api-reference/beta/resources/appcatalogs.md), as a singleton.
+|Addition         |beta         |Added the resource type [teamsCatalogApp](../api-reference/beta/resources/teamscatalogapp.md).
+|Addition         |beta         |Added the enum [teamsCatalogAppDistributionMethod](../api-reference/beta/resources/teamscatalogappdistributionmethod.md).
+|Change           |beta         |Changed **apps** in [team](../api-reference/beta/resources/team.md) from resource type **teamsApp** to [teamsCatalogApp](../api-reference/beta/resources/teamscatalogapp.md).
 |Change           | beta        | Announced that the context property on [teamsApp](../api-reference/beta/resources/teamsapp.md) will be renamed.|
 |Deletion         |beta         | Removed isBlocks and installedState properties from [teamsApp](../api-reference/beta/resources/teamsapp.md).|
-|Deletion         |beta         |Removed the resource type, **teamsApp**
-|Deletion         |beta         |Removed the following enum types: **teamsAppInstalledState**, **teamsAppContext**
+|Deletion         |beta         |Removed the resource type **teamsApp**.
+|Deletion         |beta         |Removed the following enum types: **teamsAppInstalledState**, **teamsAppContext**.
 
 ### Outlook mail
 
