@@ -42,6 +42,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [user settings](../resources/user_settings.md) object in the response body.
 
+
 ## Example
 
 ##### Request
@@ -64,4 +65,5 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": false
 }
 ```
+
 
