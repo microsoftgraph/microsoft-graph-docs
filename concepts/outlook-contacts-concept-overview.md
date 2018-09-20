@@ -38,4 +38,5 @@ You can use the typical CRUD operations for an Outlook [contact](../api-referenc
 ## Next steps
 
 - Select and try contacts sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0). Choose **Show more samples** in the column on the left. Use the menu to turn on **Personal contacts**.
+- Learn about [getting shared contacts](outlook-get-shared-contacts-folders.md)
 - Take a look at the Outlook [contacts API](../api-reference/v1.0/resources/contact.md) reference.

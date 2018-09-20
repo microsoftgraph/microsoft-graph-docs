@@ -73,7 +73,9 @@ Save overhead in storing and managing app data in external data stores. With Mic
 - Select and try calendar sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0).
 - Learn about:
   - [Finding possible meeting times on the Outlook calendar](findmeetingtimes_example.md)
+  - [Getting the free/busy schedule for users and resources (preview)](outlook-get-free-busy-schedule.md)
   - [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)
+  - [Getting shared events](outlook-get-shared-events-calendars.md)
 - Take a look at the Outlook [calendar API](../api-reference/v1.0/resources/calendar.md) reference.
 
 <!-- Replace the last item with the calendar API overview when it's published.

@@ -4,41 +4,12 @@
 
 Get the properties and relationships of the specified [event](../resources/event.md) object.
 
+There are two scenarios where an app can get an event in another user's calendar:
+
+* If the app has application permissions, or,
+* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user. See [details and an example](../../../concepts/outlook-get-shared-events-calendars.md).
+
 Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
-
-### Get events in another user's calendar
-
-If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get events 
-from another user's calendar. This section focuses on scenarios that involve delegated permissions.
-
-For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a calendar with John. 
-You can get an event in that shared calendar by specifying Garth’s user ID (or user principal name) in the example query shown below.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/events/{id}
-```
-
-This capability applies to all the supported GET events operations for an individual user, as listed in the [HTTP request](#http-request) section below . 
-It also applies if Garth has delegated his entire mailbox to John.
-
-If Garth has not shared his calendar with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
-will return an error. In such cases, specifying a user ID or user principal name only works for getting an event in the signed-in user’s own calendars, 
-and the query is equivalent to using the /me shortcut:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/events/{id}
-```
-
-This capability is available in only GET operations of:
-
-- Shared contact folders, calendars, and message folders 
-- Contacts, events, and messages in shared folders
-- The above resources in delegated mailboxes
-
-This capability is not available in other operations for contacts, events, messages, and their folders.
-
 
 
 ### Support various time zones

@@ -24,7 +24,7 @@ Entity type containing properties of the tenant security score (daily snapshot d
 |	activeUserCount	|	Int32	|	Active user count of the given tenant.	|
 |	currentScore	|	Double	|	Tenant current attained score on specified date.	|
 |	maxScore |	Double	|	Tenant maximum possible score on specified date.	|
-|	enabledServices |	String collection	|	Microsoft-provided services for the tenant (for example, Excahnge online, Skype, Sharepoint).	|
+|	enabledServices |	String collection	|	Microsoft-provided services for the tenant (for example, Exchange online, Skype, Sharepoint).	|
 |	averageComparativeScores |	[averageComparativeScore](averagecomparativescore.md) collection	|Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.	|
 |	controlScores |	[controlScore](controlscore.md) collection	|	Contains tenant scores for a set of controls.	|
 
