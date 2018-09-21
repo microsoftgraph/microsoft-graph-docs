@@ -6276,6 +6276,10 @@
 		<Item text="List apps" url="/en-us/api-reference/beta/api/teams_apps_list" />
 		<Item text="Add app" url="/en-us/api-reference/beta/api/teams_apps_add" />
 		<Item text="Delete app" url="/en-us/api-reference/beta/api/teams_apps_delete" />
+		<Item text="Publish app" url="/en-us/api-reference/beta/api/teams_apps_publish" />
+		<Item text="List published apps" url="/en-us/api-reference/beta/api/teams_apps_list_published" />
+		<Item text="Update published app" url="/en-us/api-reference/beta/api/teams_apps_update_published" />
+		<Item text="Remove published app" url="/en-us/api-reference/beta/api/teams_apps_remove_published" />
 	  </Item>
 	  <Item text="Chat message" url="/en-us/api-reference/beta/resources/chatmessage" SEOKeyword="chat message API, Microsoft Graph API, chat message API" SEODescription="">
       </Item>
