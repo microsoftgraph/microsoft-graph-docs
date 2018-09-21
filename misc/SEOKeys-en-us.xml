@@ -9,7 +9,7 @@
 		<Item text="Terms of use" url="https://developer.microsoft.com/en-us/graph/terms-of-use" IsExternal="true" />
 	</Item>
   </Item>
-  <Item text="What is Microsoft Graph Data Connect (preview)?" url="/en-us/concepts/data-connect-overview" />
+  <Item text="Microsoft Graph Data Connect (preview)" url="/en-us/concepts/data-connect-overview" />
 
   <Item Label="LEARN" url="" />
   <Item text="Users" url="/en-us/concepts/azuread-users-concept-overview" />
@@ -37,7 +37,7 @@
 	  <Item text="Organize messages" url="/en-us/concepts/outlook-organize-messages" />
 	  <Item text="Get shared messages" url="/en-us/concepts/outlook-share-messages-folders" />
   </Item>
-  <Item text="Microsoft Graph Data Connect (preview)" url="/en-us/concepts/data-connect-concept-overview" >
+  <Item text="Data access (preview)" ProdTag="Microsoft Graph Data Connect" url="/en-us/concepts/data-connect-concept-overview" >
 	<Item text="Get started" url="/en-us/concepts/data-connect-get-started" />
   </Item>
   <Item text="Notes" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
@@ -5349,7 +5349,7 @@
         <Item text="Delete permission" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="Delete permission, Microsoft Graph API, permission API" SEODescription="Delete permission." />
       </Item>
     </Item>
-  	<Item text="Financials" ProdTag="Dynamics 365 Business Central" url="/en-us/api-reference/beta/resources/dynamics_account" >
+  	<Item text="Financials" ProdTag="Dynamics 365 Business Central" url="/en-us/api-reference/beta/resources/dynamics_graph_reference" >
 		<Item text="Account" url="/en-us/api-reference/beta/resources/dynamics_account">
 			<Item text="Get account" url="/en-us/api-reference/beta/api/dynamics_account_get"/>
 		  </Item>
