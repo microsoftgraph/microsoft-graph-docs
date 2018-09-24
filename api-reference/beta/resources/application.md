@@ -19,6 +19,7 @@ Represents an application. Any application that outsources authentication to Azu
 |[Create owner](../api/application_post_owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[List owners](../api/application_list_owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
 |[Create call](../api/application_post_calls.md)|[call](call.md)|Create a new call by posting to the calls collection.|
+|[Create onlineMeeting](../api/application_post_onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|Create a new onlineMeeting by posting to the onlineMeetings collection.|
 
 ## Properties
 

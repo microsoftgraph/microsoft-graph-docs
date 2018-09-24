@@ -38,6 +38,7 @@ Returns `202 Accepted` response code and a Location header with a uri to the [co
 
 ## Example
 The following example shows how to call this API.
+
 ##### Request
 Here is an example of the request.
 <!-- {
@@ -71,13 +72,14 @@ Content-Length: 464
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 ```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 ```
+<br/>
 
 ## Example Invite Participants in Existing P2P meeting
 
@@ -132,7 +134,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.notifications"
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ```json
 {
@@ -162,7 +164,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.notifications"
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ```json
 {
@@ -224,13 +226,14 @@ Content-Type: application/json
   ]
 }
 ```
+
 # Example Invite Participants in Existing P2P meeting
 
 This example shows a complete E2E flow for [Invite Participants](../api/participant_invite.md) in an existing P2P meeting.
 
 ## Answer Incoming VOIP call with service hosted media
 
-### Notification - Incoming
+##### Notification - Incoming
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -239,11 +242,10 @@ Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
-  "isCollection": true
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
-``` json
+```json
 {
   "value": [
     {
@@ -253,7 +255,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.call",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
-        "callState": "incoming",
+        "state": "incoming",
         "direction": "incoming",
         "source": {
           "@odata.type": "#microsoft.graph.participantInfo",
@@ -284,7 +286,7 @@ Content-Type: application/json
 }
 ```
 
-## Request
+##### Request
 
 ``` http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -310,7 +312,7 @@ Content-Type: application/json
 }
 ```
 
-## Response
+##### Response
 
 ``` http
 HTTP/1.1 200 OK
@@ -326,7 +328,7 @@ Content-Length: 306
 }
 ```
 
-### Notification - Establishing
+##### Notification - Establishing
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -335,9 +337,8 @@ Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
-  "isCollection": true
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ``` json
 {
@@ -349,14 +350,14 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.call",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
-        "callState": "establishing",
+        "state": "establishing",
       }
     }
   ]
 }
 ```
 
-### Notification - Established
+##### Notification - Established
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -365,9 +366,8 @@ Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
-  "isCollection": true
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ``` json
 {
@@ -379,7 +379,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.call",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
-        "callState": "established",
+        "state": "established",
         "activeModalities": [ "audio", "video" ],
         "requestedModalities": []
       }
@@ -388,11 +388,11 @@ Content-Type: application/json
 }
 ```
 
-## Join Channel Meeting without media
+## Join channel meeting without media
 
 > **IMPORTANT**: If the bot instance is joining only for the purpose of facilitating the transfer, it should avoid media negotiations.  Therefore, it is best to add it without any `requestedModalities` or `mediaConfig`.
 
-## Request
+##### Request
 
 ``` http
 POST /app/calls
@@ -428,14 +428,14 @@ Content-Type: application/json
 }
 ```
 
-## Response
+##### Response
 
 ``` http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/app/calls/90ED37DCD8E34E119DE330A955DDA06F
 ```
 
-### Notification - Establishing
+##### Notification - Establishing
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -444,9 +444,8 @@ Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
-  "isCollection": true
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ``` json
 {
@@ -458,7 +457,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.call",
         "@odata.id": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F",
         "@odata.etag": "W/\"5445\"",
-        "callState": "establishing",
+        "state": "establishing",
         "direction": "outgoing"
       }
     }
@@ -466,7 +465,7 @@ Content-Type: application/json
 }
 ```
 
-### Notification - Established
+##### Notification - Established
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -475,9 +474,8 @@ Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
-  "isCollection": true
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ``` json
 {
@@ -489,7 +487,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.call",
         "@odata.id": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F",
         "@odata.etag": "W/\"5445\"",
-        "callState": "established",
+        "state": "established",
         "activeModalities": []
       }
     }
@@ -497,7 +495,7 @@ Content-Type: application/json
 }
 ```
 
-## Invite Participant from Intial Incoming Call
+## Invite participant from initial incoming call
 
 ``` http
 POST /app/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
@@ -519,7 +517,7 @@ Content-Type: application/json
 }
 ```
 
-## Response
+##### Response
 
 ``` http
 HTTP/1.1 200 OK
@@ -536,7 +534,7 @@ Content-Length: 306
 }
 ```
 
-### Notification - Operation Completed
+##### Notification - Operation Completed
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -545,9 +543,8 @@ Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
-  "isCollection": true
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ``` json
 {
@@ -567,7 +564,7 @@ Content-Type: application/json
 }
 ```
 
-### Notification - Roster Updated With Participant Added
+##### Notification - Roster Updated With Participant Added
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -576,9 +573,8 @@ Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
-  "isCollection": true
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ``` json
 {
@@ -606,7 +602,7 @@ Content-Type: application/json
             {
               "mediaType": "audio",
               "label": "main-audio",
-              "sourceId": 1,
+              "sourceId": "1",
               "direction": "sendReceive",
             }
           ]
@@ -630,7 +626,7 @@ Content-Type: application/json
             {
               "mediaType": "audio",
               "label": "main-audio",
-              "sourceId": 2,
+              "sourceId": "2",
               "direction": "sendReceive",
             }
           ]
@@ -650,9 +646,8 @@ Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
-  "isCollection": true
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ``` json
 {
@@ -664,7 +659,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.call",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
-        "callState": "terminated",
+        "state": "terminated",
         "terminationReason": "AppInitiated"
       }
     }
@@ -672,7 +667,7 @@ Content-Type: application/json
 }
 ```
 
-### Notification - Deleted the original P2P call
+##### Notification - Deleted the original P2P call
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -682,8 +677,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.notification",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ``` json
 {
@@ -700,6 +694,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

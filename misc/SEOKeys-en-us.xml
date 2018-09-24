@@ -2528,8 +2528,9 @@
         </Item>
       </Item>
     </Item>
-  <Item text="Calls and and online meetings" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/calls-api-overview">
+  <Item text="Calls and online meetings" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/calls-api-overview">
       <Item text="Call" url="/en-us/api-reference/beta/resources/call">
+          <Item text="Registration" url="/en-us/concepts/register-calling-bot" />
           <Item text="Create" url="/en-us/api-reference/beta/api/application_post_calls" />
           <Item text="Get call" url="/en-us/api-reference/beta/api/call_get" />
           <Item text="Delete/hang up" url="/en-us/api-reference/beta/api/call_delete" />
@@ -2560,8 +2561,10 @@
               <Item text="Update audio routing group" url="/en-us/api-reference/beta/api/audioroutinggroup_update" />
               <Item text="Delete audio routing group" url="/en-us/api-reference/beta/api/audioroutinggroup_delete" />
           </Item>
+          <Item text="Calling Notifications" url="/en-us/concepts/calling-notifications" />
       </Item>
       <Item text="Online meeting" url="/en-us/api-reference/beta/resources/onlinemeeting">
+          <Item text="Create online meeting" url="/en-us/api-reference/beta/api/application_post_onlineMeetings" />
           <Item text="Get online meeting" url="/en-us/api-reference/beta/api/onlinemeeting_get" />
       </Item>
   </Item>

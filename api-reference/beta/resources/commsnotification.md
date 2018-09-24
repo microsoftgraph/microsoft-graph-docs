@@ -19,7 +19,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
     "resourceData"
   ],
-  "@odata.type": "microsoft.graph.notification",
+  "@odata.type": "microsoft.graph.commsNotification",
   "openType": true
 }-->
 ```json
@@ -31,7 +31,7 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.notifications",
+  "@odata.type": "microsoft.graph.commsNotifications",
   "truncated": true
 }-->
 ```json
@@ -52,7 +52,7 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.notifications",
+  "@odata.type": "microsoft.graph.commsNotifications",
   "truncated": true
 }-->
 ```json

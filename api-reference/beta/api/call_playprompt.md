@@ -71,7 +71,7 @@ Content-Length: 166
 
 ##### Response
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 ```http
 HTTP/1.1 202 Accepted
@@ -88,7 +88,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.notifications"
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ```json
 {

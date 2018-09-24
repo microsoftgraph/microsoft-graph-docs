@@ -4,9 +4,9 @@
 
 ## Properties
 
-| Property       | Type                                       | Description |
-|:---------------|:-------------------------------------------|:------------|
-| value          | [notification](notification.md) collection | The notification of a change in the resource. |
+| Property       | Type                                                 | Description                                   |
+|:---------------|:-----------------------------------------------------|:----------------------------------------------|
+| value          | [commsNotification](commsnotification.md) collection | The notification of a change in the resource. |
 
 ## JSON representation
 
@@ -17,11 +17,11 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.notifications"
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ```json
 {
-  "value": [ { "@odata.type": "#microsoft.graph.notification" } ]
+  "value": [ { "@odata.type": "#microsoft.graph.commsNotification" } ]
 }
 ```
 
