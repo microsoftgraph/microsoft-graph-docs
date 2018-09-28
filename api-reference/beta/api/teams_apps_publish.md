@@ -44,7 +44,7 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-For information about how to create a Microsoft Teams application zip file, see [Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
+For information about how to create a Microsoft Teams application zip file, see [Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package) 
 
 ### Response
 
