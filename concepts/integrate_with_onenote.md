@@ -64,6 +64,7 @@ Take an in-depth look at Microsoft Graph APIs to learn about the OneNote content
 * [Use OneNote API div tags to extract data from captures](onenote-extract-data.md)
 
 ## See also
+Find out about a few other OneNote features that are exposed only on the OneNote service-specific REST endpoint.
 
 - [OneNote development](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-landing)
 - [Work with class notebooks](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-classnotebook)

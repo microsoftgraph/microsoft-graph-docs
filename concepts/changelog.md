@@ -4,6 +4,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## October 2018
+
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta|Added application permissions support to [Create channel](../api-reference/beta/api/group_post_channels.md), [Update channel](../api-reference/beta/api/channel_patch.md), and [Delete channel](../api-reference/beta/api/channel_delete.md). |
+
 ## September 2018
 
 ### Calls and online meetings API

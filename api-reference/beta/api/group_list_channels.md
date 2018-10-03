@@ -2,7 +2,8 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the list of channels in this team.
+Retrieve the list of [channels](../resources/channel.md) in this team.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -13,8 +14,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Read.All, Group.ReadWrite.All    |
 
-> Currently, only [delegated permissions](../../../concepts/permissions_reference.md) are supported for this operation.  Future releases will support application permissions. 
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -22,6 +21,7 @@ GET /teams/{id}/channels
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -33,6 +33,7 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [Channel](../resources/channel.md) objects in the response body.
+
 ## Example
 ##### Request
 Here is an example of the request.
