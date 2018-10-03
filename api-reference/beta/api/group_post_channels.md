@@ -4,6 +4,8 @@
 
 Create a new [channel](../resources/channel.md) in a Microsoft Team, as specified in the request body.
 
+> Known issue when using Application permissions: the control message posted to the General channel will render a blank name instead of the application name – e.g. "has updated channel Foo" rather than "Contoso Coordinator has updated channel Foo". This will be addressed in a future update of Microsoft Teams, and will retroactively fix controls messages already posted.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
