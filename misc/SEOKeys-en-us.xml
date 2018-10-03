@@ -198,6 +198,10 @@
     <Item text="Planner tasks" url="/en-us/api-reference/v1.0/resources/plannertask" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
         <Item text="List tasks" url="/en-us/api-reference/v1.0/api/planneruser_list_tasks" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve a list of plan objects." />
     </Item>
+	<Item text="User settings" url="/en-us/api-reference/v1.0/resources/user_settings" >
+		<Item text="Get settings" url="/en-us/api-reference/v1.0/api/user_get_settings" />
+		<Item text="Update settings" url="/en-us/api-reference/v1.0/api/user_update_settings" />
+	</Item>
   </Item>
   <Item text="Groups" url="/en-us/api-reference/v1.0/resources/groups-overview" SEOKeyword="user groups, Microsoft Graph API, user API" SEODescription="Groups API">
     <Item text="Group" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="user groups, Microsoft Graph API, user API" SEODescription="Groups API">
@@ -2319,7 +2323,11 @@
         <Item text="List user's recent plans" url="/en-us/api-reference/beta/api/planneruser_list_recentplans" SEOKeyword="List recent plans, Microsoft Graph API, user API" SEODescription="Retrieve Planner plans recently viewed by the user." />
         <Item text="List user's assigned tasks" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve Planner tasks assigned to the user." />
       </Item>
-    </Item>
+	  <Item text="User settings" url="/en-us/api-reference/beta/resources/user_settings" >
+		<Item text="Get settings" url="/en-us/api-reference/beta/api/user_get_settings" />
+		<Item text="Update settings" url="/en-us/api-reference/beta/api/user_update_settings" />
+	  </Item>
+  </Item>
     <Item text="Groups" url="/en-us/api-reference/beta/resources/groups-overview" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
       <Item text="Group" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
         <Item text="Add favorite" url="/en-us/api-reference/beta/api/group_addfavorite" SEOKeyword="group: addFavorite, Microsoft Graph API, group API" SEODescription="" />
