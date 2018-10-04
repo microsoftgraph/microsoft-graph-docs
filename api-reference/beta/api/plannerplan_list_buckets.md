@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a list of **plannerbucket** objects contained by a [plannerPlan](../resources/plannerplan.md) object.
+Retrieve a list of **plannerBucket** objects contained by a [plannerPlan](../resources/plannerplan.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/plans/<id>/buckets
+GET /planner/plans/{plan-id}/buckets
 ```
 
 ## Request headers

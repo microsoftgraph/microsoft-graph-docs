@@ -10,7 +10,7 @@ Office 365 groups are the owners of the plans in the Planner API.
 To [get the plans owned by a group](../api/plannergroup_list_plans.md), make the following HTTP request.
 
 ``` http
-GET /groups/{id}/planner/plans
+GET /groups/{group-id}/planner/plans
 ```
 
 When [creating a new plan](../api/planner_post_plans.md), make a group its owner by setting the `owner` property on a plan object. Plans must be owned by groups.
@@ -25,7 +25,7 @@ Tasks currently cannot be created without plans.
 To [retrieve the tasks in a plan](../api/plannerplan_list_tasks.md), make the following HTTP request.
 
 ``` http
-GET /planner/plans/{id}/tasks
+GET /planner/plans/{plan-id}/tasks
 ```
 
 ## Tasks
