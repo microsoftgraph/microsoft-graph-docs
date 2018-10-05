@@ -4,6 +4,16 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## October 2018
+
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added **policyViolation** property to [chatmessage](../api-reference/beta/resources/chatmessage.md ).|
+| Addition | Beta | Added [chatMessagePolicyViolation](../api-reference/beta/resources/chatMessagePolicyViolation.md) resource type.|
+| Addition | Beta | Added [chatMessagePolicyViolationPolicyTip](../api-reference/beta/resources/chatMessagePolicyViolationPolicyTip.md) resource type.|
+
 ## August 2018
 
 ### Directory APIs
