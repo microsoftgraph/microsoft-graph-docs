@@ -40,6 +40,10 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Type of password that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Boolean|Whether or not to require a password.|
+|keychainBlockCloudSync|Boolean|Indicates whether or not iCloud keychain synchronization is blocked (macOS 10.12 and later).|
+|airPrintBlocked|Boolean|Indicates whether or not AirPrint is blocked (macOS 10.12 and later).|
+|airPrintForceTrustedTLS|Boolean|Indicates if trusted certificates are required for TLS printing communication (macOS 10.13 and later).|
+|airPrintBlockiBeaconDiscovery|Boolean|Indicates whether or not iBeacon discovery of AirPrint printers is blocked. This prevents spurious AirPrint Bluetooth beacons from phishing for network traffic (macOS 10.3 and later).|
 |safariBlockAutofill|Boolean|Indicates whether or not to block the user from using Auto fill in Safari.|
 |cameraBlocked|Boolean|Indicates whether or not to block the user from accessing the camera of the device.|
 |iTunesBlockMusicService|Boolean|Indicates whether or not to block Music service and revert Music app to classic mode.|
@@ -113,6 +117,10 @@ Here is a JSON representation of the resource.
   "passwordPreviousPasswordBlockCount": 1024,
   "passwordRequiredType": "String",
   "passwordRequired": true,
+  "keychainBlockCloudSync": true,
+  "airPrintBlocked": true,
+  "airPrintForceTrustedTLS": true,
+  "airPrintBlockiBeaconDiscovery": true,
   "safariBlockAutofill": true,
   "cameraBlocked": true,
   "iTunesBlockMusicService": true,
@@ -133,8 +141,6 @@ Here is a JSON representation of the resource.
   "passwordBlockFingerprintUnlock": true
 }
 ```
-
-
 
 
 

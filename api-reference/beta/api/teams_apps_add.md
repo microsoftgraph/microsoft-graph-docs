@@ -9,7 +9,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All    |
+|Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
@@ -31,7 +31,7 @@ This method supports the [OData Query Parameters](../../../concepts/query_parame
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String|The id of the app to add|
+|id|String|The id of the app to add.|
 
 
 ## Response
@@ -75,3 +75,6 @@ Content-length: 401
   "section": "documentation",
   "tocPath": ""
 }-->
+
+## See also
+

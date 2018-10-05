@@ -50,6 +50,12 @@ School Data Sync management APIs support end-to-end scenarios for managing sync;
 - [Create a synchronization profile that automatically starts a sync](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationsynchronizationprofile_post)
 - Manage sync lifecycle with [pause](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationsynchronizationprofile_pause), [resume](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationsynchronizationprofile_resume) and [reset](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationsynchronizationprofile_reset) operations
 
+## API reference
+Looking for the API reference for this service?
+
+- [Education API in Microsoft Graph v1.0](../api-reference/v1.0/resources/education-overview.md)
+- [Education API in Microsoft Graph beta](../api-reference/beta/resources/education-overview.md)
+
 
 ## Next Steps
 

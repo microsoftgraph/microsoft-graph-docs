@@ -15,5 +15,3 @@ Possible values for LocalSecurityOptionsInformationDisplayedOnLockScreen
 
 
 
-
-

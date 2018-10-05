@@ -9,7 +9,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 |Delegated (work or school account)| _varies by context_ |
-| &nbsp; &nbsp; Devices | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; Device management | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; On-boarding | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; Troubleshooting | DeviceManagementManagedDevices.ReadWrite.All |

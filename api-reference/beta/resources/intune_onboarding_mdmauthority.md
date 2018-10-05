@@ -15,5 +15,3 @@ Mobile device management authority.
 
 
 
-
-

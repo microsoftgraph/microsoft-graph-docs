@@ -44,8 +44,8 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune_devicec
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.appleDeviceFeaturesConfigurationBase",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosDeviceFeaturesConfiguration"
 }-->
 ``` json
@@ -84,7 +84,7 @@ Here is a JSON representation of the resource.
       "displayName": "String",
       "icons": [
         {
-          "@odata.type": "microsoft.graph.iosHomeScreenFolder",
+          "@odata.type": "microsoft.graph.iosHomeScreenItem",
           "displayName": "String",
           "pages": [
             {
@@ -119,6 +119,11 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
+
+
 
 
 

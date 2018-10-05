@@ -34,6 +34,11 @@ Automate Intune by using the Intune API to:
 - Audit and report compliance, usage, and access.
 - Manage [telecom expenses](../api-reference/v1.0/resources/intune_tem_conceptual.md).
 
+## API reference
+Looking for the API reference for this service?
+
+- [Intune API in Microsoft Graph v1.0](../api-reference/v1.0/resources/intune_graph_overview.md)
+- [Intune API in Microsoft Graph beta](../api-reference/beta/resources/intune_graph_overview.md)
 
 ## Next steps
 

@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2810
+Content-Length: 2924
 
 {
   "value": [
@@ -110,13 +110,13 @@ Content-Length: 2810
       "allowedIosDeviceModels": "Allowed Ios Device Models value",
       "appActionIfIosDeviceModelNotAllowed": "wipe",
       "thirdPartyKeyboardsBlocked": true,
-      "filterOpenInToOnlyManagedApps": true
+      "filterOpenInToOnlyManagedApps": true,
+      "disableProtectionOfManagedOutboundOpenInData": true,
+      "protectInboundDataFromUnknownSources": true
     }
   ]
 }
 ```
-
-
 
 
 

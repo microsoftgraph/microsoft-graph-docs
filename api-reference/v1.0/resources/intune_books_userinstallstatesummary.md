@@ -30,8 +30,8 @@ Contains properties for the installation state summary for a user.
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.userInstallStateSummary"
 }-->
 ``` json
@@ -44,6 +44,11 @@ Here is a JSON representation of the resource.
   "notInstalledDeviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

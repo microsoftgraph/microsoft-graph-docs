@@ -29,9 +29,8 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppPolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppConfiguration"
 }-->
 ``` json
@@ -52,6 +51,11 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
+
+
 
 
 

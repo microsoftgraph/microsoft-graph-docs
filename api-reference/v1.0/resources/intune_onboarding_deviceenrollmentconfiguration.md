@@ -31,9 +31,8 @@ Not yet documented
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceEnrollmentConfiguration"
 }-->
 ``` json
@@ -48,6 +47,11 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 

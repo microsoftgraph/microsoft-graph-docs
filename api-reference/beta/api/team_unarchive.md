@@ -48,7 +48,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 The following is an example of a response.
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams({id})/operations({opId})
+Location: /teams{id}/operations({opId})
 Content-Type: text/plain
 Content-Length: 0
 ```

@@ -44,6 +44,12 @@ Maximize relevance in your application by promoting recently used or trending do
 - Return documents and sites trending around a user's activity.
 - List documents shared with a user through email or OneDrive for Business.
 
+## API reference
+Looking for the API reference for this service?
+
+- [Users API in Microsoft Graph v1.0](../api-reference/v1.0/resources/users.md)
+- [Users API in Microsoft Graph beta](../api-reference/beta/resources/users.md)
+
 ## Next steps
 
 - Learn more about how to [work with users](../api-reference/v1.0/resources/users.md).

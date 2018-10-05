@@ -30,8 +30,8 @@ The Role Definition resource. The role definition is the foundation of role base
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleDefinition"
 }-->
 ``` json
@@ -59,6 +59,11 @@ Here is a JSON representation of the resource.
   "isBuiltIn": true
 }
 ```
+
+
+
+
+
 
 
 

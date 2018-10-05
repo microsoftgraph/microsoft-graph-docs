@@ -60,6 +60,7 @@ The following table shows the properties that are required when you create the i
 |requireSmime|Boolean|Indicates whether or not to use S/MIME certificate.|
 |smimeEnablePerMessageSwitch|Boolean|Indicates whether or not to allow unencrypted emails.|
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
+|useOAuth|Boolean|Specifies whether the connection should use OAuth for authentication.|
 
 
 
@@ -72,7 +73,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 953
+Content-length: 974
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -98,7 +99,8 @@ Content-length: 953
   "hostName": "Host Name value",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,
-  "requireSsl": true
+  "requireSsl": true,
+  "useOAuth": true
 }
 ```
 
@@ -107,7 +109,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1061
+Content-Length: 1082
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -135,11 +137,10 @@ Content-Length: 1061
   "hostName": "Host Name value",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,
-  "requireSsl": true
+  "requireSsl": true,
+  "useOAuth": true
 }
 ```
-
-
 
 
 

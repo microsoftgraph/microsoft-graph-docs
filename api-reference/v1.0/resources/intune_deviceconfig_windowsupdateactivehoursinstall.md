@@ -18,7 +18,6 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsUpdateInstallScheduleType",
   "@odata.type": "microsoft.graph.windowsUpdateActiveHoursInstall"
 }-->
 ``` json
@@ -28,6 +27,11 @@ Here is a JSON representation of the resource.
   "activeHoursEnd": "String (time of day)"
 }
 ```
+
+
+
+
+
 
 
 

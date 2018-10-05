@@ -33,8 +33,8 @@ Inherits from [roleAssignment](../resources/intune_rbac_roleassignment.md)
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.roleAssignment",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceAndAppManagementRoleAssignment"
 }-->
 ``` json
@@ -51,6 +51,11 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
+
+
 
 
 

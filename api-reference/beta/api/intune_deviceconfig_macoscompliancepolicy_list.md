@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1224
+Content-Length: 1276
 
 {
   "value": [
@@ -76,6 +76,7 @@ Content-Length: 1224
       "deviceThreatProtectionEnabled": true,
       "deviceThreatProtectionRequiredSecurityLevel": "secured",
       "storageRequireEncryption": true,
+      "gatekeeperAllowedAppSource": "macAppStore",
       "firewallEnabled": true,
       "firewallBlockAllIncoming": true,
       "firewallEnableStealthMode": true
@@ -83,8 +84,6 @@ Content-Length: 1224
   ]
 }
 ```
-
-
 
 
 

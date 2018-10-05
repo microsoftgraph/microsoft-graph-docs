@@ -17,5 +17,3 @@ Wi-Fi Security Types.
 
 
 
-
-

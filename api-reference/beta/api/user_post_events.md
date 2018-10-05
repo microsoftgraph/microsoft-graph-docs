@@ -2,19 +2,19 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create an [event](../resources/event.md) in the user's default calendar or specified calendar. 
+Create an [event](../resources/event.md) in the user's default calendar or specified calendar.
 
-You can specify the time zone for each of the start and end times of the event as part of these values, as the 
-**start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. 
+You can specify the time zone for each of the start and end times of the event as part of these values, as the
+**start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.
 
 When an event is sent, the server sends invitations to all the attendees.
 
 **Setting the location in an event**
 
-An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment 
-like a projector. Users can then invite the resource as an attendee to a meeting. On behalf of the resource, the server accepts or rejects 
-the meeting request based on the free/busy schedule of the resource. 
-If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar. If the meeting is rescheduled, 
+An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment
+like a projector. Users can then invite the resource as an attendee to a meeting. On behalf of the resource, the server accepts or rejects
+the meeting request based on the free/busy schedule of the resource.
+If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar. If the meeting is rescheduled,
 the server automatically updates the event in the resource's calendar.
 
 Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives
@@ -22,7 +22,7 @@ or their delegates can book a private meeting room.
 
 If you're organizing an event that involves a meeting location:
 
-1. Set the **location** property of the **event** accordingly. 
+1. Set the **location** property of the **event** accordingly.
 2. Set the optional **locationEmailAddress** property if the meeting location has an email address.
 
 Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
@@ -70,7 +70,7 @@ If successful, this method returns `201 Created` response code and [event](../re
 
 ## Example
 ##### Request 1
-Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end** 
+Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
 times in the response.
 <!-- {
   "blockType": "request",
@@ -112,7 +112,7 @@ Content-length: 600
 ```
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 ##### Response 1
-Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header. 
+Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -137,7 +137,7 @@ Content-length: 2197
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "iCalUId":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
+    "iCalUid":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
@@ -282,7 +282,7 @@ Content-length: 1390
 ```
 
 ##### Response 2
-The following example response shows the created event that specifies information for the 3 locations for the meeting. Because of the 
+The following example response shows the created event that specifies information for the 3 locations for the meeting. Because of the
 `Prefer: outlook.timezone="Pacific Standard Time"` request header, the **start** and **end** properties are expressed in PST.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -308,7 +308,7 @@ Content-length: 2985
   ],
   "originalStartTimeZone":"Pacific Standard Time",
   "originalEndTimeZone":"Pacific Standard Time",
-  "iCalUId":"04000000820089190544",
+  "iCalUid":"04000000820089190544",
   "reminderMinutesBeforeStart":15,
   "isReminderOn":true,
   "hasAttachments":false,
@@ -464,7 +464,7 @@ Content-type: application/json
 ```
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 ##### Response 3
-Here is an example of the response. 
+Here is an example of the response.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -488,7 +488,7 @@ Content-type: application/json
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "iCalUId":"040000008200E00074C5B7101A82E0080000000028CEBE04293FD3010000000000000000100000009F85AB8AF8ED4D4FAC777FA89954BDB7",
+    "iCalUid":"040000008200E00074C5B7101A82E0080000000028CEBE04293FD3010000000000000000100000009F85AB8AF8ED4D4FAC777FA89954BDB7",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,

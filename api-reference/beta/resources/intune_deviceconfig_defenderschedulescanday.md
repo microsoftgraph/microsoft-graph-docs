@@ -20,5 +20,3 @@ Possible values of DefenderScheduleScanDay
 
 
 
-
-

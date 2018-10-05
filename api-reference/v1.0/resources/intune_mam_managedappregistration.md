@@ -22,7 +22,7 @@ The ManagedAppRegistration resource represents the details of an app, with manag
 |deviceType|String|Host device type|
 |deviceTag|String|App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in all conditions.|
 |deviceName|String|Host device name|
-|flaggedReasons|[managedAppFlaggedReason enum](../resources/intune_mam_managedappflaggedreason.md) collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device|
+|flaggedReasons|[managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md) collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device|
 |userId|String|The user Id to who this app registration belongs.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|The app package Identifier|
 |id|String|Key of the entity.|
@@ -31,7 +31,7 @@ The ManagedAppRegistration resource represents the details of an app, with manag
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appliedPolicies|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Zero or more policies already applied on the registered app when it last synchronized with managment service.|
+|appliedPolicies|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Zero or more policys already applied on the registered app when it last synchronized with managment service.|
 |intendedPolicies|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Zero or more policies admin intended for the app as of now.|
 |operations|[managedAppOperation](../resources/intune_mam_managedappoperation.md) collection|Zero or more long running operations triggered on the app registration.|
 
@@ -39,9 +39,8 @@ The ManagedAppRegistration resource represents the details of an app, with manag
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppRegistration"
 }-->
 ``` json
@@ -66,3 +65,11 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
+
+
+
+
+
+
+
+

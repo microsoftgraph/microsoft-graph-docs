@@ -35,6 +35,12 @@ Are you working on repeated process or project type? You can use the Planner API
 |[Update a task](../api-reference/v1.0/api/plannertask_update.md)|PATCH [https://graph.microsoft.com/v1.0/planner/tasks/{task-id}](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
 |[Delete a task](../api-reference/v1.0/api/plannertask_delete.md)|DELETE [https://graph.microsoft.com/v1.0/planner/tasks/{id}](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
 
+## API reference
+Looking for the API reference for this service?
+
+- [Planner API in Microsoft Graph v1.0](../api-reference/v1.0/resources/planner_overview.md)
+- [Planner API in Microsoft Graph beta](../api-reference/beta/resources/planner_overview.md)
+
 
 ## Next steps
 

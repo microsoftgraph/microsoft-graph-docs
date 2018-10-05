@@ -26,7 +26,7 @@ An abstract class containing the base properties for Intune mobile apps.
 |owner|String|The owner of the app.|
 |developer|String|The developer of the app.|
 |notes|String|Notes for the app.|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. The possible values are: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Possible values are: `notPublished`, `processing`, `published`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -38,9 +38,8 @@ An abstract class containing the base properties for Intune mobile apps.
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileApp"
 }-->
 ``` json
@@ -66,6 +65,11 @@ Here is a JSON representation of the resource.
   "publishingState": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -79,12 +79,15 @@ Here is a JSON representation of the resource.
         "apps": [
           {
             "@odata.type": "microsoft.graph.windowsKioskUWPApp",
+            "startLayoutTileSize": "String",
+            "name": "String",
             "appUserModelId": "String",
             "appId": "String",
             "containedAppId": "String"
           }
         ],
         "showTaskBar": true,
+        "disallowDesktopApps": true,
         "startMenuLayoutXml": "binary"
       },
       "userAccountsConfiguration": [
@@ -107,8 +110,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

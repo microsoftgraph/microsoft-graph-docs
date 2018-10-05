@@ -17,5 +17,3 @@ Possible values for LanManagerAuthenticationLevel
 
 
 
-
-

@@ -26,8 +26,8 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.applePushNotificationCertificate"
 }-->
 ``` json
@@ -41,6 +41,11 @@ Here is a JSON representation of the resource.
   "certificate": "String"
 }
 ```
+
+
+
+
+
 
 
 

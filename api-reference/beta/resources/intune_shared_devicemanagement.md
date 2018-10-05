@@ -8,9 +8,12 @@ The deviceManagement resource represents a container whose contents vary accordi
 - Corporate terms and conditions 
 - Corporate enrollment profiles
 - Device configuration settings
+- Electronic SIM (ESIM)
 - Endpoint protection objects and relationships
+- Fencing
 - Notifications
 - On-boarding policies, settings, and details
+- Resource access
 - Remote access
 - Remote assistance partners
 - Role-based access control (RBAC) policies
@@ -76,6 +79,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) collection|The device compliance policies.|
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md)|The device compliance state summary for this account.|
 |deviceCompliancePolicySettingStateSummaries|[deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md) collection|The summary states of compliance policy settings for this account.|
+|deviceConfigurationConflictSummary|[deviceConfigurationConflictSummary](../resources/intune_deviceconfig_deviceconfigurationconflictsummary.md) collection|Summary of policies in conflict state for this account.|
 |deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|The device configuration device state summary for this account.|
 |deviceConfigurationRestrictedAppsViolations|[restrictedAppsViolation](../resources/intune_deviceconfig_restrictedappsviolation.md) collection|Restricted apps violations for this account.|
 |deviceConfigurations|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) collection|The device configurations.|

@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1132
+Content-Length: 1155
 
 {
   "value": {
@@ -80,12 +80,11 @@ Content-Length: 1132
     "hostName": "Host Name value",
     "requireSmime": true,
     "smimeEnablePerMessageSwitch": true,
-    "requireSsl": true
+    "requireSsl": true,
+    "useOAuth": true
   }
 }
 ```
-
-
 
 
 

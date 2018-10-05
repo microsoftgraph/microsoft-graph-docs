@@ -42,6 +42,7 @@ The following table shows the properties that are required when you create the d
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the device category. Read-only.|
+|**Ob-boarding**|
 |description|String|Optional description for the device category.|
 |displayName|String|Display name for the device category.|
 

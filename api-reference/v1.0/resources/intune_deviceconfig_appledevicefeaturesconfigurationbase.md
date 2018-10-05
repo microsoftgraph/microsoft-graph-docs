@@ -36,9 +36,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.appleDeviceFeaturesConfigurationBase"
 }-->
 ``` json
@@ -52,6 +51,11 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 

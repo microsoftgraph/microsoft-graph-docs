@@ -26,6 +26,7 @@ Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
 |createdDateTime|DateTimeOffset|Date time the enrollment profile was created.|
 |lastModifiedDateTime|DateTimeOffset|Date time the enrollment profile was last modified.|
 |tokenValue|String|Value of the most recently created token for this enrollment profile.|
+|tokenCreationDateTime|DateTimeOffset|Date time the most recently created token was created.|
 |tokenExpirationDateTime|DateTimeOffset|Date time the most recently created token will expire.|
 |enrolledDeviceCount|Int32|Total number of Android devices that have enrolled using this enrollment profile.|
 |qrCodeContent|String|String used to generate a QR code for the token.|
@@ -51,6 +52,7 @@ Here is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "tokenValue": "String",
+  "tokenCreationDateTime": "String (timestamp)",
   "tokenExpirationDateTime": "String (timestamp)",
   "enrolledDeviceCount": 1024,
   "qrCodeContent": "String",
@@ -61,8 +63,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
 
 
 

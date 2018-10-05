@@ -78,6 +78,8 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune_mam_managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device manufacturer is not allowed. (Android only). Possible values are: `block`, `wipe`.|
 |thirdPartyKeyboardsBlocked|Boolean|Defines if third party keyboards are allowed while accessing a managed app. (iOS Only)|
 |filterOpenInToOnlyManagedApps|Boolean|Defines if open-in operation is supported from the managed app to the filesharing locations selected. (iOS Only)|
+|disableProtectionOfManagedOutboundOpenInData|Boolean|Disable protection of data transferred to other apps through IOS OpenIn option. (iOS Only)|
+|protectInboundDataFromUnknownSources|Boolean|Protect incoming data from unknown source. (iOS Only)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -173,11 +175,11 @@ Here is a JSON representation of the resource.
   "allowedAndroidDeviceManufacturers": "String",
   "appActionIfAndroidDeviceManufacturerNotAllowed": "String",
   "thirdPartyKeyboardsBlocked": true,
-  "filterOpenInToOnlyManagedApps": true
+  "filterOpenInToOnlyManagedApps": true,
+  "disableProtectionOfManagedOutboundOpenInData": true,
+  "protectInboundDataFromUnknownSources": true
 }
 ```
-
-
 
 
 

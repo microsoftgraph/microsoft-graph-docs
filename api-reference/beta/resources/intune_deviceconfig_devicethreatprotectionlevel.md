@@ -17,5 +17,3 @@ Device threat protection levels for the Device Threat Protection API.
 
 
 
-
-

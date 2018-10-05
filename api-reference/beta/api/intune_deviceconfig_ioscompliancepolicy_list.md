@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1397
+Content-Length: 1458
 
 {
   "value": [
@@ -66,6 +66,7 @@ Content-Length: 1397
       "passcodeExpirationDays": 6,
       "passcodeMinimumLength": 5,
       "passcodeMinutesOfInactivityBeforeLock": 5,
+      "passcodeMinutesOfInactivityBeforeScreenTimeout": 14,
       "passcodePreviousPasscodeBlockCount": 2,
       "passcodeMinimumCharacterSetCount": 0,
       "passcodeRequiredType": "alphanumeric",
@@ -89,8 +90,6 @@ Content-Length: 1397
   ]
 }
 ```
-
-
 
 
 

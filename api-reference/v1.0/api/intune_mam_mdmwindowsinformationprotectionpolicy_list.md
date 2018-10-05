@@ -50,7 +50,7 @@ Content-Length: 4607
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
+      "@odata.type": "#microsoft.intune_mam_graph.windowsInformationProtectionPolicy",
       "displayName": "Display Name value",
       "description": "Description value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
@@ -77,7 +77,7 @@ Content-Length: 4607
         "certificate": "Y2VydGlmaWNhdGU="
       },
       "revokeOnUnenrollDisabled": true,
-      "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+      "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
       "azureRightsManagementServicesAllowed": true,
       "iconsVisible": true,
       "protectedApps": [
@@ -179,6 +179,11 @@ Content-Length: 4607
   ]
 }
 ```
+
+
+
+
+
 
 
 

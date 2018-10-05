@@ -29,8 +29,8 @@ The Role Assignment resource. Role assignments tie together a role definition wi
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleAssignment"
 }-->
 ``` json
@@ -44,6 +44,11 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
+
+
 
 
 

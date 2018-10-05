@@ -17,7 +17,6 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
   "@odata.type": "microsoft.graph.groupAssignmentTarget"
 }-->
 ``` json
@@ -26,6 +25,11 @@ Here is a JSON representation of the resource.
   "groupId": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -14,5 +14,3 @@ Type of display modes for the start menu.
 
 
 
-
-

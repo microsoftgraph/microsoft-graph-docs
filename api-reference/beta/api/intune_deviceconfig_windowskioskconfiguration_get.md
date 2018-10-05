@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1765
+Content-Length: 1889
 
 {
   "value": {
@@ -76,12 +76,15 @@ Content-Length: 1765
           "apps": [
             {
               "@odata.type": "microsoft.graph.windowsKioskUWPApp",
+              "startLayoutTileSize": "small",
+              "name": "Name value",
               "appUserModelId": "App User Model Id value",
               "appId": "App Id value",
               "containedAppId": "Contained App Id value"
             }
           ],
           "showTaskBar": true,
+          "disallowDesktopApps": true,
           "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
         },
         "userAccountsConfiguration": [
@@ -105,8 +108,6 @@ Content-Length: 1765
   }
 }
 ```
-
-
 
 
 

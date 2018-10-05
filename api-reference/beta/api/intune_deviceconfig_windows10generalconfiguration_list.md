@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 13213
+Content-Length: 13491
 
 {
   "value": [
@@ -64,6 +64,12 @@ Content-Length: 13213
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "windows10AppsForceUpdateSchedule": {
+        "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
+        "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+        "recurrence": "daily",
+        "runImmediatelyIfAfterStartDateTime": true
+      },
       "enableAutomaticRedeployment": true,
       "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
       "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
@@ -338,8 +344,6 @@ Content-Length: 13213
   ]
 }
 ```
-
-
 
 
 

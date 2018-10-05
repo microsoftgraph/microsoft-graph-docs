@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object. Apply the `$expand` parameter on the **event** 
+Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object. Apply the `$expand` parameter on the **event**
 navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.
 
 ### Get the event message body in HTML or text format
@@ -168,8 +168,8 @@ Content-type: application/json
 
 
 ##### Request 2
-The second example shows how to get the event associated with an event message. It uses 
-the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, 
+The second example shows how to get the event associated with an event message. It uses
+the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property,
 and apply an $expand parameter to get the properties of the event.
 <!-- {
   "blockType": "request",
@@ -179,7 +179,7 @@ and apply an $expand parameter to get the properties of the event.
 GET https://graph.microsoft.com/beta/me/messages('AAMkADYAAAImV_jAAA=')?$expand=microsoft.graph.eventMessage/event
 ```
 ##### Response 2
-Here is an example of the response. The properties of the associated event are returned in the response. 
+Here is an example of the response. The properties of the associated event are returned in the response.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -294,7 +294,7 @@ Content-type: application/json
         ],
         "originalStartTimeZone":"Pacific Standard Time",
         "originalEndTimeZone":"Pacific Standard Time",
-        "iCalUId":"040000008200E00074C5B7101A82E00800000000A2A6F3535D7FD3010000000000000000100000003D770E2E8974F44B9471BDB348097FE3",
+        "iCalUid":"040000008200E00074C5B7101A82E00800000000A2A6F3535D7FD3010000000000000000100000003D770E2E8974F44B9471BDB348097FE3",
         "reminderMinutesBeforeStart":15,
         "isReminderOn":true,
         "hasAttachments":false,

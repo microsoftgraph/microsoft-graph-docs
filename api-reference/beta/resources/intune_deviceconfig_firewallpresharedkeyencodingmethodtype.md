@@ -14,5 +14,3 @@ Possible values for firewallPreSharedKeyEncodingMethod
 
 
 
-
-

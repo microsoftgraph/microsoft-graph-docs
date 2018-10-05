@@ -21,7 +21,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.outOfBoxExperienceSettings"
 }
 -->
@@ -36,8 +35,6 @@ Here is a JSON representation of the resource.
   "hideEscapeLink": true
 }
 ```
-
-
 
 
 

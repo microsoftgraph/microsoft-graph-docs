@@ -7,11 +7,11 @@ Device categories provides a way to organize your devices. Using device categori
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List deviceCategories](../api/intune_shared_devicecategory_list.md) collection|List properties and relationships of the [deviceCategory](../resources/intune_shared_devicecategory.md) objects.|
-|[Get deviceCategory](../api/intune_shared_devicecategory_get.md)|Read properties and relationships of the [deviceCategory](../resources/intune_shared_devicecategory.md) object.|
-|[Create deviceCategory](../api/intune_shared_devicecategory_create.md)|Create a new [deviceCategory](../resources/intune_shared_devicecategory.md) object.|
+|[List deviceCategories](../api/intune_shared_devicecategory_list.md) objects.|
+|[Get deviceCategory](../api/intune_shared_devicecategory_get.md) object.|
+|[Create deviceCategory](../api/intune_shared_devicecategory_create.md) object.|
 |[Delete deviceCategory](../api/intune_shared_devicecategory_delete.md).|
-|[Update deviceCategory](../api/intune_shared_devicecategory_update.md)|Update the properties of a [deviceCategory](../resources/intune_shared_devicecategory.md) object.|
+|[Update deviceCategory](../api/intune_shared_devicecategory_update.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -65,6 +65,7 @@ The following table shows the properties that are required when you create the [
 |securityRequireUpToDateSecurityProviders|Boolean|Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Require the device to pass the Company Portal client app runtime integrity check.|
 |conditionStatementId|String|Condition statement id.|
+|restrictedApps|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|Require the device to not have the specified apps installed. This collection can contain a maximum of 10000 elements.|
 
 
 
@@ -77,7 +78,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1282
+Content-length: 1535
 
 {
   "roleScopeTagIds": [
@@ -108,7 +109,16 @@ Content-length: 1282
   "securityRequireGooglePlayServices": true,
   "securityRequireUpToDateSecurityProviders": true,
   "securityRequireCompanyPortalAppIntegrity": true,
-  "conditionStatementId": "Condition Statement Id value"
+  "conditionStatementId": "Condition Statement Id value",
+  "restrictedApps": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ]
 }
 ```
 
@@ -117,7 +127,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1452
+Content-Length: 1705
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -151,11 +161,18 @@ Content-Length: 1452
   "securityRequireGooglePlayServices": true,
   "securityRequireUpToDateSecurityProviders": true,
   "securityRequireCompanyPortalAppIntegrity": true,
-  "conditionStatementId": "Condition Statement Id value"
+  "conditionStatementId": "Condition Statement Id value",
+  "restrictedApps": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ]
 }
 ```
-
-
 
 
 

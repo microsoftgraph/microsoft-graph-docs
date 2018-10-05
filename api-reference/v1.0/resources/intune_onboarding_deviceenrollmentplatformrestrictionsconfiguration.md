@@ -40,8 +40,8 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune_onboarding_dev
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceEnrollmentConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration"
 }-->
 ``` json
@@ -91,6 +91,11 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
+
+
+
+
 
 
 

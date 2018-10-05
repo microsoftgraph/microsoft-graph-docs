@@ -47,6 +47,7 @@ The following table shows the properties that are required when you create the [
 |passcodeExpirationDays|Int32|Number of days before the passcode expires. Valid values 1 to 65535|
 |passcodeMinimumLength|Int32|Minimum length of passcode. Valid values 4 to 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a passcode is required.|
+|passcodeMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |passcodePreviousPasscodeBlockCount|Int32|Number of previous passcodes to block. Valid values 1 to 24|
 |passcodeMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
 |passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|The required passcode type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
@@ -70,7 +71,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1066
+Content-length: 1123
 
 {
   "roleScopeTagIds": [
@@ -84,6 +85,7 @@ Content-length: 1066
   "passcodeExpirationDays": 6,
   "passcodeMinimumLength": 5,
   "passcodeMinutesOfInactivityBeforeLock": 5,
+  "passcodeMinutesOfInactivityBeforeScreenTimeout": 14,
   "passcodePreviousPasscodeBlockCount": 2,
   "passcodeMinimumCharacterSetCount": 0,
   "passcodeRequiredType": "alphanumeric",
@@ -111,7 +113,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1232
+Content-Length: 1289
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -128,6 +130,7 @@ Content-Length: 1232
   "passcodeExpirationDays": 6,
   "passcodeMinimumLength": 5,
   "passcodeMinutesOfInactivityBeforeLock": 5,
+  "passcodeMinutesOfInactivityBeforeScreenTimeout": 14,
   "passcodePreviousPasscodeBlockCount": 2,
   "passcodeMinimumCharacterSetCount": 0,
   "passcodeRequiredType": "alphanumeric",
@@ -149,8 +152,6 @@ Content-Length: 1232
   ]
 }
 ```
-
-
 
 
 

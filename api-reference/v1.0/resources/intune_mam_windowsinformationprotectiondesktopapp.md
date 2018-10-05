@@ -24,7 +24,6 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsInformationProtectionApp",
   "@odata.type": "microsoft.graph.windowsInformationProtectionDesktopApp"
 }-->
 ``` json
@@ -40,6 +39,11 @@ Here is a JSON representation of the resource.
   "binaryVersionHigh": "String"
 }
 ```
+
+
+
+
+
 
 
 

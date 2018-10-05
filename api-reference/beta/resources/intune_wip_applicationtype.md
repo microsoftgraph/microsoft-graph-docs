@@ -13,5 +13,3 @@ Possible types of Application
 
 
 
-
-

@@ -21,6 +21,3 @@ Possible ways of adding a mobile device to management.
 
 
 
-
-
-

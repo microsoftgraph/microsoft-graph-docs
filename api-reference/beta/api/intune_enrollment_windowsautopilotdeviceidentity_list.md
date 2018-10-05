@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 815
+Content-Length: 897
 
 {
   "value": [
@@ -56,6 +56,7 @@ Content-Length: 815
       "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
       "id": "fac6f0b1-f0b1-fac6-b1f0-c6fab1f0c6fa",
       "deploymentProfileAssignmentStatus": "assignedInSync",
+      "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
       "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
       "orderIdentifier": "Order Identifier value",
       "purchaseOrderIdentifier": "Purchase Order Identifier value",
@@ -71,8 +72,6 @@ Content-Length: 815
   ]
 }
 ```
-
-
 
 
 

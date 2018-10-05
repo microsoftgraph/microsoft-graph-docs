@@ -14,5 +14,3 @@ TV content rating labels in Japan
 
 
 
-
-

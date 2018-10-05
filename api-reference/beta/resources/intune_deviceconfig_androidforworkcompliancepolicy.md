@@ -48,7 +48,6 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |securityRequireGooglePlayServices|Boolean|Require Google Play Services to be installed and enabled on the device.|
 |securityRequireUpToDateSecurityProviders|Boolean|Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Require the device to pass the Company Portal client app runtime integrity check.|
-|restrictedApps|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|Require the device to not have the specified apps installed. This collection can contain a maximum of 10000 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -101,20 +100,9 @@ Here is a JSON representation of the resource.
   "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "securityRequireGooglePlayServices": true,
   "securityRequireUpToDateSecurityProviders": true,
-  "securityRequireCompanyPortalAppIntegrity": true,
-  "restrictedApps": [
-    {
-      "@odata.type": "microsoft.graph.appListItem",
-      "name": "String",
-      "publisher": "String",
-      "appStoreUrl": "String",
-      "appId": "String"
-    }
-  ]
+  "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
-
-
 
 
 

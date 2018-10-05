@@ -57,6 +57,7 @@ The following table shows the properties that are required when you create the [
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Require encryption on Mac OS devices.|
+|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune_deviceconfig_macosgatekeeperappsources.md)|System and Privacy setting that determines which download locations apps can be run from on a macOS device. Possible values are: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
 |firewallEnabled|Boolean|Whether the firewall should be enabled or not.|
 |firewallBlockAllIncoming|Boolean|Corresponds to the “Block all incoming connections” option.|
 |firewallEnableStealthMode|Boolean|Corresponds to “Enable stealth mode.”|
@@ -72,7 +73,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 915
+Content-length: 963
 
 {
   "roleScopeTagIds": [
@@ -96,6 +97,7 @@ Content-length: 915
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
   "storageRequireEncryption": true,
+  "gatekeeperAllowedAppSource": "macAppStore",
   "firewallEnabled": true,
   "firewallBlockAllIncoming": true,
   "firewallEnableStealthMode": true
@@ -107,7 +109,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1083
+Content-Length: 1131
 
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -134,13 +136,12 @@ Content-Length: 1083
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
   "storageRequireEncryption": true,
+  "gatekeeperAllowedAppSource": "macAppStore",
   "firewallEnabled": true,
   "firewallBlockAllIncoming": true,
   "firewallEnableStealthMode": true
 }
 ```
-
-
 
 
 

@@ -2,43 +2,14 @@
 
 Retrieve the properties and relationships of a [message](../resources/message.md) object.
 
-Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
-
 Currently, this operation returns message bodies in only HTML format.
 
+There are two scenarios where an app can get a message in another user's mail folder:
 
-### Get messages in another user's message folder
+* If the app has application permissions, or,
+* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. See [details and an example](../../../concepts/outlook-share-messages-folders.md).
 
-If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get messages 
-from another user's message folder. This section focuses on scenarios that involve delegated permissions.
-
-For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a message folder with John. 
-You can get a message in that shared folder by specifying Garth’s user ID (or user principal name) in the example query shown below.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/messages/{id}
-```
-
-This capability applies to all the supported GET messages operations for an individual user, as listed in the [HTTP request](#http-request) section below. 
-It also applies if Garth has delegated his entire mailbox to John.
-
-If Garth has not shared his message folder with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
-will return an error. In such cases, specifying a user ID or user principal name only works for getting a message in the signed-in user’s own message folders, 
-and the query is equivalent to using the /me shortcut:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/messages/{id}
-```
-
-This capability is available in only GET operations of:
-
-- Shared contact folders, calendars, and message folders 
-- Contacts, events, and messages in shared folders
-- The above resources in delegated mailboxes
-
-This capability is not available in other operations for contacts, events, messages, and their folders.
+Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
 
 
 ## Permissions
@@ -73,16 +44,17 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.
 ## Example
-##### Request
+##### Request 1
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADhMGAAA="],
   "name": "get_message"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages/{id}
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 ```
-##### Response
+##### Response 1
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -92,20 +64,117 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
-  "hasAttachments": true,
-  "subject": "subject-value",
-  "body": {
-    "contentType": "html",
-    "content": "content-value"
-  },
-  "bodyPreview": "bodyPreview-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('7f180cbb-a5ae-457c-b7e8-6f5b42ba33e7')/messages/$entity",
+    "@odata.etag":"W/\"CQAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAnjjuZ\"",
+    "id":"AAMkADhMGAAA=",
+    "createdDateTime":"2018-09-09T03:15:05Z",
+    "lastModifiedDateTime":"2018-09-09T03:15:08Z",
+    "changeKey":"CQAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAnjjuZ",
+    "categories":[
+
+    ],
+    "receivedDateTime":"2018-09-09T03:15:08Z",
+    "sentDateTime":"2018-09-09T03:15:06Z",
+    "hasAttachments":false,
+    "internetMessageId":"<MWHPR6E1BE060@MWHPR1120.namprd22.prod.outlook.com>",
+    "subject":"9/9/2018: concert",
+    "bodyPreview":"The group represents Nevada.",
+    "importance":"normal",
+    "parentFolderId":"AAMkADcbAAAAAAEJAAA=",
+    "conversationId":"AAQkADOUpag6yWs=",
+    "isDeliveryReceiptRequested":false,
+    "isReadReceiptRequested":false,
+    "isRead":true,
+    "isDraft":false,
+    "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADMGAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification":"focused",
+    "body":{
+        "contentType":"html",
+        "content":"<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nThe group represents Nevada.\r\n</body>\r\n</html>\r\n"
+    },
+    "sender":{
+        "emailAddress":{
+            "name":"Adele Vance",
+            "address":"adelev@contoso.OnMicrosoft.com"
+        }
+    },
+    "from":{
+        "emailAddress":{
+            "name":"Adele Vance",
+            "address":"adelev@contoso.OnMicrosoft.com"
+        }
+    },
+    "toRecipients":[
+        {
+            "emailAddress":{
+                "name":"Alex Wilber",
+                "address":"AlexW@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "ccRecipients":[
+
+    ],
+    "bccRecipients":[
+
+    ],
+    "replyTo":[
+
+    ],
+    "flag":{
+        "flagStatus":"notFlagged"
+    }
 }
 ```
+
+##### Request 2
+The next example uses a `$select` query parameter to get the Internet message headers of a message. 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
+  "name": "get_message_headers"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
+```
+##### Response 2
+Here is an example of the response. Note: The set of message headers in the response object is truncated for brevity. All of the headers will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('7f180cbb-a5ae-457c-b7e8-6f5b42ba33e7')/messages(internetMessageHeaders)/$entity",
+    "@odata.etag":"W/\"FwAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAW/0tB\"",
+    "id":"AAMkADhAAAW-VPeAAA=",
+    "internetMessageHeaders":[
+        {
+            "name":"MIME-Version",
+            "value":"1.0"
+        },
+        {
+            "name":"Content-Type",
+            "value":"multipart/report"
+        },
+        {
+            "name":"x-custom-header-group-name",
+            "value":"Washington"
+        },
+        {
+            "name":"x-custom-header-group-id",
+            "value":"WA001"
+        }
+    ]
+}
+```
+
 
 ## See also
 

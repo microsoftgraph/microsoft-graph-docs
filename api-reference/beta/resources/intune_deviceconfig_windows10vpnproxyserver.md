@@ -22,7 +22,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows10VpnProxyServer"
 }
 -->
@@ -35,8 +34,6 @@ Here is a JSON representation of the resource.
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
-
 
 
 

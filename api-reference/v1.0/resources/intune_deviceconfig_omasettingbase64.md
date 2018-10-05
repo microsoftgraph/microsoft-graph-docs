@@ -12,7 +12,7 @@ Inherits from [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 |displayName|String|Display Name. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |description|String|Description. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|String|OMA. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|fileName|String|File name associated with the Value property (*.cer | *.crt ).|
+|fileName|String|File name associated with the Value property (*.cer | *.crt | *.p7b | *.bin).|
 |value|String|Value. (Base64 encoded string)|
 
 ## Relationships
@@ -21,7 +21,6 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingBase64"
 }-->
 ``` json
@@ -34,6 +33,11 @@ Here is a JSON representation of the resource.
   "value": "String"
 }
 ```
+
+
+
+
+
 
 
 

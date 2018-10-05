@@ -24,21 +24,14 @@ GET /drive/items/{item-id}/content?format={format}
 GET /drive/root:/{path and filename}:/content?format={format}
 ```
 
-### Optional request headers
+## Query parameters
 
-| Name            | Value   | Description                                                                                                                                              |
-|:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | String  | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
-
-
-### Query string parameters
-
-| Name      | Value  | Description                                                    |
+| Parameter      | Type  | Description                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
 | _format_  | string | Specify the format the item's content should be downloaded as. |
 
 
-#### Format options
+### Format options
 
 The following values are valid for the **format** parameter:
 
@@ -46,7 +39,13 @@ The following values are valid for the **format** parameter:
 |:-------------|:-----------------------------------|----------------------------
 | pdf          | Converts the item into PDF format. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
 
-### Example
+## Optional request headers
+
+| Name            | Value   | Description                                                                                                                                              |
+|:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _if-none-match_ | String  | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
+
+## Example
 
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 

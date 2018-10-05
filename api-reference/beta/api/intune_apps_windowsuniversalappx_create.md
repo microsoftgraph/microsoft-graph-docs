@@ -74,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1275
+Content-length: 1367
 
 {
   "@odata.type": "#microsoft.graph.windowsUniversalAppX",
@@ -108,7 +108,11 @@ Content-length: 1275
     "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
     "v8_0": true,
     "v8_1": true,
-    "v10_0": true
+    "v10_0": true,
+    "v10_1607": true,
+    "v10_1703": true,
+    "v10_1709": true,
+    "v10_1803": true
   },
   "identityVersion": "Identity Version value"
 }
@@ -119,7 +123,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1383
+Content-Length: 1475
 
 {
   "@odata.type": "#microsoft.graph.windowsUniversalAppX",
@@ -155,13 +159,15 @@ Content-Length: 1383
     "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
     "v8_0": true,
     "v8_1": true,
-    "v10_0": true
+    "v10_0": true,
+    "v10_1607": true,
+    "v10_1703": true,
+    "v10_1709": true,
+    "v10_1803": true
   },
   "identityVersion": "Identity Version value"
 }
 ```
-
-
 
 
 

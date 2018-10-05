@@ -13,7 +13,6 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.ipRange"
 }-->
 ``` json
@@ -21,6 +20,11 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
+
+
+
+
+
 
 
 

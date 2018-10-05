@@ -41,6 +41,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Require encryption on Mac OS devices.|
+|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune_deviceconfig_macosgatekeeperappsources.md)|System and Privacy setting that determines which download locations apps can be run from on a macOS device. Possible values are: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
 |firewallEnabled|Boolean|Whether the firewall should be enabled or not.|
 |firewallBlockAllIncoming|Boolean|Corresponds to the “Block all incoming connections” option.|
 |firewallEnableStealthMode|Boolean|Corresponds to “Enable stealth mode.”|
@@ -90,13 +91,12 @@ Here is a JSON representation of the resource.
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
   "storageRequireEncryption": true,
+  "gatekeeperAllowedAppSource": "String",
   "firewallEnabled": true,
   "firewallBlockAllIncoming": true,
   "firewallEnableStealthMode": true
 }
 ```
-
-
 
 
 

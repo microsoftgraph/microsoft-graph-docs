@@ -19,7 +19,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsKioskSingleUWPApp"
 }
 -->
@@ -28,14 +27,14 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsKioskSingleUWPApp",
   "uwpApp": {
     "@odata.type": "microsoft.graph.windowsKioskUWPApp",
+    "startLayoutTileSize": "String",
+    "name": "String",
     "appUserModelId": "String",
     "appId": "String",
     "containedAppId": "String"
   }
 }
 ```
-
-
 
 
 

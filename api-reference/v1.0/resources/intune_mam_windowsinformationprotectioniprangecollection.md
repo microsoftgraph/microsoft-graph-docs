@@ -7,7 +7,7 @@ Windows Information Protection IP Range Collection
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name|
-|ranges|[ipRange](../resources/intune_mam_iprange.md) collection|Collection of ip ranges|
+|ranges|[ipRange](../resources/intune_mam_iprange.md) collection|Collection of IP ranges|
 
 ## Relationships
 None
@@ -30,6 +30,11 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
+
+
 
 
 

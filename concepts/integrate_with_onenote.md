@@ -63,17 +63,8 @@ Take an in-depth look at Microsoft Graph APIs to learn about the OneNote content
 * [Add images, videos, and files to OneNote pages](onenote_images_files.md)
 * [Use OneNote API div tags to extract data from captures](onenote-extract-data.md)
 
-
-
-## Explore the OneNote APIs
-
-Use the [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to try out the OneNote APIs with your own OneNote notebooks.
-
-To make OneNote API calls from the Graph Explorer, choose **Show more samples** in the column on the left. Use the menu to toggle OneNote **On**. You will also need to enable the appropriate permissions. Under your account name in the menu on the left, choose **modify permissions**. For more information about OneNote permissions, see [Notes permissions](permissions_reference.md#notes-permissions).
-
-To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference content](../api-reference/v1.0/resources/onenote-api-overview.md).
-
 ## See also
+Find out about a few other OneNote features that are exposed only on the OneNote service-specific REST endpoint.
 
 - [OneNote development](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-landing)
 - [Work with class notebooks](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
@@ -83,3 +74,18 @@ To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference 
 - [Manage permissions on OneNote entities](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
 - [Use the OneNote save dialog on your webpages](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
 - [Subscribe to webhooks](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-sync)
+
+## API reference
+Looking for the API reference for this service?
+
+- [OneNote API in Microsoft Graph v1.0](../api-reference/v1.0/resources/onenote-api-overview.md)
+- [OneNote API in Microsoft Graph beta](../api-reference/beta/resources/onenote-api-overview.md)
+
+## Next steps
+
+Use the [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to try out the OneNote APIs with your own OneNote notebooks.
+
+To make OneNote API calls from the Graph Explorer, choose **Show more samples** in the column on the left. Use the menu to toggle OneNote **On**. You will also need to enable the appropriate permissions. Under your account name in the menu on the left, choose **modify permissions**. For more information about OneNote permissions, see [Notes permissions](permissions_reference.md#notes-permissions).
+
+To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference content](../api-reference/v1.0/resources/onenote-api-overview.md).
+

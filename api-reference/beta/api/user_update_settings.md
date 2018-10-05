@@ -2,7 +2,9 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update the properties of the [settings](../resources/user_settings.md) object.
+Update the properties of the [settings](../resources/user_settings.md) object. 
+Users in the same organization can have different settings based on their preference or on the organization policies. 
+To get the user current settings, see [current user settings](user_get_settings.md). 
 
 ## Permissions
 
@@ -17,16 +19,14 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-PATCH /me/settings/
+PATCH https://graph.microsoft.com/beta/me/settings
 ```
 
-Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. See [Permissions](../../../concepts/permissions_reference.md). 
+Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](../../../concepts/permissions_reference.md). 
 
 ```http
-PATCH /users/{id | userPrincipalName}/settings/
+PATCH https://graph.microsoft.com/beta/users/{id | userPrincipalName}/settings/
 ```
-
-Only members of the [Organization Management](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) role group can update the 'contributionToContentDiscoveryDisabled' property of other users. 
 
 ## Request headers
 
@@ -41,16 +41,16 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolean|Set to true do disable delegate access to the [Trending](../resources/insights_trending.md) API. Set to true to disable access to documents in Office Delve for the user. Setting to true affects the relevance of the content displayed in Office 365, for example, Suggested sites in SharePoint Home and the Discover view in OneDrive for Business show less relevant results. Users can control this setting in [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Boolean|Set to true do disable delegate access to the [Trending](../resources/insights_trending.md) API and to disable access to documents in Office Delve for the user. Setting to true also affects the relevance of the content displayed in Office 365 - for example, Suggested sites in SharePoint Home and the Discover view in OneDrive for Business show less relevant results. This setting reflects the control state in [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
-## Example
+## Example 
 
 ##### Request
 
-Here is an example of the request.
+Here is an example request on how to opt-out a user from Delve and disable his contribution on content relevancy for the whole organization.
 
 ```http
-PATCH https://graph.microsoft.com/beta/me
+PATCH https://graph.microsoft.com/beta/me/settings
 Content-type: application/json
 Content-length: 37
 
@@ -73,3 +73,12 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": true
 }
 ```
+
+#### Batch request
+
+It's also possible to opt-out multiple users from Delve and disable their contribution on content relevancy for the whole organization through a batch request.
+To learn more, see [JSON batching](../../../concepts/json_batching.md).
+
+**Important**: Only members of the [Organization Management](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) role group can update multiple users. 
+
+

@@ -17,7 +17,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.unsupportedDeviceConfigurationDetail"
 }
 -->
@@ -28,8 +27,6 @@ Here is a JSON representation of the resource.
   "propertyName": "String"
 }
 ```
-
-
 
 
 

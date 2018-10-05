@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8404
+Content-Length: 8470
 
 {
   "value": {
@@ -160,6 +160,7 @@ Content-Length: 8404
     "kioskModeAllowVolumeButtons": true,
     "kioskModeAllowZoomSettings": true,
     "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+    "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
     "kioskModeRequireAssistiveTouch": true,
     "kioskModeRequireColorInversion": true,
     "kioskModeRequireMonoAudio": true,
@@ -272,6 +273,11 @@ Content-Length: 8404
   }
 }
 ```
+
+
+
+
+
 
 
 

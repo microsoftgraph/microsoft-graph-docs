@@ -18,5 +18,3 @@ TV content rating labels in Germany
 
 
 
-
-

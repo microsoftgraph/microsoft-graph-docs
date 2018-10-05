@@ -17,5 +17,3 @@ Configuration manager client state
 
 
 
-
-

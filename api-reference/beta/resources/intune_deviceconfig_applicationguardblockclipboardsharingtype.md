@@ -16,5 +16,3 @@ Possible values for applicationGuardBlockClipboardSharingType
 
 
 
-
-

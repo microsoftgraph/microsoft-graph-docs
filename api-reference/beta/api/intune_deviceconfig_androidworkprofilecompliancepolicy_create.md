@@ -64,7 +64,6 @@ The following table shows the properties that are required when you create the a
 |securityRequireGooglePlayServices|Boolean|Require Google Play Services to be installed and enabled on the device.|
 |securityRequireUpToDateSecurityProviders|Boolean|Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Require the device to pass the Company Portal client app runtime integrity check.|
-|restrictedApps|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|Require the device to not have the specified apps installed. This collection can contain a maximum of 10000 elements.|
 
 
 
@@ -77,7 +76,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1549
+Content-length: 1296
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileCompliancePolicy",
@@ -108,16 +107,7 @@ Content-length: 1549
   "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "securityRequireGooglePlayServices": true,
   "securityRequireUpToDateSecurityProviders": true,
-  "securityRequireCompanyPortalAppIntegrity": true,
-  "restrictedApps": [
-    {
-      "@odata.type": "microsoft.graph.appListItem",
-      "name": "Name value",
-      "publisher": "Publisher value",
-      "appStoreUrl": "https://example.com/appStoreUrl/",
-      "appId": "App Id value"
-    }
-  ]
+  "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
 
@@ -126,7 +116,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1657
+Content-Length: 1404
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileCompliancePolicy",
@@ -159,20 +149,9 @@ Content-Length: 1657
   "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "securityRequireGooglePlayServices": true,
   "securityRequireUpToDateSecurityProviders": true,
-  "securityRequireCompanyPortalAppIntegrity": true,
-  "restrictedApps": [
-    {
-      "@odata.type": "microsoft.graph.appListItem",
-      "name": "Name value",
-      "publisher": "Publisher value",
-      "appStoreUrl": "https://example.com/appStoreUrl/",
-      "appId": "App Id value"
-    }
-  ]
+  "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
-
-
 
 
 
