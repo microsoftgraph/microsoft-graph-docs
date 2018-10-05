@@ -24,7 +24,10 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ### Microsoft Teams APIs
 
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added application permissions support to [Create channel](../api-reference/beta/api/group_post_channels.md), [Update channel](../api-reference/beta/api/channel_patch.md), and [Delete channel](../api-reference/beta/api/channel_delete.md). |
+
 
 ### Calls and online meetings API
 
@@ -123,6 +126,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta       | Added the Secure Score APIs to the [security API](../api-reference/beta/resources/securescore-api-overview.md), including the following resources and operations:<br/>[secureScores](../api-reference/beta/resources/securescores.md) (and related entities)<br/>[List secureScores](../api-reference/beta/api/securescores_list.md)<br/>[secureScoreControlProfiles](../api-reference/beta//resources/securescorecontrolprofiles.md)<br/>[List secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_list.md)<br/>[Update secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_update.md)
+
 
 ## August 2018
 
