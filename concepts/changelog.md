@@ -10,9 +10,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta | Added **policyViolation** property to [chatmessage](../api-reference/beta/resources/chatmessage.md ).|
-| Addition | Beta | Added [chatMessagePolicyViolation](../api-reference/beta/resources/chatMessagePolicyViolation.md) resource type.|
-| Addition | Beta | Added [chatMessagePolicyViolationPolicyTip](../api-reference/beta/resources/chatMessagePolicyViolationPolicyTip.md) resource type.|
+| Addition | Beta | Added **policyViolation** property to [chatmessage](../api-reference/beta/resources/chatmessage.md ). Added [chatMessagePolicyViolation](../api-reference/beta/resources/chatMessagePolicyViolation.md) resource type. Added [chatMessagePolicyViolationPolicyTip](../api-reference/beta/resources/chatMessagePolicyViolationPolicyTip.md) resource type.|
 
 ### Delta query
 
