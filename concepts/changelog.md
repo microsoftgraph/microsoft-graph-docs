@@ -14,6 +14,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## September 2018
 
+### Privileged Identity Management APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Change | beta | Change the [privilegedapproval](../api-reference/beta/resources/privilegedapproval.md) entity.|
+| Addition | beta | Added the [privilegedroleassignmentrequest](../api-reference/beta/resources/privilegedroleassignmentrequest.md) entity, and following methods and actions:<br> [List](../api-reference/beta/api/privilegedroleassignmentrequest_list.md) <br> [Create](../api-reference/beta/api/privilegedroleassignmentrequest_post.md) <br> [Cancel](../api-reference/beta/api/privilegedroleassignmentrequest_cancel.md) <br> [My](../api-reference/beta/api/privilegedroleassignmentrequest_my.md) |
+
 ### Microsoft Teams APIs
 
 | **Change type** | **Version**   | **Description**                          |
