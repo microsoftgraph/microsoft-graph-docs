@@ -79,7 +79,7 @@ Here is a JSON representation of the resource
 |companyName|String|The name of the contact's company.|
 |createdDateTime|DateTimeOffset|The time the contact was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |department|String|The contact's department.|
-|displayName|String|The contact's display name.|
+|displayName|String|The contact's display name. You can specify the display name in a [create](../api/user_post_contacts.md) or [update](../api/contact_update.md) operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an [update](../api/contact_update.md) operation.|
 |emailAddresses|[typedEmailAddress](typedemailaddress.md) collection|The contact's email addresses.|
 |fileAs|String|The name the contact is filed under.|
 |flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the contact. |
