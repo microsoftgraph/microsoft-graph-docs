@@ -45,8 +45,11 @@ Content-type: application/json
 Content-length: 67
 
 {
-  "allowPublicClient": true,
-  "displayName": "Display name"
+  "displayName": "MyCoolApp",
+  "passwordCredentials": [{
+    "endDateTime": "2020-10-19T17:59:59.53Z",
+    "secretText": "should be 16-64 characters long"
+  }]
 }
 ```
 In the request body, supply a JSON representation of [application](../resources/application.md) object.
