@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/schools/<id>/users/{userId}/$ref
+DELETE /education/schools/{id}/users/{userId}/$ref
 ```
 ## Request headers
 | Header       | Value |
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/schools/10001/users/13006
+DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{user-id}
 ```
 
 ##### Response

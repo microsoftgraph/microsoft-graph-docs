@@ -29,6 +29,12 @@ You can use Microsoft Graph to allow web and mobile applications to read and mod
 
 You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform create, read, update, and delete (CRUD) operations on the workbook.
 
+## API reference
+Looking for the API reference for this service?
+
+- [Excel API in Microsoft Graph v1.0](../api-reference/v1.0/resources/excel.md)
+- [Excel API in Microsoft Graph beta](../api-reference/beta/resources/excel.md)
+
 ## Next steps
 
 * [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)

@@ -10,7 +10,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All |
+|Application | Group.Read.All, Directory.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

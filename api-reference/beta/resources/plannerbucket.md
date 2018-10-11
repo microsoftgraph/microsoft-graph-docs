@@ -19,7 +19,7 @@ The **plannerBucket** resource represents a bucket (or "custom column") for task
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. ID of the bucket. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service.|
+|id|String| Read-only. ID of the bucket. It is 28 characters long and case-sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service.|
 |name|String|Name of the bucket.|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner_order_hint_format.md).|
 |planId|String|Plan ID to which the bucket belongs.|

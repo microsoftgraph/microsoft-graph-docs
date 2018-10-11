@@ -44,7 +44,8 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|appointments|[bookingAppointment](bookingappointment.md) collection| All the appointments in this business. Read-only. Nullable.|
+|appointments|[bookingAppointment](bookingappointment.md) collection| All the appointments of this business. Read-only. Nullable.|
+|calendarView|[bookingAppointment](bookingappointment.md) collection| The set of appointments of this business in a specified date range. Read-only. Nullable.|
 |customers|[bookingCustomer](bookingcustomer.md) collection| All the customers of this business. Read-only. Nullable.|
 |services|[bookingService](bookingservice.md) collection| All the services offered by this business. Read-only. Nullable.|
 |staffMembers|[bookingStaffMember](bookingstaffmember.md) collection| All the staff members that provide services in this business. Read-only. Nullable.|

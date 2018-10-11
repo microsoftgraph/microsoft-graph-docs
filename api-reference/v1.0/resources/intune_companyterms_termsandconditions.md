@@ -1,4 +1,4 @@
-﻿# termsAndConditions resource type
+# termsAndConditions resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -33,12 +33,12 @@ A termsAndConditions entity represents the metadata and contents of a given Term
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.termsAndConditions"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.termsAndConditions",
@@ -53,6 +53,11 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 

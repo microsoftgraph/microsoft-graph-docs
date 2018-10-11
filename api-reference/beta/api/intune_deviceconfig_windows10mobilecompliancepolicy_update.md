@@ -36,6 +36,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |id|String|Key of the entity. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
@@ -59,7 +60,6 @@ The following table shows the properties that are required when you create the [
 |codeIntegrityEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation.|
 |storageRequireEncryption|Boolean|Require encryption on windows devices.|
 |activeFirewallRequired|Boolean|Require active firewall on Windows devices.|
-|uacRequired|Boolean|Require UAC on Windows devices.|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune_deviceconfig_operatingsystemversionrange.md) collection|The valid operating system build ranges on Windows devices. This collection can contain a maximum of 10000 elements.|
 
 
@@ -73,9 +73,12 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1114
+Content-length: 1152
 
 {
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
@@ -97,7 +100,6 @@ Content-length: 1114
   "codeIntegrityEnabled": true,
   "storageRequireEncryption": true,
   "activeFirewallRequired": true,
-  "uacRequired": true,
   "validOperatingSystemBuildRanges": [
     {
       "@odata.type": "microsoft.graph.operatingSystemVersionRange",
@@ -114,10 +116,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1292
+Content-Length: 1330
 
 {
   "@odata.type": "#microsoft.graph.windows10MobileCompliancePolicy",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "id": "3d4237b0-37b0-3d42-b037-423db037423d",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
@@ -141,7 +146,6 @@ Content-Length: 1292
   "codeIntegrityEnabled": true,
   "storageRequireEncryption": true,
   "activeFirewallRequired": true,
-  "uacRequired": true,
   "validOperatingSystemBuildRanges": [
     {
       "@odata.type": "microsoft.graph.operatingSystemVersionRange",

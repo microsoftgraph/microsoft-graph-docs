@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1114
+Content-Length: 1361
 
 {
   "value": [
@@ -56,13 +56,17 @@ Content-Length: 1114
       "id": "49fe234a-234a-49fe-4a23-fe494a23fe49",
       "displayName": "Display Name value",
       "description": "Description value",
+      "language": "Language value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "outOfBoxExperienceSettings": {
         "@odata.type": "microsoft.graph.outOfBoxExperienceSettings",
         "hidePrivacySettings": true,
         "hideEULA": true,
-        "userType": "standard"
+        "userType": "standard",
+        "deviceUsageType": "shared",
+        "skipKeyboardSelectionPage": true,
+        "hideEscapeLink": true
       },
       "enrollmentStatusScreenSettings": {
         "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
@@ -73,7 +77,9 @@ Content-Length: 1114
         "customErrorMessage": "Custom Error Message value",
         "installProgressTimeoutInMinutes": 15,
         "allowDeviceUseOnInstallFailure": true
-      }
+      },
+      "extractHardwareHash": true,
+      "deviceNameTemplate": "Device Name Template value"
     }
   ]
 }

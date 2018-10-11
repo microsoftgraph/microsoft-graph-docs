@@ -1,6 +1,6 @@
 # List signIns
 
-Retrieves the Azure AD user sign-ins for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
+Retrieves the Azure AD user sign-ins for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.  The most recent signIns are returned first.
 
 
 ## Permissions
@@ -12,6 +12,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported   |
 |Application | AuditLog.Read.All | 
 
+In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -22,9 +24,9 @@ This method supports the following OData Query Parameters to help customize the 
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#filter-parameter)|Filters results (rows). |/`auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
+|[$filter](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#filter-parameter)|Filters results (rows). |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
 |[$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top-parameter)|Sets the page size of results.|`/auditLogs/signIns?$top=1`|
-|[$skiptoken](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$skiptoken](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
 ### List of attributes supported by $filter parameter
 |Attribute Name |Supported operators|
@@ -83,12 +85,12 @@ Content-length: 264
 	"value": [{
 		"id": "id",
 		"createdDateTime": "2018-01-09T21:17:21.5077253Z",
-		"userDisplayName": "Bill G",
-		"userPrincipalName": "billg@microsoft.com",
+		"userDisplayName": "Jamie Doe",
+		"userPrincipalName": "jdoe@contoso.com",
 		"userId": "bbb3b4b5-e6e6-f7f5-f7f5-090805040302",
 		"appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
 		"appDisplayName": "Azure",
-		"ipAddress": "111.11.23.546",
+		"ipAddress": "127.0.0.0",
 		"status": {
 			"errorCode": 0,
 			"failureReason": null,
@@ -118,7 +120,7 @@ Content-length: 264
 			"mfaAuthMethod": "Phone Auth",
 			"mfaAuthDetail": null
 		},
-		"correlationId": "17444d3c-563d-4b08-ac20-815892b87e42",
+		"correlationId": "1B3944d3c-563d-4b08-ac20-815892b87e42",
 		"conditionalAccessApplied": true,
 		"conditionalAccessPolicies": [{
 			"id": "26490ed6-52b3-4102-aeff-aad2292abacf",

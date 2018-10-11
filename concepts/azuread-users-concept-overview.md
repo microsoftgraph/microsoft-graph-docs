@@ -44,6 +44,12 @@ Maximize relevance in your application by promoting recently used or trending do
 - Return documents and sites trending around a user's activity.
 - List documents shared with a user through email or OneDrive for Business.
 
+## API reference
+Looking for the API reference for this service?
+
+- [Users API in Microsoft Graph v1.0](../api-reference/v1.0/resources/users.md)
+- [Users API in Microsoft Graph beta](../api-reference/beta/resources/users.md)
+
 ## Next steps
 
 - Learn more about how to [work with users](../api-reference/v1.0/resources/users.md).
@@ -52,5 +58,5 @@ Maximize relevance in your application by promoting recently used or trending do
 - Set access control and policies for users with the [Azure AD API](../api-reference/v1.0/resources/azure_ad_overview.md).
 - Review the [permissions](permissions_reference.md) your app will need to access user data. 
 <!-- This isn't really a next step; let's remove to keep the list of links concise.>
-- Stay up to date with the Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
+- Stay up to date with Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
 -->

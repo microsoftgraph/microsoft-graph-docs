@@ -61,7 +61,7 @@ Here is a JSON representation of the resource.
 |deepLink | String | A deep web link to the context of the mention in the resource instance. Optional. Not used and defaulted as null for **message**. |
 |id | String| The unique identifier of a mention in a resource instance.|
 |mentioned | [emailAddress](../resources/emailAddress.md) | The email information of the mentioned person. Required. |
-|mentionText | String | Content for the mention. Optional. Not used and defaulted as null for **message**. |
+|mentionText | String | Optional. Not used and defaulted as null for **message**. To get the mentions in a message, see the **bodyPreview** property of the message instead. |
 |serverCreatedDateTime | DateTimeOffset | The date and time that the mention is created on the server. Optional. Not used and defaulted as null for **message**. |
 
 ## Relationships

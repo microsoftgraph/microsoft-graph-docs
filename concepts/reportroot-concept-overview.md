@@ -17,12 +17,18 @@ You can use the reports API to access the data sets listed in the following tabl
 |Office 365 app|Data set|
 |:--------|:--------|
 |Microsoft Teams|[Device usage](../api-reference/v1.0/resources/microsoft_teams_device_usage_reports.md)<br/>|[User activity](../api-reference/v1.0/resources/microsoft_teams_user_activity_reports.md)|
-|Office 365 (general) |[Activiations](../api-reference/v1.0/resources/office_365_activations_reports.md)<br/>[Active users](../api-reference/v1.0/resources/office_365_active_users_reports.md)<br/>[Groups activity](../api-reference/v1.0/resources/office_365_groups_activity_reports.md)|
+|Office 365 (general) |[Activations](../api-reference/v1.0/resources/office_365_activations_reports.md)<br/>[Active users](../api-reference/v1.0/resources/office_365_active_users_reports.md)<br/>[Groups activity](../api-reference/v1.0/resources/office_365_groups_activity_reports.md)|
 |OneDrive |[Activity](../api-reference/v1.0/resources/onedrive_activity_reports.md)<br/>[Usage](../api-reference/v1.0/resources/onedrive_usage_reports.md)|
 |Outlook|[Activity](../api-reference/v1.0/resources/email_activity_reports.md)<br/>[App usage](../api-reference/v1.0/resources/email_app_usage_reports.md)<br/>[Mailbox usage](../api-reference/v1.0/resources/mailbox_usage_reports.md)|
 |SharePoint |[Activity](../api-reference/v1.0/resources/sharepoint_activity_reports.md)<br/>[Site usage](../api-reference/v1.0/resources/sharepoint_site_usage_reports.md)|
 |Skype for Business |[Activity](../api-reference/v1.0/resources/skype_for_business_activity_reports.md)<br/>[Device usage](../api-reference/v1.0/resources/skype_for_business_device_usage_reports.md)<br/>[Device usage](../api-reference/v1.0/resources/skype_for_business_device_usage_reports.md)<br/>[Participant activity](../api-reference/v1.0/resources/skype_for_business_participant_activity_reports.md)<br/>[Peer to peer activity](../api-reference/v1.0/resources/skype_for_business_peer_to_peer_activity.md)|
 |Yammer |[Activity](../api-reference/v1.0/resources/yammer_activity_reports.md)<br/>[Device usage](../api-reference/v1.0/resources/yammer_device_usage_reports.md)<br/>[Groups activity](../api-reference/v1.0/resources/yammer_groups_activity_reports.md)|
+
+## API reference
+Looking for the API reference for this service?
+
+- [Office 365 usage reports API in Microsoft Graph v1.0](../api-reference/v1.0/resources/report.md)
+- [Office 365 usage reports API in Microsoft Graph beta](../api-reference/beta/resources/report.md)
 
 ## Next steps
 

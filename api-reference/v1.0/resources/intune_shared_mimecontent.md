@@ -1,4 +1,4 @@
-﻿# mimeContent resource type
+# mimeContent resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -11,15 +11,12 @@ Contains properties for a generic mime content.
 
 ## Relationships
 None
-
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mimeContent"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mimeContent",
@@ -27,6 +24,11 @@ Here is a JSON representation of the resource.
   "value": "binary"
 }
 ```
+
+
+
+
+
 
 
 

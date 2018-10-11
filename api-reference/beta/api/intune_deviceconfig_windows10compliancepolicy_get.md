@@ -49,11 +49,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1790
+Content-Length: 1951
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
     "id": "2919ae62-ae62-2919-62ae-192962ae1929",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
@@ -80,11 +83,12 @@ Content-Length: 1790
     "codeIntegrityEnabled": true,
     "storageRequireEncryption": true,
     "activeFirewallRequired": true,
-    "uacRequired": true,
     "defenderEnabled": true,
     "defenderVersion": "Defender Version value",
     "signatureOutOfDate": true,
     "rtpEnabled": true,
+    "antivirusRequired": true,
+    "antiSpywareRequired": true,
     "validOperatingSystemBuildRanges": [
       {
         "@odata.type": "microsoft.graph.operatingSystemVersionRange",
@@ -94,7 +98,8 @@ Content-Length: 1790
       }
     ],
     "deviceThreatProtectionEnabled": true,
-    "deviceThreatProtectionRequiredSecurityLevel": "secured"
+    "deviceThreatProtectionRequiredSecurityLevel": "secured",
+    "configurationManagerComplianceRequired": true
   }
 }
 ```

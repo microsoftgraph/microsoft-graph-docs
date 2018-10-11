@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the 
+Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the
 occurrences and exceptions of the event in the specified time range.
 
 ## Permissions
@@ -88,7 +88,7 @@ Content-length: 354
         "response": "",
         "time": "2016-10-19T10:37:00Z"
       },
-      "iCalUId": "iCalUId-value",
+      "uid": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
       "isReminderOn": true
     }

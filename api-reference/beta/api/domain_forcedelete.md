@@ -12,7 +12,7 @@ The following actions are performed as part of this operation:
 
 * Renames the identifierUris of applications with references to the deleted domain.
 
-* If the number of objects to be renamed is greater than 100, an error is returned.
+* If the number of objects to be renamed is greater than 1000, an error is returned.
 
 * If one of the applications to be renamed is a multi-tenant app, an error is returned.
 

@@ -14,18 +14,27 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Calendars.Read |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).
+
+<!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
+-->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}/attachments
 GET /users/{id | userPrincipalName}/events/{id}/attachments
-GET /groups/{id}/events/{id}/attachments
 
 GET /me/calendar/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments
-GET /groups/{id}/calendar/events/{id}/attachments
 ```
+
+<!--
+GET /groups/{id}/events/{id}/attachments
+GET /groups/{id}/calendar/events/{id}/attachments
+-->
+
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
@@ -34,6 +43,7 @@ GET /me/calendargroup/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments

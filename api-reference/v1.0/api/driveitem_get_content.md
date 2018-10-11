@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /drives/items/{item-id}/content
+GET /drives/{drive-id}/items/{item-id}/content
 GET /groups/{group-id}/drive/items/{item-id}/content
 GET /me/drive/root:/{item-path}:/content
 GET /me/drive/items/{item-id}/content
@@ -54,7 +54,7 @@ Returns a `302 Found` response redirecting to a pre-authenticated download URL f
 This is the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.
 
 To download the contents of the file your application will need to follow the `Location` header in the response.
-Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.
+Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immediately.
 
 Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
 
@@ -70,7 +70,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 To download a partial range of bytes from the file, your app can use the `Range` header as specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). 
 Note that you must append the `Range` header to the actual `@microsoft.graph.downloadUrl` URL and not to the request for `/content`.
 
-<!-- { "blockType": "request", "name": "download-item-partial", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial", "scopes": "files.read" } -->
 
 ```http
 GET https://b0mpua-by3301.files.1drv.com/y23vmag
@@ -85,6 +85,7 @@ If the range cannot be generated the Range header may be ignored and an `HTTP 20
 ```http
 HTTP/1.1 206 Partial Content
 Content-Range: bytes 0-1023/2048
+Content-Type: application/octet-stream
 
 <first 1024 bytes of file>
 ```

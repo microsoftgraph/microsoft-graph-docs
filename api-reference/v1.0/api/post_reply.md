@@ -102,7 +102,6 @@ Content-length: 1131
 ```
 
 ##### Response
-##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",

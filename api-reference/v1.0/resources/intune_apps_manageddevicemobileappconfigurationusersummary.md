@@ -1,4 +1,4 @@
-﻿# managedDeviceMobileAppConfigurationUserSummary resource type
+# managedDeviceMobileAppConfigurationUserSummary resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -14,7 +14,7 @@ Contains properties, inherited properties and actions for an MDM mobile app conf
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |pendingCount|Int32|Number of pending Users|
-|notApplicableCount|Int32|Number of not applicable devices|
+|notApplicableCount|Int32|Number of not applicable users|
 |successCount|Int32|Number of succeeded Users|
 |errorCount|Int32|Number of error Users|
 |failedCount|Int32|Number of failed Users|
@@ -25,12 +25,12 @@ Contains properties, inherited properties and actions for an MDM mobile app conf
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfigurationUserSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary",
@@ -44,6 +44,11 @@ Here is a JSON representation of the resource.
   "configurationVersion": 1024
 }
 ```
+
+
+
+
+
 
 
 

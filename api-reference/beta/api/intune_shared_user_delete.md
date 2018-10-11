@@ -10,11 +10,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|(_devices_)<br/>DeviceManagementManagedDevices.ReadWrite.All<br />(_mam_) <br/>DeviceManagementApps.ReadWrite.All<br/>(_onboarding_)<br />DeviceManagementServiceConfig.ReadWrite.All<br/>(_troubleshooting_)<br/> DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)||
+| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **On-boarding** | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp; &nbsp; **Troubleshooting** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
@@ -24,26 +29,34 @@ DELETE /users/{usersId}
 ```
 
 ## Request headers
+
 |Header|Value|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
+
 ### Request
+
 Here is an example of the request.
+
 ``` http
 DELETE https://graph.microsoft.com/beta/users/{usersId}
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 ``` http
 HTTP/1.1 204 No Content
 ```

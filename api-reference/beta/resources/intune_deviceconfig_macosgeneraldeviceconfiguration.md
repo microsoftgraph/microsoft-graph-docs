@@ -22,6 +22,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -38,6 +40,28 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Type of password that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Boolean|Whether or not to require a password.|
+|keychainBlockCloudSync|Boolean|Indicates whether or not iCloud keychain synchronization is blocked (macOS 10.12 and later).|
+|airPrintBlocked|Boolean|Indicates whether or not AirPrint is blocked (macOS 10.12 and later).|
+|airPrintForceTrustedTLS|Boolean|Indicates if trusted certificates are required for TLS printing communication (macOS 10.13 and later).|
+|airPrintBlockiBeaconDiscovery|Boolean|Indicates whether or not iBeacon discovery of AirPrint printers is blocked. This prevents spurious AirPrint Bluetooth beacons from phishing for network traffic (macOS 10.3 and later).|
+|safariBlockAutofill|Boolean|Indicates whether or not to block the user from using Auto fill in Safari.|
+|cameraBlocked|Boolean|Indicates whether or not to block the user from accessing the camera of the device.|
+|iTunesBlockMusicService|Boolean|Indicates whether or not to block Music service and revert Music app to classic mode.|
+|spotlightBlockInternetResults|Boolean|Indicates whether or not to block Spotlight from returning any results from an Internet search.|
+|keyboardBlockDictation|Boolean|Indicates whether or not to block the user from using dictation input.|
+|definitionLookupBlocked|Boolean|Indicates whether or not to block definition lookup.|
+|appleWatchBlockAutoUnlock|Boolean|Indicates whether or to block users from unlocking their Mac with Apple Watch.|
+|iTunesBlockFileSharing|Boolean|Indicates whether or not to block files from being transferred using iTunes.|
+|iCloudBlockDocumentSync|Boolean|Indicates whether or not to block iCloud document sync.|
+|iCloudBlockMail|Boolean|Indicates whether or not to block iCloud from syncing mail.|
+|iCloudBlockAddressBook|Boolean|Indicates whether or not to block iCloud from syncing contacts.|
+|iCloudBlockCalendar|Boolean|Indicates whether or not to block iCloud from syncing calendars.|
+|iCloudBlockReminders|Boolean|Indicates whether or not to block iCloud from syncing reminders.|
+|iCloudBlockBookmarks|Boolean|Indicates whether or not to block iCloud from syncing bookmarks.|
+|iCloudBlockNotes|Boolean|Indicates whether or not to block iCloud from syncing notes.|
+|airDropBlocked|Boolean|Indicates whether or not to allow AirDrop.|
+|passwordBlockModification|Boolean|Indicates whether or not to allow passcode modification.|
+|passwordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -45,7 +69,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) collection|The list of assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Device configuration installation status by device. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation status by user. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -63,6 +87,10 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
+  "supportsScopeTags": true,
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -88,7 +116,29 @@ Here is a JSON representation of the resource.
   "passwordMinutesOfInactivityBeforeScreenTimeout": 1024,
   "passwordPreviousPasswordBlockCount": 1024,
   "passwordRequiredType": "String",
-  "passwordRequired": true
+  "passwordRequired": true,
+  "keychainBlockCloudSync": true,
+  "airPrintBlocked": true,
+  "airPrintForceTrustedTLS": true,
+  "airPrintBlockiBeaconDiscovery": true,
+  "safariBlockAutofill": true,
+  "cameraBlocked": true,
+  "iTunesBlockMusicService": true,
+  "spotlightBlockInternetResults": true,
+  "keyboardBlockDictation": true,
+  "definitionLookupBlocked": true,
+  "appleWatchBlockAutoUnlock": true,
+  "iTunesBlockFileSharing": true,
+  "iCloudBlockDocumentSync": true,
+  "iCloudBlockMail": true,
+  "iCloudBlockAddressBook": true,
+  "iCloudBlockCalendar": true,
+  "iCloudBlockReminders": true,
+  "iCloudBlockBookmarks": true,
+  "iCloudBlockNotes": true,
+  "airDropBlocked": true,
+  "passwordBlockModification": true,
+  "passwordBlockFingerprintUnlock": true
 }
 ```
 

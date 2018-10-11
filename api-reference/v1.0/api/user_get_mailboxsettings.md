@@ -114,8 +114,8 @@ Content-type: application/json
             "thursday",
             "friday"
         ],
-        "startTime":"08:00:00.0000000",
-        "endTime":"17:00:00.0000000",
+        "startTime":"08:00:00.000",
+        "endTime":"17:00:00.000",
         "timeZone":{
             "name":"Pacific Standard Time"
         }
@@ -146,7 +146,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/api/v1.0/$metadata#Me/mailboxSettings/automaticRepliesSetting",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings/automaticRepliesSetting",
     "status": "alwaysEnabled",
     "externalAudience": "None",
     "scheduledStartDateTime": {

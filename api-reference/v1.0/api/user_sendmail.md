@@ -30,8 +30,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|Message|[Message](../resources/message.md)|The message to send. Required.|
-|SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional. |
+|message|[Message](../resources/message.md)|The message to send. Required.|
+|saveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional. |
 
 ## Response
 
@@ -39,7 +39,7 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 
 ## Example
 Here is an example of how to call this API.
-##### Request
+##### Request 1
 Here is an example of the request.
 <!-- {
   "blockType": "request",
@@ -48,7 +48,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: application/json
-Content-length: 512
 
 {
   "message": {
@@ -76,7 +75,55 @@ Content-length: 512
 }
 ```
 
-##### Response
+##### Response 1
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 202 Accepted
+```
+
+##### Request 2
+The next example creates a message with custom Internet message headers and sends the message.
+<!-- {
+  "blockType": "request",
+  "name": "user_sendmail_with_headers"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/sendMail
+Content-type: application/json
+
+{
+  "message": {
+    "subject": "9/9/2018: concert",
+    "body": {
+      "contentType": "HTML",
+      "content": "The group represents Nevada."
+    },
+    "toRecipients": [
+      {
+        "emailAddress": {
+          "address": "AlexW@contoso.OnMicrosoft.com"
+        }
+      }
+    ],
+    "internetMessageHeaders":[
+      {
+        "name":"x-custom-header-group-name",
+        "value":"Nevada"
+      },
+      {
+        "name":"x-custom-header-group-id",
+        "value":"NV001"
+      }
+    ]
+  }
+}
+```
+
+##### Response 2
 Here is an example of the response.
 <!-- {
   "blockType": "response",

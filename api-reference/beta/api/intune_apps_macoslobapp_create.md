@@ -62,6 +62,7 @@ The following table shows the properties that are required when you create the m
 |identityVersion|String|The identity version.|
 |md5HashChunkSize|Int32|The chunk size for MD5 hash|
 |md5Hash|String collection|The MD5 hash codes|
+|ignoreVersionDetection|Boolean|A boolean to control whether the app's version will be used to detect the app after it is installed on a device. Set this to true for macOS Line of Business (LoB) apps that use a self update feature.|
 
 
 
@@ -74,7 +75,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1491
+Content-length: 1526
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -123,7 +124,8 @@ Content-length: 1491
   "md5HashChunkSize": 0,
   "md5Hash": [
     "Md5Hash value"
-  ]
+  ],
+  "ignoreVersionDetection": true
 }
 ```
 
@@ -132,7 +134,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1599
+Content-Length: 1634
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -183,7 +185,8 @@ Content-Length: 1599
   "md5HashChunkSize": 0,
   "md5Hash": [
     "Md5Hash value"
-  ]
+  ],
+  "ignoreVersionDetection": true
 }
 ```
 

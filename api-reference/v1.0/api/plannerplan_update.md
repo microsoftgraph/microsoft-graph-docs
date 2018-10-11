@@ -1,6 +1,7 @@
-# Update plannerplan
+# Update plannerPlan
 
-Update the properties of **plannerplan** object.
+Update the properties of **plannerPlan** object.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -13,9 +14,11 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/plans/<id>
+PATCH /planner/plans/{id}
 ```
-## Optional request headers
+
+## Request headers
+
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}. Required. |
@@ -43,7 +46,7 @@ Here is an example of the request.
   "name": "update_plannerplan"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM
+PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 Content-type: application/json
 Content-length: 29
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

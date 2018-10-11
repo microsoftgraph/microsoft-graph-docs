@@ -1,8 +1,8 @@
-﻿# mdmWindowsInformationProtectionPolicy resource type
+﻿dmWindowsInformationProtectionPolicy resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Policy for Windows information protection with MDM
+Policy for Windows information protection with MDM.  
 
 Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)
 
@@ -50,21 +50,21 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|protectedAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input protected apps through xml files Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
-|exemptAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input exempt apps through xml files Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|protectedAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input protected apps through XML files. Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|exemptAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input exempt apps through XML files. Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) collection|Navigation property to list of security groups targeted for policy. Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.windowsInformationProtection",
   "keyProperty": "id",
-  "@odata.type": "microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy"
-}
--->
+  "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy"
+}-->
 ``` json
 {
-  "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
+  "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy",
   "displayName": "String",
   "description": "String",
   "createdDateTime": "String (timestamp)",
@@ -91,12 +91,12 @@ Here is a JSON representation of the resource.
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+  "rightsManagementServicesTemplateId": "guid",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -106,7 +106,7 @@ Here is a JSON representation of the resource.
   ],
   "exemptApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -191,6 +191,30 @@ Here is a JSON representation of the resource.
   "isAssigned": true
 }
 ```
+
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+
+"Warning: /api-reference/v1.0/resources/intune_mam_managedappregistration.md/microsoft.graph.managedAppRegistration/flaggedReasons:
+      Inconsistent types between parameter (String) and table (Object)",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: dmWindowsInformation...",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: Policy for Windows i...",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: Inherits from [windo...",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_managedappprotection.md/microsoft.graph.managedAppProtection/allowedDataStorageLocations:
+      Inconsistent types between parameter (String) and table (Object)"
+
+  ],
+}
+-->
 
 
 

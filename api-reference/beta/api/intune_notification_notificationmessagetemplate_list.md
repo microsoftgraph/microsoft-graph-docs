@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 367
+Content-Length: 441
 
 {
   "value": [
@@ -57,7 +57,10 @@ Content-Length: 367
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "displayName": "Display Name value",
       "defaultLocale": "Default Locale value",
-      "brandingOptions": "includeCompanyLogo"
+      "brandingOptions": "includeCompanyLogo",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
     }
   ]
 }

@@ -27,7 +27,7 @@ Inherits from [managedDeviceMobileAppConfiguration](../resources/intune_apps_man
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|packageName|String|Android For Work app configuration package name.|
+|packageId|String|Android For Work app configuration package id.|
 |payloadJson|String|Android For Work app configuration JSON payload.|
 |permissionActions|[androidPermissionAction](../resources/intune_apps_androidpermissionaction.md) collection|List of Android app permissions and corresponding permission actions.|
 
@@ -60,7 +60,7 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "displayName": "String",
   "version": 1024,
-  "packageName": "String",
+  "packageId": "String",
   "payloadJson": "String",
   "permissionActions": [
     {

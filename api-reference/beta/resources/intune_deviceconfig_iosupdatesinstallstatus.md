@@ -11,6 +11,7 @@ Not yet documented
 |success|0|Not yet documented|
 |available|1|Not yet documented|
 |idle|2|Not yet documented|
+|unknown|3|Not yet documented|
 |downloading|-2016330712|Not yet documented|
 |downloadFailed|-2016330711|Not yet documented|
 |downloadRequiresComputer|-2016330710|Not yet documented|

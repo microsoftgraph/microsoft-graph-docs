@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 512
+Content-Length: 620
 
 {
   "value": [
@@ -55,6 +55,10 @@ Content-Length: 512
       "@odata.type": "#microsoft.graph.iosTrustedRootCertificate",
       "id": "9bc72bb8-2bb8-9bc7-b82b-c79bb82bc79b",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "supportsScopeTags": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",

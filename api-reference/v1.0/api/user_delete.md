@@ -8,7 +8,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | User.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "delete_user"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/mba9a3254-9f18-4209-aeb3-9e42a35b5be4
+DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 ##### Response
 Here is an example of the response. 

@@ -25,7 +25,7 @@ Report of remote actions initiated on the devices belonging to a certain tenant.
 |requestDateTime|DateTimeOffset|Time when the action was issued, given in UTC.|
 |deviceOwnerUserPrincipalName|String|Upn of the device owner.|
 |deviceIMEI|String|IMEI of the device.|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune_shared_actionstate.md)|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
 ## Relationships
 None

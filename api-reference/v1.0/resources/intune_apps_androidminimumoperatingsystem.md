@@ -1,4 +1,4 @@
-﻿# androidMinimumOperatingSystem resource type
+# androidMinimumOperatingSystem resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -19,12 +19,10 @@ Contains properties for the minimum operating system required for an Android mob
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidMinimumOperatingSystem"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidMinimumOperatingSystem",
@@ -38,6 +36,11 @@ Here is a JSON representation of the resource.
   "v5_1": true
 }
 ```
+
+
+
+
+
 
 
 

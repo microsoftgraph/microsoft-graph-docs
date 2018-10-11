@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object.
+Update the properties of a [windowsDomainJoinConfiguration](../resources/intune_enrollment_windowsdomainjoinconfiguration.md) object.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -30,18 +30,17 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object.
+In the request body, supply a JSON representation for the [windowsDomainJoinConfiguration](../resources/intune_enrollment_windowsdomainjoinconfiguration.md) object.
 
-The following table shows the properties that are required when you create the [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md).
+The following table shows the properties that are required when you create the [windowsDomainJoinConfiguration](../resources/intune_enrollment_windowsdomainjoinconfiguration.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [windowsDomainJoinConfiguration](../resources/intune_enrollment_windowsdomainjoinconfiguration.md) object in the response body.
 
 ## Example
 ### Request
@@ -59,11 +58,10 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 121
+Content-Length: 72
 
 {
-  "@odata.type": "#microsoft.graph.windowsDomainJoinConfiguration",
-  "id": "40118d08-8d08-4011-088d-1140088d1140"
+  "@odata.type": "#microsoft.graph.windowsDomainJoinConfiguration"
 }
 ```
 

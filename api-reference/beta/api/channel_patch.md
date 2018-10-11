@@ -2,7 +2,10 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update the properties of the specified channel.
+Update the properties of the specified [channel](../resources/channel.md).
+
+> **Note**: There is a known issue with application permissions and this API. For details, see the [known issues list](../../../concepts/known_issues.md#application-permissions).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -10,12 +13,12 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /groups/{id}/team/channels/{id}
+PATCH /teams/{id}/channels/{id}
 ```
 ## Request headers
 | Header       | Value |
@@ -38,7 +41,7 @@ Here is an example of the request.
   "name": "patch_channel"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/groups/{id}/team/channels/{id}
+PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

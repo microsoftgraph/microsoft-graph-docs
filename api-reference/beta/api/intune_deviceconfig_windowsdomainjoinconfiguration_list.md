@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-List properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) objects.
+List properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md) objects.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -34,7 +34,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [windowsDomainJoinConfiguration](../resources/intune_deviceconfig_windowsdomainjoinconfiguration.md) objects in the response body.
 
 ## Example
 ### Request
@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 594
+Content-Length: 760
 
 {
   "value": [
@@ -56,13 +56,18 @@ Content-Length: 594
       "@odata.type": "#microsoft.graph.windowsDomainJoinConfiguration",
       "id": "40118d08-8d08-4011-088d-1140088d1140",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "supportsScopeTags": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
       "computerNameStaticPrefix": "Computer Name Static Prefix value",
       "computerNameSuffixRandomCharCount": 1,
-      "activeDirectoryDomainName": "Active Directory Domain Name value"
+      "activeDirectoryDomainName": "Active Directory Domain Name value",
+      "organizationalUnit": "Organizational Unit value"
     }
   ]
 }

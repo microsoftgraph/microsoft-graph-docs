@@ -29,13 +29,25 @@ None
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.subscribedSku"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.subscribedSku",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "toppable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

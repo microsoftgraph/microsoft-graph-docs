@@ -18,19 +18,30 @@ Not yet documented
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|devicePlatform|[devicePlatformType](../resources/intune_deviceconfig_deviceplatformtype.md)|Device platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`.|
+|devicePlatform|[devicePlatformType](../resources/intune_shared_deviceplatformtype.md)|Device platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
 |certificateKeyUsage|[keyUsages](../resources/intune_deviceconfig_keyusages.md)|Key usage. Possible values are: `keyEncipherment`, `digitalSignature`.|
+|certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune_deviceconfig_certificatevalidityperiodscale.md)|Validity period units. Possible values are: `days`, `months`, `years`.|
+|certificateIssuanceState|[certificateIssuanceStates](../resources/intune_deviceconfig_certificateissuancestates.md)|Issuance State. Possible values are: `unknown`, `challengeIssued`, `challengeIssueFailed`, `requestCreationFailed`, `requestSubmitFailed`, `challengeValidationSucceeded`, `challengeValidationFailed`, `issueFailed`, `issuePending`, `issued`, `responseProcessingFailed`, `responsePending`, `enrollmentSucceeded`, `enrollmentNotNeeded`, `revoked`, `removedFromCollection`, `renewVerified`, `installFailed`, `installed`, `deleteFailed`, `deleted`, `renewalRequested`, `requested`.|
+|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune_deviceconfig_keystorageprovideroption.md)|Key Storage Provider. Possible values are: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
+|certificateSubjectNameFormat|[subjectNameFormat](../resources/intune_deviceconfig_subjectnameformat.md)|Subject name format. Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
+|certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune_deviceconfig_subjectalternativenametype.md)|Subject alternative name format. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
+|certificateRevokeStatus|[certificateRevocationStatus](../resources/intune_deviceconfig_certificaterevocationstatus.md)|Revoke status. Possible values are: `none`, `pending`, `issued`, `failed`, `revoked`.|
 |certificateProfileDisplayName|String|Certificate profile display name|
 |deviceDisplayName|String|Device display name|
 |userDisplayName|String|User display name|
-|serverUrl|String|Server URL|
 |certificateExpirationDateTime|DateTimeOffset|Certificate expiry date|
+|certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Last certificate issuance state change|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Last certificate issuance state change|
 |certificateIssuer|String|Issuer|
 |certificateThumbprint|String|Thumbprint|
 |certificateSerialNumber|String|Serial number|
 |certificateKeyLength|Int32|Key length|
-|enhancedKeyUsage|String|Extended key usage|
+|certificateEnhancedKeyUsage|String|Extended key usage|
+|certificateValidityPeriod|Int32|Validity period|
+|certificateSubjectNameFormatString|String|Subject name format string for custom subject name formats|
+|certificateSubjectAlternativeNameFormatString|String|Subject alternative name format string for custom formats|
+|certificateIssuanceDateTime|DateTimeOffset|Issuance date|
+|certificateErrorCode|Int32|Error code|
 
 ## Relationships
 None
@@ -48,17 +59,28 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "devicePlatform": "String",
   "certificateKeyUsage": "String",
+  "certificateValidityPeriodUnits": "String",
+  "certificateIssuanceState": "String",
+  "certificateKeyStorageProvider": "String",
+  "certificateSubjectNameFormat": "String",
+  "certificateSubjectAlternativeNameFormat": "String",
+  "certificateRevokeStatus": "String",
   "certificateProfileDisplayName": "String",
   "deviceDisplayName": "String",
   "userDisplayName": "String",
-  "serverUrl": "String",
   "certificateExpirationDateTime": "String (timestamp)",
+  "certificateLastIssuanceStateChangedDateTime": "String (timestamp)",
   "lastCertificateStateChangeDateTime": "String (timestamp)",
   "certificateIssuer": "String",
   "certificateThumbprint": "String",
   "certificateSerialNumber": "String",
   "certificateKeyLength": 1024,
-  "enhancedKeyUsage": "String"
+  "certificateEnhancedKeyUsage": "String",
+  "certificateValidityPeriod": 1024,
+  "certificateSubjectNameFormatString": "String",
+  "certificateSubjectAlternativeNameFormatString": "String",
+  "certificateIssuanceDateTime": "String (timestamp)",
+  "certificateErrorCode": 1024
 }
 ```
 

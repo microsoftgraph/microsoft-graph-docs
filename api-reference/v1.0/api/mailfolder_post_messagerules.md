@@ -18,8 +18,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/mailFolders/inbox/messagerules
-POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
+POST /me/mailFolders/inbox/messageRules
+POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
 ## Request headers
 | Name       | Description|
@@ -31,7 +31,6 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 In the request body, supply the parameters that are applicable to your rule. The following are body parameters that are typically used 
 when creating rules. You can specify any other writable **messageRule** properties as appropriate in the request body.
 
-### Request parameters
 | Name       | Type|Description|
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|Actions to be taken on a message when the corresponding conditions, if any, are fulfilled. Required.|
@@ -49,10 +48,11 @@ If successful, this method returns `201 Created` response code and a **messageRu
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox"],
   "name": "create_messagerule_from_mailfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messagerules
+POST https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 Content-type: application/json
 
 {      

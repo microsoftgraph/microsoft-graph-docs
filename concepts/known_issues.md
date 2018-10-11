@@ -22,25 +22,40 @@ Failure to read or update a photo, in this case, would result in the following e
 	}
 ```
 
-
 ### Using delta query
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
-## Groups and Microsoft Teams
+## Microsoft Teams
 
 >**Note** Microsoft Teams is currently in preview and is available only in the Microsoft Graph beta endpoint.
 
-### Policy
+### Application permissions
 
-Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App. 
+When making changes to teams and channels using application permissions, 
+Microsoft Teams renders the control message posted to the General channel with a blank name instead of the application name. 
+This will be addressed in a future update. 
+The fix will retroactively update control messages that are already posted.
+
+### Create chat thread API
+
+The current API to [create a chat thread](../api-reference/beta/api/channel_post_chatthreads.md) 
+will be replaced with a richer API that is consistent with the schema for [listing channel messages](../api-reference/beta/api/channel_list_messages.md).
+
+### Graph Explorer and Global Admins
+
+Currently, Graph Explorer allows global admins to manipulate teams they are not an owner or member of, but other apps attempting to make the same API calls will fail if the current user is not a member or owner of the team.
+
+## Groups
 
 ### Permissions for groups and Microsoft Teams
 
-Microsoft Graph exposes two permissions (*Group.Read.All* and *Group.ReadWrite.All*) for access to the APIs for groups and Microsoft Teams.
-These permissions must be consented to by an administrator (which is a change from preview).  In the future, we plan to add new permissions for groups and teams that users can consent to.
+Microsoft Graph exposes two permissions ([*Group.Read.All*](../concepts/permissions_reference.md#group-permissions) and [*Group.ReadWrite.All*](../concepts/permissions_reference.md#group-permissions)) for access to the APIs for groups and Microsoft Teams.
+These permissions must be consented to by an administrator.
+In the future, we plan to add new permissions for groups and teams that users can consent to.
 
-Also, only the API for core group administration and management supports access using delegated or app-only permissions. All other features of the group API support only delegated permissions.
+Also, only the API for core group administration and management supports access using delegated or app-only permissions. 
+All other features of the group API support only delegated permissions.
 
 Examples of group features that support delegated and app-only permissions:
 
@@ -54,27 +69,14 @@ Examples of group features that support only delegated permissions:
 * Group conversations, events, photo
 * External senders, accepted or rejected senders, group subscription
 * User favorites and unseen count
-* Microsoft Teams channels and chats
 
-### Teams in Microsoft Teams (preview)
+### Policy
 
-Microsoft Teams and Office 365 groups [share similar functionality](../api-reference/beta/resources/teams_api_overview.md). All group APIs can be used with teams, with the exception that the Create group API does not currently allow you to create a team.  Future API releases will support this.
-
-### Microsoft Teams channels (preview)
-
-Currently, you can read and create channels, but you cannot update or delete them.  Future API releases will support this.
-
-### Microsoft Teams chat threads and chat messages (preview)
-
-Currently, you can create chat threads in channels, but you cannot read existing chat threads or add replies to them. Also, you cannot read or write direct chats between users that are outside the scope of a team or channel.  Future API releases will add additional capabilities in this area.
-
-### Microsoft Teams user's list of joined teams (preview)
-
-Currrently, [listing the teams a user has joined](../api-reference/beta/api/user_list_joinedteams.md) only works for the 'me' user for which the caller has [delegated permissions](permissions_reference.md).  Future releases will support this operation for any specified user ID.
+Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App.
 
 ### Adding and getting attachments of group posts
 
-[Adding](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_post_attachments) attachments to group posts, [listing](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_list_attachments) and 
+[Adding](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_post_attachments) attachments to group posts, [listing](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_list_attachments) and
 getting attachments of group posts currently return the error message "The OData request is not supported." A fix has been rolled out for both the `/v1.0` and `/beta` versions,
 and is expected to be widely available by the end of January 2016.
 
@@ -86,16 +88,30 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
+## Bookings
+
+### ErrorExceededFindCountLimit when querying bookingBusinesses
+
+Getting the list of `bookingBusinesses` fails with the following error code when an organization has several Bookings businesses and the account making the request is not an administrator:
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+As a workaround, you can limit the set of businesses returned by the request by including a `query` parameter, for example:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
 
 ## Calendars
-
-### Adding and accessing ICS-based calendars in user's mailbox
-
-Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
-
-* You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
-* [Listing the user's calendars](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) lets you get the **name**, **color** and **id** properties of each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
-* You can also [list the events](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
 
 ### Accessing a shared calendar
 
@@ -107,15 +123,15 @@ GET \users('{id}')\calendars('{id}')\events
 
 You may get HTTP 500 with the error code `ErrorInternalServerTransientError`. The error occurs because:
 
-- Historically, there are two ways that calendar sharing has been implemented, which, for the purpose of differentiating them, 
+- Historically, there are two ways that calendar sharing has been implemented, which, for the purpose of differentiating them,
 are referred to as the "old" approach and "new" approach.
-- The new approach is currently available for sharing calendars with view or edit permissions, but not with delegate permissions. 
-- You can use the calendar REST API to view or edit shared calendars only if the calendars were shared using the **new** approach. 
+- The new approach is currently available for sharing calendars with view or edit permissions, but not with delegate permissions.
+- You can use the calendar REST API to view or edit shared calendars only if the calendars were shared using the **new** approach.
 - You cannot use the calendar REST API to view or edit such calendars (or their events) if the calendars were shared using the **old** approach.
 
 
-If a calendar was shared with view or edit permissions but using the old approach, you can now work around the error and manually upgrade the calendar sharing to use the new approach. 
-Over time, Outlook will automatically upgrade all shared calendars to use the new approach, including calendars shared with delegate permissions. 
+If a calendar was shared with view or edit permissions but using the old approach, you can now work around the error and manually upgrade the calendar sharing to use the new approach.
+Over time, Outlook will automatically upgrade all shared calendars to use the new approach, including calendars shared with delegate permissions.
 
 To manually upgrade a shared calendar to use the new approach, follow these steps:
 1.	The recipient removes the calendar that was previously shared to them.
@@ -123,13 +139,24 @@ To manually upgrade a shared calendar to use the new approach, follow these step
 3.	The recipient re-accepts the shared calendar using Outlook on the web. (It will be possible to use other Outlook clients soon.)
 4.	The recipient verifies that the calendar has been re-shared successfully using the new approach by being able to view the shared calendar in Outlook on iOS or Outlook on Android.
 
-A calendar shared with you in the new approach appears as just another calendar in your mailbox. You can use the calendar REST API to view or edit 
+A calendar shared with you in the new approach appears as just another calendar in your mailbox. You can use the calendar REST API to view or edit
 events in the shared calendar, as if it's your own calendar. As an example:
 
 ```http
 GET \me\calendars('{id}')\events
 ```
 
+### Adding and accessing ICS-based calendars in user's mailbox
+
+Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
+
+* You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
+* [Listing the user's calendars](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) lets you get the **name**, **color** and **id** properties of each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
+* You can also [list the events](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
+
+### onlineMeetingUrl property support for Microsoft Teams
+
+Currently, the **onlineMeetingUrl** property of a Skype meeting [event](../api-reference/v1.0/resources/event.md) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
 
 ## Contacts
 
@@ -139,7 +166,7 @@ Only personal contacts are currently supported. Organizational contacts are not 
 
 ### Default contacts folder
 
-In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder. 
+In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder.
 
 A fix will be made available. Meanwhile, you can use the following [list contacts](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts) query and the **parentFolderId** property
 as a workaround to get the folder ID of the default contacts folder:
@@ -156,7 +183,7 @@ In the above query:
 
 ### Accessing contacts via a contact folder in beta
 
-In the `/beta` version, there is currently an issue that prevents accessing a [contact](../api-reference/beta/resources/contact.md) 
+In the `/beta` version, there is currently an issue that prevents accessing a [contact](../api-reference/beta/resources/contact.md)
 by specifying its parent folder in the REST request URL, as shown in the 2 scenarios below.
 
 * Accessing a contact from a top level [contactFolder](../api-reference/beta/resources/contactfolder.md) of the user's.
@@ -173,7 +200,7 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 
-As an alternative, you can simply [get](../api-reference/beta/api/contact_get.md) the contact by specifying its ID as shown below, 
+As an alternative, you can simply [get](../api-reference/beta/api/contact_get.md) the contact by specifying its ID as shown below,
 since GET /contacts in the `/beta` version applies to all the contacts in the user's mailbox:
 
 ```http
@@ -185,9 +212,14 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### The comment parameter for creating a draft
 
-The **comment** parameter for creating a reply or forward draft ([createReply](../api-reference/v1.0/api/message_createreply.md), 
-[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) 
-does not become part of the body of the resultant message draft.  
+The **comment** parameter for creating a reply or forward draft ([createReply](../api-reference/v1.0/api/message_createreply.md),
+[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md))
+does not become part of the body of the resultant message draft.
+
+### GET messages returns chats in Microsoft Teams
+
+In both the v1 and beta endpoints, the response of `GET /users/id/messages` includes the user's Microsoft Teams chats that occurred outside the scope of a team or channel. These chat messages have "IM" as their subject.
+
 
 ## Drives, files and content streaming
 
@@ -195,16 +227,20 @@ does not become part of the body of the resultant message draft.
 
 ## Query parameter limitations
 
-* **$expand** limitations:
-	* No support for `nextLink`
- 	* No support for more than 1 level of expand
- 	* No support with extra parameters (**$filter**, **$select**)
-* Multiple namespaces are not supported
+* Multiple namespaces are not supported.
 * GETs on `$ref` and casting is not supported on users, groups, devices, service principals and applications.
 * `@odata.bind` is not supported.  This means that developers won’t be able to properly set the `Accepted` or `RejectedSenders` on a group.
-* `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata
-* Cross-workload filtering/search is not available. 
-* Full-text search (using **$search**) is only available for some entities, like messages.
+* `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
+* `$expand`:
+  * No support for `nextLink`
+  * No support for more than 1 level of expand
+  * No support with extra parameters (`$filter`, `$select`)
+* `$filter`:
+  * `/attachments` endpoint does not support filters. If present, the `$filter` parameter is ignored.
+  * Cross-workload filtering is not supported.
+* `$search`:
+  * Full-text search is only available for a subset of entities such as messages.
+  * Cross-workload searching is not supported.
 
 ## Delta query
 
@@ -223,7 +259,7 @@ Current limitations:
 * Updating apps is restricted to apps registered after the initial beta update.
 * Azure Active Directory users can register apps and add additional owners.
 * Support for OpenID Connect and OAuth protocols.
-* Policy assignments to an application fail. 
+* Policy assignments to an application fail.
 * Operations on ownedObjects that require appId fail (For example, users/{id|userPrincipalName}/ownedObjects/{id}/...).
 
 In development:
@@ -247,12 +283,16 @@ You cannot specify an open extension at the same time you create an instance of 
 
 ### Creating a resource instance and adding schema extension data at the same time
 
-You cannot specify a schema extension in the same operation as creating an instance of **contact**, **event**, **message**, or **post**. 
-You must first create the resource instance and then do a `PATCH` to that instance to add a schema extension and custom data. 
+You cannot specify a schema extension in the same operation as creating an instance of **contact**, **event**, **message**, or **post**.
+You must first create the resource instance and then do a `PATCH` to that instance to add a schema extension and custom data.
 
 ### Limit of 100 schema extension property values allowed per resource instance
 
 Directory resources, such as **device**, **group** and **user**, currently limit the total number of schema extension property values that can be set on a resource instance, to 100.
+
+### Filtering on schema extension properties not supported on all entity types
+
+Filtering on schema extension properties (using the `$filter` expresssion) is not supported for Outlook entity types - **contact**, **event**, **message**, or **post**.
 
 ## JSON Batching
 

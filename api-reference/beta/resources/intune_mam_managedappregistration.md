@@ -26,6 +26,8 @@ The ManagedAppRegistration resource represents the details of an app, with manag
 |deviceName|String|Host device name|
 |managedDeviceId|String|The Managed Device identifier of the host device. Value could be empty even when the host device is managed.|
 |azureADDeviceId|String|The Azure Active Directory Device identifier of the host device. Value could be empty even when the host device is Azure Active Directory registered.|
+|deviceModel|String|The device model for the current app registration |
+|deviceManufacturer|String|The device manufacturer for the current app registration |
 |flaggedReasons|[managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md) collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device|
 |userId|String|The user Id to who this app registration belongs.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|The app package Identifier|
@@ -60,6 +62,8 @@ Here is a JSON representation of the resource.
   "deviceName": "String",
   "managedDeviceId": "String",
   "azureADDeviceId": "String",
+  "deviceModel": "String",
+  "deviceManufacturer": "String",
   "flaggedReasons": [
     "String"
   ],

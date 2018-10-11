@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directory/deleteditems/{id}
+GET /directory/deletedItems/{id}
 ```
 
 ## Optional query parameters
@@ -52,14 +52,14 @@ If successful, this method returns a `200 OK` response code and [directoryObject
   "name": "get_directory"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
+GET https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directory"
+  "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
 HTTP/1.1 200 OK

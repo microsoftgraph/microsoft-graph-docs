@@ -24,6 +24,7 @@ Inherits from [roleAssignment](../resources/intune_rbac_roleassignment.md)
 |displayName|String|The display or friendly name of the role Assignment. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |description|String|Description of the Role Assignment. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |scopeMembers|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|scopeType|[roleAssignmentScopeType](../resources/intune_rbac_roleassignmentscopetype.md)|Specifies the type of scope for a Role Assignment. Default type 'ResourceScope' allows assignment of ResourceScopes. For 'AllDevices', 'AllLicensedUsers', and 'AllDevicesAndLicensedUsers', the ResourceScopes property should be left empty. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md). Possible values are: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`.|
 |resourceScopes|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.|
 
@@ -31,6 +32,7 @@ Inherits from [roleAssignment](../resources/intune_rbac_roleassignment.md)
 |Relationship|Type|Description|
 |:---|:---|:---|
 |roleDefinition|[roleDefinition](../resources/intune_rbac_roledefinition.md)|Role definition this assignment is part of. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|roleScopeTags|[roleScopeTag](../resources/intune_rbac_rolescopetag.md) collection|The set of Role Scope Tags defined on the Role Assignment.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -49,6 +51,7 @@ Here is a JSON representation of the resource.
   "scopeMembers": [
     "String"
   ],
+  "scopeType": "String",
   "resourceScopes": [
     "String"
   ],

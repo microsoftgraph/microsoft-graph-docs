@@ -10,8 +10,6 @@ The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64',
 You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.
 If the size you request is not available, you can still get a smaller size that the user has uploaded and made available.
 For example, if the user uploads a photo that is 504x504 pixels, then all but the 648x648 size of photo will be available for download.
-If the specified size is not available in the user's mailbox or in Azure Active Directory, the size of '1x1' is returned with the rest of 
-metadata.
 
 ## Permissions
 
@@ -24,7 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                        | For **user** resource:<br/>User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
 
 
-## HTTP request to get the photo
+## HTTP request 
+
+### Get the photo
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
@@ -35,10 +35,11 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
-## HTTP request to get the metadata of the photo
+### Get the metadata of the photo
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
+GET /me/photos
 GET /users/{id | userPrincipalName}/photo
 GET /groups/{id}/photo
 GET /me/contacts/{id}/photo
@@ -47,13 +48,23 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-## Parameters
+### Get the metadata for a specific photo size
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/photos/{size}
+GET /users/{id | userPrincipalName}/photos/{size}
+GET /groups/{id}/photos/{size}
+GET /me/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contacts/{id}/photos/{size}
+GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
+```
 
-|**Parameter**|**Type**|**Description**|
+## Path parameters
+
+|Parameter|Type|Description|
 |:-----|:-----|:-----|
-|_URL parameters_|
-|size  |String  | A photo size. The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', 
-'360x360','432x432', '504x504', and '648x648'. Photos can be any dimension if they are stored in Azure Active Directory. |
+|size  |String  | A photo size. The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', '360x360','432x432', '504x504', and '648x648'. Photos can be any dimension if they are stored in Azure Active Directory. |
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -65,9 +76,11 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
-## Response for getting the photo
+
+## Response
+### Response for getting the photo
 If successful, this method returns a `200 OK` response code and binary data of the requested photo.  If no photo exists, the operation returns `404 Not Found`.
-## Response for getting the metadata of the photo
+### Response for getting the metadata of the photo
 If successful, this method returns a `200 OK` response code and [profilePhoto](../resources/profilePhoto.md) object in the response body.
 ## Example
 ##### Request 1

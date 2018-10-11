@@ -21,7 +21,7 @@ POST /directoryRoles/{id}/members/$ref
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | application/json  |
+| Content-Type  | string  | application/json  |
 
 ## Request body
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.
@@ -38,7 +38,7 @@ If successful, this method returns `204 No Content` response code.
   "name": "create_directoryobject_from_directoryrole"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoles/{id}/members
+POST https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/$ref
 Content-type: application/json
 
 {

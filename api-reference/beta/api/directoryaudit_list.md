@@ -11,6 +11,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported   |
 |Application | AuditLog.Read.All | 
 
+In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -84,16 +86,16 @@ Content-length: 271
 		"loggedByService": "Core Directory",
 		"initiatedBy": {
 			"user": {
-				"id": "728309ae-1a37-4937-9afe-e35d964db09b",
-				"displayName": "Audry Oliver",
-				"userPrincipalName": "bob@wingtiptoysonline.com",
-				"ipAddress": "10.34.33.555"
+				"id": "7283X9ae-1a37-4937-9aex-e35d964db09b",
+				"displayName": "Jamie Doe",
+				"userPrincipalName": "jdoe@wingtiptoysonline.com",
+				"ipAddress": "127.0.0.1"
 			},
 			"app": null
 		},
 		"targetResources": [{
 			"@odata.type": "#microsoft.graph.TargetResourceGroup",
-			"id": "ef7e527d-6c92-4234-8c6d-cf6fdfb57f95",
+			"id": "ef7x527d-6x92-42x4-8x6d-cfxfdfx57f95",
 			"displayName": "Lynda.com",
 			"modifiedProperties": [{
 				"displayName": "Action Client Name",
@@ -103,10 +105,10 @@ Content-length: 271
 			"groupType": "unifiedGroups"
 		}, {
 			"@odata.type": "#microsoft.graph.targetResourceUser",
-			"id": "1f0e98f5-3161-4c6b-9b50-d488572f2bb7",
+			"id": "1f0ex8f5-3x61-4x6b-9x50-d4xx572f2bb7",
 			"displayName": null,
 			"modifiedProperties": [],
-			"userPrincipalName": "bmm3u@mtmail.mtsu.edu"
+			"userPrincipalName": "jdoe@contoso.com"
 		}],
 		"additionalDetails": [{
 			"key": "Additional Detail Name",

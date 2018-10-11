@@ -1,4 +1,4 @@
-﻿# macOSCompliancePolicy resource type
+# macOSCompliancePolicy resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -38,6 +38,9 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Require encryption on Mac OS devices.|
+|firewallEnabled|Boolean|Whether the firewall should be enabled or not.|
+|firewallBlockAllIncoming|Boolean|Corresponds to the “Block all incoming connections” option.|
+|firewallEnableStealthMode|Boolean|Corresponds to “Enable stealth mode.”|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -52,12 +55,12 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.deviceCompliancePolicy",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.macOSCompliancePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -80,9 +83,17 @@ Here is a JSON representation of the resource.
   "systemIntegrityProtectionEnabled": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
-  "storageRequireEncryption": true
+  "storageRequireEncryption": true,
+  "firewallEnabled": true,
+  "firewallBlockAllIncoming": true,
+  "firewallEnableStealthMode": true
 }
 ```
+
+
+
+
+
 
 
 

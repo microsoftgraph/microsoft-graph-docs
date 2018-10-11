@@ -13,12 +13,14 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |[Create windowsAutopilotDeviceIdentity](../api/intune_enrollment_windowsautopilotdeviceidentity_create.md)|[windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md)|Create a new [windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md) object.|
 |[Delete windowsAutopilotDeviceIdentity](../api/intune_enrollment_windowsautopilotdeviceidentity_delete.md)|None|Deletes a [windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md).|
 |[Update windowsAutopilotDeviceIdentity](../api/intune_enrollment_windowsautopilotdeviceidentity_update.md)|[windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md)|Update the properties of a [windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md) object.|
+|[assignUserToDevice action](../api/intune_enrollment_windowsautopilotdeviceidentity_assignusertodevice.md)|None|Assigns user to Autopilot devices.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The GUID for the object|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune_enrollment_windowsautopilotprofileassignmentstatus.md)|Profile assignment status of the Windows autopilot device. Possible values are: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune_enrollment_windowsautopilotprofileassignmentdetailedstatus.md)|Profile assignment detailed status of the Windows autopilot device. Possible values are: `none`, `hardwareRequirementsNotMet`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Profile set time of the Windows autopilot device.|
 |orderIdentifier|String|Order Identifier of the Windows autopilot device.|
 |purchaseOrderIdentifier|String|Purchase Order Identifier of the Windows autopilot device.|
@@ -26,13 +28,16 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |productKey|String|Product Key of the Windows autopilot device.|
 |manufacturer|String|Oem manufacturer of the Windows autopilot device.|
 |model|String|Model name of the Windows autopilot device.|
-|enrollmentState|[enrollmentState](../resources/intune_enrollment_enrollmentstate.md)|Intune enrollment state of the Windows autopilot device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
+|enrollmentState|[enrollmentState](../resources/intune_enrollment_enrollmentstate.md)|Intune enrollment state of the Windows autopilot device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows autopilot device.|
+|addressableUserName|String|Addressable user name.|
+|userPrincipalName|String|User Principal Name.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|Deployment profile assigned to the Windows autopilot device.|
+|deploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|Deployment profile currently assigned to the Windows autopilot device.|
+|intendedDeploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|Deployment profile intended to be assigned to the Windows autopilot device.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -47,6 +52,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
   "id": "String (identifier)",
   "deploymentProfileAssignmentStatus": "String",
+  "deploymentProfileAssignmentDetailedStatus": "String",
   "deploymentProfileAssignedDateTime": "String (timestamp)",
   "orderIdentifier": "String",
   "purchaseOrderIdentifier": "String",
@@ -55,7 +61,9 @@ Here is a JSON representation of the resource.
   "manufacturer": "String",
   "model": "String",
   "enrollmentState": "String",
-  "lastContactedDateTime": "String (timestamp)"
+  "lastContactedDateTime": "String (timestamp)",
+  "addressableUserName": "String",
+  "userPrincipalName": "String"
 }
 ```
 

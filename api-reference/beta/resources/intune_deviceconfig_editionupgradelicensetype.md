@@ -10,6 +10,7 @@ Edition Upgrade License type
 |:---|:---|:---|
 |productKey|0|Product Key Type|
 |licenseFile|1|License File Type|
+|notConfigured|2|NotConfigured|
 
 
 

@@ -1,5 +1,5 @@
 # Planner tasks and plans API overview
-Planner provides a simple and visual way for teams to organize their work. Customers can use Planner to create plans, organize and assign tasks, share progress, and collaborate on content.  lanner provides several interactive experiences including a task board, a charts page, and a schedule view, as well as integrations throughout Office 365.
+Planner provides a simple and visual way for teams to organize their work. Customers can use Planner to create plans, organize and assign tasks, share progress, and collaborate on content.  Planner provides several interactive experiences including a task board, a charts page, and a schedule view, as well as integrations throughout Office 365.
 
 **Office 365 Planner task board**
 
@@ -33,7 +33,13 @@ Are you working on repeated process or project type? You can use the Planner API
 |See all [my tasks](../api-reference/beta/api/planneruser_list_tasks.md) assigned to me across plans|GET [https://graph.microsoft.com/v1.0/me/planner/tasks/](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/planner/tasks/&version=v1.0)|
 |[Create a new task](../api-reference/v1.0/api/planner_post_tasks.md)|POST [https://graph.microsoft.com/v1.0/planner/tasks](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
 |[Update a task](../api-reference/v1.0/api/plannertask_update.md)|PATCH [https://graph.microsoft.com/v1.0/planner/tasks/{task-id}](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
-|[Delete a task](../api-reference/v1.0/api/plannertask_delete.md)|DELETE [https://graph.microsoft.com/v1.0/planner/tasks/<id>](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
+|[Delete a task](../api-reference/v1.0/api/plannertask_delete.md)|DELETE [https://graph.microsoft.com/v1.0/planner/tasks/{id}](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
+
+## API reference
+Looking for the API reference for this service?
+
+- [Planner API in Microsoft Graph v1.0](../api-reference/v1.0/resources/planner_overview.md)
+- [Planner API in Microsoft Graph beta](../api-reference/beta/resources/planner_overview.md)
 
 
 ## Next steps

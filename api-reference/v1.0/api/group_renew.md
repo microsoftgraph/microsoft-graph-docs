@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/renew
+POST /groups/{id}/renew
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ If successful, this method returns `204 No Content` response code. It does not r
   "name": "group_renew"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/renew
+POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 ```
 
 ##### Response

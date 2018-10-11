@@ -36,7 +36,7 @@ In the request body, supply the new value for **classifyAs**. For best performan
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|classifyAs|string| Specifies how incoming messages from a specific sender should always be classified as. Possible values are: `focused`, `other`.|
+|classifyAs|string| Specifies how incoming messages from a specific sender should always be classified as. The possible values are: `focused`, `other`.|
 
 ## Response
 

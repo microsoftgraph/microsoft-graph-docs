@@ -9,7 +9,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Not supported.  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduRoster.ReadWrite.All | 
+|Application | EduRoster.ReadWrite.All plus Member.Read.Hidden | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ The following is an example of the request.
   "name": "create_educationuser_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/11011/members/$ref
+POST https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/$ref
 Content-type: application/json
 Content-length: 56
 

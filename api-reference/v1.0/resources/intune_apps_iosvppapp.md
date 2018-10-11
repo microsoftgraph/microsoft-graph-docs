@@ -1,4 +1,4 @@
-﻿# iosVppApp resource type
+# iosVppApp resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -39,7 +39,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |licensingType|[vppLicensingType](../resources/intune_apps_vpplicensingtype.md)|The supported License Type.|
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The applicable iOS Device Type.|
 |vppTokenOrganizationName|String|The organization associated with the Apple Volume Purchase Program Token|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune_apps_vpptokenaccounttype.md)|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
 |vppTokenAppleId|String|The Apple Id associated with the given Apple Volume Purchase Program Token.|
 |bundleId|String|The Identity Name.|
 
@@ -51,12 +51,12 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.mobileApp",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosVppApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosVppApp",
@@ -98,6 +98,11 @@ Here is a JSON representation of the resource.
   "bundleId": "String"
 }
 ```
+
+
+
+
+
 
 
 

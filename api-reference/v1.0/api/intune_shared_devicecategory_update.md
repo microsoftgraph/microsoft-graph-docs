@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
-PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
+PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/deviceCategory
 ```
 
 ## Request headers
@@ -36,6 +36,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the device category. Read-only.|
+|**On-boarding**|
 |displayName|String|Display name for the device category.|
 |description|String|Optional description for the device category.|
 

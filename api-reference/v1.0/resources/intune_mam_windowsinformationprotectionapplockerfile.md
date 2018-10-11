@@ -1,4 +1,4 @@
-﻿# windowsInformationProtectionAppLockerFile resource type
+# windowsInformationProtectionAppLockerFile resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -25,12 +25,12 @@ Windows Information Protection AppLocker File
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionAppLockerFile"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLockerFile",
@@ -41,6 +41,11 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

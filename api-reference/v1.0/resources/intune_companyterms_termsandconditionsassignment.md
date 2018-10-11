@@ -1,4 +1,4 @@
-﻿# termsAndConditionsAssignment resource type
+# termsAndConditionsAssignment resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -22,12 +22,12 @@ A termsAndConditionsAssignment entity represents the assignment of a given Terms
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.termsAndConditionsAssignment"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
@@ -37,6 +37,11 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
+
+
+
+
 
 
 

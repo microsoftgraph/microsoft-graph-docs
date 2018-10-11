@@ -10,7 +10,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)||
+| &nbsp; &nbsp; **On-boarding** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -36,14 +37,19 @@ Do not supply a request body for this method.
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
+
 ### Request
+
 Here is an example of the request.
+
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 ``` http
 HTTP/1.1 204 No Content
 ```

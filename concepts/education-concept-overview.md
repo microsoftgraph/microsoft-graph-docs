@@ -41,7 +41,7 @@ The following are examples of a few scenarios enabled by the assignments API:
 - [Create a student dashboard to show which assignments are due by when](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationclass_list_assignments)
 
 
-## Enable school admins to manage identity and roster sync using School Data Sync Management (preview)
+### Enable school admins to manage identity and roster sync using School Data Sync Management (preview)
 
 [School Data Sync](https://sds.microsoft.com/) helps to automate the process of importing and synchronizing student identity and roster data from student information systems with Azure Active Directory (Azure AD) and Office 365. When the information is synchronized, you can use the roster APIs to read the roster information into the applications. If you're a system integrator setting up integration of a school's Student Information System with School Data Sync, you can use the [SDS management APIs](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationsynchronizationprofile) in Microsoft Graph to set up synchronization from either a CSV file or a supported SIS API connector.
 
@@ -49,6 +49,12 @@ School Data Sync management APIs support end-to-end scenarios for managing sync;
 
 - [Create a synchronization profile that automatically starts a sync](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationsynchronizationprofile_post)
 - Manage sync lifecycle with [pause](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationsynchronizationprofile_pause), [resume](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationsynchronizationprofile_resume) and [reset](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationsynchronizationprofile_reset) operations
+
+## API reference
+Looking for the API reference for this service?
+
+- [Education API in Microsoft Graph v1.0](../api-reference/v1.0/resources/education-overview.md)
+- [Education API in Microsoft Graph beta](../api-reference/beta/resources/education-overview.md)
 
 
 ## Next Steps

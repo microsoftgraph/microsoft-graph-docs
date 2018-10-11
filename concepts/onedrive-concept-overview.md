@@ -51,6 +51,12 @@ Use the [Notes API][] to access the contents of OneNote notebooks.
 With [webhooks][], your app can get notified when files change so you can quickly react.
 Use the [delta API][] to see what changed since the last time your app synchronized with the cloud.
 
+## API reference
+Looking for the API reference for this service?
+
+- [OneDrive file storage API in Microsoft Graph v1.0](../api-reference/v1.0/resources/onedrive.md)
+- [OneDrive file storage API in Microsoft Graph beta](../api-reference/beta/resources/onedrive.md)
+
 ## Next steps
 
 Find out more about [using the OneDrive API][Drive API] in Microsoft Graph v1.0.

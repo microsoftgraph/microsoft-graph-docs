@@ -39,6 +39,8 @@ The following table shows the properties that are required when you create the w
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -56,9 +58,15 @@ The following table shows the properties that are required when you create the w
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Quality Updates Pause Expiry datetime|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Feature Updates Pause Expiry datetime|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune_deviceconfig_windowsupdatetype.md)|Determines which branch devices will receive their updates from. Possible values are: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
-|previewBuildSetting|[windowsUpdateInsiderBuildControl](../resources/intune_deviceconfig_windowsupdateinsiderbuildcontrol.md)|Set the insider build control in the advanced options for Windows Update. Possible values are: `userDefined`, `allowed`, `notAllowed`.|
 |skipChecksBeforeRestart|Boolean|Set to skip all check before restart: Battery level = 40%, User presence, Display Needed, Presentation mode, Full screen mode, phone call state, game mode etc. |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune_deviceconfig_windowsupdateforbusinessupdateweeks.md)|Scheduled the update installation on the weeks of the month. Possible values are: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
+|qualityUpdatesPauseStartDateTime|String|Quality Updates Pause Start datetime|
+|featureUpdatesPauseStartDateTime|String|Feature Updates Pause Start datetime|
+|featureUpdatesRollbackWindowInDays|Int32|The number of days after a Feature Update for which a rollback is valid|
+|qualityUpdatesWillBeRolledBack|Boolean|Specifies whether to rollback Quality Updates on the next device check in|
+|featureUpdatesWillBeRolledBack|Boolean|Specifies whether to rollback Feature Updates on the next device check in|
+|qualityUpdatesRollbackStartDateTime|DateTimeOffset|Quality Updates Rollback Start datetime|
+|featureUpdatesRollbackStartDateTime|DateTimeOffset|Feature Updates Rollback Start datetime|
 
 
 
@@ -71,11 +79,15 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1078
+Content-length: 1591
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -96,9 +108,15 @@ Content-length: 1078
   "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
   "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
   "businessReadyUpdatesOnly": "all",
-  "previewBuildSetting": "allowed",
   "skipChecksBeforeRestart": true,
-  "updateWeeks": "firstWeek"
+  "updateWeeks": "firstWeek",
+  "qualityUpdatesPauseStartDateTime": "Quality Updates Pause Start Date Time value",
+  "featureUpdatesPauseStartDateTime": "Feature Updates Pause Start Date Time value",
+  "featureUpdatesRollbackWindowInDays": 2,
+  "qualityUpdatesWillBeRolledBack": true,
+  "featureUpdatesWillBeRolledBack": true,
+  "qualityUpdatesRollbackStartDateTime": "2016-12-31T23:57:01.05526-08:00",
+  "featureUpdatesRollbackStartDateTime": "2017-01-01T00:03:21.6080517-08:00"
 }
 ```
 
@@ -107,12 +125,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1186
+Content-Length: 1699
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
   "id": "4928dd6a-dd6a-4928-6add-28496add2849",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -134,9 +156,15 @@ Content-Length: 1186
   "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
   "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
   "businessReadyUpdatesOnly": "all",
-  "previewBuildSetting": "allowed",
   "skipChecksBeforeRestart": true,
-  "updateWeeks": "firstWeek"
+  "updateWeeks": "firstWeek",
+  "qualityUpdatesPauseStartDateTime": "Quality Updates Pause Start Date Time value",
+  "featureUpdatesPauseStartDateTime": "Feature Updates Pause Start Date Time value",
+  "featureUpdatesRollbackWindowInDays": 2,
+  "qualityUpdatesWillBeRolledBack": true,
+  "featureUpdatesWillBeRolledBack": true,
+  "qualityUpdatesRollbackStartDateTime": "2016-12-31T23:57:01.05526-08:00",
+  "featureUpdatesRollbackStartDateTime": "2017-01-01T00:03:21.6080517-08:00"
 }
 ```
 

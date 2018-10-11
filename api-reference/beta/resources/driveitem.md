@@ -179,6 +179,7 @@ The URL will only be available for a short period of time (1 hour) before it is 
 | [Add permissions](../api/driveitem_invite.md)            | `POST /drive/items/{item-id}/invite`
 | [List permissions](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Delete permission](../api/permission_delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [Get WebSocket channel][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 
 
 ## Remarks
@@ -195,6 +196,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [folder]: folder.md
 [getting previous versions]: ../api/driveitem_list_versions.md
 [getting thumbnails]: ../api/driveitem_list_thumbnails.md
+[getWebSocket]: ../api/driveItem_subscriptions_socketIo.md
 [identitySet]: identitySet.md
 [image]: image.md
 [itemActivity]: itemActivity.md

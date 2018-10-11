@@ -34,10 +34,10 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
+|id|String|Key of the entity.|
 |setting|String|The setting class name and property name.|
 |settingName|String|Name of the setting.|
 |platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|Setting platform. Possible values are: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
-|id|String|Key of the entity.|
 |unknownDeviceCount|Int32|Number of unknown devices|
 |notApplicableDeviceCount|Int32|Number of not applicable devices|
 |compliantDeviceCount|Int32|Number of compliant devices|
@@ -82,10 +82,10 @@ Content-Length: 440
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+  "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
   "setting": "Setting value",
   "settingName": "Setting Name value",
   "platformType": "iOS",
-  "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
   "unknownDeviceCount": 2,
   "notApplicableDeviceCount": 8,
   "compliantDeviceCount": 4,
@@ -95,6 +95,11 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
+
+
+
+
+
 
 
 

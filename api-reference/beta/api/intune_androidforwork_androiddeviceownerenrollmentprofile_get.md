@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 723
+Content-Length: 790
 
 {
   "value": {
@@ -61,6 +61,7 @@ Content-Length: 723
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "tokenValue": "Token Value value",
+    "tokenCreationDateTime": "2017-01-01T00:01:38.5314127-08:00",
     "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
     "enrolledDeviceCount": 3,
     "qrCodeContent": "Qr Code Content value",

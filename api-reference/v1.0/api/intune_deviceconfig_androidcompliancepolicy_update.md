@@ -44,7 +44,7 @@ The following table shows the properties that are required when you create the [
 |passwordMinimumLength|Int32|Minimum password length. Valid values 4 to 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|Type of characters in password. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
-|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
+|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 65535|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
 |securityPreventInstallAppsFromUnknownSources|Boolean|Require that devices disallow installation of apps from unknown sources.|
 |securityDisableUsbDebugging|Boolean|Disable USB debugging on Android devices.|
@@ -142,6 +142,11 @@ Content-Length: 1331
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
+
+
+
+
 
 
 

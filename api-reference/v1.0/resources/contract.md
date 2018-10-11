@@ -27,12 +27,13 @@ None
 ## JSON representation
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.Contract"
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.contract"
 }-->
 
 ```json

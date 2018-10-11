@@ -50,7 +50,7 @@ Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 
 **Note:** The location URL returned may not be on the Microsoft Graph API endpoint.
 
-In many cases this many be the end of the request, since the copy action will complete without the app doing any additional work.
+In many cases this may be the end of the request, since the copy action will complete without the app doing any additional work.
 However, if your app needs to show the status of the copy action or ensure that it completes without error, it can do so using the monitor URL.
 
 ## Retrieve a status report from the monitor URL
@@ -58,7 +58,7 @@ However, if your app needs to show the status of the copy action or ensure that 
 To check on the status of the copy action, the app makes a request to the URL provided in the previous response.
 *Note:* This request does not require authentication, since the URL is short-lived and unique to the original caller. 
 
-<!-- { "blockType": "request", "name": "lro-check-status", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status", "scopes": "files.readwrite" } -->
 
 ```http
 GET https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
@@ -87,7 +87,7 @@ The app can continue to poll the monitor URL to request status updates and keep 
 After a few seconds the copy operation has completed.
 This time when the app makes a request to the monitor URL the response is a redirection to the finished result of the action.
 
-<!-- { "blockType": "request", "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
 
 ```http
 GET https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
@@ -113,13 +113,17 @@ Content-type: application/json
 Once the job has completed, the monitor URL returns the resourceId of the result, in this case the new copy of the original item.
 You can address this new item using the resourceId, for example:
 
-<!-- { "blockType": "request", "name": "lro-copy-item-example-complete", "scopes": "files.readwrite" } -->
+<!-- {
+  "blockType": "request",
+  "name": "lro-copy-item-example-complete",
+  "scopes": "files.readwrite"
+} -->
 
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/01MOWKYVJML57KN2ANMBA3JZJS2MBGC7KM
+GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem" } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -153,5 +157,11 @@ The same [permissions](./permissions_reference.md) that are required to perform 
   "description": "Monitor the progress of long-running actions in the API.",
   "keywords": "monitor,long,running,operation,action",
   "section": "documentation",
+  "suppressions": [
+    "Error: lro-check-status:
+      Unable to locate a definition for resource type: microsoft.graph.asyncJobStatus",
+    "Error: lro-check-status-complete:
+      Unable to locate a definition for resource type: microsoft.graph.asyncJobStatus"
+  ],
   "tocPath": "Concepts/Long running actions"
 } -->

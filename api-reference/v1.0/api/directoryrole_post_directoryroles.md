@@ -21,16 +21,16 @@ POST /directoryRoles
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | application/json  |
+| Content-Type  | string  | application/json  |
 
 ## Request body
 In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.
 
 The following table shows the properties that are required when you activate a directory role.
 
-|Required parameter | Type | Description|
+|Parameter | Type | Description|
 |:---------|:---------|:---------|
-|roleTemplateId | string | The ID of the [directoryRoleTemplate](../resources/directoryroletemplate.md) that the role is based on. This is the only property that may be specified in the request.|
+|roleTemplateId | string | Required. The ID of the [directoryRoleTemplate](../resources/directoryroletemplate.md) that the role is based on. This is the only property that may be specified in the request.|
 
 ## Response
 

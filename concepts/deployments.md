@@ -9,15 +9,15 @@ Current national clouds include:
 - Microsoft Cloud Germany
 - Azure and Office 365 operated by 21Vianet in China
 
-This article provides information about the different national cloud deployments of Microsoft Graph and the capabilities within each deployment that are available to developers. 
+This article provides information about the different national cloud deployments of Microsoft Graph and the capabilities within each deployment that are available to developers.
 
 ## Microsoft Graph and Microsoft Graph Explorer service root endpoints
 
-The following table shows the service root endpoints for Microsoft Graph and Microsoft Graph Explorer for each National cloud. 
+The following table shows the service root endpoints for Microsoft Graph and Microsoft Graph Explorer for each National cloud.
 
 | National Cloud | Microsoft Graph | Microsoft Graph Explorer
 |---------------------------|----------------|----------------|
-| Microsoft Graph operated by 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
+| Microsoft Graph China operated by 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
 | Microsoft Graph Germany | https://graph.microsoft.de | Not supported. |
 | Microsoft Graph for US Government | https://graph.microsoft.com | Not supported. |
 | Microsoft Graph global service | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
@@ -26,24 +26,24 @@ The following table shows the service root endpoints for Microsoft Graph and Mic
 
 ## Azure AD OpenID Connect and OAuth2.0 endpoints
 
-The following table lists the base URLs for the Azure Active Directory (Azure AD) endpoints used to acquire tokens to call Microsoft Graph for each national cloud. 
+The following table lists the base URLs for the Azure Active Directory (Azure AD) endpoints used to acquire tokens to call Microsoft Graph for each national cloud.
 
 | National Cloud | Azure AD root endpoint |
 |---------------------------|----------------|
-| Microsoft Graph operated by 21Vianet |https://login.chinacloudapi.cn | 
-| Microsoft Graph Germany | https://login.microsoftonline.de | 
-| Microsoft Graph for US Government | https://login-us.microsoftonline.com | 
-| Microsoft Graph (global service) | https://login.microsoftonline.com | 
+| Azure AD China operated by 21Vianet |https://login.chinacloudapi.cn |
+| Azure AD Germany | https://login.microsoftonline.de |
+| Azure AD for US Government | https://login.microsoftonline.us |
+| Azure AD (global service) | https://login.microsoftonline.com |
 
 Requests to the Azure AD authorization or token endpoints can be formed using the appropriate region-specific base URL. For example, for Germany:
 
 - The authorization common endpoint is https://login.microsoftonline.de/common/oauth2/authorize.
 - The token common endpoint is https://login.microsoftonline.de/common/oauth2/token.
 
-Tenant-specific endpoints can be formed by replacing "common" in the URLs above with either the tenant ID or a verified domain for the tenant. 
+Tenant-specific endpoints can be formed by replacing "common" in the URLs above with either the tenant ID or a verified domain for the tenant.
 Whether you use the common or tenant-specific endpoints will depend upon the requirements of your app and the authentication flow you are using to get tokens. To learn more about Azure AD access tokens and Microsoft Graph, see [Get auth tokens](./auth_overview.md).
 
-> **Note:** The [Azure AD v2.0 authorization and token endpoints](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) are available on the global service only; they are not yet supported for use with national cloud deployments. 
+> **Note:** The [Azure AD v2.0 authorization and token endpoints](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) are available on the global service only; they are not yet supported for use with national cloud deployments.
 
 ## Supported features
 

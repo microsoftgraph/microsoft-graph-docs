@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/tasks/<id>
+GET /planner/tasks/{id}
 ```
 
 ## Request headers
@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "get_plannertask"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh
+GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

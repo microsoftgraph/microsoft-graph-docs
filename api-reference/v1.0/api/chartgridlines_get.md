@@ -13,9 +13,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/majorgridlines
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/minorGridlines
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/majorGridlines
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorGridlines
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -31,7 +31,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [ChartGridlines](../resources/chartgridlines.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [WorkbookChartGridlines](../resources/chartgridlines.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -40,14 +40,14 @@ Here is an example of the request.
   "name": "get_chartgridlines"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/minorGridlines
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartGridLines"
+  "@odata.type": "microsoft.graph.workbookChartGridlines"
 } -->
 ```http
 HTTP/1.1 200 OK

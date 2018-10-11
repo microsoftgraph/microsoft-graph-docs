@@ -20,13 +20,23 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosPkcsCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidPkcsCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows81SCEPCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidWorkProfileScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidForWorkImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/microsoft.graph.androidForWorkPkcsCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/microsoft.graph.androidForWorkScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate/microsoft.graph.windowsPhone81SCEPCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/microsoft.graph.windows10PkcsCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/microsoft.graph.windows81SCEPCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/microsoft.graph.windows10ImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/microsoft.graph.windowsPhone81ImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 ```
 
 ## Request headers
@@ -43,19 +53,30 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|devicePlatform|[devicePlatformType](../resources/intune_deviceconfig_deviceplatformtype.md)|Device platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`.|
+|devicePlatform|[devicePlatformType](../resources/intune_shared_deviceplatformtype.md)|Device platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
 |certificateKeyUsage|[keyUsages](../resources/intune_deviceconfig_keyusages.md)|Key usage. Possible values are: `keyEncipherment`, `digitalSignature`.|
+|certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune_deviceconfig_certificatevalidityperiodscale.md)|Validity period units. Possible values are: `days`, `months`, `years`.|
+|certificateIssuanceState|[certificateIssuanceStates](../resources/intune_deviceconfig_certificateissuancestates.md)|Issuance State. Possible values are: `unknown`, `challengeIssued`, `challengeIssueFailed`, `requestCreationFailed`, `requestSubmitFailed`, `challengeValidationSucceeded`, `challengeValidationFailed`, `issueFailed`, `issuePending`, `issued`, `responseProcessingFailed`, `responsePending`, `enrollmentSucceeded`, `enrollmentNotNeeded`, `revoked`, `removedFromCollection`, `renewVerified`, `installFailed`, `installed`, `deleteFailed`, `deleted`, `renewalRequested`, `requested`.|
+|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune_deviceconfig_keystorageprovideroption.md)|Key Storage Provider. Possible values are: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
+|certificateSubjectNameFormat|[subjectNameFormat](../resources/intune_deviceconfig_subjectnameformat.md)|Subject name format. Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
+|certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune_deviceconfig_subjectalternativenametype.md)|Subject alternative name format. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
+|certificateRevokeStatus|[certificateRevocationStatus](../resources/intune_deviceconfig_certificaterevocationstatus.md)|Revoke status. Possible values are: `none`, `pending`, `issued`, `failed`, `revoked`.|
 |certificateProfileDisplayName|String|Certificate profile display name|
 |deviceDisplayName|String|Device display name|
 |userDisplayName|String|User display name|
-|serverUrl|String|Server URL|
 |certificateExpirationDateTime|DateTimeOffset|Certificate expiry date|
+|certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Last certificate issuance state change|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Last certificate issuance state change|
 |certificateIssuer|String|Issuer|
 |certificateThumbprint|String|Thumbprint|
 |certificateSerialNumber|String|Serial number|
 |certificateKeyLength|Int32|Key length|
-|enhancedKeyUsage|String|Extended key usage|
+|certificateEnhancedKeyUsage|String|Extended key usage|
+|certificateValidityPeriod|Int32|Validity period|
+|certificateSubjectNameFormatString|String|Subject name format string for custom subject name formats|
+|certificateSubjectAlternativeNameFormatString|String|Subject alternative name format string for custom formats|
+|certificateIssuanceDateTime|DateTimeOffset|Issuance date|
+|certificateErrorCode|Int32|Error code|
 
 
 
@@ -66,24 +87,35 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosPkcsCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 Content-type: application/json
-Content-length: 727
+Content-length: 1449
 
 {
   "devicePlatform": "androidForWork",
   "certificateKeyUsage": "digitalSignature",
+  "certificateValidityPeriodUnits": "months",
+  "certificateIssuanceState": "challengeIssued",
+  "certificateKeyStorageProvider": "useTpmKspOtherwiseFail",
+  "certificateSubjectNameFormat": "commonNameIncludingEmail",
+  "certificateSubjectAlternativeNameFormat": "emailAddress",
+  "certificateRevokeStatus": "pending",
   "certificateProfileDisplayName": "Certificate Profile Display Name value",
   "deviceDisplayName": "Device Display Name value",
   "userDisplayName": "User Display Name value",
-  "serverUrl": "https://example.com/serverUrl/",
   "certificateExpirationDateTime": "2017-01-01T00:02:14.9489247-08:00",
+  "certificateLastIssuanceStateChangedDateTime": "2017-01-01T00:00:27.7468732-08:00",
   "lastCertificateStateChangeDateTime": "2017-01-01T00:01:10.7144639-08:00",
   "certificateIssuer": "Certificate Issuer value",
   "certificateThumbprint": "Certificate Thumbprint value",
   "certificateSerialNumber": "Certificate Serial Number value",
   "certificateKeyLength": 4,
-  "enhancedKeyUsage": "Enhanced Key Usage value"
+  "certificateEnhancedKeyUsage": "Certificate Enhanced Key Usage value",
+  "certificateValidityPeriod": 9,
+  "certificateSubjectNameFormatString": "Certificate Subject Name Format String value",
+  "certificateSubjectAlternativeNameFormatString": "Certificate Subject Alternative Name Format String value",
+  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
+  "certificateErrorCode": 4
 }
 ```
 
@@ -92,24 +124,35 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 844
+Content-Length: 1566
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceCertificateState",
   "id": "d99bc884-c884-d99b-84c8-9bd984c89bd9",
   "devicePlatform": "androidForWork",
   "certificateKeyUsage": "digitalSignature",
+  "certificateValidityPeriodUnits": "months",
+  "certificateIssuanceState": "challengeIssued",
+  "certificateKeyStorageProvider": "useTpmKspOtherwiseFail",
+  "certificateSubjectNameFormat": "commonNameIncludingEmail",
+  "certificateSubjectAlternativeNameFormat": "emailAddress",
+  "certificateRevokeStatus": "pending",
   "certificateProfileDisplayName": "Certificate Profile Display Name value",
   "deviceDisplayName": "Device Display Name value",
   "userDisplayName": "User Display Name value",
-  "serverUrl": "https://example.com/serverUrl/",
   "certificateExpirationDateTime": "2017-01-01T00:02:14.9489247-08:00",
+  "certificateLastIssuanceStateChangedDateTime": "2017-01-01T00:00:27.7468732-08:00",
   "lastCertificateStateChangeDateTime": "2017-01-01T00:01:10.7144639-08:00",
   "certificateIssuer": "Certificate Issuer value",
   "certificateThumbprint": "Certificate Thumbprint value",
   "certificateSerialNumber": "Certificate Serial Number value",
   "certificateKeyLength": 4,
-  "enhancedKeyUsage": "Enhanced Key Usage value"
+  "certificateEnhancedKeyUsage": "Certificate Enhanced Key Usage value",
+  "certificateValidityPeriod": 9,
+  "certificateSubjectNameFormatString": "Certificate Subject Name Format String value",
+  "certificateSubjectAlternativeNameFormatString": "Certificate Subject Alternative Name Format String value",
+  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
+  "certificateErrorCode": 4
 }
 ```
 

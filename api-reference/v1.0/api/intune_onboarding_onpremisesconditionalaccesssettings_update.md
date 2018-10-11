@@ -77,14 +77,19 @@ Content-Length: 318
   "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "String"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "String"
   ],
   "overrideDefaultRule": true
 }
 ```
+
+
+
+
+
 
 
 

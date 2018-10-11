@@ -10,7 +10,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)||
+| &nbsp; &nbsp; **Troubleshooting** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -30,15 +31,14 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 |Accept|application/json|
 
 ## Request body
-In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|skip|Int32|Not yet documented|
-|top|Int32|Not yet documented|
 |filter|String|Not yet documented|
 |skipToken|String|Not yet documented|
+|skip|Int32|Not yet documented|
+|top|Int32|Not yet documented|
 
 
 

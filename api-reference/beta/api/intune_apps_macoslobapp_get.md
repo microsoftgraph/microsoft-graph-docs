@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1716
+Content-Length: 1753
 
 {
   "value": {
@@ -103,7 +103,8 @@ Content-Length: 1716
     "md5HashChunkSize": 0,
     "md5Hash": [
       "Md5Hash value"
-    ]
+    ],
+    "ignoreVersionDetection": true
   }
 }
 ```

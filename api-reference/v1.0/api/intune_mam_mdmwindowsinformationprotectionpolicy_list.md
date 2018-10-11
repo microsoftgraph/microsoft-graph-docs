@@ -50,7 +50,7 @@ Content-Length: 4607
 {
   "value": [
     {
-      "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
+      "@odata.type": "#microsoft.intune_mam_graph.windowsInformationProtectionPolicy",
       "displayName": "Display Name value",
       "description": "Description value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
@@ -179,6 +179,11 @@ Content-Length: 4607
   ]
 }
 ```
+
+
+
+
+
 
 
 

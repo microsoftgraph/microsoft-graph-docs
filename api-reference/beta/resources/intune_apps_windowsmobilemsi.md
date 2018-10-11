@@ -43,6 +43,7 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |productVersion|String|The product version of Windows Mobile MSI Line of Business (LoB) app.|
 |ignoreVersionDetection|Boolean|A boolean to control whether the app's version will be used to detect the app after it is installed on a device. Set this to true for Windows Mobile MSI Line of Business (LoB) apps that use a self update feature.|
 |identityVersion|String|The identity version.|
+|useDeviceContext|Boolean|Indicates whether to install a dual-mode MSI in the device context. If true, app will be installed for all users. If false, app will be installed per-user. If null, service will use the MSI package's default install context. In case of dual-mode MSI, this default will be per-user.  Cannot be set for non-dual-mode apps.  Cannot be changed after initial creation of the application.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -91,7 +92,8 @@ Here is a JSON representation of the resource.
   "productCode": "String",
   "productVersion": "String",
   "ignoreVersionDetection": true,
-  "identityVersion": "String"
+  "identityVersion": "String",
+  "useDeviceContext": true
 }
 ```
 

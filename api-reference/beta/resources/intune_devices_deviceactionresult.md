@@ -9,7 +9,7 @@ Device action result
 |Property|Type|Description|
 |:---|:---|:---|
 |actionName|String|Action name|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|State of the action. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune_shared_actionstate.md)|State of the action. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Time the action was initiated|
 |lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated|
 
@@ -19,7 +19,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceActionResult"
 }
 -->

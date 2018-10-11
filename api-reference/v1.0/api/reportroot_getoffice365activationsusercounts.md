@@ -1,6 +1,6 @@
 # reportRoot: getOffice365ActivationsUserCounts
 
-Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices.
+Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
@@ -41,6 +41,7 @@ The CSV file has the following headers for columns.
 - Product Type
 - Assigned
 - Activated
+- Shared Computer Activation
 
 ## Example
 
@@ -48,8 +49,9 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getoffice365activationsusercounts"
 }-->
 
@@ -61,7 +63,11 @@ GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationsUserCounts
 
 The following is an example of the response.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -71,15 +77,11 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Product Type,Assigned,Activated
+Report Refresh Date,Product Type,Assigned,Activated,Shared Computer Activation
 ```

@@ -8,38 +8,10 @@ from a specified calendar. The list contains single instance meetings and series
 To get expanded event instances, you can [get the calendar view](calendar_list_calendarview.md), or 
 [get the instances of an event](event_list_instances.md).
 
-### Get events in another user's calendar
+There are two scenarios where an app can get events in another user's calendar:
 
-If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to 
-get events from another user's calendar. This section focuses on scenarios that involve delegated permissions.
-
-For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a calendar with John. 
-You can get the events in that shared calendar by specifying Garth’s user ID (or user principal name) in the example query shown below.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/events
-```
-
-This capability applies to all the supported GET events operations for an individual user, as listed in the [HTTP request](#http-request) section below. 
-It also applies if Garth has delegated his entire mailbox to John.
-
-If Garth has not shared his calendar with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
-will return an error. In such cases, specifying a user ID or user principal name only works for getting events in the signed-in user’s own calendars, 
-and the query is equivalent to using the /me shortcut:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/events
-```
-
-This capability is available in only GET operations of:
-
-- Shared contact folders, calendars, and message folders 
-- Contacts, events, and messages in shared folders
-- The above resources in delegated mailboxes
-
-This capability is not available in other operations for contacts, events, messages, and their folders.
+* If the app has application permissions, or,
+* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user. See [details and an example](../../../concepts/outlook-get-shared-events-calendars.md).
 
 
 ### Support various time zones

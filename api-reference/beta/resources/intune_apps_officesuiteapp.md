@@ -37,13 +37,15 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
 |autoAcceptEula|Boolean|The value to accept the EULA automatically on the enduser's device.|
 |productIds|[officeProductId](../resources/intune_apps_officeproductid.md) collection|The Product Ids that represent the Office365 Suite SKU.|
-|excludedApps|[excludedApps](../resources/intune_apps_excludedapps.md)|The property to represent the Apps which are excluded from the selected Office365 Product Id.|
-|useSharedComputerActivation|Boolean|The property to represent that whether the shared computer activation is used not for Office365 App Suite.|
+|excludedApps|[excludedApps](../resources/intune_apps_excludedapps.md)|The property to represent the apps which are excluded from the selected Office365 Product Id.|
+|useSharedComputerActivation|Boolean|The property to represent that whether the shared computer activation is used not for Office365 app suite.|
 |updateChannel|[officeUpdateChannel](../resources/intune_apps_officeupdatechannel.md)|The property to represent the Office365 Update Channel. Possible values are: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
-|officePlatformArchitecture|[windowsArchitecture](../resources/intune_apps_windowsarchitecture.md)|The property to represent the Office365 App Suite version. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
-|localesToInstall|String collection|The property to represent the locales which are installed when the Apps from Office365 is installed. It uses standard RFC 6033. Ref: https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
+|officePlatformArchitecture|[windowsArchitecture](../resources/intune_apps_windowsarchitecture.md)|The property to represent the Office365 app suite version. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|localesToInstall|String collection|The property to represent the locales which are installed when the apps from Office365 is installed. It uses standard RFC 6033. Ref: https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune_apps_officesuiteinstallprogressdisplaylevel.md)|To specify the level of display for the Installation Progress Setup UI on the Device. Possible values are: `none`, `full`.|
-|shouldUninstallOlderVersionsOfOffice|Boolean|The property to determine whether to uninstall existing Office MSI if an OfficeSuiteApp is deployed to the device or not.|
+|shouldUninstallOlderVersionsOfOffice|Boolean|The property to determine whether to uninstall existing Office MSI if an Office365 app suite is deployed to the device or not.|
+|targetVersion|String|The property to represent the specific target version for the Office365 app suite that should be remained deployed on the devices.|
+|updateVersion|String|The property to represent the update version in which the specific target version is available for the Office365 app suite.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -111,7 +113,9 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "installProgressDisplayLevel": "String",
-  "shouldUninstallOlderVersionsOfOffice": true
+  "shouldUninstallOlderVersionsOfOffice": true,
+  "targetVersion": "String",
+  "updateVersion": "String"
 }
 ```
 

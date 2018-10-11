@@ -54,10 +54,10 @@ Content-Length: 494
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+    "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
     "setting": "Setting value",
     "settingName": "Setting Name value",
     "platformType": "androidForWork",
-    "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
     "unknownDeviceCount": 2,
     "notApplicableDeviceCount": 8,
     "compliantDeviceCount": 4,

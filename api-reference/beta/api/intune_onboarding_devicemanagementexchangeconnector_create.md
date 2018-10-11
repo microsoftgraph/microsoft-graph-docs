@@ -40,7 +40,8 @@ The following table shows the properties that are required when you create the d
 |lastSyncDateTime|DateTimeOffset|Last sync time for the Exchange Connector|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Exchange Connector Status. Possible values are: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|String|Email address used to configure the Service To Service Exchange Connector.|
-|serverName|String|The name of the server hosting the Exchange Connector.|
+|serverName|String|The name of the Exchange server.|
+|connectorServerName|String|The name of the server hosting the Exchange Connector.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|The type of Exchange Connector Configured. Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |version|String|The version of the ExchangeConnectorAgent|
 |exchangeAlias|String|An alias assigned to the Exchange server|
@@ -57,7 +58,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/exchangeConnectors
 Content-type: application/json
-Content-length: 433
+Content-length: 490
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -65,6 +66,7 @@ Content-length: 433
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
   "serverName": "Server Name value",
+  "connectorServerName": "Connector Server Name value",
   "exchangeConnectorType": "hosted",
   "version": "Version value",
   "exchangeAlias": "Exchange Alias value",
@@ -77,7 +79,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 482
+Content-Length: 539
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -86,6 +88,7 @@ Content-Length: 482
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
   "serverName": "Server Name value",
+  "connectorServerName": "Connector Server Name value",
   "exchangeConnectorType": "hosted",
   "version": "Version value",
   "exchangeAlias": "Exchange Alias value",

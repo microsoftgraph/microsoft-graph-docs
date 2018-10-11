@@ -40,6 +40,7 @@ The following table shows the properties that are required when you create the [
 |displayName|String|The display or friendly name of the role Assignment. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |description|String|Description of the Role Assignment. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |scopeMembers|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|scopeType|[roleAssignmentScopeType](../resources/intune_rbac_roleassignmentscopetype.md)|Specifies the type of scope for a Role Assignment. Default type 'ResourceScope' allows assignment of ResourceScopes. For 'AllDevices', 'AllLicensedUsers', and 'AllDevicesAndLicensedUsers', the ResourceScopes property should be left empty. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md). Possible values are: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`.|
 |resourceScopes|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.|
 
@@ -54,7 +55,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 Content-type: application/json
-Content-length: 237
+Content-length: 267
 
 {
   "displayName": "Display Name value",
@@ -62,6 +63,7 @@ Content-length: 237
   "scopeMembers": [
     "Scope Members value"
   ],
+  "scopeType": "allDevices",
   "resourceScopes": [
     "Resource Scopes value"
   ],
@@ -76,7 +78,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 361
+Content-Length: 391
 
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleAssignment",
@@ -86,6 +88,7 @@ Content-Length: 361
   "scopeMembers": [
     "Scope Members value"
   ],
+  "scopeType": "allDevices",
   "resourceScopes": [
     "Resource Scopes value"
   ],

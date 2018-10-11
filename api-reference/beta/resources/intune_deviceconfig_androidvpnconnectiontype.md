@@ -14,7 +14,6 @@ Android VPN connection type.
 |dellSonicWallMobileConnect|3|Dell SonicWALL Mobile Connection.|
 |checkPointCapsuleVpn|4|Check Point Capsule VPN.|
 |citrix|5|Citrix|
-|paloAltoGlobalProtect|6|Palo Alto Networks GlobalProtect.|
 
 
 

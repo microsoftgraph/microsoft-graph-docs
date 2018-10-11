@@ -34,7 +34,7 @@ Here is a JSON representation of the resource
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|String|A reason for not returning any meeting suggestions. Possible values are: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, or `unknown`. This property is an empty string if the **meetingTimeSuggestions** property does include any meeting suggestions.|
+|emptySuggestionsReason|String|A reason for not returning any meeting suggestions. The possible values are: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, or `unknown`. This property is an empty string if the **meetingTimeSuggestions** property does include any meeting suggestions.|
 |meetingTimeSuggestions|[meetingTimeSuggestion](meetingTimeSuggestion.md) collection|An array of meeting suggestions.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -83,7 +83,7 @@ composer update
     
 3. Add an */oauth* route to the **app** > **Http** > **routes.php** file. To add the route, copy the following code after the default route declaration. Insert the **application ID** and **password** of your app in the placeholder marked with **\<YOUR_APPLICATION_ID\>** and **\<YOUR_PASSWORD\>** respectively.
     ```php
-    Route::get('/oauth', function () {
+    Route::get('/oauth', function (Request $request) {
         $provider = new \League\OAuth2\Client\Provider\GenericProvider([
             'clientId'                => '<YOUR_APPLICATION_ID>',
             'clientSecret'            => '<YOUR_PASSWORD>',

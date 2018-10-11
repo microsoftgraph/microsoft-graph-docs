@@ -1,4 +1,4 @@
-﻿# roleDefinition resource type
+# roleDefinition resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -28,12 +28,12 @@ The Role Definition resource. The role definition is the foundation of role base
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleDefinition"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.roleDefinition",
@@ -59,6 +59,11 @@ Here is a JSON representation of the resource.
   "isBuiltIn": true
 }
 ```
+
+
+
+
+
 
 
 

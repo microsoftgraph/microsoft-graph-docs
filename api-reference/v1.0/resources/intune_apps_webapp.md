@@ -1,4 +1,4 @@
-﻿# webApp resource type
+# webApp resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -43,12 +43,12 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.mobileApp",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.webApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.webApp",
@@ -74,6 +74,11 @@ Here is a JSON representation of the resource.
   "useManagedBrowser": true
 }
 ```
+
+
+
+
+
 
 
 

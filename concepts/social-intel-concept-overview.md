@@ -5,7 +5,7 @@ The hundreds of millions of users of Microsoft 365 cloud services form part of t
 - "Who should this user contact for information on this topic?"
 - "Which documents are most interesting to this person?"
 
-You can use the people API and insights API in Microsoft Graph to build smarter apps that can access the relevant people and documents for a user.
+You can use the people API and insights API in Microsoft Graph to build smarter apps that can, respectively, access the relevant people and documents for a user.
 
 The people API returns people ordered by relevance to a user, based on that user's contacts, social networks, organization directory, and recent communications on email and Skype. This is particularly useful for people-picking scenarios.
 
@@ -17,13 +17,13 @@ The insights API uses advanced analytics and machine learning to provide the mos
 
 The people API returns data of a single entity, [person](../api-reference/v1.0/resources/person.md), which includes typical data of an individual in today's business world. What makes this **person** data especially useful is its _relevance_ with respect to a Microsoft Graph user. Relevance is noted in a relevance score of each person, calculated based on the user's communication and collaboration patterns and business relationships. There are 3 main types of application of this _relevance_ data.
 
-### Browse people relevant to the signed-in user
+### Browse people by relevance
 
-With [authorization](people_example.md#authorization) by the signed-in user, you can get a collection of **person** objects, starting by default with the most relevant to the signed-in user. You can further [customize](people_example.md#browse-people) the collection of **person** objects to be returned in the response by specifying query parameters.
+You can browse people who are related to the signed-in user or to some other user in the signed-in user's organization, provided you have got the appropriate [authorization](people_example.md#authorization). You get a collection of **person** objects that are ordered by relevance. You can further [customize](people_example.md#browse-people) the collection of **person** objects that is returned in the response by specifying the query parameters `top`, `skip`, `orderby`, `select`, and `filter`.
 
 ### Fuzzy searches based on people criteria
 
-The people API lets you search for people relevant to the signed-in user or other users in the signed-in user’s organization, provided that respectively, your app has got permissions by the signed-in user or by the administrator. (Read more on [people permissions](permissions_reference.md#people-permissions).)
+The people API lets you search for people relevant to the signed-in user, provided that your app has got permissions by that user. (Read more on [people permissions](permissions_reference.md#people-permissions).)
 
 Fuzzy searches return results based on an exact match and also on inferences about the intent of the search. To illustrate this, the following example returns **person** objects relevant to the signed-in user whose name, _or email address_, contains a word that starts with 'j'.
 
@@ -43,7 +43,7 @@ The following example illustrates inferences about the intent of a search on the
 GET /me/people/?$search="topic:beetle" 
 ```
 
-A fuzzy search in the topic data index return instances that mean the beetle insect, the iconic Volkswagen Beetle car, and other definitions.
+A fuzzy search in the topic data index return instances that mean the beetle insect, the iconic Volkswagen Beetle car, the Beatles band, and other definitions.
 
 
 ## Why integrate with document-based insights (preview)?
@@ -75,6 +75,12 @@ The insights API provides a similar functionality with the [used](../api-referen
 **Figure 2. Outlook on the web showing a people card for a user**
 
 ![Screenshot of a people card for a user in Outlook on the web, showing recent files](images/peoplecard_concept.png)
+
+## API reference
+Looking for the API reference for these services?
+
+- [People API in Microsoft Graph v1.0](../api-reference/v1.0/resources/social_overview.md)
+- [API for social intelligence and analytics in Microsoft Graph beta](../api-reference/beta/resources/social_overview.md)
 
 ## Next steps
 

@@ -3,6 +3,7 @@
 Create a draft to forward the specified [message](../resources/message.md). You can then [update](../api/message_update.md) the draft to add content to the **body** or change other message properties, or, simply [send](../api/message_send.md) the draft.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -12,19 +13,24 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Mail.ReadWrite |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/messages/{id}/createForward
 POST /users/{id | userPrincipalName}/messages/{id}/createForward
 POST /me/mailFolders/{id}/messages/{id}/createForward
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForward
 ```
+
 ## Request headers
+
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -32,26 +38,32 @@ Do not supply a request body for this method.
 If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.
 
 ## Example
+
 Here is an example of how to call this API.
+
 ##### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "message_createforward"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
 ```
 
 ##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
+
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 248
 

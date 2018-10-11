@@ -1,8 +1,9 @@
 # Best practices for working with the OneNote API in Microsoft Graph
 
-This article provides recommendations for working with the OneNote APIs in Microsoft Graph. These recommendations are based on answers to common questions we see on StackOverflow and Twitter.
+This article provides recommendations for working with the OneNote APIs in Microsoft Graph. These recommendations are based on answers to common questions on Stack Overflow and Twitter.
 
 ## Use $select to select the minimum set of properties you need
+
 When you query for a resource (for example, sections inside a notebook), you make a request similar to the following.
 
 ```http
@@ -18,11 +19,15 @@ GET ~/notebooks/{id}/sections?$select=id,displayName
 The same approach applies to other OneNote APIs.
 
 ## Use $expand instead of making multiple API calls
+
 Suppose you want to retrieve all of the user’s notebooks, sections, and section groups in a hierarchical view. You might accomplish that by doing the following:
 
 * Call `GET ~/notebooks` to get the list of notebooks.
+
 * For every retrieved notebook, call `GET ~/notebooks/{notebookId}/sections` to retrieve the list of sections.
+
 * For every retrieved notebook, call `GET ~/notebooks/{notebookId}/sectionGroups` to retrieve the list of section groups.
+
 * Optionally recursively iterate through section groups.
 
 While this will work (with a few extra sequential roundtrips to the service), a better approach is to use the `$expand` query parameter. 

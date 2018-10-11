@@ -40,12 +40,12 @@ POST /drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
 
 ## Response
 
-If successful, the API call returns a `204 No content`.
+If successful, the API call returns a `204 No Content`.
 
 <!-- { "blockType": "response" } -->
 
 ```http
-HTTP/1.1 204 No content
+HTTP/1.1 204 No Content
 ```
 
 [item-resource]: ../resources/driveitem.md

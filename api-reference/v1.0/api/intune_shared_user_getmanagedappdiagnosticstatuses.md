@@ -8,7 +8,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)| _varies by context_|
+| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -34,14 +35,17 @@ Do not supply a request body for this method.
 If successful, this function returns a `200 OK` response code and a [managedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md) collection in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
+
 ``` http
 GET https://graph.microsoft.com/v1.0/users/{usersId}/getManagedAppDiagnosticStatuses
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

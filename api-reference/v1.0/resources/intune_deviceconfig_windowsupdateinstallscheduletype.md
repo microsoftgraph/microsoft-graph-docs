@@ -1,4 +1,4 @@
-﻿# windowsUpdateInstallScheduleType resource type
+# windowsUpdateInstallScheduleType resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -11,17 +11,20 @@ Not yet documented
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsUpdateInstallScheduleType"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdateInstallScheduleType"
 }
 ```
+
+
+
+
+
 
 
 

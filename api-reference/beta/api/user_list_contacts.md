@@ -4,39 +4,10 @@
 
 Get contacts in the user's mailbox.
 
+There are two scenarios where an app can get contacts in another user's contact folder:
 
-### Get contacts in another user's contact folder
-
-If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get contacts 
-from another user's contact folder. This section focuses on scenarios that involve delegated permissions.
-
-For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a contact folder with John. 
-You can get the contacts in that shared folder by specifying Garth’s user ID (or user principal name) in the example query shown below.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/contacts
-```
-
-This capability applies to all the supported GET contacts operations for an individual user, as listed in the [HTTP request](#http-request) section below. 
-It also applies if Garth has delegated his entire mailbox to John.
-
-If Garth has not shared his contact folder with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
-will return an error. In such cases, specifying a user ID or user principal name only works for getting contacts in the signed-in user’s own contact folders, 
-and the query is equivalent to using the /me shortcut:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/contacts
-```
-
-This capability is available in only GET operations of:
-
-- Shared contact folders, calendars, and message folders 
-- Contacts, events, and messages in shared folders
-- The above resources in delegated mailboxes
-
-This capability is not available in other operations for contacts, events, messages, and their folders.
+* If the app has application permissions, or,
+* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a contact folder with that user, or, has given delegated access to that user. See [details and an example](../../../concepts/outlook-get-shared-contacts-folders.md).
 
 
 ## Permissions
@@ -79,23 +50,22 @@ For example, you can use the `$filter` query parameter to filter contacts based 
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json  |
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [Contact](../resources/contact.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [contact](../resources/contact.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example gets the **displayName** and **emailAddresses** properties of the signed-in user's contacts.
 <!-- {
   "blockType": "request",
   "name": "get_contacts"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/contacts
+GET https://graph.microsoft.com/beta/me/contacts?$select=displayName,emailAddresses
 ```
 
 
@@ -110,19 +80,47 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 263
 
 {
-  "value": [
-    {
-      "parentFolderId": "parentFolderId-value",
-      "birthday": "2016-10-19T10:37:00Z",
-      "fileAs": "fileAs-value",
-      "displayName": "displayName-value",
-      "givenName": "givenName-value",
-      "initials": "initials-value"
-    }
-  ]
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('c3e1fcd2-db78-42a8-aec5-1f2cd59abb5c')/contacts(displayName,emailAddresses)",
+    "value":[
+        {
+            "@odata.etag":"W/\"EQAAABYAAACv7At+UNVFRLhGciJGF6v5AAAve7f6\"",
+            "id":"AAMkADh6v5AAAvgTCFAAA=",
+            "displayName":"Elvis Blank",
+            "emailAddresses":[
+                {
+                    "type":"personal",
+                    "name":"Elvis Blank",
+                    "address":"elvisb@relecloud.onmicrosoft.com"
+                },
+                {
+                    "type":"other",
+                    "otherLabel":"Volunteer work",
+                    "name":"Elvis Blank",
+                    "address":"elvisb@fabrikam.onmicrosoft.com"
+                }
+            ]
+        },
+        {
+            "@odata.etag":"W/\"EQAAABYAAACv7At+UNVFRLhGciJGF6v5AAAve7fn\"",
+            "id":"AAMkADh6v5AAAvgTCEAAA=",
+            "displayName":"Pavel Bansky",
+            "emailAddresses":[
+                {
+                    "type":"personal",
+                    "name":"Pavel Bansky",
+                    "address":"pavelb@contoso.onmicrosoft.com"
+                },
+                {
+                    "type":"other",
+                    "otherLabel":"Volunteer work",
+                    "name":"Pavel Bansky",
+                    "address":"pavelb@fabrikam.onmicrosoft.com"
+                }
+            ]
+        }
+    ]
 }
 ```
 

@@ -34,10 +34,9 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
 All other syntax that allows you to identify these resource instances supports deleting open extensions from them in a similar way.
 
-## Parameters
-|**Parameter**|**Type**|**Description**|
+## Path parameters
+|Parameter|Type|Description|
 |:-----|:-----|:-----|
-|_URL parameters_|
 |id|string|A unique identifier for an instance in the corresponding collection. Required.|
 |extensionId|string|This can be an extension name which is a unique text identifier for the extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
 
@@ -58,17 +57,18 @@ If successful, this method returns `204 No Content` response code. It does not r
 The first example references an extension by its name and deletes the extension in the specified message.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Com.Contoso.Referral", "AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
   "name": "delete_opentypeextension"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
+DELETE https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 
 The second example deletes an extension in the specified group event.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVlN17IsAAA=')/extensions('Com.Contoso.Referral')
+DELETE https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVlN17IsAAA=/extensions/Com.Contoso.Referral
 ```
 
  

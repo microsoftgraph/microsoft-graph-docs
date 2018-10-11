@@ -19,13 +19,13 @@ Depending on how an event is created, expect Outlook to set the read-only **loca
 | Property  | Type   | Description                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |The street address of the location. |
-| coordinates | [outlookGeoCoordinates](outlookGeoCoordinates.md) | The geographic coordinates and elevation of the location. |
+| coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | The geographic coordinates and elevation of the location. |
 | displayName  | String | The name associated with the location.                       |
 | locationEmailAddress | String | Optional email address of the location.              |
 | locationUri | String | Optional URI representing the location. |
-| locationType | String | The type of location. Possible values are: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Read-only.|
+| locationType | locationType | The type of location. The possible values are: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Read-only.|
 | uniqueId | String | For internal use only.|
-| uniqueIdType | String | For internal use only. |
+| uniqueIdType | locationUniqueIdType | For internal use only. |
 
 ## JSON representation
 

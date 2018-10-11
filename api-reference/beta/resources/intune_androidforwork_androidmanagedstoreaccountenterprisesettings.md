@@ -14,6 +14,7 @@ Enterprise settings for an Android managed store account.
 |[completeSignup action](../api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_completesignup.md)|None|Not yet documented|
 |[syncApps action](../api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_syncapps.md)|None|Not yet documented|
 |[unbind action](../api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_unbind.md)|None|Not yet documented|
+|[createGooglePlayWebToken action](../api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_creategoogleplaywebtoken.md)|String|Generates a web token that is used in an embeddable component.|
 
 ## Properties
 |Property|Type|Description|

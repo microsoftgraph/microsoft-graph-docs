@@ -43,7 +43,7 @@ The following table shows the properties that are required when you create the [
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|packageName|String|Android For Work app configuration package name.|
+|packageId|String|Android For Work app configuration package id.|
 |payloadJson|String|Android For Work app configuration JSON payload.|
 |permissionActions|[androidPermissionAction](../resources/intune_apps_androidpermissionaction.md) collection|List of Android app permissions and corresponding permission actions.|
 
@@ -58,7 +58,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 Content-type: application/json
-Content-length: 491
+Content-length: 487
 
 {
   "targetedMobileApps": [
@@ -68,7 +68,7 @@ Content-length: 491
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
-  "packageName": "Package Name value",
+  "packageId": "Package Id value",
   "payloadJson": "Payload Json value",
   "permissionActions": [
     {
@@ -85,7 +85,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 674
+Content-Length: 670
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
@@ -98,7 +98,7 @@ Content-Length: 674
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
-  "packageName": "Package Name value",
+  "packageId": "Package Id value",
   "payloadJson": "Payload Json value",
   "permissionActions": [
     {

@@ -28,11 +28,11 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |name|string|The display name of the worksheet.|
 |position|int|The zero-based position of the worksheet within the workbook.|
-|visibility|string|The Visibility of the worksheet. Possible values are: `Visible`, `Hidden`, `VeryHidden`.|
+|visibility|string|The Visibility of the worksheet. The possible values are: `Visible`, `Hidden`, `VeryHidden`.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [Worksheet](../resources/worksheet.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [WorkbookWorksheet](../resources/worksheet.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -56,7 +56,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheet"
+  "@odata.type": "microsoft.graph.workbookWorksheet"
 } -->
 ```http
 HTTP/1.1 200 OK

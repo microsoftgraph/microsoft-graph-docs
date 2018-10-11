@@ -36,6 +36,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |id|String|Key of the entity. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
@@ -46,7 +47,7 @@ The following table shows the properties that are required when you create the [
 |passwordMinimumLength|Int32|Minimum password length. Valid values 4 to 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|Type of characters in password. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
-|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
+|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 65535|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
 |securityPreventInstallAppsFromUnknownSources|Boolean|Require that devices disallow installation of apps from unknown sources.|
 |securityDisableUsbDebugging|Boolean|Disable USB debugging on Android devices.|
@@ -64,6 +65,7 @@ The following table shows the properties that are required when you create the [
 |securityRequireUpToDateSecurityProviders|Boolean|Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Require the device to pass the Company Portal client app runtime integrity check.|
 |conditionStatementId|String|Condition statement id.|
+|restrictedApps|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|Require the device to not have the specified apps installed. This collection can contain a maximum of 10000 elements.|
 
 
 
@@ -76,9 +78,12 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1220
+Content-length: 1535
 
 {
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
@@ -104,7 +109,16 @@ Content-length: 1220
   "securityRequireGooglePlayServices": true,
   "securityRequireUpToDateSecurityProviders": true,
   "securityRequireCompanyPortalAppIntegrity": true,
-  "conditionStatementId": "Condition Statement Id value"
+  "conditionStatementId": "Condition Statement Id value",
+  "restrictedApps": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ]
 }
 ```
 
@@ -113,10 +127,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1390
+Content-Length: 1705
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "id": "752c820f-820f-752c-0f82-2c750f822c75",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
@@ -144,7 +161,16 @@ Content-Length: 1390
   "securityRequireGooglePlayServices": true,
   "securityRequireUpToDateSecurityProviders": true,
   "securityRequireCompanyPortalAppIntegrity": true,
-  "conditionStatementId": "Condition Statement Id value"
+  "conditionStatementId": "Condition Statement Id value",
+  "restrictedApps": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ]
 }
 ```
 

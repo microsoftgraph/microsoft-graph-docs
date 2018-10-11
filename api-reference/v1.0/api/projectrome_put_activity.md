@@ -71,7 +71,7 @@ Content-length: 364
         "attribution": {
             "iconUrl": "http://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": "false",
+            "addImageQuery": false,
         },
         "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
         "backgroundColor": "#ff0000",
@@ -96,7 +96,7 @@ The following is an example of the response.
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.activity"
+    "@odata.type": "microsoft.graph.userActivity"
 } -->
 
 ```http
@@ -180,7 +180,7 @@ Content-length: 364
         "attribution": {
             "iconUrl": "http://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": "false",
+            "addImageQuery": false,
         },
         "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
         "backgroundColor": "#ff0000",
@@ -212,7 +212,7 @@ The following is an example of the response.
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.activity"
+    "@odata.type": "microsoft.graph.userActivity"
 } -->
 
 ```http

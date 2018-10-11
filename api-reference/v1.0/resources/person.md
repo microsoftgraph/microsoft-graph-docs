@@ -4,13 +4,13 @@ An aggregation of information about a person from across mail, contacts, and soc
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method | Return Type | Description |
 |:---------------|:--------|:----------|
 |[List people](../api/user_list_people.md) | **person** |Get a collection of person objects ordered by their relevance to the [user](../resources/user.md).|
-|[Get person](../api/person_get.md) | **person** |Get properties and relationships of a person object.|
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property | Type | Description |
 |:---------------|:--------|:----------|
 |birthday|String|The person's birthday.|
 |companyName|String|The name of the person's company.|
@@ -24,7 +24,7 @@ An aggregation of information about a person from across mail, contacts, and soc
 |jobTitle|String|The person's job title.|
 |officeLocation|String|The location of the person's office.|
 |personNotes|String|Free-form notes that the user has taken about this person.|
-|personType|[personType](persontype.md) collection|The type of person.|
+|personType|[personType](persontype.md) |The type of person.|
 |phones|[phone](phone.md) collection|The person's phone numbers.|
 |postalAddresses|[location](location.md) collection|The person's addresses.|
 |profession|String|The person's profession.|
@@ -34,18 +34,17 @@ An aggregation of information about a person from across mail, contacts, and soc
 |yomiCompany|String|The phonetic Japanese name of the person's company.|
 
 ## Relationships
-None.
 
+None.
 
 ## JSON representation
 
 The following is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.person"
 }-->
 

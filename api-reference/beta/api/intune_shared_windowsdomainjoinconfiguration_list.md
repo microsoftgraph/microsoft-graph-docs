@@ -10,7 +10,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)||
+| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -48,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 594
+Content-Length: 760
 
 {
   "value": [
@@ -56,13 +57,18 @@ Content-Length: 594
       "@odata.type": "#microsoft.graph.windowsDomainJoinConfiguration",
       "id": "40118d08-8d08-4011-088d-1140088d1140",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "supportsScopeTags": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
       "computerNameStaticPrefix": "Computer Name Static Prefix value",
       "computerNameSuffixRandomCharCount": 1,
-      "activeDirectoryDomainName": "Active Directory Domain Name value"
+      "activeDirectoryDomainName": "Active Directory Domain Name value",
+      "organizationalUnit": "Organizational Unit value"
     }
   ]
 }

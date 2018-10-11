@@ -41,9 +41,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/removeFavorite
 #### Response
 The following is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

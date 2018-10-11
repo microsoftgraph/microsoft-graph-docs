@@ -1,4 +1,4 @@
-﻿# remoteAssistancePartner resource type
+# remoteAssistancePartner resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -27,12 +27,12 @@ remoteAssistPartner resources represent the metadata and status of a given Remot
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.remoteAssistancePartner"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.remoteAssistancePartner",
@@ -43,6 +43,11 @@ Here is a JSON representation of the resource.
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2477
+Content-Length: 2788
 
 {
   "value": {
@@ -92,6 +92,8 @@ Content-Length: 2477
     "minimumWipeAppVersion": "Minimum Wipe App Version value",
     "appActionIfDeviceComplianceRequired": "wipe",
     "appActionIfMaximumPinRetriesExceeded": "wipe",
+    "pinRequiredOnLaunchInsteadOfBiometric": true,
+    "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
     "isAssigned": true,
     "targetedAppManagementLevels": "unmanaged",
     "appDataEncryptionType": "afterDeviceRestart",
@@ -107,7 +109,11 @@ Content-Length: 2477
     ],
     "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
     "allowedIosDeviceModels": "Allowed Ios Device Models value",
-    "appActionIfIosDeviceModelNotAllowed": "wipe"
+    "appActionIfIosDeviceModelNotAllowed": "wipe",
+    "thirdPartyKeyboardsBlocked": true,
+    "filterOpenInToOnlyManagedApps": true,
+    "disableProtectionOfManagedOutboundOpenInData": true,
+    "protectInboundDataFromUnknownSources": true
   }
 }
 ```

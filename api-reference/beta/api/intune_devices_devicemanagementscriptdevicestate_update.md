@@ -38,7 +38,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the device management script device state entity.|
-|runState|[runState](../resources/intune_devices_runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`.|
+|runState|[runState](../resources/intune_shared_runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`.|
 |resultMessage|String|Details of execution output.|
 |lastStateUpdateDateTime|DateTimeOffset|Latest time the device management script executes.|
 |errorCode|Int32|Error code corresponding to erroneous execution of the device management script.|

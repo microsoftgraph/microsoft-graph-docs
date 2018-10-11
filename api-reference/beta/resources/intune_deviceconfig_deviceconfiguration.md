@@ -13,12 +13,15 @@ Device Configuration.
 |[assign action](../api/intune_deviceconfig_deviceconfiguration_assign.md)|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) collection|Not yet documented|
 |[windowsPrivacyAccessControls action](../api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols.md)|None|Not yet documented|
 |[assignedAccessMultiModeProfiles action](../api/intune_deviceconfig_deviceconfiguration_assignedaccessmultimodeprofiles.md)|None|Not yet documented|
+|[getTargetedUsersAndDevices action](../api/intune_deviceconfig_deviceconfiguration_gettargetedusersanddevices.md)|[deviceConfigurationTargetedUserAndDevice](../resources/intune_deviceconfig_deviceconfigurationtargeteduseranddevice.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only.|
 |createdDateTime|DateTimeOffset|DateTime the object was created.|
 |description|String|Admin provided description of the Device Configuration.|
 |displayName|String|Admin provided name of the device configuration.|
@@ -30,7 +33,7 @@ Device Configuration.
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile.|
 |assignments|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) collection|The list of assignments for the device configuration profile.|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Device configuration installation status by device.|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation stauts by user.|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation status by user.|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary|
@@ -48,6 +51,10 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
+  "supportsScopeTags": true,
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",

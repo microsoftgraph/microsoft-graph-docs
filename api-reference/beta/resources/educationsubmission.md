@@ -15,9 +15,9 @@ Submissions are automatically created when an assignment is published. The submi
 |[List resources](../api/educationsubmission_list_resources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
 |[List submittedResources](../api/educationsubmission_list_submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
 |[Update](../api/educationsubmission_update.md) | [educationSubmission](educationsubmission.md)	|Update an **educationSubmission** object. |
-|[Recall](../api/educationsubmission_recall.md)|[educationSubmission](educationsubmission.md)|A student uses the recall to move the state of the submission from submitted back to working.|
-|[Release](../api/educationsubmission_release.md)|[educationSubmission](educationsubmission.md)|A teacher uses release to indicate that the grades/feedback can be shown to the student.|
+|[Return](../api/educationsubmission_return.md)|[educationSubmission](educationsubmission.md)|A teacher uses return to indicate that the grades/feedback can be shown to the student.|
 |[Submit](../api/educationsubmission_submit.md)|[educationSubmission](educationsubmission.md)|A student uses submit to turn in the assignment. This will copy the resources into the **submittedResources** folder for grading and updates the status.|
+|[Unsubmit](../api/educationsubmission_unsubmit.md)|[educationSubmission](educationsubmission.md)|A student uses the unsubmit to move the state of the submission from submitted back to working. This will copy the resources into the **workingResources** folder for grading and updates the status.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -28,10 +28,14 @@ Submissions are automatically created when an assignment is published. The submi
 |recipient|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Who this submission is assigned to.|
 |releasedBy|[identitySet](identityset.md)|User who moved the status of this submission to released.|
 |releasedDateTime|DateTimeOffset|Moment in time when the submission was released. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|returnedBy|[identitySet](identityset.md)|User who moved the status of this submission to returned.|
+|returnedDateTime|DateTimeOffset|Moment in time when the submission was returned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |resourcesFolderUrl|String|Folder where all file resources for this submission need to be stored.|
-|status|string| Read-Only. Possible values are: `working`, `submitted`, `completed`.|
+|status|string| Read-Only. Possible values are: `working`, `submitted`, `released`, `returned`.|
 |submittedBy|[identitySet](identityset.md)|User who moved the resource into the submitted state.|
 |submittedDateTime|DateTimeOffset|Moment in time when the submission was moved into the submitted state. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|unsubmittedBy|[identitySet](identityset.md)|User who moved the resource from submitted into the working state.|
+|unsubmittedDateTime|DateTimeOffset|Moment in time when the submission was moved from submitted into the working state. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -57,12 +61,14 @@ The following is a JSON representation of the resource.
   "grade": {"@odata.type": "microsoft.graph.educationAssignmentGrade"},
   "id": "String (identifier)",
   "recipient": {"@odata.type": "microsoft.graph.educationSubmissionRecipient"},
-  "releasedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "releasedDateTime": "String (timestamp)",
+  "returnedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "returnedDateTime": "String (timestamp)",
   "resourcesFolderUrl": "String",
   "status": "string",
   "submittedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "submittedDateTime": "String (timestamp)"
+  "submittedDateTime": "String (timestamp)",
+  "unsubmittedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "unsubmittedDateTime": "String (timestamp)"
 }
 ```
 

@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 803
+Content-Length: 763
 
 {
   "value": {
@@ -63,7 +63,6 @@ Content-Length: 803
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "displayName": "Display Name value",
     "version": 7,
-    "settingXml": "Setting Xml value",
     "encodedSettingXml": "ZW5jb2RlZFNldHRpbmdYbWw=",
     "settings": [
       {

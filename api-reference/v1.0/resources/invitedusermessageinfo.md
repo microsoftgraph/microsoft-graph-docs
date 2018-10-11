@@ -6,7 +6,7 @@ The invitedUserMessageInfo object allows you to configure the [invitation](invit
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ccRecipients|[Recipient](recipient.md)|Additional recipients the invitation message should be sent to. Currently only 1 additional recipient is supported.|
+|ccRecipients|[Recipient](recipient.md) collection|Additional recipients the invitation message should be sent to. Currently only 1 additional recipient is supported.|
 |customizedMessageBody|String|Customized message body you want to send if you don't want the default message.|
 |messageLanguage|String|The language you want to send the default message in. If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody. The language format should be in ISO 639. The default is en-US.|
 

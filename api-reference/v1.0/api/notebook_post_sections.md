@@ -1,6 +1,6 @@
 # Create section
 
-Create a new [section](../resources/section.md) in the specified notebook.
+Create a new [onenoteSection](../resources/section.md) in the specified notebook.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -31,7 +31,7 @@ Within the same hierarchy level, section names must be unique. The name cannot c
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [section](../resources/section.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [onenoteSection](../resources/section.md) object in the response body.
 
 ## Example
 ##### Request
@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here is trun
   "@odata.type": "microsoft.graph.onenoteSection"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 272
 
