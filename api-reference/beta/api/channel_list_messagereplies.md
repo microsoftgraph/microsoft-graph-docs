@@ -88,10 +88,15 @@ Content-length: 201
         ],
         "mentions": [
             {
-                "type": "user",
                 "id": "id-value ",
-                "mentionText": "Test User"
+                "mentionText": "Test User",
+                "mentioned": {
+                "user": {
+                    "id": "id-value",
+                    "displayName: "string"
+                }
             }
+        }
         ],
         "importance": "normal",
         "reactions": [
