@@ -19,6 +19,3 @@ Device registration status.
 
 
 
-
-
-

@@ -1,0 +1,104 @@
+﻿# Update importedAppleDeviceIdentityResult
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Update the properties of a [importedAppleDeviceIdentityResult](../resources/intune_enrollment_importedappledeviceidentityresult.md) object.
+## Prerequisites
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+## HTTP Request
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAppleDeviceIdentities/{importedAppleDeviceIdentityId}
+```
+
+## Request headers
+|Header|Value|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt; Required.|
+|Accept|application/json|
+
+## Request body
+In the request body, supply a JSON representation for the [importedAppleDeviceIdentityResult](../resources/intune_enrollment_importedappledeviceidentityresult.md) object.
+
+The following table shows the properties that are required when you create the [importedAppleDeviceIdentityResult](../resources/intune_enrollment_importedappledeviceidentityresult.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Key of the entity. Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
+|serialNumber|String|Device serial number Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
+|requestedEnrollmentProfileId|String|Enrollment profile Id admin intends to apply to the device during next enrollment Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
+|requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|The time enrollment profile was assigned to the device Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
+|isSupervised|Boolean|Indicates if the Apple device is supervised. More information is at: https://support.apple.com/en-us/HT202837 Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
+|discoverySource|[discoverySource](../resources/intune_enrollment_discoverysource.md)|Apple device discovery source. Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md). Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
+|createdDateTime|DateTimeOffset|Created Date Time of the device Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
+|lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
+|description|String|The description of the device Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
+|enrollmentState|[enrollmentState](../resources/intune_enrollment_enrollmentstate.md)|The state of the device in Intune Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md). Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|platform|[platform](../resources/intune_enrollment_platform.md)|The platform of the Device. Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md). Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|status|Boolean|Status of imported device identity|
+
+
+
+## Response
+If successful, this method returns a `200 OK` response code and an updated [importedAppleDeviceIdentityResult](../resources/intune_enrollment_importedappledeviceidentityresult.md) object in the response body.
+
+## Example
+### Request
+Here is an example of the request.
+``` http
+PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAppleDeviceIdentities/{importedAppleDeviceIdentityId}
+Content-type: application/json
+Content-length: 450
+
+{
+  "serialNumber": "Serial Number value",
+  "requestedEnrollmentProfileId": "Requested Enrollment Profile Id value",
+  "requestedEnrollmentProfileAssignmentDateTime": "2017-01-01T00:02:32.8167841-08:00",
+  "isSupervised": true,
+  "discoverySource": "adminImport",
+  "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
+  "description": "Description value",
+  "enrollmentState": "enrolled",
+  "platform": "ios",
+  "status": true
+}
+```
+
+### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 630
+
+{
+  "@odata.type": "#microsoft.graph.importedAppleDeviceIdentityResult",
+  "id": "557cfb4a-fb4a-557c-4afb-7c554afb7c55",
+  "serialNumber": "Serial Number value",
+  "requestedEnrollmentProfileId": "Requested Enrollment Profile Id value",
+  "requestedEnrollmentProfileAssignmentDateTime": "2017-01-01T00:02:32.8167841-08:00",
+  "isSupervised": true,
+  "discoverySource": "adminImport",
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
+  "description": "Description value",
+  "enrollmentState": "enrolled",
+  "platform": "ios",
+  "status": true
+}
+```
+
+
+

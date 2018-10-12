@@ -24,7 +24,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.revokeAppleVppLicensesActionResult"
 }
 -->
@@ -39,9 +38,6 @@ Here is a JSON representation of the resource.
   "failedLicensesCount": 1024
 }
 ```
-
-
-
 
 
 

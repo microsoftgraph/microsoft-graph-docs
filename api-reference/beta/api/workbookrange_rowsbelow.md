@@ -19,19 +19,21 @@ One of the following permissions is required to call this API. To learn more, in
 POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 
 ```
+
+## Function parameters
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|count|Int32|Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.|
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-## Parameters
-
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|count|Int32|The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1|
-
 ## Request body
+Do not supply a request body for this method.
 
 ## Response
 

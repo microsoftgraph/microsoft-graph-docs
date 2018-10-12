@@ -33,6 +33,3 @@ Device type.
 
 
 
-
-
-

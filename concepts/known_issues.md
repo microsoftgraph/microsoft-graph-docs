@@ -108,14 +108,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 
 ## Calendars
 
-### Adding and accessing ICS-based calendars in user's mailbox
-
-Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
-
-* You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
-* [Listing the user's calendars](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) lets you get the **name**, **color** and **id** properties of each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
-* You can also [list the events](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
-
 ### Accessing a shared calendar
 
 When attempting to access events in a calendar that has been shared by another user using the following operation:
@@ -149,6 +141,17 @@ events in the shared calendar, as if it's your own calendar. As an example:
 GET \me\calendars('{id}')\events
 ```
 
+### Adding and accessing ICS-based calendars in user's mailbox
+
+Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
+
+* You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
+* [Listing the user's calendars](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) lets you get the **name**, **color** and **id** properties of each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
+* You can also [list the events](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
+
+### onlineMeetingUrl property support for Microsoft Teams
+
+Currently, the **onlineMeetingUrl** property of a Skype meeting [event](../api-reference/v1.0/resources/event.md) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
 
 ## Contacts
 
@@ -207,6 +210,10 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 The **comment** parameter for creating a reply or forward draft ([createReply](../api-reference/v1.0/api/message_createreply.md),
 [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md))
 does not become part of the body of the resultant message draft.
+
+### GET messages returns chats in Microsoft Teams
+
+In both the v1 and beta endpoints, the response of `GET /users/id/messages` includes the user's Microsoft Teams chats that occurred outside the scope of a team or channel. These chat messages have "IM" as their subject.
 
 
 ## Drives, files and content streaming

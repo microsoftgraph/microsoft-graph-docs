@@ -21,7 +21,7 @@ Represents an Azure Active Directory object. The **directoryObject** type is the
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|id|String|A Guid that is the unique identifier for the object; for example, 12345678-9abc-def0-1234-56789abcde. Key. Not nullable. Read-only.|
+|id|String|A Guid that is the unique identifier for the object; for example, 12345678-9abc-def0-1234-56789abcde12. Key. Not nullable. Read-only.|
 
 ## Relationships
 

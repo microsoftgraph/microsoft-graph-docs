@@ -22,12 +22,14 @@ Inherits from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnc
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |connectionName|String|Connection name displayed to the user. Inherited from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md)|
-|connectionType|[appleVpnConnectionType](../resources/intune_deviceconfig_applevpnconnectiontype.md)|Connection type. Inherited from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md). Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `customVpn`, `ciscoIPSec`, `citrix`, `ciscoAnyConnectV2`, `paloAltoGlobalProtect`.|
+|connectionType|[appleVpnConnectionType](../resources/intune_deviceconfig_applevpnconnectiontype.md)|Connection type. Inherited from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md). Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `customVpn`, `ciscoIPSec`, `citrix`, `ciscoAnyConnectV2`, `paloAltoGlobalProtect`, `zscalerPrivateAccess`, `f5Access2018`, `citrixSso`, `paloAltoGlobalProtectV2`.|
 |loginGroupOrDomain|String|Login group or domain when connection type is set to Dell SonicWALL Mobile Connection. Inherited from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md)|
 |role|String|Role when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md)|
 |realm|String|Realm when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md)|
@@ -41,6 +43,7 @@ Inherits from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnc
 |safariDomains|String collection|Safari domains when this VPN per App setting is enabled. In addition to the apps associated with this VPN, Safari domains specified here will also be able to trigger this VPN connection. Inherited from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md)|
 |onDemandRules|[vpnOnDemandRule](../resources/intune_deviceconfig_vpnondemandrule.md) collection|On-Demand Rules. This collection can contain a maximum of 500 elements. Inherited from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|Proxy Server. Inherited from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md)|
+|optInToDeviceIdSharing|Boolean|Opt-In to sharing the device's Id to third-party vpn clients for use during network access control validation. Inherited from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -67,6 +70,10 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.macOSVpnConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
+  "supportsScopeTags": true,
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -126,12 +133,10 @@ Here is a JSON representation of the resource.
     "automaticConfigurationScriptUrl": "String",
     "address": "String",
     "port": 1024
-  }
+  },
+  "optInToDeviceIdSharing": true
 }
 ```
-
-
-
 
 
 

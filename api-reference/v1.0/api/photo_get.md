@@ -63,7 +63,7 @@ Content-length: 53
 Here is an example of the request for the photo bytes.
 <!-- {
   "blockType": "request",
-  "name": "get_photo"
+  "name": "get_photo_value"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
 ##### Response
 Here is an example of the response.
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response", "@odata.type": "Edm.Stream" } -->
 
 ```http
 HTTP/1.1 200 OK

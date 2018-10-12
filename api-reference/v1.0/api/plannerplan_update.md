@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/plans/<id>
+PATCH /planner/plans/{id}
 ```
 
 ## Request headers
@@ -46,7 +46,7 @@ Here is an example of the request.
   "name": "update_plannerplan"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM
+PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 Content-type: application/json
 Content-length: 29
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

@@ -4,7 +4,7 @@
 
 Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.
 
-To get expanded event instances, you can [get the calendar view](calendar_list_calendarview.md), or 
+To get expanded event instances, you can [get the calendar view](calendar_list_calendarview.md), or
 [get the instances of an event](event_list_instances.md).
 
 ## Permissions
@@ -83,7 +83,7 @@ Content-length: 354
         "response": "",
         "time": "2016-10-19T10:37:00Z"
       },
-      "iCalUId": "iCalUId-value",
+      "uid": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
       "isReminderOn": true
     }

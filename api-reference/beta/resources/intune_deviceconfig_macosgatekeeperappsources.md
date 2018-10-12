@@ -15,6 +15,3 @@ App source options for macOS Gatekeeper.
 
 
 
-
-
-

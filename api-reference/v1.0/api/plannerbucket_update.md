@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/buckets/<id>
+PATCH /planner/buckets/{id}
 ```
 ## Optional request headers
 | Name       | Description|
@@ -44,7 +44,7 @@ Here is an example of the request.
   "name": "update_plannerbucket"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/buckets/hsOf2dhOJkqyYYZEtdzDe2QAIUCR
+PATCH https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}
 Content-type: application/json
 Content-length: 27
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

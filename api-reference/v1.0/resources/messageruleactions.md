@@ -12,12 +12,11 @@ Represents the set of actions that are available to a rule.
 | forwardAsAttachmentTo | [recipient](recipient.md) collection | The email addresses of the recipients to which a message should be forwarded as an attachment. |
 | forwardTo | [recipient](recipient.md) collection | The email addresses of the recipients to which a message should be forwarded. |
 | markAsRead | Boolean | Indicates whether a message should be marked as read. |
-| markImportance | String | Sets the importance of the message, which can be: `low`, `normal`, `high`. |
+| markImportance | importance | Sets the importance of the message, which can be: `low`, `normal`, `high`. |
 | moveToFolder |  String| The ID of the folder that a message will be moved to. |
 | permanentDelete | Boolean | Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder. |
-| redirectTo | [recipient](recipient.md) | The email address to which a message should be redirected. |
+| redirectTo | [recipient](recipient.md) collection | The email addresses to which a message should be redirected. |
 | stopProcessingRules | Boolean | Indicates whether subsequent rules should be evaluated. |
-
 
 ## JSON representation
 Here is a JSON representation of the resource.
@@ -40,7 +39,7 @@ Here is a JSON representation of the resource.
   "markImportance": "String",
   "moveToFolder": "String",
   "permanentDelete": "Boolean",
-  "redirectTo": {"@odata.type": "microsoft.graph.recipient"},
+  "redirectTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "stopProcessingRules": "Boolean"
 }
 

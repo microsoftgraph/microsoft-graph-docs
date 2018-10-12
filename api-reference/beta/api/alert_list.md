@@ -47,7 +47,7 @@ To return an alternative property set, use the OData `$select` query parameter t
 
 ## Request body
 
-Do not supply a request body for this method.
+Do not supply a request body for this method. The request body will be ignored.
 
 ## Response
 
@@ -86,25 +86,10 @@ Content-type: application/json
 {
   "value": [
     {
-      "activityGroupStates": [
-        {
-          "aliases": [
-            "aliases-value"
-          ],
-          "name": "name-value"
-        }
-      ],
-      "applicationStates": [
-        {
-          "deploymentPackageUrl": "deploymentPackageUrl-value",
-          "name": "name-value",
-          "permissionsRequired": "permissionsRequired-value",
-          "publisher": "publisher-value",
-          "riskScore": "riskScore-value"
-        }
-      ],
+      "activityGroupName": "activityGroupName-value",
       "assignedTo": "assignedTo-value",
       "azureSubscriptionId": "azureSubscriptionId-value",
+      "azureTenantId": "azureTenantId-value",
       "category": "category-value",
       "closedDateTime": "datetime-value"
     }

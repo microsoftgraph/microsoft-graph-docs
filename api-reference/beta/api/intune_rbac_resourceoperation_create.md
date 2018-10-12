@@ -37,9 +37,11 @@ The following table shows the properties that are required when you create the r
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the Resource Operation. Read-only, automatically generated.|
+|resource|String|Resource category to which this Operation belongs.|
 |resourceName|String|Name of the Resource this operation is performed on.|
 |actionName|String|Type of action this operation is going to perform. The actionName should be concise and limited to as few words as possible.|
 |description|String|Description of the resource operation. The description is used in mouse-over text for the operation when shown in the Azure Portal.|
+|enabledForScopeValidation|Boolean|Determines whether the Permission is validated for Scopes defined per Role Assignment.|
 
 
 
@@ -52,13 +54,15 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/resourceOperations
 Content-type: application/json
-Content-length: 178
+Content-length: 249
 
 {
   "@odata.type": "#microsoft.graph.resourceOperation",
+  "resource": "Resource value",
   "resourceName": "Resource Name value",
   "actionName": "Action Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "enabledForScopeValidation": true
 }
 ```
 
@@ -67,19 +71,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 227
+Content-Length: 298
 
 {
   "@odata.type": "#microsoft.graph.resourceOperation",
   "id": "232b8fee-8fee-232b-ee8f-2b23ee8f2b23",
+  "resource": "Resource value",
   "resourceName": "Resource Name value",
   "actionName": "Action Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "enabledForScopeValidation": true
 }
 ```
-
-
-
 
 
 

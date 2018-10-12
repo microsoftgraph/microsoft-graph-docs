@@ -7,17 +7,17 @@ Represents a chart object in a workbook.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Chart](../api/chart_get.md) | [Chart](chart.md) |Read properties and relationships of chart object.|
-|[Create ChartSeries](../api/chart_post_series.md) |[ChartSeries](chartseries.md)| Create a new ChartSeries by posting to the series collection.|
-|[List series](../api/chart_list_series.md) |[ChartSeries](chartseries.md) collection| Get a ChartSeries object collection.|
-|[Update](../api/chart_update.md) | [Chart](chart.md)	|Update Chart object. |
+|[Get Chart](../api/chart_get.md) | [WorkbookChart](chart.md) |Read properties and relationships of chart object.|
+|[Create ChartSeries](../api/chart_post_series.md) |[WorkbookChartSeries](chartseries.md)| Create a new ChartSeries by posting to the series collection.|
+|[List series](../api/chart_list_series.md) |[WorkbookChartSeries](chartseries.md) collection| Get a ChartSeries object collection.|
+|[Update](../api/chart_update.md) | [WorkbookChart](chart.md)	|Update Chart object. |
 |[Image](../api/chart_image.md)|Image base64 encoded string|Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.|
 |[Delete](../api/chart_delete.md)|None|Deletes the chart object.|
 |[Setdata](../api/chart_setdata.md)|None|Resets the source data for the chart.|
 |[Setposition](../api/chart_setposition.md)|None|Positions the chart relative to cells on the worksheet.|
-|[List](../api/chart_list.md) | [Chart](chart.md) collection |Get chart object collection. |
-|[Itemat](../api/chartcollection_itemat.md)|[Chart](chart.md)|Gets a chart based on its position in the collection.|
-|[Add](../api/chartcollection_add.md)|[Chart](chart.md)|Creates a new chart.|
+|[List](../api/chart_list.md) | [WorkbookChart](chart.md) collection |Get chart object collection. |
+|[Itemat](../api/chartcollection_itemat.md)|[WorkbookChart](chart.md)|Gets a chart based on its position in the collection.|
+|[Add](../api/chartcollection_add.md)|[WorkbookChart](chart.md)|Creates a new chart.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -32,24 +32,24 @@ Represents a chart object in a workbook.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|axes|[ChartAxes](chartaxes.md)|Represents chart axes. Read-only.|
-|dataLabels|[ChartDataLabels](chartdatalabels.md)|Represents the datalabels on the chart. Read-only.|
-|format|[ChartAreaFormat](chartareaformat.md)|Encapsulates the format properties for the chart area. Read-only.|
-|legend|[ChartLegend](chartlegend.md)|Represents the legend for the chart. Read-only.|
-|series|[ChartSeries](chartseries.md) collection|Represents either a single series or collection of series in the chart. Read-only.|
-|title|[ChartTitle](charttitle.md)|Represents the title of the specified chart, including the text, visibility, position and formating of the title. Read-only.|
-|worksheet|[Worksheet](worksheet.md)|The worksheet containing the current chart. Read-only.|
+|axes|[WorkbookChartAxes](chartaxes.md)|Represents chart axes. Read-only.|
+|dataLabels|[WorkbookChartDataLabels](chartdatalabels.md)|Represents the datalabels on the chart. Read-only.|
+|format|[WorkbookChartAreaFormat](chartareaformat.md)|Encapsulates the format properties for the chart area. Read-only.|
+|legend|[WorkbookChartLegend](chartlegend.md)|Represents the legend for the chart. Read-only.|
+|series|[WorkbookChartSeries](chartseries.md) collection|Represents either a single series or collection of series in the chart. Read-only.|
+|title|[WorkbookChartTitle](charttitle.md)|Represents the title of the specified chart, including the text, visibility, position and formating of the title. Read-only.|
+|worksheet|[WorkbookWorksheet](worksheet.md)|The worksheet containing the current chart. Read-only.|
 
 ## JSON representation
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chart"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChart"
 }-->
 
 ```json

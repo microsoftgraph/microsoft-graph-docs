@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7457
+Content-Length: 7907
 
 {
   "value": [
@@ -204,14 +204,23 @@ Content-Length: 7457
       "requireUserEnrollmentApproval": true,
       "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00",
       "iccid": "Iccid value",
-      "udid": "Udid value"
+      "udid": "Udid value",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "windowsActiveMalwareCount": 9,
+      "windowsRemediatedMalwareCount": 13,
+      "notes": "Notes value",
+      "configurationManagerClientHealthState": {
+        "@odata.type": "microsoft.graph.configurationManagerClientHealthState",
+        "state": "installed",
+        "errorCode": 9,
+        "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
+      }
     }
   ]
 }
 ```
-
-
-
 
 
 

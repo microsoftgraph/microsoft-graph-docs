@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 946
+Content-Length: 1054
 
 {
   "value": [
@@ -56,6 +56,10 @@ Content-Length: 946
       "@odata.type": "#microsoft.graph.windows10EasEmailProfileConfiguration",
       "id": "9dc6f073-f073-9dc6-73f0-c69d73f0c69d",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "supportsScopeTags": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -77,9 +81,6 @@ Content-Length: 946
   ]
 }
 ```
-
-
-
 
 
 

@@ -51,13 +51,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1218
+Content-Length: 1522
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windows81SCEPCertificateProfile",
     "id": "2daf8af2-8af2-2daf-f28a-af2df28aaf2d",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "supportsScopeTags": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -75,6 +79,13 @@ Content-Length: 1218
         "objectIdentifier": "Object Identifier value"
       }
     ],
+    "customSubjectAlternativeNames": [
+      {
+        "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+        "sanType": "emailAddress",
+        "name": "Name value"
+      }
+    ],
     "scepServerUrls": [
       "Scep Server Urls value"
     ],
@@ -87,9 +98,6 @@ Content-Length: 1218
   }
 }
 ```
-
-
-
 
 
 

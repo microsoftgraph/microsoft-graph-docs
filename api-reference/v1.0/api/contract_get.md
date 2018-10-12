@@ -53,7 +53,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Contract"
+  "@odata.type": "microsoft.graph.contract"
 } -->
 ```http
 HTTP/1.1 200 OK

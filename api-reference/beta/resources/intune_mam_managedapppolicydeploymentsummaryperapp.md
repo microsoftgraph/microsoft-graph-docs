@@ -17,7 +17,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp"
 }
 -->
@@ -30,9 +29,6 @@ Here is a JSON representation of the resource.
   "configurationAppliedUserCount": 1024
 }
 ```
-
-
-
 
 
 

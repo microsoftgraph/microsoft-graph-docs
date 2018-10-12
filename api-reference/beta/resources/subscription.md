@@ -8,6 +8,7 @@ A subscription allows a client app to receive notifications about changes to dat
 - Conversations from Office Groups.
 - Drive root items from OneDrive.
 - Users and Groups from Azure Active Directory.
+- Alerts from the Microsoft Graph Security API.
 
 ## JSON representation
 
@@ -51,11 +52,12 @@ Here is a JSON representation of the resource.
 
 | Resource            | Maximum Expiration Time  |
 |:--------------------|:-------------------------|
-| Mail                | 4230 minutes (3 days)    |
-| Calendar            | 4230 minutes (3 days)    |
-| Contacts            | 4230 minutes (3 days)    |
-| Group conversations | 4230 minutes (3 days)    |
-| Drive root items    | 4320 minutes (3 days) |
+| Mail                | 4230 minutes (under 3 days)    |
+| Calendar            | 4230 minutes (under 3 days)    |
+| Contacts            | 4230 minutes (under 3 days)    |
+| Group conversations | 4230 minutes (under 3 days)    |
+| Drive root items    | 4230 minutes (under 3 days)    |
+| Security alerts     | 43200 minutes (under 30 days)  |
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
 

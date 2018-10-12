@@ -19,13 +19,15 @@ Inherits from [iosCertificateProfile](../resources/intune_deviceconfig_ioscertif
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |renewalThresholdPercentage|Int32|Certificate renewal threshold percentage. Valid values 1 to 99|
 |subjectNameFormat|[appleSubjectNameFormat](../resources/intune_deviceconfig_applesubjectnameformat.md)|Certificate Subject Name Format. Possible values are: `commonName`, `commonNameAsEmail`, `custom`, `commonNameIncludingEmail`, `commonNameAsIMEI`, `commonNameAsSerialNumber`.|
-|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune_deviceconfig_subjectalternativenametype.md)|Certificate Subject Alternative Name type. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
+|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune_deviceconfig_subjectalternativenametype.md)|Certificate Subject Alternative Name type. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period.|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune_deviceconfig_certificatevalidityperiodscale.md)|Scale for the Certificate Validity Period. Possible values are: `days`, `months`, `years`.|
 
@@ -53,6 +55,10 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.iosCertificateProfileBase",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
+  "supportsScopeTags": true,
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -64,9 +70,6 @@ Here is a JSON representation of the resource.
   "certificateValidityPeriodScale": "String"
 }
 ```
-
-
-
 
 
 

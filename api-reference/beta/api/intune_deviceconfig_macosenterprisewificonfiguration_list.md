@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1298
+Content-Length: 1406
 
 {
   "value": [
@@ -56,6 +56,10 @@ Content-Length: 1298
       "@odata.type": "#microsoft.graph.macOSEnterpriseWiFiConfiguration",
       "id": "7a6f9a2e-9a2e-7a6f-2e9a-6f7a2e9a6f7a",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "supportsScopeTags": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -82,9 +86,6 @@ Content-Length: 1298
   ]
 }
 ```
-
-
-
 
 
 

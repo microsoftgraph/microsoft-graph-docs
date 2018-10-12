@@ -94,6 +94,8 @@ The following table shows the properties that are required when you create the [
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune_mam_managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device manufacturer is not allowed. (Android only). Possible values are: `block`, `wipe`.|
 |thirdPartyKeyboardsBlocked|Boolean|Defines if third party keyboards are allowed while accessing a managed app. (iOS Only)|
 |filterOpenInToOnlyManagedApps|Boolean|Defines if open-in operation is supported from the managed app to the filesharing locations selected. (iOS Only)|
+|disableProtectionOfManagedOutboundOpenInData|Boolean|Disable protection of data transferred to other apps through IOS OpenIn option. (iOS Only)|
+|protectInboundDataFromUnknownSources|Boolean|Protect incoming data from unknown source. (iOS Only)|
 
 
 
@@ -106,7 +108,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 3097
+Content-length: 3203
 
 {
   "displayName": "Display Name value",
@@ -184,7 +186,9 @@ Content-length: 3097
   "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
   "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
   "thirdPartyKeyboardsBlocked": true,
-  "filterOpenInToOnlyManagedApps": true
+  "filterOpenInToOnlyManagedApps": true,
+  "disableProtectionOfManagedOutboundOpenInData": true,
+  "protectInboundDataFromUnknownSources": true
 }
 ```
 
@@ -193,7 +197,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3271
+Content-Length: 3377
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -274,12 +278,11 @@ Content-Length: 3271
   "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
   "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
   "thirdPartyKeyboardsBlocked": true,
-  "filterOpenInToOnlyManagedApps": true
+  "filterOpenInToOnlyManagedApps": true,
+  "disableProtectionOfManagedOutboundOpenInData": true,
+  "protectInboundDataFromUnknownSources": true
 }
 ```
-
-
-
 
 
 

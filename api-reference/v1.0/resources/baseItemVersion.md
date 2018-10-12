@@ -5,11 +5,16 @@ The **baseItemVersion** resource represents a previous version of an item or ent
 
 ## JSON representation
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.baseItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
+<!--{
+  "blockType": "resource",
+  "abstract": true,
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.baseItemVersion",
+  "@type.aka": "oneDrive.baseItemVersion"
+}-->
 
 ```json
 {
-  "content": { "@odata.type": "Edm.Stream" },
   "id": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",

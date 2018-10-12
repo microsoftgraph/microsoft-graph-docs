@@ -128,7 +128,7 @@ Content-length: 199
   "@odata.type": "#microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
-  "contentBytes": "contentBytes-value",
+  "contentBytes": "binary",
   "contentId": "null",
   "lastModifiedDateTime": "2016-01-01T12:00:00Z",
   "id": "id-value",
@@ -143,10 +143,11 @@ Content-length: 199
 The first example shows how to get an item attachment on a message. The properties of the **itemAttachment** are returned.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADA1M-zAAA=", "AAMkADA1M-CJKtzmnlcqVgqI="],
   "name": "get_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=
 ```
 
 ##### Response 1
@@ -176,10 +177,11 @@ The next example shows how to use `$expand` to get the properties of the item th
 a message; the properties of that attached message are also returned.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADA1M-zAAA=", "AAMkADA1M-CJKtzmnlcqVgqI="],
   "name": "get_and_expand_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item 
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=/?$expand=microsoft.graph.itemattachment/item 
 ```
 
 ##### Response 2
@@ -299,5 +301,9 @@ Content-length: 215
   "description": "Get attachment",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Error: get_and_expand_item_attachment/item:
+      Property 'item' is of type Custom but has no custom members."
+  ],
   "tocPath": ""
 }-->

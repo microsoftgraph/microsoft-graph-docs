@@ -18,9 +18,10 @@ Apple VPN connection type.
 |citrix|7|Citrix.|
 |ciscoAnyConnectV2|8|Cisco AnyConnect V2.|
 |paloAltoGlobalProtect|9|Palo Alto Networks GlobalProtect.|
-
-
-
+|zscalerPrivateAccess|10|Zscaler Private Access.|
+|f5Access2018|11|F5 Access 2018.|
+|citrixSso|12|Citrix Sso.|
+|paloAltoGlobalProtectV2|13|Palo Alto Networks GlobalProtect V2.|
 
 
 

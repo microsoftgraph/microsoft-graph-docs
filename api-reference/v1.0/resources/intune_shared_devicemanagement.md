@@ -1,18 +1,17 @@
-﻿# deviceManagement resource type
+# deviceManagement resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-The deviceManagement resource represents a container whose contents vary according to workflow, including:
+The deviceManagement resource represents a container whose contents vary according to workflow, including:  
 
 - Auditing events
 - Corporate terms and conditions 
-- Corporate enrollment profiles
 - Device configuration settings
 - Device management
 - Endpoint protection
 - Enrollment profiles
 - Notifications
-- On-boarding policies, settings, and details
+-Onboarding policies, settings, and details
 - Role-based access control (RBAC) policies
 - Remote assistance partners
 - Telecom expanse management partners
@@ -24,7 +23,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |:---|:---|:---|
 |[Get deviceManagement](../api/intune_shared_devicemanagement_get.md)|[deviceManagement](../resources/intune_shared_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_shared_devicemanagement.md) object.|
 |[Update deviceManagement](../api/intune_shared_devicemanagement_update.md)|[deviceManagement](../resources/intune_shared_devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune_shared_devicemanagement.md) object.|
-|**On-boarding**|
+|**Onboarding**|
 |[verifyWindowsEnrollmentAutoDiscovery function](../api/intune_shared_devicemanagement_verifywindowsenrollmentautodiscovery.md)|Boolean|Not yet documented|
 |**RBAC**|
 |[getEffectivePermissions function](../api/intune_shared_devicemanagement_geteffectivepermissions.md)|[rolePermission](../resources/intune_rbac_rolepermission.md) collection or string collection|Retrieves the effective permissions of the currently authenticated user|
@@ -36,12 +35,12 @@ The deviceManagement resource represents a container whose contents vary accordi
 |**Device configuration**|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
 |**Device management**|
-|subscriptionState|String|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
-|**On-boarding**|
+|subscriptionState|String|Tenant mobile device management subscription state. The possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|**Onboarding**|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
 
 ## Relationships
-|Relationship|Type|Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+|Relationship|Type|Description|
 |:---|:---|:---|
 |**Auditing**|
 |auditEvents|[auditEvent](../resources/intune_auditing_auditevent.md) collection|The Audit Events|
@@ -62,9 +61,10 @@ The deviceManagement resource represents a container whose contents vary accordi
 |managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md) collection|The list of managed devices.|
 |**Enrollment**|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) collection|Collection of imported Windows autopilot devices.|
+|importedWindowsAutopilotDeviceIdentityUploads|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) collection|Collection of Windows autopilot devices upload.|
 |**Notifications**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) collection|The Notification Message Templates.|
-|**On-boarding**|
+|**Onboarding**|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md)|The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access|
 |deviceCategories|[deviceCategory](../resources/intune_shared_devicecategory.md) collection|The list of device categories with the tenant.|
 |deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) collection|The list of device enrollment configurations|
@@ -91,6 +91,7 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceManagement"
 }
 -->
@@ -98,7 +99,9 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
   "id": "String (identifier)",
-  "subscriptionState": "String"
+  "intuneBrand": {"@odata.type": "microsoft.graph.intuneBrand"},
+  "subscriptionState": "String",
+  "settings": {"@odata.type": "microsoft.graph.deviceManagementSettings"}
 }
 ```
 

@@ -9,9 +9,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 |Delegated (work or school account)| _varies by context_ |
-| &nbsp; &nbsp; Devices | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; Device management | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp; &nbsp; On-boarding | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; Troubleshooting | DeviceManagementManagedDevices.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
@@ -39,7 +39,7 @@ The following table shows the properties that are required when you create the u
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier of the user.|
-|**On-boarding**|
+|**Onboarding**|
 |deviceEnrollmentLimit|Int32|The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.|
 
 Request body property support varies according to context.

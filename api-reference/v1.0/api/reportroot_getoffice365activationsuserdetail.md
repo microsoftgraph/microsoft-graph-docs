@@ -47,6 +47,7 @@ The CSV file has the following headers for columns.
 - Windows 10 Mobile
 - iOS
 - Android
+- Activated On Shared Computer
 
 ## Example
 
@@ -54,8 +55,9 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getoffice365activationsuserdetail"
 }-->
 
@@ -67,7 +69,11 @@ GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationsUserDetail
 
 The following is an example of the response.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -77,15 +83,11 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android
+Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android,Activated On Shared Computer
 ```

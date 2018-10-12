@@ -13,20 +13,21 @@ then use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) 
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List apps](../api/teams_apps_list.md) | [teamsApp](teamsApp.md) | Lists apps installed in a team.|
-|[Add app](../api/teams_apps_add.md) | [teamsApp](teamsApp.md) | Adds (installs) an app to a team.|
-|[Remove app](../api/teams_apps_delete.md) | [teamsApp](teamsApp.md) | Removes (uninstalls) an app from a team.|
+|[List apps](../api/teams_apps_list.md) | [teamsApp](teamsapp.md) | Lists apps installed in a team.|
+|[Add app](../api/teams_apps_add.md) | [teamsApp](teamsapp.md) | Adds (installs) an app to a team.|
+|[Remove app](../api/teams_apps_delete.md) | None | Removes (uninstalls) an app from a team.|
 
 
 ## Properties
 
 |Name          |Type           |Description                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|name			|string      |name of the app.|
-|version		|string      |version of the app.|
-|isBlocked		|bool        |an indication whether the app is blocked by tenant.|
-|installedState |[teamsAppInstalledState](../resources/teamsappinstalledstate.md)   |app's install state|
-|context		|[teamsAppContext](../resources/teamsappcontext.md)  |Where the app came from |
+|id			|string      |App id.|
+|name			|string      |Name of the app.|
+|version		|string      |Version of the app.|
+|isBlocked		|bool        |An indication whether the app is blocked by tenant. Note: this property is deprecated and will be removed in the future. It is currently always false. |
+|installedState |[teamsAppInstalledState](../resources/teamsappinstalledstate.md)   |App's install state. Note: this property is deprecated and will be removed in the future. It is currently always "installed".|
+|context		|[teamsAppContext](../resources/teamsappcontext.md)  |Where the app came from. Note: this property will soon be replaced by a property named "distributionMethod" with values "store", "organization", and "sideloaded" |
 
 ## JSON representation
 
@@ -39,17 +40,28 @@ The following is a JSON representation of the resource.
 }-->
 
 ```json
-{  
+{
+  "id": "string (identifier)",
+  "name": "string",
+  "version": "string",
+  "isBlocked": false,
+  "installedState": "string",
+  "context": "string"
 }
 
 ```
+
+# See also
+
+[Pinning apps to tabs in channels](../resources/teamstab.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "team resource",
+  "description": "teamsApp resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
 }-->
+

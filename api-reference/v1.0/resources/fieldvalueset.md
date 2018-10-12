@@ -12,7 +12,8 @@ Represents the column values in a [listItem](listItem.md) resource.
 
 Here is a JSON representation of a **fieldValueSet** resource.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
-       "keyProperty": "id", "openType": true } -->
+      "optionalProperties": ["Author", "AuthorLookupId", "Name", "Color", "Quantity" ],
+       "baseType": "microsoft.graph.entity", "openType": true } -->
 
 ```json
 {

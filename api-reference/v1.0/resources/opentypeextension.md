@@ -44,12 +44,12 @@ exposes at [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "openType": true,
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.extension",
+  "@odata.type": "microsoft.graph.openTypeExtension"
 }-->
 
 ```json

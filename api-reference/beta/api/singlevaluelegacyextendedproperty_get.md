@@ -263,11 +263,9 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-
-## Parameters
+## Path parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
-|_URL parameters_|
 |id_value|String|The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 |property_value |String|The value of the extended property to match. Required where listed in the **HTTP request** section above. If {property_value} is not a string, make sure you explicitly cast `ep/value` to the appropriate Edm data type when comparing it with {property_value}. See [request 4](#request-4) below for examples. |
 

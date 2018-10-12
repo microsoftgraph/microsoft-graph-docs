@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [deviceCategory](../resources/intune_shared_devicecategory.md) object.
+Update the properties of a [deviceCategory](../resources/intune_devices_devicecategory.md) object.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -30,9 +30,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceCategory](../resources/intune_shared_devicecategory.md) object.
+In the request body, supply a JSON representation for the [deviceCategory](../resources/intune_devices_devicecategory.md) object.
 
-The following table shows the properties that are required when you create the [deviceCategory](../resources/intune_shared_devicecategory.md).
+The following table shows the properties that are required when you create the [deviceCategory](../resources/intune_devices_devicecategory.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -41,7 +41,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceCategory](../resources/intune_shared_devicecategory.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceCategory](../resources/intune_devices_devicecategory.md) object in the response body.
 
 ## Example
 ### Request
@@ -66,9 +66,6 @@ Content-Length: 105
   "id": "f881b841-b841-f881-41b8-81f841b881f8"
 }
 ```
-
-
-
 
 
 

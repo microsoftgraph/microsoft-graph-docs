@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a team. To get the replies for a message, call the [list message replies](channel_get_messagereply.md) or the [get message reply](channel_list_messagereplies.md) API. 
+Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md). To get the replies for a message, call the [list message replies](channel_get_messagereply.md) or the [get message reply](channel_list_messagereplies.md) API. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -18,8 +18,10 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /teams/{id}/channels/{id}/messages
 ```
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+The [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) are not currently supported.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|

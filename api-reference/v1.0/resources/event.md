@@ -4,7 +4,8 @@ An event in a calendar.
 
 This resource supports:
 
-- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+- Adding your own data to custom properties as [extensions](../../../concepts/extensibility_overview.md).
+- Subscribing to [change notifications](../../../concepts/webhooks.md).
 - Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
 by providing a [delta](../api/event_delta.md) function.
 
@@ -50,7 +51,7 @@ by providing a [delta](../api/event_delta.md) function.
 |hasAttachments|Boolean|Set to true if the event has attachments.|
 |iCalUId|String|A unique identifier that is shared by all instances of an event across different calendars.|
 |id|String| Read-only.|
-|importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
+|importance|importance|The importance of the event. The possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isCancelled|Boolean|Set to true if the event has been canceled.|
 |isOrganizer|Boolean|Set to true if the message sender is also the organizer.|
@@ -58,7 +59,7 @@ by providing a [delta](../api/event_delta.md) function.
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|The location of the event.|
 |locations|[location](location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
-|onlineMeetingUrl|String|A URL for an online meeting.|
+|onlineMeetingUrl|String|A URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as a Skype meeting. Read-only.|
 |organizer|[recipient](recipient.md)|The organizer of the event.|
 |originalEndTimeZone|String|The end time zone that was set when the event was created. A value of `tzone://Microsoft/Custom` indicates that a legacy custom time zone was set in desktop Outlook.|
 |originalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -67,12 +68,12 @@ by providing a [delta](../api/event_delta.md) function.
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 |responseStatus|[responseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
-|sensitivity|String| Possible values are: `normal`, `personal`, `private`, `confidential`.|
+|sensitivity|sensitivity| The possible values are: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|The ID for the recurring series master item, if this event is part of a recurring series.|
-|showAs|String|The status to show. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|showAs|freeBusyStatus|The status to show. The possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event starts.|
 |subject|String|The text of the event's subject line.|
-|type|String|The event type. Possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only.|
+|type|eventType|The event type. The possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only.|
 |webLink|String|The URL to open the event in Outlook Web App.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame.|
 
 ## Relationships
@@ -89,8 +90,9 @@ by providing a [delta](../api/event_delta.md) function.
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "attachments",
     "calendar",
@@ -100,7 +102,49 @@ Here is a JSON representation of the resource
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.event"
+  "baseType": "microsoft.graph.outlookItem",
+  "@odata.type": "microsoft.graph.event",
+  "@odata.annotations": [
+    {
+      "property": "attachments",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "calendar",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "navigability": "single",
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "instances",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "navigability": "single",
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

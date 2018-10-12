@@ -4,6 +4,10 @@
 
 Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
 
+This resource supports:
+
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/serviceprincipal_delta.md) function.
+
 ## JSON representation
 Here is a JSON representation of the resource
 
@@ -102,6 +106,7 @@ Here is a JSON representation of the resource
 |[checkMemberGroups](../api/serviceprincipal_checkmembergroups.md)|String collection||
 |[getMemberGroups](../api/serviceprincipal_getmembergroups.md)|String collection||
 |[getMemberObjects](../api/serviceprincipal_getmemberobjects.md)|String collection||
+|[delta](../api/serviceprincipal_delta.md)|servicePrincipal collection| Get incremental changes for service principals. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

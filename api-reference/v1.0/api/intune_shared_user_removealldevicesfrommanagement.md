@@ -9,7 +9,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Delegated (work or school account)| _varies by context_ |
+| &nbsp; &nbsp; Device management | DeviceManagementManagedDevices.PriviligedOperation.All |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 

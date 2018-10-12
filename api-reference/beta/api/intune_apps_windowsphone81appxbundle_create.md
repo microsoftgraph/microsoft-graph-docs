@@ -75,7 +75,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1963
+Content-length: 2163
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppXBundle",
@@ -107,7 +107,11 @@ Content-length: 1963
     "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
     "v8_0": true,
     "v8_1": true,
-    "v10_0": true
+    "v10_0": true,
+    "v10_1607": true,
+    "v10_1703": true,
+    "v10_1709": true,
+    "v10_1803": true
   },
   "phoneProductIdentifier": "Phone Product Identifier value",
   "phonePublisherId": "Phone Publisher Id value",
@@ -125,7 +129,11 @@ Content-length: 1963
         "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
         "v8_0": true,
         "v8_1": true,
-        "v10_0": true
+        "v10_0": true,
+        "v10_1607": true,
+        "v10_1703": true,
+        "v10_1709": true,
+        "v10_1803": true
       }
     }
   ]
@@ -137,7 +145,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2071
+Content-Length: 2271
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppXBundle",
@@ -171,7 +179,11 @@ Content-Length: 2071
     "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
     "v8_0": true,
     "v8_1": true,
-    "v10_0": true
+    "v10_0": true,
+    "v10_1607": true,
+    "v10_1703": true,
+    "v10_1709": true,
+    "v10_1803": true
   },
   "phoneProductIdentifier": "Phone Product Identifier value",
   "phonePublisherId": "Phone Publisher Id value",
@@ -189,15 +201,16 @@ Content-Length: 2071
         "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
         "v8_0": true,
         "v8_1": true,
-        "v10_0": true
+        "v10_0": true,
+        "v10_1607": true,
+        "v10_1703": true,
+        "v10_1709": true,
+        "v10_1803": true
       }
     }
   ]
 }
 ```
-
-
-
 
 
 

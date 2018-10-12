@@ -84,7 +84,7 @@ If the administrator approves the permissions for your application, the successf
 // Line breaks are for legibility only.
 
 GET http://localhost/myapp/permissions
-?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b95&state=state=12345
+?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b95&state=12345
 &admin_consent=True
 ```
 

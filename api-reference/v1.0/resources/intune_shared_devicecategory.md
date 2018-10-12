@@ -1,4 +1,4 @@
-﻿# deviceCategory resource type
+# deviceCategory resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -17,7 +17,7 @@ Device categories provides a way to organize your devices. Using device categori
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the device category. Read-only.|
-|**On-boarding**|
+|**Onboarding**|
 |displayName|String|Display name for the device category.|
 |description|String|Optional description for the device category.|
 
@@ -26,12 +26,12 @@ None
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceCategory"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCategory",

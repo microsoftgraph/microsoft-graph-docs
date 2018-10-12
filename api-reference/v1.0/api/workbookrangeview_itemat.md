@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/itemAt(index={n})
+GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/itemAt(index={n})
 
 ```
 ## Request headers
@@ -22,7 +22,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/i
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-## Request body
+## Function parameters
 In the request URL, provide following query parameters with values.
 
 | Parameter	   | Type	|Description|
@@ -37,12 +37,13 @@ If successful, this method returns `200 OK` response code and [workbookRangeView
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "workbookrangeview_itemat"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView/itemAt(index=0)
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView/itemAt(index=0)
 
 ```
 

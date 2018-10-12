@@ -15,6 +15,3 @@ Windows VPN connection type.
 
 
 
-
-
-

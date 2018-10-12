@@ -40,10 +40,13 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune_deviceconfig_windows10appsforceupdateschedule.md)|Windows 10 force update schedule for Apps.|
 |enableAutomaticRedeployment|Boolean|Allow users with administrative rights to delete all user data and settings using CTRL + Win + R at the device lock screen so that the device can be automatically re-configured and re-enrolled into management.|
 |assignedAccessSingleModeUserName|String|This policy setting allows to define the user account that will be locked to Single App Kiosk Mode.|
 |assignedAccessSingleModeAppUserModelId|String|This policy setting allows to define the Application User Model ID (AUMID) that will be locked to Single App Kiosk Mode.|
@@ -159,11 +162,12 @@ The following table shows the properties that are required when you create the [
 |passwordRequireWhenResumeFromIdleState|Boolean|Indicates whether or not to require a password upon resuming from an idle state.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|The number of sign in failures before factory reset. Valid values 0 to 999|
+|passwordMinimumAgeInDays|Int32|This security setting determines the period of time (in days) that a password must be used before the user can change it. Valid values 0 to 998|
 |privacyAdvertisingId|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Enables or disables the use of advertising ID. Added in Windows 10, version 1607. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when launching apps.|
 |privacyBlockInputPersonalization|Boolean|Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
 |privacyBlockPublishUserActivities|Boolean|Blocks the shared experiences/discovery of recently used resources in task switcher etc.|
-|privacyBlockActivityFeed|Boolean|Blocks the usage of cloud based speech services for Cortana, Dictation, or Store applications|
+|privacyBlockActivityFeed|Boolean|Blocks the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
 |startBlockUnpinningAppsFromTaskbar|Boolean|Indicates whether or not to block the user from unpinning apps from taskbar.|
 |startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype.md)|Setting the value of this collapses the app list, removes the app list entirely, or disables the corresponding toggle in the Settings app. Possible values are: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Boolean|Enabling this policy hides the change account setting from appearing in the user tile in the start menu.|
@@ -278,6 +282,10 @@ The following table shows the properties that are required when you create the [
 |experienceBlockErrorDialogWhenNoSIM|Boolean|Indicates whether or not to allow the error dialog from displaying if no SIM card is detected.|
 |experienceBlockTaskSwitcher|Boolean|Indicates whether or not to enable task switching on the device.|
 |logonBlockFastUserSwitching|Boolean|Disables the ability to quickly switch between users that are logged on simultaneously without logging off.|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|Whether the device is required to connect to the network.|
+|appManagementMSIAllowUserControlOverInstall|Boolean|This policy setting permits users to change installation options that typically are available only to system administrators.|
+|appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.|
+|dataProtectionBlockDirectMemoryAccess|Boolean|This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows.|
 
 
 
@@ -290,13 +298,23 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 11519
+Content-length: 12134
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "windows10AppsForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "recurrence": "daily",
+    "runImmediatelyIfAfterStartDateTime": true
+  },
   "enableAutomaticRedeployment": true,
   "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
   "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
@@ -432,6 +450,7 @@ Content-length: 11519
   "passwordRequireWhenResumeFromIdleState": true,
   "passwordRequiredType": "alphanumeric",
   "passwordSignInFailureCountBeforeFactoryReset": 12,
+  "passwordMinimumAgeInDays": 8,
   "privacyAdvertisingId": "blocked",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
   "privacyBlockInputPersonalization": true,
@@ -561,7 +580,11 @@ Content-length: 11519
   "experienceBlockDeviceDiscovery": true,
   "experienceBlockErrorDialogWhenNoSIM": true,
   "experienceBlockTaskSwitcher": true,
-  "logonBlockFastUserSwitching": true
+  "logonBlockFastUserSwitching": true,
+  "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true,
+  "appManagementMSIAllowUserControlOverInstall": true,
+  "appManagementMSIAlwaysInstallWithElevatedPrivileges": true,
+  "dataProtectionBlockDirectMemoryAccess": true
 }
 ```
 
@@ -570,16 +593,26 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11695
+Content-Length: 12310
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
   "id": "a4235d71-5d71-a423-715d-23a4715d23a4",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "windows10AppsForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "recurrence": "daily",
+    "runImmediatelyIfAfterStartDateTime": true
+  },
   "enableAutomaticRedeployment": true,
   "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
   "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
@@ -715,6 +748,7 @@ Content-Length: 11695
   "passwordRequireWhenResumeFromIdleState": true,
   "passwordRequiredType": "alphanumeric",
   "passwordSignInFailureCountBeforeFactoryReset": 12,
+  "passwordMinimumAgeInDays": 8,
   "privacyAdvertisingId": "blocked",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
   "privacyBlockInputPersonalization": true,
@@ -844,12 +878,13 @@ Content-Length: 11695
   "experienceBlockDeviceDiscovery": true,
   "experienceBlockErrorDialogWhenNoSIM": true,
   "experienceBlockTaskSwitcher": true,
-  "logonBlockFastUserSwitching": true
+  "logonBlockFastUserSwitching": true,
+  "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true,
+  "appManagementMSIAllowUserControlOverInstall": true,
+  "appManagementMSIAlwaysInstallWithElevatedPrivileges": true,
+  "dataProtectionBlockDirectMemoryAccess": true
 }
 ```
-
-
-
 
 
 

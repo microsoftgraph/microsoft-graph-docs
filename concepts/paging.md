@@ -2,13 +2,13 @@
 
 Some queries against Microsoft Graph return multiple pages of data either due to server-side paging or due to the use of the `$top` query parameter to specifically limit the page size in a request. When a result set spans multiple pages, Microsoft Graph returns an `@odata.nextLink` property in the response that contains a URL to the next page of results. 
 
-For example, the following URL requests all the users in an organization with a page size of 5 specified with the `$top` query parameter:
+For example, the following URL requests all the users in an organization with a page size of 5, specified with the `$top` query parameter:
 
 ```html
 https://graph.microsoft.com/v1.0/users?$top=5
 ```
 
-If the result contains more than five users, Microsoft Graph will return an `odata:nextLink` property similar to the following along with the first page of users.
+If the result contains more than five users, Microsoft Graph will return an `@odata:nextLink` property similar to the following along with the first page of users.
 
 ```json
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27"

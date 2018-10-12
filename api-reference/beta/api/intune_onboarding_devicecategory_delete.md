@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Deletes a [deviceCategory](../resources/intune_shared_devicecategory.md).
+Deletes a [deviceCategory](../resources/intune_onboarding_devicecategory.md).
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -47,9 +47,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
 
 
 

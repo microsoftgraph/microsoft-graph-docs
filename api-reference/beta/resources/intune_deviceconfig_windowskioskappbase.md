@@ -8,6 +8,8 @@ The base class for a type of apps
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune_deviceconfig_windowsappstartlayouttilesize.md)|The app tile size for the start layout. Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.|
+|name|String|Represents the friendly name of an app|
 
 ## Relationships
 None
@@ -15,18 +17,16 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsKioskAppBase"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.windowsKioskAppBase"
+  "@odata.type": "#microsoft.graph.windowsKioskAppBase",
+  "startLayoutTileSize": "String",
+  "name": "String"
 }
 ```
-
-
-
 
 
 

@@ -2,13 +2,15 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Not yet documented
+Retrieves the effective permissions of the currently authenticated user
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+|Delegated (work or school account)||
+| &nbsp; &nbsp; Role-based access control | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -34,7 +36,6 @@ The following table shows the parameters that can be used with this function.
 |Property|Type|Description|
 |:---|:---|:---|
 |scope|String|Not yet documented|
-
 
 
 ## Response

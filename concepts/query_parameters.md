@@ -184,28 +184,9 @@ Use the `$search` query parameter to restrict the results of a request to match 
 
 ### Using $search on message collections
 
-Office 365 applications, such as Outlook and SharePoint, support the Keyword Query Language (KQL) syntax to do searches. This provides the convenience of a common discovery domain for their data stores. 
+You can search messages based on a value in specific message properties. The results of the search are sorted by the date and time that the message was sent.
 
-You can specify the following property names that KQL recognizes in a $search query string. These property names are not properties defined in the **message** entity, but are internally mapped to properties in the **message** entity. See [searchable properties in Exchange](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange) for more information and examples.
-
-- **attachment**
-- **bcc**
-- **body**
-- **category**
-- **cc**
-- **content**
-- **from**
-- **has**
-- **importance**
-- **participants**
-- **received**
-- **sender**
-- **subject**
-- **to**
-
-If you do a search on messages and specify only a value, the search is carried out on the default search properties of **from**, **subject**, and **body**.
-
-The results of a search on a message collection are sorted by the date and time that the message was sent.
+If you do a search on messages and specify only a value without specific message properties, the search is carried out on the default search properties of **from**, **subject**, and **body**.
 
 The following example returns all messages in the signed-in user's Inbox that contains "pizza" in any of the three default search properties:
 
@@ -215,12 +196,31 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 [Try in Graph Explorer][search-example]
 
-The next example searches all messages in the user's Inbox that were sent from a specific email address:
+Alternatively, you can search messages by specifying message property names in the following table, that are recognized by the Keyword Query Language (KQL) syntax. These property names correspond to properties defined in the **message** entity of Microsoft Graph. Outlook and other Office 365 applications such as SharePoint support KQL syntax, providing the convenience of a common discovery domain for their data stores.
 
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
-```
-For more information about KQL such as the syntax, supported operators, and tips on searching, see the following articles:
+
+| Searchable email property                | Description | Example 
+|:-------------------------|:------------|:---------|
+| **attachment**           | The names of files attached to an email message.|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
+| **bcc**           | The **bcc** field of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
+| **body**           | The body of an email message.|[`me/messages?$search="body:excitement"`][search-body-example]
+| **cc**           | The **cc** field of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
+| **from**           | The sender of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
+| **hasAttachment** | True if an email message contains an attachment that is not an inline attachment, false otherwise. |[`me/messages?$search="hasAttachments=true"`][search-from-example]
+| **importance**           | The importance of an email message, which a sender can specify when sending a message. The possible values are `low`, `medium`, or `high`.|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
+| **kind**           | The type of message. The possible values are `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks`, or `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
+| **participants**           | The **from**, **to**, **cc**, and **bcc** fields of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="participants:danas"`][search-part-example]
+| **received**           | The date that an email message was received by a recipient.|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
+| **recipients**           | The **to**, **cc**, and **bcc** fields of an email meesage, specified as an SMTP address, display name, or alias.|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
+| **sent**           | The date that an email message was sent by the sender.|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
+| **size**           | The size of an item in bytes.|[`me/messages?$search="size:1..500000"`][search-size-example]
+| **subject**           | The text in the subject line of an email message. .|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
+| **to**           | The **to** field of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
+
+
+For more information about searchable email properties, KQL syntax, supported operators, and tips on searching, see the following articles:
+
+- [Searchable properties in Exchange](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
 
 - [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
@@ -362,7 +362,7 @@ However, it is important to note that query parameters specified in a request mi
 [odata-filter]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
 [odata-query]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356
 [count-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0
-[expand-example]: https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0
+[expand-example]: https://developer.microsoft.com/graph/graph-explorer?request=groups?$expand=members&method=GET&version=v1.0
 [filter-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0
 [format-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0
 [orderby-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0
@@ -371,4 +371,22 @@ However, it is important to note that query parameters specified in a request mi
 [skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
 [top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
 
+[search-att-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22attachment%3Aapi-catalog%2Emd%22&method=GET&version=v1.0
+[search-bcc-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22bcc%3Asamanthab%40contoso%2Ecom%22%26$select=subject,bccRecipients&method=GET&version=v1.0
+[search-body-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22body%3Aexcitement%22&method=GET&version=v1.0
+[search-cc-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22cc%3Adanas%22%26$select=subject,ccRecipients&method=GET&version=v1.0
+[search-from-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22from%3Arandiw%22%26$select=subject,from&method=GET&version=v1.0
+[search-hasatt-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22hasAttachments=true%22&method=GET&version=v1.0
+[search-imp-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22importance%3Ahigh%22%26$select=subject,importance&method=GET&version=v1.0
+[search-kind-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22kind%3Avoicemail%22&method=GET&version=v1.0
+[search-part-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22participants%3Adanas%22&method=GET&version=v1.0
+
+[search-rcvd-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22received%3A07/23/2018%22%26$select=subject,receivedDateTime&method=GET&version=v1.0
+
+[search-rcpts-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22recipients%3Arandiw%22%26$select=subject,toRecipients,ccRecipients,bccRecipients&method=GET&version=v1.0
+[search-sent-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22sent%3A07/23/2018%22%26$select=subject,sentDateTime&method=GET&version=v1.0
+[search-size-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22size%3A1%2E%2E500000%22&method=GET&version=v1.0
+
+[search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.
+[search-to-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22to%3Arandiw%22%26$select=subject,toRecipients&method=GET&version=v1.0
 

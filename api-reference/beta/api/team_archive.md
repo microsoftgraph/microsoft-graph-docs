@@ -8,6 +8,8 @@ Membership changes to the team continue to be allowed.
 
 Archiving is an async operation. A team is archived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
+In order to archive team, the team and [group](../resources/group.md) must have an owner.
+
 To restore a team from its archived state, use the API to [unarchive](team_unarchive.md).
 
 ## Permissions
@@ -56,7 +58,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/archive
 The following is an example of a response.
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams({id})/operations({opId})
+Location: /teams{id}/operations({opId})
 Content-Type: text/plain
 Content-Length: 0
 ```

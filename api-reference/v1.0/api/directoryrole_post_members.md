@@ -21,7 +21,7 @@ POST /directoryRoles/{id}/members/$ref
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | application/json  |
+| Content-Type  | string  | application/json  |
 
 ## Request body
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.

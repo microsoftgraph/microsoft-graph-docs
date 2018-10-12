@@ -39,6 +39,8 @@ The following table shows the properties that are required when you create the w
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -47,6 +49,7 @@ The following table shows the properties that are required when you create the w
 |kioskBrowserDefaultUrl|String|Specify the default URL the browser should navigate to on launch.|
 |kioskBrowserEnableHomeButton|Boolean|Enable the kiosk browser's home button. By default, the home button is disabled.|
 |kioskBrowserEnableNavigationButtons|Boolean|Enable the kiosk browser's navigation buttons(forward/back). By default, the navigation buttons are disabled.|
+|kioskBrowserEnableEndSessionButton|Boolean|Enable the kiosk browser's end session button. By default, the end session button is disabled.|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|Specify the number of minutes the session is idle until the kiosk browser restarts in a fresh state.  Valid values are 1-1440. Valid values 1 to 1440|
 |kioskBrowserBlockedURLs|String collection|Specify URLs that the kiosk browsers should not navigate to|
 |kioskBrowserBlockedUrlExceptions|String collection|Specify URLs that the kiosk browser is allowed to navigate to|
@@ -62,11 +65,15 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1405
+Content-length: 1662
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -80,12 +87,15 @@ Content-length: 1405
         "apps": [
           {
             "@odata.type": "microsoft.graph.windowsKioskUWPApp",
+            "startLayoutTileSize": "small",
+            "name": "Name value",
             "appUserModelId": "App User Model Id value",
             "appId": "App Id value",
             "containedAppId": "Contained App Id value"
           }
         ],
         "showTaskBar": true,
+        "disallowDesktopApps": true,
         "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
       },
       "userAccountsConfiguration": [
@@ -98,6 +108,7 @@ Content-length: 1405
   "kioskBrowserDefaultUrl": "https://example.com/kioskBrowserDefaultUrl/",
   "kioskBrowserEnableHomeButton": true,
   "kioskBrowserEnableNavigationButtons": true,
+  "kioskBrowserEnableEndSessionButton": true,
   "kioskBrowserRestartOnIdleTimeInMinutes": 6,
   "kioskBrowserBlockedURLs": [
     "Kiosk Browser Blocked URLs value"
@@ -113,12 +124,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1513
+Content-Length: 1770
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
   "id": "146a990b-990b-146a-0b99-6a140b996a14",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -133,12 +148,15 @@ Content-Length: 1513
         "apps": [
           {
             "@odata.type": "microsoft.graph.windowsKioskUWPApp",
+            "startLayoutTileSize": "small",
+            "name": "Name value",
             "appUserModelId": "App User Model Id value",
             "appId": "App Id value",
             "containedAppId": "Contained App Id value"
           }
         ],
         "showTaskBar": true,
+        "disallowDesktopApps": true,
         "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
       },
       "userAccountsConfiguration": [
@@ -151,6 +169,7 @@ Content-Length: 1513
   "kioskBrowserDefaultUrl": "https://example.com/kioskBrowserDefaultUrl/",
   "kioskBrowserEnableHomeButton": true,
   "kioskBrowserEnableNavigationButtons": true,
+  "kioskBrowserEnableEndSessionButton": true,
   "kioskBrowserRestartOnIdleTimeInMinutes": 6,
   "kioskBrowserBlockedURLs": [
     "Kiosk Browser Blocked URLs value"
@@ -160,9 +179,6 @@ Content-Length: 1513
   ]
 }
 ```
-
-
-
 
 
 

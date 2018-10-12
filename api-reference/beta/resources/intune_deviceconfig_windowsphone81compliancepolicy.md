@@ -20,6 +20,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |id|String|Key of the entity. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
@@ -60,6 +61,9 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsPhone81CompliancePolicy",
+  "roleScopeTagIds": [
+    "String"
+  ],
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "description": "String",
@@ -79,9 +83,6 @@ Here is a JSON representation of the resource.
   "storageRequireEncryption": true
 }
 ```
-
-
-
 
 
 

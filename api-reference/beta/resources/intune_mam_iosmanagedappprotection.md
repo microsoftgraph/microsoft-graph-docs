@@ -70,6 +70,8 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune_mam_managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device model is not allowed. Possible values are: `block`, `wipe`.|
 |thirdPartyKeyboardsBlocked|Boolean|Defines if third party keyboards are allowed while accessing a managed app|
 |filterOpenInToOnlyManagedApps|Boolean|Defines if open-in operation is supported from the managed app to the filesharing locations selected.|
+|disableProtectionOfManagedOutboundOpenInData|Boolean|Disable protection of data transferred to other apps through IOS OpenIn option|
+|protectInboundDataFromUnknownSources|Boolean|Protect incoming data from unknown source|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -146,12 +148,11 @@ Here is a JSON representation of the resource.
   "allowedIosDeviceModels": "String",
   "appActionIfIosDeviceModelNotAllowed": "String",
   "thirdPartyKeyboardsBlocked": true,
-  "filterOpenInToOnlyManagedApps": true
+  "filterOpenInToOnlyManagedApps": true,
+  "disableProtectionOfManagedOutboundOpenInData": true,
+  "protectInboundDataFromUnknownSources": true
 }
 ```
-
-
-
 
 
 

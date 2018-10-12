@@ -13,8 +13,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/Range
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
+POST /workbook/tables/{id|name}/columns/{id|name}/range
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/range
 
 ```
 ## Request headers
@@ -33,12 +33,14 @@ If successful, this method returns `200 OK` response code and [Range](../resourc
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "tablecolumn_range"
+  "isComposable": true,
+  "name": "tablecolumn_range",
+  "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/Range
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range
 ```
 
 ##### Response
@@ -46,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

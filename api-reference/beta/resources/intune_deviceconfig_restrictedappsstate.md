@@ -13,6 +13,3 @@ Restricted apps state
 
 
 
-
-
-

@@ -33,12 +33,12 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|index|number|Optional. Specifies the relative position of the new row. If null, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.|
-|values|(boolean or string or number)|Optional. A 2-dimensional array of unformatted values of the table rows.|
+|index|Int32|Optional. Specifies the relative position of the new row. If null, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.|
+|values|Json|Optional. A 2-dimensional array of unformatted values of the table row.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [TableRow](../resources/tablerow.md) object in the response body.
+If successful, this method returns `200 OK` response code and [WorkbookTableRow](../resources/tablerow.md) object in the response body.
 
 ## Example
 In this example two rows of data are inserted at the end of the table. 
@@ -55,7 +55,7 @@ Content-type: application/json
 Content-length: 51
 
 {
-  "index": null,
+  "index": 5,
   "values": [
     [1, 2, 3],
     [4, 5, 6]
@@ -68,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -88,5 +88,11 @@ Content-length: 45
   "description": "TableRowCollection: add",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/tablerowcollection_add.md/tablerowcollection_add/values:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Error: /api-reference/v1.0/api/tablerowcollection_add.md/tablerowcollection_add/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."
+  ],
   "tocPath": ""
 }-->

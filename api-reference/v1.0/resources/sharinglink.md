@@ -42,7 +42,7 @@ Here is a JSON representation of the resource.
 
 [Identity]: identity.md
 
-## Type enumeration
+## Type options
 
 This table defines the possible values for the **type** property:
 
@@ -52,12 +52,12 @@ This table defines the possible values for the **type** property:
 | `edit`  | `write` | An edit sharing link, allowing read-write access.
 | `embed` | `read`  | A view-only sharing link that can be used to embed content into a host webpage. Embed links are not available for OneDrive for Business or SharePoint.
 
-## Scope enumeration
+## Scope options
 
-| Value          | Description                                                                                                                 |
-|:---------------|:----------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | The sharing link is available for anyone to use.                                                                            |
-| `organization` | The sharing link is available for anyone within the same organization (tenant) to use. Not available for OneDrive Personal. |
+| Value          | Description
+|:---------------|:------------------------------------------------------------
+| `anonymous`    | Anyone with the link has access, without needing to sign in. This may include people outside of your organization.
+| `organization` | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -66,5 +66,11 @@ This table defines the possible values for the **type** property:
   "description": "The sharing link facet provides information about how a file is shared.",
   "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/sharinglink.md:
+      Found potential enums in resource example that weren't defined in a table:(view,edit,embed) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/sharinglink.md:
+      Found potential enums in resource example that weren't defined in a table:(anonymous,organization) are in resource, but () are in table"
+  ],
   "tocPath": "Facets/SharingLink"
 } -->

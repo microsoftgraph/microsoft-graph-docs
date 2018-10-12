@@ -32,6 +32,7 @@ Inherits from [roleAssignment](../resources/intune_rbac_roleassignment.md)
 |Relationship|Type|Description|
 |:---|:---|:---|
 |roleDefinition|[roleDefinition](../resources/intune_rbac_roledefinition.md)|Role definition this assignment is part of. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|roleScopeTags|[roleScopeTag](../resources/intune_rbac_rolescopetag.md) collection|The set of Role Scope Tags defined on the Role Assignment.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -59,9 +60,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
 
 
 

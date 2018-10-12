@@ -15,7 +15,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionIPRangeCollection"
 }
 -->
@@ -25,7 +24,7 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "ranges": [
     {
-      "@odata.type": "microsoft.graph.iPv6Range",
+      "@odata.type": "microsoft.graph.ipRange",
       "lowerAddress": "String",
       "upperAddress": "String"
     }

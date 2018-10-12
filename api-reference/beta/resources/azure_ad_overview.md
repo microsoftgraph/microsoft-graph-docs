@@ -19,7 +19,7 @@ For more information about permissions, including delegated and application perm
 
 The following table lists some common use cases for Azure AD resources.
 
-| **Use cases**		   | **REST resources**	| **See also** |
+| **Use cases**        | **REST resources** | **See also** |
 |:-----------------|:--------|:----------|
 | **Directory object and methods** | | |
 | `directoryObject` is the base class that many directory resources, like users and groups, inherit from. Microsoft Graph exposes several methods that you can use to discover information about users, groups, and other directory objects. For example, you can check for transitive membership in a list of groups, return all the groups and directory roles that a directory object is a transitive member of, or get all the resources of a specified type (like user or group) from a list of generic resource IDs. | [directoryObject](../resources/directoryobject.md) | N/A |
@@ -29,7 +29,7 @@ The following table lists some common use cases for Azure AD resources.
 | Apply predefined directory settings across a tenant or to individual resource instances. Currently, only settings for Office 365 groups are supported. Directory settings control behaviors like blocked word lists for group display names, whether guest users are allowed to be group owners, and much more. | [directorySetting](../resources/directorysetting.md) <br/>[directorySettingTemplate](../resources/directorysettingtemplate.md)| [Azure Active Directory cmdlets for configuring group settings](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)|
 | Apply Azure AD policies to applications, service principals, groups, or the entire organization. Currently, policies for token lifetime and home realm discovery are supported.  | [policy](../resources/policy.md) | N/A |
 | **Secure privileged access to Azure AD** | | |
-| Manage and monitor time-bound privileged access to directory resources for administrators and IT professionals with Privileged Identity Manager (PIM). | [Privileged Identity Management API](../resources/privilegedidentitymanagement_root.md) | [What is Azure AD Privileged Identity Management?](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)|
+| Manage and monitor time-bound privileged access to directory and Azure resources for administrators and IT professionals with Privileged Identity Management (PIM). | [Privileged Identity Management API](../resources/privilegedidentitymanagement_root.md) | [What is Azure AD Privileged Identity Management?](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)|
 | Monitor identity risk events like users signing in from malware-infected devices or from unfamiliar locations. | [Identity Protection Service API](../resources/identityprotection_root.md) | [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)<br/><br/>[Azure Active Directory risk events](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-risk-events) |
 | **Manage devices** | | |
 | Manage devices registered in the organization. Devices are registered to users and include items like laptops, desktops, tablets, and mobile phones. Devices are typically created in the cloud using the Device Registration Service or by Microsoft Intune. They're used by conditional access policies for multifactor authentication. | [device](../resources/device.md) | [Getting started with Azure Active Directory device registration](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview)<br/><br/>[What is InTune?](https://docs.microsoft.com/intune-classic/understand-explore/introduction-to-microsoft-intune)<br/><br/>[Enroll devices for management in InTune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) |
@@ -45,7 +45,8 @@ The following table lists some common use cases for Azure AD resources.
 | Get information about an organization, such as its business address, technical and notification contacts, the service plans that it's subscribed to, and the domains associated with it. | [organization](../resources/organization.md) | N/A |
 | Get information about the service SKUs that a company is subscribed to. | [subscribedSku](../resources/subscribedsku.md) | N/A |
 | Invite external (guest) users to an organization. | [invitation](../resources/invitation.md) | [What is Azure AD B2B collaboration?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
-
+| **Access reviews** | | |
+| Ensure group memberships and application access rights are correct with access reviews | [access reviews API](../resources/accessreviews_root.md) |[Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 ## Next steps
 Directory resources and APIs can open up new ways for you to engage with users and manage their experiences with Microsoft Graph. To learn more: 
 
@@ -53,5 +54,4 @@ Directory resources and APIs can open up new ways for you to engage with users a
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
-
 

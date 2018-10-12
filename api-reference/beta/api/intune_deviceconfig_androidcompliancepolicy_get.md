@@ -49,11 +49,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1467
+Content-Length: 1806
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.androidCompliancePolicy",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
     "id": "752c820f-820f-752c-0f82-2c750f822c75",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
@@ -81,13 +84,19 @@ Content-Length: 1467
     "securityRequireGooglePlayServices": true,
     "securityRequireUpToDateSecurityProviders": true,
     "securityRequireCompanyPortalAppIntegrity": true,
-    "conditionStatementId": "Condition Statement Id value"
+    "conditionStatementId": "Condition Statement Id value",
+    "restrictedApps": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ]
   }
 }
 ```
-
-
-
 
 
 

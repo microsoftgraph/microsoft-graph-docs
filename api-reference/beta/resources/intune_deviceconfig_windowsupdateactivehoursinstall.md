@@ -20,7 +20,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsUpdateActiveHoursInstall"
 }
 -->
@@ -31,9 +30,6 @@ Here is a JSON representation of the resource.
   "activeHoursEnd": "String (time of day)"
 }
 ```
-
-
-
 
 
 

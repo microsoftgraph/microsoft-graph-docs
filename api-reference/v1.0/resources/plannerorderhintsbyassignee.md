@@ -11,9 +11,8 @@ Example:
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "ca2a1df2-e36b-4987-9f6b-0ea462f4eb47", "4e98f8f1-bb03-4015-b8e0-19bb370949d8" ],
   "@odata.type": "microsoft.graph.plannerOrderHintsByAssignee"
 }-->
 

@@ -57,7 +57,7 @@ Content-length: 142
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
   "name": "name-value",
-  "contentBytes": "contentBytes-value"
+  "contentBytes": "base64-contentBytes-value"
 }
 ```
 

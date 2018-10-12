@@ -22,6 +22,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -100,8 +102,10 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |kioskModeAllowTouchscreen|Boolean|Indicates whether or not to allow use of the touchscreen while in kiosk mode.|
 |kioskModeAllowVoiceOverSettings|Boolean|Indicates whether or not to allow access to the voice over settings while in kiosk mode.|
 |kioskModeAllowVolumeButtons|Boolean|Indicates whether or not to allow use of the volume buttons while in kiosk mode.|
+|kioskModeBlockVolumeButtons|Boolean|Indicates whether or not to block the volume buttons while in Kiosk Mode.|
 |kioskModeAllowZoomSettings|Boolean|Indicates whether or not to allow access to the zoom settings while in kiosk mode.|
 |kioskModeAppStoreUrl|String|URL in the app store to the app to use for kiosk mode. Use if KioskModeManagedAppId is not known.|
+|kioskModeBuiltInAppId|String|ID for built-in apps to use for kiosk mode. Used when KioskModeManagedAppId and KioskModeAppStoreUrl are not set.|
 |kioskModeRequireAssistiveTouch|Boolean|Indicates whether or not to require assistive touch while in kiosk mode.|
 |kioskModeRequireColorInversion|Boolean|Indicates whether or not to require color inversion while in kiosk mode.|
 |kioskModeRequireMonoAudio|Boolean|Indicates whether or not to require mono audio while in kiosk mode.|
@@ -156,6 +160,18 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |voiceDialingBlocked|Boolean|Indicates whether or not to block voice dialing.|
 |wallpaperBlockModification|Boolean|Indicates whether or not to allow wallpaper modification on supervised device (iOS 9.0 and later) .|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|Indicates whether or not to force the device to use only Wi-Fi networks from configuration profiles when the device is in supervised mode.|
+|classroomForceRequestPermissionToLeaveClasses|Boolean|Indicates whether a student enrolled in an unmanaged course via Classroom will request permission from the teacher when attempting to leave the course (iOS 11.3 and later).|
+|keychainBlockCloudSync|Boolean|Indicates whether or not iCloud keychain synchronization is blocked.|
+|pkiBlockOTAUpdates|Boolean|Indicates whether or not over-the-air PKI updates are blocked. Setting this restriction to false does not disable CRL and OCSP checks (iOS 7.0 and later).|
+|privacyForceLimitAdTracking|Boolean|Indicates if ad tracking is limited.(iOS 7.0 and later).|
+|enterpriseBookBlockBackup|Boolean|Indicates whether or not Enterprise book back up is blocked.|
+|enterpriseBookBlockMetadataSync|Boolean|Indicates whether or not Enterprise book notes and highlights sync is blocked.|
+|airPrintBlocked|Boolean|Indicates whether or not AirPrint is blocked (iOS 11.0 and later).|
+|airPrintBlockCredentialsStorage|Boolean|Indicates whether or not keychain storage of username and password for Airprint is blocked (iOS 11.0 and later).|
+|airPrintForceTrustedTLS|Boolean|Indicates if trusted certificates are required for TLS printing communication (iOS 11.0 and later).|
+|airPrintBlockiBeaconDiscovery|Boolean|Indicates whether or not iBeacon discovery of AirPrint printers is blocked. This prevents spurious AirPrint Bluetooth beacons from phishing for network traffic (iOS 11.0 and later).|
+|blockSystemAppRemoval|Boolean|Indicates whether or not the removal of system apps from the device is blocked on a supervised device (iOS 11.0 and later).|
+|vpnBlockCreation|Boolean|Indicates whether or not the creation of VPN configurations is blocked (iOS 11.0 and later).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -181,6 +197,10 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
+  "supportsScopeTags": true,
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -285,8 +305,10 @@ Here is a JSON representation of the resource.
   "kioskModeAllowTouchscreen": true,
   "kioskModeAllowVoiceOverSettings": true,
   "kioskModeAllowVolumeButtons": true,
+  "kioskModeBlockVolumeButtons": true,
   "kioskModeAllowZoomSettings": true,
   "kioskModeAppStoreUrl": "String",
+  "kioskModeBuiltInAppId": "String",
   "kioskModeRequireAssistiveTouch": true,
   "kioskModeRequireColorInversion": true,
   "kioskModeRequireMonoAudio": true,
@@ -395,12 +417,21 @@ Here is a JSON representation of the resource.
   "spotlightBlockInternetResults": true,
   "voiceDialingBlocked": true,
   "wallpaperBlockModification": true,
-  "wiFiConnectOnlyToConfiguredNetworks": true
+  "wiFiConnectOnlyToConfiguredNetworks": true,
+  "classroomForceRequestPermissionToLeaveClasses": true,
+  "keychainBlockCloudSync": true,
+  "pkiBlockOTAUpdates": true,
+  "privacyForceLimitAdTracking": true,
+  "enterpriseBookBlockBackup": true,
+  "enterpriseBookBlockMetadataSync": true,
+  "airPrintBlocked": true,
+  "airPrintBlockCredentialsStorage": true,
+  "airPrintForceTrustedTLS": true,
+  "airPrintBlockiBeaconDiscovery": true,
+  "blockSystemAppRemoval": true,
+  "vpnBlockCreation": true
 }
 ```
-
-
-
 
 
 

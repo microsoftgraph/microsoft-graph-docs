@@ -62,6 +62,7 @@ If successful, this method returns `201 Created` response code and [Attachment](
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkpsDRVK"],
   "name": "create_file_attachment_from_message"
 }-->
 ```http
@@ -72,7 +73,7 @@ Content-length: 142
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
   "name": "smile",
-  "contentBytes": "R0lGODdhEAYEAA7"
+  "contentBytes": "base64R0lGODdhEAYEAA7"
 }
 ```
 
@@ -98,7 +99,7 @@ Content-length: 202
     "isInline": false,
     "contentId": null,
     "contentLocation": null,
-    "contentBytes": "R0lGODdhEAYEAA7"
+    "contentBytes": "base64R0lGODdhEAYEAA7"
 }
 
 ```
@@ -109,6 +110,7 @@ Content-length: 202
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkpsDRVK"],
   "name": "create_item_attachment_from_message"
 }-->
 

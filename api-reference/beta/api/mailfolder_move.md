@@ -36,7 +36,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter | Type | Description |
 |:----------|:-----|:------------|
-|destinationId|String|The folder ID, or a well-known folder name. For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md#well-known-folder-names).|
+|destinationId|String|The folder ID, or a well-known folder name. For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).|
 
 ## Response
 

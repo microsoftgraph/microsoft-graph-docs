@@ -23,7 +23,7 @@ GET /reports/getYammerActivityUserDetail(period='{period_value}')
 GET /reports/getYammerActivityUserDetail(date={date_value})
 ```
 
-## Request parameters
+## Function parameters
 
 In the request URL, provide one of the following parameters with a valid value.
 
@@ -67,8 +67,9 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getyammeractivityuserdetail"
 }-->
 
@@ -80,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(period=
 
 The following is an example of the response.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
 
 ```http
 HTTP/1.1 302 Found
@@ -88,13 +89,40 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that downloads will have the following schema.
+#### Request
+
+If the `date` parameter is specified, the report is scoped to activities that took place on the given date.
+
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "reportroot_getyammeractivityuserdetail_date"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(date='2018-03-05')
+```
+
+#### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
+  "@odata.type": "microsoft.graph.report"
 } -->
+
+```http
+HTTP/1.1 302 Found
+Content-Type: text/plain
+Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+```
+
+
+Follow the 302 redirection and the CSV file that downloads will have the following schema.
+
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

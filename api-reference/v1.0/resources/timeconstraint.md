@@ -11,7 +11,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.timeconstraint"
+  "@odata.type": "microsoft.graph.timeConstraint"
 }-->
 
 ```json
@@ -24,7 +24,7 @@ Here is a JSON representation of the resource
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|activityDomain|String|The nature of the activity, optional. Possible values are: `work`, `personal`, `unrestricted`, or `unknown`.|
+|activityDomain|activityDomain|The nature of the activity, optional. The possible values are: `work`, `personal`, `unrestricted`, or `unknown`.|
 |timeslots|[timeSlot](timeslot.md) collection|An array of time periods.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

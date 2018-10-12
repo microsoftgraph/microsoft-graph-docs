@@ -35,7 +35,7 @@ Do not supply a request body with this method.
 
 #### Request
 
-<!-- { "blockType": "request", "name": "get-list" } -->
+<!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
 
 ```http
 GET /sites/{site-id}/lists/{list-id}
@@ -43,7 +43,7 @@ GET /sites/{site-id}/lists/{list-id}
 
 #### Response
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```json
 HTTP/1.1 200 OK
@@ -65,21 +65,22 @@ With `select` and `expand` statements, you can retrieve list metadata, column de
 
 #### Request
 
-<!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
+<!-- { "blockType": "request", "name": "get-list-multi-expand", "scopes": "sites.read.all" } -->
 
 ```http
-GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
+GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 
 #### Response
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "id": "1234-112-112-4",
   "name": "Inventory",
   "lastModifiedDateTime": "2016-08-30T08:32:00Z",
   "columns": [

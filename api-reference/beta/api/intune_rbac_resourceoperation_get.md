@@ -49,21 +49,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 256
+Content-Length: 331
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.resourceOperation",
     "id": "232b8fee-8fee-232b-ee8f-2b23ee8f2b23",
+    "resource": "Resource value",
     "resourceName": "Resource Name value",
     "actionName": "Action Name value",
-    "description": "Description value"
+    "description": "Description value",
+    "enabledForScopeValidation": true
   }
 }
 ```
-
-
-
 
 
 

@@ -20,6 +20,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |id|String|Key of the entity. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
@@ -43,7 +44,6 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |codeIntegrityEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation.|
 |storageRequireEncryption|Boolean|Require encryption on windows devices.|
 |activeFirewallRequired|Boolean|Require active firewall on Windows devices.|
-|uacRequired|Boolean|Require UAC on Windows devices.|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune_deviceconfig_operatingsystemversionrange.md) collection|The valid operating system build ranges on Windows devices. This collection can contain a maximum of 10000 elements.|
 
 ## Relationships
@@ -68,6 +68,9 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windows10MobileCompliancePolicy",
+  "roleScopeTagIds": [
+    "String"
+  ],
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "description": "String",
@@ -91,7 +94,6 @@ Here is a JSON representation of the resource.
   "codeIntegrityEnabled": true,
   "storageRequireEncryption": true,
   "activeFirewallRequired": true,
-  "uacRequired": true,
   "validOperatingSystemBuildRanges": [
     {
       "@odata.type": "microsoft.graph.operatingSystemVersionRange",
@@ -102,9 +104,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
 
 
 

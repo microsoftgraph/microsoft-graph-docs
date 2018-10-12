@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Find meeting time suggestions based on organizer and attendee availability, and time or location constraints specified as parameters.
+Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
 
 If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property. 
 Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.
@@ -46,7 +46,7 @@ All the supported parameters are listed below. Depending on your scenario, speci
 
 The following table describes the restrictions you can further specify in the **timeConstraint** parameter.
 
-|**activityDomain value in timeConstraint**|**Suggestions for meeting times**|
+|activityDomain value in timeConstraint|Suggestions for meeting times|
 |:-----|:-----|
 |work| Suggestions are within the user's work hours which are defined in the user’s calendar configuration and can be customized by the user or administrator. The default work hours are Monday to Friday, 8am to 5pm in the time zone set for the mailbox. This is the default value if no **activityDomain** is specified. |
 |personal| Suggestions are within the user's work hours, and Saturday and Sunday. The default is Monday to Sunday, 8am to 5pm, in the time zone setting for the mailbox.|
@@ -255,5 +255,9 @@ Content-Length: 976
   "description": "user: findMeetingTimes",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/beta/api/user_findmeetingtimes.md:
+      Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|"
+  ],
   "tocPath": ""
 }-->

@@ -51,13 +51,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 909
+Content-Length: 1009
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.androidWorkProfileEnterpriseWiFiConfiguration",
     "id": "c48cd726-d726-c48c-26d7-8cc426d78cc4",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "supportsScopeTags": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -75,9 +79,6 @@ Content-Length: 909
   }
 }
 ```
-
-
-
 
 
 

@@ -5,6 +5,38 @@ A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can co
 This resource supports using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates,
 by providing a [delta](../api/mailfolder_delta.md) function.
 
+**Well-known folder names**
+
+Outlook creates certain folders for users by default. Instead of using the corresponding folder **id** value, for convenience, you can use
+the well-known folder names from the table below when accessing these folders. For example, you can get the Drafts folder using its well-known name with the following query.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/drafts
+```
+
+Well-known names work regardless of the locale of the user's mailbox, so the above query will always return the user's Drafts folder regardless of how it is named.
+
+| Well-known folder name | Description |
+|:-----------------------|:------------|
+| archive | The archive folder messages are sent to when using the One_Click Archive feature in Outlook clients that support it. **Note:** this is not the same as the Archive Mailbox feature of Exchange online. |
+| clutter | The clutter folder low-priority messages are moved to when using the Clutter feature. |
+| conflicts | The folder that contains conflicting items in the mailbox. |
+| conversationhistory | The folder where Skype saves IM conversations (if Skype is configured to do so). |
+| deleteditems | The folder items are moved to when they are deleted. |
+| drafts | The folder that contains unsent messages. |
+| inbox | The inbox folder. |
+| junkemail | The junk email folder. |
+| localfailures | The folder that contains items that exist on the local client but could not be uploaded to the server. |
+| msgfolderroot | The "Top of Information Store" folder. This folder is the parent folder for folders that are displayed in normal mail clients, such as the inbox. |
+| outbox | The outbox folder. |
+| recoverableitemsdeletions | The folder that contains soft-deleted items: deleted either from the Deleted Items folder, or by pressing shift+delete in Outlook. This folder is not visible in any Outlook email client, but end users can interact with it through the **Recover Deleted Items from Server** feature in Outlook or Outlook on the web. |
+| scheduled | The folder that contains messages that are scheduled to reappear in the inbox using the Schedule feature in Outlook for iOS. |
+| searchfolders | The parent folder for all search folders defined in the user's mailbox. |
+| sentitems | The sent items folder. |
+| serverfailures | The folder that contains items that exist on the server but could not be synchronized to the local client. |
+| syncissues | The folder that contains synchronization logs created by Outlook. |
+
 ## Methods
 
 | Method | Return Type | Description |
@@ -36,37 +68,7 @@ by providing a [delta](../api/mailfolder_delta.md) function.
 |totalItemCount|Int32|The number of items in the mailFolder.|
 |unreadItemCount|Int32|The number of items in the mailFolder marked as unread.|
 
-### Well-known folder names
-
-Outlook creates certain folders for users by default. Instead of using the corresponding folder `id` value, for convenience, you can use
-the well-known folder names from the table below when accessing these folders. For example, you can get the Drafts folder using its well-known name with the following query.
-
-```http
-GET /me/mailFolders/drafts
-```
-
-Well-known names work regardless of the locale of the user's mailbox, so the above query will always return the user's Drafts folder regardless of how it is named.
-
-| Well-known folder name | Description |
-|:-----------------------|:------------|
-| archive | The archive folder messages are sent to when using the One_Click Archive feature in Outlook clients that support it. **Note:** this is not the same as the Archive Mailbox feature of Exchange online. |
-| clutter | The clutter folder low-priority messages are moved to when using the Clutter feature. |
-| conflicts | The folder that contains conflicting items in the mailbox. |
-| conversationhistory | The folder where Skype saves IM conversations (if Skype is configured to do so). |
-| deleteditems | The folder items are moved to when they are deleted. |
-| drafts | The folder that contains unsent messages. |
-| inbox | The inbox folder. |
-| junkemail | The junk email folder. |
-| localfailures | The folder that contains items that exist on the local client but could not be uploaded to the server. |
-| msgfolderroot | The "Top of Information Store" folder. This folder is the parent folder for folders that are displayed in normal mail clients, such as the inbox. |
-| outbox | The outbox folder. |
-| scheduled | The folder that contains messages that are scheduled to reappear in the inbox using the Schedule feature in Outlook for iOS. |
-| searchfolders | The parent folder for all search folders defined in the user's mailbox. |
-| sentitems | The sent items folder. |
-| serverfailures | The folder that contains items that exist on the server but could not be synchronized to the local client. |
-| syncissues | The folder that contains synchronization logs created by Outlook. |
-
-### Access item counts efficiently
+**Access item counts efficiently**
 
 The `TotalItemCount` and `UnreadItemCount` properties of a folder allow you to conveniently compute the number of read items in the folder.
 They let you avoid queries like the following that can incur significant latency:
@@ -91,7 +93,7 @@ Mail folders in Outlook can contain more than one type of items, for example, th
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
@@ -101,7 +103,33 @@ Here is a JSON representation of the resource
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.mailFolder"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.mailFolder",
+  "@odata.annotations": [
+    {
+      "property": "childFolders",
+      "capabilities": {
+        "changeTracking": false,
+        "navigability": "single",
+        "searchable": false
+      }
+    },
+    {
+      "property": "messageRules",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "messages",
+      "capabilities": {
+        "changeTracking": true,
+        "navigability": "single"
+      }
+    }
+  ]
 }-->
 
 ```json

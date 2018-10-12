@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 To access the root SharePoint site with a relative path:
 
-<!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "service.sharepoint sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET /sites/{hostname}:/{relative-path}
@@ -49,15 +49,10 @@ This method returns a [site][] resource for the site referenced by the unique id
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
-  "owner": {
-    "user": { 
-      "displayName": "Daron Spektor",
-      "id": "5280E7FE-DC7A-4486-9490-E790D81DFEB3"
-    }
-  },
   "displayName": "OneDrive Team Site",
   "name": "1drvteam",
   "createdDateTime": "2017-05-09T20:56:00Z",
@@ -71,5 +66,11 @@ HTTP/1.1 200 OK
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: Couldn't serialize request for path /sites/{var}/children/{var} into EDMX: System.InvalidOperationException: Uri path requires navigating into unknown object hierarchy: missing property 'children' on 'site'. Possible issues:
+         1) Doc bug where 'children' isn't defined on the resource.      2) Doc bug where 'children' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.       3) Doc bug where 'site' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation
+     at ApiDocs.Publishing.CSDL.CsdlWriter.ParseRequestTargetType(String requestPath, MethodCollection requestMethodCollection, EntityFramework edmx, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 982
+     at ApiDocs.Publishing.CSDL.CsdlWriter.ProcessRestRequestPaths(EntityFramework edmx, String[] baseUrlsToRemove, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 653"
+  ],
   "tocPath": "Sites/Get by path"
 } -->

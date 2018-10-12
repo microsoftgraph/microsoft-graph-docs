@@ -15,6 +15,3 @@ Notification Settings Alert Type.
 
 
 
-
-
-

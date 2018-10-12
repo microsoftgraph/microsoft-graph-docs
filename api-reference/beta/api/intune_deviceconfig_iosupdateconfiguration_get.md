@@ -51,13 +51,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 566
+Content-Length: 711
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
     "id": "321aef09-ef09-321a-09ef-1a3209ef1a32",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "supportsScopeTags": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -68,13 +72,11 @@ Content-Length: 566
     "scheduledInstallDays": [
       "monday"
     ],
-    "utcTimeOffsetInMinutes": 6
+    "utcTimeOffsetInMinutes": 6,
+    "enforcedSoftwareUpdateDelayInDays": 1
   }
 }
 ```
-
-
-
 
 
 

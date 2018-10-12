@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
+<!-- { "blockType": "request", "name": "list-subsites", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites

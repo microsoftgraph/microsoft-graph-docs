@@ -11,8 +11,11 @@ Inherits from [windowsKioskAppBase](../resources/intune_deviceconfig_windowskios
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Represents the friendly name of an app|
+|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune_deviceconfig_windowsappstartlayouttilesize.md)|The app tile size for the start layout Inherited from [windowsKioskAppBase](../resources/intune_deviceconfig_windowskioskappbase.md). Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.|
+|name|String|Represents the friendly name of an app Inherited from [windowsKioskAppBase](../resources/intune_deviceconfig_windowskioskappbase.md)|
 |path|String|Define the path of a desktop app|
+|desktopApplicationId|String|Define the DesktopApplicationID of the app|
+|desktopApplicationLinkPath|String|Define the DesktopApplicationLinkPath of the app|
 
 ## Relationships
 None
@@ -20,20 +23,19 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsKioskDesktopApp"
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsKioskDesktopApp",
+  "startLayoutTileSize": "String",
   "name": "String",
-  "path": "String"
+  "path": "String",
+  "desktopApplicationId": "String",
+  "desktopApplicationLinkPath": "String"
 }
 ```
-
-
-
 
 
 

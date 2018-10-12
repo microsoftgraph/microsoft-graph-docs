@@ -22,6 +22,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -30,6 +32,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |targetEdition|[windows10EditionType](../resources/intune_deviceconfig_windows10editiontype.md)|Edition Upgrade Target Edition. Possible values are: `windows10Enterprise`, `windows10EnterpriseN`, `windows10Education`, `windows10EducationN`, `windows10MobileEnterprise`, `windows10HolographicEnterprise`, `windows10Professional`, `windows10ProfessionalN`, `windows10ProfessionalEducation`, `windows10ProfessionalEducationN`, `windows10ProfessionalWorkstation`, `windows10ProfessionalWorkstationN`, `notConfigured`.|
 |license|String|Edition Upgrade License File Content.|
 |productKey|String|Edition Upgrade Product Key.|
+|windowsSMode|[windowsSModeConfiguration](../resources/intune_deviceconfig_windowssmodeconfiguration.md)|S mode configuration. Possible values are: `noRestriction`, `block`, `unlock`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -55,6 +58,10 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.editionUpgradeConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
+  "supportsScopeTags": true,
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -63,11 +70,9 @@ Here is a JSON representation of the resource.
   "targetEdition": "String",
   "license": "String",
   "productKey": "String",
+  "windowsSMode": "String"
 }
 ```
-
-
-
 
 
 

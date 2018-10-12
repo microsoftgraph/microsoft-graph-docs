@@ -54,12 +54,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 299
+Content-Length: 298
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.vppTokenLicenseSummary",
+      "@odata.type": "microsoft.graph.vppTokenLicenseSummary",
       "vppTokenId": "Vpp Token Id value",
       "appleId": "Apple Id value",
       "organizationName": "Organization Name value",
@@ -69,9 +69,6 @@ Content-Length: 299
   ]
 }
 ```
-
-
-
 
 
 

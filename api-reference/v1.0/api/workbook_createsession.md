@@ -55,7 +55,7 @@ Content-type: application/json
 Content-length: 52
 
 {
-  "persistSession": true
+  "persistChanges": true
 }
 ```
 In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.
@@ -74,7 +74,7 @@ Content-length: 52
 
 {
   "id": "id-value",
-  "persistSession": true
+  "persistChanges": true
 }
 ```
 

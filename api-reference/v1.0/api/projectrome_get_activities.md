@@ -85,7 +85,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(userActivity)",
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/activities?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
     "value": [{
-        "@odata.type": "#microsoft.graph.activity",
+        "@odata.type": "#microsoft.graph.userActivity",
         "activitySourceHost": "https://www.contoso.com",
         "createdDateTime": "2018-02-26T18:34:29.592Z",
         "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",
@@ -95,7 +95,7 @@ Content-Type: application/json
             "attribution": {
               "iconUrl": "http://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
-              "addImageQuery": "false",
+              "addImageQuery": false,
               },
             "displayText": "Contoso How-To: How to Tie a Reef Knot",
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",

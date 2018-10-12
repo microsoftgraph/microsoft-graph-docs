@@ -8,7 +8,7 @@ entire mailbox or in specific folders.
 Programmatically, message folders are represented by the [mailFolder](../api-reference/v1.0/resources/mailfolder.md) resource, and the Inbox is one of the
 folders at the root of the folder structure.
 
-Each **mailFolder** is identified by its folder ID, and has a writable **displayName** property. Outlook creates a few other folders for customers by default. You can reference these default folders by their folder IDs, or by their well-known names. For a list of available well-known folder names, see [mailFolder resource type](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names).
+Each **mailFolder** is identified by its folder ID, and has a writable **displayName** property. Outlook creates a few other folders for customers by default. You can reference these default folders by their folder IDs, or by their well-known names. For a list of available well-known folder names, see [mailFolder resource type](../api-reference/v1.0/resources/mailfolder.md).
 
 For a custom, non-default folder, if you know its folder path, you can access the folder by first using the `/users/{id}/mailfolders` shortcut to get to the root level and get all the top level folders:
 

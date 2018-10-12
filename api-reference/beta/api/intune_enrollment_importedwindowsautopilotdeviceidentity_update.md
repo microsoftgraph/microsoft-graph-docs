@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
+PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ## Request headers
@@ -94,9 +95,6 @@ Content-Length: 590
   }
 }
 ```
-
-
-
 
 
 

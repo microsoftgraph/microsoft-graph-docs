@@ -20,7 +20,7 @@ actions such as copy, move, or send.
 
 Message bodies can be in HTML or text format.
 
-You can use well-known folder names such as `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` to identify certain mail folders that exist by default for all users. For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md#well-known-folder-names).
+You can use well-known folder names such as `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` to identify certain mail folders that exist by default for all users. For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).
 
 For example, you can get messages in the Outlook **Sent Items** folder of the signed-in user, without first getting the folder ID:
 
@@ -44,7 +44,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Add, get, or delete attachments of a message | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Methods of attachment](../resources/attachment.md#methods) |
 | Get language and time zone choices for a user | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser_supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser_supportedtimezones.md) |
 | Get or update a user's automatic reply, locale, time zone, or working hours | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Get user's mailbox settings](../api/user_get_mailboxsettings.md), <br> [Update user's mailbox settings](../api/user_update_mailboxsettings.md) |
-| Get MailTips of other recipients' special status, such as out-of-office (preview) | [user (preview)](../resources/user.md), <br> [mailTips (preview)](../resources/mailtips.md) | [Get MailTips](../api/user_getmailtips.md) |
+| Get MailTips of other recipients' special status, such as out-of-office | [user](../resources/user.md), <br> [mailTips](../resources/mailtips.md) | [Get MailTips](../api/user_getmailtips.md) |
 | Alert user if mentioned in other messages (preview) | [mention (preview)](../resources/mention.md) | [Get details of @-mentions in a message](../api/message_get.md#request-2) |
 | Unsubscribe user from an email distribution list (preview) | [message (preview)](../resources/message.md) | [Unsubscribe](../api/message_unsubscribe.md) |
 | **Mail and folder management** | | |
@@ -56,6 +56,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Get notified of changes to messages in a folder | [subscription](../resources/subscription.md) | [Working with webhooks in Microsoft Graph](../resources/webhooks.md) |
 | Synchronize messages or mail folder hierarchy | [message](../resources/message.md) | [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md) |
 | **App development** | | |
+| Add custom app data as Internet message headers of a message | [message](../resources/message.md) | Add custom data to the **internetMessageHeaders** collection of the message. |
 | Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md) |
 | Access custom data for under-exposed Outlook MAPI properties | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook extended properties overview](../resources/extended-properties-overview.md) |
 

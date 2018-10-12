@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 912
+Content-Length: 1020
 
 {
   "value": [
@@ -56,6 +56,10 @@ Content-Length: 912
       "@odata.type": "#microsoft.graph.androidImportedPFXCertificateProfile",
       "id": "1cd3b0a6-b0a6-1cd3-a6b0-d31ca6b0d31c",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "supportsScopeTags": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -77,9 +81,6 @@ Content-Length: 912
   ]
 }
 ```
-
-
-
 
 
 

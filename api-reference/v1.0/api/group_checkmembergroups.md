@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                                              |
 | Application                            | _Group.Read.All_, Directory.Read.All. Directory.ReadWrite.All                               |
 
-> **Note:** This API currently requires the `Directory.Read.All` permission or higher. Using the `Gorup.Read.All` permission will return an error. This is a known bug.
+> **Note:** This API currently requires the `Directory.Read.All` permission or higher. Using the `Group.Read.All` permission will return an error. This is a known bug.
 
 ## HTTP request
 
@@ -37,9 +37,9 @@ POST /groups/{id}/checkMemberGroups
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter | Type   | Description           |
-| :-------- | :----- | :-------------------- |
-| groupIds  | String | An array of group ids |
+| Parameter | Type              | Description           |
+| :-------- | :---------------- | :-------------------- |
+| groupIds  | String collection | An array of group ids |
 
 ## Response
 

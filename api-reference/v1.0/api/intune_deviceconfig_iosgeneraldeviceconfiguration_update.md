@@ -116,6 +116,7 @@ The following table shows the properties that are required when you create the [
 |kioskModeAllowVolumeButtons|Boolean|Indicates whether or not to allow use of the volume buttons while in kiosk mode.|
 |kioskModeAllowZoomSettings|Boolean|Indicates whether or not to allow access to the zoom settings while in kiosk mode.|
 |kioskModeAppStoreUrl|String|URL in the app store to the app to use for kiosk mode. Use if KioskModeManagedAppId is not known.|
+|kioskModeBuiltInAppId|String|ID for built-in apps to use for kiosk mode. Used when KioskModeManagedAppId and KioskModeAppStoreUrl are not set.|
 |kioskModeRequireAssistiveTouch|Boolean|Indicates whether or not to require assistive touch while in kiosk mode.|
 |kioskModeRequireColorInversion|Boolean|Indicates whether or not to require color inversion while in kiosk mode.|
 |kioskModeRequireMonoAudio|Boolean|Indicates whether or not to require mono audio while in kiosk mode.|
@@ -182,7 +183,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 7773
+Content-length: 7837
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -291,6 +292,7 @@ Content-length: 7773
   "kioskModeAllowVolumeButtons": true,
   "kioskModeAllowZoomSettings": true,
   "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+  "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
   "kioskModeRequireAssistiveTouch": true,
   "kioskModeRequireColorInversion": true,
   "kioskModeRequireMonoAudio": true,
@@ -408,7 +410,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7949
+Content-Length: 8013
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -520,6 +522,7 @@ Content-Length: 7949
   "kioskModeAllowVolumeButtons": true,
   "kioskModeAllowZoomSettings": true,
   "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+  "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
   "kioskModeRequireAssistiveTouch": true,
   "kioskModeRequireColorInversion": true,
   "kioskModeRequireMonoAudio": true,

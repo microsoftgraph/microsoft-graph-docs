@@ -15,6 +15,3 @@ Android For Work default app permission policy type.
 
 
 
-
-
-

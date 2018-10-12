@@ -218,14 +218,21 @@ Content-type: application/json
       ]
 }
 ```
+
 Some things to note about the example response above:
+
 - The objects are returned with the same set of properties originally specified via the `$select` and `$expand` query parameters.
+
 - Both changed and unchanged properties are included. In the example above, the `description` property has a new value, while the `displayName` property has not changed.
+
 - `members@delta` contains any changes to membership.
+
   - The first user in the list has been removed from the group - either by removing the membership or by deleting the user object itself. The `@removed` property describes that.
+
   - The second user has been added to the group.
 
 ## Paging through members in a large group
+
 The `members@delta` property is included in group objects by default, when the `$select` query parameter has not been specified, or when the `$expand=members` parameter is explicitly specified. For groups with many members it is possible that all members cannot fit into a single response; in this section we describe the pattern you should implement to handle such cases.
 
 >**Note:** This pattern applies to both the initial retrieval of group state as well as to subsequent calls to get delta changes.

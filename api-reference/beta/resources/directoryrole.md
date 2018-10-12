@@ -6,6 +6,10 @@ Represents an Azure AD directory role. Azure AD directory roles are also known a
 
 By default, directory roles are scoped to be tenant-wide.  However, directory roles (currently only the *user account admin* and *helpdesk admin*) may also be scoped to [administrative units](administrativeunit.md).
 
+This resource supports:
+
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/directoryrole_delta.md) function.
+
 ## Methods
 
 | Method       | Return Type  |Description|
@@ -16,6 +20,7 @@ By default, directory roles are scoped to be tenant-wide.  However, directory ro
 |[List members](../api/directoryrole_list_members.md) |[directoryObject](directoryobject.md) collection| Get the users that are members of the directory role from the members navigation property.|
 |[Remove a member](../api/directoryrole_delete_member.md) |[directoryObject](directoryobject.md)| Remove a user from the directory role.|
 |[List scoped-role members](../api/directoryrole_list_members.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List the members of this directory role that are scoped to [administrative units](administrativeunit.md), through the scopedRoleMembership resource collection.|
+|[delta](../api/directoryrole_delta.md)|directoryRole collection| Get incremental changes for directory roles. |
 
 ## Properties
 | Property   | Type |Description|

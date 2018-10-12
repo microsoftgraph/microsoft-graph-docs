@@ -13,13 +13,19 @@ It is used to represent a set of thumbnails associated with a DriveItem.
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": ["source", "small", "medium", "large"],
-  "openType": true,
+  "optionalProperties": [
+    "source",
+    "small",
+    "medium",
+    "large"
+  ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.thumbnailSet"
-} -->
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.thumbnailSet",
+  "openType": true
+}-->
 
 ```json
 {

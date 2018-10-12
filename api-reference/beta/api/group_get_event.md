@@ -69,7 +69,7 @@ Content-length: 1728
     "categories": [],
     "originalStartTimeZone": "Eastern Standard Time",
     "originalEndTimeZone": "Eastern Standard Time",
-    "iCalUId": "040000008200E00074C5B7101A82E00800000000B23663002F0AD301000000000000000010000000B7C936D4C2FEC749824EE24B2FD7DA62",
+    "uid": "040000008200E00074C5B7101A82E00800000000B23663002F0AD301000000000000000010000000B7C936D4C2FEC749824EE24B2FD7DA62",
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,

@@ -8,7 +8,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)||
+| &nbsp; &nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 

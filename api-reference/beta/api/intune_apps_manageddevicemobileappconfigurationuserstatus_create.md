@@ -40,7 +40,7 @@ The following table shows the properties that are required when you create the m
 |id|String|Key of the entity.|
 |userDisplayName|String|User name of the DevicePolicyStatus.|
 |devicesCount|Int32|Devices count for that user.|
-|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
 |userPrincipalName|String|UserPrincipalName.|
 
@@ -84,9 +84,6 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
 
 
 

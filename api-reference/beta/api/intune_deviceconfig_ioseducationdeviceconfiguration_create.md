@@ -39,6 +39,8 @@ The following table shows the properties that are required when you create the i
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -55,11 +57,15 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 233
+Content-length: 325
 
 {
   "@odata.type": "#microsoft.graph.iosEducationDeviceConfiguration",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7
@@ -71,21 +77,22 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 341
+Content-Length: 433
 
 {
   "@odata.type": "#microsoft.graph.iosEducationDeviceConfiguration",
   "id": "3d563be4-3be4-3d56-e43b-563de43b563d",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7
 }
 ```
-
-
-
 
 
 

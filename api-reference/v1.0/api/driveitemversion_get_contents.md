@@ -18,11 +18,11 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored"} -->
 
 ```http
-GET /drives/{drive-id}/items/{item-id}/versions/{version-id}/contents
-GET /groups/{group-id}/drive/{item-id}/versions/{version-id}/contents
-GET /me/drive/items/{item-id}/versions/{version-id}/contents
-GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/contents
-GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/contents
+GET /drives/{drive-id}/items/{item-id}/versions/{version-id}/content
+GET /groups/{group-id}/drive/{item-id}/versions/{version-id}/content
+GET /me/drive/items/{item-id}/versions/{version-id}/content
+GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
+GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 ```
 
 ## Response
@@ -40,10 +40,10 @@ This example retrieves a version of a file in the current user's drive.
 
 ### HTTP request
 
-<!-- { "blockType": "request", "name": "get-version-contents", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-version-contents", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
-GET /me/drive/items/{item-id}/versions/{version-id}/contents
+GET /me/drive/items/{item-id}/versions/{version-id}/content
 ```
 
 ### Response
@@ -53,7 +53,7 @@ This returns a redirect to where the contents of the version can be downloaded.
 <!-- { "blockType": "response", "isEmpty": true  } -->
 
 ```http
-HTTP/1.1 302 Redirect
+HTTP/1.1 302 Found
 Location: https://onedrive.com/34FF49D6...
 ```
 

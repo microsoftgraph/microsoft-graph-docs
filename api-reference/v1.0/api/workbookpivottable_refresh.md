@@ -38,15 +38,14 @@ Here is an example of the request.
   "name": "workbookpivottable_refresh"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
+POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
 ```
 
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

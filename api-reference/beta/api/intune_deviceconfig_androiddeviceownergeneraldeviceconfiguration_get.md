@@ -51,21 +51,31 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1877
+Content-Length: 2409
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
     "id": "edad943d-943d-edad-3d94-aded3d94aded",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "supportsScopeTags": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
     "accountsBlockModification": true,
     "appsAllowInstallFromUnknownSources": true,
+    "appsAutoUpdatePolicy": "userChoice",
     "appsDefaultPermissionPolicy": "prompt",
+    "bluetoothBlockConfiguration": true,
+    "bluetoothBlockContactSharing": true,
     "cameraBlocked": true,
+    "cellularBlockWiFiTethering": true,
+    "dataRoamingBlocked": true,
+    "dateTimeConfigurationBlocked": true,
     "factoryResetDeviceAdministratorEmails": [
       "Factory Reset Device Administrator Emails value"
     ],
@@ -81,6 +91,7 @@ Content-Length: 1877
     ],
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
+    "nfcBlockOutgoingBeam": true,
     "passwordBlockKeyguard": true,
     "passwordExpirationDays": 6,
     "passwordMinimumLength": 5,
@@ -91,10 +102,14 @@ Content-Length: 1877
     "safeBootBlocked": true,
     "screenCaptureBlocked": true,
     "securityAllowDebuggingFeatures": true,
+    "securityRequireVerifyApps": true,
     "statusBarBlocked": true,
     "stayOnModes": [
       "ac"
     ],
+    "storageAllowUsb": true,
+    "storageBlockExternalMedia": true,
+    "storageBlockUsbFileTransfer": true,
     "systemUpdateWindowStartMinutesAfterMidnight": 11,
     "systemUpdateWindowEndMinutesAfterMidnight": 9,
     "systemUpdateInstallType": "postpone",
@@ -106,9 +121,6 @@ Content-Length: 1877
   }
 }
 ```
-
-
-
 
 
 

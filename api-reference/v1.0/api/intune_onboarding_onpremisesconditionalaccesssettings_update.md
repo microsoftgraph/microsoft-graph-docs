@@ -51,15 +51,15 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
 Content-type: application/json
-Content-length: 195
+Content-length: 201
 
 {
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "77c9d466-d466-77c9-66d4-c97766d4c977"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
   ],
   "overrideDefaultRule": true
 }
@@ -70,17 +70,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 318
+Content-Length: 324
 
 {
   "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
   "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "77c9d466-d466-77c9-66d4-c97766d4c977"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
   ],
   "overrideDefaultRule": true
 }

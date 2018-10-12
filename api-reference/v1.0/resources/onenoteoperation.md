@@ -6,11 +6,10 @@ The status of certain long-running OneNote operations.
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.operation",
   "@odata.type": "microsoft.graph.onenoteOperation"
 }-->
 

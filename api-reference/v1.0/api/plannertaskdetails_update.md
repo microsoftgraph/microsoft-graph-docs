@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/tasks/<id>/details
+PATCH /planner/tasks/{id}/details
 ```
 ## Optional request headers
 | Name       | Description|
@@ -28,7 +28,7 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|The collection of checklist items on the task.|
 |description|String|Description of the task|
-|previewType|string|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.|
+|previewType|string|This sets the type of preview that shows up on the task. The possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|The collection of references on the task.|
 
 ## Response
@@ -45,7 +45,7 @@ Here is an example of the request.
   "name": "update_plannertaskdetails"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 Content-type: application/json
 Content-length: 857
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

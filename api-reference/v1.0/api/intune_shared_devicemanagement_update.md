@@ -15,10 +15,9 @@ One of the following permissions is required to call this API. To learn more, in
 | &nbsp; &nbsp; Device configuration | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; Device management | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; Endpoint protection | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; Enrollment | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; Notification | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; On-boarding | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; RBAC | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp; &nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; Role-based access control | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; Remote assistance | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; Telecom expense management | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; Troubleshooting | DeviceManagementManagedDevices.ReadWrite.All |
@@ -52,8 +51,8 @@ The following table shows the properties that are required when you create the [
 |**Device configuration**|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
 |**Device management**|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
-|**On-boarding**|
+|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. The possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|**Onboarding**|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
 
 Request body property support varies according to workflow.

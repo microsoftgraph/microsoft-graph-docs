@@ -21,7 +21,11 @@ For more information about working with groups and members in teams, see [Use th
 |[Archive team](../api/team_archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
 |[Unarchive team](../api/team_unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[List your teams](../api/user_list_joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
-
+|[List all teams](../api/team_list_all_teams.md) | [group](group.md) collection | List all groups that have teams. |
+|[Publish apps to your organization](../resources/teamscatalogapp.md)| [app](../resources/teamscatalogapp.md) | Create Teams apps visible only to your organization. |
+|[Add app to team](../api/teams_apps_add.md) | [teamsApp](teamsapp.md) | Adds (installs) an app to a team.|
+|[Add tab to channel](../api/channels_tabs_add.md) | [teamsTab](../resources/teamstab.md) | Adds (installs) a tab to a team's channel.|
+|[List channel messages](../api/channel_list_messages.md)  | [chatMessage](../resources/chatmessage.md) | [Get messages in a channel](../api/channel_list_messages.md) |
 
 ## Properties
 
@@ -39,7 +43,7 @@ For more information about working with groups and members in teams, see [Use th
 | Relationship | Type	| Description |
 |:---------------|:--------|:----------|
 |apps|[teamsApp](teamsapp.md) collection|The collection of apps installed in this team.|
-|channels|[channel](channel.md) collection|The collection of channels associated with the team.|
+|channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
 
 ## JSON representation
 

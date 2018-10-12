@@ -51,13 +51,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1220
+Content-Length: 1792
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
     "id": "4928dd6a-dd6a-4928-6add-28496add2849",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "supportsScopeTags": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -80,13 +84,17 @@ Content-Length: 1220
     "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
     "businessReadyUpdatesOnly": "all",
     "skipChecksBeforeRestart": true,
-    "updateWeeks": "firstWeek"
+    "updateWeeks": "firstWeek",
+    "qualityUpdatesPauseStartDateTime": "Quality Updates Pause Start Date Time value",
+    "featureUpdatesPauseStartDateTime": "Feature Updates Pause Start Date Time value",
+    "featureUpdatesRollbackWindowInDays": 2,
+    "qualityUpdatesWillBeRolledBack": true,
+    "featureUpdatesWillBeRolledBack": true,
+    "qualityUpdatesRollbackStartDateTime": "2016-12-31T23:57:01.05526-08:00",
+    "featureUpdatesRollbackStartDateTime": "2017-01-01T00:03:21.6080517-08:00"
   }
 }
 ```
-
-
-
 
 
 

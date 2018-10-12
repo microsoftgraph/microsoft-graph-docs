@@ -39,7 +39,7 @@ This example retrieves the versions of a file in the current user's drive.
 
 ### HTTP request
 
-<!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/versions

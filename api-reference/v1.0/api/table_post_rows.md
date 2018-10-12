@@ -34,7 +34,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |index|number|Optional. Specifies the relative position of the new row. If null, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.|
-|values|(boolean or string or number)|A 2-dimensional array of unformatted values of the table rows.|
+|values|Json|A 2-dimensional array of unformatted values of the table rows (boolean or string or number).|
 
 ## Response
 
@@ -61,13 +61,12 @@ Content-length: 51
   ]
 }
 ```
-
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,5 +86,11 @@ Content-length: 45
   "description": "TableRowCollection: add",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/table_post_rows.md/tablerowcollection_add/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
+    "Warning: /api-reference/v1.0/api/table_post_rows.md/tablerowcollection_add/values:
+      Inconsistent types between parameter (Collection) and table (None)"
+  ],
   "tocPath": ""
 }-->

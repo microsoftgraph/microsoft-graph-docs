@@ -16,14 +16,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "samples" } --> 
 
 ```http
 GET /reports/getEmailAppUsageUserDetail(period='{period_value}')
 GET /reports/getEmailAppUsageUserDetail(date={date_value})
 ```
 
-## Request parameters
+## Function parameters
 
 In the request URL, provide one of the following parameters with a valid value.
 
@@ -72,8 +72,9 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getemailappusageuserdetail"
 }-->
 
@@ -85,7 +86,11 @@ GET https://graph.microsoft.com/v1.0/reports/getEmailAppUsageUserDetail(period='
 
 The following is an example of the response.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -95,11 +100,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

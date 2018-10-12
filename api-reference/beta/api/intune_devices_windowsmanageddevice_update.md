@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 |deviceType|[deviceType](../resources/intune_shared_devicetype.md)|Platform of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md). Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |complianceState|[complianceState](../resources/intune_devices_compliancestate.md)|Compliance state of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md). Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
-|managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|Management channel of the device. Intune, EAS, etc. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md). Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
+|managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|Management channel of the device. Intune, EAS, etc. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md). Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
 |osVersion|String|Operating system version of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |easDeviceId|String|Exchange ActiveSync Id of the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
@@ -93,7 +93,7 @@ The following table shows the properties that are required when you create the [
 |totalStorageSpaceInBytes|Int64|Total Storage in Bytes Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
-|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md). Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
+|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md). Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |usersLoggedOn|[loggedOnUser](../resources/intune_devices_loggedonuser.md) collection|Indicates the last logged on users of a device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Reports the DateTime the preferMdmOverGroupPolicy setting was set.  When set, the Intune MDM settings will override Group Policy settings if there is a conflict. Read Only. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |autopilotEnrolled|Boolean|Reports if the managed device is enrolled via auto-pilot. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
@@ -101,6 +101,11 @@ The following table shows the properties that are required when you create the [
 |managementCertificateExpirationDate|DateTimeOffset|Reports device management certificate expiration date Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |iccid|String|Integrated Circuit Card Identifier, it is A SIM card's unique identification number. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |udid|String|Unique Device Identifier for iOS and macOS devices. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|roleScopeTagIds|String collection|List of Scope Tag IDs for this Device instance. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|windowsActiveMalwareCount|Int32|Count of active malware for this windows device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|windowsRemediatedMalwareCount|Int32|Count of remediated malware for this windows device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|notes|String|Notes on the device created by IT Admin Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune_devices_configurationmanagerclienthealthstate.md)|Configuration manager client health state, valid only for devices managed by MDM/ConfigMgr Agent Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 
 
 
@@ -113,7 +118,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 6712
+Content-length: 7114
 
 {
   "userId": "User Id value",
@@ -264,7 +269,19 @@ Content-length: 6712
   "requireUserEnrollmentApproval": true,
   "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00",
   "iccid": "Iccid value",
-  "udid": "Udid value"
+  "udid": "Udid value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "windowsActiveMalwareCount": 9,
+  "windowsRemediatedMalwareCount": 13,
+  "notes": "Notes value",
+  "configurationManagerClientHealthState": {
+    "@odata.type": "microsoft.graph.configurationManagerClientHealthState",
+    "state": "installed",
+    "errorCode": 9,
+    "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
+  }
 }
 ```
 
@@ -273,7 +290,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6820
+Content-Length: 7222
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -426,12 +443,21 @@ Content-Length: 6820
   "requireUserEnrollmentApproval": true,
   "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00",
   "iccid": "Iccid value",
-  "udid": "Udid value"
+  "udid": "Udid value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "windowsActiveMalwareCount": 9,
+  "windowsRemediatedMalwareCount": 13,
+  "notes": "Notes value",
+  "configurationManagerClientHealthState": {
+    "@odata.type": "microsoft.graph.configurationManagerClientHealthState",
+    "state": "installed",
+    "errorCode": 9,
+    "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
+  }
 }
 ```
-
-
-
 
 
 

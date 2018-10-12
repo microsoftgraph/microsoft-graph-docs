@@ -18,8 +18,10 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /teams/{id}/apps
 ```
+
 ## Optional query parameters
-None.
+The [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) are not currently supported.
+
 
 ## Request headers
 | Header       | Value |
@@ -30,7 +32,7 @@ None.
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [teamsApp](../resources/teamsApp.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [teamsApp](../resources/teamsapp.md) objects in the response body.
 
 ## Example
 #### Request

@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /security/alerts/{id}
+PATCH /security/alerts/{alert_id}
 ```
 
 ## Request headers
@@ -38,10 +38,10 @@ In the request body, supply a JSON representation of the values for relevant fie
 |:---------------|:--------|:----------|
 |assignedTo|String|Name of the analyst the alert is assigned to for triage, investigation, or remediation.|
 |closedDateTime|DateTimeOffset|Time at which the alert was closed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|comments|String|Analyst comments on the alert (for customer alert management).|
+|comments|String collection|Analyst comments on the alert (for customer alert management).|
 |feedback|[alertFeedback](../resources/alertfeedbackenumtype.md) enum|Analyst feedback on the alert. Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|[alertStatus](../resources/alertstatusenumtype.md) enum|Alert lifecycle status (stage). Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.|
-|tags|String|User-definable labels that can be applied to an alert and can serve as filter conditions (for example, "HVA", "SAW).|
+|tags|String collection|User-definable labels that can be applied to an alert and can serve as filter conditions (for example, "HVA", "SAW).|
 |vendorInformation *|[securityVendorInformation](../resources/securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker). **Provider and vendor fields are required.**|
 (\* Indicates a mandatory field.)
 
@@ -62,15 +62,15 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/security/alerts/{id}
+PATCH https://graph.microsoft.com/beta/security/alerts/{alert_id}
 Content-type: application/json
 
 {
-  "assignedTo": "assignedTo-value",
-  "closedDateTime": "datetime-value",
-  "comments": "String",
-  "feedback": "string",
-  "status": "string",
+  "assignedTo": "String",
+  "closedDateTime": "String (timestamp)",
+  "comments": ["String"],
+  "feedback": "@odata.type: microsoft.graph.alertFeedback",
+  "status": "@odata.type: microsoft.graph.alertStatus",
   "tags": ["String"],
   "vendorInformation":
     {
@@ -95,7 +95,7 @@ HTTP/1.1 204 No Content
 
 ## Example 2
 
-### Request 
+### Request
 
 The following example shows a request that includes the `Prefer` request header.
 
@@ -105,14 +105,14 @@ The following example shows a request that includes the `Prefer` request header.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/security/alerts/{id}
+PATCH https://graph.microsoft.com/beta/security/alerts/{alert_id}
 Content-type: application/json
 Prefer: return=representation
 
 {
-  "assignedTo": "assignedTo-value",
-  "closedDateTime": "datetime-value",
-  "comments": "String",
+  "assignedTo": "String",
+  "closedDateTime": "String (timestamp)",
+  "comments": ["String"],
   "feedback": "@odata.type: microsoft.graph.alertFeedback",
   "status": "@odata.type: microsoft.graph.alertStatus",
   "tags": ["String"],
@@ -140,25 +140,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "activityGroupStates": [
-    {
-      "aliases": [
-        "aliases-value"
-      ],
-      "name": "name-value"
-    }
-  ],
-  "applicationStates": [
-    {
-      "deploymentPackageUrl": "deploymentPackageUrl-value",
-      "name": "name-value",
-      "permissionsRequired": "permissionsRequired-value",
-      "publisher": "publisher-value",
-      "riskScore": "riskScore-value"
-    }
-  ],
+  "activityGroupName": "activityGroupName-value",
   "assignedTo": "assignedTo-value",
   "azureSubscriptionId": "azureSubscriptionId-value",
+  "azureTenantId": "azureTenantId-value",
   "category": "category-value",
   "closedDateTime": "datetime-value"
 }

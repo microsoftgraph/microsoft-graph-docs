@@ -86,6 +86,8 @@ The following table shows the properties that are required when you create the [
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune_mam_managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device model is not allowed. Possible values are: `block`, `wipe`.|
 |thirdPartyKeyboardsBlocked|Boolean|Defines if third party keyboards are allowed while accessing a managed app|
 |filterOpenInToOnlyManagedApps|Boolean|Defines if open-in operation is supported from the managed app to the filesharing locations selected.|
+|disableProtectionOfManagedOutboundOpenInData|Boolean|Disable protection of data transferred to other apps through IOS OpenIn option|
+|protectInboundDataFromUnknownSources|Boolean|Protect incoming data from unknown source|
 
 
 
@@ -98,7 +100,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 Content-type: application/json
-Content-length: 2371
+Content-length: 2477
 
 {
   "displayName": "Display Name value",
@@ -156,7 +158,9 @@ Content-length: 2371
   "allowedIosDeviceModels": "Allowed Ios Device Models value",
   "appActionIfIosDeviceModelNotAllowed": "wipe",
   "thirdPartyKeyboardsBlocked": true,
-  "filterOpenInToOnlyManagedApps": true
+  "filterOpenInToOnlyManagedApps": true,
+  "disableProtectionOfManagedOutboundOpenInData": true,
+  "protectInboundDataFromUnknownSources": true
 }
 ```
 
@@ -165,7 +169,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2541
+Content-Length: 2647
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -226,12 +230,11 @@ Content-Length: 2541
   "allowedIosDeviceModels": "Allowed Ios Device Models value",
   "appActionIfIosDeviceModelNotAllowed": "wipe",
   "thirdPartyKeyboardsBlocked": true,
-  "filterOpenInToOnlyManagedApps": true
+  "filterOpenInToOnlyManagedApps": true,
+  "disableProtectionOfManagedOutboundOpenInData": true,
+  "protectInboundDataFromUnknownSources": true
 }
 ```
-
-
-
 
 
 

@@ -51,13 +51,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1118
+Content-Length: 1218
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.macOSScepCertificateProfile",
     "id": "78c3929d-929d-78c3-9d92-c3789d92c378",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "supportsScopeTags": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -85,9 +89,6 @@ Content-Length: 1118
   }
 }
 ```
-
-
-
 
 
 

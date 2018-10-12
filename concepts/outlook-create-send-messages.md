@@ -13,7 +13,7 @@ Similarly, when responding to an email, you can create and send the response in 
 
 To distinguish between a draft and a sent message programmatically, check the **isDraft** property.
 
-By default, draft messages are saved in the `Drafts` folder, sent messages are saved in the `Sent Items` folder. For convenience, you can identify the Drafts folder and SentItems folder by their corresponding [well-known folder names](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names). For example, you can do the following to [get the messages](../api-reference/v1.0/api/user_list_messages.md) in the Drafts folder:
+By default, draft messages are saved in the `Drafts` folder, sent messages are saved in the `Sent Items` folder. For convenience, you can identify the Drafts folder and SentItems folder by their corresponding [well-known folder names](../api-reference/v1.0/resources/mailfolder.md). For example, you can do the following to [get the messages](../api-reference/v1.0/api/user_list_messages.md) in the Drafts folder:
 
 ```http
 GET /me/mailfolders('Drafts')
@@ -87,3 +87,16 @@ Find out more about:
 
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
 - [Using the mail API](../api-reference/v1.0/resources/mail_api_overview.md) and its [use cases](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) in Microsoft Graph v1.0.
+
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /concepts/outlook-create-send-messages.md:
+        BookmarkSkippedDocFileNotFound: Link '[creating a message](../api-reference/beta/api/user_post_messages.md#request-2)'.",
+    "Error: /concepts/outlook-create-send-messages.md:
+      BookmarkSkippedDocFileNotFound: Link '[Get all the messages in a user's mailbox that contain an @-mention of the user](../api-reference/beta/api/user_list_messages.md#request-2)'.",
+    "Error: /concepts/outlook-create-send-messages.md:
+      BookmarkSkippedDocFileNotFound: Link '[Get all the @-mention is a message](../api-reference/beta/api/message_get.md#request-2)'."
+  ]
+}-->

@@ -78,10 +78,10 @@ collection or use the [expand](../../../concepts/query_parameters.md) option to 
 
 ### HTTP request
 
-<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
-GET /me/drive/special/{name}/children
+GET /me/drive/special/{special-folder-name}/children
 ```
 
 ### HTTP response

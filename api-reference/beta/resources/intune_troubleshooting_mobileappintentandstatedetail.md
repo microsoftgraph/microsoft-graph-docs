@@ -13,6 +13,7 @@ Mobile App Intent and Install State for a given device.
 |mobileAppIntent|[mobileAppIntent](../resources/intune_troubleshooting_mobileappintent.md)|Mobile App Intent. Possible values are: `available`, `notAvailable`, `requiredInstall`, `requiredUninstall`, `requiredAndAvailableInstall`, `availableInstallWithoutEnrollment`, `exclude`.|
 |displayVersion|String|Human readable version of the application|
 |installState|[resultantAppState](../resources/intune_shared_resultantappstate.md)|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
+|supportedDeviceTypes|[mobileAppSupportedDeviceType](../resources/intune_troubleshooting_mobileappsupporteddevicetype.md) collection|The supported platforms for the app.|
 
 ## Relationships
 None
@@ -20,7 +21,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppIntentAndStateDetail"
 }
 -->
@@ -31,12 +31,17 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "mobileAppIntent": "String",
   "displayVersion": "String",
-  "installState": "String"
+  "installState": "String",
+  "supportedDeviceTypes": [
+    {
+      "@odata.type": "microsoft.graph.mobileAppSupportedDeviceType",
+      "type": "String",
+      "minimumOperatingSystemVersion": "String",
+      "maximumOperatingSystemVersion": "String"
+    }
+  ]
 }
 ```
-
-
-
 
 
 

@@ -76,10 +76,10 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mdmWindowsInformationProtectionPolicies
 Content-type: application/json
-Content-length: 3966
+Content-length: 3969
 
 {
-  "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
+  "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
   "displayName": "Display Name value",
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -104,7 +104,7 @@ Content-length: 3966
     "certificate": "Y2VydGlmaWNhdGU="
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+  "rightsManagementServicesTemplateId": "abf7b16f-b16f-abf7-6fb1-f7ab6fb1f7ab",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -210,10 +210,10 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4074
+Content-Length: 4077
 
 {
-  "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
+  "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
   "displayName": "Display Name value",
   "description": "Description value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
@@ -240,7 +240,7 @@ Content-Length: 4074
     "certificate": "Y2VydGlmaWNhdGU="
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+  "rightsManagementServicesTemplateId": "abf7b16f-b16f-abf7-6fb1-f7ab6fb1f7ab",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -340,9 +340,6 @@ Content-Length: 4074
   "isAssigned": true
 }
 ```
-
-
-
 
 
 

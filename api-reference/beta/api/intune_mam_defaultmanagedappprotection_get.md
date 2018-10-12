@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3448
+Content-Length: 3558
 
 {
   "value": {
@@ -131,13 +131,12 @@ Content-Length: 3448
     "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
     "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
     "thirdPartyKeyboardsBlocked": true,
-    "filterOpenInToOnlyManagedApps": true
+    "filterOpenInToOnlyManagedApps": true,
+    "disableProtectionOfManagedOutboundOpenInData": true,
+    "protectInboundDataFromUnknownSources": true
   }
 }
 ```
-
-
-
 
 
 

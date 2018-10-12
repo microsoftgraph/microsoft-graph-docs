@@ -14,9 +14,8 @@ Scheduled Action Type Enum
 |retire|3|Retire the device|
 |wipe|4|Wipe the device|
 |removeResourceAccessProfiles|5|Remove Resource Access Profiles from the device|
-
-
-
+|pushNotification|9|Send push notification to device|
+|remoteLock|10|Remotely lock the device|
 
 
 
