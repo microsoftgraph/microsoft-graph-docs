@@ -7,7 +7,7 @@ The following image shows is the app you'll create.
 ![The web app after login showing the "Send mail" button](./images/web-screenshot.png)
 
 
-**Don't feel like building an app?** Use the [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.
+**Don't feel like building an app?** Use the [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start) to get up and running fast.
 
 To download a version of the Connect sample that uses the Azure AD endpoint, see [Microsoft Graph Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample/releases/tag/last_v1_auth).
 
@@ -16,7 +16,7 @@ To download a version of the Connect sample that uses the Azure AD endpoint, see
 
 To get started, you'll need: 
 
-- A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
+- A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/office/developer-program/office-365-developer-program-faq#account-types)
 - [Node.js with npm](https://nodejs.org/en/download/) 
 - The [Microsoft Connect sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample). You'll use the **starter-project** folder in the sample files for this walkthrough.
 
@@ -39,7 +39,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 6. Under **Platforms**, choose **Add platform** > **Web**.
 
-7. Enter *http://localhost:3000/token* as the Redirect URI. 
+7. Enter *https://localhost:3000/token* as the Redirect URI. 
 
 8. Choose **Save**.
 
@@ -193,7 +193,7 @@ The app calls Microsoft Graph to get user information and to send an email on th
 
 		npm start
 
-1. In a browser, navigate to *http://localhost:3000* and choose the **Connect to Office 365** button.
+1. In a browser, navigate to *https://localhost:3000* and choose the **Connect to Office 365** button.
 
 1. Sign in and grant the requested permissions. 
 

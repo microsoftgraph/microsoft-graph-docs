@@ -24,7 +24,7 @@ The requestor needs to have one of the following roles: _Privileged Role Adminis
 GET /privilegedOperationEvents
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

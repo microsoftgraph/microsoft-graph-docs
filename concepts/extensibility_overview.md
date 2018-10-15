@@ -33,7 +33,7 @@ You can use extensions on all these resources when signed in with a work or scho
 ## Open extensions
 
 [Open extensions](../api-reference/v1.0/resources/opentypeextension.md) (formerly known as Office 365 data extensions) are
-[open types](http://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a flexible way to
+[open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a flexible way to
 add untyped app data directly to a resource instance.
 
 Open extensions, together with their custom data, are accessible through the **extensions** navigation property of the resource instance.
@@ -142,4 +142,4 @@ For known limitations using extensions, see the [extensions section](known_issue
 
 - [Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
-- [Adding and verifying a domain for an Office 365 tenant](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [Adding and verifying a domain for an Office 365 tenant](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

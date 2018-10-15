@@ -13,7 +13,7 @@ To use Microsoft Graph in your PHP app, you need to show the Microsoft sign in p
 
 To get started, you'll need: 
 
-- A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
+- A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/office/developer-program/office-365-developer-program-faq#account-types)
 - PHP version 5.5.9 or greater
 - [Composer](https://getcomposer.org/)
 
@@ -35,7 +35,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 6. Choose **Add Platform** and **Web**.
 
-7. In the **Redirect URI** field, type `http://localhost:8000/oauth`.
+7. In the **Redirect URI** field, type `https://localhost:8000/oauth`.
 
 8. Choose **Save**.
 
@@ -53,7 +53,7 @@ This creates a **getstarted** folder that you can use for this project.
 > Note: You can also use the [Starter project](https://github.com/microsoftgraph/php-connect-rest-sample/tree/master/starter-project) that takes care of the project configuration so you can focus on the coding sections of this walkthrough.
 
 ## Authenticate the user and get an access token
-Use an OAuth library to simplify the authentication process. [The PHP League](http://thephpleague.com/) provides an [OAuth client library](https://github.com/thephpleague/oauth2-client) that you can use in this project.
+Use an OAuth library to simplify the authentication process. [The PHP League](https://thephpleague.com/) provides an [OAuth client library](https://github.com/thephpleague/oauth2-client) that you can use in this project.
 
 ### Add the dependency to composer
 
@@ -87,7 +87,7 @@ composer update
         $provider = new \League\OAuth2\Client\Provider\GenericProvider([
             'clientId'                => '<YOUR_APPLICATION_ID>',
             'clientSecret'            => '<YOUR_PASSWORD>',
-            'redirectUri'             => 'http://localhost:8000/oauth',
+            'redirectUri'             => 'https://localhost:8000/oauth',
             'urlAuthorize'            => 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize',
             'urlAccessToken'          => 'https://login.microsoftonline.com/common/oauth2/v2.0/token',
             'urlResourceOwnerDetails' => '',
@@ -123,6 +123,7 @@ if (!$request->has('code')) {
 Note that you have an access token in this line: `exit($accessToken->getToken());`. Now you're ready to add code to call Microsoft Graph. 
 
 ## Call Microsoft Graph using REST
+
 You can call Microsoft Graph using REST. Replace the line `exit($accessToken->getToken());` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
 
 ```php
@@ -159,23 +160,29 @@ if($response.getStatusCode() === 201) {
 ```
 
 ## Run the app
+
 You're ready to try your PHP app.
 
 1. In your shell, type the following command:
+    
     ```bash
     php artisan serve
     ```
     
-2. Go to `http://localhost:8000` in your web browser.
+2. Go to `https://localhost:8000` in your web browser.
+
 3. Choose **Sign in to Microsoft**.
+
 4. Sign in with your personal or work or school account and grant the requested permissions.
 
 Check the inbox of the email address that you configured in [Call the Microsoft Graph using REST](#call-microsoft-graph-using-rest) section. You should have an email from the account that you used to sign in to the app.
 
 ## Next steps
-- Try out the [Microsoft Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
+
+- Try out the [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 
 ## See also
+
 * [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
 * [Azure AD v2.0 tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

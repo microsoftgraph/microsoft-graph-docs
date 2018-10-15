@@ -42,7 +42,7 @@ getting. To learn more, including how to choose permissions, see [Permissions](.
 
 Get a resource instance expanded with the extended property which matches a filter on the 
 **id** property. Make sure you apply 
-[URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.
+[URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.
 
 Get a **message** instance:
 <!-- { "blockType": "ignored" } -->

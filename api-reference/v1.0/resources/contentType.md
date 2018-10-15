@@ -61,7 +61,7 @@ Here is a JSON representation of a **contentType** resource.
 See [Introduction to content types and content type publishing][contentTypeIntro] for more information.
 
 [columnLink]: columnLink.md
-[contentTypeIntro]: https://support.office.com/en-us/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5
+[contentTypeIntro]: https://support.office.com/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5
 [itemReference]: itemReference.md
 [contentTypeOrder]: contentTypeOrder.md
 

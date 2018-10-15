@@ -6,7 +6,7 @@ Retrieve a shared access signature (SAS) for uploading source files to Azure blo
 
 The upload URL is provided only for the [CSV data provider](../resources/educationCsvDataProvider.md).
 
-> **Note:** To access the blob storage with the SAS token, use the [Azure storage SDKs](https://github.com/search?q=org%3AAzure+azure-storage) or [AzCopy](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy).
+> **Note:** To access the blob storage with the SAS token, use the [Azure storage SDKs](https://github.com/search?q=org%3AAzure+azure-storage) or [AzCopy](https://docs.microsoft.com/azure/storage/storage-use-azcopy).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).

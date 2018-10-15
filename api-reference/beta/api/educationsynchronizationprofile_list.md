@@ -20,7 +20,7 @@ GET /synchronizationProfiles
 ```
 
 ## Optional query parameters
-This method supports the following [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response: $filter, $orderby, $top, $skip, and $count.
+This method supports the following [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response: $filter, $orderby, $top, $skip, and $count.
 
 ## Request headers
 | Name       | Type | Description|

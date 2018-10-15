@@ -92,7 +92,7 @@ Inherits from [managedDevice](../resources/intune_devices_manageddevice.md)
 |Relationship|Type|Description|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune_devices_detectedapp.md) collection|All applications currently installed on the device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
-|deviceCategory|[deviceCategory](../resources/intune_shared_devicecategory.md)|Device category Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|deviceCategory|[deviceCategory](../resources/intune_devices_devicecategory.md)|Device category Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |windowsProtectionState|[windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md)|The device protection status. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 
 ## JSON Representation

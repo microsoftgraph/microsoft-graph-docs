@@ -4,7 +4,7 @@
 
 > To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure portal](https://aka.ms/aadapplist). For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
-This article describes the tasks required to get an access token from the [Azure AD v2.0 endpoint](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) and call Microsoft Graph. It walks you through the code inside the [Office 365 Connect Sample for iOS (SDK)](https://github.com/microsoftgraph/ios-objectivec-connect-sample) to explain the main concepts that you have to implement in an app that uses Microsoft Graph. It describes how to access Microsoft Graph by using the [Microsoft Graph SDK for iOS](https://github.com/microsoftgraph/msgraph-sdk-ios).
+This article describes the tasks required to get an access token from the [Azure AD v2.0 endpoint](https://developer.microsoft.com/graph/docs/concepts/converged_auth) and call Microsoft Graph. It walks you through the code inside the [Office 365 Connect Sample for iOS (SDK)](https://github.com/microsoftgraph/ios-objectivec-connect-sample) to explain the main concepts that you have to implement in an app that uses Microsoft Graph. It describes how to access Microsoft Graph by using the [Microsoft Graph SDK for iOS](https://github.com/microsoftgraph/msgraph-sdk-ios).
 
 You can download the version of the app that you'll create from this GitHub repo:
 
@@ -17,7 +17,7 @@ The following image shows the app you'll create.
 
 The workflow will be to connect/authenticate to Microsoft Graph, sign in with your work or personal account, and finally send a mail to a recipient.
 
-**Don't feel like building an app?** Use the [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.
+**Don't feel like building an app?** Use the [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start) to get up and running fast.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ To get started, you'll need:
 
 * [Xcode](https://developer.apple.com/xcode/downloads/) from Apple
 * Installation of [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) as a dependency manager
-* A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
+* A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/office/developer-program/office-365-developer-program-faq#account-types)
 * The [Microsoft Graph Starter Project for iOS](https://github.com/microsoftgraph/ios-objectivec-connect-sample). This template contains classes that you'll add code to. To get this project, clone or download the sample project from this location, and you'll work with the workspace inside the **starter-project** folder (**ios-objectivec-connect-sample.xcworkspace**).
 
 ## Register the app
@@ -209,7 +209,7 @@ After configuring the project to be able to authenticate, the next tasks are sen
     }
 ```
 3. Open **SendMailViewController.m** Add the following method to the class.
-**uploadPictureToOneDrive** uploads the [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user)'s profile picture from their [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) information and returns the web sharing Url to be embedded in the body of the email that is sent by the sample.
+**uploadPictureToOneDrive** uploads the [user](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user)'s profile picture from their [user](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user) information and returns the web sharing Url to be embedded in the body of the email that is sent by the sample.
 
   ```objectivec
   -(void) uploadPictureToOneDrive: (UIImage *) image completion:(void(^) (NSString*, NSError*))completionBlock{
@@ -236,7 +236,7 @@ After configuring the project to be able to authenticate, the next tasks are sen
     }
   ```
 4. Open **SendMailViewController.m** and add the following method to the class. 
-**getUserPicture** returns the [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user)'s profile picture if it is available.
+**getUserPicture** returns the [user](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user)'s profile picture if it is available.
    ```objectivec
    -(void) getUserPicture: (NSString *)url completion:(void(^) (UIImage*, NSError*))completionBlock {
     
@@ -255,7 +255,7 @@ After configuring the project to be able to authenticate, the next tasks are sen
 
    ```
 3. Open **SendMailViewcontroller.m** and add the following method to the class.
-This method gets the [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) resource representing the authenticated user and caches the fields necessary to get the user's profile picture and send an email.
+This method gets the [user](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user) resource representing the authenticated user and caches the fields necessary to get the user's profile picture and send an email.
    ```objectivec
    //Retrieve the logged in user's display name and email address
    -(void) getUserInfo: (NSString *)url completion:(void(^) ( NSError*))completionBlock{
@@ -329,7 +329,7 @@ This method gets the [user](https://developer.microsoft.com/en-us/graph/docs/api
 3. Choose the **Send email** button. When the mail is sent, a success message is displayed below the button.
 
 ## Next steps
-- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Try out the REST API using the [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Find examples of common operations for both REST and SDK operations in the [Microsoft Graph iOS Objective C Snippets Sample](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).
 
 ## See also

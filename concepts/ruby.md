@@ -8,7 +8,7 @@ The following image shows the app you'll create.
 
 ![Microsoft Ruby on Rails Connect sample screenshot](./images/Microsoft-Graph-Ruby-Connect-UI.png)
 
-**Don't feel like building an app?** Use the [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast, or download the [Ruby REST Connect sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) that this article is based on.
+**Don't feel like building an app?** Use the [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start) to get up and running fast, or download the [Ruby REST Connect sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) that this article is based on.
 
 
 ## Prerequisites
@@ -19,7 +19,7 @@ To get started, you'll need:
 - Rails framework (the sample has been tested on Rails 4.2).
 - Bundler dependency manager.
 - Rack web server interface for Ruby.
-- A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
+- A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/office/developer-program/office-365-developer-program-faq#account-types)
 - The Microsoft Graph Connect Starter Project for Ruby on Rails. Download the [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample). The starter project is located in the _starter_ folder.
 
 
@@ -43,11 +43,11 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 6. Under **Platforms**, choose **Add platform** > **Web**.
 
-7. Make sure the **Allow Implicit Flow** check box is selected, and enter *http://localhost:3000/auth/microsoft_v2_auth/callback* as the Redirect URI.
+7. Make sure the **Allow Implicit Flow** check box is selected, and enter *https://localhost:3000/auth/microsoft_v2_auth/callback* as the Redirect URI.
 
 	The Allow Implicit Flow option enables the OpenID Connect hybrid flow. During authentication, this enables the app to receive both sign-in info (the id_token) and artifacts (in this case, an authorization code) that the app uses to obtain an access token.
 
-	The redirect URI *http://localhost:3000/auth/microsoft_v2_auth/callback* is the value that the OmniAuth middleware is configured to use once it has processed the authentication request.
+	The redirect URI *https://localhost:3000/auth/microsoft_v2_auth/callback* is the value that the OmniAuth middleware is configured to use once it has processed the authentication request.
 
 8. Choose **Save**.
 
@@ -81,7 +81,7 @@ The auth flow can be broken down into these basic steps:
 
 >For more information about this auth flow, see [Web application to web API](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) and  [Integrate Microsoft identity and the Microsoft Graph into a web application using OpenID Connect](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/) in the Azure AD documentation.
 
-We'll be using a stack of three pieces of [Rack](http://rack.github.io/) middleware to enable the app to authenticate against the Microsoft Graph:
+We'll be using a stack of three pieces of [Rack](https://rack.github.io/) middleware to enable the app to authenticate against the Microsoft Graph:
 
 - [OmniAuth](https://rubygems.org/gems/omniauth), a generalized Rack framework for multiple-provider authentication.
 - [Omniauth-oauth2](https://rubygems.org/gems/omniauth-oauth2), an abstract OAuth2 strategy for OmniAuth. 
@@ -131,7 +131,7 @@ Next, we need to specify where in the app OmniAuth should redirect once authenti
 
 	match '/auth/:provider/callback', to: 'pages#callback', via: [:get, :post]
 
-When OmniAuth has finished authenticating the user, it calls the redirect URL specified in the app registration; in this case, *http://localhost:3000/auth/microsoft_v2_auth/callback*. The route pattern above matches that URL and so routes the request to the page controller's `callback` method.
+When OmniAuth has finished authenticating the user, it calls the redirect URL specified in the app registration; in this case, *https://localhost:3000/auth/microsoft_v2_auth/callback*. The route pattern above matches that URL and so routes the request to the page controller's `callback` method.
 
 ### Get an access token
 
@@ -282,7 +282,7 @@ Finally, the code uses the HTTP response code returned to notify the user whethe
 	```
 	rackup -p 3000
 	```
-3. Go to `http://localhost:3000` in your web browser.
+3. Go to `https://localhost:3000` in your web browser.
 
 ## See also
 - Try out the REST API using the [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).

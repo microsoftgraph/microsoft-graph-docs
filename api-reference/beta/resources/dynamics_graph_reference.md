@@ -18,7 +18,7 @@ ms.author: solsen
 You can use Microsoft Graph to connect and integrate your web service or SaaS solution with Microsoft Dynamics 365 Business Central. With Microsoft Graph, you can build apps that get authorized access to and integrate seamlessly with Microsoft Dynamics 365 Business Central data.
 
 ## Authorization
-Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central APIs. All APIs require the `Authorization: Bearer {access-token}` request header. For more information about authorization, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview).
+Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central APIs. All APIs require the `Authorization: Bearer {access-token}` request header. For more information about authorization, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).
 
 ## Common Dynamics 365 Business Central scenarios
 The Dynamics 365 Business Central API allows you to read and modify business data through apps that are connected and integrated through a single endpoint. Use the API to, for example, get access to [customer](../resources/dynamics_customer.md) and [vendor](../resources/dynamics_vendor.md) information, view [cash flow statements](../resources/dynamics_cashflowstatement.md), or [view overdue payments](../resources/dynamics_agedaccountspayable.md).
@@ -27,7 +27,7 @@ The Dynamics 365 Business Central API allows you to read and modify business dat
 The Microsoft Graph Business Central API can open up new ways for you to engage with users.
 
 + [Dynamics 365 Business Central Overview](../../../concepts/dynamics-business-central-concept-overview.md).
-+ Try the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
++ Try the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 <!--
 |For Resource Type |See                                                 |

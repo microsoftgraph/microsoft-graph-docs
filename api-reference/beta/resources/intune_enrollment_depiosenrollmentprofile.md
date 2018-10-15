@@ -27,7 +27,7 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune_enrollment_depenrol
 |configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment Inherited from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile Inherited from [depEnrollmentBaseProfile](../resources/intune_enrollment_depenrollmentbaseprofile.md)|
-|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune_enrollment_depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See [What is device enrollment?](https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune) for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune_enrollment_depenrollmentbaseprofile.md)|
 |supportDepartment|String|Support department information Inherited from [depEnrollmentBaseProfile](../resources/intune_enrollment_depenrollmentbaseprofile.md)|
 |passCodeDisabled|Boolean|Indicates if Passcode setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune_enrollment_depenrollmentbaseprofile.md)|
 |isMandatory|Boolean|Indicates if the profile is mandatory Inherited from [depEnrollmentBaseProfile](../resources/intune_enrollment_depenrollmentbaseprofile.md)|

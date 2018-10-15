@@ -34,7 +34,7 @@ Here is a JSON representation of a **calculatedColumn** resource.
 SharePoint formulas use a syntax similar to Excel formulas.
 See [Examples of common formulas in SharePoint Lists][SPFormulas] for more information.
 
-[SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
+[SPFormulas]: https://support.office.com/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
 <!-- {
   "type": "#page.annotation",

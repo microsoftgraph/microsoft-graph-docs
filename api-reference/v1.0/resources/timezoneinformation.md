@@ -1,7 +1,7 @@
 # timeZoneInformation resource type
 
 
-Represents a time zone. The supported format is Windows, and [Internet Assigned Numbers Authority (IANA) time zone](http://www.iana.org/time-zones) (also known as Olson time zone)
+Represents a time zone. The supported format is Windows, and [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone)
 format as well when the current known problem is fixed.
 
 ## Properties

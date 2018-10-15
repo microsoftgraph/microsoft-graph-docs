@@ -2,11 +2,11 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing) by the customer.
 
 The Microsoft Graph API for Intune enables programmatic access to Intune information for your tenant; the API performs the same Intune operations as those available through the **Azure Portal**.  
 
-For mobile device management (MDM) scenarios, the Graph API for Intune supports standalone deployments; Intune [hybrid deployments](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) are not supported. 
+For mobile device management (MDM) scenarios, the Graph API for Intune supports standalone deployments; Intune [hybrid deployments](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) are not supported. 
 
 ## Using the Intune Graph API
 
@@ -29,7 +29,7 @@ Here is an example of how you can determine whether an application is installed 
 
 ## Using Graph permission scopes
 
-Microsof Graph controls access to resources using permission scopes. As a developer, you must specify the permission scopes you need to access Intune resources. Typically, you specify the permission scopes you need in the Azure Active Directory portal. For more information, see [Microsoft Graph permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) and [Intune permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes#permission-scopes-in-preview).
+Microsof Graph controls access to resources using permission scopes. As a developer, you must specify the permission scopes you need to access Intune resources. Typically, you specify the permission scopes you need in the Azure Active Directory portal. For more information, see [Microsoft Graph permission scopes](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) and [Intune permission scopes](https://developer.microsoft.com/graph/docs/authorization/permission_scopes#permission-scopes-in-preview).
 
 ## To use the Table of Contents on the Microsoft Graph site
   

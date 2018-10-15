@@ -8,7 +8,7 @@ Filter is part of [object mapping](synchronization_objectMapping.md). It consist
 
 An object is considered in scope for the group set (group set is evaluated to `true`) if any of the groups in the set is evaluated to `true`.
 
-For more information, see [Attribute-based application provisioning with scoping filters](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-scoping-filters)
+For more information, see [Attribute-based application provisioning with scoping filters](https://docs.microsoft.com/azure/active-directory/active-directory-saas-scoping-filters)
 
 ## Properties
 | Property	   | Type	|Description|

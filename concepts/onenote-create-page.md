@@ -12,7 +12,7 @@ Send the HTML that defines the page in the message body. If the request is succe
 
 
 > **Note:**
-> To learn about the POST requests you can send to create sections, section groups, and notebooks, see our [interactive REST reference](http://dev.onenote.com/docs).
+> To learn about the POST requests you can send to create sections, section groups, and notebooks, see our [interactive REST reference](https://dev.onenote.com/docs).
 
 
 <a name="request-uri"></a>
@@ -89,7 +89,7 @@ Content-Type: application/xhtml+xml
   </head>
   <body>
     <p>This page contains some <i>formatted</i> <b>text</b> and an image.</p>
-    <img src="http://..." alt="an image on the page" width="500" />
+    <img src="https://..." alt="an image on the page" width="500" />
   </body>
 </html>
 ```
@@ -123,7 +123,7 @@ When sending input HTML, be aware of these general requirements and limitations:
 
 ### Supported HTML and CSS for OneNote pages
 
-Not all elements, attributes, and properties are supported (in HTML4, XHTML, CSS, HTML5, etc.). Instead, Microsoft Graph accepts a limited set of HTML that better fits how people use OneNote. For more information, see [HTML tag support for pages](http://dev.onenote.com/docs#/introduction/html-tag-support-for-pages). If a tag's not listed there, it'll probably be ignored.
+Not all elements, attributes, and properties are supported (in HTML4, XHTML, CSS, HTML5, etc.). Instead, Microsoft Graph accepts a limited set of HTML that better fits how people use OneNote. For more information, see [HTML tag support for pages](https://dev.onenote.com/docs#/introduction/html-tag-support-for-pages). If a tag's not listed there, it'll probably be ignored.
 
 <!--Microsoft Graph only accepts UTF-8 data. Be sure that all requests are encoded that way, and your content-type headers indicate that as well. xx our examples don't show this-->
 
@@ -164,7 +164,7 @@ Content-Type:text/html
   </head>
   <body>
     <p>Here's an image from an <i>online source</i>:</p>
-    <img src="http://..." alt="an image on the page" width="500" />
+    <img src="https://..." alt="an image on the page" width="500" />
     <p>Here's an image uploaded as <b>binary data</b>:</p>
     <img src="name:imageBlock1" alt="an image on the page" width="300" />
     <p>Here's a file attachment:</p>
@@ -187,7 +187,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-For more examples that show how to create pages that contain images and other files, see [Add images and files](onenote_images_files.md), our [tutorials](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-tutorial), and our [samples](https://github.com/onenotedev). Also, learn how to [create absolute positioned elements](onenote-abs-pos.md), [use note tags](onenote-note-tags.md), and [extract data](onenote-extract-data.md) for business card captures and online recipe and product listings.
+For more examples that show how to create pages that contain images and other files, see [Add images and files](onenote_images_files.md), our [tutorials](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-tutorial), and our [samples](https://github.com/onenotedev). Also, learn how to [create absolute positioned elements](onenote-abs-pos.md), [use note tags](onenote-note-tags.md), and [extract data](onenote-extract-data.md) for business card captures and online recipe and product listings.
 
 Microsoft Graph is strict about some formats, such as CRLF newlines in a multipart message body. To reduce the risk of creating malformed payloads, you should use a library to construct multipart messages. 
 
@@ -257,8 +257,8 @@ For more information about permission scopes and how they work, see [Microsoft G
 - [Extract data](onenote-extract-data.md)
 - [Use note tags](onenote-note-tags.md)
 - [Integrate with OneNote](integrate_with_onenote.md)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+- [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
 
 

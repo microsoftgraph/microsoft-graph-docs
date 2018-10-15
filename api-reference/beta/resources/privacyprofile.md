@@ -8,7 +8,7 @@ Represents a company's privacy profile, which includes a privacy statement URL a
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |contactEmail|String| A valid smtp email address for the privacy statement contact. Not required.|
-|statementUrl|String| A valid URL format that begins with http:// or https://. Maximum length is 255 characters. The URL that directs to the company's privacy statement. Not required.|
+|statementUrl|String| A valid URL format that begins with https:// or https://. Maximum length is 255 characters. The URL that directs to the company's privacy statement. Not required.|
 
 ## JSON representation
 

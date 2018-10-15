@@ -15,7 +15,7 @@ Programmatically, a [bookingBusiness](bookingbusiness.md) in the Bookings API in
 
 Walk through the following steps before booking customer appointments for a business the first time. Make sure you provide the appropriate [access tokens](../../../concepts/auth_overview.md) for the corresponding operations.
 
-1. Make sure the business has an [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium) subscription.
+1. Make sure the business has an [Office 365 Business Premium](https://products.office.com/business/office-365-business-premium) subscription.
 2. Create a new **bookingBusiness** by sending a POST operation to the entity set. At minimum, you should specify a name for the new business that customers will see:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -85,6 +85,6 @@ The following table lists the common operations for a business in the Bookings A
 
 ## See also
 
-- Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
-- See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph/examples#partners).
+- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 - Learn how to choose [permissions](../../../concepts/permissions_reference.md) in Microsoft Graph.

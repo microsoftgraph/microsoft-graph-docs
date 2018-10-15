@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-You can use [Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
+You can use [Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
 
 Typical customer scenarios for access reviews of group memberships and application access are:
    
@@ -49,9 +49,9 @@ Here is the list of methods that are provided by Azure AD access reviews.
 
 ## See also
 
-- [How an administrator can manage user access with Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
-- [How an administrator can manage guest access with Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
-- [How an administrator can manage programs and controls for Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
+- [How an administrator can manage user access with Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
+- [How an administrator can manage guest access with Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
+- [How an administrator can manage programs and controls for Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
 
 
 <!-- {

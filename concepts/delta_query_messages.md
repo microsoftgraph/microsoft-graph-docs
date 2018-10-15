@@ -15,7 +15,7 @@ subsequently, get incremental changes to that folder periodically.
 Delta query is a per-folder operation. To track the changes of the messages in a folder hierarchy, you need to track each folder individually.
 
 Tracking message changes in a mail folder typically is a round of one or more GET requests with the **delta** function. The initial GET
-request is very much like the way you [get messages](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages),
+request is very much like the way you [get messages](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/user_list_messages),
 except that you include the **delta** function:
 
 ```http

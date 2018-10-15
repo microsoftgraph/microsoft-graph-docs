@@ -28,4 +28,4 @@ Add additional controlling abilities to your app. For example, provide remote co
 
 - [Cross-device experiences in Microsoft Graph](cross-device-concept-overview.md)
 - [Learn more about the device relay API](../api-reference/beta/resources/project_rome_overview.md)
-- [Learn more about Project Rome](http://aka.ms/projectrome)
+- [Learn more about Project Rome](https://aka.ms/projectrome)

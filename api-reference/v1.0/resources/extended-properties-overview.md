@@ -22,7 +22,7 @@ Or, in the following Office 365 group resources:
 In most common scenarios, you should be able to use open extensions (represented by [openTypeExtension](../resources/opentypeextension.md), formerly known as 
 Office 365 data extensions) to store and access custom data for resource instances in a user's mailbox. Use extended properties only if you
 need to access custom data for Outlook MAPI properties that are not already exposed in the 
-[Microsoft Graph API metadata](http://developer.microsoft.com/en-us/graph/docs/overview/call_api). 
+[Microsoft Graph API metadata](https://developer.microsoft.com/graph/docs/overview/call_api). 
 
 ## Types of extended properties
 
@@ -44,7 +44,7 @@ You can specify **id** of an extended property in one of three formats:
 
 - As a named property, identified by the extended property type, namespace, and a string name.
 - As a named property, identified by the extended property type, namespace, and a numeric identifier.
-- In a proptag format, identified by the extended property type and a [MAPI property tag](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-tags).
+- In a proptag format, identified by the extended property type and a [MAPI property tag](https://docs.microsoft.com/office/client-developer/outlook/mapi/mapi-property-tags).
 
 The next 2 tables describe these formats as applied to single and multi-value extended properties. {_type_} represents the type of the value or values of the extended property. Shown in the examples are string, integer, and arrays of these types.
 
@@ -65,7 +65,7 @@ The next 2 tables describe these formats as applied to single and multi-value ex
 | "{_type_} {_proptag_}"                    | ```"StringArray 0x4002101E"```                                           | Identifies a pre-defined property by its property tag. |
 
 
-Use either of the named property formats to define a single-value or multi-value extended property as a custom property. Among the two formats, the first one that takes a string name (**Name**) is the preferred format for ease of reference. Named properties have their [property identifiers](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-identifier-overview) in the 0x8000-0xfffe range.
+Use either of the named property formats to define a single-value or multi-value extended property as a custom property. Among the two formats, the first one that takes a string name (**Name**) is the preferred format for ease of reference. Named properties have their [property identifiers](https://docs.microsoft.com/office/client-developer/outlook/mapi/mapi-property-identifier-overview) in the 0x8000-0xfffe range.
 
 Use the proptag format to access properties predefined by MAPI, or by a client or server, and that have not already been exposed in Microsoft Graph. These properties have property identifiers in the 0x0001-0x7fff range. Do not try to define a custom property using the proptag format. 
 

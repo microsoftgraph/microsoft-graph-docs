@@ -79,7 +79,7 @@ For more information, see [Register your app with the Azure AD v2.0 endpoint](..
 
 ## Grant permissions to an application
 
-Application registration only defines which permission the application requires - it does not grant these permissions to the application. An Azure AD tenant administrator must explicitly grant these permissions by making a call to the admin consent endpoint. For details, see [Using the admin consent endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).
+Application registration only defines which permission the application requires - it does not grant these permissions to the application. An Azure AD tenant administrator must explicitly grant these permissions by making a call to the admin consent endpoint. For details, see [Using the admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).
 
 To grant permissions to an application, you'll need:
 
@@ -99,13 +99,13 @@ Choose **OK** to grant the application these permissions.
 
 ## Assign Azure AD roles to users
 
-After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) will receive the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Assigning administrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign a user to adminstrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-assign-role-azure-portal).
+After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) will receive the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Assigning administrator roles](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign a user to adminstrator roles](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 >**Note:** You must be a tenant admin to perform this step.
 
 To assign roles to users:
 
-- Sign in to the [azure portal](https://portal.azure.com) (http://portal.azure.com).
+- Sign in to the [azure portal](https://portal.azure.com) (https://portal.azure.com).
 - In the menu, select **Azure Active Directory** > **Users**.
 - Select the name of the user.
 - Select **Manage** > **Directory role**.
@@ -117,26 +117,26 @@ To assign roles to users:
 To create an authentication code, you'll need:
 
 - **Application ID** - The application ID from application registration portal.
-- **Redirect URL** - The URL where the authentication response from Azure AD is sent. To start, you can use http://localhost or the test client web app homepage.
+- **Redirect URL** - The URL where the authentication response from Azure AD is sent. To start, you can use https://localhost or the test client web app homepage.
 - **Application Key** (optional) - The key of the application. This applies when you're developing an application that will use application-only authentication code (that is, will not support user delegated authentication).
 
 The following table lists resources that you can use to create an authentication code.
 
 |**Type of application**|**Authentication library**|
 |------------------------|----------------------------|
-|[Desktop apps - iOS](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Microsoft Authentication Library Preview for iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[Desktop apps - Android](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](http://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|[Desktop apps - .Net](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|[Web apps - JavaScript SPA](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Microsoft Authentication Library for JavaScript Preview](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|[Web apps - .NET Web Server](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
-|[Web apps - NodeJS Web App](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|[Desktop apps - iOS](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Microsoft Authentication Library Preview for iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|[Desktop apps - Android](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|[Desktop apps - .Net](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|[Web apps - JavaScript SPA](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Microsoft Authentication Library for JavaScript Preview](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|[Web apps - .NET Web Server](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
+|[Web apps - NodeJS Web App](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 For applications that don't use any of the existing libraries, see [Get access on behalf of a user](../concepts/auth_v2_user.md).
 
 1. Get a code from Azure AD. The query to call contains parameter for Application ID, Redirect URl, and **required permissions**.
 2. Use the code to get an access token.
 
-If you use OpenId Connect library, see [Authenticate using Azure AD and OpenID Connect](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/authenticate) and call `app.UseOpenIdConnectAuthentication()`.
+If you use OpenId Connect library, see [Authenticate using Azure AD and OpenID Connect](https://docs.microsoft.com/azure/architecture/multitenant-identity/authenticate) and call `app.UseOpenIdConnectAuthentication()`.
 
 >**Note:** If you're requesting user delegated authentication tokens, the parameter for the library is **Requested Scopes**. Use User.Read for this parameter instead of what the registered application requires. The **Requested Scopes** parameter does NOT affect the permissions contained in the returned authentication tokens. These are determined by the permissions that the tenant admin granted the application.
 

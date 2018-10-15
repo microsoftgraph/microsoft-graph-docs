@@ -68,7 +68,7 @@ The following table shows the properties that you need to configure and copy for
 
 Apps that provide an administrator consent experience may need an additional Redirect URL for Azure AD to return the response to.
 
-For more detail about the App Registration Portal and the properties you can configure for your App, see [App registration reference](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-registration-portal).  
+For more detail about the App Registration Portal and the properties you can configure for your App, see [App registration reference](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-registration-portal).  
 
 ## Azure AD endpoint considerations
 

@@ -8,7 +8,7 @@ You can enable, configure, or disable one or more of these settings as part of [
 
 **Note** You cannot create or delete any mailbox settings.
 
-When you update the preferred time zone for a user, you can specify it in the Windows or  [Internet Assigned Numbers Authority (IANA) time zone](http://www.iana.org/time-zones) (also known as Olson time zone) format. You can also further customize the time zone as shown in [example 2](#request-2) below.
+When you update the preferred time zone for a user, you can specify it in the Windows or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. You can also further customize the time zone as shown in [example 2](#request-2) below.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -26,7 +26,7 @@ PATCH /me/mailboxSettings
 PATCH /users/{id|userPrincipalName}/mailboxSettings
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
