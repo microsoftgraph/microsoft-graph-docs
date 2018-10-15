@@ -7,10 +7,9 @@ An entity of type `chatReaction` is returned as part of the [Get channel message
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|string| The type of reaction. Planned values include: <br><ul><li>Like - Like a message, content is blank in this case.</li><li>Emoji - Emoji reaction. Content is set to unicode value of the emoji.</li><li>Label - Content is set to the string in the label.</li></ul>|
+|type|string| The type of reaction. Current supported values: Like|
 |user|participanInfo|The user who reacted to the message.|
 |createdDateTime|dateTimeOffset|UTC timestamp of the root message in ISO-8601 format.|
-|content|string|Unicode emoji or the string value in the case of a label.|
 
 ## JSON representation
 
