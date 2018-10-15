@@ -15,7 +15,7 @@ Want to see even more code?
 
 Explore all of the [Microsoft Graph Samples](https://github.com/microsoftgraph) in GitHub. The following table lists additional versions of the samples covered in this section. They demonstrate how to authenticate the user with both ADAL endpoints (v1.0 and v2.0), and they use either raw REST calls or the Microsoft Graph client library (SDK) to connect to Microsoft Graph.
 
-(Choose the article that covers the authentication provider and development platform of your choice, and get started connecting to Microsoft Graph. For more information, see [What's different about the v2.0 endpoint?](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare))
+(Choose the article that covers the authentication provider and development platform of your choice, and get started connecting to Microsoft Graph. For more information, see [What's different about the v2.0 endpoint?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare))
 
 
 |Platform |Azure AD endpoint |Azure AD v2.0 endpoint |
@@ -36,6 +36,6 @@ Explore all of the [Microsoft Graph Samples](https://github.com/microsoftgraph) 
 
 ## See also
 
-- [Try out sample REST calls in the Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
-- [Azure AD endpoint documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
-- [Azure AD v2.0 endpoint documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)
+- [Try out sample REST calls in the Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
+- [Azure AD endpoint documentation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)
+- [Azure AD v2.0 endpoint documentation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)

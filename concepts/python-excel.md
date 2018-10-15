@@ -16,9 +16,9 @@ This walkthrough describes how to make requests to the Excel REST API from a Pyt
 
 
 ## Authorization and scopes
-You can use the [Azure AD v2.0 endpoint](https://graph.microsoft.io/en-us/docs/concepts/converged_auth) to authenticate Excel REST API calls. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
+You can use the [Azure AD v2.0 endpoint](https://developer.microsoft.com/graph/docs/concepts/auth_overview) to authenticate Excel REST API calls. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
   
-One of the following [permission scopes](https://graph.microsoft.io/en-us/docs/concepts/permissions_reference) is required to use the Excel resource:
+One of the following [permission scopes](https://developer.microsoft.com/graph/docs/concepts/permissions_reference) is required to use the Excel resource:
 
 * Files.Read 
 * Files.ReadWrite
@@ -128,7 +128,7 @@ With an access token, your app can make authenticated requests to the Microsoft 
 ### Getting an Excel Session
 #### Request 
 
-Pass a JSON object by setting the `persistChanges` value to `true` or `false`. When the value of `persistChanges` is set to `false`, a non-persistent session id is returned. This example uses the [Requests](http://docs.python-requests.org/en/latest/user/quickstart) HTTP library 
+Pass a JSON object by setting the `persistChanges` value to `true` or `false`. When the value of `persistChanges` is set to `false`, a non-persistent session id is returned. This example uses the [Requests](https://docs.python-requests.org/en/latest/user/quickstart) HTTP library 
 
 ```python
  	# Replace the id with your Excel workbook's drive id
@@ -217,5 +217,5 @@ With the **Workbook-Session-Id** HTTP header, you can begin issuing requests to 
 
 The Excel REST API in Microsoft Graph provides a powerful way to access and interact with data in Excel workbooks. Explore what else is possible with Microsoft Graph.
 
-* [Overview of Microsoft Graph](https://developer.microsoft.com/graph/docs)
+* [Overview of Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/overview)
 * [Get started with Microsoft Graph in a Python app](https://developer.microsoft.com/graph/docs/get-started/python)

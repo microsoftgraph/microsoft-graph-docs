@@ -6,7 +6,7 @@ This article describes the tasks required to get an access token from Azure AD a
 
 ## Choosing an authentication library
 
-To make calls to Microsoft Graph, your app must obtain a valid access token from Azure Active Directory (Azure AD), the Microsoft cloud identity service, and the token must be passed in an HTTP header with each call to the Microsoft Graph REST API. Graph's approach to authentication is based on the OAuth 2.0 and Open ID Connect standards, so there are many [authentication libraries](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries) that you can choose from to implement authentication in your application.
+To make calls to Microsoft Graph, your app must obtain a valid access token from Azure Active Directory (Azure AD), the Microsoft cloud identity service, and the token must be passed in an HTTP header with each call to the Microsoft Graph REST API. Graph's approach to authentication is based on the OAuth 2.0 and Open ID Connect standards, so there are many [authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries) that you can choose from to implement authentication in your application.
 
 The sample covered below uses the [Flask-OAuthlib](https://flask-oauthlib.readthedocs.io/en/latest/) library to implement OAuth 2.0 [Authorization Code Grant](https://tools.ietf.org/html/rfc6749#section-4.1) workflow, which is the recommended auth workflow for web applications written in Python. For information about other authentication options, see [Python authentication samples for Microsoft Graph](https://github.com/microsoftgraph/python-sample-auth).
 
@@ -74,4 +74,4 @@ Here are some other Python samples that demonstrate how to work with various asp
 
 If there's a particular sample you'd like to see, please let us know by [submitting an issue](https://github.com/microsoftgraph/python-sample-auth/issues). We're very interested in your feedback on any Microsoft Graph scenario you'd like to build in Python!
 
-The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [developer documentation](https://developer.microsoft.com/en-us/graph/docs/concepts/overview) or the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to explore what else you can accomplish with Microsoft Graph.
+The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [developer documentation](https://developer.microsoft.com/graph/docs/concepts/overview) or the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to explore what else you can accomplish with Microsoft Graph.

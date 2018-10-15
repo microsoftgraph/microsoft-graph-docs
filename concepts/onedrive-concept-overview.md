@@ -64,16 +64,16 @@ Find out more about [using the OneDrive API][Drive API] in Microsoft Graph v1.0.
 [SharePoint]: sharepoint-concept-overview.md
 [file picker]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm
 [file handler]: https://docs.microsoft.com/onedrive/developer/file-handlers
-[special folders]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/drive_get_specialfolder
-[Notes API]: https://developer.microsoft.com/en-us/graph/docs/concepts/integrate_with_onenote
-[Excel API]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/excel
-[REST API]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onedrive
-[delta API]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/driveitem_delta
-[video]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/video
-[photo]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/photo
-[audio]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/audio
-[formats]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/driveitem_get_content_format
-[thumbnails]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/driveitem_list_thumbnails
-[preview]: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/driveitem_preview
-[webhooks]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/webhooks
-[Drive API]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onedrive
+[special folders]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/drive_get_specialfolder
+[Notes API]: https://developer.microsoft.com/graph/docs/concepts/integrate_with_onenote
+[Excel API]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/excel
+[REST API]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/onedrive
+[delta API]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/driveitem_delta
+[video]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/video
+[photo]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/photo
+[audio]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/audio
+[formats]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/driveitem_get_content_format
+[thumbnails]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/driveitem_list_thumbnails
+[preview]: https://developer.microsoft.com/graph/docs/api-reference/beta/api/driveitem_preview
+[webhooks]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/webhooks
+[Drive API]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/onedrive

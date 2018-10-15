@@ -37,14 +37,14 @@ In the request body, supply the values for relevant fields that should be update
 |homepage|String|The URL to the homepage of the associated application.|
 |keyCredentials|keyCredential|The collection of key credentials associated with the service principal.                            **Notes**: not nullable.            |
 |logoutUrl|String| Specifies the URL that will be used by Microsoft's authorization service to logout an user using [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) or SAML logout protocols. |
-|oauth2Permissions|oAuth2Permission|The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the application entity.                            **Notes**: Requires version 1.5 or newer, not nullable.            |
-|passwordCredentials|passwordCredential|The collection of password credentials associated with the service principal.                            **Notes**: not nullable.            |
-|preferredTokenSigningKeyThumbprint|String|Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions.                            **Notes**: Requires version 1.5 or newer.            |
+|oauth2Permissions|oAuth2Permission|The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the application entity. **Notes**: Requires version 1.5 or newer, not nullable.    |
+|passwordCredentials|passwordCredential|The collection of password credentials associated with the service principal. **Notes**: not nullable.   |
+|preferredTokenSigningKeyThumbprint|String|Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions.   **Notes**: Requires version 1.5 or newer.    |
 |publisherName|String|The display name of the tenant in which the associated application is specified.|
-|replyUrls|String|The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.                            **Notes**: not nullable.            |
+|replyUrls|String|The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.  **Notes**: not nullable.   |
 |samlMetadataUrl|String|            |
-|servicePrincipalNames|String|The URIs that identify the associated application. For more information see, [Application Objects and Service Principal Objects](https://msdn.microsoft.com/en-us/library/azure/dn132633.aspx).                            **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
-|tags|String|                                        **Notes**: not nullable.            |
+|servicePrincipalNames|String|The URIs that identify the associated application. For more information see, [Application Objects and Service Principal Objects](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals). **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-supported-queries-filters-and-paging-options).            |
+|tags|String|  **Notes**: not nullable. |
 
 ## Response
 

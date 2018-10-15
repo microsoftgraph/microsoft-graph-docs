@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
 ---
+
 # columnDefinition resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -49,7 +50,9 @@ Here is a JSON representation of a columnDefinition resource.
 ## Properties
 
 Columns can hold data of various types.
+
 The following properties indicate what type of data a column stores, as well as additional settings for that data.
+
 The type-related properties (boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text) are mutually exclusive -- a column can only have one of them specified.
 
 | Property name           | Type    | Description
@@ -61,22 +64,22 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 | **hidden**              | boolean | Specifies whether the column is displayed in the user interface.
 | **id**                  | string  | The unique identifier for the column.
 | **indexed**             | boolean | Specifies whether the column values can used for sorting and searching.
-| **name**                | string  | The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see **displayName**.
+| **name**                | string  | The API-facing name of the column as it appears in the [fields](fieldvalueset.md) on a [listItem](listitem.md). For the user-facing name, see **displayName**.
 | **readOnly**            | bool    | Specifies whether the column values can be modified.
 | **required**            | boolean | Specifies whether the column value is not optional.
-| **boolean**       | [booleanColumn][]       | This column stores boolean values.
-| **calculated**    | [calculatedColumn][]    | This column's data is calculated based on other columns.
-| **choice**        | [choiceColumn][]        | This column stores data from a list of choices.
-| **currency**      | [currencyColumn][]      | This column stores currency values.
-| **dateTime**      | [dateTimeColumn][]      | This column stores DateTime values.
-| **defaultValue**  | [defaultColumnValue][]  | The default value for this column.
-| **geolocation**   | [geolocationColumn][]   | This column stores a geolocation.
-| **lookup**        | [lookupColumn][]        | This column's data is looked up from another source in the site.
-| **number**        | [numberColumn][]        | This column stores number values.
-| **personOrGroup** | [personOrGroupColumn][] | This column stores Person or Group values.
-| **text**          | [textColumn][]          | This column stores text values.
+| **boolean**       | [booleanColumn](booleanColumn.md) | This column stores boolean values.
+| **calculated**    | [calculatedColumn](calculatedColumn.md)| This column's data is calculated based on other columns.
+| **choice**        | [choiceColumn](choiceColumn.md) | This column stores data from a list of choices.
+| **currency**      | [currencyColumn](currencyColumn.md)      | This column stores currency values.
+| **dateTime**      | [dateTimeColumn](dateTimeColumn.md) | This column stores DateTime values.
+| **defaultValue**  | [defaultColumnValue](defaultColumnValue.md) | The default value for this column.
+| **geolocation**   | [geolocationColumn](geolocationColumn.md) | This column stores a geolocation.
+| **lookup**        | [lookupColumn](lookupColumn.md) | This column's data is looked up from another source in the site.
+| **number**        | [numberColumn](numberColumn.md) | This column stores number values.
+| **personOrGroup** | [personOrGroupColumn](personOrGroupColumn.md) | This column stores Person or Group values.
+| **text**          | [textColumn](textColumn.md)  | This column stores text values.
 
->**Note:** These properties correspond to SharePoint's [SPFieldType][] enumeration.
+>**Note:** These properties correspond to SharePoint's [SPFieldType](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.spfieldtype?view=sharepoint-server) enumeration.
 While the most common field types are represented in the previous table, this beta API is still missing some.
 In those cases, none of the column type facets will be populated, and the column will only have its basic properties.
 
@@ -84,24 +87,7 @@ In those cases, none of the column type facets will be populated, and the column
 
 ColumnDefinitions and field values for `hidden` columns are not shown by default.
 To see them when listing **columnDefinitions**, include `hidden` in your `$select` statement.
-To see them when showing **field** values on [listItems][listItem], include the desired columns by name in your `$select` statement.
-
-[booleanColumn]: booleanColumn.md
-[calculatedColumn]: calculatedColumn.md
-[choiceColumn]: choiceColumn.md
-[currencyColumn]: currencyColumn.md
-[dateTimeColumn]: dateTimeColumn.md
-[defaultColumnValue]: defaultColumnValue.md
-[geolocationColumn]: geolocationColumn.md
-[lookupColumn]: lookupColumn.md
-[numberColumn]: numberColumn.md
-[personOrGroupColumn]: personOrGroupColumn.md
-[textColumn]: textColumn.md
-[fieldValueSet]: fieldValueSet.md
-[fields]: fieldvalueset.md
-[listItem]: listitem.md
-
-[SPFieldType]: https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spfieldtype.aspx
+To see them when showing **field** values on [listItem](listitem.md), include the desired columns by name in your `$select` statement.
 
 <!-- {
   "type": "#page.annotation",

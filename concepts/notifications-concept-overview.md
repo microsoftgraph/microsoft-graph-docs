@@ -20,9 +20,9 @@ You can integrate your apps with Microsoft Graph notifications with a few simple
 
 To learn more about how to publish user notifications via Microsoft Graph, see the [notifications API reference](../api-reference/beta/resources/notifications-api-overview.md).
  
-To learn more about receiving and managing notifications by integrating with the Project Rome SDK, see the [Project Rome SDK documentation](https://docs.microsoft.com/en-us/windows/project-rome/) 
+To learn more about receiving and managing notifications by integrating with the Project Rome SDK, see the [Project Rome SDK documentation](https://docs.microsoft.com/windows/project-rome/) 
 
 ## See also
 
 - [Cross-device experiences in Microsoft Graph](cross-device-concept-overview.md)
-- [Project Rome Dev Center](http://aka.ms/projectrome)
+- [Project Rome Dev Center](https://aka.ms/projectrome)

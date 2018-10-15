@@ -1,6 +1,6 @@
 # Integrate Microsoft Graph Security API alerts with your SIEM using Azure Monitor
 
-The Microsoft Graph Security providers can be managed through a single REST endpoint. This endpoint can be configured to [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/) which supports connectors to several SIEM products. The instructions in Steps 1 and 2 of this article refer to all Azure Monitor connectors that support consumption via event hubs. This article describes the end-to-end integration of the [Splunk](https://splunkbase.splunk.com/) SIEM connector.
+The Microsoft Graph Security providers can be managed through a single REST endpoint. This endpoint can be configured to [Azure Monitor](https://docs.microsoft.com/azure/monitoring-and-diagnostics/) which supports connectors to several SIEM products. The instructions in Steps 1 and 2 of this article refer to all Azure Monitor connectors that support consumption via event hubs. This article describes the end-to-end integration of the [Splunk](https://splunkbase.splunk.com/) SIEM connector.
 
 The integration process involves the following steps:
 
@@ -15,7 +15,7 @@ After you complete these steps, your Splunk Enterprise will consume security ale
 
 ## Step 1: Set up an Event Hubs namespace in Azure to receive security alerts for your tenant
 
-To begin, you need to create a [Microsoft Azure Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/) namespace and event hub. This namespace and event hub is the destination for all your organization’s security alerts. An Event Hubs namespace is a logical grouping of event hubs that share the same access policy. Note a few details about the Event Hubs namespace and event hubs that you create:
+To begin, you need to create a [Microsoft Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/) namespace and event hub. This namespace and event hub is the destination for all your organization’s security alerts. An Event Hubs namespace is a logical grouping of event hubs that share the same access policy. Note a few details about the Event Hubs namespace and event hubs that you create:
 
 - We recommend using a Standard Event Hubs namespace, particularly if you are sending other Azure monitoring data through these same event hubs.
 - Typically, only one throughput unit is necessary. If you need to scale up as your usage increases, you can always manually increase the number of throughput units for the namespace later or enable auto inflation.
@@ -24,7 +24,7 @@ To begin, you need to create a [Microsoft Azure Event Hubs](https://docs.microso
 - We recommend using the default consumer group for your event hub. You don't need to create other consumer groups or use a separate consumer group unless you plan to have two different tools consume the same data from the same event hub.
 - Typically, port 5671 and 5672 must be opened on the machine consuming data from the event hub.
 
-Also see the [Azure Event Hubs FAQ](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-faq).
+Also see the [Azure Event Hubs FAQ](https://docs.microsoft.com/azure/event-hubs/event-hubs-faq).
 
 1. Log on to the [Azure portal](https://portal.azure.com/) and choose **Create a resource** at the top left of the screen.
 
@@ -122,7 +122,7 @@ Splunk needs an application registration in your organization’s Azure Active D
 
     ![app registration image](../concepts/images/app-registration.png)
 
-2. Select a name for your application, choose **Web app / API** for the type, and **`http://localhost`** for the sign-on URL. Then select **Create**.
+2. Select a name for your application, choose **Web app / API** for the type, and **`https://localhost`** for the sign-on URL. Then select **Create**.
 
     ![web api config](../concepts/images/app-web-config.png)
 
@@ -191,14 +191,14 @@ Try searching Graph Security alerts:
 - Type `sourcetype="amdl:securitygraph:alert"` in the search bar to get all alerts surfaced through the Microsoft Graph Security API. On the right-hand side, you will see the top-level properties of Azure Monitor log where Graph Security alert is under properties field.<br/>
 - On the left pane, you will see selected fields and interesting fields. You can use selected fields to create dashboards or Splunk alerts, you can also add or remove selected fields by right-clicking on the fields.  
 > **Note:**
-As shown in the following search query, you can restrict your search as needed. In the example, we filter the Graph Security Alerts by high severity alerts from Azure Security Center. We also used `eventDatetime`, `severity`, `status`, and `provider` as selected fields to be displayed. For more advance search terms, see [Splunk search tutorials](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial).
+As shown in the following search query, you can restrict your search as needed. In the example, we filter the Graph Security Alerts by high severity alerts from Azure Security Center. We also used `eventDatetime`, `severity`, `status`, and `provider` as selected fields to be displayed. For more advance search terms, see [Splunk search tutorials](https://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial).
 
  ![splunk_search_query](../concepts/images/splunk_search_query.png)
 > Search query: `sourcetype="amdl:securitygraph:alert" "properties.vendorInformation.provider"=ASC "properties.severity"=High | rename properties.eventDataTime as eventDateTime properties.severity as severity properties.vendorInformation.provider as provider properties.status as status`
 
 Splunk also allows multiple actions on search results using the "Save As" menu option in top right of the screen. You can create Reports, Dashboard Panels, or Alerts based on your search filter.
 Below is an example of a dashboard with an event stream based on the previous query:
-You can add a drilldown link to each event to further access the details on Microsoft Graph site. See [Splunk drilldown documentation](http://docs.splunk.com/Documentation/Splunk/7.1.2/Viz/DrilldownIntro).
+You can add a drilldown link to each event to further access the details on Microsoft Graph site. See [Splunk drilldown documentation](https://docs.splunk.com/Documentation/Splunk/7.1.2/Viz/DrilldownIntro).
 
  ![splunk_search_results](../concepts/images/splunk_search_results.png)
 
@@ -206,5 +206,5 @@ Or you can create a dashboard as a timeline chart:
 
  ![splunk_search_timeline](../concepts/images/splunk_search_timeline.png)
 
-You can follow [Splunk Search & Report tutorial](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial) for more details.
+You can follow [Splunk Search & Report tutorial](https://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial) for more details.
 

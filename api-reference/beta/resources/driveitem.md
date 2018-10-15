@@ -223,7 +223,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [specialFolder]: specialFolder.md
 [thumbnailSet]: thumbnailSet.md
 [video]: video.md
-[user]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/users
+[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

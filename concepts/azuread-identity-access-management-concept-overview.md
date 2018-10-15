@@ -30,7 +30,7 @@ You can assign users to predefined Azure AD administrative [directory roles](../
 
 ### Manage devices
 
-[Manage devices](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction.md) registered in the organization. Devices are registered to users and include items like laptops, desktops, tablets, and mobile phones. Devices are typically created in the cloud using the Device Registration Service or by Microsoft Intune. They're used by conditional access policies for multifactor authentication.
+[Manage devices](https://docs.microsoft.com/azure/active-directory/device-management-introduction.md) registered in the organization. Devices are registered to users and include items like laptops, desktops, tablets, and mobile phones. Devices are typically created in the cloud using the Device Registration Service or by Microsoft Intune. They're used by conditional access policies for multifactor authentication.
 
 ### Partner tenant management
 
@@ -74,4 +74,4 @@ Looking for the API reference for this service?
 - Use Azure AD to [authenticate](auth_overview.md) to Microsoft Graph. 
 - Integrate [Azure AD sign-in](https://azure.microsoft.com/en-us/develop/identity/signin/) into your app or website.
 - See the [Changelog](changelog.md) for information about what's new in the Azure AD APIs.
-- Explore [examples](https://developer.microsoft.com/en-us/graph/graph/examples) for more ideas about how to use Microsoft Graph.
+- Explore [examples](https://developer.microsoft.com/graph/graph/examples) for more ideas about how to use Microsoft Graph.

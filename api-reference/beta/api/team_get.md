@@ -20,7 +20,7 @@ GET /teams/{id}
 ```
 
 ## Optional query parameters
-The [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) are not currently supported.
+The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
 
 ## Request headers
 | Header       | Value |

@@ -1,6 +1,6 @@
 # Integrate Microsoft Graph Security API alerts with IBM QRadar SIEM using Azure Monitor
 
-The Microsoft Graph Security providers can be managed through a single REST endpoint. This endpoint can be configured to [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/), which supports connectors to several SIEM products. The instructions in Steps 1 and 2 of this article refer to all Azure Monitor connectors that support consumption via event hubs. This article describes the end-to-end integration of the [QRadar](https://www.ibm.com/us-en/marketplace/ibm-qradar-siem) SIEM connector.
+The Microsoft Graph Security providers can be managed through a single REST endpoint. This endpoint can be configured to [Azure Monitor](https://docs.microsoft.com/azure/monitoring-and-diagnostics/), which supports connectors to several SIEM products. The instructions in Steps 1 and 2 of this article refer to all Azure Monitor connectors that support consumption via event hubs. This article describes the end-to-end integration of the [QRadar](https://www.ibm.com/us-en/marketplace/ibm-qradar-siem) SIEM connector.
 
 The integration process involves the following steps:
 
@@ -12,7 +12,7 @@ After you complete these steps, your IBM QRadar will consume security alerts fro
 
 ## Step 1: Set up an Event Hubs namespace in Azure to receive security alerts for your tenant
 
-To begin, you need to create a [Microsoft Azure Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/) namespace and event hub. This namespace and event hub is the destination for all your organization’s security alerts. An Event Hubs namespace is a logical grouping of event hubs that share the same access policy. Note a few details about the Event Hubs namespace and event hubs that you create:
+To begin, you need to create a [Microsoft Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/) namespace and event hub. This namespace and event hub is the destination for all your organization’s security alerts. An Event Hubs namespace is a logical grouping of event hubs that share the same access policy. Note a few details about the Event Hubs namespace and event hubs that you create:
 
 - We recommend using a Standard Event Hubs namespace, particularly if you are sending other Azure monitoring data through these same event hubs.
 - Typically, only one throughput unit is necessary. If you need to scale up as your usage increases, you can always manually increase the number of throughput units for the namespace later or enable auto inflation.
@@ -21,7 +21,7 @@ To begin, you need to create a [Microsoft Azure Event Hubs](https://docs.microso
 - We recommend using the default consumer group for your event hub. You don't need to create other consumer groups or use a separate consumer group unless you plan to have two different tools consume the same data from the same event hub.
 - Typically, port 5671 and 5672 must be opened on the machine consuming data from the event hub.
 
-Also see the [Azure Event Hubs FAQ](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-faq).
+Also see the [Azure Event Hubs FAQ](https://docs.microsoft.com/azure/event-hubs/event-hubs-faq).
 
 1. Log on to the [Azure portal](https://portal.azure.com/) and choose **Create a resource** at the top left of the screen.
 

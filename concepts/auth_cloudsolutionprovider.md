@@ -2,7 +2,7 @@
 
 > **Note:** This topic applies **only** to Microsoft Cloud Solution Provider (CSP) application developers. The [Microsoft Cloud Solution Provider (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) program enables Microsoft’s partners to resell and manage Microsoft Online services to customers.
 
-This topic describes how to enable application access to partner-managed customer data via Microsoft Graph using either the [authorization code grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) or the [service to service client credentials flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
+This topic describes how to enable application access to partner-managed customer data via Microsoft Graph using either the [authorization code grant flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code) or the [service to service client credentials flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
 **Important:** Calling Microsoft Graph from a CSP application is only supported for directory resources (such as **user**, **group**,**device**, **organization**) and [Intune](../api-reference/beta/resources/intune_graph_overview.md) resources.
 
@@ -22,7 +22,7 @@ An application is viewed as *partner-managed* when it is granted elevated permis
 
 The initial steps required here follow most of the same steps used to register and configure a multi-tenant application:
 
-1. [Register your application](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration) in your Partner tenant using the [Azure Portal](https://portal.azure.com). To function as a partner-managed app, an application must be configured as a [multi-tenant app](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant). Additionally, if your app is deployed and sold in multiple geographic regions you will need to register your app in each of those regions as described <a href="#region">here</a>.
+1. [Register your application](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration) in your Partner tenant using the [Azure Portal](https://portal.azure.com). To function as a partner-managed app, an application must be configured as a [multi-tenant app](https://docs.microsoft.com/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant). Additionally, if your app is deployed and sold in multiple geographic regions you will need to register your app in each of those regions as described <a href="#region">here</a>.
 2. Configure your multi-tenant app, again through the Azure Portal, with the *required permissions* it needs using a least privileged approach.
 
 ### Pre-consent your app for all your customers
@@ -55,7 +55,7 @@ Finally grant your partner-managed app those configured permissions for all your
 
 ## Token acquisition flows
 
-Token acquisition flows for partner-managed apps - [authorization code grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) and [service-to-service client credentials flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service) - are the same as regular multi-tenant apps.
+Token acquisition flows for partner-managed apps - [authorization code grant flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code) and [service-to-service client credentials flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service) - are the same as regular multi-tenant apps.
 
 Apart from pre-consented access to all your customer tenants, partner-managed apps have one additional capability. It allows for your agents to use your app to access your customers' tenant data (using delegated admin privileges). Conceptually it works like this:
 
@@ -63,15 +63,15 @@ Apart from pre-consented access to all your customer tenants, partner-managed ap
 2. Your app requests an access token for the intended partner-managed customer tenant.
 3. Your app uses the access token to call Microsoft Graph.
 
-This is a standard [authorization code grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code), except that your agents must sign-in using their partner accounts. To see how this would look, imagine your partner tenant is *partner.com* (which is the home tenant for your agents) and one of your customers is *customer.com*:
+This is a standard [authorization code grant flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code), except that your agents must sign-in using their partner accounts. To see how this would look, imagine your partner tenant is *partner.com* (which is the home tenant for your agents) and one of your customers is *customer.com*:
 
-1. [Acquire an authorization code:](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Your app makes a request to the ```/authorize``` endpoint and must use a **customer tenant**, in our example ```customer.com```, for the target tenant. Your agents would still sign-in with their ```username@partner.com``` account.
+1. [Acquire an authorization code:](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Your app makes a request to the ```/authorize``` endpoint and must use a **customer tenant**, in our example ```customer.com```, for the target tenant. Your agents would still sign-in with their ```username@partner.com``` account.
 
     ```http
     GET https://login.microsoftonline.com/customer.com/oauth2/authorize
     ```
 
-2. [Aquire an access token using the authorization code:](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Your app must use a **customer tenant** as the target tenant, in our example ```customer.com```, when making the request to the ```token``` endpoint:
+2. [Aquire an access token using the authorization code:](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Your app must use a **customer tenant** as the target tenant, in our example ```customer.com```, when making the request to the ```token``` endpoint:
 
     ```http
     POST https://login.microsoftonline.com/customer.com/oauth2/token

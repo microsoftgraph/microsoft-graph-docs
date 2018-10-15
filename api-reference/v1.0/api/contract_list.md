@@ -22,7 +22,7 @@ GET /contracts
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response. 
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response. 
 
 > Filtering is supported for customerId, defaultDomainName, and displayName.
 

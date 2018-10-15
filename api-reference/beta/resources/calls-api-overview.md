@@ -64,7 +64,7 @@ When the bot answers an incoming call, or joins a new or existing call, it needs
 
 ### Service-hosted media
 
-Bots can manage the workflow and offload audio processing to the Microsoft Real-time Media Platform. With service-hosted media, you have serveral options to implement and host your bot. Consider using one of the available [SDKs](https://developer.microsoft.com/en-us/graph/code-samples-and-sdks). A service-hosted media bot  can be implemented as a stateless service as it does not process media locally.
+Bots can manage the workflow and offload audio processing to the Microsoft Real-time Media Platform. With service-hosted media, you have serveral options to implement and host your bot. Consider using one of the available [SDKs](https://developer.microsoft.com/graph/code-samples-and-sdks). A service-hosted media bot  can be implemented as a stateless service as it does not process media locally.
 
 | Method                                                        | Description                                             |
 |:--------------------------------------------------------------|:--------------------------------------------------------|

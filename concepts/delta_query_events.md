@@ -20,7 +20,7 @@ you need to track each calendar individually.
 
 Tracking event changes in a calendar view typically is a round of one or more GET requests with 
 the [delta](../api-reference/v1.0/api/event_delta.md) function. The initial GET 
-request is very much like the way you [list a calendarView](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_calendarview), 
+request is very much like the way you [list a calendarView](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/calendar_list_calendarview), 
 except that you include the **delta** function:
 
 ```

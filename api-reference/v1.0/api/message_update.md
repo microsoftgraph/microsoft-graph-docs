@@ -34,10 +34,10 @@ In the request body, supply the values for relevant fields that should be update
 |from|Recipient|The mailbox owner and sender of the message. Updatable only if isDraft = true. Must correspond to the actual mailbox used.|
 |importance|String|The importance of the message. The possible values are: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. The possible values are: `focused` or `other`. |
-|internetMessageId |String |The message ID in the format specified by [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). Updatable only if isDraft = true.|
+|internetMessageId |String |The message ID in the format specified by [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Updatable only if isDraft = true.|
 |isRead|Boolean|Indicates whether the message has been read.|
 |replyTo|Recipient collection|The email addresses to use when replying. Updatable only if isDraft = true.|
-|sender|Recipient|The account that is actually used to generate the message. Updatable only if isDraft = true, and when sending a message from a [shared mailbox](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes), or sending a message as a [delegate](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). In any case, the value must correspond to the actual mailbox used.|
+|sender|Recipient|The account that is actually used to generate the message. Updatable only if isDraft = true, and when sending a message from a [shared mailbox](https://docs.microsoft.com/exchange/collaboration/shared-mailboxes/shared-mailboxes), or sending a message as a [delegate](https://support.office.com/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). In any case, the value must correspond to the actual mailbox used.|
 |toRecipients|Recipient collection|The To recipients for the message. Updatable only if isDraft = true.|
 |body|ItemBody|The body of the message. Updatable only if isDraft = true.|
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|

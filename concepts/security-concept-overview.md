@@ -12,7 +12,7 @@ The [Microsoft Graph Security API](../api-reference/v1.0/resources/security-api-
 
 ### Unify and standardize alert tracking
 
-Write code once to integrate alerts from any Microsoft Graph-integrated security solution and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions, such as Splunk and IBM QRadar, via [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). For details about SIEM integration with the security API entities, see [Integrate with a SIEM](security_siemintegration.md).
+Write code once to integrate alerts from any Microsoft Graph-integrated security solution and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions, such as Splunk and IBM QRadar, via [Azure Monitor](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). For details about SIEM integration with the security API entities, see [Integrate with a SIEM](security_siemintegration.md).
 
 ### Correlate security alerts to improve threat protection and response
 

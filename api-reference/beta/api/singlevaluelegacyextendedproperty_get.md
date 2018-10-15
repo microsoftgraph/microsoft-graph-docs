@@ -50,7 +50,7 @@ getting. To learn more, including how to choose permissions, see [Permissions](.
 #### GET a resource instance expanded with an extended property that matches a filter
 Get a resource instance expanded with the extended property which matches a filter on the 
 **id** property. Make sure you apply 
-[URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.
+[URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.
 
 Get a **message** instance:
 <!-- { "blockType": "ignored" } -->
@@ -131,7 +131,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 Get instances of a supported resource that have a numeric extended property matching a filter. The filter uses an `eq` operator on the 
 **id** property, and one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`. 
 Make sure you apply Make sure you apply 
-[URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, 
+[URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, 
 forward slash, and space.
 
 The following syntax lines show a filter that uses an `eq` operator on the id, and another `eq` operator on the property value. You can substitute the 
@@ -214,7 +214,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 
 Get instances of the **message** or **event** resource that have a string-typed extended property matching a filter. The filter uses an `eq` operator on the 
 **id** property, and one of the following operators on the **value** property: `contains`, `startswith`, `eq`, or `ne`. Make sure you apply 
-[URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, 
+[URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, 
 forward slash, and space.
 
 

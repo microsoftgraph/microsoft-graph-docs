@@ -307,4 +307,4 @@ The request payload contains the input to the `sendMail` action, which is also d
 ## Use Microsoft Graph client libraries
 Like the power and ease of SDKs? While you can always call Microsoft Graph using the REST API, we also provide SDKs for many popular platforms.
 
-Explore our [SDKs](https://graph.microsoft.io/en-us/code-samples-and-sdks).
+Explore our [code samples and SDKs](https://developer.microsoft.com/graph/code-samples-and-sdks).

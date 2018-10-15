@@ -56,7 +56,7 @@ Content-type: application/json
     },
     "phone":"206-555-0100",
     "email":"manager@fourthcoffee.com",
-    "webSiteUrl":"http://www.fourthcoffee.com",
+    "webSiteUrl":"https://www.fourthcoffee.com",
     "defaultCurrencyIso":"USD"
 }
 ```
@@ -79,7 +79,7 @@ Content-type: application/json
     "businessType":"",
     "phone":"206-555-0100",
     "email":"manager@fourthcoffee.com",
-    "webSiteUrl":"http://www.fourthcoffee.com",
+    "webSiteUrl":"https://www.fourthcoffee.com",
     "defaultCurrencyIso":"USD",
     "isPublished":false,
     "publicUrl":null,

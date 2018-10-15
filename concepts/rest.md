@@ -17,7 +17,7 @@ This article assumes a v2.0 registration, so you'll register your app on the [Ap
 
 ## Authenticate the user and get an access token
 
-The app described in this article implements the [Authorization Code Grant flow](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-code/) to get access tokens from the Azure AD v2.0 endpoint, following standard [OAuth 2.0 protocols](http://tools.ietf.org/html/rfc6749). For a complete guide to the flows supported in the Azure AD v2.0 endpoint see [Types of the v2.0 endpoint](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/).
+The app described in this article implements the [Authorization Code Grant flow](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-code/) to get access tokens from the Azure AD v2.0 endpoint, following standard [OAuth 2.0 protocols](https://tools.ietf.org/html/rfc6749). For a complete guide to the flows supported in the Azure AD v2.0 endpoint see [Types of the v2.0 endpoint](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/).
 
 With the Authorization Code Grant flow, first you get an authorization code and then you exchange the code for an access token.
 
@@ -56,7 +56,7 @@ GET https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=<ap
 3- Redirect the user to the logon URL. The user is presented with a sign in screen that displays the name of the app. After signing in, the user is presented with the list of the permissions the app requires and prompted to allow or deny. If the user consents, the browser redirects to the redirect URI with the authorization code and state in the query string, as shown in the following example.
 
 ```
-http://localhost/myapp/?code=AwABAAAA...cZZ6IgAA&state=1234
+https://localhost/myapp/?code=AwABAAAA...cZZ6IgAA&state=1234
 ```
 
 The next step is to exchange the authorization code returned for an access token.

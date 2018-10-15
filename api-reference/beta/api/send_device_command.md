@@ -82,7 +82,7 @@ HTTP/1.1 201 OK
 
 ## Launch URI example
 
-Here is an example of a LaunchURI request; it will launch a URI or an application on the target device. To launch a URI or an app, issue a POST using the ID of the device (obtained from doing a GET call on `me/devices`). Set the *Type* parameters to *LaunchURI* and provide a URI value such as http://bing.com.
+Here is an example of a LaunchURI request; it will launch a URI or an application on the target device. To launch a URI or an app, issue a POST using the ID of the device (obtained from doing a GET call on `me/devices`). Set the *Type* parameters to *LaunchURI* and provide a URI value such as https://bing.com.
 
 #### Request
 
@@ -99,7 +99,7 @@ POST me/devices/{id}/commands
 Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
 
-{ "type" : "LaunchUri", "payload" : {"uri":"http://bing.com"}}
+{ "type" : "LaunchUri", "payload" : {"uri":"https://bing.com"}}
 
 ```
 
@@ -127,7 +127,7 @@ HTTP/1.1 201 OK
   "permissionTicket": null,
   "postBackUri": null,
   "payload": {
-    "uri": "http://bing.com"
+    "uri": "https://bing.com"
   }
 }
 
