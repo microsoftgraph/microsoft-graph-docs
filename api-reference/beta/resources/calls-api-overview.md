@@ -96,4 +96,4 @@ The following are known issues with the calls and online meetings API:
 
 ## See also
 
-[Calls and online meetings API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/samples).
+[Calls and online meetings API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/).
