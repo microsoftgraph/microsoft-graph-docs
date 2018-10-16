@@ -83,10 +83,6 @@ The Media SDK allows the bot to send and receive audio, video, and video-based s
 
 > **Note:** You may not use the Microsoft.Graph.Calls.Media API to record or otherwise persist media content from calls or meetings that your bot accesses.
 
-## Samples
-
-Samples are hosted in [microsoft-graph-comms-samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/samples) GitHub and you can get started by reading the [README](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/README.md) file.
-
 ## Testing
 
 Bots can be tested locally using tunneling services like [Ngrok](https://ngrok.com) following some setup. See [testing](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/calling-testing.md) to learn more.
@@ -97,3 +93,7 @@ The following are known issues with the calls and online meetings API:
 
 - Case mismatch in payloads - Payloads returned in notifications and responses contain incorrect capitalization of odata.types. They are returned in upper camel case instead of lower camel case. Enums sent in requests need to be in upper camel case.
 - Navigation path `/applications/{id}` is not supported - Navigating through the global applications node to the application, even your own, is not allowed. Please use the `/app` navigation only.
+
+## See also
+
+[Calls and online meetings API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/samples).
