@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Subscribe to the specified touch-tone. This allows you to be notified when the user presses a specific button on a telephone keypad.
+Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a "touchtone" phone.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -57,7 +57,7 @@ Content-Length: 46
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 ```http
 HTTP/1.1 202 Accepted

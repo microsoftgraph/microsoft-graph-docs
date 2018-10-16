@@ -4,13 +4,17 @@
 
 Retrieve the properties and relationships of an **onlineMeeting** object.
 
+> **Note:** `GET` method is limited to a [VTC conference id](https://docs.microsoft.com/en-us/microsoftteams/cloud-video-interop-for-teams-set-up). These ids are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.
+> For regular flows, the bot can use the `joinURL` to join a meeting and no lookup is necessary.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type                        | Permissions (from least to most privileged)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Delegated (work or school account)     | Not Supported.                                         |
-| Delegated (personal Microsoft account) | Not Supported.                                         |
+| Delegated (work or school account)     | Not Supported.                                        |
+| Delegated (personal Microsoft account) | Not Supported.                                        |
 | Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 ## HTTP request
@@ -49,7 +53,7 @@ GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
 
 ##### Response
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

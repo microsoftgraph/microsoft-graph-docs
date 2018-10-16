@@ -10,7 +10,7 @@ Calls are categorized as peer-to-peer or multiparty calls. A user can initiate a
 
 ![An image showing peer-to-peer and multiparty calls](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/call-types.png)
 
-If your bot is creating the call, it needs to have either the initiate or the initiate-group-call permission. Your bot has the option to create a peer-to-peer call or a multiparty call. 
+If your bot is creating the call, it needs to have either the initiate or the initiate-group-call permission. Your bot has the option to create a peer-to-peer call or a multiparty call.
 
 - For a peer-to-peer call, the bot needs to specify only one target and no meeting coordinates. 
 - If your bot initiates a call with multiple participants, an ad hoc meeting is set up behind the scenes and everyone joins that conference. If meeting coordinates are specified, a multiparty call is set up even if there is only one target.
@@ -23,7 +23,7 @@ A call might start as peer-to-peer and escalate to multiparty. A conference is p
 
 ### Incoming call
 
-To receive an incoming call, you need to register the calling bot. When the bot receives the incoming notification, it has the following options.
+To receive an incoming call, you need to [register the calling bot](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/register-calling-bot.md). When the bot receives the incoming notification, it has the following options.
 
 | Method                              | Description                                  |
 |:------------------------------------|:---------------------------------------------|
@@ -58,13 +58,13 @@ To interact with other participants on the call, use the participants object.
 
 ## Media
 
-Media processing is managed through the Microsoft Real-time Media Platform. The Real-time Media Platform helps bots engage in Microsoft Teams audio/video calls and meetings. It allows real-time bots to participate in both peer-to-peer and multiparty calls.
+Media processing is managed through the Microsoft Real-time Media Platform. The Real-time Media Platform helps bots engage in Microsoft Teams audio/video calls and meetings. It allows real-time bots to participate in both peer-to-peer and multiparty calls​.
 
 When the bot answers an incoming call, or joins a new or existing call, it needs to tell the Real-time Media Platform how media will be handled. If you are building an Interactive Voice Response (IVR) system, you can offload the expensive audio processing to Microsoft service hosted media components. If your bot requires direct access to media streams, we offer an application-hosted media option through the Real-time Media SDK.
 
 ### Service-hosted media
 
-Bots can manage the workflow and offload audio processing to the Microsoft Real-time Media Platform. With service-hosted media, you have serveral options to implement and host your bot. Consider using one of the available [SDKs](https://developer.microsoft.com/en-us/graph/code-samples-and-sdks). A service-hosted media bot  can be implemented as a stateless service as it does not process media locally.
+Bots can manage the workflow and offload audio processing to the Microsoft Real-time Media Platform. With service-hosted media, you have serveral options to implement and host your bot. Consider using one of the available [SDKs](https://developer.microsoft.com/en-us/graph/code-samples-and-sdks). A service-hosted media bot can be implemented as a stateless service as it does not process media locally.
 
 | Method                                                        | Description                                             |
 |:--------------------------------------------------------------|:--------------------------------------------------------|
@@ -83,9 +83,17 @@ The Media SDK allows the bot to send and receive audio, video, and video-based s
 
 > **Note:** You may not use the Microsoft.Graph.Calls.Media API to record or otherwise persist media content from calls or meetings that your bot accesses.
 
+## Samples
+
+Samples are hosted in [microsoft-graph-comms-samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/samples) GitHub and you can get started by reading the [README](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/README.md) file.
+
+## Testing
+
+Bots can be tested locally using tunneling services like [Ngrok](https://ngrok.com) following some setup. See [testing](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/calling-testing.md) to learn more.
+
 ## Known issues
 
 The following are known issues with the calls and online meetings API:
 
-- Case mismatch in payloads - Payloads returned in notifications and responses contain incorrect capitalization of odata.types. They are returned in upper camel case instead of lower camel case.
+- Case mismatch in payloads - Payloads returned in notifications and responses contain incorrect capitalization of odata.types. They are returned in upper camel case instead of lower camel case. Enums sent in requests need to be in upper camel case.
 - Navigation path `/applications/{id}` is not supported - Navigating through the global applications node to the application, even your own, is not allowed. Please use the `/app` navigation only.
