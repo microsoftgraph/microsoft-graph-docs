@@ -7,9 +7,9 @@ Represents a mention in a [chatMessage](chatMessage.md) entity. The mention can 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|string| Entity type that is associated with this message. It supports the following values<br><ul><li>user - Represents a user mention. Populate the id field with the AAD id of the user</li><li>bot - Represents a bot mention. Populate the id field with the bot id</li><li>team - Represents a team mention. Populate the id field with the group id for the team</li><li>channel - Represents a channel mention. Populate the id field with the id of the channel| 
-|id|string|Id of the entity being mentioned|
+|id|int|Id of the entity being mentioned|
 |mentionText|string|String used to represent the mention Ex: User display name, Team name etc|
+|mentioned| [identitySet](identitySet) | The entity (user/application/team/channel) that is being mentioned|
 
 ## JSON representation
 
@@ -23,9 +23,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "type": "string",
-  "id": "string (identifier)",
-  "mentionText": "string"
+  "id": "int (identifier)",
+  "mentionText": "string",
+  "mentioned" : {"@odata.type": "microsoft.graph.IdentitySet"}
 }
 
 ```

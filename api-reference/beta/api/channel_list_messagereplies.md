@@ -85,19 +85,23 @@ Content-length: 201
               "name": "Test.txt",
               "thumbnailUrl": null
           }
-        ],
         "mentions": [
             {
-                "type": "user",
-                "id": "id-value ",
-                "mentionText": "Test User"
+                "id": id-value,
+                "mentionText": "Test User",
+                "mentioned": {
+                    "user": {
+                        "id": "id-value",
+                        "displayName: "string"
+                        }
+                    }
             }
         ],
         "importance": "normal",
         "reactions": [
             {
-                "type": "like",
-                "reactedBy": {
+                "reactionType": "like",
+                "user": {
                     "user": { 
                         "id": "id-value",
                         "displayName": "John Doe"
@@ -105,7 +109,7 @@ Content-length: 201
                 },
                 "createdDateTime": "2018-07-09T07:40:20.152Z"
             }
-        ],
+          ],
         "locale": "en-us"
     }
   ]
