@@ -55,7 +55,7 @@ The custom columns in the bucket task board are represented by [bucket](plannerb
 
 All the ordering is controlled by the principles identified in [Planner order hints](planner_order_hint_format.md).
 
-## <a name="delta">Track changes using delta query</a>
+## Track changes using delta query
 
 Planner's delta query supports querying objects that the user is subscribed to.
 
@@ -67,7 +67,7 @@ Users are subscribed to the following objects.
 | Plans                 | <ul><li>Shared with the user through the plan's **SharedWith** collection</li></ul>                                                                                                                     |
 | Buckets               | <ul><li>Contained in a plan shared with the user through the plan's **SharedWith** collection</li></ul>                                                                                                 |  |
 
-### <a name="objectcache">Populate the object cache for delta queries</a>
+### Populate the object cache for delta queries
 
 If you want to use the Planner delta query API, maintain a local cache of objects that the user is interested in observing in order to apply the changes from the delta response feed.
 
