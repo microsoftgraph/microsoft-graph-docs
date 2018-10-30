@@ -4,6 +4,14 @@
 
 Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object.
 
+## Permissions
+
+|Permission type                        | Permissions (from least to most privileged)              |
+|:--------------------------------------|:---------------------------------------------------------|
+|Delegated (work or school account)     | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
+|Application                            | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
+
+
 
 ## Properties
 | Property	   | Type	|Description|
