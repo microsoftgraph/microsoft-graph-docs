@@ -9,8 +9,8 @@ In this topic you will learn how to register a new Calling Bot.
 Complete the following steps:
 1. Register a bot through [Azure Bot Channel Registration](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration).
 1. Once you complete the registration, take a note of the registered config values (Bot Name, Application Id, and Application Secret).  You will need these values later in the code samples.
-1. Enable the Skype channel and enable calling on the Calling tab.  Fill in the Webhook (for calling) where you will receive incoming notifications. E.g. `https://{your domain}/api/calls`. Refer to [Connect a bot to channels](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels) for more information on how to configure channels.
-1. Enable the Microsoft Teams channel.
+1. Enable the Microsoft Teams channel and enable calling on the Calling tab.  Fill in the Webhook (for calling) where you will receive incoming notifications. E.g. `https://{your domain}/api/calls`. Refer to [Connect a bot to channels](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels) for more information on how to configure channels.
+![Microsoft Teams Enable Calling](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/msteams-enable-calling.png)
 
 ## Permissions
 
@@ -74,7 +74,7 @@ The code samples can be used in combination with a Teams App Manifest settings t
   },
   "icons": {
     "outline": "%FILENAME-32x32px%",
-    "color": "%FILENAME-192x192px%"
+    "color": "%FILENAME-192x192px"
   },
   "accentColor": "%HEX-COLOR%",
   "bots": [

@@ -37,7 +37,7 @@ In the request body, provide a JSON object with the following parameters.
 Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
 
 ## Example
-The following example shows how to call this API.
+Here is an example of how to call this API.
 
 ##### Request
 Here is an example of the request.
@@ -61,6 +61,12 @@ Content-Length: 79
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.commsOperation"
+} -->
+```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```

@@ -124,11 +124,6 @@ Content-Length: 2821
   "requestedModalities": [
     "audio", "video"
   ],
-  "resultInfo": {
-    "code": "code-value",
-    "message": "message-value",
-    "subCode": "subCode-value"
-  },
   "ringingTimeoutInSeconds": 99,
   "routingPolicies": [
     "none"

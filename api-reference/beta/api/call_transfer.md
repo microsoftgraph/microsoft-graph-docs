@@ -31,6 +31,8 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|The participant which is the target of the transfer.|
+|target|[identitySet](../resources/identitySet.md)||
+|replacesCallId|String|Original call id of the participant that is being transferred.|
 |clientContext|String|The client context.|
 
 ## Response
@@ -76,6 +78,11 @@ Content-Length: 430
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -103,11 +110,11 @@ Content-Type: application/json
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "running",
         "resultInfo": {
           "code": "200",
           "subCode": "transferring"
-        }
+        },
+        "status": "running"
       }
     }
   ]
@@ -137,11 +144,11 @@ Content-Type: application/json
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed",
         "resultInfo": {
           "code": "200",
           "subCode": "transferAccepted"
-        }
+        },
+        "status": "completed"
       }
     }
   ]
@@ -241,11 +248,11 @@ Content-Type: application/json
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "running",
         "resultInfo": {
           "code": "200",
           "subCode": "transferring"
-        }
+        },
+        "status": "running"
       }
     }
   ]
@@ -275,11 +282,11 @@ Content-Type: application/json
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed",
         "resultInfo": {
           "code": "200",
           "subCode": "transferAccepted"
-        }
+        },
+        "status": "completed"
       }
     }
   ]

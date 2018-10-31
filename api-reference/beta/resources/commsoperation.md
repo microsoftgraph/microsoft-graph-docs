@@ -54,11 +54,11 @@ Here is a JSON representation of the resource.
   "clientContext": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "createdDateTime": "2018-09-06T15:58:41Z",
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "resultInfo": {
     "@odata.type": "#microsoft.graph.resultInfo",
     "code": "200"
   },
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "status": "completed"
 }
 ```

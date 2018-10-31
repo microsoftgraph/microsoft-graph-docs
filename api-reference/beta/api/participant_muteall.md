@@ -37,7 +37,7 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
 
 ## Example
-The following example shows how to call this API.
+Here is an example of how to call this API.
 
 ##### Request
 Here is an example of the request.
