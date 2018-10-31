@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 776
+Content-Length: 860
 
 {
   "value": [
@@ -66,11 +66,16 @@ Content-Length: 776
       "allowLogCollectionOnInstallFailure": true,
       "customErrorMessage": "Custom Error Message value",
       "installProgressTimeoutInMinutes": 15,
-      "allowDeviceUseOnInstallFailure": true
+      "allowDeviceUseOnInstallFailure": true,
+      "selectedMobileAppIds": [
+        "Selected Mobile App Ids value"
+      ]
     }
   ]
 }
 ```
+
+
 
 
 

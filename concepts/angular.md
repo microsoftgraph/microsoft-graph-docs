@@ -7,7 +7,7 @@ The following image shows the app you'll create.
 ![The web app after login showing the "Send mail" button](./images/angular-connect-sample.png)
 
 
-**Don't feel like building an app?** Use the [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.
+**Don't feel like building an app?** Use the [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start) to get up and running fast.
 
 To download a version of the Connect sample that uses the Azure AD endpoint, see [Microsoft Graph Connect Sample for AngularJS](https://github.com/microsoftgraph/angular-connect-rest-sample/releases/tag/last_v1_auth).
 
@@ -36,7 +36,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 5. Under **Platforms**, choose **Add Platform** > **Web**.
 
-6. Make sure the **Allow Implicit Flow** check box is selected, and enter *http://localhost:8080* as the Redirect URI. 
+6. Make sure the **Allow Implicit Flow** check box is selected, and enter *https://localhost:8080* as the Redirect URI. 
 
 7. Choose **Save**.
 
@@ -160,7 +160,7 @@ Open app.js and add the following code to the bottom of the file. This initializ
 
         npm start
 
-2. In a browser, navigate to *http://localhost:8080* and choose the **Connect** button.
+2. In a browser, navigate to *https://localhost:8080* and choose the **Connect** button.
 
 3. Sign in and grant the requested permissions. 
 

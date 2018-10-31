@@ -36,11 +36,11 @@ You can use Microsoft Graph to build experiences around the user's unique contex
 
 You can do all this and more with the Microsoft Graph API.
 
->**Note:** When you use the Microsoft Graph API, you agree to the [Microsoft Graph Terms of Use](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+>**Note:** When you use the Microsoft Graph API, you agree to the [Microsoft Graph Terms of Use](https://developer.microsoft.com/graph/docs/misc/terms-of-use) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ### Popular requests
 
-Check out some of these common scenarios for working with the Microsoft Graph API. The links take you to the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+Check out some of these common scenarios for working with the Microsoft Graph API. The links take you to the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 | **Operation**	| **URL** |
 |:--------------------------|:----------------------------------------|
@@ -87,7 +87,7 @@ For more information about Microsoft Graph Data Connect, see [Microsoft Graph Da
 
 ## Next steps
 
-- Check out some [featured scenarios](https://developer.microsoft.com/en-us/graph/examples).
+- Check out some [featured scenarios](https://developer.microsoft.com/graph/examples).
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
 - Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios. 
@@ -96,5 +96,5 @@ For more information about Microsoft Graph Data Connect, see [Microsoft Graph Da
 
 ## Feedback?
 
-Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with {MicrosoftGraph}.
+Your feedback is important to us. Connect with us on [Stack Overflow](https://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with {MicrosoftGraph}.
 

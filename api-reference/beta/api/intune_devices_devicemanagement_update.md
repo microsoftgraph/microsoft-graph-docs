@@ -56,7 +56,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement
 Content-type: application/json
-Content-length: 2097
+Content-length: 2437
 
 {
   "subscriptionState": "active",
@@ -89,21 +89,24 @@ Content-length: 2097
       {
         "@odata.type": "microsoft.graph.windowsMalwareStateCount",
         "state": "actionFailed",
-        "deviceCount": 11
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
       }
     ],
     "malwareExecutionStateSummary": [
       {
         "@odata.type": "microsoft.graph.windowsMalwareExecutionStateCount",
         "executionState": "blocked",
-        "deviceCount": 11
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
       }
     ],
     "malwareCategorySummary": [
       {
         "@odata.type": "microsoft.graph.windowsMalwareCategoryCount",
         "category": "adware",
-        "deviceCount": 11
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
       }
     ],
     "malwareNameSummary": [
@@ -111,14 +114,16 @@ Content-length: 2097
         "@odata.type": "microsoft.graph.windowsMalwareNameCount",
         "malwareIdentifier": "Malware Identifier value",
         "name": "Name value",
-        "deviceCount": 11
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
       }
     ],
     "osVersionsSummary": [
       {
         "@odata.type": "microsoft.graph.osVersionCount",
         "osVersion": "Os Version value",
-        "deviceCount": 11
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
       }
     ]
   },
@@ -131,7 +136,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2201
+Content-Length: 2541
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
@@ -166,21 +171,24 @@ Content-Length: 2201
       {
         "@odata.type": "microsoft.graph.windowsMalwareStateCount",
         "state": "actionFailed",
-        "deviceCount": 11
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
       }
     ],
     "malwareExecutionStateSummary": [
       {
         "@odata.type": "microsoft.graph.windowsMalwareExecutionStateCount",
         "executionState": "blocked",
-        "deviceCount": 11
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
       }
     ],
     "malwareCategorySummary": [
       {
         "@odata.type": "microsoft.graph.windowsMalwareCategoryCount",
         "category": "adware",
-        "deviceCount": 11
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
       }
     ],
     "malwareNameSummary": [
@@ -188,20 +196,24 @@ Content-Length: 2201
         "@odata.type": "microsoft.graph.windowsMalwareNameCount",
         "malwareIdentifier": "Malware Identifier value",
         "name": "Name value",
-        "deviceCount": 11
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
       }
     ],
     "osVersionsSummary": [
       {
         "@odata.type": "microsoft.graph.osVersionCount",
         "osVersion": "Os Version value",
-        "deviceCount": 11
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
       }
     ]
   },
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
+
 
 
 

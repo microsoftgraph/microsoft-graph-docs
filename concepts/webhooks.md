@@ -34,7 +34,7 @@ Or to a user's personal OneDrive:
 `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
-Or to a new [Secuirty API alert](security-concept-overview.md):
+Or to a new [Security API alert](security-concept-overview.md):
 `/security/alerts?$filter=status eq ‘New’`,
 `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
 
@@ -157,7 +157,7 @@ The notification object has the following properties:
 | Property | Type | Description |
 |:---------|:-----|:------------|
 | subscriptionId | string | The ID of the subscription that generated the notification. |
-| subscriptionExpirationDateTime | [dateTime](http://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. |
+| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. |
 | clientState | string | The `clientState` property specified in the subscription request (if any). |
 | changeType | string | The event type that caused the notification. For example, `created` on mail receive, or `updated` on marking a message read. |
 | resource | string | The URI of the resource relative to `https://graph.microsoft.com`. |

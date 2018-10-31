@@ -20,13 +20,13 @@ In addition, apps must be [properly registered](https://docs.microsoft.com/azure
 GET auditLogs/signIns
 ```
 ## Optional query parameters
-This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) for how to use these parameters.
+This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#filter-parameter)|Filters results (rows). |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
-|[$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top-parameter)|Sets the page size of results.|`/auditLogs/signIns?$top=1`|
-|[$skiptoken](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters#filter-parameter)|Filters results (rows). |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
+|[$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top-parameter)|Sets the page size of results.|`/auditLogs/signIns?$top=1`|
+|[$skiptoken](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
 ### List of attributes supported by $filter parameter
 |Attribute Name |Supported operators|

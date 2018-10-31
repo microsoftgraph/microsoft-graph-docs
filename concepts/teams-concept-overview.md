@@ -51,7 +51,7 @@ See the [Teams API in Microsoft Graph beta](../api-reference/beta/resources/team
 
 - Learn how to [use the Microsoft Teams API](../api-reference/beta/resources/teams_api_overview.md).
 - Drill down on the methods, properties, and relationships of the [team](../api-reference/beta/resources/team.md), [channel](../api-reference/beta/resources/channel.md), and [group](../api-reference/v1.0/resources/group.md) resources.
-- Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Read more about the [Microsoft Teams programming model](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/concepts-overview).
 - Explore the [calling and online meeting APIs](../api-reference/beta/resources/calls-api-overview.md).
 - Get a jump-start with [sample code](https://github.com/OfficeDev/microsoft-teams-sample-graph).

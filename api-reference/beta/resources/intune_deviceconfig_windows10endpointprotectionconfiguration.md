@@ -176,6 +176,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |smartScreenEnableInShell|Boolean|Allows IT Admins to configure SmartScreen for Windows.|
 |smartScreenBlockOverrideForFiles|Boolean|Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.|
 |applicationGuardEnabled|Boolean|Enable Windows Defender Application Guard|
+|applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune_deviceconfig_applicationguardenabledoptions.md)|Enable Windows Defender Application Guard for newer Windows builds. Possible values are: `notConfigured`, `enabledForEdge`, `enabledForOffice`, `enabledForEdgeAndOffice`.|
 |applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune_deviceconfig_applicationguardblockfiletransfertype.md)|Block clipboard to transfer image file, text file or neither of them. Possible values are: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
 |applicationGuardBlockNonEnterpriseContent|Boolean|Block enterprise sites to load non-enterprise content, such as third party plug-ins|
 |applicationGuardAllowPersistence|Boolean|Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)|
@@ -774,6 +775,7 @@ Here is a JSON representation of the resource.
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
+  "applicationGuardEnabledOptions": "String",
   "applicationGuardBlockFileTransfer": "String",
   "applicationGuardBlockNonEnterpriseContent": true,
   "applicationGuardAllowPersistence": true,
@@ -835,6 +837,8 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
+
 
 
 

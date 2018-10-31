@@ -36,6 +36,6 @@ Explore all of the [Microsoft Graph Samples](https://github.com/microsoftgraph) 
 
 ## See also
 
-- [Try out sample REST calls in the Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
+- [Try out sample REST calls in the Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 - [Azure AD endpoint documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
 - [Azure AD v2.0 endpoint documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)

@@ -74,4 +74,4 @@ Here are some other Python samples that demonstrate how to work with various asp
 
 If there's a particular sample you'd like to see, please let us know by [submitting an issue](https://github.com/microsoftgraph/python-sample-auth/issues). We're very interested in your feedback on any Microsoft Graph scenario you'd like to build in Python!
 
-The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [developer documentation](https://developer.microsoft.com/en-us/graph/docs/concepts/overview) or the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to explore what else you can accomplish with Microsoft Graph.
+The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [developer documentation](https://developer.microsoft.com/graph/docs/concepts/overview) or the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to explore what else you can accomplish with Microsoft Graph.

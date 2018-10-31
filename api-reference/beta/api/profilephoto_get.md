@@ -70,7 +70,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 |size  |String  | A photo size. The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', '360x360','432x432', '504x504', and '648x648'. Photos can be any dimension if they are stored in Azure Active Directory. |
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Name       | Type | Description|

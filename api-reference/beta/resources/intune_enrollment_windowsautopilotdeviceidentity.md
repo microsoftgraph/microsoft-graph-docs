@@ -14,6 +14,7 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |[Delete windowsAutopilotDeviceIdentity](../api/intune_enrollment_windowsautopilotdeviceidentity_delete.md)|None|Deletes a [windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md).|
 |[Update windowsAutopilotDeviceIdentity](../api/intune_enrollment_windowsautopilotdeviceidentity_update.md)|[windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md)|Update the properties of a [windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md) object.|
 |[assignUserToDevice action](../api/intune_enrollment_windowsautopilotdeviceidentity_assignusertodevice.md)|None|Assigns user to Autopilot devices.|
+|[unassignUserFromDevice action](../api/intune_enrollment_windowsautopilotdeviceidentity_unassignuserfromdevice.md)|None|Unassigns the user from an Autopilot device.|
 
 ## Properties
 |Property|Type|Description|
@@ -66,6 +67,8 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
+
+
 
 
 

@@ -12,13 +12,13 @@ This walkthrough describes how to make requests to the Excel REST API from a Pyt
 
 * [Python 3.5.2](https://www.python.org/downloads/)
 * [Flask-OAuthlib](https://github.com/lepture/flask-oauthlib)
-* A [work or school account](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)<!-- This link target doesn't match the link title. Please verify that this is what you want to link to and update the text, or update the URL as appropriate. -->
+* A [work or school account](https://msdn.microsoft.com/office/office365/howto/setup-development-environment#bk_Office365Account)<!-- This link target doesn't match the link title. Please verify that this is what you want to link to and update the text, or update the URL as appropriate. -->
 
 
 ## Authorization and scopes
-You can use the [Azure AD v2.0 endpoint](https://graph.microsoft.io/en-us/docs/concepts/converged_auth) to authenticate Excel REST API calls. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
+You can use the [Azure AD v2.0 endpoint](https://developer.microsoft.com/graph/docs/concepts/auth_overview) to authenticate Excel REST API calls. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
   
-One of the following [permission scopes](https://graph.microsoft.io/en-us/docs/concepts/permissions_reference) is required to use the Excel resource:
+One of the following [permission scopes](https://developer.microsoft.com/graph/docs/concepts/permissions_reference) is required to use the Excel resource:
 
 * Files.Read 
 * Files.ReadWrite
@@ -128,7 +128,7 @@ With an access token, your app can make authenticated requests to the Microsoft 
 ### Getting an Excel Session
 #### Request 
 
-Pass a JSON object by setting the `persistChanges` value to `true` or `false`. When the value of `persistChanges` is set to `false`, a non-persistent session id is returned. This example uses the [Requests](http://docs.python-requests.org/en/latest/user/quickstart) HTTP library 
+Pass a JSON object by setting the `persistChanges` value to `true` or `false`. When the value of `persistChanges` is set to `false`, a non-persistent session id is returned. This example uses the [Requests](https://docs.python-requests.org/en/latest/user/quickstart) HTTP library 
 
 ```python
  	# Replace the id with your Excel workbook's drive id

@@ -1,4 +1,4 @@
-#  Use delta query to track changes in Microsoft Graph data
+# Use delta query to track changes in Microsoft Graph data
 
 Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
 
@@ -6,17 +6,17 @@ Delta query enables applications to discover newly created, updated, or deleted 
 
 The typical call pattern is as follows:
 
-1.  The application begins by calling a GET request with the delta function on the desired resource.
-2.  Microsoft Graph sends a response containing the requested resource and a [state token](#state-tokens).
+1. The application begins by calling a GET request with the delta function on the desired resource.
+2. Microsoft Graph sends a response containing the requested resource and a [state token](#state-tokens).
 
      a.  If a `nextLink` URL is returned, there may be additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL to retrieve all pages of data until a `deltaLink` URL is returned in the response.
 
      b.  If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the `deltaLink` URL to learn about changes to the resource.
 
-3.  When the application needs to learn about changes to the resource, it makes a new request using the `deltaLink` URL received in step 2. This request *may* be made immediately after completing step 2 or when the application checks for changes.
-4.  Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `nextLink` URL or a `deltaLink` URL.
+3. When the application needs to learn about changes to the resource, it makes a new request using the `deltaLink` URL received in step 2. This request *may* be made immediately after completing step 2 or when the application checks for changes.
+4. Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `nextLink` URL or a `deltaLink` URL.
 
->**Note:** Entities derrived from `directoryObject` (such as users and groups) support "sync from now" scenarios. This allows you to skip steps 1 and 2 above (if you are not interested in retrieving the full state of the resource) and ask for the latest `deltaLink` instead. Append `$deltaToken=latest` to the `delta` function and the response will contain a `deltaLink` and no resource data.
+>**Note:** Resources stored in Azure Active Directory (such as users and groups) support "sync from now" scenarios. This allows you to skip steps 1 and 2 above (if you are not interested in retrieving the full state of the resource) and ask for the latest `deltaLink` instead. Append `$deltaToken=latest` to the `delta` function and the response will contain a `deltaLink` and no resource data.
 
 ### State tokens
 
@@ -26,10 +26,10 @@ The `nextLink` URL includes a _skipToken_, and a `deltaLink` URL includes a _del
 These tokens are opaque to the client. The following details are what you need to know about them:
 
 - Each token reflects the state and represents a snapshot of the resource in that round of change tracking.
-- The state tokens also encode and include other query parameters (such as `$select`)
-specified in the initial delta query request. Therefore, it's not required to repeat them in subsequent delta query requests.
-- When carrying out delta query, you can copy and apply the `nextLink` or `deltaLink` URL to the next **delta** function call without having to inspect the contents of the URL, including its state token.
 
+- The state tokens also encode and include other query parameters (such as `$select`) specified in the initial delta query request. Therefore, it's not required to repeat them in subsequent delta query requests.
+
+- When carrying out delta query, you can copy and apply the `nextLink` or `deltaLink` URL to the next **delta** function call without having to inspect the contents of the URL, including its state token.
 
 ### Optional query parameters
 
@@ -44,16 +44,18 @@ For users and groups, there are restrictions on using some query parameters:
 
 ## Resource representation in the delta query response
 
--   Newly created instances of a supported resource are represented in the delta query response using their standard representation.
+- Newly created instances of a supported resource are represented in the delta query response using their standard representation.
 
--   Updated instances are represented by their **id** with *at least* the properties that have been updated, but additional properties may be included.
+- Updated instances are represented by their **id** with *at least* the properties that have been updated, but additional properties may be included.
 
--   Relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`. The annotations are included in the response of the initial delta query request.
+- Relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`. The annotations are included in the response of the initial delta query request.
 
 Removed instances are represented by their **id** and an `@removed` object. The `@removed` object may include additional information about why the instance was removed. For example,  "@removed": {"reason": “changed”}.
 
 Possible @removed reasons can be *changed* or *deleted*.
+
 - *Changed* indicates the item was deleted and can be restored from [deletedItems](../api-reference/beta/resources/directory.md).
+
 - *Deleted* indicates the item is deleted and cannot be restored.
 
 The `@removed` object can be returned in the initial delta query response and in tracked (deltaLink) responses. Clients using delta query requests should be designed to handle these objects in the responses.
@@ -65,7 +67,8 @@ Delta query is currently supported for the following resources.
 | **Resource collection** | **API** |
 |:------ | :------ |
 | Applications (preview) | [delta](../api-reference/beta/api/application_delta.md) function of the [application](../api-reference/beta/resources/application.md) resource (preview) |
-| Directory roles | [delta](../api-reference/beta/api/directoryrole_delta.md) function of the [directoryRole](../api-reference/beta/resources/directoryrole.md) resource (preview) |
+| Directory objects | [delta](../api-reference/beta/api/directoryobject_delta.md) function of the [directoryObjects](../api-reference/beta/resources/directoryobject.md) resource (preview) |
+| Directory roles | [delta](../api-reference/v1.0/api/directoryrole_delta.md) function of the [directoryRole](../api-reference/v1.0/resources/directoryrole.md) resource |
 | Events in a calendar view (date range) of the primary calendar | [delta](../api-reference/v1.0/api/event_delta.md) function of the [event](../api-reference/v1.0/resources/event.md) resource |
 | Groups | [delta](../api-reference/v1.0/api/group_delta.md) function of the [group](../api-reference/v1.0/resources/group.md) resource |
 | Mail folders | [delta](../api-reference/v1.0/api/mailfolder_delta.md) function of the [mailFolder](../api-reference/v1.0/resources/mailFolder.md) resource |
@@ -78,7 +81,7 @@ Delta query is currently supported for the following resources.
 | Planner items\*\* | [delta](../api-reference/beta/api/planneruser_list_delta.md) function of the all segment of [plannerUser](../api-reference/beta/resources/planneruser.md) resource (preview) |
 
 > \* The usage pattern for OneDrive resources is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, see
-[Track changes for a Drive](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta).
+[Track changes for a Drive](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/item_delta).
 
 > \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences.  For details, see [Track changes for Planner](../api-reference/beta/api/planneruser_list_delta.md).
 

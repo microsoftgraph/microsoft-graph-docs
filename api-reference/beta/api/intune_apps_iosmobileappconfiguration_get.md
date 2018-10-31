@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 763
+Content-Length: 831
 
 {
   "value": {
@@ -57,6 +57,9 @@ Content-Length: 763
     "id": "b2c33191-3191-b2c3-9131-c3b29131c3b2",
     "targetedMobileApps": [
       "Targeted Mobile Apps value"
+    ],
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
     ],
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
@@ -75,6 +78,8 @@ Content-Length: 763
   }
 }
 ```
+
+
 
 
 

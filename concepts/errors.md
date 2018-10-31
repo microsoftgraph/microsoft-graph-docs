@@ -64,7 +64,7 @@ named **error**. This object includes all the details of the error. You can use 
 The error resource is returned whenever an error occurs in the processing of a request.
 
 Error responses follow the definition in the
-[OData v4](http://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091)
+[OData v4](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091)
 specification for error responses.
 
 ### JSON representation
@@ -211,7 +211,7 @@ time, so it is important that all apps be able to handle the [basic error codes]
 <!-- ##Additional Resources##
 
 - [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
-- [Hands on lab: Deep dive into the Microsoft Graph API](http://dev.office.com/hands-on-labs/4585) -->
+- [Hands on lab: Deep dive into the Microsoft Graph API](https://dev.office.com/hands-on-labs/4585) -->
 
 <!-- {
   "type": "#page.annotation",

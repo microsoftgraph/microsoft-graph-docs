@@ -12,7 +12,7 @@ The Excel REST API requires you to POST a simple request body to the REST endpoi
 
 `https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add`
 
-For more information about how to reach files in OneDrive folders, see the [DriveItem resource type](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveitem) in our reference documentation.
+For more information about how to reach files in OneDrive folders, see the [DriveItem resource type](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/driveitem) in our reference documentation.
 
 > **Note:** You can look at the existing row collection of the workbook by making a GET request to the part of the path that ends at `/rows`.
 
@@ -29,7 +29,7 @@ The value of the first `index` parameter specifies the relative position of the 
 
 The value of the second `values` parameter is a two-dimensional string array that contains the unformatted values of each row that you want to add. The array in the sample contains only one row, but you can add more rows by adding more string arrays.
 
-You can test this query with your own OneDrive account by uploading the demo.xlsx file to your OneDrive root folder and executing this query on the [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+You can test this query with your own OneDrive account by uploading the demo.xlsx file to your OneDrive root folder and executing this query on the [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 That is all you need to know in order to write data to an Excel workbook. You do need to know how to construct and make the request in your own framework, and the Excel starter samples demonstrate three separate ways of doing this.
 

@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1880
+Content-Length: 2176
 
 {
   "value": [
@@ -89,11 +89,19 @@ Content-Length: 1880
       "qualityUpdatesWillBeRolledBack": true,
       "featureUpdatesWillBeRolledBack": true,
       "qualityUpdatesRollbackStartDateTime": "2016-12-31T23:57:01.05526-08:00",
-      "featureUpdatesRollbackStartDateTime": "2017-01-01T00:03:21.6080517-08:00"
+      "featureUpdatesRollbackStartDateTime": "2017-01-01T00:03:21.6080517-08:00",
+      "engagedRestartDeadlineInDays": 12,
+      "engagedRestartSnoozeScheduleInDays": 2,
+      "engagedRestartTransitionScheduleInDays": 6,
+      "autoRestartNotificationDismissal": "automatic",
+      "scheduleRestartWarningInHours": 13,
+      "scheduleImminentRestartWarningInMinutes": 7
     }
   ]
 }
 ```
+
+
 
 
 

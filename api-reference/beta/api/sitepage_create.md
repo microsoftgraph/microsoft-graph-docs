@@ -66,7 +66,7 @@ Content-Type: application/json
                     },
                     "imageSources": {},
                     "links": {
-                        "baseUrl": "http://www.contoso.com/sites/Engineering"
+                        "baseUrl": "https://www.contoso.com/sites/Engineering"
                     },
                     "componentDependencies": {
                         "layoutComponentId": "8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027"
@@ -149,7 +149,7 @@ Content-type: application/json
                     },
                     "imageSources": {},
                     "links": {
-                        "baseUrl": "http://www.contoso.com/teams/Engineering"
+                        "baseUrl": "https://www.contoso.com/teams/Engineering"
                     },
                     "componentDependencies": {
                         "layoutComponentId": "8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027"

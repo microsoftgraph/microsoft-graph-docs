@@ -68,7 +68,6 @@ Content-Length: 1210
     "version": 7,
     "renewalThresholdPercentage": 10,
     "subjectNameFormat": "commonNameIncludingEmail",
-    "subjectAlternativeNameType": "emailAddress",
     "certificateValidityPeriodValue": 14,
     "certificateValidityPeriodScale": "months",
     "extendedKeyUsages": [
@@ -81,10 +80,13 @@ Content-Length: 1210
     "certificationAuthority": "Certification Authority value",
     "certificationAuthorityName": "Certification Authority Name value",
     "certificateTemplateName": "Certificate Template Name value",
-    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+    "subjectAlternativeNameType": "emailAddress"
   }
 }
 ```
+
+
 
 
 

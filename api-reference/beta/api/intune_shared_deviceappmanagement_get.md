@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 | Delegated (work or school account) | |
-| &nbsp; &nbsp; **Apps**, **books**, or **on-boarding** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
+| &nbsp; &nbsp; **Apps**, **books**, or **onboarding** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
@@ -29,7 +29,7 @@ GET /deviceAppManagement
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 

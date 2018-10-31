@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1314
+Content-Length: 1570
 
 {
   "value": [
@@ -66,7 +66,6 @@ Content-Length: 1314
       "version": 7,
       "renewalThresholdPercentage": 10,
       "subjectNameFormat": "commonNameIncludingEmail",
-      "subjectAlternativeNameType": "emailAddress",
       "certificateValidityPeriodValue": 14,
       "certificateValidityPeriodScale": "months",
       "extendedKeyUsages": [
@@ -83,11 +82,22 @@ Content-Length: 1314
       "keyUsage": "digitalSignature",
       "keySize": "size2048",
       "hashAlgorithm": "sha2",
-      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+      "certificateStore": "machine",
+      "customSubjectAlternativeNames": [
+        {
+          "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+          "sanType": "emailAddress",
+          "name": "Name value"
+        }
+      ],
+      "subjectAlternativeNameType": "emailAddress"
     }
   ]
 }
 ```
+
+
 
 
 

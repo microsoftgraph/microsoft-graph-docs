@@ -68,6 +68,12 @@ The following table shows the properties that are required when you create the [
 |featureUpdatesWillBeRolledBack|Boolean|Specifies whether to rollback Feature Updates on the next device check in|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|Quality Updates Rollback Start datetime|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|Feature Updates Rollback Start datetime|
+|engagedRestartDeadlineInDays|Int32|Deadline in days before automatically scheduling and executing a pending restart outside of active hours, with valid range from 2 to 30 days|
+|engagedRestartSnoozeScheduleInDays|Int32|Number of days a user can snooze Engaged Restart reminder notifications with valid range from 1 to 3 days|
+|engagedRestartTransitionScheduleInDays|Int32|Number of days before transitioning from Auto Restarts scheduled outside of active hours to Engaged Restart, which requires the user to schedule, with valid range from 0 to 30 days|
+|autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune_deviceconfig_autorestartnotificationdismissalmethod.md)|Specify the method by which the auto-restart required notification is dismissed. Possible values are: `notConfigured`, `automatic`, `user`.|
+|scheduleRestartWarningInHours|Int32|Specify the period for auto-restart warning reminder notifications. Supported values: 2, 4, 8, 12 or 24 (hours).|
+|scheduleImminentRestartWarningInMinutes|Int32|Specify the period for auto-restart imminent warning notifications. Supported values: 15, 30 or 60 (minutes).|
 
 
 
@@ -80,7 +86,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1515
+Content-length: 1787
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -116,7 +122,13 @@ Content-length: 1515
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,
   "qualityUpdatesRollbackStartDateTime": "2016-12-31T23:57:01.05526-08:00",
-  "featureUpdatesRollbackStartDateTime": "2017-01-01T00:03:21.6080517-08:00"
+  "featureUpdatesRollbackStartDateTime": "2017-01-01T00:03:21.6080517-08:00",
+  "engagedRestartDeadlineInDays": 12,
+  "engagedRestartSnoozeScheduleInDays": 2,
+  "engagedRestartTransitionScheduleInDays": 6,
+  "autoRestartNotificationDismissal": "automatic",
+  "scheduleRestartWarningInHours": 13,
+  "scheduleImminentRestartWarningInMinutes": 7
 }
 ```
 
@@ -125,7 +137,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1699
+Content-Length: 1971
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -164,9 +176,17 @@ Content-Length: 1699
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,
   "qualityUpdatesRollbackStartDateTime": "2016-12-31T23:57:01.05526-08:00",
-  "featureUpdatesRollbackStartDateTime": "2017-01-01T00:03:21.6080517-08:00"
+  "featureUpdatesRollbackStartDateTime": "2017-01-01T00:03:21.6080517-08:00",
+  "engagedRestartDeadlineInDays": 12,
+  "engagedRestartSnoozeScheduleInDays": 2,
+  "engagedRestartTransitionScheduleInDays": 6,
+  "autoRestartNotificationDismissal": "automatic",
+  "scheduleRestartWarningInHours": 13,
+  "scheduleImminentRestartWarningInMinutes": 7
 }
 ```
+
+
 
 
 

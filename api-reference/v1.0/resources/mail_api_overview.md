@@ -58,6 +58,6 @@ The mail API can open up new ways for you to engage with users:
 
 - [Outlook mail API overview](../../../concepts/outlook-mail-concept-overview.md)
 - Drill down on the [methods](../resources/message.md#methods), [properties](../resources/message.md#properties), and [relationships](../resources/message.md#relationships) of the [message](../resources/message.md) and [mailFolder](../resources/mailfolder.md) resources.
-- Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph/examples#partners).
+Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).

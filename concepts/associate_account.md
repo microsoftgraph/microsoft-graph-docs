@@ -12,7 +12,7 @@ This article shows you how to associate your Office 365 account with Azure AD to
 
 If you don't have an existing Office 365 for business account, you can:
 
-- Sign up for an [Office 365 for business plans](http://products.office.com/en-us/business/compare-office-365-for-business-plans) listed above, or
+- Sign up for an [Office 365 for business plans](https://products.office.com/en-us/business/compare-office-365-for-business-plans) listed above, or
 - [Join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://aka.ms/devprogramsignup).
 
 **Microsoft Azure subscription** 

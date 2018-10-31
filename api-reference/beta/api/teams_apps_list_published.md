@@ -5,7 +5,7 @@ This includes apps from the Microsoft Teams store, as well as apps from your org
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
 >**Note:** Only global administrators can call this API. 
 
@@ -14,6 +14,12 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported|
+
+## HTTP request
+<!-- { "blockType": "ignored" } -->
+```http
+GET /appCatalogs/teamsApps
+```
 
 ## Request headers
 
@@ -47,7 +53,7 @@ Content-Type: application/json
   "value": [
     {
       "id": "b1c5353a-7aca-41b3-830f-27d5218fe0e5",
-      "developerProvidedId": "f31b1263-ba99-435a-a679-911d24850d7c",
+      "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
       "name": "Test App",
       "version": "1.0.1",
       "distributionMethod":"Organization"
@@ -74,7 +80,7 @@ Content-Type: application/json
   "value": [
     {
       "id": "b1c5353a-7aca-41b3-830f-27d5218fe0e5",
-      "developerProvidedId": "f31b1263-ba99-435a-a679-911d24850d7c",
+      "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
       "name": "Test App",
       "version": "1.0.1",
       "distributionMethod":"Organization"

@@ -28,7 +28,9 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 |wifiSecurityType|[wiFiSecurityType](../resources/intune_deviceconfig_wifisecuritytype.md)|Specify the Wifi Security Type. Possible values are: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
+|meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune_deviceconfig_meteredconnectionlimittype.md)|Specify the metered connection limit type for the wifi connection. Possible values are: `unrestricted`, `fixed`, `variable`.|
 |ssid|String|Specify the SSID of the wifi connection.|
 |networkName|String|Specify the network configuration name.|
 |connectAutomatically|Boolean|Specify whether the wifi connection should connect automatically when in range.|
@@ -72,7 +74,9 @@ Here is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "version": 1024,
+  "preSharedKey": "String",
   "wifiSecurityType": "String",
+  "meteredConnectionLimit": "String",
   "ssid": "String",
   "networkName": "String",
   "connectAutomatically": true,
@@ -85,6 +89,8 @@ Here is a JSON representation of the resource.
   "forceFIPSCompliance": true
 }
 ```
+
+
 
 
 

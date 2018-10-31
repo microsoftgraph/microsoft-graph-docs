@@ -25,7 +25,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

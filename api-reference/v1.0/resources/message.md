@@ -61,7 +61,7 @@ by providing a [delta](../api/message_delta.md) function.
 |importance|importance| The importance of the message: `Low`, `Normal`, `High`.|
 |inferenceClassification | inferenceClassificationType | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. The possible values are: `focused` or `other`. |
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | A collection of message headers defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). The set includes message headers indicating the network path taken by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the message. |
-|internetMessageId |String |The message ID in the format specified by [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
+|internetMessageId |String |The message ID in the format specified by [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.|
 |isRead|Boolean|Indicates whether the message has been read.|

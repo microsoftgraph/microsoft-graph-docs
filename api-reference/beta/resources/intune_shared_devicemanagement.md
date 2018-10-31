@@ -2,18 +2,18 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-The deviceManagement resource represents a container whose contents vary according to workflow, including:
+The deviceManagement resource represents a container whose contents vary according to workflow, including:  
+
 - Android for Work settings
 - Auditing events
 - Corporate terms and conditions 
 - Corporate enrollment profiles
 - Device configuration settings
+- Device management
 - Electronic SIM (ESIM)
-- Endpoint protection objects and relationships
 - Fencing
 - Notifications
--Onboarding policies, settings, and details
-- Resource access
+- Onboarding policies, settings, and details
 - Remote access
 - Remote assistance partners
 - Role-based access control (RBAC) policies
@@ -26,6 +26,8 @@ The deviceManagement resource represents a container whose contents vary accordi
 |:---|:---|:---|
 |[Get deviceManagement](../api/intune_shared_devicemanagement_get.md)|Read properties and relationships of the [deviceManagement](../resources/intune_shared_devicemanagement.md) object.|
 |[Update deviceManagement](../api/intune_shared_devicemanagement_update.md)|Update the properties of a [deviceManagement](../resources/intune_shared_devicemanagement.md) object.|
+|**Device configuration**|
+|[enableLegacyPcManagement action](../api/intune_shared_devicemanagement_enablelegacypcmanagement.md)|None|Not yet documented|
 |**Device management**|
 |[sendCustomNotificationToCompanyPortal action](../api/intune_shared_devicemanagement_sendcustomnotificationtocompanyportal.md)|None|Not yet documented|
 |**Onboarding**|
@@ -42,6 +44,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |id|String|Unique identifier associated with the device.|
 |**Device configuration**|
 |intuneAccountId|Guid|Intune Account ID for given tenant|
+|legacyPcManangementEnabled|Boolean|The property to enable Non-MDM managed legacy PC management for this account. This property is read-only.|
 |maximumDepTokens|Int32|Maximum number of DEP tokens allowed per-tenant.|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
 |**Device management**|
@@ -134,6 +137,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |**Troubleshooting**|
 |troubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) collection|The list of troubleshooting events for the tenant.|
 |**Windows Information Protection**|
+|intuneBrandingProfiles|[intuneBrandingProfile](../resources/intune_wip_intunebrandingprofile.md) collection|Intune branding profiles targeted to AAD groups|
 |windowsInformationProtectionAppLearningSummaries|[windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) collection|The windows information protection app learning summaries.|
 |windowsInformationProtectionNetworkLearningSummaries|[windowsInformationProtectionNetworkLearningSummary](../resources/intune_wip_windowsinformationprotectionnetworklearningsummary.md) collection|The windows information protection network learning summaries.|
 

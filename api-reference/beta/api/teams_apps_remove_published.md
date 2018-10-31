@@ -5,7 +5,7 @@ To remove your app from your organization's app catalog, specify `Organization` 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
 >**Note:** Only global administrators can call this API. 
 
@@ -14,6 +14,12 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported|
+
+## HTTP request
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /appCatalogs/teamsApps/{id}
+```
 
 ## Request headers
 
@@ -37,12 +43,12 @@ HTTP/1.1 204 No Content
 
 ### Request
 
-```
+```http
 DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 ```
 
 ### Response
 
-```
+```http
 HTTP/1.1 204 No Content
 ```

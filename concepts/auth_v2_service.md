@@ -58,7 +58,7 @@ You can rely on an administrator to grant the permissions your app needs at the 
 GET https://login.microsoftonline.com/{tenant}/adminconsent
 ?client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 &state=12345
-&redirect_uri=http://localhost/myapp/permissions
+&redirect_uri=https://localhost/myapp/permissions
 ```
 
 | Parameter     | Condition   | Description 
@@ -83,7 +83,7 @@ If the administrator approves the permissions for your application, the successf
 ```
 // Line breaks are for legibility only.
 
-GET http://localhost/myapp/permissions
+GET https://localhost/myapp/permissions
 ?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b95&state=12345
 &admin_consent=True
 ```
@@ -97,7 +97,7 @@ GET http://localhost/myapp/permissions
 
 > **Try**: You can try this for yourself by pasting the following request in a browser. If you sign in as a Global administrator for an Azure AD tenant, you will be presented with the administrator consent dialog box for the app. (This will be a different app than that in the consent dialog box screenshot shown earlier.)
 > 
-> https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&state=12345&redirect_uri=http://localhost/myapp/permissions 
+> https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&state=12345&redirect_uri=https://localhost/myapp/permissions 
 
 ## 4. Get an access token
 

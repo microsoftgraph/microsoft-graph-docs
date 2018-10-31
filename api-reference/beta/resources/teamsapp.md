@@ -6,7 +6,7 @@ An application installed in a [team](team.md).
 Any bots that are part of the app will become part of any team the app is added to.
 
 To find the app ID of an app you want to install, 
-use the [Microsoft Teams client UI](http://teams.microsoft.com) to add that app to a test team, 
+use the [Microsoft Teams client UI](https://teams.microsoft.com) to add that app to a test team, 
 then use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to [List apps](../api/teams_apps_list.md) in that test team.
 
 ## Methods
@@ -25,9 +25,7 @@ then use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) 
 |id			|string      |App id.|
 |name			|string      |Name of the app.|
 |version		|string      |Version of the app.|
-|isBlocked		|bool        |An indication whether the app is blocked by tenant. Note: this property is deprecated and will be removed in the future. It is currently always false. |
-|installedState |[teamsAppInstalledState](../resources/teamsappinstalledstate.md)   |App's install state. Note: this property is deprecated and will be removed in the future. It is currently always "installed".|
-|context		|[teamsAppContext](../resources/teamsappcontext.md)  |Where the app came from. Note: this property will soon be replaced by a property named "distributionMethod" with values "store", "organization", and "sideloaded" |
+|distributionMethod		| string  |Where the app came from, possible values are "store", "organization", and "sideloaded" |
 
 ## JSON representation
 

@@ -475,6 +475,6 @@ For more information about permission scopes and how they work, see [OneNote per
 
 - [Add images and files](onenote_images_files.md)
 - [Integrate with OneNote](integrate_with_onenote.md)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+- [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  

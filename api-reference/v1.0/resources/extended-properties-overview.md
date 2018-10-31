@@ -22,7 +22,7 @@ Or, in the following Office 365 group resources:
 In most common scenarios, you should be able to use open extensions (represented by [openTypeExtension](../resources/opentypeextension.md), formerly known as 
 Office 365 data extensions) to store and access custom data for resource instances in a user's mailbox. Use extended properties only if you
 need to access custom data for Outlook MAPI properties that are not already exposed in the 
-[Microsoft Graph API metadata](http://developer.microsoft.com/en-us/graph/docs/overview/call_api). 
+[Microsoft Graph API metadata](https://developer.microsoft.com/graph/docs/overview/call_api). 
 
 ## Types of extended properties
 
@@ -70,7 +70,7 @@ Use either of the named property formats to define a single-value or multi-value
 Use the proptag format to access properties predefined by MAPI, or by a client or server, and that have not already been exposed in Microsoft Graph. These properties have property identifiers in the 0x0001-0x7fff range. Do not try to define a custom property using the proptag format. 
 
 You can find information about mapping an extended property to an existing MAPI property, such as the property identifier and GUID, 
-in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Property List"](https://msdn.microsoft.com/en-us/library/cc433490%28v=exchg.80%29.aspx).
+in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Property List"](https://msdn.microsoft.com/library/cc433490%28v=exchg.80%29.aspx).
 
 **Note** After you have chosen one format for the **id**, you should access that extended property by only that format.
 

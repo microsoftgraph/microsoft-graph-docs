@@ -523,6 +523,41 @@ The following usages are valid for both delegated and application permissions:
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
+
+
+## Identity Risky User permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _IdentityRiskyUser.Read.All_ |   Read identity user risk  information  | Allows the app to read identity user risk information for all users in your organization on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _IdentityRiskyUser.Read.All_ |   Read identity user risk  information | Allows the app to read identity user risk information for all users in your organization without a signed-in user. | Yes |
+
+
+### Remarks
+
+_IdentityRiskyUser.Read.All_ is valid only for work or school accounts. For an app with delegated permissions to read identity user risk information, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, or Security Reader. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+
+### Example usage
+
+#### Delegated and Application
+
+The following usages are valid for both delegated and application permissions:
+
+* Read all risky users and properties in the tenant (`GET /beta/riskyUsers`)
+* Read all risky users whose aggregate risk level is Medium (`GET /beta/riskyUsers?$filter=risk/riskLevelAggregated eq microsoft.graph.riskLevel'medium'`)
+* Read the risk information for a specific user (`GET /beta/riskyUsers/$filter=id eq ‘{userObjectId}’`)
+ 
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
 ## Intune Device Management permissions
 
 #### Delegated permissions

@@ -44,7 +44,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 You can use the `$expand` query parameter on the **mentions** navigation property to get a message with the details 
 of each [mention](../resources/mention.md) in the message expanded.

@@ -4,7 +4,7 @@
 
 > To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure portal](https://aka.ms/aadapplist). For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
-This article describes the tasks required to get an access token from the [Azure AD v2.0 endpoint](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) and call Microsoft Graph. It walks you through the code inside the [Office 365 Connect Sample for iOS (REST)](https://github.com/microsoftgraph/ios-swift-connect-rest-sample) to explain the main concepts that you implement in an app that uses Microsoft Graph. It describes how to access Microsoft Graph by using REST operations in an asynchronous **Promise chain** pattern.  Promises in the sample are implemented by using the [mxcl/PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/README.md) CocoaPod. 
+This article describes the tasks required to get an access token from the [Azure AD v2.0 endpoint](https://developer.microsoft.com/graph/docs/concepts/converged_auth) and call Microsoft Graph. It walks you through the code inside the [Office 365 Connect Sample for iOS (REST)](https://github.com/microsoftgraph/ios-swift-connect-rest-sample) to explain the main concepts that you implement in an app that uses Microsoft Graph. It describes how to access Microsoft Graph by using REST operations in an asynchronous **Promise chain** pattern.  Promises in the sample are implemented by using the [mxcl/PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/README.md) CocoaPod. 
 
 The sample was created using **XCode 9.2** and **Swift 3.2**.
 
@@ -19,7 +19,7 @@ The following image shows the app you'll create.
 
 The workflow authenticates and authorizes the sample to access  Microsoft Graph resources, signs in with your work or personal account, and finally sends a mail to a recipient.
 
-**Don't feel like building an app?** Use the [Microsoft Graph quick start](https://developer.microsoft.com/en-us/graph/quick-start) to get up and running fast.
+**Don't feel like building an app?** Use the [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start) to get up and running fast.
 
 ## Prerequisites
 
@@ -314,7 +314,7 @@ The code we'll work with here is in the class **SendMailViewController_WithPromi
                     return reject(HTTPError.InvalidRequest)
                 }
                 //data can be serialized to a DriveItem object
-                //https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveitem
+                //https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/driveitem
                 var itemId: String = "";
                 if let responseContent = data {
                     itemId = self.getValueFromResponse(json: responseContent, key: "id" )
@@ -351,7 +351,7 @@ The code we'll work with here is in the class **SendMailViewController_WithPromi
                             return reject(HTTPError.InvalidRequest)
                         }
                         //data can be serialized to a DriveItem object
-                        //https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveitem
+                        //https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/driveitem
                         var sharingLink: String = "";
                         if let responseContent = data {
                             do {
@@ -482,7 +482,7 @@ The service calls used in this project, sending a mail to your mail account and 
 3. Choose the **Send email** button. When the mail is sent, a success message is displayed below the button.
 
 ## Next steps
-- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Try out the REST API using the [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Find examples of common operations for SDK operations in the [Microsoft Graph iOS Objective C Snippets Sample](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).
 
 ## See also

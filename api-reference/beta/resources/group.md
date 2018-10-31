@@ -112,7 +112,18 @@ This resource supports:
 |securityEnabled|Boolean|Specifies whether the group is a security group. If the **mailEnabled** property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be **false** for Office 365 groups. Supports $filter.|
 |theme|String|Specifies an Office 365 group's color theme. Possible values are **Teal**, **Purple**, **Green**, **Blue**, **Pink**, **Orange** or **Red**.|
 |unseenCount|Int32|Count of posts that the current  user has not seen since his last visit.|
-|visibility|String| Specifies the visibility of an Office 365 group. Possible values are: **Private**, **Public**, **HiddenMembership**, or empty (which is interpreted as **Public**).|
+|visibility|String| Specifies the visibility of an Office 365 group. Possible values are: `private`, `public`, or `hiddenmembership`; blank values are treated as public.  See [Group visibility options](#group-visibility-options) to learn more.<br>Visibility can be set only when a group is created; it is not editable.<br>Visibility is supported only for unified groups; it is not supported for security groups.|
+
+### Group visibility options
+
+Here's what each **visibility** property value means:
+ 
+|Value|Description|
+|:----|-----------|
+| `public` | Anyone can join the group without needing owner permission.<br>Anyone can view the contents of the group.|
+| `private` | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.|
+| `hiddenmembership` | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.<br>Non-members cannot see the members of the group.<br>Administrators (global, company, user, and helpdesk) can view the membership of the group.<br>The group appears in the global address book (GAL).|
+
 
 ## Relationships
 | Relationship | Type	|Description|

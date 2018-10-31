@@ -51,8 +51,8 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|**Device configuration**|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|**Device configuration**|
 |activeDirectoryDomainName|String|Active Directory domain name to join.|
 |computerNameStaticPrefix|String|Fixed prefix to be used for computer name.|
 |computerNameSuffixRandomCharCount|Int32|Dynamically generated characters used as suffix for computer name. Valid values 3 to 14|

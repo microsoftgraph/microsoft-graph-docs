@@ -144,7 +144,7 @@ Authorization: Bearer {token}
       <li data-tag="to-do-priority-1:completed">Make a to-do list</li>
     </ul>
     <p><b>Note tag on an image:</b></p>
-    <img data-tag="source-for-article" src="http://placecorgi.com/200" />
+    <img data-tag="source-for-article" src="https://placecorgi.com/200" />
     <p><b>Note tag with embedded style:</b></p>
     <p data-tag="important">Next time, <b>don't</b> forget to invite <span style="background-color:yellow">Dan</span>.</p>
   </body>
@@ -324,9 +324,9 @@ For more information about permission scopes and how they work, see [OneNote per
 - [Create OneNote pages](onenote-create-page.md)
 - [Update OneNote page content](onenote_update_page.md)
 - [Integrate with OneNote](integrate_with_onenote.md)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+- [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
  
 
 

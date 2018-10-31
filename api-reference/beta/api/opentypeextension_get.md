@@ -103,7 +103,7 @@ instances or collections supports getting open extensions from them in a similar
 
 ## Optional query parameters
 
-Make sure you apply [URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.
+Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.
 
 |**Name**|**Value**|**Description**|
 |:---------------|:--------|:-------|

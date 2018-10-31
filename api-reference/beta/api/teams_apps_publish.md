@@ -1,11 +1,12 @@
 # Publish apps to your organization's app catalog
 
 Publish an [app](../resources/teamscatalogapp.md) to the Microsoft Teams apps catalog. 
-Specifically, this API publishes the app to your organization's catalog (the tenant app catalog). To publish to your organization's app catalog, specify `Organization` as the `distributionMethod` in the  [teamsCatalogApp](../resources/teamscatalogapp.md) resource.
+Specifically, this API publishes the app to your organization's catalog (the tenant app catalog); 
+the created resource will have `distributionMethod` = `organization`.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
 >**Note:** Only global administrators can call this API. 
 
@@ -14,6 +15,12 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported|
+
+## HTTP request
+<!-- { "blockType": "ignored" } -->
+```http
+POST /appCatalogs/teamsApps
+```
 
 ## Request headers
 
@@ -36,7 +43,7 @@ If successful, this method returns a `200 OK` response code and a [teamsCatalogA
 
 ### Request
 
-```
+```http
 POST https://graph.microsoft.com/beta/appCatalogs/teamsApps
 Content-type: application/zip
 Content-length: 244
@@ -54,7 +61,7 @@ Content-Type: application/json
 
 {
   "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
-  "developerProvidedId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
+  "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
   "name": "Test App",
   "version": "1.0.0",
   "distributionMethod": "Tenant"
