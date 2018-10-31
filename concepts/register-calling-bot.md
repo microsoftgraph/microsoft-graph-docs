@@ -41,7 +41,7 @@ You can also add permissions by accessing your app through the [Microsoft App Re
 
 An administrator can either consent to these permissions using the [Azure portal](https://portal.azure.com) when your app is installed in their organization, or you can provide a sign-up experience in your app through which administrators can consent to the permissions you configured. Once administrator consent is recorded by Azure AD, your app can request tokens without having to request consent again.
 
-You can rely on an administrator to grant the permissions your app needs at the [Azure portal](https://portal.azure.com), but often a better option is to provide a sign-up experience for administrators by using the Azure AD v2.0 `/adminconsent` endpoint.  Please refer to the [instructions on constructing an Admin Consent URL](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service#3-get-administrator-consent) for more detail.
+You can rely on an administrator to grant the permissions your app needs at the [Azure portal](https://portal.azure.com), but often a better option is to provide a sign-up experience for administrators by using the Azure AD v2.0 `/adminconsent` endpoint.  Please refer to the [instructions on constructing an Admin Consent URL](https://developer.microsoft.com/graph/docs/concepts/auth_v2_service#3-get-administrator-consent) for more detail.
 
 > **Note**: Constructing the Tenant Admin Consent URL requires a configured Redirect URI/Reply URL in the [App Registration Portal](https://apps.dev.microsoft.com/). To add reply URLs for your bot, access your bot registration, choose Advanced Options > Edit Application Manifest.  Add your Redirect URI to the field replyURLs.
 
@@ -49,7 +49,7 @@ You can rely on an administrator to grant the permissions your app needs at the 
 
 ## Register bot in Microsoft Teams
 
-The code samples can be used in combination with a Teams App Manifest settings to add the Calling and Video buttons for a 1:1 bot interaction.  To develop calling bot, add 'supportsCalling' and 'supportsVideo' boolean properties to the bots section in the app manifest and the bot is all set to receive calls once installed (either to a personal context or a team).  App Manifests can be uploaded through the [App Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio) in the Microsoft Teams client.
+The code samples can be used in combination with a Microsoft Teams App Manifest settings to add the Calling and Video buttons for a 1:1 bot interaction.  To develop calling bot, add 'supportsCalling' and 'supportsVideo' boolean properties to the bots section in the app manifest and the bot is all set to receive calls once installed (either to a personal context or a team).  App Manifests can be uploaded through the [App Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio) in the Microsoft Teams client.
 
 ```json
 {

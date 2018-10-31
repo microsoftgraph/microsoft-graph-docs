@@ -64,7 +64,7 @@ When the bot answers an incoming call, or joins a new or existing call, it needs
 
 ### Service-hosted media
 
-Bots can manage the workflow and offload audio processing to the Microsoft Real-time Media Platform. With service-hosted media, you have serveral options to implement and host your bot. Consider using one of the available [SDKs](https://developer.microsoft.com/graph/code-samples-and-sdks). A service-hosted media bot  can be implemented as a stateless service as it does not process media locally.
+Bots can manage the workflow and offload audio processing to the Microsoft Real-time Media Platform. With service-hosted media, you have serveral options to implement and host your bot. Consider using one of the available [SDKs](https://developer.microsoft.com/graph/code-samples-and-sdks). A service-hosted media bot can be implemented as a stateless service as it does not process media locally.
 
 | Method                                                        | Description                                             |
 |:--------------------------------------------------------------|:--------------------------------------------------------|
@@ -83,6 +83,10 @@ The Media SDK allows the bot to send and receive audio, video, and video-based s
 
 > **Note:** You may not use the Microsoft.Graph.Calls.Media API to record or otherwise persist media content from calls or meetings that your bot accesses.
 
+## Samples
+
+Samples are hosted in [microsoft-graph-comms-samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples) GitHub.
+
 ## Testing
 
 Bots can be tested locally using tunneling services like [Ngrok](https://ngrok.com) following some setup. See [testing](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/calling-testing.md) to learn more.
@@ -91,9 +95,4 @@ Bots can be tested locally using tunneling services like [Ngrok](https://ngrok.c
 
 The following are known issues with the calls and online meetings API:
 
-- Case mismatch in payloads - Payloads returned in notifications and responses contain incorrect capitalization of odata.types. They are returned in upper camel case instead of lower camel case. Enums sent in requests need to be in upper camel case.
 - Navigation path `/applications/{id}` is not supported - Navigating through the global applications node to the application, even your own, is not allowed. Please use the `/app` navigation only.
-
-## See also
-
-[Calls and online meetings API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/).
