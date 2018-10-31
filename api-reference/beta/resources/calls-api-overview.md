@@ -87,12 +87,8 @@ The Media SDK allows the bot to send and receive audio, video, and video-based s
 
 Bots can be tested locally using tunneling services like [Ngrok](https://ngrok.com) following some setup. See [testing](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/calling-testing.md) to learn more.
 
-## Known issues
-
-The following are known issues with the calls and online meetings API:
-
-- Navigation path `/applications/{id}` is not supported - Navigating through the global applications node to the application, even your own, is not allowed. Please use the `/app` navigation only.
-
 ## See also
 
-[Calls and online meetings API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/).
+[Calls and online meetings API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
+
+[Known issues](../../../concepts/known_issues.md#Calls-and-online-meetings)

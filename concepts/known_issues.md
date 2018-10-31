@@ -158,6 +158,12 @@ Currently, there is partial support for a calendar based on an Internet Calendar
 
 Currently, the **onlineMeetingUrl** property of a Skype meeting [event](../api-reference/v1.0/resources/event.md) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
 
+## Calls and online meetings
+
+> **Note** Calling and online meetings are currently in preview and are available only in the Microsoft Graph beta endpoint.
+
+- Navigation path `/applications/{id}` is not supported. Navigating through the global applications node to the application, even your own, is not allowed. Please use the `/app` navigation only.
+
 ## Contacts
 
 ### Organization contacts available in only beta
