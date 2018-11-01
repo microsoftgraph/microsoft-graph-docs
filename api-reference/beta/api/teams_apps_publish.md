@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Publish apps to your organization's app catalog
 
 Publish an [app](../resources/teamscatalogapp.md) to the Microsoft Teams apps catalog. 

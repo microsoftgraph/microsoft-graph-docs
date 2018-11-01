@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Add directory role member
 
 Use this API to create a new directory role member.

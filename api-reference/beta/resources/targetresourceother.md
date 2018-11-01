@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # targetResourceOther resource type
 Indicates information on a target that doesn't fall into the rest of target resource categories like User, App, Role, Group, Key. Derived from the [targetResource](targetresource.md) resource.
 

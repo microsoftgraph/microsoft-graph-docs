@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Open the OneNote client
 
 You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook. 

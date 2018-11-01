@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 --- 
 title: Get agedAccountsReceivable 
 description: Gets an aged accounts receivable object in Dynamics 365 Business Central.

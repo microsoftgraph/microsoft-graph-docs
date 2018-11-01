@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Create items 
 description: Creates an item object in Dynamics 365 Business Central.
 services: project-madeira

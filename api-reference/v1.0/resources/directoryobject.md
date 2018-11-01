@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # directoryObject resource type
 
 Represents an Azure Active Directory object. The **directoryObject** type is the base type for many other directory entity types.

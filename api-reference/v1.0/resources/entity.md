@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # entity resource type
 
 ## Properties

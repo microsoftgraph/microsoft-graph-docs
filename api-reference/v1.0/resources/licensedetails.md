@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # licenseDetails resource type
 
 Contains information about a license assigned to a user.

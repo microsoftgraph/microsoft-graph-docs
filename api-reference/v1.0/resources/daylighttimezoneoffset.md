@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # daylightTimeZoneOffset resource type
 
 Specifies when a time zone switches from standard time to daylight saving time.

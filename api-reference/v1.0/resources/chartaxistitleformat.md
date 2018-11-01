@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartAxisTitleFormat resource type
 
 Represents the chart axis title formatting.

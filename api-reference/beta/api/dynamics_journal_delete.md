@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Delete journals 
 description: Deletes a journal object in Dynamics 365 Business Central.
 services: project-madeira

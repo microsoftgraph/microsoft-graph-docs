@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # personType resource type
 
 Represents the type of person.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # Contract resource type
 Represents an existing partnership that the partner tenant has with a customer tenant.
 

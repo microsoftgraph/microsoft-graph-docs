@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # contact: delta
 
 Get a set of contacts that have been added, deleted, or updated in a specified folder.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartLegendFormat resource type
 
 Encapsulates the format properties of a chart legend.

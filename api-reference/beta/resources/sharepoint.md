@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Working with SharePoint sites in Microsoft Graph
 
 The SharePoint API in Microsoft Graph supports the following core scenarios:

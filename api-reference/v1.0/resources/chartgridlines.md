@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartGridlines resource type
 
 Represents major or minor gridlines on a chart axis.

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Delete countriesRegions 
 description: Deletes a countries/regions object in Dynamics 365 Business Central.
 services: project-madeira

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update chartaxis
 
 Update the properties of chartaxis object.

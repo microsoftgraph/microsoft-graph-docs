@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # message resource type
 
 A message in a mailFolder.

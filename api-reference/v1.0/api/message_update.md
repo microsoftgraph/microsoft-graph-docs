@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update message
 
 Update the properties of message object.

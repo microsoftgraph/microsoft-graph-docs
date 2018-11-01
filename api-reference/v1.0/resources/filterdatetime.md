@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # FilterDatetime resource type
 
 Represents how to filter a date when filtering on values.

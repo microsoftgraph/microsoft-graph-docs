@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get retainedEarningsStatement 
 description: Gets a retained earnings statement object in Dynamics 365 Business Central.
 services: project-madeira

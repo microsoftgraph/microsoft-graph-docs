@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # patchContentCommand resource type
 
 The changes to make to a OneNote page in a PATCH request.

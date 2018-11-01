@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update subscription
 
 Renew a subscription by extending its expiry time.

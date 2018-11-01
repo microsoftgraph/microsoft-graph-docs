@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # educationUser resource type
 
 A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint.

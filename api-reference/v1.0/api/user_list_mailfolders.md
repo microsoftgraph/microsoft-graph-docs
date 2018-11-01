@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List mailFolders
 
 Get the mail folder collection under the root folder of the signed-in user. 

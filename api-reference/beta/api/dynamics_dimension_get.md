@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get dimensions 
 description: Gets a dimension object in Dynamics 365 Business Central.
 services: project-madeira

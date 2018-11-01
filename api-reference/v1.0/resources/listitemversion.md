@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ListItemVersion resource type
 
 The **listItemVersion** resource represents a previous version of a [ListItem](listitem.md) resource.

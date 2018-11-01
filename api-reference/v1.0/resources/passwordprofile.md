@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # passwordProfile resource type
 
 Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # user: getMemberGroups
 
 Return all the groups that the user is a member of. The check is transitive, unlike reading the

@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Update a range format in Excel with Microsoft Graph
 
 The following examples demonstrate how to update properties of the [RangeFormat](../api-reference/v1.0/resources/rangeformat.md), [RangeFill](../api-reference/v1.0/resources/rangefill.md), and [RangeFont](../api-reference/v1.0/resources/rangefont.md) properties of a specified range.

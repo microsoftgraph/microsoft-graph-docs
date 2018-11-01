@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Use the Outlook mail REST API
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.

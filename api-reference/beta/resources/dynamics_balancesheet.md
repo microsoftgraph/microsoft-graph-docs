@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: balanceSheet resource type 
 description: A balance sheet in Dynamics 365 Business Central.
 services: project-madeira

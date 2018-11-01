@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # yammerDeviceUsageUserDetail resource type
 
 ## Properties

@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: irs1099Codes resource type 
 description: An IRS 1099 Code object in Dynamics 365 Business Central.
 services: project-madeira

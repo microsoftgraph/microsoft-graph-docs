@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update rangeborder
 
 Update the properties of rangeborder object.

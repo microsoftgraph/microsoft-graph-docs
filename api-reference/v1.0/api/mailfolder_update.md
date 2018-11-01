@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update mailfolder
 
 Update the properties of mailfolder object.

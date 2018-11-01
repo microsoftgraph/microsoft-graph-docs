@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # event resource type
 
 An event in a calendar.

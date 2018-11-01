@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getTeamsDeviceUsageUserDetail
 
 Get details about Microsoft Teams device usage by user.

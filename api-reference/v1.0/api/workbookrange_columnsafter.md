@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # workbookRange: columnsAfter
 
 Gets a certain number of columns to the right of the given range.

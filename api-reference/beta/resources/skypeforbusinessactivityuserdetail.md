@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # skypeForBusinessActivityUserDetail resource type
 
 ## Properties

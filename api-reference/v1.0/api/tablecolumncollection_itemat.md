@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # TableColumnCollection: ItemAt
 
 Gets a column based on its position in the collection.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # OneNoteResource resource type
 
 An image or other file resource on a OneNote page. 

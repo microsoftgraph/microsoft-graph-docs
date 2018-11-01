@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getOneDriveActivityUserCounts
 
 Get the trend in the number of active OneDrive users.

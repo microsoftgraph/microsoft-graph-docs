@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: companyInformation resource type 
 description: Company information in Dynamics 365 Business Central.
 services: project-madeira

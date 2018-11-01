@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # website resource type
 
 Represents a website.

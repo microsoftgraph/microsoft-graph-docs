@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get conversation thread
 Get a [thread](../resources/conversationthread.md) object.
 

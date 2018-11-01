@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get paymentMethods 
 description: Gets a payment method object in Dynamics 365 Business Central.
 services: project-madeira

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create Outlook category
 
 

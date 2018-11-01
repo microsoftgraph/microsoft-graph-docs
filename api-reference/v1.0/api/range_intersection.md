@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Range: Intersection
 
 Gets the range object that represents the rectangular intersection of the given ranges.

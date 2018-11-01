@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Get incremental changes for users
 
 [Delta query](./delta_query_overview.md) lets you query for additions, deletions, or updates to users, by way of a series of [delta](../api-reference/v1.0/api/user_delta.md) function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes.

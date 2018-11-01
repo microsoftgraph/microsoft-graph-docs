@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List TableColumnCollection
 
 Retrieve a list of tablecolumn objects.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List educationClasses
 
 Retrieve a list of classes owned by a school.

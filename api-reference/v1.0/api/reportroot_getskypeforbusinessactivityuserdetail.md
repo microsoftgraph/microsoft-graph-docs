@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getSkypeForBusinessActivityUserDetail
 
 Get details about Skype for Business activity by user.

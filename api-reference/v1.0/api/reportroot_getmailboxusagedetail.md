@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getMailboxUsageDetail
 
 Get details about mailbox usage.

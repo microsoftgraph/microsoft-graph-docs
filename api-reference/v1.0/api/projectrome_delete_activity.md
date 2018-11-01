@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete an activity
 
 Delete an existing user activity for your app.

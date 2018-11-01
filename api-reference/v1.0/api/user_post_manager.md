@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Assign a manager
 
 Use this API to assign a user's manager.

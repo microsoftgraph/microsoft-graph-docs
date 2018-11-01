@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getMailboxUsageStorage
 
 Get the amount of storage used in your organization.

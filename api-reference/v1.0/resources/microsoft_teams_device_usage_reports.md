@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Microsoft Teams device usage reports
 
 Use the Microsoft Teams device usage reports to get information about Microsoft Teams device usage in your organization.

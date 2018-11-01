@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Table: Range
 
 Gets the range object associated with the entire table.

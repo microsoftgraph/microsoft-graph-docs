@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get a DriveItemVersion resource
 
 Retrieve the metadata for a specific version of a [DriveItem](../resources/driveitem.md).

@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # iOS samples for the Microsoft Graph API
 This article introduces two iOS samples that authenticate a user against Office 365 or Managed Service Accounts (MSA) such as consumer Outlook users. Both samples send an email through the Outlook service but one of the samples extends the feature by getting the user's profile photo and sending it in the body of the email
 

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # RangeFill resource type
 
 Represents the background of a range object.

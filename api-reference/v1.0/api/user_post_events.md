@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create Event
 
 Create an [event](../resources/event.md) in the user's default calendar or specified calendar.

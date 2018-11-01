@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # timeZoneBase resource type
 
 The basic representation of a time zone.

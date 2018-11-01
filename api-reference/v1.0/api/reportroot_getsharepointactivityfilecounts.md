@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getSharePointActivityFileCounts
 
 Get the number of unique, licensed users who interacted with files stored on SharePoint sites.

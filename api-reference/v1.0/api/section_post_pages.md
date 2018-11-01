@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create page
 
 Create a new [page](../resources/page.md) in the specified section.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create Event
 
 Use this API to create a new Event in the default or the specified calendar.

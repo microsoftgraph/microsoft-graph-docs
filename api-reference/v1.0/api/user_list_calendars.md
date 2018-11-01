@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List calendars
 
 Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group. 

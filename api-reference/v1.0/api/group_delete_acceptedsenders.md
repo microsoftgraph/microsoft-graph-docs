@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Remove acceptedSender
 Remove a user or group from the acceptedSenders list. 
 

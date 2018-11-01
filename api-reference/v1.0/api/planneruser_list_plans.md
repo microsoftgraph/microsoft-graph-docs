@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List plans
 
 Retrieve a list of **plannerplan** objects shared with a [user](../resources/user.md) object.

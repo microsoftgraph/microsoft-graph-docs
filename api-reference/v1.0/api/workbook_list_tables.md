@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List tables
 
 Retrieve a list of table objects.

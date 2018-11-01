@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List registeredDevices
 
 Get the list of user's registered devices.

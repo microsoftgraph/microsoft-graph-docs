@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update domain
 
 Update the properties of domain object.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # office365ActiveUserDetail resource type
 
 ## Properties

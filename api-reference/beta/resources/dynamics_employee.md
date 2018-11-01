@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: employees resource type 
 description: An employee object in Dynamics 365 Business Central.
 services: project-madeira

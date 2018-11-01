@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create Chart
 
 Use this API to create a new Chart.

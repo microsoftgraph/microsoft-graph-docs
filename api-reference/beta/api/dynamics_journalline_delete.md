@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Delete journalLines 
 description: Deletes a journal line in Dynamics 365 Business Central.
 services: project-madeira

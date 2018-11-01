@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List contracts
 
 Retrieve a list of [contract](../resources/contract.md) objects associated to a partner tenant.

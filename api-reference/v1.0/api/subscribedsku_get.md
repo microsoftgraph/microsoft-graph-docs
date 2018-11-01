@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get subscribedSku
 Retrieve a specific commercial subscription that an organization has acquired.
 

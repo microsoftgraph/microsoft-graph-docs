@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # signIn resource type
 This resource details user or application sign-in activity in your directory. 
 

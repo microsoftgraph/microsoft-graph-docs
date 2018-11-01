@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # mailFolder: delta
 
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.

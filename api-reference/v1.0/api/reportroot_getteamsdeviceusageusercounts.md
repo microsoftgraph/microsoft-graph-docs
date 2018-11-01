@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getTeamsDeviceUsageUserCounts
 
 Get the number of Microsoft Teams daily unique users by device type.

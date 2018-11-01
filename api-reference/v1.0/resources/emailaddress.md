@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # emailAddress resource type
 
 The name and email address of a contact or message recipient.

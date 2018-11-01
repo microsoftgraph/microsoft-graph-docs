@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create schemaExtension
 
 Create a new [schemaExtension](../resources/schemaextension.md) definition to extend a [supporting resource type](../../../concepts/extensibility_overview.md#supported-resources).

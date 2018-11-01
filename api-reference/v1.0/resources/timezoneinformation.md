@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # timeZoneInformation resource type
 
 

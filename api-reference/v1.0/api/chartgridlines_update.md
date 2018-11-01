@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update chartgridlines
 
 Update the properties of chartgridlines object.

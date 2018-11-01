@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List serviceConfigurationRecords
 
 Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects needed to enable services for the domain.

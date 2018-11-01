@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: agedAccountsPayable resource type 
 description: An aged accounts payable object in Dynamics 365 Business Central.
 services: project-madeira

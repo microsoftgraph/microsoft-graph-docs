@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update plannertask
 
 Update the properties of **plannertask** object.

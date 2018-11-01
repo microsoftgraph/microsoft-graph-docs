@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Delete unitsOfMeasure 
 description: Deletes a unit of measure object in Dynamics 365 Business Central. 
 services: project-madeira

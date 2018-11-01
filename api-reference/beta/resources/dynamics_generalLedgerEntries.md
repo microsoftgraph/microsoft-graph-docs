@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: generalLedgerEntries resource type 
 description: A general ledger entry in Dynamics 365 Business Central.
 services: project-madeira

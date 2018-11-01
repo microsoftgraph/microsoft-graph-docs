@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # automaticRepliesMailTips resource type
 
 

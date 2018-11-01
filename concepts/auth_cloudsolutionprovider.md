@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Call Microsoft Graph from a Cloud Solution Provider application
 
 > **Note:** This topic applies **only** to Microsoft Cloud Solution Provider (CSP) application developers. The [Microsoft Cloud Solution Provider (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) program enables Microsoft’s partners to resell and manage Microsoft Online services to customers.

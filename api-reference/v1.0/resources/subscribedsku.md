@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # subscribedSku resource type
 
 Contains information about a service SKU that a company is subscribed to.

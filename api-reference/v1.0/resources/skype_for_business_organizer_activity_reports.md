@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Skype for Business organizer activity reports
 
 You can use the Skype for Business organizer activity reports to get details on organized conferences activity across your organization. These details are very helpful when you are investigating, planning, and making other business decisions for your organization.

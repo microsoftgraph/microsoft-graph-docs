@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # workbookRange: columnsBefore
 
 Gets a certain number of columns to the left of the given range.

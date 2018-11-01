@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # internetMessageHeader resource type
 
 

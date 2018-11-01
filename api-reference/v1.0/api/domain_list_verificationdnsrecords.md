@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List verificationDnsRecords
 
 Retrieve a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects.

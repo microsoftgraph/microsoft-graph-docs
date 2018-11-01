@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update nameditem
 
 Update the properties of nameditem object.

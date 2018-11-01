@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create educationClass
 
 Create a new class. This will also create a universal group. When you use this API to create a class, it will add special properties to the group, which will

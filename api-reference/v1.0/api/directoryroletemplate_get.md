@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get directoryRoleTemplate
 
 Retrieve the properties and relationships of a directoryroletemplate object.

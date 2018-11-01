@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # office365ServicesUserCounts resource type
 
 ## Properties

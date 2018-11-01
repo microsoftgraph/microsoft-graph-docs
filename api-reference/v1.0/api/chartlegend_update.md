@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update chartlegend
 
 Update the properties of chartlegend object.

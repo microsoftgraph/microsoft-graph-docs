@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List contactFolders
 
 Get the contact folder collection in the default Contacts folder of the signed-in user.

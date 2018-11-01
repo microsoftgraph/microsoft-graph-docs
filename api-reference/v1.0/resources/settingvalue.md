@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # settingValue resource type
 
 A setting represented by a name/value pair.

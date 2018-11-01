@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # mailTipsError resource type
 
 An error that occurs during an action.

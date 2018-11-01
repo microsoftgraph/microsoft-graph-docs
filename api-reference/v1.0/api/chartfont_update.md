@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update chartfont
 
 Update the properties of chartfont object.

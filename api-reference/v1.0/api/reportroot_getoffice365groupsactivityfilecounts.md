@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getOffice365GroupsActivityFileCounts
 
 Get the total number of files and how many of them were active across all group sites associated with an Office 365 Group.

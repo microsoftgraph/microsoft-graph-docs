@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Error codes for OneNote APIs in Microsoft Graph
 
 This article describes error codes that are returned by the OneNote APIs in Microsoft Graph whenever a request sent through the API fails.

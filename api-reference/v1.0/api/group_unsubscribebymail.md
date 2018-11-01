@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # group: unsubscribeByMail
 Calling this method will prevent the current user from receiving email notifications for this group about new posts, events, and files in that group. Supported for Office 365 groups only. 
 

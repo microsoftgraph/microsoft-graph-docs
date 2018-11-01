@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update group
 
 Update the properties of a group object.

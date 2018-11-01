@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartFill resource type
 
 Represents the fill formatting for a chart element.

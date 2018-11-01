@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Add educationClass to educationSchool
 
 Add a class to a school.

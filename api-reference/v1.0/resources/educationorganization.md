@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # educationOrganization resource type
 
 Abstract entity used to model the commonality between different organization types within the education sector.

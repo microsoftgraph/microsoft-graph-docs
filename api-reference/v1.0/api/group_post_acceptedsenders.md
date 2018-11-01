@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create acceptedSender
 Add a new user or group to the acceptedSender list.
 

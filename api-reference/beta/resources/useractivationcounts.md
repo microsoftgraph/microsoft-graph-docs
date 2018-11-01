@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # userActivationCounts resource type
 
 ## Properties

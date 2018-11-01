@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # SortField resource type
 
 Represents a condition in a sorting operation.

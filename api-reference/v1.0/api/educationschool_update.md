@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update educationschool properties
 
 Update the properties of a school object.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get plannerBucket
 
 Retrieve the properties and relationships of **plannerBucket** object.

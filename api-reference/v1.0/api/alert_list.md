@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List alerts
 
 Retrieve a list of [alert](../resources/alert.md) objects.

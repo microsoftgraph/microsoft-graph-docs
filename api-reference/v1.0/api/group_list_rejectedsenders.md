@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List rejectedSenders
 Get a list of users or groups that are in the rejectedSenders list for this group. 
 

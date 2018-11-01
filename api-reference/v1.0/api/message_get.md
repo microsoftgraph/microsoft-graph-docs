@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get message
 
 Retrieve the properties and relationships of a [message](../resources/message.md) object.

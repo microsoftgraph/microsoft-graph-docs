@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List rules
 
 Get all the [messageRule](../resources/messagerule.md) objects defined for the user's Inbox.

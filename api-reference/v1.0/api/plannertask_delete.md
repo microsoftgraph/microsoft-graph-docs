@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete plannerTask
 
 Delete **plannerTask**.

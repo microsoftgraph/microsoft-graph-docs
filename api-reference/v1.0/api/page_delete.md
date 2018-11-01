@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete page
 
 Delete a OneNote page.

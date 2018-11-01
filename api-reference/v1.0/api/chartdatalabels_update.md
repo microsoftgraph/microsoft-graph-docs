@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update chartdatalabels
 
 Update the properties of chartdatalabels object.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete device
 
 Delete a registered device.

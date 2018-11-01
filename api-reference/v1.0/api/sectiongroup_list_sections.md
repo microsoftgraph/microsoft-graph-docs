@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List sections
 
 Retrieve a list of [onenoteSection](../resources/section.md) objects from the specified section group.

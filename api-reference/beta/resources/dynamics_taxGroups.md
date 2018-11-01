@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: taxGroups resource type 
 description: A tax group object in Dynamics 365 Business Central. 
 services: project-madeira

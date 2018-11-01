@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get TableColumn
 
 Retrieve the properties and relationships of tablecolumn object.

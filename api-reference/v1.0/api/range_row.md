@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Range: Row
 
 Gets a row contained in the range.

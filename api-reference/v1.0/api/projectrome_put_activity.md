@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create or replace an activity
 
 Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome_put_activity.md#example-2---deep-insert).

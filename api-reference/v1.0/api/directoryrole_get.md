@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get directoryRole
 
 Retrieve the properties of a directoryRole object.

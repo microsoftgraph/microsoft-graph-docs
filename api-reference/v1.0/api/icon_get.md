@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get Icon
 
 Retrieve the properties and relationships of icon object.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List borders
 
 Retrieve a list of rangeborder objects.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # domainState resource type
 
 Represents the status of asynchronous operations scheduled on a domain.

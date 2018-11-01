@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # ChartSeriesCollection: ItemAt
 
 Retrieves a series based on its position in the collection

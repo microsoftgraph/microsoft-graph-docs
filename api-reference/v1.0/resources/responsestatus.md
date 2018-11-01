@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # responseStatus resource type
 
 The response status of a meeting request.

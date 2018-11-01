@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete a group setting
 
 Delete a group setting.

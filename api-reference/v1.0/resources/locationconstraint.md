@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # locationConstraint resource type
 
 The conditions stated by a client for the location of a meeting.

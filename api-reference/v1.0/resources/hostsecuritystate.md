@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # hostSecurityState resource type
 
 Contains stateful information about the host (including devices, computers, and so on).

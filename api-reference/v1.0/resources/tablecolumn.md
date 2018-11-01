@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # TableColumn resource type
 
 Represents a column in a table.

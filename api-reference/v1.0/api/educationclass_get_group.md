@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get group
 
 Retrieve the Office 365 **group** that corresponds to this **educationClass**.

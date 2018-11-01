@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Use the Microsoft Graph API to work with Microsoft Teams
 
 Microsoft Teams is built on Office 365 groups. You can use the [group APIs](group.md) with teams, with the following exception: 

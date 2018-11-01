@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # Location resource type
 
 Represents location information of an [event](event.md).

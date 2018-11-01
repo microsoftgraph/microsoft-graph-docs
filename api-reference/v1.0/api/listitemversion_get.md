@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get a ListItemVersion resource
 
 Retrieve the metadata for a specific version of a [ListItem](../resources/listitem.md).

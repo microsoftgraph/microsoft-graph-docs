@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List rangeView rows
 
 Retrieve a list of range view objects.

@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Working with users in Microsoft Graph
 
 You can use Microsoft Graph to build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files.

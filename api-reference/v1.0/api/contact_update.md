@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update contact
 
 Update the properties of a contact object.

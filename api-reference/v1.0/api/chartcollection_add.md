@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # ChartCollection: add
 
 Creates a new chart.

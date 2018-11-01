@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Create irs1099Codes 
 description: Creates an IRS 1099 code object in Dynamics 365 Business Central.
 services: project-madeira

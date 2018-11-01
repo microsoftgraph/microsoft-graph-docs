@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # signInLocation resource type
 Provides the city, state and country/region from where the sign-in happened.
 

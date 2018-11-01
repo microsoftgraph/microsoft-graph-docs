@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Remove owner
 Use this API to remove an owner from an Office 365 group, a security group, or a mail-enabled security group through the owners navigation property.
 

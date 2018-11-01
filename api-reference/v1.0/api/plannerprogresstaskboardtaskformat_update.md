@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update plannerProgressTaskBoardTaskFormat
 
 Update the properties of **plannerProgressTaskBoardTaskFormat** object.

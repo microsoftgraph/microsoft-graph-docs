@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # rangeView resource type
 RangeView represents a set of visible cells of the parent range.
 

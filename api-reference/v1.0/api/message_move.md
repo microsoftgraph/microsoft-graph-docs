@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # message: move
 
 Move a message to a folder. This creates a new copy of the message in the destination folder and removes the original message.

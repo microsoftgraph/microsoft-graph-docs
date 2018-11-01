@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # itemBody resource type
 
 Represents properties of the body of an item, such as a message, event or group post.

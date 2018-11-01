@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # sharePointActivityPages resource type
 
 ## Properties

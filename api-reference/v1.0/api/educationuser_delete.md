@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete educationUser
 
 Delete a user.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getSharePointActivityUserDetail
 
 Get details about SharePoint activity by user.

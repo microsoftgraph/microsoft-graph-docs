@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # Icon resource type
 
 Represents a cell icon.

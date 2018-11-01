@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete open extension
 
 Delete an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) from the specified instance of a resource. 

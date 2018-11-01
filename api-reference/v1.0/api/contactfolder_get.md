@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get contactFolder
 
 Get a contact folder by using the contact folder ID.

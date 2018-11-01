@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List registeredUsers
 
 Retrieve a list of users that are registered users of the device.

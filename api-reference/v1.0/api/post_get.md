@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get post
 
 Get the properties and relationships of a post in a specified thread. You can specify both the parent 

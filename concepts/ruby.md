@@ -1,4 +1,7 @@
-﻿# Get started with Microsoft Graph in a Ruby on Rails app
+---
+apiDocType: conceptualPageType
+---
+# Get started with Microsoft Graph in a Ruby on Rails app
 
 This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph. It walks you through building the [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article also describes how to access Microsoft Graph by using direct REST calls.
 

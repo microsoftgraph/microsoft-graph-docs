@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get educationUser
 
 Retrieve the properties and relationships of a user.

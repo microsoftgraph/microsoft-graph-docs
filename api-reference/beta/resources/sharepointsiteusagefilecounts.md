@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # sharePointSiteUsageFileCounts resource type
 
 ## Properties

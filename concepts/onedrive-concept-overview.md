@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # OneDrive file storage API overview
 
 OneDrive is the files hub in Office 365.

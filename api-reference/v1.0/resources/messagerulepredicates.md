@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # messageRulePredicates resource type
 
 

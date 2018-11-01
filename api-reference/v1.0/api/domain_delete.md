@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete domain
 
 Deletes a domain from a tenant.

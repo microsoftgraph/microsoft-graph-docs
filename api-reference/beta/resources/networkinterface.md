@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # networkInterface resource type
 
 Represents a Network Interface Card (NIC) associated with this host.

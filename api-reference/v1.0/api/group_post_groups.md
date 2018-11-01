@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create group
 Use this API to create a new group as specified in the request body. You can create one of three types of groups:
 

@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Microsoft Graph quick start FAQ
 
 This FAQ answers questions related to the [Microsoft Graph Quick Starts](https://developer.microsoft.com/graph/quick-start).

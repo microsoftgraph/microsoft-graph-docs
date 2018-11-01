@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update calendargroup
 
 Update the properties of calendargroup object.

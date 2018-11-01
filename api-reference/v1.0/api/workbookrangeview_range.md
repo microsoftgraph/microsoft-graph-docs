@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # workbookRangeView: range
 Return the range associated with the rangeView resource.
 

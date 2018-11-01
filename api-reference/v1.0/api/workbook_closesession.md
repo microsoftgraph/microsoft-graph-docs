@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Close Session
 
 Use this API to close an existing workbook session. 

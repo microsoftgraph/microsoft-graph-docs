@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Restore deleted item
 
 Restores a recently deleted item from [deleted items](../resources/directory.md). 

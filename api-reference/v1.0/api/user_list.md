@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List users
 
 Retrieve a list of user objects.

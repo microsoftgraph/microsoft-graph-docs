@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # eventMessage resource type
 
 A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline).

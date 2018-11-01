@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartSeriesFormat resource type
 
 encapsulates the format properties for the chart series

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # plannerTaskDetails resource type
 
 The **plannerTaskDetails** resource represents the additional information about a task. Each [task](plannertask.md) object has a details object.

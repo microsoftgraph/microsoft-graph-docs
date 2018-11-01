@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List group settings
 
 Retrieve a list of group setting objects.

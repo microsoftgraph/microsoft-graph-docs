@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Create customerPaymentJournals 
 description: Creates a customer payments journal object in Dynamics 365 Business Central.
 services: project-madeira

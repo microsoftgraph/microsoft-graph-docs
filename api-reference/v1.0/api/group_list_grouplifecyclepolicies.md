@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List groupLifecyclePolicies
 
 Retrieves a list of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) objects to which a group belongs.

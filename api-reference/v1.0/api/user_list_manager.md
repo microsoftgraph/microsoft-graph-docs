@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List manager
 
 Get user's manager. Returns the user or contact assigned as the user's manager.

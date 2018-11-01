@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Remove directory role member
 
 Remove a member from a directoryRole.

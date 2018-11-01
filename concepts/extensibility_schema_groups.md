@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Add custom data to groups using schema extensions 
 
 We're going to walk you through an example to demonstrate how to use *schema extensions*. 

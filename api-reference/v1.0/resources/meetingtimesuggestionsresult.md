@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # meetingTimeSuggestionsResult resource type
 
 A collection of meeting suggestions if there is any, or the reason if there isn't.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Range: merge
 
 Merge the range cells into one region in the worksheet.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # operation resource type
 
 The status of a long-running operation.

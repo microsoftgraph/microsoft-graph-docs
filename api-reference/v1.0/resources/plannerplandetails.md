@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # plannerPlanDetails resource type
 
 

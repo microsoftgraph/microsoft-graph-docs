@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get event
 
 Get the properties and relationships of the specified [event](../resources/event.md) object.

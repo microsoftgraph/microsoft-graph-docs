@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # recentNotebookLinks resource type
 
 Links for opening a OneNote notebook. This resource type exists as a property on a [recentNotebook](recentnotebook.md) resource.

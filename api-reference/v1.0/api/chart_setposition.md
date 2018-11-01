@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Chart: setPosition
 
 Positions the chart relative to cells on the worksheet.

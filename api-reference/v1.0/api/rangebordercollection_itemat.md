@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # RangeBorderCollection: ItemAt
 
 Gets a border object using its index

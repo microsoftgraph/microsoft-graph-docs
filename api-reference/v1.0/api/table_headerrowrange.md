@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Table: HeaderRowRange
 
 Gets the range object associated with header row of the table.

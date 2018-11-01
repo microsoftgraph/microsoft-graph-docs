@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Range: clear
 
 Clear range values, format, fill, border, etc.

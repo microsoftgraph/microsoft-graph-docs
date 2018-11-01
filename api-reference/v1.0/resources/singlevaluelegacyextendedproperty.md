@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # singleValueLegacyExtendedProperty resource type
 
 An extended property that contains a single value. 

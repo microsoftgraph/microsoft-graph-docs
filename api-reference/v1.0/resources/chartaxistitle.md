@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartAxisTitle resource type
 
 Represents the title of a chart axis.

@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Get started with Microsoft Graph in a Python app 
 
 This article describes the tasks required to get an access token from Azure AD and call Microsoft Graph. It walks you through [Sending mail via Microsoft Graph from Python](https://github.com/microsoftgraph/python-sample-send-mail) and explains the main concepts that you implement to use the Microsoft Graph API. The article describes how to access Microsoft Graph by using direct REST calls.

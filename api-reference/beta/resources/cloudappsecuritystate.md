@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # cloudAppSecurityState resource type
 
 Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp).

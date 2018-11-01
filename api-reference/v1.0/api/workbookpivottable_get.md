@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get workbookPivotTable
 
 Retrieve the properties and relationships of workbookPivotTable object.

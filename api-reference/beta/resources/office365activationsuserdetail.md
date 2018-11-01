@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # office365ActivationsUserDetail resource type
 
 ## Properties

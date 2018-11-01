@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get open extension
 
 Get an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) identified by name or fully qualified name.

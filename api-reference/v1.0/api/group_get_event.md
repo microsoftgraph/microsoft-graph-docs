@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get event
 Get an [event](../resources/event.md) object.
 

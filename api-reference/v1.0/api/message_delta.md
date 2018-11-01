@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # message: delta
 
 Get a set of messages that have been added, deleted, or updated in a specified folder.

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Create shipmentMethods 
 description: Creates a shipment method object in Dynamics 365 Business Central. 
 services: project-madeira

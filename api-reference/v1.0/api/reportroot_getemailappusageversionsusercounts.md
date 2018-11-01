@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getEmailAppUsageVersionsUserCounts
 
 Get the count of unique users by Outlook desktop version.

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Create taxGroups 
 description: Creates a tax group object in Dynamics 365 Business Central. 
 services: project-madeira

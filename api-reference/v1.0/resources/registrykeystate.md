@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # registryKeyState resource type
 
 Contains information about registry key changes related to the alert, and the process that changed the registry keys.

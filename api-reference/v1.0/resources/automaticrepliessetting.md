@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # automaticRepliesSetting resource type
 
 Configuration settings to automatically notify the sender of an incoming email with a message from the 

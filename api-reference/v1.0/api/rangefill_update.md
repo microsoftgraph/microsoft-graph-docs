@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update rangefill
 
 Update the properties of rangefill object.

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get companyInformation 
 description: Gets a company information object in Dynamics 365 Business Central.
 services: project-madeira

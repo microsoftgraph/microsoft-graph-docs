@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # settings resource type
 
 The current user settings. 

@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Known issues with Microsoft Graph
 
 This article describes known issues with Microsoft Graph. For information about the latest updates, see the [Microsoft Graph changelog](changelog.md).

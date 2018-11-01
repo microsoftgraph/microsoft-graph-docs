@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Remove teacher
 
 Remove a teacher from a class.

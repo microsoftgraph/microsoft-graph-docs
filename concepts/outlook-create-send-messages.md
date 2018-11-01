@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Create and send Outlook messages
 
 Emails are represented by the [message](../api-reference/v1.0/resources/message.md) resource in Microsoft Graph.

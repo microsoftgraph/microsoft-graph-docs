@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Working with education APIs in Microsoft Graph
 
 The education APIs in Microsoft Graph enhance Office 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, and enrollments. This makes it easy for you to build solutions that integrate with educational resources.

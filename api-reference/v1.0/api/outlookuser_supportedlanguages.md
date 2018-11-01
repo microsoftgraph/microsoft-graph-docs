@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # outlookUser: supportedLanguages
 
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.

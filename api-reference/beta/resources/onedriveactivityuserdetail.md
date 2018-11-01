@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # oneDriveActivityUserDetail resource type
 
 ## Properties

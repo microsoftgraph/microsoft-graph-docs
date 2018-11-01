@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update plannerPlan
 
 Update the properties of **plannerPlan** object.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # section resource type
 
 A section in a OneNote notebook. Sections can contain pages.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartAreaFormat resource type
 
 Encapsulates the format properties for the overall chart area.

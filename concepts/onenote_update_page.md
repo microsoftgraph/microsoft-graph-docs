@@ -1,4 +1,7 @@
-﻿# Update OneNote page content
+---
+apiDocType: conceptualPageType
+---
+# Update OneNote page content
 
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
 

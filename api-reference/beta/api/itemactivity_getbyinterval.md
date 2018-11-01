@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017

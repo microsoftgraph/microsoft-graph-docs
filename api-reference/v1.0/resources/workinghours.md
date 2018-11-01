@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # workingHours resource type
 
 Represents the days of the week and hours in a specific time zone that the user works.

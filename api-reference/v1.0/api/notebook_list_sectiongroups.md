@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List sectionGroups
 
 Retrieve a list of [section groups](../resources/sectiongroup.md) from the specified notebook.

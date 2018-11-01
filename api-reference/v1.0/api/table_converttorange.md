@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Table: convertToRange
 
 Converts the table into a normal range of cells. All data is preserved.

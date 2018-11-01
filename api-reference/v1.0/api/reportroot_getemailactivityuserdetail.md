@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getEmailActivityUserDetail
 
 Get details about email activity users have performed.

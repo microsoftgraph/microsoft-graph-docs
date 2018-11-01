@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartAxes resource type
 
 Represents the chart axes.

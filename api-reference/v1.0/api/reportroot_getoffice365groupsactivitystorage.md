@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getOffice365GroupsActivityStorage
 
 Get the total storage used across all group mailboxes and group sites.

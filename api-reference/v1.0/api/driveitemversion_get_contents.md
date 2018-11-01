@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Download contents of a DriveItemVersion resource
 
 Retrieve the contents of a specific version of a [DriveItem](../resources/driveitem.md).

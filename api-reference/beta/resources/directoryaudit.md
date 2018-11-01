@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # directoryAudit resource type
 This resource represents the directory Audit items and its collection
 

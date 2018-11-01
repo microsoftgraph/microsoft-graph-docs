@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # TableColumn: delete
 
 Deletes the column from the table.

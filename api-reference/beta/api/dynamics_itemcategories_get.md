@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get itemCategories 
 description: Gets an item category in Dynamics 365 Business Central.
 services: project-madeira

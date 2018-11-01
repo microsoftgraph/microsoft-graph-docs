@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 author: kevklam
 ms.author: kevinlam
 ms.date: 09/10/2018

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # physicalAddress resource type
 
 Represents the street address of a resource such as a contact or event.

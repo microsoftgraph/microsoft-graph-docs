@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List ownedDevices
 
 Get the list of devices that are owned by the user.

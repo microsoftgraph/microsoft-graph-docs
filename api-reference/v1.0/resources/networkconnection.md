@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # networkConnection resource type
 
 Contains stateful information about the network connection related to the alert.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get WorksheetProtection
 
 Retrieve the properties and relationships of worksheetprotection object.

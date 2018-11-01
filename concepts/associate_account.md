@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Associate your Office 365 account with Azure AD to create and manage apps
 
 To authenticate your applications using Microsoft Azure Active Directory (Azure AD), you need to register them in Azure AD. This is where Office 365 user account and application information is stored. To manage Azure AD through the Azure portal, you need a Microsoft Azure subscription. You can use the portal in Microsoft Azure to manage users, roles, and apps. 

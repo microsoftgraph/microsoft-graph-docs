@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Microsoft Graph reports API overview
 
 Usage reports in the Microsoft 365 admin center enable admins to understand their company's usage across Office 365 services. You can use the reports API in Microsoft Graph to integrate with Office 365 usage reports.

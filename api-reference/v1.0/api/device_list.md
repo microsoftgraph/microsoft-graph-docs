@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List devices
 
 Retrieve a list of device objects registered in the organization.

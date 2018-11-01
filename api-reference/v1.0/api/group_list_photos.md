@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List photos
 Retrieve a list of [profilePhoto](../resources/profilephoto.md) objects.
 

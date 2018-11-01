@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get groupLifecyclePolicy
 
 Retrieve the properties and relationships of a [groupLifecyclePolicies](../resources/grouplifecyclepolicy.md) object.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # mailboxUsageStorage resource type
 
 ## Properties

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create device
 
 Create and register a new device in the organization.

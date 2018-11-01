@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Add custom data to users using open extensions
 We're going to walk you through an example to demonstrate how to use *open extensions*. 
 

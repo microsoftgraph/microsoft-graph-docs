@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # message: createForward
 
 Create a draft to forward the specified [message](../resources/message.md). You can then [update](../api/message_update.md) the draft to add content to the **body** or change other message properties, or, simply [send](../api/message_send.md) the draft.

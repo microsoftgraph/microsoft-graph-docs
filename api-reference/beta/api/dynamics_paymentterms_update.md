@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Update paymentTerms 
 description: Updates a payment term object in Dynamics 365 Business Central.
 services: project-madeira

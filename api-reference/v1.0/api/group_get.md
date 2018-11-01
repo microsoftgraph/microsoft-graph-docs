@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get group
 Get the properties and relationships of a group object.
 

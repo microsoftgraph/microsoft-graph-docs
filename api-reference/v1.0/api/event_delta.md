@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # event: delta
 
 Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) 

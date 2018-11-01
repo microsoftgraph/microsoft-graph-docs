@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get calendar
 
 Get the properties and relationships of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 

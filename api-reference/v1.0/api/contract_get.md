@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get Contract
 
 Retrieve the properties and relationships of [contract](../resources/contract.md) object.

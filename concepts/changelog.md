@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Changelog for Microsoft Graph
 
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.

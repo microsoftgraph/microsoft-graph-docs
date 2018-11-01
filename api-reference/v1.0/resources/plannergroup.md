@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # plannerGroup resource type
 
 The **plannerGroup** resource provides access to Planner resources for a [group](group.md). It doesn't contain any usable properties.

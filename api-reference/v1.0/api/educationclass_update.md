@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update educationclass properties
 
 Update the properties of a class.

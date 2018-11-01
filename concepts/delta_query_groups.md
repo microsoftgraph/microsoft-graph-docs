@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Get incremental changes for groups
 
 [Delta query](./delta_query_overview.md) lets you query for additions, deletions, or updates to groups, by way of a series of [delta](../api-reference/v1.0/api/group_delta.md) function calls. Delta query enables you discover changes to groups

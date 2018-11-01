@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # schemaExtension resource type (schema extensions)
 
 Schema extensions allow you to define a schema to extend and add strongly-typed custom data to a resource type. The custom data appears as a complex type on the extended resource. 

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get currencies 
 description: Gets a currency object in Dynamics 365 Business Central.
 services: project-madeira

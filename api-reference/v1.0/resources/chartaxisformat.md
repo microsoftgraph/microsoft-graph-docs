@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartAxisFormat resource type
 
 Encapsulates the format properties for the chart axis.

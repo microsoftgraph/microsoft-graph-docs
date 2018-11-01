@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List groupLifecyclePolicies
 
 List all the [groupLifecyclePolicies](../resources/grouplifecyclepolicy.md).

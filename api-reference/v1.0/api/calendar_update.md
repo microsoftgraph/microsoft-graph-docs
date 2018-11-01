@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update calendar
 
 Update the properties of of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 

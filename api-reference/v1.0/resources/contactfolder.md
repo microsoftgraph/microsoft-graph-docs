@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # contactFolder resource type
 
 A folder that contains contacts.

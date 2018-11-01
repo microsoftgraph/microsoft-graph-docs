@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # user: exportPersonalData
 
 Submits a data policy operation request, made by a Company Administrator to export an organizational user's data.

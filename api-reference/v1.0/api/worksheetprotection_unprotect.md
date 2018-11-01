@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # WorksheetProtection: unprotect
 
 Unprotect a worksheet

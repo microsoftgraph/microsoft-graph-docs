@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Table: TotalRowRange
 
 Gets the range object associated with totals row of the table.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create ContactFolder
 
 Create a new contactFolder as a child of a specified folder. 

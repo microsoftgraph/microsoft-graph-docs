@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # deviceDetail resource type
 Indicates device details associated with a device used for signing in. Includes information like device browser and  OS info, if device is Azure AD managed.
 

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update educationUser properties
 
 Update the properties of an **educationuser** object.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update range
 
 Update the properties of range object.

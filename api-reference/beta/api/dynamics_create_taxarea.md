@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Create taxAreas 
 description: Creates a tax area object in Dynamics for Financials. 
 services: project-madeira

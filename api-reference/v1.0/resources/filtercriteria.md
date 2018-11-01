@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # FilterCriteria resource type
 
 Represents the filtering criteria applied to a column.

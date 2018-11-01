@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete photo
 
 Delete a photo.

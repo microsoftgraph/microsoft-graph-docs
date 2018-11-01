@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Get started with Microsoft Graph in an ASP.NET 4.6 MVC app
 
 This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph. It walks you through building the [Microsoft Graph Connect Sample for ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample) and explains the main concepts that you implement to use Microsoft Graph.

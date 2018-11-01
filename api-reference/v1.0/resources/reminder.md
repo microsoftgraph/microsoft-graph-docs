@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # reminder resource type
 
 A reminder for an [event](event.md) in a user [calendar](calendar.md).

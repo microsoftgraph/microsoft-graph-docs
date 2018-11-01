@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete conversation
 Delete a [conversation](../resources/conversation.md) object.
 

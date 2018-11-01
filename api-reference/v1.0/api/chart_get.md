@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get Chart
 
 Retrieve the properties and relationships of chart object.

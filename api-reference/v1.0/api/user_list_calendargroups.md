@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List calendarGroups
 
 Get the user's calendar groups.

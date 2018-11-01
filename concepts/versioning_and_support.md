@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Versioning, support, and breaking change policies for Microsoft Graph 
 
 This article describes the support and breaking change policies for Microsoft Graph and the versions of the Microsoft Graph API that are currently available.

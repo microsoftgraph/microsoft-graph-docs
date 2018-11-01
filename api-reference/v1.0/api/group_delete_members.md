@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Remove member
 Use this API to remove a member from an Office 365 group, a security group, or a mail-enabled security group through the **members** navigation property. You can remove users or other groups.
 

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # onPremisesProvisioningError resource type
 
 Represents directory synchronization errors for the [user](user.md) and [group](group.md) entities when synchronizing on-premises directories to Azure Active Directory.

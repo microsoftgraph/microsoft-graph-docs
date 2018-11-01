@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Chart: delete
 
 Deletes the chart object.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # event: tentativelyAccept
 
 Tentatively accept the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).

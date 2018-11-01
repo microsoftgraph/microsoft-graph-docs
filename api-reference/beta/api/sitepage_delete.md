@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 author: rahmit
 ms.author: rahmit
 ms.date: 05/07/2018

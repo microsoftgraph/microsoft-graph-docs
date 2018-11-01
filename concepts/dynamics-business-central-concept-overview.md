@@ -1,4 +1,7 @@
 ---
+apiDocType: conceptualPageType
+---
+---
 title: Business Central API Overview 
 description: Overview of why you want to integrate your solutions with Business Central APIs.
 services: project-madeira

@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Get OneNote content and structure with Microsoft Graph
 
 **Applies to**: Consumer notebooks on OneDrive | Enterprise notebooks on Office 365

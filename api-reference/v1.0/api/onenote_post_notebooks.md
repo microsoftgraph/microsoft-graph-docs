@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create notebook
 
 Create a new OneNote [notebook](../resources/notebook.md).

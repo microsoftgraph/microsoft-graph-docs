@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Update shipmentMethods 
 description: Updates a shipment method object in Dynamics 365 Business Central.
 services: project-madeira

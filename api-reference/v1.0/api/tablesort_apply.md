@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # TableSort: apply
 
 Perform a sort operation.

@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 author: psampath
 ms.author: psampath
 ms.date: 06/20/2018

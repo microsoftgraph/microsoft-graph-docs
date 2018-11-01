@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get trialBalance 
 description: Gets a trial balance object in Dynamics 365 Business Central.
 services: project-madeira

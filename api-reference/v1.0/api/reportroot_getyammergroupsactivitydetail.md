@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getYammerGroupsActivityDetail
 
 Get details about Yammer groups activity by group.

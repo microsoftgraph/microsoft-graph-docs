@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List directoryRoleTemplates
 
 Retrieve a list of directoryRoleTemplate objects.

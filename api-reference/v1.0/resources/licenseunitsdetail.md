@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # licenseUnitsDetail resource type
 
 The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.

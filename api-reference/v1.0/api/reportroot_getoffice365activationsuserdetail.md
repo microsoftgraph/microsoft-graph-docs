@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getOffice365ActivationsUserDetail
 
 Get details about users who have activated Office 365.

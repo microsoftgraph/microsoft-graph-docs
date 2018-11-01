@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # workbookSessionInfo resource type
 
 Provides information about workbook session.

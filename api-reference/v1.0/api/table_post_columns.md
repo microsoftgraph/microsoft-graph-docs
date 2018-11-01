@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create TableColumn
 
 Use this API to create a new TableColumn.

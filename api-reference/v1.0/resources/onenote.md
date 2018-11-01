@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # onenote resource type
 
 The entry point for OneNote resources.

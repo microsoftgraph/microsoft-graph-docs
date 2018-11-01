@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get rule
 
 

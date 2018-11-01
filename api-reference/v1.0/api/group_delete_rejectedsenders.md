@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Remove rejectedSender
 Remove a user or group from the rejectedSenders list.
 

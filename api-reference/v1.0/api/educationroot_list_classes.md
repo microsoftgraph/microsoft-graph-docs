@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List classes
 
 Retrieve a list of all class objects. 

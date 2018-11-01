@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # outlookGeoCoordinates resource type
 
 The geographic coordinates, elevation, and their degree of accuracy for a physical location.

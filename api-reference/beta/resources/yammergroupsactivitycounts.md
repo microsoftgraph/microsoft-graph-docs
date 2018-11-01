@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # yammerGroupsActivityCounts resource type
 
 ## Properties

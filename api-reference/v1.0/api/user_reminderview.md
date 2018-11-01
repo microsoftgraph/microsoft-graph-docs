@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # user: reminderView
 Return a list of calendar reminders within the specified start and end times. 
 

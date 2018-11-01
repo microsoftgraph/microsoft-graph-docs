@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Email app usage reports
 
 Use the email app usage reports to see how many email apps are used to connect to Exchange Online. You can also see which versions of Outlook apps are used which will enable you to follow up with users who should upgrade to supported Outlook versions.

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Update companyInformation 
 description: Updates a company information object in Dynamics 365 Business Central.
 services: project-madeira

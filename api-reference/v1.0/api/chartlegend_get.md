@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get ChartLegend
 
 Retrieve the properties and relationships of chartlegend object.

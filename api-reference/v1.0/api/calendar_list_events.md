@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List events
 
 Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.

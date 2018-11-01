@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Outlook extended properties overview
 
 Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access 

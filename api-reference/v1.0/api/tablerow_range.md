@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # TableRow: Range
 
 Returns the range object associated with the entire row.

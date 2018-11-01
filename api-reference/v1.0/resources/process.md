@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # process resource type
 
 Contains stateful information about the process related to the alert.

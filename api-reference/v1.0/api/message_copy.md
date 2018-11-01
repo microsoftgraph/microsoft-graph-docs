@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # message: copy
 
 Copy a message to a folder.

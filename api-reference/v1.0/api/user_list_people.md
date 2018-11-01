@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List people
 
 Retrieve a collection of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by the user's communication and collaboration patterns, and business relationships.

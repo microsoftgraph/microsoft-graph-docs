@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get RangeFormat
 
 Retrieve the properties and relationships of rangeformat object.

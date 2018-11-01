@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # groupLifecyclePolicy: addGroup
 
 Adds a group to a lifecycle policy.

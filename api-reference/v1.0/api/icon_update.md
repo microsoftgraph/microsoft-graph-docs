@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update icon
 
 Update the properties of icon object.

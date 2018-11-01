@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # educationTerm resource type
 
 A term. This represents a designated portion of the academic year. It is used within [educationClass](educationclass.md).

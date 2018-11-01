@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # workbookPivotTable: refreshAll
 
 Refreshes the PivotTable within a given worksheet.

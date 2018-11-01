@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # workbookRange: rowsBelow
 
 Gets certain number of rows below a given range.

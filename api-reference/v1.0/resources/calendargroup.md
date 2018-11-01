@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # calendarGroup resource type
 
 A group of user calendars.

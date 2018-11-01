@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: countriesRegions resource type 
 description: A Countries/Regions object in Dynamics 365 Business Central. 
 services: project-madeira

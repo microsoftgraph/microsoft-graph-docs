@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List tasks
 
 Retrieve a list of **plannerTask** objects associated to a [plannerBucket](../resources/plannerBucket.md) object.

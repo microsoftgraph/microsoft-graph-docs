@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update page
 
 Update the content of a OneNote page.

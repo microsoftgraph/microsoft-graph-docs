@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Organize Outlook messages
 
 Outlook lets customers organize their messages the way they like it, be it leaving all messages in the same Inbox folder, or organizing messages in a tree-like folder structure under the Inbox to fit their specific needs. You can conveniently [filter, search, or sort](query_parameters.md) messages in the user's

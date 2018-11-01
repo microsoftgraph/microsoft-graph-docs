@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List domains
 
 Retrieve a list of domain objects.

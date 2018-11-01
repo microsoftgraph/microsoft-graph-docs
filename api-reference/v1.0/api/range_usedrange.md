@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Range: UsedRange
 
 Returns the used range of the given range object.

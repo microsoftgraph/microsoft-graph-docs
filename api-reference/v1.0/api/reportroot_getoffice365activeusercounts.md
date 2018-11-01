@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getOffice365ActiveUserCounts
 
 Get the count of daily active users in the reporting period by product.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get contact
 
 Retrieve the properties and relationships of a contact object.

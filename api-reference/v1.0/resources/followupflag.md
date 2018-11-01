@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # followupFlag resource type
 
 

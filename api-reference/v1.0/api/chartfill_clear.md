@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # ChartFill: clear
 
 Clear the fill color of a chart element.

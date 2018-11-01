@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # plannerAssignment resource type
 
 The **plannerAssignment** resource represents the assignment of a task to a user. This type is used in the open type [plannerAssignments](plannerassignments.md).

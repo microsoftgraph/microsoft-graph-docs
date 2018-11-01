@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get plannerBucketTaskBoardTaskFormat
 
 Retrieve the properties and relationships of **plannerBucketTaskBoardTaskFormat** object.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # RangeBorder resource type
 
 Represents the border of an object.

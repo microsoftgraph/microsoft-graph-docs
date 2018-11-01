@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update chart
 
 Update the properties of chart object.

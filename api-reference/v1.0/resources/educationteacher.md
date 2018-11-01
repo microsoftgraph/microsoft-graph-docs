@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # educationTeacher resource type
 
 Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get irs1099Codes 
 description: Gets an IRS 1099 code object in Dynamics 365 Business Central.
 services: project-madeira

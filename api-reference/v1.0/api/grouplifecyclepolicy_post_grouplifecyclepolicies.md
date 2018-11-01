@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create groupLifecyclePolicy
 
 Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).

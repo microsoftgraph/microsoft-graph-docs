@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # teamsDeviceUsageUserCounts resource type
 
 ## Properties

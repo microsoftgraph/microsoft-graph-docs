@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # teamsUserActivityCounts resource type
 
 ## Properties

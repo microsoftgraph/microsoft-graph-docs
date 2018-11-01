@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get settings
 
 Read the user and organization [settings](../resources/user_settings.md) object.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # onenoteOperation resource type
 
 The status of certain long-running OneNote operations.

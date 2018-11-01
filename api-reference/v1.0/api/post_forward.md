@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # post: forward
 
 Forward a post to a recipient. You can specify both the parent conversation and thread in the request, 

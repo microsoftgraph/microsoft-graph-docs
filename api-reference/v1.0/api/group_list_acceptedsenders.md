@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List acceptedSenders
 Get a list of users or groups that are in the acceptedSenders list for this group.
 

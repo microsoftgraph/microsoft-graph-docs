@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Refresh Session
 
 Use this API to refresh an existing workbook session. 

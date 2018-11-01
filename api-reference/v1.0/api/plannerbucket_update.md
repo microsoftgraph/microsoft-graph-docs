@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update plannerbucket
 
 Update the properties of **plannerbucket** object.

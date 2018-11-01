@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # TableSort: clear
 
 Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.

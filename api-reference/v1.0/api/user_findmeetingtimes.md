@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # user: findMeetingTimes
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
 

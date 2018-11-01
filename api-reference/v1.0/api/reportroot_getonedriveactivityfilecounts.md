@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getOneDriveActivityFileCounts
 
 Get the number of unique, licensed users that performed file interactions against any OneDrive account.

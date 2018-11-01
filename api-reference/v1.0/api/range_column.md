@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Range: Column
 
 Gets a column contained in the range.

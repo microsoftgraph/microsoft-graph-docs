@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update groupLifecyclePolicy
 
 Update the properties of a groupLifecyclePolicy[groupLifecyclePolicy resource type](../resources/grouplifecyclepolicy.md) object.

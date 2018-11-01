@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # imageInfo resource type
 
 A complex type for representing the **attribution** property in the [visualInfo](../resources/projectrome_visualinfo.md) part of the [activity](../resources/projectrome_activity.md) object.

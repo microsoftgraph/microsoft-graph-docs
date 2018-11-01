@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # servicePlanInfo resource type
 
 Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the [subscribedSku](subscribedsku.md) entity is a collection of **servicePlanInfo**.

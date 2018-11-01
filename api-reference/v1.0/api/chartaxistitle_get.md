@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get ChartAxisTitle
 
 Retrieve the properties and relationships of chartaxistitle object.

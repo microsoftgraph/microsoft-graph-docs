@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Getting started building Microsoft Graph apps
 
 The articles in this section provide detailed guidance on how to build apps that connect to Microsoft Graph across a variety of languages and development platforms. Each article works from a starter project and walks you through the fundamental steps for connecting to Microsoft Graph:

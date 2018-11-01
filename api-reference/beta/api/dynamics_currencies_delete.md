@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Delete currencies 
 description: Deletes a currency object in Dynamics 365 Business Central.
 services: project-madeira

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete subscription
 
 Delete a subscription.

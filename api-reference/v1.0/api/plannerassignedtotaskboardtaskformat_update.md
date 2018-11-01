@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update plannerAssignedToTaskBoardTaskFormat
 
 Update the properties of **plannerAssignedToTaskBoardTaskFormat** object.

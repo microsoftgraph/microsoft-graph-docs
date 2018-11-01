@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get taxAreas 
 description: Gets a tax area object in Dynamics 365 Business Central. 
 services: project-madeira

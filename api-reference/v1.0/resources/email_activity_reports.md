@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Email activity reports
 
 Use the email activity reports to get a high level view of email traffic within your organization. You can also drill into the Email Activity widget to understand the trends and details of the email activity per user in your organization.

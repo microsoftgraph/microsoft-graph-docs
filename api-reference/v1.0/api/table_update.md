@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update table
 
 Update the properties of table object.

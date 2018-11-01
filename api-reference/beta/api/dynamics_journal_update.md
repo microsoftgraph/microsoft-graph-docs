@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Update journals 
 description: Updates a journal object in Dynamics 365 Business Central.
 services: project-madeira

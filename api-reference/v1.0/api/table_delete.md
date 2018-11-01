@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Table: delete
 
 Deletes the table.

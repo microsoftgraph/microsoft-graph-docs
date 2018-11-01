@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update schemaExtension
 
 Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md).

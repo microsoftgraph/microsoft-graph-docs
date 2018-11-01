@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # Json resource type
 
 Represents data returned in JSON format

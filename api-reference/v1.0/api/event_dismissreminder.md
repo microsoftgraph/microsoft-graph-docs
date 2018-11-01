@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # event: dismissReminder
 
 Dismiss a reminder that has been triggered for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md).

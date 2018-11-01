@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # RangeSort: apply
 
 Perform a sort operation.

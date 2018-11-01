@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # timeStamp resource type
 
 Date and time information for a point in time.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # plannerAppliedCategories resource type
 
 

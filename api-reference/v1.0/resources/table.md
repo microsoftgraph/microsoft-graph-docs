@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # Table resource type
 
 Represents an Excel table.

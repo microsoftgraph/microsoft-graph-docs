@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # FormatProtection resource type
 
 Represents the format protection of a range object.

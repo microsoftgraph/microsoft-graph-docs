@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Listing versions of a DriveItem
 
 OneDrive and SharePoint can be configured to retain the history for files.

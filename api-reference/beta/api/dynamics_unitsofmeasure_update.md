@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Update unitsOfMeasure 
 description: Updates a unit of measure object in Dynamics 365 Business Central.
 services: project-madeira

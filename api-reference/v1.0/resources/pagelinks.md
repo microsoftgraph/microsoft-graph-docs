@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # pageLinks resource type
 
 Links for opening a OneNote page.

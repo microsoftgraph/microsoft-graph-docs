@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Input and output HTML in OneNote pages
 
 The HTML that defines the page content and structure when you [create](onenote-create-page.md) or [update](onenote_update_page.md) a OneNote page is called *input HTML*. 

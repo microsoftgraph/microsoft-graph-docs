@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update conversationthread
 
 Lock or unlock a thread, to allow or avoid further posting to the thread.

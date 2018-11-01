@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Service root
 
 

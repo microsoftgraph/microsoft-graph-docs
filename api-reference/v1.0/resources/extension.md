@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # extension resource type
 
 An abstract type to support the OData v4 open type [openTypeExtension](openTypeExtension.md).

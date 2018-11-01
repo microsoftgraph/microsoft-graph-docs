@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create registeredUser
 
 Add a registered user for the device.

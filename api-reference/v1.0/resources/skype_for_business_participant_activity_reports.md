@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Skype for Business participant activity reports
 
 You can use the Skype for Business participant activity reports to get details on conferencing activity across your organization. These details are very helpful when you are investigating, planning, and making other business decisions for your organization.

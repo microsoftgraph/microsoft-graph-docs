@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getOffice365GroupsActivityCounts
 
 Get the number of group activities across group workloads.

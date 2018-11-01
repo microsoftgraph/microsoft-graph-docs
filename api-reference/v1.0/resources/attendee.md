@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # attendee resource type
 
 An event attendee. This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant.

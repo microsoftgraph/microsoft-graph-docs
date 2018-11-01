@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List messages
 
 Get all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create subscription
 
 Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.

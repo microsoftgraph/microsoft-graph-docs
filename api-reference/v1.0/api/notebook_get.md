@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get notebook
 
 Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object.

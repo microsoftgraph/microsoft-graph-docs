@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete calendar
 
 Delete a calendar other than the default calendar.

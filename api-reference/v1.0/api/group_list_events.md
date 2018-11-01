@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List events
 Retrieve a list of [event](../resources/event.md) objects.
 

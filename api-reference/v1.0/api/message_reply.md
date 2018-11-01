@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # message: reply
 
 Reply to the sender of a message. The message is then saved in the Sent Items folder.

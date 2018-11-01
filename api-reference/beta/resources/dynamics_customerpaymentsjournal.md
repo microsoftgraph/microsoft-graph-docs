@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: customerPaymentJournals resource type 
 description: A customer payments journal in Dynamics 365 Business Central.
 services: project-madeira

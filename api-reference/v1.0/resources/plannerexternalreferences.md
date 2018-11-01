@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # plannerExternalReferences resource type
 
 The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.

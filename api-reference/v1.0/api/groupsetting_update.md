@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update a group setting
 
 Update the properties of a specific group setting object.

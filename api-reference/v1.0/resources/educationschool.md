@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # educationSchool resource type
 
 A resource representing a school and used to manage the classes, teachers, and students of the represented school.  

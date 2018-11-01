@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # onenoteEntitySchemaObjectModel resource
 
 This is a base type for OneNote entities.

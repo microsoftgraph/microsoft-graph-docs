@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List attachments
 
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to an event.

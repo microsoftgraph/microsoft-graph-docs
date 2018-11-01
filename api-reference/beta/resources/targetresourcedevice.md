@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # targetResourceDevice resource type
 Indicates the device object that was added, updated or deleted by admins as part of audit activity. Derived from the [targetResource](targetresource.md) resource.
 

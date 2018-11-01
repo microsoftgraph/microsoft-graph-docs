@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete calendarGroup
 
 Delete a calendar group other than the default calendar group.

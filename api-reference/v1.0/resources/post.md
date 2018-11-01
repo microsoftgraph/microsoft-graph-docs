@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # post resource type
 Represents an individual Post item within a [conversationThread](conversationthread.md) entity.
 

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Update customers 
 description: Updates a customer object in Dynamics 365 Business Central.
 services: project-madeira

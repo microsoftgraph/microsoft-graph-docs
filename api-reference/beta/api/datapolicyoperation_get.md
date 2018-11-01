@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get dataPolicyOperation
 
 Retrieve the properties of the dataPolicyOperation object.

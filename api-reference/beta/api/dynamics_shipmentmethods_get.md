@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get shipmentMethods 
 description: Gets a shipment method object in Dynamics 365 Business Central. 
 services: project-madeira

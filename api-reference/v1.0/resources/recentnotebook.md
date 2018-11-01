@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # recentNotebook resource type
 
 A recently accessed OneNote notebook. A **recentNotebook** is similar to a [notebook](notebook.md) but has fewer properties.

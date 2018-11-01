@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get resource
 
 Retrieve the binary data of a file or image [resource](../resources/resource.md) object.

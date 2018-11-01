@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Range: EntireColumn
 
 Gets an object that represents the entire column of the range.

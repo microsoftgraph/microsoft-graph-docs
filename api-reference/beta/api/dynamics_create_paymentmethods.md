@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Create paymentMethods 
 description: Creates a payment method object in Dynamics 365 Business Central.
 services: project-madeira

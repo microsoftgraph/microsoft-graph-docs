@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartLineFormat resource type
 
 Enapsulates the formatting options for line elements.

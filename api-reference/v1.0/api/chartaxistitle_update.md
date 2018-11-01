@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update chartaxistitle
 
 Update the properties of chartaxistitle object.

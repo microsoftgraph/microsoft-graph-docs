@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # siteUsageStorage resource type
 
 ## Properties

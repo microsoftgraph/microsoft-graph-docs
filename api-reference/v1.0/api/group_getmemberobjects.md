@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # group: getMemberObjects
 Return all of the groups that this group is a member of. The check is transitive. Note: Groups cannot be members of directory roles, so no directory roles will be returned.
 

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get RangeFont
 
 Retrieve the properties and relationships of rangefont object.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List educationUsers
 
 Retrieve a list of users at a school.

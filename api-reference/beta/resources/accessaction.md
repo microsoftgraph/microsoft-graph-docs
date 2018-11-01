@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 author: daspek
 ms.author: dspektor
 ms.date: 09/12/2018

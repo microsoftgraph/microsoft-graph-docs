@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete directoryObject
 
 Deletes a directoryObject.

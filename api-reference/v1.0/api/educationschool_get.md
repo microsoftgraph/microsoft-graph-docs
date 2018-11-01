@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get educationSchool
 
 Retrieve the properties and relationships of the school object.

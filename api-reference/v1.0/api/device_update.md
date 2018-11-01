@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update device
 
 Update the properties of a registered device.

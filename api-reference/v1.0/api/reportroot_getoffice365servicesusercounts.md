@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getOffice365ServicesUserCounts
 
 Get the count of users by activity type and service.

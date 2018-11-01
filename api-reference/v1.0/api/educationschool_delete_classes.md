@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Remove educationClass
 
 Delete a class from a school.

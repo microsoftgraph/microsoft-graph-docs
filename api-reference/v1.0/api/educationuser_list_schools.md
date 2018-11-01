@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List schools
 
 Retrieve a list of schools for a user.

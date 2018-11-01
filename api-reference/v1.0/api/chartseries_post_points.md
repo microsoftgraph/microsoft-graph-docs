@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create ChartPoints
 
 Use this API to create a new ChartPoints.

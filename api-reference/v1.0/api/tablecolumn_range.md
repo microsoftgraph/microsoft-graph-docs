@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # TableColumn: Range
 
 Gets the range object associated with the entire column.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # educationRoot resource type
 
 The `/education` namespace exposes functionality that is specific to the education sector. 

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # mailTips resource type
 
 Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message 

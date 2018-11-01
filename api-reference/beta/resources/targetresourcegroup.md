@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # targetResourceGroup resource type
 Indicates the type of group that was impacted due to the audit activity. Includes values like unified groups versus Azure AD 
 

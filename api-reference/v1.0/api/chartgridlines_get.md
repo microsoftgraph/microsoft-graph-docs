@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get ChartGridlines
 
 Retrieve the properties and relationships of chartgridlines object.

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Create vendors 
 description: Creates a vendor object in Dynamics 365 Business Central. 
 services: project-madeira

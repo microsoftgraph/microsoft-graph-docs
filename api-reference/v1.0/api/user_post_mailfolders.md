@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create MailFolder
 
 Use this API to create a new mail folder in the root folder of the user's mailbox.

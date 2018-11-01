@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getEmailAppUsageUserDetail
 
 Get details about which activities users performed on the various email apps.

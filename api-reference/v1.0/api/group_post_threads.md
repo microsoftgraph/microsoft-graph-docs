@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create conversation thread
 Start a new group conversation by first creating a thread. 
 

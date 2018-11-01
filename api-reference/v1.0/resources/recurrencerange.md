@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # recurrenceRange resource type
 
 Describes a date range over which a recurring [event](event.md) repeats. 

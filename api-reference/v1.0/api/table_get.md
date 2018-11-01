@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get Table
 
 Retrieve the properties and relationships of table object.

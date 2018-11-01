@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Permanently delete item
 
 Permanently deletes an item from [deleted items](../resources/directory.md).

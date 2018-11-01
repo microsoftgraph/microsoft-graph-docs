@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # TableRow resource type
 
 Represents a row in a table.

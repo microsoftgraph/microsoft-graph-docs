@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get conversation
 Get a [conversation](../resources/conversation.md) object.
 

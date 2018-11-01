@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create Session
 
 Use this API to create a new workbook session. 

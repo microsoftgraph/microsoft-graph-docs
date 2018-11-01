@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: itemCategories resource type 
 description: An item category in Dynamics 365 Business Central.
 services: project-madeira

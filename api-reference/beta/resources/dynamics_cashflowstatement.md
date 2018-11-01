@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: cashFlowStatement resource type 
 description: A cash flow statement object in Dynamics 365 Business Central.
 services: project-madeira

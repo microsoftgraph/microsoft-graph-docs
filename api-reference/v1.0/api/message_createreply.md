@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # message: createReply
 
 Create a draft of the reply to the specified [message](../resources/message.md). You can then [update](../api/message_update.md) the draft to add reply content to the **body** or change other message properties, or, simply [send](../api/message_send.md) the draft.

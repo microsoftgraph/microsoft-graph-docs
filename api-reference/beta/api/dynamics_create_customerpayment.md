@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Create customerPayments 
 description: Creates a customer payment object in Dynamics 365 Business Central.
 documentationcenter: ''

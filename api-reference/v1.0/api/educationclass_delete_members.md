@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Remove a student
 
 Removes an [educationUser](../resources/educationuser.md) from an [educationClass](../resources/educationclass.md)

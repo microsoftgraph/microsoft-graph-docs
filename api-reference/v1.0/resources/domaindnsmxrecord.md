@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # domainDnsMxRecord resource type
 
 Represents a MX record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.

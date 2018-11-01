@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete conversation thread
 Delete a [thread](../resources/conversationthread.md) object.
 

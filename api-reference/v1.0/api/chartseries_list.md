@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List ChartSeriesCollection
 
 Retrieve a list of chartseries objects.

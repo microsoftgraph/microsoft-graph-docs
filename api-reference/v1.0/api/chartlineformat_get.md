@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get ChartLineFormat
 
 Retrieve the properties and relationships of chartlineformat object.

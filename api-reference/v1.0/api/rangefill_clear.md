@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # RangeFill: clear
 
 Resets the range background.

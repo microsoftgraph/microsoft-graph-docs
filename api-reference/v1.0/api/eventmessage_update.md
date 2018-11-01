@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update eventMessage
 
 Update the properties of an [eventMessage](../resources/eventmessage.md) object.

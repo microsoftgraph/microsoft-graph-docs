@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Use Microsoft Graph to access Excel in a Python app
 
 You can use the Microsoft Graph API to read and update workbooks stored in supported online storage platforms including, OneDrive and SharePoint. The `Workbook` (or Excel file) resource contains all the other Excel resources and your app can access them via simple navigations. 

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # emailActivitySummary resource type
 
 ## Properties

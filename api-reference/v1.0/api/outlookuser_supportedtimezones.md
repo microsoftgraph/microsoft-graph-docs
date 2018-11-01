@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # outlookUser: supportedTimeZones
 
 Get the list of time zones that are supported for the user, as configured on the user's mailbox server.

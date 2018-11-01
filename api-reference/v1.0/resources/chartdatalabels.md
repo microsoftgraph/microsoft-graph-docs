@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartDataLabels resource type
 
 Represents a collection of all the data labels on a chart point.

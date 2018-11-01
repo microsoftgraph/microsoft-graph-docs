@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List subscribedSkus
 Retrieve the list of commercial subscriptions that an organization has acquired.
 

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update tablecolumn
 
 Update the properties of tablecolumn object.

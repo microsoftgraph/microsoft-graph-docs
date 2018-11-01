@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: items resource type 
 description: An item object in Dynamics 365 Business Central.
 services: project-madeira

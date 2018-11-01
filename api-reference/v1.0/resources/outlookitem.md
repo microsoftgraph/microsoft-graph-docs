@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # outlookItem resource type
 
 

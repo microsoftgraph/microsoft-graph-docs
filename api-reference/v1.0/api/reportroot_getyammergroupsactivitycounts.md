@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getYammerGroupsActivityCounts
 
 Get the number of Yammer messages posted, read, and liked in groups.

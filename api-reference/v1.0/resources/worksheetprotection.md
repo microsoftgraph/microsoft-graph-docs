@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # WorksheetProtection resource type
 
 Represents the protection of a sheet object.

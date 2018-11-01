@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # page resource type
 
 A page in a OneNote notebook.

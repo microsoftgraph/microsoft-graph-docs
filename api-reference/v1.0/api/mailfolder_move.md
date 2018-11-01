@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # mailFolder: move
 
 Move a mailfolder and its contents to another mailfolder.

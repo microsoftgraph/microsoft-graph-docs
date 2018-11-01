@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # attachment resource type
 
 You can add related content to an [event](../resources/event.md),

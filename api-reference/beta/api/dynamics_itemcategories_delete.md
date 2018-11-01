@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Delete itemCategories 
 description: Deletes an item category in Dynamics 365 Business Central.
 services: project-madeira

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List ChartCollection
 
 Retrieve a list of chart objects.

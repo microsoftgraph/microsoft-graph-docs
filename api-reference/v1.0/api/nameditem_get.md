@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get NamedItem
 
 Retrieve the properties and relationships of nameditem object.

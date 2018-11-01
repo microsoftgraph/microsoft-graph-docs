@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get domain
 
 Retrieve the properties and relationships of domain object.

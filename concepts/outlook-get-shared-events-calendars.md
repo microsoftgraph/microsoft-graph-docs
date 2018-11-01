@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Get Outlook events in a shared or delegated calendar
 
 In Outlook, customers can share a calendar with other users and let them view or modify events in that calendar. Customers can also grant a delegate to act on their  behalf, to receive or respond to meeting requests, or create or change items in the calendar.

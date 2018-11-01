@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # calendar resource type
 
 A calendar which is a container for events. It can be a calendar for a [user](user.md), or the default calendar of an Office 365 [group](group.md).

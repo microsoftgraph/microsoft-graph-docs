@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Outlook mail API overview
 
 Outlook is a messaging communication hub in Office 365. It also lets you manage contacts, schedule meetings, find information about users in an organization,

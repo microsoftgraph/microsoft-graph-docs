@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartAxis resource type
 
 Represents a single axis in a chart.

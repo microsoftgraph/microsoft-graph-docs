@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List directoryRoles
 
 List the directory roles that are activated in the tenant.

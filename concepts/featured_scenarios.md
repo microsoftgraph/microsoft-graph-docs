@@ -1,4 +1,7 @@
-﻿# Featured scenarios for Microsoft Graph
+---
+apiDocType: conceptualPageType
+---
+# Featured scenarios for Microsoft Graph
 
 Check out some common and featured scenarios for working with the Microsoft Graph API. Explore the topics in this section, and try out some of the popular requests listed in the following table. The links take you to our [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 

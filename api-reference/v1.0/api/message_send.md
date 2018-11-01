@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # message: send
 
 Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Delete employees 
 description: Deletes an employee object in Dynamics 365 Business Central.
 services: project-madeira

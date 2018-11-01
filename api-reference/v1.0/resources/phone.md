@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # phone resource type
 
 Represents a phone number.

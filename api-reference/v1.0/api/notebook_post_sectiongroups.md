@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create sectionGroup
 
 Create a new [section group](../resources/sectiongroup.md) in the specified notebook.

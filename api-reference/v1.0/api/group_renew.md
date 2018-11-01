@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # group: renew
 
 Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.

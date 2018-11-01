@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get alert
 
  Retrieve the properties and relationships of an [alert](../resources/alert.md) object.

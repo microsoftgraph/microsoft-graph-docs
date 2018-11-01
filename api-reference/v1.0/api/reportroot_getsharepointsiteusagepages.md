@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getSharePointSiteUsagePages
 
 Get the number of pages viewed across all sites.

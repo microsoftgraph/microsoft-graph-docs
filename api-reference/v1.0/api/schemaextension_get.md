@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get schemaExtension
 Get the properties of the specified [schemaExtension](../resources/schemaextension.md) definition.
 

@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: taxAreas resource type 
 description: A tax area.
 services: project-madeira

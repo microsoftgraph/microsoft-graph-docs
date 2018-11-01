@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get section
 
 Retrieve the properties and relationships of a [onenoteSection](../resources/section.md) object.

@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: accounts resource type 
 description: An account object in Dynamics 365 Business Central.
 services: project-madeira

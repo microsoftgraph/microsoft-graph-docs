@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get signIn
 Retrieves the Azure AD user sign-ins for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.
 

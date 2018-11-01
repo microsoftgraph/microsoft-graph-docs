@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getYammerGroupsActivityGroupCounts
 
 Get the total number of groups that existed and how many included group conversation activity.

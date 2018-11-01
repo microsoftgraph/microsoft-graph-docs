@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartTitle resource type
 
 Represents a chart title object of a chart.

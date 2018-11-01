@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get TableRow
 
 Retrieve the properties and relationships of tablerow object.

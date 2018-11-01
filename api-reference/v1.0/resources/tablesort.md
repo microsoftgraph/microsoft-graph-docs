@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # TableSort resource type
 
 Manages sorting operations on Table objects.

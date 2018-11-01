@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get journals 
 description: Gets a journal object in Dynamics 365 Business Central.
 services: project-madeira

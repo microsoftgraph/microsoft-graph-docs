@@ -1,4 +1,7 @@
-﻿# sectionLinks resource type
+---
+apiDocType: resourcePageType
+---
+# sectionLinks resource type
 
 Links for opening a OneNote section.
 

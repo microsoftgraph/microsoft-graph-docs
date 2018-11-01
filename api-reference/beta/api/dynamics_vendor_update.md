@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Update vendors 
 description: Updates a vendor object in Dynamics 365 Business Central.
 services: project-madeira

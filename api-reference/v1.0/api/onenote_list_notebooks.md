@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List notebooks
 
 Retrieve a list of [notebook](../resources/notebook.md) objects.

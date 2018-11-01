@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # TableRow: delete
 
 Deletes the row from the table.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # ChartLineFormat: clear
 
 Clear the line format of a chart element.

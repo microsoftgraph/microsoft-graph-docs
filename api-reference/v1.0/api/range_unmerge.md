@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Range: unmerge
 
 Unmerge the range cells into separate cells.

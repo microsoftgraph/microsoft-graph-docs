@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Use REST APIs to access mailboxes in Exchange hybrid deployments (preview)
 
 Microsoft Graph has always provided access to customer mailboxes in the cloud on Exchange Online as part of Office 365.

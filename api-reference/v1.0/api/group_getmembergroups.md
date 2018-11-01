@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # group: getMemberGroups
 
 Return all the groups that the specified group is a member of. The check is transitive, unlike reading the [memberOf](../api/group_list_memberof.md) navigation property, which returns only the groups that the group is a direct member of.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Filter: apply
 
 Apply the given filter criteria on the given column.

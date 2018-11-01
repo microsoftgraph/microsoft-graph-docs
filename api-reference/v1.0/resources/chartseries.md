@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartSeries resource type
 
 Represents a series in a chart.

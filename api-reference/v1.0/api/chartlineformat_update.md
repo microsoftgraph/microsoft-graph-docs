@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update chartlineformat
 
 Update the properties of chartlineformat object.

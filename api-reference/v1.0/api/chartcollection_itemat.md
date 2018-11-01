@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # ChartCollection: ItemAt
 
 Gets a chart based on its position in the collection.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List threads
 
 Get all the threads in a group conversation.

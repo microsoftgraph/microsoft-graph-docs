@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Range: LastColumn
 
 Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".

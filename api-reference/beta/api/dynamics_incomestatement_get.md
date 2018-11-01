@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get incomeStatement 
 description: Gets an income statement object in Dynamics 365 Business Central.
 services: project-madeira

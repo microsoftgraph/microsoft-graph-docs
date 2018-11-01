@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Table: clearFilters
 
 Clears all the filters currently applied on the table.

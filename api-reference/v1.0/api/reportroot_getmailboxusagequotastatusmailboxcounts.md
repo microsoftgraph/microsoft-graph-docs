@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getMailboxUsageQuotaStatusMailboxCounts
 
 Get the count of user mailboxes in each quota category.

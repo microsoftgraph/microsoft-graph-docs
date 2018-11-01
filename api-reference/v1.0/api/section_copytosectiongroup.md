@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # section: copyToSectionGroup
 Copies a section to a specific section group.
 

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getSharePointActivityPages
 
 Get the number of unique pages visited by users.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # externalLink resource type
 
 A url that opens a OneNote page or notebook.

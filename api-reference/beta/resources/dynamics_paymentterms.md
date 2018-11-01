@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: paymentTerms resource type 
 description: A payment terms object in Dynamics 365 Business Central.
 services: project-madeira

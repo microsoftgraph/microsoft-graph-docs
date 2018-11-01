@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # chatReaction resource type
 
 Represents a reaction to a [chatMessage](chatMessage.md) entity. 

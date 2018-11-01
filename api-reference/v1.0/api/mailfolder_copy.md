@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # mailFolder: copy
 
 Copy a mailfolder and its contents to another mailfolder.

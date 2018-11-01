@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getOffice365ActivationCounts
 
 Get the count of Office 365 activations on desktops and devices.

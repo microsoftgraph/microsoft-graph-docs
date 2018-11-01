@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create User
 
 Use this API to create a new User.

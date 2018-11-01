@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List NamedItemCollection
 
 Retrieve a list of nameditem objects.

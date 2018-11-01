@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: dimensionValues resource type 
 description: A dimension value in Dynamics 365 Business Central.
 services: project-madeira

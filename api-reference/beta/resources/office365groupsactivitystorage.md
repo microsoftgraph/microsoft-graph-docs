@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # office365GroupsActivityStorage resource type
 
 ## Properties

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Delete shipmentMethods 
 description: Deletes a shipment method object in Dynamics 365 Business Central.
 services: project-madeira

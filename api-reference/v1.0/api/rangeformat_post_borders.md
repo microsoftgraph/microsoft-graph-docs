@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create RangeBorder
 
 Use this API to create a new RangeBorder.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # WorksheetCollection: add
 
 Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.

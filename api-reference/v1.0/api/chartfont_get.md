@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get ChartFont
 
 Retrieve the properties and relationships of chartfont object.

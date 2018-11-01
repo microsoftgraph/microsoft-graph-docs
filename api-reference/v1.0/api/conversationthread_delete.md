@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete conversationThread
 
 Delete conversationThread.

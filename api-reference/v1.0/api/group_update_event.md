@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update event
 Update an [event](../resources/event.md) object.
 

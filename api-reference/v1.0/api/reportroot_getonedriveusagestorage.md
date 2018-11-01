@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getOneDriveUsageStorage
 
 Get the trend on the amount of storage you are using in OneDrive for Business.

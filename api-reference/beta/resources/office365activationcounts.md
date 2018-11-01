@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # office365ActivationCounts resource type
 
 ## Properties

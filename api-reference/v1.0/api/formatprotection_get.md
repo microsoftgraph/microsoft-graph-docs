@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get FormatProtection
 
 Retrieve the properties and relationships of formatprotection object.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Worksheet: Range
 
 Gets the range object specified by the address or name.

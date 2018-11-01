@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # People overview
 
 Microsoft Graph provides access to useful people data.

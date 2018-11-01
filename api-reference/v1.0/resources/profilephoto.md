@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # profilePhoto resource type
 A profile photo of a user, group or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64.
 

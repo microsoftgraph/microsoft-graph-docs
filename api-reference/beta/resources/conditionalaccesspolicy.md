@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # conditionalAccessPolicy resource type
 Indicates the attributes related a conditional access policy or policies that's triggered by the corresponding sign-in activity
 

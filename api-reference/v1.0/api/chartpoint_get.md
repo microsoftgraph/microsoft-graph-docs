@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get ChartPoint
 
 Retrieve the properties and relationships of chartpoint object.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # post: reply
 
 Reply to a post and add a new post to the specified thread in a group conversation. You can specify 

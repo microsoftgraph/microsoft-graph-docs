@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # Chart resource type
 
 Represents a chart object in a workbook.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get organization
 
 Retrieve the properties and relationships of currently authenticated organization.

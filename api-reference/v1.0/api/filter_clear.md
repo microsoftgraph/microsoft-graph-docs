@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Filter: clear
 
 Clear the filter on the given column.

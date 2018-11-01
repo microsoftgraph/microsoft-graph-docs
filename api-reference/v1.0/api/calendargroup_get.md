@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get calendarGroup
 
 Retrieve the properties and relationships of a calendar group object.

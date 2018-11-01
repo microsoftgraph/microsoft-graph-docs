@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getEmailAppUsageAppsUserCounts
 
 Get the count of unique users per email app.

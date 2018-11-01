@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List licenseDetails
 
 Retrieve a list of licenseDetails objects.

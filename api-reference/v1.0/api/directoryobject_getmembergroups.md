@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get member groups
 
 Return all the groups that the specified user, group, or directory object is a member of. This function is transitive.

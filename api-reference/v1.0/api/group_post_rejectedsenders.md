@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create rejectedSender
 Add a new user or group to the rejectedSender list.
 

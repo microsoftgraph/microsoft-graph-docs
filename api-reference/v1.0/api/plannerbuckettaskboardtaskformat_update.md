@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update plannerBucketTaskBoardTaskFormat
 
 Update the properties of **plannerBucketTaskBoardTaskFormat** object.

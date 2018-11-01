@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # sharePointSiteUsagePages resource type
 
 ## Properties

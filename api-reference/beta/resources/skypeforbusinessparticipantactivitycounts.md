@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # skypeForBusinessParticipantActivityCounts resource type
 
 ## Properties

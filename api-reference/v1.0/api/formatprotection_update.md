@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update formatprotection
 
 Update the properties of formatprotection object.

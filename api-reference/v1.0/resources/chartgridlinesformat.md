@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartGridlinesFormat resource type
 
 Encapsulates the format properties for chart gridlines.

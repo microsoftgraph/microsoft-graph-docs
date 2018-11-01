@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List groups
 List all the groups available in an organization, including but not limited to Office 365 Groups.
 The [default properties](../api/group_get.md#default-properties) of each group are returned.

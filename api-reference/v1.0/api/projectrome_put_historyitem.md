@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create or replace a historyItem
 
 Create a new or replace an existing history item for an existing user activity.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update settings
 
 Update the properties of the [settings](../resources/user_settings.md) object. 

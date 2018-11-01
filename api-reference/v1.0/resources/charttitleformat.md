@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartTitleFormat resource type
 
 Encapsulates the format properties for the chart title.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get conversation
 
 Retrieve the properties and relationships of conversation object.

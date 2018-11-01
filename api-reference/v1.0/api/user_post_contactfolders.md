@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create ContactFolder
 
 Create a new contactFolder under the user's default contacts folder.

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartLegend resource type
 
 Represents the legend in a chart.

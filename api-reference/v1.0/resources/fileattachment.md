@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # fileAttachment resource type
 
 A file (such as a text file or Word document) attached to an event, message or post. The  **contentBytes** 

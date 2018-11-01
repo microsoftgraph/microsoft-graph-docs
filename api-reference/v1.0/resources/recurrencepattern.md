@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # recurrencePattern resource type
 
 Describes the frequency by which a recurring [event](event.md) repeats. 

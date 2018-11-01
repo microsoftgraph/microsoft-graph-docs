@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create conversation
 Create a new [conversation](../resources/conversation.md) by including a thread and a post. 
 

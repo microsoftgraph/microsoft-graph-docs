@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Get Outlook messages in a shared or delegated folder
 
 <!-- remove similar content in other topics when ready to publish - list messages, get message, get mail folder.

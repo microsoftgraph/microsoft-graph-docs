@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update rangefont
 
 Update the properties of rangefont object.

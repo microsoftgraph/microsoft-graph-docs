@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Delete taxAreas 
 description: Deletes a tax area object in Dynamics 365 Business Central.
 services: project-madeira

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # groupLifecyclePolicy: removeGroup
 
 Removes a group from a lifecycle policy.

@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Working with groups in Microsoft Graph
 
 Groups are collections of [users](user.md) and other principals who share access to resources in Microsoft services or in your app. Microsoft Graph provides APIs that you can use to create and manage different types of groups and group functionality according to your scenario. All group-related operations in Microsoft Graph require administrator consent.

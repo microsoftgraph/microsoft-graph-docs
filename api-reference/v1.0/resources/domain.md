@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # domain resource type
 
 Represents a domain associated with the tenant.

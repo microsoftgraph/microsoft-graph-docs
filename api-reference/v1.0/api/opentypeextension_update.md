@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update open extension
 
 Update an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) with the properties in the request body:

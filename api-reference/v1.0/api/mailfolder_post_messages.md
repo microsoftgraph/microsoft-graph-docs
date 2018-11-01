@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create Message
 
 Use this API to create a new Message in a mailfolder.

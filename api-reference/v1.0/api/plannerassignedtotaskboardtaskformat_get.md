@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get plannerAssignedToTaskBoardTaskFormat
 
 Retrieve the properties and relationships of **plannerAssignedToTaskBoardTaskFormat** object.

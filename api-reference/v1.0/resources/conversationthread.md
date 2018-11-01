@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # conversationThread resource type
 A conversationThread is a collection of [posts](post.md).
 

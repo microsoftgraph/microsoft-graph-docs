@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create thread
 
 Create a new thread in the specified conversation. 

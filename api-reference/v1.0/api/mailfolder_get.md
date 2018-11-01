@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get mailFolder
 
 Retrieve the properties and relationships of a message folder object.

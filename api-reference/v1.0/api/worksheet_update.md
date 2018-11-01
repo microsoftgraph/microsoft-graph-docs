@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update worksheet
 
 Update the properties of worksheet object.

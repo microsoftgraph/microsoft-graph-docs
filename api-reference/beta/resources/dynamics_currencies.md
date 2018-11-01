@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: currencies resource type 
 description: A currency object in Dynamics 365 Business Central 
 services: project-madeira

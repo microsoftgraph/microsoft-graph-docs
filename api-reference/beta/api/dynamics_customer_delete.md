@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Delete customers 
 description: Deletes a customers object from Dynamics 365 Business Central.
 services: project-madeira

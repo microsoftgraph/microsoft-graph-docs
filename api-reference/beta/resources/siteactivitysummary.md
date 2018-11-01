@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # siteActivitySummary resource type
 
 ## Properties

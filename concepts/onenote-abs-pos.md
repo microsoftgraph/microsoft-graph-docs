@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 
 # Create absolute positioned elements in OneNote pages
 

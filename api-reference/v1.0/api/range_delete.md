@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Range: delete
 
 Deletes the cells associated with the range.

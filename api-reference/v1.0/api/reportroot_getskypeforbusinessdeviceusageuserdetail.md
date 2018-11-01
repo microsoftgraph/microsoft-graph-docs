@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getSkypeForBusinessDeviceUsageUserDetail
 
 Get details about Skype for Business device usage by user.

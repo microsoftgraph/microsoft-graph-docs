@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # targetResourcePolicy resource type
 Indicates the policy that was impacted by the audit activity. Derived from the [targetResource](targetresource.md) resource.   
 

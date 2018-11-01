@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # BaseItemVersion resource type
 
 The **baseItemVersion** resource represents a previous version of an item or entity.

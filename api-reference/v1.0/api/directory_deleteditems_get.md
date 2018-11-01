@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get deleted item
 
 Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).

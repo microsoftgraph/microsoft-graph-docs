@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create open extension
 
 Create an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) and add custom properties in a new or existing instance of a resource.

@@ -1,3 +1,6 @@
+---
+apiDocType: enumPageType
+---
 
 ### timeZoneStandard values
 

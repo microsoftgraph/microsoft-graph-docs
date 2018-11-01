@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getYammerDeviceUsageUserCounts
 
 Get the number of daily users by device type.

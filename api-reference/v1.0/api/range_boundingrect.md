@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Range: BoundingRect
 
 Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".

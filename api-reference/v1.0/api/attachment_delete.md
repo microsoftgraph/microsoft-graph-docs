@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete attachment
 
 Delete an attachment from a calendar event, mail message, or group post.

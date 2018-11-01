@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # emailActivityUserDetail resource type
 
 ## Properties

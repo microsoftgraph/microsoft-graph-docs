@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get RangeBorder
 
 Retrieve the properties and relationships of rangeborder object.

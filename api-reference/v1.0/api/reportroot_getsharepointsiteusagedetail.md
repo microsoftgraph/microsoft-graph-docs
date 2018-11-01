@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getSharePointSiteUsageDetail
 
 Get details about SharePoint site usage.

@@ -1,4 +1,7 @@
-﻿# intendedPurpose enum type
+---
+apiDocType: enumPageType
+---
+# intendedPurpose enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

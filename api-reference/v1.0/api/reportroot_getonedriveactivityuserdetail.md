@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getOneDriveActivityUserDetail
 
 Get details about OneDrive activity by user.

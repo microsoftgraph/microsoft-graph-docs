@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # group: checkMemberGroups
 
 Check for membership in the specified list of groups. Returns from the list those groups of which

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List messages
 
 Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).

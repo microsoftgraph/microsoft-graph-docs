@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Table: DataBodyRange
 
 Gets the range object associated with the data body of the table.

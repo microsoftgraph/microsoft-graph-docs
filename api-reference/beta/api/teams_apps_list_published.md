@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List the published apps from the Microsoft Teams app catalog
 
 List [apps](../resources/teamscatalogapp.md) from the Microsoft Teams app catalog. 

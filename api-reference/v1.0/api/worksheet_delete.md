@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Worksheet: delete
 
 Deletes the worksheet from the workbook.

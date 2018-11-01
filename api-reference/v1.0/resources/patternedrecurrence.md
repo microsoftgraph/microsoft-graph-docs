@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # patternedRecurrence resource type
 
 The recurrence pattern and range.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create single-value extended property
 
 Create one or more single-value extended properties in a new or existing instance of a resource. 

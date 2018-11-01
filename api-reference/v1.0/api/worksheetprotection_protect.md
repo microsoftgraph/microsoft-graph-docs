@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # WorksheetProtection: protect
 
 Protect a worksheet. It throws if the worksheet has been protected.

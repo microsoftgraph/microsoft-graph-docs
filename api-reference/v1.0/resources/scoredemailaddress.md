@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # scoredEmailAddress resource type
 
 Represents a scored email address.

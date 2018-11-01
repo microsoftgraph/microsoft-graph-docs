@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # onenoteEntityBaseModel resource
 
 This is the base type for OneNote entities.

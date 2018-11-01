@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # multiValueLegacyExtendedProperty resource type
 
 An extended property that contains a collection of values.

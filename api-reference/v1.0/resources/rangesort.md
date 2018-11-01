@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # RangeSort resource type
 
 Manages sorting operations on Range objects.

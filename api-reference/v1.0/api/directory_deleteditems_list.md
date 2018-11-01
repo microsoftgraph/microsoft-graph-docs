@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List deleted items
 
 Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).

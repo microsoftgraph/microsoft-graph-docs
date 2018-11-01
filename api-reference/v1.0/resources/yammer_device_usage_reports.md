@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Yammer device usage reports
 
 The device usage reports for Yammer give you information about which devices your users utilize to engage on Yammer. You can view the number of users by device type over a selected time period and view details by user.

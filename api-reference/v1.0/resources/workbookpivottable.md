@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # pivotTable resource type
 
 Represents an Excel PivotTable.

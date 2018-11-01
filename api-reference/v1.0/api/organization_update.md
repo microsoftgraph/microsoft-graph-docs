@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update organization
 
 Update the properties of the currently authenticated organization.

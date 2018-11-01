@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete schemaExtension
 
 Delete the definition of a [schema extension](../resources/schemaExtension.md).

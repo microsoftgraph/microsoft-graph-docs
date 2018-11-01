@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create plannerPlan
 
 Use this API to create a new **plannerPlan**.

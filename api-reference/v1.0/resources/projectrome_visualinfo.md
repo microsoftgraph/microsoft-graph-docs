@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # visualInfo resource type
 
 A complex type for representing the **visualElements** property in the [activity](../resources/projectrome_activity.md) object.

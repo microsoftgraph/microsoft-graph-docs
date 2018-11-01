@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # skypeForBusinessPeerToPeerActivityMinuteCounts resource type
 
 ## Properties

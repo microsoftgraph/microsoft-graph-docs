@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get directoryObject
 
 Retrieve the properties and relationships of directoryObject object.

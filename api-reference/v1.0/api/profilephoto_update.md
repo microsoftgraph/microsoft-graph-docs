@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update profilephoto
 
 Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there

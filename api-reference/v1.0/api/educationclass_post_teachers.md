@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Add teacher
 
 Add a teacher to a class.

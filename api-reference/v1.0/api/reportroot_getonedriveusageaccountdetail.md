@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getOneDriveUsageAccountDetail
 
 Get details about OneDrive usage by account.

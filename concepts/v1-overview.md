@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Microsoft Graph REST API v1.0 reference
 
 Welcome to Microsoft Graph REST API reference for the v1.0 endpoint.

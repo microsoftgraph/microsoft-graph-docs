@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete a historyItem
 
 Delete an existing history item for an existing user activity.

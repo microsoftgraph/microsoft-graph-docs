@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Microsoft Graph error responses and resource types
 
 <!--In this article:

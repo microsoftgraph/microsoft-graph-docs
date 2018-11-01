@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create table
 
 Use this API to create a new Table.

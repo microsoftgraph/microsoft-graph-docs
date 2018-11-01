@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # Filter resource type
 
 Manages the filtering of a table's column.

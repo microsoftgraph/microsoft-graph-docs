@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Outlook calendar API overview
 
 Outlook calendar is part of the Outlook messaging hub in Office 365 that also lets you manage emails and contacts, find information about users in an organization,

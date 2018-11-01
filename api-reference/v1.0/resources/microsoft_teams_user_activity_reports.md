@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Microsoft Teams user activity reports
 
 Use the Microsoft Teams activity reports to get insights into the Microsoft Teams user activity in your organization.

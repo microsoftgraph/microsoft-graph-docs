@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete inferenceClassificationOverride
 
 Delete an override specified by its ID.

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Delete vendors 
 description: Deletes a vendor object in Dynamics 365 Business Central. 
 services: project-madeira

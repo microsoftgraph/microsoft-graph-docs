@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Create journalLines 
 description: Creates a journal line in Dynamics 365 Business Central.
 services: project-madeira

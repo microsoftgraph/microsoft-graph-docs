@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Listing versions of a ListItem
 
 SharePoint can be configured to retain the history for list items.

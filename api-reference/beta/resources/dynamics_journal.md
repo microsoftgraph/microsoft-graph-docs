@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: journal resource type 
 description: A journal in Dynamics 365 Business Central.
 services: project-madeira

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get photo
 
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (profilePhoto properties).

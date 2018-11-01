@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # teamsCatalogApp resource type
 
 Represents an app in the Microsoft Teams app catalog.

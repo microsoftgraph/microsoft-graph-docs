@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get a group setting
 
 Retrieve the properties of a specific of group setting object.

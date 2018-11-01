@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # timeSlot resource type
 
 A time period.

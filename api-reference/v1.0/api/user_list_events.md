@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List events
 
 Get a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single 

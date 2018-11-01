@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Using order hints in Planner
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

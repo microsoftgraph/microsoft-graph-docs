@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Delete customerPaymentJournals 
 description: Deletes a customer payment journal in Dynamics 365 Business Central.
 services: project-madeira

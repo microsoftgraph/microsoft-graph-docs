@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # userSecurityState resource type
 
 Contains stateful information about the user account.

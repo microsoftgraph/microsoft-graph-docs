@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update chartseries
 
 Update the properties of chartseries object.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get RangeFill
 
 Retrieve the properties and relationships of rangefill object.

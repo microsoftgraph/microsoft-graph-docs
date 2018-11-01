@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # user: delta
 
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection. See [Track changes](../../../concepts/delta_query_overview.md) for details.

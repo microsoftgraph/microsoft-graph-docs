@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # group: resetUnseenCount
 Reset the unseenCount of all the posts that the current user has not seen since their last visit. Supported for Office 365 groups only.
 

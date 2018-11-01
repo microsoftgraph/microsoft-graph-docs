@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # mailboxSettings resource type
 
 Settings for the primary mailbox of the signed-in user.

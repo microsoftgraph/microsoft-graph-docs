@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update conversation thread
 Update a [thread](../resources/conversationthread.md) object.
 

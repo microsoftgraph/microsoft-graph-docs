@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # TableSort: reapply
 
 Reapplies the current sorting parameters to the table.

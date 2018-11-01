@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getTeamsUserActivityUserDetail
 
 Get details about Microsoft Teams user activity by user.

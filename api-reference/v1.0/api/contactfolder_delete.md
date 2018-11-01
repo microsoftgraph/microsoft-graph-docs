@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete contactFolder
 
 Delete contactFolder other than the default contactFolder.

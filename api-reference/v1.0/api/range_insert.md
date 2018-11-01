@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Range: insert
 
 Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.

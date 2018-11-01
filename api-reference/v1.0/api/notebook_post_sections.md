@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create section
 
 Create a new [onenoteSection](../resources/section.md) in the specified notebook.

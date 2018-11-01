@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete contact
 
 Delete a contact.

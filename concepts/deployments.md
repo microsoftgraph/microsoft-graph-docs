@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # National cloud deployments
 
 

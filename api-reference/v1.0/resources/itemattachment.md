@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # itemAttachment resource type
 
 A contact, event, or message that's attached to another event, message, or post.  

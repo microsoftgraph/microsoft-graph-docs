@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create domain
 
 Adds a domain to the tenant.

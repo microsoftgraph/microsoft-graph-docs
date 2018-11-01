@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create registeredOwner
 
 Add a user as a registered owner of the device.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete mailFolder
 
 Delete the specified [mailFolder](../resources/mailfolder.md).

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create plannerBucket
 
 Use this API to create a new **plannerBucket**.

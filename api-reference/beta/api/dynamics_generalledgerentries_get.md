@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get generalLedgerEntries 
 description: Gets a general ledger entry object in Dynamics 365 Business Central.
 services: project-madeira

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Update customerPaymentJournals 
 description: Updates a customer payment journal in Dynamics 365 Business Central.
 services: project-madeira

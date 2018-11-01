@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get Worksheet
 
 Retrieve the properties and relationships of worksheet object.

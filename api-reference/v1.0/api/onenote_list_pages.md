@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List pages
 
 Retrieve a list of [page](../resources/page.md) objects.

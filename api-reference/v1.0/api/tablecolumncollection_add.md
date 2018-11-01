@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # TableColumnCollection: add
 
 Adds a new column to the table.

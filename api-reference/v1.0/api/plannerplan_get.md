@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get plannerPlan
 
 Retrieve the properties and relationships of **plannerplan** object.

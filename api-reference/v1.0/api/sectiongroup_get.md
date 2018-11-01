@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get sectionGroup
 
 Retrieve the properties and relationships of a [sectionGroup](../resources/sectiongroup.md) object.

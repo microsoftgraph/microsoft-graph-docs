@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update photo
 
 Update the properties of photo object.

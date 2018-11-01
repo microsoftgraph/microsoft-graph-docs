@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List calendars
 
 Retrieve a list of calendars belonging to a calendar group.

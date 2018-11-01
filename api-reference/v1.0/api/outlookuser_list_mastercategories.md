@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List Outlook categories
 
 

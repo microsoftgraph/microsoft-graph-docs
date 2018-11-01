@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List plans
 
 Retrieve a list of **plannerPlan** objects owned by a [group](../resources/group.md) object.

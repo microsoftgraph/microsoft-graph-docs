@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # sharePointActivityUserCounts resource type
 
 ## Properties

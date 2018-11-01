@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update contactfolder
 
 Update the properties of contactfolder object.

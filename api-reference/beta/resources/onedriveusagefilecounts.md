@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # oneDriveUsageFileCounts resource type
 
 ## Properties

@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # alternativeSecurityId resource type
 
 For internal use only.

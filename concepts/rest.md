@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Get started with Microsoft Graph and REST
 
 This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph using REST calls. It describes the sequence of requests and responses that an app uses to authenticate and retrieve email messages.

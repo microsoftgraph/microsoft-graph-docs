@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 
 # Add images, videos, and files to OneNote pages
 

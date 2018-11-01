@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # logonUser resource type
 
 Contains stateful information about the logged on user on this host

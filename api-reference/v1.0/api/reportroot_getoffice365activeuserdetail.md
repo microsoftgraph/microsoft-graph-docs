@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getOffice365ActiveUserDetail
 
 Get details about Office 365 active users.

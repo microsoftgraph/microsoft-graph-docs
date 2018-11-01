@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List sectionGroups
 
 Retrieve a list of [sectionGroup](../resources/sectiongroup.md) objects.

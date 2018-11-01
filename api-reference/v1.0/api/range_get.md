@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get Range
 
 Retrieve the properties and relationships of range object.

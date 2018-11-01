@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartDataLabelFormat resource type
 
 Encapsulates the format properties for the chart data labels.

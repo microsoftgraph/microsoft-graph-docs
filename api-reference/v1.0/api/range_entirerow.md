@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Range: EntireRow
 
 Gets an object that represents the entire row of the range.

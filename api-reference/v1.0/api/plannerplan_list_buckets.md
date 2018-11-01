@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List buckets
 
 Retrieve a list of **plannerbucket** objects contained by a [plannerPlan](../resources/plannerplan.md) object.

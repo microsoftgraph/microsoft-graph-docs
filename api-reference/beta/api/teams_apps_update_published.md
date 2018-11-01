@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update apps published to your organization's app catalog
 
 Update an [app](../resources/teamscatalogapp.md) previously published to the Microsoft Teams app catalog. 

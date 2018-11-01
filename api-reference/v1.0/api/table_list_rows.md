@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List rows
 
 Retrieve a list of tablerow objects.

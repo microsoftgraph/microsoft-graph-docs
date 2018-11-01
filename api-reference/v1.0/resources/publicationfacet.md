@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # PublicationFacet resource type
 
 The **publicationFacet** resource provides details on the published status of a [driveItemVersion](driveitemversion.md) or [driveItem](driveitem.md) resource.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List points
 
 Retrieve a list of chartpoints objects.

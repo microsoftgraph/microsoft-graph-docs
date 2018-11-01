@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Outlook personal contacts API overview
 
 Outlook contacts lets you store personal contacts' data, and is part of the Outlook messaging hub in Office 365. Through Outlook, you can manage emails, schedule meetings, find information about users in an organization, initiate online conversations, share files, and collaborate in groups.

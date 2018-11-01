@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # plannerAssignments resource type
 
 The **plannerAssignments** resource represents assignments of a [plannerTask](plannertask.md) resource. This type is an open type. Each property name in this type 

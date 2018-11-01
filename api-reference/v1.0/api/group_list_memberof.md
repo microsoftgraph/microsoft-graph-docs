@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List memberOf
 Get groups that the group is a direct member of. 
 

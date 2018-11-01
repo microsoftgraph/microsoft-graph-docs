@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: dimensions resource type 
 description: A dimension in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen

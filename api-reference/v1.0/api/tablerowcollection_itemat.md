@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # TableRowCollection: ItemAt
 
 Gets a row based on its position in the collection.

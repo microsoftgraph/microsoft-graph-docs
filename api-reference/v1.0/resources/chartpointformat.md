@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartPointFormat resource type
 
 Represents formatting object for chart points.

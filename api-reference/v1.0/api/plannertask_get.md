@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get plannerTask
 
 Retrieve the properties and relationships of **plannertask** object.

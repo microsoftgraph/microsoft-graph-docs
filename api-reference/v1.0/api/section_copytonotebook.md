@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # section: copyToNotebook
 Copies a section to a specific notebook.
 

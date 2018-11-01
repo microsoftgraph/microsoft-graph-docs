@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # domain: verify
 
 Validates the ownership of the domain.

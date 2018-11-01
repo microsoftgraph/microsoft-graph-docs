@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # mailboxUsageQuotaStatusMailboxCounts resource type
 
 ## Properties

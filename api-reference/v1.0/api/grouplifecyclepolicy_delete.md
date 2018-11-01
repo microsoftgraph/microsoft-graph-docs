@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Delete groupLifecyclePolicy
 
 Deletes a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).

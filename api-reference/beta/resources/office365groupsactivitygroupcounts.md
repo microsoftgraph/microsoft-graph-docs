@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # office365GroupsActivityGroupCounts resource type
 
 ## Properties

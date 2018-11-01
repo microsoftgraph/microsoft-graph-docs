@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Create customers 
 description: Creates a customer object in Dynamics 365 Business Central.
 services: project-madeira

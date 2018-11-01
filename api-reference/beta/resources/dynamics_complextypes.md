@@ -1,4 +1,7 @@
 ---
+apiDocType: conceptualPageType
+---
+---
 title: complex types JSON 
 description: Complex data types in JSON for Dynamics 365 Business Central.
 services: project-madeira

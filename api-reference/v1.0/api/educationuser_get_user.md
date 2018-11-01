@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get user
 
 Retrieve the simple directory **user** that corresponds to this **educationUser**.

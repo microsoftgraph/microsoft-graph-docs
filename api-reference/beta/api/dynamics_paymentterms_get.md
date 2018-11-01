@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get paymentTerms 
 description: Gets a payment term object in Dynamics 365 Business Central.
 services: project-madeira

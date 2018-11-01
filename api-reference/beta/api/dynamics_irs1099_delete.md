@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Delete irs1099Codes 
 description: Deletes an IRS 1099 code object in Dynamics 365 Business Central.
 services: project-madeira

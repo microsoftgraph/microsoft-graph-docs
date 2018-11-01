@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update rangeformat
 
 Update the properties of rangeformat object.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getOffice365GroupsActivityDetail
 
 Get details about Office 365 Groups activity by group.

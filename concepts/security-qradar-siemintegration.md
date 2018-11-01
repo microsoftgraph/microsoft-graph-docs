@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Integrate Microsoft Graph Security API alerts with IBM QRadar SIEM using Azure Monitor
 
 The Microsoft Graph Security providers can be managed through a single REST endpoint. This endpoint can be configured to [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/), which supports connectors to several SIEM products. The instructions in Steps 1 and 2 of this article refer to all Azure Monitor connectors that support consumption via event hubs. This article describes the end-to-end integration of the [QRadar](https://www.ibm.com/us-en/marketplace/ibm-qradar-siem) SIEM connector.

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Delete paymentTerms 
 description: Deletes a payment term object in Dynamics 365 Business Central.
 services: project-madeira

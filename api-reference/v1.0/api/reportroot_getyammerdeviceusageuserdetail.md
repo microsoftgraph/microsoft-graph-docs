@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # reportRoot: getYammerDeviceUsageUserDetail function
 
 Get details about Yammer device usage by user.

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Update journalLines 
 description: Updates a journal line in Dynamics 365 Business Central.
 services: project-madeira

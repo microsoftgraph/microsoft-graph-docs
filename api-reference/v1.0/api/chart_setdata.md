@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Chart: setData
 
 Resets the source data for the chart.

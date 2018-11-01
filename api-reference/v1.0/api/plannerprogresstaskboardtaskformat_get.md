@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get plannerProgressTaskBoardTaskFormat
 
 Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.

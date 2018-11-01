@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List ownedObjects
 
 Get the list of directory objects that are owned by the user.

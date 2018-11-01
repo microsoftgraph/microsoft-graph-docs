@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get page
 
 Retrieve the properties and relationships of a [page](../resources/page.md) object.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Add a student
 
 Add a member to a class.

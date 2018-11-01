@@ -1,4 +1,7 @@
 ---
+apiDocType: resourcePageType
+---
+---
 title: journalLines resource type 
 description: A journal line in Dynamics 365 Business Central.
 services: project-madeira

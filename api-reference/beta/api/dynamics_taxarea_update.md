@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Update taxAreas 
 description: Updates a tax areas object in Dynamics 365 Business Central. 
 services: project-madeira

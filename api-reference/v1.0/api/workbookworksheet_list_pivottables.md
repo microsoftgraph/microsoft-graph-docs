@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List pivotTables
 
 Retrieve a list of workbookpivottable objects.

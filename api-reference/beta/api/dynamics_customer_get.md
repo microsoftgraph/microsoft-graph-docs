@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Get customers 
 description: Gets a customer object in Dynamics 365 Business Central.
 services: project-madeira

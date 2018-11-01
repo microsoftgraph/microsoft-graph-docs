@@ -1,3 +1,6 @@
+---
+apiDocType: conceptualPageType
+---
 # Using the activity feed API in Microsoft Graph to enable cross-device experiences
 
 Activities make users more productive by helping them resume important tasks in your app quickly across devices. Microsoft helps drive user productivity with your apps through experiences like Windows Timeline, Windows Sets, Cortana Pick up Where I left off and Microsoft Launcher, which are all powered by the activity feed. When you use activities, these Microsoft experiences can start driving engagement with your app. You can also display activities in your apps to help users get back to what they were doing on any device, on any platform, including Windows, Android, and iOS.

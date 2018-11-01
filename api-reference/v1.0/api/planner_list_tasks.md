@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List tasks
 
 Retrieve a list of **plannertask** objects.

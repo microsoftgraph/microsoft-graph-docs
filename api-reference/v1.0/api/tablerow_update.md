@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update tablerow
 
 Update the properties of tablerow object.

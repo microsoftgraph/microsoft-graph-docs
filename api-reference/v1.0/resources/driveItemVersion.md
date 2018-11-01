@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # DriveItemVersion resource type
 
 The **DriveItemVersion** resource represents a specific version of a [DriveItem](driveitem.md).

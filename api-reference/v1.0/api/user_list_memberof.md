@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List memberOf
 
 Get [groups](../resources/group.md) and [directory roles](../resources/directoryrole.md) that the user is a direct member of. 

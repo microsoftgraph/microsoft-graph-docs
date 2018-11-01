@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Update items 
 description: Updates an item object in Dynamics 365 Business Central.
 services: project-madeira

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # notebook: copyNotebook
 Copies a notebook to the Notebooks folder in the destination Documents library. The folder is created if it doesn't exist.
 

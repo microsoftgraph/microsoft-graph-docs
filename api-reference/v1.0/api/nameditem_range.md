@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # NamedItem: Range
 
 Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.

@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Create journals 
 description: Creates a journal object in Dynamics 365 Business Central.
 services: project-madeira

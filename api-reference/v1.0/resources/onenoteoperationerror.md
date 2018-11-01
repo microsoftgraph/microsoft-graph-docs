@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # onenoteOperationError resource type
 
 An error from a failed OneNote operation.

@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get multiValueLegacyExtendedProperty
 
 Get a resource instance that contains a multi-value extended property by using `$expand`.

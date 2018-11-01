@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # fileHash resource type
 
 Contains stateful information about file hashes (cryptographic and location-sensitive).

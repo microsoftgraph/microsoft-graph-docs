@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # attendeeBase resource type
 
 The type of attendee.

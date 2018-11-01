@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # outlookUser resource type
 
 

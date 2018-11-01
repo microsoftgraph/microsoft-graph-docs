@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get websocket endpoint
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.

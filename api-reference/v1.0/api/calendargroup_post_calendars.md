@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create Calendar
 
 Use this API to create a new calendar in a calendar group for a [user](../resources/user.md).

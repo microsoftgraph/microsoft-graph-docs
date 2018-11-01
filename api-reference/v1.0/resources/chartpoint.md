@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # ChartPoint resource type
 
 Represents a point of a series in a chart.

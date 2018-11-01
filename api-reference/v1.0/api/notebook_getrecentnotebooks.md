@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # notebook: getRecentNotebooks
 
 Get a list of [recentNotebook](../resources/recentnotebook.md) instances that have been accessed by the signed-in user.

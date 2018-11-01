@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List conversations
 Retrieve the list of [conversations](../resources/conversation.md) in this group.
 

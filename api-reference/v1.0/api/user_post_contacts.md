@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create Contact
 
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.

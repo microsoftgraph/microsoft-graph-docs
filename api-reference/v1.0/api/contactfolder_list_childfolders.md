@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List childFolders
 
 Get a collection of child folders under the specified contact folder.

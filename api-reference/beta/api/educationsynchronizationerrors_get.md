@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get educationSynchronizationErrors
 
 Get the errors generated during validation and/or during a sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. 

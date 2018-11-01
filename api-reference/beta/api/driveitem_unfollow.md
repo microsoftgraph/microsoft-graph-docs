@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 author: chackman
 ms.author: chackman
 title: Unfollow drive item

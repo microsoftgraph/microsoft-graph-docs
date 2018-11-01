@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List WorksheetCollection
 
 Retrieve a list of worksheet objects.

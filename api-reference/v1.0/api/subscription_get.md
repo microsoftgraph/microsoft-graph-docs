@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get subscription
 
 Retrieve the properties and relationships of a subscription.

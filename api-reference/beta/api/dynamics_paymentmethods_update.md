@@ -1,4 +1,7 @@
 ---
+apiDocType: apiPageType
+---
+---
 title: Update paymentMethods 
 description: Updates a payment method object in Dynamics 365 Business Central.
 services: project-madeira

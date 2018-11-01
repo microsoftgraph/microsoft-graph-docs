@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Update inferenceclassificationoverride
 
 Change the **classifyAs** field of an override as specified. 

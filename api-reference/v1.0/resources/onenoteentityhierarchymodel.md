@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # onenoteEntityHierarchyModel resource
 
 This is a base type for OneNote entities.

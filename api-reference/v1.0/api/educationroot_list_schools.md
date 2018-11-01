@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # List educationSchools
 
 Retrieve a list of all school objects.

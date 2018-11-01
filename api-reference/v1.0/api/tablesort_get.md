@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get TableSort
 
 Retrieve the properties and relationships of tablesort object.

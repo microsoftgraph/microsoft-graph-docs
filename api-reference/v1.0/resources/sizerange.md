@@ -1,3 +1,6 @@
+---
+apiDocType: resourcePageType
+---
 # sizeRange resource type
 
 

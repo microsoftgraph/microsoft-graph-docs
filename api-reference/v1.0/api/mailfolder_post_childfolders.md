@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Create MailFolder
 
 Use this API to create a new child mailfolder.

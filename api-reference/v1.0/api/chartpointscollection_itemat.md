@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # ChartPointsCollection: ItemAt
 
 Retrieve a point based on its position within the series.

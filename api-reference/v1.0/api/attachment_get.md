@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get attachment
 
 Read the properties and relationships of an attachment, attached to an [event](../resources/event.md), 

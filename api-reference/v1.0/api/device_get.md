@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Get device
 
 Get the properties and relationships of a device object.

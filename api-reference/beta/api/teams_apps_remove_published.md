@@ -1,3 +1,6 @@
+---
+apiDocType: apiPageType
+---
 # Remove an app from your organization's app catalog
 
 Remove the [app](../resources/teamscatalogapp.md) from your organization's app catalog (the tenant app catalog). 
