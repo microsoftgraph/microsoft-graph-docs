@@ -6,7 +6,7 @@ title: Get an entry from a SharePoint list
 ---
 # Get an item in a list
 
-Returns the metadata for an [item][] in a [list][].
+Returns the metadata and actual data for an [item][] in a [list][].
 
 [list]: ../resources/list.md
 [item]: ../resources/listItem.md
