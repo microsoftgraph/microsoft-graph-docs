@@ -1,8 +1,10 @@
 # Update apps published to your organization's app catalog
 
-Update an [app](../resources/teamscatalogapp.md) previously published to the Microsoft Teams app catalog. 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Update an [app](../resources/teamsapp.md) previously published to the Microsoft Teams app catalog. 
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog). 
-To publish to your organization's app catalog, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamscatalogapp.md) resource.
+To publish to your organization's app catalog, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
 
 ## Permissions
 
@@ -33,7 +35,7 @@ PUT /appCatalogs/teamsApps/{id}
 
 Teams Zip Manifest Payload: For Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
 
->**Note:** Use the ID returned from the [List published apps](./teams_apps_list_published.md) call for to reference the app you'd like to update. 
+>**Note:** Use the ID returned from the [List published apps](./teamsapp_list.md) call for to reference the app you'd like to update. 
 Do not use the ID from the manifest of the zip app package.
 
 ## Response

@@ -2,56 +2,49 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-An application installed in a [team](team.md). 
-Any bots that are part of the app will become part of any team the app is added to.
+An app in the [Microsoft Teams](teams_api_overview.md) app catalog.
 
-To find the app ID of an app you want to install, 
-use the [Microsoft Teams client UI](https://teams.microsoft.com) to add that app to a test team, 
-then use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to [List apps](../api/teams_apps_list.md) in that test team.
+Users can see these apps in the Microsoft Teams Store, and these apps can be installed in [teams](team.md) using the [Add app to team](../api/teamsappinstallation_add.md) method.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List apps](../api/teams_apps_list.md) | [teamsApp](teamsapp.md) | Lists apps installed in a team.|
-|[Add app](../api/teams_apps_add.md) | [teamsApp](teamsapp.md) | Adds (installs) an app to a team.|
-|[Remove app](../api/teams_apps_delete.md) | None | Removes (uninstalls) an app from a team.|
-
+|[List published apps](../api/teamsapp_list.md) | [teamsApp](teamsApp.md) collection | List published apps from the Microsoft Teams apps catalog.|
+|[Publish an app](../api/teamsapp_publish.md) | [teamsApp](teamsApp.md) | Publish an app to your organization's app catalog.|
+|[Update a published app](../api/teamsapp_update.md) | [teamsApp](teamsApp.md) | Update a published app in your organization's app catalog.|
+|[Remove a published app](../api/teamsapp_delete.md) | None | Remove a published app from your organization's app catalog.|
 
 ## Properties
 
-|Name          |Type           |Description                                                                                                                                      |
-|--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|id			|string      |App id.|
-|name			|string      |Name of the app.|
-|version		|string      |Version of the app.|
-|distributionMethod		| string  |Where the app came from, possible values are "store", "organization", and "sideloaded" |
+| Property            | Type     | Description |
+|:------------------- |:-------- |:----------- |
+| id                  | string   | The catalog app's generated app ID (different from the developer-provided ID in the [Microsoft Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
+| externalId          | string   | The ID of the catalog provided by the app developer in the [Microsoft Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
+| displayName                | string   | The name of the catalog app provided by the app developer in the [Microsoft Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
+| distributionMethod  | enum     | The method of distribution for the app: `organization`, `sideloaded`, `store`. |
+
+## Relationships
+
+| Relationship | Type	| Description |
+|:---------------|:--------|:----------|
+|appDefinitions|[teamsAppDefinition](teamsappdefinition.md) collection| The details for each version of the app. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.team"
-}-->
-
 ```json
 {
-  "id": "string (identifier)",
-  "name": "string",
-  "version": "string",
-  "isBlocked": false,
-  "installedState": "string",
-  "context": "string"
+  "id": "0d0e31ca-59a5-31a6-8d87-12429a173d34",
+  "externalId": "bcb707d5-94e0-48f8-bbe7-6137a0565a4c",
+  "name": "Test App",
+  "version": "1.0.0",
+  "distributionMethod": "Organization"
 }
-
 ```
 
 # See also
 
-[Pinning apps to tabs in channels](../resources/teamstab.md)
+- [teamsAppInstallation](teamsAppInstallation.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -4,14 +4,14 @@
 
 ## Properties
 
-| Property       | Type    | Description|
-|:---------------|:--------|:----------|
-| identity | [identitySet](identityset.md) | Identity information of the participant. |
-| upn | String |  The user principal name of the participant. |
+| Property       | Type                          | Description                              |
+|:---------------|:------------------------------|:-----------------------------------------|
+| identity       | [identitySet](identityset.md) | Identity information of the participant. |
+| upn            | String                        | User principal name of the participant.  |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

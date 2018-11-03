@@ -14,13 +14,14 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Group.Read.All, Group.ReadWrite.All         |
 
 ## HTTP request
+
 ```http
 GET /teams/{id}/channels/{id}/tabs
 ```
 
-
 ## Optional query parameters
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+
+This method supports the $filter, $select, and $expand [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
 | Header       | Value |

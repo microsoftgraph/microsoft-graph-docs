@@ -1,27 +1,23 @@
-# List apps in team
+# Add app to team
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the list of apps installed in the specified [team](../resources/team.md).
+Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All    |
+|Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/apps
+POST /teams/{id}/installedApps
 ```
-
-## Optional query parameters
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
-
 
 ## Request headers
 | Header       | Value |
@@ -29,42 +25,41 @@ The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|id|String|The id of the app to add.|
+
 
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [teamsApp](../resources/teamsapp.md) objects in the response body.
 
+If successful, this method returns a `200 OK` response code.
 ## Example
 #### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "request",
-  "name": "get_owners"
+  "blockType": "ignored",
+  "name": "get_team"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/apps
+POST https://graph.microsoft.com/beta/teams/{id}/installedApps
+{
+  "id": "12345678-9abc-def0-123456789a"
+}
 ```
-
 #### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.team"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
+Content-length: 401
 
 {
-  "value": [
-    {
-      "id": "id-value"
-    }
-  ]
 }
 ```
 
@@ -72,8 +67,11 @@ Content-length: 55
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List owners",
+  "description": "Get team",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
 }-->
+
+## See also
+

@@ -1,6 +1,8 @@
 # Publish apps to your organization's app catalog
 
-Publish an [app](../resources/teamscatalogapp.md) to the Microsoft Teams apps catalog. 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog. 
 Specifically, this API publishes the app to your organization's catalog (the tenant app catalog); 
 the created resource will have `distributionMethod` = `organization`.
 
@@ -37,7 +39,7 @@ You can't create an app for an organization that has the same manifest ID as ano
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [teamsCatalogApp](../resources/teamscatalogapp.md) object.
+If successful, this method returns a `200 OK` response code and a [teamsCatalogApp](../resources/teamsapp.md) object.
 
 ## Example
 

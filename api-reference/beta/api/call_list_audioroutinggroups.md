@@ -37,7 +37,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -49,7 +49,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
 
 ##### Response
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
