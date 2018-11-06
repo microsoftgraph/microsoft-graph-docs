@@ -9,7 +9,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | EduRoster.ReadBasic |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Application | EduRoster.ReadBasic.All, EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

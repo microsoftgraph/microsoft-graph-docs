@@ -11,7 +11,7 @@ A combination of permissions is required to call this API. To learn more, includ
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  One from EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write plus either Directory.Read.All or User.Read|
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduRoster.Read.All, EduRoster.ReadWrite.All plus Directory.Read.All| 
+|Application | EduRoster.ReadBasic.All, EduRoster.Read.All, EduRoster.ReadWrite.All plus Directory.Read.All| 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
