@@ -62,7 +62,7 @@
           "api-reference/**.md",
           "api-reference/**.yml",
           "api/**.yml",
-          "resources/**.yml",
+          "resources/**.yml"
         ],
         "src": "api-reference/beta/",       
         "group": "beta",
