@@ -4,7 +4,8 @@
       {
         "files": [
           "**.md",
-          "**.yml"
+          "**.yml",
+          "TOC.yml"
         ],
         "group": "v1.0",
         "src": "concepts",
