@@ -19,77 +19,77 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added the **licenseAssignmentStates** property to the [User](../api-reference/beta/resources/user.md) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Addition | Beta | Added the **licenseAssignmentState** resource for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
-| Addition | Beta | Added the **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** and **membersWithLicenseErrors** properties to [Group](../api-reference/beta/resources/group.md) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
+| Addition | Beta | Added the **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** and **membersWithLicenseErrors** properties to [Group](/api-reference/beta/resources/group.md) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 
 
 ### Microsoft Intune APIs
 
 |Change type|Version|Description|
 |:---|:---|:---|
-|Addition|beta|Added new entities:<br/>[intuneBrandingProfile](../api-reference/beta/resources/intune_wip_intunebrandingprofile.md)<br/>|
-|Addition|beta|Added new complex types:<br/>[deviceAndAppManagementAssignedRoleIds](../api-reference/beta/resources/intune_rbac_deviceandappmanagementassignedroleids.md)<br/>|
-|Addition|beta|Added new enum types:<br/>[applicationGuardEnabledOptions](../api-reference/beta/resources/intune_deviceconfig_applicationguardenabledoptions.md)<br/>[autoRestartNotificationDismissalMethod](../api-reference/beta/resources/intune_deviceconfig_autorestartnotificationdismissalmethod.md)<br/>[meteredConnectionLimitType](../api-reference/beta/resources/intune_deviceconfig_meteredconnectionlimittype.md)<br/>|
-|Addition|beta|Added the [enableLegacyPcManagement](../api-reference/beta/api/intune_deviceconfig_devicemanagement_enablelegacypcmanagement.md) action on [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) |
-|Addition|beta|Added the [extendFeatureUpdatesPause](../api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_extendfeatureupdatespause.md) action on [windowsUpdateForBusinessConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) |
-|Addition|beta|Added the [extendQualityUpdatesPause](../api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_extendqualityupdatespause.md) action on [windowsUpdateForBusinessConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) |
-|Addition|beta|Added the [unassignUserFromDevice](../api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_unassignuserfromdevice.md) action on [windowsAutopilotDeviceIdentity](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity.md) |
-|Addition|beta|Added the [getAssignedRoleIdsForLoggedInUser](../api-reference/beta/api/intune_rbac_devicemanagement_getassignedroleidsforloggedinuser.md) function on [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) |
-|Addition|beta|Added the [getManagedDevicesWithAppFailures](../api-reference/beta/api/intune_troubleshooting_user_getmanageddeviceswithappfailures.md) function on [user](../api-reference/beta/resources/intune_devices_user.md) |
-|Addition|beta|Added the [managedDeviceEnrollmentAbandonmentSummary](../api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentabandonmentsummary.md) function on [reportRoot](../api-reference/beta/resources/intune_deviceconfig_reportroot.md) |
-|Addition|beta|Added the [managedDeviceEnrollmentAbandonmentDetails](../api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentabandonmentdetails.md) function on [reportRoot](../api-reference/beta/resources/intune_deviceconfig_reportroot.md) |
-|Deletion|beta|Removed the **subjectAlternativeNameType** property from the [androidForWorkCertificateProfileBase](../api-reference/beta/resources/intune_deviceconfig_androidforworkcertificateprofilebase.md) entity|
-|Addition|beta|Added the **subjectAlternativeNameType** property to the [androidForWorkPkcsCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_androidforworkpkcscertificateprofile.md) entity|
+|Addition|beta|Added new entities:<br/>[intuneBrandingProfile](/api-reference/beta/resources/intune_wip_intunebrandingprofile.md)<br/>|
+|Addition|beta|Added new complex types:<br/>[deviceAndAppManagementAssignedRoleIds](/api-reference/beta/resources/intune_rbac_deviceandappmanagementassignedroleids.md)<br/>|
+|Addition|beta|Added new enum types:<br/>[applicationGuardEnabledOptions](/api-reference/beta/resources/intune_deviceconfig_applicationguardenabledoptions.md)<br/>[autoRestartNotificationDismissalMethod](/api-reference/beta/resources/intune_deviceconfig_autorestartnotificationdismissalmethod.md)<br/>[meteredConnectionLimitType](/api-reference/beta/resources/intune_deviceconfig_meteredconnectionlimittype.md)<br/>|
+|Addition|beta|Added the [enableLegacyPcManagement](/api-reference/beta/api/intune_deviceconfig_devicemanagement_enablelegacypcmanagement.md) action on [deviceManagement](/api-reference/beta/resources/intune_androidforwork_devicemanagement.md) |
+|Addition|beta|Added the [extendFeatureUpdatesPause](/api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_extendfeatureupdatespause.md) action on [windowsUpdateForBusinessConfiguration](/api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) |
+|Addition|beta|Added the [extendQualityUpdatesPause](/api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_extendqualityupdatespause.md) action on [windowsUpdateForBusinessConfiguration](/api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) |
+|Addition|beta|Added the [unassignUserFromDevice](/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_unassignuserfromdevice.md) action on [windowsAutopilotDeviceIdentity](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity.md) |
+|Addition|beta|Added the [getAssignedRoleIdsForLoggedInUser](/api-reference/beta/api/intune_rbac_devicemanagement_getassignedroleidsforloggedinuser.md) function on [deviceManagement](/api-reference/beta/resources/intune_androidforwork_devicemanagement.md) |
+|Addition|beta|Added the [getManagedDevicesWithAppFailures](/api-reference/beta/api/intune_troubleshooting_user_getmanageddeviceswithappfailures.md) function on [user](/api-reference/beta/resources/intune_devices_user.md) |
+|Addition|beta|Added the [managedDeviceEnrollmentAbandonmentSummary](/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentabandonmentsummary.md) function on [reportRoot](/api-reference/beta/resources/intune_deviceconfig_reportroot.md) |
+|Addition|beta|Added the [managedDeviceEnrollmentAbandonmentDetails](/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentabandonmentdetails.md) function on [reportRoot](/api-reference/beta/resources/intune_deviceconfig_reportroot.md) |
+|Deletion|beta|Removed the **subjectAlternativeNameType** property from the [androidForWorkCertificateProfileBase](/api-reference/beta/resources/intune_deviceconfig_androidforworkcertificateprofilebase.md) entity|
+|Addition|beta|Added the **subjectAlternativeNameType** property to the [androidForWorkPkcsCertificateProfile](/api-reference/beta/resources/intune_deviceconfig_androidforworkpkcscertificateprofile.md) entity|
 |Addition|beta|Added the **certificateStore**, **customSubjectAlternativeNames** and **subjectAlternativeNameType** properties to the [androidForWorkScepCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_androidforworkscepcertificateprofile.md) entity|
 |Deletion|beta|Removed the **subjectAlternativeNameType** property from the [androidWorkProfileCertificateProfileBase](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilecertificateprofilebase.md) entity|
 |Addition|beta|Added the **subjectAlternativeNameType** property to the [androidWorkProfilePkcsCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilepkcscertificateprofile.md) entity|
 |Addition|beta|Added the **certificateStore**, **customSubjectAlternativeNames** and **subjectAlternativeNameType** properties to the [androidWorkProfileScepCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilescepcertificateprofile.md) entity|
-|Addition|beta|Added the **legacyPcManangementEnabled** property to the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) entity|
-|Deletion|beta|Removed the **pinRequiredOnLaunchInsteadOfBiometric** property from the [managedAppProtection](../api-reference/beta/resources/intune_mam_managedappprotection.md) entity|
-|Addition|beta|Added the **roleScopeTagIds** property to the [managedDeviceMobileAppConfiguration](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration.md) entity|
-|Addition|beta|Added the **applicationGuardEnabledOptions** property to the [windows10EndpointProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md) entity|
-|Addition|beta|Added the **selectedMobileAppIds** property to the [windows10EnrollmentCompletionPageConfiguration](../api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration.md) entity|
+|Addition|beta|Added the **legacyPcManangementEnabled** property to the [deviceManagement](/api-reference/beta/resources/intune_androidforwork_devicemanagement.md) entity|
+|Deletion|beta|Removed the **pinRequiredOnLaunchInsteadOfBiometric** property from the [managedAppProtection](/api-reference/beta/resources/intune_mam_managedappprotection.md) entity|
+|Addition|beta|Added the **roleScopeTagIds** property to the [managedDeviceMobileAppConfiguration](/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration.md) entity|
+|Addition|beta|Added the **applicationGuardEnabledOptions** property to the [windows10EndpointProtectionConfiguration](/api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md) entity|
+|Addition|beta|Added the **selectedMobileAppIds** property to the [windows10EnrollmentCompletionPageConfiguration](/api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration.md) entity|
 |Addition|beta|Added the **engagedRestartDeadlineInDays**, **engagedRestartSnoozeScheduleInDays**, **engagedRestartTransitionScheduleInDays**, **autoRestartNotificationDismissal**, **scheduleRestartWarningInHours** and **scheduleImminentRestartWarningInMinutes** properties to the [windowsUpdateForBusinessConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) entity|
-|Addition|beta|Added the **preSharedKey** and **meteredConnectionLimit** properties to the [windowsWifiConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowswificonfiguration.md) entity|
-|Addition|beta|Added the **intuneBrandingProfiles** navigation property to the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) entity|
+|Addition|beta|Added the **preSharedKey** and **meteredConnectionLimit** properties to the [windowsWifiConfiguration](/api-reference/beta/resources/intune_deviceconfig_windowswificonfiguration.md) entity|
+|Addition|beta|Added the **intuneBrandingProfiles** navigation property to the [deviceManagement](/api-reference/beta/resources/intune_androidforwork_devicemanagement.md) entity|
 |Addition|beta|Added the **v6_0**, **v7_0**, **v7_1**, **v8_0**, **v8_1** and **v9_0** properties to the [androidMinimumOperatingSystem](../api-reference/beta/resources/intune_apps_androidminimumoperatingsystem.md) complex type|
 |Addition|beta|Added the **v12_0** property to the [iosMinimumOperatingSystem](../api-reference/beta/resources/intune_apps_iosminimumoperatingsystem.md) complex type|
-|Deletion|beta|Removed the **runAsLoggedOnUser** property from the [win32LobAppPowerShellScriptDetection](../api-reference/beta/resources/intune_apps_win32lobapppowershellscriptdetection.md) complex type|
-|Addition|beta|Added the **lastUpdateDateTime** property to the [osVersionCount](../api-reference/beta/resources/intune_devices_osversioncount.md) complex type|
-|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareCategoryCount](../api-reference/beta/resources/intune_devices_windowsmalwarecategorycount.md) complex type|
-|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareExecutionStateCount](../api-reference/beta/resources/intune_devices_windowsmalwareexecutionstatecount.md) complex type|
-|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareNameCount](../api-reference/beta/resources/intune_devices_windowsmalwarenamecount.md) complex type|
-|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareStateCount](../api-reference/beta/resources/intune_devices_windowsmalwarestatecount.md) complex type|
+|Deletion|beta|Removed the **runAsLoggedOnUser** property from the [win32LobAppPowerShellScriptDetection](/api-reference/beta/resources/intune_apps_win32lobapppowershellscriptdetection.md) complex type|
+|Addition|beta|Added the **lastUpdateDateTime** property to the [osVersionCount](/api-reference/beta/resources/intune_devices_osversioncount.md) complex type|
+|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareCategoryCount](/api-reference/beta/resources/intune_devices_windowsmalwarecategorycount.md) complex type|
+|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareExecutionStateCount](/api-reference/beta/resources/intune_devices_windowsmalwareexecutionstatecount.md) complex type|
+|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareNameCount](/api-reference/beta/resources/intune_devices_windowsmalwarenamecount.md) complex type|
+|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareStateCount](/api-reference/beta/resources/intune_devices_windowsmalwarestatecount.md) complex type|
 
 ### Microsoft Teams APIs
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|beta|Added application permissions support to [archive team](../api-reference/beta/api/team_archive.md) and [unarchive team](../api-reference/beta/api/team_unarchive.md) APIs.|
+|Addition|beta|Added application permissions support to [archive team](/api-reference/beta/api/team_archive.md) and [unarchive team](../api-reference/beta/api/team_unarchive.md) APIs.|
 
 ### Outlook calendar
 
 | Change type | Version | Description |
 | :---------- | :-------| :---------- |
-| Change      | Beta    | Removed he `iCalUid` property from the [event resource](../api-reference/beta/resources/event.md) and added the `uid` property to the `event` resource. The `uid` property serves the same purpose as the removed `iCalUid` property. |
-| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
+| Change      | Beta    | Removed he `iCalUid` property from the [event resource](/api-reference/beta/resources/event.md) and added the `uid` property to the `event` resource. The `uid` property serves the same purpose as the removed `iCalUid` property. |
+| Addition    | Beta    | Added the [translateExchangeIds](/api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
 
 ### Outlook contacts
 
 | Change type | Version | Description |
 | :---------- | :-------| :---------- |
-| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
+| Addition    | Beta    | Added the [translateExchangeIds](/api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
 | Removal         | v1.0        | This is a correction to the documentation: removed the **flag** property from the [contact](../api-reference/v1.0/resources/contact.md) entity topic. The property was never made available in the **contact** entity.|
 
 ### Outlook mail
 
 | Change type | Version | Description |
 | :---------- | :-------| :---------- |
-| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
+| Addition    | Beta    | Added the [translateExchangeIds](/api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
 
 ### Reports APIs
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Addition    | v1.0    | Added the **Site ID** property to [getSharePointSiteUsageDetail](../api-reference/v1.0/api/reportroot_getsharepointsiteusagedetail.md). |
+| Addition    | v1.0    | Added the **Site ID** property to [getSharePointSiteUsageDetail](/api-reference/v1.0/api/reportroot_getsharepointsiteusagedetail.md). |
 
 ### Synchronization APIs
 
@@ -104,10 +104,10 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Change          | Beta        | The [application](../api-reference/beta/resources/application.md) resource was updated to add a calls collection. |
-| Change          | Beta        | The [operation](../api-reference/beta/resources/operation.md) resource was updated to support long-running calls and meetings APIs. |
-| Addition        | Beta        | Added the [call](../api-reference/beta/resources/call.md) resource for managing audio/video calls (initially, in Microsoft Teams), including APIs for [creating calls](../api-reference/beta/api/application_post_calls.md), [retrieving a a call](../api-reference/beta/api/call_get.md), [deleting (hanging up) a call](../api-reference/beta/api/call_delete.md), [answering a call](../api-reference/beta/api/call_answer.md), [rejecting a call](../api-reference/beta/api/call_reject.md), [redirecting a call](../api-reference/beta/api/call_redirect.md), and [transferring a call](../api-reference/beta/api/call_transfer.md). We've also added APIs to support [IVR scenarios](../api-reference/beta/resources/calls-api-ivr-overview): [playing a prompt](../api-reference/beta/api/call_playprompt.md), [recording a call](../api-reference/beta/api/call_record.md), [cancel media processing](../api-reference/beta/api/call_cancelmediaprocessing.md), and [subscribing to touch tone notifications](../api-reference/beta/api/call_subscribetotone.md). |
-| Addition        | Beta        | Added the [participant](../api-reference/beta/resources/call.md) resource and APIs for managing the participants in audio/video calls and meetings, including [retrieving a participant object](../api-reference/beta/api/participant_get.md), [configuring the audio mixer for a participant](../api-reference/beta/api/participant_configuremixer.md), muting [one](../api-reference/beta/api/participant_mute.md) or [all](../api-reference/beta/api/participant_muteall.md) of the participants, [retrieving a list of the participants](../api-reference/beta/api/call_list_participants.md) in a call/meeting, and [inviting participants](../api-reference/beta/api/participant_invite.md) to a call/meeting. |
+| Change          | Beta        | The [application](/api-reference/beta/resources/application.md) resource was updated to add a calls collection. |
+| Change          | Beta        | The [operation](/api-reference/beta/resources/operation.md) resource was updated to support long-running calls and meetings APIs. |
+| Addition        | Beta        | Added the [call](/api-reference/beta/resources/call.md) resource for managing audio/video calls (initially, in Microsoft Teams), including APIs for [creating calls](/api-reference/beta/api/application_post_calls.md), [retrieving a a call](../api-reference/beta/api/call_get.md), [deleting (hanging up) a call](/api-reference/beta/api/call_delete.md), [answering a call](../api-reference/beta/api/call_answer.md), [rejecting a call](/api-reference/beta/api/call_reject.md), [redirecting a call](../api-reference/beta/api/call_redirect.md), and [transferring a call](/api-reference/beta/api/call_transfer.md). We've also added APIs to support [IVR scenarios](/api-reference/beta/resources/calls-api-ivr-overview): [playing a prompt](../api-reference/beta/api/call_playprompt.md), [recording a call](/api-reference/beta/api/call_record.md), [cancel media processing](../api-reference/beta/api/call_cancelmediaprocessing.md), and [subscribing to touch tone notifications](/api-reference/beta/api/call_subscribetotone.md). |
+| Addition        | Beta        | Added the [participant](../api-reference/beta/resources/call.md) resource and APIs for managing the participants in audio/video calls and meetings, including [retrieving a participant object](/api-reference/beta/api/participant_get.md), [configuring the audio mixer for a participant](../api-reference/beta/api/participant_configuremixer.md), muting [one](../api-reference/beta/api/participant_mute.md) or [all](/api-reference/beta/api/participant_muteall.md) of the participants, [retrieving a list of the participants](../api-reference/beta/api/call_list_participants.md) in a call/meeting, and [inviting participants](/api-reference/beta/api/participant_invite.md) to a call/meeting. |
 | Addition        | Beta        | Added APIs for applications to manage and participate in calls and meetings, including the ability to [share content](../api-reference/beta/api/call_changescreensharingrole.md), [mute and unmute itself](../api-reference/beta/api/call_unmute.md), and [update the metadata associated with a call](../api-reference/beta/api/call_updatemetadata.md). |
 | Addition        | Beta        | Added the [audio routing group](../api-reference/beta/resources/audioroutinggroup.md) resource and APIs for managing private audio routes between participants in a multiparty conversation, including [creating audio routing groups](../api-reference/beta/api/call_post_audioroutinggroups.md), [retrieving a list of them](../api-reference/beta/api/audioroutinggroup_get.md), and [updating](../api-reference/beta/api/audioroutinggroup_update.md) and [deleting](../api-reference/beta/api/audioroutinggroup_delete.md) them. |
 | Addition        | Beta        | Added the [online meeting](../api-reference/beta/resources/audioroutinggroup.md) resource and APIs for managing Microsoft Teams online meetings. Initially, there is only one API for online meetings, to [retrieve an online meeting object](../api-reference/beta/api/onlinemeeting_get.md). A related resource for the [audio conference information](../api-reference/beta/resources/audioconferencing.md) associated with a meeting (e.g. dial-in URL, passcodes, and phone numbers) was also added. |
