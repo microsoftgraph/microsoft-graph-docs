@@ -139,7 +139,7 @@
     },
     "fileMetadata": {   
       "monikerRange": {
-        "api-reference/1.0/**": "graph-rest-1.0",
+        "api-reference/v1.0/**": "graph-rest-1.0",
         "api-reference/beta/**": "graph-rest-beta"
       },
       "feedback_system": {},
