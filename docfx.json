@@ -4,7 +4,8 @@
       {
         "files": [
           "**.md",
-          "**.yml"
+          "**.yml",
+          "TOC.yml"
         ],
         "group": "v1.0",
         "src": "concepts",
@@ -21,7 +22,8 @@
       {
         "files": [
           "**.md",
-          "**.yml"
+          "**.yml",
+          "TOC.yml"
         ],
         "group": "beta",
         "src": "concepts",
@@ -38,7 +40,9 @@
       {
         "files": [
           "api/**.md",
-          "resources/**.md"
+          "resources/**.md",
+          "api-reference/**.md",
+          "api-reference/**.yml"
         ],
         "src": "api-reference/v1.0/",        
         "group": "v1.0",
@@ -54,7 +58,11 @@
       {
        "files": [
           "api/**.md",
-          "resources/**.md"
+          "resources/**.md",
+          "api-reference/**.md",
+          "api-reference/**.yml",
+          "api/**.yml",
+          "resources/**.yml",
         ],
         "src": "api-reference/beta/",       
         "group": "beta",
