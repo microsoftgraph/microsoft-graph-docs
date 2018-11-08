@@ -6,7 +6,7 @@
       "build_output_subfolder": "microsoft-graph-docs",
       "locale": "en-us",
       "monikers": [],
-      "moniker_ranges": ["graph-rest-beta",">= graph-rest-1.0"], 
+      "moniker_ranges": ["graph-rest-beta || >= graph-rest-1.0"], 
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
