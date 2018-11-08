@@ -112,7 +112,7 @@
       "feedback_system": "GitHub",
       "feedback_github_repo": "microsoftgraph/microsoft-graph-docs",
       "feedback_product_url": "https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis",
-      "breadcrumb_path": "~/breadcrumb/toc.yml",
+      "breadcrumb_path": "/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
       "author": "jthake-msft",
       "ms.author": "jthake-msft",
