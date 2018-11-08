@@ -42,7 +42,9 @@
           "api/**.md",
           "resources/**.md",
           "api-reference/**.md",
-          "api-reference/**.yml"
+          "api-reference/**.yml",
+          "concepts/**.md",
+          "concepts/**.yml"
         ],
         "src": "api-reference/v1.0/",        
         "group": "v1.0",
@@ -62,7 +64,9 @@
           "api-reference/**.md",
           "api-reference/**.yml",
           "api/**.yml",
-          "resources/**.yml"
+          "resources/**.yml",
+          "concepts/**.md",
+          "concepts/**.yml"
         ],
         "src": "api-reference/beta/",       
         "group": "beta",
