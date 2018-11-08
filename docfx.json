@@ -5,7 +5,14 @@
         "files": [
           "**.md",
           "**.yml",
-          "TOC.yml"
+          "TOC.yml","api/**.md",
+          "resources/**.md",
+          "api-reference/**.md",
+          "api-reference/**.yml",
+          "api/**.yml",
+          "resources/**.yml",
+          "concepts/**.md",
+          "concepts/**.yml"
         ],
         "group": "v1.0",
         "src": "concepts",
