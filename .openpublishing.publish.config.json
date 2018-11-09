@@ -9,7 +9,7 @@
       "moniker_ranges": ["graph-rest-beta",">= graph-rest-1.0"], 
       "open_to_public_contributors": true,
       "type_mapping": {
-        "Conceptual": "Content",
+        "Conceptual": "Content",        
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
@@ -48,7 +48,7 @@
   "targets": {},
   "JoinTOCPlugin": [
     {
-      "ReferenceTOC": "toc.yml",
+      "ReferenceTOC": "api/toc.yml",
       "ReferenceTOCUrl": "/graph/api/toc.json",
       "ConceptualTOC": "concepts/toc.yml",
       "ConceptualTOCUrl": "/graph/toc.json"
