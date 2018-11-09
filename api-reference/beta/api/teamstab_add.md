@@ -34,7 +34,9 @@ A [teamsTab](../resources/teamstab.md).
 If successful, this method returns a `201 OK` response code.
 
 ## Example
+
 #### Request
+
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
@@ -44,7 +46,7 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 {
   "name": "My Contoso Tab",
-  "teamsAppId": "06805b9e-77e3-4b93-ac81-525eb87513b8",
+  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/teams/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
     "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",
@@ -53,13 +55,16 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
   }
 }
 ```
+
 #### Response
+
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.team"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -67,7 +72,6 @@ Content-type: application/json
 {
   "id": "794f0e4e-4d10-4bb5-9079-3a465a629eff",
   "name": "My Contoso Tab",
-  "teamsAppId": "06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
     "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",
