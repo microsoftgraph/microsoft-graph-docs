@@ -79,4 +79,5 @@ The following is a JSON representation of the resource.
 }-->
 
 ## See Also
-[Teams API Overview](teams_api_overview.md)
+- [Creating a group with a team](../../../concepts/teams-create-group-and-team.md)
+- [Teams API Overview](teams_api_overview.md)
