@@ -33,7 +33,7 @@ You can use extensions on all these resources when signed in with a work or scho
 ## Open extensions
 
 [Open extensions](../api-reference/v1.0/resources/opentypeextension.md) (formerly known as Office 365 data extensions) are
-[open types](http://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a flexible way to
+[open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a flexible way to
 add untyped app data directly to a resource instance.
 
 Open extensions, together with their custom data, are accessible through the **extensions** navigation property of the resource instance.
@@ -103,7 +103,7 @@ The following data types are supported when defining a property in a schema exte
 
 ### Azure AD directory schema extensions
 
-Azure AD supports a similar type of extension, known as [directory schema extensions](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), on a few [directoryObject](../api-reference/v1.0/resources/directoryObject.md) resources. Although you have to use the [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) to create and manage the definitions of directory schema extensions, you can use the Microsoft Graph API to add, get, update and delete _data_ in the properties of these extensions.
+Azure AD supports a similar type of extension, known as [directory schema extensions](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), on a few [directoryObject](../api-reference/v1.0/resources/directoryObject.md) resources. Although you have to use the [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) to create and manage the definitions of directory schema extensions, you can use the Microsoft Graph API to add, get, update and delete _data_ in the properties of these extensions.
 
 ## Permissions
 
@@ -122,7 +122,7 @@ The following limits apply to directory resources (such as **user**, **group**, 
 
 The following limits apply to Outlook resources (such as **message**, **event**, and **contact**):
 
-- Each open extension is stored in a [MAPI named property](https://msdn.microsoft.com/en-us/library/cc765864(v=office.15).aspx), which are a limited resource in a user's mailbox. For more details, see [openTypeExtension resource type](../api-reference/v1.0/resources/opentypeextension.md).
+- Each open extension is stored in a [MAPI named property](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx), which are a limited resource in a user's mailbox. For more details, see [openTypeExtension resource type](../api-reference/v1.0/resources/opentypeextension.md).
 
 ### Schema extension limits
 
@@ -142,4 +142,4 @@ For known limitations using extensions, see the [extensions section](known_issue
 
 - [Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
-- [Adding and verifying a domain for an Office 365 tenant](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [Adding and verifying a domain for an Office 365 tenant](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

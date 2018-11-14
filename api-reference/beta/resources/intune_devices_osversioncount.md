@@ -10,6 +10,7 @@ Count of devices with malware for each OS version
 |:---|:---|:---|
 |osVersion|String|OS version|
 |deviceCount|Int32|Count of devices with malware for the OS version|
+|lastUpdateDateTime|DateTimeOffset|The Timestamp of the last update for the device count in UTC|
 
 ## Relationships
 None
@@ -17,7 +18,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.osVersionCount"
 }
 -->
@@ -25,7 +25,8 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.osVersionCount",
   "osVersion": "String",
-  "deviceCount": 1024
+  "deviceCount": 1024,
+  "lastUpdateDateTime": "String (timestamp)"
 }
 ```
 

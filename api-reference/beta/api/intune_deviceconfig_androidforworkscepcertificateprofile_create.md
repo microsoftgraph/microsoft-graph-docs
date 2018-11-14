@@ -47,7 +47,6 @@ The following table shows the properties that are required when you create the a
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |renewalThresholdPercentage|Int32|Certificate renewal threshold percentage. Valid values 1 to 99 Inherited from [androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md)|
 |subjectNameFormat|[subjectNameFormat](../resources/intune_deviceconfig_subjectnameformat.md)|Certificate Subject Name Format. Inherited from [androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md). Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
-|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune_deviceconfig_subjectalternativenametype.md)|Certificate Subject Alternative Name Type. Inherited from [androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md). Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period. Inherited from [androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md)|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune_deviceconfig_certificatevalidityperiodscale.md)|Scale for the Certificate Validity Period. Inherited from [androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md). Possible values are: `days`, `months`, `years`.|
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune_deviceconfig_extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements. Inherited from [androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md)|
@@ -57,6 +56,9 @@ The following table shows the properties that are required when you create the a
 |keySize|[keySize](../resources/intune_deviceconfig_keysize.md)|SCEP Key Size. Possible values are: `size1024`, `size2048`.|
 |hashAlgorithm|[hashAlgorithms](../resources/intune_deviceconfig_hashalgorithms.md)|SCEP Hash Algorithm. Possible values are: `sha1`, `sha2`.|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
+|certificateStore|[certificateStore](../resources/intune_deviceconfig_certificatestore.md)|Target store certificate. Possible values are: `user`, `machine`.|
+|customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune_deviceconfig_customsubjectalternativename.md) collection|Custom Subject Alterantive Name Settings. This collection can contain a maximum of 500 elements.|
+|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune_deviceconfig_subjectalternativenametype.md)|Certificate Subject Alternative Name Type. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 
 
 
@@ -69,7 +71,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1045
+Content-length: 1269
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkScepCertificateProfile",
@@ -83,7 +85,6 @@ Content-length: 1045
   "version": 7,
   "renewalThresholdPercentage": 10,
   "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "emailAddress",
   "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "extendedKeyUsages": [
@@ -100,7 +101,16 @@ Content-length: 1045
   "keyUsage": "digitalSignature",
   "keySize": "size2048",
   "hashAlgorithm": "sha2",
-  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+  "certificateStore": "machine",
+  "customSubjectAlternativeNames": [
+    {
+      "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+      "sanType": "emailAddress",
+      "name": "Name value"
+    }
+  ],
+  "subjectAlternativeNameType": "emailAddress"
 }
 ```
 
@@ -109,7 +119,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1153
+Content-Length: 1377
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkScepCertificateProfile",
@@ -125,7 +135,6 @@ Content-Length: 1153
   "version": 7,
   "renewalThresholdPercentage": 10,
   "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "emailAddress",
   "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "extendedKeyUsages": [
@@ -142,7 +151,16 @@ Content-Length: 1153
   "keyUsage": "digitalSignature",
   "keySize": "size2048",
   "hashAlgorithm": "sha2",
-  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+  "certificateStore": "machine",
+  "customSubjectAlternativeNames": [
+    {
+      "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+      "sanType": "emailAddress",
+      "name": "Name value"
+    }
+  ],
+  "subjectAlternativeNameType": "emailAddress"
 }
 ```
 

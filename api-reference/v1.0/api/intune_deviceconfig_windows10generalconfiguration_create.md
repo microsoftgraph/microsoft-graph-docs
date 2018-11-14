@@ -239,6 +239,7 @@ The following table shows the properties that are required when you create the w
 |experienceBlockErrorDialogWhenNoSIM|Boolean|Indicates whether or not to allow the error dialog from displaying if no SIM card is detected.|
 |experienceBlockTaskSwitcher|Boolean|Indicates whether or not to enable task switching on the device.|
 |logonBlockFastUserSwitching|Boolean|Disables the ability to quickly switch between users that are logged on simultaneously without logging off.|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|Whether the device is required to connect to the network.|
 
 
 
@@ -251,11 +252,10 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 9767
+Content-length: 9768
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -482,7 +482,8 @@ Content-length: 9767
   "experienceBlockDeviceDiscovery": true,
   "experienceBlockErrorDialogWhenNoSIM": true,
   "experienceBlockTaskSwitcher": true,
-  "logonBlockFastUserSwitching": true
+  "logonBlockFastUserSwitching": true,
+  "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
 }
 ```
 
@@ -491,7 +492,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 9875
+Content-Length: 9940
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -724,14 +725,10 @@ Content-Length: 9875
   "experienceBlockDeviceDiscovery": true,
   "experienceBlockErrorDialogWhenNoSIM": true,
   "experienceBlockTaskSwitcher": true,
-  "logonBlockFastUserSwitching": true
+  "logonBlockFastUserSwitching": true,
+  "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
 }
 ```
-
-
-
-
-
 
 
 

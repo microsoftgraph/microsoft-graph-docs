@@ -13,22 +13,36 @@ This resource details user or application sign-in activity in your directory.
 |:---------------|:--------|:----------|
 |appDisplayName|String|Refers to the application name displayed in the Azure Portal.|
 |appId|String|Refers to the Unique GUID representing Application Id in the Azure Active Directory.|
+|authenticationProcessingDetails|`authenticationProcessingDetails`|Provides the details associated with Authentication processor.|
 |clientAppUsed|String|Provides the legacy client used for sign-in activty.E.g. includes Browser, Exchange Active Sync,Modern clients, IMAP, MAPI, SMTP, POP.|
-|conditionalAccessPolicies|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
+|appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
 |conditionalAccessStatus|string| Provides the status of the conditional access policy triggered. Possible values are: `success`, `failure`, `notApplied`, `unknownFutureValue`.|
+|originalRequestId|String|The request id of the first request in the authentication sequence.|
+|isInteractive|Boolean|Indicates if a signIn is interactive or not.|
+|tokenIssuerName|String|Name of the identity Provider (e.g. sts.microsoft.com)|
+|tokenIssuerType|String|Provides the type of identityProvider. Possible values are `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
 |correlationId|String|Refers to the ID that's sent from the client when the sign-in is initiated. This is used for troubleshooting the corresponding sign-in activity when calling helpdesk or support.|
 |createdDateTime|DateTimeOffset|Provides the date and time the sign-in was initiated. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |deviceDetail|[deviceDetail](devicedetail.md)|Provides the device information from where the sign-in occurred. It inclules information like deviceId, OS, browser. |
 |id|String|Indicates unique ID representing the sign-in activity.|
 |ipAddress|String|Provides the IP address of the client from where the sign-in occurred.|
-|isRisky|Boolean|Indicates if the sign-in has risk signals associated with it.|
 |location|[signInLocation](signinlocation.md)|Provides the city, state and 2 letter country code from where the sign-in occurred.|
+|processingTimeInMilliseconds|Int|Provides the request processing time in milliseconds in AD STS|
+|riskDetail|`riskDetail`|Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. The value `none` means that no action has been performed on the user or sign-in so far.|
+|riskLevelAggregated|`riskLevel`|Provides the aggregated risk level. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection.|
+|riskLevelDuringSignIn|`riskLevel`|Provides the risk level during sign-in. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection.|
+|riskEventTypes|`riskEventTypes`|Provides the list of risk event types associated with the sign-in. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecurePasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`,  `adminConfirmedSigninCompromised`, `hidden`and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection.|
+|riskState|`riskState`|Provides the 'risk state' of a risky user, sign-in or a risk event. The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Provides the MFA related information like MFA Required, MFA Status for the corresponding sign-in.|
+|networkLocationDetail|[networkLocationDetail](networkLocationDetail.md)|Provides details about the network location.|
 |riskLevel|string| Provides the risk level associated with the sign-in.Possible values are: `low`, `medium`, `high`.|
 |status|[signInStatus](signinstatus.md)|Provides the sign-in status. Possible values include `Success` and `Failure`.|
 |userDisplayName|String|Indicates the display Name of the User.|
 |userId|String|Indicates the userId of the user.|
 |userPrincipalName|String|Indicates the UPN of the user.|
+|resourceDisplayName|String|Indicates the name of the resource that the user signed into|
+|resourceId|String|Indicates the Id of the resource that the user signed into.|
+|authenticationMethodsUsed|String|Indicates the list of Authentication methods used|
 
 ## Relationships
 None
@@ -48,24 +62,27 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "userDisplayName": "String",
+  "userPrincipalName": "String",
+  "userId": "String",
   "appDisplayName": "String",
   "appId": "String",
-  "clientAppUsed": "String",
-  "conditionalAccessPolicies": [{"@odata.type": "microsoft.graph.conditionalAccessPolicy"}],
-  "conditionalAccessStatus": "string",
-  "correlationId": "String",
-  "createdDateTime": "String (timestamp)",
-  "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
-  "id": "String (identifier)",
   "ipAddress": "String",
-  "isRisky": true,
-  "location": {"@odata.type": "microsoft.graph.signInLocation"},
+  "clientAppUsed": "String",
   "mfaDetail": {"@odata.type": "microsoft.graph.mfaDetail"},
+  "correlationId": "String",
+  "conditionalAccessStatus": "string",
+  "appliedConditionalAccessPolicy": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
+  "originalRequestId": "String",
+  "isInteractive": "String",
+  "tokenIssuerName": "String",
+  "tokenIssuerType": "String",
+  "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
+  "location": {"@odata.type": "microsoft.graph.signInLocation"},
   "riskLevel": "string",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
-  "userDisplayName": "String",
-  "userId": "String",
-  "userPrincipalName": "String"
 }
 
 ```

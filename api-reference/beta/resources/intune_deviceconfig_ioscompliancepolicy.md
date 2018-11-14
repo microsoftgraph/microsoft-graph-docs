@@ -31,6 +31,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |passcodeExpirationDays|Int32|Number of days before the passcode expires. Valid values 1 to 65535|
 |passcodeMinimumLength|Int32|Minimum length of passcode. Valid values 4 to 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a passcode is required.|
+|passcodeMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |passcodePreviousPasscodeBlockCount|Int32|Number of previous passcodes to block. Valid values 1 to 24|
 |passcodeMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
 |passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|The required passcode type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
@@ -78,6 +79,7 @@ Here is a JSON representation of the resource.
   "passcodeExpirationDays": 1024,
   "passcodeMinimumLength": 1024,
   "passcodeMinutesOfInactivityBeforeLock": 1024,
+  "passcodeMinutesOfInactivityBeforeScreenTimeout": 1024,
   "passcodePreviousPasscodeBlockCount": 1024,
   "passcodeMinimumCharacterSetCount": 1024,
   "passcodeRequiredType": "String",

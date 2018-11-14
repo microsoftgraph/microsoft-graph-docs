@@ -24,7 +24,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 912
+Content-Length: 1010
 
 {
   "value": {
@@ -64,6 +64,8 @@ Content-Length: 912
     "deviceName": "Device Name value",
     "managedDeviceId": "Managed Device Id value",
     "azureADDeviceId": "Azure ADDevice Id value",
+    "deviceModel": "Device Model value",
+    "deviceManufacturer": "Device Manufacturer value",
     "flaggedReasons": [
       "rootedDevice"
     ],

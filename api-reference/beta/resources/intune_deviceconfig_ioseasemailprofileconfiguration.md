@@ -43,6 +43,7 @@ Inherits from [easEmailProfileConfigurationBase](../resources/intune_deviceconfi
 |requireSmime|Boolean|Indicates whether or not to use S/MIME certificate.|
 |smimeEnablePerMessageSwitch|Boolean|Indicates whether or not to allow unencrypted emails.|
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
+|useOAuth|Boolean|Specifies whether the connection should use OAuth for authentication.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -93,7 +94,8 @@ Here is a JSON representation of the resource.
   "hostName": "String",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,
-  "requireSsl": true
+  "requireSsl": true,
+  "useOAuth": true
 }
 ```
 

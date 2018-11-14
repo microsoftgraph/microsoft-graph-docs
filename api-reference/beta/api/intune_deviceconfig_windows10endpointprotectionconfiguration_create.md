@@ -193,6 +193,7 @@ The following table shows the properties that are required when you create the w
 |smartScreenEnableInShell|Boolean|Allows IT Admins to configure SmartScreen for Windows.|
 |smartScreenBlockOverrideForFiles|Boolean|Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.|
 |applicationGuardEnabled|Boolean|Enable Windows Defender Application Guard|
+|applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune_deviceconfig_applicationguardenabledoptions.md)|Enable Windows Defender Application Guard for newer Windows builds. Possible values are: `notConfigured`, `enabledForEdge`, `enabledForOffice`, `enabledForEdgeAndOffice`.|
 |applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune_deviceconfig_applicationguardblockfiletransfertype.md)|Block clipboard to transfer image file, text file or neither of them. Possible values are: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
 |applicationGuardBlockNonEnterpriseContent|Boolean|Block enterprise sites to load non-enterprise content, such as third party plug-ins|
 |applicationGuardAllowPersistence|Boolean|Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)|
@@ -222,7 +223,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 26336
+Content-length: 26391
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -782,6 +783,7 @@ Content-length: 26336
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
+  "applicationGuardEnabledOptions": "enabledForEdge",
   "applicationGuardBlockFileTransfer": "blockImageAndTextFile",
   "applicationGuardBlockNonEnterpriseContent": true,
   "applicationGuardAllowPersistence": true,
@@ -849,7 +851,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 26444
+Content-Length: 26499
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -1411,6 +1413,7 @@ Content-Length: 26444
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
+  "applicationGuardEnabledOptions": "enabledForEdge",
   "applicationGuardBlockFileTransfer": "blockImageAndTextFile",
   "applicationGuardBlockNonEnterpriseContent": true,
   "applicationGuardAllowPersistence": true,

@@ -1,4 +1,4 @@
-# roleAssignment resource type
+﻿# roleAssignment resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -27,12 +27,12 @@ The Role Assignment resource. Role assignments tie together a role definition wi
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.roleAssignment",
@@ -44,11 +44,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
 
 
 

@@ -3,9 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Top level failure categories for enrollment.
-
 ## Members
-
 |Member|Value|Description|
 |:---|:---|:---|
 |unknown|0|Default value, failure reason is unknown.|
@@ -29,5 +27,3 @@ Top level failure categories for enrollment.
   ],
 }
 -->
-
-

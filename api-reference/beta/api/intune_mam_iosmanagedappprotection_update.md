@@ -72,7 +72,6 @@ The following table shows the properties that are required when you create the [
 |minimumWipeAppVersion|String|Versions less than or equal to the specified version will wipe the managed app and the associated company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune_mam_managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, when the device is either rooted or jailbroken, if DeviceComplianceRequired is set to true. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md). Possible values are: `block`, `wipe`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune_mam_managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md). Possible values are: `block`, `wipe`.|
-|pinRequiredOnLaunchInsteadOfBiometric|Boolean|Requires an app pin on launch instead of non biometrics passcode Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |pinRequiredInsteadOfBiometricTimeout|Duration|Timeout in minutes for an app pin instead of non biometrics passcode Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune_mam_appmanagementlevel.md)|The intended app management levels for this policy Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md). Possible values are: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
@@ -85,7 +84,9 @@ The following table shows the properties that are required when you create the [
 |allowedIosDeviceModels|String|Semicolon seperated list of device models allowed, as a string, for the managed app to work.|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune_mam_managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device model is not allowed. Possible values are: `block`, `wipe`.|
 |thirdPartyKeyboardsBlocked|Boolean|Defines if third party keyboards are allowed while accessing a managed app|
-|filterOpenInToOnlyManagedApps|Boolean|Defines if open-in operation is supported from the managed app to the filesharing locations selected.|
+|filterOpenInToOnlyManagedApps|Boolean|Defines if open-in operation is supported from the managed app to the filesharing locations selected. This setting only applies when AllowedOutboundDataTransferDestinations is set to ManagedApps and DisableProtectionOfManagedOutboundOpenInData is set to False.|
+|disableProtectionOfManagedOutboundOpenInData|Boolean|Disable protection of data transferred to other apps through IOS OpenIn option. This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps.|
+|protectInboundDataFromUnknownSources|Boolean|Protect incoming data from unknown source. This setting is only allowed to be True when AllowedInboundDataTransferSources is set to AllApps.|
 
 
 
@@ -98,7 +99,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 Content-type: application/json
-Content-length: 2371
+Content-length: 2427
 
 {
   "displayName": "Display Name value",
@@ -137,7 +138,6 @@ Content-length: 2371
   "minimumWipeAppVersion": "Minimum Wipe App Version value",
   "appActionIfDeviceComplianceRequired": "wipe",
   "appActionIfMaximumPinRetriesExceeded": "wipe",
-  "pinRequiredOnLaunchInsteadOfBiometric": true,
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
   "isAssigned": true,
   "targetedAppManagementLevels": "unmanaged",
@@ -156,7 +156,9 @@ Content-length: 2371
   "allowedIosDeviceModels": "Allowed Ios Device Models value",
   "appActionIfIosDeviceModelNotAllowed": "wipe",
   "thirdPartyKeyboardsBlocked": true,
-  "filterOpenInToOnlyManagedApps": true
+  "filterOpenInToOnlyManagedApps": true,
+  "disableProtectionOfManagedOutboundOpenInData": true,
+  "protectInboundDataFromUnknownSources": true
 }
 ```
 
@@ -165,7 +167,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2541
+Content-Length: 2597
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -207,7 +209,6 @@ Content-Length: 2541
   "minimumWipeAppVersion": "Minimum Wipe App Version value",
   "appActionIfDeviceComplianceRequired": "wipe",
   "appActionIfMaximumPinRetriesExceeded": "wipe",
-  "pinRequiredOnLaunchInsteadOfBiometric": true,
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
   "isAssigned": true,
   "targetedAppManagementLevels": "unmanaged",
@@ -226,7 +227,9 @@ Content-Length: 2541
   "allowedIosDeviceModels": "Allowed Ios Device Models value",
   "appActionIfIosDeviceModelNotAllowed": "wipe",
   "thirdPartyKeyboardsBlocked": true,
-  "filterOpenInToOnlyManagedApps": true
+  "filterOpenInToOnlyManagedApps": true,
+  "disableProtectionOfManagedOutboundOpenInData": true,
+  "protectInboundDataFromUnknownSources": true
 }
 ```
 

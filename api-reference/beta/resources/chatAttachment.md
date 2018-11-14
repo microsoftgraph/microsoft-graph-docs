@@ -1,10 +1,10 @@
-# chatAttachment resource type
+# chatMessageAttachment resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents an attachment to a chat message entity.
 
-An entity of type `chatAttachment` is returned as part of the [Get channel messages](../api/channel_list_messages.md) API, as a part of [chatMessage](chatMessage.md) entity.
+An entity of type `chatMessageAttachment` is returned as part of the [Get channel messages](../api/channel_list_messages.md) API, as a part of [chatMessage](chatMessage.md) entity.
 
 ## Properties
 | Property	   | Type	|Description|
@@ -27,7 +27,7 @@ An entity of type `chatAttachment` is returned as part of the [Get channel messa
     "contentUrl"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.chatAttachment"
+  "@odata.type": "microsoft.graph.chatMessageAttachment"
 }-->
 
 ```json

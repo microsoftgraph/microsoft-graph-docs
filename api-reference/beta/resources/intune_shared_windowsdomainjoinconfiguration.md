@@ -11,11 +11,11 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List windowsDomainJoinConfigurations](../api/intune_shared_windowsdomainjoinconfiguration_list.md)|
-|[Get windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_get.md)|
-|[Create windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_create.md)|
-|[Delete windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_delete.md)|
-|[Update windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_update.md)|
+|[List windowsDomainJoinConfigurations](../api/intune_shared_windowsdomainjoinconfiguration_list.md)|[windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) collection|List properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) objects.|
+|[Get windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_get.md)|[windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md)|Read properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object.|
+|[Create windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_create.md)|[windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md)|Create a new [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object.|
+|[Delete windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_delete.md)|None|Deletes a [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md).|Delete a [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object.|
+|[Update windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_update.md)|[windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md)|Update the properties of a [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|

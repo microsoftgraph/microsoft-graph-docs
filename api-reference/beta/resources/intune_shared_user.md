@@ -22,15 +22,18 @@ Represents an Azure Active Directory user object.
 |[getManagedAppPolicies function](../api/intune_shared_user_getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Gets app restrictions for a given user.|
 |[wipeManagedAppRegistrationByDeviceTag action](../api/intune_shared_user_wipemanagedappregistrationbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
 |[wipeManagedAppRegistrationsByDeviceTag action](../api/intune_shared_user_wipemanagedappregistrationsbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
-|**On-boarding**|
+|**Onboarding**|
 |[exportDeviceAndAppManagementData function](../api/intune_shared_user_exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune_onboarding_deviceandappmanagementdata.md)|Not yet documented|
 |[getEffectiveDeviceEnrollmentConfigurations function](../api/intune_shared_user_geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) collection|Not yet documented|
+|**Troubleshooting**|
+|[getManagedDevicesWithAppFailures function](../api/intune_shared_user_getmanageddeviceswithappfailures.md)|String collection|Retrieves the list of devices with failed apps.|
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier of the user.|
-|**On-boarding**|
+|**Onboarding**|
 |deviceEnrollmentLimit|Int32|The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.|
 
 ## Relationships
@@ -40,7 +43,7 @@ Represents an Azure Active Directory user object.
 |managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md) collection|The managed devices associated with the user.|
 |**Mobile application management (MAM)**|
 |managedAppRegistrations|[managedAppRegistration](../resources/intune_mam_managedappregistration.md) collection|Zero or more managed app registrations that belong to the user.|
-|**On-boarding**|
+|**Onboarding**|
 |deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) collection|Get enrollment configurations targeted to the user|
 |**Troubleshooting**|
 |deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) collection|The list of troubleshooting events for this user.|

@@ -54,7 +54,6 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |minimumWipeAppVersion|String|Versions less than or equal to the specified version will wipe the managed app and the associated company data.|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune_mam_managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, when the device is either rooted or jailbroken, if DeviceComplianceRequired is set to true. Possible values are: `block`, `wipe`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune_mam_managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts. Possible values are: `block`, `wipe`.|
-|pinRequiredOnLaunchInsteadOfBiometric|Boolean|Requires an app pin on launch instead of non biometrics passcode|
 |pinRequiredInsteadOfBiometricTimeout|Duration|Timeout in minutes for an app pin instead of non biometrics passcode|
 
 ## Relationships
@@ -108,7 +107,6 @@ Here is a JSON representation of the resource.
   "minimumWipeAppVersion": "String",
   "appActionIfDeviceComplianceRequired": "String",
   "appActionIfMaximumPinRetriesExceeded": "String",
-  "pinRequiredOnLaunchInsteadOfBiometric": true,
   "pinRequiredInsteadOfBiometricTimeout": "String (duration)"
 }
 ```

@@ -26,7 +26,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -68,7 +68,6 @@ Content-Length: 1210
     "version": 7,
     "renewalThresholdPercentage": 10,
     "subjectNameFormat": "commonNameIncludingEmail",
-    "subjectAlternativeNameType": "emailAddress",
     "certificateValidityPeriodValue": 14,
     "certificateValidityPeriodScale": "months",
     "extendedKeyUsages": [
@@ -81,7 +80,8 @@ Content-Length: 1210
     "certificationAuthority": "Certification Authority value",
     "certificationAuthorityName": "Certification Authority Name value",
     "certificateTemplateName": "Certificate Template Name value",
-    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+    "subjectAlternativeNameType": "emailAddress"
   }
 }
 ```

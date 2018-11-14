@@ -8,7 +8,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)||
+| &nbsp; &nbsp; **Onboarding** | DeviceManagementManaged Devices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -35,6 +36,7 @@ The following table shows the properties that are required when you create the d
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the device category. Read-only.|
+|**Onboarding**|
 |displayName|String|Display name for the device category.|
 |description|String|Optional description for the device category.|
 

@@ -22,7 +22,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsPackageInformation"
 }
 -->
@@ -39,7 +38,11 @@ Here is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
     "v8_0": true,
     "v8_1": true,
-    "v10_0": true
+    "v10_0": true,
+    "v10_1607": true,
+    "v10_1703": true,
+    "v10_1709": true,
+    "v10_1803": true
   }
 }
 ```

@@ -52,6 +52,7 @@ The following table shows the properties that are required when you create the v
 |dataSharingConsentGranted|Boolean|Consent granted for data sharing with the Apple Volume Purchase Program.|
 |displayName|String|An admin specified token friendly name.|
 |locationName|String|Token location returned from Apple VPP.|
+|claimTokenManagementFromExternalMdm|Boolean|Admin consent to allow claiming token management from external MDM.|
 
 
 
@@ -64,7 +65,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/vppTokens
 Content-type: application/json
-Content-length: 956
+Content-length: 1004
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -90,7 +91,8 @@ Content-length: 956
   "countryOrRegion": "Country Or Region value",
   "dataSharingConsentGranted": true,
   "displayName": "Display Name value",
-  "locationName": "Location Name value"
+  "locationName": "Location Name value",
+  "claimTokenManagementFromExternalMdm": true
 }
 ```
 
@@ -99,7 +101,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1005
+Content-Length: 1053
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -126,7 +128,8 @@ Content-Length: 1005
   "countryOrRegion": "Country Or Region value",
   "dataSharingConsentGranted": true,
   "displayName": "Display Name value",
-  "locationName": "Location Name value"
+  "locationName": "Location Name value",
+  "claimTokenManagementFromExternalMdm": true
 }
 ```
 

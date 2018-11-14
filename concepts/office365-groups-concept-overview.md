@@ -46,8 +46,15 @@ As the number of groups created within an organization begins to grow, Microsoft
 - Configure a broad range of [group policy settings](../api-reference/v1.0/resources/groupsetting.md) that help define behaviors, such as automatically deleting groups unless they are renewed by an owner and enforcing naming policies on Office 365 groups. 
 - [Renew](../api-reference/v1.0/api/group_renew.md) groups that are about to expire to allow team members to continue with collaboration and accessing content. If the group is not renewed according to the established expiration policy, the group is automatically deleted. 
 - [Restore](../api-reference/v1.0/api/directory_deleteditems_restore.md) deleted groups.
- 
+
+## API reference
+Looking for the API reference for this service?
+
+- [Groups API in Microsoft Graph v1.0](../api-reference/v1.0/resources/groups-overview.md)
+- [Groups API in Microsoft Graph beta](../api-reference/beta/resources/groups-overview.md)
+
+
 ## Next steps
 
-- Try out some sample API requests in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer). 
+- Try out some sample API requests in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). 
 - Learn more about how to [use the groups API](../api-reference/v1.0/resources/groups-overview.md) in Microsoft Graph.

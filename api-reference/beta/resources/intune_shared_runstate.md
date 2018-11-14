@@ -8,10 +8,9 @@ Indicates the type of execution status of the device management script.
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|Unknown result|
-|success|1|Script is run successfully|
-|fail|2|Script failed to run|
-
+|unknown|0|Unknown result.|
+|success|1|Script is run successfully.|
+|fail|2|Script failed to run.|
 
 
 

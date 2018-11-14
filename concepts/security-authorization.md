@@ -1,35 +1,35 @@
-# Authorization and the security API in Microsoft Graph
+# Authorization and the Microsoft Graph Security API
 
-Security data accessible via the security API in Microsoft Graph is sensitive and is protected by both permissions and Azure Active Directory (Azure AD) roles.
+Security data accessible via the Microsoft Graph Security API is sensitive and protected by both permissions and Azure Active Directory (Azure AD) roles.
 
-The security API supports two types of authorization:
+The Microsoft Graph Security API supports two types of authorization:
 
 - **Application-level authorization** - There is no signed-in user (for example, a SIEM scenario). The permissions granted to the application determine authorization. 
     >**Note:** This option can also support cases where Role-Based Access Control (RBAC) is managed by the application.
 - **User delegated authorization** - A user who is a member of the Azure AD tenant is signed in. The user must be a member of an Azure AD Limited Admin role - either Security Reader or Securty Administrator - in addition to the application having been granted the required permissions.
 
-If you're calling the security API from Graph Explorer:
+If you're calling the Microsoft Graph Security API from Graph Explorer:
 
 - The Azure AD tenant admin must explicitly grant consent for the requested permissions to the Graph Explorer application.
 - The user must be a member of the Security Reader Limited Admin role in Azure AD (either Security Reader or Security Administrator).
 
 >**Note**: Graph Explorer does not support application-level authorization.
 
-If you're calling the security API from a custom or your own application:
+If you're calling the Microsoft Graph Security API from a custom or your own application:
 
 - The Azure AD tenant admin must explicitly grant consent to your application. This is required both for application-level authorization and user delegated authorization.
 - If you're using user delegated authorization, the user must be a member of the Security Reader or Security Administrator Limited Admin role in Azure AD.
 
 ## Manage authorization in security API client applications
 
-Security data provided via the security API in Microsoft Graph is sensitive and must be protected by appropriate authentication and authorization mechanisms. The following table lists the steps to register and create a client application that can access the security API.
+Security data provided via the Microsoft Graph Security API is sensitive and must be protected by appropriate authentication and authorization mechanisms. The following table lists the steps to register and create a client application that can access the Microsoft Graph Security API.
 
 | **Who** | **Action** |
 |:---------------------|:------------------|
 |Application developer or owner|Register the application as an enterprise application.|
 |Tenant admin|Grant permissions to the application.|
 |Tenant admin|Assign roles to users.|
-|Application developer|Sign in as the user and use the application to access the security API.|
+|Application developer|Sign in as the user and use the application to access the Microsoft Graph Security API.|
 
 Application registration only defines which permissions the application needs in order to run. It does NOT grant these permissions to the application.
 
@@ -65,7 +65,7 @@ To register your application:
 3. On the registration page for the new application, choose **Add Platform** > **Web**. In the **Redirect URL** field, enter the redirect URL.
 4. In the **Microsoft Graph Permissions** section, under **Delegated Permissions**, choose **Add**. In the dialog box, choose the required permissions. For a list of permissions, see [Security permissions](../concepts/permissions_reference.md#security-permissions).
 
-    >The security API requires the SecurityEvents.Read.All scope for GET queries, and the SecurityEvents.ReadWrite.All scope for PATCH/POST queries.
+    >The Microsoft Graph Security API requires the SecurityEvents.Read.All scope for GET queries, and the SecurityEvents.ReadWrite.All scope for PATCH/POST queries.
 
 5. Choose **Save**.
 
@@ -99,13 +99,13 @@ Choose **OK** to grant the application these permissions.
 
 ## Assign Azure AD roles to users
 
-After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) will receive the granted permissions. To further protect sensitive security data, the security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Assigning administrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign a user to adminstrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-assign-role-azure-portal).
+After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) will receive the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Assigning administrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign a user to adminstrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 >**Note:** You must be a tenant admin to perform this step.
 
 To assign roles to users:
 
-- Sign in to the [azure portal](https://portal.azure.com) (http://portal.azure.com).
+- Sign in to the [azure portal](https://portal.azure.com) (https://portal.azure.com).
 - In the menu, select **Azure Active Directory** > **Users**.
 - Select the name of the user.
 - Select **Manage** > **Directory role**.
@@ -117,7 +117,7 @@ To assign roles to users:
 To create an authentication code, you'll need:
 
 - **Application ID** - The application ID from application registration portal.
-- **Redirect URL** - The URL where the authentication response from Azure AD is sent. To start, you can use http://localhost or the test client web app homepage.
+- **Redirect URL** - The URL where the authentication response from Azure AD is sent. To start, you can use https://localhost or the test client web app homepage.
 - **Application Key** (optional) - The key of the application. This applies when you're developing an application that will use application-only authentication code (that is, will not support user delegated authentication).
 
 The following table lists resources that you can use to create an authentication code.
@@ -125,7 +125,7 @@ The following table lists resources that you can use to create an authentication
 |**Type of application**|**Authentication library**|
 |------------------------|----------------------------|
 |[Desktop apps - iOS](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Microsoft Authentication Library Preview for iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[Desktop apps - Android](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](http://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|[Desktop apps - Android](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
 |[Desktop apps - .Net](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
 |[Web apps - JavaScript SPA](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Microsoft Authentication Library for JavaScript Preview](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
 |[Web apps - .NET Web Server](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|

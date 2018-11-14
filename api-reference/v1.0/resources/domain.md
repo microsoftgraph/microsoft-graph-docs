@@ -27,6 +27,7 @@ To associate a domain with a tenant:
 |[List verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain verification.|
 |[Update domain](../api/domain_update.md) | [domain](domain.md) |Updates a domain.|
 |[Delete domain](../api/domain_delete.md) | None |Deletes a domain.|
+|[ForceDelete domain](../api/domain_forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
 |[Verify domain](../api/domain_verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
 
 ## Properties

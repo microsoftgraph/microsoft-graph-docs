@@ -38,6 +38,12 @@ When your app runs within a SharePoint page, you can easily use Microsoft Graph 
 
 To learn about these models in more detail, visit the [SharePoint Dev Center][] or the [SharePoint Developer Docs][].
 
+## API reference
+Looking for the API reference for this service?
+
+- [SharePoint API in Microsoft Graph v1.0](../api-reference/v1.0/resources/sharepoint.md)
+- [SharePoint API in Microsoft Graph beta](../api-reference/beta/resources/sharepoint.md)
+
 ## Next steps
 
 Get started with SharePoint in Microsoft Graph by learning more about [working with sites][SharePoint].
@@ -48,9 +54,9 @@ Get started with SharePoint in Microsoft Graph by learning more about [working w
 [create]: ../api-reference/v1.0/api/list_create.md
 [querying]: ../api-reference/v1.0/api/listitem_get.md
 [drive]: ../api-reference/v1.0/resources/drive.md
-[OneDrive API]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onedrive
+[OneDrive API]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/onedrive
 [SharePoint Framework]: https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview
 [SharePoint Add-ins]: https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins
 [SharePoint Dev Center]: https://developer.microsoft.com/sharepoint
-[SharePoint Developer Docs]: http://aka.ms/spdev-docs
+[SharePoint Developer Docs]: https://aka.ms/spdev-docs
 [SharePoint]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/sharepoint

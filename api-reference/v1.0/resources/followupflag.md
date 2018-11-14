@@ -1,7 +1,7 @@
 # followupFlag resource type
 
 
-Allows setting a flag for the user to follow up on an item later. Supported items include [message](message.md) and [contact](contact.md).
+Allows setting a flag in an item for the user to follow up on later. 
 
 ## Properties
 | Property	   | Type	|Description|

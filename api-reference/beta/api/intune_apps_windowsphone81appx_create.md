@@ -74,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1327
+Content-length: 1419
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppX",
@@ -106,7 +106,11 @@ Content-length: 1327
     "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
     "v8_0": true,
     "v8_1": true,
-    "v10_0": true
+    "v10_0": true,
+    "v10_1607": true,
+    "v10_1703": true,
+    "v10_1709": true,
+    "v10_1803": true
   },
   "phoneProductIdentifier": "Phone Product Identifier value",
   "phonePublisherId": "Phone Publisher Id value",
@@ -119,7 +123,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1435
+Content-Length: 1527
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppX",
@@ -153,7 +157,11 @@ Content-Length: 1435
     "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
     "v8_0": true,
     "v8_1": true,
-    "v10_0": true
+    "v10_0": true,
+    "v10_1607": true,
+    "v10_1703": true,
+    "v10_1709": true,
+    "v10_1803": true
   },
   "phoneProductIdentifier": "Phone Product Identifier value",
   "phonePublisherId": "Phone Publisher Id value",

@@ -66,7 +66,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1480
+Content-length: 1598
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -87,12 +87,15 @@ Content-length: 1480
         "apps": [
           {
             "@odata.type": "microsoft.graph.windowsKioskUWPApp",
+            "startLayoutTileSize": "small",
+            "name": "Name value",
             "appUserModelId": "App User Model Id value",
             "appId": "App Id value",
             "containedAppId": "Contained App Id value"
           }
         ],
         "showTaskBar": true,
+        "disallowDesktopApps": true,
         "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
       },
       "userAccountsConfiguration": [
@@ -121,7 +124,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1652
+Content-Length: 1770
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -145,12 +148,15 @@ Content-Length: 1652
         "apps": [
           {
             "@odata.type": "microsoft.graph.windowsKioskUWPApp",
+            "startLayoutTileSize": "small",
+            "name": "Name value",
             "appUserModelId": "App User Model Id value",
             "appId": "App Id value",
             "containedAppId": "Contained App Id value"
           }
         ],
         "showTaskBar": true,
+        "disallowDesktopApps": true,
         "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
       },
       "userAccountsConfiguration": [

@@ -20,13 +20,13 @@ In addition, apps must be [properly registered](https://docs.microsoft.com/azure
 GET auditLogs/signIns
 ```
 ## Optional query parameters
-This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) for how to use these parameters.
+This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#filter-parameter)|Filters results (rows). |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
-|[$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top-parameter)|Sets the page size of results.|`/auditLogs/signIns?$top=1`|
-|[$skiptoken](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters#filter-parameter)|Filters results (rows). |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
+|[$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top-parameter)|Sets the page size of results.|`/auditLogs/signIns?$top=1`|
+|[$skiptoken](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
 ### List of attributes supported by $filter parameter
 |Attribute Name |Supported operators|
@@ -51,7 +51,16 @@ This method supports the following OData Query Parameters to help customize the 
 |deviceDetails/browser| eq, startswith|
 |deviceDetails/operatingSystem| eq, startswith|
 |correlationId| eq|
-|isRisky| eq|
+|riskDetail| eq|
+|riskLevelAggregated| eq|
+|riskLevelDuringSignIn| eq|
+|riskEventTypes| eq|
+|riskState| eq|
+|originalRequestId| eq|
+|tokenIssuerName| eq|
+|tokenIssuerType| eq|
+|resourceDisplayName| eq|
+|resourceId| eq|
 
 
 ## Response
@@ -83,55 +92,93 @@ Content-length: 264
 {
 	"@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
 	"value": [{
-		"id": "id",
-		"createdDateTime": "2018-01-09T21:17:21.5077253Z",
-		"userDisplayName": "Jamie Doe",
-		"userPrincipalName": "jdoe@contoso.com",
-		"userId": "bbb3b4b5-e6e6-f7f5-f7f5-090805040302",
-		"appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
-		"appDisplayName": "Azure",
-		"ipAddress": "127.0.0.0",
-		"status": {
-			"errorCode": 0,
-			"failureReason": null,
-			"additionalDetails": "SignIn Success & CA Sucess"
-		},
-		"clientAppUsed": null,
-		"deviceDetail": {
-			"deviceId": "34390ed6-52b3-4102-aeff-aad2292abac3",
-			"displayName": "DeviceName",
-			"operatingSystem": "Windows 10",
-			"browser": "Rich Client v1.0.2016.0",
-			"isCompliant": true,
-			"isManaged": true,
-			"trustType": ""
-		},
-		"location": {
-			"city": "Redmond",
-			"state": "WA",
-			"countryOrRegion": "USA",
-			"geoCoordinates": {
-				"altitude": 41.589,
-				"latitude": 41.589,
-				"longitude": -93.6151
-			}
-		},
-		"mfaDetail": {
-			"mfaAuthMethod": "Phone Auth",
-			"mfaAuthDetail": null
-		},
-		"correlationId": "1B3944d3c-563d-4b08-ac20-815892b87e42",
-		"conditionalAccessApplied": true,
-		"conditionalAccessPolicies": [{
-			"id": "26490ed6-52b3-4102-aeff-aad2292abacf",
-			"displayName": "capPolicy",
-			"enforcedAccessControls": ["MFA", "TOU"],
-			"enforcedSessionControls": ["CloudAppSecurity"],
-			"result": "success"
-		}],
-		"isRisky": false,
-		"riskLevel": "low"
-	}]
+  		"id":"b01b1726-0147-425e-a7f7-21f252050400",
+  		"createdDateTime":"2018-11-06T18:48:33.8527147Z",
+  		"userDisplayName":"Jon Doe",
+ 		 "userPrincipalName":"admin@aad171.ccsctp.net",
+ 		 "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
+  		"appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+ 		 "appDisplayName":"Azure Portal",
+ 		 "ipAddress":"207.254.19.10",
+ 		 "clientAppUsed":"Browser",
+  		"mfaDetail":null,
+ 		 "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
+ 		 "conditionalAccessStatus":"notApplied",
+  		"originalRequestId":null,
+  		"isInteractive":true,
+  		"tokenIssuerName":null,
+  		"tokenIssuerType":"AzureAD",
+  		"processingTimeInMilliseconds":0,
+  		"riskDetail":"none",
+  		"riskLevelAggregated":"none",
+  		"riskLevelDuringSignIn":"none",
+  		"riskState":"none",
+  		"riskEventTypes":[
+
+ 		],
+  		"resourceDisplayName":"windows azure service management api",
+ 		"resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+  		"authenticationMethodsUsed":[
+
+  		],
+  		"status":{
+    		"errorCode":50140,
+    		"failureReason":"This error occurred due to 'Keep me signed in' interrupt when the user was signing-in.",
+    		"additionalDetails":null
+  		},
+  		"deviceDetail":{
+    		"deviceId":null,
+    		"displayName":null,
+    		"operatingSystem":"Windows 7",
+    		"browser":"Chrome 63.0.3239",
+    		"isCompliant":null,
+    		"isManaged":null,
+    		"trustType":null
+  		},
+  		"location":{
+    		"city":"Lithia Springs",
+    		"state":"Georgia",
+    		"countryOrRegion":"US",
+    		"geoCoordinates":{
+      			"altitude":null,
+      			"latitude":33.7930908203125,
+      			"longitude":-84.445358276367188
+    		}
+  		},
+  		"appliedConditionalAccessPolicies":[
+    		{
+      		"id":"6551c58c-e5da-4036-a6ea-c2c3fad264f1",
+      		"displayName":"New Name here4",
+      		"enforcedGrantControls":[
+        		"Mfa",
+        		"RequireCompliantDevice"
+      		],
+      		"enforcedSessionControls":[
+
+      		],
+      		"result":"notApplied"
+    		},
+    		{
+      		"id":"b645a140-20fe-4ce0-a724-18ab201e9026",
+      		"displayName":"PipelineTest4",
+      		"enforcedGrantControls":[
+
+      		],
+      		"enforcedSessionControls":[
+
+      		],
+      		"result":"notEnabled"
+    		}
+  		],
+  		"authenticationProcessingDetails":[
+
+  		],
+  		"networkLocationDetails":[
+
+  		]
+		}
+	
+	]
 }
 
 ```

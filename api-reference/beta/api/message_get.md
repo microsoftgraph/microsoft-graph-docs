@@ -6,41 +6,13 @@ Retrieve the properties and relationships of the [message](../resources/message.
 
 For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message.
 
+There are two scenarios where an app can get a message in another user's mail folder:
+
+* If the app has application permissions, or,
+* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. See [details and an example](../../../concepts/outlook-share-messages-folders.md).
+
 Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
 
-
-### Get messages in another user's message folder
-
-If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get messages 
-from another user's message folder. This section focuses on scenarios that involve delegated permissions.
-
-For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a message folder with John. 
-You can get a message in that shared folder by specifying Garth’s user ID (or user principal name) in the example query shown below.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/messages/{id}
-```
-
-This capability applies to all the supported GET messages operations for an individual user, as listed in the [HTTP request](#http-request) section below. 
-It also applies if Garth has delegated his entire mailbox to John.
-
-If Garth has not shared his message folder with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
-will return an error. In such cases, specifying a user ID or user principal name only works for getting a message in the signed-in user’s own message folders, 
-and the query is equivalent to using the /me shortcut:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/messages/{id}
-```
-
-This capability is available in only GET operations of:
-
-- Shared contact folders, calendars, and message folders 
-- Contacts, events, and messages in shared folders
-- The above resources in delegated mailboxes
-
-This capability is not available in other operations for contacts, events, messages, and their folders.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -72,7 +44,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 You can use the `$expand` query parameter on the **mentions** navigation property to get a message with the details 
 of each [mention](../resources/mention.md) in the message expanded.
@@ -96,6 +68,7 @@ If successful, this method returns a `200 OK` response code and [message](../res
 The first example gets the specified message. It does not specify any header to indicate the desired format of the body to be returned.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
   "name": "get_message"
 }-->
 ```http
@@ -135,6 +108,7 @@ Content-length: 523
 In the next example, the signed-in user is Dana Swope. The example shows getting the details of all the mentions in the specified message in Dana's mailbox.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AQMkADJmMTUAAAgVZAAAA"],
   "name": "get_mentions_in_message"
 }-->
 ```http
@@ -245,6 +219,7 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
   "name": "get_message_in_text"
 }-->
 
@@ -291,6 +266,7 @@ The fourth example shows how to get the Internet message headers of a specific m
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEz"],
   "name": "get_message_internet_headers"
 }-->
 
@@ -310,7 +286,6 @@ Here is an example of the response. Note: The number of Internet message headers
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 355
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/messages(internetMessageHeaders)/$entity",
@@ -329,6 +304,14 @@ Content-length: 355
     {
       "name":"Subject",
       "value":"Cloud and Mobile Working Group"
+    },
+    {
+      "name":"x-custom-header-group-name",
+      "value":"Washington"
+    },
+    {
+      "name":"x-custom-header-group-id",
+      "value":"WA001"
     }
   ]
 }

@@ -24,7 +24,13 @@ You can use the reports API to access the data sets listed in the following tabl
 |Skype for Business |[Activity](../api-reference/v1.0/resources/skype_for_business_activity_reports.md)<br/>[Device usage](../api-reference/v1.0/resources/skype_for_business_device_usage_reports.md)<br/>[Device usage](../api-reference/v1.0/resources/skype_for_business_device_usage_reports.md)<br/>[Participant activity](../api-reference/v1.0/resources/skype_for_business_participant_activity_reports.md)<br/>[Peer to peer activity](../api-reference/v1.0/resources/skype_for_business_peer_to_peer_activity.md)|
 |Yammer |[Activity](../api-reference/v1.0/resources/yammer_activity_reports.md)<br/>[Device usage](../api-reference/v1.0/resources/yammer_device_usage_reports.md)<br/>[Groups activity](../api-reference/v1.0/resources/yammer_groups_activity_reports.md)|
 
+## API reference
+Looking for the API reference for this service?
+
+- [Office 365 usage reports API in Microsoft Graph v1.0](../api-reference/v1.0/resources/report.md)
+- [Office 365 usage reports API in Microsoft Graph beta](../api-reference/beta/resources/report.md)
+
 ## Next steps
 
-* Explore the APIs in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+* Explore the APIs in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 * Learn more about how to [use the reports REST API](../api-reference/v1.0/resources/report.md).

@@ -36,10 +36,10 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "Guid"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "Guid"
   ],
   "overrideDefaultRule": true
 }

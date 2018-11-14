@@ -48,7 +48,7 @@ If successful, this method returns a `302 Found` response that redirects to a pr
 
 Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
 
-The CSV file has the following headers for columns.
+The CSV file has the following headers for columns:
 
 - Report Refresh Date
 - Office 365
@@ -61,9 +61,19 @@ The CSV file has the following headers for columns.
 - Report Date
 - Report Period
 
+The following columns are not supported in Microsoft Graph China operated by 21Vianet:
+
+- Yammer
+- Teams
+
 ### JSON
 
 If successful, this method returns a `200 OK` response code and an **[office365ActiveUserCounts](../resources/office365activeusercounts.md)** object in the response body.
+
+The following properties in **[office365ActiveUserCounts](../resources/office365activeusercounts.md)** object are not supported in Microsoft Graph China operated by 21Vianet:
+
+- yammer
+- teams
 
 ## Example
 

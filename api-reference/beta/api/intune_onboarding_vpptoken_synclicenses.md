@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1074
+Content-Length: 1124
 
 {
   "value": {
@@ -75,7 +75,8 @@ Content-Length: 1074
     "countryOrRegion": "Country Or Region value",
     "dataSharingConsentGranted": true,
     "displayName": "Display Name value",
-    "locationName": "Location Name value"
+    "locationName": "Location Name value",
+    "claimTokenManagementFromExternalMdm": true
   }
 }
 ```

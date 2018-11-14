@@ -21,10 +21,11 @@ For more information about working with groups and members in teams, see [Use th
 |[Archive team](../api/team_archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
 |[Unarchive team](../api/team_unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[List your teams](../api/user_list_joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
-|[List all teams](../api/team_list_all_teams.md) | [group](group.md) collection | List all groups that have teams. |
-|[Add app to team](../api/teams_apps_add.md) | [teamsApp](teamsapp.md) | Adds (installs) an app to a team.|
+|[List all teams](../../../concepts/teams_list_all_teams.md) | [group](group.md) collection | List all groups that have teams. |
+|[Publish apps to your organization](../resources/teamsapp.md)| [app](../resources/teamsapp.md) | Create Teams apps visible only to your organization. |
+|[Add app to team](../api/teamsappinstallation_add.md) | [teamsApp](teamsapp.md) | Adds (installs) an app to a team.|
+|[Add tab to channel](../api/teamstab_add.md) | [teamsTab](../resources/teamstab.md) | Adds (installs) a tab to a team's channel.|
 |[List channel messages](../api/channel_list_messages.md)  | [chatMessage](../resources/chatmessage.md) | [Get messages in a channel](../api/channel_list_messages.md) |
-
 
 ## Properties
 
@@ -41,8 +42,9 @@ For more information about working with groups and members in teams, see [Use th
 
 | Relationship | Type	| Description |
 |:---------------|:--------|:----------|
-|apps|[teamsApp](teamsapp.md) collection|The collection of apps installed in this team.|
+|apps|[teamsApp](teamsapp.md) collection| (Obsolete) The apps installed in this team.|
 |channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
+|installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 
 ## JSON representation
 
@@ -50,36 +52,17 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.team"
+  "@odata.type": "microsoft.graph.team",
+  "baseType": "microsoft.graph.entity"
 }-->
 
 ```json
 {  
-  "memberSettings": {
-    "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true,
-    "allowAddRemoveApps": true,
-    "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true    
-  },
-  "guestSettings": {
-    "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true 
-  },
-  "messagingSettings": {
-    "allowUserEditMessages": true,
-    "allowUserDeleteMessages": true,
-    "allowOwnerDeleteMessages": true,
-    "allowTeamMentions": true,
-    "allowChannelMentions": true    
-  },
-  "funSettings": {
-    "allowGiphy": true,
-    "giphyContentRating": "strict",
-    "allowStickersAndMemes": true,
-    "allowCustomMemes": true
-  },
+  "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
+  "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
+  "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
+  "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "isArchived": false,
   "webUrl": "https://...longUrl..."
 }
 
@@ -96,4 +79,5 @@ The following is a JSON representation of the resource.
 }-->
 
 ## See Also
-[Teams API Overview](teams_api_overview.md)
+- [Creating a group with a team](../../../concepts/teams-create-group-and-team.md)
+- [Teams API Overview](teams_api_overview.md)

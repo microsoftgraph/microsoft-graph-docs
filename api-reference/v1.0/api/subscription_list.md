@@ -8,9 +8,9 @@ This API supports the following permission scopes; to learn more, including how 
 
 | Permission type  | Permissions (from least to most privileged)  |
 |:---------------- |:-------------------------------------------- |
-| [Delegated](../../../concepts/auth_v2_user.md) (work or school account) | Role required to [create subscription](subscription_get.md) or Subscriptions.Read.All (see below). |
-| [Delegated](../../../concepts/auth_v2_user.md) (personal Microsoft account) | Role required to [create subscription](./subscription_get.md) or Subscriptions.Read.All (see below). |
-| [Application](../../../concepts/auth_v2_service.md) | Role required to [create subscription](./subscription_get.md). |
+| [Delegated permission](../../../concepts/auth_v2_user.md) (work or school account) | Role required to [create subscription](subscription_post_subscriptions.md) or Subscription.Read.All (see below). |
+| [Delegated permission](../../../concepts/auth_v2_user.md) (personal Microsoft account) | Role required to [create subscription](subscription_post_subscriptions.md) or Subscription.Read.All (see below). |
+| [Application permission](../../../concepts/auth_v2_service.md) | Role required to [create subscription](subscription_post_subscriptions.md). |
 
 Response results are based on the context of the calling app. The following is a summary of the common scenarios:
 
@@ -43,7 +43,7 @@ GET /subscriptions
 
 ## Optional query parameters
 
-This method does not support the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method does not support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 

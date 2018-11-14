@@ -58,9 +58,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 Content-type: application/json
-Content-length: 492
+Content-length: 552
 
 {
+  "@odata.type": "#microsoft.graph.iosUpdateDeviceStatus",
   "installStatus": "available",
   "osVersion": "Os Version value",
   "deviceId": "Device Id value",
@@ -98,11 +99,6 @@ Content-Length: 601
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
-
-
 
 
 

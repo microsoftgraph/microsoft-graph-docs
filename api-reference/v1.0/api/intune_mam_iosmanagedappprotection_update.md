@@ -83,12 +83,12 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 Content-type: application/json
-Content-length: 1570
+Content-length: 1568
 
 {
+  "@odata.type": "#microsoft.graph.iosManagedAppProtection",
   "displayName": "Display Name value",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "version": "Version value",
   "periodOfflineBeforeAccessCheck": "-PT17.1357909S",
   "periodOnlineBeforeAccessCheck": "PT35.0018757S",
@@ -176,11 +176,6 @@ Content-Length: 1740
   "faceIdBlocked": true
 }
 ```
-
-
-
-
-
 
 
 

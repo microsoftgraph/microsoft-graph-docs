@@ -22,25 +22,49 @@ Failure to read or update a photo, in this case, would result in the following e
 	}
 ```
 
-
 ### Using delta query
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
-## Groups and Microsoft Teams
+## Microsoft Teams
 
 >**Note** Microsoft Teams is currently in preview and is available only in the Microsoft Graph beta endpoint.
 
-### Policy
+### Application permissions
 
-Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App.
+When making changes to teams and channels using application permissions, 
+Microsoft Teams renders the control message posted to the General channel with a blank name instead of the application name. 
+This will be addressed in a future update. 
+The fix will retroactively update control messages that are already posted.
+
+### Create chat thread API
+
+The current API to [create a chat thread](../api-reference/beta/api/channel_post_chatthreads.md) 
+will be replaced with a richer API that is consistent with the schema for [listing channel messages](../api-reference/beta/api/channel_list_messages.md).
+
+### Graph Explorer and Global Admins
+
+Currently, Graph Explorer allows global admins to manipulate teams they are not an owner or member of, but other apps attempting to make the same API calls will fail if the current user is not a member or owner of the team.
+
+### Missing teams in list all teams
+
+Some teams that were created in the past but haven't been used recently by a Microsoft Teams user aren't listed by
+[list all teams](../concepts/teams_list_all_teams.md).
+New teams will be listed.
+Certain old teams don't have a **resourceProvisioningOptions** property that contains "Team",
+which is set on newly created teams and teams that are visited in Microsoft Teams.
+In the future, we will set **resourceProvisioningOptions** on existing teams that have not been opened in Microsoft Teams.
+
+## Groups
 
 ### Permissions for groups and Microsoft Teams
 
-Microsoft Graph exposes two permissions (*Group.Read.All* and *Group.ReadWrite.All*) for access to the APIs for groups and Microsoft Teams.
-These permissions must be consented to by an administrator (which is a change from preview).  In the future, we plan to add new permissions for groups and teams that users can consent to.
+Microsoft Graph exposes two permissions ([*Group.Read.All*](../concepts/permissions_reference.md#group-permissions) and [*Group.ReadWrite.All*](../concepts/permissions_reference.md#group-permissions)) for access to the APIs for groups and Microsoft Teams.
+These permissions must be consented to by an administrator.
+In the future, we plan to add new permissions for groups and teams that users can consent to.
 
-Also, only the API for core group administration and management supports access using delegated or app-only permissions. All other features of the group API support only delegated permissions.
+Also, only the API for core group administration and management supports access using delegated or app-only permissions. 
+All other features of the group API support only delegated permissions.
 
 Examples of group features that support delegated and app-only permissions:
 
@@ -54,23 +78,14 @@ Examples of group features that support only delegated permissions:
 * Group conversations, events, photo
 * External senders, accepted or rejected senders, group subscription
 * User favorites and unseen count
-* Microsoft Teams channels and chats
 
-### Teams in Microsoft Teams (preview)
+### Policy
 
-Microsoft Teams and Office 365 groups [share similar functionality](../api-reference/beta/resources/teams_api_overview.md). All group APIs can be used with teams, with the exception that the Create group API does not currently allow you to create a team.  Future API releases will support this.
-
-### Microsoft Teams chat threads and chat messages (preview)
-
-Currently, you can create chat threads in channels, but you cannot read existing chat threads or add replies to them. Also, you cannot read or write direct chats between users that are outside the scope of a team or channel.  Future API releases will add additional capabilities in this area.
-
-### Microsoft Teams user's list of joined teams (preview)
-
-Currrently, [listing the teams a user has joined](../api-reference/beta/api/user_list_joinedteams.md) only works for the 'me' user for which the caller has [delegated permissions](permissions_reference.md).  Future releases will support this operation for any specified user ID.
+Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App.
 
 ### Adding and getting attachments of group posts
 
-[Adding](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_post_attachments) attachments to group posts, [listing](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_list_attachments) and
+[Adding](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/post_post_attachments) attachments to group posts, [listing](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/post_list_attachments) and
 getting attachments of group posts currently return the error message "The OData request is not supported." A fix has been rolled out for both the `/v1.0` and `/beta` versions,
 and is expected to be widely available by the end of January 2016.
 
@@ -81,7 +96,6 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 ### Using delta query
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
-
 
 ## Bookings
 
@@ -146,12 +160,18 @@ GET \me\calendars('{id}')\events
 Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
 
 * You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
-* [Listing the user's calendars](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) lets you get the **name**, **color** and **id** properties of each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
-* You can also [list the events](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
+* [Listing the user's calendars](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/user_list_calendars) lets you get the **name**, **color** and **id** properties of each [calendar](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
+* You can also [list the events](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
 
 ### onlineMeetingUrl property support for Microsoft Teams
 
 Currently, the **onlineMeetingUrl** property of a Skype meeting [event](../api-reference/v1.0/resources/event.md) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
+
+## Calls and online meetings
+
+> **Note** Calling and online meetings are currently in preview and are available only in the Microsoft Graph beta endpoint.
+
+- Navigation path `/applications/{id}` is not supported. Navigating through the global applications node to the application, even your own, is not allowed. Please use the `/app` navigation only.
 
 ## Contacts
 
@@ -163,7 +183,7 @@ Only personal contacts are currently supported. Organizational contacts are not 
 
 In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder.
 
-A fix will be made available. Meanwhile, you can use the following [list contacts](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts) query and the **parentFolderId** property
+A fix will be made available. Meanwhile, you can use the following [list contacts](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/user_list_contacts) query and the **parentFolderId** property
 as a workaround to get the folder ID of the default contacts folder:
 
 ```http
@@ -172,7 +192,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 
 In the above query:
 
-1. `/me/contacts?$top=1` gets the properties of a [contact](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact) in the default contacts folder.
+1. `/me/contacts?$top=1` gets the properties of a [contact](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/contact) in the default contacts folder.
 2. Appending `&$select=parentFolderId` returns only the contact's **parentFolderId** property, which is the ID of the default contacts folder.
 
 
@@ -354,8 +374,8 @@ In the meantime, to unblock development and testing you can use the following wo
 
 ## Functionality available only in Office 365 REST or Azure AD Graph APIs
 
-Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog). For Azure Active Directory, please refer to the [Microsoft Graph or Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) blog post on the features that are only available through Azure AD Graph API.
+Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](https://msdn.microsoft.com/office/office365/api/api-catalog). For Azure Active Directory, please refer to the [Microsoft Graph or Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) blog post on the features that are only available through Azure AD Graph API.
 
 ## Feedback
 
-> Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/microsoftgraph).
+> Your feedback is important to us. Connect with us on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoftgraph).

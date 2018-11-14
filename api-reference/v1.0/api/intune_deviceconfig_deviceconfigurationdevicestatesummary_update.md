@@ -54,9 +54,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurationDeviceStateSummaries
 Content-type: application/json
-Content-length: 214
+Content-length: 290
 
 {
+  "@odata.type": "#microsoft.graph.deviceConfigurationDeviceStateSummary",
   "unknownDeviceCount": 2,
   "notApplicableDeviceCount": 8,
   "compliantDeviceCount": 4,
@@ -86,11 +87,6 @@ Content-Length: 339
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
 
 
 

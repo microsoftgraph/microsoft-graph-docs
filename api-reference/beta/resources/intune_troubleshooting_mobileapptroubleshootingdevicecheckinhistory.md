@@ -19,7 +19,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppTroubleshootingDeviceCheckinHistory"
 }
 -->
@@ -29,6 +28,8 @@ Here is a JSON representation of the resource.
   "occurrenceDateTime": "String (timestamp)"
 }
 ```
+
+
 
 
 

@@ -14,13 +14,14 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)||
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-| &nbsp; &nbsp; **On-boarding** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+| &nbsp; &nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
 ## HTTP Request
 
 **Device management**
+
 <!-- {
   "blockType": "ignored"
 }
@@ -29,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 GET /deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
-**On-boarding**
+**Onboarding**
+
 <!-- {
   "blockType": "ignored"
 }
@@ -38,10 +40,9 @@ GET /deviceManagement/deviceCategories/{deviceCategoryId}
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
-
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 

@@ -36,6 +36,7 @@ You purchase multiple licenses for iOS apps through the Apple Volume Purchase Pr
 |dataSharingConsentGranted|Boolean|Consent granted for data sharing with the Apple Volume Purchase Program.|
 |displayName|String|An admin specified token friendly name.|
 |locationName|String|Token location returned from Apple VPP.|
+|claimTokenManagementFromExternalMdm|Boolean|Admin consent to allow claiming token management from external MDM.|
 
 ## Relationships
 None
@@ -73,7 +74,8 @@ Here is a JSON representation of the resource.
   "countryOrRegion": "String",
   "dataSharingConsentGranted": true,
   "displayName": "String",
-  "locationName": "String"
+  "locationName": "String",
+  "claimTokenManagementFromExternalMdm": true
 }
 ```
 

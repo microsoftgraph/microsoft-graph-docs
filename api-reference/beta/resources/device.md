@@ -14,6 +14,8 @@ This resource lets you add your own data to custom properties using [extensions]
 |[List devices](../api/device_list.md) | [device](device.md) collection| Retrieve a list of devices registered in the directory. |
 |[Update device](../api/device_update.md) | [device](device.md)  |Update the properties of the device object. |
 |[Delete device](../api/device_delete.md) | None |Delete the device object. |
+|[List memberOf](../api/device_list_memberof.md) |[directoryObject](directoryobject.md) collection| List the groups that the device is a direct member of. |
+|[List transitive memberOf](../api/device_list_transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that the device is a member of. This operation is transitive. |
 |[List registeredOwners](../api/device_list_registeredowners.md) |[directoryObject](directoryobject.md) collection| Get the users that are registered owners of the device from the registeredOwners navigation property.|
 |[List registeredUsers](../api/device_list_registeredusers.md) |[directoryObject](directoryobject.md) collection| Get the registered users of the device from the registeredUsers navigation property.|
 |**Open extensions**| | |

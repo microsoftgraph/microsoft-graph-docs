@@ -10,11 +10,11 @@ Thank you for your interest in Microsoft Graph documentation!
 
 ## Ways to contribute
 
-You can contribute to [Microsoft Graph documentation](http://developer.microsoft.com/graph/docs) in these ways:
+You can contribute to [Microsoft Graph documentation](https://developer.microsoft.com/graph/docs) in these ways:
 
 - Contribute to articles via the [public Microsoft Graph developer docs repository](https://github.com/microsoftgraph/microsoft-graph-docs)
 - Report documentation bugs via [GitHub Issues](https://github.com/microsoftgraph/microsoft-graph-docs/issues)
-- Add documentation requests to the [Office Developer Platform UserVoice](http://officespdev.uservoice.com)
+- Add documentation requests to the [Office Developer Platform UserVoice](https://officespdev.uservoice.com)
 
 ## Before we can accept your pull request
 
@@ -195,7 +195,7 @@ The image below is from [Google][googleweb]
 
 ![Google's logo][logo]
 
-[googleweb]: http://www.google.com
+[googleweb]: https://www.google.com
 [logo]: https://www.google.com/images/srpr/logo3w.png
 ```
 
@@ -206,8 +206,8 @@ By using references grouped at the bottom of your file, you can easily find, edi
 - For more information about Markdown, go to [their site][Markdown Home].
 - For more information about using Git and GitHub, first check out the [GitHub Help section] [GitHub Help] and if necessary contact the site administrators.
 
-[GitHub Home]: http://github.com
-[GitHub Help]: http://help.github.com/
-[Set Up Git]: http://help.github.com/win-set-up-git/
-[Markdown Home]: http://daringfireball.net/projects/markdown/
+[GitHub Home]: https://github.com
+[GitHub Help]: https://help.github.com/
+[Set Up Git]: https://help.github.com/win-set-up-git/
+[Markdown Home]: https://daringfireball.net/projects/markdown/
 [vscode]: https://code.visualstudio.com/

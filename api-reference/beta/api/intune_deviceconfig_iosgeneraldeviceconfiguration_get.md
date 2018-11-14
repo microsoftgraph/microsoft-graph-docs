@@ -26,7 +26,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8570
+Content-Length: 9095
 
 {
   "value": {
@@ -166,6 +166,7 @@ Content-Length: 8570
     "kioskModeAllowTouchscreen": true,
     "kioskModeAllowVoiceOverSettings": true,
     "kioskModeAllowVolumeButtons": true,
+    "kioskModeBlockVolumeButtons": true,
     "kioskModeAllowZoomSettings": true,
     "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
     "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
@@ -277,7 +278,19 @@ Content-Length: 8570
     "spotlightBlockInternetResults": true,
     "voiceDialingBlocked": true,
     "wallpaperBlockModification": true,
-    "wiFiConnectOnlyToConfiguredNetworks": true
+    "wiFiConnectOnlyToConfiguredNetworks": true,
+    "classroomForceRequestPermissionToLeaveClasses": true,
+    "keychainBlockCloudSync": true,
+    "pkiBlockOTAUpdates": true,
+    "privacyForceLimitAdTracking": true,
+    "enterpriseBookBlockBackup": true,
+    "enterpriseBookBlockMetadataSync": true,
+    "airPrintBlocked": true,
+    "airPrintBlockCredentialsStorage": true,
+    "airPrintForceTrustedTLS": true,
+    "airPrintBlockiBeaconDiscovery": true,
+    "blockSystemAppRemoval": true,
+    "vpnBlockCreation": true
   }
 }
 ```

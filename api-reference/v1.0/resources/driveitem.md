@@ -178,7 +178,9 @@ The URL will only be available for a short period of time (1 hour) before it is 
 | [Add permissions](../api/driveitem_invite.md)            | `POST /drive/items/{item-id}/invite`
 | [List permissions](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Delete permission](../api/permission_delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
+[item-preview]: ../api/driveItem_preview.md
 
 ## Remarks
 
@@ -211,7 +213,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [thumbnailSet]: thumbnailSet.md
 [video]: video.md
 [workbook]: workbook.md
-[user]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/users
+[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
 
 <!-- {

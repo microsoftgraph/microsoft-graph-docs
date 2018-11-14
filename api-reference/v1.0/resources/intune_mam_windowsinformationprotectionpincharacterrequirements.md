@@ -12,8 +12,3 @@ Pin Character Requirements
 
 
 
-
-
-
-
-

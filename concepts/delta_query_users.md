@@ -145,7 +145,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBO
 
 ## deltaLink response
 
-If no changes have occurred, the same `deltatoken` is returned with no results.
+If no changes have occurred, the same `deltaToken` is returned with no results.
 
 ```http
 HTTP/1.1 200 OK
@@ -158,7 +158,7 @@ Content-type: application/json
 }
 ```
 
-If changes have occurred, the same `deltatoken` is returned including a collection of changed users.
+If changes have occurred, the same `deltaToken` is returned including a collection of changed users.
 
 ```http
 HTTP/1.1 200 OK
@@ -183,5 +183,14 @@ Content-type: application/json
   ]
 }
 ```
+
+Some things to note about the example response above:
+
+- When the user is deleted, the item contains an annotation: `@removed` with value of `"reason": "changed"`.
+
+- When the user is permanently deleted, the item contains an annotation: `@removed` with value of `"reason": "deleted"`.
+
+- When the user is created, or restored, there is no annotation.
+
 ## See also
 [Microsoft Graph delta query](../concepts/delta_query_overview.md) overview.

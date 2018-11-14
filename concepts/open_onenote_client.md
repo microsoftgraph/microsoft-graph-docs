@@ -42,7 +42,7 @@ The following examples show how to check the status code of the response, parse 
 
 ## iOS example
 
-The following example gets the OneNote client URLs from the JSON response. It uses the AFNetworking library (http://afnetworking.com/) to extract the two URLs. In the example, `created` is a pointer to the **ONSCPSStandardResponse** object used to store the response values, and `responseObject` holds the parsed JSON.
+The following example gets the OneNote client URLs from the JSON response. It uses the AFNetworking library (https://afnetworking.com/) to extract the two URLs. In the example, `created` is a pointer to the **ONSCPSStandardResponse** object used to store the response values, and `responseObject` holds the parsed JSON.
 
 ```objc
     /* Import the JSON library */

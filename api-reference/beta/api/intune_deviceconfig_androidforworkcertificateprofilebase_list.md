@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 975
+Content-Length: 922
 
 {
   "value": [
@@ -66,7 +66,6 @@ Content-Length: 975
       "version": 7,
       "renewalThresholdPercentage": 10,
       "subjectNameFormat": "commonNameIncludingEmail",
-      "subjectAlternativeNameType": "emailAddress",
       "certificateValidityPeriodValue": 14,
       "certificateValidityPeriodScale": "months",
       "extendedKeyUsages": [

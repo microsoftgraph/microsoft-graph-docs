@@ -103,7 +103,13 @@ Here is a JSON representation of the resource.
     "v4_3": true,
     "v4_4": true,
     "v5_0": true,
-    "v5_1": true
+    "v5_1": true,
+    "v6_0": true,
+    "v7_0": true,
+    "v7_1": true,
+    "v8_0": true,
+    "v8_1": true,
+    "v9_0": true
   },
   "versionName": "String",
   "versionCode": "String",

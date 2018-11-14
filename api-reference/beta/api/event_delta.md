@@ -2,14 +2,14 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) 
+Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events)
 of the user's primary calendar.
 
-A **delta** function call for events is similar to a `GET /calendarview` request for 
-a range of dates in the user's primary calendar, except that by appropriately 
-applying [state tokens](../../../concepts/delta_query_overview.md) in one or more of these calls, 
-you can query for incremental changes in that calender view. This allows you to maintain and synchronize 
-a local store of a user's events in the primary calendar, without having to fetch all the events of that calendar 
+A **delta** function call for events is similar to a `GET /calendarview` request for
+a range of dates in the user's primary calendar, except that by appropriately
+applying [state tokens](../../../concepts/delta_query_overview.md) in one or more of these calls,
+you can query for incremental changes in that calender view. This allows you to maintain and synchronize
+a local store of a user's events in the primary calendar, without having to fetch all the events of that calendar
 from the server every time.
 
 ## Permissions
@@ -32,11 +32,11 @@ GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 
 ## Query parameters
 
-Tracking changes in events incurs a round of one or more **delta** function calls. If you use any query parameter 
-(other than `$deltatoken` and `$skiptoken`), you must specify 
-it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
-into the token portion of the `nextLink` or `deltaLink` URL provided in the response. You only need to specify any desired query parameters once upfront. 
-In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already 
+Tracking changes in events incurs a round of one or more **delta** function calls. If you use any query parameter
+(other than `$deltatoken` and `$skiptoken`), you must specify
+it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters
+into the token portion of the `nextLink` or `deltaLink` URL provided in the response. You only need to specify any desired query parameters once upfront.
+In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already
 includes the encoded, desired parameters.
 
 
@@ -47,8 +47,8 @@ includes the encoded, desired parameters.
 | $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that calendar view.|
 | $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
 
-When you do a delta query on a calendar view, expect to get all the properties you'd normally get from 
-a `GET /calendarview` request. `$select` is not supported in this case. 
+When you do a delta query on a calendar view, expect to get all the properties you'd normally get from
+a `GET /calendarview` request. `$select` is not supported in this case.
 
 
 ## Request headers
@@ -66,11 +66,11 @@ If successful, this method returns a `200 OK` response code and [event](../resou
 ## Example
 ##### Request
 
-The following example shows how to make a single **delta** function call, and limit the maximum number of events 
+The following example shows how to make a single **delta** function call, and limit the maximum number of events
 in the response body to 2.
 
-To track changes in a calendar view, you would make one or more **delta** function calls, with 
-appropriate [state tokens](../../../concepts/delta_query_overview.md), to get the set of incremental changes since the last delta query. 
+To track changes in a calendar view, you would make one or more **delta** function calls, with
+appropriate [state tokens](../../../concepts/delta_query_overview.md), to get the set of incremental changes since the last delta query.
 
 <!-- {
   "blockType": "request",
@@ -83,9 +83,9 @@ Prefer: odata.maxpagesize=2
 ```
 
 ##### Response
-If the request is successful, the response would include a state token, which is either a _skipToken_ 
-(in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). 
-Respectively, they indicate whether you should continue with the round or you have completed 
+If the request is successful, the response would include a state token, which is either a _skipToken_
+(in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header).
+Respectively, they indicate whether you should continue with the round or you have completed
 getting all the changes for that round.
 
 The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
@@ -112,7 +112,7 @@ Content-length: 359
         "response": "response-value",
         "time": "datetime-value"
       },
-      "iCalUId": "iCalUId-value",
+      "uid": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
       "isReminderOn": true
     }

@@ -72,7 +72,6 @@ The following table shows the properties that are required when you create the a
 |minimumWipeAppVersion|String|Versions less than or equal to the specified version will wipe the managed app and the associated company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune_mam_managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, when the device is either rooted or jailbroken, if DeviceComplianceRequired is set to true. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md). Possible values are: `block`, `wipe`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune_mam_managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md). Possible values are: `block`, `wipe`.|
-|pinRequiredOnLaunchInsteadOfBiometric|Boolean|Requires an app pin on launch instead of non biometrics passcode Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |pinRequiredInsteadOfBiometricTimeout|Duration|Timeout in minutes for an app pin instead of non biometrics passcode Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune_mam_appmanagementlevel.md)|The intended app management levels for this policy Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md). Possible values are: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
@@ -98,7 +97,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtections
 Content-type: application/json
-Content-length: 2512
+Content-length: 2462
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",
@@ -138,7 +137,6 @@ Content-length: 2512
   "minimumWipeAppVersion": "Minimum Wipe App Version value",
   "appActionIfDeviceComplianceRequired": "wipe",
   "appActionIfMaximumPinRetriesExceeded": "wipe",
-  "pinRequiredOnLaunchInsteadOfBiometric": true,
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
   "isAssigned": true,
   "targetedAppManagementLevels": "unmanaged",
@@ -166,7 +164,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2620
+Content-Length: 2570
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",
@@ -208,7 +206,6 @@ Content-Length: 2620
   "minimumWipeAppVersion": "Minimum Wipe App Version value",
   "appActionIfDeviceComplianceRequired": "wipe",
   "appActionIfMaximumPinRetriesExceeded": "wipe",
-  "pinRequiredOnLaunchInsteadOfBiometric": true,
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
   "isAssigned": true,
   "targetedAppManagementLevels": "unmanaged",

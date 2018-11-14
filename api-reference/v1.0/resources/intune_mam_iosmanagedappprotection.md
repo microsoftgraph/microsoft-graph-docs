@@ -1,4 +1,4 @@
-# iosManagedAppProtection resource type
+﻿# iosManagedAppProtection resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -65,12 +65,12 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.targetedManagedAppProtection",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosManagedAppProtection"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -116,20 +116,14 @@ Here is a JSON representation of the resource.
 }
 ```
 
-
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-
-"Warning: /api-reference/v1.0/resources/intune_mam_androidmanagedappprotection.md/microsoft.graph.androidManagedAppProtection/allowedDataStorageLocations:
-      Inconsistent types between parameter (String) and table (Object)",
-
-"Warning: /api-reference/v1.0/resources/intune_mam_defaultmanagedappprotection.md/microsoft.graph.defaultManagedAppProtection/allowedDataStorageLocations:
-      Inconsistent types between parameter (String) and table (Object)",
-
-"Warning: /api-reference/v1.0/resources/intune_mam_iosmanagedappprotection.md/microsoft.graph.iosManagedAppProtection/allowedDataStorageLocations:
+     "Warning: /api-reference/v1.0/resources/intune_mam_iosmanagedappprotection.md/microsoft.graph.iosManagedAppProtection/allowedDataStorageLocations:
       Inconsistent types between parameter (String) and table (Object)"
-
   ],
 }
 -->
+
+
+

@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2021
+Content-Length: 2178
 
 {
   "value": [
@@ -86,6 +86,10 @@ Content-Length: 2021
       "passwordPreviousPasswordBlockCount": 2,
       "passwordRequiredType": "alphanumeric",
       "passwordRequired": true,
+      "keychainBlockCloudSync": true,
+      "airPrintBlocked": true,
+      "airPrintForceTrustedTLS": true,
+      "airPrintBlockiBeaconDiscovery": true,
       "safariBlockAutofill": true,
       "cameraBlocked": true,
       "iTunesBlockMusicService": true,

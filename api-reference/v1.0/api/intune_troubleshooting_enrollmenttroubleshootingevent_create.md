@@ -55,7 +55,7 @@ If successful, this method returns a `201 Created` response code and a [enrollme
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
+POST https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents
 Content-type: application/json
 Content-length: 509
 
@@ -96,7 +96,6 @@ Content-Length: 558
   "failureReason": "Failure Reason value"
 }
 ```
-
 
 
 

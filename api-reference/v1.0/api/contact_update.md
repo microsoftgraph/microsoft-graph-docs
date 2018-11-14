@@ -48,7 +48,7 @@ In the request body, supply the values for relevant fields that should be update
 |children|String|The names of the contact's children.|
 |companyName|String|The name of the contact's company.|
 |department|String|The contact's department.|
-|displayName|String|The contact's display name.|
+|displayName|String|The contact's display name. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.|
 |emailAddresses|[EmailAddress](../resources/emailaddress.md) collection|The contact's email addresses.|
 |fileAs|String|The name the contact is filed under.|
 |generation|String|The contact's generation.|
@@ -145,7 +145,7 @@ Content-length: 1977
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": null,
-  "businessHomePage": "http://www.contoso.com",
+  "businessHomePage": "https://www.contoso.com",
   "assistantName": null,
   "manager": null,
   "homePhones": [],

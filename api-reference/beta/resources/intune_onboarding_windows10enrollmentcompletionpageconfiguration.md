@@ -34,6 +34,7 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune_onboarding_dev
 |customErrorMessage|String|Set custom error message to show upon installation failure|
 |installProgressTimeoutInMinutes|Int32|Set installation progress timeout in minutes|
 |allowDeviceUseOnInstallFailure|Boolean|Allow the user to continue using the device on installation failure|
+|selectedMobileAppIds|String collection|Selected applications to track the installation status|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -64,7 +65,10 @@ Here is a JSON representation of the resource.
   "allowLogCollectionOnInstallFailure": true,
   "customErrorMessage": "String",
   "installProgressTimeoutInMinutes": 1024,
-  "allowDeviceUseOnInstallFailure": true
+  "allowDeviceUseOnInstallFailure": true,
+  "selectedMobileAppIds": [
+    "String"
+  ]
 }
 ```
 

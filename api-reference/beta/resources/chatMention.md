@@ -1,4 +1,4 @@
-# chatMention resource type
+# chatMessageMention resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -17,8 +17,8 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.chatMention"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.chatMessageMention"
 }-->
 
 ```json

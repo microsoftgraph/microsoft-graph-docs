@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1613
+Content-Length: 1902
 
 {
   "value": [
@@ -83,7 +83,16 @@ Content-Length: 1613
       "securityRequireGooglePlayServices": true,
       "securityRequireUpToDateSecurityProviders": true,
       "securityRequireCompanyPortalAppIntegrity": true,
-      "conditionStatementId": "Condition Statement Id value"
+      "conditionStatementId": "Condition Statement Id value",
+      "restrictedApps": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        }
+      ]
     }
   ]
 }

@@ -109,7 +109,7 @@ Devices that are managed or pre-enrolled through Intune
 |Relationship|Type|Description|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune_devices_detectedapp.md) collection|All applications currently installed on the device|
-|deviceCategory|[deviceCategory](../resources/intune_shared_devicecategory.md)|Device category|
+|deviceCategory|[deviceCategory](../resources/intune_devices_devicecategory.md)|Device category|
 |windowsProtectionState|[windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md)|The device protection status.|
 
 ## JSON Representation

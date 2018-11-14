@@ -16,6 +16,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |[Create windowsUpdateForBusinessConfiguration](../api/intune_deviceconfig_windowsupdateforbusinessconfiguration_create.md)|[windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md)|Create a new [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) object.|
 |[Delete windowsUpdateForBusinessConfiguration](../api/intune_deviceconfig_windowsupdateforbusinessconfiguration_delete.md)|None|Deletes a [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md).|
 |[Update windowsUpdateForBusinessConfiguration](../api/intune_deviceconfig_windowsupdateforbusinessconfiguration_update.md)|[windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md)|Update the properties of a [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) object.|
+|[extendFeatureUpdatesPause action](../api/intune_deviceconfig_windowsupdateforbusinessconfiguration_extendfeatureupdatespause.md)|None|Extend Feature Updates Pause for a Windows Update for Business ring.|
+|[extendQualityUpdatesPause action](../api/intune_deviceconfig_windowsupdateforbusinessconfiguration_extendqualityupdatespause.md)|None|Extend Quality Updates Pause for a Windows Update for Business ring.|
 
 ## Properties
 |Property|Type|Description|
@@ -50,6 +52,12 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |featureUpdatesWillBeRolledBack|Boolean|Specifies whether to rollback Feature Updates on the next device check in|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|Quality Updates Rollback Start datetime|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|Feature Updates Rollback Start datetime|
+|engagedRestartDeadlineInDays|Int32|Deadline in days before automatically scheduling and executing a pending restart outside of active hours, with valid range from 2 to 30 days|
+|engagedRestartSnoozeScheduleInDays|Int32|Number of days a user can snooze Engaged Restart reminder notifications with valid range from 1 to 3 days|
+|engagedRestartTransitionScheduleInDays|Int32|Number of days before transitioning from Auto Restarts scheduled outside of active hours to Engaged Restart, which requires the user to schedule, with valid range from 0 to 30 days|
+|autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune_deviceconfig_autorestartnotificationdismissalmethod.md)|Specify the method by which the auto-restart required notification is dismissed. Possible values are: `notConfigured`, `automatic`, `user`.|
+|scheduleRestartWarningInHours|Int32|Specify the period for auto-restart warning reminder notifications. Supported values: 2, 4, 8, 12 or 24 (hours).|
+|scheduleImminentRestartWarningInMinutes|Int32|Specify the period for auto-restart imminent warning notifications. Supported values: 15, 30 or 60 (minutes).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -108,7 +116,13 @@ Here is a JSON representation of the resource.
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,
   "qualityUpdatesRollbackStartDateTime": "String (timestamp)",
-  "featureUpdatesRollbackStartDateTime": "String (timestamp)"
+  "featureUpdatesRollbackStartDateTime": "String (timestamp)",
+  "engagedRestartDeadlineInDays": 1024,
+  "engagedRestartSnoozeScheduleInDays": 1024,
+  "engagedRestartTransitionScheduleInDays": 1024,
+  "autoRestartNotificationDismissal": "String",
+  "scheduleRestartWarningInHours": 1024,
+  "scheduleImminentRestartWarningInMinutes": 1024
 }
 ```
 

@@ -11,9 +11,10 @@ Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" chann
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List channels](../api/group_list_channels.md) | [channel](channel.md) collection | Get the list of channels in this team.|
-|[Create channel](../api/group_post_channels.md) | [channel](channel.md) | Create a new channel by including the display name and description.|
-|[Get channel](../api/channel_get.md) | [channel](channel.md) | Read properties and relationships of channel object.|
+|[List channels](../api/channel_list.md) | [channel](channel.md) collection | Get the list of channels in this team.|
+|[Create channel](../api/channel_post.md) | [channel](channel.md) | Create a new channel by including the display name and description.|
+|[Get channel](../api/channel_get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
+|[Update channel](../api/channel_patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel_delete.md) | None | Delete a channel.|
 |[List channel messages](../api/channel_list_messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
 |[Create chat thread](../api/channel_post_chatthreads.md) | [chatThread](chatthread.md) collection| Create a chat thread in the specified channel.|
@@ -29,7 +30,8 @@ Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" chann
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable. Currently this API only supports reading but will eventually support writing messages too.|
-|chatThreads|[chatThread](chatthread.md) collection|(This is being phased out in favor of the messages property. chatThreads supports creating new messages but not reading messages. ChatThreads is a navigation property, and is Nullable.|
+|chatThreads|[chatThread](chatthread.md) collection|(This is being phased out in favor of the messages property) chatThreads supports creating new messages but not reading messages. ChatThreads is a navigation property, and is Nullable.|
+|tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
 
 
 ## JSON representation

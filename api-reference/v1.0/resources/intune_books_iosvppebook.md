@@ -1,4 +1,4 @@
-# iosVppEBook resource type
+﻿# iosVppEBook resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -47,12 +47,12 @@ Inherits from [managedEBook](../resources/intune_books_managedebook.md)
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.managedEBook",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosVppEBook"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -82,11 +82,6 @@ Here is a JSON representation of the resource.
   "usedLicenseCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

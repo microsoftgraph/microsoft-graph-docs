@@ -2,39 +2,10 @@
 
 Retrieve the properties and relationships of a contact object.
 
+There are two scenarios where an app can get a contact in another user's contact folder:
 
-### Get contacts in another user's contact folder
-
-If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get contacts 
-from another user's contact folder. This section focuses on scenarios that involve delegated permissions.
-
-For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a contact folder with John. 
-You can get a contact in that shared folder by specifying Garth’s user ID (or user principal name) in the example query shown below.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/contacts/{id}
-```
-
-This capability applies to all the supported GET contacts operations for an individual user, as listed in the [HTTP request](#http-request) section below. 
-It also applies if Garth has delegated his entire mailbox to John.
-
-If Garth has not shared his contact folder with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
-will return an error. In such cases, specifying a user ID or user principal name only works for getting a contact in the signed-in user’s own contact folders, 
-and the query is equivalent to using the /me shortcut:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/contacts/{id}
-```
-
-This capability is available in only GET operations of:
-
-- Shared contact folders, calendars, and message folders 
-- Contacts, events, and messages in shared folders
-- The above resources in delegated mailboxes
-
-This capability is not available in other operations for contacts, events, messages, and their folders.
+* If the app has application permissions, or,
+* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a contact folder with that user, or, has given delegated access to that user. See [details and an example](../../../concepts/outlook-get-shared-contacts-folders.md).
 
 
 ## Permissions
@@ -137,7 +108,7 @@ Content-length: 1977
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": null,
-  "businessHomePage": "http://www.contoso.com",
+  "businessHomePage": "https://www.contoso.com",
   "assistantName": null,
   "manager": null,
   "homePhones": [],

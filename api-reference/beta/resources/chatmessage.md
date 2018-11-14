@@ -21,18 +21,19 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |from|identitySet| Details of the sender of the message|
 |etag| string | Version number of the message |
 |messageType|String|The type of message, current supported values are: message, chatEvent, Typing|
-|createDateTime|dateTimeOffset|Read only. Timestamp of when the message was created|
+|createdDateTime|dateTimeOffset|Read only. Timestamp of when the message was created|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the message was edited/updated|
 |isDeleted|boolean|Represents if a message has been soft deleted|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted |
 |subject|string|Message subject line. Optional|
 |body|itemBody|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param|
 |summary|string|Summary text of the message that could be used for push notifications and summary views or fall back views|
-|attachment|chatAttachment collection| Array of attachments that are part of the message|
-|mentions|chatMention collection| List of entities mentioned in the message. Currently supports user, bot, team, channel|
+|mentions|chatMessageMention collection| List of entities mentioned in the message. Currently supports user, bot, team, channel|
 |importance| string | The importance of the message: Normal, High|
-|reactions| chatReactions collection | Reactions for this message (for example, Like)|
+|reactions| chatMessageReaction collection | Reactions for this message (for example, Like)|
 |locale|string|Locale of the message set by the client|
+|attachments|chatMessageAttachment collection |Attached files|
+
 
 ## JSON representation
 
@@ -50,7 +51,7 @@ The following is a JSON representation of the resource.
     "subject",
     "summary"
   ],
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.chatMessage"
 }-->
 
@@ -68,10 +69,10 @@ The following is a JSON representation of the resource.
   "subject": "string",
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "summary": "string",
-  "attachments": [{"@odata.type": "microsoft.graph.chatAttachment"}],
-  "mentions": [{"@odata.type": "microsoft.graph.chatMention"}],
+  "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
+  "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
-  "reactions": [{"@odata.type": "microsoft.graph.chatReaction"}],
+  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
   "locale": "string"
 }
 

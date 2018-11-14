@@ -1,4 +1,4 @@
-# managedDeviceMobileAppConfigurationAssignment resource type
+﻿# managedDeviceMobileAppConfigurationAssignment resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -22,12 +22,12 @@ Contains the properties used to assign an MDM app configuration to a group.
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfigurationAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment",
@@ -37,11 +37,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
 
 
 

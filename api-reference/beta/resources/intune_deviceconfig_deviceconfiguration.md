@@ -13,6 +13,7 @@ Device Configuration.
 |[assign action](../api/intune_deviceconfig_deviceconfiguration_assign.md)|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) collection|Not yet documented|
 |[windowsPrivacyAccessControls action](../api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols.md)|None|Not yet documented|
 |[assignedAccessMultiModeProfiles action](../api/intune_deviceconfig_deviceconfiguration_assignedaccessmultimodeprofiles.md)|None|Not yet documented|
+|[getTargetedUsersAndDevices action](../api/intune_deviceconfig_deviceconfiguration_gettargetedusersanddevices.md)|[deviceConfigurationTargetedUserAndDevice](../resources/intune_deviceconfig_deviceconfigurationtargeteduseranddevice.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|

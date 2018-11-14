@@ -46,7 +46,9 @@ The following table shows the properties that are required when you create the [
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network. Inherited from [windowsWifiConfiguration](../resources/intune_deviceconfig_windowswificonfiguration.md)|
 |wifiSecurityType|[wiFiSecurityType](../resources/intune_deviceconfig_wifisecuritytype.md)|Specify the Wifi Security Type. Inherited from [windowsWifiConfiguration](../resources/intune_deviceconfig_windowswificonfiguration.md). Possible values are: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
+|meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune_deviceconfig_meteredconnectionlimittype.md)|Specify the metered connection limit type for the wifi connection. Inherited from [windowsWifiConfiguration](../resources/intune_deviceconfig_windowswificonfiguration.md). Possible values are: `unrestricted`, `fixed`, `variable`.|
 |ssid|String|Specify the SSID of the wifi connection. Inherited from [windowsWifiConfiguration](../resources/intune_deviceconfig_windowswificonfiguration.md)|
 |networkName|String|Specify the network configuration name. Inherited from [windowsWifiConfiguration](../resources/intune_deviceconfig_windowswificonfiguration.md)|
 |connectAutomatically|Boolean|Specify whether the wifi connection should connect automatically when in range. Inherited from [windowsWifiConfiguration](../resources/intune_deviceconfig_windowswificonfiguration.md)|
@@ -82,7 +84,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1411
+Content-length: 1492
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -93,7 +95,9 @@ Content-length: 1411
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "preSharedKey": "Pre Shared Key value",
   "wifiSecurityType": "wpaPersonal",
+  "meteredConnectionLimit": "fixed",
   "ssid": "Ssid value",
   "networkName": "Network Name value",
   "connectAutomatically": true,
@@ -127,7 +131,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1595
+Content-Length: 1676
 
 {
   "@odata.type": "#microsoft.graph.windowsWifiEnterpriseEAPConfiguration",
@@ -141,7 +145,9 @@ Content-Length: 1595
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "preSharedKey": "Pre Shared Key value",
   "wifiSecurityType": "wpaPersonal",
+  "meteredConnectionLimit": "fixed",
   "ssid": "Ssid value",
   "networkName": "Network Name value",
   "connectAutomatically": true,

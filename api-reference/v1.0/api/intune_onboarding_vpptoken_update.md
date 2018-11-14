@@ -58,16 +58,16 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens/{vppTokenId}
 Content-type: application/json
-Content-length: 478
+Content-length: 461
 
 {
+  "@odata.type": "#microsoft.graph.vppToken",
   "organizationName": "Organization Name value",
   "vppTokenAccountType": "education",
   "appleId": "Apple Id value",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "token": "Token value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "valid",
   "lastSyncStatus": "inProgress",
   "automaticallyUpdateApps": true,
@@ -98,11 +98,6 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
-
-
-
-
-
 
 
 

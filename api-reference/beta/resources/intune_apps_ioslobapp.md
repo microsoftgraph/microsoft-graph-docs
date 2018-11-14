@@ -100,7 +100,8 @@ Here is a JSON representation of the resource.
     "v8_0": true,
     "v9_0": true,
     "v10_0": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   },
   "expirationDateTime": "String (timestamp)",
   "versionNumber": "String",

@@ -50,6 +50,7 @@ The following table shows the properties that are required when you create the [
 |customErrorMessage|String|Set custom error message to show upon installation failure|
 |installProgressTimeoutInMinutes|Int32|Set installation progress timeout in minutes|
 |allowDeviceUseOnInstallFailure|Boolean|Allow the user to continue using the device on installation failure|
+|selectedMobileAppIds|String collection|Selected applications to track the installation status|
 
 
 
@@ -62,7 +63,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 Content-type: application/json
-Content-length: 490
+Content-length: 562
 
 {
   "displayName": "Display Name value",
@@ -76,7 +77,10 @@ Content-length: 490
   "allowLogCollectionOnInstallFailure": true,
   "customErrorMessage": "Custom Error Message value",
   "installProgressTimeoutInMinutes": 15,
-  "allowDeviceUseOnInstallFailure": true
+  "allowDeviceUseOnInstallFailure": true,
+  "selectedMobileAppIds": [
+    "Selected Mobile App Ids value"
+  ]
 }
 ```
 
@@ -85,7 +89,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 683
+Content-Length: 755
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -102,7 +106,10 @@ Content-Length: 683
   "allowLogCollectionOnInstallFailure": true,
   "customErrorMessage": "Custom Error Message value",
   "installProgressTimeoutInMinutes": 15,
-  "allowDeviceUseOnInstallFailure": true
+  "allowDeviceUseOnInstallFailure": true,
+  "selectedMobileAppIds": [
+    "Selected Mobile App Ids value"
+  ]
 }
 ```
 

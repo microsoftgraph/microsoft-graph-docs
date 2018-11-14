@@ -26,7 +26,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 12637
+Content-Length: 12903
 
 {
   "value": {
@@ -66,6 +66,12 @@ Content-Length: 12637
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "windows10AppsForceUpdateSchedule": {
+      "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
+      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+      "recurrence": "daily",
+      "runImmediatelyIfAfterStartDateTime": true
+    },
     "enableAutomaticRedeployment": true,
     "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
     "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",

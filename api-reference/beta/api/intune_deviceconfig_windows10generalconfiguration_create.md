@@ -45,6 +45,7 @@ The following table shows the properties that are required when you create the w
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune_deviceconfig_windows10appsforceupdateschedule.md)|Windows 10 force update schedule for Apps.|
 |enableAutomaticRedeployment|Boolean|Allow users with administrative rights to delete all user data and settings using CTRL + Win + R at the device lock screen so that the device can be automatically re-configured and re-enrolled into management.|
 |assignedAccessSingleModeUserName|String|This policy setting allows to define the user account that will be locked to Single App Kiosk Mode.|
 |assignedAccessSingleModeAppUserModelId|String|This policy setting allows to define the Application User Model ID (AUMID) that will be locked to Single App Kiosk Mode.|
@@ -296,7 +297,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 11948
+Content-length: 12202
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -308,6 +309,12 @@ Content-length: 11948
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "windows10AppsForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "recurrence": "daily",
+    "runImmediatelyIfAfterStartDateTime": true
+  },
   "enableAutomaticRedeployment": true,
   "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
   "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
@@ -586,7 +593,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 12056
+Content-Length: 12310
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -600,6 +607,12 @@ Content-Length: 12056
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "windows10AppsForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "recurrence": "daily",
+    "runImmediatelyIfAfterStartDateTime": true
+  },
   "enableAutomaticRedeployment": true,
   "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
   "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
