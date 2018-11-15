@@ -1,6 +1,4 @@
-#teamsAppContext enum type
-
-
+# teamsAppContext enum type
 
 Describes where the [teamsApp](teamsapp.md) came from.
 
