@@ -54,7 +54,7 @@ Removed instances are represented by their **id** and an `@removed` object. The 
 
 Possible @removed reasons can be *changed* or *deleted*.
 
-- *Changed* indicates the item was deleted and can be restored from [deletedItems](/graph/api/resources/directory?view=graph-rest-beta).
+- *Changed* indicates the item was deleted and can be restored from [deletedItems](/graph/api/resources/directory.md?view=graph-rest-beta).
 
 - *Deleted* indicates the item is deleted and cannot be restored.
 
@@ -66,8 +66,8 @@ Delta query is currently supported for the following resources.
 
 | **Resource collection** | **API** |
 |:------ | :------ |
-| Applications (preview) | [delta](/graph/api/application_delta?view=graph-rest-beta) function of the [application](/graph/api/resources/application?view=graph-rest-beta) resource (preview) |
-| Directory objects | [delta](/graph/api/directoryobject_delta?view=graph-rest-beta) function of the [directoryObjects](/graph/api/resources/directoryobject?view=graph-rest-beta) resource (preview) |
+| Applications (preview) | [delta](/graph/api/application_delta.md?view=graph-rest-beta) function of the [application](/graph/api/resources/application.md?view=graph-rest-beta) resource (preview) |
+| Directory objects | [delta](/graph/api/directoryobject_delta.md?view=graph-rest-beta) function of the [directoryObjects](/graph/api/resources/directoryobject.md?view=graph-rest-beta) resource (preview) |
 | Directory roles | [delta](/graph/api/directoryrole_delta?view=graph-rest-1.0) function of the [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) resource |
 | Events in a calendar view (date range) of the primary calendar | [delta](/graph/api/event_delta?view=graph-rest-1.0) function of the [event](/graph/api/resources/event?view=graph-rest-1.0) resource |
 | Groups | [delta](/graph/api/group_delta?view=graph-rest-1.0) function of the [group](/graph/api/resources/group?view=graph-rest-1.0) resource |
@@ -75,15 +75,15 @@ Delta query is currently supported for the following resources.
 | Messages in a folder | [delta](/graph/api/message_delta?view=graph-rest-1.0) function of the [message](/graph/api/resources/message?view=graph-rest-1.0) resource |
 | Personal contact folders | [delta](/graph/api/contactfolder_delta?view=graph-rest-1.0) function of the [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) resource |
 | Personal contacts in a folder | [delta](/graph/api/contact_delta?view=graph-rest-1.0) function of the [contact](/graph/api/resources/contact?view=graph-rest-1.0) resource |
-| Service principals (preview) | [delta](/graph/api/serviceprincipal_delta?view=graph-rest-beta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource (preview) |
+| Service principals (preview) | [delta](/graph/api/serviceprincipal_delta.md?view=graph-rest-beta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal.md?view=graph-rest-beta) resource (preview) |
 | Users | [delta](/graph/api/user_delta?view=graph-rest-1.0) function of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource |
 | Drive items\* | [delta](/graph/api/driveitem_delta?view=graph-rest-1.0) function of the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource |
-| Planner items\*\* | [delta](/graph/api/planneruser_list_delta?view=graph-rest-beta) function of the all segment of [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) resource (preview) |
+| Planner items\*\* | [delta](/graph/api/planneruser_list_delta.md?view=graph-rest-beta) function of the all segment of [plannerUser](/graph/api/resources/planneruser.md?view=graph-rest-beta) resource (preview) |
 
 > \* The usage pattern for OneDrive resources is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, see
 [Track changes for a Drive](/graph/api/item_delta?view=graph-rest-1.0).
 
-> \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences.  For details, see [Track changes for Planner](/graph/api/planneruser_list_delta?view=graph-rest-beta).
+> \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences.  For details, see [Track changes for Planner](/graph/api/planneruser_list_delta.md?view=graph-rest-beta).
 
 ## Prerequisites
 

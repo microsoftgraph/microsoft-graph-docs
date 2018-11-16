@@ -28,9 +28,9 @@ Are you working on repeated process or project type? You can use the Planner API
 
 |Operation|URL|
 |:--------|:--|
-|See all the [plans](/graph/api/resources/plannerplan?view=graph-rest-beta) for a group|GET [https://graph.microsoft.com/v1.0/groups/{id}/planner/plans](https://developer.microsoft.com/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
-|See [tasks](/graph/api/resources/plannertask?view=graph-rest-beta) in a plan|GET [https://graph.microsoft.com/v1.0/planner/plans/{id}/tasks](https://developer.microsoft.com/graph/graph-explorer?request=planner/plans/{id}/tasks&version=v1.0)|
-|See all [my tasks](/graph/api/planneruser_list_tasks?view=graph-rest-beta) assigned to me across plans|GET [https://graph.microsoft.com/v1.0/me/planner/tasks/](https://developer.microsoft.com/graph/graph-explorer?request=me/planner/tasks/&version=v1.0)|
+|See all the [plans](/graph/api/resources/plannerplan.md?view=graph-rest-beta) for a group|GET [https://graph.microsoft.com/v1.0/groups/{id}/planner/plans](https://developer.microsoft.com/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
+|See [tasks](/graph/api/resources/plannertask.md?view=graph-rest-beta) in a plan|GET [https://graph.microsoft.com/v1.0/planner/plans/{id}/tasks](https://developer.microsoft.com/graph/graph-explorer?request=planner/plans/{id}/tasks&version=v1.0)|
+|See all [my tasks](/graph/api/planneruser_list_tasks.md?view=graph-rest-beta) assigned to me across plans|GET [https://graph.microsoft.com/v1.0/me/planner/tasks/](https://developer.microsoft.com/graph/graph-explorer?request=me/planner/tasks/&version=v1.0)|
 |[Create a new task](/graph/api/planner_post_tasks?view=graph-rest-1.0)|POST [https://graph.microsoft.com/v1.0/planner/tasks](https://developer.microsoft.com/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
 |[Update a task](/graph/api/plannertask_update?view=graph-rest-1.0)|PATCH [https://graph.microsoft.com/v1.0/planner/tasks/{task-id}](https://developer.microsoft.com/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
 |[Delete a task](/graph/api/plannertask_delete?view=graph-rest-1.0)|DELETE [https://graph.microsoft.com/v1.0/planner/tasks/{id}](https://developer.microsoft.com/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
@@ -39,7 +39,7 @@ Are you working on repeated process or project type? You can use the Planner API
 Looking for the API reference for this service?
 
 - [Planner API in Microsoft Graph v1.0](/graph/api/resources/planner_overview?view=graph-rest-1.0)
-- [Planner API in Microsoft Graph beta](/graph/api/resources/planner_overview?view=graph-rest-beta)
+- [Planner API in Microsoft Graph beta](/graph/api/resources/planner_overview.md?view=graph-rest-beta)
 
 
 ## Next steps

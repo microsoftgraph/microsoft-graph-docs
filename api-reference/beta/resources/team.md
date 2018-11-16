@@ -22,8 +22,8 @@ For more information about working with groups and members in teams, see [Use th
 |[Unarchive team](../api/team_unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[List your teams](../api/user_list_joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
 |[List all teams](/graph/teams_list_all_teams) | [group](group.md) collection | List all groups that have teams. |
-|[Publish apps to your organization](../resources/teamsapp.md)| [app](../resources/teamsapp.md) | Create Teams apps visible only to your organization. |
-|[Add app to team](../api/teamsappinstallation_add.md) | [teamsApp](teamsapp.md) | Adds (installs) an app to a team.|
+|[Publish apps to your organization](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Create Teams apps visible only to your organization. |
+|[Add app to team](../api/teamsappinstallation_add.md) | [teamsappinstallation](teamsappinstallation.md) | Adds (installs) an app to a team.|
 |[Add tab to channel](../api/teamstab_add.md) | [teamsTab](../resources/teamstab.md) | Adds (installs) a tab to a team's channel.|
 |[List channel messages](../api/channel_list_messages.md)  | [chatMessage](../resources/chatmessage.md) | [Get messages in a channel](../api/channel_list_messages.md) |
 

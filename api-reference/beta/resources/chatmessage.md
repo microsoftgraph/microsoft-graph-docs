@@ -18,7 +18,7 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique ID of the message.|
 |replyToId| string | Id of the parent message/root message of the thread |
-|from|identitySet| Details of the sender of the message|
+|from|[identitySet](identityset.md)| Details of the sender of the message|
 |etag| string | Version number of the message |
 |messageType|String|The type of message, current supported values are: message, chatEvent, Typing|
 |createdDateTime|dateTimeOffset|Read only. Timestamp of when the message was created|
@@ -26,13 +26,13 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |isDeleted|boolean|Represents if a message has been soft deleted|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted |
 |subject|string|Message subject line. Optional|
-|body|itemBody|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param|
+|body|[itemBody](itemBody.md)|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param|
 |summary|string|Summary text of the message that could be used for push notifications and summary views or fall back views|
-|mentions|chatMessageMention collection| List of entities mentioned in the message. Currently supports user, bot, team, channel|
+|mentions|[chatMessageMention](chatMention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel|
 |importance| string | The importance of the message: Normal, High|
-|reactions| chatMessageReaction collection | Reactions for this message (for example, Like)|
+|reactions| [chatMessageReaction](chatreaction.md) collection | Reactions for this message (for example, Like)|
 |locale|string|Locale of the message set by the client|
-|attachments|chatMessageAttachment collection |Attached files|
+|attachments|[chatMessageAttachment](chatattachment.md) collection |Attached files|
 
 
 ## JSON representation

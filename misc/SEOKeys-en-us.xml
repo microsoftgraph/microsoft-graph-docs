@@ -29,6 +29,7 @@
   </Item>
   <Item text="Customer booking (preview)" ProdTag="Microsoft Bookings" url="/en-us/concepts/booking-concept-overview" />
   <Item text="Data access (preview)" ProdTag="Microsoft Graph data connect" url="/en-us/concepts/data-connect-concept-overview" >
+	<Item text="Get started" url="/en-us/concepts/data-connect-get-started" />
   </Item>
   <Item text="Devices and apps" ProdTag="Intune" url="/en-us/concepts/intune-concept-overview" />
   <Item text="Education" url="/en-us/concepts/education-concept-overview" />
@@ -74,6 +75,7 @@
   </Item>
   <Item text="Tasks and plans" ProdTag="Planner" url="/en-us/concepts/planner-concept-overview" />
   <Item text="Teamwork" ProdTag="Microsoft Teams" url="/en-us/concepts/teams-concept-overview" >
+	<Item text="Create a group with a team" url="/en-us/concepts/teams-create-group-and-team" />
 	<Item text="List all teams for an organization" url="/en-us/concepts/teams_list_all_teams" />
 	<Item text="Configure built-in tabs" url="/en-us/concepts/teams-configuring-builtin-tabs" />
   </Item>
@@ -2137,6 +2139,84 @@
       <Item text="Update progress task board format" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_update" />
 	  </Item>
   </Item>
+  
+  <Item text="Teamwork" ProdTag="Microsoft Teams" url="/en-us/api-reference/v1.0/resources/teams_api_overview" SEOKeyword="Teams API, Microsoft Graph API, Microsoft Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
+      <Item text="Team" url="/en-us/api-reference/v1.0/resources/team" >
+		<Item text="Create team" url="/en-us/api-reference/v1.0/api/team_put_teams" />
+		<Item text="Get team" url="/en-us/api-reference/v1.0/api/team_get" />
+		<Item text="Update team" url="/en-us/api-reference/v1.0/api/team_update" />
+		<Item text="Archive team" url="/en-us/api-reference/v1.0/api/team_archive" />
+		<Item text="Unarchive team" url="/en-us/api-reference/v1.0/api/team_unarchive" />
+		<Item text="Clone team" url="/en-us/api-reference/v1.0/api/team_clone" />
+		<Item text="List your teams" url="/en-us/api-reference/v1.0/api/user_list_joinedteams" />
+		<Item text="List all teams" url="/en-us/concepts/teams_list_all_teams" />
+	  </Item>
+	  <Item text="Group (team)" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
+        <Item text="Create group" url="/en-us/api-reference/v1.0/api/group_post_groups" />
+		<Item text="Get group" url="/en-us/api-reference/v1.0/api/group_get" SEOKeyword="Get group, Microsoft Graph API, Groups API" SEODescription="Retrieve the properties and relationships of group object." />
+        <Item text="List groups" url="/en-us/api-reference/v1.0/api/group_list" SEOKeyword="List groups, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of group objects." />
+        <Item text="Update group" url="/en-us/api-reference/v1.0/api/group_update" SEOKeyword="Update group, Microsoft Graph API, Groups API" SEODescription="Update the properties of group object." />
+        <Item text="Delete group" url="/en-us/api-reference/v1.0/api/group_delete" SEOKeyword="Delete group, Microsoft Graph API, Groups API" SEODescription="Delete group." />
+        <Item text="List joined teams" url="/en-us/api-reference/v1.0/api/user_list_joinedteams" SEOKeyword="List joinedTeams, Microsoft Graph API, Users API" SEODescription="Retrieve a list of Microsoft Teams that the user belongs to." />
+        <Item text="List members" url="/en-us/api-reference/v1.0/api/group_list_members" SEOKeyword="List members, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
+        <Item text="Add member" url="/en-us/api-reference/v1.0/api/group_post_members" SEOKeyword="Create member, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new member." />
+        <Item text="Remove member" url="/en-us/api-reference/v1.0/api/group_delete_members" SEOKeyword="Remove member, Microsoft Graph API, Groups API" SEODescription="Use this API to remove member." />
+        <Item text="List owners" url="/en-us/api-reference/v1.0/api/group_list_owners" SEOKeyword="List owners, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
+        <Item text="Add owner" url="/en-us/api-reference/v1.0/api/group_post_owners" SEOKeyword="Create owner, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new owner." />
+        <Item text="Remove owner" url="/en-us/api-reference/v1.0/api/group_delete_owners" SEOKeyword="Remove owner, Microsoft Graph API, Groups API" SEODescription="Use this API to remove group owner."/>
+        <Item text="Get member groups" url="/en-us/api-reference/v1.0/api/group_getmembergroups" SEOKeyword="group: getMemberGroups, Microsoft Graph API, group API" SEODescription="" />
+        <Item text="Get member objects" url="/en-us/api-reference/v1.0/api/group_getmemberobjects" SEOKeyword="group: getMemberObjects, Microsoft Graph API, group API" SEODescription="" />
+        <Item text="Check member groups" url="/en-us/api-reference/v1.0/api/group_checkmembergroups" SEOKeyword="group: checkMemberGroups, Microsoft Graph API, group API" SEODescription="" />
+        <Item text="List member of" url="/en-us/api-reference/v1.0/api/group_list_memberof" SEOKeyword="List memberOf, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
+        <Item text="Get deleted group" url="/en-us/api-reference/v1.0/api/directory_deleteditems_get" />
+        <Item text="List deleted groups" url="/en-us/api-reference/v1.0/api/directory_deleteditems_list" />
+        <Item text="Permanently delete group" url="/en-us/api-reference/v1.0/api/directory_deleteditems_delete" />
+        <Item text="Restore deleted group" url="/en-us/api-reference/v1.0/api/directory_deleteditems_restore" />
+      </Item>
+      <Item text="Channel" url="/en-us/api-reference/v1.0/resources/channel" SEOKeyword="channel API, Microsoft Graph API, channel API" SEODescription="">
+        <Item text="List channels" url="/en-us/api-reference/v1.0/api/channel_list" SEOKeyword="List channels, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of channel objects." />
+        <Item text="Create channel" url="/en-us/api-reference/v1.0/api/channel_post" SEOKeyword="Create Conversation, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new channel." />
+        <Item text="Get channel" url="/en-us/api-reference/v1.0/api/channel_get" SEOKeyword="Get team channel, Microsoft Graph API, Microsoft Teams channel API" SEODescription="Retrieve the properties and relationships of a channel object." />
+      </Item>
+      <Item text="Apps" url="/en-us/api-reference/v1.0/resources/teamsapp" >
+		<Item text="List apps in team" url="/en-us/api-reference/v1.0/api/teamsappinstallation_list" />
+		<Item text="Add app to team" url="/en-us/api-reference/v1.0/api/teamsappinstallation_add" />
+		<Item text="Remove app from team" url="/en-us/api-reference/v1.0/api/teamsappinstallation_delete" />
+		<Item text="Publish apps to catalog" url="/en-us/api-reference/v1.0/api/teamsapp_publish" />
+		<Item text="List apps in catalog" url="/en-us/api-reference/v1.0/api/teamsapp_list" />
+		<Item text="Update app in catalog" url="/en-us/api-reference/v1.0/api/teamsapp_update" />
+		<Item text="Remove app from catalog" url="/en-us/api-reference/v1.0/api/teamsapp_delete" />
+		<Item text="List tabs" url="/en-us/api-reference/v1.0/api/teamstab_list" />
+		<Item text="Get tab" url="/en-us/api-reference/v1.0/api/teamstab_get" />
+		<Item text="Update tab" url="/en-us/api-reference/v1.0/api/teamstab_update" />
+		<Item text="Delete tab" url="/en-us/api-reference/v1.0/api/teamstab_delete" />
+		<Item text="Add tab" url="/en-us/api-reference/v1.0/api/teamstab_add" />
+	  </Item>
+      <Item text="Calendar" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
+        <Item text="List events" url="/en-us/api-reference/v1.0/api/group_list_events" SEOKeyword="List events, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
+        <Item text="Create event" url="/en-us/api-reference/v1.0/api/group_post_events" SEOKeyword="Create event, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new Event." />
+        <Item text="Get event" url="/en-us/api-reference/v1.0/api/event_get" />
+        <Item text="Update event" url="/en-us/api-reference/v1.0/api/event_update" />
+        <Item text="Delete event" url="/en-us/api-reference/v1.0/api/event_delete" />
+        <Item text="List calendar view" url="/en-us/api-reference/v1.0/api/group_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
+        <Item text="List attachments" url="/en-us/api-reference/v1.0/api/event_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
+        <Item text="Add attachment" url="/en-us/api-reference/v1.0/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
+        <Item text="Create open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Create open extension, Microsoft Graph API, message API" SEODescription="Use this API to create open extension." />
+        <Item text="Get open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
+      </Item>
+      <Item text="Drive" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="">
+        <Item text="Get drive" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="Get drive, Microsoft Graph API, drive API" SEODescription="Retrieve the properties and relationships of drive object." />
+        <Item text="List children" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="List items, Microsoft Graph API, drive API" SEODescription="Retrieve a list of item objects." />
+      </Item>
+      <Item text="Plans" url="/en-us/api-reference/v1.0/resources/plannerplan" SEOKeyword="group calendar, Microsoft Graph API, group API" SEODescription="">
+        <Item text="List plans" url="/en-us/api-reference/v1.0/api/plannergroup_list_plans" SEOKeyword="List plans, Microsoft Graph API, group API" SEODescription="Retrieve a list of plan objects." />
+      </Item>
+      <Item text="Notes" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
+        <Item text="List notebooks" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
+        <Item text="Create notebook" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
+      </Item>
+    </Item>
+	
   <Item text="Workbooks and charts" ProdTag="Excel" url="/en-us/api-reference/v1.0/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
     <Item text="Workbook" url="/en-us/api-reference/v1.0/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
       <Item text="Create session" url="/en-us/api-reference/v1.0/api/workbook_createsession" />
@@ -6205,23 +6285,23 @@
 		<Item text="Get channel message" url="/en-us/api-reference/beta/api/channel_get_message" />
 		<Item text="List message replies" url="/en-us/api-reference/beta/api/channel_list_messagereplies" />
 		<Item text="Get message reply" url="/en-us/api-reference/beta/api/channel_get_messagereply" />
-		<Item text="List tabs" url="/en-us/api-reference/beta/api/teamstab_list" />
-		<Item text="Get tab" url="/en-us/api-reference/beta/api/teamstab_get" />
-		<Item text="Update tab" url="/en-us/api-reference/beta/api/teamstab_update" />
-		<Item text="Delete tab" url="/en-us/api-reference/beta/api/teamstab_delete" />
-		<Item text="Add tab" url="/en-us/api-reference/beta/api/teamstab_add" />
       </Item>
       <Item text="Chat thread" url="/en-us/api-reference/beta/resources/chatthread" SEOKeyword="chatthread API, Microsoft Graph API, chatthread API" SEODescription="">
         <Item text="Create chat thread" url="/en-us/api-reference/beta/api/channel_post_chatthreads" SEOKeyword="Create chat thread, Microsoft Graph API, Microsoft Teams chat API" SEODescription="Use this API to create a new chat thread." />
       </Item>
       <Item text="Apps" url="/en-us/api-reference/beta/resources/teamsapp" >
-		<Item text="List apps" url="/en-us/api-reference/beta/api/teamsappinstallation_list" />
-		<Item text="Add app" url="/en-us/api-reference/beta/api/teamsappinstallation_add" />
-		<Item text="Delete app" url="/en-us/api-reference/beta/api/teamsappinstallation_delete" />
-		<Item text="Publish app" url="/en-us/api-reference/beta/api/teamsapp_publish" />
-		<Item text="List published apps" url="/en-us/api-reference/beta/api/teamsapp_list" />
-		<Item text="Update published app" url="/en-us/api-reference/beta/api/teamsapp_update" />
-		<Item text="Remove published app" url="/en-us/api-reference/beta/api/teamsapp_delete" />
+		<Item text="List apps in team" url="/en-us/api-reference/beta/api/teamsappinstallation_list" />
+		<Item text="Add app to team" url="/en-us/api-reference/beta/api/teamsappinstallation_add" />
+		<Item text="Remove app from team" url="/en-us/api-reference/beta/api/teamsappinstallation_delete" />
+		<Item text="Publish apps to catalog" url="/en-us/api-reference/beta/api/teamsapp_publish" />
+		<Item text="List apps in catalog" url="/en-us/api-reference/beta/api/teamsapp_list" />
+		<Item text="Update app in catalog" url="/en-us/api-reference/beta/api/teamsapp_update" />
+		<Item text="Remove app from catalog" url="/en-us/api-reference/beta/api/teamsapp_delete" />
+		<Item text="List tabs" url="/en-us/api-reference/beta/api/teamstab_list" />
+		<Item text="Get tab" url="/en-us/api-reference/beta/api/teamstab_get" />
+		<Item text="Add tab" url="/en-us/api-reference/beta/api/teamstab_add" />
+		<Item text="Update tab" url="/en-us/api-reference/beta/api/teamstab_update" />
+		<Item text="Delete tab" url="/en-us/api-reference/beta/api/teamstab_delete" />
 	  </Item>
 	  <Item text="Chat message" url="/en-us/api-reference/beta/resources/chatmessage" SEOKeyword="chat message API, Microsoft Graph API, chat message API" SEODescription="">
       </Item>
@@ -6249,7 +6329,8 @@
         <Item text="Create notebook" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
       </Item>
     </Item>
-    <Item text="To-do tasks" ProdTag="Outlook" url="/en-us/api-reference/beta/resources/outlooktask" >
+    
+	<Item text="To-do tasks" ProdTag="Outlook" url="/en-us/api-reference/beta/resources/outlooktask" >
       <Item text="Outlook task" url="/en-us/api-reference/beta/resources/outlooktask" >
         <Item text="List" url="/en-us/api-reference/beta/api/outlookuser_list_tasks" />
         <Item text="Create" url="/en-us/api-reference/beta/api/outlookuser_post_tasks" />

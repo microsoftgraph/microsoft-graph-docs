@@ -1,4 +1,4 @@
-﻿# user resource type
+# user resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -84,6 +84,8 @@ This resource supports:
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |employeeId|String|The employee identifier assigned to the user by the organization. Supports $filter.|
+|externalUserState|String|For an external user invited to the tenant using the [invitation API](../api/invitation_post.md), this property represents the invited user's invitation status. For invited users, the state can be 'PendingAcceptance' or 'Accepted', or `null` for all other users. Supports $filter with the supported values. For example: `$filter=externalUserState eq 'PendingAcceptance'`.|
+|externalUserStateChangeDateTime|String|Shows the timestamp for the latest change to the externalUserState property.|
 |faxNumber|String|The fax number of the user.|
 |givenName|String|The given name (first name) of the user. Supports $filter.|
 |hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -128,8 +130,6 @@ This resource supports:
 |usageLocation|String|A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. Supports $filter.|
 |userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby.
 |userType|String|A string value that can be used to classify user types in your directory, such as "Member" and "Guest". Supports $filter.          |
-|externalUserState|String|For an external user invited to the tenant using the [invitation API](../api/invitation_post.md), this property represents the invited user's invitation status. For invited users, the state can be 'PendingAcceptance' or 'Accepted', or `null` for all other users. Supports $filter with the supported values. For example: `$filter=externalUserState eq 'PendingAcceptance'`.|
-|externalUserStateChangeDateTime|String|Shows the timestamp for the latest change to the externalUserState property.|
 
 ### Legal age group property definitions
 
@@ -262,6 +262,8 @@ Here is a JSON representation of the resource
   "deletedDateTime": "String (timestamp)",
   "department": "string",
   "displayName": "string",
+  "externalUserState": "PendingAcceptance",
+  "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
@@ -297,8 +299,6 @@ Here is a JSON representation of the resource
   "surname": "string",
   "usageLocation": "string",
   "userPrincipalName": "string",
-  "externalUserState": "PendingAcceptance",
-  "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
   "userType": "string",
 
   "calendar": { "@odata.type": "microsoft.graph.calendar" },

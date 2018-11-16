@@ -36,7 +36,7 @@ Use Microsoft Graph to suggest contextual data to your app users:
 
 - Make use of the [people API](people_example.md) to provide interactive controls such as a people picker in your app. The people API can suggest persons most relevant to a user, based on the user’s communication and collaboration patterns and business relationships.
 
-- Offer app users a smart file picker and suggest files that they have recently interacted with, to add as attachments when composing a message. [Insights (preview)](/graph/api/resources/insights?view=graph-rest-beta) use advanced analytics to suggest files that are trending around a user, recently viewed or edited by the user, or shared with the user.
+- Offer app users a smart file picker and suggest files that they have recently interacted with, to add as attachments when composing a message. [Insights (preview)](/graph/api/resources/insights.md?view=graph-rest-beta) use advanced analytics to suggest files that are trending around a user, recently viewed or edited by the user, or shared with the user.
 
 
 ### Store app data in a resource or resource instance
@@ -49,7 +49,7 @@ If you need to add and subsequently update custom data, you can [store the data 
 Looking for the API reference for this service?
 
 - [Outlook mail API in Microsoft Graph v1.0](/graph/api/resources/mail_api_overview?view=graph-rest-1.0)
-- [Outlook mail API in Microsoft Graph beta](/graph/api/resources/mail_api_overview?view=graph-rest-beta)
+- [Outlook mail API in Microsoft Graph beta](/graph/api/resources/mail_api_overview.md?view=graph-rest-beta)
 
 
 ## Next steps

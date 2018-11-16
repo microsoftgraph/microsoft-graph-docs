@@ -1,16 +1,54 @@
 # List all teams in Microsoft Teams for an organization (preview)
 
-To list all [teams](/graph/api/resources/team?view=graph-rest-beta) 
+To list all [teams](/graph/api/resources/team.md?view=graph-rest-beta) 
 in an organization (tenant), you find all groups that have teams, and then get information for each team.
 
 ## Get a list of groups
 
-To get a list of all [groups](/graph/api/resources/group?view=graph-rest-beta) in the organization that have teams,
-get a [list of groups](/graph/api/group_list?view=graph-rest-beta) that have a **resourceProvisioningOptions** property that contains "Team".
+To get a list of all [groups](/graph/api/resources/group.md?view=graph-rest-beta) in the organization that have teams,
+get a [list of all groups](/graph/api/group_list.md?view=graph-rest-beta) and then in code find the ones that have
+a **resourceProvisioningOptions** property that contains "Team".
+Since groups are large objects, use $select to only get the properties of the group you care about.
+
+```http
+GET /groups?$select=id,resourceProvisioningOptions
+```
+
+> **Note**: Certain unused old teams will not have resourceProvisioningOptions set. For details, see [known issues](../concepts/known_issues.md#missing-teams-in-list-all-teams).
+
+The following is an example of the response. 
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: xxx
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
+    "value": [
+        {
+            "id": "00e897b1-70ba-4cb9-9126-fd5f95c4bb78",
+            "resourceProvisioningOptions": []
+        },
+        {
+            "id": "00f6e045-f884-4359-a617-d459ee626862",
+            "resourceProvisioningOptions": [
+                "Team"
+            ]
+        }
+    ]
+}
+```
+
+## Get a list of groups using beta APIs
+
+Using the beta APIs, you can use $filter to return only the groups that have teams.
 
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
+
+> **Note**: $filter on /groups is only available through the beta endpoint. resourceProvisioningOptions is available in v1.0 and beta.
 
 > **Note**: Certain unused old teams will not be listed. For details, see [known issues](../concepts/known_issues.md#missing-teams-in-list-all-teams).
 
@@ -65,7 +103,7 @@ Content-length: xxx
 ## Get team information for a group
 
 To get team information for the team in a particular group, 
-call the [get team](/graph/api/team_get?view=graph-rest-beta) API and include the group ID.
+call the [get team](/graph/api/team_get.md?view=graph-rest-beta) API and include the group ID.
 
 ```http
 GET /teams/{group-id}
@@ -115,5 +153,5 @@ Content-length: 401
 
 ## See also
 
-- [List joinedTeams](/graph/api/user_list_joinedteams?view=graph-rest-beta)
-- [List groups](/graph/api/group_list?view=graph-rest-beta)
+- [List joinedTeams](/graph/api/user_list_joinedteams.md?view=graph-rest-beta)
+- [List groups](/graph/api/group_list.md?view=graph-rest-beta)

@@ -42,7 +42,7 @@ To learn about these models in more detail, visit the [SharePoint Dev Center][] 
 Looking for the API reference for this service?
 
 - [SharePoint API in Microsoft Graph v1.0](/graph/api/resources/sharepoint?view=graph-rest-1.0)
-- [SharePoint API in Microsoft Graph beta](/graph/api/resources/sharepoint?view=graph-rest-beta)
+- [SharePoint API in Microsoft Graph beta](/graph/api/resources/sharepoint.md?view=graph-rest-beta)
 
 ## Next steps
 
@@ -53,7 +53,7 @@ Get started with SharePoint in Microsoft Graph by learning more about [working w
 [list type]: /graph/api/resources/listinfo?view=graph-rest-1.0
 [create]: ../api-reference/v1.0/api/list_create.md
 [querying]: ../api-reference/v1.0/api/listitem_get.md
-[drive]: /graph/api/resources/drive?view=graph-rest-1.0
+[drive]: ../api-reference/v1.0/resources/drive.md
 [OneDrive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
 [SharePoint Framework]: https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview
 [SharePoint Add-ins]: https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins

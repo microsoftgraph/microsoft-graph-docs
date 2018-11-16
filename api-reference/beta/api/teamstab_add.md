@@ -46,7 +46,7 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 {
   "name": "My Contoso Tab",
-  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/teams/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
+  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
     "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",

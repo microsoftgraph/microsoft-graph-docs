@@ -46,8 +46,8 @@ The calendar API helps customers navigate their day and enhance productivity:
 Outlook and the calendar API offer many smart conveniences to schedule events:
 
 - Through Outlook calendar app settings, customers can enable automatic adding of events from emails, such as flight, hotel, or dining reservations, and billing invoices. Once added, you can interact with these events just like any other [event](/graph/api/resources/event?view=graph-rest-1.0) objects in the user's mailbox, and build creative scenarios upon this Outlook capability.
-- ** In Outlook, booking a meeting room is as straight-forward as adding an attendee to the **event**. The calendar API represents a meeting room as an [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) object. You can [get rooms (preview)](/graph/api/user_findrooms?view=graph-rest-beta) and
-[get room lists (preview)](/graph/api/user_findroomlists?view=graph-rest-beta) that are available in a tenant. To organize a meeting in a specific room, assign it to the **location** property of the **event**.
+- ** In Outlook, booking a meeting room is as straight-forward as adding an attendee to the **event**. The calendar API represents a meeting room as an [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) object. You can [get rooms (preview)](/graph/api/user_findrooms.md?view=graph-rest-beta) and
+[get room lists (preview)](/graph/api/user_findroomlists.md?view=graph-rest-beta) that are available in a tenant. To organize a meeting in a specific room, assign it to the **location** property of the **event**.
 - ** You can [look up the free/busy information for users and resources (preview)](outlook-get-free-busy-schedule.md) for a specific time period. You can then use this data to apply to different scenarios including resource planning and event scheduling.
 - ** If your scenario involves scheduling meetings at an optimal time, you can consider [using findMeetingTimes to identify possible times or locations to meet](findmeetingtimes_example.md). The [findMeetingTimes](/graph/api/user_findmeetingtimes?view=graph-rest-1.0) function considers the free/busy status of the attendees, and any preferred rooms, time, and other constraints you provide. If the first try doesn't return a common meeting time, check the reason, adjust your criteria and call **findMeetingTimes** again.
 
@@ -71,7 +71,7 @@ Save overhead in storing and managing app data in external data stores. With Mic
 Looking for the API reference for this service?
 
 - [Outlook calendar API in Microsoft Graph v1.0](/graph/api/resources/calendar?view=graph-rest-1.0)
-- [Outlook calendar API in Microsoft Graph beta](/graph/api/resources/calendar?view=graph-rest-beta)
+- [Outlook calendar API in Microsoft Graph beta](/graph/api/resources/calendar.md?view=graph-rest-beta)
 
 
 ## Next steps

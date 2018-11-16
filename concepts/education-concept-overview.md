@@ -36,9 +36,9 @@ The following image shows a web app for managing assignments in an Assignments c
 With the assignment API, your app can interact with the assignment service outside of Microsoft Teams. Microsoft Teams will handle distribution, due dates, and grading while your system can provide a rich learning experience to students.
 The following are examples of a few scenarios enabled by the assignments API:
 
-- [Add an assignment that links to your application](/graph/api/resources/educationclass_post_assignments?view=graph-rest-beta) 
-- [Assign grades to individual students for assignments linked to your application](/graph/api/resources/educationsubmission_update?view=graph-rest-beta)
-- [Create a student dashboard to show which assignments are due by when](/graph/api/resources/educationclass_list_assignments?view=graph-rest-beta)
+- [Add an assignment that links to your application](/graph/api/educationclass_post_assignments?view=graph-rest-beta) 
+- [Assign grades to individual students for assignments linked to your application](/graph/api/educationsubmission_update?view=graph-rest-beta)
+- [Create a student dashboard to show which assignments are due by when](/graph/api/educationclass_list_assignments?view=graph-rest-beta)
 
 
 ### Enable school admins to manage identity and roster sync using School Data Sync Management (preview)
@@ -47,14 +47,14 @@ The following are examples of a few scenarios enabled by the assignments API:
 
 School Data Sync management APIs support end-to-end scenarios for managing sync; for example:
 
-- [Create a synchronization profile that automatically starts a sync](/graph/api/resources/educationsynchronizationprofile_post?view=graph-rest-beta)
-- Manage sync lifecycle with [pause](/graph/api/resources/educationsynchronizationprofile_pause?view=graph-rest-beta), [resume](/graph/api/resources/educationsynchronizationprofile_resume?view=graph-rest-beta) and [reset](/graph/api/resources/educationsynchronizationprofile_reset?view=graph-rest-beta) operations
+- [Create a synchronization profile that automatically starts a sync](/graph/api/educationsynchronizationprofile_post?view=graph-rest-beta)
+- Manage sync lifecycle with [pause](/graph/api/educationsynchronizationprofile_pause?view=graph-rest-beta), [resume](/graph/api/educationsynchronizationprofile_resume?view=graph-rest-beta) and [reset](/graph/api/educationsynchronizationprofile_reset?view=graph-rest-beta) operations
 
 ## API reference
 Looking for the API reference for this service?
 
 - [Education API in Microsoft Graph v1.0](/graph/api/resources/education-overview?view=graph-rest-1.0)
-- [Education API in Microsoft Graph beta](/graph/api/resources/education-overview?view=graph-rest-beta)
+- [Education API in Microsoft Graph beta](/graph/api/resources/education-overview.md?view=graph-rest-beta)
 
 
 ## Next Steps

@@ -48,7 +48,7 @@ Maximize relevance in your application by promoting recently used or trending do
 Looking for the API reference for this service?
 
 - [Users API in Microsoft Graph v1.0](/graph/api/resources/users?view=graph-rest-1.0)
-- [Users API in Microsoft Graph beta](/graph/api/resources/users?view=graph-rest-beta)
+- [Users API in Microsoft Graph beta](/graph/api/resources/users.md?view=graph-rest-beta)
 
 ## Next steps
 

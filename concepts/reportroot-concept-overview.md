@@ -28,7 +28,7 @@ You can use the reports API to access the data sets listed in the following tabl
 Looking for the API reference for this service?
 
 - [Office 365 usage reports API in Microsoft Graph v1.0](/graph/api/resources/report?view=graph-rest-1.0)
-- [Office 365 usage reports API in Microsoft Graph beta](/graph/api/resources/report?view=graph-rest-beta)
+- [Office 365 usage reports API in Microsoft Graph beta](/graph/api/resources/report.md?view=graph-rest-beta)
 
 ## Next steps
 

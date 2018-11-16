@@ -60,12 +60,12 @@ When a message is being composed, in most cases, Outlook sets the **from** and *
 
 ## Using MailTips to check recipient status and save time (preview)
 
-Use [MailTips](/graph/api/resources/mailtips?view=graph-rest-beta) to make smart decisions before sending an email.
+Use [MailTips](/graph/api/resources/mailtips.md?view=graph-rest-beta) to make smart decisions before sending an email.
 MailTips can tell you information such as the recipient's mailbox is restricted to specific senders, or approval is required for emailing the recipient.
 
 ## Integrating with '@' social gesture (preview)
 
-@-mentions are notifications to alert users if they are mentioned in messages. The [mention](/graph/api/resources/mention?view=graph-rest-beta) resource enables apps to set and get the common online social gesture, the '@' prefix, in emails.
+@-mentions are notifications to alert users if they are mentioned in messages. The [mention](/graph/api/resources/mention.md?view=graph-rest-beta) resource enables apps to set and get the common online social gesture, the '@' prefix, in emails.
 You can:
 
 - Create @-mentions when [creating a message](/graph/api/user_post_messages.md#request-2?view=graph-rest-beta)

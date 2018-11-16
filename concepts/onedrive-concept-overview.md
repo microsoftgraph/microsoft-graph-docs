@@ -55,7 +55,7 @@ Use the [delta API][] to see what changed since the last time your app synchroni
 Looking for the API reference for this service?
 
 - [OneDrive file storage API in Microsoft Graph v1.0](/graph/api/resources/onedrive?view=graph-rest-1.0)
-- [OneDrive file storage API in Microsoft Graph beta](/graph/api/resources/onedrive?view=graph-rest-beta)
+- [OneDrive file storage API in Microsoft Graph beta](/graph/api/resources/onedrive.md?view=graph-rest-beta)
 
 ## Next steps
 
@@ -74,6 +74,6 @@ Find out more about [using the OneDrive API][Drive API] in Microsoft Graph v1.0.
 [audio]: /graph/api/resources/audio?view=graph-rest-1.0
 [formats]: /graph/api/driveitem_get_content_format?view=graph-rest-1.0
 [thumbnails]: /graph/api/driveitem_list_thumbnails?view=graph-rest-1.0
-[preview]: /graph/api/resources/driveitem_preview?view=graph-rest-beta
+[preview]: /graph/api/driveitem_preview?view=graph-rest-beta
 [webhooks]: /graph/api/resources/webhooks?view=graph-rest-1.0
 [Drive API]: /graph/api/resources/onedrive?view=graph-rest-1.0

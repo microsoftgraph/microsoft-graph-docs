@@ -38,7 +38,7 @@ You can use the typical CRUD operations for an Outlook [contact](/graph/api/reso
 Looking for the API reference for this service?
 
 - [Outlook contacts API in Microsoft Graph v1.0](/graph/api/resources/contact?view=graph-rest-1.0)
-- [Outlook contacts API in Microsoft Graph beta](/graph/api/resources/contact?view=graph-rest-beta)
+- [Outlook contacts API in Microsoft Graph beta](/graph/api/resources/contact.md?view=graph-rest-beta)
 
 ## Next steps
 

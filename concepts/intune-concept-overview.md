@@ -38,7 +38,7 @@ Automate Intune by using the Intune API to:
 Looking for the API reference for this service?
 
 - [Intune API in Microsoft Graph v1.0](/graph/api/resources/intune_graph_overview?view=graph-rest-1.0)
-- [Intune API in Microsoft Graph beta](/graph/api/resources/intune_graph_overview?view=graph-rest-beta)
+- [Intune API in Microsoft Graph beta](/graph/api/resources/intune_graph_overview.md?view=graph-rest-beta)
 
 ## Next steps
 

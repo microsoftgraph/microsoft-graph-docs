@@ -1,4 +1,4 @@
-# Microsoft Teams API overview (preview)
+# Microsoft Teams API overview
 
 [Microsoft Teams](https://products.office.com/microsoft-teams) is the ultimate hub for teamwork and intelligent communications. 
 Built on the strength and scale of [Office 365](https://products.office.com/) with over 120 million users, 
@@ -8,19 +8,19 @@ Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterp
 
 ### Automate team lifecycles
 
-Use Microsoft Graph to [create a new virtual team](/graph/api/team_put_teams?view=graph-rest-beta) when a new business issue arises, 
+Use Microsoft Graph to [create a new virtual team](/graph/api/team_put_teams?view=graph-rest-1.0) when a new business issue arises, 
 [add the right people](/graph/api/group_post_members?view=graph-rest-1.0) to the team, 
 and configure the team with 
-[channels](/graph/api/channel_post?view=graph-rest-beta),
-[tabs](/graph/api/teamstab_add?view=graph-rest-beta),
-and [apps](/graph/api/teamsappinstallation_add?view=graph-rest-beta).
+[channels](/graph/api/channel_post?view=graph-rest-1.0),
+[tabs](/graph/api/teamstab_add?view=graph-rest-1.0),
+and [apps](/graph/api/teamsappinstallation_add?view=graph-rest-1.0).
 If you want to get the new team together to discuss the business issue, 
 [add a new event](/graph/api/group_post_events?view=graph-rest-1.0) to the team calendar.
 
 ![Automate team lifecycles by creating a team, adding members and owners, configuring team settings, adding channels, installing apps, adding tabs, and archiving or deleting the team when the time comes.](images/teams_lifecycle.png)
 
 When the business issue is resolved and you no longer need the team, 
-use the Microsoft Teams API to [archive](/graph/api/team_archive?view=graph-rest-beta)
+use the Microsoft Teams API to [archive](/graph/api/team_archive?view=graph-rest-1.0)
 or [delete](/graph/api/group_delete?view=graph-rest-1.0) the team. 
 If you know the maximum duration of the team when you create it, 
 set an [Office 365 group expiration policy](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
@@ -29,27 +29,27 @@ for the team that automatically removes the team according to the policy.
 ### Get work done even when no one is around
 
 Use [application permissions](permissions_reference.md) to work with 
-[teams](/graph/api/resources/team?view=graph-rest-beta), [channels](/graph/api/resources/channel?view=graph-rest-beta),
-[tabs](/graph/api/resources/teamstab?view=graph-rest-beta), and [apps](/graph/api/resources/teamsapp?view=graph-rest-beta)
+[teams](/graph/api/resources/team?view=graph-rest-1.0), [channels](/graph/api/resources/channel?view=graph-rest-1.0),
+[tabs](/graph/api/resources/teamstab?view=graph-rest-1.0), and [apps](/graph/api/resources/teamsapp?view=graph-rest-1.0)
 without human intervention. 
 Create a new channel when your customer files an order.
 Automatically create teams for classes at the beginning of the school year, and archive them at the end.
 
 ### Create teams linked to your app
 
-Let customers to create new [teams](/graph/api/resources/team?view=graph-rest-beta) and [channels](/graph/api/resources/channel?view=graph-rest-beta). 
-[Install](/graph/api/teamsappinstallation_add?view=graph-rest-beta) your 
+Let customers to create new [teams](/graph/api/resources/team?view=graph-rest-1.0) and [channels](/graph/api/resources/channel?view=graph-rest-1.0). 
+[Install](/graph/api/teamsappinstallation_add?view=graph-rest-1.0) your 
 [Teams app](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all) in the new teams. 
-[Pin your app to a tab](/graph/api/teamstab_add?view=graph-rest-beta) in the new channel. 
-[Send messages](/graph/api/channel_post_chatthreads?view=graph-rest-beta) to the channel linking back to your website.
+[Pin your app to a tab](/graph/api/teamstab_add?view=graph-rest-1.0) in the new channel. 
+[Send messages](/graph/api/channel_post_chatthreads.md?view=graph-rest-beta) to the channel linking back to your website.
 
 ### Create and manage multiple teams and channels
 
 Microsoft Graph makes it easy to create large numbers of teams and populate them with users and channels,
-by automate creating and managing [teams](/graph/api/resources/team?view=graph-rest-beta), [channels](/graph/api/resources/channel?view=graph-rest-beta),
-[tabs](/graph/api/resources/teamstab?view=graph-rest-beta), and [apps](/graph/api/resources/teamsapp?view=graph-rest-beta).
+by automate creating and managing [teams](/graph/api/resources/team?view=graph-rest-1.0), [channels](/graph/api/resources/channel?view=graph-rest-1.0),
+[tabs](/graph/api/resources/teamstab?view=graph-rest-1.0), and [apps](/graph/api/resources/teamsapp?view=graph-rest-1.0).
 Microsoft Graph also lets you [find](teams_list_all_teams.md) 
-and [archive](/graph/api/team_archive?view=graph-rest-beta)
+and [archive](/graph/api/team_archive?view=graph-rest-1.0)
 the teams you are no longer using. 
 This is the same API that the [Microsoft Teams Admin Center](https://docs.microsoft.com/en-us/microsoftteams/enable-features-office-365)
 and [Teams PowerShell commandlets](https://docs.microsoft.com/en-us/microsoftteams/teams-powershell-overview) are built on.
@@ -57,8 +57,8 @@ and [Teams PowerShell commandlets](https://docs.microsoft.com/en-us/microsofttea
 ### Deploy apps to teams
 
 [List the teams in your tenant](teams_list_all_teams.md), 
-and [install apps](/graph/api/teamsappinstallation_add?view=graph-rest-beta) to them. 
-[Create tabs](/graph/api/teamstab_add?view=graph-rest-beta) in channels to give users easy access to apps.
+and [install apps](/graph/api/teamsappinstallation_add?view=graph-rest-1.0) to them. 
+[Create tabs](/graph/api/teamstab_add?view=graph-rest-1.0) in channels to give users easy access to apps.
 
 ### Use Microsoft Graph in any kind of app
 
@@ -84,19 +84,20 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 |Websites| Surface enhanced content in your web pages.|
 |Services|Enhance your client applications with Microsoft Graph data via your web service.|
 | [Activity feed](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/activity-feed)|Engage users via feed notifications.|
-| [Calling and online meetings](/graph/api/resources/calls-api-overview?view=graph-rest-beta) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
+| [Calling and online meetings (Preview)](/graph/api/resources/calls-api-overview.md?view=graph-rest-beta) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
 
 ## API reference
 
 Looking for the API reference for this service?
 
-See the [Teams API in Microsoft Graph beta](/graph/api/resources/teams_api_overview?view=graph-rest-beta).
+See the [Teams API in Microsoft Graph](/graph/api/resources/teams_api_overview?view=graph-rest-1.0).
 
 ## Next steps
 
-- Learn how to [use the Microsoft Teams API](/graph/api/resources/teams_api_overview?view=graph-rest-beta).
-- Drill down on the methods, properties, and relationships of the [team](/graph/api/resources/team?view=graph-rest-beta), [channel](/graph/api/resources/channel?view=graph-rest-beta), and [group](/graph/api/resources/group?view=graph-rest-1.0) resources.
+- Watch the [overview video](http://aka.ms/teamsgraph/v1/video).
+- Learn how to [use the Microsoft Teams API](/graph/api/resources/teams_api_overview?view=graph-rest-1.0).
+- Drill down on the methods, properties, and relationships of the [team](/graph/api/resources/team?view=graph-rest-1.0), [channel](/graph/api/resources/channel?view=graph-rest-1.0), and [group](/graph/api/resources/group?view=graph-rest-1.0) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Read more about the [Microsoft Teams programming model](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/concepts-overview).
-- Explore the [calling and online meeting APIs](/graph/api/resources/calls-api-overview?view=graph-rest-beta).
+- Explore the [calling and online meeting APIs](/graph/api/resources/calls-api-overview.md?view=graph-rest-beta).
 - Get a jump-start with [sample code](https://github.com/OfficeDev/microsoft-teams-sample-graph).

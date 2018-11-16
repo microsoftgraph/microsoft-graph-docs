@@ -1,4 +1,4 @@
-﻿# Update OneNote page content
+# Update OneNote page content
 
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
 
