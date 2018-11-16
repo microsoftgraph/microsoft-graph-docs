@@ -3,9 +3,9 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
-With the [appropriate delegated or application permissions](../../../concepts/permissions_reference.md), your app can access the mail data of
+With the [appropriate delegated or application permissions](/graph/permissions_reference), your app can access the mail data of
 the signed-in user or any user in a tenant. The mail data can be in the cloud on Exchange Online as part of Office 365, or on
-Exchange on-premises in a [hybrid deployment](../../../concepts/hybrid_rest_support.md).
+Exchange on-premises in a [hybrid deployment](/graph/hybrid_rest_support).
 
 ## Using the mail REST API
 
@@ -52,19 +52,19 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Categorize messages | [outlookCategory (preview)](../resources/outlookcategory.md) | [Methods of outlookCategory](../resources/outlookcategory.md#methods) |
 | Use Inbox rules to automate actions such as forwarding specific incoming messages | [messageRule (preview)](../resources/messagerule.md) | [Methods of messageRule](../resources/messagerule.md#methods) |
 | Get Internet message headers of a message | [message (preview)](../resources/message.md) | [Get the **internetMessageHeaders** property of a message](../api/message_get.md#request-4). |
-| Search and filter messages | [message](../resources/message.md) | [Query parameters](../../../concepts/query_parameters.md)  |
+| Search and filter messages | [message](../resources/message.md) | [Query parameters](/graph/query_parameters)  |
 | Get notified of changes to messages in a folder | [subscription](../resources/subscription.md) | [Working with webhooks in Microsoft Graph](../resources/webhooks.md) |
-| Synchronize messages or mail folder hierarchy | [message](../resources/message.md) | [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md) |
+| Synchronize messages or mail folder hierarchy | [message](../resources/message.md) | [Get incremental changes to messages in a folder](/graph/delta_query_messages) |
 | **App development** | | |
 | Add custom app data as Internet message headers of a message | [message](../resources/message.md) | Add custom data to the **internetMessageHeaders** collection of the message. |
-| Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md) |
+| Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](/graph/extensibility_overview) |
 | Access custom data for under-exposed Outlook MAPI properties | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook extended properties overview](../resources/extended-properties-overview.md) |
 
 ## Next steps
 
 The mail API can open up new ways for you to engage with users:
 
-- [Outlook mail API overview](../../../concepts/outlook-mail-concept-overview.md)
+- [Outlook mail API overview](/graph/outlook-mail-concept-overview)
 - Drill down on the [methods](../resources/message.md#methods), [properties](../resources/message.md#properties), and [relationships](../resources/message.md#relationships) of the [message](../resources/message.md) and [mailFolder](../resources/mailfolder.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 

@@ -19,8 +19,8 @@ Delta query for events is specific to a calendar and date/time range that you sp
 you need to track each calendar individually. 
 
 Tracking event changes in a calendar view typically is a round of one or more GET requests with 
-the [delta](../api-reference/v1.0/api/event_delta.md) function. The initial GET 
-request is very much like the way you [list a calendarView](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/calendar_list_calendarview), 
+the [delta](/graph/api/event_delta?view=graph-rest-1.0) function. The initial GET 
+request is very much like the way you [list a calendarView](/graph/api/calendar_list_calendarview?view=graph-rest-1.0), 
 except that you include the **delta** function:
 
 ```

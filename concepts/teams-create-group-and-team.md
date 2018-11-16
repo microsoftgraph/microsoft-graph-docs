@@ -1,9 +1,9 @@
 # Creating a group with a Microsoft Teams team
 
-Creating a [group](../api-reference/beta/resources/group.md) that includes a [team](../api-reference/beta/resources/team.md) involves two steps: 
+Creating a [group](/graph/api/resources/group.md?view=graph-rest-beta) that includes a [team](/graph/api/resources/team.md?view=graph-rest-beta) involves two steps: 
 
-- [Create a group](../api-reference/beta/api/group_post_groups.md) with the right properties.
-- [Add a team](../api-reference/beta/api/team_put_teams.md) to the group.
+- [Create a group](/graph/api/group_post_groups.md?view=graph-rest-beta) with the right properties.
+- [Add a team](/graph/api/team_put_teams.md?view=graph-rest-beta) to the group.
 
 ## Create a group
 

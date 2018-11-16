@@ -4,7 +4,7 @@
 
 Retrieve the properties and relationships of a [plannerUser](../resources/planneruser.md) object. The returned properties include the user's favorite plans and recently viewed plans. 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

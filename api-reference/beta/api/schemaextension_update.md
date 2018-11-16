@@ -5,14 +5,14 @@
 Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md).
 
 The update applies to all the resources that are included in the **targetTypes** property of the extension. These resources are among the 
-[supporting resource types](../../../concepts/extensibility_overview.md#supported-resources).
+[supporting resource types](/graph/extensibility_overview#supported-resources).
 
 Only the app that created a schema extension (owner app) can make additive updates to the extension when the extension is in the **InDevelopment** or **Available** status. 
 That means the app cannot remove custom properties or target resource types from the definition. The app can, however, change the description of the extension.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -91,8 +91,8 @@ HTTP/1.1 204 No Content
 
 ## See also
 
-- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to resources using extensions](/graph/extensibility_overview)
+- [Add custom data to groups using schema extensions](/graph/extensibility_schema_groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

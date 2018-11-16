@@ -47,15 +47,15 @@ Maximize relevance in your application by promoting recently used or trending do
 ## API reference
 Looking for the API reference for this service?
 
-- [Users API in Microsoft Graph v1.0](../api-reference/v1.0/resources/users.md)
-- [Users API in Microsoft Graph beta](../api-reference/beta/resources/users.md)
+- [Users API in Microsoft Graph v1.0](/graph/api/resources/users?view=graph-rest-1.0)
+- [Users API in Microsoft Graph beta](/graph/api/resources/users.md?view=graph-rest-beta)
 
 ## Next steps
 
-- Learn more about how to [work with users](../api-reference/v1.0/resources/users.md).
+- Learn more about how to [work with users](/graph/api/resources/users?view=graph-rest-1.0).
 - Explore your own data from the **user** resource in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Authenticate with Microsoft Graph [on behalf of a user](auth_v2_user.md) or [as a daemon or service by consent of an administator](auth_v2_service.md).
-- Set access control and policies for users with the [Azure AD API](../api-reference/v1.0/resources/azure_ad_overview.md).
+- Set access control and policies for users with the [Azure AD API](/graph/api/resources/azure_ad_overview?view=graph-rest-1.0).
 - Review the [permissions](permissions_reference.md) your app will need to access user data. 
 <!-- This isn't really a next step; let's remove to keep the list of links concise.>
 - Stay up to date with Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).

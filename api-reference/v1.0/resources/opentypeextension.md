@@ -6,7 +6,7 @@ Open extensions are represented by the **openTypeExtension** resource. Any open 
 
 One way to help make sure extension names are unique is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `Com.Contoso.ContactInfo`. Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
 
-Open extension example: [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+Open extension example: [Add custom data to users using open extensions](/graph/extensibility_open_users)
 
 Open extensions are supported by the following resources in the corresponding versions - general availability (GA: /v1.0 and /beta) or preview (/beta).
 

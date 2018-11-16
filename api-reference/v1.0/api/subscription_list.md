@@ -4,13 +4,13 @@ Retrieve the properties and relationships of webhook subscriptions, based on the
 
 ## Permissions
 
-This API supports the following permission scopes; to learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+This API supports the following permission scopes; to learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 | Permission type  | Permissions (from least to most privileged)  |
 |:---------------- |:-------------------------------------------- |
-| [Delegated permission](../../../concepts/auth_v2_user.md) (work or school account) | Role required to [create subscription](subscription_post_subscriptions.md) or Subscription.Read.All (see below). |
-| [Delegated permission](../../../concepts/auth_v2_user.md) (personal Microsoft account) | Role required to [create subscription](subscription_post_subscriptions.md) or Subscription.Read.All (see below). |
-| [Application permission](../../../concepts/auth_v2_service.md) | Role required to [create subscription](subscription_post_subscriptions.md). |
+| [Delegated permission](/graph/auth_v2_user) (work or school account) | Role required to [create subscription](subscription_post_subscriptions.md) or Subscription.Read.All (see below). |
+| [Delegated permission](/graph/auth_v2_user) (personal Microsoft account) | Role required to [create subscription](subscription_post_subscriptions.md) or Subscription.Read.All (see below). |
+| [Application permission](/graph/auth_v2_service) | Role required to [create subscription](subscription_post_subscriptions.md). |
 
 Response results are based on the context of the calling app. The following is a summary of the common scenarios:
 
@@ -115,4 +115,4 @@ Content-length: 586
   "tocPath": ""
 }-->
 
-When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.  To learn more, see [Paging Microsoft Graph data in your app](../../../concepts/paging.md).
+When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.  To learn more, see [Paging Microsoft Graph data in your app](/graph/paging).
