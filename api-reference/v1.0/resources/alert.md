@@ -1,6 +1,6 @@
 # alert resource type
 
-Represents potential security issues within a customer's tenant that Microsoft or partner security solutions have identified. Use alerts to unify and streamline security issue management across all integrated solutions. To learn more, see the sample queries in [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+Represents potential security issues within a customer's tenant that Microsoft or partner security solutions have identified. Use alerts to unify and streamline security issue management across all integrated solutions. To learn more, see the sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 Alerts can be retrieved from different security providers listed in the [Microsoft Graph Security Overview](security-api-overview.md).
 

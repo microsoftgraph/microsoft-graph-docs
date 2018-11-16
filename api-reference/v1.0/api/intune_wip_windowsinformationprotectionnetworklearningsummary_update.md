@@ -49,9 +49,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}
 Content-type: application/json
-Content-length: 48
+Content-length: 137
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionNetworkLearningSummary",
   "url": "Url value",
   "deviceCount": 11
 }

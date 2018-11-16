@@ -50,9 +50,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
 Content-type: application/json
-Content-length: 106
+Content-length: 191
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
   "applicationName": "Application Name value",
   "applicationType": "desktop",
   "deviceCount": 11

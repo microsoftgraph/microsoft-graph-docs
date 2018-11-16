@@ -74,13 +74,12 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mdmWindowsInformationProtectionPolicies
 Content-type: application/json
-Content-length: 3969
+Content-length: 3905
 
 {
   "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
   "displayName": "Display Name value",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "version": "Version value",
   "enforcementLevel": "encryptAndAuditOnly",
   "enterpriseDomain": "Enterprise Domain value",

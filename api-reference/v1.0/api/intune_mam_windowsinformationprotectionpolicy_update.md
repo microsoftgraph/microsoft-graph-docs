@@ -86,12 +86,12 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}
 Content-type: application/json
-Content-length: 4396
+Content-length: 4405
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionPolicy",
   "displayName": "Display Name value",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "version": "Version value",
   "enforcementLevel": "encryptAndAuditOnly",
   "enterpriseDomain": "Enterprise Domain value",

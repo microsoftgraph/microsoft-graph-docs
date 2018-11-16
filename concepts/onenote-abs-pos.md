@@ -73,12 +73,12 @@ The following example creates a page that contains one absolute positioned div a
     <body data-absolute-enabled="true">
         <div style="position:absolute;width:280px;top:120px;left:68px">
             <p>Some text</p>
-            <img style="width:120px" src="http://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
+            <img style="width:120px" src="https://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
             <div>
                 <p>More text inside a regular, nested div</p>
             </div>
         </div>
-        <img style="position:absolute;width:360px;top:350px;left:300px" src="http://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
+        <img style="position:absolute;width:360px;top:350px;left:300px" src="https://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
     </body>
 </html>
 ```
@@ -152,7 +152,7 @@ For more information about permission scopes and how they work, see [OneNote per
 - [Create OneNote pages](onenote-create-page.md)
 - [Update OneNote page content](onenote_update_page.md)
 - [Integrate with OneNote](integrate_with_onenote.md)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+- [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
 

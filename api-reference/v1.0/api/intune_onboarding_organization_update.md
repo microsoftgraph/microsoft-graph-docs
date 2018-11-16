@@ -48,9 +48,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/organization/{organizationId}
 Content-type: application/json
-Content-length: 51
+Content-length: 102
 
 {
+  "@odata.type": "#microsoft.graph.organization",
   "mobileDeviceManagementAuthority": "intune"
 }
 ```

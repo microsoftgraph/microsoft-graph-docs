@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new chat thread in the specified channel by supplying the root messages.
+Create a new chat thread in the specified [channel](../resources/channel.md) by supplying the root messages.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/channels/{id}/chatthreads
+POST /teams/{id}/channels/{id}/chatThreads
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "create_chatthread_from_channel"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/chatthreads
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/chatThreads
 Content-type: application/json
 
 {

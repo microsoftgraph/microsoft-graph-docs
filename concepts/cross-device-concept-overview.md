@@ -31,5 +31,5 @@ Looking for the API reference for these services?
 
 - [Use the Microsoft Graph API to enable cross-device experiences](../api-reference/v1.0/resources/cross-device-reference-overview.md)
 - [Learn more about the activity feed API in Microsoft Graph](activity-feed-concept-overview.md)
-- [Learn more about the device replay API in Microsoft Graph](device-relay-concept-overview.md)
+- [Learn more about the device relay API in Microsoft Graph](device-relay-concept-overview.md)
 - [Learn more about the Microsoft Graph notifications API in Microsoft Graph](notifications-concept-overview.md)

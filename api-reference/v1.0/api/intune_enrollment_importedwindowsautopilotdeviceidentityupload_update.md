@@ -49,9 +49,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}
 Content-type: application/json
-Content-length: 89
+Content-length: 172
 
 {
+  "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentityUpload",
   "createdDateTimeUtc": "2016-12-31T23:59:45.8788427-08:00",
   "status": "pending"
 }

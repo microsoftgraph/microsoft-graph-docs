@@ -67,9 +67,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 864
+Content-length: 855
 
 {
+  "@odata.type": "#microsoft.graph.windowsMobileMSI",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -78,7 +79,6 @@ Content-length: 864
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "isFeatured": true,
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "informationUrl": "https://example.com/informationUrl/",

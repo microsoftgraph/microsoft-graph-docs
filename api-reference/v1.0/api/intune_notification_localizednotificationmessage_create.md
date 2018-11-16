@@ -52,11 +52,10 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages
 Content-type: application/json
-Content-length: 264
+Content-length: 200
 
 {
   "@odata.type": "#microsoft.graph.localizedNotificationMessage",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "locale": "Locale value",
   "subject": "Subject value",
   "messageTemplate": "Message Template value",

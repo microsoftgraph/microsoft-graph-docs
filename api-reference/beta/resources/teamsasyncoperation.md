@@ -20,7 +20,7 @@ When the request completes successfully, the status will be "succeeded" and the 
 |status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Operation status.|
 |lastActionDateTime|DateTimeOffset |Time when the async operation was last updated.|
 |attemptsCount|Int32|Number of times the operation was attempted before being marked successful or failed.|
-|targetResourceId|string |The ID of the object that's created or modified as result of this async operation, typically a [team](../resources/team.md).|
+|targetResourceId|guid |The ID of the object that's created or modified as result of this async operation, typically a [team](../resources/team.md).|
 |targetResourceLocation|string|The location of the object that's created or modified as result of this async operation. This URL should be treated as an opaque value and not parsed into its component paths.|
 |error|[operationError](operationerror.md)|Any error that causes the async operation to fail.|
 
@@ -36,7 +36,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id": "86cfb3a3-4860-4a28-ad9f-ebe01d7523c8",
+    "id": "string",
     "operationType": "archiveTeam",
     "createdDateTime": "2018-01-01T00:00:00.0000000Z",
     "status": "succeeded",

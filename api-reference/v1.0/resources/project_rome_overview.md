@@ -10,11 +10,11 @@ Activities in Microsoft Graph enable you to drive user engagement with your apps
 
 - A deep link
 - A visual representation
-- Content metadata that describes the activity, using the [http://schema.org/](http://schema.org/) shared vocabulary
+- Content metadata that describes the activity, using the [https://schema.org/](https://schema.org/) shared vocabulary
 
 When a session is created by an application, a history item is added to the activity to reflect the period of user engagement. Each time a user reengages with an activity, a new history item is added to the activity to accrue user engagement.
 
-When an application publishes user activity objects, the object will show up in some of the new UI surfaces in Windows; for example, Cortana Notifications and Timeline. You can specify both rich metadata (to allow activities to be presented in just the right context) and rich visuals (using [Adaptive Card](http://adaptivecards.io/) markup) in your activity objects.
+When an application publishes user activity objects, the object will show up in some of the new UI surfaces in Windows; for example, Cortana Notifications and Timeline. You can specify both rich metadata (to allow activities to be presented in just the right context) and rich visuals (using [Adaptive Card](https://adaptivecards.io/) markup) in your activity objects.
 
 You can use the following Microsoft Graph APIs to create and retrieve user activities:
 

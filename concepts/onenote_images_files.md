@@ -18,7 +18,7 @@ Images can be added by URL reference or by sending raw data. Microsoft Graph sup
 
 [Add a public image from the web](#add-a-public-image-from-the-web)
 
-Use `img` with `src="http://image-url"` and specify the URL of a publicly accessible image. Renders the image on the OneNote page.
+Use `img` with `src="https://image-url"` and specify the URL of a publicly accessible image. Renders the image on the OneNote page.
 
 [Add an image using binary data](#add-an-image-using-binary-data)
 
@@ -26,7 +26,7 @@ Use `img` with `src="name:image-block-name"` and send the image file in a data p
 
 [Add a webpage snapshot](#add-a-webpage-snapshot)
 
-Use `img` with `data-render-src="http://webpage-url"` and specify the URL of a webpage. Renders a snapshot of the whole webpage on the OneNote page.
+Use `img` with `data-render-src="https://webpage-url"` and specify the URL of a webpage. Renders a snapshot of the whole webpage on the OneNote page.
 
 [Add an image rendered from HTML](#add-an-image-rendered-from-html)
 
@@ -63,7 +63,7 @@ See [limitations](#size-limitations-for-post-pages-requests) that apply when cre
 
 ### Add a public image from the web
 
-In the input HTML of your request, include `<img src="http://..." />` and specify the URL of a publicly accessible image for the **src** attribute.
+In the input HTML of your request, include `<img src="https://..." />` and specify the URL of a publicly accessible image for the **src** attribute.
 
 ```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
@@ -81,7 +81,7 @@ Content-Type: text/html
   </head>
   <body>
     <p>This page displays an image from the web.</p>
-    <img src="http://..." width="300"/>
+    <img src="https://..." width="300"/>
   </body>
 </html>
 
@@ -130,7 +130,7 @@ Content-Type: image/jpeg
 
 You can use Microsoft Graph to snapshot entire webpages and insert them into new pages. This method is useful to archive webpages or capture complex webpages that have features that OneNote doesn't support (like some CSS).  
 
-In the input HTML of your request, include `<img src="http://..." />` and specify the URL of the webpage you want to insert for the **src** attribute.
+In the input HTML of your request, include `<img src="https://..." />` and specify the URL of the webpage you want to insert for the **src** attribute.
 
 ```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
@@ -148,7 +148,7 @@ Content-Type: text/html
   </head>
   <body>
     <p>This page displays an image of the webpage.</p>
-    <img data-render-src="http://www.onenote.com" width="200"/>
+    <img data-render-src="https://www.onenote.com" width="200"/>
   </body>
 </html>
 
@@ -194,7 +194,7 @@ Content-Type: text/html
 <h1>This HTML will render as an image</h1>
 <p><b>Don't</b> try to embed another <i>data-render-src</i> type-image inside the HTML part--
 it won't work. Instead, use URL-based real images like this:</p>
-<img src="http://cdn.onenote.net/1664161560_Images/OneNote.ico" />
+<img src="https://cdn.onenote.net/1664161560_Images/OneNote.ico" />
 </body>
 </html>
 
@@ -245,7 +245,7 @@ Learn more about [file media types](#file-media-types).
 
 ## Adding videos
 
-You can embed videos in OneNote pages using `<iframe data-original-src="http://..." />` in the input HTML. 
+You can embed videos in OneNote pages using `<iframe data-original-src="https://..." />` in the input HTML. 
 
 ### Supported video sites
 
@@ -280,7 +280,7 @@ Example: `height="300"`
 
 ### Example
 
-In the input HTML of your request, include `<iframe data-original-src="http://..." />` and specify the URL of the video for the **data-original-src** attribute.
+In the input HTML of your request, include `<iframe data-original-src="https://..." />` and specify the URL of the video for the **data-original-src** attribute.
 
 ```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
@@ -443,7 +443,7 @@ When sending image and file data, be aware of these limitations: <!--TODO: check
 
 - The limit for each data part is 25 MB, including the part headers. Data parts that exceed the limit are rejected by Microsoft Graph. 
 
-- The maximum number of images per page is 150. When using the `src="http://..."` attribute, the API ignores **img** tags beyond the limit.
+- The maximum number of images per page is 150. When using the `src="https://..."` attribute, the API ignores **img** tags beyond the limit.
 
 - The maximum number of data parts is 6 per POST, including the required **Presentation** part.
 
@@ -496,6 +496,6 @@ For more information about permission scopes and how they work, see [OneNote per
 ## See also
 
 - [Integrate with OneNote](integrate_with_onenote.md)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+- [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  

@@ -58,11 +58,11 @@ Content-type: application/json
 Content-length: 534
 
 {
+  "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
   "targetedMobileApps": [
     "Targeted Mobile Apps value"
   ],
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "encodedSettingXml": "ZW5jb2RlZFNldHRpbmdYbWw=",

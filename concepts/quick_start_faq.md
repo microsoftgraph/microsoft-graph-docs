@@ -1,6 +1,6 @@
 # Microsoft Graph quick start FAQ
 
-This FAQ answers questions related to the [Microsoft Graph Quick Starts](https://developer.microsoft.com/en-us/graph/quick-start).
+This FAQ answers questions related to the [Microsoft Graph Quick Starts](https://developer.microsoft.com/graph/quick-start).
 
 ## What do the quick starts do?
 
@@ -59,7 +59,7 @@ The quick start samples give you an introduction to authentication and Microsoft
 You can find out more about advanced authentication scenarios for the authentication library you are using by visiting the page for the authentication library publisher:
 
 - [OAuth2Client for Android and iOS](https://github.com/nxtbgthng/OAuth2Client)
-- [Passport for Node](http://passportjs.org/)
+- [Passport for Node](https://passportjs.org/)
 - [Illuminate Auth for PHP](https://github.com/illuminate/auth)
 - [Flask for Python 3](https://pypi.python.org/pypi/Flask-OAuth2-Provider/0.2.1)
 - [OmniAuth for Ruby](https://github.com/omniauth/omniauth)
@@ -103,7 +103,7 @@ If a sample that uses .NET libraries fails to build in Visual Studio, one or mor
 This section answers questions related to coding, building, or running quick start samples built with web technology.
 
 ### How do I know if my local computer supports a local web server?
-The quick start samples based on web technology provide the logic necessary to start and host a local web server. For example, the PHP sample based on the PHP 5.4.0+ runtime includes a [built-in web server](http://php.net/manual/en/features.commandline.webserver.php) that you will use for development. It is not intended to be used in a production environment. 
+The quick start samples based on web technology provide the logic necessary to start and host a local web server. For example, the PHP sample based on the PHP 5.4.0+ runtime includes a [built-in web server](https://php.net/manual/en/features.commandline.webserver.php) that you will use for development. It is not intended to be used in a production environment. 
 
 If you have downloaded the Node.js sample, read the [Node.js getting started guide](https://nodejs.org/en/docs/guides/getting-started-guide/) to learn about starting the Node web server. 
 

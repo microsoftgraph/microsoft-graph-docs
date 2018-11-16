@@ -54,9 +54,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuses/{deviceConfigurationDeviceStatusId}
 Content-type: application/json
-Content-length: 359
+Content-length: 429
 
 {
+  "@odata.type": "#microsoft.graph.deviceConfigurationDeviceStatus",
   "deviceDisplayName": "Device Display Name value",
   "userName": "User Name value",
   "deviceModel": "Device Model value",

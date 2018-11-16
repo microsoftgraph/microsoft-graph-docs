@@ -301,7 +301,7 @@ And an **object** tag includes the endpoint for the file resource in the **data*
 
 ```html
 <object
-    data="http://www.onenote.com/api/v1.0/me/notes/resources/{file-id}/$value"
+    data="https://www.onenote.com/api/v1.0/me/notes/resources/{file-id}/$value"
     data-attachment="fileName.pdf" 
     type="application/pdf" ... />
 ```
@@ -694,6 +694,6 @@ For more information about permission scopes and how they work, see [Microsoft G
 
 - [Input and output HTML for OneNote pages](onenote_input_output_html.md)
 - [Integrate with OneNote](integrate_with_onenote.md)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+- [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  

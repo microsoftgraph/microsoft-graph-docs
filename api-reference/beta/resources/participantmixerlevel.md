@@ -15,7 +15,7 @@ Configuration of mixer levels for given audio participant
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

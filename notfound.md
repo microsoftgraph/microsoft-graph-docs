@@ -2,4 +2,4 @@
 
 The URL might be misspelled, or the page you're looking for might no longer be available.
 
-To learn about Microsoft Graph, see the [Microsoft Graph documentation](https://developer.microsoft.com/en-us/graph/docs/overview/overview).
+To learn about Microsoft Graph, see the [Microsoft Graph documentation](https://developer.microsoft.com/graph/docs/concepts/overview).

@@ -52,9 +52,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses/{deviceComplianceUserStatusId}
 Content-type: application/json
-Content-length: 222
+Content-length: 287
 
 {
+  "@odata.type": "#microsoft.graph.deviceComplianceUserStatus",
   "userDisplayName": "User Display Name value",
   "devicesCount": 12,
   "status": "notApplicable",

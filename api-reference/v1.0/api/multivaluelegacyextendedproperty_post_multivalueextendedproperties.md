@@ -4,31 +4,37 @@ Create one or more multi-value extended properties in a new or existing instance
 
 The following user resources are supported:
 
-- [message](../resources/message.md)
-- [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
+- [event](../resources/event.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md)
 
 As well as the following group resources:
 
-- group [event](../resources/event.md)
 - group [calendar](../resources/calendar.md)
+- group [event](../resources/event.md)
 - group [post](../resources/post.md) 
 
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
 open extensions or extended properties, and how to specify extended properties.
 
 ## Permissions
-One of the following permissions is required to call this API, depending on the resource you're
-creating the extended property in. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+Depending on the resource you're creating the extended property in and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- Mail.ReadWrite
-- Calendars.ReadWrite
-- Contacts.ReadWrite
-- Group.ReadWrite.All
- 
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-----|:-----|:-----|:-----|
+| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
+| group [calendar](../resources/calendar.md) | Group.ReadWrite.All | Not supported | Not supported |
+| group [event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
+| group [post](../resources/post.md) | Group.ReadWrite.All | Not supported | Not supported |
+| [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+
 ## HTTP request
 You can create extended properties in a new or existing resource instance.
 

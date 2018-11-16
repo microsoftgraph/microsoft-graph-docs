@@ -1,6 +1,6 @@
 # Microsoft Graph Security API error responses
 
-Errors in the Microsoft Graph Security API are returned using standard HTTP status codes and are delivered by way of a warning header.
+Errors in the Microsoft Graph Security API are returned using standard HTTP 206 Partial Content status code and are delivered by way of a warning header.
 
 The Microsoft Graph Security API is a federated service that receives multiple responses from all data providers. When an HTTP error is received by the Microsoft Graph Security API, it will send back a warning header in the following format:
 <!-- { "blockType": "ignored" } -->
@@ -29,7 +29,7 @@ A user asks for `/alerts/{alert-id}`.
 Because both 404 and 200 are expected conditions, the warning header contains the following: 
 
 ```HTTP
-Warning : 199 - "{Vendor2}/{Provider 2}/504/29000",    (usual timeout limit is set at 29 seconds)
+Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is set at 10 seconds)
           199 - "{Vendor4}/{Provider 4}/403/10"       (Provider 4 rejected the request in 10 ms)
 ```
 

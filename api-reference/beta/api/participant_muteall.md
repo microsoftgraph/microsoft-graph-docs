@@ -34,13 +34,13 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
+If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "participant_muteAll"
@@ -60,7 +60,7 @@ Content-Length: 81
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

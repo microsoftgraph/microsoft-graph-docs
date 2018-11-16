@@ -1,24 +1,29 @@
-# List memberOf
+# List user memberOf
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get groups, directory roles and administrative units that the user is a direct member of. 
+Get groups, directory roles and administrative units that the user is a direct member of. This operation is not transitive.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application | Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/memberOf
 ```
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -26,22 +31,28 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Accept  | application/json|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
+
 ## Example
-##### Request
+
+### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_memberof"
+  "name": "get_user_memberof"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/memberOf
 ```
-##### Response
+
+### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -52,12 +63,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "@odata.type": "#microsoft.graph.group",
+      "id": "id-value",
+      "createdDateTime": null,
+      "description": "All users at the company",
+      "displayName": "All Users",
+      "groupTypes": [],
+      "mailEnabled": false,
+      "securityEnabled": true,
     }
   ]
 }

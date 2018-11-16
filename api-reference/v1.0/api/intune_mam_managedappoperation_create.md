@@ -51,12 +51,11 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations
 Content-type: application/json
-Content-length: 223
+Content-length: 159
 
 {
   "@odata.type": "#microsoft.graph.managedAppOperation",
   "displayName": "Display Name value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "State value",
   "version": "Version value"
 }

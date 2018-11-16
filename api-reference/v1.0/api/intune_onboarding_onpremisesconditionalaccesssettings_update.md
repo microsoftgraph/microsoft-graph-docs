@@ -51,9 +51,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
 Content-type: application/json
-Content-length: 201
+Content-length: 275
 
 {
+  "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
   "enabled": true,
   "includedGroups": [
     "77c9d466-d466-77c9-66d4-c97766d4c977"

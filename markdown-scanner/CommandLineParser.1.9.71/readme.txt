@@ -4,7 +4,7 @@ Giacomo Stelluti Scala
 (gsscoder@gmail.com)
 
 GitHub (Latest Sources, Updated Docs): https://github.com/gsscoder/commandline
-Codeplex (Binary Downloads): http://commandline.codeplex.com/
+Codeplex (Binary Downloads): https://commandline.codeplex.com/
 
 Remarks:
  - IParser and IParserSettings interface were removed.

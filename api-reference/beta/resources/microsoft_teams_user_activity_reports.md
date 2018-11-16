@@ -1,6 +1,6 @@
 # Microsoft Teams user activity reports
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported. These APIs are not supported in Microsoft Graph China operated by 21Vianet.
 
 Use the Microsoft Teams user activity reports to get insights into the Microsoft Teams user activity in your organization.
 

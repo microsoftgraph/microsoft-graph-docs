@@ -25,6 +25,9 @@ Represents an Azure Active Directory user object.
 |**Onboarding**|
 |[exportDeviceAndAppManagementData function](../api/intune_shared_user_exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune_onboarding_deviceandappmanagementdata.md)|Not yet documented|
 |[getEffectiveDeviceEnrollmentConfigurations function](../api/intune_shared_user_geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) collection|Not yet documented|
+|**Troubleshooting**|
+|[getManagedDevicesWithAppFailures function](../api/intune_shared_user_getmanageddeviceswithappfailures.md)|String collection|Retrieves the list of devices with failed apps.|
+
 
 ## Properties
 |Property|Type|Description|

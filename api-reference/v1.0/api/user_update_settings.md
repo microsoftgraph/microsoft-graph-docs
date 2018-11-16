@@ -75,7 +75,7 @@ Content-length: 72
 #### Batch request
 
 It's also possible to opt-out multiple users from Delve and disable their contribution on content relevancy for the whole organization through a batch request.
-To learn more, see [JSON batching](https://developer.microsoft.com/en-us/graph/docs/concepts/json_batching).
+To learn more, see [JSON batching](https://developer.microsoft.com/graph/docs/concepts/json_batching).
 
 **Important**: Only members of the [Organization Management](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) role group can update multiple users. 
 

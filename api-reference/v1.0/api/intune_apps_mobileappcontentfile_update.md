@@ -56,9 +56,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}
 Content-type: application/json
-Content-length: 283
+Content-length: 342
 
 {
+  "@odata.type": "#microsoft.graph.mobileAppContentFile",
   "azureStorageUri": "Azure Storage Uri value",
   "isCommitted": true,
   "name": "Name value",

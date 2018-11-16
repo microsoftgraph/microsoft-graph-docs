@@ -14,6 +14,7 @@
 - [Detected app](intune_devices_detectedapp.md)
 - [Device action result](intune_devices_deviceactionresult.md)
 - [Device enrollment failure reason](intune_troubleshooting_deviceenrollmentfailurereason.md)
+- [Device enrollment type](intune_devices_deviceenrollmenttype.md)
 - [Device exchange access state summary](intune_devices_deviceexchangeaccessstatesummary.md)
 - [Device geolocation](intune_devices_devicegeolocation.md)
 - [Device health attestation state](intune_devices_devicehealthattestationstate.md)

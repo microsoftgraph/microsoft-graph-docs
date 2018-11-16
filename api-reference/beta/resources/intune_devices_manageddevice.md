@@ -33,7 +33,6 @@ Devices that are managed or pre-enrolled through Intune
 |[windowsDefenderUpdateSignatures action](../api/intune_devices_manageddevice_windowsdefenderupdatesignatures.md)|None|Not yet documented|
 |[updateWindowsDeviceAccount action](../api/intune_devices_manageddevice_updatewindowsdeviceaccount.md)|None|Not yet documented|
 |[revokeAppleVppLicenses action](../api/intune_devices_manageddevice_revokeapplevpplicenses.md)|None|Revoke all Apple Vpp licenses for a device|
-|[overrideComplianceState action](../api/managedDevice_overrideComplianceState.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -110,7 +109,7 @@ Devices that are managed or pre-enrolled through Intune
 |Relationship|Type|Description|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune_devices_detectedapp.md) collection|All applications currently installed on the device|
-|deviceCategory|[deviceCategory](../resources/intune_shared_devicecategory.md)|Device category|
+|deviceCategory|[deviceCategory](../resources/intune_devices_devicecategory.md)|Device category|
 |windowsProtectionState|[windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md)|The device protection status.|
 
 ## JSON Representation
@@ -288,6 +287,8 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
+
 
 
 

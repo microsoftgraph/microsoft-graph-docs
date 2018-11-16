@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1349
+Content-Length: 1373
 
 {
   "value": [
@@ -84,12 +84,15 @@ Content-Length: 1349
         "v8_0": true,
         "v9_0": true,
         "v10_0": true,
-        "v11_0": true
+        "v11_0": true,
+        "v12_0": true
       }
     }
   ]
 }
 ```
+
+
 
 
 

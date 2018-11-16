@@ -8,7 +8,13 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 
 In Microsoft Graph, Microsoft Teams is represented by a [group](../resources/group.md) resource. Both Microsoft Teams and Office 365 groups address the various needs of group collaboration. Almost all the group-based features apply to Microsoft Teams and Office 365 groups, such as group calendar, files, notes, photo, plans, and so on. The main difference between a [team](team.md) and an Office 365 group is the mode of communication between members. Team members communicate by persistent chat in the context of a specific team. Office 365 group members communicate by group conversations, which are email conversations that occur in the context of a group in Outlook.
 
-The following are the differences at the API level between teams and groups: 
+Any group that has a team has a **resourceProvisioningOptions** property that contains "Team". 
+
+>**Note:** The **Group.resourceProvisioningOptions** property can be changed.
+Do not add or remove "Team" from that collection;
+otherwise, you'll get incorrect results when you list all teams.
+
+The following are the differences at the API level between teams and groups:
 
 - Persistent chat is available only to Microsoft Teams. This feature is hierarchically represented by the [channel](../resources/channel.md), [chatThread](../resources/chatthread.md), and [chatMessage](../resources/chatmessage.md) resources.
 - Group conversations are available only to Office 365 groups. This feature is hierarchically represented by the [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md), and [post](../resources/post.md) resources. 
@@ -20,10 +26,7 @@ The following are the differences at the API level between teams and groups:
 
 ## Membership changes in Microsoft Teams
 
-When adding members to or removing members from a team using the Microsoft Graph v1.0 endpoint, there is a delay before the membership changes are reflected in the Microsoft Teams application/website.
-If a current team member or owner is signed in to the Microsoft Teams application/website, the change will be reflected within an hour. If none of those users are signed in to the Microsoft Teams application/website, the change will not be reflected until an hour after one of them signs in.
-
-The beta endpoint is faster -- under a minute in most cases, regardless of whether the user is signed in or not. The following are the beta APIs to use.
+To add members and owners to a team, change the membership of the [group](../resources/group.md) with the same ID.
 
 | Use case      | Verb      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -55,14 +58,17 @@ Similarly, if the `userId` in the URL or payload is expressed as a UPN rather th
 | Fast | 48d31887-5fad-4d73-a9f5-3c356e68a038 | 
 | Slow | john@example.com | 
 
+When the slower path is taken, if a current team member or owner is signed in to the Microsoft Teams application/website, the change will be reflected within an hour.
+If none of those users are signed in to the Microsoft Teams application/website, the change will not be reflected until an hour after one of them signs in.
 
 ## Common use cases  
+
 | Use cases                             | REST resources                                               | See also                                                     |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Create and delete teams               | [team](team.md) | [Create team](../api/team_put_teams.md) |
 | Add members and owners                | [group](../resources/group.md) | [Add member](../api/group_post_members.md), [Remove member](../api/group_delete_members.md) |
-| Add and remove channels               | [channel](../resources/channel.md) | [Create channel](../api/group_post_channels.md) |
-| Add apps to team                      | [teamsApp](../resources/teamsapp.md) | [Add apps](../api/teams_apps_add.md) |
+| Add and remove channels               | [channel](../resources/channel.md) | [Create channel](../api/channel_post.md) |
+| Add apps to team                      | [teamsApp](../resources/teamsapp.md) | [Add apps](../api/teamsappinstallation_add.md) |
 | Get a channel message                 | [chatMessage](../resources/chatmessage.md) | [Get channel message](../api/channel_get_message.md) |
 | Get all the replies of a message      | [chatMessage](../resources/chatmessage.md) | [Get all replies to a channel message](../api/channel_list_messagereplies.md) |
 | Post a message                        | [chatMessage](../resources/chatmessage.md) | [Create chat thread](../api/channel_post_chatthreads.md) |

@@ -50,9 +50,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 Content-type: application/json
-Content-length: 215
+Content-length: 273
 
 {
+  "@odata.type": "#microsoft.graph.mobileAppAssignment",
   "intent": "required",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"

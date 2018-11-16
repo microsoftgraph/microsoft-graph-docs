@@ -34,7 +34,7 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 |fallbackUrl | String | Optional. URL used to launch the activity in a web-based app, if available.|
 |contentUrl | String | Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).|
 |visualElements| [visualInfo](../resources/projectrome_visualinfo.md) | Required. The object containing information to render the activity in the UX.|
-|contentInfo | Untyped JSON object | Optional. A custom piece of data - JSON-LD extensible description of content according to [schema.org](http://schema.org) syntax.|
+|contentInfo | Untyped JSON object | Optional. A custom piece of data - JSON-LD extensible description of content according to [schema.org](https://schema.org) syntax.|
 |expirationDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object expired on the server.|
 |status | EnumType | Set by the server. A status code used to identify valid objects. Values: active, updated, deleted, ignored.|
 

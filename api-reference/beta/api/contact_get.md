@@ -136,7 +136,7 @@ Content-type: application/json
   "gender": null,
   "websites": [{
       "type": "work",
-      "address": "http://www.contoso.com",
+      "address": "https://www.contoso.com",
       "name": "Contoso"
   }],
   "weddingAnniversary": null

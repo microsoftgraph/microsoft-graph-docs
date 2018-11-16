@@ -54,9 +54,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
 Content-type: application/json
-Content-length: 131
+Content-length: 211
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLockerFile",
   "displayName": "Display Name value",
   "fileHash": "File Hash value",
   "file": "ZmlsZQ==",

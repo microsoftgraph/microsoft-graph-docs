@@ -16,7 +16,7 @@ Represents phone access information for an [onlineMeeting](onlinemeeting.md).
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

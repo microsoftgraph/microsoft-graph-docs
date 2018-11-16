@@ -71,7 +71,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1093
+Content-length: 1113
 
 {
   "displayName": "Display Name value",
@@ -105,7 +105,8 @@ Content-length: 1093
     "v8_0": true,
     "v9_0": true,
     "v10_0": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   }
 }
 ```
@@ -115,7 +116,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1258
+Content-Length: 1278
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -152,10 +153,13 @@ Content-Length: 1258
     "v8_0": true,
     "v9_0": true,
     "v10_0": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   }
 }
 ```
+
+
 
 
 

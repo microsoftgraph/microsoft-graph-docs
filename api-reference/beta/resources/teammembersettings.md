@@ -4,7 +4,7 @@
 
 Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the [team](team.md).
 
-## teamMemberSettings Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowCreateUpdateChannels|Boolean|If set to true, members can add and update channels.|
@@ -19,7 +19,6 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamMemberSettings"
 }-->
 
@@ -29,7 +28,7 @@ The following is a JSON representation of the resource.
   "allowDeleteChannels": true,
   "allowAddRemoveApps": true,
   "allowCreateUpdateRemoveTabs": true,
-  "allowCreateUpdateRemoveConnectors": true    
+  "allowCreateUpdateRemoveConnectors": true
 }
 ```
 

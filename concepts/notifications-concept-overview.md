@@ -25,4 +25,4 @@ To learn more about receiving and managing notifications by integrating with the
 ## See also
 
 - [Cross-device experiences in Microsoft Graph](cross-device-concept-overview.md)
-- [Project Rome Dev Center](http://aka.ms/projectrome)
+- [Project Rome Dev Center](https://aka.ms/projectrome)

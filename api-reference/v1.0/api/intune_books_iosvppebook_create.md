@@ -64,7 +64,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks
 Content-type: application/json
-Content-length: 856
+Content-length: 792
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -77,7 +77,6 @@ Content-length: 856
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",

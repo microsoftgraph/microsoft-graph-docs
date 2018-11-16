@@ -13,7 +13,6 @@ Inherits from [win32LobAppDetection](../resources/intune_apps_win32lobappdetecti
 |:---|:---|:---|
 |enforceSignatureCheck|Boolean|A value indicating whether signature check is enforced|
 |runAs32Bit|Boolean|A value indicating whether this script should run as 32-bit|
-|runAsLoggedOnUser|Boolean|A value indicating whether this script should run as current logged on user|
 |scriptContent|String|The base64 encoded script content to detect Win32 Line of Business (LoB) app|
 
 ## Relationships
@@ -30,10 +29,11 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.win32LobAppPowerShellScriptDetection",
   "enforceSignatureCheck": true,
   "runAs32Bit": true,
-  "runAsLoggedOnUser": true,
   "scriptContent": "String"
 }
 ```
+
+
 
 
 

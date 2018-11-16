@@ -19,7 +19,7 @@ GET /devices/{id}
 > Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Name       | Type | Description|

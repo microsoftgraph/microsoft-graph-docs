@@ -58,9 +58,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
-Content-length: 1341
+Content-length: 1390
 
 {
+  "@odata.type": "#microsoft.graph.auditEvent",
   "displayName": "Display Name value",
   "componentName": "Component Name value",
   "actor": {

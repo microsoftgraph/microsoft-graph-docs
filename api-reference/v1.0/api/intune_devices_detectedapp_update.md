@@ -51,9 +51,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}
 Content-type: application/json
-Content-length: 117
+Content-length: 167
 
 {
+  "@odata.type": "#microsoft.graph.detectedApp",
   "displayName": "Display Name value",
   "version": "Version value",
   "sizeInByte": 10,

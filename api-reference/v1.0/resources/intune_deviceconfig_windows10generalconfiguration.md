@@ -223,6 +223,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |experienceBlockErrorDialogWhenNoSIM|Boolean|Indicates whether or not to allow the error dialog from displaying if no SIM card is detected.|
 |experienceBlockTaskSwitcher|Boolean|Indicates whether or not to enable task switching on the device.|
 |logonBlockFastUserSwitching|Boolean|Disables the ability to quickly switch between users that are logged on simultaneously without logging off.|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|Whether the device is required to connect to the network.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -474,7 +475,8 @@ Here is a JSON representation of the resource.
   "experienceBlockDeviceDiscovery": true,
   "experienceBlockErrorDialogWhenNoSIM": true,
   "experienceBlockTaskSwitcher": true,
-  "logonBlockFastUserSwitching": true
+  "logonBlockFastUserSwitching": true,
+  "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
 }
 ```
 

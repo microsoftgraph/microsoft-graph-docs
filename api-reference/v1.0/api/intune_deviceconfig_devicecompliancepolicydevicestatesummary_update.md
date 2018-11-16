@@ -56,9 +56,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicyDeviceStateSummary
 Content-type: application/json
-Content-length: 270
+Content-length: 349
 
 {
+  "@odata.type": "#microsoft.graph.deviceCompliancePolicyDeviceStateSummary",
   "inGracePeriodCount": 2,
   "configManagerCount": 2,
   "unknownDeviceCount": 2,

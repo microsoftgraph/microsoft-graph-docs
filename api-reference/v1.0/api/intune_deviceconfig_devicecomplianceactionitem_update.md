@@ -51,9 +51,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/{deviceComplianceActionItemId}
 Content-type: application/json
-Content-length: 206
+Content-length: 271
 
 {
+  "@odata.type": "#microsoft.graph.deviceComplianceActionItem",
   "gracePeriodHours": 0,
   "actionType": "notification",
   "notificationTemplateId": "Notification Template Id value",

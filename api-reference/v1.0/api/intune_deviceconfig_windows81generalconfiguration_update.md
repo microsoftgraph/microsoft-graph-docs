@@ -85,10 +85,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1689
+Content-length: 1693
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.windows81GeneralConfiguration",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,

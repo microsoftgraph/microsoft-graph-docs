@@ -4,7 +4,7 @@
 
 Settings to configure use of Giphy, memes, and stickers in the [team](team.md).
 
-## teamFunSettings Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowGiphy|Boolean|If set to true, enables Giphy use.|
@@ -18,7 +18,6 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamFunSettings"
 }-->
 

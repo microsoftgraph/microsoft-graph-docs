@@ -49,7 +49,7 @@ Do not supply a request body for this method. The request body will be ignored.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of **alert** objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of **alert** objects in the response body. If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the providers response in a warning header. For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
 
 ## Example
 

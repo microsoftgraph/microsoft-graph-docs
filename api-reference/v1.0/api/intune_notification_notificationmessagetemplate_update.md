@@ -51,10 +51,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 Content-type: application/json
-Content-length: 195
+Content-length: 197
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.notificationMessageTemplate",
   "displayName": "Display Name value",
   "defaultLocale": "Default Locale value",
   "brandingOptions": "includeCompanyLogo"

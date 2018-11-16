@@ -11,8 +11,8 @@ Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" chann
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List channels](../api/group_list_channels.md) | [channel](channel.md) collection | Get the list of channels in this team.|
-|[Create channel](../api/group_post_channels.md) | [channel](channel.md) | Create a new channel by including the display name and description.|
+|[List channels](../api/channel_list.md) | [channel](channel.md) collection | Get the list of channels in this team.|
+|[Create channel](../api/channel_post.md) | [channel](channel.md) | Create a new channel by including the display name and description.|
 |[Get channel](../api/channel_get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
 |[Update channel](../api/channel_patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel_delete.md) | None | Delete a channel.|
