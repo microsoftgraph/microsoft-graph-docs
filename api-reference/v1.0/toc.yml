@@ -60,159 +60,162 @@ items:
     href: overview.md
     expanded: true
     items:
-    - name: User
-      href: resources/user.md
+    - name: Users
+      href: resources/users.md
       items:
-      - name: List users
-        href: api/user_list.md
-      - name: Get user
-        href: api/user_get.md
-      - name: Create user
-        href: api/user_post_users.md
-      - name: Update user
-        href: api/user_update.md
-      - name: Delete user
-        href: api/user_delete.md
-      - name: Get delta
-        href: api/user_delta.md
-    - name: Calendar
-      href: resources/event.md
-      items:
-      - name: List events
-        href: api/user_list_events.md
-      - name: Create event
-        href: api/user_post_events.md
-      - name: List calendars
-        href: api/user_list_calendars.md
-      - name: Create calendar
-        href: api/user_post_calendars.md
-      - name: List calendar groups
-        href: api/user_list_calendargroups.md
-      - name: Create calendar group
-        href: api/user_post_calendargroups.md
-      - name: List calendar view
-        href: api/user_list_calendarview.md
-      - name: Reminder view
-        href: api/user_reminderview.md
-      - name: Find meeting times
-        href: api/user_findmeetingtimes.md
-    - name: Contacts
-      href: resources/contact.md
-      items:
-      - name: List contacts
-        href: api/user_list_contacts.md
-      - name: Create contact
-        href: api/user_post_contacts.md
-      - name: List contact folders
-        href: api/user_list_contactfolders.md
-      - name: Create contact folder
-        href: api/user_post_contactfolders.md
-    - name: Directory objects
-      href: resources/directoryobject.md
-      items:
-      - name: List owned devices
-        href: api/user_list_owneddevices.md
-      - name: List registered devices
-        href: api/user_list_registereddevices.md
-      - name: List owned objects
-        href: api/user_list_ownedobjects.md
-      - name: List created objects
-        href: api/user_list_createdobjects.md
-      - name: Assign license
-        href: api/user_assignlicense.md
-      - name: Get member objects
-        href: api/user_getmemberobjects.md
-      - name: Get member groups
-        href: api/user_getmembergroups.md
-      - name: Check member groups
-        href: api/user_checkmembergroups.md
-      - name: Get objects by IDs
-        href: api/directoryobject_getbyids.md
-    - name: Drive
-      href: resources/drive.md
-      items:
-      - name: Get drive
-        href: api/drive_get.md
-      - name: List children
-        href: api/driveitem_list_children.md
-    - name: Groups
-      href: resources/group.md
-      items:
-      - name: List memberOf
-        href: api/user_list_memberof.md
-    - name: Mail
-      href: resources/message.md
-      items:
-      - name: List messages
-        href: api/user_list_messages.md
-      - name: Create message
-        href: api/user_post_messages.md
-      - name: List Overrides
-        href: api/inferenceclassification_list_overrides.md
-      - name: Create Override
-        href: api/inferenceclassification_post_overrides.md
-      - name: List mail folders
-        href: api/user_list_mailfolders.md
-      - name: Create mail folder
-        href: api/user_post_mailfolders.md
-      - name: Send mail
-        href: api/user_sendmail.md
-      - name: Get mailbox settings
-        href: api/user_get_mailboxsettings.md
-      - name: Update mailbox settings
-        href: api/user_update_mailboxsettings.md
-      - name: List rules
-        href: api/mailfolder_list_messagerules.md
-      - name: Create rule
-        href: api/mailfolder_post_messagerules.md
-      - name: Get MailTips
-        href: api/user_getmailtips.md
-    - name: Notes
-      href: resources/onenote.md
-      items:
-      - name: List notebooks
-        href: api/onenote_list_notebooks.md
-      - name: Create notebook
-        href: api/onenote_post_notebooks.md
-    - name: Outlook settings
-      href: resources/outlookuser.md
-      items:
-      - name: Get language choices
-        href: api/outlookuser_supportedlanguages.md
-      - name: Get time zone choices
-        href: api/outlookuser_supportedtimezones.md
-      - name: List categories
-        href: api/outlookuser_list_mastercategories.md
-      - name: Create category
-        href: api/outlookuser_post_mastercategories.md
-    - name: Org hierarchy
-      href: resources/organization.md
-      items:
-      - name: List direct reports
-        href: api/user_list_directreports.md
-      - name: Get manager
-        href: api/user_list_manager.md
-      - name: Assign manager
-        href: api/user_post_manager.md
-    - name: Photo
-      href: resources/profilephoto.md
-      items:
-      - name: Get photo
-        href: api/profilephoto_get.md
-      - name: Update photo
-        href: api/profilephoto_update.md
-    - name: Planner tasks
-      href: resources/plannertask.md
-      items:
-      - name: List tasks
-        href: api/planneruser_list_tasks.md
-    - name: User settings
-      href: resources/user_settings.md
-      items:
-      - name: Get settings
-        href: api/user_get_settings.md
-      - name: Update settings
-        href: api/user_update_settings.md
+      - name: User
+        href: resources/user.md
+        items:
+        - name: List users
+          href: api/user_list.md
+        - name: Get user
+          href: api/user_get.md
+        - name: Create user
+          href: api/user_post_users.md
+        - name: Update user
+          href: api/user_update.md
+        - name: Delete user
+          href: api/user_delete.md
+        - name: Get delta
+          href: api/user_delta.md
+      - name: Calendar
+        href: resources/event.md
+        items:
+        - name: List events
+          href: api/user_list_events.md
+        - name: Create event
+          href: api/user_post_events.md
+        - name: List calendars
+          href: api/user_list_calendars.md
+        - name: Create calendar
+          href: api/user_post_calendars.md
+        - name: List calendar groups
+          href: api/user_list_calendargroups.md
+        - name: Create calendar group
+          href: api/user_post_calendargroups.md
+        - name: List calendar view
+          href: api/user_list_calendarview.md
+        - name: Reminder view
+          href: api/user_reminderview.md
+        - name: Find meeting times
+          href: api/user_findmeetingtimes.md
+      - name: Contacts
+        href: resources/contact.md
+        items:
+        - name: List contacts
+          href: api/user_list_contacts.md
+        - name: Create contact
+          href: api/user_post_contacts.md
+        - name: List contact folders
+          href: api/user_list_contactfolders.md
+        - name: Create contact folder
+          href: api/user_post_contactfolders.md
+      - name: Directory objects
+        href: resources/directoryobject.md
+        items:
+        - name: List owned devices
+          href: api/user_list_owneddevices.md
+        - name: List registered devices
+          href: api/user_list_registereddevices.md
+        - name: List owned objects
+          href: api/user_list_ownedobjects.md
+        - name: List created objects
+          href: api/user_list_createdobjects.md
+        - name: Assign license
+          href: api/user_assignlicense.md
+        - name: Get member objects
+          href: api/user_getmemberobjects.md
+        - name: Get member groups
+          href: api/user_getmembergroups.md
+        - name: Check member groups
+          href: api/user_checkmembergroups.md
+        - name: Get objects by IDs
+          href: api/directoryobject_getbyids.md
+      - name: Drive
+        href: resources/drive.md
+        items:
+        - name: Get drive
+          href: api/drive_get.md
+        - name: List children
+          href: api/driveitem_list_children.md
+      - name: Groups
+        href: resources/group.md
+        items:
+        - name: List memberOf
+          href: api/user_list_memberof.md
+      - name: Mail
+        href: resources/message.md
+        items:
+        - name: List messages
+          href: api/user_list_messages.md
+        - name: Create message
+          href: api/user_post_messages.md
+        - name: List Overrides
+          href: api/inferenceclassification_list_overrides.md
+        - name: Create Override
+          href: api/inferenceclassification_post_overrides.md
+        - name: List mail folders
+          href: api/user_list_mailfolders.md
+        - name: Create mail folder
+          href: api/user_post_mailfolders.md
+        - name: Send mail
+          href: api/user_sendmail.md
+        - name: Get mailbox settings
+          href: api/user_get_mailboxsettings.md
+        - name: Update mailbox settings
+          href: api/user_update_mailboxsettings.md
+        - name: List rules
+          href: api/mailfolder_list_messagerules.md
+        - name: Create rule
+          href: api/mailfolder_post_messagerules.md
+        - name: Get MailTips
+          href: api/user_getmailtips.md
+      - name: Notes
+        href: resources/onenote.md
+        items:
+        - name: List notebooks
+          href: api/onenote_list_notebooks.md
+        - name: Create notebook
+          href: api/onenote_post_notebooks.md
+      - name: Outlook settings
+        href: resources/outlookuser.md
+        items:
+        - name: Get language choices
+          href: api/outlookuser_supportedlanguages.md
+        - name: Get time zone choices
+          href: api/outlookuser_supportedtimezones.md
+        - name: List categories
+          href: api/outlookuser_list_mastercategories.md
+        - name: Create category
+          href: api/outlookuser_post_mastercategories.md
+      - name: Org hierarchy
+        href: resources/organization.md
+        items:
+        - name: List direct reports
+          href: api/user_list_directreports.md
+        - name: Get manager
+          href: api/user_list_manager.md
+        - name: Assign manager
+          href: api/user_post_manager.md
+      - name: Photo
+        href: resources/profilephoto.md
+        items:
+        - name: Get photo
+          href: api/profilephoto_get.md
+        - name: Update photo
+          href: api/profilephoto_update.md
+      - name: Planner tasks
+        href: resources/plannertask.md
+        items:
+        - name: List tasks
+          href: api/planneruser_list_tasks.md
+      - name: User settings
+        href: resources/user_settings.md
+        items:
+        - name: Get settings
+          href: api/user_get_settings.md
+        - name: Update settings
+          href: api/user_update_settings.md
   - name: Groups
     href: resources/groups-overview.md
     items:
