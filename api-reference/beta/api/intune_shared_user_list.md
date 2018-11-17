@@ -1,4 +1,4 @@
-﻿# List users
+# List users
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,7 +8,7 @@ List properties and relationships of the [user](../resources/intune_shared_user.
 
 ## Prerequisites
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).  The specific permission depends on the context.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).  The specific permission depends on the context.
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|

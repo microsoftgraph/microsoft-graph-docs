@@ -9,7 +9,7 @@ Prior to making this request, the caller must have previously [retrieved the lis
 After making this request, the caller should [create a programControl](programcontrol_create.md), to link the access review to a program.  
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|

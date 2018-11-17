@@ -1,4 +1,4 @@
-﻿# Use the Planner REST API
+# Use the Planner REST API
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -112,11 +112,11 @@ Planner's delta query call flow is as follows:
 Planner versions all resources using **etags**. These **etags** are returned with `@odata.etag` property on each resource. `PATCH` and `DELETE` requests require the last **etag** known by the client to be specified with a `If-Match` header.
 Planner allows changes to older versions of resources if the intended change does not conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which **etag** for the same resource is newer by calculating which **etag** value is greater in ordinal string comparison. 
 Each resource has a unique **etag**. Etag values for different resources, including those with containment relationships, cannot be compared.
-The client apps are expected to handle versioning related [error codes](../../../concepts/errors.md) **409** and **412** by reading the latest version of the item and resolving the conflicting changes.
+The client apps are expected to handle versioning related [error codes](/graph/errors) **409** and **412** by reading the latest version of the item and resolving the conflicting changes.
 
 ## Common Planner error conditions
 
-In addition to [general errors](../../../concepts/errors.md) that apply to Microsoft Graph, some error conditions are specific to the Planner API.
+In addition to [general errors](/graph/errors) that apply to Microsoft Graph, some error conditions are specific to the Planner API.
 
 ### 400 Bad request
 

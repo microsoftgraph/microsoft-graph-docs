@@ -7,7 +7,7 @@ Create a new [policy](../resources/policy.md) object by specifying display name,
 >Note: The policy details will be validated before being stored. If it does not pass validation, a 400 Bad Request will be returned.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

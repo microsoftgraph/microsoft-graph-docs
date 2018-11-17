@@ -4,7 +4,7 @@
 
 In the Azure AD [access reviews](../resources/accessreviews_root.md) feature, retrieve the reviewers of an [accessReview](../resources/accessreview.md) object.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
