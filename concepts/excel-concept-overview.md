@@ -33,7 +33,7 @@ You can access a set of Excel objects (such as Table, Range, or Chart) by using 
 Looking for the API reference for this service?
 
 - [Excel API in Microsoft Graph v1.0](/graph/api/resources/excel?view=graph-rest-1.0)
-- [Excel API in Microsoft Graph beta](/graph/api/resources/excel.md?view=graph-rest-beta)
+- [Excel API in Microsoft Graph beta](/graph/api/resources/excel?view=graph-rest-beta)
 
 ## Next steps
 

@@ -18,7 +18,7 @@ To find out more, see
 
 Microsoft Graph connects all the resources across these services using relationships. For example, a user can be connected to a group through a [memberOf](/graph/api/user_list_memberof?view=graph-rest-1.0) relationship, and to another user through a [manager relationship](/graph/api/user_list_manager?view=graph-rest-1.0). Your app can traverse these relationships to access these connected resources and perform actions on them through the API.
 
-You can also get valuable insights and intelligence about the data from Microsoft Graph. For example, you can get the popular files [trending around](/graph/api/resources/insights_trending.md?view=graph-rest-beta) a particular user, or [get the most relevant people](/graph/api/user_list_people.md?view=graph-rest-beta) around a user.
+You can also get valuable insights and intelligence about the data from Microsoft Graph. For example, you can get the popular files [trending around](/graph/api/resources/insights_trending?view=graph-rest-beta) a particular user, or [get the most relevant people](/graph/api/user_list_people?view=graph-rest-beta) around a user.
 
 Discover the possibilities in the relationships within Microsoft Graph.
 

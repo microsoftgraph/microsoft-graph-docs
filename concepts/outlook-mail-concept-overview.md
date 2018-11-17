@@ -30,18 +30,18 @@ as well as events, contacts, tasks, and group posts, and opens up creative scena
 
 Use Microsoft Graph to suggest contextual data to your app users:
 
-- Integrate with [Focused Inbox](/graph/api/resources/manage_focused_inbox?view=graph-rest-1.0) and [@-mentions (preview)](/graph/api/message_get.md#request-2?view=graph-rest-beta) and let your app users read and respond to what's relevant to them first.
+- Integrate with [Focused Inbox](/graph/api/resources/manage_focused_inbox?view=graph-rest-1.0) and [@-mentions (preview)](/graph/api/message_get?view=graph-rest-beta#request-2) and let your app users read and respond to what's relevant to them first.
 
 - Check [mail tips](/graph/api/resources/mailtips?view=graph-rest-1.0) while still composing a message to get useful status information about a recipient (such as the recipient sending an auto-reply or has a full mailbox). Mail tips can alert apps of certain conditions so to take more efficient follow-up actions instead.
 
 - Make use of the [people API](people_example.md) to provide interactive controls such as a people picker in your app. The people API can suggest persons most relevant to a user, based on the user’s communication and collaboration patterns and business relationships.
 
-- Offer app users a smart file picker and suggest files that they have recently interacted with, to add as attachments when composing a message. [Insights (preview)](/graph/api/resources/insights.md?view=graph-rest-beta) use advanced analytics to suggest files that are trending around a user, recently viewed or edited by the user, or shared with the user.
+- Offer app users a smart file picker and suggest files that they have recently interacted with, to add as attachments when composing a message. [Insights (preview)](/graph/api/resources/insights?view=graph-rest-beta) use advanced analytics to suggest files that are trending around a user, recently viewed or edited by the user, or shared with the user.
 
 
 ### Store app data in a resource or resource instance
 
-Often times apps have to store their data in an external data store and entail overhead in managing and accessing the data. Microsoft Graph lets you simply include app data as Internet message headers when [creating](/graph/api/user_post_messages.md#request-2?view=graph-rest-1.0) or [sending](/graph/api/user_sendmail.md#request-2?view=graph-rest-1.0) a new message, or a reply to a message.
+Often times apps have to store their data in an external data store and entail overhead in managing and accessing the data. Microsoft Graph lets you simply include app data as Internet message headers when [creating](/graph/api/user_post_messages?view=graph-rest-1.0#request-2) or [sending](/graph/api/user_sendmail?view=graph-rest-1.0#request-2) a new message, or a reply to a message.
 
 If you need to add and subsequently update custom data, you can [store the data in individual resource instances](extensibility_overview.md#open-extensions). If appropriate, as an alternative, you can extend the schema, add custom properties, and store typed data in Microsoft Graph resources. You can make such [schema extensions](extensibility_overview.md#schema-extensions) discoverable and shareable.
 
@@ -49,7 +49,7 @@ If you need to add and subsequently update custom data, you can [store the data 
 Looking for the API reference for this service?
 
 - [Outlook mail API in Microsoft Graph v1.0](/graph/api/resources/mail_api_overview?view=graph-rest-1.0)
-- [Outlook mail API in Microsoft Graph beta](/graph/api/resources/mail_api_overview.md?view=graph-rest-beta)
+- [Outlook mail API in Microsoft Graph beta](/graph/api/resources/mail_api_overview?view=graph-rest-beta)
 
 
 ## Next steps
@@ -62,6 +62,6 @@ Looking for the API reference for this service?
   - How to [get shared messages](outlook-share-messages-folders.md)
   - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
 
-- Find out more about [using the mail API](/graph/api/resources/mail_api_overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail_api_overview.md#common-use-cases?view=graph-rest-1.0) in Microsoft Graph v1.0.
+- Find out more about [using the mail API](/graph/api/resources/mail_api_overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail_api_overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
 
 

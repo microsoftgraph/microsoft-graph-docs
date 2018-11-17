@@ -52,21 +52,21 @@ Most security breaches are the result of attackers stealing a user’s identity,
 
 Azure AD uses adaptive machine learning algorithms and heuristics to detect anomalies that indicate potentially compromised accounts. Using this data, Azure AD Identity Protection protects your users with risk-based conditional access policies and generates reports and alerts on its detections.
 
-Today, Microsoft Graph gives easy access to customers of Azure AD Premium P2 to [query risk events detected by Identity Protection](/graph/api/resources/identityprotection_root.md?view=graph-rest-beta), including the risk event’s type, severity, date, time, location, impacted user, and more. Customers can then use those events in SIEM systems and security applications.
+Today, Microsoft Graph gives easy access to customers of Azure AD Premium P2 to [query risk events detected by Identity Protection](/graph/api/resources/identityprotection_root?view=graph-rest-beta), including the risk event’s type, severity, date, time, location, impacted user, and more. Customers can then use those events in SIEM systems and security applications.
 
 ### Activate users into privileged roles (preview)
 
-You can get secure access to resources by activating administrative privileges on-demand. [Privileged Identity Management](/graph/api/resources/privilegedidentitymanagement_root.md?view=graph-rest-beta) is featured in Azure AD Premium P2.
+You can get secure access to resources by activating administrative privileges on-demand. [Privileged Identity Management](/graph/api/resources/privilegedidentitymanagement_root?view=graph-rest-beta) is featured in Azure AD Premium P2.
 
 ### Manage user access reviews (preview)
 
-You can configure access reviews of group memberships and application access. [Access reviews](/graph/api/resources/accessreviews_root.md?view=graph-rest-beta) is featured in Azure AD Premium P2.
+You can configure access reviews of group memberships and application access. [Access reviews](/graph/api/resources/accessreviews_root?view=graph-rest-beta) is featured in Azure AD Premium P2.
 
 ## API reference
 Looking for the API reference for this service?
 
 - [Azure AD identity and access management API in Microsoft Graph v1.0](/graph/api/resources/azure_ad_overview?view=graph-rest-1.0)
-- [Azure AD identity and access management API in Microsoft Graph beta](/graph/api/resources/azure_ad_overview.md?view=graph-rest-beta)
+- [Azure AD identity and access management API in Microsoft Graph beta](/graph/api/resources/azure_ad_overview?view=graph-rest-beta)
 
 ## Next steps
 

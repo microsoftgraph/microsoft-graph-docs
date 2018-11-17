@@ -46,8 +46,8 @@ The calendar API helps customers navigate their day and enhance productivity:
 Outlook and the calendar API offer many smart conveniences to schedule events:
 
 - Through Outlook calendar app settings, customers can enable automatic adding of events from emails, such as flight, hotel, or dining reservations, and billing invoices. Once added, you can interact with these events just like any other [event](/graph/api/resources/event?view=graph-rest-1.0) objects in the user's mailbox, and build creative scenarios upon this Outlook capability.
-- ** In Outlook, booking a meeting room is as straight-forward as adding an attendee to the **event**. The calendar API represents a meeting room as an [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) object. You can [get rooms (preview)](/graph/api/user_findrooms.md?view=graph-rest-beta) and
-[get room lists (preview)](/graph/api/user_findroomlists.md?view=graph-rest-beta) that are available in a tenant. To organize a meeting in a specific room, assign it to the **location** property of the **event**.
+- ** In Outlook, booking a meeting room is as straight-forward as adding an attendee to the **event**. The calendar API represents a meeting room as an [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) object. You can [get rooms (preview)](/graph/api/user_findrooms?view=graph-rest-beta) and
+[get room lists (preview)](/graph/api/user_findroomlists?view=graph-rest-beta) that are available in a tenant. To organize a meeting in a specific room, assign it to the **location** property of the **event**.
 - ** You can [look up the free/busy information for users and resources (preview)](outlook-get-free-busy-schedule.md) for a specific time period. You can then use this data to apply to different scenarios including resource planning and event scheduling.
 - ** If your scenario involves scheduling meetings at an optimal time, you can consider [using findMeetingTimes to identify possible times or locations to meet](findmeetingtimes_example.md). The [findMeetingTimes](/graph/api/user_findmeetingtimes?view=graph-rest-1.0) function considers the free/busy status of the attendees, and any preferred rooms, time, and other constraints you provide. If the first try doesn't return a common meeting time, check the reason, adjust your criteria and call **findMeetingTimes** again.
 
@@ -56,9 +56,9 @@ Outlook and the calendar API offer many smart conveniences to schedule events:
 
 With globalization, today's business meetings often involve attendees participating from different locations and time zones. Here's how you can use the calendar API to manage such meetings:
 
-- As an example in Outlook, customers can organize a meeting and include attendees joining from a conference room in Seattle, a coffee shop in Paris, and a home office in China. Programmatically, the event **locations** property, which is a collection of [location](/graph/api/resources/location?view=graph-rest-1.0) objects, can reflect this level of details in **displayName** and **locationType** for each **location**. See an [example](/graph/api/event_get.md#request-2?view=graph-rest-1.0).
+- As an example in Outlook, customers can organize a meeting and include attendees joining from a conference room in Seattle, a coffee shop in Paris, and a home office in China. Programmatically, the event **locations** property, which is a collection of [location](/graph/api/resources/location?view=graph-rest-1.0) objects, can reflect this level of details in **displayName** and **locationType** for each **location**. See an [example](/graph/api/event_get?view=graph-rest-1.0#request-2).
 - Outlook gives customers the flexibility to organize events and specify a time zone for each of the start and end times of an event. To support this flexibility, by default, the calendar API returns the **start** and **end** times of an **event** in UTC, and provides the **originalStartTimeZone** and **originalEndTimeZone** properties to note the time zones used when the event was created.
-- Alternatively, you can specify the `Prefer: outlook.timezone="{time zone name}"` header so that a GET event operation returns **start** and **end** in the time zone you specify. The time zone name can be any of those supported by Windows, as well as those on this [list](/graph/api/resources/datetimetimezone?view=graph-rest-1.0). See an [example](/graph/api/event_get.md#request-1?view=graph-rest-1.0) of the `Prefer` header in use.
+- Alternatively, you can specify the `Prefer: outlook.timezone="{time zone name}"` header so that a GET event operation returns **start** and **end** in the time zone you specify. The time zone name can be any of those supported by Windows, as well as those on this [list](/graph/api/resources/datetimetimezone?view=graph-rest-1.0). See an [example](/graph/api/event_get?view=graph-rest-1.0#request-1) of the `Prefer` header in use.
 
 
 ### Take advantage of social intelligence and other developer conveniences in Microsoft Graph
@@ -71,7 +71,7 @@ Save overhead in storing and managing app data in external data stores. With Mic
 Looking for the API reference for this service?
 
 - [Outlook calendar API in Microsoft Graph v1.0](/graph/api/resources/calendar?view=graph-rest-1.0)
-- [Outlook calendar API in Microsoft Graph beta](/graph/api/resources/calendar.md?view=graph-rest-beta)
+- [Outlook calendar API in Microsoft Graph beta](/graph/api/resources/calendar?view=graph-rest-beta)
 
 
 ## Next steps

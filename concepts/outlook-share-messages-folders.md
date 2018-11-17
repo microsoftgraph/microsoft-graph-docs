@@ -54,4 +54,4 @@ If Garth has not shared his Inbox with John, nor has he delegated his mailbox to
 Find out more about:
 
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
-- [Using the mail API](/graph/api/resources/mail_api_overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail_api_overview.md#common-use-cases?view=graph-rest-1.0) in Microsoft Graph v1.0.
+- [Using the mail API](/graph/api/resources/mail_api_overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail_api_overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.

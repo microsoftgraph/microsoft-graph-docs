@@ -17,7 +17,7 @@ The following table lists the resources that support open and schema extensions,
 
 |Resource |Open extensions |Schema extensions |
 |:------- |:------ |:------ |
-| [Administrative unit](/graph/api/resources/administrativeunit.md?view=graph-rest-beta) | Preview only | Preview only |
+| [Administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta) | Preview only | Preview only |
 | [Calendar event](/graph/api/resources/event?view=graph-rest-1.0) | GA | GA |
 | [Device](/graph/api/resources/device?view=graph-rest-1.0) | GA | GA |
 | [Group](/graph/api/resources/group?view=graph-rest-1.0) | GA | GA |

@@ -54,7 +54,7 @@ Certain limits apply to Azure AD based resources (users, groups) and may generat
 
 ## Subscription lifetime
 
-Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription.md#maximum-length-of-subscription-per-resource-type?view=graph-rest-1.0).
+Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).
 
 Apps can also unsubscribe at any time to stop getting notifications.
 

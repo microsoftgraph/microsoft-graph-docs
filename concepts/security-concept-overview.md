@@ -44,7 +44,7 @@ The following table lists the benefits that different security solutions can acc
 Looking for the API reference for this service?
 
 - [Security API in Microsoft Graph v1.0](/graph/api/resources/security-api-overview?view=graph-rest-1.0)
-- [Security API in Microsoft Graph beta](/graph/api/resources/security-api-overview.md?view=graph-rest-beta)
+- [Security API in Microsoft Graph beta](/graph/api/resources/security-api-overview?view=graph-rest-beta)
 
 ## Next steps
 

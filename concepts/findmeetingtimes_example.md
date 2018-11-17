@@ -44,7 +44,7 @@ As the attendee is out-of-office on April 18-19, and there is no commonly availa
 with the reason (**emptySuggestionsReason**) that attendees are not available.
 2. The second call looks for availability on April 21 and returns a suggestion of 2-4pm.
 
-The two calls to **findMeetingTimes** include the following parameters. All [parameters](/graph/api/user_findmeetingtimes.md#request-body?view=graph-rest-1.0) for **findMeetingTimes** are optional.
+The two calls to **findMeetingTimes** include the following parameters. All [parameters](/graph/api/user_findmeetingtimes?view=graph-rest-1.0#request-body) for **findMeetingTimes** are optional.
 
 - **attendees**: one attendee, Samantha Booth, set as `required` for the **type** property
 - **locationConstraint**: does not require any location suggestion
@@ -241,8 +241,8 @@ Content-Length: 714
 
 There are times when not all attendees can attend a meeting. You can have **findMeetingTimes** suggest a time if the _confidence_ for attendance reaches a certain percentage,
 by specifying the **minimumAttendeePercentage** optional parameter. Learn more about the 
-[confidence of a meeting suggestion](/graph/api/user_findmeetingtimes.md#the-confidence-of-a-meeting-suggestion?view=graph-rest-1.0)
-and other [parameters](/graph/api/user_findmeetingtimes.md#request-body?view=graph-rest-1.0), and apply them as appropriate for meetings of larger sizes.
+[confidence of a meeting suggestion](/graph/api/user_findmeetingtimes?view=graph-rest-1.0#the-confidence-of-a-meeting-suggestion)
+and other [parameters](/graph/api/user_findmeetingtimes?view=graph-rest-1.0#request-body), and apply them as appropriate for meetings of larger sizes.
 
 After getting meeting time suggestions, you may want to:
 

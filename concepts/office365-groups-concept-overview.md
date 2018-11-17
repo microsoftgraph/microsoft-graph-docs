@@ -27,7 +27,7 @@ You can use the Microsoft Graph API to create, manage, or delete groups througho
 
     ![Screenshot of Outlook on the web with groups listed in the Groups folder](images/office365-groups-concept-overview-groups-in-outlook.png) 
 
-- [Enable a group for Microsoft Teams](/graph/api/team_put_teams.md?view=graph-rest-beta) (preview) to allow group members to engage in persistent chat.  
+- [Enable a group for Microsoft Teams](/graph/api/team_put_teams?view=graph-rest-beta) (preview) to allow group members to engage in persistent chat.  
 - [Delete groups](/graph/api/group_delete?view=graph-rest-1.0). When a group is deleted, all associated content is also deleted, which prevents orphaned sites, conversations, or plans. 
  
 ### Manage group membership seamlessly 
@@ -51,7 +51,7 @@ As the number of groups created within an organization begins to grow, Microsoft
 Looking for the API reference for this service?
 
 - [Groups API in Microsoft Graph v1.0](/graph/api/resources/groups-overview?view=graph-rest-1.0)
-- [Groups API in Microsoft Graph beta](/graph/api/resources/groups-overview.md?view=graph-rest-beta)
+- [Groups API in Microsoft Graph beta](/graph/api/resources/groups-overview?view=graph-rest-beta)
 
 
 ## Next steps

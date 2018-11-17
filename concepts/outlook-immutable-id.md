@@ -25,18 +25,18 @@ An item's immutable ID will not change so long as the item stays in the same mai
 
 The following items support immutable IDs:
 
-- [message resource type](/graph/api/resources/message.md?view=graph-rest-beta)
-- [attachment resource type](/graph/api/resources/attachment.md?view=graph-rest-beta)
-- [event resource type](/graph/api/resources/event.md?view=graph-rest-beta)
-- [eventMessage resource type](/graph/api/resources/eventmessage.md?view=graph-rest-beta)
-- [contact resource type](/graph/api/resources/contact.md?view=graph-rest-beta)
-- [outlookTask resource type](/graph/api/resources/outlooktask.md?view=graph-rest-beta)
+- [message resource type](/graph/api/resources/message?view=graph-rest-beta)
+- [attachment resource type](/graph/api/resources/attachment?view=graph-rest-beta)
+- [event resource type](/graph/api/resources/event?view=graph-rest-beta)
+- [eventMessage resource type](/graph/api/resources/eventmessage?view=graph-rest-beta)
+- [contact resource type](/graph/api/resources/contact?view=graph-rest-beta)
+- [outlookTask resource type](/graph/api/resources/outlooktask?view=graph-rest-beta)
 
 Container types (mailFolder, calendar, etc.) do not support immutable ID, but their regular IDs were already constant.
 
 ## Immutable ID with change notifications
 
-You can request that Microsoft Graph send immutable IDs in change notifications by including the `Prefer: IdType="ImmutableId"` header when [creating a subscription](/graph/api/subscription_post_subscriptions.md?view=graph-rest-beta). Existing subscriptions created without the header will continue to use the default ID format. In order to switch existing subscriptions to use immutable IDs, you must delete and recreate them using the header.
+You can request that Microsoft Graph send immutable IDs in change notifications by including the `Prefer: IdType="ImmutableId"` header when [creating a subscription](/graph/api/subscription_post_subscriptions?view=graph-rest-beta). Existing subscriptions created without the header will continue to use the default ID format. In order to switch existing subscriptions to use immutable IDs, you must delete and recreate them using the header.
 
 ## Immutable ID with delta query
 
@@ -44,7 +44,7 @@ You can request that Microsoft Graph return immutable IDs in [delta query respon
 
 ## Updating existing data
 
-If you've already got a database filled with thousands of regular IDs, you can migrate those IDs to immutable format using the [translateExchangeIds](/graph/api/user_translateexchangeids.md?view=graph-rest-beta) function. You can provide an array of up to 1000 IDs to be translated into a target format.
+If you've already got a database filled with thousands of regular IDs, you can migrate those IDs to immutable format using the [translateExchangeIds](/graph/api/user_translateexchangeids?view=graph-rest-beta) function. You can provide an array of up to 1000 IDs to be translated into a target format.
 
 > **Note:** You can also use `translateExchangeIds` to migrate Exchange Web Services applications to Microsoft Graph.
 

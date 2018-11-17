@@ -37,8 +37,8 @@ The fix will retroactively update control messages that are already posted.
 
 ### Create chat thread API
 
-The current API to [create a chat thread](/graph/api/channel_post_chatthreads.md?view=graph-rest-beta) 
-will be replaced with a richer API that is consistent with the schema for [listing channel messages](/graph/api/channel_list_messages.md?view=graph-rest-beta).
+The current API to [create a chat thread](/graph/api/channel_post_chatthreads?view=graph-rest-beta) 
+will be replaced with a richer API that is consistent with the schema for [listing channel messages](/graph/api/channel_list_messages?view=graph-rest-beta).
 
 ### Graph Explorer and Global Admins
 
@@ -196,10 +196,10 @@ In the above query:
 
 ### Accessing contacts via a contact folder in beta
 
-In the `/beta` version, there is currently an issue that prevents accessing a [contact](/graph/api/resources/contact.md?view=graph-rest-beta)
+In the `/beta` version, there is currently an issue that prevents accessing a [contact](/graph/api/resources/contact?view=graph-rest-beta)
 by specifying its parent folder in the REST request URL, as shown in the 2 scenarios below.
 
-* Accessing a contact from a top level [contactFolder](/graph/api/resources/contactfolder.md?view=graph-rest-beta) of the user's.
+* Accessing a contact from a top level [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-beta) of the user's.
 
 ```http
 GET /me/contactfolders/{id}/contacts/{id}
@@ -213,7 +213,7 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 
-As an alternative, you can simply [get](/graph/api/contact_get.md?view=graph-rest-beta) the contact by specifying its ID as shown below,
+As an alternative, you can simply [get](/graph/api/contact_get?view=graph-rest-beta) the contact by specifying its ID as shown below,
 since GET /contacts in the `/beta` version applies to all the contacts in the user's mailbox:
 
 ```http
@@ -263,7 +263,7 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 
 ## Application and servicePrincipal API changes
 
-There are changes to the [application](/graph/api/resources/application.md?view=graph-rest-beta) and [servicePrincipal](/graph/api/resources/serviceprincipal.md?view=graph-rest-beta) entities currently in development. The following is a summary of current limitations and in-development API features.
+There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) entities currently in development. The following is a summary of current limitations and in-development API features.
 
 Current limitations:
 

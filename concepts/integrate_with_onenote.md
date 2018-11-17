@@ -79,7 +79,7 @@ Find out about a few other OneNote features that are exposed only on the OneNote
 Looking for the API reference for this service?
 
 - [OneNote API in Microsoft Graph v1.0](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)
-- [OneNote API in Microsoft Graph beta](/graph/api/resources/onenote-api-overview.md?view=graph-rest-beta)
+- [OneNote API in Microsoft Graph beta](/graph/api/resources/onenote-api-overview?view=graph-rest-beta)
 
 ## Next steps
 

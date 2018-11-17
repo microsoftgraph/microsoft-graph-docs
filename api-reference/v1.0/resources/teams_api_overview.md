@@ -27,11 +27,11 @@ To add members and owners to a team, change the membership of the [group](../res
 
 | Use case      | Verb      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Add member](../api/group_post_members.md)	| POST	    | https://graph.microsoft.com/beta/groups/{id}/members/$ref  |
-| [Remove member](../api/group_delete_members.md)	| DELETE	| https://graph.microsoft.com/beta/groups/{id}/members/{userId}/$ref |
-| [Add owner](../api/group_post_owners.md)     | POST	    | https://graph.microsoft.com/beta/groups/{id}/owners/$ref |
-| [Remove owner](../api/group_delete_owners.md)	| DELETE	| https://graph.microsoft.com/beta/groups/{id}/owners/{userId}/$ref |
-| [Update team](../api/team_update.md)	| PATCH     | https://graph.microsoft.com/beta/teams/{id} |
+| [Add member](../api/group_post_members.md)	| POST	    | /groups/{id}/members/$ref  |
+| [Remove member](../api/group_delete_members.md)	| DELETE	| /groups/{id}/members/{userId}/$ref |
+| [Add owner](../api/group_post_owners.md)     | POST	    | /groups/{id}/owners/$ref |
+| [Remove owner](../api/group_delete_owners.md)	| DELETE	| /groups/{id}/owners/{userId}/$ref |
+| [Update team](../api/team_update.md)	| PATCH     | /teams/{id} |
 
 We recommend that when you add an owner, you also add that user as a member. 
 If a team has an owner who is not also a member, ownership and membership changes might not show up immediately in Microsoft Teams. 

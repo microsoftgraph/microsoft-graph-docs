@@ -24,7 +24,7 @@ With the Microsoft Graph notifications API, you can deliver notifications in a h
 Looking for the API reference for these services?
 
 - [API for cross-device experiences in Microsoft Graph v1.0](/graph/api/resources/project_rome_overview?view=graph-rest-1.0)
-- [API for cross-device experiences in Microsoft Graph beta](/graph/api/resources/project_rome_overview.md?view=graph-rest-beta)
+- [API for cross-device experiences in Microsoft Graph beta](/graph/api/resources/project_rome_overview?view=graph-rest-beta)
 
 
 ## Next steps

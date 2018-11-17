@@ -38,7 +38,7 @@ The following resources currently provide a retry-after header:
 - [Contact](/graph/api/resources/contact?view=graph-rest-1.0)
 - [Attachment](/graph/api/resources/attachment?view=graph-rest-1.0)
 - [Group conversations](/graph/api/resources/conversation?view=graph-rest-1.0)
-- [People and social](/graph/api/resources/social_overview.md?view=graph-rest-beta)
+- [People and social](/graph/api/resources/social_overview?view=graph-rest-beta)
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://msdn.microsoft.com/library/office/dn589798.aspx).
