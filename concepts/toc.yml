@@ -1,5 +1,5 @@
-name: Graph Docs
-items:
+  name: Graph Docs
+  items:
   - name: Microsoft Graph
     href: overview.md
     expanded: true
@@ -217,4 +217,3 @@ items:
           href: errors.md
     - name: API Reference
       href: /graph/api/overview?toc=./ref/toc.json
-  ...

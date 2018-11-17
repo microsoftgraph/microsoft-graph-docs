@@ -1,5 +1,5 @@
-name: Reference
-items:
+  name: Reference
+  items:
   - name: Overview of Microsoft Graph
     href: /graph/overview?toc=./toc.json
   - name: Get auth tokens
@@ -7802,4 +7802,3 @@ items:
           href: api/subscription_update.md
         - name: Delete subscription
           href: api/subscription_delete.md
-...
