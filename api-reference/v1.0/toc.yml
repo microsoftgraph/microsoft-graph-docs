@@ -1,5 +1,5 @@
-name: Reference
-items:
+  name: Reference
+  items:
   - name: Overview of Microsoft Graph
     href: /graph/overview?toc=./toc.json
   - name: Get auth tokens
