@@ -7761,7 +7761,7 @@ items:
           href: api/nameditem_add.md
         - name: List range
           href: api/nameditem_range.md
-    - name: TOOLS
+    - name: Tools
     - name: Open extensions
       href: resources/opentypeextension.md
       items:
