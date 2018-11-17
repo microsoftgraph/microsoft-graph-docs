@@ -5,7 +5,7 @@
 Retrieve a list of participant objects in the call.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 | Permission type | Permissions (from least to most privileged) |
 | :-------------- | :------------------------------------------ |
@@ -39,7 +39,7 @@ If successful, this method returns a `200 OK` response code and collection of [p
 ### Example 1
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -51,7 +51,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

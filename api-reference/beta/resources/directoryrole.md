@@ -8,7 +8,7 @@ By default, directory roles are scoped to be tenant-wide.  However, directory ro
 
 This resource supports:
 
-- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/directoryrole_delta.md) function.
+- Using [delta query](/graph/delta_query_overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/directoryrole_delta.md) function.
 
 ## Methods
 

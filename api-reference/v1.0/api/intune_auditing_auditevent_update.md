@@ -1,10 +1,10 @@
-﻿# Update auditEvent
+# Update auditEvent
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [auditEvent](../resources/intune_auditing_auditevent.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -58,9 +58,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
-Content-length: 1341
+Content-length: 1390
 
 {
+  "@odata.type": "#microsoft.graph.auditEvent",
   "displayName": "Display Name value",
   "componentName": "Component Name value",
   "actor": {

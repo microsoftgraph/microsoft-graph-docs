@@ -4,19 +4,19 @@
 
 The deviceManagement resource represents a container whose contents vary according to workflow, including:  
 
-- Auditing events
-- Corporate terms and conditions 
-- Device configuration settings
-- Device management
-- Endpoint protection
-- Enrollment profiles
-- Notifications
--Onboarding policies, settings, and details
-- Role-based access control (RBAC) policies
-- Remote assistance partners
-- Telecom expanse management partners
-- Troubleshooting events
-- Windows Information Protection summaries
+- Auditing events  
+- Corporate terms and conditions   
+- Device configuration settings  
+- Device management  
+- Endpoint protection  
+- Enrollment profiles  
+- Notifications  
+- Onboarding policies, settings, and details  
+- Role-based access control (RBAC) policies  
+- Remote assistance partners  
+- Telecom expanse management partners  
+- Troubleshooting events  
+- Windows Information Protection summaries  
 
 ## Methods
 |Method|Return Type|Description|

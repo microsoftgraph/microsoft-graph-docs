@@ -1,11 +1,12 @@
-# List members
+# List group members
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get a list of the group's direct members. A group can have users, contacts, and other groups as members. This operation is not transitive.
+Get a list of the group's direct members. A group can have users, contacts, devices, service principals, and other groups as members. This operation is not transitive.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -22,7 +23,7 @@ GET /groups/{id}/members
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query_parameters) to help customize the response.
 
 ## Request headers
 | Name       | Type | Description|
@@ -40,7 +41,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_members"
+  "name": "get_group_members"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/groups/{id}/members
@@ -58,11 +59,23 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
+    "@odata.type": "#microsoft.graph.user",
     {
+      "businessPhones": [
+        "businessPhones-value"
+      ],
+      "displayName": "displayName-value",
+      "givenName": "givenName-value",
+      "jobTitle": "jobTitle-value",
+      "mail": "mail-value",
+      "mobilePhone": "mobilePhone-value",
+      "officeLocation": "officeLocation-value",
+      "preferredLanguage": "preferredLanguage-value",
+      "surname": "surname-value",
+      "userPrincipalName": "userPrincipalName-value",
       "id": "id-value"
     }
   ]
@@ -73,7 +86,7 @@ Content-length: 55
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List members",
+  "description": "List group members",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

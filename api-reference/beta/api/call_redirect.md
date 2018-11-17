@@ -5,7 +5,7 @@
 Redirect an incoming call.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 | Permission type | Permissions (from least to most privileged)         |
 | :-------------- | :-------------------------------------------------- |
@@ -30,7 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation|
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation.|
 |targetDisposition|String|The possible value is: `default`|
 |timeout|Int32|The timeout in seconds for the redirect operation.|
 |maskCallee|Boolean|Indicates whether to mask the callee.|
@@ -44,7 +44,7 @@ Returns `202 Accepted` response code
 ### Redirect a call
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",

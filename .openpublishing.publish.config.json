@@ -2,11 +2,9 @@
   "docsets_to_publish": [
     {
       "docset_name": "microsoft-graph-docs",
-      "build_source_folder": ".",
+      "build_source_folder": "concepts",
       "build_output_subfolder": "microsoft-graph-docs",
       "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -21,8 +19,7 @@
       "build_source_folder": "api-reference",
       "build_output_subfolder": "microsoft-graph-ref",
       "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
+      "moniker_ranges": [ "graph-rest-beta", ">= graph-rest-1.0" ], 
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -49,5 +46,14 @@
   ],
   "branch_target_mapping": {},
   "need_generate_pdf_url_template": false,
-  "targets": {}
+  "targets": {},
+  "JoinTOCPlugin": [
+    {
+      "ReferenceTOC": "api-reference/v1.0/toc.yml",
+      "ReferenceTOCUrl": "/graph/api/toc.json",
+      "ConceptualTOC": "concepts/toc.yml",
+      "ConceptualTOCUrl": "/graph/concepts/toc.json"
+    }
+  ]
 }
+

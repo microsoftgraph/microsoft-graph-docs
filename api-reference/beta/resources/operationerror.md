@@ -16,8 +16,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.operationerror"
+  "@odata.type": "microsoft.graph.operationError"
 }-->
 
 ```json

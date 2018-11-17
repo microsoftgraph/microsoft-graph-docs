@@ -23,13 +23,13 @@ With the Microsoft Graph notifications API, you can deliver notifications in a h
 ## API reference
 Looking for the API reference for these services?
 
-- [API for cross-device experiences in Microsoft Graph v1.0](../api-reference/v1.0/resources/project_rome_overview.md)
-- [API for cross-device experiences in Microsoft Graph beta](../api-reference/beta/resources/project_rome_overview.md)
+- [API for cross-device experiences in Microsoft Graph v1.0](/graph/api/resources/project_rome_overview?view=graph-rest-1.0)
+- [API for cross-device experiences in Microsoft Graph beta](/graph/api/resources/project_rome_overview?view=graph-rest-beta)
 
 
 ## Next steps
 
-- [Use the Microsoft Graph API to enable cross-device experiences](../api-reference/v1.0/resources/cross-device-reference-overview.md)
+- [Use the Microsoft Graph API to enable cross-device experiences](/graph/api/resources/cross-device-reference-overview?view=graph-rest-1.0)
 - [Learn more about the activity feed API in Microsoft Graph](activity-feed-concept-overview.md)
-- [Learn more about the device replay API in Microsoft Graph](device-relay-concept-overview.md)
+- [Learn more about the device relay API in Microsoft Graph](device-relay-concept-overview.md)
 - [Learn more about the Microsoft Graph notifications API in Microsoft Graph](notifications-concept-overview.md)

@@ -1,15 +1,15 @@
-﻿# syncMicrosoftStoreForBusinessApps action
+# syncMicrosoftStoreForBusinessApps action
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Syncs Intune account with Microsoft Store For Business
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 |Delegated (work or school account)| 
-| &nbsp; &nbsp; _On-boarding_ | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; _Onboarding_ | DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 

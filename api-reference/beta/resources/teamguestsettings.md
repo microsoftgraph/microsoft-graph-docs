@@ -4,7 +4,7 @@
 
 Settings to configure whether guests can create, update, or delete channels in the [team](team.md).
 
-## teamGuestSettings Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowCreateUpdateChannels|Boolean|If set to true, guests can add and update channels.|
@@ -16,7 +16,6 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamGuestSettings"
 }-->
 

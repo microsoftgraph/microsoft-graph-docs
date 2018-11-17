@@ -1,11 +1,11 @@
-﻿# participant: mute
+# participant: mute
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Mute a specific participant in the call.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 | Permission type | Permissions (from least to most privileged) |
 | :-------------- | :------------------------------------------ |
@@ -33,13 +33,13 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
+If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "participant_mute"
@@ -56,7 +56,7 @@ Content-Length: 46
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

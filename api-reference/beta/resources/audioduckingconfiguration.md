@@ -17,7 +17,7 @@ Parameters for ducking of other sources (phasing in and out of other sources.)
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

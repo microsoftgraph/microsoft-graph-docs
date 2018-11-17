@@ -5,7 +5,7 @@
 Transfer an active call.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 | Permission type | Permissions (from least to most privileged)         |
 | :-------------- | :-------------------------------------------------- |
@@ -40,10 +40,10 @@ Returns `202 Accepted` response code.
 
 ### Transfer call directly, with no user involvement
 
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -65,8 +65,7 @@ Content-Length: 430
       }
     },
     "languageId": "languageId-value",
-    "region": "region-value",
-    "replacesCallId": "replacesCallId-value"
+    "region": "region-value"
   },
   "clientContext": "clientContext-value"
 }
@@ -74,8 +73,13 @@ Content-Length: 430
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -103,11 +107,11 @@ Content-Type: application/json
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "running",
         "resultInfo": {
           "code": "200",
           "subCode": "transferring"
-        }
+        },
+        "status": "running"
       }
     }
   ]
@@ -137,11 +141,11 @@ Content-Type: application/json
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed",
         "resultInfo": {
           "code": "200",
           "subCode": "transferAccepted"
-        }
+        },
+        "status": "completed"
       }
     }
   ]
@@ -204,15 +208,14 @@ Content-Type: application/json
       }
     },
     "languageId": "en-US",
-    "region": "westus",
-    "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
+    "region": "westus"
   }
 }
 ```
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 ```http
 HTTP/1.1 202 Accepted
@@ -241,11 +244,11 @@ Content-Type: application/json
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "running",
         "resultInfo": {
           "code": "200",
           "subCode": "transferring"
-        }
+        },
+        "status": "running"
       }
     }
   ]
@@ -275,11 +278,11 @@ Content-Type: application/json
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed",
         "resultInfo": {
           "code": "200",
           "subCode": "transferAccepted"
-        }
+        },
+        "status": "completed"
       }
     }
   ]

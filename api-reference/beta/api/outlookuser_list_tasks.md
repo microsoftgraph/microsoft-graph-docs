@@ -9,7 +9,7 @@ You can use the `Prefer: outlook.timezone` header to have all the date-related p
 different than UTC. See an [example](outlooktask_get.md#example-2) for getting a single task. You can apply the header similarly to get multiple tasks. 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

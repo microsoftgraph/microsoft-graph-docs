@@ -14,15 +14,19 @@ The following table lists the three scenarios where you can get an open extensio
 
 ## Permissions
 
-One of the following permissions is required to call this API, depending on the resource that contains the extension. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+Depending on the resource that contains the extension and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
-|**Supported resource**|**Permission**|**Supported resource**|**Permission** |
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| [Administrative unit](../resources/administrativeunit.md) | Directory.Read.All | [Device](../resources/device.md) | Directory.Read.All |
-| [Event](../resources/event.md) | Calendars.Read | [Group](../resources/group.md) | Group.Read.All |
-| [Group event](../resources/event.md) | Group.Read.All | [Group post](../resources/post.md) | Group.Read.All |
-| [Message](../resources/message.md) | Mail.Read | [Organization](../resources/organization.md) | Directory.Read.All |
-| [Personal contact](../resources/contact.md) | Contacts.Read | [User](../resources/user.md) | User.Read.All |
+| [device](../resources/device.md) | Directory.Read.All | Not supported | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
+| [group event](../resources/event.md) | Group.Read.All | Not supported | Not supported |
+| [group post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
+| [organization](../resources/organization.md) | User.Read | Not supported | Not supported |
+| [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
 
 ## HTTP request
 

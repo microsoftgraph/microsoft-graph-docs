@@ -4,7 +4,7 @@
 
 Retrieve the properties and relationships of a **riskyUsers** object.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -55,12 +55,9 @@ HTTP/1.1 200 OK
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
   "isGuest": "true",
   "isDeleted": "true",
-  "risk": {
-    "stateDetail": "adminConfirmedSigninCompromised",
-    "riskLevelAggregated": "high",
-    "riskLevelDuringSignIn": "none",
-    "state": "atRisk"
-  },
+  "riskDetail": "adminConfirmedSigninCompromised",
+  "riskLevel": "high",
+  "riskState": "atRisk"
   "userDisplayName": "Jon Doe",
   "userPrincipalName": "jon@contoso.com"
 }

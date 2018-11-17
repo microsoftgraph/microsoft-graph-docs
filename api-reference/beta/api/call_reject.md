@@ -5,7 +5,7 @@
 Reject an incoming call.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 | Permission type | Permissions (from least to most privileged)                |
 | :-------------- | :--------------------------------------------------------- |
@@ -33,7 +33,7 @@ In the request body, provide a JSON object with the following parameters.
 |reason|String|The rejection reason.|
 
 ## Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ```http
 Returns `202 Accepted` response code
@@ -96,7 +96,7 @@ Content-Type: application/json
 ```
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",

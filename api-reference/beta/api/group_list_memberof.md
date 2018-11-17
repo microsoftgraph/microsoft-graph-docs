@@ -1,13 +1,14 @@
-# List memberOf
+# List group memberOf
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get groups and administrative units that the group is a direct member of. 
+Get groups and administrative units that the group is a direct member of.
 
 This operation is not transitive. Unlike getting a user's Office 365 Groups, this returns all types of groups, not just Office 365 Groups. 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -22,7 +23,7 @@ GET /groups/{id}/memberOf
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query_parameters) to help customize the response.
 
 ## Request headers
 | Name       | Type | Description|
@@ -36,7 +37,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 
 ## Example
-#### Request
+
+### Request
+
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -46,7 +49,8 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/groups/{id}/memberOf
 ```
 
-#### Response
+### Response
+
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {

@@ -17,7 +17,7 @@ SharePoint permission levels set on an item are returned with an 'SP' prefix. Fo
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -39,7 +39,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## Optional query parameters
 
-This method support the [$select query parameter](../../../concepts/query_parameters.md) to shape the response.
+This method support the [$select query parameter](/graph/query_parameters) to shape the response.
 
 ## Response
 
@@ -93,7 +93,7 @@ Permissions with a [**invitation**](../resources/sharinginvitation.md) facet rep
 Read the [Error Responses][error-response] topic for more information about
 how errors are returned.
 
-[error-response]: ../../../concepts/errors.md
+[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",

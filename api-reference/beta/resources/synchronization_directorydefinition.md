@@ -16,7 +16,6 @@ Directory definitions are updated as part of the [synchronization schema](synchr
 |metadata       |metadataEntry collection    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
 |name           |String     |Name of the directory. Must be unique within the [synchronization schema](synchronization_synchronizationschema.md). Not nullable.|
 |objects        |[objectDefinition](synchronization_objectdefinition.md) collection    |Collection of objects supported by the directory.|
-|readOnly       |Boolean   |Indicates if the directory definition may be altered. |
 
 ## JSON representation
 
@@ -244,8 +243,7 @@ The following is a JSON representation of the resource.
             "name": "User"
         }
     ],
-    "metadata": [],
-    "readOnly": true
+    "metadata": []
 }
 ```
 

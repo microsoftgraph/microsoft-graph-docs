@@ -5,7 +5,7 @@
 Retrieve the properties and relationships of the specified [team](../resources/team.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -20,7 +20,7 @@ GET /teams/{id}
 ```
 
 ## Optional query parameters
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+This method supports the $select and $expand [OData query parameters](/graph/query_parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -32,7 +32,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [team](../resources/team.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [team](../resources/team.md) object in the response body.
 ## Example
 #### Request
 The following is an example of the request.
@@ -44,7 +44,9 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/teams/{id}
 ```
 #### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -56,6 +58,7 @@ Content-type: application/json
 Content-length: 401
 
 {
+  "isArchived" : false,
   "memberSettings": {
     "allowCreateUpdateChannels": true,
     "allowDeleteChannels": true,

@@ -7,7 +7,7 @@ Creates an online meeting on behalf of a user specified in the request body.
 > **Note**: The meeting does not show on the user's calendar.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -36,7 +36,7 @@ If successful, this method returns `201 Created` response code and an [onlineMee
 ## Example
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -58,7 +58,7 @@ Content-Length: 1553
       },
     }
   },
-  "startTime": "2018-03-19T09:46:02Z",
+  "startDateTime": "2018-03-19T09:46:02Z",
   "subject": "subject-value"
 }
 ```
@@ -88,16 +88,16 @@ Content-Length: 1574
     "leaderPasscode": null,
     "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
   },
-  "canceledTime": "2018-03-19T09:46:02Z",
+  "canceledDateTime": "2018-03-19T09:46:02Z",
   "chatInfo": {
     "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
     "messageId": "0",
     "replyChainMessageId": "0"
   },
-  "creationTime": "2018-03-19T09:46:02Z",
-  "endTime": "2018-03-19T09:46:02Z",
+  "creationDateTime": "2018-03-19T09:46:02Z",
+  "endDateTime": "2018-03-19T09:46:02Z",
   "entryExitAnnouncement": true,
-  "expirationTime": "2018-03-19T09:46:02Z",
+  "expirationDateTime": "2018-03-19T09:46:02Z",
   "id": "013448345",
   "isCancelled": false,
   "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
@@ -114,7 +114,7 @@ Content-Length: 1574
       "upn": "upn-value"
     }
   },
-  "startTime": "2018-03-19T09:46:02Z",
+  "startDateTime": "2018-03-19T09:46:02Z",
   "subject": "Quarterly sales numbers"
 }
 ```

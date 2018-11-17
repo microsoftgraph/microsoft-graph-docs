@@ -2,10 +2,10 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new **audioRoutingGroup*.
+Create a new **audioRoutingGroup**.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -36,7 +36,7 @@ If successful, this method returns `200 OK` response code and [audioRoutingGroup
 ### Example 1: One-to-one audio routing group
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -63,7 +63,7 @@ In the request body, supply a JSON representation of [audioRoutingGroup](../reso
 
 ##### Response
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -89,7 +89,7 @@ Content-Length: 233
 ### Example 2: Multicast audioRoutingGroup
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
@@ -121,7 +121,7 @@ In the request body, supply a JSON representation of [audioRoutingGroup](../reso
 
 ##### Response
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 ```http
 HTTP/1.1 200 OK

@@ -1,16 +1,15 @@
-# chatReaction resource type
+# chatMessageReaction resource type
 
-Represents a reaction to a [chatMessage](chatMessage.md) entity. 
+Represents a reaction to a [chatMessage](chatmessage.md) entity. 
 
-An entity of type `chatReaction` is returned as part of the [Get channel messages](../api/channel_get_message.md) API, as a part of [chatMessage](chatMessage.md) entity.
+An entity of type `chatMessageReaction` is returned as part of the [Get channel messages](../api/channel_get_message.md) API, as a part of [chatMessage](chatmessage.md) entity.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|string| The type of reaction. Planned values include: <br><ul><li>Like - Like a message, content is blank in this case.</li><li>Emoji - Emoji reaction. Content is set to unicode value of the emoji.</li><li>Label - Content is set to the string in the label.</li></ul>|
-|user|participanInfo|The user who reacted to the message.|
+|reactionType|string| The type of reaction. Planned values include: <br><ul><li>Like - Like a message, content is blank in this case.</li><li>Emoji - Emoji reaction. Content is set to unicode value of the emoji.</li><li>Label - Content is set to the string in the label.</li></ul>|
 |createdDateTime|dateTimeOffset|UTC timestamp of the root message in ISO-8601 format.|
-|content|string|Unicode emoji or the string value in the case of a label.|
+|user|identitySet|The user who reacted to the message.|
 
 ## JSON representation
 
@@ -21,15 +20,15 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
     "content"
   ],
-  "@odata.type": "microsoft.graph.chatReaction"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.chatMessageReaction"
 }-->
 
 ```json
 {
-  "type": "string ",
-  "reactedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "reactionType": "string ",
   "createdDateTime": "string (timestamp)",
-  "content": "string"
+  "user": {"@odata.type": "microsoft.graph.identitySet"}
 }
 
 ```

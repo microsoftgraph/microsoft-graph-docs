@@ -34,7 +34,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "posts"
   ],
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.chatThread"
 }-->
 
