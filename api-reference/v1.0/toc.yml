@@ -60,7 +60,7 @@ items:
     href: overview.md
     expanded: true
     items:
-     - name: User
+    - name: User
       href: resources/user.md
       items:
       - name: List users
