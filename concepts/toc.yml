@@ -1,5 +1,5 @@
-name: Graph Docs
-items:
+  name: Graph Docs
+  items:
   - name: Microsoft Graph
     href: overview.md
     expanded: true
