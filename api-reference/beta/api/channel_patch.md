@@ -4,6 +4,8 @@
 
 Update the properties of the specified [channel](../resources/channel.md).
 
+> **Note**: There is a known issue with application permissions and this API. For details, see the [known issues list](../../../concepts/known_issues.md#application-permissions).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 

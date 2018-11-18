@@ -1,4 +1,4 @@
-# managedAppConfiguration resource type
+﻿# managedAppConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -27,12 +27,12 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.managedAppPolicy",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppConfiguration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppConfiguration",
@@ -51,11 +51,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
 
 
 

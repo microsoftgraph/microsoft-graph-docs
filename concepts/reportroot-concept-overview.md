@@ -32,5 +32,5 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-* Explore the APIs in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+* Explore the APIs in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 * Learn more about how to [use the reports REST API](../api-reference/v1.0/resources/report.md).

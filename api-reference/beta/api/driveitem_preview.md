@@ -1,10 +1,12 @@
-# Embeddable file previews
+# driveItem: preview
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-This action allows you to obtain short-lived embeddable URLs for an item.
+This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview.
 
-If you wish to obtain long-lived embeddable links, use the [createLink][] API instead.
+If you want to obtain long-lived embeddable links, use the [createLink][] API instead.
+
+> **Note:** The **preview** action is currently only available on SharePoint and OneDrive for Business.
 
 [createLink]: driveItem_createLink.md
 
@@ -17,7 +19,7 @@ To learn more, including how to choose permissions, see [Permissions](../../../c
 |:---------------------------------------|:-------------------------------------------
 | Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
 | Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.ReadWrite.All
-| Application                            | n/a
+| Application                            | Not supported.
 
 ## HTTP request
 
@@ -32,7 +34,7 @@ POST /users/{userId}/drive/items/{itemId}/preview
 POST /shares/{shareId}/driveItem/preview
 ```
 
-### Request body
+## Request body
 
 The body of the request defines properties of the embeddable URL your application is requesting.
 The request should be a JSON object with the following properties.
@@ -45,7 +47,7 @@ The request should be a JSON object with the following properties.
 | page        | string/number | Optional. Page number of document to start at, if applicable. Specified as string for future use cases around file types such as ZIP.
 | zoom        | number        | Optional. Zoom level to start at, if applicable.
 
-### Response
+## Response
 
 ```json
 {
@@ -63,7 +65,7 @@ The response will be a JSON object containing the following properties:
 | postUrl        | string | URL suitable for embedding using HTTP POST (form post, JS, etc.)
 | postParameters | string | POST parameters to include if using postUrl
 
-Either getUrl, postUrl, or both may be returned depending on the current state of embed support for the specified options.
+Either getUrl, postUrl, or both might be returned depending on the current state of embed support for the specified options.
 
 postParameters is a string formatted as `application/x-www-form-urlencoded`, and if performing a POST to the postUrl the content-type should be set accordingly. For example:
 ```
@@ -79,20 +81,20 @@ The following values are allowed for the **viewer** parameter.
 
 | Type value | Description
 |:-----------|:----------------------------------------------------------------
-| `auto`     | Chooses an appropriate app for rendering the file. In most cases this will use the `onedrive` previewer, but may vary by file type.
+| (null)     | Chooses an appropriate app for rendering the file. In most cases this will use the `onedrive` previewer, but may vary by file type.
 | `onedrive` | Use the OneDrive previewer app to render the file.
 | `office`   | Use the WAC (Office online) to render the file. Only valid for Office documents.
 
-### Chrome vs Chromeless
+### Chrome vs chromeless
 
-If 'chromeless' is true, the preview will be a bare rendering of the file.
+If `chromeless` is true, the preview will be a bare rendering of the file.
 Otherwise, there may be additional toolbars/buttons displayed for interacting with the document/view.
 
-### View/Edit
+### View/edit
 
-If 'edit' is true, the document can be modified by user interaction with the embedded preview.
+If `allowEdit` is true, the document can be modified by user interaction with the embedded preview.
 This capability may not be available for all preview apps or file types.
 
-### Page/Zoom
+### Page/zoom
 
-The 'page' and 'zoom' options may not be available for all preview apps, but will be applied if the preview app supports it.
+The `page` and `zoom` options might not be available for all preview apps, but will be applied if the preview app supports it.

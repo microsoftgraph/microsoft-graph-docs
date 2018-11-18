@@ -21,8 +21,3 @@ Windows 10 Edition type.
 
 
 
-
-
-
-
-

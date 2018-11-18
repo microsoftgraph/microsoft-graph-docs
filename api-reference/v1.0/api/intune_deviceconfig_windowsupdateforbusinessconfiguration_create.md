@@ -65,11 +65,10 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 974
+Content-length: 910
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -127,11 +126,6 @@ Content-Length: 1082
   "businessReadyUpdatesOnly": "all"
 }
 ```
-
-
-
-
-
 
 
 

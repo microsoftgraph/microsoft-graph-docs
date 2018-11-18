@@ -145,7 +145,7 @@ Content-length: 1977
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": null,
-  "businessHomePage": "http://www.contoso.com",
+  "businessHomePage": "https://www.contoso.com",
   "assistantName": null,
   "manager": null,
   "homePhones": [],

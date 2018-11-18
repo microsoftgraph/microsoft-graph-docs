@@ -53,9 +53,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 Content-type: application/json
-Content-length: 464
+Content-length: 541
 
 {
+  "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "orderIdentifier": "Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
@@ -93,11 +94,6 @@ Content-Length: 590
   }
 }
 ```
-
-
-
-
-
 
 
 

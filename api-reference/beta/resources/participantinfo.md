@@ -14,7 +14,7 @@ Contains additional properties about the participant identity
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and an updated [enro
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+PATCH https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 Content-type: application/json
 Content-length: 440
 
@@ -95,7 +95,6 @@ Content-Length: 558
   "failureReason": "Failure Reason value"
 }
 ```
-
 
 
 

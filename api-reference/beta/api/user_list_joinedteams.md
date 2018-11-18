@@ -25,8 +25,10 @@ GET /me/joinedTeams
 or
 GET /users/{id}/joinedTeams
 ```
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -72,7 +74,7 @@ Content-length: 55
 ```
 
 ## See also
-[List all teams](team_list_all_teams.md)
+[List all teams](../../../concepts/teams_list_all_teams.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

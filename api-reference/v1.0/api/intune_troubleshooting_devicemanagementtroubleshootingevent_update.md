@@ -47,7 +47,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+PATCH https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 Content-type: application/json
 Content-length: 104
 
@@ -71,7 +71,6 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
-
 
 
 

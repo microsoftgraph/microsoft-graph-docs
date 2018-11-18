@@ -105,7 +105,7 @@ After an application is granted permissions, everyone with access to the applica
 
 To assign roles to users:
 
-- Sign in to the [azure portal](https://portal.azure.com) (http://portal.azure.com).
+- Sign in to the [azure portal](https://portal.azure.com) (https://portal.azure.com).
 - In the menu, select **Azure Active Directory** > **Users**.
 - Select the name of the user.
 - Select **Manage** > **Directory role**.
@@ -117,7 +117,7 @@ To assign roles to users:
 To create an authentication code, you'll need:
 
 - **Application ID** - The application ID from application registration portal.
-- **Redirect URL** - The URL where the authentication response from Azure AD is sent. To start, you can use http://localhost or the test client web app homepage.
+- **Redirect URL** - The URL where the authentication response from Azure AD is sent. To start, you can use https://localhost or the test client web app homepage.
 - **Application Key** (optional) - The key of the application. This applies when you're developing an application that will use application-only authentication code (that is, will not support user delegated authentication).
 
 The following table lists resources that you can use to create an authentication code.
@@ -125,7 +125,7 @@ The following table lists resources that you can use to create an authentication
 |**Type of application**|**Authentication library**|
 |------------------------|----------------------------|
 |[Desktop apps - iOS](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Microsoft Authentication Library Preview for iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[Desktop apps - Android](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](http://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|[Desktop apps - Android](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
 |[Desktop apps - .Net](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
 |[Web apps - JavaScript SPA](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Microsoft Authentication Library for JavaScript Preview](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
 |[Web apps - .NET Web Server](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|

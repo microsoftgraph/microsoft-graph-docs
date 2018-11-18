@@ -88,7 +88,7 @@ Contains a non-contributing, nested div.
 > The div's content was moved to the parent div and the nested `<div>` tags have been removed. The div would have been preserved if it defined any semantic information, such as a **data-id** (example: `<div data-id="keep-me">`).
 
 ```html
-<html htmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html htmlns="https://www.w3.org/1999/xhtml" lang="en-US">
     <head>
         <title>Page Title</title>
     </head>
@@ -112,10 +112,10 @@ Images on OneNote pages are represented by **img** elements. An **img** element 
 |:------|:------|
 | alt | The supplied alt text for the image. |
 | data-id | A reference for the element.<br/><br/>Used to [update page content](onenote_update_page.md). |
-| data-render-src |Either **data-render-src** or **src** is required.<br/><br/>The webpage to render as a bit-mapped image on the OneNote page:<br/><br/> - `data-render-src="http://..."` for a public URL.<br/><br/> - `data-render-src="name:BlockName"` for an image part in the "Presentation" block of a [multipart request](../api-reference/v1.0/api/section_post_pages.md#example).<br/><br/>This method is useful when the webpage is more complex than the OneNote page can faithfully render, or when the page requires login credentials.|
+| data-render-src |Either **data-render-src** or **src** is required.<br/><br/>The webpage to render as a bit-mapped image on the OneNote page:<br/><br/> - `data-render-src="https://..."` for a public URL.<br/><br/> - `data-render-src="name:BlockName"` for an image part in the "Presentation" block of a [multipart request](../api-reference/v1.0/api/section_post_pages.md#example).<br/><br/>This method is useful when the webpage is more complex than the OneNote page can faithfully render, or when the page requires login credentials.|
 | data-tag | A [note tag](onenote-note-tags.md) on the element. |
 | style |The position and size properties for the image: **position** (**absolute** only), **left**, **top**, **width**, and **height**.<br/><br/>Size can be set on any image.<br/><br/>Position properties are used to create an [absolute positioned](onenote-abs-pos.md) image, only if the image is a direct child of the body when the body sets `data-absolute-enabled="true"`.<br/><br/>Example: `<img style="position:absolute;width:360px;top:350px;left:300px" ... />`<br/><br/>In the output HTML, the image size is returned separately in **width** and **height** attributes. |
-| src |Either **src** or **data-render-src** is required.<br/><br/>The image to render on the OneNote page:<br/><br/>- `src="http://..."` for a URL to a publicly available image on the Internet.<br/><br/> - `src="name:BlockName"` for a named part in a multipart request that represents the image.|
+| src |Either **src** or **data-render-src** is required.<br/><br/>The image to render on the OneNote page:<br/><br/>- `src="https://..."` for a URL to a publicly available image on the Internet.<br/><br/> - `src="name:BlockName"` for a named part in a multipart request that represents the image.|
 | width, height | The width or height of the image, in pixels but without the px. Example: `width="400"` |
  
 > **Note:** 
@@ -577,10 +577,10 @@ This is the input HTML sent in the message body to create the page.
                 <td>Command Module Pilot</td>
             </tr>
         </table>
-        <img alt="Apollo 11 commemorative stamp." src="http://upload.wikimedia.org/wikipedia/commons/a/a4/First_Man_on_Moon_1969_Issue-10c.jpg"  width="400"/>
+        <img alt="Apollo 11 commemorative stamp." src="https://upload.wikimedia.org/wikipedia/commons/a/a4/First_Man_on_Moon_1969_Issue-10c.jpg"  width="400"/>
         <p>References:</p>
-        <p><a href="http://en.wikipedia.org/wiki/Apollo_11">http://en.wikipedia.org/wiki/Apollo_11</a></p>
-        <p><a href="http://www.nasa.gov/mission_pages/apollo/missions/apollo11.html">http://www.nasa.gov/mission_pages/apollo/missions/apollo11.html</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Apollo_11">https://en.wikipedia.org/wiki/Apollo_11</a></p>
+        <p><a href="https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html">https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html</a></p>
     </body>
 </html>
 ``` 
@@ -593,7 +593,7 @@ This is the output HTML that Microsoft Graph returns when you [get page content]
 > When you [create a page](onenote-create-page.md) or [get page metadata](../api-reference/v1.0/api/page_get.md), the API returns the *content* endpoint URL of the page in the **contentUrl** property.
 
 ```html
-<html htmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html htmlns="https://www.w3.org/1999/xhtml" lang="en-US">
     <head>
         <title>Sample Study Notes</title>
     </head>
@@ -621,8 +621,8 @@ This is the output HTML that Microsoft Graph returns when you [get page content]
             <img alt="Apollo 11 commemorative stamp." width="400" height="248" src="https://graph.microsoft.com/v1.0/me/onenote/resources/0-f717b5fa5eaa454da7ecdf72a8c137fe!1-73DBAF9B7E5C4B4C!10456/$value"
                  data-src-type="image/jpeg" data-fullres-src="https://graph.microsoft.com/v1.0/me/onenote/resources/0-f717b5fa5eaa454da7ecdf72a8c137fe!1-73DBAF9B7E5C4B4C!10456/$value" data-fullres-src-type="image/jpeg" />
             <p>References:</p>
-            <p><a href="http://en.wikipedia.org/wiki/Apollo_11">http://en.wikipedia.org/wiki/Apollo_11</a></p>
-            <p><a href="http://www.nasa.gov/mission_pages/apollo/missions/apollo11.html">http://www.nasa.gov/mission_pages/apollo/missions/apollo11.html</a></p>
+            <p><a href="https://en.wikipedia.org/wiki/Apollo_11">https://en.wikipedia.org/wiki/Apollo_11</a></p>
+            <p><a href="https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html">https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html</a></p>
         </div>
     </body>
 </html>

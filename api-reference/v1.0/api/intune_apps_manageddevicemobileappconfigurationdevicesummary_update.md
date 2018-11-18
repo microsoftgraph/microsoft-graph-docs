@@ -54,9 +54,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatusSummary
 Content-type: application/json
-Content-length: 212
+Content-length: 299
 
 {
+  "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary",
   "pendingCount": 12,
   "notApplicableCount": 2,
   "successCount": 12,
@@ -86,11 +87,6 @@ Content-Length: 348
   "configurationVersion": 4
 }
 ```
-
-
-
-
-
 
 
 

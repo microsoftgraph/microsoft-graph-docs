@@ -8,7 +8,7 @@ The education APIs include rostering resources and assignments resources that yo
 
 ## Authorization
 
-To call the education APIs in Microsoft Graph, your app will need to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview). Your app will also need the appropriate permissions. For more information, see [Education permissions](../../../concepts/permissions_reference.md#education-permissions). 
+To call the education APIs in Microsoft Graph, your app will need to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Your app will also need the appropriate permissions. For more information, see [Education permissions](../../../concepts/permissions_reference.md#education-permissions). 
 
 ### App permissions to enable school IT admins to consent 
 
@@ -114,5 +114,5 @@ The school data sync management APIs support the following scenarios:
 Use the Microsoft Graph education APIs to build education solutions that access student assignments and school rosters. To learn more:
 
 - Explore the resources and methods that are most helpful to your scenario.
-- Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 

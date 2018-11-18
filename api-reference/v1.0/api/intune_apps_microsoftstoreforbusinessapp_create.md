@@ -65,7 +65,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 833
+Content-length: 769
 
 {
   "@odata.type": "#microsoft.graph.microsoftStoreForBusinessApp",
@@ -77,7 +77,6 @@ Content-length: 833
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "isFeatured": true,
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "informationUrl": "https://example.com/informationUrl/",
@@ -127,11 +126,6 @@ Content-Length: 941
   "packageIdentityName": "Package Identity Name value"
 }
 ```
-
-
-
-
-
 
 
 

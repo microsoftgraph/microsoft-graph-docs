@@ -66,8 +66,8 @@ Content-type: application/json
 Content-length: 602
 
 {
+  "@odata.type": "#microsoft.graph.windows81CompliancePolicy",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "passwordRequired": true,
@@ -112,11 +112,6 @@ Content-Length: 774
   "storageRequireEncryption": true
 }
 ```
-
-
-
-
-
 
 
 

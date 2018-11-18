@@ -52,9 +52,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 625
+Content-length: 685
 
 {
+  "@odata.type": "#microsoft.graph.managedDeviceOverview",
   "enrolledDeviceCount": 3,
   "mdmEnrolledCount": 0,
   "dualEnrolledDeviceCount": 7,
@@ -110,11 +111,6 @@ Content-Length: 734
   }
 }
 ```
-
-
-
-
-
 
 
 

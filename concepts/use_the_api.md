@@ -74,4 +74,4 @@ For more information about query parameters, see [Customize responses](query_par
 
 ## Next steps
 
-You're ready to get up and running with Microsoft Graph. To learn more, go to the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to try out some requests, try the [Quick Start](https://developer.microsoft.com/en-us/graph/quick-start), or get started using one of our [SDKs and code samples](https://developer.microsoft.com/en-us/graph/code-samples-and-sdks).
+You're ready to get up and running with Microsoft Graph. To learn more, go to the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out some requests, try the [Quick Start](https://developer.microsoft.com/graph/quick-start), or get started using one of our [SDKs and code samples](https://developer.microsoft.com/graph/code-samples-and-sdks).

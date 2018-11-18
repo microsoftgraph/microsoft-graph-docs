@@ -1,4 +1,4 @@
-﻿# Get access tokens to call Microsoft Graph
+# Get access tokens to call Microsoft Graph
 
 To call Microsoft Graph, your app must acquire an access token from Azure Active Directory (Azure AD), Microsoft's cloud identity service. The access token contains information (or claims) about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To get an access token, your app must be able to authenticate with Azure AD and be authorized by either a user or an administrator for access to the Microsoft Graph resources it needs. 
 
@@ -141,11 +141,11 @@ For more information about differences between the Azure AD v2.0 endpoint and th
 
 >**Important**
 >
->**Before making a decision about which endpoint to use when developing an app for production, consult [Should I use the v2.0 endpoint?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations).**
+>**Before you make a decision about which endpoint to use when developing an app for production, see [Should I use the v2.0 endpoint?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations).**
 
 ## Next steps
 
-Once you've registered your app, you're ready to get started!
+After you've registered your app, you're ready to get started!
 
 - For quick steps on getting an access token for apps that call Microsoft Graph on behalf of a user, see [Get access on behalf of users](auth_v2_user.md).
 - For quick steps on getting an access token for apps that call Microsoft Graph without a user, see [Get access without a user](auth_v2_service.md).
@@ -155,13 +155,13 @@ Once you've registered your app, you're ready to get started!
 
 If you're ready to jump into code, you can use the following resources to help you implement authentication and authorization with Azure AD in your app.
 
-### Microsoft Graph Connect samples 
+### Microsoft Graph training and samples
+To help you get started quickly, we’ve created a series of training modules and other resources that show you how to authenticate and use the API on a variety of platforms. 
 
-Microsoft publishes Connect samples for Microsoft Graph for a wide variety of platforms, including: Android, Angular.JS, ASP.NET, iOS (Obj-C and Swift), Node.JS, PHP, Python, Ruby, UWP, and Xamarin. You can use these samples to examine code that uses various authentication libraries to get tokens from Azure AD. Currently, most samples use third-party authentication libraries; however, the ASP.NET and UWP samples use Microsoft libraries.
+- Use the [Get started](https://developer.microsoft.com/en-us/graph/get-started) page to find the libraries, samples, training content, and other resources for your favorite platform. 
+- To get running quickly with a preconfigured sample for your platform, see the [Microsoft Graph Quick Start](https://developer.microsoft.com/en-us/graph/quick-start).
+- See our [Microsoft Graph samples](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sample&type=&language=) on GitHub.
 
-- The [Build your first app](get-started.md) section contains detailed articles that show you how to create Connect apps using the Azure AD v2.0 endpoint, and covers the authentication libraries used on each platform. Available samples are listed by platform and authentication endpoint.
-- To quickly get a running sample on your platform of choice, see [Microsoft Graph Quick Start](https://developer.microsoft.com/graph/Quick-Start).
-- Visit the [Microsoft Graph repo](https://github.com/microsoftgraph) on GitHub to see all the samples available for Microsoft Graph. 
 
 ### Azure Active Directory samples and documentation 
 The Azure AD documentation contains articles and samples that specifically focus on authentication and authorization with Azure AD.

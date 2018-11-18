@@ -52,9 +52,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagementPartnerId}
 Content-type: application/json
-Content-length: 178
+Content-length: 248
 
 {
+  "@odata.type": "#microsoft.graph.telecomExpenseManagementPartner",
   "displayName": "Display Name value",
   "url": "Url value",
   "appAuthorized": true,
@@ -80,11 +81,6 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
-
-
-
-
 
 
 

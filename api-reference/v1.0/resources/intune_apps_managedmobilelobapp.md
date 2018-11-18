@@ -1,4 +1,4 @@
-# managedMobileLobApp resource type
+﻿# managedMobileLobApp resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -44,12 +44,12 @@ Inherits from [managedApp](../resources/intune_apps_managedapp.md)
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.managedApp",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedMobileLobApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedMobileLobApp",
@@ -78,11 +78,6 @@ Here is a JSON representation of the resource.
   "size": 1024
 }
 ```
-
-
-
-
-
 
 
 

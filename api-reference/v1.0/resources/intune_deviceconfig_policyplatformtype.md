@@ -17,8 +17,3 @@ Suppoorted platform types for policies.
 
 
 
-
-
-
-
-

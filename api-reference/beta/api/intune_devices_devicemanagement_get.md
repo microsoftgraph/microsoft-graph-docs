@@ -24,7 +24,7 @@ GET /deviceManagement
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2352
+Content-Length: 2702
 
 {
   "value": {
@@ -85,21 +85,24 @@ Content-Length: 2352
         {
           "@odata.type": "microsoft.graph.windowsMalwareStateCount",
           "state": "actionFailed",
-          "deviceCount": 11
+          "deviceCount": 11,
+          "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
         }
       ],
       "malwareExecutionStateSummary": [
         {
           "@odata.type": "microsoft.graph.windowsMalwareExecutionStateCount",
           "executionState": "blocked",
-          "deviceCount": 11
+          "deviceCount": 11,
+          "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
         }
       ],
       "malwareCategorySummary": [
         {
           "@odata.type": "microsoft.graph.windowsMalwareCategoryCount",
           "category": "adware",
-          "deviceCount": 11
+          "deviceCount": 11,
+          "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
         }
       ],
       "malwareNameSummary": [
@@ -107,14 +110,16 @@ Content-Length: 2352
           "@odata.type": "microsoft.graph.windowsMalwareNameCount",
           "malwareIdentifier": "Malware Identifier value",
           "name": "Name value",
-          "deviceCount": 11
+          "deviceCount": 11,
+          "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
         }
       ],
       "osVersionsSummary": [
         {
           "@odata.type": "microsoft.graph.osVersionCount",
           "osVersion": "Os Version value",
-          "deviceCount": 11
+          "deviceCount": 11,
+          "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
         }
       ]
     },
@@ -122,6 +127,8 @@ Content-Length: 2352
   }
 }
 ```
+
+
 
 
 

@@ -85,6 +85,6 @@ The following table lists the common operations for a business in the Bookings A
 
 ## See also
 
-- Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
-- See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph/examples#partners).
+- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 - Learn how to choose [permissions](../../../concepts/permissions_reference.md) in Microsoft Graph.

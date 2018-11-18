@@ -57,9 +57,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}
 Content-type: application/json
-Content-length: 311
+Content-length: 391
 
 {
+  "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
   "setting": "Setting value",
   "settingName": "Setting Name value",
   "platformType": "iOS",
@@ -95,11 +96,6 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
 
 
 

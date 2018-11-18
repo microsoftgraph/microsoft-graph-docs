@@ -122,7 +122,7 @@ Content-Type: application/json
 {
   "width": 100,
   "height": 100,
-  "url": "http://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
+  "url": "https://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
 }
 ```
 

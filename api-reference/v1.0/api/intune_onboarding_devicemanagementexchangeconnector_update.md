@@ -56,9 +56,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 Content-type: application/json
-Content-length: 418
+Content-length: 490
 
 {
+  "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
@@ -92,11 +93,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
-
-
-
-
 
 
 

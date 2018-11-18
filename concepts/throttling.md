@@ -41,4 +41,4 @@ The following resources currently provide a retry-after header:
 - [People and social](../api-reference/beta/resources/social_overview.md)
 - [Drive (OneDrive)](../api-reference/v1.0/resources/drive.md)
 
-For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://msdn.microsoft.com/en-us/library/office/dn589798.aspx).
+For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://msdn.microsoft.com/library/office/dn589798.aspx).

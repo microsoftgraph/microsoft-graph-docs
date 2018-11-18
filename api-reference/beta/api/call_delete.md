@@ -35,7 +35,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 ## Example
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -47,7 +47,7 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}
 
 ##### Response
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

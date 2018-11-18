@@ -22,7 +22,7 @@ GET /deviceManagement/auditEvents/{auditEventId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1535
+Content-Length: 1538
 
 {
   "value": {
@@ -73,7 +73,7 @@ Content-Length: 1535
     "activityType": "Activity Type value",
     "activityOperationType": "Activity Operation Type value",
     "activityResult": "Activity Result value",
-    "correlationId": "<Unknown Primitive Type Edm.Guid>",
+    "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
     "resources": [
       {
         "@odata.type": "microsoft.graph.auditResource",
@@ -94,11 +94,6 @@ Content-Length: 1535
   }
 }
 ```
-
-
-
-
-
 
 
 

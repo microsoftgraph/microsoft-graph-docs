@@ -21,7 +21,8 @@ GET /teams/{id}/channels/{id}
 ```
 
 ## Optional query parameters
-The [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) are not currently supported.
+
+This method supports the $filter, $select, and $expand [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -33,7 +34,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [channel](../resources/channel.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [channel](../resources/channel.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -45,7 +46,9 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

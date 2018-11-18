@@ -33,8 +33,8 @@ The following are some of the most popular requests for working with the Microso
 
 | **Use cases**   | **REST resources** | **Try it in Graph Explorer** |
 |:---------------|:--------|:----------|
-| List alerts | [List alerts](../api/alert_list.md) | [https://graph.microsoft.com/v1.0/security/alerts](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/alerts&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) |
-| Update alerts | [Update alert](../api/alert_update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
+| List alerts | [List alerts](../api/alert_list.md) | [https://graph.microsoft.com/v1.0/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) |
+| Update alerts | [Update alert](../api/alert_update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
 
 You can use Microsoft Graph [webhooks](../../../concepts/webhooks.md) to subscribe to and receive notifications about updates to Microsoft Graph Security entities.
 

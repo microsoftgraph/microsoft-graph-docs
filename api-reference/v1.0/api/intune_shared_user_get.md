@@ -9,9 +9,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 |Delegated (work or school account)| _varies by context_|
-| &nbsp; &nbsp; Devices | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp; &nbsp; Device management | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 | &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
-| &nbsp; &nbsp; On-boarding | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp; &nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; Troubleshooting | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
@@ -26,7 +26,7 @@ GET /users/{usersId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|

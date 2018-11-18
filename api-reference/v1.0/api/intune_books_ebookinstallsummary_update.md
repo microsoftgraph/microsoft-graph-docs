@@ -53,9 +53,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 Content-type: application/json
-Content-length: 178
+Content-length: 236
 
 {
+  "@odata.type": "#microsoft.graph.eBookInstallSummary",
   "installedDeviceCount": 4,
   "failedDeviceCount": 1,
   "notInstalledDeviceCount": 7,
@@ -83,11 +84,6 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
-
-
-
-
-
 
 
 

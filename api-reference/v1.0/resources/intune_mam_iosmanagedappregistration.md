@@ -1,4 +1,4 @@
-# iosManagedAppRegistration resource type
+﻿# iosManagedAppRegistration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -39,12 +39,12 @@ Inherits from [managedAppRegistration](../resources/intune_mam_managedappregistr
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.managedAppRegistration",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosManagedAppRegistration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosManagedAppRegistration",
@@ -61,7 +61,7 @@ Here is a JSON representation of the resource.
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.iosMobileAppIdentifier",
+    "@odata.type": "microsoft.graph.mobileAppIdentifier",
     "bundleId": "String"
   },
   "id": "String (identifier)",
@@ -69,22 +69,12 @@ Here is a JSON representation of the resource.
 }
 ```
 
+
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-
-"Warning: /api-reference/v1.0/resources/intune_mam_androidmanagedappregistration.md/microsoft.graph.androidManagedAppRegistration/appIdentifier:
-      Type mismatch between example and table. Parameter name: appIdentifier; example type: (microsoft.graph.androidMobileAppIdentifier); table type: (microsoft.graph.mobileAppIdentifier)",
-
-"Warning: /api-reference/v1.0/resources/intune_mam_androidmanagedappregistration.md/microsoft.graph.androidManagedAppRegistration/flaggedReasons:
-      Inconsistent types between parameter (String) and table (Object)",
-
-"Warning: /api-reference/v1.0/resources/intune_mam_iosmanagedappregistration.md/microsoft.graph.iosManagedAppRegistration/appIdentifier:
-      Type mismatch between example and table. Parameter name: appIdentifier; example type: (microsoft.graph.iosMobileAppIdentifier); table type: (microsoft.graph.mobileAppIdentifier)",
-
-"Warning: /api-reference/v1.0/resources/intune_mam_iosmanagedappregistration.md/microsoft.graph.iosManagedAppRegistration/flaggedReasons:
+     "Warning: /api-reference/v1.0/resources/intune_mam_iosmanagedappregistration.md/microsoft.graph.iosManagedAppRegistration/flaggedReasons:
       Inconsistent types between parameter (String) and table (Object)"
-
   ],
 }
 -->

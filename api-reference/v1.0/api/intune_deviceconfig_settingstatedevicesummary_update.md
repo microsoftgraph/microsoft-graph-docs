@@ -57,9 +57,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
 Content-type: application/json
-Content-length: 296
+Content-length: 360
 
 {
+  "@odata.type": "#microsoft.graph.settingStateDeviceSummary",
   "settingName": "Setting Name value",
   "instancePath": "Instance Path value",
   "unknownDeviceCount": 2,
@@ -93,11 +94,6 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
 
 
 

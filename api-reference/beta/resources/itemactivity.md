@@ -24,10 +24,12 @@ Currently only available on SharePoint and OneDrive for Business.
 ```json
 {
   "id": "string (identifier)",
+  "access": "microsoft.graph.accessAction",
   "action": {"@odata.type": "microsoft.graph.itemActionSet"},
   "actor": {"@odata.type": "microsoft.graph.identitySet"},
   "driveItem": {"@odata.type": "microsoft.graph.driveItem"},
   "listItem": {"@odata.type": "microsoft.graph.listItem"},
+  "location": {"@odata.type": "microsoft.graph.location"},
   "times": {"@odata.type": "microsoft.graph.itemActivityTimeSet"}
 }
 ```
@@ -37,8 +39,10 @@ Currently only available on SharePoint and OneDrive for Business.
 | Property | Type                    | Description
 |:---------|:------------------------|:----------------------------------------
 | id       | string                  | The unique identifier of the activity. Read-only.
+| access   | [accessAction][]        | An item was accessed.
 | action   | [itemActionSet][]       | Details about the action that took place. Read-only.
 | actor    | [identitySet][]         | Identity of who performed the action. Read-only.
+| location | [location][]            | Physical location where the action was performed. Read-only.
 | times    | [itemActivityTimeSet][] | Details about when the activity took place. Read-only.
 
 [identitySet]: identitySet.md
@@ -74,10 +78,12 @@ New actions may get logged in the future, so make sure your app is tolerant of h
 | share       | [shareAction][]   | An item was shared.
 | version     | [versionAction][] | An item was versioned.
 
+[accessAction]: accessAction.md
 [commentAction]: commentAction.md
 [createAction]: createAction.md
 [deleteAction]: deleteAction.md
 [editAction]: editAction.md
+[location]: location.md
 [mentionAction]: mentionAction.md
 [moveAction]: moveAction.md
 [renameAction]: renameAction.md

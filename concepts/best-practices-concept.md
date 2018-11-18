@@ -83,7 +83,7 @@ By default, unknown members are not returned by Microsoft Graph. If, however, yo
 
 ## Storing data locally
 
-Your application should ideally make calls to Microsoft Graph to retrieve data in real time as necessary. You should only cache or store data locally if required for a specific scenario, and if that use case is covered by your terms of use and privacy policy, and does not violate the [Microsoft Graph terms of use](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use). Your application should also implement proper retention and deletion policies.
+Your application should ideally make calls to Microsoft Graph to retrieve data in real time as necessary. You should only cache or store data locally if required for a specific scenario, and if that use case is covered by your terms of use and privacy policy, and does not violate the [Microsoft Graph terms of use](https://developer.microsoft.com/graph/docs/misc/terms-of-use). Your application should also implement proper retention and deletion policies.
 
 ## Optimizations
 

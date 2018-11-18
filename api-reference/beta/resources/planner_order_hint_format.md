@@ -39,7 +39,7 @@ Finally moving Item 5 between Item 3 and Item 4 would generate:
 4. Item 2 (Order Hint: `'adhg'`)
 5. Item 1 (Order Hint: `'adhg ! !'`)
 
-When these changes to order hint values are sent to the service in patch requests, the service will calculate proper values that keep the order intended by the client. The client can obtain the values immediate if `return=representation` preference is specified in the `PATCH` requests. The values for the case above may look like the following (the actual values may differ). 
+When these changes to order hint values are sent to the service in patch requests, the service will calculate proper values that keep the order intended by the client. The client can obtain the values immediate if the `Prefer: return=representation` preference header is specified in the `PATCH` requests. The values for the case above may look like the following (the actual values may differ). 
 
 1. Item 3 (Order Hint: `'432b'`)
 2. Item 5 (Order Hint: `'6F"#'`)

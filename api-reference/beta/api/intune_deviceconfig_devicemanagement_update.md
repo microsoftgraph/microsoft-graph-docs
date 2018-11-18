@@ -40,6 +40,7 @@ The following table shows the properties that are required when you create the [
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
 |maximumDepTokens|Int32|Maximum number of dep tokens allowed per-tenant.|
 |intuneAccountId|Guid|Intune Account Id for given tenant|
+|legacyPcManangementEnabled|Boolean|The property to enable Non-MDM managed legacy PC management for this account. This property is read-only.|
 
 
 
@@ -52,7 +53,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement
 Content-type: application/json
-Content-length: 375
+Content-length: 414
 
 {
   "settings": {
@@ -64,7 +65,8 @@ Content-length: 375
     "deviceInactivityBeforeRetirementInDay": 5
   },
   "maximumDepTokens": 0,
-  "intuneAccountId": "cf1549a1-49a1-cf15-a149-15cfa14915cf"
+  "intuneAccountId": "cf1549a1-49a1-cf15-a149-15cfa14915cf",
+  "legacyPcManangementEnabled": true
 }
 ```
 
@@ -73,7 +75,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 479
+Content-Length: 518
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
@@ -87,9 +89,12 @@ Content-Length: 479
     "deviceInactivityBeforeRetirementInDay": 5
   },
   "maximumDepTokens": 0,
-  "intuneAccountId": "cf1549a1-49a1-cf15-a149-15cfa14915cf"
+  "intuneAccountId": "cf1549a1-49a1-cf15-a149-15cfa14915cf",
+  "legacyPcManangementEnabled": true
 }
 ```
+
+
 
 
 

@@ -64,9 +64,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}
 Content-type: application/json
-Content-length: 803
+Content-length: 792
 
 {
+  "@odata.type": "#microsoft.graph.iosVppEBook",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -76,10 +77,9 @@ Content-length: 803
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -97,7 +97,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 961
+Content-Length: 964
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -115,7 +115,7 @@ Content-Length: 961
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -127,11 +127,6 @@ Content-Length: 961
   "usedLicenseCount": 0
 }
 ```
-
-
-
-
-
 
 
 

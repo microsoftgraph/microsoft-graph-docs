@@ -21,7 +21,7 @@ GET /applications/{id}/calls/{id}/participants/{id}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Name          | Description               |
@@ -37,7 +37,7 @@ If successful, this method returns a `200 OK` response code and a [participant](
 ## Example
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "get_participant"
@@ -48,7 +48,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
 
 ##### Response
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

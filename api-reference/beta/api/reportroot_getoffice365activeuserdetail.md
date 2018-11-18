@@ -52,7 +52,7 @@ If successful, this method returns a `302 Found` response that redirects to a pr
 
 Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
 
-The CSV file has the following headers for columns.
+The CSV file has the following headers for columns:
 
 - Report Refresh Date
 - User Principal Name
@@ -79,9 +79,27 @@ The CSV file has the following headers for columns.
 - Teams License Assign Date
 - Assigned Products
 
+The following columns are not supported in Microsoft Graph China operated by 21Vianet:
+
+- Has Yammer License
+- Has Teams License
+- Yammer Last Activity Date
+- Teams Last Activity Date
+- Yammer License Assign Date
+- Teams License Assign Date
+
 ### JSON
 
 If successful, this method returns a `200 OK` response code and an **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object in the response body.
+
+The following properties in **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object are not supported in Microsoft Graph China operated by 21Vianet:
+
+- hasYammerLicense
+- hasTeamsLicense
+- yammerLastActivityDate
+- teamsLastActivityDate
+- yammerLicenseAssignDate
+- teamsLicenseAssignDate
 
 The default page size for this request is 200 items.
 

@@ -1,4 +1,4 @@
-# iosVppAppAssignmentSettings resource type
+﻿# iosVppAppAssignmentSettings resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -16,10 +16,11 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune_apps_mobileappas
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosVppAppAssignmentSettings"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosVppAppAssignmentSettings",
@@ -27,11 +28,6 @@ Here is a JSON representation of the resource.
   "vpnConfigurationId": "String"
 }
 ```
-
-
-
-
-
 
 
 

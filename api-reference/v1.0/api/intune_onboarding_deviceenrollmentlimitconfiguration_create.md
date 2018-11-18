@@ -54,14 +54,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 269
+Content-length: 205
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentLimitConfiguration",
   "displayName": "Display Name value",
   "description": "Description value",
   "priority": 8,
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "version": 7,
   "limit": 5
 }
@@ -86,11 +85,6 @@ Content-Length: 377
   "limit": 5
 }
 ```
-
-
-
-
-
 
 
 

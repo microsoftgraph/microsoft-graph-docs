@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3734
+Content-Length: 3680
 
 {
   "value": [
@@ -91,7 +91,6 @@ Content-Length: 3734
       "minimumWipeAppVersion": "Minimum Wipe App Version value",
       "appActionIfDeviceComplianceRequired": "wipe",
       "appActionIfMaximumPinRetriesExceeded": "wipe",
-      "pinRequiredOnLaunchInsteadOfBiometric": true,
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
       "appDataEncryptionType": "afterDeviceRestart",
       "screenCaptureBlocked": true,
@@ -137,6 +136,8 @@ Content-Length: 3734
   ]
 }
 ```
+
+
 
 
 

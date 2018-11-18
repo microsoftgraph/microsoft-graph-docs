@@ -1,4 +1,4 @@
-# managedAppRegistration resource type
+﻿# managedAppRegistration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -37,12 +37,12 @@ The ManagedAppRegistration resource represents the details of an app, with manag
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppRegistration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppRegistration",
@@ -67,9 +67,11 @@ Here is a JSON representation of the resource.
 ```
 
 
-
-
-
-
-
-
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+     "Warning: /api-reference/v1.0/resources/intune_mam_managedappregistration.md/microsoft.graph.managedAppRegistration/flaggedReasons:
+      Inconsistent types between parameter (String) and table (Object)"
+  ],
+}
+-->

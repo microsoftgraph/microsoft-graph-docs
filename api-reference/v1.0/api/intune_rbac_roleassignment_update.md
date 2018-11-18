@@ -50,9 +50,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}
 Content-type: application/json
-Content-length: 140
+Content-length: 193
 
 {
+  "@odata.type": "#microsoft.graph.roleAssignment",
   "displayName": "Display Name value",
   "description": "Description value",
   "resourceScopes": [
@@ -78,11 +79,6 @@ Content-Length: 242
   ]
 }
 ```
-
-
-
-
-
 
 
 

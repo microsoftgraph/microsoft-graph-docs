@@ -1,4 +1,4 @@
-# deviceAndAppManagementRoleAssignment resource type
+﻿# deviceAndAppManagementRoleAssignment resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -31,12 +31,12 @@ Inherits from [roleAssignment](../resources/intune_rbac_roleassignment.md)
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.roleAssignment",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceAndAppManagementRoleAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleAssignment",
@@ -51,11 +51,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
 
 
 

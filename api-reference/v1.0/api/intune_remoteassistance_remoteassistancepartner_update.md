@@ -51,9 +51,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 Content-type: application/json
-Content-length: 204
+Content-length: 266
 
 {
+  "@odata.type": "#microsoft.graph.remoteAssistancePartner",
   "displayName": "Display Name value",
   "onboardingUrl": "https://example.com/onboardingUrl/",
   "onboardingStatus": "onboarding",
@@ -77,11 +78,6 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
-
-
-
-
 
 
 

@@ -58,9 +58,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/{deviceComplianceSettingStateId}
 Content-type: application/json
-Content-length: 450
+Content-length: 517
 
 {
+  "@odata.type": "#microsoft.graph.deviceComplianceSettingState",
   "setting": "Setting value",
   "settingName": "Setting Name value",
   "deviceId": "Device Id value",
@@ -98,11 +99,6 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
-
-
-
-
 
 
 

@@ -18,7 +18,7 @@ In addition, apps must be [properly registered](https://docs.microsoft.com/azure
 GET /auditLogs/directoryAudits/{id}
 ```
 ## Optional query parameters
-This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) for how to use these parameters.
+This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.
 
 ## Request headers
 | Name      |Description|

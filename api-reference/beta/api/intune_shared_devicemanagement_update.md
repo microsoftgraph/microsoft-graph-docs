@@ -24,8 +24,8 @@ Note that the permission vary according to workflow.
 | &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Fencing** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Notification** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; **On-boarding** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; **RBAC** | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Role-based access control (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **Remote access** | DeviceManagementConfiguration.Read.All |
 | &nbsp; &nbsp; **Remote assistance** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Telecom expense management** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -61,6 +61,7 @@ The following table shows the properties that are required when you create the [
 |id|String|Unique identifier for the device.|
 |**Device configuration**|
 |intuneAccountId|GUID|Intune Account ID for given tenant|
+|legacyPcManangementEnabled|Boolean|The property to enable Non-MDM managed legacy PC management for this account. This property is read-only.|
 |maximumDepTokens|Int32|Maximum number of DEP tokens allowed per-tenant.|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
 |**Device management**|
@@ -71,7 +72,7 @@ The following table shows the properties that are required when you create the [
 |subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |subscriptions|[deviceManagementSubscriptions](../resources/intune_devices_devicemanagementsubscriptions.md)|Tenant's Subscription. Possible values are: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune_devices_windowsmalwareoverview.md)|Malware overview for windows devices.|
-|**On-boarding**|
+|**Onboarding**|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
 
 Request body property support varies according to workflow.

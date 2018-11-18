@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1776
+Content-Length: 1865
 
 {
   "value": [
@@ -64,7 +64,9 @@ Content-Length: 1776
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "preSharedKey": "Pre Shared Key value",
       "wifiSecurityType": "wpaPersonal",
+      "meteredConnectionLimit": "fixed",
       "ssid": "Ssid value",
       "networkName": "Network Name value",
       "connectAutomatically": true,
@@ -94,6 +96,8 @@ Content-Length: 1776
   ]
 }
 ```
+
+
 
 
 
