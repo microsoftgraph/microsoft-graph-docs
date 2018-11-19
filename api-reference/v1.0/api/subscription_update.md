@@ -6,7 +6,7 @@ Subscriptions expire after a length of time that varies by resource type. In ord
 
 ## Permissions
 
-The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 | Resource type / Item        | Permission          |
 |-----------------------------|---------------------|

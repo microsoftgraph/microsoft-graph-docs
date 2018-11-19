@@ -10,7 +10,7 @@ Download the contents of the primary stream (file) of a DriveItem. Only driveIte
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -95,7 +95,7 @@ Content-Type: application/octet-stream
 See [Error Responses][error-response] for more info about
 how errors are returned.
 
-[error-response]: ../../../concepts/errors.md
+[error-response]: (/graph/errors)
 
 <!-- {
   "type": "#page.annotation",

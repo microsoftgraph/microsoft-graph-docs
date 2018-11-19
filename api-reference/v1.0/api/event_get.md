@@ -7,9 +7,9 @@ Currently, this operation returns event bodies in only HTML format.
 There are two scenarios where an app can get an event in another user's calendar:
 
 * If the app has application permissions, or,
-* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user. See [details and an example](../../../concepts/outlook-get-shared-events-calendars.md).
+* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-get-shared-events-calendars).
 
-Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
+Since the **event** resource supports [extensions](/graph/extensibility_overview), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
 
 
 ### Support various time zones
@@ -30,7 +30,7 @@ find out the time zone used when the event was created.
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -294,9 +294,9 @@ Content-length: 1992
 
 ## See also
 
-- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to resources using extensions](/graph/extensibility_overview)
+- [Add custom data to users using open extensions](/graph/extensibility_open_users)
+- [Add custom data to groups using schema extensions](/graph/extensibility_schema_groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

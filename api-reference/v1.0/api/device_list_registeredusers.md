@@ -5,7 +5,7 @@ Retrieve a list of users that are registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

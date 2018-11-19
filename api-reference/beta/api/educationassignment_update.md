@@ -5,7 +5,7 @@
 Update the assignment object. Only teachers in the class can do this. Note that you can't use a PATCH request to change the status of an assignment. Use the [publish](../api/educationassignment_publish.md) action to change the assignment status.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,13 +1,13 @@
 # Configuring the built-in tab types in Microsoft Teams
 
-To [create](../api-reference/beta/api/teamstab_add.md) or [configure](../api-reference/beta/api/teamstab_update.md) a Microsoft Teams tab using Microsoft Graph APIs, 
+To [create](/graph/api/teamstab_add?view=graph-rest-beta) or [configure](/graph/api/teamstab_update?view=graph-rest-beta) a Microsoft Teams tab using Microsoft Graph APIs, 
 you need to know the `teamsAppId` of the app, and the
 `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl` to provide for that kind of app.
 This article explains how to get those values for the built-in tab types.
 
 ## Custom tabs
 
-To use Microsoft Graph to configure a tab associated with a [tab provider](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview) that you wrote,
+To use Microsoft Graph to configure a tab associated with a [tab provider](https://docs.microsoft.com/en-us/microsoftteams/platfo(tabs.md)/tabs-overview) that you wrote,
 identify the `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl`
 that the app's [configuration UI provides to Microsoft Teams](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest),
 and pass the same `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl` values to Microsoft Graph.
@@ -36,7 +36,7 @@ For Planner tabs, the teamsAppId is `com.microsoft.teamspace.tab.planner`. The f
 | removeUrl  | string      | Same value as the contentUrl.    |
 | websiteUrl | string      | Same value as the contentUrl.   |
 
-To create a new plan to display in your planner tab, see [create plannerPlan](../api-reference/beta/api/planner_post_plans.md).
+To create a new plan to display in your planner tab, see [create plannerPlan](/graph/api/planner_post_plans?view=graph-rest-beta).
 
 ## Microsoft Stream tabs
 
@@ -93,9 +93,9 @@ For OneNote tabs, the `teamsAppId` is `0d820ecd-def2-4297-adad-78056cde7c78`. Th
 | Property   | Type        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | `{randomGuid}_{notebookId}`, where {randomGuid} is a GUID you generate.                                      |
-| contentUrl | string      | A URL of the form `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, where `{sectionsUrl}`, `{notebookId}`, and `{oneNoteWebUrl}` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md). Slashes must be escaped. {locale} and {tid} are literals. |
-| removeUrl  | string      | A URL of the form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, where `{sectionsUrl}`, `{notebookId}`, and `{oneNoteWebUrl}` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md). Slashes must be escaped. {locale} and {tid} are literals. |
-| websiteUrl | string      | A URL of the form `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}`, where `oneNoteWebUrl` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md) |
+| contentUrl | string      | A URL of the form `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, where `{sectionsUrl}`, `{notebookId}`, and `{oneNoteWebUrl}` can be found in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote_list_notebooks?view=graph-rest-beta). Slashes must be escaped. {locale} and {tid} are literals. |
+| removeUrl  | string      | A URL of the form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, where `{sectionsUrl}`, `{notebookId}`, and `{oneNoteWebUrl}` can be found in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote_list_notebooks?view=graph-rest-beta). Slashes must be escaped. {locale} and {tid} are literals. |
+| websiteUrl | string      | A URL of the form `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}`, where `oneNoteWebUrl` can be found in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote_list_notebooks?view=graph-rest-beta) |
 
 ## Power BI tabs
 

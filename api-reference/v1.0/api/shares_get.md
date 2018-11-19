@@ -12,7 +12,7 @@ To use a sharing URL with this API, your app needs to [transform the URL into a 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -175,7 +175,7 @@ how errors are returned.
 
 * For OneDrive for Business and SharePoint, the Shares API always requires authentication and cannot be used to access anonymously shared content without a user context.
 
-[error-response]: ../../../concepts/errors.md
+[error-response]: (/graph/errors)
 
 <!-- {
   "type": "#page.annotation",

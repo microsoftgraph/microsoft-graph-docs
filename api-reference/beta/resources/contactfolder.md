@@ -4,7 +4,7 @@
 
 A folder that contains contacts.
 
-This resource supports using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
+This resource supports using [delta query](/graph/delta_query_overview) to track incremental additions, deletions, and updates, 
 by providing a [delta](../api/contactfolder_delta.md) function.
 
 
@@ -70,8 +70,8 @@ Here is a JSON representation of the resource
 
 ## See also
 
-- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
-- [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md)
+- [Use delta query to track changes in Microsoft Graph data](/graph/delta_query_overview)
+- [Get incremental changes to messages in a folder](/graph/delta_query_messages)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

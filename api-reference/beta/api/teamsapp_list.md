@@ -24,7 +24,7 @@ GET /appCatalogs/teamsApps
 ```
 
 ## Optional query parameters
-This method supports the $filter, $select, and $expand [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the $filter, $select, and $expand [OData query parameters](/graph/query_parameters) to help customize the response.
 
 ## Request headers
 

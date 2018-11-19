@@ -30,7 +30,7 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 ```
 ## Authorization
 
-For information about the permissions required to work with OneNote APIs, see [Notes permissions](../../../concepts/permissions_reference.md#notes-permissions).
+For information about the permissions required to work with OneNote APIs, see [Notes permissions](/graph/permissions_reference#notes-permissions).
 
 
 ## Relationships

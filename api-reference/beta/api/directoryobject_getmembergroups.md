@@ -5,7 +5,7 @@
 Return all the groups that the specified user, group, service principal or directory object is a member of. This function is transitive.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
