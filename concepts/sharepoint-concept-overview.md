@@ -48,12 +48,12 @@ Looking for the API reference for this service?
 
 Get started with SharePoint in Microsoft Graph by learning more about [working with sites][SharePoint].
 
-[list]: /graph/api/resources/list?view=graph-rest-1.0
-[columns]: /graph/api/resources/columndefinition?view=graph-rest-1.0
-[list type]: /graph/api/resources/listinfo?view=graph-rest-1.0
-[create]: ../api-reference/v1.0/api/list_create.md
-[querying]: ../api-reference/v1.0/api/listitem_get.md
-[drive]: ../api-reference/v1.0/resources/drive.md
+[list] (/graph/api/resources/list?view=graph-rest-1.0)
+[columns] (/graph/api/resources/columndefinition?view=graph-rest-1.0)
+[list type]: (/graph/api/resources/listinfo?view=graph-rest-1.0)
+[create] (/graph/api/list_create?view=graph-rest-1.0)
+[querying] (/graph/api/listitem_get?view=graph-rest-1.0)
+[drive] (/graph/api/resources/drive?view=graph-rest-1.0)
 [OneDrive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
 [SharePoint Framework]: https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview
 [SharePoint Add-ins]: https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins

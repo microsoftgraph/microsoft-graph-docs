@@ -78,4 +78,4 @@ The following is a JSON representation of the resource.
 
 ## See Also
 - [Creating a group with a team](/graph/teams-create-group-and-team)
-- [Teams API Overview](teams_api_overview.md)
+- [Using Teams APIs](teams_api_overview.md)
