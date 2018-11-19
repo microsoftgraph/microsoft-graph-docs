@@ -8,14 +8,14 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 
 | Resource | Methods |
 |:---------------|:--------|
-|[team](../resources/team.md)| [list your teams](../api/user_list_joinedteams.md), [list all teams](../../../concepts/teams_list_all_teams.md), [create](../api/team_put_teams.md), [read](../api/team_get.md), [update](../api/team_update.md), [delete](../../v1.0/api/group_delete.md), [clone](../api/team_clone.md), [archive](../api/team_archive.md), [unarchive](../api/team_unarchive.md) |
+|[team](../resources/team.md)| [list your teams](../api/user_list_joinedteams.md), [list all teams](/graph/teams_list_all_teams), [create](../api/team_put_teams.md), [read](../api/team_get.md), [update](../api/team_update.md), [delete](../../v1.0/api/group_delete.md), [clone](../api/team_clone.md), [archive](../api/team_archive.md), [unarchive](../api/team_unarchive.md) |
 |[group](../resources/group.md)| [add member](../api/group_post_members.md), [remove member](../api/group_delete_members.md), [add owner](../api/group_post_owners.md), [remove owner](../api/group_delete_owners.md), [get files](drive.md), [get notebook](../../v1.0/resources/notebook.md), [get plans](plannergroup.md), [get calendar](event.md) |
 |[channel](../resources/channel.md)|[list](../api/channel_list.md), [create](../api/channel_post.md), [read](../api/channel_get.md), [update](../api/channel_patch.md), [delete](../api/channel_delete.md)|
 |[teamsTab](../resources/teamstab.md) |[list](../api/teamstab_list.md), [create](../api/teamstab_add.md), [read](../api/teamstab_get.md), [update](../api/teamstab_update.md), [delete](../api/teamstab_delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[list](../api/teamsapp_list.md), [publish](../api/teamsapp_publish.md), [update](../api/teamsapp_update.md), [remove](../api/teamsapp_delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [list](../api/teamsappinstallation_list.md), [install](../api/teamsappinstallation_add.md), [upgrade](../api/teamsappinstallation_delete.md), [remove](../api/teamsappinstallation_delete.md) |
-| (Preview) [chatMessage](../../beta/resources/chatmessage.md) and [chatThread](../../beta/resources/chatthread.md) | [list](../../beta/api/channel_list_messages.md), [create](../../beta/api/channel_post_chatthreads.md), [read](../../beta/api/channel_get_message.md) |
-| (Preview) [call](../../beta/resources/call.md) | [answer](../../beta/api/call_answer.md), [reject](../../beta/api/call_reject.md), [redirect](../../beta/api/call_redirect.md), [mute](../../beta/api/call_mute.md), [unmute](../../beta/api/call_unmute.md), [update metadata](../../beta/api/call_updatemetadata.md), [change screen sharing role](../../beta/api/call_changescreensharingrole.md), [list participants](../../beta/api/call_list_participants.md), [invite participants](../../beta/api/participant_invite.md), [mute all participants](../../beta/api/participant_muteall.md) |
+| (Preview) [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) and [chatThread](/graph/api/resources/chatthread?view=graph-rest-beta) | [list](/graph/api/channel_list_messages?view=graph-rest-beta), [create](/graph/api/channel_post_chatthreads?view=graph-rest-beta), [read](/graph/api/channel_get_message?view=graph-rest-beta) |
+| (Preview) [call](/graph/api/resources/call?view=graph-rest-beta) | [answer](/graph/api/call_answer?view=graph-rest-beta), [reject](/graph/api/call_reject?view=graph-rest-beta), [redirect](/graph/api/call_redirect?view=graph-rest-beta), [mute](/graph/api/call_mute?view=graph-rest-beta), [unmute](/graph/api/call_unmute?view=graph-rest-beta), [update metadata](/graph/api/call_updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call_changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call_list_participants?view=graph-rest-beta), [invite participants](/graph/api/participant_invite?view=graph-rest-beta), [mute all participants](/graph/api/participant_muteall?view=graph-rest-beta) |
 
 ## Teams and groups
 
@@ -33,7 +33,7 @@ The following are the differences at the API level between teams and groups:
 - Group conversations are available only to Office 365 groups. This feature is hierarchically represented by the [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md), and [post](../resources/post.md) resources. 
 - The [List joined teams](../api/user_list_joinedteams.md) method applies only to Microsoft Teams.
 - [Calling and online meeting APIs](./calls-api-overview.md) apply only to Microsoft Teams.
-- See also the [known issues](../../../concepts/known_issues.md) for these APIs.
+- See also the [known issues](/graph/known_issues) for these APIs.
 
 >**Note:** If you use the groups API in a [Microsoft Teams app](https://docs.microsoft.com/en-us/microsoftteams/platform/#apps-in-microsoft-teams) rather than in a standalone app - for example as part of a tab or bot running in Microsoft Teams - follow the guidance in the article [Using Microsoft Graph in your Microsoft Teams pages](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/microsoft-graph).
 
@@ -76,4 +76,4 @@ If none of those users are signed in to the Microsoft Teams application/website,
 
 ## See also
 
-[Microsoft Teams API overview](../../../concepts/teams-concept-overview.md)
+[Microsoft Teams API overview](/graph/teams-concept-overview)

@@ -5,7 +5,7 @@
 Retrieve the properties and relationships of a [governanceResource](../resources/governanceresource.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
@@ -22,7 +22,7 @@ GET /privilegedAccess/azureResources/resources/{id}
 ```
 
 ## Optional query parameters
-This method **only** supports  `$select` and `$expand` [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method **only** supports  `$select` and `$expand` [OData Query Parameters](/graph/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

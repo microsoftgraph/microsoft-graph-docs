@@ -63,7 +63,7 @@ To register your application:
     >**Note**: You don't have to be a tenant admin. You will be redirected to the **My applications** list.
 2. Choose **Add an app**, and enter an **Application Name** to create a new application.
 3. On the registration page for the new application, choose **Add Platform** > **Web**. In the **Redirect URL** field, enter the redirect URL.
-4. In the **Microsoft Graph Permissions** section, under **Delegated Permissions**, choose **Add**. In the dialog box, choose the required permissions. For a list of permissions, see [Security permissions](../concepts/permissions_reference.md#security-permissions).
+4. In the **Microsoft Graph Permissions** section, under **Delegated Permissions**, choose **Add**. In the dialog box, choose the required permissions. For a list of permissions, see [Security permissions](permissions_reference.md#security-permissions).
 
     >The Microsoft Graph Security API requires the SecurityEvents.Read.All scope for GET queries, and the SecurityEvents.ReadWrite.All scope for PATCH/POST queries.
 
@@ -75,7 +75,7 @@ Save the following information:
 - Redirect URL
 - List of required permissions
 
-For more information, see [Register your app with the Azure AD v2.0 endpoint](../concepts/auth_register_app_v2.md).
+For more information, see [Register your app with the Azure AD v2.0 endpoint](auth_register_app_v2.md).
 
 ## Grant permissions to an application
 
@@ -131,7 +131,7 @@ The following table lists resources that you can use to create an authentication
 |[Web apps - .NET Web Server](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
 |[Web apps - NodeJS Web App](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
-For applications that don't use any of the existing libraries, see [Get access on behalf of a user](../concepts/auth_v2_user.md).
+For applications that don't use any of the existing libraries, see [Get access on behalf of a user](auth_v2_user.md).
 
 1. Get a code from Azure AD. The query to call contains parameter for Application ID, Redirect URl, and **required permissions**.
 2. Use the code to get an access token.
