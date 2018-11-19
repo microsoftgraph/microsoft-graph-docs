@@ -52,7 +52,7 @@ The following is an example of the request.
   "name": "create_team"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/groups/{id}/team
+PUT https://graph.microsoft.com/v1.0/groups/{id}/team
 Content-type: application/json
 
 {  
