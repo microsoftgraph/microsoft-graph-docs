@@ -4,7 +4,7 @@ The following examples demonstrate how to update properties of the [RangeFormat]
 
 The result of this set of requests is a table with three cells formatted like the top three cells in the image below.
 
-![Excel chart table with three cells whose format, fill, and font properties have been updated.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
+![Excel chart table with three cells whose format, fill, and font properties have been updated.](https://cdn.graph.office.net/prod/GraphDocuments/en-(images/ExcelRangeFormatting.png)
 
 ##### Request
 This request updates the vertical alignment, row height, and column height of the first cell.
