@@ -1,4 +1,4 @@
-﻿# user resource type
+# user resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,9 +6,9 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 
 This resource supports:
 
-- Adding your own data to custom properties as [extensions](../../../concepts/extensibility_overview.md).
-- Subscribing to [change notifications](../../../concepts/webhooks.md).
-- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
+- Adding your own data to custom properties as [extensions](/graph/extensibility_overview).
+- Subscribing to [change notifications](/graph/webhooks).
+- Using [delta query](/graph/delta_query_overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
 ## Methods
 
@@ -64,7 +64,7 @@ This resource supports:
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Schema extensions**| | |
-|[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
+|[Add schema extension values](/graph/extensibility_schema_groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 
 ## Properties
 
@@ -329,9 +329,9 @@ Here is a JSON representation of the resource
 
 ## See also
 
-- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to resources using extensions](/graph/extensibility_overview)
+- [Add custom data to users using open extensions](/graph/extensibility_open_users)
+- [Add custom data to groups using schema extensions](/graph/extensibility_schema_groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

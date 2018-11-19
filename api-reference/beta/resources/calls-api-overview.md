@@ -1,4 +1,4 @@
-﻿# Working with the calls and online meetings API in Microsoft Graph
+# Working with the calls and online meetings API in Microsoft Graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -87,4 +87,4 @@ The Media SDK allows the bot to send and receive audio, video, and video-based s
 
 [Calls and online meetings API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 
-[Known issues](../../../concepts/known_issues.md#Calls-and-online-meetings)
+[Known issues](/graph/known_issues#Calls-and-online-meetings)

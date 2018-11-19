@@ -38,7 +38,7 @@ Here is a JSON representation of the resource
 |id|String| Unique identifier. Read-only.|
 |principalId|String| If consentType is *AllPrincipals* this value is null, and the consent applies to all users in the organization. If consentType is *Principal*, then this property specifies the id of the user that granted consent and applies only for that user. |
 |resourceId|String| Specifies the id of the resource service principal to which access has been granted. |
-|scope|String| Specifies the value of the [scope](../../../concepts/permissions_reference.md) claim that the resource application should expect in the OAuth 2.0 access token. For example, *User.Read* |
+|scope|String| Specifies the value of the [scope](/graph/permissions_reference) claim that the resource application should expect in the OAuth 2.0 access token. For example, *User.Read* |
 |startTime|DateTimeOffset| Currently, the start time value is ignored. |
 
 ## Relationships

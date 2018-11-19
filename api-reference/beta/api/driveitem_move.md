@@ -16,7 +16,7 @@ Your app can combine moving an item to a new container and updating other proper
 Items cannot be moved between [Drives](../resources/drive.md) using this request.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -100,7 +100,7 @@ Content-type: application/json
 See [Error Responses][error-response] for more info about
 how errors are returned.
 
-[error-response]: ../../../concepts/errors.md
+[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",

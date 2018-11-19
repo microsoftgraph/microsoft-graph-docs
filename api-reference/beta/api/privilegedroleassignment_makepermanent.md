@@ -5,7 +5,7 @@
 Make the role assignment as permanent.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 The tenant needs to be registered to PIM. Otherwise, HTTP 403 Forbidden error will be returned.
 

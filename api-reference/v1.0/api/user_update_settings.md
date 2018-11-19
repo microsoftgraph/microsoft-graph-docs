@@ -6,7 +6,7 @@ To get the user current settings, see [current user settings](user_get_settings.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH https://graph.microsoft.com/v1.0/me/settings
 ```
 
-Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](../../../concepts/permissions_reference.md). 
+Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](/graph/permissions_reference). 
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}/settings/

@@ -10,7 +10,7 @@ The [identity protection risk events API](identityprotection_root.md) gives easy
 
 ## See also
 
-- [Why use the security API?](../../../concepts/security-concept-overview.md#why-use-the-security-api-and-connect-with-microsoft-intelligent-security-graph)
+- [Why use the security API?](/graph/security-concept-overview#why-use-the-security-api-and-connect-with-microsoft-intelligent-security-graph)
 - [Use the security API to integrate with Intelligent Security Graph](security-api-overview.md)
-- [Why use Azure AD to protect identities in your organization?](../../../concepts/security-concept-overview.md#why-use-azure-ad-to-protect-identities-in-your-organization)
+- [Why use Azure AD to protect identities in your organization?](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
 - [Use the Azure AD Identity Protection API](identityprotection_root.md)

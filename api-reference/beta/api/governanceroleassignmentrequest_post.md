@@ -18,7 +18,7 @@ Create a role assignment request to represent the operation you want on a role a
 
  
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
@@ -33,7 +33,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 ```
 
 ## Optional query parameters
-This method does **not** support [OData query parameters](../../../concepts/query_parameters.md).
+This method does **not** support [OData query parameters](/graph/query_parameters).
 
 ### Request headers
 | Name       | Description|
