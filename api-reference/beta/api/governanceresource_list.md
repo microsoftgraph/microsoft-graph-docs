@@ -5,7 +5,7 @@
 Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor has access to.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /privilegedAccess/azureResources/resources
 ```
 ## Optional query parameters
-This method supports the [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

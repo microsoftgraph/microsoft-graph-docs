@@ -7,7 +7,7 @@ In the Azure AD [access reviews](../resources/accessreviews_root.md) feature, re
 Note that a recurring access review will not have a `decisions` relationship.  Instead, the caller must navigate the `instance` relationship to find an `accessReview` object for a current or past instance of the access review.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
