@@ -1,4 +1,4 @@
-﻿# Update OneNote page content
+# Update OneNote page content
 
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
 
@@ -32,7 +32,7 @@ The **data-id** and **id** values are used as **target** identifiers for the ele
 Your full request URI will look like this:<br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
 
 
-Learn more about the [service root URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url).
+Learn more about the [service root URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).
 
 
 <a name="message-body"></a>

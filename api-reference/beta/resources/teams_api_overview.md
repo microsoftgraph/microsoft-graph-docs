@@ -8,7 +8,7 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 
 | Resource | Methods |
 |:---------------|:--------|
-|[team](../resources/team.md)| [list your teams](../api/user_list_joinedteams.md), [list all teams](../../../concepts/teams_list_all_teams.md), [create](../api/team_put_teams.md), [read](../api/team_get.md), [update](../api/team_update.md), [delete](../../v1.0/api/group_delete.md), [clone](../api/team_clone.md), [archive](../api/team_archive.md), [unarchive](../api/team_unarchive.md) |
+|[team](../resources/team.md)| [list your teams](../api/user_list_joinedteams.md), [list all teams](/graph/teams_list_all_teams), [create](../api/team_put_teams.md), [read](../api/team_get.md), [update](../api/team_update.md), [delete](../../v1.0/api/group_delete.md), [clone](../api/team_clone.md), [archive](../api/team_archive.md), [unarchive](../api/team_unarchive.md) |
 |[group](../resources/group.md)| [add member](../api/group_post_members.md), [remove member](../api/group_delete_members.md), [add owner](../api/group_post_owners.md), [remove owner](../api/group_delete_owners.md), [get files](drive.md), [get notebook](../../v1.0/resources/notebook.md), [get plans](plannergroup.md), [get calendar](event.md) |
 |[channel](../resources/channel.md)|[list](../api/channel_list.md), [create](../api/channel_post.md), [read](../api/channel_get.md), [update](../api/channel_patch.md), [delete](../api/channel_delete.md)|
 |[teamsTab](../resources/teamstab.md) |[list](../api/teamstab_list.md), [create](../api/teamstab_add.md), [read](../api/teamstab_get.md), [update](../api/teamstab_update.md), [delete](../api/teamstab_delete.md) |
@@ -33,7 +33,7 @@ The following are the differences at the API level between teams and groups:
 - Group conversations are available only to Office 365 groups. This feature is hierarchically represented by the [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md), and [post](../resources/post.md) resources. 
 - The [List joined teams](../api/user_list_joinedteams.md) method applies only to Microsoft Teams.
 - [Calling and online meeting APIs](./calls-api-overview.md) apply only to Microsoft Teams.
-- See also the [known issues](../../../concepts/known_issues.md) for these APIs.
+- See also the [known issues](/graph/known_issues) for these APIs.
 
 >**Note:** If you use the groups API in a [Microsoft Teams app](https://docs.microsoft.com/en-us/microsoftteams/platform/#apps-in-microsoft-teams) rather than in a standalone app - for example as part of a tab or bot running in Microsoft Teams - follow the guidance in the article [Using Microsoft Graph in your Microsoft Teams pages](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/microsoft-graph).
 
@@ -76,4 +76,4 @@ If none of those users are signed in to the Microsoft Teams application/website,
 
 ## See also
 
-[Microsoft Teams API overview](../../../concepts/teams-concept-overview.md)
+[Microsoft Teams API overview](/graph/teams-concept-overview)

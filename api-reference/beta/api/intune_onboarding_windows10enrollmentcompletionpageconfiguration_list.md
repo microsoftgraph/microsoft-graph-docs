@@ -1,4 +1,4 @@
-﻿# List windows10EnrollmentCompletionPageConfigurations
+# List windows10EnrollmentCompletionPageConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@
 
 List properties and relationships of the [windows10EnrollmentCompletionPageConfiguration](../resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration.md) objects.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|

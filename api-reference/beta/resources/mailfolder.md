@@ -4,7 +4,7 @@
 
 A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders.
 
-This resource supports using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates,
+This resource supports using [delta query](/graph/delta_query_overview) to track incremental additions, deletions, and updates,
 by providing a [delta](../api/mailfolder_delta.md) function.
 
 **Well-known folder names**
@@ -128,8 +128,8 @@ The following is a JSON representation of the resource.
 
 ## See also
 
-- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
-- [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md)
+- [Use delta query to track changes in Microsoft Graph data](/graph/delta_query_overview)
+- [Get incremental changes to messages in a folder](/graph/delta_query_messages)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

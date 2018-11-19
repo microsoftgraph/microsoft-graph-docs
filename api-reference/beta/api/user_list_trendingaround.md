@@ -7,7 +7,7 @@ Calculated insight that returns the list of items trending around a user.
 **Note:** This API will be deprecated and replaced by the [Trending API](../resources/insights_trending.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
