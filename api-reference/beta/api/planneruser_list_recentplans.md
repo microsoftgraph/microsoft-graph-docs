@@ -4,7 +4,7 @@
 
 Retrieve a list of [plannerPlans](../resources/plannerPlan.md) recently viewed by a user. You can update recently viewed plans by [updating the plannerUser resource](plannerUser_update.md).
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

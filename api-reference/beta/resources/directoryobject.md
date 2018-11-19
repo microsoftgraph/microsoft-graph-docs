@@ -6,7 +6,7 @@ Represents an Azure Active Directory object. The **directoryObject** type is the
 
 This resource supports:
 
-- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/directoryobject_delta.md) function.
+- Using [delta query](/graph/delta_query_overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/directoryobject_delta.md) function.
 
 ## Methods
 

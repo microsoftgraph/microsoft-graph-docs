@@ -19,7 +19,7 @@ message that is being [drafted](../api/user_post_messages.md), or [created and s
 Since there is currently a limit of 4MB on the total size of each REST request, this limits the 
 size of the attachment you can add to under 4MB.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

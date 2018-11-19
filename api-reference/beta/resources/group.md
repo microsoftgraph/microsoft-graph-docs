@@ -7,9 +7,9 @@ Inherits from [directoryObject](directoryobject.md).
 
 This resource supports:
 
-- Adding your own data to custom properties as [extensions](../../../concepts/extensibility_overview.md).
-- Subscribing to [change notifications](../../../concepts/webhooks.md).
-- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
+- Adding your own data to custom properties as [extensions](/graph/extensibility_overview).
+- Subscribing to [change notifications](/graph/webhooks).
+- Using [delta query](/graph/delta_query_overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
 > **Microsoft Teams and Office 365 groups support group collaboration**. You can use most of the Office 365 groups API with Microsoft Teams. To create a [team](team.md), first  [create group](../api/group_post_groups.md) and then [add a team to it](../api/team_put_teams.md). For details, see the [Microsoft Teams overview](teams_api_overview.md).
 
@@ -71,7 +71,7 @@ This resource supports:
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Schema extensions**| | |
-|[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
+|[Add schema extension values](/graph/extensibility_schema_groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Other group resources**| | |
 |[List photos](../api/group_list_photos.md) |[profilePhoto](photo.md) collection| Get a collection of profile photos for the group.|
 |[List plannerPlans](../api/plannergroup_list_plans.md) |[plannerPlan](plannerPlan.md) collection| Get Planner plans owned by the group.|
@@ -226,9 +226,9 @@ The following is a JSON representation of the resource
 
 ## See also
 
-- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to resources using extensions](/graph/extensibility_overview)
+- [Add custom data to users using open extensions](/graph/extensibility_open_users)
+- [Add custom data to groups using schema extensions](/graph/extensibility_schema_groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -18,7 +18,7 @@ Special folders are automatically created the first time an application attempts
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |            Permission type             |                                           Permissions (from least to most privileged)                                            |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
@@ -49,7 +49,7 @@ The follow special folder names are available in OneDrive and OneDrive for Busin
 
 ### Optional query parameters
 
-This method supports the `$expand` and `$select` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$expand` and `$select` [OData query parameters](/graph/query_parameters) to customize the response.
 
 ## HTTP Response
 
@@ -76,7 +76,7 @@ Content-type: application/json
 ## Get children of a special folder
 
 To request the children of a special folder, you can request the `children`
-collection or use the [expand](../../../concepts/query_parameters.md) option to expand the children collection.
+collection or use the [expand](/graph/query_parameters) option to expand the children collection.
 
 ### HTTP request
 
