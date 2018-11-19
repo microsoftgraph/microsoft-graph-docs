@@ -63,7 +63,7 @@ To register your application:
     >**Note**: You don't have to be a tenant admin. You will be redirected to the **My applications** list.
 2. Choose **Add an app**, and enter an **Application Name** to create a new application.
 3. On the registration page for the new application, choose **Add Platform** > **Web**. In the **Redirect URL** field, enter the redirect URL.
-4. In the **Microsoft Graph Permissions** section, under **Delegated Permissions**, choose **Add**. In the dialog box, choose the required permissions. For a list of permissions, see [Security permissions](../concepts/permissions_reference.md#security-permissions).
+4. In the **Microsoft Graph Permissions** section, under **Delegated Permissions**, choose **Add**. In the dialog box, choose the required permissions. For a list of permissions, see [Security permissions](permissions_reference.md#security-permissions).
 
     >The Microsoft Graph Security API requires the SecurityEvents.Read.All scope for GET queries, and the SecurityEvents.ReadWrite.All scope for PATCH/POST queries.
 
