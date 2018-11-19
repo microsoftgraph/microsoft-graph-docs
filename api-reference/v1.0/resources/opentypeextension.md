@@ -12,7 +12,7 @@ Open extensions are supported by the following resources in the corresponding ve
 
 |Resource |Version |
 |:---------------|:-------|
-| [Administrative unit](../../beta/resources/administrativeunit.md)  | Preview only |
+| [Administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta)  | Preview only |
 | [Calendar event](event.md) | GA |
 | Group [calendar event](event.md) | GA |
 | Group conversation thread [post](post.md) | GA |
