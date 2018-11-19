@@ -1,4 +1,4 @@
-# List all teams in Microsoft Teams for an organization (preview)
+# List all teams in Microsoft Teams for an organization
 
 To list all [teams](/graph/api/resources/team?view=graph-rest-beta) 
 in an organization (tenant), you find all groups that have teams, and then get information for each team.
@@ -14,7 +14,7 @@ Since groups are large objects, use $select to only get the properties of the gr
 GET /groups?$select=id,resourceProvisioningOptions
 ```
 
-> **Note**: Certain unused old teams will not have resourceProvisioningOptions set. For details, see [known issues](../concepts/known_issues.md#missing-teams-in-list-all-teams).
+> **Note**: Certain unused old teams will not have resourceProvisioningOptions set. For details, see [known issues](known_issues.md#missing-teams-in-list-all-teams).
 
 The following is an example of the response. 
 
@@ -50,7 +50,7 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 
 > **Note**: $filter on /groups is only available through the beta endpoint. resourceProvisioningOptions is available in v1.0 and beta.
 
-> **Note**: Certain unused old teams will not be listed. For details, see [known issues](../concepts/known_issues.md#missing-teams-in-list-all-teams).
+> **Note**: Certain unused old teams will not be listed. For details, see [known issues](known_issues.md#missing-teams-in-list-all-teams).
 
 The following is an example of the response. 
 

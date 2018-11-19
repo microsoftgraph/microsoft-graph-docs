@@ -219,7 +219,7 @@ time, so it is important that all apps be able to handle the [basic error codes]
   "keywords": "error response, error, error codes, innererror, message, code",
   "section": "documentation",
   "suppressions": [
-    " Warning: /concepts/errors.md:
+    " Warning(errors.md):
       Multiple resources found in file, but we only support one per file. 'odata.error,odata.error'. Skipping."
   ],
   "tocPath": "Misc/Error Responses"

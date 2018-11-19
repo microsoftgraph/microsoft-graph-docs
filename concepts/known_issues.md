@@ -40,9 +40,22 @@ The fix will retroactively update control messages that are already posted.
 The current API to [create a chat thread](/graph/api/channel_post_chatthreads?view=graph-rest-beta) 
 will be replaced with a richer API that is consistent with the schema for [listing channel messages](/graph/api/channel_list_messages?view=graph-rest-beta).
 
+### Graph Explorer and v1.0
+
+Graph Explorer sample queries have not been updated for v1.0 yet.
+You can still type v1.0 queries into the text box on the top.
+Make sure you have set up Graph Explorer with the appropriate permissions, such as Group.ReadWrite.All and User.Read.All.
+
 ### Graph Explorer and Global Admins
 
 Currently, Graph Explorer allows global admins to manipulate teams they are not an owner or member of, but other apps attempting to make the same API calls will fail if the current user is not a member or owner of the team.
+
+### GET /teams and POST /teams are not supported
+
+See [list all teams](teams_list_all_teams.md) and 
+[list your teams](/graph/api/user_list_joinedteams?view=graph-rest-1.0)
+to get a list of teams.
+See [create team](/graph/api/team_put_teams?view=graph-rest-1.0) for creating teams.
 
 ### Missing teams in list all teams
 
@@ -57,7 +70,7 @@ In the future, we will set **resourceProvisioningOptions** on existing teams tha
 
 ### Permissions for groups and Microsoft Teams
 
-Microsoft Graph exposes two permissions ([*Group.Read.All*](../concepts/permissions_reference.md#group-permissions) and [*Group.ReadWrite.All*](../concepts/permissions_reference.md#group-permissions)) for access to the APIs for groups and Microsoft Teams.
+Microsoft Graph exposes two permissions ([*Group.Read.All*](permissions_reference.md#group-permissions) and [*Group.ReadWrite.All*](permissions_reference.md#group-permissions)) for access to the APIs for groups and Microsoft Teams.
 These permissions must be consented to by an administrator.
 In the future, we plan to add new permissions for groups and teams that users can consent to.
 
