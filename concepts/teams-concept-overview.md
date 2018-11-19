@@ -70,20 +70,20 @@ You can create web sites, services, and native platform applications that run ou
 
 ![Call the Microsoft Teams API from tabs, bots, websites, and services](images/TeamsAppEndpoints.png)
 
-These collaboration tools include Microsoft Graph-enabled tabs or bots running inside Microsoft Teams apps. You can also call Microsoft Graph outside of a Microsoft Teams app, such as from a website or a web service. If you've already enabled your website for Microsoft Graph, you can use that work for Microsoft Teams by using the [Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all) to [create a tab](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview) that uses the existing website code.
+These collaboration tools include Microsoft Graph-enabled tabs or bots running inside Microsoft Teams apps. You can also call Microsoft Graph outside of a Microsoft Teams app, such as from a website or a web service. If you've already enabled your website for Microsoft Graph, you can use that work for Microsoft Teams by using the [Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all) to [create a tab](https://docs.microsoft.com/en-us/microsoftteams/platfo(tabs.md)/tabs-overview) that uses the existing website code.
 
 Microsoft Teams APIs can enhance apps inside and outside of Teams:
 
 |App type|Scenario description|
 |:-------|:-------------------|
-| [Tabs](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview) |Surface your content in Microsoft Teams.|
-| [Bots](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bots-overview) |Help users get tasks done in conversations.|
-| [Connectors](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/connectors/connectors) |Post updates from external services to channels.|
-| [Actionable messaging](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards) |Add enhanced interaction to your connector cards.|
-| [Messaging extensions](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/messaging-extensions) |Allow users to query and share information in conversations.|
+| [Tabs](https://docs.microsoft.com/en-us/microsoftteams/platfo(tabs.md)/tabs-overview) |Surface your content in Microsoft Teams.|
+| [Bots](https://docs.microsoft.com/en-us/microsoftteams/platfo(bots.md)/bots-overview) |Help users get tasks done in conversations.|
+| [Connectors](https://docs.microsoft.com/en-us/microsoftteams/platfo(connectors.md)/connectors) |Post updates from external services to channels.|
+| [Actionable messaging](https://docs.microsoft.com/en-us/microsoftteams/platfo(cards.md)/cards) |Add enhanced interaction to your connector cards.|
+| [Messaging extensions](https://docs.microsoft.com/en-us/microsoftteams/platfo(messaging-extensions.md) |Allow users to query and share information in conversations.|
 |Websites| Surface enhanced content in your web pages.|
 |Services|Enhance your client applications with Microsoft Graph data via your web service.|
-| [Activity feed](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/activity-feed)|Engage users via feed notifications.|
+| [Activity feed](https://docs.microsoft.com/en-us/microsoftteams/platfo(activity-feed.md)|Engage users via feed notifications.|
 | [Calling and online meetings (Preview)](/graph/api/resources/calls-api-overview?view=graph-rest-beta) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
 
 ## API reference
@@ -98,6 +98,6 @@ See the [Teams API in Microsoft Graph](/graph/api/resources/teams_api_overview?v
 - Learn how to [use the Microsoft Teams API](/graph/api/resources/teams_api_overview?view=graph-rest-1.0).
 - Drill down on the methods, properties, and relationships of the [team](/graph/api/resources/team?view=graph-rest-1.0), [channel](/graph/api/resources/channel?view=graph-rest-1.0), and [group](/graph/api/resources/group?view=graph-rest-1.0) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- Read more about the [Microsoft Teams programming model](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/concepts-overview).
+- Read more about the [Microsoft Teams programming model](https://docs.microsoft.com/en-us/microsoftteams/platfo(concepts-overview.md).
 - Explore the [calling and online meeting APIs](/graph/api/resources/calls-api-overview?view=graph-rest-beta).
-- Get a jump-start with sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph), [Node.js mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph/tree/master/Node).
+- Get a jump-start with sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)

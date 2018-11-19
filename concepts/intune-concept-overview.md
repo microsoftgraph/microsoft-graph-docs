@@ -44,6 +44,6 @@ Looking for the API reference for this service?
 
 - [Use Azure AD to access the Intune API](https://docs.microsoft.com/intune/intune-graph-apis).
 - See how to perform common tasks by using the [PowerShell Intune samples](https://github.com/microsoftgraph/powershell-intune-samples).
-- Find out how to [use the Intune REST API](/graph/api/resources/intune_graph_overview?view=graph-rest-1.0).
+- Find out how to [use the Intune REST API](https://developer.microsoft.com/graph/do(/graph/api/resources/intune_graph_overview?view=graph-rest-1.0).
 - See the [Changelog](changelog.md) for information about what's new in the Intune API.
 - Explore [examples](https://developer.microsoft.com/graph/graph/examples) for more ideas about how to use Microsoft Graph.

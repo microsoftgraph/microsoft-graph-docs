@@ -62,7 +62,7 @@ HTTP/1.1 204 No Content
 See [Error Responses][error-response] for more info about
 how errors are returned.
 
-[error-response]: /graph/errors
+[error-response]: (/graph/errors)
 
 <!-- {
   "type": "#page.annotation",

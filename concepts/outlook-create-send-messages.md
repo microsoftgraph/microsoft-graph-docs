@@ -9,7 +9,7 @@ saved as a draft or sent. That ID changes when the message is copied or moved to
 
 In Outlook, you can create and send an email in the same [sendMail](/graph/api/user_sendmail?view=graph-rest-1.0) action, or you can [create](/graph/api/user_post_messages?view=graph-rest-1.0) a draft, subsequently [add content](/graph/api/message_update?view=graph-rest-1.0) and [send](/graph/api/message_send?view=graph-rest-1.0) the draft.
 
-Similarly, when responding to an email, you can create and send the response in the same action ([reply](/graph/api/message_reply?view=graph-rest-1.0), [reply-all](../api-reference/v1.0/api//message_replyall.md), or [forward](/graph/api/message_forward?view=graph-rest-1.0)). Or, you can create a draft for the response ([reply](/graph/api/message_createreply?view=graph-rest-1.0), [reply-all](../api-reference/v1.0/api//message_createreplyall.md), or [forward](/graph/api/message_createforward?view=graph-rest-1.0)), [add content](/graph/api/message_update?view=graph-rest-1.0), and then [send](/graph/api/message_send?view=graph-rest-1.0) the draft at a later time.
+Similarly, when responding to an email, you can create and send the response in the same action ([reply](/graph/api/message_reply?view=graph-rest-1.0), [reply-all](/graph/api/message_replyall?view=graph-rest-1.0), or [forward](/graph/api/message_forward?view=graph-rest-1.0)). Or, you can create a draft for the response ([reply](/graph/api/message_createreply?view=graph-rest-1.0), [reply-all](/graph/api/message_createreplyall?view=graph-rest-1.0), or [forward](/graph/api/message_createforward?view=graph-rest-1.0)), [add content](/graph/api/message_update?view=graph-rest-1.0), and then [send](/graph/api/message_send?view=graph-rest-1.0) the draft at a later time.
 
 To distinguish between a draft and a sent message programmatically, check the **isDraft** property.
 
@@ -92,11 +92,11 @@ Find out more about:
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Error: /concepts/outlook-create-send-messages.md:
+    "Error(outlook-create-send-messages.md):
         BookmarkSkippedDocFileNotFound: Link '[creating a message](/graph/api/user_post_messages?view=graph-rest-beta#request-2)'.",
-    "Error: /concepts/outlook-create-send-messages.md:
+    "Error(outlook-create-send-messages.md):
       BookmarkSkippedDocFileNotFound: Link '[Get all the messages in a user's mailbox that contain an @-mention of the user](/graph/api/user_list_messages?view=graph-rest-beta#request-2)'.",
-    "Error: /concepts/outlook-create-send-messages.md:
+    "Error(outlook-create-send-messages.md):
       BookmarkSkippedDocFileNotFound: Link '[Get all the @-mention is a message](/graph/api/message_get?view=graph-rest-beta#request-2)'."
   ]
 }-->

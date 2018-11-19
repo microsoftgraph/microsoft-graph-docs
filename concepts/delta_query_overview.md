@@ -81,7 +81,7 @@ Delta query is currently supported for the following resources.
 | Planner items\*\* | [delta](/graph/api/planneruser_list_delta?view=graph-rest-beta) function of the all segment of [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) resource (preview) |
 
 > \* The usage pattern for OneDrive resources is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, see
-[Track changes for a Drive](/graph/api/item_delta?view=graph-rest-1.0).
+[Track changes for a Drive](https://developer.microsoft.com/graph/do(/graph/api/item_delta?view=graph-rest-1.0).
 
 > \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences.  For details, see [Track changes for Planner](/graph/api/planneruser_list_delta?view=graph-rest-beta).
 

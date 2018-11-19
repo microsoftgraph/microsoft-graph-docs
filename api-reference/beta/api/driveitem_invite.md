@@ -129,7 +129,7 @@ Read the [Error Responses][error-response] topic for more information about
 how errors are returned.
 
 
-[error-response]: /graph/errors
+[error-response]: (/graph/errors)
 
 <!-- {
   "type": "#page.annotation",

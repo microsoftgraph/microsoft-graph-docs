@@ -175,7 +175,7 @@ how errors are returned.
 
 * For OneDrive for Business and SharePoint, the Shares API always requires authentication and cannot be used to access anonymously shared content without a user context.
 
-[error-response]: /graph/errors
+[error-response]: (/graph/errors)
 
 <!-- {
   "type": "#page.annotation",

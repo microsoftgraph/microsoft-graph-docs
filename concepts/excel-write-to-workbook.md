@@ -12,7 +12,7 @@ The Excel REST API requires you to POST a simple request body to the REST endpoi
 
 `https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add`
 
-For more information about how to reach files in OneDrive folders, see the [DriveItem resource type](/graph/api/resources/driveitem?view=graph-rest-1.0) in our reference documentation.
+For more information about how to reach files in OneDrive folders, see the [DriveItem resource type](https://developer.microsoft.com/graph/do(/graph/api/resources/driveitem?view=graph-rest-1.0) in our reference documentation.
 
 > **Note:** You can look at the existing row collection of the workbook by making a GET request to the part of the path that ends at `/rows`.
 

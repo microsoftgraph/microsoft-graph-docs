@@ -40,9 +40,22 @@ The fix will retroactively update control messages that are already posted.
 The current API to [create a chat thread](/graph/api/channel_post_chatthreads?view=graph-rest-beta) 
 will be replaced with a richer API that is consistent with the schema for [listing channel messages](/graph/api/channel_list_messages?view=graph-rest-beta).
 
+### Graph Explorer and v1.0
+
+Graph Explorer sample queries have not been updated for v1.0 yet.
+You can still type v1.0 queries into the text box on the top.
+Make sure you have set up Graph Explorer with the appropriate permissions, such as Group.ReadWrite.All and User.Read.All.
+
 ### Graph Explorer and Global Admins
 
 Currently, Graph Explorer allows global admins to manipulate teams they are not an owner or member of, but other apps attempting to make the same API calls will fail if the current user is not a member or owner of the team.
+
+### GET /teams and POST /teams are not supported
+
+See [list all teams](teams_list_all_teams.md) and 
+[list your teams](/graph/api/user_list_joinedteams?view=graph-rest-1.0)
+to get a list of teams.
+See [create team](/graph/api/team_put_teams?view=graph-rest-1.0) for creating teams.
 
 ### Missing teams in list all teams
 
@@ -57,7 +70,7 @@ In the future, we will set **resourceProvisioningOptions** on existing teams tha
 
 ### Permissions for groups and Microsoft Teams
 
-Microsoft Graph exposes two permissions ([*Group.Read.All*](../concepts/permissions_reference.md#group-permissions) and [*Group.ReadWrite.All*](../concepts/permissions_reference.md#group-permissions)) for access to the APIs for groups and Microsoft Teams.
+Microsoft Graph exposes two permissions ([*Group.Read.All*](permissions_reference.md#group-permissions) and [*Group.ReadWrite.All*](permissions_reference.md#group-permissions)) for access to the APIs for groups and Microsoft Teams.
 These permissions must be consented to by an administrator.
 In the future, we plan to add new permissions for groups and teams that users can consent to.
 
@@ -83,7 +96,7 @@ Using Microsoft Graph to create and name an Office 365 group bypasses any Office
 
 ### Adding and getting attachments of group posts
 
-[Adding](/graph/api/post_post_attachments?view=graph-rest-1.0) attachments to group posts, [listing](/graph/api/post_list_attachments?view=graph-rest-1.0) and
+[Adding](https://developer.microsoft.com/graph/do(/graph/api/post_post_attachments?view=graph-rest-1.0) attachments to group posts, [listing](https://developer.microsoft.com/graph/do(/graph/api/post_list_attachments?view=graph-rest-1.0) and
 getting attachments of group posts currently return the error message "The OData request is not supported." A fix has been rolled out for both the `/v1.0` and `/beta` versions,
 and is expected to be widely available by the end of January 2016.
 
@@ -158,8 +171,8 @@ GET \me\calendars('{id}')\events
 Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
 
 * You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
-* [Listing the user's calendars](/graph/api/user_list_calendars?view=graph-rest-1.0) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
-* You can also [list the events](/graph/api/calendar_list_events?view=graph-rest-1.0) of an ICS-based calendar.
+* [Listing the user's calendars](https://developer.microsoft.com/graph/do(/graph/api/user_list_calendars?view=graph-rest-1.0) lets you get the **name**, **color** and **id** properties of each [calendar](https://developer.microsoft.com/graph/do(/graph/api/resources/calendar?view=graph-rest-1.0) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
+* You can also [list the events](https://developer.microsoft.com/graph/do(/graph/api/calendar_list_events?view=graph-rest-1.0) of an ICS-based calendar.
 
 ### onlineMeetingUrl property support for Microsoft Teams
 
@@ -181,7 +194,7 @@ Only personal contacts are currently supported. Organizational contacts are not 
 
 In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder.
 
-A fix will be made available. Meanwhile, you can use the following [list contacts](/graph/api/user_list_contacts?view=graph-rest-1.0) query and the **parentFolderId** property
+A fix will be made available. Meanwhile, you can use the following [list contacts](https://developer.microsoft.com/graph/do(/graph/api/user_list_contacts?view=graph-rest-1.0) query and the **parentFolderId** property
 as a workaround to get the folder ID of the default contacts folder:
 
 ```http
@@ -190,7 +203,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 
 In the above query:
 
-1. `/me/contacts?$top=1` gets the properties of a [contact](/graph/api/resources/contact?view=graph-rest-1.0) in the default contacts folder.
+1. `/me/contacts?$top=1` gets the properties of a [contact](https://developer.microsoft.com/graph/do(/graph/api/resources/contact?view=graph-rest-1.0) in the default contacts folder.
 2. Appending `&$select=parentFolderId` returns only the contact's **parentFolderId** property, which is the ID of the default contacts folder.
 
 

@@ -273,7 +273,7 @@ Thumbnails are not supported on SharePoint Server 2016.
 See [Error Responses][error-response] for more info about
 how errors are returned.
 
-[error-response]: /graph/errors
+[error-response]: (/graph/errors)
 
 <!-- {
   "type": "#page.annotation",
