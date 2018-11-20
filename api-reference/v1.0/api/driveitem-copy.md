@@ -81,7 +81,7 @@ You can use this info to [determine when the copy has finished](/graph/long-runn
 In many cases the copy action is performed asynchronously.
 The response from the API will only indicate that the copy operation was accepted or rejected, say due to the destination filename already being in use.
 
-[item-resource]: ../resources/driveitem.md
+[item-resource](../resources/driveitem)
 
 <!-- {
   "type": "#page.annotation",

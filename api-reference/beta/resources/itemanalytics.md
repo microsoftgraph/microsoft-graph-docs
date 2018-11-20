@@ -37,10 +37,10 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
 | allTime       | [itemActivityStat][] | Analytics over the the item's lifespan.
 | lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.
 
-[itemActivityStat]: itemActivityStat.md
+[itemActivityStat](itemactivitystat)
 
 
-[getActivitiesByInterval]: ../api/itemActivity_getByInterval.md
+[getActivitiesByInterval](../api/itemactivity-getbyinterval)
 
 <!-- {
   "type": "#page.annotation",

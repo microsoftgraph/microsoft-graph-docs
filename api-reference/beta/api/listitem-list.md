@@ -10,8 +10,8 @@ title: Retrieve items from a SharePoint list
 
 Get the collection of [items][item] in a [list][].
 
-[list]: ../resources/list.md
-[item]: ../resources/listItem.md
+[list](../resources/list)
+[item](../resources/listitem)
 
 ## Permissions
 

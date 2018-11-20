@@ -28,13 +28,13 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 | [Update][]                     | PATCH /items/{item-id}
 | [Update column values][Update] | PATCH /items/{item-id}/fields
 
-[Get]: ../api/listItem_get.md
-[Get activities]: ../api/itemActivities_list.md
-[Get analytics]: ../api/itemAnalytics_get.md
-[Get activities by interval]: ../api/itemActivity_getByInterval.md
-[Create]: ../api/listItem_create.md
-[Delete]: ../api/listItem_delete.md
-[Update]: ../api/listItem_update.md
+[Get](../api/listitem-get)
+[Get activities](../api/itemactivities-list)
+[Get analytics](../api/itemanalytics-get)
+[Get activities by interval](../api/itemactivity-getbyinterval)
+[Create](../api/listitem-create)
+[Delete](../api/listitem-delete)
+[Update](../api/listitem-update)
 
 ## JSON representation
 
@@ -109,17 +109,17 @@ The following properties are inherited from **[baseItem][]**.
 | fields            | [fieldValueSet][]              | The values of the columns set on this list item.
 | versions          | [listItemVersion][] collection | The list of previous versions of the list item.
 
-[baseItem]: baseItem.md
-[contentTypeInfo]: contentTypeInfo.md
-[driveItem]: driveItem.md
-[fieldValueSet]: fieldValueSet.md
-[identitySet]: identitySet.md
-[itemActivity]: itemActivity.md
-[itemAnalytics]: itemAnalytics.md
-[itemReference]: itemreference.md
-[list]: list.md
-[listItemVersion]: listItemVersion.md
-[sharepointIds]: sharepointIds.md
+[baseItem](baseitem)
+[contentTypeInfo](contenttypeinfo)
+[driveItem](driveitem)
+[fieldValueSet](fieldvalueset)
+[identitySet](identityset)
+[itemActivity](itemactivity)
+[itemAnalytics](itemanalytics)
+[itemReference](itemreference)
+[list](list)
+[listItemVersion](listitemversion)
+[sharepointIds](sharepointids)
 
 <!-- {
   "type": "#page.annotation",

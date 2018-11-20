@@ -180,41 +180,41 @@ The URL will only be available for a short period of time (1 hour) before it is 
 | [Delete permission](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
-[item-preview]: ../api/driveItem_preview.md
+[item-preview](../api/driveitem-preview)
 
 ## Remarks
 
 In OneDrive for Business or SharePoint document libraries, the **cTag** property is not returned, if the **driveItem** has a [folder][] facet.
 
-[audio]: audio.md
-[baseItem]: baseItem.md
-[deleted]: deleted.md
-[download-format]: ../api/driveitem_get_content_format.md
-[driveItemVersion]: driveItemVersion.md
-[file]: file.md
-[fileSystemInfo]: fileSystemInfo.md
-[folder]: folder.md
-[getting previous versions]: ../api/driveitem_list_versions.md
-[getting thumbnails]: ../api/driveitem_list_thumbnails.md
-[identitySet]: identitySet.md
-[image]: image.md
-[itemReference]: itemReference.md
-[geoCoordinates]: geoCoordinates.md
-[listItem]: listItem.md
-[package]: package.md
-[permission]: permission.md
-[photo]: photo.md
-[remoteItem]: remoteItem.md
-[root]: root.md
-[searchResult]: searchResult.md
-[shared]: shared.md
-[sharepointIds]: sharepointIds.md
-[specialFolder]: specialFolder.md
-[thumbnailSet]: thumbnailSet.md
-[video]: video.md
-[workbook]: workbook.md
+[audio](audio)
+[baseItem](baseitem)
+[deleted](deleted)
+[download-format](../api/driveitem-get-content-format)
+[driveItemVersion](driveitemversion)
+[file](file)
+[fileSystemInfo](filesysteminfo)
+[folder](folder)
+[getting previous versions](../api/driveitem-list-versions)
+[getting thumbnails](../api/driveitem-list-thumbnails)
+[identitySet](identityset)
+[image](image)
+[itemReference](itemreference)
+[geoCoordinates](geocoordinates)
+[listItem](listitem)
+[package](package)
+[permission](permission)
+[photo](photo)
+[remoteItem](remoteitem)
+[root](root)
+[searchResult](searchresult)
+[shared](shared)
+[sharepointIds](sharepointids)
+[specialFolder](specialfolder)
+[thumbnailSet](thumbnailset)
+[video](video)
+[workbook](workbook)
 [user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
-[publicationFacet]: publicationfacet.md
+[publicationFacet](publicationfacet)
 
 <!-- {
   "type": "#page.annotation",

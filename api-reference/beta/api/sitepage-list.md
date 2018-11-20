@@ -10,9 +10,9 @@ title: List the pages in a site
 
 Get the collection of [sitePages][] from the site pages [list][] in a site [site][]. All pages in the site are returned (with pagination).
 
-[sitePage]: ../resources/sitePage.md
-[list]: ../resources/list.md
-[site]: ../resources/site.md
+[sitePage](../resources/sitepage)
+[list](../resources/list)
+[site](../resources/site)
 
 ## Permissions
 

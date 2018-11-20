@@ -127,9 +127,9 @@ Read the [Error Responses][error-response] topic for more information about
 how errors are returned.
 
 
-[driveRecipient]: ../resources/driverecipient.md
+[driveRecipient](../resources/driverecipient)
 [error-response]: /graph/errors
-[sharing link]: ../resources/permission.md#sharing-links
+[sharing link](../resources/permission)#sharing-links
 
 <!-- {
   "type": "#page.annotation",

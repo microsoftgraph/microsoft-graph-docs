@@ -40,8 +40,8 @@ Here is a JSON representation of the resource.
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-[DriveItem]: driveItem.md
-[IdentitySet]: identitySet.md
+[DriveItem](driveitem)
+[IdentitySet](identityset)
 
 <!-- {
   "type": "#page.annotation",

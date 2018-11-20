@@ -136,7 +136,7 @@ See [Error Responses][error-response] for more information about
 how errors are returned.
 
 [error-response]: /graph/errors
-[item-resource]: ../resources/driveitem.md
+[item-resource](../resources/driveitem)
 [odata-query-parameters]: /graph/query_parameters
 
 <!-- {

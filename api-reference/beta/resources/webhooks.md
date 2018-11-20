@@ -35,11 +35,11 @@ In general, subscription operations require read permission to the resource. For
 - [Update subscription](../api/subscription-update.md)
 - [Delete subscription](../api/subscription-delete.md)
 
-[contact]: ./contact.md
-[conversation]: ./conversation.md
-[drive]: ./drive.md
-[event]: ./event.md
-[group]: ./group.md
-[message]: ./message.md
-[user]: ./user.md
-[alert]: ./alert.md
+[contact](./contact)
+[conversation](./conversation)
+[drive](./drive)
+[event](./event)
+[group](./group)
+[message](./message)
+[user](./user)
+[alert](./alert)

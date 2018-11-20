@@ -10,7 +10,7 @@ title: Delete an entry from a SharePoint list
 
 Removes an item from a [list][].
 
-[list]: ../resources/list.md
+[list](../resources/list)
 
 ## Permissions
 

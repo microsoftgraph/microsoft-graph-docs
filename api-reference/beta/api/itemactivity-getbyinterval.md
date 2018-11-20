@@ -14,7 +14,7 @@ Get [itemActivityStats][] for the activities that took place under this resource
 
 Analytics aggregates might not be available for all action types.
 
-[itemActivityStats]: ../resources/itemActivityStat.md
+[itemActivityStats](../resources/itemactivitystat)
 
 ## Permissions
 

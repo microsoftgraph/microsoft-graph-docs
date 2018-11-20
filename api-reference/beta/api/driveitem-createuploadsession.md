@@ -408,7 +408,7 @@ See the [Error Responses][error-response] topic for details about
 how errors are returned.
 
 [error-response]: /graph/errors
-[item-resource]: ../resources/driveitem.md
+[item-resource](../resources/driveitem)
 
 <!-- {
   "type": "#page.annotation",

@@ -71,8 +71,8 @@ Content-type: application/json
 }
 ```
 
-[fieldValueSet]: ../resources/fieldValueSet.md
-[listItem]: ../resources/listItem.md
+[fieldValueSet](../resources/fieldvalueset)
+[listItem](../resources/listitem)
 
 <!-- {
   "type": "#page.annotation",

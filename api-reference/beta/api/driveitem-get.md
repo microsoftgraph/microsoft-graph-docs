@@ -108,8 +108,8 @@ how errors are returned.
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query_parameters
-[item-resource]: ../resources/driveitem.md
-[special-folder]: ../api/drive_get_specialfolder.md
+[item-resource](../resources/driveitem)
+[special-folder](../api/drive-get-specialfolder)
 
 <!-- {
   "type": "#page.annotation",

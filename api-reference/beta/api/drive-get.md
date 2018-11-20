@@ -144,7 +144,7 @@ Content-type: application/json
 
 If the drive does not exist and cannot be provisioned automatically (when using delegated authentication) an `HTTP 404` response will be returned.
 
-[drive-resource]: ../resources/drive.md
+[drive-resource](../resources/drive)
 [odata-query-parameters]: /graph/query_parameters
 
 <!-- {

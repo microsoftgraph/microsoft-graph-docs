@@ -24,15 +24,15 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List root sites][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Search for sites][]           | GET /sites?search={query}
 
-[Get site]: ../api/site_get.md
-[Get root site]: ../api/site_get.md
-[Get site by path]: ../api/site_getbypath.md
-[Get site for a group]: ../api/site_get.md
-[Get analytics]: ../api/itemAnalytics_get.md
-[Get activities by interval]: ../api/itemActivity_getByInterval.md
-[List pages]: ../api/sitepage_list.md
-[List root sites]: ../api/site_list.md
-[Search for sites]: ../api/site_search.md
+[Get site](../api/site-get)
+[Get root site](../api/site-get)
+[Get site by path](../api/site-getbypath)
+[Get site for a group](../api/site-get)
+[Get analytics](../api/itemanalytics-get)
+[Get activities by interval](../api/itemactivity-getbyinterval)
+[List pages](../api/sitepage-list)
+[List root sites](../api/site-list)
+[Search for sites](../api/site-search)
 
 
 ## Properties
@@ -65,18 +65,18 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **pages**         | Collection([sitePage][])         | The collection of pages in the SitePages list in this site.
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
 
-[columnDefinition]: columndefinition.md
-[baseItem]: baseitem.md
-[contentType]: contentType.md
-[drive]: drive.md
-[identitySet]: identityset.md
-[itemAnalytics]: itemAnalytics.md
-[list]: list.md
-[sitePage]: sitePage.md
-[root]: root.md
-[site]: site.md
-[sharepointIds]: sharepointIds.md
-[siteCollection]: siteCollection.md
+[columnDefinition](columndefinition)
+[baseItem](baseitem)
+[contentType](contenttype)
+[drive](drive)
+[identitySet](identityset)
+[itemAnalytics](itemanalytics)
+[list](list)
+[sitePage](sitepage)
+[root](root)
+[site](site)
+[sharepointIds](sharepointids)
+[siteCollection](sitecollection)
 
 ## JSON representation
 

@@ -34,7 +34,7 @@ The **webPart** resource represents type and rendering information for a web par
 | **type**                | String           | A unique identifier specifying the webPart type. Read-only.
 | **data**                | [sitePageData][] | The required properties for the webPart (varies by webPart)
 
-[sitePageData]: sitePageData.md
+[sitePageData](sitepagedata)
 
 ## Remarks
 

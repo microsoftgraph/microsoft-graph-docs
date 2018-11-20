@@ -8,7 +8,7 @@ title: Get a SharePoint list
 
 Returns the metadata for a [list][].
 
-[list]: ../resources/list.md
+[list](../resources/list)
 
 ## Permissions
 

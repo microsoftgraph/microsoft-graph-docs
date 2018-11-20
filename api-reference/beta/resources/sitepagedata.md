@@ -10,7 +10,7 @@ title: SitePageData
 
 The **sitePageData** resource represents the properties of a [webPart][]. As these properties vary by web part, this is an OpenType with no fixed properties.
 
-[webPart]: webPart.md
+[webPart](webpart)
 
 ## JSON representation
 

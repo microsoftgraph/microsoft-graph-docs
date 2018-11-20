@@ -42,9 +42,9 @@ Here is a JSON representation of the resource
 | shareId       | String            | A unique identifier for a shared resource that can be accessed via the [Shares][] API.
 | sharepointIds | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only.
 
-[drive]: ../resources/drive.md
-[sharepointIds]: ../resources/sharepointids.md
-[Shares]: ../api/shares_get.md
+[drive](../resources/drive)
+[sharepointIds](../resources/sharepointids)
+[Shares](../api/shares-get)
 
 ## Remarks
 

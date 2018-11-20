@@ -185,46 +185,46 @@ Removing file permissions for a user may not immediately invalidate the URL.
 | [Get WebSocket channel][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
-[item-preview]: ../api/driveItem_preview.md
-[Get analytics]: ../api/itemAnalytics_get.md
-[Get activities by interval]: ../api/itemActivity_getByInterval.md
+[item-preview](../api/driveitem-preview)
+[Get analytics](../api/itemanalytics-get)
+[Get activities by interval](../api/itemactivity-getbyinterval)
 
 ## Remarks
 
 In OneDrive for Business or SharePoint document libraries, the **cTag** property is not returned, if the **driveItem** has a [folder][] facet.
 
-[audio]: audio.md
-[baseItem]: baseItem.md
-[deleted]: deleted.md
-[download-format]: ../api/driveitem_get_content_format.md
-[driveItemVersion]: driveItemVersion.md
-[file]: file.md
-[fileSystemInfo]: fileSystemInfo.md
-[folder]: folder.md
-[getting previous versions]: ../api/driveitem_list_versions.md
-[getting thumbnails]: ../api/driveitem_list_thumbnails.md
-[getWebSocket]: ../api/driveItem_subscriptions_socketIo.md
-[identitySet]: identitySet.md
-[image]: image.md
-[itemActivity]: itemActivity.md
-[itemAnalytics]: itemAnalytics.md
-[itemReference]: itemReference.md
-[geoCoordinates]: geoCoordinates.md
-[List activities]: ../api/activities_list.md
-[listItem]: listItem.md
-[package]: package.md
-[permission]: permission.md
-[photo]: photo.md
-[remoteItem]: remoteItem.md
-[root]: root.md
-[searchResult]: searchResult.md
-[shared]: shared.md
-[sharepointIds]: sharepointIds.md
-[specialFolder]: specialFolder.md
-[thumbnailSet]: thumbnailSet.md
-[video]: video.md
+[audio](audio)
+[baseItem](baseitem)
+[deleted](deleted)
+[download-format](../api/driveitem-get-content-format)
+[driveItemVersion](driveitemversion)
+[file](file)
+[fileSystemInfo](filesysteminfo)
+[folder](folder)
+[getting previous versions](../api/driveitem-list-versions)
+[getting thumbnails](../api/driveitem-list-thumbnails)
+[getWebSocket](../api/driveitem-subscriptions-socketio)
+[identitySet](identityset)
+[image](image)
+[itemActivity](itemactivity)
+[itemAnalytics](itemanalytics)
+[itemReference](itemreference)
+[geoCoordinates](geocoordinates)
+[List activities](../api/activities-list)
+[listItem](listitem)
+[package](package)
+[permission](permission)
+[photo](photo)
+[remoteItem](remoteitem)
+[root](root)
+[searchResult](searchresult)
+[shared](shared)
+[sharepointIds](sharepointids)
+[specialFolder](specialfolder)
+[thumbnailSet](thumbnailset)
+[video](video)
 [user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
-[publicationFacet]: publicationfacet.md
+[publicationFacet](publicationfacet)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

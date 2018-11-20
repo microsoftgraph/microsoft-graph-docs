@@ -60,10 +60,10 @@ Alternatively, for **driveItems** shared from personal OneDrive accounts, the fo
 | **items**         | [**driveItem**][driveItem] collection | All driveItems contained in the sharing root. This collection cannot be enumerated.
 | **root**          | [**driveItem**][driveItem]   | Used to access the underlying **driveItem**. Deprecated -- use `driveItem` instead.
 
-[driveItem]: driveItem.md
-[list]: list.md
-[listItem]: listItem.md
-[site]: site.md
+[driveItem](driveitem)
+[list](list)
+[listItem](listitem)
+[site](site)
 
 ## Methods
 

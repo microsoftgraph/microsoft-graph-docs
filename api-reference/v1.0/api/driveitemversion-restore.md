@@ -48,7 +48,7 @@ If successful, the API call returns a `204 No Content`.
 HTTP/1.1 204 No Content
 ```
 
-[item-resource]: ../resources/driveitem.md
+[item-resource](../resources/driveitem)
 
 <!-- {
   "type": "#page.annotation",

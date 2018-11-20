@@ -64,9 +64,9 @@ Here is a JSON representation of a **baseItem** resource.
 | createdByUser      | [user][] | Identity of the user who created the item. Read-only.
 | lastModifiedByUser | [user][] | Identity of the user who last modified the item. Read-only.
 
-[identitySet]: identityset.md
-[itemReference]: itemreference.md
-[user]: user.md
+[identitySet](identityset)
+[itemReference](itemreference)
+[user](user)
 
 ## Remarks
 

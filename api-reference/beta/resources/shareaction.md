@@ -10,7 +10,7 @@ title: ShareAction
 
 The **ShareAction** resource provides information about an [activity][activity] that shared an item.
 
-[activity]: itemActivity.md
+[activity](itemactivity)
 
 ## JSON representation
 
@@ -32,7 +32,7 @@ The **ShareAction** resource provides information about an [activity][activity] 
 |:--------------|:---------------------------|:-----------------------------
 | recipients    | [identitySet][] collection | The identities the item was shared with in this action.
 
-[identitySet]: identitySet.md
+[identitySet](identityset)
 
 ## Remarks
 

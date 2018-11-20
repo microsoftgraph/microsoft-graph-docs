@@ -10,8 +10,8 @@ title: List the SharePoint lists in a site
 
 Get the collection of [lists][] for a [site][].
 
-[lists]: ../resources/list.md
-[site]: ../resources/site.md
+[lists](../resources/list)
+[site](../resources/site)
 
 ## Permissions
 
@@ -78,7 +78,7 @@ Content-type: application/json
 Lists with the [system][] facet are hidden by default.
 To list them, include `system` in your `$select` statement.
 
-[system]: ../resources/systemFacet.md
+[system](../resources/systemfacet)
 
 <!-- {
   "type": "#page.annotation",

@@ -223,13 +223,13 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 
 
 
-[createLink]: ../api/driveItem_createLink.md
-[IdentitySet]: identityset.md
-[invite]: ../api/driveItem_invite.md
-[ItemReference]: itemreference.md
-[shares API]: ../api/shares_get.md
-[SharingInvitation]: sharinginvitation.md
-[SharingLink]: sharinglink.md
+[createLink](../api/driveitem-createlink)
+[IdentitySet](identityset)
+[invite](../api/driveitem-invite)
+[ItemReference](itemreference)
+[shares API](../api/shares-get)
+[SharingInvitation](sharinginvitation)
+[SharingLink](sharinglink)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

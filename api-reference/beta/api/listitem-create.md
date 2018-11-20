@@ -82,8 +82,8 @@ Content-type: application/json
 
 **Note:** The response object is truncated for clarity. Default properties will be returned from the actual call.
 
-[list]: ../resources/list.md
-[listItem]: ../resources/listItem.md
+[list](../resources/list)
+[listItem](../resources/listitem)
 
 <!-- {
   "type": "#page.annotation",

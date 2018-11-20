@@ -28,12 +28,12 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 | [Create list item][]      | POST /lists/{list-id}
 | [Get recent activities][] | GET /lists/{list-id}/activities
 
-[Get list]: ../api/list_get.md
-[Enumerate list items]: ../api/listitem_list.md
-[Update list item]: ../api/listItem_update.md
-[Delete list item]: ../api/listItem_delete.md
-[Create list item]: ../api/listItem_create.md
-[Get recent activities]: ../api/activities_list.md
+[Get list](../api/list-get)
+[Enumerate list items](../api/listitem-list)
+[Update list item](../api/listitem-update)
+[Delete list item](../api/listitem-delete)
+[Create list item](../api/listitem-create)
+[Get recent activities](../api/activities-list)
 
 ## JSON representation
 
@@ -107,17 +107,17 @@ The **list** resource has the following relationships to other resources.
 | **drive**         | [drive][]                   | Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 | **items**         | Collection([listItem][])    | All items contained in the list.
 
-[baseItem]: baseItem.md
-[contentType]: contentType.md
-[drive]: drive.md
-[driveItem]: driveItem.md
-[columnDefinition]: columnDefinition.md
-[identitySet]: identitySet.md
-[itemActivity]: itemActivity.md
-[listInfo]: listInfo.md
-[listItem]: listItem.md
-[site]: site.md
-[systemFacet]: systemfacet.md
+[baseItem](baseitem)
+[contentType](contenttype)
+[drive](drive)
+[driveItem](driveitem)
+[columnDefinition](columndefinition)
+[identitySet](identityset)
+[itemActivity](itemactivity)
+[listInfo](listinfo)
+[listItem](listitem)
+[site](site)
+[systemFacet](systemfacet)
 
 <!-- {
   "type": "#page.annotation",

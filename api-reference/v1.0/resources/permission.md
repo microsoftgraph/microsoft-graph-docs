@@ -59,8 +59,8 @@ Sharing links contain a unique token that provides access to the item for anyone
 
 Permissions with an [**invitation**][SharingInvitation] facet represent permissions added by inviting specific users or groups to have access to the file.
 
-[SharingInvitation]: sharinginvitation.md
-[SharingLink]: sharinglink.md
+[SharingInvitation](sharinginvitation)
+[SharingLink](sharinglink)
 
 ## Roles enumeration
 

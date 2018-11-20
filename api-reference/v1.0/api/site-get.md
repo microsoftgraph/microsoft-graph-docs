@@ -9,7 +9,7 @@ title: Get a SharePoint Site
 Retrieve properties and relationships for a [site][] resource.
 A **site** resource represents a team site in SharePoint.
 
-[site]: ../resources/site.md
+[site](../resources/site)
 
 A **site** is addressed be a unique identifier which is a composite ID of the following values:
 

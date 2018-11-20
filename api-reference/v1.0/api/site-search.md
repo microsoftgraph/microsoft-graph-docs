@@ -8,7 +8,7 @@ title: Find SharePoint sites by keyword
 
 Search across a SharePoint tenant for [sites][] that match provided keywords.
 
-[sites]: ../resources/site.md
+[sites](../resources/site)
 
 ## Permissions
 

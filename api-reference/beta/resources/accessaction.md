@@ -12,7 +12,7 @@ The presence of the **accessAction** resource on an [**itemActivity**][activity]
 
 >**Note:** Access activity records are currently only available on SharePoint and OneDrive for Business.
 
-[activity]: itemActivity.md
+[activity](itemactivity)
 
 ## Properties
 

@@ -8,7 +8,7 @@ title: ListInfo
 
 The **listInfo** complex type provides additional information about a [list][].
 
-[list]: list.md
+[list](list)
 
 ## JSON representation
 

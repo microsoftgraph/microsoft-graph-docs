@@ -59,7 +59,7 @@ HTTP/1.1 204 No content
 ### Remarks
 
 
-[item-resource]: ../resources/driveitem.md
+[item-resource](../resources/driveitem)
 
 <!-- {
   "type": "#page.annotation",

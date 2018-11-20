@@ -57,7 +57,7 @@ If the file's content is updated and these properties are not provided, **lastMo
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-[item-resource]: ../resources/driveitem.md
+[item-resource](../resources/driveitem)
 
 <!-- {
   "type": "#page.annotation",

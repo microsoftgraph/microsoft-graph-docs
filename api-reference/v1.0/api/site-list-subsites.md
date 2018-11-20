@@ -8,7 +8,7 @@ title: List the subsites for a SharePoint site
 
 Get a collection of subsites defined for a [site][].
 
-[site]: ../resources/site.md
+[site](../resources/site)
 
 ## Permissions
 

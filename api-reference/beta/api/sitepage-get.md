@@ -10,9 +10,9 @@ title: Get a page in a site
 
 Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].
 
-[sitePage]: ../resources/sitePage.md
-[list]: ../resources/list.md
-[site]: ../resources/site.md
+[sitePage](../resources/sitepage)
+[list](../resources/list)
+[site](../resources/site)
 
 ## Permissions
 

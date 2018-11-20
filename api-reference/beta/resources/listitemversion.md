@@ -20,9 +20,9 @@ The following tasks are available for listItemVersion resources.
 | [Get version][version-get]         | `GET /sites/{site-id}/items/versions/{version-id}`     |
 | [Restore version][version-restore] | `POST /sites/{site-id}/items/versions/{version-id}/restore` |
 
-[version-list]: ../api/listitem_list_versions.md
-[version-get]: ../api/listitemversion_get.md
-[version-restore]: ../api/listitemversion_restore.md
+[version-list](../api/listitem-list-versions)
+[version-get](../api/listitemversion-get)
+[version-restore](../api/listitemversion-restore)
 
 
 ## JSON representation

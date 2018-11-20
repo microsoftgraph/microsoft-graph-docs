@@ -9,7 +9,7 @@ title: Get SharePoint site by path
 Retrieve properties and relationships for a [site][] resource.
 A **site** resource represents a team site in SharePoint.
 
-[site]: ../resources/site.md
+[site](../resources/site)
 
 In addition to retrieving a [site by ID](site-get.md) you can retrieve a site based on server-relative URL path.
 

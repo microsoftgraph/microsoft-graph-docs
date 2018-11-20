@@ -80,9 +80,9 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | system               | [systemFacet][]               | If present, indicates that this is a system-managed drive. Read-only.
 | webUrl               | string (url)                  | URL that displays the resource in the browser. Read-only.                                                                                                                                                                        |
 
-[identitySet]: identityset.md
-[sharepointIds]: sharepointids.md
-[systemFacet]: systemfacet.md
+[identitySet](identityset)
+[sharepointIds](sharepointids)
+[systemFacet](systemfacet)
 
 ## Relationships
 
@@ -109,18 +109,18 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 
 In the previous table, the examples use `/drive`, but other paths are valid too.
 
-[itemActivity]: itemActivity.md
-[item-resource]: driveitem.md
-[identity-set]: identityset.md
-[quota-facet]: quota.md
-[drive-resource]: drive.md
-[drive-activities]: ../api/activities_list.md
-[drive-following]: ../api/drive_list_following.md
-[drive-get]: ../api/drive_get.md
-[item-get]: ../api/driveitem_get.md
-[item-changes]: ../api/driveitem_delta.md
-[item-search]: ../api/driveitem_search.md
-[item-children]: ../api/driveitem_list_children.md
+[itemActivity](itemactivity)
+[item-resource](driveitem)
+[identity-set](identityset)
+[quota-facet](quota)
+[drive-resource](drive)
+[drive-activities](../api/activities-list)
+[drive-following](../api/drive-list-following)
+[drive-get](../api/drive-get)
+[item-get](../api/driveitem-get)
+[item-changes](../api/driveitem-delta)
+[item-search](../api/driveitem-search)
+[item-children](../api/driveitem-list-children)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
