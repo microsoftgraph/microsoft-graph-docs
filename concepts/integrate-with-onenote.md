@@ -60,7 +60,7 @@ Take an in-depth look at Microsoft Graph APIs to learn about the OneNote content
 ### Work with OneNote page content
 
 * [Create absolute positioned elements in OneNote pages](onenote-abs-pos.md)
-* [Add images, videos, and files to OneNote pages](onenote_images_files.md)
+* [Add images, videos, and files to OneNote pages](onenote-images-files.md)
 * [Use OneNote API div tags to extract data from captures](onenote-extract-data.md)
 
 ## See also

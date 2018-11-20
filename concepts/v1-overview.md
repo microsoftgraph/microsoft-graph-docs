@@ -17,7 +17,7 @@ A number of these services are designed to enable rich scenarios around a [user]
 3. [Access Lisa's files on OneDrive for Business](/graph/api/driveitem_list_children?view=graph-rest-1.0), find the [identity](/graph/api/resources/identityset?view=graph-rest-1.0) of the last person who modified a [file](/graph/api/resources/driveitem?view=graph-rest-1.0) there, and navigate to that person's profile.
 4. [Access Lisa's calendar](/graph/api/calendar_get?view=graph-rest-1.0) on Exchange Online and [determine the best time for Lisa to meet with her team](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) in the next two weeks.
 5. [Subscribe to](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0) and [track changes](/graph/api/event-delta?view=graph-rest-1.0) in Lisa's calendar, tell Lisa when she is spending more than 80% of her time in meetings.
-6. [Set automatic replies](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0#example) when Lisa is away from the office.
+6. [Set automatic replies](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0) when Lisa is away from the office.
 7. [Get the people who are most relevant to Lisa](/graph/api/user-list-people?view=graph-rest-1.0), based on communication, collaboration, and business relationships.
 8. Get the latest sales projection from a [chart](/graph/api/resources/chart?view=graph-rest-1.0) in an Excel file in Lisa's OneDrive for Business.
 9. [Find the tasks assigned to Lisa in Planner](/graph/api/planneruser-list-tasks?view=graph-rest-1.0).

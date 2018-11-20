@@ -185,43 +185,43 @@ Removing file permissions for a user may not immediately invalidate the URL.
 | [Get WebSocket channel][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
-[item-preview]: ../api/driveItem_preview.md
-[Get analytics]: ../api/itemAnalytics_get.md
-[Get activities by interval]: ../api/itemActivity_getByInterval.md
+[item-preview]: ../api/driveitem-preview.md
+[Get analytics]: ../api/itemanalytics-get.md
+[Get activities by interval]: ../api/itemactivity-getbyinterval.md
 
 ## Remarks
 
 In OneDrive for Business or SharePoint document libraries, the **cTag** property is not returned, if the **driveItem** has a [folder][] facet.
 
 [audio]: audio.md
-[baseItem]: baseItem.md
+[baseItem]: baseitem.md
 [deleted]: deleted.md
-[download-format]: ../api/driveitem_get_content_format.md
-[driveItemVersion]: driveItemVersion.md
+[download-format]: ../api/driveitem-get-content-format.md
+[driveItemVersion]: driveitemversion.md
 [file]: file.md
-[fileSystemInfo]: fileSystemInfo.md
+[fileSystemInfo]: filesysteminfo.md
 [folder]: folder.md
-[getting previous versions]: ../api/driveitem_list_versions.md
-[getting thumbnails]: ../api/driveitem_list_thumbnails.md
-[getWebSocket]: ../api/driveItem_subscriptions_socketIo.md
-[identitySet]: identitySet.md
+[getting previous versions]: ../api/driveitem-list-versions.md
+[getting thumbnails]: ../api/driveitem-list-thumbnails.md
+[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
+[identitySet]: identityset.md
 [image]: image.md
-[itemActivity]: itemActivity.md
-[itemAnalytics]: itemAnalytics.md
-[itemReference]: itemReference.md
-[geoCoordinates]: geoCoordinates.md
-[List activities]: ../api/activities_list.md
-[listItem]: listItem.md
+[itemActivity]: itemactivity.md
+[itemAnalytics]: itemanalytics.md
+[itemReference]: itemreference.md
+[geoCoordinates]: geocoordinates.md
+[List activities]: ../api/activities-list.md
+[listItem]: listitem.md
 [package]: package.md
 [permission]: permission.md
 [photo]: photo.md
-[remoteItem]: remoteItem.md
+[remoteItem]: remoteitem.md
 [root]: root.md
-[searchResult]: searchResult.md
+[searchResult]: searchresult.md
 [shared]: shared.md
-[sharepointIds]: sharepointIds.md
-[specialFolder]: specialFolder.md
-[thumbnailSet]: thumbnailSet.md
+[sharepointIds]: sharepointids.md
+[specialFolder]: specialfolder.md
+[thumbnailSet]: thumbnailset.md
 [video]: video.md
 [user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md

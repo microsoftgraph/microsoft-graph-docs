@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/v1.0/sites/{hostname},{spsite-id}
 [site]: site.md
 [list]: list.md
 [drive]: drive.md
-[siteCollection]: siteCollection.md
+[siteCollection]: sitecollection.md
 
 <!-- {
   "type": "#page.annotation",

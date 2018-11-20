@@ -17,7 +17,7 @@ connect to a wealth of other Outlook and non-Outlook relationships, resources, a
 
 Customers like how Outlook help them stay organized. Microsoft Graph brings these features to app developers, enabling them to build customer workflows that optimize on discovery and improve efficiency and productivity:
 
-- Customers organize their messages in different ways - some leave all messages in the Inbox and simply search for them, others file their messsages in folders. They like Outlook's flexible and intuitive approach that supports both flat and folder-based organizations. Apps can conveniently [filter, search, or sort](query_parameters.md) messages in specific folders or the user's entire mailbox.
+- Customers organize their messages in different ways - some leave all messages in the Inbox and simply search for them, others file their messsages in folders. They like Outlook's flexible and intuitive approach that supports both flat and folder-based organizations. Apps can conveniently [filter, search, or sort](query-parameters.md) messages in specific folders or the user's entire mailbox.
 
 - Outlook categories are differentiated by name and color. Categories allow customers to tag messages to enhance organization and discovery. Apps can access and [define a user's master list of categories](/graph/api/outlookuser_post_mastercategories?view=graph-rest-1.0). More, that list is shared across Outlook messages,
 as well as events, contacts, tasks, and group posts, and opens up creative scenarios for app developers. For example, an online training provider can color-code the emails, course events, and follow-up assignments for each course a user has enrolled in.
@@ -41,7 +41,7 @@ Use Microsoft Graph to suggest contextual data to your app users:
 
 ### Store app data in a resource or resource instance
 
-Often times apps have to store their data in an external data store and entail overhead in managing and accessing the data. Microsoft Graph lets you simply include app data as Internet message headers when [creating](/graph/api/user-post-messages?view=graph-rest-1.0#request-2) or [sending](/graph/api/user-sendmail?view=graph-rest-1.0#request-2) a new message, or a reply to a message.
+Often times apps have to store their data in an external data store and entail overhead in managing and accessing the data. Microsoft Graph lets you simply include app data as Internet message headers when [creating](/graph/api/user-post-messages?view=graph-rest-1.0) or [sending](/graph/api/user-sendmail?view=graph-rest-1.0) a new message, or a reply to a message.
 
 If you need to add and subsequently update custom data, you can [store the data in individual resource instances](extensibility-overview.md#open-extensions). If appropriate, as an alternative, you can extend the schema, add custom properties, and store typed data in Microsoft Graph resources. You can make such [schema extensions](extensibility-overview.md#schema-extensions) discoverable and shareable.
 

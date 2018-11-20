@@ -12,7 +12,7 @@ Only the following query options are currently supported:
 
 In addition, you may use a **[search][]** query against the '/sites' collection to find sites matching given keywords.
 
-[search]: site_search.md
+[search]: site-search.md
 [sites]: ../resources/site.md
 
 ## Permissions

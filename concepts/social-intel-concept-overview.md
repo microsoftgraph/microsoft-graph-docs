@@ -74,7 +74,7 @@ The insights API provides a similar functionality with the [used](/graph/api/res
 
 **Figure 2. Outlook on the web showing a people card for a user**
 
-![Screenshot of a people card for a user in Outlook on the web, showing recent files](images/peoplecard_concept.png)
+![Screenshot of a people card for a user in Outlook on the web, showing recent files](images/peoplecard-concept.png)
 
 ## API reference
 Looking for the API reference for these services?
